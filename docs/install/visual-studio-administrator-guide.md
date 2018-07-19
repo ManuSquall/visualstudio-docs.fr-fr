@@ -2,7 +2,7 @@
 title: Guide de l’administrateur Visual Studio
 description: En savoir plus sur le déploiement de Visual Studio dans un environnement d’entreprise.
 ms.custom: ''
-ms.date: 05/15/2017
+ms.date: 05/29/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -16,19 +16,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39d9c6c3c63fe1c601a307ff006858a64db56c83
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 59424cdb93d8c664740ddf1d9865ba41044eb72e
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283075"
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Guide de l’administrateur Visual Studio 2017
 
 Dans les environnements d’entreprise, il est courant pour les administrateurs système de déployer des installations sur les utilisateurs finaux à partir d’un partage réseau ou à l’aide d’un logiciel de gestion de systèmes. Nous avons conçu le moteur d’installation de Visual Studio pour prendre en charge le déploiement d’entreprise, ce qui permet aux administrateurs système de créer un emplacement d’installation réseau pour préconfigurer les paramètres d’installation par défaut, déployer des clés de produit pendant le processus d’installation et gérer les mises à jour de produit après un déploiement réussi. Ce guide de l’administrateur fournit des conseils basés sur des scénarios pour un déploiement d’entreprise dans les environnements réseau.
 
-## <a name="deploying-visual-studio-2017-in-an-enterprise-environment"></a>Déploiement de Visual Studio 2017 dans un environnement d’entreprise
+## <a name="deploy-visual-studio-2017-in-an-enterprise-environment"></a>Déployer Visual Studio 2017 dans un environnement d’entreprise
 
-Vous pouvez déployer Visual Studio 2017 sur les stations de travail clientes tant que chaque ordinateur cible satisfait aux [conditions d’installation minimales](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs). Que votre déploiement s’effectue à l’aide de logiciels comme System Center ou à l’aide d’un fichier de commandes, vous voulez généralement effectuer les étapes suivantes :
+Vous pouvez déployer Visual Studio 2017 sur les stations de travail clientes tant que chaque ordinateur cible satisfait aux [conditions d’installation minimales](/visualstudio/productinfo/vs2017-system-requirements-vs). Que votre déploiement s’effectue à l’aide de logiciels comme System Center ou à l’aide d’un fichier de commandes, vous voulez généralement effectuer les étapes suivantes :
 
 1. [Créer un partage réseau qui contient les fichiers du produit Visual Studio](create-a-network-installation-of-visual-studio.md) à un emplacement réseau.
 
@@ -49,16 +50,30 @@ Vous pouvez déployer Visual Studio 2017 sur les stations de travail clientes t
 > [!IMPORTANT]
 > Notez que les installations effectuées à partir d’un partage réseau « mémorisent » l’emplacement source dont elles sont issues. Cela signifie que la réparation d’un ordinateur client peut devoir retourner sur le partage réseau à partir duquel le client a été initialement installé. Choisissez soigneusement votre emplacement réseau : sa durée de vie doit être au moins aussi longue que celle des clients Visual Studio 2017 qui s’exécutent dans votre organisation.
 
-## <a name="visual-studio-tools"></a>Visual Studio Tools
+## <a name="use-visual-studio-tools"></a>Utiliser Visual Studio Tools
 
 Plusieurs outils sont disponibles pour vous aider à [détecter et à gérer les instances de Visual Studio installées](tools-for-managing-visual-studio-instances.md) sur les ordinateurs clients.
 
 > [!TIP]
 > Outre la documentation du guide de l’administrateur, le [blog d’Heath Stewart](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/) constitue une bonne source d’informations sur l’installation de Visual Studio 2017.
 
+## <a name="specify-customer-feedback-settings"></a>Spécifier les paramètres des commentaires client
+
+Par défaut, l’installation de Visual Studio active les commentaires client. Lorsque vous activez la stratégie de groupe, vous pouvez configurer Visual Studio pour désactiver les commentaires client sur des ordinateurs individuels. Pour ce faire, définissez une stratégie basée sur le Registre sur la clé suivante :
+
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**
+
+Entry = **OptIn**
+
+Value = (DWORD)
+* **0** est désinscrit
+* **1** est inscrit
+
+Pour plus d’informations sur les paramètres des commentaires client, consultez la page [Programme d’amélioration de l’expérience utilisateur Visual Studio](../ide/visual-studio-experience-improvement-program.md).
+
 ## <a name="get-support"></a>Obtenir de l’aide
 
-Parfois, des problèmes peuvent se produire. Si votre installation de Visual Studio échoue, consultez la page [Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017](troubleshooting-installation-issues.md). Si aucune étape de résolution des problèmes ne vous aide, vous pouvez nous contacter pour une conversation en direct sur une assistance à l’installation (en anglais uniquement). Pour plus de détails, consultez la [page du support Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Parfois, des problèmes peuvent se produire. Si votre installation de Visual Studio échoue, consultez la page [Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017](troubleshooting-installation-issues.md). Si aucune étape de résolution des problèmes ne vous aide, vous pouvez nous contacter pour une conversation en direct sur une assistance à l’installation (en anglais uniquement). Pour plus de détails, consultez la [page du support Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Voici d’autres options de support :
 

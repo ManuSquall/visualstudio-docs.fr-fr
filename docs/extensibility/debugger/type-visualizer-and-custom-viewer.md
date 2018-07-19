@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126908"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>Visualiseur de type et de la visionneuse personnalisée
 Un visualiseur de type est un composant qui affiche un élément de données dans un format très spécifique. Ce format est entièrement à l’implémenteur du visualiseur, soit l’utilisateur final ou un fournisseur tiers de visualiseurs.  

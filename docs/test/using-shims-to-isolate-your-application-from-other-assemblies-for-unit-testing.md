@@ -1,6 +1,7 @@
 ---
-title: Utilisation de shims pour isoler votre application pour des tests unitaires dans Visual Studio | Microsoft Docs
+title: Utilisation de shims pour isoler votre application pour des tests unitaires dans Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 22c22328c0c9a34c783dd00f61f4b6c791c3507d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 55b31661120c5224d12485764328007dc8445a8e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31979345"
 ---
 # <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Utiliser des shims pour isoler votre application des autres assemblys pour des tests unitaires
 
@@ -25,6 +27,10 @@ Les **types shim** sont l’une des deux technologies utilisées par le framewor
  **Spécifications**
 
 -   Visual Studio Enterprise
+-   Un projet .NET Framework
+
+> [!NOTE]
+> Les projets .NET Standard ne sont pas pris en charge.
 
 ## <a name="example-the-y2k-bug"></a>Exemple : Le bogue de l'an 2000
 

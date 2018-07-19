@@ -1,6 +1,7 @@
 ---
-title: Utiliser Build ou Release Management pour les tests automatisés dans Visual Studio | Microsoft Docs
+title: Utiliser Build ou Release Management pour les tests automatisés dans Visual Studio
 ms.date: 03/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 706d68299e0275314eff89746a05980e86bbd3e5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 454407c3572f7a7c7a1c0f795462d2aec539049a
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845377"
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Utiliser Build ou Release Management au lieu de Lab Management pour les tests automatisés
 
@@ -57,7 +59,7 @@ Le tableau suivant récapitule les activités standard que vous effectuez dans l
 
 | Étapes | Avec le Centre lab | Avec Build ou Release Management |
 |-------|----------------------|-----------------|
-| Gérez une bibliothèque de modèles d’environnement. | Créez un environnement lab. Installez les logiciels nécessaires sur les machines virtuelles. Préparez le système et stockez l’environnement sous forme de modèle dans une bibliothèque. | Utilisez la console d’administration SCVMM directement pour créer et gérer des modèles de machine virtuelle ou des modèles de service. Lorsque vous utilisez Azure, sélectionnez l’un des [modèles de démarrage rapide Azure](/resources/templates/). |
+| Gérez une bibliothèque de modèles d’environnement. | Créez un environnement lab. Installez les logiciels nécessaires sur les machines virtuelles. Préparez le système et stockez l’environnement sous forme de modèle dans une bibliothèque. | Utilisez la console d’administration SCVMM directement pour créer et gérer des modèles de machine virtuelle ou des modèles de service. Lorsque vous utilisez Azure, sélectionnez l’un des [modèles de démarrage rapide Azure](https://azure.microsoft.com/resources/templates/). |
 | Créez un environnement lab. | Sélectionnez un modèle d’environnement dans la bibliothèque et déployez-le. Spécifiez les paramètres nécessaires pour personnaliser les configurations de machine virtuelle. | Utilisez la console d’administration SCVMM directement pour créer des machines virtuelles ou des instances de service à partir des modèles. Utilisez le portail Azure directement pour créer des ressources. Vous pouvez aussi créer une définition de version avec un environnement. Utilisez les tâches Azure ou des tâches de l’[extension d’intégration de SCVMM](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) pour créer des machines virtuelles. La création d’une nouvelle version de cette définition équivaut à créer un nouvel environnement dans le Centre lab. |
 | Connectez-vous aux machines. | Ouvrez l’environnement lab dans la visionneuse d’environnement. | Utilisez la console d’administration SCVMM directement pour vous connecter aux machines virtuelles. Vous pouvez aussi utiliser l’adresse IP ou les noms DNS des machines virtuelles pour ouvrir des sessions Bureau à distance. |
 | Prenez un point de contrôle d’un environnement ou restaurez un environnement à un point de contrôle correct. | Ouvrez l’environnement lab dans la visionneuse d’environnement. Choisissez entre prendre un point de contrôle et restaurer à un point de contrôle antérieur. | Utilisez la console d’administration SCVMM directement pour effectuer ces opérations sur les machines virtuelles. Pour effectuer ces étapes dans le cadre d’une automatisation plus vaste, vous pouvez aussi inclure les tâches du point de contrôle à partir de l’[extension d’intégration de SCVMM](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) dans le cadre de l’environnement dans une définition de version. |

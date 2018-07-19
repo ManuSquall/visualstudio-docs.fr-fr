@@ -1,5 +1,5 @@
 ---
-title: Folder, élément (modèles de projet Visual Studio) | Documents Microsoft
+title: Folder, élément (modèles de projet Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,11 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2ecf9c2973a5fb09cf1a217bd700882dce41626
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ec8a5520716f6073d49ab2b5a64becfb760092d2
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234921"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder, élément (modèles de projet Visual Studio)
 Spécifie un dossier qui sera ajouté au projet.  
@@ -46,7 +47,7 @@ Spécifie un dossier qui sera ajouté au projet.
 |Attribut|Description|  
 |---------------|-----------------|  
 |`Name`|Attribut requis.<br /><br /> Le nom du dossier du projet.|  
-|`TargetFolderName`|Attribut facultatif.<br /><br /> Spécifie le nom à donner au dossier lorsqu’un projet est créé à partir du modèle. Cet attribut est utile pour l’utilisation de remplacement de paramètre pour créer un nom de dossier ou nom d’un dossier avec une chaîne internationale qui ne peut pas être utilisée directement dans le fichier .zip.|  
+|`TargetFolderName`|Attribut facultatif.<br /><br /> Spécifie le nom à attribuer au dossier lorsqu’un projet est créé à partir du modèle. Cet attribut est utile pour l’utilisation de remplacement de paramètres pour créer un nom de dossier ou d’affectation de noms un dossier avec une chaîne internationale qui ne peut pas être utilisée directement dans le fichier .zip.|  
   
 ### <a name="child-elements"></a>Éléments enfants  
   
@@ -66,7 +67,7 @@ Spécifie un dossier qui sera ajouté au projet.
   
  Vous pouvez utiliser une des méthodes suivantes pour organiser les éléments de projet dans des dossiers dans un modèle :  
   
--   Inclure les dossiers dans le fichier .zip du modèle et les ajouter au projet dans le fichier .vstemplate en spécifiant le chemin d’accès au fichier dans le `ProjectItem` éléments, sans aucune `Folder` éléments. Il s’agit de la méthode recommandée. Par exemple :  
+-   Inclure les dossiers dans le fichier .zip du modèle et ajoutez-les au projet dans le fichier .vstemplate en spécifiant le chemin d’accès au fichier dans le `ProjectItem` éléments, sans aucune `Folder` éléments. Il s’agit de la méthode recommandée. Exemple :  
   
      `...`  
   
@@ -76,7 +77,7 @@ Spécifie un dossier qui sera ajouté au projet.
   
      `...`  
   
--   Inclure les dossiers dans le fichier .zip du modèle et les ajouter au projet dans le fichier .vstemplate avec `Folder` éléments. Par exemple :  
+-   Inclure les dossiers dans le fichier .zip du modèle et ajoutez-les au projet dans le fichier .vstemplate avec `Folder` éléments. Exemple :  
   
      `...`  
   
@@ -90,7 +91,7 @@ Spécifie un dossier qui sera ajouté au projet.
   
      `...`  
   
--   N’incluez pas de dossiers dans le fichier .zip du modèle, mais ajouter des dossiers à l’aide de la `TargetFileName` attribut de la `ProjectItem` élément. Par exemple :  
+-   N’incluez pas de dossiers dans le fichier .zip du modèle, mais ajoutez des dossiers à l’aide de la `TargetFileName` attribut de la `ProjectItem` élément. Exemple :  
   
      `...`  
   
@@ -101,7 +102,7 @@ Spécifie un dossier qui sera ajouté au projet.
      `...`  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant illustre les métadonnées d’un modèle de projet pour un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application Windows.  
+ L’exemple suivant illustre les métadonnées d’un modèle de projet pour un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application de Windows.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  

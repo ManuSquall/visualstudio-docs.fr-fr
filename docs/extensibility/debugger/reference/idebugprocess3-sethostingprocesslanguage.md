@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31115159"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 Cette méthode définit la langue qui sera hébergé sous le processus. Ce langage peut ensuite être utilisé par le moteur de débogage (DE) pour charger l’évaluateur d’expression appropriée.  

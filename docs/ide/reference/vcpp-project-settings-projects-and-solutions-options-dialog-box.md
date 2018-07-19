@@ -25,6 +25,7 @@ ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33103435"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Paramètres du projet VC++, Projets et solutions, boîte de dialogue Options
 Cette boîte de dialogue vous permet de définir les paramètres du projet et de la build [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] relatifs à la journalisation, aux performances et à la prise en charge des types de fichiers.

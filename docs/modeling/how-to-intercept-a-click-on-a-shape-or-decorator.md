@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952298"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Comment : intercepter un événement Click sur une forme ou un décorateur
 Les procédures suivantes montrent comment intercepter un clic sur une forme ou un décorateur icône. Vous pouvez intercepter les clics, double-clique sur, fait glisser, et d’autres mouvements et que l’élément de répondre.

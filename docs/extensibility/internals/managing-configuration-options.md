@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134758"
 ---
 # <a name="managing-configuration-options"></a>Gestion des Options de Configuration
 Lorsque vous créez un nouveau type de projet, vous devez gérer les paramètres de configuration de projet et de solution qui déterminent comment votre projet est généré, empaquetée, déployé et exécuté. Les rubriques suivantes abordent la configuration de projet et de solution.  

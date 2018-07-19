@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574205"
 ---
 # <a name="lc-task"></a>LC, tâche
 Encapsule LC.exe, qui génère un fichier .license à partir d’un fichier .licx. Pour plus d’informations sur LC.exe, consultez [Lc.exe (License Compiler)](/dotnet/framework/tools/lc-exe-license-compiler).  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107288"
 ---
 # <a name="breakpoint-related-methods"></a>Méthodes de point d’arrêt
 Un moteur de débogage (DE) doit prendre en charge la définition de points d’arrêt. Débogage de Visual Studio prend en charge les types de points d’arrêt suivants :  

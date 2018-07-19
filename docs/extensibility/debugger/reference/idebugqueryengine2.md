@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31122741"
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
 Cette interface permet à la session de débogage responsable de récupérer une interface qui représente le moteur de débogage (DE).  

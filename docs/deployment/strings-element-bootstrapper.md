@@ -1,5 +1,5 @@
 ---
-title: '&lt;Chaînes&gt; élément (programme d’amorçage) | Documents Microsoft'
+title: '&lt;Chaînes&gt; élément (programme d’amorçage) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -20,18 +20,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df186776e9f1fe431343c8643e5186ff522dfff6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fc1cab2fdb0a175fc9365b2a8b4b17dca46a30a2
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077670"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;Chaînes&gt; élément (programme d’amorçage)
 Définit des chaînes localisées pour les noms de produits, les noms de package et les messages d’erreur d’installation.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
 <Strings>  
     <String  
         Name  
@@ -41,10 +42,10 @@ Définit des chaînes localisées pour les noms de produits, les noms de package
 ```  
   
 ## <a name="elements-and-attributes"></a>Éléments et attributs  
- Le `Strings` élément est un enfant de le `Package` élément. Il possède pas d’attributs.  
+ Le `Strings` élément est un enfant de le `Package` élément. Il a pas d’attributs.  
   
 ## <a name="string"></a>Chaîne  
- Le `String` élément est un enfant de le `Strings` élément. A `Strings` élément peut avoir un ou plusieurs `String` éléments.  
+ Le `String` élément est un enfant de le `Strings` élément. Un `Strings` élément peut avoir un ou plusieurs `String` éléments.  
   
  `String` a l’attribut suivant.  
   
@@ -55,7 +56,7 @@ Définit des chaînes localisées pour les noms de produits, les noms de package
 ## <a name="example"></a>Exemple  
  L’exemple de code suivant spécifie toutes les chaînes en anglais pour le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] programme d’installation.  
   
-```  
+```xml  
 <Strings>  
     <String Name="DisplayName">.NET Framework 2.0</String>  
     <String Name="Culture">en</String>  

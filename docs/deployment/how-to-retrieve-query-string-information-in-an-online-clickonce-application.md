@@ -1,5 +1,5 @@
 ---
-title: 'Comment : récupérer les informations de chaîne de requête dans une Application ClickOnce en ligne | Documents Microsoft'
+title: 'Comment : récupérer les informations de chaîne de requête dans une Application ClickOnce en ligne | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,13 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47d20cf156cfdb6aaa18e37160dbf027bb3fb519
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 251f175112a03bbe158c529b669b56378913f020
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080426"
 ---
-# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Comment : récupérer les informations de chaîne de requête dans une application ClickOnce en ligne
+# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Comment : récupérer les informations de chaîne de requête dans une application ClickOnce en ligne
 La *chaîne de requête* est la partie d’une URL commençant par un point d’interrogation ( ?) qui contient des informations arbitraires sous la forme *nom=valeur*. Supposez que vous avez une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nommée `WindowsApp1` que vous hébergez sur `servername`, et que vous souhaitez passer une valeur pour la variable `username` quand l’application démarre. Votre code peut ressembler à ce qui suit :  
   
  `http://servername/WindowsApp1.application?username=joeuser`  
@@ -40,7 +41,7 @@ La *chaîne de requête* est la partie d’une URL commençant par un point d’
 > [!NOTE]
 >  Avant de décider d’activer cette fonctionnalité, consultez la section « Sécurité » plus loin dans cette rubrique.  
   
- Pour plus d’informations sur la création d’un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement à l’aide de Mage.exe ou MageUI.exe, consultez [procédure pas à pas : déploiement manuel d’une Application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Pour plus d’informations sur la création d’un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] à l’aide du déploiement *Mage.exe* ou *MageUI.exe*, consultez [procédure pas à pas : déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 > [!NOTE]
 >  À compter du .NET Framework 3.5 SP1, vous pouvez passer des arguments de ligne de commande à une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] hors connexion. Si vous souhaitez fournir des arguments à l’application, vous pouvez passer des paramètres au fichier de raccourci avec l’extension .APPREF-MS.  
@@ -58,7 +59,7 @@ La *chaîne de requête* est la partie d’une URL commençant par un point d’
   
 1.  Ouvrez l’invite de commandes .NET et tapez :  
   
-    ```  
+    ```cmd  
     MageUI  
     ```  
   
@@ -76,8 +77,8 @@ La *chaîne de requête* est la partie d’une URL commençant par un point d’
   
  Si votre application est uniquement en ligne, elle sera toujours activée par le biais d’une URL. Même dans ce cas, toutefois, votre application doit être écrite pour fonctionner correctement si les paramètres de chaîne de requête sont manquants ou endommagés.  
   
-## <a name="net-framework-security"></a>Sécurité .NET Framework  
- Autorisez le transfert des paramètres d’URL à votre application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uniquement si vous envisagez de nettoyer l’entrée de caractères malveillants avant de l’utiliser. Une chaîne incorporée avec des guillemets, des barres obliques ou des points-virgules, par exemple, peut effectuer des opérations de données arbitraires si elle est utilisée sans filtre dans une requête SQL sur une base de données. Pour plus d’informations sur la sécurité des chaînes de requête, consultez [Script Exploits Overview](http://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+## <a name="net-framework-security"></a>sécurité du .NET Framework  
+ Autorisez le transfert des paramètres d’URL à votre application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] uniquement si vous envisagez de nettoyer l’entrée de caractères malveillants avant de l’utiliser. Une chaîne incorporée avec des guillemets, des barres obliques ou des points-virgules, par exemple, peut effectuer des opérations de données arbitraires si elle est utilisée sans filtre dans une requête SQL sur une base de données. Pour plus d’informations sur la sécurité de chaîne de requête, consultez [vue d’ensemble des attaques de Script](http://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md)
+ [Sécuriser les applications ClickOnce](../deployment/securing-clickonce-applications.md)

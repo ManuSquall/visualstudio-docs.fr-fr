@@ -16,10 +16,11 @@ manager: douge
 ms.workload:
 - dotnet
 ms.openlocfilehash: b003b3f965ab4f3857e2a532ae715d99533aa8e7
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38783816"
 ---
 # <a name="build-page-project-designer-c"></a>Générer, page du Concepteur de projets (C#)
 Utilisez la page **Générer** du **Concepteur de projet** pour spécifier les propriétés de configuration de build du projet. Cette page s’applique uniquement aux projets [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].

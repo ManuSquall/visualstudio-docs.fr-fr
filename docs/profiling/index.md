@@ -12,6 +12,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34267684"
 ---
 # <a name="profiling-in-visual-studio"></a>Profilage dans Visual Studio
 

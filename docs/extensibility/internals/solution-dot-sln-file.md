@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133402"
 ---
 # <a name="solution-sln-file"></a>Solution (. Fichiers sln)
 Une solution est une structure pour organiser des projets dans Visual Studio. La solution gère les informations d’état pour les projets dans .sln (textuel, partagé) et les fichiers .suo (options de solution binaire, spécifiques à l’utilisateur). Pour plus d’informations sur les fichiers .suo, consultez [Options utilisateur de Solution (. Fichier suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  

@@ -1,6 +1,7 @@
 ---
-title: Guide pratique pour créer un test unitaire piloté par les données dans Visual Studio | Microsoft Docs
+title: Guide pratique pour créer un test unitaire piloté par les données dans Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
@@ -15,11 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 4e243afbdd5df41cf3b4716cafd7c82f5d4f7984
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f8811d2c9b1d27a2a436004da29711a7a4e34f55
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117591"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Comment : créer un test unitaire piloté par des données
 
@@ -112,13 +114,13 @@ La méthode `Assert` inclut un message qui affiche les valeurs `x` et `y` d’un
 ###  <a name="BKMK_Specifying_the_DataSourceAttribute"></a> Spécification de DataSourceAttribute
  L’attribut `DataSource` spécifie la chaîne de connexion de la source de données et le nom de la table que vous utilisez dans la méthode de test. Les informations exactes de la chaîne de connexion varient selon le genre de source de données que vous utilisez. Dans cet exemple, nous avons utilisé une base de données SqlServerCe.
 
-```
+```csharp
 [DataSource(@"Provider=Microsoft.SqlServerCe.Client.4.0;Data Source=C:\Data\MathsData.sdf", "AddIntegersData")]
 ```
 
 L’attribut DataSource a trois constructeurs.
 
-```
+```csharp
 [DataSource(dataSourceSettingName)]
 ```
 
@@ -126,7 +128,7 @@ L’attribut DataSource a trois constructeurs.
 
  L’utilisation d’un fichier app.config vous permet de changer l’emplacement de la source de données sans changer le test unitaire lui-même. Pour plus d’informations sur la création et l’utilisation d’un fichier app.config, consultez [Procédure pas à pas : utilisation d’un fichier de configuration pour définir une source de données](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
 
-```
+```csharp
 [DataSource(connectionString, tableName)]
 ```
 
@@ -134,7 +136,7 @@ L’attribut DataSource a trois constructeurs.
 
  Les chaînes de connexion dépendent du type de la source de données. Toutefois, elles doivent contenir un élément Provider qui spécifie le nom invariant du fournisseur de données.
 
-```
+```csharp
 [DataSource(
     dataProvider,
     connectionString,
@@ -151,7 +153,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 ```
 
 ##  <a name="BKMK_Running_the_test_and_viewing_results"></a> Exécution du test et affichage des résultats
- Une fois que vous avez fini d’écrire une méthode de test, générez le projet de test. La méthode de test apparaît dans la fenêtre de l’Explorateur de tests, dans le groupe **Tests non exécutés**. Tandis que vous exécutez, écrivez et réexécutez vos tests, l’Explorateur de tests affiche les résultats dans les groupes **Échecs de tests**, **Tests réussis** et **Tests non exécutés**. Vous pouvez choisir **Exécuter tout** pour exécuter tous vos tests ou **Exécuter** pour exécuter une partie des tests.
+ Une fois que vous avez fini d’écrire une méthode de test, générez le projet de test. La méthode de test apparaît dans la fenêtre de l’Explorateur de tests, dans le groupe **Tests non exécutés**. Tandis que vous exécutez, écrivez et réexécutez vos tests, l’Explorateur de tests affiche les résultats dans les groupes **Échecs de tests**, **Tests réussis** et **Tests non exécutés**. Vous pouvez choisir **Exécuter tout** pour exécuter tous vos tests ou **Exécuter** pour sélectionner un sous-ensemble de tests à exécuter.
 
  La barre des résultats des tests en haut de l’Explorateur s’anime durant l’exécution de votre test. À la fin de la série de tests, la barre est verte en cas de réussite de tous les tests, ou rouge en cas d’échec de l’un des tests. Un résumé de la série de tests s’affiche dans le volet d’informations, en bas de la fenêtre Explorateur de tests. Sélectionnez un test pour en afficher les détails dans le volet inférieur.
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704679"
 ---
 # <a name="log-command-window-output-command"></a>Enregistrer la sortie de la fenêtre de commande, commande
 Copie toutes les entrées et sorties de la fenêtre **Commande** dans un fichier.

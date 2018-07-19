@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31925561"
 ---
 # <a name="performance-warnings"></a>avertissements liés aux performances
 Avertissements liés aux performances prennent en charge les applications et bibliothèques de hautes performances.

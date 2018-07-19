@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 033eeff34c095b4598a02a386794379d06086450
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 08c8aadb3c452a59f1b44cd030331164384d23bb
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758335"
 ---
 # <a name="flowdecision-activity-designer"></a>Concepteur d'activités FlowDecision
 
@@ -27,16 +28,18 @@ Le nœud <xref:System.Activities.Statements.FlowDecision> est un nœud condition
 Utilisez <xref:System.Activities.Statements.FlowDecision> lorsque le flux peut faire l'objet d'une création de branche dans deux chemins d'accès. Un nœud <xref:System.Activities.Statements.FlowDecision> a un <xref:System.Activities.Statements.FlowDecision.Condition%2A> et un <xref:System.Activities.Statements.FlowNode> associés avec chacun des deux résultats possibles : <xref:System.Activities.Statements.FlowDecision.True%2A> ou <xref:System.Activities.Statements.FlowDecision.False%2A>. La propriété <xref:System.Activities.Statements.FlowDecision.Condition%2A> est évaluée et la valeur de cette évaluation détermine le <xref:System.Activities.Statements.FlowNode> suivant à traiter dans le <xref:System.Activities.Statements.Flowchart>.
 
 ### <a name="using-the-flowdecision-designer"></a>Utilisation du concepteur FlowDecision
- Le **FlowDecision** concepteur n’est trouvé dans le **organigramme** catégorie de la **boîte à outils**, qui est accessible en cliquant sur le **boîte à outils** onglet sur le Concepteur de flux de travail (ou bien, sélectionnez **barre d’outils** à partir de la **vue** menu ou CTRL + ALT + X.)
 
- Le **FlowDecision** concepteur peut être déplacé de la **boîte à outils** et déposés dans l’aire du Concepteur de flux de travail au sein d’un **organigramme** Concepteur d’activités. Cette opération crée un <xref:System.Activities.Statements.FlowDecision> intitulé **décision** dans le <xref:System.Activities.Statements.Flowchart> activité. Pointez la souris sur le concepteur et le **True** et **False** apparaître les poignées carrées pour les deux branches.
+Le **FlowDecision** concepteur n’est trouvé dans le **organigramme** catégorie de la **boîte à outils**, qui est accessible en cliquant sur le **boîte à outils** onglet Concepteur de Workflow. Vous pouvez également sélectionner **boîte à outils** à partir de la **vue** menu, ou appuyez sur **Ctrl**+**Alt** + **X**.
 
- Après avoir fait glisser le **FlowDecision** concepteur et autres concepteurs sur le **organigramme**, les nœuds peuvent être liés ensemble pour spécifier l’ordre d’exécution. Pour créer un lien entre un nœud source (y compris le **True** et **False** branches de la **FlowDecision**) et un nœud de destination, la souris au-dessus du concepteur du nœud source et apparaître les poignées carrées de chaque côté de celui-ci. Cliquez sur l'une des poignées carrées et faites-la glisser en maintenant le bouton de la souris enfoncé jusqu'à l'une des poignées qui s'affiche de la même façon autour du nœud de destination lorsque vous déplacez la souris dessus. Relâchez le bouton de la souris. Un lien est créé entre ces deux nœuds, représenté par une flèche allant du concepteur source au concepteur de destination.
+Le **FlowDecision** concepteur peut être déplacé de la **boîte à outils** et déposés dans l’aire du Concepteur de flux de travail au sein d’un **organigramme** Concepteur d’activités. Cette opération crée un <xref:System.Activities.Statements.FlowDecision> étiqueté **décision** au sein de la <xref:System.Activities.Statements.Flowchart> activité. Le Concepteur de la souris et le **True** et **False** apparaissent des poignées carrées pour les deux branches.
 
- L’expression qui déclare le <xref:System.Activities.Statements.FlowDecision.Condition%2A> peuvent être tapés dans le **Condition** zone de la **propriétés** fenêtre en cliquant sur « Entrer une expression VB » où le texte d’information indique que.
+Après avoir fait glisser le **FlowDecision** concepteur et autres concepteurs sur le **organigramme**, les nœuds peuvent être liés ensemble pour spécifier l’ordre d’exécution. Pour créer un lien entre un nœud source (y compris le **True** et **False** branches de la **FlowDecision**) et un nœud de destination, la souris au-dessus du concepteur du nœud source et apparaissent des poignées carrées de chaque côté de celui-ci. Cliquez sur l'une des poignées carrées et faites-la glisser en maintenant le bouton de la souris enfoncé jusqu'à l'une des poignées qui s'affiche de la même façon autour du nœud de destination lorsque vous déplacez la souris dessus. Relâchez le bouton de la souris. Un lien est créé entre ces deux nœuds, représenté par une flèche allant du concepteur source au concepteur de destination.
+
+L’expression qui déclare le <xref:System.Activities.Statements.FlowDecision.Condition%2A> peuvent être tapés dans le **Condition** boîte de le **propriétés** fenêtre en cliquant sur où le texte d’indication est « Entrer une expression VB ».
 
 ### <a name="the-flowdecision-properties"></a>Propriétés de FlowDecision
- Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.FlowDecision> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés ou dans l'aire du concepteur.
+
+Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.FlowDecision> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés ou dans l'aire du concepteur.
 
 |Nom de la propriété|Obligatoire|Utilisation|
 |-------------------|--------------|-----------|

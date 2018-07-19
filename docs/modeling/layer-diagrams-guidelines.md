@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954390"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagrammes de dépendance : instructions
 Décrire l’architecture de votre application à un niveau élevé en créant *des diagrammes de dépendance* dans Visual Studio. Assurez-vous que votre code reste cohérent avec cette conception en validant votre code avec un diagramme de dépendances. Vous pouvez également inclure la validation de couche dans votre processus de génération. Consultez [vidéo Channel 9 : création et valider votre architecture à l’aide de diagrammes de dépendance](http://go.microsoft.com/fwlink/?LinkID=252073).

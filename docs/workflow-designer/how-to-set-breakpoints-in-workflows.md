@@ -1,5 +1,5 @@
 ---
-title: 'Le Concepteur de flux de travail - Comment : définir des points d’arrêt dans les Workflows'
+title: 'Concepteur de flux de travail - Comment : définir des points d’arrêt dans les Workflows'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -10,34 +10,35 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ef863bfb899c218a65673236c284bed63aed11
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a1d7dcb437a77bd91c8dbb3360a33c7260fabb91
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755231"
 ---
-# <a name="how-to-set-breakpoints-in-workflows"></a>Comment : définir des points d'arrêt dans les workflows
+# <a name="how-to-set-breakpoints-in-workflows"></a>Comment : définir des points d’arrêt dans les workflows
 
-Lorsque vous utilisez le Concepteur de flux de travail Windows, vous pouvez définir des points d’arrêt sur vos workflows graphiques comme vous le feriez dans le code Visual Basic ou c#. Comme prévu, l'exécution de workflow s'arrête à chaque point d'arrêt que vous définissez.
+Lorsque vous utilisez le Concepteur de flux de travail, vous pouvez définir des points d’arrêt sur vos workflows graphiques comme vous le feriez dans le code Visual Basic ou c#. Comme prévu, l'exécution de workflow s'arrête à chaque point d'arrêt que vous définissez.
 
- Un point d’arrêt a trois états : *en attente*, *liés*, et *erreur*. Lorsque vous définissez un point d'arrêt, il a l'état En attente et est représenté par une icône rouge unie. Lorsque l'exécution a chargé le type de workflow, il adopte l'état Lié. Si vous spécifiez un format incorrect pour le point d'arrêt, par exemple en indiquant un nom d'activité non valide, un message d'erreur s'affiche. Le point d'arrêt est ajouté à la fenêtre de points d'arrêt, mais il est marqué d'un petit « x ».
+Un point d’arrêt a trois états : *en attente*, *lié*, et *erreur*. Lorsque vous définissez un point d'arrêt, il a l'état En attente et est représenté par une icône rouge unie. Lorsque l'exécution a chargé le type de workflow, il adopte l'état Lié. Si vous spécifiez un format incorrect pour le point d'arrêt, par exemple en indiquant un nom d'activité non valide, un message d'erreur s'affiche. Le point d'arrêt est ajouté à la fenêtre de points d'arrêt, mais il est marqué d'un petit « x ».
 
 > [!NOTE]
 > La définition des points d'arrêt sur les workflows appelés n'est pas prise en charge.
 
-> [!WARNING]
-> Vérifiez que vous sélectionnez l’option **activer uniquement mon Code (managé uniquement)** à partir de la **outils**, **Options**, **débogage** menu avant déboguer. Si vous disposez de deux séquences sont imbriquées dans une autre séquence et que vous définissez un point d’arrêt sur la première séquence interne, en appuyant sur **F11** ne sera pas déboguer dans la deuxième séquence interne si la **activer uniquement mon Code (managé uniquement)** option n’est pas sélectionnée.
+> [!NOTE]
+> Vérifiez que vous sélectionnez l’option **activer uniquement mon Code (managé uniquement)** à partir de la **outils** > **Options** > **débogage**  menu avant de déboguer. Si l’option n’est pas sélectionnée et vous disposez de deux séquences sont imbriquées dans une autre séquence, vous définissez un point d’arrêt sur la première séquence interne, en appuyant sur **F11** ne déboguez pas dans la deuxième séquence interne.
 
-> [!WARNING]
-> Les points d’arrêt dans un workflow ne sont pas atteints si le chemin d’accès complet à la propriété du fichier XAML n’est pas exact. Le chemin d’accès complet au fichier XAML n’est pas précis après avoir déplacé le projet ou la solution vers un autre dossier ou sur un autre ordinateur. Appuyez sur Ctrl+S pour enregistrer et mettre à jour la propriété de chemin complet.
+> [!NOTE]
+> Points d’arrêt dans un flux de travail ne sont pas atteints si le chemin d’accès complet à la propriété de fichier XAML n’est pas précis. Le chemin d’accès complet au fichier XAML n’est pas précis après le déplacement de la solution ou le projet vers un autre dossier ou à un autre ordinateur. Sélectionnez **Ctrl**+**S** pour enregistrer et mettre à jour la propriété de chemin d’accès complet.
 
 ## <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>Pour définir un point d'arrêt sur une activité en mode Design
 
-1.  Sélectionnez l'activité sur laquelle vous voulez que le débogueur s'arrête.
+1. Sélectionnez l'activité sur laquelle vous voulez que le débogueur s'arrête.
 
-2.  Sur le **déboguer** menu, sélectionnez **point d’arrêt**. Une icône rouge s'affiche dans l'angle supérieur gauche de l'activité.
+2. Sur le **déboguer** menu, sélectionnez **point d’arrêt**. Une icône rouge s'affiche dans l'angle supérieur gauche de l'activité.
 
-     Ou bien, vous pouvez également appuyer sur le raccourci **F9** après sélection de l’activité, ou vous pouvez avec le bouton droit de l’activité et sélectionnez la clé **point d’arrêt** puis **insérer point d’arrêt**dans le menu contextuel.
+   Vous pouvez également appuyer sur **F9** après sélection de l’activité, ou vous pouvez avec le bouton droit de l’activité et sélectionnez **point d’arrêt** > **insérer un point d’arrêt** dans le menu contextuel.
 
 ## <a name="see-also"></a>Voir aussi
 

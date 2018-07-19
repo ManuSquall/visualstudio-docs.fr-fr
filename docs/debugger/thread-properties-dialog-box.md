@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476414"
 ---
 # <a name="thread-properties-dialog-box"></a>Propriétés du thread, boîte de dialogue
 Utilisez cette boîte de dialogue pour en savoir plus sur un thread spécifique. Pour afficher cette boîte de dialogue, déplacez le focus vers un [vue Threads](../debugger/threads-view.md) fenêtre, ou ouvrez [vue Messages](../debugger/messages-view.md) et développez un message. Sélectionnez n’importe quel nœud de thread dans l’arborescence, puis choisissez **propriétés** à partir de la **vue** menu.  

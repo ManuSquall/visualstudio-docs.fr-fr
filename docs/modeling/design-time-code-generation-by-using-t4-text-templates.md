@@ -17,19 +17,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ff164eda610bcc69f908910e2dd23de3439f541f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7bafcec9def78d05c7c7d03f43dfc1d184348bcd
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117691"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Génération de code au moment du design à l’aide de modèles de texte T4
-Les modèles de texte T4 au moment de la conception vous permettent de générer du code de programme et d'autres fichiers dans votre projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. En règle générale, vous écrivez les modèles pour qu’ils varient le code qu’ils génèrent en fonction des données d’une *modèle*. Un modèle est un fichier ou la base de données qui contient des informations clés sur les exigences de votre application.
+Les modèles de texte T4 au moment de la conception vous permettent de générer du code de programme et d'autres fichiers dans votre projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. En règle générale, vous écrivez les modèles pour qu’ils varient le code qu’ils génèrent en fonction des données à partir d’un *modèle*. Un modèle est un fichier ou une base de données qui contient des informations clés sur les exigences de votre application.
 
- Par exemple, vous pourriez avoir un modèle qui définit un flux de travail sous la forme d'un tableau ou d'un diagramme. À partir du modèle, vous pouvez générer le logiciel qui exécute le flux de travail. Lorsque les exigences de vos utilisateurs changent, il est facile de discuter du nouveau flux de travail avec les utilisateurs. La regénération du code à partir du flux de travail est plus fiable que la mise à jour manuelle du code.
+ Par exemple, vous pourriez avoir un modèle qui définit un flux de travail sous la forme d'un tableau ou d'un diagramme. À partir du modèle, vous pouvez générer le logiciel qui exécute le flux de travail. Lorsque les besoins de vos utilisateurs changent, il est facile de discuter du nouveau flux de travail avec les utilisateurs. La regénération du code à partir du flux de travail est plus fiable que la mise à jour manuelle du code.
 
 > [!NOTE]
->  A *modèle* est une source de données qui décrit un aspect particulier d’une application. Il peut assumer n'importe quelle forme, dans n'importe quel genre de fichier ou de base de données. Il n'est pas obligatoire qu'il soit dans un format spécifique, tel qu'un modèle UML ou un modèle de langage spécifique à un domaine. Les modèles les plus courants assument la forme de tableaux ou de fichiers XML.
+>  Un *modèle* est une source de données qui décrit un aspect particulier d’une application. Il peut assumer n'importe quelle forme, dans n'importe quel genre de fichier ou de base de données. Il n'est pas obligatoire qu'il soit dans un format spécifique, tel qu'un modèle UML ou un modèle de langage spécifique à un domaine. Les modèles les plus courants assument la forme de tableaux ou de fichiers XML.
 
  Vous connaissez sans doute déjà le concept de génération de code. Lorsque vous définissez des ressources dans un **.resx** de fichiers dans votre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution, un ensemble de classes et méthodes est généré automatiquement. Le fichier de ressources simplifie et rend plus fiable la modification des ressources, par rapport à la modification manuelle des classes et des méthodes. Avec les modèles de texte, vous pouvez générer du code de la même façon à partir d'une source que vous avez conçue vous-même.
 
@@ -39,15 +40,15 @@ Les modèles de texte T4 au moment de la conception vous permettent de générer
 
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Pour créer un modèle T4 au moment du design dans Visual Studio
 
-1.  Créer un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet ou ouvrez-en une existante.
+1.  Créer un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] de projet ou ouvrez-en une existante.
 
-     Par exemple, sur le **fichier** menu, choisissez **nouveau**, **projet**.
+     Par exemple, sur le **fichier** menu, choisissez **New** > **projet**.
 
 2.  Ajouter un fichier de modèle de texte à votre projet et donnez-lui un nom qui a l’extension **.tt**.
 
-     Pour ce faire, dans **l’Explorateur de solutions**, dans le menu contextuel de votre projet, choisissez **ajouter**, **un nouvel élément**. Dans le **ajouter un nouvel élément** boîte de dialogue Sélectionnez **modèle de texte** dans le volet central.
+     Pour ce faire, dans **l’Explorateur de solutions**, dans le menu contextuel de votre projet, choisissez **ajouter** > **un nouvel élément**. Dans le **ajouter un nouvel élément** sélectionnez boîte de dialogue **modèle de texte** dans le volet central.
 
-     Notez que la **un outil personnalisé** propriété du fichier est **TextTemplatingFileGenerator**.
+     Notez que le **un outil personnalisé** propriété du fichier est **TextTemplatingFileGenerator**.
 
 3.  Ouvrez le fichier. Il contient déjà les directives suivantes :
 
@@ -68,10 +69,10 @@ Les modèles de texte T4 au moment de la conception vous permettent de générer
 
      Vous pouvez voir un **avertissement de sécurité** boîte de message qui vous invite à confirmer que vous souhaitez exécuter le modèle. Cliquez sur **OK**.
 
-6.  Dans **l’Explorateur de solutions**, développez le nœud de fichier de modèle et vous y trouverez un fichier ayant l’extension **.txt**. Ce fichier contient le texte généré à partir du modèle.
+6.  Dans **l’Explorateur de solutions**, développez le nœud de fichier de modèle et vous trouverez un fichier portant l’extension **.txt**. Ce fichier contient le texte généré à partir du modèle.
 
     > [!NOTE]
-    >  Si votre projet est un projet Visual Basic, vous devez cliquer sur **afficher tous les fichiers** pour afficher le fichier de sortie.
+    >  Si votre projet est un projet Visual Basic, vous devez cliquer sur **afficher tous les fichiers** afin de voir le fichier de sortie.
 
 ### <a name="regenerating-the-code"></a>Regénération du code
  Un modèle est exécuté, générant le fichier auxiliaire, dans les cas suivants :
@@ -80,11 +81,11 @@ Les modèles de texte T4 au moment de la conception vous permettent de générer
 
 -   Enregistrez le modèle.
 
--   Cliquez sur **transformer tous les modèles** dans les **générer** menu. Cette action transforme tous les modèles dans la solution [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+-   Cliquez sur **transformer tous les modèles** dans le **Build** menu. Cette action transforme tous les modèles dans la solution [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 -   Dans **l’Explorateur de solutions**, dans le menu contextuel de n’importe quel fichier, choisissez **exécuter un outil personnalisé**. Appliquez cette méthode pour transformer un sous-ensemble de modèles sélectionné.
 
- Vous pouvez aussi configurer un projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour que les modèles soient exécutés quand les fichiers de données qu'ils lisent ont changé. Pour plus d’informations, consultez [régénération automatique du code](#Regenerating).
+ Vous pouvez aussi configurer un projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour que les modèles soient exécutés quand les fichiers de données qu'ils lisent ont changé. Pour plus d’informations, consultez [regénération automatique du code](#Regenerating).
 
 ## <a name="generating-variable-text"></a>Génération de texte variable
  Les modèles de texte vous permettent d'utiliser du code de programme pour varier le contenu du fichier généré.
@@ -120,7 +121,7 @@ Les modèles de texte T4 au moment de la conception vous permettent de générer
 
 2.  Enregistrez le fichier .tt et inspectez de nouveau le fichier .txt généré. Il mentionne les carrés des chiffres de 0 à 10.
 
- Notez que les instructions sont placées entre des signes `<#...#>` et les expressions uniques entre des signes `<#=...#>`. Pour plus d’informations, consultez [l’écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md).
+ Notez que les instructions sont placées entre des signes `<#...#>` et les expressions uniques entre des signes `<#=...#>`. Pour plus d’informations, consultez [écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md).
 
  Si vous écrivez le code généré en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], la directive `template` doit contenir `language="VB"`. `"C#"` est la valeur par défaut.
 
@@ -292,10 +293,10 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 >  Un modèle de texte s'exécute dans son propre domaine d'application et les services sont accessibles par le marshaling. Dans cette circonstance, GetCOMService() est plus fiable que GetService().
 
-##  <a name="Regenerating"></a> Régénération automatique du code
+##  <a name="Regenerating"></a> Régénération du code automatiquement
  En général, plusieurs fichiers d'une solution [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sont générés avec un seul modèle d'entrée. Chaque fichier est généré à partir de son propre modèle, mais les modèles font tous référence au même modèle.
 
- Si le modèle source change, vous devez réexécuter tous les modèles de la solution. Pour ce faire manuellement, choisissez **transformer tous les modèles** sur la **générer** menu.
+ Si le modèle source change, vous devez réexécuter tous les modèles de la solution. Pour effectuer cette opération manuellement, choisissez **transformer tous les modèles** sur le **Build** menu.
 
  Si vous avez installé le SDK de modélisation de Visual Studio, vous pouvez avoir tous les modèles soient transformés automatiquement chaque fois que vous effectuez une génération. Pour cela, modifiez votre fichier de projet (.csproj or .vbproj) dans un éditeur de texte et ajoutez les lignes suivantes vers la fin du fichier, après toute autre instruction `<import>` :
 
@@ -321,7 +322,7 @@ Warning("A warning message");
 ```
 
 ##  <a name="Converting"></a> Conversion d’un fichier existant à un modèle
- L’une des fonctionnalités utiles des modèles est que leur apparence se rapproche des fichiers qu’ils génèrent, avec en plus du code de programme inséré. Cela nous suggère une méthode utile pour créer un modèle. Tout d’abord créer un fichier ordinaire en tant que prototype, tel qu’un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] de fichier, puis introduisez graduellement du code de génération qui fait varier le fichier résultant.
+ L’une des fonctionnalités utiles des modèles est que leur apparence se rapproche des fichiers qu’ils génèrent, avec en plus du code de programme inséré. Cela nous suggère une méthode utile pour créer un modèle. Tout d’abord créer un fichier ordinaire en tant que prototype, comme un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] de fichiers et puis introduisez graduellement du code de génération qui fait varier le fichier résultant.
 
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Pour convertir un fichier existant en modèle au moment du design
 
@@ -358,7 +359,7 @@ Warning("A warning message");
 7.  Identifiez une partie du fichier que vous souhaitez faire varier. Par exemple, une partie qui apparaît uniquement dans certaines conditions, qui est répétée ou dont les valeurs spécifiques varient. Insérez le code de génération. Enregistrez le fichier et vérifiez que le fichier auxiliaire est généré correctement. Répétez cette étape.
 
 ## <a name="guidelines-for-code-generation"></a>Instructions pour la génération de code
- Consultez [des recommandations pour les modèles de texte T4 écrit](../modeling/guidelines-for-writing-t4-text-templates.md).
+ Consultez [instructions pour l’écriture de modèles de texte T4](../modeling/guidelines-for-writing-t4-text-templates.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

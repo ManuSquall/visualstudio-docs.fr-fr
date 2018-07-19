@@ -20,13 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da44be7f972a75e143e00346bf4a39d0bdf65c27
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b8af903abb15d06d8d76d73cca4a9c337d45ee45
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765630"
 ---
-# <a name="how-to-choose-sampling-events"></a>Comment : choisir des événements d’échantillonnage
+# <a name="how-to-choose-sampling-events"></a>Guide pratique pour choisir des événements d’échantillonnage
 Par défaut, les outils de profilage de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] collectent les données de performances à un intervalle correspondant à un nombre de cycles processeur utilisés par le processus profilé. Le nombre de cycles par défaut dans un intervalle est de 10 000 000, ce qui correspond approximativement à 0,01 seconde sur un ordinateur 1 GHz. Vous pouvez modifier le nombre de cycles d’un intervalle, ainsi que l’événement d’échantillon. Les événements d’échantillons suivants sont disponibles :  
   
 -   Cycles d’horloge - Pour les problèmes lié au processeur.  
@@ -60,8 +61,8 @@ Par défaut, les outils de profilage de [!INCLUDE[vsprvs](../code-quality/includ
 5.  Lorsque vous sélectionnez un événement d’échantillon, une valeur d’intervalle d’échantillonnage par défaut s’affiche dans la zone de texte **Intervalle d’échantillonnage**. Si nécessaire, vous pouvez entrer la valeur de votre choix dans la zone de texte.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Configuration de sessions de performance](../profiling/configuring-performance-sessions.md)   
- [Guide pratique pour choisir une méthode de collecte](../profiling/how-to-choose-collection-methods.md)   
+ [Configurer des sessions de performance](../profiling/configuring-performance-sessions.md)   
+ [Guide pratique pour choisir des méthodes de collecte](../profiling/how-to-choose-collection-methods.md)   
  [Compteurs UC et Windows](../profiling/cpu-and-windows-counters.md)   
- [Fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)   
- [Profilage à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md)
+ [Comprendre le fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)   
+ [Profiler à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md)

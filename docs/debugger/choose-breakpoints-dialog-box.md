@@ -28,6 +28,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458243"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Boîte de dialogue Choisir les points d’arrêt
 Le **choisir les points d’arrêt** boîte de dialogue s’ouvre lorsque vous essayez de définir un point d’arrêt à partir d’entrées ambiguës dans le **nouveau point d’arrêt** boîte de dialogue. Un exemple courant d’entrée ambigu est un nom de la fonction surchargée.  

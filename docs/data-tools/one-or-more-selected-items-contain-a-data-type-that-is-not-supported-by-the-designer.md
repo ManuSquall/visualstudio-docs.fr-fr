@@ -10,23 +10,24 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 710bd42ea87f4d994a3176a736a55f534d1d9fd4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68d8675df54e37b9a6122b853e742addc0d8060c
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089488"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Un ou plusieurs éléments sélectionnés contient un type de données non pris en charge par le concepteur
 
-Un ou plusieurs des éléments déplacés à partir de **l’Explorateur de serveurs**/**l’Explorateur de base de données** sur la [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] contient un type de données qui n’est pas pris en charge par le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] par exemple, [Types CLR définis par l’utilisateur](/dotnet/framework/data/adonet/sql/clr-user-defined-types).
+Un ou plusieurs des éléments déplacés à partir de **Explorateur de serveurs** ou **Database Explorer** sur le **Concepteur O/R** contient un type de données qui n’est pas pris en charge par le **O /R concepteur**, par exemple, [types CLR définis par l’utilisateur](/dotnet/framework/data/adonet/sql/clr-user-defined-types).
 
 ## <a name="to-correct-this-error"></a>Pour corriger cette erreur
 
 1. Créez une vue basée sur la table souhaitée qui n'inclut pas le type de données non pris en charge.
 
-2. Faites glisser la vue à partir de **l’Explorateur de serveurs**/**l’Explorateur de base de données** sur le concepteur.
+2. Faites glisser la vue à partir de **Explorateur de serveurs** ou **Database Explorer** sur le concepteur.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Messages du Concepteur O/R](../data-tools/o-r-designer-messages.md)
-- [LINQ to SQL des outils dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

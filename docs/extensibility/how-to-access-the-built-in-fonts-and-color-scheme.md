@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131145"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Comment : accéder aux polices intégrées et jeu de couleurs
 L’environnement de développement intégré (IDE) Visual Studio a un jeu de polices et couleurs qui est associé à la fenêtre de l’éditeur. Vous pouvez accéder à ce schéma via les <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface.
@@ -38,7 +39,7 @@ L’environnement de développement intégré (IDE) Visual Studio a un jeu de po
 
 1.  Créer un GUID arbitraire.
 
-     Ce GUID est utilisé pour identifier de manière unique une catégorie**.** Cette catégorie réutilise la spécification de couleurs et de polices par défaut de l’IDE.
+     Ce GUID est utilisé pour identifier de manière unique une catégorie **.** Cette catégorie réutilise la spécification de couleurs et de polices par défaut de l’IDE.
 
     > [!NOTE]
     >  Lors de la récupération des données de police et couleur avec la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> ou d’autres interfaces, VSPackages utilisent ce GUID pour référencer les informations intégrées.
@@ -51,7 +52,7 @@ L’environnement de développement intégré (IDE) Visual Studio a un jeu de po
 
 1.  Construire un type spécial de l’entrée de Registre de catégorie dans l’emplacement suivant :
 
-     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<version de Visual Studio >*\FontAndColors\\*\<catégorie >*]
+     [HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<version de Visual Studio >* \FontAndColors\\*\<catégorie >*]
 
      *\<Catégorie >* est le nom non localisé de la catégorie.
 

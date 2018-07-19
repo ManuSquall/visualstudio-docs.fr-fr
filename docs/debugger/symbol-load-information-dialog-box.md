@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475416"
 ---
 # <a name="symbol-load-information-dialog-box"></a>Informations sur le chargement de symboles, boîte de dialogue
 Le **informations de chargement de symboles** boîte de dialogue s’ouvre lorsque vous cliquez sur le **Modules** fenêtre et choisissez **informations sur les symboles charge**.  

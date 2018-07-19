@@ -12,11 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c941928495dc39dc6b6ecbe9600f39dad969fec2
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 0f708ca73efa4f166f701b4d488ccc609f86e7a4
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283404"
 ---
 # <a name="advanced-example-for-containers"></a>Exemple avancé pour les conteneurs
 
@@ -118,7 +119,7 @@ Une fois la dernière ligne exécutée, ouvrez « %TEMP%\vslogs.zip » sur vot
 
 ## <a name="get-support"></a>Obtenir de l’aide
 
-Parfois, des problèmes peuvent se produire. En cas d’échec de l’installation de Visual Studio, consultez la page [Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017](troubleshooting-installation-issues.md). Si aucune étape de résolution des problèmes ne vous aide, vous pouvez nous contacter pour une conversation en direct sur une assistance à l’installation (en anglais uniquement). Pour plus de détails, consultez la [page du support Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Parfois, des problèmes peuvent se produire. En cas d’échec de l’installation de Visual Studio, consultez la page [Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017](troubleshooting-installation-issues.md). Si aucune étape de résolution des problèmes ne vous aide, vous pouvez nous contacter pour une conversation en direct sur une assistance à l’installation (en anglais uniquement). Pour plus de détails, consultez la [page du support Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Voici d’autres options de support :
 

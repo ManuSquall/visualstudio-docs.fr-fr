@@ -9,15 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 77774f4460bab7b36fd3684175228e7522a67027
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e155457b250eaa03f56d0009ee434bd1ecb39b63
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945869"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Ensemble de règles des règles recommandées mixtes
 
-Les règles recommandées mixtes Microsoft vous concentrer sur les problèmes plus courants et critiques dans vos projets C++ qui prennent en charge le Common Language Runtime, notamment les failles de sécurité potentielles, application tombe en panne et autres erreurs de logique et de conception importantes. Vous devez inclure cet ensemble de règles dans tout ensemble de règles personnalisé que vous créez pour vos projets C++ qui prennent en charge le Common Language Runtime.
+Les règles recommandées mixtes Microsoft vous concentrer sur les problèmes plus courants et critiques dans vos projets C++ qui prennent en charge le Common Language Runtime, y compris les failles de sécurité potentielles, les blocages d’application et les autres erreurs de logique et de conception importantes. Vous devez inclure cet ensemble de règles dans tout ensemble de règles personnalisé que vous créez pour vos projets C++ qui prennent en charge le Common Language Runtime.
 
 |Règle|Description|
 |----------|-----------------|
@@ -26,7 +27,7 @@ Les règles recommandées mixtes Microsoft vous concentrer sur les problèmes pl
 |[C6029](../code-quality/c6029.md)|Utilisation d'une valeur non vérifiée|
 |[C6031](../code-quality/c6031.md)|Valeur de retour ignorée|
 |[C6053](../code-quality/c6053.md)|Terminaison par zéro de l'appel|
-|[C6054](../code-quality/c6054.md)|Zéro arrêt manquant|
+|[C6054](../code-quality/c6054.md)|Terminaison par zéro manquante|
 |[C6059](../code-quality/c6059.md)|Concaténation non valide|
 |[C6063](../code-quality/c6063.md)|Argument de chaîne manquant pour le formatage de la fonction|
 |[C6064](../code-quality/c6064.md)|Argument d’entier manquant pour le formatage de la fonction|
@@ -35,40 +36,40 @@ Les règles recommandées mixtes Microsoft vous concentrer sur les problèmes pl
 |[C6101](../code-quality/c6101.md)|Retour d'une mémoire non initialisée|
 |[C6200](../code-quality/c6200.md)|L'index dépasse la taille maximale autorisée par la mémoire tampon|
 |[C6201](../code-quality/c6201.md)|L'index dépasse la taille maximale autorisée par la mémoire tampon allouée par la pile|
-|[C6214](../code-quality/c6214.md)|Transtypage de HRESULT vers BOOL non valide|
-|[C6215](../code-quality/c6215.md)|Transtypage de BOOL vers HRESULT non valide|
+|[C6214](../code-quality/c6214.md)|Cast de HRESULT vers BOOL non valide|
+|[C6215](../code-quality/c6215.md)|Cast de BOOL vers HRESULT non valide|
 |[C6216](../code-quality/c6216.md)|Cast inséré par le compilateur BOOL vers HRESULT non valide|
 |[C6217](../code-quality/c6217.md)|Test HRESULT non valide avec NOT|
 |[C6220](../code-quality/c6220.md)|Comparaison HRESULT non valide-1|
-|[C6226](../code-quality/c6226.md)|Affectation de HRESULT non valide à -1|
+|[C6226](../code-quality/c6226.md)|Affectation de HRESULT non valide-1|
 |[C6230](../code-quality/c6230.md)|Utilisation HRESULT non valide en tant que valeur booléenne|
-|[C6235](../code-quality/c6235.md)|Une constante non nulle avec logique- ou|
+|[C6235](../code-quality/c6235.md)|Constante non nulle avec opérateur logique- ou|
 |[C6236](../code-quality/c6236.md)|Logique- ou avec une constante Non nulle|
-|[C6237](../code-quality/c6237.md)|Zéro avec logique- et perd ses effets|
-|[C6242](../code-quality/c6242.md)|Déroulement local forcé|
+|[C6237](../code-quality/c6237.md)|Zéro avec opérateur logique- et perd ses effets|
+|[C6242](../code-quality/c6242.md)|Déroulement local provoqué|
 |[C6248](../code-quality/c6248.md)|Créer des DACL Null|
 |[C6250](../code-quality/c6250.md)|Descripteurs d’adresses non commercialisés|
 |[C6255](../code-quality/c6255.md)|Utilisation non protégée d’Alloca|
 |[C6258](../code-quality/c6258.md)|À l’aide de terminer le Thread|
-|[C6259](../code-quality/c6259.md)|Bloquer le Code au niveau du bit- ou limités commutateur|
-|[C6260](../code-quality/c6260.md)|Utilisation de l’arithmétique d’octets|
-|[C6262](../code-quality/c6262.md)|Utilisation de la pile excessive|
+|[C6259](../code-quality/c6259.md)|Code mort dans au niveau du bit- ou limités de commutateur|
+|[C6260](../code-quality/c6260.md)|Utilisation des opérations arithmétiques sur les octets|
+|[C6262](../code-quality/c6262.md)|Utilisation excessive de la pile|
 |[C6263](../code-quality/c6263.md)|Utilisation d’Alloca dans une boucle|
-|[C6268](../code-quality/c6268.md)|Parenthèses manquantes dans un Cast|
-|[C6269](../code-quality/c6269.md)|Déréférencement de pointeur ignoré|
+|[C6268](../code-quality/c6268.md)|Parenthèses manquantes dans le Cast|
+|[C6269](../code-quality/c6269.md)|Déréférencement du pointeur ignoré|
 |[C6270](../code-quality/c6270.md)|Argument float manquant pour le formatage de la fonction|
 |[C6271](../code-quality/c6271.md)|Argument supplémentaire pour le formatage de la fonction|
 |[C6272](../code-quality/c6272.md)|Argument non float pour le formatage de la fonction|
-|[C6273](../code-quality/c6273.md)|Argument non entier pour le formatage de la fonction|
+|[C6273](../code-quality/c6273.md)|Argument de type non entier pour le formatage (fonction)|
 |[C6274](../code-quality/c6274.md)|Argument autre qu’un caractère pour le formatage de la fonction|
 |[C6276](../code-quality/c6276.md)|Cast de chaîne non valide|
 |[C6277](../code-quality/c6277.md)|Appel CreateProcess non valide|
 |[C6278](../code-quality/c6278.md)|Incompatibilité de tableau New et scalaire Delete|
-|[C6279](../code-quality/c6279.md)|Incompatibilité de Scalar-nouveau tableau-supprimer|
-|[C6280](../code-quality/c6280.md)|Incompatibilité de désallocation de l’Allocation de mémoire|
-|[C6281](../code-quality/c6281.md)|Priorité de la Relation au niveau du bit|
-|[C6282](../code-quality/c6282.md)|Affectation remplace le Test|
-|[C6283](../code-quality/c6283.md)|Incompatibilité de tableau New et scalaire Delete primitifs|
+|[C6279](../code-quality/c6279.md)|Incompatibilité entre tableau scalaire-New-Delete|
+|[C6280](../code-quality/c6280.md)|Incompatibilité d’Allocation et désallocation de mémoire|
+|[C6281](../code-quality/c6281.md)|Priorité de Relation au niveau du bit|
+|[C6282](../code-quality/c6282.md)|L’affectation remplace le Test|
+|[C6283](../code-quality/c6283.md)|Incompatibilité primitive de tableau New et scalaire Delete|
 |[C6284](../code-quality/c6284.md)|Argument d’objet non valide pour le formatage de la fonction|
 |[C6285](../code-quality/c6285.md)|Logique- ou des constantes|
 |[C6286](../code-quality/c6286.md)|Différent de zéro logique- ou perte des effets secondaires|
@@ -78,7 +79,7 @@ Les règles recommandées mixtes Microsoft vous concentrer sur les problèmes pl
 |[C6290](../code-quality/c6290.md)|Priorité NOT logique et AND au niveau du bit|
 |[C6291](../code-quality/c6291.md)|Priorité NOT logique et OR au niveau du bit|
 |[C6292](../code-quality/c6292.md)|La boucle calcule à partir de la valeur maximale|
-|[C6293](../code-quality/c6293.md)|Boucle calcule à rebours à partir de la valeur minimale|
+|[C6293](../code-quality/c6293.md)|Boucle calcule à partir de Minimum|
 |[C6294](../code-quality/c6294.md)|Corps de la boucle jamais exécuté|
 |[C6295](../code-quality/c6295.md)|Boucle infinie|
 |[C6296](../code-quality/c6296.md)|Boucle exécutée une fois|
@@ -88,22 +89,22 @@ Les règles recommandées mixtes Microsoft vous concentrer sur les problèmes pl
 |[C6303](../code-quality/c6303.md)|Argument de chaîne de caractères larges non valide pour le formatage de la fonction|
 |[C6305](../code-quality/c6305.md)|Incompatibilité entre la taille et la quantité|
 |[C6306](../code-quality/c6306.md)|Appel de fonction d’argument de variable non valide|
-|[C6308](../code-quality/c6308.md)|Realloc fuite|
+|[C6308](../code-quality/c6308.md)|Fuite de réallocation|
 |[C6310](../code-quality/c6310.md)|Constante de filtre d’Exception non conforme|
 |[C6312](../code-quality/c6312.md)|L’exception Continue la boucle d’exécution|
-|[C6314](../code-quality/c6314.md)|Au niveau du bit- ou la priorité|
-|[C6317](../code-quality/c6317.md)|Complément est pas|
+|[C6314](../code-quality/c6314.md)|Au niveau du bit- priorité|
+|[C6317](../code-quality/c6317.md)|Complément not Not|
 |[C6318](../code-quality/c6318.md)|L’exception Continue la recherche|
-|[C6319](../code-quality/c6319.md)|Ignoré par une virgule|
+|[C6319](../code-quality/c6319.md)|Ignoré par des virgules|
 |[C6324](../code-quality/c6324.md)|Copie d’une chaîne au lieu de la comparaison de chaînes|
 |[C6328](../code-quality/c6328.md)|Incompatibilité de type d’argument possible|
-|[C6331](../code-quality/c6331.md)|Indicateurs de VirtualFree n’est pas valide|
+|[C6331](../code-quality/c6331.md)|Indicateurs VirtualFree n’est pas valide|
 |[C6332](../code-quality/c6332.md)|Paramètre non valide de VirtualFree|
 |[C6333](../code-quality/c6333.md)|Taille de VirtualFree n’est pas valide|
 |[C6335](../code-quality/c6335.md)|Handle de processus|
-|[C6381](../code-quality/c6381.md)|Arrêt informations manquantes|
+|[C6381](../code-quality/c6381.md)|Informations de l’arrêt manquantes|
 |[C6383](../code-quality/c6383.md)|Nombre d’éléments Byte-dépassement de mémoire tampon de nombre|
-|[C6384](../code-quality/c6384.md)|Division de taille de pointeur|
+|[C6384](../code-quality/c6384.md)|Division de taille du pointeur|
 |[C6385](../code-quality/c6385.md)|Dépassement en lecture|
 |[C6386](../code-quality/c6386.md)|Dépassement en écriture|
 |[C6387](../code-quality/c6387.md)|Valeur de paramètre non valide|
@@ -139,48 +140,48 @@ Les règles recommandées mixtes Microsoft vous concentrer sur les problèmes pl
 |[C6706](../code-quality/c6706.md)|Erreur d'annotation inattendue pour l'annotation|
 |[C6995](../code-quality/c6995.md)|Impossible d’enregistrer le fichier journal XML|
 |[C26100](../code-quality/c26100.md)|Condition de concurrence|
-|[C26101](../code-quality/c26101.md)|Absence d’utilisation d’une opération à blocage correctement|
+|[C26101](../code-quality/c26101.md)|Absence d’utilisation de l’opération à blocage correctement|
 |[C26110](../code-quality/c26110.md)|Appelant ne parvenant pas à maintenir le verrou|
 |[C26111](../code-quality/c26111.md)|Appelant ne parvenant pas à libérer le verrou|
-|[C26112](../code-quality/c26112.md)|L’appelant ne peut pas contenir un verrou quelconque|
-|[C26115](../code-quality/c26115.md)|Échec de libération du verrou|
-|[C26116](../code-quality/c26116.md)|Échec d’acquisition ou du maintien du verrou|
-|[C26117](../code-quality/c26117.md)|Libérer un verrou non maintenu|
+|[C26112](../code-quality/c26112.md)|L’appelant ne peut pas maintenir aucun verrou|
+|[C26115](../code-quality/c26115.md)|Échec de libération de verrou|
+|[C26116](../code-quality/c26116.md)|Échec d’acquisition ou à maintenir le verrou|
+|[C26117](../code-quality/c26117.md)|Libération du verrou|
 |[C26140](../code-quality/c26140.md)|Erreur d’annotation SAL d’accès concurrentiel|
-|[C28020](../code-quality/c28020.md)|L’expression n’est pas true dans cet appel|
+|[C28020](../code-quality/c28020.md)|L’expression n’est pas vraie dans cet appel|
 |[C28021](../code-quality/c28021.md)|Le paramètre annoté doit être un pointeur|
-|[C28022](../code-quality/c28022.md)|Les classes de fonction sur cette fonction ne correspondent pas à la fonction ou les classes sur le typedef utilisé pour le définir.|
-|[C28023](../code-quality/c28023.md)|La fonction est assigné ou passée doit avoir un _Function_class\_ annotation pour au moins de l’ou les classes|
+|[C28022](../code-quality/c28022.md)|Les classes de fonction sur cette fonction ne correspondent pas les classes de fonction sur le typedef utilisé pour la définir.|
+|[C28023](../code-quality/c28023.md)|La fonction assignée ou passée doit avoir un \_fonction\_classe\_ annotation pour au moins l’une des classes|
 |[C28024](../code-quality/c28024.md)|Le pointeur de fonction assigné à est annoté avec la classe de fonction, ce qui n’est pas contenue dans la liste de classes de fonction.|
-|[C28039](../code-quality/c28039.md)|Le type du paramètre réel doit correspondre exactement au type|
+|[C28039](../code-quality/c28039.md)|Le type de paramètre réel doit correspondre exactement au type|
 |[C28112](../code-quality/c28112.md)|Une variable qui est accessible via une fonction Interlocked doit toujours être accessible via une fonction Interlocked.|
-|[C28113](../code-quality/c28113.md)|L’accès à une variable locale via une fonction Interlocked|
+|[C28113](../code-quality/c28113.md)|Accès à une variable locale via une fonction Interlocked|
 |[C28125](../code-quality/c28125.md)|La fonction doit être appelée à partir de dans un bloc try / except bloc|
 |[C28137](../code-quality/c28137.md)|L’argument de variable doit être à la place d’une constante (littérale)|
-|[C28138](../code-quality/c28138.md)|L’argument constante doit plutôt être une variable|
-|[C28159](../code-quality/c28159.md)|Envisagez d’utiliser une autre fonction à la place.|
+|[C28138](../code-quality/c28138.md)|L’argument de la constante doit plutôt être une variable|
+|[C28159](../code-quality/c28159.md)|Envisagez plutôt d’utiliser une autre fonction.|
 |[C28160](../code-quality/c28160.md)|annotation d'erreur|
-|[C28163](../code-quality/c28163.md)|La fonction ne doit jamais être appelée à partir d’un bloc try / except bloc|
+|[C28163](../code-quality/c28163.md)|La fonction ne doit jamais être appelée à partir de dans un bloc try / except bloc|
 |[C28164](../code-quality/c28164.md)|L’argument est passé à une fonction qui attend un pointeur vers un objet (pas un pointeur vers un pointeur)|
 |[C28182](../code-quality/c28182.md)|Déréférencement du pointeur NULL. Le pointeur contient la même valeur NULL qu'un autre pointeur.|
-|[C28183](../code-quality/c28183.md)|L’argument peut être une valeur, et est une copie de la valeur trouvée dans le pointeur|
-|[C28193](../code-quality/c28193.md)|La variable contienne une valeur qui doit être examinée.|
-|[C28196](../code-quality/c28196.md)|La configuration requise n’est pas satisfaite. (L’expression ne correspond pas à la valeur true).|
+|[C28183](../code-quality/c28183.md)|L’argument pouvait être une valeur, et est une copie de la valeur trouvée dans le pointeur|
+|[C28193](../code-quality/c28193.md)|La variable contient une valeur qui doit être examinée.|
+|[C28196](../code-quality/c28196.md)|L’exigence n’est pas satisfaite. (L’expression ne correspond pas à la valeur true).|
 |[C28202](../code-quality/c28202.md)|Référence non autorisée à un membre non statique|
 |[C28203](../code-quality/c28203.md)|Référence ambiguë à un membre de classe.|
-|[C28205](../code-quality/c28205.md)|_Success\_ ou _On_failure\_ utilisé dans un contexte non autorisé|
+|[C28205](../code-quality/c28205.md)|\_Réussite\_ ou \_sur\_échec\_ utilisé dans un contexte non autorisé|
 |[C28206](../code-quality/c28206.md)|L’opérande de gauche pointe vers un struct, utiliser '->'|
 |[C28207](../code-quality/c28207.md)|L’opérande de gauche est un struct, utiliser '.'|
-|[C28209](../code-quality/c28209.md)|La déclaration du symbole possède une déclaration en conflit|
+|[C28209](../code-quality/c28209.md)|La déclaration de symbole possède une déclaration en conflit|
 |[C28210](../code-quality/c28210.md)|Les annotations pour le contexte __on_failure ne doivent pas se trouver dans un contexte préalable explicite|
 |[C28211](../code-quality/c28211.md)|Nom du contexte statique attendu pour SAL_context|
 |[C28212](../code-quality/c28212.md)|Expression de pointeur attendue pour l'annotation|
-|[C28213](../code-quality/c28213.md)|L’annotation _Use_decl_annotations\_ doit être utilisée pour référencer, sans modification, une déclaration antérieure.|
+|[C28213](../code-quality/c28213.md)|Le \_utilisation\_decl\_annotations\_ annotation doit être utilisée pour référencer, sans modification, une déclaration antérieure.|
 |[C28214](../code-quality/c28214.md)|Les noms des paramètres d'attribut doivent être p1...p9|
 |[C28215](../code-quality/c28215.md)|Le typefix ne peut pas être appliqué à un paramètre qui contient déjà un typefix|
 |[C28216](../code-quality/c28216.md)|L'annotation checkReturn ne s'applique qu'aux post-conditions pour le paramètre de fonction spécifique.|
 |[C28217](../code-quality/c28217.md)|Pour la fonction, le nombre de paramètres de l'annotation ne correspond pas au nombre trouvé dans le fichier|
-|[C28218](../code-quality/c28218.md)|Paramètre de fonction, paramètre de l’annotation ne correspond pas trouvé dans le fichier|
+|[C28218](../code-quality/c28218.md)|Pour le paramètre de fonction, paramètre de l’annotation ne correspond pas trouvé dans le fichier|
 |[C28219](../code-quality/c28219.md)|Membre de l'énumération attendu pour une annotation, le paramètre dans l'annotation|
 |[C28220](../code-quality/c28220.md)|Expression d'entier attendue pour une annotation, le paramètre dans l'annotation|
 |[C28221](../code-quality/c28221.md)|Expression de chaîne attendue pour le paramètre dans l'annotation|
@@ -205,7 +206,7 @@ Les règles recommandées mixtes Microsoft vous concentrer sur les problèmes pl
 |[C28240](../code-quality/c28240.md)|L'annotation sur le paramètre possède un param2, mais pas de param1|
 |[C28241](../code-quality/c28241.md)|L'annotation pour la fonction sur le paramètre n'est pas reconnue|
 |[C28243](../code-quality/c28243.md)|L’annotation pour la fonction sur le paramètre nécessite plus de déréférencements que le type réel annoté ne le permet.|
-|[C28244](../code-quality/c28244.md)|L’annotation pour la fonction a une annotation de paramètre non analysable/externes|
+|[C28244](../code-quality/c28244.md)|L’annotation pour la fonction a une annotation de paramètre/externe non analysable|
 |[C28245](../code-quality/c28245.md)|L’annotation pour la fonction annote ’this’ sur une fonction non membre|
 |[C28246](../code-quality/c28246.md)|L'annotation du paramètre ne correspond pas au type du paramètre|
 |[C28250](../code-quality/c28250.md)|Annotation incohérente pour une fonction : l'instance précédente contient une erreur.|
@@ -218,25 +219,25 @@ Les règles recommandées mixtes Microsoft vous concentrer sur les problèmes pl
 |[C28267](../code-quality/c28267.md)|Une erreur de syntaxe dans les annotations a été trouvée pour l'annotation dans la fonction.|
 |[C28272](../code-quality/c28272.md)|L'annotation pour la fonction, paramètre pendant la vérification est incohérente avec la déclaration de fonction|
 |[C28273](../code-quality/c28273.md)|Pour la fonction, les indices sont incohérents avec la déclaration de fonction|
-|[C28275](../code-quality/c28275.md)|Le paramètre de _Macro_value\_ a une valeur null|
+|[C28275](../code-quality/c28275.md)|Le paramètre \_Macro\_valeur\_ a la valeur null|
 |[C28279](../code-quality/c28279.md)|Pour le symbole, un 'begin' a été trouvé sans le 'end' correspondant|
 |[C28280](../code-quality/c28280.md)|Pour le symbole, un 'end' a été trouvé sans le 'begin' correspondant|
 |[C28282](../code-quality/c28282.md)|Les chaînes de format doivent être comprises dans des conditions préalables|
 |[C28285](../code-quality/c28285.md)|Pour la fonction, erreur de syntaxe dans le paramètre|
 |[C28286](../code-quality/c28286.md)|Pour la fonction, erreur de syntaxe près de la fin|
-|[C28287](../code-quality/c28287.md)|Pour la fonction, erreur de syntaxe dans l’annotation _At\_() (nom de paramètre non reconnu)|
-|[C28288](../code-quality/c28288.md)|Pour la fonction, erreur de syntaxe dans l’annotation _At\_() (nom de paramètre non valide)|
+|[C28287](../code-quality/c28287.md)|Pour la fonction, erreur de syntaxe dans \_à\_() annotation (nom de paramètre non reconnu)|
+|[C28288](../code-quality/c28288.md)|Pour la fonction, erreur de syntaxe dans \_à\_() annotation (nom de paramètre non valide)|
 |[C28289](../code-quality/c28289.md)|Pour la fonction : ReadableTo ou WritableTo n'a pas eu de spécification de limites en tant que paramètre|
 |[C28290](../code-quality/c28290.md)|l'annotation pour la fonction contient plus d'Externals que le nombre réel de paramètres|
 |[C28291](../code-quality/c28291.md)|post null/notnull au niveau 0 deref n'a pas de sens pour la fonction.|
 |[C28300](../code-quality/c28300.md)|Opérandes d’expression de types incompatibles pour l’opérateur|
 |[C28301](../code-quality/c28301.md)|Aucune annotation pour la première déclaration de la fonction.|
-|[C28302](../code-quality/c28302.md)|Un opérateur extra _Deref\_ a été trouvé dans une annotation.|
-|[C28303](../code-quality/c28303.md)|Un opérateur ambigu _Deref\_ a été trouvé dans une annotation.|
-|[C28304](../code-quality/c28304.md)|Un opérateur _Notref\_ placé de manière incorrecte et appliqué à un jeton a été trouvé.|
+|[C28302](../code-quality/c28302.md)|Un supplémentaire \_Deref\_ opérateur a été trouvé dans une annotation.|
+|[C28303](../code-quality/c28303.md)|Un ambigu \_Deref\_ opérateur a été trouvé dans une annotation.|
+|[C28304](../code-quality/c28304.md)|Un placé \_Notref\_ opérateur appliqué à un jeton a été trouvé.|
 |[C28305](../code-quality/c28305.md)|Une erreur a été détectée pendant l'analyse d'un jeton.|
-|[C28306](../code-quality/c28306.md)|L’annotation sur le paramètre est obsolète|
-|[C28307](../code-quality/c28307.md)|L’annotation sur le paramètre est obsolète|
+|[C28306](../code-quality/c28306.md)|L’annotation sur paramètre est obsolète|
+|[C28307](../code-quality/c28307.md)|L’annotation sur paramètre est obsolète|
 |[C28350](../code-quality/c28350.md)|L'annotation décrit une situation qui n'est pas applicable de manière conditionnelle.|
 |[C28351](../code-quality/c28351.md)|L'annotation décrit l'emplacement auquel une valeur dynamique (une variable) ne peut pas être utilisée dans la condition.|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Les types qui possèdent des champs supprimables doivent être supprimables|
@@ -255,12 +256,12 @@ Les règles recommandées mixtes Microsoft vous concentrer sur les problèmes pl
 |[CA1404](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)|Appeler GetLastError immédiatement après P/Invoke|
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|Types base type visibles par COM doivent être visibles par COM|
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|Méthodes d’inscription COM doivent être mises en correspondance.|
-|[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Déclarer correctement les méthodes P/Invoke|
+|[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Déclarer correctement les P/Invoke|
 |[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Supprimez les finaliseurs vides|
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|Champs de type valeur doivent être portables|
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Les déclarations P/Invoke doivent être portables|
-|[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|Ne verrouillent pas sur des objets à identité faible|
-|[CA2100](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|Passez en revue les requêtes SQL des failles de sécurité|
+|[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|Ne verrouillez pas sur des objets à identité faible|
+|[CA2100](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|Passez en revue les requêtes SQL pour les failles de sécurité|
 |[CA2101](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|Spécifiez le marshaling pour les arguments de chaîne P/Invoke|
 |[CA2108](../code-quality/ca2108-review-declarative-security-on-value-types.md)|Vérifiez la sécurité déclarative dans les types valeur|
 |[CA2111](../code-quality/ca2111-pointers-should-not-be-visible.md)|Les pointeurs ne doivent pas être visibles|
@@ -269,27 +270,27 @@ Les règles recommandées mixtes Microsoft vous concentrer sur les problèmes pl
 |[CA2116](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)|Les méthodes APTCA doivent uniquement appeler des méthodes APTCA|
 |[CA2117](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)|Les types APTCA doivent uniquement étendre des types de base APTCA|
 |[CA2122](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)|N’exposez pas indirectement des méthodes avec des demandes de liaison|
-|[CA2123](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)|Les demandes de liaison de remplacement doivent être identiques à la base|
-|[CA2124](../code-quality/ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md)|Finally vulnérables clauses dans externe try|
-|[CA2126](../code-quality/ca2126-type-link-demands-require-inheritance-demands.md)|Liaison de types nécessitent des demandes d’héritage|
-|[CA2131](../code-quality/ca2131-security-critical-types-may-not-participate-in-type-equivalence.md)|Les types critiques de sécurité ne peuvent pas faire partie de l’équivalence de type|
-|[CA2132](../code-quality/ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md)|Constructeurs par défaut doivent être au moins aussi critiques que les constructeurs par défaut de type de base|
-|[CA2133](../code-quality/ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md)|Les délégués doivent lier les méthodes avec une transparence cohérente|
-|[CA2134](../code-quality/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md)|Transparence des méthodes doivent rester cohérente lors de la substitution de méthodes de base|
+|[CA2123](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)|Demandes de liaison de remplacement doivent être identiques de base|
+|[CA2124](../code-quality/ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md)|Wrapper finally vulnérables clauses dans externe try|
+|[CA2126](../code-quality/ca2126-type-link-demands-require-inheritance-demands.md)|Demandes de liaison de type nécessitent des demandes d’héritage|
+|[CA2131](../code-quality/ca2131-security-critical-types-may-not-participate-in-type-equivalence.md)|Types critiques de sécurité ne peuvent pas participer l’équivalence des types|
+|[CA2132](../code-quality/ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md)|Les constructeurs par défaut doivent être au moins aussi critiques que les constructeurs par défaut de type de base|
+|[CA2133](../code-quality/ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md)|Les délégués doivent lier aux méthodes avec une transparence cohérente|
+|[CA2134](../code-quality/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md)|Méthodes doit rester une transparence cohérente lors de la substitution des méthodes de base|
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|Les méthodes transparentes doivent contenir uniquement des IL vérifiables|
-|[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Les méthodes transparentes ne doivent pas appeler les méthodes avec l’attribut SuppressUnmanagedCodeSecurity|
+|[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Les méthodes transparentes ne doivent pas appeler de méthodes avec l’attribut SuppressUnmanagedCodeSecurity|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|Le code transparent ne doit pas faire référence à des éléments critiques de sécurité|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Les méthodes transparentes ne répondent pas aux LinkDemands|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Méthodes transparentes ne répondent pas aux LinkDemands|
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Types doivent être au moins aussi critiques que leurs types de base et les interfaces|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Les méthodes transparentes ne peuvent pas utiliser de sécurité des assertions|
-|[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Les méthodes transparentes ne doivent pas appeler dans du code natif|
-|[CA2200](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)|Levez de nouveau pour conserver les détails de la pile|
+|[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Méthodes transparentes ne doivent pas appeler du code natif|
+|[CA2200](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)|Lever à nouveau pour conserver les détails de la pile|
 |[CA2202](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)|Ne pas supprimer des objets plusieurs fois|
-|[CA2207](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)|Initialiser les champs statiques de type valeur en ligne|
+|[CA2207](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)|Initialiser des champs statiques de type valeur en ligne|
 |[CA2212](../code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md)|Ne marquez pas les composants pris en charge avec WebMethod|
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Des champs supprimables doivent être supprimés.|
+|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Champs supprimables doivent être supprimés.|
 |[CA2214](../code-quality/ca2214-do-not-call-overridable-methods-in-constructors.md)|N’appelez pas de méthodes substituables dans les constructeurs|
-|[CA2216](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)|Types pouvant être supprimés doivent déclarer un finaliseur|
+|[CA2216](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)|Les types supprimables doivent déclarer un finaliseur|
 |[CA2220](../code-quality/ca2220-finalizers-should-call-base-class-finalizer.md)|Les finaliseurs doivent appeler le finaliseur de la classe de base|
 |[CA2229](../code-quality/ca2229-implement-serialization-constructors.md)|Implémentez des constructeurs de sérialisation|
 |[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Surchargez l’opérateur equals en remplaçant ValueType.Equals|

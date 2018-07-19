@@ -9,27 +9,28 @@ description: Découvrez l’avantage Enterprise Mobility + Security inclus dan
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: acf1028890dfcee3194beaeff930d514ea1c812f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d116e4c08f3a95eeceded590b6384e97ab47e839
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281649"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Avantage EMS (Enterprise Mobility + Security) dans les abonnements Visual Studio
 
-Les abonnements standard et cloud annuels Visual Studio Enterprise incluent EMS (Enterprise Mobility + Security).  Sécurisez et gérez l’ensemble de vos identités, appareils, applications et données grâce à EMS : Azure Active Directory, Microsoft Intune, Azure Information Protection, Microsoft Advanced Threat Analytics et Microsoft Cloud App Security.  
+Les abonnements standard et cloud annuels Visual Studio Enterprise incluent EMS (Enterprise Mobility + Security).  Sécurisez et gérez l’ensemble de vos identités, appareils, applications et données grâce à EMS : Azure Active Directory, Microsoft Intune, Azure Information Protection, Microsoft Advanced Threat Analytics et Microsoft Cloud App Security.
 
 ## <a name="activation-steps"></a>Étapes d'activation
 
-Pour utiliser EMS, vous devez créer un compte ou vous connecter à l’aide d’un compte existant. 
+Pour utiliser EMS, vous devez créer un compte ou vous connecter à l’aide d’un compte existant.
 
 1.  Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2.  Recherchez la vignette Enterprise Mobility & Security dans la section Outils et cliquez sur le lien **Obtenir un code** en bas de la vignette.   Vous recevez une notification confirmant l’envoi du code.  Cliquez sur **Activer**. 
+2.  Recherchez la vignette Enterprise Mobility & Security dans la section Outils et cliquez sur le lien **Obtenir un code** en bas de la vignette.   Vous recevez une notification confirmant l’envoi du code.  Cliquez sur **Activer**.
 
     ![Vignette de l’avantage EMS](_img\vs-ems\vs-ems-tile.png)
 
-2.  Dans la page Enterprise Mobility + Security E5, vous pouvez vous connecter avec un abonnement existant ou créer un autre abonnement.  Pour créer un abonnement, entrez les informations demandées, puis cliquez sur **Suivant**. 
+2.  Dans la page Enterprise Mobility + Security E5, vous pouvez vous connecter avec un abonnement existant ou créer un autre abonnement.  Pour créer un abonnement, entrez les informations demandées, puis cliquez sur **Suivant**.
 
     ![Avantage EMS, Créer un compte](_img\vs-ems\vs-ems-create-account-cropped.png)
 
@@ -61,10 +62,10 @@ Pour utiliser EMS, vous devez créer un compte ou vous connecter à l’aide d�
 
 <sup>2</sup> *Exclut Microsoft Partner Network (Professional)*
 
-Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements. 
+Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
 ## <a name="support-resources"></a>Ressources de support technique
 -  Besoin d'aide avec EMS ?  Consultez la [documentation en ligne sur EMS](/enterprise-mobility-security/).
 -  Pour accéder au support technique d’un composant d’EMS, visitez https://support.microsoft.com/allproducts et sélectionnez le produit souhaité.
--  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://www.visualstudio.com/subscriptions/support/) Visual Studio.
--  Vous avez des questions concernant l’IDE Visual Studio, Visual Studio Team Services ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://www.visualstudio.com/support/). 
+-  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+-  Vous avez des questions concernant l’IDE Visual Studio, Visual Studio Team Services ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).

@@ -8,20 +8,20 @@
   items:
     - name: Présentation du déploiement
       href: deploying-applications-services-and-components.md
-    - name: Déployer sur un dossier local
-      href: quickstart-deploy-to-local-folder.md
+    - name: Déployer sur Azure App Service
+      href: quickstart-deploy-to-azure.md
     - name: Déployer sur un site web
       href: quickstart-deploy-to-a-web-site.md
-    - name: Déployer sur Azure
-      href: quickstart-deploy-to-azure.md
+    - name: Déployer sur un dossier local
+      href: quickstart-deploy-to-local-folder.md
 - name: Didacticiels
   items:
     - name: .NET
       items:
         - name: Déployer une application .NET Core avec l’outil de publication
-          href: /dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /dotnet/core/deploying/deploy-with-vs
         - name: Empaqueter une application de bureau pour Microsoft Store (Pont du bureau)
-          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
         - name: Déployer une application de bureau avec ClickOnce
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
         - name: Générer des applications ClickOnce à partir de la ligne de commande
@@ -29,35 +29,37 @@
     - name: ASP.NET
       items:
         - name: Publier une application ASP.NET Core sur Azure
-          href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs
+        - name: Déployer sur IIS à l’aide de Web Deploy
+          href: deploy-iis-with-web-deploy.md
         - name: Importer des paramètres de publication et déployer sur Azure
           href: tutorial-import-publish-settings-azure.md
         - name: Importer des paramètres de publication et déployer sur IIS
           href: tutorial-import-publish-settings-iis.md
         - name: Déploiement continu d’ASP.NET Core sur Azure avec Git
-          href: /aspnet/core/publishing/azure-continuous-deployment?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
-        - name: Déployer ASP.NET sur IIS
-          href: /iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /aspnet/core/publishing/azure-continuous-deployment
+        - name: Publier sur Kubernetes avec les outils Kubernetes de Visual Studio
+          href: tutorial-kubernetes-tools.md
     - name: Natif
       items:
         - name: Déploiement dans Visual C++...
           href: /cpp/ide/deployment-in-visual-cpp
         - name: Empaqueter une application de bureau pour Microsoft Store (Pont du bureau)
-          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
         - name: Déployer une application native avec ClickOnce...
           href: /cpp/ide/clickonce-deployment-for-visual-cpp-applications
     - name: UWP
       items:
         - name: Empaqueter une application UWP en utilisant Visual Studio
-          href: /windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /windows/uwp/packaging/packaging-uwp-apps
     - name: Node.js
       items:
-        - name: Publier sur un site web Azure avec Web Deploy
-          href: 'https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json'
+        - name: Publier sur Linux App Service
+          href: /visualstudio/javascript/publish-nodejs-app-azure
     - name: Python
       items:
         - name: Publier sur Azure App Service
-          href: /visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json
+          href: /visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio
 - name: Guides pratiques
   items:
     - name: Sécurité et déploiement ClickOnce

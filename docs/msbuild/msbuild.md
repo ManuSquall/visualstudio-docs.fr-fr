@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26646ecef952a6f4ff761f4e7239fc6e7e920ea1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e56cc8671da9639344b6531a530029a97c02e707
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327152"
 ---
 # <a name="msbuild"></a>MSBuild
 Le [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] est une plateforme de génération d'applications. Ce moteur, également appelé MSBuild, fournit un schéma XML pour un fichier projet qui contrôle la manière dont la plateforme de génération traite et génère les logiciels. Visual Studio utilise MSBuild, mais il ne dépend pas de Visual Studio. En appelant msbuild.exe sur votre fichier projet ou solution, vous pouvez gérer et générer des produits dans les environnements où Visual Studio n'est pas installé.  
@@ -74,7 +75,7 @@ Le [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] 
 ##  <a name="BKMK_CommandPrompt"></a> Utilisation de MSBuild dans une invite de commandes  
  Pour exécuter [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] à partir d’une invite de commandes, transmettez un fichier projet à MSBuild.exe, avec les options de ligne de commande appropriées. Les options de ligne de commande vous permettent de définir des propriétés, d'exécuter des cibles spécifiques et de définir d'autres options qui contrôlent le processus de génération. Par exemple, vous utilisez la syntaxe de ligne de commande suivante pour générer le fichier `MyProj.proj` avec la propriété `Configuration` ayant `Debug` comme valeur.  
   
-```  
+```cmd  
 MSBuild.exe MyProj.proj /property:Configuration=Debug  
 ```  
   

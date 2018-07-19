@@ -1,18 +1,18 @@
 ---
-title: "JsValueType, énumération | Microsoft Docs"
-ms.custom: 
+title: JsValueType, énumération | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - jsrt/JsValueType
 helpviewer_keywords:
 - JsValueType enumeration
 ms.assetid: 6645e723-e554-41fc-b622-ab54ee044b3d
-caps.latest.revision: 
+caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569049"
 ---
 # <a name="jsvaluetype-enumeration"></a>JsValueType, énumération
 Type JavaScript de JsValueRef.  

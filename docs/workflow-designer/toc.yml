@@ -1,41 +1,30 @@
-- name: Développer des applications avec le concepteur de workflow
+- name: Développer des applications avec le Concepteur de flux de travail
   href: developing-applications-with-the-workflow-designer.md
   items:
-    - name: Utiliser le concepteur de workflow
-      href: using-the-workflow-designer.md
+    - name: Créer un projet de workflow
+      href: creating-a-workflow-project.md
       items:
-        - name: Créer un projet de workflow
-          href: creating-a-workflow-project.md
-          items:
-            - name: Créer une application console de workflow
-              href: how-to-create-a-workflow-console-application.md
-            - name: Créer une application de service de workflow WCF
-              href: how-to-create-a-wcf-workflow-service-application.md
-            - name: Créer une bibliothèque d’activités
-              href: how-to-create-an-activity-library.md
-            - name: Créer une bibliothèque ActivityDesigner
-              href: how-to-create-an-activity-designer-library.md
-            - name: Ajouter un nouvel élément à un projet de workflow
-              href: how-to-add-a-new-item-to-a-workflow-project.md
-        - name: Ajouter des activités à la boîte à outils
-          href: how-to-add-activities-to-the-toolbox.md
-        - name: Utiliser le concepteur d’arguments
-          href: how-to-use-the-argument-designer.md
-        - name: Utiliser le concepteur de variables
-          href: how-to-use-the-variable-designer.md
-        - name: Utiliser l’éditeur d’expressions
-          href: how-to-use-the-expression-editor.md
-        - name: Utiliser le concepteur d’importations
-          href: how-to-use-the-imports-designer.md
-        - name: Utiliser l’exploration à l’aide de la barre de navigation
-          href: how-to-use-breadcrumb-navigation.md
-        - name: Utiliser la recherche dans le concepteur de workflow
-          href: how-to-use-search-in-the-workflow-designer.md
-        - name: Définir et utiliser des délégués d’activité dans le concepteur de workflow
-          href: how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md
-        - name: Ajouter des commentaires à un workflow dans le concepteur de workflow
-          href: how-to-add-comments-to-a-workflow-in-the-workflow-designer.md
-    - name: Utilisation des concepteurs d'activités
+        - name: Ajouter un nouvel élément à un projet de workflow
+          href: how-to-add-a-new-item-to-a-workflow-project.md
+    - name: Ajouter des activités à la boîte à outils
+      href: how-to-add-activities-to-the-toolbox.md
+    - name: Utiliser le concepteur d’arguments
+      href: how-to-use-the-argument-designer.md
+    - name: Utiliser le concepteur de variables
+      href: how-to-use-the-variable-designer.md
+    - name: Utiliser l’éditeur d’expressions
+      href: how-to-use-the-expression-editor.md
+    - name: Utiliser le concepteur d’importations
+      href: how-to-use-the-imports-designer.md
+    - name: Utiliser l’exploration à l’aide de la barre de navigation
+      href: how-to-use-breadcrumb-navigation.md
+    - name: Utiliser la recherche dans le concepteur de workflow
+      href: how-to-use-search-in-the-workflow-designer.md
+    - name: Définir et utiliser des délégués d’activité dans le concepteur de workflow
+      href: how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md
+    - name: Ajouter des commentaires à un workflow dans le concepteur de workflow
+      href: how-to-add-comments-to-a-workflow-in-the-workflow-designer.md
+    - name: Concepteurs d’activités
       href: using-the-activity-designers.md
       items:
         - name: Concepteurs d'activités de flux de contrôle
@@ -156,18 +145,16 @@
           items:
             - name: Concepteur d'activités Interop
               href: interop-activity-designer.md
-    - name: Débogage de workflows avec Workflow Designer
+    - name: Déboguer des workflows
       href: debugging-workflows-with-the-workflow-designer.md
       items:
-        - name: Appeler le débogueur de workflow
-          href: how-to-invoke-the-workflow-debugger.md
         - name: Définir des points d’arrêt dans les workflows
           href: how-to-set-breakpoints-in-workflows.md
         - name: Déboguer du code XAML à l’aide du concepteur de workflow
           href: how-to-debug-xaml-with-the-workflow-designer.md
-        - name: Scénarios de débogage non pris en charge dans le Concepteur de workflow
+        - name: Scénarios de débogage non pris en charge
           href: unsupported-debugging-scenarios-in-the-workflow-designer.md
-    - name: Aide sur l'interface utilisateur de Workflow Designer
+    - name: référence à l'interface
       href: workflow-designer-ui-help.md
       items:
         - name: 'Rechercher et sélectionner un type .NET, boîte de dialogue'
@@ -188,97 +175,7 @@
           href: system-activities-tab-choose-toolbox-items-dialog-box.md
         - name: Fonctionnalités du shell Workflow Designer
           href: workflow-designer-shell-features.md
-        - name: Raccourcis clavier dans Workflow Designer
+        - name: Raccourcis clavier
           href: keyboard-shortcuts-in-the-workflow-designer.md
-        - name: Messages d'erreur dans Workflow Designer
+        - name: messages d'erreur
           href: error-messages-in-workflow-designer.md
-    - name: "Développement d'applications de workflow qui ciblent le .NET\_3.0 ou .NET\_3.5 Framework"
-      href: developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md
-      items:
-        - name: Débogage de workflows hérités
-          href: debugging-legacy-workflows.md
-          items:
-            - name: Déboguer des workflows basés sur ASP.NET (hérités)
-              href: how-to-debug-aspnet-based-workflows-legacy.md
-            - name: Définir des points d’arrêt dans les workflows (hérités)
-              href: how-to-set-breakpoints-in-workflows-legacy.md
-            - name: Débogage de workflows d'un ordinateur distant (hérité)
-              href: debugging-workflows-from-a-remote-computer-legacy.md
-            - name: Options de débogage pas à pas (héritées)
-              href: debug-stepping-options-legacy.md
-            - name: Modifier l’option de débogage pas à pas (héritée)
-              href: how-to-change-the-debug-stepping-option-legacy.md
-            - name: Désactivation du débogueur Visual Studio pour Windows Workflow Foundation (hérité)
-              href: disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md
-            - name: Appel du débogueur Visual Studio pour Windows Workflow Foundation (hérité)
-              href: invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md
-        - name: Utilisation du Concepteur de Workflow hérité
-          href: using-the-legacy-workflow-designer.md
-          items:
-            - name: Visual Studio pour Windows Workflow (hérité)
-              href: visual-studio-workflow-windows-legacy.md
-            - name: Création de projets de workflows hérités
-              href: creating-legacy-workflow-projects.md
-              items:
-                - name: Créer une bibliothèque d’activités de workflow (héritée)
-                  href: how-to-create-a-workflow-activity-library-legacy.md
-                - name: Créer un projet de workflow vide (hérité)
-                  href: how-to-create-an-empty-workflow-project-legacy.md
-                - name: Ajouter un nouvel élément à un projet de workflow (hérité)
-                  href: how-to-add-a-new-item-to-a-workflow-project-legacy.md
-                - name: Configurer des propriétés de projet de workflow (héritées)
-                  href: how-to-configure-workflow-project-properties-legacy.md
-                - name: Créer des applications console de workflows séquentiels (héritées)
-                  href: how-to-create-sequential-workflow-console-applications-legacy.md
-                - name: Créer des applications console de flux de travail de machine à états (héritées)
-                  href: how-to-create-state-machine-workflow-console-applications-legacy.md
-                - name: Créer des projets de workflow (hérités)
-                  href: how-to-create-workflow-projects-legacy.md
-                - name: Créer une bibliothèque de workflows séquentiels (héritée)
-                  href: how-to-create-a-sequential-workflow-library-legacy.md
-                - name: Créer une bibliothèque de workflows de machine à états (héritée)
-                  href: how-to-create-a-state-machine-workflow-library-legacy.md
-            - name: Vues de workflow séquentiel (héritées)
-              href: sequential-workflow-views-legacy.md
-            - name: Activités de workflow héritées
-              href: legacy-workflow-activities.md
-              items:
-                - name: Créer une condition de règle déclarative (héritée)
-                  href: how-to-create-a-declarative-rule-condition-legacy.md
-                - name: Créer un ensemble de règles PolicyActivity (hérité)
-                  href: how-to-create-a-policyactivity-rule-set-legacy.md
-                - name: Vues d'activité (héritées)
-                  href: activity-views-legacy.md
-                - name: Ajouter des activités à la boîte à outils (héritées)
-                  href: how-to-add-activities-to-the-toolbox-legacy.md
-                - name: Implémenter une opération de contrat Windows Communication Foundation (héritée)
-                  href: how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md
-                - name: Appeler une opération de contrat Windows Communication Foundation (héritée)
-                  href: how-to-invoke-a-windows-communication-foundation-contract-operation-legacy.md
-            - name: Utilisation de thèmes dans les workflows (hérités)
-              href: using-themes-in-workflows-legacy.md
-            - name: Utilisation du Concepteur de Workflow d'ordinateur d'état hérité
-              href: using-the-legacy-state-machine-workflow-designer.md
-            - name: Utilisation du concepteur d'activités hérité
-              href: using-the-legacy-activity-designer.md
-            - name: Aide de l'interface utilisateur du concepteur hérité pour Windows Workflow Foundation
-              href: legacy-designer-for-windows-workflow-foundation-ui-help.md
-              items:
-                - name: 'Lier à la propriété d''une activité, boîte de dialogue (héritée)'
-                  href: bind-to-an-activity-s-property-dialog-box-legacy.md
-                - name: 'Rechercher et sélectionner un type .NET, boîte de dialogue (héritée)'
-                  href: browse-and-select-a-dotnet-type-dialog-box-legacy.md
-                - name: 'Choisir une opération, boîte de dialogue (héritée)'
-                  href: choose-operation-dialog-box-legacy.md
-                - name: 'Éditeur de conditions de règle, boîte de dialogue (héritée)'
-                  href: rule-condition-editor-dialog-box-legacy.md
-                - name: 'Éditeur d''ensemble de règles, boîte de dialogue (héritée)'
-                  href: rule-set-editor-dialog-box-legacy.md
-                - name: 'Sélectionner la condition, boîte de dialogue (héritée)'
-                  href: select-condition-dialog-box-legacy.md
-                - name: 'Sélectionner l''ensemble de règles, boîte de dialogue (héritée)'
-                  href: select-rule-set-dialog-box-legacy.md
-                - name: 'Configuration du thème, boîte de dialogue (héritée)'
-                  href: theme-configuration-dialog-box-legacy.md
-                - name: 'Thèmes, Concepteur de Workflow, Options, boîte de dialogue (héritée)'
-                  href: themes-workflow-designer-options-dialog-box-legacy.md

@@ -15,15 +15,16 @@ ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: e0ee905cf4ddaec6a05d5c0722b80c345489acd2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0623616848c6e996a49baffa19f412a22f28e846
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234422"
 ---
-# <a name="walkthrough-create-a-custom-directive-processor"></a>Procédure pas à pas : Création d’un processeur de Directive personnalisé
+# <a name="walkthrough-create-a-custom-directive-processor"></a>Procédure pas à pas : créer un processeur de directive personnalisé
 
-*Processeurs de directive* fonctionnent en ajoutant du code pour le *classe de transformation générée*. Si vous appelez un *directive* d’un *modèle de texte*, le reste du code que vous écrivez dans votre modèle de texte peut faire appel aux fonctionnalités qu’elle fournit.
+*Processeurs de directive* fonctionnent en ajoutant du code pour le *classe de transformation générée*. Si vous appelez un *directive* à partir d’un *modèle de texte*, le reste du code que vous écrivez dans votre modèle de texte peut reposer sur les fonctionnalités fournies par la directive.
 
 Vous pouvez écrire vos propres processeurs de directive personnalisés. Vous avez ainsi la possibilité de personnaliser vos modèles de texte. Pour créer un processeur de directive personnalisé, vous devez définir une classe qui hérite de <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> ou de <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.
 
@@ -43,7 +44,7 @@ L'appel à votre directive personnalisée se présente comme suit :
 
 `<#@ CoolDirective Processor="CustomDirectiveProcessor" FileName="<Your Path>DocFile.xml" #>`
 
-Le processeur de directive personnalisé ajoute la variable et la propriété à la classe de transformation générée. La directive que vous écrivez utilise les classes <xref:System.CodeDom> pour créer le code que le moteur ajoute à la classe de transformation générée. Le <xref:System.CodeDom> classes créent du code dans Visual c# ou Visual Basic, selon le langage spécifié dans le `language` paramètre de la `template` la directive. Le langage du processeur de directive et celui du modèle de texte qui accède à ce processeur ne doivent pas nécessairement correspondre.
+Le processeur de directive personnalisé ajoute la variable et la propriété à la classe de transformation générée. La directive que vous écrivez utilise les classes <xref:System.CodeDom> pour créer le code que le moteur ajoute à la classe de transformation générée. Le <xref:System.CodeDom> classes créer du code dans Visual c# ou Visual Basic, selon le langage spécifié dans le `language` paramètre de la `template` directive. Le langage du processeur de directive et celui du modèle de texte qui accède à ce processeur ne doivent pas nécessairement correspondre.
 
 Le code créé par la directive se présente comme suit :
 
@@ -81,15 +82,15 @@ End Property
 1. Dans Visual Studio, créez un projet de bibliothèque de classes C# ou Visual Basic nommé CustomDP.
 
     > [!NOTE]
-    > Si vous souhaitez installer le processeur de directive sur plusieurs ordinateurs, il est préférable d’utiliser un projet d’Extension Visual Studio (VSIX) et d’inclure un fichier .pkgdef dans l’extension. Pour plus d’informations, consultez [déploiement d’un processeur de Directive personnalisé](../modeling/deploying-a-custom-directive-processor.md).
+    > Si vous souhaitez installer le processeur de directive sur plusieurs ordinateurs, il est préférable d’utiliser un projet d’Extension Visual Studio (VSIX) et inclure un fichier .pkgdef dans l’extension. Pour plus d’informations, consultez [déploiement d’un processeur de Directive personnalisé](../modeling/deploying-a-custom-directive-processor.md).
 
-2. Ajoutez des références aux assemblys suivants :
+2. Ajouter des références aux assemblys suivants :
 
     - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
     - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**
 
-3. Remplacez le code dans **Class1** avec le code suivant. Ce code définit une classe CustomDirectiveProcessor qui hérite de la classe <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> et implémente les méthodes nécessaires.
+3. Remplacez le code dans **Class1** par le code suivant. Ce code définit une classe CustomDirectiveProcessor qui hérite de la classe <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> et implémente les méthodes nécessaires.
 
     ```csharp
     using System;
@@ -126,7 +127,7 @@ End Property
 
             // These are the errors that occur during processing. The engine passes
             // the errors to the host, and the host can decide how to display them,
-            // for example the the host can display the errors in the UI
+            // for example the host can display the errors in the UI
             // or write them to a file.
             // ---------------------------------------------------------------------
             private CompilerErrorCollection errorsValue;
@@ -385,7 +386,7 @@ End Property
 
             ' These are the errors that occur during processing. The engine passes
             ' the errors to the host, and the host can decide how to display them,
-            ' for example the the host can display the errors in the UI
+            ' for example the host can display the errors in the UI
             ' or write them to a file.
             ' ---------------------------------------------------------------------
             Private errorsValue As CompilerErrorCollection
@@ -733,9 +734,9 @@ Dans cet exemple, le modèle de texte appelle la directive et passe le nom d'un 
 
 2. Ajoutez un nouveau fichier modèle de texte nommé TestDP.tt.
 
-3. Assurez-vous que le **un outil personnalisé** de TestDP.tt est définie sur `TextTemplatingFileGenerator`.
+3. Assurez-vous que le **un outil personnalisé** propriété de TestDP.tt a la valeur `TextTemplatingFileGenerator`.
 
-4. Modifier le contenu de TestDP.tt par le texte suivant.
+4. Modifier le contenu de TestDP.tt au texte suivant.
 
     > [!NOTE]
     > Remplacez la chaîne `<YOUR PATH>` avec le chemin d’accès à la *DocFile.xml* fichier.
@@ -831,9 +832,9 @@ Dans cet exemple, le modèle de texte appelle la directive et passe le nom d'un 
 
 ### <a name="to-test-the-directive-processor"></a>Pour tester le processeur de directive
 
-1. Dans **l’Explorateur de solutions**, avec le bouton droit de TestDP.tt, puis sur **exécuter un outil personnalisé**.
+1. Dans **l’Explorateur de solutions**, avec le bouton droit de TestDP.tt, puis cliquez sur **exécuter un outil personnalisé**.
 
-   Pour les utilisateurs de Visual Basic, le fichier TestDP.txt peuvent ne pas apparaître dans **l’Explorateur de solutions** par défaut. Pour afficher tous les fichiers assignés au projet, ouvrez le **projet** menu et cliquez sur **afficher tous les fichiers**.
+   Pour les utilisateurs de Visual Basic, TestDP.txt n’apparaisse pas dans **l’Explorateur de solutions** par défaut. Pour afficher tous les fichiers assignés au projet, ouvrez le **projet** menu et cliquez sur **afficher tous les fichiers**.
 
 2. Dans **l’Explorateur de solutions**, développez le nœud TestDP.txt, puis double-cliquez sur le fichier TestDP.txt pour l’ouvrir dans l’éditeur.
 
@@ -878,7 +879,7 @@ Après avoir testé votre processeur de directive personnalisé, vous pouvez ajo
 1. Remplacez le code dans *TestDP.tt* par le code suivant. Le code HTML est mis en surbrillance. Veillez à remplacer la chaîne `YOUR PATH` avec le chemin d’accès à la *DocFile.xml* fichier.
 
     > [!NOTE]
-    > Ouvrez supplémentaire \<# et fermantes #> balises de séparent le code des instructions des balises HTML.
+    > Open supplémentaire \<# et fermantes #> balises séparent le code de l’instruction de balises HTML.
 
     ```csharp
     <#@ assembly name="System.Xml" #>

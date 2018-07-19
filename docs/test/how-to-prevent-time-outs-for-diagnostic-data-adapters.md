@@ -1,5 +1,5 @@
 ---
-title: Délais d’attente des adaptateurs de données de diagnostic dans Visual Studio | Microsoft Docs
+title: Délais d’attente des adaptateurs de données de diagnostic dans Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,14 @@ ms.assetid: 39fff4fc-9233-4f67-96ac-e81bbaf7ca82
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 61572a323fa29892096c963ad94a5e201dd61ec9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 093b937f7a957ef1d3a912c31d57a03f1a433ab0
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844236"
 ---
 # <a name="how-to-prevent-time-outs-for-diagnostic-data-adapters"></a>Comment : éviter les délais d'attente des adaptateurs de données de diagnostic
 
@@ -62,7 +64,7 @@ Si vous utilisez des adaptateurs de données de diagnostic dans les paramètres 
 
 4.  Vous devez modifier la section relative aux paramètres d'exécution des tests pour augmenter les valeurs de délai d'attente. Cette section se présente sous la forme suivante :
 
-    ```
+    ```text
     <!-- Begin: Test execution settings -->
 
         <!-- How long test runner will wait for an event raised to all local data collectors to complete.  Default is 300. -->
@@ -80,7 +82,7 @@ Si vous utilisez des adaptateurs de données de diagnostic dans les paramètres 
 
 7.  Pour augmenter le délai d’expiration du transfert des données collectées pour un bogue ou quand un test se termine sur l’ordinateur qui exécute les tests, vous devez ajouter le délai d’expiration suivant à **mtm.exe.config** dans la section appSettings du fichier :
 
-    ```
+    ```text
     <!-- How long test runner waits for data collected by diagnostic data adapters to be transferred to the computer. Default is 60 seconds. -->
     <add key="GetCollectorDataTimeout" value="300"/>
     ```

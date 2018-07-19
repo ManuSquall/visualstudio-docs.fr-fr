@@ -1,5 +1,5 @@
 ---
-title: Faire un zoom sur les graphiques des résultats des tests de charge dans Visual Studio | Microsoft Docs
+title: Faire un zoom sur les graphiques des résultats des tests de charge dans Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,12 +11,14 @@ ms.assetid: 729b4c30-4bc3-4698-91b3-17a676897443
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9e2379161051c821af07b6da5b102177178a0d7f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a61d53e8dbdbbce9c5a09fc8f8cd180a8b312d2c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750969"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Comment : faire un zoom sur une région du graphique des résultats d'un test de charge
 
@@ -38,7 +40,7 @@ Une fois un test de charge terminé, vous pouvez utiliser les barres de zoom pou
 > [!TIP]
 > Vous pouvez utiliser la commande **Synchroniser les contrôles de zoom horizontal** dans la barre d’outils pour activer/désactiver la synchronisation de zoom horizontal automatique. Lorsque la synchronisation est activée, un effet de zoom appliqué à un graphique est également appliqué à tous autres graphiques de la vue Graphiques.
 
- ![Contrôle de zoom de la vue Graphiques](../test/media/ltest_zoomcontrol.png "LTest_ZoomControl") Contrôle de zoom de la vue Graphiques
+ ![Contrôle de zoom de la vue Graphiques](../test/media/ltest_zoomcontrol.png) Contrôle de zoom de la vue Graphiques
 
  Dans l'illustration précédente, un zoom avant a été appliqué au graphique Système testé pour étudier les problèmes de seuil. Les violations de seuils ont été activées à l’aide de l’option **Afficher les violations de seuils sur le graphique** de la liste déroulante **Options de graphique** dans la barre d’outils.
 

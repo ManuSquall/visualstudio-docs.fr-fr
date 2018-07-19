@@ -3,16 +3,18 @@ layout: LandingPage
 author: jasongroce
 ms.author: apexprodleads
 ms.topic: landing-page
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-mobile
 title: Documentation du développement mobile avec C++ | Documents Microsoft
 description: Créez des applications C++ natives pour iOS, Android et Windows avec Visual Studio.
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: e190ad0dbe908fb1d4549023729d60db88177ea6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cc428cd4b961fe42f3d1f80cd18982a2420aafd3
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924172"
 ---
 # <a name="mobile-development-with-c-documentation"></a>Documentation du développement mobile avec C++
 
@@ -31,7 +33,7 @@ Créez des applications C++ natives pour iOS, Android et Windows avec Visual Stu
                     </div>
                     <div class="cardText">
                         <h3>Installer Visual C++ pour le développement mobile multiplateforme</h3>
-                        <p>Configurez les outils requis pour développer des applications mobiles multiplateforme.</p>
+                        <p>Configurez les outils requis pour générer des applications mobiles multiplateforme.</p>
                     </div>
                 </div>
             </div>
@@ -68,8 +70,8 @@ Créez des applications C++ natives pour iOS, Android et Windows avec Visual Stu
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Cross-Platform Mobile Development Examples</h3>
-                        <p>Exemples pour prendre en main le développement mobile multiplateforme.</p>
+                        <h3>Exemples de développement mobile multiplateforme</h3>
+                        <p>Consultez des exemples qui facilitent la prise en main du développement mobile multiplateforme.</p>
                     </div>
                 </div>
             </div>

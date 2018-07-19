@@ -1,5 +1,5 @@
 ---
-title: Activer le débogage pour les Applications ASP.NET | Documents Microsoft
+title: Activer le débogage pour les Applications ASP.NET | Microsoft Docs
 ms.custom: H1HackMay2017
 ms.date: 09/21/17
 ms.technology: vs-ide-debug
@@ -19,17 +19,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 3418e1d2e05d687f8cb73a7857178ae1060d56f8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 438e5a96ef07faf399d06ae517afe313a44673b4
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057848"
 ---
-# <a name="debug-aspnet-applications-in-visual-studio"></a>Débogage d’Applications ASP.NET dans Visual Studio
+# <a name="debug-aspnet-applications-in-visual-studio"></a>Déboguer des Applications ASP.NET dans Visual Studio
 
 Vous pouvez déboguer des applications ASP.NET à partir de Visual Studio.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 Pour suivre les instructions fournies dans cette rubrique, vous devez :
 
@@ -37,9 +38,9 @@ Pour suivre les instructions fournies dans cette rubrique, vous devez :
 
     - ou -
 
-- Local IIS web server (version 8.0 ou version ultérieure) est correctement configuré et peut exécuter l’application ASP.NET sans erreurs.
+- Une variable locale IIS web server (version 8.0 ou version ultérieure) qui est configuré correctement et peut exécuter l’application ASP.NET sans erreurs.
 
-Si le serveur est distant, le débogueur distant doit être en cours d’exécution sur l’ordinateur distant. Pour déboguer sur un serveur IIS distant, consultez [ASP.NET de déboguer à distance sur un ordinateur IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). 
+Si le serveur est distant, le débogueur distant doit être en cours d’exécution sur l’ordinateur distant. Pour déboguer sur un serveur IIS distant, consultez [débogage distant de ASP.NET sur un ordinateur IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). 
 
 ## <a name="configure-debug-settings"></a>Configurer les paramètres de débogage
 
@@ -49,7 +50,7 @@ Si le serveur est distant, le débogueur distant doit être en cours d’exécut
 
 2. Cliquez sur le projet dans **l’Explorateur de solutions**, choisissez **propriétés**, puis cliquez sur le **Web** onglet.
 
-    Pour certains types de projet, sélectionnez **Propriétés > déboguer** à la place. Pour un projet Web Forms ASP.NET, cliquez sur le projet et sélectionnez **Pages de propriétés > Options de démarrage**.
+    Pour certains types de projets, sélectionnez **Propriétés > déboguer** à la place. Pour un projet Web Forms ASP.NET, cliquez sur le projet et sélectionnez **Pages de propriétés > Options de démarrage**.
   
 3.  Sous **Débogueurs**, cochez la case **ASP.NET** .
 
@@ -60,17 +61,17 @@ Si le serveur est distant, le débogueur distant doit être en cours d’exécut
 
 ### <a name="enable-debugging-in-the-webconfig-file"></a>Activer le débogage dans le fichier web.config  
 
-Pour déboguer une application web, au fichier web.config de l’application doit être configuré correctement. Un fichier web.config est requis si vous hébergez l’application sur IIS ou IIS Express.
+Pour déboguer une application web, fichier web.config de l’application doit être configuré correctement. Un fichier web.config est requis si vous hébergez l’application sur IIS ou IIS Express.
 
-Pour ASP.NET Core, le fichier web.config est créé automatiquement lorsque l’application est déployée (si elle n’est pas déjà présente).
+Pour ASP.NET Core, le fichier web.config est créé automatiquement quand l’application est déployée (si elle n’est pas déjà présente).
 
 > [!TIP]
-> Votre processus de déploiement peut mettre à jour les paramètres web.config. Par conséquent, avant d’essayer de déboguer, vérifiez le paramètre web.config sur le serveur.
+> Votre processus de déploiement peut mettre à jour les paramètres de web.config. Par conséquent, avant d’essayer de déboguer, vérifiez le paramètre web.config sur le serveur.
   
 1.  Dans Visual Studio, ouvrez le fichier web.config du projet.  
   
     > [!NOTE]  
-    > Vous ne pouvez pas accéder au fichier web.config à distance à l’aide d’un navigateur Web. Pour des raisons de sécurité, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] configure Microsoft IIS pour empêcher un navigateur accède directement aux fichiers Web.config. Si vous essayez d’accéder à un fichier de configuration à l’aide d’un navigateur, vous obtenez une erreur d’accès HTTP 403 (interdit).  
+    > Vous ne pouvez pas accéder à distance le fichier web.config à l’aide d’un navigateur Web. Pour des raisons de sécurité, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] configure Microsoft IIS pour empêcher un navigateur accède directement aux fichiers Web.config. Si vous essayez d’accéder à un fichier de configuration en utilisant un navigateur, vous obtenez une erreur d’accès HTTP 403 (interdit).  
   
 2.  Recherchez l’élément `configuration/system.web/compilation` . Si l’élément de compilation n’existe pas, créez-le.
 
@@ -87,7 +88,7 @@ Le fichier web.config doit ressembler à l’exemple suivant :
   
 #### <a name="example"></a>Exemple  
   
-```  
+```xml
 <configuration>  
     ...  
     <system.web>  
@@ -104,31 +105,31 @@ Le fichier web.config doit ressembler à l’exemple suivant :
 Si vous utilisez un serveur externe au lieu du serveur d’IIS Express par défaut, vous devez également vous assurer que le `targetFramework` valeur d’attribut correspond à la configuration sur le serveur.
 
 > [!IMPORTANT]
-> Pour de meilleures performances, définir une application de production `debug=false` et spécifiez une version Release lorsque vous générez et publiez l’application.
+> Pour de meilleures performances, la valeur est une application de production `debug=false` et spécifiez une version Release lorsque vous générez et publiez l’application.
 
 ## <a name="configure-project-settings-for-the-server"></a>Configurer les paramètres de projet pour le serveur
 
-Pour le débogage sur un serveur web local, définissez les propriétés du projet. Pour le débogage sur un serveur distant, suivez les instructions de plus complètes décrites dans [ASP.NET de débogage à distance sur IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) à la place.
+Pour le débogage sur un serveur web local, définissez les propriétés de projet. Pour le débogage sur un serveur distant, suivez les instructions plus complètes décrites dans [Remote Debugging ASP.NET sur IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) à la place.
 
-1. Dans le **Web** onglet du projet de propriétés, sélectionnez **IIS Express** ou **serveur externe** sous le **Server** paramètres. (Pour certains types de projet, ces paramètres s’affichent sous la **déboguer** onglet à la place.)
+1. Dans le **Web** onglet du projet propriétés, sélectionnez **IIS Express** ou **serveur externe** sous le **Server** paramètres. (Pour certains types de projet, ces paramètres apparaissent sous la **déboguer** onglet à la place.)
 
     ![Paramètres du serveur](../debugger/media/dbg-aspnet-server-settings.png "paramètres du serveur")
 
-    IIS Express est le serveur par défaut pour ASP.NET et ne requiert généralement pas de configuration spéciale. Il s’agit de la façon la plus simple pour déboguer une application ASP.NET.
+    IIS Express est le serveur par défaut pour ASP.NET et ne requiert généralement pas de configuration spéciale. Il s’agit du moyen le plus simple pour déboguer une application ASP.NET.
 
-    Pour un projet Web Forms ASP.NET, cliquez sur le projet, choisissez **Pages de propriétés > Options de démarrage**, puis sélectionnez **utiliser le serveur Web par défaut** ou **utiliser le serveur personnalisé** () au lieu de **serveur externe**).
+    Pour un projet Web Forms ASP.NET, cliquez sur le projet, choisissez **Pages de propriétés > Options de démarrage**et sélectionnez **utiliser le serveur Web par défaut** ou **utiliser le serveur personnalisé** () au lieu de **serveur externe**).
 
-    ![Paramètres du serveur pour l’application de Web Forms](../debugger/media/dbg-aspnet-server-settings-webforms.png "paramètres du serveur pour l’application de Web Forms")
+    ![Paramètres du serveur pour l’application Web Forms](../debugger/media/dbg-aspnet-server-settings-webforms.png "paramètres du serveur pour l’application Web Forms")
 
-2. Si vous choisissez un serveur (personnalisé) externe, entrez l’URL correcte dans le **URL Project** (ou **une URL de Base**) champ.
+2. Si vous choisissez un serveur externe (personnalisé), entrez l’URL correcte dans le **URL du projet** (ou **une URL de Base**) champ.
 
-    Si le serveur externe est local IIS, IIS doit être installé et configuré correctement. Par exemple, la version correcte d’ASP.NET doit être configurée dans IIS. Pour plus d’informations, consultez [IIS 8.0 à l’aide de ASP.NET 3.5 et ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Si vous souhaitez tester le déploiement, ainsi que le débogage, consultez [déploiement pour tester](/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis).
+    Si le serveur externe est un serveur IIS local, IIS doit être installé et configuré correctement. Par exemple, la version correcte d’ASP.NET doit être configurée dans IIS. Pour plus d’informations, consultez [IIS 8.0 à l’aide de ASP.NET 3.5 et ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Si vous souhaitez tester le déploiement, ainsi que le débogage, consultez [déploiement pour tester](/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis).
 
     Si le serveur externe est [distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md), attacher au processus à la place, et ces paramètres de projet ne sont pas utilisés pour le débogage.
 
 ## <a name="local-iis-web-server-configure-iis"></a>(Serveur web de serveur IIS local) Configurer IIS
 
-Pour IIS Express, vous n’avez pas besoin de configurer le serveur web (ignorer cette section). IIS Express est recommandé pour les tests initiaux.
+Pour IIS Express, vous n’avez pas besoin configurer le serveur web (ignorez cette section). IIS Express est recommandé pour le test initial.
 
 Si vous utilisez un serveur web IIS local, procédez comme suit.
 
@@ -141,27 +142,27 @@ Si vous utilisez un serveur web IIS local, procédez comme suit.
 
      **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
 
-2. Ouvrez le **Internet Information Services (IIS) Manager**. (Dans le volet gauche du Gestionnaire de serveur, sélectionnez **IIS**. Cliquez sur le serveur et sélectionnez **Gestionnaire des Services Internet (IIS)**.)
+2. Ouvrez le **Internet Information Services (IIS) Manager**. (Dans le volet gauche du Gestionnaire de serveur, sélectionnez **IIS**. Cliquez sur le serveur et sélectionnez **Internet Information Services (IIS) Manager**.)
 
 3. Sous **connexions** dans le volet gauche, accédez à **Sites**.
 
 4. Cliquez avec le bouton droit sur le nœud **Site web par défaut** et sélectionnez **Ajouter une application**.
 
-5. Définir le **Alias** au champ **MyASPApp**, acceptez la valeur par défaut du Pool d’applications (**DefaultAppPool**) et définissez la **chemin d’accès physique** à  **C:\inetpub\myNewFolder** (créer un nouveau dossier pour l’application).
+5. Définir le **Alias** champ **MyASPApp**, acceptez la valeur par défaut du Pool d’applications (**DefaultAppPool**) et définissez le **chemin d’accès physique** à  **C:\inetpub\myNewFolder** (créer un nouveau dossier pour l’application).
 
 6. Sous **connexions**, sélectionnez **Pools d’applications**. Ouvrez **DefaultAppPool** et définissez le champ pool d’applications à la valeur correcte pour votre application (à utiliser ASP.NET 4 pour ASP.NET 4.5. Utilisez **aucun Code managé** pour ASP.NET Core).
 
 ## <a name="local-iis-web-server-deploy-the-app"></a>(Serveur web de serveur IIS local) Déployer l’application
 
-Pour IIS Express, l’application web est déployée automatiquement lorsque vous démarrez le débogage (ignorer cette section).
+Pour IIS Express, l’application web est déployée automatiquement lorsque vous démarrez le débogage (ignorez cette section).
 
-Si vous utilisez un serveur web IIS local, procédez comme suit. Il existe différentes manières de publier votre application à IIS. Dans ces étapes, nous montrons comment créer et utiliser un profil de publication afin que vous puissiez déployer à l’aide du système de fichiers.
+Si vous utilisez un serveur web IIS local, procédez comme suit. Il existe différentes façons de publier votre application dans IIS. Dans ces étapes, nous montrons comment créer et utiliser un profil de publication afin que vous puissiez déployer à l’aide du système de fichiers.
 
 1. Redémarrez Visual Studio en tant qu’administrateur.
 
     Pour déployer à l’aide de cette méthode, vous avez besoin des privilèges d’administrateur.
 
-2. Dans Visual Studio, cliquez sur le projet et choisissez **publier** (pour Web Forms, utilisez **publier l’application Web**).
+2. Dans Visual Studio, cliquez sur le projet et choisissez **publier** (pour les Web Forms, utilisez **publier une application de Web**).
 
 3. Choisissez **IIS, FTP, etc.** et cliquez sur **publier**.
 
@@ -175,57 +176,57 @@ Si vous utilisez un serveur web IIS local, procédez comme suit. Il existe diff�
 
 6. (ASP.NET Core) Choisissez **système de fichiers** et sélectionnez le dossier où vous avez créé précédemment pour l’application.
 
-6. (ASP.NET) Choisissez **IIS Local**, puis sélectionnez le site web, vous avez créé précédemment, puis cliquez sur **ouvrir**.
+6. (ASP.NET) Choisissez **IIS Local**, sélectionnez le site web, vous avez créé précédemment, puis cliquez sur **Open**.
 
     ![Publier sur IIS](../debugger/media/dbg-aspnet-local-iis-select-site.png "publier sur IIS")
 
     > [!TIP]
     > Si vous voyez un message indiquant que le serveur web n’est pas configuré correctement, assurez-vous que la version correcte d’ASP.NET est installée pour IIS.
 
-7. Cliquez sur **suivant** et choisissez une **déboguer** configuration.
+7. Cliquez sur **suivant** et choisissez un **déboguer** configuration.
 
     > [!NOTE]
-    > Si vous déployez avec une configuration Release, cela définit `debug=false` dans le fichier du serveur web.config.
+    > Si vous déployez avec une configuration Release, cela définit `debug=false` dans le fichier web.config du serveur.
 
 8. Cliquez sur **enregistrer** pour enregistrer les paramètres de publication, puis cliquez sur **publier**.
 
     > [!CAUTION]
-    >  Si vous devez apporter des modifications à du code ou la régénération, vous devez republier et répétez cette étape. Le fichier exécutable que vous avez copié sur l’ordinateur distant doit correspondre exactement à la source et aux symboles locaux.
+    >  Si vous avez besoin apporter des modifications au code ou de la reconstruction, vous devez republier et répétez cette étape. Le fichier exécutable que vous avez copié sur l’ordinateur distant doit correspondre exactement à la source et aux symboles locaux.
 
-## <a name="set-a-breakpoint-and-start-debugging"></a>Définir un point d’arrêt et démarrer le débogage
+## <a name="set-a-breakpoint-and-start-debugging"></a>Définissez un point d’arrêt et démarrer le débogage
 
-1. Dans votre projet dans Visual Studio, ensemble un point d’arrêt sur du code qui s’exécutera.
+1. Dans votre projet dans Visual Studio, définissez un point d’arrêt sur du code que vous connaissez s’exécutera.
 
 2. Pour démarrer le débogage, appuyez sur **F5** (**Déboguer > Démarrer le débogage**).
 
-3. Effectuez les actions à exécuter le code qui contient le point d’arrêt.
+3. Rien à faire pour exécuter le code qui contient le point d’arrêt.
 
-    Les temps de pause débogueur où vous avez défini le point d’arrêt.
+    Les temps de pause de débogueur où vous avez défini le point d’arrêt.
 
-### <a name="local-iis-troubleshooting-cannot-hit-the-breakpoint"></a>(Serveur IIS local) Résolution des problèmes : Ne peut pas atteint le point d’arrêt
+### <a name="local-iis-troubleshooting-cannot-hit-the-breakpoint"></a>(Pour un serveur IIS local) Résolution des problèmes : Ne peut pas atteindre le point d’arrêt
 
-1. Démarrer l’application web d’IIS et assurez-vous qu’il fonctionne correctement. Laissez l’application web en cours d’exécution.
+1. Démarrez l’application web à partir d’IIS et assurez-vous qu’il fonctionne correctement. Laissez l’application web en cours d’exécution.
 
-2. Dans Visual Studio, sélectionnez **Déboguer > Attacher au processus** et se connecter au processus ASP.NET (généralement **w3wp.exe** ou **dotnet.exe**). Pour plus d’informations, consultez [attacher au processus](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
+2. À partir de Visual Studio, sélectionnez **Déboguer > Attacher au processus** et se connecter au processus ASP.NET (généralement **w3wp.exe** ou **dotnet.exe**). Pour plus d’informations, consultez [attacher au processus](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
-    Si vous êtes en mesure de se connecter à l’aide de **attacher au processus** et pouvez atteindre un point d’arrêt, mais ne peut pas démarrer le débogage à l’aide de **F5**, il est probable qu’un paramètre est incorrect dans les propriétés du projet. Si vous utilisez un fichier HOSTS, vérifiez qu’il est correctement configuré.
+    Si vous êtes en mesure de se connecter à l’aide de **attacher au processus** et peuvent atteindre un point d’arrêt, mais ne peut pas démarrer le débogage à l’aide de **F5**, il est probable qu’un paramètre est incorrect dans les propriétés du projet. Si vous utilisez un fichier HOSTS, vérifiez qu’il est configuré correctement.
 
   
 ## <a name="robust-programming"></a>Programmation fiable  
 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] détecte les modifications apportées aux fichiers Web.config et applique les nouveaux paramètres de configuration automatiquement. Vous n’avez pas à redémarrer l’ordinateur ni à redémarrer le serveur IIS pour que les modifications prennent effet.  
   
-Un site web peut contenir plusieurs répertoires et sous-répertoires virtuels, et chacun d’eux peut contenir des fichiers web.config. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applications héritent des paramètres des fichiers Web.config à des niveaux supérieurs dans le chemin d’accès d’URL. Fichiers de configuration hiérarchiques permettent de modifier les paramètres pour plusieurs [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applications en même temps, par exemple, pour toutes les applications en dessous dans la hiérarchie. Toutefois, si `debug` est défini dans un fichier de niveau inférieur dans la hiérarchie, il substitue à la valeur la plus élevée.  
+Un site web peut contenir plusieurs répertoires et sous-répertoires virtuels, et chacun d’eux peut contenir des fichiers web.config. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applications héritent des paramètres des fichiers Web.config à des niveaux supérieurs dans le chemin d’URL. Fichiers de configuration hiérarchiques permettent de modifier les paramètres pour plusieurs [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applications en même temps, par exemple, pour toutes les applications en dessous dans la hiérarchie. Toutefois, si `debug` est défini dans un fichier inférieur dans la hiérarchie, ce paramètre remplace la valeur plus élevée.  
   
-Par exemple, vous pouvez spécifier `debug="true"` dans www.microsoft.com/aaa/Web.config, ainsi que les applications dans le dossier aaa ou dans n’importe quel sous-dossier de aaa hérite de ce paramètre. Par conséquent, si votre [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] application se trouve dans www.microsoft.com/aaa/bbb, il hérite de ce paramètre, tout comme les [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applications dans www.microsoft.com/aaa/ccc, www.microsoft.com/aaa/ddd et ainsi de suite. La seule exception concerne le cas où l’une de ces applications remplace le paramètre à l’aide de son propre fichier Web.config de niveau inférieur.  
+Par exemple, vous pouvez spécifier `debug="true"` dans www.microsoft.com/aaa/Web.config et n’importe quelle application dans le dossier aaa ou dans n’importe quel sous-dossier de aaa hérite de ce paramètre. Par conséquent, si votre [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] application se trouve dans www.microsoft.com/aaa/bbb, elle hérite de ce paramètre, tout comme les [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applications dans www.microsoft.com/aaa/ccc, www.microsoft.com/aaa/ddd et ainsi de suite. La seule exception concerne le cas où l’une de ces applications remplace le paramètre à l’aide de son propre fichier Web.config de niveau inférieur.  
   
 > [!IMPORTANT]
 > L’activation du mode de débogage considérablement affecte les performances de votre [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] application. Pensez à désactiver le mode débogage avant de déployer une application release ou de mesurer les performances.  
   
 ## <a name="see-also"></a>Voir aussi  
-[Débogage ASP.NET : configuration requise](aspnet-debugging-system-requirements.md)   
+[Débogage ASP.NET : configuration système requise](aspnet-debugging-system-requirements.md)   
 [Comment : exécuter le processus de travail sous un compte d’utilisateur](how-to-run-the-worker-process-under-a-user-account.md)   
 [Comment : rechercher le nom du processus ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)   
-[Déboguer les applications Web déployées](debugging-deployed-web-applications.md)   
+[Déboguer des applications Web déployées](debugging-deployed-web-applications.md)   
 [Procédure pas à pas : Débogage d’un formulaire Web](walkthrough-debugging-a-web-form.md)   
 [Comment : déboguer des exceptions ASP.NET](how-to-debug-aspnet-exceptions.md)   
 [Déboguer des applications web : erreurs et dépannage](debugging-web-applications-errors-and-troubleshooting.md)

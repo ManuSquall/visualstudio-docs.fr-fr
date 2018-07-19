@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475637"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Comment : déboguer une source .NET Framework
 Pour déboguer la source du .NET Framework, vous devez avoir accès aux symboles pour le code de débogage. Vous devez également activer le pas à pas détaillé dans la source .NET Framework.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129191"
 ---
 # <a name="getting-started-with-the-vsix-project-template"></a>Mise en route avec le modèle de projet VSIX
 Vous pouvez utiliser le modèle de projet VSIX pour créer une extension ou un package existant d’extension pour le déploiement. Le modèle de projet VSIX possède des versions de Visual Basic et Visual c# et est installé dans le cadre de Visual Studio SDK.  
@@ -35,7 +36,7 @@ Vous pouvez utiliser le modèle de projet VSIX pour créer une extension ou un p
   
     2.  Dans le menu **Projet**, cliquez sur **Exporter le modèle**. Effectuez les étapes de l’Assistant.  
   
-         Un fichier .zip est créé dans %USERPROFILE%\My Documents\Visual Studio  *\<version >*\My Exported Templates\\.  
+         Un fichier .zip est créé dans %USERPROFILE%\My Documents\Visual Studio  *\<version >* \My Exported Templates\\.  
   
 2.  Créez un projet VSIX vide.  
   

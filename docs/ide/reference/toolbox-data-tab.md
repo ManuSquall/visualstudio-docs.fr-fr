@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949709"
 ---
 # <a name="toolbox-data-tab"></a>Boîte à outils, onglet Données
 Affiche des objets de données que vous pouvez ajouter à un formulaire et à des composants. L’onglet **Données** de la **boîte à outils** apparaît quand vous créez un projet associé à un concepteur. La **boîte à outils** apparaît par défaut dans l’environnement de développement intégré Visual Studio ; si vous devez afficher la **boîte à outils**, sélectionnez **Boîte à outils** dans le menu **Affichage**.

@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 4bb2cd04d005700ac0a4f647d04e495f717d0ed7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ea86ce4b977f1b8a664944bca2fcef65f8f5132f
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233488"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Comment : configurer des tests unitaires pour cibler une version antérieure du .NET Framework
 
@@ -31,7 +32,7 @@ Vous pouvez créer des projets de test unitaire qui ciblent des versions spécif
 
 **Test des applications SharePoint**
 
-Les fonctionnalités listées ci-dessus vous permettent également d’écrire des tests unitaires et des tests d’intégration pour les applications SharePoint à l’aide de Visual Studio. Pour plus d’informations sur le développement d’applications SharePoint à l’aide de Visual Studio, consultez [Créer des solutions SharePoint](/office-dev/office-dev/create-sharepoint-solutions), [Génération et débogage de solutions SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions) et [Vérification et débogage du code SharePoint](/office-dev/office-dev/verifying-and-debugging-sharepoint-code).
+Les fonctionnalités listées ci-dessus vous permettent également d’écrire des tests unitaires et des tests d’intégration pour les applications SharePoint à l’aide de Visual Studio. Pour plus d’informations sur le développement d’applications SharePoint à l’aide de Visual Studio, consultez [Créer des solutions SharePoint](../sharepoint/create-sharepoint-solutions.md), [Génération et débogage de solutions SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md) et [Vérification et débogage du code SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md).
 
 **Limitations**
 
@@ -63,11 +64,11 @@ Les limitations suivantes s’appliquent quand vous reciblez vos projets de test
 
 5.  Sous l’onglet **Compiler**, choisissez **Options avancées de compilation**, comme indiqué dans l’illustration suivante.
 
-     ![Options avancées de compilation](../test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")
+     ![Options avancées de compilation](../test/media/howtoconfigureunittest35frameworka.png)
 
 6.  Utilisez la liste déroulante **Framework cible (toutes les configurations)** pour remplacer le framework cible par **.NET Framework 3.5** ou une version ultérieure, comme indiqué dans la légende B de l’illustration suivante. Ne spécifiez pas de version client.
 
-     ![Framework cible, liste déroulante](../test/media/howtoconfigureunitest35frameworkstepb.png "HowToConfigureUniTest35FrameworkStepB")
+     ![Liste déroulante du framework cible](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
 ## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>Reciblage vers une version spécifique du .NET Framework pour les projets de test unitaire Visual C#
 
@@ -85,7 +86,7 @@ Les limitations suivantes s’appliquent quand vous reciblez vos projets de test
 
 5.  Sous l’onglet **Application**, choisissez **Framework cible**. Dans la liste déroulante, choisissez **.NET Framework 3.5** ou une version ultérieure, comme indiqué dans l’illustration suivante. Ne spécifiez pas de version client.
 
-     ![Framework cible, liste déroulante](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUnitTest35FrameworkCSharp")
+     ![Liste déroulante du framework cible](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
 ## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>Reciblage vers une version spécifique du .NET Framework pour les projets de test unitaire C++/CLI
 
@@ -125,6 +126,6 @@ Les limitations suivantes s’appliquent quand vous reciblez vos projets de test
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Créer des solutions SharePoint](/office-dev/office-dev/create-sharepoint-solutions)
-- [Génération et débogage de solutions SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)
+- [Créer des solutions SharePoint](../sharepoint/create-sharepoint-solutions.md)
+- [Génération et débogage de solutions SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Paramètres avancés du compilateur, boîte de dialogue (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

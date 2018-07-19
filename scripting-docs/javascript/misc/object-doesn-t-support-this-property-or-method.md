@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/10/2018
+ms.locfileid: "24633409"
 ---
 # <a name="object-doesn39t-support-this-property-or-method"></a>Objet ne&#39;t prend en charge cette propriété ou méthode
 Vous avez spécifié une propriété ou une méthode qui n'existe pas pour cet objet. Tous les objets ne prennent pas en charge toutes les propriétés et toutes les méthodes.  

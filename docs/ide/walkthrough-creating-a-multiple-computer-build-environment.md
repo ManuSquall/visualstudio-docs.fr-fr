@@ -17,6 +17,7 @@ ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32425710"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Procédure pas à pas : créer un environnement de build sur plusieurs ordinateurs
 

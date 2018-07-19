@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574467"
 ---
 # <a name="resolving-assemblies-at-design-time"></a>Résolution d'assemblys au moment du design
 Quand vous ajoutez une référence à un assembly par l’intermédiaire de l’onglet .NET de la boîte de dialogue Ajouter une référence, la référence pointe vers un assembly de référence intermédiaire, autrement dit un assembly qui contient toutes les informations de type et de signature, mais qui ne contient pas nécessairement de code. L’onglet .NET répertorie les assemblys de référence qui correspondent aux assemblys runtime du .NET Framework. Il répertorie aussi les assemblys de référence qui correspondent aux assemblys runtime dans les dossiers AssemblyFoldersEx inscrits utilisés par des tiers.  

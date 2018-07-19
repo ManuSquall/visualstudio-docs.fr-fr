@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31579002"
 ---
 # <a name="findinlist-task"></a>FindInList, tâche
 Dans une liste spécifiée, recherche un élément associé à la spécification d’éléments (itemspec) correspondante.  

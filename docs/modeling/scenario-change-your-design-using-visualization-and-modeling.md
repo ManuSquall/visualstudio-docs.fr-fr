@@ -17,17 +17,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7784bcfc8db3c8f2709bde045622c747a326ddcc
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: f60b2f1cdb609c5686f834ef147a2f121dc27b11
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750166"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281334"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénario : modifier votre conception à l'aide de la visualisation et de la modélisation
 
 Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à l’aide des outils de visualisation et de modélisation dans Visual Studio.
-Utilisez des outils tels que des cartes de code, des diagrammes de dépendance et des diagrammes de classes pour :
+Utilisez des outils tels que des cartes de code, des diagrammes de dépendance et des diagrammes de classes aux :
 
 Pour connaître les versions de Visual Studio qui prennent en charge chaque outil, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -88,8 +88,8 @@ Le tableau suivant décrit les rôles que ces outils peuvent jouer pendant diver
 |Carte de code|||Oui|Oui|Oui|
 |Concepteur de classes (basé sur le code)||||Oui||
 
-Pour dessiner des diagrammes de dépendance, vous devez créer un projet de modélisation dans le cadre d’une solution existante ou nouvelle. Ces diagrammes doivent être créés dans le projet de modélisation.
-Éléments sur des diagrammes de dépendance sont situés dans le projet de modélisation, mais ils ne sont pas stockées dans le modèle commun. Les cartes de code et les diagrammes de classes .NET créés à partir du code sont externes au projet de modélisation.
+Pour dessiner des diagrammes de dépendance, vous devez créer un projet de modélisation en tant que partie d’une solution existante ou d’un autre. Ces diagrammes doivent être créés dans le projet de modélisation.
+Éléments sur des diagrammes de dépendance sont situés dans le projet de modélisation, mais ils ne sont pas stockés dans le modèle commun. Les cartes de code et les diagrammes de classes .NET créés à partir du code sont externes au projet de modélisation.
 
 Consultez :
 
@@ -112,7 +112,7 @@ Les deux équipes utilisent également la validation de dépendance pour vous as
 - [Validation du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)
 
 > [!NOTE]
-> Certaines versions de Visual Studio prend en charge la validation de dépendance et des versions en lecture seule des cartes de code pour la visualisation et de modélisation. Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+> Certaines versions de Visual Studio prend en charge la validation des dépendances et les versions en lecture seule des cartes de code pour la visualisation et modélisation. Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="understand-and-communicate-information-about-the-system"></a>Comprendre et de communiquer des informations sur le système
 
@@ -138,7 +138,7 @@ Lucerne utilise des diagrammes pour effectuer ces tâches :
 
 Les diagrammes sont intégrés à Team Foundation Server pour que les équipes puissent planifier, gérer et suivre leur travail plus facilement. Par exemple, les équipes utilisent des modèles pour identifier des cas de test et des tâches de développement, et pour estimer leur travail. Lucerne lie les éléments de travail Team Foundation Server aux éléments de modèle, ce qui permet aux équipes de surveiller la progression du travail et de s’assurer que le système répond aux besoins des utilisateurs. Par exemple, la liaison de cas d’usage à des éléments de travail de cas de test permet de savoir que les cas d’usage sont remplis quand tous les tests sont réussis.
 
-Avant que les équipes archivent leurs modifications, elles valident le code par rapport aux tests et à la conception en exécutant des builds qui incluent une validation de dépendance et des tests automatisés. Ainsi, le code mis à jour n’entre pas en conflit avec la conception et ne nuit pas aux fonctionnalités qui étaient opérationnelles auparavant.
+Avant que les équipes archivent leurs modifications, elles valident le code par rapport à la conception et les tests en exécutant des builds qui incluent la validation des dépendances et des tests automatisés. Ainsi, le code mis à jour n’entre pas en conflit avec la conception et ne nuit pas aux fonctionnalités qui étaient opérationnelles auparavant.
 
 ### <a name="identify-changes-to-the-existing-system"></a>Identifier les modifications apportées au système existant
 
@@ -169,20 +169,20 @@ Dinner Now doit estimer le coût de réalisation pour remplir le nouveau besoin.
 |------------------|-------------------|
 |*Diagramme de classes basé sur le code*<br /><br /> Consultez [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Classes existantes dans le code.|
 
-###  <a name="ValidatingCode"></a> Maintenir la cohérence avec la conception du Code
- Dinner Now doit s’assurer que le code mis à jour demeure cohérent avec la conception. Elle crée des diagrammes de dépendance qui décrivent les couches de fonctionnalité dans le système, spécifient les dépendances autorisées entre les artefacts de solution elles et associent à ces couches.
+###  <a name="ValidatingCode"></a> Maintenir la cohérence avec la conception de Code
+ Dinner Now doit s’assurer que le code mis à jour demeure cohérent avec la conception. Ils créent des diagrammes de dépendance qui décrivent les couches de fonctionnalités dans le système, spécifient les dépendances autorisées entre les artefacts de solution elles et associent à ces couches.
 
 |**Diagramme**|**Éléments décrits**|
 |-----------------|-------------------|
-|*Diagramme de dépendances*<br /><br /> Consultez :<br /><br /> - [Créer des diagrammes de dépendance à partir de votre code.](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagrammes de dépendance : référence](../modeling/layer-diagrams-reference.md)<br />- [Diagrammes de dépendance : instructions](../modeling/layer-diagrams-guidelines.md)<br />- [Valider le code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)|Architecture logique du code.<br /><br /> Un diagramme de dépendances organise et associe les artefacts dans un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution groupes abstraits appelés *couches*. Ces couches identifient les rôles, les tâches ou les fonctions que ces artefacts effectuent dans le système.<br /><br /> Les diagrammes de couche sont utiles pour décrire la conception prévue du système et valider le code en constante évolution par rapport à cette conception.<br /><br /> Pour créer des couches, faites glisser des éléments à partir de l’Explorateur de solutions, des cartes de code, de l’affichage de classes et de l’Explorateur d’objets. Pour dessiner de nouvelles couches, utilisez la boîte à outils ou cliquez avec le bouton droit sur la surface du diagramme.<br /><br /> Pour afficher les dépendances existantes, cliquez avec le bouton droit sur la surface du diagramme de couche, puis cliquez sur **Générer des dépendances**. Pour spécifier les dépendances prévues, dessinez de nouvelles dépendances.|
+|*Diagramme de dépendances*<br /><br /> Consultez :<br /><br /> - [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagrammes de dépendance : référence](../modeling/layer-diagrams-reference.md)<br />- [Diagrammes de dépendance : recommandations](../modeling/layer-diagrams-guidelines.md)<br />- [Valider du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)|Architecture logique du code.<br /><br /> Un diagramme de dépendances organise et associe les artefacts dans un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution de groupes abstraits appelés *couches*. Ces couches identifient les rôles, les tâches ou les fonctions que ces artefacts effectuent dans le système.<br /><br /> Les diagrammes de couche sont utiles pour décrire la conception prévue du système et valider le code en constante évolution par rapport à cette conception.<br /><br /> Pour créer des couches, faites glisser des éléments à partir de l’Explorateur de solutions, des cartes de code, de l’affichage de classes et de l’Explorateur d’objets. Pour dessiner de nouvelles couches, utilisez la boîte à outils ou cliquez avec le bouton droit sur la surface du diagramme.<br /><br /> Pour afficher les dépendances existantes, cliquez avec le bouton droit sur la surface du diagramme de couche, puis cliquez sur **Générer des dépendances**. Pour spécifier les dépendances prévues, dessinez de nouvelles dépendances.|
 
- Par exemple, le diagramme de dépendance suivant décrit les dépendances entre les couches et le nombre d’artefacts associés à chaque couche :
+ Par exemple, le diagramme de dépendance suivant décrit les dépendances entre les couches et le nombre d’artefacts qui sont associés à chaque couche :
 
  ![Diagramme de dépendances de système de paiement intégré](../modeling/media/layer_integrated_dnlucerne.png)
 
  **Diagramme de dépendances**
 
-Pour vous assurer qu’est en conflit avec la conception ne se produire pas pendant le développement de code, les équipes utilisent la validation de dépendance sur les builds qui sont exécutées sur Team Foundation Build. Ils créent également une tâche MSBuild personnalisée pour exiger la validation de dépendance dans leurs opérations d’archivage. Elles utilisent des rapports de build pour collecter les erreurs de validation.
+Pour vous assurer qu’est en conflit avec la conception ne se produire pas pendant le développement de code, les équipes utilisent la validation des dépendances sur les builds qui sont exécutés sur Team Foundation Build. Ils créent également une tâche MSBuild personnalisée pour exiger une validation de dépendance dans leurs opérations d’archivage. Elles utilisent des rapports de build pour collecter les erreurs de validation.
 
 Consultez :
 
@@ -224,7 +224,7 @@ Consultez :
 
 ### <a name="TestValidateCheckInCode"></a> Tester, valider et archivez du Code
 
-À mesure que les équipes effectuent chaque tâche, elles vérifient leur code dans la gestion de version Team Foundation et reçoivent des rappels de Team Foundation Server, en cas d’oubli. Avant que Team Foundation Server n’accepte leurs archivages, les équipes exécutent des tests unitaires et la validation de dépendance pour vérifier le code par rapport à leur cas de test et à la conception. Elles utilisent Team Foundation Server pour exécuter des builds, des tests unitaires automatisés et la validation de dépendance régulièrement. Ainsi, elles vérifient que le code respecte les critères suivants :
+À mesure que les équipes effectuent chaque tâche, elles vérifient leur code dans la gestion de version Team Foundation et reçoivent des rappels de Team Foundation Server, en cas d’oubli. Avant que Team Foundation Server n’accepte leurs archivages, les équipes exécutent des tests unitaires et la validation des dépendances pour vérifier le code par rapport à leur cas de test et de la conception. Elles utilisent Team Foundation Server pour exécuter des builds, des tests unitaires automatisés et la validation de dépendance régulièrement. Ainsi, elles vérifient que le code respecte les critères suivants :
 
 - Il fonctionne.
 
@@ -238,7 +238,7 @@ Pour vous assurer que le code est conforme à la conception, les équipes config
 
 Consultez :
 
-- [Test de l’application](https://www.visualstudio.com/docs/test/overview)
+- [Test de l’application](/vsts/test/overview?view=vsts)
 
 - [Valider votre système pendant le développement](../modeling/validate-your-system-during-development.md)
 
@@ -246,7 +246,7 @@ Consultez :
 
 - [Build et release](/vsts/build-release/index)
 
-## <a name="update-the-system-using-visualization-and-modeling"></a>Mettre à jour la visualisation à l’aide du système et modélisation
+## <a name="update-the-system-using-visualization-and-modeling"></a>Mettre à jour le système à l’aide de visualisation et modélisation
 
 Lucerne et Dinner Now doivent intégrer leurs systèmes de paiement. Les sections suivantes présentent les diagrammes de modélisation dans Visual Studio qui les aident à effectuer cette tâche :
 
@@ -272,7 +272,7 @@ Les cartes de code montrent l’organisation et les relations actuelles dans le 
 
 - Comprendre où et comment une modification suggérée peut affecter du code existant.
 
-- Identifier des zones de complexité, des dépendances naturelles ou des modèles, ou autres zones à améliorer.
+- Rechercher des zones de complexité, des dépendances naturelles ou des modèles et d’autres zones qui pourraient tirer profit d’amélioration du produit.
 
 Par exemple, Dinner Now doit estimer le coût de la mise à jour du composant PaymentProcessing. Ce coût dépend en partie des répercussions de cette modification sur les autres parties du système. Pour mieux déterminer ce coût, l’un des développeurs de Dinner Now génère des cartes de code à partir du code existant et ajuste la portée pour se concentrer sur les zones éventuellement concernées par la modification.
 
@@ -331,7 +331,7 @@ Cette carte montre que la classe PaymentApprover se trouve maintenant dans l’e
 
 |**Diagramme**|**Éléments décrits**|
 |-----------------|-------------------|
-|Diagramme de dépendances|L’architecture logique du système. Utilisez la validation de dépendance pour vous assurer que le code reste cohérent avec la conception.<br /><br /> Pour vous aider à identifier dependencys existants ou dependencys prévues, créez une carte de code et regroupez les éléments connexes. Pour créer un diagramme de dépendances, consultez :<br /><br /> - [Créer des diagrammes de dépendance à partir de votre code.](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagrammes de dépendance : instructions](../modeling/layer-diagrams-guidelines.md)|
+|Diagramme de dépendances|L’architecture logique du système. Utiliser la validation de dépendance pour vous assurer que le code reste cohérent avec la conception.<br /><br /> Pour vous aider à identifier dependencys existantes ou prévues dependencys, créez une carte de code et regroupez les éléments connexes. Pour créer un diagramme de dépendances, consultez :<br /><br /> - [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagrammes de dépendance : recommandations](../modeling/layer-diagrams-guidelines.md)|
 |Diagramme de classes (basé sur le code)|Classes existantes dans le code d’un projet spécifique.<br /><br /> Pour visualiser et modifier une classe existante dans le code, utilisez le Concepteur de classes.<br /><br /> Consultez [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|
 
 ### <a name="DefineClasses"></a> Définir un glossaire des types : diagrammes de classes
@@ -400,13 +400,13 @@ Pour commencer l’exploration et l’examen des classes existantes, vous pouvez
 
 |**Diagramme**|**Description**|
 |-----------------|---------------------|
-|Diagramme de dépendances|Définit l’architecture logique du système relative aux classes.<br /><br /> Utilisez la validation de dépendance pour vous assurer que le code reste cohérent avec la conception.<br /><br /> Consultez :<br /><br /> - [Créer des diagrammes de dépendance à partir de votre code.](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagrammes de dépendance : référence](../modeling/layer-diagrams-reference.md)<br />- [Diagrammes de dépendance : instructions](../modeling/layer-diagrams-guidelines.md)<br />- [Valider le code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)|
+|Diagramme de dépendances|Définit l’architecture logique du système relative aux classes.<br /><br /> Utiliser la validation de dépendance pour vous assurer que le code reste cohérent avec la conception.<br /><br /> Consultez :<br /><br /> - [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagrammes de dépendance : référence](../modeling/layer-diagrams-reference.md)<br />- [Diagrammes de dépendance : recommandations](../modeling/layer-diagrams-guidelines.md)<br />- [Valider du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)|
 |Carte de code|Permet de visualiser l’organisation et les relations dans le code existant.<br /><br /> Pour identifier les classes, leurs relations et leurs méthodes, créez une carte de code qui montre ces éléments.<br /><br /> Consultez :<br /><br /> - [Mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md)|
 
 ### <a name="DescribeLayers"></a> Décrire l’Architecture logique : diagrammes de dépendance
  Diagrammes de dépendance décrivent l’architecture logique d’un système en organisant les artefacts de votre solution en groupes abstraits ou *couches*. Les artefacts peuvent correspondre à beaucoup de choses, notamment des espaces de noms, des projets, des classes, des méthodes, etc. Les couches représentent et décrivent les rôles ou les tâches que les artefacts exécutent dans le système. Vous pouvez également inclure la validation de couche dans votre build et des opérations d’archivage pour vous assurer que le code reste cohérent avec sa conception.
 
- Pour que le code reste cohérent avec la conception, Dinner Now et Lucerne utilisent le diagramme de dépendances suivantes pour valider le code à mesure qu’il évolue :
+ Pour que le code reste cohérent avec la conception, Dinner Now et Lucerne utilisent le diagramme de dépendance suivant pour valider leur code telle qu’elle évolue :
 
  ![Diagramme de dépendances de système de paiement intégré](../modeling/media/layer_integrated_dnlucerne.png)
 
@@ -430,7 +430,7 @@ Pour commencer l’exploration et l’examen des classes existantes, vous pouvez
 
 #### <a name="drawing-a-dependency-diagram"></a>Dessin d’un diagramme de dépendance
 
-Un diagramme de dépendances a les principales fonctionnalités suivantes :
+Un diagramme de dépendances comporte les principales fonctionnalités suivantes :
 
 - Des*couches* décrivent des groupes logiques d’artefacts.
 
@@ -450,7 +450,7 @@ Un diagramme de dépendances a les principales fonctionnalités suivantes :
 
 - Une *dépendance* indique qu’une couche peut utiliser la fonctionnalité d’une autre couche, mais pas l’inverse. Une *dépendance bidirectionnelle* indique qu’une couche peut utiliser la fonctionnalité d’une autre couche, et vice versa.
 
-     Pour afficher les dépendances existantes sur le diagramme de dépendances, cliquez sur la surface du diagramme, puis cliquez sur **générer des dépendances**. Pour décrire les dépendances prévues, dessinez-en de nouvelles.
+     Pour afficher les dépendances existantes sur le diagramme de dépendances, avec le bouton droit de la surface du diagramme, puis cliquez sur **générer des dépendances**. Pour décrire les dépendances prévues, dessinez-en de nouvelles.
 
 Consultez :
 
@@ -464,7 +464,7 @@ Consultez :
 
 #### <a name="summary-strengths-of-dependency-diagrams"></a>Résumé : Atouts des diagrammes de dépendance
 
-Diagrammes de dépendance vous aident à :
+Diagrammes de dépendance vous aider à :
 
 - décrire l’architecture logique d’un système selon les fonctionnalités de ses artefacts ;
 
@@ -480,11 +480,11 @@ Diagrammes de dépendance vous aident à :
 
 |**Catégorie**|**Links**|
 |------------------|---------------|
-|**Forums**|- [Visual Studio Visualization and Modeling outils](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio Visualization and Modeling (outils DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Forums**|- [Visual Studio Visualization and Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio Visualization and Modeling SDK (outils DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Visualiser du code](../modeling/visualize-code.md)
 - [Utiliser des modèles dans votre processus de développement](../modeling/use-models-in-your-development-process.md)
-- [Utiliser les modèles de développement Agile](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [Utiliser des modèles dans le développement Agile](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
 - [Valider votre système pendant le développement](../modeling/validate-your-system-during-development.md)

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129943"
 ---
 # <a name="feedback-to-the-user"></a>Vos commentaires à l’utilisateur
 Dans la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement de développement intégré (IDE), retour visuel concernant des fonctionnalités disponibles sont basée sur la sélection actuelle et le contexte de sélection globale de l’utilisateur. Le tableau suivant répertorie les fonctionnalités qui sont disponibles dans les contextes de sélection différente.  

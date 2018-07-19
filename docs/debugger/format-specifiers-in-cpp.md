@@ -1,5 +1,5 @@
 ---
-title: Mettre en forme les spécificateurs dans le débogueur (C++) | Documents Microsoft
+title: Mettre en forme spécificateurs dans le débogueur (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -29,19 +29,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8d9d2ecc00e0d29f39cb82dab997fb28704f518
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3bd99ed0a4350dbaf8c2e158f8b86464f50393c4
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057754"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Spécificateurs de format en C++ dans le débogueur Visual Studio
 Vous pouvez modifier le format dans lequel une valeur est affichée dans la fenêtre **Espion** à l’aide de spécificateurs de format.  
   
- Vous pouvez également utiliser des spécificateurs de format dans le **exécution** fenêtre, le **commande** fenêtre, dans [trace](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)et même les fenêtres sources. Si vous effectuez une suspension sur une expression dans ces fenêtres, le résultat s’affiche dans un DataTip. L’affichage du DataTip reflète le spécificateur de format.  
+ Vous pouvez également utiliser des spécificateurs de format dans le **immédiat** fenêtre, le **commande** fenêtre, dans [des points de trace](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)et même les fenêtres sources. Si vous faites une pause d’une expression dans ces fenêtres, le résultat s’affiche dans un DataTip. L’affichage du DataTip reflète le spécificateur de format.  
   
 > [!NOTE]
->  Lorsque le débogueur natif Visual Studio est passé à un nouveau moteur de débogage, certains nouveaux spécificateurs de format ont été ajoutées et certaines anciennes ont été supprimés. Le débogueur plus ancien est toujours utilisé quand vous effectuez un débogage d’interopérabilité (native et managée à la fois) avec C++/CLI. Les sections suivantes présentent les spécificateurs de format pour chaque moteur de débogage.
+>  Lorsque le débogueur natif Visual Studio passe à un nouveau moteur de débogage, nouveaux spécificateurs de format ont été ajoutés et certains anciens ont été supprimés. Le débogueur plus ancien est toujours utilisé quand vous effectuez un débogage d’interopérabilité (native et managée à la fois) avec C++/CLI. Les sections suivantes présentent les spécificateurs de format pour chaque moteur de débogage.
 >   
 >  -   [Spécificateurs de format](#BKMK_Visual_Studio_2012_format_specifiers) décrit les spécificateurs de format dans le nouveau moteur de débogage.  
 > -   [Spécificateurs de format pour le débogage d’interopérabilité avec C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) décrit les spécificateurs de format dans l’ancien moteur de débogage.  
@@ -57,7 +58,7 @@ int main() {
 }  
 ```  
   
- Ajouter le `my_var1` variable à la **espion** fenêtre (pendant le débogage, **Déboguer > Windows > espion > Espion 1**), puis définissez l’affichage au format hexadécimal (dans le **regarder**fenêtre, avec le bouton droit de la variable et sélectionnez **affichage hexadécimal**). La fenêtre Espion indique à présent qu’elle contient la valeur 0x0065. Pour que la valeur soit exprimée sous forme de caractère plutôt que sous forme d’entier, dans la colonne Nom, après le nom de la variable, ajoutez le spécificateur de format de caractère **, c**. La colonne **Valeur** apparaît désormais avec **101 ’e’**.  
+ Ajouter le `my_var1` à la variable le **espion** fenêtre (pendant le débogage, **Déboguer > Windows > espion > Espion 1**), puis définissez l’affichage au format hexadécimal (dans le **regarder**fenêtre, cliquez sur la variable et sélectionnez **affichage hexadécimal**). La fenêtre Espion indique à présent qu’elle contient la valeur 0x0065. Pour que la valeur soit exprimée sous forme de caractère plutôt que sous forme d’entier, dans la colonne Nom, après le nom de la variable, ajoutez le spécificateur de format de caractère **, c**. La colonne **Valeur** apparaît désormais avec **101 ’e’**.  
   
  ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")  
   
@@ -73,12 +74,12 @@ int main() {
 |c|caractère unique|0x0065, c|101 ’e’|  
 |s|chaîne const char*|\<emplacement > « hello world »|"hello world"|  
 |**sb**|const char * chaîne (sans guillemets)|\<emplacement > « hello world »|hello world|  
-|s8|Chaîne UTF-8|\<emplacement > « Ceci est un â˜• de tasse de café UTF-8 »|« Il s’agit d’un ☕ de tasse de café UTF-8 »|
-|**s8b**|Chaîne de UTF-8 (sans guillemets)|\<emplacement > « hello world »|hello world|  
+|s8|Chaîne UTF-8|\<emplacement > « Ceci est un â˜• tasse de café de UTF-8 »|« Il s’agit d’un ☕ tasse de café de UTF-8 »|
+|**s8b**|Chaîne UTF-8 (sans guillemets)|\<emplacement > « hello world »|hello world|  
 |su|Chaîne Unicode (encodage UTF-16)|\<emplacement > L « hello world »|L"hello world"<br /><br /> u"hello world"|  
-|sub|Unicode (encodage UTF-16), chaîne (sans guillemets)|\<emplacement > L « hello world »|hello world|  
+|sub|Chaîne Unicode (encodage UTF-16) (sans guillemets)|\<emplacement > L « hello world »|hello world|  
 |bstr|chaîne BSTR|\<emplacement > L « hello world »|L"hello world"|  
-|env|Bloc d’environnement (chaîne terminée par double-null)|\<emplacement > L » = :: = ::\\\\»|L "= :: = ::\\\\\\0 = C : = C :\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
+|env|Bloc d’environnement (chaîne se terminant par null double)|\<emplacement > L "= :: = ::\\\\»|L "= :: = ::\\\\\\0 = C : = C :\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
 |**s32**|chaîne UTF-32|\<emplacement > U « hello world »|u"hello world"|  
 |**s32b**|chaîne UTF-32 (sans guillemets)|\<emplacement > U « hello world »|hello world|  
 |**en**|enum|Saturday(6)|Saturday|  
@@ -114,13 +115,13 @@ int main() {
 |**l,h**|préfixe long ou court pour : d, i, u, o, x, X|00406042|0x0c22|  
 |**f**|virgule flottante signée|(3./2.), f|1,500000|  
 |**e**|notation scientifique signée|(3.0/2.0)|1.500000e+000|  
-|**g**|virgule flottante signée ou notation scientifique signée, selon ce qui est le plus court|(3.0/2.0)|1,5|  
+|**g**|virgule flottante signée ou notation scientifique signée,<br/> selon ce qui est plus court|(3.0/2.0)|1,5|  
 |c|caractère unique|\<emplacement >|101 ’e’|  
 |s|const char*|\<emplacement >|"hello world"|  
 |su|const wchar_t*<br /><br /> char16_t const\*|\<emplacement >|L"hello world"|  
 |sub|const wchar_t*<br /><br /> char16_t const\*|\<emplacement >|hello world|  
 |s8|const char*|\<emplacement >|"hello world"|  
-|hr|HRESULT ou code d’erreur Win32. (Le débogueur décodant automatiquement HRESULTs, le spécificateur n’est pas nécessaire dans ces cas-là.|S_OK|S_OK|  
+|hr|HRESULT ou code d’erreur Win32.<br/>(Débogueur décode automatiquement HRESULTs,<br/> Dans ce spécificateur ne pas nécessaire dans ces cas-là.|S_OK|S_OK|  
 |wc|Indicateur de classe de fenêtre.|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Numéros de messages Windows|0x0010|WM_CLOSE|  
 |!|format brut, ignorant toutes les personnalisations d’affichage de type de données|\<personnaliser la représentation sous forme de >|4|  
@@ -138,7 +139,7 @@ int main() {
 |**mq**|2 mots quadruples|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
 |**mu**|caractères de 2 octets (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
   
-###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Spécificateur de taille pour les pointeurs en tant que tableaux dans le débogage d’interopérabilité avec c++ / CLI  
+###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Spécificateur de taille pour les pointeurs en tant que tableaux dans le débogage d’interopérabilité avec C++ / c++ / CLI  
  Si vous avez un pointeur vers un objet que vous souhaitez afficher sous forme de tableau, vous pouvez utiliser un entier pour spécifier le nombre d’éléments du tableau :  
   
 |Spécificateur|Format|Expression|Valeur affichée|  

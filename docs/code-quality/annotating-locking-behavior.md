@@ -39,6 +39,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31901526"
 ---
 # <a name="annotating-locking-behavior"></a>Annotation du comportement de verrouillage
 Pour éviter les bogues d’accès concurrentiel dans votre programme multithread, suivez toujours une discipline de verrouillage appropriée et utilisez les annotations SAL.

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100430"
 ---
 # <a name="contextinfo"></a>CONTEXT_INFO
 Cette structure décrit un contexte de la mémoire ou d’un contexte de code.  
@@ -52,7 +53,7 @@ public struct CONTEXT_INFO {
   
 ## <a name="members"></a>Membres  
  dwFields  
- Une combinaison d’indicateurs d’il [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) énumération qui spécifie les champs sont remplis**.**  
+ Une combinaison d’indicateurs d’il [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) énumération qui spécifie les champs sont remplis **.**  
   
  bstrModuleUrl  
  Le nom du module où se trouve le contexte.  

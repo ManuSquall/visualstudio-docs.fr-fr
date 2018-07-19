@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573029"
 ---
 # <a name="msbuild-conditions"></a>Conditions MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] prend en charge un ensemble spécifique de conditions qui peuvent être appliquées à chaque fois qu’un attribut `Condition` est autorisé. Le tableau suivant décrit ces conditions.  

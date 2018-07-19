@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31115409"
 ---
 # <a name="idebugprogram2execute"></a>IDebugProgram2::Execute
 Continue de s’exécuter ce programme à partir d’un état arrêté. N’importe quel état précédent de l’exécution (par exemple, une étape) est désactivée, et le programme commence à s’exécuter à nouveau.  

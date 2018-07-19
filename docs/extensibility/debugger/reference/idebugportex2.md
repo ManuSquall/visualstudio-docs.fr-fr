@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31117850"
 ---
 # <a name="idebugportex2"></a>IDebugPortEx2
 Cette interface permet à la session de débogage manager (SDM) contrôle les programmes et les processus qui s’exécutent sur un port.  

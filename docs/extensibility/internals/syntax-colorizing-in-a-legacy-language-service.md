@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135946"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Coloration de syntaxe dans un Service de langage hérité
 Coloration de syntaxe est une fonctionnalité qui provoque des éléments d’un langage de programmation à afficher dans un fichier source dans différentes couleurs et styles. Pour prendre en charge cette fonctionnalité, vous devez fournir un analyseur ou l’analyseur qui peut identifier les types d’éléments lexicaux ou des jetons dans le fichier. De nombreux langages distinguent des mots clés, les délimiteurs (tels que des parenthèses ou d’accolades) et les commentaires en les colorisation de différentes façons.  

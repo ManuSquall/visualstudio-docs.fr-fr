@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575655"
 ---
 # <a name="csc-task"></a>Csc, tâche
 Encapsule CSC.exe et produit des fichiers exécutables (.exe), des bibliothèques de liens dynamiques (.dll) ou des modules de code (.netmodule). Pour plus d’informations sur CSC.exe, consultez l’article [C# Compiler Options (Options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/index).  

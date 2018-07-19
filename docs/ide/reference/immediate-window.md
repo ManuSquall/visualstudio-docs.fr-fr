@@ -23,6 +23,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704523"
 ---
 # <a name="immediate-window"></a>Exécution (fenêtre)
 La fenêtre **Exécution** est utilisée pour déboguer et évaluer des expressions, exécuter des instructions, imprimer les valeurs des variables, etc. Elle vous permet d’entrer des expressions qui doivent être évaluées ou exécutées par le langage de développement lors du processus de débogage. Pour afficher la fenêtre **Exécution**, ouvrez un projet à modifier, puis choisissez **Fenêtres** dans le menu **Déboguer** et sélectionnez **Exécution**, ou appuyez sur Ctrl+Alt+I.

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131575"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modèle d’un Service de langage hérité
 Un service de langage définit les éléments et les fonctionnalités pour une langue spécifique et est utilisé pour fournir l’éditeur avec les informations spécifiques à cette langue. Par exemple, l’éditeur doit connaître les éléments et les mots clés du langage pour prendre en charge la coloration de syntaxe.  

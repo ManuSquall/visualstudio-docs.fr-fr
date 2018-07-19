@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129639"
 ---
 # <a name="elimination-of-sak-files"></a>Élimination de ~ SAK fichiers
 Dans la Source de contrôle du plug-in API 1.2, le ~ les fichiers SAK ont été remplacés par des indicateurs de fonctionnalité et de nouvelles fonctions de détecter si un plug-in de contrôle de code source prend en charge le fichier MSSCCPRJ et les extractions partagées.  

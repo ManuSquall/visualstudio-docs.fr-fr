@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704471"
 ---
 # <a name="set-radix-command"></a>Définir la base, commande
 Définit ou retourne la base numérique utilisée pour afficher les valeurs entières.

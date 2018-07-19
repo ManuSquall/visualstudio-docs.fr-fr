@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d49b5076076b61d0234bf8e252b62684a67e79b3
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 50b77a343f8fe918fa079a3b4f148407701276c8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448920"
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572976"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Procédure pas à pas : utilisation des API du profileur
 La procédure pas à pas utilise une application C# pour montrer comment utiliser les API des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Vous utilisez les API du profileur pour limiter la quantité de données collectées pendant le profilage par instrumentation.  
@@ -31,9 +31,9 @@ La procédure pas à pas utilise une application C# pour montrer comment utilise
   
  Le profileur Visual Studio vous permet de limiter la collecte des données. Cette procédure pas à pas illustre la façon de limiter la collecte de données en utilisant les API du profileur. Le profileur Visual Studio fournit une API pour contrôler la collecte de données depuis une application.  
   
- Pour le code natif, les API du profileur Visual Studio se trouvent dans VSPerf.dll. Le fichier d’en-tête, VSPerf.h, et la bibliothèque d’importation, VSPerf.lib, se trouvent dans le répertoire Microsoft Visual Studio 9\Team Tools\Performance Tools.  
+ Pour le code natif, les API du profileur Visual Studio se trouvent dans *VSPerf.dll*. Le fichier d’en-tête, *VSPerf.h*, et la bibliothèque d’importation, *VSPerf.lib*, se trouvent dans le répertoire *Microsoft Visual Studio 9\Team Tools\Performance Tools*.  
   
- Pour le code managé, les API du profileur se trouvent dans Microsoft.VisualStudio.Profiler.dll. Cette DLL se trouve dans le répertoire Microsoft Visual Studio 9\Team Tools\Performance Tools. Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.Profiler>.  
+ Pour le code managé, les API du profileur se trouvent dans *Microsoft.VisualStudio.Profiler.dll*. Cette DLL se trouve dans le répertoire *Microsoft Visual Studio 9\Team Tools\Performance Tools*. Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.Profiler>.  
   
 ## <a name="prerequisites"></a>Prérequis  
  Cette procédure pas à pas suppose que votre environnement de développement est configuré pour prendre en charge le débogage et l’échantillonnage. Les rubriques suivantes fournissent une vue d’ensemble de ces prérequis :  
@@ -59,7 +59,7 @@ DataCollection.CurrentId);
 1.  Créez un projet C# dans Visual Studio ou utilisez une génération en ligne de commande, selon ce que vous préférez.  
   
     > [!NOTE]
-    >  Votre build doit référencer la bibliothèque Microsoft.VisualStudio.Profiler.dll, qui se trouve dans le répertoire Microsoft Visual Studio 9\Team Tools\Performance Tools.  
+    >  Votre build doit référencer la bibliothèque *Microsoft.VisualStudio.Profiler.dll*, située dans le répertoire *Microsoft Visual Studio 9\Team Tools\Performance Tools*.  
   
 2.  Copiez et collez le code suivant dans votre projet :  
   
@@ -118,7 +118,7 @@ DataCollection.CurrentId);
   
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Pour collecter et afficher des données dans l’IDE Visual Studio  
   
-1.  Ouvrez l’IDE [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Dans le menu **Analyser**, pointez sur **Profileur**, puis cliquez sur **Nouvelle session de performance**.  
+1.  Ouvrez l’IDE [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Dans le menu **Analyser**, pointez sur **Profiler**, puis sélectionnez **Nouvelle session de performance**.  
   
 2.  Ajoutez votre fichier binaire compilé à la liste **Cibles** dans la fenêtre **Explorateur de performances**. Cliquez avec le bouton droit sur **Cibles**, puis sélectionnez **Ajouter un fichier binaire cible**. Recherchez le fichier binaire dans la boîte de dialogue **Ajouter un fichier binaire cible**, puis cliquez sur **Ouvrir**.  
   
@@ -158,10 +158,10 @@ DataCollection.CurrentId);
   
 8.  Tapez la commande suivante : **VSPerfReport /calltrace:\<nom_fichier>.vsp**  
   
-     Un fichier .csv est créé dans le répertoire actif avec les données de performances résultantes.  
+     Un fichier .*csv* est créé dans le répertoire actif avec les données de performances résultantes.  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.Profiler>   
  [Informations de référence sur l’API du profileur Visual Studio (native)](../profiling/visual-studio-profiler-api-reference-native.md)   
  [Bien démarrer](../profiling/getting-started-with-performance-tools.md)   
- [Profilage à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md)
+ [Profiler à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md)

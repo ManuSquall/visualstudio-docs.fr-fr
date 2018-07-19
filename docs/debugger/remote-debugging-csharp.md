@@ -1,5 +1,5 @@
 ---
-title: À distance déboguer un projet c# ou Visual Basic dans Visual Studio | Documents Microsoft
+title: Déboguer à distance un projet c# ou Visual Basic dans Visual Studio | Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2017
 ms.technology: vs-ide-debug
@@ -18,25 +18,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18cd64e24481111e22b3b9b842433bb1b1c19e0f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0f530dc6f1223bebeaada4f1225dd025474ceb1c
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38808639"
 ---
-# <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Débogage d’un projet c# ou Visual Basic dans Visual Studio à distance
-Pour déboguer une application Visual Studio qui a été déployée sur un autre ordinateur, installer et exécuter les outils à distance sur l’ordinateur où vous avez déployé votre application, configurez votre projet pour vous connecter à l’ordinateur distant à partir de Visual Studio, puis exécutez votre application.
+# <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Débogage à distance un projet c# ou Visual Basic dans Visual Studio
+Pour déboguer une application de Visual Studio qui a été déployée sur un autre ordinateur, installer et exécuter les outils à distance sur l’ordinateur où vous avez déployé votre application, configurez votre projet pour se connecter à l’ordinateur distant à partir de Visual Studio, puis exécutez votre application.
 
 ![Composants du débogueur distant](../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
   
-Pour plus d’informations sur le débogage des applications Windows universelle (UWP) à distance, consultez [déboguer un Package d’application installé](debug-installed-app-package.md).
+Pour plus d’informations sur le débogage des applications de Windows universelle (UWP) à distance, consultez [déboguer un Package d’application installé](debug-installed-app-package.md).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
-Le débogueur distant est pris en charge sur Windows 7 et versions ultérieures (pas de téléphone) et les versions de Windows Server depuis Windows Server 2008 Service Pack 2. Pour obtenir une liste complète des conditions requises, consultez [exigences](../debugger/remote-debugging.md#requirements_msvsmon).
+Le débogueur distant est pris en charge sur Windows 7 et versions ultérieures (pas de téléphone) et les versions de Windows Server depuis Windows Server 2008 Service Pack 2. Pour obtenir une liste complète des exigences, consultez [exigences](../debugger/remote-debugging.md#requirements_msvsmon).
 
 > [!NOTE]
-> Débogage entre deux ordinateurs connectés via un proxy n’est pas pris en charge. Débogage sur une latence élevée ou d’une connexion à faible bande passante, telles que les connexions à distance d’Internet, ou via Internet entre des pays n’est pas recommandé et peut échouer ou être trop faibles.
+> Débogage entre deux ordinateurs connectés via un proxy n’est pas pris en charge. Débogage sur une latence élevée ou faible bande passante, telles que la numérotation Internet, ou via Internet entre les pays n’est pas recommandé et peut échouer ou être trop faibles.
   
 ## <a name="download-and-install-the-remote-tools"></a>Téléchargez et installez les outils à distance
 
@@ -50,20 +51,20 @@ Le débogueur distant est pris en charge sur Windows 7 et versions ultérieures 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
-> Si vous devez ajouter des autorisations pour les utilisateurs supplémentaires, modifier le mode d’authentification ou numéro de port pour le débogueur distant, consultez [configurer le débogueur distant](../debugger/remote-debugging.md#configure_msvsmon).
+> Si vous avez besoin pour ajouter des autorisations pour les utilisateurs supplémentaires, modifiez le mode d’authentification, ou le numéro de port pour le débogueur distant, consultez [configurer le débogueur distant](../debugger/remote-debugging.md#configure_msvsmon).
   
-## <a name="remote_csharp"></a> Le projet de débogage distant
-Le débogueur ne peut pas déployer d’applications de bureau Visual C# ou Visual Basic sur un ordinateur distant, mais vous pouvez toujours les déboguer à distance comme suit. La procédure suivante suppose que vous souhaitez déboguer sur un ordinateur nommé **MJO-DL**, comme indiqué dans l’illustration ci-dessous.
+## <a name="remote_csharp"></a> Le projet de débogage à distance
+Le débogueur ne peut pas déployer d’applications de bureau Visual C# ou Visual Basic sur un ordinateur distant, mais vous pouvez toujours les déboguer à distance comme suit. La procédure suivante suppose que vous souhaitez déboguer sur un ordinateur nommé **MJO-DL**, comme illustré dans l’illustration ci-dessous.
   
 1.  Créez un projet WPF nommé **MyWpf**.  
   
 2.  Définissez un point d’arrêt facilement accessible quelque part dans le code.  
   
-     Par exemple, vous pouvez définir un point d’arrêt dans un gestionnaire de boutons. Pour ce faire, ouvrez MainWindow.xaml, ajoutez un contrôle bouton à partir de la boîte à outils, puis double-cliquez sur le bouton pour ouvrir son gestionnaire.
+     Par exemple, vous pouvez définir un point d’arrêt dans un gestionnaire de boutons. Pour ce faire, ouvrez MainWindow.xaml et ajouter un contrôle de bouton à partir de la boîte à outils, puis double-cliquez sur le bouton pour ouvrir son gestionnaire.
   
 3.  Dans l’Explorateur de solutions, cliquez sur le projet et choisissez **propriétés**.  
   
-4.  Sur le **propriétés** page, choisissez la **déboguer** onglet.  
+4.  Sur le **propriétés** page, choisissez le **déboguer** onglet.  
   
      ![RemoteDebuggerCSharp](../debugger/media/remotedebuggercsharp.png "RemoteDebuggerCSharp")  
   
@@ -71,7 +72,7 @@ Le débogueur ne peut pas déployer d’applications de bureau Visual C# ou Visu
   
 6.  Choisissez **utiliser l’ordinateur distant**et le type **MJO-DL:4022** dans la zone de texte. (4022 est le numéro de port indiqué dans la fenêtre du débogueur distant. Le numéro de port incrémente 2 dans chaque version de Visual Studio).
   
-7.  Assurez-vous que **activer le débogage de code natif** n’est pas sélectionnée.  
+7.  Assurez-vous que l’option **activer le débogage du code natif** n’est pas sélectionnée.  
   
 8.  Générez le projet.  
   
@@ -80,11 +81,11 @@ Le débogueur ne peut pas déployer d’applications de bureau Visual C# ou Visu
 10. Copiez le fichier exécutable que vous venez de créer à partir de votre ordinateur Visual Studio dans le dossier nouvellement créé sur l’ordinateur distant.
   
     > [!CAUTION]
-    >  Ne pas modifier le code ou la reconstruction (ou si vous devez répéter cette étape). Le fichier exécutable que vous avez copié sur l’ordinateur distant doit correspondre exactement à la source et aux symboles locaux.
+    >  Ne pas modifier le code ou la reconstruction (ou vous devez répéter cette étape). Le fichier exécutable que vous avez copié sur l’ordinateur distant doit correspondre exactement à la source et aux symboles locaux.
 
     Vous pouvez copier le projet manuellement, utilisez Xcopy, Robocopy, Powershell ou autres options.
   
-11. Assurez-vous que le débogueur distant est en cours d’exécution sur l’ordinateur cible (si elle n’est pas le cas, recherchez **débogueur distant** dans les **Démarrer** menu). Voici à quoi ressemble la fenêtre du débogueur distant.  
+11. Assurez-vous que le débogueur distant est en cours d’exécution sur l’ordinateur cible (si elle n’est pas le cas, recherchez **débogueur distant** dans le **Démarrer** menu). Voici à quoi ressemble la fenêtre du débogueur distant.  
   
      ![RemoteDebuggerWindow](../debugger/media/remotedebuggerwindow.png "RemoteDebuggerWindow")  
   
@@ -92,15 +93,15 @@ Le débogueur ne peut pas déployer d’applications de bureau Visual C# ou Visu
   
 13. Si vous y êtes invité, entrez les informations d’identification réseau pour vous connecter à l’ordinateur distant.  
   
-     Les informations d’identification requises varient en fonction de la configuration de la sécurité de votre réseau. Par exemple, sur un ordinateur de domaine, vous pouvez entrer votre nom de domaine et le mot de passe. Sur un ordinateur n’appartenant pas au domaine, vous pouvez entrer le nom de l’ordinateur et un nom de compte d’utilisateur valide, tel que **MJO-DL\name@something.com**, ainsi que le mot de passe correct.
+     Les informations d’identification requises varient selon la configuration de la sécurité de votre réseau. Par exemple, sur un ordinateur de domaine, vous pouvez entrer votre nom de domaine et le mot de passe. Sur un ordinateur n’appartenant pas au domaine, vous pouvez entrer le nom de l’ordinateur et un nom de compte d’utilisateur valide, comme **MJO-DL\name@something.com**, ainsi que le mot de passe correct.
 
      Vous devez voir que la fenêtre principale de l’application WPF est ouverte sur l’ordinateur distant.
   
-14. Si nécessaire, prendre des mesures pour atteindre le point d’arrêt. Il doit être actif. Si elle n’est pas le cas, les symboles de l’application ne l’avez pas chargé. Nouvelle tentative et si cela ne fonctionne pas, obtenir des informations sur le chargement de symboles et comment les résoudre à [paramètres de symboles de présentation des fichiers de symboles et de Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/05/understanding-symbol-files-and-visual-studio-s-symbol-settings.aspx).
+14. Si nécessaire, prendre des mesures pour atteindre le point d’arrêt. Il doit être actif. Si elle n’est pas le cas, les symboles pour l’application n’est pas chargé. Nouvelle tentative et si cela ne fonctionne pas, obtenir des informations sur le chargement de symboles et comment les résoudre à [paramètres des symboles de présentation des fichiers de symboles et de Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/05/understanding-symbol-files-and-visual-studio-s-symbol-settings.aspx).
   
 15. Sur l’ordinateur Visual Studio, l’exécution doit être arrêtée au point d’arrêt.
   
- Si vous avez des fichiers autres que des fichiers de code qui doivent être utilisés par l’application, vous devez les inclure dans le projet Visual Studio. Créer un dossier de projet pour les fichiers supplémentaires (dans le **l’Explorateur de solutions**, cliquez sur **Ajouter > Nouveau dossier**). Puis ajoutez les fichiers dans le dossier (dans le **l’Explorateur de solutions**, cliquez sur **Ajouter > élément existant**, puis sélectionnez les fichiers). Sur le **propriétés** pour chaque fichier, définissez **copier dans le répertoire de sortie** à **toujours copier**.
+ Si vous avez des fichiers de code non qui doivent être utilisés par l’application, vous devez les inclure dans le projet Visual Studio. Créez un dossier de projet pour les fichiers supplémentaires (dans le **l’Explorateur de solutions**, cliquez sur **Ajouter > Nouveau dossier**). Puis ajoutez les fichiers dans le dossier (dans le **l’Explorateur de solutions**, cliquez sur **Ajouter > élément existant**, puis sélectionnez les fichiers). Sur le **propriétés** pour chaque fichier, définissez **Copy to Output Directory** à **toujours copier**.
 
 ## <a name="set-up-debugging-with-remote-symbols"></a>Configurer le débogage avec des symboles distants 
 

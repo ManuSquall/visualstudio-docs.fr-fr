@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473216"
 ---
 # <a name="how-to-display-thread-properties"></a>Comment : afficher les propriétés d'un thread
 Pour plus d’informations sur un thread listé dans [vue Threads](../debugger/threads-view.md), utilisez le [boîte de dialogue Propriétés de Thread](../debugger/thread-properties-dialog-box.md).  

@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb86d36429f8695222f69fbf6d78635a338bfe5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a2831dd07bcbb5e909357ebdf89496cf92bb815d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573165"
 ---
-# <a name="threads-view-parallel-performance"></a>vue Threads (niveau de performance parallèle)
+# <a name="threads-view-parallel-performance"></a>Threads, vue (niveau de performance parallèle)
 **L’Affichage Threads** est le mode le plus détaillé et le plus riche en fonctionnalités du visualiseur concurrentiel (choisissez **Analyser** > **Visualiseur concurrentiel** pour démarrer le visualiseur concurrentiel). En utilisant cette vue, vous pouvez déterminer si les threads sont en cours d’exécution ou s’ils sont bloqués à cause d’une synchronisation, d’E/S ou pour une autre raison.  
   
  Pendant l’analyse du profil, le visualiseur concurrentiel examine tous les événements de changement de contexte du système d’exploitation pour chaque thread de l’application. Les changements de contexte peuvent se produire pour de nombreuses raisons, comme celles-ci :  
@@ -54,7 +55,7 @@ ms.lasthandoff: 04/19/2018
   
 -   Comprendre les dépendances entre les threads Worker et les chemins critiques de l’exécution.  
   
-## <a name="examining-specific-time-intervals-and-threads"></a>Examen d’intervalles de temps et de threads spécifiques  
+## <a name="examine-specific-time-intervals-and-threads"></a>Examiner les intervalles de temps et les threads spécifiques  
  La vue Threads montre une chronologie. Vous pouvez effectuer un zoom et un panoramique dans la chronologie pour examiner des intervalles spécifiques et des threads de votre application. Le temps figure sur l’axe des X et plusieurs canaux sont présents sur l’axe Y :  
   
 -   Deux canaux d’E/S pour chaque lecteur de disque sur le système, un canal pour les lectures et un pour les écritures.  
@@ -89,7 +90,7 @@ vue Threads
 ### <a name="dependencies-between-threads"></a>Dépendances entre threads  
  Le visualiseur concurrentiel peut afficher les dépendances entre les threads dans votre processus, ce qui vous permet de déterminer ce qu’un thread bloqué tentait de faire et de découvrir ce que d’autres threads lui ont permis d’exécuter. Pour déterminer quel thread a débloqué un autre thread, sélectionnez le segment de blocage approprié. Si le visualiseur concurrentiel peut déterminer le thread de déblocage, il trace une ligne entre le thread de déblocage et le segment d’exécution qui suit le segment de blocage. En outre, l’onglet **Pile de déblocage** montre la pile des appels appropriée.  
   
-### <a name="thread-execution-details"></a>Détails de l’exécution des threads  
+### <a name="thread-execution-details"></a>Détails de l’exécution d’un thread  
  Dans le graphique chronologique d’un thread, les segments verts indiquent les moments où il exécutait du code. Vous pouvez obtenir des informations plus détaillées sur un segment d’exécution.  
   
  Quand vous sélectionnez un point dans un segment d’exécution, le visualiseur concurrentiel recherche ce point dans le temps sur la pile des appels appropriée, puis affiche un signe d’insertion noir au-dessus du point sélectionné dans le segment d’exécution et affiche la pile des appels elle-même sous l’onglet **Pile active**. Vous pouvez sélectionner plusieurs points sur le segment d’exécution.  
@@ -99,7 +100,7 @@ vue Threads
   
  Pour obtenir un profil d’exécution pour tous les threads activés (non masqués) dans la période de temps sélectionnée, choisissez le bouton **Exécution** dans la légende active.  
   
-### <a name="timeline-graph"></a>Graphique chronologique  
+### <a name="timeline-graph"></a>Graphe de chronologie  
  Le graphique chronologique montre l’activité de tous les threads dans le processus et de tous les appareils de disque physique sur l’ordinateur hôte. Il affiche également l’activité GPU et les événements de marqueur.  Vous pouvez effectuer un zoom avant pour afficher plus de détails ou un zoom arrière pour afficher un intervalle de temps plus long. Vous pouvez également sélectionner des points sur le graphique pour obtenir des détails sur les catégories, les heures de début, les durées et les états de la pile des appels.  
   
  Dans le graphique chronologique, une couleur indique l’état d’un thread à un moment donné. Par exemple, les segments verts ont été en cours d’exécution, les segments rouges ont été bloqués pour la synchronisation, les segments jaunes ont été préemptés et les segments violets ont été engagés dans les E/S d’un appareil. Vous pouvez utiliser cette vue pour la répartition de la charge de travail entre les threads impliqués dans une boucle parallèle ou dans des tâches concurrentes. Si l’exécution d’un thread est plus longue que celle des autres, le travail est peut-être déséquilibré. Vous pouvez utiliser ces informations pour améliorer les performances de votre programme en distribuant le travail de façon plus uniforme entre les threads.  
@@ -141,8 +142,8 @@ vue Threads
 #### <a name="ui-processing"></a>Traitement de l'interface utilisateur  
  Le rapport de traitement de l’interface utilisateur montre les appels responsables des blocages de traitement de l’IU, ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, consultez [Temps de traitement UI](../profiling/ui-processing-time.md).  
   
-#### <a name="per-thread-summary"></a>Par résumé de thread  
- Cet onglet affiche une vue en colonnes avec des codes de couleur de la durée totale que chaque thread a passé dans les états En cours d’exécution, Bloqué, E/S et dans d’autres états. Le libellé des colonnes se trouve dans le bas. Quand vous ajustez le niveau de zoom dans le graphique chronologique, cet onglet est automatiquement mis à jour. À certains niveaux de zoom, certains threads peuvent ne pas être affichés. Quand cela se produit, des points de suspension sont affichés à droite. Si le thread que vous voulez n’apparaît pas, vous pouvez masquer d’autres threads. Pour plus d’informations, consultez [Rapport Résumé par thread](../profiling/per-thread-summary-report.md).  
+#### <a name="per-thread-summary"></a>Récapitulatif par thread  
+ Cet onglet affiche une vue en colonnes avec des codes de couleur de la durée totale que chaque thread a passé dans les états En cours d’exécution, Bloqué, E/S et dans d’autres états. Le libellé des colonnes se trouve dans le bas. Quand vous ajustez le niveau de zoom dans le graphique chronologique, cet onglet est automatiquement mis à jour. À certains niveaux de zoom, certains threads peuvent ne pas être affichés. Quand cela se produit, des points de suspension sont affichés à droite. Si le thread que vous voulez n’apparaît pas, vous pouvez masquer d’autres threads. Pour plus d’informations, consultez [Rapport Récapitulatif par thread](../profiling/per-thread-summary-report.md).  
   
 #### <a name="disk-operations"></a>Opérations sur le disque  
  Cet onglet affiche les processus et les threads impliqués dans les E/S disque pour le compte du processus en cours, les fichiers qu’ils ont utilisés (par exemple les DLL qui ont été chargées), le nombre d’octets lus et d’autres informations. Vous pouvez utiliser ce rapport pour évaluer le temps passé dans les accès aux fichiers pendant l’exécution, en particulier quand votre processus est lié à des E/S. Pour plus d’informations, consultez [Rapport Opérations sur le disque](../profiling/disk-operations-report-threads-view.md).  

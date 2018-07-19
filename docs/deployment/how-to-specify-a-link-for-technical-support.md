@@ -1,5 +1,5 @@
 ---
-title: 'Comment : spécifier un lien pour le Support technique | Documents Microsoft'
+title: 'Comment : spécifier un lien pour le Support technique | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -22,18 +22,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24052420ecc04ab8a369f739efa885a6fa821fbd
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 27014dd06f3d368ea0777a8f9e16c27a6d7d7884
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078824"
 ---
-# <a name="how-to-specify-a-link-for-technical-support"></a>Comment : spécifier un lien pour le support technique
-Lorsque vous publiez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application, le **URL du support technique** propriété identifie une page Web ou un partage de fichiers où les utilisateurs peuvent accéder pour obtenir des informations sur l’application. Cette propriété est facultative. Si spécifié, l’URL s’affichera dans l’entrée de l’application **Ajout / Suppression de programmes** boîte de dialogue.  
+# <a name="how-to-specify-a-link-for-technical-support"></a>Comment : spécifier un lien pour le Support technique
+Lorsque vous publiez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application, le **URL du support technique** propriété identifie une page Web ou un partage de fichiers où les utilisateurs peuvent accéder à obtenir des informations sur l’application. Cette propriété est facultative. s’il est fourni, l’URL s’affichera dans l’entrée de l’application **Ajout / Suppression de programmes** boîte de dialogue.  
   
- Le **URL de support technique** propriété peut être définie sur le **publier** page de la **Concepteur de projet**.  
+ Le **URL du support technique** propriété peut être définie sur le **publier** page de la **Concepteur de projet**.  
   
-### <a name="to-specify-a-support-url"></a>Pour spécifier une URL de support  
+### <a name="to-specify-a-support-url"></a>Pour spécifier une URL de prise en charge  
   
 1.  Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
@@ -43,8 +44,8 @@ Lorsque vous publiez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclic
   
 4.  Cliquez sur **Description**.  
   
-5.  Dans le **URL de support technique** , entrez un chemin d’accès complet à un partage UNC, page Web ou site Web.  
+5.  Dans le **URL du support technique** , entrez un chemin d’accès qualifié complet à un partage de site Web, page Web ou UNC.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Guide pratique pour publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Publier des applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
+ [Comment : publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

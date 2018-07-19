@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102978"
 ---
 # <a name="creating-reusable-groups-of-buttons"></a>Création de groupes réutilisables des boutons
 Un groupe de commandes est une collection de commandes qui apparaissent toujours ensemble dans un menu ou une barre d’outils. N’importe quel groupe de commandes peut être réutilisée en l’assignant à menus parent différent dans la section CommandPlacements du fichier .vsct.  

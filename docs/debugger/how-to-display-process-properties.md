@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481708"
 ---
 # <a name="how-to-display-process-properties"></a>Comment : afficher les propriétés d'un processus
 Pour plus d’informations sur un processus listé dans [vue processus](../debugger/processes-view.md), utilisez le [la boîte de dialogue Propriétés du processus](../debugger/process-properties-dialog-box.md).  

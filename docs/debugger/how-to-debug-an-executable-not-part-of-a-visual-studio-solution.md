@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476245"
 ---
 # <a name="how-to-debug-an-executable-that-is-not-part-of-a-visual-studio-solution"></a>Comment : déboguer un exécutable qui ne fait pas partie d’une solution Visual Studio
 Vous pouvez être amené à déboguer un exécutable (fichier .exe) qui n’est pas dans le cadre d’un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet. Il peut s'agir d'un exécutable créé en dehors de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ou reçu de la part d'un tiers.  

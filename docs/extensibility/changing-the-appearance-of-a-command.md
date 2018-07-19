@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099081"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>Modification de l’apparence d’une commande
 Vous pouvez fournir des commentaires à votre utilisateur en modifiant l’apparence d’une commande. Par exemple, vous souhaiterez une commande à un aspect différent quand il n’est pas disponible. Vous pouvez rendre les commandes disponibles ou non disponible, masquer ou afficher, ou vérifiez ou désactivez les dans le menu.  

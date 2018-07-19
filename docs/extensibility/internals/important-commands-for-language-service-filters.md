@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130660"
 ---
 # <a name="important-commands-for-language-service-filters"></a>Commandes importants pour les filtres de Service de langage
 Si vous souhaitez créer un filtre de service de langage complet, envisagez de gérer les commandes suivantes. La liste complète des identificateurs de commande est définie dans le <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> énumération pour le code managé et l’en-tête de Stdidcmd.h de fichiers pour non managée [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] code. Vous pouvez trouver le fichier Stdidcmd.h *chemin d’installation de Visual Studio SDK*\VisualStudioIntegration\Common\Inc.  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104149"
 ---
 # <a name="binding-breakpoints"></a>Liaison des points d’arrêt
 Si l’utilisateur définit un point d’arrêt, par exemple en appuyant sur F9, l’IDE formule la demande et vous invite à entrer la session de débogage pour créer le point d’arrêt.  

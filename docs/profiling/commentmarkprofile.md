@@ -13,14 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fbe34a1ddb738b31c9362eb511a04ba970402ab
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: aaae7a6ce1185426f23a8182ddcdf0c969f39a4b
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691041"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
-La fonction `CommentMarkProfile` insère un marqueur numérique et une chaîne de texte dans le fichier .vsp. Pour que la marque et le commentaire soient insérés, le profilage du thread qui contient la fonction `CommentMarkProfile` doit être activé.  
+La fonction `CommentMarkProfile` insère un marqueur numérique et une chaîne de texte dans le fichier .*vsp*. Pour que la marque et le commentaire soient insérés, le profilage du thread qui contient la fonction `CommentMarkProfile` doit être activé.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -55,7 +56,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 ## <a name="remarks"></a>Notes  
  L’état du profilage du thread qui contient la fonction de profil de marque doit être Activé lors de l’insertion de marques et de commentaires avec la commande VSInstr Mark ou avec des fonctions (CommentMarkAtProfile, CommentMarkProfile ou MarkProfile).  
   
- Les marques de profil sont globales dans l’étendue. Par exemple, une marque de profil insérée dans un thread peut être utilisée pour marquer le début ou la fin d’un segment de données dans n’importe quel thread dans le fichier .vsp.  
+ Les marques de profil sont globales dans l’étendue. Par exemple, une marque de profil insérée dans un thread peut être utilisée pour marquer le début ou la fin d’un segment de données dans n’importe quel thread du fichier .*vsp*.  
   
 > [!IMPORTANT]
 >  La méthode CommentMarkProfile peut être utilisé seulement avec l’instrumentation.  

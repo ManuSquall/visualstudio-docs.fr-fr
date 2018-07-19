@@ -11,11 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7747892e9c206fa0844c913bca3da92bb8e417d9
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: abd70e53c06da53f22bcac4c7f041aaef75bd412
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747865"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Étape 2 : créer un problème d’addition aléatoire
 Dans la deuxième partie de ce didacticiel, vous rendez le questionnaire plus difficile en ajoutant des problèmes mathématiques basés sur des nombres aléatoires. Vous créez également une méthode qui s'appelle `StartTheQuiz()` et qui renseigne les problèmes et démarre le temporisateur. Plus tard dans ce didacticiel, vous ajouterez des problèmes de soustraction, de multiplication et de division.
@@ -59,7 +60,7 @@ Dans la deuxième partie de ce didacticiel, vous rendez le questionnaire plus di
 
      Notez que quand vous entrez un point (.) après `randomizer` dans le code, une fenêtre IntelliSense s’ouvre et affiche les méthodes d’objet aléatoire que vous pouvez appeler. Par exemple, IntelliSense propose la méthode `Next()`, comme suit.
 
-     ![Next, méthode](../ide/media/express_randomwhite.png "Express_RandomWhite") Next, méthode
+     ![Méthode Next](../ide/media/express_randomwhite.png) Méthode Next
 
      Lorsque vous entrez un point après un objet, IntelliSense affiche une liste des membres de l'objet, tels que des propriétés, des méthodes et des événements.
 
@@ -88,7 +89,7 @@ Dans la deuxième partie de ce didacticiel, vous rendez le questionnaire plus di
 
      Un problème d'addition aléatoire apparaît, comme le montre l'illustration suivante.
 
-     ![Problème d’addition aléatoire](../ide/media/express_additionproblem.png "Express_AdditionProblem") Problème d’addition aléatoire
+     ![Problème d’addition aléatoire](../ide/media/express_additionproblem.png) Problème d’addition aléatoire
 
      Dans l'étape suivante du didacticiel, vous ajouterez la somme.
 

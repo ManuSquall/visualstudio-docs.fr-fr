@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561855"
 ---
 # <a name="troubleshooting-clickonce-deployments"></a>Dépannage des déploiements ClickOnce
 Cette rubrique vous aide à diagnostiquer et résoudre les problèmes les plus courants avec [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiements.  

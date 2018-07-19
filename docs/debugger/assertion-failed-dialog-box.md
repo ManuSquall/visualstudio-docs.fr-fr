@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31456423"
 ---
 # <a name="assertion-failed-dialog-box"></a>Échec de l'assertion (boîte de dialogue)
 Une instruction d'assertion spécifie une condition dont vous prévoyez qu'elle est vraie en un certain point de votre programme. Si cette condition n'est pas vraie, l'assertion échoue, l'exécution de votre programme est interrompue et cette boîte de dialogue apparaît.  

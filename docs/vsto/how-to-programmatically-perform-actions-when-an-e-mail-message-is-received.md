@@ -1,5 +1,5 @@
 ---
-title: 'Comment : effectuer des Actions par programme lors de la réception d’un Message électronique | Documents Microsoft'
+title: 'Comment : effectuer des actions par programme lors de la réception d’un message électronique'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,14 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 28b9936d1d3e1ffd3b4ec04af6719d0699000f8c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cb3ab28a70904d7f7bedbf126dc5fcdce77f176a
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257385"
 ---
-# <a name="how-to-programmatically-perform-actions-when-an-e-mail-message-is-received"></a>Comment : exécuter des actions lors de la réception d'un message électronique par programmation
-  Cet exemple effectue des actions personnalisées quand l’utilisateur reçoit un message électronique.  
+# <a name="how-to-programmatically-perform-actions-when-an-email-message-is-received"></a>Comment : effectuer des actions par programme lors de la réception d’un message électronique
+  Cet exemple effectue des actions personnalisées lorsque l’utilisateur reçoit un message électronique.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Voir aussi  
  [Comment : créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md)   
- [Utilisation des éléments de messagerie](../vsto/working-with-mail-items.md)   
- [Bien démarrer avec la programmation des compléments VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
+ [Travailler avec des éléments de messagerie](../vsto/working-with-mail-items.md)   
+ [Commencer à programmer des Compléments VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
   
   

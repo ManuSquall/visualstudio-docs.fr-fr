@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099270"
 ---
 # <a name="asyncvoidmethodbuildermobjectidfordebugger-field"></a>Champ de AsyncVoidMethodBuilder.m_objectIdForDebugger
 Représente l’objet initialisé tardivement utilisé par le débogueur pour identifier de manière unique ce générateur.  

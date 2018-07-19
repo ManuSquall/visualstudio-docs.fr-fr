@@ -1,5 +1,5 @@
 ---
-title: Jeux de données distincts et les TableAdapters dans différents projets
+title: Séparer les datasets et les TableAdapters en différents projets
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,55 +13,56 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fe7d774a9a5fa1e14cdbcb9c5d730a01fdcdeee9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 01e572a2ac20d1cfb103e1600307b51bdf58a0b8
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174317"
 ---
-# <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Jeux de données distincts et les TableAdapters dans différents projets
-Datasets typés ont été améliorés afin que les [TableAdapters](create-and-configure-tableadapters.md) et les classes dataset puissent être générées dans des projets distincts. Cela vous permet de rapidement séparer les couches d’application et de générer des applications de données multicouches.
+# <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Séparer les datasets et les TableAdapters en différents projets
+Datasets typés ont été améliorées afin que le [TableAdapters](create-and-configure-tableadapters.md) et classes de jeu de données peuvent être générées dans des projets séparés. Cela vous permet de rapidement séparer les couches application et générer des applications de données multicouches.
 
-La procédure suivante décrit le processus de l’utilisation de la **Concepteur de Dataset** pour générer le code de jeu de données dans un projet qui est séparé du projet qui contient le code du TableAdapter généré.
+La procédure suivante décrit le processus d’utilisation de la **Concepteur de Dataset** pour générer le code de jeu de données dans un projet qui est séparé du projet qui contient le code du TableAdapter généré.
 
-## <a name="separate-datasets-and-tableadapters"></a>Jeux de données distincts et les TableAdapters
-Lorsque vous séparez le code du jeu de données à partir du code du TableAdapter, le projet qui contient le code du jeu de données doit se trouver dans la solution actuelle. Si ce projet ne se trouve pas dans la solution actuelle, il n’est pas disponible dans le **projet DataSet** liste dans le **propriétés** fenêtre.
+## <a name="separate-datasets-and-tableadapters"></a>Séparer les datasets et des TableAdapters
+Lorsque vous séparez le code de jeu de données à partir de code du TableAdapter, le projet qui contient le code de jeu de données doit se trouver dans la solution actuelle. Si ce projet ne se trouve pas dans la solution actuelle, il n’est pas disponible dans le **DataSet Project** liste dans le **propriétés** fenêtre.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
 #### <a name="to-separate-the-dataset-into-a-different-project"></a>Pour séparer le jeu de données dans un autre projet
 
-1.  Ouvrez une solution qui contient un jeu de données (fichier .xsd).
+1.  Ouvrez une solution qui contient un jeu de données (*.xsd* fichier).
 
     > [!NOTE]
     >  Si la solution ne contient pas le projet dans lequel vous souhaitez séparer le code de votre jeu de données, créer le projet, ou ajouter un projet existant à la solution.
 
-2.  Double-cliquez sur un fichier dataset typé (fichier .xsd) dans **l’Explorateur de solutions** pour ouvrir le dataset dans le **Concepteur de Dataset**.
+2.  Double-cliquez sur un fichier de dataset typé (une *.xsd* fichier) dans **l’Explorateur de solutions** pour ouvrir le jeu de données dans le **Concepteur de Dataset**.
 
 3.  Sélectionnez une zone vide de la **Concepteur de Dataset**.
 
-4.  Dans le **propriétés** fenêtre, recherchez le **projet DataSet** nœud.
+4.  Dans le **propriétés** fenêtre, recherchez le **DataSet Project** nœud.
 
-5.  Dans le **projet DataSet** , sélectionnez le nom du projet dans lequel vous souhaitez générer le code de jeu de données.
+5.  Dans le **DataSet Project** liste, sélectionnez le nom du projet dans lequel vous souhaitez générer le code de jeu de données.
 
-     Après avoir sélectionné le projet dans lequel vous souhaitez générer le code de jeu de données, le **fichier DataSet** propriété est remplie avec un nom de fichier par défaut. Vous pouvez modifier ce nom si nécessaire. En outre, si vous souhaitez générer le code de jeu de données dans un répertoire spécifique, vous pouvez définir le **dossier du projet** nom à la propriété d’un dossier.
+     Après avoir sélectionné le projet dans lequel vous souhaitez générer le code de jeu de données, le **fichier DataSet** propriété est remplie avec un nom de fichier par défaut. Vous pouvez modifier ce nom si nécessaire. En outre, si vous souhaitez générer le code de jeu de données dans un répertoire spécifique, vous pouvez définir le **dossier du projet** propriété le nom d’un dossier.
 
     > [!NOTE]
-    >  Quand vous séparez les datasets et les TableAdapters (en définissant le **projet DataSet** propriété), les classes dataset partielles existantes dans le projet ne sera pas être déplacées automatiquement. Les classes dataset partielles existantes doivent être déplacés manuellement vers le projet dataset.
+    >  Quand vous séparez les datasets et les TableAdapters (en définissant le **DataSet Project** propriété), les classes dataset partielles existantes dans le projet ne sont pas déplacées automatiquement. Les classes dataset partielles existantes doivent être déplacés manuellement dans le projet dataset.
 
 6.  Enregistrer le jeu de données.
 
-     Le code de jeu de données est généré dans le projet sélectionné dans le **projet DataSet** propriété et le **TableAdapter** code est généré dans le projet actuel.
+     Le code de jeu de données est généré dans le projet sélectionné dans le **DataSet Project** propriété et le **TableAdapter** code est généré dans le projet actuel.
 
-Par défaut, une fois que vous séparez le dataset et le code du TableAdapter, le résultat est un fichier de classe discret dans chaque projet. Le projet d’origine a un fichier nommé NomGroupeDonnées.Designer.vb (ou NomGroupeDonnées.Designer.cs) qui contient le code du TableAdapter. Le projet désigné dans la **projet Dataset** propriété dispose d’un fichier nommé NomGroupeDonnées.DataSet.Designer.vb (ou NomGroupeDonnées.DataSet.Designer.cs) qui contient le code du jeu de données.
+Par défaut, une fois que vous séparez le jeu de données et le code du TableAdapter, le résultat est un fichier de classe discret dans chaque projet. Le projet d’origine a un fichier nommé *NomGroupeDonnées.Designer.vb* (ou *NomGroupeDonnées.Designer.cs*) qui contient le code du TableAdapter. Le projet désigné dans la **Dataset Project** propriété dispose d’un fichier nommé *NomGroupeDonnées.DataSet.Designer.vb* (ou *NomGroupeDonnées.DataSet.Designer.cs*) qui contient le code de jeu de données.
 
 > [!NOTE]
 >  Pour afficher le fichier de classe générée, sélectionnez le jeu de données ou le projet de TableAdapter. Ensuite, dans **l’Explorateur de solutions**, sélectionnez **afficher tous les fichiers**.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Vue d’ensemble des applications de données multiniveaux](../data-tools/n-tier-data-applications-overview.md)
-- [Procédure pas à pas : création d’une application de données multiniveau](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Vue d’ensemble des applications de données multicouches](../data-tools/n-tier-data-applications-overview.md)
+- [Procédure pas à pas : Création d’une application de données multicouches](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Mise à jour hiérarchique](../data-tools/hierarchical-update.md)
 - [Accès aux données dans Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [ADO.NET](/dotnet/framework/data/adonet/index)

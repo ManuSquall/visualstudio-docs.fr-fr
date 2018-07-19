@@ -1,5 +1,5 @@
 ---
-title: Recherche de fuites de mémoire à l’aide de la bibliothèque CRT | Documents Microsoft
+title: Recherche de fuites de mémoire à l’aide de la bibliothèque CRT | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -31,11 +31,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d858b6c67893e49b4d4e9ec87c3b20fce56dd7c4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 58acebc2607ba05f121a7673f726d8f4bbcb38bd
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057211"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Recherche de fuites de mémoire à l'aide de la bibliothèque CRT
 Les fuites de mémoire, qui correspondent à l'échec de désallocation de mémoire précédemment allouée, figurent parmi les bogues les plus difficiles à détecter des applications C/C++. Au début, vous pourrez remarquer une petite fuite de mémoire, mais au fil du temps, cette fuite de mémoire peut progressivement provoquer des problèmes allant d'une perte de performances au blocage de l'application, lorsque la mémoire devient insuffisante. Pire encore, une application connaissant une fuite de mémoire qui utiliserait toute la mémoire disponible pourrait entraîner le blocage d'une autre application, provoquant le doute quant à l'application réellement responsable du blocage. Même les fuites de mémoire apparemment sans incidence peuvent être responsables d'autres problèmes devant être corrigés.  
@@ -47,7 +48,7 @@ Les fuites de mémoire, qui correspondent à l'échec de désallocation de mémo
   
  Pour activer les fonctions du tas de débogage, incluez les instructions suivantes dans votre programme :  
   
-```  
+```cpp
 #define _CRTDBG_MAP_ALLOC  
 #include <stdlib.h>  
 #include <crtdbg.h>  
@@ -61,13 +62,13 @@ Les fuites de mémoire, qui correspondent à l'échec de désallocation de mémo
   
  Après avoir activé les fonctions de tas de débogage à l'aide de ces instructions, vous pouvez appeler `_CrtDumpMemoryLeaks` avant un point de sortie de l'application, de façon à afficher un rapport des fuites de mémoire lorsque vous quittez l'application :  
   
-```  
+```cpp
 _CrtDumpMemoryLeaks();  
 ```  
   
  Si votre application dispose de plusieurs sorties, il n'est pas nécessaire d'appeler manuellement [_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks) à chaque point de sortie. Si vous appelez `_CrtSetDbgFlag` au début de votre application, `_CrtDumpMemoryLeaks` sera automatiquement appelé à chaque point de sortie. Vous devez définir les deux champs de bits indiqués ci-dessous :  
   
-```  
+```cpp
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );  
 ```  
   
@@ -75,14 +76,14 @@ _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );
   
  Si vous utilisez une bibliothèque, celle-ci peut redéfinir la sortie vers un autre emplacement. Dans ce cas, vous pouvez redéfinir l'emplacement de sortie vers la fenêtre **Sortie** comme indiqué ci-dessous :  
   
-```  
+```cpp
 _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );  
 ```  
   
 ## <a name="interpreting-the-memory-leak-report"></a>Interprétation du rapport des fuites de mémoire  
  Si votre application ne définit pas `_CRTDBG_MAP_ALLOC`, [_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks) affiche un rapport des fuites de mémoire similaire à celui-ci :  
   
-```  
+```cmd
 Detected memory leaks!  
 Dumping objects ->  
 {18} normal block at 0x00780E80, 64 bytes long.  
@@ -92,7 +93,7 @@ Object dump complete.
   
  Si votre application définit `_CRTDBG_MAP_ALLOC`, le rapport des fuites de mémoire ressemblera à ceci :  
   
-```  
+```cmd
 Detected memory leaks!  
 Dumping objects ->  
 c:\users\username\documents\projects\leaktest\leaktest.cpp(20) : {18}   
@@ -119,7 +120,7 @@ Object dump complete.
   
  Il existe deux autres types de blocs de mémoire qui n'apparaissent jamais dans les rapports de fuite de mémoire. D'abord, le *bloc libre* , qui correspond à un bloc de mémoire libéré. Il n'a donc pas fait l'objet d'une fuite, par définition. Ensuite, le *bloc ignore* , qui correspond à de la mémoire explicitement marquée comme étant à exclure du rapport des fuites de mémoire.  
   
- Ces techniques fonctionnent pour la mémoire allouée à l'aide de la fonction CRT standard `malloc` . Si votre programme alloue de la mémoire à l’aide de C++ `new` (opérateur), cependant, vous pouvez uniquement voir le fichier et numéro de ligne où l’implémentation de global `operator new` appelle `_malloc_dbg` dans le rapport des fuites de mémoire. Étant donné que ce comportement n’est pas très utile, vous pouvez le modifier pour signaler la ligne qui a effectué l’allocation à l’aide d’une macro qui ressemble à ceci : 
+ Ces techniques fonctionnent pour la mémoire allouée à l'aide de la fonction CRT standard `malloc` . Si votre programme alloue de la mémoire à l’aide de C++ `new` opérateur, cependant, vous pouvez uniquement voir le fichier et numéro de ligne où l’implémentation de global `operator new` appels `_malloc_dbg` dans le rapport des fuites de mémoire. Étant donné que ce comportement n’est pas très utile, vous pouvez le modifier pour signaler la ligne qui a effectué l’allocation à l’aide d’une macro qui ressemble à ceci : 
  
 ```C++  
 #ifdef _DEBUG
@@ -131,7 +132,7 @@ Object dump complete.
 #endif
 ```  
   
-Maintenant que vous pouvez remplacer le `new` opérateur à l’aide de la `DBG_NEW` macro dans votre code. Dans les versions debug, il utilise une surcharge de global `operator new` qui accepte des paramètres supplémentaires pour le type de bloc, le fichier et le numéro de ligne. Cette surcharge de `new` appelle `_malloc_dbg` pour enregistrer les informations supplémentaires. Lorsque vous utilisez `DBG_NEW`, afficher le nom de fichier et numéro de ligne où les objets ayant fuit alloués des rapports de la fuite de mémoire. Dans les versions commerciales, il utilise la valeur par défaut `new`. (Nous ne recommandons pas créer de préprocesseur ou macro nommée `new`, ou tout autre mot clé language.) Voici un exemple de la technique :  
+Maintenant que vous pouvez remplacer le `new` opérateur à l’aide de la `DBG_NEW` macro dans votre code. Dans les versions debug, cet exemple utilise une surcharge de global `operator new` qui accepte des paramètres supplémentaires pour le type de bloc, le fichier et le numéro de ligne. Cette surcharge de `new` appelle `_malloc_dbg` pour enregistrer les informations supplémentaires. Lorsque vous utilisez `DBG_NEW`, la fuite de mémoire signale le nom de fichier et numéro de ligne où les objets ayant fuit ont été alloués. Dans les versions commerciales, il utilise la valeur par défaut `new`. (Nous ne recommandons pas créer de préprocesseur ou macro nommée `new`, ou n’importe quel autre mot clé du langage.) Voici un exemple de la technique :  
   
 ```C++  
 // debug_new.cpp
@@ -172,7 +173,7 @@ c:\users\username\documents\projects\debug_new\debug_new.cpp(20) : {75}
 Object dump complete.
 ```  
   
-Vous pouvez en déduire que l’allocation de fuite a à la ligne 20 de debug_new.cpp.  
+Cela vous indique que l’allocation d’une fuite a été à la ligne 20 du debug_new.cpp.  
   
 ## <a name="setting-breakpoints-on-a-memory-allocation-number"></a>Définition de points d'arrêt sur un numéro d'allocation de mémoire  
  Le numéro d'allocation de mémoire vous indique lorsqu'un bloc de mémoire perdue a été alloué. Un bloc dont le numéro d'allocation de mémoire est égal à 18 correspond au 18e bloc de mémoire alloué pendant l'exécution de l'application. Le rapport CRT compte toutes les allocations de blocs de mémoire pendant l'exécution. Cela comprend les allocations effectuées par la bibliothèque CRT et d'autres bibliothèques telles que MFC. Par conséquent, un bloc dont le numéro d'allocation de mémoire est égal à 18 peut ne pas être le 18e bloc de mémoire alloué par votre code. En général, ce ne sera pas le cas.  
@@ -185,7 +186,7 @@ Vous pouvez en déduire que l’allocation de fuite a à la ligne 20 de debug_ne
   
 2.  Lorsque l'application s'arrête au point d'arrêt, ouvrez la fenêtre **Espion** .  
   
-3.  Depuis la fenêtre **Espion** , tapez `_crtBreakAlloc` dans la colonne **Nom** .  
+3.  Dans le **espion** fenêtre, tapez `_crtBreakAlloc` dans le **nom** colonne.  
   
      Si vous utilisez la version DLL multithread de la bibliothèque CRT (l'option /MD), incluez l'opérateur de contexte : `{,,ucrtbased.dll}_crtBreakAlloc`  
   
@@ -201,20 +202,20 @@ Vous pouvez en déduire que l’allocation de fuite a à la ligne 20 de debug_ne
   
  Vous pouvez aussi définir des points d’arrêt d’allocation de mémoire dans le code. Il existe deux façons d'effectuer cette opération :  
   
-```  
+```cpp
 _crtBreakAlloc = 18;  
 ```  
   
  ou :  
   
-```  
+```cpp
 _CrtSetBreakAlloc(18);  
 ```  
   
 ## <a name="comparing-memory-states"></a>Comparaison des états de la mémoire  
  Une autre technique pour détecter les fuites de mémoire consiste à prendre des instantanés de l'état de la mémoire de l'application en certains points clés. Pour prendre un instantané de l'état de la mémoire à un point donné de votre application, créez une structure **_CrtMemState** et passez-la à la fonction `_CrtMemCheckpoint` . Cette fonction remplit la structure avec un instantané de l'état actuel de la mémoire :  
   
-```  
+```cpp
 _CrtMemState s1;  
 _CrtMemCheckpoint( &s1 );  
   
@@ -224,14 +225,14 @@ _CrtMemCheckpoint( &s1 );
   
  Pour afficher le contenu d'une structure **_CrtMemState** , passez-la à la fonction `_ CrtMemDumpStatistics` :  
   
-```  
+```cpp
 _CrtMemDumpStatistics( &s1 );  
   
 ```  
   
  `_ CrtMemDumpStatistics` crée un dump de l'état de la mémoire similaire à celui-ci :  
   
-```  
+```cmd
 0 bytes in 0 Free Blocks.  
 0 bytes in 0 Normal Blocks.  
 3071 bytes in 16 CRT Blocks.  
@@ -244,7 +245,7 @@ Total allocations: 3764 bytes.
   
  Pour déterminer si une fuite de mémoire a eu lieu dans une section de code, vous pouvez prendre des instantanés de l'état de la mémoire avant et après la section, puis utiliser `_ CrtMemDifference` pour comparer les deux états :  
   
-```  
+```cpp
 _CrtMemCheckpoint( &s1 );  
 // memory allocations take place here  
 _CrtMemCheckpoint( &s2 );  

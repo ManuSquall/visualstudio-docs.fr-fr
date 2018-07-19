@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099374"
 ---
 # <a name="launch-based-attachment"></a>Pièce jointe de lancement
 Basé sur le lancement de pièce jointe à un programme est automatique. Lorsque le processus qui héberge le programme est lancé par le SDM, pièce jointe de lancement suit un chemin d’accès semblable à celle de la méthode d’attachement manuel. Pour plus d’informations, consultez [au programme](../../extensibility/debugger/attaching-to-the-program.md).  

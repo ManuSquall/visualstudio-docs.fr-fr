@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31063250"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools pour Unity
 Dans cette section, vous allez découvrir Visual Studio Tools pour Unity, une extension Visual Studio gratuite qui fait de Visual Studio un outil puissant permettant de créer des jeux avec Unity.

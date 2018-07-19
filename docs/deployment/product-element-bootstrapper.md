@@ -1,5 +1,5 @@
 ---
-title: '&lt;Produit&gt; élément (programme d’amorçage) | Documents Microsoft'
+title: '&lt;Produit&gt; élément (programme d’amorçage) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,18 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa27f5b2af87ec3a174c26ccae1ad4e4e47749b3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 90179df4595ea58a771dd941ea388555b52c7374
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080403"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;Produit&gt; élément (programme d’amorçage)
 Le `Product` élément est l’élément XML de niveau supérieur à l’intérieur d’un fichier de produit.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
 <Product  
 ProductCode  
 >  
@@ -139,16 +140,16 @@ ProductCode
 ```  
   
 ## <a name="elements-and-attributes"></a>Éléments et attributs  
- Le `Product` élément est requis dans un fichier de produit. Elle possède l’attribut suivant.  
+ Le `Product` élément est requis dans un fichier de produit. Il possède l’attribut suivant.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`ProductCode`|Identificateur unique pour le produit.|  
+|`ProductCode`|Un identificateur unique pour le produit.|  
   
 ## <a name="example"></a>Exemple  
  L’exemple de code suivant montre un fichier de produit complet pour l’installation de le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
   
 <Product  
@@ -251,4 +252,4 @@ ProductCode
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Informations de référence sur le schéma de produit et de package](../deployment/product-and-package-schema-reference.md)
+ [Référence du schéma de produit et du package](../deployment/product-and-package-schema-reference.md)

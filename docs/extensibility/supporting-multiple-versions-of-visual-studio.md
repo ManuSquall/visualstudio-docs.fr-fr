@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137818"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>Prise en charge plusieurs Versions de Visual Studio
 Le terme *côte-à-côte* signifie que vous pouvez installer et gérer plusieurs versions d’un produit sur le même ordinateur. VSPackages, cela signifie que d’un utilisateur peut avoir plusieurs versions de Visual Studio installées sur le même ordinateur. Toutefois, vous ne peut pas avoir des versions côte à côte de vos VSPackages chargées dans une seule version de Visual Studio.  

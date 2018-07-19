@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138354"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>Attributs conditionnels du schéma XML de VSCT
 Attributs conditionnels peuvent être appliqués à tous les éléments et les listes. Opérateurs logiques et les expressions d’expansion de symbole équivalente à true ou false. Si la valeur est true, la liste associée ou l’élément est inclus dans le résultat.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128102"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Feuille de route pour l’extension du débogueur
 Cette documentation fournit des informations de référence et guide pour étendre le [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] du débogueur avec les [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  

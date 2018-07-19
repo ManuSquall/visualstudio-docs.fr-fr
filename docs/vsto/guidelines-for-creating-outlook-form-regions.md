@@ -21,6 +21,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548165"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>Recommandations pour créer des zones de formulaire Outlook
   Les informations suivantes peuvent vous aider à optimiser vos zones de formulaire et à éviter d’éventuels problèmes :  

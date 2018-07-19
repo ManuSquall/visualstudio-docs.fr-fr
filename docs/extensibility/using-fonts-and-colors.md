@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141208"
 ---
 # <a name="using-fonts-and-colors"></a>À l’aide des polices et couleurs
 Le [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] fournit la prise en charge pour l’utilisation des polices et couleurs pour afficher le texte.  

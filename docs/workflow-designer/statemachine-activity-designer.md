@@ -13,11 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6a9860d4c6025e6d77a869573b133c6a034aff96
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9c7afb2131ae6e05c8232eb8dc735e5131698a69
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758230"
 ---
 # <a name="statemachine-activity-designer"></a>Concepteur d'activités StateMachine
 
@@ -25,7 +26,7 @@ L'activité <xref:System.Activities.Statements.StateMachine> contient une collec
 
 ## <a name="using-the-statemachine-activity-designer"></a>Utilisation du concepteur d'activités StateMachine
 
-Pour ajouter un <xref:System.Activities.Statements.StateMachine> activité, faites glisser le **StateMachine** Concepteur d’activités à partir de la **Machine à états** section de la **boîte à outils** et déposez-le sur le flux de travail Windows Aire du concepteur. Pour ajouter un état d’enfant à cette <xref:System.Activities.Statements.StateMachine> activité, faites glisser un <xref:System.Activities.Statements.State> ou <xref:System.Activities.Core.Presentation.FinalState> à partir de la **boîte à outils** et déposez-le sur le **StateMachine**.
+Pour ajouter un <xref:System.Activities.Statements.StateMachine> activité, faites glisser le **StateMachine** Concepteur d’activités à partir de la **Machine à états** section de la **boîte à outils** glisser vers le Concepteur de flux de travail surface. Pour ajouter un état de l’enfant à cette <xref:System.Activities.Statements.StateMachine> activité, faites glisser un <xref:System.Activities.Statements.State> ou <xref:System.Activities.Core.Presentation.FinalState> à partir de la **boîte à outils** et déposez-le sur le **StateMachine**.
 
 ### <a name="statemachine-activity-properties-in-the-workflow-designer"></a>Propriétés de l'activité StateMachine dans le concepteur de workflow
 

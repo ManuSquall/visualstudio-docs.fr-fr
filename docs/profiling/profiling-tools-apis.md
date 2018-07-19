@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b759d5ac7f86fe366a5a0394b4c288904ef5c589
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 62c7f173f278e03f5e28d6b03c117c7b69415abb
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255143"
 ---
 # <a name="profiling-tools-apis"></a>API des outils de profilage
 Vous pouvez insérer des méthodes managées ou natives des API des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour contrôler la collecte de données lors d’une exécution du profilage. Cette section décrit les méthodes des API et explique comment les utiliser.  
@@ -30,7 +31,7 @@ Vous pouvez insérer des méthodes managées ou natives des API des outils de pr
  Découvrez comment utiliser les méthodes des outils de profilage .NET dans cet exemple complet.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
- [Contrôle de la collecte de données](../profiling/controlling-data-collection.md)  
+ [Contrôler la collecte des données](../profiling/controlling-data-collection.md)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Explorateur de performances](../profiling/performance-explorer.md)

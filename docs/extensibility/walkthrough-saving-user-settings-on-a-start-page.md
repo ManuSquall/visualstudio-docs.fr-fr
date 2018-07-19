@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146089"
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Procédure pas à pas : Enregistrement des paramètres utilisateur sur une Page de démarrage
 Vous pouvez conserver les paramètres utilisateur de votre page de démarrage. En suivant cette procédure pas à pas, vous pouvez créer un contrôle qui enregistre un paramètre dans le Registre lorsque l’utilisateur clique sur un bouton et récupère ensuite que la définition de chaque chargement de la Page de démarrage. Étant donné que le modèle de projet Page de démarrage inclut un contrôle utilisateur personnalisables, et le XAML de Page de démarrage par défaut appelle ce contrôle, il est inutile de modifier la Page de démarrage lui-même.  

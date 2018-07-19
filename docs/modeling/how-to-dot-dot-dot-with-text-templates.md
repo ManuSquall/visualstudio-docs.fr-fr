@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953977"
 ---
 # <a name="how-to--with-text-templates"></a>Comment : écrire avec des modèles de texte
 Modèles de texte dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] offrent un moyen utile de générer du texte de n’importe quel type. Vous pouvez utiliser des modèles de texte pour générer du texte au moment de l’exécution en tant que partie de votre application et au moment du design pour générer une partie de votre code de projet. Cette rubrique résume les plus fréquemment posées « Comment... ? » questions.

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136092"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Comment : utiliser des Assistants avec des modèles de projet
 Visual Studio fournit la <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface qui, lorsqu’elle est implémentée, vous permet d’exécuter du code personnalisé lorsqu’un utilisateur crée un projet à partir d’un modèle.  

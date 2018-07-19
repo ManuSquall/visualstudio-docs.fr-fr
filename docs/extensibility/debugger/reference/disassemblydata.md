@@ -20,6 +20,7 @@ ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "31619700"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 Décrit une instruction de code machine pour l’environnement de développement intégré (IDE) à afficher.  

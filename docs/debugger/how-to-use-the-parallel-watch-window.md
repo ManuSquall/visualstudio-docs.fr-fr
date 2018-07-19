@@ -1,5 +1,5 @@
 ---
-title: Définissez un espion sur les Variables de Threads parallèles | Documents Microsoft
+title: Définir un espion sur les Variables dans des Threads parallèles | Microsoft Docs
 ms.custom: ''
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
@@ -20,24 +20,25 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 9a142b512c5bbaf5d93dc0302aa39db92fb7c7ae
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38808072"
 ---
-# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Définissez un espion sur les Variables de Threads parallèles dans Visual Studio
+# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Définir un espion sur les Variables dans des Threads parallèles dans Visual Studio
 Dans la fenêtre Espion parallèle, vous pouvez simultanément afficher les valeurs qu'une expression contient sur plusieurs threads. Chaque ligne représente un thread s'exécutant dans une application, mais un thread peut être représenté dans plusieurs lignes. Plus spécifiquement, chaque ligne représente un appel de fonction dont la signature de la fonction correspond à la fonctionnalité sur le frame de pile actuel. Vous pouvez trier, réorganiser, supprimer et regrouper les éléments qui figurent dans les colonnes. Vous pouvez marquer ou supprimer l'indicateur, figer et libérer (reprendre) les threads. Les colonnes suivantes sont affichées dans le **espion parallèle** fenêtre :  
   
 -   La colonne d'indicateur, où vous pouvez marquer un thread auquel vous souhaitez apporter une attention spéciale.  
   
--   La colonne de thread en cours, dans laquelle une flèche jaune indique que le thread actuel (une flèche verte avec extrémité recourbée indique qu’un thread non actuel possède le contexte du débogueur actuel).  
+-   La colonne de thread actuelle, dans lequel une flèche jaune indique que le thread actuel (une flèche verte avec extrémité recourbée indique qu’un thread non actuel a le contexte du débogueur actuel).  
   
 -   Une colonne configurable qui peut afficher l’ordinateur, le processus, la mosaïque, la tâche et le thread.  
   
     > [!TIP]
-    >  Pour des informations de tâche modifiés dans le **espion parallèle** fenêtre, vous devez d’abord ouvrir la **tâche** fenêtre.  
+    >  Aux informations de tâche modifiés dans le **espion parallèle** fenêtre, vous devez tout d’abord ouvrir le **tâche** fenêtre.  
   
--   Blanc *ajouter un espion* colonnes, dans laquelle vous pouvez entrer des expressions à surveiller.  
+-   L’essai à blanc *ajouter un espion* colonnes, dans laquelle vous pouvez entrer des expressions à surveiller.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
@@ -51,7 +52,7 @@ Dans la fenêtre Espion parallèle, vous pouvez simultanément afficher les vale
   
 ### <a name="to-add-a-watch-expression"></a>Pour ajouter une expression espionne  
   
--   Sélectionnez une des blanc *ajouter un espion* colonnes, puis entrez une expression espionne.  
+-   Sélectionnez une de l’essai à blanc *ajouter un espion* colonnes, puis entrez une expression espionne.  
   
 ### <a name="to-flag-or-unflag-a-thread"></a>Pour marquer ou supprimer l'indicateur d'un thread  
   
@@ -63,7 +64,7 @@ Dans la fenêtre Espion parallèle, vous pouvez simultanément afficher les vale
   
 ### <a name="to-switch-to-another-thread"></a>Pour basculer vers un autre thread  
   
--   Double-cliquez sur la colonne de thread en cours (la deuxième colonne). (Raccourci : sélectionnez la ligne et appuyez sur Entrée.)  
+-   Double-cliquez sur la colonne de thread actuelle (la deuxième colonne). (Raccourci : sélectionnez la ligne et appuyez sur Entrée.)  
   
 ### <a name="to-sort-a-column"></a>Pour trier une colonne  
   
@@ -86,6 +87,6 @@ Dans la fenêtre Espion parallèle, vous pouvez simultanément afficher les vale
 -   Entrez une expression booléenne dans la **filtrer par Expression booléenne** boîte. Le débogueur évalue l'expression de chaque contexte de thread. Seules les lignes avec la valeur `true` sont affichées.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Débogage d’Applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Déboguer les Applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Comment : utiliser la fenêtre Threads GPU](../debugger/how-to-use-the-gpu-threads-window.md)   
  [Procédure pas-à-pas : débogage d’une application C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

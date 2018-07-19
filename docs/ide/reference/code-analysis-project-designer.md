@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31944672"
 ---
 # <a name="code-analysis-project-designer"></a>Analyse du code, page du Concepteur de projets
 Contient l’outil d’analyse de code que vous pouvez choisir d’exécuter sur votre code. L’outil rapporte des informations relatives à vos assemblys, notamment les éventuelles violations des règles de programmation et de conception présentées plus avant dans le cadre des règles de conception de Microsoft .NET Framework.

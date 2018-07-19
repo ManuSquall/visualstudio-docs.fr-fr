@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481682"
 ---
 # <a name="how-to-debug-com-servers"></a>Comment : déboguer des serveurs COM
 Le débogage d'applications serveur COM pose un ensemble de problèmes qui ne sont pas toujours faciles à résoudre.  

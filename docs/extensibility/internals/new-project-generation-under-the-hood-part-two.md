@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133183"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Nouvelle génération de projet : Dans les coulisses, deuxième partie
 Dans [nouvelle génération de projet : sous le capot, partie un](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) nous avons vu comment la **nouveau projet** boîte de dialogue zone est remplie. Supposons que vous avez sélectionné un **Application Windows Visual c#**, remplis le **nom** et **emplacement** zones de texte et cliqué sur OK.  

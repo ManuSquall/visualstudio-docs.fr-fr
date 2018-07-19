@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ac173785804ce2ed2874b9628c68d3ab78be6e1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: caacdd787f1765721d281db885364aafc36c5183
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890007"
 ---
 # <a name="attribute-xelement-dynamic-property"></a>Attribute (propriété dynamique XElement)
 
@@ -22,7 +23,7 @@ Obtient un indexeur utilisé pour récupérer l’instance d’attribut qui corr
 
 ## <a name="syntax"></a>Syntaxe
 
-```
+```xaml
 elem.Attribute[{namespaceName}attribName]
 ```
 

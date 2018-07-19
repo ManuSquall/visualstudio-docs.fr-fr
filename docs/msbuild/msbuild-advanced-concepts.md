@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578820"
 ---
 # <a name="msbuild-advanced-concepts"></a>Concepts avancés de MSBuild
 Les documents dans cette section décrivent comment utiliser des techniques avancées pour améliorer les builds que vous exécutez à l'aide de MSBuild.  

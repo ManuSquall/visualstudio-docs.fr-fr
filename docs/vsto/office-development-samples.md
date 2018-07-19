@@ -15,16 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fadffd33582e97c3c0ad714f535afa0da52e1693
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 475da9720d0d29456fca4f06046b3f3778ec22f7
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571415"
 ---
 # <a name="office-development-samples"></a>Exemples de développement Office
   Visual Studio inclut des exemples d'applications qui montrent comment utiliser les outils de développement Microsoft Office pour créer des solutions Office. Le code de ces exemples illustre la syntaxe, la structure et les techniques utilisées pour générer les solutions Office.  
   
- Pour les exemples les plus récents, consultez [exemples pour développeurs MSDN : apprendre par le biais d’un Code](http://go.microsoft.com/fwlink/?LinkID=248199) sur le site Web Microsoft.  
+ Pour les exemples les plus récents, consultez [exemples pour développeurs MSDN : apprendre à coder](http://go.microsoft.com/fwlink/?LinkID=248199) sur le site Web Microsoft.  
   
  [!INCLUDE[note_security_multiplesample](../vsto/includes/note-security-multiplesample-md.md)]  
   
@@ -43,7 +44,7 @@ ms.lasthandoff: 04/16/2018
 |Interopérabilité VSTO et VBA|Montre comment appeler une méthode dans une personnalisation au niveau du document pour Excel à partir du code VBA (Visual Basic pour Applications) du classeur.<br /><br /> Cet exemple n'est disponible qu'en ligne.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Exemples de développement MSDN : Apprendre grâce à des exemples de Code](http://go.microsoft.com/fwlink/?LinkID=248199)   
+ [Exemples : exemples de code](http://go.microsoft.com/fwlink/?LinkID=248199)   
  [Tâches courantes en matière de programmation Office](../vsto/common-tasks-in-office-programming.md)  
   
   

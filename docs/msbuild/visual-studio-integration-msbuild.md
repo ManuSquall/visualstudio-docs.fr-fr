@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd9dd101508fc55ff6287af534ee57e53e95d4e8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e9cddadd65628e23ee6be366edbc72edb82498be
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327048"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Intégration de Visual Studio (MSBuild)
 Visual Studio héberge [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pour charger et générer des projets managés. Dans la mesure où [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] est responsable du projet, la plupart des projets au format [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] peut être utilisé sans problème dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], même si le projet a été créé par un outil différent et possède un processus de génération personnalisé.  
@@ -44,7 +45,7 @@ Visual Studio héberge [!INCLUDE[vstecmsbuild](../extensibility/internals/includ
 ## <a name="configurations-and-platforms"></a>Configurations et plateformes  
  Les configurations sont représentées dans les projets [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] par des propriétés regroupées dans un élément `PropertyGroup` qui contient un attribut `Condition` . [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] examine ces conditions pour créer une liste de configurations de projet et de plateformes à afficher. Pour réussir à extraire cette liste, les conditions doivent avoir un format similaire à ce qui suit :  
   
-```  
+```xml  
 Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "  
 Condition=" '$(Configuration)' == 'Release' "   
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "  

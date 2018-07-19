@@ -24,6 +24,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447867"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>Protection des documents dans les solutions au niveau du document
   Vous pouvez utiliser les fonctionnalités de protection de Microsoft Office Word et Microsoft Office Excel dans les projets au niveau du document. Ces fonctionnalités empêchent les utilisateurs non autorisés d’apporter des modifications à des parties d’un document protégés.  

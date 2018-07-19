@@ -24,6 +24,7 @@ ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32425155"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Procédure pas à pas : créer un extrait de code
 Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suffit de créer un fichier XML, de le remplir avec les éléments appropriés et d’y ajouter votre code. Vous pouvez aussi ajouter des références et des paramètres de remplacement dans votre code. Vous pouvez ensuite ajouter l’extrait de code à votre installation Visual Studio avec le bouton **Importer** dans le **Gestionnaire des extraits de code** (**Outils** > **Gestionnaire des extraits de code**).

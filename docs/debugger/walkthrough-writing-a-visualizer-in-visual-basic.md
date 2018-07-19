@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Écriture d’un visualiseur en Visual Basic | Documents Microsoft'
+title: 'Procédure pas à pas : Écriture d’un visualiseur en Visual Basic | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70e1e42eee6003baabc0beec291795c6a1f74a1e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ba2be58b600a57fb405b55069df1c838019bfdab
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058696"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Procédure pas à pas : écriture d'un visualiseur en Visual Basic
 Cette procédure pas à pas explique comment écrire un visualiseur simple à l'aide de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Le visualiseur que permet de créer cette procédure pas à pas affiche le contenu d'une chaîne à l'aide d'un message Windows Forms. Ce visualiseur de chaîne simple est un exemple de base qui vous montre comment vous pouvez créer des visualiseurs pour d'autres types de données plus applicables à vos projets.  
@@ -36,7 +37,7 @@ Cette procédure pas à pas explique comment écrire un visualiseur simple à l'
   
 #### <a name="to-create-a-class-library-project"></a>Pour créer un projet Bibliothèque de classes  
   
-1.  Sur le **fichier** menu, choisissez **nouveau** et cliquez sur **nouveau projet**.  
+1.  Sur le **fichier** menu, choisissez **New** et cliquez sur **nouveau projet**.  
   
 2.  Dans le **nouveau projet** boîte de dialogue **Type de projet**s, cliquez sur **Visual Basic**.  
   
@@ -65,7 +66,7 @@ Cette procédure pas à pas explique comment écrire un visualiseur simple à l'
   
 6.  Dans DebuggerSide.vb, ajoutez l'instruction suivante aux instructions `Imports` :  
   
-    ```  
+    ```vb
     Imports Microsoft.VisualStudio.DebuggerVisualizers  
     ```  
   
@@ -76,13 +77,13 @@ Cette procédure pas à pas explique comment écrire un visualiseur simple à l'
   
 1.  Dans DebuggerSide.vb, allez à la ligne de code suivante :  
   
-    ```  
+    ```vb
     Public Class DebuggerSide  
     ```  
   
 2.  Modifiez le code pour qu'il se présente comme suit :  
   
-    ```  
+    ```vb
     Public Class DebuggerSide  
     Inherits DialogDebuggerVisualizer  
     ```  
@@ -93,7 +94,7 @@ Cette procédure pas à pas explique comment écrire un visualiseur simple à l'
   
 -   Dans `public class DebuggerSide`, ajoutez la méthode suivante :  
   
-    ```  
+    ```vb
     Protected Overrides Sub Show(ByVal windowService As Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService, ByVal objectProvider As Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider)  
   
         End Sub  
@@ -111,7 +112,7 @@ Cette procédure pas à pas explique comment écrire un visualiseur simple à l'
   
 4.  Dans DebuggerSide.cs, ajoutez l'instruction suivante aux instructions `Imports` :  
   
-    ```  
+    ```vb
     Imports System.Windows.Forms  
     ```  
   
@@ -122,13 +123,13 @@ Cette procédure pas à pas explique comment écrire un visualiseur simple à l'
   
 1.  Dans la méthode `Show`, ajoutez la ligne de code suivante :  
   
-    ```  
+    ```vb
     MessageBox.Show(objectProvider.GetObject().ToString())  
     ```  
   
      Cet exemple de code n'inclut pas la gestion des erreurs. Vous devez inclure la gestion des erreurs dans un véritable visualiseur ou tout autre type d'application.  
   
-2.  Sur le **générer** menu, cliquez sur **Build MyFirstVisualizer**. Le projet doit se générer avec succès. Corrigez toutes les erreurs de build avant de continuer.  
+2.  Sur le **Build** menu, cliquez sur **Build MyFirstVisualizer**. Le projet doit se générer avec succès. Corrigez toutes les erreurs de build avant de continuer.  
   
 ## <a name="add-the-necessary-attribute"></a>Ajouter l'attribut nécessaire  
  C'est la fin du code côté débogueur. Il existe toutefois une étape supplémentaire : ajouter l'attribut qui indique côté programme débogué la collection de classes qui compose le visualiseur.  
@@ -137,11 +138,11 @@ Cette procédure pas à pas explique comment écrire un visualiseur simple à l'
   
 1.  Ajoutez le code d'attribut suivant à DebuggerSide.vb, après les instructions `Imports`, mais avant `namespace MyFirstVisualizer` :  
   
-    ```  
+    ```vb
     <Assembly: System.Diagnostics.DebuggerVisualizer(GetType(MyFirstVisualizer.DebuggerSide), GetType(VisualizerObjectSource), Target:=GetType(System.String), Description:="My First Visualizer")>  
     ```  
   
-2.  Sur le **générer** menu, cliquez sur **Build MyFirstVisualizer**. Le projet doit se générer avec succès. Corrigez toutes les erreurs de build avant de continuer.  
+2.  Sur le **Build** menu, cliquez sur **Build MyFirstVisualizer**. Le projet doit se générer avec succès. Corrigez toutes les erreurs de build avant de continuer.  
   
 ## <a name="create-a-test-harness"></a>Créer un atelier de test  
  À ce stade, votre premier visualiseur est terminé. Si vous avez suivi les étapes correctement, vous devez être en mesure de générer le visualiseur et de l'installer dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Toutefois, avant d'installer un visualiseur dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous devez le tester pour vous assurer qu'il s'exécute correctement. À présent, vous devez créer un atelier de test pour exécuter le visualiseur sans l'installer dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
@@ -150,14 +151,14 @@ Cette procédure pas à pas explique comment écrire un visualiseur simple à l'
   
 1.  Ajoutez la méthode suivante à la classe `public DebuggerSide`:  
   
-    ```  
+    ```vb
     Shared Public Sub TestShowVisualizer(ByVal objectToVisualize As Object)  
         Dim visualizerHost As New VisualizerDevelopmentHost(objectToVisualize, GetType(DebuggerSide))  
     visualizerHost.ShowVisualizer()  
     End Sub  
     ```  
   
-2.  Sur le **générer** menu, cliquez sur **Build MyFirstVisualizer**. Le projet doit se générer avec succès. Corrigez toutes les erreurs de build avant de continuer.  
+2.  Sur le **Build** menu, cliquez sur **Build MyFirstVisualizer**. Le projet doit se générer avec succès. Corrigez toutes les erreurs de build avant de continuer.  
   
  Ensuite, vous devez créer un projet exécutable pour appeler la DLL du visualiseur. Par souci de simplicité, utilisez un projet d'application console.  
   
@@ -167,7 +168,7 @@ Cette procédure pas à pas explique comment écrire un visualiseur simple à l'
   
 2.  Dans le **ajouter un nouveau projet** boîte de dialogue le **modèles** , cliquez sur **Application Console**.  
   
-3.  Dans le **nom** , tapez un nom explicite pour l’application console, tel que **MyTestConsole**.  
+3.  Dans le **nom** , tapez un nom explicite pour l’application de console, tel que **MyTestConsole**.  
   
 4.  Cliquez sur **OK**.  
   
@@ -200,13 +201,13 @@ Cette procédure pas à pas explique comment écrire un visualiseur simple à l'
   
 3.  Dans TestConsole. vb, ajoutez le code suivant `Imports` instruction :  
   
-    ```  
+    ```vb
     Imports MyFirstVisualizer  
     ```  
   
 4.  Dans la méthode `Main`, ajoutez le code suivant :  
   
-    ```  
+    ```vb
     Dim myString As String = "Hello, World"  
     DebuggerSide.TestShowVisualizer(myString)  
     ```  
@@ -226,6 +227,6 @@ Cette procédure pas à pas explique comment écrire un visualiseur simple à l'
  Pour utiliser votre visualiseur dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] au lieu de simplement l'appeler de l'atelier de test, vous devez l'installer. Pour plus d’informations, consultez [Comment : installer un visualiseur](../debugger/how-to-install-a-visualizer.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Architecture du visualiseur](../debugger/visualizer-architecture.md)   
+ [Architecture d’un visualiseur](../debugger/visualizer-architecture.md)   
  [Comment : installer un visualiseur](../debugger/how-to-install-a-visualizer.md)   
  [Créer des visualiseurs personnalisés](../debugger/create-custom-visualizers-of-data.md)

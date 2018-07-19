@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Débogage d’erreurs dues à la trame de rendu | Documents Microsoft'
+title: 'Procédure pas à pas : Débogage d’erreurs dues à la trame de rendu | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8b03a8f88c5daa421a3d6a10870b8d66b209402
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 62e64634d968e391b0414b55a5220c97e181d456
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433410"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Procédure pas à pas : débogage des erreurs de rendus dues à la trame
-Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour examiner un objet dont la couleur n’est pas correcte à cause d’un problème de nuanceur.  
+Cette procédure pas à pas montre comment utiliser [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Graphics Diagnostics pour examiner un objet qui est de couleur incorrecte en raison d’un bogue de nuanceur.  
   
- Cette procédure pas à pas montre comment effectuer les opérations suivantes :  
+ Cette procédure pas à pas montre comment effectuer les opérations suivantes :  
   
 -   Examiner le document du journal de graphiques pour identifier les pixels qui indiquent le problème.  
   
@@ -30,7 +31,7 @@ Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!
 ## <a name="scenario"></a>Scénario  
  La coloration incorrecte des objets se produit le plus souvent quand un nuanceur de sommets passe des informations incorrectes ou incomplètes à un nuanceur de pixels.  
   
- Dans ce scénario, vous venez d’ajouter un objet à votre application, ainsi que de nouveaux nuanceurs de sommets et de pixels pour transformer l’objet et lui donner une apparence unique. Vous exécutez l’application pendant un test et vous constatez que l’objet est affiché dans une couleur noire unie. À l’aide de Graphics Diagnostics, vous capturez le problème dans un journal de graphisme pour déboguer l’application. Le problème se présente ainsi dans l'application :  
+ Dans ce scénario, vous avez ajouté récemment un objet à votre application. Également, vous avez ajouté un nouveau vertex et des nuanceurs de pixels pour transformer l’objet et de lui donner une apparence unique. Vous exécutez l’application pendant un test et vous constatez que l’objet est affiché dans une couleur noire unie. À l’aide de Graphics Diagnostics, vous capturez le problème dans un journal de graphisme pour déboguer l’application. Le problème se présente comme cette image dans l’application :  
   
  ![L’objet est rendu avec des couleurs incorrectes. ] (media/gfx_diag_demo_render_error_shader_problem.png "gfx_diag_demo_render_error_shader_problem")  
   
@@ -38,10 +39,10 @@ Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!
  À l'aide des outils Graphics Diagnostics, vous pouvez charger le document du journal de graphisme pour examiner les frames capturés pendant le test.  
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Pour examiner un frame dans un journal de graphiques  
+   
+1.  Dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], chargez un journal de graphisme qui a un frame qui montre le modèle manquant. Une nouvelle fenêtre de document de journal graphique s’affiche dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. La partie supérieure de cette fenêtre contient la sortie de la cible de rendu du frame sélectionné. La partie inférieure contient la **Liste de frames**, qui affiche chaque frame capturé sous forme de miniature.  
   
-1.  Dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], chargez un journal de graphiques qui contient un frame présentant le modèle manquant. Une nouvelle fenêtre de document du journal de graphiques s'affiche dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. La partie supérieure de cette fenêtre contient la sortie de la cible de rendu du frame sélectionné. La partie inférieure contient la **Liste de frames**, qui affiche chaque frame capturé sous forme de miniature.  
-  
-2.  Dans **Liste de frames**, sélectionnez un frame dans lequel l’objet n’a pas l’apparence correcte. La cible de rendu est mise à jour pour refléter le frame sélectionné. Dans ce scénario, la fenêtre de document du journal de graphiques se présente comme suit :  
+2.  Dans le **liste de frames**, sélectionnez un frame dans lequel l’objet ne possède pas l’apparence correcte. La cible de rendu est mise à jour pour refléter le frame sélectionné. Dans ce scénario, fenêtre document ressemble à cette image du journal des graphiques :  
   
      ![Document du journal des graphiques dans Visual Studio. ] (media/gfx_diag_demo_render_error_shader_step_1.png "gfx_diag_demo_render_error_shader_step_1")  
   
@@ -51,17 +52,17 @@ Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!
   
 1.  Ouvrez la fenêtre **Historique des pixels Graphics** . Dans la barre d’outils **Graphics Diagnostics** , choisissez **Historique des pixels**.  
   
-2.  Sélectionnez le pixel à examiner. Dans la fenêtre de document du journal de graphiques, sélectionnez un des pixels sur l'objet colorié de manière incorrecte :  
+2.  Sélectionnez le pixel à examiner. Dans la fenêtre de document journal de graphiques, sélectionnez un des pixels sur l’objet colorié de manière incorrecte :  
   
-     ![Sélection d’un pixel affiche des informations à propos de son historique. ] (media/gfx_diag_demo_render_error_shader_step_2.png "gfx_diag_demo_render_error_shader_step_2")  
+     ![Sélection d’un pixel affiche des informations sur son historique. ] (media/gfx_diag_demo_render_error_shader_step_2.png "gfx_diag_demo_render_error_shader_step_2")  
   
      La fenêtre **Historique des pixels Graphics** est actualisée pour afficher le pixel sélectionné. Dans ce scénario, la fenêtre **Historique des pixels Graphics** se présente comme suit :  
   
      ![L’historique des pixels affiche un événement DrawIndexed. ] (media/gfx_diag_demo_render_error_shader_step_3.png "gfx_diag_demo_render_error_shader_step_3")  
   
-     Notez que le résultat du nuanceur de pixels est noir entièrement opaque (0, 0, 0, 1) : **Fusion de sortie** a combiné cette couleur avec la couleur **Précédent** du pixel pour que le **Résultat** soit également noir entièrement opaque.  
+     Notez que le résultat du nuanceur de pixels est noir entièrement opaque (0, 0, 0, 1) et que le **fusion de sortie** combinés ce nuanceur de pixels avec la **précédent** couleur du pixel de manière qui le  **Résultat** soit également noir entièrement opaque.  
   
- Après avoir examiné un pixel de couleur incorrecte et constaté que la sortie du nuanceur de pixels n’est pas la couleur attendue, vous pouvez utiliser le débogueur HLSL pour examiner le nuanceur de pixels et déterminer la raison du problème de couleur de l’objet. Le débogueur HLSL vous permet d’examiner l’état des variables HLSL pendant l’exécution, d’exécuter pas à pas le code HLSL et de définir des points d’arrêt pour vous aider à diagnostiquer le problème.  
+ Après avoir examiné un pixel de couleur incorrecte et découvrir que la sortie du nuanceur de pixels n’est pas la couleur attendue, vous pouvez utiliser le débogueur HLSL pour examiner le nuanceur de pixels et de savoir ce qui est arrivé à la couleur de l’objet. Le débogueur HLSL vous permet d’examiner l’état des variables HLSL pendant l’exécution, d’exécuter pas à pas le code HLSL et de définir des points d’arrêt pour vous aider à diagnostiquer le problème.  
   
 #### <a name="to-examine-the-pixel-shader"></a>Pour examiner le nuanceur de pixels  
   
@@ -83,13 +84,13 @@ Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!
   
 2.  Recherchez la structure de sortie du nuanceur de sommets, qui correspond à l’entrée du nuanceur de pixels. Dans ce scénario, cette structure s’appelle `output`. Examinez le code du nuanceur de sommets et notez que le membre `color` de la structure `output` a été défini explicitement sur la couleur noire entièrement opaque, peut-être en raison des efforts de débogage d'un utilisateur.  
   
-3.  Vérifiez que le membre de couleur n'est jamais copié à partir de la structure d'entrée. Étant donné que la valeur de `output.color` est définie sur la couleur noire entièrement opaque juste avant que le `output` structure est retournée, il est judicieux de vous assurer que la valeur de `output` n’a pas été correctement initialisée sur une ligne précédente. Parcourez le code du nuanceur de sommets jusqu'à ce que vous atteigniez la ligne qui définit `output.color` sur Noir lorsque vous examinez la valeur de `output.color`. Notez que la valeur de `output.color` n'est pas initialisée tant qu'elle n'est pas définie sur Noir. Cela confirme que la ligne de code qui définit `output.color` sur Noir doit être modifiée, et non pas supprimée.  
+3.  Vérifiez que le membre de couleur n'est jamais copié à partir de la structure d'entrée. Étant donné que la valeur de `output.color` a la valeur noir entièrement opaque juste avant le `output` structure est retournée, il est judicieux de s’assurer que la valeur de `output` n’a pas été correctement initialisée sur une ligne précédente. Parcourez le code du nuanceur de sommets jusqu'à ce que vous atteigniez la ligne qui définit `output.color` sur Noir lorsque vous examinez la valeur de `output.color`. Notez que la valeur de `output.color` n'est pas initialisée tant qu'elle n'est pas définie sur Noir. Cela confirme que la ligne de code qui définit `output.color` sur Noir doit être modifiée, et non pas supprimée.  
   
      ![La valeur « Output.Color » est noir. ] (media/gfx_diag_demo_render_error_shader_step_7.png "gfx_diag_demo_render_error_shader_step_7")  
   
  Après avoir déterminé que le problème de rendu est lié au fait que le nuanceur de sommets ne fournit pas la couleur appropriée au nuanceur de pixels, vous pouvez utiliser ces informations pour résoudre le problème. Dans ce scénario, vous pouvez le résoudre en modifiant le code ci-après dans le nuanceur de sommets  
   
-```  
+```hlsl  
 output.color = float3(0.0f, 0.0f, 0.0f);  
 ```  
   
@@ -101,7 +102,7 @@ output.color = input.color;
   
  Ce code passe seulement la couleur des sommets de l’objet sans la modifier, mais il est possible que des nuanceurs de sommets plus complexes modifient la couleur avant de la passer. Le code du nuanceur de sommets corrigé doit ressembler à ceci :  
   
- ![Le code du nuanceur de sommets corrigé. ] (media/gfx_diag_demo_render_error_shader_step_8.png "gfx_diag_demo_render_error_shader_step_8")  
+ ![Le code de nuanceur de sommets corrigé. ] (media/gfx_diag_demo_render_error_shader_step_8.png "gfx_diag_demo_render_error_shader_step_8")  
   
  Après avoir corrigé le code, vous devez le régénérer, puis réexécuter l’application pour constater que le problème d’affichage est résolu.  
   

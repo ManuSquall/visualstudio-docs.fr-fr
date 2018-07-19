@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour créer un adaptateur de données de diagnostic dans Visual Studio | Microsoft Docs
+title: Guide pratique pour créer un adaptateur de données de diagnostic dans Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,14 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 22867cab68497afd54c2ffee30bb9ccc73e90862
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 923296a6eaed79edc345b9071d5e1d4e2ececefe
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844740"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Comment : créer un adaptateur de données de diagnostic
 
@@ -91,13 +93,13 @@ Pour créer un *adaptateur de données de diagnostic*, vous devez créer une bib
 
 5.  Ajoutez <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> à la classe de votre adaptateur de données de diagnostic pour l’identifier comme un adaptateur de données de diagnostic, en remplaçant **Company**, **Product** et **Version** par les informations appropriées pour votre adaptateur de données de diagnostic :
 
-    ```
+    ```csharp
     [DataCollectorTypeUri("datacollector://Company/Product/Version")]
     ```
 
 6.  Ajoutez l'attribut <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute> à la classe, en remplaçant les paramètres par les informations appropriées pour votre Adaptateur de données de diagnostic :
 
-    ```
+    ```csharp
     [DataCollectorFriendlyName("Collect Log Files", false)]
     ```
 

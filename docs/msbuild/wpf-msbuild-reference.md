@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567965"
 ---
 # <a name="wpf-msbuild-reference"></a>Référence MSBuild - WPF
 Windows Presentation Foundation (WPF) étend Microsoft Build Engine (MSBuild) avec une prise en charge de la génération supplémentaire, qui est décrite dans cette section.  

@@ -9,11 +9,12 @@ mescription: Learn how to manage your organization's Visual Studio subscriptions
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 22351b94923777d5eb1fe40cd2e43e9dc20f2449
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 41f594057051625acb6771ee9d66cad60b4508fd
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327390"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Utilisation du portail d’administration des abonnements Visual Studio
 
@@ -26,9 +27,9 @@ Quand vous utilisez le portail d’administration des abonnements Visual Studio,
 
 ## <a name="adminstrator-roles"></a>Rôles d’administrateur
 
-Dans le nouveau portail d’administration des abonnements Visual Studio, deux rôles sont disponibles pour les clients de licence en volume. Ces rôles s’apparentent au rôle Contact principal/Contact pour les notifications et au rôle Gestionnaire d’abonnements disponibles dans VLSC. 
+Dans le nouveau portail d’administration des abonnements Visual Studio, deux rôles sont disponibles pour les clients de licence en volume. Ces rôles s’apparentent au rôle Contact principal/Destinataire des avis et au rôle Gestionnaire d’abonnements disponibles dans VLSC. 
 
-**Super administrateurs** : à la création d’une organisation, le contact principal ou contact pour les notifications devient super administrateur par défaut. Le contact principal ou contact pour les notifications peut choisir d’assigner des super administrateurs ou administrateurs supplémentaires. Un super administrateur peut ajouter et supprimer d’autres administrateurs, ainsi que des abonnés. S’il y a plus de deux super administrateurs définis dans le système, un super administrateur peut en supprimer, mais il doit en garder au minimum deux pour des raisons de sécurité. 
+**Super administrateurs** : à la création d’une organisation, le contact principal ou destinataire des avis devient super administrateur par défaut. Le contact principal ou destinataire des avis peut choisir d’assigner des super administrateurs ou administrateurs supplémentaires. Un super administrateur peut ajouter et supprimer d’autres administrateurs, ainsi que des abonnés. S’il y a plus de deux super administrateurs définis dans le système, un super administrateur peut en supprimer, mais il doit en garder au minimum deux pour des raisons de sécurité. 
 
 **Administrateurs** : un administrateur peut uniquement être assigné par un super administrateur. Il peut gérer les abonnés dans les contrats que le super administrateur leur attribue. 
 
@@ -38,9 +39,9 @@ Si vous voulez utiliser le portail d’administration pour gérer les abonnement
 
 ### <a name="onboarding"></a>Intégration
 
-Quand votre organisation est prête à être intégrée au portail d’administration des abonnements Visual Studio, un e-mail est envoyé au contact principal et au contact pour les notifications pour les inviter à effectuer le processus d’intégration. Les étapes de l’intégration au nouveau portail sont décrites ci-dessous. Pour connaître la procédure pas à pas à suivre, regardez cette [vidéo sur l’intégration au portail d’administration](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting) ou consultez cet [article du support technique](https://support.microsoft.com/help/4013931/visual-studio-subscriptions-administrator-migration-process "Processus de migration vers le portail d’administration des abonnements Visual Studio").   
+Quand votre organisation est prête à être intégrée au portail d’administration des abonnements Visual Studio, un e-mail est envoyé au contact principal et au destinataire des avis pour les inviter à effectuer le processus d’intégration. Les étapes de l’intégration au nouveau portail sont décrites ci-dessous. Pour connaître la procédure pas à pas à suivre, regardez cette [vidéo sur l’intégration au portail d’administration](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting) ou consultez cet [article du support technique](https://support.microsoft.com/help/4013931/visual-studio-subscriptions-administrator-migration-process "Processus de migration vers le portail d’administration des abonnements Visual Studio").   
 1.  **Recherche de votre numéro de client public (PCN) et connexion :**
-    - Dans l’e-mail, le contact principal et le contact pour les notifications sont indiqués avec un lien unique et avec les trois derniers chiffres de leur numéro de client public (PCN). * 
+    - Dans l’e-mail, le contact principal et le destinataire des avis sont indiqués avec un lien unique et avec les trois derniers chiffres de leur numéro de client public (PCN). * 
     - Pour obtenir le PCN complet, le contact principal doit se connecter au centre VLSC (des instructions pour rechercher le PCN y sont fournies). 
     - Une fois qu’ils ont trouvé leur PCN, les contacts doivent sélectionner leur lien unique qui les invite à se connecter. Ils peuvent se connecter à l’aide d’un compte professionnel ou scolaire si votre organisation est sur AAD ou avec un compte Microsoft (MSA) si votre organisation n’est pas sur AAD. 
     - Ils doivent ensuite entrer leur PCN. 
@@ -50,7 +51,7 @@ Quand votre organisation est prête à être intégrée au portail d’administr
 > [!NOTE]
 > Si les contacts principaux ou les contacts pour les notifications reçoivent plusieurs e-mails, cela signifie qu’ils ont plusieurs numéros PCN. Ils doivent alors effectuer le processus en utilisant le lien unique correspondant au numéro PCN référencé dans chaque e-mail.*
 
-Si vous devez être ajouté au nouveau portail d’administration des abonnements Visual Studio, mais que vous ne savez pas qui est votre contact principal ou contact pour les notifications, connectez-vous à [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) pour rechercher cette information. Consultez la rubrique [Rechercher votre contact principal](/find-primary-contact/) pour savoir comment localiser votre contact principal ou votre contact pour les notifications dans le Centre VLSC.
+Si vous devez être ajouté au nouveau portail d’administration des abonnements Visual Studio, mais que vous ne savez pas qui est votre contact principal ou destinataire des avis, connectez-vous à [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) pour rechercher cette information. Consultez la rubrique [Rechercher votre contact principal](find-primary-contact.md) pour savoir comment localiser votre contact principal ou votre contact pour les notifications dans le Centre VLSC.
 Si vous avez déjà été configuré comme administrateur, vous pouvez accéder directement au [portail d’administration des abonnements Visual Studio](https://manage.visualstudio.com).
 
 ### <a name="understanding-the-subscribers-page"></a>Présentation de la page Abonnés
@@ -67,11 +68,9 @@ Une fois que vous avez attribué les abonnements, l’onglet Abonnés fournit de
 - Champ facultatif indiquant une adresse e-mail pour les communications différente de celle pour la connexion. 
 
 Sur le côté gauche de cette page, vous pouvez voir des informations supplémentaires sur le nombre de licences d’abonnement achetées, attribuées et encore disponibles dans votre organisation pour chaque contrat.
-
-   ![Page Abonnés dans le portail d’administration des abonnements Visual Studio](_img/using-admin-portal/subscribers-page.png)
+    ![Page Abonnés dans le portail d’administration des abonnements Visual Studio](_img/using-admin-portal/subscribers-page.png)
 
 ### <a name="understanding-the-details-page"></a>Présentation de la page Détails
 Pour obtenir plus d’informations sur le contrat affiché, sélectionnez l’onglet Détails. Cet onglet indique le statut du contrat, le compte d’achat, des détails sur l’organisation, les contacts principaux (VLSC), les super administrateurs (le cas échéant) et d’autres informations utiles.
-
-   ![Page Détails dans le portail d’administration des abonnements Visual Studio](_img/using-admin-portal/details-page.png)
+    ![Page Détails dans le portail d’administration des abonnements Visual Studio](_img/using-admin-portal/details-page.png)
 

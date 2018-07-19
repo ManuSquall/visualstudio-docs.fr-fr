@@ -9,20 +9,21 @@ description: Découvrez l’avantage Concierge Chat inclus dans les abonnements 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 65307a586ea9e9270a8af4a0e70c20d855238fad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7daaca8c9a98162a115453dcd28b0b598dbb67a7
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281873"
 ---
 # <a name="concierge-chat"></a>Concierge Chat
 
-Les services Concierge Chat vous aident à rechercher de la documentation technique et des informations sur les produits, ainsi qu’à tirer le meilleur parti des avantages de votre abonnement Visual Studio.  
+Les services Concierge Chat vous aident à rechercher de la documentation technique et des informations sur les produits, ainsi qu’à tirer le meilleur parti des avantages de votre abonnement Visual Studio.
 
-Le service est disponible 24h/24, 7j/7. Il est actuellement proposé en anglais uniquement (pour les questions autres que celles relatives aux comptes, à la facturation et aux abonnements). 
+Le service est disponible 24h/24, 7j/7. Il est actuellement proposé en anglais uniquement (pour les questions autres que celles relatives aux comptes, à la facturation et aux abonnements).
 
 ## <a name="activation-steps"></a>Étapes d’activation
-Vous pouvez obtenir facilement de l’aide à travers le service Concierge Chat.  
+Vous pouvez obtenir facilement de l’aide à travers le service Concierge Chat.
 1. Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Recherchez la vignette Concierge Chat dans la section Support de la page des avantages, puis cliquez sur **Démarrer une conversation**.
@@ -31,9 +32,9 @@ Vous pouvez obtenir facilement de l’aide à travers le service Concierge Chat.
 
 3. Cliquez sur **Continuer**.
 
-4. Une fenêtre de conversation s’ouvre et un compteur indique votre position dans la file d’attente.  
+4. Une fenêtre de conversation s’ouvre et un compteur indique votre position dans la file d’attente.
 
-5. La conversation démarre dès qu’un agent est disponible. 
+5. La conversation démarre dès qu’un agent est disponible.
 
     ![Session de Concierge Chat](_img/vs-concierge-chat/vs-concierge-chat-session.png)
 
@@ -49,16 +50,16 @@ Vous pouvez obtenir facilement de l’aide à travers le service Concierge Chat.
 
 <sup>1</sup> *Inclut : NFR (revente interdite), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark.  Exclut : FTE, MVP (Microsoft Valued Partner), RD (Region Director), MPN (Microsoft Partner Network), Imagine.*
 
-Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements. 
+Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
 ## <a name="frequently-asked-questions"></a>FAQ
 
 ### <a name="q--is-the-chat-service-available-in-multiple-languages"></a>Q : Le service de conversation est-il disponible dans plusieurs langues ?
-   R : L’assistance pour les questions relatives aux comptes, à la facturation et aux abonnements est disponible dans plusieurs langues.  L’assistance pour la recherche de documentation technique et d’informations sur les produits est uniquement disponible en anglais. 
-   
+   R : L’assistance pour les questions relatives aux comptes, à la facturation et aux abonnements est disponible dans plusieurs langues.  L’assistance pour la recherche de documentation technique et d’informations sur les produits est uniquement disponible en anglais.
+
 ## <a name="support-resources"></a>Ressources de support technique
--  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://www.visualstudio.com/subscriptions/support/) Visual Studio.
--  Vous avez des questions concernant l’IDE Visual Studio, Visual Studio Team Services ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://www.visualstudio.com/support/). 
+-  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+-  Vous avez des questions concernant l’IDE Visual Studio, Visual Studio Team Services ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Macros pour la création de rapports | Documents Microsoft
+title: Macros pour la création de rapports | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -24,23 +24,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd2dbb0651aa35243090fb554fa9142573e04e04
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 57b254323fac5d670cd44399cd8d22c9530c4510
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056600"
 ---
 # <a name="macros-for-reporting"></a>Macros pour la création de rapports
-Vous pouvez utiliser la **_RPTn**, et **_RPTFn** macros, définies dans CRTDBG. H, au lieu de l’utilisation de `printf` instructions pour le débogage. Ces macros disparaissent automatiquement dans votre version Release lorsque **_DEBUG** n’est pas défini, il est donc inutile de les placer entre **#ifdef**s.  
+Pour le débogage, vous pouvez utiliser la **_RPTn** et **_RPTFn** macros, définies dans CRTDBG. H, au lieu de l’utilisation de `printf` instructions. Vous n’avez pas besoin d’inclose dans **#ifdef**s, car elles disparaissent automatiquement dans votre version Release lorsque **_DEBUG** n’est pas définie.  
   
 |Macro|Description|  
 |-----------|-----------------|  
-|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Sort une chaîne de message et zéro à quatre arguments. Pour _RPT1 à **_RPT4**, la chaîne du message sert d’une chaîne mise en forme du style printf pour les arguments.|  
-|**_RPTF0**, **_RPTF1**, **, _RPTF2**, **_RPTF4**|Identique à **_RPTn**, mais ces macros génère également le fichier nom et numéro de ligne où se trouve la macro.|  
+|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Sort une chaîne de message et zéro à quatre arguments. Pour _RPT1 à **_RPT4**, la chaîne du message sert d’une chaîne de mise en forme printf-style pour les arguments.|  
+|**_RPTF0**, **_RPTF1**, **_RPTF2**, **_RPTF4**|Identique à **_RPTn**, mais ces macros également le fichier nom et numéro de ligne où se trouve la macro de sortie.|  
   
  Prenons l'exemple suivant :  
   
-```  
+```cpp
 #ifdef _DEBUG  
     if ( someVar > MAX_SOMEVAR )  
         printf( "OVERFLOW! In NameOfThisFunc( ),  
@@ -51,13 +52,13 @@ Vous pouvez utiliser la **_RPTn**, et **_RPTFn** macros, définies dans CRTDBG. 
   
  Ce code sort les valeurs de `someVar` et `otherVar` à **stdout**. Vous pouvez utiliser l'appel suivant à `_RPTF2` pour reporter ces mêmes valeurs et, en outre, le nom de fichier et le numéro de ligne:  
   
-```  
+```cpp
 if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d, otherVar= %d\n", someVar, otherVar );  
 ```  
   
- Si vous constatez qu’une application particulière nécessite des rapports de débogage que les macros distribuées avec la bibliothèque Runtime C ne fournissent pas, vous pouvez écrire une macro conçue spécialement pour répondre à vos besoins. Dans un des fichiers d’en-tête, par exemple, vous pouvez inclure du code semblable au suivant pour définir une macro intitulée **ALERT_IF2**:  
+Vous constaterez peut-être qu’une application particulière nécessite des rapports de débogage que les macros distribuées avec la bibliothèque Runtime C ne fournissent pas. Dans ce cas, vous pouvez écrire une macro conçue spécialement pour répondre à vos besoins. Dans un des fichiers d’en-tête, par exemple, vous pouvez inclure du code semblable au suivant pour définir une macro intitulée **ALERT_IF2**:  
   
-```  
+```cpp
 #ifndef _DEBUG                  /* For RELEASE builds */  
 #define  ALERT_IF2(expr, msg, arg1, arg2)  do {} while (0)  
 #else                           /* For DEBUG builds   */  
@@ -71,14 +72,14 @@ if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d,
 #endif  
 ```  
   
- Un appel à **ALERT_IF2** pourrait exécuter toutes les fonctions de la **printf** code au début de cette rubrique :  
+ Un seul appel à **ALERT_IF2** peut effectuer toutes les fonctions de la **printf** code :  
   
-```  
+```cpp
 ALERT_IF2(someVar > MAX_SOMEVAR, "OVERFLOW! In NameOfThisFunc( ),   
 someVar=%d, otherVar=%d.\n", someVar, otherVar );  
 ```  
   
- Étant donné que vous pouvez facilement modifier une macro personnalisée pour reporter une quantité d’informations plus ou moins grande vers différentes destinations (suivant ce qui est le plus pratique), cette approche peut se révéler particulièrement utile au fur et à mesure que vos besoins de débogage évoluent.  
+ Vous pouvez facilement modifier une macro personnalisée pour signaler plus ou moins d’informations vers différentes destinations. Cette approche est particulièrement utile dans la mesure que vos besoins de débogage évoluent.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Techniques de débogage CRT](../debugger/crt-debugging-techniques.md)

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135710"
 ---
 # <a name="intellisense-hosting"></a>Hébergement d’IntelliSense
 Visual Studio permet à IntelliSense d’hébergement. IntellSense hébergement vous permet de vous fournissez IntelliSense pour le code qui n’est pas hébergé par l’éditeur de texte Visual Studio.  

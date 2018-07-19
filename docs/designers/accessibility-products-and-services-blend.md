@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923903"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Services et produits d’accessibilité (Blend)
 Microsoft s’engage à faciliter l’utilisation de ses produits et services. Les sections suivantes fournissent des informations sur les fonctionnalités, produits et services qui améliorent l’accessibilité des personnes handicapées à Microsoft Windows :

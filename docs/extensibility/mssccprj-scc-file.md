@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139349"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. Fichier de contrôle de code source
 Lorsqu’une solution Visual Studio ou un projet est placé sous contrôle de code source à l’aide de l’IDE, l’IDE reçoit deux éléments d’information clés à partir du contrôle de source de plug-in sous la forme de chaînes. Ces chaînes, « AuxPath » et « NomProj », sont opaques à l’IDE, mais ils sont utilisés par le plug-in pour rechercher la solution ou le projet de contrôle de version. L’IDE obtienne généralement ces chaînes de la première fois en appelant le [SccGetProjPath](../extensibility/sccgetprojpath-function.md), et il puis les enregistre dans le fichier solution ou un projet pour les appels ultérieurs à la [SccOpenProject](../extensibility/sccopenproject-function.md). Lorsqu’il est incorporé dans les fichiers solution et projet, les chaînes « AuxPath » et « NomProj » pas sont mises à jour automatiquement lorsqu’un utilisateur crée une branche, de branches, ou copie les fichiers solution et projet qui se trouvent dans le contrôle de version. Pour vous assurer que les fichiers solution et projet pointent vers leur emplacement approprié dans le contrôle de version, les utilisateurs doivent mettre à jour manuellement les chaînes. Étant donné que les chaînes sont destinés à être opaque, il ne peut pas toujours être clair comment ils doivent être mis à jour.  

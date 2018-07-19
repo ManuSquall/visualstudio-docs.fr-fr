@@ -9,22 +9,23 @@ description: Inscrivez-vous pour recevoir l’abonnement MSDN Magazine inclus da
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 590cd180c8bdf5e2fcef4d16c84350bdc1d00273
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7139bbe46b931ce32ea521eab27e7a26f77652dc
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280305"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Avantage MSDN Magazine dans les abonnements Visual Studio
 
-MSDN Magazine est un magazine complet sur les technologies Microsoft qui fournit des solutions pratiques à des problèmes concrets.  Selon le niveau de votre abonnement, vous pouvez recevoir la version imprimée du magazine ou bénéficier d’un accès en avant-première à la version numérique.  
+MSDN Magazine est un magazine complet sur les technologies Microsoft qui fournit des solutions pratiques à des problèmes concrets.  Selon le niveau de votre abonnement, vous pouvez recevoir la version imprimée du magazine ou bénéficier d’un accès en avant-première à la version numérique.
 
 
 ## <a name="activation-steps"></a>Étapes d’activation
-Les étapes qui permettent d’activer votre avantage dépendent de l’édition que vous choisissez.  
+Les étapes qui permettent d’activer votre avantage dépendent de l’édition que vous choisissez.
 
 ### <a name="digital-edition"></a>Édition numérique
-L’édition numérique est à la disposition des membres Visual Studio Dev Essentials.  
+L’édition numérique est à la disposition des membres Visual Studio Dev Essentials.
 
 1.  Pour accéder à l’édition numérique de MSDN Magazine, connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2.  Recherchez la vignette MSDN Magazine dans la section Développement professionnel et cliquez sur **Accéder**.
@@ -36,7 +37,7 @@ L’édition numérique est à la disposition des membres Visual Studio Dev Esse
     ![Vignette de l’avantage MSDN Magazine](_img\vs-msdn\vs-msdn-tile.png)
 
 
-3.  Dans la page MSDN Magazine, choisissez votre type d’abonnement par défaut.  Vous pouvez choisir l’édition numérique qui est gratuite quel que soit le lieu où vous vivez.  La version imprimée est disponible gratuitement uniquement pour les résidents des États-Unis.  Des frais d’expédition s’appliquent pour les versions imprimées envoyées à des adresses en dehors des États-Unis.  
+3.  Dans la page MSDN Magazine, choisissez votre type d’abonnement par défaut.  Vous pouvez choisir l’édition numérique qui est gratuite quel que soit le lieu où vous vivez.  La version imprimée est disponible gratuitement uniquement pour les résidents des États-Unis.  Des frais d’expédition s’appliquent pour les versions imprimées envoyées à des adresses en dehors des États-Unis.
 
     ![Avantage MSDN Magazine, Abonnements](_img\vs-msdn\vs-msdn-subs-page-resized.png)
 
@@ -56,15 +57,15 @@ L’édition numérique est à la disposition des membres Visual Studio Dev Esse
 |Visual Studio Enterprise, Visual Studio Professional (cloud mensuel)   | Azure |Non disponible      |  NA         |
 |Visual Studio Dev Essentials| NA |Édition numérique       |  Oui|
 
-<sup>1</sup> *Édition imprimée : NFR (revente interdite), VSIP (Visual Studio Industry Partner), FTE, Microsoft Partner Network (Enterprise), Imagine (Premium).*  
+<sup>1</sup> *Édition imprimée : NFR (revente interdite), VSIP (Visual Studio Industry Partner), FTE, Microsoft Partner Network (Enterprise), Imagine (Premium).*
 
 *Édition numérique : MCT Software & Services, Microsoft Valued Partner (Professional), RD (Region Director).*
 
 *Exclut : Imagine (Standard), BizSpark, MCT Software & Services Developer*
 
 
-Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements. 
+Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
 ## <a name="support-resources"></a>Ressources de support technique
--  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://www.visualstudio.com/subscriptions/support/) Visual Studio.
--  Vous avez des questions concernant l’IDE Visual Studio, Visual Studio Team Services ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://www.visualstudio.com/support/). 
+-  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+-  Vous avez des questions concernant l’IDE Visual Studio, Visual Studio Team Services ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).

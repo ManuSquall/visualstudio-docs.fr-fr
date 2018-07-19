@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102679"
 ---
 # <a name="debugger-concepts"></a>Concepts du débogueur
 Pour générer sur le package de débogage de Visual Studio, vous devez être familiarisé avec les concepts d’architecture utilisées lors de la conception du package.  

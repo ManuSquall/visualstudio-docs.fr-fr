@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926550"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Ensemble de règles de règles de vérification étendue pour le code managé
 L’ensemble de règles de règles de vérification étendue Microsoft optimise les erreurs d’utilisation logique et de l’infrastructure qui sont signalés par l’analyse du code. L’accent sur les scénarios spécifiques tels que l’interopérabilité COM et des applications mobiles. Pensez à inclure cet ensemble de règles si un de ces scénarios s’applique à votre projet ou pour trouver d’autres problèmes dans votre projet.

@@ -1,5 +1,5 @@
 ---
-title: À l’aide de l’attribut DebuggerDisplay | Documents Microsoft
+title: À l’aide de l’attribut DebuggerDisplay | Microsoft Docs
 ms.custom: ''
 ms.date: 08/09/2017
 ms.technology: vs-ide-debug
@@ -14,14 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06a41f0843b33e1f73d9a2449fe954d8673350fc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8da672193dcbe12581122a48559c9027f01e77c9
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057581"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Utilisation de l’attribut DebuggerDisplay
-Le [DebuggerDisplayAttribute (classe)](/dotnet/api/system.diagnostics.debuggerdisplayattribute) contrôle la façon dont un objet, une propriété ou un champ s’affiche dans les fenêtres de variables du débogueur. Cet attribut peut être appliqué aux éléments suivants : types, délégués, propriétés, champs et assemblys.  
+Le [DebuggerDisplayAttribute Class](/dotnet/api/system.diagnostics.debuggerdisplayattribute) contrôle comment un objet, une propriété ou un champ s’affiche dans les fenêtres de variables du débogueur. Cet attribut peut être appliqué aux éléments suivants : types, délégués, propriétés, champs et assemblys.  
   
  L'attribut `DebuggerDisplay` possède un seul argument, qui est une chaîne à afficher dans la colonne valeur des instances du type. Cette chaîne peut contenir des accolades (`{` et `}`). Le texte entre deux accolades est évalué comme un champ, une propriété ou une méthode.  
   
@@ -34,7 +35,7 @@ Le [DebuggerDisplayAttribute (classe)](/dotnet/api/system.diagnostics.debuggerdi
   
  Le tableau suivant montre quelques-unes des utilisations possibles de l'attribut `DebuggerDisplay` et quelques exemples de sorties.  
   
-|Attribut|Sortie figurant dans la colonne de valeur|  
+|Attribut|Sortie apparaissant dans la colonne valeur|  
 |---------------|------------------------------------------------|  
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> Utilisé sur un type avec champs `x` et `y`.|`x = 5 y = 18`|  
 |`[DebuggerDisplay("String value is {getString()}")]`La syntaxe des paramètres peut varier d'un langage à l'autre. Par conséquent, soyez vigilant dans son emploi.|`String value is [5, 6, 6]`|  
@@ -50,7 +51,7 @@ Le [DebuggerDisplayAttribute (classe)](/dotnet/api/system.diagnostics.debuggerdi
   
  Pour générer autoexp.cs, ouvrez une Invite de commandes développeur pour VS2015, puis exécutez les commandes suivantes :  
   
-```  
+```cmd
 cd <directory containing autoexp.cs>  
 csc /t:library autoexp.cs  
 ```  
@@ -87,6 +88,7 @@ public sealed class MyClass
     }  
 }  
 ```  
+Le «, nq « suffixe indique à l’évaluateur d’expression à supprimer les guillemets lors de l’affichage de la valeur finale (nq = sans guillemets). 
   
 ## <a name="example"></a>Exemple  
  L'exemple de code suivant explique l'utilisation de `DebuggerDisplay`, ainsi que de `DebuggerBrowseable` et `DebuggerTypeProxy`. Lorsqu'il s'affiche dans une fenêtre de variables du débogueur, comme la fenêtre **Espion** , il produit une expansion de ce genre :  
@@ -175,7 +177,7 @@ class MyHashtable
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide d’attribut DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
+ [À l’aide de l’attribut DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
  [Créer des vues personnalisées d’objets gérés](../debugger/create-custom-views-of-dot-managed-objects.md)   
  [Spécificateurs de format en c#](../debugger/format-specifiers-in-csharp.md)   
  [Amélioration du débogage avec les attributs d’affichage de débogueur](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

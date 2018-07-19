@@ -19,6 +19,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33956843"
 ---
 # <a name="how-to-export-class-diagrams-as-images"></a>Guide pratique pour exporter des diagrammes de classes comme images
 

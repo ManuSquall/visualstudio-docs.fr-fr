@@ -1,5 +1,5 @@
 ---
-title: '&lt;assemblyIdentity&gt; élément (déploiement ClickOnce) | Documents Microsoft'
+title: '&lt;assemblyIdentity&gt; , élément (Application ClickOnce) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,18 +18,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1bea363e9d0a3880fbbaa34bb4af4fec88149c2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 89b54c52625578b6ba1f7859654804fa1caaad32
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081268"
 ---
-# <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity&gt; élément (déploiement ClickOnce)
+# <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;assemblyIdentity&gt; , élément (application ClickOnce)
 Identifie l’application déployée dans un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml
   
       <assemblyIdentity   
    name  
@@ -41,14 +42,14 @@ Identifie l’application déployée dans un [!INCLUDE[ndptecclick](../deploymen
 ```  
   
 ## <a name="elements-and-attributes"></a>Éléments et attributs  
- Le `assemblyIdentity` élément est requis. Il ne contienne aucun élément enfant et possède les attributs suivants.  
+ Le `assemblyIdentity` élément est requis. Il ne contient aucun élément enfant et a les attributs suivants.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
 |`Name`|Obligatoire. Identifie le nom de l’application.<br /><br /> Si `Name` contient des caractères spéciaux, tels que des guillemets simples ou doubles, l’application peut échouer à activer.|  
 |`Version`|Obligatoire. Spécifie le numéro de version de l’application dans le format suivant : `major.minor.build.revision`|  
-|`publicKeyToken`|Facultatif. Spécifie une chaîne hexadécimale de 16 caractères qui représente les 8 derniers octets de la `SHA-1` la valeur de la clé publique sous laquelle l’application ou l’assembly est signé de hachage. La clé publique qui est utilisée pour signer le catalogue doit être de 2 048 bits ou supérieur.<br /><br /> Bien que la signature d’un assembly est recommandée mais facultatif, cet attribut est obligatoire. Si un assembly n’est pas signé, vous devez copier une valeur à partir d’un assembly auto-signé ou utiliser une valeur « factice » de tous les zéros.|  
-|`processorArchitecture`|Obligatoire. Spécifie le processeur. Les valeurs valides sont `msil` pour tous les processeurs, `x86` pour Windows 32 bits, `IA64` pour Windows 64 bits, et `Itanium` pour les processeurs Intel 64 bits Itanium.|  
+|`publicKeyToken`|Facultatif. Spécifie une chaîne hexadécimale de 16 caractères qui représente les 8 derniers octets de la `SHA-1` la valeur de la clé publique sous laquelle est signé l’application ou un assembly de hachage. La clé publique qui est utilisée pour signer le catalogue doit être de 2 048 bits ou supérieur.<br /><br /> Bien que la signature d’un assembly est recommandé mais facultatif, cet attribut est requis. Si un assembly n’est pas signé, vous devez copier une valeur à partir d’un assembly auto-signé ou utiliser une valeur « factice » de tous les zéros non significatifs.|  
+|`processorArchitecture`|Obligatoire. Spécifie le processeur. Les valeurs valides sont `msil` pour tous les processeurs, `x86` pour Windows 32 bits, `IA64` pour Windows 64 bits, et `Itanium` pour les processeurs Itanium d’Intel 64 bits.|  
 |`language`|Obligatoire. Identifie les codes de langue de deux parties (par exemple, `en-US`) de l’assembly. Cet élément est dans le `asmv2` espace de noms. Si non spécifié, la valeur par défaut est `neutral`.|  
   
 ## <a name="examples"></a>Exemples  
@@ -58,7 +59,7 @@ Identifie l’application déployée dans un [!INCLUDE[ndptecclick](../deploymen
   
 ### <a name="code"></a>Code  
   
-```  
+```xml  
 <asmv1:assemblyIdentity   
   name="My Application Deployment.exe"   
   version="1.0.0.0"   
@@ -69,5 +70,5 @@ Identifie l’application déployée dans un [!INCLUDE[ndptecclick](../deploymen
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Manifeste d’Application ClickOnce](../deployment/clickonce-application-manifest.md)   
+ [Manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md)   
  [\<assemblyIdentity > élément](../deployment/assemblyidentity-element-clickonce-deployment.md)

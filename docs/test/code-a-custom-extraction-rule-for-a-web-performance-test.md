@@ -1,5 +1,5 @@
 ---
-title: Codage d’une règle d’extraction personnalisée pour un test de performances web dans Visual Studio | Microsoft Docs
+title: Codage d’une règle d’extraction personnalisée pour un test de performances web dans Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,14 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 748b1f726a74fd0af1545a5bdb9c620b1ffb2a4d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 02fd481455c5198a1d8ae0828072f8085d1d027a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
+ms.locfileid: "31966158"
 ---
 # <a name="coding-a-custom-extraction-rule-for-a-web-performance-test"></a>Codage d'une règle d'extraction personnalisée pour un test de performances de site Web
 

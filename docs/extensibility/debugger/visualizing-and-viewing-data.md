@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132480"
 ---
 # <a name="visualizing-and-viewing-data"></a>Visualisation et l’affichage des données
 Visualiseurs de types et les visionneuses personnalisées présentent les données de façon significative rapidement à un développeur. L’évaluateur d’expression (EE) peut prendre en charge les visualiseurs de types de tiers ainsi que fournir ses propres visionneuses personnalisées.  

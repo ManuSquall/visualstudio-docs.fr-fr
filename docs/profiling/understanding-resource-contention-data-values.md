@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdc41ee4c3c9f53d45245c6c305d7f8e221757f4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c06722e9270269ca674370d5bf8b1925d850ce00
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34477403"
 ---
-# <a name="understanding-resource-contention-data-values"></a>Fonctionnement des valeurs de données de conflit de ressources
+# <a name="understand-resource-contention-data-values"></a>Comprendre le fonctionnement des valeurs de données de contention de ressources
 
 Le profilage de conflit de ressources collecte les informations détaillées de la pile des appels chaque fois que des threads en concurrence dans une application sont forcés d’attendre pour accéder à une ressource partagée.
 
@@ -30,8 +31,8 @@ Les rapports de conflit de ressources affichent le nombre total de conflits et l
 
 Les vues du rapport de conflit de ressources incluent également des graphiques chronologiques qui montrent les événements de conflit individuels au fil du temps et affichent les piles d’appels qui ont créé l’événement particulier. Pour plus d'informations, consultez l'une des rubriques suivantes :
 
-- [Détails relatifs au thread, vue](../profiling/thread-details-view-contention-data.md)
+- [Informations relatives au thread, vue](../profiling/thread-details-view-contention-data.md)
 
-- [Informations sur les ressources, vue](../profiling/resource-details-view-contention-data.md)
+- [Informations relatives à la ressource, vue](../profiling/resource-details-view-contention-data.md)
 
 Pour plus d’informations sur le deuxième mode de profilage d’accès concurrentiel, consultez [Visualiseur concurrentiel](../profiling/concurrency-visualizer.md).

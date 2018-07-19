@@ -6,11 +6,12 @@ ms.author: amburns
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 0523c418c5361bfdda6f56bc7845989ed0fdaa8c
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 416d82b7325ffa4a9952630e4c1ca9b5fbc7834e
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280492"
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Configurer et installer Visual Studio pour Mac
 
@@ -26,7 +27,7 @@ Pour travailler avec iOS dans Visual Studio, vous avez besoin des éléments sui
 
 ## <a name="install"></a>Installez
 
-1. Télécharger Visual Studio pour Mac à partir de [https://www.visualstudio.com/](https://www.visualstudio.com/)
+1. Télécharger Visual Studio pour Mac à partir de [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/)
 
 2. Une fois le package d’installation téléchargé, cliquez sur le fichier **VisualStudioInstaller.dmg** pour monter le programme d’installation puis exécutez-le en double-cliquant sur le logo, comme illustré dans l’image suivante :
 
@@ -83,7 +84,7 @@ Pour travailler avec iOS dans Visual Studio, vous avez besoin des éléments sui
   ![Ouvrir Visual Studio](media/installer-image11.png)
 
 > [!NOTE]
-Si vous avez choisi pas installer un outil ou une plateforme lors de l’installation d’origine (en la désélectionnant à l’étape 6), vous devez réexécuter le [programme d’installation](https://www.visualstudio.com/vs/) si vous voulez ajouter les composants plus tard.
+Si vous avez choisi pas installer un outil ou une plateforme lors de l’installation d’origine (en la désélectionnant à l’étape 6), vous devez réexécuter le [programme d’installation](https://visualstudio.microsoft.com/vs/) si vous voulez ajouter les composants plus tard.
 
 
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Installer Visual Studio pour Mac derrière un pare-feu ou un serveur proxy

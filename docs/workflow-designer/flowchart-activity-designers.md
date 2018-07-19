@@ -1,5 +1,5 @@
 ---
-title: Concepteur de flux de travail - concepteurs d’activités Flowchart
+title: Concepteur de flux de travail - concepteurs d’activité d’organigramme
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -10,15 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb6294b2e2392c81e20c984972ec875c589a7167
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ef7fc3e956c6b31b1df8346e9b347ca3e094d878
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755718"
 ---
 # <a name="flowchart-activity-designers"></a>Concepteurs d'activités d'organigramme
 
-Concepteur de flux de travail Windows inclut plusieurs activités fournies par le système que vous pouvez utiliser lors de la construction de vos workflows. Cette section contient les activités fournies par le système utilisées pour gérer des organigrammes dans un workflow. Les rubriques suivantes décrivent ces activités et fournissent des conseils sur la façon de les utiliser.
+Concepteur de workflow inclut un nombre d’activités fournies par le système que vous pouvez utiliser lors de la construction de vos flux de travail. Cette section contient les activités fournies par le système utilisées pour gérer des organigrammes dans un workflow. Les rubriques suivantes décrivent ces activités et fournissent des conseils sur la façon de les utiliser.
 
 ## <a name="reference"></a>Référence
  <xref:System.Activities.Activity>

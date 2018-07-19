@@ -1,5 +1,5 @@
 ---
-title: Débogage de projets DLL | Documents Microsoft
+title: Débogage de projets DLL | Microsoft Docs
 ms.custom: ''
 ms.date: 05/23/2017
 ms.technology: vs-ide-debug
@@ -20,11 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c5da503dd3eb1aec83c5f1fdef58261960d66d7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d5118aafae296d839ad182d51b996da11a6bc556
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057396"
 ---
 # <a name="debugging-dll-projects-from-visual-studio"></a>Débogage de projets DLL à partir de Visual Studio
 Les modèles Visual Studio suivants créent des DLL :  
@@ -45,7 +46,7 @@ Les modèles Visual Studio suivants créent des DLL :
  Pour que le débogueur s'attache au code écrit en C++, le code doit émettre `DebuggableAttribute`. Vous pouvez ajouter cela automatiquement à votre code grâce à la liaison, à l'aide de l'option [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) .  
   
 ##  <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Mixed-Mode debugging  
- L'application appelante qui appelle votre DLL peut être écrite en code managé ou natif. Si votre DLL managée est appelée par du code natif et que vous souhaitez déboguer les deux types de code, vous devez activer les débogueurs managés et natifs. Vous pouvez sélectionner ceci dans le  **\<projet > Pages de propriétés** boîte de dialogue ou fenêtre. Tout dépend si vous avez démarré le débogage à partir du projet DLL ou du projet de l'application appelante. Pour plus d'informations, consultez [How to: Debug in Mixed Mode](../debugger/how-to-debug-in-mixed-mode.md).  
+ L'application appelante qui appelle votre DLL peut être écrite en code managé ou natif. Si votre DLL managée est appelée par du code natif et que vous souhaitez déboguer les deux types de code, vous devez activer les débogueurs managés et natifs. Vous pouvez sélectionner ceci dans le  **\<projet > Pages de propriétés** boîte de dialogue ou la fenêtre. Tout dépend si vous avez démarré le débogage à partir du projet DLL ou du projet de l'application appelante. Pour plus d'informations, consultez [How to: Debug in Mixed Mode](../debugger/how-to-debug-in-mixed-mode.md).  
   
 ##  <a name="vxtskdebuggingdllprojectschangingdefaultconfigurations"></a> Changing default configurations  
  Lorsque vous créez un projet d'application console à l'aide du modèle de projet, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] crée automatiquement les paramètres requis pour les configurations Debug et Release. Si nécessaire, vous pouvez modifier ces paramètres. Pour plus d’informations, consultez [paramètres de projet pour une Configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md), [des paramètres de projet pour les Configurations Debug c#](../debugger/project-settings-for-csharp-debug-configurations.md), [paramètres de projet pour une Configuration Debug Visual Basic ](../debugger/project-settings-for-a-visual-basic-debug-configuration.md), et [Comment : jeu de Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md).  
@@ -81,7 +82,7 @@ Avant de commencer le débogage de l'application appelante, vous devez général
   
 2.  Pour tester une méthode appelée `Test` dans une classe `Class1`, instanciez un objet de type `Class1` en tapant le code C# suivant dans la fenêtre Exécution. Ce code managé fonctionne pour Visual Basic et C++, avec les modifications de syntaxe appropriées :  
   
-    ```  
+    ```cpp
     Class1 obj = new Class1();  
     ```  
   
@@ -89,7 +90,7 @@ Avant de commencer le débogage de l'application appelante, vous devez général
   
 3.  En supposant que `Test` nécessite un paramètre `int` , évaluez `Test` à l'aide de la fenêtre **Exécution** :  
   
-    ```  
+    ```cpp
     ?obj.Test(10)  
     ```  
   
@@ -97,7 +98,7 @@ Avant de commencer le débogage de l'application appelante, vous devez général
   
 4.  Vous pouvez continuer à déboguer `Test` en y insérant un point d'arrêt, puis en réévaluant la fonction :  
   
-    ```  
+    ```cpp
     ?obj.Test(10);  
     ```  
   
@@ -105,23 +106,23 @@ Avant de commencer le débogage de l'application appelante, vous devez général
 
 ## <a name="vxtskdebuggingdllprojectsexternal"></a> Déboguer une DLL externe à partir d’un projet C++
 
-Si vous déboguez une DLL externe à votre projet, les fonctionnalités de débogage (par exemple, le parcours du code) dépend du [configuration debug de la DLL](#vxtskdebuggingdllprojectsbuildingadebugversion) lorsqu’elle a été créée et si le [le fichier .pdb](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) et autres fichiers requis pour la DLL sont disponibles.
+Si vous déboguez une DLL externe à votre projet, les fonctionnalités de débogage disponibles (par exemple, le parcours du code) dépend de la [configuration debug de la DLL](#vxtskdebuggingdllprojectsbuildingadebugversion) lorsqu’il a été créé et si le [fichier .pdb](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) et autres fichiers requis pour la DLL sont disponibles.
 
-Votre projet doit être en mesure de trouver la DLL et le fichier .pdb utilisé pour le débogage. Vous pouvez créer une tâche de génération personnalisée pour copier ces fichiers dans le  **\<dossier du projet > \Debug** dossier de sortie, ou vous pouvez copier les fichiers dans le dossier de sortie manuellement.
+Votre projet doit être en mesure de trouver la DLL et le fichier .pdb utilisé pour le débogage. Vous pouvez créer une tâche de génération personnalisée pour copier ces fichiers à la  **\<dossier du projet > \Debug** dossier de sortie, ou vous pouvez copier les fichiers dans le dossier de sortie manuellement.
 
-Vous pouvez facilement définir les emplacements des fichiers d’en-tête et fichiers de *.lib dans les Pages de propriétés (avec le bouton droit au projet C++ et choisissez **afficher les propriétés**, puis choisissez **toutes les Configurations**) sans avoir à copier les dans votre dossier de sortie :
+Vous pouvez facilement définir des emplacements de fichiers d’en-tête et fichiers de *.lib dans les Pages de propriétés (cliquez sur le projet C++ et choisissez **afficher les propriétés**, puis choisissez **toutes les Configurations**) sans avoir à copier les dans votre dossier de sortie :
 
-- Le dossier C/C++ (catégorie Général) - spécifiez le dossier contenant les fichiers d’en-tête dans le **autres répertoires Include** champ.
-- Le dossier de l’éditeur de liens (catégorie Général) - spécifiez le dossier contenant le fichier .lib dans le **répertoires de bibliothèques supplémentaires** champ. 
-- Le dossier de l’éditeur de liens (catégorie d’entrée) - spécifier le chemin d’accès complet et le nom de fichier pour le fichier .lib dans le **dépendances supplémentaires** champ.
+- Dossier C/C++ (catégorie Général) - spécifiez le dossier contenant les fichiers d’en-tête dans le **autres répertoires Include** champ.
+- Dossier de l’éditeur de liens (catégorie Général) - spécifiez le dossier contenant le fichier .lib dans les **répertoires de bibliothèques supplémentaires** champ. 
+- Dossier de l’éditeur de liens (catégorie d’entrée) : spécifiez le chemin d’accès complet et le nom du fichier .lib dans les **dépendances supplémentaires** champ.
 
 Lors de la configuration est correcte, vous pouvez déboguer en début de l’exécution à partir de la **déboguer** menu.
 
-Pour plus d’informations sur les paramètres de projet, consultez [Pages de propriétés (Visual C++)](/cpp/ide/property-pages-visual-cpp).
+Pour plus d’informations sur les paramètres du projet, consultez [Pages de propriétés (Visual C++)](/cpp/ide/property-pages-visual-cpp).
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage du code managé](../debugger/debugging-managed-code.md)   
- [Types de projet Visual C++](../debugger/debugging-preparation-visual-cpp-project-types.md)   
+ [Types de projets Visual C++](../debugger/debugging-preparation-visual-cpp-project-types.md)   
  [Types de projets C#, F# et Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [Paramètres de projet pour une Configuration de débogage C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Paramètres de projet pour des configurations Debug C#](../debugger/project-settings-for-csharp-debug-configurations.md)   

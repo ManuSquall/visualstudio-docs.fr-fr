@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141511"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Mot, compléter dans un Service de langage hérité
 Mot, compléter renseigne les caractères manquants sur un mot partiel tapé. S’il n'existe qu’une seule exécution possible, le mot est terminé lorsque le caractère de fin est entré. Si le mot partiel correspond à plusieurs possibilités, une liste de réalisations possibles s’affiche. Un caractère de terminaison peut être n’importe quel caractère qui n’est pas utilisé pour les identificateurs.  

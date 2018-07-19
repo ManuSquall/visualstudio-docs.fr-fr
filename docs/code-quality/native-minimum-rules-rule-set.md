@@ -10,14 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d037c06be1f0eb7acb3bad1c995679edab03730
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c4f4417651ca574bc7de3014cc96d7089df23085
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945804"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Ensemble de règles des règles minimales natives
-Les règles minimales natives de Microsoft vous concentrer sur les problèmes les plus critiques dans votre code natif, notamment les failles de sécurité potentielles et les blocages d’application. Vous devez inclure cet ensemble de règles dans tout ensemble de règles personnalisé que vous créez pour vos projets natifs.
+Les règles minimales natives de Microsoft vous concentrer sur les problèmes les plus critiques présents dans votre code natif, notamment les failles de sécurité potentielles et les blocages d’application. Vous devez inclure cet ensemble de règles dans tout ensemble de règles personnalisé que vous créez pour vos projets natifs.
 
 |Règle|Description|
 |----------|-----------------|
@@ -84,13 +85,13 @@ Les règles minimales natives de Microsoft vous concentrer sur les problèmes le
 |[C28182](../code-quality/c28182.md)|Déréférencement du pointeur NULL. Le pointeur contient la même valeur NULL qu'un autre pointeur.|
 |[C28202](../code-quality/c28202.md)|Référence non autorisée à un membre non statique|
 |[C28203](../code-quality/c28203.md)|Référence ambiguë à un membre de classe.|
-|[C28205](../code-quality/c28205.md)|_Success\_ ou _On_failure\_ utilisé dans un contexte non autorisé|
+|[C28205](../code-quality/c28205.md)|\_Réussite\_ ou \_sur\_échec\_ utilisé dans un contexte non autorisé|
 |[C28206](../code-quality/c28206.md)|L’opérande de gauche pointe vers un struct, utiliser '->'|
 |[C28207](../code-quality/c28207.md)|L’opérande de gauche est un struct, utiliser '.'|
 |[C28210](../code-quality/c28210.md)|Les annotations pour le contexte __on_failure ne doivent pas se trouver dans un contexte préalable explicite|
 |[C28211](../code-quality/c28211.md)|Nom du contexte statique attendu pour SAL_context|
 |[C28212](../code-quality/c28212.md)|Expression de pointeur attendue pour l'annotation|
-|[C28213](../code-quality/c28213.md)|L’annotation _Use_decl_annotations\_ doit être utilisée pour référencer, sans modification, une déclaration antérieure.|
+|[C28213](../code-quality/c28213.md)|Le \_utilisation\_decl\_annotations\_ annotation doit être utilisée pour référencer, sans modification, une déclaration antérieure.|
 |[C28214](../code-quality/c28214.md)|Les noms des paramètres d'attribut doivent être p1...p9|
 |[C28215](../code-quality/c28215.md)|Le typefix ne peut pas être appliqué à un paramètre qui contient déjà un typefix|
 |[C28216](../code-quality/c28216.md)|L'annotation checkReturn ne s'applique qu'aux post-conditions pour le paramètre de fonction spécifique.|
@@ -132,22 +133,22 @@ Les règles minimales natives de Microsoft vous concentrer sur les problèmes le
 |[C28267](../code-quality/c28267.md)|Une erreur de syntaxe dans les annotations a été trouvée pour l'annotation dans la fonction.|
 |[C28272](../code-quality/c28272.md)|L'annotation pour la fonction, paramètre pendant la vérification est incohérente avec la déclaration de fonction|
 |[C28273](../code-quality/c28273.md)|Pour la fonction, les indices sont incohérents avec la déclaration de fonction|
-|[C28275](../code-quality/c28275.md)|Le paramètre de _Macro_value\_ a une valeur null|
+|[C28275](../code-quality/c28275.md)|Le paramètre \_Macro\_valeur\_ a la valeur null|
 |[C28279](../code-quality/c28279.md)|Pour le symbole, un 'begin' a été trouvé sans le 'end' correspondant|
 |[C28280](../code-quality/c28280.md)|Pour le symbole, un 'end' a été trouvé sans le 'begin' correspondant|
 |[C28282](../code-quality/c28282.md)|Les chaînes de format doivent être comprises dans des conditions préalables|
 |[C28285](../code-quality/c28285.md)|Pour la fonction, erreur de syntaxe dans le paramètre|
 |[C28286](../code-quality/c28286.md)|Pour la fonction, erreur de syntaxe près de la fin|
-|[C28287](../code-quality/c28287.md)|Pour la fonction, erreur de syntaxe dans l’annotation _At\_() (nom de paramètre non reconnu)|
-|[C28288](../code-quality/c28288.md)|Pour la fonction, erreur de syntaxe dans l’annotation _At\_() (nom de paramètre non valide)|
+|[C28287](../code-quality/c28287.md)|Pour la fonction, erreur de syntaxe dans \_à\_() annotation (nom de paramètre non reconnu)|
+|[C28288](../code-quality/c28288.md)|Pour la fonction, erreur de syntaxe dans \_à\_() annotation (nom de paramètre non valide)|
 |[C28289](../code-quality/c28289.md)|Pour la fonction : ReadableTo ou WritableTo n'a pas eu de spécification de limites en tant que paramètre|
 |[C28290](../code-quality/c28290.md)|l'annotation pour la fonction contient plus d'Externals que le nombre réel de paramètres|
 |[C28291](../code-quality/c28291.md)|post null/notnull au niveau 0 deref n'a pas de sens pour la fonction.|
 |[C28300](../code-quality/c28300.md)|Opérandes d’expression de types incompatibles pour l’opérateur|
 |[C28301](../code-quality/c28301.md)|Aucune annotation pour la première déclaration de la fonction.|
-|[C28302](../code-quality/c28302.md)|Un opérateur extra _Deref\_ a été trouvé dans une annotation.|
-|[C28303](../code-quality/c28303.md)|Un opérateur ambigu _Deref\_ a été trouvé dans une annotation.|
-|[C28304](../code-quality/c28304.md)|Un opérateur _Notref\_ placé de manière incorrecte et appliqué à un jeton a été trouvé.|
+|[C28302](../code-quality/c28302.md)|Un supplémentaire \_Deref\_ opérateur a été trouvé dans une annotation.|
+|[C28303](../code-quality/c28303.md)|Un ambigu \_Deref\_ opérateur a été trouvé dans une annotation.|
+|[C28304](../code-quality/c28304.md)|Un placé \_Notref\_ opérateur appliqué à un jeton a été trouvé.|
 |[C28305](../code-quality/c28305.md)|Une erreur a été détectée pendant l'analyse d'un jeton.|
 |[C28350](../code-quality/c28350.md)|L'annotation décrit une situation qui n'est pas applicable de manière conditionnelle.|
 |[C28351](../code-quality/c28351.md)|L'annotation décrit l'emplacement auquel une valeur dynamique (une variable) ne peut pas être utilisée dans la condition.|

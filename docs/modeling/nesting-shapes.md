@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945569"
 ---
 # <a name="nesting-shapes"></a>Imbrication de formes
 Consultez [blog de Jean-Marc Prieur](http://blogs.msdn.com/b/jmprieur/archive/2008/09/03/dsl-tools-support-of-nested-shapes-in-visual-studio-2008-sp1.aspx)

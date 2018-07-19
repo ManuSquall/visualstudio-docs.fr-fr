@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134091"
 ---
 # <a name="running-document-table"></a>Table de Document en cours d’exécution
 L’IDE gère la liste de tous les documents actuellement ouverts dans une structure interne appelée table de document en cours d’exécution (r & DT). Cette liste inclut tous les documents ouverts dans la mémoire, indépendamment de si ces documents sont actuellement en cours de modification. Un document est n’importe quel élément est rendu persistant, y compris les fichiers dans un projet ou le fichier projet principal (par exemple, un fichier .vcxproj).  

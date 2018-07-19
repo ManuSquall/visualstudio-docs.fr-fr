@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : Le débogage n’est pas&#39;t Possible car un débogueur du noyau est activé sur le système | Documents Microsoft'
+title: 'Erreur : Le débogage n’est pas&#39;t Possible car un débogueur du noyau est activé sur le système | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,16 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba943057da003a0fafee6d6fb8c6082d228779f9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 75e1628f461c813e07634838f57c0335bdf6a1b5
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058722"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>Erreur : Le débogage n’est pas&#39;t Possible car un débogueur du noyau est activé sur le système
 Lorsque vous déboguez du code managé, le message d'erreur suivant peut s'afficher :  
   
-```  
+```cmd
 Debugging isn't possible because a kernel debugger is enabled on the system  
 ```  
   
@@ -59,7 +60,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 -   À l'invite de commandes, tapez :  
   
-    ```  
+    ```cmd
     Kdbgctrl.exe -d  
     ```  
   
@@ -67,7 +68,7 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 1.  À l'invite de commandes, tapez :  
   
-    ```  
+    ```cmd
     bcdedit /debug off   
     ```  
   
@@ -75,15 +76,15 @@ Debugging isn't possible because a kernel debugger is enabled on the system
   
 #### <a name="to-disable-kernel-debugging-for-all-sessions-other-windows-operating-systems"></a>Pour désactiver le débogage du noyau pour toutes les sessions (systèmes d'exploitation autres que Windows)  
   
-1.  Recherchez le fichier boot.ini sur votre lecteur système (généralement c :)\\). Le fichier boot.ini peut être masqué et en lecture seule. Par conséquent, vous devez utiliser la commande suivante pour l'afficher :  
+1.  Recherchez le fichier boot.ini sur votre lecteur système (généralement C:\\). Le fichier boot.ini peut être masqué et en lecture seule. Par conséquent, vous devez utiliser la commande suivante pour l'afficher :  
   
-    ```  
+    ```cmd
     dir /ASH  
     ```  
   
 2.  Ouvrez boot.ini en utilisant le Bloc-notes et supprimez les options suivantes :  
   
-    ```  
+    ```cmd
     /debug  
     /debugport  
     /baudrate  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134124"
 ---
 # <a name="source-control-configuration-details"></a>Détails de Configuration de contrôle de code source
 Pour implémenter le contrôle de code source, vous devez configurer correctement votre système de projet ou d’un éditeur pour effectuer les opérations suivantes :

@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946817"
 ---
 # <a name="create-a-wpf-based-domain-specific-language"></a>Créer un langage spécifique à un domaine basé sur WPF
 

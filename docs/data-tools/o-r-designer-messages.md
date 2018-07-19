@@ -10,11 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c88134bb3b0df901ecb20cb91ed41ceb7e472b9f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b9b9b52cd09801d7b9435a354249e5d2d6296d35
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089051"
 ---
 # <a name="or-designer-messages"></a>Messages du Concepteur O/R
 
@@ -22,13 +23,13 @@ Cette rubrique répertorie les messages que vous pourrez rencontrer en travailla
 
 ## <a name="in-this-section"></a>Dans cette section
 
- [Impossible de créer une association \<nom de l’association >-propriété apparaît deux fois](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)
+ [Impossible de créer une association \<nom de l’association >-propriété répertoriée deux fois](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)
 
  [Impossible de créer une association \<nom de l’association >-types de propriété ne correspondent pas](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)
 
  [Impossible d’annuler la modification du type de retour d’une méthode DataContext](../data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md)
 
- [Pas pu récupérer les informations de schéma pour l’objet de base de données \<nom d’objet >](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)
+ [Pas pu récupérer les informations de schéma pour l’objet de base de données \<nom_objet >](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)
 
  [Un ou plusieurs des objets de base de données sélectionnés retournent un schéma qui ne correspond pas au schéma de la classe cible](../data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md)
 
@@ -40,9 +41,9 @@ Cette rubrique répertorie les messages que vous pourrez rencontrer en travailla
 
  [Les objets que vous ajoutez au concepteur utilisent une connexion de données différente de celle du concepteur en cours d’utilisation](../data-tools/the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using.md)
 
- [La propriété \<nom de la propriété > ne peut pas être supprimé.](../data-tools/the-property-property-name-cannot-be-deleted.md)
+ [La propriété \<nom_propriété > ne peut pas être supprimé.](../data-tools/the-property-property-name-cannot-be-deleted.md)
 
- [La propriété \<nom de la propriété > ne peut pas être supprimé, car il participe à l’association \<nom de l’association >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
+ [La propriété \<nom de propriété > ne peut pas être supprimé, car il participe à l’association \<nom de l’association >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)
 
  [Impossible de supprimer la classe sélectionnée, car elle est utilisée comme type de retour pour une ou plusieurs méthodes DataContext](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)
 

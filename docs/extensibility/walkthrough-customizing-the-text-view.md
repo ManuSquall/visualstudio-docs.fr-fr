@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142078"
 ---
 # <a name="walkthrough-customizing-the-text-view"></a>Procédure pas à pas : Personnalisation de l’affichage de texte
 Vous pouvez personnaliser un affichage de texte en modifiant les propriétés suivantes dans sa table de format de l’éditeur :  

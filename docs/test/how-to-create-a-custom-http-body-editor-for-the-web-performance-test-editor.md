@@ -1,5 +1,5 @@
 ---
-title: Créer un éditeur de corps HTTP personnalisé pour l’éditeur de test de performances web dans Visual Studio | Microsoft Docs
+title: Créer un éditeur de corps HTTP personnalisé pour l’éditeur de test de performances web dans Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,14 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c53d4db3f413ad8cf4f0b615db18bd5fb6368128
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c3f5e60f8cde791f571c5a6663356ad7d2ca80f9
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750693"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Comment : créer un éditeur de corps HTTP personnalisé pour l'éditeur de test de performances de site Web
 
@@ -51,7 +53,7 @@ Ces interfaces sont contenues dans l'espace de noms <xref:Microsoft.VisualStudio
 
 5.  Dans la **Boîte à outils**, sous la catégorie **Contrôles communs**, faites glisser un <xref:System.Windows.Forms.RichTextBox> sur la surface de UserControl1.
 
-6.  Sélectionnez le glyphe de l’étiquette d’action (![Glyphe de balise active](../test/media/vs_winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) dans le coin supérieur droit du contrôle <xref:System.Windows.Forms.RichTextBox>, puis sélectionnez **Ancrer dans le conteneur parent**.
+6.  Sélectionnez le glyphe de l’étiquette d’action (![Glyphe d’étiquette active](../test/media/vs_winformsmttagglyph.gif)) en haut à droite du contrôle <xref:System.Windows.Forms.RichTextBox>, puis sélectionnez **Ancrer dans le conteneur parent**.
 
 7.  Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet de bibliothèque Windows Forms et sélectionnez **Propriétés**.
 

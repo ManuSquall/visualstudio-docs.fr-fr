@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104704"
 ---
 # <a name="attaching-after-a-launch"></a>Attachement d’après le lancement d’un
 Après le lancement d’un programme, la session de débogage est prête à attacher le moteur de débogage (DE) ce programme.  

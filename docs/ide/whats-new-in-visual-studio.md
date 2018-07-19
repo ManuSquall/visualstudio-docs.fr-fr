@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8430e81cc0f4c15bdcb9d7ed3accaa041afa8d8e
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 542814c5902f2dba1c76b33f78273aadfb583eff
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282971"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Nouveautés de Visual Studio 2017
 
@@ -49,7 +50,7 @@ Voici des informations détaillées sur quelques-unes des nouvelles fonctionnali
 
 ### <a name="a-new-setup-experience"></a>Une nouvelle expérience d'installation
 
-[Télécharger Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ou [Vérifier la configuration système requise pour Visual Studio](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default)
+[Télécharger Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ou [Vérifier la configuration système requise pour Visual Studio](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default)
 
  Visual Studio simplifie et accélère l’installation des fonctionnalités dont vous avez besoin, quand vous en avez besoin. Une désinstallation « propre » est également disponible.
 
@@ -57,7 +58,7 @@ Voici des informations détaillées sur quelques-unes des nouvelles fonctionnali
 
 Choisissez les charges de travail dont vous avez besoin et modifiez-les quand vous le souhaitez.
 
- ![Boîte de dialogue d’installation de Visual Studio 2017](../install/media/install-visual-studio-enterprise.png "Écran d’installation de Visual Studio 2017")
+ ![Boîte de dialogue de configuration de Visual Studio 2017](../install/media/install-visual-studio-enterprise.png)
 
 Vous disposez aussi d’options pour optimiser votre installation :
 
@@ -89,7 +90,7 @@ Le nouveau Centre de performances Visual Studio peut vous aider à optimiser le 
 
 Visual Studio déplace ses extensions (et fonctionne également avec des extensions tierces) pour un chargement à la demande, plutôt qu’au démarrage de l’IDE. Vous êtes curieux de savoir quelles extensions ont un impact sur le démarrage, le chargement de solution et les performances de la frappe ? Vous pouvez afficher ces informations dans **Aide** > **Gérer le niveau de performance de Visual Studio**.
 
-  ![Boîte de dialogue Options dans Visual Studio 2017](../ide/media/vs2017ide-manage-vs-perf.png "Boîte de dialogue Aide de Visual Studio - Gestion des performances")
+  ![Boîte de dialogue Option de Visual Studio 2017](../ide/media/vs2017ide-manage-vs-perf.png)
 
 #### <a name="manage-your-extensions-with-roaming-extensions-manager"></a>Gérer vos extensions avec le Gestionnaire d’extensions itinérantes
 
@@ -97,19 +98,19 @@ Il est plus facile de configurer chaque environnement de développement avec vos
 
 Pour voir une liste de vos extensions dans Visual Studio, cliquez sur **Outils** > **Extensions et mises à jour**, puis cliquez sur le **Gestionnaire d’extensions itinérantes**.
 
-![Visual Studio 2017 - Boîte de dialogue Extensions et mises à jour](../ide/media/vs2017ide-extensions-and-updates.png "Visual Studio 2017 - Outils > Boîte de dialogue Extensions et mises à jour")
+![Visual Studio 2017 - Boîte de dialogue Extensions et mises à jour](../ide/media/vs2017ide-extensions-and-updates.png)
 
 Le Gestionnaire d’extensions itinérantes effectue le suivi de toutes les extensions que vous installez, mais vous pouvez choisir celles que vous souhaitez ajouter à votre liste d’itinérance.
 
-![Visual Studio 2017 - Boîte de dialogue Extensions et mises à jour](../ide/media/vs2017ide-RoamingExtensionManager.png "Visual Studio 2017 - Outils > Gestionnaire d’extensions itinérantes")
+![Visual Studio 2017 - Boîte de dialogue Extensions et mises à jour](../ide/media/vs2017ide-RoamingExtensionManager.png)
 
 Quand vous utilisez le Gestionnaire d’extensions itinérantes, trois types d’icônes figurent dans votre liste :
 
-* ![Icône Itinérante](../ide/media/vs2017ide-roamedicon.png "Icône Itinérante") ***Itinérante*** : extension qui fait partie de cette liste d’itinérances, mais qui n’est pas installée sur votre ordinateur.
+* ![Icône Itinérante](../ide/media/vs2017ide-roamedicon.png) ***Itinérante*** : extension qui fait partie de cette liste d’itinérances, mais qui n’est pas installée sur votre machine.
   (Vous pouvez l’installer à l’aide du bouton **Télécharger**.)
-* ![Icône Itinérante et installée](../ide/media/vs2017ide-roamedinstalledicon.png "Icône Itinérante et installée") ***Itinérante et installée*** : toutes les extensions qui font partie de cette liste d’itinérances et qui sont installées dans votre environnement de développement.
+* ![Icône Itinérante et installée](../ide/media/vs2017ide-roamedinstalledicon.png) ***Itinérante et installée*** : toutes les extensions qui font partie de cette liste d’itinérances et qui sont installées dans votre environnement de développement.
   (Si vous décidez de ne pas les rendre itinérantes, vous pouvez les supprimer à l’aide du bouton **Arrêter l’itinérance**.)
-* ![Icône Installée](../ide/media/vs2017ide-installedicon.png "Icône Installée") ***Installée*** : toutes les extensions qui sont installées dans cet environnement, mais qui ne font pas partie de votre liste d’itinérances.
+* ![Icône Installée](../ide/media/vs2017ide-installedicon.png) ***Installée*** : toutes les extensions qui sont installées dans cet environnement, mais qui ne font pas partie de votre liste d’itinérances.
   (Vous pouvez ajouter des extensions à la liste d’itinérances à l’aide du bouton **Démarrer l’itinérance**.)
 
 Toute extension que vous téléchargez quand vous êtes connecté est ajoutée à votre liste dans la catégorie **Itinérante et installée**. L’extension fait alors partie de votre liste d’itinérance, ce qui vous permet d’y accéder à partir de n’importe quel ordinateur.
@@ -118,7 +119,7 @@ Toute extension que vous téléchargez quand vous êtes connecté est ajoutée �
 
 Dans Visual Studio Enterprise 2017, les tests unitaires en direct offrent des résultats de tests unitaires et une couverture du code dans l’éditeur lorsque vous rédigez du code. Cette fonctionnalité qui s’utilise avec les projets C# et Visual Basic, à la fois pour le .NET Framework et le .NET Core, prend en charge trois frameworks de test : MSTest, xUnit et NUnit.
 
-![Live Unit Testing](../ide/media/lut-codewindow.png "Exemple d’utilisation de la nouvelle fonctionnalité Live Unit Testing de Visual Studio Enterprise")
+![Live Unit Testing](../ide/media/lut-codewindow.png)
 
 Pour plus d’informations, consultez [Présentation de Live Unit Testing](../test/live-unit-testing-intro.md). Pour obtenir une liste des nouvelles fonctionnalités disponibles dans chaque version de Visual Studio Enterprise 2017, consultez [Nouveautés de Live Unit Testing](../test/live-unit-testing-whats-new.md).
 
@@ -153,27 +154,27 @@ Pour plus d’informations, consultez [Actions rapides](../ide/common-quick-acti
 
 Lorsque vous travaillez avec un projet dans Visual Studio, vous pouvez installer et rapidement valider et publier votre code sur un service Git. Vous pouvez également gérer vos référentiels Git en cliquant dans les menus à partir des boutons situés en bas à droite de l’IDE.
 
-![Visual Studio 2017 interagit avec la boîte de dialogue Git](../ide/media/vsIDE-GitInteraction.png "Outils Git dans l’IDE de Visual Studio")
+![Visual Studio 2017 interagit avec la boîte de dialogue Git](../ide/media/vsIDE-GitInteraction.png)
 
 #### <a name="experience-improved-navigation-controls"></a>Amélioration des commandes de navigation
 
 Nous avons actualisé l’expérience de navigation pour permettre le déplacement d’un point A vers un point B de manière plus fiable et directe.
 
-* **Nouveautés de la version 15.4** : **Atteindre la définition** (**Ctrl**+**Clic** ou **F12**) &ndash; Si vous utilisez la souris, vous pouvez maintenant accéder plus rapidement à la définition d’un membre en appuyant sur **Ctrl** puis en cliquant sur le membre. Vous pouvez également appuyer sur **Ctrl** et pointer sur un symbole de code pour le souligner et le transformer en lien. Pour plus d’informations, consultez [Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md).  
+* **Nouveautés de la version 15.4** : **Atteindre la définition** (**Ctrl**+**Clic** ou **F12**) &ndash; Si vous utilisez la souris, vous pouvez maintenant accéder plus rapidement à la définition d’un membre en appuyant sur **Ctrl** puis en cliquant sur le membre. Vous pouvez également appuyer sur **Ctrl** et pointer sur un symbole de code pour le souligner et le transformer en lien. Pour plus d’informations, consultez [Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md).
 
 * **Accéder à l’implémentation** (**Ctrl**+**F12**) &ndash; Accédez aux différentes implémentations d’un membre ou d’un type à partir du membre ou du type de base.
 
 * **Atteindre tout** (**Ctrl**+**T** ou **Ctrl**+**,**) &ndash; Accédez directement aux déclarations de fichier/type/membre/symbole. Vous pouvez filtrer votre liste de résultats ou utiliser la syntaxe de requête (par exemple, « f searchTerm » pour les fichiers, « t searchTerm » pour les types, etc.).
 
-  ![Amélioration de Atteindre tout](../ide/media/vs2017ide-navigation-go-to.png "Exemple de la fonctionnalité Atteindre tout améliorée")
+  ![Amélioration de la fonctionnalité Atteindre tout](../ide/media/vs2017ide-navigation-go-to.png)
 
 * **Rechercher toutes les références** (**Maj**+**F12**) &ndash; Grâce à la colorisation de la syntaxe, vous pouvez regrouper les résultats de la fonctionnalité Rechercher toutes les références par projet, définition et chemin, selon la combinaison choisie. Vous pouvez également « verrouiller » les résultats afin de pouvoir continuer à rechercher d’autres références sans perdre les résultats d’origine.
 
-  ![Nouvel outil Rechercher toutes les références](../ide/media/vs2017ide-find-all-references.png "Exemple du nouvel outil Rechercher toutes les références")
+  ![Nouvel outil Rechercher toutes les références](../ide/media/vs2017ide-find-all-references.png)
 
-* **Visualiseur de structure** &ndash; Les lignes verticales grises en pointillé (guides de mise en retrait) servent de repères dans le code pour fournir du contexte dans votre cadre d’affichage. Vous les avez peut-être déjà rencontrées dans le logiciel connu Productivity Power Tools. Vous pouvez les utiliser pour visualiser et distinguer le bloc de code dans lequel vous vous trouvez, à tout moment et sans avoir à faire défiler le code. Pointez sur les lignes pour afficher une info-bulle qui développe le bloc de code et ses éléments parents. Cette fonctionnalité est disponible dans tous les langages pris en charge par le biais des syntaxes TextMate, ainsi que C#, Visual Basic et XAML.  
+* **Visualiseur de structure** &ndash; Les lignes verticales grises en pointillé (guides de mise en retrait) servent de repères dans le code pour fournir du contexte dans votre cadre d’affichage. Vous les avez peut-être déjà rencontrées dans le logiciel connu Productivity Power Tools. Vous pouvez les utiliser pour visualiser et distinguer le bloc de code dans lequel vous vous trouvez, à tout moment et sans avoir à faire défiler le code. Pointez sur les lignes pour afficher une info-bulle qui développe le bloc de code et ses éléments parents. Cette fonctionnalité est disponible dans tous les langages pris en charge par le biais des syntaxes TextMate, ainsi que C#, Visual Basic et XAML.
 
-  ![Visualiseur de structure Visual Studio 2017](../ide/media/vsIDE-StructureVisualizer.png "Visualiseur de Structure dans Visual Studio")
+  ![Visualiseur de structure Visual Studio 2017](../ide/media/vsIDE-StructureVisualizer.png)
 
 Pour plus d’informations sur les nouvelles fonctionnalités de productivité, consultez le billet de blog [Productivity in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/productivity-in-visual-studio-2017-rc/) posté par Mark Wilson-Thomas.
 
@@ -191,13 +192,13 @@ Pour plus d’informations, consultez la page [Nouveautés de Visual C++ dans Vi
 
 Maintenant, vous pouvez plus facilement avancer pendant le débogage sans avoir à définir un point d’arrêt sur la ligne souhaitée. Lorsque vous êtes arrêté dans l’outil de débogage, il vous suffit de cliquer sur l’icône qui apparaît en regard de la ligne de code. Votre code sera exécuté jusqu’à cette ligne la prochaine fois qu’il sera atteint dans votre chemin de code.
 
-![Déboguer Visual Studio 2017 - Exécuter jusqu’au clic](../ide/media/vs2017ide-RunToClick.png "Exécuter jusqu’au clic dans Visual Studio - Débogage et diagnostic")
+![Déboguer Visual Studio 2017 - Exécuter jusqu’au clic](../ide/media/vs2017ide-RunToClick.png)
 
 #### <a name="the-new-exception-helper"></a>Nouvelle assistance d’exception
 
 La nouvelle assistance d’exception vous permet de visualiser les informations d’exception d’un coup d’œil. Les informations sont présentées de manière compacte avec un accès instantané aux exceptions internes. Trouvez rapidement ce qui était Null directement dans l’assistance de l’exception quand vous diagnostiquez une exception NullReferenceException.
 
-![Boîte de dialogue de la nouvelle assistance d’exception dans Visual Studio](../ide/media/vs2017ide-ExceptionHelper.png "Boîte de dialogue de la nouvelle assistance d’exception")
+![Boîte de dialogue de la nouvelle assistance d’exception dans Visual Studio](../ide/media/vs2017ide-ExceptionHelper.png)
 
 Pour plus d’informations, consultez le billet de blog [Use the new Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/).
 
@@ -247,7 +248,7 @@ Pour plus d’informations, consultez [Déboguer des applications ASP.NET en pro
 
 La plateforme Windows universelle (UWP) est la plateforme d’applications pour Windows 10. Avec seulement un ensemble d’API, un package d’application et un Store, vous pouvez développer des applications UWP qui s’exécutent sur tous les appareils Windows 10 &ndash; PC, tablette, téléphone, Xbox, HoloLens, Surface Hub, etc. UWP prend en charge plusieurs tailles d’écran et de nombreux modèles d’interaction (tactile, souris, clavier, contrôleur de jeu ou stylet). La conception des applications UWP s’articule autour de l’idée que les utilisateurs veulent pouvoir utiliser TOUS leurs appareils indifféremment, en choisissant l’appareil qui leur semble le plus pratique ou le plus performant pour la tâche qu’ils ont à faire.
 
- ![Plateforme Windows universelle](../cross-platform/media/uwp_coreextensions.png "UWP_CoreExtensions")
+ ![Plateforme Windows universelle](../cross-platform/media/uwp_coreextensions.png)
 
 Choisissez votre langage de développement préféré entre &mdash;C#, Visual Basic, C++ ou JavaScript&mdash; pour créer une application de plateforme Windows universelle exécutable sur les appareils Windows 10. Visual Studio 2017 fournit un modèle d’application UWP pour chaque langage, avec lequel vous pouvez créer un projet unique pour tous les types d’appareils. Après avoir terminé votre projet, vous pouvez créer un package d’application et le soumettre ensuite sur le Microsoft Store à partir de Visual Studio pour distribuer votre application aux utilisateurs d’appareils Windows 10.
 
@@ -270,7 +271,7 @@ Pour plus d’informations, consultez la page [Visual Studio et Xamarin](../cros
 
 **Nouveauté de 15.3** : pour vos besoins de développement iOS, nous avons ajouté un éditeur de droits autonome. Il offre une interface utilisateur conviviale, facile à parcourir. Pour le lancer, double-cliquez sur votre fichier *entitlements.plist*.
 
-![Éditeur de droits pour Xamarin](../ide/media/xamarin-entitlements-editor.png "Éditeur droits pour Xamarin")
+![Éditeur de droits pour Xamarin](../ide/media/xamarin-entitlements-editor.png)
 
 ### <a name="visual-studio-tools-for-xamarin"></a>Visual Studio Tools pour Xamarin
 
@@ -309,9 +310,9 @@ Pour en savoir plus, consultez le billet de blog [Redgate Data Tools in Visual S
 
 La plateforme .NET Core est constituée de différents composants, dont les compilateurs managés, le runtime, les bibliothèques de classes de base et de nombreux modèles d’application, comme ASP.NET Core. .NET Core prend en charge les trois principaux systèmes d’exploitation : Windows, Linux et macOS. Vous pouvez utiliser .NET Core aussi bien dans le cloud que sur des appareils et des systèmes embarqués/IoT.
 
-Il offre aussi maintenant la prise en charge de Docker.  
+Il offre aussi maintenant la prise en charge de Docker.
 
-**Nouveauté de 15.3** : Visual Studio 2017 version 15.3 prend en charge le développement de .NET Core 2.0. L’utilisation de .NET Core 2.0 nécessite de télécharger et d’installer le kit SDK .NET Core 2.0 séparément.  
+**Nouveauté de 15.3** : Visual Studio 2017 version 15.3 prend en charge le développement de .NET Core 2.0. L’utilisation de .NET Core 2.0 nécessite de télécharger et d’installer le kit SDK .NET Core 2.0 séparément.
 
 Pour plus d’informations, consultez la page [Guide .NET Core](/dotnet/core/index).
 
@@ -337,8 +338,8 @@ Pour plus d’informations, consultez la page [Visual Studio Tools pour AI](../a
 
 Nous mettons souvent à jour Visual Studio 2017 avec de nouvelles fonctionnalités susceptibles de faciliter l’expérience de développement. Voici un récapitulatif des principales mises à jour actuellement en préversion expérimentale :
 
-* **[Live Share](https://www.visualstudio.com/services/live-share/)**, un nouvel outil qui vous permet de partager une base de code et son contexte avec un collègue, et de bénéficier d’une collaboration bidirectionnelle instantanée directement à partir de Visual Studio. Avec Live Share, un collègue peut lire, accéder, modifier et déboguer un projet que vous avez partagé avec lui, de manière sécurisée et fluide.<br><br>Pour plus d’informations, consultez le [FAQ sur Live Share](/visualstudio/liveshare/faq).<br><br>
-* **[IntelliCode](https://www.visualstudio.com/services/intellicode/)**, une nouvelle fonctionnalité qui simplifie le développement de logiciel en faisant appel à l’IA pour fournir une complétion de code plus performante et sensible au contexte. Elle guide les développeurs afin qu’ils codent conformément aux modèles et aux styles de l’équipe, recherche les problèmes de code difficiles à intercepter et focalise les revues de code sur les zones les plus importantes. <br><br>Pour plus d’informations, consultez [Questions fréquentes (FAQ) sur IntelliCode](../ide/not-in-toc/intellicode-faq.md).
+* **[Live Share](https://visualstudio.microsoft.com/services/live-share/)**, un nouvel outil qui vous permet de partager une base de code et son contexte avec un collègue, et de bénéficier d’une collaboration bidirectionnelle instantanée directement à partir de Visual Studio. Avec Live Share, un collègue peut lire, accéder, modifier et déboguer un projet que vous avez partagé avec lui, de manière sécurisée et fluide.<br><br>Pour plus d’informations, consultez le [FAQ sur Live Share](/visualstudio/liveshare/faq).<br><br>
+* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**, une nouvelle fonctionnalité qui simplifie le développement de logiciel en faisant appel à l’IA pour fournir une complétion de code plus performante et sensible au contexte. Elle guide les développeurs afin qu’ils codent conformément aux modèles et aux styles de l’équipe, recherche les problèmes de code difficiles à intercepter et focalise les revues de code sur les zones les plus importantes. <br><br>Pour plus d’informations, consultez [Questions fréquentes (FAQ) sur IntelliCode](../ide/not-in-toc/intellicode-faq.md).
 
 Vous souhaitez en savoir plus sur les autres fonctionnalités prévues pour Visual Studio 2017 ? Consultez la page [Feuille de route Visual Studio](/visualstudio/productinfo/vs2018-roadmap).
 
@@ -350,12 +351,12 @@ Si vous souhaitez faire des suggestions sur la façon dont nous pouvons amélior
 
 ### <a name="report-a-problem"></a>Signaler un problème
 
- Parfois, un message ne suffit pas pour transmettre l’impact complet du problème que vous avez rencontré. Si vous rencontrez un blocage, un plantage ou un autre problème de performance, vous pouvez utiliser l’outil **Signaler un problème** pour nous envoyer facilement les étapes de reproduction du problème et les fichiers utiles pour le support technique (captures d’écran, fichiers de trace et heap dump, par exemple). Pour plus d’informations sur l’utilisation de cet outil, consultez la page [Guide pratique pour signaler un problème](how-to-report-a-problem-with-visual-studio-2017.md).
+ Parfois, un message ne suffit pas pour transmettre l’impact complet du problème que vous avez rencontré. Si vous rencontrez un blocage, un incident ou un autre problème de performance, vous pouvez utiliser l’outil **Signaler un problème** pour nous envoyer facilement les étapes de reproduction du problème et les fichiers utiles pour le support technique (captures d’écran, fichiers de trace et heap dump, par exemple). Pour plus d’informations sur l’utilisation de cet outil, consultez la page [Guide pratique pour signaler un problème](how-to-report-a-problem-with-visual-studio-2017.md).
 
 ## <a name="see-also"></a>Voir aussi
 
 * [Notes de publication de Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)
 * [Nouveautés de Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Nouveautés de C#](/dotnet/csharp/whats-new)
-* [Nouveautés de Team Foundation Server](https://www.visualstudio.com/docs/whats-new)
-* [Nouveautés de Visual Studio pour Mac](https://www.visualstudio.com/vs/visual-studio-mac/)
+* [Nouveautés de Team Foundation Server](/tfs/server/whats-new?view=vsts)
+* [Nouveautés de Visual Studio pour Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)

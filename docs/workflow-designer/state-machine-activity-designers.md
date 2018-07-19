@@ -10,15 +10,16 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 23c09af12bc978f9b0303dc44dc4b7db6576fc8b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d3597a915e5b0ff946539a025a724778d7f6563a
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755500"
 ---
 # <a name="state-machine-activity-designers"></a>Concepteurs d'activités d'ordinateur d'état
 
-Concepteur de flux de travail Windows inclut plusieurs concepteurs d’activités que vous pouvez utiliser lors de la construction de vos workflows. Cette section contient les concepteurs d'activités fournis par le système utilisés pour créer et gérer des workflows de machine à états. Les rubriques suivantes décrivent ces concepteurs et fournissent des conseils sur la façon de les utiliser.
+Concepteur de workflow inclut un nombre de concepteurs d’activités que vous pouvez utiliser lors de la construction de vos flux de travail. Cette section contient les concepteurs d'activités fournis par le système utilisés pour créer et gérer des workflows de machine à états. Les rubriques suivantes décrivent ces concepteurs et fournissent des conseils sur la façon de les utiliser.
 
 ## <a name="reference"></a>Référence
  <xref:System.Activities.Statements.StateMachine>

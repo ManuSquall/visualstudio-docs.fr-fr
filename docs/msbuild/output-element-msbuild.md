@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577351"
 ---
 # <a name="output-element-msbuild"></a>Output, élément (MSBuild)
 Stocke les valeurs de sortie d’une tâche dans les éléments et les propriétés.  

@@ -19,15 +19,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5911dfcdf2cc7e235dc1ad5ab78aaf290d89d5e5
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 88a9e225539a843ddba1850ae5919579ac197081
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448491"
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573204"
 ---
 # <a name="vsinstr"></a>VSInstr
-L’outil VSInstr est utilisé pour instrumenter des binaires. Il est appelé à l’aide de la syntaxe suivante :  
+L’outil VSInstr est utilisé pour instrumenter des ressources binaires. Il est appelé à l’aide de la syntaxe suivante :  
   
 ```cmd  
 VSInstr [/U] filename [/options]  
@@ -44,9 +44,9 @@ VSInstr [/U] filename [/options]
 |**Exclude** `:funcspec`|Spécifie une spécification de fonction à exclure de l’instrumentation par les sondes. Cette option est utile quand le profilage d’une insertion de sondes dans une fonction provoque des résultats inattendus ou non souhaités.<br /><br /> N’utilisez pas d’options **Exclude** et **Include** qui font référence à des fonctions dans le même binaire.<br /><br /> Vous pouvez spécifier plusieurs spécifications de fonction avec différentes options **Exclude**.<br /><br /> `funcspec` est défini comme suit :<br /><br /> [espace de noms\<séparateur1>] [classe\<séparateur2>]fonction<br /><br /> \<séparateur1> est `::` pour le code natif, et `.` pour le code managé.<br /><br /> \<séparateur2> est toujours `::`.<br /><br /> **Exclude** est pris en charge avec la couverture du code.<br /><br /> Le caractère générique \* est pris en charge. Par exemple, pour exclure toutes les fonctions dans un espace de noms, utilisez :<br /><br /> nom_espace_de_noms::\*<br /><br /> Vous pouvez utiliser **VSInstr /DumpFuncs** pour répertorier les noms complets des fonctions dans le binaire spécifié.|  
 |**Include** `:funcspec`|Spécifie une spécification de fonction dans un binaire à instrumenter avec les sondes. Toutes les autres fonctions dans les binaires ne sont pas instrumentées.<br /><br /> Vous pouvez spécifier plusieurs spécifications de fonction avec différentes options **Include**.<br /><br /> N’utilisez pas d’options **Include** et **Exclude** qui font référence à des fonctions dans le même binaire.<br /><br /> **Include** n’est pas pris en charge avec la couverture du code.<br /><br /> `funcspec` est défini comme suit :<br /><br /> [espace de noms\<séparateur1>] [classe\<séparateur2>]fonction<br /><br /> \<séparateur1> est `::` pour le code natif, et `.` pour le code managé.<br /><br /> \<séparateur2> est toujours `::`.<br /><br /> Le caractère générique \* est pris en charge. Par exemple, pour inclure toutes les fonctions dans un espace de noms, utilisez :<br /><br /> nom_espace_de_noms::\*<br /><br /> Vous pouvez utiliser **VSInstr /DumpFuncs** pour répertorier les noms complets des fonctions dans le binaire spécifié.|  
 |**DumpFuncs**|Répertorie les fonctions dans l’image spécifiée. Aucune instrumentation n’est effectuée.|  
-|**ExcludeSmallFuncs**|Exclut de l’instrumentation les petites fonctions (fonctions courtes qui n’effectuent pas d’appels de fonction). L’option **ExcludeSmallFuncs** permet de réduire la charge liée à l’instrumentation et donc d’accélérer celle-ci.<br /><br /> En outre, l’exclusion des petites fonctions réduit la taille du fichier .vsp et le temps nécessaire pour l’analyse.|  
+|**ExcludeSmallFuncs**|Exclut de l’instrumentation les petites fonctions (fonctions courtes qui n’effectuent pas d’appels de fonction). L’option **ExcludeSmallFuncs** permet de réduire la charge liée à l’instrumentation et donc d’accélérer celle-ci.<br /><br /> L’exclusion des petites fonctions réduit également la taille du fichier .*vsp* et le temps nécessaire à l’analyse.|  
 |**Mark:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname,markid`|Insère une marque de profil (identificateur utilisé pour délimiter les données dans les rapports) que vous pouvez utiliser pour identifier le début ou la fin d’une plage de données dans le fichier de rapport .vsp.<br /><br /> **Before** : juste avant l’entrée dans la fonction cible.<br /><br /> **After** : juste après la sortie de la fonction cible.<br /><br /> **Top** : juste après l’entrée dans la fonction cible.<br /><br /> **Bottom** : juste avant chaque retour dans la fonction cible.<br /><br /> `funcname` : nom de la fonction cible<br /><br /> `Markid` : entier positif (long) à utiliser comme identificateur de la marque de profil.|  
-|**Coverage**|Exécute l’instrumentation de la couverture. Cette option ne peut être utilisée qu’avec les options suivantes : **Verbose**, **OutputPath**, **Exclude** et **Logfile**.|  
+|**Coverage**|Exécute l’instrumentation de la couverture. Cette option peut être utilisée uniquement avec les options suivantes : **Verbose**, **OutputPath**, **Exclude** et **Logfile**.|  
 |**Verbose**|L’option **Verbose** permet d’afficher des informations détaillées sur le processus d’instrumentation.|  
 |**NoWarn** `[:[Message Number[;Message Number]]]`|Supprimer la totalité ou une partie spécifique des avertissements.<br /><br /> `Message Number` : numéro d’avertissement. Si `Message Number` est omis, tous les avertissements sont supprimés.<br /><br /> Pour plus d’informations, consultez [Avertissements VSInstr](../profiling/vsinstr-warnings.md).|  
 |**Control** `:{` **Thread** `&#124;` **Process** `&#124;` **Global** `}`|Spécifie le niveau de profilage des options suivantes du contrôle de la collecte de données VSInstr :<br /><br /> **Start**<br /><br /> **StartOnly**<br /><br /> **Suspend**<br /><br /> **StopOnly**<br /><br /> **SuspendOnly**<br /><br /> **ResumeOnly**<br /><br /> **Thread** : spécifie les fonctions de contrôle de collecte de données au niveau du thread. Le profilage est démarré ou arrêté uniquement pour le thread actuel. L’état de profilage des autres threads n’est pas affecté. La valeur par défaut correspond au thread.<br /><br /> **Process** : spécifie les fonctions de contrôle de collecte de données de profilage au niveau du processus. Le profilage démarre ou s’arrête pour tous les threads dans le processus actuel. L’état de profilage des autres processus n’est pas affecté.<br /><br /> **Global** : spécifie les fonctions de contrôle de collecte de données (interprocessus) au niveau global.<br /><br /> Une erreur se produit si vous ne spécifiez pas le niveau de profilage.|  

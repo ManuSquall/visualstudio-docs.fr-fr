@@ -17,10 +17,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 5ef167e83bc8f27a53405ef6ab7a3f9271863b4d
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38785835"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>Guide pratique pour créer un type Nullable dans le Concepteur de classes
 

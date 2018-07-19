@@ -1,5 +1,5 @@
 ---
-title: Variante de Format cible de rendu 16 BPP | Documents Microsoft
+title: effectuer le rendu 16 BPP variante de Format cible | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,27 +10,42 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8f8328b180c398cab5ff7fa0f29dfc578414e3a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8e9a8e990ee3b95d93f8757f54b92c808fb650f8
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433326"
 ---
-# <a name="16bpp-render-target-format-variant"></a>Variante de format cible de rendu 16 bpp
+# <a name="16-bpp-render-target-format-variant"></a>Restituer variante de Format cible de 16 bpp
 Affecte aux pixels le format DXGI_FORMAT_B5G6R5_UNORM pour toutes les cibles de rendu et toutes les mémoires tampons d'arrière-plan.  
   
 ## <a name="interpretation"></a>Interprétation  
- Une cible de rendu ou une mémoire tampon d'arrière-plan utilise généralement un format 32 bpp (32 bits par pixel), tel que B8G8R8A8_UNORM. Les formats 32 bpp peuvent consommer beaucoup de bande passante de mémoire. Comme B5G6R5_UNORM est un format 16 bpp dont la taille représente la moitié de celle des formats 32 bpp, son utilisation peut soulager la bande passante de mémoire, mais au détriment de la fidélité des couleurs.  
+ Une cible de rendu ou de la mémoire tampon d’arrière-plan utilise généralement un format 32 bpp (32 bits par pixel) tel que B8G8R8A8_UNORM. les formats 32 bpp peuvent consommer une grande quantité de bande passante de mémoire. Étant donné que le format B5G6R5_UNORM est un format de 16 bits par pixel qui est la moitié des formats de 32 bpp, son utilisation peut soulager la pression sur la bande passante de mémoire, mais au détriment de la fidélité des couleurs réduite.  
   
- Si cette variante donne lieu à un net gain de performances, cela indique probablement que votre application consomme trop de bande passante de mémoire. Les gains de performances peuvent être particulièrement prononcés quand le frame profilé pâtit d'un grand nombre de superpositions ou contient beaucoup de simulations de transparence.  
-  
- Si les types de scènes affichées par votre application ne nécessitent pas une reproduction haute fidélité des couleurs, n'exigent pas la présence d'un canal alpha dans la cible de rendu et ne contiennent pas souvent de dégradés lisses (qui sont sensibles aux effets de traîne en cas de fidélité des couleurs réduite), utilisez une cible de rendu au format 16 bpp pour réduire l'utilisation de bande passante de mémoire.  
-  
- Si les scènes affichées dans votre application nécessitent une reproduction haute fidélité des couleurs ou un canal alpha ou si les dégradés lisses sont courants, envisagez d'autres stratégies pour réduire l'utilisation de bande passante de mémoire (par exemple, en réduisant le nombre de superpositions ou les simulations de transparence, en réduisant les dimensions du tampon de trame ou en faisant en sorte que les ressources de texture consomment moins de bande passante de mémoire en activant la compression ou en réduisant leurs dimensions). Comme toujours, vous devez réfléchir aux avantages et aux inconvénients qui accompagnent ces optimisations de qualité d'image.  
-  
- Si vous jugez qu'une mémoire tampon d'arrière-plan de 16 bpp profiterait à votre application mais qu'elle fait partie de votre chaîne de permutation, vous devez prendre des mesures supplémentaires, car DXGI_FORMAT_B5G6R5_UNORM n'est pas un format de mémoire tampon d'arrière-plan pris en charge pour les chaînes de permutation créées à l'aide de `D3D11CreateDeviceAndSwapChain` ou `IDXGIFactory::CreateSwapChain`. Au lieu de cela, vous devez créer une cible de rendu au format B5G6R5_UNORM à l'aide de `CreateTexture2D` et axer le rendu sur cette cible. Ensuite, avant d'appeler Present dans votre chaîne de permutation, copiez la cible de rendu dans la mémoire tampon d'arrière-plan de la chaîne de permutation en traçant une quadravision en plein écran avec la cible de rendu comme texte source. Bien qu'il s'agisse d'une mesure supplémentaire appelée à consommer de la bande passante de mémoire, la plupart des opérations de rendu consommeront moins de bande passante, car elles affectent la cible de rendu 16 bpp ; si, en copiant la cible de rendu dans la mémoire tampon de la chaîne de permutation, il y a plus de bande passante épargnée que consommée, les performances de rendu s'en trouvent améliorées.  
-  
- Les architectures GPU qui utilisent des techniques de rendu en mosaïque peuvent profiter considérablement de l'utilisation d'un format de tampon de trame de 16 bpp sur le plan des performances, car une plus grande partie du tampon de trame peut tenir dans le cache de tampon de trame local de chaque mosaïque. Les architectures de rendu en mosaïque sont parfois rencontrées dans les GPU des combinés mobiles et des tablettes ; elles sont peu courantes en dehors de cette niche.  
+ Si cette variante donne lieu à un net gain de performances, cela indique probablement que votre application consomme trop de bande passante de mémoire. Vous pouvez obtenir l’amélioration significative des performances, en particulier lorsque le frame profilé avait une quantité importante de superpositions ou mélange alpha.
+
+Un format de cible de rendu 16 bits par pixel peut réduire la bande de mémoire avec utilisation lorsque votre application a les conditions suivantes :
+- Ne nécessite pas une reproduction haute fidélité des couleurs.
+- Ne nécessite pas un canal alpha.
+- Ofent ne dispose pas des dégradés lisses (qui sont vulnérables aux artefacts répartis sous la fidélité des couleurs réduite).
+
+Autres stratégies pour réduire la bande passante de mémoire sont les suivantes :
+- Réduire la quantité de superpositions ou mélange alpha.
+- Réduire les dimensions de la mémoire tampon de trame.
+- Réduisez les dimensions de ressources de texture.
+- Réduire les compressions de ressources de texture.
+ 
+Comme toujours, vous devez réfléchir aux avantages et aux inconvénients qui accompagnent ces optimisations de qualité d'image.  
+
+Les applications qui font partie d’une chaîne de permutation ont un format de mémoire tampon d’arrière-plan (DXGI_FORMAT_B5G6R5_UNORM) qui ne prend pas en charge 16 bpp. Ces chaînes de permutation sont créés à l’aide de `D3D11CreateDeviceAndSwapChain` ou `IDXGIFactory::CreateSwapChain`. Pour contourner cette limitation, procédez comme suit :
+1. Créer une cible de rendu de format B5G6R5_UNORM à l’aide de `CreateTexture2D` et à la cible de rendu. 
+2. Copiez la cible de rendu dans la chaîne de permutation quadravision en dessinant un quadruple plein écran avec la cible de rendu en tant que votre texture source.
+3. Appeler Present dans votre chaîne de permutation.
+
+ Si cette stratégie permet d’économiser davantage de bande passante que consommée en copiant la cible de rendu dans la chaîne de permutation mémoire tampon d’arrière-plan, les performances de rendu est améliorée.
+
+ Les architectures GPU qui utilisent des techniques de rendu en mosaïque peuvent voir les avantages de performance significatifs à l’aide d’un format de mémoire tampon de trame de 16 bpp. Cette amélioration est, car une plus grande partie de la mémoire tampon de trame peut tenir dans le cache des tampons frame local de chaque mosaïque. Les architectures de rendu en mosaïque sont parfois rencontrées dans les GPU des combinés mobiles et des tablettes ; elles sont peu courantes en dehors de cette niche.  
   
 ## <a name="remarks"></a>Notes  
  Le format cible de rendu est réinitialisé en DXGI_FORMAT_B5G6R5_UNORM à chaque appel à `ID3D11Device::CreateTexture2D`, qui est chargé de créer une cible de rendu. Plus précisément, le format est substitué quand l'objet D3D11_TEXTURE2D_DESC passé dans pDesc décrit une cible de rendu ; à savoir :  
@@ -45,9 +60,9 @@ Affecte aux pixels le format DXGI_FORMAT_B5G6R5_UNORM pour toutes les cibles de 
  Sachant que le format B5G6R5 n'a pas de canal alpha, le contenu alpha n'est pas conservé par cette variante. Si le rendu de votre application nécessite la présence d'un canal alpha dans votre cible de rendu, il vous suffit de passer au format B5G6R5.  
   
 ## <a name="example"></a>Exemple  
- Le **Format cible de rendu 16 BPP** variante peut être reproduite pour les cibles de rendu créées à l’aide de `CreateTexture2D` à l’aide de code similaire à celui-ci :  
+ Le **16 bpp Format cible de rendu** variante peut être reproduite pour les cibles de rendu créées à l’aide de `CreateTexture2D` à l’aide de code similaire à celui-ci :  
   
-```  
+```cpp
 D3D11_TEXTURE2D_DESC target_description;  
   
 target_description.BindFlags = D3D11_BIND_RENDER_TARGET;  

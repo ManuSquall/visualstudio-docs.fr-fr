@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098067"
 ---
 # <a name="choosing-a-debug-engine-implementation-strategy"></a>Choix d’une stratégie de mise en œuvre de moteur de débogage
 Utiliser l’architecture de l’exécution pour déterminer votre stratégie de mise en œuvre de débogage moteur (DE). Le moteur de débogage peut-être être créé dans le processus pour le programme débogué, dans le processus sur le Gestionnaire de débogage Visual Studio session (SDM) ou out-of-process pour les deux. Les instructions suivantes doivent vous aider à choisir entre ces trois stratégies.  

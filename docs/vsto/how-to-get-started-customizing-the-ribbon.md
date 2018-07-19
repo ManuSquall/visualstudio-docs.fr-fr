@@ -1,5 +1,5 @@
 ---
-title: 'Comment : démarrer avec la personnalisation du ruban | Documents Microsoft'
+title: 'Comment : démarrer avec la personnalisation du ruban'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,11 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 304cf3e9d445bcb655e27e8e35605549f489155c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0ee9866c01031948fc47bbe95bf762c9328b99a8
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254603"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Comment : démarrer avec la personnalisation du ruban
   Pour personnaliser le ruban d’une application Microsoft Office, ajoutez un **ruban (Concepteur visuel)** ou **ruban (XML)** élément à un projet Office.  
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Dans le **ajouter un nouvel élément** boîte de dialogue, sélectionnez **ruban (Concepteur visuel)** ou **ruban (XML)**. Pour plus d’informations sur ces modèles, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md).  
   
-3.  Dans le **nom** , tapez un nom pour l’élément Ruban.  
+3.  Dans le **nom** , tapez un nom pour l’élément de ruban.  
   
      Les noms ne peut pas contenir les caractères suivants :  
   
@@ -61,21 +62,21 @@ ms.lasthandoff: 04/16/2018
   
     -   point d'interrogation (?)  
   
-    -   Barre oblique (/)  
+    -   Oblique (/)  
   
     -   Espaces à gauche ou (' ')  
   
-    -   Noms réservés à Windows ou à MS-DOS telles que (« nul », « aux », « con », « com1 », « lpt1 » et ainsi de suite)  
+    -   Noms réservés à Windows ou à MS-DOS comme (« nul », « aux », « con », « com1 », « lpt1 » et ainsi de suite)  
   
 4.  Cliquez sur **OK**.  
   
- L’élément ruban apparaît dans **l’Explorateur de solutions**. Pour plus d’informations sur les étapes, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md).  
+ L’élément de ruban s’affiche dans **l’Explorateur de solutions**. Pour plus d’informations sur les étapes, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Accéder au ruban lors de l’exécution](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Concepteur de ruban](../vsto/ribbon-designer.md)   
  [Élément XML Ribbon](../vsto/ribbon-xml.md)   
- [Procédure pas à pas : Création d’un onglet personnalisé à l’aide du Concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Procédure pas à pas : création d’un onglet personnalisé à l’aide d’un élément XML Ribbon](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
+ [Procédure pas à pas : Créer un onglet personnalisé à l’aide du Concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [Procédure pas à pas : Créer un onglet personnalisé à l’aide de XML du ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
   
   

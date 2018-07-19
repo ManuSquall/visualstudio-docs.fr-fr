@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472660"
 ---
 # <a name="debugging-applications"></a>Déboguer des applications
 Les sections suivantes traitent du débogage pour des types spécifiques d'applications. Des types d'applications différents et des langages différents requièrent des paramètres et des techniques différents, et présentent des problèmes différents qui doivent être débogués.  

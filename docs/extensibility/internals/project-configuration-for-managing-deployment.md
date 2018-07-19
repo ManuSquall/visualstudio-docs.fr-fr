@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132248"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>Configuration de projet pour la gestion du déploiement
 Déploiement consiste à déplacer physiquement les éléments de sortie à partir d’un processus de génération à l’emplacement prévu pour l’installation et de débogage. Par exemple, une application Web peut être créée sur un ordinateur local et puis placée sur le serveur.  

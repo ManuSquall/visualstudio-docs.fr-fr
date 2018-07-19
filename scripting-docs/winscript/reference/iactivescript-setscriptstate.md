@@ -1,11 +1,11 @@
 ---
 title: IActiveScript::SetScriptState | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScript.SetScriptState
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScript_SetScriptState
 ms.assetid: f2b2700c-0c8d-40db-ad84-dc751c5d9bc2
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24645669"
 ---
 # <a name="iactivescriptsetscriptstate"></a>IActiveScript::SetScriptState
 Place le moteur de script dans l’état donné. Cette méthode peut être appelée à partir de threads de l’autre base sans résultant dans une légende de l’autre base d’héberger des objets ou à la [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interface.  

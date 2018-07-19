@@ -1,5 +1,5 @@
 ---
-title: 'Comment : ajouter une propriété personnalisée | Documents Microsoft'
+title: 'Comment : ajouter une propriété personnalisée | Microsoft Docs'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,15 +22,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 85b37d275f2e8c63afff6f301c21794ba2742eaf
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ac95ffcaf686c3ab086f994680e7bce80c330f0f
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767947"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756228"
 ---
 # <a name="how-to-add-a-custom-property"></a>Comment : ajouter une propriété personnalisée
-  Vous pouvez ajouter des propriétés personnalisées au modèle à l’aide de la **éditeur de la propriété**. Vous pouvez accéder à ces propriétés dans le code pour récupérer des informations telles que les chaînes de connexion et autres données en cours d’exécution.  
+  Vous pouvez ajouter des propriétés personnalisées au modèle à l’aide de la **éditeur de la propriété**. Vous pouvez accéder à ces propriétés dans le code pour récupérer des informations telles que des chaînes de connexion et autres données au moment de l’exécution.  
   
 ### <a name="to-add-a-custom-property"></a>Pour ajouter une propriété personnalisée  
   
@@ -38,9 +38,9 @@ ms.locfileid: "34767947"
   
 2.  Dans la barre de menus, choisissez **vue** > **fenêtre Propriétés**.  
   
-3.  Dans le **propriétés** fenêtre, choisissez le **propriétés personnalisées** propriété, puis choisissez le bouton de sélection (![ellipse de concepteur ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "ASP. Points de suspension NET Mobile concepteur")).  
+3.  Dans le **propriétés** fenêtre, choisissez le **propriétés personnalisées** propriété, puis choisissez le bouton de sélection (![ellipse de concepteur ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "ASP. Ellipse de NET Mobile concepteur")).  
   
-     Le **éditeur de propriétés** boîte de dialogue s’affiche.  
+     Le **éditeur de la propriété** boîte de dialogue s’affiche.  
   
 4.  Dans la zone de texte dans le **nom** colonne, spécifiez le nom de la propriété.  
   
@@ -49,9 +49,9 @@ ms.locfileid: "34767947"
 6.  Pour le **valeur** champ de la propriété personnalisée, spécifiez une valeur, puis choisissez le **OK** bouton.  
   
 ## <a name="see-also"></a>Voir aussi
- [Conception d’un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Conception d’un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Création d’un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md)   
- [Intégration de données métiers dans SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
+ [Concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)   
+ [Concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)   
+ [Créer un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md)   
+ [Intégrer des données métiers dans SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
   
   

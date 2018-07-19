@@ -1,5 +1,5 @@
 ---
-title: '&lt;Signature&gt; élément (déploiement ClickOnce) | Documents Microsoft'
+title: '&lt;Signature&gt; , élément (déploiement ClickOnce) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -16,18 +16,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5637bad77e2d4e09d6d04007f0e0da3ed8af68df
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 60349c8337d41a03d488b7d14a3fb7bcaa24dbcd
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081512"
 ---
-# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Signature&gt; élément (déploiement ClickOnce)
+# <a name="ltsignaturegt-element-clickonce-deployment"></a>&lt;Signature&gt; , élément (déploiement ClickOnce)
 Contient les informations nécessaires pour signer numériquement ce manifeste de déploiement.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
   
       <Signature>   
    XML signature information   
@@ -35,14 +36,14 @@ Contient les informations nécessaires pour signer numériquement ce manifeste d
 ```  
   
 ## <a name="remarks"></a>Notes  
- Signature d’un manifeste de déploiement à l’aide d’une signature d’enveloppe est facultative, mais recommandé. Pour plus d’informations sur la signature XML fichiers consultez la recommandation du World Wide Web Consortium, « XML Signature Syntax and Processing », décrit dans [ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/).  
+ Signature d’un manifeste de déploiement à l’aide d’une signature d’enveloppe est facultative, mais recommandé. Pour plus d’informations sur la signature des fichiers XML, consultez la recommandation du World Wide Web Consortium, « XML-Signature Syntax and Processing », décrit dans [ http://www.w3.org/TR/xmldsig-core/ ](http://www.w3.org/TR/xmldsig-core/).  
   
- Si vous souhaitez signer votre manifeste, les hachages doivent être fournis pour tous les fichiers. Impossible de signer un manifeste avec des fichiers qui ne sont pas hachées, car les utilisateurs ne peuvent pas vérifier le contenu des fichiers non hachées.  
+ Si vous souhaitez signer votre manifeste, les hachages doivent être fournies pour tous les fichiers. Impossible de signer un manifeste avec des fichiers qui ne sont pas hachés, étant donné que les utilisateurs ne peuvent pas vérifier le contenu des fichiers non hachées.  
   
 ## <a name="example"></a>Exemple  
  L’exemple de code suivant illustre un `Signature` élément dans un manifeste de déploiement utilisé dans un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement.  
   
-```  
+```xml  
 <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">  
   <SignedInfo>  
     <CanonicalizationMethod Algorithm=  

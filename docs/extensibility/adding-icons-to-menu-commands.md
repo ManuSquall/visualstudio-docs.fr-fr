@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098390"
 ---
 # <a name="adding-icons-to-menu-commands"></a>Ajouter des icônes aux commandes de Menu
 Les commandes peuvent apparaître dans les menus et barres d’outils. Des barres d’outils, il est courant pour une commande à afficher avec simplement sur une icône (pour économiser de l’espace) lors de menus, qu'une commande apparaît généralement avec une icône et le texte.  

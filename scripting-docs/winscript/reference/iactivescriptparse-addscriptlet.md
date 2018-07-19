@@ -1,11 +1,11 @@
 ---
 title: IActiveScriptParse::AddScriptlet | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScriptParse.AddScriptlet
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScriptParse_AddScriptlet
 ms.assetid: 824929f4-4dd3-473a-92d9-0b96acea2f14
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724649"
 ---
 # <a name="iactivescriptparseaddscriptlet"></a>IActiveScriptParse::AddScriptlet
 Ajoute un scriptlet du code pour le script. Cette méthode est utilisée dans les environnements où l’état permanent du script est étroitement avec le document de l’hôte et l’hôte est chargé pour la restauration du script, plutôt que dans un `IPersist*` interface. Les exemples principales sont des langages de script HTML qui autorisent les scriptlets de code incorporé dans le document HTML à attacher aux événements intrinsèques (par exemple, ONCLICK="button1.text='Exit' »).  

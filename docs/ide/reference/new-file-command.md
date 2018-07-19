@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704744"
 ---
 # <a name="new-file-command"></a>Nouveau fichier, commande
 Crée un fichier et l’ouvre. Le fichier s’affiche sous le dossier Fichiers divers.

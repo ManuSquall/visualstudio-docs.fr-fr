@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474022"
 ---
 # <a name="debugger-project-settings"></a>Paramètres du projet du débogueur
 Certains paramètres de projet affectent également le débogage. Ces paramètres déterminent des éléments tels que les répertoires de recherche du débogueur, la commande et les arguments de commande utilisés pour démarrer le programme, ainsi que le type d'informations de débogage créées pour le programme. Vous pouvez modifier ces paramètres dans la boîte de dialogue **Pages de propriétés** .  

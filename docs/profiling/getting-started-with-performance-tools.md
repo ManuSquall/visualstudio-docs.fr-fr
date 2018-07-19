@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576441"
 ---
 # <a name="getting-started-with-performance-tools"></a>Bien démarrer avec les outils d’analyse des performances
 Cette section fournit une vue d’ensemble des concepts et des tâches que vous devez suivre lorsque vous collectez, affichez et analysez les performances du code à l’aide des outils d’analyse des performances de Visual Studio.  

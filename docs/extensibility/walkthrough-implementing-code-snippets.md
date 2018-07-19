@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148686"
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>Procédure pas à pas : Implémentation d’extraits de Code
 Vous pouvez créer des extraits de code et les inclure dans une extension de l’éditeur afin que les utilisateurs de l’extension de les ajouter à leur propre code.  

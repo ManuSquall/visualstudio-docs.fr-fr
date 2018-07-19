@@ -14,17 +14,18 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a653dd6488a366f229311c3541c37cf5e984fc99
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dd638a539b8956716aa60b5361bd003c18d35f9b
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283323"
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Démarrage rapide : Créer votre première application de plateforme Windows universelle dans Visual Studio avec XAML et C&#35;
 
 Dans cette présentation de 5-10 minutes de l’environnement de développement intégré (IDE) Visual Studio, vous allez créer une application « Hello World » qui s’exécute sur n’importe quel appareil Windows 10. Pour ce faire, vous allez utiliser un modèle de projet de plateforme Windows universelle (UWP), le langage XAML (Extensible Application Markup Language) et le langage de programmation C#.
 
-Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) pour l’installer gratuitement.
+Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour l’installer gratuitement.
 
 ## <a name="create-a-project"></a>Créer un projet
 
@@ -59,7 +60,7 @@ Il est temps de commencer à développer. Vous allez ajouter un contrôle bouton
 
   ![Ouvrir MainPage.xaml à partir de l’Explorateur de solutions ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
 
-  Il existe deux volets : **le concepteur XAML**, qui comprend une zone de conception et **l’éditeur XAML**, où vous pouvez ajouter ou modifier le code.    
+  Il existe deux volets : **le concepteur XAML**, qui comprend une zone de conception et **l’éditeur XAML**, où vous pouvez ajouter ou modifier le code.
 
   ![Volet du concepteur XAML dans l’éditeur XAML](../ide/media/uwp-xaml-editor.png)
 
@@ -130,7 +131,7 @@ Il est temps de générer, déployer et lancer l’application UWP « Hello Worl
 
 1. Choisissez **Ordinateur local** pour démarrer l’application.
 
-   ![Cliquer sur Ordinateur local pour démarrer et déboguer votre application UWP](../ide/media/uwp-start-or-debug.png "Cliquer sur Ordinateur local pour démarrer et déboguer votre application UWP")
+   ![Cliquer sur Ordinateur local pour démarrer et déboguer votre application UWP](../ide/media/uwp-start-or-debug.png)
 
    (Vous pouvez également choisir **Déboguer** > **Démarrer le débogage** à partir de la barre de menus ou appuyer sur **F5** pour démarrer votre application.)
 

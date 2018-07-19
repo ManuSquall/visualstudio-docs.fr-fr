@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135848"
 ---
 # <a name="migrating-a-legacy-language-service"></a>Migration d’un Service de langage hérité
 Vous pouvez migrer un service de langage hérité vers une version ultérieure de Visual Studio en mise à jour le projet et en ajoutant un fichier source.extension.vsixmanifest au projet. Le service de langage lui-même continueront de fonctionner comme avant, car l’éditeur Visual Studio adapte.  

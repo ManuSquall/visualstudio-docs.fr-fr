@@ -1,14 +1,14 @@
 ---
-title: "Profiler_heap_object_flags, énumération | Documents Microsoft"
-ms.custom: 
+title: Profiler_heap_object_flags, énumération | Documents Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 17936b7a-40d5-4774-b92b-b24ee391591e
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24734109"
 ---
 # <a name="profilerheapenumflags-enumeration"></a>PROFILER_HEAP_OBJECT_FLAGS, énumération
 Indicateurs qui représentent des si des informations supplémentaires sur un objet de tas pointé dans une relation d’objet sont exposées. Utilisé dans le [EnumHeap2](../../winscript/reference/iactivescriptprofilercontrol5-enumheap2-method.md) (méthode).  

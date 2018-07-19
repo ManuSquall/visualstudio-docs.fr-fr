@@ -1,13 +1,13 @@
 ---
-title: "Exception levée mais non décelée | Documents Microsoft"
-ms.custom: 
+title: Exception levée mais non décelée | Documents Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5022
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: b5235490-a8e7-42e3-804e-d85235bc6f05
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633119"
 ---
 # <a name="exception-thrown-and-not-caught"></a>Exception levée mais non décelée
 Vous inclus un `throw` instruction dans votre code, mais il se trouvait pas dans un **essayez** bloc, ou il a été associé ne **catch** bloc pour intercepter l’erreur. Des exceptions sont levées à partir la **essayez** bloquer à l’aide de la **lever** instruction et capturées à l’extérieur de la **essayez** bloc avec un **catch** instruction.  

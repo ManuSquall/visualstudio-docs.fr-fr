@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101301"
 ---
 # <a name="call-stack-evaluation"></a>Évaluation de pile des appels
 Pour afficher les frames de pile de la pile des appels en mode arrêt, vous devez implémenter la [EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) (méthode).  

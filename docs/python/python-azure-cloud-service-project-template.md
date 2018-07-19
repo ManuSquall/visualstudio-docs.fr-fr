@@ -1,7 +1,7 @@
 ---
 title: Modèle de projet de service cloud Azure pour Python
 description: Vue d’ensemble du modèle Visual Studio pour les services cloud Azure écrits dans Python, y compris le déploiement des rôles, les dépendances et la résolution des problèmes.
-ms.date: 07/13/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,11 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 42b2cf1fda241e178804847d86e6af9e4f33e7bd
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 2e1518b387f859e4be4427b05b2010167c7205c6
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058657"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projets de service cloud Azure pour Python
 
@@ -28,7 +29,7 @@ Cet article contient des détails sur le modèle de projet et les autres prises 
 
 ## <a name="create-a-project"></a>Créer un projet
 
-1. Installez le [SDK Azure .NET pour Visual Studio](https://www.visualstudio.com/vs/azure-tools/) nécessaire pour utiliser le modèle de service cloud.
+1. Installez le [SDK Azure .NET pour Visual Studio](https://visualstudio.microsoft.com/vs/azure-tools/) nécessaire pour utiliser le modèle de service cloud.
 1. Dans Visual Studio, sélectionnez **Fichier > Nouveau > Projet...** , puis recherchez « Azure Python » et sélectionnez **Service cloud Azure** dans la liste :
 
     ![Modèle de projet cloud Azure pour Python](media/template-azure-cloud-project.png)

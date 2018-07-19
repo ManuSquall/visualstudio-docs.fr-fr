@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ed99b0e7dbccbee99dbc290d79d2b25b9c84874
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b16d3b5feeadc033083cbd051497cb973372c3bb
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302790"
 ---
 # <a name="parametergroup-element"></a>ParameterGroup, élément
 Contient une liste facultative de paramètres qui seront présents sur la tâche générée par un `UsingTask``TaskFactory`. Pour plus d’informations, consultez [UsingTask, élément (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
@@ -33,7 +34,7 @@ Contient une liste facultative de paramètres qui seront présents sur la tâche
 
 ## <a name="syntax"></a>Syntaxe  
 
-```  
+```xml  
 <ParameterGroup />  
 ```  
 

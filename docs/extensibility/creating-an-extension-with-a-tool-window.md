@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102146"
 ---
 # <a name="creating-an-extension-with-a-tool-window"></a>Création d’une Extension avec une fenêtre outil
 Dans cette procédure, vous apprenez à utiliser le modèle de projet VSIX et **fenêtre de l’outil personnalisé** modèle d’élément pour créer une extension avec une fenêtre outil.  

@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec882cc5797eb99370beac5e28b87ca0b981cf2a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 524f6f575725fed754c3873af8a9ff62a3c3686f
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34477546"
 ---
-# <a name="understanding-instrumentation-data-values"></a>Fonctionnement des valeurs de données d’instrumentation
+# <a name="understand-instrumentation-data-values"></a>Comprendre le fonctionnement des valeurs de données d’instrumentation
 
 La méthode de profilage par *instrumentation* de Visual Studio enregistre des informations chronologiques détaillées sur les appels de fonction, les lignes et les instructions de l’application profilée.
 
@@ -98,5 +99,5 @@ Pourcentage du total des valeurs de temps inclusif d’application de la session
 
 ## <a name="see-also"></a>Voir aussi
 
-[Analyse des données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)  
+[Analyser les données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)  
 [Guide pratique pour choisir des méthodes de collecte](../profiling/how-to-choose-collection-methods.md)

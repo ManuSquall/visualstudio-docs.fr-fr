@@ -30,6 +30,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947116"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Navigateur web, Environnement, boîte de dialogue Options
 Définit les options à la fois pour le navigateur web interne et pour Internet Explorer. Pour accéder à cette boîte de dialogue, cliquez sur **Options** dans le menu **Outils**, développez le dossier **Environnement**, puis sélectionnez **Navigateur web**.

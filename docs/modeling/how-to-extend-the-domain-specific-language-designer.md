@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951464"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Comment : étendre le concepteur de langage spécifique à un domaine
 Vous pouvez apporter des extensions vers le concepteur qui vous permet de modifier des définitions DSL. Types d’extensions que vous pouvez apporter comprennent l’ajout de commandes de menu, ajout de gestionnaires pour faire glisser et double-cliquez sur les mouvements et les règles qui sont déclenchés lorsque des types particuliers de relations ou des valeurs changent. Les extensions peuvent empaquetées en tant qu’une Extension d’intégration Visual Studio (VSIX) et distribuées à d’autres utilisateurs.

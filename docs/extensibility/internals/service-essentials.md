@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132653"
 ---
 # <a name="service-essentials"></a>Service Essentials
 Un service est un contrat entre deux VSPackages. Un VSPackage fournit un ensemble spécifique d’interfaces pour un autre VSPackage à consommer. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] est une collection de VSPackages qui fournit des services aux autres packages VS à elle-même.  

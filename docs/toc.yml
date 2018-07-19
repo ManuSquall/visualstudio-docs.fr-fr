@@ -2,6 +2,10 @@
   href: ide/index.md
 - name: Vue d'ensemble
   href: ide/visual-studio-ide.md
+  expanded: true
+  items:
+    - name: Fonctionnalités avancées
+      href: ide/advanced-feature-overview.md
 - name: Installation
   items:
     - name: Installer Visual Studio
@@ -35,7 +39,7 @@
       href: install/repair-visual-studio.md
     - name: Désinstaller Visual Studio
       href: install/uninstall-visual-studio.md
-    - name: Visual Studio Administrator Guide
+    - name: Guide de l’administrateur Visual Studio
       href: install/visual-studio-administrator-guide.md
       items:
         - name: Utiliser la ligne de commande
@@ -53,7 +57,7 @@
             - name: Installer et utiliser Visual Studio derrière un pare-feu ou un serveur proxy
               href: install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md
               items:
-                - name: Résolution des erreurs de réseau lorsque vous installez ou utilisez Visual Studio
+                - name: Résoudre les erreurs de réseau quand vous installez ou utilisez Visual Studio
                   href: install/troubleshooting-network-related-errors-in-visual-studio.md
         - name: Déployer dans une entreprise
           items:
@@ -128,7 +132,7 @@
     - name: R dans Visual Studio...
       href: rtvs/getting-started-with-r.md
     - name: Node.js dans Visual Studio
-      href: nodejs/tutorial-nodejs.md
+      href: javascript/tutorial-nodejs.md
     - name: 'C# dans Visual Studio'
       href: ide/tutorial-csharp-aspnet-core.md
     - name: Visual Basic dans Visual Studio
@@ -149,10 +153,6 @@
               href: ide/creating-solutions-and-projects.md
             - name: 'Porter, migrer et mettre à niveau des projets'
               href: porting/port-migrate-and-upgrade-visual-studio-projects.md
-            - name: Ajouter et supprimer des éléments de projet
-              href: ide/adding-and-removing-project-items.md
-            - name: Types de fichiers projet et solution
-              href: ide/reference/project-and-solution-file-types.md
             - name: Gérer les propriétés des projets et des solutions
               href: ide/managing-project-and-solution-properties.md
             - name: Gérer les références dans un projet
@@ -342,9 +342,6 @@
               items:
                 - name: Visual Basic IntelliSense
                   href: ide/visual-basic-specific-intellisense.md
-                  items:
-                    - name: Listes de saisie semi-automatique filtrées en Visual Basic
-                      href: ide/filtered-completion-lists-in-visual-basic.md
                 - name: 'C# IntelliSense'
                   href: ide/visual-csharp-intellisense.md
                 - name: IntelliSense JavaScript
@@ -473,6 +470,11 @@
           href: ide/find-and-fix-code-errors.md
         - name: Développement mobile multiplateforme
           href: cross-platform/cross-platform-mobile-development-in-visual-studio.md
+        - name: 'Développement F#'
+          href: ide/fsharp-visual-studio.md
+          items:
+            - name: Cibler les versions antérieures du .NET
+              href: ide/fsharp-target-older-dotnet-versions.md
         - name: Développement Office et SharePoint
           href: vsto/office-and-sharepoint-development-in-visual-studio.md
         - name: Utiliser des fichiers XML et XSLT
@@ -600,23 +602,18 @@
           href: ide/how-to-specify-build-events-csharp.md
         - name: Configuration d'avertissements en Visual Basic
           href: ide/configuring-warnings-in-visual-basic.md
-        - name: Désactiver le processus d’hébergement
-          href: ide/how-to-disable-the-hosting-process.md
-          items:
-            - name: Processus d'hébergement (vshost.exe)
-              href: ide/hosting-process-vshost-exe.md
         - name: "Procédure pas à pas\_: créer un environnement de build sur plusieurs ordinateurs"
           href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
     - name: Déboguer...
-      href: debugger/debugger-feature-tour.md
+      href: debugger/index.md
     - name: Tester...
       href: test/improve-code-quality.md
     - name: Mesurer les performances...
-      href: profiling/profiling-feature-tour.md
+      href: profiling/index.md
     - name: Analyser la qualité du code...
-      href: code-quality/analyzing-application-quality-by-using-code-analysis-tools.md
+      href: code-quality/index.md
     - name: Déployer...
-      href: deployment/deploying-applications-services-and-components.md
+      href: deployment/index.md
     - name: Étendre Visual Studio...
       href: extensibility/visual-studio-sdk.md
     - name: Analyser et modéliser l’architecture...
@@ -630,6 +627,8 @@
           href: ide/how-to-customize-menus-and-toolbars-in-visual-studio.md
         - name: Personnaliser les dispositions de fenêtres
           href: ide/customizing-window-layouts-in-visual-studio.md
+        - name: Personnaliser l’imbrication de fichiers dans l’Explorateur de solutions
+          href: ide/file-nesting-solution-explorer.md
         - name: Personnaliser la page de démarrage
           href: ide/customizing-the-start-page-for-visual-studio.md
         - name: Rechercher et utiliser des extensions Visual Studio
@@ -645,17 +644,6 @@
           href: ide/optimize-visual-studio-startup-time.md
         - name: Conseils et astuces
           href: ide/visual-studio-performance-tips-and-tricks.md
-    - name: Sécurité
-      href: ide/security-in-visual-studio.md
-      items:
-        - name: Sécuriser des applications
-          href: ide/securing-applications.md
-        - name: Assurer la sécurité
-          href: ide/maintaining-security.md
-        - name: Autorisations utilisateur
-          href: ide/user-permissions-and-visual-studio.md
-        - name: Bibliographie relative à la sécurité
-          href: ide/security-bibliography.md
     - name: Gérer les fonctionnalités d’accessibilité
       href: ide/reference/accessibility-features-of-visual-studio.md
       items:
@@ -698,8 +686,6 @@
       items:
         - name: Paramètres de modèle
           href: ide/template-parameters.md
-        - name: Informations de référence sur les schémas de modèles (extensibilité)
-          href: extensibility/visual-studio-template-schema-reference.md?context=visualstudio/default
     - name: Éléments généraux de l’interface utilisateur
       items:
         - name: Hiérarchie d'appels
@@ -860,6 +846,8 @@
               items:
                 - name: 'Paramètres avancés pour les services, boîte de dialogue'
                   href: ide/reference/advanced-settings-for-services-dialog-box.md
+            - name: 'Paramètres, page du Concepteur de projets'
+              href: ide/reference/settings-page-project-designer.md
             - name: 'Page Signature, Concepteur de projets'
               href: ide/reference/signing-page-project-designer.md
         - name: Pages de propriétés (JavaScript)
@@ -967,8 +955,6 @@
           href: ide/reference/open-file-command.md
         - name: 'Ouvrir un projet, commande'
           href: ide/reference/open-project-command.md
-        - name: 'Ouvrir une solution, commande'
-          href: ide/reference/open-solution-command.md
         - name: 'Imprimer, commande'
           href: ide/reference/print-command.md
         - name: 'Espion express, commande'
@@ -997,6 +983,14 @@
           href: ide/reference/toggle-breakpoint-command.md
         - name: 'Espion, commande'
           href: ide/reference/watch-command.md
+    - name: Sécurité
+      items:
+        - name: Développer des applications sécurisées
+          href: ide/securing-applications.md
+        - name: Exécuter Visual Studio en tant qu’utilisateur normal ou administrateur
+          href: ide/user-permissions-and-visual-studio.md
+        - name: Protection des informations Windows (WIP)
+          href: ide/exempt-visual-studio-from-wip.md
     - name: Microsoft Help Viewer
       href: ide/microsoft-help-viewer.md
       items:
@@ -1043,18 +1037,23 @@
           href: /visualstudio/releasenotes/vs2017-relnotes-history?context=visualstudio/default
         - name: Fréquence des versions
           href: /visualstudio/productinfo/vs2017-release-rhythm?context=visualstudio/default
+        - name: Feuille de route Visual Studio
+          href: /visualstudio/productinfo/vs2018-roadmap?context=visualstudio/default
         - name: Configuration requise
           href: /visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default
         - name: Compatibilité de la plateforme
           href: /visualstudio/productinfo/vs2017-compatibility-vs?context=visualstudio/default
         - name: Gestion des licences
-          href: 'https://www.visualstudio.com/license-terms/'
+          href: 'https://visualstudio.microsoft.com/license-terms/'
         - name: Code distribuable
           href: /visualstudio/productinfo/2017-redistribution-vs?context=visualstudio/default
         - name: Cycle de vie du support et maintenance
           href: /visualstudio/productinfo/vs-servicing-vs?context=visualstudio/default
     - name: "Signaler un problème avec Visual Studio\_2017"
       href: ide/how-to-report-a-problem-with-visual-studio-2017.md
+      items:
+        - name: Confidentialité des données de la communauté des développeurs
+          href: ide/developer-community-privacy.md
     - name: Programme d'amélioration de l'expérience utilisateur
       href: ide/visual-studio-experience-improvement-program.md
       items:

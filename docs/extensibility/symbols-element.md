@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142774"
 ---
 # <a name="symbols-element"></a>Élément de symboles
 Définit le GUID et ID qui sont utilisés par d’autres éléments VSCT. Du code non managé, cette information provient généralement des fichiers d’en-tête spécifiés par [Extern élément](../extensibility/extern-element.md). Le code managé utilise les éléments enfants de l’élément de symboles pour définir ces informations.  

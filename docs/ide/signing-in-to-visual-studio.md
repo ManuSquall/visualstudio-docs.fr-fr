@@ -1,9 +1,9 @@
 ---
-title: Se connecter à Visual Studio | Microsoft Docs
+title: Se connecter à Visual Studio
 ms.custom: ''
 ms.date: 11/16/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: TerryGLee
@@ -11,11 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e33d59be1be9049d8abdaf4f43dac221569cb7b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ff5d9646d6715b546179058074f2279810b9ca48
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282226"
 ---
 # <a name="sign-in-to-visual-studio"></a>Se connecter à Visual Studio
 
@@ -25,11 +26,11 @@ Vous pouvez éventuellement personnaliser et optimiser votre expérience de dév
 
 Quand vous vous connectez, vous bénéficiez de nombreux avantages supplémentaires dans Visual Studio. Une fois que vous êtes connecté, vous pouvez synchroniser vos paramètres sur tous vos appareils, prolonger une version d’évaluation et vous connecter automatiquement à un service Azure, pour ne citer que quelques exemples.
 
-Voici une liste complète de tous les avantages dont vous pouvez éventuellement bénéficier après votre connexion :  
+Voici une liste complète de tous les avantages dont vous pouvez éventuellement bénéficier après votre connexion :
 
 - **Accédez à Visual Studio Dev Essentials** : ce programme inclut des logiciels gratuits, des formations, un support technique, et plus encore. Voir [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) pour obtenir de plus amples informations.
 
-- **Synchronisez vos paramètres Visual Studio** : les paramètres que vous personnalisez, comme les combinaisons de touches, la disposition des fenêtres et le thème de couleur, s’appliquent immédiatement quand vous vous connectez à Visual Studio sur un appareil. Voir [Paramètres synchronisés dans Visual Studio](../ide/synchronized-settings-in-visual-studio.md).
+- **Synchronisez vos paramètres Visual Studio** : les paramètres que vous personnalisez, comme les combinaisons de touches, la disposition des fenêtres et le thème de couleur, s’appliquent immédiatement quand vous vous connectez à Visual Studio sur un appareil. Consultez [Paramètres synchronisés dans Visual Studio](../ide/synchronized-settings-in-visual-studio.md).
 
 - **Déverrouillez l’édition Visual Studio Community** : si l’installation de votre édition Community vous demande une licence, connectez-vous à l’IDE pour vous débloquer.
 
@@ -43,7 +44,7 @@ Voici une liste complète de tous les avantages dont vous pouvez éventuellement
 
 La première fois que vous démarrez Visual Studio, vous êtes invité à vous connecter et à fournir des informations d'inscription de base. Vous devez choisir un compte Microsoft ou bien un compte professionnel ou scolaire qui vous représente le mieux. Si vous n'avez aucun de ces comptes, vous pouvez créer gratuitement un compte Microsoft. Consultez [Comment ouvrir un compte Microsoft ?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
 
-Choisissez ensuite les paramètres d'interface utilisateur et le thème de couleur que vous souhaitez utiliser dans Visual Studio. Visual Studio mémorise ces paramètres et les synchronise dans tous les environnements de Visual Studio auxquels vous êtes connecté. Pour obtenir la liste des paramètres qui sont synchronisés, consultez [Paramètres synchronisés](../ide/synchronized-settings-in-visual-studio.md). Vous pouvez changer les paramètres ultérieurement si vous ouvrez le menu **Outils**, **Options** dans Visual Studio.
+Choisissez ensuite les paramètres d'interface utilisateur et le thème de couleur que vous souhaitez utiliser dans Visual Studio. Visual Studio mémorise ces paramètres et les synchronise dans tous les environnements de Visual Studio auxquels vous êtes connecté. Pour obtenir la liste des paramètres qui sont synchronisés, consultez [Paramètres synchronisés](../ide/synchronized-settings-in-visual-studio.md). Vous pouvez changer les paramètres ultérieurement si vous ouvrez le menu **Outils** > **Options** dans Visual Studio.
 
 Après avoir fourni les paramètres, Visual Studio démarre et vous êtes enregistré et prêt à commencer. Pour vérifier si vous êtes connecté, recherchez votre nom dans l'angle supérieur droit de l'environnement Visual Studio.
 
@@ -53,7 +54,7 @@ Après avoir fourni les paramètres, Visual Studio démarre et vous êtes enregi
 
 ## <a name="to-change-your-profile-information"></a>Pour modifier vos informations de profil
 
-1. Accédez à **Fichier**, **Paramètres du compte**, puis choisissez le lien **Gérer le profil Visual Studio**.
+1. Accédez à **Fichier** > **Paramètres du compte**, puis choisissez le lien **Gérer le profil Visual Studio**.
 
 1. Dans la fenêtre du navigateur, sélectionnez **Modifier le profil**, puis changez les paramètres souhaités.
 
@@ -61,9 +62,9 @@ Après avoir fourni les paramètres, Visual Studio démarre et vous êtes enregi
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
-Si vous rencontrez des problèmes lors de la connexion, consultez la [page de support technique des comptes](https://www.visualstudio.com/subscriptions/support/) pour obtenir de l’aide.
+Si vous rencontrez des problèmes pendant la connexion, consultez la [page de support technique des comptes](https://visualstudio.microsoft.com/subscriptions/support/) pour obtenir de l’aide.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Guide pratique pour déverrouiller Visual Studio](../ide/how-to-unlock-visual-studio.md)  
-[Vue d’ensemble de l’IDE Visual Studio](../ide/visual-studio-ide.md)
+* [Guide pratique pour déverrouiller Visual Studio](../ide/how-to-unlock-visual-studio.md)
+* [Vue d’ensemble de l’IDE Visual Studio](../ide/visual-studio-ide.md)

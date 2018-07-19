@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03fff714a8940a4722cb9def8077ce49f366a565
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e7bc06e106a6b42f2225668edb928e6fef7e349b
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572239"
 ---
 # <a name="trusted-application-deployment-overview"></a>Vue d'ensemble du déploiement d'applications approuvées
 Cette rubrique offre une vue d’ensemble du déploiement d’applications [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] qui ont des autorisations élevées à l’aide de la technologie de déploiement d’applications approuvées.  
@@ -86,7 +87,7 @@ Cette rubrique offre une vue d’ensemble du déploiement d’applications [!INC
  Le déploiement d'applications approuvées est spécifique de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]et peut uniquement être utilisé avec des applications [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .  
   
 ### <a name="sign-the-deployment"></a>Signer le déploiement  
- Après avoir obtenu votre certificat, vous devez l'utiliser pour signer votre déploiement. Si vous déployez votre application à l'aide de l'Assistant Publication de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , ce dernier génère automatiquement un certificat de test pour vous si vous n'avez pas spécifié de certificat. Vous pouvez également utiliser la fenêtre du Concepteur de projets [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , pour fournir un certificat fourni par une autorité de certification.  Consultez également [Comment : publier une Application ClickOnce à l’aide de l’Assistant Publication] (http://msdn.microsoft.com/library/31kztyey\(110\).  
+ Après avoir obtenu votre certificat, vous devez l'utiliser pour signer votre déploiement. Si vous déployez votre application à l'aide de l'Assistant Publication de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , ce dernier génère automatiquement un certificat de test pour vous si vous n'avez pas spécifié de certificat. Vous pouvez également utiliser la fenêtre du Concepteur de projets [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , pour fournir un certificat fourni par une autorité de certification.  Consultez également [Comment : publier une Application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 > [!CAUTION]
 >  Nous ne recommandons pas le déploiement de l'application avec un certificat de test.  

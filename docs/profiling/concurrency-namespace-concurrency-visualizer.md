@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 362c8e87c104dbed859421e21b43d309a6eab8b4
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: aec7bc6373644b81dd45eeeadefa33ab3af88396
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548136"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Concurrency, espace de noms (visualiseur concurrentiel)
 L'espace de noms `Concurrency` fournit des classes et des fonctions qui vous donnent accès au runtime d'accès concurrentiel, infrastructure de programmation simultanée pour C++. Pour plus d’informations, consultez [Runtime d’accès concurrentiel](/cpp/parallel/concrt/concurrency-runtime).  
@@ -41,4 +42,4 @@ namespace Concurrency;
  **En-tête** : cvmarkersobj.h  
   
 ## <a name="see-also"></a>Voir aussi  
- [Informations de référence sur la bibliothèque C](../profiling/c-library-reference.md)
+ [Informations de référence sur la bibliothèque C](../profiling/c-library-reference.md)

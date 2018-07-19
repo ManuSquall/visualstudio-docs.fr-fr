@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31470853"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>Débogage d'applications Web : dépannage
 Cette section contient des procédures courantes qui peuvent servir à résoudre des erreurs.  

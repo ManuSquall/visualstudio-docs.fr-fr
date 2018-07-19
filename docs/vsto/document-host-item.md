@@ -26,6 +26,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448374"
 ---
 # <a name="document-host-item"></a>Élément hôte de document
   L’élément hôte <xref:Microsoft.Office.Tools.Word.Document> est un type qui étend le type <xref:Microsoft.Office.Interop.Word.Document> à partir de l’assembly PIA (Primary Interop Assembly) de Word. L’élément hôte <xref:Microsoft.Office.Tools.Word.Document> fournit les mêmes propriétés, méthodes et événements qu’un objet <xref:Microsoft.Office.Interop.Word.Document> , mais il expose également des événements supplémentaires et agit comme conteneur pour les contrôles hôtes et les contrôles Windows Forms.  

@@ -1,14 +1,14 @@
 ---
-title: "Hébergement JavaScript Runtime | Microsoft Docs"
-ms.custom: 
+title: Hébergement JavaScript Runtime | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d6615079-2df7-420f-a126-077e7d42486c
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24567769"
 ---
 # <a name="javascript-runtime-hosting"></a>Hébergement JavaScript Runtime
 Les API JavaScript Runtime (JsRT) fournissent un moyen aux applications de bureau, du Windows Store et côté serveur s'exécutant sur le système d'exploitation Windows d'ajouter des fonctionnalités de script à une application à l'aide de Chakra, le moteur JavaScript conforme aux normes, également utilisé par Internet Explorer. Ces API sont disponibles sur Windows 10 ainsi que sur n'importe quelle version du système d'exploitation Windows doté de la version 11.0 d'Internet Explorer.  

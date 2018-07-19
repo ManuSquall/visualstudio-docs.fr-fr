@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148884"
 ---
 # <a name="vspackage-registration"></a>Inscription de VSPackage
 Les VSPackages devez informer [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] qu’ils sont installés et qu’il doivent être chargé. Ce processus s’effectue en écrivant des informations dans le Registre. Qui est une tâche typique d’un programme d’installation.  

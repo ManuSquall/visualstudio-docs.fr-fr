@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7da101ac664488acf2eeada391cbc691116f188
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bb54b8fa21ae5d2c0580c5d9bc7a570469877c3f
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572389"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283456"
 ---
 # <a name="features-of-the-code-editor"></a>Fonctionnalités de l’éditeur de code
 
-L’éditeur Visual Studio fournit de nombreuses fonctionnalités facilitant l’écriture et la gestion de votre code et de votre texte. Vous pouvez développer et réduire différents blocs de code en utilisant le mode Plan. Vous pouvez obtenir plus d’informations sur le code en utilisant IntelliSense, **l’Explorateur d’objets**et la hiérarchie d’appels. Vous pouvez rechercher du code en utilisant des fonctionnalités telles que **Atteindre**, **Atteindre la définition** et **Rechercher toutes les références**. Vous pouvez insérer des blocs de code à l’aide d’extraits de code et vous pouvez générer du code en utilisant des fonctionnalités telles que **Générer à partir de l’utilisation**. Si vous n’avez encore jamais utilisé l’éditeur de Visual Studio, consultez [Éditer votre code](https://www.visualstudio.com/vs/features/ide/) pour obtenir une vue d’ensemble rapide.
+L’éditeur Visual Studio fournit de nombreuses fonctionnalités facilitant l’écriture et la gestion de votre code et de votre texte. Vous pouvez développer et réduire différents blocs de code en utilisant le mode Plan. Vous pouvez obtenir plus d’informations sur le code en utilisant IntelliSense, **l’Explorateur d’objets**et la hiérarchie d’appels. Vous pouvez rechercher du code en utilisant des fonctionnalités telles que **Atteindre**, **Atteindre la définition** et **Rechercher toutes les références**. Vous pouvez insérer des blocs de code à l’aide d’extraits de code et vous pouvez générer du code en utilisant des fonctionnalités telles que **Générer à partir de l’utilisation**. Si vous n’avez encore jamais utilisé l’éditeur de Visual Studio, consultez [Éditer votre code](https://visualstudio.microsoft.com/vs/features/ide/) pour obtenir une vue d’ensemble rapide.
 
 Vous pouvez afficher votre code de différentes façons. Par défaut, **l’Explorateur de solutions** affiche votre code organisé par fichiers. Pour afficher votre code organisé par classes, cliquez sur l’onglet **Affichage de classes** situé en bas de la fenêtre.
 

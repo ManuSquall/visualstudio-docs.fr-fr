@@ -84,6 +84,8 @@
               items:
                 - name: "Procédure pas à pas\_: création d’une tâche inline"
                   href: walkthrough-creating-an-inline-task.md
+            - name: Tâches inline MSBuild avec RoslynCodeTaskFactory
+              href: msbuild-roslyncodetaskfactory.md
         - name: Comparaison des propriétés et des éléments
           href: comparing-properties-and-items.md
         - name: Caractères spéciaux MSBuild
@@ -279,6 +281,8 @@
               href: csc-task.md
             - name: 'Delete, tâche'
               href: delete-task.md
+            - name: 'DownloadFile, tâche'
+              href: downloadfile-task.md
             - name: 'Error, tâche'
               href: error-task.md
             - name: 'Exec, tâche'
@@ -351,6 +355,8 @@
               href: touch-task.md
             - name: 'UnregisterAssembly, tâche'
               href: unregisterassembly-task.md
+            - name: 'Unzip, tâche'
+              href: unzip-task.md
             - name: 'UpdateManifest, tâche'
               href: updatemanifest-task.md
             - name: 'Vbc, tâche'
@@ -367,6 +373,8 @@
               href: xmlpoke-task.md
             - name: 'XslTransformation, tâche'
               href: xsltransformation-task.md
+            - name: 'ZipDirectory, tâche'
+              href: zipdirectory-task.md
         - name: Conditions MSBuild
           href: msbuild-conditions.md
         - name: Constructions conditionnelles MSBuild

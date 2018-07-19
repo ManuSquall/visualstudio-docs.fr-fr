@@ -14,21 +14,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7b992dadb703cf1c4f73830324e9934d7525645
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1ad1edbd9d093fc5f1c7f746b7b5f2a2b9d2bd31
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131880"
 ---
 # <a name="overview-of-code-analysis-for-managed-code"></a>Vue d’ensemble de l’analyse du code pour le code managé
 
-Visual Studio 2017 analyse du code managé de deux manières : avec hérité *FxCop* analyse statique d’assemblys managés et avec la plateforme des compilateurs .NET *analyseurs*. Cette rubrique traite de l’analyse statique du code FxCop. Pour plus d’informations sur l’analyse du code à l’aide des analyseurs de plateforme des compilateurs .NET, consultez [des analyseurs de vue d’ensemble de Roslyn](../code-quality/roslyn-analyzers-overview.md).
+Visual Studio 2017 analyse du code managé de deux manières : avec legacy *FxCop* analyse statique d’assemblys managés et avec .NET Compiler Platform *analyseurs*. Cette rubrique traite de l’analyse du code statique FxCop. Pour en savoir plus sur l’analyse du code à l’aide des analyseurs .NET Compiler Platform, consultez [analyseurs de vue d’ensemble de Roslyn](../code-quality/roslyn-analyzers-overview.md).
 
 L'outil d'analyse du code managé analyse les assemblys et signale les informations à leur sujet, notamment les violations des règles de programmation et de design présentées dans les règles de conception de Microsoft .NET Framework.
 
 L'outil d'analyse représente les contrôles effectués lors d'une analyse comme messages d'avertissement. Les messages d'avertissement identifient les problèmes de programmation et de conception pertinents et, si possible, fournissent des informations relatives à leur résolution.
 
-## <a name="ide-integrated-development-environment-integration"></a>Intégration IDE (environnement de développement intégré)
+> [!NOTE]
+> Analyse statique du code n’est pas pris en charge pour les projets .NET Core et .NET Standard dans Visual Studio. Si vous exécutez l’analyse du code sur un projet .NET Core ou .NET Standard dans le cadre de msbuild, vous verrez une erreur similaire à **erreur : CA0055 : Impossible d’identifier la plateforme pour \<your.dll >**. Pour analyser le code dans les projets .NET Core ou .NET Standard, utilisez [analyseurs de Roslyn](../code-quality/roslyn-analyzers-overview.md) à la place.
+
+## <a name="ide-integrated-development-environment-integration"></a>Intégration à l’IDE (environnement de développement intégré)
 
 Vous pouvez exécuter l’analyse du code sur votre projet manuellement ou automatiquement.
 
@@ -57,7 +61,7 @@ Public class MyClass
 Pour plus d’informations, consultez [supprimer les avertissements](../code-quality/in-source-suppression-overview.md).
 
 > [!NOTE]
-> Si vous migrez un projet vers Visual Studio 2017, vous pouvez être confronté à avec un grand nombre d’avertissements d’analyse du code. Si vous n’êtes pas prêt à résoudre les avertissements que vous souhaitez être productif immédiatement, vous pouvez *base* l’état de l’analyse de votre projet. À partir de la **analyser** menu, sélectionnez **exécuter l’analyse du Code et supprimer les problèmes actifs**.
+> Si vous migrez un projet vers Visual Studio 2017, vous pourrez soudainement être confronté à un grand nombre d’avertissements d’analyse du code. Si vous n’êtes pas prêt à résoudre les avertissements et souhaitent être plus productifs tout de suite, vous pouvez *baseline* l’état d’analyse de votre projet. À partir de la **analyser** menu, sélectionnez **exécuter l’analyse du Code et supprimer les problèmes actifs**.
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Exécuter l’analyse du code dans le cadre de la stratégie d’archivage
 
@@ -67,11 +71,11 @@ En tant qu'organisation, vous pourriez demander à ce que tous les archivages re
 
 - Analyse du code est exécutée dans le cadre de la build la plus récente.
 
-Vous pouvez l’effectuer en spécifiant des stratégies d’archivage. Pour plus d’informations, consultez [améliorer la qualité du Code avec les stratégies d’archivage projet d’équipe](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).
+Vous pouvez l’effectuer en spécifiant des stratégies d’archivage. Pour plus d’informations, consultez [améliorant la qualité du Code avec les stratégies d’archivage projet d’équipe](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).
 
 ## <a name="team-build-integration"></a>Intégration de Team build
 
-Vous pouvez utiliser les fonctionnalités intégrées du système de génération pour exécuter l’outil d’analyse dans le cadre du processus de génération. Pour plus d’informations, consultez [créer et libérer (VSTS)](/vsts/build-release/index).
+Vous pouvez utiliser les fonctionnalités intégrées du système de génération pour exécuter l’outil d’analyse dans le cadre du processus de génération. Pour plus d’informations, consultez [Build et release (VSTS)](/vsts/build-release/index).
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569928"
 ---
 # <a name="msbuild-tasks"></a>Tâches MSBuild
 Une plateforme de génération doit pouvoir exécuter plusieurs actions pendant le processus de génération. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] utilise des *tâches* pour effectuer ces actions. Une tâche est une unité de code exécutable utilisée par [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pour exécuter des opérations de génération atomiques.  

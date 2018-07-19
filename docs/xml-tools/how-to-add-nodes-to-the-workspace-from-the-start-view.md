@@ -15,6 +15,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548672"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Comment : ajouter des nœuds à l’espace de travail à partir de la vue de départ
 

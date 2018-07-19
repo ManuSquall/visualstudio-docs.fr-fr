@@ -1,5 +1,5 @@
 ---
-title: Kit de développement logiciel de Microsoft Help Viewer | Documents Microsoft
+title: Microsoft Help Viewer SDK | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,41 +11,42 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3ddc23ab56df017ef0a37c56cd5b0a81ee33a07
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 47788ccd2fb1bd03ce2f2981289d51f0d625b6a9
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234671"
 ---
-# <a name="microsoft-help-viewer-sdk"></a>Kit de développement logiciel de Microsoft Help Viewer
+# <a name="microsoft-help-viewer-sdk"></a>Kit SDK de Microsoft Help Viewer
 Cet article contient les tâches suivantes pour les intégrateurs de la visionneuse d’aide Visual Studio :  
   
 -   Création d’une rubrique (prise en charge de la touche F1)  
   
--   Création d’un package de marque de contenu de la visionneuse d’aide  
+-   Création d’un package de contenu de la personnalisation de Help Viewer  
   
 -   Déploiement d’un ensemble d’articles  
   
--   Ajout d’aide à l’interpréteur de commandes de Visual Studio (intégré ou isolé)  
+-   Ajout d’aide pour l’interpréteur de commandes de Visual Studio (intégré ou isolé)  
   
 -   Ressources supplémentaires  
   
 ### <a name="creating-a-topic-f1-support"></a>Création d’une rubrique (prise en charge de la touche F1)  
-Cette section fournit une vue d’ensemble des composants d’une rubrique présentée, les exigences de la rubrique, une brève description de la création d’une rubrique (y compris les exigences de prise en charge de F1) et pour finir, une rubrique d’exemple avec son résultat du rendu.  
+Cette section fournit une vue d’ensemble des composants d’une rubrique présentée, exigences de rubrique, une brève description de la création d’une rubrique (y compris les exigences de prise en charge de F1) et enfin, une rubrique d’exemple avec son résultat du rendu.  
   
-**Présentation de rubrique de visionneuse de l’aide**  
+**Vue d’ensemble de la rubrique visionneuse aide**  
   
-Lorsqu’une rubrique est appelée pour le rendu, la visionneuse d’aide Obtient les éléments de package de marque qui sont associés à la rubrique au moment de l’installation ou de la dernière mise à jour, ainsi que la rubrique XHTML et combine les deux pour entraîner l’affichage du contenu présenté (marque les données + données de la rubrique).  Le package de personnalisation contient des logos, prise en charge des comportements de contenu et le texte de personnalisation (droits d’auteur, etc.).  Pour plus d’informations sur les éléments de package de marque, voir « Création de Package de personnalisation » ci-dessous.  Il est associé à la rubrique aucun package de personnalisation, la visionneuse d’aide utilisera le package de marque secours situé dans la racine de l’application visionneuse d’aide (Branding_en-US.mshc).  
+Lorsqu’une rubrique est appelée pour le rendu, la visionneuse d’aide Obtient les éléments de package de marque qui sont associés à la rubrique au moment de l’installation ou de la dernière mise à jour, ainsi que la rubrique XHTML et combine les deux pour entraîner l’affichage du contenu présenté (personnalisation des données + données de la rubrique).  Le package de marque contient des logos, prise en charge des comportements de contenu et le texte de personnalisation (droits d’auteur, etc.).  Voir « Création de Package de personnalisation » ci-dessous pour plus d’informations sur les éléments de package de marque.  En cas d’aucun package de personnalisation associé à la rubrique, la visionneuse d’aide utilisera le package de marque secours situé dans la racine de l’application visionneuse d’aide (Branding_en US.mshc).  
   
 **Aider les exigences de rubrique de visionneuse**  
   
-Pour s’afficher correctement dans la visionneuse d’aide, le contenu de la rubrique brut doit être XHTML 1.1 de la base W3C.  
+Pour être rendue correctement dans la visionneuse d’aide, le contenu de la rubrique brutes doit être XHTML 1.1 de la base W3C.  
   
 En règle générale, une rubrique contient deux sections :  
   
--   Métadonnées (voir le contenu de référence de métadonnées) : ID de nœud, etc. parent pour les données sur ce sujet, par exemple, l’ID unique de la rubrique, valeur de mot clé, l’ID de la table des matières, de la rubrique.  
+-   Métadonnées (voir le contenu de référence de métadonnées) : ID de nœud, etc. parent pour les données sur le sujet, par exemple, l’ID unique de la rubrique, la valeur du mot clé, l’ID de la table des matières, de la rubrique.  
   
--   Corps de contenu : conforme à XHTML 1.1 de la base W3C qui inclut la prise en charge les comportements de contenu (zone réductible, extrait de code, etc. Une liste complète est indiquée ci-dessous).  
+-   Corps de contenu : conforme à XHTML 1.1 de la base W3C qui inclut pris en charge les comportements de contenu (zone réductible, extrait de code, etc. Obtenir la liste complète ci-dessous).  
   
 Package de personnalisation de Visual Studio prises en charge les contrôles :  
   
@@ -65,7 +66,7 @@ Chaînes de langue prise en charge (non sensible à la casse) :
   
 -   CSharp ou c#  
   
--   cplusplus ou visualc ++ ou c ++  
+-   cplusplus ou Visual c++ ou c ++  
   
 -   JScript  
   
@@ -73,11 +74,11 @@ Chaînes de langue prise en charge (non sensible à la casse) :
   
 -   f # ou fsharp ou fs  
   
--   autre - chaîne qui représente un nom de langue  
+-   autre - chaîne qui représente un nom de langage  
   
 **Création d’une rubrique de la visionneuse d’aide**  
   
-Créer un nouveau document XHTML nommé ContosoTopic4.htm et inclure la balise de titre (ci-dessous).  
+Créer un document XHTML nommé ContosoTopic4.htm et inclure la balise de titre (ci-dessous).  
   
 ```html  
 <html>  
@@ -92,13 +93,13 @@ Créer un nouveau document XHTML nommé ContosoTopic4.htm et inclure la balise d
   
 ```  
   
-Ensuite, ajoutez des données pour définir comment la rubrique doit être présenté (self marque ou non), de la référencer cette rubrique pour F1, dans lequel cette rubrique existe dans la table des matières, son ID (pour la référence de lien par d’autres rubriques), etc.  Consultez le tableau « Métadonnées de contenu » ci-dessous pour obtenir la liste complète des métadonnées prises en charge.  
+Ensuite, ajoutez des données pour définir la manière dont la rubrique doit être présenté (self marque ou non), comment référencer cette rubrique pour F1, dans lequel cette rubrique existe dans la table des matières, son ID (pour les références de lien par les autres rubriques), etc.  Consultez le tableau « Métadonnées de contenu » ci-dessous pour une liste complète des métadonnées prises en charge.  
   
--   Dans ce cas, nous allons utiliser notre propre package de personnalisation, une variante du package de marque de visionneuse d’aide Visual Studio.  
+-   Dans ce cas, nous allons utiliser notre propre package de personnalisation, une variante du package de personnalisation de Visual Studio Help Viewer.  
   
--   Ajouter le nom de métadonnées de la touche F1 et la valeur (contenu de « Microsoft.Help.F1 » = « ContosoTopic4 ») qui correspondra à la valeur de F1 fournie dans le jeu de propriétés IDE.  (Voir la section prise en charge de la touche F1 pour plus d’informations.)   C’est la valeur mise en correspondance avec la touche F1 appeler à partir de l’IDE pour afficher cette rubrique quand F1 est choisi dans l’IDE.  
+-   Ajouter le nom de métadonnées de la touche F1 et la valeur (contenu de « Microsoft.Help.F1 » = « ContosoTopic4 ») qui correspondra à la valeur de F1 fournie dans le sac de l’IDE.  (Voir la section prise en charge de la touche F1 pour plus d’informations.)   C’est la valeur qui est mis en correspondance avec la touche F1 appeler à partir de l’IDE pour afficher cette rubrique quand F1 est sélectionnée dans l’IDE.  
   
--   Ajoutez l’ID de rubrique. Il s’agit de la chaîne qui est utilisée par les autres rubriques à lier à cette rubrique.  Il est l’ID visionneuse d’aide pour cette rubrique.  
+-   Ajouter l’ID de rubrique. Il s’agit de la chaîne qui est utilisée par les autres rubriques pour lier à cette rubrique.  Il est l’ID visionneuse d’aide pour cette rubrique.  
   
 -   Pour la table des matières, ajoutez le nœud du parent de cette rubrique pour définir l’emplacement de ce nœud de table des matières de rubrique.  
   
@@ -130,24 +131,24 @@ Section de métadonnées d’exemple :
   
 **Le corps de la rubrique**  
   
-Le corps (y compris ne pas l’en-tête et le pied de page) de la rubrique contient des liens de page, une section de note, une zone réductible, un extrait de code et une section de texte spécifique de langage.  Consultez la section Personnalisation pour plus d’informations sur les zones de la rubrique présentée.  
+Le corps (sans l’en-tête et le pied de page) de la rubrique contient des liens de page, une section Remarque, une zone réductible, un extrait de code et une section de texte spécifique du langage.  Consultez la section Personnalisation pour plus d’informations sur ces zones de la rubrique présentée.  
   
-1.  Ajoutez une balise de titre de rubrique :  `<div class="title">Contoso Topic 4</div>`  
+1.  Ajouter une balise de titre de rubrique :  `<div class="title">Contoso Topic 4</div>`  
   
 2.  Ajoutez une section Remarque : `<div class="alert"> add your table tag and text </div>`  
   
 3.  Ajoutez une zone réductible :  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`  
   
-4.  Ajoutez un extrait de code :  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`  
+4.  Ajouter un extrait de code :  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`  
   
 5.  Ajouter du texte spécifique de langage de code : `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Notez que devLangnu = vous permet d’entrer d’autres langages. Par exemple, devLangnu = « Fortran » affichera Fortran lors de l’extrait de code DisplayLanguage = Fortran  
   
-6.  Ajouter des liens de la page : `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`  
+6.  Ajouter des liens de page : `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`  
   
 > [!NOTE]
->  Remarque : pour non pris en charge nouvelle « langue d’affichage » (par exemple, F #, Cobol, Fortran) la colorisation de code dans l’extrait de code sera monochrome.  
+>  Remarque : pour non pris en charge nouveau « langue d’affichage » (par exemple, F #, Cobol, Fortran) la colorisation de code dans l’extrait de code sera monochrome.  
   
-**Rubrique visionneuse d’aide exemple** le code illustre comment définir des métadonnées, un extrait de code, une zone réductible et texte de langage spécifique.  
+**Exemple aide visionneuse rubrique** le code illustre comment définir des métadonnées, un extrait de code, une zone réductible et texte spécifique du langage.  
   
 ```html
 <?xml version="1.0" encoding="utf-8"?>  
@@ -270,31 +271,31 @@ some F# code
   
 **Prise en charge de la touche F1**  
   
-Dans Visual Studio, en sélectionnant F1 génère des valeurs fournies à partir de l’emplacement du curseur dans l’IDE et remplit un « jeu de propriétés » avec les valeurs fournies (basé sur l’emplacement du curseur. Lorsque le curseur se trouve au-dessus de la fonctionnalité x, la fonctionnalité x est active/de focus et remplit le sac de propriétés avec des valeurs.  Lors de la touche F1 est sélectionné le sac de propriétés est rempli et (F1) de Visual Studio code vérifie si la source d’aide les clients par défaut est local ou en ligne (en ligne est la valeur par défaut), puis crée la chaîne appropriée basée sur les utilisateurs (en ligne est la valeur par défaut) - d’exécution (voir les paramètres de lancement du Guide de l’administrateur aide pour exe) avec les paramètres de la visionneuse d’aide locale + ou les mots clés du jeu de propriétés si aide locale est la valeur par défaut, ou l’URL MSDN avec le mot clé dans la liste de paramètres.  
+Dans Visual Studio, en sélectionnant F1 génère des valeurs fournies à partir de la position du curseur dans l’IDE et remplit un « jeu de propriétés » avec les valeurs fournies (basé sur l’emplacement du curseur. Lorsque le curseur se trouve au-dessus de la fonctionnalité x, la fonctionnalité x est active/dans le focus et remplit le sac de propriétés avec des valeurs.  Lors de la touche F1 est sélectionné le sac de propriétés est rempli et code de Visual Studio F1 visant à déterminer si la source d’aide les clients par défaut est local ou en ligne (en ligne est la valeur par défaut), puis crée la chaîne appropriée basée sur les utilisateurs de définition (en ligne est la valeur par défaut) - d’exécution (voir le Guide de l’administrateur aide pour les exe les paramètres de lancement) avec les paramètres de la visionneuse d’aide locale + ou les mots clés du conteneur de propriétés si aide locale est la valeur par défaut, ou l’URL MSDN avec le mot clé dans la liste de paramètres.  
   
-Si trois chaînes sont retournées pour F1, appelée prenne sous forme de chaîne à valeurs multiples, le premier terme, recherchez pour effectuer un test, et si trouvé, nous avons terminé ; Si ce n’est pas le cas, passer à la chaîne suivante.  Ordre est important. Présentation des mots clés à valeurs multiples doit être la chaîne la plus longue à la chaîne la plus courte.  Pour vérifier cela dans le cas pour les mots clés des valeurs multiples, recherchez la chaîne d’URL de F1 en ligne, ce qui inclut le mot clé choisi.  
+Si trois chaînes sont retournés pour F1, appelée pour sous forme de chaîne à valeurs multiples, prendre le premier terme, recherchez pour effectuer un test, et si trouvé, nous avons fini ; dans le cas contraire, passez à la chaîne suivante.  Ordre est important. Présentation des mots clés à valeurs multiples doit être une chaîne la plus longue chaîne plus courte.  Pour vérifier cela dans le cas pour les mots clés à valeurs multiples, examinez la chaîne d’URL de F1 en ligne, ce qui inclut le mot clé choisi.  
   
-Dans Visual Studio 2012, nous avons intentionnellement apporté une division plus forte entre en ligne et hors connexion, afin que si le paramètre de l’utilisateur a été d’en ligne, puis nous simplement transmis la demande F1 directement à notre service de requête en ligne sur MSDN, plutôt que de routage via l’Agent de bibliothèque d’aide que nous avons dû dans Visual Studio 2010. Nous avons ensuite s’appuient sur un état de « contenu fournisseur installé = true » pour déterminer s’il faut faire autre chose dans ce contexte. Si la valeur est true, nous effectuons cette logique de routage et d’analyse en fonction de ce que vous souhaitez prendre en charge pour vos clients. Si la valeur est false, puis nous accédez à MSDN. Si le paramètre de l’utilisateur est local, tous les appels simplement accéder au moteur d’aide local.  
+Dans Visual Studio 2012, nous avons intentionnellement apporté une division plus forte entre en ligne et hors connexion, afin que si le paramètre de l’utilisateur a été pour Online, puis nous avons simplement transmis la F1 demande directement à notre service de requête en ligne sur MSDN, plutôt que d’acheminer via l’Agent de bibliothèque d’aide que nous avons dû dans Visual Studio 2010. Nous nous appuyons puis sur un état de « contenu fournisseur installé = true » pour déterminer s’il faut faire quelque chose de différent dans ce contexte. Si la valeur est true, nous effectuons ensuite cette logique d’analyse et de routage en fonction de ce que vous souhaitez prendre en charge pour vos clients. Si la valeur est false, puis nous sélectionnons à MSDN. Si le paramètre de l’utilisateur est local, tous les appels accédez simplement au moteur d’aide local.  
   
 F1 diagramme de flux :  
   
 ![Flux F1](../../extensibility/internals/media/f1flow.png "F1flow")  
   
-Lorsque la source de contenu d’aide par défaut la visionneuse d’aide a la valeur en ligne (lancement de navigateur) :  
+Lorsque la source de contenu d’aide par défaut visionneuse d’aide est définie sur en ligne (lancement dans le navigateur) :  
   
--   Les fonctionnalités de Visual Studio partenaire (VSP) émettre une valeur pour le jeu de propriétés F1 (prefix.keyword sac de propriétés et des URL en ligne pour le préfixe trouvé dans le Registre) : F1 envoie une URL VSP + paramètres dans le navigateur.  
+-   Fonctionnalités de Visual Studio partenaire (VSP) émettent une valeur au sac de propriétés F1 (prefix.keyword sac de propriété et en ligne URL pour le préfixe dans le Registre) : F1 envoie une URL VSP + paramètres dans le navigateur.  
   
--   Fonctionnalités de Visual Studio (éditeur de langage, les éléments de menu spécifiques de Visual Studio, etc.) : F1 envoie une URL de Visual Studio dans le navigateur.  
+-   Fonctionnalités de Visual Studio (éditeur de langage, les éléments de menu spécifiques de Visual Studio, etc.) : F1 envoie une URL Visual Studio dans le navigateur.  
   
-Lorsque la source de contenu d’aide par défaut la visionneuse d’aide est définie à l’aide locale (lancement dans la visionneuse d’aide) :  
+Quand la source de contenu d’aide par défaut Help Viewer est définie à l’aide locale (lancement dans la visionneuse d’aide) :  
   
--   Fonctionnalités VSP où le mot clé correspondent entre sac F1 et des index de magasin local (autrement dit, le prefix.keyword sac de propriété = valeur trouvée dans l’index du magasin local) : F1 affiche la rubrique dans la visionneuse d’aide.  
+-   Fonctionnalités VSP où le mot clé correspondent entre sac F1 et des index de magasin local (autrement dit, le prefix.keyword du sac de propriété = valeur trouvée dans l’index de magasin local) : F1 affiche la rubrique dans la visionneuse d’aide.  
   
--   Fonctionnalités de Visual Studio (aucune option pour le fichier VSP remplacer le jeu de propriétés émis à partir des fonctionnalités de Visual Studio) : F1 restitue une rubrique dans la visionneuse d’aide Visual Studio.  
+-   Fonctionnalités de Visual Studio (aucune option pour le fichier VSP remplacer le jeu de propriétés émis à partir des fonctionnalités de Visual Studio) : F1 affiche une rubrique de Visual Studio dans la visionneuse d’aide.  
   
-Définissez les valeurs de Registre suivantes pour activer (F1) de secours pour le contenu d’aide de fournisseur. F1 secours signifie que la visionneuse d’aide est définie à l’aide F1 rechercher en ligne, et que le contenu du fournisseur est installé localement pour le disque dur. La visionneuse d’aide doit ressembler à l’aide locale pour le contenu, même si le paramètre par défaut est de l’aide en ligne.  
+Définissez les valeurs de Registre suivantes pour activer le fournisseur contenu d’aide F1 secours. F1 secours signifie que la visionneuse d’aide est définie pour rechercher d’aide F1 contenu en ligne, et le contenu de fournisseur est installé localement sur disque dur de l’utilisateur. La visionneuse d’aide doit ressembler à l’aide locale pour le contenu même si le paramètre par défaut est de l’aide en ligne.  
   
-1.  Définir le **VendorContent** valeur sous la clé de Registre 2.3 d’aide :  
+1.  Définir le **VendorContent** valeur sous la clé de Registre 2.3 aider à :  
   
     -   Pour les systèmes d’exploitation 32 bits :  
   
@@ -308,7 +309,7 @@ Définissez les valeurs de Registre suivantes pour activer (F1) de secours pour 
   
          « VendorContent » = DWORD : 00000001  
   
-2.  Enregistrer l’espace de noms de serveur partenaire sous la clé de Registre 2.3 d’aide :  
+2.  Enregistrer l’espace de noms de partenaire sous la clé de Registre 2.3 aider à :  
   
     -   Pour les systèmes d’exploitation 32 bits :  
   
@@ -322,115 +323,115 @@ Définissez les valeurs de Registre suivantes pour activer (F1) de secours pour 
   
          « emplacement » = « hors connexion »  
   
-**Namespace natif l’analyse de base**  
+**Namespace natif d’analyse de base**  
   
-Pour activer l’analyse de base native espace de noms, dans le Registre ajouter une nouvelle valeur de DWORD par le nom de : BaseNativeNamespaces et définissez sa valeur sur 1 (sous la clé de catalogue qu’ils souhaitent pour prendre en charge).  Par exemple, si vous souhaitez utiliser le catalogue de Visual Studio, vous pouvez ajouter la clé pour le chemin d’accès :  
+Pour activer l’analyse de base espace de noms natif, dans le Registre ajouter un nouveau DWORD par le nom de : BaseNativeNamespaces et définissez sa valeur sur 1 (sous la clé de catalogue qu’ils souhaitent prendre en charge).  Par exemple, si vous souhaitez utiliser le catalogue de Visual Studio, vous pouvez ajouter la clé pour le chemin d’accès :  
   
 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15
   
 Lorsqu’un mot clé F1 dans le format de QU'EN-TÊTE/méthode est rencontrée, le caractère '/' sera analysé, ce qui entraîne la construction suivante :  
   
--   EN-tête : sera l’espace de noms peut être utilisé pour enregistrer dans le Registre  
+-   EN-tête : sera l’espace de noms peut être utilisé pour inscrire dans le Registre  
   
--   MÉTHODE : cela devient le mot clé qui est passé par le biais.  
+-   MÉTHODE : cela deviendra le mot clé qui est transmis.  
   
-Par exemple, prenons une bibliothèque personnalisée appelée CustomLibrary et une méthode appelée MyTestMethod, lorsqu’une demande arrive il de F1 seront au format `CustomLibrary/MyTestMethod`.  
+Par exemple, étant donné une bibliothèque personnalisée appelée CustomLibrary et une méthode appelée MyTestMethod, quand un F1 demande arrive qu’il contient seront au format `CustomLibrary/MyTestMethod`.  
   
-Un utilisateur peut inscrire CustomLibrary en tant que l’espace de noms sous la ruche de partenaires, puis fournir toute clé emplacement qu’il souhaite, et le mot clé transmis à la requête sera MyTestMethod.  
+Un utilisateur peut inscrire CustomLibrary en tant que l’espace de noms sous la ruche de partenaires, puis fournir toute clé emplacement ils le souhaitent, et le mot clé transmis à la requête sera MyTestMethod.  
   
 **Activer l’aide de l’outil dans l’IDE de débogage**  
   
-Ajoutez la clé de Registre suivante et une valeur :  
+Ajoutez la clé de Registre suivante et la valeur :  
   
 Clé d’aide HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Dynamic : afficher la sortie de débogage dans la valeur de la vente au détail : Oui  
   
-Dans l’IDE, dans le menu Aide, sélectionnez « Contexte d’aider à déboguer »  
+Dans l’IDE, sous l’élément de menu Aide, sélectionnez « Contexte de vous aider à déboguer »  
   
 **Métadonnées de contenu**  
   
-Dans le tableau suivant, une chaîne qui s’affiche entre crochets est un espace réservé qui doit être remplacé par une valeur reconnue. Par exemple, dans \<meta name="Microsoft.Help.Locale » contenu = « [code de langue] » / >, « [code de langue] » doit être remplacé par une valeur comme « en-us ».  
+Dans le tableau suivant, n’importe quelle chaîne qui s’affiche entre crochets est un espace réservé qui doit être remplacé par une valeur reconnue. Par exemple, dans \<meta name="Microsoft.Help.Locale » contenu = « [code de langue] » / >, « [code de langue] » doit être remplacé par une valeur comme « en-us ».  
   
 |Propriété (représentation HTML)|Description|  
 |--------------------------------------|-----------------|  
-|\< contenu de métadonnées name="Microsoft.Help.Locale » = « [code de langue] » / >|Définit les paramètres régionaux de cette rubrique. Si cette balise est utilisée dans une rubrique, il doit être utilisé qu’une seule fois et il doit être insérée au-dessus de toutes les autres balises de Microsoft Help. Si cette balise n’est pas utilisée, le corps du texte de la rubrique est indexé à l’aide des analyseurs lexicaux qui sont associé aux paramètres régionaux du produit, s’il est spécifié ; dans le cas contraire, l’en-us lexical est utilisé. Cette balise est conforme à la norme RFC 4646 ISOC. Pour vous assurer que Microsoft Help fonctionne correctement, utilisez cette propriété au lieu de l’attribut de langue général.|  
-|\< contenu de métadonnées name="Microsoft.Help.TopicLocale » = « [code de langue] » / >|Définit les paramètres régionaux de cette rubrique lorsque d’autres paramètres régionaux est également utilisés. Si cette balise est utilisée dans une rubrique, il doit être utilisé qu’une seule fois. Utilisez cette balise lorsque le catalogue contient le contenu de plusieurs langues. Plusieurs rubriques dans un catalogue peuvent avoir le même ID, mais chacun doit spécifier un TopicLocale unique. La rubrique qui spécifie un TopicLocale qui correspond aux paramètres régionaux du catalogue est le la rubrique qui s’affiche dans la table des matières. Toutefois, toutes les versions linguistiques de la rubrique sont affichées dans les résultats de la recherche.|  
-|\< titre > [titre] \< /title >|Spécifie le titre de cette rubrique. Cette balise est obligatoire et doit être utilisée qu’une seule fois dans une rubrique. Si le corps de la rubrique ne contient pas un titre \<div > section ce titre s’affiche dans la rubrique et dans la table des matières.|  
-|\< nom de métadonnées = « Microsoft.Help.Keywords » contenu = « [aKeywordPhrase] » / >|Spécifie le texte d’un lien qui s’affiche dans le volet de l’index de la visionneuse d’aide. Un clic sur le lien, la rubrique s’affiche. Vous pouvez spécifier plusieurs mots clés d’index pour une rubrique, ou vous pouvez omettre cette balise si vous ne souhaitez pas que des liens vers cette rubrique s’affichent dans l’index. Mots clés de « K » à partir de versions antérieures de l’aide peuvent être convertis en cette propriété.|  
-|\< contenu de métadonnées name="Microsoft.Help.Id » = « [TopicID] » / >|Définit l’identificateur de cette rubrique. Cette balise est obligatoire et doit être utilisée qu’une seule fois dans une rubrique. L’ID doit être unique parmi les rubriques dans le catalogue qui ont les mêmes paramètres régionaux. Dans une autre rubrique, vous pouvez créer un lien vers cette rubrique à l’aide de ce code.|  
-|\< métadonnées name="Microsoft.Help.F1 « content="[System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator]"/ >|Spécifie le mot clé F1 de cette rubrique. Vous pouvez spécifier plusieurs mots-clés F1 pour une rubrique, ou vous pouvez omettre cette balise si vous ne souhaitez pas que cette rubrique à afficher lorsque l’utilisateur d’une application appuie sur F1. En règle générale, seule de mot clé F1 est spécifié pour une rubrique. Mots clés de « F » à partir de versions antérieures de l’aide peuvent être convertis en cette propriété.|  
-|\< nom de métadonnées = « Description » content = « [rubrique description] » / >|Fournit un bref résumé du contenu de cette rubrique. Si cette balise est utilisée dans une rubrique, il doit être utilisé qu’une seule fois. Cette propriété est accessible directement par la bibliothèque de la requête ; Il n’est pas stocké dans le fichier d’index.|  
- contenu de métadonnées name="Microsoft.Help.TocParent » = « [parent_Id] » / >|Spécifie la rubrique parente de cette rubrique dans la table des matières. Cette balise est obligatoire et doit être utilisée qu’une seule fois dans une rubrique. La valeur est le Microsoft.Help.Id du parent. Une rubrique peut avoir qu’un seul emplacement dans la table du contenu. « -1 » est considéré comme l’ID de rubrique pour la racine de la table des matières. Dans [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)], que la page est la page d’accueil de la visionneuse d’aide. Il s’agit de la même raison, que nous ajoutons spécifiquement TocParent =-1 vers certaines rubriques pour vous assurer qu’ils apparaissent en haut niveau. La page d’accueil de la visionneuse d’aide est une page du système et donc non remplaçables. Si un VSP tente d’ajouter une page avec un ID de -1, il peut obtenir ajouté à l’ensemble de contenu, mais la visionneuse d’aide sera toujours utiliser la page system - accueil de visionneuse de l’aide|  
-|\< contenu de métadonnées name="Microsoft.Help.TocOrder » = « [entier] » / >|Spécifie l’emplacement dans la table des matières de cette rubrique par rapport à ses sujets d’homologues. Cette balise est obligatoire et doit être utilisée qu’une seule fois dans une rubrique. La valeur est un entier. Une rubrique qui spécifie un entier inférieur-valeur s’affiche au-dessus d’une rubrique qui spécifie un entier de la valeur plus élevée.|  
-|\< contenu de métadonnées name="Microsoft.Help.Product » = « [product code] » / >|Spécifie le produit par cette rubrique. Si cette balise est utilisée dans une rubrique, il doit être utilisé qu’une seule fois. Ces informations peuvent également être fournies en tant que paramètre passé à l’indexeur de l’aide.|  
-|\< contenu de métadonnées name="Microsoft.Help.ProductVersion » = « [numéro de version] » / >|Spécifie la version du produit par cette rubrique. Si cette balise est utilisée dans une rubrique, il doit être utilisé qu’une seule fois. Ces informations peuvent également être fournies en tant que paramètre passé à l’indexeur de l’aide.|  
-|\< contenu de métadonnées name="Microsoft.Help.Category » = « [chaîne] » / >|Utilisé par les produits pour identifier les sous-sections de contenu. Vous pouvez identifier plusieurs sous-sections pour une rubrique, ou vous pouvez omettre cette balise si vous ne souhaitez pas que des liens pour identifier les sous-sections. Cette balise est utilisée pour stocker les attributs pour TargetOS et TargetFrameworkMoniker lorsqu’une rubrique est convertie à partir d’une version antérieure de l’aide. Le format du contenu est AttributeName:AttributeValue.|  
-|\< contenu de name="Microsoft.Help.TopicVersion Meta = « [numéro de version rubrique] » / >|Spécifie cette version de la rubrique lorsque plusieurs versions existent dans un catalogue. Microsoft.Help.Id n’est pas garanti pour être unique, cette balise est requise lorsque plusieurs versions d’une rubrique existent dans un catalogue, par exemple, lorsqu’un catalogue contient une rubrique pour le .NET Framework 3.5 et une rubrique pour le .NET Framework 4 et les deux ont le même Micro réversible. Help.Id.|  
-|\< nom de métadonnées = le contenu de « SelfBranded » = « [TRUE ou FALSE] » / >|Spécifie si cette rubrique utilise le package de marque de démarrage du Gestionnaire de bibliothèque d’aide ou d’un package de personnalisation est spécifique à la rubrique. Cette balise doit être TRUE ou FALSE. Si la valeur est TRUE, le package de personnalisation pour la rubrique associée remplace le package de personnalisation qui est défini au Gestionnaire de bibliothèque d’aide afin que la rubrique est rendue comme prévu même si elle diffère le rendu d’un autre contenu. Si la valeur est FALSE, la rubrique active est rendue selon le package de personnalisation qui est défini au démarrage du Gestionnaire de bibliothèque d’aide. Par défaut, le Gestionnaire de bibliothèque d’aide suppose marque automatique pour avoir la valeur false, sauf si la variable SelfBranded est déclarée en tant que la valeur est TRUE ; Par conséquent, vous n’avez pas à déclarer \<nom meta = « SelfBranded » content = « FALSE » / >.|  
+|\< contenu de métadonnées name="Microsoft.Help.Locale » = « [code de langue] » / >|Définit les paramètres régionaux pour cette rubrique. Si cette balise est utilisée dans une rubrique, il doit être utilisé qu’une seule fois et doit être insérée au-dessus de toutes les autres balises de Microsoft Help. Si cette balise n’est pas utilisée, le texte du corps de la rubrique est indexé à l’aide du séparateur de mots qui est associé avec le paramètres régionaux du produit, s’il est spécifié ; Sinon, l’en-us lexical est utilisé. Cette balise est conforme à la norme RFC 4646 ISOC. Pour vous assurer que Microsoft Help fonctionne correctement, utilisez cette propriété au lieu de l’attribut de langue général.|  
+|\< contenu de métadonnées name="Microsoft.Help.TopicLocale » = « [code de langue] » / >|Définit les paramètres régionaux pour cette rubrique lorsque d’autres paramètres régionaux est également utilisés. Si cette balise est utilisée dans une rubrique, il doit être utilisé qu’une seule fois. Utilisez cette balise lorsque le catalogue contient le contenu dans plusieurs langues. Plusieurs rubriques dans un catalogue peuvent avoir le même ID, mais chacun doit spécifier un TopicLocale unique. La rubrique qui spécifie un TopicLocale qui correspond aux paramètres régionaux du catalogue est de la rubrique qui s’affiche dans la table des matières. Toutefois, toutes les versions linguistiques de la rubrique sont affichées dans les résultats de la recherche.|  
+|\< titre > [Title] \< /title >|Spécifie le titre de cette rubrique. Cette balise est obligatoire et doit être utilisée qu’une seule fois dans une rubrique. Si le corps de la rubrique ne contient pas un titre \<div > section, ce titre s’affiche dans la rubrique et dans la table des matières.|  
+|\< nom de métadonnées = « Microsoft.Help.Keywords » contenu = « [aKeywordPhrase] » / >|Spécifie le texte d’un lien qui s’affiche dans le volet de l’index de la visionneuse d’aide. Un clic sur le lien, la rubrique s’affiche. Vous pouvez spécifier plusieurs mots clés d’index pour une rubrique, ou vous pouvez omettre cette balise si vous ne souhaitez pas que des liens vers cette rubrique apparaissent dans l’index. Mots clés « K » à partir de versions antérieures de l’aide peuvent être convertis en cette propriété.|  
+|\< contenu de métadonnées name="Microsoft.Help.Id » = « [TopicID] » / >|Définit l’identificateur pour cette rubrique. Cette balise est obligatoire et doit être utilisée qu’une seule fois dans une rubrique. L’ID doit être unique parmi les rubriques dans le catalogue qui ont les mêmes paramètres régionaux. Dans une autre rubrique, vous pouvez créer un lien vers cette rubrique à l’aide de ce code.|  
+|\< META name="Microsoft.Help.F1 « content="[System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator]"/ >|Spécifie le mot clé F1 pour cette rubrique. Vous pouvez spécifier plusieurs mots clés F1 pour une rubrique, ou vous pouvez omettre cette balise si vous ne voulez pas de cette rubrique à afficher lorsque l’utilisateur d’une application appuie sur F1. En règle générale, qu’une seule de mot clé F1 est spécifié pour une rubrique. Mots clés « F » à partir de versions antérieures de l’aide peuvent être convertis en cette propriété.|  
+|\< nom de métadonnées = « Description » content = « [rubrique description] » / >|Fournit un bref résumé du contenu dans cette rubrique. Si cette balise est utilisée dans une rubrique, il doit être utilisé qu’une seule fois. Cette propriété est accessible directement par la bibliothèque de la requête ; Il n’est pas stocké dans le fichier d’index.|  
+ contenu de métadonnées name="Microsoft.Help.TocParent » = « [parent_Id] » / >|Spécifie la rubrique parente de cette rubrique dans la table des matières. Cette balise est obligatoire et doit être utilisée qu’une seule fois dans une rubrique. La valeur est le Microsoft.Help.Id du parent. Une rubrique peut avoir qu’un seul emplacement dans la table des matières. « -1 » est considéré comme l’ID de rubrique pour la racine de la table des matières. Dans [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)], cette page est la page d’accueil visionneuse d’aide. Il s’agit de la même raison, que plus précisément, nous ajouter TocParent =-1 à certaines rubriques pour vous assurer que lorsqu’ils apparaissent en haut niveau. La page d’accueil visionneuse d’aide est une page de système et par conséquent, non remplaçables. Si un VSP essaie d’ajouter une page avec un ID de -1, il peut obtenir ajouté à l’ensemble de contenu, mais visionneuse d’aide sera toujours utiliser la page system - accueil visionneuse d’aide|  
+|\< contenu de métadonnées name="Microsoft.Help.TocOrder » = « [entier] » / >|Spécifie l’emplacement dans la table des matières de cette rubrique par rapport à ses rubriques homologue. Cette balise est obligatoire et doit être utilisée qu’une seule fois dans une rubrique. La valeur est un entier. Une rubrique qui spécifie un entier de faible valeur s’affiche au-dessus d’une rubrique qui spécifie un entier de valeur plus élevée.|  
+|\< contenu de métadonnées name="Microsoft.Help.Product » = « [product code] » / >|Spécifie le produit qui décrit cette rubrique. Si cette balise est utilisée dans une rubrique, il doit être utilisé qu’une seule fois. Ces informations peuvent également être fournies en tant que paramètre qui est passé à l’indexeur d’aide.|  
+|\< META name="Microsoft.Help.ProductVersion » contenu = « [version number] » / >|Spécifie la version du produit qui décrit cette rubrique. Si cette balise est utilisée dans une rubrique, il doit être utilisé qu’une seule fois. Ces informations peuvent également être fournies en tant que paramètre qui est passé à l’indexeur d’aide.|  
+|\< META name="Microsoft.Help.Category » contenu = « [string] » / >|Utilisé par les produits pour identifier les sous-sections de contenu. Vous pouvez identifier plusieurs sous-sections pour une rubrique, ou vous pouvez omettre cette balise si vous ne souhaitez pas que des liens pour identifier les sous-sections. Cette balise est utilisée pour stocker les attributs pour TargetOS et TargetFrameworkMoniker lorsqu’une rubrique est convertie à partir d’une version antérieure de l’aide. Le format du contenu est AttributeName:AttributeValue.|  
+|\< contenu de name="Microsoft.Help.TopicVersion Meta = « [rubrique version number] » / >|Spécifie cette version de la rubrique lorsque plusieurs versions existent dans un catalogue. Étant donné que Microsoft.Help.Id n’est pas garanti pour être unique, cette balise est requise lorsque plusieurs versions d’une rubrique existent dans un catalogue, par exemple, lorsqu’un catalogue contient une rubrique pour le .NET Framework 3.5 et une rubrique pour le .NET Framework 4 et les deux ont la même Micro réversible. Help.Id.|  
+|\< nom de métadonnées = « SelfBranded » content = « [vrai ou faux] » / >|Indique si cette rubrique utilise le package de marque de démarrage de gestionnaire de bibliothèque d’aide ou d’un package de personnalisation est spécifique à la rubrique. Cette balise doit avoir la valeur TRUE ou FALSE. Si la valeur est TRUE, le package de personnalisation pour la rubrique associée remplace le package de personnalisation est défini lorsque le Gestionnaire de bibliothèque d’aide démarre afin que la rubrique est restituée comme prévu même si elle diffère du rendu d’un autre contenu. Si la valeur est FALSE, la rubrique actuelle est affichée en fonction de package de personnalisation qui est défini au démarrage du Gestionnaire de bibliothèque d’aide. Par défaut, le Gestionnaire de bibliothèque d’aide suppose automatique marque avoir la valeur false, sauf si la variable SelfBranded est déclarée en tant que la valeur est TRUE ; Par conséquent, il est inutile de déclarer \<nom meta = « SelfBranded » content = « FALSE » / >.|  
   
 ### <a name="creating-a-branding-package"></a>Création d’un package de marque  
-La version de Visual Studio comprend un nombre des différents produits Visual Studio, y compris l’isolée et les interpréteurs de commandes intégrés pour Visual Studio partenaires.  Chacun de ces produits nécessite une certaine mesure basée sur une rubrique de contenu d’aide prise en charge, unique pour le produit de personnalisation.  Par exemple, les rubriques de Visual Studio faut une présentation de la marque cohérente, tandis que SQL Studio, qui encapsule l’interpréteur de commandes ISO, nécessite son propre contenu unique aide marque pour chaque rubrique.  Un partenaire de Shell intégré souhaitant les rubriques d’aide pour être dans le contenu d’aide Visual Studio produit parent tout en conservant leurs propres personnalisation de la rubrique.  
+La version de Visual Studio comprend un nombre de différents produits Visual Studio, y compris l’isolé et les interpréteurs de commandes intégrés pour les partenaires Visual Studio.  Chacun de ces produits nécessite une certaine mesure basée sur une rubrique de contenu d’aide prise en charge, unique pour le produit de personnalisation.  Par exemple, les rubriques de Visual Studio doivent disposer une présentation de la marque cohérente, tandis que SQL Studio, qui encapsule l’interpréteur de commandes ISO, nécessite son propre contenu unique aide marque pour chaque rubrique.  Un partenaire de Shell intégré souhaiterez peut-être les rubriques d’aide à être dans le contenu d’aide de Visual Studio produit parent tout en conservant leur propre personnalisation de la rubrique.  
   
-Personnalisation des packages sont installés par le produit contenant la visionneuse d’aide.  Pour les produits Visual Studio :  
+Personnalisation de packages est installée par le produit contenant la visionneuse d’aide.  Pour les produits Visual Studio :  
   
--   Un package de marque de secours (Branding_\<paramètres régionaux > .mshc) est installé dans la racine d’application aide les 2.3 visionneuse (exemple : C:\Program Files (x86) \Microsoft Help Viewer\v2.3) par le module linguistique de la visionneuse d’aide.  Il est utilisé pour les cas où le produit marque le package n’est pas installé (aucun contenu n’a été installé) ou dans lequel le package de marque installé est endommagé.  Notez que les éléments de Visual Studio (logo et des commentaires) sont ignorés lorsque le secours de racine d’application marque le package est utilisé.  
+-   Un package de marque de secours (Branding_\<paramètres régionaux > .mshc) est installé dans la racine de l’application aide les 2.3 de visionneuse (exemple : C:\Program Files (x86) \Microsoft Help Viewer\v2.3) par le module linguistique de visionneuse d’aide.  Cela est utilisé pour les cas où le produit marque le package n’est pas installé (aucun contenu n’a été installé) ou dans lequel le package de marque installé est endommagé.  Notez que les éléments de Visual Studio (logo et des commentaires) sont ignorés lors de la procédure de secours application racine marque le package est utilisé.  
   
--   Lorsque le contenu de Visual Studio est installé à partir du service de package de contenu, un package de personnalisation est également installé (pour le premier scénario d’installation du contenu de temps).  S’il existe une mise à jour pour le package de personnalisation, la mise à jour est installé lors de la prochaine mise à jour de contenu ou l’action d’installation de package supplémentaire se produit.  
+-   Lorsque le contenu de Visual Studio est installé à partir du service de package de contenu, un package de personnalisation est également installé (par le premier scénario de l’installation du contenu temps).  S’il existe une mise à jour le package de personnalisation, la mise à jour est installé lors de la prochaine mise à jour de contenu ou l’action d’installation de package supplémentaire se produit.  
   
-La visionneuse d’aide Microsoft prend en charge la personnalisation des rubriques basées sur des métadonnées de la rubrique.  
+La visionneuse d’aide Microsoft prend en charge la personnalisation des rubriques en fonction des métadonnées de la rubrique.  
   
--   Où les métadonnées de la rubrique définissent self marque = true, la rubrique est de rendu, ne rien faire (autant que la marque).  
+-   Où les métadonnées de la rubrique définissent self marque = true, afficher la rubrique en l’état, ne faites rien (en ce qui concerne la marque).  
   
--   Où les métadonnées de la rubrique définissent self marque = false, utilisez le package de personnalisation associé avec la valeur de métadonnées TopicVendor.  
+-   Où les métadonnées de la rubrique définissent self marque = false, utiliser le package de marque associé à valeur de métadonnées TopicVendor.  
   
--   Le contenu où les métadonnées de la rubrique définissent name="Microsoft.Help.TopicVendor » =\< marque nom du package dans le fournisseur MSHA >, utilisez le package de personnalisation défini dans la valeur de contenu.  
+-   Contenu où les métadonnées de la rubrique définissent name="Microsoft.Help.TopicVendor » =\< marque nom du package dans le fournisseur MSHA >, utilisez le package de personnalisation défini dans la valeur de contenu.  
   
--   Notez que dans le catalogue de Visual Studio, il existe une application de la priorité des Packages de personnalisation.  Personnalisation de première Visual Studio par défaut est appliquée et puis, si définis dans les métadonnées de la rubrique et la prise en charge avec la personnalisation associés du package (comme défini dans l’installation msha), le fournisseur défini par la marque est appliqué comme un remplacement.  
+-   Notez que dans le catalogue de Visual Studio, il existe une application de priorité des Packages de personnalisation.  Personnalisation de première Visual Studio par défaut est appliquée et puis, si définis dans les métadonnées de la rubrique et la prise en charge avec la personnalisation associée package (tel que défini dans l’installation msha), le défini par le fournisseur de personnalisation est appliqué comme un remplacement.  
   
 Éléments de personnalisation se répartissent généralement en trois catégories principales :  
   
--   Éléments d’en-tête (exemples lien commentaires, texte d’exclusion conditionnelle, logo)  
+-   Éléments d’en-tête (exemples lien commentaires, conditionnel dédit de responsabilité, logo)  
   
--   Contenu des comportements (exemples incluent les éléments de texte du contrôle Développer/réduire et éléments de l’extrait de code)  
+-   Contenu des comportements (exemples incluent les éléments de texte de contrôle Développer/réduire et éléments de l’extrait de code)  
   
 -   Éléments de pied de page (par exemple, Copyright)  
   
-Éléments considérés comme des éléments personnalisés incluent (détaillée dans cette spécification) :  
+Éléments considérés comme incluent des éléments personnalisés (détaillée dans cette spécification) :  
   
--   Logo du catalogue/produit (par exemple, Visual Studio)  
+-   Logo/produit du catalogue (par exemple, Visual Studio)  
   
 -   Éléments de liaison et le courrier électronique des commentaires  
   
--   Texte d’exclusion  
+-   Dédit de responsabilité  
   
--   Texte de copyright  
+-   Texte de droits d’auteur  
   
-Fichiers de prise en charge dans le package de marque de visionneuse d’aide Visual Studio incluent :  
+Fichiers de prise en charge dans le package de marque de Help Viewer de Visual Studio sont les suivantes :  
   
 -   Graphiques (logos, icônes, etc.).  
   
--   Branding.js - prise en charge des comportements contenus des fichiers de script  
+-   Branding.js - prise en charge les comportements de contenu des fichiers de script  
   
--   Branding.XML - chaînes utilisé de manière cohérente sur le contenu du catalogue.  Remarque : pour inclure des éléments de texte de localisation de Visual Studio dans le branding.xml, _locID = «\<valeur unique > »  
+-   Branding.XML - chaînes utilisé de manière cohérente sur le contenu du catalogue.  Remarque : pour inclure des éléments de texte de la localisation de Visual Studio dans le branding.xml, _locID = «\<valeur unique > »  
   
--   Branding.CSS - les définitions de style pour la cohérence de présentation  
+-   Branding.CSS - des définitions de style pour la cohérence de la présentation  
   
 -   Printing.CSS - présentation imprimée cohérente des définitions de style  
   
-Comme indiqué ci-dessus, la personnalisation des Packages associés à la rubrique :  
+Comme indiqué ci-dessus, les Packages de personnalisation sont associés à la rubrique :  
   
--   Lorsque SelfBranded = false est définie dans les métadonnées, le catalogue de package de marque hérite de la rubrique  
+-   Lorsque SelfBranded = false est définie dans les métadonnées, le catalogue de package de marque de hérite de la rubrique  
   
--   Ou lorsque SelfBranded = false et il est un Package de marque unique défini dans le MSHA et disponible lorsque l’installation du contenu  
+-   Ou lorsque SelfBranded = false et il est un Package de marque uniques défini dans le MSHA et disponible lorsque le contenu est installé  
   
-Pour vsp implémentation de packages marque personnalisées (contenu VSP, SelfBranded = True), une façon de procéder consiste à commencer par le package de marque secours (installé avec la visionneuse d’aide) et modifier le nom du fichier selon le cas.  Le Branding_\<paramètres régionaux > .mshc fichier est un fichier zip avec l’extension de fichier passé à .mshc, il vous suffit de modifier l’extension de .mshc par .zip et extraire le contenu.  Voir ci-dessous pour la personnalisation des éléments de package et de modifier si nécessaire (par exemple, modifier le logo et le logo VSP la référence au logo dans le fichier Branding.xml, mettre à jour Branding.xml par caractéristiques VSP, etc.).  
+Pour vsp implémentation de packages de personnalisation personnalisées (contenu VSP, SelfBranded = True), la première consiste à continuer à démarrer avec le package de marque secours (installé avec la visionneuse d’aide), puis remplacez le nom du fichier comme il convient.  Le Branding_\<paramètres régionaux > .mshc fichier est un fichier zip avec l’extension de fichier passé à .mshc, il vous suffit de diffère de l’extension .mshc .zip et extrayez le contenu.  Voir ci-dessous pour les éléments de package de personnalisation et le modifier selon les besoins (par exemple, changer le logo pour le logo VSP et la référence pour le logo dans le fichier Branding.xml, mettre à jour Branding.xml par caractéristiques VSP, etc.).  
   
-Lorsque toutes les modifications sont effectuées, créez un fichier zip contenant des éléments de personnalisation souhaités et remplacez l’extension .mshc.  
+Lorsque toutes les modifications sont effectuées, créez un fichier zip contenant les éléments de personnalisation souhaités et remplacez l’extension .mshc.  
   
-Pour associer le package de marque personnalisé, créez la MSHA qui contient la référence au fichier mshc marque en même temps que le contenu mshc (qui contient les rubriques).  Voir ci-dessous « MSHA » pour la création d’une base MSHA.  
+Pour associer le package de marque personnalisé, créez le MSHA qui contient la référence au fichier mshc personnalisation, ainsi que le contenu mshc (qui contient les rubriques).  Voir ci-dessous « MSHA » pour savoir comment créer une base MSHA.  
   
-Le fichier Branding.xml contient une utilisée pour le rendu de manière cohérente des éléments spécifiques dans une rubrique lors de la rubrique contient des éléments de liste \<meta name="Microsoft.Help.SelfBranded « contenu = « false » / >.  Vous trouverez ci-dessous la liste d’éléments dans le fichier Branding.xml Visual Studio.  Notez que cette liste est destinée à être utilisée en tant que modèle pour les personnes influentes ISO Shell, où ils modifient ces éléments (par exemple logo, commentaires et le Copyright) pour répondre à leur besoins de personnalisation du produit.  
+Le fichier Branding.xml contient un utilisés pour le rendu de manière cohérente des éléments spécifiques dans une rubrique lors de la rubrique contient des éléments de liste \<meta name="Microsoft.Help.SelfBranded « contenu = « false » / >.  Vous trouverez ci-dessous la liste d’éléments dans le fichier Branding.xml Visual Studio.  Notez que cette liste est destinée à être utilisée comme modèle pour les utilisateurs précoces ISO Shell, où ils modifier ces éléments (par exemple logo, commentaires et le Copyright) pour répondre à leur propres besoins de personnalisation du produit.  
   
-Remarque : les variables relevées par « {n} » ont des dépendances de code - suppression ou modification de ces valeurs entraîne des erreurs et éventuellement le blocage d’application. Identificateurs de localisation (exemple _locID="codesnippet.n ») sont inclus dans le Package de personnalisation de Visual Studio.  
+Remarque : les variables indiqués par « {n} » ont des dépendances de code, suppression ou modification de ces valeurs entraîne des erreurs et, éventuellement, panne d’application. Identificateurs de localisation (exemple _locID="codesnippet.n ») sont inclus dans le Package de personnalisation de Visual Studio.  
   
 **Branding.Xml**  
   
@@ -442,86 +443,86 @@ Remarque : les variables relevées par « {n} » ont des dépendances de code
 |ExpandText|Expand|  
 |CollapseText|Réduire|  
 |Fonctionnalités :|**CodeSnippet**|  
-|Utiliser :|Texte de contrôle l’extrait de code.  Remarque : Contenu extrait de Code avec un espace « Sans rupture » est remplacé par espace.|  
+|Utiliser :|Texte de contrôle l’extrait de code.  Remarque : Contenu d’extrait de Code avec l’espace de « Sans rupture » devient espace.|  
 |**Élément**|**Valeur**|  
 |CopyToClipboard|Copier dans le Presse-papiers|  
-|ViewColorizedText|Vue coloré|  
+|ViewColorizedText|Affichage coloré|  
 |CombinedVBTabDisplayLanguage|Visual Basic (exemple)|  
 |VBDeclaration|Déclaration|  
 |VBUsage|Utilisation|  
-|Fonctionnalités :|**Logo des commentaires et un pied de page**|  
-|Utiliser :|Fournir un contrôle de commentaires au client de fournir des commentaires sur la rubrique Active par courrier électronique.  Texte de copyright pour le contenu.  Définition de logo.|  
-|**Élément**|**Valeur (ces chaînes peuvent être modifiées pour répondre aux besoins de contenu utilisateur précoce.)**|  
+|Fonctionnalités :|**Commentaires, un pied de page et Logo**|  
+|Utiliser :|Fournir un contrôle de commentaires pour le client fournir des commentaires sur la rubrique actuelle par courrier électronique.  Texte de copyright pour le contenu.  Définition de logo.|  
+|**Élément**|**Valeur (ces chaînes peuvent être modifiées pour répondre aux besoins de l’utilisateur précoce de contenu.)**|  
 |Droits d’auteur|© 2013 Microsoft Corporation. Tous droits réservés.|  
-|SendFeedback|\<un href = « {0} » {{1} > envoyer des commentaires\</a > sur cette rubrique à Microsoft.|  
+|SendFeedback|\<un href = »{0}» {1}> envoyer des commentaires\</a > sur cette rubrique à Microsoft.|  
 |FeedbackLink||  
 |LogoTitle|[!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]|  
 |LogoFileName|vs_logo_bk.gif|  
 |LogoFileNameHC|vs_logo_wh.gif|  
-|Fonctionnalités :|**exclusion de responsabilité**|  
-|Utiliser :|Le contenu traduit un ensemble de cas exclusions spécifiques pour l’ordinateur.|  
+|Fonctionnalités :|**Exclusion de responsabilité**|  
+|Utiliser :|Le contenu traduit un ensemble de cas d’exclusion de responsabilité spécifiques pour la machine.|  
 |**Élément**|**Valeur**|  
-|MT_Editable|Cet article a été traduit. Si vous avez une connexion Internet, sélectionnez « Afficher cette rubrique en ligne », pour afficher cette page en mode modifiable avec le contenu original en anglais, en même temps.|  
-|MT_NonEditable|Cet article a été traduit. Si vous avez une connexion Internet, sélectionnez « Afficher cette rubrique en ligne », pour afficher cette page en mode modifiable avec le contenu original en anglais, en même temps.|  
-|MT_QualityEditable|Cet article a été traduit manuellement. Si vous avez une connexion Internet, sélectionnez « Afficher cette rubrique en ligne », pour afficher cette page en mode modifiable avec le contenu original en anglais, en même temps.|  
-|MT_QualityNonEditable|Cet article a été traduit manuellement. Si vous avez une connexion Internet, sélectionnez « Afficher cette rubrique en ligne », pour afficher cette page en mode modifiable avec le contenu original en anglais, en même temps.|  
-|MT_BetaContents|Cet article a été traduit automatiquement pour une version préliminaire. Si vous avez une connexion Internet, sélectionnez « Afficher cette rubrique en ligne », pour afficher cette page en mode modifiable avec le contenu original en anglais, en même temps.|  
-|MT_BetaRecycledContents|Cet article a été traduit manuellement pour la version préliminaire. Si vous avez une connexion Internet, sélectionnez « Afficher cette rubrique en ligne », pour afficher cette page en mode modifiable avec le contenu original en anglais, en même temps.|  
+|MT_Editable|Cet article a été traduit. Si vous avez une connexion Internet, sélectionnez « Afficher cette rubrique en ligne » pour afficher cette page en mode modifiable avec le contenu original en anglais en même temps.|  
+|MT_NonEditable|Cet article a été traduit. Si vous avez une connexion Internet, sélectionnez « Afficher cette rubrique en ligne » pour afficher cette page en mode modifiable avec le contenu original en anglais en même temps.|  
+|MT_QualityEditable|Cet article a été traduit manuellement. Si vous avez une connexion Internet, sélectionnez « Afficher cette rubrique en ligne » pour afficher cette page en mode modifiable avec le contenu original en anglais en même temps.|  
+|MT_QualityNonEditable|Cet article a été traduit manuellement. Si vous avez une connexion Internet, sélectionnez « Afficher cette rubrique en ligne » pour afficher cette page en mode modifiable avec le contenu original en anglais en même temps.|  
+|MT_BetaContents|Cet article a été traduites pour la version préliminaire. Si vous avez une connexion Internet, sélectionnez « Afficher cette rubrique en ligne » pour afficher cette page en mode modifiable avec le contenu original en anglais en même temps.|  
+|MT_BetaRecycledContents|Cet article a été traduit manuellement pour la version préliminaire. Si vous avez une connexion Internet, sélectionnez « Afficher cette rubrique en ligne » pour afficher cette page en mode modifiable avec le contenu original en anglais en même temps.|  
 |Fonctionnalités :|**Élément LinkTable**|  
 |Utiliser :|Prise en charge des liens vers des rubriques en ligne|  
 |**Élément**|**Valeur**|  
 |LinkTableTitle|Table de liens|  
 |TopicEnuLinkText|Afficher la version anglaise\</a > de cette rubrique est disponible sur votre ordinateur.|  
-|TopicOnlineLinkText|Afficher cette rubrique \<un href = « {0} » {{1} > en ligne\</a >|  
+|TopicOnlineLinkText|Afficher cette rubrique \<un href = »{0}» {1}> en ligne\</a >|  
 |OnlineText|Online|  
-|Fonctionnalités :|**Contrôle Audio vidéo**|  
-|Utiliser :|Afficher les éléments et du texte pour le contenu vidéo|  
+|Fonctionnalités :|**Contrôle Audio Video**|  
+|Utiliser :|Afficher les éléments et le texte pour le contenu vidéo|  
 |**Élément**|**Valeur**|  
-|MultiMediaNotSupported|Internet Explorer 9 ou supérieure doit être installé pour prendre en charge le contenu de {0}.|  
-|VideoText|afficher la vidéo|  
-|Audiotexte|flux de données audio|  
-|OnlineVideoLinkText|\<p > pour afficher la vidéo de cette rubrique, cliquez sur {0}\<un href = « \ {1\\} » > {2}here\</a >.\< /p >|  
-|OnlineAudioLinkText|\<p > pour écouter le fichier audio associé à cette rubrique, cliquez sur {0}\<un href = « \ {1\\} » > {2}here\</a >.\< /p >|  
+|MultiMediaNotSupported|Internet Explorer 9 ou version ultérieure doit être installé pour prendre en charge {0} contenu.|  
+|VideoText|affichage de vidéo|  
+|Audiotexte|diffusion en continu d’audio|  
+|OnlineVideoLinkText|\<p > pour afficher la vidéo de cette rubrique, cliquez sur {0} \<un href = »{1}« >{2}ici\</a >.\< /p >|  
+|OnlineAudioLinkText|\<p > pour écouter l’audio associé à cette rubrique, cliquez sur {0} \<un href = »{1}« >{2}ici\</a >.\< /p >|  
 |Fonctionnalités :|**Contrôle de contenu de pas installé**|  
 |Utiliser :|Éléments de texte (chaînes) utilisés pour le rendu de contentnotinstalled.htm|  
 |**Élément**|**Valeur**|  
 |ContentNotInstalledTitle|Aucun contenu n’a été trouvé sur votre ordinateur.|  
-|ContentNotInstalledDownloadContentText|\<p > pour télécharger le contenu sur votre ordinateur, \<un href = « {0} » {{1} > cliquez sur l’onglet gérer\</a >.\< /p >|  
-|ContentNotInstalledText|\<p > aucun contenu n’est installé sur votre ordinateur. Contactez votre administrateur pour l’installation du contenu d’aide locale. \</p >|  
-|Fonctionnalités :|**Contrôle de rubrique introuvable**|  
+|ContentNotInstalledDownloadContentText|\<p > pour télécharger du contenu sur votre ordinateur, \<un href = »{0}» {1}> cliquez sur l’onglet gérer\</a >.\< /p >|  
+|ContentNotInstalledText|\<p > aucun contenu n’est installé sur votre ordinateur. Veuillez contacter votre administrateur pour l’installation du contenu d’aide locale. \</p >|  
+|Fonctionnalités :|**Contrôle introuvable de rubrique**|  
 |Utiliser :|Éléments de texte (chaînes) utilisés pour le rendu de topicnotfound.htm|  
 |**Élément**|**Valeur**|  
 |TopicNotFoundTitle|Impossible de trouver la rubrique demandée sur votre ordinateur.|  
-|TopicNotFoundViewOnlineText|\<p > la rubrique que vous avez demandée est introuvable sur votre ordinateur, mais vous pouvez \<un href = « {0} » {{1} > Afficher la rubrique en ligne\</a >.\< /p >|  
-|TopicNotFoundDownloadContentText|\<p > consultez le volet de navigation pour obtenir des liens vers des rubriques similaires ou \<un href = « {0} » {{1} > cliquez sur l’onglet gérer\</a > pour télécharger le contenu sur votre ordinateur.\< /p >|  
+|TopicNotFoundViewOnlineText|\<p > la rubrique que vous avez demandée est introuvable sur votre ordinateur, mais vous pouvez \<un href = »{0}» {1}> Afficher la rubrique en ligne\</a >.\< /p >|  
+|TopicNotFoundDownloadContentText|\<p > consultez le volet de navigation pour obtenir des liens vers des rubriques similaires ou \<un href = »{0}» {1}> cliquez sur l’onglet gérer\</a > pour télécharger du contenu sur votre ordinateur.\< /p >|  
 |TopicNotFoundText|\<p > la rubrique que vous avez demandée est introuvable sur votre ordinateur. \</p >|  
 |Fonctionnalités :|**Rubrique endommagé contrôle**|  
 |Utiliser :|Éléments de texte (chaînes) utilisés pour le rendu de topiccorrupted.htm|  
 |**Élément**|**Valeur**|  
 |TopicCorruptedTitle|Impossible d’afficher la rubrique demandée.|  
-|TopicCorruptedViewOnlineText|\<p > la visionneuse d’aide ne peut pas afficher la rubrique demandée. Il peut y avoir une erreur dans le contenu de la rubrique ou une dépendance de système sous-jacent. \</p >|  
+|TopicCorruptedViewOnlineText|\<p > visionneuse d’aide ne peut pas afficher la rubrique demandée. Il peut y avoir une erreur dans le contenu de la rubrique ou une dépendance de système sous-jacent. \</p >|  
 |Fonctionnalités :|**Contrôle de la Page d’accueil**|  
-|Utiliser :|Texte prenant en charge l’affichage du contenu du nœud de niveau supérieur de la visionneuse d’aide.|  
+|Utiliser :|Texte prenant en charge l’affichage du contenu du nœud de niveau supérieur de visionneuse d’aide.|  
 |**Élément**|**Valeur**|  
-|HomePageTitle|Accueil de visionneuse d’aide|  
-|HomePageIntroduction|\<p > Bienvenue dans la visionneuse d’aide Microsoft, une source essentielle des informations relatives à toute personne qui utilise les outils, produits, technologies et services Microsoft. La visionneuse d’aide vous donne accès aux informations de référence et de procédure, exemple de code, des articles techniques et bien plus encore. Pour rechercher le contenu que vous avez besoin, parcourez la table des matières, utilisez la recherche en texte intégral ou parcourez le contenu à l’aide de l’index de mots clés. \</p >|  
-|HomePageContentInstallText|\<p >\<br / > utiliser le \<un href = « {0} » {{1} > Gérer le contenu\</a > onglet pour effectuer les opérations suivantes :\<ul >\<li > ajouter du contenu sur votre ordinateur.\< /li >\<li > Vérifiez les mises à jour à votre contenu local.\< /li >\<li > Supprimer le contenu de votre ordinateur.\< /li >\</ul >\</p >|  
-|HomePageInstalledBooks|Documentation installée|  
+|HomePageTitle|Accueil visionneuse d’aide|  
+|HomePageIntroduction|\<p > Bienvenue dans la visionneuse d’aide Microsoft, une source incontournable des informations relatives à toute personne utilisant les outils, produits, technologies et services Microsoft. La visionneuse d’aide vous donne accès aux informations de référence et de procédure, exemple de code, des articles techniques et bien plus encore. Pour trouver le contenu que vous avez besoin, parcourez la table des matières, utilisez la recherche en texte intégral, ou parcourez le contenu à l’aide de l’index des mots clés. \</p >|  
+|HomePageContentInstallText|\<p >\<br / > Utilisez le \<un href = »{0}» {1}> Gérer le contenu\</a > onglet effectuer les opérations suivantes :\<ul >\<li > ajouter du contenu sur votre ordinateur.\< /li >\<li > vérifier les mises à jour à votre contenu local.\< /li >\<li > Supprimer le contenu de votre ordinateur.\< /li >\</ul >\</p >|  
+|HomePageInstalledBooks|Livres installés|  
 |HomePageNoBooksInstalled|Aucun contenu n’a été trouvé sur votre ordinateur.|  
 |HomePageHelpSettings|Paramètres de contenu d’aide|  
-|HomePageHelpSettingsText|\<p > votre réglage actuel est l’aide locale. La visionneuse d’aide affiche le contenu que vous avez installée sur votre ordinateur. \<br / > pour modifier la source de contenu de l’aide sur la barre de menus de Visual Studio, choisissez \<span style = « {0} » > aide, définir les préférences aide\</span >.\< br / >\</p >|  
-|Mégaoctet (Mo)|MO|  
+|HomePageHelpSettingsText|\<p > votre paramètre actuel est aide locale. La visionneuse d’aide affiche le contenu que vous avez installée sur votre ordinateur. \<br / > pour modifier la source de contenu d’aide, dans la barre de menus de Visual Studio, choisissez \<span style = »{0}» > aide, définir les préférences pour aider à\</span >.\< br / >\</p >|  
+|Mégaoctets|MO|  
   
 **branding.js**  
   
-Le fichier branding.js contient JavaScript utilisé par les éléments de personnalisation de visionneuse d’aide Visual Studio.  Voici une liste des éléments de personnalisation de la fonction JavaScript prise en charge.  Toutes les chaînes à localiser ce fichier sont définies dans la section « Chaînes localisables » en haut de ce fichier.  Notez que les fichiers ICL a été créé pour les chaînes d’emplacement dans le fichier branding.js.  
+Le fichier branding.js contient JavaScript utilisé par les éléments de personnalisation de Visual Studio Help Viewer.  Voici une liste des éléments de personnalisation et de la fonction prise en charge de JavaScript.  Toutes les chaînes soient localisées pour ce fichier sont définies dans la section « Chaînes localisables » en haut de ce fichier.  Notez ICL fichier qui a été créé pour la localisation des chaînes dans le fichier branding.js.  
   
 ||||  
 |-|-|-|  
 |**Fonctionnalité de personnalisation**|**Fonction JavaScript**|**Description**|  
 |Var...||Définir des variables|  
-|Obtenir le langage de code utilisateur|setUserPreferenceLang|mappe un index de # pour le langage de code|  
-|Définir et obtenir des valeurs de cookie|getCookie, setCookie||  
+|Obtenir le langage de code utilisateur|setUserPreferenceLang|mappe un index # pour le langage de code|  
+|Définir et obtenir les valeurs de cookie|getCookie, setCookie||  
 |Membre hérité|changeMembersLabel|Développer/réduire le membre hérité|  
 |Lorsque SelfBranded = False|onLoad|Lire la chaîne de requête pour vérifier s’il est une demande d’impression.  Définir tous les codesnippets concentrer l’onglet par défaut d’utilisateur.  S’il s’agit d’une impression demande puis définissez isPrinterFriendly sur true. Vérifier le mode de contraste élevé.|  
 |Extrait de code|addSpecificTextLanguageTagSet||  
@@ -530,16 +531,16 @@ Le fichier branding.js contient JavaScript utilisé par les éléments de person
 ||setCodesnippetLang||  
 ||setCurrentLang||  
 ||CopyToClipboard||  
-|CollapsibleArea|addToCollapsibleControlSet|écrire tous les objets contrôle réductible dans la liste.|  
-||CA_Click|en fonction de l’état de la zone réductible, qui définit les images et le texte pour présenter|  
-|Prise en charge du contraste de Logo|isBlackBackground()|Appelé pour déterminer si l’arrière-plan est noir.  Précise uniquement lorsque le mode de contraste élevé.|  
-||isHighContrast()|Utilisez un intervalle de couleur pour détecter le mode de contraste élevé|  
-||onHighContrast(black)|Appelé lors de la détection de contraste élevé|  
+|CollapsibleArea|addToCollapsibleControlSet|écrire tous les objets de contrôle réductible dans la liste.|  
+||CA_Click|en fonction de l’état de la zone réductible, définit les textes pour présenter et images|  
+|Prise en charge de contraste de Logo|isBlackBackground()|Appelé pour déterminer si l’arrière-plan est noir.  Précise uniquement quand le mode contraste élevé.|  
+||isHighContrast()|utiliser une étendue de couleur pour le mode de contraste élevé de détection|  
+||onHighContrast(black)|Appelé lorsque le contraste élevé est détecté|  
 |Fonctionnalités LST|||  
 ||addToLanSpecTextIdSet(id)||  
 ||updateLST(currentLang)||  
 ||getDevLangFromCodeSnippet(lang)||  
-|Fonctionnalités multimédias|légende (début, fin, de texte, de style)||  
+|Fonctionnalités multimédia|légende (début, fin, texte, style)||  
 ||findAllMediaControls(normalizedId)||  
 ||getActivePlayer(normalizedId)||  
 ||captionsOnOff(id)||  
@@ -551,21 +552,21 @@ Le fichier branding.js contient JavaScript utilisé par les éléments de person
   
 **FICHIERS HTM**  
   
-Le package de personnalisation contient un ensemble de fichiers HTM qui prennent en charge les scénarios de communication des informations de clé pour les utilisateurs de contenu d’aide, par exemple une page d’accueil qui contient une section qui décrit les ensembles de contenus sont installés et les pages qui informe l’utilisateur lorsque les rubriques ne peut pas est introuvable dans le jeu local de rubriques. Notez que ces fichiers HTM peuvent être modifiées par produit.  Fournisseurs d’interpréteur de commandes ISO sont en mesure de prendre le package de marque par défaut et modifier le comportement et le contenu de ces pages à la suite de leurs besoins.  Ces fichiers font référence à leur package respectif de personnalisation dans l’ordre pour les balises de personnalisation obtenir le contenu correspondant à partir du fichier branding.xml.  
+Le package de personnalisation contient un ensemble de fichiers HTM qui prennent en charge des scénarios permettant de communiquer des informations de clé pour les utilisateurs de contenu technique, par exemple une page d’accueil qui contient une section décrivant les ensembles de contenu sont installés et les pages qui informe l’utilisateur lorsque les rubriques ne peut pas se trouve dans le jeu de rubriques local. Notez que ces fichiers HTM peuvent être modifiées par produit.  Fournisseurs d’interpréteur de commandes ISO sont en mesure de prendre le package de marque par défaut et modifier le comportement et le contenu de ces pages à la suite de leurs besoins.  Ces fichiers font référence à leur package de marque respectif afin que les balises de personnalisation obtenir le contenu correspondant à partir du fichier branding.xml.  
   
 ||||  
 |-|-|-|  
-|**Fichier**|**Utilisez**|**Affiche la Source de contenu**|  
-|homepage.htm|Il s’agit d’une page qui affiche le contenu actuellement installé et tout autre message approprié pour présenter à l’utilisateur sur leur contenu.  Ce fichier contient le contenu « Microsoft.Help.Id » de l’attribut de données supplémentaire meta = « -1 » qui place ce contenu en haut de la table des matières de contenu local.||  
+|**Fichier**|**Utilisation**|**Affiche la Source de contenu**|  
+|homepage.htm|Il s’agit d’une page qui affiche le contenu actuellement installé et tout autre message appropriée à présenter à l’utilisateur sur leur contenu.  Ce fichier contient le contenu « Microsoft.Help.Id » de l’attribut de données supplémentaire meta = « -1 » qui place ce contenu en haut de la table des matières de contenu local.||  
 ||&LT; META_HOME_PAGE_TITLE_ADD / &GT;|Branding.XML, balise \<HomePageTitle >|  
 ||&LT; HOME_PAGE_INTRODUCTION_SECTION_ADD / &GT;|Branding.XML, balise \<HomePageIntroduction >|  
 ||&LT; HOME_PAGE_CONTENT_INSTALL_SECTION_ADD / &GT;|Branding.XML, balise \<HomePageContentInstallText >|  
-||&LT; HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD / &GT;|Titre de section Branding.xml balise\<HomePageInstalledBooks >, les données générées à partir de l’application, \<HomePageNoBooksInstalled > lorsque aucune documentation n’est installée.|  
+||&LT; HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD / &GT;|Titre de section Branding.xml balise\<HomePageInstalledBooks >, les données générées à partir de l’application, \<HomePageNoBooksInstalled > lorsque aucun livres ne sont installés.|  
 ||&LT; HOME_PAGE_SETTINGS_SECTION_ADD / &GT;|Titre de section Branding.xml balise \<HomePageHelpSettings >, section texte \<HomePageHelpSettingsText >.|  
-|topiccorrupted.htm|Lorsqu’une rubrique existe déjà dans le jeu local, mais pour une raison quelconque ne peut pas être affichée (endommagé contenu).||  
+|topiccorrupted.htm|Lorsqu’une rubrique existe dans le jeu local, mais pour une raison quelconque ne peut pas être affichée (endommagé contenu).||  
 ||&LT; META_TOPIC_CORRUPTED_TITLE_ADD / &GT;|Branding.XML, balise \<TopicCorruptedTitle >|  
 ||&LT; TOPIC_CORRUPTED_SECTION_ADD / &GT;|Branding.XML, balise \<TopicCorruptedViewOnlineText >|  
-|topicnotfound.htm|Lorsqu’une rubrique est introuvable dans le contenu local défini ni disponible en ligne||  
+|topicnotfound.htm|Quand une rubrique est introuvable dans le contenu local défini ni disponible en ligne||  
 ||&LT; META_TOPIC_NOT_FOUND_TITLE_ADD / &GT;|Branding.XML, balise \<TopicNotFoundTitle >|  
 ||&LT; META_TOPIC_NOT_FOUND_ID_ADD / &GT;|Branding.XML, balise \<TopicNotFoundViewOnlineText > + \<TopicNotFoundDownloadContentText >|  
 ||&LT; TOPIC_NOT_FOUND_SECTION_ADD / &GT;|Branding.XML, balise \<TopicNotFoundText >|  
@@ -576,43 +577,43 @@ Le package de personnalisation contient un ensemble de fichiers HTM qui prennent
   
 **Fichiers CSS**  
   
-Le Package Visual Studio aide visionneuse marque contient deux fichiers css pour prendre en charge la présentation du contenu cohérente aide de Visual Studio :  
+Le Package Visual Studio aide visionneuse marque contient deux fichiers css pour prendre en charge de la présentation du contenu cohérente aide de Visual Studio :  
   
 -   Branding.CSS - contient les éléments css pour le rendu where SelfBranded = false  
   
 -   Printer.CSS - contient les éléments css pour le rendu where SelfBranded = false  
   
-Branding.CSS fichiers inclut des définitions pour la présentation de rubrique Visual Studio (inconvénient est que le branding.css contenue dans le Branding_\<paramètres régionaux > .mshc à partir du service de package peut varier).  
+Les fichiers branding.CSS inclut des définitions pour la présentation de rubrique Visual Studio (inconvénient est que le branding.css contenue dans le Branding_\<paramètres régionaux > .mshc à partir du service de package peut changer).  
   
 **Fichiers graphiques**  
   
-Le contenu Visual Studio affiche un logo de Visual Studio, ainsi que des autres graphiques.  Vous trouverez ci-dessous la liste complète des fichiers graphiques dans le package de marque de visionneuse d’aide Visual Studio.  
+Contenu de Visual Studio affiche un logo de Visual Studio, ainsi que des autres graphiques.  Vous trouverez ci-dessous la liste complète des fichiers graphiques dans le package de marque de Help Viewer de Visual Studio.  
   
 ||||  
 |-|-|-|  
-|**Fichier**|**Utilisez**|**Exemples**|  
-|Clear.gif|Utilisé pour afficher une zone réductible||  
+|**Fichier**|**Utilisation**|**Exemples**|  
+|Clear.gif|Utilisé pour restituer la zone réductible||  
 |footer_slice.gif|Présentation de pied de page||  
-|info_icon.gif|Utilisé lors de l’affichage des informations|Exclusion de responsabilité|  
-|online_icon.gif|Cette icône doit être associé à liens en ligne||  
-|tabLeftBD.gif|Utilisé pour afficher le conteneur d’extrait de code||  
-|tabRightBD.gif|Utilisé pour afficher le conteneur d’extrait de code||  
-|vs_logo_bk.gif|Utilisé pour les références de logo de contraste normal, tel que défini dans la balise de Branding.xml \<LogoFileName >.  Pour les produits Visual Studio, le nom du logo est vs_logo_bk.gif.||  
-|vs_logo_wh.gif|Utilisé pour les références de logo haute normal, tel que défini dans la balise de Branding.xml \<LogoFileNameHC >.  Pour les produits Visual Studio, le nom du logo est vs_logo_wh.gif.||  
+|info_icon.gif|Utilisé lors de l’affichage d’informations|Exclusion de responsabilité|  
+|online_icon.gif|Cette icône est à associer à des liens en ligne||  
+|tabLeftBD.gif|Utilisé pour restituer le conteneur d’extrait de code||  
+|tabRightBD.gif|Utilisé pour restituer le conteneur d’extrait de code||  
+|vs_logo_bk.gif|Utilisée pour les références de logo de contraste normal, tel que défini dans la balise de Branding.xml \<LogoFileName >.  Pour les produits Visual Studio, nom du logo est vs_logo_bk.gif.||  
+|vs_logo_wh.gif|Utilisée pour les références de logo haute normal, tel que défini dans la balise de Branding.xml \<LogoFileNameHC >.  Pour les produits Visual Studio, nom du logo est vs_logo_wh.gif.||  
 |ccOff.png|Graphique de sous-titrage||  
 |ccOn.png|Graphique de sous-titrage||  
-|ImageSprite.png|Utilisé pour afficher une zone réductible|développer ou réduire le graphique|  
+|ImageSprite.png|Utilisé pour restituer la zone réductible|développer ou réduire le graphique|  
   
 ### <a name="deploying-a-set-of-topics"></a>Déploiement d’un ensemble de rubriques  
-Il s’agit d’un didacticiel très simple et rapide pour la création d’un déploiement de contenu de la visionneuse d’aide définir composé d’un fichier MSHA et de l’ensemble de fichiers CAB ou MSHC qui contient les rubriques. Le MSHA est un fichier XML qui décrit un ensemble de fichiers CAB ou les fichiers MSHC. La visionneuse d’aide peut lire le MSHA pour obtenir une liste de contenu (le fichier. Fichier CAB ou. Les fichiers MSHC) disponibles pour l’installation locale.  
+Il s’agit d’un didacticiel très simple et rapide pour la création d’un visionneuse d’aide du déploiement de contenu défini composé d’un fichier MSHA et de l’ensemble de fichiers CAB ou MSHC qui contient les rubriques. Le MSHA est un fichier XML qui décrit un ensemble de fichiers CAB ou les fichiers MSHC. La visionneuse d’aide peut lire le MSHA pour obtenir une liste de contenu (le fichier. CAB ou. Fichiers MSHC) disponibles pour l’installation locale.  
   
-Il s’agit uniquement une introduction décrivant le schéma XML très basique pour le MSHA Observateur d’aide.  Notez qu’il existe un exemple d’implémentation sous cette vue d’ensemble et exemples helpcontentsetup.msha.  
+Il s’agit uniquement une introduction décrivant le schéma XML très basique pour le MSHA visionneuse aide.  Notez qu’il existe un exemple d’implémentation sous cette brève vue d’ensemble et des exemples helpcontentsetup.msha.  
   
-Le nom de la MSHA, dans le cadre de ce manuel, est helpcontentsetup.msha (le nom du fichier peut être n’importe quoi, avec l’extension. MSHA). Helpcontentsetup.msha (exemple ci-dessous) doit contenir une liste des fichiers CAB MSHCs disponibles.  Notez que le type de fichier doit être cohérent avec la MSHA (ne prend pas en charge une combinaison de types de fichiers MSHA et le fichier CAB). Pour chaque fichier CAB ou MSHC, il doit être un \<div classe = « package » >... \</div > (voir l’exemple ci-dessous).  
+Le nom de la MSHA, dans le cadre de ce manuel, est helpcontentsetup.msha (le nom du fichier peut être n’importe quoi, avec l’extension. MSHA). Helpcontentsetup.msha (exemple ci-dessous) doit contenir une liste des fichiers CAB ou MSHCs disponibles.  Notez que le type de fichier doit être cohérent au sein de la MSHA (ne prend pas en charge une combinaison de types de fichiers MSHA et CAB). Pour chaque fichier CAB ou d’un MSHC, il doit y avoir un \<div classe = « package » >... \</div > (voir l’exemple ci-dessous).  
   
 Remarque : dans l’exemple d’implémentation ci-dessous, nous avons inclus le package de personnalisation. Il est essentiel d’inclure afin d’obtenir les éléments de rendu du contenu de Visual Studio nécessaires et les comportements de contenu.  
   
-Exemple de fichier helpcontentsetup.msha : (remplacez « contenu set nom 1 » et « contenu jeu nom 2 » etc. avec vos noms de fichiers.)  
+Exemple de fichier helpcontentsetup.msha : (remplacez « contenu set nom 1 » et « contenu jeu nom 2" etc. avec vos noms de fichiers.)  
   
 ```html
 <html>  
@@ -644,9 +645,9 @@ Exemple de fichier helpcontentsetup.msha : (remplacez « contenu set nom 1 »
   
 3.  Créer le ci-dessous helpcontentsetup.msha comme un fichier texte (le bloc-notes a été utilisé pour créer le fichier) et enregistrez-le dans le dossier indiqué ci-dessus (voir l’étape 1).  
   
-Notez que la classe « Personnalisation » existe et qu’il est unique. La personnalisation mshc est inclus dans cette introduction afin que le contenu installé sera marque, et les comportements de contenu qui sont contenus dans les MSHCs aura les éléments de support technique appropriée contenues dans le package de personnalisation. Sans cela, les erreurs entraîne lorsque le système recherche les éléments de prise en charge qui ne font pas partie des extraits (installé) contenu.  
+Notez que la classe « Branding » existe et est unique. La personnalisation mshc est inclus dans ce manuel afin que le contenu installé sera de personnalisation, et les comportements de contenu qui sont contenus dans les MSHCs aura les éléments de prise en charge appropriée contenus dans le package de personnalisation. Sans cela, les erreurs se produisent lorsque le système recherche les éléments de prise en charge qui ne font pas partie des extraits (installé) contenu.  
   
-Pour obtenir Visual Studio package de marque, copiez le fichier Branding_en-US.mshc sur C:\Program Files (x86) \Microsoft Help Viewer\v2.3\ dans votre dossier de travail.  
+Pour obtenir Visual Studio package de marque, copier le fichier Branding_en-US.mshc à C:\Program Files (x86) \Microsoft Help Viewer\v2.3\ dans votre dossier de travail.  
   
 ```html  
 <html>  
@@ -683,9 +684,9 @@ Pour obtenir Visual Studio package de marque, copiez le fichier Branding_en-US.m
   
 **Résumé**  
   
-Utilisation et extension les étapes ci-dessus activera vsp déployer leurs jeux de contenu de la visionneuse d’aide Visual Studio.  
+À l’aide et étendre les étapes ci-dessus permettent de VSP déployer leurs ensembles de contenu pour la visionneuse d’aide Visual Studio.  
   
-### <a name="adding-help-to-the-visual-studio-shell-integrated-and-isolated"></a>Ajout de l’aide de Visual Studio Shell (intégré et isolé)  
+### <a name="adding-help-to-the-visual-studio-shell-integrated-and-isolated"></a>Ajout d’une aide pour Visual Studio Shell (intégré et isolé)  
 **Introduction**  
   
 Cette procédure pas à pas montre comment incorporer le contenu d’aide dans une application de Shell Visual Studio, puis le déployer.  
@@ -698,28 +699,28 @@ Cette procédure pas à pas montre comment incorporer le contenu d’aide dans u
   
 **Vue d’ensemble**  
   
-Le [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] interpréteur de commandes est une version de la [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] IDE sur laquelle vous pouvez baser une application. De telles applications contiennent le Shell isolé avec les extensions que vous créez. Utiliser des modèles de projet de Shell isolé, qui sont inclus dans le [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] SDK, de générer des extensions.  
+Le [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Shell est une version de la [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] IDE sur lequel vous pouvez baser une application. Ces applications contiennent le Shell isolé avec les extensions que vous créez. Utiliser des modèles de projet de Shell isolé, qui sont inclus dans le [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Kit de développement logiciel, de générer des extensions.  
   
-Les étapes de base pour la création d’une application de Shell isolé et son aide :  
+Les étapes de base pour la création d’une application basée sur le Shell isolé et son aide :  
   
-1.  Obtenir le [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] ISO Shell redistribuable (téléchargement Microsoft).  
+1.  Obtenir le [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] redistribuable du Shell ISO (un téléchargement de Microsoft).  
   
 2.  Dans Visual Studio, créez une extension d’aide qui est basée sur le Shell isolé, par exemple, l’extension de l’aide de Contoso qui est décrite plus loin dans cette procédure pas à pas.  
   
-3.  Encapsuler l’extension et l’interpréteur de commandes ISO redistribuables dans un déploiement MSI (une installation de l’application). Cette procédure pas à pas n’inclut pas d’une étape d’installation.  
+3.  Encapsulez l’extension et l’interpréteur de commandes ISO redistribuables dans un déploiement MSI (une application le programme d’installation). Cette procédure pas à pas n’inclut pas d’une étape de configuration.  
   
-Créer un magasin de contenu Visual Studio. Pour le scénario de l’environnement intégré, modifiez la Visual Studio12 au nom de catalogue du produit, comme suit :  
+Créer un magasin de contenu Visual Studio. Pour le scénario de Shell intégré, remplacez Studio12 Visual le nom du catalogue produit comme suit :  
   
 -   Créez le dossier C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15.  
   
--   Créez un fichier nommé que CatalogType.xml et l’ajouter au dossier. Le fichier doit contenir les lignes de code suivantes :  
+-   Créez un fichier nommé CatalogType.xml et ajoutez-le au dossier. Le fichier doit contenir les lignes de code suivantes :  
   
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>  
     <catalogType>UserManaged</catalogType>  
     ```  
   
-Définir le magasin de contenu dans le Registre. Pour l’environnement intégré, modifiez le nom du catalogue produit VisualStudio15 :  
+Définir le magasin de contenu dans le Registre. Pour le Shell intégré, changez VisualStudio15 au nom de catalogue du produit :  
   
 -   HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15  
   
@@ -727,7 +728,7 @@ Définir le magasin de contenu dans le Registre. Pour l’environnement intégr�
   
 -   HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15\en-US  
   
-     Clé : Valeur de chaîne du nom de catalogue : [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Documentation  
+     Clé : Valeur de chaîne de nom de catalogue : [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Documentation  
   
 **Créer le projet**  
   
@@ -737,9 +738,9 @@ Pour créer une extension de Shell isolé :
   
 2.  Dans l’Explorateur de solutions, dans le projet ContosoHelpShellUI, dans le dossier de fichiers de ressources, ouvrez ApplicationCommands.vsct. Assurez-vous que cette ligne est commentée (recherchez « No_Help ») : `<!-- <define name="No_HelpMenuCommands"/> -->`  
   
-3.  Appuyez sur la touche F5 pour compiler et exécuter **déboguer**. Dans l’instance expérimentale de l’IDE de Shell isolé, choisissez le **aide** menu. Assurez-vous que le **afficher l’aide**, **ajouter et supprimer le contenu d’aide**, et **aider à définir les préférences** commandes apparaissent.  
+3.  Appuyez sur la touche F5 pour compiler et exécuter **déboguer**. Dans l’instance expérimentale de l’IDE de Shell isolé, choisissez le **aide** menu. Assurez-vous que le **afficher l’aide**, **ajouter et supprimer le contenu d’aide**, et **définir les préférences pour aider à** commandes apparaissent.  
   
-4.  Dans l’Explorateur de solutions, dans le projet ContosHelpShell, dans le dossier Shell Customization, ouvrez ContosoHelpShell.pkgdef. Pour définir le catalogue d’aide de Contoso, ajoutez les lignes suivantes :  
+4.  Dans l’Explorateur de solutions, dans le projet ContosHelpShell, dans le dossier de personnalisation de l’interpréteur de commandes, ouvrez ContosoHelpShell.pkgdef. Pour définir le catalogue d’aide de Contoso, ajoutez les lignes suivantes :  
   
     ```  
      [$RootKey$\Help]  
@@ -749,7 +750,7 @@ Pour créer une extension de Shell isolé :
     "BrandingPackage"="ContosoBrandingPackage.mshc"  
     ```  
   
-5.  Dans l’Explorateur de solutions, dans le projet ContosHelpShell, dans le dossier Shell Customization, ouvrez ContosoHelpShell.Application.pkgdef. Pour activer la touche F1, ajoutez les lignes suivantes :  
+5.  Dans l’Explorateur de solutions, dans le projet ContosHelpShell, dans le dossier de personnalisation de l’interpréteur de commandes, ouvrez ContosoHelpShell.Application.pkgdef. Pour activer la touche F1, ajoutez les lignes suivantes :  
   
     ```  
     // F1 Help Provider  
@@ -765,19 +766,19 @@ Pour créer une extension de Shell isolé :
     @="{4A791146-19E4-11D3-B86B-00C04F79F802}"  
     ```  
   
-6.  Dans l’Explorateur de solutions, dans le menu contextuel de la solution ContosoHelpShell, choisissez le **propriétés** élément de menu. Sous **propriétés de Configuration**, sélectionnez **Configuration Manager**. Dans le **Configuration** colonne, modifiez toutes les valeurs « Debug » à « Libérer ».  
+6.  Dans l’Explorateur de solutions, dans le menu contextuel de la solution ContosoHelpShell, choisissez le **propriétés** élément de menu. Sous **propriétés de Configuration**, sélectionnez **Configuration Manager**. Dans le **Configuration** colonne, modifier toutes les valeurs « Debug » sur « Release ».  
   
 7.  Générez la solution. Cela crée un ensemble de fichiers dans un dossier de mise en production, qui sera utilisé dans la section suivante.  
   
-Pour effectuer ce test comme si déployé :  
+Pour effectuer ce test car si déployé :  
   
-1.  Sur l’ordinateur que vous déployez Contoso pour installer l’interpréteur de commandes ISO (supérieure) téléchargé.  
+1.  Sur l’ordinateur que vous déployez Contoso pour installer l’interpréteur de commandes ISO (ci-dessus) téléchargé.  
   
 2.  Créer un dossier dans \\\Program Files (x86)\\et nommez-le `Contoso`.  
   
-3.  Copiez le contenu du dossier de mise en production ContosoHelpShell à \\dossier de \Contoso\ \Program Files (x86).  
+3.  Copiez le contenu à partir du dossier de mise en production ContosoHelpShell à \\dossier de \Contoso\ \Program Files (x86).  
   
-4.  Démarrez l’Éditeur du Registre en choisissant **exécuter** dans les **Démarrer** menu et en entrant `Regedit`. Dans l’Éditeur du Registre, choisissez **fichier**, puis **importation**. Recherchez le dossier du projet ContosoHelpShell. Dans le sous-dossier ContosoHelpShell, choisissez ContosoHelpShell.reg.  
+4.  Démarrez l’Éditeur du Registre en choisissant **exécuter** dans le **Démarrer** menu et en entrant `Regedit`. Dans l’Éditeur du Registre, choisissez **fichier**, puis **importation**. Recherchez le dossier de projet ContosoHelpShell. Dans le sous-dossier ContosoHelpShell, choisissez ContosoHelpShell.reg.  
   
 5.  Créer un magasin de contenu :  
   
@@ -785,7 +786,7 @@ Pour effectuer ce test comme si déployé :
   
      Pour [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Shell intégré, créez le dossier C:\ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio15  
   
-6.  Créer que CatalogType.xml et ajouter au magasin de contenu (étape précédente) qui contient :  
+6.  Créer CatalogType.xml et l’ajouter au magasin de contenu (étape précédente) contenant :  
   
     ```  
     <?xml version="1.0" encoding="UTF-8"?>  
@@ -796,39 +797,39 @@ Pour effectuer ce test comme si déployé :
   
      HKLM\SOFTWARE\Wow6432Node\Microsoft\Help\v2.3\Catalogs\VisualStudio15Key : Valeur de chaîne de LocationPath :  
   
-     Pour ISO Shell :  
+     Pour l’interpréteur de commandes ISO :  
   
      C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15  
   
-     [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Environnement intégré :  
+     [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Shell intégré :  
   
-     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-des États-Unis  
+     C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-US  
   
-     Clé : Valeur de chaîne du nom de catalogue : [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Documentation. Pour ISO Shell, il s’agit de celui de votre catalogue.  
+     Clé : Valeur de chaîne de nom de catalogue : [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Documentation. Pour ISO Shell, ceci est le nom de votre catalogue.  
   
 8.  Copier le contenu (fichiers CAB ou MSHC et MSHA) dans un dossier local.  
   
-9. Ligne de commande exemple environnement intégré pour le test du magasin de contenu. Pour ISO Shell, modifiez les valeurs de catalogue et launchingApp comme il convient de faire correspondre le produit.  
+9. Exemple de ligne de commande Shell intégré pour le test de magasin de contenu. Pour ISO Shell, modifiez les valeurs de catalogue et launchingApp comme il convient de faire correspondre le produit.  
   
-     « C:\Program fichiers (x86) \Microsoft Help Viewer\v2.3\HlpViewer.exe » /catalogName VisualStudio15 /helpQuery méthode = « page & id = ContosoTopic0 » /launchingApp Microsoft, Visual Studio, 12.0  
+     « C:\Program fichiers (x86) \Microsoft Help Viewer\v2.3\HlpViewer.exe » /catalogName VisualStudio15 /helpQuery méthode = "page & id = ContosoTopic0 « /launchingApp Microsoft, Visual Studio, 12.0  
   
-10. Lancez l’application Contoso (à partir de la racine d’application Contoso). Dans l’interpréteur de commandes ISO, choisissez le **aide** élément de menu, puis remplacez le **aider à définir les préférences** à **utilisation de l’aide locale**.  
+10. Lancez l’application Contoso (à partir de la racine de l’application Contoso). Au sein de l’interpréteur de commandes ISO, choisissez le **aide** élément de menu, puis remplacez le **définir les préférences pour aider à** à **utilisation de l’aide locale**.  
   
-11. Dans l’interpréteur de commandes, choisissez le **aide** élément de menu, puis **afficher l’aide**. Doit se lancer la visionneuse d’aide locale. Choisissez l’onglet **Gérer le contenu**. Sous **Source d’Installation**, choisissez le **disque** case d’option. Choisissez le **...**  bouton et accédez au dossier local qui contient le contenu de Contoso (copié dans le dossier local dans l’étape ci-dessus). Choisissez le helpcontentsetup.msha. Contoso doit maintenant apparaître en tant qu’un livre dans les sélections de livre. Choisissez **ajouter**, puis choisissez le **mise à jour** bouton (en bas à droite).  
+11. Dans l’interpréteur de commandes, choisissez le **aide** élément de menu, puis **afficher l’aide**. La visionneuse d’aide locale doit lancer. Choisissez l’onglet **Gérer le contenu**. Sous **Source d’Installation**, choisissez le **disque** case d’option. Choisissez le **...**  bouton et accédez au dossier local contenant le contenu de Contoso (copié dans le dossier local dans l’étape ci-dessus). Choisissez le helpcontentsetup.msha. Contoso doit maintenant s’afficher sous forme de livre dans les sélections de livre. Choisissez **ajouter**, puis choisissez le **mise à jour** bouton (coin inférieur droit).  
   
-12. Dans l’IDE de Contoso, appuyez sur la touche F1 pour tester la fonctionnalité de la touche F1.  
+12. Dans l’IDE de Contoso, appuyez sur la touche F1 pour tester les fonctionnalités de la touche F1.  
   
 ### <a name="additional-resources"></a>Ressources supplémentaires  
-L’API de Runtime, consultez [API de l’aide Windows](http://msdn.microsoft.com/library/windows/desktop/hh447318\(v=vs.85\).aspx).  
+Pour l’API de Runtime, consultez [API d’aide Windows](http://msdn.microsoft.com/library/windows/desktop/hh447318\(v=vs.85\).aspx).  
   
-Pour plus d’informations sur la façon de tirer parti de l’API de l’aide, consultez [aide des exemples de Code visionneuse](http://visualstudiogallery.msdn.microsoft.com/f08f296f-7076-4aec-8da3-8f0fbe04461e)  
+Pour plus d’informations sur la façon de tirer parti de l’API d’aide, consultez [aide des exemples de Code visionneuse](http://visualstudiogallery.msdn.microsoft.com/f08f296f-7076-4aec-8da3-8f0fbe04461e)  
   
 Pour fournir des commentaires sur ces composants, utilisez [Microsoft Connect](http://connect.microsoft.com/).  
   
-Veuillez envoyer vos suggestions de fonctionnalité à [Microsoft User Voice](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
+Veuillez envoyer des suggestions de fonctionnalités à [Microsoft User Voice](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
   
-Pour obtenir une aide supplémentaire, essayez le [système d’aide et de Documentation pour développeurs MSDN forums](http://social.msdn.microsoft.com/Forums/devdocs/threads)  
+Pour obtenir une aide supplémentaire, essayez le [forums MSDN Developer Documentation and Help System](http://social.msdn.microsoft.com/Forums/devdocs/threads)  
   
-Mises à jour importantes du problème, consultez le [aide fichier Lisez-moi de visionneuse](http://go.microsoft.com/fwlink/?LinkID=231397&clcid=0x409)  
+Mises à jour sur les dernières problème, veuillez consulter le [aide fichier Lisez-moi de visionneuse](http://go.microsoft.com/fwlink/?LinkID=231397&clcid=0x409)  
   
-Pour contacter l’équipe PM de visionneuse aide directement, envoyez un e-mail à hlpfdbk@microsoft.com
+Pour contacter directement l’équipe PM de visionneuse aide, envoyez un e-mail à hlpfdbk@microsoft.com

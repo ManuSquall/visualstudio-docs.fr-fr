@@ -1,18 +1,18 @@
 ---
 title: JsConvertValueToObject, fonction | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - jsrt/JsConvertValueToObject
 helpviewer_keywords:
 - JsConvertValueToObject function
 ms.assetid: 6528b28a-1d2b-417f-bf78-bf05547c52e1
-caps.latest.revision: 
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24567679"
 ---
 # <a name="jsconvertvaluetoobject-function"></a>JsConvertValueToObject, fonction
 Convertit la valeur en objet à l'aide de la sémantique JavaScript standard.  

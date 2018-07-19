@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dca1e37a0cde89a2a531d3fceea4337bb9e348dd
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 046aeb3d43066dbe0bd28ef76036478efdbda49f
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "37057022"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Démarrage rapide : Créer un projet Python à partir d’un modèle dans Visual Studio
 
@@ -36,11 +37,31 @@ Une fois que vous avez [installé la prise en charge de Python dans Visual Studi
     > [!Tip]
     > Au début d’un projet, il est vivement recommandé de créer un environnement virtuel immédiatement ; la plupart des modèles Visual Studio invitent à le faire. Les environnements virtuels préservent les exigences précises du projet au fil du temps et des ajouts et suppressions de bibliothèques. Il est alors facile de générer un fichier `requirements.txt`, qui permet de réinstaller ces dépendances sur d’autres ordinateurs de développement (comme avec le contrôle de code source) et se révèle utile pour déployer le projet sur un serveur de production. Pour plus d’informations sur les environnements virtuels et leurs avantages, consultez la section [Utiliser des environnements virtuels](../python/selecting-a-python-environment-for-a-project.md#using-virtual-environments) et la page [Gérer les packages requis avec requirements.txt](../python/managing-required-packages-with-requirements-txt.md).
 
-1. Une fois que Visual Studio a créé cet environnement, parcourez **l’Explorateur de solutions** pour voir s’il existe un fichier `app.py` avec `requirements.txt`. Ouvrez `app.py` : le modèle a fourni un code similaire dans le [ Guide de démarrage rapide : Créer une application web avec Flask](../ide/quickstart-python.md), avec deux sections supplémentaires.
+1. Une fois que Visual Studio a créé cet environnement, parcourez **l’Explorateur de solutions** pour voir s’il existe un fichier `app.py` avec `requirements.txt`. Ouvrez `app.py` : le modèle a fourni un code similaire dans [Démarrage rapide : Créer une application web avec Flask](../ide/quickstart-python.md), avec quelques sections supplémentaires. Tout le code ci-dessous est créé par le modèle. Vous n’avez pas besoin d’en coller vous-même dans `app.py`.
 
-    Au début se trouve la ligne `wsgi_app = app.wsgi_app`, qui peut être utile pour déployer une application sur un hôte web.
+    Le code commence par les importations nécessaires :
 
-    Ensuite vient le code de démarrage permettant de définir l’hôte et le port par le biais de variables d’environnement plutôt qu’en les codant en dur. Il est donc facile de contrôler la configuration sur les ordinateurs de développement et de production sans modifier le code :
+    ```python
+    from flask import Flask
+    app = Flask(__name__)
+    ```
+
+    Ensuite figure la ligne suivante, qui peut être utile lors du déploiement d’une application sur un hôte web :
+
+    ```python
+    wsgi_app = app.wsgi_app
+    ```
+
+    Vient ensuite l’élément décoratif de l’itinéraire sur une fonction simple qui définit une vue :
+
+    ```python
+    @app.route('/')
+    def hello():
+        """Renders a sample page."""
+        return "Hello World!"
+    ```
+
+    Pour finir, le code de démarrage ci-dessous vous permet de définir l’hôte et le port par le biais de variables d’environnement plutôt qu’en les codant en dur. Il est donc facile de contrôler la configuration sur les ordinateurs de développement et de production sans modifier le code :
 
     ```python
     if __name__ == '__main__':

@@ -1,7 +1,7 @@
 ---
 title: VCMessage, tâche | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/27/2018
 ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
@@ -21,11 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa8ef67a4fa19bd715e73e50fcc268aee7a4df5d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c1b95d6e0e03aa0ed9aeb84a1709c5806c13946c
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058332"
 ---
 # <a name="vcmessage-task"></a>VCMessage, tâche
 Journalise les messages d’avertissement et d’erreur lors de la génération.  

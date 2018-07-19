@@ -1,5 +1,5 @@
 ---
-title: Ajout d’un Menu à la barre de menus de Visual Studio | Documents Microsoft
+title: Ajout d’un Menu à la barre de menus de Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,35 +14,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a391da85c38176d79a1c77ce8836ce510e8d27e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c95007ed5b740812ca2b1a269390fbad6ffbc2ba
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079531"
 ---
-# <a name="adding-a-menu-to-the-visual-studio-menu-bar"></a>Ajout d’un Menu à la barre de menus de Visual Studio
-Cette procédure pas à pas montre comment ajouter un menu dans la barre de menus de l’environnement de développement intégré (IDE) Visual Studio. La barre de menus IDE contient les catégories de menu comme **fichier**, **modifier**, **vue**, **fenêtre**, et **aide** .  
+# <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>Ajouter un menu dans la barre de menus de Visual Studio
+Cette procédure pas à pas montre comment ajouter un menu dans la barre de menus de l’environnement de développement intégré (IDE) Visual Studio. La barre de menus IDE contient des catégories de menu comme **fichier**, **modifier**, **vue**, **fenêtre**, et **aide** .  
   
  Avant d’ajouter un nouveau menu à la barre de menus de Visual Studio, considérez si vos commandes doivent être placés dans un menu existant. Pour plus d’informations sur le placement de commande, consultez [Menus et commandes de Visual Studio](../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md).  
   
- Les menus sont déclarés dans le fichier .vsct du projet. Pour plus d’informations sur les menus et les fichiers .vsct, consultez [commandes, Menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md).  
+ Menus sont déclarés dans le *.vsct* fichier du projet. Pour plus d’informations sur les menus et *.vsct* de fichiers, consultez [commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md).  
   
- À la fin de cette procédure pas à pas, vous pouvez créer un menu nommé **TestMenu** qui contient une seule commande.  
+ En fin de cette procédure pas à pas, vous pouvez créer un menu nommé **TestMenu** qui contient une seule commande.  
   
 ## <a name="prerequisites"></a>Prérequis  
- À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme une fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS ultérieurement. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS par la suite. Pour plus d’informations, consultez [installer le SDK Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-vsix-project-that-has-a-custom-command-item-template"></a>Création d’un projet VSIX qui a un modèle d’élément de commande personnalisée  
+## <a name="create-a-vsix-project-that-has-a-custom-command-item-template"></a>Créez un projet VSIX qui dispose d’un modèle d’élément de commande personnalisée  
   
-1.  Créez un projet VSIX nommé `TopLevelMenu`. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue sous **Visual C#** / **extensibilité**.  Pour plus d’informations, consultez [avec une commande de Menu pour créer une Extension](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1.  Créez un projet VSIX nommé `TopLevelMenu`. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue sous **Visual C#** / **extensibilité**.  Pour plus d’informations, consultez [créer une extension avec une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Lorsque le projet s’ouvre, ajouter un modèle d’élément de commande personnalisée nommé **TestCommand**. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **Ajouter / nouvel élément**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual c# / extensibilité** et sélectionnez **commande personnalisée**. Dans le **nom** au bas de la fenêtre, modifiez le nom de fichier de commande pour **TestCommand.cs**.  
+2.  Quand le projet s’ouvre, ajoutez un modèle d’élément de commande personnalisée nommé **commande de test**. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **Ajouter / nouvel élément**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual c# / extensibilité** et sélectionnez **commande personnalisée**. Dans le **nom** en bas de la fenêtre, modifiez le nom de fichier de commande pour *TestCommand.cs*.  
   
-## <a name="creating-a-menu-on-the-ide-menu-bar"></a>Création d’un Menu dans la barre de menus IDE  
+## <a name="create-a-menu-on-the-ide-menu-bar"></a>Créer un menu dans la barre de menus IDE  
   
-#### <a name="to-create-a-menu"></a>Pour créer un menu  
-  
-1.  Dans **l’Explorateur de solutions**, ouvrez TestCommandPackage.vsct.  
+1.  Dans **l’Explorateur de solutions**, ouvrez *TestCommandPackage.vsct*.  
   
      À la fin du fichier, il existe un \<symboles > nœud qui contient plusieurs \<GuidSymbol > nœuds. Dans le nœud nommé guidTestCommandPackageCmdSet, ajoutez un nouveau symbole, comme suit :  
   
@@ -65,13 +64,13 @@ Cette procédure pas à pas montre comment ajouter un menu dans la barre de menu
     </Menus>  
     ```  
   
-     Le `guid` et `id` valeurs du menu spécifient le jeu de commandes et utilisez le menu spécifique dans le jeu de commandes.  
+     Le `guid` et `id` valeurs du menu spécifient le jeu de commandes et dans le menu spécifique dans le jeu de commandes.  
   
-     Le `guid` et `id` valeurs du parent positionnement le menu dans la section de la barre de menus de Visual Studio qui contient des menus Outils et compléments.  
+     Le `guid` et `id` valeurs du parent positionnement le menu sur la section de la barre de menus de Visual Studio qui contient les menus d’outils et compléments.  
   
-     La valeur de la `CommandName` chaîne spécifie que le texte doit apparaître dans l’élément de menu.  
+     La valeur de la `CommandName` chaîne indique que le texte doit apparaître dans l’élément de menu.  
   
-3.  Dans le \<groupes > section, recherchez la \<groupe > et modifier le \<Parent > élément pointe vers le menu que nous venons d’ajouter :  
+3.  Dans le \<groupes > section, recherchez le \<groupe > et modifier le \<Parent > élément pour pointer vers le menu que nous venons d’ajouter :  
   
     ```csharp  
     <Groups>  
@@ -83,9 +82,9 @@ Cette procédure pas à pas montre comment ajouter un menu dans la barre de menu
   
      Cela rend la partie du groupe du nouveau menu.  
   
-4.  Rechercher les `Buttons` section. Notez que la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modèle de Package a généré un `Button` élément qui a son parent définie sur `MyMenuGroup`. Par conséquent, cette commande s’affiche dans votre menu.  
+4.  Rechercher la `Buttons` section. Notez que le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modèle de Package a généré un `Button` élément qui a son parent la valeur `MyMenuGroup`. Par conséquent, cette commande s’affiche dans votre menu.  
   
-## <a name="building-and-testing-the-extension"></a>Génération et test de l’Extension  
+## <a name="build-and-test-the-extension"></a>Générer et tester l’extension  
   
 1.  Générez le projet et commencez le débogage. Une instance de l’instance expérimentale doit apparaître.  
   
@@ -93,7 +92,7 @@ Cette procédure pas à pas montre comment ajouter un menu dans la barre de menu
   
 3.  Sur le **TestMenu** menu, cliquez sur **appeler une commande de Test**.  
   
-     Une boîte de message doit apparaître et afficher le message « TestCommand Package à l’intérieur de TopLevelMenu.TestCommand.MenuItemCallback() ». Cela indique que la nouvelle commande fonctionne.  
+     Une boîte de message doit apparaître et afficher le message « Commande de test Package à l’intérieur de TopLevelMenu.TestCommand.MenuItemCallback() ». Cela indique que la nouvelle commande fonctionne.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)

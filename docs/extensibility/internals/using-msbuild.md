@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141449"
 ---
 # <a name="using-msbuild"></a>À l’aide de MSBuild
 MSBuild fournit un format XML bien défini et extensible pour la création de fichiers de projet qui décrivent les éléments de projet pour être créés, de tâches de génération et de configurations de build entièrement.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31119160"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 Cette interface permet à la session de débogage responsable de notifier un processus qu’elle est de s’attacher à ou de détachement d’un processus.  

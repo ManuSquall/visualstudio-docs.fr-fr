@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146817"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>À l’aide d’assemblys PIA Visual Studio
 Les assemblys PIA Visual Studio autorisent les applications managées accéder aux interfaces COM qui fournissent une extensibilité de Visual Studio. Il existe certaines différences entre les interfaces COM droites et à leurs versions interop. Par exemple, les valeurs HRESULT sont généralement représentées sous forme de valeurs de type int et doivent être traités de la même façon en tant qu’exceptions, et paramètres (en particulier les paramètres de sortie) sont traités différemment.  

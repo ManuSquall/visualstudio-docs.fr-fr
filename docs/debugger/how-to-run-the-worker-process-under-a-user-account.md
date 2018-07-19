@@ -1,5 +1,5 @@
 ---
-title: 'Comment : exécuter le processus de travail sous un compte d’utilisateur | Documents Microsoft'
+title: 'Comment : exécuter le processus de travail sous un compte d’utilisateur | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,17 +21,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad6407e4768acbeaf32cf4bebaf7064f04f21fba
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 05c0fb64c5be7912f9453d3f9f25fd86a6fbfc1e
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057185"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Comment : exécuter le processus de travail sous un compte d'utilisateur
 Pour configurer votre ordinateur afin de pouvoir exécuter le processus de traitement [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (aspnet_wp.exe ou w3wp.exe) sous un compte d'utilisateur, procédez comme suit.  
 
  > [!IMPORTANT]
- > À compter de Windows Server 2008 R2, nous recommandons l’utilisation de la [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) comme identité pour chaque pool d’applications.
+ > À compter de Windows Server 2008 R2, nous vous recommandons d’utiliser le [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) comme identité pour chaque pool d’applications.
   
 ## <a name="procedure"></a>Procédure  
   
@@ -39,7 +40,7 @@ Pour configurer votre ordinateur afin de pouvoir exécuter le processus de trait
   
 1.  Ouvrez le fichier machine.config, situé sur votre ordinateur dans le dossier CONFIG sous le chemin d'accès où vous avez installé le runtime.  
   
-2.  Rechercher les &lt;processModel&gt; section et modifier les attributs d’utilisateur et mot de passe pour le nom et le mot de passe du lequel aspnet_wp.exe doit s’exécuter sous le compte d’utilisateur.  
+2.  Rechercher la &lt;processModel&gt; section et modifier les attributs d’utilisateur et mot de passe pour le nom et le mot de passe du compte d’utilisateur que vous souhaitez aspnet_wp.exe doit s’exécuter sous.  
   
 3.  Enregistrez le fichier machine.config.  
   
@@ -57,12 +58,12 @@ Pour configurer votre ordinateur afin de pouvoir exécuter le processus de trait
   
 5.  Ouvrez une invite de commandes Windows et réinitialisez le serveur en exécutant :  
   
-    ```  
+    ```cmd
     iisreset  
     ```  
     — ou —  
   
-    ```  
+    ```cmd
     net stop iisadmin /y  
     net start w3svc  
     ```  
@@ -86,6 +87,6 @@ Pour configurer votre ordinateur afin de pouvoir exécuter le processus de trait
 13. Cliquez sur **OK** pour fermer la boîte de dialogue **Propriétés des fichiers ASP.Net temporaires** .  
   
 ## <a name="see-also"></a>Voir aussi  
-[Débogage d’Applications ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
+[Déboguer des Applications ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
 [Débogage ASP.NET : configuration système requise](../debugger/aspnet-debugging-system-requirements.md)  
   

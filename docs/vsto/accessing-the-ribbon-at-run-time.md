@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263211"
 ---
 # <a name="access-the-ribbon-at-runtime"></a>Accéder au ruban au moment de l’exécution
   Vous pouvez écrire du code pour afficher, masquer et modifier le ruban, et permettre aux utilisateurs d’exécuter ce code à partir de contrôles dans un volet de tâches personnalisé, un volet Actions ou une zone de formulaire Outlook.  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139771"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Indicateurs de ligne de commande du compilateur VSCT
 Le compilateur de la Table de commande Visual Studio (VSTC) fournit des commutateurs de ligne de commande pour vous assurer de la compilation des fichiers .vsct réussit.  

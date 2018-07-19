@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945127"
 ---
 # <a name="notifications-environment-options-dialog-box"></a>Notifications, Environnement, boîte de dialogue Options
 Utilisez cette option pour cesser d'ignorer les notifications que vous avez choisi précédemment d'ignorer via la boîte de dialogue Notifications. Pour plus d’informations, consultez [Notifications](../../ide/visual-studio-notifications.md).

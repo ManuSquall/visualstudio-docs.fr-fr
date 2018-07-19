@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a0b43916a9a37937de0665a591555de3e2f7ad
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: dc5a4c5774a4290d8811026d4c522e4d9e972e4e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446541"
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572151"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Procédure pas à pas : profilage de la ligne de commande à l’aide de l’échantillonnage
 
@@ -43,7 +43,7 @@ Dans cette procédure pas à pas, vous allez suivre les étapes suivantes :
 L’échantillonnage est une méthode de profilage par laquelle un processus spécifique est périodiquement interrogé pour déterminer la fonction active. Les données résultantes fournissent le nombre de fois que la fonction était sur la pile des appels quand le processus a été échantillonné.
 
 > [!NOTE]
-> Les outils en ligne de commande des outils de profilage se trouvent dans le sous-répertoire \Team Tools\Performance Tools du répertoire d’installation Visual Studio. Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande. Pour plus d’informations, consultez [Spécification du chemin d’accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). PeopleTrax est une application 32 bits.
+> Les outils en ligne de commande des Outils de profilage se trouvent dans le sous-répertoire *\Team Tools\Performance Tools* du répertoire d’installation de Visual Studio. Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande. Pour plus d’informations, consultez [Spécification du chemin d’accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). PeopleTrax est une application 32 bits.
 
 ### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>Pour profiler l’application PeopleTrax à l’aide de la méthode d’échantillonnage
 
@@ -59,13 +59,13 @@ L’échantillonnage est une méthode de profilage par laquelle un processus sp�
     VSPerfCLREnv /sampleon
     ```
 
-5. Démarrez le profilage en exécutant VSPerfCmd.exe, outil en ligne de commande qui contrôle le profileur. La commande suivante démarre l’application et le profileur en mode d’échantillonnage :
+5. Démarrez le profilage en exécutant *VSPerfCmd.exe*, outil en ligne de commande qui contrôle le profileur. La commande suivante démarre l’application et le profileur en mode d’échantillonnage :
 
     ```cmd
     VsPerfCmd /start:sample /output:PeopleTraxReport.vsp /launch:PeopleTrax.exe
     ```
 
-     Le processus du profileur démarre et s’attache au processus PeopleTrax.exe. Le processus du profileur commence à écrire les données de profilage collectées dans le fichier de rapport.
+     Le processus du profileur démarre et s’attache au processus *PeopleTrax.exe*. Le processus du profileur commence à écrire les données de profilage collectées dans le fichier de rapport.
 
 6. Cliquez sur **Get People** (Obtenir des personnes).
 
@@ -87,13 +87,13 @@ L’échantillonnage est une méthode de profilage par laquelle un processus sp�
     VSPerfCLREnv /sampleoff
     ```
 
-11. Les données de profilage sont stockées dans le fichier.vsp. Analysez les résultats à l’aide d’une des méthodes suivantes :
+11. Les données de profilage sont stockées dans le fichier .*vsp*. Analysez les résultats à l’aide de l’une des méthodes suivantes :
 
-    - Ouvrez le fichier.vsp dans l’IDE de Visual Studio.
+    - Ouvrez le fichier .*vsp* dans l’IDE Visual Studio.
 
          — ou —
 
-    - Générez un fichier de valeurs séparées par des virgules (.csv) à l’aide de l’outil en ligne de commande VSPerfReport.exe. Pour générer des rapports pour une utilisation en dehors de l’IDE de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], utilisez la commande suivante :
+    - Générez un fichier de valeurs séparées par des virgules (.*csv*) à l’aide de l’outil en ligne de commande *VSPerfReport.exe*. Pour générer des rapports pour une utilisation en dehors de l’IDE de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], utilisez la commande suivante :
 
         ```cmd
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all

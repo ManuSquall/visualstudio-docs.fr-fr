@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137672"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Chaînes utilisées en tant que clés pour la recherche d’un contrôle de Source de plug-in
 Les chaînes suivantes sont les clés d’accès au Registre pour trouver des informations sur le contrôle de source de plug-in.  

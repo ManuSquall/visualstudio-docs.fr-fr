@@ -16,11 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3369fde3a9363951bf08b7af04ed35afc38a45c5
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 24793c3801167572a96fb272c73964a58c5ebd7f
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36297654"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Utiliser les paramètres de ligne de commande pour installer Visual Studio 2017
 
@@ -60,7 +61,7 @@ Les options de ligne de commande sont utilisées conjointement avec le programme
 | `--installPath <dir>` | Répertoire d’installation de l’instance à installer. Pour la commande d’installation, cette option est **facultative** et il s’agit de l’emplacement où l’instance doit être installée. Pour les autres commandes, cette option est **requise** et il s’agit de l’emplacement où l’instance précédente a été installée. |
 | `--addProductLang <language-locale>` | **Facultatif** : lors d’une installation ou d’une modification, cette option détermine les modules linguistiques de l’interface utilisateur qui sont installés sur le produit. Elle peut apparaître plusieurs fois sur la ligne de commande pour ajouter plusieurs modules linguistiques. Si elle est absente, l’installation utilise les paramètres régionaux de l’ordinateur. Pour plus d’informations, consultez la section [Liste des paramètres régionaux de langue](#list-of-language-locales) de cette page.|
 | `--removeProductLang <language-locale>` | **Facultatif** : lors d’une installation ou d’une modification, cette option détermine les modules linguistiques de l’interface utilisateur qui doivent être supprimés du produit. Elle peut apparaître plusieurs fois sur la ligne de commande pour ajouter plusieurs modules linguistiques. Pour plus d’informations, consultez la section [Liste des paramètres régionaux de langue](#list-of-language-locales) de cette page.|
-| `--add <one or more workload or component IDs>` | **Facultatif** : un ou plusieurs ID de charge de travail ou composant à ajouter. Les composants obligatoires de l’artefact sont installés, mais pas les composants recommandés ni facultatifs. Vous pouvez contrôler globalement les autres composants à l’aide des options `--includeRecommended` et/ou `--includeOptional`. Pour un contrôle plus précis, vous pouvez ajouter `;includeRecommended` ou `;includeOptional` à l’ID (par exemple, `--add Workload1;includeRecommended` ou `--add Workload2;includeRecommended;includeOptional`). Pour plus d’informations, consultez la page [ID de charge de travail et de composant](workload-and-component-ids.md). Vous pouvez répéter cette option si nécessaire.|
+| `--add <one or more workload or component IDs>` | **Facultatif** : un ou plusieurs ID de charge de travail ou composant à ajouter. Les composants obligatoires de l’artefact sont installés, mais pas les composants recommandés ni facultatifs. Vous pouvez contrôler globalement les autres composants à l’aide des options `--includeRecommended` et/ou `--includeOptional`. Pour inclure plusieurs charges de travail ou composants, répétez la commande `--add` (par exemple, `--add Workload1 --add Workload2`). Pour un contrôle plus précis, vous pouvez ajouter `;includeRecommended` ou `;includeOptional` à l’ID (par exemple, `--add Workload1;includeRecommended` ou `--add Workload2;includeRecommended;includeOptional`). Pour plus d’informations, consultez la page [ID de charge de travail et de composant](workload-and-component-ids.md). Vous pouvez répéter cette option si nécessaire.|
 | `--remove <one or more workload or component IDs>` | **Facultatif** : un ou plusieurs ID de charge de travail ou composant à supprimer. Pour plus d’informations, consultez notre page [ID de charge de travail et de composant](workload-and-component-ids.md). Vous pouvez répéter cette option si nécessaire.|
 | `--in <path>` | **Facultatif** : URI ou chemin d’un fichier réponse.  |
 | `--all` | **Facultatif** : indique s’il faut installer tous les composants et charges de travail d’un produit. |
@@ -146,7 +147,7 @@ Chaque opération génère plusieurs fichiers journaux dans le répertoire `%TEM
 
 ## <a name="get-support"></a>Obtenir de l’aide
 
-Parfois, des problèmes peuvent se produire. Si votre installation de Visual Studio échoue, consultez la page [Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017](troubleshooting-installation-issues.md). Si aucune étape de résolution des problèmes ne vous aide, vous pouvez nous contacter pour une conversation en direct sur une assistance à l’installation (en anglais uniquement). Pour plus de détails, consultez la [page du support Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+Parfois, des problèmes peuvent se produire. Si votre installation de Visual Studio échoue, consultez la page [Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017](troubleshooting-installation-issues.md). Si aucune étape de résolution des problèmes ne vous aide, vous pouvez nous contacter pour une conversation en direct sur une assistance à l’installation (en anglais uniquement). Pour plus de détails, consultez la [page du support Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
 
 Voici d’autres options de support :
 
@@ -160,3 +161,4 @@ Voici d’autres options de support :
 * [Exemples de paramètres de ligne de commande pour l’installation de Visual Studio 2017](command-line-parameter-examples.md)
 * [Créer une installation hors connexion de Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
 * [Automatiser l’installation de Visual Studio avec un fichier réponse](automated-installation-with-response-file.md)
+* [ID de charge de travail et de composant Visual Studio 2017](workload-and-component-ids.md)

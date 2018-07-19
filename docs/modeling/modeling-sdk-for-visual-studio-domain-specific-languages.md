@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950840"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Kit de développement logiciel de modélisation pour Visual Studio - Langages spécifiques à un domaine
 À l’aide du Kit de développement logiciel de modélisation pour [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pouvez créer des outils de développement puissant basé sur le modèle que vous pouvez intégrer à [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. De la même manière, vous pouvez créer une ou plusieurs définitions de modèle et la/les intégrer dans un ensemble d'outils.

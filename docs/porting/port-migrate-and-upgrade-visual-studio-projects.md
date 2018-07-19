@@ -1,8 +1,14 @@
 ---
-title: Porter, migrer et mettre à niveau des projets Visual Studio
+title: Porter, migrer et mettre à niveau des projets
+description: Ce document contient des informations de référence sur la prise en charge dans Visual Studio 2017 des projets créés dans des versions antérieures de Visual Studio et aborde la façon dont Visual Studio décide à quel moment il doit migrer un projet.
 ms.date: 03/14/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
+author: kraigb
+ms.author: kraigb
+manager: douge
+ms.workload: multiple
 f1_keywords:
 - Win8ExpressDesktopBlock
 - w8trefactor
@@ -13,18 +19,14 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-author: kraigb
-ms.author: kraigb
-manager: douge
-ms.workload:
-- multiple
-ms.openlocfilehash: 82c92365d3e77631dd2cbbce4079ac982d80ef14
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 28b2f4df3cba1c0dd56cda6c8ba4e6c7f5cbe495
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
+ms.locfileid: "32032201"
 ---
-# <a name="port-migrate-and-upgrade-visual-studio-projects"></a>Porter, migrer et mettre à niveau des projets Visual Studio
+# <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Informations de référence sur la migration et la mise à niveau de projets pour Visual Studio 2017
 
 Chaque nouvelle version de Visual Studio prend généralement en charge la plupart des précédents types de projets, de fichiers et d’autres ressources. Vous pouvez les utiliser [comme d’habitude](../ide/solutions-and-projects-in-visual-studio.md). Si vous n’avez pas besoin de fonctionnalités récentes, Visual Studio tente de conserver la compatibilité descendante avec les versions antérieures telles que Visual Studio 2015, Visual Studio 2013 et Visual Studio 2012. (Pour connaître les fonctionnalités spécifiques à telle ou telle version, consultez les [Notes de publication](https://www.visualstudio.com/vs/release-notes/).)
 

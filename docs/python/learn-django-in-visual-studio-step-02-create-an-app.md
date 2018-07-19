@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ebea96be3a4c301bdaeb271eda5b2149bff46435
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 4d6cd0e79f519cd9c1a93e8239fc4c891c50de97
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454686"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750504"
 ---
 # <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>Étape 2 du tutoriel : créer une application Django avec les affichages et modèles de page
 
@@ -107,7 +107,7 @@ Réponse : l’exécution de la commande **Ajouter** > **application Django** o
 
 Étant donné que vous avez apporté des modifications à votre code et que vous les avez testées avec succès, il est temps à présent d’examiner et de valider vos modifications dans le contrôle de code source. Les étapes ultérieures de ce tutoriel vous rappellent le moment opportun pour valider à nouveau le contrôle de code source et revenir à cette section.
 
-1. Sélectionnez le bouton des modifications en bas de Visual Studio (cercles ci-dessous), qui accède à **Team Explorer**.
+1. Sélectionnez le bouton des modifications en bas de Visual Studio (dans le cercle ci-dessous), qui accède à **Team Explorer**.
 
     ![Le contrôle de code source modifie le bouton sur la barre d’état de Visual Studio](media/django/step02-source-control-changes-button.png)
 
@@ -211,9 +211,7 @@ Les étapes suivantes illustrent l’utilisation de modèles de page :
 
 1. Exécutez le projet et observez le résultat. Vous devez voir un message similaire à l’étape 2-2, indiquant que le modèle fonctionne.
 
-    Notez, toutefois, que le langage HTML que vous avez utilisé dans la propriété `content` s’affiche uniquement en tant que texte brut, car la fonction `render` échappe automatiquement ce langage HTML. Bien que vous puissiez contourner l’échappement, dans l’idéal, évitez d’utiliser HTML inclus en premier lieu. Il est recommandé de conserver la mise en forme et les styles dans le modèle de page, pas dans le code, et il est très simple de créer des variables supplémentaires si nécessaire.
-
-    Par exemple, remplacez `templates/index.html` pour faire correspondre la balise suivante, ce qui ajoute un titre de page et conserve toute la mise en forme dans le modèle de page :
+    Notez, toutefois, que le langage HTML que vous avez utilisé dans la propriété `content` s’affiche uniquement en tant que texte brut, car la fonction `render` échappe automatiquement ce langage HTML. L’échappement automatique empêche les vulnérabilités accidentelles aux attaques par injection : les développeurs recueillent souvent les données entrées dans une page et les utilisent comme valeurs dans une autre page via un espace réservé du modèle. L’échappement sert également de rappel pour indiquer qu’il est à nouveau préférable de conserver le code HTML dans le modèle de page et en dehors du code. Heureusement, il est très simple de créer des variables supplémentaires quand elles sont nécessaires. Par exemple, remplacez `templates/index.html` pour faire correspondre la balise suivante, ce qui ajoute un titre de page et conserve toute la mise en forme dans le modèle de page :
 
     ```html
     <html>

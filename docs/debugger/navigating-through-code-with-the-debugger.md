@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479737"
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>Parcourir le Code avec le débogueur Visual Studio
 Vous familiariser avec les commandes et des raccourcis pour parcourir le code dans le débogueur, et qui rend plus rapide et plus facile rechercher et résoudre les problèmes de votre application. Pendant que vous naviguez dans le code dans le débogueur, vous pouvez examiner l’état de votre application ou en savoir plus sur ses flux d’exécution.  

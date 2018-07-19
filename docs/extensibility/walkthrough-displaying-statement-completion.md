@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147113"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>Procédure pas à pas : Affichage de saisie semi-automatique des instructions
 Vous pouvez implémenter basée sur le langage de saisie semi-automatique des instructions en définissant les identificateurs pour lequel vous souhaitez fournir la saisie semi-automatique et de déclenchement puis d’une session de saisie semi-automatique. Vous pouvez définir la saisie semi-automatique des instructions dans le contexte d’un service de langage, définissez votre propre extension de nom de fichier et le type de contenu et ensuite afficher la saisie semi-automatique pour uniquement ce type, ou vous pouvez déclencher la saisie semi-automatique pour un type de contenu existant, par exemple, « texte en clair ». Cette procédure pas à pas montre comment déclencher la saisie semi-automatique des instructions pour le type de contenu « texte en clair », qui est le type de contenu des fichiers texte. Le type de contenu « text » est l’ancêtre de tous les autres types de contenu, y compris le code et les fichiers XML.  

@@ -1,6 +1,6 @@
 ---
-title: 'Le Concepteur de flux de travail - Comment : ajouter un nouvel élément à un projet de flux de travail'
-ms.date: 11/04/2016
+title: 'Concepteur de flux de travail - Comment : ajouter un nouvel élément à un projet de flux de travail'
+ms.date: 06/25/2018
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
 ms.technology: vs-workflow-designer
@@ -10,17 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0aa2be7fd8ecccbd8de0aa54c2693dd6b02c7e10
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c3f1202c87986eab6af899a3d4c3b7a5f62e5af6
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757677"
 ---
-# <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Comment : ajouter un nouvel élément à un projet de workflow
+# <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Comment : ajouter un nouvel élément à un projet de flux de travail
 
-Une fois que vous avez créé un projet de flux de travail, vous pouvez ajouter des activités de flux de travail, les concepteurs et les autres éléments de Visual Studio familiers à votre projet.
+Une fois que vous avez créé un projet de flux de travail, vous pouvez ajouter des activités de flux de travail, les concepteurs et les autres éléments Visual Studio familiers à votre projet.
 
-Le tableau suivant répertorie les éléments de Windows Workflow Foundation (WF) que vous pouvez ajouter à un projet de flux de travail.
+Le tableau suivant répertorie les éléments Windows Workflow Foundation (WF) que vous pouvez ajouter à un projet de flux de travail :
 
 |Name|Description|
 |----------|-----------------|
@@ -31,18 +32,19 @@ Le tableau suivant répertorie les éléments de Windows Workflow Foundation (WF
 
 ## <a name="to-add-a-new-item-to-a-workflow-project"></a>Pour ajouter un nouvel élément à un projet de workflow
 
-1.  Sur le **projet** menu, cliquez sur **ajouter un nouvel élément...** .
+1. Sur le **projet** menu, sélectionnez **ajouter un nouvel élément**.
 
-     Le **ajouter un nouvel élément** boîte de dialogue s’ouvre.
+   La boîte de dialogue **Ajouter un nouvel élément** s’ouvre.
 
-2.  Dans le **modèles installés** volet, sélectionnez **Workflow** groupe.
+1. Dans le volet gauche, sélectionnez le **Workflow** catégorie et sélectionnez un modèle d’élément de flux de travail.
 
-3.  Sélectionnez l'un des quatre éléments. Le tableau précédent répertorie les sélections disponibles.
+   > [!NOTE]
+   > Si vous ne voyez pas le **Workflow** catégorie, la première installation du **Windows Workflow Foundation** composant de Visual Studio 2017. Pour obtenir des instructions détaillées, consultez [installer Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-4.  Tapez un nom approprié pour l’élément dans le **nom** zone située au bas de la boîte de dialogue.
+1. Entrez un nom pour l’élément dans le **nom** zone située au bas de la boîte de dialogue.
 
-5.  Cliquez sur **ajouter** pour ajouter un élément au projet de flux de travail en cours.
+1. Sélectionnez **ajouter** pour ajouter l’élément au projet.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Création d’un projet de flux de travail](../workflow-designer/creating-a-workflow-project.md)
+- [Créer un projet de flux de travail](../workflow-designer/creating-a-workflow-project.md)

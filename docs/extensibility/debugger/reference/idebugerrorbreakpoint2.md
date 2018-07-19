@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31113342"
 ---
 # <a name="idebugerrorbreakpoint2"></a>IDebugErrorBreakpoint2
 Cette interface représente une erreur ou un point d’arrêt avertissement, comme un emplacement non valide, une expression non valide ou les raisons pour lesquelles le point d’arrêt en attente n’a pas lié (code n’a ne pas chargé encore, et ainsi de suite).  

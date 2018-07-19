@@ -1,6 +1,7 @@
 ---
-title: Outils de test Visual Studio | Microsoft Docs
+title: Outils de test Visual Studio
 ms.date: 03/16/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,11 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dec57e0f51b9033d9808c36a3ed9ed59c0221131
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 68bed424da371fa2c959b906e029942314fef3c4
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281613"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Outils de test dans Visual Studio
 
@@ -36,7 +38,7 @@ Les outils de test de Visual Studio peuvent vous aider vous et votre équipe à 
 - Les [tests de charge](../test/quickstart-create-a-load-test-project.md) simulent la charge sur une application serveur en exécutant des tests unitaires et des tests de performances web.
 
 > [!NOTE]
-> Les tests unitaires sont disponibles dans toutes les éditions de Visual Studio. D’autres outils de test, tels que Live Unit Testing, IntelliTest et les tests codés de l’interface utilisateur, sont disponibles uniquement dans l’édition Visual Studio Enterprise. Pour plus d’informations sur les éditions, consultez [Comparez les IDE Visual Studio 2017](https://www.visualstudio.com/vs/compare/).
+> Les tests unitaires sont disponibles dans toutes les éditions de Visual Studio. D’autres outils de test, tels que Live Unit Testing, IntelliTest et les tests codés de l’interface utilisateur, sont disponibles uniquement dans l’édition Visual Studio Enterprise. Pour plus d’informations sur les éditions, consultez [Comparez les IDE Visual Studio 2017](https://visualstudio.microsoft.com/vs/compare/).
 
 ## <a name="related-scenarios"></a>Scénarios connexes
 

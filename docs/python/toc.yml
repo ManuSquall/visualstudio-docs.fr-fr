@@ -8,11 +8,12 @@
 - name: Démarrages rapides
   items:
     - name: Créer une application web avec Flask
-      href: ../ide/quickstart-python.md?context=visualstudio/python/default
+      href: ../ide/quickstart-python.md
+      maintainContext: true
     - name: Créer un projet à partir d’un modèle
       href: quickstart-02-python-in-visual-studio-project-from-template.md
     - name: Créer un projet à partir d’un code existant
-      href: quickstart-01-project-from-existing.md
+      href: quickstart-01-python-in-visual-studio-project-from-existing-code.md
     - name: Créer un projet à partir d’un référentiel
       href: quickstart-03-python-in-visual-studio-project-from-repository.md
     - name: Créer un projet à partir d’un modèle Cookiecutter
@@ -49,6 +50,18 @@
           href: learn-django-in-visual-studio-step-05-django-authentication.md
         - name: 6 - utiliser le modèle de projet Web de sondages Django
           href: learn-django-in-visual-studio-step-06-polls-django-web-project-template.md
+    - name: En savoir plus sur Flask dans Visual Studio
+      items:
+        - name: 1 - créer un projet et une solution
+          href: learn-flask-visual-studio-step-01-project-solution.md
+        - name: 2 - créer une application Flask
+          href: learn-flask-visual-studio-step-02-create-app.md
+        - name: 3 - servir des fichiers statiques et ajouter des pages
+          href: learn-flask-visual-studio-step-03-serve-static-files-add-pages.md
+        - name: 4 - utiliser le modèle de projet web Flask
+          href: learn-flask-visual-studio-step-04-full-flask-project-template.md
+        - name: 5 - utiliser le modèle de projet web Flask de sondage
+          href: learn-flask-visual-studio-step-05-polls-flask-web-project-template.md
 - name: Concepts
   items:
     - name: Projets Python
@@ -75,16 +88,16 @@
           href: search-paths.md
         - name: Référence de la fenêtre Environnements
           href: python-environments-window-tab-reference.md
-    - name: Modification du code
+    - name: Modifier le code Python
       href: editing-python-code-in-visual-studio.md
       items:
-        - name: Mise en forme du code
+        - name: Code du format
           href: formatting-python-code.md
-        - name: Refactorisation du code
+        - name: Refactoriser du code
           href: refactoring-python-code.md
-        - name: Utilisation de PyLint
+        - name: Utiliser PyLint
           href: linting-python-code.md
-    - name: Définition de commandes de menu personnalisées
+    - name: Définir des commandes de menu personnalisées
       href: defining-custom-python-project-commands.md
     - name: Interactive Python (REPL)
       href: python-interactive-repl-in-visual-studio.md

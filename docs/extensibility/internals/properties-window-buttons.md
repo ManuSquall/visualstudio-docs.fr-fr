@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130701"
 ---
 # <a name="properties-window-buttons"></a>Boutons de la fenêtre Propriétés
 Selon le langage de développement et le type de produit, certains boutons sont affichés par défaut dans la barre d’outils pour le **propriétés** fenêtre. Dans tous les cas, le **par catégorie**, **Alphabetized**, **propriétés**, et **Pages de propriétés** boutons sont affichés. Dans Visual c# et Visual Basic, le **événements** bouton s’affiche également. Dans des projets Visual C++, le **Messages VC ++** et **VC substitue** boutons sont affichés. Des boutons supplémentaires peuvent s’afficher pour les autres types de projet. Pour plus d’informations sur les boutons dans les **propriétés** fenêtre, consultez [fenêtre Propriétés](../../ide/reference/properties-window.md).  

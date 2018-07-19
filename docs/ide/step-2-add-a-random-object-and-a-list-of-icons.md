@@ -11,11 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95996165351be2ead2f24556da1bfdcdd6fcc048
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 84c9c837fdb812b18f72e768b8ee528118b28777
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746830"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Étape 2 : ajouter un objet aléatoire et une liste d'icônes
 Dans cette étape, vous créez un ensemble de symboles correspondants pour le jeu. Chaque symbole est ajouté à deux cellules aléatoires dans le TableLayoutPanel du formulaire. Pour cela, vous devez utiliser deux instructions `new` pour créer deux objets. Le premier est un objet <xref:System.Random> identique à celui que vous avez utilisé dans le jeu du quiz mathématique. Il est utilisé dans ce code pour choisir de façon aléatoire des cellules dans le TableLayoutPanel. Le second objet, qui est peut-être nouveau pour vous, est un objet <xref:System.Collections.Generic.List%601> qui sert à stocker les symboles choisis au hasard.
@@ -35,7 +36,7 @@ Dans cette étape, vous créez un ensemble de symboles correspondants pour le je
 
 3.  Quand vous ajoutez l’objet de la liste, notez que la fenêtre **IntelliSense** s’ouvre. L'exemple ci-dessous est en Visual C#, mais un texte similaire s'affiche lorsque vous ajoutez une liste en Visual Basic.
 
-     ![Fenêtre Propriétés affichant l’événement Click](../ide/media/express_listintellisense.png "Express_ListIntellisense") Fenêtre IntelliSense
+     ![Fenêtre Propriétés affichant l’événement Click](../ide/media/express_listintellisense.png) Fenêtre IntelliSense
 
     > [!NOTE]
     >  La fenêtre IntelliSense apparaît seulement quand vous entrez du code manuellement. Si vous effectuez un copier-coller du code, elle n'apparaît pas.

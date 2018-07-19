@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135592"
 ---
 # <a name="how-to-provide-context-for-editors"></a>Comment : fournir un contexte pour les éditeurs
 Pour un éditeur, le contexte est actif uniquement lorsque l’éditeur a le focus ou avait le focus immédiatement avant le focus a été déplacé vers une fenêtre outil. Vous pouvez fournir le contexte pour un éditeur en procédant comme suit :  

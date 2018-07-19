@@ -1,10 +1,9 @@
 ---
-title: -ProjectConfig (devenv.exe) | Microsoft Docs
-ms.custom: ''
+title: ProjectConfig, commutateur DevEnv
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - /projectconfig Devenv switch
 - configurations, rebuilding
@@ -23,66 +22,58 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26883d4149047df980763da8bdda764f8ad802b5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 44f5d4479658b450074ba35f2759a273bb584e0a
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764652"
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
-Spécifie une configuration de build de projet à appliquer quand vous générez, nettoyez, régénérez ou déployez le projet nommé dans l’argument `/project`.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```  
-devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project ProjName] [/projectconfig ProjConfigName]  
-```  
-  
-## <a name="arguments"></a>Arguments  
- /build  
- Génère le projet spécifié par `/project` `ProjName`.  
-  
- /clean  
- Nettoie tous les fichiers intermédiaires et répertoires de sortie créés pendant une génération.  
-  
- /rebuild  
- Nettoie puis génère le projet spécifié par `/project` `ProjName`.  
-  
- /deploy  
- Spécifie que le projet doit être déployé après une génération ou une régénération.  
-  
- `SolnConfigName`  
- Obligatoire. Nom de la configuration de solution à appliquer à la solution nommée dans `SolutionName`.  
-  
- `SolutionName`  
- Obligatoire. Chemin complet et nom du fichier solution.  
-  
- /project `ProjName`  
- Facultative. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier `SolutionName` vers le fichier projet, le nom d’affichage du projet ou encore le chemin complet et le nom du fichier projet.  
-  
- /projectconfig `ProjConfigName`  
- Facultative. Nom d’une configuration de build de projet à appliquer au `/project` nommé.  
-  
-## <a name="remarks"></a>Notes  
-  
--   Doit être utilisé avec le commutateur `/project` dans le cadre d’une commande `devenv /build`, /`clean`, `/rebuild` ou `/deploy`.  
-  
--   Placez entre guillemets doubles les chaînes contenant des espaces.  
-  
--   Vous pouvez afficher des informations récapitulatives sur les builds, y compris sur les erreurs, dans la fenêtre **Commande** ou dans tout fichier journal spécifié avec le commutateur `/out`.  
-  
-## <a name="example"></a>Exemple  
- Cet exemple génère le projet `CSharpConsoleApp` en utilisant la configuration de génération de projet `Debug` présente dans la configuration de solution `Debug` de `MySolution`.  
-  
-```  
-devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug   
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [Commutateurs de la ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)   
- [/Project (devenv.exe)](../../ide/reference/project-devenv-exe.md)   
- [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   
- [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)   
- [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   
- [/Deploy (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)   
- [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
+
+Spécifie une configuration de build de projet à appliquer quand vous générez, nettoyez, regénérez ou déployez le projet nommé dans l’argument **/project**.
+
+## <a name="syntax"></a>Syntaxe
+
+```cmd
+devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project ProjName] [/projectconfig ProjConfigName]
+```
+
+## <a name="arguments"></a>Arguments
+
+|||
+|-|-|
+|/build|Génère le projet spécifié par l’argument **/project**.|
+|/clean|Nettoie tous les fichiers intermédiaires et répertoires de sortie créés pendant une génération.|
+|/rebuild|Nettoie, puis génère le projet spécifié par l’argument **/project**.|
+|/deploy|Spécifie que le projet doit être déployé après une génération ou une régénération.|
+|*SolnConfigName*|Obligatoire. Nom de la configuration de solution à appliquer à la solution nommée dans *SolutionName*. Si plusieurs plateformes de solution sont disponibles, vous devez également spécifier la plateforme, par exemple **« Debug\|Win32 »**.|
+|*SolutionName*|Obligatoire. Chemin complet et nom du fichier solution.|
+|/project *ProjName*|Facultative. Chemin et nom d’un fichier projet dans la solution. Vous pouvez entrer un chemin relatif du dossier *SolutionName* au fichier projet, le nom d’affichage du projet, ou le chemin et le nom complet du fichier projet.|
+|/projectconfig *ProjConfigName*|Facultative. Nom d’une configuration de build de projet à appliquer au projet spécifié par l’argument **/project**. Si plusieurs plateformes de solution sont disponibles, vous devez également spécifier la plateforme, par exemple **« Debug\|Win32 »**.|
+
+## <a name="remarks"></a>Notes
+
+Vous devez utiliser le commutateur **/projectconfig** avec le commutateur **/project** dans une commande **/build**, **/clean**, **/rebuild** ou **/deploy**.
+
+Placez les chaînes contenant des espaces entre des guillemets doubles.
+
+Vous pouvez afficher les informations récapitulatives des builds, notamment les erreurs, dans la fenêtre Commande ou dans un fichier journal spécifié à l’aide du commutateur **/out**.
+
+## <a name="example"></a>Exemple
+
+La commande suivante permet de générer le projet « CSharpConsoleApp », à l’aide de la configuration de build de projet « Debug » dans la configuration de solution « Debug » de « MySolution » :
+
+```cmd
+devenv "C:\Visual Studio Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
+```
+
+## <a name="see-also"></a>Voir aussi
+
+- [Commutateurs de ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)
+- [/Project (devenv.exe)](../../ide/reference/project-devenv-exe.md)
+- [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)
+- [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)
+- [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)
+- [/Deploy (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)
+- [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)

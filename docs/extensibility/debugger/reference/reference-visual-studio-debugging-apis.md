@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125901"
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>Référence (API de débogage de Visual Studio)
 Les références de débogage du SDK Visual Studio montrer le modèle de base pour l’architecture de l’exécution et les fonctionnalités du débogueur et de ses composants. La documentation fait des hypothèses aussi peu que possible sur les composants et les interfaces qu’il décrit, mis à part le comportement, qu'elle définit via les interfaces.  

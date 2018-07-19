@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139274"
 ---
 # <a name="private-galleries"></a>Private Galleries
 Vous pouvez partager des contrôles, des modèles et des outils que vous développez en les envoyant à un *galerie privée* sur l’intranet de votre organisation, comme suit :  

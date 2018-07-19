@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31968192"
 ---
 # <a name="modify-load-test-logging-settings"></a>Modifier les paramètres de journalisation du test de charge
 

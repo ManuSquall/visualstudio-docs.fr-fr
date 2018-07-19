@@ -1,6 +1,7 @@
 ---
 title: Nœuds constants
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: reference
 ms.assetid: 2c798a50-a2d7-459b-9879-ad4ad8290c9b
@@ -9,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df41815f7f824468babd2fc0bbd9bc97595e3ddb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 00185a4165c6b97a8fcf1dd8d7ce81b219abef75
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890114"
 ---
-# <a name="constant-nodes"></a>Nœuds constants
+# <a name="constant-nodes"></a>Nœuds de constantes
 
 Dans le concepteur de nuanceur, les nœuds de constante représentent les valeurs littérales et les attributs de sommets interpolés dans les calculs de nuanceur de pixels. Comme les attributs de sommets sont interpolés (et donc différents pour chaque pixel), chaque instance de nuanceur de pixels reçoit une version différente de la constante. Ce faisant, chaque pixel a une apparence unique.
 

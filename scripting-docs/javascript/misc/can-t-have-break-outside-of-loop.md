@@ -1,13 +1,13 @@
 ---
-title: "Peut &#39; t ont &#39; arrêt &#39; en dehors de la boucle | Documents Microsoft"
-ms.custom: 
+title: Peut &#39; t ont &#39; arrêt &#39; en dehors de la boucle | Documents Microsoft
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1019
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 11d02172-2a78-4705-a730-d21111db5f42
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633149"
 ---
 # <a name="can39t-have-39break39-outside-of-loop"></a>Peut &#39; t ont &#39; arrêt &#39; en dehors de la boucle
 Vous avez tenté d’utiliser le **saut** (mot clé) en dehors d’une boucle. Le **saut** mot clé est utilisé pour mettre fin à une boucle ou `switch` instruction. Il doit être incorporé dans le corps d’une boucle ou `switch` instruction. Toutefois, un **étiquette** peut suivre le mot clé break.  

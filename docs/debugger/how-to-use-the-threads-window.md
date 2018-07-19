@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926239"
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>Procédure pas à pas : Déboguer une application multithread dans Visual Studio à l’aide de la fenêtre Threads
 Visual Studio fournit un **Threads** fenêtre et autres l’interface utilisateur éléments pour vous aider à déboguer les applications multithread. Ce didacticiel montre comment utiliser le **Threads** fenêtre et **emplacement de débogage** barre d’outils. Pour plus d’informations sur les autres outils, consultez [commencer le débogage d’applications multithread](../debugger/get-started-debugging-multithreaded-apps.md). Ce didacticiel ne prend que quelques minutes, mais l’exécution de cette dernière vous familiarisera avec les fonctionnalités de débogage d’applications multithread.   

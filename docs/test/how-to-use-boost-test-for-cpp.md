@@ -9,17 +9,18 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: deb52bd6b905e8e1cd73b75abd6304698858a20b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eadcc8f2a3e50f9a23da3e3bbc6689c643904470
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751622"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Guide pratique pour utiliser Boost.Test pour C++ dans Visual Studio
 
 Dans **Visual Studio 2017 version 15.5** et ultérieur, l’adaptateur de test Boost.Test est intégré dans l’IDE Visual Studio comme composant de la charge de travail **Développement Desktop en C++**.
 
-![Adaptateur de test pour Boost.Test](media/cpp-boost-component.png "Adaptateur de test pour le composant Boost.Test")
+![Adaptateur de test pour Boost.Test](media/cpp-boost-component.png)
 
 Si la charge de travail **Développement Desktop en C++** n’est pas installée, ouvrez **Visual Studio Installer** et sélectionnez **Modifier**. Sélectionnez la charge de travail **Développement Desktop en C++**, puis choisissez le bouton **Modifier**.
 
@@ -43,7 +44,7 @@ Boost.Test nécessite [Boost](http://www.boost.org/)! Si Boost n’est pas insta
 
 1. Pour créer un fichier .cpp à des fins de tests, cliquez avec le bouton droit sur le nœud du projet dans **l’Explorateur de solutions**, puis choisissez **Ajouter un nouvel élément**.
 
-   ![Modèle d’élément Boost.Test](media/boost_test_item_template.png "Modèle d’élément Boost.Test")
+   ![Modèle d’élément Boost.Test](media/boost_test_item_template.png)
 
 1. Le nouveau fichier contient un exemple de méthode de test. Générez votre projet pour permettre à **l’Explorateur de tests** de découvrir la méthode.
 
@@ -87,7 +88,7 @@ Dans Visual Studio 2017 version 15.5, aucun modèle de projet ou d’élément
 
 1. Dans votre fichier .cpp de test, ajoutez les directives `#include` nécessaires pour rendre les types et les fonctions de votre programme visibles par le code de test. En règle générale, le programme est un niveau au-dessus dans l’arborescence des dossiers. Si vous tapez `#include "../"`, une fenêtre IntelliSense apparaît et vous permet de sélectionner le chemin complet du fichier d’en-tête.
 
-   ![Ajouter des directives #include](media/cpp-gtest-includes.png "Ajouter des directives include dans le fichier .cpp de test")
+   ![Ajouter des directives #include](media/cpp-gtest-includes.png)
 
    Vous pouvez utiliser la bibliothèque autonome avec :
 

@@ -14,6 +14,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34268374"
 ---
 # <a name="share-code-maps"></a>Partager des cartes de code
 

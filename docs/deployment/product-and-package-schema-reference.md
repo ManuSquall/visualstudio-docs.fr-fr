@@ -1,5 +1,5 @@
 ---
-title: Référence du schéma de Package et de produit | Documents Microsoft
+title: Référence du schéma Package et produit | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -27,36 +27,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eed411e51b9e1b9e69d80a0c6187d7325d45ef7b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4fae53ad5143df91d74ad9c5e3cd19c1bdafd0da
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080647"
 ---
-# <a name="product-and-package-schema-reference"></a>Référence du schéma de produit et de package
-A *fichier produit* est un manifeste XML qui décrit toutes les dépendances externes requises par une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application. Exemples de dépendances externes le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] et Microsoft Data Access Components (MDAC). Un fichier de package est similaire à un fichier de produit, mais est utilisé pour installer les composants spécifiques à une culture d’une dépendance, tels que les assemblys localisés, contrats de licence et la documentation.  
+# <a name="product-and-package-schema-reference"></a>Référence du schéma de produit et du package
+Un *fichier produit* est un manifeste XML qui décrit toutes les dépendances externes requis par un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application. Exemples de dépendances externes le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] et Microsoft Data Access Components (MDAC). Un fichier de package est similaire à un fichier de produit, mais est utilisé pour installer les composants dépendent de la culture d’une dépendance, tels que les assemblys localisés, les contrats de licence et documentation.  
   
  Le fichier de produit et les packages compose d’un niveau supérieur `Product` ou `Package` élément, chacun d’eux contient les éléments suivants.  
   
 |Élément|Description|Attributs|  
 |-------------|-----------------|----------------|  
-|[\<Produit > élément](../deployment/product-element-bootstrapper.md)|Élément de niveau supérieur requis pour les fichiers du produit.|Aucun|  
+|[\<Produit > élément](../deployment/product-element-bootstrapper.md)|Élément de niveau supérieur requis pour les fichiers du produit.|Aucun.|  
 |[\<Package > élément](../deployment/package-element-bootstrapper.md)|Élément de niveau supérieur requis pour les fichiers de package.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
-|[\<RelatedProducts > élément](../deployment/relatedproducts-element-bootstrapper.md)|Élément facultatif pour les fichiers du produit. Les autres produits qui installe ou qui dépend de ce produit.|Aucun|  
-|[\<InstallChecks > élément](../deployment/installchecks-element-bootstrapper.md)|Élément requis. Répertorie les vérifications de dépendance pour effectuer sur l’ordinateur local lors de l’installation.|Aucun|  
-|[\<Commandes > élément](../deployment/commands-element-bootstrapper.md)|Élément requis.  Exécute un ou plusieurs contrôles de l’installation, comme décrit par `InstallChecks`et désigne le package à installer, si la vérification échoue.|Aucun|  
-|[\<PackageFiles > élément](../deployment/packagefiles-element-bootstrapper.md)|Élément requis. Répertorie les packages qui peuvent être installés par ce processus d’installation.|Aucun|  
-|[\<Chaînes > élément](../deployment/strings-element-bootstrapper.md)|Élément requis. Stocke les versions localisées des chaînes d’erreurs et du nom de produit.|Aucun|  
+|[\<RelatedProducts > élément](../deployment/relatedproducts-element-bootstrapper.md)|Élément facultatif pour les fichiers du produit. Les autres produits qui installe ou qui dépend de ce produit.|Aucun.|  
+|[\<InstallChecks > élément](../deployment/installchecks-element-bootstrapper.md)|Élément requis. Répertorie les vérifications de dépendance pour effectuer sur l’ordinateur local lors de l’installation.|Aucun.|  
+|[\<Commandes > élément](../deployment/commands-element-bootstrapper.md)|Élément requis.  Exécute une ou plusieurs vérifications de l’installation comme décrit par `InstallChecks`et désigne le package à installer, si la vérification échoue.|Aucun.|  
+|[\<Tâches PackageFiles > élément](../deployment/packagefiles-element-bootstrapper.md)|Élément requis. Répertorie les packages qui peuvent être installés par ce processus d’installation.|Aucun.|  
+|[\<Chaînes > élément](../deployment/strings-element-bootstrapper.md)|Élément requis. Stocke les versions localisées des chaînes d’erreurs et du nom de produit.|Aucun.|  
   
 ## <a name="remarks"></a>Notes  
- Le schéma du package est utilisé par Setup.exe, un programme stub généré par la tâche d’amorçage MS Build contenant peu codé en dur sa propre logique. Le schéma pilote chaque aspect du processus d’installation.  
+ Le schéma du package est consommé par *Setup.exe*, un programme stub généré par l’amorçage de tâche contenant peu de logique codé en dur de son propre MS Build. Le schéma pilote chaque aspect du processus d’installation.  
   
- `InstallChecks` les tests que setup.exe doit exécuter pour l’existence d’un package donné. `PackageFiles` Répertorie tous les packages que le processus d’installation peut devoir installer, en cas d’échec d’un tests. Chaque entrée Command sous Commands exécute un des tests décrits par `InstallChecks`et spécifie le `PackageFile` le test à exécuter doit échouer. Vous pouvez utiliser la `Strings` élément à localiser les noms de produits et les messages d’erreur, afin que vous pouvez utiliser un seul binaire d’installation pour installer votre application pour différentes langues.  
+ `InstallChecks` les tests que setup.exe doit exécuter pour l’existence d’un package donné. `PackageFiles` Répertorie tous les packages que le processus d’installation peut devoir installer, en cas d’échec d’un tests. Chaque entrée de commande sous commandes exécute un des tests décrits par `InstallChecks`et spécifie le `PackageFile` pour exécuter le test échoue. Vous pouvez utiliser le `Strings` élément à localiser les noms de produits et les messages d’erreur, afin que vous pouvez utiliser un seul binaire d’installation pour installer votre application pour n’importe quel nombre de langues.  
   
 ## <a name="example"></a>Exemple  
- L’exemple de code suivant illustre un fichier de produit complet pour l’installation de le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
+ L’exemple de code suivant montre un fichier de produit complet pour l’installation de le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
   
 <Product  

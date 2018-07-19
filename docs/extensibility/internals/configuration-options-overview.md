@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132467"
 ---
 # <a name="configuration-options-overview"></a>Vue d’ensemble des Options de configuration
 Dans les projets [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] peut prendre en charge les configurations multiples qui peuvent être générées, débogué, exécution et/ou déployé. Une configuration est un type de build avec un jeu nommé de propriétés, en général, les commutateurs du compilateur et les emplacements de fichiers. Par défaut, les nouvelles solutions contiennent deux configurations Debug et Release. Ces configurations peuvent être appliquées à l’aide de leurs paramètres par défaut ou modifiés pour répondre à vos besoins spécifiques de solution ou projet. Certains packages peuvent être générées de deux manières : en tant qu’un éditeur ActiveX ou un composant en place. Pour prendre en charge les configurations à plusieurs, toutefois, les projets est inutile. S’il n'existe qu’une seule configuration disponible, cette configuration est mappée dans toutes les configurations de solution.  

@@ -1,6 +1,6 @@
 ---
-title: Visual Studio IntelliSense
-ms.date: 11/04/2016
+title: Informations sur les paramètres, liste des membres et informations express
+ms.date: 05/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -17,15 +17,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0afa66a9085c16700306330acdbfba3b9667fc03
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 5e00b43f1705079a86d511239d7b38119868d8f4
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748473"
 ---
-# <a name="using-intellisense-in-visual-studio"></a>Utilisation d’IntelliSense dans Visual Studio
+# <a name="intellisense-in-visual-studio"></a>IntelliSense dans Visual Studio
 
-IntelliSense est le terme général employé pour plusieurs fonctionnalités : Liste des membres, Informations sur les paramètres, Info express et Compléter le mot. Ces fonctionnalités vous aident à en savoir plus sur le code que vous utilisez, à assurer le suivi des paramètres que vous tapez et à ajouter des appels aux propriétés et aux méthodes en quelques séquences de touches.
+IntelliSense est une aide à la complétion de code qui inclut plusieurs fonctionnalités : Liste des membres, Informations sur les paramètres, Info express et Compléter le mot. Ces fonctionnalités vous aident à en savoir plus sur le code que vous utilisez, à assurer le suivi des paramètres que vous tapez et à ajouter des appels aux propriétés et aux méthodes en quelques séquences de touches.
 
 De nombreux aspects d'IntelliSense sont spécifiques au langage. Pour plus d'informations sur l’utilisation d’IntelliSense dans différents langages, consultez les rubriques répertoriées dans la section [Voir aussi](#see-also).
 
@@ -37,7 +38,7 @@ Après avoir sélectionné un élément, insérez-le dans votre code en appuyant
 
 Dans la liste des membres, l'icône de gauche représente le type de membre, tel que l'espace de noms, la classe, la fonction ou la variable. Pour obtenir une liste des icônes, consultez [Icônes de l’Explorateur d’objets et de la fenêtre Affichage de classes](../ide/class-view-and-object-browser-icons.md). Si la liste est longue, appuyez sur **Pg. préc** et **Pg. suiv** pour vous déplacer vers le haut ou vers le bas dans la liste.
 
-![Liste des membres Visual Studio](../ide/media/vs2015_intellisense.png "vs2015_Intellisense")
+![Liste des membres Visual Studio](../ide/media/vs2015_intellisense.png)
 
 Vous pouvez appeler la fonctionnalité **Liste des membres** manuellement en appuyant sur **Ctrl**+**J**, en choisissant **Edition** > **IntelliSense** > **Liste des membres** ou en choisissant le bouton **Liste des membres** dans la barre d’outils de l’éditeur. Lorsque la liste des membres est appelée sur une ligne vide ou en dehors d'une portée reconnue, elle affiche des symboles dans l'espace de noms global.
 
@@ -51,7 +52,7 @@ Informations sur les paramètres fournit des informations sur le nombre, les nom
 
 Le paramètre suivant à taper pour la fonction vous est indiqué en gras. Pour les fonctions surchargées, vous pouvez utiliser les touches **Haut** et **Bas** pour consulter les différentes informations de paramètres concernant les surcharges de fonction.
 
-![Informations sur les paramètres](../ide/media/vs2015_param_info.png "VS2015_param_Info")
+![Informations sur les paramètres](../ide/media/vs2015_param_info.png)
 
 Lorsque vous annotez des fonctions et des paramètres avec les commentaires de documentation XML, les commentaires apparaissent comme Informations sur les paramètres. Pour plus d’informations, consultez [Insérer des commentaires dans le code XML](../ide/supplying-xml-code-comments.md).
 
@@ -61,11 +62,11 @@ Vous pouvez appeler manuellement la fonctionnalité Informations sur les paramè
 
 Infos express affiche la déclaration complète de tout identificateur dans votre code.
 
-![Info express dans Visual Studio](../ide/media/vs2015_quick_info.png "VS2015_Quick_info")
+![Info express Visual Studio](../ide/media/vs2015_quick_info.png)
 
 Quand vous sélectionnez un membre dans la zone **Liste des membres**, l’info-bulle Info express s’affiche aussi.
 
-![Informations sur les paramètres dans un fichier de code C&#35;](../ide/media/vs2015_paraminfo.png "VS2015_ParamInfo")
+![Informations sur les paramètres dans un fichier de code C&#35;](../ide/media/vs2015_paraminfo.png)
 
 Vous pouvez appeler manuellement la fonctionnalité Info express en choisissant **Edition** > **IntelliSense** > **Info express**, en appuyant sur **Ctrl**+**I** ou en choisissant le bouton **Info express** dans la barre d’outils de l’éditeur.
 

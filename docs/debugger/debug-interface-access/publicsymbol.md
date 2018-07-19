@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478917"
 ---
 # <a name="publicsymbol"></a>PublicSymbol
 Lorsque le fichier .exe est créé, chaque symbole public (un minimum, global de chaque fonction et les données de symbole at) reçoit un `SymTagPublicSymbol` balise.  

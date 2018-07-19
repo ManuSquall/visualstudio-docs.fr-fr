@@ -1,8 +1,9 @@
 ---
-title: Classes d’assistance statiques | Outil de test Microsoft IntelliTest pour les développeurs | Microsoft Docs
+title: Classes d’assistance statiques | Outil de test Microsoft IntelliTest pour les développeurs
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Static helper classes
 ms.author: gewarren
@@ -10,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bd414382889e02f209e9cd64155f9e9baad75534
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 59d52895b9eccd80427759fb9a3819be5ab86329
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815897"
 ---
 # <a name="static-helper-classes"></a>Classes d’assistance statiques
 
@@ -32,8 +34,7 @@ Certaines classes vous permettent d’interagir avec le moteur de raisonnement d
 <a name="pexassume"></a>
 ## <a name="pexassume"></a>PexAssume
 
-Classe statique utilisée pour exprimer des hypothèses, comme des [conditions préalables](test-generation.md#precondition), dans des [tests unitaires paramétrables](test-generation.md#parameterized-unit-testing).
-Les méthodes de cette classe peuvent être utilisées pour filtrer les entrées de test indésirables.
+Classe statique utilisée pour exprimer des hypothèses, comme des [conditions préalables](test-generation.md#precondition), dans des [tests unitaires paramétrables](test-generation.md#parameterized-unit-testing). Les méthodes de cette classe peuvent être utilisées pour filtrer les entrées de test indésirables.
 
 Si la condition supposée n’est pas satisfaite pour certaines entrées de test, une **PexAssumeFailedException** est levée. Ceci a pour effet que le test est ignoré sans que ce soit mentionné.
 
@@ -41,7 +42,7 @@ Si la condition supposée n’est pas satisfaite pour certaines entrées de test
 
 Le test paramétrable suivant ne prend pas en compte **j=0** :
 
-```
+```csharp
 public void TestSomething(int i, int j) {
      PexAssume.AreNotEqual(j, 0);
      int k = i/j;
@@ -53,7 +54,7 @@ public void TestSomething(int i, int j) {
 
 Le code ci-dessus est équivaut presque à :
 
-```
+```csharp
      if (j==0)
           return;
 ```
@@ -73,7 +74,7 @@ Si la condition déclarée n’est pas satisfaite pour une entrée de test, une 
 
 Ce qui suit déclare que la valeur absolue d’un entier positive :
 
-```
+```csharp
 public void TestSomething(int i) {
      int j = Maths.Abs(i);
      PexAssert.IsTrue(j >= 0);
@@ -100,7 +101,7 @@ La classe **PexChoose** peut fonctionner dans deux modes :
 
 * Appel simple **PexChoose.Value** pour générer une nouvelle valeur :
 
-```
+```csharp
 public int Foo() {
     return PexChoose.Value<int>("foo");
 }
@@ -113,13 +114,13 @@ Classe statique pour consigner des valeurs nommées.
 
 Quand IntelliTest explore le code, **PexObserve** est utilisée pour enregistrer des valeurs calculées en utilisant leur représentation sous forme de chaîne mise en forme. Les valeurs sont associées à des noms uniques.
 
-```
+```csharp
 PexObserve.Value<string>("result", result);
 ```
 
 **Exemple**
 
-```
+```csharp
 // product code
 public static class MathEx {
      public static int Square(int value) { return value * value; }
@@ -151,7 +152,7 @@ Normalement, IntelliTest tente de couvrir tous les chemins d’exécution du cod
 
 Cet exemple montre l’implémentation de la méthode **PexAssume.Arrays.ElementsAreNotNull**. Dans la méthode, vous ignorez les contraintes sur la valeur de la longueur du tableau, afin d’éviter qu’IntelliTest tente de générer différentes tailles de tableau. Les contraintes sont ignorées seulement ici. Si le code testé se comporte différemment pour des longueurs de tableau différentes, IntelliTest ne peut pas générer des tableaux de tailles différentes à partir des contraintes du code testé.
 
-```
+```csharp
 public static void AreElementsNotNull<T>(T[] value)
     where T : class
 {
@@ -173,4 +174,4 @@ public static void AreElementsNotNull<T>(T[] value)
 
 ## <a name="got-feedback"></a>Vous avez des commentaires ?
 
-Postez vos idées et demandes de fonctionnalités sur **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Postez vos idées et demandes de fonctionnalités sur [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).

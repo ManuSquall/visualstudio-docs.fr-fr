@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947165"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Contrôle de la couleur, du style de ligne et d'autres propriétés des formes
 Certaines propriétés de la forme tels que les couleurs peuvent être « exposés -', qui est lié à une propriété de domaine de la forme. D’autres doivent être contrôlés directement.

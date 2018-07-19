@@ -1,5 +1,5 @@
 ---
-title: Vue Détails relatifs au thread - Données de conflit | Microsoft Docs
+title: Informations relatives au thread, vue - Données de conflit | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,18 +14,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d45d2da94535f4f017fab838a661a3c3e4bc438d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 712fcfa369c4a324554bda38df671dab1a95a1f5
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34477351"
 ---
-# <a name="thread-details-view---contention-data"></a>Vue Détails relatifs au thread - Données de conflit
+# <a name="thread-details-view---contention-data"></a>Informations relatives au thread, vue - Données de conflit
 La vue Détails du Thread présente un graphique chronologique des événements bloquants dans le thread sélectionné d’une exécution du profilage, qui ont été provoqués par des conflits sur les ressources. Un événement de blocage se produit quand le thread est forcé d’interrompre l’exécution, car un autre thread a verrouillé l’accès à une ressource.  
   
- Cette vue représente la chronologie de l’exécution du thread sous la forme d’une barre horizontale et les événements de blocage sous la forme de barres verticales sur une chronologie horizontale pour le thread. Quand c’est nécessaire, vous pouvez effectuer un zoom avant sur une section de la chronologie pour voir les événements individuels. Pour afficher le chemin d’exécution des fonctions qui ont provoqué l’événement, cliquez sur la barre de l’événement. Les fonctions apparaissent dans la fenêtre Pile des appels. Quand le code source d’une fonction est disponible, vous pouvez cliquer sur le nom de la fonction pour modifier le fichier source dans l’IDE Visual Studio.  
+ Cette vue représente la chronologie de l’exécution du thread sous la forme d’une barre horizontale et les événements de blocage sous la forme de barres verticales sur une chronologie horizontale pour le thread. Quand c’est nécessaire, vous pouvez effectuer un zoom avant sur une section de la chronologie pour voir les événements individuels. Pour afficher le chemin d’exécution des fonctions qui ont provoqué l’événement, cliquez sur la barre de l’événement. Les fonctions apparaissent dans la fenêtre **Pile des appels**. Quand le code source d’une fonction est disponible, vous pouvez cliquer sur le nom de la fonction pour modifier le fichier source dans l’IDE Visual Studio.  
   
-## <a name="navigating-the-timeline"></a>Navigation dans la chronologie  
+## <a name="navigate-the-timeline"></a>Naviguer dans la chronologie  
   
 #### <a name="to-zoom-in-on-a-timeline-segment"></a>Pour faire un zoom sur un segment de la chronologie  
   
@@ -41,17 +42,17 @@ La vue Détails du Thread présente un graphique chronologique des événements 
   
 #### <a name="to-view-the-call-stack-of-an-event"></a>Pour afficher la pile des appels d’un événement  
   
--   Dans le graphique chronologique, cliquez sur la barre verticale qui représente l’événement.  
+-   Dans le graphe de chronologie, cliquez sur la barre verticale qui représente l’événement.  
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>Pour afficher ou modifier le code source d’une fonction dans la pile des appels  
   
--   Dans la fenêtre Pile des appels, cliquez sur le nom de la fonction.  
+-   Dans la fenêtre **Pile des appels**, cliquez sur le nom de la fonction.  
   
  Le code source de la fonction doit faire partie du projet actif.  
   
 #### <a name="to-view-the-contention-events-of-a-resource-in-all-threads-in-the-profiling-run"></a>Pour voir les événements de conflit d’une ressource dans tous les threads de l’exécution du profilage  
   
--   Dans le graphique chronologique, cliquez sur le nom ou l’ID de la ressource.  
+-   Dans le graphe de chronologie, cliquez sur le nom ou l’ID de la ressource.  
   
      La [vue Informations sur les ressources](../profiling/resource-details-view-contention-data.md) apparaît pour la ressource sélectionnée.  
   

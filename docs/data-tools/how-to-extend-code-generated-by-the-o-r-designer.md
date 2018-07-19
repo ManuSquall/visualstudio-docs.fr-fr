@@ -10,36 +10,37 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 73431c09a4e9054d30ccaef3dd1d74ac401c17e7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9da4dca31043104c58122c2eed7aa55ae44ef07e
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089787"
 ---
-# <a name="how-to-extend-code-generated-by-the-or-designer"></a>Comment : étendre le code généré le Concepteur O/R
-Le code généré par le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] est régénéré lorsque des modifications sont apportées aux classes d'entité et autres objets sur l'aire du concepteur. En raison de cette régénération de code par le concepteur, tout code ajouté au code généré est en général remplacé lors de cette opération. Le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] offre la possibilité de générer des fichiers de classe partielle dans lesquels vous pouvez ajouter du code qui ne sera pas remplacé. L'ajout d'une capacité de validation des données à des classes LINQ to SQL (entité) est un exemple d'ajout de code personnel au code généré par le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. Pour plus d’informations, consultez [Comment : ajouter une validation aux classes d’entité](../data-tools/how-to-add-validation-to-entity-classes.md).
+# <a name="how-to-extend-code-generated-by-the-or-designer"></a>Comment : étendre le code généré par le Concepteur O/R
+Code généré par le **Concepteur O/R** est régénéré lorsque des modifications sont apportées pour les classes d’entité et d’autres objets sur l’aire du concepteur. En raison de cette régénération de code par le concepteur, tout code ajouté au code généré est en général remplacé lors de cette opération. Le **Concepteur O/R** permet de générer des fichiers de classe partielle dans laquelle vous pouvez ajouter le code qui n’est pas remplacé. Un exemple d’ajout de votre propre code pour le code généré par le **Concepteur O/R** est d’ajouter une validation des données à LINQ aux classes SQL (entité). Pour plus d’informations, consultez [Comment : ajouter la validation aux classes d’entité](../data-tools/how-to-add-validation-to-entity-classes.md).
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="adding-code-to-an-entity-class"></a>Ajout de code à une classe d'entité
+## <a name="add-code-to-an-entity-class"></a>Ajouter du code à une classe d’entité
 
-#### <a name="to-create-a-partial-class-and-add-code-to-an-entity-class"></a>Pour créer une classe partielle et ajouter du code à une classe d'entité
+### <a name="to-create-a-partial-class-and-add-code-to-an-entity-class"></a>Pour créer une classe partielle et ajouter du code à une classe d'entité
 
-1.  Ouvrez ou créez un nouveau fichier LINQ to SQL Classes (**.dbml** fichier) dans le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. (Double-cliquez sur le **.dbml** fichier **l’Explorateur de solutions**/**l’Explorateur de base de données**.)
+1.  Ouvrez ou créez un nouveau fichier LINQ to SQL Classes (**.dbml** fichier) dans le **Concepteur O/R**. (Double-cliquez sur le **.dbml** fichier **l’Explorateur de solutions** ou **Database Explorer**.)
 
-2.  Dans le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], avec le bouton droit de la classe pour laquelle vous souhaitez ajouter la validation, puis cliquez sur **afficher le Code**.
+2.  Dans le **Concepteur O/R**, avec le bouton droit de la classe pour laquelle vous souhaitez ajouter la validation, puis cliquez sur **afficher le Code**.
 
      Une classe partielle pour la classe d'entité sélectionnée s'ouvre dans l'éditeur de code.
 
 3.  Ajoutez votre code dans la déclaration de classe partielle pour la classe d'entité.
 
-## <a name="adding-code-to-a-datacontext"></a>Ajout de code à un DataContext
+## <a name="add-code-to-a-datacontext"></a>Ajouter du code à un DataContext
 
-#### <a name="to-create-a-partial-class-and-add-code-to-a-datacontext"></a>Pour créer une classe partielle et ajouter du code à un DataContext
+### <a name="to-create-a-partial-class-and-add-code-to-a-datacontext"></a>Pour créer une classe partielle et ajouter du code à un DataContext
 
-1.  Ouvrez ou créez un nouveau fichier LINQ to SQL Classes (**.dbml** fichier) dans le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. (Double-cliquez sur le **.dbml** fichier **l’Explorateur de solutions**/**l’Explorateur de base de données**.)
+1.  Ouvrez ou créez un nouveau fichier LINQ to SQL Classes (**.dbml** fichier) dans le **Concepteur O/R**. (Double-cliquez sur le **.dbml** fichier **l’Explorateur de solutions** ou **Database Explorer**.)
 
-2.  Dans le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], avec le bouton droit sur le Concepteur d’une zone vide, puis sur **afficher le Code**.
+2.  Dans le **Concepteur O/R**, avec le bouton droit sur le concepteur, une zone vide, puis cliquez sur **afficher le Code**.
 
      Une classe partielle pour le DataContext s'ouvre dans l'éditeur de code.
 
@@ -48,5 +49,5 @@ Le code généré par le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/v
 ## <a name="see-also"></a>Voir aussi
 
 - [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Procédure pas à pas : Création des Classes LINQ to SQL (Concepteur O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Procédure pas à pas : Création de LINQ to SQL classes (Concepteur O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

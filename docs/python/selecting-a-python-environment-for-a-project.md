@@ -1,7 +1,7 @@
 ---
-title: Sélection d’un environnement pour un projet
-description: L’Explorateur de solutions de Visual Studio permet de choisir l’interpréteur (environnement) Python à utiliser systématiquement pour un projet donné, en ignorant l’environnement par défaut. Vous pouvez également créer et gérer des environnements virtuels.
-ms.date: 03/21/2018
+title: Sélectionner un environnement et un interpréteur Python pour un projet
+description: Guide pratique pour attribuer l’environnement Python à utiliser pour un projet Visual Studio, ainsi que des instructions sur la création d’environnements virtuels.
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,13 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 72f07115aa323db15dd5680575871b8d4c4b20b4
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 0c38436c5cf3d89b4224fbdbe9bd072f2a6c10d0
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117106"
 ---
-# <a name="selecting-a-python-interpreter-and-environment-for-use-in-a-project"></a>Sélectionner un environnement et un interpréteur Python à utiliser dans un projet
+# <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Guide pratique pour attribuer l’environnement Python à utiliser pour un projet
 
 Tout le code d’un projet Python s’exécute dans le contexte d’un environnement précis. Visual Studio utilise également cet environnement pour le débogage, l’importation et les saisies semi-automatiques de membres, la vérification syntaxique et les autres tâches qui nécessitent un environnement.
 

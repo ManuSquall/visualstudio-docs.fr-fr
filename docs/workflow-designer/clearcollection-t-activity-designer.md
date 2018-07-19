@@ -12,26 +12,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3d9d246fa6bad55e47ddff73c888906f2979695
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d2422f7165e3f00e4059bc593c129c7723daed2f
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757894"
 ---
 # <a name="clearcollectiont-activity-designer"></a>ClearCollection\<T > Concepteur d’activités
 
 Le **ClearCollection\<T >** ActivityDesigner est utilisé pour créer et configurer un <xref:System.Activities.Statements.ClearCollection%601> activité.
 
-## <a name="the-clearcollectiont-activity"></a>La ClearCollection\<T > activité
- L'activité <xref:System.Activities.Statements.ClearCollection%601> efface tous les éléments d'une collection spécifiée.
+## <a name="the-clearcollectiont-activity"></a>ClearCollection\<T > activité
 
-### <a name="using-the-clearcollectiont-activity-designer"></a>À l’aide de la ClearCollection\<T > Concepteur d’activités
- Le **ClearCollection\<T >** Concepteur d’activités peut être trouvé dans le **Collection** catégorie de la **boîte à outils**, qui est accessible en cliquant sur le  **Boîte à outils** onglet du Concepteur de flux de travail (ou bien, sélectionnez **barre d’outils** à partir de la **vue** menu ou CTRL + ALT + X.)
+L'activité <xref:System.Activities.Statements.ClearCollection%601> efface tous les éléments d'une collection spécifiée.
 
- Le **ClearCollection\<T >** Concepteur d’activités peut être déplacé de la **boîte à outils** et déposés dans l’aire du Concepteur de flux de travail où les activités sont placées, par comme à l’intérieur d’un <xref:System.Activities.Statements.Sequence>. Suppression du Concepteur d’activités crée un <xref:System.Activities.Statements.ClearCollection%601> activité avec une valeur par défaut <xref:System.Activities.Activity.DisplayName%2A> de ClearCollection < Int32\>. (Par défaut, le *TypeArgument* est **Int32**. TypeArgument peut être modifiée dans la grille des propriétés.) Le <xref:System.Activities.Activity.DisplayName%2A> valeur peut être modifiée dans l’en-tête de la **ClearCollection < T\>**  Concepteur d’activités ou dans le **DisplayName** zone de la grille des propriétés. Les autres propriétés doivent être modifiées dans la grille des propriétés.
+### <a name="using-the-clearcollectiont-activity-designer"></a>À l’aide de ClearCollection\<T > Concepteur d’activités
 
-### <a name="the-clearcollectiont-properties"></a>La ClearCollection\<T > Propriétés
- Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.ClearCollection%601> et décrit comment elles sont utilisées dans le concepteur.
+Le **ClearCollection\<T >** Concepteur d’activités peut être trouvé dans le **Collection** catégorie de la **boîte à outils**, qui est accessible en cliquant sur le  **Boîte à outils** onglet du Concepteur de Workflow. Vous pouvez également sélectionner **boîte à outils** à partir de la **vue** menu, ou appuyez sur **Ctrl**+**Alt** + **X**.
+
+Le **ClearCollection\<T >** Concepteur d’activités peut être déplacé de la **boîte à outils** et déposés dans l’aire du Concepteur de flux de travail chaque fois que les activités sont placées, par comme à l’intérieur d’un <xref:System.Activities.Statements.Sequence>. Suppression du Concepteur d’activités crée un <xref:System.Activities.Statements.ClearCollection%601> activité avec une valeur par défaut <xref:System.Activities.Activity.DisplayName%2A> de ClearCollection < Int32\>. (Par défaut, le *TypeArgument* est **Int32**. TypeArgument peut être modifiée dans la grille des propriétés.) Le <xref:System.Activities.Activity.DisplayName%2A> valeur peut être modifiée dans l’en-tête de la **ClearCollection < T\>**  Concepteur d’activités ou dans le **DisplayName** case de la grille des propriétés. Les autres propriétés doivent être modifiées dans la grille des propriétés.
+
+### <a name="the-clearcollectiont-properties"></a>ClearCollection\<T > Propriétés
+
+Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.ClearCollection%601> et décrit comment elles sont utilisées dans le concepteur.
 
 |Nom de la propriété|Obligatoire|Utilisation|
 |-------------------|--------------|-----------|

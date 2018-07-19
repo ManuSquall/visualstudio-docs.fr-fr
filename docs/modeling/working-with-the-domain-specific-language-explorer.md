@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965159"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Utilisation de l'Explorateur de langage spécifique à un domaine
 Le **Explorateur DSL** affiche plusieurs types d’informations dans une arborescence. Pour plus d’informations sur la plupart des éléments dans l’Explorateur DSL, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md).

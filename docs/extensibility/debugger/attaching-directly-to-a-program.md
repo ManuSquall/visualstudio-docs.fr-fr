@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100375"
 ---
 # <a name="attaching-directly-to-a-program"></a>Attachement directement à un programme
 Les utilisateurs qui souhaitent déboguer des programmes dans un processus qui est déjà en cours d’exécution en général, procédez comme suit :  

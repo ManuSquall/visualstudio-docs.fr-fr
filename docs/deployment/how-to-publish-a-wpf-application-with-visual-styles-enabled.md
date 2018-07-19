@@ -1,5 +1,5 @@
 ---
-title: 'Comment : publier une Application WPF avec des styles visuels sont activés | Documents Microsoft'
+title: 'Comment : publier une Application WPF avec les Styles visuels activés | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -10,34 +10,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b265806a15d5a2b3f08862432c7c8e2a94d119c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2620a008a90b988aa80df8d3c8563163ff92d997
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078376"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Comment : publier une application WPF avec les styles visuels activés
-Styles visuels activer l’apparence des contrôles communs à changer en fonction du thème choisi par l’utilisateur. Par défaut, les styles visuels ne sont pas activés pour les applications Windows Presentation Foundation (WPF), ainsi, vous devez les activer manuellement. Toutefois, l’activation des styles visuels pour une application WPF, puis publiez la solution génère une erreur. Cette rubrique décrit comment résoudre cette erreur et le processus de publication d’une application WPF avec des styles visuels sont activés. Pour plus d’informations sur les styles visuels, consultez [vue d’ensemble des Styles Visual](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Pour plus d’informations sur le message d’erreur, consultez [dépannage des erreurs spécifiques dans les déploiements ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
+Styles visuels activer l’apparence des contrôles communs à changer en fonction du thème choisi par l’utilisateur. Par défaut, les styles visuels ne sont pas activés pour les applications Windows Presentation Foundation (WPF), vous devez les activer manuellement. Toutefois, l’activation des styles visuels pour une application WPF, puis publiez la solution provoque une erreur. Cette rubrique décrit comment résoudre cette erreur et le processus de publication d’une application WPF avec les styles visuels sont activés. Pour plus d’informations sur les styles visuels, consultez [vue d’ensemble de styles visuels](/windows/desktop/Controls/visual-styles-overview). Pour plus d’informations sur le message d’erreur, consultez [résoudre les erreurs spécifiques dans les déploiements ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
   
  Pour résoudre l’erreur et publiez la solution, vous devez effectuer les tâches suivantes :  
   
--   [Publiez la solution sans les styles visuels sont activés](#BKMK_publishsolwovs).  
+-   [Publiez la solution sans styles visuels activés](#publish-the-solution-without-visual-styles-enabled).  
   
--   [Créer un fichier manifeste](#BKMK_CreateManifest).  
+-   [Créez un fichier manifeste](#create-a-manifest-file).  
   
--   [Incorporer le fichier manifeste dans le fichier exécutable de la solution publiée](#BKMK_embedmanifest).  
+-   [Incorporer le fichier manifest dans le fichier exécutable de la solution publiée](#embed-the-manifest-file-into-the-executable-file-of-the-published-solution).  
   
--   [Signer les manifestes d’application et de déploiement](#BKMK_signappdeplyman).  
+-   [Signer les manifestes d’application et de déploiement](#sign-the-application-and-deployment-manifests).  
   
- Ensuite, vous pouvez déplacer les fichiers publiés à l’emplacement à partir de laquelle vous souhaitez les utilisateurs finaux pour installer l’application.  
+ Ensuite, vous pouvez déplacer les fichiers publiés à l’emplacement à partir duquel vous souhaitez que les utilisateurs finaux pour installer l’application.  
   
-##  <a name="BKMK_publishsolwovs"></a> Publiez la solution sans les styles visuels sont activés  
+##  <a name="publish-the-solution-without-visual-styles-enabled"></a>Publiez la solution sans styles visuels activés  
   
 1.  Assurez-vous que votre projet n’a pas de styles visuels sont activés. Vérifiez tout d’abord, le fichier manifeste du projet pour le code XML suivant. Ensuite, si le code XML est présent, placez le code XML avec une balise de commentaire.  
   
      Par défaut, les styles visuels ne sont pas activés.  
   
-    ```  
+    ```xml  
     <dependency>    <dependentAssembly>      <assemblyIdentity          type="win32"          name="Microsoft.Windows.Common-Controls"          version="6.0.0.0"          processorArchitecture="*"          publicKeyToken="6595b64144ccf1df"          language="*"        />    </dependentAssembly>  </dependency>  
     ```  
   
@@ -45,109 +46,109 @@ Styles visuels activer l’apparence des contrôles communs à changer en foncti
   
     ###### <a name="to-open-the-manifest-file-in-a-visual-basic-project"></a>Pour ouvrir le fichier manifeste dans un projet Visual Basic  
   
-    1.  Dans la barre de menus, choisissez **projet**, * NomProjet ***propriétés**, où *nom_projet* est le nom de votre projet WPF.  
+    1.  Dans la barre de menus, choisissez **projet**, *nom_projet* **propriétés**, où *nom_projet* est le nom de votre projet WPF.  
   
          Les pages de propriétés pour votre projet WPF s’affichent.  
   
-    2.  Sur le **Application** , onglet choisir **afficher les paramètres Windows**.  
+    2.  Sur le **Application** , choisir **afficher les paramètres Windows**.  
   
          Le fichier App.manifest s’ouvre dans le **éditeur de Code**.  
   
     ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>Pour ouvrir le fichier manifeste dans un projet c#  
   
-    1.  Dans la barre de menus, choisissez **projet**, * NomProjet ***propriétés**, où *nom_projet* est le nom de votre projet WPF.  
+    1.  Dans la barre de menus, choisissez **projet**, *nom_projet* **propriétés**, où *nom_projet* est le nom de votre projet WPF.  
   
          Les pages de propriétés pour votre projet WPF s’affichent.  
   
     2.  Sur le **Application** onglet, prenez note du nom qui apparaît dans le champ de manifeste. Il s’agit du nom du manifeste qui est associé à votre projet.  
   
         > [!NOTE]
-        >  Si **incorporer le fichier manifeste avec les paramètres par défaut** ou **créer une application sans manifeste** s’affichent dans le champ de manifeste, les styles visuels ne sont pas activés. Si le nom d’un fichier de manifeste s’affiche dans le champ de manifeste, passez à l’étape suivante de cette procédure.  
+        >  Si **manifeste incorporé avec les paramètres par défaut** ou **créer une application sans manifeste** apparaissent dans le champ de manifeste, les styles visuels ne sont pas activés. Si le nom d’un fichier manifeste apparaît dans le champ de manifeste, passez à l’étape suivante de cette procédure.  
   
-    3.  Dans **l’Explorateur de solutions**, choisissez **afficher tous les fichiers** ().  
+    3.  Dans **l’Explorateur de solutions**, choisissez **afficher tous les fichiers**.  
   
-         Ce bouton affiche tous les éléments de projet, y compris ceux qui ont été exclus et ceux qui sont normalement masqué. Le fichier manifeste apparaît comme un élément de projet.  
+         Ce bouton affiche tous les éléments de projet, y compris ceux qui ont été exclus et ceux qui sont normalement masqués. Le fichier manifest apparaît comme un élément de projet.  
   
-2.  Générez et publiez votre solution. Pour plus d’informations sur la publication de la solution, consultez [Comment : publier une Application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+2.  Générez et publiez votre solution. Pour plus d’informations sur la publication de la solution, consultez [Comment : publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
-##  <a name="BKMK_CreateManifest"></a> Créer un fichier manifeste  
+## <a name="create-a-manifest-file"></a>Créez un fichier manifeste  
   
 1.  Collez le code XML suivant dans un fichier du bloc-notes.  
   
-     Ce code XML décrit l’assembly qui contient des contrôles qui prennent en charge les styles visuels.  
+     Ce fichier XML décrit l’assembly qui contient les contrôles qui prennent en charge les styles visuels.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?><asmv1:assembly manifestVersion="1.0"                xmlns="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  <dependency>    <dependentAssembly>      <assemblyIdentity        type="win32"        name="Microsoft.Windows.Common-Controls"        version="6.0.0.0"        processorArchitecture="*"        publicKeyToken="6595b64144ccf1df"        language="*"        />    </dependentAssembly>  </dependency></asmv1:assembly>  
     ```  
   
 2.  Dans le bloc-notes, cliquez sur **fichier**, puis cliquez sur **Enregistrer sous**.  
   
-3.  Dans le **enregistrer en tant que** boîte de dialogue le **enregistrer en tant que type** la liste déroulante, sélectionnez **tous les fichiers**.  
+3.  Dans le **enregistrer en tant que** boîte de dialogue le **enregistrer en tant que type** liste déroulante, sélectionnez **tous les fichiers**.  
   
-4.  Dans le **nom de fichier** zone, nommez le fichier et ajouter **.manifest** à la fin du nom de fichier. Par exemple : **themes.manifest**.  
+4.  Dans le **nom de fichier** boîte, nommez le fichier et ajoutez *.manifest* à la fin du nom de fichier. Par exemple : *themes.manifest*.  
   
 5.  Choisissez le **parcourir les dossiers** bouton, sélectionnez n’importe quel dossier, puis cliquez sur **enregistrer**.  
   
     > [!NOTE]
-    >  Les procédures restantes supposent que le nom de ce fichier est **themes.manifest** et que le fichier est enregistré dans le répertoire C:\temp sur votre ordinateur.  
+    >  Les procédures restantes supposent que le nom de ce fichier est *themes.manifest* et que le fichier est enregistré dans le *C:\temp* répertoire sur votre ordinateur.  
   
-##  <a name="BKMK_embedmanifest"></a> Incorporer le fichier manifeste dans le fichier exécutable de la solution publiée  
+## <a name="embed-the-manifest-file-into-the-executable-file-of-the-published-solution"></a>Incorporer le fichier manifest dans le fichier exécutable de la solution publiée  
   
-1.  Ouvrez le **invite de commandes Visual Studio**.  
+1.  Ouvrez le **invite de commandes de Visual Studio**.  
   
      Pour plus d’informations sur la façon d’ouvrir le **invite de commandes Visual Studio**, consultez [invites de commandes](/dotnet/framework/tools/developer-command-prompt-for-vs).  
   
     > [!NOTE]
-    >  Les étapes restantes apporter les hypothèses suivantes sur votre solution :  
+    >  Les étapes restantes des hypothèses suivantes relatives à votre solution :  
     >   
     >  -   Le nom de la solution est **MyWPFProject**.  
     > -   La solution se trouve dans le répertoire suivant : `%UserProfile%\Documents\Visual Studio 2010\Projects\`.  
     >   
     >      La solution est publiée dans le répertoire suivant : `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.  
-    > -   La version la plus récente des fichiers de l’application publiée est située dans le répertoire suivant : `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
+    > -   La version la plus récente des fichiers d’application publiée se trouve dans le répertoire suivant : `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
     >   
     >  Il est inutile d’utiliser le nom ou les emplacements de répertoire décrites ci-dessus. Le nom et les emplacements décrits ci-dessus sont utilisés uniquement pour illustrer les étapes requises pour publier votre solution.  
   
 2.  À l’invite de commandes, modifiez le chemin d’accès au répertoire qui contient la version la plus récente des fichiers d’application publiée. L’exemple suivant illustre cette étape.  
   
-    ```  
-    cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
+    ```cmd  
+cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
     ```  
   
-3.  À l’invite de commandes, exécutez la commande suivante pour incorporer le fichier manifeste dans le fichier exécutable de l’application.  
+3.  À l’invite de commandes, exécutez la commande suivante pour incorporer le fichier manifest dans le fichier exécutable de l’application.  
   
-    ```  
+    ```cmd
     mt -manifest c:\temp\themes.manifest -outputresource:MyWPFApp.exe.deploy  
     ```  
   
-##  <a name="BKMK_signappdeplyman"></a> Signer les manifestes d’application et de déploiement  
+## <a name="sign-the-application-and-deployment-manifests"></a>Signer les manifestes d’application et de déploiement  
   
-1.  À l’invite de commandes, exécutez la commande suivante pour supprimer le `.deploy` extension à partir du fichier exécutable dans le répertoire actif.  
+1.  À l’invite de commandes, exécutez la commande suivante pour supprimer le *.deploy* extension à partir du fichier exécutable dans le répertoire actif.  
   
-    ```  
+    ```cmd  
     ren MyWPFApp.exe.deploy MyWPFApp.exe  
     ```  
   
     > [!NOTE]
-    >  Cet exemple ne suppose qu’un seul fichier possède le `.deploy` extension de fichier. Assurez-vous que vous renommez tous les fichiers dans ce répertoire ayant le `.deploy` extension de fichier.  
+    >  Cet exemple ne suppose qu’un seul fichier possède le *.deploy* extension de fichier. Assurez-vous que vous renommez tous les fichiers dans ce répertoire ayant le *.deploy* extension de fichier.  
   
 2.  À l’invite de commandes, exécutez la commande suivante pour signer le manifeste d’application.  
   
-    ```  
+    ```cmd  
     mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
     ```  
   
     > [!NOTE]
-    >  Cet exemple suppose que vous signez le manifeste à l’aide de le `.pfx` fichier du projet. Si vous ne signez pas le manifeste, vous pouvez omettre le `-cf` paramètre qui est utilisé dans cet exemple. Si vous signez le manifeste avec un certificat qui requiert un mot de passe, spécifiez le `-password` option (`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`).  
+    >  Cet exemple suppose que vous signez le manifeste à l’aide de la *.pfx* fichier du projet. Si vous signez pas le manifeste, vous pouvez omettre le `-cf` paramètre qui est utilisé dans cet exemple. Si vous signez le manifeste avec un certificat qui requiert un mot de passe, spécifiez le `-password` option (`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`).  
   
-3.  À l’invite de commandes, exécutez la commande suivante pour ajouter le `.deploy` extension pour le nom du fichier que vous avez renommé à l’étape précédente de cette procédure.  
+3.  À l’invite de commandes, exécutez la commande suivante pour ajouter le *.deploy* extension pour le nom du fichier que vous avez renommé à l’étape précédente de cette procédure.  
   
     ```  
     ren MyWPFApp.exe MyWPFApp.exe.deploy  
     ```  
   
     > [!NOTE]
-    >  Cet exemple ne suppose qu’un seul fichier avait une `.deploy` extension de fichier. Assurez-vous que tous les fichiers dans ce répertoire ayant auparavant renommer le `.deploy` extension de nom de fichier.  
+    >  Cet exemple ne suppose qu’un seul fichier avait une *.deploy* extension de fichier. Assurez-vous que vous renommez tous les fichiers dans ce répertoire qui avait précédemment le *.deploy* extension de nom de fichier.  
   
 4.  À l’invite de commandes, exécutez la commande suivante pour signer le manifeste de déploiement.  
   
@@ -156,12 +157,12 @@ Styles visuels activer l’apparence des contrôles communs à changer en foncti
     ```  
   
     > [!NOTE]
-    >  Cet exemple suppose que vous signez le manifeste à l’aide de le `.pfx` fichier du projet. Si vous ne signez pas le manifeste, vous pouvez omettre le `-cf` paramètre qui est utilisé dans cet exemple. Si vous signez le manifeste avec un certificat qui requiert un mot de passe, spécifiez le `-password` option, comme dans cet exemple :`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`.  
+    >  Cet exemple suppose que vous signez le manifeste à l’aide de la *.pfx* fichier du projet. Si vous signez pas le manifeste, vous pouvez omettre le `-cf` paramètre qui est utilisé dans cet exemple. Si vous signez le manifeste avec un certificat qui requiert un mot de passe, spécifiez le `-password` option, comme dans cet exemple :`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`.  
   
- Une fois que vous avez effectué ces étapes, vous pouvez déplacer les fichiers publiés à l’emplacement à partir de laquelle vous souhaitez les utilisateurs finaux pour installer l’application. Si vous envisagez de mettre à jour de la solution souvent, vous pouvez déplacer ces commandes dans un script et exécuter le script chaque fois que vous publiez une nouvelle version.  
+ Une fois que vous avez effectué ces étapes, vous pouvez déplacer les fichiers publiés à l’emplacement à partir duquel vous souhaitez que les utilisateurs finaux pour installer l’application. Si vous envisagez de mettre à jour la solution souvent, vous pouvez déplacer ces commandes dans un script et exécuter le script chaque fois que vous publiez une nouvelle version.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Dépannage d’erreurs spécifiques dans les déploiements ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)   
- [Vue d’ensemble des Styles visuels](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)   
- [L’activation de Styles visuels](https://msdn.microsoft.com/library/bb773175.aspx)   
+ [Résoudre les erreurs spécifiques dans les déploiements ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)   
+ [Vue d’ensemble de styles visuels](/windows/desktop/Controls/visual-styles-overview)   
+ [Activer des styles visuels](https://msdn.microsoft.com/library/bb773175.aspx)   
  [Invites de commandes](/dotnet/framework/tools/developer-command-prompt-for-vs)

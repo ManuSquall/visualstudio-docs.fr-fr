@@ -15,118 +15,98 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 349103e59df3acb3719b7b36162cac818f94f03e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 32a093e59d918f34ddf5da9cbb5edb13c96b2777
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746681"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117925"
 ---
-# <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>Procédure pas à pas : création d'un groupe de données avec le Concepteur de DataSet
+# <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Procédure pas à pas : Créer un jeu de données avec le Concepteur de Dataset
 
-Dans cette procédure pas à pas, vous allez créer un jeu de données à l’aide de la **Concepteur de Dataset**. Il vous guidera le processus de création d’un projet et l’ajout d’un nouveau **DataSet** élément lui. Vous allez apprendre à créer des tables basées sur les tables dans une base de données sans utiliser d’Assistant.
-
-Cette procédure pas à pas décrit notamment les tâches suivantes :
-
--   Création d’un **Application Windows Forms** projet.
-
--   Ajout de vide **DataSet** élément au projet.
-
--   Création et configuration d’une source de données dans votre application en générant un dataset avec le **Concepteur de Dataset**.
-
--   Création d’une connexion à la base de données Northwind **l’Explorateur de serveurs**.
-
--   Création de tables avec des TableAdapters dans le jeu de données basée sur des tables dans la base de données.
-
-[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
+Dans cette procédure pas à pas, vous allez créer un jeu de données à l’aide de la **Concepteur de Dataset**. L’article passe en revue le processus de création d’un projet et l’ajout d’une nouvelle **DataSet** élément à ce dernier. Vous allez apprendre à créer des tables basées sur les tables dans une base de données sans utiliser l’Assistant.
 
 ## <a name="prerequisites"></a>Prérequis
+
 Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de données Northwind.
 
-1.  Si vous n’avez pas SQL Server Express LocalDB, installez-le à partir de la [page de téléchargement de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), ou via le **le programme d’installation de Visual Studio**. Dans le programme d’installation Visual Studio, SQL Server Express LocalDB peut être installé dans le cadre de la **stockage de données et de traitement** charge de travail, ou sous la forme d’un composant individuel.
+1.  Si vous n’avez pas SQL Server Express LocalDB, installez-le à partir de la [page de téléchargement de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), ou via le **le programme d’installation de Visual Studio**. Dans le programme d’installation Visual Studio, SQL Server Express LocalDB peuvent être installé dans le cadre de la **stockage de données et de traitement** charge de travail, ou comme un composant individuel.
 
-2.  Installer la base de données Northwind en procédant comme suit :
+2.  Installer la base de données Northwind en suivant ces étapes :
 
-    1. Dans Visual Studio, ouvrez le **l’Explorateur d’objets SQL Server** fenêtre. (Explorateur d’objets SQL Server est installé dans le cadre de la **stockage de données et de traitement** charge de travail dans le programme d’installation Visual Studio.) Développez le **SQL Server** nœud. Avec le bouton droit sur votre instance de base de données locale et sélectionnez **nouvelle requête...** .
+    1. Dans Visual Studio, ouvrez le **Explorateur d’objets SQL Server** fenêtre. (Explorateur d’objets SQL Server est installé dans le cadre de la **stockage de données et de traitement** charge de travail dans Visual Studio Installer.) Développez le **SQL Server** nœud. Avec le bouton droit sur votre instance de base de données locale et sélectionnez **nouvelle requête**.
 
        Une fenêtre d’éditeur de requête s’ouvre.
 
-    2. Copie le [script Transact-SQL de Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) dans le Presse-papiers. Ce script T-SQL crée la base de données Northwind à partir de zéro et la remplit avec des données.
+    2. Copie le [script Transact-SQL de Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) dans votre Presse-papiers. Ce script T-SQL crée la base de données Northwind à partir de zéro et la remplit avec des données.
 
     3. Collez le script T-SQL dans l’éditeur de requête, puis choisissez le **Execute** bouton.
 
        Après une courte période, la requête est terminée et la base de données Northwind est créé.
 
-## <a name="creating-a-new-windows-forms-application-project"></a>Création d’un nouveau projet d’Application Windows Forms
+## <a name="create-a-new-windows-forms-application-project"></a>Créer un nouveau projet d’Application Windows Forms
 
-#### <a name="to-create-a-new-windows-forms-application-project"></a>Pour créer un nouveau projet d’Application Windows Forms
-
-1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **nouveau**, **projet...** .
+1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **New** > **projet**.
 
 2. Développez le **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
 
-3. Dans le volet central, sélectionnez le **l’application Windows Forms** type de projet.
+3. Dans le volet central, sélectionnez le **Windows Forms application** type de projet.
 
 4. Nommez le projet **DatasetDesignerWalkthrough**, puis choisissez **OK**.
 
-     Visual Studio ajoute le projet **l’Explorateur de solutions** et afficher un nouveau formulaire dans le concepteur.
+     Visual Studio ajoute le projet à **l’Explorateur de solutions** et afficher un nouveau formulaire dans le concepteur.
 
-## <a name="adding-a-new-dataset-to-the-application"></a>Ajout d’un nouveau jeu de données à l’Application
+## <a name="add-a-new-dataset-to-the-application"></a>Ajouter un nouveau jeu de données à l’Application
 
-#### <a name="to-add-a-new-dataset-item-to-the-project"></a>Pour ajouter un nouvel élément dataset au projet
-
-1.  Sur le **projet** menu, sélectionnez **ajouter un nouvel élément...** .
+1.  Sur le **projet** menu, sélectionnez **ajouter un nouvel élément**.
 
      La boîte de dialogue **Ajouter un nouvel élément** s’affiche.
 
 2.  Dans le volet gauche, sélectionnez **données**, puis sélectionnez **DataSet** dans le volet central.
 
-3.  Nom du jeu de données **NorthwindDataset**, puis choisissez **ajouter**.
+3.  Nommez le jeu de données **NorthwindDataset**, puis choisissez **ajouter**.
 
      Visual Studio ajoute un fichier appelé **NorthwindDataset.xsd** au projet et l’ouvre dans le **Concepteur de Dataset**.
 
-## <a name="creating-a-data-connection-in-server-explorer"></a>Création d’une connexion de données dans l’Explorateur de serveurs
+## <a name="create-a-data-connection-in-server-explorer"></a>Créer une connexion de données dans l’Explorateur de serveurs
 
-#### <a name="to-create-a-connection-to-the-northwind-database"></a>Pour créer une connexion à la base de données Northwind
+1.  Sur le **vue** menu, cliquez sur **Explorateur de serveurs**.
 
-1.  Sur le **vue** menu, cliquez sur **l’Explorateur de serveurs**.
-
-2.  Dans **l’Explorateur de serveurs**, cliquez sur le **se connecter à la base de données** bouton.
+2.  Dans **Explorateur de serveurs**, cliquez sur le **se connecter à la base de données** bouton.
 
 3.  Créer une connexion à la base de données Northwind.
 
-## <a name="creating-the-tables-in-the-dataset"></a>Création des Tables dans le jeu de données
+## <a name="create-the-tables-in-the-dataset"></a>Créer les Tables dans le jeu de données
+
 Cette section explique comment ajouter des tables au jeu de données.
 
-#### <a name="to-create-the-customers-table"></a>Pour créer la table Customers
+### <a name="to-create-the-customers-table"></a>Pour créer la table Customers
 
-1.  Développez la connexion de données que vous avez créé dans **l’Explorateur de serveurs**, puis développez le **Tables** nœud.
+1.  Développez la connexion de données que vous avez créé dans **Explorateur de serveurs**, puis développez le **Tables** nœud.
 
-2.  Faites glisser le **clients** à partir de la table **l’Explorateur de serveurs** sur la **Concepteur de Dataset**.
+2.  Faites glisser le **clients** à partir de la table **Explorateur de serveurs** sur le **Concepteur de Dataset**.
 
-     A **clients** table de données et **CustomersTableAdapter** sont ajoutées au jeu de données.
+     Un **clients** table de données et **CustomersTableAdapter** sont ajoutées au jeu de données.
 
-#### <a name="to-create-the-orders-table"></a>Pour créer la table Orders
+### <a name="to-create-the-orders-table"></a>Pour créer la table Orders
 
--   Faites glisser le **commandes** à partir de la table **l’Explorateur de serveurs** sur la **Concepteur de Dataset**.
+-   Faites glisser le **commandes** à partir de la table **Explorateur de serveurs** sur le **Concepteur de Dataset**.
 
      Un **commandes** table de données, **OrdersTableAdapter**et la relation de données entre le **clients** et **commandes** tables sont ajoutées à la jeu de données.
 
-#### <a name="to-create-the-orderdetails-table"></a>Pour créer la table OrderDetails
+### <a name="to-create-the-orderdetails-table"></a>Pour créer la table OrderDetails
 
--   Faites glisser le **Order Details** à partir de la table **l’Explorateur de serveurs** sur la **Concepteur de Dataset**.
+-   Faites glisser le **Order Details** à partir de la table **Explorateur de serveurs** sur le **Concepteur de Dataset**.
 
      Un **Order Details** table de données, **OrderDetailsTableAdapter**et une relation de données entre le **commandes** et **OrderDetails** tables sont ajoutés au jeu de données.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-### <a name="to-add-functionality-to-your-application"></a>Pour ajouter une fonctionnalité à votre application
-
 -   Enregistrer le jeu de données.
 
--   Sélectionnez des éléments dans le **des Sources de données** fenêtre et faites-les glisser jusqu'à un formulaire. Pour plus d’informations, consultez [des contrôles de lier des Windows Forms à des données dans Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
+-   Sélectionnez des éléments dans le **des Sources de données** fenêtre et faites-les glisser jusqu'à un formulaire. Pour plus d’informations, consultez [lier les formulaires Windows contrôle aux données dans Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
 
--   Ajoutez d’autres requêtes aux TableAdapters.
+-   Ajoutez davantage de requêtes pour les TableAdapters.
 
 -   Ajouter une logique de validation pour le <xref:System.Data.DataTable.ColumnChanging> ou <xref:System.Data.DataTable.RowChanging> événements les tables de données dans le jeu de données. Pour plus d’informations, consultez [valider des données dans les jeux de données](../data-tools/validate-data-in-datasets.md).
 
@@ -135,5 +115,4 @@ Cette section explique comment ajouter des tables au jeu de données.
 - [Créer et configurer des datasets dans Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Lier des contrôles Windows Forms à des données dans Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Lier des contrôles à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
-- [Validation des données](../data-tools/validate-data-in-datasets.md)
-- [Enregistrer des données](../data-tools/saving-data.md)
+- [Valider des données](../data-tools/validate-data-in-datasets.md)

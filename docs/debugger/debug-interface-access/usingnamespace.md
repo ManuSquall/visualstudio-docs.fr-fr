@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471055"
 ---
 # <a name="usingnamespace"></a>UsingNameSpace
 Certains symboles peuvent être référencées par un espace de noms et est par la suite être identifiés par un `SymTagUsingNameSpace` balise.  

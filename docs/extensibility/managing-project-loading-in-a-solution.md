@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146217"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Lors du chargement de la gestion des projets dans une Solution
 Solutions Visual Studio peuvent contenir un grand nombre de projets. Le comportement de Visual Studio par défaut est de chargement de tous les projets dans une solution au moment de que l’ouverture de la solution et ne pas pour autoriser l’utilisateur à accéder aux projets jusqu'à la fin du chargement de tous les. Lorsque le processus de chargement du projet dure plus de deux minutes, une barre de progression affiche le nombre de projets chargés et le nombre total de projets. L’utilisateur peut décharger les projets tout en travaillant dans une solution avec plusieurs projets, mais cette procédure présente certains inconvénients : les projets déchargés ne sont pas générés dans le cadre d’une commande de régénérer la Solution et IntelliSense des descriptions des types et membres de fermeture les projets ne sont pas affichés.  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099881"
 ---
 # <a name="breakpoint-errors"></a>Erreurs de point d’arrêt
 La liste suivante décrit le processus lorsqu’un point d’arrêt tente de se lier au code, mais échoue :  

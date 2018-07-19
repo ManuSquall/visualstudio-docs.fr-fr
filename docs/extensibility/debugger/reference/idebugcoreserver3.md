@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108529"
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
 Cette interface permet d’accéder à plus d’informations sur le serveur, dans que le processus est en cours d’exécution.  

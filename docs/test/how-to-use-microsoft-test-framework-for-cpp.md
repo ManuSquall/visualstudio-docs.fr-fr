@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: dac63faa3c34983a8ac0be9ccd7cbd9fae9a1cbe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 068e49c1fb095691cfa68f7a744a2159a8c173a3
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845491"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Utiliser le framework de tests unitaires Microsoft pour C++ dans Visual Studio
 
@@ -31,7 +32,7 @@ Dans certains cas, par exemple lors du test de fonctions non exportées dans une
 
     3.  Cliquez sur la flèche vers le bas dans les lignes suivantes et choisissez **<Edit>** :
 
-        |||
+        |Répertoire|Property|
         |-|-|
         |**Répertoires Include**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
         |**Répertoires de bibliothèques**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
@@ -55,7 +56,7 @@ Utilisez les méthodes statiques de la classe [Assert](microsoft-visualstudio-te
 2.  Dans l’Explorateur de tests, choisissez **Exécuter tout** ou sélectionnez les tests spécifiques à exécuter. Cliquez avec le bouton droit sur un test pour accéder à d’autres options, notamment son exécution en mode débogage avec des points d’arrêt activés.
 3. Dans la **fenêtre Sortie**, choisissez **Tests** dans la liste déroulante pour afficher les messages écrits par la classe `Logger` :
 
-  ![Fenêtre Sortie C++ affichant des messages de test](media/cpp-test-output-window.png "Fenêtre Sortie")
+  ![Fenêtre Sortie C++ affichant des messages de test](media/cpp-test-output-window.png)
 
 ## <a name="define-traits-to-enable-grouping"></a>Définir des caractéristiques pour permettre le regroupement
 Vous pouvez définir des caractéristiques sur des méthodes de test, qui vous permettent de catégoriser et de regrouper les tests dans **l’Explorateur de tests**. Pour définir une caractéristique, utilisez la macro `TEST_METHOD_ATTRIBUTE` . Par exemple, pour définir une caractéristique nommée `TEST_MY_TRAIT`:
@@ -66,7 +67,7 @@ Vous pouvez définir des caractéristiques sur des méthodes de test, qui vous p
 
  Pour utiliser la caractéristique définie dans vos tests unitaires :
 
-```
+```cpp
 BEGIN_TEST_METHOD_ATTRIBUTE(Method1)
     TEST_OWNER(L"OwnerName")
     TEST_PRIORITY(1)

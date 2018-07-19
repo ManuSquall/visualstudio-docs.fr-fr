@@ -13,21 +13,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0c4e985231f8e74095add3e8a3a3e412814bed0d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: f44264eace04475fc96e42b533a288ef87dd2c2b
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745800"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758481"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Créer une application de données simple à l’aide d’ADO.NET
 
-Lorsque vous créez une application qui manipule les données d’une base de données, vous effectuez des tâches de base telles que la définition des chaînes de connexion, insertion de données et l’exécution des procédures stockées. En suivant cette rubrique, vous pouvez découvrir comment interagir avec une base de données dans une application de « formulaires de données » de Windows Forms simple à l’aide de Visual c# ou Visual Basic et ADO.NET.  Toutes les technologies de données .NET, y compris les datasets, LINQ to SQL et Entity Framework — finalement les étapes qui sont très similaires à celles présentées dans cet article.
+Lorsque vous créez une application qui manipule des données dans une base de données, vous effectuez des tâches de base telles que la définition des chaînes de connexion, insertion de données et l’exécution des procédures stockées. En suivant cette rubrique, vous pouvez découvrir comment interagir avec une base de données à partir d’une application de « formulaires de données » de Windows Forms simple à l’aide de Visual c# ou Visual Basic et ADO.NET.  Toutes les technologies de données .NET, y compris les datasets, LINQ to SQL et Entity Framework — finalement les étapes qui sont très similaires à celles présentées dans cet article.
 
- Cet article décrit un moyen simple pour obtenir des données en dehors d’une base de données d’une manière très rapide. Si votre application a besoin de modifier les données non triviale façons et de mettre à jour de la base de données, vous devez envisager à l’aide d’Entity Framework et à l’aide de la liaison de données à synchroniser automatiquement les contrôles d’interface utilisateur pour les modifications dans les données sous-jacentes.
+ Cet article montre un moyen simple d’obtenir des données en dehors d’une base de données de manière rapide. Si votre application a besoin de modifier les données de manières non triviale et mettre à jour de la base de données, vous devez envisager l’utilisation de Entity Framework et à l’aide de la liaison de données à synchroniser automatiquement les contrôles d’interface utilisateur pour les modifications dans les données sous-jacentes.
 
 > [!IMPORTANT]
-> Pour simplifier le code, il n’inclut pas la gestion des exceptions de l’environnement de production.
+> Pour simplifier le code, il n’inclut pas la gestion des exceptions de prêt pour la production.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -37,15 +37,15 @@ Pour créer l'application, vous aurez besoin des éléments suivants :
 
 -   SQL Server Express LocalDB. Si vous n’avez pas SQL Server Express LocalDB, vous pouvez l’installer à partir de la [page de téléchargement de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
-Cette rubrique suppose que vous êtes familiarisé avec les fonctionnalités de base de l’IDE de Visual Studio et pourrez créer une application Windows Forms, ajouter des formulaires pour le projet, placez des boutons et autres contrôles sur les formulaires, définir les propriétés des contrôles et des événements simple de code. Si vous n’êtes pas familiarisé avec ces tâches, nous vous suggérons d’effectuer la [mise en route avec Visual c# et Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) rubrique avant de commencer cette procédure pas à pas.
+Cette rubrique suppose que vous êtes familiarisé avec les fonctionnalités de base de l’IDE Visual Studio et pourrez créer une application Windows Forms, ajouter des formulaires pour le projet, placer des boutons et autres contrôles sur les formulaires, définir les propriétés des contrôles et coder des événements simples. Si vous n’êtes pas familiarisé avec ces tâches, nous vous suggérons d’effectuer la [mise en route avec Visual c# et Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) rubrique avant de commencer cette procédure pas à pas.
 
 ## <a name="set-up-the-sample-database"></a>Installer l'exemple de base de données
 
 Créer la base de données en suivant ces étapes :
 
-1. Dans Visual Studio, ouvrez le **l’Explorateur de serveurs** fenêtre.
+1. Dans Visual Studio, ouvrez le **Explorateur de serveurs** fenêtre.
 
-2. Avec le bouton droit sur **des connexions de données** et choisissez ** Créer nouveau serveur de base de données SQL... ».
+2. Avec le bouton droit sur **des connexions de données** et choisissez **créer une nouvelle base de données SQL Server**.
 
 3. Dans le **nom du serveur** texte, entrez **(localdb) \mssqllocaldb**.
 
@@ -57,25 +57,25 @@ Créer la base de données en suivant ces étapes :
 
      Une fenêtre d’éditeur de requête s’ouvre.
 
-6. Copie le [script Transact-SQL de ventes](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/data-tools/samples/sales.sql) dans le Presse-papiers.
+6. Copie le [script Transact-SQL de ventes](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/data-tools/samples/sales.sql) dans votre Presse-papiers.
 
 7. Collez le script T-SQL dans l’éditeur de requête, puis choisissez le **Execute** bouton.
 
-     Après une courte période, la requête est terminée et les objets de base de données sont créés. La base de données contient deux tables : Customer et Orders. Ces tables contiennent pas de données au départ, mais vous pouvez ajouter des données lorsque vous exécutez l’application que vous allez créer. La base de données contient également quatre procédures stockées simples.
+     Après une courte période, la requête est terminée en cours d’exécution et les objets de base de données sont créés. La base de données contient deux tables : Customer et Orders. Ces tables contiennent pas de données initialement, mais vous pouvez ajouter des données lorsque vous exécutez l’application que vous allez créer. La base de données contient également quatre procédures stockées simples.
 
 ## <a name="create-the-forms-and-add-controls"></a>Créer les formulaires et ajouter les contrôles
 
-1.  Créer un projet pour une application Windows Forms et nommez-le SimpleDataApp.
+1.  Créer un projet pour une application Windows Forms, puis nommez-le **SimpleDataApp**.
 
-     Visual Studio crée le projet et plusieurs fichiers, y compris un formulaire Windows vide nommé Form1.
+     Visual Studio crée le projet et plusieurs fichiers, y compris un formulaire Windows vide nommé **Form1**.
 
-2.  Ajoutez deux formulaires Windows à votre projet afin qu’il comporte trois formulaires et leur attribuer les noms suivants :
+2.  Ajoutez deux formulaires Windows à votre projet afin qu’il comporte trois formulaires et puis attribuez-leur les noms suivants :
 
-    -   Navigation
+    -   **Navigation**
 
-    -   NewCustomer
+    -   **NewCustomer**
 
-    -   FillOrCancel
+    -   **FillOrCancel**
 
 3.  Pour chaque formulaire, ajoutez les zones de texte, les boutons et les autres contrôles indiqués dans les illustrations suivantes. Pour chaque contrôle, définissez les propriétés que les tables décrivent.
 
@@ -86,7 +86,7 @@ Créer la base de données en suivant ces étapes :
 
  ![Boîte de dialogue Navigation](../data-tools/media/simpleappnav.png)
 
-|Contrôles du formulaire Navigation|Propriétés|
+|Contrôles du formulaire Navigation|Properties|
 |--------------------------------------|----------------|
 |Bouton|Name = btnGoToAdd|
 |Bouton|Name = btnGoToFillOrCancel|
@@ -96,7 +96,7 @@ Créer la base de données en suivant ces étapes :
 
  ![Ajouter un nouveau client et passer une commande](../data-tools/media/simpleappnewcust.png)
 
-|Contrôles du formulaire NewCustomer|Propriétés|
+|Contrôles du formulaire NewCustomer|Properties|
 |---------------------------------------|----------------|
 |TextBox|Name = txtCustomerName|
 |TextBox|Name = txtCustomerID<br /><br /> Readonly = True|
@@ -111,7 +111,7 @@ Créer la base de données en suivant ces étapes :
 
  ![remplir ou annuler les commandes](../data-tools/media/simpleappcancelfill.png)
 
-|Contrôles du formulaire FillOrCancel|Propriétés|
+|Contrôles du formulaire FillOrCancel|Properties|
 |----------------------------------------|----------------|
 |TextBox|Name = txtOrderID|
 |Bouton|Name = btnFindByOrderID|
@@ -122,11 +122,11 @@ Créer la base de données en suivant ces étapes :
 |Bouton|Name = btnFinishUpdates|
 
 ## <a name="store-the-connection-string"></a>Stocker la chaîne de connexion
- Quand votre application tente d'ouvrir une connexion à la base de données, elle doit avoir accès à la chaîne de connexion. Pour éviter d’entrer la chaîne manuellement sur chaque formulaire, stocker la chaîne dans le fichier App.config de votre projet, puis créez une méthode qui retourne la chaîne lorsque la méthode est appelée à partir de n’importe quel formulaire de votre application.
+ Quand votre application tente d'ouvrir une connexion à la base de données, elle doit avoir accès à la chaîne de connexion. Pour éviter d’entrer la chaîne manuellement sur chaque formulaire, stocker la chaîne dans le *App.config* dans votre projet, puis créez une méthode qui retourne la chaîne lorsque la méthode est appelée à partir de n’importe quel formulaire de votre application.
 
- Vous pouvez rechercher la chaîne de connexion en cliquant sur le **Sales** connexion de données dans **l’Explorateur de serveurs** et en choisissant **propriétés**. Recherchez le **ConnectionString** propriété, puis utilisez Ctrl + A, Ctrl + C pour sélectionner et copier la chaîne dans le Presse-papiers.
+ Vous pouvez trouver la chaîne de connexion en cliquant sur le **Sales** connexion de données dans **Explorateur de serveurs** et en choisissant **propriétés**. Recherchez le **ConnectionString** propriété, puis utilisez **Ctrl**+**A**, **Ctrl**+**C**  pour sélectionner et copier la chaîne dans le Presse-papiers.
 
-1.  Si vous utilisez c#, dans **l’Explorateur de solutions**, développez le **propriétés** nœud sous le projet, puis ouvrez le **Settings.settings** fichier.
+1.  Si vous utilisez c#, dans **l’Explorateur de solutions**, développez le **propriétés** nœud sous le projet et ouvrez le **Settings.settings** fichier.
     Si vous utilisez Visual Basic, dans **l’Explorateur de solutions**, cliquez sur **afficher tous les fichiers**, développez le **mon projet** nœud, puis ouvrez le **Settings.settings** fichier.
 
 2.  Dans le **nom** colonne, entrez `connString`.
@@ -135,14 +135,14 @@ Créer la base de données en suivant ces étapes :
 
 4.  Dans le **étendue** liste, sélectionnez **Application**.
 
-5.  Dans le **valeur** colonne, entrez votre chaîne de connexion (sans qu’aucun en dehors des guillemets), puis enregistrez vos modifications.
+5.  Dans le **valeur** colonne, entrez votre chaîne de connexion (sans les guillemets à l’extérieur), puis enregistrez vos modifications.
 
 > [!NOTE]
-> Dans une application réelle, vous devez stocker en toute sécurité, comme décrit dans la chaîne de connexion [les chaînes de connexion et les fichiers de Configuration](/dotnet/framework/data/adonet/connection-strings-and-configuration-files).
+> Dans une application réelle, vous devez stocker en toute sécurité, comme décrit dans la chaîne de connexion [chaînes de connexion et les fichiers de configuration](/dotnet/framework/data/adonet/connection-strings-and-configuration-files).
 
 ##  <a name="write-the-code-for-the-forms"></a>Écrire le code des formulaires
 
-Cette section contient des vues d’ensemble de ce que fait chaque formulaire. Il fournit également le code qui définit la logique sous-jacente du clic sur un bouton sur le formulaire.
+Cette section présentent brièvement ce que fait chaque formulaire. Il fournit également le code qui définit la logique sous-jacente de la suite d’un clic sur un bouton sur le formulaire.
 
 ### <a name="navigation-form"></a>Formulaire Navigation
 
@@ -150,34 +150,34 @@ Le formulaire Navigation s'ouvre quand vous exécutez l'application. Le **ajoute
 
 #### <a name="make-the-navigation-form-the-startup-form"></a>Faire du formulaire Navigation le formulaire de démarrage
 
-Si vous utilisez c#, dans **l’Explorateur de solutions**, ouvrez Program.cs et modifiez le `Application.Run` cette ligne : `Application.Run(new Navigation());`
+Si vous utilisez c#, dans **l’Explorateur de solutions**, ouvrez **Program.cs**, puis modifiez la `Application.Run` ligne à ceci : `Application.Run(new Navigation());`
 
-Si vous utilisez Visual Basic, dans **l’Explorateur de solutions**, ouvrez le **propriétés** fenêtre, sélectionnez le **Application** onglet, puis sélectionnez  **SimpleDataApp.Navigation** dans les **du formulaire de démarrage** liste.
+Si vous utilisez Visual Basic, dans **l’Explorateur de solutions**, ouvrez le **propriétés** fenêtre, sélectionnez le **Application** onglet, puis sélectionnez  **SimpleDataApp.Navigation** dans le **formulaire de démarrage** liste.
 
-#### <a name="create-auto-generated-event-handlers"></a>Créer des gestionnaires d’événements de généré automatiquement
+#### <a name="create-auto-generated-event-handlers"></a>Créer des gestionnaires d’événements générés automatiquement
 
-Double-cliquez sur les trois boutons sur l’écran de Navigation pour créer des méthodes de gestionnaire d’événements vide. Double-clic sur les boutons ajoute également le code généré automatiquement dans le fichier de code du concepteur qui permet à un clic de bouton déclencher un événement.
+Double-cliquez sur les trois boutons sur l’écran de Navigation pour créer des méthodes de gestionnaire d’événements vide. Double-cliquez sur les boutons ajoute également le code généré automatiquement dans le fichier de code du concepteur qui permet à un clic de bouton déclencher un événement.
 
-#### <a name="add-code-for-the-navigation-form-logic"></a>Ajouter du code pour la logique du formulaire Navigation
+#### <a name="add-code-for-the-navigation-form-logic"></a>Ajoutez du code pour la logique du formulaire Navigation
 
-Dans la page de codes du formulaire Navigation complète les corps de méthode pour le bouton de trois gestionnaires d’événements click comme indiqué dans le code suivant.
+Dans la page de codes pour l’écran de Navigation, complète les corps de méthode pour le bouton de trois gestionnaires d’événements click comme indiqué dans le code suivant.
 
 [!code-csharp[Navigation#1](../data-tools/codesnippet/CSharp/SimpleDataApp/Navigation.cs#1)]
 [!code-vb[Navigation#1](../data-tools/codesnippet/VisualBasic/SimpleDataApp/Navigation.vb#1)]
 
 ### <a name="newcustomer-form"></a>Formulaire NewCustomer
 
-Lorsque vous entrez un nom de client, puis sélectionnez le **créer un compte** bouton, le formulaire NewCustomer crée un compte client et SQL Server retourne une valeur d’identité en tant que le nouvel ID de client. Vous pouvez ensuite passer une commande pour le nouveau compte en spécifiant une quantité et une date de commande et en sélectionnant le **passer une commande** bouton.
+Lorsque vous entrez un nom de client, puis sélectionnez le **créer un compte** bouton, le formulaire NewCustomer crée un compte client, et SQL Server retourne une valeur d’identité en tant que le nouvel ID de client. Vous pouvez ensuite passer une commande pour le nouveau compte en spécifiant une quantité et une date de commande et en sélectionnant le **passer une commande** bouton.
 
-#### <a name="create-auto-generated-event-handlers"></a>Créer des gestionnaires d’événements de généré automatiquement
+#### <a name="create-auto-generated-event-handlers"></a>Créer des gestionnaires d’événements générés automatiquement
 
-Créer un vide, cliquez sur Gestionnaire d’événements pour chaque bouton sur le formulaire NewCustomer en double-cliquant sur chacun des quatre boutons. Double-clic sur les boutons ajoute également le code généré automatiquement dans le fichier de code du concepteur qui permet à un clic de bouton déclencher un événement.
+Créer un vide, cliquez sur Gestionnaire d’événements pour chaque bouton sur le formulaire NewCustomer en double-cliquant sur chacun des quatre boutons. Double-cliquez sur les boutons ajoute également le code généré automatiquement dans le fichier de code du concepteur qui permet à un clic de bouton déclencher un événement.
 
-#### <a name="add-code-for-the-newcustomer-form-logic"></a>Ajouter du code pour la logique du formulaire NewCustomer
+#### <a name="add-code-for-the-newcustomer-form-logic"></a>Ajoutez du code pour la logique du formulaire NewCustomer
 
 Pour terminer la logique du formulaire NewCustomer, procédez comme suit.
 
-1. Mettez le `System.Data.SqlClient` dans la portée espace de noms afin que vous ne devez entièrement qualifier les noms de ses membres.
+1. Mettre le `System.Data.SqlClient` dans la portée espace de noms afin que vous n’êtes pas obligé entièrement qualifier les noms de ses membres.
 
      ```csharp
      using System.Data.SqlClient;
@@ -186,7 +186,7 @@ Pour terminer la logique du formulaire NewCustomer, procédez comme suit.
      Imports System.Data.SqlClient
      ```
 
-2. Ajouter des variables et les méthodes d’assistance à la classe, comme indiqué dans le code suivant.
+2. Ajoutez des variables et les méthodes d’assistance à la classe comme indiqué dans le code suivant.
 
      [!code-csharp[NewCustomer#1](../data-tools/codesnippet/CSharp/SimpleDataApp/NewCustomer.cs#1)]
      [!code-vb[NewCustomer#1](../data-tools/codesnippet/VisualBasic/SimpleDataApp/NewCustomer.vb#1)]
@@ -198,17 +198,17 @@ Pour terminer la logique du formulaire NewCustomer, procédez comme suit.
 
 ### <a name="fillorcancel-form"></a>Formulaire FillOrCancel
 
-Le formulaire FillOrCancel exécute une requête pour retourner une commande lorsque vous entrez un numéro de commande, puis sur le **Find Order** bouton. La ligne retournée apparaît dans une grille de données en lecture seule. Vous pouvez marquer la commande comme annulée (X) si vous sélectionnez le **annuler une commande** bouton, ou vous pouvez marquer la commande comme remplie (F) si vous sélectionnez le **Fill Order** bouton. Si vous sélectionnez le **Find Order** bouton là encore, la ligne mise à jour s’affiche.
+Le formulaire FillOrCancel exécute une requête pour retourner une commande lorsque vous entrez un ID de commande puis cliquez sur le **Find Order** bouton. La ligne retournée apparaît dans une grille de données en lecture seule. Vous pouvez marquer la commande comme annulée (X) si vous sélectionnez le **annuler une commande** bouton, ou vous pouvez marquer la commande comme remplie (F) si vous sélectionnez le **Fill Order** bouton. Si vous sélectionnez le **Find Order** bouton là encore, la ligne mise à jour s’affiche.
 
-#### <a name="create-auto-generated-event-handlers"></a>Créer des gestionnaires d’événements de généré automatiquement
+#### <a name="create-auto-generated-event-handlers"></a>Créer des gestionnaires d’événements générés automatiquement
 
-Créer vide cliquez sur les gestionnaires d’événements pour les quatre boutons sur le formulaire FillOrCancel en double-cliquant sur les boutons. Double-clic sur les boutons ajoute également le code généré automatiquement dans le fichier de code du concepteur qui permet à un clic de bouton déclencher un événement.
+Créer vide cliquez sur les gestionnaires d’événements pour les quatre boutons sur le formulaire FillOrCancel en double-cliquant sur les boutons. Double-cliquez sur les boutons ajoute également le code généré automatiquement dans le fichier de code du concepteur qui permet à un clic de bouton déclencher un événement.
 
-#### <a name="add-code-for-the-fillorcancel-form-logic"></a>Ajouter du code pour la logique du formulaire FillOrCancel
+#### <a name="add-code-for-the-fillorcancel-form-logic"></a>Ajoutez du code pour la logique du formulaire FillOrCancel
 
 Pour terminer la logique du formulaire FillOrCancel, procédez comme suit.
 
-1. Placer deux espaces de noms dans la portée pour que vous n’êtes pas obligé de qualifier entièrement les noms de leurs membres.
+1. Amener les deux espaces de noms dans la portée afin que vous n’êtes pas obligé de qualifier entièrement les noms de leurs membres.
 
      ```csharp
      using System.Data.SqlClient;
@@ -219,7 +219,7 @@ Pour terminer la logique du formulaire FillOrCancel, procédez comme suit.
      Imports System.Text.RegularExpressions
      ```
 
-2. Ajoutez une méthode de variable et d’assistance à la classe, comme indiqué dans le code suivant.
+2. Ajoutez une méthode d’assistance et de la variable à la classe, comme indiqué dans le code suivant.
 
      [!code-csharp[FillOrCancel#1](../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs#1)]
      [!code-vb[FillOrCancel#1](../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb#1)]

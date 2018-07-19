@@ -10,15 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03809ffdf421e97b993b840fe4a352b344554e47
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 97279d92b9853f183778d069aa81182fa6cf8b56
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36755225"
 ---
 # <a name="messaging-activity-designers"></a>Concepteurs d'activités de messagerie
 
-Concepteurs d’activités de messagerie sont utilisées pour créer et configurer des activités de messagerie qui envoient et reçoivent des messages de Windows Communication Foundation (WCF) à partir d’une application Windows Workflow Foundation (WF). Le .NET Framework 4 présente cinq activités de messagerie et le Concepteur de flux de travail Windows fournit deux nouveaux concepteurs de modèles qui vous permettent de gérer la messagerie dans un flux de travail. Les rubriques contenues dans cette section et répertoriées dans le tableau suivant fournissent des conseils sur l’utilisation de l’activité de Workflow Designer et les concepteurs de modèles.
+Concepteurs d’activités de messagerie sont utilisés pour créer et configurer des activités de messagerie qui envoient et reçoivent des messages de Windows Communication Foundation (WCF) à partir d’une application Windows Workflow Foundation (WF). Le .NET Framework 4 introduit cinq activités de messagerie et le Concepteur de Workflow fournit deux nouveaux concepteurs de modèles qui vous permettent de gérer la messagerie dans un flux de travail. Les rubriques contenues dans cette section et répertoriées dans le tableau suivant fournissent des conseils sur l’utilisation de l’activité du Concepteur de Workflow et les concepteurs de modèles.
 
 ## <a name="reference"></a>Référence
  <xref:System.Activities.Activity>

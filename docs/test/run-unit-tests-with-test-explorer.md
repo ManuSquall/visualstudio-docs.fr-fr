@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1c3cf206b952ebf8879045bcdc2881c2d2f4cc0c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f18086a33c150670466101485770b3541e2afa52
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752064"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Exécuter des tests unitaires avec l'Explorateur de tests
 
@@ -29,13 +30,13 @@ Visual Studio inclut les infrastructures de tests unitaires Microsoft pour le co
 
 Quand vous générez le projet de test, les tests s’affichent dans l’explorateur de tests. Si l’explorateur de tests n’est pas visible, sélectionnez **Test** dans le menu Visual Studio et choisissez **Fenêtres**, puis **Explorateur de tests**.
 
-![Explorateur de tests unitaires](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+![Explorateur de tests unitaires](../test/media/ute_failedpassednotrunsummary.png)
 
 Tandis que vous exécutez, écrivez et réexécutez vos tests, l'Explorateur de tests affiche les résultats dans les groupes par défaut **Échecs de tests**, **Tests réussis**, **Tests ignorés** et **Tests non exécutés**. Vous pouvez modifier la façon dont l'Explorateur de tests regroupe vos tests.
 
 Vous pouvez effectuer la majeure partie du travail de recherche, d'organisation et d'exécution des tests à partir de la barre d'outils de l'Explorateur de tests.
 
-![Exécuter des tests à partir de la barre d’outils de l’explorateur de tests](../test/media/ute_toolbar.png "UTE_ToolBar")
+![Exécuter des tests à partir de la barre d'outils de l'explorateur de tests](../test/media/ute_toolbar.png)
 
 ### <a name="run-tests"></a>Exécuter les tests
 
@@ -47,7 +48,7 @@ Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un gr
 
 - Sélectionnez les différents tests à exécuter, ouvrez le menu contextuel pour un test sélectionné, puis choisissez **Exécuter les tests sélectionnés**.
 
-- Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
+- Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
 
 La barre Réussite/Échec en haut de la fenêtre Explorateur de tests est animée pendant l'exécution des tests. À la fin de la série de tests, la barre Réussite/Échec devient verte si tous les tests ont réussi ou rouge si un test a échoué.
 
@@ -65,7 +66,7 @@ Tandis que vous exécutez, écrivez et réexécutez vos tests, l'Explorateur de 
 
 Pour afficher les détails d'un test individuel, sélectionnez le test.
 
-![Détails de l’exécution de tests](../test/media/ute_testdetails.png "UTE_TestDetails")
+![Détails de l'exécution de tests](../test/media/ute_testdetails.png)
 
 Le volet d'informations de test affiche les informations suivantes :
 
@@ -91,9 +92,9 @@ L'Explorateur de tests vous permet de regrouper vos tests en catégories prédé
 
 ### <a name="group-tests-in-the-test-list"></a>Regrouper des tests dans la liste de tests
 
- Pour modifier le mode d’organisation des tests, cliquez sur la flèche vers le bas à côté du bouton **Grouper par** ![Bouton Grouper de l’Explorateur de tests](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn") et sélectionnez un nouveau critère de regroupement.
+ Pour modifier le mode d’organisation des tests, cliquez sur la flèche vers le bas à côté du bouton **Grouper par** ![Bouton Grouper de l’Explorateur de tests](../test/media/ute_groupby_btn.png) et sélectionnez un nouveau critère de regroupement.
 
- ![Grouper les tests par catégorie dans l’Explorateur de tests](../test/media/ute_groupbycategory.png "UTE_GroupByCategory")
+ ![Grouper les tests par catégorie dans l’Explorateur de tests](../test/media/ute_groupbycategory.png)
 
 ### <a name="test-explorer-groups"></a>Groupes de l'explorateur de tests
 
@@ -135,7 +136,7 @@ Pour filtrer selon un autre critère :
 
 3. Entrez la valeur de filtre entre guillemets.
 
-![Filtrer les tests dans l’Explorateur de tests](../test/media/ute_filtertestlist.png "UTE_FilterTestList")
+![Filtrer les tests dans l’Explorateur de tests](../test/media/ute_filtertestlist.png)
 
 > [!NOTE]
 > Les recherches ne respectent pas la casse et associent la chaîne spécifiée à une partie de la valeur de critère.
@@ -162,7 +163,7 @@ Par exemple, `FullName:"MyClass" - FullName:"PerfTest"` retourne tous les tests 
 
  Vous pouvez créer et enregistrer une liste de tests que vous souhaitez exécuter ou visualiser en tant que groupe. Quand vous sélectionnez une sélection, les tests de la liste sont affichés dans l'Explorateur de tests. Vous pouvez ajouter un test à plusieurs sélections, et tous les tests de votre projet sont disponibles quand vous choisissez la sélection par défaut **Tous les tests** .
 
- ![Choisissez une sélection](../test/media/ute_playlist.png "UTE_Playlist")
+ ![Choisir une sélection](../test/media/ute_playlist.png)
 
  **Pour créer une sélection**, sélectionnez un ou plusieurs tests dans l'Explorateur de tests. Dans le menu contextuel, sélectionnez **Ajouter à la sélection**, **NewPlaylist**. Enregistrez le fichier sous le nom et à l'emplacement que vous spécifiez dans la boîte de dialogue **Créer une sélection** .
 
@@ -170,7 +171,7 @@ Par exemple, `FullName:"MyClass" - FullName:"PerfTest"` retourne tous les tests 
 
  **Pour ouvrir une sélection**, choisissez Test, Sélection dans le menu Visual Studio, puis choisissez une sélection dans la liste de sélections récemment utilisées ou choisissez Ouvrir la sélection pour spécifier le nom et l'emplacement de la sélection.
 
- Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
+ Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
 
 ## <a name="debug-and-analyze-unit-tests"></a>Déboguer et analyser des tests unitaires
 

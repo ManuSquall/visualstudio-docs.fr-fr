@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133784"
 ---
 # <a name="image-library-viewer"></a>Visionneuse de bibliothèque d’images
 L’outil Visionneuse bibliothèque d’images Visual Studio peut charger et rechercher des manifestes d’images, permettant à l’utilisateur pour les manipuler dans la même façon Visual Studio. L’utilisateur peut modifier en arrière-plan, tailles, PPP, contraste élevé et autres paramètres. Également, l’outil affiche des informations de chargement pour chaque manifeste de l’image et affiche des informations de source pour chaque image dans le manifeste de l’image. Cet outil est utile pour :  

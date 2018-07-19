@@ -10,12 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59c8a8328fda71be7124b0ebd7fcd389d2b4f6dc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e0d1d520f54a2b9da958342a34019aef7998727a
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758509"
 ---
 # <a name="error-handling-activity-designers"></a>Concepteurs d'activités de gestion des erreurs
 
-Les concepteurs d’activités de gestion des erreurs sont utilisés pour gérer la gestion des erreurs dans le Concepteur de flux de travail Windows. Les rubriques contenues dans cette section fournissent des conseils sur l’utilisation de l’activité de Workflow Designer et les concepteurs de modèles.
+Les concepteurs d’activités de gestion des erreurs sont utilisés pour gérer la gestion des erreurs dans le Concepteur de Workflow. Les rubriques contenues dans cette section fournissent des conseils sur l’utilisation de l’activité du Concepteur de Workflow et les concepteurs de modèles.

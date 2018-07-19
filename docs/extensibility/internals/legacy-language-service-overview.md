@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131735"
 ---
 # <a name="legacy-language-service-overview"></a>Vue d’ensemble du Service de langage hérité
 Un service de langage fournit la prise en charge de l’éditeur qui vous permet d’implémenter certaines [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fonctionnalités. Les classes de service de langage Managed Package Framework (MPF) fournissent la prise en charge complète pour les fonctionnalités les plus courantes et la prise en charge partielle pour d’autres fonctionnalités.  

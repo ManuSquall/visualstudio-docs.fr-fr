@@ -1,5 +1,5 @@
 ---
-title: 'Comment : écrire une erreur d’exécution Reporting fonction | Documents Microsoft'
+title: 'Comment : écrire une fonction de rapport d’erreurs exécution | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -19,11 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 331a29b8ec34a33ea43ede68ea477138cca58e16
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 381ba20b233f143cb63128368a710debb25a0abb
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057871"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function"></a>Comment : écrire une fonction de création de rapports d'erreurs d'exécution
 Si vous créez une fonction personnalisée destinée à rapporter les erreurs d'exécution, elle doit avoir la même déclaration que `_CrtDbgReportW`. Elle doit retourner au débogueur une valeur égale à 1.  
@@ -32,7 +33,7 @@ Si vous créez une fonction personnalisée destinée à rapporter les erreurs d'
   
 ## <a name="example"></a>Exemple  
   
-```  
+```cpp
 #include <stdio.h>  
 int errorhandler = 0;  
 void configureMyErrorFunc(int i)  
@@ -64,7 +65,7 @@ int MyErrorFunc(int errorType, const wchar_t *filename,
 ## <a name="example"></a>Exemple  
  La fonction personnalisée de l'exemple suivant est un peu plus complexe. Dans cet exemple, l'instruction switch gère divers types d'erreurs, tels qu'ils sont définis dans le paramètre `reportType` de `_CrtDbgReportW`. Étant donné que vous remplacez `_CrtDbgReportW`, vous ne pouvez pas utiliser `_CrtSetReportMode`. Votre fonction doit gérer la sortie. Le premier argument variable de cette fonction prend un numéro d’erreur d’exécution. Pour plus d’informations, consultez [_RTC_SetErrorType](/cpp/c-runtime-library/reference/rtc-seterrortype).  
   
-```  
+```cpp
 #include <windows.h>  
 #include <stdarg.h>  
 #include <rtcapi.h>  
@@ -109,7 +110,7 @@ int Catch_RTC_Failure(int errType, const wchar_t *file, int line,
 ## <a name="example"></a>Exemple  
  Utilisez `_RTC_SetErrorFuncW` pour installer votre fonction personnalisée à la place de `_CrtDbgReportW`. Pour plus d’informations, consultez [_RTC_SetErrorFuncW](/cpp/c-runtime-library/reference/rtc-seterrorfuncw). La valeur de retour de `_RTC_SetErrorFuncW` est la fonction de rapport précédente, que vous pouvez enregistrer et restaurer si nécessaire.  
   
-```  
+```cpp
 #include <rtcapi.h>  
 int main()  
 {  

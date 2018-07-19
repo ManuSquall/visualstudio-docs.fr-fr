@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 387077f8845d4e070d4ad0a07f6549a97552a233
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: b03cfca6a575cf9c91b1e60b0e44212388cc7611
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750361"
 ---
 # <a name="tutorial-step-4-use-the-full-django-web-project-template"></a>Tutoriel étape 4 : utiliser le modèle de projet Web Django complet
 
 **Étape précédente : [servir les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
-Maintenant que vous avez exploré les principes de base de Django par la génération d’une application sur le modèle « Projet de l’application Django vide » dans Visual Studio, vous pouvez facilement comprendre l’application complète qui est générée par le modèle « Projet Web Django ».
+Maintenant que vous avez exploré les principes de base de Django en créant une application sur le modèle « Projet web Django vide » dans Visual Studio, vous pouvez facilement comprendre l’application complète qui est produite par le modèle « Projet web Django ».
 
 Dans cette étape vous pouvez désormais :
 
@@ -40,7 +41,7 @@ Le modèle fournit également l’authentification de base, abordée dans l’é
 
 1. Étant donné que le modèle inclut à nouveau un fichier `requirements.txt`, Visual Studio vous invite à installer ces dépendances. Choisissez l’option, **Installer dans un environnement virtuel** et dans la boîte de dialogue **Ajouter un environnement virtuel**, sélectionnez **Créer** pour accepter les valeurs par défaut.
 
-1. Une fois la configuration de l’environnement virtuel terminée par Python, suivez les instructions dans la liste affichée `readme.html` pour créer un superutilisateur Django (autrement dit, un administrateur). Cliquez simplement avec le bouton de droite sur le projet Visual Studio et sélectionnez la commande **Python** > **Django - Créer un superutilisateur**, puis suivez les invites. Veillez à enregistrer votre nom d’utilisateur et mot de passe lorsque vous l’utilisez en exerçant les fonctionnalités d’authentification de l’application.
+1. Une fois que Visual Studio a terminé la configuration de l’environnement virtuel, suivez les instructions du fichier `readme.html` qui s’affiche pour créer un superutilisateur Django (c’est-à-dire un administrateur). Cliquez simplement avec le bouton de droite sur le projet Visual Studio et sélectionnez la commande **Python** > **Django - Créer un superutilisateur**, puis suivez les invites. Veillez à enregistrer votre nom d’utilisateur et mot de passe lorsque vous l’utilisez en exerçant les fonctionnalités d’authentification de l’application.
 
 1. Définissez le projet « DjangoWeb » selon la valeur par défaut pour la solution Visual Studio en cliquant avec le bouton de droite sur ce projet dans **Explorateur de solutions** et en sélectionnant **Définir en tant que projet de start-up**. Le projet de start-up, affiché en gras est ce qui est exécuté lorsque vous démarrez le débogueur.
 

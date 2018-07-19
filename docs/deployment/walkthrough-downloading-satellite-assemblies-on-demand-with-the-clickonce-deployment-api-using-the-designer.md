@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Téléchargement d’assemblys satellites à la demande avec l’API en utilisant le concepteur du déploiement ClickOnce | Documents Microsoft'
+title: 'Procédure pas à pas : Téléchargement d’assemblys satellites à la demande avec l’API à l’aide du Concepteur de déploiement ClickOnce | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -22,11 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8a56cc87978ebc5b8c64c0a2a6774186048efa7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6438bbb905244902a8f5407a2ad8dea74430c430
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233462"
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Procédure pas à pas : téléchargement d'assemblys satellites à la demande avec l'API du déploiement ClickOnce à l'aide du concepteur
 Les applications Windows Forms peuvent être configurées pour plusieurs cultures à l’aide d’assemblys satellites. Un *assembly satellite* contient des ressources d’application pour une culture autre que la culture par défaut de l’application.  
@@ -50,7 +51,7 @@ Les applications Windows Forms peuvent être configurées pour plusieurs culture
   
      Un assembly satellite aura un nom sous la forme *isoCode*\ApplicationName.resources.dll, où *isoCode* est un identificateur de langue au format RFC 1766.  
   
-5.  Cliquez sur **nouveau...**  dans les **groupe de téléchargement** liste pour chaque identificateur de langue. Quand vous êtes invité à entrer un nom de groupe de téléchargement, indiquez l'identificateur de langue. Par exemple, pour un assembly satellite japonais, spécifiez le nom de groupe de téléchargement `ja-JP`.  
+5.  Cliquez sur **New** dans le **groupe de téléchargement** liste pour chaque identificateur de langue. Quand vous êtes invité à entrer un nom de groupe de téléchargement, indiquez l'identificateur de langue. Par exemple, pour un assembly satellite japonais, spécifiez le nom de groupe de téléchargement `ja-JP`.  
   
 6.  Fermer le **fichiers d’Application** boîte de dialogue.  
   
@@ -66,7 +67,7 @@ Les applications Windows Forms peuvent être configurées pour plusieurs culture
   
 1.  Dans le **propriétés** fenêtre de l’application, cliquez sur le **Application** onglet.  
   
-2.  Au bas de la page d’onglets, cliquez sur **afficher les événements Application**.  
+2.  En bas de la page d’onglets, cliquez sur **afficher les événements Application**.  
   
 3.  Ajoutez les importations suivantes au début du fichier ApplicationEvents.VB.  
   

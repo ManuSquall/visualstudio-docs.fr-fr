@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127031"
 ---
 # <a name="taskstatecanceled-field"></a>Champ TASK_STATE_CANCELED
 La tâche a été annulée avant qu’il atteint l’état en cours d’exécution, ou son annulation d’accusé de réception et s’est terminée sans exception.  

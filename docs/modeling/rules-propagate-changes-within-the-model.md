@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952757"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Propagation de modifications dans le modèle par des règles
 Vous pouvez créer une règle de magasin pour propager une modification d’un élément à un autre dans Visualization and Modeling SDK (VMSDK). En cas de modification à un élément dans le magasin, les règles sont planifiées pour être exécutée, généralement lorsque la transaction externe est validée. Il existe différents types de règles pour différents types d’événements, tels que l’ajout d’un élément, ou de le supprimer. Vous pouvez attacher des règles à des types spécifiques d’éléments, des formes ou des diagrammes. De nombreuses fonctionnalités intégrées sont définies par des règles : par exemple, règles de vous assurer qu’un diagramme est mis à jour lorsque le modèle change. Vous pouvez personnaliser votre langage spécifique à un domaine en ajoutant vos propres règles.

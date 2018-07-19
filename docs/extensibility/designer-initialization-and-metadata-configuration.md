@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132745"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>L’initialisation du concepteur et la Configuration des métadonnées
 Manipulation des attributs de métadonnées et le filtre associé à un concepteur ou un composant de concepteur fournit un mécanisme permettant aux applications de définir quels outils sont utilisés par un concepteur particulier pour gérer différents <xref:System.Type> objets (tels que les structures de données, classes, ou les entités graphiques), lorsque le concepteur est disponible, et comment l’IDE de Visual Studio est configuré pour prendre en charge le concepteur (pour une instance qui **boîte à outils** catégorie ou l’onglet est disponible).  

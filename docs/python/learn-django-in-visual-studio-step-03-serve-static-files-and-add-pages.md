@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b267c4963eede53f433bd929eb7944ad53e9a8ba
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: d94ef95b8ba50f4cf9359bb925d41243ea58df7d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750332"
 ---
 # <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Étape 3 du tutoriel : prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle
 
 **Étape précédente : [créer une application Django avec des affichages et modèles de page](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
-Dans les étapes précédentes de ce tutoriel, vous avez appris comment créer une application Django minimale avec une seule page HTML autonome. Toutefois, les applications Web modernes sont généralement composées de plusieurs pages et utilisent des ressources partagées, tels que CSS et JavaScript et un fichier pour fournir un comportement et un style cohérents.
+Dans les étapes précédentes de ce tutoriel, vous avez appris comment créer une application Django minimale avec une seule page HTML autonome. Les applications web modernes sont cependant composées en général de nombreuses pages et utilisent des ressources partagées, comme des fichiers CSS et JavaScript, pour offrir un comportement et un style cohérents.
 
 Dans cette étape, vous apprenez comment :
 
@@ -40,8 +41,6 @@ Pour afficher les modèles disponibles, accédez à **Explorateur de solutions**
 ![Boîte de dialogue Ajouter nouvel élément dans Visual Studio](media/django/step03-add-new-item-dialog.png)
 
 Pour utiliser un modèle, sélectionnez le modèle souhaité, spécifiez un nom pour le fichier et sélectionnez **OK**. L’ajout d’un élément de cette manière permet d’ajouter automatiquement le fichier à votre projet Visual Studio et marque les modifications du contrôle de code source.
-
-Visual Studio ajoute également des options fréquemment utilisées directement au menu **Ajouter**. Par exemple, dans un projet Python, vous pouvez voir les commandes **Page HTML** ou **Feuille de style** en bas du menu **Ajouter**, qui vous invitent à entrer un nom et créent le fichier.
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Question : comment Visual Studio sait quel modèle d'élément proposer ?
 
@@ -187,7 +186,7 @@ Un modèle de base délimite les blocs à l’aide des balises `{% block <block_
 
 Les étapes suivantes démontrent l’héritage :
 
-1. Dans le dossier `templates/HelloDjangoApp` de l’application, créez un nouveau fichier HTML (à l’aide du menu de contexte **Ajouter** > **Nouvel élément** ou **Ajouter** > **Page HTML**) appelé `layout.html` et collez le contenu ci-dessous. Vous pouvez voir que ce modèle contient un bloc nommé « contenu » qui représente tout ce que les pages de référence doivent remplacer :
+1. Dans le dossier `templates/HelloDjangoApp` de l’application, créez un fichier HTML (en utilisant le menu contextuel **Ajouter** > **Nouvel élément** ou **Ajouter** > **Page HTML**) nommé `layout.html` et remplacez son contenu par le balisage ci-dessous. Vous pouvez voir que ce modèle contient un bloc nommé « contenu » qui représente tout ce que les pages de référence doivent remplacer :
 
     ```html
     <!DOCTYPE html>

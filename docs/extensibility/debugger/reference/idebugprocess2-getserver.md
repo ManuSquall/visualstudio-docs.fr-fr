@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31118344"
 ---
 # <a name="idebugprocess2getserver"></a>IDebugProcess2::GetServer
 Obtient le serveur de ce processus est en cours d’exécution.  

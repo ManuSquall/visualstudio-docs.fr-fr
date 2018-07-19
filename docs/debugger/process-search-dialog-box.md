@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475507"
 ---
 # <a name="process-search-dialog-box"></a>Boîte de dialogue Recherche d'un processus
 Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud d’un processus spécifique dans [vue processus](../debugger/processes-view.md). Pour afficher cette boîte de dialogue, déplacez le focus vers un **processus** fenêtre d’affichage. Puis choisissez **rechercher le processus** à partir de la **recherche** menu.  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927098"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Ensemble de règles de règles de conception étendue pour le code managé
 L’ensemble de règles intitulé règles de conception étendue Microsoft s’appuie sur les règles de conception de base pour optimiser les facilité d’utilisation et de facilité de maintenance les problèmes signalés. L’accent sur l’affectation de noms. Pensez à inclure cet ensemble de règles si votre projet contient du code de bibliothèque ou si vous souhaitez appliquer les normes optimales pour écrire du code facile à maintenir.

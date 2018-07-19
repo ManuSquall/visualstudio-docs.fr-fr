@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133207"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>Liste de vérification : Création d’un Service de langage hérité
 La liste suivante résume les étapes de base que vous devez prendre afin de créer un service de langage pour la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] éditeur principal. Pour intégrer votre service de langage dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], vous devez créer un évaluateur d’expression de débogage. Pour plus d’informations, consultez [l’écriture d’un évaluateur d’Expression CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) dans les [d’extensibilité du débogueur Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  

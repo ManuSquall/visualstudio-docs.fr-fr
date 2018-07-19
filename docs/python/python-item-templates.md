@@ -16,6 +16,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32032675"
 ---
 # <a name="python-item-templates"></a>Modèles d’éléments Python
 

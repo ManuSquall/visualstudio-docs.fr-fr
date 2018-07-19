@@ -118,6 +118,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479243"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Paramètres de projet pour une configuration de débogage C++
 Vous pouvez modifier les paramètres de projet pour une configuration debug C ou Visual C++ dans les **Pages de propriétés** boîte de dialogue, comme indiqué dans [Comment : définir Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Les tableaux suivants indiquent où se trouvent les paramètres du débogueur dans le **Pages de propriétés** boîte de dialogue.  
