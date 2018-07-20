@@ -1,5 +1,5 @@
 ---
-title: 'Comment : activer les paramètres de sécurité ClickOnce | Documents Microsoft'
+title: 'Comment : activer les paramètres de sécurité ClickOnce | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc3f87e590c6b915d5b3d9db5d2517d80965dd6c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f21b58a0ec9e8fe26cb02f72912fd23424cdfc7a
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31558618"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39150935"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>Comment : activer les paramètres de sécurité ClickOnce
-Sécurité d’accès du code pour les applications ClickOnce doit être activée afin de publier l’application. Cette opération est effectuée automatiquement lorsque vous publiez une application à l’aide de l’Assistant de publication.  
+Sécurité d’accès du code pour les applications ClickOnce doit être activée pour publier l’application. Cela se fait automatiquement lorsque vous publiez une application à l’aide de l’Assistant Publication.  
   
- Dans certains cas, l’activation de la sécurité d’accès peut affecter les performances lors de la génération ou du débogage de votre application ; Dans ce cas, vous pouvez souhaiter désactiver temporairement les paramètres de sécurité.  
+ Dans certains cas, l’activation de sécurité d’accès du code peut affecter les performances durant la génération ou de débogage de votre application ; Dans ce cas, vous pouvez désactiver temporairement les paramètres de sécurité.  
   
  Paramètres de sécurité ClickOnce peuvent être activés ou désactivés sur le **sécurité** page de la **Concepteur de projet**.  
   
@@ -51,14 +51,14 @@ Sécurité d’accès du code pour les applications ClickOnce doit être activé
   
 2.  Cliquez sur l'onglet **Sécurité** .  
   
-3.  Désactivez le **activer les paramètres de sécurité ClickOnce** case à cocher.  
+3.  Effacer la **activer les paramètres de sécurité ClickOnce** case à cocher.  
   
-     Votre application s’exécute avec les paramètres de sécurité de confiance totale ; tous les paramètres de la **sécurité** page sera ignorée.  
+     Votre application sera exécutée avec les paramètres de sécurité de confiance totale ; tous les paramètres de la **sécurité** page va être ignorée.  
   
     > [!NOTE]
     >  Chaque fois que l’application est publiée avec l’Assistant Publication, cette case à cocher sera sélectionnée ; Vous devez le désactiver à nouveau à chaque publication réussie.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md)   
+ [Sécuriser les applications ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Sécurité d’accès du code pour les applications ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
  

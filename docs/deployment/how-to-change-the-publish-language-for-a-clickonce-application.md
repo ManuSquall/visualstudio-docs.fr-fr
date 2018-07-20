@@ -1,5 +1,5 @@
 ---
-title: 'Comment : modifier la langue de publication pour une Application ClickOnce | Documents Microsoft'
+title: 'Comment : modifier la langue de publication pour une Application ClickOnce | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d39535138b8b6e6be0c3384c73ab660d368c9b0c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3395d0b7bbed5ec1d20e0d04894e439a9a27a15d
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31557484"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154659"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Comment : modifier la langue de publication pour une application ClickOnce
 Lorsque vous publiez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application, l’interface utilisateur affichée pendant l’installation par défaut de la langue et la culture de votre ordinateur de développement. Si vous publiez une application localisée, vous devez spécifier une langue et une culture correspondant à la version localisée. Cela est déterminé par le `Publish language` propriété pour votre projet.  
@@ -43,8 +43,8 @@ Lorsque vous publiez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclic
   
 4.  Cliquez sur **Description**.  
   
-5.  Dans le **Options de publication** boîte de dialogue zone, sélectionnez une langue et de culture à partir de la **langue de publication** liste déroulante, puis cliquez sur **OK**.  
+5.  Dans le **Options de publication** boîte de dialogue zone, sélectionnez une langue et culture à partir de la **langue de publication** liste déroulante, puis cliquez sur **OK**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Guide pratique pour publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Publier des applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
+ [Comment : publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

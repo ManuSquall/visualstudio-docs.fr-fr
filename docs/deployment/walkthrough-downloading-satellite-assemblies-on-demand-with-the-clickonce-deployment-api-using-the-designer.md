@@ -22,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6438bbb905244902a8f5407a2ad8dea74430c430
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 79c5616a9233466c71ca036c4c0cb70d43649979
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233462"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154857"
 ---
-# <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Procédure pas à pas : téléchargement d'assemblys satellites à la demande avec l'API du déploiement ClickOnce à l'aide du concepteur
+# <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Procédure pas à pas : Téléchargement d’assemblys satellites à la demande avec l’API à l’aide du Concepteur de déploiement ClickOnce
 Les applications Windows Forms peuvent être configurées pour plusieurs cultures à l’aide d’assemblys satellites. Un *assembly satellite* contient des ressources d’application pour une culture autre que la culture par défaut de l’application.  
   
  Comme indiqué dans [localisation d’Applications ClickOnce](../deployment/localizing-clickonce-applications.md), vous pouvez inclure plusieurs assemblys satellites pour plusieurs cultures au sein du même [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement. Par défaut, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] télécharge tous les assemblys satellites de votre déploiement sur l’ordinateur client, même si un seul client n’a probablement besoin que d’un assembly satellite.  
@@ -49,15 +49,15 @@ Les applications Windows Forms peuvent être configurées pour plusieurs culture
   
 4.  Sélectionnez le **afficher tous les fichiers** case à cocher pour afficher les assemblys satellites. Par défaut, tous les assemblys satellites sont inclus dans votre déploiement et sont visibles dans cette boîte de dialogue.  
   
-     Un assembly satellite aura un nom sous la forme *isoCode*\ApplicationName.resources.dll, où *isoCode* est un identificateur de langue au format RFC 1766.  
+     Un assembly satellite aura un nom sous la forme  *\<isoCode > \ApplicationName.resources.dll*, où \<isoCode > est un identificateur de langue au format RFC 1766.  
   
 5.  Cliquez sur **New** dans le **groupe de téléchargement** liste pour chaque identificateur de langue. Quand vous êtes invité à entrer un nom de groupe de téléchargement, indiquez l'identificateur de langue. Par exemple, pour un assembly satellite japonais, spécifiez le nom de groupe de téléchargement `ja-JP`.  
   
 6.  Fermer le **fichiers d’Application** boîte de dialogue.  
   
-### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>Pour télécharger des assemblys satellites à la demande en C# #
+### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>Pour télécharger des assemblys satellites à la demande en C# 
   
-1.  Ouvrez le fichier Program.cs. Si vous ne voyez pas ce fichier dans l’Explorateur de solutions, sélectionnez votre projet et sur le **projet** menu, cliquez sur **afficher tous les fichiers**.  
+1.  Ouvrez le fichier *Program.cs*. Si vous ne voyez pas ce fichier dans l’Explorateur de solutions, sélectionnez votre projet et sur le **projet** menu, cliquez sur **afficher tous les fichiers**.  
   
 2.  Utilisez le code suivant pour télécharger l'assembly satellite approprié et démarrer votre application.  
   
@@ -69,7 +69,7 @@ Les applications Windows Forms peuvent être configurées pour plusieurs culture
   
 2.  En bas de la page d’onglets, cliquez sur **afficher les événements Application**.  
   
-3.  Ajoutez les importations suivantes au début du fichier ApplicationEvents.VB.  
+3.  Ajoutez les importations suivantes au début de la *ApplicationEvents.VB* fichier.  
   
      [!code-vb[ClickOnce.SatelliteAssembliesVB#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.vb)]  
   
@@ -82,4 +82,4 @@ Les applications Windows Forms peuvent être configurées pour plusieurs culture
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédure pas à pas : Téléchargement d’assemblys satellites à la demande avec l’API du déploiement ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)   
- [Localisation des applications ClickOnce](../deployment/localizing-clickonce-applications.md)
+ [Localiser des applications ClickOnce](../deployment/localizing-clickonce-applications.md)
