@@ -1,5 +1,5 @@
 ---
-title: 'Comment : inclure un fichier de données dans une Application ClickOnce | Documents Microsoft'
+title: 'Comment : inclure un fichier de données dans une Application ClickOnce | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,29 +18,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ced10a16bae0e5892fddec1a79b9f7793b4dac43
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: a3b6b92dda0936c61d4eb69ff29021c58da30c99
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815543"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151698"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Comment : inclure un fichier de données dans une application ClickOnce
-Chaque [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application que vous installez est attribuée à un répertoire de données sur le disque local de l’ordinateur de destination dans lequel l’application peut gérer ses propres données. Fichiers de données peuvent inclure n’importe quel type de fichiers : fichiers texte, des fichiers XML ou même les fichiers Microsoft Access (.mdb) de la base de données. Les procédures suivantes vous montrent comment ajouter un fichier de données de n’importe quel type dans votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.  
+Chaque [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application que vous installez est affectée à un répertoire de données sur le disque local de l’ordinateur de destination dans lequel l’application peut gérer ses propres données. Fichiers de données peuvent inclure n’importe quel type de fichiers : fichiers texte, fichiers XML ou même base de données Microsoft Access (*.mdb*) les fichiers. Les procédures suivantes vous montrent comment ajouter un fichier de données de n’importe quel type dans votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.  
   
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>Pour inclure un fichier de données à l’aide de Mage.exe  
   
 1.  Ajouter le fichier de données à votre répertoire de l’application avec le reste des fichiers de votre application.  
   
-     En général, le répertoire de votre application sera un répertoire étiqueté avec la version d’en cours de déploiement, par exemple, v1.0.0.0.  
+     En règle générale, le répertoire de votre application sera un répertoire étiqueté avec la version actuelle du déploiement, par exemple, v1.0.0.0.  
   
-2.  Mettre à jour votre manifeste d’application à la liste du fichier de données.  
+2.  Mettre à jour votre manifeste d’application vers le fichier de données de liste.  
   
      `mage -u v1.0.0.0\Application.manifest -FromDirectory v1.0.0.0`  
   
-     Pour exécuter cette tâche recrée la liste des fichiers dans votre manifeste d’application et génère aussi automatiquement les signatures de hachage.  
+     Pour effectuer cette tâche permet de recréer la liste des fichiers dans votre manifeste d’application et génère aussi automatiquement les signatures de hachage.  
   
-3.  Ouvrez le manifeste d’application dans votre texte par défaut ou un éditeur XML et recherchez le `file` , élément pour votre fichier récemment ajouté.  
+3.  Ouvrez le manifeste d’application dans votre texte favori ou votre éditeur XML et recherchez le `file` élément pour votre fichier récemment ajouté.  
   
      Si vous avez ajouté un fichier XML nommé `Data.xml`, le fichier doit ressembler à l’exemple de code suivant.  
   
@@ -64,7 +64,7 @@ Chaque [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applica
   
 1.  Ajouter le fichier de données à votre répertoire de l’application avec le reste des fichiers de votre application.  
   
-2.  En général, le répertoire de votre application sera un répertoire étiqueté avec la version d’en cours de déploiement, par exemple, v1.0.0.0.  
+2.  En règle générale, le répertoire de votre application sera un répertoire étiqueté avec la version actuelle du déploiement, par exemple, v1.0.0.0.  
   
 3.  Sur le **fichier** menu, cliquez sur **ouvrir** pour ouvrir votre manifeste d’application.  
   
@@ -76,13 +76,13 @@ Chaque [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applica
   
 6.  Définir le **Type de fichier** valeur du fichier de données à **données**.  
   
-7.  Enregistrer le manifeste d’application, puis signer à nouveau le fichier.  
+7.  Enregistrez le manifeste d’application et signer à nouveau le fichier.  
   
-     MageUI.exe vous invite à resigner le fichier.  
+     *MageUI.exe* vous invite à resigner le fichier.  
   
 8.  Signer à nouveau votre manifeste de déploiement  
   
      Vous devez resigner votre manifeste de déploiement, car son hachage du manifeste d’application a changé.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Accès aux données locales et distantes dans les applications ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
+ [Données locales et distantes d’accès dans les applications ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

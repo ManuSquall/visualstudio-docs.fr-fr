@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb3d1aa14e404cbc4e8efdc425a4c3099f7a42f5
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 65929ec5b58e0629b3f52e31299f670543b3cd08
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078850"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154383"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problèmes de configuration de serveur et client dans les déploiements ClickOnce
 Si vous utilisez Internet Information Services (IIS) sur Windows Server, et que votre déploiement contient un type de fichier Windows ne reconnaît pas, tel qu’un fichier Microsoft Word, IIS refusera de transmettre ce fichier, et votre déploiement ne réussira pas.  
@@ -93,7 +93,7 @@ Si vous utilisez Internet Information Services (IIS) sur Windows Server, et que 
 ## <a name="clickonce-and-mapped-drives"></a>ClickOnce et lecteurs mappés  
  Si vous utilisez Visual Studio pour publier une application ClickOnce, vous ne pouvez pas spécifier un lecteur mappé comme emplacement d’installation. Toutefois, vous pouvez modifier l’application ClickOnce pour installer à partir d’un lecteur mappé à l’aide de l’éditeur (Mage.exe et MageUI.exe) et le Générateur de manifeste. Pour plus d’informations, consultez [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool) et [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client).  
   
-## <a name="ftp-protocol-nt-supported-for-installing-applications"></a>FTP protocole que NT pris en charge pour l’installation d’applications  
+## <a name="ftp-protocol-not-supported-for-installing-applications"></a>Protocole FTP non pris en charge pour l’installation d’applications  
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] prend en charge l’installation d’applications à partir de n’importe quel serveur Web HTTP 1.1 ou le serveur de fichiers. FTP, File Transfer Protocol, n’est pas pris en charge pour l’installation d’applications. Vous pouvez utiliser FTP pour publier des applications uniquement. Le tableau suivant récapitule ces différences :  
   
 |Type d’URL|Description|  
