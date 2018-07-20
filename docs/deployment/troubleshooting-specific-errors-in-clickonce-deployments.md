@@ -21,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c37bcfb086acf265a719abe688c6738fbcbfc01
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 121171dc71746f2c9f91df32b103be8292cce3fa
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234008"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153597"
 ---
-# <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Dépannage d'erreurs spécifiques lors de déploiements de ClickOnce
+# <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Résoudre les erreurs spécifiques dans les déploiements ClickOnce
 Cet article répertorie les erreurs courantes qui peuvent se produire lorsque vous déployez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application et fournit les étapes pour résoudre chaque problème.  
   
 ## <a name="general-errors"></a>Erreurs générales  
@@ -36,7 +36,7 @@ Cet article répertorie les erreurs courantes qui peuvent se produire lorsque vo
 #### <a name="when-you-try-to-locate-an-application-file-nothing-occurs-or-xml-renders-in-internet-explorer-or-you-receive-a-run-or-save-as-dialog-box"></a>Lorsque vous tentez de rechercher un fichier d’application, rien ne se produit, XML est rendue dans Internet Explorer, ou vous recevez une boîte de dialogue Exécuter ou enregistrer sous  
  Cette erreur est probablement due par les types de contenu (également connu sous les types MIME) n’est pas inscrits correctement sur le serveur ou le client.  
   
- Tout d’abord, assurez-vous que le serveur est configuré pour associer le `.application` extension avec le contenu de type « application/x-ms-application. »  
+ Tout d’abord, assurez-vous que le serveur est configuré pour associer le *.application* extension avec le contenu de type « application/x-ms-application. »  
   
  Si le serveur est configuré correctement, vérifiez que le [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] est installé sur votre ordinateur. Si le [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] est installé, et vous voyez toujours ce problème, essayez de désinstaller et réinstaller le [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] pour réinscrire le type de contenu sur le client.  
   
@@ -45,20 +45,20 @@ Cet article répertorie les erreurs courantes qui peuvent se produire lorsque vo
   
 -   Si le fichier journal stipule « (403) interdit » ou « (404) introuvable », vérifiez que le serveur Web est configuré afin qu’il ne bloque pas le téléchargement de ce fichier. Pour plus d’informations, consultez [Problèmes de configuration de serveur et de client lors de déploiements ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
--   Si le fichier .config est bloqué par le serveur, consultez la section « erreur de téléchargement lorsque vous essayez d’installer un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application qui dispose d’un fichier .config » plus loin dans cet article.  
+-   Si le *.config* fichier est bloqué par le serveur, consultez la section « erreur de téléchargement lorsque vous essayez d’installer un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application qui dispose d’un fichier .config » plus loin dans cet article.  
   
--   Déterminer si cela s’est produite, car le `deploymentProvider` URL dans le manifeste de déploiement pointe vers un emplacement autre que l’URL utilisée pour l’activation.  
+-   Déterminer si cette erreur s’est produite, car le `deploymentProvider` URL dans le manifeste de déploiement pointe vers un emplacement autre que l’URL utilisée pour l’activation.  
   
 -   Assurez-vous que tous les fichiers sont présents sur le serveur ; le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] journal doit indiquer le fichier qui est introuvable.  
   
 -   S’il existe des problèmes de connectivité réseau ; Vous pouvez recevoir ce message si votre ordinateur client s’est déconnecté pendant le téléchargement.  
   
 #### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>Erreur de téléchargement lorsque vous essayez d’installer une application ClickOnce qui dispose d’un fichier .config  
- Par défaut, une application Windows de Visual Basic inclut un fichier App.config. Il y aura un problème lorsqu’un utilisateur tente d’installer à partir d’un serveur Web qui utilise Windows Server 2003, car ce système d’exploitation bloque l’installation des fichiers .config pour des raisons de sécurité. Pour activer l’installation du fichier .config, cliquez sur **utiliser l’extension de fichier « .deploy »** dans le **Options de publication** boîte de dialogue.  
+ Par défaut, une application Windows de Visual Basic inclut un fichier App.config. Il y aura un problème lorsqu’un utilisateur tente d’installer à partir d’un serveur Web qui utilise Windows Server 2003, car ce système d’exploitation bloque l’installation du *.config* fichiers pour des raisons de sécurité. Pour activer la *.config* fichier à installer, cliquez sur **utiliser l’extension de fichier « .deploy »** dans le **Options de publication** boîte de dialogue.  
   
  Vous devez également définir les types de contenu (également connu sous les types MIME) en conséquence pour .application, .manifest et .deploy fichiers. Pour plus d’informations, consultez la documentation de votre serveur Web.  
   
- Pour plus d’informations, consultez « Windows Server 2003 : Types de contenu verrouillés » dans [serveur et les problèmes de Configuration de Client dans les déploiements ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
+ Pour plus d’informations, consultez « Windows Server 2003 : Types de contenu verrouillés » dans [problèmes de configuration de serveur et client dans les déploiements ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
 #### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>Message d’erreur : « Application n’est pas formatée ; ». Fichier journal contient « signature XML non valide »  
  Vérifiez que le fichier manifest mis à jour et de nouveau signé. Republiez votre application à l’aide de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ou utilisez Mage pour signer à nouveau l’application.  
@@ -106,7 +106,7 @@ Cet article répertorie les erreurs courantes qui peuvent se produire lorsque vo
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Message d’erreur : Impossible de créer le site Web '\<site >'. Les composants permettant de communiquer avec les Extensions serveur FrontPage ne sont pas installés.  
  Assurez-vous d’avoir le Microsoft Visual Studio Web Authoring composant installé sur l’ordinateur que vous publiez à partir de. Pour les utilisateurs d’Express, ce composant n’est pas installé par défaut. Pour plus d’informations, consultez [http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310).  
   
-#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Message d’erreur : Fichier introuvable ' Microsoft.Windows.Common-contrôles, Version = 6.0.0.0, Culture = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, Type = win32'  
+#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Message d’erreur : fichier introuvable ' Microsoft.Windows.Common-contrôles, Version = 6.0.0.0, Culture = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, Type = win32'  
  Ce message d’erreur s’affiche lorsque vous tentez de publier une application WPF avec les styles visuels sont activés. Pour résoudre ce problème, consultez [Comment : publier une Application WPF avec activé des Styles Visual](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  
   
 ## <a name="using-mage"></a>À l’aide de Mage  
@@ -140,4 +140,4 @@ Cet article répertorie les erreurs courantes qui peuvent se produire lorsque vo
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)   
- [Dépannage des déploiements ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
+ [Résoudre les problèmes de déploiements ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)

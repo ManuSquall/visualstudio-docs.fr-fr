@@ -1,5 +1,5 @@
 ---
-title: Appel des événements de débogueur | Documents Microsoft
+title: Appel des événements de débogueur | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,18 +13,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3960d464b1a6d44fb77eba23cd518fea1f2e5a39
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3ae37a6f6ed180d13623a04afd357efcc109039f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100025"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153031"
 ---
-# <a name="calling-debugger-events"></a>Événements de débogueur d’appel
+# <a name="call-debugger-events"></a>Appeler des événements de débogueur
 Dans les sessions de débogage se produisent dans un ordre spécifique.  
   
 ## <a name="discussion"></a>Discussion  
- Pour comprendre le modèle des appels entre le moteur de débogage (DE) et le Gestionnaire de session de débogage (SDM), le texte suivant représente l’ordre d’appel des événements qui se produisent dans une session de débogage classique :  
+ Pour comprendre le modèle d’appels entre le moteur de débogage (dé) et le Gestionnaire de session de débogage (SDM), ce qui suit représente l’ordre d’appel des événements qui se produisent dans une session de débogage classique :  
   
 1.  [Attachement et détachement d’un programme](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)  
   
@@ -34,7 +34,7 @@ Dans les sessions de débogage se produisent dans un ordre spécifique.
   
 4.  [Création d’un point d’arrêt](../../extensibility/debugger/creating-a-breakpoint.md)  
   
-5.  [Lorsqu’un point d’arrêt est liée ou devenir indépendant](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)  
+5.  [Quand un point d’arrêt est lié ou devient indépendant](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)  
   
 6.  [Erreurs de point d’arrêt](../../extensibility/debugger/breakpoint-errors.md)  
   

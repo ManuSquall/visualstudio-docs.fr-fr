@@ -1,5 +1,5 @@
 ---
-title: '&lt;trustInfo&gt; élément (déploiement ClickOnce) | Documents Microsoft'
+title: '&lt;trustInfo&gt; , élément (Application ClickOnce) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5349ecc2a93f2d5179a88c79b632747195989df
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 75695598c31b1dcc3a8ae4845a41249ead71236b
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34816001"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151059"
 ---
-# <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; élément (déploiement ClickOnce)
+# <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; , élément (application ClickOnce)
 Décrit les autorisations de sécurité minimales dont doit disposer l’application pour qu’elle s’exécute sur l’ordinateur client.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -270,5 +270,5 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vue d’ensemble du déploiement d’applications approuvées](../deployment/trusted-application-deployment-overview.md)   
+ [Vue d’ensemble de déploiement d’Application approuvée](../deployment/trusted-application-deployment-overview.md)   
  [Manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md)

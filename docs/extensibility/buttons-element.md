@@ -1,5 +1,5 @@
 ---
-title: Boutons d’élément | Documents Microsoft
+title: Boutons d’élément | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a89d40d1f9c9a994269045dd674a533a0bcd32c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 522a69dc703a83ef601a5c7f0c54a5e0c224366e
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097648"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155410"
 ---
-# <a name="buttons-element"></a>Élément de boutons
-Groupes [bouton](../extensibility/button-element.md) éléments qui représentent des commandes individuelles.  
+# <a name="buttons-element"></a>Élément Buttons
+Groupes [bouton](../extensibility/button-element.md) éléments, qui représentent des commandes individuelles.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -47,13 +47,13 @@ Groupes [bouton](../extensibility/button-element.md) éléments qui représenten
 |Élément|Description|  
 |-------------|-----------------|  
 |[Élément Buttons](../extensibility/buttons-element.md)|Regroupe les éléments de bouton.|  
-|[Élément Button](../extensibility/button-element.md)|Définit une commande que l’utilisateur peut interagir avec.|  
+|[Élément Button](../extensibility/button-element.md)|Définit une commande de l’utilisateur peut interagir avec.|  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément Commands](../extensibility/commands-element.md)|Représente la collection de commandes dans la barre d’outils du VSPackage.|  
+|[Élément Commands](../extensibility/commands-element.md)|Représente la collection de commandes sur la barre d’outils de VSPackage.|  
   
 ## <a name="example"></a>Exemple  
   
@@ -70,5 +70,5 @@ Groupes [bouton](../extensibility/button-element.md) éléments qui représenten
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment les VSPackages ajouter les éléments d’Interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Comment VSPackages ajoute des éléments d’interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)

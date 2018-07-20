@@ -1,9 +1,9 @@
 ---
-title: Paramètres et préparation du débogueur | Documents Microsoft
+title: Paramètres et préparation du débogueur | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f74cbb0f03f9b944f4ad1bfb00ffb58b56b2817f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 412109d3beeda00dfd6f32e5644388523d067289
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473314"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151572"
 ---
 # <a name="debugger-settings-and-preparation"></a>Paramètres et préparation du débogueur
 Cette section décrit les paramètres de propriété du débogueur et la préparation nécessaire pour déboguer votre programme à l’aide du débogueur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Si vous créez un programme dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] à l’aide des modèles de projet, ces paramètres sont définis correctement sans votre intervention dans la configuration Debug.  
