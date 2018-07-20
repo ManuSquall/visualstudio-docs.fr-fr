@@ -1,5 +1,5 @@
 ---
-title: Assembly, élément (modèles Visual Studio) | Documents Microsoft
+title: Assembly, élément (modèles Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97e6209fdf446d88ed79ef741c3584b2bc4f5602
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 195faf23ecb2fca019b4948b3150ab6f9c00f5ec
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099107"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155462"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Assembly, élément (modèles Visual Studio)
-Spécifie des informations sur un assembly, le modèle utilise pour ajouter une référence de cet assembly aux projets.  
+Spécifie les informations relatives à un assembly, le modèle utilise pour ajouter une référence de cet assembly aux projets.  
   
  \<VSTemplate >  
  \<TemplateContent >  
@@ -53,12 +53,12 @@ Spécifie des informations sur un assembly, le modèle utilise pour ajouter une 
 |-------------|-----------------|  
 |[Référence](../extensibility/reference-element-visual-studio-templates.md)|Spécifie la référence d’assembly à ajouter quand l’élément est ajouté à un projet.|  
   
-## <a name="text-value"></a>Valeur texte  
+## <a name="text-value"></a>Valeur de texte  
  Une valeur texte est requise.  
   
- Ce texte spécifie l’assembly à ajouter à un projet lorsque le modèle d’élément est instancié. Nom de l’assembly doit être spécifié dans une des manières suivantes :  
+ Ce texte spécifie l’assembly à ajouter à un projet lorsque le modèle d’élément est instancié. Ce nom d’assembly doit être spécifié dans une des manières suivantes :  
   
--   En tant que nom complet de l’assembly. Par exemple :  
+-   En tant que nom complet de l’assembly. Exemple :  
   
     ```  
     <Assembly>  
@@ -66,7 +66,7 @@ Spécifie des informations sur un assembly, le modèle utilise pour ajouter une 
     </Assembly>  
     ```  
   
--   En tant que référence de texte simple. Par exemple :  
+-   En tant que référence de texte simple. Exemple :  
   
     ```  
     <Assembly> System </Assembly>  
@@ -75,10 +75,10 @@ Spécifie des informations sur un assembly, le modèle utilise pour ajouter une 
 ## <a name="remarks"></a>Notes  
  `Assembly` est un élément enfant obligatoire de `Reference`.  
   
- Le `Reference`, `References,` et `Assembly` éléments ne peuvent être utilisés dans les fichiers .vstemplate dont un `Type` valeur d’attribut `Item`.  
+ Le `Reference`, `References,` et `Assembly` éléments peuvent uniquement être utilisés dans *.vstemplate* fichiers ayant une `Type` valeur d’attribut `Item`.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant illustre la `TemplateContent` élément d’un modèle d’élément. Ce code XML ajoute des références aux assemblys System.dll et System.Data.dll.  
+ L’exemple suivant illustre la `TemplateContent` élément d’un modèle d’élément. Ce code XML ajoute des références à la *System.dll* et *System.Data.dll* assemblys.  
   
 ```  
 <TemplateContent>  
@@ -99,5 +99,5 @@ Spécifie des informations sur un assembly, le modèle utilise pour ajouter une 
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
+ [Référence de schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)

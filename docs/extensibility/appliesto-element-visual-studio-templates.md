@@ -1,5 +1,5 @@
 ---
-title: AppliesTo, élément (modèles Visual Studio) | Documents Microsoft
+title: Élément AppliesTo (modèles Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e27ee1ab0ba42a82d61e2adbe9fb4c6c81cbb48
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 567b9f2651c2140f101aa3848e4136d47a75ef1e
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100258"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151114"
 ---
-# <a name="appliesto-element-visual-studio-templates"></a>AppliesTo, élément (modèles Visual Studio)
+# <a name="appliesto-element-visual-studio-templates"></a>Élément AppliesTo (modèles Visual Studio)
 Spécifie une expression facultative afin de la faire correspondre à une ou plusieurs fonctions. (consultez <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>). Les fonctions sont exposées par types de projet via la hiérarchie en tant que propriété <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5>. De cette manière, le modèle peut être partagé par plusieurs types de projets ayant des capacités applicables communes.  
   
  Cet élément est facultatif. Il peut y avoir au maximum une instance dans un fichier modèle. Cet élément permet uniquement à un modèle d'élément d'être déclaré comme applicable, en fonction des fonctionnalités du projet actif sélectionné. Il ne peut pas être utilisé pour rendre un modèle d'élément non applicable. Si `AppliesTo` est absent ou si l'expression ne permet pas de déclarer correctement, alors `TemplateID` ou `TemplateGroupID` est utilisé pour rendre le modèle applicable, comme avec les versions antérieures du produit.  
   
- Introduit pour la première fois dans Visual Studio 2013 Update 2. Pour faire référence à la version appropriée, consultez [faisant référence à des assemblys remis dans Visual Studio 2013 SDK Update 2](http://msdn.microsoft.com/en-us/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
+ Introduit pour la première fois dans Visual Studio 2013 Update 2. Pour faire référence à la version correcte, consultez [référencement d’assemblys fournis dans Visual Studio 2013 SDK Update 2](http://msdn.microsoft.com/en-us/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -50,7 +50,7 @@ Spécifie une expression facultative afin de la faire correspondre à une ou plu
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Définit la catégorie du modèle.|  
   
-## <a name="text-value"></a>Valeur texte  
+## <a name="text-value"></a>Valeur de texte  
  Une valeur texte est requise. Ce texte spécifie les fonctionnalités du projet.  
   
  La syntaxe d'expression valide est définie comme suit :  
@@ -67,7 +67,7 @@ Spécifie une expression facultative afin de la faire correspondre à une ou plu
   
 -   Une expression null ou vide est évaluée comme une correspondance.  
   
--   Les fonctionnalités de projet peuvent être n’importe quel caractère excepté les caractères réservés : « ''  :;,+-*/\\! ~&#124;& %$@^()={} [] <> ? \t\b\n\r  
+-   Fonctionnalités de projet peuvent être n’importe quel caractère à l’exception des caractères réservés suivants : « ''  :;,+-*/\\! ~&#124;& %$@^() ={}[] <> ? \t\b\n\r  
   
 ## <a name="example"></a>Exemple  
  L'exemple suivant indique trois modèles différents. `Template1` s'applique à tous les types de projet C# ou à n'importe quel autre type de projet qui prend en charge la fonctionnalité `WindowsAppContainer`. `Template2` s'applique à tous les projets C# de n'importe quel type. `Template3` s'applique aux projets C# qui ne sont pas des projets `WindowsAppContainer`.  
@@ -100,5 +100,5 @@ Spécifie une expression facultative afin de la faire correspondre à une ou plu
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
+ [Référence de schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)

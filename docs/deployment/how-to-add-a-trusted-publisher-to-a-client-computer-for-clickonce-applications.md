@@ -1,5 +1,5 @@
 ---
-title: 'Comment : ajouter un éditeur approuvé à un ordinateur Client pour les Applications ClickOnce | Documents Microsoft'
+title: 'Comment : ajouter un éditeur approuvé à un ordinateur Client pour les Applications ClickOnce | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c9d718eba01a35c1f6991ab50d217c8b5f63065
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 05fec72b143ccd36cb0a07f17d4bea4b6319eb20
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31562700"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155312"
 ---
-# <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Comment : ajouter un éditeur approuvé à un ordinateur client pour les applications ClickOnce
+# <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Comment : ajouter un éditeur approuvé à un ordinateur client pour les applications ClickOnce
 Avec le déploiement d’applications approuvées, vous pouvez configurer les ordinateurs clients pour que vos applications [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] s’exécutent avec un niveau de confiance supérieur sans solliciter l’utilisateur. Les procédures suivantes montrent comment utiliser l’outil en ligne de commande CertMgr.exe pour ajouter le certificat d’un éditeur au magasin d’éditeurs approuvés sur un ordinateur client.  
   
  Les commandes que vous utilisez varient légèrement selon que l’autorité de certification qui a émis votre certificat fait partie ou non de la racine de confiance d’un client. Si un ordinateur client Windows fait partie d’un domaine, il contient, dans une liste, les autorités de certification considérées comme des racines de confiance. Cette liste est généralement configurée par l’administrateur système. Si votre certificat a été émis par l’une de ces racines de confiance, ou par une autorité de certification liée à l’une de ces racines de confiance, vous pouvez ajouter le certificat au magasin racine approuvé du client. Si, en revanche, votre certificat n’a pas été émis par l’une de ces racines de confiance, vous devez ajouter le certificat au magasin racine approuvé du client et au magasin d’éditeurs approuvés.  
@@ -34,13 +34,13 @@ Avec le déploiement d’applications approuvées, vous pouvez configurer les or
   
  Vous pouvez aussi ajouter un certificat à un magasin par programmation en utilisant la classe <xref:System.Security.Cryptography.X509Certificates.X509Store> .  
   
- Pour obtenir une vue d’ensemble du déploiement d’applications approuvées, consultez [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+ Pour une vue d’ensemble du déploiement d’applications approuvées, consultez [vue d’ensemble du déploiement d’application approuvé](../deployment/trusted-application-deployment-overview.md).  
   
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-the-trusted-root"></a>Pour ajouter un certificat au magasin d’éditeurs approuvés sous la racine de confiance  
   
 1.  Obtenez un certificat numérique à partir d’une autorité de certification.  
   
-2.  Exportez le certificat au format Base64 X.509 (.cer). Pour plus d’informations sur les formats de certificats, consultez [Exporter un certificat](http://go.microsoft.com/fwlink/?LinkId=164793).  
+2.  Exportez le certificat au format Base64 X.509 (*.cer*) format. Pour plus d’informations sur les formats de certificats, consultez [exporter un certificat](http://go.microsoft.com/fwlink/?LinkId=164793).  
   
 3.  À partir de l’invite de commandes sur les ordinateurs clients, exécutez la commande suivante :  
   
@@ -50,7 +50,7 @@ Avec le déploiement d’applications approuvées, vous pouvez configurer les or
   
 1.  Obtenez un certificat numérique à partir d’une autorité de certification.  
   
-2.  Exportez le certificat au format Base64 X.509 (.cer). Pour plus d’informations sur les formats de certificats, consultez [Exporter un certificat](http://go.microsoft.com/fwlink/?LinkId=164793).  
+2.  Exportez le certificat au format Base64 X.509 (*.cer*) format. Pour plus d’informations sur les formats de certificats, consultez [Exporter un certificat](http://go.microsoft.com/fwlink/?LinkId=164793).  
   
 3.  À partir de l’invite de commandes sur les ordinateurs clients, exécutez la commande suivante :  
   
@@ -59,15 +59,15 @@ Avec le déploiement d’applications approuvées, vous pouvez configurer les or
      **certmgr.exe -add good.cer -c -s -r localMachine TrustedPublisher**  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : déploiement manuel d’une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
- [Sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md)   
+ [Procédure pas à pas : Déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
+ [Sécuriser les applications ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Sécurité d’accès du code pour les applications ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce et Authenticode](../deployment/clickonce-and-authenticode.md)   
- [Vue d’ensemble du déploiement d’applications approuvées](../deployment/trusted-application-deployment-overview.md)   
- [Guide pratique pour activer les paramètres de sécurité ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
- [Guide pratique pour définir une zone de sécurité pour une application ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [Guide pratique pour définir des autorisations personnalisées pour une application ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Guide pratique pour déboguer une application ClickOnce avec des autorisations restreintes](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [Comment : ajouter un éditeur approuvé à un ordinateur Client pour les Applications ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
- [Comment : signer de nouveau les manifestes de déploiement et d’Application](../deployment/how-to-re-sign-application-and-deployment-manifests.md)   
- [Guide pratique pour configurer le comportement de l’invite d’approbation ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)
+ [Vue d’ensemble du déploiement application approuvée](../deployment/trusted-application-deployment-overview.md)   
+ [Comment : activer les paramètres de sécurité ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Comment : définir une zone de sécurité pour une application ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [Comment : définir des autorisations personnalisées pour une application ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Comment : déboguer une application ClickOnce avec des autorisations restreintes](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Comment : ajouter un éditeur approuvé à un ordinateur client pour les applications ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
+ [Comment : signer à nouveau les manifestes d’application et de déploiement](../deployment/how-to-re-sign-application-and-deployment-manifests.md)   
+ [Comment : configurer le comportement invite d’approbation ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)

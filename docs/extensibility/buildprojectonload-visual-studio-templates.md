@@ -1,5 +1,5 @@
 ---
-title: BuildProjectOnLoad (modèles Visual Studio) | Documents Microsoft
+title: BuildProjectOnLoad (modèles Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,14 +16,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58493c8e3c4668f1cd94c7f892d727479b755f3f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b70cc3522d59c2abe4633f38f746aeeb3159fe8a
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097879"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39150663"
 ---
-# <a name="buildprojectonload-visual-studio-templates"></a>BuildProjectOnLoad (modèles Visual Studio)
+# <a name="buildprojectonload-visual-studio-templates"></a>BuildProjectOnLoad (modèles Visual Studio)
 Spécifie s’il faut générer le projet immédiatement après sa création.  
   
  \<VSTemplate >  
@@ -51,7 +51,7 @@ Spécifie s’il faut générer le projet immédiatement après sa création.
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Définit la catégorie du modèle et comment il s’affiche dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément** .|  
   
-## <a name="text-value"></a>Valeur texte  
+## <a name="text-value"></a>Valeur de texte  
  Une valeur texte est requise.  
   
  Le texte doit être `true` ou `false`, indiquant s’il faut générer le projet immédiatement après sa création.  
@@ -90,4 +90,4 @@ Spécifie s’il faut générer le projet immédiatement après sa création.
 ## <a name="see-also"></a>Voir aussi  
  [TemplateContent, élément (modèles Visual Studio)](../extensibility/templatecontent-element-visual-studio-templates.md)   
  [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+ [Informations de référence sur les schémas de modèles Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

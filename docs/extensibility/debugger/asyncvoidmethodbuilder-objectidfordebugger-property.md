@@ -1,5 +1,5 @@
 ---
-title: Propriété de AsyncVoidMethodBuilder.ObjectIdForDebugger | Documents Microsoft
+title: Propriété AsyncVoidMethodBuilder.ObjectIdForDebugger | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 868deef955ce90f49ce3ba2719903bdcbb38f2a5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cf0f8acbfbdc129371d288d64cc48b3e4b0704ad
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097404"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151481"
 ---
-# <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>Propriété de AsyncVoidMethodBuilder.ObjectIdForDebugger
-Obtient un objet qui peut être utilisé pour identifier de façon unique ce générateur au débogueur.  
+# <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>Propriété AsyncVoidMethodBuilder.ObjectIdForDebugger
+Obtient un objet qui peut être utilisé pour identifier de manière unique ce générateur au débogueur.  
   
  **Namespace :** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
@@ -37,4 +37,4 @@ private object ObjectIdForDebugger
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>   
- [Valeurs internes d’extension parallèle pour .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+ [Mécanismes internes d’extension parallèle pour le .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

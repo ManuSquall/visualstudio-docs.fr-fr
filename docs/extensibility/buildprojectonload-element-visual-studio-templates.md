@@ -1,5 +1,5 @@
 ---
-title: L’élément buildProjectOnload (modèles Visual Studio) | Documents Microsoft
+title: Élément buildProjectOnload (modèles Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,15 +11,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 689d2510a8513b880f3c2cddca584449c03217b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3e5cbcc06fcc7a936918de8b1a9d4c44d9938d94
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097820"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154156"
 ---
-# <a name="buildprojectonload-element-visual-studio-templates"></a>Élément BuildProjectOnload (modèles Visual Studio)
-Génère uniquement des projets que vous créez et les ajoutez à une solution. L’ensemble de la solution n’est pas généré.  
+# <a name="buildprojectonload-element-visual-studio-templates"></a>Élément buildProjectOnload (modèles Visual Studio)
+Génère les nouveaux projets uniquement quand vous créez et les ajoutez à une solution. L’ensemble de la solution n’est pas généré.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -44,9 +44,9 @@ Génère uniquement des projets que vous créez et les ajoutez à une solution. 
   
 |Élément|Description|  
 |-------------|-----------------|  
-|TemplateData|Définit la catégorie du modèle et comment il apparaît dans les deux le **nouveau projet** et **ajouter un nouvel élément** boîtes de dialogue.|  
+|`TemplateData`|Définit la catégorie du modèle et comment il apparaît dans les deux le **nouveau projet** et **ajouter un nouvel élément** boîtes de dialogue.|  
   
-## <a name="text-value"></a>Valeur texte  
+## <a name="text-value"></a>Valeur de texte  
  Une valeur texte est requise.  
   
  Le texte doit être `true` ou `false` pour indiquer s’il faut générer uniquement le nouveau projet lorsqu’il est créé à partir du modèle.  
@@ -84,4 +84,4 @@ Génère uniquement des projets que vous créez et les ajoutez à une solution. 
   
 ## <a name="see-also"></a>Voir aussi  
  [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+ [Informations de référence sur les schémas de modèles Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

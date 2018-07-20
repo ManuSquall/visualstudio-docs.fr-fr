@@ -1,5 +1,5 @@
 ---
-title: 'Comment : déboguer une Application ClickOnce avec des autorisations restreintes | Documents Microsoft'
+title: 'Comment : déboguer une Application ClickOnce avec des autorisations restreintes | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 318316c4c2a0f545f6e038581d94d9f7fb21eca4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c30766b50692052ec9fdd04c5ec1b156738c47b5
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31561998"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152969"
 ---
-# <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Comment : déboguer une application ClickOnce avec des autorisations restreintes
+# <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Comment : déboguer une application ClickOnce avec des autorisations restreintes
 En tant que développeur, vous exécutez probablement votre ordinateur de développement avec des autorisations de confiance totale. Vous ne voyez donc pas les mêmes exceptions de sécurité lors du débogage d’une application ClickOnce que celles que l’utilisateur final peut voir quand il l’exécute avec des autorisations restreintes.  
   
  Pour intercepter ces exceptions, vous devez déboguer l’application avec les mêmes autorisations que l’utilisateur final. Le débogage avec des autorisations restreintes peut être activé dans la page **Sécurité** du **Concepteur de projets**.  
@@ -61,7 +61,7 @@ En tant que développeur, vous exécutez probablement votre ordinateur de dével
 6.  Dans la zone de texte **Déboguer cette application comme si elle était téléchargée de l’URL suivante** , entrez une URL ou un chemin réseau.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour définir des autorisations personnalisées pour une application ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md)   
+ [Comment : définir des autorisations personnalisées pour une application ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Sécuriser les applications ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Sécurité d’accès du code pour les applications ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   
- [Sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md)
+ [Sécuriser les applications ClickOnce](../deployment/securing-clickonce-applications.md)

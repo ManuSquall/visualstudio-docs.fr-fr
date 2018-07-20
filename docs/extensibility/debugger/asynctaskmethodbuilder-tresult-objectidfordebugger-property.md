@@ -1,5 +1,5 @@
 ---
-title: AsyncTaskMethodBuilder&lt;TResult&gt;. Propriété de ObjectIdForDebugger | Documents Microsoft
+title: AsyncTaskMethodBuilder&lt;TResult&gt;. Propriété de ObjectIdForDebugger | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85d5a5816bf26b7de704cfe1c1462c89918b7dc2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f60f7cf4cb524a473b89528c7b7077459d140a9
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109413"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153648"
 ---
 # <a name="asynctaskmethodbuilderlttresultgtobjectidfordebugger-property"></a>AsyncTaskMethodBuilder&lt;TResult&gt;. Propriété de ObjectIdForDebugger
-Obtient un objet qui peut être utilisé pour identifier de façon unique ce générateur au débogueur.  
+Obtient un objet qui peut être utilisé pour identifier de manière unique ce générateur au débogueur.  
   
  **Namespace :** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
@@ -37,4 +37,4 @@ private object ObjectIdForDebugger
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>   
- [Valeurs internes d’extension parallèle pour .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+ [Mécanismes internes d’extension parallèle pour le .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
