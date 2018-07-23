@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bc66f2017b243f94ae0012b354230aae66c76fd
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: cd35f8545c1c768b07ff45ff8a6cdf84d24f3c58
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058735"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176965"
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>Afficher les Threads et tâches à l’aide de la fenêtre Piles parallèles
 Le **piles parallèles** fenêtre est utile lorsque vous déboguez des applications multithread. Son **vue Threads** affiche les informations sur la pile d’appels pour tous les threads dans votre application. Elle vous permet de naviguer entre les threads et les frames de pile sur ces threads. Dans le code managé, le **vue tâches** affiche les piles d’appels <xref:System.Threading.Tasks.Task?displayProperty=fullName> objets. En code natif, le **vue tâches** affiche les piles d’appels [groupes de tâches](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [algorithmes parallèles](/cpp/parallel/concrt/parallel-algorithms), [agents asynchrones](/cpp/parallel/concrt/asynchronous-agents)et [tâches légères](/cpp/parallel/concrt/task-scheduler-concurrency-runtime).  
@@ -118,7 +118,7 @@ Le **piles parallèles** fenêtre est utile lorsque vous déboguez des applicati
 ## <a name="see-also"></a>Voir aussi  
  [Commencer le débogage d’une application multithread](../debugger/get-started-debugging-multithreaded-apps.md)   
  [Procédure pas à pas : Débogage d’une Application parallèle](../debugger/walkthrough-debugging-a-parallel-application.md)   
- [Principes de base du débogueur](../debugger/debugger-basics.md)   
+ [Principes de base du débogueur](../debugger/getting-started-with-the-debugger.md)   
  [Débogage du code managé](../debugger/debugging-managed-code.md)   
  [Programmation parallèle](/dotnet/standard/parallel-programming/index)   
  [À l’aide de la fenêtre tâches](../debugger/using-the-tasks-window.md)   

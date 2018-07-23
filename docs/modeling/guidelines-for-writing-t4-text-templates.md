@@ -9,62 +9,62 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f96cea682699382b55b786001a175616c877804a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 08e18d654023dbf92f5c9e52fcd82f0c2ac3471c
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953614"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178460"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Instructions relatives à l'écriture de modèles de texte T4
 Ces instructions générales peuvent être utiles si vous générez du code de programme ou d’autres ressources de l’application dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Ils ne sont pas fixes règles.
 
-## <a name="guidelines-for-design-time-t4-templates"></a>Recommandations pour les modèles T4 au moment du Design
- Les modèles T4 au moment du design sont des modèles qui génèrent du code dans votre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet au moment du design. Pour plus d’informations, consultez [génération du Code à l’aide de modèles de texte T4 au moment du Design](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+## <a name="guidelines-for-design-time-t4-templates"></a>Instructions pour les modèles T4 au moment du Design
+ Les modèles T4 au moment du design sont des modèles qui génèrent du code dans votre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet au moment du design. Pour plus d’informations, consultez [génération de Code au moment du Design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
  Générer des aspects variables de l’application.
-Génération de code est plus utile pour les aspects de l’application qui peut être modifiée au cours du projet, ou changeront entre différentes versions de l’application. Séparer ces aspects variables plus constants, afin que vous pouvez déterminer plus facilement ce qui doit être généré. Par exemple, si votre application fournit un site Web, séparez la page standard servant des fonctions à partir de la logique qui définit les chemins d’accès de navigation d’une page à l’autre.
+Génération de code est particulièrement utile pour les aspects de l’application qui peut être modifiée au cours du projet, ou modifié entre les différentes versions de l’application. Séparer ces aspects variables plus constants, afin que vous pouvez déterminer plus facilement ce qui doit être généré. Par exemple, si votre application fournit un site Web, séparez la page standard desservant des fonctions à partir de la logique qui définit les chemins d’accès de navigation d’une page à un autre.
 
  Encodez les aspects variables dans un ou plusieurs modèles de code source.
-Un modèle est un fichier ou la base de données de chaque modèle lit pour obtenir des valeurs spécifiques pour les parties variables du code qui doit être créé. Modèles peuvent être des bases de données, les fichiers XML de votre propre conception, les diagrammes ou les langages spécifiques à un domaine. En règle générale, un modèle est utilisé pour générer de nombreux fichiers dans un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet. Chaque fichier est généré à partir d’un modèle séparé.
+Un modèle est un fichier ou une base de données que chaque modèle lit pour obtenir des valeurs spécifiques pour les parties variables du code qui doit être généré. Modèles peuvent être des bases de données, les fichiers XML de votre propre conception, les diagrammes ou les langages spécifiques à un domaine. En règle générale, un seul modèle est utilisé pour générer de nombreux fichiers dans un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet. Chaque fichier est généré à partir d’un modèle séparé.
 
- Vous pouvez utiliser plusieurs modèles dans un projet. Par exemple, vous pouvez définir un modèle pour la navigation entre pages Web et un modèle distinct de la disposition des pages.
+ Vous pouvez utiliser plusieurs modèles dans un projet. Par exemple, vous pouvez définir un modèle pour la navigation entre pages web et un modèle distinct de la disposition des pages.
 
- Le modèle vous concentrer sur le vocabulaire et les besoins des utilisateurs, et non sur votre implémentation.
-Par exemple, dans une application de site Web, vous vous attendez le modèle pour faire référence à des pages Web et des liens hypertexte.
+ Le modèle de nous concentrer sur le vocabulaire et les besoins des utilisateurs, et non sur votre implémentation.
+Par exemple, dans une application de site Web, vous vous attendez le modèle pour faire référence à des pages web et des liens hypertexte.
 
- Dans l’idéal, choisissez une forme de présentation adaptée au genre d’informations sur le modèle. Par exemple, un modèle de chemins de navigation dans un site Web peut être un diagramme des zones et des flèches.
+ Dans l’idéal, choisir un formulaire de présentation qui convient le type d’information qui représente le modèle. Par exemple, un modèle de chemins d’accès de navigation d’un site Web peut être un diagramme des zones et des flèches.
 
  Tester le code généré.
-Utilisez les tests manuels ou automatisés pour vérifier que le code résultant fonctionne comme les utilisateurs ont besoin. Éviter de générer des tests à partir du même modèle à partir duquel le code est généré.
+Utiliser des tests manuels ou automatisés pour vérifier que le code résultant fonctionne comme les utilisateurs ont besoin. Éviter de générer des tests à partir du même modèle à partir duquel le code est généré.
 
- Dans certains cas, les tests générales peuvent être exécutés directement sur le modèle. Par exemple, vous pouvez écrire un test qui garantit que chaque page dans le site Web peut être atteint par la navigation à partir de n’importe quel autre.
+ Dans certains cas, les tests générales peuvent être effectuées directement sur le modèle. Par exemple, vous pouvez écrire un test qui garantit que chaque page dans le site Web peut être atteint par la navigation à partir d’autres.
 
- Autoriser le code personnalisé : générer des classes partielles.
-Autoriser pour le code que vous écrivez manuellement en plus du code généré. Il est rare qu’un schéma de génération de code pouvoir prendre en compte toutes les variations possibles qui peuvent se produire. Par conséquent, vous devriez compléter ou remplacer une partie du code généré. Où les données générées sont dans un langage .NET tel que [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ou [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], deux stratégies sont particulièrement utiles :
+ Autoriser un code personnalisé : générer des classes partielles.
+Autoriser pour le code que vous écrivez à la main en outre le code généré. Il est rare qu’un schéma de génération de code pour être en mesure de prendre en compte toutes les variations possibles qui peuvent se produire. Par conséquent, vous devriez ajouter ou remplacer une partie du code généré. Où les données générées sont dans un langage .NET comme [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ou [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], deux stratégies sont particulièrement utiles :
 
 -   Les classes générées doivent être partielles. Vous pouvez ainsi ajouter du contenu au code généré.
 
--   Classes doivent être générées par paires, une héritant de l’autre. La classe de base doit contenir toutes les propriétés et méthodes générées, et la classe dérivée doit contenir uniquement les constructeurs. Cela permet à votre code écrit manuellement remplacer une des méthodes générées.
+-   Classes doivent être générées par paires, une héritant de l’autre. La classe de base doit contenir toutes les propriétés et méthodes générées, et la classe dérivée doit contenir uniquement les constructeurs. Cela permet à votre code écrit manuellement remplacer les méthodes générées.
 
- Dans d’autres langages générés tels que XML, utilisez la `<#@include#>` directive pour créer des combinaisons simples de contenus généré et écrit manuellement. Dans des cas plus complexes, vous devrez peut-être écrire une étape de post-traitement qui combine le fichier généré avec les fichiers écrits manuellement.
+ Dans d’autres langages générés tels que XML, utilisez la `<#@include#>` directive pour créer des combinaisons simples du contenu généré et écrit manuellement. Dans les cas plus complexes, vous devrez peut-être écrire une étape de post-traitement qui combine le fichier généré avec les fichiers écrits manuellement.
 
- Déplacer le matériel commun dans des fichiers include ou de modèles au moment de l’exécution pour éviter de répéter comme blocs de texte et de code dans plusieurs modèles, utilisent le `<#@ include #>` la directive. Pour plus d’informations, consultez [Directive Include de T4](../modeling/t4-include-directive.md).
+ Déplacer le matériel commun dans des fichiers include ou de modèles au moment de l’exécution pour éviter de répéter comme blocs de texte et de code dans plusieurs modèles, utilisent le `<#@ include #>` directive. Pour plus d’informations, consultez [Directive Include de T4](../modeling/t4-include-directive.md).
 
- Vous pouvez également générer des modèles de texte au moment de l’exécution dans un projet distinct et puis de les appeler à partir du modèle au moment du design. Pour ce faire, utilisez la `<#@ assembly #>` directive pour accéder au projet séparé. Pour obtenir des exemples, consultez [« D’héritage de modèles de texte » dans le Blog de Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
+ Vous pouvez également créer des modèles de texte de l’exécution dans un projet distinct et les appeler à partir du modèle au moment du design. Pour ce faire, utilisez la `<#@ assembly #>` directive pour accéder au projet distinct. Pour obtenir des exemples, consultez [« L’héritage dans modèles de texte » dans le Blog de Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
 
  Envisagez de déplacer de grands blocs de code dans un assembly distinct.
- Si vous possédez de grands blocs de code et des blocs de fonctionnalité de classe, il peut être utile de déplacer une partie de ce code dans des méthodes que vous compilez dans un projet distinct. Vous pouvez utiliser la `<#@ assembly #>` directive pour accéder au code dans le modèle. Pour plus d’informations, consultez [Directive d’Assembly T4](../modeling/t4-assembly-directive.md).
+ Si vous avez des grands blocs de code et des blocs de fonctionnalité de classe, il peut être utile de déplacer une partie de ce code en méthodes que vous compilez dans un projet distinct. Vous pouvez utiliser la `<#@ assembly #>` directive pour accéder au code dans le modèle. Pour plus d’informations, consultez [Directive d’Assembly T4](../modeling/t4-assembly-directive.md).
 
- Vous pouvez placer les méthodes dans une classe abstraite qui peut hériter que le modèle. La classe abstraite doit hériter de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Pour plus d’informations, consultez [Directive du modèle T4](../modeling/t4-template-directive.md).
+ Vous pouvez placer les méthodes dans une classe abstraite qui peut hériter de celui-ci. La classe abstraite doit hériter <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Pour plus d’informations, consultez [Directive du modèle T4](../modeling/t4-template-directive.md).
 
- Générer du code, pas les fichiers une méthode de configuration de l’écriture d’une application variable consiste à écrire du code de programme générique qui accepte un fichier de configuration. Une application écrite de cette façon est très flexible et peut être reconfigurée lorsque les besoins changent, sans la reconstruction de l’application. Toutefois, l’inconvénient de cette approche est que l’application sera moins performante qu’une application plus spécifique. En outre, son code de programme sera plus difficile à lire et à gérer, en partie parce qu’il doit toujours prendre en compte avec les types plus génériques.
+ Générer du code, pas les fichiers une méthode de configuration de l’écriture d’une application variable consiste à écrire du code de programme générique qui accepte un fichier de configuration. Une application écrite de cette manière est très flexible et peut être reconfigurée lorsque les besoins changent, sans recréer l’application. Toutefois, l’inconvénient de cette approche est que l’application sera moins performante qu’une application plus spécifique. En outre, son code de programme sera plus difficile à lire et à gérer, en partie parce qu’il doit toujours prendre en compte avec les types les plus génériques.
 
- En revanche, une application dont les parties variables sont générées avant la compilation peut être fortement typée. Il est ainsi beaucoup plus faciles et plus fiables pour écrire du code écrit manuellement et l’intégrer avec les parties du logiciel.
+ En revanche, une application dont les parties variables sont générées avant la compilation peut être fortement typée. Cela rend beaucoup plus faciles et plus fiables pour écrire du code écrit manuellement et l’intégrer avec les parties du logiciel.
 
- Pour obtenir le meilleur parti de la génération de code, essayez de générer du code de programme au lieu des fichiers de configuration.
+ Pour obtenir le meilleur parti de la génération de code, essayez de générer du code de programme au lieu de fichiers de configuration.
 
- Utilisez un dossier de Code généré placez les modèles et les fichiers générés dans un dossier de projet nommé **Code généré**, afin de pouvoir effacer que ceux-ci ne sont pas des fichiers qui doivent être modifiés directement. Si vous créez un code personnalisé pour remplacer ou ajouter des classes générées, placez ces classes dans un dossier nommé **Code personnalisé**. La structure d’un projet classique ressemble à ceci :
+ Utilisez un dossier de Code généré par placer les modèles et les fichiers générés dans un dossier de projet nommé **le Code généré**, afin de pouvoir effacer que ceux-ci ne sont pas des fichiers qui doivent être modifiées directement. Si vous créez un code personnalisé pour remplacer ou compléter les classes générées, placez ces classes dans un dossier nommé **Code personnalisé**. La structure d’un projet classique ressemble à ceci :
 
 ```
 MyProject
@@ -80,15 +80,15 @@ MyProject
 
 ```
 
-## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>Recommandations pour les modèles T4 de (prétraités) au moment de l’exécution
+## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>Instructions pour les modèles T4 (prétraité) d’exécution
  Déplacer le matériel commun vers des modèles hérités, vous pouvez utiliser l’héritage pour partager des méthodes et des blocs de texte entre les modèles de texte T4. Pour plus d’informations, consultez [Directive du modèle T4](../modeling/t4-template-directive.md).
 
- Vous pouvez également utiliser des fichiers include qui ont des modèles au moment de l’exécution.
+ Vous pouvez également utiliser incluent des fichiers qui ont des modèles au moment de l’exécution.
 
  Déplacer des corps de code volumineux dans une classe partielle.
-Chaque modèle au moment de l’exécution génère une définition de classe partielle qui porte le même nom que le modèle. Vous pouvez écrire un fichier de code qui contient une autre définition partielle de la même classe. Vous pouvez ajouter des méthodes, champs et des constructeurs pour la classe de cette manière. Ces membres peuvent être appelés à partir de blocs de code dans le modèle.
+Chaque modèle au moment de l’exécution génère une définition de classe partielle qui a le même nom que le modèle. Vous pouvez écrire un fichier de code qui contient une autre définition partielle de la même classe. Vous pouvez ajouter des méthodes, des champs et des constructeurs pour la classe de cette manière. Ces membres peuvent être appelés depuis les blocs de code dans le modèle.
 
- Un avantage est que le code est plus facile à écrire, car IntelliSense est disponible. En outre, vous pouvez obtenir une meilleure séparation entre la présentation et la logique sous-jacente.
+ Un avantage de cette procédure est que le code est plus facile à écrire, car IntelliSense est disponible. En outre, vous pouvez obtenir une meilleure séparation entre la présentation et la logique sous-jacente.
 
  Par exemple, dans **MyReportText.tt**:
 
@@ -98,7 +98,7 @@ Chaque modèle au moment de l’exécution génère une définition de classe pa
 
  `private string ComputeTotal() { ... }`
 
- Autoriser le code personnalisé : fournir des points d’extension envisagez de générer des méthodes virtuelles dans \<# des blocs de fonctionnalité de classe #+ >. Cela permet à un seul modèle à utiliser dans de nombreux contextes sans modification. Au lieu de modifier le modèle, vous pouvez construire une classe dérivée qui fournit la logique supplémentaire minimum. La classe dérivée peut être du code normal, ou il peut être un modèle au moment de l’exécution.
+ Autoriser un code personnalisé : fournir des points d’extension envisagez de générer des méthodes virtuelles dans \<fonctionnalité de classe #+ bloque #>. Ainsi, un modèle unique être utilisé dans de nombreux contextes sans modification. Au lieu de modifier le modèle, vous pouvez construire une classe dérivée qui fournit la logique supplémentaire minimale. La classe dérivée peut être du code normal, ou il peut être un modèle au moment de l’exécution.
 
  Par exemple, dans MyStandardRunTimeTemplate.tt :
 
@@ -119,16 +119,16 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 
 ```
 
-## <a name="guidelines-for-all-t4-templates"></a>Recommandations pour tous les modèles T4
- Collecte de données distincte de la génération de texte essayez d’éviter de mélanger les calculs et les blocs de texte. Dans chaque modèle de texte, utilisez la première \<# de bloc de code de # > pour définir des variables et effectuer des calculs complexes. Dans le premier bloc de texte jusqu'à la fin du modèle ou la première \<fonctionnalité de classe #+ bloc #>, évitez d’expressions longues et éviter les boucles et les instructions conditionnelles, sauf si elles contiennent des blocs de texte. Cette pratique rend le modèle plus facile à lire et à gérer.
+## <a name="guidelines-for-all-t4-templates"></a>Instructions pour tous les modèles T4
+ Collecte de données distinct à partir de la génération de texte essayez d’éviter de mélanger les calculs et les blocs de texte. Dans chaque modèle de texte, utilisez la première \<# de bloc de code de # > pour définir des variables et effectuer des calculs complexes. À partir du premier bloc de texte jusqu'à la fin du modèle ou la première \<fonctionnalité de classe #+ bloquer #>, éviter les expressions longues et éviter les boucles et des instructions conditionnelles, sauf si elles contiennent des blocs de texte. Cette pratique rend le modèle plus facile à lire et à gérer.
 
  N’utilisez pas `.tt` pour inclure les fichiers utilisent une extension de nom de fichier différent tel que `.ttinclude` pour les fichiers include. Utilisez `.tt` uniquement pour les fichiers que vous souhaitez être traités comme exécution soit au moment du design des modèles de texte. Dans certains cas, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] reconnaît `.tt` fichiers et définit automatiquement leurs propriétés pour le traitement.
 
- Démarrer chaque modèle comme un prototype fixe.
-Écrivez un exemple de code ou du texte que vous souhaitez générer et assurez-vous qu’il est correct. Puis remplacez son extension .tt et insérez le code qui modifie le contenu en lisant le modèle de façon incrémentielle.
+ Commencez chaque modèle comme un prototype fixe.
+Écrire un exemple de code ou du texte que vous souhaitez générer et assurez-vous qu’il est correct. Puis remplacez son extension .tt et insérez le code qui modifie le contenu en lisant le modèle de façon incrémentielle.
 
  Envisagez d’utiliser des modèles typés.
-Bien que vous pouvez créer un schéma XML ou de base de données pour vos modèles, il peut être utile de créer un langage spécifique à un domaine (DSL). Une DSL présente l’avantage qu’il génère une classe pour représenter chaque nœud dans le schéma et des propriétés pour représenter les attributs. Cela signifie que vous pouvez programmer le modèle d’entreprise. Par exemple :
+Bien que vous pouvez créer un schéma XML ou de base de données pour vos modèles, il peut être utile de créer un langage spécifique du domaine (DSL). Une solution DSL présente l’avantage qu’elle génère une classe pour représenter chaque nœud dans le schéma et les propriétés pour représenter les attributs. Cela signifie que vous pouvez programmer le modèle d’entreprise. Exemple :
 
 ```
 Team Members:
@@ -139,11 +139,11 @@ Team Members:
 ```
 
  Envisagez d’utiliser des diagrammes pour vos modèles.
-De nombreux modèles sont plus efficacement présentées et gérés simplement comme des tables de texte, en particulier s’ils sont très volumineux.
+De nombreux modèles de présenter plus efficacement et gérés simplement comme des tables de texte, en particulier si elles sont très volumineuses.
 
- Toutefois, pour certains types de besoins de l’entreprise, il est important de clarifier les jeux complexes de relations et de flux de travail et les diagrammes sont le support le mieux adapté. Le des avantages d’un diagramme sont qu’il est facile de discuter avec les utilisateurs et les autres parties prenantes. En générant le code à partir d’un modèle au niveau des besoins de l’entreprise, vous rendez votre code plus flexible lorsque les spécifications changent.
+ Toutefois, pour certains types de besoins de l’entreprise, il est important de clarifier les jeux complexes de relations et de flux de travail et les diagrammes sont le support le mieux adapté. Un avantage d’un diagramme est qu’il est facile de discuter avec les utilisateurs et les autres parties prenantes. En générant le code à partir d’un modèle au niveau des besoins de l’entreprise, vous rendez votre code plus flexible lorsque les besoins changent.
 
- Vous pouvez également concevoir votre propre type de diagramme comme un langage spécifique à un domaine (DSL). Code peut être généré à partir d’UML et DSL. Pour plus d’informations, consultez [analyse et modélisation de l’Architecture](../modeling/analyze-and-model-your-architecture.md).
+ Vous pouvez également concevoir votre propre type de diagramme comme un langage spécifique à un domaine (DSL). Code peut être généré à partir de UML et DSL. Pour plus d’informations, consultez [analyse et la modélisation de l’Architecture](../modeling/analyze-and-model-your-architecture.md).
 
 ## <a name="see-also"></a>Voir aussi
 

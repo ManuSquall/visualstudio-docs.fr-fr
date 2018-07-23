@@ -11,15 +11,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b1df5d53bacaaeb06a4475ab3c5da6b1ce181b8d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0d75627eac18fa20edad222d168c858b073cecae
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952477"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178902"
 ---
 # <a name="model-your-app39s-architecture"></a>Modéliser votre application&#39;architecture s
-Pour vous assurer que votre application ou votre système logiciel répond à vos utilisateurs a besoin, vous pouvez créer des modèles dans Visual Studio en tant que partie de la description de la structure globale et du comportement de votre application ou votre système logiciel. Avec des modèles, vous pouvez également décrire des modèles utilisés tout au long de la conception. Ces modèles vous aident à comprendre l'architecture existante, à discuter des modifications et à communiquer clairement vos intentions.
+Pour vous assurer que votre application ou votre système logiciel répond à vos utilisateurs a besoin, vous pouvez créer des modèles dans Visual Studio dans le cadre de votre description de la structure globale et du comportement de votre application ou votre système logiciel. Avec des modèles, vous pouvez également décrire des modèles utilisés tout au long de la conception. Ces modèles vous aident à comprendre l'architecture existante, à discuter des modifications et à communiquer clairement vos intentions.
 
  Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -32,7 +32,7 @@ Pour vous assurer que votre application ou votre système logiciel répond à vo
 
 -   [Conception de haut niveau](#Structure). Cette section décrit les principaux composants et comment ils interagissent pour répondre à chaque spécification. Si le système est grand, chaque composant peut avoir sa propre conception de haut niveau qui montre comment il est constitué de composants plus petits.
 
--   [Modèles de conception](#Patterns) et conventions utilisées dans les conceptions de composants. Un modèle décrit une approche particulière visant à atteindre un objectif de programmation. En utilisant les mêmes modèles lors de toutes les phases de conception, votre équipe peut réduire le coût des modifications et du développement de nouveaux logiciels.
+-   [Modèles de conception](#Patterns) et les conventions utilisées dans les conceptions des composants. Un modèle décrit une approche particulière visant à atteindre un objectif de programmation. En utilisant les mêmes modèles lors de toutes les phases de conception, votre équipe peut réduire le coût des modifications et du développement de nouveaux logiciels.
 
 ##  <a name="Structure"></a> Conception de haut niveau
  Une conception de haut niveau décrit les principaux composants de votre système et la façon dont ils interagissent pour atteindre les objectifs de la conception. Le développement de la conception de haut niveau implique d'effectuer les activités dans la liste ci-dessous, mais pas nécessairement dans un ordre particulier.
@@ -41,14 +41,14 @@ Pour vous assurer que votre application ou votre système logiciel répond à vo
 
  Dans tous les cas, il est utile de développer les différentes activités en parallèle et de développer le code et les tests à un stade précoce. N'essayez pas de terminer l'un de ces aspects avant d'en commencer un autre. En règle générale, les impératifs et votre compréhension de la meilleure façon de concevoir le système évolueront pendant l'écriture et les tests du code. Vous devez donc commencer par comprendre et coder les caractéristiques principales des impératifs et de votre conception. Remplissez les détails dans les itérations ultérieures du projet.
 
--   [Compréhension des besoins](#Requirements). Le point de départ de toute conception est une vision claire des besoins des utilisateurs.
+-   [Comprendre les impératifs](#Requirements). Le point de départ de toute conception est une vision claire des besoins des utilisateurs.
 
--   [Modèles d’architecture](#BigDecisions). Choix que vous avez effectués concernant les principales technologies et éléments de l'architecture du système.
+-   [Modèles architecturaux](#BigDecisions). Choix que vous avez effectués concernant les principales technologies et éléments de l'architecture du système.
 
 -   Modèle de données des composants et des Interfaces. Vous pouvez dessiner des diagrammes de classes pour décrire les informations passées entre les composants et stockées dans les composants.
 
-##  <a name="Requirements"></a> Présentation de la configuration requise
- Pour développer efficacement la conception de haut niveau d'une application complète, il est préférable de l'associer à un modèle d'impératifs ou autre description des besoins des utilisateurs. Pour plus d’informations sur les modèles de configuration requise, consultez [modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md).
+##  <a name="Requirements"></a> Comprendre les impératifs
+ Pour développer efficacement la conception de haut niveau d'une application complète, il est préférable de l'associer à un modèle d'impératifs ou autre description des besoins des utilisateurs. Pour plus d’informations sur les modèles d’impératifs, consultez [modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md).
 
  Si le système que vous développez est un composant d'un système plus grand, tout ou partie de vos impératifs peuvent être exprimés dans des interfaces de programmation.
 
@@ -66,10 +66,10 @@ Pour vous assurer que votre application ou votre système logiciel répond à vo
 
  La quantité de détails que vous devez mettre dans un modèle d'impératifs ou d'architecture dépend de l'échelle du projet et de la taille et de la distribution de l'équipe. Pour une petite équipe sur un projet de courte durée, le dessin d'un diagramme de classes des concepts métier et de quelques modèles de conception peut suffire. Pour un grand projet distribué sur plusieurs régions, beaucoup plus de détails seront nécessaires.
 
-##  <a name="BigDecisions"></a> Modèles d’architecture
+##  <a name="BigDecisions"></a> Modèles architecturaux
  Lors de la phase initiale de développement, vous devez choisir les principaux éléments et technologies dont dépend la conception. Ces choix porteront sur les aspects suivants :
 
--   Choix technologiques, tels que le choix entre une base de données et un système de fichiers, le choix entre une application en réseau et un client web, et ainsi de suite.
+-   Les choix technologiques, tels que le choix entre une base de données et un système de fichiers et le choix entre une application en réseau et un client web et ainsi de suite.
 
 -   Choix d'infrastructure, tels que le choix entre Windows Workflow Foundation et ADO.NET Entity Framework.
 
@@ -82,7 +82,7 @@ Pour vous assurer que votre application ou votre système logiciel répond à vo
 ##  <a name="Patterns"></a> Modèles de conception
  Un modèle de conception est un plan qui décrit comment concevoir un aspect particulier du logiciel, en particulier un aspect qui se reproduit dans différentes parties du système. En adoptant une approche uniforme dans tout le projet, vous pouvez réduire le coût de conception, garantir la cohérence dans l'interface utilisateur et réduire le coût de gestion et de modification du code.
 
- Certains modèles de conception généraux tels qu'Observer sont bien connus et largement applicables. En outre, il existe des modèles qui sont applicables uniquement à votre projet. Par exemple, dans un système de ventes sur le web, il y aura plusieurs opérations dans le code où des modifications seront apportées à une commande de client. Pour vous assurer que l'état de la commande est affiché correctement à chaque étape, toutes ces opérations doivent suivre un protocole particulier pour mettre à jour la base de données.
+ Certains modèles de conception généraux tels qu'Observer sont bien connus et largement applicables. En outre, il existe des modèles qui sont applicables uniquement à votre projet. Par exemple, dans un système de vente du web, il y aura plusieurs opérations dans le code où les modifications sont apportées à une commande client. Pour vous assurer que l'état de la commande est affiché correctement à chaque étape, toutes ces opérations doivent suivre un protocole particulier pour mettre à jour la base de données.
 
  Une partie du travail d'architecture logicielle consiste à déterminer quels modèles doivent être adoptés dans toute la conception. Il s'agit généralement d'une tâche continue, car de nouveaux modèles et des améliorations de modèles existants seront découverts à mesure que le projet progresse. Il est utile d'organiser le plan de développement pour que vous puissiez tester chacun de vos principaux modèles de conception à un stade précoce.
 

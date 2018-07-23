@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 01028cd0c2a838335cdaab2705bf5c9bbcd73b44
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: e499aea3793e5c496930fe255133d51361e6f394
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548406"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178346"
 ---
 # <a name="how-to-start-debugging-xslt"></a>Comment : démarrer le débogage XSLT
 
@@ -94,4 +94,4 @@ namespace ConsoleApplication
 ## <a name="see-also"></a>Voir aussi
 
 - [Procédure pas à pas : Déboguer une feuille de style XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)
-- [Principes de base du débogueur](../debugger/debugger-basics.md)
+- [Principes de base du débogueur](../debugger/getting-started-with-the-debugger.md)

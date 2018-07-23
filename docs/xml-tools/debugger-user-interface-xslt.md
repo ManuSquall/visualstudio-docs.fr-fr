@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f3d9dafc2911e05fd76aadd5b08ad2327969839
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: df50443a4a86e1524f20fa61275364b7c6603fdf
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548200"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176022"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interface utilisateur du débogueur (XSLT)
 
 Cette rubrique décrit les fenêtres et boîtes de dialogue du débogueur. Elle ne présente que les parties de l'interface dont le comportement de débogage est spécifique à XSLT.
 
-Pour plus d’informations, consultez la [référence de l’interface utilisateur de débogage](../debugger/debugging-user-interface-reference.md).
+Pour plus d’informations, consultez le [référence de l’interface utilisateur de débogage](../debugger/debugging-user-interface-reference.md).
 
 ## <a name="locals-window"></a>Fenêtre Variables locales
  La fenêtre Variables locales affiche des informations sur les variables définies dans la feuille de style. Elle comporte trois colonnes d'informations :
@@ -49,7 +49,7 @@ Pour plus d’informations, consultez la [référence de l’interface utilisate
 ## <a name="output-window"></a>Fenêtre Sortie
  La fenêtre Sortie affiche les messages d'erreur éventuels ou les exceptions de sécurité qui se produisent pendant le débogage.
 
- Le débogueur XSLT utilise une fenêtre séparée pour afficher la sortie du débogueur. C’est la même fenêtre utilisée pour afficher la sortie d’un **afficher la sortie XSLT** commande.
+ Le débogueur XSLT utilise une fenêtre séparée pour afficher la sortie du débogueur. C’est la même fenêtre utilisée pour afficher la sortie à partir d’un **afficher la sortie XSLT** commande.
 
 ## <a name="task-list"></a>Liste des tâches
  Le **liste des tâches** répertorie toutes les erreurs de compilation dans la feuille de style. Si vous double-cliquez sur l'erreur, le curseur est déplacé jusqu'à la ligne contenant l'erreur.
@@ -75,7 +75,7 @@ Pour plus d’informations, consultez la [référence de l’interface utilisate
 ## <a name="call-stack-window"></a>Fenêtre Pile des appels
  Le **pile des appels** fenêtre permet d’afficher les noms de fonctions sur la pile des appels, les types de paramètres et les valeurs de paramètre. Les informations de la pile d'appels ne sont affichées que lorsque le programme en cours de débogage est à l'arrêt.
 
- La pile d'appels représente les différents contextes par lesquels passe l'exécution du code XSLT. Par exemple, s’il existe un appel à partir du modèle « a » pour le modèle « b », le modèle « a » et le modèle « b » s’affichent dans le **pile des appels** fenêtre avec le contexte actuel tout en haut de la liste. L'utilisateur peut ainsi voir la requête en cours d'exécution.
+ La pile d'appels représente les différents contextes par lesquels passe l'exécution du code XSLT. Par exemple, si un appel à partir du modèle est « a » au modèle « b », le modèle « a » et le modèle « b » s’affichent dans le **pile des appels** fenêtre avec le contexte actuel tout en haut de la liste. L'utilisateur peut ainsi voir la requête en cours d'exécution.
 
  Si les modèles n'ont pas de nom dans le fichier XSLT, les noms utilisés sont ceux générés par le processeur XSLT.
 
@@ -92,7 +92,7 @@ Pour plus d’informations, consultez la [référence de l’interface utilisate
 
 -   Les fonctions définies par l'utilisateur ne sont pas autorisées.
 
-Pour plus d’informations, consultez [procédure : évaluer une expression XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).
+Pour plus d’informations, consultez [Comment : évaluer une expression XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).
 
 ## <a name="disassembly-window"></a>Code Machine (fenêtre)
  La fenêtre Code machine affiche le code machine généré par le compilateur XSLT. Elle peut s'utiliser de la même façon que toutes les autres fenêtres de code machine Visual Studio.
@@ -102,5 +102,5 @@ Pour plus d’informations, consultez [procédure : évaluer une expression XPa
 ## <a name="see-also"></a>Voir aussi
 
 - [Débogage XSLT](../xml-tools/debugging-xslt.md)
-- [Principes de base du débogueur](../debugger/debugger-basics.md)
+- [Principes de base du débogueur](../debugger/getting-started-with-the-debugger.md)
 - [Inspecter des variables dans les fenêtres automatique et variables locales dans Visual Studio](../debugger/autos-and-locals-windows.md)

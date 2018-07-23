@@ -1,5 +1,5 @@
 ---
-title: Débogage au moment du Design - Visual Studio | Documents Microsoft
+title: Déboguer au moment du Design - Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 02/21/2018
 ms.technology: vs-ide-debug
@@ -17,24 +17,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c569ba018cfaa65cf2fec3edcf0676ef374db225
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f1235e6360ccc5f6c0677f7ec9acb1dd85cad226
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476765"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180176"
 ---
-# <a name="debug-at-design-time-in-visual-studio"></a>Débogage au moment du Design dans Visual Studio
+# <a name="debug-at-design-time-in-visual-studio"></a>Déboguer au moment du Design dans Visual Studio
 
-Dans certains scénarios, vous souhaiterez déboguer du code lors de la conception de temps au lieu de pendant l’exécution de l’application. Ce faire, vous pouvez utiliser la **exécution** fenêtre. Si vous souhaitez déboguer du code XAML qui interagit avec un autre code, tel que le code de liaison de données, vous pouvez utiliser **déboguer** > **attacher au processus** à cet effet.
+Dans certains scénarios, vous souhaiterez déboguer du code lors de la conception de temps au lieu de pendant l’exécution de l’application. Vous pouvez le faire à l’aide de la **immédiat** fenêtre. Si vous souhaitez déboguer du code XAML qui interagit avec un autre code, tel que le code de liaison de données, vous pouvez utiliser **déboguer** > **attacher au processus** pour ce faire.
   
-### <a name="debug-at-design-time-using-the-immediate-window"></a>Débogage au moment du design à l’aide de la fenêtre exécution  
+### <a name="debug-at-design-time-using-the-immediate-window"></a>Déboguer au moment du design à l’aide de la fenêtre exécution  
 
-Vous pouvez utiliser Visual Studio **exécution** fenêtre pour exécuter une fonction ou une sous-routine pendant que votre application n’est pas en cours d’exécution. Si la fonction ou la sous-routine contient un point d’arrêt, Visual Studio interrompt l’exécution au point approprié. Vous pouvez ensuite utiliser les fenêtres du débogueur pour examiner l’état de votre programme. Cette fonctionnalité est appelée débogage au moment du design.  
+Vous pouvez utiliser Visual Studio **immédiat** fenêtre pour exécuter une fonction ou une sous-routine pendant que votre application n’est pas en cours d’exécution. Si la fonction ou une sous-routine contient un point d’arrêt, Visual Studio s’arrête l’exécution au point approprié. Vous pouvez ensuite utiliser les fenêtres du débogueur pour examiner l’état de votre programme. Cette fonctionnalité est appelée débogage au moment du design.  
 
-L’exemple suivant est en Visual Basic, mais la **exécution** fenêtre est également pris en charge dans les applications c# et C++.
+L’exemple suivant est en Visual Basic, mais le **immédiat** fenêtre est également pris en charge dans les applications c# et C++.
   
-1.  Collez le code suivant dans une application console Visual Basic :  
+1.  Collez le code suivant dans une application de console Visual Basic :  
   
     ```vb  
     Module Module1  
@@ -64,43 +64,43 @@ L’exemple suivant est en Visual Basic, mais la **exécution** fenêtre est ég
   
 4.  Vérifiez que le point d’arrêt a été atteint et que la pile des appels est exacte.  
   
-5.  Sur le **déboguer** menu, cliquez sur **continuer**et vérifiez que vous êtes toujours en mode Création.  
+5.  Sur le **déboguer** menu, cliquez sur **continuer**et vérifiez que vous êtes toujours en mode de conception.  
   
-6.  Tapez la commande suivante dans le **exécution** fenêtre : `?MyFunction<enter>`  
+6.  Tapez la commande suivante dans le **immédiat** fenêtre : `?MyFunction<enter>`  
   
-7.  Tapez la commande suivante dans le **exécution** fenêtre : `?MySub<enter>`  
+7.  Tapez la commande suivante dans le **immédiat** fenêtre : `?MySub<enter>`  
   
-8.  Vérifiez que vous atteignez le point d’arrêt et examinez la valeur de la variable statique `i` dans les **variables locales** fenêtre. Il doit avoir la valeur 3.  
+8.  Vérifiez que vous atteignez le point d’arrêt et examinez la valeur de la variable statique `i` dans le **variables locales** fenêtre. Il doit avoir la valeur de 3.  
   
 9. Vérifiez que la pile des appels est exacte.  
   
-10. Sur le **déboguer** menu, cliquez sur **continuer**et vérifiez que vous êtes toujours en mode Création.  
+10. Sur le **déboguer** menu, cliquez sur **continuer**et vérifiez que vous êtes toujours en mode de conception.  
 
-## <a name="debug-at-design-time-from-the-xaml-designer"></a>Débogage au moment du design du concepteur XAML
+## <a name="debug-at-design-time-from-the-xaml-designer"></a>Déboguer au moment du design à partir du concepteur XAML
 
 Il peut être utile déboguer le code-behind à partir du concepteur XAML dans certains scénarios de liaison de données déclarative.
 
-1. Dans votre projet, ajoutez une nouvelle page XAML, tel que *temp.xaml*. Renseigner la nouvelle page XAML. 
+1. Dans votre projet, ajoutez une nouvelle page XAML, tel que *temp.xaml*. La nouvelle page XAML laissez vide. 
 
 1. Compilez votre solution.
 
 1. Ouvrez *temp.xaml*, ce qui charge le concepteur (*UwpSurface.exe* dans une application UWP, ou *XDesProc.exe*) afin que vous pouvez attacher à celui-ci dans les étapes ultérieures. 
 
-1. Ouvrez une nouvelle instance de Visual Studio. Dans la nouvelle instance, ouvrez le **attacher au processus** boîte de dialogue (**déboguer** > **attacher au processus**), définissez la **attacher à** champ au type de code approprié, tel que **le Code managé (CoreCLR)** ou le type de code correct en fonction de votre version de .NET. Sélectionnez le processus de concepteur approprié dans la liste, choisissez **attacher**.
+1. Ouvrez une nouvelle instance de Visual Studio. Dans la nouvelle instance, ouvrez le **attacher au processus** boîte de dialogue (**déboguer** > **attacher au processus**), définissez la **attacher à** champ pour le type de code approprié, tel que **du Code managé (CoreCLR)** ou le type de code correcte en fonction de votre version de .NET. Sélectionnez le processus du concepteur correct dans la liste et choisissez **attacher**.
 
-    Pour la plateforme Windows universelle projets ciblant générer 16299 ou ci-dessus, le processus du concepteur est *UwpSurface.exe*. Pour WPF ou les versions antérieures à 16299 de plateforme Windows universelle, le processus de concepteur est *XDesProc.exe*.
+    Pour UWP, les projets ciblant le build 16299 ou versions ultérieures, le processus du concepteur est *UwpSurface.exe*. Pour WPF ou les versions de UWP antérieures à 16299, le processus du concepteur est *XDesProc.exe*.
 
-1. Alors qu’attaché au processus, basculez vers votre projet, ouvrez le code-behind dans lequel vous voulez déboguer et définir un point d’arrêt.
+1. Même si attaché au processus, basculez vers votre projet, ouvrez le code-behind où vous souhaitez déboguer et définir un point d’arrêt.
 
 1. Enfin, ouvrez la page qui contient le code XAML qui inclut la liaison de données.
 
-    Par exemple, vous pouvez définir un point d’arrêt dans le code de convertisseur de type pour le code XAML suivant, qui lie un contrôle TextBlock au moment du design.
+    Par exemple, vous pouvez définir un point d’arrêt dans le code de convertisseur de type pour le XAML suivant, qui lie un bloc de texte au moment du design.
 
     ```xaml
     <TextBlock Text="{Binding title, ConverterParameter=lower, Converter={StaticResource StringFormatConverter}, Mode=TwoWay}"  />
     ```
-   Lors du chargement de la page, le point d’arrêt est atteint.
+   Lorsque la page se charge, le point d’arrêt est atteint.
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité du débogueur](../debugger/debugger-security.md)   
- [Principes de base du débogueur](../debugger/debugger-basics.md)
+ [Principes de base du débogueur](../debugger/getting-started-with-the-debugger.md)
