@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 68e21e749cd676ec137fa91e6466e4b6b665a990
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: ff3c50274c9860033d247df14c17d5fe745d1893
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056295"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178424"
 ---
 # <a name="about-the-registers-window-in-visual-studio"></a>À propos de la fenêtre registres dans Visual Studio
 Le **inscrit** fenêtre est disponible uniquement si le débogage au niveau des adresses est activé dans le **Options** boîte de dialogue, **débogage** nœud.  
@@ -52,4 +52,4 @@ Le **inscrit** fenêtre est disponible uniquement si le débogage au niveau des 
   
 ## <a name="see-also"></a>Voir aussi  
  [Comment : utiliser la fenêtre Registres](../debugger/how-to-use-the-registers-window.md)   
- [Principes de base du débogueur](../debugger/debugger-basics.md)
+ [Principes de base du débogueur](../debugger/getting-started-with-the-debugger.md)

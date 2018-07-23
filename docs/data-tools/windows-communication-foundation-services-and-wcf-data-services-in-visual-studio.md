@@ -37,18 +37,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e56e1129bfdd4b49dcf5b54614af715a20207750
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: e83a541c9cff15375f8dc0fcdde74119a40713e4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175315"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178876"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Services Windows Communication Foundation et services de données WCF dans Visual Studio
 Visual Studio fournit des outils pour travailler avec Windows Communication Foundation (WCF) et [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], les technologies Microsoft pour la création d’applications distribuées. Cette rubrique fournit une introduction aux services à partir d’un point de vue de Visual Studio. Pour obtenir la documentation complète, consultez [WCF Data Services 4.5](/dotnet/framework/data/wcf/index).
 
 ## <a name="what-is-wcf"></a>Nouveautés WCF ?
- [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] est une infrastructure unifiée pour la création d’applications distribuées sécurisées, fiables, transactionnelles et interopérables. Il remplace les anciennes technologies de communication entre processus tels que les services Web ASMX, .NET Remoting, Enterprise Services (DCOM) et MSMQ. WCF réunit les fonctionnalités de toutes ces technologies dans un modèle de programmation unifié. Cela simplifie l’expérience de développement d’applications distribuées.
+ [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] est une infrastructure unifiée pour la création d’applications distribuées sécurisées, fiables, transactionnelles et interopérables. Il remplace les anciennes technologies de communication entre processus tels que les services web ASMX, .NET Remoting, Enterprise Services (DCOM) et MSMQ. WCF réunit les fonctionnalités de toutes ces technologies dans un modèle de programmation unifié. Cela simplifie l’expérience de développement d’applications distribuées.
 
 ### <a name="what-are-wcf-data-services"></a>Que sont les Services de données WCF
  [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] est une implémentation du protocole OData (Open Data) standard.  WCF Data Services vous permet de qu'exposer des données tabulaires en tant qu’ensemble d’API REST, ce qui vous permet de retourner des données à l’aide de verbes HTTP standard tels que GET, post-traitement, PUT ou DELETE. Sur le côté serveur, WCF Data Services sont en cours remplacées par [API Web ASP.NET](http://www.asp.net/web-api) pour la création de services OData. La bibliothèque de client WCF Data Services continue d’être un bon choix pour consommer des services OData dans une application .NET à partir de Visual Studio (**projet &#124; ajouter une référence de Service**). Pour plus d’informations, consultez [WCF Data Services 4.5](http://go.microsoft.com/fwlink/?LinkID=119952).
@@ -90,7 +90,7 @@ Visual Studio fournit des outils pour travailler avec Windows Communication Foun
  Vous pouvez utiliser les modèles WCF Visual Studio en tant que base pour créer rapidement votre propre service. Vous pouvez ensuite utiliser l’hôte de Service WCF et le Client Test WCF pour déboguer et tester le service. Ces outils fournissent un cycle de test et le débogage rapide et pratique entre eux et éliminent la nécessité de valider un modèle d’hébergement à un stade précoce.
 
 #### <a name="wcf-templates"></a>Modèles WCF
- Modèles WCF Visual Studio fournissent une structure de classe de base pour le développement de service. Plusieurs modèles WCF sont disponibles dans le **ajouter un nouveau projet** boîte de dialogue. Celles-ci incluent les projets de bibliothèque de Service WCF, Sites Web de Service WCF et modèles d’élément de Service WCF.
+ Modèles WCF Visual Studio fournissent une structure de classe de base pour le développement de service. Plusieurs modèles WCF sont disponibles dans le **ajouter un nouveau projet** boîte de dialogue. Citons notamment WCF service lLibrary projets, des sites Web de service WCF et des modèles d’élément de Service WCF.
 
  Lorsque vous sélectionnez un modèle, les fichiers sont ajoutés pour un contrat de service, une implémentation de service et une configuration de service. Tous les attributs nécessaires sont déjà ajoutés, création d’un type de « Hello World » simple du service, et vous ne disposait pas d’écrire du code. Est, bien sûr, voulez-vous ajouter du code pour fournir des fonctions et méthodes pour votre service de monde réel, mais les modèles fournissent la Fondation de base.
 

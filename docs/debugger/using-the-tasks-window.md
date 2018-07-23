@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d840f6c12de20fb613ee27d59395afeb15a5c34b
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 610372abd2aa8b4c45a18f5f1b3b171262308a66
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059269"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179994"
 ---
 # <a name="using-the-tasks-window"></a>Utilisation de la fenêtre Tâches
 
@@ -96,7 +96,7 @@ Le **basculer vers la tâche** commande rend la tâche en cours de la tâche act
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Principes de base du débogueur](../debugger/debugger-basics.md)
+- [Principes de base du débogueur](../debugger/getting-started-with-the-debugger.md)
 - [Débogage du code managé](../debugger/debugging-managed-code.md)
 - [Programmation parallèle](/dotnet/standard/parallel-programming/index)
 - [Le runtime d’accès concurrentiel](/cpp/parallel/concrt/concurrency-runtime)

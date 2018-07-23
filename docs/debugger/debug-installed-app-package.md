@@ -1,5 +1,5 @@
 ---
-title: Déboguer un package d’application installée (UWP) | Documents Microsoft
+title: Déboguer un package d’application installée (UWP) | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 07/17/2017
 ms.technology: vs-ide-debug
@@ -21,61 +21,62 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: ffddb3f49f4603c6f09bb12ef81d4c45bf0210c7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6bb43288b7e5a4dd9241a7492baeed9de1c49890
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37059256"
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Déboguer un package d’application installée dans Visual Studio (UWP)
 
-Vous pouvez déboguer n’importe quel package d’application installée en cliquant sur **Déboguer > autres cibles de débogage > déboguer le Package d’application installé**. Cette méthode de débogage est disponible pour les applications Windows universelle (UWP) sur ces appareils :
+Vous pouvez déboguer n’importe quel package d’application installé en cliquant sur **Déboguer > autres cibles de débogage > déboguer le Package d’application installé**. Cette méthode de débogage est disponible pour les applications de Windows universelle (UWP) sur ces appareils :
 
 * Windows 10 (non pris en charge sur les téléphones)
 * XBox
 * HoloLens
 * IoT
 
-Pour plus d’informations sur ces fonctionnalités, voir le blog sur les mises à jour pour [débogage installé les packages d’application](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/30/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/) et la publication sur [création d’applications Windows universelle (UWP)](https://blogs.msdn.microsoft.com/visualstudio/2016/08/02/universal-windows-apps-targeting-windows-10-anniversary-sdk/).
+Pour plus d’informations sur ces fonctionnalités, consultez le blog sur les mises à jour pour [débogage installé des packages d’application](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/30/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/) et le billet sur [création d’applications de Windows universelle (UWP)](https://blogs.msdn.microsoft.com/visualstudio/2016/08/02/universal-windows-apps-targeting-windows-10-anniversary-sdk/).
 
-## <a name="debug-an-installed-app-package-or-running-app-on-a-local-machine-or-device"></a>Déboguer un Package d’application installé ou l’application en cours d’exécution sur un ordinateur Local ou un périphérique
+## <a name="debug-an-installed-app-package-or-running-app-on-a-local-machine-or-device"></a>Déboguer un Package d’application installé ou l’application en cours d’exécution sur un ordinateur Local ou un appareil
 
-1. Votre projet UWP ouvert dans Visual Studio, cliquez sur **Déboguer > autres cibles de débogage > déboguer le Package d’application installé**.
+1. Votre projet UWP ouverte dans Visual Studio, cliquez sur **Déboguer > autres cibles de débogage > déboguer le Package d’application installé**.
 
-2. Sélectionnez **ordinateur Local** ou **périphérique**.
+2. Sélectionnez **ordinateur Local** ou **appareil**.
 
-     Si vous choisissez **périphérique**, votre ordinateur doit être connecté physiquement à un appareil Windows 10.
+     Si vous choisissez **appareil**, votre ordinateur doit être connecté physiquement à un appareil Windows 10.
 
      ![DebugInstalledAppPackage](../debugger/media/debug-installed-app-pkg.png "DebugInstalledAppPackage")
 
-     En cours d’exécution installé application packages qui s’affichent sous la **en cours d’exécution** nœud. Installation des packages d’application qui ne sont pas en cours d’exécution afficher des sous **pas en cours d’exécution**.
+     En cours d’exécution installé application packages s’affichent sous le **en cours d’exécution** nœud. Installé des packages d’application qui ne sont pas en cours d’exécution show configuration sous **pas en cours d’exécution**.
 
-3. Sélectionnez le nom de l’application que vous souhaitez déboguer sous **en cours d’exécution** ou **pas en cours d’exécution** et choisissez **Démarrer** ou, si l’application est déjà en cours d’exécution, choisissez **Attach**.
+3. Sélectionnez le nom de l’application que vous souhaitez déboguer sous **en cours d’exécution** ou **pas en cours d’exécution** et choisissez **Démarrer** ou, si l’application est déjà en cours d’exécution, choisissez **attacher**.
 
-     Si vous sélectionnez **ne pas lancer, mais déboguer mon code au démarrage**, cela entraîne le débogueur Visual Studio attacher à votre application lorsque vous l’ouvrez à la fois personnalisé. Il s’agit d’un moyen efficace pour déboguer des chemins d’accès de contrôle à partir de [lancement différentes méthodes](/windows/uwp/xbox-apps/automate-launching-uwp-apps), par exemple, activation du protocole avec des paramètres personnalisés.
+     Si vous sélectionnez **ne pas lancer, mais déboguer mon code au démarrage**, cela entraîne le débogueur de Visual Studio s’attache à votre application lorsque vous le lancez à la fois personnalisés. Il s’agit d’un moyen efficace pour déboguer les chemins d’accès de contrôle à partir de [lancement différentes méthodes](/windows/uwp/xbox-apps/automate-launching-uwp-apps), telles que l’activation du protocole avec des paramètres personnalisés.
 
 > [!NOTE]
-> Visual Studio peut également joindre tout processus d’application UWP en cours d’exécution en sélectionnant **déboguer**, puis **attacher au processus**. Attachement à un processus en cours d’exécution ne nécessite pas le projet Visual Studio d’origine, mais le chargement de symboles du processus sera une aide précieuse lors du débogage d’un processus que vous n’avez pas le code d’origine.
+> Visual Studio peut également attacher à n’importe quel processus d’application UWP en cours d’exécution en sélectionnant **déboguer**, puis **attacher au processus**. Attachement à un processus en cours d’exécution ne nécessite pas le projet Visual Studio d’origine, mais le chargement de symboles du processus aidera considérablement lors du débogage d’un processus que vous n’avez pas le code d’origine.
   
 ## <a name="remote"></a> Déboguer une application installée ou en cours d’exécution sur un ordinateur distant 
 
-Lorsque vous déboguez un package d’application installée sur un ordinateur distant pour la première fois, Visual Studio installe la version appropriée des outils à distance pour votre périphérique cible. Votre périphérique cible doit être un ordinateur Windows 10, le périphérique XBox, HoloLens et IoT.
+Lorsque vous déboguez un package d’application installée sur un ordinateur distant pour la première fois, Visual Studio installe la version correcte des outils à distance pour votre appareil cible. Votre appareil cible doit être un ordinateur Windows 10, le périphérique XBox, HoloLens ou IoT.
 
 1. Sur votre appareil Windows 10, activez [mode développeur](/windows/uwp/get-started/enable-your-device-for-development).
 
-2. Si vous vous connectez à un ordinateur distant équipés pre-l’auteur de la mise à jour de Windows 10, tout d’abord manuellement [installer et démarrer le débogueur distant](../debugger/remote-debugging.md).
+2. Si vous vous connectez à un PC distant équipés pre-l’auteur de la mise à jour de Windows 10, tout d’abord manuellement [installez et démarrez le débogueur distant](../debugger/remote-debugging.md).
 
-     Pour un appareil XBox, HoloLens et IoT, appareils et Windows en cours d’exécution mise à jour du créateur de Windows 10, vous n’avez pas besoin d’installer manuellement le débogueur distant. Les outils à distance seront automatiquement installés lorsque vous déployez l’application.
+     Pour un appareil XBox, HoloLens ou IoT et les appareils Windows exécutant Update Windows 10 Creators, vous n’avez pas besoin d’installer manuellement le débogueur distant. Les outils à distance seront automatiquement installés lorsque vous déployez l’application.
 
 3. Cliquez sur **Déboguer > autres cibles de débogage > débogage de Package d’application installé**.
 
-4. Dans la première liste déroulante, choisissez **ordinateur distant**.
+4. Dans la première liste déroulante, choisissez **Machine distante**.
 
 5. Tapez le nom ou l’adresse IP de l’ordinateur que vous voulez attacher.
 
      ![ChooseRemoteComputer](../debugger/media/debug-remote-app-pkg.png "ChooseRemoteComputer")
 
-     Si vous ne pouvez pas attacher à l’aide du nom de l’ordinateur (une fois que vous choisissez **Démarrer**), utilisez l’adresse IP à la place. Utilisez l’adresse IP pour les appareils IoT, HoloLens ou XBox.
+     Si vous ne pouvez pas attacher à l’aide du nom de l’ordinateur (une fois que vous choisissez **Démarrer**), utilisez l’adresse IP à la place. Utilisez l’adresse IP pour les appareils XBox, HoloLens ou IoT.
 
 5. Choisissez le mode d’authentification en sélectionnant une option dans **Mode d’authentification**.
 
@@ -83,14 +84,14 @@ Lorsque vous déboguez un package d’application installée sur un ordinateur d
 
 6. Sélectionnez le nom de l’application que vous souhaitez déboguer sous **en cours d’exécution** ou **pas en cours d’exécution** et choisissez **Démarrer** ou (pour les applications en cours d’exécution) **attacher**.
 
-     Si vous sélectionnez **ne pas lancer, mais déboguer mon code au démarrage**, cela entraîne le débogueur Visual Studio attacher à votre package d’application lorsque vous l’ouvrez à la fois personnalisé. Il s’agit d’un moyen efficace pour déboguer des chemins d’accès de contrôle à partir de [lancement différentes méthodes](/windows/uwp/xbox-apps/automate-launching-uwp-apps), par exemple, activation du protocole avec des paramètres personnalisés.
+     Si vous sélectionnez **ne pas lancer, mais déboguer mon code au démarrage**, cela entraîne le débogueur de Visual Studio s’attache à votre package d’application lorsque vous le lancez à la fois personnalisés. Il s’agit d’un moyen efficace pour déboguer les chemins d’accès de contrôle à partir de [lancement différentes méthodes](/windows/uwp/xbox-apps/automate-launching-uwp-apps), telles que l’activation du protocole avec des paramètres personnalisés.
 
-     Lorsque vous déboguez un package d’application installée sur un appareil XBox, HoloLens et IoT connecté pour la première fois, Visual Studio installe la version correcte du débogueur distant pour votre périphérique cible. Cette opération peut prendre un peu de temps et vous verrez un message ``Starting remote debugger`` alors que cela se produit.
+     Lorsque vous déboguez un package d’application installée sur un appareil connecté XBox, HoloLens ou IoT pour la première fois, Visual Studio installe la version correcte du débogueur distant pour votre appareil cible. Cette opération peut prendre un peu de temps et vous verrez un message ``Starting remote debugger`` alors que cela se produit.
 
      > [!NOTE]
-> À présent, une console XBox ou HoloLens appareil va redémarrer l’application avec le débogueur attaché si elle est déjà en cours d’exécution.
+> À présent, une XBox ou HoloLens appareil va redémarrer l’application avec le débogueur attaché si elle est déjà en cours d’exécution.
 
-Pour plus d’informations sur les options avancées pour le déploiement distant des applications UWP, consultez [déploiement et débogage des applications UWP](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps.md#advanced-remote-deployment-options). 
+Pour plus d’informations sur les options avancées pour le déploiement à distance des applications UWP, consultez [apps]((/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options) UWP déploiement et débogage. 
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage dans Visual Studio](../debugger/index.md)  

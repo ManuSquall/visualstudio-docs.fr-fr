@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 43fe5ab7baf168517f92d1bea1024070e5817669
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 426377d82385cd42de5dd265b0e727a94c0b24d1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175328"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177342"
 ---
 # <a name="save-data-back-to-the-database"></a>Enregistrer les données dans la base de données
 
@@ -185,7 +185,7 @@ Vous pouvez valider les modifications en attente pour le jeu de données en appe
     > [!NOTE]
     > Vous pouvez empêcher l’adaptateur de validation des modifications automatiquement lorsque vous appelez le `Fill` méthode en définissant le `AcceptChangesDuringFill` propriété de l’adaptateur à `false`. Si elle est définie sur `false`, puis le <xref:System.Data.DataRow.RowState%2A> de chaque ligne est insérée lors du remplissage est définie sur <xref:System.Data.DataRowState.Added>.
 
-- Une fois que vous envoyez les modifications de jeu de données à un autre processus, comme un service Web XML.
+- Une fois que vous envoyez les modifications de jeu de données à un autre processus, comme un service web XML.
 
     > [!CAUTION]
     > Validation de la modification de cette façon efface toutes les informations modifiées. Ne pas valider les modifications jusqu'à ce qu’après avoir terminent des opérations nécessitant de votre application pour savoir quelles modifications ont été apportées dans le jeu de données.

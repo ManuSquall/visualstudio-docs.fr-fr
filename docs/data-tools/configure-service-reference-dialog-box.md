@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 93d39aedc04cbdaebc35c892a8393ca394f44898
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: f1b2c37f551bf7b5e0a781b91420881c594ade68
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281064"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180462"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Configurer la référence de service (boîte de dialogue)
 
@@ -50,7 +50,7 @@ Pour accéder à la **configurer la référence de Service** boîte de dialogue,
 
  **Adresse**
 
- Met à jour l’adresse Web dans lesquels une référence de service recherche pour un service. Par exemple, pendant le développement, le service peut être hébergé sur un serveur de développement et transféré ultérieurement vers un serveur de production, ce qui nécessite un changement d’adresse.
+ Met à jour l’adresse web dans lesquels une référence de service recherche pour un service. Par exemple, pendant le développement, le service peut être hébergé sur un serveur de développement et transféré ultérieurement vers un serveur de production, ce qui nécessite un changement d’adresse.
 
 > [!NOTE]
 > L’élément adresse n’est pas disponible lorsque le **configurer la référence de Service** boîte de dialogue s’affiche à partir de la **ajouter une référence de Service, boîte de dialogue**.
@@ -96,7 +96,7 @@ Pour accéder à la **configurer la référence de Service** boîte de dialogue,
 
  **Liste des assemblys référencés**
 
- Contient la liste des assemblys référencés pour le projet ou le site web. Lorsque vous sélectionnez **réutiliser les types dans les assemblys référencés spécifiés**, vous pouvez sélectionner ou effacer des assemblys individuels.
+ Contient une liste d’assemblys référencés pour le projet ou le site Web. Lorsque vous sélectionnez **réutiliser les types dans les assemblys référencés spécifiés**, vous pouvez sélectionner ou effacer des assemblys individuels.
 
  **Ajouter une référence Web**
 

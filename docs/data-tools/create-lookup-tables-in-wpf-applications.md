@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fa14d9e2327288729bd97dd8a656f894e9fcef5d
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 98dbffecc51b19a40b1b54cc9afc654fb850155b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757134"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176126"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Créer des tables de recherche dans les applications WPF
 Le terme *table de recherche* (parfois appelé un *liaison de correspondance*) décrit un contrôle qui affiche des informations à partir d’une table de données basée sur la valeur d’un champ de clé étrangère dans une autre table. Vous pouvez créer une table de recherche en faisant glisser le nœud principal d’une table parente ou de l’objet dans le **des Sources de données** fenêtre sur un contrôle qui est déjà lié à une colonne ou une propriété dans une table enfant connexe.
@@ -36,7 +36,7 @@ Par exemple, considérez une table de `Orders` dans une base de données de vent
 
     -   Jeu de données ou Entity Data Model.
 
-    -   Service de données WCF, service WCF ou service Web. Pour plus d’informations, consultez [Comment : se connecter aux données dans un Service](../data-tools/how-to-connect-to-data-in-a-service.md).
+    -   Service de données WCF, service WCF ou service web. Pour plus d’informations, consultez [Comment : se connecter aux données dans un Service](../data-tools/how-to-connect-to-data-in-a-service.md).
 
     -   Objets. Pour plus d’informations, consultez [lier des objets dans Visual Studio](bind-objects-in-visual-studio.md).
 
