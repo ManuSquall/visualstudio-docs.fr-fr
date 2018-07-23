@@ -18,15 +18,15 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b796bf5b17460425d25ec91f3ecca7c147784039
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: HT
+ms.openlocfilehash: d4fa9ea1538d051aebd025c641c0520197f986ef
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174976"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178385"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Procédure pas à pas : Création d’un Service de données WCF avec WPF et Entity Framework
-Cette procédure pas à pas montre comment créer un simple [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] qui est hébergé dans un [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] application Web et y accéder à partir d’une application Windows Forms.
+Cette procédure pas à pas montre comment créer un simple [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] qui est hébergé dans un [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] application web et y accéder à partir d’une application Windows Forms.
 
 Dans cette procédure pas à pas vous :
 
@@ -60,13 +60,13 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
        Après une courte période, la requête est terminée en cours d’exécution et la base de données Northwind est créé.
 
 ## <a name="creating-the-service"></a>Création du service
-Pour créer un [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)], vous devez ajouter un projet Web, créer un [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)], puis créer le service à partir du modèle.
+Pour créer un [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)], vous ajoutez un projet web, créez un [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)], puis créez le service à partir du modèle.
 
-Dans la première étape, vous ajoutez un projet Web pour héberger le service.
+Dans la première étape, vous ajoutez un projet web pour héberger le service.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-#### <a name="to-create-the-web-project"></a>Pour créer le projet Web
+#### <a name="to-create-the-web-project"></a>Pour créer le projet web
 
 1.  Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**.
 
@@ -164,7 +164,7 @@ Dans les étapes suivantes, vous créez une application cliente de Windows Forms
 
 5.  Dans la barre de menus, choisissez **projet**, **définir comme projet de démarrage**.
 
-Dans l’étape suivante, vous ajoutez une référence de service à le [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] dans le projet Web.
+Dans l’étape suivante, vous ajoutez une référence de service à le [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] dans le projet web.
 
 #### <a name="to-add-a-service-reference"></a>Pour ajouter une référence de service.
 
