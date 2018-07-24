@@ -1,5 +1,5 @@
 ---
-title: La Session de débogage | Documents Microsoft
+title: La Session de débogage | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,17 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf0fd986e5a3c0dbbe515e0338c4ca6007fd4162
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 67734025b70ee6f910ed46f034dcfb1b10135cc3
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098844"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203775"
 ---
-# <a name="debug-session"></a>La Session de débogage
-En termes de l’architecture du débogueur, une **session**:  
+# <a name="debug-session"></a>La session de débogage
+En termes d’architecture du débogueur, une *session*:  
   
--   Est l’ensemble des processus, liés ou non, qui ont été lancée ou attaché à partir d’une seule instance de l’IDE.  
+-   Est l’ensemble de tous les processus, liés ou non, qui ont été lancées ou attaché à une seule instance de l’IDE.  
   
 -   Est implémentée par un gestionnaire de session de débogage (SDM). Pour plus d’informations, consultez [Session Debug Manager](../../extensibility/debugger/session-debug-manager.md).  
   
