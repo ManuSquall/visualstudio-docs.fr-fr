@@ -1,5 +1,5 @@
 ---
-title: Règle d’analyse du code Visual Studio définie la référence
+title: Règles d’analyse du code Visual Studio définir la référence
 ms.date: 04/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -11,15 +11,32 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c42e9fcc2f136f6f13ac1c36598210a51b460d1c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 743aeed3ffe71e9362d19406b64960e839fc90f1
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920836"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204399"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Référence d’ensemble de règles d’analyse du code
 
-Lorsque vous configurez l’analyse du code pour les projets de code managé dans Visual Studio, vous pouvez choisir parmi une liste d’intégré *ensembles de règles*. Vous pouvez utiliser l’un de ces ensembles de règles intégrés, ou vous pouvez [personnaliser un ensemble de règles](../code-quality/how-to-create-a-custom-rule-set.md) en fonction des spécifications de votre projet.
+Lorsque vous configurez l’analyse statique du code pour les projets de code managé dans Visual Studio, vous pouvez choisir parmi une liste des intégré *ensembles de règles*. Vous pouvez utiliser un de ces ensembles de règles intégrés, ou vous pouvez [personnaliser un ensemble de règles](../code-quality/how-to-create-a-custom-rule-set.md) en fonction des spécifications de votre projet.
 
-Les rubriques de cette section décrivent la règle intégrée ensembles de règles (et les avertissements) qu’ils contiennent.
+Les rubriques de cette section décrivent les règles intégrées d’ensembles de règles (et les avertissements) qu’ils contiennent.
+
+> [!NOTE]
+> Les ensembles de règles dans cette section se rapportent à l’analyse statique du code. Pour plus d’informations sur les ensembles de règles disponibles pour les packages d’analyseur Roslyn, consultez [des ensembles de règles d’utilisation avec des analyseurs de Roslyn](analyzer-rule-sets.md).
+
+- [Ensemble de règles de toutes les règles](all-rules-rule-set.md)
+- [Ensemble de règles de règles de vérification de base pour le code managé](basic-correctness-rules-rule-set-for-managed-code.md)
+- [Ensemble de règles de règles de conception de base pour le code managé](basic-design-guideline-rules-rule-set-for-managed-code.md)
+- [Ensemble de règles de règles de vérification étendue pour le code managé](extended-correctness-rules-rule-set-for-managed-code.md)
+- [Ensemble de règles de règles de conception étendue pour le code managé](extended-design-guidelines-rules-rule-set-for-managed-code.md)
+- [Ensemble de règles des règles de globalisation pour le code managé](globalization-rules-rule-set-for-managed-code.md)
+- [Règles de règles minimales managées défini pour le code managé](managed-minimum-rules-rule-set-for-managed-code.md)
+- [Ensemble de règles des règles recommandées managées pour le code managé](managed-recommended-rules-rule-set-for-managed-code.md)
+- [Ensemble de règles des règles minimales mixtes](mixed-minimum-rules-rule-set.md)
+- [Ensemble de règles des règles recommandées mixtes](mixed-recommended-rules-rule-set.md)
+- [Ensemble de règles des règles minimales natives](native-minimum-rules-rule-set.md)
+- [Ensemble de règles des règles recommandées natives](native-recommended-rules-rule-set.md)
+- [Ensemble de règles des règles de sécurité pour le code managé](security-rules-rule-set-for-managed-code.md)

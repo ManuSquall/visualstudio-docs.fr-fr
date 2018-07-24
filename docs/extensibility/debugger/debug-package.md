@@ -1,5 +1,5 @@
 ---
-title: Déboguer le Package | Documents Microsoft
+title: Déboguer le Package | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,21 +13,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ca438b7ed8c9b6a4b84693f975144040f998f01
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 04eb6802cabd4ae36151580c573d28b977ca348e
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110027"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204042"
 ---
-# <a name="debug-package"></a>Déboguer le Package
-Le package de débogage s’exécute dans le shell Visual Studio et gère l’ensemble de l’interface utilisateur. Il consomme les interfaces de débogage Visual Studio et communique avec le Gestionnaire de session de débogage (SDM).  
+# <a name="debug-package"></a>Déboguer le package
+Le package de débogage s’exécute dans le shell Visual Studio et traite l’intégralité de l’interface utilisateur. Il consomme les interfaces de débogage Visual Studio et communique avec le Gestionnaire de session de débogage (SDM).  
   
- Événements d’arrêt envoyés via le SDM basculer le débogueur du mode exécution pour le mode arrêt et déplacer le focus vers le programme où l’arrêt s’est produit. Le package de débogage effectue le suivi de la frame de pile et d’un thread à partir des informations qui lui sont envoyées par les événements.  
+ Événements d’arrêt envoyés via le SDM basculer le débogueur du mode exécution pour le mode arrêt et déplacer le focus vers le programme où l’arrêt s’est produit. Le package de débogage effectue le suivi de la frame de pile et thread à partir des informations qui lui sont envoyées par les événements.  
   
- Le package de débogage n’a aucun langage ou les dépendances de l’environnement d’exécution. Il n’est pas nécessaire d’implémenter ou de modifier le package de débogage.  
+ Le package de débogage n’a aucune langue ou les dépendances de l’environnement d’exécution. Il n’est pas nécessaire d’implémenter ou de modifier le package de débogage.  
   
- Le package de débogage est implémenté par vsdebug.dll.  
+ Le package de débogage est implémenté par *vsdebug.dll*.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Gestionnaire de session de débogage](../../extensibility/debugger/session-debug-manager.md)   

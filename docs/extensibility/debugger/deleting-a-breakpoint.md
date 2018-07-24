@@ -1,5 +1,5 @@
 ---
-title: Suppression d’un point d’arrêt | Documents Microsoft
+title: Suppression d’un point d’arrêt | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bff63c243590db91ea97055943b89d73ea00308
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc85104ca02922c1a28152d75550a821598d7b1e
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104428"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203863"
 ---
 # <a name="deleting-a-breakpoint"></a>Suppression d’un point d’arrêt
 La section suivante décrit le processus lors de la suppression d’un point d’arrêt en attente :  
@@ -31,4 +31,4 @@ La section suivante décrit le processus lors de la suppression d’un point d�
 >  Un seul point d’arrêt lié peut également être supprimée par un appel à [IDebugBoundBreakpoint2::Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Événements d’appel du débogueur](../../extensibility/debugger/calling-debugger-events.md)
+ [Appeler des événements de débogueur](../../extensibility/debugger/calling-debugger-events.md)

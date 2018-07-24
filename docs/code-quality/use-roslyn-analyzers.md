@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 81a26c4aa8ebbf436ba58ee40ceb02ff8f92b0aa
-ms.sourcegitcommit: c87b0d9f65dc7ebe95071f66ea8da4d4bc52d360
+ms.openlocfilehash: 6668b3727e5df17c3d436e37f2edd78a67a79eba
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993913"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204152"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>Configurer et utiliser des règles de l’analyseur Roslyn
 
@@ -79,7 +79,7 @@ La capture d’écran suivante montre les violations de trois mêmes tels qu’i
 
 Vous pouvez modifier le niveau de gravité d’une règle à partir de **l’Explorateur de solutions**, ou à l’intérieur du  *\<nom_projet > .ruleset* fichier est ajouté à la solution une fois que vous modifiez la gravité d’une règle dans  **L’Explorateur de solutions**.
 
-![Fichier de groupe de règles dans l’Explorateur de solutions](media/ruleset-in-solution-explorer.png)
+![Fichier d’ensemble de règles dans l’Explorateur de solutions](media/ruleset-in-solution-explorer.png)
 
 ### <a name="to-set-rule-severity-from-solution-explorer"></a>Définir la gravité de règle à partir de l’Explorateur de solutions
 
@@ -99,7 +99,7 @@ Vous pouvez modifier le niveau de gravité d’une règle à partir de **l’Exp
 
 1. Dans le **Action** colonne, sélectionnez la valeur pour ouvrir la liste déroulante, sélectionnez le niveau de gravité souhaité dans la liste.
 
-   ![Fichier ruleset ouvert dans l’éditeur](media/ruleset-file-in-editor.png)
+   ![Ensemble de règles fichier ouvert dans l’éditeur](media/ruleset-file-in-editor.png)
 
 ## <a name="suppress-violations"></a>Supprimer les violations
 
