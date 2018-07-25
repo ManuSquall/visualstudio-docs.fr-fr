@@ -18,17 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c53dcbec5d41b6aa93eef115bba966076fcfda2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ea9b35192eb2584f92856e5ab9c50eac22da85f7
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237225"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Guide pratique pour attacher les outils d’analyse des performances à des processus en cours d’exécution ou les en détacher
 Le profileur peut être utilisé pour attacher ou détacher des outils du processus en cours afin de faciliter l’échantillonnage et la collecte des données de performances. Vous pouvez utiliser cette méthode pour profiler un processus lorsque vous voulez éviter de collecter des données sur le temps de chargement de l’application ou pour surveiller les performances d’un processus après qu’il a atteint un certain état.  
   
 > [!NOTE]
->  Les étapes suivantes concernent l’attachement et le détachement de processus à partir de l’environnement de développement intégré (IDE) de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Pour plus d’informations sur l’utilisation des outils en ligne de commande, consultez [Profilage à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md). Pour plus d’informations sur le profilage de services, consultez [Profilage de services](../profiling/command-line-profiling-of-services.md).  
+>  Les étapes suivantes concernent l’attachement et le détachement de processus à partir de l’environnement de développement intégré (IDE) de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Pour plus d’informations sur l’utilisation des outils en ligne de commande, consultez [Profiler à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md). Pour plus d’informations sur le profilage de services, consultez [Profiler des services](../profiling/command-line-profiling-of-services.md).  
   
  Les processus qui peuvent être profilés dépendent des autorisations d’accès utilisateur définies par l’administrateur de l’ordinateur. Un compte d’utilisateur peut, par exemple, disposer d’autorisations pour ce qui suit :  
   
@@ -61,8 +62,8 @@ Le profileur peut être utilisé pour attacher ou détacher des outils du proces
 3.  Cliquez sur **Détacher**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Contrôle de la collecte de données](../profiling/controlling-data-collection.md)   
- [Vue d’ensemble des sessions de performance](../profiling/performance-session-overview.md)   
+ [Contrôler la collecte des données](../profiling/controlling-data-collection.md)   
+ [Vue d’ensemble de la session de performance](../profiling/performance-session-overview.md)   
  [Guide pratique pour démarrer et terminer la collecte des données de performances](../profiling/how-to-start-and-end-performance-data-collection.md)   
  [Profilage et sécurité Windows Vista](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)

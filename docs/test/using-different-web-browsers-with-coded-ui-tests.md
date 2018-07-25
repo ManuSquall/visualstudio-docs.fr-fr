@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0f8efe8f64c166a549080d10432fd0dd7e241f79
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fc998fc5065b49ca68f4a46afa1da94cd3d23b07
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978373"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235061"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Utiliser différents navigateurs web avec des tests codés de l’interface utilisateur
 
@@ -94,7 +94,7 @@ Voici quelques autres informations à connaître :
 
 Vous pouvez configurer la sortie pour inclure des captures d'écran dans les journaux codés de l'interface utilisateur. Pour cela, vous devez définir des paramètres de configuration dans le fichier *QTAgent32.exe.config*. Par défaut, ce fichier est installé à l'endroit suivant :
 
-     *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*
+*%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*
 
 Définissez les valeurs suivantes :
 

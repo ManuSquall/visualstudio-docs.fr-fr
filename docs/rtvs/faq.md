@@ -10,11 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: a8b9dd119aba9a5c28b450db11b2eb380b1872a0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 832d581a4147b8b050da16b1a1f72d8a3909fc35
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235241"
 ---
 # <a name="frequently-asked-questions"></a>FAQ
 
@@ -33,7 +34,7 @@ Un fichier . Non.
 Un fichier . Absolument. Voici quelques exemples que les utilisateurs de R utilisent couramment.
 
 - [VsVim pour les combinaisons de touches vim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
-- [Github](https://marketplace.visualstudio.com/items?itemName=GitHub.GitHubExtensionforVisualStudio)
+- [GitHub](https://marketplace.visualstudio.com/items?itemName=GitHub.GitHubExtensionforVisualStudio)
 - [Éditeur Markdown avec aperçu instantané](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)
 
 Pour en savoir plus, consultez [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
@@ -50,7 +51,7 @@ Un fichier . La version 1.0 de RTVS est en anglais uniquement. La version 1.1 
 
 **Q. J’aime vraiment mes paramètres Visual Studio actuels, mais je veux tester les nouveaux paramètres de science des données. Que dois-je faire ?**
 
-Un fichier . Enregistrez vos paramètres Visual Studio actuels en accédant à **Outils > Importer et exporter les paramètres...**, puis remplacez-les par les paramètres de science des données. Pour restaurer les paramètres enregistrés, utilisez à nouveau la commande **Importer et exporter les paramètres...**.
+Un fichier . Enregistrez vos paramètres Visual Studio actuels en accédant à **Outils** > **Importer et exporter les paramètres**, puis remplacez-les par les paramètres de science des données. Pour restaurer les paramètres enregistrés, utilisez à nouveau la commande **Importer et exporter les paramètres**.
 
 **Q. Puis-je stocker mon projet Visual Studio sur un partage réseau ?**
 
@@ -78,19 +79,19 @@ Un fichier . Non, RTVS prend uniquement en charge les éditions 64 bits de R ex
 
 Un fichier . Oui, vous pouvez utiliser n’importe quel système de gestion de code source intégré à Visual Studio.
 
-**Q. Quels sont les paramètres `.gitignore` recommandés pour un projet RTVS ?**
+**Q. Quels sont les paramètres *.gitignore* recommandés pour un projet RTVS ?**
 
-Un fichier . Github conserve un dépôt principal des fichiers `.gitignore` recommandés. Vous le trouverez ici : [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)
+Un fichier . Github conserve un dépôt principal des fichiers *.gitignore* recommandés. Vous le trouverez ici : [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)
 
 ## <a name="remote-services"></a>Remote Services
 
 Q. **Qu’est-ce que Remote Services dans Visual Studio ?**
 
-Un fichier . Remote R Services pour Visual Studio vous permet de configurer une machine Windows ou Linux, puis de vous y connecter depuis RTVS. Consultez [Configuration des espaces de travail distants](setting-up-remote-r-workspaces.md).
+Un fichier . Remote R Services pour Visual Studio vous permet de configurer une machine Windows ou Linux, puis de vous y connecter depuis RTVS. Consultez [Configurer des espaces de travail distants](setting-up-remote-r-workspaces.md).
 
-Q. **RTVS peut-il se connecter à Microsoft R Server ?**
+Q. **RTVS peut-il se connecter à Microsoft Machine Learning Server ?**
 
-Un fichier . Non, car Microsoft R Server est une technologie différente et ne fournit pas le même mécanisme de connectivité nécessité par RTVS.
+Un fichier . Non, car Microsoft ML Server est une technologie différente et ne fournit pas le même mécanisme de connectivité nécessité par RTVS.
 
 Q. **RTVS peut-il se connecter à une machine virtuelle créée avec l’image de machine virtuelle Science des données sur Azure ?**
 
@@ -98,7 +99,7 @@ Un fichier . Oui. L’image de [machine virtuelle Science des données - Windows
 
 Q : **RTVS peut-il se connecter à une machine distante où R est installé ?**
 
-Pour exécuter le code R sur une machine distante, il doit exister un service qui écoute les demandes, reçoit le code et renvoie les résultats à la machine cliente. C’est ce que fait Remote R Services pour Visual Studio. Consultez [Configuration des espaces de travail distants](setting-up-remote-r-workspaces.md).
+Pour exécuter le code R sur une machine distante, il doit exister un service qui écoute les demandes, reçoit le code et renvoie les résultats à la machine cliente. C’est ce que fait Remote R Services pour Visual Studio. Consultez [Configurer des espaces de travail distants](setting-up-remote-r-workspaces.md).
 
 Q. **Qu’est ce qu’une session à distance ?**
 

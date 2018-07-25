@@ -17,11 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 394c3c7e964b6c9862f75d69a6744d21ad1b8109
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8f06a45dbdf88fad071afcbb96373930501c6ccb
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844597"
 ---
 # <a name="how-to-set-the-current-session"></a>Guide pratique pour définir la session active
 
@@ -37,7 +38,7 @@ Après avoir défini une session comme session active, cliquez sur le bouton **L
 
 ## <a name="see-also"></a>Voir aussi
 
-[Configuration de sessions de performances](../profiling/configuring-performance-sessions.md)  
+[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)  
 [Explorateur de performances, fenêtre](../profiling/performance-explorer-window.md)  
 [Propriétés d’une session de performance](../profiling/performance-session-properties.md)  
-[Vue d’ensemble des sessions de performances](../profiling/performance-session-overview.md)
+[Vue d’ensemble de la session de performance](../profiling/performance-session-overview.md)

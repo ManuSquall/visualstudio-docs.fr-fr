@@ -9,14 +9,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f28ae1e73a22be7e1e9a677df9fb68fc4c954926
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e2301e1c0cf2a90f701e74445d22810e67785999
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750725"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233907"
 ---
-# <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analyse des tests codés de l'interface utilisateur à l'aide des journaux de test codé de l'interface utilisateur
+# <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analyse des tests codés de l’interface utilisateur à l’aide des journaux de test codé de l’interface utilisateur
 
 Les journaux de tests codés de l'interface utilisateur filtrent et enregistrent des informations importantes sur l'exécution de vos tests codés de l'interface utilisateur. Les journaux sont présentés dans un format qui permet de déboguer les problèmes rapidement.
 
@@ -26,7 +26,7 @@ Selon votre scénario, appliquez l’une des méthodes suivantes pour activer le
 
 - Cibler .NET Framework version 4 sans fichier *App.config* présent dans le projet de test :
 
-   1. Ouvrez le fichier **QTAgent32_40.exe.config**. Par défaut, ce fichier se trouve dans *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+   1. Ouvrez le fichier *QTAgent32_40.exe.config*. Par défaut, ce fichier se trouve dans *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
    2. Réglez la valeur de EqtTraceLevel au niveau de journalisation souhaité.
 
@@ -34,7 +34,7 @@ Selon votre scénario, appliquez l’une des méthodes suivantes pour activer le
 
 - Cibler .NET Framework version 4.5 sans fichier *App.config* présent dans le projet de test :
 
-   1. Ouvrez le fichier **QTAgent32.exe.config**. Par défaut, ce fichier se trouve dans *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+   1. Ouvrez le fichier *QTAgent32.exe.config*. Par défaut, ce fichier se trouve dans *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
    2. Réglez la valeur de EqtTraceLevel au niveau de journalisation souhaité.
 
@@ -58,20 +58,20 @@ Selon votre scénario, appliquez l’une des méthodes suivantes pour activer le
 
 ## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Étape 2 : Exécuter votre test codé de l'interface utilisateur et afficher le journal
 
-Quand vous exécutez un test codé de l’interface utilisateur avec les modifications du fichier **QTAgent32.exe.config** en place, vous constatez qu’un lien de sortie figure dans les résultats de l’Explorateur de tests. Des fichiers journaux sont générés non seulement quand votre test échoue, mais aussi quand les tests réussissent si le niveau de trace a la valeur « Commentaires ».
+Quand vous exécutez un test codé de l’interface utilisateur avec les modifications du fichier *QTAgent32.exe.config* en place, vous constatez qu’un lien de sortie figure dans les résultats de l’**Explorateur de tests**. Des fichiers journaux sont générés non seulement quand votre test échoue, mais aussi quand les tests réussissent si le niveau de trace a la valeur « Commentaires ».
 
 1.  Dans le menu **Test**, choisissez **Fenêtres**, puis **Explorateur de tests**.
 
 2.  Dans le menu **Générer** , choisissez **Générer la solution**.
 
-3.  Dans l’Explorateur de tests, sélectionnez le test codé de l’interface utilisateur à exécuter, ouvrez son menu contextuel, puis choisissez **Exécuter les tests sélectionnés**.
+3.  Dans l’**Explorateur de tests**, sélectionnez le test codé de l’interface utilisateur à exécuter, ouvrez son menu contextuel, puis choisissez **Exécuter les tests sélectionnés**.
 
      Les tests automatisés s’exécutent, puis un message indique s’ils sont une réussite ou un échec.
 
     > [!TIP]
-    > Pour afficher l’Explorateur de tests, choisissez **Test** > **Fenêtres**, puis choisissez **Explorateur de tests**.
+    > Pour afficher l’**Explorateur de tests**, choisissez **Test** > **Fenêtres**, puis choisissez **Explorateur de tests**.
 
-4.  Choisissez le lien **Sortie** dans les résultats de l’Explorateur de tests.
+4.  Choisissez le lien **Sortie** dans les résultats de l’**Explorateur de tests**.
 
      ![Lien de sortie dans l'explorateur de tests](../test/media/cuit_htmlactionlog1.png)
 

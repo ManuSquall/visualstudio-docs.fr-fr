@@ -16,11 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb86cc9809bcb620033820b8c422313305d95d53
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fcafc9960f9ff4c053e63b1fc5abfd75bb41c995
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254574"
 ---
 # <a name="modules-view"></a>Vue Modules
 La vue Modules liste les modules des données de profilage. Chaque module est le nœud racine d’une arborescence hiérarchique. Les fonctions profilées du module sont répertoriées sous le nœud du module. Si les données de profilage ont été collectées avec la méthode d’échantillonnage, les informations de ligne figurent sous le nœud de fonction et les données de pointeur d’instruction sont répertoriées sous le nœud de ligne.  
@@ -34,6 +35,6 @@ La vue Modules liste les modules des données de profilage. Chaque module est le
 ## <a name="see-also"></a>Voir aussi  
  [Vue Modules - Données d’instrumentation](../profiling/modules-view-sampling-data.md)   
  [Vue Modules - Données d’instrumentation](../profiling/modules-view-instrumentation-data.md)   
- [Modules, vue - Instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
- [Vue Modules - Échantillonnage](../profiling/modules-view-dotnet-memory-sampling-data.md)   
+ [Modules, vue - instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
+ [Modules, vue - échantillonnage](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [Vue Modules](../profiling/modules-view-contention-data.md)

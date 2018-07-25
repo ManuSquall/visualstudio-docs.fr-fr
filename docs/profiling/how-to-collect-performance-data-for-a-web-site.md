@@ -19,15 +19,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e07594e9b90fabd8e0a2bcc66dd0920db0973aa
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c6843e9287fd53b17329b70d331d0f37b87917f7
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815923"
 ---
-# <a name="how-to-collect-performance-data-for-a-web-site"></a>Procédure : collecte des données de performances pour un site web
+# <a name="how-to-collect-performance-data-for-a-web-site"></a>Guide pratique pour collecter les données de performances d’un site web
 
-Vous pouvez utiliser l’ **Assistant Performance** pour collecter des données de performances pour une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] . Vous pouvez profiler une application web ouverte dans Visual Studio, ou bien un site web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] qui se trouve sur votre ordinateur local et qui n’est pas ouvert dans l’IDE de Visual Studio.
+Vous pouvez utiliser **l’Assistant Performance** pour collecter des données de performances pour une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Vous pouvez profiler une application web ouverte dans Visual Studio, ou bien un site web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] qui se trouve sur votre ordinateur local et qui n’est pas ouvert dans l’IDE de Visual Studio.
 
 > [!NOTE]
 > L’ **Assistant Performance** vous permet d’ajouter des données d’interaction de couche (TIP), des données de performance JScript, ou les deux, aux données de profilage collectées. L’option TIP collecte des données auprès des processus côté serveur. Le profilage JScript collecte des données auprès des scripts qui s’exécutent sur un site web local ou distant. Dans la plupart des cas, vous devez choisir une seule des options.
@@ -48,11 +49,11 @@ Vous pouvez utiliser l’ **Assistant Performance** pour collecter des données 
 
 2. Dans le menu **Analyser**, sélectionnez **Profileur de performances**, **Explorateur de performances**, puis**Démarrer**.
 
-3. Sur la première page de l’Assistant, sélectionnez une méthode de profilage, puis cliquez sur **Suivant**. Pour plus d’informations sur les méthodes de profilage, consultez [Understanding Performance Collection Methods](../profiling/understanding-performance-collection-methods.md) (Fonctionnement des méthodes de collecte des données de performances). Notez que la méthode de profilage du visualiseur concurrentiel n’est pas disponible pour les applications web.
+3. Sur la première page de l’Assistant, sélectionnez une méthode de profilage, puis cliquez sur **Suivant**. Pour plus d’informations sur les méthodes de profilage, consultez [Présenter les méthodes de collecte des performances](../profiling/understanding-performance-collection-methods.md). Notez que la méthode de profilage du visualiseur concurrentiel n’est pas disponible pour les applications web.
 
 4. Dans la liste déroulante **Quelle application voulez-vous cibler pour le profilage ?** , vérifiez que le projet actuel est sélectionné, puis cliquez sur **Suivant**.
 
-5. Sur la troisième page de l’Assistant, vous pouvez choisir d’ajouter des données de profilage d’interaction de couche (TIP), des données du JavaScript s’exécutant dans les pages web, ou les deux.
+5. Dans la troisième page de l’Assistant, vous pouvez choisir d’ajouter des données de profilage d’interaction de couche (TIP), des données du code JavaScript s’exécutant dans les pages web ou les deux.
 
     - Pour collecter l’interaction de couche, cochez la case **Activer le profilage d’interaction de couche** .
 
@@ -62,9 +63,9 @@ Vous pouvez utiliser l’ **Assistant Performance** pour collecter des données 
 
 7. Dans la quatrième page de l’Assistant, cliquez sur **Terminer**.
 
-8. Une session de performance est créée pour l’application [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] et le site web est démarré dans le navigateur. Utilisez les fonctionnalités que vous voulez profiler, puis fermez le navigateur.
+8. Une session de performance est créée pour l’application [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], et le site web est démarré dans le navigateur. Utilisez les fonctionnalités que vous voulez profiler, puis fermez le navigateur.
 
-     Le profileur génère le fichier de données et affiche la vue Résumé des données dans la fenêtre principale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+     Le profileur génère le fichier de données et affiche la vue Résumé des données dans la fenêtre principale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
 
 ## <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>Pour profiler un site web sans ouvrir un projet dans Visual Studio
 
@@ -86,11 +87,11 @@ Vous pouvez utiliser l’ **Assistant Performance** pour collecter des données 
 
      Pour plus d’informations, consultez les pages de propriétés un binaire cible [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] .
 
-6. Sur la troisième page de l’Assistant, vous pouvez choisir d’ajouter des données de profilage d’interaction de couche (TIP), des données du JavaScript s’exécutant dans les pages web, ou les deux.
+6. Dans la troisième page de l’Assistant, vous pouvez choisir d’ajouter des données de profilage d’interaction de couche (TIP), des données du code JavaScript s’exécutant dans les pages web ou les deux.
 
     - Pour collecter l’interaction de couche, cochez la case **Activer le profilage d’interaction de couche** .
 
-    - Pour collecter des données du JavaScript s’exécutant dans les pages web, cochez la case **Profiler JavaScript** .
+    - Pour collecter des données du code JavaScript s’exécutant dans les pages web, cochez la case **Profiler JavaScript**.
 
 7. Cliquez sur **Suivant**.
 
@@ -103,6 +104,6 @@ Vous pouvez utiliser l’ **Assistant Performance** pour collecter des données 
 ## <a name="see-also"></a>Voir aussi
 
 [Vues d’ensemble](../profiling/overviews-performance-tools.md)  
-[Configuration de sessions de performances](../profiling/configuring-performance-sessions.md)  
-[Présentation des valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)  
-[Présentation des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)
+[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)  
+[Comprendre les valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)  
+[Fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)

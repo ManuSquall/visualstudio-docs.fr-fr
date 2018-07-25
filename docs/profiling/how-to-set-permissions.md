@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8c5b6e7878e4000b8263cc772d59ee197f0b62e
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 1c967fd06030fcedd89d95ec22ca806549f5fed4
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845351"
 ---
 # <a name="how-to-set-permissions"></a>Guide pratique pour définir les autorisations
 
@@ -104,7 +105,7 @@ Les membres du groupe Utilisateurs peuvent exécuter les outils de profilage si 
     vsperfcmd /admin:security,allow,<right[,right],<user name|group name>
     ```
 
-     Cette commande accorde au compte \<nom_utilisateur> ou \<nom_groupe> l’accès aux outils de profilage. L’option \<right> détermine les fonctionnalités de profilage accessibles à l’utilisateur. Cette option peut avoir une ou plusieurs des valeurs suivantes :
+     Cette commande accorde au compte \<nom_utilisateur> ou \<nom_groupe> l’accès aux outils de profilage. L’option \<right> détermine les fonctionnalités de profilage accessibles à l’utilisateur. \<right> option peut avoir une ou plusieurs des valeurs suivantes :
 
     - FullAccess : autorise l’accès à toutes les méthodes de profilage, notamment la collecte des données de performance à partir des services, l’échantillonnage et le profilage intersession.
 
@@ -122,6 +123,6 @@ Les membres du groupe Utilisateurs peuvent exécuter les outils de profilage si 
 
 ## <a name="see-also"></a>Voir aussi
 
-[Configuration de sessions de performances](../profiling/configuring-performance-sessions.md)  
+[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)  
 [VSPerfCmd](../profiling/vsperfcmd.md)  
 [Profilage et sécurité Windows Vista](../profiling/profiling-and-windows-vista-security.md)

@@ -19,11 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f34df089219fda6a27e68c59a1b67f1e48a0839
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3c72d0d1cca803996461ccfba9d7f04811b9048e
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844197"
 ---
 # <a name="instruction-pointers-ips-view"></a>Pointeurs d'instruction (IP), vue
 La vue Pointeurs d’instruction vous permet de consulter les instructions spécifiques qui sont exécutées pendant le profilage d’échantillonnage.  
@@ -36,5 +37,5 @@ La vue Pointeurs d’instruction vous permet de consulter les instructions spéc
   
 ## <a name="see-also"></a>Voir aussi  
  [Pointeurs d’instruction (IP), vue - Données d’échantillonnage](../profiling/instruction-pointers-ips-view-sampling-data.md)   
- [Vue Pointeurs d’instructions (IP) - Données d’échantillonnage de mémoire .NET](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
+ [Pointeurs d’instruction (IP), vue - échantillonnage](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
  [Vue Pointeurs d’instruction (IP)](../profiling/instruction-pointers-ips-view-contention-data.md)

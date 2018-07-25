@@ -1,6 +1,6 @@
 ---
 title: Options, Éditeur de texte, C/C++, Mise en forme
-ms.date: 11/04/2016
+ms.date: 04/30/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -11,82 +11,47 @@ dev_langs:
 - CPP
 helpviewer_keywords:
 - Text Editor Options dialog box, formatting
+- ClangFormat
 ms.assetid: cb6f1cbb-5305-48da-a8e8-33fd70775d46
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: mikeblome
+ms.author: mblome
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 913413b4178a087c524ef26173fcbcc8c1d8b09b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ee7fab1564b39b29ae288e96c7aa77e0da21e88c
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946063"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235139"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Options, Éditeur de texte, C/C++, Mise en forme
-Vous permet de modifier le comportement par défaut de l'Éditeur de code lorsque vous programmez en C ou C++.
+
+Utilisez les pages de propriétés pour changer le comportement par défaut de l’Éditeur de code quand vous programmez en C ou C++.
+
+[Pages de propriétés de mise en forme C++](media/cpp-formatting.png)
 
  Pour accéder à cette page, dans la boîte de dialogue **Options**, dans le volet gauche, développez **Éditeur de texte**, développez **C/C++**, puis cliquez sur **Mise en forme**.
 
 > [!NOTE]
 > Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
+## <a name="general-page"></a>Page Général
 
-## <a name="cc-options"></a>Options C/C++
- **Activer les info-bulles Info express automatique**
+Cette page propose des options pour mettre en forme des instructions et des blocs à mesure que vous les tapez.
 
- Cette case à cocher permet d’activer ou de désactiver la fonctionnalité IntelliSense Info express.
+**Visual Studio 2017 version 15.7 et ultérieures** : la page comporte également des options pour la configuration de la prise en charge de [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) version 5.0. ClangFormat est un utilitaire qui simplifie l’application de style et de mise en forme à votre code en fonction d’un ensemble de règles qui peuvent être configurées dans un fichier .clang-format ou _clang-format.
 
-## <a name="inactive-code"></a>Code inactif
- **Afficher les blocs de code inactifs**
+### <a name="configuring-clangformat-options"></a>Configuration des options de ClangFormat
 
- Le code qui est inactif en raison de déclarations `#ifdef` est colorisé différemment pour vous aider à l'identifier.
+Dans Visual Studio 2017 version 15.7 et ultérieures, la prise en charge de ClangFormat est activée par défaut. Vous pouvez choisir parmi ces conventions de mise en forme courantes celles que vous souhaitez appliquer à tous vos projets : LLVM, Google, chrome, Mozilla ou WebKit. Vous pouvez également créer un fichier .clang-format ou _clang-format de définition de format personnalisé. Si un tel fichier est présent dans un dossier de projet, Visual Studio l’utilise pour mettre en forme tous les fichiers de code source dans ce dossier et ses sous-dossiers. 
 
- **Désactiver l’opacité du code inactif**
+Par défaut, Visual Studio exécute clangformat.exe en arrière-plan et applique la mise en forme à mesure que vous tapez au clavier. Vous pouvez également faire en sorte de l’exécuter uniquement pour les commandes de mise en forme appelées manuellement **Mettre en forme le document (Ctrl+K, Ctrl+D)** ou **Mettre en forme la sélection (Ctrl+K, Ctrl+F)**.
 
- Le code inactif peut être identifié en utilisant de la couleur au lieu de la transparence.
 
- **Pourcentage d’opacité du code inactif**
+## <a name="indentation-new-lines-spacing-wrapping-pages"></a>Pages Mise en retrait, Nouvelles lignes et Retour à la ligne
 
- Le degré d'opacité des blocs de code inactifs peut être personnalisé.
-
-## <a name="indentation"></a>Indentation
- **Mettre en retrait les accolades**
-
- Vous pouvez configurer la manière dont les accolades sont alignées lorsque vous appuyez sur ENTRÉE après avoir commencé un bloc de code, tel qu'une fonction ou une boucle `for`. Les accolades peuvent être alignées avec le premier caractère du bloc de code ou mises en retrait.
-
- **Retrait automatique sur les onglets**
-
- Vous pouvez configurer ce qui arrive sur la ligne de code actuelle lorsque vous appuyez sur la touche de tabulation. La ligne est mise en retrait ou un onglet est inséré.
-
-## <a name="miscellaneous"></a>Divers
- **Énumérer les commentaires dans la fenêtre Liste des tâches**
-
- L'éditeur peut rechercher des mots prédéfinis dans les commentaires de fichiers sources ouverts. Il crée une entrée dans la fenêtre **Liste des tâches** pour tous les mots clés qu’il trouve.
-
- **Surligner les jetons correspondants**
-
- Lorsque le curseur se trouve à côté d'une accolade, l'éditeur peut mettre en surbrillance l'accolade correspondante afin que vous puissiez consulter le code contenu plus facilement.
-
-## <a name="outlining"></a>mode Plan
- **Passer en mode Plan à l’ouverture des fichiers**
-
- Lorsque vous ouvrez un fichier dans l’éditeur de texte, vous pouvez activer la fonctionnalité mode Plan. Pour plus d’informations, voir [Mode Plan](../../ide/outlining.md). Lorsque cette option est sélectionnée, la fonctionnalité mode Plan est activée à l’ouverture d’un fichier.
-
- **Mode Plan automatique des blocs #pragma region**
-
- Quand cette option est sélectionnée, le mode Plan automatique pour les [directives de pragma](/cpp/preprocessor/pragma-directives-and-the-pragma-keyword) est activé. Cela vous permet de développer ou de réduire les blocs de région pragma en mode Plan.
-
- **Mode Plan automatique des blocs d’instruction**
-
- Lorsque cette option est sélectionnée, le mode Plan automatique est activé pour les constructions d'instruction suivantes :
-
--   [if-else](/dotnet/csharp/language-reference/keywords/if-else)
-
--   [switch, instruction (C++)](/cpp/cpp/switch-statement-cpp)
-
--   [while, instruction (C++)](/cpp/cpp/while-statement-cpp)
+Ces pages permettent d’effectuer diverses personnalisations de mise en forme, mais elles sont ignorées si ClangFormat est activé.
 
 ## <a name="see-also"></a>Voir aussi
 

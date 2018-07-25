@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 045059c1ab0c33026369b065649c4d4b82a480df
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 89c5727b8bc294ae28f48a6e1fc3194b258b9555
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844425"
 ---
 # <a name="manage-channels"></a>Gérer les canaux
 Dans la **vue Threads** du visualiseur concurrentiel, vous pouvez organiser les canaux pour votre processus afin de pouvoir examiner des modèles particuliers. Vous pouvez trier les canaux, les déplacer vers le haut et vers le bas, ainsi que les masquer ou les afficher.  
@@ -41,7 +42,7 @@ Dans la **vue Threads** du visualiseur concurrentiel, vous pouvez organiser les 
 ## <a name="move-selected-channel-up-or-down"></a>Déplacer le canal sélectionné vers le haut ou vers le bas  
  Vous pouvez utiliser ces contrôles pour déplacer un canal vers le haut ou vers le bas dans la liste. Par exemple, vous pourrez placer les canaux associés côte à côte pour faciliter l’examen d’un modèle particulier ou d’une relation inter-threads.  
   
-## <a name="move-selected-channel-to-top-or-bottom"></a>Déplacer le canal sélectionné en haut ou en bas  
+## <a name="move-selected-channel-to-top-or-bottom"></a>Déplacer le canal sélectionné en haut ou en bas  
  Vous pouvez déplacer des canaux sélectionnés en haut ou en bas de la liste pour pouvoir examiner un modèle particulier, ou faire disparaître certains canaux quand vous en examinez d’autres.  
   
 ## <a name="hide-selected-channels"></a>Masquer les canaux sélectionnés  
@@ -60,6 +61,6 @@ Dans la **vue Threads** du visualiseur concurrentiel, vous pouvez organiser les 
  Si une trace contient des événements de marqueur, vous pouvez utiliser cette commande pour regrouper des canaux de marqueurs sous le thread qui a généré les événements de marqueur.  Les canaux de disques sont déplacés en haut de la liste de canaux, et les canaux GPU sont déplacés en bas.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Contrôle Zoom (vue Threads)](../profiling/zoom-control-threads-view.md)   
+ [Zoom, contrôle (vue Threads)](../profiling/zoom-control-threads-view.md)   
  [Mode Mesure activé/désactivé](../profiling/measure-mode-on-off.md)   
- [Threads, vue](../profiling/threads-view-parallel-performance.md)
+ [Vue Threads](../profiling/threads-view-parallel-performance.md)

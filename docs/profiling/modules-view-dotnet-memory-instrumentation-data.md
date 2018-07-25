@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c04ecdc1de848a95ad9f5051cc9ec54da02a3625
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a0dd74f25ed5dc7f76b9d35ae3d2d9833f8e4ab8
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255523"
 ---
-# <a name="modules-view---net-memory-instrumentation-data"></a>Vue Modules - Données d’instrumentation de la mémoire .NET
+# <a name="modules-view---net-memory-instrumentation-data"></a>Modules, vue - Données d’instrumentation de la mémoire .NET
 La vue Modules des données d’allocation de mémoire .NET collectées à l’aide de la méthode d’instrumentation regroupe les données de mémoire et de minutage selon les modules exécutés dans le cadre de l’exécution du profilage. Les données de profilage pour les fonctions du module sont répertoriées sous le nœud du module.  
   
 ## <a name="general"></a>Général  
@@ -99,6 +100,6 @@ La vue Modules des données d’allocation de mémoire .NET collectées à l’
 |**Temps exclusif d’application min.**|-   Pour une fonction, temps exclusif d’application minimal d’un appel à ce module ou à cette fonction.<br />-   Pour un module, temps exclusif d’application minimal de tous les appels aux fonctions du module.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vue Modules - Échantillonnage](../profiling/modules-view-dotnet-memory-sampling-data.md)   
+ [Modules, vue - échantillonnage](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [Vue Modules - Données d’instrumentation](../profiling/modules-view-instrumentation-data.md)   
  [Vue Modules - Données d’échantillonnage](../profiling/modules-view-sampling-data.md)

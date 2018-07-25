@@ -9,13 +9,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c94e8f2ba852600c14ede7419619c711b70f0b0b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2b1e2291ff5c4b7ff072e45df9e2d32768011bca
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815780"
 ---
-# <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Procédure : filtrer les vues de rapport des outils de profilage de façon à afficher Uniquement mon code
+# <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Guide pratique pour filtrer les vues de rapport des outils de profilage de façon à afficher Uniquement mon code
 
 Visual Studio offre des fonctionnalités de filtrage qui vous permettent d’afficher uniquement le code que vous avez implémenté dans les rapports de performances. Cette fonctionnalité se nomme Uniquement mon code et est activée par défaut. Elle peut être configurée via l’option **Uniquement mon code** de la boîte de dialogue **Options**.
 
@@ -37,4 +38,4 @@ Visual Studio offre des fonctionnalités de filtrage qui vous permettent d’af
 
 ## <a name="see-also"></a>Voir aussi
 
-[Personnalisation des vues des rapports des outils d’analyse des performances](../profiling/customizing-performance-tools-report-views.md)
+[Personnaliser les vues des rapports des outils d’analyse des performances](../profiling/customizing-performance-tools-report-views.md)

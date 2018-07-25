@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a49ab3f00eb74edb3be3f733b3c0d70f8613d862
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4b086e726f45010d2d71395d0c6119625180add3
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815296"
 ---
-# <a name="how-to-create-a-profiling-tools-etw-report"></a>Guide pratique pour créer un rapport Suivi d’événements pour Windows (ETW) des outils de profilage
-Le rapport Suivi d’événements pour Windows (ETW) répertorie les événements de suivi d’événements pour Windows enregistrés dans une session de performances des outils de profilage de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Les données de suivi d’événements pour Windows sont collectées dans un fichier binaire (.etl). Pour plus d’informations sur ce rapport, consultez [Rapport Suivi d’événements pour Windows](../profiling/event-tracing-for-windows-etw-report.md).  
+# <a name="how-to-create-a-profiling-tools-etw-report"></a>Guide pratique pour créer un rapport de suivi d’événements pour Windows (ETW) des outils de profilage
+Le rapport Suivi d’événements pour Windows (ETW) répertorie les événements de suivi d’événements pour Windows enregistrés dans une session de performances des outils de profilage de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Les données ETW sont collectées dans un fichier binaire (.*etl*). Pour plus d’informations sur ce rapport, consultez [Suivi d’événements pour Windows (ETW), rapport](../profiling/event-tracing-for-windows-etw-report.md).  
   
 > [!NOTE]
 >  Vous ne pouvez pas afficher les rapports de suivi d’événements pour Windows dans l’interface pour [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
@@ -26,7 +27,7 @@ Le rapport Suivi d’événements pour Windows (ETW) répertorie les événement
   
 -   Pour plus d’informations sur la collecte des données de suivi d’événements pour Windows à partir d’une invite de commandes, consultez [VSPerfCmd](../profiling/vsperfcmd.md) et [Événements](../profiling/events-vsperfcmd.md).  
   
- Vous générez le rapport de suivi d’événements pour Windows en utilisant la commande **VSReport/summary:etw**. Le fichier .etl qui contient les données de suivi d’événements pour Windows doit être dans le même répertoire que le fichier des données de profilage (.vsp ou .vsps). Par défaut, le rapport est généré sous la forme d’un fichier de valeurs séparées par des virgules (.csv). Pour plus d’informations, consultez [VSPerfReport](../profiling/vsperfreport.md).  
+ Vous générez le rapport de suivi d’événements pour Windows en utilisant la commande **VSReport/summary:etw**. Le fichier .*etl* qui contient les données de suivi d’événements pour Windows doit être dans le même répertoire que le fichier des données de profilage (.*vsp* ou .*vsps*). Par défaut, le rapport est généré sous la forme d’un fichier de valeurs séparées par des virgules (.*csv*). Pour plus d’informations, consultez [VSPerfReport](../profiling/vsperfreport.md).  
   
 ### <a name="to-generate-an-etw-report"></a>Pour générer un rapport Suivi d’événements pour Windows  
   
@@ -36,6 +37,6 @@ Le rapport Suivi d’événements pour Windows (ETW) répertorie les événement
   
     |||  
     |-|-|  
-    |*chemin_outils*|Chemin de l’utilitaire Outils de profilage. Pour plus d’informations, consultez [Spécification du chemin d’accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|  
-    |*fichier_VSP*|Fichier des données de profilage (.vsp ou .vsps). Les chemins complets et partiels sont acceptés.|  
+    |*chemin_outils*|Chemin de l’utilitaire Outils de profilage. Pour plus d’informations, consultez [Spécifier le chemin d’accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|  
+    |*fichier_VSP*|Fichier des données de profilage (.*vsp* ou .*vsps*). Les chemins complets et partiels sont acceptés.|  
     |Xml|Génère un rapport au format XML.|
