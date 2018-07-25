@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 322e0bdc98751cda670206667cc8580bd498f682
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3fc6a1dff49c754c13fb8b94e03f956b3081f075
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752163"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232317"
 ---
-# <a name="tutorial-step-5-use-the-polls-flask-web-project-template"></a>Tutoriel- Étape 5 : Utiliser le modèle Projet web Flask de sondage
+# <a name="step-5-use-the-polls-flask-web-project-template"></a>Étape 5 : Utiliser le modèle de projet web Flask de sondage
 
 **Étape précédente : [Utiliser le modèle Projet web Flask complet](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 
@@ -72,41 +72,41 @@ Visual Studio génère aussi un projet à partir du modèle « Projet web Flask/
 
 ### <a name="examine-the-project-contents"></a>Examiner le contenu du projet
 
-Comme mentionné précédemment, la majorité de ce qui se trouve dans un projet créé à partir du modèle « Projet web Flask de sondage » (et du modèle « Projet web Flask/Jade de sondage ») devrait vous être familière si vous avez exploré les autres modèles de projet dans Visual Studio. Les étapes supplémentaires dans cet article résument les modifications plus importantes et les ajouts, à savoir les modèles de données et les vues supplémentaires.
+Comme mentionné précédemment. la majorité de ce qui se trouve dans un projet créé à partir du modèle « Projet web Flask de sondage » (et du modèle « Projet web Flask/Jade de sondage ») devrait vous être familière si vous avez exploré les autres modèles de projet dans Visual Studio. Les étapes supplémentaires dans cet article résument les modifications plus importantes et les ajouts, à savoir les modèles de données et les vues supplémentaires.
 
 ## <a name="step-5-2-understand-the-data-models"></a>Étape 5-2 : Comprendre les modèles de données
 
 Les modèles de données pour l’application sont des classes Python nommées Poll et Choice, qui sont définies dans `models/__init__.py`. Une instance de Poll représente une question, pour laquelle une collection d’instances de Choice représente les réponses disponibles. Une instance de Poll gère également le nombre total de voix (pour tous les choix) et une méthode pour calculer des statistiques qui sont utilisées pour générer des vues :
 
-    ```python
-    class Poll(object):
-        """A poll object for use in the application views and repository."""
-        def __init__(self, key=u'', text=u''):
-            """Initializes the poll."""
-            self.key = key
-            self.text = text
-            self.choices = []
-            self.total_votes = None
+```python
+class Poll(object):
+    """A poll object for use in the application views and repository."""
+    def __init__(self, key=u'', text=u''):
+        """Initializes the poll."""
+        self.key = key
+        self.text = text
+        self.choices = []
+        self.total_votes = None
 
-        def calculate_stats(self):
-            """Calculates some statistics for use in the application views."""
-            total = 0
-            for choice in self.choices:
-                total += choice.votes
-            for choice in self.choices:
-                choice.votes_percentage = choice.votes / float(total) * 100 \
-                    if total > 0 else 0
-            self.total_votes = total
+    def calculate_stats(self):
+        """Calculates some statistics for use in the application views."""
+        total = 0
+        for choice in self.choices:
+            total += choice.votes
+        for choice in self.choices:
+            choice.votes_percentage = choice.votes / float(total) * 100 \
+                if total > 0 else 0
+        self.total_votes = total
 
-    class Choice(object):
-        """A poll choice object for use in the application views and repository."""
-        def __init__(self, key=u'', text=u'', votes=0):
-            """Initializes the poll choice."""
-            self.key = key
-            self.text = text
-            self.votes = votes
-            self.votes_percentage = None
-    ```
+class Choice(object):
+    """A poll choice object for use in the application views and repository."""
+    def __init__(self, key=u'', text=u'', votes=0):
+        """Initializes the poll choice."""
+        self.key = key
+        self.text = text
+        self.votes = votes
+        self.votes_percentage = None
+```
 
 Ces modèles de données sont des abstractions génériques qui permettent aux vues de l’application d’utiliser différents types de magasins de données sous-jacents, qui sont décrits dans l’étape suivante.
 
@@ -189,32 +189,32 @@ Les étapes suivantes ajoutent la prise en charge d’un magasin de données aut
 
 Au départ, aucun des magasins de données choisis ne contient de sondages : la page d’accueil de l’application affiche donc le message « No polls available » (Pas de sondages disponibles) ainsi que le bouton **Create Sample Polls** (Créer des exemples de sondages). Cependant, une fois que vous avez sélectionné le bouton, la vue change et montre les sondages disponibles. Ce changement se produit via des balises conditionnelles dans `templates\index.html` (certaines lignes vides sont omises par souci de concision) :
 
-    ```html
-    {% extends "layout.html" %}
-    {% block content %}
-    <h2>{{title}}.</h2>
+```html
+{% extends "layout.html" %}
+{% block content %}
+<h2>{{title}}.</h2>
 
-    {% if polls %}
-    <table class="table table-hover">
-        <tbody>
-            {% for poll in polls %}
-            <tr>
-                <td>
-                    <a href="/poll/{{poll.key}}">{{poll.text}}</a>
-                </td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-    {% else %}
-    <p>No polls available.</p>
-    <br />
-    <form action="/seed" method="post">
-        <button class="btn btn-primary" type="submit">Create Sample Polls</button>
-    </form>
-    {% endif %}
-    {% endblock %}
-    ```
+{% if polls %}
+<table class="table table-hover">
+    <tbody>
+        {% for poll in polls %}
+        <tr>
+            <td>
+                <a href="/poll/{{poll.key}}">{{poll.text}}</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>No polls available.</p>
+<br />
+<form action="/seed" method="post">
+    <button class="btn btn-primary" type="submit">Create Sample Polls</button>
+</form>
+{% endif %}
+{% endblock %}
+```
 
 La variable `polls` du modèle provient d’un appel à `repository.get_polls`, qui ne retourne rien jusqu’à ce que le magasin de données soit initialisé.
 
