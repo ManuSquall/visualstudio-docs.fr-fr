@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 39c59d76d10c2028214b2a1ea15ff139000e3080
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 652a9595601c614d18daf175a72404f9570d4162
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970398"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078327"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Créer des stubs de méthodes de tests unitaires avec la commande Créer des tests unitaires
 
@@ -32,15 +32,17 @@ La commande de menu **Créer des tests unitaires** :
 
 * est extensible et prend en charge l’émission de tests aux formats MSTest, MSTest V2, NUnit et xUnit.
 
+* N’est pas encore disponible dans les projets .NET Core.
+
 ## <a name="get-started"></a>Prise en main
 
-Pour commencer, sélectionnez une méthode, un type ou un espace de noms dans l’éditeur de code dans le projet que vous souhaitez tester, ouvrez le menu contextuel et choisissez **Créer des tests unitaires**. Vous ouvrez ainsi la boîte de dialogue **Créer des tests unitaires** où vous pouvez sélectionner les options de création de tests unitaires.
+Pour commencer, sélectionnez une méthode, un type ou un espace de noms dans l’éditeur de code dans le projet que vous souhaitez tester, ouvrez le menu contextuel et choisissez **Créer des tests unitaires**. La boîte de dialogue **Créer des tests unitaires** s’ouvre, où vous pouvez sélectionner les options de création de tests unitaires.
 
 ![Utilisation de la commande Créer des tests unitaires](media/createunittestcommand.png)
 
 ## <a name="setting-unit-test-traits"></a>Définition des caractéristiques des tests unitaires
 
-Si vous prévoyez d’exécuter ces tests dans le cadre du processus d’automatisation des tests, vous pouvez envisager de créer le test dans un autre projet de test (la deuxième option dans la boîte de dialogue ci-dessus) et de définir les caractéristiques pour le test unitaire. Cela vous permet d’inclure ou d’exclure plus facilement ces tests spécifiques dans le cadre d’une intégration ou d’un pipeline de déploiement continu. Les caractéristiques sont définies en ajoutant des métadonnées au test unitaire directement, comme indiqué ci-dessous.
+Si vous prévoyez d’exécuter ces tests dans le cadre du processus d’automatisation des tests, vous pouvez envisager de créer le test dans un autre projet de test (la deuxième option dans la boîte de dialogue ci-dessus) et de définir les caractéristiques pour le test unitaire. Cela vous permet d’inclure ou d’exclure plus facilement ces tests spécifiques dans le cadre d’un pipeline d’intégration continue ou de déploiement continu. Les caractéristiques sont définies en ajoutant des métadonnées au test unitaire directement, comme indiqué ci-dessous.
 
 ![Définition des caractéristiques des tests unitaires](media/createunittest.png)
 
@@ -60,7 +62,7 @@ Les extensions de framework de test sont disponibles dans Visual Studio Marketpl
 
 ## <a name="when-should-i-use-this-feature"></a>Quand dois-je utiliser cette fonctionnalité ?
 
-Utilisez cette fonctionnalité chaque fois que vous devez créer des tests unitaires, mais en particulier quand vous testez le code existant qui a très peu ou pas de couverture de test, et aucune documentation. En d’autres termes, utilisez-la quand la spécification de code est limitée ou inexistante. Elle implémente efficacement une approche semblable aux [tests unitaires intelligents](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/19/introducing-smart-unit-tests.aspx) qui caractérisent le comportement observé du code.
+Utilisez cette fonctionnalité chaque fois que vous devez créer des tests unitaires, mais en particulier quand vous testez le code existant qui a peu ou pas de couverture de test, et aucune documentation. En d’autres termes, utilisez-la quand la spécification de code est limitée ou inexistante. Elle implémente efficacement une approche semblable aux [tests unitaires intelligents](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/19/introducing-smart-unit-tests.aspx) qui caractérisent le comportement observé du code.
 
 Toutefois, cette fonctionnalité est également applicable à la situation où le développeur commence par écrire du code et l’utilise pour amorcer la discipline des tests unitaires. Dans le flux de codage, le développeur peut vouloir rapidement créer un stub de méthode de test unitaire (avec une classe de test et un projet de test appropriés) pour un élément de code spécifique.
 

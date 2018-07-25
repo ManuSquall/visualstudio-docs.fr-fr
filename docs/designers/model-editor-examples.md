@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 798cf3622c5f6bc8462ce475c780ce26190b7ae6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5207c995d79f83df89224d8f44b41986ef21e898
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917434"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978057"
 ---
-# <a name="model-editor-examples"></a>Exemples de l'éditeur de modèle
+# <a name="model-editor-examples"></a>Exemples de l’éditeur de modèle
 
 Les articles de cette section de la documentation contiennent des exemples qui illustrent comment utiliser l’éditeur de modèle.
 
@@ -25,7 +25,7 @@ Les articles de cette section de la documentation contiennent des exemples qui i
 
 |Titre|Description|
 |-----------|-----------------|
-|[Guide pratique pour créer un modèle 3D de base](../designers/how-to-create-a-basic-3-d-model.md)|Décrit comment créer un modèle 3D de base.|
-|[Guide pratique pour modifier le point pivot d’un modèle 3D](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md)|Décrit comment modifier le point pivot et l’échelle d’un modèle 3D.|
-|[Guide pratique pour modéliser un terrain 3D](../designers/how-to-model-3-d-terrain.md)|Décrit comment créer une scène paysage de base.|
-|[Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)|Décrit comment appliquer un nuanceur à un modèle 3D.|
+|[Guide pratique pour créer un modèle 3D de base](../designers/how-to-create-a-basic-3-d-model.md)|Décrit comment créer un modèle 3D de base.|
+|[Guide pratique pour modifier le point pivot d’un modèle 3D](../designers/how-to-modify-the-pivot-point-of-a-3-d-model.md)|Décrit comment modifier le point pivot et l’échelle d’un modèle 3D.|
+|[Guide pratique pour modéliser un terrain 3D](../designers/how-to-model-3-d-terrain.md)|Décrit comment créer une scène paysage de base.|
+|[Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)|Décrit comment appliquer un nuanceur à un modèle 3D.|

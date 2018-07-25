@@ -1,45 +1,45 @@
 ---
-title: Définir le thème de couleur et les polices dans Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Définir le thème de couleur et les polices dans Visual Studio
 ms.date: 11/20/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7024213ca383ee5934df1d413501065b383f7981
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e9132547055ef17e4ecd28274a0b1a3de7dd8ce2
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078223"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Démarrage rapide : personnaliser l’éditeur et l’IDE de Visual Studio
 
-Dans ce démarrage rapide qui dure entre 5 et 10 minutes, nous allons personnaliser le thème de couleur de Visual Studio et deux couleurs de texte dans l’éditeur de texte.
+Dans ce guide de démarrage rapide qui dure entre 5 et 10 minutes, nous allons personnaliser le thème de couleur de Visual Studio et deux couleurs de texte dans l’éditeur de texte.
 
-Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) pour l’installer gratuitement.
+Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour l’installer gratuitement.
 
 ## <a name="set-the-color-theme"></a>Définir le thème de couleur
 
-Le thème de couleur par défaut de Visual Studio 2017 se nomme **Blue** (Bleu). Nous allons le remplacer par le thème **Dark** (Sombre).
+Le thème de couleur par défaut de l’interface utilisateur de Visual Studio 2017 se nomme **Bleu**. Nous allons le remplacer par le thème **Dark** (Sombre).
 
-1. Dans la barre de menus, choisissez **Outils** > **Options**.
+1. Dans la barre de menus, qui est la rangée de menus tels que **Fichier** et **Edition**, choisissez **Outils** > **Options**.
 
 1. Dans la page **Environnement** > **Options générales**, remplacez la sélection du **Thème de couleur** par **Sombre**, puis choisissez **OK**.
 
-   Le thème de couleur de l’IDE est modifié sur **Sombre**.
+   Le thème de couleur de l’environnement de développement (IDE) Visual Studio entier change et devient **Sombre**.
 
-   ![VS en thème Sombre](media/quickstart-personalize-dark-theme.png)
+   ![VS dans le thème Sombre](media/quickstart-personalize-dark-theme.png)
 
 > [!TIP]
-> Vous pouvez installer d’autres thèmes prédéfinis en téléchargeant et en installant **l’éditeur de thème de couleur de Visual Studio** à partir de la [Place de marché Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Une fois cet outil installé, d'autres thèmes de couleurs apparaissent dans la liste déroulante des thèmes de couleurs.
+> Vous pouvez installer d’autres thèmes prédéfinis en téléchargeant et en installant **l’éditeur de thème de couleur de Visual Studio** à partir de la [place de marché Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Une fois cet outil installé, d’autres thèmes de couleurs apparaissent dans la liste déroulante des **thèmes de couleurs**.
 
 ## <a name="change-text-color"></a>Modifier la couleur du texte
 
-Nous allons maintenant personnaliser des couleurs de texte dans l’éditeur. Premièrement, ouvrons un fichier XML pour voir les couleurs par défaut.
+Nous allons maintenant personnaliser des couleurs de texte dans l’éditeur. Tout d’abord, créons un fichier XML pour voir les couleurs par défaut.
 
 1. Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Fichier**.
 
@@ -73,7 +73,7 @@ Nous allons maintenant personnaliser des couleurs de texte dans l’éditeur. Pr
    </Catalog>
    ```
 
-   Notez que les numéros de ligne s’affichent en turquoise et que les attributs XML s’affichent en bleu clair. Nous allons changer la couleur de texte de ces éléments.
+   Notez que les numéros de ligne s’affichent en turquoise et que les attributs XML (tels que `id="bk101"`) s’affichent en bleu clair. Nous allons changer la couleur de texte de ces éléments.
 
    ![Couleurs de police du fichier XML](media/quickstart-personalize-xml-file.png)
 
@@ -81,7 +81,7 @@ Nous allons maintenant personnaliser des couleurs de texte dans l’éditeur. Pr
 
 1. Sous **Environnement**, choisissez la catégorie **Polices et couleurs**.
 
-   Notez que le texte sous **Afficher les paramètres de** indique **Éditeur de texte** &mdash; et c’est ce que nous voulons. Vous pouvez développer la liste déroulante pour voir la liste étendue d’emplacements où vous pouvez personnaliser les polices et la couleur du texte.
+   Notez que le texte sous **Afficher les paramètres de** indique **Éditeur de texte** &mdash; et c’est ce que nous voulons. Développez la liste déroulante pour voir la liste étendue d’emplacements où vous pouvez personnaliser les polices et la couleur du texte.
 
 1. Pour changer la couleur du texte des numéros de ligne, dans la liste **Afficher les éléments**, sélectionnez **Numéro de ligne**. Dans la zone **Premier plan de l’élément**, choisissez **Olive**.
 
@@ -103,5 +103,5 @@ Nous avons seulement exploré deux façons de personnaliser les couleurs dans Vi
 - [Démarrage rapide : codage dans l’éditeur](../ide/quickstart-editor.md)
 - [Démarrage rapide : projets et solutions](../ide/quickstart-projects-solutions.md)
 - [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md)
-- [Personnalisation de l’éditeur](../ide/customizing-the-editor.md)
+- [Personnaliser l’éditeur](../ide/customizing-the-editor.md)
 - [Vue d’ensemble de l’IDE Visual Studio](../ide/visual-studio-ide.md)

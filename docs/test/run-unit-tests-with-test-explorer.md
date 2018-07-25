@@ -1,5 +1,6 @@
 ---
-title: Exécuter des tests unitaires avec l'Explorateur de tests
+title: Exécuter, générer et déboguer des tests unitaires avec l’Explorateur de tests
+description: Découvrez comment exécuter des tests avec l’Explorateur de tests dans Visual Studio. Cette rubrique explique comment activer des séries de tests automatiques après une génération, voir les résultats des tests, regrouper et filtrer la liste de tests, créer des sélections, déboguer les tests et utiliser des raccourcis de test.
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f18086a33c150670466101485770b3541e2afa52
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3733588c1601f07c23ce9d85be9367a148e503de
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752064"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977789"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Exécuter des tests unitaires avec l'Explorateur de tests
 
@@ -44,7 +45,7 @@ Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un gr
 
 - Pour exécuter tous les tests dans une solution, choisissez **Exécuter tout**.
 
-- Pour exécuter tous les tests dans un groupe par défaut, choisissez **Exécuter...** , puis le groupe dans le menu.
+- Pour exécuter tous les tests dans un groupe par défaut, choisissez **Exécuter**, puis le groupe dans le menu.
 
 - Sélectionnez les différents tests à exécuter, ouvrez le menu contextuel pour un test sélectionné, puis choisissez **Exécuter les tests sélectionnés**.
 
@@ -54,7 +55,7 @@ La barre Réussite/Échec en haut de la fenêtre Explorateur de tests est animé
 
 ### <a name="run-tests-after-every-build"></a>Exécuter des tests après chaque génération
 
-|||
+|Bouton|Description|
 |-|-|
 |![Exécuter après les builds](../test/media/ute_runafterbuild_btn.png)|Pour exécuter vos tests unitaires après chaque génération locale, choisissez **Test** dans le menu standard, puis **Exécuter les tests après la génération** dans la barre d'outils de l'Explorateur de tests.|
 
@@ -126,7 +127,7 @@ L'Explorateur de tests vous permet de regrouper vos tests en catégories prédé
 
 Vous pouvez utiliser des filtres de l'Explorateur de tests pour limiter les méthodes de test dans les projets que vous affichez et exécutez.
 
-Quand vous tapez une chaîne dans la zone de recherche de l'Explorateur de tests et appuyez sur Entrée, la liste de tests est filtrée pour afficher uniquement les tests dont les noms qualifiés complets contiennent la chaîne.
+Quand vous tapez une chaîne dans la zone de recherche de l’Explorateur de tests et appuyez sur Entrée, la liste de tests est filtrée pour afficher uniquement les tests dont les noms qualifiés complets contiennent la chaîne.
 
 Pour filtrer selon un autre critère :
 
@@ -153,7 +154,7 @@ Pour filtrer selon un autre critère :
 
 Pour exclure un sous-ensemble des résultats d'un filtre, utilisez la syntaxe suivante :
 
-```
+```cpp
 FilterName:"Criteria" -FilterName:"SubsetCriteria"
 ```
 

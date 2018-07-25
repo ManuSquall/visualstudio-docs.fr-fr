@@ -14,17 +14,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 651570ef83f5f87d96ed27538cc4f6ffd569d41f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 64e9d438547ee27588c08fb522a027cd85432094
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570676"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079697"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Guide pratique pour sélectionner des fichiers dans une build
 Quand vous générez un projet contenant plusieurs fichiers, vous pouvez lister chaque fichier un à un dans le fichier projet ou utiliser des caractères génériques pour inclure tous les fichiers d’un répertoire ou d’un ensemble imbriqué de répertoires.  
   
-## <a name="specifying-inputs"></a>Spécification des entrées  
+## <a name="specify-inputs"></a>Spécifier les entrées  
  Les éléments représentent les entrées d’une build. Pour plus d’informations sur les éléments, consultez [Éléments](../msbuild/msbuild-items.md).  
   
  Pour inclure des fichiers d’une build, vous devez les ajouter à une liste d’éléments dans le fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Plusieurs fichiers peuvent être ajoutés aux listes d’éléments : soit un à un, soit à l’aide de caractères génériques.  
@@ -35,7 +35,7 @@ Quand vous générez un projet contenant plusieurs fichiers, vous pouvez lister 
   
      `<CSFile Include="form1.cs"/>`  
   
-     - ou  
+     ou 
   
      `<VBFile Include="form1.vb"/>`  
   
@@ -48,44 +48,44 @@ Quand vous générez un projet contenant plusieurs fichiers, vous pouvez lister 
   
      `<CSFile Include="form1.cs;form2.cs"/>`  
   
-     - ou  
+     ou 
   
      `<VBFile Include="form1.vb;form2.vb"/>`  
   
-## <a name="specifying-inputs-with-wildcards"></a>Spécification des entrées avec des caractères génériques  
+## <a name="specify-inputs-with-wildcards"></a>Spécifier les entrées avec des caractères génériques  
  Vous pouvez aussi utiliser des caractères génériques pour inclure tous les fichiers de manière récursive ou n’inclure que certains fichiers des sous-répertoires comme entrées d’une build. Pour plus d’informations sur les caractères génériques, consultez [Éléments](../msbuild/msbuild-items.md).  
   
- Les exemples suivants s’appuient sur un projet qui contient des fichiers graphiques dans les répertoires et sous-répertoires suivants, avec le fichier projet situé dans le répertoire Project :  
+ Les exemples suivants s’appuient sur un projet qui contient des fichiers graphiques dans les répertoires et sous-répertoires suivants, avec le fichier projet situé dans le répertoire *Project* :  
   
- Project\Images\BestJpgs  
+ *Project\Images\BestJpgs*  
   
- Project\Images\ImgJpgs  
+ *Project\Images\ImgJpgs*  
   
- Project\Images\ImgJpgs\Img1  
+ *Project\Images\ImgJpgs\Img1*  
   
-#### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>Pour inclure tous les fichiers .jpg du répertoire Images et de ses sous-répertoires  
+#### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>Pour inclure tous les fichiers *.jpg* dans le répertoire *Images* et ses sous-répertoires  
   
 -   Utilisez l’attribut `Include` suivant :  
   
      `Include="Images\**\*.jpg"`  
   
-#### <a name="to-include-all-jpg-files-starting-with-img"></a>Pour inclure tous les fichiers .jpg commençant par « img »  
+#### <a name="to-include-all-jpg-files-starting-with-img"></a>Pour inclure tous les fichiers *.jpg* commençant par *img*  
   
 -   Utilisez l’attribut `Include` suivant :  
   
      `Include="Images\**\img*.jpg"`  
   
-#### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>Pour inclure tous les fichiers figurant dans des répertoires dont les noms se terminent par « jpgs »  
+#### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>Pour inclure tous les fichiers figurant dans des répertoires dont les noms se terminent par *jpgs*  
   
 -   Utilisez l’un des attributs `Include` suivants :  
   
      `Include="Images\**\*jpgs\*.*"`  
   
-     - ou  
+     ou
   
      `Include="Images\**\*jpgs\*"`  
   
-## <a name="passing-items-to-a-task"></a>Passage d’éléments à une tâche  
+## <a name="pass-items-to-a-task"></a>Passer des éléments à une tâche  
  Dans un fichier projet, vous pouvez utiliser la notation @() dans les tâches pour spécifier une liste complète d’éléments comme entrée d’une build. Vous pouvez utiliser cette notation, que vous listiez tous les fichiers un à un ou que vous utilisiez des caractères génériques.  
   
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>Pour utiliser tous les fichiers Visual C# ou Visual Basic comme entrées  
@@ -94,12 +94,12 @@ Quand vous générez un projet contenant plusieurs fichiers, vous pouvez lister 
   
      `<CSC Sources="@(CSFile)">...</CSC>`  
   
-     - ou  
+     ou 
   
      `<VBC Sources="@(VBFile)">...</VBC>`  
   
 > [!NOTE]
->  Vous devez utiliser des caractères génériques avec des éléments pour spécifier les entrées d’une build ; vous ne pouvez pas spécifier les entrées à l’aide de l’attribut `Sources` dans les tâches [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], telles que [Csc](../msbuild/csc-task.md) ou [Vbc](../msbuild/vbc-task.md). L’exemple suivant n’est pas valide dans un fichier projet :  
+>  Vous devez utiliser des caractères génériques avec des éléments pour spécifier les entrées d’une build ; vous ne pouvez pas spécifier les entrées à l’aide de l’attribut `Sources` dans les tâches [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], telles que [Csc](../msbuild/csc-task.md) ou [Vbc](../msbuild/vbc-task.md). L’exemple suivant n’est pas valide dans un fichier projet :  
 >   
 >  `<CSC Sources="*.cs">...</CSC>`  
   
@@ -138,7 +138,7 @@ Quand vous générez un projet contenant plusieurs fichiers, vous pouvez lister 
 ```  
   
 ## <a name="example"></a>Exemple  
- L’exemple de code suivant utilise un caractère générique pour inclure tous les fichiers .cs.  
+ L’exemple de code suivant utilise un caractère générique pour inclure tous les fichiers *.cs*.  
   
 ```xml  
 <Project DefaultTargets="Compile"  
@@ -172,5 +172,5 @@ Quand vous générez un projet contenant plusieurs fichiers, vous pouvez lister 
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : exclure des fichiers de la génération](../msbuild/how-to-exclude-files-from-the-build.md)   
- [Éléments MSBuild](../msbuild/msbuild-items.md)
+ [Guide pratique pour exclure des fichiers de la build](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [Éléments](../msbuild/msbuild-items.md)

@@ -6,6 +6,7 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - file.openproject
+- file.opensolution
 helpviewer_keywords:
 - op command
 - File.OpenProject command
@@ -16,15 +17,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6663ef73f87ea0fa80eb16a3deef6765265882db
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 0ff848ded38b0f59d3894ec4f78dd79ec9d182b8
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704130"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924146"
 ---
 # <a name="open-project-command"></a>Ouvrir un projet, commande
-Ouvre un projet existant.
+
+Ouvre un projet existant ou une solution existante.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,19 +35,23 @@ File.OpenProject filename
 ```
 
 ## <a name="arguments"></a>Arguments
- `filename`
 
- Obligatoire. Chemin complet et nom de fichier du projet à ouvrir.
+`filename`
 
- La syntaxe de l’argument `filename` nécessite que les chemins contenant des espaces utilisent des guillemets.
+Obligatoire. Chemin complet et nom de fichier de la solution ou du projet à ouvrir.
+
+> [!NOTE]
+> La syntaxe de l’argument `filename` nécessite que les chemins contenant des espaces utilisent des guillemets.
 
 ## <a name="remarks"></a>Notes
- La saisie semi-automatique tente de deviner le chemin et le nom de fichier à mesure que vous tapez.
 
- Cette commande n’est pas disponible lors du débogage.
+La saisie semi-automatique tente de deviner le chemin et le nom de fichier à mesure que vous tapez.
+
+Cette commande n’est pas disponible lors du débogage.
 
 ## <a name="example"></a>Exemple
- Cet exemple ouvre le projet [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Test1.
+
+L’exemple suivant ouvre le projet Visual Basic **Test1** :
 
 ```cmd
 >File.OpenProject "C:\My Projects\Test1\Test1.vbproj"
@@ -55,5 +61,5 @@ File.OpenProject filename
 
 - [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Commande, fenêtre](../../ide/reference/command-window.md)
-- [Rechercher/Commande, zone](../../ide/find-command-box.md)
+- [Zone Rechercher/Commande](../../ide/find-command-box.md)
 - [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

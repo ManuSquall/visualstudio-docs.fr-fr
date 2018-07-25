@@ -32,15 +32,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25cea2311043f50ec08937f72d883e9334df2f81
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c06e9a92eb6b6df82e4f45790b877286e6c52725
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575895"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081707"
 ---
-# <a name="link-task"></a>Lier la tâche
-Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur de liens lie des bibliothèques et des fichiers objets COFF (Common Object File Format) pour créer un fichier exécutable (.exe) ou une bibliothèque de liens dynamiques (DLL). Pour plus d’informations, consultez l’article [Options de l’Éditeur de liens](/cpp/build/reference/linker-options).  
+# <a name="link-task"></a>Tâche Link
+Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil de l’éditeur de liens lie des bibliothèques et des fichiers objets COFF (Common Object File Format) pour créer un fichier exécutable (*.exe*) ou une bibliothèque de liens dynamiques (DLL). Pour plus d’informations, consultez [Options de l’éditeur de liens](/cpp/build/reference/linker-options).  
   
 ## <a name="parameters"></a>Paramètres  
  Le tableau ci-dessous décrit les paramètres de la tâche **Link**. La plupart des paramètres de tâche, et quelques ensembles de paramètres, correspondent à une option de ligne de commande.  
@@ -51,7 +51,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Spécifie une liste de fichiers d’entrée à ajouter à la commande.  
   
-     Pour plus d’informations, consultez l’article [Fichiers d’entrée LINK](/cpp/build/reference/link-input-files).  
+     Pour plus d’informations, consultez [Fichiers d’entrée LINK](/cpp/build/reference/link-input-files).  
   
 -   **AdditionalLibraryDirectories**  
   
@@ -67,15 +67,15 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Spécifie les attributs qui sont placés dans la section `dependency` du fichier manifeste.  
   
-     Pour plus d’informations, consultez l’article [/MANIFESTDEPENDENCY (Spécifier les dépendances de manifeste)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Consultez également la page « Publisher Configuration Files » (Fichiers de configuration des serveurs de publication) sur le site web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+     Pour plus d’informations, consultez [/MANIFESTDEPENDENCY (Spécifier les dépendances de manifeste)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Consultez également [Fichiers de configuration des serveurs de publication](https://docs.microsoft.com/en-us/windows/desktop/SbsCs/publisher-configuration-files).  
   
 -   **AdditionalOptions**  
   
      Paramètre **String** facultatif.  
   
-     Liste des options de l’Éditeur de liens indiquées sur la ligne de commande. Par exemple, **"***/option1 /option2 /option#*". Utilisez ce paramètre pour spécifier des options de l’Éditeur de liens qui ne sont pas représentées par un autre paramètre de tâche **Link**.  
+     Liste des options de l’Éditeur de liens indiquées sur la ligne de commande. Par exemple, /\<option1> /\<option2> /\<option#>. Utilisez ce paramètre pour spécifier des options de l’Éditeur de liens qui ne sont pas représentées par un autre paramètre de tâche **Link**.  
   
-     Pour plus d’informations, consultez l’article [Options de l’Éditeur de liens](/cpp/build/reference/linker-options).  
+     Pour plus d’informations, consultez [Options de l’éditeur de liens](/cpp/build/reference/linker-options).  
   
 -   **AddModuleNamesToAssembly**  
   
@@ -83,7 +83,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Ajoute une référence de module à un assembly.  
   
-     Pour plus d’informations, consultez l’article [/ASSEMBLYMODULE (Ajouter un module MSIL à l’assembly)](/cpp/build/reference/assemblymodule-add-a-msil-module-to-the-assembly).  
+     Pour plus d’informations, consultez [/ASSEMBLYMODULE (Ajouter un module MSIL à l’assembly)](/cpp/build/reference/assemblymodule-add-a-msil-module-to-the-assembly).  
   
 -   **AllowIsolation**  
   
@@ -91,7 +91,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Si `true`, le système d’exploitation recherche et charge le manifeste. Si `false`, indique que les DLL sont chargées comme s’il n’existait pas de manifeste.  
   
-     Pour plus d’informations, consultez l’article [/ALLOWISOLATION (Recherche de manifeste)](/cpp/build/reference/allowisolation-manifest-lookup).  
+     Pour plus d’informations, consultez [/ALLOWISOLATION (Recherche de manifeste)](/cpp/build/reference/allowisolation-manifest-lookup).  
   
 -   **AssemblyDebug**  
   
@@ -107,7 +107,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Crée un lien à une ressource .NET Framework dans le fichier de sortie ; le fichier de ressources n’est pas placé dans le fichier de sortie. Spécifiez le nom de la ressource.  
   
-     Pour plus d’informations, consultez l’article [/ASSEMBLYLINKRESOURCE (Lien vers une ressource du .NET Framework)](/cpp/build/reference/assemblylinkresource-link-to-dotnet-framework-resource).  
+     Pour plus d’informations, consultez [/ASSEMBLYLINKRESOURCE (Lien vers une ressource du .NET Framework)](/cpp/build/reference/assemblylinkresource-link-to-dotnet-framework-resource).  
   
 -   **AttributeFileTracking**  
   
@@ -121,7 +121,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Définit une adresse de base pour le programme ou la DLL en cours de génération. Spécifiez `{address[,size] | @filename,key}`.  
   
-     Pour plus d’informations, consultez l’article [/BASE (Adresse de base)](/cpp/build/reference/base-base-address).  
+     Pour plus d’informations, consultez [/BASE (Adresse de base)](/cpp/build/reference/base-base-address).  
   
 -   **BuildingInIDE**  
   
@@ -147,7 +147,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
     -   **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**  
   
-     Pour plus d’informations, consultez l’article [/CLRIMAGETYPE (Spécifier le type d’une image CLR)](/cpp/build/reference/clrimagetype-specify-type-of-clr-image).  
+    Pour plus d’informations, consultez [/CLRIMAGETYPE (Spécifier le type d’une image CLR)](/cpp/build/reference/clrimagetype-specify-type-of-clr-image).  
   
 -   **CLRSupportLastError**  
   
@@ -163,7 +163,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
     -   **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**  
   
-     Pour plus d’informations, consultez l’article [/CLRSUPPORTLASTERROR (Conserver le dernier code d’erreur pour les appels PInvoke)](/cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls).  
+    Pour plus d’informations, consultez [/CLRSUPPORTLASTERROR (Conserver le dernier code d’erreur pour les appels PInvoke)](/cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls).  
   
 -   **CLRThreadAttribute**  
   
@@ -179,7 +179,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
     -   **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**  
   
-     Pour plus d’informations, consultez l’article [/CLRTHREADATTRIBUTE (Définir l’attribut de thread CLR)](/cpp/build/reference/clrthreadattribute-set-clr-thread-attribute).  
+    Pour plus d’informations, consultez [/CLRTHREADATTRIBUTE (Définir l’attribut de thread CLR)](/cpp/build/reference/clrthreadattribute-set-clr-thread-attribute).  
   
 -   **CLRUnmanagedCodeCheck**  
   
@@ -187,7 +187,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Spécifie si l’Éditeur de liens applique **SuppressUnmanagedCodeSecurityAttribute** aux appels P/Invoke générés par l’Éditeur de liens à partir du code managé dans les DLL natives.  
   
-     Pour plus d’informations, consultez l’article [/CLRUNMANAGEDCODECHECK (Ajouter SupressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-supressunmanagedcodesecurityattribute).  
+    Pour plus d’informations, consultez l’article [/CLRUNMANAGEDCODECHECK (Ajouter SupressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-supressunmanagedcodesecurityattribute).  
   
 -   **CreateHotPatchableImage**  
   
@@ -205,7 +205,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
     -   **ItaniumImage** - **/FUNCTIONPADMIN:16**  
   
-     Pour plus d’informations, consultez l’article [/FUNCTIONPADMIN (Créer une image corrigeable en mémoire)](/cpp/build/reference/functionpadmin-create-hotpatchable-image).  
+    Pour plus d’informations, consultez [/FUNCTIONPADMIN (Créer une image corrigeable en mémoire)](/cpp/build/reference/functionpadmin-create-hotpatchable-image).  
   
 -   **DataExecutionPrevention**  
   
@@ -221,7 +221,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Ce paramètre entraîne le *chargement différé* des DLL. Spécifiez le nom d’une DLL dont vous voulez différer le chargement.  
   
-     Pour plus d’informations, consultez l’article [/DELAYLOAD (Différer le chargement de l’importation)](/cpp/build/reference/delayload-delay-load-import).  
+     Pour plus d’informations, consultez [/DELAYLOAD (Différer le chargement de l’importation)](/cpp/build/reference/delayload-delay-load-import).  
   
 -   **DelaySign**  
   
@@ -229,7 +229,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Si `true`, signe partiellement un assembly. Par défaut, la valeur est définie sur `false`.  
   
-     Pour plus d’informations, consultez l’article [/DELAYSIGN (Signer partiellement un assembly)](/cpp/build/reference/delaysign-partially-sign-an-assembly).  
+     Pour plus d’informations, consultez [/DELAYSIGN (Signer partiellement un assembly)](/cpp/build/reference/delaysign-partially-sign-an-assembly).  
   
 -   **Driver**  
   
@@ -247,7 +247,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
     -   **WDM** - **/DRIVER:WDM**  
   
-     Pour plus d’informations, consultez l’article [/DRIVER (Pilote Windows NT en mode noyau)](/cpp/build/reference/driver-windows-nt-kernel-mode-driver).  
+    Pour plus d’informations, consultez [/DRIVER (Pilote Windows NT en mode noyau)](/cpp/build/reference/driver-windows-nt-kernel-mode-driver).  
   
 -   **EmbedManagedResourceFile**  
   
@@ -255,7 +255,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Incorpore un fichier de ressources dans un assembly. Spécifiez le nom du fichier de ressources requis. Spécifiez éventuellement le nom logique, qui permet de charger la ressource, ainsi que l’option **PRIVATE**, qui indique dans le manifeste de l’assembly que le fichier de ressources est privé.  
   
-     Pour plus d’informations, consultez l’article [/ASSEMBLYRESOURCE (Incorporer une ressource managée)](/cpp/build/reference/assemblyresource-embed-a-managed-resource).  
+     Pour plus d’informations, consultez [/ASSEMBLYRESOURCE (Incorporer une ressource managée)](/cpp/build/reference/assemblyresource-embed-a-managed-resource).  
   
 -   **EnableCOMDATFolding**  
   
@@ -277,9 +277,9 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Paramètre **String** facultatif.  
   
-     Spécifie une fonction de point d’entrée comme adresse de départ d’un fichier .exe ou d’une DLL. Spécifiez un nom de fonction comme valeur du paramètre.  
+     Spécifie une fonction de point d’entrée comme adresse de départ d’un fichier *.exe* ou d’une DLL. Spécifiez un nom de fonction comme valeur du paramètre.  
   
-     Pour plus d’informations, consultez l’article [/ENTRY (Symbole de point d’entrée)](/cpp/build/reference/entry-entry-point-symbol).  
+     Pour plus d’informations, consultez [/ENTRY (Symbole de point d’entrée)](/cpp/build/reference/entry-entry-point-symbol).  
   
 -   **FixedBaseAddress**  
   
@@ -287,13 +287,13 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Si `true`, crée un programme ou une DLL qui peuvent être chargés uniquement à leur adresse de base préférée.  
   
-     Pour plus d’informations, consultez l’article [/BASE (Adresse de base fixe)](/cpp/build/reference/fixed-fixed-base-address).  
+     Pour plus d’informations, consultez [/BASE (Adresse de base fixe)](/cpp/build/reference/fixed-fixed-base-address).  
   
 -   **ForceFileOutput**  
   
      Paramètre **String** facultatif.  
   
-     Indique à l’Éditeur de liens de créer un fichier .exe ou une DLL valide même si un symbole est référencé sans être défini ou s’il est défini plusieurs fois.  
+     Indique à l’éditeur de liens de créer un fichier *.exe* ou une DLL valide même si un symbole est référencé sans être défini ou s’il est défini plusieurs fois.  
   
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.  
   
@@ -303,7 +303,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
     -   **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**  
   
-     Pour plus d’informations, consultez l’article [/FORCE (Forcer la sortie d’un fichier)](/cpp/build/reference/force-force-file-output).  
+    Pour plus d’informations, consultez [/FORCE (Forcer la sortie d’un fichier)](/cpp/build/reference/force-force-file-output).  
   
 -   **ForceSymbolReferences**  
   
@@ -311,7 +311,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Ce paramètre indique à l’Éditeur de liens d’ajouter un symbole spécifié à la table de symboles.  
   
-     Pour plus d’informations, consultez l’article [/INCLUDE (Forcer les références des symboles)](/cpp/build/reference/include-force-symbol-references).  
+     Pour plus d’informations, consultez [/INCLUDE (Forcer les références des symboles)](/cpp/build/reference/include-force-symbol-references).  
   
 -   **FunctionOrder**  
   
@@ -319,15 +319,15 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Ce paramètre optimise votre programme en plaçant les fonctions empaquetées spécifiées (COMDAT) dans l’image dans un ordre prédéterminé.  
   
-     Pour plus d’informations, consultez l’article [/ORDER (Mettre les fonctions dans l’ordre)](/cpp/build/reference/order-put-functions-in-order).  
+     Pour plus d’informations, consultez [/ORDER (Mettre les fonctions dans l’ordre)](/cpp/build/reference/order-put-functions-in-order).  
   
 -   **GenerateDebugInformation**  
   
      Paramètre **booléen** facultatif.  
   
-     Si `true`, crée des informations de débogage pour le fichier .exe ou la DLL.  
+     Si la valeur est `true`, crée des informations de débogage pour le fichier *.exe* ou la DLL.  
   
-     Pour plus d’informations, consultez l’article [/DEBUG (Générer les informations de débogage)](/cpp/build/reference/debug-generate-debug-info).  
+     Pour plus d’informations, consultez [/DEBUG (Générer les informations de débogage)](/cpp/build/reference/debug-generate-debug-info).  
   
 -   **GenerateManifest**  
   
@@ -335,15 +335,15 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Si `true`, crée un fichier manifeste côte à côte.  
   
-     Pour plus d’informations, consultez l’article [/MANIFEST (Créer un manifeste d’assembly côte à côte)](/cpp/build/reference/manifest-create-side-by-side-assembly-manifest).  
+     Pour plus d’informations, consultez [/MANIFEST (Créer un manifeste d’assembly côte à côte)](/cpp/build/reference/manifest-create-side-by-side-assembly-manifest).  
   
 -   **GenerateMapFile**  
   
      Paramètre **booléen** facultatif.  
   
-     Si `true`, crée un *fichier de mappage*. L’extension de nom du fichier de mappage est .map.  
+     Si `true`, crée un *fichier de mappage*. L’extension de nom du fichier de mappage est *.map*.  
   
-     Pour plus d’informations, consultez l’article [/MAP (Générer fichier de mappage)](/cpp/build/reference/map-generate-mapfile).  
+     Pour plus d’informations, consultez [/MAP (Générer le fichier de mappage)](/cpp/build/reference/map-generate-mapfile).  
   
 -   **HeapCommitSize**  
   
@@ -351,7 +351,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Spécifie la quantité de mémoire physique sur le tas à allouer à la fois.  
   
-     Pour plus d’informations, consultez l’argument `commit` dans l’article [/HEAP (Définir la taille des tas)](/cpp/build/reference/heap-set-heap-size). Reportez-vous également au paramètre **HeapReserveSize**.  
+     Pour plus d’informations, consultez l’argument `commit` dans [/HEAP (Définir la taille des tas)](/cpp/build/reference/heap-set-heap-size). Reportez-vous également au paramètre **HeapReserveSize**.  
   
 -   **HeapReserveSize**  
   
@@ -359,7 +359,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Spécifie l’allocation totale des tas dans la mémoire virtuelle.  
   
-     Pour plus d’informations, consultez l’argument `reserve` dans l’article [/HEAP (Définir la taille des tas)](/cpp/build/reference/heap-set-heap-size). Reportez-vous également au paramètre **HeapCommitSize** dans ce tableau.  
+     Pour plus d’informations, consultez l’argument `reserve` dans [/HEAP (Définir la taille des tas)](/cpp/build/reference/heap-set-heap-size). Reportez-vous également au paramètre **HeapCommitSize** dans ce tableau.  
   
 -   **IgnoreAllDefaultLibraries**  
   
@@ -367,15 +367,15 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Si `true`, indique à l’Éditeur de liens de supprimer une ou plusieurs bibliothèques par défaut de la liste de recherche des bibliothèques lors de la résolution des références externes.  
   
-     Pour plus d’informations, consultez l’article [/NODEFAULTLIB (Ignorer les bibliothèques)](/cpp/build/reference/nodefaultlib-ignore-libraries).  
+     Pour plus d’informations, consultez [/NODEFAULTLIB (Ignorer les bibliothèques)](/cpp/build/reference/nodefaultlib-ignore-libraries).  
   
 -   **IgnoreEmbeddedIDL**  
   
      Paramètre **booléen** facultatif.  
   
-     Si `true`, spécifie que les attributs IDL définis dans le code source ne doivent pas être traités dans un fichier .idl.  
+     Si la valeur est `true`, spécifie que les attributs IDL définis dans le code source ne doivent pas être traités dans un fichier *.idl*.  
   
-     Pour plus d’informations, consultez l’article [/IGNOREIDL (Ne pas traiter les attributs dans MIDL)](/cpp/build/reference/ignoreidl-don-t-process-attributes-into-midl).  
+     Pour plus d’informations, consultez [/IGNOREIDL (Ne pas traiter les attributs dans MIDL)](/cpp/build/reference/ignoreidl-don-t-process-attributes-into-midl).  
   
 -   **IgnoreImportLibrary**  
   
@@ -391,7 +391,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Spécifie un ou plusieurs noms de bibliothèques par défaut à ignorer. Séparez plusieurs bibliothèques à l’aide de points-virgules.  
   
-     Pour plus d’informations, consultez l’article [/NODEFAULTLIB (Ignorer les bibliothèques)](/cpp/build/reference/nodefaultlib-ignore-libraries).  
+     Pour plus d’informations, consultez [/NODEFAULTLIB (Ignorer les bibliothèques)](/cpp/build/reference/nodefaultlib-ignore-libraries).  
   
 -   **ImageHasSafeExceptionHandlers**  
   
@@ -399,13 +399,13 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Si `true`, l’Éditeur de liens produit une image uniquement s’il peut également produire un tableau des gestionnaires d’exceptions sécurisés de l’image.  
   
-     Pour plus d’informations, consultez l’article [/SAFESEH (L’image est dotée de gestionnaires d’exceptions sécurisés)](/cpp/build/reference/safeseh-image-has-safe-exception-handlers).  
+     Pour plus d’informations, consultez [/SAFESEH (L’image est dotée de gestionnaires d’exceptions sécurisés)](/cpp/build/reference/safeseh-image-has-safe-exception-handlers).  
   
 -   **ImportLibrary**  
   
      Nom de bibliothèque d’importation spécifié par l’utilisateur qui remplace le nom de bibliothèque par défaut.  
   
-     Pour plus d’informations, consultez l’article [/IMPLIB (Nommer la bibliothèque d’importation)](/cpp/build/reference/implib-name-import-library).  
+     Pour plus d’informations, consultez [/IMPLIB (Nommer la bibliothèque d’importation)](/cpp/build/reference/implib-name-import-library).  
   
 -   **KeyContainer**  
   
@@ -413,7 +413,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Conteneur qui contient la clé d’un assembly signé.  
   
-     Pour plus d’informations, consultez l’article [/KEYCONTAINER (Spécifier un conteneur de clé pour signer un assembly)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly). Reportez-vous également au paramètre **KeyFile** de ce tableau.  
+     Pour plus d’informations, consultez [/KEYCONTAINER (Spécifier un conteneur de clé pour signer un assembly)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly). Reportez-vous également au paramètre **KeyFile** de ce tableau.  
   
 -   **KeyFile**  
   
@@ -421,7 +421,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Spécifie un fichier qui contient la clé d’un assembly signé.  
   
-     Pour plus d’informations, consultez l’article [/KEYFILE (Spécifier une clé ou une paire de clés pour signer un assembly)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly). Reportez-vous également au paramètre **KeyContainer**.  
+     Pour plus d’informations, consultez [/KEYFILE (Spécifier une clé ou une paire de clés pour signer un assembly)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly). Reportez-vous également au paramètre **KeyContainer**.  
   
 -   **LargeAddressAware**  
   
@@ -429,7 +429,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Si `true`, l’application peut gérer des adresses supérieures à 2 gigaoctets.  
   
-     Pour plus d’informations, consultez l’article [/LARGEADDRESSAWARE (Gérer les longues adresses)](/cpp/build/reference/largeaddressaware-handle-large-addresses).  
+     Pour plus d’informations, consultez [/LARGEADDRESSAWARE (Gérer les longues adresses)](/cpp/build/reference/largeaddressaware-handle-large-addresses).  
   
 -   **LinkDLL**  
   
@@ -455,7 +455,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
     -   **SendErrorReport** - **/ERRORREPORT:SEND**  
   
-     Pour plus d’informations, consultez l’article [/ERRORREPORT (Signaler les erreurs internes de l’Éditeur de liens)](/cpp/build/reference/errorreport-report-internal-linker-errors).  
+    Pour plus d’informations, consultez [/ERRORREPORT (Signaler les erreurs internes de l’éditeur de liens)](/cpp/build/reference/errorreport-report-internal-linker-errors).  
   
 -   **LinkIncremental**  
   
@@ -463,7 +463,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Si `true`, active les liens incrémentiels.  
   
-     Pour plus d’informations, consultez l’article [/INCREMENTAL (Lier par incrément)](/cpp/build/reference/incremental-link-incrementally).  
+     Pour plus d’informations, consultez [/INCREMENTAL (Lier par incrément)](/cpp/build/reference/incremental-link-incrementally).  
   
 -   **LinkLibraryDependencies**  
   
@@ -479,7 +479,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Si `true`, spécifie que l’Éditeur de liens doit afficher un indicateur de progression qui montre le pourcentage d’exécution du lien.  
   
-     Pour plus d’informations, consultez l’argument `STATUS` dans l’article [LTCG (Génération de code durant l’édition de liens)](/cpp/build/reference/ltcg-link-time-code-generation).  
+     Pour plus d’informations, consultez l’argument `STATUS` dans [/LTCG (Génération de code durant l’édition de liens)](/cpp/build/reference/ltcg-link-time-code-generation).  
   
 -   **LinkTimeCodeGeneration**  
   
@@ -501,7 +501,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
          \- **/LTCG:PGUpdate**  
   
-     Pour plus d’informations, consultez l’article [LTCG (Génération de code durant l’édition de liens)](/cpp/build/reference/ltcg-link-time-code-generation).  
+    Pour plus d’informations, consultez [/LTCG (Génération de code durant l’édition de liens)](/cpp/build/reference/ltcg-link-time-code-generation).  
   
 -   **ManifestFile**  
   
@@ -509,7 +509,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Remplace le nom du fichier manifeste par défaut par le nom du fichier spécifié.  
   
-     Pour plus d’informations, consultez l’article [/MANIFESTFILE (Nommer le fichier manifeste)](/cpp/build/reference/manifestfile-name-manifest-file).  
+     Pour plus d’informations, consultez [/MANIFESTFILE (Nommer le fichier manifeste)](/cpp/build/reference/manifestfile-name-manifest-file).  
   
 -   **MapExports**  
   
@@ -517,7 +517,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Si `true`, indique à l’Éditeur de liens d’inclure les fonctions exportées dans un fichier de mappage.  
   
-     Pour plus d’informations, consultez l’argument `EXPORTS` dans l’article [/MAPINFO (Inclure des informations dans le fichier de mappage)](/cpp/build/reference/mapinfo-include-information-in-mapfile).  
+     Pour plus d’informations, consultez l’argument `EXPORTS` dans [/MAPINFO (Inclure des informations dans le fichier de mappage)](/cpp/build/reference/mapinfo-include-information-in-mapfile).  
   
 -   **MapFileName**  
   
@@ -529,9 +529,9 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Paramètre **String** facultatif.  
   
-     Indique le nom et l’extension de nom du fichier .idl.  
+     Indique le nom et l’extension de nom du fichier *.idl*.  
   
-     Pour plus d’informations, consultez l’article [/IDLOUT (Nommer les fichiers de sortie MIDL)](/cpp/build/reference/idlout-name-midl-output-files).  
+     Pour plus d’informations, consultez [/IDLOUT (Nommer les fichiers de sortie MIDL)](/cpp/build/reference/idlout-name-midl-output-files).  
   
 -   **MergeSections**  
   
@@ -539,7 +539,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Combine des sections dans une image. Spécifiez `from-section=to-section`.  
   
-     Pour plus d’informations, consultez l’article [/MERGE (Combiner des sections)](/cpp/build/reference/merge-combine-sections).  
+     Pour plus d’informations, consultez [/MERGE (Combiner des sections)](/cpp/build/reference/merge-combine-sections).  
   
 -   **MidlCommandFile**  
   
@@ -547,7 +547,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Spécifiez le nom d’un fichier qui contient les options de ligne de commande MIDL.  
   
-     Pour plus d’informations, consultez l’article [/MIDL (Spécification d’options de ligne de commande MIDL)](/cpp/build/reference/midl-specify-midl-command-line-options).  
+     Pour plus d’informations, consultez [/MIDL (Spécifier des options de ligne de commande MIDL)](/cpp/build/reference/midl-specify-midl-command-line-options).  
   
 -   **MinimumRequiredVersion**  
   
@@ -561,7 +561,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Spécifie le nom d’un [fichier de définition de module](/cpp/build/reference/module-definition-dot-def-files).  
   
-     Pour plus d’informations, consultez l’article [/DEF (Spécifier le fichier de définition de module)](/cpp/build/reference/def-specify-module-definition-file).  
+     Pour plus d’informations, consultez [/DEF (Spécifier le fichier de définition de module)](/cpp/build/reference/def-specify-module-definition-file).  
   
 -   **MSDOSStubFileName**  
   
@@ -569,7 +569,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Attache le programme stub MS-DOS spécifié à un programme Win32.  
   
-     Pour plus d’informations, consultez l’article [/STUB (Nom du fichier stub MS-DOS)](/cpp/build/reference/stub-ms-dos-stub-file-name).  
+     Pour plus d’informations, consultez [/STUB (Nom du fichier stub MS-DOS)](/cpp/build/reference/stub-ms-dos-stub-file-name).  
   
 -   **NoEntryPoint**  
   
@@ -577,7 +577,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Si `true`, crée une DLL de ressource uniquement.  
   
-     Pour plus d’informations, consultez l’article [/NOENTRY (Aucun point d’entrée)](/cpp/build/reference/noentry-no-entry-point).  
+     Pour plus d’informations, consultez [/NOENTRY (Aucun point d’entrée)](/cpp/build/reference/noentry-no-entry-point).  
   
 -   **ObjectFiles**  
   
@@ -599,7 +599,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Remplace le nom et l’emplacement par défaut du programme créé par l’Éditeur de liens.  
   
-     Pour plus d’informations, consultez l’article [/OUT (Nom du fichier de sortie)](/cpp/build/reference/out-output-file-name).  
+     Pour plus d’informations, consultez [/OUT (Nom du fichier de sortie)](/cpp/build/reference/out-output-file-name).  
   
 -   **PerUserRedirection**  
   
@@ -617,9 +617,9 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Paramètre **booléen** facultatif.  
   
-     Si `true`, indique à Bind.exe que l’image liée ne doit pas être associée.  
+     Si la valeur est `true`, indique à *Bind.exe* que l’image liée ne doit pas être associée.  
   
-     Pour plus d’informations, consultez l’article [/ALLOWBIND (Éviter la liaison DLL)](/cpp/build/reference/allowbind-prevent-dll-binding).  
+     Pour plus d’informations, consultez [/ALLOWBIND (Éviter la liaison DLL)](/cpp/build/reference/allowbind-prevent-dll-binding).  
   
 -   **Profile**  
   
@@ -627,15 +627,15 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Si `true`, génère un fichier de sortie utilisable avec le profileur **Outils d’analyse des performances**.  
   
-     Pour plus d’informations, consultez l’article [/PROFILE (Profileur des outils d’analyse des performances)](/cpp/build/reference/profile-performance-tools-profiler).  
+     Pour plus d’informations, consultez [/PROFILE (Profileur des outils d’analyse des performances)](/cpp/build/reference/profile-performance-tools-profiler).  
   
 -   **ProfileGuidedDatabase**  
   
      Paramètre **String** facultatif.  
   
-     Spécifie le nom du fichier .pgd qui permet de conserver les informations sur le programme en cours d’exécution.  
+     Spécifie le nom du fichier *.pgd* qui permet de conserver les informations sur le programme en cours d’exécution  
   
-     Pour plus d’informations, consultez l’article [/PGD (Spécifier la base de données pour les optimisations guidées par profil)](/cpp/build/reference/pgd-specify-database-for-profile-guided-optimizations).  
+     Pour plus d’informations, consultez [/PGD (Spécifier la base de données pour les optimisations guidées par profil)](/cpp/build/reference/pgd-specify-database-for-profile-guided-optimizations).  
   
 -   **ProgramDatabaseFile**  
   
@@ -643,7 +643,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Spécifie le nom de la base de données du programme (PDB) créée par l’Éditeur de liens.  
   
-     Pour plus d’informations, consultez l’article [/PDB (Utiliser la base de données du programme)](/cpp/build/reference/pdb-use-program-database).  
+     Pour plus d’informations, consultez [/PDB (Utiliser la base de données du programme)](/cpp/build/reference/pdb-use-program-database).  
   
 -   **RandomizedBaseAddress**  
   
@@ -665,15 +665,15 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Spécifie l’alignement de chaque section dans l’espace d’adressage linéaire du programme. La valeur du paramètre est un numéro d’unité d’octets et une puissance de deux.  
   
-     Pour plus d’informations, consultez l’article [/ALIGN (Alignement des sections)](/cpp/build/reference/align-section-alignment).  
+     Pour plus d’informations, consultez [/ALIGN (Alignement des sections)](/cpp/build/reference/align-section-alignment).  
   
 -   **SetChecksum**  
   
      Paramètre **booléen** facultatif.  
   
-     Si `true`, définit la somme de contrôle dans l’en-tête d’un fichier .exe.  
+     Si la valeur est `true`, définit la somme de contrôle dans l’en-tête d’un fichier *.exe*.  
   
-     Pour plus d’informations, consultez l’article [/RELEASE (Définir le total de Checksum)](/cpp/build/reference/release-set-the-checksum).  
+     Pour plus d’informations, consultez [/RELEASE (Définir le total de Checksum)](/cpp/build/reference/release-set-the-checksum).  
   
 -   **ShowProgress**  
   
@@ -697,7 +697,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
     -   **LinkVerboseCLR** - **/VERBOSE:CLR**  
   
-     Pour plus d’informations, consultez l’article [/VERBOSE (Imprimer les messages d’avancement)](/cpp/build/reference/verbose-print-progress-messages).  
+    Pour plus d’informations, consultez [/VERBOSE (Imprimer les messages d’avancement)](/cpp/build/reference/verbose-print-progress-messages).  
   
 -   **Sources**  
   
@@ -709,9 +709,9 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Paramètre **String** facultatif.  
   
-     Indique les attributs d’une section. Il remplace les attributs qui ont été définis lorsque le fichier .obj correspondant à la section a été compilé.  
+     Indique les attributs d’une section. Il remplace les attributs qui ont été définis quand le fichier *.obj* correspondant à la section a été compilé.  
   
-     Pour plus d’informations, consultez l’article [/SECTION (Spécifier les attributs de section)](/cpp/build/reference/section-specify-section-attributes).  
+     Pour plus d’informations, consultez [/SECTION (Spécifier les attributs de section)](/cpp/build/reference/section-specify-section-attributes).  
   
 -   **StackCommitSize**  
   
@@ -719,7 +719,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Spécifie la quantité de mémoire physique contenue dans chaque allocation lorsque de la mémoire supplémentaire est allouée.  
   
-     Pour plus d’informations, consultez l’argument `commit` dans l’article [/STACK (Allocations de la pile)](/cpp/build/reference/stack-stack-allocations).  
+     Pour plus d’informations, consultez l’argument `commit` dans [/STACK (Allocations de la pile)](/cpp/build/reference/stack-stack-allocations).  
   
 -   **StackReserveSize**  
   
@@ -727,7 +727,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Spécifie la taille totale d’allocation de piles dans la mémoire virtuelle.  
   
-     Pour plus d’informations, consultez l’argument `reserve` dans l’article [/STACK (Allocations de la pile)](/cpp/build/reference/stack-stack-allocations).  
+     Pour plus d’informations, consultez l’argument `reserve` dans [/STACK (Allocations de la pile)](/cpp/build/reference/stack-stack-allocations).  
   
 -   **StripPrivateSymbols**  
   
@@ -735,7 +735,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Crée un second fichier de base de données du programme (PDB) qui omet les symboles que vous ne souhaitez pas distribuer à vos clients. Spécifiez le nom du second fichier PDB.  
   
-     Pour plus d’informations, consultez l’article [/PDBSTRIPPED (Supprimer les symboles privés)](/cpp/build/reference/pdbstripped-strip-private-symbols).  
+     Pour plus d’informations, consultez [/PDBSTRIPPED (Supprimer les symboles privés)](/cpp/build/reference/pdbstripped-strip-private-symbols).  
   
 -   **SubSystem**  
   
@@ -765,7 +765,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
     -   **POSIX** - **/SUBSYSTEM:POSIX**  
   
-     Pour plus d’informations, consultez l’article [/SUBSYSTEM (Spécifier le sous-système)](/cpp/build/reference/subsystem-specify-subsystem).  
+    Pour plus d’informations, consultez [/SUBSYSTEM (Spécifier le sous-système)](/cpp/build/reference/subsystem-specify-subsystem).  
   
 -   **SupportNobindOfDelayLoadedDLL**  
   
@@ -773,7 +773,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Si `true`, indique à l’Éditeur de liens de ne pas inclure dans l’image finale de table IAT (Import Address Table).  
   
-     Pour plus d’informations, consultez l’argument `NOBIND` dans l’article [/DELAY (Paramètres d’importation à chargement différé)](/cpp/build/reference/delay-delay-load-import-settings).  
+     Pour plus d’informations, consultez l’argument `NOBIND` dans [/DELAY (Paramètres d’importation à chargement différé)](/cpp/build/reference/delay-delay-load-import-settings).  
   
 -   **SupportUnloadOfDelayLoadedDLL**  
   
@@ -781,7 +781,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Si `true`, indique à la fonction d’assistance de chargement différé de prendre en charge le déchargement explicite de la DLL.  
   
-     Pour plus d’informations, consultez l’argument `UNLOAD` dans l’article [/DELAY (Paramètres d’importation à chargement différé)](/cpp/build/reference/delay-delay-load-import-settings).  
+     Pour plus d’informations, consultez l’argument `UNLOAD` dans [/DELAY (Paramètres d’importation à chargement différé)](/cpp/build/reference/delay-delay-load-import-settings).  
   
 -   **SuppressStartupBanner**  
   
@@ -789,7 +789,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Si la valeur est `true`, empêche l'affichage du message de copyright et de numéro de version quand la tâche démarre.  
   
-     Pour plus d’informations, consultez l’article [/NOLOGO (Suppression de la bannière de démarrage) (Éditeur de liens)](/cpp/build/reference/nologo-suppress-startup-banner-linker).  
+     Pour plus d’informations, consultez [/NOLOGO (Supprimer la bannière de démarrage) (éditeur de liens)](/cpp/build/reference/nologo-suppress-startup-banner-linker).  
   
 -   **SwapRunFromCD**  
   
@@ -797,7 +797,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Si `true`, indique au système d’exploitation de copier tout d’abord la sortie de l’Éditeur de liens dans un fichier d’échange, puis d’y exécuter l’image.  
   
-     Pour plus d’informations, consultez l’argument `CD` dans l’article [/SWAPRUN (Charger la sortie de l’Éditeur de liens dans le fichier d’échange)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Consultez également le paramètre **SwapRunFromNET**.  
+     Pour plus d’informations, consultez l’argument `CD` dans [/SWAPRUN (Charger la sortie de l’éditeur de liens dans le fichier d’échange)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Consultez également le paramètre **SwapRunFromNET**.  
   
 -   **SwapRunFromNET**  
   
@@ -805,7 +805,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Si `true`, indique au système d’exploitation de copier tout d’abord la sortie de l’Éditeur de liens dans un fichier d’échange, puis d’y exécuter l’image.  
   
-     Pour plus d’informations, consultez l’argument `NET` dans l’article [/SWAPRUN (Charger la sortie de l’Éditeur de liens dans le fichier d’échange)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Reportez-vous également au paramètre **SwapRunFromCD** de ce tableau.  
+     Pour plus d’informations, consultez l’argument `NET` dans [/SWAPRUN (Charger la sortie de l’éditeur de liens dans le fichier d’échange)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Reportez-vous également au paramètre **SwapRunFromCD** de ce tableau.  
   
 -   **TargetMachine**  
   
@@ -839,7 +839,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
     -   **MachineX86** - **/MACHINE:X86**  
   
-     Pour plus d’informations, consultez l’article [/MACHINE (Spécifier la plateforme cible)](/cpp/build/reference/machine-specify-target-platform).  
+    Pour plus d’informations, consultez [/MACHINE (Spécifier la plateforme cible)](/cpp/build/reference/machine-specify-target-platform).  
   
 -   **TerminalServerAware**  
   
@@ -847,7 +847,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Si `true`, définit un indicateur dans le champ DllCharacteristics IMAGE_OPTIONAL_HEADER de l’en-tête facultatif de l’image du programme. Si cet indicateur est défini, le serveur Terminal Server n’apportera aucune modification à l’application.  
   
-     Pour plus d’informations, consultez l’article [/TSAWARE (Créer une application sensible à Terminal Server)](/cpp/build/reference/tsaware-create-terminal-server-aware-application).  
+     Pour plus d’informations, consultez [/TSAWARE (Créer une application sensible à Terminal Server)](/cpp/build/reference/tsaware-create-terminal-server-aware-application).  
   
 -   **TrackerLogDirectory**  
   
@@ -861,7 +861,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Si `true`, aucun fichier de sortie n’est créé lorsque l’Éditeur de liens génère un avertissement.  
   
-     Pour plus d’informations, consultez l’article [/WX (Traiter les avertissements de l’Éditeur de liens comme des erreurs)](/cpp/build/reference/wx-treat-linker-warnings-as-errors).  
+     Pour plus d’informations, consultez [/WX (Traiter les avertissements de l’éditeur de liens comme des erreurs)](/cpp/build/reference/wx-treat-linker-warnings-as-errors).  
   
 -   **TurnOffAssemblyGeneration**  
   
@@ -869,15 +869,15 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Si `true`, crée une image du fichier de sortie actif sans générer un assembly .NET Framework.  
   
-     Pour plus d’informations, consultez l’article [/NOASSEMBLY (Créer un module MSIL)](/cpp/build/reference/noassembly-create-a-msil-module).  
+     Pour plus d’informations, consultez [/NOASSEMBLY (Créer un module MSIL)](/cpp/build/reference/noassembly-create-a-msil-module).  
   
 -   **TypeLibraryFile**  
   
      Paramètre **String** facultatif.  
   
-     Indique le nom et l’extension de nom du fichier .tlb. Spécifiez un nom de fichier, ou un chemin d’accès et un nom de fichier.  
+     Indique le nom et l’extension de nom du fichier *.tlb*. Spécifiez un nom de fichier, ou un chemin d’accès et un nom de fichier.  
   
-     Pour plus d’informations, consultez l’article [/TLBOUT (Nommer le fichier .TLB)](/cpp/build/reference/tlbout-name-dot-tlb-file).  
+     Pour plus d’informations, consultez [/TLBOUT (Nommer le fichier .tlb)](/cpp/build/reference/tlbout-name-dot-tlb-file).  
   
 -   **TypeLibraryResourceID**  
   
@@ -885,7 +885,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Désigne une valeur spécifiée par l’utilisateur pour une bibliothèque de types créé par l’Éditeur de liens. Spécifiez une valeur comprise entre 1 et 65535.  
   
-     Pour plus d’informations, consultez l’article [/TLBID (Spécifier l’ID de ressource de TypeLib)](/cpp/build/reference/tlbid-specify-resource-id-for-typelib).  
+     Pour plus d’informations, consultez [/TLBID (Spécifier l’ID de ressource de TypeLib)](/cpp/build/reference/tlbid-specify-resource-id-for-typelib).  
   
 -   **UACExecutionLevel**  
   
@@ -901,7 +901,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
     -   **RequireAdministrator** - `level='requireAdministrator'`  
   
-     Pour plus d’informations, consultez l’argument `level` dans l’article [/MANIFESTUAC (Incorporer des informations sur le contrôle de compte d’utilisateur dans le manifeste)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).  
+    Pour plus d’informations, consultez l’argument `level` dans l’article [/MANIFESTUAC (Incorporer des informations sur le contrôle de compte d’utilisateur dans le manifeste)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).  
   
 -   **UACUIAccess**  
   
@@ -921,9 +921,9 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
      Paramètre **String** facultatif.  
   
-     Insère un numéro de version dans l’en-tête du fichier .exe ou .dll. Spécifiez « `major[.minor]` ». Les arguments `major` et `minor` sont des nombres décimaux compris entre 0 et 65535.  
+     Insère un numéro de version dans l’en-tête du fichier *.exe* ou *.dll*. Spécifiez « `major[.minor]` ». Les arguments `major` et `minor` sont des nombres décimaux compris entre 0 et 65535.  
   
-     Pour plus d’informations, consultez l’article [/VERSION (Informations de version)](/cpp/build/reference/version-version-information).  
+     Pour plus d’informations, consultez [/VERSION (Informations de version)](/cpp/build/reference/version-version-information).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)
+ [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

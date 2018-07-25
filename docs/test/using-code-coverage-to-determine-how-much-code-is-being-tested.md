@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d27bc7fe308d7fc268291f58c64f902ff021dbd1
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ed37441efa981e2efb29a408d5d3423387e2052e
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752090"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978247"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Utiliser la couverture du code pour déterminer la quantité de code testé
 
@@ -266,9 +266,9 @@ Lorsque vous archivez votre code, vos tests s’exécutent sur le serveur de bui
 
 Après l'exécution de la build, les résultats de la couverture du code sont liés à la série de tests et s'affichent dans le résumé de la build.
 
-## <a name="analyze-code-coverage-in-a-command-line"></a>Analyse de la couverture du code dans une ligne de commande
+## <a name="analyze-code-coverage-from-the-command-line"></a>Analyser la couverture du code depuis la ligne de commande
 
-Pour exécuter des tests à partir de la ligne de commande, utilisez vstest.console.exe. La couverture du code est une option de l’utilitaire vstest.console.exe.
+Pour exécuter des tests à partir de la ligne de commande, utilisez *vstest.console.exe*. La couverture du code est une option de l’utilitaire *vstest.console.exe*.
 
 1.  Lancez l'invite de commandes développeur Visual Studio :
 
@@ -278,9 +278,11 @@ Pour exécuter des tests à partir de la ligne de commande, utilisez vstest.cons
 
     `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`
 
+Pour plus d’informations, consultez [Options de ligne de commande VSTest.Console.exe](vstest-console-options.md).
+
 ## <a name="troubleshoot"></a>Résoudre les problèmes
 
-Si vous ne voyez pas les résultats de la couverture du code, consultez la rubrique [Résolution des problèmes liés à la couverture du code](../test/troubleshooting-code-coverage.md).
+Si vous ne voyez pas les résultats de la couverture du code, consultez la rubrique [Résoudre les problèmes liés à la couverture du code](../test/troubleshooting-code-coverage.md).
 
 ## <a name="see-also"></a>Voir aussi
 

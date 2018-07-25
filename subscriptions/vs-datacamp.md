@@ -3,18 +3,18 @@ title: Améliorez aujourd’hui vos compétences en matière de science des donn
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 01/12/20108
+ms.date: 05/30/2018
 ms.topic: Get-Started-Article
 description: Découvrez l’abonnement DataCamp Training inclus dans certains abonnements Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 67b79e711cb18f894cd9ae8ee23e049bf84bf9c3
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: ab16223378e8e985c636611bc4598b70bdef20f4
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448686"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890127"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Avantage DataCamp Training dans les abonnements Visual Studio
 
@@ -22,40 +22,40 @@ Les abonnements Visual Studio éligibles incluent des abonnements à DataCamp.  
 
 La durée de votre avantage DataCamp dépend du type de votre abonnement Visual Studio.
 
-## <a name="activation-steps"></a>Étapes d’activation  
+## <a name="activation-steps"></a>Étapes d’activation
 
 1. Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Recherchez la vignette de l’avantage DataCamp dans la catégorie « Développement professionnel », puis cliquez sur **Activer**.
-
     ![Vignette de l’avantage DataCamp](_img\vs-datacamp\vs-datacamp-tile-2.png)
 
 3. Dans la page DataCamp, vous pouvez créer un compte.  Vous pouvez choisir d’entrer une adresse e-mail et un mot de passe, ou de vous connecter avec des comptes Facebook, LinkedIn ou Google existants.  Une fois que vous avez fourni vos informations de connexion, cliquez sur **Get Started** (Démarrer).
-
     ![DataCamp : Créer un compte](_img\vs-datacamp\vs-datacamp-create-account.png)
 
     > [!NOTE]
-    > Quand vous commencez à créer votre compte, vous pouvez recevoir un message d’erreur similaire à celui-ci : « Désolé !  Votre code de promotion n’est pas valide ou a expiré. »  La raison est que votre code de promotion expire au bout de quelques minutes après sa création.  Si vous recevez ce message, retournez à la page [Avantages](https://my.visualstudio.com/benefits), puis cliquez sur le lien **Activer** dans la vignette de l’avantage DataCamp.  
+    > Quand vous commencez à créer votre compte, vous pouvez recevoir un message d’erreur similaire à celui-ci : « Désolé !  Votre code de promotion n’est pas valide ou a expiré. »  La raison est que votre code de promotion expire au bout de quelques minutes après sa création.  Si vous recevez ce message, retournez à la page [Avantages](https://my.visualstudio.com/benefits), puis cliquez sur le lien **Activer** dans la vignette de l’avantage DataCamp.
 
 4. Une fois que votre compte a été créé, vous pouvez choisir un parcours d’apprentissage.  Les options sont les suivantes :
     - Apprentissage de R pour la science des données
     - Commencer l’apprentissage de Python pour la science des données
     - Développer vos compétences en science des données
 
-    Cliquez simplement sur le parcours de votre choix pour commencer.   
+
+    Cliquez simplement sur le parcours de votre choix pour commencer.
 
      ![DataCamp : Choisir un parcours](_img\vs-datacamp\vs-datacamp-choose-path.png)
 
-5. Une fois que vous avez sélectionné votre parcours, vous pouvez affiner davantage votre parcours d’apprentissage en sélectionnant un objectif.  Par exemple, si vous avez choisi le parcours « Développer vos compétences en science des données », vous voyez les options suivantes. Choisissez une option ou cliquez sur **I am not sure.  Show me all career paths** (Je ne suis pas sûr. Montrez-moi tous les parcours professionnels.) pour créer un parcours plus étendu. 
+5. Une fois que vous avez sélectionné votre parcours, vous pouvez affiner davantage votre parcours d’apprentissage en sélectionnant un objectif.  Par exemple, si vous avez choisi le parcours « Développer vos compétences en science des données », vous voyez les options suivantes. Choisissez une option ou cliquez sur **I am not sure.  Show me all career paths** (Je ne suis pas sûr. Montrez-moi tous les parcours professionnels.) pour créer un parcours plus étendu.
 
     ![DataCamp : Compétences en science des données](_img\vs-datacamp\vs-datacamp-datascience.png)
 
 
-6. Selon le parcours et les options que vous avez sélectionnés, vous voyez une sélection de parcours professionnels.  Cliquez sur le bouton **Enroll** (Inscription) pour le parcours de votre choix. 
+6. Selon le parcours et les options que vous avez sélectionnés, vous voyez une sélection de parcours professionnels.  Cliquez sur le bouton **Enroll** (Inscription) pour le parcours de votre choix.
 
     ![DataCamp : Parcours professionnel](_img\vs-datacamp\vs-datacamp-all-tracks.png)
 
-7. Une fois que vous êtes inscrit à votre parcours, le premier cours de celui-ci s’ouvre.  Vous voyez un didacticiel expliquant comment interagir avec le cours, notamment la navigation et la réalisation des exercices du cours.  
+7. Une fois que vous êtes inscrit à votre parcours, le premier cours de celui-ci s’ouvre.  Vous voyez un didacticiel expliquant comment interagir avec le cours, notamment la navigation et la réalisation des exercices du cours.
+
 
     ![DataCamp : Bien démarrer](_img\vs-datacamp\vs-datacamp-getting-started.png)
 
@@ -78,13 +78,14 @@ Vous pouvez arrêter à tout moment et reprendre votre formation à la prochaine
 <sup>1</sup> *Inclut : NFR (revente interdite), FTE, MVP (Microsoft Valued Partner), RD (Region Director), MPN (Microsoft Partner Network), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark, Imagine*
 
 
-Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements. 
+
+Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
 
 ## <a name="support-resources"></a>Ressources de support technique
 -  Besoin d’aide pour utiliser DataCamp ?  Consultez les ressources suivantes :
     - [Communauté DataCamp](https://www.datacamp.com/community/tutorials), avec des forums et des didacticiels.
-    - [Centre d’aide DataCamp](https://support.datacamp.com/hc), qui vous permet de rechercher des rubriques d’aide et de consulter les questions des utilisateurs.  
+    - [Centre d’aide DataCamp](https://support.datacamp.com/hc), qui vous permet de rechercher des rubriques d’aide et de consulter les questions des utilisateurs.
     - [Soumettre une demande de support](https://support.datacamp.com/hc/requests/new)
--  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://www.visualstudio.com/subscriptions/support/) Visual Studio.
--  Vous avez des questions concernant l’IDE Visual Studio, Visual Studio Team Services ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://www.visualstudio.com/support/). 
+-  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+-  Vous avez des questions concernant l’IDE Visual Studio, Visual Studio Team Services ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e78665f19f4cbc62197cc8474feb1c550cc4e491
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1164312d74259ad4f3a56750a487fb2578595cf0
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923798"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924159"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Guide pratique pour générer et exécuter l’exemple LinqToXmlDataBinding
 
@@ -22,7 +22,7 @@ Cette rubrique montre comment créer et générer le projet Visual Studio LinqTo
 
 Pour plus d’informations sur Visual Studio, consultez [Présentation de l’IDE de Visual Studio](../ide/visual-studio-ide.md).
 
-## <a name="creating-and-populating-the-project"></a>Création et remplissage du projet
+## <a name="create-and-populate-the-project"></a>Créer et remplir le projet
 
 ### <a name="to-create-the-starting-project"></a>Pour créer le projet de départ
 
@@ -38,29 +38,29 @@ Pour plus d’informations sur Visual Studio, consultez [Présentation de l’ID
 
     - System.Xml.Linq
 
-1. Générez la solution en appuyant sur **Ctrl+Maj+B**, puis exécutez-la en appuyant sur **F5**. Le projet doit être compilé sans erreur et exécuté en tant qu'application WPF générique.
+1. Générez la solution en appuyant sur **Ctrl**+**Maj**+**B**, puis exécutez-la en appuyant sur **F5**. Le projet doit être compilé sans erreur et exécuté en tant qu'application WPF générique.
 
 ### <a name="to-add-custom-code-to-the-project"></a>Pour ajouter du code personnalisé au projet
 
-1. Dans l’Explorateur de solutions, renommez le fichier source Window1.xaml en L2XDBForm.xaml. Le fichier source dépendant Window1.xaml.cs doit être renommé automatiquement L2XDBForm.xaml.cs.
+1. Dans l’Explorateur de solutions, renommez le fichier source **Window1.xaml** en **L2XDBForm.xaml**. Le fichier source dépendant **Window1.xaml.cs** doit être renommé automatiquement **L2XDBForm.xaml.cs**.
 
-1. Remplacez le code source du fichier L2XDBForm.xaml par la section de code de la rubrique [Code source L2DBForm.xaml](../designers/l2dbform-xaml-source-code.md). Utilisez la vue source XAML pour travailler avec ce fichier.
+1. Remplacez le code source du fichier **L2XDBForm.xaml** par la section de code de la rubrique [Code source L2DBForm.xaml](../designers/l2dbform-xaml-source-code.md). Utilisez la vue source XAML pour travailler avec ce fichier.
 
-1. De même, remplacez la source du fichier L2XDBForm.xaml.cs par le code fourni dans [Code source L2DBForm.xaml.cs](../designers/l2dbform-xaml-cs-source-code.md).
+1. De même, remplacez la source du fichier **L2XDBForm.xaml.cs** par le code fourni dans [Code source L2DBForm.xaml.cs](../designers/l2dbform-xaml-cs-source-code.md).
 
-1. Dans le fichier App.xaml, remplacez toutes les occurrences de la chaîne « Window1.xaml » par « L2XDBForm.xaml ».
+1. Dans le fichier **App.xaml**, remplacez toutes les occurrences de la chaîne `Window1.xaml` par `L2XDBForm.xaml`.
 
-1. Générez la solution en appuyant sur **Ctrl+Maj+B**.
+1. Générez la solution en appuyant sur **Ctrl**+**Maj**+**B**.
 
-## <a name="running-the-program"></a>Exécution du programme
+## <a name="run-the-program"></a>Exécuter le programme
 
 Le programme LinqToXmlDataBinding permet à l'utilisateur d'afficher et de manipuler une liste de livres stockée en tant qu'élément XML incorporé.
 
 ### <a name="to-run-the-program-and-view-the-book-list"></a>Pour exécuter le programme et afficher la liste de livres
 
-- Exécutez LinqToXmlDataBinding en appuyant sur **F5** (**Démarrer le débogage**) ou **Ctrl+F5** (**Démarrer sans débogage**).
+- Exécutez LinqToXmlDataBinding en appuyant sur **F5** (**Démarrer le débogage**) ou **Ctrl**+**F5** (**Démarrer sans débogage**).
 
-   Une fenêtre de programme avec le titre **WPF Data Binding using LINQ to XML** s’affiche.
+   Une fenêtre de programme avec le titre **WPF Data Binding using LINQ to XML** apparaît.
 
 - Notez la section supérieure de l’interface utilisateur, qui affiche le code **XML** brut qui représente la liste de livres. Il est affiché à l'aide d'un contrôle <xref:System.Windows.Controls.TextBlock> WPF, qui n'autorise pas d'interaction via le clavier ou la souris.
 
@@ -68,9 +68,9 @@ Le programme LinqToXmlDataBinding permet à l'utilisateur d'afficher et de manip
 
 ### <a name="to-add-and-delete-books-from-the-list"></a>Pour ajouter et supprimer des livres de la liste
 
-- Pour supprimer un livre de la liste, sélectionnez-le dans la section **Book List**, puis cliquez sur le bouton **Remove Selected Book**. Notez que l'entrée du livre a été supprimée de la liste de livres et du code XML source brut.
-
 - Pour ajouter un nouveau livre à la liste, entrez des valeurs dans les contrôles **ID** et **Value**<xref:System.Windows.Controls.TextBox> de la dernière section, **Add New Book**, puis cliquez sur le bouton **Add Book**. Notez que le livre est ajouté à la liste de livres et à la liste XML. Ce programme ne valide pas les valeurs d'entrée.
+
+- Pour supprimer un livre de la liste, sélectionnez-le dans la section **Book List**, puis cliquez sur le bouton **Remove Selected Book**. Notez que l'entrée du livre a été supprimée de la liste de livres et du code XML source brut.
 
 ### <a name="to-edit-an-existing-book-entry"></a>Pour modifier une entrée de livre existante
 
@@ -82,4 +82,4 @@ Le programme LinqToXmlDataBinding permet à l'utilisateur d'afficher et de manip
 
 - [Exemple de liaison de données WPF à l’aide de LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md)
 - [Procédure pas à pas : exemple LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)
-- [Vue d’ensemble de l’IDE Visual Studio](../ide/visual-studio-ide.md)
+- [Vue d’ensemble de l’IDE de Visual Studio](../ide/visual-studio-ide.md)

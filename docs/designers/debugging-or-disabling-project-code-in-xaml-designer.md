@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 9d77aa1d776352edd3a030507bc25086cad47d58
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4764df436a7adeb3ac65c574812c8f7d334d497b
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925815"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890563"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Déboguer ou désactiver le code de projet dans le Concepteur XAML
 
-Dans bien des cas, les exceptions non gérées dans le concepteur XAML peuvent être provoquées par le code de projet, qui tente d’accéder à des propriétés ou méthodes qui retournent des valeurs différentes ou qui fonctionnent de manière différente quand votre application s’exécute dans le concepteur. Vous pouvez résoudre ces exceptions en déboguant le code du projet dans une autre instance de Visual Studio, voire les éviter temporairement en désactivant le code de projet dans le concepteur.
+Dans bien des cas, les exceptions non gérées dans le concepteur **XAML** peuvent être provoquées par le code de projet, qui tente d’accéder à des propriétés ou méthodes qui retournent des valeurs différentes ou qui fonctionnent de manière différente quand votre application s’exécute dans le concepteur. Vous pouvez résoudre ces exceptions en déboguant le code du projet dans une autre instance de Visual Studio, voire les éviter temporairement en désactivant le code de projet dans le concepteur.
 
 Le code de projet est constitué des éléments suivants :
 
@@ -73,7 +73,7 @@ Quand le code de projet est désactivé, Visual Studio affiche des espaces rése
 
 -   Dans la boîte de dialogue de l’exception non gérée, choisissez le lien **Cliquez ici pour désactiver l’exécution du code de projet et recharger le concepteur** .
 
--   Sinon, dans la barre d’outils du concepteur XAML, cliquez sur le bouton **Désactiver le code de projet** .
+-   Sinon, dans la barre d’outils du **Concepteur XAML**, cliquez sur le bouton **Désactiver le code de projet**.
 
      ![Le bouton Désactiver le code de projet](../designers/media/xaml_disablecode.png)
 
@@ -85,7 +85,7 @@ Quand le code de projet est désactivé, Visual Studio affiche des espaces rése
 -   Les deux options ont pour effet de recharger le concepteur et de désactiver l’ensemble du code du projet associé.
 
     > [!NOTE]
-    > La désactivation du code de projet peut entraîner une perte de données au moment de la conception. Une autre solution consiste à déboguer le code s’exécutant dans le concepteur.
+    > La désactivation du code de projet peut entraîner une perte de données au moment du design. Une autre solution consiste à déboguer le code s’exécutant dans le concepteur.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -9,12 +9,12 @@ description: Découvrez comment obtenir et gérer vos clés de produit dans les 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2d3ca72182c26e2e43bcdf97ea6277a4dd1375f0
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 810c560fcbae03678379a446f359e0a22d8ff085
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2018
-ms.locfileid: "30863269"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326813"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Utilisation de clés de produit dans les abonnements Visual Studio
 
@@ -22,12 +22,12 @@ Vos abonnements Visual Studio vous donnent accès à une large gamme de produits
 
 Les abonnements Visual Studio comprennent généralement cinq clés de produit pour les versions actuelles des produits Windows et Office, et trois clés de produit pour les versions antérieures.
 
-Pour la plupart des clés de produit, chaque clé permet d’effectuer plusieurs activations du produit.  Vous pouvez également installer et utiliser beaucoup de produits pendant au moins 30 jours sans avoir à les activer.  Le nombre d’activations possibles suffit à répondre aux besoins de la plupart des abonnés.  Toutefois, si vous avez atteint le nombre d’activations possibles pour un produit, vous pouvez envoyer une demande de clés supplémentaires en contactant le [service client des abonnements](https://www.visualstudio.com/subscriptions/support/) Visual Studio.
+Pour la plupart des clés de produit, chaque clé permet d’effectuer plusieurs activations du produit.  Vous pouvez également installer et utiliser beaucoup de produits pendant au moins 30 jours sans avoir à les activer.  Le nombre d’activations possibles suffit à répondre aux besoins de la plupart des abonnés.  Toutefois, si vous avez atteint le nombre d’activations possibles pour un produit, vous pouvez envoyer une demande de clés supplémentaires en contactant le [service client des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 
 ## <a name="activating-a-product"></a>Activation d’un produit
 L’activation est obligatoire pour certains produits.  En règle générale, dans les abonnements Visual Studio, cela concerne uniquement Windows, Windows Server, les applications clientes Microsoft Office et Expression Studio. Lorsque l’activation est requise, nombre de produits (y compris Windows et Office) vous permettent d’installer et d’utiliser le produit sans activation pendant au moins 30 jours. Si vous réimagez vos ordinateurs fréquemment (au moins tous les 30 jours), il est préférable de NE PAS activer le produit. Les clés de produit fournies dans le cadre de votre abonnement Visual Studio ne permettent pas un nombre illimité d’activations d’un produit.
 
-Si vous avez demandé toutes les clés de produit disponibles dans le cadre de votre abonnement et avez utilisé toutes les activations disponibles, vous pouvez demander des clés supplémentaires en contactant votre [service client des abonnements](https://www.visualstudio.com/subscriptions/support/) Visual Studio. Les demandes sont étudiées au cas par cas. Si elles sont approuvées, les clés de produit sont mises à votre disposition dans [Téléchargements](https://my.visualstudio.com/downloads).
+Si vous avez demandé toutes les clés de produit disponibles dans le cadre de votre abonnement et avez utilisé toutes les activations disponibles, vous pouvez demander des clés supplémentaires en contactant votre [service client des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio. Les demandes sont étudiées au cas par cas. Si elles sont approuvées, les clés de produit sont mises à votre disposition dans [Téléchargements](https://my.visualstudio.com/downloads).
 
 ## <a name="retail-and-volume-licensing-versions-of-products"></a>Versions commercialisées et de licence en volume des produits
 Les abonnements Visual Studio offrent différentes versions commercialisées et de licence en volume des produits Microsoft. Certains produits proposés dans la page Téléchargements sont disponibles uniquement dans leur version commercialisée ou uniquement dans leur version de licence en volume, alors que d’autres produits sont disponibles dans les deux versions. En règle générale, les produits nécessitant une activation, comme Windows, Windows Server et les produits clients Office, sont proposés uniquement dans leur version commercialisée à partir de la page Téléchargements.
@@ -43,17 +43,16 @@ Remarque : Le nombre de demandes de clés autorisées peut changer. Vérifiez i
 
 Si vous avez demandé le nombre maximal de clés disponibles dans le cadre de votre abonnement dans une période de 24 heures, une erreur vous signale que votre limite a été atteinte. Cette limite est réinitialisée toutes les 24 heures, à partir de 00 h 01 (heure du Pacifique).
 
-Nos études montrent que la plupart des abonnés ont suffisamment de clés de produit dans leur abonnement pour couvrir leurs besoins. Si vous avez besoin de clés supplémentaires, vous pouvez envoyer une demande au [service client des abonnements](https://www.visualstudio.com/subscriptions/support/) Visual Studio. Les demandes sont étudiées et approuvées au cas par cas.
+Nos études montrent que la plupart des abonnés ont suffisamment de clés de produit dans leur abonnement pour couvrir leurs besoins. Si vous avez besoin de clés supplémentaires, vous pouvez envoyer une demande au [service client des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio. Les demandes sont étudiées et approuvées au cas par cas.
 
 ## <a name="locating-and-claiming-product-keys"></a>Recherche et demande de clés de produit
 Vous devez être connecté à votre abonnement Visual Studio pour afficher vos clés de produit. Pour rechercher des clés de produit, sélectionnez le lien bleu **Obtenir une clé** d’un produit spécifique dans la page [Téléchargements](https://my.visualstudio.com/downloads), comme illustré ci-dessous.  Toutes les clés disponibles sont également regroupées dans la page [Clés de produit](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs). Quand plusieurs clés d’un même produit sont disponibles, des remarques sont affichées dans la colonne Remarques du téléchargement pour vous aider à identifier la clé appropriée.
-
-   ![Obtenir une clé à partir de la page Téléchargements](_img/product-keys/download-get-key.png)
-
+    ![Obtenir une clé à partir de la page Téléchargements](_img/product-keys/download-get-key.png)
+    
 Certains produits regroupent plusieurs éditions du produit en un seul téléchargement. Dans ces cas de figure, la clé de produit entrée détermine l’édition du produit installée.
 Certaines clés sont fournies automatiquement, comme les clés « statiques » qui peuvent être utilisées un nombre de fois illimité, car elles ne nécessitent aucune activation. D’autres clés doivent être demandées à l’aide du lien **Obtenir une clé** correspondant au produit.
 
-Différents types de clés sont disponibles en fonction du produit. 
+Différents types de clés sont disponibles en fonction du produit.
 
 
 ### <a name="product-key-types"></a>Types de clés de produit
@@ -72,48 +71,48 @@ Différents types de clés sont disponibles en fonction du produit.
 |    Clé MAK DreamSpark         |    Ce sont des clés MAK destinées aux clients des programmes DreamSpark.                                                                                                                                                                                                  |
 |
 
-Vous pouvez demander une clé à partir de la page Téléchargements du produit, ou rechercher la clé dont vous avez besoin dans la page [Clés de produit](https://my.visualstudio.com/productkeys). 
+Vous pouvez demander une clé à partir de la page Téléchargements du produit, ou rechercher la clé dont vous avez besoin dans la page [Clés de produit](https://my.visualstudio.com/productkeys).
 
 ### <a name="claiming-product-keys"></a>Demande de clés de produit
-Seuls les abonnés ayant des abonnements actifs peuvent télécharger des produits et demander des clés de produit.  Si vous avez un abonnement actif, vous pouvez exporter vos clés demandées à partir de la page [Clés de produit](https://my.visualstudio.com/productkeys).  
+Seuls les abonnés ayant des abonnements actifs peuvent télécharger des produits et demander des clés de produit.  Si vous avez un abonnement actif, vous pouvez exporter vos clés demandées à partir de la page [Clés de produit](https://my.visualstudio.com/productkeys).
 
 
 Pour demander une clé de produit :
-1.  Connectez-vous à votre abonnement Visual Studio.  Vous devez être connecté pour pouvoir télécharger des produits ou demander des clés de produit. 
+1.  Connectez-vous à votre abonnement Visual Studio.  Vous devez être connecté pour pouvoir télécharger des produits ou demander des clés de produit.
 2.  Cliquez sur l’onglet [Clés de produit](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs).
-3.  Les clés de produit sont répertoriées par nom de produit, par ordre alphabétique.  Vous pouvez faire défiler la liste jusqu’au nom de produit recherché, ou rechercher le produit à l’aide de la barre de recherche en haut de la page.  
+3.  Les clés de produit sont répertoriées par nom de produit, par ordre alphabétique.  Vous pouvez faire défiler la liste jusqu’au nom de produit recherché, ou rechercher le produit à l’aide de la barre de recherche en haut de la page.
     ![Rechercher une clé de produit](_img\product-keys\visio-product-key-cropped.png)
 
 Dans cet exemple, nous avons utilisé la barre de recherche pour rechercher une clé de produit Visio 2010.
-Comme vous pouvez le voir, plusieurs versions de Visio 2010 sont répertoriées.  Une clé a déjà été demandée pour Visio Standard 2010 et pour Visio Premium 2010, et ces deux versions ont encore quatre clés disponibles chacune.  Les deux clés ayant été demandées sont des clés de produit commercialisé et sont affichées dans la page.  Notez que vous pouvez enregistrer une brève remarque sur les clés demandées dans la colonne **Remarques**.  Vous pouvez utiliser cette colonne conjointement avec la date de la colonne **Demandé** pour suivre les clés que vous avez demandées.  Par exemple, ajoutez une remarque quand vous activez une installation du produit à l’aide de la clé.  
+Comme vous pouvez le voir, plusieurs versions de Visio 2010 sont répertoriées.  Une clé a déjà été demandée pour Visio Standard 2010 et pour Visio Premium 2010, et ces deux versions ont encore quatre clés disponibles chacune.  Les deux clés ayant été demandées sont des clés de produit commercialisé et sont affichées dans la page.  Notez que vous pouvez enregistrer une brève remarque sur les clés demandées dans la colonne **Remarques**.  Vous pouvez utiliser cette colonne conjointement avec la date de la colonne **Demandé** pour suivre les clés que vous avez demandées.  Par exemple, ajoutez une remarque quand vous activez une installation du produit à l’aide de la clé.
 
 ### <a name="exporting-your-claimed-keys"></a>Exportation de vos clés demandées
-Vous pouvez exporter une liste de toutes les clés que vous avez demandées, et d’un grand nombre de clés statiques et d’autres clés qui sont automatiquement marquées comme « demandées » pour vous.  
+Vous pouvez exporter une liste de toutes les clés que vous avez demandées, et d’un grand nombre de clés statiques et d’autres clés qui sont automatiquement marquées comme « demandées » pour vous.
 
-> [!IMPORTANT] 
-> Si votre abonnement expire, vous ne pouvez plus demander de nouvelles clés ou exporter les clés demandées. 
+> [!IMPORTANT]
+> Si votre abonnement expire, vous ne pouvez plus demander de nouvelles clés ou exporter les clés demandées.
 
-Pour exporter vos clés, cliquez simplement sur le lien **Exporter toutes les clés** situé à l’extrême droite de la page Clés de produit.  Un fichier .xml intitulé KeysExport.xml est créé. Vous pouvez ensuite ouvrir ou enregistrer le fichier.  Vous devez ouvrir le fichier avec une application prenant en charge les fichiers .xml.  Par exemple, vous pouvez ouvrir le fichier en tant que classeur en lecture seule dans Excel.  
+Pour exporter vos clés, cliquez simplement sur le lien **Exporter toutes les clés** situé à l’extrême droite de la page Clés de produit.  Un fichier .xml intitulé KeysExport.xml est créé. Vous pouvez ensuite ouvrir ou enregistrer le fichier.  Vous devez ouvrir le fichier avec une application prenant en charge les fichiers .xml.  Par exemple, vous pouvez ouvrir le fichier en tant que classeur en lecture seule dans Excel.
 
 ## <a name="internet-demonstrations-via-terminal-services"></a>Démonstrations Internet via les services Terminal Server
 Avec un abonnement Visual Studio, vous pouvez fournir un accès aux démonstrations Internet de vos programmes aux utilisateurs finaux par le biais des services Terminal Server (Windows Server 2003 ou Windows Server 2008) ou des services Bureau à distance (Windows Server 2008 R2 ou versions ultérieures). Jusqu’à 200 utilisateurs anonymes peuvent ainsi accéder simultanément à votre démonstration. Votre démonstration ne doit pas utiliser de données de production. Les abonnés Visual Studio sont autorisés à démontrer leurs applications aux utilisateurs finaux. Les services Terminal Server ou Bureau à distance sont les seuls moyens pour les utilisateurs finaux sans abonnement Visual Studio d’interagir avec l’application démontrée quand le logiciel est concédé sous licence par le biais d’abonnements Visual Studio.
 
 Cela s’ajoute aux autorisations de développement et de test, qui permettent aux abonnés Visual Studio d’utiliser un nombre illimité de connexions aux services Terminal Server ou Bureau à distance.
 
-### <a name="enabling-rds-access"></a>Activation de l’accès aux services Bureau à distance 
+### <a name="enabling-rds-access"></a>Activation de l’accès aux services Bureau à distance
 Les abonnés Visual Studio peuvent augmenter le nombre d’utilisateurs autorisés à accéder à Windows Server par le biais des services Bureau à distance en entrant une clé de produit fournie sous l’onglet [Clés de produit](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) dans le [portail Abonné](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Pour obtenir une clé de produit, connectez-vous à la page Clés de produit et faites défiler la page jusqu’à la version Windows Server que vous utilisez. Recherchez « Connexions < utilisateur ou appareil > aux services Bureau à distance Windows Server < version > R2 », puis cliquez sur le lien **Demander une clé**. Par exemple, si vous utilisez les services Bureau à distance sur Windows Server 2012 R2 et que votre déploiement utilise des CAL utilisateur, choisissez « Connexions utilisateurs aux services Bureau à distance Windows Server 2012 (50) ».
-Cinq clés de chaque type sont disponibles pour Windows Server 2008 R2, et chaque clé prend en charge 20 connexions. Pour Windows Server 2012 R2, quatre clés de chaque type sont disponibles, et chaque clé prend en charge 50 connexions. 
+Cinq clés de chaque type sont disponibles pour Windows Server 2008 R2, et chaque clé prend en charge 20 connexions. Pour Windows Server 2012 R2, quatre clés de chaque type sont disponibles, et chaque clé prend en charge 50 connexions.
 
-#### <a name="to-enable-additional-connections-in-windows-server"></a>Pour activer des connexions supplémentaires dans Windows Server : 
+#### <a name="to-enable-additional-connections-in-windows-server"></a>Pour activer des connexions supplémentaires dans Windows Server :
 1.  Ouvrez le Gestionnaire de serveur.
 2.  Ouvrez la liste des serveurs dans le volet de navigation de gauche.
 3.  Cliquez avec le bouton droit sur votre serveur de licences et choisissez « Installer les licences ».
-4.  Suivez les étapes de l'Assistant.  Quand vous sélectionnez le type de contrat, choisissez « Pack de licence (version commerciale) », puis entrez la clé de produit obtenue sur le portail MY. 
+4.  Suivez les étapes de l'Assistant.  Quand vous sélectionnez le type de contrat, choisissez « Pack de licence (version commerciale) », puis entrez la clé de produit obtenue sur le portail MY.
 
-Les utilisateurs finaux peuvent utiliser les services Bureau à distance pour se connecter aux applications si les conditions suivantes sont remplies : 
+Les utilisateurs finaux peuvent utiliser les services Bureau à distance pour se connecter aux applications si les conditions suivantes sont remplies :
 - Les utilisateurs doivent rester anonymes (état non identifié).
-- Les connexions doivent se faire par Internet. 
-- 200 connexions utilisateur au maximum peuvent être utilisées simultanément pour les démonstrations de l’application. 
+- Les connexions doivent se faire par Internet.
+- 200 connexions utilisateur au maximum peuvent être utilisées simultanément pour les démonstrations de l’application.
 - Les clés de produit permettant d’activer les connexions utilisateur doivent être obtenues par un abonné Visual Studio.
 
-Pour obtenir des instructions sur la configuration des licences de services Bureau à distance sur votre serveur, consultez le blog [RD Licensing Configuration on Windows Server 2012](http://blogs.technet.com/b/askperf/archive/2013/09/20/rd-licensing-configuration-on-windows-server-2012.aspx). Si vous avez des questions, consultez le [forum sur les services Bureau à distance Microsoft](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS). 
+Pour obtenir des instructions sur la configuration des licences de services Bureau à distance sur votre serveur, consultez le blog [RD Licensing Configuration on Windows Server 2012](http://blogs.technet.com/b/askperf/archive/2013/09/20/rd-licensing-configuration-on-windows-server-2012.aspx). Si vous avez des questions, consultez le [forum sur les services Bureau à distance Microsoft](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS).

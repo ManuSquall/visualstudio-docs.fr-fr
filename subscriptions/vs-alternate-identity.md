@@ -9,11 +9,12 @@ description: Comment ajouter une identité secondaire à votre abonnement Visual
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: vs subscription
-ms.openlocfilehash: 9a83f78f35b9533c554c81cecd181c00eca05568
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 70d11f83584d776fef9dae7e771bcdeb40a3c477
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326304"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Identités pour les abonnés Visual Studio
 
@@ -34,42 +35,35 @@ Cela ne signifie pas que vous avez une copie de l’abonnement pour l’autre co
 
 Pour tous les abonnements, vous pouvez ajouter un « compte professionnel ou scolaire », ce qui vous permet d’utiliser ce compte avec les avantages nécessitant une connexion (IDE VS, VSTS et Azure).
 
-### <a name="prerequisites"></a>Prérequis
-
-* [Autorisations de propriétaire de compte ou d’administrateur de collection de projets VSTS](https://docs.microsoft.com/en-us/vsts/accounts/faq-add-delete-users#find-owner).
-
-* Pour que vous puissiez utiliser le compte secondaire, l’abonnement associé à votre compte doit inclure Visual Studio Team Services ou Microsoft Azure.
-
-> [!Note]
-> Vous pouvez continuer à utiliser les avantages de votre abonnement avec votre ID secondaire. Toutefois, votre abonnement est toujours associé à votre compte d’origine.
 
 ### <a name="add-the-alternate-account"></a>Ajouter le compte secondaire
 
-1. Connectez-vous à Visual Studio avec votre compte Microsoft (https://{votre_compte}.visualstudio.com).
+
+1. Connectez-vous au portail des abonnés Visual Studio à l’aide de votre compte Microsoft (https://my.visualstudio.com).
 
 2. Accédez à **Abonnements**.
 
-  ![Ajouter un compte secondaire - Accéder aux abonnements dans VS](_img/vs-alternate-identity/my-vs-subscriptions.png)
+
+   ![Ajouter un compte secondaire - Accéder aux abonnements dans VS](_img/vs-alternate-identity/my-vs-subscriptions.png)
 
 3. Choisissez **Ajouter un compte secondaire**.
 
-  ![Choisir Ajouter un compte secondaire ](_img/vs-alternate-identity/choose-add-alternate-account.png)
+   ![Choisir Ajouter un compte secondaire ](_img/vs-alternate-identity/choose-add-alternate-account.png)
 
 4. Ajoutez votre compte professionnel ou scolaire.
 
-  ![Ajouter un compte professionnel ou scolaire](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
+   ![Ajouter un compte professionnel ou scolaire](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
 
-5. Utilisez votre compte professionnel ou scolaire pour vous connecter à Visual Studio (https://{votre_compte}.visualstudio.com).
+5. Utilisez votre compte professionnel ou scolaire pour vous connecter à Visual Studio Team Services (https://{votre_compte}.visualstudio.com).
 
-  ![Utiliser votre compte professionnel ou scolaire](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
+   ![Utiliser votre compte professionnel ou scolaire](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
 
-  Votre compte secondaire est ajouté à l’abonnement Visual Studio. Ainsi, les deux identités peuvent utiliser les avantages de l’abonnement qui vous imposent de vous connecter avec le compte secondaire (IDE, VSTS et Azure).
-
-Pour plus d’informations sur l’ajout d’un compte secondaire, consultez la page [Questions fréquentes (FAQ) sur Visual Studio](https://www.visualstudio.com/my/myvsfaq#alternate).
+Votre compte secondaire est ajouté à l’abonnement Visual Studio. Ainsi, les deux identités peuvent utiliser les avantages de l’abonnement qui vous imposent de vous connecter avec le compte secondaire (IDE, VSTS et Azure).
 
 ## <a name="faq"></a>FAQ
 
 ### <a name="q--why-doesnt-vsts-recognize-me-as-a-visual-studio-subscriber"></a>Q : Pourquoi VSTS ne me reconnaît-il pas comme abonné Visual Studio ?
+
 R : VSTS doit reconnaître automatiquement votre abonnement quand vous vous connectez avec votre identité principale ou secondaire. Si ce n’est pas le cas, vous pouvez essayer les solutions suivantes :
 
 * Vérifiez que vous disposez d’un abonnement Visual Studio actif qui [inclut VSTS en tant qu’avantage](vs-vsts.md).
@@ -78,4 +72,4 @@ R : VSTS doit reconnaître automatiquement votre abonnement quand vous vous con
 
 * Accédez au [portail des abonnés Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs) au moins une fois avant de vous connecter à VSTS.
 
-Si VSTS ne reconnaît toujours pas votre abonnement, [contactez le support technique](https://www.visualstudio.com/team-services/support/).
+Si VSTS ne reconnaît toujours pas votre abonnement, [contactez le support technique](https://visualstudio.microsoft.com/team-services/support/).

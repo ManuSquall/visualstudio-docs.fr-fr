@@ -14,17 +14,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8339b475c3c93bac192f67de8234c5dab1b84abb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1e812be4927ee0232d1096fa272d8ff8e7358366
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571947"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078798"
 ---
-# <a name="how-to-specify-which-target-to-build-first"></a>Comment : spécifier la cible à générer en premier
+# <a name="how-to-specify-which-target-to-build-first"></a>Guide pratique pour spécifier la cible à générer en premier
 Un fichier projet peut contenir un ou plusieurs éléments `Target` qui définissent le mode de génération du projet. Le moteur [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) génère le premier projet trouvé, et toutes les dépendances, à moins que le fichier projet ne contienne un attribut `DefaultTargets`, un attribut `InitialTargets` ou qu’une cible ne soit spécifiée sur la ligne de commande à l’aide du commutateur **/target**.  
   
-## <a name="using-the-initialtargets-attribute"></a>Utilisation de l’attribut InitialTargets  
+## <a name="use-the-initialtargets-attribute"></a>Utiliser l’attribut InitialTargets  
  L’attribut `InitialTargets` de l’élément `Project` spécifie une cible qui est exécutée en premier, même si des cibles sont spécifiées sur la ligne de commande ou dans l’attribut `DefaultTargets`.  
   
 #### <a name="to-specify-one-initial-target"></a>Pour spécifier une cible initiale  
@@ -41,7 +41,7 @@ Un fichier projet peut contenir un ou plusieurs éléments `Target` qui définis
   
      `<Project InitialTargets="Clean;Compile">`  
   
-## <a name="using-the-defaulttargets-attribute"></a>Utilisation de l’attribut DefaultTargets  
+## <a name="use-the-defaulttargets-attribute"></a>Utiliser l’attribut DefaultTargets  
  L’attribut `DefaultTargets` de l’élément `Project` spécifie la ou les cibles qui sont générées si une cible n’est pas spécifiée explicitement sur la ligne de commande. Si des cibles sont spécifiées dans les deux attributs `InitialTargets` et `DefaultTargets` et qu’aucune cible n’est spécifiée sur la ligne de commande, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] exécute les cibles spécifiées dans l’attribut `InitialTargets` suivies par les cibles spécifiées dans l’attribut `DefaultTargets`.  
   
 #### <a name="to-specify-one-default-target"></a>Pour spécifier une cible par défaut  
@@ -58,7 +58,7 @@ Un fichier projet peut contenir un ou plusieurs éléments `Target` qui définis
   
      `<Project DefaultTargets="Clean;Compile">`  
   
-## <a name="using-the-target-switch"></a>Utilisation du commutateur /target  
+## <a name="use-the-target-switch"></a>Utiliser le commutateur /target  
  Si aucune cible par défaut n’est définie dans le fichier projet ou si vous ne voulez pas utiliser cette cible par défaut, vous pouvez utiliser le commutateur de ligne de commande **/target** pour spécifier une autre cible. La ou les cibles spécifiées avec le commutateur **/target** sont exécutées à la place des cibles spécifiées par l’attribut `DefaultTargets`. Les cibles spécifiées dans l’attribut `InitialTargets` sont toujours exécutées en premier.  
   
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Pour utiliser en premier une cible autre que la cible par défaut  

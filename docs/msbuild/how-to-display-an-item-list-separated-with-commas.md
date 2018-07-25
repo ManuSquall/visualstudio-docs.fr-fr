@@ -13,22 +13,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a79e8c0f21a63bd5b64af69c2bf9778c07822d83
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 10ff36702f4fba2ed5093e866ac57a099fbbc904
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574933"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081808"
 ---
-# <a name="how-to-display-an-item-list-separated-with-commas"></a>Comment : afficher une liste d'éléments séparés par des virgules
+# <a name="how-to-display-an-item-list-separated-with-commas"></a>Guide pratique pour afficher une liste d’éléments séparés par des virgules
 Lorsque vous utilisez des listes d’éléments dans [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]), il est parfois utile d’afficher le contenu de ces listes de manière à faciliter leur lecture. Vous pouvez également avoir une tâche qui accepte une liste d’éléments séparés par une chaîne de séparation particulière. Dans ces deux cas, vous pouvez spécifier une chaîne de séparation pour la liste d’éléments.  
   
-## <a name="separating-items-in-a-list-with-commas"></a>Séparation des éléments d’une liste à l’aide de virgules  
+## <a name="separate-items-in-a-list-with-commas"></a>Séparer des éléments d’une liste à l’aide de virgules  
  Par défaut, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] utilise des points-virgules pour séparer les éléments d’une liste. Par exemple, imaginez un élément `Message` avec la valeur suivante :  
   
  `<Message Text="This is my list of TXT files: @(TXTFile)"/>`  
   
- Lorsque la liste d’éléments `@(TXTFile)` contient les éléments App1.txt, App2.txt et App3.txt, le message est le suivant :  
+ Quand la liste d’éléments `@(TXTFile)` contient les éléments *App1.txt*, *App2.txt* et *App3.txt*, le message est le suivant :  
   
  `This is my list of TXT files: App1.txt;App2.txt;App3.txt`  
   
@@ -45,7 +45,7 @@ Lorsque vous utilisez des listes d’éléments dans [!INCLUDE[vstecmsbuildengin
      `@(TXTFile, ', ')`  
   
 ## <a name="example"></a>Exemple  
- Dans cet exemple, la tâche [Exec](../msbuild/exec-task.md) exécute l’outil findstr pour rechercher des chaînes de texte spécifiées dans le fichier Phrases.txt. Dans la commande findstr, les chaînes de recherche littérales sont indiquées par le commutateur **/c:**. Ainsi, le séparateur d’éléments `/c:` est inséré entre les éléments de la liste `@(Phrase)`.  
+ Dans cet exemple, la tâche [Exec](../msbuild/exec-task.md) exécute l’outil findstr pour rechercher des chaînes de texte spécifiées dans le fichier *Phrases.txt*. Dans la commande findstr, les chaînes de recherche littérales sont indiquées par le commutateur **/c:**. Ainsi, le séparateur d’éléments `/c:` est inséré entre les éléments de la liste `@(Phrase)`.  
   
  Pour cet exemple, la commande équivalente de ligne de commande est la suivante :  
   
@@ -69,5 +69,5 @@ Lorsque vous utilisez des listes d’éléments dans [!INCLUDE[vstecmsbuildengin
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence MSBuild](../msbuild/msbuild-reference.md)   
+ [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)   
  [Éléments](../msbuild/msbuild-items.md)

@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b03cfca6a575cf9c91b1e60b0e44212388cc7611
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6d511c6deb65238dc918694ec78e669dcd297789
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750361"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37090047"
 ---
-# <a name="tutorial-step-4-use-the-full-django-web-project-template"></a>Tutoriel étape 4 : utiliser le modèle de projet Web Django complet
+# <a name="step-4-use-the-full-django-web-project-template"></a>Étape 4 : Utiliser le modèle de projet web Django complet
 
 **Étape précédente : [servir les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)**
 
@@ -73,7 +73,7 @@ Au niveau le plus large, le modèle « Projet Web de Django » crée la struct
   - `requirements.txt` qui contient une dépendance sur Django 1.x.
   - `readme.html`, un fichier qui s’affiche dans Visual Studio après avoir créé le projet. Comme indiqué dans la section précédente, suivez les instructions suivantes pour créer un compte de superutilisateur (administrateur) pour l’application.
 - Le dossier `app` contient tous les fichiers d’application, y compris les affichages, modèles, tests, formulaires, modèles et fichiers statiques (voir l’étape 4-2). En règle générale, vous renommez ce dossier pour utiliser un nom d’application plus significatif.
-- Le dossier (projet Django) `DjangoWeb` contient les fichiers de projet Django classiques : `__init.py__`, `settings.py`, `urls.py` et `wsgi.py`. À l’aide du modèle de projet, `settings.py` est déjà configuré pour l’application et le fichier de base de données et `urls.py` est déjà configuré avec des itinéraires pour toutes les pages d’application, y compris le formulaire de connexion.
+- Le dossier (projet Django) `DjangoWeb` contient les fichiers de projet Django classiques : `__init__.py`, `settings.py`, `urls.py` et `wsgi.py`. À l’aide du modèle de projet, `settings.py` est déjà configuré pour l’application et le fichier de base de données et `urls.py` est déjà configuré avec des itinéraires pour toutes les pages d’application, y compris le formulaire de connexion.
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Question : est-il possible de partager un environnement virtuel entre des projets Visual Studio ?
 
@@ -215,7 +215,8 @@ Réponse : l’absence du symbole de fin « $ » dans l’expression réguli�
 > [!div class="nextstepaction"]
 > [Authentifier les utilisateurs dans Django](learn-django-in-visual-studio-step-05-django-authentication.md)
 
-## <a name="going-deeper"></a>Pour aller plus loin
+## <a name="go-deeper"></a>Approfondir la question
 
+- [Déployer l’application web sur Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [Écrire votre première application Django, partie 4 - formulaires et affichages génériques](https://docs.djangoproject.com/en/2.0/intro/tutorial04/) (docs.djangoproject.com)
 - Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

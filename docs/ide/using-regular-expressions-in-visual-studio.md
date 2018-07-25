@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16a5647461c37502f2d7a91cfb71c8f96164f2b1
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: bb9186726a54099b0c75a468a99d760abd22b7f3
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425346"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945544"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Utiliser des expressions régulières dans Visual Studio
 
@@ -43,9 +43,9 @@ Voici quelques exemples :
 |-------------|----------------|-------------|
 |Correspond à n'importe quel caractère unique (sauf un saut de ligne)|.|`a.o` correspond à "aro" dans "around" et à "abo" dans "about", mais pas à "acro" dans "across".|
 |Correspond à zéro ou plusieurs occurrences de l'expression précédente (correspond à autant de caractères que possible)|*|`a*r` correspond à "r" dans "rack", à "rar" dans "ark" et à "aar" dans "aardvark"|
-|Correspond à n'importe quel caractère zéro ou plusieurs fois (caractère générique *)|.*|c.*e correspond à « cke » dans « racket », à « comme » dans « commentaire » et à « code » dans « code »|
-|Correspond à une ou plusieurs occurrences de l'expression précédente (correspond à autant de caractères que possible)|+|`e.+e` correspond à "eede" dans "feeder", mais pas à "ee".|
-|Correspond à n'importe quel caractère une ou plusieurs fois (caractère générique ?)|.+|e.+e correspond à « eede » dans « feeder » mais pas à « ee ».|
+|Correspond à n'importe quel caractère zéro ou plusieurs fois (caractère générique *)|.*|`c.*e` correspond à « cke » dans « racket », à « comme » dans « commentaire » et à « code » dans « code ».|
+|Correspond à une ou plusieurs occurrences de l'expression précédente (correspond à autant de caractères que possible)|+|`e.+d` correspond à « eed » dans « feeder », mais pas à « ed ».|
+|Correspond à n'importe quel caractère une ou plusieurs fois (caractère générique ?)|.+|`e.+e` correspond à "eede" dans "feeder", mais pas à "ee".|
 |Correspond à zéro ou plusieurs occurrences de l'expression précédente (correspond au minimum de caractères possible)|*?|`e.*?e` correspond à "ee" dans "feeder", mais pas à "eede".|
 |Correspond à une ou plusieurs occurrences de l'expression précédente (correspond au minimum de caractères possible)|+?|`e.+?e` correspond à "ente" et "erprise" dans "enterprise", mais pas au mot entier "enterprise".|
 |Ancre la chaîne de correspondance au début d'une ligne ou d'une chaîne|^|`^car` correspond au mot "car" uniquement quand il apparaît au début d’une ligne.|
@@ -53,9 +53,9 @@ Voici quelques exemples :
 |Correspond à n'importe quel caractère unique d'un ensemble|[abc]|`b[abc]` correspond à "ba", "bb" et "bc".|
 |Correspond à n'importe quel caractère dans une plage de caractères|[a-f]|`be[n-t]` correspond à "bet" dans "between", à "ben" dans "beneath" et à "bes" dans "beside", mais pas à "below".|
 |Capture et numérote implicitement l'expression contenue dans les parenthèses|()|`([a-z])X\1` correspond à "aXa" et à "bXb", mais pas à "aXb". « \1 » fait référence au premier groupe d’expressions « [a-z] ».|
-|Invalide une correspondance|(?!abc)|`real (?!ity)` correspond à "real" dans "realty" et dans "really", mais pas dans "reality". Trouve également le deuxième « real » (mais pas le premier « real ») dans « realityreal ».|
+|Invalide une correspondance|(?!abc)|`real(?!ity)` correspond à "real" dans "realty" et dans "really", mais pas dans "reality". Trouve également le deuxième « real » (mais pas le premier « real ») dans « realityreal ».|
 |Correspond à n'importe quel caractère qui ne figure pas dans un ensemble donné de caractères|[^abc]|`be[^n-t]` correspond à "bef" dans "before », à "beh" dans "behind" et à "bel" dans "below", mais pas à "beneath".|
-|Correspond à l'expression placée avant ou après le symbole.|&#124;|`(sponge&#124;mud) bath` correspond à "sponge bath" et à "mud bath".|
+|Correspond à l'expression placée avant ou après le symbole.|&#124;|`(sponge\|mud) bath` correspond à "sponge bath" et à "mud bath".|
 |Crée une séquence d'échappement pour le caractère placé après la barre oblique inverse| \\ |`\^` correspond au caractère ^.|
 |Spécifie le nombre d'occurrences du caractère ou du groupe précédent|{x}, où x est le nombre d'occurrences|`x(ab){2}x` correspond à "xababx", et `x(ab){2,3}x` correspond à "xababx" et à "xabababx", mais pas à "xababababx".|
 |Met en correspondance du texte dans une classe de caractères Unicode, où « X » est le nombre Unicode. Pour plus d'informations sur les classes de caractères Unicode, consultez<br /><br /> [Propriétés des caractères de la norme Unicode 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}|`\p{Lu}` correspond à "T" et à "D" dans "Thomas Doe".|
@@ -65,7 +65,7 @@ Voici quelques exemples :
 |Correspond à n'importe quel espace blanc|(?([^\r\n])\s)|`Public\sInterface` correspond à l’expression "Public Interface".|
 |Correspond à n'importe quel caractère numérique|\d|`\d` correspond à "3" dans "3456", à "2" dans "23" et à "1" dans "1".|
 |Correspond à un caractère Unicode|\uXXXX où XXXX spécifie la valeur du caractère Unicode.|`\u0065` correspond au caractère "e".|
-|Correspond à un identificateur|\b(_\w+&#124;[\w-[0-9\_]]\w*)\b|Correspond à « type1 » mais pas à « &type1 » ni « #define ».|
+|Correspond à un identificateur|\b[\_\w-[0-9]][\_\w]*\b|Correspond à « type1 » mais pas à « &type1 » ni « #define ».|
 |Correspond à une chaîne entre guillemets|((\\".+?\\")&#124;('.+?'))|Correspond à n'importe quelle chaîne entre apostrophes ou guillemets.|
 |Correspond à un nombre hexadécimal|\b0[xX]([0-9a-fA-F]\)\b|Correspond à « 0xc67f » mais pas à « 0xc67fc67f ».|
 |Correspond à des nombres entiers et décimaux|\b[0-9]*\\.\*[0-9]+\b|Correspond à « 1,333 ».|

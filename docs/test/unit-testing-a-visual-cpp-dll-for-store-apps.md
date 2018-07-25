@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: ac32063f61baa33b9b28eea51988b95edde579eb
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d3b010998a56771cab1416c19a311f8bcbcf855b
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751869"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117626"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Guide pratique pour tester une DLL Visual C++
 
@@ -26,7 +26,7 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
 
 ##  <a name="Create_the_solution_and_the_unit_test_project"></a> Créer la solution et le projet de test unitaire
 
-1.  Dans le menu **Fichier**, choisissez **Nouveau** > **Nouveau projet...**.
+1.  Dans le menu **Fichier**, choisissez **Nouveau** > **Nouveau projet**.
 
 2.  Dans la boîte de dialogue Nouveau projet, développez **Installé** > **Visual C++**, puis choisissez **Windows universel**. Choisissez ensuite **Application de tests unitaires (Windows universel)** dans la liste des modèles de projet.
 
@@ -46,7 +46,7 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
 
     -   Les méthodes de test sont regroupées en classes à l'aide de `TEST_CLASS(YourClassName){...}`.
 
-         Lorsque les tests sont exécutés, une instance de chaque classe de test est créée. Les méthodes de test sont appelées dans un ordre non défini. Vous pouvez définir des méthodes spéciales qui sont appelées avant et après chaque module, classe ou méthode. Pour plus d’informations, consultez [Utilisation de Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) dans MSDN Library.
+         Lorsque les tests sont exécutés, une instance de chaque classe de test est créée. Les méthodes de test sont appelées dans un ordre non défini. Vous pouvez définir des méthodes spéciales qui sont appelées avant et après chaque module, classe ou méthode. Pour plus d’informations, consultez [Utilisation de Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md) dans MSDN Library.
 
 ##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Vérifier que les tests s’exécutent dans l’Explorateur de tests
 
@@ -113,7 +113,7 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
 
 5.  Ajoutez des implémentations minimales des fonctions déclarées. Ouvrez **RooterLib.cpp**, puis ajoutez le code suivant :
 
-    ```
+    ```cpp
     // constructor
     CRooterLib::CRooterLib()
     {
@@ -151,7 +151,7 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
 
 3.  Ajoutez un test qui utilise la fonction importée. Ajoutez le code suivant à **unittest1.cpp** :
 
-    ```
+    ```cpp
     TEST_METHOD(BasicTest)
     {
         CRooterLib rooter;
@@ -245,7 +245,7 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
 
 1.  Ajoutez un autre test à **unittest1.cpp** :
 
-    ```
+    ```cpp
     // Verify that negative inputs throw an exception.
      TEST_METHOD(NegativeRangeTest)
      {
@@ -291,7 +291,7 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
 
     3.  Ajoutez du code à **RooterLib.cpp** pour intercepter l’exception :
 
-        ```
+        ```cpp
         #include <stdexcept>
         ...
         double CRooterLib::SquareRoot(double v)

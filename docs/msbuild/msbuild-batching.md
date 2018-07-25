@@ -13,23 +13,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7b769cc89095aca5b22aed46375f56c2ab4c987
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c0ecf9f52aef56e4652532e0bec836021a906038
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570627"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176315"
 ---
-# <a name="msbuild-batching"></a>Traitement par lots de MSBuild
+# <a name="msbuild-batching"></a>Traitement par lots MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] a la capacité de diviser les listes d’éléments en différentes catégories, ou lots, en fonction des métadonnées des éléments, et d’exécuter une cible ou une tâche une fois avec chaque lot.  
   
-## <a name="task-batching"></a>Traitement de tâches par lots  
+## <a name="task-batching"></a>Traitement par lots des tâches  
  Le traitement de tâches par lots vous permet de simplifier vos fichiers projet en fournissant un moyen de diviser les listes d’éléments en différents lots et de passer chacun de ces lots dans une tâche séparément. Cela signifie qu’une tâche et ses attributs ne doivent être déclarés qu’une seule fois dans un fichier projet, même si elle peut être exécutée plusieurs fois.  
   
- Vous spécifiez ce que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doit effectuer comme traitement par lots avec une tâche en utilisant la notation %(*ItemMetaDataName*) dans un des attributs de la tâche. L’exemple suivant fractionne la liste d’éléments `Example` en lots en fonction de la valeur des métadonnées de l’élément `Color` et passe séparément chacun des lots à la tâche `MyTask`.  
+ Vous spécifiez que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doit effectuer un traitement par lots avec une tâche en utilisant la notation %(\<ItemMetaDataName>) dans un des attributs de la tâche. L’exemple suivant fractionne la liste d’éléments `Example` en lots en fonction de la valeur des métadonnées de l’élément `Color` et passe séparément chacun des lots à la tâche `MyTask`.  
   
 > [!NOTE]
->  Si vous ne référencez pas la liste d’éléments ailleurs dans les attributs de tâche, ou si le nom des métadonnées peut être ambigu, vous pouvez utiliser la notation %(*ItemCollection.ItemMetaDataName*) pour qualifier complètement la valeur des métadonnées de l’élément à utiliser pour le traitement par lots.  
+>  Si vous ne référencez pas la liste d’éléments ailleurs dans les attributs de tâche, ou si le nom des métadonnées peut être ambigu, vous pouvez utiliser la notation %(\<ItemCollection.ItemMetaDataName>) pour qualifier complètement la valeur des métadonnées de l’élément à utiliser pour le traitement par lots.  
   
 ```xml  
 <Project  
@@ -53,12 +53,12 @@ ms.locfileid: "31570627"
 </Project>  
 ```  
   
- Pour obtenir des exemples de traitement par lots plus spécifiques, consultez [Métadonnées d’éléments dans le traitement par lots de tâches](../msbuild/item-metadata-in-task-batching.md).  
+ Pour obtenir des exemples de traitement par lots plus spécifiques, consultez [Métadonnées d’élément dans le traitement par lots des tâches](../msbuild/item-metadata-in-task-batching.md).  
   
-## <a name="target-batching"></a>Traitement de cibles par lots  
+## <a name="target-batching"></a>Traitement par lots des cibles  
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] vérifie si les entrées et sorties d’une cible sont à jour avant d’exécuter la cible. Si les entrées et les sorties sont à jour, la cible est ignorée. Si une tâche à l’intérieur d’une cible utilise le traitement par lots, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doit déterminer si les entrées et sorties de chaque lot d’éléments sont à jour. Sinon, la cible est exécutée chaque fois qu’elle est atteinte.  
   
- L’exemple suivant montre un élément `Target` contenant un attribut `Outputs` avec la notation %(*ItemMetaDataName*). [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] divise la liste d’éléments `Example` en lots en fonction des métadonnées de l’élément `Color` et analyse les horodatages des fichiers de sortie pour chaque lot. Si les sorties d’un lot ne sont pas à jour, la cible est exécutée. Sinon, la cible est ignorée.  
+ L’exemple suivant montre un élément `Target` contenant un attribut `Outputs` avec la notation %(\<ItemMetaDataName>). [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] divise la liste d’éléments `Example` en lots en fonction des métadonnées de l’élément `Color` et analyse les horodatages des fichiers de sortie pour chaque lot. Si les sorties d’un lot ne sont pas à jour, la cible est exécutée. Sinon, la cible est ignorée.  
   
 ```xml  
 <Project  
@@ -84,7 +84,7 @@ ms.locfileid: "31570627"
 </Project>  
 ```  
   
- Pour un autre exemple de traitement de cible par lots, consultez [Métadonnées d’éléments dans le traitement par lots de cibles](../msbuild/item-metadata-in-target-batching.md).  
+ Pour obtenir un autre exemple de traitement par lots des cibles, consultez [Métadonnées d’élément dans le traitement par lots des cibles](../msbuild/item-metadata-in-target-batching.md).  
   
 ## <a name="property-functions-using-metadata"></a>Fonctions de propriété utilisant des métadonnées  
  Le traitement par lots peut être contrôlé par des fonctions de propriété qui incluent des métadonnées. Par exemple :  
@@ -104,5 +104,5 @@ ms.locfileid: "31570627"
 ## <a name="see-also"></a>Voir aussi  
  [ItemMetadata, élément (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
  [Concepts MSBuild](../msbuild/msbuild-concepts.md)   
- [Référence MSBuild](../msbuild/msbuild-reference.md)   
+ [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)   
  [Concepts avancés](../msbuild/msbuild-advanced-concepts.md)

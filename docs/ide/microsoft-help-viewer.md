@@ -21,28 +21,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be587e708857a5c46c92986decff75a4807f8897
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fb2c375aebd327d3d56b8f720b1b3619fab9b256
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948205"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117158"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 
-Vous pouvez installer et afficher le contenu de divers produits et technologies sur votre ordinateur local à l’aide de Microsoft Help Viewer, notamment Visual Studio, le .NET Framework, la référence du langage, SQL Server et le développement Windows. Help Viewer vous permet d’effectuer les opérations suivantes :
+Vous pouvez installer et afficher le contenu de divers produits et technologies sur votre ordinateur local à l’aide de Microsoft Help Viewer. Ces produits incluent Visual Studio, le .NET Framework, la référence du langage, SQL Server et Développement Windows. Help Viewer vous permet d’effectuer les opérations suivantes :
 
--   Rechercher et télécharger des ensembles de contenu, aussi appelés livres.
+- Télécharger des ensembles de contenu, aussi appelés livres. Ceci peut être utile si vous avez besoin de travailler « hors connexion » et d’avoir encore accès à la documentation.
 
--   Parcourir la table des matières pour rechercher des rubriques par titre.
+- Parcourir la table des matières pour rechercher des rubriques par titre.
 
--   Rechercher des sujets dans l'index.
+- Rechercher des sujets dans l'index.
 
--   Trouver des informations à l'aide de la recherche en texte intégral.
+- Trouver des informations à l'aide de la recherche en texte intégral.
 
--   Afficher, imprimer des rubriques et leur ajouter des signets.
+- Afficher, imprimer des rubriques et leur ajouter des signets.
 
 Pour installer Help Viewer, consultez [Installation de Microsoft Help Viewer](../ide/microsoft-help-viewer-installation.md). Pour commencer à lire des rubriques d’aide dans Help Viewer plutôt qu’en ligne, accédez au menu **Aide** de Visual Studio, puis choisissez **Définir les préférences pour l’aide** > **Lancer dans la visionneuse d’aide**.
+
+> [!TIP]
+> Une autre façon de télécharger du contenu localement pour pouvoir y accéder quand vous n’avez pas de connexion Internet consiste à télécharger une version PDF de ce contenu. De nombreux ensembles de documentation sur docs.microsoft.com comportent un lien en bas de la table des matières pour télécharger un fichier PDF qui contient tous les articles de cette table des matières.
+>
+> ![Télécharger le PDF pour la documentation de Visual Studio](media/download-pdf.png)
 
 ## <a name="help-viewer-tour"></a>Visite guidée de Help Viewer
 
@@ -74,19 +79,19 @@ La liste de contenu indique quels sont les livres que vous pouvez installer ou a
 
 La barre d’outils de la fenêtre de **Help Viewer** contient les boutons suivants :
 
--   Le bouton **Afficher la rubrique dans le sommaire** affiche l’emplacement de la rubrique sous l’onglet **Sommaire**.
+- Le bouton **Afficher la rubrique dans le sommaire** affiche l’emplacement de la rubrique sous l’onglet **Sommaire**.
 
--   Le bouton **Ajouter aux favoris** ajoute la rubrique active à l’onglet **Favoris**.
+- Le bouton **Ajouter aux favoris** ajoute la rubrique active à l’onglet **Favoris**.
 
--   Le bouton **Chercher dans la rubrique** met en surbrillance le texte de recherche dans la rubrique active.
+- Le bouton **Chercher dans la rubrique** met en surbrillance le texte de recherche dans la rubrique active.
 
--   Le bouton **Imprimer** imprime ou affiche un aperçu de la rubrique active.
+- Le bouton **Imprimer** imprime ou affiche un aperçu de la rubrique active.
 
--   Le bouton **Options de la visionneuse** affiche des paramètres comme la taille du texte affiché, le nombre de résultats de recherche à retourner, le nombre de rubriques à afficher dans l’historique et s’il faut rechercher les mises à jour en ligne.
+- Le bouton **Options de la visionneuse** affiche des paramètres comme la taille du texte affiché, le nombre de résultats de recherche à retourner, le nombre de rubriques à afficher dans l’historique et s’il faut rechercher les mises à jour en ligne.
 
--   Le bouton **Gérer le contenu** active l’onglet **Gérer le contenu**.
+- Le bouton **Gérer le contenu** active l’onglet **Gérer le contenu**.
 
--   Le petit triangle à droite ouvre une liste d’onglets, dont les onglets de la rubrique et l’onglet **Gérer le contenu**. Vous pouvez choisir le nom d’un onglet pour qu’il devienne l’onglet actif.
+- Le petit triangle à droite ouvre une liste d’onglets, dont les onglets de la rubrique et l’onglet **Gérer le contenu**. Vous pouvez choisir le nom d’un onglet pour qu’il devienne l’onglet actif.
 
 ## <a name="see-also"></a>Voir aussi
 

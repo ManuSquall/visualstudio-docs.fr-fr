@@ -1,7 +1,7 @@
 ---
 title: Modèles d’application web pour Python
 description: Vue d’ensemble des modèles Visual Studio pour les applications web écrites dans Python à l’aide des infrastructures Bottle, Flask et Django, y compris les configurations de débogage et la publication sur Azure App Service.
-ms.date: 05/18/2018
+ms.date: 07/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,18 +11,20 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f975b726b8be76af1e3daeff59a06a18988644ab
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ce402b0df6521ac55942ded9615b6962640193c1
+ms.sourcegitcommit: 4ab232758d308bda742434beff8349a80c167890
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752038"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37847763"
 ---
 # <a name="python-web-application-project-templates"></a>Modèles de projet d’application web Python
 
 Python dans Visual Studio prend en charge le développement de projets web dans les frameworks Bottle, Django et Flask, via des modèles de projet et un lanceur de débogueur qui peuvent être configurés pour gérer différents frameworks. Ces modèles comprennent un fichier `requirements.txt` permettant de déclarer les dépendances nécessaires. Lors de la création d’un projet à partir de l’un de ces modèles, Visual Studio vous invite à installer ces packages (voir [Installation des spécifications du projet](#installing-project-requirements) plus loin dans cet article).
 
 Vous pouvez également utiliser le modèle « Projet web » générique pour d’autres frameworks, comme Pyramid. Dans ce cas, aucun framework n’est installé avec le modèle. Vous devrez installer les packages nécessaires dans l’environnement que vous utilisez pour le projet (voir [Gestion des environnements Python](managing-python-environments-in-visual-studio.md)).
+
+Pour plus d’informations sur le déploiement d’une application web Python sur Azure, consultez [Publication sur Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 ## <a name="using-a-project-template"></a>Utilisation d’un modèle de projet
 

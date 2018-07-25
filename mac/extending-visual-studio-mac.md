@@ -6,12 +6,12 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 4ba57dde546ff6827c6d0d137e907174c0699dbb
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: eeca19a8724a93c46f832ead0ac16ecda84b70bf
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33865095"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178258"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Extension de Visual Studio pour Mac
 
@@ -38,7 +38,7 @@ Cette section présente les différents fichiers générés par Add-in Maker et 
 
 Les packages d’extension stockent des métadonnées sur leur nom, leur version, leurs dépendances et d’autres informations dans des attributs C#. Add-in Maker crée deux fichiers, `AddinInfo.cs` et `AssemblyInfo.cs`, pour stocker et organiser ces informations. Les packages d’extension doivent avoir un ID et un espace de noms uniques spécifiés dans leur *attribut Addin* :
 
-```
+```csharp
 [assembly:Addin (
    "DateInserter",
    Namespace = "DateInserter",
@@ -70,7 +70,7 @@ Les extensions de commande sont des extensions qui pointent vers des méthodes a
 
 Les extensions de commande sont définies en ajoutant des entrées au point d’extension `/MonoDevelop/Ide/Commands`. Nous avons défini notre extension dans `Manifest.addin.xml` avec le code suivant :
 
- ```
+ ```xml
 <Extension path="/MonoDevelop/Ide/Commands/Edit">
   <command id="DateInserter.DateInserterCommands.InsertDate"
             _label="Insert Date"
@@ -90,7 +90,7 @@ Le nœud de l’extension contient un attribut path qui spécifie le point d’e
 
 L’extrait de code suivant illustre une extension CommandItem qui se connecte au point d’extension `/MonoDevelop/Ide/MainMenu/Edit` :
 
-```
+```xml
 <Extension path="/MonoDevelop/Ide/MainMenu/Edit">
   <commanditem id="DateInserter.DateInserterCommands.InsertDate" />
 </Extension>
@@ -102,7 +102,7 @@ Un élément de commande place une commande spécifiée dans son attribut id dan
 
 L’extension `InsertDateHandler` est une extension de la classe `CommandHandler`. Elle remplace deux méthodes, `Update` et `Run`. Une requête est faite à la méthode `Update` chaque fois qu’une commande est affichée dans un menu ou exécutée via des combinaisons de touches. En modifiant l’objet info, vous pouvez désactiver la commande ou la rendre invisible, remplir des commandes de tableau, etc. Cette méthode `Update` désactive la commande si elle ne peut pas trouver un *Document* actif avec un *éditeur de texte* pour y insérer du texte :
 
-```
+```csharp
 protected override void Update (CommandInfo info)
 {
     info.Enabled = IdeApp.Workbench.ActiveDocument?.Editor != null;
@@ -111,7 +111,7 @@ protected override void Update (CommandInfo info)
 
 Vous devez remplacer la méthode `Update` seulement quand vous avez une logique spéciale pour activer ou masquer la commande. La méthode `Run` s’exécute chaque fois qu’un utilisateur exécute une commande, ce qui dans ce cas se produit quand un utilisateur sélectionne la commande dans le menu Edition. Cette méthode insère la date et l’heure au point d’insertion dans l’éditeur de texte :
 
-```
+```csharp
 protected override void Run ()
 {
   var editor = IdeApp.Workbench.ActiveDocument.Editor;
@@ -122,7 +122,7 @@ protected override void Run ()
 
 Déclarez le type de commande comme membre d’énumération dans `DateInserterCommands` :
 
-```
+```csharp
 public enum DateInserterCommands
 {
   InsertDate,

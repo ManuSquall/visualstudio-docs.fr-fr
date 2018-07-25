@@ -7,12 +7,12 @@ ms.date: 05/03/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 58d0fc5c31b02574661f8b86a4ae8bcaf393be3a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 51d066289809842cd50974cbb37a89bc7a73d5dc
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693771"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37438409"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Connexion à Team Foundation Version Control 
 
@@ -23,8 +23,8 @@ VSTS (Visual Studio Team Services) et TFS (Team Foundation Server) fournissent d
 
 ## <a name="requirements"></a>Configuration requise
 
-* Visual Studio pour Mac version 7.5 ou ultérieure
-* Visual Studio Team Services ou Team Foundation Server 2013 et ultérieur
+* Visual Studio Community, Professional ou Enterprise pour Mac version 7.5 ou ultérieure.
+* Visual Studio Team Services ou Team Foundation Server 2013 et ultérieur.
 * Un projet dans Visual Studio Team Services ou Team Foundation Server configuré pour utiliser Team Foundation Version Control.
 
 ## <a name="installation"></a>Installation
@@ -35,79 +35,142 @@ Dans Visual Studio pour Mac, choisissez **Visual Studio > Extensions...** dans l
 
 Suivez les invites pour installer l’extension. Une fois qu’elle est installée, redémarrez l’IDE.
 
+## <a name="updating-the-extension"></a>Mise à jour de l’extension
+
+Les mises à jour de l’extension TFVC sont effectuées régulièrement. Pour accéder aux mises à jour, choisissez **Visual Studio > Extensions...** dans le menu et sélectionnez l’onglet **Mises à jour**. Sélectionnez l’extension dans la liste et appuyez sur le bouton **Mettre à jour** :
+
+  ![Gestionnaire d’extensions indiquant la mise à jour](media/tfvc-update.png) 
+
+Appuyez sur **Installer** dans la boîte de dialogue suivante pour désinstaller l’ancien package et installer le nouveau.
+
+Pour plus d’informations sur les nouveautés de chaque version, consultez les [Notes de publication](https://docs.microsoft.com/visualstudio/releasenotes/vs2017-mac-preview-relnotes#team-foundation-version-control-extension--release-notes).
+
 ## <a name="using-the-add-in"></a>Utilisation du complément
 
-Une fois l’extension installée, sélectionnez l’élément de menu **Gestion de version > TFS/VSTS > Se connecter à Team Foundation Version Control**. Cliquez sur **Ajouter** pour ajouter un nouveau compte : 
+Une fois l’extension installée, sélectionnez l’élément de menu **Gestion de version > TFS/VSTS > Ouvrir à partir du dépôt distant**. 
 
-![Ajouter un serveur TFVC](media/tfvc-add-remove-server.png)
+Choisissez Visual Studio Team Services ou Team Foundation Server pour démarrer et appuyez sur **Continuer** :
 
-Choisissez Visual Studio Team Services ou Team Foundation Server pour démarrer :
+  ![Se connecter avec un serveur](media/tfvc-choose-server-type.png)
 
-![Se connecter avec un serveur TFVC](media/tfvc-choose-server-type.png)
+### <a name="vsts-authentication"></a>Authentification VSTS
 
-Entrez vos informations d’identification et cliquez sur **Se connecter** : 
+Quand vous sélectionnez un projet qui est hébergé dans VSTS, vous êtes invité à entrer les détails de votre compte Microsoft :
 
-![Se connecter à un serveur TFVC](media/tfvc-login.png)
+  ![Se connecter avec un serveur VSTS](media/tfvc-vsts-login.png)
 
-Une fois que vous êtes connecté, sélectionnez les projets auxquels vous souhaitez accéder et appuyez sur **OK** : 
+### <a name="tfs-authentication"></a>Authentification TFS
 
-![Choisir des projets](media/tfvc-choose-projects.png)
+Pour vous connecter à TFS, entrez les détails du serveur et les informations d’identification de votre compte. Entrez un domaine pour utiliser l’authentification NTLM, sinon laissez vide pour utiliser l’authentification de base. Sélectionnez **Ajouter un serveur** : 
 
-Sélectionnez l’élément de menu **Gestion de version > TFS/VSTS > Explorateur du contrôle de code Source** pour ouvrir l’Explorateur du contrôle de code source qui vous permet d’accéder à la source.
+![Se connecter à un serveur TFS](media/tfvc-login.png)
 
-> [!IMPORTANT]
-> **Problème connu** : Dans cette préversion, vous devrez [créer un espace de travail](#creating-a-new-workspace) la première fois que vous ouvrez l’Explorateur du contrôle de code source.
+## <a name="selecting-a-project"></a>Sélection d’un projet
 
-![Explorateur de la source](media/tfvc-source-explorer.png)
+Une fois authentifié, vous pouvez voir une liste des dépôts qui sont associés à un compte dans la boîte de dialogue **Ouvrir depuis le contrôle de code source** :
 
-Dans l’Explorateur du contrôle de code source, vous pouvez parcourir votre code source sur le serveur et effectuer les actions suivantes :
+  ![Boîte de dialogue Ouvrir depuis le contrôle de code source avec affichage des projets](media/tfvc-vsts-projects.png)
 
-- Gérer des espaces de travail (créer, modifier ou supprimer)
-- Naviguer dans la structure du projet
-- Mapper des projets
-- Obtenir des projets
-- Verrouiller et déverrouiller des fichiers
-- Renommer des fichiers
-- Supprimer des fichiers
-- Ajouter un nouveau fichier
-- Extraire
-- Archiver
-- Afficher les changements d’historique
-- Comparer les changements
+Cette boîte de dialogue est organisée avec les nœuds suivants :
+
+- Collection ou compte VSTS : affiche tous les comptes connectés au compte Microsoft avec lequel vous vous êtes connecté
+- Projets d’équipe : chaque compte VSTS peut comporter un certain nombre de projets d’équipe. Un projet d’équipe est l’emplacement où sont hébergés le code source, les éléments de travail et les générations automatisées.
+
+À ce stade, vous pouvez effectuer une recherche et filtrer par nom de projet ou compte.
+
+### <a name="adding-a-new-server"></a>Ajout d’un nouveau serveur
+
+Pour ajouter un nouveau serveur à la liste, appuyez sur le bouton **Ajouter un hôte** dans la boîte de dialogue **Ouvrir depuis le contrôle de code source** :
+
+![Mise en valeur du bouton d’ajout permettant d’ajouter un nouveau serveur à la liste](media/tfvc-add-new-server.png)
+
+Sélectionnez le fournisseur dans la liste, puis entrez vos informations d’identification :
+
+![Boîte de dialogue affichant l’option du fournisseur de contrôle de code source](media/tfvc-add-new-creds.png)
 
 ## <a name="creating-a-new-workspace"></a>Créer un espace de travail
 
-Dans l’Explorateur du contrôle de code source, cliquez sur le bouton **Gérer les espaces de travail**. 
+Pour commencer à utiliser un projet, vous devez disposer d’un _espace de travail_. Si vous ne disposez pas d’un espace de travail, vous pouvez en créer un à partir de la zone de liste déroulante **Espace de travail** dans la boîte de dialogue **Ouvrir depuis le contrôle de code source** :
 
-![Gérer les espaces de travail](media/tfvc-manage-workspaces.png)
+![Option de zone de liste déroulante permettant de créer un espace de travail](media/tfvc-create-new-workspace.png)
 
-Cliquez sur le bouton **Ajouter** pour créer un nouvel espace de travail.
+Définissez le nom et le chemin local de votre nouvel espace de travail et sélectionnez **Créer l’espace de travail** :
 
-![Créer un espace de travail](media/tfvc-create-workspace.png)
+![Saisie du nom et du chemin local du nouvel espace de travail](media/tfvc-local-workspace.png)
 
-Nommez l’espace de travail, puis cliquez sur **Ajouter un dossier de travail** pour mapper le projet à un dossier local sur votre ordinateur.
+## <a name="using-the-source-code-explorer"></a>Utilisation de l’Explorateur du contrôle de code source
 
-Une fois terminé, cliquez sur **OK**, puis fermez la boîte de dialogue Gérer les espaces de travail. Vous pouvez alors obtenir les fichiers par le biais de l’Explorateur du contrôle de code source et démarrer.
+Après avoir créé un espace de travail et mappé votre projet, vous pouvez commencer à utiliser _l’Explorateur du contrôle de code source_.
+
+Pour ouvrir l’Explorateur du contrôle de code source, sélectionnez **Gestion de version > TFS/VSTS > Explorateur du contrôle de code source** :
+
+![Élément de menu permettant d’ouvrir l’Explorateur du contrôle de code source](media/tfvc-source-control-explorer.png)
+
+L’Explorateur du contrôle de code source vous permet de naviguer dans tous les projets mappés, leurs fichiers et dossiers. Il vous permet également d’effectuer toutes les actions de contrôle de code source de base telles que les suivantes :
+
+- Obtenir la dernière version
+- Obtenir une version spécifique
+- Archiver et extraire des fichiers
+- Verrouiller et déverrouiller des fichiers
+- Ajouter, supprimer et renommer des fichiers
+- Afficher l'historique
+- Comparer les changements
+
+Nombre de ces actions sont réalisables par le biais d’actions contextuelles sur le projet :
+
+![Actions de menu contextuel pour un projet](media/tfvc-sourcecode-actions.png)
+
+## <a name="managing-workspaces"></a>Gestion des espaces de travail
+
+Si vous n’avez pas déjà créé un espace de travail, comme décrit dans la section [Création d’un espace de travail](#creating-a-new-workspace), vous pouvez remarquer que l’Explorateur de code source est vide :
+
+![Explorateur de code source vide](media/tfvc-setup-empty-sce.png) 
+
+Pour configurer votre projet distant avec un espace de travail local, effectuez les étapes suivantes :
+
+1. Sélectionnez le **Serveur** à partir de la zone de liste déroulante.
+1. Notez qu’il n’y a « aucun espace de travail » et que le chemin local est « Non mappé ». Sélectionnez le lien **Non mappé** pour afficher la boîte de dialogue **Créer un espace de travail**.
+1. Nommez l’espace de travail, puis cliquez sur **Ajouter un dossier de travail** pour mapper le projet à un dossier local sur votre ordinateur :
+    
+    ![Boîte de dialogue Créer un espace de travail montrant les options par défaut](media/tfvc-workspace1.png) 
+
+1. Sélectionnez le dossier « $ » pour mapper tous les projets d’équipe sur votre serveur à l’espace de travail, ou sélectionnez un projet individuel, puis cliquez sur **OK** :
+    
+    ![Boîte de dialogue Rechercher un dossier montrant tous les projets](media/tfvc-workspace2.png) 
+
+1. Sélectionnez l’emplacement sur votre ordinateur local auquel vous souhaitez mapper le(s) projet(s), puis cliquez sur **Sélectionner un dossier**.
+1. Vérifiez les détails du nouvel espace de travail en appuyant sur **OK**.
+    
+    ![Boîte de dialogue Créer un espace de travail montrant le dossier de travail ajouté](media/tfvc-workspace3.png) 
+
+Une fois votre espace de travail configuré, vous pouvez le changer ou le supprimer en cliquant sur le bouton **Gérer les espaces de travail** dans l’Explorateur du contrôle de code source.
+
+![Gérer les espaces de travail](media/tfvc-workspace4.png)
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
 ### <a name="problems-using-basic-authentication"></a>Problèmes avec l’authentification de base
 
-Il existe différentes options disponibles pour procéder à l’authentification avec un serveur :
+Vous pouvez utiliser les options suivantes pour vous authentifier auprès d’un serveur :
 
 - Oauth
-- De base
+- Basic
 - Ntlm
 
-Pour pouvoir utiliser l’authentification de base, il est nécessaire d’activer **Informations d’identification d’authentification alternatives** dans VSTS, en suivant les étapes ci-dessous :
+Pour utiliser l’authentification de base, il est nécessaire d’activer **Informations d’identification d’authentification alternatives** dans VSTS, en suivant les étapes ci-dessous :
 
 1. Connectez-vous en tant que propriétaire du compte à votre compte VSTS (https://{youraccount}.visualstudio.com).
-2. Dans la barre d’outils de votre compte, sélectionnez l’icône d’engrenage et sélectionnez **Stratégie** : ![Option de paramètres de stratégie sélectionnée](media/tfvc-auth2.png) 
-3. Passez en revue les paramètres de connexion de votre application. Changez ces paramètres en fonction de vos stratégies de sécurité : ![Option de paramètres de stratégie sélectionnée](media/tfvc-auth.png)  
+2. Dans la barre d’outils de votre compte, sélectionnez l’icône d’engrenage et sélectionnez **Stratégie** :
+    
+    ![Option de paramètres de stratégie sélectionnée](media/tfvc-auth2.png) 
+
+3. Passez en revue les paramètres de connexion de votre application. Changez ces paramètres en fonction de vos stratégies de sécurité :
+    
+    ![Option de paramètres de stratégie sélectionnée](media/tfvc-auth.png)  
 
 ### <a name="i-do-not-see-anything-in-tfvc"></a>Je ne vois rien dans TFVC
 
-Pour définir Team Foundation Version Control (TFVC) sur votre ordinateur de développement, vous **devez** créer un espace de travail, comme décrit dans la section [Création d’un espace de travail](#creating-a-new-workspace).
+Pour définir Team Foundation Version Control (TFVC) sur votre ordinateur de développement, vous **devez** créer un espace de travail, comme décrit dans la section [Gestion des espaces de travail](#managing-workspaces).
 
 Dans l’Explorateur du contrôle de code source, appuyez sur le bouton **Gérer les espaces de travail**. Suivez les étapes pour mapper le projet d’équipe à un dossier de votre ordinateur de développement.
 

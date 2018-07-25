@@ -9,12 +9,12 @@ description: Découvrez comment tirer le meilleur parti de vos abonnements Visua
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a1e1baed18eb592386d45f436c5d4988b91ea1b3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2ab7675b5c354cf619d3daca38b05d5d473091fd
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548721"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326996"
 ---
 # <a name="managing-subscriptions"></a>Gestion des abonnements
 
@@ -102,8 +102,8 @@ Vous pouvez facilement modifier les informations de contact et les préférences
 3.  Sous l’onglet **À propos de**, vous pouvez modifier votre nom, votre adresse e-mail, votre pays/région, votre image de profil et vos préférences de contact.  Sous l’onglet **Préférences**, vous pouvez sélectionner la langue par défaut, le modèle de date et d’heure, le fuseau horaire et le thème de l’interface utilisateur.  
 4.  Quand vous avez effectué toutes les modifications souhaitées, cliquez sur **Enregistrer**. 
 5.  Cliquez sur le bouton **Précédent** dans votre navigateur pour revenir à la page Avantages. 
+    ![Modification des informations de profil](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
-![Modification des informations de profil](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
 ### <a name="linking-my-subscription-to-existing-vsts-or-azure-subscriptions"></a>Association de votre abonnement à un abonnement VSTS ou Azure existant
 Si vous vous connectez à votre abonnement à l’aide d’un compte Microsoft (MSA) personnel et que vous avez un abonnement qui inclut Visual Studio Team Services ou Microsoft Azure avec un compte professionnel ou scolaire géré par Azure, vous pouvez associer les deux abonnements. Cela constitue un « autre compte », qui vous permet d’utiliser votre compte MSA pour vous connecter à votre abonnement et d’accéder en parallèle aux ressources Azure, VSTS ou IDE existantes qui sont associées à votre compte scolaire ou professionnel. 
@@ -111,12 +111,11 @@ Si vous vous connectez à votre abonnement à l’aide d’un compte Microsoft (
 Même si les deux comptes utilisent la même adresse e-mail, vous devez ajouter votre compte professionnel ou scolaire comme autre compte pour profiter de vos avantages sur les deux comptes. 
 
 Pour ajouter un autre compte :
-1. Connectez-vous au [portail Abonné](https://my.visualstudio.com) à l’aide de votre compte Microsoft (MSA).
+1. Connectez-vous au [portail Abonné](https://my.visualstudio.com?wt.mc_id=o~msft~docs) à l’aide de votre compte Microsoft (MSA).
 2. Cliquez sur l’onglet **Abonnements**.
 3. Sous **Liens connexes**, choisissez **Ajouter un autre compte**.
 4. Entrez votre adresse e-mail professionnelle ou scolaire, puis cliquez sur **Ajouter**. 
-
-![Autre compte](_img\manage-vs-subscriptions\alternate-account-resized.png)
+    ![Autre compte](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 Une fois que vous avez ajouté un autre compte, vous pouvez le mettre à jour ou le supprimer à tout moment en cliquant sur l’onglet **Abonnements** et en choisissant l’option appropriée dans la section **Liens connexes**.  
 

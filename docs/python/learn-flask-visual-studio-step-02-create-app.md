@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9aeba681e1a4ab7bae77197d8af10a90f49a40d0
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3af16a72832c15aa8471bee0b3dfc1af773d941b
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752157"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118198"
 ---
-# <a name="tutorial-step-2-create-a-flask-app-with-views-and-page-templates"></a>Tutoriel - Étape 2 : Créer une application Flask avec des vues et des modèles de page
+# <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Étape 2 : Créer une application Flask avec des vues et des modèles de pages
 
 **Étape précédente : [créer une solution et un projet Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)**
 
@@ -36,7 +36,7 @@ Dans le code créé par le modèle « Projet web Flask vide », vous avez un seu
 
 1. Dans votre dossier de projet, créez un dossier d’application nommé `HelloFlask` (cliquez avec le bouton droit sur le projet dans **l’Explorateur de solutions** et sélectionnez **Ajouter** > **Nouveau dossier**.)
 
-1. Dans le dossier `HelloFlask`, créez un fichier nommé `__init.py__` avec le contenu suivant, qui crée l’instance de `Flask` et charge les vues de l’application (créées à l’étape suivante) :
+1. Dans le dossier `HelloFlask`, créez un fichier nommé `__init__.py` avec le contenu suivant, qui crée l’instance de `Flask` et charge les vues de l’application (créées à l’étape suivante) :
 
     ```python
     from flask import Flask
@@ -217,7 +217,7 @@ Réponse : Oui, vous pouvez utiliser des sous-dossiers, puis référencer le che
 > [!div class="nextstepaction"]
 > [Prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)
 
-## <a name="going-deeper"></a>Pour aller plus loin
+## <a name="go-deeper"></a>Approfondir la question
 
 - [Flask - Démarrage rapide : Rendu des modèles](http://flask.pocoo.org/docs/1.0/quickstart/#rendering-templates) (flask.pocoo.org)
 - Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

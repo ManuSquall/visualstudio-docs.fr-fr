@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4da8c2b37ed13cfd8a0a6f47850cdc7f9e2c74b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 793f8ed4538568d588b4980226606d6cd1a6545a
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919727"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978201"
 ---
 # <a name="math-nodes"></a>Nœuds mathématiques
 
 Dans le concepteur de nuanceur, les nœuds mathématiques effectuent des opérations mathématiques, notamment algébriques, logiques et trigonométriques.
 
 > [!NOTE]
-> Lorsque vous utilisez des nœuds mathématiques dans le concepteur de nuanceur, la promotion de type est particulièrement évidente. Pour découvrir comment la promotion de type affecte les paramètres d’entrée, consultez la section « Promotion of inputs (Promotion d’entrées) » de l’article [Shader Designer Nodes (Nœuds du concepteur de nuanceur)](../designers/shader-designer-nodes.md).
+> Lorsque vous utilisez des nœuds mathématiques dans le concepteur de nuanceur, la promotion de type est particulièrement évidente. Pour découvrir comment la promotion de type affecte les paramètres d’entrée, consultez la section « Promotion des entrées » de l’article [Nœuds du concepteur Shader](../designers/shader-designer-nodes.md).
 
 ## <a name="math-node-reference"></a>Informations de référence des nœuds mathématiques
 

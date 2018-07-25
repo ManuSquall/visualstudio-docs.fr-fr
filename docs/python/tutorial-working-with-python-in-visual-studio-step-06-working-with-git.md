@@ -1,7 +1,7 @@
 ---
 title: 'Utilisation du tutoriel Python - Étape 6 : Utilisation de git'
 description: Étape 6 d’une procédure pas à pas portant sur Python dans Visual Studio qui décrit les fonctionnalités Git de Visual Studio.
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c428082a061224f5bb8f3703d6ab4bed2b33aa76
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dc9128a28ea0fd007a97b20331f15227b86d46f7
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965018"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056493"
 ---
-# <a name="step-6-working-with-git"></a>Étape 6 : Utilisation de Git
+# <a name="step-6-work-with-git"></a>Étape 6 : Utiliser Git
 
 **Étape précédente : [Installation de packages et gestion de votre environnement Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 
@@ -52,7 +52,7 @@ Cet article donne une vue d’ensemble de base de la création d’un référent
 
 1. Quand vous utilisez un dépôt local, les modifications validées vont directement dans le dépôt. Si vous êtes connecté à un référentiel distant, sélectionnez l’en-tête de la liste déroulante dans **Team Explorer**, choisissez **Synchroniser** pour passer à la section **Synchronisation** et utilisez les commandes Extraire et Récupérer proposées.
 
-## <a name="going-deeper"></a>Pour aller plus loin
+## <a name="go-deeper"></a>Approfondir la question
 
 Pour une brève procédure pas à pas de création d’un projet à partir d’un référentiel Git distant, consultez [Démarrage rapide : cloner un dépôt de code Python dans Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
 

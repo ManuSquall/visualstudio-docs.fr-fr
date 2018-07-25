@@ -12,24 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5865597f9833ab04fbd5ca287ba0bc61217d7088
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c86b5ec3918526f461b39080967d5bc4a8a32e30
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924842"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079472"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Utiliser des composants 3D pour les jeux et les applications
 
 Ce document décrit les outils Visual Studio que vous pouvez utiliser pour créer ou modifier des modèles 3D, des textures et des nuanceurs pour les jeux et les applications DirectX.
 
 ## <a name="directx-app-development-in-visual-studio"></a>Développement d’applications DirectX dans Visual Studio
- En règle générale, une application DirectX combine une logique de programmation, l’API DirectX et des programmes HLSL (High Level Shading Language), ainsi que des composants audio et visuels 3D pour présenter une expérience multimédia riche et interactive. Visual Studio inclut des outils que vous pouvez utiliser pour travailler avec des images et des textures, des modèles 3D et des nuanceurs sans quitter l’IDE pour utiliser un autre outil. Les outils Visual Studio sont particulièrement adaptés pour créer les ressources *d’espace réservé*, que vous pouvez utiliser pour tester du code ou générer des prototypes avant de mettre en service les ressources prêtes pour la production, ainsi que pour examiner et modifier les ressources prêtes pour la production quand vous déboguez votre application.
+ Une application DirectX combine généralement la logique de programmation, l’API DirectX et les programmes HLSL (High Level Shading Language) avec les ressources visuelle3D et audio pour fournir une expérience multimédia riche et interactive. Visual Studio inclut des outils que vous pouvez utiliser avec des images et des textures, des modèles 3D et des nuanceurs sans qu’il soit nécessaire de quitter l’IDE pour utiliser un autre outil. Les outils Visual Studio sont particulièrement adaptés pour créer les ressources *d’espace réservé*, que vous pouvez utiliser pour tester du code ou générer des prototypes avant de mettre en service les ressources prêtes pour la production, ainsi que pour examiner et modifier les ressources prêtes pour la production quand vous déboguez votre application.
 
- Voici plus d’informations sur les types de composants que vous pouvez utiliser dans Visual Studio.
+ Voici plus d’informations sur les types de ressources que vous pouvez utiliser dans Visual Studio.
 
 ### <a name="images-and-textures"></a>Images et textures
- Les images et les textures fournissent des détails visuels et de couleur dans les jeux et les applications. Dans les graphiques 3D, les textures se présentent selon différents formats, types et géométries, qui permettent de prendre en charge différentes utilisations. Par exemple, les cartes de normales fournissent les normales de surface par pixel pour un éclairage plus détaillé des modèles 3D, et les cartes de cube fournissent la texture dans toutes les directions pour des utilisations telles que le sky-boxing, les réflexions et le mappage de texture sphérique. Les textures peuvent fournir des mipmaps pour prendre en charge un rendu efficace à différents niveaux de détail et peuvent prendre en charge des canaux de couleur et des ordres de couleurs différents. Les textures peuvent être stockées dans divers formats compressés qui occupent moins de mémoire graphique dédiée et aident les GPU à accéder aux textures plus efficacement.
+ Les images et les textures fournissent des détails visuels et de couleur dans les jeux et les applications. Dans les graphiques 3D, les textures se présentent selon différents formats, types et géométries, qui permettent de prendre en charge différentes utilisations. Par exemple, les cartes de normales fournissent les normales de surface par pixel pour un éclairage plus détaillé des modèles 3D, et les cartes de cube fournissent la texture dans toutes les directions pour des utilisations telles que le sky-boxing, les réflexions et le mappage de texture sphérique. Les textures peuvent fournir des mipmaps pour prendre en charge un rendu efficace à différents niveaux de détail, et peuvent prendre en charge des canaux de couleur et des ordres de couleurs différents. Les textures peuvent être stockées dans divers formats compressés qui occupent moins de mémoire graphique dédiée et aident les GPU à accéder aux textures plus efficacement.
 
  Vous pouvez utiliser l’éditeur d’images Visual Studio pour travailler avec des images et des textures dans de nombreux types et formats courants.
 
@@ -44,7 +44,7 @@ Ce document décrit les outils Visual Studio que vous pouvez utiliser pour crée
  Vous pouvez utiliser le concepteur Shader Visual Studio, qui est un outil de conception de nuanceur graphique, pour créer des effets visuels personnalisés sans connaître la programmation HLSL.
 
 > [!NOTE]
-> Pour plus d’informations sur la façon de démarrer avec la programmation DirectX, consultez [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Pour plus d’informations sur le débogage d’une application DirectX, consultez [Graphics Diagnostics (débogage DirectX Graphics)](../debugger/visual-studio-graphics-diagnostics.md).
+> Pour plus d’informations sur la façon de démarrer avec la programmation DirectX, consultez [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Pour plus d’informations sur la façon de déboguer une application DirectX, consultez [Graphics Diagnostics (débogage DirectX Graphics)](../debugger/visual-studio-graphics-diagnostics.md).
 
 ## <a name="directx-version-compatibility"></a>Compatibilité des versions DirectX
  Visual Studio utilise DirectX pour restituer les composants 2D et 3D. Vous pouvez sélectionner le renderer DirectX 11 ou le renderer logiciel de la plateforme WARP (Windows Advanced Rasterization Platform). Le renderer DirectX 11 fournit un rendu à accélération matérielle, hautes performances sur les GPU DirectX 11 et DirectX 10. Le renderer WARP aide à garantir que vos ressources s’exécutent avec une large gamme d’ordinateurs, dont les ordinateurs qui ne disposent pas de matériel graphique moderne et ceux qui disposent de matériel graphique intégré. Pour plus d’informations sur WARP, consultez [Guide de la plateforme WARP (Windows Advanced Rasterization Platform)](http://go.microsoft.com/fwlink/p/?LinkId=224634).

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f80072e3ea2e6e9d870c6ca3b2b61400624b744b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a784015c57aee41488b1d8988166bea1cf7ca874
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746025"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117119"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Développer du code dans Visual Studio sans projets ni solutions
 
@@ -89,7 +89,7 @@ Si votre codebase utilise des outils de génération personnalisés, vous devez 
 
 Si votre codebase contient du code Python ou JavaScript, il est inutile de configurer les fichiers *.json*, mais vous devez installer la charge de travail correspondante. Il vous faudra également configurer le script de démarrage :
 
-1. Installez la charge de travail [Développement Node.js](https://www.visualstudio.com/vs/node-js/) ou [Développement Python](https://www.visualstudio.com/vs/python/) en choisissant **Outils** > **Obtenir des outils et des fonctionnalités...**, ou ben en fermant Visual Studio et en exécutant Visual Studio Installer.
+1. Installez la charge de travail [Développement Node.js](https://visualstudio.microsoft.com/vs/node-js/) ou [Développement Python](https://visualstudio.microsoft.com/vs/python/) en choisissant **Outils** > **Obtenir des outils et des fonctionnalités**, ou bien en fermant Visual Studio et en exécutant Visual Studio Installer.
 
    ![Charges de travail de développement Node.js et Python](media/python_nodejs_workloads.png)
 

@@ -9,12 +9,12 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eadcc8f2a3e50f9a23da3e3bbc6689c643904470
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6cca918309c0febb7b9c86b214d459a6bc8e37be
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751622"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945482"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Guide pratique pour utiliser Boost.Test pour C++ dans Visual Studio
 
@@ -48,20 +48,20 @@ Boost.Test nécessite [Boost](http://www.boost.org/)! Si Boost n’est pas insta
 
 1. Le nouveau fichier contient un exemple de méthode de test. Générez votre projet pour permettre à **l’Explorateur de tests** de découvrir la méthode.
 
-Le modèle d’élément utilise la variante à en-tête unique de Boost.Test, mais vous pouvez modifier le chemin d’accès #include pour utiliser la variante avec bibliothèque autonome. Pour plus d’informations, consultez la section [Ajouter des directives include](#add_include_directives).
+Le modèle d’élément utilise la variante à en-tête unique de Boost.Test, mais vous pouvez modifier le chemin d’accès #include pour utiliser la variante avec bibliothèque autonome. Pour plus d’informations, consultez la section [Ajouter des directives include](#add-include-directives).
 
 ## <a name="create-a-test-project-visual-studio-2017-version-155"></a>Créer un projet de test (Visual Studio 2017 version 15.5)
 
 Dans Visual Studio 2017 version 15.5, aucun modèle de projet ou d’élément de test préconfiguré n’est disponible pour Boost.Test. Vous devez donc créer et configurer un projet d’application de console pour y placer vos tests.
 
-1. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le nœud de la solution et choisissez **Ajouter** > **Nouveau projet**.
+1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le nœud de la solution et choisissez **Ajouter** > **Nouveau projet**.
 
 1. Dans le volet gauche, choisissez **Visual C++** > **Windows Desktop**, puis le modèle **Application console Windows**.
 
 1. Nommez le projet et choisissez **OK**.
 1. Supprimez la fonction `main` dans le fichier .cpp.
 
-1. Si vous utilisez la version à en-tête unique ou la version à bibliothèque dynamique de Boost.Test, accédez à la section [Ajouter des directives #include](#add_include_directives). Si vous utilisez la version avec bibliothèque statique, vous devrez suivre des étapes de configuration supplémentaires :
+1. Si vous utilisez la version à en-tête unique ou la version à bibliothèque dynamique de Boost.Test, accédez à la section [Ajouter des directives #include](#add-include-directives). Si vous utilisez la version avec bibliothèque statique, vous devrez suivre des étapes de configuration supplémentaires :
 
    a. Pour modifier le fichier projet, commencez par le décharger. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet et choisissez **Décharger le projet**. Ensuite, cliquez avec le bouton droit sur le nœud du projet et choisissez **Modifier <nom\>.vcxproj**.
 
@@ -112,7 +112,7 @@ L’exemple suivant est suffisant pour que le test soit découvrable dans **l’
 #include "../MyProgram/MyClass.h" // project being tested
 #include <string>
 
-BOOST_AUTO_TEST_CASE(my\_boost_test)
+BOOST_AUTO_TEST_CASE(my_boost_test)
 {
     std::string expected_value = "Bill";
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a09f2ec1af511cb789f2101e2df0a675dd065e8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5ceb9415648d4ad5bcfa4c16ca7f10b3a88a6db4
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578411"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078112"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Guide pratique pour configurer les cibles et les tâches
 Des tâches MSBuild sélectionnées peuvent être définies pour s’exécuter dans l’environnement qu’elles ciblent, quel que soit l’environnement de l’ordinateur de développement. Par exemple, quand vous utilisez un ordinateur 64 bits pour générer une application ciblant une architecture 32 bits, les tâches sélectionnées sont exécutées dans un processus 32 bits.  
@@ -30,7 +30,7 @@ Des tâches MSBuild sélectionnées peuvent être définies pour s’exécuter d
   
 -   L’attribut `Architecture`, s’il est présent, définit la plateforme et le nombre de bits, et peut prendre une des valeurs suivantes : `x86`, `x64`, `CurrentArchitecture` ou `*` (n’importe quelle architecture).  
   
--   L’attribut `TaskFactory`, s’il est présent, définit la fabrique de tâches qui crée et exécute l’instance de tâche, et il prend uniquement la valeur `TaskHostFactory`. Pour plus d’informations, consultez la section « Fabriques de tâches » plus loin dans ce document.  
+-   L’attribut `TaskFactory`, s’il est présent, définit la fabrique de tâches qui crée et exécute l’instance de tâche, et il prend uniquement la valeur `TaskHostFactory`. Pour plus d’informations, consultez la section [Fabriques de tâches](#task-factories) plus loin dans ce document.  
   
 ```xml  
 <UsingTask TaskName="SimpleTask"   
@@ -107,7 +107,7 @@ Des tâches MSBuild sélectionnées peuvent être définies pour s’exécuter d
  Les paramètres `MSBuildRuntime` et `MSBuildArchitecture` représentent le moyen le plus simple de définir le contexte cible, mais également le plus limité en portée.  D’une part, comme ils sont définis sur l’instance de tâche et ne sont pas évalués tant que la tâche n’est pas sur le point d’être exécutée, ils peuvent dériver leur valeur à partir de la portée complète des propriétés disponibles au moment de l’évaluation et au moment de la génération.  D’autre part, ces paramètres s’appliquent uniquement à une instance particulière d’une tâche dans une cible particulière.  
   
 > [!NOTE]
->  Les paramètres de tâche sont évalués dans le contexte du nœud parent et non dans le contexte de l’hôte de tâche. Les variables d’environnement qui dépendent du runtime ou de l’architecture (par exemple, l’emplacement des fichiers programme) correspond à la valeur associée au nœud parent.  Toutefois, si la même variable d’environnement est lue directement par la tâche, elle est correctement évaluée dans le contexte de l’hôte de tâche.  
+>  Les paramètres de tâche sont évalués dans le contexte du nœud parent et non dans le contexte de l’hôte de tâche. Les variables d’environnement qui dépendent du runtime ou de l’architecture (par exemple, l’emplacement des *fichiers programme*) correspondent à la valeur associée au nœud parent.  Toutefois, si la même variable d’environnement est lue directement par la tâche, elle est correctement évaluée dans le contexte de l’hôte de tâche.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Configuration des cibles et des tâches](../msbuild/configuring-targets-and-tasks.md)
+ [Configurer les cibles et les tâches](../msbuild/configuring-targets-and-tasks.md)
