@@ -1,5 +1,5 @@
 ---
-title: Élément de combinaisons | Documents Microsoft
+title: Élément combos | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 103ce59fe8303f7d044eb7b28ea135f0f449956a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b5f18533e5a4561e361b6d56f502aad95eca5f39
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097762"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231201"
 ---
-# <a name="combos-element"></a>Élément de combinaisons
+# <a name="combos-element"></a>Élément combos
 Groupes [élément de liste déroulante](../extensibility/combo-element.md) éléments.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -46,14 +46,14 @@ Groupes [élément de liste déroulante](../extensibility/combo-element.md) él�
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément Combos](../extensibility/combos-element.md)|Regroupe les éléments de liste déroulante.|  
-|[Élément Combo](../extensibility/combo-element.md)|Définit les commandes qui s’affichent dans une zone de liste déroulante.|  
+|[Élément combos](../extensibility/combos-element.md)|Regroupe les éléments de liste déroulante.|  
+|[Élément de liste déroulante](../extensibility/combo-element.md)|Définit les commandes qui s’affichent dans une zone de liste déroulante.|  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément Commands](../extensibility/commands-element.md)|Représente la collection de commandes dans la barre d’outils du VSPackage.|  
+|[Élément Commands](../extensibility/commands-element.md)|Représente la collection de commandes sur la barre d’outils de VSPackage.|  
   
 ## <a name="example"></a>Exemple  
   
@@ -80,5 +80,5 @@ Groupes [élément de liste déroulante](../extensibility/combo-element.md) él�
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment les VSPackages ajouter les éléments d’Interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Comment VSPackages ajoute des éléments d’interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -1,5 +1,5 @@
 ---
-title: L’énumération des variables locales | Documents Microsoft
+title: Énumération des variables locales | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,22 +14,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 036a5517f8605ed0052473a643a438534ffde277
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 15af19d988f39f8181fad734e3fcc058d33dda71
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105305"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232518"
 ---
-# <a name="enumerating-locals"></a>L’énumération des variables locales
+# <a name="enumerate-locals"></a>Énumérer des variables locales
 > [!IMPORTANT]
->  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression managé](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’expression managé](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Lorsque Visual Studio est prêt à remplir la **variables locales** fenêtre, elle appelle [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) sur la [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objet retourné à partir de [ GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) (consultez [GetMethodProperty d’implémentation](../../extensibility/debugger/implementing-getmethodproperty.md)). `IDebugProperty2::EnumChildren` Retourne un [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) objet.  
+ Lorsque Visual Studio est prêt remplir le **variables locales** fenêtre, elle appelle [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) sur le [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objet retourné à partir de [ GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) (consultez [implémentation de GetMethodProperty](../../extensibility/debugger/implementing-getmethodproperty.md)). `IDebugProperty2::EnumChildren` Retourne un [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) objet.  
   
- Cette implémentation de `IDebugProperty2::EnumChildren` effectue les tâches suivantes :  
+ Implémentation `IDebugProperty2::EnumChildren` effectue les tâches suivantes :  
   
-1.  Garantit que cela est représentant une méthode.  
+1.  Garantit que cela représente une méthode.  
   
 2.  Utilise le `guidFilter` argument pour déterminer la méthode à appeler sur le [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) objet. Si `guidFilter` est égal à :  
   
@@ -44,7 +44,7 @@ ms.locfileid: "31105305"
 4.  Retourne le `IEnumDebugProperty2Info2` de l’interface à partir de la `CEnumPropertyInfo` objet.  
   
 ## <a name="managed-code"></a>Code managé  
- Cet exemple illustre une implémentation de `IDebugProperty2::EnumChildren` dans le code managé.  
+ Cet exemple illustre une implémentation de `IDebugProperty2::EnumChildren` dans du code managé.  
   
 ```csharp  
 namespace EEMC  
