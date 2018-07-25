@@ -1,5 +1,5 @@
 ---
-title: Indicateurs de capacité | Documents Microsoft
+title: Indicateurs de capacité | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,17 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9be7a6a6d1b4ff389859ac2d3ed4aef2c1b0488
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 36fa879ac08f81ffd61cb8febf4183ec268d3a6c
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108386"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231058"
 ---
 # <a name="capability-flags"></a>Indicateurs de capacité
-Le SCC_CAP_*xxx* indicateurs sont des indicateurs de bits utilisés pour indiquer les fonctionnalités d’un plug-in de contrôle de code source. Le SCC_EXCAP_*xxx* indicateurs sont incrémentielles indicateurs qui indiquent des capacités étendues et de résoudre en valeurs entières.  
+Le SCC_CAP_*xxx* indicateurs sont des indicateurs de bits utilisés pour indiquer les fonctionnalités d’un plug-in de contrôle de code source. Le SCC_EXCAP_*xxx* indicateurs sont incrémentielles indicateurs qui indiquent les capacités étendues et les résoudre en valeurs entières.  
   
-|Code de fonction|Value|Description|  
+|Code de fonctionnalité|Value|Description|  
 |---------------------|-----------|-----------------|  
 |`SCC_CAP_REMOVE`|0x00000001L|Prend en charge la [SccRemove](../extensibility/sccremove-function.md) et commande.|  
 |`SCC_CAP_RENAME`|0x00000002L|Prend en charge la [SccRename](../extensibility/sccrename-function.md) et commande.|  
@@ -43,17 +43,17 @@ Le SCC_CAP_*xxx* indicateurs sont des indicateurs de bits utilisés pour indique
 |`SCC_CAP_TEXTOUT`|0x00008000L|Écrit du texte dans une fonction de sortie fourni par l’IDE.|  
 |`SCC_CAP_ADD_STORELATEST`|0x00200000L|Prend en charge le stockage des fichiers sans les deltas.|  
 |`SCC_CAP_HISTORY_MULTFILE`|0x00400000L|Prend en charge plusieurs l’historique des fichiers.|  
-|`SCC_CAP_IGNORECASE`|0x00800000L|Prend en charge la comparaison de fichiers pas la casse.|  
-|`SCC_CAP_IGNORESPACE`|0x01000000L|Prend en charge de fichiers comparaison qui ignore l’espace blanc.|  
+|`SCC_CAP_IGNORECASE`|0x00800000L|Prend en charge la comparaison de fichiers respectant la casse.|  
+|`SCC_CAP_IGNORESPACE`|0x01000000L|Prend en charge la comparaison qui ignore l’espace blanc de fichiers.|  
 |`SCC_CAP_POPULATELIST`|0x02000000L|Prend en charge la recherche de fichiers supplémentaires.|  
-|`SCC_CAP_COMMENTPROJECT`|0x04000000L|Prend en charge les commentaires de créer le projet.|  
-|`SCC_CAP_DIFFALWAYS`|0x10000000L|Prend en charge diff dans tous les États si sous contrôle de code.|  
-|`SCC_CAP_GET_NOUI`|0x20000000L|Plug-in ne prend pas en charge une interface utilisateur Get, mais IDE peut toujours appeler [SccGet](../extensibility/sccget-function.md).|  
-|`SCC_CAP_REENTRANT`|0x40000000L|Plug-in est réentrants et thread-safe. Dans la version 1.0, aucun plug-in n’est considérés comme réentrants et thread-safe. Si un plug-in de 1.1 définit ce bit, l’ordinateur hôte est autorisé à ouvrir plusieurs projets en parallèle.|  
+|`SCC_CAP_COMMENTPROJECT`|0x04000000L|Prend en charge les commentaires sur Créer un projet.|  
+|`SCC_CAP_DIFFALWAYS`|0x10000000L|Prend en charge diff dans tous les États si sous contrôle.|  
+|`SCC_CAP_GET_NOUI`|0x20000000L|Plug-in ne prend pas en charge une interface utilisateur pour Get, mais IDE peut toujours appeler [SccGet](../extensibility/sccget-function.md).|  
+|`SCC_CAP_REENTRANT`|0x40000000L|Plug-in est réentrant et thread-safe. Dans la version 1.0, sans plug-ins sont considérés comme réentrant et thread-safe. Si un plug-in de 1.1 définit ce bit, l’hôte est autorisé à ouvrir plusieurs projets en parallèle.|  
   
-## <a name="capability-bits-added-in-version-12"></a>Bits de fonctionnalité ajoutées dans la Version 1.2  
+## <a name="capability-bits-added-in-version-12"></a>Bits de fonctionnalité ajoutées dans la version 1.2  
   
-|Code de fonction|Value|Description|  
+|Code de fonctionnalité|Value|Description|  
 |---------------------|-----------|-----------------|  
 |`SCC_CAP_CREATESUBPROJECT`|0x00010000L|Prend en charge la [SccCreateSubProject](../extensibility/scccreatesubproject-function.md).|  
 |`SCC_CAP_GETPARENTPROJECT`|0x00020000L|Prend en charge la [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md).|  
@@ -61,12 +61,12 @@ Le SCC_CAP_*xxx* indicateurs sont des indicateurs de bits utilisés pour indique
 |`SCC_CAP_DIRECTORYSTATUS`|0x00080000L|Prend en charge la [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md).|  
 |`SCC_CAP_DIRECTORYDIFF`|0x00100000L|Prend en charge la [SccDirDiff](../extensibility/sccdirdiff-function.md).|  
 |`SCC_CAP_MULTICHECKOUT`|0x08000000L|Prend en charge les extractions multiples sur un fichier et le [SccIsMultiCheckoutEnabled](../extensibility/sccismulticheckoutenabled-function.md).|  
-|`SCC_CAP_SCCFILE`|0x80000000L|Prend en charge la MSSCCPRJ. Fichier de contrôle de code source (selon le remplacement de l’administrateur/utilisateur) et le [SccWillCreateSccFile](../extensibility/sccwillcreatesccfile-function.md).|  
+|`SCC_CAP_SCCFILE`|0x80000000L|Prend en charge la *MSSCCPRJ.SCC* fichier (en fonction de substitution par l’utilisateur/administrateur) et le [SccWillCreateSccFile](../extensibility/sccwillcreatesccfile-function.md).|  
   
-## <a name="capability-bits-added-in-version-13"></a>Bits de fonctionnalité ajoutées dans la Version 1.3  
- Ces indicateurs sont passés à la fois pour le [SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md) fonction pour déterminer si la fonctionnalité est prise en charge.  
+## <a name="capability-bits-added-in-version-13"></a>Bits de fonctionnalité ajoutées dans la version 1.3  
+ Ces indicateurs sont passées à la fois pour le [SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md) fonction permettant de déterminer si la fonctionnalité est prise en charge.  
   
-|Code de la fonctionnalité étendue|Value|Description|  
+|Code de la capacité d’étendue|Value|Description|  
 |------------------------------|-----------|-----------------|  
 |`SCC_EXCAP_CHECKOUT_LOCALVER`|1|Prend en charge la `SCC_CHECKOUT_LOCALVER` option des extractions.|  
 |`SCC_EXCAP_BACKGROUND_GET`|2|Prend en charge la [SccBackgroundGet](../extensibility/sccbackgroundget-function.md).|  

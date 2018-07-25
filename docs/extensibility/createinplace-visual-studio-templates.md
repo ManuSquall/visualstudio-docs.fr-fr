@@ -1,5 +1,5 @@
 ---
-title: CreateInPlace (modèles Visual Studio) | Documents Microsoft
+title: CreateInPlace (modèles Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e032a5fa57bd85aefdb5e8b7e0d270f491503e65
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 33d4a05f3c1f7a3aff83d05e1816308511414ad2
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099211"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231389"
 ---
-# <a name="createinplace-visual-studio-templates"></a>CreateInPlace (modèles Visual Studio)
-Spécifie s’il faut créer le projet et effectuer le remplacement de paramètre à l’emplacement spécifié, ou effectuer le remplacement de paramètre dans un emplacement temporaire et puis enregistrez le projet dans l’emplacement spécifié.  
+# <a name="createinplace-visual-studio-templates"></a>CreateInPlace (modèles Visual Studio)
+Spécifie s’il faut créer le projet et effectuer le remplacement de paramètre dans l’emplacement spécifié, ou effectuer le remplacement de paramètre dans un emplacement temporaire et puis enregistrez le projet dans l’emplacement spécifié.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -51,10 +51,10 @@ Spécifie s’il faut créer le projet et effectuer le remplacement de paramètr
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Définit la catégorie du modèle et comment il s’affiche dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément** .|  
   
-## <a name="text-value"></a>Valeur texte  
+## <a name="text-value"></a>Valeur de texte  
  Une valeur texte est requise.  
   
- Le texte doit être `true` ou `false`. Si `true`, le projet est créé et le remplacement de paramètre est effectué dans l’emplacement spécifié dans le **nouveau projet** boîte de dialogue. Si `false`, remplacement de paramètre est effectué dans un emplacement temporaire et le projet est copié à l’emplacement spécifié.  
+ Le texte doit être `true` ou `false`. Si `true`, le projet est créé et le remplacement de paramètre est effectué dans l’emplacement spécifié dans le **nouveau projet** boîte de dialogue. Si `false`, remplacement de paramètre est effectué dans un emplacement temporaire et le projet est ensuite copié dans l’emplacement spécifié.  
   
 ## <a name="remarks"></a>Notes  
  `CreateInPlace` est un élément facultatif. La valeur par défaut est `true`.  
@@ -88,5 +88,5 @@ Spécifie s’il faut créer le projet et effectuer le remplacement de paramètr
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+ [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
+ [Informations de référence sur les schémas de modèles Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

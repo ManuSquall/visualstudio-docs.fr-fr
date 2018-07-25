@@ -1,5 +1,5 @@
 ---
-title: Implémentation GetMethodProperty | Documents Microsoft
+title: Implémentation de GetMethodProperty | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,18 +14,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3ed7207237a20e4dadc1284aca2d6b41a671353
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4e34101ec3e751414fa360c39fde748bd07124b3
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102016"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231515"
 ---
-# <a name="implementing-getmethodproperty"></a>Implémentation de GetMethodProperty
+# <a name="implement-getmethodproperty"></a>Implémentation de GetMethodProperty
 > [!IMPORTANT]
->  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression managé](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’expression managé](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Visual Studio appelle le moteur de débogage (Allemagne) [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md), qui à son tour appelle [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) pour obtenir des informations sur la méthode actuelle sur le frame de pile.  
+ Visual Studio appelle le moteur de débogage (dé) [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md), qui appelle à son tour [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) pour obtenir des informations sur la méthode actuelle sur le frame de pile.  
   
  Cette implémentation de `IDebugExpressionEvaluator::GetMethodProperty` effectue les tâches suivantes :  
   
@@ -38,7 +38,7 @@ ms.locfileid: "31102016"
 4.  Retourne le `IDebugProperty2` de l’interface à partir de la `CFieldProperty` objet.  
   
 ## <a name="managed-code"></a>Code managé  
- Cet exemple illustre une implémentation de `IDebugExpressionEvaluator::GetMethodProperty` dans le code managé.  
+ Cet exemple illustre une implémentation de `IDebugExpressionEvaluator::GetMethodProperty` dans du code managé.  
   
 ```csharp  
 namespace EEMC  
@@ -128,4 +128,4 @@ STDMETHODIMP CExpressionEvaluator::GetMethodProperty(
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Exemple d’implémentation de variables locales](../../extensibility/debugger/sample-implementation-of-locals.md)
+ [Exemple d’implémentation des variables locales](../../extensibility/debugger/sample-implementation-of-locals.md)

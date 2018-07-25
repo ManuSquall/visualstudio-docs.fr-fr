@@ -1,5 +1,5 @@
 ---
-title: Passage en Mode arrêt | Documents Microsoft
+title: Passage en Mode arrêt | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb601ca4cf00ca2cc811f75ec27ad12bc6be32db
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f9b41a111ecc6118c9bae0ff518d8421a9f2320
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098207"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231936"
 ---
-# <a name="entering-break-mode"></a>Passage en Mode arrêt
-La liste suivante décrit le processus qui se produit lorsqu’un point d’arrêt est rencontré après le pas à pas détaillé dans une fonction, l’exécution à la ligne de code source qui comporte le curseur ou en cours d’exécution à un point d’arrêt.  
+# <a name="enter-break-mode"></a>Passez en mode arrêt
+Les informations suivantes décrivent le processus qui se produit lorsqu’un point d’arrêt est rencontrée après le pas à pas détaillé dans une fonction, en cours d’exécution à la ligne de code source qui comporte le curseur ou en cours d’exécution à un point d’arrêt.  
   
-## <a name="break-mode-process"></a>Arrêter le Mode processus  
+## <a name="break-mode-process"></a>Arrêter le processus de mode  
   
-1.  Le moteur de débogage (DE) envoie [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md), [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md), ou tout autre événement d’arrêt pour que l’IDE entrer en mode arrêt.  
+1.  Le moteur de débogage (dé) envoie [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md), [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md), ou tout autre événement d’arrêt pour provoquer l’IDE pour entrer en mode arrêt.  
   
 2.  Le SDM Obtient les informations de pile des appels du thread, comme suit :  
   
@@ -45,4 +45,4 @@ La liste suivante décrit le processus qui se produit lorsqu’un point d’arr�
     -   [IDebugStackFrame2::GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) pour obtenir des informations sur la mémoire  
   
 ## <a name="see-also"></a>Voir aussi  
- [Événements d’appel du débogueur](../../extensibility/debugger/calling-debugger-events.md)
+ [Appel des événements de débogueur](../../extensibility/debugger/calling-debugger-events.md)
