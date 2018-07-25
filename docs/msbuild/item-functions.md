@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93c8a16b1ab15354deafc236d9f4845b051d58f7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 85dd03080a9dda58532d656161c3c44ae4943251
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572802"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081346"
 ---
-# <a name="item-functions"></a>Fonctions d'élément
+# <a name="item-functions"></a>fonctions d'élément
 À compter de MSBuild 4.0, le code dans les tâches et les cibles peut appeler des fonctions d’élément pour obtenir des informations sur les éléments du projet. Ces fonctions simplifient l’obtention des éléments Distinct() et sont plus rapides que l’exécution d’une boucle dans les éléments.  
   
 ## <a name="string-item-functions"></a>Fonctions d’élément de type chaîne  

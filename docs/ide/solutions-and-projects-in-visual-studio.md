@@ -26,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe7db915f2953bf99b9805700e1236d3d79a194a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 7368778928384f50e96bfd8c5f3f1e107e6b411d
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747624"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089657"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Solutions et projets dans Visual Studio
 
@@ -53,7 +53,12 @@ Dans Visual Studio, le fichier projet est utilisé par **l’Explorateur de solu
 
 Un projet est contenu dans une *solution*. Une solution contient un ou plusieurs projets associés, ainsi que des informations de génération, des paramètres de la fenêtre Visual Studio et des fichiers divers qui ne sont pas associés à un projet spécifique. Une solution est décrite par un fichier texte (extension *.sln*) qui a son propre format unique. Il n’est pas destiné à être modifié manuellement.
 
-Une solution a un fichier *.suo* associé qui stocke les paramètres, les préférences et les informations de configuration pour chaque utilisateur qui a travaillé sur le projet.
+Visual Studio utilise deux types de fichiers (*.sln* et *.suo*) pour stocker les paramètres des solutions :
+
+|Extension|Name|Description|
+|---------------|----------|-----------------|
+|.sln|Solution Visual Studio|Organise les projets, les éléments de projet et les éléments de solution dans la solution.|
+|.suo|Options utilisateur de solution|Stocke les personnalisations et les paramètres au niveau de l’utilisateur, tels que les points d’arrêt.|
 
 ## <a name="create-new-projects"></a>Créer de nouveaux projets
 
@@ -63,7 +68,7 @@ Vous pouvez aussi créer des modèles de projets et d'éléments personnalisés.
 
 ## <a name="manage-projects-in-solution-explorer"></a>Gérer des projets dans l’Explorateur de solutions
 
-Après avoir créé un nouveau projet, vous pouvez utiliser **l’Explorateur de solutions** pour afficher et gérer le projet et la solution, ainsi que leurs éléments associés. L’illustration suivante montre **l’Explorateur de solutions** avec une solution C# qui contient deux projets.
+Après avoir créé un nouveau projet, vous pouvez utiliser **l’Explorateur de solutions** pour afficher et gérer le projet et la solution, ainsi que leurs éléments associés. L’illustration suivante montre l’**Explorateur de solutions** avec une solution C# qui contient deux projets :
 
 ![Explorateur de solutions](../ide/media/vs2015_solution_explorer.png)
 

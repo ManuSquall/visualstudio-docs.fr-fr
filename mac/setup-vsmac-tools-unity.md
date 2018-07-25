@@ -5,12 +5,12 @@ author: dantogno
 ms.author: v-davian
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 18839ce37feb4f2a113c4a8875ce1c25ddba31e1
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 6e5e6b90350aa16d4e0ffee04673a1aa1063cded
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573269"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057097"
 ---
 # <a name="setup-visual-studio-for-mac-tools-for-unity"></a>Installation des outils Visual Studio pour Mac pour Unity
 
@@ -42,7 +42,7 @@ La version de Visual Studio pour Mac fournie avec l’installation de Unity n’
 
 Si vous avez déjà Unity 5.6.1 ou version ultérieure, mais que vous n’avez pas Visual Studio pour Mac, vous pouvez installer manuellement Visual Studio pour Mac. Toutes les éditions de Visual Studio pour Mac sont fournies avec les outils Visual Studio pour Mac pour Unity, notamment l’édition Community gratuite :
 
-* Téléchargez Visual Studio pour Mac à partir de [visualstudio.com](https://www.visualstudio.com/).
+* Téléchargez Visual Studio pour Mac à partir de [visualstudio.microsoft.com](https://visualstudio.microsoft.com/).
 * Les outils Visual Studio pour Mac pour Unity sont installés automatiquement lors du processus d’installation.
 * Pour obtenir de l’aide supplémentaire sur l’installation, suivez les étapes du [guide d’installation](installation.md) .
 

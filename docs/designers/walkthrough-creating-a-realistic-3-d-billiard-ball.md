@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9ac84cce32c6de0310257cb62c29f93726ecb6c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 718400212d29d6bc2d45855eadbe9d1089468744
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748034"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081044"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Procédure pas à pas : créer une boule de billard 3D réaliste
 
@@ -67,7 +67,7 @@ La sphère est la forme d’aperçu par défaut dans le concepteur Shader. Si vo
 
 ### <a name="to-create-a-basic-texture-shader"></a>Pour créer un nuanceur de texture de base
 
-1.  Créez un shader DGSL à utiliser. Pour plus d’informations sur l’ajout d’un nuanceur DGSL à votre projet, consultez la section Prise en main de l’article [Concepteur de nuanceur](../designers/shader-designer.md).
+1.  Créez un nuanceur DGSL à utiliser. Pour plus d’informations sur l’ajout d’un nuanceur DGSL à votre projet, consultez la section Prise en main de l’article [Concepteur de nuanceur](../designers/shader-designer.md).
 
      Par défaut, un graphique de nuanceur ressemble à ceci :
 
@@ -159,19 +159,19 @@ Quand des mises en surbrillances spéculaires sont appliquées, la boule de bill
 
      ![Texture du haut de la carte cubique](../designers/media/gfx_shader_demo_billiard_art_env_texture_top2.png)
 
- Maintenant que vous avez créé des textures individuelles pour les côtés de la carte cubique, vous pouvez utiliser un outil pour les assembler en une carte cubique qui peut être stockée dans une texture .dds unique. Vous pouvez utiliser le programme de votre choix pour créer la carte cubique tant qu’il peut l’enregistrer au format de texture .dds. Cette procédure pas à pas montre comment créer la texture à l’aide de l’outil de texture DirectX qui fait partie du SDK de juin 2010.
+ Maintenant que vous avez créé des textures individuelles pour les côtés de la carte cubique, vous pouvez utiliser un outil pour les assembler en une carte cubique qui peut être stockée dans une texture *.dds* unique. Vous pouvez utiliser le programme de votre choix pour créer la carte cubique tant qu’il peut l’enregistrer au format de texture .dds. Cette procédure pas à pas montre comment créer la texture à l’aide de l’outil de texture DirectX qui fait partie du SDK DirectX de juin 2010.
 
 ### <a name="to-assemble-a-cube-map-by-using-the-directx-texture-tool"></a>Pour assembler une carte cubique à l’aide de l’outil DirectX Texture
 
-1.  Dans l’outil DirectX Texture, dans le menu principal, choisissez **File**, **New Texture**. La boîte de dialogue **New Texture** s’affiche.
+1.  Dans l’outil DirectX Texture, dans le menu principal, choisissez **File** > **New Texture**. La boîte de dialogue **New Texture** s’affiche.
 
 2.  Dans le groupe **Texture Type**, choisissez **Cubemap Texture**.
 
 3.  Dans le groupe **Dimensions**, entrez la valeur correcte pour **Width** et **Height**, puis choisissez **OK**. Un nouveau document de texture apparaît. Par défaut, la texture affichée en premier dans le document de texture correspond à la face de cube **Positive X**.
 
-4.  Chargez la texture que vous avez créée pour le côté du cube de texture sur la face de cube. Dans le menu principal, choisissez **File**, **Open Onto This Cubemap Face**, sélectionnez la texture que vous avez créée pour le côté du cube, puis choisissez **Open**.
+4.  Chargez la texture que vous avez créée pour le côté du cube de texture sur la face de cube. Dans le menu principal, choisissez **File** > **Open Onto This Cubemap Face**, sélectionnez la texture que vous avez créée pour le côté du cube, puis choisissez **Open**.
 
-5.  Répétez l’étape 4 pour les faces de cube **Negative X**, **Positive Z** et **Negative Z**. Pour cela, vous devez afficher la face à charger. Pour afficher une face de carte cubique différente, dans le menu principal, choisissez **View**, **Cube Map Face**, puis sélectionnez la face que vous souhaitez afficher.
+5.  Répétez l’étape 4 pour les faces de cube **Negative X**, **Positive Z** et **Negative Z**. Pour cela, vous devez afficher la face à charger. Pour afficher une face de carte cubique différente, dans le menu principal, choisissez **View** > **Cube Map Face**, puis sélectionnez la face que vous souhaitez afficher.
 
 6.  Pour la face de cube **Positive Y**, chargez la texture que vous avez créée pour le haut du cube de texture.
 
@@ -211,8 +211,8 @@ Quand des mises en surbrillances spéculaires sont appliquées, la boule de bill
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Comment : exporter un nuanceur](../designers/how-to-export-a-shader.md)
-- [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Guide pratique pour exporter un nuanceur](../designers/how-to-export-a-shader.md)
+- [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Concepteur Shader](../designers/shader-designer.md)
 - [Éditeur d’images](../designers/image-editor.md)
 - [Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)

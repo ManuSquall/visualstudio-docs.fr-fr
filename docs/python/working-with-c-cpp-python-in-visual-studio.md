@@ -1,7 +1,7 @@
 ---
 title: Utilisation de C++ et Python
 description: Procédure pas à pas de création d’une extension C++ pour Python à l’aide de Visual Studio, notamment le débogage en mode mixte.
-ms.date: 04/03/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c83a0bb7a8132b6daf0961f7f9d72f8b98782776
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fc885df4b85e89c85c366f033113678243fbfe0b
+ms.sourcegitcommit: 4ab232758d308bda742434beff8349a80c167890
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979267"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37847815"
 ---
 # <a name="creating-a-c-extension-for-python"></a>Création d’une extension C++ pour Python
 
@@ -120,7 +120,7 @@ Pour plus d’informations, consultez [Installation de la prise en charge de Pyt
 
 1. Définissez les propriétés spécifiques décrites dans le tableau suivant, puis sélectionnez **OK**.
 
-    | Onglet | Propriété | Value |
+    | Onglet | Property | Value |
     | --- | --- | --- |
     | Général | Général > Nom de la cible | Spécifiez le nom du module comme vous voulez y faire référence à partir de Python dans les instructions `from...import`. Vous utilisez ce même nom dans le code C++ lors de la définition du module pour Python. Si vous voulez utiliser le nom du projet comme nom de module, laissez la valeur par défaut `$(ProjectName)`. |
     | | Général > Extension de la cible | .pyd |
@@ -283,6 +283,8 @@ Une fois que vous avez effectué une des méthodes ci-dessus, vous pouvez appele
 
     [fast_tanh(x) for x in d] took 0.158 seconds
     ```
+
+    Si la commande **Exécuter sans débogage** est désactivée, cliquez avec le bouton droit sur le projet Python dans l’Explorateur de solutions et sélectionnez **Définir en tant que projet de démarrage**.
 
 1. Essayez d’augmenter la variable `COUNT` afin que les différences soient plus marquées. Une version Debug du module C++ s’exécute aussi plus lentement qu’une version Release, car elle est moins optimisée et contient différents contrôles d’erreurs. Vous pouvez basculer entre ces configurations pour les comparer.
 

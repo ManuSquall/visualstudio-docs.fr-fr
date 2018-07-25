@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2420beaa7f200ca281e04189667c1534e2a0f991
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a9e69986b74928b9488f468283b9dc1c7aff03f0
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752149"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947113"
 ---
-# <a name="tutorial-step-1-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutoriel - Étape 1 : Bien démarrer avec le framework web Flask dans Visual Studio
+# <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutoriel : Bien démarrer avec le framework web Flask dans Visual Studio
 
 [Flask](http://flask.pocoo.org/) est un framework Python léger pour les applications web, qui fournit les éléments de base pour le routage d’URL et le rendu de page.
 
@@ -29,7 +29,7 @@ Dans ce didacticiel, vous apprendrez à :
 > [!div class="checklist"]
 > - Créer un projet Flask de base dans un dépôt Git en utilisant le modèle « Projet web Flask vide » (étape 1)
 > - Créer une application Flask d’une seule page et afficher cette page en utilisant un modèle (étape 2)
-> - Prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle (étape 3)
+> - prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle (étape 3) ;
 > - Utiliser le modèle Projet web Flask pour créer une application de plusieurs pages et une conception réactive (étape 4)
 > - Utiliser le modèle Projet web Flask de sondages pour créer une application de sondages qui utilise différentes options de stockage (Stockage Azure, MongoDB ou en mémoire)
 
@@ -251,7 +251,7 @@ Réponse : en plus des commandes de menu **Déboguer** et des boutons de barre 
 > [!div class="nextstepaction"]
 > [Créer une application Flask avec des vues et des modèles de pages](learn-flask-visual-studio-step-02-create-app.md)
 
-## <a name="going-deeper"></a>Pour aller plus loin
+## <a name="go-deeper"></a>Approfondir la question
 
 - [Flask - Démarrage rapide](http://flask.pocoo.org/docs/1.0/quickstart/) (flask.pocoo.org)
 - Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

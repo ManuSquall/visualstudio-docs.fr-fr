@@ -11,26 +11,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a5da37b8b86f7529ffb4a870bc74787487ec5c0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d158d3d0fade2b44cf819cf40209a901534a18ad
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967026"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283274"
 ---
-# <a name="best-practices-for-coded-ui-tests"></a>Meilleures pratiques pour les tests codés de l'interface utilisateur
+# <a name="best-practices-for-coded-ui-tests"></a>Bonnes pratiques pour les tests codés de l’interface utilisateur
 
 Cette rubrique décrit certaines recommandations pour le développement de tests codés de l’interface utilisateur.
 
-## <a name="best-practices"></a>Meilleures pratiques
+## <a name="best-practices"></a>meilleures pratiques recommandées.
 
 Utilisez les instructions suivantes pour créer un test codé de l'interface utilisateur flexible.
 
 -   Utilisez le **Générateur de test codé de l’interface utilisateur** dès que possible.
 
--   Ne modifiez pas le fichier `UIMap.designer.cs` directement. Si vous modifiez le fichier, les changements apportés à ce dernier vont être remplacés.
+-   Ne modifiez pas le fichier *UIMap.designer.cs* directement. Si vous modifiez le fichier, les changements apportés à ce dernier vont être remplacés.
 
--   Créez votre test en tant que séquence de méthodes enregistrées. Pour plus d’informations sur la manière d’enregistrer un méthode, consultez [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md).
+-   Créez votre test en tant que séquence de méthodes enregistrées. Pour plus d’informations sur la manière d’enregistrer une méthode, consultez [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md).
 
 -   Chaque méthode enregistrée doit agir sur une page, un formulaire ou une boîte de dialogue unique. Créez une méthode de test pour chaque nouvelle page, nouveau formulaire ou nouvelles boîte de dialogue.
 
@@ -38,7 +38,7 @@ Utilisez les instructions suivantes pour créer un test codé de l'interface uti
 
 -   Si possible, limitez chaque méthode enregistrée à moins de 10 actions. Cette approche modulaire facilite le remplacement d'une méthode si l'interface utilisateur change.
 
--   Créez chaque assertion à l’aide du **Générateur de test codé de l’interface utilisateur**, qui ajoute automatiquement une méthode d’assertion au fichier `UIMap.Designer.cs`.
+-   Créez chaque assertion à l’aide du **Générateur de test codé de l’interface utilisateur**, qui ajoute automatiquement une méthode d’assertion au fichier *UIMap.Designer.cs*.
 
 -   Si l'interface utilisateur change, réenregistrez les méthodes de test ou les méthodes d'assertion, ou bien réenregistrez les sections affectées d'une méthode de test existante.
 
@@ -46,13 +46,13 @@ Utilisez les instructions suivantes pour créer un test codé de l'interface uti
 
 -   Dans l'application testée, utilisez des noms significatifs quand vous créez les contrôles d'interface utilisateur. L’utilisation de noms significatifs apporte plus de clarté et de simplicité aux noms de contrôles générés automatiquement.
 
--   Si vous créez des assertions en codant avec l'API, créez une méthode pour chaque assertion dans le cadre de la classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> qui se trouve dans le fichier `UIMap.cs`. Pour exécuter l’assertion, appelez cette méthode à partir de votre méthode de test.
+-   Si vous créez des assertions en codant avec l’API, créez une méthode pour chaque assertion dans le cadre de la classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> qui se trouve dans le fichier *UIMap.cs*. Pour exécuter l’assertion, appelez cette méthode à partir de votre méthode de test.
 
--   Si vous codez directement avec l'API, utilisez les propriétés et méthodes dans les classes générées dans le fichier `UIMap.Designer.cs` de votre code autant que possible. Ces classes facilitent votre travail, le rendent plus fiable et vous permettent d'augmenter votre productivité.
+-   Si vous codez directement avec l’API, utilisez les propriétés et méthodes dans les classes générées dans le fichier *UIMap.Designer.cs* de votre code autant que possible. Ces classes facilitent votre travail, le rendent plus fiable et vous permettent d'augmenter votre productivité.
 
 Les tests codés de l'interface utilisateur s'adaptent automatiquement à de nombreuses modifications dans l'interface utilisateur. Si, par exemple, un élément d'interface utilisateur a changé de position ou de couleur, la plupart du temps, le test codé de l'interface utilisateur trouve quand même le bon élément.
 
-Durant une série de tests, les contrôles d’IU sont localisés par le framework de tests à l’aide d’un ensemble de propriétés de recherche. Les propriétés de recherche sont appliquées à chaque classe de contrôle dans les définitions créées par le **Générateur de test codé de l’interface utilisateur** dans le fichier `UIMap.Designer.cs`. Les propriétés de recherche contiennent des paires nom-valeur de noms de propriété et des valeurs de propriété qui peuvent servir à identifier le contrôle, comme les propriétés <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>, <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A> et <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A> du contrôle. Si les propriétés de recherche ne sont pas modifiées, le test codé de l'interface utilisateur trouve correctement le contrôle dans l'interface utilisateur. Si les propriétés de recherche changent, les tests codés de l’interface utilisateur ont un algorithme de correspondance intelligent qui applique des paramètres heuristiques pour rechercher des contrôles et des fenêtres dans l’IU. Quand l'interface utilisateur a changé, vous pouvez peut-être modifier les propriétés de recherche des éléments précédemment identifiés pour vérifier qu'ils sont trouvés.
+Durant une série de tests, les contrôles d’IU sont localisés par le framework de tests à l’aide d’un ensemble de propriétés de recherche. Les propriétés de recherche sont appliquées à chaque classe de contrôle dans les définitions créées par le **Générateur de test codé de l’interface utilisateur** dans le fichier *UIMap.Designer.cs*. Les propriétés de recherche contiennent des paires nom-valeur de noms de propriété et des valeurs de propriété qui peuvent servir à identifier le contrôle, comme les propriétés <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>, <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A> et <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A> du contrôle. Si les propriétés de recherche ne sont pas modifiées, le test codé de l'interface utilisateur trouve correctement le contrôle dans l'interface utilisateur. Si les propriétés de recherche changent, les tests codés de l’interface utilisateur ont un algorithme de correspondance intelligent qui applique des paramètres heuristiques pour rechercher des contrôles et des fenêtres dans l’IU. Quand l'interface utilisateur a changé, vous pouvez peut-être modifier les propriétés de recherche des éléments précédemment identifiés pour vérifier qu'ils sont trouvés.
 
 ## <a name="if-your-user-interface-changes"></a>Si votre interface utilisateur change
 

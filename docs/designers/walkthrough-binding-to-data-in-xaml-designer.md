@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 2c12d1ca9605a7591146f3d6141eb12b5f8975f6
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 557cdd14a37a52933df44c92b76fe608a1cc273c
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745709"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079886"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Procédure pas à pas : effectuer une liaison de données dans le concepteur XAML
 
@@ -27,13 +27,13 @@ Dans le concepteur XAML, vous pouvez définir des propriétés de liaison de don
 
 ## <a name="to-create-a-class-to-use-as-a-data-source"></a>Pour créer une classe à utiliser comme source de données
 
-1. Dans le menu **Fichier**, choisissez **Nouveau**> **Projet**.
+1. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet**.
 
 1. Dans la boîte de dialogue **Nouveau projet**, choisissez le nœud **Visual C#** ou **Visual Basic**, développez le nœud **Bureau Windows**, puis choisissez le modèle **Application WPF**.
 
 1. Nommez le projet **BindingTest**, puis choisissez le bouton **OK**.
 
-1. Ouvrez le fichier MainWindow.xaml.cs (ou MainWindow.xaml.vb) et ajoutez le code suivant. En C#, ajoutez le code dans l'espace de noms `BindingTest` (avant la dernière parenthèse fermante dans le fichier). En Visual Basic, ajoutez simplement la nouvelle classe.
+1. Ouvrez le fichier **MainWindow.xaml.cs** (ou **MainWindow.xaml.vb**) et ajoutez le code suivant. En C#, ajoutez le code dans l'espace de noms `BindingTest` (avant la dernière parenthèse fermante dans le fichier). En Visual Basic, ajoutez simplement la nouvelle classe.
 
    ```csharp
    public class ShoppingCart : DependencyObject
@@ -73,7 +73,7 @@ Dans le concepteur XAML, vous pouvez définir des propriétés de liaison de don
 
 ## <a name="to-bind-the-itemcount-property-to-a-textblock-control"></a>Pour lier la propriété ItemCount à un contrôle TextBlock
 
-1. Dans l’Explorateur de solutions, ouvrez le menu contextuel pour MainWindow.xaml, puis choisissez **Concepteur de vues**.
+1. Dans l’Explorateur de solutions, ouvrez le menu contextuel pour **MainWindow.xaml**, puis choisissez **Concepteur de vues**.
 
 1. Dans la boîte à outils, choisissez un contrôle [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid) et ajoutez-le au formulaire.
 

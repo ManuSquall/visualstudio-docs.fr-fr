@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 384905370a16cbdcd9b4c9165f079bcbdf71a250
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: dbdcf2222aab4b70ba9817792b0d72d4dadf5802
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752156"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089800"
 ---
-# <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Étape 3 du tutoriel : prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Étape 3 : Prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle
 
 **Étape précédente : [Créer une application Flask avec des vues et des modèles de page](learn-flask-visual-studio-step-02-create-app.md)**
 
@@ -283,8 +283,9 @@ Les étapes suivantes démontrent l’héritage :
 > [!div class="nextstepaction"]
 > [Utiliser le modèle Projet web Flask complet](learn-flask-visual-studio-step-04-full-flask-project-template.md)
 
-## <a name="going-deeper"></a>Pour aller plus loin
+## <a name="go-deeper"></a>Approfondir la question
 
+- [Déployer l’application web sur Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - Pour plus d’informations sur les fonctionnalités des modèles Jinja, comme les flux de contrôle, consultez la [documentation du concepteur de modèle Jinja](http://jinja.pocoo.org/docs/2.10/templates) (jinja.pocoo.org)
 - Pour plus d’informations sur l’utilisation de `url_for`, consultez [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for) dans la documentation de l’objet d’application Flask (flask.pocoo.org)
 - Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

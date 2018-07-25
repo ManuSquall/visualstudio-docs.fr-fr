@@ -1,7 +1,7 @@
 ---
 title: Débogage en mode mixte pour Python
 description: Guide pratique pour déboguer simultanément C++ et Python dans Visual Studio, notamment pour passer d’un environnement à l’autre, afficher les valeurs et évaluer les expressions.
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52aca112b802789f45f0a1d667d75b53a7535919
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 56f342904e4ae2e1c11ccd7a148b8a896692d5a2
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31583149"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057435"
 ---
 # <a name="debugging-python-and-c-together"></a>Débogage conjoint de Python et de C++
 
@@ -64,7 +64,7 @@ Les fonctionnalités de débogage en mode mixte sont les suivantes, comme expliq
 
 ## <a name="enable-mixed-mode-debugging-in-a-cc-project"></a>Activer le débogage en mode mixte dans un projet C/C++
 
-Visual Studio 2017 (version 15.5 et ultérieur) prend en charge le débogage en mode mixte d’un projet C/C++ (par exemple, lors de l’[incorporation de Python dans une autre application, comme décrit sur python.org](https://docs.python.org/3/extending/embedding.html)). Pour activer le débogage en mode mixte, configurez le projet C/C++ pour lancer le « débogueur Python/Natif » :
+Visual Studio 2017 (version 15.5 et ultérieur) prend en charge le débogage en mode mixte d’un projet C/C++ (par exemple, lors de [l’incorporation de Python dans une autre application, comme décrit sur python.org](https://docs.python.org/3/extending/embedding.html)). Pour activer le débogage en mode mixte, configurez le projet C/C++ pour lancer le « débogueur Python/Natif » :
 
 1. Cliquez avec le bouton droit sur le projet C/C++ dans l’Explorateur de solutions, puis sélectionnez **Propriétés**.
 1. Sélectionnez l’onglet **Débogage**, choisissez « Débogueur Python/natif » dans le **Débogueur à lancer**, puis sélectionnez **OK**.

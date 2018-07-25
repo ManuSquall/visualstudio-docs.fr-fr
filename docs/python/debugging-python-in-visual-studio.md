@@ -1,7 +1,7 @@
 ---
 title: Débogage du code Python
 description: Procédure pas à pas des fonctionnalités de débogage de code Python dans Visual Studio, y compris la définition des points d’arrêt, l’exécution pas à pas, l’inspection des valeurs, la gestion des exceptions et le débogage dans la fenêtre interactive.
-ms.date: 03/05/2018
+ms.date: 07/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b521c85bd2a4fb8c29674a51e5e13ded2aba3fec
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 14716aa85245dcbd7c1ba0bc85824f5a53bece2d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032253"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079821"
 ---
-# <a name="debugging-your-python-code"></a>Débogage de votre code Python
+# <a name="debug-your-python-code"></a>Déboguer votre code Python
 
 Visual Studio offre une expérience de débogage complète pour Python, comprenant notamment l’attachement à des processus en cours d’exécution, l’évaluation d’expressions dans les Fenêtres Espion et Exécution, l’inspection de variables locales, les points d’arrêt, les instructions de pas à pas détaillé/sortant/principal, la définition de l’instruction suivante, etc.
 
@@ -193,6 +193,49 @@ Notez que les fenêtres du débogueur standard telles que Processus, Threads et 
 La fenêtre interactive de débogage comporte son propre jeu d’options, accessibles par le biais des commandes **Outils > Options > Python Tools > Fenêtre interactive de débogage**. Contrairement à la fenêtre interactive Python standard, dont il existe une instance distincte pour chaque environnement Python, il n’existe qu’une seule fenêtre de débogage interactive, laquelle utilise systématiquement l’interpréteur Python pour le processus en cours de débogage. Consultez [Options - Options de débogage](python-support-options-and-settings-in-visual-studio.md#debugging-options).
 
 ![Options de la fenêtre de débogage interactive](media/debugging-interactive-options.png)
+
+## <a name="use-the-experimental-debugger"></a>Utiliser le débogueur expérimental
+
+À compter de Visual Studio 2017 Preview 4.0, vous pouvez choisir d’utiliser le « débogueur expérimental » qui est basé sur ptvsd version 4.1+. Pour accepter, sélectionnez la commande de menu **Outils** > **Options**, accédez à **Python** > **Expérimental**dans la boîte de dialogue Options, puis sélectionnez **Utiliser un débogueur expérimental**.
+
+Le débogueur expérimental n’est compatible qu’avec un nombre limité d’environnements Python, comme l’indique le tableau suivant :
+
+| Version Python | Compatible avec le débogueur expérimental |
+| --- | --- |
+| 2.6 | Non |
+| 2.7 | Oui |
+| 3.1 à 3.4 | Non |
+| 3.5 et ultérieur | Oui |
+| IronPython | Non |
+
+Si vous essayez d’utiliser le débogueur expérimental avec un environnement incompatible, Visual Studio affiche l’erreur « Le débogueur est incompatible avec cet environnement » :
+
+![Erreur Le débogueur n’est pas compatible avec cet environnement lors de l’utilisation du débogueur expérimental](media/debugging-experimental-incompatible-error.png)
+
+Sélectionnez la commande **Désactiver le débogueur expérimental** qui efface l’option **Utiliser un débogueur expérimental**.
+
+> [!Note]
+> L’avertissement n’est pas actuellement affiché pour Python 3.3 et 3.4.
+
+Si vous avez installé une ancienne version de ptvsd dans l’environnement actuel (par exemple, une ancienne version 4.0.x d’une version 3.x requise pour le débogage à distance), Visual Studio affiche l’erreur « Impossible de charger le package du débogueur » ou l’avertissement « Le package du débogueur est obsolète » :
+
+![Erreur « Impossible de charger le package du débogueur » lors de l’utilisation du débogueur expérimental](media/debugging-experimental-version-error.png)
+
+![Avertissement « Le package du débogueur est obsolète » lors de l’utilisation du débogueur expérimental](media/debugging-experimental-version-warning.png)
+
+Pour gérer votre installation ptvsd, utilisez l’onglet **Packages** dans la fenêtre **Environnements Python** ou utilisez les commandes suivantes à partir de la ligne de commande :
+
+```ps
+# Uninstalling ptvsd causes VS to default to its bundled 4.1.x version.
+pip uninstall ptvsd
+
+# Upgrading ptvsd gives you the latest version, which may be newer than the bundled version.
+# -pre is required to allow pre-release versions as currently required by the experimental debugger.
+pip install --upgrade ptvsd -pre
+```
+
+> [!Important]
+> Bien que vous puissiez choisir d’ignorer l’avertissement pour certaines versions de ptvsd, Visual Studio peut ne pas fonctionner correctement.
 
 ## <a name="see-also"></a>Voir aussi
 

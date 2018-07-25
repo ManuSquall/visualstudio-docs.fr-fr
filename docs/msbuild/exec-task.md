@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecb590c4562c79853c86ee65e9c5d4e3c059d5da
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 89a8fd27dbf16db2277b52b2def2fac1e9f06e68
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569685"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945203"
 ---
-# <a name="exec-task"></a>Exec, tâche
+# <a name="exec-task"></a>Exec (tâche)
 Exécute la commande ou le programme spécifié en utilisant les arguments spécifiés.  
   
 ## <a name="parameters"></a>Paramètres  
@@ -35,7 +35,7 @@ Exécute la commande ou le programme spécifié en utilisant les arguments spéc
   
 |Paramètre|Description|  
 |---------------|-----------------|  
-|`Command`|Paramètre `String` requis.<br /><br /> Commande(s) à exécuter. Il peut s’agir de commandes système, par exemple attrib, ou d’un fichier exécutable, comme program.exe, runprogram.bat ou setup.msi.<br /><br /> Ce paramètre peut contenir plusieurs lignes de commandes. Vous pouvez également placer plusieurs commandes dans un fichier de commandes et l’exécuter à l’aide de ce paramètre.|  
+|`Command`|Paramètre `String` requis.<br /><br /> Commande(s) à exécuter. Il peut s’agir de commandes système, par exemple attrib, ou d’un fichier exécutable, comme *program.exe*, *runprogram.bat* ou *setup.msi*.<br /><br /> Ce paramètre peut contenir plusieurs lignes de commandes. Vous pouvez également placer plusieurs commandes dans un fichier de commandes et l’exécuter à l’aide de ce paramètre.|  
 |`ConsoleOutput`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Chaque sortie d’élément est une ligne de la sortie standard ou du flux d’erreur standard émise par l’outil. Celle-ci est uniquement capturée si `ConsoleToMsBuild` a la valeur `true`.|
 |`ConsoleToMsBuild`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, la tâche capture l’erreur standard et la sortie standard de l’outil pour les rendre disponibles dans le paramètre de sortie `ConsoleOutput`. La valeur par défaut est `false`.|
 |`CustomErrorRegularExpression`|Paramètre `String` facultatif.<br /><br /> Spécifie une expression régulière utilisée pour détecter les lignes d’erreur dans la sortie de l’outil. C’est utile pour les outils qui produisent une sortie à la mise en forme inhabituelle.|  
@@ -52,9 +52,9 @@ Exécute la commande ou le programme spécifié en utilisant les arguments spéc
 ## <a name="remarks"></a>Notes  
  Cette tâche est utile quand une tâche [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] spécifique pour le travail que vous voulez effectuer n’est pas disponible. Toutefois, la tâche `Exec`, contrairement à une tâche plus spécifique, ne peut pas effectuer de traitement ou d’opérations conditionnelles supplémentaires en fonction du résultat de l’outil ou de la commande exécutée.
   
- La tâche `Exec` appelle cmd.exe au lieu d’appeler directement un processus.  
+ La tâche `Exec` appelle *cmd.exe* au lieu d’appeler directement un processus.  
   
- En plus des paramètres énumérés dans ce document, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et de leurs descriptions, consultez l’article [ToolTaskExtension Base Class (Classe de base ToolTaskExtension)](../msbuild/tooltaskextension-base-class.md).  
+ En plus des paramètres énumérés dans ce document, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant utilise la tâche `Exec` pour exécuter une commande.  
@@ -75,4 +75,4 @@ Exécute la commande ou le programme spécifié en utilisant les arguments spéc
   
 ## <a name="see-also"></a>Voir aussi  
  [Tâches](../msbuild/msbuild-tasks.md)   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)
+ [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

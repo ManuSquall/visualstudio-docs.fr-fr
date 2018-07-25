@@ -13,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 34c0b1a09a6483d45adda63f0fa1bf9d3ff032fa
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 121cd95e55b17ea8e93b6a9ad8beb1a9d9d3feca
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747279"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978347"
 ---
 # <a name="introduction-to-wpf"></a>Présentation de WPF
 
@@ -48,7 +48,7 @@ WPF vous permet de développer une application en utilisant à la fois le *balis
 
 ### <a name="markup"></a>balisage
 
-XAML est un langage de balisage fondé sur XML qui est utilisé pour implémenter l’apparence d’une application de façon déclarative. Il est généralement utilisé pour créer des fenêtres, des boîtes de dialogue, des pages et des contrôles utilisateur, et pour les remplir avec des contrôles, des formes et des graphiques.
+XAML est un langage de balisage fondé sur XML qui implémente l’apparence d’une application de façon déclarative. Vous l’utilisez généralement pour créer des fenêtres, des boîtes de dialogue, des pages et des contrôles utilisateur, et pour les remplir avec des contrôles, des formes et des graphismes.
 
  L’exemple suivant utilise XAML pour implémenter l’apparence d’une fenêtre qui contient un seul bouton.
 
@@ -149,7 +149,7 @@ L’illustration suivante affiche le résultat obtenu quand vous cliquez sur le 
 
 ## <a name="controls"></a>Contrôles
 
-Les expériences utilisateur fournies par le modèle d’application sont des contrôles construits. Dans WPF, « contrôle » est un terme général qui s’applique à une catégorie de classes WPF qui sont hébergées dans une fenêtre ou une page, qui ont une interface utilisateur et qui implémentent un certain comportement.
+Les expériences utilisateur fournies par le modèle d’application sont des contrôles construits Dans WPF, *contrôle* est un terme général qui s’applique à une catégorie de classes WPF qui sont hébergées dans une fenêtre ou une page, qui ont une interface utilisateur et qui implémentent un certain comportement.
 
 Pour plus d’informations, consultez [Contrôles](/dotnet/framework/wpf/controls/index).
 
@@ -258,7 +258,7 @@ Le balisage suivant lie la <xref:System.Windows.Controls.TextBox> à une instanc
 
 Dans cet exemple, la classe `Person` est instanciée en code-behind et définie comme contexte de données de `DataBindingWindow`. Dans le balisage, la propriété <xref:System.Windows.Controls.TextBox.Text%2A> de la <xref:System.Windows.Controls.TextBox> est liée à la propriété `Person.Name` (à l’aide de la syntaxe XAML`{Binding ... }`). Ce code XAML demande à WPF de lier le contrôle <xref:System.Windows.Controls.TextBox> à l’objet `Person` stocké dans la propriété <xref:System.Windows.FrameworkElement.DataContext%2A> de la fenêtre.
 
-Le moteur de liaison de données WPF fournit une prise en charge supplémentaire qui inclut la validation, le tri, le filtrage et le regroupement. En outre, la liaison de données prend en charge l’utilisation de modèles de données afin de créer une interface utilisateur personnalisée pour les données liées quand l’interface utilisateur affichée par les contrôles WPF standard n’est pas appropriée.
+Le moteur de liaison de données WPF fournit une prise en charge supplémentaire qui inclut la validation, le tri, le filtrage et le regroupement En outre, la liaison de données prend en charge l’utilisation de modèles de données afin de créer une interface utilisateur personnalisée pour les données liées quand l’interface utilisateur affichée par les contrôles WPF standard n’est pas appropriée.
 
 Pour plus d’informations, consultez [Vue d’ensemble de la liaison de données](/dotnet/framework/wpf/data/data-binding-overview).
 
@@ -301,7 +301,7 @@ Les objets<xref:System.Windows.Shapes.Path> peuvent être utilisés pour dessine
 
 Les objets <xref:System.Windows.Media.Geometry> peuvent être utilisés pour le découpage, les tests de recherche et le rendu de données graphiques 2D.
 
-![Différentes utilisations d’un Chemin d’accès](../designers/media/wpfintrofigure5.png)
+![Différentes utilisations d’un chemin](../designers/media/wpfintrofigure5.png)
 
 Pour plus d’informations, consultez [Vue d’ensemble de Geometry](/dotnet/framework/wpf/graphics-multimedia/geometry-overview).
 
@@ -319,7 +319,7 @@ WPF comprend également des fonctionnalités de rendu 3D qui s’intègrent aux 
 
 ![Capture d’écran : exemple Visual3D](../designers/media/wpfintrofigure13.png)
 
-Pour plus d’informations, consultez [Vue d’ensemble des graphiques 3D](/dotnet/framework/wpf/graphics-multimedia/3-d-graphics-overview).
+Pour plus d’informations, consultez [Vue d’ensemble des graphismes 3D](/dotnet/framework/wpf/graphics-multimedia/3-d-graphics-overview).
 
 ## <a name="animation"></a>Animation
 
@@ -585,7 +585,7 @@ Cet exemple implémente une ressource de couleur d’arrière-plan à l’aide d
 
 Les diverses portées offrent une grande flexibilité en ce qui concerne la manière de définir et partager vos ressources.
 
-Au lieu d’associer directement vos ressources à une portée précise, vous pouvez empaqueter une ou plusieurs ressources à l’aide d’un <xref:System.Windows.ResourceDictionary> séparé qui peut être référencé dans d’autres parties d’une application. L’exemple suivant définit une couleur d’arrière-plan par défaut dans un dictionnaire de ressources.
+Au lieu d’associer directement vos ressources à une portée précise, vous pouvez empaqueter une ou plusieurs ressources à l’aide d’un <xref:System.Windows.ResourceDictionary> séparé qui peut être référencé dans d’autres parties d’une application L’exemple suivant définit une couleur d’arrière-plan par défaut dans un dictionnaire de ressources.
 
 ```xaml
 <ResourceDictionary

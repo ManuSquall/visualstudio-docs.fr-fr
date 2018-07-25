@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 093b937f7a957ef1d3a912c31d57a03f1a433ab0
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: fca48c45af5ec93519e1688ec54677c233d2fe17
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844236"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178317"
 ---
 # <a name="how-to-prevent-time-outs-for-diagnostic-data-adapters"></a>Comment : éviter les délais d'attente des adaptateurs de données de diagnostic
 
@@ -23,17 +23,17 @@ Si vous utilisez des adaptateurs de données de diagnostic dans les paramètres 
 
 -   Le service de contrôleur de test n'est pas exécuté sur l'ordinateur de contrôleur de test. Vous devez peut-être redémarrer le service. Pour plus d’informations sur la façon de déterminer votre contrôleur de test et de gérer les contrôleurs de test, consultez [Gestion des contrôleurs de test et des agents de test avec Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
--   Si vous collectez des données sur un ordinateur distant, le pare-feu peut bloquer Microsoft Test Manager. L’ordinateur qui exécute Microsoft Test Manager doit accepter les connexions entrantes du contrôleur de test. Un délai d’expiration se produit quand Microsoft Test Manager ne reçoit pas de message du contrôleur parce qu’il est bloqué par le pare-feu. Vous devez vérifier les paramètres de votre pare-feu sur l’ordinateur qui exécute Microsoft Test Manager. Pour plus d’informations sur les paramètres du pare-feu, consultez le [site web Microsoft](http://go.microsoft.com/fwlink/?LinkId=184980) suivant.
+-   Si vous collectez des données sur un ordinateur distant, le pare-feu peut bloquer Microsoft Test Manager. L’ordinateur qui exécute Microsoft Test Manager doit accepter les connexions entrantes du contrôleur de test. Un délai d’expiration se produit quand Microsoft Test Manager ne reçoit pas de message du contrôleur parce qu’il est bloqué par le pare-feu. Vous devez vérifier les paramètres de votre pare-feu sur l’ordinateur qui exécute Microsoft Test Manager.
 
 -   Le contrôleur de test ne peut pas convertir le nom de l’ordinateur qui exécute Microsoft Test Manager. Cela peut se produire si le DNS fournit l'adresse incorrecte de cet ordinateur. Vous devrez peut-être contacter l'administrateur réseau pour résoudre ce problème.
 
- Lorsque vous exécutez un long test qui doit collecter un volume de données important, vous remarquerez que la collection de ces données expire. Vous pouvez utiliser la procédure suivante pour résoudre ce problème.
+Lorsque vous exécutez un long test qui doit collecter un volume de données important, vous remarquerez que la collection de ces données expire. Vous pouvez utiliser la procédure suivante pour résoudre ce problème.
 
- Vous pouvez augmenter le délai d’attente en mettant à jour le fichier de configuration de Microsoft Test Manager ou le fichier de configuration de l’agent de test dont le délai d’attente arrive à expiration.
+Vous pouvez augmenter le délai d’attente en mettant à jour le fichier de configuration de Microsoft Test Manager ou le fichier de configuration de l’agent de test dont le délai d’attente arrive à expiration.
 
- Le fichier de configuration de Microsoft Test Manager s’appelle **mtm.exe.config**. Il se trouve dans le répertoire *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+Le fichier de configuration de Microsoft Test Manager s’appelle **mtm.exe.config**. Il se trouve dans le répertoire *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
- Pour mettre à jour un agent de test, vous devez mettre à jour les fichiers de configuration suivants sur l’ordinateur de l’agent de test. Tous ces fichiers se trouvent sur l’ordinateur de l’agent de test dans le même répertoire : *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+Pour mettre à jour un agent de test, vous devez mettre à jour les fichiers de configuration suivants sur l’ordinateur de l’agent de test. Tous ces fichiers se trouvent sur l’ordinateur de l’agent de test dans le même répertoire : *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
 -   QTAgent.exe.config
 
@@ -43,9 +43,9 @@ Si vous utilisez des adaptateurs de données de diagnostic dans les paramètres 
 
 -   QTDCAgent32.exe.config
 
- Si vous exécutez des tests manuels et que vous collectez des données d'un environnement, lorsqu'un bogue est créé ou que le cas de test est terminé, toutes les données collectées par les adaptateurs de données de diagnostic sont transférées sur l'ordinateur qui exécute les tests manuels. Si vous avez collecté un volume de données important ou que vous avez une connexion réseau lente, le processus peut durer au-delà de la valeur par défaut de 60 secondes. Par exemple, si vous avez configuré l’adaptateur IntelliTrace pour collecter des événements IntelliTrace et informations d’appels sur de nombreux processus, le transfert de ces données peut dépasser le délai d’expiration par défaut. Pour augmenter cette valeur, vous pouvez utiliser la procédure suivante et mettre à jour **mtm.exe.config**.
+Si vous exécutez des tests manuels et que vous collectez des données d'un environnement, lorsqu'un bogue est créé ou que le cas de test est terminé, toutes les données collectées par les adaptateurs de données de diagnostic sont transférées sur l'ordinateur qui exécute les tests manuels. Si vous avez collecté un volume de données important ou que vous avez une connexion réseau lente, le processus peut durer au-delà de la valeur par défaut de 60 secondes. Par exemple, si vous avez configuré l’adaptateur IntelliTrace pour collecter des événements IntelliTrace et informations d’appels sur de nombreux processus, le transfert de ces données peut dépasser le délai d’expiration par défaut. Pour augmenter cette valeur, vous pouvez utiliser la procédure suivante et mettre à jour **mtm.exe.config**.
 
- Un message d’erreur s’affiche en cas d’expiration du délai d’attente d’un agent de test ou de l’activité de Test Runner. Le message d’erreur relatif à l’agent de test donne des informations sur l’ordinateur de l’agent de test dont le délai d’attente est arrivé à expiration. Suivez la procédure suivante pour mettre à jour les fichiers de configuration, en fonction du message d'erreur que vous avez reçu.
+Un message d’erreur s’affiche en cas d’expiration du délai d’attente d’un agent de test ou de l’activité de Test Runner. Le message d’erreur relatif à l’agent de test donne des informations sur l’ordinateur de l’agent de test dont le délai d’attente est arrivé à expiration. Suivez la procédure suivante pour mettre à jour les fichiers de configuration, en fonction du message d'erreur que vous avez reçu.
 
 ## <a name="to-increase-the-time-outs-for-your-diagnostic-data-adapters"></a>Pour augmenter les délais d'attente pour vos adaptateurs de données de diagnostic
 

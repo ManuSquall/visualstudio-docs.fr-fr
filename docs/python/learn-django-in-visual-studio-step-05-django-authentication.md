@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e2c5f9461eafa83551ba15c36d8ef212922a52ff
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 35650e1fe22026968c06ed4bf0c9bc4cd1d2d54e
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33103136"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946973"
 ---
-# <a name="tutorial-step-5-authenticate-users-in-django"></a>Étape 5 du tutoriel : authentifier les utilisateurs dans Django
+# <a name="step-5-authenticate-users-in-django"></a>Étape 5 : Authentifier les utilisateurs dans Django
 
 **Étape précédente : [utiliser le modèle de projet Web Django complet](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
@@ -62,7 +62,7 @@ Les étapes suivantes exécutent le flux d’authentification et décrivent les 
     {% endif %}
     ```
 
-1. Étant donné qu’aucun utilisateur n’est authentifié lors du premier démarrage de l’application, ce code de modèle affiche uniquement le lien « Se connecter » vers la « connexion » du chemin relatif. Comme spécifié dans `urls.py` tel qu’indiqué dans la section précédente, cet itinéraire est mappé à l’affichage `django.contrib.auth.views.login` donné dans les données suivantes :
+1. Étant donné qu’aucun utilisateur n’est authentifié lors du premier démarrage de l’application, ce code de modèle affiche uniquement le lien « Se connecter » vers la « connexion » du chemin relatif. Comme spécifié dans `urls.py` (comme indiqué dans la section précédente), cet itinéraire est mappé à la vue `django.contrib.auth.views.login`. Cette vue reçoit les données suivantes :
 
     ```python
     {
@@ -144,13 +144,13 @@ Les étapes suivantes exécutent le flux d’authentification et décrivent les 
     {% endblock %}
     ```
 
-1. Quand vous envoyez le formulaire, Django tente d’authentifier les informations d’identification que vous fournissez (par exemple, les informations d’identification du superutilisateur). Si l’authentification échoue, vous restez sur la même page, mais `form.errors` défini sur true. Si l’authentification réussit, Django navigue vers l’URL relative dans le champ « suivant », `<input type="hidden" name="next" value="/" />`, qui est dans ce cas la page d’accueil (`/`).
+1. Quand vous envoyez le formulaire, Django tente d’authentifier vos informations d’identification (par exemple, les informations d’identification du superutilisateur). Si l’authentification échoue, vous restez sur la page actuelle, mais `form.errors` a la valeur true. Si l’authentification réussit, Django navigue vers l’URL relative dans le champ « suivant », `<input type="hidden" name="next" value="/" />`, qui est dans ce cas la page d’accueil (`/`).
 
 1. Désormais, lorsque la page d’accueil est affichée, la propriété `user.is_authenticated` est définie sur true lorsque le modèle `loginpartial.html` est affiché. Par conséquent, vous consultez un message « Bonjour (nom d’utilisateur) » et « Se déconnecter ». Vous pouvez utiliser `user.is_authenticated` dans d’autres parties de l’application pour vérifier l’authentification.
 
     ![Message d’accueil et contrôle de fermeture de session dans la page d’application du projet Web Django](media/django/step05-logoff-control.png)
 
-1. Pour vérifier si l’utilisateur authentifié est autorisé à accéder aux ressources spécifiques, vous devez récupérer les autorisations spécifiques à l’utilisateur à partir de votre base de données pour cet utilisateur. Pour plus d’informations, consultez [Utilisation du système d’authentification Django](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (documents Django).
+1. Pour vérifier si l’utilisateur authentifié est autorisé à accéder aux ressources spécifiques, vous devez récupérer les autorisations spécifiques à l’utilisateur à partir de votre base de données. Pour plus d’informations, consultez [Utilisation du système d’authentification Django](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (documents Django).
 
 1. Le superutilisateur ou l’administrateur, en particulier, est autorisé à accéder aux interfaces d’administrateur intégrées Django à l’aide des URL relatives « /admin/ » et « /admin/doc/ ». Pour activer ces interfaces, ouvrez le `urls.py` du projet Django et supprimez les commentaires à partir des entrées suivantes :
 
@@ -200,14 +200,14 @@ Les étapes suivantes exécutent le flux d’authentification et décrivent les 
 
 ### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a>Question : quelle est l’objectif de la balise {% crsf_token %} qui s’affiche dans les éléments du \<formulaire\> ?
 
-Réponse : la balise `{% crsf_token %}` inclut la [protection (crsf) de falsification de requêtes intersites](https://docs.djangoproject.com/en/2.0/ref/csrf/) intégrée dans Django (documents Django). En général, vous ajoutez cette balise à tout élément qui implique des méthodes de requête POST, PUT ou DELETE, comme un formulaire et la fonction d’affichage du modèle (`render`) insère la protection nécessaire.
+Réponse : la balise `{% crsf_token %}` inclut la [protection (crsf) de falsification de requêtes intersites](https://docs.djangoproject.com/en/2.0/ref/csrf/) intégrée dans Django (documents Django). En général, vous ajoutez cette balise à tout élément qui implique des méthodes de requête POST, PUT ou DELETE, comme un formulaire. La fonction de rendu de modèle (`render`) insère ensuite la protection nécessaire.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
 > [Utiliser le modèle Sondages du projet Web Django](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)
 
-## <a name="going-deeper"></a>Pour aller plus loin
+## <a name="go-deeper"></a>Approfondir la question
 
 - [Authentification des utilisateurs dans Django](https://docs.djangoproject.com/en/2.0/topics/auth/) (docs.djangoproject.com)
 - Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

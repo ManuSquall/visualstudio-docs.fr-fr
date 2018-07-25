@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce7418334e5621076a10b6887371cf7da76a7488
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b632e4aa7ce26c9a64517cc3a02b17fc3f939b07
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918139"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890355"
 ---
 # <a name="display-data-in-blend"></a>Afficher des données dans Blend
 
-Vous pouvez afficher des exemples de données dans votre concepteur à mesure que vous personnalisez la disposition de vos pages. Vous pouvez générer des exemples de données de toutes pièces ou en utilisant une classe existante. Vous pouvez aussi vous connecter à des *données en direct* qui s'affichent dans votre application au moment où vous l'exécutez.
+Vous pouvez afficher des exemples de données dans votre concepteur à mesure que vous personnalisez la disposition de vos pages. Vous pouvez générer des exemples de données de toutes pièces ou en utilisant une classe existante. Vous pouvez aussi vous connecter à des *données en direct* qui s’affichent dans votre application au moment où vous l’exécutez.
 
 ## <a name="generate-sample-data"></a>Générer un échantillon de données
 
@@ -53,8 +53,8 @@ Pour générer des exemples de données à partir d’une classe, ouvrez un docu
 
 ## <a name="show-live-data-in-a-store-or-phone-app"></a>Afficher des données en direct dans une application Windows Store ou Windows Phone
 
-Consultez [Utilisation de données et de fichiers (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx).
+Consultez [Utiliser des données et des fichiers (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Création d’une interface utilisateur à l’aide de Blend pour Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
+- [Créer une IU à l’aide de Blend pour Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 50b066020b04ce39dffa5c7267b89b889cf986e9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 93aec7e83ba5af9bab8da351624df861b46e475c
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976385"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282104"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Génération et compilation de code et conventions de nommage dans Microsoft Fakes
 
@@ -32,9 +32,9 @@ Cet article traite des options et des problèmes dans la génération et la comp
 
 ### <a name="configure-code-generation-of-stubs"></a>Configuration de la génération du code des stubs
 
-La génération de types stub est configurée dans un fichier XML avec l’extension de fichier .fakes. Le framework Fakes s'intègre au processus de génération via des tâches personnalisées MSBuild et détecte ces fichiers au moment de la génération. Le générateur de code Fakes compile les types stub dans un assembly et ajoute la référence au projet.
+La génération de types stub est configurée dans un fichier XML avec l’extension de fichier *.fakes*. Le framework Fakes s'intègre au processus de génération via des tâches personnalisées MSBuild et détecte ces fichiers au moment de la génération. Le générateur de code Fakes compile les types stub dans un assembly et ajoute la référence au projet.
 
-L'exemple suivant montre des types stub définis dans FileSystem.dll :
+L’exemple suivant montre des types stub définis dans *FileSystem.dll* :
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -44,9 +44,9 @@ L'exemple suivant montre des types stub définis dans FileSystem.dll :
 
 ### <a name="type-filtering"></a>Filtrage de types
 
-Les filtres peuvent être définis dans le fichier .fakes pour restreindre les types à extraire. Vous pouvez ajouter un nombre illimité d'éléments Clear, Add, Remove sous l'élément StubGeneration pour générer la liste des types sélectionnés.
+Les filtres peuvent être définis dans le fichier *.fakes* pour restreindre les types à extraire. Vous pouvez ajouter un nombre illimité d'éléments Clear, Add, Remove sous l'élément StubGeneration pour générer la liste des types sélectionnés.
 
-Par exemple, le fichier .fakes suivant génère des stubs pour les types sous les espaces de noms System et System.IO, mais exclut les types contenant « Handle » dans System :
+Par exemple, le fichier *.fakes* suivant génère des stubs pour les types sous les espaces de noms System et System.IO, mais exclut les types contenant « Handle » dans System :
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -86,7 +86,7 @@ Les chaînes de filtre utilisent une syntaxe simple pour définir comment la cor
 
 ### <a name="stub-concrete-classes-and-virtual-methods"></a>Classes concrètes et méthodes virtuelles des stubs
 
-Par défaut, les types stub sont générés pour toutes les classes non-sealed. Il est possible de restreindre les types stub aux classes abstraites dans le fichier de configuration .fakes :
+Par défaut, les types stub sont générés pour toutes les classes non-sealed. Il est possible de restreindre les types stub aux classes abstraites dans le fichier de configuration *.fakes* :
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -128,7 +128,7 @@ Le générateur de code Fakes génère des types shim et stub pour les types qui
         PublicKey=<Test_assembly_public_key>)]
     ```
 
-Si l'assembly ayant fait l'objet d'un shim porte un nom fort, le framework Fakes signe automatiquement fortement l'assembly Fakes généré. Vous devez signer avec un nom fort l'assembly de test. Consultez [Assemblys avec nom fort](/dotnet/framework/app-domains/strong-named-assemblies).
+Si l’assembly ayant fait l’objet d’un shim porte un nom fort, le framework Fakes signe automatiquement fortement l’assembly Fakes généré. Vous devez signer avec un nom fort l'assembly de test. Consultez [Assemblys avec nom fort](/dotnet/framework/app-domains/strong-named-assemblies).
 
 Le framework Fakes utilise la même clé pour signer tous les assemblys générés. Ainsi, vous pouvez utiliser cet extrait de code comme point de départ pour ajouter l’attribut **InternalsVisibleTo** de l’assembly Fakes à votre code assembleur ayant fait l’objet d’un shim.
 
@@ -136,7 +136,7 @@ Le framework Fakes utilise la même clé pour signer tous les assemblys génér�
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
-Vous pouvez spécifier une autre clé publique pour l’assembly Fakes, par exemple une clé que vous avez créée pour l’assembly ayant fait l’objet d’un shim, en spécifiant le chemin complet au fichier **.snk** qui contient l’autre clé comme valeur d’attribut `KeyFile` dans l’élément `Fakes`\\`Compilation` du fichier **.fakes**. Exemple :
+Vous pouvez spécifier une autre clé publique pour l’assembly Fakes, par exemple une clé que vous avez créée pour l’assembly ayant fait l’objet d’un shim, en spécifiant le chemin complet au fichier *.snk* qui contient l’autre clé comme valeur d’attribut `KeyFile` dans l’élément `Fakes`\\`Compilation` du fichier *.fakes*. Exemple :
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -145,7 +145,7 @@ Vous pouvez spécifier une autre clé publique pour l’assembly Fakes, par exem
 </Fakes>
 ```
 
-Vous devez ensuite utiliser la clé publique de l’autre fichier **.snk** comme second paramètre de l’attribut InternalVisibleTo pour l’assembly Fakes dans le code d’assembly ayant fait l’objet d’un shim :
+Vous devez ensuite utiliser la clé publique de l’autre fichier *.snk* comme second paramètre de l’attribut InternalVisibleTo pour l’assembly Fakes dans le code d’assembly ayant fait l’objet d’un shim :
 
 ```csharp
 // FileSystem\AssemblyInfo.cs
@@ -163,11 +163,11 @@ La compilation des assemblys Fakes peut augmenter considérablement la durée de
 
 Dans vos projets de test unitaire, ajoutez une référence aux assemblys Fakes compilés qui sont placés sous FakesAssemblies dans le dossier du projet.
 
-1.  Créez une bibliothèque de classes avec la version du runtime .NET. correspondant à vos projets de test. Appelons-la Fakes.Prebuild. Supprimez le fichier class1.cs du projet, non nécessaire.
+1.  Créez une bibliothèque de classes avec la version du runtime .NET. correspondant à vos projets de test. Appelons-la Fakes.Prebuild. Supprimez le fichier *class1.cs* du projet, non nécessaire.
 
 2.  Ajoutez la référence à tous les assemblys système et tiers pour lesquels vous avez besoin de Fakes.
 
-3.  Ajoutez un fichier .fakes pour chacun des assemblys et procédez à la génération.
+3.  Ajoutez un fichier *.fakes* pour chacun des assemblys et procédez à la génération.
 
 4.  Depuis votre projet de test
 
@@ -175,17 +175,17 @@ Dans vos projets de test unitaire, ajoutez une référence aux assemblys Fakes c
 
          *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll*
 
-    -   Pour chaque assembly pour lequel vous avez créé un Fakes, ajoutez une référence au fichier DLL correspondant dans le dossier Fakes.Prebuild\FakesAssemblies de votre projet.
+    -   Pour chaque assembly pour lequel vous avez créé un Fakes, ajoutez une référence au fichier DLL correspondant dans le dossier *Fakes.Prebuild\FakesAssemblies* de votre projet.
 
 ### <a name="avoid-assembly-name-clashing"></a>Prévention des conflits de noms d’assembly
 
-Dans un environnement Team Build, toutes les sorties de génération sont fusionnées dans un seul répertoire. Si plusieurs projets utilisent Fakes, il peut arriver que les assemblys Fakes de versions différentes se remplacent l’un l’autre. Par exemple, l'assembly Fakes TestProject1 mscorlib.dll de .NET Framework 2.0 et l'assembly Fakes TestProject2 mscorlib.dll de .NET Framework 4 produisent tous deux un assembly Fakes mscorlib.Fakes.dll.
+Dans un environnement Team Build, toutes les sorties de génération sont fusionnées dans un seul répertoire. Si plusieurs projets utilisent Fakes, il peut arriver que les assemblys Fakes de versions différentes se remplacent l’un l’autre. Par exemple, l’assembly Fakes TestProject1 *mscorlib.dll* de .NET Framework 2.0 et l’assembly Fakes TestProject2 *mscorlib.dll* de .NET Framework 4 produisent tous deux un assembly Fakes *mscorlib.Fakes.dll*.
 
- Pour éviter ce problème, Fakes doit créer automatiquement des noms d'assembly Fakes qualifiés par version pour les références hors projet lors de l'ajout de fichiers .fakes. Un nom d'assembly Fakes qualifié par version inclut un numéro de version quand vous créez le nom d'assembly Fakes :
+ Pour éviter ce problème, Fakes doit créer automatiquement des noms d’assembly Fakes qualifiés par version pour les références hors projet lors de l’ajout de fichiers *.fakes*. Un nom d'assembly Fakes qualifié par version inclut un numéro de version quand vous créez le nom d'assembly Fakes :
 
  Étant donné un assembly MyAssembly et une version 1.2.3.4, le nom de l'assembly Fakes est MyAssembly.1.2.3.4.Fakes.
 
- Vous pouvez modifier ou supprimer cette version par la modification de l'attribut Version de l'élément Assembly dans le fichier .fakes : 
+ Vous pouvez changer ou supprimer cette version par la modification de l’attribut Version de l’élément Assembly dans le fichier *.fakes* :
 
 ```xml
 attribute of the Assembly element in the .fakes:

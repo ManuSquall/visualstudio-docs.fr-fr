@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8566964ab8dd3fbfa1fca15ce8362218c99c27e6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c84099307d3a33db7b1d4861c9c0794fbf64d2f4
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967607"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977604"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Comment : sélectionner le paramètre d'exécution active d'un test de charge
 
@@ -30,7 +30,7 @@ Si votre test de charge contient un seul nœud de paramètre d’exécution sous
 
 Dans l'Éditeur de test de charge, le paramètre d'exécution actif est identifié par le suffixe « [Actif] ».
 
-## <a name="selecting-the-active-run-setting"></a>Sélection du paramètre d'exécution actif
+## <a name="select-the-active-run-setting"></a>Sélectionner le paramètre d’exécution actif
 
 ### <a name="to-select-the-active-run-setting-in-a-load-test"></a>Pour sélectionner le paramètre d'exécution actif dans un test de charge
 
@@ -47,15 +47,15 @@ Dans l'Éditeur de test de charge, le paramètre d'exécution actif est identifi
 > [!NOTE]
 > Vous pouvez substituer le paramètre d'exécution actif en définissant une variable d'environnement nommée `Test.UseRunSetting=<run setting name>`. Cela est utile lorsque vous exécutez un test de charge à partir de la ligne de commande ou d'un fichier batch. Vous pouvez ainsi choisir des paramètres d'exécution différents sans ouvrir votre test de charge.
 
+## <a name="specify-the-run-setting-to-use-from-the-command-line"></a>Spécifier le paramètre d’exécution à utiliser à partir de la ligne de commande
 
-## <a name="specifying-the-run-setting-to-use-from-the-command-line"></a>Spécification du paramètre d'exécution à utiliser à partir de la ligne de commande
- Vous pouvez remplacer les paramètres d'exécution par défaut dans votre test de charge en définissant une variable d'environnement à partir de la ligne de commande :
+Vous pouvez remplacer les paramètres d'exécution par défaut dans votre test de charge en définissant une variable d'environnement à partir de la ligne de commande :
 
- **Définissez Test.UseRunSetting=PreProdEnvironment**
+**Définissez Test.UseRunSetting=PreProdEnvironment**
 
- Ensuite, exécutez le test :
+Ensuite, exécutez le test :
 
- **mstest /testcontainer:loadtest1.loadtest**
+**mstest /testcontainer:loadtest1.loadtest**
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -1,7 +1,7 @@
 ---
 title: 'Démarrage rapide : utiliser Visual Studio pour créer votre première application Node.js'
 description: Dans ce guide de démarrage rapide, vous créez une application Node.js dans Visual Studio
-ms.date: 11/15/2017
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-nodejs
 ms.topic: quickstart
@@ -14,18 +14,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0a78f9fdfd1ea3612d86432619c463d526eed5c2
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: e18f1e2063fd4007eba13d76473d634265b6a51f
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454038"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131854"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Démarrage rapide : utiliser Visual Studio pour créer votre première application Node.js
 
-Dans cette présentation de 5-10 minutes de l’environnement de développement intégré (IDE) de Visual Studio, vous allez créer une application Node.js simple. Si vous n’avez pas encore installé Visual Studio 2017, accédez à la page [Téléchargements Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) pour l’installer gratuitement.
+Dans cette présentation de 5-10 minutes de l’environnement de développement intégré (IDE) de Visual Studio, vous allez créer une application Node.js simple. Si vous n’avez pas encore installé Visual Studio 2017, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour l’installer gratuitement.
 
 ## <a name="create-a-project"></a>Créer un projet
+
 Vous allez d’abord créer un projet d’application web Node.js.
 
 1. Si le runtime Node.js n’est pas déjà installé, installez la version LTS à partir du site web [Node.js](https://nodejs.org/en/download/).
@@ -42,7 +43,7 @@ Vous allez d’abord créer un projet d’application web Node.js.
 
      ![Charge de travail Node.js dans Visual Studio Installer](../ide/media/quickstart-nodejs-workload.png)
 
-    Visual Studio crée la nouvelle solution et ouvre le projet. *server.js* s’ouvre dans l’éditeur, dans le volet gauche.
+    Une fois que vous avez choisi le modèle **Application web Node.js vide** et cliqué sur **OK**, Visual Studio crée la nouvelle solution et ouvre le projet. *server.js* s’ouvre dans l’éditeur, dans le volet gauche.
 
 ## <a name="explore-the-ide"></a>Explorer l’IDE
 
@@ -50,13 +51,13 @@ Vous allez d’abord créer un projet d’application web Node.js.
 
    ![Explorateur de solutions](../ide/media/quickstart-nodejs-solution-explorer.png)
 
-  - Votre projet mis en gras, avec le nom que vous avez donné dans la boîte de dialogue **Nouveau projet**. Sur le disque, ce projet est représenté par un fichier *.njsproj* dans le dossier de votre projet.
+   - Votre projet mis en gras, avec le nom que vous avez donné dans la boîte de dialogue **Nouveau projet**. Sur le disque, ce projet est représenté par un fichier *.njsproj* dans le dossier de votre projet.
 
-  - Au niveau le plus élevé figure une solution, qui a par défaut le même nom que votre projet. Une solution, représentée par un fichier *.sln* sur le disque, est un conteneur pour un ou plusieurs projets connexes.
+   - Au niveau le plus élevé figure une solution, qui a par défaut le même nom que votre projet. Une solution, représentée par un fichier *.sln* sur le disque, est un conteneur pour un ou plusieurs projets connexes.
 
-  - Le nœud npm montre tous les packages npm installés. Vous pouvez cliquer avec le bouton droit sur le nœud npm pour rechercher et installer des packages npm à l’aide d’une boîte de dialogue.
+   - Le nœud npm montre tous les packages npm installés. Vous pouvez cliquer avec le bouton droit sur le nœud npm pour rechercher et installer des packages npm à l’aide d’une boîte de dialogue.
 
-1. Si vous souhaitez installer des packages npm ou des commandes node.js à partir d’une invite de commandes, cliquez avec le bouton droit sur le nœud du projet et choisissez **Ouvrir l’invite de commandes ici**.
+1. Si vous souhaitez installer des packages npm ou des commandes Node.js à partir d’une invite de commandes, cliquez avec le bouton droit sur le nœud du projet et choisissez **Ouvrir l’invite de commandes ici**.
 
    ![Invite de commandes node.js](../ide/media/quickstart-nodejs-command-prompt.png)
 
@@ -84,9 +85,12 @@ Vous allez d’abord créer un projet d’application web Node.js.
 
 1. Fermez le navigateur web.
 
-Félicitations ! Vous avez terminé ce guide de démarrage rapide. Nous espérons que vous en avez appris un peu plus sur l’IDE de Visual Studio. Si vous souhaitez en savoir plus sur ses fonctionnalités, poursuivez avec un didacticiel de la section **Didacticiels** dans la table des matières.
+Félicitations, vous avez terminé ce guide de démarrage rapide. Vous en savez maintenant un peu plus sur l’IDE de Visual Studio et Node.js. Si vous souhaitez en savoir plus sur ses fonctionnalités, poursuivez avec l’un des tutoriels de la section **Tutoriels** dans la table des matières.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- Suivre le [tutoriel pour Node.js et Express](../nodejs/tutorial-nodejs.md)
-- Suivre le [tutoriel pour Node.js et React](../nodejs/tutorial-nodejs-with-react-and-jsx.md)
+> [!div class="nextstepaction"]
+> [Déployer l’application sur Linux App Service](../javascript/publish-nodejs-app-azure.md)
+
+- [Tutoriel pour Node.js et Express](../javascript/tutorial-nodejs.md)
+- [Tutoriel pour Node.js et React](../javascript/tutorial-nodejs-with-react-and-jsx.md)

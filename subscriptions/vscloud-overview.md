@@ -9,23 +9,22 @@ description: Louez Visual Studio Professional ou Visual Studio Enterprise sur un
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2b656f7b0c40d9eadecd36fb9aa38fed5bbe1bf9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 73e8b5927d9d02fb8ebb1414a735c67604f750d9
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31196425"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302829"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Acheter des abonnements cloud Visual Studio Enterprise et Visual Studio Professional
 
-Vous pouvez acheter des [abonnements Visual Studio Professional et Visual Studio Enterprise](https://www.visualstudio.com/subscriptions/) sur [Visual Studio Marketplace](https://marketplace.visualstudio.com). C’est ce que nous appelons des « abonnements cloud ».
+Vous pouvez acheter des [abonnements Visual Studio Professional et Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) sur [Visual Studio Marketplace](https://marketplace.visualstudio.com). C’est ce qu’on appelle des « abonnements cloud ».
 
-[Comparer les avantages et les tarifs des abonnements cloud](https://www.visualstudio.com/vs/pricing/)
+[Comparer les avantages et les tarifs des abonnements cloud](https://visualstudio.microsoft.com/vs/pricing/)
 
 ## <a name="before-you-start"></a>Avant de commencer
 
-*   Pour payer vos achats, vous avez besoin d’un [abonnement Azure](https://azure.microsoft.com/pricing/purchase-options/).
-Vous pouvez vous [inscrire](https://portal.azure.com) avant votre premier achat ou lors de votre premier achat dans Visual Studio Marketplace.
+*   Pour payer vos achats, vous avez besoin d’un [abonnement Azure](https://azure.microsoft.com/pricing/purchase-options/). Vous pouvez vous [inscrire](https://portal.azure.com) avant votre premier achat ou lors de votre premier achat dans Visual Studio Marketplace.
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Comment acheter des abonnements cloud ?
 
@@ -57,16 +56,13 @@ Vous pouvez vous [inscrire](https://portal.azure.com) avant votre premier achat 
 
     <img alt="View subscriptions" src="_img/buy-vs-subscriptions/assign-subscriptions.png" style="border: 1px solid #CCCCCC" />
 
-<a name="manage-subscriptions"></a>
-##  <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a>Annuler le renouvellement des abonnements cloud que vous avez achetés
-
+## <a name="manage-subscriptions"></a>Annuler le renouvellement des abonnements cloud que vous avez achetés
 
 *   Pour changer le nombre d’abonnements achetés :
 
     <img alt="Change subscriptions" src="_img/buy-vs-subscriptions/manage-subscriptions.png" style="border: 1px solid #CCCCCC" />
 
-*   Pour annuler ces abonnements, réduisez le nombre d’abonnements à zéro (0).
-Ils ne seront pas renouvelés au début de la prochaine période de facturation (le premier jour du mois suivant pour les abonnements cloud mensuels ; 12 mois plus tard pour les abonnements cloud annuels).
+*   Pour annuler ces abonnements, réduisez le nombre d’abonnements à zéro (0). Ils ne seront pas renouvelés au début de la prochaine période de facturation (le premier jour du mois suivant pour les abonnements cloud mensuels ; 12 mois plus tard pour les abonnements cloud annuels).
 
 ## <a name="buy-cloud-subscriptions-now"></a>Acheter des abonnements cloud
 
@@ -78,6 +74,6 @@ Ils ne seront pas renouvelés au début de la prochaine période de facturation 
 ## <a name="related-resources"></a>Ressources connexes
 
 * [Portail d’administration des abonnements Visual Studio](https://manage.visualstudio.com/)
-* [Support des abonnements Visual Studio](https://www.visualstudio.com/vs/support/)
+* [Support des abonnements Visual Studio](https://visualstudio.microsoft.com/vs/support/)
 * [FAQ sur la facturation des abonnements cloud Visual Studio](vscloud-billing-faq.md)
 * [Achat d’abonnements cloud Visual Studio pour les fournisseurs de solutions Cloud](vscloud-csp.md)

@@ -14,17 +14,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c1a2f67204fd6df7c8eb12ce5f13e8d1f4ec29d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: aa1e52e61f4003a9495e1bff5bd64e4edc40a323
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568004"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078652"
 ---
 # <a name="msbuild-special-characters"></a>Caractères spéciaux MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] réserve certains caractères à une utilisation précise dans certains contextes. Pour les utiliser littéralement dans le contexte où ils sont réservés, il vous suffit de les placer dans une séquence d’échappement. Par exemple, un astérisque n’a une signification spéciale que dans les attributs `Include` et `Exclude` d’une définition d’élément, et dans les appels à `CreateItem`. Si vous souhaitez qu’un astérisque apparaisse comme un astérisque dans l’un de ces contextes, vous devez le placer dans une séquence d’échappement. Dans tous les autres contextes, tapez simplement l’astérisque là où vous souhaitez qu’il apparaisse.  
   
- Pour placer un caractère spécial dans une séquence d’échappement, utilisez la syntaxe %*xx*, où *xx* représente la valeur hexadécimale du caractère ASCII. Pour plus d’informations, consultez [Guide pratique pour utiliser des caractères spéciaux d’échappement dans MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).  
+ Pour placer un caractère spécial dans une séquence d’échappement, utilisez la syntaxe %\<xx>, où \<xx> représente la valeur hexadécimale du caractère ASCII. Pour plus d’informations, consultez [Guide pratique pour utiliser des caractères spéciaux d’échappement dans MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).  
   
 ## <a name="special-characters"></a>Caractères spéciaux  
  Le tableau suivant répertorie les caractères spéciaux [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] :  

@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble de Visual Studio 2017
+title: Présentation de Visual Studio 2017
 ms.date: 06/01/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,78 +13,96 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a7667cac2a26a3e98d2e92dfeb13cee36d870e9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 38491757da5010d015553f1d3c562e27914b28a9
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691158"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078977"
 ---
-# <a name="visual-studio-ide-overview"></a>Vue d’ensemble de l’IDE de Visual Studio
+# <a name="visual-studio-overview"></a>Présentation de Visual Studio
 
-L’environnement de développement interactif (IDE) de Visual Studio est une plateforme de lancement créative avec laquelle vous pouvez afficher et modifier du code, puis déboguer, générer et publier des applications.
+L’*environnement de développement interactif* de Visual Studio est une plateforme de lancement créative avec laquelle vous pouvez modifier, déboguer et générer du code, puis publier une application. Un environnement de développement interactif (IDE) est un programme riche en fonctionnalités qui peut être utilisé pour de nombreux aspects du développement de logiciels. Au-delà de l’éditeur et du débogueur standard fournis par la plupart des IDE, Visual Studio inclut des compilateurs, des outils de complétion de code, des concepteurs graphiques et de nombreuses autres fonctionnalités afin de faciliter le processus de développement logiciel.
 
 Visual Studio est disponible pour Windows et Mac. [Visual Studio pour Mac](/visualstudio/mac/) compte de nombreuses fonctionnalités en commun avec Visual Studio 2017, et est optimisé pour le développement d’applications mobiles et multiplateformes.
 
-Cet article se concentre sur Visual Studio 2017 pour Windows. Il vous présente les fonctionnalités de base de l’IDE. Nous allons voir en détail certaines opérations que vous pouvez effectuer avec Visual Studio, notamment la création d’un projet simple, l’utilisation d’IntelliSense comme une aide au codage et le débogage d’une application pour afficher la valeur d’une variable pendant l’exécution du programme. Nous allons également effectuer une visite guidée des différentes fenêtres Outil.
+Cet article se concentre sur Visual Studio 2017 pour Windows. Il vous présente les fonctionnalités de base de l’IDE. Nous allons voir en détail certaines opérations que vous pouvez effectuer avec Visual Studio, notamment la création d’un projet simple, l’utilisation d’[IntelliSense](using-intellisense.md) comme aide au codage et le débogage d’une application pour afficher la valeur d’une variable pendant l’exécution du programme. Nous allons également effectuer une visite guidée des différentes fenêtres Outil.
 
 ## <a name="install-the-visual-studio-ide"></a>Installer l’IDE de Visual Studio
 
-Pour commencer, [téléchargez Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) et installez-le sur votre système.
+Pour commencer, [téléchargez Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) et installez-le sur votre système.
 
-Le programme d’installation modulaire vous permet de choisir et d’installer des *charges de travail*, qui sont des groupes de fonctionnalités requises pour la plateforme ou le langage de programmation de votre choix. Pour suivre les étapes de [création d’un programme](#create-a-program), veillez à sélectionner la charge de travail **Développement multiplateforme .NET Core** pendant l’installation. Les rubriques de démarrage rapide, comme [Bien démarrer avec C++ dans Visual Studio](getting-started-with-cpp-in-visual-studio.md), contiennent des instructions sur l’installation d’autres charges de travail.
+Le programme d’installation modulaire vous permet de choisir et d’installer des *charges de travail*, qui sont des groupes de fonctionnalités requises pour la plateforme ou le langage de programmation de votre choix. Pour suivre les étapes de [création d’un programme](#create-a-program), veillez à sélectionner la charge de travail **Développement multiplateforme .NET Core** pendant l’installation.
 
-![Programme d’installation de Visual Studio](../ide/media/overview-net-core-workload.png)
+![Charge de travail Développement multiplateforme .NET Core dans Visual Studio Installer](../ide/media/dotnet-core-cross-platform-workload.png)
 
-Quand vous démarrez Visual Studio pour la première fois, vous pouvez vous connecter avec votre compte Microsoft, ou avec votre compte professionnel ou celui de votre établissement scolaire.
+Quand vous démarrez Visual Studio pour la première fois, vous pouvez vous [connecter](signing-in-to-visual-studio.md) avec votre compte Microsoft, ou avec votre compte professionnel ou scolaire.
 
 ## <a name="tour-of-the-ide"></a>Visite guidée de l’IDE
 
-Pour vous donner une représentation générale de Visual Studio, l’image suivante montre un projet ouvert dans Visual Studio et les fenêtres Outil principales dont vous aurez probablement besoin :
+Pour vous donner une représentation générale de Visual Studio, l’image suivante montre un projet ouvert dans Visual Studio et quelques fenêtres d’outils dont vous aurez probablement besoin :
 
 ![IDE de Visual Studio](../ide/media/visualstudioide.png)
 
-- L’[Explorateur de solutions](../ide/solutions-and-projects-in-visual-studio.md) vous permet d’afficher, de parcourir et de gérer vos fichiers de code. L’Explorateur de solutions peut vous aider à organiser votre code en regroupant les fichiers dans des projets et des solutions.
+- L’[**Explorateur de solutions**](../ide/solutions-and-projects-in-visual-studio.md) (en haut à droite) vous permet d’afficher, de parcourir et de gérer vos fichiers de code. L’**Explorateur de solutions** peut vous aider à organiser votre code en regroupant les fichiers dans des [projets et des solutions](quickstart-projects-solutions.md).
 
-- La fenêtre de l’[éditeur](../ide/writing-code-in-the-code-and-text-editor.md) est la fenêtre où vous passerez sans doute le plus de temps. Utilisez cette fenêtre pour afficher votre code, modifier le code source et concevoir une interface utilisateur.
+- La [fenêtre de l’éditeur](../ide/writing-code-in-the-code-and-text-editor.md) (au centre), où vous passerez sans doute la plupart de votre temps, affiche le contenu des fichiers. C’est là que vous pouvez modifier le code ou concevoir une interface utilisateur telle qu’une fenêtre avec des boutons et des zones de texte.
 
-- La [fenêtre Sortie](../ide/reference/output-window.md) est l’emplacement où Visual Studio envoie ses notifications, comme les messages d’erreur et de débogage, les avertissements du compilateur, les messages d’état de publication, entre autres. Chaque source de message a son propre onglet.
+- La [fenêtre Sortie](../ide/reference/output-window.md) (en bas au centre) est l’emplacement où Visual Studio envoie des notifications telles que les messages d’erreur et de débogage, les avertissements du compilateur, les messages d’état de publication, entre autres. Chaque source de message a son propre onglet.
 
-- [Team Explorer (VSTS)](/vsts/user-guide/work-team-explorer) vous permet de suivre des éléments de travail et de partager du code avec d’autres utilisateurs à l’aide des technologies de gestion de versions comme [Git](https://git-scm.com/) et [Team Foundation Version Control (TFVC)](/vsts/tfvc/overview).
+- [Team Explorer](/vsts/user-guide/work-team-explorer) (en bas à droite) vous permet de suivre des éléments de travail et de partager du code avec d’autres utilisateurs à l’aide des technologies de gestion de versions comme [Git](https://git-scm.com/) et [Team Foundation Version Control (TFVC)](/vsts/tfvc/overview).
 
-Voici d’autres fonctionnalités de productivité très utilisées de Visual Studio :
+### <a name="popular-productivity-features"></a>Fonctionnalités de productivité populaires
 
-- La [refactorisation](../ide/refactoring-in-visual-studio.md) inclut des opérations comme le renommage intelligent des variables, le déplacement de lignes de code sélectionnées dans une fonction distincte, le déplacement de code à d’autres endroits, la réorganisation des paramètres des fonctions, et ainsi de suite.
+Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous aident à être plus productifs quand vous développez des logiciels :
 
-   ![Refactorisation](../ide/media/VSIDE_refactor.png)
+- [Refactorisation](../ide/refactoring-in-visual-studio.md)
 
-- [IntelliSense](../ide/using-intellisense.md) est un terme couvrant un ensemble de fonctionnalités appréciées qui affichent des informations sur les types concernant votre code directement dans l’éditeur et qui, dans certains cas, écrivent de petits extraits de code pour vous. Cela revient à avoir de la documentation de base incluse dans l’éditeur, ce qui vous évite d’avoir à rechercher des informations sur les types dans une fenêtre d’aide distincte. Les fonctionnalités d'IntelliSense varient selon le langage. Pour plus d’informations, consultez [C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md) et [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md). L’illustration suivante montre certaines fonctionnalités IntelliSense à l'œuvre :
+   La refactorisation inclut des opérations telles que le renommage intelligent des variables, l’extraction d’une ou plusieurs lignes de code dans une nouvelle méthode, le changement de l’ordre des paramètres de méthode, et bien plus encore.
 
-   ![Liste des membres Visual Studio](../ide/media/vs2017_Intellisense.png)
+   ![Refactorisation dans Visual Studio](../ide/media/refactoring-menu.png)
 
-- La zone de recherche [Lancement rapide](../ide/reference/quick-launch-environment-options-dialog-box.md) est un excellent moyen de trouver rapidement ce dont vous avez besoin dans Visual Studio. Commencez simplement par taper le nom de l’élément que vous recherchez. Visual Studio affiche alors les résultats de la recherche à partir desquels vous pouvez accéder à l’élément précis recherché. Le **lancement rapide** affiche également des liens permettant de démarrer **Visual Studio Installer** pour une charge de travail ou un composant individuel.
+- [IntelliSense](../ide/using-intellisense.md)
 
-   ![Zone de recherche de lancement rapide](../ide/media/VSIDE_Tour_QuickLaunch.png)
+   IntelliSense est un terme couvrant un ensemble de fonctionnalités qui affichent des informations concernant votre code directement dans l’éditeur et qui, dans certains cas, écrivent de petits extraits de code pour vous. Cela revient à avoir de la documentation de base incluse dans l’éditeur, ce qui vous évite d’avoir à rechercher ailleurs des informations sur les types. Les fonctionnalités d'IntelliSense varient selon le langage. Pour plus d’informations, consultez [C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md) et [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md). L’illustration suivante montre comment IntelliSense affiche une liste des membres d’un type :
 
-- Les **tildes** sont des soulignements ondulés qui vous signalent des erreurs ou des problèmes potentiels dans votre code en temps réel en cours de frappe. Cela vous permet de les corriger immédiatement sans attendre la détection de l’erreur lors de la compilation ou de l’exécution. Si vous pointez sur le tilde, vous voyez des informations supplémentaires sur l'erreur. Une ampoule peut également apparaître dans la marge gauche, avec des actions pour corriger l’erreur. Pour plus d’informations, consultez [Actions rapides](../ide/quick-actions.md).
+   ![Liste des membres Visual Studio](../ide/media/intellisense-list-members.png)
 
-   ![Tildes](../ide/media/vs2017_squiggle.png)
+- [Lancement rapide](../ide/reference/quick-launch-environment-options-dialog-box.md)
 
-- Vous pouvez ouvrir la fenêtre [Hiérarchie d’appels](../ide/reference/call-hierarchy.md) dans le menu contextuel de l’éditeur de texte pour afficher les méthodes qui appellent la méthode sous le signe insertion (point d’insertion) et qui sont appelées par cette méthode.
+   La maîtrise de Visual Studio peut sembler insurmontable parfois, avec autant de menus, d’options et de propriétés. La zone de recherche **Lancement rapide** est un excellent moyen de trouver rapidement ce dont vous avez besoin dans Visual Studio. Quand vous commencez à taper le nom d’un élément que vous recherchez, Visual Studio affiche des résultats qui vous mènent exactement où vous devez accéder. Si vous avez besoin ajouter des fonctionnalités à Visual Studio, par exemple pour ajouter la prise en charge d’un langage de programmation supplémentaire, **Lancement rapide** fournit des résultats qui ouvrent Visual Studio Installer pour installer une charge de travail ou un composant spécifique.
 
-   ![Fenêtre Hiérarchie d'appels](../ide/media/VSIDE_call_hierarchy.png)
+   ![Zone de recherche Lancement rapide dans Visual Studio](../ide/media/quick-launch-nuget.png)
 
-- [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) vous permet de rechercher les références et les modifications apportées à votre code, les bogues liés, les éléments de travail, les révisions de code et les tests unitaires, tout cela sans quitter l'éditeur.
+- Tildes et [Actions rapides](../ide/quick-actions.md)
+
+   Les tildes sont des soulignements ondulés qui vous signalent des erreurs ou des problèmes potentiels dans votre code en cours de frappe. Ces indices visuels permettent de résoudre les problèmes immédiatement sans attendre que l’erreur soit découverte durant la génération ou quand vous exécutez le programme. Si vous pointez sur un tilde, vous voyez des informations supplémentaires sur l’erreur. Une ampoule (appelée Action rapide) peut également apparaître dans la marge gauche, avec des actions pour corriger l’erreur.
+
+   ![Tildes dans Visual Studio](../ide/media/squiggles-error.png)
+
+- [Hiérarchie d’appels](../ide/reference/call-hierarchy.md)
+
+   La fenêtre **Hiérarchie d’appels** affiche les méthodes qui appellent une méthode sélectionnée. Ces informations peuvent être utiles quand vous envisagez de changer ou de supprimer la méthode, ou quand vous essayez de repérer un bogue.
+
+   ![Fenêtre Hiérarchie d'appels](../ide/reference/media/call-hierarchy-csharp-expanded.png)
+
+- [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)
+
+   CodeLens vous aide à rechercher les références à votre code, les modifications apportées à votre code, les bogues liés, les éléments de travail, les revues de code et les tests unitaires, tout cela sans quitter l’éditeur.
 
    ![CodeLens](../ide/media/codelensoverview.png)
 
-- La fenêtre [Aperçu de la définition](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) montre une définition de méthode ou de type inline, sans vous obliger à quitter votre contexte actuel.
+- [Atteindre la définition](../ide/go-to-and-peek-definition.md)
 
-   ![Aperçu de définition](../ide/media/VSIDE_peek_definition.png)
+  La fonctionnalité Atteindre la définition vous mène directement à l’emplacement où une fonction ou un type est défini(e).
 
-- L'option de menu contextuel [Atteindre la définition](../ide/go-to-and-peek-definition.md) vous amène directement à l'endroit où la fonction ou l'objet est défini. D'autres commandes de navigation sont également disponibles en cliquant avec le bouton droit dans l'éditeur.
+   ![Atteindre la définition](../ide/media/go-to-definition-menu.png)
 
-   ![Atteindre la définition](../ide/media/VSIDE_go_to_definition.png)
+- [Aperçu de définition](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+
+   La fenêtre **Aperçu de définition** montre la définition d’une méthode ou d’un type sans réellement ouvrir un fichier distinct.
+
+   ![Aperçu de définition](../ide/media/peek-definition.png)
 
 ## <a name="create-a-program"></a>Créer un programme
 
@@ -92,24 +110,22 @@ Nous allons aller plus loin en créant un nouveau programme simple.
 
 1. Ouvrez Visual Studio. Dans le menu, choisissez **Fichier** > **Nouveau** > **Projet**.
 
-  ![Fichier > Nouveau projet sur la barre de menus](../ide/media/VSIDE_Tour_NewProject1.png)
+   ![Fichier > Nouveau projet sur la barre de menus](../ide/media/file-new-project-menu.png)
 
 1. La boîte de dialogue **Nouveau projet** affiche plusieurs *modèles* de projet. Un modèle contient les fichiers et les paramètres de base nécessaires pour un type de projet donné. Choisissez la catégorie **.NET Core** sous **Visual C#**, puis choisissez le modèle **App. de console (.NET Core)**. Dans la zone de texte **Nom**, tapez **HelloWorld**, puis cliquez sur le bouton **OK**.
 
-  ![Modèle d’application .NET Core](../ide/media/overview-new-project-dialog.png)
+   ![Modèle d’application .NET Core](../ide/media/overview-new-project-dialog.png)
 
-   Visual Studio crée le projet. Il s’agit d’une application « Hello world » simple, qui appelle la méthode <xref:System.Console.WriteLine?displayProperty=nameWithType> pour afficher la chaîne littérale « Hello World! » dans la fenêtre de console.
+   Visual Studio crée le projet. Il s’agit d’une application « Hello world » simple, qui appelle la méthode <xref:System.Console.WriteLine?displayProperty=nameWithType> pour afficher la chaîne littérale « Hello World! » dans la fenêtre de console (sortie du programme).
 
   > [!NOTE]
-  > Si vous la catégorie **. NET Core** ne s’affiche pas, vous devez installer la charge de travail **Développement multiplateforme .NET Core**. Pour cela, cliquez sur le lien **Ouvrir Visual Studio Installer** en bas à gauche de la boîte de dialogue **Nouveau projet**. Une fois **Visual Studio Installer** ouvert, faites défiler l’écran vers le bas pour sélectionner la charge de travail **Développement multiplateforme .NET Core**, puis sélectionnez **Modifier**.
+  > Si vous la catégorie **. NET Core** ne s’affiche pas, vous devez installer la charge de travail **Développement multiplateforme .NET Core**. Pour cela, cliquez sur le lien **Ouvrir Visual Studio Installer** en bas à gauche de la boîte de dialogue **Nouveau projet**. Une fois Visual Studio Installer ouvert, faites défiler l’écran vers le bas pour sélectionner la charge de travail **Développement multiplateforme .NET Core**, puis sélectionnez **Modifier**.
 
    Quelque chose qui ressemble à ce qui suit doit s’afficher :
 
    ![Environnement IDE de Visual Studio](../ide/media/overview-ide-console-app.png)
 
-   Le code c# pour votre application est indiqué dans la fenêtre d’éditeur, ce qui occupe la majeure partie de l’espace. Notez que le texte est automatiquement colorisé pour indiquer les différents aspects du code, comme des mots clés et des types. En outre, les petites lignes en pointillés verticales du code indiquent les accolades correspondant entre elles et les numéros de ligne vous aident à localiser le code. Vous pouvez cliquer sur les signes moins encadrés pour réduire ou développer le code. Cette fonctionnalité de surlignage de code vous permet de masquer le code dont vous n’avez pas besoin, ce qui contribue à réduire l’encombrement à l’écran.
-
-   Vos fichiers projet sont répertoriés sur le côté droit dans une fenêtre appelée **Explorateur de solutions**.
+   Le code C# de votre application figure dans la fenêtre d’éditeur, qui occupe la majeure partie de l’espace. Notez que le texte est colorisé automatiquement pour indiquer les différentes parties du code, comme les mots clés et les types. En outre, les petites lignes en pointillés verticales du code indiquent les accolades correspondant entre elles et les numéros de ligne vous aident à localiser le code. Vous pouvez cliquer sur les signes moins encadrés pour réduire ou développer des blocs de code. Cette fonctionnalité de surlignage de code vous permet de masquer le code dont vous n’avez pas besoin, ce qui contribue à réduire l’encombrement à l’écran. Vos fichiers projet sont répertoriés sur le côté droit dans une fenêtre appelée **Explorateur de solutions**.
 
   ![IDE de Visual Studio avec zones rouges](../ide/media/overview-ide-console-app-red-boxes.png)
 
@@ -158,7 +174,7 @@ Tout d’abord, renommons la variable `name` :
 
 1. Double-cliquez sur la variable `name` pour la sélectionner.
 
-1. Tapez le nouveau nom de la variable, `username`.
+1. Tapez le nouveau nom de la variable, **username**.
 
    Notez qu’une zone grisée apparaît autour de la variable et qu’une ampoule s’affiche dans la marge.
 
@@ -206,7 +222,7 @@ Tout d’abord, renommons la variable `name` :
 
 ## <a name="debug-code"></a>Déboguer du code
 
-Quand vous écrivez du code, vous devez l’exécuter et le tester pour rechercher les bogues. Le système de débogage de Visual Studio vous permet de parcourir le code instruction par instruction et d’en examiner les variables au fur et à mesure de votre avancement. Vous pouvez définir des points d’arrêt qui sont atteints seulement quand une condition spécifiée a la valeur true. Vous pouvez surveiller les valeurs des variables à mesure que le code s’exécute.
+Quand vous écrivez du code, vous devez l’exécuter et le tester pour rechercher les bogues. Le système de débogage de Visual Studio vous permet de parcourir le code instruction par instruction et d’en examiner les variables au fur et à mesure de votre avancement. Vous pouvez définir des *points d’arrêt* qui arrêtent l’exécution du code à une ligne particulière. Vous pouvez observer la façon dont la valeur d’une variable change à mesure que le code s’exécute, et bien plus encore.
 
 Définissons un point d’arrêt pour voir la valeur de la variable `username` quand le programme est en cours.
 
@@ -232,7 +248,7 @@ Pour en savoir plus sur le processus de débogage de Visual Studio, consultez [V
 
 ## <a name="customize-visual-studio"></a>Personnaliser Visual Studio
 
-Vous pouvez personnaliser l’IDE, notamment en changeant le thème de couleur par défaut. Pour remplacer le thème par **Sombre** :
+Vous pouvez personnaliser l’interface utilisateur de Visual Studio, notamment changer le thème de couleur par défaut. Pour remplacer le thème par **Sombre** :
 
 1. Dans la barre de menus, choisissez **Outils** > **Options** pour ouvrir la boîte de dialogue **Options**.
 
@@ -248,13 +264,13 @@ Pour en savoir plus sur les autres façons possibles de personnaliser l’IDE, c
 
 Voulez-vous créer une application pour un téléphone Android ou iOS ? Qu’en est-il d’un jeu 3D ou d’une application cloud ? Pour en savoir plus sur ces fonctionnalités de Visual Studio et sur d’autres, consultez [Fonctionnalités de Visual Studio 2017](../ide/advanced-feature-overview.md).
 
-Si vous êtes prêt à commencer à coder maintenant, choisissez l’une des rubriques de démarrage rapide dans la table des matières, comme [Créer votre première application web ASP.NET Core](quickstart-aspnet-core.md).
+Si vous souhaitez simplement commencer à coder maintenant, choisissez l’une des rubriques de démarrage rapide dans la table des matières, comme [Créer votre première application web ASP.NET Core](quickstart-aspnet-core.md).
 
 Vous pouvez également consulter les cours Visual Studio gratuits disponibles sur [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033).
 
 ## <a name="see-also"></a>Voir aussi
 
 * [Autres fonctionnalités de Visual Studio](../ide/advanced-feature-overview.md)
-* [www.visualstudio.com](https://www.visualstudio.com/vs/)
+* [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
 * [Le blog Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
-* [Téléchargements Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+* [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)

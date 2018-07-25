@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 2da34d180a59212b171e484129df27d94f580a1a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f8faa01ddc56c5beaa2412bd91a9e68a8bba9525
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924542"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978175"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organiser les objets en conteneurs de disposition dans le concepteur XAML
 
@@ -23,7 +23,7 @@ Cet article décrit les panneaux de disposition et les contrôles du concepteur 
 
 Réfléchissez à l’endroit où vous souhaitez faire figurer les objets dans une page (des objets tels que des images, des boutons et des vidéos). Peut-être souhaiterez-vous qu'ils apparaissent dans des lignes et des colonnes, dans une seule ligne verticale ou horizontale ou bien à des emplacements fixes ?
 
-Une fois que vous avez déterminé l’aspect que vous voulez donner à la page, choisissez un panneau de disposition. Il s'agit de la structure de base de toutes les pages à laquelle vous allez ajouter vos objets. Par défaut, il s’agit d’une **grille**, mais vous pouvez changer cela.
+Une fois que vous avez déterminé l’aspect que vous voulez donner à la page, choisissez un panneau de disposition. Il s’agit de la structure de base de toutes les pages à laquelle vous allez ajouter vos objets. Par défaut, il s’agit d’une **grille**, mais vous pouvez changer cela.
 
 Si les panneaux de disposition permettent de disposer les objets dans une page, leur fonction ne s'arrête pas là. Ils vous permettent de concevoir pour différentes tailles et résolutions d'écran. Quand les utilisateurs exécutent votre application, tout ce qui figure dans le panneau de disposition est redimensionné pour s'adapter à la taille d'écran de leur appareil. Bien entendu, vous pouvez éviter cela en changeant tout ou partie du comportement de la disposition. Pour ce faire, vous pouvez utiliser les propriétés de hauteur et de largeur.
 
@@ -115,7 +115,7 @@ Permet d'afficher des informations ou des options à l'intention des utilisateur
 
 ### <a name="scrollviewer"></a>Visionneuse de défilement
 
-Permet aux utilisateurs de faire défiler une page ou une de ses zones vers le bas. Sachant que vous ne pouvez ajouter qu’un seul objet à un **ScrollViewer**, il est judicieux d’ajouter un panneau de disposition tel qu’un **Grid** ou un **StackPanel**.
+Permet aux utilisateurs de faire défiler une page ou l’une de ses zones vers le bas. Sachant que vous ne pouvez ajouter qu’un seul objet à un **ScrollViewer**, il est judicieux d’ajouter un panneau de disposition tel qu’un **Grid** ou un **StackPanel**.
 
 ![Contrôle de disposition ScrollViewer](../designers/media/06b326d4-f23d-41a6-b26b-e1aff37572a7.png)
 

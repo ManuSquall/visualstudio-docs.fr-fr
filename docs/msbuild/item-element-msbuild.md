@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b55cadc738fb54b1a7fe07a2d891103c0daa755d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6e33f057f3184a9a9bb19311f7206c6ab273dab8
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576948"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081018"
 ---
 # <a name="item-element-msbuild"></a>Item, élément (MSBuild)
 Contient un élément défini par l'utilisateur et ses métadonnées. Chaque élément utilisé dans un projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doit être spécifié en tant qu'enfant d'un élément `ItemGroup`.  
@@ -34,7 +34,7 @@ Contient un élément défini par l'utilisateur et ses métadonnées. Chaque él
 
 ## <a name="syntax"></a>Syntaxe  
 
-```  
+```xml  
 <Item Include="*.cs"  
         Exclude="MyFile.cs"  
         Remove="RemoveFile.cs"  
@@ -44,7 +44,7 @@ Contient un élément défini par l'utilisateur et ses métadonnées. Chaque él
 </Item>  
 ```  
 
-## <a name="specify-metadata-as-attributes"></a>Spécifier de métadonnées en tant qu’attributs
+## <a name="specify-metadata-as-attributes"></a>Spécifier des métadonnées en tant qu’attributs
 Dans MSBuild version 15.1 ou ultérieure, toutes les métadonnées dont le nom n’entre pas en conflit avec la liste actuelle des attributs peuvent éventuellement être exprimées en tant qu’attribut.
 
 Par exemple, pour spécifier une liste de packages NuGet, vous utiliseriez normalement une syntaxe similaire à la suivante.
@@ -96,9 +96,9 @@ Par exemple, pour spécifier une liste de packages NuGet, vous utiliseriez norma
 ## <a name="remarks"></a>Notes  
  Les éléments `Item` définissent les entrées du système de génération et sont regroupés en collections d'éléments, selon leur nom de collection défini par l'utilisateur. Ces collections d’éléments peuvent être utilisées comme paramètres des [tâches](../msbuild/msbuild-tasks.md), lesquelles utilisent les éléments d’une collection pour exécuter les étapes du processus de génération. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).  
 
- La notation `@(`*monType*`)` permet de développer une collection d’éléments de type *monType* en une liste de chaînes séparées par des points-virgules, et de la transmettre à un paramètre. Si le paramètre est de type `string`, la valeur du paramètre correspond à la liste des éléments séparés par des points-virgules. Si le paramètre est un tableau de chaînes (`string[]`), chaque élément est inséré dans le tableau selon l'emplacement des points-virgules. Si le paramètre de tâche est de type <xref:Microsoft.Build.Framework.ITaskItem>`[]`, la valeur correspond au contenu de la collection d'éléments et à toutes les métadonnées associées. Pour délimiter chaque élément à l’aide d’un caractère autre que le point-virgule, utilisez la syntaxe `@(`*monType*`, '`*séparateur*`')`.  
+ La notation @(\<monType>) permet de développer une collection d’éléments de type \<monType> en une liste de chaînes séparées par des points-virgules, et de la transmettre à un paramètre. Si le paramètre est de type `string`, la valeur du paramètre correspond à la liste des éléments séparés par des points-virgules. Si le paramètre est un tableau de chaînes (`string[]`), chaque élément est inséré dans le tableau selon l'emplacement des points-virgules. Si le paramètre de tâche est de type <xref:Microsoft.Build.Framework.ITaskItem>`[]`, la valeur correspond au contenu de la collection d'éléments et à toutes les métadonnées associées. Pour délimiter chaque élément à l’aide d’un caractère autre que le point-virgule, utilisez la syntaxe @(<myType>, '<separator>').  
 
- Le moteur [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] peut évaluer les caractères génériques tels que `*` et `?`, ainsi que les caractères génériques récursifs comme `/**/*.cs`. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).  
+ Le moteur [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] peut évaluer les caractères génériques tels que `*` et `?`, ainsi que les caractères génériques récursifs comme */\*\*/\*.cs*. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).  
 
 ## <a name="examples"></a>Exemples  
  L'exemple de code suivant montre comment déclarer deux éléments de type `CSFile`. Le second élément déclaré contient les métadonnées dans lesquelles `MyMetadata` a la valeur `HelloWorld`.  
@@ -111,7 +111,7 @@ Par exemple, pour spécifier une liste de packages NuGet, vous utiliseriez norma
     </CSFile>  
 </ItemGroup>  
 ```  
-L’exemple de code suivant montre comment utiliser l’attribut `Update` pour modifier les métadonnées dans un fichier appelé somefile.cs fourni par le biais d’un glob. (Disponible uniquement pour les projets .NET Core dans Visual Studio versions 2017 ou ultérieures).
+L’exemple de code suivant montre comment utiliser l’attribut `Update` pour modifier les métadonnées dans un fichier appelé *somefile.cs* fourni par le biais d’un glob. (Disponible uniquement pour les projets .NET Core dans Visual Studio versions 2017 ou ultérieures).
 
 ```xml  
 <ItemGroup>
@@ -125,4 +125,4 @@ L’exemple de code suivant montre comment utiliser l’attribut `Update` pour m
 ## <a name="see-also"></a>Voir aussi  
  [Éléments](../msbuild/msbuild-items.md)   
  [Propriétés MSBuild](../msbuild/msbuild-properties.md)   
- [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+ [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

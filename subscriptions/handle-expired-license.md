@@ -9,18 +9,17 @@ description: Découvrez comment les administrateurs peuvent gérer les abonnemen
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 8fa500e5909a855884975653417c3e61976f9f01
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 15d2b89d8a43f58302944d64dd9955a40c5c125e
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335617"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325123"
 ---
 # <a name="handling-expired-subscriptions"></a>Gestion des abonnements expirés
 
 Quand l’abonnement d’un utilisateur a expiré, cela est indiqué dans le portail par une barre rouge en regard de son nom, dans la liste d’abonnés. Pour que les abonnés continuent à utiliser les avantages de leur abonnement Visual Studio, vous devez renouveler leurs licences. 
-
-![Liste des abonnements ayant expiré](_img\expired-subscriptions\expired-list.png) 
+    ![Liste des abonnements ayant expiré](_img\expired-subscriptions\expired-list.png)
 
 **Pour renouveler des abonnements**
 1.  Contactez votre revendeur de licence en volume ou votre vendeur Microsoft. 

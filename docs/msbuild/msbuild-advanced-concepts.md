@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da69a99e00c84514b51c958215baf6a87e498f17
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d521dbe0f72ccc5622da37495641349a9ec24a8a
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578820"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077453"
 ---
 # <a name="msbuild-advanced-concepts"></a>Concepts avancés de MSBuild
 Les documents dans cette section décrivent comment utiliser des techniques avancées pour améliorer les builds que vous exécutez à l'aide de MSBuild.  
@@ -28,8 +28,8 @@ Les documents dans cette section décrivent comment utiliser des techniques avan
 |-----------|-----------------|  
 |[Traitement par lots](../msbuild/msbuild-batching.md)|Décrit comment générer en tâche de fond des cibles et des tâches basées sur des métadonnées d’élément.|  
 |[Transformations](../msbuild/msbuild-transforms.md)|Explique comment utiliser des transformations pour activer l'analyse de dépendance.|  
-|[Intégration de Visual Studio (MSBuild)](../msbuild/visual-studio-integration-msbuild.md)|Explique comment utiliser des fichiers projet MSBuild quand vous compilez le code à partir de l'IDE Visual Studio.|  
-|[Génération parallèle de plusieurs projets](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)|Décrit comment générer plusieurs projets plus rapidement sur les ordinateurs dotés de plusieurs processeurs ou de processeurs multicœurs.|  
+|[Intégration Visual Studio](../msbuild/visual-studio-integration-msbuild.md)|Explique comment utiliser des fichiers projet MSBuild quand vous compilez le code à partir de l'IDE Visual Studio.|  
+|[Générer plusieurs projets en parallèle](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)|Décrit comment générer plusieurs projets plus rapidement sur les ordinateurs dotés de plusieurs processeurs ou de processeurs multicœurs.|  
 |[Multiciblage](../msbuild/msbuild-multitargeting-overview.md)|Décrit comment compiler une application pour l'exécuter sur l'une des versions du .NET Framework parmi plusieurs.|  
 |[Bonnes pratiques](../msbuild/msbuild-best-practices.md)|Recommande les meilleures pratiques pour l'écriture de scripts MSBuild.|  
   

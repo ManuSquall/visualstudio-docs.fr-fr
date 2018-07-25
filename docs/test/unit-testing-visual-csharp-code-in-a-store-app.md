@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: b409e3faa44b19cf0018e770915c8a3868f9ead4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5be318dd520cf9d7b5942200f635fa3f726634fc
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979410"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117399"
 ---
 # <a name="unit-testing-visual-c-code"></a>Tests unitaires du code Visual C#
 
@@ -26,7 +26,7 @@ Cette rubrique crée également une solution Visual Studio unique et des projets
 
 ## <a name="create-the-solution-and-the-unit-test-project"></a>Créer la solution et le projet de test unitaire
 
-1. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet...**.
+1. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet**.
 
 2. Dans la boîte de dialogue **Nouveau projet**, développez **Installé** > **Visual C#**, puis choisissez **Windows universel**. Choisissez ensuite **Application vide** dans la liste de modèles de projet.
 
@@ -116,7 +116,7 @@ Cette rubrique crée également une solution Visual Studio unique et des projets
 
 1. Ajoutez une référence de l'application Maths au projet RooterTests.
 
-    1. Dans l’Explorateur de solutions, sélectionnez le projet **RooterTests**, puis **Ajouter une référence...** dans le menu contextuel.
+    1. Dans l’Explorateur de solutions, sélectionnez le projet **RooterTests**, puis **Ajouter une référence** dans le menu contextuel.
 
     2. Dans la boîte de dialogue **Ajouter une référence - RooterTests**, développez **Solution**, puis choisissez **Projets**. Sélectionnez ensuite l’élément **Maths**.
 

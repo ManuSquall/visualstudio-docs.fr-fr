@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 64883c217d700468942b16a9e628adb15f1db746
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 8ff4d56673f4de12189111b47e6a38f4b6a60dab
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750296"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947126"
 ---
-# <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Tutoriel, étape 1 : Prise en main de l’infrastructure web de Django dans Visual Studio
+# <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Tutoriel : Bien démarrer avec le framework web Django dans Visual Studio
 
 [Django](https://www.djangoproject.com/) est un framework Python général conçu pour un développement web rapide, sécurisé et scalable. Ce tutoriel explore l’infrastructure Django dans le contexte des modèles de projet fournis par Visual Studio pour rationaliser la création d’applications web basées sur Django.
 
@@ -207,7 +207,7 @@ Réponse : en plus des commandes de menu **Déboguer** et des boutons de barre 
 > [!div class="nextstepaction"]
 > [Créer une application Django avec des affichages et des modèles de pages ](learn-django-in-visual-studio-step-02-create-an-app.md)
 
-## <a name="going-deeper"></a>Pour aller plus loin
+## <a name="go-deeper"></a>Approfondir la question
 
 - Code de projet Django : [Écrire votre première application Django, 1ère partie](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) (docs.djangoproject.com)
 - Utilitaire d’administration : [django-admin et manage.py](https://docs.djangoproject.com/en/2.0/ref/django-admin/) (docs.djangoproject.com)

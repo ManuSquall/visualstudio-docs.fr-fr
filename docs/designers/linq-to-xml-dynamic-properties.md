@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eab219b0babbb423c10a08f1f9c4888ad70aff12
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: abad2e8966bfc9fc2926c1ca985e1cb5450f1d68
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917774"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978136"
 ---
 # <a name="linq-to-xml-dynamic-properties"></a>Propriétés dynamiques LINQ to XML
 
@@ -39,6 +39,6 @@ Toutes les propriétés dynamiques qui retournent une valeur indexée de type <x
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Liaison de données WPF avec LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md)
+- [Liaison de données WPF avec LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md)
 - [Vue d’ensemble de la liaison de données WPF avec LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml-overview.md)
 - [Introduction aux requêtes LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)

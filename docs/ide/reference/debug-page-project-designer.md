@@ -1,6 +1,6 @@
 ---
 title: Page Déboguer, Concepteur de projets
-ms.date: 11/04/2016
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,75 +15,73 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5288005ad79b0455174292625bde9b5dbe4e584f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2e7bc849a48161fdf1763517f90514dfb464b74e
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947103"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37090021"
 ---
 # <a name="debug-page-project-designer"></a>Page Déboguer, Concepteur de projets
 
+Utilisez la page **Déboguer** du **Concepteur de projets** afin de définir des propriétés pour le comportement de débogage dans un projet Visual Basic ou C#.
+
+Pour accéder à la page **Déboguer**, sélectionnez un nœud de projet dans **l’Explorateur de solutions**. Dans le menu **Projet**, choisissez **\<nom_projet>Propriétés**. Quand le **Concepteur de projets** s’affiche, cliquez sur l’onglet **Déboguer**.
+
 > [!NOTE]
-> Cette rubrique ne s’applique pas aux applications UWP. Consultez [Démarrer une session de débogage (VB, C#, C++ et XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) dans le Centre de développement Windows.
-
- Utilisez la page **Déboguer** du **Concepteur de projets** afin de définir des propriétés pour le comportement de débogage dans un projet Visual Basic ou C#.
-
- Pour accéder à la page **Déboguer**, sélectionnez un nœud de projet dans **l’Explorateur de solutions**. Dans le menu **Projet**, choisissez *NomProjet***Propriétés**. Quand le **Concepteur de projets** s’affiche, cliquez sur l’onglet **Déboguer**.
+> Cette rubrique ne s’applique pas aux applications UWP. Consultez [Démarrer une session de débogage (VB, C#, C++ et XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) pour les applications UWP.
 
 ## <a name="configuration-and-platform"></a>Configuration et Plateforme
- Les options suivantes vous permettent de sélectionner la configuration et la plateforme à afficher ou à modifier.
 
- **Configuration**
+Les options suivantes vous permettent de sélectionner la configuration et la plateforme à afficher ou à modifier.
 
- Spécifie les paramètres de configuration à afficher ou à modifier. Les paramètres peuvent être **Debug** (valeur par défaut), **Release** ou **Toutes les configurations**.
+**Configuration**
 
- **Plateforme**
+Spécifie les paramètres de configuration à afficher ou à modifier. Les paramètres peuvent être **Debug** (valeur par défaut), **Release** ou **Toutes les configurations**.
 
- Spécifie les paramètres de plateforme à afficher ou à modifier. Les choix possibles sont **Any CPU** (valeur par défaut), **x64** et **x86**.
+**Plateforme**
+
+Spécifie les paramètres de plateforme à afficher ou à modifier. Les choix possibles sont **Any CPU** (valeur par défaut), **x64** et **x86**.
 
 ## <a name="start-action"></a>Action de démarrage
- **Action de démarrage** indique à l’élément de démarrer quand l’application est déboguée : le projet, un programme personnalisé, une URL ou rien. Par défaut, la valeur affectée à cette option est **Démarrer le projet**. Le paramètre **Action de démarrage** dans la page **Déboguer** détermine la valeur de la propriété `StartAction`.
 
- **Démarrer le projet**
+**Action de démarrage** indique à l’élément de démarrer quand l’application est déboguée : le projet, un programme personnalisé, une URL ou rien. Par défaut, la valeur affectée à cette option est **Démarrer le projet**. Le paramètre **Action de démarrage** dans la page **Déboguer** détermine la valeur de la propriété `StartAction`.
 
- Sélectionnez cette option pour spécifier que le fichier exécutable (pour les projets d’application Windows et d’application console) doit être démarré quand l’application est déboguée. Cette option est activée par défaut.
+**Démarrer le projet**
 
- **Démarrer le programme externe**
+Sélectionnez cette option pour spécifier que le fichier exécutable (pour les projets d’application Windows et d’application console) doit être démarré quand l’application est déboguée. Cette option est activée par défaut.
 
- Choisissez cette option pour indiquer qu’un programme spécifique doit démarrer quand l’application est déboguée.
+**Démarrer le programme externe**
 
- **Démarrer le navigateur avec l’URL**
+Choisissez cette option pour indiquer qu’un programme spécifique doit démarrer quand l’application est déboguée.
 
- Choisissez cette option pour spécifier qu’une URL particulière doit être accessible quand l’application est déboguée.
+**Démarrer le navigateur avec l’URL**
+
+Choisissez cette option pour spécifier qu’une URL particulière doit être accessible quand l’application est déboguée.
 
 ## <a name="start-options"></a>Options de démarrage
- **Arguments de la ligne de commande**
 
- Dans cette zone de texte, entrez les arguments de la ligne de commande à utiliser pour le débogage.
+**Arguments de la ligne de commande**
 
- **Répertoire de travail**
+Dans cette zone de texte, entrez les arguments de la ligne de commande à utiliser pour le débogage.
 
- Dans cette zone de texte, entrez le répertoire à partir duquel le projet sera lancé. Vous pouvez aussi cliquer sur le bouton Parcourir (**...**) pour sélectionner un répertoire.
+**Répertoire de travail**
 
- **Utiliser l’ordinateur distant**
+Dans cette zone de texte, entrez le répertoire à partir duquel le projet sera lancé. Vous pouvez aussi cliquer sur le bouton Parcourir (**...**) pour sélectionner un répertoire.
 
- Pour déboguer l’application à partir d’un ordinateur distant, cochez cette case, puis entrez le chemin d’accès à l’ordinateur distant dans la zone de texte.
+**Utiliser l’ordinateur distant**
 
-## <a name="enable-debuggers"></a>Activer les débogueurs
- **Activer le débogage de code non managé**
+Pour déboguer l’application à partir d’un ordinateur distant, cochez cette case, puis entrez le chemin d’accès à l’ordinateur distant dans la zone de texte.
 
- Cette option spécifie si le débogage de code natif est pris en charge. Cochez cette case si vous effectuez des appels vers les objets COM ou si vous démarrez un programme personnalisé écrit en code natif qui appelle votre projet et que vous devez déboguer le code natif. Décochez cette case pour désactiver le débogage de code non managé. Elle est désactivée par défaut.
+## <a name="debugger-engines"></a>Moteurs de débogage
 
- **Activer le débogage SQL Server**
+**Activer le débogage du code natif**
 
- Cochez ou décochez cette case pour activer ou désactiver le débogage des procédures SQL de votre application Visual Basic. Elle est désactivée par défaut.
+Cette option spécifie si le débogage de code natif est pris en charge. Cochez cette case si vous effectuez des appels vers les objets COM ou si vous démarrez un programme personnalisé écrit en code natif qui appelle votre projet et que vous devez déboguer le code natif. Décochez cette case pour désactiver le débogage de code non managé. Elle est désactivée par défaut.
 
- **Activer le processus d’hébergement Visual Studio**
+**Activer le débogage SQL Server**
 
- Cochez cette case pour activer le processus d’hébergement Visual Studio. Elle est activée par défaut. Pour plus d’informations, consultez [Processus d’hébergement (vshost.exe)](../../ide/hosting-process-vshost-exe.md).
-
- Pour déboguer dans une zone de sécurité, vous devez activer cette option et **Déboguer cette application à l’aide du jeu d’autorisations sélectionné** dans la [boîte de dialogue Paramètres de sécurité avancés](../../ide/reference/advanced-security-settings-dialog-box.md).
+Cochez ou décochez cette case pour activer ou désactiver le débogage des procédures SQL de votre application Visual Basic. Elle est désactivée par défaut.
 
 ## <a name="see-also"></a>Voir aussi
 

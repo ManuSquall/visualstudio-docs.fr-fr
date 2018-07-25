@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4d6cd0e79f519cd9c1a93e8239fc4c891c50de97
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e7e8989c9c122791fea840f30835be1c090a8972
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750504"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947435"
 ---
-# <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>Étape 2 du tutoriel : créer une application Django avec les affichages et modèles de page
+# <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Étape 2 : Créer une application Django avec des vues et des modèles de pages
 
 **Étape précédente : [créer une solution et un projet Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md)**
 
@@ -50,8 +50,8 @@ Une application Django commence généralement par un ensemble standard de fichi
 
 | Élément | Description |
 | --- | --- |
-| `__init.py__` | Le fichier qui identifie l’application en tant que package. |
-| `migrations` | Un dossier dans lequel Django stocke les scripts qui mettent à jour la base de données pour s’aligner avec les modifications apportées aux modèles. Les outils de migration de Django s’appliquent alors aux modifications nécessaires apportées à toute version précédente de la base de données afin qu’elle corresponde aux modèles actuels. À l’aide des migrations, restez concentré sur vos modèles et laissez Django gérer le schéma de la base de données sous-jacente. Les migrations sont présentées à l’étape 6. Pour l’instant, le dossier contient simplement un fichier `__init.py__` (indiquant que le dossier définit son propre package Python). |
+| `__init__.py` | Le fichier qui identifie l’application en tant que package. |
+| `migrations` | Un dossier dans lequel Django stocke les scripts qui mettent à jour la base de données pour s’aligner avec les modifications apportées aux modèles. Les outils de migration de Django s’appliquent alors aux modifications nécessaires apportées à toute version précédente de la base de données afin qu’elle corresponde aux modèles actuels. À l’aide des migrations, restez concentré sur vos modèles et laissez Django gérer le schéma de la base de données sous-jacente. Les migrations sont présentées à l’étape 6. Pour l’instant, le dossier contient simplement un fichier `__init__.py` (indiquant que le dossier définit son propre package Python). |
 | `templates` | Un dossier pour les modèles de page Django contenant un seul fichier `index.html`. Les modèles sont des blocs de langage HTML dans lesquels les affichages peuvent ajouter des informations pour afficher une page de manière dynamique. Les « variables » du modèle de page, comme `{{ content }}` dans `index.html`, sont des espaces réservés pour des valeurs dynamiques, comme expliqué plus loin dans cet article (étape 2). Les applications Django créent généralement un espace de noms pour les modèles en les plaçant dans un sous-dossier qui correspond au nom de l’application. |
 | `admin.py` | Le fichier Python dans lequel vous développez l’interface administrative de l’application (reportez-vous à l’étape 6), utilisée pour afficher et modifier des données dans une base de données. Au départ, ce fichier contient uniquement l’instruction, `from django.contrib import admin`. Par défaut, Django inclut une interface administrative standard à partir des entrées dans le fichier `settings.py` du projet Django, que vous pouvez activer en supprimant les marques de commentaire des entrées existantes dans `urls.py`. |
 | `apps.py` | Un fichier Python qui définit une classe de configuration de l’application (voir ci-après, après cette table). |
@@ -272,7 +272,7 @@ Réponse : lorsque Django recherche un modèle référencé dans la fonction `r
 > [!div class="nextstepaction"]
 > [Prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)
 
-## <a name="going-deeper"></a>Pour aller plus loin
+## <a name="go-deeper"></a>Approfondir la question
 
 - [Écrire votre première application Django, partie 1 - affichages](https://docs.djangoproject.com/en/2.0/intro/tutorial01/#write-your-first-view) (docs.djangoproject.com)
 - Pour davantage de fonctionnalités avec les modèles Django, tels que fichiers inclus et héritage, consultez [Le langage de gabarit Django](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)

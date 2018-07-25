@@ -14,17 +14,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb8e8ba51f4aaeed0242147d46fd282b95452d91
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b2adfd3d571fe16fcbfe273e5513ebea724403cd
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576805"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080686"
 ---
-# <a name="how-to-exclude-files-from-the-build"></a>Comment : exclure des fichiers de la build
+# <a name="how-to-exclude-files-from-the-build"></a>Guide pratique pour exclure des fichiers de la build
 Dans un fichier projet, vous pouvez utiliser des caractères génériques pour inclure tous les fichiers d’un répertoire ou un ensemble imbriqué de répertoires comme des entrées d’une génération. Toutefois, il se peut que vous ne souhaitiez pas inclure un fichier du répertoire ou un répertoire d’un ensemble imbriqué de répertoires comme entrée d’une génération. Vous pouvez explicitement exclure ce fichier ou ce répertoire de la liste d’entrées. Il peut également s’agir d’un fichier d’un projet que vous ne souhaitez inclure que dans certaines conditions. Vous pouvez déclarer explicitement les conditions dans lesquelles un fichier est inclus dans une génération.  
   
-## <a name="excluding-a-file-or-directory-from-the-inputs-for-a-build"></a>Exclusion d’un fichier ou d’un répertoire des entrées d’une génération  
+## <a name="exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Exclure un fichier ou un répertoire des entrées d’une build  
  Les listes d’éléments constituent les fichiers d’entrée d’une génération. Les éléments que vous souhaitez inclure sont déclarés séparément ou en tant que groupe à l’aide de l’attribut `Include`. Exemple :  
   
 ```xml  
@@ -36,7 +36,7 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
   
  Si vous avez utilisé des caractères génériques pour inclure tous les fichiers d’un répertoire ou un ensemble imbriqué de répertoires comme entrées d’une génération, il se peut que vous ne vouliez pas inclure un ou plusieurs fichiers du répertoire ou un répertoire de l’ensemble imbriqué des répertoires. Pour exclure un élément de la liste d’éléments, utilisez l’attribut `Exclude`.  
   
-#### <a name="to-include-all-cs-or-vb-files-except-form2"></a>Pour inclure tous les fichiers .cs ou .vb à l’exception de Form2  
+#### <a name="to-include-all-cs-or-vb-files-except-form2"></a>Pour inclure tous les fichiers *.cs* ou *.vb* à l’exception de *Form2*  
   
 -   Utilisez l’un des attributs `Include` et `Exclude` suivants :  
   
@@ -44,13 +44,13 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
     <CSFile Include="*.cs" Exclude="Form2.cs"/>  
     ```  
   
-     - ou  
+    ou
   
     ```xml  
     <VBFile Include="*.vb" Exclude="Form2.vb"/>  
     ```  
   
-#### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>Pour inclure tous les fichiers .cs ou .vb à l’exception de Form2 et de Form3  
+#### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>Pour inclure tous les fichiers *.cs* ou *.vb* à l’exception de *Form2* et *Form3*  
   
 -   Utilisez l’un des attributs `Include` et `Exclude` suivants :  
   
@@ -58,13 +58,13 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>  
     ```  
   
-     - ou  
+    ou
   
     ```xml  
     <VBFile Include="*.vb" Exclude="Form2.vb;Form3.vb"/>  
     ```  
   
-#### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Pour inclure tous les fichiers .jpg des sous-répertoires du répertoire Images, à l’exception de ceux du répertoire Version2  
+#### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Pour inclure tous les fichiers *.jpg* des sous-répertoires du répertoire *Images*, à l’exception de ceux du répertoire *Version2*  
   
 -   Utilisez les attributs `Include` et `Exclude` suivants :  
   
@@ -77,10 +77,10 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
     > [!NOTE]
     >  Vous devez spécifier le chemin d’accès pour les deux attributs. Si vous utilisez un chemin d’accès absolu pour spécifier les emplacements des fichiers dans l’attribut `Include`, vous devez également utiliser un chemin d’accès absolu dans l’attribut `Exclude` ; si vous utilisez un chemin d’accès relatif dans l’attribut `Include`, vous devez également utiliser un chemin d’accès relatif dans l’attribut `Exclude`.  
   
-## <a name="using-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Utilisation de conditions pour exclure un fichier ou un répertoire des entrées d’une génération  
+## <a name="use-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Utiliser des conditions pour exclure un fichier ou un répertoire des entrées d’une build  
  Si vous souhaitez inclure des éléments, par exemple, dans une version Debug, mais pas dans une version Release, vous pouvez utiliser l’attribut `Condition` pour spécifier les conditions dans lesquelles inclure l’élément.  
   
-#### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>Pour inclure le fichier Formula.vb uniquement dans les versions Release  
+#### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>Pour inclure le fichier *Formula.vb* uniquement dans les versions Release  
   
 -   Utilisez un attribut `Condition` semblable à ce qui suit :  
   
@@ -91,7 +91,7 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
     ```  
   
 ## <a name="example"></a>Exemple  
- L’exemple de code suivant génère un projet avec l’ensemble des fichiers .cs du répertoire à l’exception du fichier Form2.cs.  
+ L’exemple de code suivant génère un projet avec l’ensemble des fichiers *.cs* du répertoire à l’exception du fichier *Form2.cs*.  
   
 ```xml  
 <Project DefaultTargets="Compile"  
@@ -126,4 +126,5 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
   
 ## <a name="see-also"></a>Voir aussi  
  [Éléments](../msbuild/msbuild-items.md)   
- [MSBuild](../msbuild/msbuild.md) [Guide pratique pour sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md)
+ [MSBuild](../msbuild/msbuild.md)   
+ [Guide pratique pour sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md)   

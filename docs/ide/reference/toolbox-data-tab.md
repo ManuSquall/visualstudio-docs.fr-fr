@@ -14,22 +14,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7deb9fef0ee50ecd202cc711566795932a9f51b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1af6ac0f9a382a91d2c87e5cb84053b8b51bf961
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949709"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089670"
 ---
 # <a name="toolbox-data-tab"></a>Boîte à outils, onglet Données
+
 Affiche des objets de données que vous pouvez ajouter à un formulaire et à des composants. L’onglet **Données** de la **boîte à outils** apparaît quand vous créez un projet associé à un concepteur. La **boîte à outils** apparaît par défaut dans l’environnement de développement intégré Visual Studio ; si vous devez afficher la **boîte à outils**, sélectionnez **Boîte à outils** dans le menu **Affichage**.
 
 > [!TIP]
 > L’exécution de l’Assistant Configuration de source de données crée et configure automatiquement la plupart des éléments de données. Pour plus d’informations, consultez [Ajouter de nouvelles sources de données](../../data-tools/add-new-data-sources.md).
 
-
 ## <a name="ui-element-list"></a>Liste des éléments de l'interface utilisateur
- Pour accéder directement à la page de référence .NET Framework d’un composant, appuyez sur **F1** avec le pointeur placé sur l’élément dans la **boîte à outils** ou sur le composant dans la barre d’état du concepteur.
+
+Pour accéder directement à la page de référence .NET Framework d’un composant, appuyez sur **F1** avec le pointeur placé sur l’élément dans la **boîte à outils** ou sur le composant dans la barre d’état du concepteur.
 
 |Name|Description|
 |----------|-----------------|
@@ -40,11 +41,10 @@ Affiche des objets de données que vous pouvez ajouter à un formulaire et à de
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Accès aux données dans Visual Studio](../../data-tools/accessing-data-in-visual-studio.md)
+- [Accéder aux données dans Visual Studio](../../data-tools/accessing-data-in-visual-studio.md)
 - [Outils de données Visual Studio pour .NET](../../data-tools/visual-studio-data-tools-for-dotnet.md)
 - [Outils de dataset dans Visual Studio](../../data-tools/dataset-tools-in-visual-studio.md)
 - [Lier des contrôles à des données dans Visual Studio](../../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Lier des contrôles Windows Forms à des données dans Visual Studio](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Modifier des données dans des datasets](../../data-tools/edit-data-in-datasets.md)
 - [Valider les données dans des datasets](../../data-tools/validate-data-in-datasets.md)
-- [Enregistrer des données](../../data-tools/saving-data.md)

@@ -19,12 +19,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: a054ba07596135b08260ded028f07701fce9196d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2d41a5a3995c9c93f17f090e5befc10a0bd544c3
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924470"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117210"
 ---
 # <a name="code-snippets"></a>Extraits de code
 
@@ -36,9 +36,9 @@ Les extraits de code sont disponibles dans de nombreux langages : C#, C++, Visua
 
 Pour accéder aux extraits de code, plusieurs méthodes générales s’offrent à vous :
 
-- Dans la barre de menus, choisissez **Edition** > **IntelliSense** > **Insérer un extrait...**
+- Dans la barre de menus, choisissez **Edition** > **IntelliSense** > **Insérer un extrait**.
 
-- Dans le menu contextuel (clic droit) de l’éditeur de code, choisissez **Extrait** > **Insérer un extrait...**
+- Dans le menu contextuel (clic droit) de l’éditeur de code, choisissez **Extrait** > **Insérer un extrait**.
 
 - Si vous préférez utiliser le clavier, appuyez sur **Ctrl**+**K**+**X**.
 
@@ -74,7 +74,7 @@ if (true)
 
 Les extraits de code peuvent contenir des paramètres de remplacement, qui sont des espaces réservés que vous devez remplacer en fonction du code précis que vous écrivez. Dans l'exemple précédent, `true` est un paramètre de remplacement, que vous pouvez remplacer par la condition appropriée. Cette condition que vous apportez est répétée pour chaque instance du même paramètre de remplacement dans l'extrait de code.
 
-Par exemple, en Visual Basic, un extrait de code insère une propriété. Pour insérer l’extrait de code, choisissez **Extrait de code...** > **Insérer un extrait** à partir du menu contextuel (clic droit) d’un fichier de code Visual Basic. Ensuite, choisissez **Modèles de code** > **Propriétés, procédures, événements** > **Définir une propriété**.
+Par exemple, en Visual Basic, il existe un extrait de code qui insère une propriété. Pour insérer l’extrait de code, choisissez **Extrait de code** > **Insérer un extrait** dans le menu contextuel (clic droit) d’un fichier de code Visual Basic. Ensuite, choisissez **Modèles de code** > **Propriétés, procédures, événements** > **Définir une propriété**.
 
 ![Menu Extrait de code pour Définir une propriété](media/code-snippets-vb-property.png)
 

@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e0430b398fa13d565de075d1f74e856587a2762
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 04c3eb73949ab84548c6eb58e7cf4389dbeb8fc4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749282"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179058"
 ---
 # <a name="step-2-run-your-program"></a>Étape 2 : exécuter votre programme
 Lorsque vous avez créé une solution, vous avez en fait généré un programme qui fonctionne. Pour le moment, le programme offre peu de fonctionnalités : il affiche simplement une fenêtre vide avec la barre de titre **Form1**. Mais il fonctionne réellement, comme vous allez le découvrir.
@@ -55,7 +55,7 @@ Barre d’outils **Débogage**
     -   Choisissez le bouton **X** dans l’angle supérieur de la fenêtre **Form1**.
 
     > [!NOTE]
-    >  Lorsque vous exécutez votre programme dans l’IDE, vous effectuez un débogage, car vous le faites généralement pour rechercher et résoudre des bogues (erreurs) dans le programme. Bien que ce programme soit petit et ne fasse pas encore grand chose, il n'en reste pas moins un programme. Vous suivez la même procédure pour exécuter et déboguer d'autres programmes. Pour en savoir plus sur le débogage, consultez [Principes de base du débogueur](../debugger/debugger-basics.md).
+    >  Lorsque vous exécutez votre programme dans l’IDE, vous effectuez un débogage, car vous le faites généralement pour rechercher et résoudre des bogues (erreurs) dans le programme. Bien que ce programme soit petit et ne fasse pas encore grand chose, il n'en reste pas moins un programme. Vous suivez la même procédure pour exécuter et déboguer d'autres programmes. Pour en savoir plus sur le débogage, consultez [Principes de base du débogueur](../debugger/getting-started-with-the-debugger.md).
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 

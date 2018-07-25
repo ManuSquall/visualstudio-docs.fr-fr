@@ -1,5 +1,5 @@
 ---
-title: Working with elements in XAML Designer
+title: Utilisation des éléments dans le Concepteur XAML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 676c8767691610349cc2eee4c09970318feda9f5
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 02d3a9dfa6496b30e7438e53754f6d3d1720e6df
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34269188"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078925"
 ---
-# <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
+# <a name="working-with-elements-in-xaml-designer"></a>Utilisation des éléments dans le Concepteur XAML
 Vous pouvez ajouter des éléments (contrôles, dispositions et formes) à votre application en XAML, dans le code ou à l'aide du concepteur XAML. Cette rubrique décrit comment utiliser des éléments dans le concepteur XAML dans Visual Studio ou Blend pour Visual Studio.
 
 ## <a name="adding-an-element-to-a-layout"></a>Ajout d'un élément à une disposition
@@ -29,7 +29,7 @@ Vous pouvez ajouter des éléments (contrôles, dispositions et formes) à votre
 
 -   Dans le concepteur XAML, effectuez l'une des opérations suivantes :
 
-    -   Double-cliquez sur un élément dans la **boîte à outils** (ou sélectionnez un élément dans la boîte à outils et appuyez sur Entrée).
+    -   Double-cliquez sur un élément dans la **Boîte à outils** (ou sélectionnez un élément dans la boîte à outils et appuyez sur **Entrée**).
 
     -   Faites glisser un élément depuis la **boîte à outils** vers la planche graphique.
 
@@ -63,7 +63,7 @@ Vous pouvez ajouter des éléments (contrôles, dispositions et formes) à votre
 
 #### <a name="to-align-two-or-more-elements-by-using-menu-commands"></a>Pour aligner deux ou plusieurs éléments à l'aide de commandes de menu
 
-1.  Sélectionnez les éléments que vous voulez aligner. Pour sélectionner plusieurs éléments, appuyez sur la touche Ctrl, puis tout en la maintenant enfoncée, sélectionnez les éléments.
+1.  Sélectionnez les éléments que vous voulez aligner. Pour sélectionner plusieurs éléments, maintenez enfoncée la touche **Ctrl** et sélectionnez les éléments.
 
 2.  Sélectionnez l’une des propriétés suivantes sous **HorizontalAlignment** dans la section **Disposition** de la fenêtre Propriétés : **Gauche**, **Centre**, **Droite** ou **Étirer**.
 
@@ -100,7 +100,7 @@ Vous pouvez ajouter des éléments (contrôles, dispositions et formes) à votre
 
 #### <a name="to-group-elements-into-a-new-layout-container"></a>Pour regrouper des éléments dans un nouveau conteneur de disposition
 
-1.  Sélectionnez les éléments que vous voulez regrouper. (Pour sélectionner plusieurs éléments, appuyez sur la touche Ctrl puis, tout en la maintenant enfoncée, cliquez sur les éléments.)
+1.  Sélectionnez les éléments que vous voulez regrouper. (Pour sélectionner plusieurs éléments, maintenez enfoncée la touche **Ctrl** et cliquez sur les éléments.)
 
 2.  Cliquez avec le bouton droit sur les éléments sélectionnés, pointez sur **Grouper**, puis cliquez sur le type de conteneur de disposition dans lequel vous souhaitez que le groupe réside.
 
@@ -118,7 +118,7 @@ Vous pouvez ajouter des éléments (contrôles, dispositions et formes) à votre
 
 #### <a name="to-reset-the-element-layout"></a>Pour réinitialiser la disposition des éléments
 
--   Dans la fenêtre Structure du document ou la planche graphique, cliquez avec le bouton droit sur l’élément, choisissez **Disposition**, **Réinitialiser** *nom_propriété*, où *nom_propriété* est la propriété à réinitialiser (ou choisissez **Disposition**, **Réinitialiser tout** pour réinitialiser toutes les propriétés de disposition de l’élément).
+-   Dans la fenêtre Structure du document ou la planche graphique, cliquez avec le bouton droit sur l’élément, choisissez **Disposition** > **Réinitialiser** *nom_propriété*, où *nom_propriété* est la propriété à réinitialiser (ou choisissez **Disposition** > **Réinitialiser tout** pour réinitialiser toutes les propriétés de disposition de l’élément).
 
 ## <a name="see-also"></a>Voir aussi
 

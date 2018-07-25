@@ -1,7 +1,7 @@
 ---
 title: 'Utilisation du didacticiel Python - Étape 1 : Création d’un projet'
 description: Vue d’ensemble et étape 1 d’une procédure pas à pas portant sur les fonctionnalités de Python dans Visual Studio qui présente les conditions préalables et explique comment créer un projet Python.
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4c7c4f0174b81c8f527c02da951c7e58de8752ec
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: c1c9941c59fb02ecd1332250cb3ac3ca73a67144
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031707"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057009"
 ---
-# <a name="working-with-python-in-visual-studio"></a>Utilisation de Python dans Visual Studio
+# <a name="tutorial-work-with-python-in-visual-studio"></a>Tutoriel : Utiliser Python dans Visual Studio
 
 Python est un langage de programmation très apprécié, car il est fiable, souple, simple d’emploi et utilisable sur tous les systèmes d’exploitation. Il est soutenu à la fois par une solide communauté de développeurs et par de nombreuses bibliothèques gratuites. Le langage prend en charge toutes les méthodes de développement, notamment les applications Web, les services web, les applications pour poste de travail, les scripts et le calcul scientifique, et il est utilisé par une multitude d’universités, de scientifiques et de développeurs, aussi bien occasionnels que professionnels.
 
@@ -73,7 +73,7 @@ Dans ce didacticiel, vous commencez avec un projet simple contenant un seul fich
 > [!div class="nextstepaction"]
 > [Écriture et exécution de code](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
 
-## <a name="going-deeper"></a>Pour aller plus loin
+## <a name="go-deeper"></a>Approfondir la question
 
 - [Projets Python dans Visual Studio](managing-python-projects-in-visual-studio.md).
 - [En savoir plus sur le langage Python sur python.org](https://www.python.org)

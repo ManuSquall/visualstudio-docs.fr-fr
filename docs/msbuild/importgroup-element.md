@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe1ef9e06c7e14ecb28fff9ceb48b2243a129e68
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 184c7ee5fc5155b532243c51f85d8b5420892925
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569239"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079238"
 ---
-# <a name="importgroup-element"></a>Élément ImportGroup
+# <a name="importgroup-element"></a>ImportGroup, élément
 Contient une collection d’éléments `Import` regroupés sous une condition facultative. Pour plus d’informations, consultez [Import, élément (MSBuild)](../msbuild/import-element-msbuild.md).  
 
  \<Project>  
@@ -33,7 +33,7 @@ Contient une collection d’éléments `Import` regroupés sous une condition fa
 
 ## <a name="syntax"></a>Syntaxe  
 
-```  
+```xml  
 <ImportGroup Condition="'String A' == 'String B'">  
     <Import ... />  
     <Import ... />  
@@ -61,8 +61,6 @@ Contient une collection d’éléments `Import` regroupés sous une condition fa
 |-------------|-----------------|  
 |[Projet](../msbuild/project-element-msbuild.md)|Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .|  
 
-## <a name="remarks"></a>Notes  
-
 ## <a name="example"></a>Exemple  
  L’exemple de code suivant illustre l’élément `ImportGroup`.  
 
@@ -77,5 +75,5 @@ Contient une collection d’éléments `Import` regroupés sous une condition fa
 ```  
 
 ## <a name="see-also"></a>Voir aussi  
- [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)   
+ [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)   
  [Éléments](../msbuild/msbuild-items.md)

@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd9f7601a7e2a24ec41a12d194aac65445c6d159
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ae99e144e2eb96d898df157c263348cdccc7ecde
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924325"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978188"
 ---
 # <a name="l2dbformxaml-source-code"></a>Code source L2DBForm.xaml
 
-Cette rubrique contient et décrit le fichier source XAML pour [WPF Data Binding Using LINQ to XML Example](../designers/wpf-data-binding-using-linq-to-xml-example.md), L2DBForm.xaml.
+Cette rubrique contient et décrit le fichier source XAML pour l’[Exemple de liaison de données WPF à l’aide de LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md), *L2DBForm.xaml*.
 
-## <a name="overall-ui-structure"></a>Structure globale d'interface utilisateur
+## <a name="overall-ui-structure"></a>Structure globale d’interface utilisateur
 
 Comme c'est généralement le cas pour un projet WPF, ce fichier contient un élément parent, un élément XML <xref:System.Windows.Window> associé à la classe dérivée `L2XDBFrom` dans l'espace de noms `LinqToXmlDataBinding` .
 
@@ -37,7 +37,7 @@ La balise `<ObjectDataProvider>` , qui s'étend de la ligne 11 à la ligne 25, d
 
 Pour finir, un objet <xref:System.Windows.DataTemplate> nommé `BookTemplate` est défini sur les lignes 28 à 34. Ce modèle est utilisé pour afficher les entrées dans la section **Book List** de l’interface utilisateur. Il utilise les propriétés dynamiques LINQ to XML et de liaison de données pour récupérer l'ID de livre et le nom de livre par le biais des affectations suivantes :
 
-```
+```xaml
 Text="{Binding Path=Attribute[id].Value}"Text="{Binding Path=Value}"
 ```
 
@@ -47,25 +47,25 @@ En plus de l'élément <xref:System.Windows.DataTemplate> , la liaison de donné
 
 Dans la balise `<StackPanel>` d'ouverture sur la ligne 38, le fournisseur de données <xref:System.Windows.FrameworkElement.DataContext%2A> est affecté à la propriété `LoadedBooks` de ce volet.
 
-```
+```xaml
 DataContext="{Binding Source={StaticResource LoadedBooks}}
 ```
 
 La définition du contexte des données permet (sur la ligne 46) à l’objet <xref:System.Windows.Controls.TextBlock> nommé `tbRawXml` d’afficher le code XML brut en effectuant la liaison à la propriété `Xml` de ce fournisseur de données :
 
-```
+```xaml
 Text="{Binding Path=Xml}"
 ```
 
 L'objet <xref:System.Windows.Controls.ListBox> dans la section d'interface utilisateur **Book List** , sur les lignes 58 à 62, définit le modèle pour ses éléments d'affichage au `BookTemplate` défini dans la section de ressources de fenêtre :
 
-```
+```xaml
 ItemTemplate ="{StaticResource BookTemplate}"
 ```
 
 Ensuite, sur les lignes 59 à 62, les valeurs réelles des livres sont liées à cette zone de texte :
 
-```
+```xaml
 <ListBox.ItemsSource>
     <Binding Path="Elements[{http://www.mybooks.com}book]"/>
 </ListBox.ItemsSource>
@@ -73,13 +73,13 @@ Ensuite, sur les lignes 59 à 62, les valeurs réelles des livres sont liées à
 
 La troisième section d'interface utilisateur, **Edit Selected Book**, lie d'abord la propriété <xref:System.Windows.FrameworkElement.DataContext%2A> de l'objet <xref:System.Windows.Controls.StackPanel> parent à l'élément actuellement sélectionné dans la section d'interface utilisateur **Book List** (ligne 82) :
 
-```
+```xaml
 DataContext="{Binding ElementName=lbBooks, Path=SelectedItem}"
 ```
 
 Elle utilise ensuite la liaison de données bidirectionnelle, de sorte que les valeurs actuelles des éléments de livre soient affichées dans et mises à jour à partir des deux zones de texte de ce volet. La liaison de données aux propriétés dynamiques est similaire à celle utilisée dans le modèle de données `BookTemplate` :
 
-```
+```xaml
 Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ```
 
@@ -243,7 +243,7 @@ La dernière section de l’interface utilisateur, **Add New Book**, n’utilise
 
 ### <a name="comments"></a>Commentaires
 
-Pour obtenir le code source C# pour les gestionnaires d’événements associés aux éléments d’interface utilisateur WPF, consultez [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md).
+Pour obtenir le code source C# pour les gestionnaires d’événements associés aux éléments d’interface utilisateur WPF, consultez [Code source L2DBForm.xaml.cs](../designers/l2dbform-xaml-cs-source-code.md).
 
 ## <a name="see-also"></a>Voir aussi
 
