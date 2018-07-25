@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e2daf2b92073db6b2c9eca9b1ea482142eb3ba4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2ce4fb6b9a57db78e3dbb7f3082a87df9ffb7360
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254691"
 ---
 # <a name="performance-session-properties"></a>Propriétés d’une session de performance
 
@@ -37,9 +38,9 @@ Pour plus d'informations, voir :
 
 [Guide pratique pour choisir des méthodes de collecte](../profiling/how-to-choose-collection-methods.md)
 
-[Collecte des données liées à la durée de vie des objets et à l’allocation de mémoire .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
+[Collecter les données liées à l’allocation et à la durée de vie de la mémoire .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
- [Guide pratique pour définir les options de nom de fichier de données de profilage](../profiling/how-to-set-performance-data-file-name-options.md)
+ [Guide pratique pour définir les options de nom de fichier des données de performance](../profiling/how-to-set-performance-data-file-name-options.md)
 
 ## <a name="launch"></a>Lancer
 
@@ -60,7 +61,7 @@ Ces paramètres vous permettent de sélectionner l’événement d’échantillo
 Pour plus d’informations, consultez [Guide pratique pour choisir des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md).
 
 ## <a name="binary"></a>Binaire
-Ces paramètres vous permettent de spécifier si vous souhaitez déplacer le fichier binaire instrumenté vers un autre emplacement. Par exemple, si vous profilez My.DLL et que vous choisissez de ne pas déplacer le fichier binaire instrumenté, une copie de sauvegarde de My.DLL nommée My.Orig.DLL est créée. Ensuite, My.DLL est modifié en insérant des sondes pour collecter des données. Si vous déplacez le fichier binaire instrumenté, le fichier binaire d’origine n’est pas renommé et le fichier binaire instrumenté est copié dans l’emplacement spécifié pour être utilisé pendant l’instrumentation.
+Ces paramètres vous permettent de spécifier si vous souhaitez déplacer le fichier binaire instrumenté vers un autre emplacement. Par exemple, si vous profilez *My.DLL* et que vous choisissez de ne pas déplacer le fichier binaire instrumenté, une copie de sauvegarde de *My.DLL* nommée *My.Orig.DLL* est créée. Ensuite, *My.DLL* est modifié en insérant des sondes pour collecter des données. Si vous déplacez le fichier binaire instrumenté, le fichier binaire d’origine n’est pas renommé et le fichier binaire instrumenté est copié dans l’emplacement spécifié pour être utilisé pendant l’instrumentation.
 
 Pour plus d’informations, consultez [Guide pratique pour spécifier le fichier binaire à démarrer](../profiling/how-to-specify-the-binary-to-start.md).
 
@@ -82,11 +83,11 @@ Pour plus d'informations, voir :
 
 Ces paramètres vous permettent de collecter des données à propos des compteurs de performance de l’UC quand vous utilisez l’instrumentation comme méthode de profilage. Les compteurs de performance portables sont disponibles indépendamment de la conception ou du fabricant de l’UC. Les événements de plateforme sont spécifiques à la conception et au fabricant de l’UC. Pour plus d’informations sur les compteurs de performance de processeur, consultez la documentation spécifique au processeur.
 
-Pour plus d’informations, consultez [Guide pratique pour collecter les données des compteurs UC](../profiling/how-to-collect-cpu-counter-data.md).
+Pour plus d’informations, consultez [Guide pratique pour collecter les données des compteurs UC](../profiling/how-to-collect-cpu-counter-data.md).
 
 ## <a name="windows-events"></a>Événements Windows
 
-Pendant le profilage, vous pouvez collecter des données à partir de fournisseurs de suivi d’événements. Vous pouvez afficher les données à l’aide de l’option `/calltrace` de l’outil en ligne de commande VSPerfReport.exe. Pour plus d’informations sur le suivi d’événements pour Windows (ETW), consultez [À propos du suivi d’événements](http://go.microsoft.com/fwlink/?linkid=90752).
+Pendant le profilage, vous pouvez collecter des données à partir de fournisseurs de suivi d’événements. Vous pouvez afficher les données à l’aide de l’option `/calltrace` de l’outil en ligne de commande *VSPerfReport.exe*. Pour plus d’informations sur le suivi d’événements pour Windows (ETW), consultez [À propos du suivi d’événements](http://go.microsoft.com/fwlink/?linkid=90752).
 
 Pour plus d'informations, voir :
 
@@ -113,5 +114,5 @@ Pour plus d'informations, voir :
 ## <a name="see-also"></a>Voir aussi
 
 [Vues d’ensemble](../profiling/overviews-performance-tools.md)  
-[Configuration de sessions de performances](../profiling/configuring-performance-sessions.md)  
-[Contrôle de la collecte de données](../profiling/controlling-data-collection.md)
+[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)  
+[Contrôler la collecte des données](../profiling/controlling-data-collection.md)

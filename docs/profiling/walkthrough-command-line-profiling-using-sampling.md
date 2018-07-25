@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc5a4c5774a4290d8811026d4c522e4d9e972e4e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: db4b47582d03a7f040850dd69e61d5fee2b80020
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572151"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815254"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Procédure pas à pas : profilage de la ligne de commande à l’aide de l’échantillonnage
 
@@ -43,7 +43,7 @@ Dans cette procédure pas à pas, vous allez suivre les étapes suivantes :
 L’échantillonnage est une méthode de profilage par laquelle un processus spécifique est périodiquement interrogé pour déterminer la fonction active. Les données résultantes fournissent le nombre de fois que la fonction était sur la pile des appels quand le processus a été échantillonné.
 
 > [!NOTE]
-> Les outils en ligne de commande des Outils de profilage se trouvent dans le sous-répertoire *\Team Tools\Performance Tools* du répertoire d’installation de Visual Studio. Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande. Pour plus d’informations, consultez [Spécification du chemin d’accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). PeopleTrax est une application 32 bits.
+> Les outils en ligne de commande des Outils de profilage se trouvent dans le sous-répertoire *\Team Tools\Performance Tools* du répertoire d’installation de Visual Studio. Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande. Pour plus d’informations, consultez [Spécifier le chemin d’accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). PeopleTrax est une application 32 bits.
 
 ### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>Pour profiler l’application PeopleTrax à l’aide de la méthode d’échantillonnage
 

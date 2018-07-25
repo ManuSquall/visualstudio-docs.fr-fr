@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 075a81dc81bb202be913f5a06e8213a8a68a010f
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: e638d9316b46a8600fe2e88ca5e4a6611fa1ec4d
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843833"
 ---
 # <a name="markerseries-class"></a>marker_series, classe
 Représente un canal série d’événements générés par un fournisseur unique.  
@@ -38,7 +39,7 @@ class marker_series;
 |[marker_series::marker_series, constructeur](../profiling/marker-series-marker-series-constructor.md)|Initialise une nouvelle instance de la classe `marker_series`.|  
 |[marker_series::~marker_series, destructeur](../profiling/marker-series-tilde-marker-series-destructor.md)|Détruit l’objet marker_series et libère toutes les ressources allouées.|  
   
-### <a name="public-methods"></a>M&#233;thodes publiques  
+### <a name="public-methods"></a>Méthodes publiques  
   
 |Name|Description|  
 |----------|-----------------|  
@@ -47,11 +48,11 @@ class marker_series;
 |[marker_series::write_flag, méthode](../profiling/marker-series-write-flag-method.md)|Écrit un indicateur dans le fichier de trace du visualiseur concurrentiel.|  
 |[marker_series::write_message, méthode](../profiling/marker-series-write-message-method.md)|Écrit un message dans le fichier de trace du visualiseur concurrentiel.|  
   
-## <a name="inheritance-hierarchy"></a>Hiérarchie d'héritage  
+## <a name="inheritance-hierarchy"></a>Hiérarchie d’héritage  
  `marker_series`  
   
 ## <a name="requirements"></a>Configuration requise  
- **En-tête** : cvmarkersobj.h  
+ **En-tête :** *cvmarkersobj.h*  
   
  **Espace de noms** : Concurrency::diagnostic  
   

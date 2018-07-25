@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 86e8a11f55edd2f7a04498b81ec6b8713876f718
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4924f38bf893bc17a599802d9962d664da01c26d
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254522"
 ---
 # <a name="process-view"></a>Vue Processus
 La vue Processus affiche les données de profilage pour les processus et les threads exécutés pendant l’exécution du profilage.  
@@ -44,4 +45,4 @@ La vue Processus affiche les données de profilage pour les processus et les thr
 ## <a name="see-also"></a>Voir aussi  
  [Vues de données de la méthode d’échantillonnage](../profiling/profiler-sampling-method-data-views.md)   
  [Vues de données de la méthode d’instrumentation](../profiling/instrumentation-method-data-views.md)   
- [Vues de données de mémoire .NET](../profiling/dotnet-memory-data-views.md)
+ [Vues des données de la mémoire .NET](../profiling/dotnet-memory-data-views.md)

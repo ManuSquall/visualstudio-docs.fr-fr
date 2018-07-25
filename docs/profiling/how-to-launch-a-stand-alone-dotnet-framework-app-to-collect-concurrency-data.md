@@ -10,23 +10,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5cece8a5b97f3a9c78bdda8c5e841661d2b4d58d
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 8a44fd95ec8561df7de0970ac81446757f122121
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335578"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815716"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Guide pratique pour lancer une application .NET Framework autonome avec le profileur pour collecter des données d’accès concurrentiel en utilisant la ligne de commande
 Cette rubrique explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour démarrer une application .NET Framework autonome (cliente) et pour collecter des données de concurrence de processus et de threads  
   
 > [!NOTE]
->  Les outils en ligne de commande des outils de profilage se trouvent dans le sous-répertoire \Team Tools\Performance Tools du répertoire d’installation de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes ou bien l’ajouter à la commande elle-même. Pour plus d’informations, consultez [Spécifier le chemin d’accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Les outils en ligne de commande des Outils de profilage se trouvent dans le sous-répertoire *\Team Tools\Performance Tools* du répertoire d’installation de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes ou bien l’ajouter à la commande elle-même. Pour plus d’informations, consultez [Spécifier le chemin d’accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
  Lorsque le profileur est attaché à l’application, vous pouvez suspendre et reprendre la collecte de données. Pour terminer une session de profilage, le profileur ne doit plus être attaché à l’application et doit être arrêté explicitement.  
   
 ## <a name="start-the-application-with-the-profiler"></a>Démarrer l’application avec le profileur  
- Pour lancer une application cible .NET Framework avec le profileur, vous utilisez VSPerfClrEnv.exe pour définir les variables de profilage .NET Framework. Vous utilisez ensuite les options **/start** et **/launch** de VSPerfCmd pour initialiser le profileur et démarrer l’application. Vous pouvez spécifier **/start** et **/launch** et leurs options respectives sur une même ligne de commande. Vous pouvez également ajouter l’option **/globaloff** à la ligne de commande pour suspendre la collecte des données au démarrage de l’application cible. Vous utilisez ensuite **/globalon** sur une ligne de commande séparée pour commencer à collecter les données.  
+ Pour lancer une application cible .NET Framework avec le profileur, utilisez *VSPerfClrEnv.exe* pour définir les variables de profilage .NET Framework. Vous utilisez ensuite les options **/start** et **/launch** de VSPerfCmd pour initialiser le profileur et démarrer l’application. Vous pouvez spécifier **/start** et **/launch** et leurs options respectives sur une même ligne de commande. Vous pouvez également ajouter l’option **/globaloff** à la ligne de commande pour suspendre la collecte des données au démarrage de l’application cible. Vous utilisez ensuite **/globalon** sur une ligne de commande séparée pour commencer à collecter les données.  
   
 #### <a name="to-start-an-application-with-the-profiler"></a>Pour démarrer une application à l’aide du profileur  
   
@@ -54,7 +54,7 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
     |[/crosssession](../profiling/crosssession.md)|Active le profilage des processus dans d’autres sessions ouvertes.|  
     |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Spécifie le compteur de performances Windows dont les données doivent être collectées au cours du profilage.|  
     |[/automark](../profiling/automark.md) **:** `Interval`|À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms.|  
-    |[/events](../profiling/events-vsperfcmd.md) **:** `Config`|Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier séparé (.etl).|  
+    |[/events](../profiling/events-vsperfcmd.md) **:** `Config`|Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier (.*etl*) distinct.|  
   
 3.  Démarrez l’application cible. Type :  
   
@@ -69,11 +69,11 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
     |[/targetclr](../profiling/targetclr.md) **:** `Version`|Spécifie la version du common language runtime (CLR) à profiler lorsque plusieurs versions du runtime sont chargées dans une application.|  
   
 ## <a name="control-data-collection"></a>Contrôler la collecte des données  
- Pendant l’exécution de l’application cible, vous pouvez contrôler la collecte des données en démarrant et en arrêtant l’écriture des données dans le fichier à l’aide des options de VSPerfCmd.exe. Le fait de pouvoir contrôler la collecte vous permet de collecter des données pour une phase spécifique de l’exécution du programme, telle que le démarrage ou l’arrêt de l’application.  
+ Pendant l’exécution de l’application cible, vous pouvez contrôler la collecte des données en démarrant et en arrêtant l’écriture des données dans le fichier à l’aide des options de *VSPerfCmd.exe*. Le fait de pouvoir contrôler la collecte vous permet de collecter des données pour une phase spécifique de l’exécution du programme, telle que le démarrage ou l’arrêt de l’application.  
   
 #### <a name="to-start-and-stop-data-collection"></a>Pour démarrer et arrêter la collecte de données  
   
-1.  Les paires d’options de VSPerfCmd.exe suivantes démarrent et arrêtent la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.  
+1.  Les paires d’options suivantes de *VSPerfCmd.exe* démarrent et arrêtent la collecte de données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.  
   
     |Option|Description|  
     |------------|-----------------|  

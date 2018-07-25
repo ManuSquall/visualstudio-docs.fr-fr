@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee84fdab07bd88027dc00be80b1acc009658d8ad
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5b194dbddcd4a0b89c05944de9160bb2e39d43c6
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844324"
 ---
 # <a name="just-my-code-threads-view"></a>Uniquement mon code (vue Threads)
 Si vous sélectionnez cette option, vous filtrez la pile des appels pour afficher uniquement votre code, plus un niveau des fonctions appelées.  

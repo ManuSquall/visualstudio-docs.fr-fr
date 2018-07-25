@@ -10,17 +10,18 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 3cc04188695daaf15821707350a84df9dfa5d891
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c89eed2f3e15259489ce43920b912db14ab862a6
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235242"
 ---
-# <a name="debugging-r-in-visual-studio"></a>Débogage de R dans Visual Studio
+# <a name="debug-r-in-visual-studio"></a>Déboguer R dans Visual Studio
 
 Les outils R pour Visual Studio (RTVS) s’intègrent au système complet de débogage de Visual Studio (consultez [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md)). Cette prise en charge comprend la définition de points d’arrêt, l’attachement à des processus en cours d’exécution, l’inspection et la surveillance de variables ainsi que l’inspection de la pile des appels. Cet article explore les aspects du débogage propres à R et à RTVS.
 
-La procédure de lancement du débogueur pour le fichier R de démarrage dans un projet R est la même que celle utilisée pour d’autres types de projets. Vous pouvez donc utiliser la commande **Déboguer > Démarrer le débogage**, la touche F5 ou l’option **Fichier de démarrage source** dans la barre d’outils de débogage : 
+La procédure de lancement du débogueur pour le fichier R de démarrage dans un projet R est la même que celle utilisée pour d’autres types de projets. Vous pouvez donc utiliser la commande **Déboguer** > **Démarrer le débogage**, la touche **F5** ou l’option **Fichier de démarrage source** dans la barre d’outils de débogage : 
 
 ![Bouton de démarrage du débogueur pour R](media/debugger-start-button.png)
 
@@ -36,7 +37,7 @@ Sourcing: c:\proj\rproject1\rproject1\Settings.R
 
 Notez que la fonction `rtvs::debug_source` est utilisée pour approvisionner le script. Cette fonction est nécessaire, car RTVS doit modifier votre code en préparation du débogage. Si vous utilisez une commande d’approvisionnement RTVS et qu’un débogueur est attaché, Visual Studio utilise automatiquement `rtvs::debug_source`.
 
-Vous pouvez aussi attacher manuellement le débogueur directement à partir de la fenêtre interactive en utilisant l’une des commandes suivantes : **Outils R > Session > Attacher le débogueur**, **Déboguer > Joindre à la fenêtre interactive R** ou **Attacher le débogueur** (dans la barre d’outils de la fenêtre interactive). Une fois l’opération terminée, il vous appartient d’approvisionner les fichiers à déboguer. Si vous souhaitez approvisionner manuellement les fichiers, veillez à utiliser `rtvs::debug_source` à la place de la commande `source` normale dans R.
+Vous pouvez aussi attacher manuellement le débogueur directement à partir de la fenêtre interactive en utilisant l’une des commandes suivantes : **Outils R** > **Session** > **Attacher le débogueur** **Déboguer** > **Joindre à la fenêtre interactive R** ou **Attacher le débogueur** dans la barre d’outils de la fenêtre interactive. Une fois l’opération terminée, il vous appartient d’approvisionner les fichiers à déboguer. Si vous souhaitez approvisionner manuellement les fichiers, veillez à utiliser `rtvs::debug_source` à la place de la commande `source` normale dans R.
 
 Cette connexion entre le débogueur et la fenêtre interactive facilite certaines opérations, notamment l’appel (et le débogage) d’une fonction avec des valeurs de paramètre différentes. Imaginons, par exemple, que vous avez la fonction suivante dans un fichier approvisionné (c’est-à-dire qu’il a été chargé dans la session) :
 

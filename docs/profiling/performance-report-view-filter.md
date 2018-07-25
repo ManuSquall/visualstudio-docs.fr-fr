@@ -13,14 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bd2b335635f4fc83eb4b0857f9b5d785eb9dccc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 17fc42eab94d98ceb636e53e3ed6efd39a08f920
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254268"
 ---
 # <a name="performance-report-view-filter"></a>Filtre de la vue Rapport de performances
-La fenêtre de filtre de la vue Rapport du profileur se trouve en haut de la fenêtre Rapport de performances. Si elle n’est pas visible, cliquez sur le bouton **Afficher le filtre**.  
+La fenêtre de **filtre de la vue Rapport du profileur** se trouve en haut de la fenêtre **Rapport de performances**. Si elle n’est pas visible, cliquez sur le bouton **Afficher le filtre**.  
   
  Vous pouvez modifier chaque clause de filtre pour affiner vos résultats. Les colonnes suivantes sont disponibles dans le générateur de filtres.  
   
@@ -35,8 +36,8 @@ La fenêtre de filtre de la vue Rapport du profileur se trouve en haut de la fen
   
  À partir de la vue de rapport **Marques**, vous pouvez générer des clauses de filtre pour limiter les données dans les vues de rapport aux données collectées entre deux marques. Sélectionnez les marques de début et de fin des données de rapport, cliquez avec le bouton droit, puis sélectionnez **Ajouter un filtre aux marques** ou **Ajouter un filtre aux horodatages**. Ces deux filtres limitent les données du fichier de données actuel à la même étendue. L’option **Ajouter un filtre aux marques** peut être appliquée à d’autres fichiers .vsp.  
   
- Pour enregistrer le filtre, cliquez sur **Exporter le filtre** dans la barre d’outils Rapport de performances, puis spécifiez un emplacement et un nom pour le fichier .vspf. Pour charger un filtre déjà enregistré, cliquez sur **Importer le filtre**, puis recherchez le fichier de filtre enregistré. Les fichiers de filtres peuvent également servir à filtrer des fichiers de données sur des ordinateurs sur lesquels les outils de profilage autonomes sont installés. Pour plus d’informations, consultez [VSPerfReport](../profiling/vsperfreport.md).  
+ Pour enregistrer le filtre, cliquez sur **Exporter le filtre** dans la barre d’outils**Rapport de performances**, puis spécifiez un emplacement et un nom pour le fichier .*vspf*. Pour charger un filtre déjà enregistré, cliquez sur **Importer le filtre**, puis recherchez le fichier de filtre enregistré. Les fichiers de filtres peuvent également servir à filtrer des fichiers de données sur des ordinateurs sur lesquels les outils de profilage autonomes sont installés. Pour plus d’informations, consultez [VSPerfReport](../profiling/vsperfreport.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Analyse des données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)   
+ [Analyser les données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

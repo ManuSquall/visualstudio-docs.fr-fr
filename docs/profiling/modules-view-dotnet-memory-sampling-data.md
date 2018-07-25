@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: aba425823de9f6c9e935e987e2f574ac0733d262
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c5cbae58aeaa1164aab6c254f62e0959da02d31c
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257671"
 ---
-# <a name="modules-view---net-memory-sampling-data"></a>Modules, vue - Données d’échantillonnage de mémoire .NET
+# <a name="modules-view---net-memory-sampling-data"></a>Modules, vue - données d’échantillonnage de la mémoire .NET
 La vue Modules des données d’allocation de mémoire .NET collectées à l’aide de la méthode d’échantillonnage regroupe les données de mémoire selon les modules exécutés dans le cadre de l’exécution du profilage. Chaque module est la racine d’une arborescence hiérarchique. Les fonctions du module sont répertoriées sous le nœud du module.  
   
  Les numéros de ligne de fichier source des instructions qui allouent la mémoire sont répertoriés sous le nœud de la fonction, et les adresses des instructions chargées de l’allocation sont répertoriées sous le nœud de la ligne. Les valeurs inclusives et exclusives sont toujours les mêmes pour les données de ligne et les données d’instruction.  
@@ -42,7 +43,7 @@ La vue Modules des données d’allocation de mémoire .NET collectées à l’
 |**% d’octets exclusifs**|Pourcentage de tous les octets alloués dans le cadre de l’exécution du profilage qui étaient des octets exclusifs du module, de la fonction, de la ligne ou de l’instruction.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour personnaliser les colonnes de la vue Rapport](../profiling/how-to-customize-report-view-columns.md)   
- [Modules, vue - Instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
- [Modules, vue](../profiling/modules-view-sampling-data.md)   
+ [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)   
+ [Modules, vue - instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
+ [Vue Modules - Données d’instrumentation](../profiling/modules-view-sampling-data.md)   
  [Vue Modules - Données d’échantillonnage](../profiling/modules-view-instrumentation-data.md)

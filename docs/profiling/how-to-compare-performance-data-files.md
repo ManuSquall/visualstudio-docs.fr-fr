@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee8404deaeeadd65a4e032266422520721a50a51
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: eeb9f26091deaf995ef1221d39aa7264553f5c70
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815377"
 ---
 # <a name="how-to-compare-performance-data-files"></a>Guide pratique pour comparer des fichiers de données de performances
-Vous pouvez comparer les résultats de deux fichiers de données du profileur (.vsp ou .vsps) en créant un rapport ou une vue de comparaison (« Différences »). Le rapport de comparaison montre les différences, les régressions de performances et les améliorations qui se sont produites d’une session de profilage à l’autre.  
+Vous pouvez comparer les résultats de deux fichiers de données du profileur (.*vsp* ou .*vsps*) en créant un rapport ou une vue de comparaison (« Différences »). Le rapport de comparaison montre les différences, les régressions de performances et les améliorations qui se sont produites d’une session de profilage à l’autre.  
   
  Le rapport Différences présente les données sous forme de tableau. Le tableau présente les données delta, c’est-à-dire ce qui a été modifié par rapport à la base de référence. Ces données sont calculées en déterminant la différence entre l’ancienne valeur, la valeur de base de référence et la valeur résultante de la nouvelle analyse.  
   
@@ -32,9 +33,9 @@ Vous pouvez comparer les résultats de deux fichiers de données du profileur (.
   
 ### <a name="to-create-comparison-file-view-for-a-project-in-performance-explorer"></a>Pour créer une vue de comparaison de fichiers pour un projet dans l’Explorateur de performances  
   
-1.  Dans l’**Explorateur de performances**, sous **Rapports**, sélectionnez le fichier de rapport .vsp ou .vsps dont vous voulez utiliser les données comme base de référence pour la comparaison.  
+1.  Dans **l’Explorateur de performances**, sous **Rapports**, sélectionnez le fichier de rapport .*vsp* ou .*vsps* dont vous voulez utiliser les valeurs comme base de référence pour la comparaison.  
   
-2.  Sélectionnez les fichiers de rapport .vsp ou .vsps que vous voulez comparer.  
+2.  Sélectionnez les fichiers de rapport .*vsp* ou .*vsps* à comparer.  
   
 3.  Cliquez sur l’un des fichiers sélectionnés, puis cliquez sur **Comparer les rapports**.  
   
@@ -54,6 +55,6 @@ Vous pouvez comparer les résultats de deux fichiers de données du profileur (.
   
 1.  Dans le menu **Analyser**, sélectionnez **Comparer les rapports de performances**.  
   
-2.  Dans la fenêtre **Sélectionner les fichiers d’analyse à des fins de comparaison**, sélectionnez le fichier d’analyse **Fichier de base** (.vsp ou .vsps) et le **Fichier de comparaison** (.vsp ou .vsps).  
+2.  Dans la fenêtre **Sélectionner les fichiers d’analyse à des fins de comparaison**, sélectionnez le fichier d’analyse **Fichier de base** (.*vsp* ou .*vsps*) et le **Fichier de comparaison** (.*vsp* ou .*vsps*).  
   
 3.  Cliquez sur **OK**.

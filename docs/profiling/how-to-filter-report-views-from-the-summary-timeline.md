@@ -10,18 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8e2eb675b63d0c0e270e1a38bc005ae29b0595d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fb2c9bc8d0bcec6bc4a07c03dc18f07286cd77c1
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815494"
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Guide pratique pour filtrer les vues de rapport à partir de la chronologie Résumé
 Vous pouvez filtrer les données qui apparaissent dans les rapports de performances en spécifiant un intervalle de temps dans le graphique chronologique de la vue Résumé. Quand vous filtrez des rapports, le fichier des données de profilage est réanalysé de façon à inclure uniquement l’intervalle de temps que vous avez spécifié.  
   
 ### <a name="to-filter-a-profiling-report-from-the-summary-timeline-graph"></a>Pour filtrer un rapport de profilage à partir du résumé de la chronologie  
   
-1.  Dans le graphique chronologique de vue Résumé, cliquez sur un point de la chronologie, puis faites glisser la souris vers un autre point de la chronologie.  
+1.  Dans le graphe chronologique de la vue Résumé, cliquez sur un point de la chronologie, puis faites glisser la souris vers un autre point de la chronologie.  
   
      La région que vous avez spécifiée apparaît ombrée.  
   

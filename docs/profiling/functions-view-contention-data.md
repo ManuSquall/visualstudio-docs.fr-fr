@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 68561b5a814ba27f241cee3118ef1bae938adb20
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b7444a4d3e8ad6e3f5fdd91d34058e20e13caf38
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237540"
 ---
-# <a name="functions-view---contention-data"></a>Vue Fonctions - Données de conflit
+# <a name="functions-view---contention-data"></a>Fonctions, vue - données de conflit
 La vue de rapport Fonctions des données de conflit répertorie les fonctions dans l’exécution du profilage dont l’exécution a été bloquée pendant l’exécution du profilage.  
   
  Le tableau suivant explique les valeurs qui sont affichées dans la vue Fonctions d’un fichier de données de profilage collectées avec la méthode de concurrence.  
@@ -43,9 +44,9 @@ La vue de rapport Fonctions des données de conflit répertorie les fonctions da
 |**Fichier source**|Fichier source contenant la définition pour cette fonction.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour personnaliser les colonnes de la vue Rapport](../profiling/how-to-customize-report-view-columns.md)   
+ [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)   
  [Vue Fonctions](../profiling/functions-view.md)   
- [Vue Fonctions - Instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
- [Vue Fonctions - Échantillonnage](../profiling/functions-view-dotnet-memory-sampling-data.md)   
+ [Fonctions, vue - instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
+ [Fonctions, vue - échantillonnage](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [Vue Fonctions](../profiling/functions-view-instrumentation-data.md)   
  [Vue Fonctions](../profiling/functions-view-sampling-data.md)

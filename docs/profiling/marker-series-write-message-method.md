@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0419ec814c7b2538633ab9a1e266ec12ad066ff9
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 70e413267623d4e9bb4b8d4c1f46fd9c6ecf7808
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237950"
 ---
 # <a name="markerserieswritemessage-method"></a>marker_series::write_message, méthode
 Écrit un message dans le fichier de trace du visualiseur concurrentiel.  
@@ -59,7 +60,7 @@ void write_message(
  Niveau Category.Importance.  
   
 ## <a name="requirements"></a>Configuration requise  
- **En-tête** : cvmarkersobj.h  
+ **En-tête :** *cvmarkersobj.h*  
   
  **Espace de noms** : Concurrency::diagnostic  
   

@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b35964aeef4323f4daff01d77aef5d3d5bf7f66
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6f73db7e52c22291443ec262eb2f91ffbcd319c7
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845088"
 ---
-# <a name="lines-view---sampling-data"></a>Lignes, vue - Données d’échantillonnage
+# <a name="lines-view---sampling-data"></a>Lignes, vue - données d’échantillonnage
 La vue Lignes des données d'échantillonnage répertorie les données de performance sur les instructions qui étaient en cours d'exécution lorsque les exemples ont été collectés dans l'exécution du profilage.  
   
 > [!NOTE]
@@ -61,4 +62,4 @@ La vue Lignes des données d'échantillonnage répertorie les données de perfor
 |**% d’échantillons exclusifs**|Pourcentage de tous les échantillons collectés pendant l’exécution de la fonction dans le cadre de l’exécution du profilage.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Lignes, vue - Échantillonnage](../profiling/lines-view-dotnet-memory-sampling-data.md)
+ [Lignes, vue - échantillonnage](../profiling/lines-view-dotnet-memory-sampling-data.md)

@@ -10,22 +10,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 749bc81ff5c1ba325f7b84e6affccc81dc88055d
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: ceee8ee3781a367f351f20ca92b83f4db000b42b
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336030"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844763"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Guide pratique pour modifier des fichiers Web.Config pour instrumenter et profiler des applications Web ASP.NET compilées dynamiquement
 Vous pouvez utiliser la méthode d’instrumentation des outils de profilage de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour collecter des données de minutage détaillées, des données d’allocation de mémoire .NET et des données de durée de vie des objets .NET à partir d’applications web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilées dynamiquement.  
   
- Cette rubrique décrit comment modifier le fichier de configuration web.config pour activer l’instrumentation et le profilage d’applications web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
+ Cette rubrique décrit comment modifier le fichier de configuration *web.config* pour activer l’instrumentation et le profilage d’applications web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].  
   
 > [!NOTE]
->  Vous n’êtes pas obligé de modifier le fichier web.config lorsque vous utilisez la méthode de profilage par échantillonnage, ou lorsque vous souhaitez instrumenter un module [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] précompilé.  
+>  Vous n’êtes pas obligé de modifier le fichier *web.config* quand vous utilisez la méthode de profilage par échantillonnage, ou quand vous souhaitez instrumenter un module [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] précompilé.  
   
- La racine d’un fichier web.config est l’élément **configuration**. Pour instrumenter et profiler une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilée dynamiquement, vous devez ajouter ou modifier les éléments suivants :  
+ La racine d’un fichier *web.config* est l’élément **configuration**. Pour instrumenter et profiler une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilée dynamiquement, vous devez ajouter ou modifier les éléments suivants :  
   
 -   Un élément **configuration/runtime/assemblyBinding/dependentAssembly** qui identifie l’assembly Microsoft.VisualStudio.Enterprise.ASPNetHelper qui contrôle le profilage. L’élément **dependentAssembly** contient deux éléments enfants : **assemblyIdentity** et **codeBase**.  
   
@@ -33,7 +33,7 @@ Vous pouvez utiliser la méthode d’instrumentation des outils de profilage de 
   
 -   Deux éléments **add** qui identifient l’emplacement des outils de profilage sont ajoutés à la section **configuration/appSettings**.  
   
- Nous vous recommandons de créer une copie du fichier web.config d’origine que vous pourrez utiliser pour restaurer la configuration de l’application.  
+ Nous vous recommandons de créer une copie du fichier *web.config* d’origine que vous pourrez utiliser pour restaurer la configuration de l’application.  
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>Pour ajouter l’assembly ASPNetHelper en tant qu’élément configuration/runtime/assemblyBinding/dependentAssembly  
   
@@ -176,7 +176,7 @@ Vous pouvez utiliser la méthode d’instrumentation des outils de profilage de 
 ```  
   
 ## <a name="example"></a>Exemple  
- Le fichier web.config suivant active l’instrumentation et le profilage des applications web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilées dynamiquement. Cet exemple suppose qu’il n’y avait pas d’autres paramètres dans le fichier avant la modification.  
+ Le fichier *web.config* suivant active l’instrumentation et le profilage des applications web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilées dynamiquement. Cet exemple suppose qu’il n’y avait pas d’autres paramètres dans le fichier avant la modification.  
   
 ```xml  
 <?xml version="1.0"?>  

@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f90e33d17e5f54066b038da36611329bb7169de4
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: b94001c13f5925107cecb49936ecdc5fb1e73514
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254356"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn et ProcessOff
 Les sous commandes **ProcessOff** et **ProcessOn** de VSPerfCmd.exe permettent de suspendre et de reprendre le profilage pour le processus spécifié dans une session de profilage en ligne de commande. **ProcessOff** arrête le profilage du processus et **ProcessOn** le démarre.  
@@ -40,7 +41,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
   
 #### <a name="parameters"></a>Paramètres  
  `PID`  
- L’identificateur entier du processus à démarrer ou à arrêter. Les ID de processus sont répertoriés sous l’onglet Processus du Gestionnaire des tâches de Windows.  
+ L’identificateur entier du processus à démarrer ou à arrêter. Les ID de processus sont répertoriés sous l’onglet **Processus** du Gestionnaire des tâches de Windows.  
   
 ## <a name="required-subcommands"></a>Sous-commandes obligatoires  
  Aucun.  
@@ -80,6 +81,6 @@ VSPerfCmd /Shutdown
   
 ## <a name="see-also"></a>Voir aussi  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Profilage d’applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilage d’applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilage de services](../profiling/command-line-profiling-of-services.md)
+ [Profiler des applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Profiler des applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profiler des services](../profiling/command-line-profiling-of-services.md)

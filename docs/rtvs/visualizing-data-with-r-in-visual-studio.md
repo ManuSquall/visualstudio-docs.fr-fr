@@ -10,13 +10,14 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 0a11ef12a4ca38c2973c01575b59ef35826bc4a8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f44ba213defef153acd2f5d1ef247bb093448263
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235253"
 ---
-# <a name="creating-visual-data-plots-with-r"></a>Création de tracés de données visuels avec R
+# <a name="create-visual-data-plots-with-r"></a>Créer des tracés de données visuels avec R
 
 Le traçage est une partie essentielle du flux de travail d’un scientifique des données. Dans les Outils R pour Visual Studio (RTVS), toutes les activités de traçage sont centrées sur une ou plusieurs fenêtres de traçage, qui sont conçues pour améliorer votre productivité avec cette activité.
 
@@ -44,7 +45,7 @@ Le redimensionnement d’une fenêtre de tracé provoque toujours le réaffichag
 
 ## <a name="plot-window-commands"></a>Commandes de la fenêtre de tracés
 
-La barre d’outils de la fenêtre de tracés contient des commandes applicables, dont la plupart sont également disponibles par l’intermédiaire du menu **Outils R > Tracés**.
+La barre d’outils de la fenêtre de tracés contient des commandes applicables, dont la plupart sont également disponibles par l’intermédiaire du menu **Outils R** > **Tracés**.
 
 | Bouton | Commande | Description | 
 | --- | --- | --- |
@@ -63,17 +64,17 @@ La barre d’outils de la fenêtre de tracés contient des commandes applicables
 
 Comme les scientifiques des données travaillent souvent avec de nombreux tracés provenant de différents datasets, RTVS vous permet de créer autant de fenêtres de tracés indépendantes que vous le souhaitez. Vous pouvez ensuite organiser ces fenêtres comme vous le souhaitez dans le cadre de Visual Studio ou en dehors de ce cadre. (Pour obtenir des informations générales sur l’ancrage et le redimensionnement des fenêtres, consultez [Personnalisation des dispositions de fenêtres dans Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).)
 
-Vous pouvez créer une fenêtre de tracé à l’aide de la barre d’outils ou en cliquant sur **Outils R > Tracés > Nouvelle fenêtre de tracés**. La nouvelle fenêtre de tracés devient la fenêtre *active*, qui est l’emplacement où les nouveaux tracés sont affichés. Pour changer la fenêtre active, basculez vers elle et sélectionnez le bouton de barre d’outils Activer la fenêtre de tracés ou cliquez sur **Outils R > Tracés > Activer la fenêtre de tracés**.
+Vous pouvez créer une fenêtre de tracé à l’aide de la barre d’outils ou en cliquant sur **Outils R** > **Tracés** > **Nouvelle fenêtre de tracés**. La nouvelle fenêtre de tracés devient la fenêtre *active*, qui est l’emplacement où les nouveaux tracés sont affichés. Pour changer la fenêtre active, basculez vers elle et sélectionnez le bouton de barre d’outils **Activer la fenêtre de tracés** ou cliquez sur **Outils R** > **Tracés** > **Activer la fenêtre de tracés**.
 
 Les tracés sont aussi des objets indépendants, ce qui signifie que vous pouvez les copier ou les déplacer entre les fenêtres de tracés à l’aide d’une opération de glisser-déplacer avec la souris, ou à l’aide des commandes **Copier**, **Couper** et **Coller** du menu contextuel et du menu **Edition**.
 
-Le comportement par défaut de l’opération de glisser-déplacer est la copie ; pour déplacer, effectuez une opération de glisser-déplacer tout en maintenant la touche Maj enfoncée.
+Le comportement par défaut de l’opération de glisser-déplacer est la copie ; pour déplacer, effectuez une opération de glisser-déplacer tout en maintenant la touche **Maj** enfoncée.
 
 ## <a name="plot-history"></a>Historique de tracés
 
-Les commandes de tracés sont conservées dans l’historique de tracés pour chaque fenêtre. Ainsi, tout le traçage dans une session est conservé. Pour parcourir l’historique, utilisez les boutons de direction sur la barre d’outils de la fenêtre de tracés, ou Ctrl+Alt+F11 et Ctr+Alt+F12. Vous pouvez également supprimer des tracés spécifiques ou effacer tous les tracés de la fenêtre à l’aide des boutons de barre d’outils ou en cliquant sur les commandes de menu **Outils R > Tracés**.
+Les commandes de tracés sont conservées dans l’historique de tracés pour chaque fenêtre. Ainsi, tout le traçage dans une session est conservé. Pour parcourir l’historique, utilisez les boutons de direction sur la barre d’outils de la fenêtre de tracés, ou **Ctrl**+**Alt**+**F11** et **Ctr**+**Alt**+**F12**. Vous pouvez également supprimer des tracés spécifiques ou effacer tous les tracés de la fenêtre à l’aide des boutons de barre d’outils ou en cliquant sur les commandes de menu **Outils R** > **Tracés**.
 
-Pour voir l’ensemble des tracés, ouvrez la fenêtre d’historique de tracés à l’aide du bouton de barre d’outils ou en cliquant sur **Outils R > Tracés > Fenêtre d’historique des tracés**.
+Pour voir l’ensemble des tracés, ouvrez la fenêtre d’historique de tracés à l’aide du bouton de barre d’outils ou en cliquant sur **Outils R** > **Tracés** > **Fenêtre d’historique des tracés**.
 L’historique vous donne une liste des miniatures pour les tracés qui ont été affichés dans cette fenêtre, regroupés par fenêtres de tracés (ou appareils). Les boutons de zoom dans la barre d’outils permettent de changer la taille des miniatures.
 
 ![Fenêtre d’historique des tracés](media/plotting-plot-history-window.png)
@@ -82,7 +83,7 @@ Pour ouvrir un tracé dans sa fenêtre associée, double-cliquez sur ce tracé, 
 
 La durée de vie de votre historique de tracés dans toutes les fenêtres est liée à la durée de vie de votre session R interactive. Si vous réinitialisez votre session R, ou si vous quittez et redémarrez Visual Studio, votre historique de tracés est réinitialisé.
 
-## <a name="programmatically-manipulating-plot-windows"></a>Manipulation de fenêtres de tracés par programmation
+## <a name="programmatically-manipulate-plot-windows"></a>Manipuler des fenêtres de tracés par programmation
 
 Vous pouvez manipuler les fenêtres de tracés par programmation à partir de code R, en utilisant des numéros de périphériques pour identifier des fenêtres de tracés spécifiques. 
 

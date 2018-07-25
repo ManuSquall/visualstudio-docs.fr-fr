@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ae17a44b37536359a5f09fd75fda82ce34b50c3
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: a8d6909ee08984d0bff57f993538957b8958dcf2
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237365"
 ---
 # <a name="markerserieswritealert-method"></a>marker_series::write_alert, méthode
 Écrit une alerte dans le fichier de trace du visualiseur concurrentiel.  
@@ -37,7 +38,7 @@ void write_alert(
  Chaîne de mise en forme composite contenant du texte associé à zéro, un ou plusieurs éléments de mise en forme qui correspondent aux objets de la liste d’arguments.  
   
 ## <a name="requirements"></a>Configuration requise  
- **En-tête** : cvmarkersobj.h  
+ **En-tête :** *cvmarkersobj.h*  
   
  **Espace de noms** : Concurrency::diagnostic  
   

@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bf40d5714810fd4beba9d5d75ffbffbf1895883
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6c8772bd6426632093bb23cc3094fe42ad433a8d
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257811"
 ---
-# <a name="process-view---contention-data"></a>Processus, vue - Données de conflit
+# <a name="process-view---contention-data"></a>Processus, vue - données de conflit
 La vue Processus affiche les données de conflit pour les processus et les threads exécutés pendant l’exécution du profilage.  
   
  Quand des symboles sont disponibles, les processus sont répertoriés par nom. Si aucun symbole n’est disponible, les processus sont répertoriés par adresse mémoire, au format hexadécimal. Les threads sont répertoriés en tant qu’enfants du processus qui les a créés.  
@@ -40,5 +41,5 @@ La vue Processus affiche les données de conflit pour les processus et les threa
 |**ID unique**|Identificateur généré par le profileur unique pour le processus ou le thread.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour personnaliser les colonnes de la vue Rapport](../profiling/how-to-customize-report-view-columns.md)   
+ [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)   
  [Processus, vue](../profiling/process-view.md)

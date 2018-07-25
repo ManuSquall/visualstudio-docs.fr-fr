@@ -10,12 +10,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dbc83a2d3fe1b2f5bb32a6baaf336c0a6c46e7d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ba68d0d369d178606777944c9dc4dcd633a503f4
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572632"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280642"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programme d’amélioration du produit Visual Studio
 
@@ -40,15 +40,13 @@ Le programme VSCEIP est activé par défaut. Vous pouvez le désactiver ou le r�
 
 ### <a name="registry-settings"></a>Paramètres du Registre
 
-Si vous installez [Visual Studio Build Tools](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017), vous devez mettre à jour le Registre pour configurer le programme VSCEIP. Les clients en entreprise peuvent créer une stratégie de groupe pour accepter ou refuser le programme VSCEIP en définissant une stratégie basée sur le Registre.
+Si vous installez [Visual Studio Build Tools](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017), vous devez mettre à jour le Registre pour configurer le programme VSCEIP. Les clients en entreprise peuvent créer une stratégie de groupe pour accepter ou refuser le programme VSCEIP en définissant une stratégie basée sur le Registre.
 
 La clé et les paramètres de Registre appropriés sont les suivants :
 
-Sur un OS 64 bits, clé = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**  
-Sur un OS 32 bits, clé = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM**  
-Quand la stratégie de groupe est activée, clé = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**  
+Sur un système d’exploitation 64 bits, la clé est **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM** Sur un système d’exploitation 32 bits, la clé est **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM** Quand la stratégie de groupe est activée, la clé est **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
 
-Entrée = **OptIn**
+Entry = **OptIn**
 
 Valeur = (DWORD)
 - **0** pour refuser de participer (permet de désactiver le programme VSCEIP)

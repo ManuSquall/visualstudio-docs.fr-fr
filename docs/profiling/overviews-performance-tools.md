@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 709f9b62844a209450daa427efdb3333796828b8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 904ebf55e7920bfd79fec3afb502d59e5dc82a33
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254616"
 ---
-# <a name="overviews-performance-tools"></a>Vues d’ensemble (Outils d’analyse des performances)
+# <a name="overviews-performance-tools"></a>Présentations (outils d’analyse des performances)
 Cette section fournit des vues d’ensemble conceptuelles et terminologiques des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], que vous pouvez utiliser pour mesurer les caractéristiques de performances d’une application en cours de développement.  
   
 ## <a name="in-this-section"></a>Dans cette section  
@@ -29,16 +30,16 @@ Cette section fournit des vues d’ensemble conceptuelles et terminologiques des
  [Fonctionnement des valeurs de données d’échantillonnage](../profiling/understanding-sampling-data-values.md)  
  Découvrez les valeurs de données signalées quand vous utilisez la méthode de profilage d’échantillonnage.  
   
- [Fonctionnement des valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)  
+ [Comprendre les valeurs de données d’instrumentation](../profiling/understanding-instrumentation-data-values.md)  
  Découvrez les valeurs de données signalées quand vous utilisez la méthode de profilage par instrumentation.  
   
- [Fonctionnement de l’allocation de mémoire et des informations de durée de vie des objets](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
+ [Comprendre l’allocation de mémoire et les valeurs de données de durée de vie des objets](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
  Découvrez les valeurs de données signalées quand vous utilisez la méthode de profilage de mémoire .NET.  
   
- [Fonctionnement des valeurs des données de conflit de ressources](../profiling/understanding-resource-contention-data-values.md)  
+ [Comprendre les valeurs de données de conflit de ressources](../profiling/understanding-resource-contention-data-values.md)  
  Découvrez les valeurs de données signalées quand vous utilisez la méthode de profilage d’accès concurrentiel.  
   
- [Fenêtre Explorateur de performances](../profiling/performance-explorer-window.md)  
+ [Explorateur de performances, fenêtre](../profiling/performance-explorer-window.md)  
  Décrit la fenêtre servant à configurer et à démarrer des sessions de performance.  
   
  [Compteurs UC et Windows](../profiling/cpu-and-windows-counters.md)  

@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 883059693115496ddbc58f5fccc5e36ede5be720
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d725becd8a047af9eec3e76e517f39e037fb2466
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844776"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Comment : limiter l’instrumentation à des fonctions spécifiques
+# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Guide pratique pour limiter l’instrumentation à des fonctions spécifiques
 Vous pouvez limiter l’instrumentation et la collecte de données à une ou plusieurs fonctions en configurant des options dans la page **Avancé** de la **Session de performance** ou dans les pages de propriétés des fichiers binaires cibles :  
   
 -   Si vous spécifiez des fonctions dans la page de propriétés de la session de performance, seules ces fonctions seront instrumentées dans tous les fichiers binaires instrumentés de la session.  
@@ -67,6 +68,6 @@ Vous pouvez limiter l’instrumentation et la collecte de données à une ou plu
     >  Pour répertorier les fonctions d’un fichier binaire, ouvrez une fenêtre d’invite de commandes dans le répertoire d’installation des outils de profilage (il s’agit en général du répertoire \Team Tools\Performance Tools sous le répertoire d’installation de [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)]), puis tapez **vsinstr /DumpFuncs**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Contrôle de la collecte de données](../profiling/controlling-data-collection.md)   
+ [Contrôler la collecte des données](../profiling/controlling-data-collection.md)   
  [Guide pratique pour limiter l’instrumentation à des DLL spécifiques](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
  [Guide pratique pour spécifier des options d’instrumentation supplémentaires](../profiling/how-to-specify-additional-instrumentation-options.md)

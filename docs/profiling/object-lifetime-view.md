@@ -18,14 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a160e3298d14d406b756493a97b31f0f12cdad1d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 247c81d46ee8f5ae916a2a024620e4f4eb864194
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255617"
 ---
 # <a name="object-lifetime-view"></a>Mode Durée de vie de l'objet
-La vue Durée de vie des objets est disponible quand l’option **Collecter aussi les informations de durée de vie des objets .NET** est activée dans les pages de propriétés de la session de performance.  
+La vue Durée de vie des objets est disponible quand l’option **Collecter aussi les informations de durée de vie des objets .NET** est activée dans les pages de propriétés de la **session de performance**.  
   
  Le récupérateur de mémoire du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] gère l’allocation et la libération de mémoire pour votre application. Pour optimiser les performances du garbage collector, le tas managé est divisé en trois générations : 0, 1 et 2. Le récupérateur de mémoire du runtime stocke les nouveaux objets dans la génération 0. Les objets qui survivent aux collectes sont promus et stockés dans les générations 1 et 2.  
   
@@ -73,4 +74,4 @@ La vue Durée de vie des objets est disponible quand l’option **Collecter auss
 |**Octets du tas des objets volumineux collectés**|Taille en octets des instances de ce type qui ont été placées dans le tas des objets volumineux et qui ont été collectées lors de l’exécution du profilage.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vues de données de mémoire .NET](../profiling/dotnet-memory-data-views.md)
+ [Vues des données de la mémoire .NET](../profiling/dotnet-memory-data-views.md)

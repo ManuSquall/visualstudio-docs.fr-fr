@@ -1,7 +1,7 @@
 ---
 title: Sélection et installation des interpréteurs Python
 description: La liste complète des interpréteurs Python pris en charge dans Visual Studio, accompagnée d’instructions brèves pour trouver les programmes d’installation associés.
-ms.date: 02/20/2018
+ms.date: 06/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4bf9c65d44739dd1b9164731f1097ce29050e6d8
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: d5930ca6e2c416a4b212feb8662c854f9cb30c3d
+ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "34851849"
 ---
 # <a name="installing-python-interpreters"></a>Installer des interpréteurs Python
 
@@ -25,7 +26,7 @@ Vous pouvez également installer manuellement l’un des interpréteurs figurant
 
 Avec **Visual Studio 2015 et les versions antérieures**, vous devez installer manuellement un des interpréteurs.
 
-Visual Studio (toutes versions) détecte automatiquement chacun des interpréteurs Python installés et l’environnement associé en consultant le Registre (d’après [PEP 514 – Inscription de Python dans le Registre Windows](https://www.python.org/dev/peps/pep-0514/)).
+Visual Studio (toutes versions) détecte automatiquement chacun des interpréteurs Python installés et l’environnement associé en consultant le Registre (conformément à [PEP 514 – Inscription de Python dans le Registre Windows](https://www.python.org/dev/peps/pep-0514/)). Les installations de Python se trouvent généralement sous `HKEY_LOCAL_MACHINE\SOFTWARE\Python` (32 bits) et `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python` (64 bits), puis dans les nœuds correspondant à la distribution (par exemple, « PythonCore » pour CPython et « ContinuumAnalytics » pour Anaconda).
 
 Si Visual Studio ne parvient pas à détecter un environnement installé, consultez la section [Identifier manuellement un environnement existant](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
