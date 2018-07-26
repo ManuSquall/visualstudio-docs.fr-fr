@@ -22,18 +22,18 @@
 - name: Visual Studio Tools pour Unity
   href: visual-studio-tools-for-unity.md
   items:
-    - name: Prise en main de Visual Studio Tools pour Unity
+    - name: Bien démarrer avec Visual Studio Tools pour Unity
       href: getting-started-with-visual-studio-tools-for-unity.md
-    - name: Utilisation de Visual Studio Tools pour Unity
+    - name: Utiliser Visual Studio Tools pour Unity
       href: using-visual-studio-tools-for-unity.md
-    - name: Programmation de Visual Studio Tools pour Unity
+    - name: Programmer Visual Studio Tools pour Unity
       href: programming-visual-studio-tools-for-unity.md
       items:
         - name: Personnaliser les fichiers projet créés par VSTU
           href: customize-project-files-created-by-vstu.md
         - name: Partager le rappel de journal Unity avec VSTU
           href: share-the-unity-log-callback-with-vstu.md
-    - name: Programmation avec Unity et Azure
+    - name: Programmer avec Unity et Azure
       href: visual-studio-tools-for-unity-azure.md
     - name: Problèmes connus et dépannage (Visual Studio Tools pour Unity)
       href: troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
@@ -83,5 +83,5 @@
   items:
     - name: System requirements for the Visual Studio Emulator for Android
       href: system-requirements-for-the-visual-studio-emulator-for-android.md
-    - name: Résolution des problèmes liés à l’émulateur Visual Studio pour Android
+    - name: Résoudre les problèmes de l’émulateur Visual Studio pour Android
       href: troubleshooting-the-visual-studio-emulator-for-android.md
