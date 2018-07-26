@@ -1,5 +1,5 @@
 ---
-title: Envoyer des Messages de Diagnostic dans la fenêtre Sortie | Documents Microsoft
+title: Envoyer des Messages de Diagnostic dans la fenêtre de sortie | Microsoft Docs
 ms.custom: ''
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
@@ -28,15 +28,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfe7cb6660d16c093889395a082c9fd58e5d0431
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 27cec31b775ba5f8d201c81cbd65f5b161353986
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474581"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252295"
 ---
 # <a name="send-diagnostic-messages-to-the-output-window"></a>Envoyer des Messages de Diagnostic dans la fenêtre Sortie
-Vous pouvez écrire des messages d’exécution pour le **sortie** à l’aide de la fenêtre la `Debug` classe ou la `Trace` (classe), qui font partie de la <xref:System.Diagnostics> bibliothèque de classes. Utilisez la classe Debug si vous n'utilisez que la version Debug de votre programme pour la sortie. Utilisez la classe Trace si vous souhaitez obtenir une sortie pour les versions Debug et Release.  
+Vous pouvez écrire des messages d’exécution pour le **sortie** à l’aide de la fenêtre la <xref:System.Diagnostics.Debug> classe ou le <xref:System.Diagnostics.Trace> (classe), qui font partie de la <xref:System.Diagnostics> bibliothèque de classes. Utilisez le <xref:System.Diagnostics.Debug> classe si vous copiez uniquement dans le *déboguer* version de votre programme. Utilisez le <xref:System.Diagnostics.Trace> classe si vous souhaitez que la sortie à la fois dans le *déboguer* et *version* versions.  
   
 ## <a name="output-methods"></a>Méthodes de sortie  
  Les classes <xref:System.Diagnostics.Trace> et <xref:System.Diagnostics.Debug> fournissent les méthodes de sortie suivantes :  

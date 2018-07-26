@@ -1,5 +1,5 @@
 ---
-title: Ports | Documents Microsoft
+title: Ports | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a350e0579f7e60d8a7ffc3e879d79364cfdf0317
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6a73aef5151b12360d1e227d440223df4ff3298
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099442"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251047"
 ---
 # <a name="ports"></a>Ports
-En termes de l’architecture du débogueur, une **port**:  
+Dans l’architecture du débogueur, une *port*:  
   
--   Un conteneur pour un ensemble de processus s’exécute sur un serveur. Par exemple, un port peut représenter une connexion à un périphérique Windows CE par un câble série ou à un ordinateur en réseau non-DCOM. Un port spécial, appelé le port local, contient tous les processus en cours d’exécution sur l’ordinateur local.  
+-   Un conteneur pour un ensemble de processus s’exécute sur un serveur. Par exemple, un port peut représenter une connexion à un périphérique Windows CE par un câble série ou à un ordinateur en réseau non-DCOM. Un seul port spécial, appelé le port local, contient tous les processus en cours d’exécution sur l’ordinateur local.  
   
--   Peut identifier par son nom ou identificateur.  
+-   Peut s’identifier par son nom ou identificateur.  
   
 -   Peut énumérer tous les processus en cours d’exécution sur le port et lancer et mettre fin à ces processus.  
   
--   Est représenté par un [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interface, qui est créé en passant un [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) argument [ajouter un port](../../extensibility/debugger/reference/idebugportsupplier2-addport.md).  
+-   Est représenté par un [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interface, ce qui est créé en passant un [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) l’argument de [ajouter un port](../../extensibility/debugger/reference/idebugportsupplier2-addport.md).  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fournit un port par défaut qui gère tous les processus basé sur Windows, natifs et managés. Un port personnalisé doit être implémenté pour les connexions avec des périphériques externes qui ne sont pas basés sur Windows. Pour fournir ces ports personnalisés, un fournisseur de port personnalisé doit également être implémentée.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fournit un port par défaut qui gère tous les processus basés sur Windows, natifs et managés. Un port personnalisé doit être configuré pour les connexions avec des périphériques externes qui ne sont pas Windows. Pour fournir ces ports personnalisés, vous devez également configurer un fournisseur de port personnalisé.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Serveurs](../../extensibility/debugger/servers-visual-studio-sdk.md)   
