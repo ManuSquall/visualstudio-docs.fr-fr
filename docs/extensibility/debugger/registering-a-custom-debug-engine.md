@@ -1,5 +1,5 @@
 ---
-title: Moteur de débogage de l’enregistrement personnalisé | Documents Microsoft
+title: Moteur de débogage de l’enregistrement personnalisé | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99ff41f116e569baaae312acd17408928a6c79f4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c3203382b33184edf5618daecd9d3dc9102e2ca6
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126286"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251648"
 ---
-# <a name="registering-a-custom-debug-engine"></a>L’inscription d’un moteur de débogage personnalisé
-Le moteur de débogage doit s’inscrire en tant qu’une fabrique de classe suit les conventions COM ainsi enregistrer avec Visual Studio via la sous-clé de Registre de Visual Studio.  
+# <a name="register-a-custom-debug-engine"></a>Inscrire un moteur de débogage personnalisé
+Le moteur de débogage doit s’auto-enregistrer comme une fabrique de classe, les conventions COM suivantes mais aussi s’inscrire avec Visual Studio via la sous-clé de Registre de Visual Studio.  
   
 > [!NOTE]
->  Vous trouverez un exemple de l’inscription d’un moteur de débogage dans l’exemple TextInterpreter, qui est intégré dans le cadre de la [didacticiel : création d’un débogage moteur à l’aide de ATL COM](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24).  
+>  Vous trouverez un exemple montrant comment inscrire un moteur de débogage dans l’exemple TextInterpreter, qui est intégré dans le cadre de la [didacticiel : création d’un moteur de débogage à l’aide de ATL COM](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24).  
   
-## <a name="dll-server-process"></a>Processus de serveur de DLL  
- En règle générale, un moteur de débogage est implémenté dans son propre DLL comme un serveur COM. Cela signifie que le moteur de débogage doit inscrire le CLSID de la fabrique de classe avec COM avant Visual Studio peuvent y accéder. Ensuite, le moteur de débogage doit s’inscrire dans Visual Studio afin d’établir toutes les propriétés (autrement dit métriques) le débogage prend en charge du moteur. Le choix des métriques qui sont écrits dans la sous-clé de Registre pour le moteur de débogage Visual Studio dépend des fonctionnalités que prend en charge par le moteur de débogage.  
+## <a name="dll-server-process"></a>Processus de serveur DLL  
+ Un moteur de débogage est généralement configuré dans sa propre DLL comme serveur COM. Par conséquent, le moteur de débogage doit inscrire le CLSID de la fabrique de classe avec COM avant Visual Studio peuvent y accéder. Ensuite, le moteur de débogage doit s’inscrire avec Visual Studio pour établir toutes les propriétés (autrement dit métriques) le débogage prend en charge du moteur. Le choix des métriques écrites dans la sous-clé de Registre de Visual Studio dépend des fonctionnalités que du moteur de débogage prend en charge.  
   
- [Programmes d’assistance du Kit de développement logiciel pour le débogage](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) décrit non seulement les emplacements de Registre nécessaires pour inscrire un moteur de débogage ; il décrit également la bibliothèque de dbgmetric.lib, qui contient un certain nombre de fonctions utiles pour les développeurs C++ qui rendent les déclarations manipulation du Registre plus facile.  
+ [Aides SDK pour le débogage](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) décrit non seulement les emplacements de Registre nécessaires pour inscrire un moteur de débogage ; il décrit également la *dbgmetric.lib* bibliothèque, qui contient un certain nombre de déclarations de fonctions utiles pour les développeurs C++ facilitant la manipulation du Registre plus facile.  
   
 ### <a name="example"></a>Exemple  
- Voici un exemple typique (à partir de l’exemple TextInterpreter) illustrant comment utiliser le `SetMetric` de fonction (à partir de dbgmetric.lib), pour inscrire un moteur de débogage avec Visual Studio. Les métriques transmises sont également définies dans dbgmetric.lib.  
+ L’exemple suivant (à partir de l’exemple TextInterpreter) montre comment utiliser le `SetMetric` (fonction) (à partir de *dbgmetric.lib*) pour inscrire un moteur de débogage avec Visual Studio. Les métriques transmis sont également définies dans *dbgmetric.lib*.  
   
 > [!NOTE]
->  TextInterpreter est un moteur de débogage de base ; Il n’implémente pas et par conséquent n’inscrit pas, toutes les autres fonctionnalités. Un moteur de débogage plus complète aurait une liste complète des `SetMetric` prend en charge les appels ou leur équivalent, un pour chaque fonctionnalité, le moteur de débogage.  
+>  TextInterpreter est un moteur de débogage de base ; Il n’a pas défini et par conséquent ne pas s’inscrire, d’autres fonctionnalités. Un moteur de débogage plus complète aurait une liste complète des `SetMetric` appels ou leur équivalent, pour chaque fonctionnalité, le moteur de débogage prend en charge.  
   
 ```  
 // Define base registry subkey to Visual Studio.  
@@ -53,5 +53,5 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
   
 ## <a name="see-also"></a>Voir aussi  
  [Création d’un moteur de débogage personnalisé](../../extensibility/debugger/creating-a-custom-debug-engine.md)   
- [Programmes d’assistance du Kit de développement logiciel pour le débogage](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
- [Didacticiel : Création d’un moteur de débogage à l’aide de COM ATL](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24)
+ [Aides SDK pour le débogage](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
+ [Didacticiel : Création d’un moteur de débogage à l’aide de ATL COM](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24)

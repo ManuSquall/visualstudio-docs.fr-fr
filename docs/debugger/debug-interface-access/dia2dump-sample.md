@@ -1,7 +1,7 @@
 ---
-title: Exemple de Dia2dump | Documents Microsoft
+title: Exemple de Dia2dump | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 07/24/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -15,40 +15,67 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5559d1ac2a03eaeb1dca57531cd2f19831851d3b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e2e44abdce737df335133d5e54b6b022c97f639a
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457824"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252279"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump, exemple
-L’exemple Dia2dump est installé avec Visual Studio et contient le fichier source Dia2dump.cpp. Le fichier exécutable compilé s’exécute à partir de la ligne de commande et affiche le contenu d’un fichier de base de données (.pdb) de programme entier.  
-  
-### <a name="to-install-the-sample"></a>Pour installer l’exemple  
-  
-1.  Vérifiez que votre système répond à toutes les exigences d’installation décrites dans la page de démarrage du programme d’installation de Visual Studio.  
-  
-2.  Installation de Visual Studio et suivez toutes les instructions d’installation et de configuration pour les exemples inclus.  
-  
-#### <a name="to-build-the-sample"></a>Pour générer l'exemple  
-  
-1.  Ouvrez le fichier Dia2dump.sln dans Visual Studio. (Si nécessaire, Visual Studio sera tout d’abord vous aider à mettre à niveau le projet Dia2dump.)  
-  
-2.  Dans les pages de propriétés de projet, dans le **C/C++** &#124; **général** &#124; **autres répertoires Include** propriété, spécifiez le `..\DIA SDK\include` active. Cela garantit que le compilateur peut trouver le fichier dia2.h.  
-  
-3.  Sur le **générer** menu, cliquez sur **régénérer la Solution**.  
-  
-4.  Fermez Visual Studio.  
-  
-#### <a name="to-run-the-sample"></a>Pour exécuter l'exemple  
-  
-1.  Ouvrez une invite de commandes et tapez la commande suivante :  
-  
-    ```  
-    dia2dump filename  
-    ```  
-  
-## <a name="see-also"></a>Voir aussi  
- [Fichier Source Dia2dump.cpp](../../debugger/debug-interface-access/dia2dump-cpp-source-file.md)   
- [Porter, migrer et mettre à niveau des projets Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)
+
+L’exemple Dia2dump montre comment utiliser le Microsoft Debug Interface Access Kit de développement logiciel (DIA SDK) pour interroger un fichier PDB pour plus d’informations.
+
+L’exemple Dia2dump est installé avec Visual Studio et contient les fichiers solution et la source. Le fichier exécutable compilé s’exécute à partir de la ligne de commande. Il peut afficher le contenu d’un fichier de base de données (.pdb) programme entier ou simplement les sections qui vous intéressent.
+
+## <a name="install-the-sample"></a>Installer l’exemple
+
+L’exemple est installé lorsque vous choisissez la **développement Desktop en C++** charge de travail dans Visual Studio Installer. Pour plus d’informations sur la façon d’installer Visual Studio et choisissez les charges de travail spécifiques et des composants individuels, consultez [installer Visual Studio](../../install/install-visual-studio.md).
+
+Lors de l’installation, l’exemple est dans votre répertoire d’installation de Visual Studio, dans un sous-répertoire nommé \DIA SDK\Samples\DIA2Dump.
+
+## <a name="build-the-sample"></a>Générer l’exemple
+
+Par défaut, le répertoire d’installation est un répertoire protégé. Cela signifie que vous devez utiliser une invite de commandes avec élévation de privilèges développeur ou une instance de Visual Studio pour créer et modifier l’exemple de solution à cet emplacement. Pour simplifier la génération, nous vous recommandons tout d’abord copiez les fichiers à partir du répertoire d’exemple vers un autre répertoire, tel qu’un dossier dans votre dossier Documents et puis générez l’exemple.
+
+### <a name="to-build-the-dia2dump-sample-in-visual-studio"></a>Pour générer l’exemple Dia2Dump dans Visual Studio
+
+1. Ouvrez le fichier DIA2Dump.sln dans Visual Studio. Si vous n’avez pas copié la solution vers un autre répertoire, vous pouvez être invité à redémarrer Visual Studio avec des autorisations élevées.
+
+1. Dans **l’Explorateur de solutions**, sélectionnez le projet Dia2Dump (pas la solution).
+
+1. Ouvrez la boîte de dialogue **Pages de propriété** du projet. Pour plus d’informations, consultez [Utilisation des propriétés de projet](/cpp/ide/working-with-project-properties).
+
+1. Ouvrez le **propriétés de Configuration** > **C/C++** > **général** page de propriétés.
+
+1. Dans le **autres répertoires Include** propriété, choisissez le contrôle de liste déroulante, puis choisissez **modifier**.
+
+1. Dans le **autres répertoires Include** boîte de dialogue, dans le champ d’édition, entrez le `$(VSInstallDir)DIA SDK\include` directory. Ajouter ce répertoire pour garantir que le compilateur peut trouver le fichier dia2.h. Choisissez **OK** pour enregistrer vos modifications.
+
+1. Choisissez **OK** pour enregistrer vos modifications dans les propriétés du projet.
+
+1. Sur le **Build** menu, choisissez **régénérer la Solution**. Par défaut, Visual Studio génère une version Debug de l’exemple, situé dans un sous-répertoire de débogage du répertoire de solution.
+
+1. Fermez Visual Studio.
+
+### <a name="to-build-the-dia2dump-sample-at-the-command-line"></a>Pour générer l’exemple Dia2Dump en ligne de commande
+
+1. Dans une fenêtre d’invite de commandes développeur, accédez au répertoire où vous avez copié les fichiers d’exemple. Si vous n’avez pas copier l’exemple vers un autre répertoire, vous devez utiliser avec une élévation de privilèges (exécuter en tant qu’administrateur) fenêtre d’invite de commandes développeur.
+
+1. Entrez la commande `nmake makefile` pour élaborer la configuration de débogage par défaut de dia2dump.exe.
+
+## <a name="run-the-dia2dump-sample"></a>Exécuter l’exemple Dia2Dump
+
+Dia2Dump.exe s’appuie sur le msdia*version*server .dll COM de fournir ses services. Dans Visual Studio 2015 et Visual Studio 2017, la version est msdia140.dll. Si le msdia*version*.dll COM serveur n’est pas initialisé, vous devez l’enregistrer dia2dump.exe peut fonctionner. Le répertoire de DIA SDK contient un sous-répertoire bin qui contient le x86 version de la DLL. Une version pour x64 machines de l’architecture est dans bin\amd64, et une version pour ARM est dans bin\arm. Pour inscrire la dll, ouvrez une fenêtre d’invite de commandes développeur avec élévation de privilèges et accédez au répertoire qui contient la version de votre architecture de l’ordinateur. Entrez la commande `regsvr32 msdia140.dll` pour inscrire le serveur COM.
+
+### <a name="to-run-the-sample"></a>Pour exécuter l'exemple
+
+1. Ouvrez une invite de commandes et accédez au répertoire qui contient le dia2dump.exe que vous avez créée.
+
+1. Entrez la commande `dia2dump filename` où *filename* est le nom d’un fichier PDB à examiner. Si le fichier PDB est dans un autre répertoire, utilisez le chemin d’accès complet au fichier en tant que *filename*. Cette commande répertorie toutes les données dans le fichier PDB.
+
+1. Dia2Dump a d’autres options pour afficher uniquement les informations sélectionnées. Utilisez le `dia2dump -?` commande pour répertorier toutes les options disponibles.
+
+## <a name="see-also"></a>Voir aussi
+
+- [Porter, migrer et mettre à niveau des projets Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
