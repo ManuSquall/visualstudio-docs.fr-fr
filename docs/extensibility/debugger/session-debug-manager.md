@@ -1,5 +1,5 @@
 ---
-title: Session de débogage Manager | Documents Microsoft
+title: Session de débogage Manager | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,26 +18,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 001c0b954cd47b9825a6982f2474d6fd6d415e23
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 109dce19f85e0742217c1c478b1b1687fd5a33e8
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126226"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276323"
 ---
 # <a name="session-debug-manager"></a>Gestionnaire de session de débogage
-Le Gestionnaire de session de débogage (SDM) gère n’importe quel nombre de moteurs de débogage (DE) n’importe quel nombre de programmes dans plusieurs processus sur n’importe quel nombre d’ordinateurs de débogage. En plus de constituer un moteur de débogage multiplexeur, le SDM fournit une vue unifiée de la session de débogage à l’IDE.  
+Le Gestionnaire de session de débogage (SDM) gère n’importe quel nombre de moteurs de débogage (dé) que le débogage n’importe quel nombre de programmes dans plusieurs processus sur un nombre illimité d’ordinateurs. En plus de constituer un multiplexeur de moteur de débogage, le SDM fournit une vue unifiée de la session de débogage à l’IDE.  
   
-## <a name="session-debug-manager-operation"></a>Opération Gestionnaire de session de débogage  
- Le Gestionnaire de session de débogage (SDM) gère le DE. Il peut y avoir plus d’un moteur de débogage en cours d’exécution sur un ordinateur en même temps. Pour multiplexer la norme DEs, le SDM encapsule un certain nombre d’interfaces à partir de la norme DEs et les expose à l’IDE comme une interface unique.  
+## <a name="session-debug-manager-operation"></a>Opération de gestionnaire de débogage de session  
+ Le Gestionnaire de session de débogage (SDM) gère l’Allemagne. Il peut y avoir plus d’un moteur de débogage en cours d’exécution sur un ordinateur en même temps. Pour multiplexer la norme DEs, le SDM encapsule un nombre d’interfaces à partir de la norme DEs et les expose à l’IDE comme une interface unique.  
   
- Pour améliorer les performances, certaines interfaces ne sont pas multiplexés. Au lieu de cela, ils sont utilisés directement à partir de la DE, et les appels à ces interfaces ne passent pas le SDM. Par exemple, les interfaces utilisées avec la mémoire, le code et les contextes de document ne sont pas multiplexés, car ils font référence à une instruction spécifique, la mémoire ou le document dans un programme spécifique de débogage par un spécifique DE. Aucune autre DE ne doit être associé à ce niveau de la communication.  
+ Pour améliorer les performances, certaines interfaces ne sont pas multiplexés. Au lieu de cela, ils sont utilisés directement à partir de l’Allemagne et les appels à ces interfaces ne passent pas par le SDM. Par exemple, les interfaces utilisées avec la mémoire, le code et les contextes de document ne sont pas multiplexés, car ils font référence à une instruction spécifique, la mémoire ou le document dans un programme spécifique de débogage par un spécifique DE. Aucune autre dé ne doit être impliqué dans ce niveau de la communication.  
   
- Cela n’est pas vrai pour tous les contextes. Les appels à l’interface de contexte d’évaluation expression passent par le SDM. Lors de l’évaluation d’expression, le SDM encapsule le [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interface qui permet à l’IDE, car lorsque cette expression est évaluée, elle peut impliquer DEs multiples que vous déboguez des programmes dans le même processus qui peuvent être en cours d’exécution sur le même thread.  
+ Cela n’est pas vrai pour tous les contextes. Les appels à l’interface de contexte d’évaluation expression passent par le SDM. Lors de l’évaluation d’expression, le SDM encapsule le [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interface il donne à l’IDE, car lorsque cette expression est évaluée, elle peut impliquer plusieurs DEs que déboguez des programmes dans le même processus qui peuvent être en cours d’exécution sur le même thread.  
   
- Le SDM sert généralement d’un mécanisme de délégation, mais il peut agir comme un mécanisme de diffusion. Par exemple, lors de l’évaluation d’expression, le SDM joue un mécanisme de diffusion pour notifier DEs tous les qu’ils peuvent exécuter du code sur un thread spécifié. De même, lorsque le SDM reçoit un événement d’arrêt, il diffuse sur tous les programmes qu’ils ne doivent plus en cours d’exécution. Lorsqu’une étape est appelée, le SDM diffuse à tous les programmes qu’ils peuvent continuer à s’exécuter. Points d’arrêt sont également diffusés à tous DE.  
+ Le SDM sert généralement d’un mécanisme de délégation, mais il peut agir comme un mécanisme de diffusion. Par exemple, lors de l’évaluation d’expression, le SDM agit comme un mécanisme de diffusion pour notifier DEs tous les qu’ils peuvent exécuter du code sur un thread spécifié. De même, lorsque le SDM reçoit un événement d’arrêt, il diffuse vers les programmes qu’il doivent s’arrêter. Lorsqu’une étape est appelée, le SDM diffuse vers les programmes qu’ils peuvent continuer à s’exécuter. Points d’arrêt sont également diffusés à chaque DE.  
   
- Le SDM ne suit pas le programme en cours, le thread ou le frame de pile. Le processus, le programme et le thread informations sont envoyées vers le SDM conjointement avec les événements de débogage spécifiques.  
+ Le SDM ne suit pas le programme en cours, le thread ou le frame de pile. Le processus, programme et informations sur le thread sont envoyés vers le SDM conjointement avec les événements de débogage spécifiques.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Moteur de débogage](../../extensibility/debugger/debug-engine.md)   
