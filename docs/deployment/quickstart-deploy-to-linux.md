@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 9f79cef595b3a58426b596fc1019c59b801a02d5
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: aa4afce6ef50284f1f966054e805b55c86f4daaf
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252360"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341746"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Publier une application ASP.NET Core sur App Service sur Linux à l’aide de Visual Studio
 
@@ -45,6 +45,13 @@ Déploiement sur App Service sur Linux à l’aide du **publier** outil nécessi
 1. Sélectionnez **Créer**. Visual Studio déploie l’application sur votre Azure App Service, et l’application web se charge dans votre navigateur. Les propriétés du projet **publier** volet affiche l’URL du site et autres détails.
 
     ![Publier le volet des propriétés affichant un profil de résumé](../deployment/media/quickstart-publish-app-service-summary.png)
+
+## <a name="clean-up-resources"></a>Nettoyer les ressources
+
+Les étapes précédentes, vous avez créé des ressources Azure dans un groupe de ressources. Si vous ne pensez pas avoir besoin de ces ressources à l’avenir, vous pouvez les supprimer en supprimant le groupe de ressources.
+Dans le menu de gauche dans le portail Azure, sélectionnez **groupes de ressources** , puis sélectionnez **myResourceGroup**.
+Sur la page de groupe de ressources, assurez-vous que les ressources répertoriées sont ceux que vous souhaitez supprimer.
+Sélectionnez **supprimer**, type **myResourceGroup** dans la zone de texte, puis sélectionnez **supprimer**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
