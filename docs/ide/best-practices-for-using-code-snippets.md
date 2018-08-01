@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52845b2d8f08486f84422957ce8f38a95c1a4d31
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b8c7a04f2a2fb2ef59a41953c82da4254f213084
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923679"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179529"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Bonnes pratiques pour l’utilisation des extraits de code
 

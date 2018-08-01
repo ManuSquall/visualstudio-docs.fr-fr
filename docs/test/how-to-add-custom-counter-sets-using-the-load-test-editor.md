@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 862afc0755e8d478d5e8bca76019abd899d842f8
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d9143306b9f3894e7f8f6742420f90aa30008340
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752012"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204087"
 ---
-# <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Comment : ajouter des ensembles de compteurs personnalisés à l'aide de l'éditeur de test de charge
+# <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Guide pratique pour ajouter des ensembles de compteurs personnalisés à l’aide de l’éditeur de test de charge
 
 Quand vous créez un test de charge avec l’**Assistant Nouveau test de charge**, vous ajoutez un ensemble initial de compteurs. Ceux-ci vous offrent un groupe d'ensembles de compteurs prédéfinis pour votre test de charge.
 
@@ -39,7 +39,7 @@ Vous gérez vos compteurs dans l’**éditeur de test de charge**. Les ensembles
 3.  Cliquez avec le bouton droit sur le nœud **Ensembles de compteurs**, puis sélectionnez **Ajouter un ensemble de compteurs personnalisés**.
 
     > [!NOTE]
-    > L’ensemble de compteurs se voit attribuer un nom par défaut, par exemple **Personnalisé1**. Vous pouvez changer le nom dans la fenêtre **Propriétés**. Appuyez sur F4 pour afficher la fenêtre **Propriétés**.
+    > L’ensemble de compteurs se voit attribuer un nom par défaut, par exemple **Personnalisé1**. Vous pouvez changer le nom dans la fenêtre **Propriétés**. Appuyez sur **F4** pour afficher la fenêtre **Propriétés**.
 
 4.  Pour ajouter des compteurs à votre ensemble de compteurs personnalisés, cliquez avec le bouton droit sur le nouvel ensemble de compteurs, puis choisissez **Ajouter des compteurs**. Pour plus d’informations sur l’ajout de compteurs, consultez [Guide pratique pour ajouter des compteurs à des ensembles de compteurs](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md).
 
@@ -48,5 +48,5 @@ Vous gérez vos compteurs dans l’**éditeur de test de charge**. Les ensembles
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Spécification des ensembles de compteurs et des règles de seuil pour les ordinateurs dans un test de charge](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Configuration des paramètres d’exécution des tests de charge](../test/configure-load-test-run-settings.md)
+- [Spécifier les ensembles de compteurs et les règles de seuil des ordinateurs dans un test de charge](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
+- [Configurer les paramètres d’exécution des tests de charge](../test/configure-load-test-run-settings.md)

@@ -14,25 +14,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 482336bca7c177b3c4fdcb0f16faf7ea96d6c34b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8ebd3a356eab88c53d2aa7bea7f27be3ccc0749e
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975919"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179677"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Comment : créer un plug-in de test de charge
 
 Vous pouvez créer un plug-in de test de charge pour exécuter du code à différents stades de l'exécution du test de charge. Vous pouvez créer un plug-in pour développer ou modifier la fonctionnalité intégrée du test de charge. Par exemple, vous pouvez coder un plug-in de test de charge pour définir ou modifier le modèle de test de charge pendant l'exécution du test de charge. Pour cela, vous devez créer une classe qui hérite de l'interface de <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>. Cette classe doit implémenter la méthode <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> de cette interface. Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
 
 > [!NOTE]
-> Vous pouvez également créer des plug-ins pour les tests de performances de site web. Pour plus d’informations, consultez [Guide pratique pour créer un plug-in de test de performances web](../test/how-to-create-a-web-performance-test-plug-in.md).
+> Vous pouvez également créer des plug-ins pour les tests de performances web. Pour plus d’informations, consultez [Guide pratique pour créer un plug-in de test de performances web](../test/how-to-create-a-web-performance-test-plug-in.md).
 
 ## <a name="to-create-a-load-test-plug-in-by-using-visual-c"></a>Pour créer un plug-in de test de charge à l'aide de Visual C#
 
-1.  Ouvrez un projet de test de performances de site web et de charge qui contient un test de performances de site web.
+1.  Ouvrez un projet de test de performances web et de charge qui contient un test de performances web.
 
-2.  Ajoutez un test de charge au projet de test et configurez-le pour exécuter un test de performances de site Web.
+2.  Ajoutez un test de charge au projet de test et configurez-le pour exécuter un test de performances web.
 
      Pour plus d’informations, consultez [Guide pratique pour créer un projet de test de charge](../test/quickstart-create-a-load-test-project.md).
 
@@ -83,20 +83,20 @@ Vous pouvez créer un plug-in de test de charge pour exécuter du code à diffé
 22. Dans le volet **Propriétés du plug-in sélectionné**, définissez les valeurs initiales du plug-in à utiliser au moment de l’exécution.
 
     > [!NOTE]
-    > Vous pouvez exposer autant de propriétés que vous souhaitez de vos plug-ins ; il suffit de les rendre publics, définissables et d'un type de base, tel qu'un entier, une valeur booléenne ou une chaîne. Vous pouvez également modifier ultérieurement les propriétés du plug-in de test de performances de site web dans la fenêtre Propriétés.
+    > Vous pouvez exposer autant de propriétés que vous souhaitez de vos plug-ins ; il suffit de les rendre publics, définissables et d'un type de base, tel qu'un entier, une valeur booléenne ou une chaîne. Vous pouvez également modifier ultérieurement les propriétés du plug-in de test de performances web dans la fenêtre Propriétés.
 
 23. Cliquez sur **OK**.
 
      Le plug-in est ajouté au dossier **Plug-ins de test de charge**.
 
     > [!WARNING]
-    > Vous pouvez obtenir une erreur semblable au cas suivant lorsque vous exécutez un test de performances de site web ou un test de charge qui utilise votre plug-in :
+    > Vous pouvez obtenir une erreur semblable au cas suivant lorsque vous exécutez un test de performances web ou un test de charge qui utilise votre plug-in :
     >
     > **Échec de la requête : exception dans le \<plug-in> événement : Impossible de charger le fichier ou l’assembly '\<"Nom du plug-in".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' ou l’une de ses dépendances. Le système ne parvient pas à localiser le fichier spécifié.**
     >
     > Cela se produit si vous effectuez des modifications du code dans l’un de vos plug-ins et si vous créez une autre version de la DLL **(Version=0.0.0.0)**. Toutefois, le plug-in fait toujours référence à la version du plug-in d’origine. Pour résoudre ce problème, procédez comme suit :
     >
-    > 1.  Dans votre projet de test de performances de site web et de charge, un message d'avertissement s'affiche dans les références. Supprimez et rajoutez la référence à la DLL de votre plug-in.
+    > 1.  Dans le projet de test de performances web et de charge, un message d’avertissement s’affiche dans les références. Supprimez et rajoutez la référence à la DLL de votre plug-in.
     > 2.  Supprimez le plug-in de votre test ou de l'emplacement approprié, puis rajoutez-le.
 
 ## <a name="example"></a>Exemple

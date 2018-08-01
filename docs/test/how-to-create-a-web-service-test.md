@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2ae66ff032b3f43f80f8c00b12e2d344bba298b9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: de90977a239bf728de3fa98978fd134a014200db
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970702"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180072"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Comment : créer un test de service Web
 
-Vous pouvez utiliser un test de performances de site web pour tester des services web. À l’aide des options **Insérer une requête** et **Insérer une requête de service web**, vous pouvez personnaliser les requêtes individuelles dans **l’éditeur de test de performances web** pour localiser des pages de service web. En général, vous n'affichez pas ces pages dans l'applications web. Par conséquent, vous devez personnaliser la requête pour accéder à ces pages.
+Vous pouvez utiliser un test de performances web pour tester des services web. À l’aide des options **Insérer une requête** et **Insérer une requête de service web**, vous pouvez personnaliser les requêtes individuelles dans **l’éditeur de test de performances web** pour localiser des pages de service web. En général, vous n'affichez pas ces pages dans l'application web. Par conséquent, vous devez personnaliser la requête pour accéder à ces pages.
 
 Les procédures suivantes utilisent un service web contenu dans le Starter Kit Commerce. Vous pouvez le télécharger à partir du lien [Starter Kit ASP.NET Commerce](http://go.microsoft.com/fwlink/?LinkId=181469).
 
@@ -31,7 +31,7 @@ Les procédures suivantes utilisent un service web contenu dans le Starter Kit C
 
 ## <a name="to-test-a-web-service"></a>Pour tester un service web
 
-1.  Créer un test de performances de site web. Dès que le navigateur s’ouvre, choisissez **Arrêter**.
+1.  Créez un test de performances web. Dès que le navigateur s’ouvre, choisissez **Arrêter**.
 
 2.  Dans **l’éditeur de test de performances web**, cliquez avec le bouton droit sur le test de performances web et sélectionnez **Ajouter une requête de service web**.
 
@@ -71,7 +71,7 @@ Les procédures suivantes utilisent un service web contenu dans le Starter Kit C
     > [!NOTE]
     > Vous pouvez utiliser la liaison de données dans le corps SOAP pour remplacer n'importe quelle valeur d'espace réservé par des valeurs liées aux données à l'aide de la syntaxe `{{DataSourceName.TableName.ColumnName}}`.
 
-13. Exécutez le test. Dans le volet supérieur de l'Afficheur des résultats des tests de performances de site web, sélectionnez la requête de service web. Dans le volet inférieur, sélectionnez l'onglet Navigateur Web. Le XML qui est retourné par le service web et les résultats de toutes les opérations sont affichés.
+13. Exécutez le test. Dans le volet supérieur de l'**Afficheur des résultats des tests de performances web**, sélectionnez la requête de service web. Dans le volet inférieur, sélectionnez l'onglet Navigateur Web. Le XML qui est retourné par le service web et les résultats de toutes les opérations sont affichés.
 
 ## <a name="see-also"></a>Voir aussi
 

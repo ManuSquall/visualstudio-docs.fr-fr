@@ -12,12 +12,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 41d1a3a88230ed38d4d9688c2f07cdf099e2464b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 045781b8a990030fd988e07f2aa6490a5bd3ca56
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31070949"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232346"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Générer une application OpenGL ES sur Android et iOS
 Quand vous installez l’option Développement multiplateforme en Visual C++ pour appareils mobiles, vous pouvez créer des solutions et des projets Visual Studio pour des applications iOS et Android qui partagent du code commun. Cette rubrique vous guide tout au long d’un modèle de solution qui crée une application iOS simple et une application Android Native Activity. Les applications ont en commun une partie de code C++ qui utilise OpenGL ES pour afficher le même cube pivotant animé sur chaque plateforme. OpenGL ES (OpenGL for Embedded Systems ou GLES) est une API graphique 2D et 3D qui est prise en charge par de nombreux appareils mobiles.  
@@ -29,7 +29,7 @@ Quand vous installez l’option Développement multiplateforme en Visual C++ pou
  [Personnaliser vos applications](#Customize)  
   
 ##  <a name="req"></a> Configuration requise  
- Avant de pouvoir créer une application OpenGL ES pour iOS et Android, vous devez vous assurer que votre système répond à la configuration requise. Vous devez installer l’option Visual C++ pour le développement mobile multiplateforme dans Visual Studio 2015. Assurez-vous que les SDK et les outils tiers requis sont inclus dans l’installation, et que l’Émulateur Visual Studio pour Android est installé. Pour obtenir plus d’informations et des instructions détaillées, consultez [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Pour générer et tester l’application iOS, vous devez disposer d’un ordinateur Mac configuré conformément aux instructions d’installation. Pour plus d’informations sur la configuration requise pour développer du code pour iOS, consultez [Install And Configure Tools to Build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
+ Avant de pouvoir créer une application OpenGL ES pour iOS et Android, vous devez vous assurer que votre système répond à la configuration requise. Vous devez installer l’option Visual C++ pour le développement mobile multiplateforme dans Visual Studio 2015. Assurez-vous que les SDK et les outils tiers requis sont inclus dans l’installation, et que l’Émulateur Visual Studio pour Android est installé. Pour obtenir plus d’informations et des instructions détaillées, consultez [Installer Visual C++ pour le développement mobile multiplateforme](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Pour générer et tester l’application iOS, vous devez disposer d’un ordinateur Mac configuré conformément aux instructions d’installation. Pour plus d’informations sur la configuration requise pour développer du code pour iOS, consultez [Installer et configurer des outils de génération en utilisant iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
   
 ##  <a name="Create"></a> Créer un projet Application OpenGLES  
  Dans ce didacticiel, vous allez tout d’abord créer un projet Application OpenGLES, puis vous allez générer et exécuter l’application par défaut dans l’Émulateur Visual Studio pour Android. Ensuite, vous allez générer l’application pour iOS et exécuter l’application dans iOS Simulator.  
@@ -50,17 +50,17 @@ Quand vous installez l’option Développement multiplateforme en Visual C++ pou
   
  La nouvelle solution Application OpenGLES comprend trois projets de bibliothèque et deux projets d’application. Le dossier de bibliothèques inclut un projet de code partagé et deux projets spécifiques à la plateforme qui référencent le code partagé :  
   
--   **MyOpenGLESApp.Android.NativeActivity** contient les références et le code de type glue qui implémente votre application en tant que Native Activity sur Android. L’implémentation des points d’entrée à partir du code de type glue se trouve dans main.cpp, qui comprend le code commun partagé dans MyOpenGLESApp.Shared. Les en-têtes précompilés sont dans pch.h. Ce projet d’application Native Activity est compilé en fichier de bibliothèque partagée (.so), qui est utilisé par le projet MyOpenGLESApp.Android.Packaging.  
+-   `MyOpenGLESApp.Android.NativeActivity` contient les références et le code de type glue qui implémente votre application en tant que Native Activity sur Android. L’implémentation des points d’entrée à partir du code de type glue se trouve dans *main.cpp*, qui comprend le code commun partagé dans `MyOpenGLESApp.Shared`. Les en-têtes précompilés sont dans *pch.h*. Ce projet d’application Native Activity est compilé en fichier de bibliothèque partagée (*.so*), qui est utilisé par le projet `MyOpenGLESApp.Android.Packaging`.  
   
--   **MyOpenGLESApp.iOS.StaticLibrary** crée un fichier de bibliothèque statique (.a) iOS qui contient le code partagé dans MyOpenGLESApp.Shared. Il est lié à l’application créée par le projet MyOpenGLESApp.iOS.Application.  
+-   `MyOpenGLESApp.iOS.StaticLibrary` Crée un fichier de bibliothèque statique iOS (*.a*) qui contient le code partagé dans `MyOpenGLESApp.Shared`. Il est lié à l’application créée par le projet `MyOpenGLESApp.iOS.Application`.  
   
--   **MyOpenGLESApp.Shared** contient le code partagé qui fonctionne sur plusieurs plateformes. Il utilise des macros de préprocesseur pour compiler de façon conditionnelle le code spécifique à la plateforme. Le code partagé est récupéré par la référence de projet dans MyOpenGLESApp.Android.NativeActivity et MyOpenGLESApp.iOS.StaticLibrary.  
+-   `MyOpenGLESApp.Shared` contient le code partagé qui fonctionne sur plusieurs plateformes. Il utilise des macros de préprocesseur pour compiler de façon conditionnelle le code spécifique à la plateforme. Le code partagé est récupéré par la référence de projet à la fois dans `MyOpenGLESApp.Android.NativeActivity` et dans `MyOpenGLESApp.iOS.StaticLibrary`.  
   
  La solution comporte deux projets visant à générer des applications pour les plateformes Android et iOS :  
   
--   **MyOpenGLESApp.Android.Packaging** crée le fichier .apk pour le déploiement sur un émulateur ou un appareil Android. Il contient les ressources et le fichier AndroidManifest.xml où vous avez défini les propriétés de manifeste. Il contient aussi le fichier build.xml qui contrôle le processus de génération Ant. Il est configuré comme projet de démarrage par défaut et peut donc être déployé et exécuté directement à partir de Visual Studio.  
+-   `MyOpenGLESApp.Android.Packaging` crée le fichier *.apk* pour le déploiement sur un émulateur ou un appareil Android. Il contient les ressources et le fichier AndroidManifest.xml où vous avez défini les propriétés de manifeste. Il contient aussi le fichier *build.xml* qui contrôle le processus de génération Ant. Il est configuré comme projet de démarrage par défaut et peut donc être déployé et exécuté directement à partir de Visual Studio.  
   
--   **MyOpenGLESApp.iOS.Application** contient les ressources et le code de type glue Objective-C nécessaires pour créer une application iOS liée au code de la bibliothèque statique C++ dans MyOpenGLESApp.iOS.StaticLibrary. Ce projet crée un package de build qui est transféré vers votre Mac par Visual Studio et l’agent distant. Quand vous générez ce projet, Visual Studio envoie les fichiers et les commandes pour générer et déployer votre application sur le Mac.  
+-   **MyOpenGLESApp.iOS.Application** contient les ressources et le code de type glue Objective-C nécessaires pour créer une application iOS liée au code de la bibliothèque statique C++ dans `MyOpenGLESApp.iOS.StaticLibrary`. Ce projet crée un package de build qui est transféré vers votre Mac par Visual Studio et l’agent distant. Quand vous générez ce projet, Visual Studio envoie les fichiers et les commandes pour générer et déployer votre application sur le Mac.  
   
 ##  <a name="BuildAndroid"></a> Générer et exécuter l’application Android  
  La solution créée par le modèle définit l’application Android en tant que projet par défaut.  Vous pouvez générer et exécuter cette application pour vérifier votre installation et votre configuration. Pour un test initial, exécutez l’application sur l’un des profils d’appareils installés par l’Émulateur Visual Studio pour Android. Si vous préférez tester votre application sur une autre cible, vous pouvez charger l’émulateur cible ou connecter l’appareil à votre ordinateur.  
@@ -73,7 +73,7 @@ Quand vous installez l’option Développement multiplateforme en Visual C++ pou
   
      Utilisez x86 pour cibler l’émulateur Android pour Windows. Si vous ciblez un appareil, choisissez la plateforme de solution basée sur le processeur de l’appareil. Si la liste **Plateformes solution** n’est pas visible, choisissez **Plateformes solution** dans la liste **Ajouter/supprimer des boutons**, puis choisissez votre plateforme.  
   
-2.  Dans l’ **Explorateur de solutions**, ouvrez le menu contextuel du projet MyOpenGLESApp.Android.Packaging, puis choisissez **Générer**.  
+2.  Dans **l’Explorateur de solutions**, ouvrez le menu du projet `MyOpenGLESApp.Android.Packaging`, puis choisissez **Générer**.  
   
      ![Générer un projet de package Android](../cross-platform/media/cppmdd_opengles_andbuild.png "CPPMDD_OpenGLES_AndBuild")  
   
@@ -95,7 +95,7 @@ Quand vous installez l’option Développement multiplateforme en Visual C++ pou
   
      Une fois l’application démarrée, vous pouvez définir des points d’arrêt et utiliser le débogueur pour parcourir le code, examiner les variables locales et observer les valeurs.  
   
-5.  Appuyez sur Maj+F5 pour arrêter le débogage.  
+5.  Appuyez sur **Maj**+**F5** pour arrêter le débogage.  
   
      L’émulateur est un processus distinct qui continue à s’exécuter. Vous pouvez modifier, compiler et déployer votre code plusieurs fois sur le même émulateur. Vous pouvez démarrer votre application directement à partir de la collection d’applications dans laquelle elle apparaît sur l’émulateur.  
   
@@ -104,7 +104,7 @@ Quand vous installez l’option Développement multiplateforme en Visual C++ pou
  Visual Studio génère les projets Android Native Activity à l’aide du NDK Android, ce dernier utilisant l’ensemble d’outils de plateforme Clang. Visual Studio mappe les propriétés du projet NativeActivity aux commutateurs et options de ligne de commande servant aux opérations de compilation, de liaison et de débogage sur la plateforme cible. Pour plus d’informations, ouvrez la boîte de dialogue **Pages de propriétés** pour le projet MyOpenGLESApp.Android.NativeActivity. Pour plus d’informations sur les commutateurs de ligne de commande, consultez le [manuel de l’utilisateur du compilateur Clang](http://clang.llvm.org/docs/UsersManual.html).  
   
 ##  <a name="BuildIOS"></a> Générer et exécuter l’application iOS  
- Le projet d’application iOS est créé et modifié dans Visual Studio, mais du fait de restrictions de licences, il doit être créé et déployé sur un Mac. Visual Studio communique avec un agent distant s’exécutant sur le Mac pour transférer les fichiers du projet et exécuter les commandes de génération, de déploiement et de débogage. Vous devez installer et configurer votre Mac et Visual Studio pour communiquer avant de générer l’application iOS. Pour obtenir des instructions détaillées, consultez [Install And Configure Tools to Build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Une fois que l’agent distant est en cours d’exécution et que Visual Studio est associé à votre Mac, vous pouvez générer et exécuter l’application iOS pour vérifier votre installation et votre configuration.  
+ Le projet d’application iOS est créé et modifié dans Visual Studio, mais du fait de restrictions de licences, il doit être créé et déployé sur un Mac. Visual Studio communique avec un agent distant s’exécutant sur le Mac pour transférer les fichiers du projet et exécuter les commandes de génération, de déploiement et de débogage. Vous devez installer et configurer votre Mac et Visual Studio pour communiquer avant de générer l’application iOS. Pour obtenir des instructions détaillées, consultez [Installer et configurer des outils de génération en utilisant iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Une fois que l’agent distant est en cours d’exécution et que Visual Studio est associé à votre Mac, vous pouvez générer et exécuter l’application iOS pour vérifier votre installation et votre configuration.  
   
 #### <a name="to-build-and-run-the-ios-app"></a>Pour générer et exécuter l’application iOS  
   
@@ -124,7 +124,7 @@ Quand vous installez l’option Développement multiplateforme en Visual C++ pou
   
      La fenêtre Sortie affiche la sortie du processus de génération pour la bibliothèque statique iOS et l’application iOS. Sur le Mac, la fenêtre Terminal exécutant l’agent distant affiche la commande et l’activité de transfert de fichier.  
   
-     Sur votre ordinateur Mac, vous pouvez être invité à accepter une demande de signature de code. Cliquez sur Autoriser pour continuer.  
+     Sur votre ordinateur Mac, vous pouvez être invité à accepter une demande de signature de code. Cliquez sur **Autoriser** pour continuer.  
   
 4.  Choisissez **iOS Simulator** dans la barre d’outils pour exécuter l’application dans iOS Simulator sur votre Mac. Le démarrage du simulateur peut prendre quelques instants. Vous devrez peut-être mettre le simulateur au premier plan sur votre Mac pour visualiser sa sortie.  
   
@@ -134,16 +134,16 @@ Quand vous installez l’option Développement multiplateforme en Visual C++ pou
   
      ![Débogueur au point d’arrêt dans une application iOS](../cross-platform/media/cppmdd_opengles_iosdebug.png "CPPMDD_OpenGLES_iOSDebug")  
   
-5.  Appuyez sur Maj+F5 pour arrêter le débogage.  
+5.  Appuyez sur **Maj**+**F5** pour arrêter le débogage.  
   
      iOS Simulator est un processus distinct qui continue à s’exécuter sur votre Mac. Vous pouvez modifier, compiler et déployer votre code plusieurs fois sur la même instance d’iOS Simulator. Vous pouvez également exécuter votre code directement dans le simulateur une fois le déploiement terminé.  
   
- Les projets de bibliothèque et d’application iOS générés placent le code C++ dans une bibliothèque statique qui implémente uniquement le code partagé. La majeure partie du code d’application se trouve dans le projet Application. Les appels au code de bibliothèque partagée dans ce modèle de projet sont effectués dans le fichier GameViewController.m. Pour générer votre application iOS, Visual Studio utilise l’ensemble d’outils de plateforme Xcode, celui-ci nécessitant une communication avec un client distant qui s’exécute sur un Mac.  
+ Les projets de bibliothèque et d’application iOS générés placent le code C++ dans une bibliothèque statique qui implémente uniquement le code partagé. La majeure partie du code d’application se trouve dans le projet `Application`. Les appels au code de bibliothèque partagée dans ce modèle de projet sont effectués dans le fichier *GameViewController.m*. Pour générer votre application iOS, Visual Studio utilise l’ensemble d’outils de plateforme Xcode, celui-ci nécessitant une communication avec un client distant qui s’exécute sur un Mac.  
   
  Visual Studio transfère les fichiers de projet et envoie les commandes au client distant pour générer l’application à l’aide de la plateforme Xcode. Le client distant renvoie les informations d’état de build à Visual Studio. Une fois l’application générée, vous pouvez utiliser Visual Studio pour envoyer des commandes en vue d’exécuter et de déboguer l’application. Le débogueur dans Visual Studio contrôle l’application en cours d’exécution dans iOS Simulator (sur votre Mac) ou sur un appareil iOS attaché. Visual Studio mappe les propriétés du projet StaticLibrary aux commutateurs et options de ligne de commande servant aux opérations de génération, de liaison et de débogage sur la plateforme iOS cible. Pour obtenir les détails de l’option de ligne de commande du compilateur, ouvrez la boîte de dialogue **Pages de propriétés** du projet MyOpenGLESApp.iOS.StaticLibrary.  
   
 ##  <a name="Customize"></a> Personnaliser vos applications  
- Vous pouvez modifier le code C++ partagé pour ajouter ou modifier des fonctionnalités communes. Vous devez modifier les appels au code partagé dans les projets MyOpenGLESApp.Android.NativeActivity et MyOpenGLESApp.iOS.Application pour les faire correspondre. Vous pouvez utiliser des macros de préprocesseur pour spécifier des sections spécifiques à la plateforme dans votre code commun. La macro de préprocesseur `__ANDROID__` est prédéfinie quand vous générez pour Android. La macro de préprocesseur `__APPLE__` est prédéfinie quand vous générez pour iOS.  
+ Vous pouvez modifier le code C++ partagé pour ajouter ou modifier des fonctionnalités communes. Vous devez modifier les appels au code partagé dans les projets `MyOpenGLESApp.Android.NativeActivity` et `MyOpenGLESApp.iOS.Application` pour établir une correspondance. Vous pouvez utiliser des macros de préprocesseur pour spécifier des sections spécifiques à la plateforme dans votre code commun. La macro de préprocesseur `__ANDROID__` est prédéfinie quand vous générez pour Android. La macro de préprocesseur `__APPLE__` est prédéfinie quand vous générez pour iOS.  
   
  Pour bénéficier de la fonctionnalité IntelliSense pour une plateforme de projet spécifique, choisissez le projet dans la liste déroulante du sélecteur de contexte dans la barre Navigation en haut de la fenêtre de l’éditeur.  
   

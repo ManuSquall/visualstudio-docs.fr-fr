@@ -32,16 +32,16 @@ f1_keywords:
 - VC.Project.VCLinkerTool.LibraryDependencies
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 3611268c17d26328d131eacafb92b1ce55c7d07f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1b491257c561af337afdfd0d066c9ed8cd550c15
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31065879"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39230946"
 ---
 # <a name="clang-linker-properties-android-c"></a>Propriétés de l’éditeur de liens Clang (Android C++)
 
-Propriété | Description | Options
+Property | Description | Options
 --- | ---| ---
 Fichier de sortie | L’option substitue le nom et l’emplacement par défaut du programme créé par l’éditeur de liens. (-o)
 Afficher la progression | Affiche les messages de progression de l’éditeur de liens.
@@ -63,4 +63,4 @@ Nécessiter une pile exécutable | Cette option marque la sortie en indiquant qu
 Archive complète | L’archive complète utilise l’ensemble du code des sources et des dépendances supplémentaires.
 Options supplémentaires | Options supplémentaires.
 Dépendances supplémentaires | Spécifie les éléments supplémentaires à ajouter à la ligne de commande de l’éditeur de liens.
-Dépendances de bibliothèque | Cette option permet de spécifier des bibliothèques supplémentaires à ajouter à la ligne de commande de l’éditeur de liens. Les bibliothèques supplémentaires sont ajoutées à la fin de la ligne de commande de l’éditeur de liens. Elles commencent par 'lib' et finissent par l’extension '.a' ou '.so'.  (-lFILE)
+Dépendances de bibliothèque | Cette option permet de spécifier des bibliothèques supplémentaires à ajouter à la ligne de commande de l’éditeur de liens. Les bibliothèques supplémentaires sont ajoutées à la fin de la ligne de commande de l’éditeur de liens. Elles commencent par *lib* et finissent par l’extension *.a* ou *.so*.  (-lFILE)

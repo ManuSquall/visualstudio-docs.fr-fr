@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 69b1179763433213539af81bf29e34d09e98bf3b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 886abf16e958afd2870399c7dfdef55cb27e108f
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750283"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39206828"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Démarrage rapide : analyser les données d’utilisation de l’UC dans Visual Studio (code managé)
 
@@ -26,12 +26,9 @@ Visual Studio fournit de nombreuses fonctionnalités puissantes qui vous permett
 
 Le hub de diagnostic propose de nombreuses autres options pour exécuter et gérer votre session de diagnostic. Si l’outil **Utilisation de l’UC** décrit ici ne vous fournit pas les données dont vous avez besoin, les [autres outils de profilage](../profiling/profiling-feature-tour.md) fournissent d’autres types d’informations qui peuvent vous être utiles. Dans de nombreux cas, le goulot d’étranglement des performances de votre application peut ne pas provenir de votre processeur, mais de la mémoire, de l’interface utilisateur de rendu ou du temps de requête réseau. Le hub de diagnostic vous offre de nombreuses autres options pour enregistrer et analyser ce type de données.
 
-> [!NOTE]
-> Pour .NET Core et ASP.NET Core, l’outil Utilisation de l’UC ne fournit pas de résultats précis avec les fichiers PBD portables. Utilisez des fichiers PDB complets à la place.
-
 ## <a name="create-a-project"></a>Créer un projet
 
-1. Dans Visual Studio, sélectionnez **Fichier > Nouveau projet**.
+1. Dans Visual Studio, sélectionnez **Fichier** > **Nouveau projet**.
 
 2. Sous **Visual C#** ou **Visual Basic**, choisissez **Windows Desktop** puis, dans le volet central, choisissez **Application console (.NET Framework)**.
 
@@ -39,7 +36,7 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
 
     Visual Studio crée le projet.
 
-2. Ouvrez le fichier Program.cs et remplacez tout le code par le code suivant :
+2. Ouvrez le fichier *Program.cs* et remplacez tout le code par le code suivant :
 
     ```csharp
     using System;
@@ -158,9 +155,9 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
     ```
 
     > [!NOTE]
-    > En Visual Basic, vérifiez que l’objet de démarrage est défini sur `Sub Main` (**Propriétés > Applications > Objet de démarrage**).
+    > En Visual Basic, vérifiez que l’objet de démarrage est défini sur `Sub Main` (**Propriétés** > **Applications** > **Objet de démarrage**).
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Étape 1 : Collecter les données de profilage
+##  <a name="step-1-collect-profiling-data"></a>Étape 1 : Collecter les données de profilage
 
 1.  Tout d’abord, définissez un point d’arrêt dans votre application sur cette ligne de code dans la fonction `Main` :
 
@@ -179,9 +176,9 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
     > [!TIP]
     > En définissant deux points d’arrêt, vous limitez la collecte de données aux sections de code que vous souhaitez analyser.
 
-3.  La fenêtre **Outils de diagnostic** est déjà visible, sauf si vous l’avez désactivée. Pour réafficher la fenêtre, cliquez sur **Déboguer / Fenêtres / Afficher les outils de diagnostic**.
+3.  La fenêtre **Outils de diagnostic** est déjà visible, sauf si vous l’avez désactivée. Pour réafficher la fenêtre, cliquez sur **Déboguer** > **Fenêtres** > **Afficher les outils de diagnostic**.
 
-4.  Cliquez sur **Déboguer / Démarrer le débogage** (ou **Démarrer** dans la barre d’outils, ou **F5**).
+4.  Cliquez sur **Déboguer** > **Démarrer le débogage** (ou bien sur **Démarrer** dans la barre d’outils, ou sur **F5**).
 
      Quand l’application est chargée, la vue **Résumé** des outils de diagnostics s’affiche.
 
@@ -193,7 +190,7 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
 
      Quand vous choisissez **Enregistrer le profil du processeur**, Visual Studio commence l’enregistrement de vos fonctions (notamment leur durée d’exécution) et fournit un graphique chronologique qui vous permet de vous concentrer sur des segments spécifiques de la session d’échantillonnage. Vous pouvez afficher ces données collectées uniquement quand votre application est interrompue à un point d’arrêt.
 
-6.  Appuyez sur F5 pour exécuter l’application jusqu’au deuxième point d’arrêt.
+6.  Appuyez sur **F5** pour exécuter l’application jusqu’au deuxième point d’arrêt.
 
      Vous disposez maintenant de données de performances pour votre application, et plus spécifiquement pour la région de code qui s’exécute entre les deux points d’arrêt.
 
@@ -203,7 +200,7 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
 
      À ce stade, vous pouvez commencer à analyser les données.
 
-## <a name="Step2"></a> Étape 2 : Analyser les données d’utilisation de l’UC
+## <a name="step-2-analyze-cpu-usage-data"></a>Étape 2 : Analyser les données d’utilisation de l’UC
 
 Nous vous recommandons de commencer à analyser vos données en examinant la liste des fonctions située sous l’onglet Utilisation de l’UC, en identifiant les fonctions qui effectuent la plus grande partie du travail, puis en analysant ces fonctions les unes après les autres.
 
@@ -238,4 +235,4 @@ Nous vous recommandons de commencer à analyser vos données en examinant la lis
 ## <a name="see-also"></a>Voir aussi
 
 - [Profilage dans Visual Studio](../profiling/index.md)
-- [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md)
+- [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)
