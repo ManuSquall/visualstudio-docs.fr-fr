@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26c561c259641ce7bed118d8e4aa71c383b29b67
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 5f4f886e6c6d1ec09700eefa3c7289c9cb918ecc
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327009"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155046"
 ---
-# <a name="otherwise-element-msbuild"></a>Otherwise, élément (MSBuild)
+# <a name="otherwise-element-msbuild"></a>Élément Otherwise (MSBuild)
 Spécifie le bloc de code à exécuter si et seulement si les conditions de tous les éléments `When` correspondent à la valeur `false`.  
 
  \<Project>  
@@ -123,5 +123,5 @@ Spécifie le bloc de code à exécuter si et seulement si les conditions de tous
 ```  
 
 ## <a name="see-also"></a>Voir aussi  
- [Constructions conditionnelles MSBuild](../msbuild/msbuild-conditional-constructs.md)   
- [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+ [Constructions conditionnelles](../msbuild/msbuild-conditional-constructs.md)   
+ [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

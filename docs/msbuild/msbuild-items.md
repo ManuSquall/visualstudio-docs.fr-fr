@@ -1,5 +1,6 @@
 ---
 title: Éléments MSBuild | Microsoft Docs
+description: Utiliser l’attribut MSBuild Include d’ItemGroup pour spécifier les fichiers à inclure dans une build
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: msbuild
@@ -12,51 +13,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d860d2d80cbb93c36a75c56a73895a401bc47660
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5f7215817907e729b1e6cfcdfa07a0eaa307a7eb
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31577533"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204126"
 ---
 # <a name="msbuild-items"></a>Éléments MSBuild
-Les éléments MSBuild sont des entrées du système de génération qui représentent généralement des fichiers. Les éléments sont regroupés en différents types selon leurs noms d’élément. Les types d’élément sont des listes nommées d’éléments qui peuvent être utilisés comme paramètres pour les tâches. Les tâches utilisent les valeurs d’élément pour exécuter les étapes du processus de génération.  
+Les éléments MSBuild sont des entrées du système de génération qui représentent généralement des fichiers (spécifiés dans l’attribut `Include`). Les éléments sont regroupés en différents types selon leurs noms d’élément. Les types d’élément sont des listes nommées d’éléments qui peuvent être utilisés comme paramètres pour les tâches. Les tâches utilisent les valeurs d’élément pour exécuter les étapes du processus de génération.  
   
  Comme les éléments sont nommés en fonction du type d’élément dont ils font partie, les termes « élément » et « valeur d’élément » peuvent être utilisés indifféremment.  
   
- **Dans cette rubrique**  
-  
--   [Création d’éléments dans un fichier projet](#BKMK_Creating1)  
-  
--   [Création d’éléments lors de l’exécution](#BKMK_Creating2)  
-  
--   [Référencement d’éléments dans un fichier projet](#BKMK_ReferencingItems)  
-  
--   [Utilisation de caractères génériques pour spécifier des éléments](#BKMK_Wildcards)  
-  
--   [Utilisation de l’attribut Exclude](#BKMK_ExcludeAttribute)  
-  
--   [Métadonnées d’élément](#BKMK_ItemMetadata)  
-  
-    -   [Référencement des métadonnées d’élément dans un fichier projet](#BKMK_ReferencingItemMetadata)  
-  
-    -   [Métadonnées d’élément connues](#BKMK_WellKnownItemMetadata)  
-  
-    -   [Transformation des types d’élément à l’aide de métadonnées](#BKMK_Transforming)  
-  
--   [Définitions d’éléments](#BKMK_ItemDefinitions)  
-  
--   [Attributs des éléments d’un ItemGroup d’une cible](#BKMK_AttributesWithinTargets)  
-  
-    -   [Attribut Remove](#BKMK_RemoveAttribute)  
-  
-    -   [Attribut KeepMetadata](#BKMK_KeepMetadata)  
-  
-    -   [Attribut RemoveMetadata](#BKMK_RemoveMetadata)  
-  
-    -   [Attribut KeepDuplicates](#BKMK_KeepDuplicates)  
-  
-##  <a name="BKMK_Creating1"></a> Création d’éléments dans un fichier projet  
+##  <a name="create-items-in-a-project-file"></a>Créer des éléments dans un fichier projet  
  Vous déclarez des éléments dans le fichier projet en tant qu’éléments enfants d’un élément [ItemGroup](../msbuild/itemgroup-element-msbuild.md). Le nom de l’élément enfant est le type de l’élément. L’attribut `Include` de l’élément spécifie les éléments (fichiers) à inclure avec ce type d’élément. Par exemple, le code XML suivant crée un type d’élément nommé `Compile` et composé de deux fichiers.  
   
 ```xml  
@@ -66,7 +35,7 @@ Les éléments MSBuild sont des entrées du système de génération qui représ
 </ItemGroup>  
 ```  
   
- L’élément « file2.cs » ne remplace pas l’élément « file1.cs ». Le nom de fichier est ajouté à la liste des valeurs correspondant au type d’élément `Compile`. Vous ne pouvez pas supprimer un élément d’un type d’élément pendant la phase d’évaluation d’une build.  
+ L’élément *file2.cs* ne remplace pas l’élément *file1.cs*. Le nom de fichier est ajouté à la liste des valeurs correspondant au type d’élément `Compile`. Vous ne pouvez pas supprimer un élément d’un type d’élément pendant la phase d’évaluation d’une build.  
   
  Le code XML suivant crée le même type d’élément en déclarant les deux fichiers dans un attribut `Include`. Notez que les noms de fichiers sont séparés par un point-virgule.  
   
@@ -76,7 +45,7 @@ Les éléments MSBuild sont des entrées du système de génération qui représ
 </ItemGroup>  
 ```  
   
-##  <a name="BKMK_Creating2"></a> Création d’éléments lors de l’exécution  
+##  <a name="create-items-during-execution"></a>Créer des éléments lors de l’exécution  
  Des valeurs sont attribuées aux éléments situés en dehors des éléments [Target](../msbuild/target-element-msbuild.md) pendant la phase d’évaluation d’une génération. Pendant la phase d’exécution suivante, des éléments peuvent être créés ou modifiés en procédant comme suit :  
   
 -   Une tâche peut émettre un élément. Pour émettre un élément, l’élément [Task](../msbuild/task-element-msbuild.md) doit posséder un élément [Output](../msbuild/output-element-msbuild.md) enfant pourvu d’un attribut `ItemName`.  
@@ -85,12 +54,12 @@ Les éléments MSBuild sont des entrées du système de génération qui représ
   
 -   Depuis .NET Framework 3.5, les éléments `Target` peuvent contenir des éléments [ItemGroup](../msbuild/itemgroup-element-msbuild.md) qui peuvent comporter des éléments Item.  
   
-##  <a name="BKMK_ReferencingItems"></a> Référencement d’éléments dans un fichier projet  
- Pour référencer des types d’éléments dans tout le fichier projet, vous devez utiliser la syntaxe @(`ItemType`). Par exemple, vous devez référencer le type d’élément dans l’exemple précédent en utilisant `@(Compile)`. À l’aide de cette syntaxe, vous pouvez transmettre des éléments aux tâches en spécifiant le type d’élément en tant que paramètre de la tâche en question. Pour plus d’informations, consultez l’article [Guide pratique pour sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md).  
+##  <a name="reference-items-in-a-project-file"></a>Référencer des éléments dans un fichier projet  
+ Pour référencer des types d’éléments dans tout le fichier projet, vous devez utiliser la syntaxe @(\<ItemType>). Par exemple, vous devez référencer le type d’élément dans l’exemple précédent en utilisant `@(Compile)`. À l’aide de cette syntaxe, vous pouvez transmettre des éléments aux tâches en spécifiant le type d’élément en tant que paramètre de la tâche en question. Pour plus d’informations, consultez [Guide pratique pour sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md).  
   
- Par défaut, les éléments d’un type d’élément développé sont séparés par des points-virgules (;). Vous pouvez utiliser la syntaxe @(*ItemType*, ’*separator*’) pour spécifier un séparateur autre que celui indiqué par défaut. Pour plus d’informations, consultez l’article [Comment : afficher une liste d’éléments séparés par des virgules](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
+ Par défaut, les éléments d’un type d’élément développé sont séparés par des points-virgules (;). Vous pouvez utiliser la syntaxe @(\<ItemType>, '\<separator>') pour spécifier un séparateur autre que celui indiqué par défaut. Pour plus d’informations, consultez [Guide pratique pour afficher une liste d’éléments séparés par des virgules](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
   
-##  <a name="BKMK_Wildcards"></a> Utilisation de caractères génériques pour spécifier des éléments  
+##  <a name="use-wildcards-to-specify-items"></a>Utiliser des caractères génériques pour spécifier des éléments  
  Vous pouvez utiliser les caractères génériques **, \* et ? pour spécifier un groupe de fichiers comme entrées d’une génération au lieu de répertorier chaque fichier séparément.  
   
 -   Le caractère générique ? correspond à un caractère unique.  
@@ -98,23 +67,23 @@ Les éléments MSBuild sont des entrées du système de génération qui représ
 -   Le caractère générique * correspond à zéro ou plusieurs caractères.  
   
 -   La séquence de caractères génériques ** correspond à un chemin d’accès partiel.  
-  
- Par exemple, vous pouvez spécifier tous les fichiers .cs du répertoire qui contient le fichier projet à l’aide de l’élément ci-dessous contenu dans votre fichier projet.  
-  
+
+Par exemple, vous pouvez spécifier tous les fichiers *.cs* du répertoire qui contient le fichier projet à l’aide de l’élément ci-dessous contenu dans votre fichier projet.  
+
 ```xml  
 <CSFile Include="*.cs"/>  
 ```  
-  
- L’élément suivant permet de sélectionner tous les fichiers .vb sur le lecteur D: :  
-  
+
+L’élément suivant permet de sélectionner tous les fichiers *.vb* sur le lecteur *D:* :  
+
 ```xml  
 <VBFile Include="D:/**/*.vb"/>  
 ```  
-  
- Pour plus d’informations sur les caractères génériques, consultez l’article [Guide pratique pour sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md).  
-  
-##  <a name="BKMK_ExcludeAttribute"></a> Utilisation de l’attribut Exclude  
- Les éléments Item peuvent contenir l’attribut `Exclude` qui exclut des éléments spécifiques (fichiers) du type d’élément. L’attribut `Exclude` est généralement utilisé avec des caractères génériques. Par exemple, le code XML suivant ajoute tous les fichiers .cs du répertoire au type d’élément CSFile, à l’exception du fichier `DoNotBuild.cs`.  
+
+Pour plus d’informations sur les caractères génériques, consultez [Guide pratique pour sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md).  
+
+##  <a name="use-the-exclude-attribute"></a>Utiliser l’attribut Exclude  
+ Les éléments Item peuvent contenir l’attribut `Exclude` qui exclut des éléments spécifiques (fichiers) du type d’élément. L’attribut `Exclude` est généralement utilisé avec des caractères génériques. Par exemple, le code XML suivant ajoute tous les fichiers *.cs* du répertoire au type d’élément CSFile, à l’exception du fichier *DoNotBuild.cs*.  
   
 ```xml  
 <ItemGroup>  
@@ -122,21 +91,21 @@ Les éléments MSBuild sont des entrées du système de génération qui représ
 </ItemGroup>  
 ```  
   
- L’attribut `Exclude` affecte uniquement les éléments qui sont ajoutés par l’attribut `Include` dans l’élément Item qui les contient. Dans l’exemple suivant, le fichier Form1.cs, qui a été ajouté dans l’élément Item précédent n’est pas exclu.  
+ L’attribut `Exclude` affecte uniquement les éléments qui sont ajoutés par l’attribut `Include` dans l’élément Item qui les contient. Dans l’exemple suivant, le fichier *Form1.cs*, qui a été ajouté dans l’élément Item précédent n’est pas exclu.  
   
 ```xml  
 <Compile Include="*.cs" />  
 <Compile Include="*.res" Exclude="Form1.cs">  
 ```  
   
- Pour plus d’informations, consultez l’article [Comment : exclure des fichiers de la génération](../msbuild/how-to-exclude-files-from-the-build.md).  
+ Pour plus d’informations, consultez [Guide pratique pour exclure des fichiers de la build](../msbuild/how-to-exclude-files-from-the-build.md).  
   
-##  <a name="BKMK_ItemMetadata"></a> Métadonnées d’élément  
+##  <a name="item-metadata"></a>Métadonnées d’élément  
  Outre les informations des attributs `Include` et `Exclude`, les éléments peuvent contenir des métadonnées. Ces métadonnées peuvent être utilisées par les tâches qui requièrent plus d’informations sur les éléments ou pour traiter par lot les tâches et les cibles. Pour plus d’informations, consultez l’article [Batching (Traitement par lot MSBuild)](../msbuild/msbuild-batching.md).  
   
  Les métadonnées sont une collection de paires clé-valeur qui sont déclarées dans le fichier projet en tant qu’éléments enfants d’un élément Item. Le nom et la valeur de l’élément enfant correspondent au nom et à la valeur de la métadonnée.  
   
- La métadonnée est associée à l’élément Item qui le contient. Par exemple, le code XML suivant ajoute la métadonnée `Culture` qui a la valeur `Fr` aux éléments « one.cs » et « two.cs » du type d’élément CSFile.  
+ La métadonnée est associée à l’élément Item qui le contient. Par exemple, le code XML suivant ajoute les métadonnées `Culture` qui ont la valeur `Fr` aux éléments *one.cs* et *two.cs* du type d’élément CSFile.  
   
 ```xml  
 <ItemGroup>  
@@ -148,8 +117,8 @@ Les éléments MSBuild sont des entrées du système de génération qui représ
   
  Un élément peut comporter zéro ou plusieurs valeurs de métadonnées. Vous pouvez modifier des valeurs de métadonnées à tout moment. Si vous définissez une métadonnée sur une valeur vide, vous la supprimez de la génération.  
   
-###  <a name="BKMK_ReferencingItemMetadata"></a> Référencement des métadonnées d’élément dans un fichier projet  
- Vous pouvez référencer des métadonnées d’élément dans tout le fichier projet à l’aide de la syntaxe %(`ItemMetadataName`). En cas d’ambiguïté, vous pouvez qualifier une référence à l’aide du nom du type d’élément. Par exemple, vous pouvez spécifier %(*ItemType.ItemMetaDataName*). Dans l’exemple suivant, la métadonnée Display permet de traiter par lot la tâche Message. Pour plus d’informations sur l’utilisation des métadonnées d’élément pour le traitement par lot, consultez l’article [Item Metadata in Task Batching (Métadonnées d’élément dans le traitement par lot des tâches)](../msbuild/item-metadata-in-task-batching.md).  
+###  <a name="BKMK_ReferencingItemMetadata"></a> Référencer des métadonnées d’élément dans un fichier projet  
+ Vous pouvez référencer des métadonnées d’élément dans tout le fichier projet à l’aide de la syntaxe %(\<ItemMetadataName>). En cas d’ambiguïté, vous pouvez qualifier une référence à l’aide du nom du type d’élément. Par exemple, vous pouvez spécifier %(\<ItemType.ItemMetaDataName>). Dans l’exemple suivant, les métadonnées Display permettent de traiter par lots la tâche Message. Pour plus d’informations sur l’utilisation des métadonnées d’élément pour le traitement par lots, consultez [Métadonnées d’élément dans le traitement par lots des tâches](../msbuild/item-metadata-in-task-batching.md).  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -168,10 +137,10 @@ Les éléments MSBuild sont des entrées du système de génération qui représ
 ```  
   
 ###  <a name="BKMK_WellKnownItemMetadata"></a> Métadonnées d’élément connues  
- Lorsqu’un élément est ajouté à un type d’élément, des métadonnées connues lui sont attribuées. Par exemple, tous les éléments possèdent la métadonnée connue `%(Filename)`, dont la valeur correspond au nom de fichier de l’élément. Pour plus d’informations, consultez l’article [Well-known Item Metadata (Métadonnées d’élément connues MSBuild)](../msbuild/msbuild-well-known-item-metadata.md).  
+ Lorsqu’un élément est ajouté à un type d’élément, des métadonnées connues lui sont attribuées. Par exemple, tous les éléments possèdent les métadonnées connues %(\<Filename>), dont la valeur correspond au nom de fichier de l’élément. Pour plus d’informations, consultez [Métadonnées d’élément connues](../msbuild/msbuild-well-known-item-metadata.md).  
   
-###  <a name="BKMK_Transforming"></a> Transformation des types d’élément à l’aide de métadonnées  
- Vous pouvez transformer des listes d’éléments en nouvelles listes d’éléments à l’aide de métadonnées. Par exemple, vous pouvez transformer un type d’élément `CppFiles` qui contient des éléments représentant des fichiers .cpp en une liste correspondante de fichiers .obj à l’aide de l’expression `@(CppFiles -> '%(Filename).obj')`.  
+###  <a name="BKMK_Transforming"></a> Transformer des types d’éléments à l’aide de métadonnées  
+ Vous pouvez transformer des listes d’éléments en nouvelles listes d’éléments à l’aide de métadonnées. Par exemple, vous pouvez transformer un type d’élément `CppFiles` qui contient des éléments représentant des fichiers *.cpp* en une liste correspondante de fichiers *.obj* à l’aide de l’expression `@(CppFiles -> '%(Filename).obj')`.  
   
  Le code suivant crée un type d’élément `CultureResource` qui contient des copies de tous les éléments `EmbeddedResource` comportant la métadonnée `Culture`. La valeur de la métadonnée `Culture` devient la valeur de la nouvelle métadonnée `CultureResource.TargetDirectory`.  
   
@@ -188,8 +157,8 @@ Les éléments MSBuild sont des entrées du système de génération qui représ
   
  Pour plus d’informations, consultez l’article [Transforms (Transformations MSBuild)](../msbuild/msbuild-transforms.md).  
   
-##  <a name="BKMK_ItemDefinitions"></a> Définitions d’éléments  
- Depuis .NET Framework 3.5, vous pouvez ajouter des métadonnées par défaut à tout type d’élément à l’aide de l’[élément ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md). À l’instar des métadonnées connues, les métadonnées par défaut sont associées à tous les éléments du type d’élément que vous spécifiez. Vous pouvez remplacer les métadonnées par défaut dans une définition d’élément de façon explicite. Par exemple, le code XML suivant fournit aux éléments `Compile` « one.cs » et « three.cs » la métadonnée `BuildDay` pourvue de la valeur « Monday ». Le code donne à l’élément « two.cs » la métadonnée `BuildDay` pourvue de la valeur « Tuesday ».  
+##  <a name="item-definitions"></a>Définitions d’éléments  
+ Depuis .NET Framework 3.5, vous pouvez ajouter des métadonnées par défaut à tout type d’élément à l’aide de l’[élément ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md). À l’instar des métadonnées connues, les métadonnées par défaut sont associées à tous les éléments du type d’élément que vous spécifiez. Vous pouvez remplacer les métadonnées par défaut dans une définition d’élément de façon explicite. Par exemple, le code XML suivant fournit aux éléments `Compile` *one.cs* et *three.cs* les métadonnées `BuildDay` pourvues de la valeur « Monday ». Le code donne à l’élément *two.cs* les métadonnées `BuildDay` pourvues de la valeur « Tuesday ».  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -205,15 +174,15 @@ Les éléments MSBuild sont des entrées du système de génération qui représ
 </ItemGroup>  
 ```  
   
- Pour plus d’informations, consultez l’article [Item Definitions (Définitions des éléments)](../msbuild/item-definitions.md).  
+ Pour plus d’informations, consultez [Définitions d’éléments](../msbuild/item-definitions.md).  
   
-##  <a name="BKMK_AttributesWithinTargets"></a> Attributs des éléments d’un ItemGroup d’une cible  
+##  <a name="attributes-for-items-in-an-itemgroup-of-a-target"></a>Attributs des éléments d’un ItemGroup d’une cible  
  Depuis .NET Framework 3.5, les éléments `Target` peuvent contenir des éléments [ItemGroup](../msbuild/itemgroup-element-msbuild.md) qui peuvent comporter des éléments Item. Les attributs de cette section sont valides s’ils sont spécifiés pour un élément d’un `ItemGroup` qui se trouve dans une `Target`.  
   
-###  <a name="BKMK_RemoveAttribute"></a> Attribut Remove  
+###  <a name="BKMK_RemoveAttribute"></a> Supprimer l’attribut  
  Les éléments d’un `ItemGroup` d’une cible peuvent contenir l’attribut `Remove`, qui supprime des éléments spécifiques (fichiers) du type d’élément. (Cet attribut a été introduit dans .NET Framework 3.5).  
   
- Dans l’exemple suivant, tous les fichiers .config sont supprimés du type d’élément Compile.  
+ Dans l’exemple suivant, tous les fichiers *.config* sont supprimés du type d’élément Compile.  
   
 ```xml  
 <Target>  
@@ -357,8 +326,8 @@ Output:
  [Concepts MSBuild](../msbuild/msbuild-concepts.md)  
  [MSBuild](../msbuild/msbuild.md)   
  [Guide pratique pour sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md)   
- [Comment : exclure des fichiers de la génération](../msbuild/how-to-exclude-files-from-the-build.md)   
- [Comment : afficher une liste d’éléments séparés par des virgules](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
- [Item Definitions (Définitions d’éléments)](../msbuild/item-definitions.md)   
+ [Guide pratique pour exclure des fichiers de la build](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [Guide pratique pour afficher une liste d’éléments séparés par des virgules](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
+ [Définitions d’éléments](../msbuild/item-definitions.md)   
  [Traitement par lot MSBuild](../msbuild/msbuild-batching.md)   
  [Item, élément (MSBuild)](../msbuild/item-element-msbuild.md)

@@ -12,18 +12,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d2464acb75d8ea8a309d788aa95dc86b44d47e9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 96166caefa749138371dd8a5ab2ea9d496553557
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177112"
 ---
-# <a name="comparing-properties-and-items"></a>Comparaison des propriétés et des éléments
+# <a name="compare-properties-and-items"></a>Comparer des propriétés et des éléments
 Les propriétés et les éléments MSBuild permettent de transmettre des informations aux tâches, d’évaluer des conditions et de stocker les valeurs qui peuvent être référencées dans le fichier projet.  
   
--   Les propriétés sont des paires nom-valeur. Pour plus d’informations, consultez l’article [Propriétés MSBuild](../msbuild/msbuild-properties.md).  
+-   Les propriétés sont des paires nom-valeur. Pour plus d’informations, consultez [Propriétés MSBuild](../msbuild/msbuild-properties.md).  
   
--   Les éléments sont des objets qui représentent généralement des fichiers. Des collections de métadonnées peuvent être associées aux objets d’élément. Les métadonnées sont des paires nom-valeur. Pour plus d’informations, consultez l’article [Éléments](../msbuild/msbuild-items.md).  
+-   Les éléments sont des objets qui représentent généralement des fichiers. Des collections de métadonnées peuvent être associées aux objets d’élément. Les métadonnées sont des paires nom-valeur. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).  
   
 ## <a name="scalars-and-vectors"></a>Scalaires et vecteurs  
  Comme les propriétés MSBuild sont des paires nom-valeur qui ont seulement une valeur de chaîne, elles sont souvent décrites en tant que *scalaires*. Comme les types d’élément MSBuild sont des listes d’éléments, ils sont souvent décrits comme des *vecteurs*. Toutefois, en pratique, les propriétés peuvent représenter plusieurs valeurs, et les types d’élément peuvent posséder zéro ou un élément.  
@@ -54,7 +55,7 @@ Les propriétés et les éléments MSBuild permettent de transmettre des informa
   
  ajoute la cible CustomBuild à la liste des cibles, donnant ainsi à la propriété `BuildDependsOn` la valeur `BeforeBuild;CoreBuild;AfterBuild;CustomBuild`.  
   
- Depuis MSBuild 4.0, l’injection de dépendances cibles est dépréciée. L’utilisation des attributs `AfterTargets` et `BeforeTargets` est préférable. Pour plus d’informations, consultez l’article [Ordre de génération des cibles](../msbuild/target-build-order.md).  
+ Depuis MSBuild 4.0, l’injection de dépendances cibles est dépréciée. L’utilisation des attributs `AfterTargets` et `BeforeTargets` est préférable. Pour plus d’informations, consultez [Ordre de génération des cibles](../msbuild/target-build-order.md).  
   
 ### <a name="conversions-between-strings-and-item-lists"></a>Conversion entre des chaînes et des listes d’éléments  
  MSBuild effectue au besoin les conversions vers et depuis des types d’élément et des valeurs de chaîne. Pour voir comment une liste d’éléments peut devenir une valeur de chaîne, examinez ce qui se passe lorsqu’un type d’élément est utilisé comme valeur d’une propriété MSBuild :  
@@ -87,9 +88,10 @@ Les propriétés et les éléments MSBuild permettent de transmettre des informa
 -   Les définitions d’élément sont créées et modifiées dans l’ordre dans lequel elles apparaissent.  
   
 -   Les éléments sont définis et modifiés dans l’ordre dans lequel ils apparaissent.  
-  
+ 
+ 
  Pendant la phase d’exécution d’une génération, les propriétés et les éléments qui sont définis dans des cibles sont évalués ensemble en une seule phase dans l’ordre dans lequel ils apparaissent.  
-  
+ 
  Néanmoins, ce n’est pas complet. Lorsqu’une propriété, une définition d’élément ou un élément sont définis, leur valeur est évaluée. L’évaluateur d’expression développe la chaîne qui spécifie la valeur. Le développement de la chaîne dépend de la phase de la génération. Voici un ordre d’évaluation des éléments et des propriétés plus détaillé :  
   
 -   Pendant la phase d’évaluation d’une génération :  
@@ -127,9 +129,9 @@ Les propriétés et les éléments MSBuild permettent de transmettre des informa
 KeyFileVersion: 1.0.0.3  
 ```  
   
- C’est parce que la valeur de `KeyFileVersion` correspond réellement à la chaîne « @(KeyFile->'%(Version)') ». Comme l’élément et les transformations d’élément n’ont pas été développés lorsque la propriété a été définie, la valeur de la chaîne non développée a été affectée à la propriété `KeyFileVersion`.  
+ C’est parce que la valeur de `KeyFileVersion` correspond réellement à la chaîne « \@(KeyFile->'%(Version)') ». Comme l’élément et les transformations d’élément n’ont pas été développés lorsque la propriété a été définie, la valeur de la chaîne non développée a été affectée à la propriété `KeyFileVersion`.  
   
- Pendant la phase d’exécution de la génération, quand il traite la tâche Message, MSBuild développe la chaîne « @(KeyFile->'%(Version)') » pour générer « 1.0.0.3 ».  
+ Pendant la phase d’exécution de la génération, quand il traite la tâche Message, MSBuild développe la chaîne « \@(KeyFile->'%(Version)') » pour générer « 1.0.0.3 ».  
   
  Notez que le même message s’affiche même si les groupes de propriétés et d’éléments ont été annulés dans l’ordre.  
   
@@ -173,7 +175,7 @@ KeyFileVersion:
 </Target>  
 ```  
   
- `KeyFileVersion` prend la valeur « 1.0.0.3 » et non « @(KeyFile->'%(Version)') ». La tâche Message affiche le message suivant :  
+ `KeyFileVersion` prend la valeur « 1.0.0.3 » et non « \@(KeyFile->'%(Version)') ». La tâche Message affiche le message suivant :  
   
 ```  
 KeyFileVersion: 1.0.0.3  

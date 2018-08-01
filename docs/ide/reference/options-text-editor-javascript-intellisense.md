@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 962d185232fc8a98343ed97fa4dd0230d55f5bb7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 584f2496e676b37b23afbe9b4e135f475a73d8df
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948806"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179747"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Options, Éditeur de texte, JavaScript, IntelliSense
 Utilisez la page **IntelliSense** de la boîte de dialogue **Options** pour modifier les paramètres qui affectent le comportement d'IntelliSense pour JavaScript. Vous pouvez accéder à la page **IntelliSense** en choisissant **Outils**, **Options** dans la barre de menus, et en développant ensuite **Éditeur de texte**, **JavaScript**, **IntelliSense.**
@@ -46,7 +46,7 @@ La page **IntelliSense** contient les sections suivantes :
  Lorsque cette case à cocher est activée, et si vous disposez d'un fichier JavaScript ouvert en dehors d'un projet, Visual Studio télécharge des fichiers JavaScript distants référencés dans le fichier afin de fournir des informations IntelliSense. Si cette option est sélectionnée, les fichiers sont téléchargés lorsque vous les incluez en tant que référence dans votre fichier JavaScript.
 
 > [!NOTE]
-> Pour les projets Web, les fichiers distants référencés dans votre projet sont téléchargés par défaut.
+> Dans le cas des projets web, les fichiers distants auxquels ils font référence sont téléchargés par défaut.
 
 
 ## <a name="statement-completion"></a>Compléter automatiquement les instructions
@@ -67,11 +67,11 @@ La page **IntelliSense** contient les sections suivantes :
 
  Vous pouvez utiliser les groupes de référence prédéfinis pour spécifier les fichiers IntelliSense .js particuliers qui sont dans la portée des projets JavaScript. Quatre groupes de référence sont disponibles :
 
--   Implicite ( *version*de Windows) pour les applications [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] en JavaScript. Les fichiers inclus dans ce groupe se trouvent dans la portée pour chaque fichier .js ouvert dans l'éditeur de code pour les applications [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] utilisant JavaScript.
+-   Implicite ( *version*de Windows) pour les applications [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] en JavaScript. Les fichiers inclus dans ce groupe se trouvent dans la portée pour chaque fichier .js ouvert dans l’éditeur de code pour les applications [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] utilisant JavaScript.
 
 -   Implicite (Web) pour les projets HTML5. Les fichiers inclus dans ce groupe figurent dans la portée de chaque fichier .js ouvert dans l'éditeur de code pour ces types de projet.
 
--   Groupes de référence de processus de travail dédié pour les traitements Web HTML5. Les fichiers spécifiés dans ce groupe figurent dans la portée des fichiers .js qui possèdent une référence explicite à un groupe de référence de processus de travail dédié.
+-   Groupes de référence de processus de travail dédiés, pour les traitements web HTML5. Les fichiers spécifiés dans ce groupe figurent dans la portée des fichiers .js qui possèdent une référence explicite à un groupe de référence de processus de travail dédié.
 
 -   Générique pour les autres types de projet JavaScript.
 

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3fc4d5a6c1a4ae3cabbbb2426d7a4fdf011b9e0e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0192a38e5bd84cfd17d3f7e2a0ec59e3225f4e84
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693885"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178817"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Plateformes et configurations prises en charge pour les tests codés de l'interface utilisateur et les enregistrements des actions
 
@@ -61,11 +61,11 @@ Les plateformes et configurations prises en charge pour les tests codés de l’
 |Windows Forms 2.0 et versions ultérieures|Prise en charge intégrale. **Remarque :** Les contrôles NetFx sont entièrement pris en charge. En revanche, certains contrôles tiers ne sont pas pris en charge.|
 |WPF 3.5 et versions ultérieures|Prise en charge intégrale.<br /><br /> **Remarque** Les contrôles NetFx sont entièrement pris en charge ; en revanche, certains contrôles tiers ne sont pas pris en charge.|
 |Windows Win32|Peut fonctionner en générant des problèmes connus, mais n’est pas officiellement pris en charge.|
-|MFC|Prise en charge partielle. Consultez le [site web Microsoft](http://go.microsoft.com/fwlink/?LinkId=206511) pour obtenir des informations sur les fonctionnalités prises en charge.|
+|MFC|Prise en charge partielle. Consultez [Infrastructure UITest](https://blogs.msdn.microsoft.com/vstsqualitytools/2010/04/15/uitest-framework-mfc-support-in-vs-2010/) pour plus d’informations sur les fonctionnalités prises en charge.|
 |SharePoint|Prise en charge intégrale.|
 |Applications clientes Office|Non pris en charge.|
 |Client web Dynamics CRM|Prise en charge intégrale.|
-|Client Dynamics (Ax) 2012|L’enregistrement et la lecture des actions sont partiellement pris en charge. Consultez le [site web Microsoft](http://go.microsoft.com/fwlink/?LinkId=232677) pour plus de détails.|
+|Client Dynamics (Ax) 2012|L’enregistrement et la lecture des actions sont partiellement pris en charge. Consultez [Interface utilisateur codée Visual Studio 10/Prise en charge de l’enregistrement pour Microsoft Dynamics](https://blogs.msdn.microsoft.com/dave_froslie/2011/09/01/visual-studio-10-coded-ui-action-recordings-support-for-microsoft-dynamics-ax-2012/) pour plus d’informations.|
 |SAP|Non pris en charge.|
 |Citrix/Services Terminal Server|Nous vous déconseillons d’enregistrer des actions sur un serveur Terminal Server. L’enregistreur ne prend pas en charge l’exécution simultanée de plusieurs instances.|
 |PowerBuilder|Prise en charge partielle.<br /><br /> La prise en charge de l’accessibilité étendue est activée pour les contrôles PowerBuilder.|

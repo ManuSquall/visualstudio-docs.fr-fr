@@ -12,18 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 22014010ea0ef7d101a446b6e89591797f5f2550
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ef389ab3803aba5b6022c9d9ffa3a12d0801b49f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977383"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178447"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Procédure pas à pas : Créer et exécuter un test de charge qui contient des tests unitaires
 
 Dans cette procédure pas à pas, vous allez créer un test de charge qui contient des tests unitaires.
 
-Cette procédure pas à pas vous guide dans la création et l'exécution d'un test de charge à l'aide de Visual Studio Enterprise. Un test de charge est un conteneur de tests de performances de site web et de tests unitaires. Vous créez des tests de charge avec l'Assistant Nouveau test de charge.
+Cette procédure pas à pas vous guide dans la création et l’exécution d’un test de charge à l’aide de Visual Studio Enterprise. Un test de charge est un conteneur de tests de performances web et de tests unitaires. Vous créez des tests de charge avec l'Assistant Nouveau test de charge.
 
 Un test de charge expose également de nombreuses propriétés à l'exécution qui peuvent être modifiées pour générer la simulation de charge souhaitée. Dans cette procédure pas à pas, vous utilisez l'Assistant Nouveau test de charge pour ajouter des tests unitaires à un test de charge.
 
@@ -65,7 +65,7 @@ Dans cette procédure pas à pas, vous effectuerez les tâches suivantes :
 
      Un *scénario* est un mécanisme de regroupement. Il se compose d'un ensemble de tests et des propriétés nécessaires pour exécuter ces tests sous charge.
 
-2.  Définissez **Profil de temps de réflexion** avec la valeur `Use normal distribution centered on recorded think times`. Les temps de réflexion représentent la durée pendant laquelle un utilisateur consulterait une page web avant de passer à la page suivante.
+2.  Définissez **Profil de temps de réflexion** avec la valeur `Use normal distribution centered on recorded think times`. Les temps de réflexion représentent la durée pendant laquelle un utilisateur consulte une page Web avant de passer à la page suivante.
 
 1.  Choisissez **Suivant** quand vous avez terminé.
 

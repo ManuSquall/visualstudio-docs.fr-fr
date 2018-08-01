@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c3f5e60f8cde791f571c5a6663356ad7d2ca80f9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 138cff5920eef205cf8235ed0532754a843bbf46
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750693"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177046"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Comment : créer un éditeur de corps HTTP personnalisé pour l'éditeur de test de performances de site Web
 
-Vous pouvez créer un éditeur de contenu personnalisé qui vous permet de modifier le contenu du corps chaîne ou le contenu du corps binaire d’une demande de service web, par exemple, SOAP, REST, asmx, wcf, RIA et d’autres types de demande de service web.
+Vous pouvez créer un éditeur de contenu personnalisé permettant de modifier le contenu du corps de type chaîne ou du corps binaire d’une demande de service web, de type SOAP, REST, asmx, wcf, RIA ou autre.
 
  Vous pouvez implémenter ces types d'éditeurs :
 
@@ -301,9 +301,9 @@ Quand la modification du corps chaîne est effectuée et que l’utilisateur cli
 
 1.  Créer un projet de test.
 
-2.  Créez un test de performances web et entrez une URL dans le navigateur vers un service web, par exemple http://dev.virtualearth.net/webservices/v1/metadata/searchservice/dev.virtualearth.net.webservices.v1.search.wsdl.
+2.  Créez un test de performances web et entrez l’URL d’un service web dans le navigateur.
 
-3.  Quand vous terminez l’enregistrement, dans l’éditeur de tests de performances web, développez la demande pour le service web et sélectionnez **Corps chaîne** ou **Corps binaire**.
+3.  Après l’enregistrement, développez la demande du service web dans l’éditeur de test de performances web et sélectionnez **Corps de type chaîne** ou **Corps binaire**.
 
 4.  Dans la fenêtre Propriétés, sélectionnez Corps chaîne ou Corps binaire, puis le bouton de sélection (...).
 

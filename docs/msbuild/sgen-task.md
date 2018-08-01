@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57e9841bd93e1bf41f15dec36b11137edfd5fa14
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6ed195596715c044268b2b1fdf434d1fda20967c
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570013"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39150888"
 ---
-# <a name="sgen-task"></a>SGen, tâche
-Crée un assembly de sérialisation XML pour les types dans l’assembly spécifié. Cette tâche encapsule l’outil XML Serializer Generator (Sgen.exe). Pour plus d’informations, consultez [Outil XML Serializer Generator (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).  
+# <a name="sgen-task"></a>SGen (tâche)
+Crée un assembly de sérialisation XML pour les types dans l’assembly spécifié. Cette tâche encapsule l’outil XML Serializer Generator (*Sgen.exe*). Pour plus d’informations, consultez [Outil XML Serializer Generator (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).  
   
 ## <a name="parameters"></a>Paramètres  
  Le tableau ci-dessous décrit les paramètres de la tâche `SGen` .  
@@ -42,19 +42,19 @@ Crée un assembly de sérialisation XML pour les types dans l’assembly spécif
 |`KeyFile`|Paramètre `String` facultatif.<br /><br /> Spécifie une paire de clés ou une clé publique pour signer un assembly. Le compilateur insère la clé publique dans le manifeste d'assembly, puis signe l'assembly final avec la clé privée.|  
 |`Platform`|Paramètre `String` facultatif.<br /><br /> Obtient ou définit la plateforme du compilateur utilisée pour générer l’assembly de sortie. Ce paramètre peut avoir la valeur `x86`, `x64` ou `anycpu`. La valeur par défaut est `anycpu`.|  
 |`References`|Paramètre `String[]` facultatif.<br /><br /> Spécifie les assemblys référencés par les types qui requièrent la sérialisation XML.|  
-|`SdkToolsPath`|Paramètre `String` facultatif.<br /><br /> Spécifie le chemin des outils du SDK, comme resgen.exe.|  
+|`SdkToolsPath`|Paramètre `String` facultatif.<br /><br /> Spécifie le chemin des outils du SDK, comme *resgen.exe*.|  
 |`SerializationAssembly`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Contient l’assembly de sérialisation généré.|  
 |`SerializationAssemblyName`|Paramètre `String` facultatif.<br /><br /> Spécifie le nom de l’assembly de sérialisation généré.|  
 |`ShouldGenerateSerializer`|Paramètre `Boolean` requis.<br /><br /> Si `true`, la tâche SGen doit générer un assembly de sérialisation.|  
 |`Timeout`|Paramètre `Int32` facultatif.<br /><br /> Spécifie le délai, en millisecondes, après lequel l’exécutable de la tâche est arrêté. La valeur par défaut est `Int.MaxValue`, ce qui indique qu’il n’existe aucun délai d’expiration.|  
-|`ToolPath`|Paramètre `String` facultatif.<br /><br /> Spécifie l’emplacement à partir duquel la tâche chargera le fichier exécutable sous-jacent (sgen.exe). Si vous ne spécifiez pas ce paramètre, la tâche utilise le chemin d’installation du SDK correspondant à la version du framework qui exécute [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
+|`ToolPath`|Paramètre `String` facultatif.<br /><br /> Spécifie l’emplacement à partir duquel la tâche chargera le fichier exécutable sous-jacent (*sgen.exe*). Si vous ne spécifiez pas ce paramètre, la tâche utilise le chemin d’installation du SDK correspondant à la version du framework qui exécute [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
 |`Types`|Paramètre `String[]` facultatif.<br /><br /> Obtient ou définit une liste de types spécifiques pour lesquels générer le code de sérialisation. SGen générera le code de sérialisation uniquement pour ces types.|  
 |`UseProxyTypes`|Paramètre `Boolean` requis.<br /><br /> Si `true`, la tâche SGen génère du code de sérialisation uniquement pour les types de proxy de service web XML.|  
   
 ## <a name="remarks"></a>Notes  
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et de leurs descriptions, consultez l’article [ToolTaskExtension Base Class (Classe de base ToolTaskExtension)](../msbuild/tooltaskextension-base-class.md).  
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)   
+ [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)   
  [Tâches](../msbuild/msbuild-tasks.md)   
  [Concepts MSBuild](../msbuild/msbuild-concepts.md)

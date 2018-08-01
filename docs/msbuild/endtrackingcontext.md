@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bf8720efab88556092e6552a8ffa47cb1151fef
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f3506e87c1468ff66143b672dca95cd70b0b3dff
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37946379"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177407"
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
 Mettez fin au contexte de suivi actuel.  
@@ -37,7 +37,7 @@ HRESULT WINAPI EndTrackingContext();
  **HRESULT** avec le bit **SUCCEEDED** défini si le contexte de suivi est terminé.  
   
 ## <a name="requirements"></a>Configuration requise  
- **En-tête :** FileTracker.h  
+ **En-tête :** *FileTracker.h*  
   
 ## <a name="see-also"></a>Voir aussi  
  [StartTrackingContext](../msbuild/starttrackingcontext.md)

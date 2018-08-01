@@ -1,5 +1,5 @@
 ---
-title: Ressources pour résoudre les erreurs d'environnement de développement intégré
+title: Ressources disponibles pour la résolution des erreurs
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -95,22 +95,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0b0bd982e153e7213f36574b44f9060006ebc99
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 3bcb994c0ee79cb36e1c2e2db792346842194c73
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33106919"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176539"
 ---
-# <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Ressources pour résoudre les erreurs d'environnement de développement intégré
+# <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Ressources pour résoudre les erreurs d’environnement de développement intégré
 
-Les messages d’erreur n’ont pas tous une rubrique d’aide associée. Si les informations du message d’erreur ne vous aident pas à résoudre le problème, vous pouvez consulter d’autres ressources, telles que les articles de la Base de connaissances, la communauté des développeurs ou le support technique.
+Les messages d’erreur n’ont pas tous une rubrique d’aide associée. Si les informations du message d’erreur ne vous aident pas à résoudre le problème, vous pouvez consulter d’autres ressources, telles que les articles de la Base de connaissances, les forums ou le support technique.
 
 ## <a name="knowledge-base-articles"></a>Articles de la Base de connaissances
 
 Vous pouvez explorer la Base de connaissances en ligne pour rechercher des articles sur les problèmes du produit. Tous les problèmes ne possèdent pas un article dans la Base de connaissances, mais les erreurs rencontrées par un nombre significatif de clients sont en principe documentées. Vous pouvez accéder aux articles de la Base de connaissances sur le site web [Support Microsoft](https://support.microsoft.com).
 
-## <a name="the-developer-community"></a>Communauté des développeurs
+## <a name="developer-forums"></a>Forums des développeurs
 
 Dans les forums, vous pouvez dialoguer avec les autres développeurs et avec les employés Microsoft. Si vous rencontrez une erreur pour laquelle vous ne trouvez pas de résolution, vous pouvez publier vos questions sur le problème dans un forum. Vous pouvez aussi explorer les groupes de discussion pour voir si d’autres utilisateurs ont déjà soumis le même problème.
 
@@ -118,7 +118,7 @@ Vous pouvez accéder aux forums, blogs, conversations et autres ressources sur l
 
 ## <a name="product-support"></a>Support technique
 
-Si vous avez encore des questions après avoir essayé les autres ressources, vous pouvez contacter les services de support technique Microsoft en visitant le site web [Support Microsoft](http://go.microsoft.com/fwlink/?linkid=1782). Pour plus d’informations sur le support technique disponible dans votre région, consultez [Nous contacter](../../ide/talk-to-us.md).
+Si vous avez encore des questions après avoir essayé les autres ressources, vous pouvez contacter les services de support Microsoft en visitant le site web [Support Microsoft](http://go.microsoft.com/fwlink/?linkid=1782). Pour plus d’informations sur le support technique disponible dans votre région, consultez [Nous contacter](../../ide/talk-to-us.md).
 
 ## <a name="see-also"></a>Voir aussi
 

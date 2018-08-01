@@ -13,24 +13,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 121be2e1eb608bde001422282c4387bb5a7290e1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9a36578753a3b50608c7c1d3fe3184a3e7ff64e8
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967955"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176760"
 ---
-# <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Modifier la combinaison de tests pour spécifier les types de navigateur web dans un scénario de test de charge
+# <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Modifier la combinaison de tests pour spécifier les types de navigateurs web dans un scénario de test de charge
 
-La *combinaison de navigateurs* vous permet de simuler une charge avec plus de réalisme dans un scénario de test de charge. La charge est générée à l'aide d'une combinaison hétérogène de navigateurs Web au lieu d'un seul navigateur Web. Vous créez une approximation plus proche des navigateurs Web qui seront utilisés avec vos applications.
+La *combinaison de navigateurs* vous permet de simuler une charge avec plus de réalisme dans un scénario de test de charge. La charge est générée à l’aide d’une combinaison hétérogène de navigateurs web au lieu d’un seul. Il s’agit de créer une approximation plus proche des navigateurs web qui seront utilisés avec les applications.
 
- Une combinaison de navigateurs spécifie la probabilité qu'un utilisateur virtuel exécute un type de navigateur Web particulier dans un scénario de test de charge. Lorsque vous créez un test de charge, vous pouvez souhaiter simuler le fait que cette charge soit générée par le biais de plusieurs navigateurs Web. Lorsque vous ajoutez un type de navigateur Web à la combinaison à partir de l'ensemble de navigateurs Web fourni, un ensemble d'en-têtes associés pour le navigateur Web sélectionné est ajouté à chaque requête HTTP envoyée par un test de performances de site Web.
+ Une combinaison de navigateurs indique la probabilité qu’un utilisateur virtuel lance un type de navigateur web donné dans un scénario de test de charge. À la création d’un test de charge, il peut être intéressant de simuler le fait que cette charge soit générée par le biais de plusieurs navigateurs web. Lorsque vous ajoutez un type de navigateur web à la combinaison à partir des différents navigateurs web fournis, un ensemble d’en-têtes associés au navigateur web sélectionné est ajouté à chaque requête HTTP envoyée par un test de performances web.
 
- La combinaison de navigateurs fonctionne comme d'autres options de combinaison. Un type de navigateur Web est associé de manière aléatoire à un utilisateur virtuel, selon la combinaison de navigateurs. Les tests de cet utilisateur sont exécutés sur un navigateur Web particulier, selon la probabilité que vous avez spécifiée dans la combinaison.
+ La combinaison de navigateurs fonctionne comme d'autres options de combinaison. Un type de navigateur web est associé de manière aléatoire à un utilisateur virtuel, selon la combinaison de navigateurs. Les tests de cet utilisateur sont exécutés sur un navigateur web donné, en fonction de la probabilité spécifiée dans la combinaison.
 
- Après avoir spécifié une combinaison de navigateurs, vous pouvez ajouter et supprimer ultérieurement des types de navigateurs Web à la combinaison. Vous pouvez également modifier la distribution de la combinaison de navigateurs en utilisant le contrôle de combinaison. Le contrôle de combinaison vous permet d'ajuster facilement la distribution des navigateurs dans un scénario.
+ Il est possible d’ajouter et de supprimer des types de navigateurs web à une combinaison de navigateurs après l’avoir spécifiée. Vous pouvez également modifier la distribution de la combinaison de navigateurs en utilisant le contrôle de combinaison. Le contrôle de combinaison vous permet d'ajuster facilement la distribution des navigateurs dans un scénario.
 
-## <a name="adding-new-browsers-to-a-scenario"></a>Ajout de nouveaux navigateurs à un scénario
+## <a name="add-new-browsers-to-a-scenario"></a>Ajouter de nouveaux navigateurs à un scénario
 
 ### <a name="to-add-new-browsers-to-a-scenario"></a>Pour ajouter de nouveaux navigateurs à un scénario
 
@@ -47,7 +47,7 @@ La *combinaison de navigateurs* vous permet de simuler une charge avec plus de r
 
 4.  Quand vous avez terminé d’ajouter des navigateurs, choisissez **OK**.
 
-##  <a name="EditingTestMixSpecifyBrowserRemovingBrowserTypes"></a> Suppression de navigateurs d’un scénario
+##  <a name="remove-browsers-from-a-scenario"></a>Supprimer des navigateurs d’un scénario
 
 ### <a name="to-remove-browsers-from-a-scenario"></a>Pour supprimer des navigateurs d'un scénario
 
@@ -83,4 +83,4 @@ La *combinaison de navigateurs* vous permet de simuler une charge avec plus de r
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Modification des scénarios de test de charge](../test/edit-load-test-scenarios.md)
+- [Modifier les scénarios de test de charge](../test/edit-load-test-scenarios.md)

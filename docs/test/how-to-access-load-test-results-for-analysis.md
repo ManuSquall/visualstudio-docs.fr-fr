@@ -16,22 +16,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d20754bc61a003b1b7f6d1eb84ce419c2c6e442b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e2d857ccc22d6e824d32a5ae429295563bba334d
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966685"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175671"
 ---
-# <a name="how-to-access-load-test-results-for-analysis"></a>Comment : accéder aux résultats des test de charge pour l'analyse
+# <a name="how-to-access-load-test-results-for-analysis"></a>Guide pratique : Accéder aux résultats des tests de charge à des fins d’analyse
 
-Lorsque vous exécutez un test de charge avec l'éditeur de test de charge, les résultats du test de charge s'affichent automatiquement et le test de charge en cours d'exécution apparaît dans l'analyseur de test de charge. Lorsque vous exécutez un test de charge à partir de la ligne de commande, vous devez accéder manuellement aux résultats du test de charge.
+Lorsque vous exécutez un test de charge avec l’éditeur de test de charge, les résultats s’affichent automatiquement et le test de charge en cours d’exécution apparaît dans **l’Analyseur de test de charge**. Lorsque vous exécutez un test de charge à partir de la ligne de commande, vous devez accéder manuellement aux résultats du test de charge.
 
 Le résultat du test de charge pour le test de charge terminé contient des exemples de compteur de performance et des informations sur les erreurs qui ont été collectées à intervalles réguliers sur les ordinateurs en cours de test. Un grand nombre d'exemples de compteurs de performance peuvent être collectés au cours d'une série de tests de charge. La quantité de données de performance collectées dépend de la durée de la série de tests, de l'intervalle d'échantillonnage, du nombre d'ordinateurs sous test et du nombre de compteurs collectés, des collecteurs de données configuré et des niveaux de journalisation. Pour un test de charge volumineux, le volume de données de performances collectées peut facilement atteindre plusieurs gigaoctets. Pour plus d’informations, consultez [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md).
 
 ## <a name="to-access-a-load-test-result"></a>Pour accéder à un résultat de test de charge
 
-1.  Depuis un projet de test de performances de site Web et de charge, ouvrez un test de charge.
+1.  Ouvrez un test de charge à partir d’un projet de test de performances web et de charge.
 
 2.  Dans la barre d’outils de l’éditeur de test de charge, choisissez le bouton **Ouvrir et gérer des résultats**.
 
@@ -48,9 +48,9 @@ Le résultat du test de charge pour le test de charge terminé contient des exem
 
 5.  Dans la liste **Résultats du test de charge**, sélectionnez les résultats à analyser, puis choisissez **Ouvrir**.
 
-6.  L'analyseur de test de charge s'affiche. Le résultat du test de charge sélectionné s'affiche en mode Résumé. Pour plus d’informations, consultez [Vue d’ensemble du résumé des résultats des tests de charge](../test/load-test-results-summary-overview.md).
+6.  **L’Analyseur de test de charge** s’affiche. Le résultat du test de charge sélectionné s'affiche en mode Résumé. Pour plus d’informations, voir [Vue d’ensemble du résumé des résultats des tests de charge](../test/load-test-results-summary-overview.md).
 
-     Vous pouvez gérer d'autres aspects des résultats du test de charge dans la boîte de dialogue Ouvrir et gérer des résultats, notamment l'importation, l'exportation et la suppression des résultats de test de charge. Pour plus d’informations, consultez [Gestion des résultats des tests de charge dans le dépôt des résultats de tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md).
+     Vous pouvez gérer d’autres aspects des résultats du test de charge dans la boîte de dialogue **Ouvrir et gérer des résultats**, notamment les importer, les exporter et les supprimer. Pour plus d’informations, voir [Gérer les résultats des tests de charge dans le référentiel des résultats des tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 576e1f715e1196e7e0b774698fe45b550a1313f8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bb2173395e3d1fd2cb825260e1895ee1fb194140
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924581"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176708"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Créer des applications en langues bidirectionnelles
 
@@ -32,7 +32,7 @@ Vous pouvez utiliser Visual Studio pour créer des applications qui affichent co
 
 -  Applications Windows. Vous pouvez créer des applications entièrement bidirectionnelles prenant en charge le texte bidirectionnel, l’ordre de lecture de droite à gauche et la mise en miroir (c’est-à-dire l’inversement de la disposition des fenêtres, des menus, des boîtes de dialogue, etc.). À l’exception de la mise en miroir, ces fonctionnalités sont disponibles par défaut ou en tant que paramètres de propriété. La mise en miroir est prise en charge par défaut pour certaines fonctionnalités, telles que les boîtes de message. Dans d’autres cas, vous devez implémenter la mise en miroir dans votre code. Pour plus d’informations, consultez la page [Prise en charge bidirectionnelle pour les applications Windows Forms](http://msdn.microsoft.com/Library/7b622fa4-f390-4e4d-b624-83a1917cccf2).
 
--  Applications web. Les services web prennent en charge l’envoi et la réception de texte UTF-8 et Unicode. Ils sont donc adaptés aux applications qui impliquent des langues bidirectionnelles. Les applications web clientes s’appuient sur les navigateurs pour leur interface utilisateur. Le degré de prise en charge bidirectionnelle d’une application web dépend donc du degré de prise en charge du navigateur. Dans Visual Studio, vous pouvez créer des applications avec prise en charge de l’arabe ou de l’hébreu, de l’ordre de lecture de droite à gauche, de l’encodage des fichiers et des paramètres de culture locale. Pour plus d’informations, consultez la page [Prise en charge bidirectionnelle pour les applications web ASP.NET](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
+-  Applications web. Les services web prennent en charge l’envoi et la réception de texte UTF-8 et Unicode. Ils sont donc adaptés aux applications qui impliquent des langues bidirectionnelles. Les applications clientes web s’appuient sur les navigateurs pour leur interface utilisateur. Le degré de prise en charge bidirectionnelle d’une application web dépend donc de celui du navigateur du client. Dans Visual Studio, vous pouvez créer des applications avec prise en charge de l’arabe ou de l’hébreu, de l’ordre de lecture de droite à gauche, de l’encodage des fichiers et des paramètres de culture locale. Pour plus d’informations, consultez la page [Prise en charge bidirectionnelle pour les applications web ASP.NET](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
 
 -  Les applications consoles. Les applications console ne prennent pas en charge le texte en langue bidirectionnelle. Cela est dû à la façon dont Windows fonctionne avec les applications console.
 

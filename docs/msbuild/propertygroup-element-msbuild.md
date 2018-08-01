@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b7d300a1a47499f963e7ff717c12f72e2483e05
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: e8c532692b7faddd90a3a67ffdd52b512511d719
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326317"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152186"
 ---
-# <a name="propertygroup-element-msbuild"></a>PropertyGroup, élément (MSBuild)
+# <a name="propertygroup-element-msbuild"></a>Élément PropertyGroup (MSBuild)
 Contient un ensemble d’éléments [Property](../msbuild/property-element-msbuild.md) définis par l’utilisateur. Chaque élément `Property` utilisé dans un projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doit être un enfant d’un élément `PropertyGroup`.  
 
  \<Project>  
@@ -75,5 +75,5 @@ Contient un ensemble d’éléments [Property](../msbuild/property-element-msbui
 ```  
 
 ## <a name="see-also"></a>Voir aussi  
- [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)  
+ [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)  
  [Propriétés MSBuild](../msbuild/msbuild-properties.md)

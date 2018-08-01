@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3a5204848c24a25514fc8eb30a81dbca704a77a3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9533083410af061ed8b2958349009cb5234ff251
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969642"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176243"
 ---
 # <a name="how-to-use-the-load-test-api"></a>Comment : utiliser l'API de test de charge
 
@@ -26,15 +26,15 @@ Visual Studio prend en charge des plug-ins de test de charge qui peuvent contrô
 > [!TIP]
 > Utilisez l'Explorateur d'objets pour examiner l'espace de noms <xref:Microsoft.VisualStudio.TestTools.LoadTesting>. Les éditeurs Visual C# et Visual Basic offrent tous deux la prise en charge IntelliSense du codage avec les classes de l'espace de noms.
 
-Vous pouvez également créer des plug-ins pour les tests de performances de site web. Pour plus d’informations, consultez [Guide pratique pour créer un plug-in de test de performances web](../test/how-to-create-a-web-performance-test-plug-in.md) et [Guide pratique pour créer un plug-in de niveau requête](../test/how-to-create-a-request-level-plug-in.md).
+Vous pouvez également créer des plug-ins pour les tests de performances web. Pour plus d’informations, consultez [Guide pratique pour créer un plug-in de test de performances web](../test/how-to-create-a-web-performance-test-plug-in.md) et [Guide pratique pour créer un plug-in de niveau requête](../test/how-to-create-a-request-level-plug-in.md).
 
 ## <a name="to-use-the-loadtesting-namespace"></a>Pour utiliser l'espace de noms LoadTesting
 
-1.  Ouvrez un projet de test de performances Web et de charge qui contient un test de charge.
+1.  Ouvrez un projet de test de performances web et de charge contenant un test de charge.
 
 2.  Ajoutez un projet de bibliothèque de classes Visual Basic ou Visual C# à votre solution de test.
 
-3.  Ajoutez une référence dans le projet de test de performances de site web et de charge au projet de bibliothèque de classes.
+3.  Ajoutez une référence dans le projet de test de performances web et de charge au projet de bibliothèque de classes.
 
 4.  Ajoutez une référence à la DLL Microsoft.VisualStudio.TestTools.LoadTestFramework dans le projet de bibliothèque de classes.
 

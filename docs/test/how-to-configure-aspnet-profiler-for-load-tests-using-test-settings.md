@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8910ee5aa73e057849ad6b72b67c8b27ba9b0e6e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c6e863ed52402dd56a81924f8ef7f4ecbd6ad258
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969369"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175550"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Comment : configurer le profileur ASP.NET pour les tests de charge à l'aide de paramètres de test dans Visual Studio
 
@@ -27,7 +27,7 @@ Vous pouvez utiliser l’adaptateur de données de diagnostic du profileur ASP.N
 L’adaptateur de données de diagnostic du profileur ASP.NET vous permet de collecter les données du profileur ASP.NET de la couche Application quand vous exécutez un test de charge. Vous ne devez pas exécuter le profileur pour des longs tests de charge, par exemple, des tests de charge dont la durée d'exécution s'étend au-delà d'une heure. Cela tient au fait que le fichier du profileur peut devenir volumineux, peut-être des centaines de mégaoctets. Exécutez de préférence des tests de charge plus courts avec le profileur ASP.NET, qui présente l’avantage d’un outil de diagnostic approfondi des problèmes de performances.
 
 > [!NOTE]
-> L’adaptateur de données de diagnostic du profileur ASP.NET profile le processus Internet Information Services (IIS). Par conséquent, cela ne fonctionnera pas sur un serveur web de développement. Pour profiler le site web dans votre test de charge, vous devez installer un agent de test sur l’ordinateur sur lequel IIS est en cours d’exécution. L’agent de test ne générera pas de charge, mais sera uniquement un agent de collection. Pour plus d’informations, consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).
+> L’adaptateur de données de diagnostic du profileur ASP.NET profile le processus Internet Information Services (IIS). Il ne fonctionnera donc pas sur un serveur web de développement. Pour profiler le site web dans votre test de charge, vous devez installer un agent de test sur l’ordinateur sur lequel IIS est en cours d’exécution. L’agent de test ne générera pas de charge, mais sera uniquement un agent de collection. Pour plus d’informations, consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).
 
 Pour plus d’informations, consultez [Guide pratique pour créer un paramètre de test pour un test de charge distribué](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
 
@@ -52,7 +52,7 @@ Avant d’effectuer les étapes de cette procédure, vous devez ouvrir les param
 
 4.  Pour activer le profilage d’interaction de couche, sélectionnez **Activer le profilage d’interaction de couche**.
 
-     Le profilage d’interaction de couche compte le nombre de requêtes envoyées au serveur web pour chaque artefact (par exemple, MyPage.aspx ou CompanyLogo.gif), et le temps qu’a nécessité le traitement de chaque requête. En outre, le profilage d'interaction de couche collecte les connexions ADO.NET qui ont été utilisées comme une partie de la requête de la page, et le nombre de requêtes et d'appels de procédures stockées qui ont été exécutés dans le cadre du traitement de cette requête.
+     Le profilage d’interaction de couche compte le nombre de demandes envoyées au serveur web pour chaque artefact (par exemple, MyPage.aspx ou CompanyLogo.gif), et le temps qu’a nécessité le traitement de chaque demande. En outre, le profilage d'interaction de couche collecte les connexions ADO.NET qui ont été utilisées comme une partie de la requête de la page, et le nombre de requêtes et d'appels de procédures stockées qui ont été exécutés dans le cadre du traitement de cette requête.
 
      Deux ensembles différents d'informations de minutage sont collectés :
 
@@ -60,7 +60,7 @@ Avant d’effectuer les étapes de cette procédure, vous devez ouvrir les param
 
     -   Informations de minutage (Min, Max, Moyenne et Total) sur l'exécution de chaque requête.
 
-Avec l’adaptateur de données de diagnostic du profileur ASP.NET configuré dans votre paramètre de test, vous pouvez maintenant collecter des données de profilage ASP.NET sur votre application web ASP.NET.
+L’adaptateur de données de diagnostic du profileur ASP.NET configuré dans votre paramètre de test vous permet maintenant de collecter des données de profilage ASP.NET sur votre application web ASP.NET.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -12,22 +12,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79863ec5038b420bcfa00ed67fe105c28cf9fff7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c403aba7f758c0acf7ba8d2520f617b2afeba214
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945153"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176396"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Boîte de dialogue Options, Projets et solutions, Projets web
 
 Définit le serveur web à utiliser pour le développement de projets web dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Pour accéder à ces options, sélectionnez **Outils > Options**, développez **Projets et solutions** et sélectionnez **Projets web**.
 
-Par défaut, l’exécution d’un projet web dans Visual Studio utilise le serveur Visual Studio Development. Pour plus d'informations, voir [Serveurs web dans Visual Studio pour les projets web ASP.NET](http://msdn.microsoft.com/31d4f588-df59-4b7e-b9ea-e1f2dd204328).
+Par défaut, l’exécution d’un projet web dans Visual Studio utilise le Serveur Visual Studio Development. Pour plus d'informations, voir [Serveurs web dans Visual Studio pour les projets web ASP.NET](http://msdn.microsoft.com/31d4f588-df59-4b7e-b9ea-e1f2dd204328).
 
 > [!NOTE]
 > Les options disponibles dans les boîtes de dialogue, ainsi que les noms et emplacements des commandes de menu que vous voyez, peuvent différer de ce qui est décrit dans l'aide selon vos paramètres actifs ou votre édition. Cette page d’aide a été écrite en tenant compte des **paramètres web**. Pour afficher ou modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils**. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
-
 
 ## <a name="settings"></a>Paramètres
 

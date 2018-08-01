@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fd27aa3e589957d75d504421d170735d1add6f9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 164a0eeb8c466c2e2eb5bd03f92160a2fad78abd
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573796"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177735"
 ---
-# <a name="generatebootstrapper-task"></a>GenerateBootstrapper, tâche
+# <a name="generatebootstrapper-task"></a>GenerateBootstrapper (tâche)
 Fournit un moyen automatisé de détecter, télécharger et installer une application et ses composants requis. Elle constitue un seul programme d’installation qui intègre les programmes d’installation distincts de tous les composants d’une application.  
   
 ## <a name="task-parameters"></a>Paramètres de tâche  
- Le tableau ci-dessous décrit les paramètres de la tâche `GenerateBootstrapper` .  
+ Le tableau ci-dessous décrit les paramètres de la tâche `GenerateBootstrapper`.  
   
 -   `ApplicationFile`  
   
@@ -78,7 +78,7 @@ Fournit un moyen automatisé de détecter, télécharger et installer une applic
     </BootstrapperItem>  
     ```  
   
-     L’attribut `Include` permet de représenter le nom d’un composant requis qui doit être installé. Les métadonnées de l’élément `ProductName` sont facultatives et sont utilisées par le moteur de génération comme nom convivial lorsque le package est introuvable. Ces éléments ne sont pas des paramètres d’entrée [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] obligatoires à moins qu’aucun `ApplicationFile` ne soit spécifié. Vous devez inclure un élément pour chaque composant requis qui doit être installé pour votre application.  
+     L’attribut `Include` représente le nom d’un composant requis qui doit être installé. Les métadonnées de l’élément `ProductName` sont facultatives et sont utilisées par le moteur de génération comme nom convivial si le package est introuvable. Ces éléments ne sont pas des paramètres d’entrée [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] obligatoires à moins qu’aucun `ApplicationFile` ne soit spécifié. Vous devez inclure un élément pour chaque composant requis qui doit être installé pour votre application.  
   
      Une erreur de build se produit si ni le paramètre `BootstrapperItems` ni le paramètre `ApplicationFile` ne sont spécifiés.  
   
@@ -86,17 +86,17 @@ Fournit un moyen automatisé de détecter, télécharger et installer une applic
   
      Paramètre de sortie `String` facultatif.  
   
-     Spécifie l’emplacement de génération de setup.exe.  
+     Spécifie l’emplacement de génération de *setup.exe*.  
   
 -   `ComponentsLocation`  
   
      Paramètre `String` facultatif.  
   
-     Indique un emplacement où le programme d’amorçage doit rechercher les composants requis à installer. Ce paramètre peut prendre les valeurs suivantes :  
+     Indique un emplacement où le programme d’amorçage doit rechercher les composants requis à installer. Ce paramètre peut avoir les valeurs suivantes :  
   
     -   `HomeSite` : indique que le composant requis est hébergé par le fournisseur du composant.  
   
-    -   `Relative` : indique que le composant requis est au même emplacement que l’application.  
+    -   `Relative` : indique que le composant requis est au même emplacement de l’application.  
   
     -   `Absolute` : indique que tous les composants doivent se trouver dans une URL centralisée. Cette valeur doit être utilisée conjointement avec le paramètre d’entrée `ComponentsUrl`.  
   
@@ -130,7 +130,7 @@ Fournit un moyen automatisé de détecter, télécharger et installer une applic
   
      Paramètre `String` facultatif.  
   
-     Indique l’emplacement où copier setup.exe et tous les fichiers du package.  
+     Indique l’emplacement où copier *setup.exe* et tous les fichiers du package.  
   
 -   `Path`  
   
@@ -151,7 +151,7 @@ Fournit un moyen automatisé de détecter, télécharger et installer une applic
      Si `true`, le programme d’amorçage exécute la validation XSD sur les éléments de programme d’amorçage d’entrée spécifiés. La valeur par défaut de ce paramètre est `false`.  
   
 ## <a name="remarks"></a>Notes  
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant utilise la tâche `GenerateBootstrapper` pour installer une application qui doit avoir le composant requis [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] installé.  
@@ -179,4 +179,4 @@ Fournit un moyen automatisé de détecter, télécharger et installer une applic
   
 ## <a name="see-also"></a>Voir aussi  
  [Tâches](../msbuild/msbuild-tasks.md)   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)
+ [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

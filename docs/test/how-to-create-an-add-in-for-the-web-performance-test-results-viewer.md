@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2d3f0ec5108d077346eb69f1fb1236a7ecee56d5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 92c41fec7cf481c058f158e91c486134ca6c1740
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751674"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177251"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Comment : créer un complément Visual Studio pour la visionneuse des résultats des tests de performances de site Web
 
-Vous pouvez étendre l'interface utilisateur de l'Afficheur de résultats de test de performances Web à l'aide des espaces de noms suivants :
+Pour étendre l’interface utilisateur de **l’Afficheur de résultats de test de performances web**, utilisez les espaces de noms suivants :
 
 -   <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 
@@ -28,16 +28,16 @@ Vous pouvez étendre l'interface utilisateur de l'Afficheur de résultats de tes
 
 Vous devez également ajouter une référence à la DLL LoadTestPackage, qui est située dans le dossier *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies*.
 
--   Pour étendre l'interface utilisateur de l'Afficheur de résultats de test de performances web, vous devez créer un complément Visual Studio et un contrôle utilisateur. Les procédures suivantes expliquent comment créer le complément et le contrôle utilisateur, et comment implémenter les classes nécessaires pour étendre l'interface utilisateur de l'Afficheur de résultats de test de performances Web.
+-   Pour étendre l’interface utilisateur de **l’Afficheur de résultats de test de performances web**, vous devez créer un complément Visual Studio et un contrôle utilisateur. Les procédures suivantes expliquent comment les créer et comment implémenter les classes nécessaires pour étendre l’interface utilisateur de **l’Afficheur de résultats de test de performances web**.
 
 ## <a name="create-or-open-a-solution-that-contains-an-aspnet-web-application-and-a-web-performance-and-load-test-project"></a>Créer ou ouvrir une solution contenant une application Web ASP.NET et un projet de test de performances de site Web et de charge
 
 ### <a name="to-prepare-for-extending-the-web-performance-test-results-viewer"></a>Pour préparer l'extension de l'Afficheur de résultats de test de performances Web
 
-Créez ou ouvrez une solution de non-production dans laquelle vous pouvez effectuer des tests. Elle doit contenir une application Web ASP.NET et un projet de test de performances de site Web et de charge comportant un ou plusieurs tests de performances de site Web pour l'application Web ASP.NET.
+Créez ou ouvrez une solution qui ne soit pas en production et dans laquelle vous puissiez effectuer des tests. Elle doit contenir une application web ASP.NET et un projet de test de performances web et de charge comportant un ou plusieurs tests de performances web pour l’application web ASP.NET.
 
 > [!NOTE]
-> Vous pouvez créer une application web ASP.NET et un projet de test de performances web et de charge contenant des tests de performances web en suivant les procédures décrites dans [Guide pratique pour créer un test de service web](../test/how-to-create-a-web-service-test.md) et [Générer et exécuter un test des performances web](../test/generate-and-run-a-coded-web-performance-test.md).
+> Pour créer une application web ASP.NET et un projet de test de performances web et de charge comportant des tests de performances web, suivez les procédures décrites dans [Guide pratique : Créer un test de service web](../test/how-to-create-a-web-service-test.md) et [Générer et exécuter un test de performances web codé](../test/generate-and-run-a-coded-web-performance-test.md).
 
 ## <a name="create-a-visual-studio-add-in"></a>Créer un complément Visual Studio
 
@@ -216,7 +216,7 @@ Le complément Visual Studio créé dans les procédures précédentes référen
     using WebPerfTestResultsViewerControl;
     ```
 
-14. Faites défiler le fichier Connect.cs jusqu'en bas. Vous devez ajouter une liste de GUID pour le <xref:System.Windows.Forms.UserControl>, au cas où plusieurs instances de l'Afficheur de résultats de test de performances Web sont ouvertes. Vous ajouterez ultérieurement du code pour utiliser cette liste.
+14. Faites défiler le fichier Connect.cs jusqu'en bas. Ajoutez une liste de GUID pour <xref:System.Windows.Forms.UserControl> au cas où plusieurs instances de **l’Afficheur de résultats de test de performances web** seraient ouvertes. Vous ajouterez ultérieurement du code pour utiliser cette liste.
 
      Une deuxième liste de chaînes est utilisée dans la méthode OnDiscconection que vous coderez ultérieurement.
 
@@ -227,7 +227,7 @@ Le complément Visual Studio créé dans les procédures précédentes référen
     private Dictionary<Guid, List<UserControl>> m_controls = new Dictionary<Guid, List<UserControl>>();        private List<string> temporaryFilePaths = new List<string>();
     ```
 
-15. Le fichier Connect.cs instancie une classe nommée Connect de la classe <xref:Extensibility.IDTExtensibility2>. Elle inclut également des méthodes pour l’implémentation du complément Visual Studio. La méthode OnConnection est l'une de ces méthodes. Elle reçoit une notification lorsque le complément est chargé. Dans la méthode OnConnection, vous utiliserez la classe LoadTestPackageExt pour créer votre package d'extensibilité pour l'Afficheur de résultats de test de performances Web. Ajoutez le code suivant à la méthode OnConnection :
+15. Le fichier Connect.cs instancie une classe nommée Connect de la classe <xref:Extensibility.IDTExtensibility2>. Elle inclut également des méthodes pour l’implémentation du complément Visual Studio. La méthode OnConnection est l'une de ces méthodes. Elle reçoit une notification lorsque le complément est chargé. Dans la méthode OnConnection, vous utiliserez la classe LoadTestPackageExt pour créer votre package d’extensibilité pour **l’Afficheur de résultats de test de performances web**. Ajoutez le code suivant à la méthode OnConnection :
 
     ```csharp
     public void OnConnection(object application, ext_ConnectMode connectMode, object addInInst, ref Array custom)
@@ -283,7 +283,7 @@ Le complément Visual Studio créé dans les procédures précédentes référen
 
 2.  Sélectionnez l’onglet **Application**, choisissez la liste déroulante **Framework cible**, sélectionnez **.NET Framework 4**, puis fermez la page Propriétés.
 
-     Cette opération est nécessaire pour prendre en charge les références de DLL nécessaires à l'extension de l'Afficheur des résultats des tests de performances Web.
+     Cette opération est nécessaire pour prendre en charge les références DLL requises afin d’étendre **l’Afficheur de résultats de test de performances web**.
 
 3.  Dans l’Explorateur de solutions, dans le projet WebPerfTestResultsViewerControl, cliquez avec le bouton droit sur le nœud **Références**, puis sélectionnez **Ajouter une référence**.
 
@@ -347,7 +347,7 @@ Le complément Visual Studio créé dans les procédures précédentes référen
 
 ### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>Pour exécuter le nouveau complément VS pour l'Afficheur des résultats de test Web
 
-1.  Exécutez votre test de performances de site Web. Le nouvel onglet du complément WebPerfTestResultsViewerAddin, intitulé Exemple, s'affiche dans l'Afficheur des résultats des tests de performances Web.
+1.  Exécutez votre test de performances web. Le nouvel onglet du complément WebPerfTestResultsViewerAddin, intitulé Exemple, apparaît dans **l’Afficheur de résultats de test de performances web**.
 
 2.  Cliquez sur l'onglet pour consulter les propriétés présentées dans le contrôle DataGridView.
 
@@ -363,7 +363,7 @@ De plus, cette page d’options vous permet de spécifier les dossiers dans lesq
 
 -   **Autoriser le chargement des composants de compléments.** Cette option est sélectionnée par défaut. Quand ce paramètre est activé, le chargement des compléments est autorisé dans Visual Studio. Quand il est désactivé, le chargement des compléments est interdit dans Visual Studio.
 
--   **Autoriser le chargement des composants de compléments à partir d’une URL.** Cette option est désélectionnée par défaut. Lorsque ce paramètre est activé, les compléments sont autorisés à être chargés à partir de sites web externes. Quand il est désactivé, le chargement des compléments distants est interdit dans Visual Studio. Si, pour une raison ou une autre, un complément ne peut pas se charger, il ne peut pas l'être non plus depuis le Web. Ce paramètre contrôle uniquement le chargement de la DLL complémentaire. Les fichiers d'enregistrement .Addin doivent toujours se trouver sur le système local.
+-   **Autoriser le chargement des composants de compléments à partir d’une URL.** Cette option est désélectionnée par défaut. Lorsqu’elle est activée, le chargement des compléments à partir de sites web externes est autorisé. Quand il est désactivé, le chargement des compléments distants est interdit dans Visual Studio. Si, pour une raison ou une autre, un complément ne peut pas se charger, il ne peut pas l'être non plus depuis le Web. Ce paramètre contrôle uniquement le chargement de la DLL complémentaire. Les fichiers d'enregistrement .Addin doivent toujours se trouver sur le système local.
 
 ## <a name="see-also"></a>Voir aussi
 

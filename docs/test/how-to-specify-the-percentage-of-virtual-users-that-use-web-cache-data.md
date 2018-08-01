@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1bf1c0ce47e96438df768776244cc26bc9ea8929
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 360c8ea61a97256a316c726954bf53e4dcf3004b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447256"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180049"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Comment : spécifier le pourcentage des utilisateurs virtuels qui utilisent les données du cache Web
 
@@ -23,7 +23,7 @@ Après avoir créé votre test de charge avec **l’Assistant Nouveau test de ch
 
 La propriété **Pourcentage de nouveaux utilisateurs** est définie dans la fenêtre Propriétés. Vous modifiez des propriétés du scénario de test de charge dans l'éditeur de test de charge.
 
-La propriété **Pourcentage de nouveaux utilisateurs** définit le mode de simulation par le test de charge de la mise en cache qui serait exécutée par un navigateur web. Par défaut, la propriété **Pourcentage de nouveaux utilisateurs** est définie sur 0 %. Si la valeur de la propriété **Pourcentage de nouveaux utilisateurs** est définie sur 100 %, chaque test de performances web exécuté dans un test de charge est traité comme un utilisateur accédant au site web pour la première fois et qui n’a aucun contenu du site web dans le cache de son navigateur provenant de visites antérieures. Par conséquent, toutes les requêtes dans le test Web, y compris toutes les requêtes dépendantes telles que les images, sont téléchargées.
+La propriété **Pourcentage de nouveaux utilisateurs** définit le mode de simulation par le test de charge de la mise en cache qui serait exécutée par un navigateur web. Par défaut, la propriété **Pourcentage de nouveaux utilisateurs** est définie sur 0 %. Si la valeur de la propriété **Pourcentage de nouveaux utilisateurs** est définie sur 100 %, chaque test de performances web exécuté dans un test de charge est traité comme un utilisateur accédant au site web pour la première fois et qui n’a aucun contenu du site web dans le cache de son navigateur provenant de visites antérieures. Par conséquent, toutes les requêtes dans le test web, y compris toutes les requêtes dépendantes telles que les images, sont téléchargées.
 
 > [!NOTE]
 > Lorsque la même ressource pouvant être mise en cache est demandée plus d'une fois dans un test web, les requêtes ne sont pas téléchargées.

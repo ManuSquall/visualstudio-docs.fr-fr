@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d674e7613898816f905e0d0a11bdc2484cf4f25
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 15084b21c80967a5ebd170e175adf09d9623be5b
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325321"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154091"
 ---
 # <a name="sdk-element-msbuild"></a>Élément Sdk (MSBuild)
 Référence un kit SDK de projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -59,6 +59,6 @@ Référence un kit SDK de projet [!INCLUDE[vstecmsbuild](../extensibility/intern
 |[Projet](../msbuild/project-element-msbuild.md)|Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .|  
 
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour référencer un kit SDK de projet MSBuild](../msbuild/how-to-use-project-sdk.md)   
- [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)   
+ [Guide pratique : Faire référence à un kit SDK de projet MSBuild](../msbuild/how-to-use-project-sdk.md)   
+ [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)   
  [MSBuild](../msbuild/msbuild.md)

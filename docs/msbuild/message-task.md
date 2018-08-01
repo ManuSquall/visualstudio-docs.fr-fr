@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0555ae538cb473d436727da67af40be037c992a4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a0b61bf9def1ba37667302850527715eed1db4ff
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569278"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178330"
 ---
-# <a name="message-task"></a>Message, tâche
+# <a name="message-task"></a>Message (tâche)
 Enregistre un message pendant une génération.  
   
 ## <a name="parameters"></a>Paramètres  
- Le tableau ci-dessous décrit les paramètres de la tâche `Message`.  
+ Le tableau ci-dessous décrit les paramètres de la tâche `Message` .  
   
 |Paramètre|Description|  
 |---------------|-----------------|  
@@ -41,11 +41,11 @@ Enregistre un message pendant une génération.
 ## <a name="remarks"></a>Notes  
  La tâche `Message` permet aux projets [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] d’envoyer des messages à des enregistreurs d’événements à différentes étapes du processus de génération.  
   
- Si le paramètre `Condition` a la valeur `true`, la valeur du paramètre `Text` est consignée dans le journal et la génération se poursuit. Si un paramètre `Condition` n’existe pas, le texte du message est consigné dans le journal. Pour plus d’informations sur la journalisation, consultez l’article [Obtention de journaux de génération avec MSBuild](../msbuild/obtaining-build-logs-with-msbuild.md).  
+ Si le paramètre `Condition` a la valeur `true`, la valeur du paramètre `Text` est consignée dans le journal et la génération se poursuit. Si un paramètre `Condition` n’existe pas, le texte du message est consigné dans le journal. Pour plus d’informations sur la journalisation, voir [Obtenir des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md).  
   
  Par défaut, le message est envoyé à l’enregistreur d’événements de la console MSBuild. Ceci peut être modifié en définissant le paramètre <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A>. L’enregistreur d’événements interprète le paramètre `Importance`.  
   
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Exemple  
  L’exemple de code suivant consigne les messages dans tous les enregistreurs d’événements inscrits.  
@@ -61,5 +61,5 @@ Enregistre un message pendant une génération.
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence des tâches](../msbuild/msbuild-task-reference.md)   
- [Obtention de journaux de génération avec MSBuild](../msbuild/obtaining-build-logs-with-msbuild.md)
+ [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)   
+ [Obtenir des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)

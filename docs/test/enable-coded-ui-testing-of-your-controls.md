@@ -9,14 +9,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 055fbdb338e5b8abf3f58f2a961d4e16d85fb993
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6f71012cca199cbee90995be654a75c1abb7fa79
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751752"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153561"
 ---
-# <a name="enable-coded-ui-testing-of-your-controls"></a>Activer le test codé de l’interface utilisateur de vos contrôles
+# <a name="enable-coded-ui-testing-of-your-controls"></a>Activer les tests codés de l’interface utilisateur de vos contrôles
 
 Implémentez la prise en charge du framework de tests codés de l’interface utilisateur pour rendre votre contrôle plus facile à tester. Vous pouvez ajouter des niveaux croissants de prise en charge de manière incrémentielle. Commencez par permettre la prise en charge de l’enregistrement et de la lecture, ainsi que de la validation de propriété. Ensuite, utilisez cette prise en charge pour permettre au générateur de test codé de l’interface utilisateur de reconnaître les propriétés personnalisées de votre contrôle. Fournissez des classes personnalisées pour accéder à ces propriétés à partir du code généré. Vous pouvez également aider à ce que les actions de capture du générateur de test codé de l'interface utilisateur soient plus proches de l'objectif de l'action en cours d'enregistrement.
 
@@ -69,7 +69,7 @@ Le générateur de test codé de l'interface utilisateur capture des information
 4.  Remplacez les propriétés et méthodes <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> et <xref:System.Windows.Forms.AccessibleObject.Select%2A> de l’objet d’accessibilité du contrôle enfant.
 
 > [!NOTE]
-> Cette rubrique commence par l’exemple d’accessibilité de <xref:System.Windows.Forms.AccessibleObject>, puis se base dessus pour les procédures qui suivent. Si vous souhaitez créer une version opérationnelle de l'exemple d'accessibilité, créez une application console et remplacez le code du fichier Program.cs par celui de l'exemple. Ajoutez des références à Accessibility, System.Drawing et System.Windows.Forms. Changez la propriété **Incorporer les types d’interopérabilité** d’Accessibility en lui affectant la valeur **False** pour éviter un avertissement de build. Vous pouvez changer le type de sortie du projet et remplacer **Application Console** par **Application Windows** pour éviter l’apparition d’une fenêtre de console quand vous exécutez l’application.
+> Cette rubrique commence par l’exemple d’accessibilité de <xref:System.Windows.Forms.AccessibleObject>, puis se base dessus pour les procédures qui suivent. Si vous souhaitez créer une version opérationnelle de l’exemple d’accessibilité, créez une application console et remplacez le code de *Program.cs* par celui de l’exemple. Ajoutez des références à Accessibility, System.Drawing et System.Windows.Forms. Changez la propriété **Incorporer les types d’interopérabilité** d’Accessibility en lui affectant la valeur **False** pour éviter un avertissement de build. Vous pouvez changer le type de sortie du projet et remplacer **Application Console** par **Application Windows** pour éviter l’apparition d’une fenêtre de console quand vous exécutez l’application.
 
 ## <a name="support-custom-property-validation-by-implementing-a-property-provider"></a>Prendre en charge la validation de propriété personnalisée en implémentant un fournisseur de propriétés
 
@@ -134,7 +134,7 @@ Une fois que vous avez implémenté la prise en charge de base pour l’enregist
 
 1. Substituez les propriétés et méthodes abstraites restantes de <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>.
 
-1. Créez vos fichiers binaires et copiez-les dans **% ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages**.
+1. Créez vos fichiers binaires et copiez-les dans *% ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
 
 > [!NOTE]
 > Ce package d’extension est appliqué à tout contrôle de type « Texte ». Si vous testez plusieurs contrôles du même type, testez-les séparément pour pouvoir gérer les packages d’extension qui sont déployés quand vous enregistrez les tests.
@@ -171,7 +171,7 @@ Si vous avez implémenté un fournisseur de propriétés pour fournir l’accès
 
 1. Ajoutez le filtre d'action à la méthode <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> de votre package d'extension.
 
-1. Créez vos fichiers binaires et copiez-les sur % ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.
+1. Créez vos fichiers binaires et copiez-les sur *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
 
 > [!NOTE]
 > Le filtre d'action ne dépend pas de l'implémentation de l'accessibilité ou du fournisseur de propriétés.
@@ -182,7 +182,7 @@ Votre fournisseur de propriété et votre filtre d’action sont implémentés d
 
 ### <a name="to-debug-your-property-provider-or-action-filter"></a>Pour déboguer votre fournisseur de propriétés ou filtre d'action
 
-1.  Générez la version debug de votre package d’extension, puis copiez les fichiers .dll et .pdb dans % ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.
+1.  Générez la version de débogage de votre package d’extension, puis copiez les fichiers *.dll* et *.pdb* dans *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
 
 2.  Exécutez votre application (pas dans le débogueur).
 

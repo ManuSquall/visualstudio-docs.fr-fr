@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ff7a135c11df03e203f8cf221f02c40264fb6bd6
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3537cf15ef1ec619a701df0036431810dfb7c087
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749227"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175733"
 ---
 # <a name="options-text-editor-all-languages"></a>Options, Éditeur de texte, Tous les langages
 Cette boîte de dialogue vous permet de modifier le comportement par défaut de l’éditeur de code. Ces paramètres s’appliquent également à d’autres éditeurs basés sur l’éditeur de code, tels que le mode Source du concepteur HTML. Pour ouvrir cette boîte de dialogue, sélectionnez **Options** dans le menu **Outils**. Dans le dossier **Éditeur de texte**, développez le sous-dossier **Tous les langages**, puis choisissez **Général**.
@@ -104,7 +104,7 @@ Ce paramètre n’a aucun effet sur les actions Copier ni Couper lorsqu’une li
 
  Activer la navigation dans les URL par simple clic
 
- Lorsque cette option est sélectionnée, le curseur de souris prend la forme d’une main avec un doigt pointé lorsqu’il passe sur une URL dans l’éditeur. Vous pouvez cliquer sur l'URL pour afficher la page indiquée dans votre navigateur Web.
+ Lorsque cette option est sélectionnée, le curseur de souris prend la forme d’une main avec un doigt pointé lorsqu’il passe sur une URL dans l’éditeur. Vous pouvez cliquer sur l’URL pour afficher la page indiquée dans votre navigateur web.
 
  Barre de navigation
 

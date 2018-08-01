@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: abac68ff371040a7f121a885065c8c3eaf9af8ff
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 4c76eaf68f63b4f3b8a5713d0b206b395ee7c9f1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32066532"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178632"
 ---
 # <a name="template-parameters"></a>Paramètres de modèle
 
@@ -64,7 +64,7 @@ Le tableau suivant liste les paramètres de modèle réservés qui peuvent être
 |SpecificSolutionName|Nom du fichier solution. Quand l’option "créer le répertoire de la solution" est cochée, `SpecificSolutionName` porte le nom de la solution. Quand l’option "créer le répertoire de solution" n’est pas cochée, `SpecificSolutionName` est vide.|
 |userdomain|Domaine de l’utilisateur actuel.|
 |Nom d’utilisateur|Nom de l’utilisateur actuel.|
-|webnamespace|Nom du site web actuel. Ce paramètre est utilisé dans le modèle de formulaire web pour garantir des noms de classes uniques. Si le site web se trouve dans le répertoire racine du serveur web, ce paramètre de modèle correspond au répertoire racine du serveur web.|
+|webnamespace|Nom du site web actuel. Ce paramètre est utilisé dans le modèle de formulaire web pour garantir des noms de classes uniques. Si le site web se trouve dans le répertoire racine du serveur web, ce paramètre de modèle correspond à ce répertoire racine.|
 |année|Année actuelle au format AAAA.|
 
 > [!NOTE]
@@ -121,3 +121,4 @@ Dans le fichier *.vstemplate* du modèle de projet, ajoutez l’attribut `Replac
 
 - [Personnaliser les modèles](../ide/customizing-project-and-item-templates.md)
 - [Guide pratique pour créer des modèles de projet](../ide/how-to-create-project-templates.md)
+- [Informations de référence sur les schémas de modèles](../extensibility/visual-studio-template-schema-reference.md)

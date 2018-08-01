@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee4789bc8ca7359af2df6cf2ff9fbcdd8ba7d6b9
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 37dfbb9fda19363aefa1600fe9b0186862963cc1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704523"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177696"
 ---
 # <a name="immediate-window"></a>Exécution (fenêtre)
 La fenêtre **Exécution** est utilisée pour déboguer et évaluer des expressions, exécuter des instructions, imprimer les valeurs des variables, etc. Elle vous permet d’entrer des expressions qui doivent être évaluées ou exécutées par le langage de développement lors du processus de débogage. Pour afficher la fenêtre **Exécution**, ouvrez un projet à modifier, puis choisissez **Fenêtres** dans le menu **Déboguer** et sélectionnez **Exécution**, ou appuyez sur Ctrl+Alt+I.
@@ -129,7 +129,7 @@ Vous ne pouvez pas utiliser l’évaluation des expressions au moment du design 
 - [Naviguer dans le code avec le débogueur](../../debugger/navigating-through-code-with-the-debugger.md)
 - [Commande, fenêtre](../../ide/reference/command-window.md)
 - [Débogage dans Visual Studio](../../debugger/debugging-in-visual-studio.md)
-- [Principes de base du débogueur](../../debugger/debugger-basics.md)
+- [Principes de base du débogueur](../../debugger/getting-started-with-the-debugger.md)
 - [Procédure pas à pas : débogage au moment du design](../../debugger/walkthrough-debugging-at-design-time.md)
 - [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
 - [Utilisation d’expressions régulières dans Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

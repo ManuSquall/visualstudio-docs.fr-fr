@@ -9,19 +9,19 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cbd654cfd05b06646346b8629b646e8450ccf081
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a64558f442b6d3ad77a34bb8ae4acb2860273c05
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967682"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176467"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Configurer les agents de test et les contrôleurs de test pour l’exécution de tests de charge
 
 Visual Studio peut utiliser des ordinateurs physiques ou des machines virtuelles pour générer une charge simulée pour votre application. Ces ordinateurs doivent être configurés comme un contrôleur de test unique, et un ou plusieurs agents de test. Vous pouvez utiliser le contrôleur de test et les agents de test pour générer une charge supérieure à celle qu’un seul ordinateur peut générer à lui seul.
 
 > [!NOTE]
-> Vous pouvez également utiliser le test de charge basé sur le cloud pour fournir les machines virtuelles qui génèrent la charge de nombreux utilisateurs accédant simultanément à votre site web. Découvrez plus en détail les tests de charge basés sur le cloud dans [Exécuter des tests de charge à l’aide de VSTS](/vsts/load-test/get-started-simple-cloud-load-test).
+> Vous pouvez également utiliser le test de charge cloud pour fournir des machines virtuelles qui génèrent la charge de nombreux utilisateurs accédant simultanément à votre site web. Découvrez plus en détail les tests de charge basés sur le cloud dans [Exécuter des tests de charge à l’aide de VSTS](/vsts/load-test/get-started-simple-cloud-load-test).
 
 ## <a name="load-simulation-architecture"></a>Architecture de la simulation de charge
 
@@ -61,7 +61,7 @@ Même si un contrôleur de test gère en général plusieurs agents de test, un 
 
 Le contrôleur de test gère un ensemble d’agents de test pour exécuter des tests. Le contrôleur de test communique avec les agents de test pour démarrer les tests, arrêter les tests, suivre l’état des agents de test et collecter les résultats des tests.
 
-### <a name="test-controller"></a>Test Controller
+### <a name="test-controller"></a>Contrôleur de test
 
 Le contrôleur de test fournit une architecture générale pour l’exécution de tests et comprend des fonctionnalités spécifiques pour l’exécution de tests de charge. Le contrôleur de test envoie le test de charge à tous les agents de test et attend qu'ils aient initialisé le test. Quand tous les agents de test sont prêts, le contrôleur de test envoie un message aux agents de test pour qu’ils démarrent le test.
 
@@ -69,23 +69,23 @@ Le contrôleur de test fournit une architecture générale pour l’exécution d
 
 L’agent de test s’exécute en tant que service qui écoute les demandes de démarrage d’un nouveau test envoyées par le contrôleur de test. Quand l'agent de test reçoit une demande, le service de l'agent de test démarre un processus sur lequel les tests peuvent être exécutés. Chaque agent de test exécute le même test de charge.
 
- Une pondération est affectée par l'administrateur aux agents de test. La charge est distribuée en fonction de la pondération d'un agent de test. Par exemple, si l’agent de test 1 a une pondération de 30, que l’agent de test 2 a une pondération de 70 et que la charge est définie à 1 000 utilisateurs, l’agent de test 1 simule 300 utilisateurs virtuels tandis que l’agent de test 2 en simule 700. Consultez [Gestion des contrôleurs de test et des agents de test avec Visual Studio](../test/manage-test-controllers-and-test-agents.md).
+ Une pondération est affectée par l'administrateur aux agents de test. La charge est distribuée en fonction de la pondération d'un agent de test. Par exemple, si l’agent de test 1 a une pondération de 30, que l’agent de test 2 a une pondération de 70 et que la charge est définie à 1 000 utilisateurs, l’agent de test 1 simule 300 utilisateurs virtuels tandis que l’agent de test 2 en simule 700. Consultez [Gérer les contrôleurs de test et les agents de test avec Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
  L’agent de test prend un ensemble de tests et un ensemble de paramètres de simulation comme entrées. Un concept essentiel est que les tests sont indépendants de l'ordinateur sur lequel ils sont exécutés.
 
-## <a name="test-controller-and-test-agent-connection-points"></a>Points de connexion d'un contrôleur de test et d'un agent de test
+## <a name="test-controller-and-test-agent-connection-points"></a>Points de connexion d’un contrôleur de test et d’un agent de test
 
 L’illustration suivante montre les points de connexion entre le contrôleur de test, l’agent de test et le client. Elle décrit les ports utilisés pour les connexions entrantes et sortantes ainsi que les restrictions de sécurité sur ces ports.
 
  ![Ports et sécurité du contrôleur de test et de l’agent de test](./media/test-controller-agent-firewall.png)
 
- Pour plus d’informations, consultez [Configuration des ports pour les contrôleurs de test et les agents de test](../test/configure-ports-for-test-controllers-and-test-agents.md).
+ Pour plus d’informations, consultez [Configurer les ports pour les contrôleurs de test et les agents de test](../test/configure-ports-for-test-controllers-and-test-agents.md).
 
-## <a name="test-controller-and-agent-installation-information"></a>Informations d'installation du contrôleur et des agents de test
+## <a name="test-controller-and-agent-installation-information"></a>Informations d’installation du contrôleur et des agents de test
 
 Pour des informations importantes sur les spécifications matérielles et logicielles requises pour les contrôleurs de test et les agents de test, sur les procédures pour les installer et sur la configuration de votre environnement pour des performances optimales, consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).
 
-## <a name="using-the-test-controller-and-test-agent-with-unit-tests"></a>Utilisation du contrôleur de test et de l’agent de test avec des tests unitaires
+## <a name="use-the-test-controller-and-test-agent-with-unit-tests"></a>Utiliser le contrôleur de test et l’agent de test avec des tests unitaires
 
 Après avoir installé un contrôleur de test et un ou plusieurs agents, vous pouvez spécifier s'il faut utiliser une exécution distante avec le contrôleur de test dans les paramètres de test pour vos tests de charge. En outre, vous pouvez spécifier les adaptateurs de données et de diagnostic à utiliser avec le rôle associé aux agents dans les paramètres de test.
 

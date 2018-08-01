@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 02fd481455c5198a1d8ae0828072f8085d1d027a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bbafd92f34671564a91926066a2353a1e0421b63
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966158"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179240"
 ---
-# <a name="coding-a-custom-extraction-rule-for-a-web-performance-test"></a>Codage d'une règle d'extraction personnalisée pour un test de performances de site Web
+# <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Coder une règle d’extraction personnalisée pour un test de performances web
 
 Vous pouvez créer vos propres règles d'extraction. Pour cela, vous dérivez vos propres règles à partir d'une classe de règles d'extraction. Les règles d'extraction dérivent de la classe de base <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>.
 

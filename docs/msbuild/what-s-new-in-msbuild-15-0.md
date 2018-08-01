@@ -10,37 +10,40 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1757dc778c45d3b9c6afd7f289b6598728dc7687
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9a8eae3b6131ca147149324477119df1be55ba35
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569301"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154016"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Nouveautés de MSBuild 15
-MSBuild fait désormais partie intégrante du [Kit de développement logiciel (SDK) .NET Core](https://www.microsoft.com/net/download/core) et peut générer des projets .NET Core sur Windows, macOS et Linux.  
+
+MSBuild fait désormais partie intégrante du [Kit de développement logiciel (SDK) .NET Core](https://www.microsoft.com/net/download/core) et peut générer des projets .NET Core sur Windows, macOS et Linux.
 
 ## <a name="changed-path"></a>Chemin d’accès modifié
- MSBuild est à présent installé dans un dossier situé sous chaque version de Visual Studio. Par exemple, `C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild`. Vous pouvez également localiser MSBuild à l’aide du module PowerShell suivant : [vssetup.powershell](https://github.com/Microsoft/vssetup.powershell).
+
+ MSBuild est à présent installé dans un dossier situé sous chaque version de Visual Studio. Par exemple, *C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild*. Vous pouvez également localiser MSBuild à l’aide du module PowerShell suivant : [vssetup.powershell](https://github.com/Microsoft/vssetup.powershell).
 
  MSBuild n’est plus installé dans le Global Assembly Cache. Pour référencer MSBuild par programme, utilisez les packages NuGet.
 
-## <a name="changed-properties"></a>Propriétés modifiées  
- Les propriétés MSBuild ci-après ont été mises à jour afin de correspondre au nouveau numéro de version.  
+## <a name="changed-properties"></a>Propriétés modifiées
 
--   `MSBuildToolsVersion` pour cette version des outils présente la valeur 15.0. La version de l’assembly est 15.1.0.0.
+ Les propriétés MSBuild ci-après ont été mises à jour afin de correspondre au nouveau numéro de version.
 
--   `MSBuildToolsPath` n’a plus d’emplacement fixe. Par défaut, cette propriété figure dans le dossier MSBuild\15.0\Bin relatif à l’emplacement d’installation de Visual Studio, mais cet emplacement peut être modifié pendant l’installation.
+- `MSBuildToolsVersion` pour cette version des outils présente la valeur 15.0. La version de l’assembly est 15.1.0.0.
 
--   Les valeurs `ToolsVersion` ne sont plus définies dans le Registre.  
+- `MSBuildToolsPath` n’a plus d’emplacement fixe. Par défaut, il se trouve dans le dossier *MSBuild\15.0\Bin* relatif à l’emplacement d’installation de Visual Studio, mais cet emplacement est modifiable pendant l’installation.
 
--   Les propriétés `SDK35ToolsPath` et `SDK40ToolsPath` pointent vers le Kit de développement logiciel (SDK) .NET Framework, qui est fourni avec cette version de Visual Studio (par exemple, 10.0A pour les outils 4.X).  
+- Les valeurs `ToolsVersion` ne sont plus définies dans le Registre.
+
+- Les propriétés `SDK35ToolsPath` et `SDK40ToolsPath` pointent vers le Kit de développement logiciel (SDK) .NET Framework, qui est fourni avec cette version de Visual Studio (par exemple, 10.0A pour les outils 4.X).
 
 ## <a name="updates"></a>Mises à jour
-- [L’élément Project](../msbuild/project-element-msbuild.md) comporte un nouvel attribut `SDK`. Par ailleurs, l’attribut `Xmlns` est désormais facultatif. Pour plus d’informations, consultez [Packages, métadonnées et infrastructures](/dotnet/core/packages) et [Ajouts au format csproj pour .NET Core](/dotnet/core/tools/csproj).
+- [L’élément Project](../msbuild/project-element-msbuild.md) comporte un nouvel attribut `SDK`. Par ailleurs, l’attribut `Xmlns` est désormais facultatif. Pour plus d’informations sur l’attribut `SDK`, voir [Guide pratique : Utiliser les kits SDK de projet MSBuild](../msbuild/how-to-use-project-sdk.md), [Packages, métadonnées et frameworks](/dotnet/core/packages) et [Ajouts au format csproj pour .NET Core](/dotnet/core/tools/csproj).
 - [L’élément Item](../msbuild/item-element-msbuild.md) à l’extérieur des cibles comporte un nouvel attribut `Update`. En outre, la restriction sur l’attribut `Remove` a été supprimée.
-- `Directory.Build.props` est un fichier défini par l’utilisateur qui fournit des personnalisations aux projets figurant dans un répertoire. Ce fichier est automatiquement importé à partir de Microsoft.Common.targets, sauf si la propriété `ImportDirectoryBuildTargets` est définie sur **false**. `Directory.Build.targets` est importé par Microsoft.Common.targets.
-- Toutes les métadonnées dont le nom n’entre pas en conflit avec la liste d’attributs actuelle peuvent être exprimées en option sous la forme d’un attribut. Pour plus d’informations, consultez l’article [Item, élément](../msbuild/item-element-msbuild.md).
+- *Directory.Build.props* est un fichier défini par l’utilisateur qui fournit des personnalisations aux projets situés dans un répertoire. Ce fichier est importé automatiquement à partir de *Microsoft.Common.props*, sauf si la propriété `ImportDirectoryBuildTargets` est définie sur **false**. *Directory.Build.targets* est importé par *Microsoft.Common.targets*.
+- Toutes les métadonnées dont le nom n’entre pas en conflit avec la liste d’attributs actuelle peuvent être exprimées en option sous la forme d’un attribut. Pour plus d’informations, voir [Élément Item](../msbuild/item-element-msbuild.md).
 
 ## <a name="new-property-functions"></a>Nouvelles fonctions de propriété
 
