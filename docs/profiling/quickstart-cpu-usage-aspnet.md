@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 00704c236e8e0c0453a36add4cb4603b76c31bd9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 13e8122649b1803e627576e4cf4d4bc83d1a286b
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477286"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39206825"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Démarrage rapide : analyser les données d’utilisation de l’UC dans Visual Studio (ASP.NET)
 
@@ -26,12 +26,9 @@ Visual Studio fournit de nombreuses fonctionnalités puissantes qui vous permett
 
 Le hub de diagnostic propose de nombreuses autres options pour exécuter et gérer votre session de diagnostic. Si l’outil **Utilisation de l’UC** décrit ici ne vous fournit pas les données dont vous avez besoin, les [autres outils de profilage](../profiling/Profiling-Tools.md) fournissent d’autres types d’informations qui peuvent vous être utiles. Dans de nombreux cas, le goulot d’étranglement des performances de votre application peut ne pas provenir de votre processeur, mais de la mémoire, de l’interface utilisateur de rendu ou du temps de requête réseau.
 
-> [!NOTE]
-> Pour .NET Core et ASP.NET Core, l’outil Utilisation de l’UC ne fournit pas de résultats précis avec les fichiers PBD portables. Utilisez des fichiers PDB complets à la place.
-
 ## <a name="create-a-project"></a>Créer un projet
 
-1. Dans Visual Studio, sélectionnez **Fichier > Nouveau projet**.
+1. Dans Visual Studio, sélectionnez **Fichier** > **Nouveau projet**.
 
 1. Sous **Visual C#**, choisissez **Web** puis, dans le volet central, choisissez **Application web ASP.NET (.NET Framework)**.
 
@@ -132,7 +129,7 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
     }
     ```
 
-1. Dans l’Explorateur de solutions, ouvrez Controller/HomeControllers.cs et remplacez le code suivant :
+1. Dans l’Explorateur de solutions, ouvrez *Controller/HomeControllers.cs* et remplacez le code suivant :
 
     ```csharp
     public ActionResult About()
@@ -156,7 +153,7 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
     }
     ```
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Étape 1 : Collecter les données de profilage 
+##  <a name="step-1-collect-profiling-data"></a>Étape 1 : Collecter les données de profilage 
   
 1.  Tout d’abord, définissez un point d’arrêt dans votre application sur cette ligne de code dans le constructeur `Simple` :
 
@@ -171,9 +168,9 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
     > [!TIP]
     > En définissant deux points d’arrêt, vous limitez la collecte de données aux sections de code que vous souhaitez analyser.
   
-1.  La fenêtre **Outils de diagnostic** est déjà visible, sauf si vous l’avez désactivée. Pour réafficher la fenêtre, cliquez sur **Déboguer / Fenêtres / Afficher les outils de diagnostic**.
+1.  La fenêtre **Outils de diagnostic** est déjà visible, sauf si vous l’avez désactivée. Pour réafficher la fenêtre, cliquez sur **Déboguer** > **Fenêtres** > **Afficher les outils de diagnostic**.
 
-1.  Cliquez sur **Déboguer / Démarrer le débogage** (ou **Démarrer** dans la barre d’outils, ou **F5**).
+1.  Cliquez sur **Déboguer** > **Démarrer le débogage** (ou bien sur **Démarrer** dans la barre d’outils, ou sur **F5**).
 
 1.  Une fois le chargement de l’application terminé, cliquez sur le lien **About** en haut de la page web pour commencer à exécuter le nouveau code.
 
@@ -197,13 +194,13 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
 
      À ce stade, vous pouvez commencer à analyser les données.
 
-## <a name="Step2"></a> Étape 2 : Analyser les données d’utilisation de l’UC
+## <a name="step-2-analyze-cpu-usage-data"></a>Étape 2 : Analyser les données d’utilisation de l’UC
 
 Nous vous recommandons de commencer à analyser vos données en examinant la liste des fonctions située sous l’onglet Utilisation de l’UC, en identifiant les fonctions qui effectuent la plus grande partie du travail, puis en analysant ces fonctions les unes après les autres.
 
 1. Dans la liste des fonctions, examinez celles qui effectuent le plus de travail.
 
-     ![Outils de diagnostic - Onglet Utilisation de l’UC](../profiling/media/quickstart-cpu-usage-cpu-aspnet.png)
+     ![Outils de diagnostic : onglet Utilisation de l’UC](../profiling/media/quickstart-cpu-usage-cpu-aspnet.png)
 
     > [!TIP]
     > Les fonctions sont classées par ordre et ce sont celles qui effectuent le plus de travail qui figurent en haut de la liste (elles ne sont pas classées selon leur ordre d’appel). Ainsi, vous pouvez identifier rapidement les fonctions avec les temps d’exécution les plus longs.
@@ -212,7 +209,7 @@ Nous vous recommandons de commencer à analyser vos données en examinant la lis
 
     Quand vous double-cliquez sur la fonction, la vue **Appelant/appelé** s’ouvre dans le volet gauche. 
 
-    ![Outils de diagnostic - Vue Appelant/appelé](../profiling/media/quickstart-cpu-usage-caller-callee-aspnet.png)
+    ![Outils de diagnostic : vue Appelant/appelé](../profiling/media/quickstart-cpu-usage-caller-callee-aspnet.png)
 
     Dans cette vue, la fonction sélectionnée apparaît dans le titre et dans la zone **Fonction active** (ici, `ServerClass::GetNumber`). La fonction qui a appelé la fonction active s’affiche sur la gauche sous **Fonctions appelantes**, et toutes les fonctions appelées par la fonction active s’affichent dans la zone **Fonctions appelées** située à droite. Vous pouvez sélectionner l’une ou l’autre de ces zones pour modifier la fonction active.
 
@@ -232,4 +229,4 @@ Nous vous recommandons de commencer à analyser vos données en examinant la lis
 ## <a name="see-also"></a>Voir aussi  
 
  [Profilage dans Visual Studio](../profiling/index.md)  
- [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md)
+ [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)

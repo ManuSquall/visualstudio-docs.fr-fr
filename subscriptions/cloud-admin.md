@@ -9,12 +9,12 @@ description: Configuration des administrateurs pour les abonnements cloud
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0ff2f63bbc253d459afea504790efee90c7e7e9f
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: a3a275ae81915ddf9eb89a59c4f90108df1f33da
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335682"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231274"
 ---
 # <a name="setting-up-administrators-for-visual-studio-cloud-subscriptions"></a>Configuration des administrateurs pour les abonnements cloud Visual Studio
 
@@ -46,6 +46,8 @@ L’abonné que vous avez désigné s’affiche maintenant au centre de la page 
 
 Le nouvel administrateur peut maintenant se connecter au [portail de gestion](https://manage.visualstudio.com), sélectionner le même abonnement Azure qui a été utilisé pour acheter les abonnements cloud à partir de la liste dans l’angle supérieur gauche de la page et commencer à gérer ces abonnements. 
 
+> [!NOTE]
+> Si vous voyez que des utilisateurs bénéficiant d’un accès leur permettant de modifier vos abonnements cloud alors que vous ne les avez pas établis en tant qu’administrateurs, c’est peut-être qu’ils ont des rôles qui leur permettent de gérer des abonnements dans l’abonnement Azure sous-jacent.  Ceci inclut les rôles suivants : propriétaire, contributeur, administrateur de service ou coadministrateur.  Pour plus d'informations, visitez le site https://docs.microsoft.com/vsts/billing/add-backup-billing-managers?view=vsts
 
 Pour plus d’informations sur les abonnements cloud Visual Studio, consultez la [vue d’ensemble](vscloud-overview.md) sous Achat d’abonnements cloud. Pour acheter des abonnements cloud Visual Studio, accédez à Visual Studio Marketplace à l’adresse [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription). 
 

@@ -13,21 +13,21 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c6b34993e011a8bf539b6ec2dd70beddf9c96caf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 42bc0ed6cea6025ad59c13566504daed7222ac2b
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976895"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203850"
 ---
-# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Comment : collecter des données IntelliTrace pour aider au débogage des problèmes difficiles
+# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Guide pratique pour collecter des données IntelliTrace pour aider au débogage des problèmes difficiles
 
 Vous pouvez configurer l’adaptateur de données de diagnostic pour IntelliTrace pour collecter des informations de trace de diagnostic spécifiques dans Visual Studio. Avec cet adaptateur, le test peut collecter des événements de diagnostic significatifs pouvant être utilisés ultérieurement par un développeur pour repérer la cause d'un bogue dans le code. L'adaptateur de données de diagnostic pour IntelliTrace peut être utilisé pour des tests manuels ou automatisés.
 
 > [!NOTE]
-> IntelliTrace fonctionne uniquement sur une application écrite avec du code managé. Si vous testez une application Web qui utilise un navigateur comme client, vous ne devez pas activer IntelliTrace pour ce client dans vos paramètres de test, car aucun code managé n'est disponible pour effectuer le suivi. Dans ce cas, vous pouvez configurer un environnement pour collecter des données IntelliTrace à distance sur votre serveur web.
+> IntelliTrace fonctionne uniquement sur une application écrite avec du code managé. Si vous testez une application web qui utilise un navigateur comme client, vous ne devez pas activer IntelliTrace pour ce client dans vos paramètres de test, car aucun code managé n'est disponible pour effectuer le suivi. Dans ce cas, vous pouvez configurer un environnement pour collecter des données IntelliTrace à distance sur votre serveur web.
 
-Les données IntelliTrace sont stockées dans un fichier ayant une extension .iTrace. Si vous exécutez votre test et qu'une de ses étapes échoue, vous pouvez créer un bogue. Le fichier IntelliTrace qui contient les informations de diagnostic est automatiquement joint à ce bogue.
+Les données IntelliTrace sont stockées dans un fichier ayant une extension *.iTrace*. Si vous exécutez votre test et qu'une de ses étapes échoue, vous pouvez créer un bogue. Le fichier IntelliTrace qui contient les informations de diagnostic est automatiquement joint à ce bogue.
 
 > [!NOTE]
 > L'adaptateur de données de diagnostic pour IntelliTrace ne crée pas de fichier IntelliTrace en cas de réussite du test. Un fichier est enregistré uniquement si un cas de test échoue ou lorsque vous signalez un bogue.
@@ -73,11 +73,11 @@ Avant d’effectuer les opérations décrites dans cette procédure, vous devez 
 
 5.  Choisissez l’onglet **Général**. Sélectionnez **Événements IntelliTrace uniquement** pour enregistrer des événements de diagnostic significatifs qu ont un impact minimal sur les performances lors de vos tests.
 
-     **-** ou-
+     - ou -
 
      Sélectionnez **Événements IntelliTrace et informations d’appels** pour enregistrer des événements de diagnostic et le traçage au niveau de la méthode affichant des informations sur les appels. Ce niveau de traçage peut avoir un impact sur les performances lorsque vous exécutez vos tests.
 
-6.  Pour collecter des données à partir de votre application ASP.NET qui s’exécute sur Internet Information Services, sélectionnez **Collecter des données à partir d’une application ASP.NET exécutée sur Internet Information Services**. Installez et configurez votre agent de test sur le rôle serveur Web. Consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).
+6.  Pour collecter des données à partir de votre application ASP.NET qui s’exécute sur Internet Information Services, sélectionnez **Collecter des données à partir d’une application ASP.NET exécutée sur Internet Information Services**. Installez et configurez votre agent de test sur le rôle serveur web. Consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).
 
 7.  Choisissez l’onglet **Modules**. Sélectionnez **Collecter les données de tous les modules à l’exception des suivants**, et utilisez **Ajouter** pour ajouter un module à la liste et **Supprimer** pour supprimer un module. Cette option vous permet d'inclure tous les modules en cours d'exécution sur le système, à l'exception des modules que vous spécifiez.
 

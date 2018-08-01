@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 051b7c7375c6b13a6f3805e358645eccdc0e33c3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7ec26a9356c0136404f6fb9fe97e88b7b40ecf7f
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970947"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203961"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Guide pratique pour lier un contrôleur de test ou un agent de test à une carte réseau
 
@@ -31,7 +31,7 @@ Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est ins
 >
 > Cette erreur peut être provoquée par l'installation du contrôleur de test sur un ordinateur doté de plusieurs cartes réseau. Il est également possible d'installer avec succès des agents et de ne pas rencontrer ce problème avant d'exécuter un test.
 
-## <a name="binding-a-test-controller-to-a-specific-network-adapter"></a>Liaison entre un contrôleur de test et une carte réseau spécifique
+## <a name="bind-a-test-controller-to-a-specific-network-adapter"></a>Liaison entre un contrôleur de test et une carte réseau spécifique
 
 ### <a name="to-obtain-the-ip-addresses-of-the-network-adapters"></a>Pour obtenir l'adresse IP des cartes réseau
 
@@ -131,7 +131,7 @@ Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est ins
 ## <a name="see-also"></a>Voir aussi
 
 - [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md)
-- [Modification des paramètres de journalisation du test de charge](../test/modify-load-test-logging-settings.md)
-- [Configuration des ports pour les contrôleurs de test et les agents de test](../test/configure-ports-for-test-controllers-and-test-agents.md)
+- [Modifier les paramètres de journalisation du test de charge](../test/modify-load-test-logging-settings.md)
+- [Configurer les ports des contrôleurs de test et des agents de test](../test/configure-ports-for-test-controllers-and-test-agents.md)
 - [Guide pratique pour spécifier la taille maximale du fichier journal](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [Guide pratique pour spécifier durées du délai d’expiration des contrôleurs de test et des agents de test](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

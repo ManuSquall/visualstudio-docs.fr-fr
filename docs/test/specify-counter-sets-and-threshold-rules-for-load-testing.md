@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7e5e6919dbc37294ef677f3c512c51d53aea0e2f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c48928f22ceabea4d5961096e6749ccf01e46176
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751340"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180638"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Spécifier des ensembles de compteurs et des règles de seuil pour les ordinateurs dans un test de charge
 
@@ -58,7 +58,7 @@ Les données de performances pour chaque requête HTTP sont envoyées par l'ordi
 
 Pour faciliter la collecte des données de performances sur un serveur web, Visual Studio fournit également des ensembles de compteurs prédéfinis et nommés, basés sur la technologie utilisée dans les tests de charge. Ces ensembles sont utiles lorsque vous analysez un serveur qui exécute les services Internet (IIS), ASP.NET ou SQL Server. Les compteurs non fournis dans l'ensemble de compteur par défaut peuvent être ajoutés à l'aide de l'Éditeur de test de charge. Il est important que vous ajoutiez les ordinateurs ou les serveurs à tester à votre test de charge, afin d'être sûr de pouvoir surveiller l'utilisation des ressources sur ces ordinateurs. Pour plus d’informations, consultez [Guide pratique pour gérer les ensembles de compteurs](../test/how-to-manage-counter-sets-using-the-load-test-editor.md).
 
-L'analyse des résultats des séries de tests de charge nécessite souvent une connaissance spécifique au domaine d'une zone particulière, afin de déterminer quelles données rassembler, où définir des règles de seuil et comment savoir si une mesure reflète un problème spécifique dans l'application. Pour plus d’informations, consultez [À propos des règles de seuil](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md#SpecifyingCounterSetsThresholdRulesAboutThresholdRules).
+L'analyse des résultats des séries de tests de charge nécessite souvent une connaissance spécifique au domaine d'une zone particulière, afin de déterminer quelles données rassembler, où définir des règles de seuil et comment savoir si une mesure reflète un problème spécifique dans l'application. Pour plus d’informations, consultez [À propos des règles de seuil](#about-threshold-rules).
 
 ### <a name="performance-counter-sampling-interval-considerations"></a>Considérations relatives à l'intervalle d'échantillonnage du compteur de performance
 

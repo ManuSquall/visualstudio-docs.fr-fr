@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 7d53a668014ba8f08b0715a0f0a02c351756435e
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 83dfac08058e8b01b6c6d007461f3468e91b396c
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924471"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233085"
 ---
 # <a name="verify-your-xamarin-environment"></a>Vérifier votre environnement Xamarin
 
@@ -30,9 +30,9 @@ Une fois les programmes d’installation terminés (voir [Setup and install](../
 
 ## <a name="all-platforms"></a>Toutes les plateformes
 
-Dans Visual Studio, sélectionnez d’abord **Outils > Extensions et mises à jour**, puis vérifiez si des composants Xamarin nécessitent des mises à jour.
+Dans Visual Studio, sélectionnez d’abord **Outils** >  **Extensions et mises à jour**, puis vérifiez si des composants Xamarin nécessitent des mises à jour.
 
-Créez ensuite une solution Xamarin.Forms dans Visual Studio en sélectionnant **Fichier > Nouveau projet**. Dans la boîte de dialogue, développez **Visual C# > Multiplateforme**, sélectionnez **Application mobile (Xamarin.Forms)**, puis cliquez sur OK. Dans la boîte de dialogue suivante, sélectionnez **Application vide**. Sous **Stratégie de partage de code**, sélectionnez **.NET Standard**. Cliquez sur OK.
+Créez ensuite une solution Xamarin.Forms dans Visual Studio en sélectionnant **Fichier** > **Nouveau projet**. Dans la boîte de dialogue, développez **Visual C#** > **Multiplateforme**, sélectionnez **Application mobile (Xamarin.Forms)**, puis cliquez sur **OK**. Dans la boîte de dialogue suivante, sélectionnez **Application vide**. Sous **Stratégie de partage de code**, sélectionnez **.NET Standard**. Cliquez sur **OK**.
 
 Ces actions créent une solution avec quatre projets : un projet de bibliothèque .NET Standard 2.0 partagé et des projets d’application pour Android, iOS et la plateforme Windows universelle (UWP) :
 
@@ -52,11 +52,11 @@ Ces actions créent une solution avec quatre projets : un projet de bibliothèqu
 
     Les émulateurs sont également répertoriés. Sélectionnez l’un des appareils ou émulateurs Visual Studio :
 
-  ![Sélection de l’émulateur Visual Studio pour Android comme cible de débogage](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin Verify 3")
+  ![Sélectionnez l’émulateur Visual Studio pour Android comme cible de débogage](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin Verify 3")
 
-  Pour plus d’informations, consultez [Introducing Visual Studio’s Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (blog ALM Visual Studio). Si vous avez des difficultés à faire fonctionner l’émulateur, consultez [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). Vous pouvez aussi créer des profils d’appareil pour l’émulateur en sélectionnant **Outils > Android > Gestionnaire d’émulateur Android**.
+  Pour plus d’informations, consultez [Introducing Visual Studio’s Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (blog ALM Visual Studio). Si vous avez des difficultés à faire fonctionner l’émulateur, consultez [Résoudre les problèmes de l’émulateur Visual Studio pour Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). Vous pouvez aussi créer des profils d’appareil pour l’émulateur en sélectionnant **Outils > Android > Gestionnaire d’émulateur Android**.
 
-3. Appuyez sur F5 pour compiler et déployer le programme sur l’émulateur ou l’appareil Android.
+3. Appuyez sur **F5** pour compiler et déployer le programme sur l’émulateur ou l’appareil Android.
 
 ## <a name="windows"></a>Windows
 
@@ -64,7 +64,7 @@ Ces actions créent une solution avec quatre projets : un projet de bibliothèqu
 
 2.  Dans la liste déroulante **Plateformes solution**, sélectionnez **x86** ou **x64**. Sélectionnez **Ordinateur local**.
 
-3.  Appuyez sur F5 pour déployer le programme sur le bureau.
+3.  Appuyez sur **F5** pour déployer le programme sur le bureau.
 
 ## <a name="ios"></a>iOS
 
@@ -76,19 +76,19 @@ Ces actions créent une solution avec quatre projets : un projet de bibliothèqu
 
  ![Sélection de la cible de génération iPhoneSimulator](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin Verify 5")
 
- Si aucun simulateur ne figure dans la liste, lancez Xcode sur votre Mac, sélectionnez **Xcode > Préférences**, puis cliquez sur **Télécharger**. Sous le titre **Composants**, vous devez voir les versions de simulateur qui sont disponibles en téléchargement. Vous trouverez des instructions supplémentaires pour le débogage dans la page [Débogage iOS](/xamarin/ios/deploy-test/debugging-in-xamarin-ios/?tabs=vsmac#Debugging_on_the_Simulator).
+ Si aucun simulateur ne figure dans la liste, lancez Xcode sur votre Mac, sélectionnez **Xcode** >  **Préférences**, puis cliquez sur **Télécharger**. Sous le titre **Composants**, vous devez voir les versions de simulateur qui sont disponibles en téléchargement. Vous trouverez des instructions supplémentaires pour le débogage dans la page [Débogage iOS](/xamarin/ios/deploy-test/debugging-in-xamarin-ios).
 
 4.  Sélectionnez une cible d’appareil d’émulateur dans la liste déroulante Visual Studio :
 
  ![Sélection d’une cible de débogage iPhone](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin Verify 6")
 
-5. Démarrez le débogueur en appuyant sur F5. Le simulateur est lancé sur le Mac où vous allez interagir avec l’application, alors que le débogage se déroule dans Visual Studio. Si vous avez un iPhone ou iPad physique connecté au Mac, il apparaît dans la liste et vous pouvez le sélectionner à la place. Si aucun appareil ni simulateur ne figure dans la liste, vérifiez la connexion au Mac. Consultez l’article lié à l’étape 1 ci-dessus ou accédez à **Outils > iOS > Coupler au Mac**
+5. Démarrez le débogueur en appuyant sur **F5**. Le simulateur est lancé sur le Mac où vous allez interagir avec l’application, alors que le débogage se déroule dans Visual Studio. Si vous avez un iPhone ou iPad physique connecté au Mac, il apparaît dans la liste et vous pouvez le sélectionner à la place. Si aucun appareil ni simulateur ne figure dans la liste, vérifiez la connexion au Mac. Consultez l’article lié à l’étape 1 ci-dessus ou accédez à **Outils** > **iOS** > **Coupler au Mac**
 
 6.  Si vous rencontrez des problèmes pour vous connecter au Mac, consultez [Résolution des problèmes de connexion](/xamarin/ios/get-started/installation/windows/connecting-to-mac/troubleshooting/).
 
 7.  Si vous recevez un message d’erreur indiquant qu’aucun profil de provisionnement installé ne correspond aux clés de signature iOS installées, essayez les suggestions suivantes :
 
-  - Vérifiez que votre compte ID Apple est ajouté à Xcode sur votre Mac, comme décrit dans [Adding Your Account to Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).  Si vous ajoutez votre compte, redémarrez ensuite Visual Studio et Xcode.
+  - Vérifiez que votre compte ID Apple est ajouté à Xcode sur votre Mac, comme décrit dans [Ajouter votre compte à Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).  Si vous ajoutez votre compte, redémarrez ensuite Visual Studio et Xcode.
 
   - Vérifiez que, dans les propriétés de votre projet iOS, sous l’onglet Signature d’ensemble d’applications iOS, le champ Droits personnalisés est vide pour la configuration Debug activée.  Remarque : Vous pouvez essayer de supprimer ce paramètre uniquement si vous avez rencontré le message d’erreur ci-dessus.
 
