@@ -1,5 +1,5 @@
 ---
-title: 'Le Concepteur de flux de travail - Comment : ajouter des commentaires à un flux de travail'
+title: 'Concepteur de flux de travail - Comment : ajouter des commentaires à un flux de travail'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -13,16 +13,16 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d740614ed94d0fd91ba9f3e73a083791b9112919
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 0555968f67d804060437df272927aa3ee89c730c
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752025"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379947"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Procédure : ajouter des commentaires à un workflow dans le Concepteur de flux de travail
 
-Pour faciliter la création de flux de travail plus volumineux et plus complexes, .NET Framework 4.5 permet au développeur d’ajouter des annotations aux types suivants de l’élément dans le concepteur :
+Pour faciliter la création de flux de travail plus vastes et plus complexes, .NET Framework 4.5 permet au développeur d’ajouter des annotations aux types suivants de l’élément dans le concepteur :
 
 -   <xref:System.Activities.Activity>
 
@@ -45,19 +45,19 @@ Pour faciliter la création de flux de travail plus volumineux et plus complexes
 
 1. Ajoutez le texte de l'annotation dans l'espace disponible.
 
-   L’élément affiche une icône d’annotation. Vous pointez sur l’icône d’annotation affiche le texte de l’annotation.
+   L’élément affiche une icône d’annotation. Pointez sur l’icône d’annotation affiche le texte de l’annotation.
 
 ## <a name="displaying-an-annotation-in-an-activitys-designer"></a>Afficher une annotation dans le concepteur d'une activité
 
-1.  Un concepteur d’activités qui a une annotation affichée en dehors de l’activité, puis cliquez sur le **code confidentiel** icône dans l’ornement d’annotation.
+1.  Avec un concepteur d’activités qui a une annotation affichée en dehors de l’activité, cliquez sur le **Pin** icône dans l’ornement d’annotation.
 
    L’annotation s’affiche dans le Concepteur de l’activité. Dans la capture d'écran ci-dessous, l'annotation « Démarrage de l'activité dans le workflow » s'affiche dans le concepteur de l'activité.
 
    ![Annotation affichée dans le concepteur d'activités](../workflow-designer/media/annotationindesigner.png)
 
-1. Pour afficher l’annotation en dehors du Concepteur de l’activité, placez le curseur sur la zone d’annotation dans le Concepteur de l’activité et cliquez sur le **détacher** icône
+1. Pour afficher l’annotation en dehors du Concepteur de l’activité, placez le curseur sur la zone d’annotation dans le Concepteur de l’activité et cliquez sur le **Unpin** icône
 
-   ![Annotation affichée en dehors d'un concepteur d'activités](../workflow-designer/media/annotationoutsidedesigner.png)
+   ![Annotation affichée en dehors du Concepteur d’une activité](../workflow-designer/media/annotationoutsidedesigner.png)
 
 ## <a name="showing-or-hiding-all-annotations"></a>Affichage ou masquage de toutes les annotations
 
@@ -81,7 +81,7 @@ Pour faciliter la création de flux de travail plus volumineux et plus complexes
 
 1. Cliquez avec le bouton droit sur une variable ou un argument et sélectionnez Ajouter une annotation.
 
-1. Entrez le texte de l'annotation. La variable ou l’argument affiche une icône d’annotation.
+1. Entrez le texte de l'annotation. La variable ou un argument affiche une icône d’annotation.
 
 1. Cliquez avec le bouton droit sur une variable ou un argument qui a une annotation. Sélectionnez Modifier une annotation.
 
