@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a07062f5a79722e18ba0567f42bfb2843f84d06
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 89689df19e5002c4c757d5a84c9263f8c40a10e7
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078782"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388187"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Démarrage rapide : premier aperçu de l'IDE Visual Studio
 

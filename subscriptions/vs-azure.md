@@ -9,12 +9,12 @@ description: Découvrez comment activer l’avantage Azure inclus dans votre abo
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 00a69bf03c47ddf57b2b45ba1f3d9e2547132521
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 2f9a0ed97cc0792387e61bfe15e6bb94cd5e1c57
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280655"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379734"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Utiliser Microsoft Azure dans les abonnements Visual Studio
 
@@ -22,7 +22,7 @@ ms.locfileid: "36280655"
 
 En tant qu’abonné Visual Studio, vous pouvez utiliser Microsoft Azure sans frais supplémentaires.  Avec votre [crédit Azure mensuel](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), Azure est votre bac à sable (sandbox) personnel pour le développement et les tests.  Vous pouvez provisionner des machines virtuelles, des services cloud et d’autres ressources Azure.  Les montants du crédit varient selon le niveau de votre abonnement.
 
-## <a name="eligibililty"></a>Éligibilité
+## <a name="eligibility"></a>Éligibilité
 
 | Niveau d'abonnement / Programme                                 | Avantage                     | Renouvelable ?                                                   |
 |--------------------------------------------------------------|-----------------------------|--------------------------------------------------------------|
