@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 91d232a4eaac7aa9f7a624ecfcc4168659347d8f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: dde7b368297979e53d4ee09b75961652749d3321
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117652"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380741"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Génération de texte durant l'exécution à l'aide des modèles de texte T4
 
@@ -152,7 +152,7 @@ Notez que les instructions sont insérées entre `<# ... #>` et les expressions 
 
 ### <a name="the-code-built-from-the-template"></a>Le code généré à partir du modèle
 
-Lorsque vous enregistrez le **.tt** de fichiers, une filiale **.cs** ou **.vb** fichier est généré. Pour afficher ce fichier dans l’Explorateur de solutions, développez le **.tt** nœud de fichier. Dans un projet Visual Basic, choisissez d’abord **afficher tous les fichiers** dans la barre d’outils de l’Explorateur de solutions.
+Lorsque vous enregistrez le **.tt** de fichiers, une filiale **.cs** ou **.vb** fichier est généré. Pour afficher ce fichier dans **l’Explorateur de solutions**, développez le **.tt** nœud de fichier. Dans un projet Visual Basic, choisissez d’abord **afficher tous les fichiers** dans le **l’Explorateur de solutions** barre d’outils.
 
 Notez que le fichier auxiliaire contient une classe partielle qui contient une méthode appelée `TransformText()`. Vous pouvez appeler cette méthode à partir de votre application.
 

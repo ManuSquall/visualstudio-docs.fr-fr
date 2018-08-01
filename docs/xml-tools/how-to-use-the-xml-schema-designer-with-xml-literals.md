@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 589bfa54a0ba1a7efb2964cf5b74446ca9ffe10d
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 6dd0f709e53a3595437bc432a1d1db9a4d6d5c79
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548199"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379508"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Comment : utiliser le Concepteur de schémas XML avec des littéraux XML
 
@@ -27,7 +27,7 @@ Cette rubrique décrit comment afficher un schéma associé à un littéral XML 
 
 1.  Démarrez Visual Studio.
 
-2.  À partir de la **fichier** menu, sélectionnez **nouveau**, puis sélectionnez **projet**. La boîte de dialogue **Nouveau projet** s’affiche. Pour **types de projet**, sélectionnez **autres langages,** , puis sélectionnez **Visual Basic**. Pour **modèles**, sélectionnez Application Console. Puis tapez `XMLLiterals` dans les **nom** champ et un emplacement de projet dans le **emplacement** champ. Cliquez sur **OK**.
+2.  À partir de la **fichier** menu, sélectionnez **New**, puis sélectionnez **projet**. La boîte de dialogue **Nouveau projet** s’affiche. Pour **types de projets**, sélectionnez **autres langages,** , puis sélectionnez **Visual Basic**. Pour **modèles**, sélectionnez Application Console. Puis tapez `XMLLiterals` dans le **nom** champ et un emplacement de projet dans le **emplacement** champ. Cliquez sur **OK**.
 
      Le nouveau projet est créé. Le projet XMLLiterals contient un fichier source Visual Basic, *Module1.vb*.
 
@@ -35,15 +35,15 @@ Cette rubrique décrit comment afficher un schéma associé à un littéral XML 
 
 1.  Ouvrez un nouveau fichier texte dans le bloc-notes. Copiez le code d’exemple de schéma XML à partir de [schéma d’ordre d’achat](../xml-tools/sample-xsd-file-simple-schema.md) et collez-le dans le fichier.
 
-2.  Enregistrez le fichier dans un emplacement portant le nom *PurchaseOrderSchema.xsd*.
+2.  Enregistrez le fichier dans un emplacement avec le nom *PurchaseOrderSchema.xsd*.
 
-3.  Dans l’Explorateur de solutions, cliquez sur le nom du projet, sélectionnez **ajouter**, puis sélectionnez **élément existant**. Le **AddExisting élément** boîte de dialogue s’affiche. Accédez à la *PurchaseOrderSchema.xsd* de fichier, sélectionnez-le, puis cliquez sur **ajouter**.
+3.  Dans **l’Explorateur de solutions**, cliquez sur le nom du projet, sélectionnez **ajouter**, puis sélectionnez **élément existant**. Le **ajouter un élément existant** boîte de dialogue s’affiche. Accédez à la *PurchaseOrderSchema.xsd* fichier, sélectionnez-le, puis cliquez sur **ajouter**.
 
      Le projet XMLLiterals contient désormais deux fichiers : *Module1.vb* et *PurchaseOrderSchema.xsd*.
 
 ## <a name="to-add-visual-basic-code-with-an-xml-literal-based-on-the-xsd-file-included-in-the-project"></a>Pour ajouter le code Visual Basic avec un littéral XML, selon le fichier XSD inclus dans le projet
 
-1.  Remplacez le code dans *Module1.vb* fichier avec le code suivant :
+1.  Remplacez le code dans *Module1.vb* fichier par le code suivant :
 
    ```vb
    Imports <xmlns:ns="http://tempuri.org/PurchaseOrderSchema.xsd">
