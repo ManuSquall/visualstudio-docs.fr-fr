@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8a3ff542ebb40ecd10a92db81b985a9ded461fa7
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: acd2ccd526e32670afa947148f25606aee1299be
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179032"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382420"
 ---
 # <a name="configure-load-test-run-settings"></a>Configurer les paramètres d’exécution des tests de charge
 
@@ -33,7 +33,7 @@ Les paramètres d’exécution initiaux sont définis quand vous créez un test 
 |-----------|-----------------------|
 |**Ajouter davantage de paramètres d’exécution à votre test de charge :** en plus du paramètre d’exécution créé quand vous exécutez **l’Assistant Nouveau test de charge**, vous pouvez ajouter davantage de paramètres d’exécution à votre test de charge pour pouvoir exécuter le test dans différentes conditions.|-   [Guide pratique pour ajouter des paramètres d’exécution supplémentaires à un test de charge](../test/how-to-add-additional-run-settings-to-a-load-test.md)|
 |**Spécifier le paramètre d’exécution actif à utiliser avec le test de charge :** vous pouvez sélectionner le paramètre d’exécution à utiliser avec votre test de charge à l’aide de l’éditeur de test de charge. Le paramètre d'exécution actif est identifié par le suffixe « [Actif] ».|-   [Guide pratique pour sélectionner le paramètre d’exécution actif d’un test de charge](../test/how-to-select-the-active-run-setting-for-a-load-test.md)|
-|**Modifier les propriétés des paramètres d’exécution :** vous pouvez modifier les propriétés de vos paramètres d’exécution, par exemple, pour les options de journalisation (voir ci-dessous) qui déterminent la longueur du test, la durée de préparation, le nombre maximal de détails relatifs aux erreurs signalés, le taux d’échantillonnage, le modèle de connexion (tests de performances web uniquement), le type de stockage des résultats, le niveau de validation et le traçage SQL. Les paramètres d'exécution doivent refléter les objectifs de votre test de charge.|-   [Propriétés des paramètres d’exécution du test de charge](../test/load-test-run-settings-properties.md)<br />-   [Changement des propriétés des paramètres d’exécution](../test/load-test-run-settings-properties.md#LoadTestRunSettingsHowToChange)|
+|**Modifier les propriétés des paramètres d’exécution :** vous pouvez modifier les propriétés de vos paramètres d’exécution, par exemple, pour les options de journalisation (voir ci-dessous) qui déterminent la longueur du test, la durée de préparation, le nombre maximal de détails relatifs aux erreurs signalés, le taux d’échantillonnage, le modèle de connexion (tests de performances web uniquement), le type de stockage des résultats, le niveau de validation et le traçage SQL. Les paramètres d'exécution doivent refléter les objectifs de votre test de charge.|-   [Propriétés des paramètres d’exécution du test de charge](../test/load-test-run-settings-properties.md)<br />-   [Changement des propriétés des paramètres d’exécution](../test/load-test-run-settings-properties.md#change-run-setting-properties)|
 |**Spécifier le nombre d’itérations de tests dans les paramètres de série de tests de charge :** vous pouvez spécifier le nombre d’exécutions de tous les tests unitaires et tests de performances web dans l’ensemble des scénarios des tests de charge en configurant la propriété **Itérations de tests**.|-   [Guide pratique pour spécifier le nombre d’itérations de tests dans un paramètre d’exécution](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)|
 |**Spécifier le taux d’échantillonnage d’un paramètre d’exécution du test de charge :** vous pouvez spécifier la fréquence à laquelle le test de charge collecte les données des compteurs de performances en configurant la propriété **Taux d’échantillonnage**.|-   [Guide pratique pour spécifier le taux d’échantillonnage](../test/how-to-specify-the-sample-rate-for-a-load-test.md)|
 |**Spécifier l’option de stockage des détails de minuterie :** vous pouvez spécifier le mode d’enregistrement des détails du test de charge en configurant la propriété **Stockage des détails de minuterie**.|-   [Guide pratique pour spécifier la propriété de stockage des détails de minuterie](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)|
