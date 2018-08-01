@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fb2ef935015e7bd1058868b546543a789d7cec2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d6f1712192f8d68131a9adbbc8eb6de5d85429ad
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576831"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39150533"
 ---
-# <a name="unregisterassembly-task"></a>UnregisterAssembly, tâche
+# <a name="unregisterassembly-task"></a>UnregisterAssembly (tâche)
 Désinscrit les assemblys spécifiés dans le cadre de COM Interop. Exécute l’opération inverse de la [tâche RegisterAssembly](../msbuild/registerassembly-task.md).  
   
 ## <a name="parameters"></a>Paramètres  
@@ -63,6 +63,6 @@ Désinscrit les assemblys spécifiés dans le cadre de COM Interop. Exécute l�
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [RegisterAssembly, tâche](../msbuild/registerassembly-task.md)   
- [Tâches MSBuild](../msbuild/msbuild-tasks.md)   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)
+ [Tâche RegisterAssembly](../msbuild/registerassembly-task.md)   
+ [Tâches](../msbuild/msbuild-tasks.md)   
+ [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

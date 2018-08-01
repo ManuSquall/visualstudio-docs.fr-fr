@@ -19,23 +19,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6376abc29f6f06541b9cd7f3d181b97ab7b38e5f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bd1d899d3b3a84af2b07602b959dd031874e972c
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571355"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155449"
 ---
-# <a name="troubleshooting-net-framework-targeting-errors"></a>Dépannage des erreurs de ciblage du .NET Framework
+# <a name="troubleshoot-net-framework-targeting-errors"></a>Résoudre les erreurs de ciblage de .NET Framework
 Cette rubrique décrit les erreurs MSBuild qui peuvent se produire en raison de problèmes de référence et la façon dont vous pouvez résoudre ces erreurs.  
   
-## <a name="you-have-referenced-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Vous avez référencé un projet ou un assembly qui cible une version différente du .NET Framework  
+## <a name="you-have-referenced-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Vous avez fait référence à un projet ou à un assembly qui cible une autre version de .NET Framework  
  Vous pouvez créer des applications qui référencent des projets ou des assemblys ciblant différentes versions du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Par exemple, vous pouvez créer une application qui cible le profil client pour le [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)], mais référence un assembly qui cible le .NET Framework 2.0. Toutefois, si vous créez un projet qui cible une version antérieure du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], vous ne pouvez pas définir une référence dans ce projet à un projet ou un assembly qui cible le profil client pour le [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] ou le [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] lui-même. Pour résoudre cette erreur, vérifiez que votre application cible un ou plusieurs profils qui sont compatibles avec le profil ciblé par les projets ou assemblys référencés par votre application.  
   
-## <a name="you-have-re-targeted-a-project-to-a-different-version-of-the-net-framework"></a>Vous avez reciblé un projet vers une autre version du .NET Framework  
+## <a name="you-have-re-targeted-a-project-to-a-different-version-of-the-net-framework"></a>Vous avez reciblé un projet vers une autre version de .NET Framework  
  Si vous modifiez la version cible du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] pour votre application, Visual Studio met à jour certaines références, mais vous devrez peut-être en modifier d’autres manuellement. Par exemple, si vous modifiez une application pour qu’elle cible le [!INCLUDE[net_v35SP1_long](../msbuild/includes/net_v35sp1_long_md.md)] et que cette application dispose de ressources ou de paramètres qui s’appuient sur le profil client du [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)], l’une des erreurs mentionnées précédemment peut-se produire.  
   
- Pour contourner les paramètres de l’application, ouvrez l’**Explorateur de solutions**, choisissez **Afficher tous les fichiers**, puis modifiez le fichier app.config dans l’éditeur XML de Visual Studio. Modifiez la version dans les paramètres pour la faire correspondre à celle du .NET Framework. Par exemple, vous pouvez remplacer le paramètre de version 4.0.0.0 par 2.0.0.0. De même, pour une application avec des ressources supplémentaires, ouvrez l’**Explorateur de solutions**, choisissez le bouton **Afficher tous les fichiers**, développez **Mon projet** (Visual Basic) ou **Propriétés** (C#), puis modifiez le fichier Resources.resx dans l’éditeur XML de Visual Studio. Remplacez le paramètre de version 4.0.0.0 par 2.0.0.0.  
+ Pour contourner les paramètres d’application, ouvrez **l’Explorateur de solutions**, choisissez **Afficher tous les fichiers**, puis modifiez le fichier *app.config* dans l’éditeur XML de Visual Studio. Modifiez la version dans les paramètres pour la faire correspondre à celle du .NET Framework. Par exemple, vous pouvez remplacer le paramètre de version 4.0.0.0 par 2.0.0.0. De même, pour une application comportant des ressources supplémentaires, ouvrez **l’Explorateur de solutions**, choisissez le bouton **Afficher tous les fichiers**, développez **Mon projet** (Visual Basic) ou **Propriétés** (C#), puis modifiez le fichier *Resources.resx* dans l’éditeur XML de Visual Studio. Remplacez le paramètre de version 4.0.0.0 par 2.0.0.0.  
   
  Si votre application dispose de ressources telles que des icônes, des images ou des paramètres tels que des chaînes de connexion de données, vous pouvez également résoudre l’erreur en supprimant tous les éléments de la page **Paramètres** du **Concepteur de projets** et en rajoutant ensuite les paramètres exigés.  
   
@@ -56,7 +56,7 @@ Cette rubrique décrit les erreurs MSBuild qui peuvent se produire en raison de 
 >  Après la fermeture et la ré-ouverture votre projet, vous devez également le régénérer pour vérifier que toutes les références sont correctement résolues.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
- [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile)   
- [Ciblage d’une version spécifique du .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)   
+ [Guide pratique : Cibler une version de .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
+ [Profil client .NET Framework](/dotnet/framework/deployment/client-profile)   
+ [Cibler une version spécifique de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)   
  [Multiciblage](../msbuild/msbuild-multitargeting-overview.md)

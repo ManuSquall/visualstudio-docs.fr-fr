@@ -12,20 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 239d1966c45aaebc8960601372852704935d5fcf
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 0310ac0ee0e6226f9f5685c590e4dc2e0c49b6b3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751603"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176139"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Configurer les itérations de tests dans un scénario de test de charge
 
-Pour configurer les paramètres d'itération de test, modifiez un scénario de test de charge en utilisant l'éditeur de test de charge et la fenêtre Propriétés. Par défaut, un scénario de test de charge est configuré sans spécifier d'itérations de test maximum. Vous avez la possibilité de configurer le nombre maximum d'itérations dans le scénario et la durée de pause entre deux itérations.
+Pour configurer les paramètres d’itération de test, modifiez un scénario de test de charge en utilisant l’éditeur de test de charge et la fenêtre **Propriétés**. Par défaut, un scénario de test de charge est configuré sans spécifier d'itérations de test maximum. Vous avez la possibilité de configurer le nombre maximum d'itérations dans le scénario et la durée de pause entre deux itérations.
 
 ## <a name="specify-the-maximum-test-iterations-for-a-scenario"></a>Spécifier le nombre maximal d’itérations de tests pour un scénario
 
-Vous pouvez spécifier le nombre maximal d’exécutions de vos tests pour un scénario en utilisant l’éditeur de test de charge afin de changer la propriété **Nombre maximal d’itérations de test** dans la fenêtre Propriétés.
+Vous pouvez spécifier le nombre maximal d’exécutions de vos tests pour un scénario en utilisant l’éditeur de test de charge afin de changer la propriété **Nombre maximal d’itérations de test** dans la fenêtre **Propriétés**.
 
 La propriété **Nombre maximal d’itérations de test** contrôle le nombre maximal d’itérations de tests à exécuter pour le scénario. Comme pour la propriété **Itérations de tests** dans les paramètres d’exécution de test de charge, il s’agit de la valeur maximale relative à tous les utilisateurs sur tous les agents, et non d’un paramètre spécifique à chaque utilisateur.
 
@@ -34,12 +34,12 @@ La propriété **Nombre maximal d’itérations de test** contrôle le nombre ma
 
  Pour une combinaison de tests basée sur un ordre séquentiel, une itération est une opération qui inclut tous les tests de la combinaison. Pour toutes les autres combinaisons de tests, chaque exécution de test compte comme une itération. Pour plus d’informations, consultez [À propos du contrôle de combinaison](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
- Si le test de charge est basé sur la durée, et si cette dernière expire avant la fin du nombre d'itérations, le test s'arrête. Si le test est basé sur des itérations, et si ces dernières sont effectuées avant les itérations du scénario, le test s'arrête. La durée est configurée à l’aide de la propriété **Durée d’exécution** dans la fenêtre Propriétés, en association à un paramètre d’exécution dans un test de charge.
+ Si le test de charge est basé sur la durée, et si cette dernière expire avant la fin du nombre d'itérations, le test s'arrête. Si le test est basé sur des itérations, et si ces dernières sont effectuées avant les itérations du scénario, le test s'arrête. La durée est configurée à l’aide de la propriété **Durée d’exécution** dans la fenêtre **Propriétés**, en association à un paramètre d’exécution dans un test de charge.
 
  Lorsque le nombre d'itérations du scénario est atteint, le scénario cesse de s'exécuter, mais tous les autres scénarios actifs continuent de s'exécuter.
 
 > [!NOTE]
-> La propriété **Unique** est une propriété connexe d’une source de données de test web, qui parcourt les données de manière séquentielle, ligne par ligne, mais une seule fois pour chaque d’enregistrement. Pour plus d’informations, consultez [Ajouter une source de données à un test de performances web](../test/add-a-data-source-to-a-web-performance-test.md).
+> La propriété **Unique** est une propriété connexe d’une source de données de test web, qui parcourt les données de manière séquentielle, ligne par ligne, mais une seule fois pour chaque enregistrement. Pour plus d’informations, consultez [Ajouter une source de données à un test de performances web](../test/add-a-data-source-to-a-web-performance-test.md).
 
  La propriété **Nombre maximal d’itérations de test** est utile pour diverses situations. Certains testeurs de charge privilégient les tests basés sur l'itération tandis que d'autres testeurs de charge privilégient les tests basés sur la durée.
 
@@ -55,7 +55,7 @@ La propriété **Nombre maximal d’itérations de test** contrôle le nombre ma
 
 4. Dans le menu **Affichage**, sélectionnez **Fenêtre Propriétés**.
 
-     Les catégories et les propriétés du scénario s'affichent dans la fenêtre Propriétés.
+     Les catégories et les propriétés du scénario s’affichent dans la fenêtre **Propriétés**.
 
 5. Dans la zone de texte de la propriété **Nombre maximal d’itérations de test**, tapez une valeur qui indique le nombre maximal de tests à exécuter pour le scénario quand le test de charge est exécuté.
 
@@ -64,9 +64,9 @@ La propriété **Nombre maximal d’itérations de test** contrôle le nombre ma
 
 6. Après avoir changé la propriété, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez exécuter ensuite votre test de charge à l’aide de la nouvelle valeur associée à **Nombre maximal d’itérations de test**.
 
-## <a name="specify-think-times-between-test-iterations-for-a-scenario"></a>Spécifier des temps de réflexion entre les itérations de test d'un scénario
+## <a name="specify-think-times-between-test-iterations-for-a-scenario"></a>Spécifier des temps de réflexion entre les itérations de test d’un scénario
 
-La propriété **Temps de réflexion entre les itérations de tests** est définie dans la fenêtre Propriétés pendant la modification des propriétés du scénario de test de charge dans l’éditeur de test de charge.
+La propriété **Temps de réflexion entre les itérations de tests** est définie dans la fenêtre **Propriétés** pendant la modification des propriétés du scénario de test de charge dans l’éditeur de test de charge.
 
 La propriété **Temps de réflexion entre les itérations de tests** est utilisée pour spécifier la durée en secondes à l’issue de laquelle l’itération de test démarre.
 
@@ -83,7 +83,7 @@ La propriété **Temps de réflexion entre les itérations de tests** est utilis
 
 3. Dans le menu **Affichage**, sélectionnez **Fenêtre Propriétés**.
 
-     Les catégories et les propriétés du scénario sont affichées dans la fenêtre Propriétés.
+     Les catégories et les propriétés du scénario sont affichées dans la fenêtre **Propriétés**.
 
 4. Pour la valeur de la propriété **Temps de réflexion entre les itérations de tests**, indiquez un nombre qui représente le délai d’attente en secondes avant le démarrage de l’itération de test suivante.
 
@@ -94,4 +94,4 @@ La propriété **Temps de réflexion entre les itérations de tests** est utilis
 - [Modification des scénarios de test de charge](../test/edit-load-test-scenarios.md)
 - [Configurer les agents de test et les contrôleurs de test pour les tests de charge](../test/configure-test-agents-and-controllers-for-load-tests.md)
 - [Propriétés des scénarios de test de charge](../test/load-test-scenario-properties.md)
-- [Modification des temps de réflexion pour simuler les retards d’interaction humaine avec un site web](../test/edit-think-times-in-load-test-scenarios.md)
+- [Modifier les temps de réflexion pour simuler les retards d’interaction humaine avec un site web](../test/edit-think-times-in-load-test-scenarios.md)

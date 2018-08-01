@@ -23,18 +23,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3820e1d7ef4294b4c46e0e7d0174a89dfe5b0e75
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1b111aad6da99f54edfe8dc4fd4b63ff7a495f34
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978786"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179659"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analyser les résultats et les erreurs des tests de charge dans la vue Tables de l’analyseur de test de charge
 
 Lorsque vous consultez les résultats d'une série de tests de charge, vous pouvez afficher différents volets vous permettant d'analyser les données de différentes manières. Vous pouvez afficher les données sous forme de graphique pour voir comment elles évoluent dans le temps ou les consulter dans des tables détaillées.
 
-Pour basculer en mode table, choisissez **Tables** dans la barre d’outils de test de charge. Pour passer d’une table à une autre, utilisez la liste déroulante **Table** accessible dans la barre d’outils située au-dessus de la grille des tables. En mode table, vous pouvez consulter jusqu'à quatre tables à la fois. Pour plus d’informations, consultez [Disposer en mosaïque les tables de tests de charge](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#tile-load-test-tables) dans cette rubrique.
+Pour basculer en mode table, choisissez **Tables** dans la barre d’outils de **test de charge**. Pour passer d’une table à une autre, utilisez la liste déroulante **Table** accessible dans la barre d’outils située au-dessus de la grille des tables. En mode table, vous pouvez consulter jusqu'à quatre tables à la fois. Pour plus d’informations, consultez [Disposer en mosaïque les tables de tests de charge](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#tile-load-test-tables) dans cette rubrique.
 
 La plupart des valeurs numériques affichées dans une table pour les compteurs de performance sont cumulatives sur l'ensemble de la série de tests de charge. Les colonnes nommées **Dernièrement** sont une exception et représentent la valeur de l’intervalle d’échantillonnage le plus récent.
 
@@ -66,7 +66,7 @@ La plupart des valeurs numériques affichées dans une table pour les compteurs 
 
  Certaines tables de tests de charge peuvent contenir des colonnes supplémentaires, incluant des données de centile et des temps de réponse répartis dans des groupes selon l'émulation du réseau. Par défaut, ces données ne sont pas collectées. Les données de centile ne seront disponibles que si vous avez enregistré les résultats dans une base de données, et non localement. Pour plus d’informations, consultez [Gestion des résultats des tests de charge dans le dépôt des résultats de tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md). En outre, pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud Paramètre d’exécution à modifier. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **StatisticsOnly** ou **AllIndividualDetails**. Pour plus d’informations, consultez [Guide pratique pour afficher la réponse d’une page web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
-## <a name="the-requests-table"></a>Table Demandes
+## <a name="the-requests-table"></a>Table Requêtes
 
  La table **Requêtes** affiche des détails relatifs aux requêtes émises pendant un test de charge. Cela inclut toutes les demandes HTTP et les demandes dépendantes, telles que les images. La table répertorie les demandes par test et scénario, parce qu'une demande peut être incluse dans de nombreux tests et scénarios.
 
@@ -74,18 +74,18 @@ La plupart des valeurs numériques affichées dans une table pour les compteurs 
 
 |Colonne|Description|Visible par défaut|
 |------------|-----------------|------------------------|
-|**Requête**|URL de la requête. Par exemple, home.html ou orange-arrow.gif.|Oui|
+|**Requête**|URL de la requête. Par exemple, *home.html* ou *orange-arrow.gif*.|Oui|
 |**Scénario**|Nom du scénario.|Oui|
 |**Test**|Nom du test.|Oui|
-|**Total**|Nombre total de requêtes de tests de performances de site web émises pendant la série de tests de charge. Ce total comprend les réussites et les échecs des demandes mais pas les demandes mises en cache, car elles ne sont pas adressées au serveur web.|Oui|
+|**Total**|Nombre total de demandes de tests de performances web émises pendant la série de tests de charge. Il comprend les demandes ayant abouti ou échoué, mais pas les demandes mises en cache, car elles ne sont pas adressées au serveur web.|Oui|
 |**Réussite**|Nombre de fois où la demande a été émise et a réussi.|Non|
 |**Échec**|Nombre de fois où la demande a été émise et a échoué. Les entrées de cette colonne apparaissent sous forme de liens hypertexte. Vous pouvez cliquer sur un lien hypertexte pour afficher la liste des erreurs dans la boîte de dialogue **Erreurs du test de charge**. Pour plus d’informations, consultez [Analyser les résultats de test de charge](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|Oui|
 |**Mis en cache**|Nombre total de fois où la demande a déjà été mise en cache.|Non|
 |**Requêtes/s**|Taux par seconde de la demande pendant la série de tests de charge.|Non|
 |**Réussite/s**|Taux par seconde de cette demande pendant la série de tests de charge, pour les instances de cette demande qui ont réussi.|Non|
 |**Échecs/s**|Taux par seconde de cette demande pendant la série de tests de charge, pour les instances de cette demande qui ont échoué.|Non|
-|**Temps du premier octet**|Durée moyenne pour recevoir le premier octet de la réponse, mesurée à partir du moment où la demande a été envoyée au serveur web. Les unités sont les secondes.|Non|
-|**Temps de réponse**|Durée moyenne pour recevoir la réponse entière à une demande, mesurée à partir du moment où la demande a été envoyée au serveur web. Les unités sont les secondes.|Oui|
+|**Temps du premier octet**|Délai moyen avant de recevoir le premier octet de la réponse, mesuré à partir du moment où la demande a été envoyée au serveur web. Les unités sont les secondes.|Non|
+|**Temps de réponse**|Délai moyen avant de recevoir la totalité de la réponse à une demande, mesuré à partir du moment où la demande a été envoyée au serveur web. Les unités sont les secondes.|Oui|
 |**Longueur du contenu**|Longueur moyenne du contenu de la réponse à la demande. Les unités sont les octets.|Oui|
 
 ## <a name="the-tests-table"></a>Table Tests
@@ -107,11 +107,11 @@ La plupart des valeurs numériques affichées dans une table pour les compteurs 
 |**Durée du test**|Durée moyenne pour exécuter le test pendant la série de tests de charge. Les unités sont les secondes.|Oui|
 |**90% de la durée du test**|90e centile pour la durée du test.|Non|
 |**95% de la durée du test**|95e centile pour la durée du test.|Oui|
-|**Requêtes/test**|Nombre moyen de requêtes dans le test s'il s'agit d'un test de performances de site web.|Non|
+|**Requêtes/test**|Nombre moyen de demandes du test s’il s’agit d’un test de performances web.|Non|
 
 ## <a name="the-transactions-table"></a>Table Transactions
 
- La table **Transactions** affiche une liste des transactions qui se sont produites pendant une série de tests de charge. Les transactions font référence aux transactions définies dans un test de performances de site web ou aux minuteries définies dans un test unitaire. Une transaction ne fait pas référence aux transactions de bases de données.
+ La table **Transactions** affiche une liste des transactions qui se sont produites pendant une série de tests de charge. Les transactions font référence aux transactions définies dans un test de performances web ou aux minuteurs définis dans un test unitaire. Une transaction ne fait pas référence aux transactions de bases de données.
 
  Le tableau suivant répertorie les colonnes de la table **Transactions**.
 
@@ -124,10 +124,10 @@ La plupart des valeurs numériques affichées dans une table pour les compteurs 
 |**Scénario**|Nom du scénario.|Oui|
 |**Test**|Nom du test.|Oui|
 |**Total**|Nombre total de transactions émises pendant la série de tests de charge.|Oui|
-|**Temps de transaction**|Durée d’exécution de la transaction pendant une série de tests de charge. Pour les tests de performances de site web, le temps de réflexion est compris dans le calcul. Les unités sont les secondes.|Non|
-|**Temps de réponse**|Temps de réponse de la transaction de test de performances de site web dans une série de tests de charge. Le temps de réponse diffère du temps de transaction dans le fait qu'il ne comprend pas le temps de réflexion écoulé durant la transaction. Les unités sont les secondes.|Non|
+|**Temps de transaction**|Durée d’exécution de la transaction pendant une série de tests de charge. Dans le cas des tests de performances web, le temps de réflexion est compris dans le calcul. Les unités sont les secondes.|Non|
+|**Temps de réponse**|Temps de réponse de la transaction de test de performances web dans une série de tests de charge. Le temps de réponse diffère du temps de transaction dans le fait qu’il ne comprend pas le temps de réflexion écoulé durant la transaction. Les unités sont les secondes.|Non|
 |**Temps de réponse moyen**|Temps de transaction moyen. Ce temps inclut des temps de réflexion. Par exemple, si vous avez trois requêtes et que chacune présente un temps de réflexion, ce temps comprendra ces temps de réflexion et le temps effectif d'exécution des requêtes.|Non|
-|**Temps de réponse moyen**|Temps de réponse moyen d’une transaction de test de performances de site web dans une série de tests de charge. Le temps de réponse diffère du temps de transaction dans le fait qu’il ne comprend pas le temps de réflexion écoulé durant la transaction. Les unités sont les secondes.|Non|
+|**Temps de réponse moyen**|Temps de réponse moyen d’une transaction de test de performances web dans une série de tests de charge. Le temps de réponse diffère du temps de transaction dans le fait qu’il ne comprend pas le temps de réflexion écoulé durant la transaction. Les unités sont les secondes.|Non|
 |**Temps de réponse min**|Cela n'inclut pas les temps de réflexion.|Non|
 |**Temps de réponse max**|Cela n'inclut pas les temps de réflexion.|Non|
 |**Temps de réponse médian**|Cela n'inclut pas les temps de réflexion.|Non|
@@ -153,7 +153,7 @@ La plupart des valeurs numériques affichées dans une table pour les compteurs 
 
  Pour plus d’informations, consultez [Utilisation de tables de tests de charge](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
-### <a name="drilling-down-to-the-error-list"></a>Parcours de la liste d'erreurs
+### <a name="drill-down-to-the-error-list"></a>Parcourir la liste d’erreurs
 
 La table d'erreurs regroupe les erreurs par type et sous-type d'erreur. Pour consulter une table des erreurs individuelles, vous affichez la boîte de dialogue **Erreurs du test de charge**. Pour afficher la boîte de dialogue, cliquez sur un lien hypertexte dans la colonne **Nombre** de la table d’erreurs. Vous pouvez également cliquer avec le bouton droit sur une ligne de la table d’erreurs qui est remplie, puis choisir **Erreurs**.
 
@@ -166,25 +166,25 @@ La table **Erreurs du test de charge** contient les colonnes suivantes :
 |------------|-----------------|
 |**Heure**|Heure à laquelle l'erreur s'est produite lors du test de charge.|
 |**Agent**|Nom de l'ordinateur agent sur lequel l'erreur s'est produite. C’est important lorsque vous exécutez des tests de charge à l’aide de contrôleurs de test et des agents de test. Pour plus d’informations, consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).|
-|**Test**|Nom du test de performances de site web dans lequel l'erreur s'est produite.|
+|**Test**|Nom du test de performances web dans lequel l’erreur s’est produite.|
 |**Scénario**|Nom du scénario dans lequel l'erreur s'est produite.|
 |**Requête**|URL de la requête dans laquelle l'erreur s'est produite.|
 |**Type**|Type de l'erreur. Par exemple, HttpError.|
 |**Sous-type**|Sous-type de l'erreur. Par exemple, LoadTestException.|
 |**Text**|Texte du message d'erreur. Par exemple, 404 - Non trouvé.|
 |**Pile**|Les entrées de cette colonne sont vides, ou contiennent le mot **Pile** sous la forme d’un lien hypertexte. Vous pouvez cliquer sur le lien hypertexte pour afficher une trace de la pile de l'erreur.|
-|**Détails**|Les entrées de cette colonne sont vides, ou contiennent le mot **TestLog** sous la forme d’un lien hypertexte. Ce lien peut vous aider à isoler des erreurs dans le test de charge. Par exemple, si vous cliquez sur le lien **TestLog** d’une erreur de requête du test de performances web, les résultats du test de performances web s’affichent dans l’Afficheur de résultats de test de performances web et l’erreur de la requête est mise en surbrillance.|
+|**Détails**|Les entrées de cette colonne sont vides, ou contiennent le mot **TestLog** sous la forme d’un lien hypertexte. Ce lien peut vous aider à isoler des erreurs dans le test de charge. Par exemple, le lien **TestLog** d’une erreur de demande du test de performances web permet d’afficher les résultats du test dans l’Afficheur de résultats de test de performances web et de mettre l’erreur en surbrillance.|
 
 > [!NOTE]
 > Vous pouvez trier la table en choisissant les en-têtes de colonne.
 
-## <a name="the-sql-trace-data-table"></a>Table Données de trace SQL
+## <a name="the-sql-trace-data-table"></a>Table de données Trace SQL
 
 Vous pouvez collecter les données de trace SQL pendant une série de tests de charge pour les analyser ultérieurement. La collecte de données de trace vous permet d'identifier les procédures stockées et les requêtes qui s'exécutent le plus lentement dans la base de données SQL Server testée.
 
 Si le traçage SQL est activé, un fichier contenant les données de trace SQL est créé pendant la série de tests de charge. Ces données sont enregistrées automatiquement dans le magasin des résultats des tests de charge à l'issue de la série de tests et le fichier de trace est supprimé. Vous pouvez analyser les données de trace dans le tableau **Trace SQL** à la fin du test de charge.
 
-### <a name="to-view-sql-trace-data"></a>Pour consulter des données de trace SQL
+### <a name="to-view-sql-trace-data"></a>Pour voir des données de trace SQL
 
 1. Dans l’analyseur de test de charge, choisissez **Tables** dans la barre d’outils pour vérifier que la grille des tables est affichée.
 
@@ -194,45 +194,45 @@ Si le traçage SQL est activé, un fichier contenant les données de trace SQL e
 
    Les colonnes affichées sont les suivantes :
 
-    - Classe d'événements
+    - **Event, classe**
 
-    - Duration
+    - **Durée**
 
-    - CPU
+    - **Processeur**
 
-    - Lectures
+    - **Lectures**
 
-    - Écritures
+    - **Écritures**
 
-    - TextData
+    - **TextData**
 
-    - Heure de début
+    - **StartTime**
 
-    - Heure de fin
+    - **EndTime**
 
    Pour effectuer le traçage d'événements SQL autres que les données identifiées dans ces colonnes, vous pouvez configurer votre propre traçage SQL personnalisé à l'aide de l'outil Générateur de profils SQL, distinct de Visual Studio.
 
 ## <a name="tile-load-test-tables"></a>Disposer en mosaïque les tables de tests de charge
 
-Lorsque vous consultez les résultats d'une série de tests de charge, vous pouvez afficher les données sous la forme de tables détaillées. Pour basculer en mode table, choisissez **Tables** dans la barre d’outils de test de charge. Les tables disponibles sont Erreurs, Pages, Demandes, Trace SQL, Tests, Seuils et Transactions. Pour plus d’informations, consultez [Utilisation de tables de tests de charge](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+Lorsque vous consultez les résultats d'une série de tests de charge, vous pouvez afficher les données sous la forme de tables détaillées. Pour basculer en mode table, choisissez **Tables** dans la barre d’outils de **test de charge**. Les tables disponibles sont **Erreurs**, **Pages**, **Requêtes**, **Trace SQL**, **Tests**, **Seuils** et **Transactions**. Pour plus d’informations, consultez [Utilisation de tables de tests de charge](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 Le mode table vous permet de consulter jusqu'à quatre tables à la fois sans qu'elles se chevauchent.
 
 ### <a name="to-tile-tables"></a>Pour disposer des tables en mosaïque
 
-1. Dans la barre d’outils de l’analyseur de test de charge, choisissez **Tables**.
+1. Dans la barre d’outils de **l’analyseur de test de charge**, choisissez **Tables**.
 
      L'affichage en table s'ouvre. La disposition par défaut est deux panneaux horizontaux.
 
-2. Dans la barre d'outils de l'Analyseur de test de charge, cliquez sur le bouton de disposition, puis choisissez l'une des options suivantes :
+2. Dans la barre d’outils de **l’Analyseur de test de charge**, cliquez sur le bouton de **disposition**, puis choisissez l’une des options suivantes :
 
-    - Un panneau
+    - **Un panneau**
 
-    - Deux panneaux horizontaux
+    - **Deux panneaux horizontaux**
 
-    - Trois panneaux horizontaux
+    - **Trois panneaux horizontaux**
 
-    - Quatre panneaux horizontaux
+    - **Quatre panneaux horizontaux**
 
 3. Pour passer d’une table à une autre, utilisez, dans chaque panneau, la liste déroulante située au-dessus de la grille des tables.
 
@@ -242,8 +242,8 @@ Le mode table vous permet de consulter jusqu'à quatre tables à la fois sans qu
 ## <a name="see-also"></a>Voir aussi
 
 - [Analyser les résultats des tests de charge](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Guide pratique pour accéder aux résultats des tests de charge pour l’analyse](../test/how-to-access-load-test-results-for-analysis.md)
+- [Guide pratique pour accéder aux résultats des tests de charge à des fins d’analyse](../test/how-to-access-load-test-results-for-analysis.md)
 - [Analyser les résultats des tests de charge dans la vue Graphiques](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [Analyse des violations des règles de seuil](../test/analyze-threshold-rule-violations-in-load-tests.md)
-- [Gestion des résultats des tests de charge dans le référentiel des résultats des tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md)
+- [Analyser les violations des règles de seuil](../test/analyze-threshold-rule-violations-in-load-tests.md)
+- [Gérer des résultats des tests de charge dans le référentiel des résultats des tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Vue d’ensemble du résumé des résultats des tests de charge](../test/load-test-results-summary-overview.md)

@@ -1,11 +1,12 @@
 ---
 ms.topic: include
-ms.openlocfilehash: 07875f16be0c99c5b4c6d0c69eaf72ef293a3e69
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4064feadd7b6762f880d28d8784dd3db80cd1a57
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058774"
 ---
-1. Pour vous connecter à des dépôts GitHub, exécutez le programme d’installation de Visual Studio, sélectionnez **Modifier**, puis sélectionnez l’onglet **Composants individuels**. Faites défiler jusqu’à la section **Outils de code**, sélectionnez **Extension GitHub pour Visual Studio**, puis sélectionnez **Modifier**.
+1. Pour travailler avec des référentiels GitHub depuis VS, vous devez installer l’extension GitHub pour Visual Studio. Pour ce faire, exécutez le programme d’installation de Visual Studio, sélectionnez **Modifier**, puis l’onglet **Composants individuels**. Faites défiler jusqu’à la section **Outils de code**, sélectionnez **Extension GitHub pour Visual Studio**, puis sélectionnez **Modifier**.
 
-    ![Sélection de l’extension GitHub dans le programme d’installation de Visual Studio](../media/installation-github-extension.png)
+    ![Sélection de l’extension GitHub dans le programme d’installation de VS](../media/installation-github-extension.png)

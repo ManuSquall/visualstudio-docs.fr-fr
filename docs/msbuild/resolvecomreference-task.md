@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ac8bf991ca4bec8befde5a11673dcb056f5e50f4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0f13efe45547b657f9e07c12d8eee4160ec7b95e
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578170"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152397"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference, tâche
-Prend une liste d’un ou plusieurs noms de bibliothèques de types ou de fichiers .tlb et résout ces bibliothèques de types aux emplacements sur le disque.  
+Prend une liste d’un ou plusieurs noms de bibliothèques de types ou de fichiers *.tlb* et résout ces bibliothèques de types aux emplacements sur le disque.  
   
 ## <a name="parameters"></a>Paramètres  
  Le tableau ci-dessous décrit les paramètres de la tâche `ResolveCOMReference` .  
@@ -36,11 +36,11 @@ Prend une liste d’un ou plusieurs noms de bibliothèques de types ou de fichie
 |Paramètre|Description|  
 |---------------|-----------------|  
 |`DelaySign`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, place la clé publique dans l’assembly. Si la valeur est `false`, signe complètement l’assembly.|  
-|`EnvironmentVariables`|Paramètre `String[]` facultatif.<br /><br /> Tableau de paires de variables d'environnement, séparées par un signe égal. Ces variables sont passées aux fichiers tlbimp.exe et aximp.exe générés en plus ou en remplacement sélectif du bloc d’environnement normal.|  
-|`ExecuteAsTool`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, exécute tlbimp.exe et aximp.exe à partir du framework cible approprié out-of-process pour générer les assemblys de wrappers nécessaires. Ce paramètre permet le multiciblage.|  
+|`EnvironmentVariables`|Paramètre `String[]` facultatif.<br /><br /> Tableau de paires de variables d'environnement, séparées par un signe égal. Ces variables sont passées aux fichiers *tlbimp.exe* et *aximp.exe* générés en plus ou en remplacement sélectif du bloc d’environnement normal.|  
+|`ExecuteAsTool`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, exécute *tlbimp.exe* et *aximp.exe* à partir du framework cible approprié out-of-process pour générer les assemblys de wrappers nécessaires. Ce paramètre permet le multiciblage.|  
 |`IncludeVersionInInteropName`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, la version de la typelib sera incluse dans le nom du wrapper. La valeur par défaut est `false`.|  
-|`KeyContainer`|Paramètre `String` facultatif.<br /><br /> Spécifie un conteneur qui contient une paire de clés<br /><br /> publique/privée.|  
-|`KeyFile`|Paramètre `String` facultatif.<br /><br /> Spécifie un élément qui contient une paire de clés<br /><br /> publique/privée.|  
+|`KeyContainer`|Paramètre `String` facultatif.<br /><br /> Spécifie un conteneur qui contient une paire de clés publique/privée.|  
+|`KeyFile`|Paramètre `String` facultatif.<br /><br /> Spécifie un élément qui contient une paire de clés publique/privée.|  
 |`NoClassMembers`|Paramètre `Boolean` facultatif.|  
 |`ResolvedAssemblyReferences`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie les références d’assembly résolues.|  
 |`ResolvedFiles`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie les fichiers avec leur nom complet sur le disque qui correspondent aux emplacements physiques des bibliothèques de types fournies comme entrée pour cette tâche.|  
@@ -48,12 +48,10 @@ Prend une liste d’un ou plusieurs noms de bibliothèques de types ou de fichie
 |`SdkToolsPath`|Paramètre <xref:System.String?displayProperty=fullName> facultatif.<br /><br /> Si `ExecuteAsTool` a la valeur `true`, ce paramètre doit être défini sur le chemin des outils du SDK de la version du framework ciblée.|  
 |`StateFile`|Paramètre `String` facultatif.<br /><br /> Spécifie le fichier cache pour les horodateurs de composant COM. S’il n’est pas présent, chaque exécution régénère tous les wrappers.|  
 |`TargetFrameworkVersion`|Paramètre `String` facultatif.<br /><br /> Spécifie la version du framework cible du projet.<br /><br /> La valeur par défaut est `String.Empty`, ce qui signifie qu’il n’existe pas de filtrage pour une référence basée sur le framework cible.|  
-|`TargetProcessorArchitecture`|Paramètre `String` facultatif.<br /><br /> Spécifie l’architecture de processeur cible préférée. Passé à l’indicateur /machine de tlbimp.exe après traduction.<br /><br /> La valeur du paramètre doit être un membre de <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
-|`TypeLibFiles`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie le chemin du fichier de bibliothèque de types vers les références COM. Les éléments inclus dans ce paramètre peuvent contenir des métadonnées d’élément. Pour plus d’informations, consultez la section « Métadonnées d’élément TypeLibFiles » ci-dessous.|  
-|`TypeLibNames`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie les noms de bibliothèques de types à résoudre. Les éléments inclus dans ce paramètre doivent contenir certaines métadonnées d’élément. Pour plus d’informations, consultez la section « Métadonnées d’élément TypeLibNames » ci-dessous.|  
+|`TargetProcessorArchitecture`|Paramètre `String` facultatif.<br /><br /> Spécifie l’architecture de processeur cible préférée. Passé à l’indicateur *tlbimp.exe*/machine après traduction.<br /><br /> La valeur du paramètre doit être un membre de <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
+|`TypeLibFiles`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie le chemin du fichier de bibliothèque de types vers les références COM. Les éléments inclus dans ce paramètre peuvent contenir des métadonnées d’élément. Pour plus d’informations, consultez la section [Métadonnées d’élément TypeLibFiles](#typelibfiles-item-metadata) ci-dessous.|  
+|`TypeLibNames`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie les noms de bibliothèques de types à résoudre. Les éléments inclus dans ce paramètre doivent contenir certaines métadonnées d’élément. Pour plus d’informations, consultez la section [Métadonnées d’élément TypeLibNames](#typelibnames-item-metadata) ci-dessous.|  
 |`WrapperOutputDirectory`|Paramètre `String` facultatif.<br /><br /> Emplacement sur le disque où se trouve l’assembly d’interopérabilité généré. Si ces métadonnées d’élément ne sont pas spécifiée, la tâche utilise le chemin absolu du répertoire où se trouve le fichier projet.|  
-  
-## <a name="remarks"></a>Notes  
   
 ## <a name="typelibnames-item-metadata"></a>Métadonnées d’élément TypeLibNames  
  Le tableau suivant décrit les métadonnées d’élément disponibles pour les éléments passés au paramètre `TypeLibNames`.  
@@ -77,8 +75,8 @@ Prend une liste d’un ou plusieurs noms de bibliothèques de types ou de fichie
 >  Plus vous fournissez d’informations pour identifier de façon univoque une bibliothèque de types, plus grande est la possibilité que la tâche aboutisse au fichier correct sur le disque.  
   
 ## <a name="remarks"></a>Notes  
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Task, classe de base](../msbuild/task-base-class.md).  
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base de tâche](../msbuild/task-base-class.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Tâches](../msbuild/msbuild-tasks.md)   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)
+ [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01d2abbed85b891378b0a9d5c4a41029bdc46cf3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 924dad9e530fa75c68df325f58fe028ffddd1c3b
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569709"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151608"
 ---
 # <a name="tooltaskextension-base-class"></a>Classe de base ToolTaskExtension
 De nombreuses tâches héritent de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, laquelle hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>, qui hérite elle-même de la classe <xref:Microsoft.Build.Utilities.Task>. Cette chaîne d'héritage ajoute plusieurs paramètres aux tâches qui en dérivent. Ces paramètres sont répertoriés dans ce document.  
@@ -35,7 +35,7 @@ De nombreuses tâches héritent de la classe <xref:Microsoft.Build.Tasks.ToolTas
 |<xref:Microsoft.Build.Utilities.Task.BuildEngine%2A>|Paramètre <xref:Microsoft.Build.Framework.IBuildEngine> facultatif.<br /><br /> Spécifie l'interface du moteur de génération disponible pour les tâches. Le moteur de génération définit automatiquement ce paramètre pour permettre aux tâches d’être rappelées.|  
 |<xref:Microsoft.Build.Utilities.Task.BuildEngine2%2A>|Paramètre <xref:Microsoft.Build.Framework.IBuildEngine2> facultatif.<br /><br /> Spécifie l'interface du moteur de génération disponible pour les tâches. Le moteur de génération définit automatiquement ce paramètre pour permettre aux tâches d’être rappelées.<br /><br /> Il s'agit d'une propriété de convenance qui permet aux auteurs de tâches qui héritent de cette classe de ne pas avoir à effectuer un cast de la valeur de `IBuildEngine` vers `IBuildEngine2`.|  
 |<xref:Microsoft.Build.Utilities.Task.BuildEngine3%2A>|Paramètre <xref:Microsoft.Build.Framework.IBuildEngine3> facultatif.<br /><br /> Spécifie l'interface du moteur de génération fournie par l'hôte.|  
-|<xref:Microsoft.Build.Utilities.ToolTask.EchoOff%2A>|Paramètre `bool` facultatif.<br /><br /> Quand la valeur est `true`, cette tâche passe **/Q** à la ligne de commande cmd.exe, pour que la ligne de commande ne soit pas copiée dans stdout.|  
+|<xref:Microsoft.Build.Utilities.ToolTask.EchoOff%2A>|Paramètre `bool` facultatif.<br /><br /> Quand la valeur est `true`, cette tâche passe **/Q** à la ligne de commande *cmd.exe* de telle manière que cette dernière ne soit pas copiée dans stdout.|  
 |<xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A>|Paramètres de tableau `String` facultatif.<br /><br /> Tableau de paires de variables d'environnement, séparées par un signe égal. Ces variables sont transmises à l'exécutable généré en plus ou en remplacement sélectif du bloc environnement normal.|  
 |<xref:Microsoft.Build.Utilities.ToolTask.ExitCode%2A>|Paramètre en lecture seule de sortie `Int32` facultatif.<br /><br /> Spécifie le code de sortie fourni par la commande exécutée. Si la tâche a journalisé des erreurs, alors que le processus avait un code de sortie de 0 (réussite), ce paramètre prend la valeur -1.|  
 |<xref:Microsoft.Build.Utilities.Task.HostObject%2A>|Paramètre <xref:Microsoft.Build.Framework.ITaskHost> facultatif.<br /><br /> Spécifie l'instance de l'objet hôte (peut être null). Le moteur de génération définit cette propriété si l’IDE hôte a associé un objet hôte à cette tâche particulière.|  
@@ -43,12 +43,12 @@ De nombreuses tâches héritent de la classe <xref:Microsoft.Build.Tasks.ToolTas
 |<xref:Microsoft.Build.Utilities.ToolTask.LogStandardErrorAsError%2A>|Paramètre `bool` d'option.<br /><br /> Si la valeur est `true`, tous les messages reçus sur le flux d'erreur standard sont journalisés en tant qu'erreurs.|  
 |<xref:Microsoft.Build.Utilities.ToolTask.StandardErrorImportance%2A>|Paramètre `String` facultatif.<br /><br /> Importance avec laquelle le texte doit être enregistré dans le flux de sortie standard.|  
 |<xref:Microsoft.Build.Utilities.ToolTask.StandardOutputImportance%2A>|Paramètre `String` facultatif.<br /><br /> Importance avec laquelle le texte doit être enregistré dans le flux de sortie standard.|  
-|<xref:Microsoft.Build.Utilities.ToolTask.Timeout%2A>|Paramètre `Int32` facultatif virtuel.<br /><br /> Spécifie le délai, en millisecondes, après lequel l'exécutable de la tâche est arrêté. La valeur par défaut est `Int.MaxValue`, ce qui indique qu'il n'existe aucun délai d'expiration. Celui-ci est exprimé en millisecondes.|  
+|<xref:Microsoft.Build.Utilities.ToolTask.Timeout%2A>|Paramètre `Int32` facultatif virtuel.<br /><br /> Spécifie le délai, en millisecondes, après lequel l’exécutable de la tâche est arrêté. La valeur par défaut est `Int.MaxValue`, ce qui indique qu’il n’existe aucun délai d’expiration. Délai d’expiration en millisecondes.|  
 |<xref:Microsoft.Build.Utilities.ToolTask.ToolExe%2A>|Paramètre `string` facultatif virtuel.<br /><br /> Les projets peuvent l'implémenter pour remplacer un ToolName. Les tâches peuvent le remplacer pour préserver le ToolName.|  
 |<xref:Microsoft.Build.Utilities.ToolTask.ToolPath%2A>|Paramètre `string` facultatif.<br /><br /> Spécifie l'emplacement à partir duquel la tâche charge le fichier exécutable sous-jacent. Si ce paramètre n'est pas spécifié, la tâche utilise le chemin d'installation du Kit de développement logiciel (SDK) qui correspond à la version de l'infrastructure qui exécute [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
 |<xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A>|Paramètre `bool` facultatif.<br /><br /> Quand la valeur est `true`, cette tâche crée un fichier de commandes pour la ligne de commande et l'exécute à l'aide de l'interpréteur de commandes au lieu d'exécuter la commande directement.|  
 |<xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A>|Paramètre `bool` facultatif.<br /><br /> Quand la valeur est `true`, cette tâche donne le nœud quand sa tâche s'exécute.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)   
+ [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)   
  [Tâches](../msbuild/msbuild-tasks.md)

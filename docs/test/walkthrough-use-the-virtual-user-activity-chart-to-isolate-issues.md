@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fedc9aebb4d57e258370179bbf820abdc8978940
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 002f52e63ad4e81273a027fa1048ba6465d4a401
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976430"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179828"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Procédure pas à pas : utilisation du graphique d'activités des utilisateurs virtuels pour isoler les problèmes de performances
 
@@ -54,7 +54,7 @@ Dans cette procédure pas à pas, vous apprendrez à utiliser le graphique d'act
 
 2.  Ouvrez la solution ColorWebApp qui contient LoadTest1.loadtest. Ce test de charge résulte des trois procédures pas à pas répertoriées au début de cette rubrique dans la section des conditions requises.
 
-     Les étapes restantes de cette procédure pas à pas supposent qu'ils existe une applications web nommée ColorWebApp, un test de performances de site web nommé ColorWebAppTest.webtest et un test de charge nommé LoadTest1.loadtest.
+     Les étapes restantes de cette procédure pas à pas supposent qu'ils existe une applications web nommée ColorWebApp, un test de performances web nommé ColorWebAppTest.webtest et un test de charge nommé LoadTest1.loadtest.
 
 ## <a name="run-the-load-test"></a>Exécuter le test de charge
  Exécutez le test de charge pour collecter les données d'activités des utilisateurs virtuels.
@@ -114,7 +114,7 @@ Une fois que vous avez exécuté le test de charge et que vous avez collecté le
 
 8.  Notez que **Journal des tests** est un lien. Choisissez le lien **Journal des tests**.
 
-9. Le test de performances de site web ColorWebTest associé au journal s'ouvre dans l'Afficheur des résultats des tests de performances de site web. Il permet d'identifier l'endroit où les violations de seuil se sont produites.
+9. Le test de performances web ColorWebTest associé au journal s'ouvre dans l'Afficheur des résultats des tests de performances web. Il permet d'identifier l'endroit où les violations de seuil se sont produites.
 
      Vous pouvez utiliser différents paramètres dans les volets **Légende du détail** et **Résultats du filtre** pour isoler les problèmes de performances et les erreurs dans vos tests de charge. Essayez d’utiliser ces paramètres et l’outil **Zoomer sur la période de temps** pour afficher le mode de représentation des données utilisateur virtuel dans le **Graphique d’activités des utilisateurs virtuels**.
 

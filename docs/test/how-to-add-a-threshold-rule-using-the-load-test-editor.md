@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ede6e8d3dde3b8a6f76164b02457a98102bcbac7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f68ab9b183119c18bed51bb7faaa86993d7f34ce
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965544"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179877"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Guide pratique pour ajouter une règle de seuil à l’aide de l’éditeur de test de charge
 
@@ -36,14 +36,13 @@ Les règles de seuil contenues dans des tests de charge comparent une valeur de 
 
      La boîte de dialogue **Ajouter une règle de seuil** s’affiche.
 
-5.  Vous pouvez choisir parmi deux types de règles : Comparer une constante et Comparer des compteurs. Sélectionnez le type approprié et définissez les valeurs.
+5.  Vous pouvez choisir parmi deux types de règles : **Comparer une constante** et **Comparer des compteurs**. Sélectionnez le type approprié et définissez les valeurs.
 
     > [!NOTE]
     > Affectez à la propriété **Alerte en cas de dépassement** la valeur **True** pour indiquer que le dépassement d’un seuil constitue un problème, ou la valeur **False** pour indiquer que le fait de ne pas atteindre un seuil constitue un problème.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Analyse des violations des règles de seuil](../test/analyze-threshold-rule-violations-in-load-tests.md)
-- [Spécification des ensembles de compteurs et des règles de seuil pour les ordinateurs dans un test de charge](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
+- [Analyser les violations des règles de seuil](../test/analyze-threshold-rule-violations-in-load-tests.md)
+- [Spécifier les ensembles de compteurs et les règles de seuil des ordinateurs dans un test de charge](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [Analyser les résultats des tests de charge](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Spécification des ensembles de compteurs et des règles de seuil pour les ordinateurs dans un test de charge](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

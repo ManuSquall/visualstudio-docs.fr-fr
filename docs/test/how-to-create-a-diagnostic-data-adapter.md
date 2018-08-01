@@ -10,20 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 923296a6eaed79edc345b9071d5e1d4e2ececefe
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: bf2b6986894d996d5307d2551ddf79ad37f8a8e9
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844740"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176978"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Comment : créer un adaptateur de données de diagnostic
 
 Pour créer un *adaptateur de données de diagnostic*, vous devez créer une bibliothèque de classes à l’aide de Visual Studio, puis ajouter à cette dernière les API d’adaptateur de données de diagnostic fournies par Visual Studio Enterprise. Envoyez toutes les informations que vous voulez sous forme de flux de données ou de fichier au <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> fourni par l’infrastructure durant la gestion des événements déclenchés pendant la série de tests. Les flux de données ou les fichiers envoyés au <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> sont stockés en tant que pièces jointes aux résultats des tests lorsque votre test est terminé. Si vous créez un bogue à partir de ces résultats de tests ou quand vous utilisez [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)], les fichiers sont également liés au bogue.
 
- Vous pouvez créer un adaptateur de données de diagnostic qui affecte l'ordinateur où vos tests sont exécutés, ou un ordinateur qui fait partie de l'environnement que vous utilisez pour exécuter votre application testée. Par exemple, collecter des fichiers sur l’ordinateur de test où sont exécutés les tests, ou collecter des fichiers sur l’ordinateur ayant le rôle de serveur web de votre application.
+ Vous pouvez créer un adaptateur de données de diagnostic qui affecte l'ordinateur où vos tests sont exécutés, ou un ordinateur qui fait partie de l'environnement que vous utilisez pour exécuter votre application testée. Il est par exemple possible de collecter des fichiers sur l’ordinateur de test où sont exécutés les tests ou sur l’ordinateur ayant le rôle de serveur web de l’application.
 
- Vous pouvez attribuer à l’adaptateur de données de diagnostic un nom convivial qui s’affiche quand vous créez vos paramètres de test à l’aide de Microsoft Test Manager ou de Visual Studio. Les paramètres de test vous permettent de définir le rôle d'ordinateur qui exécutera des adaptateurs de données de diagnostic spécifiques dans votre environnement lors de l'exécution de vos tests. Vous pouvez également configurer vos adaptateurs de données de diagnostic lorsque vous créez vos paramètres de test. Par exemple, vous pouvez créer un adaptateur de données de diagnostic qui collecte des journaux personnalisés de votre serveur Web. Lorsque vous créez vos paramètres de test, vous pouvez choisir d’exécuter cet adaptateur de données de diagnostic sur les ordinateurs qui prennent en charge ce rôle de serveur web et modifier la configuration de vos paramètres de test de façon à collecter uniquement les trois derniers journaux créés. Pour plus d’informations sur les paramètres de test, consultez [Collecter des informations de diagnostic à l’aide des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md).
+ Vous pouvez attribuer à l’adaptateur de données de diagnostic un nom convivial qui s’affiche quand vous créez vos paramètres de test à l’aide de Microsoft Test Manager ou de Visual Studio. Les paramètres de test vous permettent de définir le rôle d'ordinateur qui exécutera des adaptateurs de données de diagnostic spécifiques dans votre environnement lors de l'exécution de vos tests. Vous pouvez également configurer vos adaptateurs de données de diagnostic lorsque vous créez vos paramètres de test. Il est par exemple possible de créer un adaptateur de données de diagnostic qui collecte des journaux personnalisés auprès de votre serveur web. Lorsque vous créez vos paramètres de test, vous pouvez choisir d’exécuter cet adaptateur de données de diagnostic sur le ou les ordinateurs qui prennent en charge ce rôle de serveur web et modifier la configuration de vos paramètres de test de façon à collecter uniquement les trois derniers journaux créés. Pour plus d’informations sur les paramètres de test, consultez [Collecter des informations de diagnostic à l’aide des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md).
 
  Les événements sont déclenchés lorsque vous exécutez vos tests afin que votre adaptateur de données de diagnostic puisse exécuter des tâches à ce stade du test.
 

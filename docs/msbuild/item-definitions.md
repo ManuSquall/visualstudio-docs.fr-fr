@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03a6bd0c570fb34fc5e1db139ccfa8d0d5d02ea4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0c267c8a0d76fdda08112e428c0fc7403daa1f30
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572502"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178560"
 ---
-# <a name="item-definitions"></a>Définitions d'éléments
+# <a name="item-definitions"></a>Définitions d’éléments
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 permet la déclaration statique d’éléments dans les fichiers projet à l’aide de l’élément [ItemGroup](../msbuild/itemgroup-element-msbuild.md). Les métadonnées ne peuvent cependant être ajoutées qu’au niveau de l’élément, même si elles sont identiques pour tous les éléments. À compter de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, un élément de projet nommé [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) passe outre cette limitation. *ItemDefinitionGroup* vous permet de définir un ensemble de définitions d’élément, qui ajoutent des valeurs de métadonnées par défaut à tous les éléments dans le type d’élément nommé.  
   
  L’élément *ItemDefinitionGroup* apparaît immédiatement après l’élément [Project](../msbuild/project-element-msbuild.md) du fichier projet. Les définitions d’élément offrent les fonctionnalités suivantes :  
@@ -73,7 +73,7 @@ ms.locfileid: "31572502"
   
 -   Variable d’environnement  
   
--   Propriété globale \(de la ligne de commande MSBuild.exe\)  
+-   Propriété globale (de la ligne de commande *MSBuild.exe*)  
   
 -   Propriété réservée  
   
@@ -91,7 +91,7 @@ ms.locfileid: "31572502"
   
 -   La dernière spécification est prioritaire.  
   
- Quand vous avez plusieurs ItemDefinitionGroup, chaque spécification ultérieure ajoute ses métadonnées à la définition précédente. Exemple :  
+Quand vous avez plusieurs ItemDefinitionGroup, chaque spécification ultérieure ajoute ses métadonnées à la définition précédente. Exemple :  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -107,9 +107,9 @@ ms.locfileid: "31572502"
 </ItemDefinitionGroup>  
 ```  
   
- Dans cet exemple, les métadonnées « o » sont ajoutées à « m » et à « n ».  
+Dans cet exemple, les métadonnées « o » sont ajoutées à « m » et à « n ».  
   
- En outre, les valeurs des métadonnées définies précédemment peuvent également être ajoutées. Exemple :  
+En outre, les valeurs des métadonnées définies précédemment peuvent également être ajoutées. Exemple :  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -124,12 +124,12 @@ ms.locfileid: "31572502"
 </ItemDefinitionGroup>    
 ```  
   
- Dans cet exemple, la valeur précédemment définie pour les métadonnées « m » \(m1\) est ajoutée à la nouvelle valeur \(m2\), de sorte que la valeur finale est « m1;m2 ».  
+Dans cet exemple, la valeur précédemment définie pour les métadonnées « m » \(m1\) est ajoutée à la nouvelle valeur \(m2\), de sorte que la valeur finale est « m1;m2 ».  
   
 > [!NOTE]
 >  Ceci peut également se produire dans le même ItemDefinitionGroup.  
   
- Quand vous remplacez les métadonnées définies précédemment, la dernière spécification est prioritaire. Dans l’exemple suivant, la valeur finale des métadonnées « m » passe de « m1 » « m1a ».  
+Quand vous remplacez les métadonnées définies précédemment, la dernière spécification est prioritaire. Dans l’exemple suivant, la valeur finale des métadonnées « m » passe de « m1 » « m1a ».  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -144,7 +144,7 @@ ms.locfileid: "31572502"
 </ItemDefinitionGroup>    
 ```  
   
-## <a name="using-conditions-in-an-itemdefinitiongroup"></a>Utilisation de conditions dans un ItemDefinitionGroup  
+## <a name="use-conditions-in-an-itemdefinitiongroup"></a>Utiliser des conditions dans un ItemDefinitionGroup  
  Vous pouvez utiliser des conditions dans un ItemDefinitionGroup pour contrôler l’inclusion des métadonnées. Exemple :  
   
 ```xml  
@@ -155,12 +155,12 @@ ms.locfileid: "31572502"
 </ItemDefinitionGroup>  
 ```  
   
- Dans ce cas, les métadonnées par défaut « m1 » sur l’élément « i » sont incluses seulement si la valeur de la propriété « Configuration » est « Debug ».  
+Dans ce cas, les métadonnées par défaut « m1 » sur l’élément « i » sont incluses seulement si la valeur de la propriété « Configuration » est « Debug ».  
   
 > [!NOTE]
 >  Seules les références de métadonnées locales sont prises en charge dans les conditions.  
   
- Les références aux métadonnées définies dans un ItemDefinitionGroup antérieur sont locales à l’élément, et non pas au groupe de définitions. Autrement dit, l’étendue des références sont spécifiques aux éléments. Exemple :  
+Les références aux métadonnées définies dans un ItemDefinitionGroup antérieur sont locales à l’élément, et non pas au groupe de définitions. Autrement dit, l’étendue des références est spécifique aux éléments. Exemple :  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -190,7 +190,7 @@ Dans l’exemple ci-dessus, l’élément « i » référence l’élément «
 
 Dans l’exemple ci-dessus, « m » est défini sur la valeur « m1 », car la condition référence la valeur des métadonnées « i » pour l’élément « yes ». 
   
-## <a name="overriding-and-deleting-metadata"></a>Remplacement et suppression de métadonnées  
+## <a name="override-and-delete-metadata"></a>Remplacer et supprimer des métadonnées  
  Vous pouvez remplacer les métadonnées définies dans un élément ItemDefinitionGroup dans un élément ItemDefinitionGroup ultérieur en attribuant une valeur vide aux métadonnées. Vous pouvez aussi supprimer un élément de métadonnées en lui attribuant une valeur vide. Exemple :  
   
 ```xml  
@@ -206,7 +206,7 @@ Dans l’exemple ci-dessus, « m » est défini sur la valeur « m1 », car 
 </ItemDefinitionGroup>  
 ```  
   
- L’élément « i » contient encore les métadonnées « m », mais sa valeur est maintenant vide.  
+L’élément « i » contient encore les métadonnées « m », mais sa valeur est maintenant vide.  
   
 ## <a name="scope-of-metadata"></a>Étendue des métadonnées  
  Les ItemDefinitionGroup ont une étendue globale sur les propriétés définies et globales là où elles sont définies. Les définitions de métadonnées par défaut dans un ItemDefinitionGroup peuvent se référencer elles-mêmes. Par exemple, ce qui suit utilise une référence de métadonnées simple :  
@@ -220,7 +220,7 @@ Dans l’exemple ci-dessus, « m » est défini sur la valeur « m1 », car 
 </ItemDefinitionGroup>  
 ```  
   
- Une référence de métadonnées qualifiée peut également être utilisée :  
+Une référence de métadonnées qualifiée peut également être utilisée :  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -231,7 +231,7 @@ Dans l’exemple ci-dessus, « m » est défini sur la valeur « m1 », car 
 </ItemDefinitionGroup>  
 ```  
   
- L’exemple suivant n’est cependant pas valide :  
+L’exemple suivant n’est cependant pas valide :  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -242,7 +242,7 @@ Dans l’exemple ci-dessus, « m » est défini sur la valeur « m1 », car 
 </ItemDefinitionGroup>  
 ```  
   
- À compter de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, les ItemGroup peuvent également se référencer eux-mêmes. Exemple :  
+À compter de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, les ItemGroup peuvent également se référencer eux-mêmes. Exemple :  
   
 ```xml  
 <ItemGroup>  

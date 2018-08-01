@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c151c371346287ce27814d11540d7227bc058c86
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 5377b4fbca562ad41b153c72f27a6eaecc84af56
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704172"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179019"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ressources pour la conception d’applications accessibles
 
@@ -31,7 +31,7 @@ Utilisez les liens suivants pour trouver des informations sur les technologies q
 
 * **Microsoft Active Accessibility** Technologie COM qui améliore l’intégration des options d’accessibilité aux applications s’exécutant sur Microsoft Windows. Elle fournit des bibliothèques de liens dynamiques qui sont incorporées au système d'exploitation, ainsi qu'une interface COM et des éléments de programmation d'application qui fournissent des méthodes fiables pour exposer des informations sur les éléments d'interface utilisateur. Pour plus d’informations, consultez [http://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/dd373592.aspx).
 
-* **Technologies Microsoft .NET Speech** Le SDK Microsoft .NET Speech rassemble des contrôles Microsoft [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)], un complément vocal pour Microsoft Internet Explorer, des exemples d’applications et de la documentation permettant aux développeurs web de créer, déboguer et déployer des applications [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] prenant en charge la reconnaissance vocale. Les outils sont intégrés de façon transparente à Microsoft Visual Studio, ce qui permet aux développeurs de tirer parti d'un environnement de développement familier. Pour plus d’informations, consultez [http://msdn.microsoft.com/library/ms950383.aspx](http://msdn.microsoft.com/library/ms950383.aspx).
+* **Technologies Microsoft .NET Speech** Le kit de développement logiciel SDK Microsoft .NET Speech comprend un ensemble de contrôles Microsoft [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)], un add-in Microsoft Internet Explorer Speech, des exemples d’applicatins et de la documentation grâce auxquels les développeurs web peuvent créer, déboguer et déploiyer des applications [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] de reconnaissance vocale. Les outils sont intégrés de façon transparente à Microsoft Visual Studio, ce qui permet aux développeurs de tirer parti d'un environnement de développement familier. Pour plus d’informations, consultez [http://msdn.microsoft.com/library/ms950383.aspx](http://msdn.microsoft.com/library/ms950383.aspx).
 
 * **Présentation de SAMI 1.0** La technologie SAMI (Synchronized Accessible Media Interchange) permet aux développeurs de créer une légende pour le contenu audio des applications multimédias sur PC. Pour plus d'informations, consultez [Comprendre SAMI 1.0](http://msdn.microsoft.com/library/ms971327.aspx).
 

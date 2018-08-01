@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 183e549f6f582593915a89b7b0e907aa97253b17
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: b1b886346a43e75d38a8ea8b6ed7a8b8d7391293
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326638"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152459"
 ---
-# <a name="target-element-msbuild"></a>Target, élément (MSBuild)
+# <a name="target-element-msbuild"></a>Élément Target (MSBuild)
 Contient un ensemble de tâches que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doit exécuter séquentiellement.  
 
  \<Project>  
@@ -62,12 +62,12 @@ Contient un ensemble de tâches que [!INCLUDE[vstecmsbuild](../extensibility/int
 |---------------|-----------------|  
 |`Name`|Attribut requis.<br /><br /> Nom de la cible.|  
 |`Condition`|Attribut facultatif.<br /><br /> Condition à évaluer. Si la condition a la valeur `false`, la cible n’exécute pas le corps de la cible ni les cibles définies dans l’attribut `DependsOnTargets`. Pour plus d’informations sur les conditions, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).|  
-|`Inputs`|Attribut facultatif.<br /><br /> Fichiers qui constituent les entrées dans cette cible. Plusieurs fichiers sont séparés par des points-virgules. Les horodateurs des fichiers doivent être comparés à ceux des fichiers dans `Outputs` pour déterminer si la `Target` est à jour. Pour plus d’informations, consultez les articles [Incremental Builds (Générations incrémentielles)](../msbuild/incremental-builds.md), [How to: Build Incrementally (Comment : effectuer des générations incrémentielles)](../msbuild/how-to-build-incrementally.md) et [Transforms (Transformations MSBuild)](../msbuild/msbuild-transforms.md).|  
-|`Outputs`|Attribut facultatif.<br /><br /> Fichiers qui constituent les sorties dans cette cible. Plusieurs fichiers sont séparés par des points-virgules. Les horodateurs des fichiers doivent être comparés à ceux des fichiers dans `Inputs` pour déterminer si la `Target` est à jour. Pour plus d’informations, consultez les articles [Incremental Builds (Générations incrémentielles)](../msbuild/incremental-builds.md), [How to: Build Incrementally (Comment : effectuer des générations incrémentielles)](../msbuild/how-to-build-incrementally.md) et [Transforms (Transformations MSBuild)](../msbuild/msbuild-transforms.md).|  
+|`Inputs`|Attribut facultatif.<br /><br /> Fichiers qui constituent les entrées dans cette cible. Plusieurs fichiers sont séparés par des points-virgules. Les horodateurs des fichiers doivent être comparés à ceux des fichiers dans `Outputs` pour déterminer si la `Target` est à jour. Pour plus d’informations, voir [Générations incrémentielles](../msbuild/incremental-builds.md), [Guide pratique : Effectuer des générations incrémentielles](../msbuild/how-to-build-incrementally.md) et [Transformations](../msbuild/msbuild-transforms.md).|  
+|`Outputs`|Attribut facultatif.<br /><br /> Fichiers qui constituent les sorties dans cette cible. Plusieurs fichiers sont séparés par des points-virgules. Les horodateurs des fichiers doivent être comparés à ceux des fichiers dans `Inputs` pour déterminer si la `Target` est à jour. Pour plus d’informations, voir [Générations incrémentielles](../msbuild/incremental-builds.md), [Guide pratique : Effectuer des générations incrémentielles](../msbuild/how-to-build-incrementally.md) et [Transformations](../msbuild/msbuild-transforms.md).|  
 |`Returns`|Attribut facultatif.<br /><br /> Ensemble des éléments qui seront disponibles pour les tâches qui appellent cette cible, par exemple, les tâches MSBuild. Plusieurs cibles sont séparées par des points-virgules. Si les cibles du fichier sont dépourvues d’attributs `Returns`, les attributs Output sont utilisés à la place à cet effet.|  
 |`KeepDuplicateOutputs`|Attribut booléen facultatif.<br /><br /> Si `true`, plusieurs références au même élément dans l’attribut Returns de la cible sont enregistrées.  Par défaut, cet attribut est défini sur `false`.|  
-|`BeforeTargets`|Attribut facultatif.<br /><br /> Liste de noms de cibles séparés par des points-virgules.  Si spécifié, indique que cette cible doit être exécutée avant la ou les cibles spécifiées. L’auteur du projet peut alors étendre un ensemble existant de cibles sans les modifier directement. Pour plus d’informations, consultez l’article [Ordre de génération des cibles](../msbuild/target-build-order.md).|  
-|`AfterTargets`|Attribut facultatif.<br /><br /> Liste de noms de cibles séparés par des points-virgules. Si spécifié, indique que cette cible doit être exécutée après la ou les cibles spécifiées. L’auteur du projet peut alors étendre un ensemble existant de cibles sans les modifier directement. Pour plus d’informations, consultez l’article [Ordre de génération des cibles](../msbuild/target-build-order.md).|  
+|`BeforeTargets`|Attribut facultatif.<br /><br /> Liste de noms de cibles séparés par des points-virgules.  Si spécifié, indique que cette cible doit être exécutée avant la ou les cibles spécifiées. L’auteur du projet peut alors étendre un ensemble existant de cibles sans les modifier directement. Pour plus d’informations, consultez [Ordre de génération des cibles](../msbuild/target-build-order.md).|  
+|`AfterTargets`|Attribut facultatif.<br /><br /> Liste de noms de cibles séparés par des points-virgules. Si spécifié, indique que cette cible doit être exécutée après la ou les cibles spécifiées. L’auteur du projet peut alors étendre un ensemble existant de cibles sans les modifier directement. Pour plus d’informations, consultez [Ordre de génération des cibles](../msbuild/target-build-order.md).|  
 |`DependsOnTargets`|Attribut facultatif.<br /><br /> Les cibles qui doivent être exécutées avant cette cible peuvent l’être, ou l’analyse des dépendances de niveau supérieur peut être effectuée. Plusieurs cibles sont séparées par des points-virgules.|  
 |`Label`|Attribut facultatif.<br /><br /> Identificateur permettant d’identifier ou de classer les éléments système et utilisateur.|  
 
@@ -78,7 +78,7 @@ Contient un ensemble de tâches que [!INCLUDE[vstecmsbuild](../extensibility/int
 |[Task](../msbuild/task-element-msbuild.md)|Crée et exécute une instance d’une tâche [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Une cible peut ne contenir aucune tâche ou en contenir plusieurs.|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Contient un ensemble d’éléments `Property` définis par l’utilisateur. Depuis .NET Framework 3.5, un élément `Target` peut contenir des éléments `PropertyGroup`.|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Contient un ensemble d’éléments `Item` définis par l’utilisateur. Depuis .NET Framework 3.5, un élément `Target` peut contenir des éléments `ItemGroup`. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).|  
-|[OnError](../msbuild/onerror-element-msbuild.md)|Provoque l’exécution d’une ou de plusieurs cibles si l’attribut `ContinueOnError` est défini sur ErrorAndStop (ou `false`) pour une tâche en échec. Une cible peut ne contenir aucun élément `OnError` ou en contenir plusieurs. Si des éléments `OnError` sont présents, il doit s’agir des derniers éléments de l’élément `Target`.<br /><br /> Pour plus d’informations sur l’attribut `ContinueOnError`, consultez l’article [Task Element (MSBuild) (Élément Task [MSBuild])](../msbuild/task-element-msbuild.md).|  
+|[OnError](../msbuild/onerror-element-msbuild.md)|Provoque l’exécution d’une ou de plusieurs cibles si l’attribut `ContinueOnError` est défini sur ErrorAndStop (ou `false`) pour une tâche en échec. Une cible peut ne contenir aucun élément `OnError` ou en contenir plusieurs. Si des éléments `OnError` sont présents, il doit s’agir des derniers éléments de l’élément `Target`.<br /><br /> Pour plus d’informations sur l’attribut `ContinueOnError`, voir [Élément Task (MSBuild)](../msbuild/task-element-msbuild.md).|  
 
 ### <a name="parent-elements"></a>Éléments parents  
 
@@ -120,4 +120,4 @@ Contient un ensemble de tâches que [!INCLUDE[vstecmsbuild](../extensibility/int
 
 ## <a name="see-also"></a>Voir aussi  
  [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md)   
- [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+ [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

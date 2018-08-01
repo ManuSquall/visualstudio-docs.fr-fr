@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e317c51963b930bdd58553f6620c23aae783ba11
-ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
+ms.openlocfilehash: 431fea97c0dcca0407f2b0627e6b2d9def774799
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "35668585"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179438"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Modifier les modèles de charge en modèle d’activités des utilisateurs virtuels
 
@@ -32,20 +32,20 @@ Le modèle de charge est un composant d’un scénario. Les scénarios et leurs 
 
 ### <a name="constant"></a>Constante
 
- Le modèle de charge constant est utilisé pour spécifier une charge utilisateur qui ne change pas pendant le test de charge. Par exemple, lorsque vous effectuez un test de détection de fumée (smoke test) sur une application Web, vous souhaiterez peut-être définir une charge légère et constante de 10 utilisateurs.
+ Le modèle de charge constant est utilisé pour spécifier une charge utilisateur qui ne change pas pendant le test de charge. Par exemple, lorsque vous effectuez un test de détection de fumée (smoke test) sur une application web, vous souhaiterez peut-être définir une charge légère et constante de 10 utilisateurs.
 
 #### <a name="constant-load-pattern-considerations"></a>Considérations sur un modèle de charge constant
 
- Un modèle de charge constant est utilisé pour exécuter la même charge utilisateur pendant l’exécution d’un test de charge. Soyez très prudent lorsque vous utilisez un modèle de charge constant dont le nombre d'utilisateurs est élevé ; vous risquez de solliciter de manière déraisonnable et irréaliste votre serveur ou vos serveurs de test de charge. Par exemple, si votre test de charge contient un test Web qui démarre avec une requête vers une page d'accueil et que vous configurez le test de charge avec une charge constante de 1 000 utilisateurs, le test de charge soumet les 1 000 premières requêtes à la page d'accueil aussi rapidement que possible. La simulation d'accès réel à votre site Web peut paraître peu réaliste. Pour minimiser ce problème, pensez à utiliser un modèle de charge par étape qui passe progressivement à 1 000 utilisateurs ou spécifiez une période de préparation dans les paramètres d’exécution des tests de charge. Si une période de préparation est spécifiée, le test de charge augmentera automatiquement la charge de manière progressive pendant la période de préparation. Pour plus d’informations, consultez [Configuration des délais de démarrage des scénarios](../test/configure-scenario-start-delays.md).
+ Un modèle de charge constant est utilisé pour exécuter la même charge utilisateur pendant l’exécution d’un test de charge. Soyez très prudent lorsque vous utilisez un modèle de charge constant dont le nombre d’utilisateurs est élevé ; vous risquez de solliciter de manière déraisonnable et irréaliste votre serveur ou vos serveurs de test de charge. Par exemple, si votre test de charge contient un test web qui démarre avec une requête vers une page d'accueil et que vous configurez le test de charge avec une charge constante de 1 000 utilisateurs, le test de charge soumet les 1 000 premières requêtes à la page d'accueil aussi rapidement que possible. La simulation d’accès réel à votre site web peut paraître peu réaliste. Pour minimiser ce problème, pensez à utiliser un modèle de charge par étape qui passe progressivement à 1 000 utilisateurs ou spécifiez une période de préparation dans les paramètres d’exécution des tests de charge. Si une période de préparation est spécifiée, le test de charge augmentera automatiquement la charge de manière progressive pendant la période de préparation. Pour plus d’informations, consultez [Configurer les délais de démarrage des scénarios](../test/configure-scenario-start-delays.md).
 
 ### <a name="step"></a>Étape
 
  Le modèle de charge par étape est utilisé pour spécifier une charge utilisateur qui augmente avec le temps jusqu’à une charge utilisateur maximale définie. Pour les charges par étape, vous spécifiez le **Nombre initial d’utilisateurs**, le **Nombre maximal d’utilisateurs**, la **Durée de l’étape (secondes)** et le **Nombre d’utilisateurs dans l’étape**.
 
- Par exemple, une charge par étape avec un compte **Nombre initial d’utilisateurs** de 1, un **Nombre maximal d’utilisateurs** de 100, une **Durée de l’étape (secondes)** de 10 et un **Nombre d’utilisateurs dans l’étape** de 1 crée un modèle de charge utilisateur qui commence à 1, augmente de 1 toutes les 10 secondes jusqu’à atteindre 100 utilisateurs.
+ Par exemple, une charge par étape avec un **Compte Nombre initial d’utilisateurs** de 1, un **Nombre maximal d’utilisateurs** de 100, une **Durée de l’étape (secondes)** de 10 et un **Nombre d’utilisateurs dans l’étape** de 1 crée un modèle de charge utilisateur qui commence à 1, augmente de 1 toutes les 10 secondes jusqu’à atteindre 100 utilisateurs.
 
 > [!NOTE]
-> Si la durée de test totale est plus courte que la durée nécessaire pour atteindre la charge utilisateur maximale, le test s'arrête après la durée écoulée et n'atteint pas la cible Nombre maximal d'utilisateurs.
+> Si la durée de test totale est plus courte que la durée nécessaire pour atteindre la charge utilisateur maximale, le test s'arrête après la durée écoulée et n'atteint pas la cible **Nombre maximal d'utilisateurs**.
 
 
  Vous pouvez utiliser l'objectif d'étape pour augmenter la charge jusqu'à ce que le serveur atteigne un point auquel les performances diminuent considérablement. À mesure que la charge augmente, le serveur finit par manquer de ressources. La charge d'étape est une bonne méthode pour déterminer le nombre d'utilisateurs auquel cela se produit. Avec la charge par étape, vous devez également surveiller attentivement les ressources des agents, afin de vous assurer que ces derniers sont capables de générer la charge souhaitée.
@@ -54,19 +54,19 @@ Le modèle de charge est un composant d’un scénario. Les scénarios et leurs 
 
 #### <a name="step-load-pattern-considerations"></a>Considérations sur le modèle de charge par étape
 
- Un modèle de charge dans l'étape peut être utilisé pour augmenter la charge sur le ou les serveurs au cours de l'exécution du test de charge. Il permet d'apprécier l'évolution des performances au fur et à mesure que la charge utilisateur augmente. Par exemple, pour voir les performances de votre serveur ou de vos serveurs lorsque la charge utilisateur passe à 2 000 utilisateurs, vous pouvez exécuter un test de charge de 10 heures à l'aide d'un modèle de charge par étape dont les propriétés sont les suivantes :
+ Un modèle de charge dans l’étape peut être utilisé pour augmenter la charge sur le ou les serveurs au cours de l’exécution du test de charge. Il permet d’apprécier l’évolution des performances au fur et à mesure que la charge utilisateur augmente. Par exemple, pour voir les performances de votre serveur ou de vos serveurs lorsque la charge utilisateur passe à 2 000 utilisateurs, vous pouvez exécuter un test de charge de 10 heures à l’aide d’un modèle de charge par étape dont les propriétés sont les suivantes :
 
--   Nombre initial d'utilisateurs : 100
+-   **Nombre initial d'utilisateurs** : 100
 
--   Nombre maximal d'utilisateurs : 2 000
+-   **Nombre maximal d'utilisateurs** : 2 000
 
--   Durée de l'étape (secondes) : 1 800
+-   **Durée de l'étape (secondes)**  : 1 800
 
--   Durée de démarrage de l'étape (secondes) : 20
+-   **Durée de démarrage de l'étape (secondes)**  : 20
 
--   Nombre d'utilisateurs dans l'étape : 100
+-   **Nombre d’utilisateurs par étape** : 100
 
- Ces paramètres exécutent le test de charge pendant 30 minutes (1 800 secondes) avec des charges utilisateur de 100, 200, 300 et jusqu'à 2 000 utilisateurs. La propriété **Durée de démarrage de l’étape** vaut mention spéciale, parce que c’est l’une des seules propriétés qui n’est pas disponible pour la sélection dans l’Assistant Nouveau test de charge. Cette propriété autorise le passage progressif à l'étape suivante (par exemple de 100 à 200 utilisateurs), et non immédiat. Dans l'exemple, la charge utilisateur passerait de 100 à 200 utilisateurs sur une période de 20 secondes (soit une augmentation de cinq utilisateurs par seconde). Pour plus d’informations, consultez [Guide pratique pour spécifier la propriété de la durée de démarrage de l’étape d’un modèle de charge par étape](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
+ Ces paramètres exécutent le test de charge pendant 30 minutes (1 800 secondes) avec des charges utilisateur de 100, 200, 300 et jusqu'à 2 000 utilisateurs. La propriété **Durée de démarrage de l’étape** vaut mention spéciale, parce que c’est l’une des seules propriétés qui n’est pas disponible pour la sélection dans l’**Assistant Nouveau test de charge**. Cette propriété autorise le passage progressif à l'étape suivante (par exemple de 100 à 200 utilisateurs), et non immédiat. Dans l'exemple, la charge utilisateur passerait de 100 à 200 utilisateurs sur une période de 20 secondes (soit une augmentation de cinq utilisateurs par seconde). Pour plus d’informations, consultez [Guide pratique pour spécifier la propriété de la durée de démarrage de l’étape d’un modèle de charge par étape](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
 
 ### <a name="goal-based"></a>En fonction des objectifs
 
@@ -110,12 +110,12 @@ Le modèle de charge est un composant d’un scénario. Les scénarios et leurs 
 
 |Tâches|Rubriques associées|
 |-----------|-----------------------|
-|**Spécifier le modèle de charge initiale pour votre test de charge :** Quand vous créez un test de charge à l’aide de l’Assistant Nouveau test de charge, vous sélectionnez un modèle de charge.|-   [Changement du modèle de charge](../test/edit-load-patterns-to-model-virtual-user-activities.md#changing-the-load-pattern)|
-|**Modification du modèle de charge de votre test de charge :** Après avoir créé votre test de charge, vous pouvez modifier le modèle de charge dans l’éditeur de test de charge.|-   [Guide pratique pour spécifier la propriété de la durée de démarrage de l’étape d’un modèle de charge par étape](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
+|**Spécifier le modèle de charge initiale pour votre test de charge :** Quand vous créez un test de charge à l’aide de l’**Assistant Nouveau test de charge**, vous sélectionnez un modèle de charge.|-   [Modifier le modèle de charge](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
+|**Modification du modèle de charge de votre test de charge :** après avoir créé votre test de charge, vous pouvez modifier le modèle de charge dans l’**Éditeur de test de charge**.|-   [Guide pratique pour spécifier la propriété de la durée de démarrage de l’étape d’un modèle de charge par étape](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 |**Spécification si les utilisateurs virtuels dans votre scénario de test de charge doivent inclure les données en cache du site web :** Vous pouvez changer la propriété **Pourcentage de nouveaux utilisateurs** pour définir le mode de simulation par le test de charge de la mise en cache web qui serait exécutée par un navigateur web pour les utilisateurs virtuels.|-   [Guide pratique pour spécifier le pourcentage des utilisateurs virtuels qui utilisent les données du cache web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
 |**Spécification du temps de démarrage de l’étape pour un modèle de charge par étape :** La propriété **Durée de démarrage de l’étape** autorise le passage progressif, et non immédiat, d’une étape à l’autre (par exemple de 100 à 200 utilisateurs).|-   [Guide pratique pour spécifier la propriété de la durée de démarrage de l’étape d’un modèle de charge par étape](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 
-## <a name="changing-the-load-pattern"></a>Modification du modèle de charge
+## <a name="change-the-load-pattern"></a>Modifier le modèle de charge
 
  Après avoir créé votre test de charge avec **l’Assistant Nouveau test de charge**, vous pouvez utiliser **l’éditeur de test de charge** pour changer les propriétés du modèle de charge associé à un scénario en fonction des niveaux qui répondent à vos objectifs de test.
 
@@ -133,18 +133,18 @@ Le modèle de charge est un composant d’un scénario. Les scénarios et leurs 
 
 1.  Ouvrez un test de charge.
 
-2.  Dans **l’éditeur de test de charge**, dans le dossier Scénarios, développez le scénario pour lequel vous souhaitez modifier le modèle de charge, puis choisissez le modèle de charge.
+2.  Dans **l’éditeur de test de charge**, dans le dossier *Scénarios*, développez le scénario pour lequel vous souhaitez modifier le modèle de charge, puis choisissez le modèle de charge.
 
     > [!NOTE]
     > Le libellé du nœud du modèle de charge, tel qu’il s’affiche dans l’arborescence de scénarios de votre test de charge, reflète le profil de charge que vous avez choisi lors de la création du test de charge. Il peut s’agir d’un **profil de charge constante** ou d’un **profil de charge dans l’étape**.
 
-3.  Appuyez sur **F4** pour afficher la fenêtre Propriétés.
+3.  Appuyez sur **F4** pour afficher la fenêtre **Propriétés**.
 
-     Les catégories **Modèle de charge** et **Paramètres** sont affichées dans la fenêtre Propriétés.
+     Les catégories **Modèle de charge** et **Paramètres** sont affichées dans la fenêtre **Propriétés**.
 
 4.  (Facultatif) Changez la propriété **Modèle** dans la catégorie **Modèle de charge**.
 
-     Les choix disponibles pour la propriété **Modèle** sont **Étape**, **Constante** et **En fonction des objectifs**. Pour plus d’informations sur les types de modèles de charge, consultez [Spécification du nombre d’utilisateurs virtuels avec des modèles de charge dans un scénario de test de charge](../test/edit-load-patterns-to-model-virtual-user-activities.md).
+     Les choix disponibles pour la propriété **Modèle** sont **Étape**, **Constante** et **En fonction des objectifs**. Pour plus d’informations sur les types de modèles de charge, consultez [Spécifier le nombre d’utilisateurs virtuels avec des modèles de charge dans un scénario de test de charge](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 5.  (Facultatif) Dans la catégorie **Paramètres**, changez les valeurs.
 
@@ -155,6 +155,6 @@ Le modèle de charge est un composant d’un scénario. Les scénarios et leurs 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Modification des scénarios de test de charge](../test/edit-load-test-scenarios.md)
+- [Modifier les scénarios de test de charge](../test/edit-load-test-scenarios.md)
 - [Guide pratique pour spécifier le pourcentage des utilisateurs virtuels qui utilisent les données du cache web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)
 - [Guide pratique pour spécifier la propriété de la durée de démarrage de l’étape d’un modèle de charge par étape](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)

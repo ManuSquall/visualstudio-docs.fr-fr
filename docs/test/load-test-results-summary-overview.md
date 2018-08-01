@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 41849b5ac9b55ff97735dbbda4df909d54f8a346
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5e86b889f63dd46507de52505eec7f5a2125b04f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751856"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175931"
 ---
 # <a name="load-test-results-summary-overview"></a>Vue d'ensemble du résumé des résultats des tests de charge
 
@@ -93,7 +93,7 @@ La section relative aux résultats des tests contient une liste de tous les test
 
 ## <a name="page-results"></a>Résultats de la page
 
-La section relative aux résultats de la page contient une liste de toutes les pages web du test de charge. L'URL, le scénario, le nom du test, le temps de réponse moyen de la page et le compte sont affichés. Vous pouvez choisir l’URL d’une page pour ouvrir la table **Pages** et obtenir plus de détails sur cette page. Pour plus d’informations, consultez [Guide pratique pour afficher la réponse d’une page web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+La section relative aux résultats de la page contient la liste de toutes les pages web du test de charge. L'URL, le scénario, le nom du test, le temps de réponse moyen de la page et le compte sont affichés. Vous pouvez choisir l’URL d’une page pour ouvrir la table **Pages** et obtenir plus de détails sur cette page. Pour plus d’informations, consultez [Guide pratique pour afficher la réponse d’une page web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 > [!NOTE]
 > Vous pouvez réduire et développer cette section en cliquant sur la flèche située à gauche du titre de la section.

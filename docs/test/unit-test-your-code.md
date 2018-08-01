@@ -1,6 +1,7 @@
 ---
-title: Tests unitaires dans Visual Studio | Microsoft Docs
+title: Tests unitaires dans Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f8b2ec475a4c9d8cf5799c6f429519704329c2cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bc69869e8f1cd60bad1f30f6ee9c37ca5d2821bd
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179214"
 ---
 # <a name="unit-test-your-code"></a>Tests unitaires de votre code
 
@@ -55,8 +57,8 @@ Utilisez les rubriques suivantes pour mieux comprendre et créer les tests unita
 ## <a name="api-reference-documentation"></a>Documentation de référence des API
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting> décrit l’espace de noms UnitTesting, qui fournit des attributs, des exceptions, des assertions et d’autres classes qui prennent en charge les tests unitaires.
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> décrit l’espace de noms UnitTesting.Web, qui étend l’espace de noms UnitTesting en fournissant la prise en charge des tests unitaires pour ASP.NET et les services web.
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> décrit l’espace de noms UnitTesting.Web, qui étend l’espace de noms UnitTesting en assurant la prise en charge des tests unitaires pour ASP.NET et les services web.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Améliorer la qualité du code](/visualstudio/test/improve-code-quality)
+- [Améliorer la qualité du code](../test/improve-code-quality.md)

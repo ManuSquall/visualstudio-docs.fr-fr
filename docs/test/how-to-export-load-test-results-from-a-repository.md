@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3da70b7c8c476125478fef2497f084ba4a638a03
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 080bdfd79ee1fce4015fc2db9a695cb55c417165
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969627"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178768"
 ---
 # <a name="how-to-export-load-test-results-from-a-repository"></a>Comment : exporter les résultats des tests de charge à partir d'un référentiel
 
@@ -28,7 +28,7 @@ Vous pouvez gérer les résultats des tests de charge à partir de l’éditeur 
 
 ## <a name="to-export-results-from-a-repository"></a>Pour exporter les résultats à partir d'un référentiel
 
-1.  Depuis un projet de test de performances de site Web et de charge, ouvrez un test de charge.
+1.  Depuis un projet de test de performances web et de charge, ouvrez un test de charge.
 
 2.  Dans la barre d’outils incorporée, choisissez **Ouvrir et gérer des résultats**.
 

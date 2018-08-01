@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 302dc958892fb79e93ed87d515c1a5b1ac3c5aab
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 761f814d3a224240c27fa6b058fb08325f0307f4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425213"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177865"
 ---
 # <a name="get-started-with-unit-testing"></a>Bien démarrer avec les tests unitaires
 
@@ -56,7 +56,7 @@ Vous pouvez également créer des stubs de méthodes de tests unitaires avec la 
 
 ## <a name="run-unit-tests"></a>Exécuter des tests unitaires
 
-1. Ouvrez l’Explorateur de tests.
+1. Ouvrez **l’Explorateur de tests**.
 
    ![Dans le menu Test, ouvrir Explorateur de tests](media/rununittest1.png)
 
@@ -64,7 +64,7 @@ Vous pouvez également créer des stubs de méthodes de tests unitaires avec la 
 
    ![Exécuter des tests unitaires dans l'Explorateur de tests](media/rununittest2.png)
 
-   Dans l’Explorateur de tests, vous pouvez voir les tests unitaires qui ont abouti ou échoué.
+   Dans **l’Explorateur de tests** apparaissent les tests unitaires qui ont abouti ou échoué.
 
    ![Examiner les résultats des tests unitaires dans l’Explorateur de tests](media/rununittest3.png)
 
@@ -91,19 +91,19 @@ Pour plus d’informations, consultez [Live Unit Testing](../test/live-unit-test
 
 ## <a name="generate-unit-tests-with-intellitest"></a>Générer des tests unitaires avec IntelliTest
 
-Lorsque vous exécutez IntelliTest, vous pouvez facilement détecter les tests qui échouent et ajouter le code nécessaire pour les corriger. Vous pouvez sélectionner les tests générés à enregistrer dans un projet de test pour fournir une suite de régression. À mesure que vous modifiez votre code, relancez IntelliTest pour synchroniser les tests générés avec les changements de code. Pour savoir comment procéder, consultez [Génération de tests unitaires pour votre code avec IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).
+Lorsque vous exécutez IntelliTest, vous pouvez facilement détecter les tests qui échouent et ajouter le code nécessaire pour les corriger. Vous pouvez sélectionner les tests générés à enregistrer dans un projet de test pour fournir une suite de régression. À mesure que vous modifiez votre code, relancez IntelliTest pour synchroniser les tests générés avec les changements de code. Pour savoir comment procéder, voir [Générer des tests unitaires de code avec IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).
 
 ![Génération de tests unitaires avec IntelliTest](media/intellitest.png)
 
 ## <a name="run-unit-tests-with-test-explorer"></a>Exécuter des tests unitaires avec l'Explorateur de tests
 
-Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de Visual Studio ou de projets de tests unitaires tiers, regrouper des tests en catégories, filtrer la liste de tests et créer, enregistrer et exécuter des sélections de tests. Vous pouvez également déboguer des tests et analyser les performances des tests et la couverture du code. Pour savoir comment procéder, consultez [Exécuter des tests unitaires avec l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md).
+Utilisez **l’Explorateur de tests** pour exécuter des tests unitaires sur des projets de tests unitaires Visual Studio ou tiers, regrouper des tests en catégories, filtrer la liste de tests et créer, enregistrer et exécuter des sélections de tests. Vous pouvez également déboguer des tests et analyser les performances des tests et la couverture du code. Pour savoir comment procéder, consultez [Exécuter des tests unitaires avec l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md).
 
 ![Exécution de tests unitaires avec l’Explorateur de tests](media/testexplorer.png)
 
 ## <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Utiliser la couverture du code pour déterminer la quantité de code testé
 
-Pour déterminer la proportion de code de votre projet qui sera réellement testée par des tests codés, par exemple des tests unitaires, recourez à la fonctionnalité de couverture du code de Visual Studio. Pour apporter une protection efficace contre les bogues, les tests doivent s'effectuer ou « couvrir » une proportion importante de votre code. Pour savoir comment procéder, consultez [Utiliser la couverture du code pour déterminer la quantité de code testé](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
+Pour déterminer la proportion de code de votre projet qui sera réellement testée par des tests codés, par exemple des tests unitaires, recourez à la fonctionnalité de couverture du code de Visual Studio. Pour apporter une protection efficace contre les bogues, les tests doivent s'effectuer ou « couvrir » une proportion importante de votre code. Pour savoir comment procéder, voir [Utiliser la couverture du code pour déterminer la quantité de code testé](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
 ![Utilisation de la couverture du code pour déterminer la quantité de code testé](media/codecoverage.png)
 
@@ -125,7 +125,7 @@ Voici les étapes à suivre pour activer les frameworks de tests tiers :
 
    ![Nommer le projet de bibliothèque de classes et l’ajouter](media/create3rdpartyunittest3.png)
 
-1. Installez le plug-in. Dans l’**Explorateur de solutions**, sélectionnez le projet de bibliothèque de classes, puis choisissez **Gérer les packages NuGet** dans le menu contextuel.
+1. Installez le plug-in. Dans **l’Explorateur de solutions**, sélectionnez le projet de bibliothèque de classes, puis choisissez **Gérer les packages NuGet** dans le menu contextuel.
 
    ![Gérer les packages NuGet pour installer le plug-in](media/create3rdpartyunittest3a.png)
 

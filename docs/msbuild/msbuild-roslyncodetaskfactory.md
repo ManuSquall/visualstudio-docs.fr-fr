@@ -1,5 +1,5 @@
 ---
-title: Tâches inline MSBuild | Microsoft Docs
+title: Tâches inline MSBuild avec RoslynCodeTaskFactory | Microsoft Docs
 ms.custom: ''
 ms.date: 09/21/2017
 ms.technology: msbuild
@@ -12,29 +12,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cdb171d16b6612562ea21608cdeb622f4ef8bb5
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 841a7d7bbf10fc4bba5ed99d7ffacf1b76f3a079
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179045"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204178"
 ---
-# <a name="msbuild-inline-tasks"></a>Tâches inline MSBuild
-Les tâches MSBuild sont généralement créées en compilant une classe qui implémente l’interface <xref:Microsoft.Build.Framework.ITask>. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).  
-  
- À compter du .NET Framework version 4, vous pouvez créer des tâches inline dans le fichier projet. Vous n’êtes pas obligé de créer un assembly distinct pour héberger la tâche. Cela facilite le suivi du code source et le déploiement de la tâche. Le code source est intégré au script.  
-  
+# <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Tâches inline MSBuild avec RoslynCodeTaskFactory
+Comme [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), RoslynCodeTaskFactory utilise les compilateurs Roslyn multiplateformes pour générer des assemblys de tâches en mémoire à utiliser en tant que tâches inline.  Les tâches RoslynCodeTaskFactory ciblent .NET Standard et peuvent fonctionner sur les runtimes .NET Framework et .NET Core, ainsi que sur d’autres plateformes, comme Linux et Mac OS.
 
- Dans MSBuild 15.8, [RoslynCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md) a été ajouté et permet de créer des tâches inline multiplateformes .NET Standard.  Si vous avez besoin d’utiliser des tâches inline sur .NET Core, vous devez recourir à RoslynCodeTaskFactory.
-## <a name="the-structure-of-an-inline-task"></a>Structure d’une tâche inline  
- Une tâche inline est contenue dans un élément [UsingTask](../msbuild/usingtask-element-msbuild.md). La tâche inline et l’élément `UsingTask` qui la contient sont généralement inclus dans un fichier *.targets* et importés dans d’autres fichiers projet selon les besoins. Voici une tâche inline de base. Notez qu’elle n’a aucun effet.  
+>[!NOTE]
+>RoslynCodeTaskFactory est disponible uniquement dans MSBuild 15.8 et les versions ultérieures.
+  
+## <a name="the-structure-of-an-inline-task-with-roslyncodetaskfactory"></a>Structure d’une tâche inline avec RoslynCodeTaskFactory
+ Les tâches inline RoslynCodeTaskFactory sont déclarées de manière identique à [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), à ceci près qu’elles ciblent .NET Standard.  La tâche inline et l’élément `UsingTask` qui la contient sont généralement inclus dans un fichier *.targets* et importés dans d’autres fichiers projet selon les besoins. Voici une tâche inline de base. Notez qu’elle n’a aucun effet.  
   
 ```xml  
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <!-- This simple inline task does nothing. -->  
   <UsingTask  
     TaskName="DoNothing"  
-    TaskFactory="CodeTaskFactory"  
+    TaskFactory="RoslynCodeTaskFactory"  
     AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll" >  
     <ParameterGroup />  
     <Task>  
@@ -71,11 +70,11 @@ Les éléments `Reference` et `Using` sont indépendants du langage. Les tâches
 >  Les éléments contenus dans l’élément `Task` sont propres à la fabrique de tâches, dans le cas présent la fabrique de tâches de code.  
   
 ### <a name="code-element"></a>Élément de code  
- Le dernier élément enfant de l’élément `Task` est l’élément `Code`. L’élément `Code` contient ou identifie le code à compiler dans une tâche. Ce que vous placez dans l’élément `Code` dépend de la façon dont vous souhaitez écrire la tâche.  
-  
- L’attribut `Language` spécifie le langage dans lequel votre code est écrit. Les valeurs acceptables sont `cs` pour C# et `vb` pour Visual Basic.  
-  
- L’attribut `Type` spécifie le type de code qui se trouve dans l’élément `Code`.  
+Le dernier élément enfant de l’élément `Task` est l’élément `Code`. L’élément `Code` contient ou identifie le code à compiler dans une tâche. Ce que vous placez dans l’élément `Code` dépend de la façon dont vous souhaitez écrire la tâche.  
+
+L’attribut `Language` spécifie le langage dans lequel votre code est écrit. Les valeurs acceptables sont `cs` pour C# et `vb` pour Visual Basic.  
+
+L’attribut `Type` spécifie le type de code qui se trouve dans l’élément `Code`.  
   
 -   Si la valeur de `Type` est `Class`, l’élément `Code` contient du code pour une classe qui dérive de l’interface <xref:Microsoft.Build.Framework.ITask>.  
   
@@ -84,21 +83,21 @@ Les éléments `Reference` et `Using` sont indépendants du langage. Les tâches
 -   Si la valeur de `Type` est `Fragment`, le code définit le contenu de la méthode `Execute`, mais pas la signature ou l’instruction `return`.  
 
 Le code proprement dit apparaît généralement entre un marqueur `<![CDATA[` et un marqueur `]]>`. Comme le code se trouve dans une section CDATA, vous n’avez pas à vous soucier de l’échappement des caractères réservés, tels que « \< » ou « > ».  
-  
+
 Vous pouvez également utiliser l’attribut `Source` de l’élément `Code` pour spécifier l’emplacement d’un fichier qui contient le code de votre tâche. Le code dans le fichier source doit être du type spécifié par l’attribut `Type`. Si l’attribut `Source` est présent, la valeur par défaut de `Type` est `Class`. Si `Source` est absent, la valeur par défaut est `Fragment`.  
-  
+
 > [!NOTE]
 >  Quand vous définissez la classe de la tâche dans le fichier source, le nom de classe doit correspondre à l’attribut `TaskName` de l’élément [UsingTask](../msbuild/usingtask-element-msbuild.md) correspondant.  
   
-## <a name="helloworld"></a>HelloWorld  
- Voici une tâche inline plus robuste. La tâche HelloWorld affiche « Hello, world! » sur l’appareil de journalisation des erreurs par défaut, qui est généralement la console système ou la fenêtre **Sortie** de Visual Studio. L’élément `Reference` dans l’exemple est fourni uniquement à titre d’illustration.  
+## <a name="hello-world"></a>Hello World  
+ Voici une tâche inline plus robuste avec RoslynCodeTaskFactory. La tâche HelloWorld affiche « Hello, world! » sur l’appareil de journalisation des erreurs par défaut, qui est généralement la console système ou la fenêtre **Sortie** de Visual Studio. L’élément `Reference` dans l’exemple est fourni uniquement à titre d’illustration.  
   
 ```xml  
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <!-- This simple inline task displays "Hello, world!" -->  
   <UsingTask  
     TaskName="HelloWorld"  
-    TaskFactory="CodeTaskFactory"  
+    TaskFactory="RoslynCodeTaskFactory"  
     AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll" >  
     <ParameterGroup />  
     <Task>  
@@ -115,9 +114,9 @@ Log.LogError("Hello, world!");
   </UsingTask>  
 </Project>  
 ```  
-  
- Vous pouvez enregistrer la tâche HelloWorld dans un fichier nommé *HelloWorld.targets*, puis l’appeler à partir d’un projet en procédant comme suit.  
-  
+
+Vous pouvez enregistrer la tâche HelloWorld dans un fichier nommé *HelloWorld.targets*, puis l’appeler à partir d’un projet en procédant comme suit.  
+
 ```xml  
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <Import Project="HelloWorld.targets" />  
@@ -135,27 +134,27 @@ Log.LogError("Hello, world!");
     <Text />  
 </ParameterGroup>  
 ```  
-  
- Les paramètres peuvent avoir un ou plusieurs de ces attributs :  
-  
+
+Les paramètres peuvent avoir un ou plusieurs de ces attributs :  
+
 -   `Required` est un attribut facultatif qui est `false` par défaut. Si cet attribut est `true`, le paramètre est obligatoire et vous devez lui affecter une valeur avant d’appeler la tâche.  
   
 -   `ParameterType` est un attribut facultatif qui est `System.String` par défaut. Vous pouvez lui affecter n’importe quel type qualifié complet qui est un élément ou une valeur pouvant être converti vers et à partir d’une chaîne à l’aide de System.Convert.ChangeType. (En d’autres termes, tout type qui peut être passé à et depuis une tâche externe.)  
   
 -   `Output` est un attribut facultatif qui est `false` par défaut. Si cet attribut est `true`, vous devez affecter une valeur au paramètre avant le retour de la méthode Execute.  
-  
+
 Par exemple :  
-  
+
 ```xml  
 <ParameterGroup>  
     <Expression Required="true" />  
-      <Files ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />  
+    <Files ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />  
     <Tally ParameterType="System.Int32" Output="true" />  
 </ParameterGroup>  
 ```  
-  
+
 définit ces trois paramètres :  
-  
+
 -   `Expression` est un paramètre d’entrée obligatoire de type System.String.  
   
 -   `Files` est un paramètre d’entrée de liste d’éléments obligatoire.  
@@ -165,33 +164,97 @@ définit ces trois paramètres :
 Si l’élément `Code` a un attribut `Type` égal à `Fragment` ou `Method`, des propriétés sont créées automatiquement pour chaque paramètre. Dans le cas contraire, les propriétés doivent être déclarées explicitement dans le code source de la tâche, et elles doivent correspondre exactement à leurs définitions de paramètres.  
   
 ## <a name="example"></a>Exemple  
- La tâche inline suivante remplace chaque occurrence d’un jeton dans le fichier spécifié par la valeur donnée.  
+ La tâche inline suivante consigne des messages et retourne une chaîne.  
   
 ```xml  
 <Project xmlns='http://schemas.microsoft.com/developer/msbuild/2003' ToolsVersion="15.0">  
   
-  <UsingTask TaskName="TokenReplace" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">  
-    <ParameterGroup>  
-      <Path ParameterType="System.String" Required="true" />  
-      <Token ParameterType="System.String" Required="true" />  
-      <Replacement ParameterType="System.String" Required="true" />  
-    </ParameterGroup>  
-    <Task>  
-      <Code Type="Fragment" Language="cs"><![CDATA[  
-string content = File.ReadAllText(Path);  
-content = content.Replace(Token, Replacement);  
-File.WriteAllText(Path, content);  
+    <UsingTask TaskName="MySample"
+               TaskFactory="RoslynCodeTaskFactory"
+               AssemblyFile="$(MSBuildBinPath)\Microsoft.Build.Tasks.Core.dll">
+        <ParameterGroup>
+            <Parameter1 ParameterType="System.String" Required="true" />
+            <Parameter2 ParameterType="System.String" />
+            <Parameter3 ParameterType="System.String" Output="true" />
+        </ParameterGroup>
+        <Task>
+            <Using Namespace="System" />
+            <Code Type="Fragment" Language="C#">
+              <![CDATA[
+              Log.LogMessage(MessageImportance.High, "Hello from an inline task created by Roslyn!");
+              Log.LogMessageFromText($"Parameter1: '{Parameter1}'", MessageImportance.High);
+              Log.LogMessageFromText($"Parameter2: '{Parameter2}'", MessageImportance.High);
+              Parameter3 = "A value from the Roslyn CodeTaskFactory";
+            ]]>
+            </Code>
+        </Task>
+    </UsingTask>
   
-]]></Code>  
-    </Task>  
-  </UsingTask>  
-  
-  <Target Name='Demo' >  
-    <TokenReplace Path="C:\Project\Target.config" Token="$MyToken$" Replacement="MyValue"/>  
-  </Target>  
+    <Target Name="Demo">  
+      <MySample Parameter1="A value for parameter 1" Parameter2="A value for parameter 2">
+          <Output TaskParameter="Parameter3" PropertyName="NewProperty" />
+      </MySample>
+
+      <Message Text="NewProperty: '$(NewProperty)'" />
+    </Target>  
 </Project>  
 ```  
+
+Ces tâches inline peuvent combiner des chemins et obtenir le nom de fichier.  
+
+```xml  
+<Project xmlns='http://schemas.microsoft.com/developer/msbuild/2003' ToolsVersion="15.0">  
   
+    <UsingTask TaskName="PathCombine"
+               TaskFactory="RoslynCodeTaskFactory"
+               AssemblyFile="$(MSBuildBinPath)\Microsoft.Build.Tasks.Core.dll">
+        <ParameterGroup>
+            <Paths ParameterType="System.String[]" Required="true" />
+            <Combined ParameterType="System.String" Output="true" />
+        </ParameterGroup>
+        <Task>
+            <Using Namespace="System" />
+            <Code Type="Fragment" Language="C#">
+            <![CDATA[
+            Combined = Path.Combine(Paths);
+            ]]>
+            </Code>
+        </Task>
+    </UsingTask>
+
+    <UsingTask TaskName="PathGetFileName"
+             TaskFactory="RoslynCodeTaskFactory"
+             AssemblyFile="$(MSBuildBinPath)\Microsoft.Build.Tasks.Core.dll">
+        <ParameterGroup>
+            <Path ParameterType="System.String" Required="true" />
+            <FileName ParameterType="System.String" Output="true" />
+        </ParameterGroup>
+        <Task>
+            <Using Namespace="System" />
+            <Code Type="Fragment" Language="C#">
+            <![CDATA[
+            FileName = System.IO.Path.GetFileName(Path);
+            ]]>
+            </Code>
+        </Task>
+    </UsingTask>
+  
+    <Target Name="Demo">  
+        <PathCombine Paths="$(Temp);MyFolder;$([System.Guid]::NewGuid()).txt">
+            <Output TaskParameter="Combined" PropertyName="MyCombinedPaths" />
+        </PathCombine>
+
+        <Message Text="Combined Paths: '$(MyCombinedPaths)'" />
+
+        <PathGetFileName Path="$(MyCombinedPaths)">
+            <Output TaskParameter="FileName" PropertyName="MyFileName" />
+        </PathGetFileName>
+
+        <Message Text="File name: '$(MyFileName)'" />
+    </Target>  
+</Project>  
+```  
+
 ## <a name="see-also"></a>Voir aussi  
  [Tâches](../msbuild/msbuild-tasks.md)   
  [Procédure pas à pas : Créer une tâche inline](../msbuild/walkthrough-creating-an-inline-task.md)

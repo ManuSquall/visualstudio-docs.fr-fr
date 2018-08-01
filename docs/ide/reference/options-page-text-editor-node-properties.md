@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f8a1c38dfac5e403d7060031d70c6c6c558eff9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8acd51675aaca979a1dce0edddb9d7d937422d49
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951646"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177810"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Page Options, Éditeur de texte, propriétés de nœud
 Ce document décrit certaines pages (ou collections de propriétés) associées à la catégorie **Éditeur de texte**, `DTE.Properties("TextEditor", <Property Page>)`, de la boîte de dialogue **Options**. Le titre de chaque sous-section correspond à l'appel utilisé pour accéder à la collection `Properties`, et le tableau figurant dans chaque sous-section répertorie les propriétés présentes dans la collection.
@@ -55,7 +55,7 @@ Ce document décrit certaines pages (ou collections de propriétés) associées 
 |VirtualSpace|Get/Set (booléen)|Détermine si des espaces blancs sont affichés en tant que graphiques. Une valeur `true` provoque l'affectation à l'élément de propriété `WordWrap` (dans cette liste) d'une valeur `false`.|
 |WordWrap|Get/Set (booléen)|Détermine si l'affichage insère un retour de ligne pour les lignes longues à la limite des mots. Une valeur `true` provoque l'affectation à l'élément de propriété `VirtualSpace` (dans cette liste) d'une valeur `false`.|
 |WordWrapGlyphs|Get/Set (booléen)|Affiche un glyphe à la fin d'une ligne ; cela indique qu'elle se poursuit à la ligne suivante.|
-|EnableLeftClickForURLs|Get/Set (booléen)|Détermine si l'éditeur souligne les URL et permet d'accéder à l'URL en cliquant une fois sur le bouton gauche dans le navigateur Web inscrit du système.|
+|EnableLeftClickForURLs|Get/Set (booléen)|Détermine si l'éditeur souligne les URL et permet d'accéder à l'URL en cliquant une fois sur le bouton gauche dans le navigateur web inscrit du système.|
 |IndentStyle|Get/Set (<xref:EnvDTE.vsIndentStyle>)|Détermine le style de mise en retrait : Par défaut, Smart ou aucun.|
 |TabSize|Get/Set (Long)|Représente le nombre d'espaces auquel équivaut une tabulation. Échec s'il ne s'agit pas d'un entier compris entre 1 et 60.|
 |InsertTabs|Get/Set (booléen)|En cas de valeur `True`, des caractères de tabulation sont utilisés pour le retrait.|

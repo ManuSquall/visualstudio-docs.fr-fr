@@ -9,25 +9,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4349220f650eef98ee765c1e7dbacb69263fe845
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7838b9b04aa8d95fa9476cf9720815ccb5bed122
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976713"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176695"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Démarrage rapide : Créer un projet de test de charge
 
-Dans ce démarrage rapide de 10 minutes, vous découvrez comment créer et exécuter un projet de test de performances web et de test de charge dans Visual Studio. Les tests de charge exécutent des tests de performances web ou des tests unitaires pour simuler l’accès simultané de plusieurs utilisateurs à un serveur.
+Dans ce guide de démarrage rapide de 10 minutes, vous découvrirez comment créer et exécuter un projet de test de performances web et de charge dans Visual Studio. Les tests de charge exécutent des tests de performances web ou des tests unitaires pour simuler l’accès simultané de plusieurs utilisateurs à un serveur.
 
 > [!IMPORTANT]
 > Les projets de test de performances web et de test de charge sont disponibles seulement dans l’édition Enterprise de Visual Studio 2017.
 
 ## <a name="install-the-load-testing-component"></a>Installer le composant de test de charge
 
-Si le composant Outils de test de performances web et de test de charge n’est pas installé, vous devez l’installer via le programme d’installation de Visual Studio.
+Si le composant des outils de test de performances web et de charge n’est pas installé, utilisez pour cela Visual Studio Installer.
 
-1. Ouvrir le programme d’installation de Visual Studio à partir du menu Démarrer. Vous pouvez également y accéder dans Visual Studio à partir de la boîte de dialogue **Nouveau projet**, ou en choisissant **Outils** > **Obtenir des outils et fonctionnalités...** dans la barre de menus.
+1. Ouvrir le programme d’installation de Visual Studio à partir du menu Démarrer. Vous pouvez également y accéder dans Visual Studio à partir de la boîte de dialogue **Nouveau projet**, ou en choisissant **Outils** > **Obtenir des outils et fonctionnalités** dans la barre de menus.
 
 1. Dans le programme d’installation de Visual Studio, choisissez l’onglet **Composants individuels** et faites défiler jusqu’à la section **Débogage et test**. Sélectionnez **Outils de test de performances web et de test de charge**.
 
@@ -35,13 +35,13 @@ Si le composant Outils de test de performances web et de test de charge n’est 
 
 1. Choisissez le bouton **Modifier**.
 
-   Le composant Outils de test de performances web et de test de charge est installé.
+   Le composant des outils de test de performances web et de charge est installé.
 
 ## <a name="create-a-load-test-project"></a>Créer un projet de test de charge
 
 Dans cette section, nous créons un projet de test de charge C#. Vous pouvez également créer un projet de test de charge Visual Basic si vous préférez.
 
-1. Ouvrez Visual Studio et choisissez **Fichier** > **Nouveau** > **Projet...** dans la barre de menus.
+1. Ouvrez Visual Studio et choisissez **Fichier** > **Nouveau** > **Projet** dans la barre de menus.
 
    La boîte de dialogue **Nouveau projet** s'affiche.
 
@@ -55,7 +55,7 @@ Dans cette section, nous créons un projet de test de charge C#. Vous pouvez ég
 
 ## <a name="add-a-load-test-to-the-project"></a>Ajouter un test de charge au projet
 
-1. Dans le menu contextuel du nœud du projet dans **l’Explorateur de solutions**, choisissez **Ajouter** > **Test de charge...**.
+1. Dans le menu contextuel du nœud du projet dans **l’Explorateur de solutions**, choisissez **Ajouter** > **Test de charge**.
 
    **L’Assistant Nouveau test de charge** s’ouvre.
 

@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: douge
-ms.openlocfilehash: 3dc06a19abdde00d4572e5c58895dc9b406ae6ba
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d50d16d23c2f12ac5ac9feaaa37ee3797802c97e
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34582594"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177520"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>Personnaliser l’imbrication de fichiers dans l’Explorateur de solutions
 
@@ -116,7 +116,7 @@ Ce fournisseur vous permet de définir des règles d’imbrication de fichiers b
 
 ![Règles de l’exemple fileToFile](media/filenesting_filetofile.png) ![Effet de l’exemple fileToFile](media/filenesting_filetofile_effect.png)
 
-* *bower.json* est imbriqué sous *.bowerrc* en raison de la règle **fileToFile**
+* *.bowerrc* est imbriqué sous *bower.json* en raison de la règle **fileToFile**.
 
 ### <a name="rule-order"></a>Ordre des règles
 

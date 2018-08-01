@@ -15,15 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4beed25b1cdbc9f298df32743b9fec2e59fcdd8b
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 018d94f2952b8169890377410ff00baf1a80fd41
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704874"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176383"
 ---
 # <a name="showwebbrowser-command"></a>Afficher le navigateur Web, commande
-Affiche l’URL que vous spécifiez dans une fenêtre de navigateur web au sein de l’environnement de développement intégré (IDE) ou externe à l’IDE.
+
+Affiche l’URL spécifiée dans une fenêtre de navigateur web au sein ou en dehors de l’environnement de développement intégré (IDE).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -43,13 +44,13 @@ View.ShowWebBrowser URL [/new][/ext]
 
  /ext
 
- Facultative. Spécifie que la page s’affiche dans le navigateur web par défaut en dehors de l’IDE.
+ Facultative. Spécifie que la page s’affiche dans le navigateur web par défaut en dehors de l’environnement IDE.
 
 ## <a name="remarks"></a>Notes
  L’alias de la commande **ShowWebBrowser** est **navigate** ou **nav**.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant affiche la page d’accueil de MSDN Online dans un navigateur web en dehors de l’IDE. Si une instance du navigateur web est déjà ouverte, elle est utilisée ; sinon, une nouvelle instance est démarrée.
+ L’exemple suivant affiche la page d’accueil de MSDN Online dans un navigateur web en dehors de l’environnement IDE. S’il y a déjà une instance du navigateur web ouverte, elle est utilisée ; sinon, une nouvelle instance est démarrée.
 
 ```cmd
 >View.ShowWebBrowser http://msdn.microsoft.com /ext

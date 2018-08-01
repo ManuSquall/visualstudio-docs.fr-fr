@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: efaeed873630113382630421258338e6624e14ee
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 73f771d71d6475ac9835ec21b36b44ce3cd131ad
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578544"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179942"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly, tâche
 La tâche <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> génère un assembly si au moins une page [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] dans un projet fait référence à un type déclaré localement dans ce projet. L’assembly généré est supprimé une fois le processus de génération terminé, ou en cas d’échec du processus de génération.  
@@ -34,13 +34,13 @@ La tâche <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> g
   
 |Paramètre|Description|  
 |---------------|-----------------|  
-|`AssemblyName`|Paramètre **String** obligatoire.<br /><br /> Spécifie le nom court de l’assembly généré pour un projet. Il s’agit aussi du nom de l’assembly cible généré temporairement. Par exemple, si un projet génère un exécutable [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] dont le nom est **WinExeAssembly.exe**, le paramètre **AssemblyName** a la valeur **WinExeAssembly**.|  
+|`AssemblyName`|Paramètre **String** obligatoire.<br /><br /> Spécifie le nom court de l’assembly généré pour un projet. Il s’agit aussi du nom de l’assembly cible généré temporairement. Par exemple, si un projet génère un exécutable [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] dont le nom est *WinExeAssembly.exe*, le paramètre **AssemblyName** a la valeur **WinExeAssembly**.|  
 |`CompileTargetName`|Paramètre **String** obligatoire.<br /><br /> Spécifie le nom de la cible [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] utilisée pour générer des assemblys à partir de fichiers de code source. La valeur par défaut de **CompileTargetName** est **CoreCompile**.|  
 |`CompileTypeName`|Paramètre **String** obligatoire.<br /><br /> Spécifie le type de compilation exécutée par la cible spécifiée par le paramètre **CompileTargetName**. Pour la cible **CoreCompile**, cette valeur est **Compile**.|  
 |`CurrentProject`|Paramètre **String** obligatoire.<br /><br /> Spécifie le chemin complet du fichier projet [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] pour le projet qui nécessite un assembly cible temporaire.|  
 |`GeneratedCodeFiles`|Paramètre **ITaskItem[]** facultatif.<br /><br /> Spécifie la liste des fichiers de code managé propres au langage générés par la tâche [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md).|  
 |`IntermediateOutputPath`|Paramètre **String** obligatoire.<br /><br /> Spécifie le répertoire où l’assembly cible temporaire est généré.|  
-|`MSBuildBinPath`|Paramètre **String** obligatoire.<br /><br /> Spécifie l’emplacement de **MSBuild.exe**, qui est obligatoire pour compiler l’assembly cible temporaire.|  
+|`MSBuildBinPath`|Paramètre **String** obligatoire.<br /><br /> Spécifie l’emplacement de *MSBuild.exe*, qui est obligatoire pour compiler l’assembly cible temporaire.|  
 |`ReferencePath`|Paramètre **ITaskItem[]** facultatif.<br /><br /> Spécifie une liste d’assemblys, par chemin et nom de fichier, qui sont référencés par les types qui sont compilés dans l’assembly cible temporaire.|  
 |`ReferencePathTypeName`|Paramètre **String** obligatoire.<br /><br /> Spécifie le paramètre utilisé par le paramètre de cible de compilation (**CompileTargetName**) qui spécifie la liste des références d’assembly (**ReferencePath**). La valeur appropriée est **ReferencePath**.|  
   
@@ -50,7 +50,7 @@ La tâche <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> g
  Au lieu de cela, **MarkupCompilePass1** diffère la conversion des fichiers [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] qui contiennent des références à des types dans le même projet à une deuxième passe de compilation du balisage, qui est exécutée par [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md). Avant l’exécution de **MarkupCompilePass2**, un assembly temporaire est généré. Cet assembly contient les types qui sont utilisés par les fichiers [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] dont la passe de compilation du balisage a été différée. Une référence à l’assembly généré est fournie à **MarkupCompilePass2** quand elle s’exécute, pour permettre la conversion au format binaire des fichiers [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] dont la compilation a été différée.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant génère un assembly temporaire, car `Page1.xaml` contient une référence à un type qui est dans le même projet.  
+ L’exemple suivant génère un assembly temporaire, car *Page1.xaml* contient une référence à un type qui est dans le même projet.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -74,8 +74,8 @@ La tâche <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> g
   
 ## <a name="see-also"></a>Voir aussi  
  [Informations de référence sur MSBuild WPF](../msbuild/wpf-msbuild-reference.md)   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/wpf-msbuild-task-reference.md)   
- [Référence MSBuild](../msbuild/msbuild-reference.md)   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)   
- [Génération d’une application WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)   
+ [Informations de référence sur les tâches](../msbuild/wpf-msbuild-task-reference.md)   
+ [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)   
+ [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)   
+ [Générer une application WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)   
  [Vue d’ensemble des applications du navigateur XAML WPF](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

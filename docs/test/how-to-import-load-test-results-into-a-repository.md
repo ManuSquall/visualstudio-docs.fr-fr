@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2663864f0cf9d23db22f11cccfd7a9c474d6577c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8c149f9febccb8363d5420c447c66bbdb5a5da6e
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972090"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177771"
 ---
 # <a name="how-to-import-load-test-results-into-a-repository"></a>Comment : importer les résultats d'un test de charge dans un référentiel
 
@@ -28,7 +28,7 @@ Lorsque vous exécutez un test de charge, les informations recueillies au cours 
 
 ## <a name="to-import-results-into-a-repository"></a>Pour importer les résultats dans un référentiel
 
-1.  Depuis un projet de test de performances de site Web et de charge, ouvrez un test de charge.
+1.  Depuis un projet de test de performances web et de charge, ouvrez un test de charge.
 
 2.  Dans la barre d’outils incorporée, choisissez **Ouvrir et gérer des résultats**.
 

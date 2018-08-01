@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3be74e81bcd8cebc5f102fbc6f1acb7f58f51f9f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 003bf08b0c9d7858bc5c6c9f8d875f398d9469b3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751531"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179006"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Comment : créer des rapports de performances de test de charge à l'aide de Microsoft Excel
 
@@ -56,7 +56,7 @@ Vous pouvez créer des rapports de test de charge Microsoft Excel basés sur au 
     1.  Une fois un test de charge terminé, dans la page **Résultats du test de charge**, choisissez le bouton **Créer un rapport Excel** dans la barre d’outils.
 
         > [!NOTE]
-        > Si le bouton **Créer un rapport Excel** est désactivé dans la barre d’outils de l’Afficheur des résultats des tests de performances web, vous devrez peut-être exécuter Microsoft Excel une première fois pour l’activer. Quand Visual Studio Enterprise est installé, le complément de test de charge de Visual Studio Enterprise est copié vers votre ordinateur pour Microsoft Excel ; toutefois, Microsoft Excel doit être exécuté pour terminer le processus d’installation du complément.
+        > Si le bouton **Créer un rapport Excel** est désactivé dans la barre d’outils de l’**Afficheur des résultats des tests de performances web**, vous devrez peut-être exécuter Microsoft Excel une première fois pour l’activer. Quand Visual Studio Enterprise est installé, le complément de test de charge de Visual Studio Enterprise est copié vers votre ordinateur pour Microsoft Excel ; toutefois, Microsoft Excel doit être exécuté pour terminer le processus d’installation du complément.
 
      Microsoft Excel s’ouvre avec l’Assistant **Générer un rapport de test de charge**.
 
@@ -100,7 +100,7 @@ Vous pouvez créer des rapports de test de charge Microsoft Excel basés sur au 
     -   **Comparaison d’erreurs** - Compare les types d’erreurs rencontrés entre les deux séries et indique le nombre d’occurrences.
 
     > [!TIP]
-    > Pour optimiser les rapports, plusieurs propriétés sont disponibles dans les tests de charge et tests des performances de site web. La demande de page possède deux propriétés qui sont présentées dans les rapports : Objectif et Nom du rapport. Le temps de réponse de la page est comparé à l'objectif et le nom du rapport est utilisé à la place de l'URL dans les rapports. Dans les Paramètres de série de tests de charge, sous Gérer les ensembles de compteurs, la propriété Étiquettes d’ordinateur est présentée dans le nom des ordinateurs figurant dans les rapports. Cela s'avère très utile pour décrire le rôle d'un ordinateur particulier dans le rapport.
+    > Pour optimiser les rapports, plusieurs propriétés sont disponibles dans les tests de charge et tests des performances web. La demande de page possède deux propriétés qui sont présentées dans les rapports : Objectif et Nom du rapport. Le temps de réponse de la page est comparé à l'objectif et le nom du rapport est utilisé à la place de l'URL dans les rapports. Dans les Paramètres de série de tests de charge, sous Gérer les ensembles de compteurs, la propriété Étiquettes d’ordinateur est présentée dans le nom des ordinateurs figurant dans les rapports. Cela s'avère très utile pour décrire le rôle d'un ordinateur particulier dans le rapport.
 
 ## <a name="to-generate-load-test-trend-reports-using-excel"></a>Pour créer des rapports de tendance de tests de charge à l'aide d'Excel
 
@@ -111,7 +111,7 @@ Vous pouvez créer des rapports de test de charge Microsoft Excel basés sur au 
     1.  Une fois un test de charge terminé, dans la page **Résultats du test de charge**, choisissez le bouton **Créer un rapport Excel** dans la barre d’outils.
 
         > [!NOTE]
-        > Si le bouton **Créer un rapport Excel** est désactivé dans la barre d’outils de l’Afficheur des résultats des tests de performances web, vous devrez peut-être exécuter Microsoft Excel une première fois pour l’activer. Quand Visual Studio Enterprise est installé, le complément de test de charge de Visual Studio Enterprise est copié vers votre ordinateur pour Microsoft Excel ; toutefois, Microsoft Excel doit être exécuté pour terminer le processus d’installation du complément.
+        > Si le bouton **Créer un rapport Excel** est désactivé dans la barre d’outils de l’**Afficheur des résultats des tests de performances web**, vous devrez peut-être exécuter Microsoft Excel une première fois pour l’activer. Quand Visual Studio Enterprise est installé, le complément de test de charge de Visual Studio Enterprise est copié vers votre ordinateur pour Microsoft Excel ; toutefois, Microsoft Excel doit être exécuté pour terminer le processus d’installation du complément.
 
      Microsoft Excel s’ouvre avec l’Assistant **Générer un rapport de test de charge**.
 
@@ -140,7 +140,7 @@ Vous pouvez créer des rapports de test de charge Microsoft Excel basés sur au 
 10. Le rapport est créé avec une table des matières qui propose des liens vers les différents onglets du classeur Excel générés dans le rapport. Les liens reposent sur les compteurs sélectionnés pour le rapport de tendance. Par exemple, si vous avez laissé les compteurs par défaut sélectionnés au cours de l'étape 7, le rapport générera alors des données présentées dans des onglets séparés dans Excel, pour chaque compteur répertorié au cours de l'étape 7. Les données générées pour chaque compteur sont présentées sous forme de graphiques tendanciels.
 
     > [!TIP]
-    > Pour optimiser les rapports, plusieurs propriétés sont disponibles dans les tests de charge et tests des performances de site web. La demande de page possède deux propriétés qui sont présentées dans les rapports : Objectif et Nom du rapport. Le temps de réponse de la page est comparé à l'objectif et le nom du rapport est utilisé à la place de l'URL dans les rapports. Dans les Paramètres de série de tests de charge, sous Gérer les ensembles de compteurs, la propriété Étiquettes d’ordinateur est présentée dans le nom des ordinateurs figurant dans les rapports. Cela s'avère très utile pour décrire le rôle d'un ordinateur particulier dans le rapport.
+    > Pour optimiser les rapports, plusieurs propriétés sont disponibles dans les tests de charge et tests des performances web. La demande de page possède deux propriétés qui sont présentées dans les rapports : Objectif et Nom du rapport. Le temps de réponse de la page est comparé à l'objectif et le nom du rapport est utilisé à la place de l'URL dans les rapports. Dans les Paramètres de série de tests de charge, sous Gérer les ensembles de compteurs, la propriété Étiquettes d’ordinateur est présentée dans le nom des ordinateurs figurant dans les rapports. Cela s'avère très utile pour décrire le rôle d'un ordinateur particulier dans le rapport.
 
 ## <a name="net-framework-security"></a>Sécurité .NET Framework
 

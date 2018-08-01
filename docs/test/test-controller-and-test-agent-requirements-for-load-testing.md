@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6f2a598ba816b12ca7027495e3775d160a7aefd6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 04150d09f1e80060efbd60be776731ec67ae59e9
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974856"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178489"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Spécifications du contrôleur de test et de l’agent de test pour le test de charge
 
@@ -39,7 +39,7 @@ Le tableau suivant affiche la configuration matérielle requise recommandée pou
 |N x 30 ordinateurs dans l'environnement de test. Avec agents et serveurs en cours de test.|Test Controller|N processeurs 2,6 GHz|||
 
 > [!NOTE]
-> Le nombre d'utilisateurs virtuels varie considérablement d'un test à l'autre. Cette variation est due en grande partie au *temps de réflexion* ou délai d’utilisateur. Pour plus d’informations, consultez [Modification des temps de réflexion pour simuler les retards d’interaction humaine avec un site web](../test/edit-think-times-in-load-test-scenarios.md). Dans un test de charge, les tests Web sont généralement plus efficaces et génèrent une plus grande charge que les tests unitaires. Les chiffres du tableau précédent s'appliquent aux tests Web avec un temps de réflexion de 3 à 5 secondes dans une applications web typique.
+> Le nombre d'utilisateurs virtuels varie considérablement d'un test à l'autre. Cette variation est due en grande partie au *temps de réflexion* ou délai d’utilisateur. Pour plus d’informations, consultez [Modification des temps de réflexion pour simuler les retards d’interaction humaine avec un site web](../test/edit-think-times-in-load-test-scenarios.md). Dans un test de charge, les tests web sont généralement plus efficaces et génèrent une plus grande charge que les tests unitaires. Les chiffres du tableau précédent s'appliquent aux tests web avec un temps de réflexion de 3 à 5 secondes dans une applications web typique.
 
 Les indications présentées ici fournissent une aide générale en matière de planification matérielle. Les performances des tests seront très différentes selon la quantité de données des tests et le nombre d’agents de test. Pour les agents de test, la vitesse du processeur et la mémoire disponible limiteront la charge du test. Les contrôleurs de test ont besoin de ressources plus nombreuses en fonction du nombre d’agents de test et du volume de données impliqués dans les tests.
 

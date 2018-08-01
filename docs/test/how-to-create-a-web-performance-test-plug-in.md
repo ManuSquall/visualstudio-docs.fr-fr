@@ -13,27 +13,27 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 57fab4ee4205e9b1aaf7aaa44218134649257598
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 114551c97fb64d17584bb32327c8bbc35eef4739
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974973"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178359"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>Comment : créer un plug-in de test des performances de site Web
 
-Les plug-ins de tests de performances de site web vous permettent d'isoler et de réutiliser du code en dehors des principales instructions déclaratives de votre test de performances de site web. Un plug-in de test de performances de site web personnalisé permet d'appeler du code durant l'exécution du test de performances de site web. Le plug-in de test de performances de site web est exécuté une seule fois pour chaque itération de test. De plus, si vous substituez les méthodes PreRequest ou PostRequest dans le plug-in de test, ces plug-ins de requête s'exécuteront avant ou après chaque requête, respectivement.
+Les plug-ins de tests de performances web vous permettent d'isoler et de réutiliser du code en dehors des principales instructions déclaratives de votre test de performances web. Un plug-in de test de performancesweb personnalisé permet d'appeler du code durant l'exécution du test de performances web. Le plug-in de test de performances web est exécuté une seule fois pour chaque itération de test. De plus, si vous substituez les méthodes PreRequest ou PostRequest dans le plug-in de test, ces plug-ins de requête s'exécuteront avant ou après chaque requête, respectivement.
 
-Vous pouvez créer un plug-in de test de performances de site web personnalisé en dérivant votre propre classe de la classe de base <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
+Vous pouvez créer un plug-in de test de performances web personnalisé en dérivant votre propre classe de la classe de base <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
 
-Vous pouvez utiliser des plug-ins de test de performances de site web personnalisés avec les tests de performances de site web que vous avez enregistrés, ce qui vous permet d'écrire une quantité minimale de code pour obtenir un niveau supérieur de contrôle sur vos tests de performances de site web. Toutefois, vous pouvez également les utiliser avec des tests de performances de site web codés. Pour plus d’informations, consultez [Générer et exécuter un test de performances web codé](../test/generate-and-run-a-coded-web-performance-test.md).
+Vous pouvez utiliser des plug-ins de test de performances web personnalisés avec les tests de performances web que vous avez enregistrés, ce qui vous permet d'écrire une quantité minimale de code pour obtenir un niveau supérieur de contrôle sur vos tests de performances web. Toutefois, vous pouvez également les utiliser avec des tests de performances web codés. Pour plus d’informations, consultez [Générer et exécuter un test de performances web codé](../test/generate-and-run-a-coded-web-performance-test.md).
 
 > [!NOTE]
 > Vous pouvez également créer des plug-ins de test de charge. Consultez [Guide pratique pour créer un plug-in de test de charge](../test/how-to-create-a-load-test-plug-in.md).
 
 ## <a name="to-create-a-custom-web-performance-test-plug-in"></a>Pour créer un plug-in de test de performances de site web
 
-1.  Ouvrez un projet de test de performances de site web et de charge qui contient un test de performances de site web.
+1.  Ouvrez un projet de test de performances web et de charge qui contient un test de performances web.
 
 2.  Dans l’Explorateur de solutions, cliquez avec le bouton droit sur la solution, sélectionnez **Ajouter**, puis choisissez **Nouveau projet**.
 
@@ -89,7 +89,7 @@ Vous pouvez utiliser des plug-ins de test de performances de site web personnali
 
 18. Après avoir écrit le code, générez le nouveau projet.
 
-19. Ouvrez un test de performances de site web.
+19. Ouvrez un test de performances web.
 
 20. Pour ajouter le plug-in de test de performances web, choisissez **Ajouter un plug-in de test Web**dans la barre d’outils.
 
@@ -100,27 +100,27 @@ Vous pouvez utiliser des plug-ins de test de performances de site web personnali
 22. Dans le volet **Propriétés du plug-in sélectionné**, définissez les valeurs initiales du plug-in à utiliser au moment de l’exécution.
 
     > [!NOTE]
-    > Vous pouvez exposer autant de propriétés que vous souhaitez de vos plug-ins ; il suffit de les rendre publics, définissables et d'un type de base, tel qu'un entier, une valeur booléenne ou une chaîne. Vous pouvez également modifier ultérieurement les propriétés du plug-in de test de performances de site web dans la fenêtre Propriétés.
+    > Vous pouvez exposer autant de propriétés que vous souhaitez de vos plug-ins ; il suffit de les rendre publics, définissables et d'un type de base, tel qu'un entier, une valeur booléenne ou une chaîne. Vous pouvez également modifier ultérieurement les propriétés du plug-in de test de performances web dans la fenêtre Propriétés.
 
 23. Cliquez sur **OK**.
 
      Le plug-in est ajouté au dossier **Plug-ins de test web**.
 
     > [!WARNING]
-    > Vous pouvez obtenir une erreur semblable au cas suivant lorsque vous exécutez un test de performances de site web ou un test de charge qui utilise votre plug-in :
+    > Vous pouvez obtenir une erreur semblable au cas suivant lorsque vous exécutez un test de performances web ou un test de charge qui utilise votre plug-in :
     >
     > **Échec de la requête : exception dans le \<plug-in> événement : Impossible de charger le fichier ou l’assembly '\<"Nom du plug-in".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' ou l’une de ses dépendances. Le système ne parvient pas à localiser le fichier spécifié.**
     >
     > Cela se produit si vous effectuez des modifications du code dans l’un de vos plug-ins et si vous créez une autre version de la DLL **(Version=0.0.0.0)**. Toutefois, le plug-in fait toujours référence à la version du plug-in d’origine. Pour résoudre ce problème, procédez comme suit :
     >
-    > 1.  Dans votre projet de test de performances de site web et de charge, un message d'avertissement s'affiche dans les références. Supprimez et rajoutez la référence à la DLL de votre plug-in.
+    > 1.  Dans le projet de test de performances web et de charge, un message d'avertissement s'affiche dans les références. Supprimez et rajoutez la référence à la DLL de votre plug-in.
     > 2.  Supprimez le plug-in de votre test ou de l'emplacement approprié, puis rajoutez-le.
 
 ## <a name="example"></a>Exemple
 
-Le code suivant crée un plug-in de test de performances de site web personnalisé qui ajoute un élément au <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestContext> qui représente l'itération de test.
+Le code suivant crée un plug-in de test de performances web personnalisé qui ajoute un élément au <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestContext> qui représente l'itération de test.
 
-Après l’exécution du test de performances web, à l’aide de ce plug-in, vous pouvez voir l’élément ajouté nommé **TestIteratnionNumber** sous l’onglet **Contexte** de l’Afficheur de résultats de test de performances web.
+Après l’exécution du test de performances web, à l’aide de ce plug-in, vous pouvez voir l’élément ajouté nommé **TestIteratnionNumber** sous l’onglet **Contexte** de l’**Afficheur de résultats de test de performances web**.
 
 ```csharp
 using System;

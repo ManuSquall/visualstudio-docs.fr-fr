@@ -12,18 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ba6a5b666777e692fe2c214f165c0bc1da7fee9d
-ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
+ms.openlocfilehash: 85991c25844cb6e781240a394c38f798251a68b6
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "35668603"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178291"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Comment : afficher le temps de réponse d’une page web dans un test de charge à l’aide de l’analyseur de test de charge
 
-Le temps nécessaire pour charger chaque page web est appelé « *temps de réponse* ». Lorsque vous créez un test de performances de site web, vous pouvez définir un objectif de temps de réponse pour chaque requête de page web de votre test de performances de site web.
+Le temps nécessaire pour charger chaque page web est appelé *temps de réponse*. Lorsque vous créez un test de performances web, vous pouvez définir un objectif de temps de réponse pour chaque requête de page web de votre test de performances web.
 
-Si vous exécutez votre test de performances de site Web sous contrainte dans un test de charge, vous pouvez analyser les informations suivantes pour chaque page :
+Si vous exécutez votre test de performances web sous contrainte dans un test de charge, vous pouvez analyser les informations suivantes pour chaque page :
 
 -   Temps de réponse moyen pour la page.
 
@@ -48,8 +48,8 @@ Si vous exécutez votre test de performances de site Web sous contrainte dans un
     |En-tête de colonne|Description|
     |-|-|
     |**Page**|Nom de la page web.|
-    |**Scénario**|Nom du scénario. Important si votre test de performances de site Web comporte plusieurs scénarios.|
-    |**Test**|Nom du test de performances de site Web. Important si vous possédez plusieurs tests de performances de site Web dans votre test de charge.|
+    |**Scénario**|Nom du scénario. Important si votre test de performances web comporte plusieurs scénarios.|
+    |**Test**|Nom du test de performances web. Important si vous possédez plusieurs tests de performances web dans votre test de charge.|
     |**Network**|Type de réseau.<br /><br /> Par défaut, ces données ne sont pas collectées. Pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud de paramètre d’exécution à changer. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **AllIndividualDetails**.|
     |**Total**|Nombre total de requêtes effectuées pour la page web. Il s'agit du nombre total d'itérations dans le test de charge.|
     |**Moy.**|Temps de réponse moyen de la page.<br /><br /> Par défaut, ces données ne sont pas collectées. Pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud de paramètre d’exécution à changer. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **AllIndividualDetails**.|
@@ -76,7 +76,7 @@ Vous pouvez également consulter les données de temps de réponse dans un graph
 
 2.  Dans la fenêtre **Compteurs**, développez le nœud du scénario qui vous intéresse (par exemple, `Scenario1`).
 
-3.  Développez le nœud du test de performances de site Web qui vous intéresse.
+3.  Développez le nœud du test de performances web qui vous intéresse.
 
 4.  Développez le nœud **Pages**.
 

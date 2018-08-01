@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 329cef79c529850bbe90a62cc24d5ec989379aa9
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 6d063528b67712dd16136bfd3edec29643868517
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33104176"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154843"
 ---
-# <a name="signfile-task"></a>SignFile, tâche
+# <a name="signfile-task"></a>SignFile (tâche)
 
 Signe le fichier spécifié à l'aide du certificat spécifié.
   
@@ -49,7 +49,7 @@ Signe le fichier spécifié à l'aide du certificat spécifié.
   
 ## <a name="remarks"></a>Notes
 
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Task, classe de base](../msbuild/task-base-class.md).
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leur description, voir [Classe de base Task](../msbuild/task-base-class.md).
   
 ## <a name="example"></a>Exemple
 
@@ -73,8 +73,8 @@ Signe le fichier spécifié à l'aide du certificat spécifié.
 ```
 
 > [!NOTE]
-> L'empreinte de certificat correspond au hachage SHA-1 du certificat. Pour plus d’informations, consultez [Obtenir le hachage SHA-1 d’un certificat d’autorité de certification racine de confiance](http://msdn.microsoft.com/en-us/dd641990-9a88-4228-a245-017797131a87).
+> L'empreinte de certificat correspond au hachage SHA-1 du certificat. Pour plus d’informations, voir [Obtenir le hachage SHA-1 d’un certificat d’autorité de certification racine de confiance](http://msdn.microsoft.com/en-us/dd641990-9a88-4228-a245-017797131a87).
   
 ## <a name="see-also"></a>Voir aussi  
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)   
+ [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)   
  [Tâches](../msbuild/msbuild-tasks.md)

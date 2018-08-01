@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cfc5c90e8fbc1a08eddaab2fad3bca1ba16a414
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 75b2a889c00245b983305d56e9eb79d78d0d4966
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924264"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176864"
 ---
 # <a name="visual-studio-commands"></a>Commandes Visual Studio
 Les commandes Visual Studio vous permettent d’appeler une commande depuis la fenêtre **Commande** , depuis la fenêtre **Exécution** ou depuis la zone **Rechercher/Commande** . Dans chaque cas, le signe Supérieur à (`>`) est utilisé pour indiquer qu’une commande doit suivre, et non pas une opération de recherche ou de débogage.
@@ -69,7 +69,7 @@ Les commandes Visual Studio vous permettent d’appeler une commande depuis la f
 |[Définir le thread actuel](../../ide/reference/set-current-thread-command.md)|Vous permet d’afficher un thread spécifique.|
 |[Définir la base](../../ide/reference/set-radix-command.md)|Détermine le nombre d’octets à afficher.|
 |[Shell](../../ide/reference/shell-command.md)|Lance les programmes à partir de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comme si la commande avait été exécutée à partir de l’invite de commandes.|
-|[Afficher le navigateur Web, commande](../../ide/reference/showwebbrowser-command.md)|Affiche l’URL que vous spécifiez dans une fenêtre de navigateur web au sein de l’environnement de développement intégré (IDE) ou externe à l’IDE.|
+|[Afficher le navigateur Web, commande](../../ide/reference/showwebbrowser-command.md)|Affiche l’URL spécifiée dans une fenêtre de navigateur web au sein ou en dehors de l’environnement de développement intégré (IDE).|
 |[Démarrer](../../ide/reference/start-command.md)|Commence le processus de débogage et permet de spécifier comment les erreurs sont gérées.|
 |[Chemin d’accès](../../ide/reference/symbol-path-command.md)|Définit la liste des répertoires où le débogueur recherche des symboles.|
 |[Point d'arrêt](../../ide/reference/toggle-breakpoint-command.md)|Active ou désactive le point d’arrêt, en fonction de son état actuel, à l’emplacement actuel dans le fichier.|

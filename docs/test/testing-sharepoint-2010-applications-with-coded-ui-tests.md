@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2c6ebe43bc4237ac55eea534f12fe4a9876f93de
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: bafbce3a67178e10d71c2935de41c7d18709cf21
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233540"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177507"
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>Tester des applications SharePoint avec des tests codés de l’interface utilisateur
 
@@ -28,7 +28,7 @@ Pour plus d’informations sur avantages de l’utilisation de tests codés de l
 
 ## <a name="create-a-coded-ui-test-for-a-sharepoint-app"></a>Créer un test codé de l’interface utilisateur pour une application SharePoint
 
-La [création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md) pour vos applications SharePoint est identique à la création de tests pour d’autres types d’applications. L’enregistrement et la lecture sont pris en charge pour tous les contrôles sur l’interface de modification web. L'interface de sélection des catégories et des composants WebPart est constituée de contrôles Web standard.
+La [création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md) pour vos applications SharePoint est identique à la création de tests pour d’autres types d’applications. L’enregistrement et la lecture sont pris en charge pour tous les contrôles sur l’interface de **modification web**. L'interface de sélection des catégories et des composants WebPart est constituée de contrôles Web standard.
 
 ![SharePoint, composants WebPart](../test/media/cuit_sharepoint.png)
 

@@ -21,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1b95d6e0e03aa0ed9aeb84a1709c5806c13946c
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 66c245f78c27521e9db53327f8dfdc567ed0e995
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058332"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154137"
 ---
-# <a name="vcmessage-task"></a>VCMessage, tâche
+# <a name="vcmessage-task"></a>VCMessage (tâche)
 Journalise les messages d’avertissement et d’erreur lors de la génération.  
   
 ## <a name="remarks"></a>Notes  
@@ -41,7 +41,7 @@ Journalise les messages d’avertissement et d’erreur lors de la génération.
 |---------------|-----------------|  
 |**Arguments**|Paramètre **String** facultatif.<br /><br /> Liste de messages (séparés par des points-virgules) devant être affichée.|  
 |**Code**|Paramètre **String** obligatoire.<br /><br /> Numéro d’erreur qui qualifie le message.|  
-|**Type**|Paramètre **String** facultatif.<br /><br /> Spécifie le type de message à émettre. Spécifie soit `"Warning"` pour émettre un message d’avertissement, soit `"Error"` pour émettre un message d’erreur.|  
+|**Type**|Paramètre **String** facultatif.<br /><br /> Spécifie le type de message à émettre. Spécifie soit « Warning » pour émettre un message d’avertissement, soit « Error » pour émettre un message d’erreur.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)
+ [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7caabbe6875f6c51b0c84d0bb8f4b5e4e18a10d2
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5cac2a21e15223d720089768db2f92892ec5cd43
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750868"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178532"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Générer des tests unitaires pour votre code avec IntelliTest
 IntelliTest explore votre code .NET pour générer des données de test et une suite de tests unitaires. Pour chaque instruction dans le code, une entrée de test est générée pour exécuter cette instruction. Une analyse de cas est effectuée pour chaque branche conditionnelle dans le code. Par exemple, les instructions `if`, les assertions et toutes les opérations susceptibles de lever des exceptions sont analysées. Cette analyse vous permet de générer des données de test pour établir un test unitaire paramétré pour chacune de vos méthodes et de bénéficier d'une couverture de code élevée.
@@ -48,7 +48,7 @@ Les commandes de menu **Créer IntelliTest** et **Exécuter IntelliTest** :
 
      ![Fenêtre Résultats de l’exploration affichée avec des tests](../test/media/pexexplorationresults.png)
 
-     Pour générer des tests unitaires pour toutes les méthodes publiques d'une classe, cliquez avec le bouton droit sur la classe, et non sur une méthode spécifique. Sélectionnez **Exécuter IntelliTest**. Utilisez la liste déroulante dans la fenêtre Résultats de l'exploration pour afficher les tests unitaires et les données d'entrée pour chaque méthode dans la classe.
+     Pour générer des tests unitaires pour toutes les méthodes publiques d'une classe, cliquez avec le bouton droit sur la classe, et non sur une méthode spécifique. Sélectionnez **Exécuter IntelliTest**. Utilisez la liste déroulante dans la fenêtre **Résultats de l'exploration** pour afficher les tests unitaires et les données d'entrée pour chaque méthode dans la classe.
 
      ![Sélectionner les résultats des tests à afficher dans la liste](../test/media/selectpextest.png)
 
@@ -60,7 +60,7 @@ Les commandes de menu **Créer IntelliTest** et **Exécuter IntelliTest** :
 
      ![Sélectionner des tests, puis cliquer avec le bouton droit et choisir Enregistrer](../test/media/savepextests.png)
 
-     Vous pouvez afficher le projet de test et le test unitaire paramétré qui a été créé. Les tests unitaires individuels correspondant à chacune des lignes sont enregistrés dans le fichier .g.cs dans le projet de test, et un test unitaire paramétré est enregistré dans son fichier .cs correspondant. Vous pouvez exécuter les tests unitaires et afficher les résultats dans l'Explorateur de tests au même titre qu'un autre test unitaire que vous avez créé manuellement.
+     Vous pouvez afficher le projet de test et le test unitaire paramétré qui a été créé. Les tests unitaires individuels correspondant à chacune des lignes sont enregistrés dans le fichier *.g.cs* dans le projet de test, et un test unitaire paramétré est enregistré dans son fichier *.cs* correspondant. Vous pouvez exécuter les tests unitaires et afficher les résultats dans l'Explorateur de tests au même titre qu'un autre test unitaire que vous avez créé manuellement.
 
      ![Ouvrir le fichier de classe dans la méthode de test pour afficher le test unitaire](../test/media/testmethodpex.png)
 
@@ -80,7 +80,7 @@ Les commandes de menu **Créer IntelliTest** et **Exécuter IntelliTest** :
 
      ![Cliquer avec le bouton droit sur l’avertissement et choisir Corriger](../test/media/pexfixwarning.png)
 
-     Ce choix est ajouté au fichier PexAssemblyInfo.cs.
+     Ce choix est ajouté au fichier *PexAssemblyInfo.cs*.
 
      `[assembly: PexUseType(typeof(Camera))]`
 
@@ -92,7 +92,7 @@ Les commandes de menu **Créer IntelliTest** et **Exécuter IntelliTest** :
 
 Spécifiez la relation générale entre les entrées et les sorties que les tests unitaires générés doivent valider. Cette spécification est encapsulée dans une méthode qui ressemble à une méthode de test, mais qui est quantifiée de façon universelle. Il s'agit de la méthode de test unitaire paramétré, et les assertions que vous faites doivent contenir toutes les valeurs d'entrée possibles qu'IntelliTest peut générer.
 
-##  <a name="QandALink"></a> Q et R
+##  <a name="q--a"></a>Questions et réponses
 
 ### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>Q : Pouvez-vous utiliser IntelliTest pour du code non managé ?
 
@@ -152,7 +152,7 @@ Après avoir redémarré Visual Studio et rouvert votre solution, cliquez avec l
 
 ![Sélectionner un autre framework de test unitaire pour IntelliTest](../test/media/pexcreateintellitestextensions.png)
 
-Exécutez ensuite IntelliTest pour générer des tests unitaires individuels dans leurs fichiers g.cs correspondants.
+Exécutez ensuite IntelliTest pour générer des tests unitaires individuels dans leurs fichiers *.g.cs* correspondants.
 
 
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>Q : Puis-je en savoir plus sur la façon dont les tests sont générés ?
