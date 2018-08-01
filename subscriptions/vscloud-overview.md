@@ -9,12 +9,12 @@ description: Louez Visual Studio Professional ou Visual Studio Enterprise sur un
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 73e8b5927d9d02fb8ebb1414a735c67604f750d9
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 99c03b19281ef9e53695b956a34b0682fb042f56
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302829"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380601"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Acheter des abonnements cloud Visual Studio Enterprise et Visual Studio Professional
 
@@ -36,7 +36,7 @@ Vous pouvez acheter des [abonnements Visual Studio Professional et Visual Studio
 
 0.  Sélectionnez l’abonnement Azure à utiliser pour la facturation. Vous pouvez créer un abonnement Azure si vous n’en avez pas.
 
-    <img alt="Select Azure subscription for biling" src="_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Select Azure subscription for billing" src="_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png" style="border: 1px solid #CCCCCC" />
 
 0.  Sélectionnez le nombre d’abonnements à acheter.
 

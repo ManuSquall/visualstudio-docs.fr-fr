@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7203a337e69fd83ad97ee50c383f784ec0087d31
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 63ebe0869ec0450604468283f9db1769314a3ce7
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335812"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276349"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Collecter des données de temporisation détaillées pour une application autonome en utilisant la ligne de commande du profileur
 Cette section décrit les procédures et les options de collecte des données de performances détaillées d’un composant client (autonome) utilisant la méthode d’instrumentation à partir de la ligne de commande.  
@@ -27,8 +27,8 @@ Cette section décrit les procédures et les options de collecte des données de
   
 |Tâche|Contenu connexe|  
 |----------|---------------------|  
-|**Profiler une application .NET Framework à l’aide de l’instrumentation**|-   [Guide pratique pour instrumenter un composant .NET et collecter des données de minutage détaillées](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
-|**Profiler une application C/C++ à l’aide de l’instrumentation**|-   [Guide pratique pour instrumenter un composant natif et collecter des données de minutage détaillées](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
+|**Profiler une application .NET Framework à l’aide de l’instrumentation**|-   [Guide pratique pour instrumenter un composant .NET et collecter des données de minutage détaillées](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)|  
+|**Profiler une application C/C++ à l’aide de l’instrumentation**|-   [Guide pratique pour instrumenter un composant natif et collecter des données de minutage détaillées](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)|  
 |**Ajouter des interactions de couche**|-   [Collecter les données d’interaction de couche](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Tâches connexes
