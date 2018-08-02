@@ -1,7 +1,7 @@
 ---
 title: Paramètres et préparation du débogueur | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 412109d3beeda00dfd6f32e5644388523d067289
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 48cc5bfdf53f6a3d6e214b73b46c0fa46267787e
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151572"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468297"
 ---
 # <a name="debugger-settings-and-preparation"></a>Paramètres et préparation du débogueur
 Cette section décrit les paramètres de propriété du débogueur et la préparation nécessaire pour déboguer votre programme à l’aide du débogueur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Si vous créez un programme dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] à l’aide des modèles de projet, ces paramètres sont définis correctement sans votre intervention dans la configuration Debug.  
@@ -50,9 +50,6 @@ Cette section décrit les paramètres de propriété du débogueur et la prépar
   
  [Déboguer des applications 64 bits](../debugger/debug-64-bit-applications.md)  
  Explique comment déboguer des applications 64 bits.  
-  
- [Débogage et processus d’hébergement](../debugger/debugging-and-the-hosting-process.md)  
- Décrit les différents aspects du processus d’hébergement.  
   
  [Guide pratique pour spécifier une version du .NET Framework pour le débogage](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
  Explique comment définir une clé de Registre pour indiquer au débogueur la version à utiliser.  

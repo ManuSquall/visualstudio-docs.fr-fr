@@ -2,7 +2,7 @@
 title: Apprenez à déboguer les applications multithread
 description: Débogage en utilisant les fenêtres Espion parallèle et les piles parallèles dans Visual Studio
 ms.custom: H1HackMay2017
-ms.date: 06/02/2017
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a037ef99a7e1ea56f6535b99b533c1c723fd2d81
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 11cb05ea81f086cf8c26e3058850968a909b84e3
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204217"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468681"
 ---
 # <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Commencer le débogage d’applications multithread dans Visual Studio
 Visual Studio fournit plusieurs outils et les éléments d’interface utilisateur pour vous aider à déboguer les applications multithread. Ce didacticiel montre comment utiliser des marqueurs de thread, le **piles parallèles** fenêtre, le **espion parallèle** fenêtre, points d’arrêt conditionnels et les points d’arrêt de filtre. Ce didacticiel vous prendra que quelques minutes, mais comment la compléter vous familiarisera avec les fonctionnalités de débogage d’applications multithread.
@@ -47,9 +47,9 @@ Pour commencer ce didacticiel, vous avez besoin d’un projet d’application mu
   
      La boîte de dialogue **Nouveau projet** s’affiche.  
   
-2.  Dans le **Type de projet**s, cliquez sur le langage de votre choix : **Visual C#**, **Visual C++**, ou **Visual Basic**.  
+2.  Cliquez sur le langage de votre choix : **Visual C#**, **Visual C++**, ou **Visual Basic**.  
   
-3.  Dans le **modèles** , sélectionnez **application Console**.  
+3.  Sous **Windows Desktop**, choisissez **application Console**.  
   
 4.  Dans le **nom** zone, entrez le nom MyThreadWalkthroughApp.  
   

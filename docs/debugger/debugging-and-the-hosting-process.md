@@ -1,7 +1,7 @@
 ---
 title: Débogage et processus d’hébergement | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -18,15 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74f584eb9217e46215405aa0786e5fa10e6034a9
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 59ef28f5724c12fd9897adbaa9125bafe26beb60
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37088900"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468258"
 ---
 # <a name="debugging-and-the-hosting-process"></a>Débogage et processus d'hébergement
 Le processus d'hébergement Visual Studio améliore la performance de débogueur et active de nouvelles fonctions de débogage, telles que le débogage de confiance partielle et l'évaluation d'une expression au moment du design. Vous pouvez désactiver le processus d’hébergement, le cas échéant. Les sections suivantes décrivent certaines des différences entre le débogage avec et sans le processus d’hébergement.
+
+> [!NOTE]
+> Dans Visual Studio 2017, l’option au débogage en utilisant le processus d’hébergement n’est plus nécessaire et a été supprimée. Pour plus d’informations, consultez [débogage : Visual Studio 2017 vise à vitesse de votre moins favori travail](https://vslive.com/Blogs/News-and-Tips/2017/02/Debugging-Visual-Studio-2017-aims-to-speed-up-your-least-favorite-job.aspx).
 
 ## <a name="partial-trust-debugging-and-click-once-security"></a>Débogage de confiance partielle et sécurité ClickOnce
  Le débogage de confiance partielle requiert le processus d'hébergement. Si vous désactivez le processus d’hébergement, le débogage de confiance partielle ne fonctionnera pas, même si la sécurité de confiance partielle est activée dans la page **Sécurité** de **Propriétés du projet**. Pour plus d’informations, consultez [Comment : déboguer une Application de confiance partielle](../debugger/how-to-debug-a-partial-trust-application.md).
