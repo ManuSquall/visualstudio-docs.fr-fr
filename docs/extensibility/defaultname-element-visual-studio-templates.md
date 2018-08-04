@@ -1,5 +1,5 @@
 ---
-title: DefaultName, élément (modèles Visual Studio) | Documents Microsoft
+title: DefaultName, élément (modèles Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e67d8970859906e839abf89e85e38c24c2d88066
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 03513b786c17e5bef3d8fa1fff79c1c3e73fe6a0
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126856"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500317"
 ---
-# <a name="defaultname-element-visual-studio-templates"></a>DefaultName, élément (modèles Visual Studio)
+# <a name="defaultname-element-visual-studio-templates"></a>DefaultName, élément (modèles Visual Studio)
 Spécifie le nom que le système de projet Visual Studio génère pour le projet ou l’élément lors de sa création.  
   
  \<VSTemplate >  
@@ -64,7 +64,7 @@ Spécifie le nom que le système de projet Visual Studio génère pour le projet
   
  Lorsque vous créez un projet ou un élément, vous pouvez modifier le nom par défaut à l’aide la **nom** option, qui est disponible à partir du **nouveau projet** boîte de dialogue ou **ajouter un nouvel élément** boîte de dialogue.  
   
- Si vous ne souhaitez pas que le système de projet pour générer le nom par défaut pour le projet ou l’élément, puis définissez le [ProvideDefaultName la valeur](../extensibility/providedefaultname-element-visual-studio-templates.md) élément `False`.  
+ Si vous ne souhaitez pas le système de projet pour générer le nom par défaut pour le projet ou l’élément, puis définissez le [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) élément à `False`.  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant illustre les métadonnées pour le modèle d’élément standard pour une [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] classe.  
@@ -86,5 +86,5 @@ Spécifie le nom que le système de projet Visual Studio génère pour le projet
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
+ [Référence de schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Création de modèles de projets et d’éléments](../ide/creating-project-and-item-templates.md)

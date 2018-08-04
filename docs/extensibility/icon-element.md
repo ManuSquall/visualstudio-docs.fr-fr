@@ -1,5 +1,5 @@
 ---
-title: Icône élément | Documents Microsoft
+title: Élément Icon | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f15dcfec5c89c6bf2b2ae68ea29e18890dc9187e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2494e75c312385a1a0c86709eb417d4b124a97de
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126871"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497691"
 ---
-# <a name="icon-element"></a>Icon, élément
-L’attribut guid de la balise de l’icône est le guid d’une image bitmap défini.  L’attribut id sélectionne l’emplacement de la bande d’image bitmap. Cet élément est facultatif.  Si cet élément est omis la valeur de **guidOfficeIcon:msotcidNoIcon** sera être déduit.  
+# <a name="icon-element"></a>Élément Icon
+L’attribut guid de la balise de l’icône est le guid d’une image bitmap définis. Le `id` attribut sélectionne l’emplacement de la bande de bitmaps. Cet élément est facultatif. Si cet élément n’est pas inclus la valeur de **guidOfficeIcon:msotcidNoIcon** est implicite.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
 <Icon guid="guidImages" id="bmpPic1" />  
 ```  
   
@@ -37,8 +37,8 @@ L’attribut guid de la balise de l’icône est le guid d’une image bitmap d�
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|GUID|Obligatoire. Le guid d’une image bitmap défini.|  
-|ID|Obligatoire. Sélectionne l’emplacement de la bande d’image bitmap.|  
+|GUID|Obligatoire. Le guid d’une image bitmap définis.|  
+|ID|Obligatoire. Sélectionne l’emplacement de la bande de bitmaps.|  
   
 ### <a name="child-elements"></a>Éléments enfants  
   
@@ -53,4 +53,4 @@ L’attribut guid de la balise de l’icône est le guid d’une image bitmap d�
 |[Élément Buttons](../extensibility/buttons-element.md)||  
   
 ## <a name="see-also"></a>Voir aussi  
- [Fichiers Visual Studio Command Table (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio fichiers command table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

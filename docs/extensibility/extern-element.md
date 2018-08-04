@@ -1,5 +1,5 @@
 ---
-title: Extern élément | Documents Microsoft
+title: Élément extern | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,24 +16,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea14d985265d02c3e60ee12c8b46deafba2bcd72
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 353d7e59d7f9d0cbc6aa93d4118a4cb8ff6ee197
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127690"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497704"
 ---
-# <a name="extern-element"></a>Élément de extern
-L’élément Extern fait référence à des fichiers externes en-tête (.h) à fusionner avec le fichier .vsct au moment de la compilation. Les fichiers devant être fusionnées doivent être sur le chemin d’accès Include donnée au compilateur VSCT ou référencé par une [l’élément Include](../extensibility/include-element.md). Les fichiers peuvent être des autres fichiers .vsct ou les fichiers d’en-tête C++.  
+# <a name="extern-element"></a>Élément extern
+L’élément Extern fait référence à n’importe quel en-tête externe (*.h*) fichiers à fusionner avec le *.vsct* fichier au moment de la compilation. Les fichiers devant être fusionnées doivent être sur le chemin d’accès Include donnée au compilateur VSCT ou référencé par une [élément Include](../extensibility/include-element.md). Les fichiers peuvent être des autres *.vsct* fichiers ou des fichiers d’en-tête C++.  
   
- Définitions des fichiers d’en-tête doivent être sous la forme « #define [symbole] [valeur] » la valeur peut être un autre symbole si elle est définie précédemment. Les définitions peuvent servir dans les instructions conditionnelles des éléments de la commande. N’importe quel symbole ne sont pas utilisé est ignorée.  
+ Définitions de fichiers d’en-tête doivent être sous la forme « #define [symbole] [valeur] » la valeur peut être un autre symbole s’il est défini précédemment. Les définitions sont utilisables dans des instructions conditionnelles d’éléments de la commande. N’importe quel symbole ne sont pas utilisé est ignorée.  
   
- Élément de CommandTable  
-Élément de extern  
+ Élément CommandTable  
+Élément Extern  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
 <Extern href="stdidcmd.h" />  
 ```  
   
@@ -44,7 +44,7 @@ L’élément Extern fait référence à des fichiers externes en-tête (.h) à 
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|href|Obligatoire. Le chemin d’accès au fichier d’en-tête :<br /><br /> href="stdidcmd.h »|  
+|href|Obligatoire. Le chemin d’accès du fichier d’en-tête :<br /><br /> href="stdidcmd.h »|  
 |Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
 |language|Facultatif. La langue par défaut de tous les [ \<chaînes >](../extensibility/strings-element.md) éléments dans la table de commande :<br /><br /> Language = « en-us »|  
   
@@ -58,11 +58,11 @@ L’élément Extern fait référence à des fichiers externes en-tête (.h) à 
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent des commandes, autrement dit, les éléments de menu, menus, barres d’outils et zones de liste déroulante, par un VSPackage à l’IDE.|  
+|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent des commandes, autrement dit, les éléments de menu, les menus, les barres d’outils et les zones de liste déroulante, qu’un VSPackage fournit à l’IDE.|  
   
 ## <a name="example"></a>Exemple  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-  
   18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">  
@@ -73,6 +73,6 @@ L’élément Extern fait référence à des fichiers externes en-tête (.h) à 
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Tableau de commandes de Visual Studio (. Fichiers VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [Comment les VSPackages ajouter les éléments d’Interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Visual Studio fichiers command table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
+ [Comment VSPackages ajoute des éléments d’interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)

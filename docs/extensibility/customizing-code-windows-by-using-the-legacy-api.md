@@ -1,5 +1,5 @@
 ---
-title: Personnalisation des fenêtres de Code à l’aide de l’API héritée | Documents Microsoft
+title: Personnalisation de Code Windows à l’aide de l’API héritée | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,39 +13,39 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8284985003415ef3e723fe735e64481c3666180a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 454d58a48abafe9b23f8a812e5d40b9fc6477b50
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109962"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499352"
 ---
-# <a name="customizing-code-windows-by-using-the-legacy-api"></a>Personnalisation des fenêtres de Code à l’aide de l’API héritée
-Une fenêtre de code est un objet de fenêtre de document qui prend en charge une ou plusieurs vues de texte. Les mêmes fonctionnalités d’une fenêtre de code dépendent du service de langage associé. En mode de l’interface multidocument (MDI), la fenêtre de code est l’enfant MDI.  
+# <a name="customize-code-windows-by-using-the-legacy-api"></a>Personnaliser les fenêtres de code à l’aide de l’API héritée
+Une fenêtre de code est un objet de fenêtre de document qui prend en charge une ou plusieurs vues de texte. Les fonctionnalités exactes d’une fenêtre de code varient selon le service de langage associé. En mode d’interface multidocument (MDI), la fenêtre de code est le frame enfant MDI.  
   
- Fenêtres de code sont contrôlées par les services de langage, et chaque service de langage peut fournir son propre gestionnaire de fenêtre de code. Ainsi, le service de langage ajouter ses propres motifs dans la fenêtre de code, tels que les tildes, la colorisation et bien plus encore. Pour plus d’informations sur la création d’une fenêtre principale, consultez [instanciation le cœur éditeur à l’aide de l’API héritée](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md).  
+ Fenêtres de code sont contrôlées par les services de langage, et chaque service de langage peut fournir son propre gestionnaire de fenêtre de code. Ainsi, le service de langage ajouter ses propres ornements à la fenêtre de code, tels que des tildes, la colorisation et bien plus encore. Pour plus d’informations sur la création d’une fenêtre principale, consultez [instancier l’éditeur principal à l’aide de l’API héritée](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md).  
   
- Une fenêtre de code est un <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objet qui a un affichage de texte et les ornements dans le site de l’objet. Lorsque vous créez la fenêtre de code pendant votre l’instanciation du noyau éditeur, votre service de langage peut attacher un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> à la fenêtre de code, comme est indiqué dans l’illustration suivante.  
+ Une fenêtre de code est un <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objet qui a un affichage de texte et tous les ornements doit se trouver dans l’objet. Lorsque vous créez la fenêtre de code pendant votre instanciation des principales éditeur, votre service de langage peut attacher un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> à la fenêtre de code, comme est indiqué dans l’illustration suivante.  
   
- ![Graphique CodeWindow](../extensibility/media/vscodewindow.gif "vscodewindow")  
+ ![Graphique de CodeWindow](../extensibility/media/vscodewindow.gif "vscodewindow")  
 Fenêtre Code  
   
- Le service de langage implémente le Gestionnaire de fenêtre de code et est responsable de la gestion des ornements, comme une barre de menu déroulant. La fenêtre de code appelle la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> méthode lors de l’initialisation de fenêtre de code. Lorsque cet appel est effectué, le service de langage peut ajouter une barre de menu déroulant ou une barre de boutons (<xref:Microsoft.VisualStudio.TextManager.Interop.IVsButtonBarClient>) dans la fenêtre de code.  
+ Le service de langage implémente le Gestionnaire de fenêtres de code et est chargé de gérer des ornements, tels que d’une barre déroulante. La fenêtre de code appelle la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> méthode pendant l’initialisation de fenêtre de code. Lorsque cet appel est effectué, le service de langage peut ajouter une barre déroulante ou une barre de boutons (<xref:Microsoft.VisualStudio.TextManager.Interop.IVsButtonBarClient>) dans la fenêtre de code.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  `Customizing Code Windows by Using the Legacy API`  
- Explique comment personnaliser des fenêtres de code à l’aide de l’API héritée.  
+ Explique comment personnaliser les fenêtres de code à l’aide de l’API héritée.  
   
  [Comment : héberger un éditeur dans un autre éditeur](../extensibility/how-to-host-an-editor-in-another-editor.md)  
  Explique comment héberger un second éditeur à l’intérieur d’une fenêtre d’éditeur.  
   
- [Comment : déclencher des événements lorsque l’éditeur perd le Focus](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
- Explique comment attacher une vue de document à un objet de données du document.  
+ [Comment : déclencher des événements lorsque l’éditeur perd le focus](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
+ Explique comment attacher une vue de document à un objet de données de document.  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
- [L’instanciation de l’éditeur principal à l’aide de l’API héritée](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)   
- [L’accès à theText vue à l’aide de l’API héritée](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)
+ [Instancier l’éditeur principal à l’aide de l’API héritée](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)   
+ [Vue de theText d’accès à l’aide de l’API héritée](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)
