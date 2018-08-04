@@ -1,5 +1,5 @@
 ---
-title: Élément de IDSymbol | Documents Microsoft
+title: Élément IDSymbol | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71979bd4f859257555c9d72ac5521a5ae21b9ed4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8d88acb221abfc26c45c9002abb92f704936334b
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127524"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500379"
 ---
-# <a name="idsymbol-element"></a>Élément de IDSymbol
+# <a name="idsymbol-element"></a>Élément IDSymbol
 Le `IDSymbol` élément contient l’ID de la paire GUID : ID qui représente un menu, un groupe ou une commande. Le GUID est fourni à partir du parent `GuidSymbol` élément. Le `IDSymbol` élément a un `name` attribut qui fournit un nom convivial pour l’ID, qui est contenue dans le `value` attribut.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
 <IDSymbol name=ElementName value="0x0010" />  
 ```  
   
@@ -37,8 +37,8 @@ Le `IDSymbol` élément contient l’ID de la paire GUID : ID qui représente u
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|name|Obligatoire. Nom du symbole ID.|  
-|par défaut|Obligatoire. Valeur d’ID numérique du symbole ID.|  
+|name|Obligatoire. Nom du symbole de code.|  
+|par défaut|Obligatoire. Valeur d’ID numérique du symbole de code.|  
   
 ### <a name="child-elements"></a>Éléments enfants  
  Aucun.  
@@ -50,7 +50,7 @@ Le `IDSymbol` élément contient l’ID de la paire GUID : ID qui représente u
 |[Élément GuidSymbol](../extensibility/guidsymbol-element.md)|Contient le GUID de la paire GUID : ID qui représente un menu, un groupe ou une commande. Groupe les éléments `IDSymbol`.|  
   
 ## <a name="remarks"></a>Notes  
- Chaque `IDSymbol` élément dans une donnée `GuidSymbol` l’élément doit avoir une valeur unique `value`. Toutefois, `IDSymbol` les éléments qui ont des valeurs identiques peuvent exister dans un package tant qu’ils disposent des parents différents.  
+ Chaque `IDSymbol` élément dans une donnée `GuidSymbol` élément doit avoir une valeur unique `value`. Toutefois, `IDSymbol` les éléments qui ont des valeurs identiques peuvent exister dans un package, à condition qu’ils disposent des parents différents.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Fichiers Visual Studio Command Table (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio fichiers command table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

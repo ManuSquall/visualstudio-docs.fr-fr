@@ -1,5 +1,5 @@
 ---
-title: CustomParameter, élément (modèles Visual Studio) | Documents Microsoft
+title: CustomParameter, élément (modèles Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 154586701386f5f8f56c128920e12ca3147deb6b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: de6f5bf513d9d3582ba05bf7a34471d13743f8de
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100567"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500681"
 ---
-# <a name="customparameter-element-visual-studio-templates"></a>CustomParameter, élément (modèles Visual Studio)
+# <a name="customparameter-element-visual-studio-templates"></a>CustomParameter, élément (modèles Visual Studio)
 Contient un nom de paramètre personnalisé et une valeur à utiliser lorsqu’un projet ou un élément est créé à partir du modèle.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -51,10 +51,10 @@ Contient un nom de paramètre personnalisé et une valeur à utiliser lorsqu’u
 |[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|Regroupe les paramètres personnalisés qui doivent être passés à l’Assistant modèle lorsque les remplacements de paramètres.|  
   
 ## <a name="remarks"></a>Notes  
- Lorsqu’un modèle contient `CustomParameter` éléments, chaque instance de la `Name` attribut est remplacé par le `Value` attribut dans les fichiers de projet ou un élément créés.  
+ Lorsqu’un modèle contient `CustomParameter` éléments, chaque instance de la `Name` attribut est remplacé par le `Value` attribut dans les fichiers de projet ou l’élément créés.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre comment utiliser plusieurs paramètres personnalisés dans un modèle. Création d’un projet ou un élément à partir d’un modèle avec les paramètres personnalisés suivants, toutes les instances de `$color1$` et `$color2$` dans le modèle de fichiers seront remplacés par `Red` et `Blue`, respectivement.  
+ L’exemple suivant montre comment utiliser plusieurs paramètres personnalisés dans un modèle. Création d’un projet ou un élément à partir d’un modèle avec les paramètres personnalisés suivants, toutes les instances de `$color1$` et `$color2$` dans le modèle de fichiers seront remplacées par `Red` et `Blue`, respectivement.  
   
 ```  
 <CustomParameters>  
@@ -66,4 +66,4 @@ Contient un nom de paramètre personnalisé et une valeur à utiliser lorsqu’u
 ## <a name="see-also"></a>Voir aussi  
  [CustomParameters, élément (modèles Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md)   
  [Paramètres de modèle](../ide/template-parameters.md)   
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+ [Informations de référence sur les schémas de modèles Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

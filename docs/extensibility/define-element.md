@@ -1,5 +1,5 @@
 ---
-title: Définir l’élément | Documents Microsoft
+title: Définir l’élément | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 336c0b52e50731ff63fb790a1a1b201b0646caea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2596023628086ce5e921eeb8499956828d4c8a5c
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126960"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497159"
 ---
 # <a name="define-element"></a>Définir l’élément
-Définit une paire nom / valeur de symbole. Ce symbole peut être évalué par des attributs conditionnels. Pour plus d’informations, consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md). Voir aussi la [symboles élément](../extensibility/symbols-element.md).  
+Définit une paire nom / valeur de symbole. Ce symbole peut être évalué par attributs conditionnels. Pour plus d’informations, consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md). Voir aussi le [élément Symbols](../extensibility/symbols-element.md).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -48,7 +48,7 @@ Définit une paire nom / valeur de symbole. Ce symbole peut être évalué par d
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent des commandes par un VSPackage à l’environnement de développement intégré (IDE). Par exemple, des éléments de menu, menus, barres d’outils et zones de liste déroulante.|  
+|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent des commandes qu’un VSPackage fournit à l’environnement de développement intégré (IDE). Par exemple, les éléments de menu, menus, barres d’outils et zones de liste déroulante.|  
   
 ## <a name="example"></a>Exemple  
   
@@ -58,4 +58,4 @@ Définit une paire nom / valeur de symbole. Ce symbole peut être évalué par d
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Fichiers Visual Studio Command Table (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio fichiers command table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

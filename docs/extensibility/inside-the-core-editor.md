@@ -1,5 +1,5 @@
 ---
-title: À l’intérieur de l’éditeur principal | Documents Microsoft
+title: À l’intérieur de l’éditeur principal | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95745cbef015e9f6ceddb9b84d75b52ec9805dea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 37c62ebad5b5f119c9acf5b62b14db6743949c19
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130435"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500447"
 ---
-# <a name="inside-the-core-editor"></a>Dans l’éditeur de base
-Le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur principal est un ensemble de plusieurs composants qui vous permettent de modifier et d’interroger les informations textuelles. Si vous avez personnalisé l’éditeur principal à l’aide de l’API héritée, vous pouvez continuer à utiliser ces personnalisations, ce qui seront routées via des cartes de l’éditeur. Il est recommandé, toutefois, que vous adapter les personnalisations de l’API de l’éditeur de nouveau.  
+# <a name="inside-the-core-editor"></a>À l’intérieur de l’éditeur principal
+Le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur principal est un ensemble de plusieurs composants qui vous permettent de modifier et interroger des informations textuelles. Si vous avez personnalisé l’éditeur principal à l’aide de l’API héritée, vous pouvez continuer à utiliser ces personnalisations, qui seront acheminées via les adaptateurs d’éditeur. Il est recommandé, cependant, que vous deviez adapter vos personnalisations vers le nouvel éditeur API.  
   
  Les domaines suivants sont des aspects importants de l’éditeur principal :  
   
@@ -38,44 +38,44 @@ Le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur principal 
 -   Intégration avec les services de langage  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [L’instanciation de l’éditeur principal à l’aide de l’API héritée](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)  
- Fournit des instructions détaillées sur l’utilisation de <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> pour créer une instance de la base de l’éditeur.  
+ [Instancier l’éditeur principal à l’aide de l’API héritée](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)  
+ Fournit des instructions détaillées sur l’utilisation <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> pour créer une instance de la base éditeur.  
   
- [L’accès à la mémoire tampon de texte à l’aide de l’API héritée](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)  
+ [Accéder à la mémoire tampon de texte à l’aide de l’API héritée](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)  
  Décrit le rôle de la mémoire tampon de texte dans l’éditeur principal, explique les systèmes associés qui sont utilisés pour accéder à la mémoire tampon et fournit une liste des interfaces implémentées par l’objet de mémoire tampon de texte, <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>.  
   
- [Événements de mémoire tampon de texte dans l’API hérité](../extensibility/text-buffer-events-in-the-legacy-api.md)  
- Fournit une liste des interfaces qui sont utilisées pour la notification d’événements de mémoire tampon de texte.  
+ [Événements de mémoire tampon de texte dans l’API héritée](../extensibility/text-buffer-events-in-the-legacy-api.md)  
+ Fournit une liste des interfaces qui sont utilisées pour la notification des événements de mémoire tampon de texte.  
   
- [Comment : s’inscrire aux événements de mémoire tampon de texte avec l’API hérité](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
- Décrit comment informer des événements de mémoire tampon de texte.  
+ [Comment : s’inscrire aux événements de mémoire tampon de texte avec l’API héritée](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
+ Décrit comment signaler les événements de mémoire tampon de texte.  
   
- [À l’aide du Gestionnaire de texte pour surveiller des paramètres globaux](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
- Explique comment le Gestionnaire de texte est utilisé pour partager des informations de préférences global avec les principaux composants de l’éditeur et recevoir une notification d’événements du Gestionnaire de texte.  
+ [Utilisez le Gestionnaire de texte pour surveiller les paramètres globaux](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
+ Explique comment le Gestionnaire de texte permet de partager des informations de préférence global avec les principaux composants de l’éditeur et à recevoir des notifications d’événements du Gestionnaire de texte.  
   
- [L’accès à theText vue à l’aide de l’API héritée](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)  
- Décrit le rôle de l’affichage texte dans l’éditeur principal et répertorie les interfaces implémentées par le <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> objet.  
+ [Vue de theText d’accès à l’aide de l’API héritée](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)  
+ Décrit le rôle de la vue de texte dans l’éditeur principal et répertorie les interfaces implémentées par le <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> objet.  
   
- [Personnalisation des fenêtres de Code à l’aide de l’API héritée](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)  
- Fournit des informations sur comment une fenêtre de code est utilisée pour placer l’affichage de texte, explique comment le Gestionnaire de fenêtre de code permet de fournir des ornements à la fenêtre de code et fournit une notification de nouveaux affichages.  
+ [Personnaliser les fenêtres de code à l’aide de l’API héritée](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)  
+ Fournit des informations sur comment une fenêtre de code est utilisée pour encadrer l’affichage de texte, explique comment le Gestionnaire de fenêtres de code sert à fournir des ornements à la fenêtre de code et fournit une notification de nouveaux affichages.  
   
- [Modification des paramètres de la vue à l’aide de l’API héritée](../extensibility/changing-view-settings-by-using-the-legacy-api.md)  
- Fournit des instructions étape par étape comment forcer les paramètres d’affichage et la suppression forcée des paramètres.  
+ [Modifier les paramètres de vue à l’aide de l’API héritée](../extensibility/changing-view-settings-by-using-the-legacy-api.md)  
+ Fournit des instructions détaillées sur comment forcer les paramètres d’affichage et suppression des paramètres forcés.  
   
  [Services de langage et de l’éditeur principal](../extensibility/language-services-and-the-core-editor.md)  
- Décrit l’instanciation d’un service de langage pour les décorations de code de contrôle.  
+ Décrit l’instanciation d’un service de langage pour les ornements de code de contrôle.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
- [Procédure pas à pas : Création d’un éditeur de base et l’inscription d’un Type de fichier de l’éditeur](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
+ [Procédure pas à pas : Créer un éditeur de base et l’inscription d’un type de fichier d’éditeur](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
  Fournit des instructions détaillées sur la façon de démarrer l’éditeur principal à partir du code managé.  
   
  [Barre déroulante](../extensibility/drop-down-bar.md)  
- Explique comment la barre déroulante est utilisée dans la fenêtre de code et décrit les interfaces qui sont utilisées lorsque vous implémentez une barre de menu déroulant.  
+ Explique comment la barre déroulante est utilisée dans la fenêtre de code et décrit les interfaces qui sont utilisées lorsque vous implémentez une barre déroulante.  
   
- [À l’aide de marqueurs de texte avec l’API hérité](../extensibility/using-text-markers-with-the-legacy-api.md)  
- Explique le concept des marqueurs de texte et comment elles sont utilisées dans l’éditeur principal et répertorie les interfaces qui sont utilisées pour accéder et de gérer des marqueurs de texte.  
+ [Utiliser des marqueurs de texte avec l’API héritée](../extensibility/using-text-markers-with-the-legacy-api.md)  
+ Explique le concept des marqueurs de texte et comment elles sont utilisées dans l’éditeur principal et répertorie les interfaces qui sont utilisées pour accéder et gérer des marqueurs de texte.  
   
- [Comment : ajouter des marqueurs de texte Standard](../extensibility/how-to-add-standard-text-markers.md)  
+ [Comment : ajouter des marqueurs de texte standard](../extensibility/how-to-add-standard-text-markers.md)  
  Fournit des instructions détaillées sur la création d’un marqueur de texte et comment ajouter une commande personnalisée à un menu contextuel.  
   
  [Comment : créer des marqueurs de texte personnalisé](../extensibility/how-to-create-custom-text-markers.md)  

@@ -1,5 +1,5 @@
 ---
-title: 'Comment : utiliser la gestion de l’opération d’annulation liée | Documents Microsoft'
+title: 'Comment : utiliser la gestion d’annulation liée | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24e39bd0bde922dbe761bc9de176d43161bb985d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d65873ae68fe7446ddd265a3af17e694bd475465
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127635"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500418"
 ---
-# <a name="how-to-use-linked-undo-management"></a>Comment : utiliser la gestion de l’opération d’annulation liée
-Opération d’annulation liée permet à l’utilisateur à annuler simultanément les mêmes modifications dans plusieurs fichiers. Par exemple, les modifications de texte simultanées dans plusieurs fichiers de programme, par exemple un fichier d’en-tête et un fichier Visual C++, est une transaction d’annulation liée. Capacité de l’opération d’annulation liée est intégrée à la mise en œuvre de l’environnement du Gestionnaire d’annulation, et <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager> vous permet de manipuler cette fonctionnalité. Opération d’annulation liée est implémentée par une unité undo parent que vous pouvez lier les piles d’annulation pour être traité comme une seule unité d’annulation. La procédure d’utilisation d’annulation liée est détaillée dans la section suivante.  
+# <a name="how-to-use-linked-undo-management"></a>Comment : utiliser liée gestion d’annulation
+Annulation liée permet à l’utilisateur d’annuler simultanément les mêmes modifications dans plusieurs fichiers. Par exemple, les modifications de texte simultanées dans plusieurs fichiers de programme, par exemple un fichier d’en-tête et un fichier Visual C++, est une transaction d’annulation liée. Fonctionnalité d’annulation liée est intégrée à l’implémentation de l’environnement du Gestionnaire d’annulation, et <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager> vous permet de manipuler cette fonctionnalité. Annulation liée est implémentée par une unité d’annulation parent capable de relier les piles d’annulation distinct pour être traité comme une seule unité d’annulation. La procédure d’utilisation d’annulation liée est détaillée dans la section suivante.  
   
-### <a name="to-use-linked-undo"></a>Pour utiliser l’opération d’annulation liée  
+## <a name="to-use-linked-undo"></a>Pour utiliser l’annulation liée  
   
 1.  Appelez `QueryService` sur `SVsLinkedUndoManager` pour obtenir un pointeur vers `IVsLinkedUndoTransactionManager`.  
   
-2.  Créer l’unité d’annulation liée initiale parent en appelant <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager.OpenLinkedUndo%2A>. Cela définit le point de départ pour un ensemble de piles d’annulation d’être regroupés en les piles d’annulation liée. Dans la `OpenLinkedUndo` méthode, vous devez également spécifier si vous souhaitez que l’opération d’annulation liée stricte ou non strict. Opération d’annulation liée non strict signifie que certains documents avec frères d’annulation liée peuvent fermer et toujours laisser l’autre liée Annuler frères sur leurs piles. Comportement d’annulation liée stricte Spécifie que toutes les piles d’annulation frères doivent être annulées ensemble ou pas du tout. Ajoutez ensuite lié annule piles en appelant [IOleUndoManager::Add](http://msdn.microsoft.com/library/windows/desktop/ms680135) (méthode).  
+2.  Créer l’unité d’annulation liée parent initiale en appelant <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager.OpenLinkedUndo%2A>. Cela définit le point de départ pour un ensemble de piles d’annulation à être regroupées dans les piles d’annulation liée. Dans la `OpenLinkedUndo` méthode, vous devrez également spécifier si vous souhaitez que l’annulation liée à être strict ou non strict. Opération d’annulation liée non strict signifie que certaines des documents avec les frères d’annulation liée peuvent fermer et toujours laisser l’autre liée Annuler frères sur leurs piles. Comportement d’annulation liée stricte Spécifie que toutes les piles d’annulation frères doivent être annulées ensemble ou pas du tout. Ajouter des piles d’annulations liées suivantes en appelant [IOleUndoManager::Add](http://msdn.microsoft.com/library/windows/desktop/ms680135) (méthode).  
   
 3.  Appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager.CloseLinkedUndo%2A> pour restaurer toutes les unités d’annulation liée en tant qu’une sauvegarde.  
   
     > [!NOTE]
-    >  Pour implémenter la gestion de l’opération d’annulation liée dans un éditeur, ajouter la gestion de l’annulation. Pour plus d’informations sur l’implémentation de la gestion de l’opération d’annulation liée, consultez [Comment : gestion d’annuler implémenter](../extensibility/how-to-implement-undo-management.md).  
+    >  Pour implémenter la gestion d’annulation lié dans un éditeur, ajoutez la gestion d’annulation. Pour plus d’informations sur l’implémentation de la gestion d’annulation liée, consultez [Comment : gestion d’annulation implémenter](../extensibility/how-to-implement-undo-management.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>   
  [IOleParentUndoUnit](http://msdn.microsoft.com/library/windows/desktop/ms682151)   
  [IOleUndoUnit](http://msdn.microsoft.com/library/windows/desktop/ms678476)   
- [Comment : implémenter la gestion de l’annulation](../extensibility/how-to-implement-undo-management.md)
+ [Comment : gestion d’annulation implémenter](../extensibility/how-to-implement-undo-management.md)

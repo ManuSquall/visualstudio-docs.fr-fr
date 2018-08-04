@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9539fdb1a349fe7fc7331e8d3f352506eac9d00b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2e4d3bcd261e36d54aa84b22b32e91b89922d2f2
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081681"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499388"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Ajouter une extension du protocole de serveur de langage
 
@@ -111,26 +111,6 @@ Pour créer une extension de service de langage à l’aide d’un serveur de la
 Créez ensuite un nouveau VSIXProject vide en accédant à **fichier** > **nouveau projet** > **Visual C#**  >   **Extensibilité** > **projet VSIX**:
 
 ![créer le projet vsix](media/lsp-vsix-project.png)
-
-Pour la version préliminaire, prise en charge de Visual Studio pour le partenaire LSP sera sous la forme d’une extension VSIX ([Microsoft.VisualStudio.LanguageServer.Client.Preview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)). Les développeurs d’extensions qui souhaitent créer une extension à l’aide de serveurs de langage LSP doivent prendre une dépendance sur ce VSIX. Par conséquent, les clients qui souhaitent installer une extension de serveur de langage **doit tout d’abord installer la langue serveur protocole Client Preview extension VSIX.**
-
-Pour définir la dépendance VSIX, ouvrez le Concepteur de manifeste VSIX pour votre projet VSIX (en double-cliquant sur le *source.extension.vsixmanifest* fichier dans votre projet) et accédez à **dépendances**:
-
-![Ajouter une référence au client de protocole de serveur de langage](media/lsp-reference-lsp-dependency.png)
-
-Créer une nouvelle dépendance comme suit :
-
-![définir la dépendance de client de protocole de serveur langue](media/lsp-define-lsp-dependency.png)
-
-* **Source**: définis manuellement
-* **Nom**: langage Server protocole Client Preview
-* **Identificateur**: Microsoft.VisualStudio.LanguageServer.Client.Preview
-* **Plage de versions**: [1.0,2.0)
-* **Comment est la dépendance est résolue**: installé par utilisateur
-* **URL de téléchargement**: [https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)
-
-> [!NOTE]
-> Le **URL de téléchargement** doit être renseigné afin que les utilisateurs de l’installation de votre extension sachent comment installer la dépendance requise.
 
 ### <a name="language-server-and-runtime-installation"></a>Installation du serveur et de runtime de langage
 

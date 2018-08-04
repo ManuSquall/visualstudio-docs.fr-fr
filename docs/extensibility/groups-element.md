@@ -1,5 +1,5 @@
 ---
-title: Élément groupes | Documents Microsoft
+title: Élément groupes | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f10983961f5449d75d63555b593350199921fbd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bb437530e121daab218d8506bb41493c0423e826
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126921"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497345"
 ---
 # <a name="groups-element"></a>Élément Groups
 Contient des entrées qui définissent les groupes de commandes d’un VSPackage.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
 <Groups>  
   <Group>... </Group>  
   <Group>... </Group>  
@@ -46,18 +46,18 @@ Contient des entrées qui définissent les groupes de commandes d’un VSPackage
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément Group](../extensibility/group-element.md)|Représente un groupe d’une commande unique.|  
+|[Élément de groupe](../extensibility/group-element.md)|Représente un groupe de commandes unique.|  
 |[Élément Groups](../extensibility/groups-element.md)|Contient des entrées qui définissent les groupes de commandes d’un VSPackage.|  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément Commands](../extensibility/commands-element.md)|Représente la collection de commandes dans la barre d’outils du VSPackage.|  
+|[Élément Commands](../extensibility/commands-element.md)|Représente la collection de commandes sur la barre d’outils de VSPackage.|  
   
 ## <a name="example"></a>Exemple  
   
-```  
+```xml  
 <Groups>  
   <Group guid="cmdSetGuidWidgetCommands" id="groupIDFileEdit">  
     <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_MAINMENU"/>  
@@ -66,5 +66,5 @@ Contient des entrées qui définissent les groupes de commandes d’un VSPackage
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment les VSPackages ajouter les éléments d’Interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Comment VSPackages ajoute des éléments d’interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)

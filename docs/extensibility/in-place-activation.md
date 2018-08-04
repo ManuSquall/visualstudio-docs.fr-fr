@@ -1,5 +1,5 @@
 ---
-title: Activation en Place | Documents Microsoft
+title: Activation en Place | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-sdk
@@ -8,17 +8,17 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], custom - in-place view activation
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
 manager: douge
-ms.openlocfilehash: d20c88dbb93712c7ef2e6342cbb3d9cd0d38a086
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 72e6829533b1b314853b8836b8576d0165a87d03
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131631"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500343"
 ---
-# <a name="in-place-activation"></a>Activation sur Place
+# <a name="in-place-activation"></a>L’activation sur place
 Si votre mode Éditeur héberge ActiveX ou d’autres contrôles actifs, vous devez l’implémenter en tant que contrôle ActiveX ou en tant qu’objet de données de document actif à l’aide du modèle d’activation en place.  
   
-## <a name="support-for-menus-toolbars-and-commands"></a>Prise en charge des menus, des barres d’outils et des commandes  
+## <a name="support-for-menus-toolbars-and-commands"></a>Prise en charge des menus, barres d’outils et commandes  
  Visual Studio permet à votre mode Éditeur d’utiliser les menus et les barres d’outils de l’IDE. Ces extensions sont appelées *composants OLE sur place*. Pour plus d’informations, consultez <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> et <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager>.  
   
  Si vous implémentez un contrôle ActiveX, vous pouvez héberger d’autres objets incorporés. Si vous implémentez un objet de données de document, le frame de fenêtre limite votre capacité à utiliser les contrôles ActiveX.  
@@ -26,7 +26,7 @@ Si votre mode Éditeur héberge ActiveX ou d’autres contrôles actifs, vous de
 > [!NOTE]
 >  Les interfaces <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> et <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView> permettent de séparer les données et les vues. Toutefois, Visual Studio ne prend pas en charge cette fonctionnalité, et ces interfaces sont utilisées uniquement pour représenter l’objet d’affichage de document.  
   
- Les éditeurs qui utilisent le service <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> peuvent fournir l’intégration des menus, des barres d’outils et des commandes en appelant les méthodes de l’interface <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> implémentée par le service <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> . Les éditeurs peuvent également proposer d’autres fonctionnalités Visual Studio, telles que le suivi de sélection et la gestion des annulations. Pour plus d’informations, consultez [créer des éditeurs personnalisés et les concepteurs](../extensibility/creating-custom-editors-and-designers.md).  
+ Les éditeurs qui utilisent le service <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> peuvent fournir l’intégration des menus, des barres d’outils et des commandes en appelant les méthodes de l’interface <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> implémentée par le service <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> . Les éditeurs peuvent également proposer d’autres fonctionnalités Visual Studio, telles que le suivi de sélection et la gestion des annulations. Pour plus d’informations, consultez [créer des concepteurs et éditeurs personnalisés](../extensibility/creating-custom-editors-and-designers.md).  
   
 ## <a name="objects-and-interfaces-used"></a>Objets et interfaces utilisés  
  Les objets qui sont utilisés pour créer l’activation sur place sont affichés dans l’illustration suivante.  
@@ -35,9 +35,9 @@ Si votre mode Éditeur héberge ActiveX ou d’autres contrôles actifs, vous de
 Éditeur d’activation sur place  
   
 > [!NOTE]
->  Parmi les objets de ce dessin, seul l’objet `CYourEditorFactory` est nécessaire pour créer un éditeur standard. Si vous créez un éditeur personnalisé, vous n’avez pas à implémenter <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> , car votre éditeur possède probablement son propre mécanisme privé de persistance. Pour plus d’informations, consultez [créer des éditeurs personnalisés et les concepteurs](../extensibility/creating-custom-editors-and-designers.md).  
+>  Parmi les objets de ce dessin, seul l’objet `CYourEditorFactory` est nécessaire pour créer un éditeur standard. Si vous créez un éditeur personnalisé, vous n’avez pas à implémenter <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> , car votre éditeur possède probablement son propre mécanisme privé de persistance. Pour plus d’informations, consultez [créer des concepteurs et éditeurs personnalisés](../extensibility/creating-custom-editors-and-designers.md).  
   
- Toutes les interfaces qui sont implémentées pour créer un éditeur d’activation en place apparaissent dans l’objet `CYourEditorDocument` unique, mais cette configuration ne prend en charge qu’une seule vue pour vos données de document. Pour plus d’informations sur la prise en charge de plusieurs vues pour vos données de document, consultez [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md).  
+ Toutes les interfaces qui sont implémentées pour créer un éditeur d’activation en place apparaissent dans l’objet `CYourEditorDocument` unique, mais cette configuration ne prend en charge qu’une seule vue pour vos données de document. Pour plus d’informations sur la prise en charge plusieurs vues de vos données de document, consultez [prendre en charge plusieurs vues de document](../extensibility/supporting-multiple-document-views.md).  
   
 |Interface|Type d’objet|Utilisez|  
 |---------------|--------------------|---------|  
