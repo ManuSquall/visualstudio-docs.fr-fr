@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble du modèle Automation | Documents Microsoft
+title: Vue d’ensemble du modèle Automation | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,27 +14,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9369bb6074bb294223051ba7dfa158648fe0cad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f8d6f5844f47e867d7c0442c9bb86e3722b40b27
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134745"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498011"
 ---
 # <a name="automation-model-overview"></a>Vue d’ensemble du modèle Automation
 Le modèle automation se compose d’un ensemble d’objets par rapport à laquelle vous pouvez écrire un complément Visual Studio ou une extension. Un complément est une application qui peut manipuler l’environnement Visual Studio et automatiser les tâches courantes. Une extension Visual Studio peut créer des composants personnalisés de Visual Studio ou ajouter des fonctionnalités de composants standard tels que l’éditeur de texte.  
   
-## <a name="objects-in-the-automation-model"></a>Objets dans le modèle Automation  
- Le modèle automation se compose de groupes associés d’objets qui contrôlent les aspects de l’environnement du common. Voici un diagramme qui affiche l’ensemble complet des objets qui composent le modèle automation.  
+## <a name="objects-in-the-automation-model"></a>Objets dans le modèle automation  
+ Le modèle automation se compose de groupes connexes d’objets qui contrôlent les aspects de l’environnement du common. Le diagramme suivant illustre l’ensemble complet d’objets de Visual Studio qui composent le modèle automation.  
   
- ![Le graphique d’objet Automation Visual Studio](../../extensibility/internals/media/vsvisualstudioautomationobjectchart.gif "vsVisualStudioAutomationObjectChart")  
-Objets automation Visual Studio  
+ ![Le graphique d’objet automation Visual Studio](../../extensibility/internals/media/vsvisualstudioautomationobjectchart.gif "vsVisualStudioAutomationObjectChart")  
   
  Pour plus d’informations, consultez [étendre l’environnement Visual Studio](http://msdn.microsoft.com/Library/4173a963-7ac7-4966-9bb7-e28a9d9f6792).  
   
- L’environnement fournit un modèle pour les différentes zones fonctionnelles. Par exemple, il est un modèle de code pour différents éléments qui peuvent s’avérer dans le code. Il existe un modèle de document pour les différents éléments du document. Une zone, la zone de projet, est particulièrement intéressant pour les fournisseurs de VSPackage. Il est probable que vos nouveaux types de projets qui contribuent au modèle automation de la même façon en tant que [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] et [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] contribuent au modèle automation. Que le processus est décrit dans [qui fournit l’Automation pour les VSPackages](../../extensibility/internals/providing-automation-for-vspackages.md).  
+ L’environnement fournit un modèle pour les différentes zones fonctionnelles. Par exemple, il est un modèle de code pour divers éléments que vous pouvez trouver dans le code. Il existe un modèle de document pour différents éléments de document. Une zone, la zone de projet est un intérêt particulier pour les fournisseurs de VSPackage. Il est probable que vos nouveaux types de projet pour contribuer au modèle automation dans la même façon que [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] et [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] contribuer au modèle automation. Que le processus est décrit dans [fournir l’automatisation pour VSPackages](../../extensibility/internals/providing-automation-for-vspackages.md).  
   
- Emplacements où vous pouvez envisager d’étendre le modèle automation de l’environnement :  
+ Endroits où vous pouvez envisager d’extension du modèle automation de l’environnement :  
   
 -   Projet  
   
@@ -42,9 +41,10 @@ Objets automation Visual Studio
   
 -   Code  
   
--   Générer  
+-   Build  
+
   
- Pour plus d’informations sur l’automatisation, consultez [automatisation et extensibilité pour Visual Studio](http://msdn.microsoft.com/Library/f71a2253-3e68-4e5e-9a18-edbba816caf6). Ce document et les documents fournit des liens pour vous aider à prendre des décisions concernant la manière dont vous devez fournir l’automatisation pour votre VSPackage.  
+Pour plus d’informations sur l’automatisation, consultez [automatisation et extensibilité pour Visual Studio](http://msdn.microsoft.com/Library/f71a2253-3e68-4e5e-9a18-edbba816caf6). Ce document et les documents, il fournit des liens pour vous aider à prendre des décisions concernant la façon dont vous devez fournir l’automation pour votre VSPackage.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Comment : créer un complément](http://msdn.microsoft.com/Library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)
