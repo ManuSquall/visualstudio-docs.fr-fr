@@ -13,18 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 50b9b61f34ba9e78efd8bc40c7d97583ee0c25f7
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 686969c233f50dd1df743590206966183be48da9
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117015"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513196"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Rechercher et sélectionner un type .NET, boîte de dialogue
 
 Dans le **propriétés** fenêtre, les boîtes de dialogue ou les concepteurs, tels que le Concepteur de variables, lorsque vous sélectionnez **rechercher des Types** à partir d’une liste des types de données, est le **Parcourir et sélectionner un Type .NET** boîte de dialogue (appelée dans la forme abrégée « Explorateur de types »). Cette boîte de dialogue vous permet de choisir un type dans une arborescence d’assemblys et de projets.
 
- Elle est employée dans plusieurs scénarios utilisateur, notamment les suivants :
+Elle est employée dans plusieurs scénarios utilisateur, notamment les suivants :
 
 -   lors de la définition du type d'une variable ou d'argument ;
 
@@ -56,21 +56,24 @@ Dans le **propriétés** fenêtre, les boîtes de dialogue ou les concepteurs, t
      Sélectionnez le type que vous souhaitez utiliser pour fermer le type générique dans les zones de liste déroulante, puis cliquez sur **OK**.
 
 ## <a name="types-displayed-in-the-type-browser"></a>Types affichés dans l'Explorateur de types
- Les types affichés dans l'Explorateur de types peuvent varier selon le mode de lancement de l'Explorateur de types. Si l’Explorateur de types a été lancé à partir d’un projet de flux de travail à l’intérieur de **vs2010**, par défaut, tous les types dans les assemblys référencés et les projets référencés sont affichés. Si l’Explorateur de types a été lancé en dehors d’un **vs2010** système (par exemple, comme dans une application de workflow réhébergée ou dans un fichier de flux de travail autonome), de projet par défaut s’affichent les types à partir de tous les assemblys chargés dans l’AppDomain .
 
- Les types dans l'Explorateur de types peuvent être filtrés par développeurs de concepteurs d'activités. Pour une activité donnée, seul un sous-ensemble des types peut s'afficher. Par exemple, dans l'activité <xref:System.Activities.Statements.TryCatch>, seuls les types dérivés de <xref:System.Exception> sont affichés dans l'Explorateur de types.
+Les types affichés dans l'Explorateur de types peuvent varier selon le mode de lancement de l'Explorateur de types. Si l’Explorateur de types a été lancé à partir d’un projet de flux de travail à l’intérieur de **vs2010**, par défaut, tous les types dans les assemblys référencés et les projets référencés sont affichés. Si l’Explorateur de types a été lancé en dehors d’un **vs2010** système (par exemple, comme dans une application de workflow réhébergée ou dans un fichier de flux de travail autonome), de projet par défaut s’affichent les types à partir de tous les assemblys chargés dans l’AppDomain .
+
+Les types dans l'Explorateur de types peuvent être filtrés par développeurs de concepteurs d'activités. Pour une activité donnée, seul un sous-ensemble des types peut s'afficher. Par exemple, dans l'activité <xref:System.Activities.Statements.TryCatch>, seuls les types dérivés de <xref:System.Exception> sont affichés dans l'Explorateur de types.
 
 ## <a name="filtering-search-results-in-the-type-browser"></a>Filtrage des résultats de la recherche dans l'Explorateur de types
- La liste des types dans le **nom de Type** zone obtient plus court à mesure que vous tapez plus de caractères pour rechercher une correspondance. Seuls les types dont le nom complet ou le nom court commence par la chaîne tapée s'affichent dans la liste filtrée.
 
- Exemple :
+La liste des types dans le **nom de Type** zone obtient plus court à mesure que vous tapez plus de caractères pour rechercher une correspondance. Seuls les types fullyqualified dont le nom commence par la chaîne que vous avez tapé ou des types dont le nom court commence par la chaîne que vous avez tapé s’affichent dans la liste filtrée.
+
+Exemple :
 
 1.  Tapant **opération** correspond à <xref:System.OperationCanceledException> mais pas <xref:System.InvalidOperationException>. Pour trouver <xref:System.InvalidOperationException>, commencez par taper System.I ou Invalid.
 
-2.  Tapant **générique** correspond à <xref:System.GenericUriParser> mais pas les types dans le <xref:System.Collections.Generic> espace de noms. Pour rechercher les types dans l'espace de noms <xref:System.Collections.Generic>, tapez le nom complet de l'espace de noms.
+2.  Tapant **générique** correspond à <xref:System.GenericUriParser> mais pas les types dans le <xref:System.Collections.Generic> espace de noms. Pour rechercher les types dans le <xref:System.Collections.Generic> espace de noms, tapez le nom qualifié complet de l’espace de noms.
 
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>Sélectionner un contrat de service à l'aide de la boîte de dialogue de l'Explorateur de types
- Lorsque vous sélectionnez un type de contrat de service, l'Explorateur de types affiche uniquement les types possédant l'attribut <xref:System.ServiceModel.ServiceContractAttribute>.
+
+Lorsque vous sélectionnez un type de contrat de service, l'Explorateur de types affiche uniquement les types possédant l'attribut <xref:System.ServiceModel.ServiceContractAttribute>.
 
 ## <a name="see-also"></a>Voir aussi
 

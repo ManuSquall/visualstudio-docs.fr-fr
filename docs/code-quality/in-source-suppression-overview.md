@@ -1,6 +1,6 @@
 ---
-title: Supprimer les avertissements d’analyse de code dans Visual Studio
-ms.date: 01/29/2018
+title: Supprimer les avertissements d’analyse du code
+ms.date: 08/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -16,18 +16,18 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe91532c3b4e020541f5f96152253f1df673ded
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1e90de7acf13ca28a20a35aa3ad3e70f58780279
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117782"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513044"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Supprimer les avertissements d’analyse du code
 
 Il est souvent utile d’indiquer qu’un avertissement n’est pas applicable. Cela indique aux membres d’équipe que le code a été révisé et que l’avertissement peut être supprimé. Dans source suppression (ISS) utilise le <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut pour supprimer un avertissement. L’attribut peut être placé près le segment de code qui a généré l’avertissement. Vous pouvez ajouter la <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut au fichier source en le tapant dans, ou vous pouvez utiliser le menu contextuel sur un avertissement dans le **liste d’erreurs** ajoute automatiquement.
 
-Le <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut est un attribut conditionnel qui est inclus dans les métadonnées de langage intermédiaire de votre assembly de code managé, uniquement si le symbole de compilation CODE_ANALYSIS est défini au moment de la compilation.
+Le <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut est un attribut conditionnel, qui est inclus dans les métadonnées de langage intermédiaire de votre assembly de code managé, uniquement si le symbole de compilation CODE_ANALYSIS est défini au moment de la compilation.
 
 En C / c++ / CLI, utilisez les macros autorité de certification\_supprimer\_MESSAGE ou l’autorité de certification\_GLOBAL\_SUPPRESS_MESSAGE dans le fichier d’en-tête pour ajouter l’attribut.
 
@@ -35,7 +35,9 @@ En C / c++ / CLI, utilisez les macros autorité de certification\_supprimer\_MES
 > Vous ne devez pas utiliser les suppressions dans la source sur les versions release, pour empêcher les métadonnées de suppression à la source d’expédition accidentellement. En outre, en raison du coût de traitement de la suppression à la source, les performances de votre application peuvent se dégrader.
 
 > [!NOTE]
-> Si vous migrez un projet vers Visual Studio 2017, vous pourrez soudainement être confronté à un nombre écrasant d’avertissements d’analyse du code. Si vous n’êtes pas prêt à résoudre les avertissements que vous souhaitez désactiver temporairement l’analyse du code, ouvrez les pages de propriétés du projet (**projet** > **\<projet > Propriétés**) et accédez à le **analyse du Code** onglet. Désélectionnez **activer l’analyse du Code sur la Build**, puis régénérez votre projet. Vous pouvez également sélectionner une règle différents et plus petite configurée pour s’exécuter par rapport au code. N’oubliez pas d’activer l’analyse du code rallumant quand vous êtes prêt à résoudre les avertissements.
+> Si vous migrez un projet vers Visual Studio 2017, vous pourrez soudainement être confronté à un grand nombre d’avertissements d’analyse du code. Provenant de ces avertissements [analyseurs de Roslyn](roslyn-analyzers-overview.md). Si vous n’êtes pas prêt à résoudre les avertissements, vous pouvez supprimer tous les en choisissant **analyser** > **exécuter l’analyse du Code et supprimer les problèmes actifs**.
+>
+> ![Exécuter l’analyse du code et supprimer des problèmes dans Visual Studio](media/suppress-active-issues.png)
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage (attribut)
 
@@ -57,13 +59,13 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 Les propriétés de l’attribut incluent :
 
-- **Catégorie de règle** -catégorie dans laquelle la règle est définie. Pour plus d’informations sur les catégories de règles code analysis, consultez [gérés des avertissements du code](../code-quality/code-analysis-for-managed-code-warnings.md).
+- **Catégorie** -catégorie dans laquelle la règle est définie. Pour plus d’informations sur les catégories de règles code analysis, consultez [gérés des avertissements du code](../code-quality/code-analysis-for-managed-code-warnings.md).
 
-- **Id de règle** -l’identificateur de la règle. Prise en charge inclut à la fois un nom court et long pour l’identificateur de règle. Le nom court est CAXXXX ; le nom long est CAXXXX:FriendlyTypeName.
+- **CheckId** -l’identificateur de la règle. Prise en charge inclut à la fois un nom court et long pour l’identificateur de règle. Le nom court est CAXXXX ; le nom long est CAXXXX:FriendlyTypeName.
 
 - **Justification** -le texte qui est utilisé pour documenter la raison de la suppression du message.
 
-- **Id de message** -identificateur Unique d’un problème pour chaque message.
+- **MessageId** -identificateur Unique d’un problème pour chaque message.
 
 - **Étendue** -la cible sur laquelle l’avertissement est supprimé. Si la cible n’est pas spécifiée, il est défini sur la cible de l’attribut. Étendues prises en charge sont les suivantes :
 
