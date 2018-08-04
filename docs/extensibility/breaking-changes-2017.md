@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34f7bdcf682e1baf928d3a36a828aeaafcb6d801
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: fb117a10a7f736e36b30806adfc5e07fe0b8aecf
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231493"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512251"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Nouveautés d’extensibilité de Visual Studio 2017
 
@@ -97,7 +97,8 @@ La plupart des assemblys principaux de Visual Studio ne sont plus installés dan
   * **HKLM\Software\Microsoft\VisualStudio\{Version}**: les clés de Registre créés par les programmes d’installation MSI et extensions de machine.
   * **HKCU\Software\Microsoft\VisualStudio\{Version}**: clés de Registre créées par Visual Studio pour stocker des paramètres propres à l’utilisateur.
   * **HKCU\Software\Microsoft\VisualStudio\{Version} _Config**: une copie de la clé de Visual Studio HKLM ci-dessus, ainsi que les clés de Registre fusionné à partir de *.pkgdef* fichiers par les extensions.
-* Pour réduire l’impact sur le Registre, Visual Studio utilise désormais le [RegLoadAppKey](https://msdn.microsoft.com/en-us/library/windows/desktop/ms724886(v=vs.85).aspx) (fonction) pour stocker les clés de Registre dans un fichier binaire privé sous *[VSAPPDATA]\privateregistry.bin*. Uniquement un très petit nombre de clés de Visual Studio spécifiques reste dans le Registre système.
+* Pour réduire l’impact sur le Registre, Visual Studio utilise désormais le [RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya) (fonction) pour stocker les clés de Registre dans un fichier binaire privé sous *[VSAPPDATA]\privateregistry.bin*. Uniquement un très petit nombre de clés de Visual Studio spécifiques reste dans le Registre système.
+
 * Code existant en cours d’exécution au sein du processus de Visual Studio n’est pas affecté. Visual Studio redirige toutes les opérations de Registre sous la clé HKCU Visual Studio-spécifique au Registre privé. Lire et écrire à d’autres emplacements de Registre continue à utiliser le Registre système.
 * Code externe doit charger et lire à partir de ce fichier pour les entrées de Registre de Visual Studio.
 

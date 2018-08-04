@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2031657091a2209d4e358998159581d2159a5443
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: b909c1df4aa776f0f92d72c679ecdacb42227c18
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251203"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510488"
 ---
 # <a name="register-an-expression-evaluator"></a>Inscrire un évaluateur d’expression
 > [!IMPORTANT]
@@ -104,7 +104,7 @@ namespace EEMC
  La DLL EE implémente le `DllRegisterServer` fonction s’enregistrer auprès de l’environnement COM, ainsi que Visual Studio.  
   
 > [!NOTE]
->  Yoou trouverez le code de Registre d’exemple de code MyCEE dans le fichier *dllentry.cpp*, qui se trouve dans l’installation de VSIP sous EnVSDK\MyCPkgs\MyCEE.  
+>  Vous trouverez le code de Registre MyCEE code exemple dans le fichier *dllentry.cpp*, qui se trouve dans l’installation de VSIP sous EnVSDK\MyCPkgs\MyCEE.  
   
 ### <a name="dll-server-process"></a>Processus de serveur DLL  
  Lorsque vous inscrivez le EE, le serveur de la DLL :  

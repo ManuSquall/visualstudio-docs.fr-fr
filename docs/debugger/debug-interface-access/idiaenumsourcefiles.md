@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSourceFiles | Documents Microsoft
+title: IDiaEnumSourceFiles | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9f0e1c751f9ab106be74418bc3d9e6b9a53b0c5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 33960cf8cfde8d781d52e0519911093019a93941
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460532"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511012"
 ---
 # <a name="idiaenumsourcefiles"></a>IDiaEnumSourceFiles
 Énumère les différents fichiers sources contenus dans la source de données.  
@@ -27,7 +27,7 @@ ms.locfileid: "31460532"
 ## <a name="syntax"></a>Syntaxe  
   
 ```  
-IDiaEnumSourceFiles : IUknown  
+IDiaEnumSourceFiles : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
@@ -40,20 +40,20 @@ IDiaEnumSourceFiles : IUknown
 |[IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)|Récupère un fichier source au moyen d’un index.|  
 |[IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)|Récupère un nombre spécifié de fichiers sources dans la séquence d’énumération.|  
 |[IDiaEnumSourceFiles::Skip](../../debugger/debug-interface-access/idiaenumsourcefiles-skip.md)|Ignore un nombre spécifié de fichiers sources dans une séquence d’énumération.|  
-|[IDiaEnumSourceFiles::Reset](../../debugger/debug-interface-access/idiaenumsourcefiles-reset.md)|Réinitialise la séquence d’énumération au début.|  
-|[IDiaEnumSourceFiles::Clone](../../debugger/debug-interface-access/idiaenumsourcefiles-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|  
+|[IDiaEnumSourceFiles::Reset](../../debugger/debug-interface-access/idiaenumsourcefiles-reset.md)|Réinitialise une séquence d’énumération au début.|  
+|[IDiaEnumSourceFiles::Clone](../../debugger/debug-interface-access/idiaenumsourcefiles-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur en cours.|  
   
 ## <a name="remarks"></a>Notes  
   
-## <a name="notes-for-callers"></a>Remarques pour les appelants  
- Obtenez cette interface en appelant le `QueryInterface` méthode sur une [IDiaTable](../../debugger/debug-interface-access/idiatable.md) objet. Consultez l’exemple de détails.  
+## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
+ Obtenez cette interface en appelant le `QueryInterface` méthode sur un [IDiaTable](../../debugger/debug-interface-access/idiatable.md) objet. Consultez l’exemple pour plus d’informations.  
   
 ## <a name="example"></a>Exemple  
  Cet exemple montre comment obtenir le `IDiaEnumSourceFiles` interface à partir de la liste des tables dans un objet de session DIA. Pour obtenir un exemple d’accès aux informations du fichier source, consultez la [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) interface.  
   
 ```C++  
   
-IDiaEnumSourceFiles* GetEnumSourceFiless(IDiaSession *pSession)  
+IDiaEnumSourceFiles* GetEnumSourceFiles(IDiaSession *pSession)  
 {  
     IDiaEnumSourceFiles * pUnknown    = NULL;  
     REFIID                iid         = __uuidof(IDiaEnumSourceFiles);  
@@ -81,7 +81,7 @@ IDiaEnumSourceFiles* GetEnumSourceFiless(IDiaSession *pSession)
 }  
 ```  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  
@@ -89,7 +89,7 @@ IDiaEnumSourceFiles* GetEnumSourceFiless(IDiaSession *pSession)
  DLL : msdia80.dll  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interfaces (Debug Interface Access SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)   
  [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

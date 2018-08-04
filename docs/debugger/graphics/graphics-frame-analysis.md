@@ -1,5 +1,5 @@
 ---
-title: Analyse de bloc graphique | Documents Microsoft
+title: Analyse des frames graphiques | Microsoft Docs
 ms.custom: ''
 ms.date: 02/09/2017
 ms.technology: vs-ide-debug
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fe34c421d06fea1e4eefc064d344727382ca1d8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 140d140b94446cf6e778caf33252d4c95bf2334b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479651"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512055"
 ---
 # <a name="graphics-frame-analysis"></a>Analyse des frames graphiques
 Utilisez l’analyse des frames graphiques dans Visual Studio Graphics Analyzer pour analyser et optimiser les performances de rendu de votre jeu ou application Direct3D.  
@@ -28,16 +28,16 @@ Utilisez l’analyse des frames graphiques dans Visual Studio Graphics Analyzer 
   
 -   L'analyse des frames peut générer des informations de performances pour des configurations matérielles et des appareils autres que ceux sur lesquels les informations ont été capturées.  
   
--   Analyse des frames peut générer de nouveaux résumés de performances à partir des informations capturées antérieurement, par exemple, lorsque les pilotes GPU sont optimisés ou exposer les fonctionnalités de débogage supplémentaires.  
+-   Analyse des frames peut générer de nouveaux résumés de performances à partir des informations capturées antérieurement, par exemple, lorsque les pilotes GPU sont optimisés ou exposer des fonctionnalités de débogage supplémentaires.  
   
  En plus de ces avantages, l'analyse des frames permet aussi de changer la façon dont le frame est affiché pendant la lecture avec la possibilité de présenter des informations sur l'impact potentiel de ces changements sur les performances de rendu d'une application. Vous pouvez vous servir de ces informations pour tester les stratégies d'optimisation potentielles sans avoir à les implémenter, puis capturer et comparer tous les résultats.  
   
  Bien que l'analyse des frames vise essentiellement à vous aider à accéder à de meilleures performances de rendu, elle peut également vous aider à obtenir une meilleure qualité visuelle pour une cible de performances donnée ou à réduire la consommation d'énergie du GPU.  
   
- Pour voir une démonstration des possibilités de l’analyse des frames pour votre application, vous pouvez regarder les [analyse des frames graphiques Visual Studio](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) vidéo sur Channel 9.  
+ Pour voir une démonstration de ce que l’analyse des frames peut faire pour votre application, vous pouvez regarder la [Visual Studio Graphics Frame Analysis](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) vidéo sur Channel 9.  
   
 ## <a name="using-frame-analysis"></a>Utilisation de l'analyse des frames  
- Avant de pouvoir utiliser l'analyse des frames, vous devez d'abord capturer les informations graphiques de votre application pendant qu'elle s'exécute, comme vous le feriez avec un autre outil Graphics Analyzer. Puis, dans la fenêtre de document (.vsglog) de journal de graphiques, choisissez la **analyse des frames** onglet.  
+ Avant de pouvoir utiliser l'analyse des frames, vous devez d'abord capturer les informations graphiques de votre application pendant qu'elle s'exécute, comme vous le feriez avec un autre outil Graphics Analyzer. Puis, dans la fenêtre de document (.vsglog) de journal graphics, choisissez le **analyse des frames** onglet.  
   
  ![Sélectionnez l’onglet Analyse des frames](media/pix_frame_analysis_select_tab.png "pix_frame_analysis_select_tab")  
   
@@ -64,7 +64,7 @@ Utilisez l’analyse des frames graphiques dans Visual Studio Graphics Analyzer 
   
 -   Si la variante Dimensions de la texture moitié/un quart montre des gains de performances significatifs, il est probable que vos textures occupent trop de mémoire, consomment trop de bande passante ou n'utilisent pas efficacement le cache de texture. Si cette variante ne montre aucune évolution des performances, vous pouvez probablement utiliser des textures plus grandes et plus détaillées sans supporter de coût en matière de performances.  
   
- Si vous disposez de compteurs matériels, vous pouvez les utiliser pour recueillir des informations très détaillées qui vous renseignerons sur les risques de détérioration des performances de rendu auxquels votre application est exposée. Niveau de fonctionnalité 9.2 et supérieur équipements prennent en charge les requêtes d’occlusion en profondeur (**pixels bloqués** compteur) et les horodatages. Il se peut que d'autres compteurs matériels soient disponibles si le fabricant de GPU les a implémentés, et les a exposés dans son pilote. Vous pouvez utiliser ces compteurs pour confirmer la cause exacte des résultats affichés dans le tableau Résumé (par exemple, vous pouvez déterminer si la superposition est un facteur en examinant le pourcentage de pixels qui ont été bloqués par le test de profondeur).  
+ Si vous disposez de compteurs matériels, vous pouvez les utiliser pour recueillir des informations très détaillées qui vous renseignerons sur les risques de détérioration des performances de rendu auxquels votre application est exposée. Tous les appareils de 9.2 et supérieur au niveau des fonctionnalités prennent en charge les requêtes d’occlusion en profondeur (**pixels bloqués** compteur) et les horodatages. Il se peut que d'autres compteurs matériels soient disponibles si le fabricant de GPU les a implémentés, et les a exposés dans son pilote. Vous pouvez utiliser ces compteurs pour confirmer la cause exacte des résultats affichés dans le tableau Résumé (par exemple, vous pouvez déterminer si la superposition est un facteur en examinant le pourcentage de pixels qui ont été bloqués par le test de profondeur).  
   
 ### <a name="timeline-and-summary-table"></a>Chronologie et tableau Résumé  
  Par défaut, la chronologie et le tableau Résumé sont affichés et les autres sections sont réduites.  
@@ -88,7 +88,7 @@ Utilisez l’analyse des frames graphiques dans Visual Studio Graphics Analyzer 
 #### <a name="hot-draw-calls"></a>Appels de dessin « sensibles »  
  Pour attirer l’attention sur les appels de dessin dont la consommation de temps de rendu global est proportionnellement plus élevée ou qui peuvent être ralentis pour des raisons qui pourraient être évitées, la ligne qui contient ces appels de dessin « sensibles » apparaissent en rouge dès lors que leur propre minutage de planning de référence est plus long d’un écart-type que le minutage de ligne de base moyen de tous les appels de dessin du frame.  
   
- ![Cet appel DrawIndexed possède des variants à chaud et à froid. ] (media/pix_frame_analysis_hot_calls.png "pix_frame_analysis_hot_calls")  
+ ![Cet appel DrawIndexed possède des variants à chaud et froid. ] (media/pix_frame_analysis_hot_calls.png "pix_frame_analysis_hot_calls")  
   
 #### <a name="statistical-significance"></a>Signification statistique  
  Pour attirer l'attention sur les variations de rendu les plus pertinentes, l'analyse des frames détermine la signification statistique de chaque variante de rendu et affiche les plus révélatrices en gras. Elle affiche celles qui améliorent les performances en vert et celles qui les diminuent en rouge. Elle affiche les résultats non significatifs du point de vue statistique en caractères normaux.  
@@ -103,7 +103,7 @@ Utilisez l’analyse des frames graphiques dans Visual Studio Graphics Analyzer 
 #### <a name="platforms-that-do-not-support-hardware-counters"></a>Plateformes qui ne prennent pas en charge les compteurs matériels  
  La plupart des plateformes ne prennent pas entièrement en charge les compteurs GPU (c'est le cas notamment de tous les GPU actuellement proposés par Intel, AMD et nVidia). Quand il n'y aucun compteur matériel auprès duquel collecter des données, le tableau Détails s'affiche et contient le minutage absolu moyen de toutes les variantes.  
   
- ![Le tableau Détails et certains variants de lecture. ] (media/pix_frame_analysis_details.png "pix_frame_analysis_details")  
+ ![Le tableau de détails et certaines variantes de la lecture. ] (media/pix_frame_analysis_details.png "pix_frame_analysis_details")  
   
 #### <a name="platforms-that-support-hardware-counters"></a>Plateformes qui prennent en charge les compteurs matériels  
  Pour les plateformes qui prennent en charge les compteurs GPU matériels (par exemple, le SOC T40 SOC et tous les SOC Qualcomm), plusieurs tableaux Détails s'affichent, un pour chaque variante. Chaque compteur matériel disponible fait l'objet d'une collecte pour chaque variante de rendu et est affiché dans son propre tableau Détails.  
@@ -145,7 +145,7 @@ Utilisez l’analyse des frames graphiques dans Visual Studio Graphics Analyzer 
 ### <a name="gpu-counters"></a>Compteurs GPU  
  La prise en charge des compteurs matériels GPU varie en fonction du matériel.  
   
- Comme aucun des GPU d'ordinateur actuellement proposés par Intel, AMD ou nVidia n'assure une prise en charge sûre des compteurs matériels GPU, l'analyse des frames ne collecte pas de données des compteurs de ces matériels. Toutefois, l’analyse des frames collecte des compteurs matériels depuis le GPU suivant, qui les prend en charge fiable :  
+ Comme aucun des GPU d'ordinateur actuellement proposés par Intel, AMD ou nVidia n'assure une prise en charge sûre des compteurs matériels GPU, l'analyse des frames ne collecte pas de données des compteurs de ces matériels. Toutefois, l’analyse des frames collecte des compteurs matériels à partir de la GPU suivant, qui les prend en charge fiable :  
   
 -   nVidia T40 (Tegra4)
   
@@ -161,7 +161,7 @@ Utilisez l’analyse des frames graphiques dans Visual Studio Graphics Analyzer 
  Dans Graphics Analyzer, quand vous lisez un fichier journal de graphisme qui utilise un niveau de fonctionnalité trop élevé pour l'ordinateur de lecture, il repasse automatiquement à WARP. Dans l'analyse des frames, il ne repasse pas explicitement à WARP et une erreur est générée (si WARP est utile pour examiner la justesse de votre application Direct3D, il ne l'est pas pour examiner ses performances).  
   
 > [!NOTE]
->  Bien qu’il soit important de ne pas perdre de vue les problèmes de niveau de fonctionnalité, vous pouvez capturer et lire les fichiers journaux de graphisme sur des configurations matérielles et des appareils différents. Le journal de graphisme peut être lu tant que le fichier journal ne contient des API ou utiliser des niveaux de fonctionnalité qui ne sont pas pris en charge sur l’ordinateur de lecture.  
+>  Bien qu’il soit important de ne pas perdre de vue les problèmes de niveau de fonctionnalité, vous pouvez capturer et lire les fichiers journaux de graphisme sur des configurations matérielles et des appareils différents. Le journal de graphisme peut être lu tant que le fichier journal ne contiennent des API ou utiliser des niveaux de fonctionnalité qui ne sont pas pris en charge sur l’ordinateur de lecture.  
   
 ### <a name="direct3d-10-and-lower"></a>Direct3D version 10 et inférieure  
  Si votre application appelle l'API Direct3D 10, l'analyse des frames ne reconnaîtra ni ne profilera ces appels, même s'ils sont reconnus et utilisés par d'autres outils Graphics Analyzer.
@@ -170,25 +170,25 @@ Utilisez l’analyse des frames graphiques dans Visual Studio Graphics Analyzer 
 >  Cela vaut uniquement pour les appels d’API Direct3D que vous utilisez, et non aux niveaux de fonctionnalité.
 
 ### <a name="warp"></a>WARP  
- L'analyse des frames vise à profiler et à améliorer les performances de rendu sur du vrai matériel. Analyse des frames en cours d’exécution sur des appareils WARP n’est pas bloqué, mais n’est pas généralement insister, car il est en cours d’exécution sur une UC haut de gamme de WARP est plus lente que même les moins GPU actuels, et étant donné que les performances de WARP peuvent varier considérablement en fonction de l’UC Il s’exécute sur.  
+ L'analyse des frames vise à profiler et à améliorer les performances de rendu sur du vrai matériel. Analyse des frames en cours d’exécution sur des appareils WARP n’est pas interdite, mais il est généralement pas payant d’insister car l’exécution sur une UC haut de gamme de WARP est plus lente que même les moins performant des GPU actuels, et les performances de WARP peuvent varier considérablement en fonction de l’UC Il s’exécute sur.  
   
 ##  <a name="Variants"></a> Variantes  
  Chaque modification de l’analyse des frames permet à la façon dont un frame est affiché pendant la lecture est appelée un *variante*. Les variantes examinées par l‘analyse des frames correspondent à des modifications courantes et relativement simples que vous pourriez apporter pour améliorer les performance de rendu ou la qualité visuelle de votre application (par exemple, en réduisant la taille des textures, en utilisant la compression de texture ou en autorisant différents types d‘anticrénelage). Les variantes substituent le contexte et les paramètres de rendu habituels de votre application. Voici un résumé :  
   
 |Variante|Description|  
 |-------------|-----------------|  
-|**Taille de la fenêtre d’affichage 1 x 1**|Réduit les dimensions de la fenêtre d'affichage sur toutes les cibles de rendu à 1x1 pixels.<br /><br /> Pour plus d’informations, consultez [variante de taille Viewport 1 x 1](1x1-viewport-size-variant.md)|  
+|**Taille de fenêtre d’affichage 1 x 1**|Réduit les dimensions de la fenêtre d'affichage sur toutes les cibles de rendu à 1x1 pixels.<br /><br /> Pour plus d’informations, consultez [variante de taille Viewport 1 x 1](1x1-viewport-size-variant.md)|  
 |**0 MSAA**|Désactive l‘anticrénelage MSSA (Multi-Sample Anti-Aliasing) sur toutes les cibles de rendu.<br /><br /> Pour plus d’informations, consultez [0 x / 2 x / 4 MSAA variantes](0x-2x-4x-msaa-variants.md)|  
 |**2 MSAA**|Active l‘anticrénelage MSSA (Multi-Sample Anti-Aliasing) 2x sur toutes les cibles de rendu.<br /><br /> Pour plus d’informations, consultez [0 x / 2 x / 4 MSAA variantes](0x-2x-4x-msaa-variants.md)|  
 |**4 MSAA**|Active l‘anticrénelage MSSA (Multi-Sample Anti-Aliasing) 4x sur toutes les cibles de rendu.<br /><br /> Pour plus d’informations, consultez [0 x / 2 x / 4 MSAA variantes](0x-2x-4x-msaa-variants.md)|  
 |**Filtrage de Texture de point**|Définit le mode de filtrage `DXD11_FILTER_MIN_MAG_MIP_POINT` (filtrage de texture de point) pour tous les échantillons de texture appropriés.<br /><br /> Pour plus d’informations, consultez [Point, bilinéaire, trilinéaire et ANISOTROPIQUE variantes de filtrage de Texture](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Filtrage de Texture bilinéaire**|Définit le mode de filtrage `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (filtrage de texture bilinéaire) pour tous les échantillons de texture appropriés.<br /><br /> Pour plus d’informations, consultez [Point, bilinéaire, trilinéaire et ANISOTROPIQUE variantes de filtrage de Texture](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Filtrage de Texture trilinéaire**|Définit le mode de filtrage `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (filtrage de texture trilinéaire) pour tous les échantillons de texture appropriés.<br /><br /> Pour plus d’informations, consultez [Point, bilinéaire, trilinéaire et ANISOTROPIQUE variantes de filtrage de Texture](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Filtrage de Texture ANISOTROPIQUE**|Définit le mode de filtrage `DXD11_FILTER_ANISOTROPIC` et `MaxAnisotropy` à `16` (16 x de texture ANISOTROPIQUE) pour tous les échantillons de texture appropriés.<br /><br /> Pour plus d’informations, consultez [Point, bilinéaire, trilinéaire et ANISOTROPIQUE variantes de filtrage de Texture](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Filtrage de Texture ANISOTROPIQUE**|Définit le mode de filtrage `DXD11_FILTER_ANISOTROPIC` et `MaxAnisotropy` à `16` (16 x filtrage de texture ANISOTROPIQUE) pour tous les échantillons de texture appropriés.<br /><br /> Pour plus d’informations, consultez [Point, bilinéaire, trilinéaire et ANISOTROPIQUE variantes de filtrage de Texture](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Format de cible de rendu 16 BPP**|Définit le format de pixel `DXGI_FORMAT_B5G6R5_UNORM` (format 16 bpp, 565) pour toutes les cibles de rendu et tous les mémoires tampons d'arrière-plan.<br /><br /> Pour plus d’informations, consultez [16 BPP restituer variante de Format cible](16bpp-render-target-format-variant.md)|  
-|**Génération mipmap**|Active les mipmaps sur toutes les textures qui ne sont pas des cibles de rendu.<br /><br /> Pour plus d’informations, consultez [variante de génération mipmap](mip-map-generation-variant.md).|  
-|**Dimensions de Texture moitié**|Réduit les dimensions de toutes les textures qui ne sont pas des cibles de rendu à la moitié de leur taille d'origine dans chaque dimension. Par exemple, une texture de 256 x 128 est réduite à 128 x 64 texels.<br /><br /> Pour plus d’informations, consultez [variante de Dimensions de Texture moitié/un quart](half-quarter-texture-dimensions-variant.md).|  
-|**Dimensions de Texture un quart**|Réduit les dimensions de toutes les textures qui ne sont pas des cibles de rendu à un quart de leur taille d'origine dans chaque dimension. Par exemple, une texture de 256 x 128 est réduite à 64 x 32 texels.<br /><br /> Pour plus d’informations, consultez [variante de Dimensions de Texture moitié/un quart](half-quarter-texture-dimensions-variant.md).|  
+|**Génération de mipmaps**|Active les mipmaps sur toutes les textures qui ne sont pas des cibles de rendu.<br /><br /> Pour plus d’informations, consultez [variante de génération mipmap](mip-map-generation-variant.md).|  
+|**Dimensions de Texture moitié**|Réduit les dimensions de toutes les textures qui ne sont pas des cibles de rendu à la moitié de leur taille d'origine dans chaque dimension. Par exemple, une texture de 256 x 128 est réduite à 128 x 64 texels.<br /><br /> Pour plus d’informations, consultez [variante de Dimensions de Texture variante](half-quarter-texture-dimensions-variant.md).|  
+|**Dimensions de Texture un quart**|Réduit les dimensions de toutes les textures qui ne sont pas des cibles de rendu à un quart de leur taille d'origine dans chaque dimension. Par exemple, une texture de 256 x 128 est réduite à 64 x 32 texels.<br /><br /> Pour plus d’informations, consultez [variante de Dimensions de Texture variante](half-quarter-texture-dimensions-variant.md).|  
 |**Compression de Texture BC**|Active la compression de bloc sur toutes les textures ayant une variante de format de pixel B8G8R8X8, B8G8R8A8 ou R8G8B8A8. Les variantes de format B8G8R8X8 sont compressées à l'aide de BC1 ; les variantes de format B8G8R8A8 et R8G8B8A8 sont compressées à l'aide de BC3.<br /><br /> Pour plus d’informations, consultez [variante de Compression de Texture BC](bc-texture-compression-variant.md).|  
   
  Le résultat pour la plupart des variantes est prescriptif : « Une réduction de la taille de texture de moitié offre 25 % de rapidité en plus » ou « Le ralentissement résultant de l'activation de MSAA 2x n'est que de 2 % ». Les autres variantes peuvent nécessiter une interprétation. Par exemple, si la variante qui a fait passer les dimensions de la fenêtre d'affichage à 1x1 donne lieu à un gain de performances important, cela peut indiquer que le rendu est bloqué par un faible taux de remplissage ; en revanche, s'il n'y a pas de changement significatif sur le plan des performances, cela peut indiquer que le rendu est bloqué par le traitement des sommets.

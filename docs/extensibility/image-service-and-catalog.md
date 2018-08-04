@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ab9a2e602bf1c92fb7dee7fe35b9d33f2d578fa
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b4b70c800e9dff7852d2a7aaec3ee1125932dfc1
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079078"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512042"
 ---
 # <a name="image-service-and-catalog"></a>Catalogue et service d’images
 Ce livre de recettes contient des conseils et meilleures pratiques pour arrêter le Service d’images Visual Studio et le catalogue d’Image introduite dans Visual Studio 2015.  
@@ -165,8 +165,9 @@ Ce livre de recettes contient des conseils et meilleures pratiques pour arrêter
 |||  
 |-|-|  
 |**Attribut**|**Définition**|  
-|URI|[Obligatoire] URI qui définit où l’image peut être chargé à partir de. Il peut avoir l'une des valeurs suivantes :<br /><br /> -A [URI à en-tête Pack](http://msdn.microsoft.com/en-US/library/aa970069\(v=vs.100\).aspx) à l’aide de l’application : / / / autorité<br />-Une référence de ressource du composant absolu<br />-Un chemin d’accès à un fichier contenant une ressource native|  
+|URI|[Obligatoire] URI qui définit où l’image peut être chargé à partir de. Il peut avoir l'une des valeurs suivantes :<br /><br /> -A [URI à en-tête Pack](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) à l’aide de l’application : / / / autorité<br />-Une référence de ressource du composant absolu<br />-Un chemin d’accès à un fichier contenant une ressource native|  
 |Présentation|[Facultatif] Indique quel type d’arrière-plan de que la source est destinée à être utilisée.<br /><br /> Il peut avoir l'une des valeurs suivantes :<br /><br /> *Lumière :* la source peut être utilisée sur un arrière-plan clair.<br /><br /> *Foncé :* la source peut être utilisée sur un arrière-plan sombre.<br /><br /> *Contraste élevé :* la source peut être utilisée sur n’importe quel arrière-plan en mode contraste élevé.<br /><br /> *HighContrastLight :* la source peut être utilisée sur un arrière-plan clair en mode de contraste élevé.<br /><br /> *HighContrastDark :* la source peut être utilisée sur un arrière-plan sombre en mode de contraste élevé.<br /><br /> Si l’attribut d’arrière-plan est omis, la source peut être utilisée sur n’importe quel arrière-plan.<br /><br /> Si l’arrière-plan est *Light*, *foncé*, *HighContrastLight*, ou *HighContrastDark*, les couleurs de la source ne sont jamais inversés. Si l’arrière-plan est omis ou défini sur *contraste élevé*, l’inversion des couleurs de la source est contrôlée par l’image **AllowColorInversion** attribut.|  
+
 |||  
   
  Un \<Source > élément peut avoir un seul des sous-éléments facultatives suivantes :  
@@ -651,7 +652,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3.  Mettre à jour votre code pour utiliser le service d’images pour demander des monikers via le mappage mis à jour. (Cela peut signifier la mise à jour vers **CrispImages** pour code managé, ou demandant HBITMAP ou éléments HICON le service de l’image et en les passant autour du code natif.)  
   
 ## <a name="testing-your-images"></a>Test de vos images  
- Vous pouvez utiliser l’outil Visionneuse de bibliothèque d’images pour tester vos manifestes de l’image pour vous assurer que tout est correctement créé. Vous pouvez trouver l’outil dans le [SDK Visual Studio 2015](http://msdn.microsoft.com/library/bb166441.aspx). Vous pouvez trouver la documentation de cet outil et d’autres [ici](http://aka.ms/VSImageThemeTools).  
+ Vous pouvez utiliser l’outil Visionneuse de bibliothèque d’images pour tester vos manifestes de l’image pour vous assurer que tout est correctement créé. Vous pouvez trouver l’outil dans le [SDK Visual Studio 2015](visual-studio-sdk.md). Vous pouvez trouver la documentation de cet outil et d’autres [ici](http://aka.ms/VSImageThemeTools).  
   
 ## <a name="additional-resources"></a>Ressources supplémentaires  
   

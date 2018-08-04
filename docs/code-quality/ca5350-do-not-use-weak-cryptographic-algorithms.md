@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3082ca9f03ddd56f000fcaea18525c0f61903512
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f97de4818e6be66b4ee23d97d8995dfa30533985
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920797"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510502"
 ---
 # <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350 : N’utilisez pas d’algorithmes de chiffrement faibles
 |||
@@ -43,7 +43,7 @@ ms.locfileid: "31920797"
 
 -   Pour le chiffrement TripleDES, utilisez le chiffrement <xref:System.Security.Cryptography.Aes> .
 
--   Pour les fonctions de hachage SHA1 ou RIPEMD160, utilisez celles dans les [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) famille (par exemple, <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
+-   Pour des fonctions de hachage SHA1 et RIPEMD160, utilisez les fonctions dans le [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) famille (par exemple, <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Supprimez un avertissement de cette règle quand le niveau de protection nécessaire pour les données ne nécessite pas une garantie de sécurité.

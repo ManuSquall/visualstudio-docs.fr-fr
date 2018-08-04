@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bea570ea8af34a7b448bbdf4b7367c96d8085907
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 59d1012a3a291c2f49cf5fd5e447ce46909c0cdd
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757617"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512276"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Procédure : utiliser l'exploration à l'aide de la barre de navigation
 
@@ -29,7 +29,7 @@ Il existe trois méthodes principales pour modifier l’ensemble des activités 
 
 ## <a name="using-breadcrumb-navigation"></a>Utilisation de l'exploration à l'aide de la barre de navigation
 
-1.  Double-cliquez sur une activité du Concepteur de Workflow pour modifier l’activité racine à l’activité utilisateur a cliqué dessue. L’activité sur laquelle vous avez cliqué est alors entièrement développée à la racine et ses ancêtres sont affichés dans la barre de navigation. Cette procédure est parfois appelée exploration avant ou arrière d'une activité.
+1.  Double-cliquez sur une activité du Concepteur de Workflow pour modifier l’activité racine à l’activité utilisateur a cliqué dessue. L’activité utilisateur a cliqué dessue est ensuite entièrement développée à la racine et ses ancêtres sont affichés dans la barre de navigation. Cette procédure est parfois appelée exploration avant ou arrière d'une activité.
 
 2.  Pour accéder à un ancêtre de l'activité racine actuelle, cliquez sur l'activité dans la barre de navigation.
 

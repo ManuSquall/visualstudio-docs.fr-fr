@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 529f4eb53c2da7af9115fab4b063100f6e5d0c6a
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: b23d7da819a0403366260b240fa095defd0f120a
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153811"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511407"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Procédure pas à pas : Déployer manuellement une application ClickOnce qui ne nécessite pas de nouvelle signature et qui conserve les informations de personnalisation
 Lorsque vous créez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application et puis de lui donner à un client pour publier et le déploiement, le client a généralement mis à jour le manifeste de déploiement et de signer à nouveau. Si qui est toujours la méthode recommandée dans la plupart des cas, le .NET Framework 3.5 vous permet de créer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiements peuvent être déployés par les clients sans avoir à régénérer un nouveau manifeste de déploiement. Pour plus d’informations, consultez [ClickOnce de déployer des applications pour les serveurs de test et de production sans nouvelle signature](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
@@ -159,4 +159,4 @@ Lorsque vous créez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick
 ## <a name="see-also"></a>Voir aussi  
  [Mage.exe (outil Manifest Generation and Editing)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)   
  [MageUI.exe (outil Manifest Generation and Editing, client graphique)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)   
- [MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968.aspx)
+ [MakeCert](/windows/desktop/SecCrypto/makecert)

@@ -9,18 +9,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4017ffc67558f6056cb01bf62c5adf9e7569ad4d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6b0479bf427930d19b12fa0de5728f26e7cdb10d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946908"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510176"
 ---
 # <a name="t4-import-directive"></a>Directive d'importation T4
 
-Dans les blocs de code d'un modèle de texte T4 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], la directive `import` vous permet de faire référence aux éléments dans un autre espace de noms sans fournir de nom qualifié complet. Cela équivaut à `using` en C# ou à `imports` en [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)].
+Dans les blocs de code d’un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modèle de texte T4, le `import` directive vous permet de faire référence aux éléments dans un autre espace de noms sans fournir un nom qualifié complet. Cela équivaut à `using` en C# ou à `imports` en [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)].
 
- Pour obtenir une vue d’ensemble de l’écriture de modèles de texte T4, consultez [l’écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md).
+Pour obtenir une vue d’ensemble de l’écriture de modèles de texte T4, consultez [écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md).
 
 ## <a name="using-the-import-directive"></a>Utilisation de la directive d'importation
 
@@ -49,7 +49,7 @@ The file contains: <#=  fileContent #>
 
 -   `Microsoft.VisualStudio.Modeling`
 
--   Espace de noms de votre DSL
+-   Espace de noms de votre solution DSL
 
 ## <a name="see-also"></a>Voir aussi
 

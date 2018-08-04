@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80acb4dd08c9785d17187f6048d7133232b0bf6f
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: a16044657b197229253f93fc6aea6130a4522f64
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078440"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512182"
 ---
 # <a name="create-bootstrapper-packages"></a>Créer des packages de programme d’amorçage
 Le programme d’installation est un programme d’installation générique qui peut être configuré pour détecter et installer les composants redistribuables tels que le programme d’installation de Windows (*.msi*) fichiers et des programmes exécutables. Le programme d'installation est également appelé programme d'amorçage. Il est programmé via un ensemble de manifestes XML qui spécifient les métadonnées permettant de gérer l'installation du composant.  Chaque composant redistribuable, ou une condition préalable, qui s’affiche dans le **conditions préalables** boîte de dialogue de ClickOnce est un package de programme d’amorçage. Un package de programme d'amorçage est un groupe de répertoires et de fichiers qui contiennent des fichiers manifeste qui décrivent la façon dont le composant requis doit être installé. 
@@ -86,10 +86,10 @@ Le tableau suivant présente les propriétés qui sont automatiquement remplies 
 |--------------|-----------------|  
 |ApplicationName|Nom de l'application.|  
 |ProcessorArchitecture|Processeur et bits par mot de la plateforme ciblée par un exécutable. Les valeurs sont notamment les suivantes :<br /><br /> -Intel<br />-IA64<br />-AMD64|  
-|[Version9x](https://msdn.microsoft.com/en-us/library/aa372490\(v=vs.140\).aspx)|Numéro de version des systèmes d'exploitation Microsoft Windows 95, Windows 98 ou Windows ME. La syntaxe de la version est Major.Minor.ServicePack.|  
-|[VersionNT](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).aspx)|Numéro de version des systèmes d'exploitation Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 ou Windows 7. La syntaxe de la version est Major.Minor.ServicePack.|  
-|[VersionMSI](https://msdn.microsoft.com/en-us/library/aa372493\(v=vs.140\).aspx)|La version de l’assembly Windows Installer (msi.dll) à exécuter pendant l’installation.|  
-|[AdminUser](https://msdn.microsoft.com/en-us/library/aa367545\(v=vs.140\).aspx)|Cette propriété est définie si l'utilisateur dispose de privilèges d'administrateur. Les valeurs sont true ou false.|  
+|[Version9x](/windows/desktop/Msi/version9x)|Numéro de version des systèmes d'exploitation Microsoft Windows 95, Windows 98 ou Windows ME. La syntaxe de la version est Major.Minor.ServicePack.|  
+|[VersionNT](/windows/desktop/Msi/versionnt)|Numéro de version des systèmes d'exploitation Windows NT, Windows 2000, Windows XP, Windows Vista, Windows Server 2008 ou Windows 7. La syntaxe de la version est Major.Minor.ServicePack.|  
+|[VersionMSI](/windows/desktop/Msi/versionmsi)|La version de l’assembly Windows Installer (msi.dll) à exécuter pendant l’installation.|  
+|[AdminUser](/windows/desktop/Msi/adminuser)|Cette propriété est définie si l'utilisateur dispose de privilèges d'administrateur. Les valeurs sont true ou false.|  
 |InstallMode|Le mode d'installation indique l'emplacement d'installation du composant. Les valeurs sont notamment les suivantes :<br /><br /> -HomeSite - prérequis sont installés à partir du site Web du fournisseur.<br />-SpecificSite - prérequis sont installés à partir de l’emplacement que vous sélectionnez.<br />-SameSite - prérequis sont installés dans le même emplacement que l’application.|  
   
 ## <a name="separate-redistributables-from-application-installations"></a>Redistribuables distinct à partir d’installations d’applications  

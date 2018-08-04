@@ -1,5 +1,5 @@
 ---
-title: Gestion spécialisé déploiement | Documents Microsoft
+title: Gèrent le déploiement spécialisé | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d777c66657d69d24e1cbc3d6d4b3ea5a5d143a27
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7fadabf4becdf53453b24a4bc60e7b4e3a6cd21e
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135778"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511279"
 ---
-# <a name="handling-specialized-deployment"></a>Gestion spécialisé de déploiement
-Un déploiement est une opération facultative pour les projets. Un projet Web, par exemple, prend en charge qu’un déploiement pour permettre à un projet de mise à jour d’un serveur Web. De même, un **Smart Device** projet prend en charge un déploiement pour copier une application générée à l’appareil cible. Les sous-types de projet peuvent fournir le comportement de déploiement spécialisées en implémentant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interface. Cette interface définit un ensemble complet des opérations de déploiement :  
+# <a name="handle-specialized-deployment"></a>Gérer le déploiement spécialisé
+Un déploiement est une opération facultative pour les projets. Un projet Web, par exemple, prend en charge qu’un déploiement pour permettre à un projet de mettre à jour d’un serveur Web. De même, un **Smart Device** projet prend en charge un déploiement pour copier une application générée à l’appareil cible. Les sous-types de projet peuvent fournir le comportement de déploiement spécialisé en implémentant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interface. Cette interface définit un ensemble complet des opérations de déploiement :  
   
 -   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>  
   
@@ -40,13 +40,12 @@ Un déploiement est une opération facultative pour les projets. Un projet Web, 
   
 -   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>  
   
- L’opération de déploiement réel doit être effectuée dans le thread distinct pour rendre [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] encore plus rapide à l’interaction utilisateur. Les méthodes fournies par <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> sont appelées de façon asynchrone par [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] et fonctionner en arrière-plan, ce qui permet de l’environnement pour interroger l’état d’une opération de déploiement à tout moment ou d’arrêter l’opération, si nécessaire. Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> opérations de déploiement d’interface sont appelées par l’environnement lorsque l’utilisateur sélectionne la commande déployer.  
+ L’opération de déploiement réel doit être effectuée dans le thread séparé pour rendre [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] encore plus réactives à l’interaction utilisateur. Les méthodes fournies par <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> sont appelées de façon asynchrone par [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] et fonctionner en arrière-plan, ce qui permet de l’environnement pour interroger l’état d’une opération de déploiement à tout moment ou d’arrêter l’opération, si nécessaire. Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> opérations de déploiement d’interface sont appelées par l’environnement lorsque l’utilisateur sélectionne la commande de déploiement.  
   
- Pour notifier l’environnement d’une opération de déploiement a commencé ou terminé, le sous-type de projet a besoin d’appeler le <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> méthodes.  
+ Pour notifier l’environnement une opération de déploiement a commencé ou s’est terminée, le sous-type de projet doit appeler le <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> méthodes.  
   
-## <a name="handling-specialized-deployment"></a>Gestion spécialisé de déploiement  
   
-#### <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>Pour gérer un déploiement spécialisé par un projet de sous-type  
+## <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>Pour gérer un déploiement spécialisé par un projet de sous-type  
   
 -   Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A> méthode pour inscrire l’environnement pour recevoir des notifications d’événements d’état de déploiement.  
   
@@ -115,7 +114,7 @@ Un déploiement est une opération facultative pour les projets. Un projet Web, 
   
     ```  
   
--   Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A> méthode pour effectuer une opération de restauration. Lorsque cette méthode est appelée, le projet de déploiement doit faire tout ce qui est approprié pour restaurer les modifications et restaurer l’état du projet. Cette méthode est utilisée principalement pour le déploiement de la base de données.  
+-   Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A> méthode pour effectuer une opération de restauration. Lorsque cette méthode est appelée, le projet de déploiement doit faire tout ce qu’à restaurer les modifications et restaurer l’état du projet. Cette méthode est utilisée principalement pour le déploiement de la base de données.  
   
     ```vb  
     Public Function Commit(ByVal dwReserved As UInteger) As Integer  
@@ -166,7 +165,7 @@ Un déploiement est une opération facultative pour les projets. Un projet Web, 
   
     ```  
   
--   Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A> méthode pour déterminer si une opération de déploiement a réussi.  
+-   Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A> méthode pour déterminer si une opération de déploiement est terminée avec succès.  
   
     ```vb  
     Public Function QueryStatusDeploy(ByRef pfDeployDone As Integer) As Integer  
@@ -295,4 +294,4 @@ Un déploiement est une opération facultative pour les projets. Un projet Web, 
 >  Tous les exemples de code fournis dans cette rubrique font partie d’un exemple plus complet dans [exemples d’extensibilité Visual Studio](http://aka.ms/vs2015sdksamples).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Sous-types de projets](../../extensibility/internals/project-subtypes.md)
+ [Sous-types de projet](../../extensibility/internals/project-subtypes.md)
