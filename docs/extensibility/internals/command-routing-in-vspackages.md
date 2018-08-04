@@ -1,5 +1,5 @@
 ---
-title: Routage des commandes dans les VSPackages | Documents Microsoft
+title: Routage des commandes dans VSPackages | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,24 +14,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58be191a3b7a2256d0883e313f77b264f6be4d69
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5a5f884873e714c12708780a0e52f5f5574727fb
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135801"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512933"
 ---
-# <a name="command-routing-in-vspackages"></a>Routage des commandes dans des VSPackages
-Une commande est acheminée dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] en fonction du contexte dans lequel elle est exécutée. À partir du contexte initial vers l’extérieur, il est acheminé vers le contexte global.  
+# <a name="command-routing-in-vspackages"></a>Routage des commandes dans VSPackages
+Une commande est acheminée dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] selon le contexte dans lequel elle est exécutée. Il est acheminé à partir du contexte initial vers l’extérieur vers le contexte global.  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Algorithme de routage](../../extensibility/internals/command-routing-algorithm.md)  
+ [Algorithme de routage de commande](../../extensibility/internals/command-routing-algorithm.md)  
  Décrit l’ordre de résolution de routage de commande.  
   
- [Disponibilité](../../extensibility/internals/command-availability.md)  
+ [Disponibilité de la commande](../../extensibility/internals/command-availability.md)  
  Décrit le routage des commandes.  
   
- [Commandes et menus utilisant des assemblys d’interopérabilité](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)  
+ [Commandes et des menus qui utilisent des assemblys d’interopérabilité](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)  
  Décrit les considérations sur les commandes de routage entre le code managé et COM.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
