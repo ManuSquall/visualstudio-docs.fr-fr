@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Utilisation de Graphics Diagnostics pour déboguer un Shader de calcul | Documents Microsoft'
+title: 'Procédure pas à pas : Utilisation de Graphics Diagnostics pour déboguer un nuanceur de calcul | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b26772dd0cb74d90a8b7a401961fd33f86521a82
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: cff502344db59586709c350ad282871db9f587c8
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481263"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511838"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Procédure pas à pas : utilisation de Graphics Diagnostics pour déboguer un Shader de calcul
 Cette procédure pas à pas montre comment utiliser les outils Visual Studio Graphics Diagnostics pour examiner un nuanceur de calcul qui génère des résultats incorrects.  
@@ -24,14 +24,14 @@ Cette procédure pas à pas montre comment utiliser les outils Visual Studio Gra
   
 -   Utilisation de la **liste des événements Graphics** pour rechercher les sources potentielles du problème.  
   
--   À l’aide de la **événements Graphics** pour déterminer lequel nuanceur de calcul exécuté par un DirectCompute `Dispatch` événement.  
+-   À l’aide de la **événements Graphics** pour déterminer le calcul nuanceur est exécuté par un DirectCompute `Dispatch` événement.  
   
 -   À l’aide de la **étapes de canalisation Graphics** fenêtre et du débogueur HLSL pour examiner le nuanceur de calcul qui est la source du problème.  
   
 ## <a name="scenario"></a>Scénario  
  Dans ce scénario, vous avez écrit une simulation relative à la dynamique des fluides, qui utilise DirectCompute pour effectuer les calculs les plus poussés de la mise à jour de la simulation. Quand l'application est exécutée, le rendu du jeu de données et de l'interface utilisateur semble correct. Toutefois, la simulation ne se comporte pas comme prévu. À l'aide de Graphics Diagnostics, vous pouvez capturer le problème dans un journal de graphisme pour déboguer l'application. Le problème se présente ainsi dans l'application :  
   
- ![Le fluide simulé se comporte de manière incorrecte. ] (media/gfx_diag_demo_compute_shader_fluid_problem.png "gfx_diag_demo_compute_shader_fluid_problem")  
+ ![Le fluide simulé est défaillant. ] (media/gfx_diag_demo_compute_shader_fluid_problem.png "gfx_diag_demo_compute_shader_fluid_problem")  
   
  Pour plus d’informations sur la capture des problèmes de graphisme dans un journal de graphisme, consultez [Capturing Graphics Information](capturing-graphics-information.md).  
   
@@ -52,9 +52,9 @@ Cette procédure pas à pas montre comment utiliser les outils Visual Studio Gra
   
 1.  Sur le **Graphics Diagnostics** barre d’outils, choisissez **liste des événements** pour ouvrir le **liste des événements Graphics** fenêtre.  
   
-2.  Inspecter le **liste des événements Graphics** pour l’événement de dessin qui restitue le jeu de données. Pour ce faire, entrez `Draw` dans les **recherche** zone dans le coin supérieur droit de la **liste des événements Graphics** fenêtre. Cela permet de filtrer la liste pour retenir uniquement les événements qui contiennent « Draw » dans leur titre. Dans ce scénario, vous découvrez que les événements de dessin suivants se sont produits :  
+2.  Inspecter le **liste des événements Graphics** pour l’événement de dessin qui restitue le jeu de données. Pour faciliter cette opération, entrez `Draw` dans le **recherche** zone dans le coin supérieur droit de la **liste des événements Graphics** fenêtre. Cela permet de filtrer la liste pour retenir uniquement les événements qui contiennent « Draw » dans leur titre. Dans ce scénario, vous découvrez que les événements de dessin suivants se sont produits :  
   
-     ![La liste des événements &#40;EL&#41; affiche les événements de dessin. ] (media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
+     ![La liste des événements &#40;EL&#41; montre les événements de dessin. ] (media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
   
 3.  Parcourez chaque événement de dessin pendant que vous regardez la cible de rendu sous l'onglet du document journal de graphisme.  
   
@@ -62,9 +62,9 @@ Cette procédure pas à pas montre comment utiliser les outils Visual Studio Gra
   
      ![Cet événement draw restitue le jeu de données de simulation. ] (media/gfx_diag_demo_compute_shader_fluid_step_3.png "gfx_diag_demo_compute_shader_fluid_step_3")  
   
-5.  Inspectez le **liste des événements Graphics** pour la `Dispatch` les événements qui met à jour la simulation. Comme il est probable que la simulation est mise à jour avant son rendu, vous pouvez vous concentrer tout d'abord sur les événements `Dispatch` qui se produisent avant l'événement de dessin de rendu des résultats. Pour ce faire, modifiez le **recherche** zone `Draw;Dispatch;CSSetShader(`. Cela permet de filtrer la liste pour qu'elle contienne également les événements `Dispatch` et `CSSetShader`, en plus des événements de dessin. Dans ce scénario, vous découvrez que plusieurs événements `Dispatch` se sont produits avant l'événement de dessin :  
+5.  Observons à présent le **liste des événements Graphics** pour le `Dispatch` événement qui met à jour la simulation. Comme il est probable que la simulation est mise à jour avant son rendu, vous pouvez vous concentrer tout d'abord sur les événements `Dispatch` qui se produisent avant l'événement de dessin de rendu des résultats. Pour simplifier ce processus, modifiez la **recherche** boîte lire `Draw;Dispatch;CSSetShader(`. Cela permet de filtrer la liste pour qu'elle contienne également les événements `Dispatch` et `CSSetShader`, en plus des événements de dessin. Dans ce scénario, vous découvrez que plusieurs événements `Dispatch` se sont produits avant l'événement de dessin :  
   
-     ![Affiche les événements draw, Dispatch et CSSetShader événements](media/gfx_diag_demo_compute_shader_fluid_step_4.png "gfx_diag_demo_compute_shader_fluid_step_4")  
+     ![Affiche les événements de dessin, Dispatch et CSSetShader](media/gfx_diag_demo_compute_shader_fluid_step_4.png "gfx_diag_demo_compute_shader_fluid_step_4")  
   
  Une fois que vous avez isolé une partie des nombreux événements `Dispatch` qui peuvent correspondre au problème, vous pouvez les examiner plus en détail.  
   
@@ -72,7 +72,7 @@ Cette procédure pas à pas montre comment utiliser les outils Visual Studio Gra
   
 1.  Sur le **Graphics Diagnostics** barre d’outils, choisissez **pile des appels des événements** pour ouvrir le **événements Graphics** fenêtre.  
   
-2.  À partir de l'événement de dessin qui restitue les résultats de la simulation, naviguez vers l'arrière de chaque événement `CSSetShader` précédent. Puis, dans le **événements Graphics** fenêtre, choisir la fonction supérieure pour accéder au site d’appel. Sur le site d’appel, vous pouvez utiliser le premier paramètre de la [CSSetShader](http://msdn.microsoft.com/library/ff476402.aspx) pour déterminer lequel nuanceur de calcul exécuté par le prochain appel de fonction `Dispatch` événement.  
+2.  À partir de l'événement de dessin qui restitue les résultats de la simulation, naviguez vers l'arrière de chaque événement `CSSetShader` précédent. Ensuite, dans le **événements Graphics** fenêtre, choisissez la fonction de plus haut pour accéder au site d’appel. Sur le site d’appel, vous pouvez utiliser le premier paramètre de la [CSSetShader](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-cssetshader) fonction d’appel pour déterminer lequel nuanceur de calcul exécuté par le prochain `Dispatch` événement.  
   
  Dans ce scénario, il existe trois paires d'événements `CSSetShader` et `Dispatch` dans chaque frame. Si vous revenez en arrière, la troisième paire représente l'étape d'intégration (où les particules fluides sont effectivement déplacées), la deuxième paire représente l'étape de calcul des forces (où les forces qui affectent chaque particule sont calculées), et la première paire représente l'étape de calcul de la densité.  
   
@@ -80,7 +80,7 @@ Cette procédure pas à pas montre comment utiliser les outils Visual Studio Gra
   
 1.  Sur le **Graphics Diagnostics** barre d’outils, choisissez **canalisation** pour ouvrir le **étapes de canalisation Graphics** fenêtre.  
   
-2.  Sélectionnez le troisième `Dispatch` événement (celui qui précède immédiatement l’événement de dessin), puis, dans le **étapes de canalisation Graphics** fenêtre, sous le **nuanceur de calcul** à l’étape, choisissez  **Démarrer le débogage**.  
+2.  Sélectionnez le troisième `Dispatch` événements (celui qui précède immédiatement l’événement de dessin), puis, dans le **étapes de canalisation Graphics** fenêtre, sous le **nuanceur de calcul** à l’étape, choisissez  **Démarrer le débogage**.  
   
      ![Sélection du troisième événement Dispatch dans l’EL](media/gfx_diag_demo_compute_shader_fluid_step_6.png "gfx_diag_demo_compute_shader_fluid_step_6")  
   

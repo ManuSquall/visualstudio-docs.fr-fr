@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 610372abd2aa8b4c45a18f5f1b3b171262308a66
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f86812bc1258c0381adc716a883a8cbc98b48eec
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179994"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512289"
 ---
 # <a name="using-the-tasks-window"></a>Utilisation de la fenêtre Tâches
 
@@ -52,7 +52,7 @@ Les colonnes dans le **tâches** la fenêtre affiche les informations suivantes.
 |**indicateurs**|Affiche les tâches avec indicateur et vous permet d’ajouter un indicateur à une tâche ou d’en supprimer un.|
 |**Icônes**|La flèche jaune indique la tâche actuelle. La tâche actuelle est la tâche supérieure du thread actuel.<br /><br /> Une flèche blanche indique la tâche d'arrêt, autrement dit, celle qui était actuelle lorsque le débogueur a été appelé.<br /><br /> L'icône de pause indique une tâche gelée par l'utilisateur. Vous pouvez geler et libérer une tâche en cliquant dessus avec le bouton droit dans la liste.|
 |**ID**|Numéro fourni par le système pour la tâche. En code natif, il s’agit de l’adresse de la tâche.|
-|**État**|L’état actuel (planifié, actif, bloqué, bloqué, en attente ou terminé) de la tâche. Une tâche planifiée est une tâche qui n’a pas encore été exécutée et, par conséquent, qui de possède pas encore une pile d’appels, un thread assigné ou des informations connexes.<br /><br /> Une tâche active est une tâche qui était en train d’exécuter du code avant de s’arrêter dans le débogueur.<br /><br /> Une tâche en attente ou bloquée est un qui est bloquée, car il attend un événement soit signalé, un verrou soit libéré ou une autre tâche se termine.<br /><br /> Une tâche bloquée est une tâche en attente dont le thread est bloqué par un autre thread.<br /><br /> Placez le curseur sur le **état** cellule d’une tâche bloquée ou en attente voir plus d’informations sur le bloc. **Avertissement :** le **tâches** fenêtre signale les interblocages uniquement pour les tâches bloquées utilisant une primitive de synchronisation pris en charge par Wait Chain Traversal (WCT). Par exemple, pour un interblocage <xref:System.Threading.Tasks.Task> objet, qui utilise le WCT, le débogueur signale **bloquée en attente**. Pour une tâche bloquée gérée par le Runtime d’accès concurrentiel, qui n’utilise pas WCT, le débogueur signale **en attente**. Pour plus d’informations sur WCT, consultez [Wait Chain Traversal](http://msdn.microsoft.com/library/ms681622\(VS.85\).aspx).|
+|**État**|L’état actuel (planifié, actif, bloqué, bloqué, en attente ou terminé) de la tâche. Une tâche planifiée est une tâche qui n’a pas encore été exécutée et, par conséquent, qui de possède pas encore une pile d’appels, un thread assigné ou des informations connexes.<br /><br /> Une tâche active est une tâche qui était en train d’exécuter du code avant de s’arrêter dans le débogueur.<br /><br /> Une tâche en attente ou bloquée est un qui est bloquée, car il attend un événement soit signalé, un verrou soit libéré ou une autre tâche se termine.<br /><br /> Une tâche bloquée est une tâche en attente dont le thread est bloqué par un autre thread.<br /><br /> Placez le curseur sur le **état** cellule d’une tâche bloquée ou en attente voir plus d’informations sur le bloc. **Avertissement :** le **tâches** fenêtre signale les interblocages uniquement pour les tâches bloquées utilisant une primitive de synchronisation pris en charge par Wait Chain Traversal (WCT). Par exemple, pour un interblocage <xref:System.Threading.Tasks.Task> objet, qui utilise le WCT, le débogueur signale **bloquée en attente**. Pour une tâche bloquée gérée par le Runtime d’accès concurrentiel, qui n’utilise pas WCT, le débogueur signale **en attente**. Pour plus d’informations sur WCT, consultez [Wait Chain Traversal](/windows/desktop/Debug/wait-chain-traversal).|
 |**Heure de début**|Heure à laquelle la tâche est devenue active.|
 |**Durée**|Nombre de secondes durant lesquelles la tâche a été active.|
 |**Heure d’achèvement**|Heure à laquelle la tâche s’est terminée.|

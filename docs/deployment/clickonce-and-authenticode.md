@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03e2ee64002d286c899f638f2fed16d4ef22abc7
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2943766bb7b0df6d2e0974f8a8c1b52747f31526
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080771"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512208"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce et Authenticode
 *Authenticode* est une technologie Microsoft qui utilise le chiffrement standard pour signer le code d’application avec des certificats numériques. Ces certificats permettent de vérifier l’authenticité de l’éditeur de l’application. En utilisant Authenticode pour le déploiement d’applications, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] réduit le risque d’un cheval de Troie. Un cheval de Troie est un virus ou autre programme dangereux qu’un tiers malveillant présente comme un programme légitime provenant d’une source de confiance connue. La signature des déploiements [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] avec un certificat numérique est une étape facultative permettant de vérifier que les assemblys et les fichiers ne sont pas falsifiés.  
@@ -50,7 +50,7 @@ ms.locfileid: "39080771"
   
  En revanche, si vous recevez un certificat d’une autorité de certification, par exemple un fournisseur de certificats ou un service de votre entreprise, le certificat offre davantage de sécurité pour vos utilisateurs. Non seulement il identifie l’éditeur du logiciel signé, mais il vérifie aussi cette identité auprès de l’autorité de certification qui l’a signé. Si l’autorité de certification n’est pas l’autorité racine, Authenticode remonte également jusqu’à l’autorité racine pour vérifier que l’autorité de certification est autorisée à publier des certificats. Pour garantir une sécurité optimale, utilisez un certificat publié par une autorité de certification quand cela est possible.  
   
- Pour plus d’informations sur la génération de certificats automatiques, consultez [New-SelfSignedCertificate](https://technet.microsoft.com/itpro/powershell/windows/pkiclient/new-selfsignedcertificate) ou [MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968.aspx).  
+ Pour plus d’informations sur la génération de certificats automatiques, consultez [New-SelfSignedCertificate](https://technet.microsoft.com/itpro/powershell/windows/pkiclient/new-selfsignedcertificate) ou [MakeCert](/windows/desktop/SecCrypto/makecert).  
   
 ### <a name="timestamps"></a>Horodatages  
  Les certificats utilisés pour signer des applications [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] expirent après une certaine durée (douze mois, le plus souvent). Pour éviter aux utilisateurs d’avoir à resigner constamment les applications avec de nouveaux certificats, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] prend en charge l’horodatage. Quand une application est signée avec un horodatage, son certificat est accepté même s’il a expiré, à condition que l’horodatage soit valide. Cela permet de télécharger et d’exécuter des applications [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] qui ont des certificats arrivés à expiration, mais des horodatages valides. Cela permet également aux applications installées qui ont des certificats expirés de continuer à télécharger et installer les mises à jour.  

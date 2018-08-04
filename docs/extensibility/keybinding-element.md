@@ -1,5 +1,5 @@
 ---
-title: Élément de la combinaison de touches | Documents Microsoft
+title: Élément KeyBinding | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 226a5913cbaa151689a886dc88986f7de8cc29f6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a199a805493b0b9ac9ae6e75cec322c74a99987e
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139167"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511572"
 ---
-# <a name="keybinding-element"></a>Élément de la combinaison de touches
-L’élément de la combinaison de touches Spécifie les raccourcis clavier pour les commandes.  
+# <a name="keybinding-element"></a>Élément KeyBinding
+L’élément de combinaison de touches Spécifie les raccourcis clavier pour les commandes.  
   
- Commandes peuvent avoir un ou deux combinaisons de touches qui s’y rapportent. Un exemple d’une liaison de clé unique est CTRL + S pour le **enregistrer** commande. Combinaisons de touches doubles nécessitent deux combinaisons de touches successives pour déclencher une commande. Un exemple d’une liaison de clé double est CTRL + K, CTRL + K pour définir un signet.  
+ Commandes peuvent avoir un ou deux combinaisons de touches qui s’y rapportent. Un exemple d’une liaison de clé unique est CTRL + S pour le **enregistrer** commande. Les combinaisons de touches doubles nécessitent deux combinaisons de touches successives pour déclencher une commande. Un exemple d’une liaison de clé double est CTRL + K, CTRL + K pour définir un signet.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,12 +41,12 @@ L’élément de la combinaison de touches Spécifie les raccourcis clavier pour
 |---------------|-----------------|  
 |GUID|Obligatoire.|  
 |ID|Obligatoire.|  
-|éditeur|Obligatoire. Le GUID de l’éditeur indique le contexte d’édition pour lequel ce raccourci clavier est actif. La valeur de la portée globale de liaison est « guidVSStd97 ».|  
-|key1|Obligatoire. Les valeurs valides sont peut être tapées tous les caractères alphanumériques, ainsi que les valeurs hexadécimales à deux chiffres précédés par 0 x et [VK_constants](https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731.aspx).|  
+|éditeur|Obligatoire. Le GUID de l’éditeur indique le contexte d’édition pour laquelle ce raccourci clavier est actif. La valeur d’étendue globale de liaison est « guidVSStd97 ».|  
+|key1|Obligatoire. Les valeurs valides incluent peut être tapées tous les caractères alphanumériques et les valeurs hexadécimales à deux chiffres précédés par 0 x et [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
 |MOD1|Facultatif. N’importe quelle combinaison de touches CTRL, ALT et MAJ séparés par un espace.|  
-|key2|Facultatif. Les valeurs valides sont peut être tapées tous les caractères alphanumériques, ainsi que les valeurs hexadécimales à deux chiffres précédés par 0 x et [VK_constants](https://msdn.microsoft.com/en-us/library/windows/desktop/dd375731.aspx).|  
+|key2|Facultatif. Les valeurs valides incluent peut être tapées tous les caractères alphanumériques et les valeurs hexadécimales à deux chiffres précédés par 0 x et [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
 |MOD2|Facultatif. N’importe quelle combinaison de touches CTRL, ALT et MAJ séparés par un espace.|  
-|émulateur|Facultatif.|  
+|Émulateur|Facultatif.|  
 |Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Éléments enfants  
@@ -74,5 +74,5 @@ L’élément de la combinaison de touches Spécifie les raccourcis clavier pour
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Élément de combinaisons de touches](../extensibility/keybindings-element.md)   
+ [Élément KeyBindings](../extensibility/keybindings-element.md)   
  [Fichiers Visual Studio Command Table (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

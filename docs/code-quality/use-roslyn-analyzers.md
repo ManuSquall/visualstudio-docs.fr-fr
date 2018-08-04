@@ -1,5 +1,5 @@
 ---
-title: Utiliser et configurez des analyseurs de Roslyn dans Visual Studio
+title: Utiliser et configurez des analyseurs de Roslyn
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6668b3727e5df17c3d436e37f2edd78a67a79eba
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 971cbe690cc53b0e4035b951570ba8c7aba19313
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204152"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512169"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>Configurer et utiliser des règles de l’analyseur Roslyn
 
@@ -141,6 +141,31 @@ Le **liste d’erreurs** affiche des diagnostics, ou la règle violations, à la
 > ```xml
 > <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" PrivateAssets="all" />
 > ```
+
+## <a name="command-line-usage"></a>Utilisation de ligne de commande
+
+Lorsque vous générez votre projet à la ligne de commande, les violations des règles apparaissent dans la sortie de génération si les conditions suivantes sont remplies :
+
+- Les analyseurs sont installés comme un package Nuget et non comme une extension VSIX.
+
+- Une ou plusieurs règles sont enfreintes dans le code du projet.
+
+- Le [gravité](#rule-severity) d’une règle non respectée a la valeur **avertissement**, auquel cas les violations ne provoquent pas l’échec, build ou **erreur**, auquel cas tout manquement provoquer l’échec de génération.
+
+Le niveau de détail de la sortie de génération n’affecte pas si les violations de règle sont affichées. Même avec **silencieux** commentaires, des violations de règle s’affichent dans la sortie de génération.
+
+> [!TIP]
+> Si vous avez l’habitude d’analyse statique du code en cours d’exécution à partir de la ligne de commande avec *FxCopCmd.exe* ou via msbuild avec le **RunCodeAnalysis** indicateur, voici comment procéder avec des analyseurs de Roslyn.
+
+Pour afficher les violations de l’analyseur en ligne de commande lorsque vous générez votre projet à l’aide de msbuild, exécutez une commande similaire à celle-ci :
+
+```cmd
+msbuild myproject.csproj /target:rebuild /verbosity:minimal
+```
+
+L’illustration suivante montre la sortie de génération de ligne de commande à partir de la génération d’un projet qui contient une violation de règle analyzer :
+
+![Sortie MSBuild avec violation de règle](media/command-line-build-analyzers.png)
 
 ## <a name="see-also"></a>Voir aussi
 

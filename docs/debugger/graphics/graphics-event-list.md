@@ -1,5 +1,5 @@
 ---
-title: Liste des événements Graphics | Documents Microsoft
+title: Liste des événements Graphics | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,19 +12,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3640a1bbb06de7b05eeb62f847504690921b324
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4ef39ee2a92d1608abbe8d3380d26093b6994ccd
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477834"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511467"
 ---
 # <a name="graphics-event-list"></a>Liste des événements Graphics
 La liste des événements Graphics dans Visual Studio Graphics Analyzer vous permet d'explorer les événements Direct3D enregistrés durant le rendu d'un frame de votre jeu ou application.  
   
  Voici la liste des événements :  
   
- ![Liste des événements ayant « Index » dans leur nom. ] (media/gfx_diag_demo_event_list_orientation.png "gfx_diag_demo_event_list_orientation")  
+ ![Une liste des événements ayant « Index » dans leur nom. ] (media/gfx_diag_demo_event_list_orientation.png "gfx_diag_demo_event_list_orientation")  
   
 ## <a name="using-the-event-list"></a>Utilisation de la liste des événements  
  Quand vous sélectionnez un événement dans la liste des événements, cela se reflète aussitôt dans les informations affichées par les autres outils Graphics Analysis. En utilisant la liste des événements avec ces autres outils, vous pouvez examiner un problème de rendu en détail pour en identifier la cause. Pour en savoir plus sur la façon de résoudre les problèmes de rendu en combinant la liste des événements aux autres outils Graphics Analysis, consultez [Exemples](graphics-diagnostics-examples.md).  
@@ -45,7 +45,7 @@ La liste des événements Graphics dans Visual Studio Graphics Analyzer vous per
 ### <a name="event-list-views"></a>Affichages de la liste des événements  
  La liste des événements propose deux affichages différents qui organisent les événements graphiques de différentes manières pour mieux prendre en compte votre flux de travail et vos préférences. Le premier est le *affichage de travail GPU* qui organise les événements et leur état associé hiérarchiquement. Le deuxième est l' *affichage Chronologie* qui organise les événements par ordre chronologique sous forme de liste plate.  
   
- Le **le travail GPU** vue  
+ Le **travail GPU** vue  
  Affiche les événements capturés et leur état de façon hiérarchisée. Le niveau supérieur de la hiérarchie est constituée d'événements tels que des appels de dessin, des effacements, des présences et ceux en rapport avec les affichages. Dans la liste des événements, vous pouvez développer les appels de dessin pour afficher l'état de l'appareil au moment où l'appel de dessin a été émis. Vous pouvez même développer chaque type d'état pour afficher les événements qui ont défini leur valeur. À ce niveau, vous pouvez aussi déterminer si un état particulier a été défini dans un frame précédent ou s'il a été défini plusieurs fois depuis le dernier appel de dessin.  
   
  Affichage **Chronologie**  
@@ -53,7 +53,7 @@ La liste des événements Graphics dans Visual Studio Graphics Analyzer vous per
   
 ##### <a name="to-change-the-event-list-view-mode"></a>Pour modifier le mode d'affichage de la liste des événements  
   
--   Dans le **liste des événements Graphics** fenêtre, au-dessus de la liste des événements, recherchez le **vue** liste déroulante et choisissez le le **chronologie** vue ou la **letravailGPU** affichage.  
+-   Dans le **liste des événements Graphics** fenêtre, au-dessus de la liste d’événements, recherchez le **vue** liste déroulante et choisissez le le **chronologie** vue ou la **travail GPU** vue.  
   
 ### <a name="filtering-events"></a>Filtrage des événements  
  Vous pouvez utiliser la zone Rechercher (située dans l'angle supérieur droit de la fenêtre **Liste des événements Graphics** ) pour filtrer la liste des événements et afficher uniquement ceux dont le nom contient les mots clés spécifiés. Vous pouvez spécifier des mots clés uniques comme `Vertex`(comme dans l’illustration précédente) ou des mots clés multiples en utilisant une liste délimitée par des points-virgules, comme `Draw;Primitive`(qui correspond aux événements dont le nom contient `Draw` ou `Primitive` ). Comme les recherches respectent les espaces (par exemple `VSSet``VS Set` sont des recherches différentes), spécifiez vos recherches avec soin.  
@@ -71,8 +71,8 @@ La liste des événements Graphics dans Visual Studio Graphics Analyzer vous per
 |----------|-----------------------|  
 |(pas d'icône)|Événement général<br /> Tout événement autre qu'un événement non défini par l'utilisateur, un groupe d'événements défini par l'utilisateur ou un événement de dessin.|  
 |![L’icône d’événement de dessin](media/vsg_eventlist_icon_draw.png "vsg_eventlist_icon_draw")|Événement de dessin<br /> Marque un événement de dessin qui s'est produit pendant le frame capturé.|  
-|![L’utilisateur&#45;défini l’icône du marqueur d’événements](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Groupe d'événements définis par l'utilisateur<br /> Événements liés au groupe, tels que définis par l'application.|  
-|![L’utilisateur&#45;défini l’icône du marqueur d’événements](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Marqueur d'événement défini par l'utilisateur<br /> Marque un emplacement spécifique, tel que défini par l'application.|  
+|![L’utilisateur&#45;défini l’icône du marqueur d’événement](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Groupe d'événements définis par l'utilisateur<br /> Événements liés au groupe, tels que définis par l'application.|  
+|![L’utilisateur&#45;défini l’icône du marqueur d’événement](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Marqueur d'événement défini par l'utilisateur<br /> Marque un emplacement spécifique, tel que défini par l'application.|  
   
 ## <a name="marking-user-defined-events-in-your-app"></a>Marquage des événements définis par l'utilisateur dans votre application  
  Les événements définis par l'utilisateur sont propres à votre application. Vous pouvez vous en servir pour établir une corrélation entre les événements importants qui se produisent dans votre application et les événements figurant dans la liste des événements Graphics. Par exemple, vous pouvez créer des groupes d'événements définis par l'utilisateur pour organiser les événements associés (par exemple, ceux qui affichent votre interface utilisateur) sous forme de groupes ou de hiérarchies afin de faciliter la navigation dans la liste des événements. De même, vous pouvez créer des marqueurs quand certains types d'objets sont dessinés afin de trouver facilement les événements graphiques correspondants dans la liste des événements.  
@@ -82,7 +82,7 @@ La liste des événements Graphics dans Visual Studio Graphics Analyzer vous per
 ### <a name="user-defined-events-in-direct3d-12"></a>Événements définis par l'utilisateur dans Direct3D 12  
  Pour créer des groupes et des marqueurs dans Direct3D 12, utilisez les API décrites dans cette section. Le tableau ci-dessous récapitule les API que vous pouvez utiliser selon que vous marquez les événements dans une file d'attente de commandes ou dans une liste de commandes.  
   
-|Description de l'API|[ID3D12CommandQueue](https://msdn.microsoft.com/library/dn788627.aspx)|[ID3D12GraphicsCommandList](https://msdn.microsoft.com/library/dn903537.aspx)|  
+|Description de l'API|[ID3D12CommandQueue](/windows/desktop/api/d3d12/nn-d3d12-id3d12commandqueue)|[ID3D12GraphicsCommandList](/windows/desktop/api/d3d12/nn-d3d12-id3d12graphicscommandlist)|  
 |---------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------|  
 |Vérifier la disponibilité des événements définis par l'utilisateur|[PIXGetStatus](http://msdn.microsoft.com/en-us/f7ebd985-fb5d-46d7-abec-099df4b9be0e)|[PIXGetStatus](http://msdn.microsoft.com/en-us/1046ac43-a0a3-42bf-bae8-14aa72fa7567)|  
 |Commencer un groupe d'événements|[PIXBeginEvent](http://msdn.microsoft.com/en-us/5f51fff7-f313-4558-965b-2a443653cd7b)|[PIXBeginEvent](http://msdn.microsoft.com/en-us/4ddb3311-b9b5-449a-bbfb-7634e0d56e87)|  
@@ -92,7 +92,7 @@ La liste des événements Graphics dans Visual Studio Graphics Analyzer vous per
 ### <a name="user-defined-events-in-direct3d-11-and-earlier"></a>Événements définis par l'utilisateur dans Direct3D 11 et les versions antérieures  
  Pour créer des groupes et des marqueurs dans Direct3D 11 ou les versions antérieures, utilisez les API décrites dans cette section. Le tableau ci-dessous récapitule les API que vous pouvez utiliser pour les différentes versions de Direct3D 11, ainsi que les versions antérieures de Direct3D.  
   
-|Description de l'API|[ID3D11DeviceContext2](http://msdn.microsoft.com/library/windows/desktop/dn280498.aspx) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](http://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|Famille d’API D3DPerf_ (Direct3D 11.0 et antérieur)|  
+|Description de l'API|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](http://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|Famille d’API D3DPerf_ (Direct3D 11.0 et antérieur)|  
 |---------------------|---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------|  
 |Commencer un groupe d'événements|`BeginEventInt`|`BeginEvent`|`D3DPerf_BeginEvent`|  
 |Terminer un groupe d'événements|`EndEventInt`|`EndEvent`|`D3DPerf_EndEvent`|  
@@ -102,17 +102,18 @@ La liste des événements Graphics dans Visual Studio Graphics Analyzer vous per
 
 <!-- VERSIONLESS -->
 <a name="resource-history"></a>
-## Ressource historique Visual Studio 2017 et supérieur contiennent le **l’historique des ressources** fenêtre.  En sélectionnant l’icône espion ![icône espion](media/gfx_watch.png) en regard d’une entrée dans le **liste des événements** fenêtre s’affiche la **l’historique des ressources** fenêtre indiqué ci-dessous :
+## <a name="resource-history"></a>Historique des ressources
+Visual Studio 2017 et versions supérieur contiennent le **historique des ressources** fenêtre.  En sélectionnant l’icône espion ![icône espion](media/gfx_watch.png) en regard d’une entrée dans le **liste des événements** fenêtre fera apparaître le **historique des ressources** fenêtre indiqué ci-dessous :
 
 ![Historique des ressources](media/gfx_diag_resource_history.png)
 
-Cette fenêtre vous permet d’afficher l’historique de l’élément sélectionné dans la liste des événements.  La liste déroulante en haut peut être utilisée pour sélectionner d’autres éléments pour afficher l’historique de.  La moitié supérieure de la fenêtre contient les **événements de Frame le programme d’installation**.  Voici les événements qui appartiennent à la *créer* catégorie de type et sont des appels qui en général, initialisent et créer la ressource.  Au bas de la fenêtre contient les **événements de Frame** section.  Ces normal en lecture et écrivent d’événements qui se produisent pendant l’utilisation de la ressource.  
+Cette fenêtre vous permet d’afficher l’historique de l’élément sélectionné dans la liste des événements.  La liste déroulante en haut peut être utilisée pour sélectionner d’autres éléments pour afficher l’historique de.  La moitié supérieure de la fenêtre contient les **les événements de configuration de Frame**.  Voici les événements qui appartiennent à la *créer* catégorie de type et sont des appels qui en général, initialisent et créer la ressource.  Au bas de la fenêtre contient les **événements de Frame** section.  Celles-ci sont en lecture normale et écrivent des événements qui se produisent pendant l’utilisation de la ressource.  
 
 Colonne|Description
 ---|---
-**Type** | Indique le type de l’entrée, en général *créer*, *en lecture* et *écrire*.  
-**Affichage** | Affiche une miniature de la ressource à ce moment précis.  Double-cliquez sur la vignette pour ouvrir une vue Détails de la ressource à ce moment-là.  
-**Event**| Illustre l’appel de méthode qui s’est produite qui a généré l’événement.  Tout historique supplémentaire sur les éléments individuels peut être affiché en sélectionnant l’icône espion ![icône espion](media/gfx_watch.png) sur la ligne appropriée.  En outre, tout élément qui est dessiné dans le texte bleu, tel que `m_commandList` dans la capture d’écran ci-dessus, vous pouvez sélectionner pour plus de détails.
+**Type** | Affiche le type de l’entrée, généralement *créer*, *en lecture* et *écrire*.  
+**Affichage** | Affiche une miniature de la ressource à ce moment précis.  Double-cliquez sur la miniature pour ouvrir une vue de détails de la ressource à ce moment-là.  
+**Event**| Illustre l’appel de méthode qui s’est produite qui a généré l’événement.  Aucun historique supplémentaire sur des éléments individuels sont consultables en sélectionnant l’icône espion ![icône espion](media/gfx_watch.png) sur la ligne appropriée.  En outre, n’importe quel élément qui est dessiné dans le texte en bleu, tel que `m_commandList` dans la capture d’écran ci-dessus, peut être sélectionné pour plus d’informations.
 <!-- /VERSIONLESS -->
 
 ## <a name="see-also"></a>Voir aussi  
