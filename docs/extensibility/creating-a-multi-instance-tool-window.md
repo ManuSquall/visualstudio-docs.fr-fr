@@ -1,5 +1,5 @@
 ---
-title: Création d’une fenêtre d’outil multi-instance | Documents Microsoft
+title: Création d’une fenêtre d’outil multi-instance | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,28 +14,28 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 910ca8f223d5f4f37242990ba7384afb0dbebd7c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 19a41e172fd68687cffeca91bdfb4bc418ecdf60
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097794"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499765"
 ---
-# <a name="creating-a-multi-instance-tool-window"></a>Création d’une fenêtre d’outil à instances multiples
-Vous pouvez programmer une fenêtre outil afin que plusieurs instances de celui-ci peuvent être ouverts simultanément. Par défaut, les fenêtres Outil peuvent ouvrir qu’une seule instance.  
+# <a name="create-a-multi-instance-tool-window"></a>Créer une fenêtre d’outil multi-instance
+Vous pouvez programmer une fenêtre outil afin que plusieurs instances de celui-ci peuvent être ouverts simultanément. Par défaut, les fenêtres Outil peuvent avoir qu’une seule instance ouvrir.  
   
- Lorsque vous utilisez une fenêtre d’outil à plusieurs instances, vous pouvez afficher plusieurs sources connexes d’informations en même temps. Par exemple, vous pouvez placer un multiligne <xref:System.Windows.Forms.TextBox> contrôle dans une fenêtre d’outil à plusieurs instances de sorte que plusieurs extraits de code sont disponibles simultanément pendant une session de programmation. En outre, par exemple, vous pouvez placer un <xref:System.Windows.Forms.DataGrid> contrôle et une liste déroulante de zone dans une fenêtre d’outil multi-instance afin que plusieurs sources de données en temps réel peuvent être suivis simultanément.  
+ Lorsque vous utilisez une fenêtre outil à instances multiples, vous pouvez afficher plusieurs sources associées d’informations en même temps. Par exemple, vous pouvez placer un multiligne <xref:System.Windows.Forms.TextBox> contrôle dans une fenêtre outil à instances multiples de sorte que plusieurs extraits de code sont disponibles simultanément pendant une session de programmation. En outre, par exemple, vous pouvez placer un <xref:System.Windows.Forms.DataGrid> contrôle et une liste déroulante, zone dans une fenêtre d’outil multi-instance afin que plusieurs sources de données en temps réel peuvent être suivis simultanément.  
   
-## <a name="creating-a-basic-single-instance-tool-window"></a>Création d’une fenêtre d’outil Basic (SIS)  
+## <a name="create-a-basic-single-instance-tool-window"></a>Créer une fenêtre outil de base (uniques)  
   
-1.  Créez un projet nommé **MultiInstanceToolWindow** à l’aide du modèle VSIX et ajouter un modèle d’élément de fenêtre outil personnalisé nommé **MIToolWindow**.  
+1.  Créez un projet nommé **MultiInstanceToolWindow** en utilisant le modèle VSIX et ajouter un modèle d’élément de fenêtre outil personnalisé nommé **MIToolWindow**.  
   
     > [!NOTE]
-    >  Pour plus d’informations sur la création d’une extension avec une fenêtre outil, consultez [création d’une Extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md).  
+    >  Pour plus d’informations sur la création d’une extension avec une fenêtre outil, consultez [créer une extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-## <a name="making-a-tool-window-multi-instance"></a>Rendre une instance de multiples de fenêtre outil  
+## <a name="make-a-tool-window-multi-instance"></a>Créer une instance de multiples de fenêtre outil  
   
-1.  Ouvrez le **MIToolWindowPackage.cs** de fichiers et recherchez le `ProvideToolWindow` attribut. et le `MultiInstances=true` paramètre, comme indiqué dans l’exemple suivant :  
+1.  Ouvrez le *MIToolWindowPackage.cs* de fichiers et de trouver le `ProvideToolWindow` attribut. et le `MultiInstances=true` paramètre, comme indiqué dans l’exemple suivant :  
   
     ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
@@ -47,11 +47,11 @@ Vous pouvez programmer une fenêtre outil afin que plusieurs instances de celui-
     {. . .}  
     ```  
   
-2.  Dans le fichier MIToolWindowCommand.cs, recherchez la méthode ShowToolWindos(). Dans cette méthode, appelez le <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> (méthode) et définissez son `create` indicateur `false` afin qu’il effectue une itération dans les instances de fenêtre Outil existantes jusqu'à un disponible `id` est trouvé.  
+2.  Dans le *MIToolWindowCommand.cs* de fichiers, recherchez le `ShowToolWindos()` (méthode). Dans cette méthode, appelez le <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> (méthode) et définissez son `create` indicateur `false` afin qu’il effectue une itération dans les instances de la fenêtre Outil existantes jusqu'à une disponible `id` est trouvé.  
   
 3.  Pour créer une instance de la fenêtre outil, appelez le <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> (méthode) et définissez son `id` à des valeurs disponibles et ses `create` indicateur `true`.  
   
-     Par défaut, la valeur de la `id` paramètre de la <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> méthode est `0`. Cette valeur, une fenêtre outil à instance unique. Pour plus d’une instance doit être hébergé, chaque instance doit avoir son propre `id`.  
+     Par défaut, la valeur de la `id` paramètre de la <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> méthode est `0`. Cette valeur, une fenêtre outil à instance unique. Pour plus d’une instance d’héberger, chaque instance doit avoir son propre `id`.  
   
 4.  Appelez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> méthode sur le <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objet qui est retourné par la <xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A> propriété de l’instance de la fenêtre outil.  
   

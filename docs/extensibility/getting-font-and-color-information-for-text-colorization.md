@@ -1,5 +1,5 @@
 ---
-title: Mise en route de la police et les informations de couleur de colorisation de texte | Documents Microsoft
+title: L’obtention de la police et les informations de couleur de colorisation de texte | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,40 +14,40 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c86e37d6d7da9da0a6b0978770bf7d7564fa19c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 49b1fbf18fb0dac23fcc55b7d9765dd4d1a88d32
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129694"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499697"
 ---
-# <a name="getting-font-and-color-information-for-text-colorization"></a>Mise en route de la police et les informations de couleur de colorisation de texte
-Le processus qui effectue le rendu ou affiche du texte impriment dans les éléments d’interface utilisateur utilisateur varie selon le type de projet, sa technologie et developer de préférences. Le **polices et couleurs** page de propriétés stocke les paramètres.
+# <a name="get-font-and-color-information-for-text-colorization"></a>Obtenir des informations de police et de couleur pour la colorisation de texte
+Le processus qui effectue le rendu ou affiche le texte en couleurs se dans les éléments d’interface (UI) utilisateur varie selon le type de préférences de projet, sa technologie et les développeurs. Le **polices et couleurs** page de propriétés stocke les paramètres.
 
- La plupart des implémentations qui affichent du texte impriment peut-être le <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> et associé les interfaces pour les paramètres d’affichage de présentation et la récupération de stocker du texte.
+ La plupart des implémentations qui affichent du texte en couleurs se doivent le <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> et associés des interfaces pour les paramètres d’affichage de présentation, la récupération et le stocker du texte.
 
 > [!NOTE]
->  Lors de la personnalisation de l’éditeur principal (qui prend en charge la **texte EditorCategory**), il est recommandé d’utiliser la technologie de coloration de la syntaxe dans le service de langage. Pour plus d’informations, consultez [vue d’ensemble de la couleur et de police](../extensibility/font-and-color-overview.md).
+>  Lors de la personnalisation de l’éditeur principal (qui prend en charge la **texte EditorCategory**), il est recommandé d’utiliser la technologie de coloration dans le service de langage. Pour plus d’informations, consultez [vue d’ensemble de police et couleur](../extensibility/font-and-color-overview.md).
 
-## <a name="getting-default-font-and-color-information"></a>Mise en route de la police par défaut et les informations de couleur
+## <a name="get-default-font-and-color-information"></a>Obtenir des informations de police et la couleur par défaut
  Tous les le **polices et couleurs** paramètres de n’importe quelle fenêtre d’affichage du texte doivent être spécifiés dans le **éléments affichés** d’un **catégorie**. Pour plus d’informations, consultez [polices et couleurs, environnement, boîte de dialogue Options](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
 
 Pour mettre en couleur, un VSPackage doit obtenir actuel **polices et couleurs** paramètres. Un VSPackage peut obtenir les paramètres actuels de plusieurs manières, selon ses besoins :
 
--   Utilisez le mécanisme de persistance de police et de couleur pour récupérer l’état stocké ou en cours. Pour plus d’informations, consultez [l’accès à stockées paramètres de police et couleur](../extensibility/accessing-stored-font-and-color-settings.md).
+-   Utiliser le mécanisme de persistance de police et de couleur pour récupérer l’état stockée ou en cours. Pour plus d’informations, consultez [accès stockés des paramètres de police et couleur](../extensibility/accessing-stored-font-and-color-settings.md).
 
--   Utilisez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interface d’un service qui fournit des données de police et de couleur pour obtenir une instance de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, si le package Visual Studio n’est pas également le fournisseur de couleurs et de polices.
+-   Utilisez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interface d’un service qui fournit des données de police et de couleur pour obtenir une instance de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, si le VSPackage n’est pas également le fournisseur de police et de couleur.
 
 -   Implémentez l'interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>.
 
 Pour garantir que les résultats obtenus par l’interrogation sont à jour, il peut être utile d’utiliser le <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interface pour déterminer si une mise à jour est nécessaire avant d’appeler les méthodes de récupération de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface.
 
-Après avoir obtenu les informations de police et la couleur, analysez le texte à afficher pour identifier les éléments qui nécessitent la colorisation. Affiche le texte dans la fenêtre en utilisant les polices appropriées et les couleurs.
+Après avoir obtenu les informations de police et couleur, analyser le texte à afficher pour identifier les éléments qui nécessitent la colorisation. Afficher le texte dans la fenêtre à l’aide appropriées polices et couleurs.
 
 ## <a name="see-also"></a>Voir aussi
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>
-- [Utilisation de polices et de texte](/dotnet/framework/winforms/advanced/using-fonts-and-text)
-- [Utilisation des couleurs](/cpp/windows/working-with-color-image-editor-for-icons)
+- [Utilisez des polices et texte](/dotnet/framework/winforms/advanced/using-fonts-and-text)
+- [Utiliser des couleurs](/cpp/windows/working-with-color-image-editor-for-icons)
 - [GDI (interface graphique)](http://msdn.microsoft.com/en-us/7e1d4540-bb2e-4257-8eee-eee376acba83)

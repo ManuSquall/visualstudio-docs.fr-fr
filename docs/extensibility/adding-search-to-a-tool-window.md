@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c90d3878713d59975998c42cf17bf0722423666
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 3b060261bec61859f33d99ec3f666e1285413592
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152517"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498562"
 ---
 # <a name="add-search-to-a-tool-window"></a>Ajouter une recherche à une fenêtre outil
 Lorsque vous créez ou mettez à jour d’une fenêtre outil dans votre extension, vous pouvez ajouter les mêmes fonctionnalités de recherche apparaît ailleurs dans Visual Studio. Cette fonctionnalité inclut les fonctionnalités suivantes :  
@@ -33,7 +33,7 @@ Lorsque vous créez ou mettez à jour d’une fenêtre outil dans votre extensio
   
 -   La possibilité de filtrer les recherches par des champs ou des aspects des cibles de recherche.  
   
- En suivant cette procédure pas à pas, vous allez apprendre à effectuer les tâches suivantes :  
+En suivant cette procédure pas à pas, vous allez apprendre à effectuer les tâches suivantes :  
   
 1.  Créez un projet VSPackage.  
   
