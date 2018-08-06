@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3bbb013c16c84ba1b19d262e89ea6ad63718f0
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: b130f6272e5ccc04cc15a6c027afe9b95d65c668
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179734"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381118"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gérer les contrôleurs de test et les agents de test
 
@@ -28,7 +28,7 @@ Pour permettre la configuration et la surveillance du contrôleur de test et des
 
 Pour les projets de tests de charge, vous pouvez également choisir **Gérer les contrôleurs de test** dans le menu **Test de charge**.
 
-## <a name="add-a-test-agent-to-a-test-controller"></a>Ajouter un agent de test à un contrôleur de test
+## <a name="add-a-test-agent-to-a-test-controller"></a>Ajout d’un agent de test à un contrôleur de test
 
 Il est possible d’ajouter un agent de test à un contrôleur de test différent et d’ajouter un agent de test à un contrôleur de test que vous venez d’installer.
 
@@ -90,12 +90,12 @@ Il est possible d’ajouter un agent de test à un contrôleur de test différen
     > [!NOTE]
     > Le numéro de port par défaut est 6901.
 
-4. Pour enregistrer vos changements, choisissez **Appliquer les paramètres**. Fermez la boîte de dialogue **Résumé de la configuration**, puis quittez l’outil de configuration de Test Agent.
+4. Pour enregistrer vos changements, choisissez **Appliquer les paramètres**. Fermez la boîte de dialogue **Résumé de la configuration**, puis quittez l’**outil de configuration de Test Agent**.
 
 > [!WARNING]
 > Si l’agent est actuellement configuré pour s’exécuter sur un autre contrôleur de test, vous devez supprimer l’agent de test de ce contrôleur.
 
-## <a name="remove-a-test-agent-from-a-test-controller"></a>Supprimer un agent de test d’un contrôleur de test
+## <a name="remove-a-test-agent-from-a-test-controller"></a>Suppression d’un agent de test d’un contrôleur de test
 
 Pour pouvoir être supprimé, un agent de test doit être hors connexion.
 
@@ -119,7 +119,7 @@ Pour pouvoir être supprimé, un agent de test doit être hors connexion.
 
 2. Si le contrôleur de test est inscrit auprès d’un projet d’équipe, supprimez l’agent à l’aide de Microsoft Test Manager.
 
-## <a name="change-the-settings-for-a-test-agent"></a>Changer les paramètres d’un agent de test
+## <a name="change-the-settings-for-a-test-agent"></a>Modifications des paramètres d’un agent de test
 
 Les statuts possibles d’un agent de test sont les suivants :
 
@@ -160,9 +160,9 @@ Les modifications du poids et des attributs des agents de test sont appliquées 
 (Facultatif) Pour modifier l'état d'un agent de test, sélectionnez l'agent dans la liste puis sélectionnez une action parmi les choix disponibles, en fonction de l'état actuel de l'agent.
 
 > [!NOTE]
-> Si votre agent de test s'exécute en tant que processus, il est possible de gérer l'état de l'agent de test à partir de l'icône de zone de notification qui s'exécute sur l'ordinateur sur lequel est installé votre agent de test. Elle indique l'état de l'agent de test. Vous pouvez démarrer, arrêter ou redémarrer l'agent s'il s'exécute en tant que processus à l'aide de cet outil. Pour démarrer l’agent de test comme processus s’il ne s’exécute pas, choisissez **Démarrer**, **Tous les programmes**, **Microsoft Visual Studio**, **Microsoft Visual Studio Test Agent**. Cela ajoute l'icône de zone de notification.
+> Si votre agent de test s'exécute en tant que processus, il est possible de gérer l'état de l'agent de test à partir de l'icône de zone de notification qui s'exécute sur l'ordinateur sur lequel est installé votre agent de test. Elle indique l'état de l'agent de test. Vous pouvez démarrer, arrêter ou redémarrer l'agent s'il s'exécute en tant que processus à l'aide de cet outil. Pour démarrer l’agent de test comme processus s’il ne s’exécute pas, choisissez **Démarrer** > **Tous les programmes**  > **Microsoft Visual Studio** > **Microsoft Visual Studio Test Agent**. Cela ajoute l'icône de zone de notification.
 
-## <a name="configure-a-test-controller"></a>Configurer un contrôleur de test
+## <a name="configure-a-test-controller"></a>Configuration d'un contrôleur de test
 
 Pour configurer un contrôleur de test, vous devez utiliser **l’outil de configuration du Contrôleur Team Test**. Lorsque vous configurez votre contrôleur de test, vous pouvez l’inscrire auprès d’une autre collection de projets d’équipe ou annuler son inscription auprès d’une collection de projets d’équipe.
 
@@ -217,15 +217,15 @@ Quand vous ajoutez des rôles à vos paramètres de test pour Visual Studio, vou
 
 ## <a name="load-tests-from-delay-signed-assemblies"></a>Charger des tests à partir d’assemblys de tests à signature différée
 
-Le contrôleur de test et les agents de test ne peuvent charger que les assemblys de tests fortement signés ou non signés. Certains assemblys de tests sont à signature différée, car ils doivent avoir accès à des assemblys de production pour l'application. Toutefois, ces assemblys ne sont pas fortement signés, car il s'agit uniquement d'assemblys de tests qui ne sont pas distribués. Ces assemblys ne peuvent pas être chargés, car il s'agit d'assemblys à signature différée ; par conséquent, vous devez désactiver la vérification de nom fort pour ces assemblys sur tous les ordinateurs où ils sont chargés, y compris sur l'ordinateur du contrôleur de test. Pour désactiver la vérification à signature différée, utilisez sn.exe. Le jeton de clé publique de l'assembly à signature différée pour lequel la vérification de nom fort doit être ignorée peut être également à inclure.
+Le contrôleur de test et les agents de test ne peuvent charger que les assemblys de tests fortement signés ou non signés. Certains assemblys de tests sont à signature différée, car ils doivent avoir accès à des assemblys de production pour l'application. Toutefois, ces assemblys ne sont pas fortement signés, car il s'agit uniquement d'assemblys de tests qui ne sont pas distribués. Ces assemblys ne peuvent pas être chargés, car il s'agit d'assemblys à signature différée ; par conséquent, vous devez désactiver la vérification de nom fort pour ces assemblys sur tous les ordinateurs où ils sont chargés, y compris sur l'ordinateur du contrôleur de test. Pour désactiver la vérification à signature différée, utilisez *sn.exe*. Le jeton de clé publique de l'assembly à signature différée pour lequel la vérification de nom fort doit être ignorée peut être également à inclure.
 
-Utilisez l’outil Sn.exe (Strong Name) pour désactiver la vérification de signature différée.
+Utilisez l’outil *Sn.exe* (Strong Name) pour désactiver la vérification de signature différée.
 
 Cela désactive la vérification des noms forts, pour l'assembly spécifié uniquement, sur l'ordinateur sur lequel vous exécutez la commande. Vous ne pouvez le faire que si vous disposez des autorisations suffisantes.
 
-À l'issue de la série de tests, réactivez la vérification de signature différée via la commande SN.exe.
+À l'issue de la série de tests, réactivez la vérification de signature différée via la commande *SN.exe*.
 
-L'utilisation des commandes SN.exe dans les scripts est recommandée pour désactiver et réactiver la vérification de signature. Vous pouvez désactiver la vérification dans un script d'installation et la réactiver dans un script de nettoyage.
+L'utilisation des commandes *SN.exe* dans les scripts est recommandée pour désactiver et réactiver la vérification de signature. Vous pouvez désactiver la vérification dans un script d'installation et la réactiver dans un script de nettoyage.
 
 ## <a name="see-also"></a>Voir aussi
 

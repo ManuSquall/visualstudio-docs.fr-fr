@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: de90977a239bf728de3fa98978fd134a014200db
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 85759cc5f9297ba2bb0706352d788ba619a8021c
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180072"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380666"
 ---
-# <a name="how-to-create-a-web-service-test"></a>Comment : créer un test de service Web
+# <a name="how-to-create-a-web-service-test"></a>Guide pratique pour créer un test de service web
 
 Vous pouvez utiliser un test de performances web pour tester des services web. À l’aide des options **Insérer une requête** et **Insérer une requête de service web**, vous pouvez personnaliser les requêtes individuelles dans **l’éditeur de test de performances web** pour localiser des pages de service web. En général, vous n'affichez pas ces pages dans l'application web. Par conséquent, vous devez personnaliser la requête pour accéder à ces pages.
 
@@ -37,7 +37,7 @@ Les procédures suivantes utilisent un service web contenu dans le Starter Kit C
 
 3.  Dans la propriété **Url** de la nouvelle requête, tapez le nom du service web, par exemple **http://localhost/storecsvs/InstantOrder.asmx**.
 
-4.  Ouvrez une session distincte du navigateur et tapez l’URL de la page .asmx dans la barre d’outils **Adresse**. Sélectionnez la méthode à tester et examinez le message SOAP. Il contient un `SOAPAction`.
+4.  Ouvrez une session distincte du navigateur et tapez l’URL de la page *.asmx* dans la barre d’outils **Adresse**. Sélectionnez la méthode à tester et examinez le message SOAP. Il contient un `SOAPAction`.
 
 5.  Dans **l’éditeur de test de performances web**, cliquez avec le bouton droit sur la requête et sélectionnez **Ajouter un en-tête** pour ajouter un nouvel en-tête. Dans la propriété **Nom**, tapez `SOAPAction`. Dans la propriété **Valeur**, tapez la valeur qui apparaît dans `SOAPAction` (par exemple, `"http://tempuri.org/CheckStatus"`).
 
@@ -60,7 +60,7 @@ Les procédures suivantes utilisent un service web contenu dans le Starter Kit C
      </soap:Envelope>
      ```
 
-9. Retournez à **l’éditeur de test de performances web**, puis cliquez sur le bouton de sélection (…) dans la propriété **Corps chaîne**. Collez le contenu du Presse-papiers dans la propriété.
+9. Retournez à **l’éditeur de test de performances web**, puis cliquez sur le bouton de sélection **(…)** dans la propriété **Corps chaîne**. Collez le contenu du Presse-papiers dans la propriété.
 
 10. Vous devez remplacer toutes les valeurs d'espace réservé par des valeurs valides pour que le test réussisse. Dans l'exemple précédent, vous devez remplacer les deux instances de `string` et un `int`. Cette opération de service web ne se termine que si un utilisateur inscrit passe une commande.
 

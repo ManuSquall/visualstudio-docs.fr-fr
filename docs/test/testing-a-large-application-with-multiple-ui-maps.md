@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 126d5435bf5f5aa5e89120b1767a616d8ac35d51
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f7ada2c6f3b147e103c132e3d5dfd1d8ac623065
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180371"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379817"
 ---
-# <a name="testing-a-large-application-with-multiple-ui-maps"></a>Test d'une grande application avec plusieurs mappages d'IU
+# <a name="test-a-large-application-with-multiple-ui-maps"></a>Tester une application volumineuse avec plusieurs mappages d’interface utilisateur
 
 Cette rubrique explique comment utiliser des tests codés de l'interface utilisateur quand vous testez une grande application à l'aide de plusieurs mappages d'interface utilisateur.
 
@@ -27,7 +27,7 @@ Cette rubrique explique comment utiliser des tests codés de l'interface utilisa
 
 -   Visual Studio Enterprise
 
- Quand vous créez un test codé de l’interface utilisateur, le framework de test de Visual Studio génère du code pour le test par défaut dans une classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>. Pour plus d’informations sur l’enregistrement des tests codés de l’interface utilisateur, consultez [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md) et [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md).
+ Quand vous créez un test codé de l’interface utilisateur, le framework de test de Visual Studio génère du code pour le test par défaut dans une classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>. Pour plus d’informations sur l’enregistrement des tests codés de l’interface utilisateur, consultez [Créer des tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md) et [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md).
 
  Le code généré pour le mappage d'IU contient une classe pour chaque objet avec lequel le test interagit. Pour chaque méthode générée, une classe compagnon pour les paramètres de méthode est générée spécifiquement pour cette méthode. S'il existe un grand nombre d'objets, de pages, de formulaires et de contrôles dans votre application, le mappage d'IU peut devenir très grand. De plus, si plusieurs personnes travaillent sur des tests, l'application devient complexe avec un seul fichier de mappage d'IU de grande taille.
 
@@ -44,11 +44,11 @@ Cette rubrique explique comment utiliser des tests codés de l'interface utilisa
 
 -   Plusieurs jeux complexes de contrôles d'IU composites qui, ensemble, effectuent une opération logique, par exemple une page d'inscription dans un site web ou la page d'achat d'un panier.
 
--   Un jeu indépendant de contrôles accessibles à partir de différents points de l'application, par exemple un Assistant avec plusieurs pages d'opérations. Si chaque page de l'Assistant est particulièrement complexe, vous pourriez créer des mappages d'IU distincts pour chaque page.
+-   Un jeu indépendant de contrôles accessible à partir de différents points de l'application, par exemple un Assistant avec plusieurs pages d'opérations. Si chaque page de l'Assistant est particulièrement complexe, vous pourriez créer des mappages d'IU distincts pour chaque page.
 
-## <a name="adding-multiple-ui-maps"></a>Ajout de plusieurs mappages d'IU
+## <a name="add-multiple-ui-maps"></a>Ajouter des mappages d'IU multiples
 
-#### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>Pour ajouter un mappage d'IU à votre projet de test codé de l'interface utilisateur
+### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>Pour ajouter un mappage d'IU à votre projet de test codé de l'interface utilisateur
 
 1.  Dans l’**Explorateur de solutions**, pour créer un dossier dans votre projet de test codé de l’interface utilisateur où stocker tous les mappages d’IU, cliquez avec le bouton droit sur le fichier de projet de test codé de l’interface utilisateur, pointez sur **Ajouter**, puis choisissez **Nouveau dossier**. Par exemple, vous pourriez le nommer `UIMaps`.
 
@@ -144,5 +144,5 @@ namespace ContosoProject
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>
 - [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
-- [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md)
+- [Créer des tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md)
 - [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md)

@@ -10,12 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 928002d58a03ed6c52e85114c09e42a75b63aef0
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 3475bfff07b64c171b506ff1cefaee6c8e55cdda
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232388"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381079"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Créer des applications Xamarin avec une interface utilisateur native dans Visual Studio
 
@@ -70,13 +70,13 @@ Visual Studio n’a pas de modèle de solution pour la création d’application
 
     Après avoir cliqué sur OK, la solution **WeatherApp** se compose d’un seul projet nommé **WeatherApp**.
 
-2.  Si vous souhaitez cibler iOS, ajoutez un projet iOS à la solution. Cliquez avec le bouton droit sur le nom de la solution dans **l’Explorateur de solutions**, puis sélectionnez **Ajouter** et **Nouveau projet**.  Dans la boîte de dialogue **Nouveau projet**, sélectionnez à gauche **Visual C#**, puis **iOS** et **Universel**. (Si cette option n’y figure pas, vous devez peut-être installer Xamarin ou activer la fonctionnalité Visual Studio 2017. Consultez [Configurer et installer](../cross-platform/setup-and-install.md).) Dans la liste des modèles, sélectionnez **Application avec affichage unique (iOS)**. Affectez-lui le nom **WeatherApp.iOS**.
+2.  Si vous souhaitez cibler iOS, ajoutez un projet iOS à la solution. Cliquez avec le bouton droit sur le nom de la solution dans l’**Explorateur de solutions**, puis sélectionnez **Ajouter** et **Nouveau projet**.  Dans la boîte de dialogue **Nouveau projet**, sélectionnez à gauche **Visual C#**, puis **iOS** et **Universel**. (Si cette option n’y figure pas, vous devez peut-être installer Xamarin ou activer la fonctionnalité Visual Studio 2017. Consultez [Configurer et installer](../cross-platform/setup-and-install.md).) Dans la liste des modèles, sélectionnez **Application avec affichage unique (iOS)**. Affectez-lui le nom **WeatherApp.iOS**.
 
 3.  Si vous souhaitez cibler Android, ajoutez un projet Android à la solution. Dans la boîte de dialogue **Nouveau projet**, sélectionnez à gauche **Visual C#**, puis **Android**. Dans la liste des modèles, sélectionnez **Application vide (Android)**. Affectez-lui le nom **WeatherApp.Android**.
 
 4. Si vous souhaitez cibler la plateforme Windows universelle, dans la boîte de dialogue **Nouveau projet**, sélectionnez à gauche **Visual C#**, puis **Windows universel**. Dans la liste des modèles, sélectionnez **Application vide (Windows universel)** et affectez-lui le nom **WeatherApp.UWP**.
 
-5. Pour chacun des projets d’application (iOS, Android et UWP), cliquez avec le bouton droit sur la section **Références** dans **l’Explorateur de solutions** et sélectionnez **Ajouter une référence**. Dans la boîte de dialogue **Gestionnaire de références**, sélectionnez à gauche **Projet** et **Solution**. Vous verrez une liste de tous les projets de la solution à l’exception du projet dont vous gérez les références :
+5. Pour chacun des projets d’application (iOS, Android et UWP), cliquez avec le bouton droit sur la section **Références** dans **Explorateur de solutions** et sélectionnez **Ajouter une référence**. Dans la boîte de dialogue **Gestionnaire de références**, sélectionnez à gauche **Projet** et **Solution**. Vous verrez une liste de tous les projets de la solution à l’exception du projet dont vous gérez les références :
 
    ![Définition d’une référence au projet .NET Standard](../cross-platform/media/cross-plat-xamarin-build-3.png)
 
@@ -86,7 +86,7 @@ Visual Studio n’a pas de modèle de solution pour la création d’application
 
 6. Ajoutez le package NuGet **Newtonsoft.Json** au projet .NET Standard, que vous allez utiliser pour traiter les informations récupérées à partir d’un service de données météo :
 
-    -   Cliquez avec le bouton droit sur le projet **WeatherApp** dans **l’Explorateur de solutions** et sélectionnez **Gérer les packages NuGet...**.
+    -   Cliquez avec le bouton droit sur le projet **WeatherApp** dans **Explorateur de solutions** et sélectionnez **Gérer les packages NuGet...**.
 
          Dans la fenêtre NuGet, sélectionnez l’onglet **Parcourir**, puis recherchez **Newtonsoft**.
 
@@ -229,7 +229,7 @@ Visual Studio n’a pas de modèle de solution pour la création d’application
 
 ### <a name="design-the-look-and-feel-of-your-app"></a>Concevoir l'apparence de votre application
 
-1.  Dans **l’Explorateur de solutions**, développez le dossier **WeatherApp.Droid > Ressources > disposition**, puis ouvrez *Main.axml*. Cette commande ouvre le fichier dans le concepteur visuel. (Si une erreur liée à Java s’affiche, consultez ce [billet de blog](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9).)
+1.  Dans **Explorateur de solutions**, développez le dossier **WeatherApp.Droid > Ressources > disposition**, puis ouvrez *Main.axml*. Cette commande ouvre le fichier dans le concepteur visuel. (Si une erreur liée à Java s’affiche, consultez ce [billet de blog](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9).)
 
     > [!TIP]
     >  Le projet contient de nombreux autres fichiers. Ils ne sont pas abordés dans cet article, mais si vous souhaitez étudier plus en détail la structure d’un projet Android, consultez [Seconde partie : expérience approfondie](/xamarin/android/get-started/hello-android/hello-android-deepdive/) dans l’article Hello Android.
@@ -659,7 +659,7 @@ Ce code appelle la méthode `GetWeather` que vous avez définie dans votre code 
 
 ### <a name="run-the-app-and-see-how-it-looks"></a>Exécuter l'application pour vérifier son fonctionnement
 
-1.  Dans **l’Explorateur de solutions**, définissez le projet **WeatherApp.UWP** comme projet de démarrage.
+1.  Dans **Explorateur de solutions**, définissez le projet **WeatherApp.UWP** comme projet de démarrage.
 
 2.  Dans la zone de liste déroulante **Plateformes solution**, sélectionnez **x86** et **Ordinateur local** pour déployer l’application sur le bureau Windows 10.
 
