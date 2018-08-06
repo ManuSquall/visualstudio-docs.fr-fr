@@ -28,9 +28,14 @@
   items:
     - name: Analyse du code pour le code managé
       items:
-        - name: Installer les analyseurs Roslyn
+        - name: Migrer depuis FxCop
+          href: fxcop-analyzers.yml
+          items:
+            - name: Installer des analyseurs FxCop
+              href: install-fxcop-analyzers.md
+        - name: Installer des analyseurs Roslyn
           href: install-roslyn-analyzers.md
-        - name: Configurer et utiliser les analyseurs Roslyn
+        - name: Configurer et utiliser des analyseurs Roslyn
           href: use-roslyn-analyzers.md
         - name: Activer l’analyse automatique du code
           href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
@@ -43,7 +48,7 @@
         - name: Supprimer les avertissements
           href: in-source-suppression-overview.md
           items:
-            - name: Supprimer les avertissements d’analyse de code pour le code généré
+            - name: Supprimer les avertissements d’analyse du code pour le code généré
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
         - name: Personnaliser le dictionnaire d’analyse du code
           href: how-to-customize-the-code-analysis-dictionary.md

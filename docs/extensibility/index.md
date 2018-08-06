@@ -8,14 +8,14 @@ title: Documentation sur l’extensibilité de Visual Studio | Microsoft Docs
 description: En savoir plus sur l’extensibilité Visual Studio.
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: 4467608e843a1a917b34937ab3bd16931e76eea3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 37f5bfbac42c55a332ddf6f1904e2008d50ae40f
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
-ms.locfileid: "27246545"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500295"
 ---
-# <a name="visual-studio-extensibility-documentation"></a>Documentation de l’extensibilité de Visual Studio
+# <a name="visual-studio-extensibility-documentation"></a>Documentation de l’extensibilité Visual Studio
 
 Visual Studio vous fournit de nombreuses options d’extensibilité. Vous pouvez étendre Visual Studio, ajouter des analyseurs de code source pour le compilateur « Roslyn », ou même créer vos propres kits de développement logiciel.
 
