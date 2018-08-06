@@ -15,14 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ecd88a238c783224dc9d1ea982fe1ed3970fcfc1
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: ade59e757778ac7858732f5bf9880b9f88eacd69
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567455"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalisation et localisation de solutions Excel
-  Cette section contient des informations sur les considérations spéciales concernant les solutions Microsoft Office Excel appelées à être exécutées sur des ordinateurs dont les paramètres Windows sont autres qu’anglais. La plupart des aspects de la globalisation et de la localisation des solutions Microsoft Office sont les mêmes que ceux que vous rencontrez quand vous créez d’autres types de solutions à l’aide de Visual Studio. Pour plus d’informations, consultez [Globalize et localisation d’applications](/visualstudio/ide/globalizing-and-localizing-applications).  
+  Cette section contient des informations sur les considérations spéciales concernant les solutions Microsoft Office Excel appelées à être exécutées sur des ordinateurs dont les paramètres Windows sont autres qu’anglais. La plupart des aspects de la globalisation et de la localisation des solutions Microsoft Office sont les mêmes que ceux que vous rencontrez quand vous créez d’autres types de solutions à l’aide de Visual Studio. Pour obtenir des informations générales, consultez [Globalize et localisation d’applications](/visualstudio/ide/globalizing-and-localizing-applications).  
   
  Par défaut, les contrôles hôtes dans Microsoft Office Excel fonctionnent correctement dans tous les paramètres régionaux Windows, dans la mesure où l’ensemble des données passées ou manipulées avec du code managé présentent une mise en forme Anglais (États-Unis). Dans les projets qui ciblent le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou le [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], ce comportement est contrôlé par le Common Language Runtime (CLR).  
   
@@ -40,16 +41,16 @@ ms.lasthandoff: 05/22/2018
   
  Par exemple, si les utilisateurs finaux ont défini leurs options régionales sur les paramètres régionaux Allemand (Allemagne), ils s’attendent à ce que la date du 29 juin 2005 soit mise en forme de de cette façon : 29.06.2005. Or, si votre solution passe la date à Excel sous forme de chaîne, vous devez mettre en forme la date selon le format Anglais (États-Unis) : 6/29/2005. Si la cellule est mise en forme en tant que cellule de date, Excel affiche la date au format Allemand (Allemagne).  
   
-### <a name="pass-other-locale-ids-to-the-excel-object-model"></a>Passer des autres ID de paramètres régionaux au modèle objet Excel  
+### <a name="pass-other-locale-ids-to-the-excel-object-model"></a>Passer d’autres ID de paramètres régionaux au modèle objet Excel  
  Le Common Language Runtime (CLR) passe automatiquement l’ID de paramètres régionaux 1033 à toutes les méthodes et propriétés du modèle objet Excel qui acceptent les données sensibles aux paramètres régionaux. Il n’y a aucun moyen de modifier ce comportement automatiquement pour tous les appels à destination du modèle objet. Cependant, vous pouvez passer un autre ID de paramètres régionaux à une méthode spécifique en utilisant <xref:System.Type.InvokeMember%2A> pour appeler la méthode et en passant l’ID de paramètres régionaux au paramètre *culture* de la méthode.  
   
 ## <a name="localize-document-text"></a>Localiser le texte du document  
  Il est probable que le document, le modèle ou le classeur de votre projet contient du texte statique, qui doit être localisé séparément à partir de l’assembly et d’autres ressources managées. Une façon simple de procéder consiste à copier le document et à traduire le texte en utilisant Microsoft Office Word ou Microsoft Office Excel. Cette procédure fonctionne même si vous n’apportez pas de modifications au code, car vous pouvez lier n’importe quel nombre de documents à un même assembly.  
   
- Vous devez quand même vous assurer que les parties de votre code qui interagissent avec le texte du document continuent de correspondre à la langue du texte et que les signets, plages nommées et autres champs d’affichage s’accommodent de toute nouvelle mise en forme du document Office qui s’avérait nécessaire pour s’adapter à la grammaire et à la longueur de texte différentes. Modèles de document qui contiennent peu de texte, vous souhaiterez stocker le texte dans les fichiers de ressources, puis charger le texte lors de l’exécution.  
+ Vous devez quand même vous assurer que les parties de votre code qui interagissent avec le texte du document continuent de correspondre à la langue du texte et que les signets, plages nommées et autres champs d’affichage s’accommodent de toute nouvelle mise en forme du document Office qui s’avérait nécessaire pour s’adapter à la grammaire et à la longueur de texte différentes. Modèles de document qui contiennent peu de texte, vous pouvez souhaiter stocker le texte dans les fichiers de ressources, puis à charger le texte lors de l’exécution.  
   
 ### <a name="text-direction"></a>Direction du texte  
- Dans Excel, vous pouvez définir une propriété de la feuille de calcul pour afficher le texte de droite à gauche. Contrôles hôtes, ou n’importe quel contrôle ayant une `RightToLeft` propriété, qui sont placés automatiquement dans le concepteur correspondent à ces paramètres lors de l’exécution. Word ne disposant pas de paramètre de document pour le texte bidirectionnel (seul l’alignement du texte est modifié), vous ne pouvez pas mapper les contrôles à ce paramètre. Au lieu de cela, vous devez définir l’alignement du texte pour chaque contrôle. Il est possible d’écrire du code qui parcoure tous les contrôles et les force à afficher le texte de droite à gauche.  
+ Dans Excel, vous pouvez définir une propriété de la feuille de calcul pour afficher le texte de droite à gauche. Contrôles hôtes, ou n’importe quel contrôle qui a un `RightToLeft` propriété, qui est automatiquement placée sur le concepteur correspondent à ces paramètres lors de l’exécution. Word ne disposant pas de paramètre de document pour le texte bidirectionnel (seul l’alignement du texte est modifié), vous ne pouvez pas mapper les contrôles à ce paramètre. Au lieu de cela, vous devez définir l’alignement du texte pour chaque contrôle. Il est possible d’écrire du code qui parcoure tous les contrôles et les force à afficher le texte de droite à gauche.  
   
 ### <a name="change-culture"></a>Modifier la culture  
  Votre code de personnalisation au niveau du document partage généralement le thread d’interface utilisateur principal d’Excel. De ce fait, toute modification que vous apportez à la culture du thread affecte tout ce qui s’exécute sur celui-ci ; la modification ne se limite pas à votre personnalisation.  
@@ -57,29 +58,29 @@ ms.lasthandoff: 05/22/2018
  Les contrôles Windows Forms sont initialisés avant que l’application hôte démarre les compléments VSTO de niveau application. En pareil cas, la culture doit être modifiée avant de définir les contrôles d’interface utilisateur.  
   
 ## <a name="install-the-language-packs"></a>Installer les modules linguistiques  
- Si vous n’avez pas les paramètres Anglais pour Windows, vous pouvez installer les modules linguistiques [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] pour voir les messages de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] dans la même langue que celle de Windows. Si des utilisateurs finals n’exécutent pas vos solutions avec des paramètres Anglais pour Windows, ils doivent disposer du module linguistique approprié pour voir les messages du runtime dans la même langue que celle de Windows. Le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] modules linguistiques sont disponibles à partir de la [centre de téléchargement Microsoft](http://www.microsoft.com/downloads).  
+ Si vous n’avez pas les paramètres Anglais pour Windows, vous pouvez installer les modules linguistiques [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] pour voir les messages de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] dans la même langue que celle de Windows. Si des utilisateurs finals n’exécutent pas vos solutions avec des paramètres Anglais pour Windows, ils doivent disposer du module linguistique approprié pour voir les messages du runtime dans la même langue que celle de Windows. Le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] linguistiques sont disponibles à partir de la [centre de téléchargement Microsoft](http://www.microsoft.com/downloads).  
   
  Par ailleurs, les modules linguistiques .NET Framework sont nécessaires pour les messages ClickOnce. Les modules linguistiques .NET Framework sont disponibles à partir de la [centre de téléchargement Microsoft](http://www.microsoft.com/downloads).  
   
-## <a name="regional-settings-and-excel-com-calls"></a>Paramètres régionaux et les appels COM Excel  
+## <a name="regional-settings-and-excel-com-calls"></a>Paramètres régionaux et des appels COM Excel  
  Chaque fois qu’un client managé appelle une méthode sur un objet COM et qu’il doit passer des informations spécifiques à la culture, il utilise la propriété <xref:System.Globalization.CultureInfo.CurrentCulture%2A> (paramètres régionaux) qui correspond aux paramètres régionaux du thread actif. Par défaut, les paramètres régionaux du thread actif sont hérités des paramètres régionaux de l’utilisateur. Cependant, quand vous effectuez un appel dans le modèle objet Excel à partir d’une solution Excel créée à l’aide des outils de développement Office dans Visual Studio, le format de données Anglais (États-Unis) (ID de paramètres régionaux 1033) est passé automatiquement au modèle objet Excel. Vous devez mettre en forme toutes les données ayant une mise en forme sensible aux paramètres régionaux, telles que les dates et les devises, en utilisant le format de données Anglais (États-Unis) avant de les passer à Microsoft Office Excel ou de lire ces données à partir du code de votre projet.  
   
-## <a name="considerations-for-storing-data"></a>Considérations sur le stockage des données  
+## <a name="considerations-for-storing-data"></a>Considérations sur le stockage de données  
  Pour assurer une interprétation et une lecture correctes de vos données, vous devez aussi savoir que des problèmes peuvent survenir quand une application stocke des données (par exemple, les formules dans les feuilles de calcul Excel) dans des littéraux de chaîne (codés en dur) et non dans des objets fortement typés. Vous devez utiliser des données mises en forme dans un style indépendant de la culture ou au format Anglais (États-Unis) (valeur LCID 1033).  
   
 ### <a name="applications-that-use-string-literals"></a>Applications qui utilisent des littéraux de chaîne  
  Parmi les valeurs qui peuvent être codées en dur figurent les littéraux de date écrits au format Anglais (États-Unis) et les formules de feuille de calcul Excel qui contiennent des noms de fonctions localisés. Une chaîne codée en dur contenant un nombre tel que « 1,000 » est une autre possibilité ; dans certaines cultures, ce nombre est interprété comme un millier, mais dans d’autres, il représente « un virgule zéro ». Les calculs et les comparaisons effectués sur un format incorrect peuvent produire des données incorrectes.  
   
- Excel interprète les chaînes conformément au LCID qui est passé avec celles-ci. Cela peut poser un problème si le format de la chaîne ne correspond pas au LCID passé. Les solutions Excel créées à l’aide des outils de développement Office dans Visual Studio utilisent le LCID 1033 (en-US) au moment de passer toutes les données. Excel affiche les données en fonction des paramètres régionaux et de la langue de l’interface utilisateur Excel. Visual Basic pour Applications (VBA) fonctionne aussi de cette façon ; les chaînes sont mises en forme au format en-US et VBA passe presque toujours 0 (indépendant de la langue) en guise de LCID. Par exemple, le code VBA suivant affiche une valeur correctement mise en forme pour le 12 mai 2004, conformément aux paramètres régionaux de l’utilisateur actuel :  
+ Excel interprète les chaînes conformément au LCID qui est passé avec celles-ci. Cela peut poser un problème si le format de la chaîne ne correspond pas au LCID passé. Les solutions Excel créées à l’aide des outils de développement Office dans Visual Studio utilisent le LCID 1033 (en-US) au moment de passer toutes les données. Excel affiche les données en fonction des paramètres régionaux et de la langue de l’interface utilisateur Excel. Visual Basic pour Applications (VBA) fonctionne aussi de cette façon ; les chaînes sont mises en forme au format en-US et VBA passe presque toujours 0 (indépendant de la langue) en guise de LCID. Par exemple, le code VBA suivant affiche une valeur correctement mise en forme pour le 12 mai 2004, conformément aux paramètres régionaux de l’utilisateur actuel :  
   
-```  
+```vb
 'VBA  
 Application.ActiveCell.Value2 = "05/12/04"  
 ```  
   
  Ce même code, quand il est utilisé dans une solution créée à l’aide des outils de développement Office dans Visual Studio et passé à Excel via COM Interop, produit les mêmes résultats quand la date est mise en forme dans le style en-US.  
   
- Par exemple :  
+ Exemple :  
   
  [!code-vb[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#6)]
  [!code-csharp[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#6)]  
@@ -92,13 +93,13 @@ Application.ActiveCell.Value2 = "05/12/04"
  [!code-csharp[Trin_VstcoreCreatingExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#7)]  
   
 ### <a name="excel-worksheet-functions"></a>Fonctions de feuille de calcul Excel  
- Les noms de fonctions de feuille de calcul sont traduits en interne pour la plupart des versions linguistiques d’Excel. Cependant, compte tenu des problèmes potentiels liés à la langue et à COM Interop, il est vivement recommandé d’utiliser uniquement les noms de fonctions anglais dans le code.  
+ Les noms de fonctions de feuille de calcul sont traduits en interne pour la plupart des versions linguistiques d’Excel. Toutefois, en raison de potentielles de langage et les problèmes d’interopérabilité COM, il est recommandé que vous utilisez des noms de fonction uniquement en anglais dans votre code.  
   
 ### <a name="applications-that-use-external-data"></a>Applications qui utilisent des données externes  
  Tout code ouvrant ou utilisant des données externes, telles que des fichiers contenant des valeurs séparées par des virgules (fichiers CSV) exportés à partir d’un système hérité, peut aussi être affecté si ces fichiers sont exportés en utilisant un format en plus de « en-US ». Il se peut que l’accès à la base de données ne soit pas affecté, car toutes les valeurs sont censées être au format binaire, à moins que la base de données stocke les dates sous forme de chaînes ou exécute des opérations qui n’utilisent pas le format binaire. De même, si vous créez des requêtes SQL en utilisant des données à partir d’Excel, vous devrez peut-être vérifier qu’elles sont au format en-US, selon la fonction que vous utilisez.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : cibler l’interface utilisateur multilingue Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
+ [Comment : cibler l’interface utilisateur multilingue d’Office](../vsto/how-to-target-the-office-multilingual-user-interface.md)   
  [Concevoir et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md)   
  [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
   

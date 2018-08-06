@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Mise en surbrillance de texte | Documents Microsoft'
+title: 'Procédure pas à pas : Mise en surbrillance de texte | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,31 +13,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90bf22bfe65b1120f5cc149d95eea25357b8ffa4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9ac85c1155851494c2782f72778fdb07e9e55e66
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31147217"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566924"
 ---
-# <a name="walkthrough-highlighting-text"></a>Procédure pas à pas : Mise en surbrillance de texte
-Vous pouvez ajouter différents effets visuels à l’éditeur en créant des composants de Managed Extensibility Framework (MEF). Cette procédure pas à pas montre comment mettre en surbrillance toutes les occurrences du mot actuel dans un fichier texte. Si un mot apparaît plusieurs fois dans un fichier texte, et que vous placez le point d’insertion dans une seule occurrence, toutes les occurrences sont mis en surbrillance.  
+# <a name="walkthrough-highlight-text"></a>Procédure pas à pas : Mise en surbrillance texte
+Vous pouvez ajouter différents effets visuels à l’éditeur en créant des composants de Managed Extensibility Framework (MEF). Cette procédure pas à pas montre comment mettre en surbrillance chaque occurrence du mot actuel dans un fichier texte. Si un mot se produit plusieurs fois dans un fichier texte, et vous positionnez le signe insertion dans une seule occurrence, toutes les occurrences sont mis en surbrillance.  
   
 ## <a name="prerequisites"></a>Prérequis  
- À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme une fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS ultérieurement. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS par la suite. Pour plus d’informations, consultez [installer le SDK Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-mef-project"></a>Création d’un projet MEF  
+## <a name="create-a-mef-project"></a>Créer un projet MEF  
   
-1.  Créez un projet VSIX c#. (Dans le **nouveau projet** boîte de dialogue, sélectionnez **Visual c# / extensibilité**, puis **projet VSIX**.) Nommez la solution `HighlightWordTest`.  
+1.  Créez un projet c# VSIX. (Dans le **nouveau projet** boîte de dialogue, sélectionnez **Visual c# / extensibilité**, puis **projet VSIX**.) Nommez la solution `HighlightWordTest`.  
   
-2.  Ajouter un modèle d’élément classifieur d’éditeur pour le projet. Pour plus d’informations, consultez [création d’une Extension avec un éditeur de modèle d’élément](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2.  Ajouter un modèle d’élément de classifieur d’éditeur au projet. Pour plus d’informations, consultez [créer une extension avec un éditeur de modèle d’élément](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
 3.  Supprimez les fichiers de classe existants.  
   
-## <a name="defining-a-textmarkertag"></a>Définition d’un TextMarkerTag  
+## <a name="define-a-textmarkertag"></a>Définir un TextMarkerTag  
  La première étape de mise en surbrillance de texte est à la sous-classe <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> et définir son apparence.  
   
-#### <a name="to-define-a-textmarkertag-and-a-markerformatdefinition"></a>Pour définir un TextMarkerTag et une MarkerFormatDefinition  
+### <a name="to-define-a-textmarkertag-and-a-markerformatdefinition"></a>Pour définir un TextMarkerTag et une MarkerFormatDefinition  
   
 1.  Ajoutez un fichier de classe et nommez-le **HighlightWordTag**.  
   
@@ -85,11 +85,11 @@ Vous pouvez ajouter différents effets visuels à l’éditeur en créant des co
     }  
     ```  
   
-5.  Créez une deuxième classe qui hérite de <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>et nommez-le HighlightWordFormatDefinition. Pour utiliser cette définition de format pour votre étiquette, vous devez l’exporter avec les attributs suivants :  
+5.  Créez une deuxième classe qui hérite de <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>et nommez-le `HighlightWordFormatDefinition`. Pour pouvoir utiliser cette définition de format pour votre balise, vous devez l’exporter avec les attributs suivants :  
   
     -   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: balises utilisent pour faire référence à ce format  
   
-    -   <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: cela entraîne le format s’affichent dans l’interface utilisateur  
+    -   <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>: cela entraîne le format d’apparaître dans l’interface utilisateur  
   
     ```csharp  
   
@@ -102,7 +102,7 @@ Vous pouvez ajouter différents effets visuels à l’éditeur en créant des co
     }  
     ```  
   
-6.  Dans le constructeur de HighlightWordFormatDefinition, définissez son nom d’affichage et l’apparence. La propriété d’arrière-plan définit la couleur de remplissage, alors que la propriété de premier plan définit la couleur de bordure.  
+6.  Dans le constructeur de HighlightWordFormatDefinition, définissez son nom d’affichage et l’apparence. La propriété Background définit la couleur de remplissage, tandis que la propriété Foreground définit la couleur de bordure.  
   
     ```csharp  
     public HighlightWordFormatDefinition()  
@@ -114,16 +114,16 @@ Vous pouvez ajouter différents effets visuels à l’éditeur en créant des co
     }  
     ```  
   
-7.  Dans le constructeur de HighlightWordTag, passer le nom de la définition de format que vous venez de créer.  
+7.  Dans le constructeur de HighlightWordTag, passez le nom de la définition de format que vous avez créé.  
   
     ```  
     public HighlightWordTag() : base("MarkerFormatDefinition/HighlightWordFormatDefinition") { }  
     ```  
   
-## <a name="implementing-an-itagger"></a>Implémentation d’un ITagger  
- L’étape suivante consiste à implémenter la <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> interface. Cette interface attribué, à la mémoire tampon de texte donné, les balises qui fournissent la mise en surbrillance de texte et les autres effets visuels.  
+## <a name="implement-an-itagger"></a>Implémenter un ITagger  
+ L’étape suivante consiste à implémenter la <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> interface. Cette interface assigne à une mémoire tampon de texte donné, les balises qui fournissent la mise en surbrillance du texte et les autres effets visuels.  
   
-#### <a name="to-implement-a-tagger"></a>Pour implémenter un baliseur  
+### <a name="to-implement-a-tagger"></a>Pour implémenter un baliseur  
   
 1.  Créez une classe qui implémente <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> de type `HighlightWordTag`et nommez-le `HighlightWordTagger`.  
   
@@ -136,19 +136,19 @@ Vous pouvez ajouter différents effets visuels à l’éditeur en créant des co
   
 2.  Ajoutez les champs privés suivants et les propriétés à la classe :  
   
-    -   Un <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, qui correspond à l’affichage de texte actuel.  
+    -   Un <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, qui correspond à la vue de texte actuelle.  
   
-    -   Un <xref:Microsoft.VisualStudio.Text.ITextBuffer>, qui correspond à la mémoire tampon de texte qui se trouve sous l’affichage de texte.  
+    -   Un <xref:Microsoft.VisualStudio.Text.ITextBuffer>, qui correspond à la mémoire tampon sous-jacente de l’affichage de texte.  
   
     -   Un <xref:Microsoft.VisualStudio.Text.Operations.ITextSearchService>, qui est utilisé pour rechercher du texte.  
   
     -   Un <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>, qui a des méthodes de navigation dans les étendues de texte.  
   
-    -   A <xref:Microsoft.VisualStudio.Text.NormalizedSnapshotSpanCollection>, qui contient l’ensemble de mots pour mettre en surbrillance.  
+    -   Un <xref:Microsoft.VisualStudio.Text.NormalizedSnapshotSpanCollection>, qui contient le jeu de mots pour mettre en surbrillance.  
   
-    -   A <xref:Microsoft.VisualStudio.Text.SnapshotSpan>, qui correspond au mot actuel.  
+    -   Un <xref:Microsoft.VisualStudio.Text.SnapshotSpan>, qui correspond au mot actuel.  
   
-    -   A <xref:Microsoft.VisualStudio.Text.SnapshotPoint>, qui correspond à la position actuelle du point d’insertion.  
+    -   Un <xref:Microsoft.VisualStudio.Text.SnapshotPoint>, qui correspond à la position actuelle du signe insertion.  
   
     -   Un objet de verrouillage.  
   
@@ -182,7 +182,7 @@ Vous pouvez ajouter différents effets visuels à l’éditeur en créant des co
   
     ```  
   
-4.  Les gestionnaires d’événements à l’appel du `UpdateAtCaretPosition` (méthode).  
+4.  Les gestionnaires d’événements à l’appel le `UpdateAtCaretPosition` (méthode).  
   
     ```csharp  
     void ViewLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)  
@@ -200,7 +200,7 @@ Vous pouvez ajouter différents effets visuels à l’éditeur en créant des co
     }  
     ```  
   
-5.  Vous devez également ajouter un `TagsChanged` événement qui sera appelée par la méthode de mise à jour.  
+5.  Vous devez également ajouter un `TagsChanged` événement qui est appelée par la méthode de mise à jour.  
   
      [!code-csharp[VSSDKHighlightWordTest#10](../extensibility/codesnippet/CSharp/walkthrough-highlighting-text_1.cs)]
      [!code-vb[VSSDKHighlightWordTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-highlighting-text_1.vb)]  
@@ -307,11 +307,11 @@ Vous pouvez ajouter différents effets visuels à l’éditeur en créant des co
     }  
     ```  
   
-8.  Vous devez implémenter le <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> (méthode). Cette méthode accepte une collection de <xref:Microsoft.VisualStudio.Text.SnapshotSpan> objets et retourne une énumération des étendues de balises.  
+8.  Vous devez implémenter le <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> (méthode). Cette méthode accepte une collection de <xref:Microsoft.VisualStudio.Text.SnapshotSpan> objets et retourne une énumération d’étendues de balise.  
   
-     En c#, implémentez cette méthode comme un itérateur yield, qui permet l’évaluation tardive (autrement dit, l’évaluation du jeu uniquement lors de l’accès aux éléments individuels) des balises. En Visual Basic, ajoutez les étiquettes à une liste et retourner la liste.  
+     En c#, implémentez cette méthode comme un itérateur yield, ce qui permet l’évaluation tardive (autrement dit, l’évaluation de l’ensemble uniquement lors de l’accès aux éléments individuels) des balises. Dans Visual Basic, ajoutez les balises à une liste et retourne la liste.  
   
-     Ici, la méthode retourne un <xref:Microsoft.VisualStudio.Text.Tagging.TagSpan%601> objet qui a une « blue » <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, qui fournit un arrière-plan bleu.  
+     Ici, la méthode retourne un <xref:Microsoft.VisualStudio.Text.Tagging.TagSpan%601> objet qui a un « bleu » <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, qui fournit un arrière-plan bleu.  
   
     ```csharp  
     public IEnumerable<ITagSpan<HighlightWordTag>> GetTags(NormalizedSnapshotSpanCollection spans)  
@@ -350,15 +350,15 @@ Vous pouvez ajouter différents effets visuels à l’éditeur en créant des co
     }  
     ```  
   
-## <a name="creating-a-tagger-provider"></a>Création d’un fournisseur de Baliseur  
- Pour créer votre balise, vous devez implémenter un <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>. Cette classe est un composant MEF, vous devez donc définir les attributs appropriés afin que cette extension soit reconnue.  
+## <a name="create-a-tagger-provider"></a>Créer un fournisseur de Baliseur  
+ Pour créer votre balise, vous devez implémenter un <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>. Cette classe est un composant MEF, vous devez donc définir les attributs corrects pour que cette extension soit reconnue.  
   
 > [!NOTE]
 >  Pour plus d’informations sur MEF, consultez [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).  
   
-#### <a name="to-create-a-tagger-provider"></a>Pour créer un fournisseur de baliseur  
+### <a name="to-create-a-tagger-provider"></a>Pour créer un fournisseur de baliseur  
   
-1.  Créez une classe nommée `HighlightWordTaggerProvider` qui implémente <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>et l’exporter avec un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de « text » et un <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> de <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
+1.  Créez une classe nommée `HighlightWordTaggerProvider` qui implémente <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>et exportez-le avec un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de « text » et un <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> de <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
   
     ```csharp  
     [Export(typeof(IViewTaggerProvider))]  
@@ -379,7 +379,7 @@ Vous pouvez ajouter différents effets visuels à l’éditeur en créant des co
   
     ```  
   
-3.  Implémentez la <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> méthode pour retourner une instance de `HighlightWordTagger`.  
+3.  Implémentez le <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> méthode pour retourner une instance de `HighlightWordTagger`.  
   
     ```csharp  
     public ITagger<T> CreateTagger<T>(ITextView textView, ITextBuffer buffer) where T : ITag  
@@ -395,18 +395,18 @@ Vous pouvez ajouter différents effets visuels à l’éditeur en créant des co
     }  
     ```  
   
-## <a name="building-and-testing-the-code"></a>Création et test du code  
- Pour tester ce code, générez la solution HighlightWordTest et l’exécuter dans l’instance expérimentale.  
+## <a name="build-and-test-the-code"></a>Générer et tester le code  
+ Pour tester ce code, générez la solution HighlightWordTest et exécutez-le dans l’instance expérimentale.  
   
-#### <a name="to-build-and-test-the-highlightwordtest-solution"></a>Pour générer et tester la solution HighlightWordTest  
+### <a name="to-build-and-test-the-highlightwordtest-solution"></a>Pour générer et tester la solution HighlightWordTest  
   
 1.  Générez la solution.  
   
-2.  Lorsque vous exécutez ce projet dans le débogueur, une deuxième instance de Visual Studio est instanciée.  
+2.  Lorsque vous exécutez ce projet dans le débogueur, une deuxième instance de Visual Studio est démarrée.  
   
-3.  Créez un fichier texte et tapez du texte dans laquelle les mots sont répétés, par exemple, « hello hello hello ».  
+3.  Créez un fichier texte et tapez du texte dans lequel les mots sont répétées, par exemple, « hello hello hello ».  
   
-4.  Placez le curseur dans un des occurrences de « hello ». Toutes les occurrences doivent être mis en surbrillance en bleu.  
+4.  Positionnez le curseur dans une des occurrences de « hello ». Chaque occurrence doit être mis en surbrillance en bleu.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : Liaison d’un type de contenu à une extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Procédure pas à pas : Lier un type de contenu à une extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

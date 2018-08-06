@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3c1f94637ab5e16954bdfcf209d4cf342c54deb7
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a0d17249ad15a8d5efd7717420a8b6a94115509f
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177099"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566766"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Définition d'une stratégie de verrouillage pour créer des segments en lecture seule
 L’API d’immuabilité de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK permet à un programme à tout ou partie de verrouillage d’un modèle de langage spécifique à un domaine (DSL) afin qu’il peut être lue mais pas modifié. Cette option en lecture seule peut être utilisée, par exemple, afin qu’un utilisateur peut demander à vos collègues à annoter et passez en revue un modèle DSL, mais leur interdire de modifier l’original.
@@ -31,7 +31,7 @@ L’API d’immuabilité de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs
 ## <a name="setting-and-getting-locks"></a>Définition et obtention de verrous
  Vous pouvez définir des verrous sur le magasin, sur une partition ou sur un élément individuel. Par exemple, cette instruction empêche un élément de modèle de suppression et également empêchera ses propriétés en cours de modification :
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling.Immutability; ...
 element.SetLocks(Locks.Delete | Locks.Property);
 ```
@@ -49,7 +49,7 @@ element.SetLocks(Locks.Delete | Locks.Property);
 ### <a name="locks-on-partitions-and-stores"></a>Verrous sur les partitions et de magasins
  Verrous peuvent également être appliqués aux partitions et le magasin. Un verrou qui est défini sur une partition s’applique à tous les éléments dans la partition. Par conséquent, par exemple, l’instruction suivante empêche tous les éléments dans une partition d’être supprimé, quel que soit les États de leurs propres verrous. Néanmoins, d’autres verrous comme `Locks.Property` peut toujours être définies sur des éléments individuels :
 
-```
+```csharp
 partition.SetLocks(Locks.Delete);
 ```
 
@@ -104,7 +104,7 @@ partition.SetLocks(Locks.Delete);
 ### <a name="to-define-a-locking-policy"></a>Pour définir une stratégie de verrouillage
  <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> a la définition suivante :
 
-```
+```csharp
 public interface ILockingPolicy
 {
   Locks RefineLocks(ModelElement element, Locks proposedLocks);
@@ -117,7 +117,7 @@ public interface ILockingPolicy
 
  Exemple :
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Immutability;
 namespace Company.YourDsl.DslPackage // Change
@@ -156,7 +156,7 @@ namespace Company.YourDsl.DslPackage // Change
 ### <a name="to-make-your-policy-available-as-a-service"></a>Pour rendre votre stratégie disponibles en tant que service
  Dans votre `DslPackage` de projet, ajoutez un nouveau fichier qui contient le code qui ressemble à l’exemple suivant :
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Immutability;
 namespace Company.YourDsl.DslPackage // Change
