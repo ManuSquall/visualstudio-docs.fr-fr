@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: af1af0f6b3493cedebd949bd9f1d36d795a64914
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: bc9d9e65cc893780c6b64dfd281d8db51fb5cce9
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380575"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566581"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Procédure pas à pas : générer du code à l’aide de modèles de texte
 
@@ -167,7 +167,7 @@ En suivant les recommandations en matière de développement agile, nous allons 
 
 Le code de test nécessite une classe pour chaque nœud dans le fichier. Ainsi, certaines des erreurs de compilation disparaîtront si vous ajoutez les lignes suivantes au modèle et que vous l’enregistrez ensuite :
 
-```
+```csharp
 class Catalog {}
 class Artist {}
 class Song {}

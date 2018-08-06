@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 35b88e2c2c423803dda9ed85cfb820e8521ed138
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 74e4f806c6f2faeeddfc2cc13917a6b5275b1b48
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513505"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566627"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Comment : ajouter un gestionnaire glisser-déplacer
 
@@ -50,14 +50,13 @@ Dans le nouveau fichier, définissez une classe partielle pour la forme ou la cl
             e.Effect = System.Windows.Forms.DragDropEffects.Copy;
           }
         }
-
     ```
 
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> : Cette méthode est appelée si l’utilisateur relâche le bouton de la souris alors que le pointeur de la souris se trouve sur la forme ou diagramme, si `OnDragOver(DiagramDragEventArgs e)` précédemment défini `e.Effect` à une valeur autre que `None`.
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
-        {
+    {
           if (!IsAcceptableDropItem(e))
           {
             base.OnDragDrop(e);
@@ -66,8 +65,7 @@ Dans le nouveau fichier, définissez une classe partielle pour la forme ou la cl
           { // Process the dragged item, for example merging a copy into the diagram
             ProcessDragDropItem(e); // To be defined
           }
-        }
-
+    }
     ```
 
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> : Cette méthode est appelée lorsque l’utilisateur double-clique sur la forme ou le schéma.
@@ -76,7 +74,7 @@ Dans le nouveau fichier, définissez une classe partielle pour la forme ou la cl
 
 Définissez `IsAcceptableDropItem(e)` pour déterminer si l'élément déplacé est acceptable et ProcessDragDropItem(e) pour mettre à jour votre modèle quand l'élément est déposé. Ces méthodes doivent d'abord extraire l'élément des arguments de l'événement. Pour savoir comment procéder, consultez [comment obtenir une référence à l’élément déplacé](#extracting).
 
-## <a name="defining-gesture-handlers-by-using-mef"></a>Définition des gestionnaires de mouvements avec MEF
+## <a name="define-gesture-handlers-by-using-mef"></a>Définir des gestionnaires de mouvements à l’aide de MEF
 
 Utilisez cette méthode si vous souhaitez que les développeurs tiers puissent définir leurs propres gestionnaires sur votre DSL. Les utilisateurs peuvent choisir d'installer les extensions tierces après avoir installé votre DSL.
 
@@ -148,7 +146,6 @@ Pour connaître les formats dans lesquels vos informations sur la source du dép
             == "3866d10c-cc4e-438b-b46f-bb24380e1678"); // Accept UML class shapes.
      // Or, from another DSL: SourceNamespace.SourceShapeClass.DomainClassId
     }
-
     ```
 
      Pour accepter les formes UML, déterminez par expérience les GUID des classes de formes UML. N'oubliez qu'il existe généralement plusieurs types d'éléments sur un diagramme. Souvenez-vous aussi qu'un objet déplacé à partir d'un diagramme DSL ou UML est la forme, et non l'élément de modèle.
@@ -163,7 +160,7 @@ Les propriétés `Data` et `Prototype` des arguments de l'événement contiennen
 
 ### <a name="to-prepare-a-dsl-project-for-model-bus"></a>Pour préparer un projet DSL pour le bus de modèles
 
-1.  Rendez le DSL source accessible par [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Model Bus :
+1.  Rendez le DSL source accessible par Visual Studio Model Bus :
 
     1.  Téléchargez et installez l'extension Visual Studio Model Bus, si ce n'est déjà fait. Pour plus d’informations, consultez [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).
 

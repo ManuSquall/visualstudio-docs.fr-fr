@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: daa44f17fcf0eb61f5c4ce6c1bfada685a20f45e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f174e4dde2c96383e9f8bdf61ff63558bb1d7bb3
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951828"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566779"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Comment : modifier une commande de menu standard dans un langage spécifique à un domaine
 
-Vous pouvez modifier le comportement de certaines des commandes standard qui sont définies automatiquement dans votre DSL. Par exemple, vous pourriez modifier **couper** afin qu’il exclut les informations sensibles. Pour cela, vous devez substituer des méthodes dans une classe de jeu de commandes. Ces classes sont définies dans le fichier CommandSet.cs, dans le projet DslPackage, et son dérivées de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
+Vous pouvez modifier le comportement de certaines des commandes standard qui sont définies automatiquement dans votre DSL. Par exemple, vous pourriez modifier **couper** afin qu’elle exclut les informations sensibles. Pour cela, vous devez substituer des méthodes dans une classe de jeu de commandes. Ces classes sont définies dans le fichier CommandSet.cs, dans le projet DslPackage, et son dérivées de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
 
 > [!NOTE]
 > Si vous souhaitez créer vos propres commandes de menu, consultez [Comment : ajouter une commande au Menu contextuel](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
@@ -57,9 +57,9 @@ Créez un fichier qui contient une déclaration partielle de la classe de jeu de
 
 2.  Dans **DslPackage**, créez un dossier nommé **Code personnalisé**. Dans ce dossier, créez un nouveau fichier de classe nommé `CommandSet.cs`.
 
-3.  Dans le nouveau fichier, écrivez une déclaration partielle dont l'espace de noms et le nom sont les mêmes que ceux de la classe partielle générée. Par exemple :
+3.  Dans le nouveau fichier, écrivez une déclaration partielle dont l'espace de noms et le nom sont les mêmes que ceux de la classe partielle générée. Exemple :
 
-    ```
+    ```csharp
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.Design;
@@ -71,11 +71,11 @@ Créez un fichier qui contient une déclaration partielle de la classe de jeu de
 
 ## <a name="override-the-command-methods"></a>Substituer les méthodes de commande
 
-La plupart des commandes ont deux méthodes associées : la méthode avec un nom comme `ProcessOnStatus`... détermine si la commande doit être visible et activé. Elle est appelée chaque fois que l'utilisateur clique avec le bouton droit sur le diagramme et doit être exécutée rapidement et n'apporter aucune modification. `ProcessOnMenu`... est appelée lorsque l’utilisateur clique sur la commande et il doit exécuter la fonction de la commande. Vous souhaiterez peut-être substituer l'une ou l'autre de ces méthodes, ou les deux.
+La plupart des commandes ont deux méthodes associées : la méthode avec un nom comme `ProcessOnStatus`... détermine si la commande doit être visible et activé. Elle est appelée chaque fois que l'utilisateur clique avec le bouton droit sur le diagramme et doit être exécutée rapidement et n'apporter aucune modification. `ProcessOnMenu`... est appelée lorsque l’utilisateur clique sur la commande et il doit effectuer la fonction de la commande. Vous souhaiterez peut-être substituer l'une ou l'autre de ces méthodes, ou les deux.
 
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Pour modifier quand la commande apparaît dans un menu
 
-Remplacer la ProcessOnStatus... (méthode). Cette méthode doit définir les propriétés Visible et Activé de son paramètre MenuCommand. En général, la commande examine this.CurrentSelection pour déterminer si elle s'applique aux éléments sélectionnés et peut également examiner leurs propriétés pour déterminer si elle peut être appliquée dans leur état actuel.
+Substituez la méthode ProcessOnStatus... (méthode). Cette méthode doit définir les propriétés Visible et Activé de son paramètre MenuCommand. En général, la commande examine this.CurrentSelection pour déterminer si elle s'applique aux éléments sélectionnés et peut également examiner leurs propriétés pour déterminer si elle peut être appliquée dans leur état actuel.
 
 D'une manière générale, la propriété Visible doit être déterminée en fonction des éléments sélectionnés. La propriété Activé, qui détermine si la commande apparaît en noir ou en gris dans le menu, doit dépendre de l'état actuel de la sélection.
 
@@ -107,7 +107,7 @@ La méthode ProcessOnStatus ne doit pas créer, supprimer ou mettre à jour des 
 
 ### <a name="to-change-the-behavior-of-the-command"></a>Pour modifier le comportement de la commande
 
-Remplacer la ProcessOnMenu... (méthode). L'exemple suivant empêche l'utilisateur de supprimer plusieurs éléments à la fois, même à l'aide de la touche Suppr.
+Substituez la méthode Processonstatus... (méthode). L'exemple suivant empêche l'utilisateur de supprimer plusieurs éléments à la fois, même à l'aide de la touche Suppr.
 
 ```csharp
 /// <summary>
@@ -142,7 +142,7 @@ Les fragments suivants sont souvent utiles dans ces méthodes :
 
 -   `shape.ModelElement as MyLanguageElement` - élément de modèle représenté par une forme.
 
-Pour plus d’informations sur la façon de naviguer d’un élément à l’élément et sur la création des objets et des liens, consultez [navigation et la mise à jour d’un modèle de Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).
+Pour plus d’informations sur la façon de naviguer à partir d’un élément à l’élément et sur la création des objets et des liens, consultez [navigation et la mise à jour un modèle dans le Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
 ## <a name="see-also"></a>Voir aussi
 
@@ -152,5 +152,5 @@ Pour plus d’informations sur la façon de naviguer d’un élément à l’él
 - [Comment VSPackages ajoute des éléments de l’interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Fichiers Visual Studio Command Table (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Schéma de référence XML VSCT](../extensibility/vsct-xml-schema-reference.md)
-- [VMSDK - exemple de diagrammes du Circuit. Personnalisation de l’étendue de DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [VMSDK - exemple de diagrammes de Circuit. Personnalisation DSL étendue](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 - [Exemple de code : diagrammes de Circuit](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

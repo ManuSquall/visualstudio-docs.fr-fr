@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 316abdc18973056619d47e50ae851f33d72bc32c
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 6357fbe512b9120872fc033dd93406a7ff8eb1d1
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382046"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567179"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Intégration de modèles à l'aide de Visual Studio Modelbus
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus fournit une méthode de création de liens entre les modèles et d’autres outils dans des modèles. Par exemple, vous pouvez lier des modèles de langage spécifique à un domaine (DSL) et des modèles UML. Vous pouvez créer un ensemble intégré de DSL.
@@ -182,7 +182,7 @@ ms.locfileid: "39382046"
 
  Dans le fichier de code où vous allez créer les références, vous devez généralement importer ces espaces de noms :
 
-```
+```csharp
 // The namespace of the DSL you want to reference:
 using Fabrikam.FamilyTree;  // Exposed DSL
 using Fabrikam.FamilyTree.ModelBusAdapters;
@@ -199,7 +199,7 @@ using System.Linq;
 > [!NOTE]
 >  Lorsque vous avez fini d'utiliser l'adaptateur, vous devez le supprimer. La solution la plus pratique pour y parvenir consiste à utiliser une instruction `using`. L'exemple suivant illustre ce comportement.
 
-```
+```csharp
 // The file path of a model instance of the FamilyTree DSL:
 string targetModelFile = "TudorFamilyTree.ftree";
 // Get the ModelBus service:
@@ -235,7 +235,7 @@ using (FamilyTreeAdapter adapter =
 
  Si vous souhaitez pouvoir utiliser la `modelReference` ultérieurement, vous pouvez la stocker dans une propriété de domaine qui possède le type externe `ModelBusReference` :
 
-```
+```csharp
 using Transaction t = this.Store.TransactionManager
     .BeginTransaction("keep reference"))
 {
@@ -249,7 +249,7 @@ using Transaction t = this.Store.TransactionManager
 ### <a name="to-create-a-reference-to-an-element"></a>Pour créer une référence à un élément
  L'adaptateur que vous avez créé pour le modèle peut être utilisé pour créer et résoudre les références.
 
-```
+```csharp
 // person is an element in the FamilyTree model:
 ModelBusReference personReference =
   adapter.GetElementReference(person);
@@ -262,7 +262,7 @@ ModelBusReference personReference =
 
  Vous pouvez créer un adaptateur à partir d'une MBR. À partir de l'adaptateur, vous pouvez obtenir la racine du modèle. Vous pouvez aussi résoudre les MBR qui font référence à des éléments spécifiques à l'intérieur du modèle.
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling.Integration; ...
 ModelBusReference elementReference = ...;
 
@@ -342,7 +342,7 @@ using (FamilyTreeAdapter adapter =
 ## <a name="serializing-a-modelbusreference"></a>Sérialisation d'une ModelBusReference
  Si vous voulez stocker une `ModelBusReference` (MBR) sous la forme d'une chaîne, vous pouvez la sérialiser :
 
-```
+```csharp
 string serialized = modelBus.SerializeReference(elementReference);
 // Store it anywhere, then get it back again:
 ModelBusReference elementReferenceRestored =
@@ -356,7 +356,7 @@ ModelBusReference elementReferenceRestored =
 
  Pour sérialiser par rapport à un chemin d'accès :
 
-```
+```csharp
 elementReference.ReferenceContext.Add(
    ModelBusReferencePropertySerializer.FilePathSaveContextKey,
    currentProjectFilePath);
@@ -365,7 +365,7 @@ string serialized = modelBus.SerializeReference(elementReference);
 
  Pour extraire la référence de la chaîne :
 
-```
+```csharp
 ReferenceContext context = new ReferenceContext();
 context.Add(ModelBusReferencePropertySerializer.FilePathLoadContextKey,
     currentProjectFilePath);
@@ -395,7 +395,7 @@ ModelBusReference elementReferenceRestored =
 
  Dans cet exemple, le nom du DSL cible est StateMachine. Plusieurs noms en sont dérivés, tels que le nom de la classe de modèle et le nom du ModelBusAdapter.
 
-```
+```csharp
 using Fabrikam.StateMachine.ModelBusAdapters;
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Diagrams;
@@ -447,7 +447,7 @@ using (StateMachineAdapter adapter =
 ## <a name="validating-references"></a>Validation des références
  Le BrokenReferenceDetector teste toutes les propriétés de domaine d'un magasin qui peut contenir les ModelBusReference. Il appelle l'action que vous fournissez quand une action est trouvée. Ceci est particulièrement utile pour les méthodes de validation. La méthode de validation suivante teste le magasin lors de la tentative d'enregistrement du modèle et signale les références rompues dans la fenêtre des erreurs :
 
-```
+```csharp
 [ValidationMethod(ValidationCategories.Save)]
 public void ValidateModelBusReferences(ValidationContext context)
 {
@@ -489,7 +489,7 @@ private const string INVALID_REF_FORMAT =
 
 -   Plusieurs attributs CLR sont ajoutés à la propriété de domaine. Vous pouvez les voir dans le champ Attributs personnalisés de la fenêtre Propriétés. Dans **Dsl\GeneratedCode\DomainClasses.cs**, vous pouvez voir les attributs de la déclaration de propriété :
 
-    ```
+    ```csharp
     [System.ComponentModel.TypeConverter(typeof(
     Microsoft.VisualStudio.Modeling.Integration.ModelBusReferenceTypeConverter))]
     [System.ComponentModel.Editor(typeof(

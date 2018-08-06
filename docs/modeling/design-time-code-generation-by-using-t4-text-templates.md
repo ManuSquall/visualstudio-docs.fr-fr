@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7bafcec9def78d05c7c7d03f43dfc1d184348bcd
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 4bc2b55e0e287caea0db0c5fcdabccf454be0154
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117691"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567231"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Génération de code au moment du design à l’aide de modèles de texte T4
 Les modèles de texte T4 au moment de la conception vous permettent de générer du code de programme et d'autres fichiers dans votre projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. En règle générale, vous écrivez les modèles pour qu’ils varient le code qu’ils génèrent en fonction des données à partir d’un *modèle*. Un modèle est un fichier ou une base de données qui contient des informations clés sur les exigences de votre application.
@@ -185,7 +185,7 @@ Les modèles de texte T4 au moment de la conception vous permettent de générer
 
 3.  Enregistrez le fichier est inspectez le fichier généré, qui contient maintenant le code suivant :
 
-    ```
+    ```csharp
     class MyGeneratedClass {
       private int P1 = 0;
       private int P2 = 0;
@@ -303,7 +303,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!NOTE]
 > Dans Visual Studio 2017, le SDK de Transformation de modèle de texte et le SDK de modélisation de Visual Studio sont installés automatiquement lorsque vous installez des fonctionnalités spécifiques de Visual Studio. Pour plus d’informations, consultez [ce billet de blog](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-```
+```xml
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />
 <PropertyGroup>
    <TransformOnBuild>true</TransformOnBuild>
