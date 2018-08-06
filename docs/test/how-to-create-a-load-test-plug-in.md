@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8ebd3a356eab88c53d2aa7bea7f27be3ccc0749e
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ef21d270154025a52c603186ba959fad080e5bba
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179677"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380536"
 ---
-# <a name="how-to-create-a-load-test-plug-in"></a>Comment : créer un plug-in de test de charge
+# <a name="how-to-create-a-load-test-plug-in"></a>Guide pratique pour créer un plug-in de test de charge
 
 Vous pouvez créer un plug-in de test de charge pour exécuter du code à différents stades de l'exécution du test de charge. Vous pouvez créer un plug-in pour développer ou modifier la fonctionnalité intégrée du test de charge. Par exemple, vous pouvez coder un plug-in de test de charge pour définir ou modifier le modèle de test de charge pendant l'exécution du test de charge. Pour cela, vous devez créer une classe qui hérite de l'interface de <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>. Cette classe doit implémenter la méthode <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> de cette interface. Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
 
@@ -36,7 +36,7 @@ Vous pouvez créer un plug-in de test de charge pour exécuter du code à diffé
 
      Pour plus d’informations, consultez [Guide pratique pour créer un projet de test de charge](../test/quickstart-create-a-load-test-project.md).
 
-3.  Dans l’Explorateur de solutions, cliquez avec le bouton droit sur la solution et sélectionnez **Ajouter**, puis choisissez **Nouveau projet**.
+3.  Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur la solution, sélectionnez **Ajouter**, puis choisissez **Nouveau projet**.
 
      La boîte de dialogue **Ajouter un nouveau projet** s’affiche.
 
@@ -48,9 +48,9 @@ Vous pouvez créer un plug-in de test de charge pour exécuter du code à diffé
 
 7.  Cliquez sur **OK**.
 
-8.  Le nouveau projet de bibliothèque de classes est ajouté à l'Explorateur de solutions et la nouvelle classe s'affiche dans l'éditeur de code.
+8.  Le nouveau projet de bibliothèque de classes est ajouté à l'**Explorateur de solutions** et la nouvelle classe s'affiche dans l'**éditeur de code**.
 
-9. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le dossier **Références** de la nouvelle bibliothèque de classes, puis sélectionnez **Ajouter une référence**.
+9. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le dossier **Références** de la nouvelle bibliothèque de classes, puis sélectionnez **Ajouter une référence**.
 
 10. La boîte de dialogue **Ajouter une référence** s’affiche.
 
@@ -58,9 +58,9 @@ Vous pouvez créer un plug-in de test de charge pour exécuter du code à diffé
 
 12. Cliquez sur **OK**.
 
-     La référence à **Microsoft.VisualStudio.QualityTools.LoadTestFramework** est ajoutée au dossier **Référence** dans l’Explorateur de solutions.
+     La référence à **Microsoft.VisualStudio.QualityTools.LoadTestFramework** est ajoutée au dossier **Référence** dans l’**Explorateur de solutions**.
 
-13. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le nœud supérieur du projet de test de performances web et de charge qui contient le test de charge auquel vous souhaitez ajouter le plug-in de test de charge, puis sélectionnez **Ajouter une référence**.
+13. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le nœud supérieur du projet de test de performances web et de charge qui contient le test de charge auquel vous souhaitez ajouter le plug-in de test de charge, puis sélectionnez **Ajouter une référence**.
 
 14. La boîte de dialogue **Ajouter une référence** s’affiche.
 
@@ -68,7 +68,7 @@ Vous pouvez créer un plug-in de test de charge pour exécuter du code à diffé
 
 16. Cliquez sur **OK**.
 
-17. Dans l'éditeur de code, ajoutez une instruction `using` pour l'espace de noms <xref:Microsoft.VisualStudio.TestTools.LoadTesting>.
+17. Dans l'**éditeur de code**, ajoutez une instruction `using` pour l'espace de noms <xref:Microsoft.VisualStudio.TestTools.LoadTesting>.
 
 18. Implémentez l'interface <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> pour la classe créée dans le projet de bibliothèque de classes. Pour un exemple d'implémentation, reportez-vous à la section suivante.
 
@@ -83,7 +83,7 @@ Vous pouvez créer un plug-in de test de charge pour exécuter du code à diffé
 22. Dans le volet **Propriétés du plug-in sélectionné**, définissez les valeurs initiales du plug-in à utiliser au moment de l’exécution.
 
     > [!NOTE]
-    > Vous pouvez exposer autant de propriétés que vous souhaitez de vos plug-ins ; il suffit de les rendre publics, définissables et d'un type de base, tel qu'un entier, une valeur booléenne ou une chaîne. Vous pouvez également modifier ultérieurement les propriétés du plug-in de test de performances web dans la fenêtre Propriétés.
+    > Vous pouvez exposer autant de propriétés que vous souhaitez de vos plug-ins ; il suffit de les rendre publics, définissables et d'un type de base, tel qu'un entier, une valeur booléenne ou une chaîne. Vous pouvez également modifier ultérieurement les propriétés du plug-in de test de performances web dans la fenêtre **Propriétés**.
 
 23. Cliquez sur **OK**.
 
@@ -172,4 +172,4 @@ Huit événements sont associés à un test de charge et peuvent être gérés d
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>
 - [Créer du code et des plug-ins personnalisés pour les tests de charge](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Guide pratique pour créer un plug-in de test des performances web](../test/how-to-create-a-web-performance-test-plug-in.md)
+- [Guide pratique pour créer un plug-in de test de performances web](../test/how-to-create-a-web-performance-test-plug-in.md)
