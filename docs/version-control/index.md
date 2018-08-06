@@ -12,19 +12,19 @@ ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
 - multiple
-ms.openlocfilehash: c06d612adc6f765b655f9fbe850b73ef5f7f8617
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 4af331926cdcf1532f0672539b08426b433052bf
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36279906"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510820"
 ---
 # <a name="version-control-in-visual-studio"></a>Gestion de version dans Visual Studio
 
 Les systèmes de gestion de version vous permettent de suivre les modifications apportées au code. À mesure que vous effectuez des modifications, le système de gestion de version prend une capture instantanée de vos fichiers. Le système de gestion de version enregistre cette capture instantanée définitivement afin que vous puissiez la rappeler ultérieurement si nécessaire. Visual Studio fournit [Git](/vsts/git/index) et [Contrôle de version Team Foundation (TFVC)](/vsts/tfvc/index). Pour choisir entre les deux systèmes, consultez [Choisir la gestion de version appropriée pour votre projet](/vsts/tfvc/comparison-git-tfvc?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json).
 
 ## <a name="git"></a>Git
-Git est le système de gestion de version actuellement le plus utilisé, et devient rapidement la norme dans ce domaine. Git est un système de gestion de version distribué. Cela signifie que votre copie locale du code est un référentiel de gestion de version complet. Ces référentiels locaux complets facilitent le travail en mode hors connexion ou à distance. Vous validez votre travail localement, puis synchronisez votre copie du référentiel avec la copie sur le serveur. Ce paradigme diffère de la gestion de version centralisée où les clients doivent synchroniser le code avec un serveur avant de créer de nouvelles versions du code.
+Git est le système de gestion de version actuellement le plus utilisé, et devient rapidement la norme dans ce domaine. Git est un système de gestion de version distribué. Cela signifie que votre copie locale du code est un référentiel de gestion de version complet. Ces dépôts locaux entièrement opérationnels facilitent le travail en mode hors connexion ou à distance. Vous validez votre travail localement, puis synchronisez votre copie du référentiel avec la copie sur le serveur. Ce paradigme diffère de la gestion de version centralisée où les clients doivent synchroniser le code avec un serveur avant de créer de nouvelles versions du code.
 
 <ul class="panelContent cardsFTitle">
     <li>
