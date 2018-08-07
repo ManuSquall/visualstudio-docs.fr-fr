@@ -1,5 +1,5 @@
 ---
-title: Référence du schéma de manifeste de modèle Visual Studio | Documents Microsoft
+title: Référence du schéma de manifeste de modèle Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,29 +9,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26f346329e4c0fa2defe6bc4ff6373226be72beb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 38581d7c7dd788fef481676283fdc96c8abc96ba
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31142574"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586304"
 ---
-# <a name="visual-studio-template-manifest-schema-reference"></a>Référence de schéma de manifeste de modèle Visual Studio
-Ce schéma décrit le format des fichiers de manifeste (.vstman) de modèle Visual Studio générés pour les modèles de projet ou un élément de Visual Studio et décrit l’emplacement et autres informations pertinentes relatives au modèle.  
+# <a name="visual-studio-template-manifest-schema-reference"></a>Référence du schéma de manifeste de modèle Visual Studio
+Ce schéma décrit le format du manifeste de modèle Visual Studio (*.vstman*) les fichiers qui sont générés pour les modèles de projet ou un élément de Visual Studio. Le schéma décrit également l’emplacement et autres informations pertinentes concernant le modèle.  
   
- : Étant donné qu’élément distinct et les répertoires de modèle de projet, un manifeste doit avoir jamais une combinaison des modèles de projet et d’élément.  
+ : Comme élément distinct et les répertoires de modèle de projet, un manifeste ne devez jamais avoir une combinaison des modèles de projet et d’élément.  
   
 > [!IMPORTANT]
->  Ce manifeste n’est disponible à partir de Visual Studio 2017.  
+>  Ce manifeste est disponible à partir de Visual Studio 2017.  
   
 ## <a name="vstemplatemanifest-element"></a>Élément de VSTemplateManifest  
  L’élément racine du manifeste.  
   
 ### <a name="attributes"></a>Attributs  
   
--   **Version**: une chaîne qui représente la version du manifeste de modèle. Obligatoire.  
+-   **Version**: une chaîne représentant la version du manifeste de modèle. Obligatoire.  
   
--   **Paramètres régionaux**: une chaîne qui représente les paramètres régionaux ou les paramètres régionaux du manifeste de modèle. La valeur de paramètres régionaux s’applique à tous les modèles, vous devez utiliser un manifeste distinct pour chacun des paramètres régionaux. Facultatif.  
+-   **Paramètres régionaux**: chaîne représentant les paramètres régionaux ou paramètres régionaux du manifeste de modèle. La valeur de paramètres régionaux s’applique à tous les modèles. Vous devez utiliser un manifeste distinct pour chacun des paramètres régionaux. Facultatif.  
   
 ### <a name="child-elements"></a>Éléments enfants  
   
@@ -39,26 +39,26 @@ Ce schéma décrit le format des fichiers de manifeste (.vstman) de modèle Visu
   
 -   **VSTemplateDir** facultatif.  
   
-### <a name="parent-element"></a>Parent, élément  
+### <a name="parent-element"></a>Élément parent  
  Aucun.  
   
 ## <a name="vstemplatecontainer"></a>VSTemplateContainer  
  Le conteneur du modèle de manifeste des éléments. Un manifeste est un conteneur de modèle pour chaque modèle, qu'il définit.  
   
 ### <a name="attributes"></a>Attributs  
- **VSTemplateType** : une valeur de chaîne qui spécifie le type du modèle (`"Project"`, `"Item"`, ou `"ProjectGroup"`). Obligatoire  
+ **VSTemplateType**: une valeur de chaîne qui spécifie le type du modèle (`"Project"`, `"Item"`, ou `"ProjectGroup"`). Obligatoire  
   
 ### <a name="child-elements"></a>Éléments enfants  
   
--   **RelativePathOnDisk**: le chemin d’accès relatif du fichier de modèle sur le disque. Cet emplacement définit également la position du modèle dans l’arborescence de modèle indiqué dans le **nouveau projet** ou **un nouvel élément** boîte de dialogue. Pour les modèles déployés en tant qu’un répertoire et les fichiers individuels, ce chemin d’accès fait référence au répertoire contenant les fichiers de modèle. Pour les modèles déployés en tant qu’un fichier .zip, ce chemin d’accès doit être le chemin d’accès au fichier .zip.  
+-   **RelativePathOnDisk**: le chemin d’accès relatif du fichier de modèle sur le disque. Cet emplacement définit également la position du modèle dans l’arborescence de modèle indiqué dans le **nouveau projet** ou **un nouvel élément** boîte de dialogue. Pour les modèles déployés en tant qu’un répertoire et des fichiers individuels, ce chemin d’accès fait référence au répertoire contenant les fichiers de modèle. Pour les modèles déploiement en tant qu’un *.zip* fichier, ce chemin d’accès doit être le chemin d’accès à la *.zip* fichier.  
   
--   **VSTemplateHeader** : A [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) élément qui décrit l’en-tête.  
+-   ** VSTemplateHeader : Un [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) élément qui décrit l’en-tête.  
   
-### <a name="parent-element"></a>Parent, élément  
+### <a name="parent-element"></a>Élément parent  
  **VSTemplateManifest**  
   
 ## <a name="vstemplatedir"></a>VSTemplateDir  
- Décrit le répertoire où se trouve le modèle. Un manifeste peut contenir plusieurs **VSTemplateDir** entrées pour fournir le nom localisé et ordre pour les répertoires de tri pour contrôler leur aspect dans l’arborescence des catégories de modèle.  
+ Décrit le répertoire où se trouve le modèle. Un manifeste peut contenir plusieurs **VSTemplateDir** entrées pour fournir le nom localisé et tri de classement pour les répertoires pour contrôler leur apparence dans l’arborescence de catégorie de modèle.  
   
  En raison de leur conception, **VSTemplateDir** entrées doivent apparaître uniquement dans les types de paramètres régionaux des manifestes spécifiés.  
   
@@ -67,15 +67,15 @@ Ce schéma décrit le format des fichiers de manifeste (.vstman) de modèle Visu
   
 ### <a name="child-elements"></a>Éléments enfants  
   
--   **RelativePath**: le chemin d’accès du modèle. Il peut y avoir qu’une seule entrée par le chemin d’accès, pour la première condition précédente pour tous les manifestes.  
+-   **RelativePath**: le chemin d’accès du modèle. Il peut y avoir qu’une seule entrée par le chemin d’accès, donc la première condition sera choisie pour tous les manifestes.  
   
--   **LocalizedName**: A **NameDescriptionIcon** élément qui spécifie le nom localisé. Facultatif.  
+-   **LocalizedName**: un **NameDescriptionIcon** élément qui spécifie le nom localisé. Facultatif.  
   
--   **SortOrder** : chaîne qui spécifie l’ordre de tri. Facultatif.  
+-   **SortOrder**: chaîne qui spécifie l’ordre de tri. Facultatif.  
   
--   **ParentFolderOverrideName**: le nom du dossier parent de substituée. Facultatif. Cet élément a un **nom** attribut, qui est une valeur de chaîne qui spécifie le nom.  
+-   **ParentFolderOverrideName**: le nom substitué du dossier parent. Facultatif. Cet élément possède un **nom** attribut, qui est une valeur de chaîne qui spécifie le nom.  
   
-### <a name="parent-element"></a>Parent, élément  
+### <a name="parent-element"></a>Élément parent  
  **VSTemplateManifest**  
   
 ## <a name="namedescriptionicon"></a>NameDescriptionIcon  
@@ -90,11 +90,11 @@ Ce schéma décrit le format des fichiers de manifeste (.vstman) de modèle Visu
 ### <a name="child-elements"></a>Éléments enfants  
  Aucun.  
   
-### <a name="parent-element"></a>Parent, élément  
+### <a name="parent-element"></a>Élément parent  
  **LocalizedName**  
   
 ## <a name="examples"></a>Exemples  
- Voici un exemple d’un fichier de .vstman de modèle de projet.  
+ Le code suivant est un exemple de modèle de projet *.vstman* fichier.  
   
 ```xml  
 <VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">  
@@ -120,9 +120,9 @@ Ce schéma décrit le format des fichiers de manifeste (.vstman) de modèle Visu
   
 ```  
   
- Voici un exemple d’un fichier de modèle d’élément .vstman.  
+ Le code suivant est un exemple d’un modèle d’élément *.vstman* fichier.  
   
-```  
+```xml  
 VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">  
   <VSTemplateContainer TemplateType="Item">  
     <RelativePathOnDisk>CSharp\1033\ItemTemplate1</RelativePathOnDisk>  
