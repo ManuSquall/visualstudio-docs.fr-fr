@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bbf478424551e446ca9853dae77edb4e5b61d974
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: a65c1960e1648dce3bb8ff40d1dd6c50534934ff
+ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756030"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582230"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Créer et configurer des datasets dans Visual Studio
 
@@ -72,7 +72,7 @@ Cette procédure montre comment ajouter une table à partir de la même base de 
 
 1.  Cliquez sur le nœud de jeu de données dans **l’Explorateur de solutions** pour placer le focus sur le Concepteur de dataset.
 
-2.  Cliquez sur le **des Sources de données** onglet dans la marge gauche de Visual Studio, ou entrez `Data Sources` dans **lancement rapide**.
+2.  Cliquez sur le **des Sources de données** onglet dans la marge gauche de Visual Studio, ou type **des sources de données** dans le **lancement rapide** boîte.
 
 3.  Cliquez sur le nœud de jeu de données et sélectionnez **configurer la Source de données avec l’Assistant**.
 

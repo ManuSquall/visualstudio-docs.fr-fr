@@ -17,32 +17,33 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 87e7cddd4b43464f9d10467e81931a0daafa04da
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: b3cd83a16ff3d497bd9e6a46f3a66a3d99506a1f
+ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180293"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582393"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Lier des contrôles WPF à un service de données WCF
 
-Dans cette procédure pas à pas, vous allez créer une application WPF qui contient des contrôles liés aux données. Les contrôles sont liés aux enregistrements client encapsulés dans un [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]. Vous allez aussi ajouter des boutons utilisables par les clients pour afficher et mettre à jour des enregistrements.
+Dans cette procédure pas à pas, vous allez créer une application WPF qui contient des contrôles liés aux données. Les contrôles sont liés aux enregistrements client encapsulés dans un Service de données WCF. Vous allez aussi ajouter des boutons utilisables par les clients pour afficher et mettre à jour des enregistrements.
 
 Cette procédure pas à pas décrit les tâches suivantes :
 
 - Création d'un Entity Data Model généré à partir des données de l'exemple de base de données AdventureWorksLT.
 
-- Création d’un [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] qui expose les données dans l’Entity Data Model dans une application WPF.
+- Création d’un Service de données WCF qui expose les données dans l’Entity Data Model dans une application WPF.
 
 - Création d’un ensemble de contrôles liés aux données en faisant glisser des éléments à partir de la **des Sources de données** fenêtre vers le Concepteur WPF.
 
 - Création de boutons permettant d'avancer et de reculer dans les enregistrements client.
 
-- Création d’un bouton qui enregistre les modifications apportées aux données dans les contrôles à la [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] et la source de données sous-jacente.
+- Création d’un bouton qui enregistre les modifications apportées aux données dans les contrôles pour le Service de données WCF et la source de données sous-jacente.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
 ## <a name="prerequisites"></a>Prérequis
+
 Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
 
 -   Visual Studio
@@ -60,9 +61,8 @@ La connaissance préalable des concepts suivants s'avère également utile, mais
 -   Liaison de données WPF. Pour plus d’informations, consultez [vue d’ensemble de la liaison de données](/dotnet/framework/wpf/data/data-binding-overview).
 
 ## <a name="create-the-service-project"></a>Créer le projet de service
-Commencez cette procédure pas à pas par la création d'un projet pour un [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
-### <a name="to-create-the-service-project"></a>Pour créer le projet de service
+Démarrer cette procédure pas à pas en créant un projet pour un Service de données WCF :
 
 1.  Démarrez Visual Studio.
 
@@ -72,16 +72,15 @@ Commencez cette procédure pas à pas par la création d'un projet pour un [!INC
 
 4.  Sélectionnez le modèle de projet **Application web ASP.NET**.
 
-5.  Dans le **nom** , tapez `AdventureWorksService` et cliquez sur **OK**.
+5.  Dans le **nom** , tapez **AdventureWorksService** et cliquez sur **OK**.
 
-     Visual Studio crée le `AdventureWorksService` projet.
+     Visual Studio crée le **AdventureWorksService** projet.
 
 6.  Dans **l’Explorateur de solutions**, avec le bouton droit **Default.aspx** et sélectionnez **supprimer**. Ce fichier n'est pas nécessaire dans cette procédure pas à pas.
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>Créer un Entity Data Model pour le service
-Pour exposer les données à une application à l'aide d'un [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)], vous devez définir un modèle de données pour le service. Le [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] prend en charge deux types de modèles de données : Entity Data Models et modèles de données personnalisés qui sont définies à l’aide des objets common language runtime (CLR) qui implémentent le <xref:System.Linq.IQueryable%601> interface. Dans cette procédure pas à pas, vous allez créer un Entity Data Model comme modèle de données.
 
-### <a name="to-create-an-entity-data-model"></a>Pour créer un Entity Data Model
+Pour exposer des données à une application à l’aide d’un Service de données WCF, vous devez définir un modèle de données pour le service. Le Service de données WCF prend en charge deux types de modèles de données : Entity Data Models et modèles de données personnalisés qui sont définies à l’aide des objets common language runtime (CLR) qui implémentent le <xref:System.Linq.IQueryable%601> interface. Dans cette procédure pas à pas, vous allez créer un Entity Data Model comme modèle de données.
 
 1.  Dans le menu **Projet** , cliquez sur **Ajouter un nouvel élément**.
 
@@ -106,9 +105,8 @@ Pour exposer les données à une application à l'aide d'un [!INCLUDE[ss_data_se
 8.  Cliquez sur **Terminer**.
 
 ## <a name="create-the-service"></a>Créer le service
-Créer un [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] pour exposer les données dans l’Entity Data Model dans une application WPF.
 
-### <a name="to-create-the-service"></a>Pour créer le service
+Créer un Service de données WCF pour exposer les données dans l’Entity Data Model dans une application WPF :
 
 1.  Sur le **projet** menu, sélectionnez **ajouter un nouvel élément**.
 
@@ -119,23 +117,21 @@ Créer un [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.m
      Visual Studio ajoute le `AdventureWorksService.svc` au projet.
 
 ## <a name="configure-the-service"></a>Configurer le service
-Vous devez configurer le service pour qu'il fonctionne sur l'Entity Data Model que vous avez créé.
 
-### <a name="to-configure-the-service"></a>Pour configurer le service
+Vous devez configurer le service de fonctionner sur l’Entity Data Model que vous avez créé :
 
-1.  Dans le `AdventureWorks.svc` fichier de code, remplacez le `AdventureWorksService` déclaration avec le code suivant de classe.
+1.  Dans le `AdventureWorks.svc` fichier de code, remplacez le **AdventureWorksService** déclaration avec le code suivant de classe.
 
      [!code-csharp[Data_WPFWCF#1](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_1.cs)]
      [!code-vb[Data_WPFWCF#1](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_1.vb)]
 
-     Ce code met à jour le `AdventureWorksService` classe, afin qu’elle dérive un <xref:System.Data.Services.DataService%601> qui opère sur le `AdventureWorksLTEntities` de l’objet classe de contexte dans votre Entity Data Model. Il met également à jour la méthode `InitializeService` pour accorder aux clients du service un accès complet en lecture/écriture à l'entité `SalesOrderHeader`.
+     Ce code met à jour le **AdventureWorksService** classe, afin qu’elle dérive un <xref:System.Data.Services.DataService%601> qui opère sur le `AdventureWorksLTEntities` de l’objet classe de contexte dans votre Entity Data Model. Il met également à jour la méthode `InitializeService` pour accorder aux clients du service un accès complet en lecture/écriture à l'entité `SalesOrderHeader`.
 
 2.  Générez le projet et vérifiez qu'aucune erreur ne se produit.
 
 ## <a name="create-the-wpf-client-application"></a>Créer l’application cliente WPF
-Pour afficher les données du [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)], créez une application WPF avec une source de données basée sur le service. Plus loin dans cette procédure pas à pas, vous allez ajouter à l'application des contrôles liés aux données.
 
-### <a name="to-create-the-wpf-client-application"></a>Pour créer l'application cliente WPF
+Pour afficher les données à partir du Service de données WCF, créez une application WPF avec une source de données qui est basée sur le service. Plus loin dans cette procédure pas à pas, vous allez ajouter à l'application des contrôles liés aux données.
 
 1.  Dans **l’Explorateur de solutions**, cliquez sur le nœud de solution, cliquez sur **ajouter**, puis sélectionnez **nouveau projet**.
 
@@ -161,7 +157,7 @@ Pour afficher les données du [!INCLUDE[ss_data_service](../data-tools/includes/
 
      Visual Studio recherche la solution actuelle pour les services disponibles et ajoute `AdventureWorksService.svc` à la liste des services disponibles dans le **Services** boîte.
 
-9. Dans le **Namespace** , tapez `AdventureWorksService`.
+9. Dans le **Namespace** , tapez **AdventureWorksService**.
 
 10. Dans le **Services** , cliquez sur **AdventureWorksService.svc**, puis cliquez sur **OK**.
 
@@ -171,10 +167,9 @@ Pour afficher les données du [!INCLUDE[ss_data_service](../data-tools/includes/
 
      Visual Studio ajoute des nœuds qui représentent les données retournées par le service pour le **des Sources de données** fenêtre.
 
-## <a name="define-the-user-interface-of-the-window"></a>Définir l’interface utilisateur de la fenêtre
-Ajoutez plusieurs boutons à la fenêtre en modifiant le code XAML dans le Concepteur WPF. Plus loin dans cette procédure pas à pas, vous allez ajouter du code permettant aux utilisateurs d'afficher et de mettre à jour les enregistrements de vente à l'aide de ces boutons.
+## <a name="define-the-user-interface"></a>Définir l’interface utilisateur
 
-### <a name="to-create-the-window-layout"></a>Pour créer la disposition de fenêtre
+Ajoutez plusieurs boutons à la fenêtre en modifiant le code XAML dans le Concepteur WPF. Plus loin dans cette procédure pas à pas, vous allez ajouter du code permettant aux utilisateurs d'afficher et de mettre à jour les enregistrements de vente à l'aide de ces boutons.
 
 1.  Dans **l’Explorateur de solutions**, double-cliquez sur **MainWindow.xaml**.
 
@@ -195,9 +190,8 @@ Ajoutez plusieurs boutons à la fenêtre en modifiant le code XAML dans le Conce
 3.  Générez le projet.
 
 ## <a name="create-the-data-bound-controls"></a>Créer des contrôles liés aux données
-Créer des contrôles qui affichent les enregistrements client en faisant glisser le `SalesOrderHeaders` nœud à partir de la **des Sources de données** fenêtre vers le concepteur.
 
-### <a name="to-create-the-data-bound-controls"></a>Pour créer des contrôles liés aux données
+Créer des contrôles qui affichent les enregistrements client en faisant glisser le `SalesOrderHeaders` nœud à partir de la **des Sources de données** fenêtre vers le concepteur.
 
 1.  Dans le **des Sources de données** fenêtre, cliquez sur le menu déroulant pour le **SalesOrderHeaders** nœud, puis sélectionnez **détails**.
 
@@ -234,9 +228,8 @@ Créer des contrôles qui affichent les enregistrements client en faisant glisse
     -   **Numéro de commande client**
 
 ## <a name="load-the-data-from-the-service"></a>Charger les données à partir du service
-Utilisez l’objet proxy de service pour charger les données de ventes à partir du service. Puis assignez les données retournées à la source de données pour la <xref:System.Windows.Data.CollectionViewSource> dans la fenêtre WPF.
 
-### <a name="to-load-the-data-from-the-service"></a>Pour charger les données du service
+Utilisez l’objet proxy de service pour charger les données de ventes à partir du service. Puis assignez les données retournées à la source de données pour la <xref:System.Windows.Data.CollectionViewSource> dans la fenêtre WPF.
 
 1.  Dans le concepteur, pour créer le `Window_Loaded` Gestionnaire d’événements, double-cliquez sur le texte qui lit : **MainWindow**.
 
@@ -246,9 +239,8 @@ Utilisez l’objet proxy de service pour charger les données de ventes à parti
      [!code-vb[Data_WPFWCF#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_2.vb)]
 
 ## <a name="navigate-sales-records"></a>Parcourir des enregistrements de ventes
-Ajoutez le code qui permet aux utilisateurs de parcourir les enregistrements de vente à l’aide de la **\<** et **>** boutons.
 
-### <a name="to-enable-users-to-navigate-sales-records"></a>Pour permettre aux utilisateurs de parcourir les enregistrements de vente
+Ajoutez le code qui permet aux utilisateurs de parcourir les enregistrements de vente à l’aide de la **\<** et **>** boutons.
 
 1.  Dans le concepteur, double-cliquez sur le **<** bouton sur la surface de la fenêtre.
 
@@ -268,10 +260,9 @@ Ajoutez le code qui permet aux utilisateurs de parcourir les enregistrements de 
      [!code-csharp[Data_WPFWCF#4](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_4.cs)]
      [!code-vb[Data_WPFWCF#4](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_4.vb)]
 
-## <a name="saving-changes-to-sales-records"></a>L’enregistrement des modifications aux enregistrements de vente
-Ajoutez le code qui permet aux utilisateurs d’afficher et enregistrer les modifications apportées aux enregistrements de vente à l’aide de la **enregistrer les modifications** bouton.
+## <a name="save-changes-to-sales-records"></a>Enregistrer les modifications apportées aux enregistrements de vente
 
-### <a name="to-add-the-ability-to-save-changes-to-sales-records"></a>Pour ajouter la possibilité d'enregistrer les modifications apportées aux enregistrements de vente
+Ajoutez le code qui permet aux utilisateurs d’afficher et enregistrer les modifications apportées aux enregistrements de vente à l’aide de la **enregistrer les modifications** bouton :
 
 1.  Dans le concepteur, double-cliquez sur le **enregistrer les modifications** bouton.
 
@@ -282,10 +273,9 @@ Ajoutez le code qui permet aux utilisateurs d’afficher et enregistrer les modi
      [!code-csharp[Data_WPFWCF#5](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_5.cs)]
      [!code-vb[Data_WPFWCF#5](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_5.vb)]
 
-## <a name="testing-the-application"></a>Test de l'application
-Générez et exécutez l'application pour vérifier que vous pouvez afficher et mettre à jour les enregistrements client.
+## <a name="test-the-application"></a>Tester l’application
 
-### <a name="to-test-the-application"></a>Pour tester l'application
+Générer et exécuter l’application pour vérifier que vous pouvez afficher et mettre à jour les enregistrements de client :
 
 1.  Sur **Build** menu, cliquez sur **générer la Solution**. Vérifiez que la solution se génère sans erreur.
 

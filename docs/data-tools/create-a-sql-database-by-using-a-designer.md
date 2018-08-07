@@ -14,23 +14,24 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5d21ba3f239bb4c5e3fdd1ba717b1288956b8550
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 71d9be6ddc664d3b25c52d227e749421611f3512
+ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756153"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582370"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Créer une base de données et ajouter des tables dans Visual Studio
+
 Vous pouvez utiliser Visual Studio pour créer et mettre à jour un fichier de base de données locale dans SQL Server Express LocalDB. Vous pouvez également créer une base de données en exécutant les instructions Transact-SQL dans le **Explorateur d’objets SQL Server** fenêtre outil dans Visual Studio. Dans cette rubrique, nous allons créer un *.mdf* fichier, puis ajoutez les tables et les clés à l’aide du Concepteur de tables.
 
 ## <a name="prerequisites"></a>Prérequis
+
 Pour effectuer cette procédure pas à pas, vous devez avoir le paramètre facultatif **stockage de données et de traitement** charge de travail installée dans Visual Studio. Pour l’installer, ouvrez **le programme d’installation de Visual Studio** et choisissez le **charges de travail** onglet. Sous **Web & Cloud**, choisissez **stockage de données et de traitement**. Choisissez le **modifier** pour ajouter la charge de travail pour Visual Studio.
 
 ## <a name="create-a-project-and-a-local-database-file"></a>Créer un projet et un fichier de base de données locale
 
-### <a name="to-create-a-project-and-a-database-file"></a>Pour créer un projet et un fichier de base de données
-1.  Créer un projet Windows Forms qui est nommé `SampleDatabaseWalkthrough`.
+1.  Créer un projet Windows Forms qui est nommé **ProcédureExempleBaseDonnées**.
 
 2.  Dans la barre de menus, sélectionnez **projet** > **ajouter un nouvel élément**.
 
@@ -41,6 +42,7 @@ Pour effectuer cette procédure pas à pas, vous devez avoir le paramètre facul
 4.  Nom de la base de données **SampleDatabase**, puis sélectionnez le **ajouter** bouton.
 
 ### <a name="to-add-a-data-source"></a>Pour ajouter une source de données
+
 5.  Si le **des Sources de données** fenêtre n’est pas ouverte, ouvrez-le en sélectionnant le **MAJ**+**Alt**+**D** clés ou, dans la barre de menus, sélectionnez **vue** > **Windows autres** > **des Sources de données**.
 
 6.  Dans le **des Sources de données** fenêtre, sélectionnez le **ajouter une nouvelle Source de données** lien.
@@ -58,6 +60,7 @@ Pour effectuer cette procédure pas à pas, vous devez avoir le paramètre facul
 11. Un seul le **choisir vos objets de base de données** page, vous verrez un message indiquant que la base de données ne contient pas tous les objets. Choisissez **Terminer**.
 
 ### <a name="to-view-properties-of-the-data-connection"></a>Pour afficher les propriétés de la connexion de données
+
 Vous pouvez afficher la chaîne de connexion pour le *SampleDatabase.mdf* fichier en ouvrant la fenêtre Propriétés de la connexion de données :
 
 -   Dans Visual Studio, sélectionnez **vue** > **Explorateur d’objets SQL Server** si cette fenêtre n’est pas déjà ouverte. Ouvrez la fenêtre Propriétés en développant le **des connexions de données** nœud, en ouvrant le menu contextuel pour *SampleDatabase.mdf*, puis en sélectionnant **propriétés**.
@@ -65,9 +68,11 @@ Vous pouvez afficher la chaîne de connexion pour le *SampleDatabase.mdf* fichie
 -   Vous pouvez également sélectionner **vue** > **Explorateur de serveurs**, si cette fenêtre n’est pas déjà ouverte. Ouvrez la fenêtre Propriétés en développant le **des connexions de données** nœud. Ouvrez le menu contextuel pour *SampleDatabase.mdf*, puis sélectionnez **propriétés**.
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>Créer des tables et des clés à l’aide du Concepteur de tables
+
 Dans cette section, vous allez créer deux tables, une clé primaire dans chaque table et quelques lignes d’exemples de données. Vous allez également créer une clé étrangère pour spécifier comment les enregistrements dans une table correspondent aux enregistrements dans l’autre table.
 
 ### <a name="to-create-the-customers-table"></a>Pour créer la table Customers
+
 1.  Dans **Explorateur de serveurs** ou **Explorateur d’objets SQL Server**, développez le **des connexions de données** nœud, puis développez le **SampleDatabase.mdf**nœud.
 
 2.  Ouvrez le menu contextuel pour **Tables**, puis sélectionnez **ajouter une nouvelle Table**.
@@ -104,6 +109,7 @@ Dans cette section, vous allez créer deux tables, une clé primaire dans chaque
     Vos modifications sont enregistrées dans le fichier de base de données local.
 
 ### <a name="to-create-the-orders-table"></a>Pour créer la table Orders
+
 1.  Ajoutez une table, puis ajoutez une ligne pour chaque entrée dans le tableau suivant :
 
     |Nom de la colonne|Type de données|Null autorisé|
@@ -128,11 +134,12 @@ Dans cette section, vous allez créer deux tables, une clé primaire dans chaque
     Vos modifications sont enregistrées dans le fichier de base de données local.
 
 ### <a name="to-create-a-foreign-key"></a>Pour créer une clé étrangère
+
 1.  Dans le volet contextuel sur le côté droit de la grille, ouvrez le menu contextuel pour **clés étrangères**, puis sélectionnez **ajouter une nouvelle clé étrangère**, comme le montre l’illustration suivante.
 
      ![Ajout d'une clé étrangère dans le concepteur de tables](../data-tools/media/foreignkey.png)
 
-2.  Dans la zone de texte qui s’affiche, remplacez **ToTable** avec `Customers`.
+2.  Dans la zone de texte qui s’affiche, remplacez **ToTable** avec **clients**.
 
 3.  Dans le volet T-SQL, mettez à jour la dernière ligne pour correspondre à l’exemple suivant :
 
@@ -147,8 +154,6 @@ Dans cette section, vous allez créer deux tables, une clé primaire dans chaque
     Vos modifications sont enregistrées dans le fichier de base de données local.
 
 ## <a name="populate-the-tables-with-data"></a>Remplir les tables de données
-
-### <a name="to-populate-the-tables-with-data"></a>Pour remplir les tables avec des données
 
 1.  Dans **Explorateur de serveurs** ou **Explorateur d’objets SQL Server**, développez le nœud de la base de données.
 

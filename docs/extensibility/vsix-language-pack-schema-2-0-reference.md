@@ -1,5 +1,5 @@
 ---
-title: Référence de schéma 2.0 VSIX Language Pack | Documents Microsoft
+title: Référence de schéma 2.0 du module linguistique VSIX | Microsoft Docs
 ms.custom: ''
 ms.date: 10/26/2017
 ms.technology:
@@ -16,31 +16,31 @@ author: dgriffen
 manager: douge
 ms.workload:
 - dagriffe
-ms.openlocfilehash: 571f90f31014dcc4d5686483bfc037e458f4a31e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e4a8bc0f4b276ed649cdff986bdfc56cf8c77e06
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139651"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586220"
 ---
-# <a name="vsix-language-pack-schema-20-reference"></a>Référence de schéma 2.0 VSIX Language Pack
+# <a name="vsix-language-pack-schema-20-reference"></a>Référence de schéma 2.0 du module linguistique VSIX
 
 Le schéma du module linguistique VSIX fournit des informations d’installation localisée des packages VSIX. La version 2.0 de ce schéma prend en charge les éléments de localisation supplémentaires.
 
 ## <a name="language-pack-schema"></a>Schéma du module linguistique
 
-L’élément racine du fichier de pack de langue est `<PackageLanguagePackManifest>`, dont l’attribut `Version`, qui est la version du format du pack de langue. Cette rubrique décrit la version 2.0 du format de pack de langue, qui est spécifié dans le manifeste en définissant le `Version` à la valeur d’attribut `Version="2.0.0"`. L’élément racine contient exactement un seul enfant `<Metadata>` élément.
+L’élément racine du fichier de pack de langue est `<PackageLanguagePackManifest>`, avec un attribut `Version`, qui est la version du format de pack de langue. Cet article décrit la version 2.0 du format de pack de langue, qui est spécifiée dans le manifeste en définissant le `Version` à la valeur d’attribut `Version="2.0.0"`. L’élément racine contient exactement un seul enfant `<Metadata>` élément.
 
 ### <a name="packagelangaugepackmanifest-element"></a>Élément de PackageLangaugePackManifest
 
-Dans la `<PackageLanguagePackManifest>` élément l’élément suivant doit exister :
+Dans le `<PackageLanguagePackManifest>` élément l’élément suivant doit exister :
 |Titre|Description|
 |-----------|-----------------|
 |`<Metadata>`| L’élément conteneur pour toutes les métadonnées de la version localisée du package
 
 ### <a name="metadata-element"></a>Élément de métadonnées
 
-Dans la `<Metadata>` élément, vous pouvez avoir les éléments suivants :
+Dans le `<Metadata>` élément que vous pouvez avoir les éléments suivants :
 |Titre|Description|
 |-----------|-----------------|
 |`<DisplayName>`|Le nom localisé de l’extension à installer|
@@ -50,7 +50,7 @@ Dans la `<Metadata>` élément, vous pouvez avoir les éléments suivants :
 |`<ReleaseNotes>`| Un chemin d’accès ou un lien vers une version localisée des notes de publication|
 |`<Icon>`| Un chemin d’accès à une version localisée de l’icône des extensions|
 
-### <a name="sample-manifest"></a>Manifeste de l’exemple
+### <a name="sample-manifest"></a>Exemple de fichier manifeste
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -70,6 +70,6 @@ Dans la `<Metadata>` élément, vous pouvez avoir les éléments suivants :
 
 |Titre|Description|
 |-----------|-----------------|
-|[Localisation de packages VSIX](../extensibility/localizing-vsix-packages.md)|Montre comment fournir la prise en charge de l’installation localisée d’un package VSIX.|
-|[Référence de schéma 2.0 d’extension VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)|Un manifeste VSIX décrit le contenu d’un fichier de déploiement .vsix, qui permet à une extension Visual Studio être installé à l’aide de la **Extensions et mises à jour** boîte de dialogue.|
-|[Recherche et utilisation des extensions Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)|Montre comment utiliser le **Extensions et mises à jour** boîte de dialogue pour installer, supprimer, activer et désactiver des extensions.|
+|[Localisation de packages VSIX](../extensibility/localizing-vsix-packages.md)|Montre comment fournir un support d’installation localisé pour un package VSIX.|
+|[Référence de schéma 2.0 d’extension VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)|Un manifeste VSIX décrit le contenu d’un *.vsix* fichier de déploiement. Le fichier de déploiement vous permet d’installer une extension Visual Studio à l’aide de la **Extensions et mises à jour** boîte de dialogue.|
+|[Rechercher et utiliser des extensions Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)|Montre comment utiliser le **Extensions et mises à jour** boîte de dialogue pour installer, supprimer, activer et désactiver des extensions.|
