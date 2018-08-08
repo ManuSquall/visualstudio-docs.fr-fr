@@ -10,18 +10,18 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d1c68db8282a74ce230d573450a359060bb0d12c
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 84a665a39c9cfa9e0eee030d7bf4fdb9b3194bc1
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155579"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251716"
 ---
-# <a name="using-visual-studio-tools-for-unity"></a>Utilisation de Visual Studio Tools pour Unity
+# <a name="use-visual-studio-tools-for-unity"></a>Utiliser Visual Studio Tools pour Unity
 
 Dans cette section, vous allez apprendre à utiliser les fonctionnalités d’intégration et de productivité de Visual Studio Tools pour Unity, ainsi qu’à utiliser le débogueur Visual Studio pour le développement Unity.
 
-## <a name="opening-unity-scripts-in-visual-studio"></a>Ouvrir des scripts Unity dans Visual Studio
+## <a name="open-unity-scripts-in-visual-studio"></a>Ouvrir des scripts Unity dans Visual Studio
 
 Une fois Visual Studio [défini comme éditeur de scripts externe pour Unity](getting-started-with-visual-studio-tools-for-unity.md#configure-unity-for-use-with-visual-studio), le fait d’ouvrir un script à partir de l’éditeur Unity lance automatiquement Visual Studio (ou bascule sur la fenêtre ouverte) sur le script en question. Double-cliquez sur l’un des scripts de votre projet Unity.
 
@@ -33,7 +33,7 @@ Vous pouvez aussi lancer Visual Studio sans ouvrir de script dans l’éditeur d
 
  Vous pouvez accéder rapidement à la documentation sur les scripts Unity à partir de Visual Studio. Si Visual Studio Tools pour Unity ne trouve pas la documentation de l'API en local, il la recherche en ligne.
 
-- Dans Visual Studio, placez le curseur sur l’API Unity pour laquelle vous souhaitez obtenir des informations ou sélectionnez-la, puis appuyez sur **Ctrl+Alt+M, Ctrl+H**.
+- Dans Visual Studio, placez le curseur sur l’API Unity pour laquelle vous souhaitez obtenir des informations ou sélectionnez-la, puis appuyez sur **Ctrl**+**Alt**+**M**, **Ctrl**+**H**.
 
 ## <a name="intellisense-for-unity-api-messages"></a>IntelliSense pour les messages de l’API Unity
 
@@ -71,7 +71,7 @@ Vous pouvez utiliser l’Assistant MonoBehavior pour afficher la liste de toutes
 
 Pour créer des définitions de méthode MonoBehavior vides avec l’Assistant MonoBehavior :
 
-1. Dans Visual Studio, placez le curseur à l’endroit où vous souhaitez insérer les méthodes, puis appuyez sur **Ctrl+Maj+M** pour lancer l’Assistant MonoBehavior.
+1. Dans Visual Studio, placez le curseur à l’endroit où vous souhaitez insérer les méthodes, puis appuyez sur **Ctrl**+**Maj**+**M** pour lancer l’Assistant MonoBehavior.
 
 1. Dans la fenêtre **Créer des méthodes de script**, cochez la case à côté du nom de chaque méthode que vous voulez ajouter.
 
@@ -91,7 +91,7 @@ Pour créer des définitions de méthode MonoBehavior vides avec l’Assistant M
 
  L’Explorateur de projets Unity affiche tous les fichiers projet et répertoires Unity de la même manière que l’éditeur Unity. Ce n’est pas la même chose que de parcourir les scripts Unity avec l’Explorateur de solutions normal de Visual Studio, qui les organise en projets et une solution générée par Visual Studio.
 
-- Dans le menu principal de Visual Studio, choisissez **Affichage > Explorateur de projets Unity**. Raccourci clavier : **Alt+Maj+E**
+- Dans le menu principal de Visual Studio, choisissez **Affichage > Explorateur de projets Unity**. Raccourci clavier : **Alt**+**Maj**+**E**
 
      ![Afficher la fenêtre Explorateur de projet Unity.](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_unity_project_explorer")
 
@@ -107,7 +107,7 @@ Pour créer des définitions de méthode MonoBehavior vides avec l’Assistant M
 
  Visual Studio Tools pour Unity vous permet de déboguer les scripts de l'éditeur et de jeu de votre projet Unity à l'aide du puissant débogueur de Visual Studio.
 
-### <a name="debugging-in-the-unity-editor"></a>Débogage dans l’éditeur Unity
+### <a name="debug-in-the-unity-editor"></a>Déboguer dans l’éditeur Unity
 
 #### <a name="start-debugging"></a>Démarrer le débogage
 
@@ -141,9 +141,9 @@ Pour plus de commodité, vous pouvez remplacer le bouton **Attacher à Unity** p
 
 Le bouton Lire est à présent intitulé **Attacher à Unity et lire**. Ce bouton et le raccourci clavier **F5** ont maintenant pour effet de basculer automatiquement vers l’éditeur Unity et d’exécuter le jeu dans l’éditeur, en plus d’attacher le débogueur Visual Studio.
 
-Le bouton **Arrêter** dans Visual Studio et le raccourci clavier **Maj+F5** ont maintenant pour effet d’arrêter automatiquement le jeu dans l’éditeur Unity.
+Le bouton **Arrêter** dans Visual Studio et le raccourci clavier **Maj**+**F5** ont maintenant pour effet d’arrêter automatiquement le jeu dans l’éditeur Unity.
 
-### <a name="debugging-unity-player-builds"></a>Déboguer les builds des lecteurs Unity
+### <a name="debug-unity-player-builds"></a>Déboguer les builds des lecteurs Unity
 
 Il est possible de déboguer les builds de développement de différents lecteurs Unity avec Visual Studio.
 
@@ -177,7 +177,7 @@ Il est possible de déboguer les builds de développement de différents lecteur
 > [!IMPORTANT]
 > Étant donné que Visual Studio Tools pour Unity et l'instance Unity communiquent via un socket réseau UDP, votre pare-feu peut l'interroger. Dans ce cas, vous devez autoriser la connexion de telle sorte que VSTU et Unity puissent communiquer.
 
-### <a name="debugging-a-dll-in-your-unity-project"></a>Débogage d'une DLL dans votre projet Unity
+### <a name="debug-a-dll-in-your-unity-project"></a>Déboguer une DLL dans votre projet Unity
 
  De nombreux développeurs Unity écrivent des composants de code en tant que DLL externes afin que les fonctionnalités qu'ils développent puissent être facilement partagées avec d'autres projets. Visual Studio Tools pour Unity facilite le débogage du code dans ces DLL, sans heurt avec tout autre code de votre projet Unity.
 
@@ -214,9 +214,9 @@ Il est possible de déboguer les builds de développement de différents lecteur
 
 |Commande|Raccourci|Nom de la commande du raccourci|
 |-------------|--------------|---------------------------|
-|Ouvrir l'Assistant MonoBehavior|**Ctrl+Maj+M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
-|Ouvrir l'Explorateur de projets Unity|**Alt+Maj+E**|**View.UnityProjectExplorer**|
-|Accéder à la documentation Unity|**Ctrl+Alt+M, Ctrl+H**|**Help.UnityAPIReference**|
+|Ouvrir l'Assistant MonoBehavior|**Ctrl**+**Maj**+**M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
+|Ouvrir l'Explorateur de projets Unity|**Alt**+**Maj**+**E**|**View.UnityProjectExplorer**|
+|Accéder à la documentation Unity|**Ctrl**+**Alt**+**M, Ctrl**+**H**|**Help.UnityAPIReference**|
 |Attacher au débogueur Unity (lecteur ou éditeur)|***Pas de valeur par défaut***|**Debug.AttachUnityDebugger**|
 
- Vous pouvez modifier les combinaisons de touches de raccourci si vous n'aimez pas la valeur par défaut. Pour plus d’informations sur la modification des combinaisons par défaut, consultez [Identification et personnalisation des raccourcis clavier dans Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
+ Vous pouvez modifier les combinaisons de touches de raccourci si vous n'aimez pas la valeur par défaut. Pour plus d’informations sur la modification des combinaisons par défaut, consultez [Identifier et personnaliser les raccourcis clavier dans Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).

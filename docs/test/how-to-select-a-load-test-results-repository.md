@@ -17,18 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 24b146b9916fbdd656868a7a89daa0213ec7b659
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ae5d4dc14cd97a81a386d3879831fce1a030673a
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751999"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379577"
 ---
-# <a name="how-to-select-a-load-test-results-repository"></a>Comment : sélectionner un référentiel de résultats des tests de charge
+# <a name="how-to-select-a-load-test-results-repository"></a>Guide pratique pour sélectionner un référentiel de résultats des tests de charge
 
 Vous n'êtes pas limité à un magasin de résultats local. Souvent, les tests de charge sont exécutés sur un jeu distant d'ordinateurs agents. Les agents, utilisés conjointement avec un contrôleur, peuvent générer une charge simulée plus importante qu'un ordinateur unique. Pour plus d’informations, consultez [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md).
 
-Vous pouvez enregistrer les résultats des tests de vos agents ou de votre ordinateur local sur un serveur SQL sur lequel vous avez créé un magasin de résultats de tests de charge. Dans les deux cas, vous devez identifier l'emplacement où stocker les résultats de votre test de charge à l'aide de la fenêtre Administrer le contrôleur de test.
+Vous pouvez enregistrer les résultats des tests de vos agents ou de votre ordinateur local sur un serveur SQL sur lequel vous avez créé un magasin de résultats de tests de charge. Dans les deux cas, vous devez identifier l’emplacement auquel stocker les résultats de votre test de charge à l’aide de la fenêtre **Administrer le contrôleur de test**.
 
 Pour plus d’informations sur les agents, consultez [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md).
 
@@ -36,11 +36,11 @@ Pour plus d’informations sur les agents, consultez [Contrôleurs de test et ag
 
 1.  Dans **l’Explorateur de solutions**, ouvrez votre fichier de test de charge.
 
-2.  Dans la barre d’outils **Test de charge**, sélectionnez **Gérer les contrôleurs de test**. La boîte de dialogue Gérer le contrôleur de test s'affiche. Si vous utilisez un agent à distance, vous devez sélectionner un contrôleur.
+2.  Dans la barre d’outils **Test de charge**, sélectionnez **Gérer les contrôleurs de test**. La boîte de dialogue **Gérer le contrôleur de test** s’affiche. Si vous utilisez un agent à distance, vous devez sélectionner un contrôleur.
 
      ![Propriétés de connexion du magasin des résultats du test de charge](../test/media/loadtestconnectionproperties.png) Propriétés de connexion du magasin des résultats du test de charge
 
-3.  Dans le **Magasin des résultats des tests de charge**, cliquez sur (…) pour afficher la boîte de dialogue **Propriétés de connexion**.
+3.  Dans le **Magasin des résultats des tests de charge**, cliquez sur **(…)** pour afficher la boîte de dialogue **Propriétés de connexion**.
 
 4.  Dans **Nom du serveur**, tapez le nom du serveur où vous avez exécuté les scripts `LoadTest`.
 
@@ -57,5 +57,5 @@ Pour plus d’informations sur les agents, consultez [Contrôleurs de test et ag
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Gestion des résultats des tests de charge dans le référentiel des résultats des tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md)
+- [Gérer des résultats des tests de charge dans le référentiel des résultats des tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md)

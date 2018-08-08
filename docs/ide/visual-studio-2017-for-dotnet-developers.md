@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3c3b7ae456886939dc47c93dfb155aae726e8ccf
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: d0f7ffbef8fade3e5723a84ac433ce95679c26c3
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37175302"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381092"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Guide de productivité C# pour Visual Studio 2017
 
@@ -140,7 +140,7 @@ Voici une liste de fonctionnalités de l’éditeur liées à la productivité p
 
 | Fonctionnalité | Détails | Comment activer |
 |-|-|-|
-| Rechercher un fichier dans l’Explorateur de solutions | Met en évidence le fichier actif dans l’Explorateur de solutions | **Outils** > **Options** > **Projets et solutions** > **Suivre un élément actif dans l’Explorateur de solutions** |
+| Rechercher un fichier dans l’Explorateur de solutions | Met en évidence le fichier actif dans **Explorateur de solutions** | **Outils** > **Options** > **Projets et solutions** > **Suivre un élément actif dans l’Explorateur de solutions** |
 | Ajouter des instructions using pour les types dans les assemblys de référence et les packages NuGet | Affiche une ampoule avec un correctif de code pour installer un package NuGet pour un type non référencé | **Outils** > **Options** > **Éditeur de texte** > **C#** > **Avancé** > **Suggérer des usings pour les types dans les assemblys de référence** et **Suggérer des usings pour les types dans les packages NuGet** |
 | Activer l’analyse complète de la solution | Visualisez toutes les erreurs de votre solution dans la **Liste d’erreurs** | **Outils** > **Options** > **Éditeur de texte** > **C#** > **Avancé**   > **Activer l’analyse complète de la solution** |
 | Activer la navigation vers les sources décompilées | Permet d’activer la fonctionnalité Atteindre la définition sur les types/membres de sources externes et d’utiliser le décompilateur ILSpy pour afficher les corps de méthodes | **Outils** > **Options** > **Éditeur de texte** > **C#** > **Avancé** > **Activer la navigation vers les sources décompilées** |

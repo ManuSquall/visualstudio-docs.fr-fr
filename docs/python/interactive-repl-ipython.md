@@ -11,29 +11,29 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: adfd037cc7362a4aa088d57c3776379caf6de5e3
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 6bd98a8b937dc5a4ff2f8227684be4fbb9a948c4
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057659"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341505"
 ---
-# <a name="using-ipython-in-the-interactive-window"></a>Utilisation d’IPython dans la fenêtre interactive
+# <a name="use-ipython-in-the-interactive-window"></a>Utiliser IPython dans la fenêtre interactive
 
-La fenêtre interactive Visual Studio en mode IPython est un environnement de développement interactif convivial qui comporte des fonctionnalités de calcul parallèles interactives. Cet article vous guide tout au long de l’utilisation d’IPython dans la fenêtre interactive Visual Studio, dans laquelle toutes les fonctionnalités de la [fenêtre interactive](python-interactive-repl-in-visual-studio.md) standard sont également disponibles.
+La **fenêtre interactive** Visual Studio en mode IPython est un environnement de développement interactif avancé, mais convivial, qui comporte des fonctionnalités de calcul parallèles interactives. Cet article vous guide tout au long de l’utilisation d’IPython dans la **fenêtre interactive** Visual Studio, dans laquelle toutes les fonctionnalités de la [fenêtre interactive](python-interactive-repl-in-visual-studio.md) standard sont également disponibles.
 
 Pour cette procédure pas à pas, vous devez avoir installé l’environnement [Anaconda](https://www.continuum.io), qui inclut IPython ainsi que les bibliothèques nécessaires.
 
 > [!Note]
-> IronPython ne prend pas en charge IPython, bien qu’il soit possible de le sélectionner dans le formulaire des options interactives. Pour plus d’informations, consultez la [demande de fonctionnalité](https://github.com/Microsoft/PTVS/issues/84).
+> IronPython ne prend pas en charge IPython, bien qu’il soit possible de le sélectionner dans le formulaire des **options interactives**. Pour plus d’informations, consultez la [demande de fonctionnalité](https://github.com/Microsoft/PTVS/issues/84).
 
-1. Ouvrez Visual Studio, basculez vers la fenêtre des environnements Python (**Affichage > Autres fenêtres > Environnements Python**), puis sélectionnez votre environnement Anaconda.
+1. Ouvrez Visual Studio, basculez vers la fenêtre **Environnements Python** (**Affichage** > **Autres fenêtres** > **Environnements Python**), puis sélectionnez un environnement Anaconda.
 
 1. Examinez l’onglet **Packages (Conda)** (qui peut être intitulé **pip** ou **Packages**) pour cet environnement afin de vérifier que `ipython` et `matplotlib` sont répertoriés. Si ce n’est pas le cas, installez-les ici. (Consultez [Fenêtre Environnements Python - Onglet Packages](python-environments-window-tab-reference.md).)
 
-1. Sélectionnez l’onglet **Vue d’ensemble** et **Utiliser le mode interactif IPython**. (Dans Visual Studio 2015, sélectionnez **Configure interactive options** (Configurer les options interactives) pour ouvrir la boîte de dialogue **Options**, affectez à **Mode interactif** la valeur IPython, puis sélectionnez **OK**).
+1. Sélectionnez l’onglet **Vue d’ensemble** et **Utiliser le mode interactif IPython**. (Dans Visual Studio 2015, sélectionnez **Configure interactive options** (Configurer les options interactives) pour ouvrir la boîte de dialogue **Options**, affectez à **Mode interactif** la valeur **IPython**, puis sélectionnez **OK**).
 
-1. Sélectionnez **Ouvrir une fenêtre interactive** pour afficher la fenêtre interactive en mode IPython. Vous devrez peut-être réinitialiser la fenêtre si vous venez de changer le mode interactif. Vous devrez peut-être aussi appuyer sur Entrée si seule une invite >>> s’affiche pour obtenir une invite similaire à « In [2] ».
+1. Sélectionnez **Ouvrir une fenêtre interactive** pour afficher la **fenêtre interactive** en mode IPython. Vous devrez peut-être réinitialiser la fenêtre si vous venez de changer le mode interactif. Vous devrez peut-être aussi appuyer sur **Entrée** si seule une invite >>> s’affiche pour obtenir une invite similaire à  **[2]**.
 
     ![Fenêtre interactive en mode IPython](media/ipython-repl-03.png)
 
@@ -52,7 +52,7 @@ Pour cette procédure pas à pas, vous devez avoir installé l’environnement [
 
     ![Graphique inline dans la fenêtre interactive](media/ipython-repl-04.png)
 
-1. Au lieu d’effectuer une saisie dans la boucle REPL, vous pouvez écrire du code dans l’éditeur, le sélectionner, cliquer dessus avec le bouton droit et sélectionner la commande **Envoyer vers Interactive** (ou appuyer sur Ctrl+Entrée). Essayez de coller le code ci-dessous dans un nouveau fichier dans l’éditeur, de le sélectionner à l’aide des touches Ctrl+A, puis de l’envoyer dans la fenêtre interactive. (Visual Studio envoie le code en une seule unité pour éviter de vous donner des graphes intermédiaires ou partiels. Si vous n’avez pas un projet Python ouvert avec un autre environnement sélectionné, Visual Studio ouvre une fenêtre interactive pour n’importe quel environnement sélectionné par défaut dans la fenêtre **Environnements Python**.)
+1. Au lieu d’effectuer une saisie dans la boucle REPL, vous pouvez écrire du code dans l’éditeur, le sélectionner, cliquer dessus avec le bouton droit et sélectionner la commande **Envoyer vers Interactive** (ou appuyer sur **Ctrl**+**Entrée**). Essayez de coller le code ci-dessous dans un nouveau fichier dans l’éditeur, de le sélectionner à l’aide des touches **Ctrl**+**A**, puis de l’envoyer dans la **fenêtre interactive**. (Visual Studio envoie le code en une seule unité pour éviter de vous donner des graphes intermédiaires ou partiels. Si vous n’avez pas un projet Python ouvert avec un autre environnement sélectionné, Visual Studio ouvre une **fenêtre interactive** pour n’importe quel environnement sélectionné par défaut dans la fenêtre **Environnements Python**.)
 
     ```python
     from mpl_toolkits.mplot3d import Axes3D
@@ -77,12 +77,12 @@ Pour cette procédure pas à pas, vous devez avoir installé l’environnement [
 
     ![Envoi de code de l’éditeur vers la fenêtre interactive](media/ipython-repl-05.png)
 
-1. Pour afficher les graphiques en dehors de la fenêtre interactive, exécutez le code en utilisant cette fois la commande **Debug > Start without Debugging** (Déboguer > Démarrer sans débogage).
+1. Pour afficher les graphiques en dehors de la **fenêtre interactive**, exécutez le code en utilisant cette fois la commande **Déboguer** > **Démarrer sans débogage**.
 
 IPython comporte de nombreuses autres fonctions utiles, par exemple des fonctions de sortie vers l’interpréteur de commandes système, de substitution de variables, de capture de sortie, etc. Pour plus d’informations, consultez la [documentation IPython](http://ipython.org/documentation.html).
 
-## <a name="related-articles"></a>Articles connexes
+## <a name="see-also"></a>Voir aussi
 
 - Pour utiliser Jupyter facilement et sans installation, essayez gratuitement le [service hébergé Azure Notebooks](https://notebooks.azure.com/) qui vous permet de conserver et partager vos blocs-notes avec d’autres.
 
-- Vous pouvez également exécuter Jupyter (anciennement IPython) sur votre propre machine virtuelle Windows ou Linux sur Azure. Pour plus d’informations, consultez [Création d’une machine virtuelle Azure, installation de Jupyter et exécution de Jupyter Notebook sur Azure](/azure/virtual-machines/virtual-machines-linux-jupyter-notebook).
+- [Azure Data Science Virtual Machine](/azure/machine-learning/data-science-virtual-machine/overview) est également préconfiguré pour exécuter les blocs-notes Jupyter avec un large éventail d’autres outils de science des données.

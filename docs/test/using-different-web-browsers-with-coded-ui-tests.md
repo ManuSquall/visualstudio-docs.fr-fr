@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fc998fc5065b49ca68f4a46afa1da94cd3d23b07
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: a1c780f74e75e4c3f9f53ee186f5ef791be44ecb
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235061"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380715"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Utiliser différents navigateurs web avec des tests codés de l’interface utilisateur
 
@@ -53,14 +53,14 @@ Lorsque vous testez votre application web à l'aide de divers types de navigateu
 
 1.  Dans le menu **Outils** , choisissez **Extensions et mises à jour**.
 
-2.  Dans la boîte de dialogue Extensions et mises à jour, recherchez `Selenium components for Cross Browser Testing`.
+2.  Dans la boîte de dialogue **Mises à jour de produit et d’extension**, recherchez `Selenium components for Cross Browser Testing`.
 
 3.  Mettez en surbrillance l’extension et choisissez **Télécharger**.
 
     > [!TIP]
     > Vous pouvez également télécharger les composants Selenium pour le test codé de l’interface utilisateur sur plusieurs navigateurs [ici](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
 
-Pour plus d’informations sur la création et l’utilisation des tests codés de l’interface utilisateur, consultez [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md).
+Pour plus d’informations sur la création et l’utilisation des tests codés de l’interface utilisateur, consultez [Créer des tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md).
 
 ### <a name="enable-debugging"></a>Activer le débogage
 
@@ -110,7 +110,7 @@ Pour plus d’informations, consultez [Analyse des tests codés de l’interface
 
  [Enregistrement dans IE et lecture dans tous les navigateurs](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
 
- [Créer des tests multi-navigateurs avec le générateur de test codé de l’interface utilisateur](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
+ [Créer des tests multinavigateurs avec le générateur de test codé de l’interface utilisateur](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
 
  [Créer des tests multi-navigateurs avec du code brut sans mapper l’interface utilisateur](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!186&authkey=!AJaEvxJnsefyAT4)
 
@@ -122,4 +122,4 @@ Pour plus d’informations, consultez [Analyse des tests codés de l’interface
 
 - [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
 - [Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-- [Analyse des tests codés de l’interface utilisateur à l’aide des journaux de test codé de l’interface utilisateur](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)
+- [Analyser des tests codés de l’interface utilisateur à l’aide des journaux de tests codés de l’interface utilisateur](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

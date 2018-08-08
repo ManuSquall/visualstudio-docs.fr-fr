@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 2618b8a27ceb4ed03c8b4bb2f3e910c60e61b6cc
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 50fafdb91f9a845fed8681f7b75662200c45c913
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978154"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380861"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procédure pas à pas : créer et exécuter des tests unitaires pour le code managé
 
@@ -84,7 +84,7 @@ public void Debit(double amount)
 
 1. Dans le menu **Fichier**, sélectionnez **Ajouter** > **Nouveau projet**.
 
-2. Dans la boîte de dialogue Nouveau Projet, développez **Installé**, développez **Visual C#**, puis choisissez **Test**.
+2. Dans la boîte de dialogue **Nouveau projet**, développez **Installé**, développez **Visual C#**, puis choisissez **Test**.
 
 3. Dans la liste des modèles, sélectionnez **Projet de test unitaire**.
 
@@ -94,9 +94,9 @@ public void Debit(double amount)
 
 5. Dans le projet **BankTests**, ajoutez une référence au projet **Bank**.
 
-   Dans l’Explorateur de solutions, sélectionnez **Références** dans le projet **BankTests** puis choisissez **Ajouter une référence** dans le menu contextuel.
+   Dans **l’Explorateur de solutions**, sélectionnez **Références** dans le projet **BankTests**, puis choisissez **Ajouter une référence** dans le menu contextuel.
 
-6. Dans la boîte de dialogue Gestionnaire de références, développez **Solution** puis cochez l’élément **Bank** .
+6. Dans la boîte de dialogue **Gestionnaire de références**, développez **Solution**, puis cochez l’élément **Bank**.
 
 ## <a name="create-the-test-class"></a>Créer la classe de test
 
@@ -230,7 +230,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>Réexécuter le test
 
-Dans l’explorateur de tests, choisissez **Exécuter tout** pour réexécuter le test. La barre rouge/verte devient verte pour indiquer que le test a réussi, puis le test est déplacé vers le groupe **Tests réussis**.
+Dans **l’Explorateur de tests**, choisissez **Exécuter tout** pour réexécuter le test. La barre rouge/verte devient verte pour indiquer que le test a réussi, puis le test est déplacé vers le groupe **Tests réussis**.
 
 ## <a name="use-unit-tests-to-improve-your-code"></a>Utiliser les tests unitaires pour améliorer votre code
 

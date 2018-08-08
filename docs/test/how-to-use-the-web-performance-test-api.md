@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ed3e4a32f1870e854720608270373f89c98ce940
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: cce61d9a56a0f8f79ec943b58fd4d1a1f88e8289
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175793"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382303"
 ---
-# <a name="how-to-use-the-web-performance-test-api"></a>Comment : utiliser l'API du test des performances de site Web
+# <a name="how-to-use-the-web-performance-test-api"></a>Guide pratique pour utiliser l’API de test de performances web
 
 Vous pouvez écrire du code pour vos tests de performances web. L’API de test de performances web permet de créer des tests de performances web codés, des plug-ins de test de performances web, des plug-ins de demande, des demandes, des règles d’extraction et des règles de validation. Les classes qui composent ces types sont les classes principales dans cette API. Les autres types dans cette API sont utilisés pour prendre en charge la création d'objets <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> et <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>. Pour créer des tests de performances web personnalisés, utilisez l’espace de noms <xref:Microsoft.VisualStudio.TestTools.WebTesting>.
 
@@ -70,4 +70,4 @@ Vous pouvez écrire du code pour vos tests de performances web. L’API de test 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 - [Créer du code et des plug-ins personnalisés pour les tests de charge](../test/create-custom-code-and-plug-ins-for-load-tests.md)
 - [Guide pratique pour utiliser l’API de test de charge](../test/how-to-use-the-load-test-api.md)
-- [Guide pratique pour créer un plug-in de test des performances web](../test/how-to-create-a-web-performance-test-plug-in.md)
+- [Guide pratique pour créer un plug-in de test de performances web](../test/how-to-create-a-web-performance-test-plug-in.md)

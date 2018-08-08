@@ -12,14 +12,14 @@ manager: crdun
 ms.workload:
 - azure
 - unity
-ms.openlocfilehash: 5230ecda1c817ec5be51019f6db793210a3d7a5d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd34352453752bd56106597fccf6ab7c495e55c2
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31062522"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251177"
 ---
-# <a name="programming-with-unity-and-azure"></a>Programmation avec Unity et Azure
+# <a name="program-with-unity-and-azure"></a>Programmer avec Unity et Azure
 
 Azure fournit une solution scalable pour le stockage des données de télémétrie et d’autres données de jeu dans le cloud. Avec la version Unity 2017, la prise en charge expérimentale de .NET 4.6 par Unity rend l’intégration d’Azure plus simple que jamais en permettant l’utilisation des kits SDK Azure .NET.
 
@@ -34,7 +34,7 @@ Consultez le bac à sable [Sandbox](/sandbox/) pour tester les kits SDK Azure ex
 * [Kit SDK Azure Event Hubs pour Unity](https://aka.ms/azeventhubsgamedev)
 * [Kit SDK Azure Mobile Apps pour Unity](https://aka.ms/azmobileappsgamedev)
 
-## <a name="azure-sdk-sample"></a>Exemple de Kit SDK Azure
+## <a name="azure-sdk-sample"></a>Exemple de SDK Azure
 
 Vous disposez également d’un [exemple de jeu simple](https://aka.ms/azmobileappsracer) en utilisant le Kit SDK Easy Tables et Unity. Le jeu utilise le stockage de données Azure Easy Tables pour effectuer le suivi des meilleurs scores et stocker les données de télémétrie du jeu. Il peut être [téléchargé à partir de GitHub](https://aka.ms/azsamples-unity).
 

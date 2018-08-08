@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6141defb2248cf79888b0ed94824a827bd36815f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e46b8af413f7f86592ed6c9362ca9f11e61c436f
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976306"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380376"
 ---
-# <a name="how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter"></a>Comment : créer un éditeur personnalisé pour les données de votre adaptateur de données de diagnostic
+# <a name="how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter"></a>Guide pratique pour créer un éditeur personnalisé pour les données de votre adaptateur de données de diagnostic
 
 Durant la création d’un adaptateur de données de diagnostic, vous souhaiterez peut-être que l’utilisateur final puisse configurer des données spécifiques si votre adaptateur de données de diagnostic personnalisé est sélectionné pour ses paramètres de test. Par exemple, vous pouvez sélectionner les données de configuration qui spécifient les clés de Registre à extraire, le niveau de charge réseau à simuler ou le répertoire dans lequel doivent se trouver les fichiers temporaires ou les fichiers de travail à joindre.
 
@@ -191,6 +191,6 @@ Pour obtenir un exemple complet de projet d’adaptateur de données de diagnost
 - <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute>
-- [Création d’un adaptateur de données de diagnostic pour collecter des données personnalisées ou affecter un ordinateur de test](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
+- [Créer un adaptateur de données de diagnostic pour collecter des données personnalisées ou affecter une machine de test](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
 - [Collecter des informations de diagnostic à l’aide des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md)
 - [Exemple de projet pour la création d’un adaptateur de données de diagnostic](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)

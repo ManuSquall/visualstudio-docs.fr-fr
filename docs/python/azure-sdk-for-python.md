@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 241c7c424f9ef670f16eead4fc400e375584f8c2
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 4dd7e5841db4c05de5607f9aefe7b9a3a36fee19
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057952"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341236"
 ---
 # <a name="azure-sdk-for-python"></a>Kit de développement logiciel (SDK) Azure pour Python
 
@@ -41,7 +41,7 @@ Vous trouverez la documentation sur [azure-sdk-for-python.readthedocs.org](https
 
 Le [kit SDK Azure pour le centre de développement Python](http://azure.microsoft.com/develop/python/) dispose également d’un certain nombre de ressources utiles, y compris d’une série de didacticiels :
 
-- Création d’applications web avec [Django](/azure/app-service-web/web-sites-python-create-deploy-django-app) [Flask](/azure/app-service-web/web-sites-python-create-deploy-flask-app) et [Bottle](/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
+- Création d’applications web avec [Django](/azure/app-service-web/web-sites-python-create-deploy-django-app), [Flask](/azure/app-service-web/web-sites-python-create-deploy-flask-app) et [Bottle](/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
 - [Stockage d’objets BLOB](/azure/storage/storage-python-how-to-use-blob-storage)
 - [Stockage de tables](/azure/storage/storage-python-how-to-use-table-storage)
 - [Stockage de file d’attente](/azure/storage/storage-python-how-to-use-queue-storage)
@@ -55,7 +55,6 @@ Pour les API publiques sans documentation, les tests unitaires du [référentiel
 - [Créer des tests d’unités](https://github.com/Azure/azure-storage-python/tree/master/tests)
 - [Tests d’unités Service Bus](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-servicebus/tests)
 - [Tests d’unités de gestion des services](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-servicemanagement-legacy/tests)
-- [Tests d’unités de gestion des ressources](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-mgmt/tests)
 
 ## <a name="support"></a>Assistance
 

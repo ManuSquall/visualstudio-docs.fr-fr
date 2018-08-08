@@ -12,20 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ef389ab3803aba5b6022c9d9ffa3a12d0801b49f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: cbe16b5e0b711783c9dfd12ab9a652fb4055fc36
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178447"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381014"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Procédure pas à pas : Créer et exécuter un test de charge qui contient des tests unitaires
 
 Dans cette procédure pas à pas, vous allez créer un test de charge qui contient des tests unitaires.
 
-Cette procédure pas à pas vous guide dans la création et l’exécution d’un test de charge à l’aide de Visual Studio Enterprise. Un test de charge est un conteneur de tests de performances web et de tests unitaires. Vous créez des tests de charge avec l'Assistant Nouveau test de charge.
+Cette procédure pas à pas vous guide dans la création et l’exécution d’un test de charge à l’aide de Visual Studio Enterprise. Un test de charge est un conteneur de tests de performances web et de tests unitaires. Vous créez des tests de charge avec **l’Assistant Nouveau test de charge**.
 
-Un test de charge expose également de nombreuses propriétés à l'exécution qui peuvent être modifiées pour générer la simulation de charge souhaitée. Dans cette procédure pas à pas, vous utilisez l'Assistant Nouveau test de charge pour ajouter des tests unitaires à un test de charge.
+Un test de charge expose également de nombreuses propriétés à l'exécution qui peuvent être modifiées pour générer la simulation de charge souhaitée. Dans cette procédure pas à pas, vous utilisez **l’Assistant Nouveau test de charge** pour ajouter des tests unitaires à un test de charge.
 
 Dans cette procédure pas à pas, vous effectuerez les tâches suivantes :
 
@@ -37,7 +37,7 @@ Dans cette procédure pas à pas, vous effectuerez les tâches suivantes :
 
 -   Effectuez les étapes dans [Procédure pas à pas : création et exécution de tests unitaires pour le code managé](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) afin de créer une bibliothèque de classes C# simple qui contient un projet de test de performances web et de charge avec quelques tests unitaires.
 
-## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>Créer un test de charge contenant des tests unitaires à l'aide de l'Assistant Nouveau test de charge
+## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>Créer un test de charge contenant des tests unitaires à l’aide de l’Assistant Nouveau test de charge
 
 ### <a name="to-start-the-new-load-test-wizard"></a>Pour démarrer l'Assistant Nouveau test de charge
 
@@ -45,9 +45,9 @@ Dans cette procédure pas à pas, vous effectuerez les tâches suivantes :
 
 2.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel du nœud de solution Bank, sélectionnez **Ajouter**, puis **Nouveau projet**.
 
-     La boîte de dialogue Ajouter un nouveau projet s'affiche.
+     La boîte de dialogue **Ajouter un nouveau projet** s’affiche.
 
-3.  Dans la boîte de dialogue Ajouter un nouveau projet, développez **Visual C#**, puis sélectionnez **Test**. Dans la liste de modèles, sélectionnez **Projet de test de performance web et de charge**, puis dans le champ **Nom**, tapez `BankLoadTest`. Cliquez sur **OK**.
+3.  Dans la boîte de dialogue **Ajouter un nouveau projet**, développez **Visual C#**, puis sélectionnez **Test**. Dans la liste de modèles, sélectionnez **Projet de test de performance web et de charge**, puis dans le champ **Nom**, tapez `BankLoadTest`. Cliquez sur **OK**.
 
      Le projet de test de performance web et de charge BankLoadTest est ajouté à la solution.
 
@@ -88,7 +88,7 @@ Dans cette procédure pas à pas, vous effectuerez les tâches suivantes :
 
 ### <a name="to-select-test-mix-model-for-the-scenario"></a>Pour sélectionner le modèle de combinaison de tests du scénario
 
-1.  Sous Comment la combinaison de tests doit être modélisée, sélectionnez **Sur la base du nombre total de tests**.
+1.  Sous **Comment la combinaison de tests doit être modélisée**, sélectionnez **Sur la base du nombre total de tests**.
 
 2.  Sélectionnez **Suivant**.
 
@@ -98,17 +98,17 @@ Dans cette procédure pas à pas, vous effectuerez les tâches suivantes :
 
 2.  Choisissez **Ajouter** pour sélectionner les tests.
 
-3.  Cliquez sur le test unitaire CreditTest répertorié dans le volet **Tests disponibles**, qui répertorie tous les tests de performances web et les tests unitaires du projet de test de performances web et de charge.
+3.  Choisissez le test unitaire **CreditTest** répertorié dans le volet **Tests disponibles**, qui répertorie tous les tests de performances web et les tests unitaires du projet de test de performances web et de charge.
 
-4.  Cliquez sur la flèche pour ajouter le test unitaire CreditTest au volet **Tests sélectionnés**.
+4.  Choisissez la flèche pour ajouter le test unitaire **CreditTest** au volet **Tests sélectionnés**.
 
-5.  Répétez les étapes 3 et 4 pour les tests unitaires DebitTest et FreezeAccountTest.
+5.  Répétez les étapes 3 et 4 pour les tests unitaires **DebitTest** et **FreezeAccountTest**.
 
 6.  Quand vous avez terminé d’ajouter les trois tests unitaires, choisissez **OK**.
 
      La combinaison de tests s'affiche à l'écran.
 
-7.  Déplacez légèrement vers la droite le curseur situé sous Distribution pour le test unitaire CreditTest afin d'ajuster la distribution du test. Notez que les autres curseurs se déplacent automatiquement vers la gauche afin que la distribution reste à 100 %.
+7.  Déplacez légèrement vers la droite le curseur situé sous **Distribution** pour le test unitaire **CreditTest** afin d’ajuster la distribution du test. Notez que les autres curseurs se déplacent automatiquement vers la gauche afin que la distribution reste à 100 %.
 
 8.  Sélectionnez **Suivant**.
 
@@ -124,7 +124,7 @@ Dans cette procédure pas à pas, vous effectuerez les tâches suivantes :
 
 1.  Sélectionnez **Suivant**.
 
-     Pour plus d’informations sur les ensembles de compteurs, consultez [Spécification des ensembles de compteurs et des règles de seuil pour les ordinateurs dans un test de charge](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+     Pour plus d’informations sur les ensembles de compteurs, consultez [Spécifier des ensembles de compteurs et des règles de seuil pour les ordinateurs dans un test de charge](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
 ### <a name="to-edit-run-setting-for-load-test"></a>Pour modifier le paramètre d'exécution du test de charge
 
@@ -134,7 +134,7 @@ Dans cette procédure pas à pas, vous effectuerez les tâches suivantes :
 
 2.  Choisissez **Terminer**. Votre test de charge s’ouvre dans **l’éditeur de test de charge**.
 
-## <a name="running-the-load-test"></a>Exécution du test de charge
+## <a name="run-the-load-test"></a>Exécuter le test de charge
  Après avoir créé le test de charge, exécutez-le pour voir de quelle façon votre application bancaire répond à la simulation de charge. Pendant l’exécution d’un test de charge, la fenêtre **Analyseur de test de charge** s’affiche.
 
 ### <a name="to-run-the-load-test"></a>Pour exécuter le test de charge
@@ -146,7 +146,7 @@ Dans cette procédure pas à pas, vous effectuerez les tâches suivantes :
 ## <a name="see-also"></a>Voir aussi
 
 - [Modification de la combinaison de tests pour spécifier les tests à inclure dans un scénario de test de charge](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
-- [Spécification des types de réseaux virtuels](../test/specify-virtual-network-types-in-a-load-test-scenario.md)
-- [Modification des scénarios de test de charge](../test/edit-load-test-scenarios.md)
-- [Modification des modèles de charge en modèle d’activités des utilisateurs virtuels](../test/edit-load-patterns-to-model-virtual-user-activities.md)
-- [Modification des modèles de combinaison de tests pour spécifier la probabilité d’exécution d’un test par un utilisateur virtuel](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)
+- [Spécifier des types de réseau virtuel](../test/specify-virtual-network-types-in-a-load-test-scenario.md)
+- [Modifier les scénarios de test de charge](../test/edit-load-test-scenarios.md)
+- [Modifier les modèles de charge en modèle d’activités des utilisateurs virtuels](../test/edit-load-patterns-to-model-virtual-user-activities.md)
+- [Modifier les modèles de combinaison de tests pour spécifier la probabilité d’exécution d’un test par un utilisateur virtuel](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)

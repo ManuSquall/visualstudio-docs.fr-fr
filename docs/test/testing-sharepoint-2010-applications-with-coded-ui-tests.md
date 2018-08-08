@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bafbce3a67178e10d71c2935de41c7d18709cf21
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 166a57cb0b3c80736761e1649da6399a9bd19807
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177507"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379710"
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>Tester des applications SharePoint avec des tests codés de l’interface utilisateur
 
@@ -94,8 +94,8 @@ Si vous enregistrez des actions dans une cellule qui n’est pas vide, l’enreg
 
 ## See also
 
-- [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md)
-- [Create SharePoint Solutions](../sharepoint/create-sharepoint-solutions.md)
-- [Verifying and Debugging SharePoint Code](../sharepoint/verifying-and-debugging-sharepoint-code.md)
-- [Building and Debugging SharePoint Solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md)
-- [Profiling the Performance of SharePoint Applications](../sharepoint/profiling-the-performance-of-sharepoint-applications.md)
+- [Use UI automation to test your code](../test/use-ui-automation-to-test-your-code.md)
+- [Create SharePoint solutions](../sharepoint/create-sharepoint-solutions.md)
+- [Verify and debug SharePoint code](../sharepoint/verifying-and-debugging-sharepoint-code.md)
+- [Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md)
+- [Profile the performance of SharePoint applications](../sharepoint/profiling-the-performance-of-sharepoint-applications.md)

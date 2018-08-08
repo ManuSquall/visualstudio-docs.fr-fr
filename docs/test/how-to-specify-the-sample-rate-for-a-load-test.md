@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 18fa71396caa0c164ef7f37183cda28c701cf4f8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2184c027651bf604b6ab89e5b2e63b6e945b2355
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970048"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382501"
 ---
-# <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Comment : spécifier un taux d'échantillonnage d'un paramètre d'exécution des tests de charge
+# <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Guide pratique pour spécifier le taux d’échantillonnage d’un paramètre d’exécution des tests de charge
 
 Après avoir créé votre test de charge avec l’**Assistant Nouveau test de charge**, vous pouvez utiliser l’**éditeur de test de charge** pour changer les propriétés en fonction de vos besoins et objectifs.
 
@@ -44,7 +44,7 @@ Voici quelques instructions sur les taux d'échantillonnage :
 
 3.  Dans le menu **Affichage**, sélectionnez **Fenêtre Propriétés**.
 
-     Les catégories et propriétés des paramètres d'exécution du test de charge sont affichées dans la fenêtre Propriétés.
+     Les catégories et propriétés des paramètres d’exécution du test de charge sont affichées dans la fenêtre **Propriétés**.
 
 4.  Dans la propriété **Taux d’échantillonnage**, entrez une valeur de temps qui indique la fréquence à laquelle le test de charge doit collecter les données du compteur de performances.
 
@@ -52,5 +52,5 @@ Voici quelques instructions sur les taux d'échantillonnage :
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Configuration des paramètres d’exécution des tests de charge](../test/configure-load-test-run-settings.md)
+- [Configurer les paramètres d’exécution des tests de charge](../test/configure-load-test-run-settings.md)
 - [Propriétés des scénarios de test de charge](../test/load-test-scenario-properties.md)

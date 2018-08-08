@@ -12,18 +12,18 @@ author: gewarren
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 68ee12b330d6b82307de7d590c09259a559716b7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9ee4fbcec25bdfa454f4c009f4d676a5291b7289
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978360"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382566"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Utiliser des stubs pour isoler des parties de votre application les unes des autres pour des tests unitaires
 
 Les *types de stub* représentent l’une des deux technologies fournies par le framework Microsoft Fakes pour vous permettre d’isoler facilement un composant que vous testez d’autres composants appelés. Un stub est une petite partie de code qui remplace un autre composant pendant les tests. L'utilisation d'un stub présente l'avantage de retourner des résultats cohérents, ce qui rend le test plus facile à écrire. Vous pouvez également effectuer des tests même si les autres composants ne fonctionnent pas encore.
 
-Pour obtenir une vue d’ensemble et un guide de démarrage rapide de Fakes, consultez [Isolation du code sous test avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
+Pour obtenir une vue d’ensemble et un guide de démarrage rapide de Fakes, consultez [Isoler du code testé avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
 Pour utiliser les stubs, vous devez écrire votre composant de manière à ce qu'il utilise uniquement des interfaces, et non classes, pour faire référence à d'autres parties de l'application. Il s'agit d'une pratique de conception efficace, car elle apporte des modifications dans une partie dans laquelle il est moins probable que des modifications soient nécessaires. Pour le test, elle vous permet de remplacer un stub pour un composant réel.
 
@@ -31,7 +31,7 @@ Dans le schéma, le composant StockAnalyzer est celui que nous souhaitons tester
 
 ![Classes Real et Stub conformes à une interface.](../test/media/fakesinterfaces.png)
 
-Les stubs comptent sur votre capacité à structurer votre code de cette manière. C'est pour cela que vous utilisez généralement les stubs pour isoler une partie de votre application des autres parties. Pour l'isoler des autres assemblys qui ne sont pas sous votre contrôle, comme System.dll, il utilise généralement des shims. Consultez [Utilisation de shims pour isoler votre application des autres assemblys pour des tests unitaires](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
+Les stubs comptent sur votre capacité à structurer votre code de cette manière. C'est pour cela que vous utilisez généralement les stubs pour isoler une partie de votre application des autres parties. Pour l’isoler des autres assemblys qui ne sont pas sous votre contrôle, comme *System.dll*, il utilise généralement des shims. Consultez [Utiliser des shims pour isoler votre application des autres assemblys pour des tests unitaires](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
 ## <a name="how-to-use-stubs"></a>Procédure d'utilisation des stubs
 
@@ -149,9 +149,9 @@ Pour utiliser les stubs, vous devez d'abord générer des types de stub à parti
 
 #### <a name="add-a-fakes-assembly"></a>Ajouter un assembly Fakes
 
-1. Dans l’Explorateur de solutions, développez les **Références** de votre projet de test unitaire.
+1. Dans **l’Explorateur de solutions**, développez les **Références** de votre projet de test unitaire.
 
-   Si vous utilisez Visual Basic, vous devez sélectionner **Afficher tous les fichiers** dans la barre d’outils de l’Explorateur de solutions pour afficher la liste de références.
+   Si vous utilisez Visual Basic, sélectionnez **Afficher tous les fichiers** dans la barre d’outils de **l’Explorateur de solutions** pour afficher le nœud **Références**.
 
 2. Sélectionnez l'assembly qui contient les définitions de l'interface pour laquelle vous souhaitez créer des stubs.
 
@@ -441,7 +441,7 @@ Les types de stub sont conçus pour fournir une expérience de débogage fluide.
 
 1. Les signatures de méthodes avec des pointeurs ne sont pas prises en charge.
 
-2. Les classes sealed ou les méthodes statiques ne peuvent pas être extraites, car les types de stub s’appuient sur l’expédition de méthode virtuelle. Dans ces cas, utilisez des types shim comme décrit dans [Utilisation de shims pour isoler votre application des autres assemblys pour des tests unitaires](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
+2. Les classes sealed ou les méthodes statiques ne peuvent pas être extraites, car les types de stub s’appuient sur l’expédition de méthode virtuelle. Dans ces cas, utilisez des types shim comme décrit dans [Utiliser des shims pour isoler votre application des autres assemblys pour des tests unitaires](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
 ## <a name="change-the-default-behavior-of-stubs"></a>Changer le comportement par défaut des stubs
 
@@ -466,4 +466,4 @@ StubBehaviors.Current = BehavedBehaviors.DefaultValue;
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Isolation du code testé avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
+- [Isoler du code testé avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)

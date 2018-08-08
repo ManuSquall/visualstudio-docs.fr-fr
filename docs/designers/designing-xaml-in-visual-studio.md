@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 5dc8ccda83f700538ae84dd565fcdd299d7d1331
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: e39a7d770308cae7e022d419b21695f9d478aad7
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37889994"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381691"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Concevoir en XAML dans Visual Studio
 
@@ -50,7 +50,7 @@ Pour la plupart des tâches de base, l'IDE de Visual Studio et l'IDE de Blend po
 
 - **Dispositions et paramètres synchronisés :** les dispositions personnalisées vous permettent d'enregistrer et d'appliquer des personnalisations de disposition de fenêtre Outil. Visual Studio synchronise ces personnalisations et ces préférences à la fois pour Visual Studio et pour Blend pour Visual Studio sur différents ordinateurs quand vous vous connectez avec le même compte Microsoft. Consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-- **Un Explorateur de solutions commun :** l'Explorateur de solutions vous offre une vue organisée de vos projets et de leurs fichiers, ainsi qu'un accès aux commandes qui s'y rapportent. Avec l'Explorateur de solutions, il est plus facile de travailler avec des grands projets d'entreprise. Consultez [Projets et solutions](../ide/solutions-and-projects-in-visual-studio.md).
+- **Un Explorateur de solutions commun :** **Explorateur de solutions** vous offre une vue organisée de vos projets et de leurs fichiers, ainsi qu’un accès aux commandes qui s’y rapportent. Avec l'Explorateur de solutions, il est plus facile de travailler avec des grands projets d'entreprise. Consultez [Projets et solutions](../ide/solutions-and-projects-in-visual-studio.md).
 
 - **Team Explorer :** Team Explorer vous permet de gérer vos projets avec les référentiels GIT ou TFS afin de faciliter la collaboration d'équipe. Consultez [Travailler dans Team Explorer](http://msdn.microsoft.com/Library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02).
 

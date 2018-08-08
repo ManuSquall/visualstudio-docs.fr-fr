@@ -11,27 +11,27 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 91a3651dcc7fd16bec2e094fd152242e67fa2d70
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 604a14a5f8d638c3d373e4ad7ea895b73a6ae0c1
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056909"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341595"
 ---
-# <a name="formatting-python-code"></a>Mise en forme de code Python
+# <a name="format-python-code"></a>Mettre en forme le code Python
 
 Dans Visual Studio, vous pouvez rapidement remettre en forme le code selon les options de mise en forme préconfigurées.
 
-- Pour mettre en forme une sélection : sélectionnez **Modifier > Avancé > Mettre la sélection en forme** ou appuyez sur Ctrl+E,F.
-- Pour mettre en forme la totalité du fichier : sélectionnez **Modifier > Avancé > Mettre le document en forme** ou appuyez sur Ctrl+E,D.
+- Pour mettre en forme une sélection : sélectionnez **Modifier** > **Avancé** > **Mettre la sélection en forme** ou appuyez sur **Ctrl**+**E** > **F**.
+- Pour mettre en forme la totalité du fichier : sélectionnez **Modifier** > **Avancé** > **Mettre le document en forme** ou appuyez sur **Ctrl**+**E** > **D**.
 
-Les options sont définies via **Outils > Options > Éditeur de texte > Python > Mise en forme** et ses onglets imbriqués. Vous devez sélectionner **Afficher tous les paramètres** pour que ces options s’affichent :
+Les options sont définies via **Outils** > **Options** > **Éditeur de texte** > **Python** > **Mise en forme** et ses onglets imbriqués. Vous devez sélectionner **Afficher tous les paramètres** pour que ces options s’affichent :
 
 ![Options de mise en forme Python dans Visual Studio](media/options-editor-formatting.png)
 
 Les options de mise en forme par défaut sont définies pour correspondre à un sur-ensemble du [guide de style PEP 8](http://www.python.org/dev/peps/pep-0008/). L’onglet **Général** détermine les cas dans lesquels la mise en forme est appliquée ; les paramètres des trois autres onglets sont décrits dans cet article.
 
-La [prise en charge de Python dans Visual Studio](installing-python-support-in-visual-studio.md) ajoute également la commande [Remplir le paragraphe de commentaire](#fill-comment-paragraph-command) utile au menu **Modifier > Avancé**, comme dans une section ultérieure.
+La [prise en charge de Python dans Visual Studio](installing-python-support-in-visual-studio.md) ajoute également la commande [**Remplir le paragraphe de commentaire**](#fill-comment-paragraph-command) utile au menu **Modifier** > **Avancé**, comme dans une section ultérieure.
 
 ## <a name="spacing"></a>Espacement
 
@@ -110,7 +110,7 @@ L’onglet **Retour à la ligne** vous permet de définir l’option **Largeur m
 
 ## <a name="fill-comment-paragraph-command"></a>Commande Fill Comment Paragraph (Redisposer le paragraphe de commentaires)
 
-La commande **Modifier > Avancé > Remplir le paragraphe de commentaire** (Ctrl+E, P) redispose et remet en forme le texte des commentaires en combinant les lignes courtes et en scindant les lignes longues.
+La commande **Modifier** > **Avancé** > **Remplir le paragraphe de commentaire** (**Ctrl**+**E** > **P**) redispose et remet en forme le texte des commentaires en combinant les lignes courtes et en scindant les lignes longues.
 
 Exemple :
 

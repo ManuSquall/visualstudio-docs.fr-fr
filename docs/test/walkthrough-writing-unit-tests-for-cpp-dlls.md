@@ -9,14 +9,14 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 54a15080e84187c53841ba03edeeaff3ccce0d30
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6cc733d3d926581801391a086c7886db3cec1bcc
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751830"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382726"
 ---
-# <a name="how-to-write-unit-tests-for-c-dlls"></a>Guide pratique pour écrire des tests pour des DLL C++
+# <a name="how-to-write-unit-tests-for-c-dlls"></a>Guide pratique pour écrire des tests unitaires pour des DLL C++
 
 Cette procédure pas à pas décrit comment développer une DLL C++ native en utilisant la méthodologie des tests en premier. Les étapes de base sont les suivantes :
 
@@ -38,9 +38,9 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
 
 ##  <a name="create_test_project"></a> Créer un projet de test unitaire natif
 
-1.  Dans le menu **Fichier**, choisissez **Nouveau | Projet**.
+1.  Dans le menu **Fichier**, choisissez **Nouveau** > **Projet**.
 
-     Dans la boîte de dialogue, développez **Installé | Modèles| Visual C++ | Test**.
+     Dans la boîte de dialogue, développez **Installé** > **Modèles** > **Visual C++** > **Test**.
 
      Choisissez le modèle **Projet de test unitaire natif** ou un autre framework installé de votre choix. Si vous choisissez un autre modèle, comme Google Test ou Boost.Test, les principes de base sont les mêmes, bien que certains détails diffèrent.
 
@@ -75,11 +75,11 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
 
          Notez que la classe `Assert` fournit plusieurs méthodes statiques que vous pouvez utiliser pour vérifier les résultats dans les méthodes de test.
 
-    2.  Dans le menu **Test**, choisissez **Exécuter | Tous les tests**.
+    2.  Dans le menu **Test**, choisissez **Exécuter** > **Tous les tests**.
 
          Le test est généré et s'exécute.
 
-         L'Explorateur de tests s'affiche.
+         **L’Explorateur de tests** s’affiche.
 
          Le test s'affiche sous **Tests réussis**.
 
@@ -99,13 +99,13 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
 
      ![Assistant de projet C++ défini pour les symboles DLL et d'exportation](../test/media/utecpp06.png)
 
-3.  Déclarez une fonction exportée dans le fichier .h principal :
+3.  Déclarez une fonction exportée dans le fichier *.h* principal :
 
      ![Nouveau projet de code de la DLL et fichier .h avec macros API](../test/media/utecpp07.png)
 
      Le déclarateur `__declspec(dllexport)` permet que les membres publics et protégés de la classe soient visibles en dehors de la DLL. Pour plus d'informations, consultez [Utilisation de dllimport et dllexport dans les classes C++](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).
 
-4.  Dans le fichier .cpp principal, ajoutez un corps minimal pour la fonction :
+4.  Dans le fichier *.cpp* principal, ajoutez un corps minimal pour la fonction :
 
     ```cpp
         // Find the square root of a number.
@@ -119,7 +119,7 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
 
 1.  Ajoutez le projet DLL aux références de projet du projet de test :
 
-    1.  Ouvrez les propriétés du projet de test et choisissez **Propriétés communes**, **Structure et références**.
+    1.  Ouvrez les propriétés du projet de test et choisissez **Propriétés communes** > **Framework et références**.
 
          ![Propriétés du projet C++ | Framework et références](../test/media/utecpp08.png)
 
@@ -129,7 +129,7 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
 
          ![Propriétés du projet C++ | Ajouter une nouvelle référence](../test/media/utecpp09.png)
 
-2.  Dans le fichier .cpp de test unitaire principal, incluez le fichier .h du code de la DLL :
+2.  Dans le fichier *.cpp* de test unitaire principal, incluez le fichier *.h* du code de la DLL :
 
     ```cpp
     #include "..\RootFinder\RootFinder.h"
@@ -157,9 +157,9 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
 
 4.  Générez la solution.
 
-     Le nouveau test s'affiche dans l'Explorateur de tests.
+     Le nouveau test s’affiche dans **l’Explorateur de tests**.
 
-5.  Dans l'Explorateur de tests, choisissez **Exécuter tout**.
+5.  Dans **l’Explorateur de tests**, choisissez **Exécuter tout**.
 
      ![Explorateur de tests unitaires &#45; Test de base réussi](../test/media/utecpp10.png)
 
@@ -186,7 +186,7 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
     >
     > Lorsque vos utilisateurs modifient leurs spécifications, désactivez les tests qui ne sont plus corrects. Écrivez de nouveaux tests et utilisez-les l'un après l'autre, de la même façon incrémentielle.
 
-2.  Générez la solution, puis, dans l'Explorateur de tests, choisissez **Exécuter tout**.
+2.  Générez la solution, puis choisissez **Exécuter tout** dans **l’Explorateur de tests**.
 
      Le nouveau test échoue.
 
@@ -214,7 +214,7 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
     }
     ```
 
-4.  Générez la solution, puis, dans l'Explorateur de tests, choisissez **Exécuter tout**.
+4.  Générez la solution, puis, dans **l’Explorateur de tests**, choisissez **Exécuter tout**.
 
      Les deux tests réussissent.
 
@@ -262,7 +262,7 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
 
 3.  Ouvrez le test ayant échoué (ou double-cliquez dessus).
 
-     L'échec d'assertion est mis en surbrillance. Le message d'échec est visible dans le volet de détails de l'Explorateur de tests.
+     L'échec d'assertion est mis en surbrillance. Le message d’échec est visible dans le volet de détails de **l’Explorateur de tests**.
 
      ![NegativeRangeTests, échec](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
@@ -302,7 +302,7 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
 
 1.  Simplifiez le calcul central de la fonction SquareRoot :
 
-    ```
+    ```cpp
     // old code:
     //   result = result - (result*result - v)/(2*result);
     // new code:
@@ -329,8 +329,8 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Ajout de tests unitaires aux applications C++ existantes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
-- [Utilisation de Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)
-- [Débogage du code natif](../debugger/debugging-native-code.md)
+- [Ajouter des tests unitaires à des applications C++ existantes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
+- [Utilisation de Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)
+- [Déboguer du code natif](../debugger/debugging-native-code.md)
 - [Procédure pas à pas : création et utilisation d’une bibliothèque de liens dynamiques (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [Importation et exportation](/cpp/build/importing-and-exporting)

@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 83cc24d72bfb679a1b683a67b995356fc887064c
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: f2d7f1bbe55584bc082e8d263ae34a7049207666
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117795"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382524"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Bien démarrer avec Live Unit Testing dans Visual Studio
 
@@ -77,7 +77,7 @@ Maintenant que vous avez créé la solution, vous créez une bibliothèque de cl
 
       - `HasEmbeddedSpaces` retourne `true` si une chaîne contient un espace incorporé ; sinon, elle retourne `false`.
 
-1.  Sélectionnez **Générer**, **Générer la solution** dans le menu Visual Studio du plus haut niveau. Visual Studio doit normalement générer correctement votre bibliothèque.
+1.  Sélectionnez **Générer** > **Générer la solution** dans le menu Visual Studio du plus haut niveau. Visual Studio doit normalement générer correctement votre bibliothèque.
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
 1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur la solution `UtilityLibraries`, puis sélectionnez **Ajouter** > **Nouveau projet**.
@@ -109,7 +109,7 @@ Maintenant que vous avez créé la solution, vous créez une bibliothèque de cl
 
    ![Boîte de dialogue Propriétés du projet pour un projet Visual Basic](./media/lut-start/vb-properties.png)
 
-1.  Sélectionnez **Générer**, **Générer la solution** dans le menu Visual Studio du plus haut niveau. Visual Studio doit normalement générer correctement votre bibliothèque.
+1.  Sélectionnez **Générer** > **Générer la solution** dans le menu Visual Studio du plus haut niveau. Visual Studio doit normalement générer correctement votre bibliothèque.
 
 ---
 
@@ -134,7 +134,7 @@ L’étape suivante consiste à créer le projet de test unitaire pour tester la
    > [!NOTE]
    > Ce didacticiel de démarrage utilise Live Unit Testing avec le framework de test MSTest. Vous pouvez également utiliser les frameworks de test xUnit et NUnit.
 
-1. Le projet de test unitaire ne peut pas accéder automatiquement à la bibliothèque de classes qu’il teste. Vous donnez l’accès à la bibliothèque test en ajoutant une référence au projet de bibliothèque de classes. Pour cela, cliquez avec le bouton droit sur le projet `StringLibraryTests` et sélectionnez **Ajouter**, **Référence**. Dans la boîte de dialogue **Gestionnaire de références**, vérifiez que l’onglet **Solution** est sélectionné, puis sélectionnez le projet `StringLibrary`, comme indiqué dans l’illustration suivante.
+1. Le projet de test unitaire ne peut pas accéder automatiquement à la bibliothèque de classes qu’il teste. Vous donnez l’accès à la bibliothèque test en ajoutant une référence au projet de bibliothèque de classes. Pour cela, cliquez avec le bouton droit sur le projet `StringLibraryTests` et sélectionnez **Ajouter** > **Référence**. Dans la boîte de dialogue **Gestionnaire de références**, vérifiez que l’onglet **Solution** est sélectionné, puis sélectionnez le projet `StringLibrary`, comme indiqué dans l’illustration suivante.
 
    ![Boîte de dialogue **Gestionnaire de références**](./media/lut-start/add-reference.png)
 
@@ -152,7 +152,7 @@ L’étape suivante consiste à créer le projet de test unitaire pour tester la
 
    ![Choix de l’encodage UTF-8](media/lut-start/utf8-encoding.png)
 
-1. Compilez le projet de test unitaire en choisissant **Générer**, **Regénérer la solution** dans le menu Visual Studio du plus haut niveau.
+1. Compilez le projet de test unitaire en choisissant **Générer** > **Regénérer la solution** dans le menu Visual Studio du plus haut niveau.
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
 
@@ -172,7 +172,7 @@ L’étape suivante consiste à créer le projet de test unitaire pour tester la
    > [!NOTE]
    > Ce didacticiel de démarrage utilise Live Unit Testing avec le framework de test MSTest. Vous pouvez également utiliser les frameworks de test xUnit et NUnit.
 
-1. Le projet de test unitaire ne peut pas accéder automatiquement à la bibliothèque de classes qu’il teste. Vous donnez l’accès à la bibliothèque test en ajoutant une référence au projet de bibliothèque de classes. Pour cela, cliquez avec le bouton droit sur le projet `StringLibraryTests` et sélectionnez **Ajouter**, **Référence**. Dans la boîte de dialogue **Gestionnaire de références**, vérifiez que l’onglet **Solution** est sélectionné, puis sélectionnez le projet `StringLibrary`, comme indiqué dans l’illustration suivante.
+1. Le projet de test unitaire ne peut pas accéder automatiquement à la bibliothèque de classes qu’il teste. Vous donnez l’accès à la bibliothèque test en ajoutant une référence au projet de bibliothèque de classes. Pour cela, cliquez avec le bouton droit sur le projet `StringLibraryTests` et sélectionnez **Ajouter** > **Référence**. Dans la boîte de dialogue **Gestionnaire de références**, vérifiez que l’onglet **Solution** est sélectionné, puis sélectionnez le projet `StringLibrary`, comme indiqué dans l’illustration suivante.
 
    ![Boîte de dialogue **Gestionnaire de références**](./media/lut-start/add-reference.png)
 
@@ -190,7 +190,7 @@ L’étape suivante consiste à créer le projet de test unitaire pour tester la
 
    ![Choix de l’encodage UTF-8](media/lut-start/utf8-encoding.png)
 
-1. Compilez le projet de test unitaire en choisissant **Générer**, **Regénérer la solution** dans le menu Visual Studio du plus haut niveau.
+1. Compilez le projet de test unitaire en choisissant **Générer** > **Regénérer la solution** dans le menu Visual Studio du plus haut niveau.
 
 ---
 
@@ -200,9 +200,9 @@ Vous avez créé une bibliothèque de classes, ainsi que quelques tests unitaire
 
 Jusqu’ici, bien que vous ayez écrit les tests pour la bibliothèque de classes `StringLibrary`, vous ne les avez pas exécutés. Live Unit Testing les exécute automatiquement une fois que vous l’activez. Pour cela, procédez comme suit :
 
-1. Si vous le souhaitez, sélectionnez la fenêtre de code qui contient le code pour `StringLibrary`. Il s’agit de class1.cs pour un projet C# ou de Class1.vb pour un projet Visual Basic. (Cette étape vous permet d’inspecter visuellement le résultat de vos tests et l’étendue de la couverture de votre code une fois que vous activez Live Unit Testing.)
+1. Si vous le souhaitez, sélectionnez la fenêtre de code qui contient le code pour `StringLibrary`. Il s’agit de *class1.cs* pour un projet C# ou de *Class1.vb* pour un projet Visual Basic. (Cette étape vous permet d’inspecter visuellement le résultat de vos tests et l’étendue de la couverture de votre code une fois que vous activez Live Unit Testing.)
 
-1. Sélectionnez **Tester** , **Live Unit Testing**, **Démarrer** dans le menu Visual Studio du plus haut niveau.
+1. Sélectionnez **Tester** > **Live Unit Testing** > **Démarrer** dans le menu Visual Studio du plus haut niveau.
 
 1. Visual Studio démarre Live Unit Test, qui exécute automatiquement tous vos tests.
 
@@ -286,7 +286,7 @@ Dans certains cas, des tests réussis dans **l’Explorateur de tests** peuvent 
 
 Jusqu’à présent, tous nos tests ont réussi. Dans la section suivante, nous allons examiner comment vous pouvez gérer l’échec d’un test.
 
-## <a name="handling-a-test-failure"></a>Gestion de l’échec d’un test
+## <a name="handle-a-test-failure"></a>Gérer l’échec d’un test
 
 Dans cette section, vous découvrez comment vous pouvez utiliser Live Unit Testing pour identifier, dépanner et résoudre les échecs des tests. Vous faites cela en étendant la couverture de test à la méthode `HasEmbeddedSpaces`.
 
@@ -319,7 +319,7 @@ Dans cette section, vous découvrez comment vous pouvez utiliser Live Unit Testi
 
    Notez que, dans la fenêtre **Automatique**, la valeur de la variable `phrase` est « Name\tDescription », qui est le deuxième élément du tableau. La méthode de test attend que `HasEmbeddedSpaces` retourne `true` quand cette chaîne lui est passée ; au lieu de cela, elle retourne `false`. De toute évidence, elle ne reconnaît pas « \t », le caractère de tabulation, comme espace incorporé.
 
-1. Sélectionnez **Déboguer**, **Continuer**, appuyez sur F5 ou cliquez sur le bouton **Continuer** dans la barre d’outils pour continuer l’exécution du programme de test. Comme une exception non gérée s’est produite, le test s’arrête.
+1. Sélectionnez **Déboguer** > **Continuer**, appuyez sur **F5** ou cliquez sur le bouton **Continuer** dans la barre d’outils pour continuer l’exécution du programme de test. Comme une exception non gérée s’est produite, le test s’arrête.
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
 1. Ajoutez la méthode suivante à votre fichier de test :
@@ -352,7 +352,7 @@ Dans cette section, vous découvrez comment vous pouvez utiliser Live Unit Testi
 
    Notez que, dans la fenêtre **Automatique**, la valeur de la variable `phrase` est « Name » + vbTab + « Description », qui est le deuxième élément du tableau. La méthode de test attend que `HasEmbeddedSpaces` retourne `true` quand cette chaîne lui est passée ; au lieu de cela, elle retourne `false`. De toute évidence, elle ne reconnaît pas le caractère de tabulation comme espace incorporé.
 
-1. Sélectionnez **Déboguer**, **Continuer**, appuyez sur F5 ou cliquez sur le bouton **Continuer** dans la barre d’outils pour continuer l’exécution du programme de test. Comme une exception non gérée s’est produite, le test s’arrête.
+1. Sélectionnez **Déboguer** > **Continuer**, appuyez sur **F5** ou cliquez sur le bouton **Continuer** dans la barre d’outils pour continuer l’exécution du programme de test. Comme une exception non gérée s’est produite, le test s’arrête.
 
 ---
 

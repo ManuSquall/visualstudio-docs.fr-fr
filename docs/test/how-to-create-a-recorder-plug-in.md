@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3d1204e387a10bf7b5512ca0fa6fc4528901a52f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 639e6dc4fb2d62258f94ca09d9f9155396748379
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176211"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382063"
 ---
-# <a name="how-to-create-a-recorder-plug-in"></a>Comment : créer un plug-in d'enregistreur
+# <a name="how-to-create-a-recorder-plug-in"></a>Guide pratique pour créer un plug-in d’enregistreur
 
-<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> permet de modifier un test de performances web enregistré. La modification se produit une fois le bouton **Arrêter** sélectionné dans la barre d’outils de l’enregistreur de test de performances web, mais avant l’enregistrement et la présentation du test dans l’éditeur de test de performances web.
+<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> permet de modifier un test de performances web enregistré. La modification se produit une fois le bouton **Arrêter** sélectionné dans la barre d’outils de **l’Enregistreur de test de performances web**, mais avant l’enregistrement et la présentation du test dans l’éditeur de test de performances web.
 
-Un plug-in d’enregistreur vous permet d’effectuer votre propre corrélation personnalisée sur des paramètres dynamiques. Avec la fonctionnalité de corrélation intégrée, les tests de performances web détectent les paramètres dynamiques dans l’enregistrement web une fois l’opération terminée, ou quand l’option **Promouvoir les paramètres dynamiques en paramètres de test web** est utilisée sur la barre d’outils de l’éditeur de test de performances web. Toutefois, la fonctionnalité de détection intégrée ne trouve pas toujours tous les paramètres dynamiques. Par exemple, il ne trouve pas d'ID de session, qui obtient généralement sa valeur modifiée entre 5 à 30 minutes. Par conséquent, vous devez exécuter le processus de corrélation manuellement.
+Un plug-in d’enregistreur vous permet d’effectuer votre propre corrélation personnalisée sur des paramètres dynamiques. Avec la fonctionnalité de corrélation intégrée, les tests de performances web détectent les paramètres dynamiques dans l’enregistrement web une fois l’opération terminée, ou quand l’option **Promouvoir les paramètres dynamiques en paramètres de test web** est utilisée dans la barre d’outils de **l’Éditeur de test de performances web**. Toutefois, la fonctionnalité de détection intégrée ne trouve pas toujours tous les paramètres dynamiques. Par exemple, il ne trouve pas d'ID de session, qui obtient généralement sa valeur modifiée entre 5 à 30 minutes. Par conséquent, vous devez exécuter le processus de corrélation manuellement.
 
 Le <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> permet d'écrire le code de votre plug-in personnalisé. Ce plug-in peut effectuer une corrélation ou modifier le test de performances web de différentes manières avant qu’il soit enregistré et présenté dans l’éditeur de test de performances web. Par conséquent, si vous déterminez qu'une variable dynamique spécifique doit être mise en corrélation pour de nombreux enregistrements, vous pouvez automatiser le processus.
 
@@ -29,13 +29,13 @@ Vous pouvez également utiliser un plug-in d’enregistreur pour ajouter des rè
 
 Les procédures suivantes décrivent le mode de création du code rudimentaire pour un plug-in d'enregistreur, déployez le plug-in et exécutez-le. L'exemple de code qui suit les procédures montre comment utiliser Visual C# pour créer un plug-in d'enregistreur de la corrélation avec des paramètres dynamiques personnalisés.
 
-## <a name="creating-a-recorder-plug-in"></a>Création d'un plug-in d'enregistreur
+## <a name="create-a-recorder-plug-in"></a>Créer un plug-in d’enregistreur
 
 ### <a name="to-create-a-recorder-plug-in"></a>Pour créer un plug-in d'enregistreur
 
 1.  Ouvrez une solution contenant le projet de test de performances web et de charge avec le test de performances web pour lequel vous souhaitez créer un plug-in d’enregistreur.
 
-2.  Dans l’Explorateur de solutions, cliquez avec le bouton droit sur la solution, sélectionnez **Ajouter**, puis choisissez **Nouveau projet**.
+2.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur la solution, sélectionnez **Ajouter**, puis choisissez **Nouveau projet**.
 
      La boîte de dialogue **Ajouter un nouveau projet** s’affiche.
 
@@ -45,9 +45,9 @@ Les procédures suivantes décrivent le mode de création du code rudimentaire p
 
 5.  Dans la zone de texte **Nom**, tapez un nom pour le plug-in d’enregistreur.
 
-     La nouvelle bibliothèque de classes est ajouté à l'Explorateur de solutions et la nouvelle classe s'ouvre dans l'éditeur de code.
+     La nouvelle bibliothèque de classes est ajoutée à **l’Explorateur de solutions**, et la nouvelle classe s’ouvre dans **l’Éditeur de code**.
 
-6.  Dans l’Explorateur de solutions, dans le dossier de projet de la nouvelle bibliothèque de classes, cliquez avec le bouton droit sur le dossier **Références** et sélectionnez **Ajouter une référence**.
+6.  Dans **l’Explorateur de solutions**, dans le dossier de projet de la nouvelle bibliothèque de classes, cliquez avec le bouton droit sur le dossier **Références**, puis sélectionnez **Ajouter une référence**.
 
     > [!TIP]
     > **RecorderPlugins** est un exemple de dossier de projet de nouvelle bibliothèque de classes.
@@ -58,7 +58,7 @@ Les procédures suivantes décrivent le mode de création du code rudimentaire p
 
 8.  Faites défiler la liste vers le bas et sélectionnez **Microsoft.VisualStudio.QualityTools.WebTestFramework**, puis choisissez **OK**.
 
-     **Microsoft.VisualStudio.QualityTools.WebTestFramework** est ajouté dans le dossier **Références** dans l’Explorateur de solutions.
+     **Microsoft.VisualStudio.QualityTools.WebTestFramework** est ajouté dans le dossier **Références** dans **l’Explorateur de solutions**.
 
 9. Écrivez le code de votre plug-in d'enregistreur. Commencez par créer une classe publique qui dérive de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
 
@@ -81,17 +81,17 @@ Les procédures suivantes décrivent le mode de création du code rudimentaire p
 
 11. Ajoutez d’autres lignes de code en fonction des opérations que le plug-in d’enregistreur devra exécuter à l’issue de l’enregistrement web. Par exemple, vous pouvez ajouter le code pour gérer la corrélation personnalisée comme l'illustre l'exemple ci-dessous. Il est également possible de créer un plug-in d’enregistreur pour notamment convertir les commentaires en transactions ou ajouter des règles de validation au test de performances web.
 
-12. Dans le menu **Générer**, choisissez Générer \<nom du projet de la bibliothèque de classes>.
+12. Dans le menu **Générer**, choisissez **Générer \<nom du projet de la bibliothèque de classes>**.
 
 13. Ensuite, vous devez déployer le plug-in d'enregistreur pour l'enregistrer avec Visual Studio.
 
-### <a name="deploy-the-recorder-plug-in"></a>Déployer le plug-in d'enregistreur
+### <a name="deploy-the-recorder-plug-in"></a>Déployer le plug-in d’enregistreur
 
 Après avoir compilé le plug-in d'enregistreur, vous devrez placer la DLL créée dans un des deux emplacements :
 
--   %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins
+-   *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins*
 
--   %USERPROFILE%\My Documents\Visual Studio \<*version*>\WebTestPlugins
+-   *%USERPROFILE%\My Documents\Visual Studio \<* version *>\WebTestPlugins*
 
 > [!WARNING]
 > Après avoir copié le plug-in d'enregistreur dans l'un des deux emplacements, vous devez redémarrer Visual Studio pour enregistrer le plug-in d'enregistreur.
@@ -102,7 +102,7 @@ Après avoir compilé le plug-in d'enregistreur, vous devrez placer la DLL cré�
 
      La boîte de dialogue **Activer WebTestRecordPlugins** s’affiche.
 
-2.  Activez la case à cocher du plug-in d'enregistreur et choisissez OK.
+2.  Cochez la case du plug-in d’enregistreur et choisissez **OK**.
 
      À l’issue de l’enregistrement du test de performances web, le nouveau plug-in d’enregistreur sera exécuté.
 

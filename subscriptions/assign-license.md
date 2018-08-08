@@ -9,18 +9,18 @@ description: Découvrez comment les administrateurs peuvent attribuer des licenc
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 473933ca94090596f11a6e8abb499621b4430b3f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e0baa4ee731b8d69e18ab59c958801d94fb99869
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178398"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251703"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Attribuer des licences dans le portail d’administration des abonnements Visual Studio
 
 En tant qu’administrateur des abonnements Visual Studio, vous pouvez utiliser le portail d’administration pour attribuer des abonnements à des utilisateurs spécifiques ou à des groupes d’utilisateurs.
 
-Pour les groupes d’utilisateurs, vous pouvez leur attribuer des abonnements un à la fois ou utiliser la fonctionnalité **Ajouter en bloc** pour charger rapidement et facilement des listes d’abonnés avec leurs informations d’abonnement. 
+Pour les groupes d’utilisateurs, vous pouvez leur attribuer des abonnements (un à la fois) ou utiliser la fonctionnalité **Ajouter en bloc** pour charger rapidement et facilement des listes d’abonnés avec leurs informations d’abonnement.
 
 ## <a name="individual-assignments"></a>Attributions individuelles
 
@@ -32,7 +32,7 @@ Voici comment attribuer une licence d’abonnement Visual Studio à un nouvel ut
 
    ![Ajouter un seul abonné](media\add-single-subscriber.png)
 
-3. Dans les champs de formulaire, entrez les informations relatives au nouvel abonné. Si votre organisation utilise Azure Active Directory, vous pouvez utiliser ce champ pour rechercher des utilisateurs dans votre annuaire actuel et sélectionner l’utilisateur approprié dans les résultats de la recherche. Une fois que vous avez sélectionné cet utilisateur, son nom, son adresse e-mail de connexion et son adresse e-mail de notification sont automatiquement renseignés. 
+3. Dans les champs de formulaire, entrez les informations relatives au nouvel abonné. Si votre organisation utilise Azure Active Directory, vous pouvez utiliser ce champ pour rechercher des utilisateurs dans votre annuaire actuel et sélectionner l’utilisateur approprié dans les résultats de la recherche. Une fois que vous avez sélectionné cet utilisateur, son nom, son adresse e-mail de connexion et son adresse e-mail de notification sont automatiquement renseignés.
 
    ![Ajouter une nouvelle adresse e-mail de notification](media\add-new-subscriber-notification-email.png)
 
@@ -66,7 +66,7 @@ Voici comment attribuer une licence d’abonnement Visual Studio à un nouvel ut
 
   ![Télécharger le modèle Excel pour charger plusieurs abonnés](media\download-template-upload-subscribers.png)
 
-  >![REMARQUE] Téléchargez toujours la dernière version du modèle. L’utilisation d’une version antérieure peut faire échouer le chargement en bloc.
+   > ![REMARQUE] Téléchargez toujours la dernière version du modèle. L’utilisation d’une version antérieure peut faire échouer le chargement en bloc.
 
 1. Dans la feuille de calcul Excel, renseignez les champs avec les informations relatives aux utilisateurs auxquels vous souhaitez attribuer des abonnements. (Le champ *Référence* est facultatif.) Enregistrez le fichier localement une fois que vous avez terminé.
 

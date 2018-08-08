@@ -5,16 +5,16 @@ ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
 ms.topic: Get-Started-Article
-mescription: Learn how to manage your organization's Visual Studio subscriptions with the Administrator Portal.
+description: Découvrez comment gérer les abonnements Visual Studio de votre organisation dans le portail d’administration.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 41f594057051625acb6771ee9d66cad60b4508fd
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 956670d624a5c36547a23a06773e7ee254acd7f4
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327390"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380816"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Utilisation du portail d’administration des abonnements Visual Studio
 
@@ -25,7 +25,7 @@ Quand vous utilisez le portail d’administration des abonnements Visual Studio,
 - **Le niveau d’abonnement d’un abonné doit être mis à jour** quand l’abonnement est mis à niveau (après l’achat d’une licence de niveau supérieur) ou renouvelé à un niveau inférieur. 
 - **Ne partagez pas d’abonnements entre abonnés.** Vous devez attribuer un abonnement à chaque personne qui utilise la totalité ou une partie des avantages de l’abonnement (logiciels de développement et de test, Microsoft Azure, eLearning, etc.). 
 
-## <a name="adminstrator-roles"></a>Rôles d’administrateur
+## <a name="administrator-roles"></a>Rôles d’administrateur
 
 Dans le nouveau portail d’administration des abonnements Visual Studio, deux rôles sont disponibles pour les clients de licence en volume. Ces rôles s’apparentent au rôle Contact principal/Destinataire des avis et au rôle Gestionnaire d’abonnements disponibles dans VLSC. 
 

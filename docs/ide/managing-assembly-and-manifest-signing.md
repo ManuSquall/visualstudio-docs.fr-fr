@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bef64670c3c2631e779fda0f48810ce502db72b1
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: fb2113ed091d99ed66b13955ea468c376bba9490
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844426"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379564"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Gérer la signature d’assemblys et de manifestes
 
@@ -59,7 +59,7 @@ En général, vous ne devez pas signer les exécutables. Un composant de nom for
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Guide pratique pour signer un assembly dans Visual Studio
 
-Vous signez une application ou un composant à l’aide de l’onglet **Signature** de la fenêtre des propriétés du projet (cliquez avec le bouton droit sur le nœud de projet dans **l’Explorateur de solutions** et sélectionnez **Propriétés** ou tapez **propriétés de projet** dans la fenêtre **Lancement rapide**, ou appuyez sur **Alt**+**Entrée** dans la fenêtre de **l’Explorateur de solutions**). Sélectionnez l’onglet **Signature**, puis cochez la case **Signer l’assembly**.
+Vous signez une application ou un composant à l’aide de l’onglet **Signature** de la fenêtre des propriétés du projet (cliquez avec le bouton droit sur le nœud de projet dans **Explorateur de solutions** et sélectionnez **Propriétés** ou tapez **propriétés de projet** dans la fenêtre **Lancement rapide**, ou appuyez sur **Alt**+**Entrée** dans **Explorateur de solutions**). Sélectionnez l’onglet **Signature**, puis cochez la case **Signer l’assembly**.
 
 Spécifiez un fichier de clé. Si vous choisissez de créer un fichier de clé, les fichiers de ce type sont toujours créés au format *.pfx*. Vous avez besoin d’un nom et d’un mot de passe pour le nouveau fichier.
 

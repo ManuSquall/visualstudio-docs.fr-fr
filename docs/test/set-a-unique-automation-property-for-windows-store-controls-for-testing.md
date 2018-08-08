@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: fbb815dc17e8b71efcefee8410faa01df0914e35
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: b0204a8e86d110fe30240b11b6323c31e79fb841
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692354"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382736"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Définir une propriété Automation unique pour les contrôles UWP à des fins de test
 
@@ -48,13 +48,13 @@ Affectez à **AutomationProperties.AutomationId** la valeur **ButtonX** de faço
 
 Affectez à **AutomationProperties.Name** la valeur **ButtonY** de façon explicite dans le code XAML du contrôle.
 
-```
+```xaml
 <Button AutomationProperties.Name="ButtonY" Height="31" HorizontalAlignment="Left" Margin="23,76,0,0" VerticalAlignment="Top" Width="140" Click="ButtonY_Click" />
 ```
 
 ## <a name="assign-unique-names"></a>Attribuer des noms uniques
 
-Dans Blend pour Visual Studio, vous pouvez sélectionner une option pour affecter des noms uniques à des éléments interactifs, comme des boutons, des zones de liste, des zones de liste modifiable et des zones de texte. Cette option permet d’affecter aux contrôles des valeurs uniques pour **AutomationProperties.Name**.
+Dans Blend pour Visual Studio, vous pouvez sélectionner une option pour affecter des noms uniques à des éléments interactifs, comme des boutons, des zones de liste, des zones de liste modifiable et des zones de texte, ce qui permet d’affecter aux contrôles des valeurs uniques pour **AutomationProperties.Name**.
 
 Pour affecter des noms uniques à des contrôles existants, sélectionnez **Outils** > **Nommer les éléments interactifs**.
 
@@ -149,7 +149,7 @@ Quand vous définissez deux instances d’un bouton à l’aide de ce modèle de
 
 ### <a name="dynamic-controls"></a>Contrôles dynamiques
 
-Si vous avez des contrôles qui sont créés de façon dynamique à partir de votre code et qui ne sont pas créés de façon statique ni via des modèles dans des fichiers XAML, vous devez définir les propriétés **Content** ou **Name** pour ces contrôles. Cela permet de garantir qu’une propriété Automation unique est affectée à chaque contrôle dynamique. Par exemple, si une case à cocher doit être affichée lorsque vous sélectionnez un élément de liste, définissez ces propriétés comme indiqué ici :
+Si vous avez des contrôles qui sont créés de façon dynamique à partir de votre code et qui ne sont pas créés de façon statique ni via des modèles dans des fichiers XAML, vous devez définir les propriétés **Content** ou **Name** pour ces contrôles. Cette action permet de garantir qu’une propriété Automation unique est affectée à chaque contrôle dynamique. Par exemple, si une case à cocher doit être affichée lorsque vous sélectionnez un élément de liste, définissez ces propriétés comme indiqué ici :
 
 ```csharp
 private void CreateCheckBox(string txt, StackPanel panel)

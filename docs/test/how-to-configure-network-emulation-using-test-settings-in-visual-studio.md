@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 66877397912fca0fbd3996c2dab146b040a047b3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a4639e59b8c8847a4368a0f3841fa271a302e7ca
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972418"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380842"
 ---
-# <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Comment : configurer l'émulation réseau à l'aide de paramètres de test dans Visual Studio
+# <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Guide pratique pour configurer l’émulation réseau à l’aide de paramètres de test dans Visual Studio
 
 Vous pouvez configurer l’adaptateur de données de diagnostic pour tester votre application sous différents environnements réseau à partir de Visual Studio. Vous pouvez également le configurer pour tester une charge réseau artificielle ou un goulot d’étranglement, durant l’exécution des tests.
 
@@ -54,7 +54,7 @@ Un compte qui est doté de privilèges d'administrateur doit être utilisé pour
 
  L'émulation de réseau véritable peut être utilisée par les testeurs et les développeurs réseau pour émuler un environnement de test souhaité, évaluer les performances, prévoir l'impact des modifications ou prendre des décisions en matière d'optimisation de technologie. En comparaison des bancs d'essais matériels, l'émulation de réseau véritable est une solution bien plus économique et plus flexible.
 
-## <a name="configure-network-emulation-for-your-test-settings"></a>Configuration de l'émulation de réseau pour vos paramètres de test
+## <a name="configure-network-emulation-for-your-test-settings"></a>Configurer l’émulation réseau pour vos paramètres de test
  Avant d’effectuer les étapes de cette procédure, vous devez ouvrir les paramètres de test depuis Visual Studio, puis sélectionner la page **Données et diagnostics**.
 
 ### <a name="to-configure-network-emulation-for-your-test-settings"></a>Pour configurer l'émulation de réseau pour vos paramètres de test

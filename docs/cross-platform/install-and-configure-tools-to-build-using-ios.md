@@ -12,12 +12,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: d6acdd6433c090472e88d9973f6b28d80b8c2f8d
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: fe73510c645eadea99796b8b8aea5b6eec1f01c9
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454568"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251809"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Installer et configurer des outils de génération en utilisant iOS
 
@@ -54,7 +54,7 @@ Pour installer et utiliser l’agent distant en vue de développer du code pour 
 
 - Si vous utilisez un appareil iOS pour le développement, un profil de mise en service (« Provisioning Profile ») configuré dans Xcode pour votre appareil
 
-   Pour plus d’informations sur la création de profils de mise en service, consultez le document relatif à la [création de profils de mise en service via le centre des membres](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24) dans la bibliothèque du développeur iOS.
+   Pour plus d’informations sur la création de profils de provisionnement, consultez le document relatif à la [création de profils de provisionnement via le centre des membres](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24) dans la bibliothèque du développeur iOS.
 
 - [Node.js](https://nodejs.org/)
 
@@ -125,7 +125,7 @@ Une fois l’agent distant démarré, vous pouvez l’utiliser dans Visual Studi
 
 #### <a name="to-stop-the-remote-agent"></a>Pour arrêter l’agent distant
 
-- Dans la fenêtre Terminal où s’exécute vcremote, entrez `Control+C`
+- Dans la fenêtre Terminal où s’exécute vcremote, entrez **Control**+**C**.
 
 ##  <a name="ConfigureVS"></a> Configurer l’agent distant dans Visual Studio
 
@@ -158,7 +158,7 @@ Pour vous connecter à l’agent distant dans Visual Studio, vous devez spécifi
 
    Si le couplage n’aboutit pas, vérifiez que l’agent distant s’exécute en suivant les étapes décrites dans [Start the remote agent](#Start). Si trop de temps s’est écoulé après la génération du code confidentiel de l’agent, suivez les étapes décrites dans [Generate a new security PIN](#GeneratePIN) sur le Mac, puis réessayez. Si vous utilisez le nom d’hôte de votre Mac, essayez plutôt d’utiliser l’adresse IP qui figure dans le champ **Nom d’hôte** .
 
-1. Mettez à jour le nom de dossier dans le champ **Racine distante** pour spécifier le dossier utilisé par l’agent distant dans le répertoire de base (~) du Mac. Par défaut, l’agent distant utilise /Users/`username`/vcremote comme racine distante.
+1. Mettez à jour le nom de dossier dans le champ **Racine distante** pour spécifier le dossier utilisé par l’agent distant dans le répertoire de base (*~*) du Mac. Par défaut, l’agent distant utilise /Users/`username`/vcremote comme racine distante.
 
 1. Choisissez **OK** pour enregistrer les paramètres de connexion de couplage à distance.
 
@@ -220,7 +220,7 @@ Vous pouvez configurer l’agent distant en utilisant diverses options de ligne 
 
    `vcremote --serverDir directory_path`
 
-   où *chemin_répertoire* est l’emplacement sur votre Mac où seront placés les fichiers journaux, les builds et les certificats de serveur. Par défaut, cet emplacement est /Users/*nom_utilisateur*/vcremote. Les builds sont organisées par numéro de build à cet emplacement.
+   où *chemin_répertoire* est l’emplacement sur votre Mac où seront placés les fichiers journaux, les builds et les certificats de serveur. Par défaut, cet emplacement est */Users/\<nom_utilisateur>/vcremote*. Les builds sont organisées par numéro de build à cet emplacement.
 
 - Pour utiliser un processus en arrière-plan pour capturer `stdout` et `stderr` dans un fichier nommé serveur.log, entrez :
 
@@ -236,4 +236,4 @@ Vous pouvez configurer l’agent distant en utilisant diverses options de ligne 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+- [Installer Visual C++ pour le développement mobile multiplateforme](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

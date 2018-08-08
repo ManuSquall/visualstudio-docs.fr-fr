@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 114551c97fb64d17584bb32327c8bbc35eef4739
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ad1dff59ed942c16f05176f3e26f0042234d4933
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178359"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380164"
 ---
-# <a name="how-to-create-a-web-performance-test-plug-in"></a>Comment : créer un plug-in de test des performances de site Web
+# <a name="how-to-create-a-web-performance-test-plug-in"></a>Guide pratique pour créer un plug-in de test de performances web
 
 Les plug-ins de tests de performances web vous permettent d'isoler et de réutiliser du code en dehors des principales instructions déclaratives de votre test de performances web. Un plug-in de test de performancesweb personnalisé permet d'appeler du code durant l'exécution du test de performances web. Le plug-in de test de performances web est exécuté une seule fois pour chaque itération de test. De plus, si vous substituez les méthodes PreRequest ou PostRequest dans le plug-in de test, ces plug-ins de requête s'exécuteront avant ou après chaque requête, respectivement.
 
@@ -35,7 +35,7 @@ Vous pouvez utiliser des plug-ins de test de performances web personnalisés ave
 
 1.  Ouvrez un projet de test de performances web et de charge qui contient un test de performances web.
 
-2.  Dans l’Explorateur de solutions, cliquez avec le bouton droit sur la solution, sélectionnez **Ajouter**, puis choisissez **Nouveau projet**.
+2.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur la solution, sélectionnez **Ajouter**, puis choisissez **Nouveau projet**.
 
      La boîte de dialogue **Ajouter un nouveau projet** s’affiche.
 
@@ -47,9 +47,9 @@ Vous pouvez utiliser des plug-ins de test de performances web personnalisés ave
 
 6.  Cliquez sur **OK**.
 
-7.  Le nouveau projet de bibliothèque de classes est ajouté à l'Explorateur de solutions et la nouvelle classe s'affiche dans l'éditeur de code.
+7.  Le nouveau projet de bibliothèque de classes est ajouté à **l’Explorateur de solutions** et la nouvelle classe s’affiche dans **l’éditeur de code**.
 
-8.  Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le dossier **Références** de la nouvelle bibliothèque de classes, puis sélectionnez **Ajouter une référence**.
+8.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le dossier **Références** de la nouvelle bibliothèque de classes, puis sélectionnez **Ajouter une référence**.
 
 9. La boîte de dialogue **Ajouter une référence** s’affiche.
 
@@ -57,17 +57,17 @@ Vous pouvez utiliser des plug-ins de test de performances web personnalisés ave
 
 11. Cliquez sur **OK**.
 
-     La référence à **Microsoft.VisualStudio.QualityTools.WebTestFramework** est ajoutée au dossier **Référence** dans l’Explorateur de solutions.
+     La référence à **Microsoft.VisualStudio.QualityTools.WebTestFramework** est ajoutée au dossier **Référence** dans **l’Explorateur de solutions**.
 
-12. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le nœud supérieur du projet de test de performances web et de charge qui contient le test de charge auquel vous souhaitez ajouter le plug-in du test de performances web, puis sélectionnez **Ajouter une référence**.
+12. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le nœud supérieur du projet de test de performances web et de charge qui contient le test de charge auquel vous souhaitez ajouter le plug-in du test de performances web, puis sélectionnez **Ajouter une référence**.
 
 13. La boîte de dialogue **Ajouter une référence** s’affiche.
 
-14. Choisissez l’onglet **Projets**, puis sélectionnez le projet de bibliothèque de classes.
+14. Choisissez l’onglet **Projets**, puis sélectionnez le **Projet de bibliothèque de classes**.
 
 15. Cliquez sur **OK**.
 
-16. Dans l'éditeur Code, écrivez le code de votre plug-in. Commencez par créer une classe publique qui dérive de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
+16. Dans **l’éditeur de code**, écrivez le code de votre plug-in. Commencez par créer une classe publique qui dérive de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
 
 17. Implémentez le code dans un ou plusieurs gestionnaires d'événements. Pour un exemple d'implémentation, reportez-vous à la section suivante.
 
@@ -113,7 +113,7 @@ Vous pouvez utiliser des plug-ins de test de performances web personnalisés ave
     >
     > Cela se produit si vous effectuez des modifications du code dans l’un de vos plug-ins et si vous créez une autre version de la DLL **(Version=0.0.0.0)**. Toutefois, le plug-in fait toujours référence à la version du plug-in d’origine. Pour résoudre ce problème, procédez comme suit :
     >
-    > 1.  Dans le projet de test de performances web et de charge, un message d'avertissement s'affiche dans les références. Supprimez et rajoutez la référence à la DLL de votre plug-in.
+    > 1.  Dans le projet de test de performances web et de charge, un message d’avertissement s’affiche dans les références. Supprimez et rajoutez la référence à la DLL de votre plug-in.
     > 2.  Supprimez le plug-in de votre test ou de l'emplacement approprié, puis rajoutez-le.
 
 ## <a name="example"></a>Exemple
@@ -175,8 +175,8 @@ namespace SampleRules
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>
 - [Créer du code et des plug-ins personnalisés pour les tests de charge](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Guide pratique pour créer un plug-in de niveau demande](../test/how-to-create-a-request-level-plug-in.md)
-- [Codage d’une règle d’extraction personnalisée pour un test de performances web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
-- [Codage d’une règle de validation personnalisée pour un test de performances web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
+- [Guide pratique pour créer un plug-in de niveau requête](../test/how-to-create-a-request-level-plug-in.md)
+- [Coder une règle d’extraction personnalisée pour un test de performances web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
+- [Coder une règle de validation personnalisée pour un test de performances web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
 - [Guide pratique pour créer un plug-in de test de charge](../test/how-to-create-a-load-test-plug-in.md)
 - [Générer et exécuter un test de performances web codé](../test/generate-and-run-a-coded-web-performance-test.md)

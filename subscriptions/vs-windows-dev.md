@@ -9,12 +9,12 @@ description: Découvrez le compte de développeur Windows inclus dans votre abon
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: da1f893813341f27efbbdb6e80b9243c43de9625
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 406189fb2e9437c5a7b767d7abc7f7aa2c83e84f
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297554"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382449"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Compte de développeur Windows dans les abonnements Visual Studio
 
@@ -24,7 +24,7 @@ Votre compte de développeur Windows, inclus avec certains abonnements Visual St
 
 Pour utiliser votre compte de développeur Windows, vous devez créer un compte ou vous connecter à l’aide d’un compte existant.
 
-Nous vous recommandons d’ouvrir une nouvelle fenêtre de navigateur « privée » pour ce processus.  Par exemple, dans Google Chrome, ouvrez une nouvelle fenêtre de navigation privée.  Dans Internet Explorer, ouvrez une nouvelle fenêtre de navigation InPRivate.
+Nous vous recommandons d’ouvrir une nouvelle fenêtre de navigateur « privée » pour ce processus.  Par exemple, dans Google Chrome, ouvrez une nouvelle fenêtre de navigation privée.  Dans Internet Explorer, ouvrez une nouvelle fenêtre de navigation InPrivate.
 
 1. Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 

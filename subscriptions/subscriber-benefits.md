@@ -9,12 +9,12 @@ description: En savoir plus sur les avantages inclus dans votre abonnement Visua
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f5df14010b17b9eeee1241b99a73769853c20036
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 0dfde28ab55ffadd08d0be3d863d0772604482ed
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283261"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381544"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Avantages inclus dans votre abonnement Visual Studio
 
@@ -26,7 +26,7 @@ Les avantages sont répartis en trois catégories :
 La catégorie Outils permet d’accéder à un large éventail d’avantages, y compris les avantages phares tels que [IDE Visual Studio](vs-ide-benefit.md), [Visual Studio Team Services](vs-vsts.md) et [Azure](vs-azure.md).  Selon votre niveau d’abonnement, vous pourrez également consulter des comptes de développeur Windows et Office 365, Visual Studio App Center et les avantages de partenaires, tels que WhiteSource Bolt et ModernRequirements.
 
 ## <a name="professional-development"></a>Développement professionnel
-Pour améliorer vos compétences et vous tenir informé des dernières technologies en permanence, nous fournissons l’accès à certaines des meilleures formations en ligne disponibles des sociétés majeures du secteur. Voici quelques exemples de contenu excellent disponible :
+Pour améliorer vos compétences et être toujours informé des dernières technologies, nous fournissons l’accès à certaines des meilleures formations en ligne disponibles provenant d’acteurs majeurs du secteur. Voici quelques exemples de contenu excellent disponible :
 - Azure App Insights et Azure Cosmos DB par Opsgility
 - Développeur de mobile multiplateforme par Xamarin University
 - Microsoft Azure pour les développeurs .NET et autre contenu excellent de Pluralsight

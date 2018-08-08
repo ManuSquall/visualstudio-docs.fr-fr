@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7a5f87a83b8c743ae869a700618051e07c8c2e75
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5df33a8cf05e4ad73b1643e2948392e49a32356e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750920"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382319"
 ---
-# <a name="how-to-specify-plot-options-for-graphing-counters"></a>Comment : spécifier les options de traçage pour les compteurs graphiques
+# <a name="how-to-specify-plot-options-for-graphing-counters"></a>Guide pratique pour spécifier les options de traçage des compteurs graphiques
 
 La boîte de dialogue **Options de traçage** vous permet de changer la couleur et le style de ligne d’un compteur tracé sur un graphique. Vous pouvez également régler la plage sur une valeur spécifique ou définir un réglage automatique de la plage, en fonction des données échantillonnées.
 
@@ -25,11 +25,11 @@ La boîte de dialogue **Options de traçage** vous permet de changer la couleur 
 
 ## <a name="to-specify-plotting-options-for-graphs"></a>Pour spécifier des options de traçage pour les graphiques
 
-1.  Dans l’Analyseur de test de charge, dans la barre d’outils de test de charge, choisissez **Graphiques**.
+1.  Dans la barre d’outils de **l’Analyseur de test de charge**, choisissez **Graphiques**.
 
-     Les résultats du test de charge s'affichent alors dans la vue Graphiques.
+     Les résultats du test de charge s’affichent alors dans la vue du graphique.
 
-2.  Dans le légende ou le graphique, cliquez avec le bouton droit sur la ligne ou la ligne de traçage en cours du compteur de performances dont vous souhaitez changer l’option de traçage, puis sélectionnez **Options de traçage**.
+2.  Dans la légende ou le graphique, cliquez avec le bouton droit sur la ligne ou la ligne de traçage en cours du compteur de performances dont vous souhaitez changer l’option de traçage, puis sélectionnez **Options de traçage**.
 
      La boîte de dialogue **Options de traçage** s’affiche.
 
@@ -53,4 +53,3 @@ La boîte de dialogue **Options de traçage** vous permet de changer la couleur 
 
 - [Analyser les résultats des tests de charge dans la vue Graphiques](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Guide pratique pour créer des graphiques personnalisés](../test/how-to-create-custom-graphs-in-load-test-results.md)
-- [Analyser les résultats des tests de charge dans la vue Graphiques](../test/analyze-load-test-results-in-the-graphs-view.md)

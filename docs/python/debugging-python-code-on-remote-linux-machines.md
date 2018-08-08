@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de32c1d0309d6b6510a914fe359193105e2febde
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: fb5fde39285f4e60a1cae9ae512f696130c6f666
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057383"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341661"
 ---
-# <a name="remotely-debugging-python-code-on-linux"></a>Débogage à distance de code Python sur Linux
+# <a name="remotely-debug-python-code-on-linux"></a>Déboguer à distance du code Python sur Linux
 
 Visual Studio peut lancer et déboguer des applications Python localement et à distance sur un ordinateur Windows (voir [Débogage à distance](../debugger/remote-debugging.md)). Il peut également effectuer un débogage à distance sur un autre système d’exploitation, un appareil différent ou une implémentation Python autre que CPython à l’aide de la [bibliothèque ptvsd](https://pypi.python.org/pypi/ptvsd).
 
@@ -26,22 +26,22 @@ Lorsque vous utilisez ptvsd, le code Python faisant l’objet du débogage hébe
 
 |   |   |
 |---|---|
-| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | Pour une introduction au débogage à distance, visionnez la vidéo [Deep Dive: Cross-Platform Remote Debugging](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 6 minutes 22 secondes), qui est applicable à Visual Studio 2015 et 2017. |
+| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | Pour une introduction au débogage à distance, visionnez la vidéo [Deep Dive: Cross-platform remote debugging](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 6 minutes 22 secondes), qui est applicable à Visual Studio 2015 et 2017. |
 
-## <a name="setting-up-a-linux-computer"></a>Configuration d’un ordinateur Linux
+## <a name="set-up-a-linux-computer"></a>Configurer un ordinateur Linux
 
 Les éléments suivants sont nécessaires pour suivre cette procédure pas à pas :
 
 - Un ordinateur distant exécutant Python sur un système d’exploitation Mac OSX ou Linux.
 - Un port 5678 (entrant) ouvert sur le pare-feu de cet ordinateur (paramètre par défaut pour le débogage à distance).
 
-Vous pouvez facilement créer des [machines virtuelles Linux dans Azure](/azure/virtual-machines/linux/creation-choices) et [accéder à ces machines à l’aide du Bureau à distance](/azure/virtual-machines/linux/use-remote-desktop) de Windows. Utilisez de préférence l’interpréteur Ubuntu sur la machine virtuelle, car Python est installé par défaut. Sinon, consultez [Sélection et installation des interpréteurs Python](installing-python-interpreters.md) pour obtenir la liste des autres emplacements de téléchargement d’interpréteurs Python.
+Vous pouvez facilement créer une [machine virtuelle Linux dans Azure](/azure/virtual-machines/linux/creation-choices) et [accéder à cette machine à l’aide du Bureau à distance](/azure/virtual-machines/linux/use-remote-desktop) de Windows. Utilisez de préférence l’interpréteur Ubuntu sur la machine virtuelle, car Python est installé par défaut. Sinon, consultez [Sélection et installation des interpréteurs Python](installing-python-interpreters.md) pour obtenir la liste des autres emplacements de téléchargement d’interpréteurs Python.
 
-Pour plus d’informations sur la création d’une règle de pare-feu pour une machine virtuelle Azure, consultez [Ouverture de ports sur une machine virtuelle dans Azure à l’aide du portail Azure](/azure/virtual-machines/windows/nsg-quickstart-portal).
+Pour plus d’informations sur la création d’une règle de pare-feu pour une machine virtuelle Azure, consultez [Ouvrir des ports sur une machine virtuelle dans Azure à l’aide du portail Azure](/azure/virtual-machines/windows/nsg-quickstart-portal).
 
-## <a name="preparing-the-script-for-debugging"></a>Préparation du script pour le débogage
+## <a name="prepare-the-script-for-debugging"></a>Préparer le script pour le débogage
 
-1. Sur l’ordinateur distant, créez un fichier Python appelé `guessing-game.py` à l’aide du code suivant :
+1. Sur l’ordinateur distant, créez un fichier Python appelé *guessing-game.py* à l’aide du code suivant :
 
     ```python
     import random
@@ -66,9 +66,11 @@ Pour plus d’informations sur la création d’une règle de pare-feu pour une 
         print('Nope. The number I was thinking of was {0}'.format(number))
     ```
 
-1. Installez le package `ptvsd` dans votre environnement à l’aide de `pip3 install ptvsd`. (Remarque : il est conseillé d’enregistrer la version du ptvsd qui est installé au cas où vous en auriez besoin pour la résolution des problèmes ; la [liste des ptvsd](https://pypi.python.org/pypi/ptvsd) indique également les versions disponibles.)
+1. Installez le package `ptvsd` dans votre environnement à l’aide de `pip3 install ptvsd`. 
+   >[!NOTE]
+   >Il est conseillé d’enregistrer la version du ptvsd qui est installé au cas où vous en auriez besoin pour la résolution des problèmes ; la [liste des ptvsd](https://pypi.python.org/pypi/ptvsd) indique également les versions disponibles.
 
-1. Activez le débogage à distance en ajoutant le code ci-dessous au premier point possible dans `guessing-game.py`, avant tout autre code. (Bien que cela ne soit pas strictement nécessaire, il est impossible de déboguer des threads en arrière-plan générés avant que la fonction `enable_attach` ne soit appelée.)
+1. Activez le débogage à distance en ajoutant le code ci-dessous au premier point possible dans *guessing-game.py*, avant tout autre code. (Bien que cela ne soit pas strictement nécessaire, il est impossible de déboguer des threads en arrière-plan générés avant que la fonction `enable_attach` ne soit appelée.)
 
    ```python
    import ptvsd
@@ -82,7 +84,7 @@ Pour plus d’informations sur la création d’une règle de pare-feu pour une 
 > [!Tip]
 > En plus de `enable_attach` et `wait_for_attach`, ptvsd fournit une fonction d’assistance `break_into_debugger`, qui sert de point d’arrêt par programmation si le débogueur est attaché. Il existe également une fonction `is_attached` qui renvoie `True` si le débogueur est attaché (notez qu’il n’est pas nécessaire de vérifier ce résultat avant d’appeler d’autres fonctions `ptvsd`).
 
-## <a name="attaching-remotely-from-python-tools"></a>Attachement à distance à partir de Python Tools
+## <a name="attach-remotely-from-python-tools"></a>Attacher à distance à partir de Python Tools
 
 Dans ces étapes, nous allons définir un point d’arrêt simple pour arrêter le processus distant.
 
@@ -90,7 +92,7 @@ Dans ces étapes, nous allons définir un point d’arrêt simple pour arrêter 
 
 1. (Facultatif) Pour activer la fonctionnalité IntelliSense pour ptvsd sur l’ordinateur local, installez le package ptvsd dans votre environnement Python.
 
-1. Sélectionnez **Déboguer > Attacher au processus**.
+1. Sélectionnez **Déboguer** > **Attacher au processus**.
 
 1. Dans la boîte de dialogue **Attacher au processus** qui s’affiche, définissez **Type de connexion** sur **Python à distance (ptvsd)**. (Dans les versions antérieures de Visual Studio, ces commandes s’appellent **Transport** et **Débogage à distance Python**.)
 
@@ -99,7 +101,7 @@ Dans ces étapes, nous allons définir un point d’arrêt simple pour arrêter 
     > [!Warning]
     > Si vous créez une connexion sur l’Internet public, vous devez utiliser `tcps` à la place et suivre les instructions ci-dessous pour [sécuriser la connexion du débogueur avec SSL](#securing-the-debugger-connection-with-ssl).
 
-1. Appuyez sur Entrée pour remplir la liste des processus ptvsd disponibles sur cet ordinateur :
+1. Appuyez sur **Entrée** pour remplir la liste des processus ptvsd disponibles sur cet ordinateur :
 
     ![Saisie de la cible de la connexion et affichage de la liste des processus](media/remote-debugging-qualifier.png)
 
@@ -131,7 +133,7 @@ Dans ces étapes, nous allons définir un point d’arrêt simple pour arrêter 
     | 2013 | 2.2.2 |
     | 2012, 2010 | 2.1 |
 
-## <a name="securing-the-debugger-connection-with-ssl"></a>Sécurisation de la connexion du débogueur avec SSL
+## <a name="secure-the-debugger-connection-with-ssl"></a>Sécuriser la connexion du débogueur avec SSL
 
 Par défaut, la connexion au serveur de débogage à distance ptvsd est sécurisée uniquement par le secret, et toutes les données sont transmises en texte brut. Pour sécuriser davantage la connexion, ptvsd prend en charge SSL, que vous devez définir comme suit :
 
@@ -158,9 +160,9 @@ Par défaut, la connexion au serveur de débogage à distance ptvsd est sécuris
 1. Sécurisez le canal en ajoutant le certificat à l’autorité de certification racine de confiance sur l’ordinateur Windows à l’aide de Visual Studio :
 
     1. Copiez le fichier de certificat de l’ordinateur distant sur l’ordinateur local.
-    1. Ouvrez le Panneau de configuration et accédez à **Outils d’administration > Gérer les certificats d’ordinateur**.
-    1. Dans la fenêtre qui s’affiche, développez **Autorités de certification racines de confiance** sur le côté gauche, cliquez avec le bouton droit sur **Certificats**, puis sélectionnez **Toutes les tâches > Importer...**.
-    1. Accédez au fichier `.cer` copié de l’ordinateur distant et sélectionnez-le, puis cliquez successivement dans les boîtes de dialogue pour effectuer l’importation.
+    1. Ouvrez le **Panneau de configuration** et accédez à **Outils d’administration** > **Gérer les certificats d’ordinateur**.
+    1. Dans la fenêtre qui s’affiche, développez **Autorités de certification racines de confiance** sur le côté gauche, cliquez avec le bouton droit sur **Certificats**, puis sélectionnez **Toutes les tâches** > **Importer**.
+    1. Accédez au fichier *.cer* copié de l’ordinateur distant et sélectionnez-le, puis cliquez successivement dans les boîtes de dialogue pour effectuer l’importation.
 
 1. Répétez le processus d’attachement dans Visual Studio comme décrit précédemment, en spécifiant cette fois-ci le protocole `tcps://` dans **Cible de la connexion** (ou **Qualificateur**).
 
@@ -170,11 +172,11 @@ Par défaut, la connexion au serveur de débogage à distance ptvsd est sécuris
 
 Visual Studio vous avertit de problèmes de certificat potentiels quand vous vous connectez via le protocole SSL, comme décrit ci-dessous. Vous pouvez ignorer les avertissements et continuer mais, même si le canal reste chiffré contre les écoutes clandestines, il est vulnérable à des attaques de l’intercepteur.
 
-1. Si vous recevez un avertissement du type « le certificat distant n’est pas approuvé », comme celui illustré ci-dessous, cela signifie que vous n’avez pas ajouté correctement le certificat à l’autorité de certification racine de confiance. Vérifiez ces étapes, puis réessayez.
+1. Si vous recevez un avertissement du type **le certificat distant n’est pas approuvé**, comme celui illustré ci-dessous, cela signifie que vous n’avez pas ajouté correctement le certificat à l’autorité de certification racine de confiance. Vérifiez ces étapes, puis réessayez.
 
     ![Avertissement lié au certificat SSL approuvé](media/remote-debugging-ssl-warning.png)
 
-1. Si vous recevez un avertissement du type « le nom du certificat distant ne correspond pas au nom d’hôte », comme celui illustré ci-dessous, cela signifie que vous n’avez pas utilisé le nom d’hôte ou l’adresse IP approprié comme **nom commun** lors de la création du certificat.
+1. Si vous recevez un avertissement du type **le nom du certificat distant ne correspond pas au nom d’hôte**, comme celui illustré ci-dessous, cela signifie que vous n’avez pas utilisé le nom d’hôte ou l’adresse IP approprié comme **nom commun** au moment de la création du certificat.
 
     ![Avertissement lié au nom d’hôte du certificat SSL](media/remote-debugging-ssl-warning2.png)
 
