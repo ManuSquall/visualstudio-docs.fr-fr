@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3733588c1601f07c23ce9d85be9367a148e503de
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: a0feb539be589a4eab51544f1a04154c11f6f9c7
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977789"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382332"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Exécuter des tests unitaires avec l'Explorateur de tests
 
@@ -25,7 +25,7 @@ Utilisez **l’Explorateur de tests** pour exécuter des tests unitaires à part
 
 Visual Studio inclut les infrastructures de tests unitaires Microsoft pour le code managé comme pour le code natif. Cependant, **l’Explorateur de tests** peut également exécuter n’importe quel framework de tests unitaires ayant un adaptateur implémenté pour l’Explorateur de tests. Pour plus d’informations sur l’installation des frameworks de tests unitaires tiers, consultez [Installer des frameworks de tests unitaires tiers](../test/install-third-party-unit-test-frameworks.md).
 
-**L’Explorateur de tests** peut exécuter des tests à partir de plusieurs projets de tests dans une solution et à partir de classes de test qui font partie des projets de code en production. Les projets de test peuvent utiliser différentes infrastructures de tests unitaires. Quand le code testé est écrit pour le .NET Framework, le projet de test peut être écrit dans n'importe quel langage qui cible également le .NET Framework, quel que soit le langage du code cible. Les projets de code C/C++ natifs doivent être testés à l'aide d'une infrastructure de tests unitaires C++. Pour plus d’informations, consultez [Écriture de tests unitaires pour C/C++](writing-unit-tests-for-c-cpp.md).
+**L’Explorateur de tests** peut exécuter des tests à partir de plusieurs projets de tests dans une solution et à partir de classes de test qui font partie des projets de code en production. Les projets de test peuvent utiliser différentes infrastructures de tests unitaires. Quand le code testé est écrit pour le .NET Framework, le projet de test peut être écrit dans n'importe quel langage qui cible également le .NET Framework, quel que soit le langage du code cible. Les projets de code C/C++ natifs doivent être testés à l'aide d'une infrastructure de tests unitaires C++. Pour plus d’informations, consultez [Écrire des tests unitaires pour C/C++](writing-unit-tests-for-c-cpp.md).
 
 ## <a name="run-tests-in-test-explorer"></a>Exécuter des tests dans l’explorateur de tests
 
@@ -35,7 +35,7 @@ Quand vous générez le projet de test, les tests s’affichent dans l’explora
 
 Tandis que vous exécutez, écrivez et réexécutez vos tests, l'Explorateur de tests affiche les résultats dans les groupes par défaut **Échecs de tests**, **Tests réussis**, **Tests ignorés** et **Tests non exécutés**. Vous pouvez modifier la façon dont l'Explorateur de tests regroupe vos tests.
 
-Vous pouvez effectuer la majeure partie du travail de recherche, d'organisation et d'exécution des tests à partir de la barre d'outils de l'Explorateur de tests.
+Vous pouvez effectuer la majeure partie du travail de recherche, d’organisation et d’exécution des tests à partir de la barre d’outils de **l’Explorateur de tests**.
 
 ![Exécuter des tests à partir de la barre d'outils de l'explorateur de tests](../test/media/ute_toolbar.png)
 
@@ -51,13 +51,13 @@ Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un gr
 
 - Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
 
-La barre Réussite/Échec en haut de la fenêtre Explorateur de tests est animée pendant l'exécution des tests. À la fin de la série de tests, la barre Réussite/Échec devient verte si tous les tests ont réussi ou rouge si un test a échoué.
+La **barre Réussite/Échec** en haut de la fenêtre **Explorateur de tests** est animée pendant l’exécution des tests. À la fin de la série de tests, la **barre Réussite/Échec** devient verte si tous les tests ont réussi ou rouge si un test a échoué.
 
 ### <a name="run-tests-after-every-build"></a>Exécuter des tests après chaque génération
 
 |Bouton|Description|
 |-|-|
-|![Exécuter après les builds](../test/media/ute_runafterbuild_btn.png)|Pour exécuter vos tests unitaires après chaque génération locale, choisissez **Test** dans le menu standard, puis **Exécuter les tests après la génération** dans la barre d'outils de l'Explorateur de tests.|
+|![Exécuter après les builds](../test/media/ute_runafterbuild_btn.png)|Pour exécuter vos tests unitaires après chaque génération locale, choisissez **Test** dans le menu standard, puis **Exécuter les tests après la génération** dans la barre d’outils de **l’Explorateur de tests**.|
 
 ## <a name="view-test-results"></a>Afficher les résultats des tests
 
@@ -127,7 +127,7 @@ L'Explorateur de tests vous permet de regrouper vos tests en catégories prédé
 
 Vous pouvez utiliser des filtres de l'Explorateur de tests pour limiter les méthodes de test dans les projets que vous affichez et exécutez.
 
-Quand vous tapez une chaîne dans la zone de recherche de l’Explorateur de tests et appuyez sur Entrée, la liste de tests est filtrée pour afficher uniquement les tests dont les noms qualifiés complets contiennent la chaîne.
+Quand vous tapez une chaîne dans la zone de recherche de **l’Explorateur de tests** et appuyez sur **Entrée**, la liste de tests est filtrée pour afficher uniquement les tests dont les noms qualifiés complets contiennent la chaîne.
 
 Pour filtrer selon un autre critère :
 
@@ -162,15 +162,15 @@ Par exemple, `FullName:"MyClass" - FullName:"PerfTest"` retourne tous les tests 
 
 ## <a name="create-custom-playlists"></a>Créer des sélections personnalisées
 
- Vous pouvez créer et enregistrer une liste de tests que vous souhaitez exécuter ou visualiser en tant que groupe. Quand vous sélectionnez une sélection, les tests de la liste sont affichés dans l'Explorateur de tests. Vous pouvez ajouter un test à plusieurs sélections, et tous les tests de votre projet sont disponibles quand vous choisissez la sélection par défaut **Tous les tests** .
+ Vous pouvez créer et enregistrer une liste de tests que vous souhaitez exécuter ou visualiser en tant que groupe. Quand vous choisissez une sélection, les tests de la liste sont affichés dans l’Explorateur de tests. Vous pouvez ajouter un test à plusieurs sélections, et tous les tests de votre projet sont disponibles quand vous choisissez la sélection par défaut **Tous les tests** .
 
  ![Choisir une sélection](../test/media/ute_playlist.png)
 
- **Pour créer une sélection**, sélectionnez un ou plusieurs tests dans l'Explorateur de tests. Dans le menu contextuel, sélectionnez **Ajouter à la sélection**, **NewPlaylist**. Enregistrez le fichier sous le nom et à l'emplacement que vous spécifiez dans la boîte de dialogue **Créer une sélection** .
+ **Pour créer une sélection**, sélectionnez un ou plusieurs tests dans l'Explorateur de tests. Dans le menu contextuel, sélectionnez **Ajouter à la sélection** > **NewPlaylist**. Enregistrez le fichier sous le nom et à l'emplacement que vous spécifiez dans la boîte de dialogue **Créer une sélection** .
 
  **Pour ajouter des tests à une sélection**, sélectionnez un ou plusieurs tests dans l'Explorateur de tests. Dans le menu contextuel, choisissez **Ajouter à la sélection**, puis la sélection à laquelle vous souhaitez ajouter des tests.
 
- **Pour ouvrir une sélection**, choisissez Test, Sélection dans le menu Visual Studio, puis choisissez une sélection dans la liste de sélections récemment utilisées ou choisissez Ouvrir la sélection pour spécifier le nom et l'emplacement de la sélection.
+ **Pour ouvrir une sélection**, choisissez **Test** > **Sélection** dans le menu Visual Studio, puis choisissez une sélection dans la liste de sélections récemment utilisées ou choisissez **Ouvrir la sélection** pour spécifier le nom et l’emplacement de la sélection.
 
  Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
 
@@ -187,11 +187,11 @@ Vous pouvez utiliser l'Explorateur de tests pour démarrer une session de débog
 
 2. Dans l'Explorateur de tests, sélectionnez les méthodes de test, puis choisissez **Déboguer les tests sélectionnés** dans le menu contextuel.
 
- Pour plus d’informations sur le débogueur, consultez [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md).
+ Pour plus d’informations sur le débogueur, consultez [Déboguer dans Visual Studio](../debugger/debugging-in-visual-studio.md).
 
 ### <a name="diagnose-test-method-performance-issues"></a>Diagnostiquer les problèmes de performances de méthode de test
 
- Pour diagnostiquer la raison pour laquelle une méthode de test est beaucoup trop longue, sélectionnez la méthode dans l'Explorateur de tests, puis choisissez Profil dans le menu contextuel. Consultez [Explorateur de performances](../profiling/performance-explorer.md).
+ Pour diagnostiquer la raison pour laquelle une méthode de test est beaucoup trop longue, sélectionnez la méthode dans l’Explorateur de tests, puis choisissez **Profil** dans le menu contextuel. Consultez [Explorateur de performances](../profiling/performance-explorer.md).
 
 ### <a name="analyze-unit-test-code-coverage"></a>Analyser la couverture du code de test unitaire
 
@@ -207,9 +207,9 @@ Pour exécuter la couverture du code pour les méthodes de test dans une solutio
 
     - **Tous les tests** exécute toutes les méthodes de test de la solution.
 
-La fenêtre Résultats de la couverture du code affiche le pourcentage des blocs du code du produit qui ont été testés par ligne, fonction, classe, espace de noms et module.
+La fenêtre **Résultats de la couverture du code** affiche le pourcentage des blocs du code du produit qui ont été testés par ligne, fonction, classe, espace de noms et module.
 
-Pour plus d’informations, consultez [Utilisation de la couverture du code pour déterminer la quantité de code testé](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
+Pour plus d’informations, consultez [Utiliser la couverture du code pour déterminer la quantité de code testé](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
 ## <a name="test-shortcuts"></a>Raccourcis pour les tests
 
@@ -217,8 +217,8 @@ Vous pouvez exécuter les tests à partir de **l’Explorateur de tests** en cli
 
 |Commandes fréquentes| Raccourcis clavier|
 |--------------|------------------------|
-|TestExplorer.DebugAllTestsInContext|Ctrl+R, Ctrl+T|
-|TestExplorer.RunAllTestsInContext|Ctrl+R, T|
+|TestExplorer.DebugAllTestsInContext|**Ctrl**+**R**, **Ctrl**+**T**|
+|TestExplorer.RunAllTestsInContext|**Ctrl**+**R**, **T**|
 
 > [!NOTE]
 > Vous ne pouvez pas exécuter un test dans une classe abstraite, car les tests sont seulement définis dans les classes abstraites et ne sont pas instanciés. Pour exécuter des tests dans des classes abstraites, créez une classe qui dérive de la classe abstraite.

@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 360c8ea61a97256a316c726954bf53e4dcf3004b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 406c1c0c853563dc45b76e0bbcfefb3e21df0aff
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180049"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379369"
 ---
-# <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Comment : spécifier le pourcentage des utilisateurs virtuels qui utilisent les données du cache Web
+# <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Guide pratique pour spécifier le pourcentage des utilisateurs virtuels qui utilisent les données du cache web
 
-Après avoir créé votre test de charge avec **l’Assistant Nouveau test de charge**, vous pouvez modifier les propriétés des scénarios en fonction de vos besoins et de vos objectifs de test avec **l’Éditeur de test de charge**. Pour obtenir une liste complète des propriétés des scénarios de test de charge et leurs descriptions, consultez [Propriétés des scénarios de test de charge](../test/load-test-scenario-properties.md).
+Après avoir créé votre test de charge avec **l’Assistant Nouveau test de charge**, vous pouvez modifier les propriétés des scénarios en fonction de vos besoins et de vos objectifs de test avec **l’Éditeur de test de charge**. Pour obtenir une liste complète des propriétés des scénarios de test de charge et leurs descriptions, consultez [Propriétés du scénario de test de charge](../test/load-test-scenario-properties.md).
 
-La propriété **Pourcentage de nouveaux utilisateurs** est définie dans la fenêtre Propriétés. Vous modifiez des propriétés du scénario de test de charge dans l'éditeur de test de charge.
+La propriété **Pourcentage de nouveaux utilisateurs** est définie dans la fenêtre **Propriétés**. Vous modifiez des propriétés du scénario de test de charge dans **l’Éditeur de test de charge**.
 
 La propriété **Pourcentage de nouveaux utilisateurs** définit le mode de simulation par le test de charge de la mise en cache qui serait exécutée par un navigateur web. Par défaut, la propriété **Pourcentage de nouveaux utilisateurs** est définie sur 0 %. Si la valeur de la propriété **Pourcentage de nouveaux utilisateurs** est définie sur 100 %, chaque test de performances web exécuté dans un test de charge est traité comme un utilisateur accédant au site web pour la première fois et qui n’a aucun contenu du site web dans le cache de son navigateur provenant de visites antérieures. Par conséquent, toutes les requêtes dans le test web, y compris toutes les requêtes dépendantes telles que les images, sont téléchargées.
 
@@ -40,7 +40,7 @@ Si vous exécutez un test de charge sur un site web présentant un nombre signif
 
 3. Dans le menu **Affichage**, sélectionnez **Fenêtre Propriétés**.
 
-     Les catégories et les propriétés du scénario sont affichées dans la fenêtre Propriétés.
+     Les catégories et les propriétés du scénario sont affichées dans la fenêtre **Propriétés**.
 
 4. Définissez la valeur de la propriété **Pourcentage de nouveaux utilisateurs** en entrant un nombre pour le pourcentage de nouveaux utilisateurs.
 

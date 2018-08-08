@@ -13,20 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 444c4e7214d55aad270a88325ee9e694e84987c6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 888d446d82a2f7b5fb6d8638a1c7472378b014de
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979046"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379258"
 ---
-# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Comment : spécifier les périodes de délai des contrôleurs de test et des agents de test
+# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Guide pratique pour spécifier les délais d’expiration des contrôleurs de test et des agents de test
 
 Le contrôleur de test et l’agent de test comportent plusieurs paramètres de délai d’attente qui spécifient le délai d’attente des réponses entre eux, ou à partir d’une source de données avant de se solder par un échec avec une erreur. Dans certaines circonstances, il peut être nécessaire de modifier les valeurs du délai d'attente en fonction des besoins de votre topologie ou d'autres problèmes d'environnement. Pour modifier les valeurs du délai d'attente, modifiez le fichier de configuration XML associé au contrôleur de test ou à l'agent de test, comme indiqué dans les procédures suivantes.
 
- Pour modifier les divers paramètres de délai d'attente d'un contrôleur de test ou d'un agent de test, modifiez les fichiers de configuration suivants à l'aide des noms de clé et des valeurs des tables :
+ Pour modifier les divers paramètres de délai d’attente d’un contrôleur de test ou d’un agent de test, modifiez les fichiers de configuration suivants à l’aide des noms de clé et des valeurs des tables :
 
--   Contrôleur de test : QTController.exe.config
+-   Contrôleur de test : *QTController.exe.config*
 
     |Nom de la clé|Description|Value|
     |--------------|-----------------|-----------|
@@ -35,7 +35,7 @@ Le contrôleur de test et l’agent de test comportent plusieurs paramètres de 
     |AgentInitializeTimeout|Nombre de secondes d'attente de l'initialisation de tous les agents et de leurs collecteurs de données initialise au début de l'exécution d'un test, avant d'abandonner la série de tests. Cette valeur doit être raisonnablement élevée si vous utilisez des collecteurs de données.|"n" secondes. Valeur par défaut : "120" (deux minutes).|
     |AgentCleanupTimeout|Nombre de secondes d'attente du nettoyage de tous les agents et de leurs collecteurs de données, avant de compléter la série de tests. Cette valeur doit être raisonnablement élevée si vous utilisez des collecteurs de données.|"n" secondes. Valeur par défaut : "120" (deux minutes).|
 
--   Agent de test : QTAgentService.exe.config
+-   Agent de test : *QTAgentService.exe.config*
 
     |Nom de la clé|Description|Value|
     |--------------|-----------------|-----------|
@@ -44,11 +44,11 @@ Le contrôleur de test et l’agent de test comportent plusieurs paramètres de 
     |StopTestRunCallTimeoutInSeconds|Nombre de secondes d'attente l'appel de l'arrêt de la série de tests.|"n" secondes. Valeur par défaut : "120" (deux minutes).|
     |GetCollectorDataTimeout|Nombre de secondes d'attente du collecteur de données.|"n" secondes. Valeur par défaut : "300" (cinq minutes).|
 
-## <a name="to-specify-agent-timeout-options-for-a-test-controller"></a>Pour spécifier les options du délai d'attente de l'agent d'un contrôleur de test
+## <a name="to-specify-agent-timeout-options-for-a-test-controller"></a>Pour spécifier les options d’expiration de l’agent d’un contrôleur de test
 
-1. Ouvrez le fichier de configuration XML QTCcontroller.exe.config qui se trouve dans %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE.
+1. Ouvrez le fichier de configuration XML *QTCcontroller.exe.config* qui se trouve sous *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
-2. recherchez la balise `<appSettings>`.
+2. Recherchez l’étiquette `<appSettings>`.
 
     ```xml
     <appSettings>
@@ -78,11 +78,11 @@ Le contrôleur de test et l’agent de test comportent plusieurs paramètres de 
     </appSettings>
     ```
 
-## <a name="to-specify-agent-timeout-options-for-a-test-agent"></a>Pour spécifier les options du délai d’attente de l’agent d’un agent de test
+## <a name="to-specify-agent-timeout-options-for-a-test-agent"></a>Pour spécifier les options d’expiration de l’agent d’un agent de test
 
-1. Ouvrez le fichier de configuration XML QTAgentService.exe.config qui se trouve dans %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE.
+1. Ouvrez le fichier de configuration XML *QTAgentService.exe.config* qui se trouve sous *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
-2. recherchez la balise `<appSettings>`.
+2. Recherchez l’étiquette `<appSettings>`.
 
     ```xml
     <appSettings>
@@ -115,7 +115,7 @@ Le contrôleur de test et l’agent de test comportent plusieurs paramètres de 
 ## <a name="see-also"></a>Voir aussi
 
 - [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md)
-- [Modification des paramètres de journalisation du test de charge](../test/modify-load-test-logging-settings.md)
-- [Configuration des ports pour les contrôleurs de test et les agents de test](../test/configure-ports-for-test-controllers-and-test-agents.md)
+- [Modifier les paramètres de journalisation du test de charge](../test/modify-load-test-logging-settings.md)
+- [Configurer les ports des contrôleurs de test et des agents de test](../test/configure-ports-for-test-controllers-and-test-agents.md)
 - [Guide pratique pour spécifier la taille maximale du fichier journal](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [Guide pratique pour lier un contrôleur de test ou un agent de test à une carte réseau](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

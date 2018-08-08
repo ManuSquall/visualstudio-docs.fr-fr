@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f5de1fb6890874a5aab57e357cc4488db96fb7c8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 749c4be37586401d48e9c4a11d8fc70b8ed44c44
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178372"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382033"
 ---
-# <a name="how-to-create-a-request-level-plug-in"></a>Comment : créer un plug-in de niveau demande
+# <a name="how-to-create-a-request-level-plug-in"></a>Guide pratique pour créer un plug-in de niveau requête
 
 Les *requêtes* sont les instructions déclaratives qui constituent les tests de performances web. Les plug-ins de tests de performances de site Web vous permettent d'isoler et de réutiliser du code en dehors des principales instructions déclaratives de votre test de performances web. Vous pouvez créer des plug-ins et les ajouter à une requête individuelle aussi bien qu'au test de performances web qui la contient. Un *plug-in de requête* personnalisé permet d’appeler du code quand une requête particulière est exécutée dans un test de performances web.
 
@@ -30,7 +30,7 @@ En outre, vous pouvez utiliser des plug-ins de requête de test de performances 
 
 ## <a name="to-create-a-request-level-plug-in"></a>Pour créer un plug-in de niveau demande
 
-1.  Dans l'Explorateur de solutions, cliquez avec le bouton droit sur la solution, sélectionnez **Ajouter**, puis choisissez **Nouveau projet**.
+1.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur la solution, sélectionnez **Ajouter**, puis choisissez **Nouveau projet**.
 
      La boîte de dialogue **Ajouter un nouveau projet** s’affiche.
 
@@ -40,23 +40,23 @@ En outre, vous pouvez utiliser des plug-ins de requête de test de performances 
 
 4.  Dans la zone de texte **Nom**, tapez un nom pour votre classe, puis choisissez **OK**.
 
-     Le nouveau projet de bibliothèque de classes est ajouté à l'Explorateur de solutions et la nouvelle classe s'affiche dans l'éditeur de code.
+     Le nouveau projet de bibliothèque de classes est ajouté à **l’Explorateur de solutions** et la nouvelle classe s’affiche dans **l’éditeur de code**.
 
-5.  Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le dossier **Références** de la nouvelle bibliothèque de classes, puis sélectionnez **Ajouter une référence**.
+5.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le dossier **Références** de la nouvelle bibliothèque de classes, puis sélectionnez **Ajouter une référence**.
 
      La boîte de dialogue **Ajouter une référence** s’affiche.
 
 6.  Choisissez l’onglet **.NET**, faites défiler la liste vers le bas, sélectionnez **Microsoft.VisualStudio.QualityTools.WebTestFramework**, puis cliquez sur **OK**
 
-     La référence à **Microsoft.VisualStudio.QualityTools.WebTestFramework** est ajoutée au dossier **Référence** dans l’Explorateur de solutions.
+     La référence à **Microsoft.VisualStudio.QualityTools.WebTestFramework** est ajoutée au dossier **Référence** dans **l’Explorateur de solutions**.
 
-7.  Dans l'Explorateur de solutions, cliquez avec le bouton droit sur le nœud supérieur du projet de test de performances web et de charge auquel vous souhaitez ajouter le plug-in du test de requête de test de performances web. Sélectionnez **Ajouter une référence**.
+7.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le nœud supérieur du projet de test de performances web et de charge auquel vous souhaitez ajouter le plug-in du test de requête de test de performances web. Sélectionnez **Ajouter une référence**.
 
      La boîte de dialogue **Ajouter une référence** s’affiche.
 
-8.  Choisissez l’onglet **Projets**, sélectionnez le projet de bibliothèque de classes, puis choisissez **OK**.
+8.  Choisissez l’onglet **Projets**, sélectionnez le **Projet de bibliothèque de classes**, puis choisissez **OK**.
 
-9. Dans l'éditeur Code, écrivez le code de votre plug-in. Commencez par créer une classe publique qui dérive de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>.
+9. Dans **l’éditeur de code**, écrivez le code de votre plug-in. Commencez par créer une classe publique qui dérive de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>.
 
 10. Implémentez le code à l'intérieur d'un des gestionnaires d'événements <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PreRequest*> et <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PostRequest*>. Pour un exemple d'implémentation, reportez-vous à la section suivante.
 
@@ -86,12 +86,12 @@ En outre, vous pouvez utiliser des plug-ins de requête de test de performances 
     >
     > Cela se produit si vous effectuez des modifications du code dans l’un de vos plug-ins et si vous créez une autre version de la DLL **(Version=0.0.0.0)**. Toutefois, le plug-in fait toujours référence à la version du plug-in d’origine. Pour résoudre ce problème, procédez comme suit :
     >
-    > 1.  Dans le projet de test de performances web et de charge, un message d'avertissement s'affiche dans les références. Supprimez et rajoutez la référence à la DLL de votre plug-in.
+    > 1.  Dans le projet de test de performances web et de charge, un message d’avertissement s’affiche dans les références. Supprimez et rajoutez la référence à la DLL de votre plug-in.
     > 2.  Supprimez le plug-in de votre test ou de l'emplacement approprié, puis rajoutez-le.
 
 ## <a name="example"></a>Exemple
 
-Vous pouvez utiliser le code suivant pour créer un plug-in de test de performances web personnalisé qui affiche deux boîtes de dialogue. La première boîte de dialogue affiche l'URL associée à la requête à laquelle vous joignez le complément de requête. La deuxième boîte de dialogue affiche le nom de l'ordinateur de l'agent.
+Vous pouvez utiliser le code suivant pour créer un plug-in de test de performances web personnalisé qui affiche deux boîtes de dialogue. La première boîte de dialogue affiche l’URL associée à la requête à laquelle vous joignez le complément de requête. La deuxième boîte de dialogue affiche le nom de l'ordinateur de l'agent.
 
 > [!NOTE]
 > Le code suivant requiert l'ajout d'une référence à System.Windows.Forms.
@@ -122,7 +122,7 @@ namespace RequestPluginNamespace
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>
 - [Créer du code et des plug-ins personnalisés pour les tests de charge](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Codage d’une règle d’extraction personnalisée pour un test de performances web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
-- [Codage d’une règle de validation personnalisée pour un test de performances web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
+- [Coder une règle d’extraction personnalisée pour un test de performances web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
+- [Coder une règle de validation personnalisée pour un test de performances web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
 - [Guide pratique pour créer un plug-in de test de charge](../test/how-to-create-a-load-test-plug-in.md)
 - [Générer et exécuter un test de performances web codé](../test/generate-and-run-a-coded-web-performance-test.md)

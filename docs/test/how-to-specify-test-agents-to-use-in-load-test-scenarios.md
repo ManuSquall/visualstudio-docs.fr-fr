@@ -14,26 +14,26 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a4aacbd31516e6a3e55f1b543a3cc8f49ea6ce4d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a8f822e0023f42b2fb329c8d563a298f3a51c66e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968493"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381467"
 ---
-# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Comment : spécifier les agents de test à utiliser dans les scénarios de test de charge
+# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Guide pratique pour spécifier les agents de test à utiliser dans les scénarios de test de charge
 
 Après avoir créé votre test de charge à l’aide de l’**Assistant Nouveau test de charge**, vous pouvez utiliser l’**éditeur de test de charge** pour changer les propriétés des scénarios en fonction de vos besoins et objectifs.
 
 > [!NOTE]
 > Pour obtenir une liste complète des propriétés des scénarios de test de charge et leurs descriptions, consultez [Propriétés du scénario de test de charge](../test/load-test-scenario-properties.md).
 
-Spécifiez les agents à l’aide de l’éditeur de test de charge pour changer la propriété **Agents à utiliser** dans la fenêtre Propriétés.
+Spécifiez les agents à l’aide de **l’Éditeur de test de charge** pour changer la propriété **Agents à utiliser** dans la fenêtre **Propriétés**.
 
 Vous pouvez spécifier les agents que votre scénario doit utiliser si vous vous servez de contrôleurs et d'agents pour exécuter le test de charge à distance. Par exemple, vous pouvez définir un ensemble spécifique d'agents afin de maintenir une cohérence lorsque vous analysez des tendances de performance. En outre, les agents peuvent être distribués géographiquement, afin qu'il y ait une affinité entre les scripts qu'ils exécutent et l'emplacement des agents.
 
 > [!TIP]
-> Au lieu de placer physiquement un agent sur le site distant, vous disposez d'une autre option qui consiste à utiliser l'émulation de réseau pour émuler le réseau lent. Pour plus d’informations, consultez [Spécification des types de réseau virtuel](../test/specify-virtual-network-types-in-a-load-test-scenario.md) et [Spécification des types de réseau virtuel](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+> Au lieu de placer physiquement un agent sur le site distant, vous disposez d'une autre option qui consiste à utiliser l'émulation de réseau pour émuler le réseau lent. Pour plus d’informations, consultez [Spécifier des types de réseaux virtuels](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
 Pour plus d’informations, consultez [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md).
 
@@ -47,13 +47,13 @@ Si l’utilisation de l’UC d’un ordinateur agent de test est supérieure à 
 
 1.  Ouvrez un test de charge.
 
-     L'Éditeur de test de charge s'affiche. L’arborescence du test de charge s’affiche.
+     L’**éditeur de test de charge** s’affiche. L’arborescence du test de charge s’affiche.
 
 2.  Dans le dossier **Scénarios** des arborescences du test de charge, choisissez le nœud de scénario pour lequel vous souhaitez spécifier les agents à utiliser.
 
 3.  Dans le menu **Affichage**, sélectionnez **Fenêtre Propriétés**.
 
-     Les catégories et les propriétés du scénario s'affichent dans la fenêtre Propriétés.
+     Les catégories et les propriétés du scénario s’affichent dans la fenêtre **Propriétés**.
 
 4.  Dans la zone de texte de la propriété **Agents à utiliser**, tapez la liste des agents sur lesquels le scénario peut s’exécuter.
 
@@ -66,7 +66,7 @@ Si l’utilisation de l’UC d’un ordinateur agent de test est supérieure à 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Modification des scénarios de test de charge](../test/edit-load-test-scenarios.md)
+- [Modifier les scénarios de test de charge](../test/edit-load-test-scenarios.md)
 - [Procédure pas à pas : Créer et exécuter un test de charge](../test/walkthrough-create-and-run-a-load-test.md)
 - [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md)
 - [Propriétés des scénarios de test de charge](../test/load-test-scenario-properties.md)

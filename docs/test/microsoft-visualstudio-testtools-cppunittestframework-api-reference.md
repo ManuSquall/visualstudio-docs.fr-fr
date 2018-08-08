@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 1ab231191be638b529ffe5f4bbc3f5d4801f4bf4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 973147bd497f9202227ab36a1beb948c51c7c698
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979085"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381984"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Informations de référence sur l’API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
@@ -645,5 +645,5 @@ public:
 ## <a name="see-also"></a>Voir aussi
 
 - [Tests unitaires sur votre code](../test/unit-test-your-code.md)
-- [Écriture de tests unitaires pour C/C++](writing-unit-tests-for-c-cpp.md)
+- [Écrire des tests unitaires pour C/C++](writing-unit-tests-for-c-cpp.md)
 

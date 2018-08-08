@@ -9,12 +9,12 @@ description: Découvrez comment tirer le meilleur parti de vos abonnements Visua
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2ab7675b5c354cf619d3daca38b05d5d473091fd
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: eb8bde8af30a411f988c19cae9eed6df623f6437
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326996"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380679"
 ---
 # <a name="managing-subscriptions"></a>Gestion des abonnements
 
@@ -93,7 +93,7 @@ Si votre abonnement acheté dans le cadre d’un programme de licence en volume 
 
 
 ## <a name="managing-my-profile"></a>Gestion de votre profil
-Le portail des abonnements vous permet de créer et de gérer un profil pour faciliter la gestion de vos abonnements.  Vous pouvez apporter des modifications à vos informations d’identité et associer d’autres identités de connexion provenant de comptes Azure et VSTS existants à vos abonnements en utilisant des identités alternatives. 
+Le portail des abonnements vous permet de créer et de gérer un profil pour faciliter la gestion de vos abonnements.  Vous pouvez apporter des modifications à vos informations d’identité, et associer à vos abonnements d’autres identités de connexion provenant de comptes Azure et VSTS existants, en utilisant des identités alternatives. 
 
 ### <a name="changing-profile-information"></a>Modification des informations de profil
 Vous pouvez facilement modifier les informations de contact et les préférences dans votre profil.  
@@ -114,7 +114,7 @@ Pour ajouter un autre compte :
 1. Connectez-vous au [portail Abonné](https://my.visualstudio.com?wt.mc_id=o~msft~docs) à l’aide de votre compte Microsoft (MSA).
 2. Cliquez sur l’onglet **Abonnements**.
 3. Sous **Liens connexes**, choisissez **Ajouter un autre compte**.
-4. Entrez votre adresse e-mail professionnelle ou scolaire, puis cliquez sur **Ajouter**. 
+4. Entrez l’adresse e-mail de votre compte professionnel ou scolaire, puis cliquez sur **Ajouter**. 
     ![Autre compte](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 Une fois que vous avez ajouté un autre compte, vous pouvez le mettre à jour ou le supprimer à tout moment en cliquant sur l’onglet **Abonnements** et en choisissant l’option appropriée dans la section **Liens connexes**.  

@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 257377ae84249f6e55c52223478d0f4aa0c12e59
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c4bafd4e7e50838adbe8ba458191c370b4d7427d
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750881"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380692"
 ---
-# <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Comment : créer manuellement un rapport de performances de test de charge à l'aide de Microsoft Word
+# <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Guide pratique pour créer manuellement un rapport de performances de test de charge à l’aide de Microsoft Word
 
 Vous pouvez créer manuellement des rapports de test de charge en copiant et en collant les données du mode Résumé et de la vue Graphiques des résultats des tests de charge. Les données qui sont présentées dans les vues Graphiques et Résumé sont appliquées au format HTML lorsqu'elles sont copiées.
 
@@ -30,7 +30,7 @@ Vous pouvez créer manuellement des rapports de test de charge en copiant et en 
 
 ## <a name="copy-summary-view-data"></a>Copier les données du mode Résumé
 
-1.  Dans les résultats des tests de charge, si le mode Résumé n’est pas affiché, cliquez sur **Résumé** dans la barre d’outils.
+1.  Dans **Résultats du test de charge**, si le mode Résumé n’est pas affiché, cliquez sur **Résumé** dans la barre d’outils.
 
 2.  En mode Résumé, cliquez avec le bouton droit et sélectionnez **Sélectionner tout**.
 
@@ -42,7 +42,7 @@ Vous pouvez créer manuellement des rapports de test de charge en copiant et en 
 
 ## <a name="copy-graph-view-data"></a>Copier les données de la vue Graphiques
 
-1.  Dans les résultats des tests de charge, si la vue Graphiques n’est pas affichée, choisissez **Graphiques** dans la barre d’outils.
+1.  Dans **Résultats du test de charge**, si la vue Graphiques n’est pas affichée, choisissez **Graphiques** dans la barre d’outils.
 
 2.  (Facultatif) Faites un zoom avant sur le graphique spécifique à copier dans votre document Microsoft Word, comme l’indique l’illustration suivante. Pour plus d’informations, consultez [Guide pratique pour faire un zoom avant sur une région du graphique](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
@@ -57,5 +57,5 @@ Vous pouvez créer manuellement des rapports de test de charge en copiant et en 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Création de rapports sur les résultats des tests de charge pour les comparaisons de tests ou l’analyse des tendances](../test/compare-load-test-results.md)
+- [Créer des rapports sur les résultats des tests de charge pour les comparaisons de tests ou l’analyse des tendances](../test/compare-load-test-results.md)
 - [Guide pratique pour créer des rapports de performances de test de charge à l’aide de Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)

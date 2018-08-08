@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: d3b010998a56771cab1416c19a311f8bcbcf855b
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: cf79b0d478ec68391991fc1fb13bc228a678e2ed
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117626"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380510"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Guide pratique pour tester une DLL Visual C++
 
@@ -63,19 +63,19 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
 
 2.  Dans le menu **Test**, choisissez **Exécuter**, puis **Exécuter tout**.
 
-     Le projet de test est généré et exécuté. La fenêtre de l’Explorateur de tests s’affiche, et le test est listé sous **Tests réussis**. Le volet de résumé situé au bas de la fenêtre fournit des informations supplémentaires sur le test sélectionné.
+     Le projet de test est généré et exécuté. La fenêtre de **l’Explorateur de tests** s’affiche, et le test est répertorié sous **Tests réussis**. Le volet **Résumé** situé au bas de la fenêtre fournit des informations supplémentaires sur le test sélectionné.
 
      ![Explorateur de tests](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
 ##  <a name="Add_the_DLL_project_to_the_solution"></a> Ajouter le projet DLL à la solution
 
-1.  Dans l'Explorateur de solutions, choisissez le nom de la solution. Dans le menu contextuel, choisissez **Ajouter**, puis **Ajouter un nouveau projet**.
+1.  Dans **l’Explorateur de solutions**, choisissez le nom de la solution. Dans le menu contextuel, choisissez **Ajouter**, puis **Ajouter un nouveau projet**.
 
      ![Créer le projet RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png)
 
 2.  Dans la boîte de dialogue **Ajouter un nouveau projet**, choisissez **DLL (applications UWP)**.
 
-3.  Ajoutez le code suivant au fichier **RooterLib.h** :
+3.  Ajoutez le code suivant au fichier *RooterLib.h* :
 
     ```cpp
     // The following ifdef block is the standard way of creating macros which make exporting
@@ -103,15 +103,15 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
 
 4.  Ajoutez le symbole ROOTERLIB_EXPORTS à la ligne de commande.
 
-    1.  Dans l’Explorateur de solutions, choisissez le projet **RooterLib**, puis **Propriétés** dans le menu contextuel.
+    1.  Dans **l’Explorateur de solutions**, choisissez le projet **RooterLib**, puis **Propriétés** dans le menu contextuel.
 
          ![Ajouter la définition d’un symbole de préprocesseur](../test/media/ute_cpp_windows_addpreprocessorsymbol.png)
 
-    2.  Dans la boîte de dialogue Page de propriétés de RooterLib, développez **Propriétés de configuration**, **C++**, puis choisissez **Préprocesseur**.
+    2.  Dans la boîte de dialogue **Page de propriétés de RooterLib**, développez **Propriétés de configuration**, **C++**, puis choisissez **Préprocesseur**.
 
-    3.  Choisissez **\<Modifier>** dans la liste **Définitions de préprocesseur**, puis ajoutez `ROOTERLIB_EXPORTS` dans la boîte de dialogue Définitions de préprocesseur.
+    3.  Choisissez **\<Modifier>** dans la liste **Définitions de préprocesseur**, puis ajoutez `ROOTERLIB_EXPORTS` dans la boîte de dialogue **Définitions de préprocesseur**.
 
-5.  Ajoutez des implémentations minimales des fonctions déclarées. Ouvrez **RooterLib.cpp**, puis ajoutez le code suivant :
+5.  Ajoutez des implémentations minimales des fonctions déclarées. Ouvrez *RooterLib.cpp*, puis ajoutez le code suivant :
 
     ```cpp
     // constructor
@@ -131,17 +131,17 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
 
 1.  Ajoutez RooterLib au projet RooterLibTests.
 
-    1.  Dans l’Explorateur de solutions, choisissez le projet **RooterLibTests**, puis **Références** dans le menu contextuel.
+    1.  Dans **l’Explorateur de solutions**, choisissez le projet **RooterLibTests**, puis **Références** dans le menu contextuel.
 
-    2.  Dans la boîte de dialogue Propriétés du projet RooterLib, développez **Propriétés communes**, puis choisissez **Framework et références**.
+    2.  Dans la boîte de dialogue **Propriétés du projet RooterLib**, développez **Propriétés communes**, puis choisissez **Framework et références**.
 
     3.  Choisissez **Ajouter une nouvelle référence**.
 
     4.  Dans la boîte de dialogue **Ajouter une référence**, développez **Solution**, puis choisissez **Projets**. Sélectionnez ensuite l’élément **RouterLib**.
 
-2.  Incluez le fichier d’en-tête RooterLib dans **unittest1.cpp**.
+2.  Incluez le fichier d’en-tête RooterLib dans *unittest1.cpp*.
 
-    1.  Ouvrez **unittest1.cpp**.
+    1.  Ouvrez *unittest1.cpp*.
 
     2.  Ajoutez le code suivant sous la ligne `#include "CppUnitTest.h"` :
 
@@ -149,7 +149,7 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
         #include "..\RooterLib\RooterLib.h"
         ```
 
-3.  Ajoutez un test qui utilise la fonction importée. Ajoutez le code suivant à **unittest1.cpp** :
+3.  Ajoutez un test qui utilise la fonction importée. Ajoutez le code suivant à *unittest1.cpp* :
 
     ```cpp
     TEST_METHOD(BasicTest)
@@ -172,9 +172,9 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
 
 4.  Générez la solution.
 
-     Le nouveau test s’affiche dans l’Explorateur de tests, dans le nœud **Tests non exécutés**.
+     Le nouveau test s’affiche dans **l’Explorateur de tests**, dans le nœud **Tests non exécutés**.
 
-5.  Dans l'Explorateur de tests, choisissez **Exécuter tout**.
+5.  Dans **l’Explorateur de tests**, choisissez **Exécuter tout**.
 
      ![Test de base réussi](../test/media/ute_cpp_testexplorer_basictest.png)
 
@@ -203,7 +203,7 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
     >
     > Lorsque vos utilisateurs modifient leurs spécifications, désactivez les tests qui ne sont plus corrects. Écrivez de nouveaux tests et utilisez-les l'un après l'autre, de la même façon incrémentielle.
 
-2.  Dans l'Explorateur de tests, choisissez **Exécuter tout**.
+2.  Dans **l’Explorateur de tests**, choisissez **Exécuter tout**.
 
 3.  Le test échoue.
 
@@ -212,7 +212,7 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
     > [!TIP]
     > Vérifiez que chaque test échoue immédiatement après que vous l'avez écrit. Vous évitez ainsi de commettre l'erreur d'écrire un test qui n'échoue jamais.
 
-4.  Améliorez le code testé afin que le nouveau test réussisse. Ajoutez ce qui suit à **RooterLib.cpp** :
+4.  Améliorez le code testé afin que le nouveau test réussisse. Ajoutez ce qui suit à *RooterLib.cpp* :
 
     ```cpp
     #include <math.h>
@@ -233,7 +233,7 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
 
     ```
 
-5.  Générez la solution, puis, dans l'Explorateur de tests, choisissez **Exécuter tout**.
+5.  Générez la solution, puis, dans **l’Explorateur de tests**, choisissez **Exécuter tout**.
 
      Les deux tests réussissent.
 
@@ -243,7 +243,7 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
 
 ##  <a name="Debug_a_failing_test"></a> Déboguer un test ayant échoué
 
-1.  Ajoutez un autre test à **unittest1.cpp** :
+1.  Ajoutez un autre test à *unittest1.cpp* :
 
     ```cpp
     // Verify that negative inputs throw an exception.
@@ -275,9 +275,9 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
 
     ```
 
-2.  Dans l'Explorateur de tests, choisissez **Exécuter tout**.
+2.  Dans **l’Explorateur de tests**, choisissez **Exécuter tout**.
 
-     Le test échoue. Sélectionnez le nom du test dans l'explorateur de tests. L'échec d'assertion est mis en surbrillance. Le message d'échec est visible dans le volet de détails de l'Explorateur de tests.
+     Le test échoue. Sélectionnez le nom du test dans **l’Explorateur de tests**. L'échec d'assertion est mis en surbrillance. Le message d’échec est visible dans le volet de détails de **l’Explorateur de tests**.
 
      ![NegativeRangeTests, échec](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
@@ -289,7 +289,7 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
 
          Lorsque l'exécution s'arrête au point d'arrêt, parcourez le code.
 
-    3.  Ajoutez du code à **RooterLib.cpp** pour intercepter l’exception :
+    3.  Ajoutez du code à *RooterLib.cpp* pour intercepter l’exception :
 
         ```cpp
         #include <stdexcept>
@@ -305,7 +305,7 @@ Cette rubrique décrit une manière de créer des tests unitaires pour une DLL 
 
         ```
 
-    1.  Dans l’Explorateur de tests, choisissez **Exécuter tout** pour tester la méthode corrigée et vérifier que vous n’avez pas introduit une régression.
+    1.  Dans **l’Explorateur de tests**, choisissez **Exécuter tout** pour tester la méthode corrigée et vérifier que vous n’avez pas introduit une régression.
 
  Toutes les tests réussissent maintenant.
 

@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42415e1a8814de8b7a9872bf619d0ae3a000fc69
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c4cedcdc55d5c0103c7005289191928fa14ac7a3
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31068659"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251544"
 ---
-# <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
+# <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Configuration système requise pour l'Émulateur Visual Studio pour Android
 L’émulateur Visual Studio pour Android s’exécute en tant que machine virtuelle sur Hyper-V, la technologie de virtualisation pour Windows 8 et versions ultérieures. Pour exécuter l’émulateur, votre ordinateur doit satisfaire à la configuration requise pour exécuter Hyper-V, comme décrit dans cette rubrique.  
   
  Le programme d’installation tente de satisfaire à ces conditions préalables de manière silencieuse quand vous installez l’émulateur. Une fois qu’il a configuré correctement les composants requis, l’émulateur fonctionne simplement comme prévu. Dans le cas contraire, vous devrez activer ces composants requis manuellement. Si vous devez configurer manuellement les composants requis, les outils et les étapes sont identiques à ceux décrits [ici](/previous-versions/windows/apps/jj863509\(v=vs.105\)) pour l’émulateur Windows Phone.  
@@ -136,7 +136,7 @@ L’émulateur Visual Studio pour Android s’exécute en tant que machine virtu
 ##  <a name="BootableVHD"></a> L’exécution de l’émulateur à partir d’un disque dur virtuel démarrable n’est pas prise en charge  
  Si vous essayez d’exécuter une application sur l’émulateur Visual Studio pour Android pendant que vous exécutez Windows à partir d’un disque dur virtuel démarrable, le démarrage de l’émulateur prend généralement plusieurs minutes ou échoue. Quand le démarrage de l’émulateur échoue, le message suivant s’affiche : Échec du déploiement de l’application. Réessayez.  
   
- Cette configuration n’est pas prise en charge. Pour plus d’informations sur les problèmes connexes, consultez [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).  
+ Cette configuration n’est pas prise en charge. Pour plus d’informations sur les problèmes connexes, consultez [Résoudre les problèmes de l’émulateur Visual Studio pour Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).  
   
 ##  <a name="Files"></a> Hyper-V nécessite des fichiers non compressés et non chiffrés  
  Sur un disque dur configuré avec le système de fichiers NTFS, les fichiers de disque dur virtuel utilisés par Hyper-V doivent être non compressés et non chiffrés. Assurez-vous que les répertoires suivants ne sont pas compressés ou chiffrés :  
@@ -155,4 +155,4 @@ L’émulateur Visual Studio pour Android s’exécute en tant que machine virtu
  Pour que l’émulateur émule les appels au GPU, tels que ceux utilisés par OpenGL ES, votre ordinateur doit avoir un GPU compatible DirectX avec les pilotes DirectX appropriés installés.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Résolution des problèmes liés à l’émulateur Visual Studio pour Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+ [Résoudre les problèmes de l’émulateur Visual Studio pour Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

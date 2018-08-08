@@ -10,14 +10,14 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: df458124be9650319f47979f7d2d98801d06a61f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 86f547ae686176ab6361f44f4f0ba432c6466da9
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153902"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251573"
 ---
-# <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Problèmes connus et dépannage (Visual Studio Tools pour Unity)
+# <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Problèmes connus et dépannage (Outils Visual Studio pour Unity)
 
 Dans cette section, vous allez trouver les solutions aux problèmes courants rencontrés par Visual Studio Tools pour Unity, ainsi que la description de problèmes identifiés. Vous apprendrez aussi comment vous pouvez aider à améliorer Visual Studio Tools pour Unity en signalant les erreurs.
 
@@ -54,7 +54,7 @@ Votre problème devrait être résolu. Si le problème persiste, exécutez une i
 
 Plusieurs plug-ins Unity comme Parse, FMOD, UMP (Universal Media Player), ZFBrowser ou Embedded Browser utilisent des threads natifs. Un problème se pose quand un plug-in finit par attacher un thread natif au runtime, ce qui aboutit ensuite à des appels bloquants pour le système d’exploitation. Cela signifie qu’Unity ne peut pas interrompre ce thread pour le débogueur (ou le rechargement de domaine) et se bloque.
 
-Pour FMOD, il existe une solution, vous pouvez passer [l’indicateur](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html) d’initialisation FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE pour désactiver le traitement asynchrone et effectuer tout le traitement sur le thread principal.
+Pour FMOD, il existe une solution, vous pouvez passer [l’indicateur](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html) d’initialisation `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` pour désactiver le traitement asynchrone et effectuer tout le traitement sur le thread principal.
 
 ## <a name="incompatible-project-in-visual-studio"></a>Projet incompatible dans Visual Studio
 
@@ -114,7 +114,7 @@ Tentez de mettre à niveau Visual Studio 2015 vers la mise à jour 3.
 
 - L'exécution pas à pas et la reprise des méthodes ne fonctionnent parfois pas très bien, en particulier dans les itérateurs ou dans les instructions switch.
 
-## <a name="reporting-errors"></a>Signalement des erreurs
+## <a name="report-errors"></a>Signaler les erreurs
 
  Aidez-nous à améliorer la qualité de Visual Studio Tools for Unity en envoyant des rapports d'erreurs lorsque vous êtes confronté à un arrêt, un blocage ou autres erreurs. Ceci nous permet d'examiner et de résoudre les problèmes de Visual Studio Tools pour Unity. Merci !
 

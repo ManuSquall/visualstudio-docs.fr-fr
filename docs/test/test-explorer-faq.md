@@ -16,20 +16,20 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: d774a0daa9cc503bde91009b9c78288a6f043721
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 720a69b1eae8a14247027a52ef2972e43203163b
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303281"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382407"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>FAQ concernant l’Explorateur de tests Visual Studio
 
-## <a name="test-discovery"></a>Découverte de tests
+## <a name="test-discovery"></a>Découverte des tests
 
 ### <a name="1-the-test-explorer-is-not-discovering-my-tests-that-are-dynamically-defined-for-example-theories-custom-adapters-custom-traits-ifdefs-etc-how-can-i-discover-these-tests"></a>1. L’Explorateur de tests ne découvre pas mes tests qui sont définis dynamiquement (théories, adaptateurs personnalisés, caractéristiques personnalisées, #ifdefs, etc.). Comment puis-je découvrir ces tests ?
 
-  Générez votre projet et vérifiez que la découverte basée sur les assemblys est activée sous **Outils > Options > Test**.
+  Générez votre projet et vérifiez que la découverte basée sur les assemblys est activée sous **Outils** > **Options** > **Test**.
 
   La [découverte de tests en temps réel](https://go.microsoft.com/fwlink/?linkid=862824) correspond à la découverte de tests basée sur les sources. Elle ne peut pas découvrir les tests qui utilisent des théories, des adaptateurs personnalisés, des caractéristiques personnalisés, des instructions `#ifdef`, etc. car ils sont définis au moment de l’exécution. Une build est nécessaire pour découvrir correctement ces tests. Dans les préversions 15.6, la découverte basée sur les assemblys (le découvreur traditionnel) s’exécute uniquement après les builds. En d’autres termes, la découverte de tests en temps réel découvre autant de tests que possible au fur et à mesure que vous effectuez des modifications, et la découverte basée sur les assemblys permet de faire apparaître les tests définis dynamiquement après une build. La découverte de tests en temps réel améliore la réactivité, tout en vous permettant d’obtenir des résultats complets et précis après une build.
 
@@ -41,7 +41,7 @@ ms.locfileid: "36303281"
 
 ### <a name="3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on"></a>3. La découverte basée sur les assemblys ne fonctionne plus avec mon projet. Comment puis-je la réactiver ?
 
-  Accédez à **Outils > Options > Test** et cochez la case **Découvrez également les tests des assemblys générés après les builds**.
+  Accédez à **Outils** > **Options** > **Test** et cochez la case **Découvrez également les tests des assemblys générés après les builds**.
 
   ![Option basée sur les assemblys](media/testex-toolsoptions.png)
 
@@ -55,7 +55,7 @@ ms.locfileid: "36303281"
 
 ### <a name="6-how-can-i-turn-on-logs-for-the-test-explorer"></a>6. Comment activer les journaux pour l’Explorateur de tests ?
 
-  Accédez à **Outils > Options > Test** et recherchez la section Journalisation.
+  Accédez à **Outils** > **Options** > **Test** et recherchez la section Journalisation.
 
 ### <a name="7-why-are-my-tests-in-uwp-projects-not-discovered-until-i-deploy-my-app"></a>7. Pourquoi dois-je d’abord déployer mon application pour que mes tests soient découverts dans des projets UWP ?
 
@@ -81,7 +81,7 @@ Le filtre de chemin d’accès du fichier dans la zone de recherche de l’**exp
 
 ### <a name="how-can-i-turn-on-feature-flags-to-try-out-new-testing-features"></a>Comment puis-je activer les indicateurs de fonctionnalités pour tester les nouvelles fonctionnalités de test ?
 
-Les indicateurs de fonctionnalités servent à fournir des parties expérimentales ou inachevées du produit à des utilisateurs passionnés qui souhaitent envoyer des commentaires avant le lancement officiel des fonctionnalités. Ils peuvent affecter votre expérience IDE. Utilisez-les uniquement dans des environnements de développement sécurisés, tels que des machines virtuelles. Les indicateurs de fonctionnalités sont toujours des paramètres que vous utilisez à vos risques et périls. Vous pouvez activer les fonctionnalités expérimentales à l’aide de l’[extension Feature Flags](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.FeatureFlagsExtension) ou de l’invite de commandes développeur.
+Les indicateurs de fonctionnalités servent à fournir des parties expérimentales ou inachevées du produit à des utilisateurs passionnés qui souhaitent envoyer des commentaires avant le lancement officiel des fonctionnalités. Ils peuvent affecter votre expérience IDE. Utilisez-les uniquement dans des environnements de développement sécurisés, tels que des machines virtuelles. Les indicateurs de fonctionnalités sont toujours des paramètres que vous utilisez à vos risques et périls. Vous pouvez activer les fonctionnalités expérimentales à l’aide de [l’extension des indicateurs de fonctionnalités](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.FeatureFlagsExtension) ou de l’invite de commandes développeur.
 
 ![Extension Feature Flag](media/testex-featureflag.png)
 
@@ -97,6 +97,6 @@ vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterpri
 ## <a name="see-also"></a>Voir aussi
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>
-- [Création et exécution de tests unitaires pour le code existant](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)
+- [Créer et exécuter des tests unitaires pour le code existant](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)
 - [Tests unitaires sur votre code](unit-test-your-code.md)
-- [FAQ Live Unit Testing](live-unit-testing-faq.md)
+- [Questions fréquentes concernant Live Unit Testing](live-unit-testing-faq.md)

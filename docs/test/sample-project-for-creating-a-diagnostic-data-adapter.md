@@ -12,14 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b7d2cd30faa5cbc5b4f8626c17de77c68bdf8bae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1de27441ea5d0a6af320c031e43affd2c2e14be0
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977113"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380768"
 ---
-# <a name="sample-project-for-creating-a-diagnostic-data-adapter"></a>Exemple de projet pour la création d'un adaptateur de données de diagnostic
+# <a name="sample-project-for-creating-a-diagnostic-data-adapter"></a>Exemple de projet pour la création d’un adaptateur de données de diagnostic
 
 "MyDiagnosticDataAdapter" est un adaptateur de données de diagnostic simple qui peut attacher un fichier journal aux résultats des tests lorsque vous exécutez vos tests.
 
@@ -324,7 +324,7 @@ Voici un exemple de fichier de configuration pour votre éditeur de configuratio
 
 ```
 
-## <a name="compiling-the-code"></a>Compilation du code
+## <a name="compile-the-code"></a>Compiler le code
 
 ### <a name="to-create-the-code-project-for-this-diagnostic-adapter"></a>Pour créer le projet de code pour cet adaptateur de diagnostic
 
@@ -354,7 +354,7 @@ Voici un exemple de fichier de configuration pour votre éditeur de configuratio
 
 7.  Ajoutez l’assembly **Microsoft.VisualStudio.QualityTools.Common**.
 
-    1.  Dans l’Explorateur de solutions, cliquez avec le bouton droit sur **Références** et sélectionnez **Ajouter une référence**.
+    1.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur **Références**, puis sélectionnez **Ajouter une référence**.
 
     2.  Choisissez **Parcourir** et recherchez **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
@@ -364,7 +364,7 @@ Voici un exemple de fichier de configuration pour votre éditeur de configuratio
 
 8.  Copiez la classe d'adaptateur de données de diagnostic indiquée précédemment dans ce document dans la classe de votre bibliothèque de classes. Enregistrez cette classe.
 
-9. Pour ajouter un contrôle utilisateur au projet, cliquez avec le bouton droit sur le projet MyDataCollector dans l’Explorateur de solutions, pointez sur **Ajouter**, puis choisissez **Contrôle utilisateur**. Sélectionnez **Ajouter**.
+9. Pour ajouter un contrôle utilisateur au projet, cliquez avec le bouton droit sur le projet **MyDataCollector** dans **l’Explorateur de solutions**, pointez sur **Ajouter**, puis choisissez **Contrôle utilisateur**. Sélectionnez **Ajouter**.
 
 10. À l’aide de la boîte à outils, ajoutez une étiquette au contrôle utilisateur et remplacez la valeur de la propriété Text par **Nom de fichier :**.
 
@@ -375,11 +375,11 @@ Voici un exemple de fichier de configuration pour votre éditeur de configuratio
     > [!NOTE]
     > Par défaut, le contrôle utilisateur est nommé UserControl1. Assurez-vous que le code de classe du contrôle utilisateur utilise le nom de votre contrôle utilisateur.
 
-13. Pour créer le fichier de configuration, dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur la solution, pointez sur **Ajouter**, puis choisissez **Nouvel élément**. Choisissez **Fichier de configuration de l’application**, puis **Ajouter**. Un fichier nommé **App.config** est alors ajouté à votre solution.
+13. Pour créer le fichier de configuration, dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur la solution, pointez sur **Ajouter**, puis choisissez **Nouvel élément**. Choisissez **Fichier de configuration de l’application**, puis **Ajouter**. Un fichier nommé *App.config* est alors ajouté à votre solution.
 
 14. Copiez le code XML de l'exemple fourni précédent dans le fichier XML. Enregistrez le fichier.
 
-15. Générez la solution, puis copiez l’assembly généré et le fichier `App.config` dans le répertoire *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors*.
+15. Générez la solution, puis copiez l’assembly généré et le fichier *App.config* dans le répertoire *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors*.
 
 16. Créez des paramètres de test qui utilisent cet adaptateur de données de diagnostic personnalisé. Configurez les paramètres de test pour collecter un fichier existant.
 
@@ -394,4 +394,4 @@ Voici un exemple de fichier de configuration pour votre éditeur de configuratio
 - [Guide pratique pour créer un adaptateur de données de diagnostic](../test/how-to-create-a-diagnostic-data-adapter.md)
 - [Guide pratique pour créer un éditeur personnalisé pour les données de votre adaptateur de données de diagnostic](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
 - [Guide pratique pour installer un adaptateur de données de diagnostic personnalisé](../test/how-to-install-a-custom-diagnostic-data-adapter.md)
-- [Création d’un adaptateur de données de diagnostic pour collecter des données personnalisées ou affecter un ordinateur de test](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
+- [Créer un adaptateur de données de diagnostic pour collecter des données personnalisées ou affecter une machine de test](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)

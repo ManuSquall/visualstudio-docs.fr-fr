@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cbabbe7eed62506bc80cbf112c85cda002e409dd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 49316f89e640f4ff43d4914535ef6e5398c249ee
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977775"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341881"
 ---
 # <a name="input-generatation-using-dynamic-symbolic-execution"></a>Génération d’entrées avec l’exécution symbolique dynamique
 
@@ -72,7 +72,7 @@ Le [solveur de contrainte](#constraint-solver) d’IntelliTest détermine les va
 IntelliTest peut [créer des instances de classes .NET existantes](#existing-classes) ou vous pouvez utiliser IntelliTest pour automatiquement [créer des objets fictifs](#parameterized-mocks) qui implémentent une interface spécifique et qui se comportent différemment selon leur utilisation.
 
 <a name="existing-classes"></a>
-## <a name="instantiating-existing-classes"></a>Instanciation de classes existantes
+## <a name="instantiate-existing-classes"></a>Instancier les classes existantes
 
 **Quel est le problème ?**
 
@@ -135,7 +135,7 @@ IntelliTest surveille les instructions exécutées quand il exécute un test et 
 IntelliTest tente de réduire la taille des tableaux et des chaînes nécessaires pour déclencher des comportements de programme intéressants.
 
 <a name="additional-inputs"></a>
-## <a name="obtaining-additional-inputs"></a>Obtention d’entrées supplémentaires
+## <a name="obtain-additional-inputs"></a>Obtenir des entrées supplémentaires
 
 La classe statique [PexChoose](static-helper-classes.md#pexchoose) peut être utilisée pour obtenir des entrées supplémentaires dans un test et pour implémenter des [objets fictifs paramétrables](#parameterized-mocks).
 

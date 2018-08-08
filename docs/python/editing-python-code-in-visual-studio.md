@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 454d8b0294181329c8b1c4414d8f7c70127e661c
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 8a6b95e375fa509c18c44c9c5ba462e1b6b27fb0
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175058"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500119"
 ---
-# <a name="editing-python-code"></a>Modification de code Python
+# <a name="edit-python-code"></a>Modifier le code Python
 
 Comme les développeurs passent beaucoup de temps dans l’éditeur de code, la [prise en charge de Python dans Visual Studio](installing-python-support-in-visual-studio.md) fournit plusieurs fonctionnalités pour améliorer la productivité. Ces fonctionnalités comprennent la mise en surbrillance de la syntaxe IntelliSense, la saisie semi-automatique, l’aide de signature, les substitutions de méthode, la recherche et la navigation.
 
-L’éditeur est également intégré à la fenêtre interactive dans Visual Studio, ce qui facilite l’échange de code entre les deux. Pour plus d’informations, consultez [Étape 3 du didacticiel : Utilisation de la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) et [Utilisation de la fenêtre REPL interactive - Envoi de code à la commande interactive](python-interactive-repl-in-visual-studio.md#send-code-to-interactive-command).
+L’éditeur est également intégré à la **fenêtre interactive** dans Visual Studio, ce qui facilite l’échange de code entre les deux. Pour plus d’informations, consultez [Étape 3 du tutoriel : Utiliser la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) et [Utiliser la fenêtre interactive - Commande Envoyer vers Interactive](python-interactive-repl-in-visual-studio.md#send-to-interactive-command).
 
 |   |   |
 |---|---|
@@ -30,19 +30,19 @@ L’éditeur est également intégré à la fenêtre interactive dans Visual Stu
 
 Pour vous documenter sur la modification de code dans Visual Studio, consultez [Fonctionnalités de l’éditeur de code](../ide/writing-code-in-the-code-and-text-editor.md). Consultez également [Mode Plan](../ide/outlining.md), qui vous permet de rester concentré sur certaines sections de votre code.
 
-Vous pouvez également utiliser l’Explorateur d’objets de Visual Studio (**Affichage > Autres fenêtres > Explorateur d’objets** ou Ctrl+W, J) pour l’inspection des classes Python définies dans chaque module et les fonctions définies dans ces classes.
+Vous pouvez également utiliser **l’Explorateur d’objets** de Visual Studio (**Affichage** > **Autres fenêtres** > **Explorateur d’objets** ou **Ctrl**+**W** > **J**) pour l’inspection des classes Python définies dans chaque module et les fonctions définies dans ces classes.
 
 ## <a name="intellisense"></a>IntelliSense
 
 IntelliSense fournit [les saisies semi-automatiques](#completions), [l’assistance pour la signature](#signature-help), [Info express](#quick-info) et [la coloration du code](#code-coloring). Visual Studio 2017 versions 15.7 et ultérieures prend également en charge les [affinages de type](#type-hints).
 
-Pour améliorer le niveau de performance, IntelliSense dans **Visual Studio 2017 version 15.5** et versions antérieures dépend d’une base de données de saisie semi-automatique qui est générée pour chaque environnement Python dans votre projet. Il est possible que les bases de données doivent être actualisées si vous ajoutez, supprimez ou mettez à jour des packages. Leur état s’affiche sur l’onglet **IntelliSense** de la fenêtre **Environnements Python** (de la même famille que l’Explorateur de solutions) (consultez [Référence sur la fenêtre Environnements](python-environments-window-tab-reference.md#intellisense-tab)).
+Pour améliorer le niveau de performance, IntelliSense dans **Visual Studio 2017 version 15.5** et versions antérieures dépend d’une base de données de saisie semi-automatique qui est générée pour chaque environnement Python dans votre projet. Il est possible que les bases de données doivent être actualisées si vous ajoutez, supprimez ou mettez à jour des packages. Leur état s’affiche sous l’onglet **IntelliSense** de la fenêtre **Environnements Python** (de la même famille que **l’Explorateur de solutions**) (consultez [Référence sur la fenêtre Environnements](python-environments-window-tab-reference.md#intellisense-tab)).
 
 **Visual Studio 2017 versions 15.6** et ultérieures utilise un autre moyen pour fournir les saisies semi-automatiques IntelliSense qui ne dépendent pas de la base de données.
 
 ### <a name="completions"></a>Saisies semi-automatiques
 
-Les saisies semi-automatiques s’affichent sous forme d’instructions, d’identificateurs et d’autres mots qui peuvent tout à fait être saisis à l’emplacement actuel dans l’éditeur. Ce qui apparaît dans la liste est basé sur le contexte et est filtré pour omettre les options inappropriées ou inexactes. Les saisies semi-automatiques sont souvent déclenchées en tapant diverses instructions (comme `import`) et différents opérateurs (dont un point), mais vous pouvez les afficher à tout moment en tapant la séquence suivante : Ctrl+J, espace.
+Les saisies semi-automatiques s’affichent sous forme d’instructions, d’identificateurs et d’autres mots qui peuvent tout à fait être saisis à l’emplacement actuel dans l’éditeur. Ce qui apparaît dans la liste est basé sur le contexte et est filtré pour omettre les options inappropriées ou inexactes. Les saisies semi-automatiques sont souvent déclenchées en tapant diverses instructions (comme `import`) et différents opérateurs (dont un point), mais vous pouvez les afficher à tout moment en tapant **Ctrl**+**J** > **espace**.
 
 ![Saisie semi-automatique de membres](media/code-editing-completions-simple.png)
 
@@ -77,7 +77,7 @@ Taper @ lance un décorateur et affiche les décorateurs potentiels. La plupart 
 ![Saisie semi-automatique de décorateurs](media/code-editing-completion-decorator.png)
 
 > [!Tip]
-> Vous pouvez configurer le comportement des saisies semi-automatiques via **Outils > Options > Éditeur de texte > Python > Avancé**. Parmi les options proposées, **Filter list based on search string** (Filtrer la liste en fonction de la chaîne de recherche) applique un filtre aux propositions de saisie semi-automatique à mesure que vous tapez (option sélectionnée par défaut) et **Member completion displays intersection of members** (La saisie semi-automatique de membres affiche l’intersection des membres) affiche uniquement les saisies semi-automatiques prises en charge par tous les types possibles (option non sélectionnée par défaut). Consultez [Options - Résultats de la saisie semi-automatique](python-support-options-and-settings-in-visual-studio.md#completion-results).
+> Vous pouvez configurer le comportement des saisies semi-automatiques via **Outils** > **Options** > **Éditeur de texte** > **Python** > **Avancé**. Parmi les options proposées, **Filter list based on search string** (Filtrer la liste en fonction de la chaîne de recherche) applique un filtre aux propositions de saisie semi-automatique à mesure que vous tapez (option sélectionnée par défaut) et **La saisie semi-automatique des membres affiche l’intersection des membres** affiche uniquement les saisies semi-automatiques prises en charge par tous les types possibles (option non sélectionnée par défaut). Consultez [Options - Résultats de la saisie semi-automatique](python-support-options-and-settings-in-visual-studio.md#completion-results).
 
 ### <a name="type-hints"></a>Affinages de type
 
@@ -93,7 +93,7 @@ Dans l’exemple suivant, vous pouvez voir comment les attributs annotés de la 
 
 ![Complétion IntelliSense illustrant les affinages de type](media/code-editing-type-hints2.png)
 
-De plus, il s’avère utile de valider les affinages de type tout au long de votre projet, car ce n’est normalement qu’au moment de l’exécution que les erreurs apparaissent. Pour cela, Visual Studio intègre l’outil standard MyPy par le biais de la commande de menu contextuel **Python > Exécuter Mypy** dans **l’Explorateur de solutions** :
+De plus, il s’avère utile de valider les affinages de type tout au long de votre projet, car ce n’est normalement qu’au moment de l’exécution que les erreurs apparaissent. Pour cela, Visual Studio intègre l’outil standard MyPy par le biais de la commande de menu contextuel **Python** > **Exécuter Mypy** dans **l’Explorateur de solutions** :
 
 ![Exécuter la commande de menu contextuel MyPy dans l’Explorateur de solutions](media/code-editing-type-hints-run-mypy.png)
 
@@ -115,22 +115,22 @@ L’utilisation de la commande **Exécuter Mypy** sur ce code génère l’erreu
 ![Exemple de résultat de la validation des affinages de type par mypy](media/code-editing-type-hints-validation-error.png)
 
 > [!Tip]
-> Pour les versions de Python antérieures à la version 3.5, Visual Studio affiche également les affinages de type que vous fournissez par le biais de *fichiers stub* (`.pyi`). Vous pouvez utiliser des fichiers stub chaque fois que vous ne souhaitez pas inclure d’indicateurs de type directement dans votre code, ou que vous souhaitez créer des affinages de type pour une bibliothèque qui ne les utilise pas directement. Pour plus d’informations, consultez [Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (Créer des stubs pour des modules Python) dans le wiki de du projet mypy.
+> Pour les versions de Python antérieures à la version 3.5, Visual Studio affiche également les affinages de type que vous fournissez par le biais de *fichiers stub* (*.pyi*). Vous pouvez utiliser des fichiers stub chaque fois que vous ne souhaitez pas inclure d’indicateurs de type directement dans votre code, ou que vous souhaitez créer des affinages de type pour une bibliothèque qui ne les utilise pas directement. Pour plus d’informations, consultez [Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (Créer des stubs pour des modules Python) dans le wiki du projet mypy.
 >
 > Visual Studio ne prend pas en charge les affinages de type dans les commentaires.
 
 ### <a name="signature-help"></a>Assistance pour la signature
 
-Quand vous écrivez du code qui appelle une fonction, l’aide de signature apparaît lorsque vous tapez le caractère `(` ouvrant et affiche les informations sur le paramètre et la documentation disponibles. Vous pouvez également les faire apparaître avec Ctrl + Maj + Espace à l’intérieur d’un appel de fonction. Les informations affichées dépendent des chaînes de documentation du code source de la fonction, mais elles incluent toutes les valeurs par défaut.
+Quand vous écrivez du code qui appelle une fonction, l’aide de signature apparaît lorsque vous tapez le caractère `(` ouvrant et affiche les informations sur le paramètre et la documentation disponibles. Vous pouvez également les faire apparaître avec **Ctrl**+**Maj**+**Espace** à l’intérieur d’un appel de fonction. Les informations affichées dépendent des chaînes de documentation du code source de la fonction, mais elles incluent toutes les valeurs par défaut.
 
 ![Assistance pour la signature](media/code-editing-signature-help.png)
 
 > [!Tip]
-> Pour désactiver l’assistance pour la signature, accédez à **Outils > Options > Éditeur de texte > Python > Général** et désactivez **Saisie semi-automatique des instructions > Informations sur les paramètres**.
+> Pour désactiver l’assistance pour la signature, accédez à **Outils** > **Options** > **Éditeur de texte** > **Python** > **Général** et désactivez **Saisie semi-automatique des instructions** > **Informations sur les paramètres**.
 
 ### <a name="quick-info"></a>Info express
 
-Placer le pointeur de la souris sur un identificateur permet d’afficher une info-bulle Info express. En fonction de l’identificateur, Info express peut afficher les valeurs ou les types potentiels, la documentation disponible, les types de retour et les emplacements de définition :
+Placer le pointeur de la souris sur un identificateur permet d’afficher une info-bulle Info express. En fonction de l’identificateur, Info express peut afficher les valeurs ou les types potentiels, la documentation disponible, les types de retour et les emplacements de définition :
 
 ![Info express](media/code-editing-quick-info.png)
 
@@ -140,32 +140,32 @@ La coloration du code utilise les informations issues de l’analyse du code pou
 
 ![Coloration du code](media/code-editing-code-coloring.png)
 
-Pour personnaliser les couleurs, accédez à **Outils > Options > Environnement > Polices et couleurs** et modifiez les entrées de Python dans la liste **Afficher les éléments** :
+Pour personnaliser les couleurs, accédez à **Outils** > **Options** > **Environnement** > **Polices et couleurs** et modifiez les entrées **Python** dans la liste **Afficher les éléments** :
 
 ![Options Polices et couleurs](media/code-editing-customize-colors.png)
 
 > [!Tip]
-> Pour désactiver la coloration du code, accédez à **Outils > Options > Éditeur de texte > Python > Avancé** et désactivez **Options diverses > Color names based on type** (Colorer les noms en fonction du type). Consultez [Options - Options diverses](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
+> Pour désactiver la coloration du code, accédez à **Outils** > **Options** > **Éditeur de texte** > **Python** > **Avancé** et désactivez **Options diverses** > **Color names based on type** (Colorer les noms en fonction du type). Consultez [Options - Options diverses](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
 
 ## <a name="code-snippets"></a>Extraits de code
 
-Les extraits de code sont des fragments de code qui peuvent être insérés dans vos fichiers en tapant un raccourci et en appuyant sur la touche de tabulation ou à l’aide des commandes **Modifier > IntelliSense > Insérer un extrait de code** et **Entourer de**, en sélectionnant **Python**, puis en sélectionnant l’extrait de code requis.
+Les extraits de code sont des fragments de code qui peuvent être insérés dans vos fichiers en tapant un raccourci et en appuyant sur **Tab** ou à l’aide des commandes **Modifier** > **IntelliSense** > **Insérer un extrait de code** et **Entourer de**, en sélectionnant **Python**, puis l’extrait de code requis.
 
 Par exemple, `class` est un raccourci pour un extrait de code qui insère une définition de classe. L’extrait de code s’affiche dans la liste de saisie semi-automatique lorsque vous tapez `class` :
 
 ![Raccourci d’extrait de code pour la classe](media/code-editing-code-snippet-class.png)
 
-Appuyez sur Tab générer le reste de la classe. Vous pouvez ensuite taper le nom et la liste de bases, passer d’un champ en surbrillance à l’autre avec la touche de tabulation, puis appuyer sur Entrée pour commencer à taper le corps du texte.
+Appuyez sur **Tab** pour générer le reste de la classe. Vous pouvez ensuite taper le nom et la liste de bases, passer d’un champ en surbrillance à l’autre avec la touche **Tab**, puis appuyer sur **Entrée** pour commencer à taper le corps du texte.
 
 ![Mise en évidence des zones d’un extrait de code que vous devez remplir](media/code-editing-code-snippets.png)
 
 ### <a name="menu-commands"></a>Commandes de menu
 
-Lorsque vous utilisez la commande de menu **Modifier > IntelliSense > Insérer un extrait de code**, sélectionnez d’abord « Python », puis sélectionnez un extrait de code :
+Quand vous utilisez la commande de menu **Modifier** > **IntelliSense** > **Insérer un extrait de code**, sélectionnez d’abord **Python**, puis un extrait de code :
 
 ![Sélection d’un extrait de code via la commande Insérer un extrait de code](media/code-editing-code-snippet-insert.png)
 
-De la même façon, la commande **Modifier > IntelliSense > Entourer de** place la sélection actuelle dans l’éditeur de texte au sein d’un élément structurel choisi. Par exemple, supposons que vous ayez un peu de code comme suit :
+De la même façon, la commande **Modifier** > **IntelliSense** > **Entourer de** place la sélection actuelle dans l’éditeur de texte au sein d’un élément structurel choisi. Par exemple, supposons que vous ayez un peu de code comme suit :
 
 ```python
 sum = 0
@@ -173,23 +173,23 @@ for x in range(1, 100):
     sum = sum + x
 ```
 
-Le fait de sélectionner ce code et de choisir la commande **Entourer de** affiche la liste des extraits de code disponibles. Le fait de choisir `def` dans la liste place le code sélectionné au sein d’une définition de fonction et vous pouvez utiliser la touche Tab pour naviguer entre le nom et les arguments de la fonction sélectionnée :
+Le fait de sélectionner ce code et de choisir la commande **Entourer de** affiche la liste des extraits de code disponibles. Le fait de choisir **def** dans la liste place le code sélectionné au sein d’une définition de fonction et vous pouvez utiliser la touche **Tab** pour naviguer entre le nom et les arguments de la fonction sélectionnée :
 
 ![Utilisation de la commande Entourer de pour les extraits de code](media/code-editing-code-snippet-surround-with.png)
 
 ### <a name="examine-available-snippets"></a>Examiner les extraits de code disponibles
 
-Vous pouvez voir les extraits de code disponibles dans le Gestionnaire des extraits de code, que vous ouvrez avec la commande de menu **Outils > Gestionnaire des extraits de code** et en sélectionnant **Python** comme langage :
+Vous pouvez voir les extraits de code disponibles dans le **Gestionnaire des extraits de code**, que vous ouvrez avec la commande de menu **Outils** > **Gestionnaire des extraits de code** et en sélectionnant **Python** comme langage :
 
 ![Gestionnaire des extraits de code](media/code-editing-code-snippets-manager.png)
 
-Pour créer vos propres extraits de code, consultez [Procédure pas à pas : création d’un extrait de code](../ide/walkthrough-creating-a-code-snippet.md).
+Pour créer vos propres extraits de code, consultez [Procédure pas à pas : créer un extrait de code](../ide/walkthrough-creating-a-code-snippet.md).
 
 Si vous écrivez un extrait de code de qualité et que vous souhaitez le partager, n’hésitez pas à le publier dans un contenu Gist et [informez-nous](https://github.com/Microsoft/PTVS/issues). Nous pourrons peut-être l’ajouter dans une prochaine version de Visual Studio.
 
-## <a name="navigating-your-code"></a>Navigation dans votre code
+## <a name="navigate-your-code"></a>Parcourir votre code
 
-La prise en charge de Python dans Visual Studio fournit plusieurs options pour naviguer rapidement dans votre code, notamment des bibliothèques pour lesquelles le code source est disponible : la [barre de navigation](#navigation-bar), [Atteindre la définition](#go-to-definition), [Naviguer vers](#navigate-to) et [Rechercher toutes les références](#find-all-references). Vous pouvez également utiliser l’[Explorateur d’objets](../ide/viewing-the-structure-of-code.md#BKMK_ObjectBrowser) de Visual Studio.
+La prise en charge de Python dans Visual Studio fournit plusieurs options pour naviguer rapidement dans votre code, notamment des bibliothèques pour lesquelles le code source est disponible : la [barre de navigation](#navigation-bar), [**Atteindre la définition**](#go-to-definition), [**Naviguer vers**](#navigate-to) et [**Rechercher toutes les références**](#find-all-references). Vous pouvez également utiliser [**l’Explorateur d’objets**](../ide/viewing-the-structure-of-code.md#BKMK_ObjectBrowser) de Visual Studio.
 
 ### <a name="navigation-bar"></a>Barre de navigation
 
@@ -198,25 +198,25 @@ La barre de navigation s’affiche en haut de chaque fenêtre de l’éditeur et
 ![Barre de navigation](media/code-editing-navigation-bar.png)
 
 > [!Tip]
-> Pour masquer la barre de navigation, accédez à **Outils > Options > Éditeur de texte > Python > Général** et désactivez **Paramètres > Barre de navigation**.
+> Pour masquer la barre de navigation, accédez à **Outils** > **Options** > **Éditeur de texte** > **Python** > **Général** et désactivez **Paramètres** > **Barre de navigation**.
 
 ### <a name="go-to-definition"></a>Atteindre la définition
 
-**Atteindre la définition** permet de passer rapidement de l’utilisation d’un identificateur (p. ex. un nom de fonction, une classe ou une variable) au code source dans lequel il est défini. Pour l’appeler, vous devez cliquer avec le bouton droit sur un identificateur et sélectionner **Atteindre la définition** ou placer le signe insertion dans l’identificateur et appuyer sur F12. Cela fonctionne dans l’ensemble de votre code et des bibliothèques externes sous réserve que ce code source soit disponible. Si le code source de la bibliothèque n’est pas disponible, **Atteindre la définition** passe à l’instruction `import` appropriée pour une référence de module ou affiche une erreur.
+**Atteindre la définition** permet de passer rapidement de l’utilisation d’un identificateur (p. ex. un nom de fonction, une classe ou une variable) au code source dans lequel il est défini. Pour l’appeler, vous devez cliquer avec le bouton droit sur un identificateur et sélectionner **Atteindre la définition** ou placer le signe insertion dans l’identificateur et appuyer sur **F12**. Cela fonctionne dans l’ensemble de votre code et des bibliothèques externes sous réserve que ce code source soit disponible. Si le code source de la bibliothèque n’est pas disponible, **Atteindre la définition** passe à l’instruction `import` appropriée pour une référence de module ou affiche une erreur.
 
 ![Atteindre la définition](media/code-editing-go-to-definition.png)
 
 ### <a name="navigate-to"></a>Boîte de dialogue Naviguer vers
 
-La commande **Modifier > Naviguer vers...** (Ctrl-virgule) affiche une zone de recherche dans l’éditeur dans laquelle vous pouvez taper n’importe quelle chaîne et voir les correspondances possibles dans votre code qui définit une fonction, une classe ou une variable contenant cette chaîne. Cette fonctionnalité permet de bénéficier d’une fonction similaire à **Atteindre la définition**, mais sans avoir à localiser une utilisation d’un identificateur.
+La commande **Modifier** > **Naviguer vers** (**Ctrl**+**,**) affiche une zone de recherche dans l’éditeur dans laquelle vous pouvez taper n’importe quelle chaîne et voir les correspondances possibles dans votre code qui définit une fonction, une classe ou une variable contenant cette chaîne. Cette fonctionnalité permet de bénéficier d’une fonction similaire à **Atteindre la définition**, mais sans avoir à localiser une utilisation d’un identificateur.
 
-Double-cliquer sur un nom ou sélectionner des touches de direction et Entrée permet d’accéder à la définition de cet identificateur.
+Vous pouvez accéder à la définition de cet identificateur en double-cliquant sur n’importe quel nom ou en effectuant une sélection avec les touches de direction et en appuyant sur **Entrée**.
 
 ![Boîte de dialogue Naviguer vers](media/code-editing-navigate-to.png)
 
 ### <a name="find-all-references"></a>Rechercher toutes les références
 
-**Rechercher toutes les références** est une option utile pour déterminer où un identificateur donné est à la fois défini et utilisé, y compris les importations et les affectations. Pour l’appeler, vous devez cliquer avec le bouton droit sur un identificateur et sélectionner **Rechercher toutes les références** ou placer le signe insertion dans l’identificateur et appuyer sur Maj+F12. Double-cliquer sur un élément de la liste permet d’accéder à son emplacement.
+**Rechercher toutes les références** est une option utile pour déterminer où un identificateur donné est à la fois défini et utilisé, y compris les importations et les affectations. Pour l’appeler, vous devez cliquer avec le bouton droit sur un identificateur et sélectionner **Rechercher toutes les références** ou placer le signe insertion dans l’identificateur et appuyer sur **Maj**+**F12**. Double-cliquer sur un élément de la liste permet d’accéder à son emplacement.
 
 ![Résultats de Rechercher toutes les références](media/code-editing-find-all-references.png)
 

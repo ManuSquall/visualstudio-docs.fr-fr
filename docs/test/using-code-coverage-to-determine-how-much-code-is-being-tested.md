@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ed37441efa981e2efb29a408d5d3423387e2052e
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: a4164f9911ae9ca0eade08c1ef8c12fc6bc46300
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978247"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381714"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Utiliser la couverture du code pour déterminer la quantité de code testé
 
@@ -51,7 +51,7 @@ Vous pouvez avoir recours à la couverture du code lorsque vous exécutez des m�
 > - Si vous travaillez avec du code non managé (natif), utilisez une version Debug.
 > - Vérifiez que vous générez des fichiers de symboles (.pdb) pour chaque assembly.
 
-Si vous n’obtenez pas les résultats escomptés, consultez [Résolution des problèmes liés à la couverture du code](../test/troubleshooting-code-coverage.md). . N’oubliez pas de réexécuter la couverture du code après la mise à jour de votre code. Les résultats de couverture et la coloration du code ne sont pas automatiquement mis à jour après avoir la modification de votre code ou lorsque vous exécutez des tests.
+Si vous n’obtenez pas les résultats escomptés, consultez [Résolution des problèmes liés à la couverture du code](../test/troubleshooting-code-coverage.md). N’oubliez pas de réexécuter la couverture du code après la mise à jour de votre code. Les résultats de couverture et la coloration du code ne sont pas automatiquement mis à jour après avoir la modification de votre code ou lorsque vous exécutez des tests.
 
 ## <a name="report-in-blocks-or-lines"></a>Rapport pour les blocs ou les lignes
 
@@ -63,7 +63,7 @@ Certains utilisateurs préfèrent un nombre de lignes, car les pourcentages corr
 
 ## <a name="manage-code-coverage-results"></a>Gérer les résultats de la couverture du code
 
-La fenêtre Résultats de la couverture du code affiche généralement le résultat de la série la plus récente. Les résultats varient si vous modifiez les données de test ou si vous exécutez uniquement certains de vos tests chaque fois.
+La fenêtre **Résultats de la couverture du code** affiche généralement le résultat de la série la plus récente. Les résultats varient si vous modifiez les données de test ou si vous exécutez uniquement certains de vos tests chaque fois.
 
 La fenêtre de couverture du code peut également être utilisée pour afficher les résultats précédents ou des résultats obtenus sur d'autres ordinateurs.
 
@@ -71,13 +71,13 @@ Vous pouvez fusionner les résultats de plusieurs séries, par exemple les résu
 
 -   **Pour afficher un ensemble de résultats antérieur**, sélectionnez-le dans le menu déroulant. Le menu affiche une liste temporaire qui est supprimée lorsque vous ouvrez une nouvelle solution.
 
--   **Pour afficher les résultats d’une session antérieure**, choisissez **Importer les résultats de la couverture du code**, accédez au dossier TestResults dans votre solution et importez un fichier .coverage.
+-   **Pour afficher les résultats d’une session antérieure**, choisissez **Importer les résultats de la couverture du code**, accédez au dossier **TestResults** dans votre solution, puis importez un fichier *.coverage*.
 
-    La coloration de couverture peut être incorrecte si le code source a été modifié depuis que le fichier .coverage a été généré.
+    La coloration de couverture peut être incorrecte si le code source a été modifié depuis que le fichier *.coverage* a été généré.
 
--   **Pour afficher les résultats sous forme de texte**, choisissez **Exporter les résultats de la couverture du code**. Un fichier .coveragexml lisible est généré. Vous pouvez le traiter avec d'autres outils ou l'envoyer facilement.
+-   **Pour afficher les résultats sous forme de texte**, choisissez **Exporter les résultats de la couverture du code**. Un fichier *.coveragexml* lisible est généré. Vous pouvez le traiter avec d’autres outils ou l’envoyer facilement par-email.
 
--   **Pour envoyer les résultats à une autre personne**, envoyez un fichier .coverage ou un fichier .coveragexml exporté. Cela permet ensuite à la personne d'importer le fichier. Si la personne a la même version de code source, elle a accès à la coloration de couverture.
+-   **Pour envoyer les résultats à une autre personne**, envoyez un fichier *.coverage* ou un fichier *.coveragexml* exporté. Cela permet ensuite à la personne d'importer le fichier. Si la personne a la même version de code source, elle a accès à la coloration de couverture.
 
 ## <a name="merge-results-from-different-runs"></a>Fusionner les résultats de différentes exécutions
 
@@ -245,15 +245,15 @@ Utilisez les macros suivante :
 
 ### <a name="include-or-exclude-additional-elements"></a>Inclure ou exclure des éléments supplémentaires
 
-L'analyse de la couverture du code est exécutée uniquement sur les assemblys chargés et pour lesquels un fichier .pdb est disponible dans le même répertoire que le fichier .dll ou .exe. Par conséquent, dans certains cas, vous pouvez étendre le jeu d'assemblys inclus par l'obtention des copies des fichiers .pdb appropriés.
+L’analyse de la couverture du code est exécutée uniquement sur les assemblys chargés et pour lesquels un fichier *.pdb* est disponible dans le même répertoire que le fichier *.dll* ou *.exe*. Par conséquent, dans certains cas, vous pouvez étendre le jeu d’assemblys inclus par l’obtention des copies des fichiers *.pdb* appropriés.
 
-Vous pouvez mieux contrôler les assemblys et les éléments qui sont sélectionnés pour l'analyse de la couverture du code en écrivant un fichier .runsettings. Par exemple, vous pouvez exclure des assemblys de type particulier sans devoir ajouter des attributs à leurs classes. Pour plus d’informations, consultez [Personnalisation de l’analyse de couverture du code](../test/customizing-code-coverage-analysis.md).
+Vous pouvez mieux contrôler les assemblys et les éléments qui sont sélectionnés pour l’analyse de la couverture du code en écrivant un fichier *.runsettings*. Par exemple, vous pouvez exclure des assemblys de type particulier sans devoir ajouter des attributs à leurs classes. Pour plus d’informations, consultez [Personnaliser l’analyse de la couverture du code](../test/customizing-code-coverage-analysis.md).
 
 ## <a name="analyze-code-coverage-in-the-build-service"></a>Analyse de la couverture du code dans le service de build
 
 Lorsque vous archivez votre code, vos tests s’exécutent sur le serveur de builds, avec l’ensemble des tests des autres membres de l’équipe. (Si vous ne l’avez pas déjà fait, consultez [Exécuter des tests dans votre processus de génération](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) L’analyse de la couverture du code sur le service de build est utile, car elle permet d’obtenir l’image la plus récente et la plus complète de la couverture du projet entier. Elle inclut également des tests système automatisés et d’autres tests codés qui ne sont généralement pas exécutés sur les ordinateurs de développement.
 
-1. Dans Team Explorer, ouvrez **Builds**, puis ajoutez ou modifiez une définition de build.
+1. Dans **Team Explorer**, ouvrez **Builds**, puis ajoutez ou modifiez une définition de build.
 
 2. Dans la page **Processus**, développez **Tests automatisés**, **Source de test**, **Paramètres d’exécution**. Affectez à **Type des paramètres d’exécution** la valeur **Couverture du code activée**.
 
@@ -286,6 +286,6 @@ Si vous ne voyez pas les résultats de la couverture du code, consultez la rubri
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Personnalisation de l’analyse de la couverture du code](../test/customizing-code-coverage-analysis.md)
+- [Personnaliser l’analyse de la couverture du code](../test/customizing-code-coverage-analysis.md)
 - [Dépannage de la couverture du code](../test/troubleshooting-code-coverage.md)
 - [Tests unitaires sur votre code](../test/unit-test-your-code.md)

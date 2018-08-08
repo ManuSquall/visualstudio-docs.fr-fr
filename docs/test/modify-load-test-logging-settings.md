@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ffd20812ec37e324dc919ea5943cf30a5329321b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 61b67cb950ee1d429f5f65ef745ff5ac75ca69d8
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968192"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379655"
 ---
 # <a name="modify-load-test-logging-settings"></a>Modifier les paramètres de journalisation du test de charge
 
@@ -25,8 +25,8 @@ Le *contrôleur de test* met en attente toutes les données d’échantillons de
 
 |Tâche|Rubriques associées|
 |----------|-----------------------|
-|**Spécifier la fréquence d’enregistrement des journaux pendant une série de tests de charge :** Vous pouvez spécifier la fréquence d’enregistrement voulue pour le journal des tests pendant l’exécution de votre test de charge.|-   [Guide pratique pour spécifier la fréquence d’enregistrement des journaux des tests](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
-|**Enregistrer des journaux si un test de charge échoue :** Vous pouvez également spécifier si vous souhaitez enregistrer le journal des tests chaque fois qu’un test de charge échoue.|-   [Guide pratique pour spécifier si les échecs de test sont enregistrés dans les journaux des tests](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
+|**Spécifier la fréquence d’enregistrement des journaux pendant une série de tests de charge :** Vous pouvez spécifier la fréquence d’enregistrement voulue pour le journal des tests pendant l’exécution de votre test de charge.|-   [Guide pratique pour spécifier la fréquence d’enregistrement des journaux de tests](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
+|**Enregistrer des journaux si un test de charge échoue :** Vous pouvez également spécifier si vous souhaitez enregistrer le journal des tests chaque fois qu’un test de charge échoue.|-   [Guide pratique pour spécifier si les échecs de test doivent être enregistrés dans les journaux de tests](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 |**Définir la taille de fichier maximum du fichier journal :** Vous pouvez modifier le fichier de configuration XML associé au service de contrôleur de test pour spécifier la taille de fichier maximum à utiliser pour le fichier journal.|[Guide pratique pour spécifier la taille maximale du fichier journal](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
 
 ## <a name="related-tasks"></a>Tâches connexes
@@ -35,4 +35,4 @@ Le *contrôleur de test* met en attente toutes les données d’échantillons de
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Configuration des paramètres d’exécution des tests de charge](../test/configure-load-test-run-settings.md)
+- [Configurer les paramètres d’exécution des tests de charge](../test/configure-load-test-run-settings.md)

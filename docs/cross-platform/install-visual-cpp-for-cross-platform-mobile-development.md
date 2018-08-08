@@ -12,12 +12,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: cd8f99ffdba144d475b3d68d7509b57ad7ea4e3c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 5dffe82511e75889ea588cb23b1f19490f991ab0
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281096"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251905"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>Installer le développement mobile multiplateforme avec C++
 
@@ -105,7 +105,7 @@ Si vous utilisez Visual Studio 2015, son programme d’installation inclut une o
 
 ## <a name="install-tools-for-ios"></a>Install tools for iOS
 
-Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme pour modifier, déboguer du code iOS et ensuite le déployer dans le simulateur iOS ou sur un appareil iOS mais, en raison de restrictions de licences, le code doit être généré à distance sur un Mac. Pour générer et exécuter des applications iOS à l’aide de Visual Studio, vous devez installer et configurer l’agent distant sur votre Mac. Pour obtenir des instructions d’installation détaillées, les conditions préalables et les options de configuration, consultez [Install And Configure Tools to Build using iOS](install-and-configure-tools-to-build-using-ios.md). Si vous ne générez pas pour iOS, vous pouvez ignorer cette étape.
+Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme pour modifier, déboguer du code iOS et ensuite le déployer dans le simulateur iOS ou sur un appareil iOS mais, en raison de restrictions de licences, le code doit être généré à distance sur un Mac. Pour générer et exécuter des applications iOS à l’aide de Visual Studio, vous devez installer et configurer l’agent distant sur votre Mac. Pour obtenir des instructions d’installation détaillées, connaître les prérequis et les options de configuration, consultez [Installer et configurer des outils de génération en utilisant iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Si vous ne générez pas pour iOS, vous pouvez ignorer cette étape.
 
 ## <a name="install-or-update-dependencies-manually"></a>Installer ou mettre à jour manuellement les dépendances
 
@@ -118,23 +118,23 @@ Lisez les informations suivantes et utilisez ces liens pour installer des dépen
 
 - [Kit de développement Java SE](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
-   Par défaut, le programme d’installation place les outils Java dans C:\Program Files (x86)\Java.
+   Par défaut, le programme d’installation place les outils Java dans *C:\Program Files (x86)\Java*.
 
 - [Kit de développement logiciel Android SDK](https://developer.android.com/sdk/index.html#command-tools)
 
-   Lors de l’installation, mettez à jour les API comme recommandé. Vérifiez que le kit SDK pour Android 5.0 Lollipop (niveau d’API 21), ou version ultérieure, est installé. Par défaut, le programme d’installation place le SDK Android dans C:\Program Files (x86)\Android\android-sdk.
+   Lors de l’installation, mettez à jour les API comme recommandé. Vérifiez que le kit SDK pour Android 5.0 Lollipop (niveau d’API 21), ou version ultérieure, est installé. Par défaut, le programme d’installation place le SDK Android dans *C:\Program Files (x86)\Android\android-sdk*.
 
    Vous pouvez réexécuter l’application SDK Manager dans le répertoire Android SDK pour mettre à jour le kit SDK et installer des outils facultatifs, ainsi que des niveaux d’API supplémentaires. L’installation des mises à jour risque d’échouer, sauf si vous utilisez **Exécuter en tant qu’administrateur** pour exécuter l’application du Gestionnaire du SDK. Si vous rencontrez des problèmes lors de la génération d’une application Android, recherchez des mises à jour pour les kits SDK installés dans le Gestionnaire du SDK.
 
-   Pour utiliser certains émulateurs Android fournis avec le kit SDK Android, vous devez installer les pilotes Intel HAXM facultatifs. Vous devrez peut-être supprimer la fonctionnalité Hyper-V de Windows pour installer correctement les pilotes Intel HAXM. Vous devez restaurer la fonctionnalité Hyper-V pour utiliser les émulateurs Windows Phone et l’émulateur Microsoft Visual Studio pour Android. Pour plus d’informations, consultez [Accélération matérielle de l’émulateur Android](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin).
+   Pour utiliser certains émulateurs Android fournis avec le kit SDK Android, vous devez installer les pilotes Intel HAXM facultatifs. Vous devrez peut-être supprimer la fonctionnalité Hyper-V de Windows pour installer correctement les pilotes Intel HAXM. Vous devez restaurer la fonctionnalité Hyper-V pour utiliser les émulateurs Windows Phone et l’émulateur Microsoft Visual Studio pour Android. Pour plus d’informations, consultez [Accélération matérielle de l’Émulateur Android](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin).
 
 - [Kit de développement natif (NDK) Android](https://developer.android.com/tools/sdk/ndk/index.html)
 
-   Par défaut, le programme d’installation place le Kit de développement natif (NDK) Android dans C:\ProgramData\Microsoft\AndroidNDK. Vous pouvez retélécharger et réinstaller le Kit de développement natif (NDK) Android pour mettre à jour son installation.
+   Par défaut, le programme d’installation place le Kit de développement natif (NDK) Android dans *C:\ProgramData\Microsoft\AndroidNDK*. Vous pouvez retélécharger et réinstaller le Kit de développement natif (NDK) Android pour mettre à jour son installation.
 
 - [Apache Ant](https://ant.apache.org/bindownload.cgi)
 
-   Par défaut, le programme d’installation place Apache Ant dans C:\Program Files (x86)\Microsoft Visual Studio 14.0\Apps.
+   Par défaut, le programme d’installation place Apache Ant dans *C:\Program Files (x86)\Microsoft Visual Studio 14.0\Apps*.
 
 - [Émulateur Microsoft Visual Studio pour Android](https://aka.ms/vscomemudownload)
 

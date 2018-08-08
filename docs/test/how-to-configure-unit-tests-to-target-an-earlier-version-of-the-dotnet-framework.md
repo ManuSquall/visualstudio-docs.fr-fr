@@ -9,14 +9,14 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: ea86ce4b977f1b8a664944bca2fcef65f8f5132f
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: dad7589e09ded8994a5e687c4f4cf95283887324
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233488"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380642"
 ---
-# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Comment : configurer des tests unitaires pour cibler une version antérieure du .NET Framework
+# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Guide pratique pour configurer des tests unitaires pour cibler une version antérieure du .NET Framework
 
 Quand vous créez un projet de test dans Microsoft Visual Studio, la version la plus récente du .NET Framework est définie en tant que cible, par défaut. De plus, si vous mettez à niveau des projets de test à partir de versions antérieures de Visual Studio, ceux-ci sont mis à niveau pour cibler la version la plus récente du .NET Framework. En modifiant les propriétés du projet, vous pouvez recibler explicitement le projet vers des versions antérieures du .NET Framework.
 
@@ -26,13 +26,13 @@ Vous pouvez créer des projets de test unitaire qui ciblent des versions spécif
 
 - Vous pouvez exécuter des tests unitaires qui ciblent une version spécifique du .NET Framework à partir de Visual Studio sur votre machine locale.
 
-- Vous pouvez exécuter des tests unitaires qui ciblent une version spécifique du .NET Framework en utilisant MSTest.exe à partir de l’invite de commandes.
+- Vous pouvez exécuter des tests unitaires qui ciblent une version spécifique du .NET Framework à l’aide de *MSTest.exe* à partir de l’invite de commandes.
 
 - Vous pouvez exécuter des tests unitaires sur un agent de build dans le cadre d’une build.
 
 **Test des applications SharePoint**
 
-Les fonctionnalités listées ci-dessus vous permettent également d’écrire des tests unitaires et des tests d’intégration pour les applications SharePoint à l’aide de Visual Studio. Pour plus d’informations sur le développement d’applications SharePoint à l’aide de Visual Studio, consultez [Créer des solutions SharePoint](../sharepoint/create-sharepoint-solutions.md), [Génération et débogage de solutions SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md) et [Vérification et débogage du code SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md).
+Les fonctionnalités listées ci-dessus vous permettent également d’écrire des tests unitaires et des tests d’intégration pour les applications SharePoint à l’aide de Visual Studio. Pour plus d’informations sur le développement d’applications SharePoint à l’aide de Visual Studio, consultez [Créer des solutions SharePoint](../sharepoint/create-sharepoint-solutions.md), [Générer et déboguer des solutions SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md) et [Vérifier et déboguer du code SharePoint](../sharepoint/verifying-and-debugging-sharepoint-code.md).
 
 **Limitations**
 
@@ -58,7 +58,7 @@ Les limitations suivantes s’appliquent quand vous reciblez vos projets de test
 
 3.  Dans la zone de texte **Nom**, tapez un nom pour votre projet de test Visual Basic, puis choisissez **OK**.
 
-4.  Dans l’Explorateur de solutions, choisissez **Propriétés** dans le menu contextuel du nouveau projet de test Visual Basic.
+4.  Dans **l’Explorateur de solutions**, choisissez **Propriétés** dans le menu contextuel du nouveau projet de test Visual Basic.
 
      Les propriétés de votre projet de test Visual Basic s’affichent.
 
@@ -70,7 +70,7 @@ Les limitations suivantes s’appliquent quand vous reciblez vos projets de test
 
      ![Liste déroulante du framework cible](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
-## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>Reciblage vers une version spécifique du .NET Framework pour les projets de test unitaire Visual C#
+## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>Reciblage vers une version spécifique du .NET Framework pour les projets de test unitaire Visual C#
 
 1.  Créez un projet de test unitaire Visual C#. Dans le menu **Fichier**, choisissez **Nouveau**, puis **Projet**.
 
@@ -80,7 +80,7 @@ Les limitations suivantes s’appliquent quand vous reciblez vos projets de test
 
 3.  Dans la zone de texte **Nom**, tapez un nom pour votre projet de test Visual C#, puis choisissez **OK**.
 
-4.  Dans l’Explorateur de solutions, choisissez **Propriétés** dans le menu contextuel de votre nouveau projet de test Visual C#.
+4.  Dans **l’Explorateur de solutions**, choisissez **Propriétés** dans le menu contextuel de votre nouveau projet de test Visual C#.
 
      Les propriétés de votre projet de test Visual C# s’affichent.
 
@@ -101,11 +101,11 @@ Les limitations suivantes s’appliquent quand vous reciblez vos projets de test
 
 3.  Dans la zone de texte **Nom**, tapez un nom pour votre projet de test Visual C++, puis cliquez sur **OK**.
 
-4.  Dans l’Explorateur de solutions, choisissez **Décharger le projet** à partir de votre nouveau projet de test Visual C++.
+4.  Dans **l’Explorateur de solutions**, choisissez **Décharger le projet** à partir de votre nouveau projet de test Visual C++.
 
-5.  Dans l’Explorateur de solutions, choisissez le projet de test Visual C++ déchargé, puis choisissez **Modifier \<nom_projet>.vcxproj**.
+5.  Dans **l’Explorateur de solutions**, choisissez le projet de test Visual C++ déchargé, puis choisissez **Modifier \<nom_projet>.vcxproj**.
 
-     Le fichier .vcxproj s’ouvre dans l’éditeur.
+     Le fichier *.vcxproj* s’ouvre dans l’éditeur.
 
 6.  Affectez la version 3.5 ou une version ultérieure à `TargetFrameworkVersion` dans le `PropertyGroup` nommé `"Globals"`. Ne spécifiez pas de version client :
 
@@ -120,12 +120,12 @@ Les limitations suivantes s’appliquent quand vous reciblez vos projets de test
       </PropertyGroup>
     ```
 
-7.  Enregistrez et fermez le fichier .vcxproj.
+7.  Enregistrez et fermez le fichier *.vcxproj*.
 
-8.  Dans l’Explorateur de solutions, choisissez **Recharger le projet** dans le menu contextuel de votre nouveau projet de test Visual C++.
+8.  Dans **l’Explorateur de solutions**, choisissez **Recharger le projet** dans le menu contextuel de votre nouveau projet de test Visual C++.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Créer des solutions SharePoint](../sharepoint/create-sharepoint-solutions.md)
-- [Génération et débogage de solutions SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
+- [Générer et déboguer des solutions SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [Paramètres avancés du compilateur, boîte de dialogue (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

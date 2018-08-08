@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d0994b226a80385e381fa7b738c0194ec393d87a
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: ffd6b8c66f0575ec07e66ea2a138f2761b20cc7a
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844691"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379636"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Installer des frameworks de tests unitaires tierces
 
@@ -44,7 +44,7 @@ Si vous savez quel framework vous intéresse :
 
 2. Tapez le nom du framework dans la zone **Rechercher**.
 
-3. Choisissez le framework dans la liste des résultats pour accéder à la page de Visual Studio Marketplace correspondant à l’outil.
+3. Choisissez le framework dans la liste des résultats pour accéder à la page de **Visual Studio Marketplace** correspondant à l’outil.
 
 Pour parcourir la liste des frameworks ainsi que d'autres outils de test :
 
@@ -54,7 +54,7 @@ Pour parcourir la liste des frameworks ainsi que d'autres outils de test :
 
 3. Dans la liste **Catégorie** (libellée **Affichage**), développez le nœud **Outils**, puis choisissez **Test**.
 
-4. Choisissez un framework dans la liste des résultats pour accéder à la page de Visual Studio Marketplace correspondant à l’outil.
+4. Choisissez un framework dans la liste des résultats pour accéder à la page de **Visual Studio Marketplace** correspondant à l’outil.
 
 ## <a name="update-to-the-latest-test-adapters"></a>Mettre à jour vers les adaptateurs de test les plus récents
 
@@ -66,7 +66,7 @@ Mettez à jour vers l’adaptateur de test stable le plus récent afin de béné
 
 2. Cliquez sur l’onglet **Mises à jour** et recherchez les adaptateurs de test NUnit ou xUnit installés.
 
-3. Sélectionnez chaque adaptateur de test, puis sélectionnez la version stable la plus récente disponible dans le menu déroulant.
+3. Sélectionnez chaque adaptateur de test, puis sélectionnez la dernière version stable dans le menu déroulant.
 
 4. Choisissez le bouton **Installer**.
 

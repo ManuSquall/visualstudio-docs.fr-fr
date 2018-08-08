@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 065e50b123ccf4ac96ba6bec89db74bb51990f58
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5333fe1562a9398e930bb077dd2a4cfe6aab6825
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751399"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380246"
 ---
-# <a name="using-the-graphs-view-legend-to-analyze-load-tests"></a>Utilisation de la légende de la vue Graphes pour analyser des tests de charge
+# <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Utiliser la légende de la vue Graphiques pour analyser des tests de charge
 
 La vue Graphiques de l'outil Analyseur de test de charge inclut le volet de la légende qui affiche des informations sur chaque compteur de performance associé au graphique actuellement sélectionné.
 
@@ -55,10 +55,10 @@ La sélection d'un élément dans la légende effectue les opérations suivantes
 -   Permet d’accéder à la boîte de dialogue **Options de tracé** pour le compteur.
 
 > [!TIP]
-> Vous pouvez utiliser le bouton de liste déroulante **Options des diagrammes** dans la barre d’outils de l’analyseur de test de charge et sélectionner **Afficher la légende** pour afficher ou masquer le volet **Légende** associé à la vue du graphique.
+> Vous pouvez utiliser le bouton de la liste déroulante **Options des diagrammes** dans la barre d’outils de **l’Analyseur de test de charge** et sélectionner **Afficher la légende** pour afficher ou masquer le volet **Légende** associé à la vue du graphique.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour spécifier les options de traçage pour les compteurs graphiques](../test/how-to-specify-plot-options-for-graphing-counters.md)
+- [Guide pratique pour spécifier les options de traçage des compteurs graphiques](../test/how-to-specify-plot-options-for-graphing-counters.md)
 - [Guide pratique pour faire un zoom avant sur une région du graphique](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
 - [Analyser les résultats des tests de charge dans la vue Graphiques](../test/analyze-load-test-results-in-the-graphs-view.md)

@@ -13,40 +13,40 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a61d53e8dbdbbce9c5a09fc8f8cd180a8b312d2c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: f39ff75eaa6efe0d71d884fd5d6d76f65e5dad50
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750969"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380199"
 ---
-# <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Comment : faire un zoom sur une région du graphique des résultats d'un test de charge
+# <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Guide pratique pour faire un zoom sur une région du graphique des résultats d’un test de charge
 
 Une fois un test de charge terminé, vous pouvez utiliser les barres de zoom pour effectuer un zoom avant et accéder à une zone spécifique du graphique. En zoomant en avant, vous pouvez examiner en détail les données générées durant une série de tests de charge.
 
 > [!NOTE]
 > Le zoom avant est disponible uniquement lorsque vous analysez les résultats d'un test de charge terminé et non pas lorsque vous observez les résultats d'un test en cours.
 
- Le contrôle de zoom est uniquement visible dans l'Analyseur de test de charge lorsque vous consultez un résultat de test de charge en mode zoom. Le mode zoom est appliqué dans la vue Graphiques lorsqu'un test de charge s'est terminé ou qu'un test de charge exécuté précédemment est chargé. Vous pouvez afficher ou masquer les contrôles de zoom sur les graphiques à l'aide du bouton Afficher les contrôles de zoom dans la barre d'outils.
+ Le contrôle de zoom est uniquement visible dans **l’Analyseur de test de charge** lorsque vous consultez un résultat de test de charge en mode zoom. Le mode zoom est appliqué dans la vue Graphiques lorsqu'un test de charge s'est terminé ou qu'un test de charge exécuté précédemment est chargé. Vous pouvez afficher ou masquer les contrôles de zoom sur les graphiques à l’aide du bouton **Afficher les contrôles de zoom** dans la barre d’outils.
 
- Le zoom sur l'axe des abscisses (x) peut être ajusté pour analyser des périodes spécifiques au cours du test de charge. Le zoom sur l'axe des ordonnées (y) peut être ajusté pour analyser des plages de valeurs spécifiques pour les compteurs inclus dans le graphique.
+ Le **zoom sur l’axe des abscisses (x)** peut être ajusté pour analyser certaines périodes au cours du test de charge. Le **zoom sur l’axe des ordonnées (y)** peut être ajusté pour analyser certaines plages de valeurs pour les compteurs inclus dans le graphique.
 
- La chronologie horizontale et les contrôles de zoom des plages de valeurs verticaux peuvent être ajustés à l'aide de la souris. Le contrôle de chronologie horizontal peut également être ajusté à l'aide des touches de direction gauche et droite. En utilisant les touches de direction pour ajuster le contrôle de zoom, vous pouvez ajuster la plage des fenêtres de 1 intervalle d'échantillonnage à la fois. À l'aide de la touche MAj et des touches de direction, effectuez des réglages par 10 intervalles d'échantillonnage.
+ La **chronologie horizontale** et les **contrôles de zoom des plages de valeurs verticaux** peuvent être ajustés à l’aide de la souris. Le **contrôle de chronologie horizontal** peut également être ajusté à l’aide des touches de direction gauche et droite. En utilisant les touches de direction pour ajuster le contrôle de zoom, vous pouvez ajuster la plage des fenêtres de 1 intervalle d'échantillonnage à la fois. L’utilisation simultanée de la touche **Maj** et des touches de direction permet de procéder par plages de 10 intervalles d’échantillonnage à la fois.
 
- Pour ajuster le contrôle de zoom à l'aide de la touche de direction, définissez d'abord le focus sur le contrôle de zoom à l'aide de la touche TAB. Lorsque le focus est placé sur le curseur gauche, les touches de direction déplacent la limite initiale de la fenêtre de zoom de 1 intervalle à gauche ou à droite. Lorsque le focus est sur le curseur de centre, vous pouvez utiliser les touches de direction pour faire défiler la fenêtre de zoom à gauche ou à droite de 1 intervalle d'échantillonnage sans modifier la taille de la fenêtre de zoom. Enfin, le curseur du côté droit se déplace, permettant l'extension ou la réduction de la plage de la fin de la fenêtre de zoom de 1 intervalle d'échantillonnage.
+ Pour ajuster le contrôle de zoom à l’aide de la touche de direction, définissez d’abord le focus sur le contrôle de zoom à l’aide de la touche de **tabulation**. Lorsque le focus est placé sur le curseur gauche, les touches de direction déplacent la limite initiale de la fenêtre de zoom de 1 intervalle à gauche ou à droite. Lorsque le focus est sur le curseur de centre, vous pouvez utiliser les touches de direction pour faire défiler la fenêtre de zoom à gauche ou à droite de 1 intervalle d'échantillonnage sans modifier la taille de la fenêtre de zoom. Enfin, le curseur du côté droit se déplace, permettant l'extension ou la réduction de la plage de la fin de la fenêtre de zoom de 1 intervalle d'échantillonnage.
 
  Pour revenir aux contrôles de zoom horizontal et vertical afin d’afficher la chronologie complète et les plages de valeurs, vous pouvez utiliser l’option **Zoom arrière horizontal**, l’option **Zoom arrière vertical** ou l’option **Zoom avant/arrière** dans le menu contextuel du graphique.
 
 > [!TIP]
-> Vous pouvez utiliser la commande **Synchroniser les contrôles de zoom horizontal** dans la barre d’outils pour activer/désactiver la synchronisation de zoom horizontal automatique. Lorsque la synchronisation est activée, un effet de zoom appliqué à un graphique est également appliqué à tous autres graphiques de la vue Graphiques.
+> Vous pouvez utiliser la commande **Synchroniser les contrôles de zoom horizontal** dans la barre d’outils pour activer/désactiver la synchronisation de zoom horizontal automatique. Lorsque la synchronisation est activée, un effet de zoom appliqué à un graphique est également appliqué à tous les autres graphiques de la vue Graphiques.
 
  ![Contrôle de zoom de la vue Graphiques](../test/media/ltest_zoomcontrol.png) Contrôle de zoom de la vue Graphiques
 
- Dans l'illustration précédente, un zoom avant a été appliqué au graphique Système testé pour étudier les problèmes de seuil. Les violations de seuils ont été activées à l’aide de l’option **Afficher les violations de seuils sur le graphique** de la liste déroulante **Options de graphique** dans la barre d’outils.
+ Dans l’illustration précédente, un zoom avant a été appliqué au graphique **Système testé** pour étudier les problèmes de seuil. Les violations de seuils ont été activées à l’aide de l’option **Afficher les violations de seuils sur le graphique** de la liste déroulante **Options de graphique** dans la barre d’outils.
 
  Pour plus d’informations, consultez [Analyser les résultats des tests de charge dans la vue Graphiques](../test/analyze-load-test-results-in-the-graphs-view.md).
 
-## <a name="displaying-graphs"></a>Affichage des graphiques
+## <a name="display-graphs"></a>Afficher des graphiques
  Avant de pouvoir modifier l'affichage des graphiques en effectuant un zoom avant ou arrière ou en le faisant défiler, suivez la procédure suivante pour afficher ces graphiques.
 
 ### <a name="to-display-graphs"></a>Pour afficher des graphiques
@@ -67,18 +67,18 @@ Une fois un test de charge terminé, vous pouvez utiliser les barres de zoom pou
 
      Chaque barre de zoom possède deux poignées. Une poignée est une zone rectangulaire située à chaque extrémité de la barre de zoom.
 
-## <a name="zooming-and-scrolling"></a>Zoom et défilement
- Lorsque plusieurs graphiques sont affichés, vous pouvez les garder synchronisés afin qu'ils affichent la même partie de la série de tests de charge.
+## <a name="zoom-and-scroll"></a>Zoom et défilement
+ Lorsque plusieurs graphiques sont affichés, vous pouvez les garder synchronisés afin qu’ils affichent la même partie de la série de tests de charge.
 
 ### <a name="to-synchronize-zooming-and-scrolling"></a>Pour synchroniser le zoom et le défilement
 
-1.  Dans l’analyseur de test de charge, choisissez **Synchroniser les contrôles de zoom horizontal**.
+1.  Dans **l’Analyseur de test de charge**, choisissez **Synchroniser les contrôles de zoom horizontal**.
 
-     Lorsque le bouton Synchroniser les contrôles de zoom horizontal est sélectionné, si vous un faites un zoom et faites défiler l’échelle de temps d’un graphique en particulier, ce zoom et ce défilement est également répercuté sur les autres graphiques.
+     Lorsque le bouton **Synchroniser les contrôles de zoom horizontal** est sélectionné, si vous un faites un zoom et faites défiler l’échelle de temps d’un graphique en particulier, ce zoom et ce défilement sont également répercutés sur les autres graphiques.
 
-2.  Cliquez à nouveau sur Synchroniser les contrôles de zoom horizontal.
+2.  Choisissez à nouveau **Synchroniser les contrôles de zoom horizontal**.
 
-     Lorsque le bouton Synchroniser les contrôles de zoom horizontal n'est pas sélectionné, si vous un faites un zoom et faites défiler l'échelle de temps d'un graphique en particulier, ce zoom et ce défilement ne concernent que ce graphique.
+     Lorsque le bouton **Synchroniser les contrôles de zoom horizontal** n’est pas sélectionné, si vous un faites un zoom et faites défiler l’échelle de temps d’un graphique en particulier, ce zoom et ce défilement ne sont appliqués qu’à ce graphique.
 
 ### <a name="to-zoom-and-scroll-to-a-region-of-the-graph"></a>Pour faire un zoom et faire défiler une portion du graphique
 
@@ -88,7 +88,7 @@ Une fois un test de charge terminé, vous pouvez utiliser les barres de zoom pou
 
 2.  Pour faire un zoom avant sur une zone en particulier, faites glisser les deux poignées vers le centre du graphique.
 
-     Plus les deux poignées sont proches l'une de l'autre, plus l'agrandissement est élevé et permet de révéler des segments plus courts et plus fins du test de charge.
+     Plus les deux poignées sont proches l’une de l’autre, plus l’agrandissement est élevé et permet de révéler des segments plus courts et plus précis du test de charge.
 
      Cliquez sur la section centrale de la barre de zoom et faites-la glisser pour défiler jusqu'à un point particulier dans le test de charge.
 

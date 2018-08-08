@@ -10,14 +10,14 @@ ms.author: mamcle
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4478b711581e332c8da980ddac9fd4d369d8e7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d2997f5f7daf04bbde467ff40c26103a0310720c
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31070010"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251827"
 ---
-# <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Résolution des problèmes liés à l’émulateur Visual Studio pour Android
+# <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Résoudre les problèmes de l’émulateur Visual Studio pour Android
 Cette rubrique contient des informations pour vous aider à résoudre les problèmes que vous pouvez rencontrer quand vous utilisez l’Émulateur Visual Studio pour Android.  
   
 > [!WARNING]
@@ -62,7 +62,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 ##  <a name="BeforeYouStart"></a> Avant de commencer  
  Avant de commencer le dépannage, il peut être utile de consulter les rubriques suivantes :  
   
--   [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+-   [Configuration requise pour l’Émulateur Visual Studio pour Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
 ##  <a name="NoInstall"></a> L’installation de l’émulateur échoue  
  Si vous n’avez pas installé Hyper-V, le message suivant s’affiche quand vous essayez d’installer l’émulateur. Effectuez l’installation sur une machine qui prend en charge Hyper-V et sur laquelle Hyper-V est activé.  
@@ -72,7 +72,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 > [!NOTE]
 >  Ce message concerne à la fois l’émulateur Visual Studio pour Android et l’émulateur Windows Phone. Windows 8.1 et Windows 10 prennent en charge l’émulateur.  
   
- Si vous voyez ce message, consultez [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) pour vérifier si vous pouvez exécuter l’émulateur.  
+ Si vous voyez ce message, consultez [System requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) pour vérifier si vous pouvez exécuter l’émulateur.  
   
 ##  <a name="DomainNetwork"></a> Impossible de se connecter à des destinations réseau sur un domaine ou un réseau d'entreprise  
  L'Émulateur Visual Studio pour Android apparaît sur le réseau comme une unité distincte avec sa propre adresse IP. Il n'est pas joint à un domaine Windows et ne partage pas d'informations d'identification de domaine ou de groupe de travail avec l'ordinateur hôte.  
@@ -179,7 +179,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
   
     6.  Vérifiez que vous exécutez Windows 8 Professionnel ou mieux (Windows Server 2008 n'est pas pris en charge). Windows Server 2012 est pris en charge, mais vous devez activer la fonctionnalité Expérience utilisateur.  
   
-     Vous pouvez inspecter l'Observateur d'événements pour voir s'il existe des erreurs liées à l'hyperviseur. Pour cela, ouvrez l'Observateur d'événements (touche Windows + R, puis tapez `eventvwr`), puis sélectionnez **Journaux Windows**, **Système**. Ensuite, filtrez le journal par source d'événements, en définissant **Hyperviseur Hyper-V**comme source. Recherchez les erreurs pour aider à identifier la cause initiale.  
+     Vous pouvez inspecter l'Observateur d'événements pour voir s'il existe des erreurs liées à l'hyperviseur. Pour cela, ouvrez l’observateur d’événements (**touche Windows**+**R**, puis tapez `eventvwr`), puis sélectionnez **Journaux Windows**, **Système**. Ensuite, filtrez le journal par source d'événements, en définissant **Hyperviseur Hyper-V**comme source. Recherchez les erreurs pour aider à identifier la cause initiale.  
   
      Si votre processeur satisfait à la configuration requise mais que l'hyperviseur échoue encore, vérifiez si une mise à niveau du BIOS est disponible pour votre ordinateur. Si c'est le cas et que vous choisissez de mettre à niveau, veillez à respecter toutes les précautions du fabricant lors de la mise à niveau du BIOS (par exemple, assurez-vous que la mise à niveau du microprogramme BIOS n'est pas interrompue par une panne de courant, ce qui peut altérer définitivement le BIOS).  
   
@@ -193,7 +193,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
   
      Les produits suivants peuvent nécessiter une mise à niveau pour la compatibilité avec Windows 8 : VirtualBox, Virtual PC 7, VMWare, certains clients VPN, pare-feu logiciels, versions de clients VPN Cisco et autres systèmes de virtualisation. Collaborez avec le développeur du logiciel de virtualisation en question pour l'inciter à mettre à niveau le logiciel pour le rendre compatible avec Windows 8 et Hyper-V.  
   
-     En guise de **solution de contournement**, vous pouvez désactiver tous les pilotes et applications tiers susceptibles d'interférer avec le réseau virtuel utilisé par l'émulateur pour communiquer avec Visual Studio. Il peut s'agir notamment :  
+     En guise de *solution de contournement*, vous pouvez désactiver tous les pilotes et applications tiers susceptibles d’interférer avec le réseau virtuel utilisé par l’émulateur pour communiquer avec Visual Studio. Il peut s'agir notamment :  
   
     -   d'applications antivirus (qui se raccordent à la pile réseau) ;  
   
@@ -261,7 +261,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
   
 -   Ouvrez l'Éditeur du Registre en sélectionnant **Exécuter** dans le menu contextuel du bouton Démarrer, en tapant `regedit` dans la boîte de dialogue et en choisissant **OK**.  
   
--   Accédez à HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools dans l'arborescence des dossiers sur la gauche.  
+-   Accédez à *HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools* dans l’arborescence des dossiers sur la gauche.  
   
 -   Modifiez la variable de Registre **Path** pour qu'elle corresponde au chemin d'accès à votre Kit de développement logiciel Android.  
   
@@ -308,7 +308,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 ##  <a name="Multitouch"></a> L'émulateur ne répond pas aux entrées tactiles multipoints  
  Dans certains cas, l'émulateur démarre mais ne répond pas aux entrées tactiles multipoints effectuées par interaction directe par le biais de votre écran tactile ou à l'aide de l'outil multipoint dans la barre d'outils de l'émulateur. Dans ce cas, choisissez le bouton **Pivoter** dans la barre d'outils de l'émulateur et réessayez d'utiliser la fonctionnalité multipoint. Si le problème persiste, consultez la section [L'émulateur ne parvient pas à afficher le contenu OpenGL](#OpenGL) .  
   
-##  <a name="Support"></a> Ressources de support technique  
+##  <a name="Support"></a> Ressources de support  
  Si votre ordinateur hôte satisfait à la configuration système requise et que vous rencontrez un problème non couvert dans ce guide de dépannage :  
   
 -   Posez une question sur StackOverflow en utilisant les balises [android-emulator](http://stackoverflow.com/questions/tagged/android-emulator) et visual-studio.  

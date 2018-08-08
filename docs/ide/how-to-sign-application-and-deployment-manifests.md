@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cee4f7ff8438c1e20f39a24e9e439e7507d655b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 903bc0df9b24cd6f944e9e92c6dc5283cd1d25ea
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951724"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381945"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Guide pratique pour signer des manifestes d’application et de déploiement
 
@@ -41,7 +41,7 @@ Si vous souhaitez publier une application à l’aide du déploiement ClickOnce,
 
 ## <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>Pour signer des manifestes d’application et de déploiement à l’aide d’un certificat
 
-1.  Accédez à la fenêtre Propriétés du projet (cliquez avec le bouton droit sur le nœud de projet dans l’**Explorateur de solutions**, sélectionnez **Propriétés** ou tapez **propriétés de projet** dans la fenêtre **Lancement rapide**, ou appuyez sur **Alt**+**Entrée** dans la fenêtre de l’**Explorateur de solutions**). Sous l’onglet **Signature**, cochez la case **Signer les manifestes ClickOnce**.
+1.  Accédez à la fenêtre Propriétés du projet (cliquez avec le bouton droit sur le nœud de projet dans **Explorateur de solutions**, sélectionnez **Propriétés** ou tapez **propriétés de projet** dans la fenêtre **Lancement rapide**, ou appuyez sur **Alt**+**Entrée** dans **Explorateur de solutions**). Sous l’onglet **Signature**, cochez la case **Signer les manifestes ClickOnce**.
 
 2.  Cliquez sur le bouton **Sélectionner dans Store**.
 
