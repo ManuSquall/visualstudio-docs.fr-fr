@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: a64674ae5a902e332ae8b9eb3cbe6a22d09a1133
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: cbb43f61aab1df099efca01b56a927cf189a808e
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380614"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468976"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Démarrage rapide : utiliser Visual Studio pour créer votre première application web ASP.NET Core
 
@@ -107,13 +107,10 @@ Félicitations ! Vous avez terminé ce guide de démarrage rapide. Nous espéro
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour plus d’informations, passez aux tutoriels suivants :
+Pour en savoir plus, passez au tutoriel suivant :
 
 > [!div class="nextstepaction"]
 > [Bien démarrer avec C# et ASP.NET dans Visual Studio](tutorial-csharp-aspnet-core.md)
->
-> [!div class="nextstepaction"]
-> [Prise en main d’ASP.NET Core MVC et de Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
 
 ## <a name="see-also"></a>Voir aussi
 

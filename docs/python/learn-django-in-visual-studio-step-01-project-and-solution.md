@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de64cd62ecffef2897e5be65b348eddbc9a52e46
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: bcd15202fa4641928dea8a7c2d0d1f9894426193
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388161"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586576"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Tutoriel : Bien démarrer avec le framework web Django dans Visual Studio
 
@@ -147,7 +147,7 @@ Maintenant que vous avez configuré le contrôle de code source pour votre proje
 
 ### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Question : Pourquoi créer un environnement virtuel ?
 
-Réponse : Un environnement virtuel est un excellent moyen d’isoler les dépendances exactes de votre application. Cette isolation évite les conflits dans un environnement Python global et facilite les tests et la collaboration. Au fil du temps, quand vous développez une application, vous introduisez invariablement de nombreux packages Python très utiles. En conservant les packages dans un environnement virtuel spécifique au projet, vous pouvez facilement mettre à jour le fichier *requirements.txt* du projet qui décrit cet environnement, ce qui est inclus dans le contrôle de code source. Quand le projet est copié vers d’autres ordinateurs, dont des serveurs de builds, des serveurs de déploiement et d’autres ordinateurs de développement, il est facile de recréer l’environnement uniquement avec *requirements.txt* (c’est la raison pour laquelle l’environnement n’a pas besoin d’être dans le contrôle de code source). Pour plus d’informations, consultez [Utiliser des environnements virtuels](selecting-a-python-environment-for-a-project.md#using-virtual-environments).
+Réponse : Un environnement virtuel est un excellent moyen d’isoler les dépendances exactes de votre application. Cette isolation évite les conflits dans un environnement Python global et facilite les tests et la collaboration. Au fil du temps, quand vous développez une application, vous introduisez invariablement de nombreux packages Python très utiles. En conservant les packages dans un environnement virtuel spécifique au projet, vous pouvez facilement mettre à jour le fichier *requirements.txt* du projet qui décrit cet environnement, ce qui est inclus dans le contrôle de code source. Quand le projet est copié vers d’autres ordinateurs, dont des serveurs de builds, des serveurs de déploiement et d’autres ordinateurs de développement, il est facile de recréer l’environnement uniquement avec *requirements.txt* (c’est la raison pour laquelle l’environnement n’a pas besoin d’être dans le contrôle de code source). Pour plus d’informations, consultez [Utiliser des environnements virtuels](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
 ### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Question : Comment supprimer un environnement virtuel déjà validé par le contrôle de code source ?
 
