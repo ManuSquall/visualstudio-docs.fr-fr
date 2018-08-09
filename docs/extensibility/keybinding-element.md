@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a199a805493b0b9ac9ae6e75cec322c74a99987e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3b5e35738f04dd4a05a753a58e91ca385ecd56bd
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511572"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639322"
 ---
 # <a name="keybinding-element"></a>Élément KeyBinding
 L’élément de combinaison de touches Spécifie les raccourcis clavier pour les commandes.  
   
- Commandes peuvent avoir un ou deux combinaisons de touches qui s’y rapportent. Un exemple d’une liaison de clé unique est CTRL + S pour le **enregistrer** commande. Les combinaisons de touches doubles nécessitent deux combinaisons de touches successives pour déclencher une commande. Un exemple d’une liaison de clé double est CTRL + K, CTRL + K pour définir un signet.  
+ Commandes peuvent avoir un ou deux combinaisons de touches qui s’y rapportent. Est un exemple d’une liaison de clé unique **Ctrl**+**S** pour le **enregistrer** commande. Les combinaisons de touches doubles nécessitent deux combinaisons de touches successives pour déclencher une commande. Est un exemple d’une combinaison de touches double **Ctrl * +** K **,** Ctrl**+** K ** pour définir un signet.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -42,10 +42,10 @@ L’élément de combinaison de touches Spécifie les raccourcis clavier pour le
 |GUID|Obligatoire.|  
 |ID|Obligatoire.|  
 |éditeur|Obligatoire. Le GUID de l’éditeur indique le contexte d’édition pour laquelle ce raccourci clavier est actif. La valeur d’étendue globale de liaison est « guidVSStd97 ».|  
-|key1|Obligatoire. Les valeurs valides incluent peut être tapées tous les caractères alphanumériques et les valeurs hexadécimales à deux chiffres précédés par 0 x et [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
-|MOD1|Facultatif. N’importe quelle combinaison de touches CTRL, ALT et MAJ séparés par un espace.|  
-|key2|Facultatif. Les valeurs valides incluent peut être tapées tous les caractères alphanumériques et les valeurs hexadécimales à deux chiffres précédés par 0 x et [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
-|MOD2|Facultatif. N’importe quelle combinaison de touches CTRL, ALT et MAJ séparés par un espace.|  
+|key1|Obligatoire. Les valeurs valides incluent peut être tapées tous les caractères alphanumériques et les valeurs hexadécimales à deux chiffres précédés par 0 x et [VK_constants](https://msdn.microsoft.com/library/windows/desktop/dd375731.aspx).|  
+|MOD1|Facultatif. N’importe quelle combinaison de **Ctrl**, **Alt**, et **MAJ** séparés par un espace.|  
+|key2|Facultatif. Les valeurs valides incluent peut être tapées tous les caractères alphanumériques et les valeurs hexadécimales à deux chiffres précédés par 0 x et [VK_constants](https://msdn.microsoft.com/library/windows/desktop/dd375731.aspx).|  
+|MOD2|Facultatif. N’importe quelle combinaison de **Ctrl**, **Alt**, et **MAJ** séparés par un espace.|  
 |Émulateur|Facultatif.|  
 |Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
@@ -75,4 +75,4 @@ L’élément de combinaison de touches Spécifie les raccourcis clavier pour le
   
 ## <a name="see-also"></a>Voir aussi  
  [Élément KeyBindings](../extensibility/keybindings-element.md)   
- [Fichiers Visual Studio Command Table (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio fichiers command table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

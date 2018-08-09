@@ -1,5 +1,5 @@
 ---
-title: Gestion des VSPackages | Documents Microsoft
+title: Gestion de VSPackages | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,36 +16,36 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e3241bae84b89b53e30c3d0949e4f8551110e7d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 14aa17f4692857d650cb3bc9fe1a3498fc4f147a
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140132"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639558"
 ---
-# <a name="managing-vspackages"></a>Gestion des VSPackages
-Dans la plupart des cas vous n’avez pas à vous soucier de la gestion des VSPackages, étant donné que les modèles de projet et d’élément enregistrement et chargent le package automatiquement. Toutefois, dans certains cas, vous devrez peut-être en savoir un peu plus pour gérer votre package.  
+# <a name="manage-vspackages"></a>Gérer les packages VS
+Dans la plupart des cas vous n’avez pas besoin à vous soucier de la gestion des VSPackages, étant donné que les modèles de projet et d’élément enregistrer et chargent le package automatiquement. Toutefois, dans certains cas, vous devrez peut-être pour en savoir un peu plus pour gérer votre package.  
   
-## <a name="using-the-experimental-instance"></a>À l’aide de l’instance expérimentale  
- Pour plus d’informations sur l’instance expérimentale, consultez [l’Instance expérimentale](../extensibility/the-experimental-instance.md).  
+## <a name="use-the-experimental-instance"></a>Utiliser l’instance expérimentale  
+ Pour en savoir plus sur l’instance expérimentale, consultez [l’instance expérimentale](../extensibility/the-experimental-instance.md).  
   
-## <a name="registering-and-unregistering-vspackages"></a>Inscription et annulation de l’inscription de VSPackages  
- Pour savoir comment enregistrer et annuler l’inscription de VSPackages et autres types d’extensions, consultez [inscription et annulation de l’inscription de VSPackages](../extensibility/registering-and-unregistering-vspackages.md).  
+## <a name="register-and-unregister-vspackages"></a>Inscrire et désinscrire des VSPackages  
+ Pour savoir comment procéder inscrire et désinscrire des VSPackages et autres types d’extensions, consultez [inscrire et désinscrire des VSPackages](../extensibility/registering-and-unregistering-vspackages.md).  
   
-## <a name="loading-a-vspackage"></a>Le chargement d’un VSPackage  
- Les VSPackages peuvent être définies à autoload lorsque certains que CMDUICONTEXT GUID est activée. Pour plus d’informations, consultez [le chargement des VSPackages](../extensibility/loading-vspackages.md).  
+## <a name="load-a-vspackage"></a>Charger un VSPackage  
+ Les VSPackages peuvent être définies pour charger automatiquement lorsqu’un particulier que CMDUICONTEXT GUID est activé. Pour plus d’informations, consultez [charge VSPackages](../extensibility/loading-vspackages.md).  
   
-## <a name="using-asyncpackage-to-load-vspackages-in-the-background"></a>À l’aide de AsyncPackage pour charger les VSPackages en arrière-plan  
- La classe AsyncPackage permet package charger sur un thread d’arrière-plan pour une meilleure réactivité de l’interface utilisateur dans Visual Studio. Pour plus d’informations, consultez [Comment : AsyncPackage d’utilisation pour les VSPackages de chargement en arrière-plan](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md).  
+## <a name="use-asyncpackage-to-load-vspackages-in-the-background"></a>Utiliser AsyncPackage pour charger des VSPackages en arrière-plan  
+ Le `AsyncPackage` classe permet le chargement de package sur un thread d’arrière-plan pour une meilleure réactivité de l’interface utilisateur dans Visual Studio. Pour plus d’informations, consultez [Comment : utiliser des AsyncPackage pour charger des VSPackages en arrière-plan](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md).  
   
-## <a name="rule-based-ui-context-for-extensions"></a>Contexte de l’interface utilisateur basée sur une règle pour les Extensions  
- Contextes d’interface utilisateur basée sur des règles autorise les auteurs d’extension définir les conditions précises sous lequel un contexte de l’interface utilisateur est activé et chargé de VSPackages associés. Pour plus d’informations, consultez [Comment : contexte d’interface utilisateur basée sur une règle de l’utilisation d’Extensions Visual Studio](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md).  
+## <a name="rule-based-ui-context-for-extensions"></a>Contexte d’interface utilisateur basée sur une règle pour les extensions  
+ Contextes d’interface utilisateur basée sur des règles permet aux auteurs d’extension définir les conditions précises sous lesquelles un contexte d’interface utilisateur est activé et chargé de VSPackages associés. Pour plus d’informations, consultez [Comment : utiliser le contexte d’interface utilisateur basée sur une règle pour les extensions Visual Studio](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md).  
   
-## <a name="diagnosing-extension-performance"></a>Diagnostiquer les performances de l’extension  
-Les extensions peuvent affecter les performances de charge de démarrage et de la solution. Découvrez comment l’impact d’extension de Visual Studio est calculée et comment il peut être analysé localement pour tester si une extension peut s’afficher à l’extension de compromettre des performances. Pour plus d’informations, consultez [Comment : diagnostiquer les performances Extension](how-to-diagnose-extension-performance.md). 
+## <a name="diagnose-extension-performance"></a>Diagnostiquer les performances de l’extension  
+Extensions peuvent affecter les performances de chargement de solution et de démarrage. Découvrez comment l’impact d’extension de Visual Studio est calculée et comment elles peuvent être analysées localement pour tester si une extension peut être affichée comme une extension d’ayant un impact sur des performances. Pour plus d’informations, consultez [Comment : diagnostiquer les performances de l’extension](how-to-diagnose-extension-performance.md). 
   
-## <a name="troubleshooting-vspackages"></a>Dépanner les packages VS  
- Découvrez les techniques de dépannage des VSPackages qui ne sont pas chargés ou rencontrent des erreurs : [VSPackages de résolution des problèmes](../extensibility/troubleshooting-vspackages.md)  
+## <a name="troubleshoot-vspackages"></a>Résoudre les problèmes de VSPackages  
+ Découvrez les techniques permettant de dépanner les packages VS qui ne se chargent pas ou que vous rencontrez des erreurs : [résoudre les problèmes de VSPackages](../extensibility/troubleshooting-vspackages.md)  
   
 ## <a name="see-also"></a>Voir aussi  
  [VSPackages](../extensibility/internals/vspackages.md)
