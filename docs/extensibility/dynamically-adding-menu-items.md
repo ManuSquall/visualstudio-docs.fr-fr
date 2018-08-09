@@ -1,5 +1,5 @@
 ---
-title: Ajouter dynamiquement des éléments de Menu | Documents Microsoft
+title: Ajout dynamique d’éléments de Menu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,40 +15,40 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf7c9f8da800e827ac4b1993c55d4d96c8ca9d89
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 69a6b50702f444064715e08b31a1b014f8a1028f
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133263"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639667"
 ---
-# <a name="dynamically-adding-menu-items"></a>Ajouter dynamiquement des éléments de Menu
-Vous pouvez ajouter des éléments de menu au moment de l’exécution en spécifiant le `DynamicItemStart` commande indicateur sur une définition de bouton d’espace réservé dans le fichier de commandes-table (.vsct) de Visual Studio, puis définir (dans le code), le nombre de menu d’éléments à afficher et gérer les commandes. Lorsque le VSPackage est chargé, l’espace réservé est remplacé par les éléments de menu dynamique.  
+# <a name="dynamically-add-menu-items"></a>Ajouter dynamiquement des éléments de menu
+Vous pouvez ajouter des éléments de menu au moment de l’exécution en spécifiant le `DynamicItemStart` commande indicateur sur une définition de bouton d’espace réservé dans la table de commande Visual Studio (*.vsct*) fichier, puis définir (dans le code), le nombre d’éléments de menu à afficher et gestion de l’exécution des commandes. Lorsque le VSPackage est chargé, l’espace réservé est remplacé par les éléments de menu dynamique.  
   
- Visual Studio utilise des listes dynamiques dans le **des derniers fichiers utilisés** liste (MRU), qui affiche les noms de documents qui ont été ouverts récemment, et le **Windows** liste, qui affiche les noms de windows qui sont actuellement ouverts.   Le `DynamicItemStart` indicateur sur une définition de commande indique que la commande est un espace réservé jusqu'à ce que le VSPackage est ouvert. Lorsque le VSPackage est ouverte, l’espace réservé est remplacé par 0 ou plusieurs commandes qui sont créés au moment de l’exécution et ajoutés à la liste dynamique. Vous n’êtes peut-être pas en mesure d’afficher la position dans le menu dans lequel la liste dynamique s’affiche jusqu'à ce que le VSPackage est ouvert.  Pour remplir une liste dynamique, Visual Studio vous demande le VSPackage pour rechercher une commande avec un ID dont les premiers caractères sont les mêmes que l’ID de l’espace réservé. Lorsque Visual Studio détecte une commande, il ajoute le nom de la commande à la liste dynamique. Ensuite, elle incrémente l’ID et recherche d’une autre commande correspondante à ajouter à la liste dynamique jusqu'à ce qu’il n’y a plus dynamiques commandes.  
+ Visual Studio utilise les listes dynamiques dans le **utilisés le plus récemment** liste (MRU), qui affiche les noms de documents qui ont été récemment ouverts, et le **Windows** liste qui affiche les noms de windows qui sont actuellement ouverts.   Le `DynamicItemStart` indicateur sur une définition de commande spécifie que la commande est un espace réservé jusqu'à ce que le VSPackage est ouvert. Lorsque le VSPackage est ouvert, l’espace réservé est remplacé par 0 ou plus de commandes qui sont créés au moment de l’exécution et ajoutés à la liste dynamique. Vous n’êtes peut-être pas en mesure de voir la position dans le menu dans lequel la liste dynamique s’affiche jusqu'à ce que le VSPackage est ouvert.  Pour remplir la liste dynamique, Visual Studio vous demande le VSPackage pour rechercher une commande avec un ID dont les premiers caractères sont les mêmes que l’ID de l’espace réservé. Lorsque Visual Studio détecte une commande correspondante, il ajoute le nom de la commande à la liste dynamique. Puis il incrémente l’ID et recherche d’une autre commande correspondante à ajouter à la liste dynamique jusqu'à ce qu’il existe des commandes n’y a plus dynamiques.  
   
- Cette procédure pas à pas montre comment définir le projet de démarrage dans une solution Visual Studio avec une commande sur le **l’Explorateur de solutions** barre d’outils. Elle utilise un contrôleur de menu qui a une liste dynamique des projets de la solution active. Pour éviter que cette commande qui s’affiche lorsqu’aucune solution n’est ouverte, ou lorsque la solution ouverte n'a qu’un seul projet, le VSPackage est chargé uniquement quand une solution comporte plusieurs projets.  
+ Cette procédure pas à pas montre comment définir le projet de démarrage dans une solution Visual Studio avec une commande sur le **l’Explorateur de solutions** barre d’outils. Il utilise un contrôleur de menu qui est une liste déroulante dynamique des projets de la solution active. Pour éviter que cette commande qui s’affiche lorsqu’aucune solution n’est ouvert ou quand la solution ouverte n’a qu’un seul projet, le VSPackage est chargé uniquement quand une solution avec plusieurs projets.  
   
- Pour plus d’informations sur les fichiers .vsct, consultez [Visual Studio Command Table (. Fichiers VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+ Pour plus d’informations sur *.vsct* de fichiers, consultez [fichiers Visual Studio command table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
-## <a name="creating-an-extension-with-a-menu-command"></a>Création d’une Extension avec une commande de Menu  
+## <a name="create-an-extension-with-a-menu-command"></a>Créer une extension avec une commande de menu  
   
 1.  Créez un projet VSIX nommé `DynamicMenuItems`.  
   
-2.  Lorsque le projet s’ouvre, ajouter un modèle d’élément de commande personnalisée et nommez-le **DynamicMenu**. Pour plus d’informations, consultez [avec une commande de Menu pour créer une Extension](../extensibility/creating-an-extension-with-a-menu-command.md).  
+2.  Lorsque le projet s’ouvre, ajouter un modèle d’élément de commande personnalisée et nommez-le **DynamicMenu**. Pour plus d’informations, consultez [créer une extension avec une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-## <a name="setting-up-the-elements-in-the-vsct-file"></a>Les éléments de configuration dans le fichier .vsct  
+## <a name="setting-up-the-elements-in-the-vsct-file"></a>Configurer les éléments dans le *.vsct* fichier  
  Pour créer un contrôleur de menu avec des éléments de menu dynamiques dans une barre d’outils, vous spécifiez les éléments suivants :  
   
--   Deux groupes, celui qui contient le contrôleur de menu et une autre qui contient les éléments de menu dans la liste déroulante de commande  
+-   Deux groupes, celui qui contient le contrôleur de menu et une autre qui contient les éléments de menu dans la liste déroulante pour la commande  
   
 -   Un élément de menu de type `MenuController`  
   
 -   Deux boutons, qui agit comme l’espace réservé pour les éléments de menu et l’autre qui fournit l’icône et l’info-bulle dans la barre d’outils.  
   
-1.  Dans DynamicMenuPackage.vsct, définissez les ID de commande. Accédez à la section de symboles et remplacez les éléments IDSymbol dans les **guidDynamicMenuPackageCmdSet** GuidSymbol bloc. Vous devez définir les éléments de IDSymbol pour les deux groupes, le contrôleur de menu, la commande de l’espace réservé et la commande d’ancre.  
+1.  Dans *DynamicMenuPackage.vsct*, définissez les ID de commande. Accédez à la section Symbols et remplacez les éléments IDSymbol dans les **guidDynamicMenuPackageCmdSet** GuidSymbol bloc. Vous devez définir les éléments de IDSymbol pour les deux groupes, le contrôleur de menu, la commande de l’espace réservé et la commande d’ancrage.  
   
-    ```csharp  
+    ```xml  
     <GuidSymbol name="guidDynamicMenuPackageCmdSet" value="{ your GUID here }">  
         <IDSymbol name="MyToolbarItemGroup" value="0x1020" />  
         <IDSymbol name="MyMenuControllerGroup" value="0x1025" />  
@@ -61,9 +61,9 @@ Vous pouvez ajouter des éléments de menu au moment de l’exécution en spéci
     </GuidSymbol>    
     ```  
   
-2.  Dans la section groupes, supprimez les groupes existants et ajouter les deux groupes que vous venez de définir :  
+2.  Dans la section Groups, supprimez les groupes existants et ajouter les deux groupes que vous venez de définir :  
   
-    ```  
+    ```xml  
     <Groups>  
         <!-- The group that adds the MenuController on the Solution Explorer toolbar.   
              The 0x4000 priority adds this group after the group that contains the  
@@ -80,7 +80,7 @@ Vous pouvez ajouter des éléments de menu au moment de l’exécution en spéci
   
      Ajoutez le MenuController. Définissez l’indicateur de commande DynamicVisibility, car il n’est pas toujours visible. Le ButtonText n’est pas affichée.  
   
-    ```  
+    ```xml  
     <Menus>  
         <!-- The MenuController to display on the Solution Explorer toolbar.  
              Place it in the ToolbarItemGroup.-->  
@@ -94,13 +94,13 @@ Vous pouvez ajouter des éléments de menu au moment de l’exécution en spéci
     </Menus>  
     ```  
   
-3.  Ajoutez deux boutons, un espace réservé pour les éléments de menu dynamique et l’autre comme un point d’ancrage pour le MenuController.  
+3.  Ajoutez deux boutons, la valeur d’un espace réservé pour les éléments de menu dynamique et un comme point d’ancrage pour le MenuController.  
   
-     Le parent du bouton espace réservé est la **MyMenuControllerGroup**. Ajoutez les indicateurs de commande DynamicItemStart, DynamicVisibility et TextChanges au bouton espace réservé. Le ButtonText n’est pas affichée.  
+     Le parent du bouton d’espace réservé est la **MyMenuControllerGroup**. Ajouter les indicateurs de commande DynamicItemStart, DynamicVisibility et TextChanges au bouton de l’espace réservé. Le ButtonText n’est pas affichée.  
   
-     Le bouton d’ancrage conserve l’icône et le texte d’info-bulle. Le parent du bouton d’ancrage est également le **MyMenuControllerGroup**. Vous ajoutez l’indicateur de commande NoShowOnMenuController pour vous assurer que le bouton n’apparaît pas réellement dans le menu déroulant de contrôleur et l’indicateur de commande FixMenuController afin de faciliter l’ancre permanente.  
+     Le bouton d’ancrage conserve l’icône et le texte d’info-bulle. Le parent du bouton d’ancrage est également le **MyMenuControllerGroup**. Vous ajoutez l’indicateur de commande NoShowOnMenuController s’assurer que le bouton n’apparaît pas réellement dans la liste déroulante contrôleur de menu et l’indicateur de commande FixMenuController pour le rendre le point d’ancrage permanente.  
   
-    ```  
+    ```xml  
     <!-- The placeholder for the dynamic items that expand to N items at runtime. -->  
     <Buttons>  
         <Button guid="guidDynamicMenuPackageCmdSet" id="cmdidMyDynamicStartCommand" priority="0x1000" >  
@@ -131,21 +131,21 @@ Vous pouvez ajouter des éléments de menu au moment de l’exécution en spéci
     </Buttons>  
     ```  
   
-4.  Ajouter une icône au projet (dans le dossier de ressources), puis ajoutez la référence à celle-ci dans le fichier .vsct. Dans cette procédure pas à pas, nous utilisons l’icône de flèches qui est inclus dans le modèle de projet.  
+4.  Ajouter une icône au projet (dans le *ressources* dossier), puis ajoutez la référence à celle-ci dans le *.vsct* fichier. Dans cette procédure pas à pas, nous utilisons l’icône de flèches qui est inclus dans le modèle de projet.  
   
-5.  Ajoutez une section VisibilityConstraints en dehors de la section commandes juste avant la section de symboles. (Vous pouvez obtenir un avertissement si vous l’ajoutez après les symboles). Cette section permet de s’assurer que le contrôleur de menu s’affiche uniquement quand une solution avec plusieurs projets est chargée.  
+5.  Ajoutez une section VisibilityConstraints en dehors de la section Commands juste avant la section Symbols. (Vous pouvez obtenir un avertissement si vous l’ajoutez après les symboles). Cette section permet de s’assurer que le contrôleur de menu s’affiche uniquement quand une solution avec plusieurs projets est chargée.  
   
-    ```  
+    ```xml  
     <VisibilityConstraints>  
          <!--Make the MenuController show up only when there is a solution with more than one project loaded-->  
         <VisibilityItem guid="guidDynamicMenuPackageCmdSet" id="MyMenuController" context="UICONTEXT_SolutionHasMultipleProjects"/>  
     </VisibilityConstraints>  
     ```  
   
-## <a name="implementing-the-dynamic-menu-command"></a>Implémentation de la commande de menu dynamique  
+## <a name="implement-the-dynamic-menu-command"></a>Implémenter la commande de menu dynamique  
  Vous créez une classe de commande de menu dynamique qui hérite de <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>. Dans cette implémentation, le constructeur spécifie un prédicat à utiliser pour la correspondance des commandes. Vous devez substituer la <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> méthode à utiliser ce prédicat pour définir le <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> propriété, qui identifie la commande à appeler.  
   
-1.  Créer un nouveau fichier de classe c# nommé DynamicItemMenuCommand.cs et ajoutez une classe nommée **DynamicItemMenuCommand** qui hérite de <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>:  
+1.  Créer un nouveau fichier de classe c# nommé *DynamicItemMenuCommand.cs*, et ajoutez une classe nommée **DynamicItemMenuCommand** qui hérite de <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>:  
   
     ```csharp  
     class DynamicItemMenuCommand : OleMenuCommand  
@@ -155,7 +155,7 @@ Vous pouvez ajouter des éléments de menu au moment de l’exécution en spéci
   
     ```  
   
-2.  Ajoutez le code suivant à l’aide des instructions :  
+2.  Ajoutez le code suivant à l’aide d’instructions :  
   
     ```csharp  
     using Microsoft.VisualStudio.Shell;  
@@ -185,7 +185,7 @@ Vous pouvez ajouter des éléments de menu au moment de l’exécution en spéci
     }  
     ```  
   
-5.  Remplacer la <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> méthode afin qu’il appelle les correspondances de prédicat et définit le <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> propriété :  
+5.  Remplacer le <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> méthode afin qu’il appelle les correspondances de prédicat et définit le <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> propriété :  
   
     ```csharp  
     public override bool DynamicItemMatch(int cmdId)  
@@ -205,17 +205,17 @@ Vous pouvez ajouter des éléments de menu au moment de l’exécution en spéci
     }  
     ```  
   
-## <a name="adding-the-command"></a>Ajout de la commande  
+## <a name="add-the-command"></a>Ajoutez la commande  
  Le constructeur de DynamicMenu est où vous configurez des commandes de menu, y compris les menus dynamiques et des éléments de menu.  
   
-1.  Dans DynamicMenuPackage.cs, ajoutez le GUID du jeu de commandes et l’ID de commande :  
+1.  Dans *DynamicMenuPackage.cs*, ajoutez le GUID du jeu de commandes et l’ID de commande :  
   
     ```csharp  
     public const string guidDynamicMenuPackageCmdSet = "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file  
     public const uint cmdidMyCommand = 0x104;  
     ```  
   
-2.  Dans le fichier DynamicMenu.cs, ajoutez le code suivant à l’aide des instructions :  
+2.  Dans le *DynamicMenu.cs* de fichier, ajoutez le code suivant à l’aide d’instructions :  
   
     ```csharp  
     using EnvDTE;  
@@ -223,7 +223,7 @@ Vous pouvez ajouter des éléments de menu au moment de l’exécution en spéci
     using System.ComponentModel.Design;  
     ```  
   
-3.  Dans la classe de schéma, ajoutez un champ privé **dte2**.  
+3.  Dans le `DynamicMenu` classe, ajoutez un champ privé **dte2**.  
   
     ```csharp  
     private DTE2 dte2;  
@@ -263,10 +263,10 @@ Vous pouvez ajouter des éléments de menu au moment de l’exécution en spéci
     }  
     ```  
   
-## <a name="implementing-the-handlers"></a>Les gestionnaires de mise en œuvre  
- Pour implémenter des éléments de menu dynamique sur un contrôleur de menu, vous devez gérer la commande lorsque l’utilisateur clique sur un élément dynamique. Vous devez également implémenter la logique qui définit l’état de l’élément de menu. Ajouter les gestionnaires à la classe de schéma.  
+## <a name="implement-the-handlers"></a>Implémenter les gestionnaires  
+ Pour implémenter des éléments de menu dynamiques sur un contrôleur de menu, vous devez gérer la commande lorsque l’utilisateur clique sur un élément dynamique. Vous devez également implémenter la logique qui définit l’état de l’élément de menu. Ajoutez les gestionnaires pour les `DynamicMenu` classe.  
   
-1.  Pour implémenter le **définir un projet de démarrage** de commande, ajoutez le **OnInvokedDynamicItem** Gestionnaire d’événements. Il recherche le projet dont le nom est le même que le texte de la commande qui a été appelée et la définit comme projet de démarrage en définissant son chemin d’accès absolu dans le <xref:EnvDTE.SolutionBuild.StartupProjects%2A> propriété.  
+1.  Pour implémenter le **définir un projet de démarrage** commande, ajoutez le **OnInvokedDynamicItem** Gestionnaire d’événements. Il recherche le projet dont le nom est le même que le texte de la commande qui a été appelée et le définit comme projet de démarrage en définissant son chemin d’accès absolu dans le <xref:EnvDTE.SolutionBuild.StartupProjects%2A> propriété.  
   
     ```csharp  
     private void OnInvokedDynamicItem(object sender, EventArgs args)  
@@ -289,7 +289,7 @@ Vous pouvez ajouter des éléments de menu au moment de l’exécution en spéci
     }  
     ```  
   
-2.  Ajouter le `OnBeforeQueryStatusDynamicItem` Gestionnaire d’événements. Il s’agit du gestionnaire appelé avant une `QueryStatus` événement. Il détermine si l’élément de menu est un élément « real », autrement dit, pas l’élément d’espace réservé, et indique si l’élément est déjà activé (ce qui signifie que le projet est déjà défini comme projet de démarrage).  
+2.  Ajouter le `OnBeforeQueryStatusDynamicItem` Gestionnaire d’événements. Il s’agit du gestionnaire appelé avant une `QueryStatus` événement. Il détermine si l’élément de menu est un élément de « vraie », autrement dit, pas l’élément d’espace réservé, et indique si l’élément est déjà activé (ce qui signifie que le projet est déjà défini comme projet de démarrage).  
   
     ```csharp  
     private void OnBeforeQueryStatusDynamicItem(object sender, EventArgs args)  
@@ -319,9 +319,9 @@ Vous pouvez ajouter des éléments de menu au moment de l’exécution en spéci
     }  
     ```  
   
-## <a name="implementing-the-command-id-match-predicate"></a>Mise en œuvre le prédicat de correspondance d’ID commande  
+## <a name="implement-the-command-id-match-predicate"></a>Implémenter le prédicat de correspondance des ID de commande  
   
-1.  Désormais implémenter le prédicat de correspondance. Nous devons déterminer deux choses : tout d’abord, si l’ID de commande est valide (il est supérieur ou égal à l’ID de commande déclaré) et le second, si elle spécifie un projet (il est inférieur au nombre de projets dans la solution).  
+À présent implémenter le prédicat de correspondance. Nous devons déterminer deux choses : tout d’abord, si l’ID de commande est valide (il est supérieur ou égal à l’ID de commande déclaré) et le deuxième, si elle spécifie un projet possibles (il est inférieur au nombre de projets dans la solution).
   
     ```csharp  
     private bool IsValidDynamicItem(int commandId)  
@@ -333,8 +333,8 @@ Vous pouvez ajouter des éléments de menu au moment de l’exécution en spéci
     }  
     ```  
   
-## <a name="setting-the-vspackage-to-load-only-when-a-solution-has-multiple-projects"></a>Définir le VSPackage pour charger uniquement quand une solution comporte plusieurs projets  
- Étant donné que la **définir un projet de démarrage** commande n’a aucune signification, sauf si la solution active comporte plusieurs projets, vous pouvez définir votre VSPackage pour charger automatiquement que dans ce cas. Vous utilisez <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> ainsi que le contexte de l’interface utilisateur <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids.SolutionHasMultipleProjects>. Dans le fichier DynamicMenuPackage.cs ajouter les attributs suivants à la classe DynamicMenuPackage :  
+## <a name="set-the-vspackage-to-load-only-when-a-solution-has-multiple-projects"></a>Définir le VSPackage pour charger uniquement quand une solution avec plusieurs projets  
+ Étant donné que le **définir un projet de démarrage** commande n’est pas judicieux sauf si la solution active a plusieurs projets, vous pouvez définir votre VSPackage à charger automatiquement uniquement dans ce cas. Vous utilisez <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> ainsi que le contexte d’interface utilisateur <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids.SolutionHasMultipleProjects>. Dans le *DynamicMenuPackage.cs* fichier ajoutez les attributs suivants à la classe DynamicMenuPackage :  
   
 ```csharp  
 [PackageRegistration(UseManagedResourcesOnly = true)]  
@@ -346,7 +346,7 @@ public sealed class DynamicMenuItemsPackage : Package
 {}  
 ```  
   
-## <a name="testing-the-set-startup-project-command"></a>Test de la commande de définir un projet de démarrage  
+## <a name="test-the-set-startup-project-command"></a>Tester la commande de projet de démarrage de set  
  Vous pouvez maintenant tester votre code.  
   
 1.  Générez le projet et commencez le débogage. L’instance expérimentale doit apparaître.  
@@ -355,10 +355,10 @@ public sealed class DynamicMenuItemsPackage : Package
   
      Vous devez voir l’icône de flèche sur la **l’Explorateur de solutions** barre d’outils. Lorsque vous le développez, les éléments de menu qui représentent les différents projets dans la solution doivent apparaître.  
   
-3.  Lorsque vous activez un des projets, il devienne le projet de démarrage.  
+3.  Lorsque vous activez un des projets, il devient le projet de démarrage.  
   
-4.  Lorsque vous fermez la solution, ou que vous ouvrez une solution qui contient un seul projet, la barre d’outils doit disparaître.  
+4.  Lorsque vous fermez la solution, ou ouvrez une solution qui a un seul projet, l’icône de barre d’outils doit disparaître.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Commandes, Menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)   
- [Comment VSPackages ajoute des éléments de l’interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+ [Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)   
+ [Comment VSPackages ajoute des éléments d’interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
