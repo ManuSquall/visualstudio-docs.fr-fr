@@ -1,1 +1,0 @@
-Internet Explorer 3,0
