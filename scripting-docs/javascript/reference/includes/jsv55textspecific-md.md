@@ -1,1 +1,0 @@
-Internet Explorer 5,5
