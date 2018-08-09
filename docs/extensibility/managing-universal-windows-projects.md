@@ -1,5 +1,5 @@
 ---
-title: La gestion des projets Windows universel | Documents Microsoft
+title: Gestion de projets de Windows universelle | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,26 +11,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d251818d9fba0c025b94fa17611a725daad3cec8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77bc0df07520fd2ffab11054e4720bb50ee01903
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31147592"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637748"
 ---
-# <a name="managing-universal-windows-projects"></a>La gestion des projets Windows universel
-Les applications Windows universelles sont des applications qui ciblent Windows 8.1 et Windows Phone 8.1, permettant aux développeurs d’utiliser du code et autres ressources sur les deux plateformes. Le code partagé et les ressources sont conservés dans un projet partagé, tandis que le code spécifique à la plateforme et les ressources sont conservées dans des projets séparés, un pour Windows et l’autre pour Windows Phone. Pour plus d’informations sur les applications Windows universelles, consultez [les applications Windows universelles](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Les extensions Visual Studio qui gèrent les projets Sachez que les projets d’application Windows universelles ont une structure différente de celle à partir d’applications de plate-forme unique. Cette procédure pas à pas montre comment naviguer dans le projet partagé et de gérer les éléments partagés.  
+# <a name="manage-universal-windows-projects"></a>Gérer les projets Windows universel
+Les applications Windows universelles sont des applications qui ciblent Windows 8.1 et Windows Phone 8.1, ce qui permet aux développeurs d’utiliser le code et autres ressources sur les deux plateformes. Le code partagé et les ressources sont conservées dans un projet partagé, tandis que le code spécifique à la plateforme et les ressources sont conservés dans des projets distincts, un pour Windows et l’autre pour Windows Phone. Pour plus d’informations sur les applications Windows universelles, consultez [les applications Windows universelles](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Les extensions de Visual Studio qui gèrent les projets devraient être conscient que les projets d’application Windows universelles ont une structure qui diffère des applications de plateforme unique. Cette procédure pas à pas vous montre comment naviguer dans le projet partagé et de gérer les éléments partagés.  
   
 ## <a name="prerequisites"></a>Prérequis  
- À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme une fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS ultérieurement. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS par la suite. Pour plus d’informations, consultez [installer le SDK Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ### <a name="navigate-the-shared-project"></a>Parcourir le projet partagé  
   
-1.  Créez un projet VSIX c# nommé **TestUniversalProject**. (**Fichier, nouveau, projet** , puis **c#, d’extensibilité, de Package Visual Studio**). Ajouter un **commande personnalisée** modèle d’élément de projet (dans l’Explorateur de solutions, cliquez sur le nœud du projet et sélectionnez **Ajouter / nouvel élément**, puis accédez à **extensibilité**). Nommez le fichier **TestUniversalProject**.  
+1.  Créez un projet VSIX c# nommé **TestUniversalProject**. (**Fichier** > **nouveau** > **projet** , puis **c#**  >   **Extensibilité** > **Package Visual Studio**). Ajouter un **commande personnalisée** modèle d’élément de projet (sur le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **ajouter** > **un nouvel élément** , puis accédez à **extensibilité**). Nommez le fichier **TestUniversalProject**.  
   
-2.  Ajoutez une référence à Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll et Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll (dans le **Extensions** section).  
+2.  Ajoutez une référence à *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* et *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (dans le **Extensions** section).  
   
-3.  Ouvrez TestUniversalProject.cs et ajoutez le code suivant `using` instructions :  
+3.  Ouvrez *TestUniversalProject.cs* et ajoutez le code suivant `using` instructions :  
   
     ```csharp  
     using EnvDTE;  
@@ -43,7 +43,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
     using System.Windows.Forms;  
     ```  
   
-4.  Dans la classe TestUniversalProject, ajoutez un champ privé pointant vers le **sortie** fenêtre.  
+4.  Dans le `TestUniversalProject` classe ajouter un champ privé qui pointe vers le **sortie** fenêtre.  
   
     ```csharp  
     public sealed class TestUniversalProject   
@@ -53,7 +53,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
     }  
     ```  
   
-5.  Définir la référence dans le volet de sortie à l’intérieur du constructeur de TestUniversalProject :  
+5.  Définissez la référence dans le volet de sortie à l’intérieur du constructeur de TestUniversalProject :  
   
     ```csharp  
     private TestUniversalProject(Package package)  
@@ -86,7 +86,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
     }  
     ```  
   
-7.  Obtient l’objet DTE, que nous utiliserons pour plusieurs objectifs différents dans cette procédure pas à pas. En outre, assurez-vous qu’une solution est chargée lorsque l’utilisateur clique sur le bouton de menu.  
+7.  Obtenez l’objet DTE, que nous utiliserons pour plusieurs objectifs différents dans cette procédure pas à pas. En outre, assurez-vous qu’une solution est chargée de la suite d’un clic sur le bouton de menu.  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
@@ -104,7 +104,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
     }  
     ```  
   
-8.  Recherchez le projet partagé. Le projet partagé est un conteneur pur ; Il ne pas générer ou générer des sorties. La méthode suivante recherche le premier projet partagé dans la solution en recherchant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objet ayant la fonctionnalité de projet partagé.  
+8.  Recherchez le projet partagé. Le projet partagé est un conteneur pur ; Il ne pas créer ou produire des sorties. La méthode suivante recherche le premier projet partagé dans la solution en recherchant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objet qui a la possibilité de projet partagé.  
   
     ```csharp  
     private IVsHierarchy FindSharedProject()  
@@ -156,7 +156,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
     }  
     ```  
   
-10. Obtenir le projet pour la plateforme active. Les projets de plateforme sont les projets qui contiennent des ressources et code spécifique à la plateforme. La méthode suivante utilise le nouveau champ <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7> pour obtenir le projet pour la plateforme active.  
+10. Obtenir le projet de plateforme active. Projets de plateforme sont les projets qui contiennent des ressources et le code spécifique à la plateforme. La méthode suivante utilise le nouveau champ <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7> pour obtenir le projet de plateforme active.  
   
     ```csharp  
     private IVsHierarchy GetActiveProjectContext(IVsHierarchy hierarchy)  
@@ -217,7 +217,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
   
     ```  
   
-12. Parcourir les projets de plateforme. La méthode suivante obtient tous les projets (plate-forme) importation à partir du projet partagé.  
+12. Itérer dans les projets de plateforme. La méthode suivante obtient tous les projets (plate-forme) importation à partir du projet partagé.  
   
     ```csharp  
     private IEnumerable<IVsHierarchy> EnumImportingProjects(IVsHierarchy hierarchy)  
@@ -236,7 +236,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
     ```  
   
     > [!IMPORTANT]
-    >  Si l’utilisateur a ouvert un projet d’application Windows universels C++ dans l’instance expérimentale, le code ci-dessus lève une exception. Il s'agit d'un problème connu. Pour éviter l’exception, remplacez le `foreach` bloc ci-dessus avec les éléments suivants :  
+    >  Si l’utilisateur a ouvert un projet d’application Windows universelle C++ dans l’instance expérimentale, le code ci-dessus lève une exception. Il s'agit d'un problème connu. Pour éviter l’exception, remplacez la `foreach` block ci-dessus par le code suivant :  
   
     ```csharp  
     var importingProjects = sharedAssetsProject.EnumImportingProjects();  
@@ -262,7 +262,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
     }  
     ```  
   
-14. Modifier le projet pour la plateforme active. La méthode suivante définit le projet actif à l’aide de <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A>.  
+14. Modifier le projet de plateforme active. La méthode suivante définit le projet actif à l’aide <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A>.  
   
     ```csharp  
     private int SetActiveProjectContext(IVsHierarchy hierarchy, IVsHierarchy activeProjectContext)  
@@ -271,7 +271,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
     }  
     ```  
   
-15. Dans le `ShowMessageBox` (méthode), modifiez le projet pour la plateforme active. Insérez ce code à l’intérieur de la `foreach` bloc.  
+15. Dans le `ShowMessageBox` (méthode), modifiez le projet de plateforme active. Insérez ce code dans le `foreach` bloc.  
   
     ```csharp  
     bool isActiveProjectSet = false;  
@@ -294,7 +294,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
     output.OutputStringThreadSafe("set active project: " + platformCaption +'\n');  
     ```  
   
-16. Essayez maintenant. Appuyez sur F5 pour lancer l’instance expérimentale. Créer un projet d’application hub universelle C# dans l’instance expérimentale (dans le **nouveau projet** boîte de dialogue, **Visual C# / Windows / Windows 8 / universel / application Hub**). Une fois la solution est chargée, accédez à la **outils** menu et cliquez sur **TestUniversalProject d’appeler**, puis vérifiez le texte le **sortie** volet. Vous devez voir quelque chose comme suit :  
+16. Essayez maintenant. Appuyez sur F5 pour lancer l’instance expérimentale. Créer un projet d’application universelle hub c# dans l’instance expérimentale (dans le **nouveau projet** boîte de dialogue, **Visual C#** > **Windows**  >   **Windows 8** > **universelle** > **application Hub**). Une fois la solution est chargée, accédez à la **outils** menu et cliquez sur **TestUniversalProject appeler**, puis vérifiez le texte le **sortie** volet. Vous devriez voir quelque chose qui ressemble à ce qui suit :  
   
     ```  
     Found shared project: HubApp.Shared  
@@ -307,7 +307,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
   
 ### <a name="manage-the-shared-items-in-the-platform-project"></a>Gérer les éléments partagés dans le projet de plateforme  
   
-1.  Rechercher les éléments partagés dans le projet de plateforme. Les éléments dans le projet partagé apparaissent dans le projet pour la plateforme en tant qu’éléments partagés. Vous ne pouvez pas afficher dans le **l’Explorateur de solutions**, mais vous pouvez parcourir la hiérarchie de projet pour les retrouver. La méthode suivante présente la hiérarchie et collecte tous les éléments partagés. La légende de chaque élément, la sortie si vous le souhaitez. Les éléments partagés sont identifiés par la nouvelle propriété <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7>.  
+1.  Rechercher les éléments partagés dans le projet de plateforme. Les éléments dans le projet partagé s’affichent dans le projet de plateforme en tant qu’éléments partagés. Vous ne pouvez pas afficher ces journaux dans le **l’Explorateur de solutions**, mais vous pouvez parcourir la hiérarchie de projet pour les trouver. La méthode suivante parcourt la hiérarchie et collecte tous les éléments partagés. Si vous le souhaitez la légende de chaque élément, la sortie. Les éléments partagés sont identifiés par la nouvelle propriété <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7>.  
   
     ```csharp  
     private void InspectHierarchyItems(IVsHierarchy hier, uint itemid, int level, List<uint> itemIds, bool getSharedItems, bool printItems)  
@@ -339,7 +339,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
     }  
     ```  
   
-2.  Dans le `ShowMessageBox` (méthode), ajoutez le code suivant pour parcourir les éléments de hiérarchie de projet de plateforme. Insérez-le dans le `foreach` bloc.  
+2.  Dans le `ShowMessageBox` (méthode), ajoutez le code suivant pour guider les éléments de hiérarchie de projet de plateforme. Insérez-le dans le `foreach` bloc.  
   
     ```csharp  
     output.OutputStringThreadSafe("Walk the active platform project:\n");  
@@ -347,7 +347,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
     this.InspectHierarchyItems(activePlatformHier, (uint)VSConstants.VSITEMID.Root, 1, sharedItemIds, true, true);  
     ```  
   
-3.  Lire les éléments partagés. Les éléments partagés s’affichent dans le projet pour la plateforme en tant que fichiers liés masqués, et vous pouvez lire toutes les propriétés en tant que fichiers liés ordinaires. Le code suivant lit le chemin d’accès complet du premier élément partagé.  
+3.  Lire les éléments partagés. Les éléments partagés s’affichent dans le projet de plateforme en tant que fichiers liés masquées, et vous pouvez lire toutes les propriétés en tant que fichiers liés ordinaires. Le code suivant lit le chemin d’accès complet du premier élément partagé.  
   
     ```csharp  
     var sharedItemId = sharedItemIds[0];  
@@ -356,7 +356,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));  
     ```  
   
-4.  Essayez maintenant. Appuyez sur F5 pour lancer l’instance expérimentale. Créer un projet d’application hub universelle C# dans l’instance expérimentale (dans le **nouveau projet** boîte de dialogue, **Visual C# / Windows / Windows 8 / universel / application Hub**) accédez à la **outils** menu et cliquez sur **TestUniversalProject d’appeler**, puis vérifiez le texte le **sortie** volet. Vous devez voir quelque chose comme suit :  
+4.  Essayez maintenant. Appuyez sur **F5** pour lancer l’instance expérimentale. Créer un projet d’application universelle hub c# dans l’instance expérimentale (dans le **nouveau projet** boîte de dialogue, **Visual C#** > **Windows**  >   **Windows 8** > **universelle** > **application Hub**) accédez à la **outils** menu et cliquez sur **Invoke TestUniversalProject**, puis vérifiez le texte le **sortie** volet. Vous devriez voir quelque chose qui ressemble à ce qui suit :  
   
     ```  
     Found shared project: HubApp.Shared  
@@ -410,25 +410,25 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
                 SectionPage.xaml.cs  
     ```  
   
-### <a name="detecting-changes-in-platform-projects-and-shared-projects"></a>Détecter des modifications dans les projets de plateforme et de projets partagés  
+### <a name="detect-changes-in-platform-projects-and-shared-projects"></a>Détecter les modifications dans les projets de plateforme et de projets partagés  
   
-1.  Vous pouvez utiliser des événements de hiérarchie et de projet pour détecter des modifications dans les projets partagés, comme vous le faites pour les projets de plateforme. Toutefois, les éléments de projet dans le projet partagé ne sont pas visibles, ce qui signifie que certains événements ne se déclenchent pas lorsque des éléments de projet partagé sont modifiées.  
+1.  Vous pouvez utiliser des événements de hiérarchie et de projet pour détecter des modifications dans les projets partagés, comme vous pouvez le faire pour les projets de plateforme. Toutefois, les éléments de projet dans le projet partagé ne sont pas visibles, ce qui signifie que certains événements ne se déclenchent pas lorsque les éléments de projet partagé sont modifiés.  
   
-     Examinons la séquence des événements lorsqu’un fichier dans un projet est renommé.  
+     Examinez la séquence d’événements lorsqu’un fichier dans un projet est renommé :  
   
     1.  Le nom de fichier est modifié sur le disque.  
   
     2.  Le fichier projet est mis à jour pour inclure le nouveau nom du fichier.  
   
-     Événements de la hiérarchie (par exemple, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>) généralement le suivi des modifications affichées dans l’interface utilisateur, comme dans le **l’Explorateur de solutions**. Événements de prendre en compte une opération de changement de nom de fichier se compose d’une suppression de fichiers, puis un ajout de fichier. Toutefois, lorsque les éléments invisibles sont modifiés, le système d’événements hiérarchie déclenche un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> événements mais pas une <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> événement. Par conséquent, si vous renommez un fichier dans un projet de plateforme, vous obtenez deux <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>, mais si vous renommez un fichier dans un projet partagé, vous obtenez uniquement <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>.  
+     Événements de hiérarchie (par exemple, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>) généralement le suivi des modifications affichées dans l’interface utilisateur, comme dans le **l’Explorateur de solutions**. Événements de hiérarchie prendre en compte une opération de changement de nom de fichier se composer d’une suppression de fichier, puis un ajout de fichier. Toutefois, lorsque les éléments invisibles sont modifiés, le système d’événements de hiérarchie déclenche une <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> événement mais pas un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> événement. Par conséquent, si vous renommez un fichier dans un projet de plateforme, vous obtenez deux <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>, mais si vous renommez un fichier dans un projet partagé, vous obtenez uniquement <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>.  
   
-     Pour effectuer le suivi des modifications dans les éléments de projet, vous pouvez gérer les événements d’élément de projet DTE (ceux trouvés dans <xref:EnvDTE.ProjectItemsEventsClass>). Toutefois, si vous gérez un grand nombre d’événements, vous pouvez obtenir de meilleures performances, la gestion des événements dans <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>. Dans cette procédure pas à pas, nous affichons uniquement les événements de la hiérarchie et les événements DTE. Dans cette procédure vous ajoutez un écouteur d’événements à un projet partagé et un projet de plateforme. Ensuite, lorsque vous renommez un fichier dans un projet partagé et un autre dans un projet de plateforme, vous pouvez voir les événements qui sont déclenchés pour chaque opération de changement de nom.  
+     Pour effectuer le suivi des modifications dans les éléments de projet, vous pouvez gérer les événements d’élément de projet DTE (ceux trouvés dans <xref:EnvDTE.ProjectItemsEventsClass>). Toutefois, si vous gérez un grand nombre d’événements, vous pouvez obtenir de meilleures performances, gestion des événements dans <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>. Dans cette procédure pas à pas, nous montrons uniquement les événements de la hiérarchie et les événements DTE. Dans cette procédure, vous ajoutez un écouteur d’événements à un projet partagé et un projet de plateforme. Ensuite, lorsque vous renommez un fichier dans un projet partagé et un autre fichier dans un projet de plateforme, vous pouvez voir les événements qui sont déclenchés pour chaque opération de changement de nom.  
   
-     Dans cette procédure vous ajoutez un écouteur d’événements à un projet partagé et un projet de plateforme. Ensuite, lorsque vous renommez un fichier dans un projet partagé et un autre dans un projet de plateforme, vous pouvez voir les événements qui sont déclenchés pour chaque opération de changement de nom.  
+     Dans cette procédure, vous ajoutez un écouteur d’événements à un projet partagé et un projet de plateforme. Ensuite, lorsque vous renommez un fichier dans un projet partagé et un autre fichier dans un projet de plateforme, vous pouvez voir les événements qui sont déclenchés pour chaque opération de changement de nom.  
   
-2.  Ajouter un écouteur d’événements. Ajouter un nouveau fichier de classe au projet et appelez-le HierarchyEventListener.cs.  
+2.  Ajouter un écouteur d’événements. Ajoutez un nouveau fichier de classe au projet et appelez-la *HierarchyEventListener.cs*.  
   
-3.  Ouvrez le fichier HierarchyEventListener.cs et ajoutez le code suivant à l’aide des instructions :  
+3.  Ouvrez le *HierarchyEventListener.cs* fichier et ajoutez le code suivant à l’aide d’instructions :  
   
     ```csharp  
     using Microsoft.VisualStudio.Shell.Interop;  
@@ -437,7 +437,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
   
     ```  
   
-4.  Avoir le `HierarchyEventListener` mettre en œuvre de la classe <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>:  
+4.  Avoir le `HierarchyEventListener` implémentent <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>:  
   
     ```csharp  
     class HierarchyEventListener : IVsHierarchyEvents  
@@ -489,7 +489,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
   
     ```  
   
-6.  Dans la même classe, ajoutez un autre gestionnaire d’événements pour l’événement DTE <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>, qui se produit chaque fois qu’un élément de projet est renommé.  
+6.  Dans la même classe, ajoutez un autre gestionnaire d’événements pour l’événement DTE <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>, ce qui se produit chaque fois qu’un élément de projet est renommé.  
   
     ```csharp  
     public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)  
@@ -499,7 +499,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
     }  
     ```  
   
-7.  Inscrivez-vous pour les événements de la hiérarchie. Vous devez inscrire séparément pour chaque projet que vous effectuez le suivi. Ajoutez le code suivant dans `ShowMessageBox`, une pour le projet partagé et l’autre pour un des projets de plateforme.  
+7.  Inscrivez-vous pour les événements de hiérarchie. Vous devez vous inscrire séparément pour chaque projet que vous effectuez le suivi. Ajoutez le code suivant dans `ShowMessageBox`, un pour le projet partagé et l’autre pour un des projets de plateforme.  
   
     ```csharp  
     // hook up the event listener for hierarchy events on the shared project  
@@ -514,7 +514,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
     activePlatformHier.AdviseHierarchyEvents(listener2, out cookie2);  
     ```  
   
-8.  S’inscrire pour l’événement d’élément de projet DTE <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>. Ajoutez le code suivant, une fois que vous raccordez le deuxième port d’écoute.  
+8.  S’inscrire pour l’événement d’élément de projet DTE <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>. Ajoutez le code suivant, une fois que vous raccorder le deuxième écouteur.  
   
     ```csharp  
     // hook up DTE events for project items  
@@ -523,10 +523,10 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
   
     ```  
   
-9. Modifier l’élément partagé. Vous ne pouvez pas modifier les éléments partagés dans un projet de plateforme. au lieu de cela, vous devez les modifier dans le projet partagé qui est le propriétaire réel de ces éléments. Vous pouvez obtenir l’ID d’élément correspondant dans le projet partagé avec <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>, en lui donnant un chemin d’accès complet de l’élément partagé. Vous pouvez ensuite modifier l’élément partagé. La modification est propagée vers les projets de plateforme.  
+9. Modifier l’élément partagé. Vous ne pouvez pas modifier les éléments partagés dans un projet de plateforme. au lieu de cela, vous devez les modifier dans le projet partagé qui est le propriétaire réel de ces éléments. Vous pouvez obtenir l’ID d’élément correspondant dans le projet partagé avec <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>, en lui attribuant un chemin d’accès complet de l’élément partagé. Vous pouvez ensuite modifier l’élément partagé. La modification est propagée vers les projets de plateforme.  
   
     > [!IMPORTANT]
-    >  Vous devez rechercher ou non un élément de projet est un élément partagé avant de le modifier.  
+    >  Vous devez rechercher si un élément de projet est un élément partagé avant de le modifier.  
   
      La méthode suivante modifie le nom d’un fichier d’élément de projet.  
   
@@ -546,7 +546,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
     }  
     ```  
   
-10. Appelez cette méthode une fois tous les autres codes de `ShowMessageBox` pour modifier le nom de fichier l’élément dans le projet partagé. Insérez ce après le code qui obtient le chemin d’accès complet de l’élément dans le projet partagé.  
+10. Appelez cette méthode une fois toutes les autres codes de `ShowMessageBox` pour modifier le nom du fichier l’élément dans le projet partagé. Insérez ceci après le code qui obtient le chemin d’accès complet de l’élément dans le projet partagé.  
   
     ```csharp  
     // change the file name of an item in a shared project  
@@ -556,9 +556,9 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
     this.ModifyFileNameInProject(sharedHier, fullPath);  
     ```  
   
-11. Générez et exécutez le projet. Créer une application hub universelle C# dans l’instance expérimentale, accédez à la **outils** menu et cliquez sur **TestUniversalProject d’appeler**et vérifiez le texte dans le volet de sortie générale. Le nom du premier élément dans le partage de projet (nous espérons qu’il soit le fichier App.xaml) doit être modifié, et vous devez voir que la <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> événement a été déclenché. Dans ce cas, étant donné que renommer App.xaml provoque App.xaml.cs à renommer ainsi, vous devez voir les quatre événements (deux pour chaque projet de plateforme). (Les événements DTE ne suivent pas les éléments dans le projet partagé.) Vous devez voir deux <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> événements (une pour chacun des projets de plateforme), mais aucun <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> événements.  
+11. Générez et exécutez le projet. Créer une application de hub universel c# dans l’instance expérimentale, accédez à la **outils** menu et cliquez sur **TestUniversalProject appeler**et vérifiez le texte dans le volet de sortie général. Le nom du premier élément dans le projet partagé (il doit être le *App.xaml* fichier) doit être modifiée, et vous devez voir que le <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> événement a été déclenché. Dans ce cas, depuis la modification du nom *App.xaml* provoque *App.xaml.cs* pour être également renommé, vous devez voir quatre événements (deux pour chaque projet de plateforme). (Les événements DTE ne pas me suivre les éléments dans le projet partagé.) Vous devriez voir deux <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> événements (une pour chacun des projets de plateforme), mais pas <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> événements.  
   
-12. Maintenant essayer de renommer un fichier dans un projet de plateforme, et vous pouvez voir la différence dans les événements qui sont déclenchées. Ajoutez le code suivant dans `ShowMessageBox` après l’appel à `ModifyFileName`.  
+12. Maintenant essayez de renommer un fichier dans un projet de plateforme, et vous pouvez voir la différence dans les événements qui sont déclenchées. Ajoutez le code suivant dans `ShowMessageBox` après l’appel à `ModifyFileName`.  
   
     ```csharp  
     // change the file name of an item in a platform project  
@@ -573,4 +573,4 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
     this.ModifyFileNameInProject(activePlatformHier, unsharedPath);  
     ```  
   
-13. Générez et exécutez le projet. Créer un projet c# universel dans l’instance expérimentale, accédez à la **outils** menu et cliquez sur **TestUniversalProject d’appeler**et vérifiez le texte dans le volet de sortie générale. Après avoir renommé le fichier dans le projet de plateforme, vous devez voir les deux une <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> événement et un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> événement. Parce que la modification du fichier à l’origine aucun autre fichier à modifier dans la mesure où les modifications apportées aux éléments dans un projet de plateforme n’obtenir propagées n’importe où, il est donc seulement chacune de ces événements.
+13. Générez et exécutez le projet. Créer un projet universel c# dans l’instance expérimentale, accédez à la **outils** menu et cliquez sur **TestUniversalProject appeler**et vérifiez le texte dans le volet de sortie général. Une fois que le fichier dans le projet de plateforme est renommé, vous devez voir les deux un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> événement et un <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> événement. Parce que la modification du fichier à l’origine aucun autre fichier à modifier, et dans la mesure où les modifications apportées aux éléments dans un projet de plateforme ne sont propagées de n’importe où, il existe un seul chaque de ces événements.

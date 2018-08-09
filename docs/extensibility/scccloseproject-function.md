@@ -1,5 +1,5 @@
 ---
-title: Fonction de SccCloseProject | Documents Microsoft
+title: Fonction SccCloseProject | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f977c1241408f5e33d31a63262abb5ee24670e5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 49d3196fbe2eb6c3bafa1ec234e27072e50a4b7d
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31145114"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636023"
 ---
-# <a name="scccloseproject-function"></a>SccCloseProject (fonction)
-Cette fonction ferme un projet, marquant la fin d’une session particulière.  
+# <a name="scccloseproject-function"></a>Fonction SccCloseProject
+Cette fonction ferme un projet, en marquant la fin d’une session particulière.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -33,9 +33,9 @@ SCCRTN SccCloseProject (
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+### <a name="parameters"></a>Paramètres  
  pvContext  
- La structure de contexte plug-in de contrôle de code source.  
+ La structure de contexte de plug-in de contrôle de source.  
   
 ## <a name="return-value"></a>Valeur de retour  
  L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
@@ -48,9 +48,9 @@ SCCRTN SccCloseProject (
 |SCC_E_NONSPECIFICERROR|Erreur non spécifique.|  
   
 ## <a name="remarks"></a>Notes  
- Le [SccOpenProject](../extensibility/sccopenproject-function.md) est toujours appelée avant cette fonction. Un appel à cette fonction est ensuite suivi d’un appel à la `SccOpenProject` fonction ou le [SccUninitialize](../extensibility/sccuninitialize-function.md), qui termine complètement la connexion au système de contrôle de code source.  
+ Le [SccOpenProject](../extensibility/sccopenproject-function.md) est toujours appelée avant cette fonction. Un appel à cette fonction est ensuite suivi par un appel à la `SccOpenProject` (fonction) ou le [SccUninitialize](../extensibility/sccuninitialize-function.md), qui termine complètement la connexion au système de contrôle source.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Fonctions d’API de plug-in de contrôle de source](../extensibility/source-control-plug-in-api-functions.md)   
+ [Fonctions d’API source contrôle plug-in](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)

@@ -1,5 +1,5 @@
 ---
-title: ProjectSubType, élément (modèles Visual Studio) | Documents Microsoft
+title: ProjectSubType, élément (modèles Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,14 +16,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4414d5f444613996312978e9033145c6b8d3d82
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 46b110acd20659dcd1660e4ce92897b1c78171bb
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138998"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636140"
 ---
-# <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType, élément (modèles Visual Studio)
+# <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType, élément (modèles Visual Studio)
 Classe le modèle dans une sous-catégorie de la valeur spécifiée dans le `ProjectType` élément.  
   
  \<VSTemplate >  
@@ -32,7 +32,7 @@ Classe le modèle dans une sous-catégorie de la valeur spécifiée dans le `Pro
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
 <ProjectSubType> SubType </ProjectSubType>  
 ```  
   
@@ -61,18 +61,18 @@ Classe le modèle dans une sous-catégorie de la valeur spécifiée dans le `Pro
   
  Le `ProjectSubType` élément fournit une sous-catégorie à la [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) élément. Cette valeur peut inclure :  
   
--   `SmartDevice-NETCFv1`: Spécifie que le modèle concerne la [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] version 1.0.  
+-   `SmartDevice-NETCFv1`: Spécifie que le modèle cible le [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] version 1.0.  
   
--   `SmartDevice-NETCFv2`: Spécifie que le modèle concerne la [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] version 2.0.  
+-   `SmartDevice-NETCFv2`: Spécifie que le modèle cible le [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] version 2.0.  
   
- Si un modèle contient un `ProjectType` élément avec la valeur `Web`, le `ProjectSubType` élément spécifie le langage de programmation du modèle. Cet élément peut avoir les valeurs suivantes :  
+ Si un modèle contient un `ProjectType` élément avec une valeur de `Web`, le `ProjectSubType` élément spécifie le langage de programmation du modèle. Cet élément peut avoir les valeurs suivantes :  
   
 -   `CSharp`: Spécifie que le modèle crée un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projet Web ou un élément.  
   
 -   `VisualBasic`: Spécifie que le modèle crée un [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projet Web ou un élément.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant affiche les métadonnées d’un modèle de projet pour un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] appareil ciblage de l’application le [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] version 2.0.  
+ L’exemple suivant montre les métadonnées d’un modèle de projet pour un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] appareil application ciblant le [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] version 2.0.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -100,6 +100,6 @@ Classe le modèle dans une sous-catégorie de la valeur spécifiée dans le `Pro
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Référence de schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
- [Élément ProjectType (modèles Visual Studio)](../extensibility/projecttype-element-visual-studio-templates.md)
+ [ProjectType, élément (modèles Visual Studio)](../extensibility/projecttype-element-visual-studio-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: MenuCommands Vs. OleMenuCommands | Documents Microsoft
+title: MenuCommands Vs. OleMenuCommands | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-sdk
@@ -10,32 +10,32 @@ helpviewer_keywords:
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 manager: douge
-ms.openlocfilehash: 47ec8bd549f8f5093a7035f37ad728c1e245e3b9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2567b0a5a5db1d57abba8c00255f1598f0ac9bad
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31147188"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637797"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands Vs. OleMenuCommands
-Vous pouvez créer des commandes de menu en dérivant de <xref:System.ComponentModel.Design.MenuCommand> ou de l’objet <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> et en implémentant les gestionnaires d’événements appropriés. Dans la plupart des cas, vous pouvez utiliser <xref:System.ComponentModel.Design.MenuCommand>, à l’instar du modèle de projet VSPackage, mais vous pouvez parfois être amené à utiliser <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
+Vous pouvez créer des commandes de menu en dérivant de <xref:System.ComponentModel.Design.MenuCommand> ou à partir de <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> de l’objet et l’implémentation de gestionnaires d’événements appropriés. Dans la plupart des cas, vous pouvez utiliser <xref:System.ComponentModel.Design.MenuCommand>, à l’instar du modèle de projet VSPackage, mais vous pouvez parfois être amené à utiliser <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
   
- Les commandes qu’un VSPackage met à la disposition de l’IDE doivent être visibles et activées avant qu’un utilisateur puisse les utiliser. Quand elles sont créées dans un fichier .vsct à l’aide du modèle de projet de package Visual Studio, les commandes sont visibles et activées par défaut. Le fait de définir des indicateurs de commande, tels que `DynamicItemStart`, peut modifier le comportement par défaut. La visibilité, l’état activé et les autres propriétés d’une commande peuvent aussi être modifiés dans le code au moment de l’exécution en accédant à l’objet <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> associé à la commande.  
+ Les commandes qu’un VSPackage met à la disposition de l’IDE doivent être visibles et activées avant qu’un utilisateur puisse les utiliser. Lorsque les commandes sont créés dans un *.vsct* fichier en utilisant le modèle de projet de Package Visual Studio, ils sont visibles et activées par défaut. Le fait de définir des indicateurs de commande, tels que `DynamicItemStart`, peut modifier le comportement par défaut. La visibilité, l’état activé et les autres propriétés d’une commande peuvent aussi être modifiés dans le code au moment de l’exécution en accédant à l’objet <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> associé à la commande.  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
-## <a name="template-locations-for-the-visual-studio-package-template"></a>Emplacements du modèle de projet de package Visual Studio  
- Vous pouvez trouver le modèle de package Visual Studio dans la boîte de dialogue **Nouveau projet** sous **Visual Basic / Extensibilité**, **C# / Extensibilité**ou **Autres types de projets / Extensibilité**.  
+## <a name="template-locations-for-the-visual-studio-package-template"></a>Emplacements des modèles pour le modèle de package Visual Studio  
+ Vous pouvez trouver le modèle de Package Visual Studio dans le **nouveau projet** boîte de dialogue sous **Visual Basic** > **extensibilité**  >  **C#** > **extensibilité**, ou **autres Types de projets** > **extensibilité**.  
   
-## <a name="creating-a-command"></a>Création d’une commande  
- L’ensemble des commandes, groupes de commandes, menus, barres d’outils et fenêtres Outil sont définis dans le fichier .vsct. Pour plus d'informations, consultez [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+## <a name="create-a-command"></a>Créer une commande  
+ Toutes les commandes, groupes de commandes, menus, barres d’outils et fenêtres Outil sont définis dans le *.vsct* fichier. Pour plus d’informations, consultez [fichiers Visual Studio command table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
- Si vous créez un VSPackage à l’aide du modèle de package, sélectionnez **Commande de menu** pour créer un fichier .vsct et définir une commande de menu par défaut. Pour plus d’informations, consultez [avec une commande de Menu pour créer une Extension](../extensibility/creating-an-extension-with-a-menu-command.md).  
+ Si vous créez un VSPackage à l’aide du modèle de package, sélectionnez **commande de Menu** pour créer un *.vsct* de fichiers et de définir une commande de menu par défaut. Pour plus d’informations, consultez [créer une extension avec une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-#### <a name="to-add-a-command-to-the-ide"></a>Pour ajouter une commande à l’IDE  
+### <a name="to-add-a-command-to-the-ide"></a>Pour ajouter une commande à l’IDE  
   
-1.  Ouvrez le fichier .vsct.  
+1.  Ouvrez le *.vsct* fichier.  
   
 2.  Dans la section `Symbols` , recherchez l’élément [GuidSymbol](../extensibility/guidsymbol-element.md) qui contient les groupes et les commandes.  
   
@@ -75,11 +75,11 @@ Vous pouvez créer des commandes de menu en dérivant de <xref:System.ComponentM
   
          Si vous omettez l’attribut `priority` , la valeur 0 lui est affectée.  
   
-    3.  Définissez l’attribut `type` . Dans la plupart des cas, sa valeur est `"Button"`. Pour obtenir une description des autres types de boutons valides, consultez [Button Element](../extensibility/button-element.md).  
+    3.  Définissez l’attribut `type` . Dans la plupart des cas, sa valeur est `"Button"`. Pour obtenir une description des autres types de boutons valides, consultez [élément Button](../extensibility/button-element.md).  
   
 5.  Dans la définition du bouton, créez un élément [Strings](../extensibility/strings-element.md) contenant un élément [ButtonText](../extensibility/buttontext-element.md) . Celui-ci contiendra le nom du menu tel qu’il apparaîtra dans l’IDE. Créez ensuite un élément [CommandName](../extensibility/commandname-element.md) qui contiendra le nom de la commande utilisé pour accéder au menu de la fenêtre **Commande** .  
   
-     Si la chaîne de texte du bouton inclut le caractère « & », l’utilisateur peut ouvrir le menu en appuyant sur ALT puis sur le caractère qui suit « & ».  
+     Si la chaîne de texte du bouton inclut le caractère « & », l’utilisateur peut ouvrir le menu en appuyant sur **Alt** ainsi que le caractère qui suit immédiatement le '&'.  
   
      L’ajout d’un élément `Tooltip` fait apparaître le texte qu’il contient quand un utilisateur place le pointeur sur le bouton.  
   
@@ -120,11 +120,11 @@ Vous pouvez créer des commandes de menu en dérivant de <xref:System.ComponentM
   
          Si vous créez plusieurs placements de commandes et que leur paire GUID:ID est identique mais pas les parents, le menu apparaît à plusieurs endroits. Pour plus d’informations, consultez l’élément [CommandPlacements](../extensibility/commandplacements-element.md) .  
   
-     Pour plus d’informations sur les groupes de commandes et le parentage, consultez [création de groupes réutilisable de boutons](../extensibility/creating-reusable-groups-of-buttons.md).  
+     Pour plus d’informations sur les groupes de commandes et le parentage, consultez [créer des groupes de boutons réutilisables](../extensibility/creating-reusable-groups-of-buttons.md).  
   
  À ce stade, la commande est visible dans l’IDE, mais elle n’a aucune fonctionnalité. Si la commande a été créée par le modèle de package, par défaut, elle a un gestionnaire de clics qui affiche un message.  
   
-## <a name="handling-the-new-command"></a>Gestion de la nouvelle commande  
+## <a name="handle-the-new-command"></a>Handle de la nouvelle commande  
  La plupart des commandes présentes dans du code managé peuvent être gérées par MPF (Managed Package Framework) en les associant à un objet <xref:System.ComponentModel.Design.MenuCommand> ou <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> et en implémentant leurs gestionnaires d’événements.  
   
  Pour le code qui utilise directement l’interface <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> pour la gestion des commandes, vous devez implémenter l’interface <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> et ses méthodes. Les deux méthodes les plus importants sont <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> et <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>.  
@@ -172,7 +172,7 @@ Vous pouvez créer des commandes de menu en dérivant de <xref:System.ComponentM
   
 6.  Implémentez la méthode qui gère la commande.  
   
-#### <a name="to-implement-querystatus"></a>Pour implémenter QueryStatus  
+### <a name="to-implement-querystatus"></a>Pour implémenter QueryStatus  
   
 1.  L’événement QueryStatus se produit avant l’affichage d’une commande. Les propriétés de cette commande peuvent ainsi être définies dans le gestionnaire d’événements avant d’atteindre l’utilisateur. Seules les commandes ajoutées en tant qu’objets <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> peuvent accéder à cette méthode.  
   
@@ -198,14 +198,14 @@ Vous pouvez créer des commandes de menu en dérivant de <xref:System.ComponentM
   
  MPF gère automatiquement le cas des groupes non pris en charge ou inconnus. À moins qu’une commande ait été ajoutée à <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> à l’aide de la méthode <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> , la commande n’est pas prise en charge.  
   
-### <a name="handling-commands-by-using-the-iolecommandtarget-interface"></a>Gestion des commandes à l’aide de l’interface IOleCommandTarget  
+### <a name="handle-commands-by-using-the-iolecommandtarget-interface"></a>Commandes de handle à l’aide de l’interface IOleCommandTarget  
  Pour le code qui utilise directement l’interface <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> , le VSPackage doit implémenter les méthodes <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> et <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> de l’interface <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> . Si le VSPackage implémente une hiérarchie de projet, les méthodes <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> de l’interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> doivent être implémentées à leur place.  
   
- Les méthodes <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> et <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> ont toutes deux été conçues pour recevoir un seul `GUID` de jeu de commandes et un tableau d’ID de commandes en entrée. Il est préférable que les VSPackages prennent entièrement en charge ce concept d’ID multiples dans un même appel. Cependant, tant qu’un VSPackage n’est pas appelé à partir d’autres packages VS, vous pouvez considérer que le tableau de commandes ne contient qu’un seul ID de commande, car les méthodes <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> et <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> sont exécutées dans un ordre bien défini. Pour plus d’informations sur le routage, consultez [routage des commandes dans des VSPackages](../extensibility/internals/command-routing-in-vspackages.md).  
+ Les méthodes <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> et <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> ont toutes deux été conçues pour recevoir un seul `GUID` de jeu de commandes et un tableau d’ID de commandes en entrée. Il est préférable que les VSPackages prennent entièrement en charge ce concept d’ID multiples dans un même appel. Cependant, tant qu’un VSPackage n’est pas appelé à partir d’autres packages VS, vous pouvez considérer que le tableau de commandes ne contient qu’un seul ID de commande, car les méthodes <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> et <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> sont exécutées dans un ordre bien défini. Pour plus d’informations sur le routage, consultez [routage des commandes dans VSPackages](../extensibility/internals/command-routing-in-vspackages.md).  
   
  Pour le code qui utilise directement l’interface <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> pour la gestion des commandes, vous devez implémenter la méthode <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> dans le VSPackage comme indiqué ci-dessous pour gérer les commandes.  
   
-##### <a name="to-implement-the-querystatus-method"></a>Pour implémenter la méthode QueryStatus  
+#### <a name="to-implement-the-querystatus-method"></a>Pour implémenter la méthode QueryStatus  
   
 1.  Retournez <xref:Microsoft.VisualStudio.VSConstants.S_OK> pour les commandes valides.  
   
@@ -247,14 +247,14 @@ Vous pouvez créer des commandes de menu en dérivant de <xref:System.ComponentM
   
  L’implémentation VSPackage de la méthode <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> doit aussi retourner des codes d’erreur spécifiques, selon que la commande est prise en charge et qu’elle a été gérée correctement.  
   
-##### <a name="to-implement-the-exec-method"></a>Pour implémenter la méthode Exec  
+#### <a name="to-implement-the-exec-method"></a>Pour implémenter la méthode Exec  
   
 -   Si la commande `GUID` est inconnue, retournez `OLECMDERR_E_UNKNOWNGROUP`.  
   
 -   Si le `GUID` est connu, mais que l’ID de commande est inconnu, retournez `OLECMDERR_E_NOTSUPPORTED`.  
   
--   Si le `GUID` et l’ID de commande correspond à la paire GUID:ID utilisée par la commande dans le fichier .vsct, exécutez le code associé à la commande et retournez <xref:Microsoft.VisualStudio.VSConstants.S_OK>.  
+-   Si le `GUID` et ID de commande correspond à la paire GUID : ID qui est utilisée par la commande dans le *.vsct* de fichiers, exécutez le code qui est associé à la commande et retournez <xref:Microsoft.VisualStudio.VSConstants.S_OK>.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence du schéma XML de VSCT](../extensibility/vsct-xml-schema-reference.md)   
- [Extension des menus et des commandes](../extensibility/extending-menus-and-commands.md)
+ [Référence du schéma XML VSCT](../extensibility/vsct-xml-schema-reference.md)   
+ [Étendre des menus et commandes](../extensibility/extending-menus-and-commands.md)

@@ -1,5 +1,5 @@
 ---
-title: Managed Extensibility Framework dans l’éditeur | Documents Microsoft
+title: Managed Extensibility Framework dans l’éditeur | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,39 +13,39 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91b507893cf2d17b9885944a766c9c9a8c084a7a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a8d107b1b55808149f480629b8a06f981598a992
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141647"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638604"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Managed Extensibility Framework dans l’éditeur
 L’éditeur est généré à l’aide des composants de Managed Extensibility Framework (MEF). Vous pouvez créer vos propres composants MEF pour étendre l’éditeur, et votre code peut consommer des composants de l’éditeur ainsi.  
   
 ## <a name="overview-of-the-managed-extensibility-framework"></a>Vue d’ensemble de Managed Extensibility Framework  
- MEF est une bibliothèque .NET qui vous permet d’ajouter et modifier les fonctionnalités d’une application ou un composant qui suit le modèle de programmation MEF. L’éditeur Visual Studio peut les fournir et consommer des composants MEF.  
+ MEF est une bibliothèque .NET qui vous permet d’ajouter et modifier les fonctionnalités d’une application ou un composant qui suit le modèle de programmation MEF. L’éditeur Visual Studio peut fournir et consommer des composants MEF.  
   
- MEF est contenu dans l’assembly de System.ComponentModel.Composition.dll de .NET Framework version 4.  
+ MEF est contenu dans le .NET Framework version 4 *System.ComponentModel.Composition.dll* assembly.  
   
  Pour plus d’informations sur MEF, consultez [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).  
   
-### <a name="component-parts-and-composition-containers"></a>Composants et les conteneurs de Composition  
+### <a name="component-parts-and-composition-containers"></a>Composants et conteneurs de composition  
  Un composant est une classe ou un membre d’une classe qui peut effectuer une des opérations suivantes (ou les deux) :  
   
 -   Utiliser un autre composant  
   
--   Être consommée par un autre composant  
+-   Être consommé par un autre composant  
   
- Par exemple, considérez une application d’achat qui a un composant d’entrée de commande qui dépend des données de disponibilité de produit fournies par un composant de l’inventaire de l’entrepôt. En termes MEF, la partie de l’inventaire peut *exporter* les données de disponibilité de produit et les parties peuvent être commande entrée *importer* les données. La partie entrée de commande et de la partie de l’inventaire n’ont pas connaissance de l’autre ; le *conteneur de composition* (fourni par l’application hôte) est chargé de maintenance de l’ensemble d’exportations et la résolution des exportations et importations.  
+ Par exemple, considérez une application d’achat qui a un composant d’entrée de commande qui dépend des données de disponibilité de produit fournies par un composant de stock d’entrepôt. En termes MEF, la partie de l’inventaire peut *exporter* les données de disponibilité de produit et le peut de partie commande entrée *importer* les données. La partie entrée de commande et la partie de l’inventaire n’ont pas à connaître sur les autres ; le *conteneur de composition* (fourni par l’application hôte) est responsable en conservant le jeu d’exportations et la résolution des exportations et importations.  
   
  Le conteneur de composition, <xref:System.ComponentModel.Composition.Hosting.CompositionContainer>, est généralement détenus par l’hôte. Le conteneur de composition conserve un *catalogue* composants exporté.  
   
-### <a name="exporting-and-importing-component-parts"></a>Exportation et importation de composants  
- Vous pouvez exporter toutes les fonctionnalités, tant qu’il est implémenté en tant que classe publique ou un membre public d’une classe (propriété ou méthode). Vous n’avez pas dériver votre composant à partir de <xref:System.ComponentModel.Composition.Primitives.ComposablePart>. Au lieu de cela, vous devez ajouter un <xref:System.ComponentModel.Composition.ExportAttribute> d’attribut à la classe ou un membre de classe que vous souhaitez exporter. Cet attribut spécifie le *contrat* par le composant d’une autre partie peut importer votre fonctionnalité.  
+### <a name="export-and-import-component-parts"></a>Exporter et importer des composants  
+ Vous pouvez exporter toutes les fonctionnalités, tant qu’elle est implémentée comme une classe publique ou un membre public d’une classe (propriété ou méthode). Vous n’êtes pas obligé de dériver votre composant à partir de <xref:System.ComponentModel.Composition.Primitives.ComposablePart>. Au lieu de cela, vous devez ajouter un <xref:System.ComponentModel.Composition.ExportAttribute> d’attribut à la classe ou un membre de classe que vous souhaitez exporter. Cet attribut spécifie le *contrat* par le composant d’une autre partie peut importer vos fonctionnalités.  
   
 ### <a name="the-export-contract"></a>Le contrat d’exportation  
- Le <xref:System.ComponentModel.Composition.ExportAttribute> définit l’entité (classe, interface ou structure) qui est en cours d’exportation. En règle générale, l’attribut d’exportation prend un paramètre qui spécifie le type de l’exportation.  
+ Le <xref:System.ComponentModel.Composition.ExportAttribute> définit l’entité (classe, interface ou structure) qui est en cours d’exportation. En règle générale, l’attribut export prend un paramètre qui spécifie le type de l’exportation.  
   
 ```  
 [Export(typeof(ContentTypeDefinition))]  
@@ -63,7 +63,7 @@ class TestAdornmentLayerDefinition : AdornmentLayerDefinition {   }
   
  Dans l’exemple, la valeur par défaut `[Export]` attribut équivaut à `[Export(typeof(TestAdornmentLayerDefinition))]`.  
   
- Vous pouvez également exporter une propriété ou une méthode, comme indiqué dans l’exemple suivant.  
+ Vous pouvez également exporter une propriété ou méthode, comme illustré dans l’exemple suivant.  
   
 ```  
 [Export]  
@@ -72,22 +72,22 @@ class TestAdornmentLayerDefinition : AdornmentLayerDefinition {   }
 public AdornmentLayerDefinition scarletLayerDefinition;  
 ```  
   
-### <a name="importing-a-mef-export"></a>L’importation d’une exportation MEF  
- Lorsque vous souhaitez consommer une exportation MEF, vous devez connaître le contrat (généralement le type) et en ce qui a été exporté, ajoutez un <xref:System.ComponentModel.Composition.ImportAttribute> attribut qui possède cette valeur. Par défaut, l’attribut d’importation accepte un paramètre, ce qui est le type de la classe qu’il modifie. Les lignes suivantes de l’importation de code le <xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService> type.  
+### <a name="import-a-mef-export"></a>Importer une exportation MEF  
+ Lorsque vous souhaitez consommer une exportation MEF, vous devez connaître le contrat (généralement le type) et en ce qui a été exporté, ajoutez un <xref:System.ComponentModel.Composition.ImportAttribute> attribut ayant cette valeur. Par défaut, l’attribut d’importation prend un paramètre, ce qui est le type de la classe qu’il modifie. Les lignes suivantes de l’importation de code la <xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService> type.  
   
 ```  
 [Import]  
 internal IClassificationTypeRegistryService ClassificationRegistry;  
 ```  
   
-## <a name="getting-editor-functionality-from-a-mef-component-part"></a>Lors de l’obtention des fonctionnalités d’éditeur à partir d’un composant MEF  
+## <a name="get-editor-functionality-from-a-mef-component-part"></a>Obtenir des fonctionnalités de l’éditeur à partir d’un composant MEF  
  Si votre code existant est un composant MEF, vous pouvez utiliser des métadonnées MEF pour consommer des composants de l’éditeur.  
   
-#### <a name="to-consume-editor-functionality-from-a-mef-component-part"></a>Pour utiliser les fonctionnalités d’éditeur à partir d’un composant MEF  
+#### <a name="to-consume-editor-functionality-from-a-mef-component-part"></a>Pour utiliser la fonctionnalité d’éditeur à partir d’un composant MEF  
   
-1.  Ajouter des références à System.Composition.ComponentModel.dll, qui se trouve dans le global assembly cache (GAC), et pour les assemblys de l’éditeur.  
+1.  Ajouter des références aux *System.Composition.ComponentModel.dll*, qui est dans le global assembly cache (GAC) et pour les assemblys de l’éditeur.  
   
-2.  Ajoutez les instructions using.  
+2.  Ajouter les informations pertinentes à l’aide d’instructions.  
   
     ```  
     using System.ComponentModel.Composition;  
@@ -103,7 +103,7 @@ internal IClassificationTypeRegistryService ClassificationRegistry;
   
 4.  Lorsque vous avez obtenu le service, vous pouvez utiliser l’un de ses composants.  
   
-5.  Lorsque vous avez compilé votre assembly, placez-le dans le... Dossier \Common7\IDE\Components\ de votre installation de Visual Studio.  
+5.  Lorsque vous avez compilé votre assembly, placez-le dans le *... \Common7\IDE\Components\* dossier de votre installation de Visual Studio.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Points d’extension du service de langage et de l’éditeur](../extensibility/language-service-and-editor-extension-points.md)
+ [Points d’extension éditeur et le service de langage](../extensibility/language-service-and-editor-extension-points.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Comment : inscrire des Types de fichiers éditeur | Documents Microsoft'
+title: 'Comment : inscrire des Types de fichiers de l’éditeur | Microsoft Docs'
 ms.date: 03/22/2018
 ms.technology:
 - vs-ide-sdk
@@ -12,21 +12,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ac67139de317c15d4e85be43f7dace132373257
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a3b0e9bf702515a4c36d58eeb18eb869b96646f1
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129168"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638428"
 ---
-# <a name="how-to-register-editor-file-types"></a>Comment : inscrire des Types de fichiers de l’éditeur
-Le moyen le plus simple pour inscrire les types de fichiers de l’éditeur est à l’aide d’attributs d’inscription fournis dans le cadre de la [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] package framework (MPF) classes managées. Si vous implémentez votre package en mode natif [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], vous pouvez également écrire un script de Registre qui enregistre votre éditeur et les extensions associées.
+# <a name="how-to-register-editor-file-types"></a>Comment : inscrire des types de fichiers de l’éditeur
+Le moyen le plus simple pour inscrire les types de fichiers de l’éditeur est à l’aide des attributs d’inscription fournis dans le cadre de la [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] package framework (MPF) classes managées. Si vous implémentez votre package en mode natif [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], vous pouvez également écrire un script de Registre qui inscrit votre éditeur et les extensions associées.
 
-## <a name="registration-using-mpf-classes"></a>Inscription à l’aide des Classes MPF
+## <a name="registration-using-mpf-classes"></a>Inscription à l’aide des classes MPF
 
-#### <a name="to-register-editor-file-types-using-mpf-classes"></a>Pour inscrire des types de fichiers de l’éditeur à l’aide des classes MPF
+### <a name="to-register-editor-file-types-using-mpf-classes"></a>Pour inscrire des types de fichiers de l’éditeur à l’aide des classes MPF
 
-1.  Fournir la <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> classe avec les paramètres appropriés pour votre éditeur de la classe de votre VSPackage.
+1.  Fournir la <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> classe avec les paramètres appropriés pour votre éditeur dans la classe de votre VSPackage.
 
     ```
     [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,
@@ -35,13 +35,13 @@ Le moyen le plus simple pour inscrire les types de fichiers de l’éditeur est 
          NameResourceID = 106)]
     ```
 
-     Où ». Exemple » est l’extension est inscrite pour cet éditeur, et « 32 » est son niveau de priorité.
+     Où *. Exemple* est l’extension qui est inscrit pour cet éditeur, et « 32 » est son niveau de priorité.
 
      Le `projectGuid` est le GUID pour les types de fichier divers, définis dans <xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid>. Le type de fichier divers est fourni, afin que le fichier résultant ne va pas faire partie du processus de génération.
 
-     `TemplateDir` représente le dossier qui contient les fichiers de modèle sont inclus dans l’exemple d’éditeur de base managé.
+     *TemplateDir* représente le dossier qui contient les fichiers de modèle qui sont inclus dans l’exemple d’éditeur de base managé.
 
-     `NameResourceID` est défini dans le fichier Resources.h du projet BasicEditorUI et identifie l’éditeur en tant que « Mes éditeur ».
+     `NameResourceID` est défini dans le *Resources.h* fichier du projet BasicEditorUI et identifie l’éditeur en tant que « Mes éditeur ».
 
 2.  Remplacez la méthode <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.
 
@@ -63,10 +63,10 @@ Le moyen le plus simple pour inscrire les types de fichiers de l’éditeur est 
 
 3.  Annuler l’inscription de fabriques d’éditeur.
 
-     Fabriques d’éditeur sont automatiquement annulées lorsque le VSPackage est supprimé. Si l’objet de fabrique d’éditeur implémente la <xref:System.IDisposable> interface, son `Dispose` méthode est appelée une fois que la fabrique a été désinscrit avec [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+     Fabriques d’éditeur sont automatiquement annulées lorsque le VSPackage est supprimé. Si l’objet de fabrique d’éditeur implémente le <xref:System.IDisposable> interface, son `Dispose` méthode est appelée une fois la fabrique a été annulée avec [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
-## <a name="registration-using-a-registry-script"></a>Inscription à l’aide d’un Script de Registre
- Inscrire les fabriques d’éditeur et les types de fichiers en mode natif [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] s’effectue à l’aide d’un script de Registre à écrire dans le Registre windows, comme illustré par le texte suivant.
+## <a name="registration-using-a-registry-script"></a>Inscription à l’aide d’un script de Registre
+ L’inscription des types de fichiers et les fabriques d’éditeur en mode natif [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] s’effectue à l’aide d’un script de Registre à écrire dans le Registre windows, comme illustré ci-après.
 
 ### <a name="to-register-editor-file-types-using-a-registry-script"></a>Pour inscrire des types de fichiers de l’éditeur à l’aide d’un script de Registre
 
@@ -89,13 +89,13 @@ Le moyen le plus simple pour inscrire les types de fichiers de l’éditeur est 
     }
     ```
 
-     L’extension de fichier de l’éditeur dans cet exemple est identifiée comme « .rtf » et sa priorité est « 50 ». Les chaînes de GUID sont définis dans le fichier Resource.h de l’exemple de projet BscEdit.
+     L’extension de fichier de l’éditeur dans cet exemple est identifiée en tant que *.rtf* et sa priorité est « 50 ». Les chaînes GUID sont définies dans *Resource.h* fichier de l’exemple de projet BscEdit.
 
 2.  Inscrivez le VSPackage.
 
 3.  Inscrire la fabrique d’éditeur.
 
-     La fabrique d’éditeur est enregistrée dans le <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> implémentation.
+     La fabrique d’éditeur est inscrit dans le <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> implémentation.
 
     ```cpp
     // create editor factory.
@@ -126,4 +126,4 @@ Le moyen le plus simple pour inscrire les types de fichiers de l’éditeur est 
     }
     ```
 
-     Les chaînes de GUID sont définis dans le fichier Resource.h du projet BscEdit.
+     Les chaînes GUID sont définies dans *Resource.h* fichier du projet BscEdit.

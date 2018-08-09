@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8004176fb64244aecde276226683a53c013d3b31
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a47f45889744db51d68c0f8aeb51b11863823965
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513131"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639726"
 ---
-# <a name="registering-verbs-for-file-name-extensions"></a>Inscription des verbes pour les extensions de nom de fichier
+# <a name="register-verbs-for-file-name-extensions"></a>Inscrire des verbes pour les extensions de nom de fichier
 L’association d’une extension de nom de fichier avec une application a généralement une action par défaut qui se produit lorsqu’un utilisateur double-clique sur un fichier. Cette action est liée à un verbe, par exemple ouvrir, qui correspond à l’action de préférence.  
   
- Vous pouvez inscrire les verbes qui sont associés à un identificateur programmatique (ProgID) d’une extension à l’aide de la clé de l’interpréteur de commandes située à HKEY_CLASSES_ROOT\\*progid*\shell. Pour plus d’informations, consultez [Types de fichiers](/windows/desktop/shell/fa-file-types).  
+ Vous pouvez inscrire les verbes qui sont associés à un identificateur programmatique (ProgID) pour une extension à l’aide de la clé de Shell situé dans **HKEY_CLASSES_ROOT\{progid} \shell**. Pour plus d’informations, consultez [types de fichiers](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
   
-## <a name="registering-standard-verbs"></a>Inscription des verbes Standard  
+## <a name="register-standard-verbs"></a>Inscrire des verbes standard  
  Le système d’exploitation reconnaît les verbes standards suivants :  
   
 -   Ouvrir  
@@ -38,7 +38,7 @@ L’association d’une extension de nom de fichier avec une application a gén�
   
 -   Preview  
   
- Si possible, inscrivez un verbe standard. Le choix le plus courant est le verbe Open. Utilisez le verbe de modification uniquement s’il existe une différence entre l’ouverture du fichier et en modifiant le fichier. Par exemple, ouverture d’un fichier .htm affiche dans le navigateur, tandis que la modification d’un fichier .htm démarre un éditeur HTML. Les verbes standards sont localisés avec les paramètres régionaux de système d’exploitation.  
+ Si possible, inscrivez un verbe standard. Le choix le plus courant est le verbe Open. Utilisez le verbe de modification uniquement s’il existe une différence entre l’ouverture du fichier et en modifiant le fichier. Par exemple, l’ouverture d’un *.htm* fichier l’affiche dans le navigateur, tandis que la modification une *.htm* fichier démarre un éditeur HTML. Les verbes standards sont localisés avec les paramètres régionaux de système d’exploitation.  
   
 > [!NOTE]
 >  Lors de l’inscription des verbes standard, ne définissez pas la valeur par défaut pour ouvrir la clé. La valeur par défaut contient la chaîne d’affichage dans le menu. Le système d’exploitation fournit cette chaîne des verbes standard.  
@@ -74,7 +74,7 @@ L’association d’une extension de nom de fichier avec une application a gén�
 @="\"C:\\Program Files\\Common Files\\Microsoft Shared\\MSEnv\\VSLauncher.exe\" \"%1\""  
 ```  
   
- Pour ouvrir un fichier dans une instance existante de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], enregistrer une clé de DDEEXEC. L’exemple suivant illustre une inscription de verbe standard pour un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] fichier .cs.  
+ Pour ouvrir un fichier dans une instance existante de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], enregistrer une clé de DDEEXEC. L’exemple suivant illustre une inscription de verbe standard pour un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] *.cs* fichier.  
   
 ```  
 [HKEY_CLASSES_ROOT\.cs]  
@@ -108,11 +108,11 @@ L’association d’une extension de nom de fichier avec une application a gén�
 @="system"  
 ```  
   
-## <a name="setting-the-default-verb"></a>Définir le verbe par défaut  
- Le verbe par défaut est l’action qui est exécutée quand un utilisateur double-clique sur un fichier dans l’Explorateur Windows. Le verbe par défaut est le verbe spécifié en tant que la valeur par défaut pour le HKEY_CLASSES_ROOT\\*progid*\Shell clé. Si aucune valeur n’est spécifiée, le verbe par défaut est le premier verbe spécifié dans le HKEY_CLASSES_ROOT\\*progid*\Shell liste de clés.  
+## <a name="set-the-default-verb"></a>Définir le verbe par défaut  
+ Le verbe par défaut est l’action qui est exécutée quand un utilisateur double-clique sur un fichier dans l’Explorateur Windows. Le verbe par défaut est le verbe spécifié comme valeur par défaut pour le **HKEY_CLASSES_ROOT\\*progid*\Shell** clé. Si aucune valeur n’est spécifiée, le verbe par défaut est le premier verbe spécifié dans le **HKEY_CLASSES_ROOT\\*progid*\Shell** liste de clés.  
   
 > [!NOTE]
 >  Si vous envisagez de modifier le verbe par défaut pour une extension dans un déploiement côte à côte, envisagez l’impact sur l’installation et la suppression. Lors de l’installation, la valeur par défaut d’origine est remplacée.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Gestion des associations de fichiers côte à côte](../extensibility/managing-side-by-side-file-associations.md)
+ [Gérer les associations de fichiers de côte à côte](../extensibility/managing-side-by-side-file-associations.md)
