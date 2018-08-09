@@ -1,5 +1,5 @@
 ---
-title: PromptForSaveOnCreation, élément (modèles Visual Studio) | Documents Microsoft
+title: PromptForSaveOnCreation, élément (modèles Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92be0bc15542010cfeea8a9ee70e69ff52e14163
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2c5b04bfa04b1b6fd6599e5fdd06d6c58210f635
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137545"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638441"
 ---
-# <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation, élément (modèles Visual Studio)
-Spécifie si l’utilisateur est invité à entrer un projet à l’emplacement par le biais d’enregistrement du **nouveau projet** boîte de dialogue lors de la création d’un projet. Si cet élément est défini sur `true`, puis l’utilisateur est invité à enregistrer emplacement ; si `false`, puis ils ne sont pas invités. (Autrement dit, un projet temporaire est créé.)  
+# <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation, élément (modèles Visual Studio)
+Spécifie si l’utilisateur est invité à entrer un projet à l’emplacement par le biais d’enregistrement la **nouveau projet** boîte de dialogue lors de la création d’un projet. Si cet élément est défini sur `true`, puis l’utilisateur est invité à entrer un enregistrement emplacement ; si `false`, alors il n’est pas invité. (Autrement dit, un projet temporaire est créé.)  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -31,7 +31,7 @@ Spécifie si l’utilisateur est invité à entrer un projet à l’emplacement 
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
 <PromptForSaveOnCreation> true/false </PromptForSaveOnCreation>  
 ```  
   
@@ -53,7 +53,7 @@ Spécifie si l’utilisateur est invité à entrer un projet à l’emplacement 
 ## <a name="text-value"></a>Valeur texte  
  Une valeur texte est requise.  
   
- Le texte doit être `true` ou `false`, `true` indiquant que l’utilisateur sera invité pour un enregistrement emplacement lors de la création d’un nouveau projet.  
+ Le texte doit être `true` ou `false`, `true` indiquant que l’utilisateur demandera un enregistrement emplacement lors de la création d’un nouveau projet.  
   
 ## <a name="remarks"></a>Notes  
  `PromptForSaveOnCreation` est un élément facultatif. La valeur par défaut est `false`.  
@@ -61,7 +61,7 @@ Spécifie si l’utilisateur est invité à entrer un projet à l’emplacement 
  Projets temporaires sont des projets que vous pouvez créer et modifier sans enregistrer le contenu de ce projet sur le disque.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant définit la valeur de `PromptForSaveOnCreation` égale à `false`, ce qui indique que le projet doit être créé comme un projet temporaire sera.  
+ L’exemple suivant définit la valeur de `PromptForSaveOnCreation` égal à `false`, qui spécifie que le projet doit être créé comme un projet temporaire.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -89,5 +89,5 @@ Spécifie si l’utilisateur est invité à entrer un projet à l’emplacement 
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
+ [Référence de schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)

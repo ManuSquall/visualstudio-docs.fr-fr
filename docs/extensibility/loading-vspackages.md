@@ -1,5 +1,5 @@
 ---
-title: Chargement des VSPackages | Documents Microsoft
+title: Chargement de VSPackages | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,24 +14,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 008cd31bc3d9f909477089e608393f596bfb0682
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 26bd199a688b1b47728aac561720224a71f1583b
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140012"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638145"
 ---
-# <a name="loading-vspackages"></a>Chargement des VSPackages
-Les VSPackages sont chargés dans Visual Studio uniquement lorsque leur fonctionnalité est requise. Par exemple, un VSPackage est chargé lorsque Visual Studio utilise une fabrique de projet ou un service qui le VSPackage implémente. Cette fonctionnalité est appelée chargement différé, qui est utilisé chaque fois que possible améliorer les performances.  
+# <a name="load-vspackages"></a>Charger des VSPackages
+Les VSPackages sont chargés dans Visual Studio uniquement lorsque leur fonctionnalité est requise. Par exemple, un VSPackage est chargé lorsque Visual Studio utilise une fabrique de projet ou un service qui implémente le VSPackage. Cette fonctionnalité est appelée chargement différé, ce qui est utilisé chaque fois que possible améliorer les performances.  
   
 > [!NOTE]
->  Visual Studio peut déterminer certaines informations sur le package, telles que les commandes par un VSPackage, sans charger le VSPackage.  
+>  Visual Studio peut déterminer certaines informations sur le package, telles que les commandes offertes par un VSPackage, sans charger le VSPackage.  
   
- VSPackages peut être définis à autoload dans un contexte d’interface utilisateur utilisateur particulier, par exemple, lorsqu’une solution est ouverte. Le <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> attribut définit ce contexte.  
+ VSPackages peut être définis à chargement automatique dans un contexte d’interface (UI) utilisateur particulier, par exemple, lorsqu’une solution est ouverte. Le <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> attribut définit ce contexte.  
   
-### <a name="autoloading-a-vspackage-in-a-specific-context"></a>Chargement automatique un VSPackage dans un contexte spécifique  
+### <a name="autoload-a-vspackage-in-a-specific-context"></a>Charger automatiquement un VSPackage dans un contexte spécifique  
   
--   Ajouter le `ProvideAutoLoad` aux attributs VSPackage d’attribut :  
+-   Ajouter le `ProvideAutoLoad` d’attribut pour les attributs de package Visual Studio :  
   
     ```csharp  
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]  
@@ -48,16 +48,16 @@ Les VSPackages sont chargés dans Visual Studio uniquement lorsque leur fonction
   
 -   Générer le VSPackage et démarrer le débogage.  
   
--   Charger une solution ou créez-en un.  
+-   Chargez une solution, ou créez-en un.  
   
      Le package Visual Studio charge et s’arrête au point d’arrêt.  
   
-## <a name="forcing-a-vspackage-to-load"></a>Forcer un VSPackage à charger  
- Dans certaines circonstances un VSPackage peut être amené à forcer un autre VSPackage doit être chargé. Par exemple, un VSPackage léger peut charger un VSPackage plus volumineux dans un contexte qui n’est pas disponible en tant qu’un CMDUIContext.  
+## <a name="force-a-vspackage-to-load"></a>Force un VSPackage à charger  
+ Dans certaines circonstances, un VSPackage peut avoir forcer un autre VSPackage à charger. Par exemple, un VSPackage léger peut charger un VSPackage plus volumineux dans un contexte qui n’est pas disponible en tant qu’un CMDUIContext.  
   
  Vous pouvez utiliser la <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> méthode pour forcer un VSPackage à charger.  
   
--   Insérez ce code dans la <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> méthode du VSPackage qui force une autre VSPackage à charger :  
+-   Insérez ce code dans le <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> méthode du VSPackage qui force une autre VSPackage à charger :  
   
     ```csharp  
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;  
@@ -72,7 +72,7 @@ Les VSPackages sont chargés dans Visual Studio uniquement lorsque leur fonction
   
      Lorsque le VSPackage est initialisé, il force `PackageToBeLoaded` à charger.  
   
-     Lors du chargement de force ne doit pas être utilisé pour la communication du VSPackage. Utilisez [à l’aide et fourniture de Services](../extensibility/using-and-providing-services.md) à la place.
+     Chargement de force n’a pas doit être utilisé pour la communication de VSPackage. Utilisez [utilisez et fournir des services](../extensibility/using-and-providing-services.md) à la place.
   
 ## <a name="see-also"></a>Voir aussi  
  [VSPackages](../extensibility/internals/vspackages.md)

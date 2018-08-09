@@ -1,5 +1,5 @@
 ---
-title: Élément parent | Documents Microsoft
+title: Élément parent | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 795654925a92f3e9ac0718e070e85c0f4f7f21c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9a66f9fff773fb9a9542de13ceb97ad8732c319b
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137103"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39635854"
 ---
-# <a name="parent-element"></a>Parent, élément
-Le parent d’un bouton ou une zone peut être uniquement un groupe. Le parent d’un menu ou un groupe peut être n’importe quel autre menu ou un groupe. Dans un [CommandPlacement élément](../extensibility/commandplacement-element.md), cet élément est requis ; dans tous les autres cas, il est facultatif. Si cet élément est omis, le parent de `Group_Undefined:0` sera être déduit.  
+# <a name="parent-element"></a>Élément parent
+Le parent d’un bouton ou une zone peut être uniquement un groupe. Le parent d’un menu ou un groupe peut être n’importe quel autre menu ou un groupe. Dans un [élément CommandPlacement](../extensibility/commandplacement-element.md), cet élément est requis ; il est facultatif dans toutes les autres instances. Si cet élément est omis, le parent de `Group_Undefined:0` est implicite.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
 <Parent guid="guidMyCommandSet" id="MyParentGroupOrMenu" />  
 ```  
   
@@ -38,19 +38,19 @@ Le parent d’un bouton ou une zone peut être uniquement un groupe. Le parent d
 |Attribut|Description|  
 |---------------|-----------------|  
 |GUID|Obligatoire. Identificateur de commande de GUID/ID GUID.|  
-|ID|Obligatoire. Identificateur de commande ID GUID/ID.|  
+|ID|Obligatoire. Identificateur de commande d’ID de/ID GUID.|  
   
 ### <a name="child-elements"></a>Éléments enfants  
- Aucun  
+ Aucun.  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent des commandes par un VSPackage à l’environnement de développement intégré (IDE). Par exemple, des éléments de menu, menus, barres d’outils et zones de liste déroulante.|  
+|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent des commandes qu’un VSPackage fournit à l’environnement de développement intégré (IDE). Par exemple, les éléments de menu, menus, barres d’outils et zones de liste déroulante.|  
 |[Élément Buttons](../extensibility/buttons-element.md)|Groupes [élément Button](../extensibility/button-element.md) éléments.|  
-|[Élément Menus](../extensibility/menus-element.md)|Définit tous les menus un VSPackage implémente.|  
+|[Élément menus](../extensibility/menus-element.md)|Définit tous les menus qui implémente un VSPackage.|  
 |[Élément Groups](../extensibility/groups-element.md)|Contient des entrées qui définissent les groupes de commandes d’un VSPackage.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Fichiers Visual Studio Command Table (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio fichiers command table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

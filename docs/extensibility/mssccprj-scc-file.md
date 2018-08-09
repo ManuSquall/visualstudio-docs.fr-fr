@@ -1,5 +1,5 @@
 ---
-title: MSSCCPRJ. Fichier de contrôle de code source | Documents Microsoft
+title: MSSCCPRJ. Fichier de SCC | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,36 +14,36 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef076a93d27cc2c133404d6fe6463d32cb449956
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cc754437433124e033b0f0fb0feac79487664b51
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139349"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636069"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. Fichier de contrôle de code source
-Lorsqu’une solution Visual Studio ou un projet est placé sous contrôle de code source à l’aide de l’IDE, l’IDE reçoit deux éléments d’information clés à partir du contrôle de source de plug-in sous la forme de chaînes. Ces chaînes, « AuxPath » et « NomProj », sont opaques à l’IDE, mais ils sont utilisés par le plug-in pour rechercher la solution ou le projet de contrôle de version. L’IDE obtienne généralement ces chaînes de la première fois en appelant le [SccGetProjPath](../extensibility/sccgetprojpath-function.md), et il puis les enregistre dans le fichier solution ou un projet pour les appels ultérieurs à la [SccOpenProject](../extensibility/sccopenproject-function.md). Lorsqu’il est incorporé dans les fichiers solution et projet, les chaînes « AuxPath » et « NomProj » pas sont mises à jour automatiquement lorsqu’un utilisateur crée une branche, de branches, ou copie les fichiers solution et projet qui se trouvent dans le contrôle de version. Pour vous assurer que les fichiers solution et projet pointent vers leur emplacement approprié dans le contrôle de version, les utilisateurs doivent mettre à jour manuellement les chaînes. Étant donné que les chaînes sont destinés à être opaque, il ne peut pas toujours être clair comment ils doivent être mis à jour.  
+Lorsque vous placez une solution Visual Studio ou un projet sous contrôle de code source à l’aide de l’IDE, l’IDE reçoit deux informations essentielles. Les informations proviennent du plug-in sous la forme de chaînes de contrôle de code source. Ces chaînes, « AuxPath » et « ProjName », sont opaques à l’IDE, mais elles sont utilisées par le plug-in pour rechercher la solution ou le projet dans le contrôle de version. L’IDE obtient généralement ces chaînes de la première fois en appelant le [SccGetProjPath](../extensibility/sccgetprojpath-function.md), et il les enregistre ensuite dans le fichier solution ou un projet pour les appels suivants à la [SccOpenProject](../extensibility/sccopenproject-function.md). Lorsqu’il est incorporé dans les fichiers solution et projet, les chaînes « AuxPath » et « ProjName » ne sont pas automatiquement mis à jour un utilisateur, les branchements, branches ou copie des fichiers solution et projet qui se trouvent dans le contrôle de version. Pour vous assurer que les fichiers solution et projet pointent vers leur emplacement correct dans le contrôle de version, les utilisateurs doivent mettre à jour manuellement les chaînes. Étant donné que les chaînes sont destinés à être opaque, il peut pas toujours clair comment ils doivent être mis à jour.  
   
- Le plug-in de contrôle de code source peut éviter ce problème en stockant les chaînes « AuxPath » et « NomProj » dans un fichier spécial appelé le MSSCCPRJ. Fichier de contrôle de code source. Il s’agit d’un fichier local, côté client qui est détenu et géré par le plug-in. Ce fichier n’est jamais placé sous contrôle de code source, mais est généré par le plug-in pour chaque répertoire qui contient les fichiers de contrôle de code source. Pour déterminer quels fichiers sont des fichiers solution et projet de Visual Studio, un plug-in de contrôle de code source peut comparer les extensions de fichier par rapport à une liste standard ou fourni par l’utilisateur. Une fois que l’IDE détecte qu’un plug-in prend en charge la MSSCCPRJ. Fichier de contrôle de code source, il cesse d’incorporer la « AuxPath » et les chaînes « NomProj » dans la solution, les fichiers de projet et il lit la MSSCCPRJ ces chaînes. Le fichier de contrôle de code source à la place.  
+ Le plug-in de contrôle de code source peut éviter ce problème en stockant les chaînes « AuxPath » et « ProjName » dans un fichier spécial appelé le *MSSCCPRJ.SCC* fichier. C’est un fichier local, côté client qui est détenu et géré par le plug-in. Ce fichier n’est jamais placé sous contrôle de code source, mais est généré par le plug-in pour chaque répertoire qui contient les fichiers sous contrôle de code source. Pour déterminer quels fichiers sont des fichiers solution et projet de Visual Studio, un plug-in de contrôle de code source peut comparer les extensions de fichier par rapport à une liste standard ou fourni par l’utilisateur. Une fois que l’IDE détecte qu’un plug-in prend en charge la *MSSCCPRJ.SCC* fichier, il cesse d’incorporer les chaînes « AuxPath » et « ProjName » dans les fichiers solution et projet, et il lit ces chaînes à partir de la *MSSCCPRJ.SCC*de fichiers à la place.  
   
- Un contrôle de code source du plug-in qui prend en charge la MSSCCPRJ. Fichier de contrôle de code source doit respecter les consignes suivantes :  
+ Un plug-in de contrôle de code source qui prend en charge la *MSSCCPRJ.SCC* fichier doit respecter les consignes suivantes :  
   
--   Il ne peut exister qu’un seul MSSCCPRJ. Fichier de contrôle de code source par répertoire.  
+-   Il peut être seulement un *MSSCCPRJ.SCC* fichiers par répertoire.  
   
--   Un MSSCCPRJ. Fichier de contrôle de code source peut contenir le « AuxPath » et « NomProj » pour plusieurs fichiers qui sont sous contrôle de code source dans un répertoire donné.  
+-   Un *MSSCCPRJ.SCC* fichier peut contenir le « AuxPath » et « ProjName » pour plusieurs fichiers qui sont sous contrôle de code source dans un répertoire donné.  
   
--   La chaîne « AuxPath » ne doit pas avoir de guillemets qu’il contient. Il est autorisé à placer entre guillemets comme délimiteurs (par exemple, une paire de guillemets doubles peut être utilisée pour indiquer une chaîne vide). L’IDE supprimera tous les devis à partir de la chaîne « AuxPath » lorsqu’il est lu à partir de la MSSCCPRJ. Fichier de contrôle de code source.  
+-   La chaîne « AuxPath » ne doit pas contenir de guillemets qu’il contient. Il est autorisé à placer entre guillemets comme délimiteurs (par exemple, une paire de guillemets doubles permettre servir à indiquer une chaîne vide). L’IDE supprimera tous les devis à partir de la chaîne « AuxPath » lorsqu’il est lu à partir de la *MSSCCPRJ.SCC* fichier.  
   
--   La chaîne « NomProj » dans le MSSCCPRJ. Fichier de contrôle de code source doit correspondre exactement à la chaîne retournée par la `SccGetProjPath` (fonction). Si la chaîne retournée par la fonction est entre guillemets, la chaîne dans le MSSCCPRJ. Fichier de contrôle de code source doive être placées entre guillemets autour d’elle et vice versa.  
+-   Chaîne de la « ProjName » dans le *MSSCCPRJ. Fichier de SCC* doit correspondre exactement à la chaîne retournée par la `SccGetProjPath` (fonction). Si la chaîne retournée par la fonction a entre guillemets, la chaîne dans le *MSSCCPRJ.SCC* fichier doit avoir des guillemets autour d’elle et vice versa.  
   
--   Un MSSCCPRJ. Fichier de contrôle de code source est créé ou mis à jour chaque fois qu’un fichier est placé sous contrôle de code source.  
+-   Un *MSSCCPRJ.SCC* fichier est créé ou mis à jour chaque fois qu’un fichier est placé sous contrôle de code source.  
   
--   If un MSSCCPRJ. Fichier de contrôle de code source est supprimé, un fournisseur doit régénérer la prochaine fois qu’il effectue une opération de contrôle de code source concernant ce répertoire.  
+-   Si un *MSSCCPRJ.SCC* fichier est supprimé, un fournisseur doit régénérer la prochaine fois qu’il effectue une opération de contrôle de code source concernant ce répertoire.  
   
--   Un MSSCCPRJ. Contrôle de code source doit suivre strictement le format défini.  
+-   Un *MSSCCPRJ.SCC* fichier doit respecter strictement le format défini.  
   
-## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Obtenir une Illustration de la MSSCCPRJ. Format de fichier de contrôle de code source  
- Voici un exemple de la MSSCCPRJ. Format de fichier de contrôle de code source (les numéros de ligne sont uniquement des indications et ne doivent pas être inclus dans le corps du fichier) :  
+## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Obtenir une illustration de la MSSCCPRJ. Format de fichier de contrôle de code source  
+ Voici un exemple de la *MSSCCPRJ.SCC* format de fichier (les numéros de ligne sont fournies uniquement comme guide et ne doivent pas être inclus dans le corps du fichier) :  
   
  [Ligne 1] `SCC = This is a Source Code Control file`  
   
@@ -63,18 +63,18 @@ Lorsqu’une solution Visual Studio ou un projet est placé sous contrôle de co
   
  [Ligne 9] `SCC_Project_Name = "$/TestApp"`  
   
- La première ligne indique la fin du fichier et sert à la signature pour tous les fichiers de ce type. Cette ligne doit apparaître exactement comme dans tous les MSSCCPRJ. Fichiers SCC :  
+ La première ligne indique l’objectif du fichier et sert de signature pour tous les fichiers de ce type. Cette ligne doit apparaître exactement comme cela dans tous les *MSSCCPRJ.SCC* fichiers :  
   
  `SCC = This is a Source Code Control file`  
   
- Ce qui suit est une section de paramètres pour chaque fichier, marquée par le nom de fichier entre crochets. Cette section est répétée pour chaque fichier en cours de suivi. Cette ligne est un exemple d’un nom de fichier, à savoir, `[TestApp.csproj]`. L’IDE attend que les deux lignes suivantes. Il ne définit pas, toutefois, du style des valeurs définies. Les variables sont `SCC_Aux_Path` et `SCC_Project_Name`.  
+ La section suivante décrit en détail les paramètres pour chaque fichier, marquée par le nom de fichier entre crochets. Cette section est répétée pour chaque fichier en cours de suivi. Cette ligne est un exemple d’un nom de fichier, à savoir, `[TestApp.csproj]`. L’IDE attend les deux lignes suivantes. Il ne définit pas le cas, toutefois, le style des valeurs définies. Les variables sont `SCC_Aux_Path` et `SCC_Project_Name`.  
   
  `SCC_Aux_Path = "\\server\vss\"`  
   
  `SCC_Project_Name = "$/TestApp"`  
   
- Il n’existe pas de délimiteur de fin de cette section. Le nom de fichier, ainsi que tous les littéraux qui apparaissent dans le fichier, sont définies dans le fichier d’en-tête scc.h. Pour plus d’informations, consultez [chaînes utilisées en tant que clés pour la recherche d’un plug-in de contrôle de code Source](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md).  
+ Il n’existe aucun délimiteur de fin de cette section. Le nom de fichier, ainsi que tous les littéraux qui apparaissent dans le fichier, sont définis dans le fichier d’en-tête scc.h. Pour plus d’informations, consultez [chaînes utilisées comme clés pour rechercher un contrôle de source de plug-in](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Plug-ins de contrôle de code source](../extensibility/source-control-plug-ins.md)   
- [Chaînes utilisées comme clés pour rechercher un plug-in de contrôle de code source](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)
+ [Chaînes utilisées comme clés pour rechercher un contrôle de source de plug-in](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)

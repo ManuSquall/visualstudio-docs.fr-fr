@@ -1,5 +1,5 @@
 ---
-title: LocationFieldMRUPrefix, élément (modèles Visual Studio) | Documents Microsoft
+title: LocationFieldMRUPrefix, élément (modèles Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,19 +16,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cef7e1e09d81c4ff0fb28198ff9a4d68f1e9c501
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 050d9b060fe9976dc9262b2878f570abbdc9bb42
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136337"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636900"
 ---
-# <a name="locationfieldmruprefix-element-visual-studio-templates"></a>LocationFieldMRUPrefix, élément (modèles Visual Studio)
+# <a name="locationfieldmruprefix-element-visual-studio-templates"></a>LocationFieldMRUPrefix, élément (modèles Visual Studio)
 Spécifie les chemins des derniers fichiers utilisés (MRU) dans le **nouveau projet** et **ajouter un nouvel élément** boîte de dialogue.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
 <LocationFieldMRUPrefix> ... </LocationFieldMRUPrefix>  
 ```  
   
@@ -48,8 +48,8 @@ Spécifie les chemins des derniers fichiers utilisés (MRU) dans le **nouveau pr
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Définit la catégorie du modèle et comment il s’affiche dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément** .|  
   
 ## <a name="remarks"></a>Notes  
- Cet élément doit être utilisé uniquement pour les modèles produits via le [!INCLUDE[vsipprvsip](../extensibility/includes/vsipprvsip_md.md)].  
+ Cet élément doit être utilisé uniquement pour les modèles de produit via le [!INCLUDE[vsipprvsip](../extensibility/includes/vsipprvsip_md.md)].  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
+ [Référence de schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Création de modèles de projets et d’éléments](../ide/creating-project-and-item-templates.md)

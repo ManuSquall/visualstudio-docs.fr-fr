@@ -1,5 +1,5 @@
 ---
-title: L’élément RequiredPlatformVersion (modèles Visual Studio) | Documents Microsoft
+title: Élément RequiredPlatformVersion (modèles Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35a8dc6fa57dbe88ce1e30e9be58105f28fe5641
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e040faf4d66d42b107777fd4d57f26c80d040a48
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136170"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39635951"
 ---
-# <a name="requiredplatformversion-element-visual-studio-templates"></a>Élément RequiredPlatformVersion (modèles Visual Studio)
-Spécifie la version minimale du système d’exploitation que le modèle de projet a besoin pour fonctionner correctement. Cet élément est utilisé pour des modèles de projet qui créent [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] applications.  
+# <a name="requiredplatformversion-element-visual-studio-templates"></a>Élément RequiredPlatformVersion (modèles Visual Studio)
+Spécifie la version minimale du système d’exploitation que le modèle de projet a besoin pour fonctionner correctement. Cet élément est utilisé pour des modèles de projet qui créent des [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] applications.  
   
- Le `RequiredPlatformVersion` valeur est comparée directement avec la version du système d’exploitation. Si le `RequiredPlatformVersion` est supérieure à la version du système d’exploitation, le modèle n’apparaît pas dans le **nouveau projet** boîte de dialogue. Pour spécifier un modèle pour [!INCLUDE[win8](../debugger/includes/win8_md.md)] ou supérieur, définissez `RequiredPlatformVersion` à 6.2.0. Pour spécifier un modèle pour [!INCLUDE[win81](../debugger/includes/win81_md.md)] ou supérieure, définie RequiredPlatformVersion à 6.3.0.  
+ Le `RequiredPlatformVersion` valeur est comparée directement à la version du système d’exploitation. Si le `RequiredPlatformVersion` est supérieure à la version de système d’exploitation, le modèle n’apparaît pas dans le **nouveau projet** boîte de dialogue. Pour spécifier un modèle pour [!INCLUDE[win8](../debugger/includes/win8_md.md)] ou version ultérieure, définissez `RequiredPlatformVersion` à 6.2.0. Pour spécifier un modèle pour [!INCLUDE[win81](../debugger/includes/win81_md.md)] ou version ultérieure, définissez `RequiredPlatformVersion` vers la version 6.3.0.  
   
- Les modèles qui spécifient `RequiredPlatformVersion`= 8 sont compatibles avec le client précédente [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] modèles.  
+ Les modèles qui spécifient `RequiredPlatformVersion`= 8 sont compatibles avec le client précédent [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] modèles.  
   
  VSTemplate  
 TemplateData  
@@ -75,5 +75,5 @@ RequiredPlatformVersion
   
 ## <a name="see-also"></a>Voir aussi  
  [Élément TargetPlatformName (modèles Visual Studio)](../extensibility/targetplatformname-element-visual-studio-templates.md)   
- [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+ [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
+ [Informations de référence sur les schémas de modèles Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

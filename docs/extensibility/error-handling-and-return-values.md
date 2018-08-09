@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85eee51941f6fb549c96dcc257335f9d77b6b0f2
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 128326b869f9a1e09ffb28118af1073b1a7e57b1
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057126"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638629"
 ---
-# <a name="error-handling-and-return-values"></a>Gestion des erreurs et valeurs de retour
+# <a name="error-handling-and-return-values"></a>Gestion des erreurs et des valeurs de retour
 VSPackages et COM utilisent la même architecture pour les erreurs. Le `SetErrorInfo` et `GetErrorInfo` fonctions font partie de l’interface de programmation d’application (API) Win32. Un VSPackage dans l’environnement de développement intégré (IDE) peut appeler ces global des API Win32 pour les informations d’erreur complètes enregistrement lors de la réception d’une notification d’erreur. Le [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] fournit les assemblys PIA pour gérer les informations d’erreur.  
   
 ## <a name="interop-methods"></a>Méthodes d’interopérabilité  

@@ -1,5 +1,5 @@
 ---
-title: 'Comment : implémenter la gestion des annulations | Documents Microsoft'
+title: 'Comment : implémenter la gestion de l’annulation | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,41 +13,41 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b01b7b8edf5ebe4b8c3e5277e87f9797860b552f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cd77ce3cbb0b262e3ab56fef4f3456fecd3cab28
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130754"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636397"
 ---
-# <a name="how-to-implement-undo-management"></a>Comment : implémenter la gestion de l’annulation
-L’interface principale utilisée pour la gestion de l’annulation est <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, qui est implémentée par l’environnement. Pour prendre en charge la gestion de l’annulation, implémentez des unités d’annulation (autrement dit, <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, qui peut contenir plusieurs étapes individuelles.  
+# <a name="how-to-implement-undo-management"></a>Comment : gestion d’annulation implémenter
+L’interface principale utilisée pour la gestion de l’annulation est <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, qui est implémentée par l’environnement. Pour prendre en charge la gestion d’annulation, implémenter des unités d’annulation distinct (autrement dit, <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, qui peut contenir plusieurs étapes individuelles.  
   
- La procédure d’implémentation de gestion de l’annulation dépend de si votre éditeur prend en charge plusieurs vues ou non. Les procédures pour chaque implémentation sont détaillées dans les sections suivantes.  
+ Façon dont vous implémentez la gestion de l’annulation varie selon que votre éditeur prend en charge plusieurs vues ou non. Les procédures pour chaque implémentation sont détaillées dans les sections suivantes.  
   
 ## <a name="cases-where-an-editor-supports-a-single-view"></a>Cas où un éditeur prend en charge une seule vue  
- Dans ce scénario, l’éditeur ne prend pas en charge plusieurs vues. Il y a qu’un seul éditeur et un document, et ils prennent en charge d’annulation. Utilisez la procédure suivante pour implémenter la gestion de l’annulation.  
+ Dans ce scénario, l’éditeur ne prend pas en charge plusieurs vues. Il y a qu’un seul éditeur et un seul document, et ils prennent en charge d’annulation. Utilisez la procédure suivante pour implémenter la gestion de l’annulation.  
   
-#### <a name="to-support-undo-management-for-a-single-view-editor"></a>Pour prendre en charge la gestion de l’annulation pour un éditeur de vue unique  
+### <a name="to-support-undo-management-for-a-single-view-editor"></a>Pour prendre en charge la gestion d’annulation pour un éditeur avec affichage unique  
   
-1.  Appelez `QueryInterface` sur la `IServiceProvider` interface sur le frame de fenêtre pour `IOleUndoManager`, à partir de l’objet de vue de document pour accéder au gestionnaire d’annulation (`IID_IOLEUndoManager`).  
+1.  Appelez `QueryInterface` sur le `IServiceProvider` interface sur le frame de fenêtre pour `IOleUndoManager`, à partir de l’objet de vue de document pour accéder au gestionnaire d’annulation (`IID_IOLEUndoManager`).  
   
 2.  Lorsqu’une vue est placée dans un frame de fenêtre, elle obtient un pointeur de site, qu’elle peut utiliser pour appeler `QueryInterface` pour `IServiceProvider`.  
   
 ## <a name="cases-where-an-editor-supports-multiple-views"></a>Cas où un éditeur prend en charge plusieurs vues  
- Si vous avez une séparation de document et la vue, il est de gestionnaire d’annulation normalement un associée au document lui-même. Toutes les unités d’annulation sont placées dans le Gestionnaire d’une annulation associé à l’objet de données du document.  
+ Si vous avez la séparation de document et la vue, il est normalement un gestionnaire d’annulation associé au document lui-même. Toutes les unités d’annulation sont placées sur un gestionnaire d’annulation associé à l’objet de données de document.  
   
- Au lieu de l’interrogation de l’affichage pour le Gestionnaire d’annulation, dont il en existe un pour chaque vue, les données du document de l’objet appelle <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> pour instancier le Gestionnaire d’annulation, en spécifiant un identificateur de classe de CLSID_OLEUndoManager. L’identificateur de classe est définie dans le fichier OCUNDOID.h.  
+ Au lieu de l’interrogation de l’affichage pour le Gestionnaire d’annulation, dont il en existe un pour chaque vue, les données du document object appelle <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> pour instancier le Gestionnaire d’annulation, en spécifiant un identificateur de classe de CLSID_OLEUndoManager. L’identificateur de classe est définie dans le *OCUNDOID.h* fichier.  
   
- Lorsque vous utilisez <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> pour créer votre propre instance de gestionnaire d’annulation, procédez comme suit pour connecter votre gestionnaire d’annulation dans l’environnement.  
+ Lorsque vous utilisez <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> pour créer votre propre instance de gestionnaire d’annulation, utilisez la procédure suivante pour raccorder votre gestionnaire d’annulation de l’environnement.  
   
-#### <a name="to-hook-your-undo-manager-into-the-environment"></a>Pour connecter votre gestionnaire d’annulation dans l’environnement  
+### <a name="to-hook-your-undo-manager-into-the-environment"></a>Pour raccorder votre gestionnaire d’annulation de l’environnement  
   
-1.  Appelez `QueryInterface` sur l’objet retourné à partir de <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> pour `IID_IOleUndoManager`. Stocke le pointeur vers <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>.  
+1.  Appelez `QueryInterface` sur l’objet retourné par <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> pour `IID_IOleUndoManager`. Store le pointeur vers <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>.  
   
-2.  Appelez `QueryInterface` sur `IOleUndoManager` pour `IID_IOleCommandTarget`. Stocke le pointeur vers <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
+2.  Appelez `QueryInterface` sur `IOleUndoManager` pour `IID_IOleCommandTarget`. Store le pointeur vers <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
   
-3.  Relais votre <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> et <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> appelle stockées `IOleCommandTarget` interface pour les commandes StandardCommandSet97 suivantes :  
+3.  Relais votre <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> et <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> appelle stocké `IOleCommandTarget` interface pour les commandes StandardCommandSet97 suivantes :  
   
     -   cmdidUndo  
   
@@ -61,7 +61,7 @@ L’interface principale utilisée pour la gestion de l’annulation est <xref:M
   
     -   cmdidMultiLevelRedoList  
   
-4.  Appelez `QueryInterface` sur `IOleUndoManager` pour `IID_IVsChangeTrackingUndoManager`. Stocke le pointeur vers <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>.  
+4.  Appelez `QueryInterface` sur `IOleUndoManager` pour `IID_IVsChangeTrackingUndoManager`. Store le pointeur vers <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>.  
   
      Utiliser le pointeur pour <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager> pour appeler le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.MarkCleanState%2A>, le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.AdviseTrackingClient%2A>et le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.UnadviseTrackingClient%2A> méthodes.  
   
@@ -73,12 +73,12 @@ L’interface principale utilisée pour la gestion de l’annulation est <xref:M
   
 8.  Appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject.SeverReferencesToOwner%2A>.  
   
-9. Lorsque des modifications sont apportées au document, appelez <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A> sur le gestionnaire avec un `OleUndoUnit` classe. Le <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A> méthode conserve une référence à l’objet, vous la publiez généralement juste après le <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A>.  
+9. Lorsque des modifications sont apportées au document, appelez <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A> sur le gestionnaire avec un `OleUndoUnit` classe. Le <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A> méthode conserve une référence à l’objet, vous le relâchez généralement juste après le <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A>.  
   
- La `OleUndoManager` classe représente une instance de pile d’annulation unique. Par conséquent, il est un objet de gestionnaire d’annulation par entité de données suivie pour annuler ou rétablir.  
+ Le `OleUndoManager` classe représente une instance de pile d’annulation unique. Par conséquent, il existe un objet de gestionnaire d’annulation par entité de données qui est suivie pour annuler ou rétablir.  
   
 > [!NOTE]
->  Lors de l’objet de gestionnaire d’annulation est largement par l’éditeur de texte, il est un composant général qui ne dispose d’aucune prise en charge spécifique pour l’éditeur de texte. Si vous souhaitez prendre en charge plusieurs niveaux annuler ou rétablir, vous pouvez utiliser cet objet pour ce faire.  
+>  Tandis que l’objet de gestionnaire d’annulation est largement utilisé par l’éditeur de texte, il est un composant général qui ne prend en charge spécifique pour l’éditeur de texte. Si vous souhaitez prendre en charge plusieurs niveaux annulation ou rétablissement, vous pouvez utiliser cet objet pour ce faire.  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>   

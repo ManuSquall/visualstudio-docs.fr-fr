@@ -1,5 +1,5 @@
 ---
-title: 'Comment : déclencher des événements lorsque l’éditeur perd le Focus | Documents Microsoft'
+title: 'Comment : déclencher des événements lorsque l’éditeur perd le Focus | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,17 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbdcf30443bc548fd8d182db301cbc7119d8ceae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af6abf503bec94cb45638b1e059f545f005cb318
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127035"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639654"
 ---
-# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Comment : déclencher des événements lorsque l’éditeur perd le Focus
-Il est parfois nécessaire de savoir quand un éditeur perd le focus sur le frame de fenêtre. Par exemple, vous devrez peut-être extraire du code à partir d’une fenêtre de code une fois que l’éditeur de focus n’est plus sur ce dernier. La procédure suivante fournit les étapes à suivre pour recevoir une notification de l’éditeur perd le focus.  
+# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Comment : déclencher des événements lorsque l’éditeur perd le focus
+Il est parfois nécessaire de savoir quand un éditeur perd le focus sur le frame de fenêtre. Par exemple, vous devrez peut-être extraire du code à partir d’une fenêtre de code une fois que l’éditeur de focus n’est plus sur celui-ci. La procédure suivante fournit les étapes à suivre pour recevoir une notification de l’éditeur perd le focus.  
   
-### <a name="to-fire-an-event-in-response-to-an-editor-losing-focus"></a>Pour déclencher un événement en réponse à un éditeur perd le focus  
+## <a name="to-fire-an-event-in-response-to-an-editor-losing-focus"></a>Pour déclencher un événement en réponse à un éditeur perd le focus  
   
 1.  Surveiller les événements de sélection en obtenant un <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> à partir de l’objet <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>.  
   

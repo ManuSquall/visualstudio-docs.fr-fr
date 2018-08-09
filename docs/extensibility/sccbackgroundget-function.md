@@ -1,5 +1,5 @@
 ---
-title: Fonction de SccBackgroundGet | Documents Microsoft
+title: Fonction SccBackgroundGet | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77e70720c9a26710c6d659ebac5b842bef3757eb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e9ac53809a5735457d7604593e975bb764bbdf81
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136755"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639085"
 ---
-# <a name="sccbackgroundget-function"></a>SccBackgroundGet (fonction)
+# <a name="sccbackgroundget-function"></a>Fonction SccBackgroundGet
 Cette fonction récupère à partir du contrôle de code source chaque des fichiers spécifiés sans aucune interaction utilisateur.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -37,18 +37,18 @@ SCCRTN SccBackgroundGet(
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+### <a name="parameters"></a>Paramètres  
  pContext  
- [in] Le pointeur de contexte plug-in de contrôle de code source.  
+ [in] Le pointeur de contexte de plug-in de contrôle de code source.  
   
  nFiles  
  [in] Nombre de fichiers spécifiés dans le `lpFileNames` tableau.  
   
  lpFileNames  
- [dans, out] Tableau des noms de fichiers à récupérer.  
+ [in, out] Tableau des noms de fichiers à récupérer.  
   
 > [!NOTE]
->  Les noms doivent être des noms qualifiés complets.  
+>  Les noms doivent être qualifiés complets des noms de fichiers local.  
   
  dwFlags  
  [in] Indicateurs de commande (`SCC_GET_ALL`, `SCC_GET_RECURSIVE`).  
@@ -63,13 +63,13 @@ SCCRTN SccBackgroundGet(
 |-----------|-----------------|  
 |SCC_OK|Opération achevée avec succès.|  
 |SCC_E_BACKGROUNDGETINPROGRESS|Une récupération en arrière-plan est déjà en cours (le plug-in de contrôle de code source doit retourner ce uniquement si elle ne prend pas en charge les opérations de traitement simultané).|  
-|SCC_I_OPERATIONCANCELED|Opération a été annulée avant de s’exécuter.|  
+|SCC_I_OPERATIONCANCELED|Opération a été annulée avant d’en cours terminée.|  
   
 ## <a name="remarks"></a>Notes  
- Cette fonction est toujours appelée sur un thread différent de celui qui a chargé le plug-in de contrôle de code source. Cette fonction n’est pas censée retourner jusqu'à ce qu’il est terminé ; Toutefois, il peut être appelée plusieurs fois avec plusieurs listes de fichiers, tous en même temps.  
+ Cette fonction est toujours appelée sur un thread différent de celui qui a chargé le plug-in de contrôle de code source. Cette fonction n’est pas censée retourner jusqu'à ce que l’opération est terminée ; Toutefois, elle peut être appelée plusieurs fois avec plusieurs listes de fichiers, tous en même temps.  
   
  L’utilisation de la `dwFlags` argument est le même que le [SccGet](../extensibility/sccget-function.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Fonctions d’API de plug-in de contrôle de source](../extensibility/source-control-plug-in-api-functions.md)   
+ [Fonctions d’API source contrôle plug-in](../extensibility/source-control-plug-in-api-functions.md)   
  [SccGet](../extensibility/sccget-function.md)

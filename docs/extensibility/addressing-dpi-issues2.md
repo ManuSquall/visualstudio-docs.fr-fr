@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97012b0d8b4214cdeafcaf12403948997436a212
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 838cbbe1b2f053a20113fddce238c84e646cbd62
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154328"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638663"
 ---
 # <a name="address-dpi-issues"></a>Problèmes de résolution d’adresse
 Un nombre croissant de périphériques fournies dans les écrans « haute résolution ». Ces écrans ont généralement plus de 200 pixels par pouce (PPP). Travailler avec une application sur ces ordinateurs nécessitera contenu mis à l’échelle pour répondre aux besoins de l’affichage du contenu à une distance de l’affichage normal pour l’appareil. À compter de 2014, la cible principale pour les écrans à haute densité est mobile computing appareils (tablettes, ordinateurs portables coque et téléphones).  
@@ -78,7 +78,7 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
   
  Consultez le <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> documentation sur MSDN.  
   
- Le tableau suivant présente des exemples de comment images doivent être à l’échelle PPP correspondante facteurs d’échelle. Les images en vert indiquent nos meilleures pratiques à compter de Visual Studio 2013 (100 à 200 % mise à l’échelle PPP) :  
+ Le tableau suivant présente des exemples de comment images doivent être à l’échelle PPP correspondante facteurs d’échelle. Les images présentées en orange indiquent nos meilleures pratiques à compter de Visual Studio 2013 (100 à 200 % mise à l’échelle PPP) :  
   
  ![Problèmes de PPP mise à l’échelle](../extensibility/media/dpi-issues-scaling.png "les problèmes de PPP mise à l’échelle")  
   
