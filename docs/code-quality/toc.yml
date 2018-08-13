@@ -575,6 +575,8 @@
               href: ca3076-insecure-xslt-script-execution.md
             - name: 'CA3077 : traitement non sécurisé dans la conception d’API, le document XML et le lecteur de texte XML'
               href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
+            - name: "CA3147\_: Marquer les gestionnaires de verbe avec ValidateAntiForgeryToken"
+              href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
         - name: avertissements liés à l’utilisation
           href: usage-warnings.md
           items:
