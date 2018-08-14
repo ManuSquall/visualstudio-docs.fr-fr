@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d10568bebf7dfd978d553900ea46fdd35c1e97f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: d9c49816fb412a7c52e3d9e63fd0e4ec5675e7c3
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978370"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511446"
 ---
 # <a name="unit-test-basics"></a>Concepts de base des tests unitaires
 
@@ -24,7 +24,7 @@ Vérifiez que votre code fonctionne comme prévu en créant et en exécutant des
 
 Les tests unitaires ont le plus d’effet sur la qualité du code quand ils font partie intégrante du flux de travail de votre développement logiciel. Dès que vous écrivez une fonction ou un autre bloc de code d’application, créez des tests unitaires pour vérifier le comportement du code en réponse aux cas standard, limite et incorrects des données d’entrée, ainsi que les hypothèses explicites ou implicites du code. Avec le *développement axé sur des tests*, comme vous créez les tests unitaires avant d’écrire le code, vous utilisez les tests unitaires comme documentation de conception et spécifications fonctionnelles.
 
-Vous pouvez générer rapidement des projets de test et méthodes de test à partir de votre code, ou créer manuellement les tests quand vous le souhaitez. Quand vous utilisez IntelliTest pour explorer votre code .NET, vous pouvez générer des données de test et une suite de tests unitaires. Pour chaque instruction dans le code, une entrée de test est générée pour exécuter cette instruction. Découvrez comment [générer des tests unitaires pour votre code](http://msdn.microsoft.com/library/dn823749.aspx).
+Vous pouvez générer rapidement des projets de test et méthodes de test à partir de votre code, ou créer manuellement les tests quand vous le souhaitez. Quand vous utilisez IntelliTest pour explorer votre code .NET, vous pouvez générer des données de test et une suite de tests unitaires. Pour chaque instruction dans le code, une entrée de test est générée pour exécuter cette instruction. Découvrez comment [générer des tests unitaires pour votre code](generate-unit-tests-for-your-code-with-intellitest.md).
 
 L’explorateur de tests peut également exécuter des infrastructures de tests unitaires tierces et open source ayant implémenté les interfaces des composants additionnels de l’explorateur de tests. Vous pouvez ajouter la plupart de ces frameworks dans le gestionnaire d’extensions de Visual Studio et la galerie Visual Studio. Consultez [Installer des frameworks de tests unitaires tiers](../test/install-third-party-unit-test-frameworks.md).
 
@@ -40,7 +40,7 @@ Pour obtenir une introduction aux tests unitaires qui vous conduit directement d
 
 ## <a name="the-mybank-solution-example"></a>Exemple de solution MyBank
 
-Dans cette rubrique, nous utilisons comme exemple le développement d’une application fictive, appelée `MyBank` . Vous n’avez pas besoin du code réel pour suivre les explications fournies dans cette rubrique. Les méthodes de test sont écrites en C# et présentées à l’aide de l’infrastructure de tests unitaires Microsoft pour le code managé. Cependant, les concepts peuvent être facilement transférés vers d’autres langages et infrastructures.
+Dans cette rubrique, nous utilisons comme exemple le développement d’une application fictive, appelée `MyBank` . Vous n’avez pas besoin du code réel pour suivre les explications fournies dans cette rubrique. Les méthodes de test sont écrites en C# et présentées à l’aide du framework de tests unitaires Microsoft pour le code managé. Toutefois, les concepts sont facilement transférés vers d’autres langages et frameworks.
 
  ![Solution MyBank](../test/media/ute_mybanksolution.png)
 
@@ -52,13 +52,13 @@ Dans cette rubrique, nous utilisons comme exemple le développement d’une appl
 
 -   `BankDb`
 
- Notre première tentative de conception du projet `Accounts` comporte une classe destinée à détenir les informations de base d’un compte, une interface qui spécifie les fonctionnalités courantes de n’importe quel type de compte, comme le dépôt ou le retrait, et une classe dérivée de l’interface qui représente un compte courant. Nous commençons les projets Accounts (Comptes) en créant les fichiers sources suivants :
+ Notre première tentative de conception du projet `Accounts` comporte une classe destinée à détenir les informations de base d’un compte, une interface qui spécifie les fonctionnalités usuelles de n’importe quel type de compte, par exemple le dépôt ou le retrait d’argent sur le compte, ainsi qu’une classe dérivée de l’interface qui représente un compte courant. Nous commençons les projets Accounts (Comptes) en créant les fichiers sources suivants :
 
 -   *AccountInfo.cs* définit les informations de base d’un compte.
 
 -   *IAccount.cs* définit une interface `IAccount` standard pour un compte, y compris les méthodes pour déposer de l’argent sur un compte ou en retirer, et pour récupérer le solde du compte.
 
--   *CheckingAccount.cs* contient la classe `CheckingAccount` qui implémente l’interface `IAccounts` d’un compte courant.
+-   *CheckingAccount.cs* contient la classe `CheckingAccount` qui implémente l’interface `IAccount` d’un compte courant.
 
 Nous savons par expérience qu’un retrait sur un compte courant doit s’assurer que le montant retiré est inférieur au solde du compte. Aussi, nous remplaçons la méthode `IAccount.Withdraw` de `CheckingAccount` par une méthode qui vérifie cette condition. La méthode peut ressembler à ceci :
 
@@ -311,7 +311,7 @@ La méthode attribuée s’exécute une fois pour chaque ligne de la table. **L�
 
  En savoir plus sur la [couverture du code](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) .
 
- **Q : Comment puis-je tester des méthodes de mon code qui ont des dépendances externes ?**
+ **Q : Puis-je tester des méthodes de mon code qui ont des dépendances externes ?**
 
  **R :** Oui. Si vous disposez de Visual Studio Enterprise, Microsoft Fakes peut être utilisé avec les méthodes de test que vous écrivez à l’aide des infrastructures de tests unitaires pour le code managé.
 

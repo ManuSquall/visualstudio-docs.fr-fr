@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fa2378a7ccff3e767ef21443bce3f3e57640f689
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 6f404b10c2b0a8c237684d72f89baa58bd87a7c3
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251752"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499017"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projets Python dans Visual Studio
 
@@ -44,14 +44,14 @@ Visual Studio fournit divers modèles de projet Python pour configurer rapidemen
 
 Quand vous développez votre application, vous devez généralement ajouter de nouveaux fichiers de différents types au projet. Vous pouvez les ajouter en cliquant avec le bouton droit sur le projet et en sélectionnant **Ajouter** > **Élément existant** pour rechercher un fichier à ajouter, ou en sélectionnant **Ajouter** > **Nouvel élément**, qui affiche une boîte de dialogue avec un large éventail de modèles d’élément. Comme décrit dans la référence [Modèle d’élément](python-item-templates.md), les options incluent des fichiers Python vides, une classe Python, un test unitaire et divers fichiers associés aux applications web. Vous pouvez explorer ces options avec un projet de test pour savoir ce qui est disponible dans votre version de Visual Studio.
 
-Chaque projet Python comprend un fichier de démarrage attribué, indiqué en gras dans **l’Explorateur de solutions**. Le fichier de démarrage est le fichier qui est exécuté quand vous démarrez le débogage (**F5** ou **Déboguer** > **Démarrer le débogage**) ou lorsque vous exécutez votre projet dans la fenêtre interactive (**Maj**+**Alt**+**F5** ou **Déboguer** > **Exécuter le projet en mode interactif Python**). Pour changer de fichier de démarrage, cliquez sur le nouveau fichier et sélectionnez **Définir comme fichier de démarrage**.
+Chaque projet Python comprend un fichier de démarrage attribué, indiqué en gras dans **l’Explorateur de solutions**. Le fichier de démarrage est le fichier exécuté quand vous démarrez le débogage (**F5** ou **Déboguer** > **Démarrer le débogage**), ou quand vous exécutez le projet dans la fenêtre **Interactive** (**Maj**+**Alt**+**F5** ou **Déboguer** > **Exécuter le projet en mode interactif Python**). Pour changer de fichier de démarrage, cliquez sur le nouveau fichier et sélectionnez **Définir comme fichier de démarrage**.
 
 > [!Tip]
 > Si vous supprimez le fichier de démarrage sélectionné à partir d’un projet et que vous n’en sélectionnez pas un autre, Visual Studio ne sait pas avec quel fichier Python démarrer lorsque vous essayez d’exécuter le projet. Dans ce cas, Visual Studio 2017 versions 15.6 et ultérieures présente une erreur ; les versions antérieures ouvrent une fenêtre de sortie avec l’interpréteur Python en cours d’exécution, ou la fenêtre de sortie s’affiche mais disparaît presque immédiatement. Si vous rencontrez l’un de ces comportements, vérifiez que vous avez un fichier de démarrage assigné.
 >
 > Si vous voulez maintenir la fenêtre de sortie ouverte pour une raison quelconque, cliquez avec le bouton droit sur le projet, sélectionnez **Propriétés**, sélectionnez l’onglet **Déboguer**, puis ajoutez `-i` au champ **Arguments de l’interpréteur**. Avec cet argument, l’interpréteur passe en mode interactif à la fin d’un programme, maintenant ainsi la fenêtre ouverte jusqu’à ce que vous entriez **Ctrl**+**Z** > **Entrée** pour quitter.
 
-Un nouveau projet est toujours associé à l’environnement Python global par défaut. Pour associer le projet à un autre environnement (y compris les environnements virtuels), cliquez avec le bouton droit sur le nœud **Environnements Python** du projet, sélectionnez **Add/Remove Python Environments** (Ajouter/supprimer des environnement Python) et sélectionnez ceux que vous souhaitez. Pour modifier l’environnement actif, cliquez avec le bouton droit sur l’environnement souhaité et sélectionnez **Activer l’environnement** comme indiqué ci-dessous. Pour plus d’informations, consultez [Sélection d’un environnement pour un projet](selecting-a-python-environment-for-a-project.md).
+Un nouveau projet est toujours associé à l’environnement Python global par défaut. Pour associer le projet à un autre environnement (y compris les environnements virtuels), cliquez avec le bouton droit sur le nœud **Environnements Python** du projet, sélectionnez **Add/Remove Python Environments** (Ajouter/supprimer des environnement Python) et sélectionnez ceux que vous souhaitez. Pour modifier l’environnement actif, cliquez avec le bouton droit sur l’environnement souhaité et sélectionnez **Activer l’environnement** comme indiqué ci-dessous. Pour plus d’informations, consultez [Sélectionner un environnement pour un projet](selecting-a-python-environment-for-a-project.md).
 
 ![Activation d’un environnement pour un projet Python](media/projects-activate-environment.png)
 

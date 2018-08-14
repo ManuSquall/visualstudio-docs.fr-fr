@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89689df19e5002c4c757d5a84c9263f8c40a10e7
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 249ea0c20bc47f63999a08962ba6cf7d1effd2b1
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388187"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513271"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Démarrage rapide : premier aperçu de l'IDE Visual Studio
 
@@ -104,12 +104,16 @@ Si vous rencontrez des problèmes pendant l’utilisation de Visual Studio, ou s
 
 Nous avons exploré quelques fonctionnalités de Visual Studio pour nous familiariser avec l’interface utilisateur. Pour en apprendre davantage :
 
-- Effectuez une visite guidée plus approfondie de Visual Studio et essayez-vous au débogage dans [Présentation de l’IDE de Visual Studio](../ide/visual-studio-ide.md)
+> [!div class="nextstepaction"]
+> [Démarrage rapide : personnaliser l’IDE](../ide/quickstart-personalize-the-ide.md)
 
-- Parcourez la section **Éléments généraux de l’interface utilisateur** dans la documentation VS, qui explore plus en détail les fenêtres comme [Liste d’erreurs](../ide/reference/error-list-window.md), la [fenêtre Sortie](../ide/reference/output-window.md), la [fenêtre Propriétés](../ide/reference/properties-window.md) et la [boîte de dialogue Options](../ide/reference/options-dialog-box-visual-studio.md)
+> [!div class="nextstepaction"]
+> [Démarrage rapide : Écrire du code dans l’éditeur](../ide/quickstart-editor.md)
+
+> [!div class="nextstepaction"]
+> [Démarrage rapide : projets et solutions](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Démarrage rapide : personnaliser l’IDE](../ide/personalizing-the-visual-studio-ide.md)
-- [Démarrage rapide : Écrire du code dans l’éditeur](../ide/quickstart-editor.md)
-- [Démarrage rapide : projets et solutions](../ide/quickstart-projects-solutions.md)
+- [Vue d’ensemble de l’IDE Visual Studio](../ide/visual-studio-ide.md)
+- [Fonctionnalités de Visual Studio 2017](../ide/advanced-feature-overview.md)

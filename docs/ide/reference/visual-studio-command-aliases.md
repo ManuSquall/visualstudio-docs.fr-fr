@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a1fb379322e44427384eb47811c585b00716f32
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 01cba4998db732a4f851f4bcd2f7185868e9341f
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952943"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513531"
 ---
 # <a name="visual-studio-command-aliases"></a>Alias de commandes Visual Studio
 
@@ -93,7 +93,7 @@ Le tableau ci-dessous contient une liste des alias de commandes Visual Studio pr
 |Nouveau projet|np NewProj|File.NewProject|
 |[Ouvrir un fichier, commande](../../ide/reference/open-file-command.md)|of Open|File.OpenFile|
 |[Ouvrir un projet, commande](../../ide/reference/open-project-command.md)|op|File.OpenProject|
-|Réduire aux définitions/Arrêter le mode Plan|OutlineDefs StopOutlining|Edit.CollapsetoDefinitions|
+|Réduire aux définitions/Arrêter le mode Plan|OutlineDefs StopOutlining|Edit.CollapseToDefinitions|
 |Pas à pas principal|p|Debug.StepOver|
 |Informations sur les paramètres|ParamInfo|Edit.ParameterInfo|
 |Pas à pas sortant|pr|Debug.StepOut|

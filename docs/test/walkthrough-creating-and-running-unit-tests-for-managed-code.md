@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 50fafdb91f9a845fed8681f7b75662200c45c913
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 13488619b38f5fd974d793d56f6a8d8cf86f15c1
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380861"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469111"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procédure pas à pas : créer et exécuter des tests unitaires pour le code managé
 
@@ -151,7 +151,7 @@ Il existe au moins trois comportements à vérifier :
 
 - La méthode lève une exception <xref:System.ArgumentOutOfRangeException> si le montant du débit est supérieur au solde.
 
-- La méthode lève l’exception <xref:System.ArgumentOutOfRangeException> si le montant du débit est inférieur à zéro.
+- La méthode lève <xref:System.ArgumentOutOfRangeException> si le montant du débit est inférieur à zéro.
 
 - Si le montant du débit est valide, la méthode le soustrait du solde du compte.
 
@@ -210,7 +210,7 @@ Une méthode de test doit répondre aux spécifications suivantes :
 
 ### <a name="analyze-the-test-results"></a>Analyser les résultats des tests
 
-Le résultat de test contient un message qui décrit l’échec. Pour la méthode `AreEquals`, le message affiche ce qui était attendu (le paramètre **Expected\<*valeur*>**) et ce qui a été reçu réellement (le paramètre **Actual\<*valeur*>**). Alors que le solde aurait dû diminuer, il a augmenté du montant du retrait.
+Le résultat de test contient un message qui décrit l’échec. Pour la méthode `AreEqual`, le message affiche ce qui était attendu (le paramètre **Expected\<*valeur*>**) et ce qui a été reçu réellement (le paramètre **Actual\<*valeur*>**). Vous vous attendiez à ce que le solde diminue, mais il a augmenté du montant du retrait.
 
 Le test unitaire a découvert un bogue : le montant du retrait est *ajouté* au solde du compte quand il doit être *soustrait*.
 

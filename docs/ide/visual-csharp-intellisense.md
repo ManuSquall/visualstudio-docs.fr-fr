@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fc40cae89f6085f921f5ac96214f374faa81422c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 882e9471646d83434c18f18811f9f6f693d2e551
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748229"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513398"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -37,26 +37,26 @@ Les listes de saisie semi-automatique IntelliSense en C# contiennent des jetons 
 
 - Méthodes d’extension
 
-La liste de saisie semi-automatique en C# est également assez intelligente pour éliminer les jetons inappropriés et présélectionner un jeton selon le contexte. Pour plus d’informations, consultez [Listes de complétion filtrées](#filtered-completion-lists).
+La liste de saisie semi-automatique en C# est également assez intelligente pour filtrer les jetons inappropriés et présélectionner un jeton en fonction du contexte. Pour plus d’informations, consultez [Listes de complétion filtrées](#filtered-completion-lists).
 
-## <a name="code-snippets-in-completion-lists"></a>Extraits de code dans les listes de complétion
+### <a name="code-snippets-in-completion-lists"></a>Extraits de code dans les listes de complétion
 
-En C#, la liste de saisie semi-automatique comprend des extraits de code pour vous aider à insérer facilement des entités prédéfinies de code dans votre programme. Dans la liste de saisie semi-automatique, les extraits de code sont affichés sous forme de [raccourci](../ide/code-snippets-schema-reference.md#shortcut) d’extrait de code. Pour plus d’informations sur les extraits de code fournis par défaut en C#, consultez [Liste d’extraits de code C#](../ide/visual-csharp-code-snippets.md).
+En C#, la liste de saisie semi-automatique comprend des extraits de code pour vous aider à insérer facilement des entités prédéfinies de code dans votre programme. Dans la liste de saisie semi-automatique, les extraits de code sont affichés sous forme de [raccourci](../ide/code-snippets-schema-reference.md#shortcut-element) d’extrait de code. Pour plus d’informations sur les extraits de code fournis par défaut en C#, consultez [Liste d’extraits de code C#](../ide/visual-csharp-code-snippets.md).
 
-## <a name="language-keywords-in-completion-lists"></a>Mots clés du langage dans les listes de complétion
+### <a name="language-keywords-in-completion-lists"></a>Mots clés du langage dans les listes de complétion
 
 En C#, la liste de saisie semi-automatique inclut également des mots clés de langage. Pour plus d’informations sur les mots clés du langage C#, consultez [Mots clés C#](/dotnet/csharp/language-reference/keywords/index).
 
-## <a name="extension-methods-in-completion-lists"></a>Méthodes d’extension dans les listes de complétion
+### <a name="extension-methods-in-completion-lists"></a>Méthodes d’extension dans les listes de complétion
 
 En C#, la liste de complétion inclut les méthodes d’extension qui sont dans l’étendue.
 
 > [!NOTE]
 > La liste de saisie semi-automatique n'affiche pas toutes les méthodes d'extension pour les objets <xref:System.String>.
 
-Les méthodes d’extension utilisent une icône différente de celle des méthodes d’instance. Pour obtenir la liste des icônes de liste, consultez [Icônes de l’Explorateur d’objets et de la fenêtre Affichage de classes](../ide/class-view-and-object-browser-icons.md). Quand une méthode d’instance et une méthode d’extension portant le même nom sont toutes deux dans la portée, la liste de saisie semi-automatique affiche l’icône de la méthode d’extension.
+Les méthodes d’extension utilisent une icône différente de celle des méthodes d’instance. Pour obtenir un guide de référence sur les icônes de liste, consultez [Icônes Affichage de classes et Explorateur d’objets](../ide/class-view-and-object-browser-icons.md). Quand une méthode d’instance et une méthode d’extension portant le même nom sont toutes deux dans la portée, la liste de saisie semi-automatique affiche l’icône de la méthode d’extension.
 
-## <a name="filtered-completion-lists"></a>Listes de saisie semi-automatique filtrées
+### <a name="filtered-completion-lists"></a>Listes de saisie semi-automatique filtrées
 
 IntelliSense supprime les membres inutiles de la liste de saisie semi-automatique à l'aide de filtres. C# filtre les listes de saisie semi-automatique qui apparaissent pour les éléments suivants :
 
@@ -78,13 +78,17 @@ IntelliSense supprime les membres inutiles de la liste de saisie semi-automatiqu
 
 - **Aide sur les paramètres** : affiche automatiquement la première surcharge de méthode qui correspond aux paramètres que vous entrez. Si plusieurs surcharges de méthode sont disponibles, vous pouvez utilisez les flèches haut et bas pour accéder à la surcharge suivante dans la liste.
 
-## <a name="most-recently-used-members"></a>Membres utilisés récemment
+### <a name="most-recently-used-members"></a>Membres utilisés récemment
 
-IntelliSense mémorise les membres que vous avez récemment sélectionnés dans la fenêtre contextuelle [Liste des membres](../ide/using-intellisense.md) pour la saisie semi-automatique du nom d’objet. La prochaine fois que vous utilisez la liste des membres, les membres utilisés récemment seront affichés en haut. L'historique des membres utilisés récemment est effacé entre chaque session dans l'IDE.
+IntelliSense mémorise les membres que vous avez récemment sélectionnés dans la fenêtre contextuelle [Liste des membres](../ide/using-intellisense.md) pour la saisie semi-automatique du nom d’objet. La prochaine fois que vous utiliserez la **liste des membres**, les membres utilisés récemment seront affichés en haut. L’historique des membres utilisés récemment est effacé entre chaque session de Visual Studio.
 
-## <a name="override"></a>override
+### <a name="override"></a>override
 
-Quand vous tapez [override](/dotnet/csharp/language-reference/keywords/override) et que vous appuyez sur **Barre d’espace**, IntelliSense affiche dans une zone de liste contextuelle tous les membres valides de la classe de base que vous pouvez remplacer. La saisie du type de retour de la méthode après `override` indique à IntelliSense d'afficher uniquement les méthodes qui retournent le même type. Quand IntelliSense ne trouve aucune correspondance, il affiche tous les membres de la classe de base.
+Quand vous tapez [override](/dotnet/csharp/language-reference/keywords/override) et que vous appuyez sur **Barre d’espace**, IntelliSense affiche dans une zone de liste contextuelle tous les membres valides de la classe de base que vous pouvez remplacer. Si vous tapez le type de retour de la méthode après `override`, IntelliSense affiche uniquement les méthodes qui retournent le même type. Quand IntelliSense ne trouve aucune correspondance, il affiche tous les membres de la classe de base.
+
+### <a name="ai-enhanced-intellisense"></a>IntelliSense amélioré par l’IA
+
+Vous pouvez installer une [extension IntelliCode](/visualstudio/intellicode/intellicode-visual-studio) expérimentale pour Visual Studio. Celle-ci propose des listes de saisie semi-automatique IntelliSense améliorées par l’intelligence artificielle. Cette extension prédit l’API la plus appropriée à utiliser, au lieu de présenter simplement une liste alphabétique des membres. Elle utilise votre contexte de code et vos modèles actuels pour fournir la liste dynamique.
 
 ## <a name="automatic-code-generation"></a>Génération de code automatique
 
@@ -104,9 +108,9 @@ L’option **Supprimer et trier les directives using** trie et supprime les déc
 
 ### <a name="implement-interface"></a>Implémenter une interface
 
-IntelliSense propose une option pour vous aider à implémenter une [interface](/dotnet/csharp/language-reference/keywords/interface) tout en travaillant dans l’éditeur de code. Normalement, pour implémenter correctement une interface, vous devez créer une déclaration de méthode pour chaque membre de l’interface dans votre classe. Grâce à IntelliSense, quand vous tapez le nom d’une interface dans une déclaration de classe, une ampoule **Actions rapides** s’affiche. Cette fonctionnalité vous permet d’implémenter l’interface automatiquement, à l’aide d’un nommage explicite ou implicite. Sous l'affectation de noms explicite, les déclarations de méthode comportent le nom de l'interface. Sous l'affectation de noms implicite, les déclarations de méthode n'indiquent pas l'interface à laquelle elles appartiennent. Une méthode d'interface explicitement nommée est accessible uniquement via une instance d'interface et non via une instance de classe. Pour plus d’informations, consultez [Implémentation d’interface explicite](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation).
+IntelliSense propose une option pour vous aider à implémenter une [interface](/dotnet/csharp/language-reference/keywords/interface) tout en travaillant dans l’éditeur de code. Normalement, pour implémenter correctement une interface, vous devez créer une déclaration de méthode pour chaque membre de l’interface dans votre classe. Grâce à IntelliSense, quand vous tapez le nom d’une interface dans une déclaration de classe, une ampoule **Actions rapides** s’affiche. Cette fonctionnalité vous permet d’implémenter l’interface automatiquement, à l’aide d’un nommage explicite ou implicite. Avec un nommage explicite, les déclarations de méthode indiquent le nom de l’interface. Avec un nommage implicite, les déclarations de méthode n’indiquent pas l’interface à laquelle elles appartiennent. Une méthode d'interface explicitement nommée est accessible uniquement via une instance d'interface et non via une instance de classe. Pour plus d’informations, consultez [Implémentation d’interface explicite](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation).
 
-L'option Implémenter l'interface génère le nombre minimal de stubs de méthode requis pour satisfaire l'interface. Si une classe de base implémente des parties de l'interface, ces stubs ne sont pas régénérés.
+L’option Implémenter l’interface génère le nombre minimal de stubs de méthode nécessaires à l’interface. Si une classe de base implémente des parties de l’interface, ces stubs ne sont pas regénérés.
 
 ### <a name="implement-abstract-base-class"></a>Implémenter une classe de base abstraite
 

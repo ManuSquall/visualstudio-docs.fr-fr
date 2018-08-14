@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 05cf2d99f88fcf6d43674d837d62f2e6053470a9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d028d89f149a2fe444508d09086f6bec2408889e
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950463"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510999"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introduire une variable locale dans Visual Studio
 
@@ -28,7 +28,7 @@ Cette génération de code s’applique à :
 
 **Quand :** vous disposez d’un code pouvant être facilement réutilisé ultérieurement s’il figurait dans une variable locale.
 
-**Pourquoi :** vous pourriez copier et coller le code plusieurs fois pour l’utiliser dans différents emplacements, mais il est préférable d’effectuer l’opération une fois, d’enregistrer le résultat dans une variable locale puis d’utiliser la variable locale de manière globale.
+**Pourquoi :** vous pouvez copier et coller le code plusieurs fois pour l’utiliser à différents emplacements. Toutefois, il est préférable d’effectuer l’opération une seule fois, d’enregistrer le résultat dans une variable locale, puis d’utiliser cette variable locale au gré des besoins.
 
 ## <a name="how-to"></a>Procédure
 

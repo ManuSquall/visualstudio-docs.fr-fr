@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 761f814d3a224240c27fa6b058fb08325f0307f4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6fb81ce1891a1e37670c81d1e7d0bf4b13fa2796
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177865"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469065"
 ---
 # <a name="get-started-with-unit-testing"></a>Bien démarrer avec les tests unitaires
 
@@ -109,7 +109,7 @@ Pour déterminer la proportion de code de votre projet qui sera réellement test
 
 ## <a name="use-a-different-unit-test-framework"></a>Utiliser un autre framework de tests unitaires
 
-Vous pouvez exécuter des tests unitaires dans Visual Studio à l’aide de frameworks de tests tiers tels que Boost, Google et nUnit. Utilisez le plug-in de ce framework pour permettre à Visual Studio Test Runner de fonctionner avec ce dernier.
+Vous pouvez exécuter des tests unitaires dans Visual Studio à l’aide de frameworks de tests tiers tels que Boost, Google et NUnit. Utilisez le plug-in de ce framework pour permettre à Visual Studio Test Runner de fonctionner avec ce dernier.
 
 Voici les étapes à suivre pour activer les frameworks de tests tiers :
 

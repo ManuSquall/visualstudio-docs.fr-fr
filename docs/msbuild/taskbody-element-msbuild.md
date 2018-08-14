@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96ba93b37ab8b483f899fef4d17db048db6e4532
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 7a545a8ff4b4666db168a15e8cc75689d33e89fe
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152199"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567388"
 ---
 # <a name="taskbody-element-msbuild"></a>Élément TaskBody (MSBuild)
-Contient les données transmises à `UsingTask` `TaskFactory`. Pour plus d’informations, voir [Élément UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
+Contient les données transmises à `UsingTask` `TaskFactory`. Pour plus d’informations, consultez [Élément UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
 
  \<Project>  
  \<UsingTask>  
@@ -34,7 +34,7 @@ Contient les données transmises à `UsingTask` `TaskFactory`. Pour plus d’inf
 
 ## <a name="syntax"></a>Syntaxe  
 
-```  
+```xml
 <TaskBody Evaluate="true/false" />  
 ```  
 

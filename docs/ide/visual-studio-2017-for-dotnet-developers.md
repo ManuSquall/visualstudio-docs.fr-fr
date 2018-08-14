@@ -12,24 +12,25 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0f7ffbef8fade3e5723a84ac433ce95679c26c3
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 269f885350283520768af5dfa4cb05fe9319d51b
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381092"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468271"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Guide de productivité C# pour Visual Studio 2017
 
 Découvrez comment [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) rend les développeurs plus productifs que jamais. Tirez parti de nos améliorations en performance et en productivité, comme l’accès aux assemblys décompilés, les suggestions de noms de variables au fil de la saisie, une vue hiérarchique dans l’**Explorateur de tests**, l’option Atteindre tout (**Ctrl**+**T**) pour accéder aux déclarations de fichiers/types/membres/symboles, une **Assistance sur l’exception** intelligente, la configuration et la mise en conformité du style du code, ainsi qu’un grand nombre de refactorisations et de corrections de code.
 
-##  <a name="im-used-to-my-keyboard-shortcuts-from-a-different-extensioneditoride"></a>Je suis habitué à mes raccourcis clavier dans une autre extension ou un autre éditeur/IDE.
+## <a name="im-used-to-my-keyboard-shortcuts-from-a-different-extensioneditoride"></a>Je suis habitué à mes raccourcis clavier dans une autre extension ou un autre éditeur/IDE
 
 **Nouveautés de Visual Studio 2017 version 15.8** Si vous utilisiez un autre IDE ou environnement de codage, vous pouvez basculer votre schéma de clavier vers *Visual Studio Code* ou *ReSharper (Visual Studio)*  :
 
 ![Schémas de clavier dans Visual Studio](../ide/media/VS2017Guide-Keyboard.png)
 
 Certaines extensions offrent également des schémas de clavier :
+
 - [Touches d’accès rapide pour Visual Studio (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
 - [Émulation Emacs](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.EmacsEmulation)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
@@ -58,23 +59,29 @@ Le tableau suivant liste les principaux raccourcis de Visual Studio :
 
 Pour en savoir plus sur les raccourcis clavier et les commandes dans Visual Studio, consultez [notre documentation](..\ide\tips-and-tricks-for-visual-studio.md).
 
-## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>J’ai besoin d’accéder rapidement à des fichiers ou des types.
-Visual Studio 2017 a une fonctionnalité appelée **Atteindre tout** (**Ctrl**+**T**). Atteindre tout vous permet de passer rapidement à n’importe quelle déclaration de fichier, type, membre ou symbole.
-- Changez l’emplacement de cette barre de recherche, ou désactivez l’aperçu de navigation dynamique à l’aide de l’icône d’**engrenage**
+## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>J’ai besoin d’accéder rapidement à des fichiers ou des types
+
+Visual Studio 2017 a une fonctionnalité appelée **Atteindre tout** (**Ctrl**+**T**). **Atteindre tout** vous permet de passer rapidement à n’importe quelle déclaration de fichier, type, membre ou symbole.
+
+- Changez l’emplacement de cette barre de recherche, ou désactivez l’aperçu de navigation dynamique à l’aide de l’icône d’**engrenage**.
 - Filtrez les résultats à l’aide de notre syntaxe de requête (par exemple « t mytype »). Vous pouvez également limiter la portée de votre recherche au document actif.
 - Le respect de la casse est pris en charge !
 
 ![Accéder à tout dans Visual Studio](../ide/media/VS2017Guide-go-to-all.png)
 
-## <a name="my-team-enforces-code-style-rules-on-our-codebase"></a>Mon équipe applique des règles de style de code à notre base de code.
+## <a name="my-team-enforces-code-style-rules-on-our-codebase"></a>Mon équipe applique des règles de style de code à notre base de code
+
 Vous pouvez utiliser un fichier *.editorconfig* pour codifier les conventions de codage et les faire suivre avec votre source.
-- Nous vous recommandons d’installer [l’extension des services de langage EditorConfig](https://aka.ms/editorconfig) pour ajouter et modifier un fichier *.editorconfig* dans Visual Studio.
-- Consultez la [documentation](https://aka.ms/editorconfigDocs) de toutes les options de convention de codage .NET.
+
+- Vous pouvez installer l’[extension des services de langage EditorConfig](https://aka.ms/editorconfig), qui facilite l’ajout et la modification d’un fichier *.editorconfig* dans Visual Studio.
+- Essayez l’[extension IntelliCode pour Visual Studio](/visualstudio/intellicode/intellicode-visual-studio). Cette extension expérimentale déduit vos styles de code à partir du code existant, puis crée un fichier *.editorconfig* non vide avec vos préférences de style de code déjà définies.
+- Consultez la documentation sur les [options de convention de codage .NET](https://aka.ms/editorconfigDocs).
 - Consultez cet [extrait gist](https://gist.github.com/kuhlenh/5471666a7a2c57fea427e81cf0a41da8) pour obtenir un exemple de fichier *.editorconfig*.
 
 ![Application du style de code dans Visual Studio](../ide/media/VSGuide_CodeStyle.png)
 
-## <a name="i-need-more-refactorings-and-code-fixes"></a>J’ai besoin de refactorisations et de corrections de code supplémentaires.
+## <a name="i-need-more-refactorings-and-code-fixes"></a>J’ai besoin de refactorisations et de corrections de code supplémentaires
+
 Visual Studio 2017 est fourni avec un grand nombre de refactorisations, d’actions de génération de code et de corrections de code. Les tildes rouges représentent les erreurs, les tildes verts représentent les avertissements et trois points gris représentent les suggestions de code. Vous pouvez accéder aux corrections de code en cliquant sur l’icône d’ampoule/tournevis, ou en appuyant sur **Ctrl**+**.** ou sur **Alt**+**Entrée**. Chaque correction est accompagnée d’une fenêtre de prévisualisation qui affiche une comparaison dynamique du code pour illustrer la correction.
 
 - Les correctifs rapides et refactorisations répandus sont les suivants :
@@ -98,6 +105,7 @@ Visual Studio 2017 est fourni avec un grand nombre de refactorisations, d’act
 ![Refactorisations dans Visual Studio](../ide/media/VSGuide_CodeAnalysis.png)
 
 ## <a name="i-need-find-usages-go-to-implementation-navigate-to-decompiled-assemblies"></a>J’ai besoin de rechercher des utilisations, d’accéder à l’implémentation, de naviguer vers des assemblys décompilés
+
 Visual Studio 2017 contient de nombreuses fonctionnalités qui vous permettent de rechercher et de parcourir votre code base. Découvrez plus d’informations sur les [fonctionnalités de navigation dans le code](../ide/navigating-code.md)
 
 | Fonctionnalité | Raccourci | Détails/améliorations |
@@ -111,16 +119,20 @@ Visual Studio 2017 contient de nombreuses fonctionnalités qui vous permettent d
 
 ![Accéder à tout et Rechercher toutes les références](../ide/media/VSIDE_Productivity_Navigation.png)
 
-## <a name="i-want-to-run-and-see-my-unit-tests"></a>Je souhaite exécuter et afficher mes tests unitaires.
+## <a name="i-want-to-run-and-see-my-unit-tests"></a>Je souhaite exécuter et voir mes tests unitaires
+
 Nous avons apporté de nombreuses améliorations à l’expérience de test dans Visual Studio 2017. Utilisez l’une de nos expériences de test unitaire avec les frameworks de test MSTest v1, MSTest v2, NUnit ou XUnit.
+
 - La découverte de tests de l’**Explorateur de tests** est rapide dans la version 15.6 (pour de meilleurs résultats, passez à la dernière version de votre adaptateur de test).
 - Organisez vos tests dans l’Explorateur de tests avec notre nouveau *tri hiérarchique* dans la version 15.6.
 - [Live Unit Testing](../test/live-unit-testing.md) exécute en continu les tests impactés par vos modifications du code et met à jour les icônes de l’éditeur inline pour vous informer de l’état de vos tests. Incluez ou excluez des tests spécifiques ou des projets de test de votre *jeu de tests dynamique*.
 
 ![Vue de la hiérarchie de l’Explorateur de tests dans Visual Studio](../ide/media/VSGuide_Testing.png)
 
-## <a name="i-want-to-debug-my-code"></a>Je souhaite déboguer mon code.
-Nous avons ajouté une multitude de nouvelles fonctionnalités de débogage dans Visual Studio 2017.
+## <a name="i-want-to-debug-my-code"></a>Je souhaite déboguer mon code
+
+Nous avons ajouté une multitude de nouvelles fonctionnalités de débogage dans Visual Studio 2017 :
+
 - *Cliquer pour exécuter* vous permet de placer le curseur à côté d’une ligne de code, de cliquer sur l’icône verte de « lecture » qui s’affiche et d’exécuter votre programme jusqu’à ce qu’il atteigne cette ligne.
 - La nouvelle **Assistance sur l’exception** place les informations les plus importantes, comme la variable 'null' d’une NullReferenceException, en haut de la boîte de dialogue.
 - Le débogage [Revenir en arrière](../debugger/how-to-use-intellitrace-step-back.md) vous permet de revenir aux étapes ou aux points d’arrêt précédents et de voir l’état de l’application comme elle était avant.
@@ -128,14 +140,17 @@ Nous avons ajouté une multitude de nouvelles fonctionnalités de débogage dans
 
 ![Nouvelle assistance sur l’exception dans Visual Studio 2017](../ide/media/VSGuide_Debugging.png)
 
-## <a name="i-want-to-use-version-control-with-my-projects"></a>Je veux utiliser la gestion de versions avec mes projets.
+## <a name="i-want-to-use-version-control-with-my-projects"></a>Je veux utiliser la gestion de versions avec mes projets
+
 Vous pouvez utiliser git ou TFVC pour stocker et mettre à jour votre code dans Visual Studio.
+
 - Organisez vos changements locaux avec **Team Explorer** et utilisez la barre d’état pour suivre les validations et les changements en attente.
 - Configurez l’intégration et la livraison continues pour vos projets dans Visual Studio avec l’extension [Outils de livraison continue pour Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) et adoptez le flux de travail de développement agile.
 
 ![Contrôle de code source dans Visual Studio](../ide/media/VSIDE_Productivity_SourceControl.png)
 
 ## <a name="what-other-features-do-i-need-to-know-about"></a>Quelles sont les autres fonctionnalités à connaître ?
+
 Voici une liste de fonctionnalités de l’éditeur liées à la productivité pour rendre l’écriture de code plus efficace. Vous devrez peut-être activer certaines fonctionnalités, car elles sont désactivées par défaut (elles peuvent éventuellement indexer des éléments sur votre machine, être controversées ou être à l’état expérimental).
 
 | Fonctionnalité | Détails | Comment activer |
@@ -149,6 +164,8 @@ Voici une liste de fonctionnalités de l’éditeur liées à la productivité p
 | [Extraits de code](../ide/visual-csharp-code-snippets.md) | Permet de vous épargner le texte réutilisable courant |  Tapez un nom d’extrait et appuyez deux fois sur **Tab**. |
 
 ## <a name="missing-a-feature-that-makes-you-productive-or-experiencing-poor-performance"></a>Est-ce qu’il vous manque une fonctionnalité qui améliore votre productivité, ou est-ce que vous trouvez le niveau de performance médiocre ?
+
 Il existe plusieurs façons de nous laisser des commentaires :
+
 - Vous pouvez soumettre des demandes de fonctionnalités .NET dans notre [dépôt GitHub](https://github.com/dotnet/roslyn/issues).
 - Vous pouvez soumettre des demandes de fonctionnalités Visual Studio, des bogues et des problèmes de performances en utilisant l’icône **Envoyer des commentaires** en haut à droite de la fenêtre Visual Studio.

@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a9890be18e3d43f4c036da72bf2794801e5ec70
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 517eb98e7ca5b32d07a4501823ca092c366e4639
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425155"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469150"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Procédure pas à pas : créer un extrait de code
 Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suffit de créer un fichier XML, de le remplir avec les éléments appropriés et d’y ajouter votre code. Vous pouvez aussi ajouter des références et des paramètres de remplacement dans votre code. Vous pouvez ensuite ajouter l’extrait de code à votre installation Visual Studio avec le bouton **Importer** dans le **Gestionnaire des extraits de code** (**Outils** > **Gestionnaire des extraits de code**).
@@ -34,8 +34,7 @@ Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suf
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<CodeSnippets
-    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
     <CodeSnippet Format="1.0.0">
         <Header>
             <Title></Title>
@@ -55,7 +54,7 @@ Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suf
 
 2.  Entrez un titre pour l’extrait de code (par exemple, « Hello World VB » dans l’élément **Title**.
 
-3.  Spécifiez le langage de l’extrait de code dans l’attribut **Languages** de l’élément **Code**. Pour cet exemple, entrez « VB ».
+3.  Indiquez le langage de l’extrait dans l’attribut **Languages** de l’élément **Code**. Pour cet exemple, entrez « VB ».
 
 4.  Ajoutez du code dans la section **CDATA** de l’élément **Code**, par exemple :
 
@@ -191,7 +190,7 @@ Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suf
     </Imports>
     ```
 
-4.  Pour déclarer un remplacement de littéral pour la chaîne de connexion SQL, ajoutez un élément **Declarations** sous l’élément **Snippet** et, à l’intérieur du nouvel élément, ajoutez un élément **Literal** et des sous-éléments pour l’ID, l’info-bulle et la valeur par défaut du remplacement :
+4.  Si vous souhaitez déclarer un remplacement de littéral pour la chaîne de connexion SQL, ajoutez un élément **Declarations** sous l’élément **Snippet** puis, à l’intérieur du nouvel élément, ajoutez un élément **Literal** et des sous-éléments pour l’ID, l’info-bulle et la valeur par défaut du remplacement :
 
     ```xml
     <Declarations>

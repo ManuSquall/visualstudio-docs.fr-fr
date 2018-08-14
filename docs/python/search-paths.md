@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d1d05670192630e0bc4903988770c52840a5e347
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 64958097b7a5fe86cda1d2b7dee62c69cd2fea63
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118237"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586415"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Comment Visual Studio utilise les chemins de recherche Python
 
@@ -30,15 +30,15 @@ Visual Studio ignore la variable d’environnement de chemin de recherche, même
 
 Visual Studio fournit ainsi un moyen permettant de spécifier les chemins de recherche directement dans les environnements et les projets. Le code que vous exécutez ou déboguez dans Visual Studio reçoit les chemins de recherche dans la valeur de `PYTHONPATH` (et autres variables équivalentes). En ajoutant des chemins de recherche, Visual Studio inspecte les bibliothèques de ces emplacements et génère des bases de données IntelliSense pour celles-ci lorsque nécessaire (Visual Studio 2017 version 15.5 et versions antérieures ; la construction de la base de données peut prendre un certain temps en fonction du nombre de bibliothèques).
 
-Pour ajouter un chemin de recherche, cliquez avec le bouton droit sur l’élément **Chemins de recherche** dans l’Explorateur de solutions, sélectionnez **Add Folder to Search Path...** (Ajouter un dossier au chemin de recherche...), puis sélectionnez le dossier à inclure. Ce chemin d’accès est utilisé pour n’importe quel environnement associé au projet. (Vous pouvez voir des erreurs si l’environnement est basé sur Python 3 et que vous essayez d’ajouter un chemin de recherche à des modules Python 2.7.)
+Pour ajouter un chemin de recherche, cliquez avec le bouton droit sur l’élément **Chemins de recherche** dans l’**Explorateur de solutions**, sélectionnez **Ajouter le dossier au chemin de recherche**, puis sélectionnez le dossier à inclure. Ce chemin d’accès est utilisé pour n’importe quel environnement associé au projet. (Vous pouvez voir des erreurs si l’environnement est basé sur Python 3 et que vous essayez d’ajouter un chemin de recherche à des modules Python 2.7.)
 
-Les fichiers avec une extension `.zip` ou `.egg` peuvent également être ajoutés en tant que chemins de recherche en sélectionnant **Add Zip Archive to Search Path...** (Ajouter une archive zip au chemin de recherche...). À l’instar des dossiers, le contenu de ces fichiers est analysé et mis à disposition d’IntelliSense.
+Vous pouvez également ajouter les fichiers ayant une extension *.zip* ou *.egg* en tant que chemins de recherche, en sélectionnant **Ajouter une archive zip au chemin de recherche**. À l’instar des dossiers, le contenu de ces fichiers est analysé et mis à disposition d’IntelliSense.
 
-Si vous utilisez régulièrement les mêmes chemins de recherche et si le contenu ne change pas souvent, il peut être plus efficace de l’installer dans votre dossier site-packages. Analysé et stocké ensuite dans la base de données IntelliSense, le chemin de recherche est toujours associé à l’environnement souhaité et aucun chemin de recherche ne doit être ajouté à chaque projet.
+Si vous utilisez régulièrement les mêmes chemins de recherche et si le contenu ne change pas souvent, il peut être plus efficace de l’installer dans votre dossier site-packages. Le chemin de recherche est ensuite analysé et stocké dans la base de données IntelliSense. Il est toujours associé à l’environnement souhaité. Vous n’avez pas besoin d’ajouter un chemin de recherche à chaque projet.
 
-## <a name="see-also"></a>Voir aussi
+### <a name="see-also"></a>Voir aussi
 
-- [Gestion des environnements Python dans Visual Studio](managing-python-environments-in-visual-studio.md)
+- [Gérer les environnements Python dans Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Sélectionner un interpréteur pour un projet](selecting-a-python-environment-for-a-project.md)
-- [Utiliser requirements.txt pour les dépendances](managing-required-packages-with-requirements-txt.md)
+- [Utilisation requirements.txt pour les dépendances](managing-required-packages-with-requirements-txt.md)
 - [Référence sur la fenêtre Environnements Python](python-environments-window-tab-reference.md)

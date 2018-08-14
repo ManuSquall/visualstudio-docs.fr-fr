@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 265e0a4c596a78e53de6fe92d837796f2e52a703
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 93f4dd635e2d90a0ed56b4732c79bb67b569f09b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079146"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511233"
 ---
 # <a name="quickstart-use-the-code-editor"></a>Démarrage rapide : utiliser l’éditeur de code
 
@@ -157,14 +157,21 @@ Aucun développeur ne réussit à créer un code parfait dès le départ. L’un
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Vous avez terminé ce guide de démarrage rapide pour l’éditeur de Visual Studio. Vous pouvez maintenant suivre d’autres guides de démarrage rapide pour l’environnement de développement de Visual Studio, tels que [Démarrage rapide : projets et solutions](../ide/quickstart-projects-solutions.md) ou [Démarrage rapide : personnaliser Visual Studio](../ide/quickstart-personalize-the-ide.md), examinez d’autres manières de [Parcourir le code](../ide/navigating-code.md), ou consulter les liens fournis pour en savoir plus sur les fonctionnalités que nous avons vues. Bon développement !
+Vous avez terminé ce guide de démarrage rapide pour l’éditeur de Visual Studio. Vous pouvez ensuite essayer d’autres Guides de démarrage rapide pour l’environnement de développement Visual Studio.
+
+> [!div class="nextstepaction"]
+> [Démarrage rapide : premier aperçu de l'IDE Visual Studio](../ide/quickstart-ide-orientation.md)
+
+> [!div class="nextstepaction"]
+> [Démarrage rapide : personnaliser Visual Studio](../ide/quickstart-personalize-the-ide.md)
+
+> [!div class="nextstepaction"]
+> [Démarrage rapide : projets et solutions](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Démarrage rapide : premier aperçu de l'IDE Visual Studio](../ide/quickstart-ide-orientation.md)
-- [Démarrage rapide : personnaliser Visual Studio](../ide/quickstart-personalize-the-ide.md)
-- [Démarrage rapide : projets et solutions](../ide/quickstart-projects-solutions.md)
 - [Extraits de code](../ide/code-snippets.md)
+- [Naviguer dans le code](../ide/navigating-code.md)
 - [Mode Plan](../ide/outlining.md)
 - [Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md)
 - [Refactorisation](../ide/refactoring-in-visual-studio.md)

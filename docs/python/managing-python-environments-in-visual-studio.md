@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 819555851b1067cbc3720b704d3d9caabcb01f45
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: bb2a93ae9c05bef49551e3dd3fa6d68d998e09ec
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341867"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586575"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Comment créer et gérer des environnements Python dans Visual Studio
 
@@ -46,7 +46,7 @@ Les environnements globaux sont disponibles à tous les projets sur l’ordinate
 
 Les packages installés dans un environnement global étant accessibles à tous les projets qui utilisent cet environnement, des conflits peuvent survenir lorsque deux projets requièrent des packages incompatibles ou différentes versions du même package. Les environnements virtuels évitent de tels conflits en utilisant l’interpréteur et la bibliothèque standard d’un environnement global, mais en conservant ses propres magasins de package dans des dossiers isolés.
 
-Dans Visual Studio, vous pouvez créer un environnement virtuel pour un projet en particulier, qui est stocké dans un sous-dossier du projet. Visual Studio fournit une commande pour générer un fichier *requirements.txt* à partir de l’environnement virtuel, ce qui permet de recréer facilement l’environnement sur d’autres ordinateurs. Pour plus d’informations, consultez [Utiliser des environnements virtuels](selecting-a-python-environment-for-a-project.md#using-virtual-environments).
+Dans Visual Studio, vous pouvez créer un environnement virtuel pour un projet en particulier, qui est stocké dans un sous-dossier du projet. Visual Studio fournit une commande pour générer un fichier *requirements.txt* à partir de l’environnement virtuel, ce qui permet de recréer facilement l’environnement sur d’autres ordinateurs. Pour plus d’informations, consultez [Utiliser des environnements virtuels](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
 ### <a name="conda-environments"></a>Environnements conda
 
