@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 88810c2e4958e96bd5487ce1a5b059897b725b45
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: f7bb4dfea8e23941e6d9ad29b9760c9e7c85fc5f
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39132269"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567140"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutoriel : Créer une application Node.js et React dans Visual Studio
 
@@ -95,7 +95,7 @@ Cette application nécessite un certain nombre de modules npm pour s’exécuter
 
     Le fichier *package.json* du projet est mis à jour à l’aide des informations relatives au nouveau package, notamment sa version.
 
-1. Au lieu d’utiliser l’IU pour rechercher et ajouter les packages restants, un par un, collez le code suivant dans le fichier package.json. Remplacez la section `dependencies` par ce code :
+1. Au lieu d’utiliser l’IU pour rechercher et ajouter les packages restants, un par un, collez le code suivant dans le fichier package.json. Pour ce faire, remplacez la section `dependencies` par ce code :
 
     ```js
     "dependencies": {
@@ -110,9 +110,11 @@ Cette application nécessite un certain nombre de modules npm pour s’exécuter
     }
     ```
 
+    S’il n’existe aucune section `dependencies` dans votre version du modèle vide, vous devez l’ajouter au lieu de remplacer la section existante.
+
 1. Cliquez avec le bouton droit sur le nœud **npm** de votre projet, puis choisissez **Mettre à jour les packages npm**.
 
-    Sélectionnez la fenêtre **Sortie** pour voir la progression de l’installation des packages. L’installation pouvant prendre quelques minutes, vous risquez de ne pas voir les résultats immédiatement.
+    Dans le volet inférieur, sélectionnez la fenêtre **Sortie** pour voir la progression de l’installation des packages. L’installation pouvant prendre quelques minutes, vous risquez de ne pas voir les résultats immédiatement. Pour voir la sortie, veillez à sélectionner **Npm** dans le champ **Afficher la sortie à partir de** au sein de la fenêtre **Sortie**.
 
     Voici les modules npm tels qu’ils apparaissent dans l’Explorateur de solutions après leur installation.
 
@@ -144,7 +146,7 @@ Pour cette application simple, vous ajoutez les nouveaux fichiers projet à la r
 
 ## <a name="add-app-code"></a>Ajouter du code d’application
 
-1. Ouvrez *server.js* et remplacez le code par le code suivant :
+1. Ouvrez *server.js* et remplacez le code existant par le code suivant :
 
     ```javascript
     'use strict';

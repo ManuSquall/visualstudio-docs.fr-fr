@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95203738486b7e1304bc2a26032a5d0193d1e2e8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 5c10d09b1fd66572b45e3fde16c999c39b803523
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180270"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512302"
 ---
 # <a name="quickstart-projects-and-solutions"></a>Démarrage rapide : projets et solutions
 
@@ -178,11 +178,17 @@ Si vous souhaitez vérifier que votre test unitaire fonctionne correctement, cho
 
 Félicitations ! Vous avez terminé ce guide de démarrage rapide. Vous pouvez suivre d’autres guides de démarrage rapide pour Visual Studio ou en découvrir davantage sur la [création de projets et de solutions](../ide/creating-solutions-and-projects.md).
 
+> [!div class="nextstepaction"]
+> [Démarrage rapide : premier aperçu de l'IDE Visual Studio](../ide/quickstart-ide-orientation.md)
+
+> [!div class="nextstepaction"]
+> [Démarrage rapide : personnaliser Visual Studio](../ide/quickstart-personalize-the-ide.md)
+
+> [!div class="nextstepaction"]
+> [Démarrage rapide : codage dans l’éditeur](../ide/quickstart-editor.md)
+
 ## <a name="see-also"></a>Voir aussi
 
-- [Démarrage rapide : premier aperçu de l'IDE Visual Studio](../ide/quickstart-ide-orientation.md)
-- [Démarrage rapide : personnaliser l’éditeur et l’IDE de Visual Studio](../ide/quickstart-personalize-the-ide.md)
-- [Démarrage rapide : codage dans l’éditeur](../ide/quickstart-editor.md)
 - [Gérer les propriétés des projets et des solutions](../ide/managing-project-and-solution-properties.md)
 - [Gérer les références dans un projet](../ide/managing-references-in-a-project.md)
 - [Développer du code dans Visual Studio sans projets ni solutions](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)

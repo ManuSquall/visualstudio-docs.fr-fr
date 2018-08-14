@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3dc86281542dbedd429fae5f9976219bfa623878
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: d49748be3067ac2bbb6df9016883cb7be0f48f89
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235048"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586858"
 ---
 # <a name="create-a-unit-test-project"></a>Créer un projet de test unitaire
 
@@ -42,16 +42,17 @@ Les tests unitaires reflètent souvent la structure du code testé. Par exemple,
 5.  Si le code que vous souhaitez tester se trouve à un autre emplacement, consultez [Gestion des références dans un projet](../ide/managing-references-in-a-project.md) pour plus d’informations sur l’ajout de références.
 
 ## <a name="next-steps"></a>Étapes suivantes
- **Écriture de tests unitaires**
 
  Consultez l’une des sections suivantes :
 
--   [Tests unitaires sur votre code](../test/unit-test-your-code.md)
+**Écriture de tests unitaires**
 
--   [Écriture de tests unitaires pour C/C++](writing-unit-tests-for-c-cpp.md)
+- [Tests unitaires sur votre code](../test/unit-test-your-code.md)
 
--   [Utiliser le framework MSTest dans les tests unitaires](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+- [Écriture de tests unitaires pour C/C++](writing-unit-tests-for-c-cpp.md)
 
- **Exécution de tests unitaires**
+- [Utiliser le framework MSTest dans les tests unitaires](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+
+**Exécution de tests unitaires**
 
 - [Exécuter des tests unitaires avec l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md)

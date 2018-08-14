@@ -25,12 +25,12 @@ ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fcd5832b52c6cd9f72829c2bce8f7813b682cf4f
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: f1158b0e5f438e49acafad79af1b33ec43690e9a
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704572"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468541"
 ---
 # <a name="upgrade-dotfuscator-community-edition-ce"></a>Mettre à niveau Dotfuscator Community Edition (CE)
 
@@ -60,14 +60,6 @@ Alors que Dotfuscator Community Edition fournit un niveau de protection de base,
   * [Comportements de défense des applications][check-actions] supplémentaires.
   * La possibilité de fournir un délai d’avertissement avant l’échéance de fin de vie d’une application.
   * La possibilité de notifier le code d’application dans le délai d’avertissement de fin de vie ou après la date limite.
-  * Chiffrement des données de télémétrie.
-* *Surveillance d’applications*
-  * La possibilité de collecter des informations et de les enregistrer lors d’indisponibilités temporaires du réseau.
-  * La possibilité de collecter des informations d’identification personnelle.
-  * Utilisation illimitée du [suivi des fonctionnalités][features].
-  * La possibilité d’effectuer le suivi des exceptions interceptées et levées par votre code, en plus des exceptions non gérées.
-  * La possibilité d’effectuer le suivi des exceptions dans les assemblys `.dll`.
-  * Chiffrement des données de télémétrie.
 
 Dotfuscator Professional est l’[obfuscateur .NET][net-obfuscator] standard. Il est approprié pour les développeurs d’entreprise nécessitant un support technique, une maintenance et des mises à jour de produits continus.
 De plus, Dotfuscator Professional offre une intégration à Visual Studio plus étroite et est concédé sous licence pour une utilisation commerciale.
@@ -88,7 +80,6 @@ Pour plus d’informations sur les fonctionnalités de protection des applicatio
 [pruning]:  https://www.preemptive.com/products/dotfuscator/features#pruning
 
 [check-actions]:  https://www.preemptive.com/dotfuscator/pro/userguide/en/protection_checks_overview.html#actions
-[features]:  https://www.preemptive.com/dotfuscator/pro/userguide/en/instrumentation_features.html
 
 [net-obfuscator]:  https://www.preemptive.com/products/dotfuscator/overview
 [eval]:  https://www.preemptive.com/eval-request

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de11159e513468a543229df5aab640142b006736
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 944dbd13472c7dda3149aef4496fab2bcd505df1
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251931"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498965"
 ---
 # <a name="debug-your-python-code"></a>Déboguer votre code Python
 
@@ -155,9 +155,7 @@ Par défaut, le débogueur démarre votre programme avec le lanceur Python stand
 | **Chemin d’interpréteur** | Remplace le chemin d’accès associé à l’environnement actuel. La valeur peut être utile pour lancer votre script avec un interpréteur non standard. |
 | **Variables d’environnement** | Dans cette zone de texte multiligne, ajoutez des entrées sous la forme \<NOM>=\<VALEUR>. Comme ce paramètre est appliqué en dernier, au-dessus de toutes les variables d’environnement globales existantes et après la définition de l’élément `PYTHONPATH` en fonction du paramètre Chemins de recherche, vous pouvez l’utiliser pour remplacer manuellement ces autres variables. |
 
-<a name="the-debug-interactive-window"></a>
-
-## <a name="immediate-and-interactive-windows"></a>Fenêtre Exécution et fenêtre interactive
+## <a name="immediate-and-interactive-windows"></a>Fenêtres Exécution et Interactive
 
 Dans le cadre d’une session de débogage, vous pouvez utiliser deux fenêtres interactives : la fenêtre **Exécution** Visual Studio standard et la fenêtre **interactive de débogage Python**.
 

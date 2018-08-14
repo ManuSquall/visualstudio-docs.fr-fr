@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 13e8122649b1803e627576e4cf4d4bc83d1a286b
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 8f71ca67fc74c7cb852914bd4f66f053e722c435
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39206825"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468570"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Démarrage rapide : analyser les données d’utilisation de l’UC dans Visual Studio (ASP.NET)
 
@@ -31,9 +31,6 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
 1. Dans Visual Studio, sélectionnez **Fichier** > **Nouveau projet**.
 
 1. Sous **Visual C#**, choisissez **Web** puis, dans le volet central, choisissez **Application web ASP.NET (.NET Framework)**.
-
-    > [!NOTE]
-    > L’outil Utilisation de l’UC n’est pas pris en charge dans ASP.NET Core.
 
 1. Tapez un nom tel que **MyProfilingApp_MVC** et cliquez sur **OK**.
 

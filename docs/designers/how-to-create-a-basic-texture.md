@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour créer une texture de base
+title: 'Comment : créer une texture de base'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdf8de603ee071d3c1ca7fb3897126aec60b594a
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: c97e26ef8a580078c371319881425a5c9f8ff297
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924458"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512627"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Guide pratique pour créer une texture de base
 Ce document montre comment utiliser l’éditeur d’images pour créer une texture de base.
@@ -49,18 +49,18 @@ Ce document montre comment utiliser l’éditeur d’images pour créer une text
 
 3.  Dans la barre d’outils de l’éditeur d’images, choisissez l’outil **Remplissage**. À présent, la fenêtre **Propriétés** affiche les propriétés de l’outil **Remplissage** ainsi que les propriétés des images.
 
-4.  Définissez la couleur de premier plan sur noir entièrement transparent. Dans la fenêtre **Propriétés**, dans le groupe de propriétés **Couleurs**, sélectionnez **Premier plan**. Définissez les valeurs des propriétés **R**, **V**, **B** et **A** situées en regard du sélecteur de couleurs sur `0`.
+4.  Définissez la couleur de premier plan en choisissant du noir complètement transparent. Dans la fenêtre **Propriétés**, dans le groupe de propriétés **Couleurs**, sélectionnez **Premier plan**. Définissez les valeurs des propriétés **R**, **V**, **B** et **A** situées en regard du sélecteur de couleurs sur `0`.
 
 5.  Dans la barre d’outils de l’éditeur d’images, choisissez l’outil **Remplissage**, puis maintenez enfoncée la touche **Maj** et choisissez un point de l’image. L’utilisation de la touche **Maj** provoque le remplacement de la couleur de l’image par la valeur alpha de la couleur de remplissage. Par ailleurs, la valeur alpha permet de fusionner la couleur de remplissage avec la couleur de l’image.
 
     > [!IMPORTANT]
-    >  Cette étape, associée à la sélection de couleur de l’étape précédente, permet de s’assurer que l’image de base est préparée pour la texture de la cible que vous dessinez. Lorsque l’image est remplie de noir transparent, et parce que la bordure de la cible est noire, il n’existe pas d’artefact de crénelage autour de la cible.
+    > Cette étape, associée à la sélection de couleur de l’étape précédente, permet de s’assurer que l’image de base est préparée pour la texture de la cible que vous dessinez. Lorsque l’image est remplie de noir transparent, et parce que la bordure de la cible est noire, il n’existe pas d’artefact de crénelage autour de la cible.
 
 6.  Dans la barre d’outils de l’éditeur d’images, choisissez l’outil **Ellipse**.
 
-7.  Définissez la couleur de premier plan sur noir entièrement opaque. Définissez les valeurs des propriétés **R**, **V** et **B** sur `0`, et la valeur de la propriété **A** sur `255`.
+7.  Définissez la couleur de premier plan en choisissant du noir complètement opaque. Définissez les valeurs des propriétés **R**, **V** et **B** sur `0`, et la valeur de la propriété **A** sur `255`.
 
-8.  Définissez la couleur d’arrière-plan sur blanc entièrement opaque. Dans la fenêtre **Propriétés**, dans le groupe de propriétés **Couleurs**, sélectionnez **Arrière-plan**. Définissez les valeurs des propriétés **R**, **V**, **B** et **A** sur `255`.
+8.  Définissez la couleur d’arrière-plan en choisissant du blanc complètement opaque. Dans la fenêtre **Propriétés**, dans le groupe de propriétés **Couleurs**, sélectionnez **Arrière-plan**. Définissez les valeurs des propriétés **R**, **V**, **B** et **A** sur `255`.
 
 9. Définissez la largeur du contour de l’ellipse. Dans la fenêtre **Propriétés**, dans le groupe de propriétés **Apparence**, définissez la valeur de la propriété **Largeur** sur `8`.
 
@@ -69,13 +69,13 @@ Ce document montre comment utiliser l’éditeur d’images pour créer une text
 11. À l’aide de l’outil **Ellipse**, tracez un cercle des coordonnées de pixel `(3, 3)` aux coordonnées de pixel `(508, 508)`. Pour tracer le cercle plus facilement, vous pouvez maintenir enfoncée la touche **Maj** tout en effectuant le tracé.
 
     > [!NOTE]
-    >  Les coordonnées en pixels de l’emplacement actuel du pointeur sont affichées sur la barre d’état [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+    > Les coordonnées en pixels de l’emplacement actuel du pointeur sont affichées sur la barre d’état [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 12. Modifiez la couleur d’arrière-plan. Définissez **R** sur `44`, **V** sur `165`, **B** sur `211`, et **A** sur `255`.
 
 13. Tracez un autre cercle des coordonnées de pixel `(64, 64)` aux coordonnées de pixel `(448, 448)`.
 
-14. Modifiez la couleur d’arrière-plan de nouveau sur blanc entièrement opaque. Définissez **R**, **V**, **B** et **A** sur `255`.
+14. Changez à nouveau la couleur d’arrière-plan en choisissant du blanc complètement opaque. Définissez **R**, **V**, **B** et **A** sur `255`.
 
 15. Tracez un autre cercle des coordonnées de pixel `(128, 128)` aux coordonnées de pixel `(384, 384)`.
 

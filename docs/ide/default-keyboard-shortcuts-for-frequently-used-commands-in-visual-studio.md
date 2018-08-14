@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af260a34ba7410955095b40b4f9fbee9b217401
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d2f53ae425f4942a9a14289e84798756c9fec969
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917997"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512546"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Raccourcis clavier par défaut pour les commandes fréquemment utilisées dans Visual Studio
 
@@ -57,7 +57,7 @@ Vous pouvez accéder à des commandes fréquemment utilisées dans Visual Studio
 |Commandes|Raccourcis clavier [Contextes]|
 |--------------|-------------------------------------|
 |Edit.BreakLine|**Entrée** [Éditeur de texte, Concepteur de rapports, Concepteur Windows Forms]<br /><br /> ou **Maj+Entrée** [Éditeur de texte]|
-|Edit.CollapsetoDefinitions|**Ctrl+M**, **Ctrl+O** [Éditeur de texte]|
+|Edit.CollapseToDefinitions|**Ctrl+M**, **Ctrl+O** [Éditeur de texte]|
 |Edit.CommentSelection|**Ctrl+K**, **Ctrl+C** [Éditeur de texte]|
 |Edit.CompleteWord|**Alt+Droite** [Éditeur de texte, Concepteur de flux de travail]<br /><br /> ou **Ctrl+Barre d’espace** [Éditeur de texte, Concepteur de flux de travail]<br /><br /> ou **Ctrl+K**, **W** [Concepteur de flux de travail]<br /><br /> ou **Ctrl+K, Ctrl+W** [Concepteur de flux de travail]|
 |Edit.Copy|**Ctrl+C** [Global]<br /><br /> ou **Ctrl+Inser** [Global]|
