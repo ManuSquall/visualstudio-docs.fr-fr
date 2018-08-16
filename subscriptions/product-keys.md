@@ -9,12 +9,12 @@ description: Découvrez comment obtenir et gérer vos clés de produit dans les 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 810c560fcbae03678379a446f359e0a22d8ff085
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 7726470eaaec90ba5138a84901745bbde61201bd
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326813"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637836"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Utilisation de clés de produit dans les abonnements Visual Studio
 
@@ -47,7 +47,8 @@ Nos études montrent que la plupart des abonnés ont suffisamment de clés de pr
 
 ## <a name="locating-and-claiming-product-keys"></a>Recherche et demande de clés de produit
 Vous devez être connecté à votre abonnement Visual Studio pour afficher vos clés de produit. Pour rechercher des clés de produit, sélectionnez le lien bleu **Obtenir une clé** d’un produit spécifique dans la page [Téléchargements](https://my.visualstudio.com/downloads), comme illustré ci-dessous.  Toutes les clés disponibles sont également regroupées dans la page [Clés de produit](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs). Quand plusieurs clés d’un même produit sont disponibles, des remarques sont affichées dans la colonne Remarques du téléchargement pour vous aider à identifier la clé appropriée.
-    ![Obtenir une clé à partir de la page Téléchargements](_img/product-keys/download-get-key.png)
+> [!div class="mx-imgBorder"]   
+> ![Obtenir une clé à partir de la page Téléchargements](_img/product-keys/download-get-key.png)
     
 Certains produits regroupent plusieurs éditions du produit en un seul téléchargement. Dans ces cas de figure, la clé de produit entrée détermine l’édition du produit installée.
 Certaines clés sont fournies automatiquement, comme les clés « statiques » qui peuvent être utilisées un nombre de fois illimité, car elles ne nécessitent aucune activation. D’autres clés doivent être demandées à l’aide du lien **Obtenir une clé** correspondant au produit.
@@ -81,7 +82,8 @@ Pour demander une clé de produit :
 1.  Connectez-vous à votre abonnement Visual Studio.  Vous devez être connecté pour pouvoir télécharger des produits ou demander des clés de produit.
 2.  Cliquez sur l’onglet [Clés de produit](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs).
 3.  Les clés de produit sont répertoriées par nom de produit, par ordre alphabétique.  Vous pouvez faire défiler la liste jusqu’au nom de produit recherché, ou rechercher le produit à l’aide de la barre de recherche en haut de la page.
-    ![Rechercher une clé de produit](_img\product-keys\visio-product-key-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Rechercher une clé de produit](_img\product-keys\visio-product-key-cropped.png)
 
 Dans cet exemple, nous avons utilisé la barre de recherche pour rechercher une clé de produit Visio 2010.
 Comme vous pouvez le voir, plusieurs versions de Visio 2010 sont répertoriées.  Une clé a déjà été demandée pour Visio Standard 2010 et pour Visio Premium 2010, et ces deux versions ont encore quatre clés disponibles chacune.  Les deux clés ayant été demandées sont des clés de produit commercialisé et sont affichées dans la page.  Notez que vous pouvez enregistrer une brève remarque sur les clés demandées dans la colonne **Remarques**.  Vous pouvez utiliser cette colonne conjointement avec la date de la colonne **Demandé** pour suivre les clés que vous avez demandées.  Par exemple, ajoutez une remarque quand vous activez une installation du produit à l’aide de la clé.

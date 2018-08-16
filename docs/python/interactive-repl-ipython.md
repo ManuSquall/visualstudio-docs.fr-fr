@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6bd98a8b937dc5a4ff2f8227684be4fbb9a948c4
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: c4d9d7f03f8703bd549cf9e1098327a2fb59a497
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341505"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008214"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Utiliser IPython dans la fenêtre interactive
 
@@ -81,7 +81,7 @@ Pour cette procédure pas à pas, vous devez avoir installé l’environnement [
 
 IPython comporte de nombreuses autres fonctions utiles, par exemple des fonctions de sortie vers l’interpréteur de commandes système, de substitution de variables, de capture de sortie, etc. Pour plus d’informations, consultez la [documentation IPython](http://ipython.org/documentation.html).
 
-## <a name="see-also"></a>Voir aussi
+### <a name="see-also"></a>Voir aussi
 
 - Pour utiliser Jupyter facilement et sans installation, essayez gratuitement le [service hébergé Azure Notebooks](https://notebooks.azure.com/) qui vous permet de conserver et partager vos blocs-notes avec d’autres.
 

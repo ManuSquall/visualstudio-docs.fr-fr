@@ -9,12 +9,12 @@ description: Découvrez comment localiser votre PCN ou votre numéro d’autoris
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 137da647293907b7ca57a296f558121b30c50b1f
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: da4a9f1342abfc5701aadf32798305e349eb3ed7
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325425"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637017"
 ---
 # <a name="how-do-i-locate-my-public-customer-number-pcn-or-authorization-number"></a>Comment trouver mon « numéro de client public » (PCN) ou numéro d’autorisation ?
 
@@ -25,10 +25,12 @@ Pour effectuer l’intégration de votre organisation au portail d’administrat
 1.  Connectez-vous au Centre VLSC à l’adresse : [https://www.Microsoft.com/licensing/servicecenter](https://www.Microsoft.com/licensing/servicecenter).
 
 2. Dans l’onglet Abonnements, sélectionnez **Abonnements Visual Studio**.
-    ![Sélection des abonnements dans VLSC](_img/vlsc/vlsc-subscriptions.png)
+    > [!div class="mx-imgBorder"]
+    > ![Sélection des abonnements dans VLSC](_img/vlsc/vlsc-subscriptions.png)
 
 3. Le numéro de client public (PCN) se trouve environ à mi-page.
-    ![Recherche du PCN dans VLSC](_img/vlsc/vlsc-pcn.png)
+    > [!div class="mx-imgBorder"]
+    > ![Recherche du PCN dans VLSC](_img/vlsc/vlsc-pcn.png)
 
     
 Si vous ne voyez pas la page ci-dessus et que vous êtes redirigé vers la page de connexion de Visual Studio, copiez et collez le lien suivant dans votre navigateur : https://www.microsoft.com/Licensing/servicecenter/Subscription/AgreementSearch.
