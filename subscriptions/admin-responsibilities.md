@@ -9,12 +9,12 @@ description: Découvrez les responsabilités des administrateurs des abonnements
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1eb8dc3cf47241632085e86f589ba377343aa4f1
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 9fdefa652a368c344f11fdaf70dbf5db9b172fbf
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/06/2018
-ms.locfileid: "30862996"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638096"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Vue d’ensemble des responsabilités des administrateurs
 En tant qu’administrateur, vous avez la possibilité de gérer les abonnements pour votre organisation.  Le rôle d’administrateur a également la responsabilité de vérifier que les abonnements sont gérés conformément aux termes du contrat de licence. Cet article présente les responsabilités, les avantages et les limitations du rôle d’administrateur.
@@ -64,6 +64,7 @@ Les prestataires externes peuvent apporter des licences pour prendre part à vot
 
 ## <a name="track-user-assignment-and-process-orders"></a>Effectuer le suivi de l’attribution des utilisateurs et traiter les commandes
 Les administrateurs d’abonnements Visual Studio sont censés effectuer le suivi de l’utilisation de Visual Studio et traiter les commandes de toute augmentation d’utilisation selon la planification indiquée dans leur contrat de licence en volume ou dans leur Contrat de Fourniture de Produits et de Services Microsoft. Le nouveau portail d’administration des abonnements Visual Studio facilite cette opération grâce à un dispositif de suivi utile qui affiche vos licences disponibles et utilisées.
+
 ### <a name="high-water-mark-of-usage"></a>Limite supérieure d’utilisation
 **L’obligation de votre société d’acheter des abonnements Visual Studio prend effet immédiatement dans les cas suivants :**
 - Une licence est attribuée à un utilisateur.
