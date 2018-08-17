@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: becddc01dbe668fbdb129fd6e350f28e054408b7
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 2b3c0ddc63dcf9b094b3ca6fb8b66f32a82cca59
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34063724"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638353"
 ---
 # <a name="common-quick-actions"></a>Actions rapides courantes
 
@@ -102,7 +102,7 @@ private void MyMethod()
 
 ### <a name="make-method-asynchronous"></a>Rendre la méthode asynchrone
 
-Lors de l’utilisation du mot clé `await` ou `Await` dans une méthode, il est prévu que la méthode elle-même soit marquée avec le mot clé `async` ou `Async`.  Toutefois, si ce n’est pas le cas, une action rapide s’affiche pour vous permettre de rendre la méthode asynchrone. Utilisez l’option **Make method/Function asynchronous** (Rendre la méthode/fonction asynchrone) dans le menu Actions rapides.
+Lors de l’utilisation du mot clé `await` ou `Await` dans une méthode, il est prévu que la méthode elle-même soit marquée avec le mot clé `async` ou `Async`.  Toutefois, si ce n’est pas le cas, une action rapide apparaît, qui rend la méthode asynchrone. Utilisez l’option **Make method/Function asynchronous** (Rendre la méthode/fonction asynchrone) dans le menu Actions rapides.
 
 ```csharp
 // Before
@@ -142,7 +142,7 @@ End Function
 
 ### <a name="remove-unnecessary-usingsimports"></a>Supprimer les Usings inutiles/les importations superflues
 
-L’action rapide **Supprimer les Usings inutiles/les importations superflues** supprime toutes les instructions `using` et `Import` inutilisées pour le fichier actif.  Quand vous sélectionnez cet élément, les importations d’espaces de noms inutilisées sont immédiatement supprimées.
+L’action rapide **Supprimer les instructions Using/Imports inutiles** supprime toutes les instructions `using` et `Import` inutilisées pour le fichier actif.  Quand vous sélectionnez cet élément, les importations d’espaces de noms inutilisées sont supprimées.
 
 |  Langages applicables |  Version prise en charge |
 |  -------------------- | ----------------  |
@@ -150,7 +150,7 @@ L’action rapide **Supprimer les Usings inutiles/les importations superflues** 
 
 ### <a name="remove-unnecessary-cast"></a>Supprimer le cast inutile
 
-Si vous effectuez le cast d’un type en un autre type qui ne nécessite pas un cast, l’élément d’action rapide **Supprimer le cast inutile** supprime le cast de votre code.
+Si vous castez un type en un autre type qui ne nécessite pas de cast, l’élément d’action rapide **Supprimer le cast inutile** supprime le cast non nécessaire.
 
 ```csharp
 // before
@@ -868,7 +868,7 @@ Dim name = customer.name
 
 ### <a name="use-inferred-names"></a>Utiliser des noms déduits
 
-Ces actions rapides indiquent aux utilisateurs à quel moment ils peuvent déduire des noms de membres dans les types anonymes ou utiliser des noms d’éléments de tuples déduits de C# 7.1.
+Cette action rapide indique quand du code peut être simplifié de façon à utiliser des noms de membre inférés dans les types anonymes ou des noms d’éléments inférés dans les tuples.
 
 ```csharp
 // Before
@@ -897,7 +897,7 @@ var tuple = (age, name);
 
 ### <a name="deconstruct-tuple-declaration"></a>Déconstruire la déclaration de tuple
 
-Cette action rapide vous permet de déconstruire des déclarations de variable de tuple.
+Cette action rapide permet de déconstruire les déclarations de variables de tuple.
 
 ```csharp
 // Before
@@ -923,7 +923,7 @@ Console.WriteLine($"{x} {y}");
 
 ### <a name="make-method-synchronous"></a>Rendre la méthode synchrone
 
-Lors de l’utilisation du mot clé `async` ou `Async` sur une méthode, il est prévu que le mot clé `await` ou `Await` sera également utilisé quelque part dans cette méthode.  Toutefois, si ce n’est pas le cas, une action rapide s’affiche pour vous permettre de rendre la méthode synchrone en supprimant le mot clé `async` ou `Async` et en modifiant le type de retour. Utilisez l’option **Rendre la méthode synchrone** dans le menu Actions rapides.
+Lors de l’utilisation du mot clé `async` ou `Async` sur une méthode, le mot clé `await` ou `Await` doit également être utilisé dans cette méthode.  Cependant, si ce n’est pas le cas, une action rapide apparaît, qui vous permet de rendre la méthode synchrone en supprimant le mot clé `async` ou `Async`, et en changeant le type de retour. Utilisez l’option **Rendre la méthode synchrone** dans le menu Actions rapides.
 
 ```csharp
 // Before

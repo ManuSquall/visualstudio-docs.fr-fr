@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ef9867d233d3aa8f5645793f8801f6f69f4e9be
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a058badfecfea84841a6a857200c04ebabf42a58
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512814"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636822"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Démarrage rapide : Cloner un dépôt de code Python dans Visual Studio
 
@@ -37,7 +37,7 @@ Une fois que vous avez [installé la prise en charge de Python dans Visual Studi
 1. Sous **Dépôts Git locaux**, sélectionnez la commande **Cloner**, puis entrez `https://github.com/gregmalcolm/python_koans` dans le champ de l’URL, entrez un dossier pour les fichiers clonés et sélectionnez le bouton **Cloner**.
 
     > [!Tip]
-    > Le dossier que vous spécifiez dans Team Explorer est exactement le dossier qui recevra les fichiers clonés. Contrairement à la commande `git clone`, la création d’un clone dans Team Explorer ne crée pas automatiquement un sous-dossier avec le nom du dépôt.
+    > Le dossier que vous spécifiez dans **Team Explorer** est le dossier qui recevra les fichiers clonés. Contrairement à la commande `git clone`, la création d’un clone dans **Team Explorer** ne crée pas automatiquement un sous-dossier avec le nom du dépôt.
 
 1. Lorsque le clonage est terminé, le nom du référentiel s’affiche dans la liste **référentiels Git locaux**. Double-cliquez sur ce nom pour accéder au tableau de bord du référentiel dans **Team Explorer**.
 

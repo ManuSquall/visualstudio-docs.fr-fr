@@ -11,15 +11,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7051997550709790d2c12f8f8f9332f67fe6abd
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 9d2c8c23be02f13646c8577d2672bc60b63a1d0a
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748125"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008679"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutoriel 1 : créer une visionneuse d'images
-Dans ce didacticiel, vous générez un programme qui charge une image à partir d'un fichier et l'affiche dans une fenêtre. Vous apprenez à faire glisser des contrôles (par exemple, des boutons et des zones d'image) sur votre formulaire, définir leurs propriétés et utiliser des conteneurs pour redimensionner facilement le formulaire. Vous commencez également à écrire du code. Vous apprenez à :
+
+Dans ce didacticiel, vous générez un programme qui charge une image à partir d'un fichier et l'affiche dans une fenêtre. Vous découvrez comment utiliser le **Concepteur Windows Forms** pour faire glisser des contrôles (par exemple des boutons et des zones d’image) sur votre formulaire, définir leurs propriétés et utiliser des conteneurs pour redimensionner facilement le formulaire. Vous commencez également à écrire du code. Vous apprenez à :
 
 -   Créer un nouveau projet.
 
@@ -35,22 +36,22 @@ Dans ce didacticiel, vous générez un programme qui charge une image à partir 
 
 -   Écrire des méthodes de gestionnaire d'événements.
 
- Lorsque vous aurez terminé, votre programme ressemblera à l'image suivante.
+Quand vous avez terminé, votre programme se présente comme dans l’image suivante :
 
- ![Image créée dans ce didacticiel](../ide/media/express_pictureviewerdone.png) Image créée dans ce didacticiel
+![Image créée dans ce didacticiel](../ide/media/express_pictureviewerdone.png)
 
 ## <a name="tutorial-links"></a>Liens de tutoriels
 
- Pour télécharger une version complète de l’exemple, consultez la rubrique [Exemple complet de visionneuse d’images du tutoriel](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
+Pour télécharger une version complète de l’exemple, consultez la rubrique [Exemple complet de visionneuse d’images du tutoriel](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
 
- ![lien vers la vidéo](../data-tools/media/playvideo.gif)Pour obtenir une version vidéo de cette rubrique, consultez [Guide pratique pour créer une visionneuse d’images en Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205207) ou [Guide pratique pour créer une visionneuse d’images en C#](http://go.microsoft.com/fwlink/?LinkId=205198).
+![lien vers la vidéo](../data-tools/media/playvideo.gif)Pour obtenir une version vidéo de cette rubrique, consultez [Guide pratique pour créer une visionneuse d’images en Visual Basic](http://go.microsoft.com/fwlink/?LinkId=205207) ou [Guide pratique pour créer une visionneuse d’images en C#](http://go.microsoft.com/fwlink/?LinkId=205198).
 
 > [!NOTE]
->  Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio. Visual C# et Visual Basic sont tous deux traités dans ce didacticiel. Ne tenez compte que des informations spécifiques au langage de programmation que vous utilisez.
+> Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio. Visual C# et Visual Basic sont tous deux traités dans ce didacticiel. Ne tenez compte que des informations spécifiques au langage de programmation que vous utilisez.
 >
->  Pour consulter le code pour Visual Basic, choisissez l’onglet **VB** en haut des blocs de code. Pour visualiser le code pour Visual C#, choisissez l’onglet **C#**. Si vous êtes intéressé par Visual C++, consultez [Bien démarrer](../ide/getting-started-with-cpp-in-visual-studio.md) et [Tutoriel du langage C++](http://www.cplusplus.com/doc/tutorial/).
+> Pour consulter le code pour Visual Basic, choisissez l’onglet **VB** en haut des blocs de code. Pour visualiser le code pour Visual C#, choisissez l’onglet **C#**. Si vous êtes intéressé par Visual C++, consultez [Bien démarrer](../ide/getting-started-with-cpp-in-visual-studio.md) et [Tutoriel du langage C++](http://www.cplusplus.com/doc/tutorial/).
 >
->  Si vous souhaitez apprendre à développer des applications UWP Visual C# ou Visual Basic, consultez [Créer des applications UWP](https://developer.microsoft.com/windows/apps).
+> Si vous souhaitez apprendre à développer des applications UWP Visual C# ou Visual Basic, consultez [Créer des applications UWP](https://developer.microsoft.com/windows/apps).
 
 ## <a name="related-topics"></a>Rubriques connexes
 

@@ -9,12 +9,12 @@ description: La connexion peut échouer si des alias ou des noms conviviaux sont
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 838716b4cb99517977c5292ef4f3fac550ffff3c
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: d05ecb8645b9970b08ad15418a43a5c95f8b2c3c
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327061"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637680"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>La connexion à Abonnements Visual Studio peut échouer lors de l’utilisation d’alias
 
@@ -50,11 +50,14 @@ Suivez les étapes ci-dessous pour ajouter un nouvel abonné avec un compte d’
 1. Accédez au [Centre de gestion des licences en volume](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (VLSC) et connectez-vous.
 2. Sur la page d’administration de VLSC, cliquez sur **Abonnements**, puis sur **Abonnements Visual Studio**.
 
-    ![Menu Abonnements](_img//vlsc/vlsc-subscriptions.png)
+    > [!div class="mx-imgBorder"]
+    > ![Menu Abonnements](_img//vlsc/vlsc-subscriptions.png)
+
 
 3. Cliquez sur le **numéro de contrat** associé à l’abonnement Visual Studio.
 
-    ![Sélection du contrat](_img/vlsc/vlsc-agreement.png)
+    > [!div class="mx-imgBorder"]
+    > ![Sélection du contrat](_img/vlsc/vlsc-agreement.png)
 
 4. Cliquez sur **Attribuer un abonnement**.
 5. Sélectionnez le **niveau d’abonnement** souhaité.

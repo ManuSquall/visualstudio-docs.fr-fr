@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7e0a399297d3b89a0781c3693e6ffdf763d8ea31
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 016305c47da13c879e2895660915121cd93f33e3
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388291"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637615"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Étape 5 : Utiliser le modèle de projet web Flask de sondage
 
@@ -40,11 +40,11 @@ Visual Studio fournit aussi un projet à partir du modèle « Projet web Flask/J
 
 1. Dans la boîte de dialogue Nouveau projet, recherchez et sélectionnez le modèle **Projet web Flask de sondage**, appelez le projet « FlaskPolls » et sélectionnez **OK**.
 
-1. Comme les autres modèles de projet dans Visual Studio, le modèle « Projet web Flask de sondage » inclut un fichier *requirements.txt*. Des invites Visual Studio vous demandent où installer ces dépendances. Choisissez l’option, **Installer dans un environnement virtuel** et dans la boîte de dialogue **Ajouter un environnement virtuel**, sélectionnez **Créer** pour accepter les valeurs par défaut. (Ce modèle nécessite Flask, ainsi que les packages azure-storage et pymongo ; le modèle « Projet web Flask/Jade de sondage » nécessite aussi pyjade.)
+1. Comme les autres modèles de projet dans Visual Studio, le modèle « Projet web Flask de sondage » inclut un fichier *requirements.txt*. Visual Studio vous demande où installer ces dépendances. Choisissez l’option, **Installer dans un environnement virtuel** et dans la boîte de dialogue **Ajouter un environnement virtuel**, sélectionnez **Créer** pour accepter les valeurs par défaut. (Ce modèle nécessite Flask, ainsi que les packages azure-storage et pymongo ; le modèle « Projet web Flask/Jade de sondage » nécessite aussi pyjade.)
 
 1. Définissez le projet **FlaskPolls** comme projet par défaut pour la solution Visual Studio en cliquant avec le bouton droit sur ce projet dans **l’Explorateur de solutions** et en sélectionnant **Définir comme projet de démarrage**. Le projet de démarrage affiché en gras est ce qui est exécuté lorsque vous démarrez le débogueur.
 
-1. Sélectionnez **Déboguer** > **Démarrer le débogage** (**F5**) ou utilisez le bouton **Serveur Web** dans la barre d’outils pour exécuter le serveur :
+1. Sélectionnez **Déboguer** > **Démarrer le débogage** (**F5**) ou utilisez le bouton **Serveur web** dans la barre d’outils pour exécuter le serveur :
 
     ![Exécuter le bouton de la barre d’outils du serveur Web dans Visual Studio](media/django/run-web-server-toolbar-button.png)
 

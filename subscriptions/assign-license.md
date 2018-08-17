@@ -9,12 +9,12 @@ description: Découvrez comment les administrateurs peuvent attribuer des licenc
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e0baa4ee731b8d69e18ab59c958801d94fb99869
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 5307f05d39ca751453e73147cc08115bf8b9dd1a
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251703"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636793"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Attribuer des licences dans le portail d’administration des abonnements Visual Studio
 
@@ -29,44 +29,45 @@ Voici comment attribuer une licence d’abonnement Visual Studio à un nouvel ut
 1. Connectez-vous au [portail d’administration](https://manage.visualstudio.com).
 
 2. Pour attribuer une licence à un seul abonné Visual Studio, sélectionnez **Ajouter** en haut du tableau.
-
-   ![Ajouter un seul abonné](media\add-single-subscriber.png)
+    > [!div class="mx-imgBorder"]
+    > ![Ajouter un seul abonné](media\add-single-subscriber.png)
 
 3. Dans les champs de formulaire, entrez les informations relatives au nouvel abonné. Si votre organisation utilise Azure Active Directory, vous pouvez utiliser ce champ pour rechercher des utilisateurs dans votre annuaire actuel et sélectionner l’utilisateur approprié dans les résultats de la recherche. Une fois que vous avez sélectionné cet utilisateur, son nom, son adresse e-mail de connexion et son adresse e-mail de notification sont automatiquement renseignés.
+    > [!div class="mx-imgBorder"]
+    > ![Ajouter une nouvelle adresse e-mail de notification](media\add-new-subscriber-notification-email.png)
 
-   ![Ajouter une nouvelle adresse e-mail de notification](media\add-new-subscriber-notification-email.png)
+    Si vous souhaitez autoriser cet abonné à accéder aux téléchargements de logiciels quand il se connecte au [portail des abonnements Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), laissez la case Téléchargements activée dans la section **Paramètres de téléchargement**. Si vous choisissez de désactiver les téléchargements, l’utilisateur n’a pas accès aux téléchargements de logiciels, mais il garde l’accès à tous les autres avantages inclus dans son abonnement.
+    > [!div class="mx-imgBorder"]
+    > ![Accéder aux téléchargements](media\access-to-downloads.png)
 
-   Si vous souhaitez autoriser cet abonné à accéder aux téléchargements de logiciels quand il se connecte au [portail des abonnements Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), laissez la case Téléchargements activée dans la section **Paramètres de téléchargement**. Si vous choisissez de désactiver les téléchargements, l’utilisateur n’a pas accès aux téléchargements de logiciels, mais il garde l’accès à tous les autres avantages inclus dans son abonnement.
+    Pour changer la langue dans laquelle l’abonné reçoit des informations, utilisez la section **Préférences de communication**.
+    > [!div class="mx-imgBorder"]
+    > ![Changer la langue à utiliser pour l’envoi d’e-mails de notification](media\change-subscriber-communication-preference.png)
 
-   ![Accéder aux téléchargements](media\access-to-downloads.png)
-
-   Pour changer la langue dans laquelle l’abonné reçoit des informations, utilisez la section **Préférences de communication**.
-
-   ![Changer la langue à utiliser pour l’envoi d’e-mails de notification](media\change-subscriber-communication-preference.png)
-
-   Pour ajouter vos propres notes de référence à l’abonnement, utilisez la section **Ajouter une référence**.
-
-   ![Ajouter vos propres notes de référence à chaque abonnement](media\add-subscriber-reference-notes.png) 
+    Pour ajouter vos propres notes de référence à l’abonnement, utilisez la section **Ajouter une référence**.
+    > [!div class="mx-imgBorder"]
+    > ![Ajouter vos propres notes de référence à chaque abonnement](media\add-subscriber-reference-notes.png) 
 
     Après avoir sélectionné les options et entré les données de l’abonné, choisissez **Ajouter** en bas du menu volant **Ajouter l’abonné**.
-
-   ![Choisir le bouton Ajouter](media\add-button.png)
+    > [!div class="mx-imgBorder"]
+    > ![Choisir le bouton Ajouter](media\add-button.png)
 
 4. Une fois que vous avez ajouté l’abonné, un e-mail d’attribution, contenant des instructions supplémentaires, est automatiquement envoyé au nouvel abonné. Vous pouvez renvoyer l’e-mail d’attribution à tout moment en sélectionnant l’abonné et en cliquant sur le bouton **Renvoyer** dans le menu supérieur.
-
-   ![Renvoyer un e-mail d’activation à n’importe quel utilisateur ou à plusieurs utilisateurs chaque fois que vous le souhaitez](media\resend-subscriber-activation-emails.png) 
+    > [!div class="mx-imgBorder"]
+    > ![Renvoyer un e-mail d’activation à n’importe quel utilisateur ou à plusieurs utilisateurs chaque fois que vous le souhaitez](media\resend-subscriber-activation-emails.png) 
 
 ## <a name="bulk-assignments"></a>Attributions en bloc
 
 1. Pour ajouter plusieurs abonnés à la fois, accédez à l’onglet **Gérer les abonnés**. Dans le ruban du haut, cliquez sur **Ajouter en bloc**.
-
-  ![Ajouter plusieurs abonnés](media\add-multiple-subscribers.png)
+    > [!div class="mx-imgBorder"]
+    > ![Ajouter plusieurs abonnés](media\add-multiple-subscribers.png)
 
 1. L’attribution en bloc utilise un modèle Microsoft Excel pour charger les abonnés. Dans la boîte de dialogue permettant de charger plusieurs abonnés, cliquez sur **Télécharger** pour télécharger le modèle.
+    > [!div class="mx-imgBorder"]
+    > ![Télécharger le modèle Excel pour charger plusieurs abonnés](media\download-template-upload-subscribers.png)
 
-  ![Télécharger le modèle Excel pour charger plusieurs abonnés](media\download-template-upload-subscribers.png)
-
-   > ![REMARQUE] Téléchargez toujours la dernière version du modèle. L’utilisation d’une version antérieure peut faire échouer le chargement en bloc.
+    > [!NOTE]
+    > Téléchargez toujours la dernière version du modèle. L’utilisation d’une version antérieure peut faire échouer le chargement en bloc.
 
 1. Dans la feuille de calcul Excel, renseignez les champs avec les informations relatives aux utilisateurs auxquels vous souhaitez attribuer des abonnements. (Le champ *Référence* est facultatif.) Enregistrez le fichier localement une fois que vous avez terminé.
 
@@ -77,19 +78,19 @@ Voici comment attribuer une licence d’abonnement Visual Studio à un nouvel ut
     - Assurez-vous que les noms d’utilisateur ne contiennent pas d’espace superflu dans les noms ou prénoms composés (par exemple, si une personne porte le prénom composé « Maggie May », il doit être entré sous la forme « MaggieMay », car le système ne supprime pas l’espace superflu).
 
 1. Revenez au portail d’administration des abonnements Visual Studio. Dans la boîte de dialogue permettant de **charger plusieurs abonnés**, cliquez sur **Parcourir**.
-
-  ![Accéder à votre modèle enregistré pour charger plusieurs abonnés](media\bulk-add-browse-saved-template.png)
+    > [!div class="mx-imgBorder"]
+    > ![Accéder à votre modèle enregistré pour charger plusieurs abonnés](media\bulk-add-browse-saved-template.png)
 
 1. Accédez au fichier Excel que vous avez enregistré, puis cliquez sur **OK**.
+    > [!div class="mx-imgBorder"]
+    > ![Charger le modèle Excel pour charger plusieurs abonnés](media\bulk-upload-subscribers.png)
 
-  ![Charger le modèle Excel pour charger plusieurs abonnés](media\bulk-upload-subscribers.png)
+    Une boîte de dialogue de progression du chargement s’affiche.
 
-  Une boîte de dialogue de progression du chargement s’affiche.
+    Si le modèle contient des erreurs, le chargement échoue et les erreurs rencontrées s’affichent pour vous aider à corriger le modèle. Réessayez ensuite le chargement en bloc.
+    > [!div class="mx-imgBorder"]
+    > ![Message d’erreur si le chargement de plusieurs abonnés échoue](media\bulk-add-template-failed.png)
 
-  Si le modèle contient des erreurs, le chargement échoue et les erreurs rencontrées s’affichent pour vous aider à corriger le modèle. Réessayez ensuite le chargement en bloc.
-
-  ![Message d’erreur si le chargement de plusieurs abonnés échoue](media\bulk-add-template-failed.png)
-
-  Quand le chargement est réussi, vous voyez s’afficher la liste des abonnés et un message de confirmation.
-
-  ![Message de confirmation si le chargement de plusieurs abonnés réussit](media\bulk-add-template-success.png)
+    Quand le chargement est réussi, vous voyez s’afficher la liste des abonnés et un message de confirmation.
+    > [!div class="mx-imgBorder"]
+    > ![Message de confirmation si le chargement de plusieurs abonnés réussit](media\bulk-add-template-success.png)

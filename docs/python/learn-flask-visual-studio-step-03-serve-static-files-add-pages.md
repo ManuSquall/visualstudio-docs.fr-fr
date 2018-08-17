@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fd919296bdae626b781748a14275947723db9f36
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 38050d9ecb5956c4e782ec61b5ae2dc6801ad224
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388135"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637641"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Étape 3 : Prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle
 
@@ -24,17 +24,17 @@ ms.locfileid: "39388135"
 
 Dans les étapes précédentes de ce tutoriel, vous avez découvert comment créer une application Flask minimale avec une seule page HTML autonome. Les applications web modernes sont cependant composées en général de nombreuses pages et utilisent des ressources partagées, comme des fichiers CSS et JavaScript, pour offrir un comportement et un style cohérents.
 
-Dans cette étape, vous apprenez comment :
+Dans cette étape, vous apprenez à :
 
 > [!div class="checklist"]
-> - utiliser des modèles d’élément Visual Studio pour créer rapidement de nouveaux fichiers de types différents avec un code réutilisable pratique (étape 3-1)
+> - Utiliser des modèles d’élément Visual Studio pour ajouter rapidement de nouveaux fichiers de types différents avec un code réutilisable pratique (étape 3-1)
 > - Produire des fichiers statiques à partir du code (étape 3-2, facultative)
-> - ajoutez des pages supplémentaires à l’application (étape 3-3)
-> - utiliser l’héritage de modèle pour créer un en-tête et une barre de navigation utilisés sur plusieurs pages (étape 3-4)
+> - Ajouter des pages supplémentaires à l’application (étape 3-3)
+> - Utiliser l’héritage de modèle pour créer un en-tête et une barre de navigation utilisés sur plusieurs pages (étape 3-4)
 
 ## <a name="step-3-1-become-familiar-with-item-templates"></a>Étape 3-1 : se familiariser avec les modèles d’élément
 
-Quand vous développez une application Flask, vous ajoutez généralement beaucoup plus de fichiers Python, HTML, CSS et JavaScript. Pour chaque type de fichier (ainsi que d’autres fichiers tel que *web.config* dont vous avez besoin pour le déploiement), Visual Studio fournit des [modèles d’élément](python-item-templates.md) pratiques pour aider la prise en main.
+Quand vous développez une application Flask, vous ajoutez généralement beaucoup plus de fichiers Python, HTML, CSS et JavaScript. Pour chaque type de fichier (ainsi que d’autres fichiers tels que *web.config* dont vous pouvez avoir besoin pour le déploiement), Visual Studio fournit des [modèles d’élément](python-item-templates.md) pratiques pour bien commencer.
 
 Pour afficher les modèles disponibles, accédez à **Explorateur de solutions**, cliquez avec le bouton de droite sur le dossier dans lequel vous souhaitez créer l’élément, sélectionnez **Ajouter** > **Nouvel élément** :
 
@@ -42,9 +42,9 @@ Pour afficher les modèles disponibles, accédez à **Explorateur de solutions**
 
 Pour utiliser un modèle, sélectionnez le modèle souhaité, spécifiez un nom pour le fichier et sélectionnez **OK**. L’ajout d’un élément de cette manière permet d’ajouter automatiquement le fichier à votre projet Visual Studio et marque les modifications du contrôle de code source.
 
-### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Question : Comment Visual Studio sait quel modèle d’élément proposer ?
+### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Question : comment Visual Studio sait quel modèle d’élément proposer ?
 
-Réponse : Le fichier projet Visual Studio (*.pyproj*) contient un identificateur de type de projet qui le marque comme projet Python. Visual Studio utilise cet identificateur de type pour afficher uniquement les modèles d’élément qui conviennent pour le type de projet. De cette manière, Visual Studio peut fournir un ensemble riche de modèles d’élément pour plusieurs types de projet sans vous demander de les trier à chaque fois.
+Réponse : le fichier projet Visual Studio (*.pyproj*) contient un identificateur de type de projet qui le marque comme projet Python. Visual Studio utilise cet identificateur de type pour afficher uniquement les modèles d’élément qui conviennent pour le type de projet. De cette manière, Visual Studio peut fournir un ensemble riche de modèles d’élément pour plusieurs types de projet sans vous demander de les trier à chaque fois.
 
 ## <a name="step-3-2-serve-static-files-from-your-app"></a>Étape 3-2 : prendre en charge les fichiers statiques à partir de votre application
 
@@ -89,7 +89,7 @@ Dans les deux cas, vous pouvez organiser les fichiers comme vous le souhaitez so
 
 ### <a name="serve-a-static-file-from-code"></a>Produire un fichier statique à partir du code
 
-Flask fournit une fonction appelée `serve_static_file`, que vous pouvez appeler à partir du code pour référencer n’importe quel fichier au sein du dossier *static* du projet. Le processus suivant crée un point de terminaison d’API simple qui retourne un fichier de données statique.
+Flask fournit une fonction appelée `serve_static_file`, que vous pouvez appeler à partir du code pour référencer n’importe quel fichier au sein du dossier *static* du projet. Le processus suivant crée un point de terminaison d’API simple qui retourne un fichier de données statiques.
 
 1. Si ce n’est déjà fait, créez un dossier *static* : dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le dossier **HelloFlask** dans le projet Visual Studio, sélectionnez **Ajouter** > **Nouveau dossier** et nommez le dossier `static`.
 
@@ -113,9 +113,9 @@ Flask fournit une fonction appelée `serve_static_file`, que vous pouvez appeler
 
 1. Exécutez l’application et accédez au point de terminaison /api/data pour constater que le fichier statique est retourné. Arrêtez l’application quand vous avez terminé.
 
-### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Question : Existe-t-il des conventions pour organiser des fichiers statiques ?
+### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Question : existe-t-il des conventions pour organiser des fichiers statiques ?
 
-Réponse : Vous pouvez ajouter d’autres fichiers CSS, JavaScript et HTML dans votre dossier *static* comme vous le souhaitez. Une manière générale d’organiser des fichiers statiques consiste à créer des sous-dossiers nommés *polices*, *scripts* et *contenu* (pour les feuilles de style et autres fichiers).
+Réponse : vous pouvez ajouter d’autres fichiers CSS, JavaScript et HTML dans votre dossier *static* comme vous le souhaitez. Une manière générale d’organiser des fichiers statiques consiste à créer des sous-dossiers nommés *polices*, *scripts* et *contenu* (pour les feuilles de style et autres fichiers).
 
 ### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>Question : Comment gérer les variables d’URL et les paramètres de requête dans une API ?
 
@@ -136,7 +136,7 @@ Les étapes suivantes ajoutent une page « About » au projet « HelloFlask » e
     > [!Tip]
     > Si la commande **Nouvel élément** n’apparaît pas dans le menu **Ajouter**, vérifiez que vous avez arrêté l’application pour que Visual Studio quitte le mode Débogage.
 
-1. Remplacez le contenu de *about.html* par le balisage suivant (vous remplacez le lien explicite vers la page d’accueil par une barre de navigation simple à l’étape 3-4) :
+1. Remplacez le contenu *d’about.html* par le balisage suivant (vous remplacez le lien explicite vers la page d’accueil par une barre de navigation simple à l’étape 3-4) :
 
     ```html
     <html>
@@ -188,7 +188,7 @@ Le système de création de modèles de Flask offre deux moyens de réutiliser d
 
 Dans les deux cas, `<template_path>` est relatif au dossier *templates* de l’application (`../` ou `./` sont également autorisés).
 
-Un modèle de base délimite les *blocs* avec des balises `{% block <block_name> %}` et `{% endblock %}`. Si un modèle de référence utilise alors des balises portant le même nom de bloc, le contenu de son bloc remplace celui du modèle de base.
+Un modèle de base délimite les *blocs* avec des balises `{% block <block_name> %}` et `{% endblock %}`. Si un modèle de référence utilise ensuite des étiquettes portant le même nom de bloc, le contenu de son bloc remplace celui du modèle de base.
 
 Les étapes suivantes démontrent l’héritage :
 
@@ -222,7 +222,7 @@ Les étapes suivantes démontrent l’héritage :
     </html>
     ```
 
-1. Ajouter les styles suivants au fichier *static/site.css* de l’application (cette procédure pas à pas ne tente pas d’illustrer une conception réactive ici ; ces styles permettent simplement de générer un résultat intéressant) :
+1. Ajoutez les styles suivants au fichier *static/site.css* de l’application (cette procédure pas à pas ne tente pas d’illustrer une conception réactive ici ; ces styles permettent simplement de générer un résultat intéressant) :
 
     ```css
     .navbar {
