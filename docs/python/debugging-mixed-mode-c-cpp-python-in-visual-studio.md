@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 899720242910b97bf4ffd9fc4a847b6902b7574a
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 005ba501dff89ed26cd83bee04aa40e49e2f9dca
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341733"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008432"
 ---
 # <a name="debug-python-and-c-together"></a>Déboguer conjointement Python et C++
 
@@ -48,7 +48,7 @@ Les fonctionnalités de débogage en mode mixte sont les suivantes, comme expliq
     ![Activation du débogage du code natif](media/mixed-mode-debugging-enable-native.png)
 
     > [!Tip]
-    > Quand vous activez le débogage du code natif, la fenêtre de sortie Python peut disparaître immédiatement une fois le programme terminé sans afficher la pause habituelle **Appuyez sur une touche pour continuer**. Pour forcer une pause, ajoutez l’option `-i` au champ **Exécuter** > **Arguments de l’interpréteur** sous l’onglet **Déboguer** quand vous activez le débogage du code natif. Avec cet argument, l’interpréteur Python passe en mode interactif à la fin du code, où il attend que vous appuyiez sur **Ctrl**+**Z** > **Entrée** pour quitter.
+    > Quand vous activez le débogage du code natif, la fenêtre Sortie Python peut disparaître immédiatement à la fin de l’exécution du programme, sans afficher le message de pause habituel **Appuyez sur une touche pour continuer**. Pour forcer une pause, ajoutez l’option `-i` au champ **Exécuter** > **Arguments de l’interpréteur** sous l’onglet **Déboguer** quand vous activez le débogage du code natif. Avec cet argument, l’interpréteur Python passe en mode interactif à la fin du code, où il attend que vous appuyiez sur **Ctrl**+**Z** > **Entrée** pour quitter.
 
 1. Quand vous attachez le débogueur en mode mixte à un processus existant (**Débogage** > **Attacher au processus**), utilisez le bouton **Sélectionner** pour ouvrir la boîte de dialogue **Sélectionner le type de code**. Définissez ensuite l’option **Déboguer ces types de codes**, puis sélectionnez à la fois **Natif** et **Python** dans la liste :
 

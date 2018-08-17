@@ -9,12 +9,12 @@ description: Découvrez comment tirer le meilleur parti de vos abonnements Visua
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: eb8bde8af30a411f988c19cae9eed6df623f6437
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 40fa40ed6606fb9e1cae35c0acccfe7dd46bf920
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380679"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637338"
 ---
 # <a name="managing-subscriptions"></a>Gestion des abonnements
 
@@ -59,14 +59,14 @@ Le portail des abonnements Visual Studio regroupe tous vos abonnements et logici
 
 ### <a name="which-subscription-am-i-using"></a>Comment savoir quel abonnement est actif ?
 Dans la page Avantages, l’abonnement actif est affiché en surbrillance dans la bannière bleue.  Il est également affiché en haut à droite de la page.
-
-   ![Abonnement actif](_img\manage-vs-subscriptions\current-subscription-cropped.png)
+> [!div class="mx-imgBorder"]
+> ![Abonnement actif](_img\manage-vs-subscriptions\current-subscription-cropped.png)
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>Vous pouvez passer d’un abonnement à un autre des deux manières suivantes :
 - Cliquez sur la liste déroulante en haut à droite et sélectionnez l’abonnement dans la liste.
 - Cliquez sur l’onglet Abonnements, puis cliquez sur l’abonnement souhaité.
-
-   ![Changer d’abonnement](_img\manage-vs-subscriptions\change-subscription-resized.png)
+> [!div class="mx-imgBorder"]
+> ![Changer d’abonnement](_img\manage-vs-subscriptions\change-subscription-resized.png)
 
 ### <a name="if-your-subscription-is-not-visible"></a>Si votre abonnement n’est pas affiché...
 - Il a peut-être expiré.  Seuls les abonnements actifs sont affichés dans le portail Abonné.
@@ -102,7 +102,8 @@ Vous pouvez facilement modifier les informations de contact et les préférences
 3.  Sous l’onglet **À propos de**, vous pouvez modifier votre nom, votre adresse e-mail, votre pays/région, votre image de profil et vos préférences de contact.  Sous l’onglet **Préférences**, vous pouvez sélectionner la langue par défaut, le modèle de date et d’heure, le fuseau horaire et le thème de l’interface utilisateur.  
 4.  Quand vous avez effectué toutes les modifications souhaitées, cliquez sur **Enregistrer**. 
 5.  Cliquez sur le bouton **Précédent** dans votre navigateur pour revenir à la page Avantages. 
-    ![Modification des informations de profil](_img\manage-vs-subscriptions\edit-profile-resized.png)
+    > [!div class="mx-imgBorder"]    
+    > ![Modification des informations de profil](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
 
 ### <a name="linking-my-subscription-to-existing-vsts-or-azure-subscriptions"></a>Association de votre abonnement à un abonnement VSTS ou Azure existant
@@ -115,7 +116,8 @@ Pour ajouter un autre compte :
 2. Cliquez sur l’onglet **Abonnements**.
 3. Sous **Liens connexes**, choisissez **Ajouter un autre compte**.
 4. Entrez l’adresse e-mail de votre compte professionnel ou scolaire, puis cliquez sur **Ajouter**. 
-    ![Autre compte](_img\manage-vs-subscriptions\alternate-account-resized.png)
+    > [!div class="mx-imgBorder"]
+    > ![Autre compte](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 Une fois que vous avez ajouté un autre compte, vous pouvez le mettre à jour ou le supprimer à tout moment en cliquant sur l’onglet **Abonnements** et en choisissant l’option appropriée dans la section **Liens connexes**.  
 

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 29e4be790aef7dcb16031df91f76fd92b840bdf6
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 1e3e70675901128ed6b8d118e54dc10ddee152a5
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341785"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008617"
 ---
 # <a name="remotely-debug-python-code-on-azure"></a>Déboguer à distance du code Python sur Azure
 
@@ -48,7 +48,7 @@ Comme indiqué, construisez une URL avec le secret de *web.debug.config*, qui es
 
 ![Détermination du point de terminaison du débogueur dans un Azure App Service](media/azure-remote-debugging-secret.png)
 
-L’URL dont vous avez désormais besoin se présente sous la forme de la chaîne `wss://<secret>@<site_name>.azurewebsites.net/ptvsd`, dans laquelle vous devez remplacer &lt;secret&gt; et &lt;nom_site&gt; par vos propres valeurs.
+L’URL dont vous avez maintenant besoin se présente sous la forme `wss://<secret>@<site_name>.azurewebsites.net/ptvsd`, où vous devez remplacer &lt;secret&gt; et &lt;site_name&gt; par vos propres valeurs.
 
 Pour attacher le débogueur, sélectionnez **Débogage** > **Attacher au processus**, sélectionnez **Python remote debugging** (Débogage à distance Python) dans la zone déroulante **Transport**, entrez l’URL dans la zone de texte **Qualificateur**, puis appuyez sur **Entrée**. Si Visual Studio parvient à se connecter à App Service, il affiche un seul processus Python dans la liste. Sélectionnez-le, puis sélectionnez **Attacher** pour commencer le débogage :
 

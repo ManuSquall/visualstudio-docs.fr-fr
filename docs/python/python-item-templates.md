@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5bbfab8cac4050477686695ccb14c37d76cbf376
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 814af0de0074f41884550e9238b9dab0cb073e25
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469346"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008292"
 ---
 # <a name="python-item-templates"></a>Modèles d’éléments Python
 
@@ -30,22 +30,22 @@ Le tableau suivant décrit brièvement l’effet de chaque modèle d’élément
 
 | Modèle | Ce que crée le modèle |
 | --- | --- |
-| Fichier Python vide | Un fichier vide avec l’extension *.py*. |
-| Classe Python | Un fichier *.py* contenant une seule définition de classe Python vide. |
-| Package Python | Un dossier contenant un fichier *\_\_init\_\_.py*. |
-| Test unitaire Python | Un fichier *.py* avec un test unitaire unique basé sur le framework `unittest`, ainsi qu’un appel à `unittest.main()` pour exécuter les tests dans le fichier. |
-| Page HTML | Un fichier *.html* avec une structure de page simple composée d’un élément `<head>` et d’un élément `<body>`. |
-| JavaScript | Un fichier *.js* vide. |
-| Feuille de style | Un fichier *.css* contenant un style vide pour `body`. |
-| Fichier texte | Un fichier *.txt* vide. |
-| Application Django 1.9<br/>Application Django 1.4 | Un dossier portant le nom de l’application, qui contient les principaux fichiers d’une application Django, comme indiqué dans [Découvrir Django dans Visual Studio, étape 2-2](learn-django-in-visual-studio-step-02-create-an-app.md#step-2-1-create-an-app-with-a-default-structure) pour Django 1.9. Pour Django 1.4, le dossier *migrations*, le fichier *admin.py* et le fichier *apps.py* ne sont pas inclus. |
-| Fenêtre IronPython WPF | Une fenêtre WPF composée de deux fichiers côte à côte : un fichier *.xaml* qui définit `<Window>` avec un élément `<Grid>` vide, et un fichier *.py* associé qui charge le fichier XAML à l’aide de la bibliothèque `wpf`. Généralement utilisé dans un projet créé avec un des modèles de projet IronPython. Consultez [Gérer les projets Python - Modèles de projet](managing-python-projects-in-visual-studio.md#project-templates). |
-| Fichiers de prise en charge des rôles Web | Un dossier *bin* à la racine du projet (quel que soit le dossier sélectionné dans le projet). Le dossier contient un script de déploiement par défaut et un fichier *web.config* pour les rôles web Azure Cloud Services. Le modèle comprend également un fichier *readme.html* qui explique tous les détails. |
-| Fichiers de prise en charge des rôles de travail | Un dossier *bin* à la racine du projet (quel que soit le dossier sélectionné dans le projet). Le dossier contient un script de déploiement et de lancement par défaut, ainsi qu’un fichier *web.config*, pour les rôles de travail Azure Cloud Services. Le modèle comprend également un fichier *readme.html* qui explique tous les détails. |
-| Fichier web.config Azure (FastCGI) | Un fichier *web.config* qui contient des entrées pour les applications utilisant un objet [WSGI](https://wsgi.readthedocs.io/en/latest/) afin de prendre en charge les connexions entrantes. Ce fichier est généralement déployé à la racine d’un serveur web exécutant IIS, tel qu’Azure App Service. Pour plus d’informations, consultez [Publier sur Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). |
-| Fichier web.config Azure (HttpPlatformHandler) | Un fichier *web.config* qui contient des entrées pour les applications qui sont à l’écoute des connexions entrantes sur un socket. Ce fichier est généralement déployé à la racine d’un serveur web exécutant IIS, tel qu’Azure App Service. Pour plus d’informations, consultez [Publier sur Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). |
-| Fichier web.config des fichiers statiques Azure | Un fichier *web.config* généralement ajouté à un dossier *static* (ou à tout autre dossier contenant des éléments statiques) pour désactiver la prise en charge de ce dossier par Python. Ce fichier de configuration fonctionne conjointement avec l’un des fichiers de configuration FastCGI ou HttpPlatformHandler ci-dessus. Pour plus d’informations, consultez [Publier sur Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). |
-| Fichier web.config de débogage à distance Azure | Un fichier *web.config.debug* qui active le débogage à distance sur WebSockets, ainsi que *Microsoft.PythonTools.WebRole.dll* et un dossier *ptvsd* qui contient les modules à déployer sur le serveur pour activer le débogage à distance. En règle générale, vous créez cet élément au même emplacement que votre fichier *web.config*. Pour plus d’informations, consultez [Déboguer à distance du code Python sur Azure](debugging-remote-python-code-on-azure.md). Lisez également la remarque ci-dessous. |
+| **Fichier Python vide** | Un fichier vide avec l’extension *.py*. |
+| **Classe Python** | Un fichier *.py* contenant une seule définition de classe Python vide. |
+| **Package Python** | Un dossier contenant un fichier *\_\_init\_\_.py*. |
+| **Test unitaire Python** | Un fichier *.py* avec un test unitaire unique basé sur le framework `unittest`, ainsi qu’un appel à `unittest.main()` pour exécuter les tests dans le fichier. |
+| **Page HTML** | Un fichier *.html* avec une structure de page simple composée d’un élément `<head>` et d’un élément `<body>`. |
+| **JavaScript** | Un fichier *.js* vide. |
+| **Feuille de style** | Un fichier *.css* contenant un style vide pour `body`. |
+| **Fichier texte** | Un fichier *.txt* vide. |
+| **Application Django 1.9**<br/>**Application Django 1.4** | Un dossier portant le nom de l’application, qui contient les principaux fichiers d’une application Django, comme indiqué dans [Découvrir Django dans Visual Studio, étape 2-2](learn-django-in-visual-studio-step-02-create-an-app.md#step-2-1-create-an-app-with-a-default-structure) pour Django 1.9. Pour Django 1.4, le dossier *migrations*, le fichier *admin.py* et le fichier *apps.py* ne sont pas inclus. |
+| **Fenêtre IronPython WPF** | Une fenêtre WPF composée de deux fichiers côte à côte : un fichier *.xaml* qui définit `<Window>` avec un élément `<Grid>` vide, et un fichier *.py* associé qui charge le fichier XAML à l’aide de la bibliothèque `wpf`. Généralement utilisé dans un projet créé avec un des modèles de projet IronPython. Consultez [Gérer les projets Python - Modèles de projet](managing-python-projects-in-visual-studio.md#project-templates). |
+| **Fichiers de prise en charge des rôles web** | Un dossier *bin* à la racine du projet (quel que soit le dossier sélectionné dans le projet). Le dossier contient un script de déploiement par défaut et un fichier *web.config* pour les rôles web Azure Cloud Services. Le modèle comprend également un fichier *readme.html* qui explique tous les détails. |
+| **Fichiers de prise en charge des rôles de travail** | Un dossier *bin* à la racine du projet (quel que soit le dossier sélectionné dans le projet). Le dossier contient un script de déploiement et de lancement par défaut, ainsi qu’un fichier *web.config*, pour les rôles de travail Azure Cloud Services. Le modèle comprend également un fichier *readme.html* qui explique tous les détails. |
+| **Fichier web.config Azure (FastCGI)** | Un fichier *web.config* qui contient des entrées pour les applications utilisant un objet [WSGI](https://wsgi.readthedocs.io/en/latest/) afin de prendre en charge les connexions entrantes. Ce fichier est généralement déployé à la racine d’un serveur web exécutant IIS, tel qu’Azure App Service. Pour plus d’informations, consultez [Publier sur Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). |
+| **Fichier web.config Azure (HttpPlatformHandler)** | Un fichier *web.config* qui contient des entrées pour les applications qui sont à l’écoute des connexions entrantes sur un socket. Ce fichier est généralement déployé à la racine d’un serveur web exécutant IIS, tel qu’Azure App Service. Pour plus d’informations, consultez [Publier sur Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). |
+| **Fichier web.config des fichiers statiques Azure** | Un fichier *web.config* généralement ajouté à un dossier *static* (ou à tout autre dossier contenant des éléments statiques) pour désactiver la prise en charge de ce dossier par Python. Ce fichier de configuration fonctionne conjointement avec l’un des fichiers de configuration FastCGI ou HttpPlatformHandler ci-dessus. Pour plus d’informations, consultez [Publier sur Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). |
+| **Fichier web.config de débogage à distance Azure** | Un fichier *web.config.debug* qui active le débogage à distance sur WebSockets, ainsi que *Microsoft.PythonTools.WebRole.dll* et un dossier *ptvsd* qui contient les modules à déployer sur le serveur pour activer le débogage à distance. En règle générale, vous créez cet élément au même emplacement que votre fichier *web.config*. Pour plus d’informations, consultez [Déboguer à distance du code Python sur Azure](debugging-remote-python-code-on-azure.md). Lisez également la remarque ci-dessous. |
 
 > [!Note]
 > Si vous ajoutez le modèle de débogage *web.config* à un projet et si vous prévoyez d’utiliser le débogage à distance Python, vous devez publier le site en configuration **Debug**. Ce paramètre est distinct de la configuration de la solution active et a toujours la valeur par défaut **Release**. Pour le changer, ouvrez l’onglet **Paramètres** et utilisez la zone de liste modifiable **Configuration** dans l’Assistant **Publication**. (Consultez la [documentation Azure](https://azure.microsoft.com/develop/python/) pour plus d’informations sur la création et le déploiement vers des applications Web Azure.)

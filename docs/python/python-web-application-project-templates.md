@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9edb2a87b862d6a779bb299a20a3f21c471067b0
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 75f7a7d5a30fd3fb84bfd038c55b0731ae017ef1
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586545"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638711"
 ---
 # <a name="python-web-application-project-templates"></a>Modèles de projet d’application web Python
 
@@ -88,7 +88,7 @@ Quand un projet web est démarré à des fins de débogage, Visual Studio démar
 
 Dans le groupe **Débogage** :
 
-- **Chemins de recherche**, **Arguments de script**, **Arguments de l’interpréteur** et **Chemin de l’interpréteur** : ces options sont identiques à celles du [débogage standard](debugging-python-in-visual-studio.md)
+- **Chemins de recherche**, **Arguments de script**, **Arguments de l’interpréteur** et **Chemin de l’interpréteur** : ces options sont identiques à celles du [débogage standard](debugging-python-in-visual-studio.md).
 - **URL de lancement** : spécifie l’URL qui est ouverte dans votre navigateur. Ce champ est défini sur `localhost` par défaut.
 - **Numéro de port** : port à utiliser si aucun n’est spécifié dans l’URL (Visual Studio sélectionne automatiquement un port par défaut). Ce paramètre vous permet de remplacer la valeur par défaut de la variable d’environnement `SERVER_PORT`, qui est utilisée par les modèles pour configurer le port écouté par le serveur de débogage local.
 
