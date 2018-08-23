@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3fb68b4a84c6771c9430f2e8974ee485462b8563
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ea327f48bb1a1b04aa4b20601b8bdb3f7dfbb847
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945843"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634678"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Procédure pas à pas : Importer une page maître personnalisée et la page de site avec une image
   Cette procédure pas à pas montre comment importer une page maître personnalisée SharePoint et une page de site qui ont une image dans un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projet SharePoint.  
@@ -39,7 +39,7 @@ ms.locfileid: "37945843"
 ## <a name="prerequisites"></a>Prérequis  
  Vous devez disposer des composants suivants pour terminer cette procédure pas à pas :  
   
--   Éditions prises en charge [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] et SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Configuration requise pour développer des solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Éditions prises en charge [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] et SharePoint.  
   
 -   Visual Studio.  
   

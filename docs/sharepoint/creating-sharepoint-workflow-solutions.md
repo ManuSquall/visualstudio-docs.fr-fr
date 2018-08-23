@@ -23,17 +23,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4dc27993125c41de91e069cd4c87025f3a26ec07
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: dd67173078a81c5fc250ca993474a60057076d70
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327318"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634720"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Créer des solutions de flux de travail SharePoint
-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fournit des outils pour vous aider à créer des flux de travail personnalisés qui gèrent le cycle de vie des documents et éléments de liste dans un site SharePoint Web. Les éléments fournis incluent un concepteur, un ensemble de contrôles de l’activité et les références d’assembly nécessaires. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] inclut également le **Assistant Personnalisation de SharePoint**, pour aider à créer et configurer les flux de travail.
 
- Pour obtenir la liste des conditions préalables pour la création de projets SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], consultez [configuration requise pour développer des solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md). Pour plus d’informations sur SharePoint, consultez [Microsoft produits et Technologies SharePoint](http://go.microsoft.com/fwlink/?LinkId=178470).
+[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Fournit des outils pour vous aider à créer des flux de travail personnalisés qui gèrent le cycle de vie des documents et éléments de liste dans un site SharePoint Web. Les éléments fournis incluent un concepteur, un ensemble de contrôles de l’activité et les références d’assembly nécessaires. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] inclut également le **Assistant Personnalisation de SharePoint**, pour aider à créer et configurer les flux de travail.
+
+Pour plus d’informations sur SharePoint, consultez [Microsoft produits et Technologies SharePoint](http://go.microsoft.com/fwlink/?LinkId=178470).
 
 ## <a name="workflows-in-sharepoint"></a>Flux de travail dans SharePoint
  Lorsque vous ajoutez un flux de travail à une bibliothèque ou liste SharePoint, vous appliquer un processus d’entreprise sur tous les éléments dans la liste ou bibliothèque. Un flux de travail décrit les actions que le système ou les utilisateurs doivent effectuer sur chaque élément, telles que l’envoi de l’élément à modifier puis à réviser. Ces actions, connu sous le nom *activités*, sont les blocs de construction du flux de travail.

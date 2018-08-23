@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e31b06d642947d88d1076b3ad365e62b663c8d4a
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 52ff6b3431ac3f87c85eefcf728cfe4c4875f884
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118889"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634785"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>Procédure pas à pas : Créer une page d’application SharePoint
  
@@ -44,7 +44,7 @@ Cette procédure pas à pas décrit les tâches suivantes :
 
 ## <a name="prerequisites"></a>Prérequis
 
-- Éditions prises en charge de Windows et SharePoint. Pour plus d’informations, consultez [configuration requise pour développer des solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Éditions prises en charge de Windows et SharePoint.
 
 ## <a name="create-a-sharepoint-project"></a>Créer un projet SharePoint
 
