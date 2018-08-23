@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a83dbde9bbb9907ee58909c254953554ad7de285
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 4832ce22bfa0137040892ffcd1ce08b3f32646bd
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119215"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635679"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Procédure pas à pas : Créer un flux de travail avec des formulaires d’association et d’initiation
   Cette procédure pas à pas montre comment créer un workflow séquentiel de base qui incorpore l’utilisation des formulaires d’association et d’initiation. Il s’agit de formulaires ASPX permettant d’activer les paramètres à ajouter à un flux de travail lorsqu’il est tout d’abord associée par l’administrateur SharePoint (formulaire d’association), et lorsque le workflow est démarré par l’utilisateur (le formulaire d’initiation).  
@@ -62,7 +62,7 @@ ms.locfileid: "37119215"
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
--   Éditions prises en charge [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] et SharePoint. Pour plus d’informations, consultez [configuration requise pour développer des solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Éditions prises en charge [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] et SharePoint.  
   
 -   Visual Studio.  
   
@@ -270,7 +270,7 @@ ms.locfileid: "37119215"
   
 5.  Ajoutez cette activité au flux de travail en effectuant l’une des étapes suivantes :  
   
-    -   Ouvrez le menu contextuel pour le **CreateTask** activité, choisissez **copie**, ouvrez le menu contextuel pour l’une des deux **déposer les activités ici** zones dans  **IfElseActivity1** dans le Concepteur de flux de travail, puis choisissez **coller**.  
+    -   Ouvrir le menu contextuel pour le **CreateTask** activité, choisissez **copie**, ouvrez le menu contextuel pour l’une des deux **déposer les activités ici** zones au sein de  **IfElseActivity1** dans le Concepteur de flux de travail, puis choisissez **collage**.  
   
     -   Faites glisser le **CreateTask** activité à partir de la **boîte à outils** sur l’un des deux **déposer les activités ici** domaines au sein de **IfElseActivity1**.  
   
@@ -284,7 +284,7 @@ ms.locfileid: "37119215"
   
 10. Choisissez le **lier à un nouveau membre** , choisir le **créer un champ** case d’option, puis choisissez le **OK** bouton.  
   
-11. Choisissez le **TaskProperties** propriété, puis choisissez le bouton de sélection (![ellipse de concepteur ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "ellipse de concepteur ASP.NET Mobile")) bouton pour afficher le  **Lier la propriété** boîte de dialogue.  
+11. Choisissez le **TaskProperties** propriété, puis cliquez sur le bouton de sélection (![ellipse de ASP.NET Mobile Designer](../sharepoint/media/mwellipsis.gif "ellipse de ASP.NET Mobile Designer")) pour afficher les  **Lier la propriété** boîte de dialogue.  
   
 12. Choisissez le **lier à un nouveau membre** , choisir le **créer un champ** case d’option, puis choisissez le **OK** bouton.  
   
@@ -292,7 +292,7 @@ ms.locfileid: "37119215"
   
 14. Ajoutez cette activité au flux de travail en effectuant l’une des étapes suivantes :  
   
-    -   Ouvrez le menu contextuel pour le **LogToHistoryListActivity** activité, choisissez **copie**, ouvrez le menu contextuel pour les autres **déposer les activités ici** zone dans **IfElseActivity1** dans le Concepteur de flux de travail, puis choisissez **coller**.  
+    -   Ouvrir le menu contextuel de la **LogToHistoryListActivity** activité, choisissez **copie**, ouvrir le menu contextuel pour les autres **déposer les activités ici** zone **IfElseActivity1** dans le Concepteur de flux de travail, puis choisissez **collage**.  
   
     -   Faites glisser le **LogToHistoryListActivity** activité à partir de la **boîte à outils**et déposez-le sur l’autre **déposer les activités ici** zone dans **IfElseActivity1** .  
   
