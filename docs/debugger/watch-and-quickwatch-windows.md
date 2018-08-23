@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71a29a5d8961688f710181dce553d0895a4bb475
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: aaba3f16ccf08fa56e6f529192ae9ad9cab6d496
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057159"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635435"
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Définir un espion sur les Variables à l’aide d’espion et Espion express des Windows dans Visual Studio
 Pendant le débogage, vous pouvez utiliser la **espion** et **Espion express** pour observer les variables et expressions.  La fenêtre **Espion** permet d’afficher plusieurs variables, à la différence de la fenêtre **Espion express** , qui n’en affiche qu’une à la fois. 
@@ -231,7 +231,7 @@ public class Program
 ## <a name="dynamic-view-and-the-watch-window"></a>Affichage dynamique et la fenêtre Espion  
  Certains langages de script (par exemple, JavaScript ou Python) utilisent dynamique ou [canard tapant](https://en.wikipedia.org/wiki/Duck_typing), et les langages .NET (version 4.0 et versions ultérieur) prennent en charge les objets qui sont difficiles à observer dans les fenêtres de débogage normales, car ils peut avoir des propriétés d’exécution et des méthodes qui ne peut pas être affichées.  
   
- Lorsque la fenêtre Espion affiche un objet créé à partir d’un type qui implémente le [IDynamicMetaObjectProvider Interface](/dotnet/api/system.dynamic.idynamicmetaobjectprovider?view=netframework-4.7), le débogueur ajoute un spécial **affichage dynamique** nœud à la **automatique**  afficher. Ce nœud affiche les membres dynamiques de l’objet dynamique, mais n’autorise pas la modification des valeurs des membres.  
+ Lorsque la fenêtre Espion affiche un objet créé à partir d’un type qui implémente la <xref:System.Dynamic.IDynamicMetaObjectProvider>, le débogueur ajoute un spécial **affichage dynamique** le nœud à la **automatique** afficher. Ce nœud affiche les membres dynamiques de l’objet dynamique, mais n’autorise pas la modification des valeurs des membres.  
   
  Si vous cliquez avec le bouton droit sur l’un des enfants d’un **Affichage dynamique** et que vous choisissez **Ajouter un espion**, le débogueur insère une nouvelle variable espion qui effectue le transtypage d’un objet vers un objet dynamique. En d’autres termes, **object Name** devient (**(dynamic)object).Name**.  
   

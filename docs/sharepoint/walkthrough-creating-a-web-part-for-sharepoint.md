@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c7430b6fc2afc5af872c9f03174451a223e05b3e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1a03d94b09464fd2daeeea265d5c4e8b64fac2fd
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118942"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635406"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Procédure pas à pas : Créer un composant WebPart pour SharePoint
 
@@ -49,7 +49,7 @@ Cette procédure pas à pas décrit les tâches suivantes :
 
 ## <a name="prerequisites"></a>Prérequis
 
-- Éditions prises en charge de Microsoft Windows et SharePoint. Pour plus d’informations, consultez [configuration requise pour développer des solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Éditions prises en charge de Microsoft Windows et SharePoint.
 
 - Visual Studio 2017 ou une édition de Visual Studio Application Lifecycle Management (ALM).
 

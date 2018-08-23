@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ca29232acae2b67d4e2b04c96bd1dde5e595b83f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 2d9542e14f41722a2f339bfac5c3353dc2e89263
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119170"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635464"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Procédure pas à pas : Importation d’éléments d’un site SharePoint existant
   Cette procédure pas à pas montre comment importer des éléments à partir d’un site SharePoint existant dans un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projet SharePoint.  
@@ -41,7 +41,7 @@ ms.locfileid: "37119170"
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
--   Éditions prises en charge [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] et SharePoint. Pour plus d’informations, consultez [configuration requise pour développer des solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Éditions prises en charge [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] et SharePoint.  
   
 -   Visual Studio.  
   
@@ -96,7 +96,7 @@ ms.locfileid: "37119170"
   
 5.  Lorsque l’opération se termine correctement, choisissez le **galerie de solutions** lien pour afficher le fichier .wsp.  
   
-     Pour afficher la page de galerie de solutions plus loin, ouvrez le **Actions du Site** menu, choisissez **paramètres du Site**, choisissez le **accédez aux paramètres de site de niveau supérieur** lien dans le  **Site d’Administration de la Collection** section, puis choisissez le **Solutions** lien dans le **galeries** section.  
+     Pour afficher la page de la galerie de solutions ultérieure, ouvrez la **Actions du Site** menu, choisissez **paramètres du Site**, choisissez la **accéder aux paramètres du site de niveau supérieur** lien dans la  **Administration de la Collection de sites** section et cliquez sur le **Solutions** lien dans la **galeries** section.  
   
 6.  Dans la galerie de solutions, choisissez le **SiteExemple** lien.  
   
@@ -107,7 +107,7 @@ ms.locfileid: "37119170"
   
 #### <a name="to-import-a-wsp-file"></a>Pour importer un fichier .wsp  
   
-1.  Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], dans la barre de menus, choisissez **fichier** > **New** > **projet** pour afficher le **nouveau projet**boîte de dialogue. Si votre interface IDE est définie pour utiliser les paramètres de développement Visual Basic, dans la barre de menus, choisissez **fichier** > **nouveau projet**.  
+1.  Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], dans la barre de menus, cliquez sur **fichier** > **nouveau** > **projet** pour afficher la **nouveau projet**boîte de dialogue. Si votre interface IDE est définie pour utiliser les paramètres de développement Visual Basic, dans la barre de menus, choisissez **fichier** > **nouveau projet**.  
   
 2.  Développez le **SharePoint** nœud sous **Visual C#** ou **Visual Basic**, puis choisissez le **2010** nœud.  
   
