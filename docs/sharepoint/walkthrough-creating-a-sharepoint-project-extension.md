@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 407936d68310a675aebe1c7ea712f46aea45e807
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: b8620a51480868302fc840bffea5bbdb427c48f5
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119239"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635614"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Procédure pas à pas : Créer une extension de projet SharePoint
   Cette procédure pas à pas illustre comment créer une extension pour les projets SharePoint. Vous pouvez utiliser une extension de projet pour répondre aux événements au niveau du projet tels que quand un projet est ajouté, supprimé ou renommé. Vous pouvez également ajouter des propriétés personnalisées ou répondre lorsqu’une valeur de propriété change. Contrairement aux extensions d’élément de projet, les extensions de projet ne peut pas être associées à un type de projet SharePoint particulier. Lorsque vous créez une extension de projet, l’extension de charge tout type de projet SharePoint est ouvert dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -46,7 +46,7 @@ ms.locfileid: "37119239"
 ## <a name="prerequisites"></a>Prérequis  
  Vous avez besoin des composants suivants sur l’ordinateur de développement pour effectuer cette procédure pas à pas :  
   
--   Éditions prises en charge [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)], SharePoint et [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Pour plus d’informations, consultez [configuration requise pour développer des solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Éditions prises en charge [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)], SharePoint et [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 -   [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Cette procédure pas à pas utilise le **projet VSIX** modèle dans le [!INCLUDE[TLA2#tla_sdk](../sharepoint/includes/tla2sharptla-sdk-md.md)] pour créer un package VSIX pour déployer l’extension de propriété de projet. Pour plus d’informations, consultez [étendre les outils SharePoint dans Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
