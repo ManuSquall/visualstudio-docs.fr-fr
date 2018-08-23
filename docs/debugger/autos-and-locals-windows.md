@@ -1,5 +1,5 @@
 ---
-title: Inspecter des Variables dans les fenêtres variables locales et automatique | Documents Microsoft
+title: Inspecter des Variables dans le Windows de variables locales et automatique | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/17/2017
 ms.technology: vs-ide-debug
@@ -16,20 +16,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3b19e8bd55320a9fbd5d8af037a9577db42a2fa
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 956b3afe1308ee748ee9efa6292834754f7e8124
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454636"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626468"
 ---
-# <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Inspecter les Variables dans l’automatique et les fenêtres de variables locales dans Visual Studio
-Le **automatique** fenêtre (pendant le débogage, **CTRL + ALT + V, A**, ou **Déboguer > Windows > automatique**) et le **variables locales** fenêtre (pendant le débogage **CTRL + ALT + V, L**, ou **Déboguer > Windows > variables locales**) sont très utiles lorsque vous souhaitez voir les valeurs des variables pendant que vous déboguez. La fenêtre **Variables locales** affiche les variables définies dans la portée locale, qui est généralement la fonction ou méthode en cours d’exécution. La fenêtre **Automatique** affiche les variables utilisées autour de la ligne actuelle (l’emplacement où le débogueur est arrêté). Exactement les variables s’affichent dans cette fenêtre est différente dans différentes langues. Consultez [What variables appear in the Autos Window?](#bkmk_whatvariables) ci-dessous.  
+# <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Inspecter des Variables dans l’automatique et Windows de variables locales dans Visual Studio
+Le **automatique** fenêtre (pendant le débogage, **CTRL + ALT + V, A**, ou **Déboguer > Windows > automatique**) et le **variables locales** fenêtre (pendant le débogage **CTRL + ALT + V, L**, ou **Déboguer > Windows > variables locales**) sont très utiles lorsque vous souhaitez afficher les valeurs des variables pendant le débogage. La fenêtre **Variables locales** affiche les variables définies dans la portée locale, qui est généralement la fonction ou méthode en cours d’exécution. La fenêtre **Automatique** affiche les variables utilisées autour de la ligne actuelle (l’emplacement où le débogueur est arrêté). Exactement quelles variables affichent dans cette fenêtre est différent dans différentes langues. Consultez [What variables appear in the Autos Window?](#bkmk_whatvariables) ci-dessous.  
   
 Si vous avez besoin de plus d’informations sur le débogage de base, consultez [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md).  
   
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Examen des objets dans les fenêtres Automatique et Variables locales  
-Les tableaux et les objets sont affichés dans les fenêtres Automatique et Variables locales en tant que contrôles d’arborescence. Cliquez sur la flèche située à gauche du nom de variable pour développer la vue et afficher les champs et propriétés. Voici un exemple d’un [FileStream](/dotnet/api/system.io.filestream) de l’objet dans le **variables locales** fenêtre :  
+Les tableaux et les objets sont affichés dans les fenêtres Automatique et Variables locales en tant que contrôles d’arborescence. Cliquez sur la flèche située à gauche du nom de variable pour développer la vue et afficher les champs et propriétés. Voici un exemple d’un <xref:System.IO.FileStream?displayProperty=fullName> de l’objet dans le **variables locales** fenêtre :  
   
 ![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
@@ -132,7 +132,7 @@ Toutefois, soyez vigilant lorsque vous modifiez des valeurs. Voici quelques prob
 -   Modifier des valeurs à virgule flottante risque d’entraîner quelques légères imprécisions, dues à la conversion en binaire de la partie décimale des composants fractionnaires. Dans la variable à virgule flottante, même une modification apparemment anodine risque d’entraîner des changements de certains bits de poids faible.  
   
 ## <a name="changing-the-window-context"></a>Modification du contexte de la fenêtre  
-Vous pouvez utiliser la **emplacement de débogage** la barre d’outils pour sélectionner la fonction souhaitée, un thread ou un processus, ce qui modifie le contexte pour les fenêtres de variables. Définissez un point d’arrêt et démarrez le débogage. (Si vous ne voyez pas cette barre d’outils, vous pouvez l’activer en cliquant dans une partie vide de la zone de la barre d’outils. Vous devez voir une liste de barres d’outils ; sélectionnez **Emplacement de débogage**). Lorsque le point d’arrêt est atteint, l’exécution s’arrête et que vous pouvez voir la barre d’outils emplacement de débogage, qui est la ligne inférieure de l’illustration suivante.
+Vous pouvez utiliser la **emplacement de débogage** barre d’outils pour sélectionner la fonction souhaitée, un thread ou un processus, ce qui modifie le contexte pour les fenêtres de variables. Définissez un point d’arrêt et démarrez le débogage. (Si vous ne voyez pas cette barre d’outils, vous pouvez l’activer en cliquant dans une partie vide de la zone de la barre d’outils. Vous devez voir une liste de barres d’outils ; sélectionnez **Emplacement de débogage**). Lorsque le point d’arrêt est atteint, l’exécution s’arrête et que vous pouvez voir la barre d’outils emplacement de débogage, qui est la ligne inférieure de l’illustration suivante.
   
 ![DebugLocationToolbar](../debugger/media/debuglocationtoolbar.png "DebugLocationToolbar")   
   

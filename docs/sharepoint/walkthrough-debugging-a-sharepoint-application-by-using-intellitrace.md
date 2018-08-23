@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 76654568825bd0761097a1edd3ec8eb3bbc7060d
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e278eeb486d2a2d0150fb3ffd44176d17edbdc33
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119206"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42624446"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Procédure pas à pas : Déboguer une application SharePoint à l’aide d’IntelliTrace
 
@@ -52,7 +52,7 @@ En utilisant IntelliTrace, vous pouvez déboguer plus facilement des solutions S
 
 Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
 
-- Éditions prises en charge de Windows et SharePoint. Consultez [configuration requise pour développer des solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Éditions prises en charge de Windows et SharePoint.
 
 - Visual Studio Enterprise.
 

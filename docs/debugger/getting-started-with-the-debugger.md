@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1629e98c6d0afa4d259b7b983d1efe0633321c13
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 235e9386070d316cd9a4f9751ac1d8f1e8fd92b4
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468726"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42623831"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Didacticiel : Apprenez à déboguer à l’aide de Visual Studio
 
@@ -31,7 +31,7 @@ Cet article présente les fonctionnalités du débogueur Visual Studio dans une 
 |---------|---------|
 |  ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo")  |    [Regardez une vidéo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) sur le débogage, qui affiche des étapes similaires. |
 
-Bien que l’application de démonstration est c# et C++, les fonctionnalités sont applicables à Visual Basic, JavaScript et d’autres langages pris en charge par Visual Studio (sauf indication contraire). Les captures d’écran sont en c#.
+Bien que l’application de démonstration est c# et C++, les fonctionnalités sont applicables à Visual Basic, JavaScript et d’autres langages pris en charge par Visual Studio (sauf indication contraire). Les captures d’écran sont en c#. Pour basculer entre les exemples de code C++ et c#, utilisez le filtre de langue en haut à droite de la page.
 
 Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
@@ -324,7 +324,7 @@ Principalement, nous utilisons ici, des raccourcis clavier, car c’est un bon m
 
 ## <a name="navigate-code-using-run-to-click"></a>Parcourir le code à l’aide d’exécution sur clic
 
-5. Dans l’éditeur de code, faites défiler vers le bas et placez le curseur sur le `Console.WriteLine` (méthode) (`std::cout` en C++) dans le `Triangle` classe jusqu'à ce que le vert **exécuter jusqu’au clic** bouton ![exécuter jusqu’au clic] (../debugger/media/dbg-tour-run-to-click.png " RunToClick") apparaît à gauche.
+5. Dans l’éditeur de code, faites défiler vers le bas et placez le curseur sur le `Console.WriteLine` (méthode) (`std::cout` en C++) dans le `Triangle` classe jusqu'à ce que le vert **exécuter jusqu’au clic** bouton ![exécuter jusqu’au clic](../debugger/media/dbg-tour-run-to-click.png " RunToClick") apparaît à gauche.
 
      ![Utiliser l’exécution sur clic fonctionnalité](../debugger/media/get-started-run-to-click.png "exécuter jusqu’au clic")
 
