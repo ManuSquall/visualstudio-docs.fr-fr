@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 74d1181936a5efa3b286999ea832e78dffdcccf3
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1c0359af3d55f6efe26b2ae3bde7bc7726f7d333
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118955"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635653"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Procédure pas à pas : Créer une colonne de site, le type de contenu et la liste pour SharePoint
   Les procédures suivantes montrent comment créer des colonnes de site SharePoint personnalisées, ou *champs*, ainsi que d’un type de contenu qui utilise les colonnes de site. Il montre également comment créer une liste qui utilise le nouveau type de contenu.  
@@ -51,7 +51,7 @@ ms.locfileid: "37118955"
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
--   Éditions prises en charge de Windows et SharePoint. Pour plus d’informations, consultez [configuration requise pour développer des solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Éditions prises en charge de Windows et SharePoint.
   
 -   Visual Studio.  
   
@@ -82,7 +82,7 @@ ms.locfileid: "37118955"
   
 2.  Dans le **ajouter un nouvel élément** boîte de dialogue, sélectionnez **colonne de Site**, remplacez le nom par **nom du Patient**, puis choisissez le **ajouter** bouton.  
   
-3.  Dans la colonne de site *Elements.xml* de fichiers, laissez le **Type** définissant en tant que **texte**et modifier le **groupe** à  **Colonnes de Site stage**. Lorsque vous avez terminé, la colonne de site *Elements.xml* fichier doit se présenter comme dans l’exemple suivant.  
+3.  Dans de la colonne site *Elements.xml* fichier, laissez le **Type** en **texte**et de modifier le **groupe** à  **Cours pratique les colonnes de Site**. Lorsque vous avez terminé, la colonne de site *Elements.xml* fichier doit se présenter comme dans l’exemple suivant.  
   
     ```xml  
     <Field  
