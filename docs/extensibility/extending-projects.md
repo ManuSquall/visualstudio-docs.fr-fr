@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aab8c9608ea6bd86742ac53008c11e8ae54a9e4f
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ce2ab15d215b9758e42c0a7d973153f2f5c18f8d
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639124"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902817"
 ---
 # <a name="extend-projects"></a>Étendre des projets
 Projets et solutions constituent les méthodes que Visual Studio organise les fichiers de code et des ressources en unités de compilation et déploiement. Vous trouverez plus d’informations sur les projets dans [projets (SDK Visual Studio)](../extensibility/extending-projects.md).  
   
- Vous pouvez créer vos propres types de projet avec le SDK Visual Studio et de Managed Package Framework pour les projets, que vous pouvez télécharger sur [Managed Package Framework for Projects](http://mpfproj12.codeplex.com/). Pour comprendre comment les projets personnalisés sont implémentés, consultez [nouvelle génération de projet : sous le capot, première partie](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) et [nouvelle génération de projet : sous le capot, deuxième partie](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Vous pouvez créer vos propres types de projet avec le SDK Visual Studio et de Managed Package Framework pour les projets, que vous pouvez télécharger sur [Managed Package Framework for Projects](https://github.com/tunnelvisionlabs/MPFProj10). Pour comprendre comment les projets personnalisés sont implémentés, consultez [nouvelle génération de projet : sous le capot, première partie](../extensibility/internals/new-project-generation-under-the-hood-part-one.md) et [nouvelle génération de projet : sous le capot, deuxième partie](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  Les rubriques de cette section décrivent comment créer des projets personnalisés et comment gérer différents types de solution Visual Studio.  
   
