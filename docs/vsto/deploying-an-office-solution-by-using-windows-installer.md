@@ -141,7 +141,7 @@ Vous configurez le projet **OfficeAddInSetup** pour inclure la sortie de votre p
   
 3. En bas de la page **Assistant Projet** , choisissez le bouton **Fichiers d'application** , comme le montre l'illustration suivante.  
   
-   ![Bouton fichiers d’Application. ] (../vsto/media/installshield-applicationfiles.png "Bouton les fichiers d’Application.")  
+   ![Bouton fichiers d’Application. ](../vsto/media/installshield-applicationfiles.png "Bouton les fichiers d’Application.")  
   
 4. Dans la page **Fichiers d'application** , choisissez le bouton **Ajouter les sorties du projet** .  
   
@@ -161,7 +161,7 @@ Vous configurez le projet **OfficeAddInSetup** pour inclure la sortie de votre p
   
    La page **Fichiers d'application** contient maintenant le fichier de sortie du projet, le manifeste de déploiement et le manifeste d'application, comme le montre l'illustration suivante.  
   
-   ![Les fichiers de sortie de votre projet d’installation. ] (../vsto/media/installshield-outputfiles.png "Les fichiers de sortie de votre projet d’installation.")  
+   ![Les fichiers de sortie de votre projet d’installation. ](../vsto/media/installshield-outputfiles.png "Les fichiers de sortie de votre projet d’installation.")  
   
   
 ## <a name="Configure"></a>Configurer les modules dépendants comme des composants requis  
@@ -252,7 +252,7 @@ La page **Composants redistribuables** contient un élément nommé **Runtime Mi
   
 11. Dans la page **Redistribuable** du projet InstallShield, choisissez le bouton **Actualiser** pour actualiser la liste des composants redistribuables, comme le montre l'illustration suivante.  
   
-   ![Le bouton Actualiser. ] (../vsto/media/installshield-refreshbutton.png "Le bouton d’actualisation.")  
+   ![Le bouton Actualiser. ](../vsto/media/installshield-refreshbutton.png "Le bouton d’actualisation.")  
   
 12. Dans la liste de composants redistribuables, activez la case à cocher **Visual Studio 2010 Tools pour Office Runtime** .  
   
@@ -309,7 +309,7 @@ Les installations par utilisateur requièrent un seul programme d'installation q
   
 2. En bas de la page **Assistant Projet** , choisissez le bouton **Registre de l'application** , comme le montre l'illustration suivante.  
   
-   ![Le bouton Registre d’Application. ] (../vsto/media/installshield-applicationregistry.gif "Bouton le Registre d’Application.")  
+   ![Le bouton Registre d’Application. ](../vsto/media/installshield-applicationregistry.gif "Bouton le Registre d’Application.")  
   
    La page **Registre de l'application** s'affiche.  
   
@@ -447,7 +447,7 @@ Pour modifier les propriétés personnalisées, vous créez un programme qui sup
   
 3. En bas de la page **Assistant Projet** , choisissez le bouton **Fichiers d'application** , comme le montre l'illustration suivante.  
   
-   ![Bouton fichiers d’Application. ] (../vsto/media/installshield-applicationfiles.png "Bouton les fichiers d’Application.")  
+   ![Bouton fichiers d’Application. ](../vsto/media/installshield-applicationfiles.png "Bouton les fichiers d’Application.")  
   
 4. Dans la page **Fichiers d'application** , choisissez le bouton **Ajouter les sorties du projet** .  
   
