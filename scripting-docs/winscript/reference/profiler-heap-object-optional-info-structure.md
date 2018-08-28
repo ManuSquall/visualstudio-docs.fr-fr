@@ -1,5 +1,5 @@
 ---
-title: Profiler_heap_object_optional_info, Structure | Documents Microsoft
+title: Structure PROFILER_HEAP_OBJECT_OPTIONAL_INFO | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -13,10 +13,10 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 52e231484b48bf2741281644c746b448fd6f657b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 08/27/2018
 ms.locfileid: "24734029"
 ---
 # <a name="profilerheapobjectoptionalinfo-structure"></a>PROFILER_HEAP_OBJECT_OPTIONAL_INFO, structure
@@ -32,14 +32,14 @@ typedef struct _PROFILER_HEAP_OBJECT_OPTIONAL_INFO{    PROFILER_HEAP_OBJECT_OPTI
   
 |Membre|Type|Description|  
 |------------|----------|-----------------|  
-|InfoType|[Énumération PROFILER_HEAP_OBJECT_OPTIONAL_INFO_TYPE](../../winscript/reference/profiler-heap-object-optional-info-type-enumeration.md)|Le type des informations facultatives.|  
-|prototype|[Type PROFILER_HEAP_OBJECT_ID](../../winscript/reference/profiler-heap-object-id-type.md)|L’ID d’objet de prototype de l’objet de segment de mémoire.|  
-|functionName|LPCWSTR|Nom de la fonction de l’objet du tas.|  
-|elementAttributesSize|UINT|La taille de l’objet du tas attributs d’élément.|  
-|elementTextChildrenSize|UINT|La taille des enfants du texte de l’objet du tas.|  
-|Liste_étendues|[Structure PROFILER_HEAP_OBJECT_SCOPE_LIST](../../winscript/reference/profiler-heap-object-scope-list-structure.md)|Liste d’étendue de l’objet du tas.|  
-|internalProperty|[Structure PROFILER_HEAP_OBJECT_RELATIONSHIP](../../winscript/reference/profiler-heap-object-relationship-structure.md)|Propriété interne de l’objet de segment de mémoire.|  
-|namePropertyList|[Structure PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Une liste de propriétés du nom de l’objet de segment de mémoire.|  
-|indexPropertyList|[Structure PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Une liste de propriétés de l’index de l’objet du tas.|  
-|relationshipList|[Structure PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Liste des relations de l’objet de segment de mémoire.|  
-|eventList|[Structure PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Liste des événements d’objet de segment de mémoire.|
+|infoType|[Énumération PROFILER_HEAP_OBJECT_OPTIONAL_INFO_TYPE](../../winscript/reference/profiler-heap-object-optional-info-type-enumeration.md)|Le type des informations facultatives.|  
+|prototype|[Type PROFILER_HEAP_OBJECT_ID](../../winscript/reference/profiler-heap-object-id-type.md)|L’ID d’objet de prototype de l’objet segment de mémoire.|  
+|functionName|LPCWSTR|Nom de la fonction de l’objet de tas.|  
+|elementAttributesSize|UINT|La taille de l’objet de tas attributs d’élément.|  
+|elementTextChildrenSize|UINT|La taille des enfants de texte de l’objet de tas.|  
+|Liste_étendues|[Structure PROFILER_HEAP_OBJECT_SCOPE_LIST](../../winscript/reference/profiler-heap-object-scope-list-structure.md)|Liste d’étendues de l’objet de tas.|  
+|internalProperty|[Structure PROFILER_HEAP_OBJECT_RELATIONSHIP](../../winscript/reference/profiler-heap-object-relationship-structure.md)|Propriété interne de l’objet de tas.|  
+|namePropertyList|[Structure PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Une liste de propriétés du nom de l’objet de tas.|  
+|indexPropertyList|[Structure PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Une liste de propriétés de l’index de l’objet de tas.|  
+|relationshipList|[Structure PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Liste des relations de l’objet segment de mémoire.|  
+|eventList|[Structure PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Une liste des événements de l’objet segment de mémoire.|
