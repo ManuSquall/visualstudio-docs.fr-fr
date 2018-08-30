@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6cafcf7668cf4dba84ef6afc35f87d5bf93bf08
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: dd700d822ca50f67060400578bca8e0757e84a89
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978422"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626931"
 ---
 # <a name="model-editor"></a>Éditeur de modèle
 
@@ -48,14 +48,14 @@ Cette section explique comment ajouter un modèle 3D à votre projet Visual Stud
 
    ![Boîte de dialogue Ajouter un nouvel élément avec une scène 3D sélectionnée](media/add-new-3d-scene.png)
 
-3. Entrez le **Nom** du fichier de modèle, puis sélectionnez **Ajouter**.
+   > [!NOTE]
+   > Si vous ne voyez pas la catégorie **Graphisme** dans la boîte de dialogue **Ajouter un nouvel élément**, il peut être nécessaire d’installer le composant **Éditeurs d’images et de modèles 3D**. Fermez la boîte de dialogue, puis sélectionnez **Outils** > **Obtenir les outils et fonctionnalités** dans la barre de menus pour ouvrir le **programme d’installation de Visual Studio**. Sélectionnez l’onglet **Composants individuels**, puis sélectionnez le composant **Éditeurs d’images et de modèles 3D** sous la catégorie **Jeux et graphismes**. Sélectionnez **Modifier**.
+   >
+   > ![Composant Éditeurs d’images et de modèles 3D](media/image-3d-model-editors-component.png)
+   >
+   > Si le composant **Éditeurs d’images et de modèles 3D** est installé et que vous ne voyez toujours pas la catégorie de modèles **Graphisme**, notez que cette catégorie apparaît seulement pour certains types de projets, par exemple des applications de console.
 
-> [!NOTE]
-> Si vous ne voyez pas la catégorie **Graphisme** dans la boîte de dialogue **Ajouter un nouvel élément**, il peut être nécessaire d’installer le composant **Éditeurs d’images et de modèles 3D**. Fermez la boîte de dialogue, puis sélectionnez **Outils** > **Obtenir les outils et fonctionnalités** dans la barre de menus pour ouvrir le **programme d’installation de Visual Studio**. Sélectionnez l’onglet **Composants individuels**, puis sélectionnez le composant **Éditeurs d’images et de modèles 3D** sous la catégorie **Jeux et graphismes**. Sélectionnez **Modifier**.
->
-> ![Composant Éditeurs d’images et de modèles 3D](media/image-3d-model-editors-component.png)
->
-> Si le composant **Éditeurs d’images et de modèles 3D** est installé et que vous ne voyez toujours pas la catégorie de modèles **Graphisme**, notez que cette catégorie apparaît seulement pour certains types de projets, par exemple des applications de console.
+3. Entrez le **Nom** du fichier de modèle, puis sélectionnez **Ajouter**.
 
 ### <a name="axis-orientation"></a>Orientation d'axe
 
@@ -293,7 +293,7 @@ Pour supprimer l’association parent-enfant entre deux objets, sélectionnez l�
 |Passer en mode **Panoramique**|**Ctrl**+**G**, **Ctrl**+**P**<br /><br /> **K**|
 |Sélectionner tout|**Ctrl**+**A**|
 |Supprimer la sélection actuelle|**Supprimer**|
-|Annuler la sélection actuelle|**Séquence d’échappement** (**Échap**)|
+|Annuler la sélection actuelle|**Échappement** (**Échap**)|
 |Zoom avant|**Roulette de la souris vers l’avant**<br /><br /> **Ctrl**+**Roulette de la souris vers l’avant**<br /><br /> **Maj**+**Roulette de la souris vers l’avant**<br /><br /> **Ctrl**+**Pg. préc**<br /><br /> Signe plus (**+**)|
 |Zoom arrière|**Roulette de la souris vers l’arrière**<br /><br /> **Ctrl**+**Roulette de la souris vers l’arrière**<br /><br /> **Maj**+**Roulette de la souris vers l’arrière**<br /><br /> **Ctrl**+**Pg. suiv**<br /><br /> Signe moins (**-**)|
 |Mouvement panoramique de la caméra vers le haut|**Pg. suiv**|
