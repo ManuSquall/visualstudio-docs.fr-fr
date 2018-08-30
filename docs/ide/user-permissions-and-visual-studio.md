@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89ba7338645ab6cc421716832a3d6f424bb57dfc
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 3a415d49770b003c15d4394e4635a138a795cb55
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844389"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42627313"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Autorisations utilisateur et Visual Studio
 
@@ -34,7 +34,6 @@ Vous pouvez faire quasiment tout dans l’IDE Visual Studio en tant qu’utilisa
 |----------|----------|--------------------------|
 |Installation|Installez Visual Studio.|[Installer Visual Studio](../install/install-visual-studio.md)|
 ||Installer, mettre à jour ou supprimer le contenu d’aide locale.|[Installer et gérer le contenu d’aide locale](../ide/install-and-manage-local-content.md)|
-|Types d'applications|Développer des solutions pour SharePoint.|[Configuration requise pour développer des solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|
 |Boîte à outils|Ajouter des contrôles COM classiques à la **Boîte à outils**.|[Boîte à outils](../ide/reference/toolbox.md)|
 |Génération|Utiliser des événements post-build qui inscrivent un composant.|[Présentation des étapes de build personnalisée et des événements de build](/cpp/ide/understanding-custom-build-steps-and-build-events)|
 ||Inclure une étape d’inscription lors de la gestion de projets C++.||
