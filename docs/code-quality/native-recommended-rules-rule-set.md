@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d398d22944ae4c0e5be725169b9d7ceaadb0667d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 7aab8c5796a111d90c29e7fa656749adcdf124bd
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945830"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43225124"
 ---
 # <a name="native-recommended-rules-rule-set"></a>Ensemble de règles des règles recommandées natives
 
@@ -148,6 +148,9 @@ Les règles recommandées natives vous concentrer sur les problèmes plus fréqu
 |[C26116](../code-quality/c26116.md)|Échec d’acquisition ou à maintenir le verrou|
 |[C26117](../code-quality/c26117.md)|Libération du verrou|
 |[C26140](../code-quality/c26140.md)|Erreur d’annotation SAL d’accès concurrentiel|
+|[C26441](../code-quality/c26441.md)|NO_UNNAMED_GUARDS|
+|[C26444](../code-quality/c26444.md)|NO_UNNAMED_RAII_OBJECTS|
+|[C26498](../code-quality/c26498.md)|USE_CONSTEXPR_FOR_FUNCTIONCALL|
 |[C28020](../code-quality/c28020.md)|L’expression n’est pas vraie dans cet appel|
 |[C28021](../code-quality/c28021.md)|Le paramètre annoté doit être un pointeur|
 |[C28022](../code-quality/c28022.md)|Les classes de fonction sur cette fonction ne correspondent pas les classes de fonction sur le typedef utilisé pour la définir.|
