@@ -434,7 +434,7 @@ ms.locfileid: "42626242"
   
     -   Ajoute `ProjectItem` éléments pour chaque filethat d’inclus dans chaque instance de projet.  
   
-    -   Utilise l’espace de noms «http://schemas.microsoft.com/developer/vstemplate/2005». Autres fichiers de projet en cours d’utilisation de cette solution le «http://schemas.microsoft.com/developer/msbuild/2003« espace de noms. Par conséquent, les messages d’avertissement schéma XML seront générées, mais vous pouvez les ignorer dans cette procédure pas à pas.  
+    -   Utilise l’espace de noms » http://schemas.microsoft.com/developer/vstemplate/2005«. Autres fichiers de projet en cours d’utilisation de cette solution le » http://schemas.microsoft.com/developer/msbuild/2003« espace de noms. Par conséquent, les messages d’avertissement schéma XML seront générées, mais vous pouvez les ignorer dans cette procédure pas à pas.  
   
      Pour plus d’informations sur le contenu de *.vstemplate* de fichiers, consultez [référence de schéma de modèle Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference).  
   
