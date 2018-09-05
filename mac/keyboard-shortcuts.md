@@ -1,16 +1,16 @@
 ---
 title: Raccourcis clavier courants de l’éditeur de code source
 description: Cet article décrit certains raccourcis clavier courants dans l’éditeur source de Visual Studio pour Mac
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 39cbe0eb3ba8d99c81119256773cc76f4699b7bd
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 3aea39862ee2221454a337d7c50defd41319623b
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34453814"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224323"
 ---
 # <a name="common-keyboard-shortcuts-in-visual-studio-for-mac"></a>Raccourcis clavier courants dans Visual Studio pour Mac
 
