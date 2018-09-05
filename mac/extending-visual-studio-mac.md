@@ -1,17 +1,17 @@
 ---
 title: Extension de Visual Studio pour Mac
 description: Les fonctionnalités de Visual Studio pour Mac peuvent être étendues avec des modules appelés « packages d’extension ». La première partie de ce guide crée un package d’extension simple de Visual Studio pour Mac qui permet d’insérer la date et l’heure dans un document. La seconde partie de ce guide présente les concepts de base du système des packages d’extension et certaines des API principales qui sont à la base de Visual Studio pour Mac.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: eeca19a8724a93c46f832ead0ac16ecda84b70bf
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 10bfb61ae9e3750926dad39ad3c614d8daf8f867
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178258"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43224960"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Extension de Visual Studio pour Mac
 
@@ -56,7 +56,7 @@ Leurs attributs `assembly:AddinDependency ` correspondants sont également ajout
 
 ## <a name="extensions-and-extension-points"></a>Extensions et points d’extension
 
-Un point d’extension est un espace réservé qui définit une structure de données (un type), tandis qu’une extension définit les données qui se conforment à une structure spécifiée par un point d’extension spécifique. Les points d’extension spécifient dans leur déclaration les types d’extension qu’ils peuvent accepter. Les extensions sont déclarées via des noms de types ou des chemins d’extension. Pour une explication plus approfondie sur la création du point d’extension dont vous avez besoin, consultez les [Informations de référence sur les points d’extension](http://monoaddins.codeplex.com/wikipage?title=Extension%20Points&referringTitle=Description%20of%20Add-ins%20and%20Add-in%20Roots).
+Un point d’extension est un espace réservé qui définit une structure de données (un type), tandis qu’une extension définit les données qui se conforment à une structure spécifiée par un point d’extension spécifique. Les points d’extension spécifient dans leur déclaration les types d’extension qu’ils peuvent accepter. Les extensions sont déclarées via des noms de types ou des chemins d’extension. Pour une explication plus approfondie sur la création du point d’extension dont vous avez besoin, consultez les [Informations de référence sur les points d’extension](https://github.com/mono/mono-addins/wiki/Extension-Points).
 
 L’architecture extension/point d’extension rend le développement de Visual Studio pour Mac rapide et modulable. 
 

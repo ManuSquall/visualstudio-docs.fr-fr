@@ -1,16 +1,16 @@
 ---
 title: Configuration d’un dépôt Git
 description: Utilisation de Git et de Subversion dans Visual Studio pour Mac.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: c30659ad3fecd3f33b5e072b0c42d958d7eb0665
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 6898fb890828a01f286f321f14de3999fdf1ca64
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33884336"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224200"
 ---
 # <a name="setting-up-a-git-repository"></a>Configuration d’un dépôt Git
 
