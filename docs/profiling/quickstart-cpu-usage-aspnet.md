@@ -2,7 +2,7 @@
 title: Analyser les données d’utilisation de l’UC (ASP.NET)
 description: Mesurer les performances des applications en ASP.NET à l’aide de l’outil de diagnostic de l’utilisation de l’UC
 ms.custom: mvc
-ms.date: 12/05/2017
+ms.date: 08/06/2018
 ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
@@ -13,24 +13,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 8f71ca67fc74c7cb852914bd4f66f053e722c435
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 4d4f2382814cabbd26f93db27301ffa9b8d1c658
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468570"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626663"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Démarrage rapide : analyser les données d’utilisation de l’UC dans Visual Studio (ASP.NET)
 
 Visual Studio fournit de nombreuses fonctionnalités puissantes qui vous permettent d’analyser les problèmes de performances dans votre application. Cette rubrique vous offre un moyen rapide de vous familiariser avec quelques-unes des fonctionnalités de base. Ici, nous allons examiner un outil pour identifier les goulots d’étranglement de performances liés à une utilisation élevée de l’UC. Les outils de diagnostics sont pris en charge pour le développement .NET dans Visual Studio (y compris ASP.NET) et pour le développement natif/C++.
 
-Le hub de diagnostic propose de nombreuses autres options pour exécuter et gérer votre session de diagnostic. Si l’outil **Utilisation de l’UC** décrit ici ne vous fournit pas les données dont vous avez besoin, les [autres outils de profilage](../profiling/Profiling-Tools.md) fournissent d’autres types d’informations qui peuvent vous être utiles. Dans de nombreux cas, le goulot d’étranglement des performances de votre application peut ne pas provenir de votre processeur, mais de la mémoire, de l’interface utilisateur de rendu ou du temps de requête réseau.
+Le hub de diagnostic propose de nombreuses autres options pour exécuter et gérer votre session de diagnostic. Si l’outil **Utilisation de l’UC** décrit ici ne vous fournit pas les données dont vous avez besoin, les [autres outils de profilage](../profiling/profiling-feature-tour.md) fournissent d’autres types d’informations qui peuvent vous être utiles. Dans de nombreux cas, le goulot d’étranglement des performances de votre application peut ne pas provenir de votre processeur, mais de la mémoire, de l’interface utilisateur de rendu ou du temps de requête réseau.
+
+Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**). Sur Windows 7 et les versions ultérieures, vous pouvez utiliser l’outil post mortem [Profileur de performances](../profiling/profiling-feature-tour.md).
 
 ## <a name="create-a-project"></a>Créer un projet
 
 1. Dans Visual Studio, sélectionnez **Fichier** > **Nouveau projet**.
 
 1. Sous **Visual C#**, choisissez **Web** puis, dans le volet central, choisissez **Application web ASP.NET (.NET Framework)**.
+
+    Si vous ne voyez pas le modèle de projet **Application web ASP.NET**, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement web et ASP.NET**, puis **Modifier**.
 
 1. Tapez un nom tel que **MyProfilingApp_MVC** et cliquez sur **OK**.
 

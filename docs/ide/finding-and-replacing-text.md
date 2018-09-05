@@ -1,6 +1,6 @@
 ---
-title: Rechercher et remplacer du texte
-ms.date: 05/07/2018
+title: Rechercher et remplacer du texte, et sélection avec signes insertion multiples
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -27,22 +27,22 @@ helpviewer_keywords:
 - find and replace
 - find text
 - replace text
-ms.assetid: a62545c3-1570-4d12-99fb-a82607eb35a1
+- multi-caret selection
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7051b90dde45965b76e8a9e08b33b5326ff2848c
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: b451ed12f39bbac646a9cb50b5d1ff02365b0a93
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33106750"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626784"
 ---
 # <a name="find-and-replace-text"></a>Rechercher et remplacer du texte
 
-Vous pouvez rechercher et remplacer du texte dans l’éditeur Visual Studio avec [Rechercher et remplacer](#find-and-replace-control) ou [Rechercher/remplacer dans les fichiers](#find-in-files-and-replace-in-files).
+Vous pouvez rechercher et remplacer du texte dans l’éditeur Visual Studio avec [Rechercher et remplacer](#find-and-replace-control) ou [Rechercher/remplacer dans les fichiers](#find-replace-in-files). Parmi les nouveautés de Visual Studio 2017 version 15.8, vous pouvez rechercher et remplacer *certaines* instances d’un modèle à l’aide de la *[sélection avec signes insertion multiples](#multi-caret-selection)*.
 
 > [!TIP]
 > Si vous renommez des symboles du code comme des variables et des méthodes, il est préférable de les *[refactoriser](../ide/reference/rename.md)* au lieu d’utiliser Rechercher et remplacer. La refactorisation fonctionne de façon intelligente et comprend la notion d’étendue, alors que Rechercher et remplacer remplace aveuglément toutes les instances.
@@ -58,7 +58,7 @@ Vous pouvez limiter les recherches au document actif, à la solution actuelle ou
 
 Le contrôle **Rechercher et remplacer** s’affiche dans le coin supérieur droit de la fenêtre de l’éditeur de code. Le contrôle **Rechercher et remplacer** met immédiatement en surbrillance chaque occurrence de la chaîne de recherche donnée dans le document actif. Vous pouvez passer d’une occurrence à une autre en choisissant le bouton **Suivant** ou **Précédent** sur le contrôle de recherche.
 
-![Contrôle Rechercher et remplacer](media/find-and-replace-box.png)
+![Rechercher et remplacer dans Visual Studio](media/find-and-replace-box.png)
 
 Vous pouvez accéder aux options de remplacement en choisissant le bouton en regard de la zone de texte **Rechercher**. Pour effectuer un remplacement à la fois, choisissez le bouton **Suivant** en regard de la zone de texte **Remplacer**. Pour remplacer toutes les occurrences en une seule fois, choisissez le bouton **Remplacer tout**.
 
@@ -74,7 +74,7 @@ Une version de la commande **Rechercher** est également disponible dans certain
 
 L’option **Rechercher/Remplacer dans les fichiers** fonctionne comme le contrôle **Rechercher et remplacer**, à ceci près que vous pouvez définir une étendue de recherche. Vous pouvez non seulement rechercher dans le fichier actif ouvert dans l’éditeur, mais aussi rechercher dans tous les documents ouverts, dans la solution complète, dans le projet actif et dans des jeux de dossiers sélectionnés. Vous pouvez également effectuer une recherche basée sur une extension de nom de fichier. Pour accéder à la boîte de dialogue **Rechercher/Remplacer dans les fichiers**, sélectionnez **Rechercher et remplacer** dans le menu **Edition** ou appuyez sur **Ctrl+Maj+F**.
 
-![Rechercher dans les fichiers (boîte de dialogue)](media/find-in-files-box.png)
+![Rechercher dans des fichiers dans Visual Studio](media/find-in-files-box.png)
 
 ### <a name="find-results"></a>Résultats de la recherche
 
@@ -90,6 +90,41 @@ Vous pouvez définir une étendue de recherche en choisissant le bouton **Choisi
 ### <a name="create-custom-component-sets"></a>Créer des jeux de composants personnalisés
 
 Vous pouvez définir des jeux de composants comme étendue de recherche en choisissant le bouton **Modifier un jeu de composants personnalisés** en regard de la zone **Regarder dans**. Vous pouvez spécifier des composants .NET ou COM installés, des projets Visual Studio inclus dans votre solution ou toute bibliothèque d’assemblys ou de types (*.dll*, *.tlb*, *.olb*, *.exe* ou *.ocx*). Pour rechercher des références, cochez la case **Regarder dans les références**.
+
+## <a name="multi-caret-selection"></a>Sélection avec signes insertion multiples
+
+**Nouveauté de Visual Studio 2017 version 15.8**
+
+Utilisez la *sélection avec signes insertion multiples* pour effectuer la même modification à plusieurs endroits à la fois. Par exemple, vous pouvez insérer le même texte ou modifier du texte existant à plusieurs emplacements en même temps.
+
+Dans la capture d’écran suivante, `-0000` est sélectionné à trois emplacements. Si l’utilisateur appuie sur **Supprimer**, les trois sélections sont supprimées :
+
+![Sélection avec signes insertion multiples dans un fichier XML au sein de Visual Studio](media/multi-caret-selection.png)
+
+Pour sélectionner plusieurs points d’insertion, cliquez ou effectuez votre première sélection de texte comme d’habitude, puis appuyez sur **Alt** tout en cliquant ou en sélectionnant du texte dans chaque emplacement supplémentaire. Vous pouvez également ajouter automatiquement le texte correspondant sous forme de sélections supplémentaires, ou sélectionner une zone de texte à modifier de manière identique sur chaque ligne.
+
+> [!TIP]
+> Si vous avez sélectionné **Alt** comme touche de modification pour la fonctionnalité Atteindre la définition avec un clic de souris dans **Outils** > **Options**, la sélection avec signes insertion multiples est désactivée.
+
+### <a name="commands"></a>Commandes
+
+Utilisez les touches et actions suivantes pour les comportements de la sélection avec signes insertion multiples :
+
+|Raccourci|Action|
+|-|-|
+|**Ctrl**+**Alt** + clic|Ajouter un point d’insertion secondaire|
+|**Ctrl**+**Alt** + double-clic|Ajouter une sélection de mot secondaire|
+|**Ctrl**+**Alt** + clic + faire glisser|Ajouter une sélection secondaire|
+|**Maj**+**Alt**+**.**|Ajouter le prochain texte correspondant en tant que sélection|
+|**Ctrl**+**Maj**+**Alt**+**,**|Ajouter tout le texte correspondant en tant que sélections|
+|**Maj**+**Alt**+**,**|Supprimer la dernière occurrence sélectionnée|
+|**Ctrl**+**Maj**+**Alt**+**.**|Ignorer la prochaine occurrence correspondante|
+|**Alt** + clic|Ajouter une sélection de zone|
+|**Échap** ou clic|Effacer toutes les sélections|
+
+Certaines des commandes sont également disponibles dans le menu **Edition**, sous **Signes insertion multiples** :
+
+![Menu volant Signes insertion multiples dans Visual Studio](media/edit-menu-multiple-carets.png)
 
 ## <a name="see-also"></a>Voir aussi
 

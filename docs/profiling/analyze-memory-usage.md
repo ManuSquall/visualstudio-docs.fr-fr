@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20c483b40cf1cc45b730ea67bf01ea452c42af1e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 3cee40dd1dab8c3a9d9b57b84e6e299651bc5fc8
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263651"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626665"
 ---
 # <a name="analyze-memory-usage"></a>Analyser l’utilisation de la mémoire
 Utilisez l’outil de diagnostic **Utilisation de la mémoire** intégré au débogueur pour rechercher les fuites de mémoire et les utilisations inefficaces de la mémoire. L’outil Utilisation de la mémoire vous permet de prendre un ou plusieurs *instantanés* du tas de mémoire managée et native. Vous pouvez collecter des instantanés d’applications .NET, natives ou en mode mixte (.NET et native).  
@@ -24,6 +24,8 @@ Utilisez l’outil de diagnostic **Utilisation de la mémoire** intégré au dé
 -   Vous pouvez aussi comparer (diff) deux instantanés d’une application pour rechercher les sections de votre code qui provoquent une augmentation de l’utilisation de la mémoire au fil du temps.  
 
 Pour obtenir des instructions détaillées, consultez le didacticiel [Analyser l’utilisation de la mémoire](../profiling/memory-usage.md). Pour analyser l’utilisation de la mémoire sans y attacher le débogueur, consultez [Utilisation de la mémoire sans le débogueur](memory-usage-without-debugging2.md).
+
+Vous pouvez utiliser les Outils de profilage sans débogueur avec Windows 7 et les versions ultérieures. Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**).
   
 ## <a name="blogs-and-videos"></a>Blogs et vidéos  
 
@@ -37,4 +39,4 @@ Pour obtenir des instructions détaillées, consultez le didacticiel [Analyser l
 
 ## <a name="see-also"></a>Voir aussi
  [Profilage dans Visual Studio](../profiling/index.md)  
- [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md)
+ [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)

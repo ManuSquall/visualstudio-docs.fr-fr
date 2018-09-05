@@ -1,6 +1,6 @@
 ---
-title: Naviguer dans le code dans Visual Studio
-ms.date: 09/26/2017
+title: Commandes de navigation dans le code
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9293565b4a238b1486f491c5a343d83364fba088
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: eb711763e96cf6959a71b002f09cefa1ced44734
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448608"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626618"
 ---
 # <a name="navigate-code"></a>Naviguer dans le code
 
@@ -80,15 +80,23 @@ L’option Atteindre propose les commandes suivantes, disponibles dans le menu *
 
 - **Atteindre la ligne** (**Ctrl**+**G**) : accéder au numéro de ligne spécifié dans le document actif.
 
-- **Atteindre tout** (**Ctrl**+**T** ou **Ctrl**+**,**) : accéder à la ligne, au type, au fichier, au membre ou au symbole spécifié.
+- **Atteindre tout** (**Ctrl**+**T** ou **Ctrl**+**,**) : accéder à la ligne, au type, au fichier, au membre ou au symbole spécifié.
 
-- **Atteindre le fichier** (**Ctrl**+**1**, **Ctrl**+**F**) : accéder au fichier spécifié dans la solution.
+- **Atteindre le fichier** (**Ctrl**+**1**, **Ctrl**+**F**) : accéder au fichier spécifié dans la solution.
 
-- **Atteindre le type** (**Ctrl**+**1**, **Ctrl**+**T**) : accéder au type spécifié dans la solution.
+- **Aller au fichier récent** (**Ctrl**+**1**, **Ctrl**+**R**) : accéder au fichier spécifié, récemment ouvert, dans la solution (nouveauté de Visual Studio 2017 version 15.8).
 
-- **Atteindre le membre** (**Ctrl**+**1**, **Ctrl**+**M**) : accéder au membre spécifié dans la solution.
+- **Atteindre le type** (**Ctrl**+**1**, **Ctrl**+**T**) : accéder au type spécifié dans la solution.
 
-- **Atteindre le symbole** (**Ctrl**+**1**, **Ctrl**+**S**) : accéder au symbole spécifié dans la solution.
+- **Atteindre le membre** (**Ctrl**+**1**, **Ctrl**+**M**) : accéder au membre spécifié dans la solution.
+
+- **Atteindre le symbole** (**Ctrl**+**1**, **Ctrl**+**S**) : accéder au symbole spécifié dans la solution.
+
+Dans Visual Studio 2017 version 15.8 et les versions ultérieures, les commandes de navigation **Atteindre** suivantes sont également disponibles :
+
+- **Aller au problème suivant dans le fichier** (**Alt**+**Pg. suiv**) et **Aller au problème précédent dans le fichier** (**Alt**+**Pg. préc**)
+
+- **Accéder à l’emplacement de la dernière modification** (**Ctrl**+**Maj**+**Ret. arr**)
 
 Découvrez plus en détail ces commandes dans la rubrique [Rechercher du code à l’aide des commandes Atteindre](../ide/go-to.md).
 

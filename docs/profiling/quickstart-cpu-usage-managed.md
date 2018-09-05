@@ -2,7 +2,7 @@
 title: Analyser les données d’utilisation de l’UC (code managé)
 description: Mesurer les performances des applications en C# et Visual Basic à l’aide de l’outil de diagnostic de l’utilisation de l’UC
 ms.custom: mvc
-ms.date: 12/05/2017
+ms.date: 08/06/2018
 ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 886abf16e958afd2870399c7dfdef55cb27e108f
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 35c6fd1ea079dd95367bcb7763787f0b06839ecb
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39206828"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626780"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Démarrage rapide : analyser les données d’utilisation de l’UC dans Visual Studio (code managé)
 
@@ -26,11 +26,15 @@ Visual Studio fournit de nombreuses fonctionnalités puissantes qui vous permett
 
 Le hub de diagnostic propose de nombreuses autres options pour exécuter et gérer votre session de diagnostic. Si l’outil **Utilisation de l’UC** décrit ici ne vous fournit pas les données dont vous avez besoin, les [autres outils de profilage](../profiling/profiling-feature-tour.md) fournissent d’autres types d’informations qui peuvent vous être utiles. Dans de nombreux cas, le goulot d’étranglement des performances de votre application peut ne pas provenir de votre processeur, mais de la mémoire, de l’interface utilisateur de rendu ou du temps de requête réseau. Le hub de diagnostic vous offre de nombreuses autres options pour enregistrer et analyser ce type de données.
 
+Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**). Sur Windows 7 et les versions ultérieures, vous pouvez utiliser l’outil post mortem [Profileur de performances](../profiling/profiling-feature-tour.md).
+
 ## <a name="create-a-project"></a>Créer un projet
 
 1. Dans Visual Studio, sélectionnez **Fichier** > **Nouveau projet**.
 
 2. Sous **Visual C#** ou **Visual Basic**, choisissez **Windows Desktop** puis, dans le volet central, choisissez **Application console (.NET Framework)**.
+
+    Si vous ne voyez pas le modèle de projet **Application console**, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement .NET Desktop**, puis choisissez **Modifier**.
 
 3. Tapez un nom tel que **MyProfilerApp** et cliquez sur **OK**.
 

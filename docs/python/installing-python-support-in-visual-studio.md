@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9dbc56994f741f48dd97c9eba365c7228585c2a3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8a01f8bbc90beb4e6dab5ff9b0d7d745778c3c2d
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499901"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627294"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Guide pratique pour installer la prise en charge de Python dans Visual Studio sur Windows
 
@@ -26,7 +26,7 @@ Pour installer la prise en charge de Python pour Visual Studio (également appe
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 et versions antérieures](#visual-studio-2013-and-earlier)
 
-Pour Visual Studio 2015 et versions antérieures, vous devez aussi [installer séparément l’interpréteur Python](installing-python-interpreters.md) de votre choix (Python 3.5 et versions antérieures ; la version 3.6 n’est pas prise en charge et génère le message **Python version 3.6 n’est pas pris en charge**). La même page contient également des instructions pour l’ajout d’un interpréteur Python existant à Visual Studio 2017.
+Pour Visual Studio 2015 et les versions antérieures, vous devez également [installer un interpréteur Python](installing-python-interpreters.md) de votre choix, séparément, (Python 3.5 et versions antérieures ; la version 3.6+ n’est pas prise en charge et génère le message **Python version 3.6 n’est pas pris en charge**). La même page contient également des instructions pour l’ajout d’un interpréteur Python existant à Visual Studio 2017.
 
 Pour tester rapidement la prise en charge de Python après avoir suivi la procédure d’installation, ouvrez la **fenêtre interactive Python** en appuyant sur **Alt**+**I** et en entrant `2+2`. Si vous n’obtenez pas la sortie `4`, passez en revue la procédure que vous avez suivie.
 

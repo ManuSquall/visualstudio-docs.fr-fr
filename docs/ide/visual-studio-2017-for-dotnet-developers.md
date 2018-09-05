@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 269f885350283520768af5dfa4cb05fe9319d51b
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: ef9101a0dbad68dd75792f34526bac550a331286
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468271"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42626859"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Guide de productivité C# pour Visual Studio 2017
 
@@ -46,12 +46,12 @@ Le tableau suivant liste les principaux raccourcis de Visual Studio :
 | **Ctrl**+**.** (également **Alt**+**Entrée** dans le profil C#) | Actions rapides et refactorisations | Affichez les correctifs de code, les actions de génération de code, les refactorisations et les autres actions rapides qui sont disponibles au niveau de votre curseur ou de votre sélection de code |
 | **Ctrl**+**D** | Dupliquer la ligne | Duplique la ligne de code où se trouve le curseur (disponible dans **Visual Studio 2017 versions 15.6** et ultérieures) |
 | **Maj**+**Alt**+**+**/**-** | Développer/Réduire la sélection | Développe ou réduit la sélection actuelle dans l’éditeur (disponible dans **Visual Studio 2017 version 15.5** et les versions ultérieures) |
-| **Maj** + **Alt** + **Ins** | Insérer un signe insertion à la prochaine correspondance | Ajoute une sélection et un signe insertion à l’emplacement suivant qui correspond à la sélection actuelle (disponible dans **Visual Studio 2017 version 15.8** et ultérieures) |
+| **Ctrl** + **Alt** + **.** | Insérer un signe insertion à la prochaine correspondance | Ajoute une sélection et un signe insertion à l’emplacement suivant qui correspond à la sélection actuelle (disponible dans **Visual Studio 2017 version 15.8** et ultérieures) |
 | **Ctrl**+**Q** | Lancement rapide | Effectuez une recherche parmi tous les paramètres Visual Studio |
 | **F5** | Démarrer le débogage | Démarrez le débogage de votre application |
 | **Ctrl**+**F5** | Exécutez sans déboguer | Exécutez votre application localement sans débogage |
-| **Ctrl**+**K**,**D** (Profil par défaut) ou **Ctrl**+**E**,**D** (Profil C#) | Mettre le document en forme | Nettoie les violations de mise en forme de votre fichier selon les paramètres de saut de ligne, d’espacement et de mise en retrait définis |
-| **Ctrl**+**\\**,**E** (Profil par défaut) ou **Ctrl**+**W**,**E** (Profil C#) | Voir la liste des erreurs | Affichez toutes les erreurs de votre document, projet ou solution |
+| **Ctrl**+**K**,**D** (Profil par défaut) ou **Ctrl**+**E**,**D** (Profil C#) | [Mettre le document en forme](code-styles-and-quick-actions.md#format-document-command) | Nettoie les violations de mise en forme de votre fichier selon les paramètres de saut de ligne, d’espacement et de mise en retrait définis |
+| **Ctrl**+**\\**,**Ctrl**+**E** (profil par défaut) ou **Ctrl**+**W**,**E** (profil C#) | Voir la liste des erreurs | Affichez toutes les erreurs de votre document, projet ou solution |
 | **Alt** + **Pg. préc/Pg. suiv** | Accéder au problème suivant/précédent | Atteindre l’erreur, avertissement, suggestion précédent/suivant dans votre document (disponible dans **Visual Studio 2017 version 15.8** et ultérieures) |
 
 > [!NOTE]

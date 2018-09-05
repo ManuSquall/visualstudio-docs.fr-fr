@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 9758aab8d36b113a5e4ba2fea5d475f1967dabab
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 8e2118564cb6e0a3eb4811cb69283256cd48a489
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469052"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626934"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Créer des paramètres d’éditeur personnalisés et portables avec EditorConfig
 
@@ -23,7 +23,7 @@ Dans Visual Studio 2017, vous pouvez ajouter un fichier [EditorConfig](http://ed
 Les paramètres EditorConfig sont pris en charge par de nombreux éditeurs de code et IDE, notamment Visual Studio. C’est un composant portable qui accompagne votre code et peut appliquer des styles de codage même en dehors de Visual Studio.
 
 > [!NOTE]
-> Quand vous ajoutez un fichier EditorConfig à votre projet dans Visual Studio, la mise en forme du code existant n’est pas modifiée, sauf si vous mettez en forme le document (**Modifier** > **Avancé** > **Mettre le document en forme** ou **Ctrl**+**K**, **Ctrl**+**D**). Toutefois, les nouvelles lignes de code sont mises en forme selon les paramètres EditorConfig.
+> Quand vous ajoutez un fichier EditorConfig à votre projet dans Visual Studio, la mise en forme du code existant ne change pas, sauf si vous mettez en forme le document (**Edition** > **Avancé** > **Mettre le document en forme** ou **Ctrl**+**K**, **Ctrl**+**D** dans le profil par défaut). Toutefois, les nouvelles lignes de code sont mises en forme selon les paramètres EditorConfig. Vous pouvez définir les paramètres EditorConfig que la commande **Mettre le document en forme** doit appliquer dans la [page **Options de mise en forme**](reference/options-text-editor-csharp-formatting.md#format-document-settings).
 
 ## <a name="coding-consistency"></a>Cohérence du codage
 

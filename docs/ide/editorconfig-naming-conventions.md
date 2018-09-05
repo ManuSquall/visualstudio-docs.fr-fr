@@ -12,12 +12,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: cedc3a66b3c6b73dd778011afd8e96b7e1e2d762
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3630eee4a58571277cf6a0c2c265fee95f2e37e1
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926481"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626560"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Conventions de nommage .NET pour EditorConfig
 
@@ -46,6 +46,7 @@ Pour décrire le type de symboles auquel appliquer la règle de nommage, spécif
 La liste suivante répertorie les valeurs autorisées, et vous pouvez spécifier plusieurs valeurs en les séparant par une virgule.
 
 - \* (Utilisez cette valeur pour spécifier tous les symboles.)
+- namespace
 - class
 - struct
 - interface
@@ -56,6 +57,9 @@ La liste suivante répertorie les valeurs autorisées, et vous pouvez spécifier
 - événement
 - délégué
 - parameter
+- type_parameter
+- locaux
+- local_function
 
 ### <a name="accessibility-levels-of-symbols"></a>Niveaux d’accessibilité des symboles
 
@@ -71,6 +75,7 @@ La liste suivante répertorie les valeurs autorisées, et vous pouvez spécifier
 - private
 - protected
 - protected\_internal ou protected_friend
+- locaux
 
 > [!NOTE]
 > Ne spécifiez aucun niveau d’accessibilité dans le cadre de votre convention d’affectation de noms si l’accessibilité ne s’applique pas au type de symbole que vous ciblez. Par exemple, les paramètres n’ont pas de niveaux d’accessibilité. Si vous spécifiez un niveau d’accessibilité pour une convention d’affectation de noms de paramètre, votre règle d’affectation de noms ne fonctionnera pas correctement.

@@ -1,7 +1,7 @@
 ---
 title: Tutoriel - Découvrez Django dans Visual Studio, étape 2
 description: Une procédure pas à pas des principes de base de Django dans le contexte de projets Visual Studio, en particulier les étapes de création d’une application et l’utilisation des affichages et modèles.
-ms.date: 04/25/2018
+ms.date: 08/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cb19107cefc5638449f2acf7511cba46ef131a1d
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: f568af59a638024275bdab41b33ac4fbbaf24dd3
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388252"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626967"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Étape 2 : Créer une application Django avec des vues et des modèles de pages
 
@@ -52,7 +52,7 @@ Une application Django commence généralement par un ensemble standard de fichi
 | --- | --- |
 | **\_\_init\_\_.py** | Le fichier qui identifie l’application en tant que package. |
 | **migrations** | Un dossier dans lequel Django stocke les scripts qui mettent à jour la base de données pour s’aligner avec les modifications apportées aux modèles. Les outils de migration de Django s’appliquent alors aux modifications nécessaires apportées à toute version précédente de la base de données afin qu’elle corresponde aux modèles actuels. À l’aide des migrations, restez concentré sur vos modèles et laissez Django gérer le schéma de la base de données sous-jacente. Les migrations sont présentées à l’étape 6. Pour l’instant, le dossier contient simplement un fichier *\_\_init\_\_.py* (indiquant que le dossier définit son propre package Python). |
-| **templates** | Un dossier pour les modèles de page Django contenant un seul fichier *index.html*. Les modèles sont des blocs de langage HTML dans lesquels les affichages peuvent ajouter des informations pour afficher une page de manière dynamique. Les « variables » du modèle de page, comme `{{ content }}` dans *index.html*, sont des espaces réservés pour des valeurs dynamiques, comme expliqué plus loin dans cet article (étape 2). Les applications Django créent généralement un espace de noms pour les modèles en les plaçant dans un sous-dossier qui correspond au nom de l’application. |
+| **templates** | Dossier pour les modèles de page Django contenant un seul fichier *index.html* dans un dossier correspondant au nom de l’application. (Dans Visual Studio 2017 version 15.7 et les versions antérieures, le fichier se trouve directement sous *templates*, et l’étape 2-4 vous amène à créer le sous-dossier.) Les modèles sont des blocs de langage HTML dans lesquels les affichages peuvent ajouter des informations pour afficher une page de manière dynamique. Les « variables » du modèle de page, comme `{{ content }}` dans *index.html*, sont des espaces réservés pour des valeurs dynamiques, comme expliqué plus loin dans cet article (étape 2). Les applications Django créent généralement un espace de noms pour les modèles en les plaçant dans un sous-dossier qui correspond au nom de l’application. |
 | **admin.py** | Le fichier Python dans lequel vous développez l’interface administrative de l’application (reportez-vous à l’étape 6), utilisée pour afficher et modifier des données dans une base de données. Au départ, ce fichier contient uniquement l’instruction, `from django.contrib import admin`. Par défaut, Django inclut une interface administrative standard à partir des entrées dans le fichier *settings.py* du projet Django, que vous pouvez activer en décommentant les entrées existantes dans *urls.py*. |
 | **apps.py** | Un fichier Python qui définit une classe de configuration de l’application (voir ci-après, après cette table). |
 | **models.py** | Les modèles sont des objets de données, identifiés par des fonctions, grâce auxquels les affichages interagissent avec la base de données sous-jacente de l’application (consultez l’étape 6). Django fournit le calque de connexion de base de données afin que les applications n’aient pas à se préoccuper de ces détails. Le fichier *models.py* est l’emplacement par défaut dans lequel créer vos modèles et contient initialement uniquement l’instruction, `from django.db import models`. |
@@ -129,7 +129,7 @@ Pour faire des essais avec différentes expressions régulières, essayez les ou
 
 ## <a name="step-2-3-render-a-view-using-html"></a>Étape 2-3 : afficher un affichage à l’aide de HTML
 
-La fonction `index` que vous avez jusqu’à présent dans *views.py* ne génère rien de plus qu’une réponse HTTP de texte brut pour la page. Les pages Web les plus réelles, bien entendu, répondent avec des pages HTML riches qui intègrent souvent des données dynamiques. En effet, la raison principale pour définir un affichage à l’aide d’une fonction est donc de vous permettre de générer dynamiquement ce contenu.
+La fonction `index` que vous avez jusqu’à présent dans *views.py* ne génère rien de plus qu’une réponse HTTP de texte brut pour la page. Les pages Web les plus réelles, bien entendu, répondent avec des pages HTML riches qui intègrent souvent des données dynamiques. En effet, la principale raison pour laquelle vous définissez une vue à l’aide d’une fonction est de vous permettre de générer ce contenu de manière dynamique.
 
 Étant donné que l’argument pour `HttpResponse` est simplement une chaîne, vous pouvez générer tout le langage HTML que vous désirez dans une chaîne. À titre d’exemple, remplacez la fonction `index` par le code suivant (en conservant les instructions `from` existantes), ce qui génère une réponse HTML à l’aide de contenu dynamique mis à jour chaque fois que vous actualisez la page :
 
@@ -149,7 +149,7 @@ def index(request):
 Exécutez le projet à nouveau pour afficher le message tel que «**Bonjour, Django !** le lundi 16 avril 2018 à 16:28:10 ». Actualisez la page pour mettre à jour l’heure et confirmer que le contenu est généré à chaque requête. Arrêtez le serveur lorsque vous avez terminé.
 
 > [!Tip]
-> Un raccourci pour arrêter et redémarrer le projet consiste à utiliser la commande de menu **Déboguer** > **Redémarrer** (**Ctrl**+**Maj**+**F5**) ou le bouton Redémarrer sur la barre d’outils de débogage :
+> Il existe un raccourci pour arrêter et redémarrer le projet. Il consiste à utiliser la commande de menu **Déboguer** > **Redémarrer** (**Ctrl**+**Maj**+**F5**) ou le bouton **Redémarrer** de la barre d’outils de débogage :
 >
 > ![Bouton Redémarrer de la barre d’outils de débogage dans Visual Studio](media/debugging-restart-toolbar-button.png)
 
@@ -176,7 +176,7 @@ Les étapes suivantes illustrent l’utilisation de modèles de page :
     'APP_DIRS': True,
     ```
 
-1. Dans le dossier *HelloDjangoApp*, ouvrez le fichier du modèle de page *templates/index.html* pour observer qu’il contient une variable, `{{ content }}` :
+1. Dans le dossier *HelloDjangoApp*, ouvrez le fichier de modèle de page *templates/HelloDjangoApp/index.html* (ou *templates/index.html* dans VS 2017 version 15.7 et les versions antérieures) pour voir qu’il contient une variable, `{{ content }}` :
 
     ```html
     <html>
@@ -200,7 +200,8 @@ Les étapes suivantes illustrent l’utilisation de modèles de page :
 
         return render(
             request,
-            "index.html",  # Relative path from the 'templates' folder to the template file
+            "HelloDjangoApp/index.html",  # Relative path from the 'templates' folder to the template file
+            # "index.html", # Use this code for VS 2017 15.7 and earlier
             {
                 'content': "<strong>Hello Django!</strong> on " + now.strftime("%A, %d %B, %Y at %X")
             }
@@ -209,9 +210,9 @@ Les étapes suivantes illustrent l’utilisation de modèles de page :
 
     Le premier argument pour `render`, comme vous pouvez le voir, est l’objet de requête, suivi par le chemin d’accès relatif au fichier de modèle dans le dossier *templates* de l’application. Un fichier de modèle est nommé pour la prise en charge de l’affichage, le cas échéant. Le troisième argument de `render` est alors un dictionnaire de variables auquel le modèle fait référence. Vous pouvez inclure des objets dans le dictionnaire, auquel cas une variable dans le modèle peut faire référence à `{{ object.property }}`.
 
-1. Exécutez le projet et observez le résultat. Vous devez voir un message similaire à l’étape 2-2, indiquant que le modèle fonctionne.
+1. Exécutez le projet et observez le résultat. Vous devez voir un message similaire à celui de l’étape 2-2, ce qui indique que le modèle fonctionne.
 
-    Notez, toutefois, que le langage HTML que vous avez utilisé dans la propriété `content` s’affiche uniquement en tant que texte brut, car la fonction `render` échappe automatiquement ce langage HTML. L’échappement automatique empêche les vulnérabilités accidentelles aux attaques par injection : les développeurs recueillent souvent les données entrées dans une page et les utilisent comme valeurs dans une autre page via un espace réservé du modèle. L’échappement sert également de rappel pour indiquer qu’il est à nouveau préférable de conserver le code HTML dans le modèle de page et en dehors du code. Heureusement, il est très simple de créer des variables supplémentaires quand elles sont nécessaires. Par exemple, remplacez *templates/index.html* pour faire correspondre la balise suivante, ce qui ajoute un titre de page et conserve toute la mise en forme dans le modèle de page :
+    Notez, toutefois, que le langage HTML que vous avez utilisé dans la propriété `content` s’affiche uniquement en tant que texte brut, car la fonction `render` échappe automatiquement ce langage HTML. L’échappement automatique empêche les vulnérabilités accidentelles aux attaques par injection : les développeurs recueillent souvent les données entrées dans une page et les utilisent comme valeurs dans une autre page via un espace réservé du modèle. L’échappement sert également de rappel pour indiquer qu’il est à nouveau préférable de conserver le code HTML dans le modèle de page et en dehors du code. Heureusement, il est très simple de créer des variables supplémentaires quand elles sont nécessaires. Par exemple, remplacez *index.html* par *templates* pour correspondre au code suivant, ce qui permet d’ajouter un titre de page et de conserver toute la mise en forme dans le modèle de page :
 
     ```html
     <html>
@@ -232,7 +233,8 @@ Les étapes suivantes illustrent l’utilisation de modèles de page :
 
         return render(
             request,
-            "index.html",  # Relative path from the 'templates' folder to the template file
+            "HelloDjangoApp/index.html",  # Relative path from the 'templates' folder to the template file
+            # "index.html", # Use this code for VS 2017 15.7 and earlier
             {
                 'title' : "Hello Django",
                 'message' : "Hello Django!",
@@ -245,15 +247,15 @@ Les étapes suivantes illustrent l’utilisation de modèles de page :
 
     ![Exécution de l’application à l’aide du modèle](media/django/step02-result.png)
 
-1. <a name="template-namespacing"></a>Pour finir, déplacez vos modèles dans un sous-dossier portant le même nom que votre application, ce qui crée un espace de noms et permet d’éviter les conflits potentiels avec d’autres applications que vous pouvez ajouter au projet. Autrement dit, créez un sous-dossier dans *templates* nommé *HelloDjangoApp*, déplacez *index.html* dans ce sous-dossier et modifiez la fonction d’affichage `index` pour faire référence au nouveau chemin d’accès du modèle, *HelloDjangoApp/index.html*. Puis exécutez le projet, vérifiez que la page s’affiche correctement et arrêtez le serveur.
+1. <a name="template-namespacing"></a>Visual Studio 2017 version 15.7 et versions antérieures : pour finir, déplacez vos modèles dans un sous-dossier portant le même nom que votre application, ce qui permet de créer un espace de noms et d’éviter les conflits potentiels avec d’autres applications que vous pouvez éventuellement ajouter au projet. (Les modèles de VS 2017 15.8+ le font automatiquement pour vous.) Autrement dit, créez un sous-dossier dans *templates* nommé *HelloDjangoApp*, déplacez *index.html* dans ce sous-dossier et modifiez la fonction d’affichage `index` pour faire référence au nouveau chemin d’accès du modèle, *HelloDjangoApp/index.html*. Puis exécutez le projet, vérifiez que la page s’affiche correctement et arrêtez le serveur.
 
 1. Validez vos modifications du contrôle de code source et mettez à jour votre référentiel distant, si vous le souhaitez, comme indiqué sous [l’étape 2-2](#commit-to-source-control).
 
-### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>Question : Les modèles de page doivent-ils être dans un fichier distinct ?
+### <a name="question-do-page-templates-have-to-be-in-a-separate-file"></a>Question : les modèles de page doivent-ils être dans un fichier distinct ?
 
 Réponse : bien que les modèles soient généralement conservés dans des fichiers HTML distincts, vous pouvez également utiliser un modèle inclus. L’utilisation d’un fichier distinct est recommandée, toutefois, pour maintenir une séparation nette entre la balise et le code.
 
-### <a name="question-must-templates-use-the-html-file-extension"></a>Question : Les modèles doivent-ils utiliser l’extension de fichier .html ?
+### <a name="question-must-templates-use-the-html-file-extension"></a>Question : les modèles doivent-ils utiliser l’extension de fichier .html ?
 
 Réponse : L’extension *.html* pour les fichiers de modèle de page est entièrement facultative, car vous identifiez toujours le chemin d’accès relatif exact au fichier dans le deuxième argument de la fonction `render`. Toutefois, Visual Studio (et d’autres éditeurs) en général vous offrent des fonctionnalités comme la complétion de code et la coloration syntaxique avec des fichiers *.html*, ce qui compense le fait que les modèles de page ne soient pas strictement HTML.
 
