@@ -12,21 +12,21 @@ ms.author: gewarren
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.openlocfilehash: c80ee0791c1c073c82681e59e124c5c45b378a07
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2018
+ms.lasthandoff: 09/05/2018
 ms.locfileid: "34335705"
 ---
-# F1 Aide
+# <a name="f1-help"></a>F1 Aide
 
 Nous n’avons apparemment pas trouvé ce que vous recherchiez ; nous en sommes désolés. Merci de [nous aider à améliorer l’aide](#help-us-improve-f1).
 
-## Position du curseur
+## <a name="cursor-position"></a>Position du curseur
 
 Si vous recherchez de l’aide (F1) sur un mot clé ou sur le nom de l’API, veillez à positionner le curseur à l’intérieur ou juste à droite du mot avant d’appuyer sur **F1**. Si cela ne fonctionne toujours pas, choisissez dans la liste des [liens utiles](#useful-links) ou effectuez une recherche sur https://docs.microsoft.com.
 
-## Liens utiles
+## <a name="useful-links"></a>Liens utiles
 
 - Pour plus d’informations sur Visual Studio, consultez [Vue d’ensemble de Visual Studio](../../ide/visual-studio-ide.md).
 - Pour obtenir de l’aide sur l’éditeur de texte de Visual Studio, consultez [Utiliser l’éditeur de code](../../ide/writing-code-in-the-code-and-text-editor.md).
@@ -36,6 +36,6 @@ Si vous recherchez de l’aide (F1) sur un mot clé ou sur le nom de l’API, ve
 - Pour de l’aide sur Python, consultez [Python dans Visual Studio](../../python/overview-of-python-tools-for-visual-studio.md).
 - Pour de l’aide sur C++, consultez [C++ dans Visual Studio](/cpp/visual-cpp-in-visual-studio).
 
-## Aidez-nous à améliorer F1
+## <a name="help-us-improve-f1"></a>Aidez-nous à améliorer F1
 
 Aidez-nous à améliorer l’expérience d’aide de la touche F1. Indiquez-nous un problème dans l’aide du produit en cliquant sur le bouton **Commentaires sur les produits** ci-dessous. Indiquez ce que vous recherchiez dans l’aide quand vous avez appuyé sur **F1**, par exemple le symbole ou la fenêtre où se trouvait votre curseur. Merci !
