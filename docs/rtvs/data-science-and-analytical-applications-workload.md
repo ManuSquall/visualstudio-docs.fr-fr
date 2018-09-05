@@ -1,22 +1,24 @@
 ---
 title: Charge de travail Applications de science et analyse des données
-description: La charge de travail Applications de science et analyse des données dans Visual Studio regroupe Python, R et F#, et les distributions de leur runtime respectif, y compris Anaconda.
+description: La charge de travail Visual Studio regroupe Python, R et F#, et les distributions de leur runtime respectif, y compris Anaconda.
 ms.date: 01/24/2018
 ms.prod: visual-studio-dev15
-ms.technology: vs-rtvs - vs-python
+ms.technology: vs-rtvs
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
 manager: douge
 ms.workload:
+- python
 - data-science
-ms.openlocfilehash: dc6d1548a95dd60f2dc05dc1a04953525c4b3b4a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3d9815c72a500f9edd3b01f76dae3411ac0ee50f
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626617"
 ---
-# <a name="data-science-and-analytical-applications-workload"></a>Charge de travail Applications de science et analyse des données
+# <a name="install-data-science-support-in-visual-studio"></a>Installer la prise en charge de la science des données dans Visual Studio
 
 La charge de travail Applications de science et analyse des données, que vous sélectionnez et installez via le programme d’installation de Visual Studio, regroupe trois langages et les distributions de leur runtime respectif :
 
@@ -29,7 +31,7 @@ La charge de travail Applications de science et analyse des données, que vous s
 R et Python sont deux des principaux langages de script utilisés pour la science des données. Ces deux langages sont faciles à apprendre et sont pris en charge par un écosystème étendu de packages. Ces packages permettent de répondre aux besoins de nombreux scénarios, comme l’acquisition de données, le nettoyage, l’apprentissage de modèle, le déploiement et le traçage. F# est également un puissant langage .NET fonctionnel qui convient pour effectuer une grande variété de tâches de traitement des données.
 
 <!--Note link on the image because this one is large -->
-[![Captures d’écran de Visual Studio avec R, Python et F #](media/data-science-workload-screens.png)](media/data-science-workload-screens.png)
+[![Captures d’écran de Visual Studio avec R, Python et F#](media/data-science-workload-screens.png)](media/data-science-workload-screens.png#lightbox)
 
 ## <a name="workload-options"></a>Options de la charge de travail
 
@@ -48,9 +50,9 @@ Par défaut, la charge de travail installe les options suivantes, que vous pouve
 
 Même si F# est fourni avec plusieurs autres charges de travail et que Python a sa propre charge de travail, Applications de science et analyse des données est actuellement la seule charge de travail à inclure R. Cela dit, vous pouvez aussi installer R indépendamment de la charge de travail. Sous l’onglet **Composants individuels** du programme d’installation, sélectionnez les options R suivantes :
 
-- **Activités de développement > Prise en charge du langage R**
-- **Activités de développement > Microsoft R Client**
-- **Compilateurs, outils de génération et runtimes > Prise en charge du runtime pour les outils de développement R**
+- **Activités de développement** > **Prise en charge du langage R**
+- **Activités de développement** > **Microsoft R Client**
+- **Compilateurs, outils de build et runtime** > **Prise en charge du runtime pour les outils de développement R**
 
 ## <a name="sql-server-integration"></a>Intégration de SQL Server
 
@@ -74,7 +76,7 @@ Pour tirer pleinement parti de l’intégration de SQL Server, utilisez le progr
 
 Pour plus d'informations :
 
-- [Utilisation de SQL Server et de R](../rtvs/sql-server.md)
+- [Utiliser SQL Server et R](integrating-sql-server-with-r.md)
 - [In-database Advanced Analytics with R in SQL Server 2016 (blog)](https://blogs.technet.microsoft.com/dataplatforminsider/2016/03/29/in-database-advanced-analytics-with-r-in-sql-server-2016/)
 - [Python in SQL Server 2017: enhanced in-database machine learning (blog)](https://blogs.technet.microsoft.com/dataplatforminsider/2017/04/19/python-in-sql-server-2017-enhanced-in-database-machine-learning/)
 
@@ -87,4 +89,4 @@ Le kit SDK Azure pour Python facilite l’utilisation et la gestion des services
 Azure Notebooks (actuellement en préversion) fournit un accès en ligne gratuit aux notebooks Jupyter qui s’exécutent dans le cloud sur Microsoft Azure. Le service inclut des exemples de notebooks en Python, R et F# pour vous aider à démarrer. Visitez [notebooks.azure.com](https://notebooks.azure.com/).
 
 <!--Note link on the image because this one is large -->
-[![Captures d’écran d’Azure Notebooks avec l’exemple d’introduction à R](media/data-science-workload-notebooks.png)](media/data-science-workload-notebooks.png)
+[![Captures d’écran d’Azure Notebooks avec l’exemple d’introduction à R](media/data-science-workload-notebooks.png)](media/data-science-workload-notebooks.png#lightbox)

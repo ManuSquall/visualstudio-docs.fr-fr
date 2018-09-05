@@ -1,7 +1,7 @@
 ---
 title: Tutoriel - Découvrez Django dans Visual Studio, étape 4
 description: Une procédure pas à pas des principes de base de Django dans le contexte de projets Visual Studio, en particulier les fonctionnalités fournies par le modèle de projet Web Django.
-ms.date: 04/25/2018
+ms.date: 08/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f7b62914a1a0d895aaf3e1322c4ef7a68a555e0c
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 4e37b8f5b50a7145ca5fbaa0597fd6109b1be98a
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388174"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626898"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>Étape 4 : Utiliser le modèle de projet web Django complet
 
@@ -31,7 +31,7 @@ Dans cette étape vous pouvez désormais :
 > - comprendre les affichages et les modèles de page créés par le modèle de projet, qui se composent de trois pages héritées d’un modèle de page de base et qui utilisent des bibliothèques JavaScript statiques telles que jQuery et Bootstrap (étape 4-2)
 > - comprendre le routage d’URL fourni par le modèle (étape 4-3)
 
-Le modèle fournit également l’authentification de base, abordée dans l’étape 5.
+Le modèle fournit également l’authentification de base, traitée à l’étape 5.
 
 ## <a name="step-4-1-create-a-project-from-the-template"></a>Étape 4-1 : créer un projet à partir du modèle
 
@@ -39,7 +39,7 @@ Le modèle fournit également l’authentification de base, abordée dans l’é
 
 1. Dans la boîte de dialogue Nouveau projet, recherchez et sélectionnez le modèle **Projet Web Django**, appelez le projet « DjangoWeb » et sélectionnez **OK**.
 
-1. Étant donné que le modèle inclut à nouveau un fichier *requirements.txt*, Visual Studio vous invite à installer ces dépendances. Choisissez l’option, **Installer dans un environnement virtuel** et dans la boîte de dialogue **Ajouter un environnement virtuel**, sélectionnez **Créer** pour accepter les valeurs par défaut.
+1. Comme le modèle inclut à nouveau un fichier *requirements.txt*, Visual Studio vous demande où installer ces dépendances. Choisissez l’option, **Installer dans un environnement virtuel** et dans la boîte de dialogue **Ajouter un environnement virtuel**, sélectionnez **Créer** pour accepter les valeurs par défaut.
 
 1. Une fois que Visual Studio a terminé la configuration de l’environnement virtuel, suivez les instructions du fichier *readme.html* qui s’affiche pour créer un superutilisateur Django (c’est-à-dire un administrateur). Cliquez simplement avec le bouton de droite sur le projet Visual Studio et sélectionnez la commande **Python** > **Django - Créer un superutilisateur**, puis suivez les invites. Veillez à enregistrer votre nom d’utilisateur et mot de passe lorsque vous l’utilisez en exerçant les fonctionnalités d’authentification de l’application.
 
@@ -47,7 +47,7 @@ Le modèle fournit également l’authentification de base, abordée dans l’é
 
     ![Explorateur de solutions affichant le projet DjangoWeb en tant que projet de start-up](media/django/step04-second-project-in-solution-set-as-startup-project.png)
 
-1. Sélectionnez **Déboguer** > **Démarrer le débogage** (**F5**) ou utilisez le bouton **Serveur Web** dans la barre d’outils pour exécuter le serveur :
+1. Sélectionnez **Déboguer** > **Démarrer le débogage** (**F5**) ou utilisez le bouton **Serveur web** dans la barre d’outils pour exécuter le serveur :
 
     ![Exécuter le bouton de la barre d’outils du serveur Web dans Visual Studio](media/django/run-web-server-toolbar-button.png)
 

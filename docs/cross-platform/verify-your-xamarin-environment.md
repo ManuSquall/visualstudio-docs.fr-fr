@@ -11,12 +11,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 83dfac08058e8b01b6c6d007461f3468e91b396c
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 9ae697825d0d4a2c380c6f0d540153fbf06d4da4
+ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233085"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "42626564"
 ---
 # <a name="verify-your-xamarin-environment"></a>Vérifier votre environnement Xamarin
 
@@ -54,7 +54,7 @@ Ces actions créent une solution avec quatre projets : un projet de bibliothèqu
 
   ![Sélectionnez l’émulateur Visual Studio pour Android comme cible de débogage](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin Verify 3")
 
-  Pour plus d’informations, consultez [Introducing Visual Studio’s Emulator for Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx) (blog ALM Visual Studio). Si vous avez des difficultés à faire fonctionner l’émulateur, consultez [Résoudre les problèmes de l’émulateur Visual Studio pour Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). Vous pouvez aussi créer des profils d’appareil pour l’émulateur en sélectionnant **Outils > Android > Gestionnaire d’émulateur Android**.
+  Pour plus d’informations, consultez [Présentation de l’émulateur pour Android de Visual Studio](https://blogs.msdn.microsoft.com/devops/2014/11/12/introducing-visual-studios-emulator-for-android/) sur le blog Microsoft DevOps. Si vous avez des difficultés à faire fonctionner l’émulateur, consultez [Résoudre les problèmes de l’émulateur Visual Studio pour Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). Vous pouvez aussi créer des profils d’appareil pour l’émulateur en sélectionnant **Outils > Android > Gestionnaire d’émulateur Android**.
 
 3. Appuyez sur **F5** pour compiler et déployer le programme sur l’émulateur ou l’appareil Android.
 

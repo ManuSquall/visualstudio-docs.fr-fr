@@ -2,7 +2,7 @@
 title: Nouveautés de Visual Studio 2017
 description: Découvrez les nouvelles fonctionnalités de Visual Studio 2017.
 ms.custom: ''
-ms.date: 05/09/2018
+ms.date: 08/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
@@ -17,16 +17,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 542814c5902f2dba1c76b33f78273aadfb583eff
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 3154264938753cf9be41cdd5ef8964f49664d730
+ms.sourcegitcommit: bd6f04aff96201d514157de16ed6ddb8593d02b6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282971"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42755507"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Nouveautés de Visual Studio 2017
 
-**Mis à jour pour la [version 15.7](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)**
+**Mis à jour pour la [version 15.8](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)**
 
 Vous envisagez de mettre à niveau une version antérieure de Visual Studio ? Visual Studio 2017 peut vous apporter une productivité inégalée pour l’ensemble des développements, applications et plateformes. Utilisez Visual Studio 2017 afin de développer des applications pour Android, iOS, Windows, le web et le Cloud. Écrivez votre code rapidement, déboguez et diagnostiquez facilement, testez souvent et publiez en toute confiance. Vous pouvez également étendre et personnaliser Visual Studio en créant vos propres extensions. Avec cette version, utilisez la gestion de versions, soyez agile et collaborez efficacement !
 
@@ -36,7 +36,7 @@ Voici un récapitulatif général des changements par rapport à la version ant�
 * **[Performances et productivité](#performance-and-productivity)**. Nous nous sommes concentrés sur les fonctionnalités nouvelles et modernes du développement d’applications mobiles, de bureau et cloud. De plus, nous avons également amélioré l’acquisition, les performances et les expériences de productivité des développeurs en général. Visual Studio démarre plus vite, est plus réactif et utilise moins de mémoire qu’auparavant.
 * **[Développement d’applications cloud avec Azure](#cloud-app-development-with-azure)**. Une suite intégrée d’outils Azure vous permet de créer facilement des applications prioritairement centrées sur le cloud et optimisées par Microsoft Azure. Visual Studio vous permet de facilement configurer, générer, déboguer, packager et déployer des applications et services sur Azure.
 * **[Développement d’applications Windows](#windows-app-development)**. Avec les modèles UWP fournis dans Visual Studio 2017, créez un projet unique pour tous les appareils Windows 10 &ndash; PC, tablette, téléphone, Xbox, HoloLens, Surface Hub, etc. Ensuite, créez un package d’application et soumettez-le sur le Microsoft Store à partir de Visual Studio pour distribuer votre application aux clients.
-* **[Développement d’applications mobiles](#mobile-app-development)**. Dans Visual Studio 2017, vous pouvez innover et obtenir des résultats rapides grâce à Xamarin, qui unifie vos besoins mobiles multi-plateformes à l’aide d’une base de code et d’un ensemble de compétences essentiels. Favorisez la mobilité de vos équipes existantes, les investissements technologiques, et optez pour le code C# pour créer des expériences consommateur en avance et pour un budget inférieur. Accélérez chaque étape du cycle de vie mobile pour offrir des expériences consommateur de classe mondiale ou un portefeuille d’applications de productivité pour encourager la mobilité de votre personnel.
+* **[Développement d’applications mobiles](#mobile-app-development)**. Dans Visual Studio 2017, vous pouvez innover et obtenir des résultats rapides grâce à Xamarin, qui unifie vos besoins mobiles multi-plateformes à l’aide d’une base de code et d’un ensemble de compétences essentiels. Favorisez la mobilité de vos équipes existantes, les investissements technologiques, et optez pour le code C# pour créer des expériences consommateur en avance et pour un budget inférieur. Accélérez chaque étape du cycle de vie mobile pour offrir des expériences consommateur de classe mondiale ou un portefeuille d’applications de productivité pour encourager la mobilité de votre personnel. (**Nouveauté de la version 15.8** : les développeurs d’applications mobiles qui utilisent Hyper-V ont désormais accès à un Émulateur Android rapide qui prend en charge les dernières API Android, fonctionne avec Google Play Services et prend en charge toutes les fonctionnalités de l’Émulateur Android, notamment l’appareil photo, la géolocalisation et Quick Boot.)
 * **[Développement multiplateforme](#cross-platform-development)**. Livrez sans plus d’effort des logiciels pour toutes les plateformes ciblées. Étendez les processus DevOps à SQL Server à l’aide de Redgate Data Tools et automatisez en toute sécurité les déploiements de bases de données à partir de Visual Studio. Sinon, utilisez .NET Core pour écrire des applications et des bibliothèques qui s’exécutent sans modification sur les systèmes d’exploitation Windows, Linux et macOS. (Autre **nouveauté de la version 15.3** : la prise en charge côte à côte des kits SDK .NET Core 2.0.)
 * **[Développement de jeux](#games-development)**. Avec Visual Studio Tools for Unity (VSTU), vous pouvez utiliser Visual Studio pour écrire des scripts d'éditeur et de jeu en C#, puis utiliser son débogueur performant pour rechercher et corriger les erreurs. La dernière mise en production de VSTU inclut la coloration de la syntaxe pour le langage ShaderLab de Unity, des visualisations du débogueur améliorées et une génération de code améliorée pour l’Assistant MonoBehavior. VSTU apporte également vos fichiers de projet Unity et vos messages de console, et offre la possibilité de démarrer votre jeu dans Visual Studio, afin de perdre moins de temps à aller et venir de l'éditeur Unity en cours d'écriture.
 * **[Développement IA](#ai-development)**. Avec Visual Studio Tools pour AI (**nouveauté de la version 15.5**), vous pouvez utiliser les fonctionnalités de productivité de Visual Studio pour accélérer l’innovation de l’intelligence artificielle (IA). Créez, testez et déployez des solutions d’apprentissage profond (deep learning) / d’intelligence artificielle (IA) qui s’intègrent parfaitement à Azure Machine Learning pour offrir de puissantes fonctionnalités d’expérimentation, telles que l’envoi des tâches de préparation des données et d’apprentissage des modèles en toute transparence à différentes cibles de calcul. Visual Studio Tools for AI prend en charge les métriques personnalisées et le suivi de l’historique des exécutions, ce qui permet l’audit et la reproductibilité de la science des données.
@@ -134,6 +134,18 @@ Pour obtenir plus d’informations sur les tests automatisés, consultez le bill
 Pour plus d’informations sur les nouveautés de l’extension DevLabs [Outils de livraison continue pour Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio), consultez le billet de blog [Commit with confidence: Commit time code quality](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/).
 
 ### <a name="visual-studio-ide-enhancements"></a>Améliorations de l’environnement de développement intégré (IDE) de Visual Studio
+
+#### <a name="multi-caret-editing"></a>Modification avec signes insertion multiples
+
+**Nouveauté de la version 15.8** : l’édition simultanée de plusieurs emplacements dans un fichier est désormais chose facile. Commencez par créer des points d’insertion et des sélections à plusieurs endroits dans un fichier. Utilisez ensuite la fonctionnalité de modification avec signes insertion multiples pour effectuer la même modification à plusieurs endroits à la fois.
+
+Pour plus d’informations, consultez la section [Sélection avec signes insertion multiples](finding-and-replacing-text.md#multi-caret-selection) dans la page [Rechercher et remplacer du texte](finding-and-replacing-text.md).
+
+#### <a name="keep-keybinding-profiles-consistent"></a>Maintenir la cohérence des profils de combinaison de touches
+
+**Nouveauté de la version 15.8** : désormais, vous pouvez maintenir la cohérence de vos combinaisons de touches entre les outils à l’aide de deux nouveaux profils de clavier : Visual Studio Code et ReSharper (Visual Studio). Vous trouverez ces schémas sous **Outils** > **Options** > **Général** > **Clavier** et dans le menu déroulant supérieur.
+
+  ![Nouveaux profils de combinaison de touches pour Visual Studio Code et ReSharper](../ide/media/vs-keyboard-mappings-code-resharper.png)
 
 #### <a name="use-new-refactorings"></a>Utiliser les nouvelles refactorisations
 
@@ -278,6 +290,20 @@ Pour plus d’informations, consultez la page [Visual Studio et Xamarin](../cros
 **Nouveauté de la version 15.4** : Xamarin Live permet aux développeurs de déployer, tester et déboguer en continu leurs applications, directement sur des appareils iOS et Android. Après avoir téléchargé Xamarin Live Player &mdash;disponible dans l’App Store ou sur Google Play&mdash;, vous pouvez associer votre appareil avec Visual Studio et révolutionner la façon dont vous créez des applications mobiles. Cette fonctionnalité est désormais incluse dans Visual Studio et peut être activée en accédant à **Outils** > **Options** > **Xamarin** > **Autres** > **Activer Xamarin Live Player**.
 
 ![Animation de l’association, du déploiement et des modes d’édition Xamarin Live Player](../ide/media/xamarinliveplayer.gif)
+
+### <a name="support-for-google-android-emulator"></a>Prise en charge de l’Émulateur Android de Google
+
+**Nouveauté de la version 15.8** : quand vous exécutez Hyper-V, vous pouvez désormais utiliser l’Émulateur Android de Google avec d’autres technologies basées sur Hyper-V, notamment les machines virtuelles Hyper-V, les outils Docker, l’émulateur HoloLens, et bien plus encore. (Cette fonctionnalité nécessite la Mise à jour d’avril 2018 de Windows 10 ou une version ultérieure.)
+
+![Émulateur Android de Google avec les technologies Hyper-V](../ide/media/xamarin-hyperv-android-emulator.png)
+
+#### <a name="xamarinandroid-designer-split-view-editor"></a>Éditeur en mode Fractionné du concepteur Xamarin.Android
+
+Autre **nouveauté de la version 15.8** : nous avons apporté des améliorations significatives à l’expérience utilisateur du concepteur pour Xamarin.Android. Un tout nouvel éditeur en mode Fractionné a été introduit pour vous permettre de créer, modifier et afficher un aperçu de vos dispositions.
+
+![Éditeur en mode Fractionné du concepteur Xamarin.Android](../ide/media/android-designer-split-view.png)
+
+Pour plus d’informations, consultez [Accélération matérielle pour les performances de l’émulateur](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin#hyper-v-overview)
 
 ### <a name="visual-studio-app-center"></a>Visual Studio App Center
 

@@ -10,12 +10,12 @@ ms.author: amburns
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 99b67f8ea89b4ea1308cf6db8ced359768861699
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: f47d5c013de34a64591100b8a459f6b18721e0b0
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251879"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635601"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Développement mobile multiplateforme dans Visual Studio
 
@@ -36,7 +36,7 @@ Avec Visual Studio Tools pour Xamarin, vous pouvez cibler Android, iOS et Window
 |[Installer Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[En savoir plus sur Xamarin dans Visual Studio](http://visualstudio.microsoft.com/explore/xamarin-vs) (VisualStudio.com)|
 |[Documentation sur le développement d’applications mobiles Xamarin](/xamarin/) |
-|[Gestion du cycle de vie des applications (ALM) avec des applications Xamarin](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) |
+|[DevOps avec les applications Xamarin](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) |
 |[En savoir plus sur les applications Windows universelles dans Visual Studio](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[En savoir plus sur les similitudes entre Swift et C#](http://aka.ms/scposter) (download.microsoft.com)|
 

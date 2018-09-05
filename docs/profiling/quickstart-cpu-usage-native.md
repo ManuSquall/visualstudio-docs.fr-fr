@@ -1,7 +1,8 @@
 ---
-title: Analyser les données d’utilisation de l’UC (C++) | Microsoft Docs
+title: Analyser les données d’utilisation de l’UC (C++)
+description: Mesurer les performances des applications en C++ à l’aide de l’outil de diagnostic de l’utilisation de l’UC
 ms.custom: ''
-ms.date: 12/05/2017
+ms.date: 08/06/2018
 ms.technology: vs-ide-debug
 ms.topic: quickstart
 f1_keywords:
@@ -14,29 +15,34 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 52483a920d47b5728645ae195bc1837c7ccc565b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c4cf51a4961d6b9139d4f8fdbfd6c5df2ab0052c
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42627063"
 ---
-# <a name="analyze-cpu-usage-data-in-visual-studio-c"></a>Analyser les données d’utilisation de l’UC dans Visual Studio (C++)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Démarrage rapide : analyser les données d’utilisation de l’UC dans Visual Studio (C++)
 
 Visual Studio fournit de nombreuses fonctionnalités puissantes qui vous permettent d’analyser les problèmes de performances dans votre application. Cette rubrique vous offre un moyen rapide de vous familiariser avec quelques-unes des fonctionnalités de base. Ici, nous allons examiner l’outil pour identifier les goulots d’étranglement de performances liés à une utilisation élevée de l’UC. Les outils de diagnostics sont pris en charge pour le développement .NET dans Visual Studio (y compris ASP.NET) et pour le développement natif/C++.
 
 Le hub de diagnostic propose de nombreuses autres options pour exécuter et gérer votre session de diagnostic. Si l’outil **Utilisation de l’UC** décrit ici ne vous fournit pas les données dont vous avez besoin, les [autres outils de profilage](../profiling/profiling-feature-tour.md) fournissent d’autres types d’informations qui peuvent vous être utiles. Dans de nombreux cas, le goulot d’étranglement des performances de votre application peut ne pas provenir de votre processeur, mais de la mémoire, de l’interface utilisateur de rendu ou du temps de requête réseau. Le hub de diagnostic vous offre de nombreuses autres options pour enregistrer et analyser ce type de données.
 
+Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**). Sur Windows 7 et les versions ultérieures, vous pouvez utiliser l’outil post mortem [Profileur de performances](../profiling/profiling-feature-tour.md).
+
 ## <a name="create-a-project"></a>Créer un projet
 
-1. Dans Visual Studio, sélectionnez **Fichier > Nouveau projet**.
+1. Dans Visual Studio, sélectionnez **Fichier** > **Nouveau projet**.
 
 2. Sous **Visual C++**, choisissez **Windows Desktop** puis, dans le volet central, choisissez **Application console Windows**.
+
+    Si vous ne voyez pas le modèle de projet **Application console Windows**, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement Desktop en C++**, puis choisissez **Modifier**.
 
 3. Tapez un nom tel que **Diagnostics_Démarrage_Natif** et cliquez sur **OK**.
 
     Visual Studio crée le projet.
 
-4. Dans MyDbgApp.cpp, remplacez le code suivant
+4. Dans *MyDbgApp.cpp*, remplacez le code suivant
 
     ```c++
     int main()
@@ -109,7 +115,7 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
     }
     ```
   
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Étape 1 : Collecter les données de profilage 
+## <a name="step-1-collect-profiling-data"></a>Étape 1 : Collecter les données de profilage 
   
 1.  Tout d’abord, définissez un point d’arrêt dans votre application sur cette ligne de code dans la fonction `main` :
 
@@ -124,9 +130,9 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
     > [!TIP]
     > En définissant deux points d’arrêt, vous limitez la collecte de données aux sections de code que vous souhaitez analyser.
   
-3.  La fenêtre **Outils de diagnostic** est déjà visible, sauf si vous l’avez désactivée. Pour réafficher la fenêtre, cliquez sur **Déboguer / Fenêtres / Afficher les outils de diagnostic**.
+3.  La fenêtre **Outils de diagnostic** est déjà visible, sauf si vous l’avez désactivée. Pour réafficher la fenêtre, cliquez sur **Déboguer** > **Fenêtres** > **Afficher les outils de diagnostic**.
 
-4.  Cliquez sur **Déboguer / Démarrer le débogage** (ou **Démarrer** dans la barre d’outils, ou **F5**).
+4.  Cliquez sur **Déboguer** > **Démarrer le débogage** (ou bien sur **Démarrer** dans la barre d’outils, ou sur **F5**).
 
      Quand l’application est chargée, la vue **Résumé** des outils de diagnostics s’affiche.
 
@@ -148,7 +154,7 @@ Le hub de diagnostic propose de nombreuses autres options pour exécuter et gér
 
      À ce stade, vous pouvez commencer à analyser les données.
 
-## <a name="Step2"></a> Étape 2 : Analyser les données d’utilisation de l’UC
+## <a name="step-2-analyze-cpu-usage-data"></a>Étape 2 : Analyser les données d’utilisation de l’UC
 
 Nous vous recommandons de commencer à analyser vos données en examinant la liste des fonctions située sous l’onglet Utilisation de l’UC, en identifiant les fonctions qui effectuent la plus grande partie du travail, puis en analysant ces fonctions les unes après les autres.
 
@@ -183,4 +189,4 @@ Nous vous recommandons de commencer à analyser vos données en examinant la lis
 ## <a name="see-also"></a>Voir aussi  
 
  [Profilage dans Visual Studio](../profiling/index.md)  
- [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md)
+ [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)

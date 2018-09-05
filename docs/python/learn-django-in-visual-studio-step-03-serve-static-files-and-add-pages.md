@@ -1,7 +1,7 @@
 ---
 title: Tutoriel - Découvrez Django dans Visual Studio, étape 3
 description: Une procédure pas à pas des principes de base de Django dans le contexte de projets Visual Studio, expliquant en particulier comment prendre en charge des fichiers statiques, ajouter des pages à l’application et utiliser l’héritage du modèle
-ms.date: 06/27/2018
+ms.date: 08/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e6d4f4d9ae7be2fc196b7dada79ba89b527dd209
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 1e58ff1e9685f9f3147fc3fa199fad12b98a0ed4
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388343"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627255"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Étape 3 : Prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle
 
@@ -27,7 +27,7 @@ Dans les étapes précédentes de ce tutoriel, vous avez appris comment créer u
 Dans cette étape, vous apprenez comment :
 
 > [!div class="checklist"]
-> - utiliser des modèles d’élément Visual Studio pour créer rapidement de nouveaux fichiers de types différents avec un code réutilisable pratique (étape 3-1)
+> - Utiliser des modèles d’élément Visual Studio pour ajouter rapidement de nouveaux fichiers de types différents avec un code réutilisable pratique (étape 3-1)
 > - configurer le projet Django pour prendre en charge des fichiers statiques (étape 3-2)
 > - ajoutez des pages supplémentaires à l’application (étape 3-3)
 > - utiliser l’héritage de modèle pour créer un en-tête et une barre de navigation utilisés sur plusieurs pages (étape 3-4)
@@ -78,7 +78,7 @@ Vous pouvez organiser les fichiers à l’aide d’une structure de dossiers dan
     }
     ```
 
-1. Remplacez le contenu du fichier *templates/HelloDjangoApp/index.html* de l’application par le code suivant, qui remplace l’élément `<strong>` utilisé à l’étape 2 par un `<span>` qui fait référence à la classe de style `message`. Une telle utilisation d’une classe de style vous offre davantage de flexibilité dans l’ajout des styles à l’élément. (Si vous n’avez pas déplacé *index.html* dans un sous-dossier dans *templates*, reportez-vous aux [espaces de noms du modèle](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing) à l’étape 2.)
+1. Remplacez le contenu du fichier *templates/HelloDjangoApp/index.html* de l’application par le code suivant, qui remplace l’élément `<strong>` utilisé à l’étape 2 par un `<span>` qui fait référence à la classe de style `message`. Une telle utilisation d’une classe de style vous offre davantage de flexibilité dans l’ajout des styles à l’élément. (Si vous n’avez pas déplacé *index.html* dans un sous-dossier de *templates* en utilisant VS 2017 15.7 et versions antérieures, consultez les informations relatives aux [espaces de noms du modèle](learn-django-in-visual-studio-step-02-create-an-app.md#template-namespacing) à l’étape 2-4.)
 
     ```html
     <html>
@@ -186,7 +186,7 @@ Un modèle de base délimite les blocs à l’aide des balises `{% block <block_
 
 Les étapes suivantes démontrent l’héritage :
 
-1. Dans le dossier *templates/HelloDjangoApp* de l’application, créez un fichier HTML (en utilisant le menu contextuel **Ajouter** > **Nouvel élément** ou **Ajouter** > **Page HTML**) nommé `layout.html` et remplacez son contenu par le balisage ci-dessous. Vous pouvez voir que ce modèle contient un bloc nommé « contenu » qui représente tout ce que les pages de référence doivent remplacer :
+1. Dans le dossier *templates/HelloDjangoApp* de l’application, créez un fichier HTML (via le menu contextuel **Ajouter** > **Nouvel élément** ou **Ajouter** > **Page HTML**) nommé *layout.html*, puis remplacez son contenu par le code ci-dessous. Vous pouvez voir que ce modèle contient un bloc nommé « contenu » qui représente tout ce que les pages de référence doivent remplacer :
 
     ```html
     <!DOCTYPE html>

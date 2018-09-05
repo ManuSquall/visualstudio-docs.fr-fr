@@ -1,5 +1,5 @@
 ---
-title: Présentation de l’éditeur de Visual Studio
+title: Présentation de l’édition
 ms.date: 11/30/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,20 +11,20 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 93f4dd635e2d90a0ed56b4732c79bb67b569f09b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 420250a9e8dc99d6a02505efa7efb8f44e287e12
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511233"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42626741"
 ---
-# <a name="quickstart-use-the-code-editor"></a>Démarrage rapide : utiliser l’éditeur de code
+# <a name="learn-to-use-the-code-editor"></a>Apprendre à utiliser l’éditeur de code
 
 Dans cette présentation de 10 minutes de l’éditeur de code de Visual Studio, vous allez ajouter du code dans un fichier pour découvrir de quelles façons Visual Studio facilite l’écriture, la navigation et la compréhension du code.
 
 Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour l’installer gratuitement.
 
-Ce guide de démarrage rapide part du principe que vous connaissez déjà un langage de programmation. Si ce n’est pas le cas, nous vous suggérons de commencer par consulter l’un des guides de démarrage rapide de programmation, par exemple, créer une application web en [Python](../ide/quickstart-python.md) ou en [C#](../ide/tutorial-csharp-aspnet-core.md), ou créer une application de console en [Visual Basic](../ide/quickstart-visual-basic-console.md) ou en [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
+Cet article part du principe que vous connaissez déjà un langage de programmation. Si ce n’est pas le cas, nous vous suggérons de commencer par consulter l’un des guides de démarrage rapide de programmation, par exemple, créer une application web en [Python](../ide/quickstart-python.md) ou en [C#](../ide/tutorial-csharp-aspnet-core.md), ou créer une application de console en [Visual Basic](../ide/quickstart-visual-basic-console.md) ou en [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
 
 ## <a name="create-a-new-code-file"></a>Créer un fichier de code
 
@@ -157,16 +157,8 @@ Aucun développeur ne réussit à créer un code parfait dès le départ. L’un
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Vous avez terminé ce guide de démarrage rapide pour l’éditeur de Visual Studio. Vous pouvez ensuite essayer d’autres Guides de démarrage rapide pour l’environnement de développement Visual Studio.
-
 > [!div class="nextstepaction"]
-> [Démarrage rapide : premier aperçu de l'IDE Visual Studio](../ide/quickstart-ide-orientation.md)
-
-> [!div class="nextstepaction"]
-> [Démarrage rapide : personnaliser Visual Studio](../ide/quickstart-personalize-the-ide.md)
-
-> [!div class="nextstepaction"]
-> [Démarrage rapide : projets et solutions](../ide/quickstart-projects-solutions.md)
+> [Découvrir les projets et les solutions](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>Voir aussi
 

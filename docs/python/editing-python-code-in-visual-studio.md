@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8a6b95e375fa509c18c44c9c5ba462e1b6b27fb0
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: a309dd0abe1332a37c9865a6e38bba9c0eb00dde
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500119"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626895"
 ---
 # <a name="edit-python-code"></a>Modifier le code Python
 
@@ -34,7 +34,7 @@ Vous pouvez également utiliser **l’Explorateur d’objets** de Visual Studio 
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense fournit [les saisies semi-automatiques](#completions), [l’assistance pour la signature](#signature-help), [Info express](#quick-info) et [la coloration du code](#code-coloring). Visual Studio 2017 versions 15.7 et ultérieures prend également en charge les [affinages de type](#type-hints).
+IntelliSense fournit [les saisies semi-automatiques](#completions), [l’assistance pour la signature](#signature-help), [Info express](#quick-info) et [la coloration du code](#code-coloring). Visual Studio 2017 version 15.7 et les versions ultérieures prennent également en charge les [affinages de type](#type-hints).
 
 Pour améliorer le niveau de performance, IntelliSense dans **Visual Studio 2017 version 15.5** et versions antérieures dépend d’une base de données de saisie semi-automatique qui est générée pour chaque environnement Python dans votre projet. Il est possible que les bases de données doivent être actualisées si vous ajoutez, supprimez ou mettez à jour des packages. Leur état s’affiche sous l’onglet **IntelliSense** de la fenêtre **Environnements Python** (de la même famille que **l’Explorateur de solutions**) (consultez [Référence sur la fenêtre Environnements](python-environments-window-tab-reference.md#intellisense-tab)).
 

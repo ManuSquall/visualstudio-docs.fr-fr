@@ -1,5 +1,5 @@
 ---
-title: Présentation des projets et solutions dans Visual Studio
+title: Présentation des projets et solutions
 ms.date: 12/11/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c10d09b1fd66572b45e3fde16c999c39b803523
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 2995e3b71ffb46b726d17ffc2f1f7fe68f6663ff
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512302"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42626558"
 ---
-# <a name="quickstart-projects-and-solutions"></a>Démarrage rapide : projets et solutions
+# <a name="learn-about-projects-and-solutions"></a>Découvrir les projets et les solutions
 
-Dans ce guide de démarrage rapide de 10 minutes, nous allons explorer le processus de création d’une *solution* et d’un *projet* dans Visual Studio. Une solution est un conteneur qui sert à organiser un ou plusieurs projets de code associés, par exemple une bibliothèque de classes et un projet test correspondant. Nous allons examiner les propriétés d’un projet et certains des fichiers associés. Nous allons également créer une référence d’un projet vers un autre.
+Dans cet article d’introduction, nous allons explorer le processus de création d’une *solution* et d’un *projet* dans Visual Studio. Une solution est un conteneur qui sert à organiser un ou plusieurs projets de code associés, par exemple une bibliothèque de classes et un projet test correspondant. Nous allons examiner les propriétés d’un projet et certains des fichiers associés. Nous allons également créer une référence d’un projet vers un autre.
 
 Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour l’installer gratuitement.
 
@@ -176,19 +176,9 @@ Dans le fichier de code C#, la ligne qui contient l’attribut <xref:System.Runt
 
 Si vous souhaitez vérifier que votre test unitaire fonctionne correctement, choisissez **Test** > **Exécuter** > **Tous les tests** dans la barre de menus. Une fenêtre intitulée **Explorateur de tests** s’ouvre. Vérifiez que le résultat du test **TestGetCurrentDate** est correct.
 
-Félicitations ! Vous avez terminé ce guide de démarrage rapide. Vous pouvez suivre d’autres guides de démarrage rapide pour Visual Studio ou en découvrir davantage sur la [création de projets et de solutions](../ide/creating-solutions-and-projects.md).
-
-> [!div class="nextstepaction"]
-> [Démarrage rapide : premier aperçu de l'IDE Visual Studio](../ide/quickstart-ide-orientation.md)
-
-> [!div class="nextstepaction"]
-> [Démarrage rapide : personnaliser Visual Studio](../ide/quickstart-personalize-the-ide.md)
-
-> [!div class="nextstepaction"]
-> [Démarrage rapide : codage dans l’éditeur](../ide/quickstart-editor.md)
-
 ## <a name="see-also"></a>Voir aussi
 
+- [Créer des projets et des solutions](../ide/creating-solutions-and-projects.md)
 - [Gérer les propriétés des projets et des solutions](../ide/managing-project-and-solution-properties.md)
 - [Gérer les références dans un projet](../ide/managing-references-in-a-project.md)
 - [Développer du code dans Visual Studio sans projets ni solutions](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)

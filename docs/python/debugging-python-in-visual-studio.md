@@ -1,7 +1,7 @@
 ---
 title: Débogage du code Python
 description: Procédure pas à pas des fonctionnalités de débogage de code Python dans Visual Studio, y compris la définition des points d’arrêt, l’exécution pas à pas, l’inspection des valeurs, la gestion des exceptions et le débogage dans la fenêtre interactive.
-ms.date: 07/13/2018
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 944dbd13472c7dda3149aef4496fab2bcd505df1
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 6766e5e498b631ea4e95a535d65ebf09ff973b59
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498965"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627142"
 ---
 # <a name="debug-your-python-code"></a>Déboguer votre code Python
 
@@ -80,7 +80,7 @@ Une fois arrêté au niveau d’un point d’arrêt, vous disposez de différent
 | **Pas à pas sortant** | **Maj**+**F11** | Exécute le code jusqu’à la fin de la fonction actuelle, puis procède à une exécution pas à pas jusqu’à l’instruction appelante.  Cette commande est utile quand vous n’avez pas besoin de déboguer le reste de la fonction actuelle. |
 | **Exécuter jusqu’au curseur** | **Ctrl**+**F10** | Exécute le code jusqu’à l’emplacement du signe insertion dans l’éditeur. Cette commande vous permet d’ignorer facilement un segment de code que vous n’avez pas besoin de déboguer. |
 | **Définir l’instruction suivante** | **Ctrl**+**Maj**+**F10** | Redéfinit le point d’exécution actuel dans le code sur l’emplacement du signe insertion. Cette commande vous permet d’omettre totalement l’exécution d’un segment de code donné, par exemple quand vous savez que le code est défectueux ou qu’il produit un effet indésirable. |
-| **Afficher l’instruction suivante** | **Alt**+**Num**+**&#42;**| Vous renvoie à la prochaine instruction à exécuter. Cette commande est utile si vous avez parcouru votre code et que vous ne vous souvenez pas de l’endroit où le débogueur s’est arrêté. |
+| **Afficher l’instruction suivante** | **Alt**+**Num** **&#42;**| Vous renvoie à la prochaine instruction à exécuter. Cette commande est utile si vous avez parcouru votre code et que vous ne vous souvenez pas de l’endroit où le débogueur s’est arrêté. |
 
 ### <a name="inspect-and-modify-values"></a>Inspecter et modifier les valeurs
 
@@ -149,11 +149,11 @@ Par défaut, le débogueur démarre votre programme avec le lanceur Python stand
 
 | Option | Description |
 | --- | --- |
-| **Chemins de recherche** | Ces valeurs correspondent à celles qui apparaissent dans le nœud Chemins de recherche du projet dans **l’Explorateur de solutions**. Vous pouvez modifier cette valeur à cet emplacement, mais il est plus facile d’utiliser **l’Explorateur de solutions** qui vous permet de parcourir les dossiers et convertit automatiquement les chemins sous leur forme relative. |
+| **Chemins de recherche** | Ces valeurs correspondent à celles qui apparaissent dans le nœud **Chemins de recherche** du projet dans l’**Explorateur de solutions**. Vous pouvez modifier cette valeur à cet emplacement, mais il est plus facile d’utiliser **l’Explorateur de solutions** qui vous permet de parcourir les dossiers et convertit automatiquement les chemins sous leur forme relative. |
 | **Arguments de script** | Ces arguments sont ajoutés à la commande utilisée pour lancer votre script, apparaissant après le nom de fichier du script. Le premier argument spécifié à cet emplacement est disponible pour votre script sous la forme `sys.argv[1]`, le deuxième argument apparaît sous la forme `sys.argv[2]`, etc. |
 | **Arguments d’interpréteur** | Ces arguments sont ajoutés à la ligne de commande du lanceur avant le nom de votre script. Les arguments couramment indiqués à cet emplacement sont `-W ...` pour contrôler les avertissements, `-O` pour optimiser légèrement votre programme et `-u` pour utiliser des E/S non mises en mémoire tampon. Les utilisateurs IronPython utilisent généralement ce champ pour transmettre des options `-X`, telles que `-X:Frames` ou `-X:MTA`. |
 | **Chemin d’interpréteur** | Remplace le chemin d’accès associé à l’environnement actuel. La valeur peut être utile pour lancer votre script avec un interpréteur non standard. |
-| **Variables d’environnement** | Dans cette zone de texte multiligne, ajoutez des entrées sous la forme \<NOM>=\<VALEUR>. Comme ce paramètre est appliqué en dernier, au-dessus de toutes les variables d’environnement globales existantes et après la définition de l’élément `PYTHONPATH` en fonction du paramètre Chemins de recherche, vous pouvez l’utiliser pour remplacer manuellement ces autres variables. |
+| **Variables d’environnement** | Dans cette zone de texte multiligne, ajoutez des entrées sous la forme \<NOM>=\<VALEUR>. Dans la mesure où ce paramètre est appliqué en dernier, après toutes les variables d’environnement globales existantes et après avoir défini `PYTHONPATH` en fonction du paramètre **Chemins de recherche**, vous pouvez l’utiliser pour remplacer manuellement ces autres variables. |
 
 ## <a name="immediate-and-interactive-windows"></a>Fenêtres Exécution et Interactive
 
@@ -192,48 +192,44 @@ La **fenêtre interactive de débogage** comporte son propre jeu d’options, ac
 
 ![Options de la fenêtre de débogage interactive](media/debugging-interactive-options.png)
 
-## <a name="use-the-experimental-debugger"></a>Utiliser le débogueur expérimental
+<a name="use-the-experimental-debugger"></a>
 
-À compter de Visual Studio 2017 Preview 4.0, vous pouvez choisir d’utiliser le « débogueur expérimental » qui est basé sur ptvsd version 4.1+. Pour accepter, sélectionnez la commande de menu **Outils** > **Options**, accédez à **Python** > **Expérimental** ans la boîte de dialogue Options, puis sélectionnez **Utiliser un débogueur expérimental**.
+## <a name="use-the-legacy-debugger"></a>Utiliser le débogueur hérité
 
-Le débogueur expérimental n’est compatible qu’avec un nombre limité d’environnements Python, comme l’indique le tableau suivant :
+Visual Studio 2017 version 15.8 et les versions ultérieures utilisent un débogueur basé sur ptvsd version 4.1+. Cette version de ptvsd est compatible avec Python 2.7 et Python 3.5+. Si vous utilisez Python 2.6, 3.1 à 3.4, ou IronPython, Visual Studio affiche l’erreur, **Le débogueur ne prend pas en charge cet environnement Python** :
 
-| Version Python | Compatible avec le débogueur expérimental |
-| --- | --- |
-| 2.6 | Non |
-| 2.7 | Oui |
-| 3.1 à 3.4 | Non |
-| 3.5 et ultérieur | Oui |
-| IronPython | Non |
+![Le débogueur ne prend pas en charge cette erreur d’environnement Python quand il est utilisé](media/debugging-experimental-incompatible-error.png)
 
-Si vous essayez d’utiliser le débogueur expérimental avec un environnement incompatible, Visual Studio affiche l’erreur **Le débogueur est incompatible avec cet environnement** :
+Dans les cas de figure de ce type, vous devez utiliser l’ancien débogueur (ce qui correspond à la valeur par défaut dans Visual Studio 2017 versions 15.7 et antérieures). Sélectionnez la commande de menu **Outils** > **Options**, accédez à **Python** > **Débogage**, puis sélectionnez l’option **Utiliser le débogueur hérité**.
 
-![Erreur Le débogueur n’est pas compatible avec cet environnement lors de l’utilisation du débogueur expérimental](media/debugging-experimental-incompatible-error.png)
+Si vous avez installé une ancienne version de ptvsd dans l’environnement actuel (par exemple une ancienne version 4.0.x ou une version 3.x nécessaire au débogage à distance), Visual Studio peut afficher une erreur ou un avertissement.
 
-Sélectionnez la commande **Désactiver le débogueur expérimental** qui efface l’option **Utiliser un débogueur expérimental**.
+L’erreur **Impossible de charger le package du débogueur** s’affiche quand vous avez installé ptvsd 3.x :
 
-> [!Note]
-> L’avertissement n’est pas actuellement affiché pour Python 3.3 et 3.4.
+![Erreur « Impossible de charger le package du débogueur » durant l’utilisation du débogueur](media/debugging-experimental-version-error.png)
 
-Si vous avez installé une ancienne version de ptvsd dans l’environnement actuel (par exemple, une ancienne version 4.0.x d’une version 3.x requise pour le débogage à distance), Visual Studio affiche l’erreur **Impossible de charger le package du débogueur** ou l’avertissement **Le package du débogueur est obsolète** :
+Dans ce cas, sélectionnez **Utiliser le débogueur hérité** pour définir l’option **Utiliser le débogueur hérité**, puis redémarrez le débogueur.
 
-![Erreur « Impossible de charger le package du débogueur » lors de l’utilisation du débogueur expérimental](media/debugging-experimental-version-error.png)
+L’avertissement **Le package du débogueur est obsolète** s’affiche quand vous avez installé une ancienne version 4.x de ptvsd :
 
-![Avertissement « Le package du débogueur est obsolète » lors de l’utilisation du débogueur expérimental](media/debugging-experimental-version-warning.png)
-
-Pour gérer votre installation ptvsd, utilisez l’onglet **Packages** dans la fenêtre **Environnements Python** ou utilisez les commandes suivantes à partir de la ligne de commande :
-
-```powershell
-# Uninstalling ptvsd causes VS to default to its bundled 4.1.x version.
-pip uninstall ptvsd
-
-# Upgrading ptvsd gives you the latest version, which may be newer than the bundled version.
-# -pre is required to allow pre-release versions as currently required by the experimental debugger.
-pip install --upgrade ptvsd -pre
-```
+![Avertissement « Le package du débogueur est obsolète » durant l’utilisation du débogueur](media/debugging-experimental-version-warning.png)
 
 > [!Important]
 > Bien que vous puissiez choisir d’ignorer l’avertissement pour certaines versions de ptvsd, Visual Studio peut ne pas fonctionner correctement.
+
+Pour gérer votre installation de ptvsd :
+
+1. Accédez à l’onglet **Packages** de la fenêtre **Environnements Python**.
+
+1. Entrez « ptvsd » dans le champ de recherche, puis examinez la version installée de ptvsd :
+
+    ![Vérification de la version de ptvsd dans la fenêtre Environnements Python](media/debugging-experimental-check-ptvsd.png)
+
+1. Si la version est inférieure à 4.1.1a9 (la version groupée avec Visual Studio), sélectionnez le **X** à droite du package pour désinstaller l’ancienne version. Visual Studio utilise alors sa version groupée. (Vous pouvez également la désinstaller à l’aide de PowerShell via `pip uninstall ptvsd`.)
+
+1. Vous pouvez également mettre à jour le package ptvsd vers sa version la plus récente. Entrez `ptvsd --upgrade -pre` dans la zone de recherche, puis sélectionnez **Exécuter la commande : pip install ptvsd --upgrade -pre**. (Vous pouvez également utiliser la même commande à partir de PowerShell.)
+
+    ![Commande de mise à niveau dans la fenêtre Environnements Python](media/debugging-experimental-upgrade-ptvsd.png)
 
 ## <a name="see-also"></a>Voir aussi
 
