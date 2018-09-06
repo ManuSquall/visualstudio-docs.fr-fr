@@ -1,5 +1,5 @@
 ---
-title: 'Comment : restaurer par programme des sélections après des recherches | Documents Microsoft'
+title: 'Comment : restaurer des sélections après des recherches par programmation'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,20 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7d1f4181a1ce9431ecbdb69a4b4f00a70f8259d0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b288ec65bed95a508d161b33cc49d7d8e2540362
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671153"
 ---
 # <a name="how-to-programmatically-restore-selections-after-searches"></a>Comment : restaurer des sélections après des recherches par programmation
-  Si vous recherchez et remplacez du texte dans un document, vous souhaiterez restaurer la sélection d’origine de l’utilisateur une fois que la recherche est terminée.  
+  Si vous recherchez et remplacez du texte dans un document, vous souhaiterez restaurer la sélection d’utilisateur d’origine une fois que la recherche est terminée.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- Le code dans l’exemple de procédure utilise les deux <xref:Microsoft.Office.Interop.Word.Range> objets. Un magasins actuel <xref:Microsoft.Office.Interop.Word.Selection>, l’autre définit l’ensemble du document à utiliser comme plage de recherche.  
+ Le code dans l’exemple de procédure utilise deux <xref:Microsoft.Office.Interop.Word.Range> objets. Un stocke actuel <xref:Microsoft.Office.Interop.Word.Selection>, l’autre définit l’ensemble du document à utiliser comme un intervalle de recherche.  
   
-### <a name="to-restore-the-users-original-selection-after-a-search"></a>Pour restaurer la sélection d’origine de l’utilisateur après une recherche  
+## <a name="to-restore-the-users-original-selection-after-a-search"></a>Pour restaurer la sélection d’origine de l’utilisateur après une recherche  
   
 1.  Créer le <xref:Microsoft.Office.Interop.Word.Range> objets pour le document et la sélection actuelle.  
   
@@ -54,9 +55,9 @@ ms.lasthandoff: 04/16/2018
  [!code-csharp[Trin_VstcoreWordAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#82)]  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : rechercher par programmation et remplacer du texte dans des Documents](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
- [Comment : définir les Options de recherche dans Word par programmation](../vsto/how-to-programmatically-set-search-options-in-word.md)   
- [Comment : Parcourir par programmation des éléments trouvés dans des Documents](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
+ [Comment : rechercher et remplacer du texte dans les documents par programmation](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
+ [Comment : définir par programmation les options de recherche dans Word](../vsto/how-to-programmatically-set-search-options-in-word.md)   
+ [Comment : Parcourir par programmation des éléments trouvés dans les documents](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
  [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   
