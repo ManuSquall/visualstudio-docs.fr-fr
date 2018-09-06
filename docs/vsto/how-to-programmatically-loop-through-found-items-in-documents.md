@@ -1,5 +1,5 @@
 ---
-title: 'Comment : Parcourir par programmation des éléments trouvés dans des Documents | Documents Microsoft'
+title: 'Comment : Parcourir par programmation des éléments trouvés dans les documents'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 660434790ab4bf3073a00f2ec7ab9db737381707
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0ff9a85319ac35e051b41ff65ab5b027dc226f44
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35672869"
 ---
-# <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>Comment : parcourir les éléments trouvés dans les documents par programmation
+# <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>Comment : Parcourir par programmation des éléments trouvés dans les documents
   La classe <xref:Microsoft.Office.Interop.Word.Find> a une propriété <xref:Microsoft.Office.Interop.Word.Find.Found%2A> , qui retourne **true** chaque fois qu’un élément recherché est trouvé. Vous pouvez exécuter en boucle toutes les instances trouvées dans un <xref:Microsoft.Office.Interop.Word.Range> à l’aide de la méthode <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> .  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-### <a name="to-loop-through-found-items"></a>Pour exécuter en boucle les éléments trouvés  
+## <a name="to-loop-through-found-items"></a>Pour exécuter en boucle les éléments trouvés  
   
 1.  Déclarez un objet <xref:Microsoft.Office.Interop.Word.Range> .  
   
@@ -37,7 +38,7 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#79](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#79)]
      [!code-csharp[Trin_VstcoreWordAutomation#79](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#79)]  
   
-     L’exemple de code suivant peut être utilisé dans un complément VSTO. Cet exemple utilise le document actif.  
+     L'exemple de code suivant peut être utilisé dans un complément VSTO. Cet exemple utilise le document actif.  
   
      [!code-vb[Trin_VstcoreWordAutomationAddIn#79](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#79)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#79](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#79)]  
@@ -56,7 +57,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="document-level-customization-example"></a>Exemple de personnalisation au niveau du document  
   
-#### <a name="to-loop-through-items-in-a-document-level-customization"></a>Pour exécuter en boucle les éléments d’une personnalisation au niveau du document  
+### <a name="to-loop-through-items-in-a-document-level-customization"></a>Pour exécuter en boucle les éléments d’une personnalisation au niveau du document  
   
 1.  L'exemple suivant montre le code complet pour une personnalisation au niveau du document. Pour utiliser ce code, exécutez-le à partir de la classe `ThisDocument` de votre projet.  
   
@@ -65,18 +66,18 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="vsto-add-in-example"></a>Exemple de complément VSTO  
   
-#### <a name="to-loop-through-items-in-an-vsto-add-in"></a>Pour exécuter en boucle les éléments d’un complément VSTO  
+### <a name="to-loop-through-items-in-a-vsto-add-in"></a>Pour parcourir les éléments dans un composant logiciel complément VSTO  
   
-1.  L’exemple suivant présente le code complet pour un complément VSTO. Pour utiliser ce code, exécutez-le à partir de la classe `ThisAddIn` de votre projet.  
+1.  L’exemple suivant montre le code complet pour un complément VSTO. Pour utiliser ce code, exécutez-le à partir de la classe `ThisAddIn` de votre projet.  
   
      [!code-vb[Trin_VstcoreWordAutomationAddIn#78](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#78)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#78](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#78)]  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : rechercher par programmation et remplacer du texte dans des Documents](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
- [Comment : définir les Options de recherche dans Word par programmation](../vsto/how-to-programmatically-set-search-options-in-word.md)   
- [Comment : définir par programme et sélectionner des plages dans des Documents](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Comment : restaurer des sélections après des recherches de par programmation](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
+ [Comment : rechercher par programmation et de remplacer des rext dans des documents](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
+ [Comment : définir par programmation les options de recherche dans Word](../vsto/how-to-programmatically-set-search-options-in-word.md)   
+ [Comment : définir et sélectionner des plages dans les documents par programmation](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Comment : restaurer des sélections après des recherches par programmation](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
  [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   
