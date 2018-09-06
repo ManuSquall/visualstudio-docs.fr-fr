@@ -1,5 +1,5 @@
 ---
-title: Données dans les procédures de solutions Office
+title: Données dans les guides de solutions Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a8c63a98d47a3846ea6482624aa71cd0a7378f1a
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 35dbc38bf4e0873e9f3fb0fc1bf5c0525e56a61e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35672829"
 ---
-# <a name="data-in-office-solutions-walkthroughs"></a>Données dans les procédures de solutions Office
+# <a name="data-in-office-solutions-walkthroughs"></a>Données dans les guides de solutions Office
   Les procédures suivantes montrent comment utiliser des données dans les personnalisations au niveau du document et les compléments VSTO pour Microsoft Office Word et Microsoft Office Excel.  
   
 ## <a name="bind-controls-to-data"></a>Lier des contrôles à des données  
@@ -38,20 +39,20 @@ ms.lasthandoff: 05/17/2018
  [Procédure pas à pas : Liaison de données complexe dans un projet de complément VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
  Montre comment lier une table dans une base de données SQL Server à un <xref:Microsoft.Office.Tools.Excel.ListObject> dans un complément VSTO pour Excel.  
   
- [Procédure : Lier des données aux contrôles dans un volet actions Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)  
+ [Procédure pas à pas : Liaison de données aux contrôles dans un volet actions Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)  
  Montre comment ajouter des contrôles qui sont liés à une source de données à un volet Actions dans Excel.  
   
- [Procédure : Lier des données aux contrôles dans un volet actions Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)  
+ [Procédure pas à pas : Liaison de données aux contrôles dans un volet actions Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)  
  Montre comment lier les contrôles d’un volet Actions à des données. Les contrôles illustrent une relation Maître/Détail entre des tables dans une base de données SQL Server.  
   
- [Procédure : Lier des contrôles de contenu à des parties XML personnalisées](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  
+ [Procédure pas à pas : Lier des contrôles de contenu à des parties XML personnalisées](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  
  Montre comment lier des contrôles de contenu dans un document Word aux données XML stockées dans le document.  
   
 ## <a name="cache-data-in-document-level-solutions"></a>Cache des données dans les solutions au niveau du document  
- [Procédure pas à pas : Création d’une relation maître / détail à l’aide d’un dataset mis en cache](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
+ [Procédure pas à pas : Créer une relation maître/détail à l’aide d’un dataset mis en cache](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
  Montre comment créer une relation maître/détail sur une feuille de calcul et mettre en cache les données pour que la solution puisse être utilisée en mode hors connexion.  
   
- [Procédure : Insérer des données dans un classeur sur un serveur](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)  
+ [Procédure pas à pas : Insérer des données dans un classeur sur un serveur](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)  
  Montre comment insérer des données dans un dataset mis en cache dans un classeur Microsoft Office Excel sans démarrer Excel.  
   
  [Procédure pas à pas : Récupérer des données mises en cache à partir d’un classeur sur un serveur](../vsto/walkthrough-retrieving-cached-data-from-a-workbook-on-a-server.md)  
@@ -64,10 +65,10 @@ ms.lasthandoff: 05/17/2018
  [Procédures pas à pas utilisant Word](../vsto/walkthroughs-using-word.md)   
  [Procédures pas à pas utilisant Excel](../vsto/walkthroughs-using-excel.md)   
  [Procédures pas à pas personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization-walkthroughs.md)   
- [Procédures pas à pas de déploiement et sécurité](../vsto/security-and-deployment-walkthroughs.md)   
+ [Procédures pas à pas de déploiement et de sécurité](../vsto/security-and-deployment-walkthroughs.md)   
  [Exemples de développement Office](../vsto/office-development-samples.md)   
  [Prise en main &#40;développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
- [Tâches courantes en matière de programmation Office](../vsto/common-tasks-in-office-programming.md)   
+ [Tâches courantes dans la programmation Office](../vsto/common-tasks-in-office-programming.md)   
  [Concevoir et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md)  
   
   

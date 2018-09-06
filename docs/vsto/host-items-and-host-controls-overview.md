@@ -1,5 +1,5 @@
 ---
-title: Éléments hôtes et vue d’ensemble des contrôles hôtes
+title: Éléments hôtes et la vue d’ensemble des contrôles hôtes
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -39,13 +39,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: afc067e46f3cad5baa46bb5fef2381e82791dc76
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 96cd626e283e9cf86b1a24a63a1939e717cab7b4
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670900"
 ---
-# <a name="host-items-and-host-controls-overview"></a>Éléments hôtes et vue d’ensemble des contrôles hôtes
+# <a name="host-items-and-host-controls-overview"></a>Éléments hôtes et la vue d’ensemble des contrôles hôtes
   Les éléments hôtes et les contrôles hôtes sont des types qui fournissent un modèle de programmation pour les solutions Office créées à l’aide des outils de développement Office dans Visual Studio. Les éléments hôtes et les contrôles hôtes apparentent l’interaction avec les modèles objet Microsoft Office Word et Microsoft Office Excel, qui sont basés sur COM, davantage à l’interaction entre des objets managés tels que les contrôles Windows Forms.  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
@@ -76,10 +77,10 @@ ms.lasthandoff: 05/25/2018
   
  L’élément hôte <xref:Microsoft.Office.Tools.Excel.Workbook> n’agit pas comme un conteneur pour les contrôles qui possèdent une interface utilisateur. À la place, le concepteur de cet élément hôte fonctionne comme une barre d’état des composants, ce qui vous permet de faire glisser un composant, tel qu’un <xref:System.Data.DataSet>, sur son aire de conception. Pour plus d’informations, consultez [élément hôte de classeur](../vsto/workbook-host-item.md).  
   
- Il n’est pas possible de créer par programmation des éléments hôtes dans des projets au niveau du document. Utilisez plutôt les classes `ThisDocument`, `ThisWorkbook`, ou `Sheet`*n* que Visual Studio génère automatiquement dans votre projet au moment du design. Ces classes générées dérivent des éléments hôtes et fournissent un point d’entrée pour votre code. Pour plus d’informations, consultez [limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
+ Il n’est pas possible de créer par programmation des éléments hôtes dans des projets au niveau du document. Utilisez plutôt les classes `ThisDocument`, `ThisWorkbook`, ou `Sheet`*n* que Visual Studio génère automatiquement dans votre projet au moment du design. Ces classes générées dérivent des éléments hôtes et fournissent un point d’entrée pour votre code. Pour plus d’informations, consultez [limitations de programmation des éléments hôtes et contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
   
 ### <a name="understand-host-items-in-vsto-add-in-projects"></a>Comprendre les éléments hôtes dans les projets de complément VSTO  
- Lorsque vous créez un complément VSTO, vous n’avez pas accès à quelque élément hôte que ce soit par défaut. Toutefois, vous pouvez générer <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, et <xref:Microsoft.Office.Tools.Excel.Worksheet> héberger des éléments dans Word et de compléments VSTO Excel lors de l’exécution.  
+ Lorsque vous créez un complément, VSTO, vous n’avez pas les accès à tous les éléments hôte par défaut. Toutefois, vous pouvez générer <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, et <xref:Microsoft.Office.Tools.Excel.Worksheet> héberger les éléments dans Word et Excel VSTO Add-ins lors de l’exécution.  
   
  Après avoir généré un élément hôte, vous pouvez effectuer des tâches telles que l’ajout de contrôles à des documents. Pour plus d’informations, consultez [documents Word d’étendre et classeurs Excel dans des Compléments VSTO lors de l’exécution](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
@@ -88,7 +89,7 @@ ms.lasthandoff: 05/25/2018
   
  Les contrôles hôtes suivants sont disponibles pour les projets Excel :  
   
--   [Chart (contrôle)](../vsto/chart-control.md)  
+-   [Contrôle de graphique](../vsto/chart-control.md)  
   
 -   [ListObject (contrôle)](../vsto/listobject-control.md)  
   
@@ -102,17 +103,17 @@ ms.lasthandoff: 05/25/2018
   
 -   [Contrôles de contenu](../vsto/content-controls.md)  
   
--   [XMLNode (contrôle)](../vsto/xmlnode-control.md)  
+-   [XMLNode, contrôle](../vsto/xmlnode-control.md)  
   
--   [XMLNodes (contrôle)](../vsto/xmlnodes-control.md)  
+-   [XMLNodes, contrôle](../vsto/xmlnodes-control.md)  
   
  Les contrôles hôtes qui sont ajoutés aux documents Office se comportent comme les objets Office natifs ; toutefois, les contrôles hôtes possèdent des fonctionnalités supplémentaires, notamment des événements et des fonctionnalités de liaison de données. Par exemple, lorsque vous souhaitez capturer les événements d’un objet <xref:Microsoft.Office.Interop.Excel.Range> natif dans Excel, vous devez d’abord gérer l’événement de modification de la feuille de calcul. Vous devez ensuite déterminer si la modification s’est produite dans le <xref:Microsoft.Office.Interop.Excel.Range>. En revanche, le contrôle hôte <xref:Microsoft.Office.Tools.Excel.NamedRange> possède un événement <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> que vous pouvez gérer directement.  
   
- La relation entre un élément hôte et les contrôles hôtes est très semblable à la relation entre un Windows Form et les contrôles Windows Forms. De la même manière que vous placez un contrôle de zone de texte sur un Windows Form, vous placez un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> sur un élément hôte <xref:Microsoft.Office.Tools.Excel.Worksheet> . L’illustration suivante montre la relation entre les éléments hôtes et les contrôles hôtes.  
+ La relation entre un élément hôte et des contrôles hôtes est similaire à la relation entre un contrôle Windows Form et Windows Forms. De la même manière que vous placez un contrôle de zone de texte sur un Windows Form, vous placez un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> sur un élément hôte <xref:Microsoft.Office.Tools.Excel.Worksheet> . L’illustration suivante montre la relation entre les éléments hôtes et les contrôles hôtes.  
   
- ![Relation entre les éléments hôtes et des contrôles hôtes](../vsto/media/hostitemscontrols.png "relation entre éléments hôtes et des contrôles hôtes")  
+ ![Relation entre éléments hôtes et contrôles hôtes](../vsto/media/hostitemscontrols.png "relation entre éléments hôtes et contrôles hôtes")  
   
- Vous pouvez également utiliser des contrôles Windows Forms dans vos solutions Office en les ajoutant directement à la surface du document Word et Excel. Pour plus d’informations, consultez [des contrôles Windows Forms sur une vue d’ensemble des documents Office](../vsto/windows-forms-controls-on-office-documents-overview.md).  
+ Vous pouvez également utiliser des contrôles Windows Forms dans vos solutions Office en les ajoutant directement à la surface du document Word et Excel. Pour plus d’informations, consultez [des contrôles de Windows Forms dans les documents Office](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
 > [!NOTE]  
 >  L’ajout de contrôles hôtes ou de contrôles Windows Forms à un sous-document Word n’est pas pris en charge.  
@@ -126,7 +127,7 @@ ms.lasthandoff: 05/25/2018
   
 -   Faites glisser des contrôles hôtes de la fenêtre **Sources de données** vers vos documents et feuilles de calcul. Vous pouvez ainsi ajouter des contrôles déjà liés à des données. Pour plus d’informations, consultez [lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
- Au niveau du document et les projets de complément VSTO, vous pouvez également ajouter des contrôles hôtes aux documents au moment de l’exécution. Pour plus d’informations, consultez [ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Au niveau du document et les projets de complément VSTO, vous pouvez également ajouter des contrôles hôtes aux documents lors de l’exécution. Pour plus d’informations, consultez [ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
  Pour plus d’informations sur la manière d’ajouter des contrôles hôtes à des documents, consultez les rubriques suivantes :  
   
@@ -155,7 +156,7 @@ ms.lasthandoff: 05/25/2018
 ### <a name="delete-host-controls"></a>Supprimer des contrôles hôtes  
  Dans les projets au niveau du document, vous pouvez supprimer des contrôles hôtes au moment du design en sélectionnant le contrôle dans la feuille de calcul Excel ou un document Word et en appuyant sur la **supprimer** clé. Toutefois, vous devez utiliser la boîte de dialogue **Définir un nom** dans Excel pour supprimer les contrôles <xref:Microsoft.Office.Tools.Excel.NamedRange> .  
   
- Si vous ajoutez un contrôle hôte à un document au moment du design, vous ne devez pas supprimer il par programme lors de l’exécution, car la prochaine fois que vous essayez d’utiliser le contrôle dans le code, une exception est levée. Le `Delete` méthode d’un contrôle hôte supprime uniquement les contrôles hôtes qui sont ajoutés au document au moment de l’exécution. Si vous appelez la méthode `Delete` d’un contrôle hôte qui a été créé au moment du design, une exception est levée.  
+ Si vous ajoutez un contrôle hôte à un document au moment du design, vous ne devez pas le supprimer par programmation lors de l’exécution, car la prochaine fois que vous essayez d’utiliser le contrôle dans le code, une exception est levée. Le `Delete` méthode d’un contrôle hôte supprime uniquement les contrôles hôtes qui sont ajoutés au document lors de l’exécution. Si vous appelez la méthode `Delete` d’un contrôle hôte qui a été créé au moment du design, une exception est levée.  
   
  Par exemple, la méthode <xref:Microsoft.Office.Tools.Excel.NamedRange.Delete%2A> d’un <xref:Microsoft.Office.Tools.Excel.NamedRange> supprime correctement le <xref:Microsoft.Office.Tools.Excel.NamedRange> uniquement s’il a été ajouté par programmation à la feuille de calcul, ce qui correspond à la création dynamique de contrôles hôtes. Les contrôles hôtes créés dynamiquement peuvent également être supprimés en passant le nom du contrôle à la méthode `Remove` de la propriété <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> ou <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> Pour plus d’informations, consultez [ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
@@ -171,11 +172,11 @@ ms.lasthandoff: 05/25/2018
 >  Vous ne devez pas attribuer la valeur <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> à la propriété <xref:Microsoft.Office.Interop.Excel.Application> de l'objet **T:Microsoft.Office.Interop.Excel.Application**. Si cette propriété a la valeur **false** , Excel ne peut pas déclencher d’événements, y compris les événements de contrôles hôtes.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Programmation de compléments VSTO](../vsto/programming-vsto-add-ins.md)   
- [Programmation de personnalisations au niveau du document](../vsto/programming-document-level-customizations.md)   
- [Automatisation de Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md)   
- [Automatisation d’Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md)   
+ [Limitations de programmation des éléments hôtes et contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
+ [Programmer des Compléments VSTO](../vsto/programming-vsto-add-ins.md)   
+ [Programmer des personnalisations au niveau du document](../vsto/programming-document-level-customizations.md)   
+ [Automatiser Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md)   
+ [Automatiser Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md)   
  [Contrôles sur des documents Office](../vsto/controls-on-office-documents.md)   
  [Lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
   

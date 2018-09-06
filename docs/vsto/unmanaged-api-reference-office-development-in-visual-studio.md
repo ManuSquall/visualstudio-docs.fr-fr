@@ -16,18 +16,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 97388073d63b25bb17a7f49f4e2c5fb96bf2f572
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 9b0f48ea5997c2c8c2dd7d90eebde8322fad8a7a
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767895"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671088"
 ---
 # <a name="unmanaged-api-reference-office-development-in-visual-studio"></a>Référence des API non managées (développement Office dans Visual Studio)
-  À compter de Microsoft Office system 2007, les applications Office utilisent le [interface IManagedAddin](../vsto/imanagedaddin-interface.md) interface pour appeler un composant de chargeur du complément VSTO qui est inclus dans le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Ce composant vise à faciliter le chargement des compléments VSTO managés. Vous pouvez créer votre propre composant de chargeur de complément VSTO en implémentant cette interface.  
+  À partir de Microsoft Office system 2007, les applications Office utilisent le [interface IManagedAddin](../vsto/imanagedaddin-interface.md) interface pour appeler un complément VSTO chargeur de composant qui est inclus avec le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Ce composant est utilisé pour aider à géré par le chargement des Compléments VSTO. Vous pouvez créer votre propre composant de chargeur de complément VSTO en implémentant cette interface.  
   
 > [!NOTE]  
->  Vous souhaitez développer des solutions qui étendent l’expérience Office sur [plusieurs plateformes](https://dev.office.com/add-in-availability)? Découvrez le nouvel [modèle des compléments Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Compléments Office ont un faible encombrement mémoire par rapport aux compléments VSTO et les solutions, et vous pouvez les créer à l’aide de presque n’importe quel web technologies, telles que HTML5, JavaScript, CSS3 et XML de programmation.  
+>  Vous souhaitez développer des solutions qui étendent l’expérience Office sur [plusieurs plateformes](https://dev.office.com/add-in-availability)? Découvrez le nouvel [modèle de compléments Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Compléments Office peu encombrantes par rapport aux compléments VSTO et de solutions, et vous pouvez les créer à l’aide de presque toutes les technologies, telles que HTML5, JavaScript, CSS3 et XML de programmation web.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Interface IManagedAddin](../vsto/imanagedaddin-interface.md)  

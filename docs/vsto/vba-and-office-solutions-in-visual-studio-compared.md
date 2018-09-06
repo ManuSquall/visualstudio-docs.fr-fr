@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 81e55c2861da33d656ad9a5584e6ff5916afb232
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: b5a0031133c6713320a0377098d096fa60748de6
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34768051"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671112"
 ---
 # <a name="vba-and-office-solutions-in-visual-studio-compared"></a>Solutions VBA et Office dans Visual Studio par rapport
   Microsoft Visual Basic pour Applications (VBA) utilise du code non managé étroitement intégré aux applications Office. Les projets Microsoft Office créés à l'aide de Visual Studio vous permettent de tirer parti des outils de conception de .NET Framework et Visual Studio.  
@@ -33,10 +33,10 @@ ms.locfileid: "34768051"
   
 |Solutions VBA|Solutions Office dans Visual Studio|  
 |-------------------|---------------------------------------|  
-|Utilisent du code qui est lié à un document spécifique et qui est stocké de façon persistante avec ce document.|Utilisent du code qui est stocké séparément du document (pour les personnalisations au niveau du document) ou dans un assembly chargé par l’application (pour les compléments VSTO).|  
+|Utilisent du code qui est lié à un document spécifique et qui est stocké de façon persistante avec ce document.|Utilise le code qui est stocké séparément du document (pour les personnalisations au niveau du document), ou dans un assembly est chargé par l’application (pour les Compléments VSTO).|  
 |Fonctionnent avec les modèles objet Office et les API VBA.|Fournissent l'accès à la fois aux modèles objet Office et aux API [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] .|  
 |Permettent d'enregistrer des macros et simplifient le travail du développeur.|Améliorent la sécurité, facilitent la maintenance du code et permettent l'utilisation de l'environnement de développement intégré (IDE) de Visual Studio dans son intégralité.|  
-|Conviennent pour les solutions qui s'intègrent parfaitement aux applications Office.|Conviennent pour les solutions qui utilisent les ressources complètes de Visual Studio et de [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)].|  
+|Fonctionne bien pour les solutions qui bénéficient d’une intégration étroite avec les applications Office.|Conviennent pour les solutions qui utilisent les ressources complètes de Visual Studio et de [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)].|  
 |Présentent des limites d'utilisation dans l'entreprise, notamment dans les domaines de la sécurité et du déploiement.|Sont adaptées pour une utilisation dans l'entreprise.|  
   
  Certains résultats restent plus simples et plus rapides à obtenir avec VBA. En particulier, vous pouvez continuer à utiliser VBA pour :  
@@ -46,12 +46,12 @@ ms.locfileid: "34768051"
 -   l'enregistrement de macros.  
   
 ## <a name="combine-vba-solutions-and-office-solutions-created-by-using-visual-studio"></a>Combiner des solutions VBA et les solutions Office créées à l’aide de Visual Studio  
- Vous pouvez appeler du code VBA à partir de solutions Office créées à l'aide de Visual Studio et, inversement, appeler du code des solutions Office créées avec Visual Studio à partir de VBA. La technique appropriée diffère selon que votre solution Office est un complément VSTO ou une personnalisation au niveau du document. Pour plus d’informations, consultez [appeler du code dans des Compléments VSTO à partir d’autres solutions Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md) et [combinaison de VBA et de personnalisations au niveau du document](../vsto/combining-vba-and-document-level-customizations.md).  
+ Vous pouvez appeler du code VBA à partir de solutions Office créées à l'aide de Visual Studio et, inversement, appeler du code des solutions Office créées avec Visual Studio à partir de VBA. La technique appropriée diffère selon que votre solution Office est un complément VSTO ou une personnalisation au niveau du document. Pour plus d’informations, consultez [appeler du code dans des Compléments VSTO à partir d’autres solutions Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md) et [combiner de VBA et de personnalisations au niveau du document](../vsto/combining-vba-and-document-level-customizations.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Présentation du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Vue d’ensemble du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Appeler du code dans des Compléments VSTO à partir d’autres solutions Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
- [Combinaison de VBA et de personnalisations au niveau du document](../vsto/combining-vba-and-document-level-customizations.md)   
+ [Combiner VBA et personnalisations au niveau du document](../vsto/combining-vba-and-document-level-customizations.md)   
  [Architecture des personnalisations au niveau du document](../vsto/architecture-of-document-level-customizations.md)   
  [Architecture des Compléments VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Sécurisez les solutions Office](../vsto/securing-office-solutions.md)   

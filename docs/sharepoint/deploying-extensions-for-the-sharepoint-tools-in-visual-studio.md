@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 58b430d1331a12e080d238d34a4817afea8585d1
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 5f5ee0493a8a780710eb4b6bbbd9426e23baf48e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326863"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774914"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Déployer des extensions pour les outils SharePoint dans Visual Studio
 
@@ -134,7 +134,7 @@ Les procédures suivantes décrivent comment ajouter des entrées dans le fichie
 
 6.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour votre projet de modèle de projet ou modèle d’élément, puis choisissez **décharger le projet**.
 
-7.  Rouvrez le menu contextuel du nœud de projet, puis choisissez **modifier***VotreNomProjetModèle***.csproj** ou **modifier***VotreNomProjetModèle***. vbproj**.
+7.  Rouvrez le menu contextuel du nœud de projet, puis choisissez **modifier**_VotreNomProjetModèle_**.csproj** ou **modifier**  _VotreNomProjetModèle_**.vbproj**.
 
 8.  Recherchez les éléments suivants `VSTemplate` élément dans le fichier projet.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Comment : exclure les marques de paragraphe par programmation lors de la création de plages | Documents Microsoft'
+title: 'Comment : exclure les marques de paragraphe par programmation lors de la création de plages'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,20 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1a12d041c82be2be2ebfc6facc97bb769675555e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 11015f0afb59f0d1aa71bad4adbc48b6c99887a2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670833"
 ---
-# <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>Comment : exclure les marques de paragraphe lors de la création de plages par programmation
+# <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>Comment : exclure les marques de paragraphe par programmation lors de la création de plages
   Chaque fois que vous créez un objet <xref:Microsoft.Office.Interop.Word.Range> basé sur un paragraphe, tous les caractères non imprimables, comme les marques de paragraphe, sont inclus dans la plage. Vous pouvez insérer le texte d’un paragraphe source dans un paragraphe de destination. Si vous ne voulez pas fractionner le paragraphe de destination en paragraphes distincts, alors vous devez d’abord supprimer la marque de paragraphe du paragraphe source. De plus, dans la mesure où des informations de mise en forme sont stockées au sein de la marque de paragraphe, vous ne voulez peut-être pas l’inclure quand vous insérez la plage dans un paragraphe existant.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
  L’exemple de procédure suivant déclare deux variables de chaîne, extrait le contenu des premier et deuxième paragraphes du document actif, puis intervertit leur contenu. L’exemple illustre ensuite la suppression de la marque de paragraphe de la plage à l’aide de la méthode <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> et l’insertion du texte à l’intérieur du paragraphe.  
   
-### <a name="to-control-paragraph-structure-when-inserting-text"></a>Pour contrôler la structure de paragraphe lors de l’insertion de texte  
+## <a name="to-control-paragraph-structure-when-inserting-text"></a>Pour contrôler la structure de paragraphe lors de l’insertion de texte  
   
 1.  Créez deux variables de plage pour les premier et deuxième paragraphes, puis extrayez leur contenu à l’aide de la propriété <xref:Microsoft.Office.Interop.Word.Range.Text%2A> .  
   
@@ -79,7 +80,7 @@ ms.lasthandoff: 04/16/2018
   
      Le contenu d’origine des deux plages a été enregistré sous forme de chaînes, donc vous pouvez rétablir le document à son état d’origine.  
   
-8.  Réajustez `firstRange` pour inclure la marque de paragraphe à l’aide de la méthode <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> pour une seule position de caractère.  
+8.  Réajuster `firstRange` pour inclure la marque de paragraphe à l’aide de la <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> méthode pour la position d’un caractère.  
   
      [!code-vb[Trin_VstcoreWordAutomation#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#34)]
      [!code-csharp[Trin_VstcoreWordAutomation#34](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#34)]  
@@ -101,7 +102,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="document-level-customization-example"></a>Exemple de personnalisation au niveau du document  
   
-#### <a name="to-control-paragraph-structure-when-inserting-text-in-document-level-customizations"></a>Pour contrôler la structure de paragraphe lors de l’insertion de texte dans des personnalisations au niveau du document  
+### <a name="to-control-paragraph-structure-when-inserting-text-in-document-level-customizations"></a>Pour contrôler la structure de paragraphe lors de l’insertion de texte dans des personnalisations au niveau du document  
   
 1.  L’exemple suivant montre la méthode complète d’une personnalisation au niveau du document. Pour utiliser ce code, exécutez-le à partir de la classe `ThisDocument` de votre projet.  
   
@@ -110,19 +111,19 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="vsto-add-in-example"></a>Exemple de complément VSTO  
   
-#### <a name="to-control-paragraph-structure-when-inserting-text-in-an-vsto-add-in"></a>Pour contrôler la structure de paragraphe lors de l’insertion de texte dans un complément VSTO  
+### <a name="to-control-paragraph-structure-when-inserting-text-in-a-vsto-add-in"></a>Pour contrôler la structure de paragraphe lors de l’insertion de texte dans un composant logiciel complément VSTO  
   
-1.  L’exemple suivant montre la méthode complète d’un complément VSTO. Pour utiliser ce code, exécutez-le à partir de la classe `ThisAddIn` de votre projet.  
+1.  L’exemple suivant montre la méthode complète pour un composant logiciel complément VSTO. Pour utiliser ce code, exécutez-le à partir de la classe `ThisAddIn` de votre projet.  
   
      [!code-vb[Trin_VstcoreWordAutomationAddIn#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#26)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#26](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#26)]  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : étendre des plages dans des Documents par programmation](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
- [Comment : réduire des plages par programmation ou des sélections dans des Documents](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
- [Comment : insérer du texte dans des Documents Word par programmation](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
- [Comment : réinitialiser des plages dans Word Documents par programmation](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [Comment : définir par programme et sélectionner des plages dans des Documents](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [Comment : étendre des plages dans des documents par programmation](../vsto/how-to-programmatically-extend-ranges-in-documents.md)   
+ [Comment : réduire des plages ou des sélections dans des documents par programmation](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)   
+ [Comment : insérer du texte dans les documents Word par programmation](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
+ [Comment : réinitialiser par programmation des plages dans des documents Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [Comment : définir et sélectionner des plages dans les documents par programmation](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
  [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

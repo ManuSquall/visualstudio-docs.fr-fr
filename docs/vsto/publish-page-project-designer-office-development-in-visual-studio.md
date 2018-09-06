@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d63044dbe191a2143b4800b57ee5344bf030107d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: f1cd13ac0e167b407d01d2a5d769de16f6ce4da0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692842"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671072"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Page Publier, Concepteur de projets (développement Office dans Visual Studio)
   La page **Publier** du **Concepteur de projets** permet de configurer les propriétés du déploiement.  
@@ -32,7 +32,7 @@ ms.locfileid: "34692842"
  Pour accéder à cette page, sélectionnez le projet dans **l’Explorateur de solutions**, puis, dans le **projet** menu, choisissez *nom_projet* **propriétés** . Si la page **Publier** n’apparaît pas, choisissez l’onglet **Publier** .  
   
 > [!NOTE]  
->  Vous pouvez également définir l’emplacement de publication dans l’ **Assistant Publication**. Pour plus d’informations, consultez [Comment : publier une solution Office à l’aide de ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
+>  Vous pouvez également définir l’emplacement de publication dans l’ **Assistant Publication**. Pour plus d’informations, consultez [Comment : publier une solution Office à l’aide de ClickOnce](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
   
 ## <a name="uielement-list"></a>Liste UIElement  
  **Emplacement du dossier de publication (site web, serveur ftp ou chemin du fichier)**  
@@ -55,7 +55,7 @@ ms.locfileid: "34692842"
   
  Si les fichiers d’installation se trouvent dans un emplacement relatif au document ou au programme d’installation, comme c’est le cas avec l’option CD, laissez cette zone vide.  
   
- Cette valeur peut être assignée plus tard par un administrateur. Pour plus d’informations, consultez [Comment : modifier le chemin d’accès de l’installation d’une solution Office](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
+ Cette valeur peut être assignée plus tard par un administrateur. Pour plus d’informations, consultez [Comment : modifier le chemin d’installation d’une solution Office](http://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
  **Composants requis**  
  Les composants nécessaires peuvent être inclus dans le programme d’installation ou téléchargés à la demande durant l’installation.  
@@ -97,12 +97,11 @@ ms.locfileid: "34692842"
   
     -   Charger à la demande : le complément VSTO est chargé uniquement quand l’application le nécessite, par exemple quand un utilisateur clique sur un élément d’interface utilisateur qui utilise une fonctionnalité du complément VSTO.  
   
- **Langue de publication**  
- Cette option définit la langue des termes du contrat de licence logiciel Microsoft, et inclut les modules linguistiques dans la liste des composants nécessaires. Elle n’affecte pas la langue de la personnalisation. La langue du programme d’installation est déterminée par les langues installées de Visual Studio.  
+ **Langue de publication** cette option définit la langue des termes du contrat de licence logiciel Microsoft et inclut les modules linguistiques dans la liste des conditions préalables. Elle n’affecte pas la langue de la personnalisation. La langue du programme d’installation est déterminée par les langues installées de Visual Studio.  
   
  Pour plus d’informations sur la façon de modifier le **langue de publication**, consultez [Comment : modifier la langue de publication pour une application ClickOnce](/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application).  
   
- **La version de publication**  
+ **Version de publication**  
  Définit le numéro de version de la personnalisation. Quand vous changez le numéro de version, l’application est publiée en tant que mise à jour. Un dossier est créé pour chaque version pendant le processus de génération pour éviter de remplacer la version précédemment publiée. Chaque partie de la version de publication (**Majeure**, **Mineure**, **Build**, **Révision**) peut contenir jusqu’à 5 chiffres.  
   
  **Incrémenter automatiquement la révision avec chaque mise en production**  
@@ -114,6 +113,6 @@ ms.locfileid: "34692842"
 ## <a name="see-also"></a>Voir aussi  
  [Déployer une solution Office](../vsto/deploying-an-office-solution.md)   
  [Déployer une solution Office à l’aide de ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Composants requis de solutions Office pour le déploiement](http://msdn.microsoft.com/en-us/9f672809-43a3-40a1-9057-397ce3b5126e)  
+ [Composants nécessaires au déploiement de solutions Office](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)  
   
   

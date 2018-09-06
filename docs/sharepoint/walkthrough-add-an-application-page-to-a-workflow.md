@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c69e6d5ddf9cd1691b3ddd736155dbd58a82419e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 841257a03e257b92b728d33751869a02e2c40db6
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42625998"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774586"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Procédure pas à pas : Ajouter une page d’application à un flux de travail
   Cette procédure pas à pas montre comment ajouter une page d’application qui affiche les données dérivées d’un flux de travail dans un projet de flux de travail. Il s’appuie sur le projet décrit dans la rubrique [procédure pas à pas : créer un flux de travail avec des formulaires d’association et d’initiation](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
@@ -337,7 +337,7 @@ ms.locfileid: "42625998"
 
 14. Répétez les étapes 11 à 13 avec d’autres documents dans la liste de Documents partagés. (Le nombre exact de documents n’est pas important.)
 
-15. Afficher la page de résumé d’application de rapport de frais en ouvrant l’URL suivante dans un navigateur Web : **http://***Nom_système***/_layouts/ExpenseReport/ApplicationPage1.aspx**.
+15. Afficher la page de résumé d’application de rapport de frais en ouvrant l’URL suivante dans un navigateur Web : **http://**_Nom_système_**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
 
      La page de résumé de rapport de notes de frais répertorie tous les rapports de dépenses ayant dépassé la quantité allouée, la quantité par qu'il dépassait et la quantité totale de tous les rapports.
 

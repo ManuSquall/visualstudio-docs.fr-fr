@@ -22,11 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 78a00b9d13d93f8ac0fa893e68ca379a7b5f7c3d
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 3532f4e5b1fc38c25ebb462916bc7eefae9f9725
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35672756"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Architecture des personnalisations au niveau du document
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] comprend des projets pour créer des personnalisations au niveau du document pour Microsoft Office Word et Microsoft Office Excel. Cette rubrique décrit les aspects suivants des personnalisations au niveau du document :  
@@ -53,13 +54,13 @@ ms.lasthandoff: 05/17/2018
 > [!NOTE]  
 >  Les personnalisations au niveau du document que vous créez à l’aide des Outils de développement Office dans Visual Studio sont conçues pour être utilisées seulement quand l’application est démarrée par un utilisateur final. Si elle est démarrée par programmation (par exemple à l’aide d’Automation), la personnalisation risque de ne pas fonctionner correctement.  
   
-### <a name="design-time-and-run-time-experiences"></a>Expériences au moment du design et de l’exécution  
+### <a name="design-time-and-run-time-experiences"></a>Expériences au moment du design et d’exécution  
  Pour comprendre l’architecture des personnalisations au niveau du document, il est utile de comprendre les expériences de conception et d’exécution d’une solution.  
   
 #### <a name="design-time"></a>Moment du design  
  L’expérience au moment du design comprend les étapes suivantes :  
   
-1.  Le développeur crée un projet au niveau du document dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Le projet comprend le document et l’assembly qui s’exécute derrière le document. Vous pouvez utiliser un document existant (par exemple créé par un concepteur) ou créer un document en même temps que le projet.  
+1.  Le développeur crée un projet au niveau du document dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Le projet comprend le document et l’assembly qui s’exécute derrière le document. Le document peut déjà exister (créée par un concepteur), ou un nouveau document peut être créé en même temps que le projet.  
   
 2.  Le concepteur (le développeur qui crée le projet ou une autre personne) crée l’apparence finale du document pour l’utilisateur final.  
   
@@ -86,18 +87,18 @@ ms.lasthandoff: 05/17/2018
   
 |Excel|Word|  
 |-----------|----------|  
-|Classeur Excel (*.xlsx*)<br /><br /> Classeur Excel macro (*.xlsm*)<br /><br /> Classeur binaire Excel (*.xlsb*)<br /><br /> Classeur Excel 97-2003 (*.xls*)<br /><br /> Modèle Excel (*.xltx*)<br /><br /> Modèle Excel macros (*.xltm*)<br /><br /> Modèle Excel 97-2003 (*.xlt*)|Document Word (*.docx*)<br /><br /> Document Word macros (*.docm*)<br /><br /> Document Word 97-2003 (*.doc*)<br /><br /> Modèle Word (*.dotx*)<br /><br /> Modèle Word macros (*.dotm*)<br /><br /> Modèle Word 97-2003 (*.dot*)|  
+|Classeur Excel (*.xlsx*)<br /><br /> Classeur de Excel avec macros (*.xlsm*)<br /><br /> Classeur binaire Excel (*.xlsb*)<br /><br /> Classeur Excel 97-2003 (*.xls*)<br /><br /> Modèle Excel (*.xltx*)<br /><br /> Modèle Excel macros (*.xltm*)<br /><br /> Modèle Excel 97-2003 (*.xlt*)|Document Word (*.docx*)<br /><br /> Document Word macros (*.docm*)<br /><br /> Document Word 97-2003 (*.doc*)<br /><br /> Modèle Word (*.dotx*)<br /><br /> Modèle Word macros (*.dotm*)<br /><br /> Modèle Word 97-2003 (*.dot*)|  
   
  Vous devez concevoir des extensions de code managé uniquement pour les documents dont le format est pris en charge. Sinon, certains événements risquent de ne pas être déclenchés lorsque le document s’ouvre dans l’application. Par exemple, le <xref:Microsoft.Office.Tools.Excel.Workbook.Open> événement n’est pas déclenché lorsque vous utilisez des extensions de code managé avec des classeurs enregistrés au format feuille de calcul XML Excel ou dans la page web (*.htm*; *.html*) format.  
   
-### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>Prise en charge des documents Word ayant des extensions de nom de fichier .xml  
+### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>Prise en charge pour les documents Word qui ont des extensions de nom de fichier .xml  
  Les modèles de projets au niveau du document ne vous permettent pas de créer des projets basés sur les formats de fichiers suivants :  
   
 -   Document XML Word (*\*xml*).  
   
 -   Document XML Word 2003 (*\*xml*).  
   
- Si vous souhaitez que vos utilisateurs finaux utilisent des personnalisations dans ces formats de fichiers, générez et déployez une personnalisation qui utilise l’un des formats de fichiers pris en charge spécifiés dans le tableau ci-dessus. Après l’installation de la personnalisation, les utilisateurs finaux peuvent enregistrer le document dans le Document XML Word (*\*xml*) format ou le Document XML Word 2003 (*\*xml*) format et le personnalisation continue de fonctionner comme prévu.  
+ Si vous souhaitez que vos utilisateurs finaux utilisent des personnalisations dans ces formats de fichiers, générez et déployez une personnalisation qui utilise l’un des formats de fichiers pris en charge spécifiés dans le tableau ci-dessus. Après avoir installé la personnalisation, les utilisateurs finaux peuvent enregistrer le document dans le Document XML Word (*\*xml*) format ou le Document XML Word 2003 (*\*xml*) format et le personnalisation continue de fonctionner comme prévu.  
   
 ##  <a name="Components"></a> Composants des personnalisations  
  Les principaux composants d’une personnalisation sont le document et l’assembly. Outre ces composants, il en existe plusieurs autres qui jouent un rôle important dans la manière dont les applications Microsoft Office découvrent et chargent les personnalisations.  
@@ -106,7 +107,7 @@ ms.lasthandoff: 05/17/2018
  Les personnalisations utilisent des manifestes de déploiement et des manifestes d’application pour identifier et charger la version la plus récente de l’assembly de personnalisation. Le manifeste de déploiement pointe vers le manifeste d'application actuel. Le manifeste d’application pointe vers l’assembly de personnalisation et spécifie la ou les classes de point d’entrée à exécuter dans l’assembly. Pour plus d’informations, consultez [manifestes d’Application et déploiement dans les solutions Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).  
   
 ### <a name="visual-studio-tools-for-office-runtime"></a>Visual Studio Tools pour Office Runtime  
- Pour que l’exécution de personnalisations au niveau du document créées à l’aide des Outils de développement Office dans Visual Studio soit possible, il faut que le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] soit installé sur les ordinateurs des utilisateurs finaux. Le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] comprend des composants non managés qui chargent l’assembly de personnalisation, ainsi qu’un jeu d’assemblys managés. Ces assemblys managés fournissent le modèle objet utilisé par votre code de personnalisation pour automatiser et étendre l’application hôte.  
+ Pour exécuter les personnalisations au niveau du document qui sont créées à l’aide des outils de développement Office dans Visual Studio, les ordinateurs des utilisateurs finaux doivent avoir le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] installé. Le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] comprend des composants non managés qui chargent l’assembly de personnalisation, ainsi qu’un jeu d’assemblys managés. Ces assemblys managés fournissent le modèle objet utilisé par votre code de personnalisation pour automatiser et étendre l’application hôte.  
   
  Pour plus d’informations, consultez [Visual Studio tools pour Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
   
@@ -133,7 +134,7 @@ ms.lasthandoff: 05/17/2018
   
 4.  Si le document est ouvert à partir d’un emplacement autre que l’ordinateur local, le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] vérifie que l’emplacement du document figure dans la liste **Emplacements approuvés** dans les **Paramètres du Centre de gestion de la confidentialité** pour cette application Office. Si l’emplacement du document n’est pas un emplacement approuvé, la personnalisation n’est pas approuvée et le processus de chargement est arrêté.  
   
-5.  Le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] installe la solution si ce n’est déjà fait, télécharge les manifestes de déploiement et d’application les plus récents, et exécute une série de vérifications de sécurité. Pour plus d’informations, consultez [les solutions Office de sécuriser](../vsto/securing-office-solutions.md).  
+5.  Le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] installe la solution si ce n’est déjà fait, télécharge les manifestes de déploiement et d’application les plus récents, et exécute une série de vérifications de sécurité. Pour plus d’informations, consultez [solutions Office Secure](../vsto/securing-office-solutions.md).  
   
 6.  Si l’exécution de la personnalisation est approuvée, le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] utilise le manifeste de déploiement et le manifeste d’application pour rechercher des mises à jour de l’assembly. Si une nouvelle version de l'assembly est disponible, le runtime la télécharge dans le cache de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] sur l'ordinateur client. Pour plus d’informations, consultez [déployer une solution Office](../vsto/deploying-an-office-solution.md).  
   

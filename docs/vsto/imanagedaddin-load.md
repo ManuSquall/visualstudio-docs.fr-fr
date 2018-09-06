@@ -14,18 +14,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b5f8e94ebcd0aec8e17cac8d651017ed1565d2ec
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: d1ea659d59e780beba3949e7cae363affa312c17
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673717"
 ---
 # <a name="imanagedaddinload"></a>IManagedAddin::Load
   Appelée quand un complément VSTO managé est chargé.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```c++
+```csharp
 HRESULT Load([in] BSTR bstrManifestURL,   
              [in] IDispatch *pdispApplication);  
 ```  
@@ -35,7 +36,7 @@ HRESULT Load([in] BSTR bstrManifestURL,
 |Paramètre|Description|  
 |---------------|-----------------|  
 |*bstrManifestURL*|Chemin d’accès complet du manifeste du complément VSTO.|  
-|*pdispApplication*|Pointeur vers un IDispatch qui représente l’application hôte qui charge le composant logiciel complément VSTO.|  
+|*pdispApplication*|Pointeur vers un IDispatch qui représente l’application hôte est en cours de chargement du complément, VSTO.|  
   
 ## <a name="return-value"></a>Valeur de retour  
  Valeur HRESULT qui indique si la méthode a réussi.  

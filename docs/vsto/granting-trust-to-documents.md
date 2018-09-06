@@ -18,11 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f95887d5d540fd1acd95b8af1275c4b4054c8764
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: c78db0a141d711a1a0ac3e46fa49255e754bf52d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673724"
 ---
 # <a name="grant-trust-to-documents"></a>Accorder votre confiance à des documents
   Un projet au niveau du document présente les mêmes exigences de sécurité que les projets au niveau de l’application : il convient de signer les manifestes à l’aide d’un certificat ou de cliquer sur l’invite d’approbation. En outre, le document ou le classeur doit se trouver dans un répertoire désigné comme emplacement approuvé.  
@@ -30,9 +31,9 @@ ms.lasthandoff: 05/22/2018
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
 ## <a name="trusted-locations"></a>Emplacements approuvés  
- Dans les applications [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] et Office 2010 disposent de centres de confiance dans lequel les utilisateurs peuvent configurer les paramètres de sécurité, telles que des emplacements approuvés. Pour les solutions Office, l’ordinateur local est considéré comme un emplacement approuvé. Toutefois, en raison de risques plus élevés, certains répertoires ne peuvent jamais être approuvés, tels que les dossiers temporaires système propres à chaque utilisateur et à Internet Explorer.  
+ Applications dans [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] et Office 2010 disposent de centres de confiance dans lequel les utilisateurs peuvent configurer les paramètres de sécurité, telles que les emplacements approuvés. Pour les solutions Office, l’ordinateur local est considéré comme un emplacement approuvé. Toutefois, en raison de risques plus élevés, certains répertoires ne peuvent jamais être approuvés, tels que les dossiers temporaires système propres à chaque utilisateur et à Internet Explorer.  
   
- Pour plus d’informations sur le centre de gestion, consultez [sécurité et les stratégies et les paramètres dans Office 2010](http://go.microsoft.com/fwlink/?LinkId=89202). Pour plus d’informations sur la façon de créer, gérer, supprimer et configurer des dossiers approuvés, consultez [configurer les paramètres des emplacements et éditeurs approuvés dans Office system 2007](http://go.microsoft.com/fwlink/?LinkId=89203) et [créer, supprimer ou modifier un emplacement de vos fichiers approuvé](https://support.office.com/en-au/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
+ Pour plus d’informations sur le centre de confidentialité, consultez [sécurité et les stratégies et les paramètres dans Office 2010](http://go.microsoft.com/fwlink/?LinkId=89202). Pour plus d’informations sur la façon de créer, gérer, supprimer et configurer des dossiers approuvés, consultez [configurer les paramètres des emplacements et éditeurs approuvés dans Office system 2007](http://go.microsoft.com/fwlink/?LinkId=89203) et [créer, supprimer ou modifier un emplacement pour vos fichiers approuvé](https://support.office.com/en-au/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
   
 ## <a name="security-considerations-for-office-solutions"></a>Considérations sur la sécurité pour les solutions Office  
  Plusieurs problèmes de sécurité se posent quand vous déterminez les dossiers à ajouter aux emplacements approuvés :  
@@ -41,9 +42,9 @@ ms.lasthandoff: 05/22/2018
   
 -   Quand vous ajoutez un répertoire aux emplacements approuvés, vous accordez une confiance totale aux solutions Office, mais également au code VBA et ActiveX. Pour cette raison, le répertoire racine et le *Mes Documents* dossiers ne doivent pas être désignés comme étant fiables.  
   
--   Le document lui-même est approuvé en utilisant les emplacements approuvés. Toutefois, des autorisations supplémentaires sont requises pour approuver la personnalisation. Vous pouvez accorder une confiance totale à la personnalisation à l’aide de la signature des manifestes avec un certificat, en cliquant sur l’invite d’approbation ou l’installation de la solution Office à le *Program Files* active.  
+-   Le document lui-même est approuvé en utilisant les emplacements approuvés. Toutefois, des autorisations supplémentaires sont requises pour approuver la personnalisation. Vous pouvez accorder une confiance totale à la personnalisation à l’aide de la signature des manifestes avec un certificat, en cliquant sur l’invite d’approbation ou l’installation de la solution Office à le *Program Files* directory.  
   
--   Vous pouvez stocker le document ou le classeur d'une solution au niveau du document dans le même répertoire que l'assembly ou dans un répertoire différent. Par exemple, le document peut être situé sur un serveur SharePoint et l'assembly dans un partage de fichiers réseau. Pour plus d’informations, consultez [Comment : publier une solution d’Office au niveau du document sur un serveur SharePoint à l’aide de ClickOnce](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58).  
+-   Vous pouvez stocker le document ou le classeur d'une solution au niveau du document dans le même répertoire que l'assembly ou dans un répertoire différent. Par exemple, le document peut être situé sur un serveur SharePoint et l'assembly dans un partage de fichiers réseau. Pour plus d’informations, consultez [Comment : publier une solution de Office au niveau du document sur un serveur SharePoint à l’aide de ClickOnce](http://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Accorder votre confiance à des solutions Office](../vsto/granting-trust-to-office-solutions.md)   

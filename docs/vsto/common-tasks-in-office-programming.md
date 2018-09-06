@@ -1,5 +1,5 @@
 ---
-title: Tâches courantes en matière de programmation Office
+title: Tâches courantes dans la programmation Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2c095b6792b2cde9596e1d955a1ddffbc568c801
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: a92a0e9cc8c82345e1d8a57449317f8e6937dad6
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670872"
 ---
-# <a name="common-tasks-in-office-programming"></a>Tâches courantes en matière de programmation Office
+# <a name="common-tasks-in-office-programming"></a>Tâches courantes dans la programmation Office
   Cette rubrique est conçue pour vous aider à trouver les réponses aux catégories suivantes de questions courantes sur la programmation de solutions Office à l’aide de Visual Studio.  
   
 -   [Tâches d’installation et tâches générales](#projects).  
@@ -46,7 +47,7 @@ ms.lasthandoff: 05/17/2018
   
 -   [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
--   [Comment : solutions de mise à niveau Office](http://msdn.microsoft.com/en-us/a269e539-b717-4680-a568-2152b070347e).  
+-   [Comment : solutions de mise à niveau Office](http://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e).  
   
 -   [Comment : assemblys PIA Office d’installation](../vsto/how-to-install-office-primary-interop-assemblies.md).  
   
@@ -54,13 +55,13 @@ ms.lasthandoff: 05/17/2018
   
 -   [Comment : créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
--   [Comment : les solutions Office ouvrir sans exécuter du code](../vsto/how-to-open-office-solutions-without-running-code.md).  
+-   [Comment : solutions Open Office sans exécuter le code](../vsto/how-to-open-office-solutions-without-running-code.md).  
   
 -   [Comment : définir les informations de configuration pour une solution Office](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md).  
   
 -   [Comment : afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
--   [Comment : ajouter dans l’affichage des erreurs d’interface utilisateur](../vsto/how-to-show-add-in-user-interface-errors.md).  
+-   [Comment : afficher complément, les erreurs d’interface utilisateur](../vsto/how-to-show-add-in-user-interface-errors.md).  
   
 ##  <a name="ui"></a> Tâches de personnalisation d’interface utilisateur  
   
@@ -86,17 +87,17 @@ ms.lasthandoff: 05/17/2018
   
 -   [Comment : ajouter un volet Office personnalisé à une application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
   
-### <a name="ribbon-customizations"></a>Personnalisations de ruban  
+### <a name="ribbon-customizations"></a>Personnalisations du ruban  
   
 -   [Comment : démarrer avec la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md).  
   
--   [Comment : modifier la position d’un onglet sur le ruban](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md).  
+-   [Comment : modifier la position d’un onglet dans le ruban](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md).  
   
 -   [Comment : personnaliser un onglet intégré](../vsto/how-to-customize-a-built-in-tab.md).  
   
--   [Comment : ajouter des contrôles pour le mode Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md).  
+-   [Comment : ajouter des contrôles au mode Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md).  
   
--   [How to: Export a Ribbon from the Ribbon Designer to Ribbon XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
+-   [Guide pratique pour exporter un ruban à partir du Concepteur de ruban vers l’élément XML Ribbon](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
   
 ### <a name="outlook-form-regions"></a>Zones de formulaire Outlook  
   
@@ -112,7 +113,7 @@ ms.lasthandoff: 05/17/2018
   
 -   [Comment : afficher par programme une chaîne dans une cellule de feuille de calcul](../vsto/how-to-programmatically-display-a-string-in-a-worksheet-cell.md).  
   
--   [Comment : créer des classeurs par programmation](../vsto/how-to-programmatically-create-new-workbooks.md).  
+-   [Comment : créer par programmation des classeurs](../vsto/how-to-programmatically-create-new-workbooks.md).  
   
 -   [Comment : ouvrir des classeurs par programmation](../vsto/how-to-programmatically-open-workbooks.md).  
   
@@ -132,15 +133,15 @@ ms.lasthandoff: 05/17/2018
   
 -   [Comment : appliquer des styles à des plages dans les classeurs par programmation](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md).  
   
--   [Comment : modifier par programmation la mise en forme dans les lignes de feuille de calcul contenant des cellules sélectionnées](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md).  
+-   [Comment : modifier la mise en forme dans les lignes de feuille de calcul contenant des cellules sélectionnées par programmation](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md).  
   
--   [Comment : rechercher le texte dans les plages de feuille de calcul par programmation](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md).  
+-   [Comment : rechercher du texte dans les plages de feuille de calcul par programmation](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md).  
   
 -   [Comment : imprimer des feuilles de calcul par programmation](../vsto/how-to-programmatically-print-worksheets.md).  
   
 -   [Comment : exécuter des calculs Excel par programmation](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md).  
   
--   [Comment : trier par programme les données dans des feuilles de calcul](../vsto/how-to-programmatically-sort-data-in-worksheets.md).  
+-   [Comment : trier les données dans des feuilles de calcul par programmation](../vsto/how-to-programmatically-sort-data-in-worksheets.md).  
   
 ##  <a name="word"></a> Tâches d’automatisation de Word  
   
@@ -152,25 +153,25 @@ ms.lasthandoff: 05/17/2018
   
 -   [Comment : fermer des documents par programmation](../vsto/how-to-programmatically-close-documents.md).  
   
--   [Comment : insérer du texte dans des documents Word par programmation](../vsto/how-to-programmatically-insert-text-into-word-documents.md).  
+-   [Comment : insérer du texte dans les documents Word par programmation](../vsto/how-to-programmatically-insert-text-into-word-documents.md).  
   
 -   [Comment : définir et sélectionner des plages dans les documents par programmation](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md).  
   
--   [Comment : réinitialiser par programme des plages dans les documents Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md).  
+-   [Comment : réinitialiser par programmation des plages dans des documents Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md).  
   
--   [Comment : mettre en forme le texte dans des documents par programmation](../vsto/how-to-programmatically-format-text-in-documents.md).  
+-   [Comment : mettre en forme dans les documents par programmation](../vsto/how-to-programmatically-format-text-in-documents.md).  
   
 -   [Comment : ajouter des contrôles XMLNode à des documents Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md).  
   
 -   [Comment : mettre à jour par programme de texte d’un signet](../vsto/how-to-programmatically-update-bookmark-text.md).  
   
--   [Comment : rechercher et remplacer du texte dans des documents par programmation](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md).  
+-   [Comment : rechercher et remplacer du texte dans les documents par programmation](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md).  
   
 -   [Comment : imprimer des documents par programmation](../vsto/how-to-programmatically-print-documents.md).  
   
--   [Comment : créer des tableaux Word par programmation](../vsto/how-to-programmatically-create-word-tables.md).  
+-   [Comment : créer par programmation des tableaux Word](../vsto/how-to-programmatically-create-word-tables.md).  
   
--   [Comment : ajouter par programmation des lignes et des colonnes à des tableaux Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md).  
+-   [Comment : ajouter par programmation des lignes et colonnes à des tableaux Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md).  
   
 -   [Comment : compter les caractères dans les documents par programmation](../vsto/how-to-programmatically-count-characters-in-documents.md).  
   
@@ -180,13 +181,13 @@ ms.lasthandoff: 05/17/2018
   
 -   [Comment : remplir des feuilles de calcul avec des données à partir d’une base de données](../vsto/how-to-populate-worksheets-with-data-from-a-database.md).  
   
--   [Comment : remplir des documents avec les données d’une base de données](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
+-   [Comment : remplir des documents avec des données à partir d’une base de données](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
   
 -   [Comment : remplir des documents avec des données à partir des services](../vsto/how-to-populate-documents-with-data-from-services.md).  
   
--   [Comment : remplir des documents avec les données d’objets](../vsto/how-to-populate-documents-with-data-from-objects.md).  
+-   [Comment : remplir des documents avec des données à partir d’objets](../vsto/how-to-populate-documents-with-data-from-objects.md).  
   
--   [Comment : remplir des documents avec les données d’une base de données](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
+-   [Comment : remplir des documents avec des données à partir d’une base de données](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
   
 -   [Comment : remplir des documents avec des données à partir des services](../vsto/how-to-populate-documents-with-data-from-services.md).  
   
@@ -194,17 +195,17 @@ ms.lasthandoff: 05/17/2018
   
 ### <a name="cached-data-in-document-level-solutions"></a>Données mises en cache dans les solutions au niveau du document  
   
--   [Comment : mettre en Cache des données pour une utilisation hors connexion ou sur un serveur](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+-   [Comment : mettre en Cache les données pour une utilisation hors connexion ou sur un serveur](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
 -   [Comment : mettre en cache par programmation une source de données dans un document Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md).  
   
--   [Comment : mettre en Cache les données dans un document protégé par mot de passe](../vsto/how-to-cache-data-in-a-password-protected-document.md).  
+-   [Comment : mettre en Cache les données dans un document protégé par un mot de passe](../vsto/how-to-cache-data-in-a-password-protected-document.md).  
   
 ### <a name="custom-xml-data"></a>Données XML personnalisées  
   
 -   [Comment : ajouter des parties XML personnalisées aux personnalisations au niveau du document](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md).  
   
--   [Comment : ajouter des parties XML personnalisées à des documents à l’aide de compléments VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md).  
+-   [Comment : ajouter des parties XML personnalisées à des documents à l’aide des Compléments VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md).  
   
 ##  <a name="server"></a> Tâches de gestion de documents côté serveur  
   
@@ -218,19 +219,19 @@ ms.lasthandoff: 05/17/2018
   
 ##  <a name="deployment"></a> Tâches de déploiement  
   
--   [Comment : publier une solution Office à l’aide de ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
+-   [Comment : publier une solution Office à l’aide de ClickOnce](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
   
--   [Comment : publier une solution d’Office au niveau du document sur un serveur SharePoint à l’aide de ClickOnce](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58).  
+-   [Comment : publier une solution de Office au niveau du document sur un serveur SharePoint à l’aide de ClickOnce](http://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).  
   
--   [Comment : installer une solution ClickOnce Office](http://msdn.microsoft.com/en-us/14702f48-9161-4190-994c-78211fe18065).  
+-   [Comment : installer une solution ClickOnce Office](http://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065).  
   
--   [Comment : installer les composants requis sur les ordinateurs des utilisateurs finaux pour exécuter des solutions Office](http://msdn.microsoft.com/en-us/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+-   [Comment : installer les composants requis sur les ordinateurs des utilisateurs finaux pour exécuter des solutions Office](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
--   [Comment : préparer IIS pour le déploiement de solutions Office](http://msdn.microsoft.com/en-us/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4).  
+-   [Comment : préparer IIS pour le déploiement de solutions Office](http://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4).  
   
--   [Comment : mettre à jour des solutions Office déployées](http://msdn.microsoft.com/en-us/be96db53-b6ea-46ab-b8d9-b76b098b3b13).  
+-   [Comment : mettre à jour des solutions Office déployées](http://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13).  
   
--   [Comment : modifier le chemin d’accès de l’installation d’une solution Office](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
+-   [Comment : modifier le chemin d’installation d’une solution Office](http://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Prise en main &#40;développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   

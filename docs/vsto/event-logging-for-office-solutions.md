@@ -18,11 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ef1db4f88e13575f77a88d0e2ceee7ef0621b202
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: b05406af9e10a23f37d03b30518b20343b7d3f98
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671108"
 ---
 # <a name="event-logging-for-office-solutions"></a>Journalisation des événements pour les solutions Office
   Vous pouvez utiliser l’observateur d’événements de Windows pour consulter les messages d’exception capturés par le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] lors de l’installation ou de la désinstallation de solutions Office. Vous pouvez utiliser ces messages du journal des événements pour résoudre les problèmes d’installation et de déploiement.  
@@ -48,7 +49,7 @@ ms.lasthandoff: 05/22/2018
   
 7.  Cliquez sur **OK** pour afficher la vue filtrée.  
   
-#### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>Pour lire le journal des événements dans Windows 7, Windows Vista et Windows Server 2008  
+### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>Pour lire le journal des événements dans Windows 7, Windows Vista et Windows Server 2008  
   
 1.  Dans le Panneau de configuration, ouvrez **Outils d’administration**.  
   
@@ -76,10 +77,10 @@ ms.lasthandoff: 05/22/2018
   
  Après la désinstallation d’une solution Office, les messages d’exception restent dans le journal des événements.  
   
- Pour afficher ou enregistrer les messages d’exception lors de l’exécution d’une solution Office, consultez [les projets Office de déboguer](../vsto/debugging-office-projects.md) et [les projets Office de déboguer](../vsto/debugging-office-projects.md).  
+ Pour afficher ou enregistrer des messages d’exception lors de l’exécution d’une solution Office, consultez [les projets Office déboguer](../vsto/debugging-office-projects.md) et [les projets Office déboguer](../vsto/debugging-office-projects.md).  
   
 ### <a name="localization"></a>Localisation  
- La langue du message d’exception est déterminée par la langue du runtime de Visual Studio Tools pour Office. Par exemple, si le module linguistique japonais est installé sur l’ordinateur de l’utilisateur final, le message d’exception est écrit dans le journal des événements en japonais.  
+ La langue du message d’exception est déterminée par la langue du runtime de Visual Studio Tools pour Office. Par exemple, si l’ordinateur de l’utilisateur final possède le module linguistique japonais installé, le message d’exception est écrit dans le journal des événements en japonais.  
   
 ## <a name="disable-the-event-logger"></a>Désactiver le journal des événements  
  Par défaut, le journal des événements est activé lorsque vous installez ou désinstallez des solutions Office. Vous pouvez désactiver le journal des événements en affectant la valeur « 1 » (un) à la variable d’environnement VSTO_EVENTLOGDISABLED.  

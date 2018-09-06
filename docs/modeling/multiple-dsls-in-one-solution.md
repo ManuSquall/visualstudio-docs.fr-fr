@@ -9,17 +9,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b0719e4397fed7b850454140462c6e0ed4148da9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ce16cba80962c68d2480e934e2816be4fe77ab1f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949564"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775875"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Utilisation de plusieurs langages spécifiques à un domaine dans une solution
 Vous pouvez empaqueter plusieurs DSL comme partie intégrante d'une seule solution de telle sorte qu'ils soient installés ensemble.
 
- Il existe différentes techniques pour intégrer plusieurs DSL. Pour plus d’informations, consultez [intégration de modèles à l’aide de Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md) et [Comment : ajouter un gestionnaire de glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md) et [personnalisation de comportement de copie](../modeling/customizing-copy-behavior.md).
+ Il existe différentes techniques pour intégrer plusieurs DSL. Pour plus d’informations, consultez [l’intégration de modèles à l’aide de Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md) et [Comment : ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md) et [personnalisation du comportement de copie](../modeling/customizing-copy-behavior.md).
 
 ### <a name="to-build-more-than-one-dsl-in-the-same-solution"></a>Pour créer plusieurs DSL dans la même solution
 
@@ -39,15 +39,15 @@ Vous pouvez empaqueter plusieurs DSL comme partie intégrante d'une seule soluti
 
          `string dslProjectName = "Dsl2";`
 
-    -   Dans la solution VSIX, ajoutez la Dsl * et DslPackage\* projets.
+    -   Dans la solution VSIX, ajoutez les Dsl * et DslPackage\* projets.
 
          Il se peut que vous souhaitiez placer chaque paire dans son propre dossier de solution.
 
 2.  Regroupez les manifestes VSIX des DSL :
 
-    1.  Ouvrez * YourVsixProject ***\source.extension.manifest**.
+    1.  Ouvrez _YourVsixProject_**\source.extension.manifest**.
 
-    2.  Pour chaque DSL, choisissez **ajouter du contenu** et ajouter :
+    2.  Pour chaque DSL, choisissez **ajouter du contenu** et ajoutez :
 
         -   `Dsl*` projet comme un **composant MEF**
 
@@ -57,7 +57,7 @@ Vous pouvez empaqueter plusieurs DSL comme partie intégrante d'une seule soluti
 
 3.  Générez la solution.
 
- Le VSIX résultant installera les deux DSL. Vous pouvez les tester à l’aide de F5 ou déployer * YourVsixProject ***\bin\Debug\\\*.vsix**.
+ Le VSIX résultant installera les deux DSL. Vous pouvez les tester en utilisant F5 ou déployer _YourVsixProject_**\bin\Debug\\\*.vsix**.
 
 ## <a name="see-also"></a>Voir aussi
 

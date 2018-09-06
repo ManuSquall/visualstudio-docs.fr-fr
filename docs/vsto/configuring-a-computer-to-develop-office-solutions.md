@@ -15,11 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 58458b51115834b5b94e858676ee8039d5894c70
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 2e25ac55a1198cf15b497b7b88522be44dfddb73
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670868"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>Configurer un ordinateur pour développer des solutions Office
 
@@ -27,9 +28,9 @@ Pour créer des compléments VSTO et des personnalisations pour Microsoft Office
 
 |Logiciels|Versions prises en charge|
 |--------------|------------------------|
-|Visual Studio 2017| N’importe quelle édition avec le **développement d’Office/SharePoint** la charge de travail.|
-|.NET Framework|-Le .NET Framework 4 ou version ultérieur.|
-|Microsoft Office|<ul><li>Toute édition de la suite Office, y compris Office Professionnel Plus pour Office 365.</li><li>N'importe laquelle des applications autonomes suivantes :<br /><br /> <ul><li>Excel</li><li>InfoPath (Office 2013 et Office 2010 uniquement)</li><li>Outlook</li><li>PowerPoint</li><li>Projet</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Visual Basic pour Applications (VBA) doit être installé dans le cadre d'Office. **Important :** -clic les versions des applications Office 2010 ne sont pas pris en charge.|
+|Visual Studio 2017| N’importe quelle édition avec le **développement Office/SharePoint** charge de travail.|
+|.NET Framework|-.NET Framework 4 ou version ultérieur.|
+|Microsoft Office|<ul><li>Toute édition de la suite Office, y compris Office Professionnel Plus pour Office 365.</li><li>N'importe laquelle des applications autonomes suivantes :<br /><br /> <ul><li>Excel</li><li>InfoPath (Office 2013 et Office 2010 uniquement)</li><li>Outlook</li><li>PowerPoint</li><li>Projet</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Visual Basic pour Applications (VBA) doit être installé dans le cadre d'Office. **Important :** versions Démarrer en un clic des applications d’Office 2010 ne sont pas pris en charge.|
 
 Pour les instructions d’installation détaillées, consultez [Comment : configurer un ordinateur pour développer des solutions Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).
 
@@ -39,11 +40,11 @@ Si vous installez une version prise en charge de Visual Studio, le .NET Framewor
 
 - Assurez-vous que les outils de développement Microsoft Office sont installés sur votre ordinateur.
 
-     Les outils de développement Office sont un composant facultatif de Visual Studio, mais ils sont généralement installés automatiquement avec Visual Studio. Si vous personnalisez l'installation de Visual Studio en spécifiant les fonctionnalités à installer, assurez-vous de choisir **Outils de développement Microsoft Office** pendant l'installation, afin d'installer ces outils.
+     Outils de développement Office sont un composant facultatif de Visual Studio, mais ils sont installés automatiquement avec Visual Studio. Si vous personnalisez l'installation de Visual Studio en spécifiant les fonctionnalités à installer, assurez-vous de choisir **Outils de développement Microsoft Office** pendant l'installation, afin d'installer ces outils.
 
-     Pour vous assurer que ces outils sont installés, démarrez le programme d’installation de Visual Studio et choisissez la **modifier** bouton. Cochez la case **Outils de développement Microsoft Office** , puis choisissez le bouton **Mettre à jour** .
+     Pour vous assurer que ces outils sont installés, démarrez le programme d’installation de Visual Studio, puis choisissez le **modifier** bouton. Cochez la case **Outils de développement Microsoft Office** , puis choisissez le bouton **Mettre à jour** .
 
-- Assurez-vous que vous n’exécutez pas une version d’Office qui a été remis par clic. Consultez [Comment : vérifier si Outlook est une application en un clic sur un ordinateur](http://msdn.microsoft.com/library/office/ff864733(v=office.14).aspx).
+- Assurez-vous que vous n’exécutez pas une version d’Office qui a été remis par démarrer en un clic. Consultez [Comment : vérifier si Outlook est une application démarrer en un clic sur un ordinateur](http://msdn.microsoft.com/library/office/ff864733(v=office.14).aspx).
 
 - Assurez-vous que vous exécutez qu’une seule version de Microsoft Office.
 

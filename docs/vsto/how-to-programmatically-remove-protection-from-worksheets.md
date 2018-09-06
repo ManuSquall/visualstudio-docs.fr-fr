@@ -1,5 +1,5 @@
 ---
-title: 'Comment : supprimer par programmation la Protection des feuilles de calcul | Documents Microsoft'
+title: 'Comment : supprimer par programmation la protection des feuilles de calcul'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,35 +18,36 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c9e34e184462f1ec7822b5c2fce63aaff4a7f515
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e15fd2f2d4a025155bbaa1d39dc5c38155b452e2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673469"
 ---
-# <a name="how-to-programmatically-remove-protection-from-worksheets"></a>Comment : ôter la protection des feuilles de calcul par programmation
+# <a name="how-to-programmatically-remove-protection-from-worksheets"></a>Comment : supprimer par programmation la protection des feuilles de calcul
   Vous pouvez supprimer par programmation la protection d’une feuille de calcul Microsoft Office Excel.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
  L’exemple suivant utilise la variable `getPasswordFromUser`, qui contient un mot de passe fourni par l’utilisateur.  
   
-### <a name="to-unprotect-a-worksheet-in-a-document-level-customization"></a>Pour ôter la protection d’une feuille de calcul dans une personnalisation au niveau du document  
+## <a name="to-unprotect-a-worksheet-in-a-document-level-customization"></a>Pour ôter la protection d’une feuille de calcul dans une personnalisation au niveau du document  
   
-1.  Appelez la méthode <xref:Microsoft.Office.Tools.Excel.Worksheet.Unprotect%2A> de la feuille de calcul et passez le mot de passe, si nécessaire. Cet exemple suppose que vous utilisez une feuille de calcul nommée `Sheet1`.  
+1.  Appelez le <xref:Microsoft.Office.Tools.Excel.Worksheet.Unprotect%2A> méthode de la feuille de calcul et passez le mot de passe, si nécessaire. Cet exemple suppose que vous utilisez une feuille de calcul nommée `Sheet1`.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#28](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#28)]
      [!code-vb[Trin_VstcoreExcelAutomation#28](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#28)]  
   
-### <a name="to-unprotect-a-worksheet-in-an-vsto-add-in"></a>Pour ôter la protection d’une feuille de calcul dans un complément VSTO  
+## <a name="to-unprotect-a-worksheet-in-a-vsto-add-in"></a>Pour ôter la protection d’une feuille de calcul dans un composant logiciel complément VSTO  
   
-1.  Appelez la méthode <xref:Microsoft.Office.Interop.Excel._Worksheet.Unprotect%2A> de la feuille de calcul active et passez le mot de passe, si nécessaire.  
+1.  Appelez le <xref:Microsoft.Office.Interop.Excel._Worksheet.Unprotect%2A> méthode de la feuille de calcul active et passez le mot de passe, si nécessaire.  
   
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#18](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#18)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#18](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#18)]  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilisation des feuilles de calcul](../vsto/working-with-worksheets.md)   
+ [Travailler avec des feuilles de calcul](../vsto/working-with-worksheets.md)   
  [Comment : protéger des feuilles de calcul par programmation](../vsto/how-to-programmatically-protect-worksheets.md)   
  [Comment : protéger des classeurs par programmation](../vsto/how-to-programmatically-protect-workbooks.md)   
  [Comment : masquer des feuilles de calcul par programmation](../vsto/how-to-programmatically-hide-worksheets.md)   
