@@ -18,11 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5603b1661a1b329692508eb43a629919f2f5d14e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 23fbe0a7563dbb1ebb3832dbe5c340e67dacac72
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673644"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Comment : mettre à jour une source de données avec des données à partir d’un contrôle hôte
   Vous pouvez lier un contrôle hôte à une source de données et mettre à jour la source de données avec les modifications apportées aux données dans le contrôle. Deux étapes principales constituent ce processus :  
@@ -31,7 +32,7 @@ ms.lasthandoff: 05/17/2018
   
 2.  Mise à jour de la base de données avec les données modifiées dans la source de données en mémoire. Ceci s’applique uniquement si la source de données est connectée à une base de données principale, par exemple une base de données SQL Server ou Microsoft Office Access.  
   
- Pour plus d’informations sur la liaison de données et les contrôles hôtes, consultez [éléments hôtes et héberger la vue d’ensemble des contrôles](../vsto/host-items-and-host-controls-overview.md) et [lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
+ Pour plus d’informations sur la liaison de données et des contrôles hôtes, consultez [éléments hôtes et héberger de vue d’ensemble des contrôles](../vsto/host-items-and-host-controls-overview.md) et [lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
@@ -51,19 +52,19 @@ ms.lasthandoff: 05/17/2018
      [!code-csharp[Trin_VstcoreDataExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#1)]
      [!code-vb[Trin_VstcoreDataExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#1)]  
   
-### <a name="automatically-update-the-in-memory-data-source"></a>Mettre automatiquement à jour la source de données en mémoire  
- Vous pouvez également configurer un contrôle pour qu’il mette automatiquement à jour la source de données en mémoire. Dans un projet au niveau du document, vous pouvez pour cela utiliser du code ou le concepteur. Dans un projet de complément VSTO, vous devez utiliser du code.  
+### <a name="automatically-update-the-in-memory-data-source"></a>Mettre à jour automatiquement la source de données en mémoire  
+ Vous pouvez également configurer un contrôle pour qu’il mette automatiquement à jour la source de données en mémoire. Dans un projet au niveau du document, vous pouvez pour cela utiliser du code ou le concepteur. Dans un projet de complément VSTO, vous devez utiliser le code.  
   
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>Pour configurer un contrôle pour qu’il mette automatiquement à jour la source de données en mémoire à l’aide de code  
   
-1.  Utilisez le mode System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged du <xref:System.Windows.Forms.Binding> objet qui lie le contrôle à la source de données. Il existe deux options de mise à jour de la source de données :  
+1.  Utiliser le mode System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged de la <xref:System.Windows.Forms.Binding> objet qui lie le contrôle à la source de données. Il existe deux options de mise à jour de la source de données :  
   
-    -   Pour mettre à jour la source de données lorsque le contrôle est validé, affectez à cette propriété System.Windows.Forms.DataSourceUpdateMode.OnValidation.  
+    -   Pour mettre à jour la source de données lorsque le contrôle est validé, définissez cette propriété sur System.Windows.Forms.DataSourceUpdateMode.OnValidation.  
   
-    -   Pour mettre à jour la source de données lorsque la valeur de la propriété liée aux données du contrôle change, définissez cette propriété pour System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged.  
+    -   Pour mettre à jour la source de données lorsque la valeur de la propriété liée aux données du contrôle change, définissez cette propriété sur System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged.  
   
         > [!NOTE]  
-        >  L’option System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged ne s’applique pas aux contrôles hôtes Word car Word ne notifications pas offre document ou de modification du contrôle. Toutefois, vous pouvez utiliser cette option pour les contrôles Windows Forms sur les documents Word.  
+        >  L’option System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged ne s’applique pas aux contrôles hôtes Word, car Word ne notifications pas offre document ou de modification du contrôle. Toutefois, vous pouvez utiliser cette option pour les contrôles Windows Forms sur les documents Word.  
   
      L’exemple suivant configure un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> pour mettre automatiquement à jour la source de données quand la valeur du contrôle change. Cet exemple part du principe que vous avez un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> nommé `namedRange1` , dont la propriété <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> est liée à un champ dans une source de données.  
   
@@ -78,7 +79,7 @@ ms.lasthandoff: 05/17/2018
   
 3.  Dans la fenêtre **Propriétés** , développez la propriété **(DataBindings)** .  
   
-4.  À côté du **(Avancé)** propriété, cliquez sur le bouton de sélection (![capture d’écran de VisualStudioEllipsesButton](../vsto/media/vbellipsesbutton.png "capture d’écran de VisualStudioEllipsesButton")).  
+4.  À côté du **(Avancé)** propriété, cliquez sur le bouton de sélection (![d’écran de VisualStudioEllipsesButton](../vsto/media/vbellipsesbutton.png "d’écran de VisualStudioEllipsesButton")).  
   
 5.  Dans la boîte de dialogue **Mise en forme et liaison avancée** , cliquez sur la liste déroulante **Mode de mise à jour de la source de données** et sélectionnez l’une des valeurs suivantes :  
   
@@ -91,8 +92,8 @@ ms.lasthandoff: 05/17/2018
   
 6.  Fermez la boîte de dialogue **Mise en forme et liaison avancée** .  
   
-## <a name="update-the-database"></a>Mise à jour de la base de données  
- Si la source de données en mémoire est associée à une base de données, vous devez mettre celle-ci à jour avec les modifications apportées à la source de données. Pour plus d’informations sur la mise à jour d’une base de données, consultez [enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md) et [mettre à jour des données à l’aide d’un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) .  
+## <a name="update-the-database"></a>Mettre à jour de la base de données  
+ Si la source de données en mémoire est associée à une base de données, vous devez mettre celle-ci à jour avec les modifications apportées à la source de données. Pour plus d’informations sur la mise à jour une base de données, consultez [enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md) et [mettre à jour des données à l’aide d’un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) .  
   
 ### <a name="to-update-the-database"></a>Pour mettre à jour la base de données  
   
@@ -116,12 +117,12 @@ ms.lasthandoff: 05/17/2018
   
 ## <a name="see-also"></a>Voir aussi  
  [Lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Enregistrer des données dans la base de données](../data-tools/save-data-back-to-the-database.md)    
+ [Enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md)    
  [Mettre à jour des données à l’aide d’un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)    
- [Comment : faire défiler des enregistrements de base de données dans une feuille de calcul](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)   
+ [Comment : parcourir les enregistrements de base de données dans une feuille de calcul](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)   
  [Comment : remplir des feuilles de calcul avec des données à partir d’une base de données](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
- [Comment : remplir des documents avec les données d’objets](../vsto/how-to-populate-documents-with-data-from-objects.md)   
- [Comment : remplir des documents avec les données d’une base de données](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
+ [Comment : remplir des documents avec des données à partir d’objets](../vsto/how-to-populate-documents-with-data-from-objects.md)   
+ [Comment : remplir des documents avec des données à partir d’une base de données](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
  [Comment : remplir des documents avec des données à partir des services](../vsto/how-to-populate-documents-with-data-from-services.md)  
   
   

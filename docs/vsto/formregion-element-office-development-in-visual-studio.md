@@ -15,14 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fd8036ea2a437ffc9fb68a523d8f25db964b5f6
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 4fc98e66cd16298839e79f25c95e256f10398c49
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673284"
 ---
 # <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;formRegion&gt; élément (développement Office dans Visual Studio)
-  L’élément `formRegion` de l’espace de noms `vstov4` identifie une zone de formulaire Microsoft Office Outlook associée à un complément VSTO.  
+  Le `formRegion` élément de la `vstov4` espace de noms identifie une zone de formulaire Microsoft Office Outlook associée à un composant logiciel complément VSTO.  
   
 ## <a name="syntax"></a>Syntaxe  
   

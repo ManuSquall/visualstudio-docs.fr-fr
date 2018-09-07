@@ -1,5 +1,5 @@
 ---
-title: 'Comment : afficher les erreurs d’Interface utilisateur du complément | Documents Microsoft'
+title: 'Comment : afficher complément, les erreurs d’interface utilisateur'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,18 +18,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 795578d6a168dff5fee259a90abac83fa7788121
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd6da0c83d0dee835169a0a8068af8d75facbbd4
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35672733"
 ---
-# <a name="how-to-show-add-in-user-interface-errors"></a>Comment : afficher les erreurs de l'interface utilisateur du complément
-  Par défaut, si un complément VSTO tente de manipuler l’interface utilisateur de Microsoft Office et qu’il échoue, aucun message d’erreur n’est affiché. Toutefois, vous pouvez configurer les applications Microsoft Office pour afficher des messages en cas d’erreur liée à l’interface utilisateur. Vous pouvez utiliser ces messages pour vous aider à déterminer pourquoi un ruban personnalisé n’est pas affiché, ou pourquoi un ruban apparaît mais pas les contrôles.  
+# <a name="how-to-show-add-in-user-interface-errors"></a>Comment : afficher complément, les erreurs d’interface utilisateur
+  Par défaut, si un complément, VSTO tente de manipuler l’interface utilisateur de Microsoft Office (IU) et échoue, aucun message d’erreur ne s’affiche. Toutefois, vous pouvez configurer les applications Microsoft Office pour afficher des messages en cas d’erreur liée à l’interface utilisateur. Vous pouvez utiliser ces messages pour aider à déterminer pourquoi un ruban personnalisé n’apparaît pas, ou pourquoi un ruban apparaît mais pas les contrôles.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-### <a name="to-show-vsto-add-in-user-interface-errors"></a>Pour afficher les erreurs d’interface utilisateur du complément VSTO  
+## <a name="to-show-vsto-add-in-user-interface-errors"></a>Pour afficher les erreurs d’interface utilisateur du complément VSTO  
   
 1.  Démarrez l’application.  
   
@@ -46,7 +47,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Voir aussi  
  [Personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md)   
- [Création de zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md)   
+ [Créer des zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md)   
  [Vue d’ensemble du ruban](../vsto/ribbon-overview.md)   
  [Vue d’ensemble du volet Actions](../vsto/actions-pane-overview.md)  
   

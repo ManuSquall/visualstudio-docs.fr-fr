@@ -13,11 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c935d4b71ccea16c450e65c0a153700bfa889583
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: a89f77dc7a4adc7f1aafa1a59b425eefc5b4074e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673716"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Créer des compléments VSTO pour Office à l’aide de Visual Studio
   Vous pouvez utiliser les outils de développement Microsoft Office dans Visual Studio pour créer des applications .NET Framework qui étendent Office. Ces applications sont également appelées *solutions Office*.  
@@ -25,19 +26,19 @@ ms.lasthandoff: 05/17/2018
  Les outils de développement Office fournissent des fonctionnalités qui permettent de créer des solutions Office pour répondre à différents besoins professionnels. Ces outils incluent des modèles de projet pour vous aider à créer des solutions Office à l'aide de Visual Basic ou de Visual C#, et des concepteurs visuels qui vous aident à créer des interfaces utilisateur personnalisées pour vos solutions Office.  
   
 > [!NOTE]  
->  Vous souhaitez développer des solutions qui étendent l’expérience Office sur [plusieurs plateformes](https://dev.office.com/add-in-availability)? Découvrez le nouvel [modèle des compléments Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Compléments Office ont un faible encombrement mémoire par rapport aux compléments VSTO et les solutions, et vous pouvez les créer à l’aide de presque n’importe quel web technologies, telles que HTML5, JavaScript, CSS3 et XML de programmation.  
+>  Vous souhaitez développer des solutions qui étendent l’expérience Office sur [plusieurs plateformes](https://dev.office.com/add-in-availability)? Découvrez le nouvel [modèle de compléments Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Compléments Office peu encombrantes par rapport aux compléments VSTO et de solutions, et vous pouvez les créer à l’aide de presque toutes les technologies, telles que HTML5, JavaScript, CSS3 et XML de programmation web.  
   
  Pour obtenir les informations les plus récentes sur le développement Office, consultez les centres de développement suivants sur le site MSDN :  
   
--   Le [Office portail de développement avec Visual Studio](http://go.microsoft.com/fwlink/?LinkId=123844) contient des liens vers des informations sur les produits, des exemples de code, des vidéos et des ressources de communauté sur l’utilisation de Visual Studio pour personnaliser des applications Office dans le cadre de vos solutions .  
+-   Le [Office portail de développement avec Visual Studio](http://go.microsoft.com/fwlink/?LinkId=123844) contient des liens vers des informations sur les produits, des exemples de code, des vidéos et des ressources de la Communauté sur l’utilisation de Visual Studio pour personnaliser des applications Office dans le cadre de vos solutions .  
   
--   Le [Centre pour développeurs Microsoft Office](http://go.microsoft.com/fwlink/?LinkId=83467) contient des liens vers des articles techniques, exemples de code, des téléchargements, informations de la Communauté, prise en charge et autres documentations sur les personnalisations Office et les Applications d’entreprise Office (OBA ).  
+-   Le [centre de développement Microsoft Office](http://go.microsoft.com/fwlink/?LinkId=83467) contient des liens vers des articles techniques, des exemples de code, téléchargements, informations de la Communauté, prise en charge et autres documentations sur les personnalisations Office et des Applications professionnelles Office (OBA ).  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Prise en main &#40;développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  Fournit des liens vers des informations relatives à la configuration d'un ordinateur de développement pour créer des solutions Office, à la mise en route pour créer des solutions Office et aux nouveautés du développement Office dans Visual Studio.  
   
- [Mise à niveau et migrer des solutions Office](../vsto/upgrading-and-migrating-office-solutions.md)  
+ [Mettre à niveau et migrer des solutions Office](../vsto/upgrading-and-migrating-office-solutions.md)  
  Fournit des liens vers des informations relatives au processus de mise à niveau pour les projets créés à l'aide de versions antérieures de Visual Studio.  
   
  [Architecture des solutions Office dans Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
@@ -62,7 +63,7 @@ ms.lasthandoff: 05/17/2018
  Fournit des informations sur l'automatisation de PowerPoint et sur la création de compléments VSTO PowerPoint.  
   
  [Solutions Project](../vsto/project-solutions.md)  
- Fournit des informations sur l’automatisation de Microsoft Office project et créer des projets de compléments VSTO.  
+ Fournit des informations sur l’automatisation de Microsoft Office project et créer le projet VSTO Add-ins.  
   
  [Solutions Visio](../vsto/visio-solutions.md)  
  Fournit des informations sur l'automatisation de Visio et sur la création de compléments VSTO Visio.  
@@ -73,7 +74,7 @@ ms.lasthandoff: 05/17/2018
  [Générer des solutions Office](../vsto/building-office-solutions.md)  
  Fournit des informations sur les différences entre la génération de projets Office et d'autres types de projets dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
- [Déboguer des projets Office](../vsto/debugging-office-projects.md)  
+ [Déboguez des projets Office](../vsto/debugging-office-projects.md)  
  Fournit des informations sur les différences entre le débogage de projets Office et d'autres types de projets dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
  [Sécurisez les solutions Office](../vsto/securing-office-solutions.md)  
@@ -89,7 +90,7 @@ ms.lasthandoff: 05/17/2018
  Fournit des liens vers des informations détaillées sur les assemblys PIA Office, les manifestes, les éléments d’interface utilisateur et les messages d’erreur.  
   
  [Référence managée &#40;développement Office dans Visual Studio&#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
- Fournit des liens vers des informations sur les espaces de noms API et les types utilisés dans les projets Office qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Pour obtenir la documentation de référence des API sur les espaces de noms et les types qui sont utilisés dans les projets Office qui ciblent le .NET Framework 3.5, consultez la section de référence suivante dans la documentation de Visual Studio 2008 : [référencegéréeparlesystèmede2007](http://go.microsoft.com/fwlink/?LinkId=160658).  
+ Fournit des liens vers des informations sur les espaces de noms API et les types utilisés dans les projets Office qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Pour la documentation de référence des API sur les espaces de noms et les types qui sont utilisés dans les projets Office qui ciblent le .NET Framework 3.5, consultez la section de référence suivante dans la documentation de Visual Studio 2008 : [référencegéréeparlesystèmede2007](http://go.microsoft.com/fwlink/?LinkId=160658).  
   
  [Référence des API non managées &#40;développement Office dans Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
  Contient des liens vers des informations sur les interfaces COM que vous pouvez utiliser pour effectuer des actions comme le chargement et le déchargement de compléments VSTO managés dans des applications Office.  
@@ -102,15 +103,15 @@ ms.lasthandoff: 05/17/2018
  Fournit des ressources Visual Studio supplémentaires, telles que des articles techniques, des vidéos et des blogs.  
   
  [Portail des développeurs Office business applications](http://go.microsoft.com/fwlink/?LinkId=99125)  
- Fournit des informations sur les Applications d’entreprise Office (OBA) et comment les créer à l’aide de la plateforme du système Office.  
+ Fournit des informations sur les Applications professionnelles Office (OBA) et comment les créer à l’aide de la plateforme du système Office.  
   
  [Section de développement Microsoft Office de MSDN library](http://go.microsoft.com/fwlink/?LinkId=149870)  
- Zone de MSDN library où vous pouvez rechercher des articles et documentation de référence sur le développement de solutions pour plusieurs versions d’Office (non spécifique au développement d’Office à l’aide de Visual Studio).  
+ Zone de MSDN library où vous pouvez rechercher des articles et documentation de référence sur le développement de solutions pour plusieurs versions d’Office (non spécifique au développement Office à l’aide de Visual Studio).  
   
- [Développement d’applications dans Visual Studio](http://msdn.microsoft.com/en-us/97490c1b-a247-41fb-8f2c-bc4c201eff68)  
- Contient des liens vers des rubriques qui expliquent comment vous pouvez utiliser Visual Studio pour concevoir, développer, déboguer et déployer des applications web, services web XML et des applications clientes traditionnelles.  
+ [Développement d’applications dans Visual Studio](http://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)  
+ Contient des liens vers des rubriques qui expliquent comment vous pouvez utiliser Visual Studio pour concevoir, développer, déboguer et déployer des applications clientes traditionnelles, les services web XML et les applications web.  
   
- [Programmation .NET framework dans Visual Studio](http://msdn.microsoft.com/en-us/f3f63195-82c6-48e8-a4a0-612810e7d093)  
+ [Programmation .NET framework dans Visual Studio](http://msdn.microsoft.com/f3f63195-82c6-48e8-a4a0-612810e7d093)  
  Décrit le développement d'applications avec le .NET Framework en Visual Basic et Visual C#.  
   
   

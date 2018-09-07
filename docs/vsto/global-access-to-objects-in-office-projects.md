@@ -33,11 +33,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d81d94c07345fa54c5758919b2a0c6dfde166503
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 933e53876108f4e8ee4260ae4ac4fdf41f8bbf01
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673692"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Accès global aux objets dans les projets Office
   Lorsque vous créez un projet Office, Visual Studio génère automatiquement une classe nommée `Globals` dans le projet. Vous pouvez utiliser la classe `Globals` pour accéder à plusieurs éléments de projet différents au moment de l'exécution à partir du code du projet.  
@@ -51,9 +52,9 @@ ms.lasthandoff: 05/22/2018
   
 -   Classe `ThisDocument` dans un projet de modèle ou un document Word. Vous pouvez accéder à cet objet à l'aide de la propriété `Globals.ThisDocument` .  
   
--   Classe `ThisAddIn` dans un projet de complément VSTO. Vous pouvez accéder à cet objet à l'aide de la propriété `Globals.ThisAddIn` .  
+-   Le `ThisAddIn` classe dans un projet de complément VSTO. Vous pouvez accéder à cet objet à l'aide de la propriété `Globals.ThisAddIn` .  
   
--   Tous les rubans de votre projet que vous avez personnalisés en utilisant le Concepteur de ruban. Vous pouvez accéder aux rubans à l'aide de la propriété `Globals.Ribbons` . Pour plus d’informations, consultez [accéder au ruban au moment de l’exécution](../vsto/accessing-the-ribbon-at-run-time.md).  
+-   Tous les rubans de votre projet que vous avez personnalisés en utilisant le Concepteur de ruban. Vous pouvez accéder aux rubans à l'aide de la propriété `Globals.Ribbons` . Pour plus d’informations, consultez [accéder au ruban lors de l’exécution](../vsto/accessing-the-ribbon-at-run-time.md).  
   
 -   Toutes les zones de formulaire Outlook dans un projet de complément VSTO Outlook. Vous pouvez accéder aux zones de formulaire à l'aide de la propriété `Globals.FormRegions` . Pour plus d’informations, consultez [accéder à une zone de formulaire lors de l’exécution](../vsto/accessing-a-form-region-at-run-time.md).  
   
@@ -73,15 +74,15 @@ ms.lasthandoff: 05/22/2018
  [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]  
   
 ## <a name="initialize-the-globals-class"></a>Initialiser la classe Globals  
- Le code qui tente d’utiliser la classe `Globals` avant la fin de l’initialisation totale du document ou du complément VSTO peut lever une exception au moment de l’exécution. Par exemple, l'utilisation de `Globals` lors de la déclaration d'une variable au niveau de la classe peut échouer, car la classe `Globals` peut ne pas être initialisée avec des références à tous les éléments hôtes avant l'instanciation de l'objet déclaré.  
+ Code qui tente d’utiliser la `Globals` classe avant l’initialisation du document ou un complément VSTO peut lever une exception au moment de l’exécution. Par exemple, l'utilisation de `Globals` lors de la déclaration d'une variable au niveau de la classe peut échouer, car la classe `Globals` peut ne pas être initialisée avec des références à tous les éléments hôtes avant l'instanciation de l'objet déclaré.  
   
 > [!NOTE]  
 >  La classe `Globals` n'est jamais initialisée au moment du design, mais des instances de contrôle sont créées par le concepteur. Cela signifie que si vous créez un contrôle utilisateur qui utilise une propriété de la classe `Globals` depuis l'intérieur d'une classe de contrôle utilisateur, vous devez spécifier si la propriété doit retourner **null** avant d'essayer d'utiliser l'objet retourné.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Accéder au ruban au moment de l’exécution](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Accéder au ruban lors de l’exécution](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Accéder à une zone de formulaire lors de l’exécution](../vsto/accessing-a-form-region-at-run-time.md)   
- [Éléments hôtes et vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)   
+ [Éléments hôtes et la vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)   
  [Élément hôte de document](../vsto/document-host-item.md)   
  [Élément hôte de classeur](../vsto/workbook-host-item.md)   
  [Élément hôte de feuille de calcul](../vsto/worksheet-host-item.md)   

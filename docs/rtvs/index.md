@@ -10,13 +10,14 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 9e34fd9c343261626e8296488acf55214cf539ad
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 05ffd249be3d7734979f3a131a3a10423b76cb9d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35667013"
 ---
-# <a name="working-with-r-in-visual-studio"></a>Utilisation de R dans Visual Studio
+# <a name="work-with-r-in-visual-studio"></a>Utiliser R dans Visual Studio
 
 R est un langage très extensible et un environnement pour le calcul de statistiques et les graphiques. Il est distribué gratuitement sous la licence GNU GPL, bénéficie d’un large support de la Communauté et est connu pour sa capacité à générer des graphiques prêts pour la publication qui incluent des formules et des symboles mathématiques. Pour en savoir plus sur R, consultez [r-project.org](https://www.r-project.org/about.html) et [An Introduction to R](https://cran.r-project.org/doc/manuals/r-release/R-intro.html).
 
@@ -52,8 +53,8 @@ Voir aussi la [Foire aux questions](faq.md).
 
 ## <a name="send-us-your-feedback"></a>Envoyez-nous vos commentaires !
 
-1. **Problèmes Github** : la meilleure façon de contacter l’équipe RTVS est de [signaler un problème sur GitHub](https://github.com/Microsoft/RTVS/issues) ou d’utiliser le menu **R Tools > Commentaires**.
+1. **Problèmes GitHub** : la meilleure façon de contacter l’équipe RTVS est de [signaler un problème sur GitHub](https://github.com/Microsoft/RTVS/issues) ou d’utiliser le menu **R Tools** > **Commentaires**.
 
-1. **Envoyer un sourire / smiley mécontent** : le menu **R Tools > Commentaires** est un moyen rapide d’envoyer des commentaires et de joindre des fichiers journaux RTVS pour faciliter le diagnostic de votre problème. (Les journaux sont écrits dans `%temp%/RTVSlogs.zip` au cas où vous souhaitez les envoyer séparément.) La journalisation est désactivée si vous avez refusé la télémétrie de Visual Studio via la commande de menu **Aide > Commentaires > Paramètres** ou lors de l’installation.
+1. **Envoyer un sourire / smiley mécontent** : le menu **R Tools** >  **Commentaires** est un moyen rapide d’envoyer des commentaires et de joindre des fichiers journaux RTVS pour faciliter le diagnostic de votre problème. (Les journaux sont écrits dans *%temp%/RTVSlogs.zip* au cas où vous souhaitez les envoyer séparément.) La journalisation est désactivée si vous avez refusé la télémétrie de Visual Studio via la commande de menu **Aide** > **Commentaires** > **Paramètres** ou lors de l’installation.
 
 1. **E-mail** : vous pouvez envoyer des commentaires directement à l’équipe *rtvsuserfeedback (at) microsoft.com*.

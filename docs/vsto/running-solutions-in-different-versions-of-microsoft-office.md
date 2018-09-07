@@ -19,34 +19,34 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 153b8faa356ceed9eecc5c616c2330f980728e49
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ed8a9b7cc78b0605b7fcc3931a7ee8992360125b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693966"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670909"
 ---
 # <a name="run-solutions-in-different-versions-of-microsoft-office"></a>Exécuter des solutions dans différentes versions de Microsoft Office
     
 ## <a name="run-office-solutions-created-by-using-visual-studio-2010-and-above"></a>Exécuter des solutions Office créées à l’aide de Visual Studio 2010 et versions ultérieures  
   
-|Version d'Office ciblée par le modèle de projet|Cibler .NET Framework du projet<sup>1</sup>|Versions d'Office pouvant exécuter la solution|Runtime requis sur l'ordinateur de l'utilisateur final|  
+|Version d'Office ciblée par le modèle de projet|Cibler .NET Framework du projet<sup>1</sup>|Versions d'Office pouvant exécuter la solution|Runtime requis sur l’ordinateur de l’utilisateur final|  
 |--------------------------------------------------------|------------------------------------------------------|--------------------------------------------------|-------------------------------------------|  
 |Office 2016 et [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure|Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]<br /><br /> Microsoft Office system 2007<sup>2</sup>|Visual Studio 2010 Tools pour Office Runtime|  
 |[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure|Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]<br /><br /> Microsoft Office system 2007<sup>2</sup>|Visual Studio 2010 Tools pour Office Runtime|  
 |[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|.NET Framework 3.5|Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|Visual Studio 2010 Tools pour Office Runtime|  
 |Version 2007 de Microsoft Office System|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure<br /><br /> ou<br /><br /> .NET Framework 3.5|Office 2016<br /><br /> [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]<br /><br /> [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]<br /><br /> Version 2007 de Microsoft Office System|Visual Studio 2010 Tools pour Office Runtime|  
   
- 1. La version du .NET Framework ciblée par votre projet doit être installée sur les ordinateurs des utilisateurs finaux pour que votre solution puisse fonctionner. Par exemple, si votre projet cible le .NET Framework 3.5, ce dernier doit être installé sur les ordinateurs des utilisateurs finaux. Dans cet exemple, votre solution ne fonctionnera pas si seul le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] est installé sur les ordinateurs des utilisateurs finaux.  
+ 1. La version du .NET Framework que votre projet cible est requis sur les ordinateurs des utilisateurs finaux pour l’exécution de votre solution. Par exemple, si votre projet cible .NET Framework 3.5, .NET Framework 3.5 est requis sur les ordinateurs des utilisateurs finaux. Dans cet exemple, votre solution fonctionnera pas si seule la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] est installé sur les ordinateurs des utilisateurs finaux.  
   
  2. Dans ce scénario, la solution s'exécutera sans erreur dans la version 2007 de Microsoft Office System uniquement si elle n'utilise pas les nouvelles fonctionnalités d'[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].  
   
 ## <a name="run-office-solutions-created-by-using-versions-of-visual-studio-prior-to-visual-studio-2010"></a>Exécuter des solutions Office créées à l’aide de versions de Visual Studio antérieures à Visual Studio 2010  
- Les applications Microsoft Office peuvent exécuter des solutions créées à l'aide de versions de Visual Studio antérieures à Visual Studio 2010. Dans certains cas, ces solutions requièrent des versions différentes de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Des versions différentes de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] peuvent être installées côte à côte sur le même ordinateur.  
+ Les applications Microsoft Office peuvent exécuter des solutions créées à l'aide de versions de Visual Studio antérieures à Visual Studio 2010. Dans certains cas, ces solutions requièrent des versions différentes de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Différentes versions de la [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] peut être installé côte à côte sur le même ordinateur.  
   
- Le tableau suivant présente les versions de Microsoft Office peuvent exécuter des solutions créées à l’aide de versions antérieures de Visual Studio, ainsi que les versions de la [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] et le .NET Framework sont requises pour chaque solution.  
+ Le tableau suivant présente les versions de Microsoft Office peuvent exécuter des solutions créées à l’aide des versions précédentes de Visual Studio, ainsi que les versions de la [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] et le .NET Framework sont requises pour chaque solution.  
   
-|Édition de Visual Studio utilisée pour créer la solution|Version d'Office ciblée par le modèle de projet|Versions d'Office pouvant exécuter la solution|Runtime requis sur l'ordinateur de l'utilisateur final|Version du .NET Framework requise sur l'ordinateur de l'utilisateur final|  
+|Édition de Visual Studio utilisée pour créer la solution|Version d'Office ciblée par le modèle de projet|Versions d'Office pouvant exécuter la solution|Runtime requis sur l’ordinateur de l’utilisateur final|Version de .NET Framework requise sur l’ordinateur de l’utilisateur final|  
 |----------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------|-------------------------------------------|----------------------------------------------------------|  
 |Visual Studio 2008 Professional<br /><br /> ou<br /><br /> Visual Studio Team System 2008|Version 2007 de Microsoft Office System|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] et [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] <sup>1</sup><br /><br /> Version 2007 de Microsoft Office System|Visual Studio 2010 Tools pour Office Runtime<sup>1</sup><br /><br /> ou<br /><br /> Microsoft Visual Studio Tools pour Microsoft Office System (Runtime version 3.0)|.NET Framework 3.5|  
 |Une des éditions suivantes de Visual Studio 2005 avec VSTO 2005 SE<sup>2</sup> installé :<br /><br /> -Visual Studio 2005 Tools pour Office<br />-Visual Studio Team System 2005<br />-Visual Studio 2005 Professional|Version 2007 de Microsoft Office System|[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] et [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] (32 bits uniquement<sup>3</sup>)<br /><br /> Version 2007 de Microsoft Office System|Visual Studio 2005 Tools pour Office Second Edition Runtime|.NET Framework 2.0, .NET Framework 3.0 ou .NET Framework 3.5|  

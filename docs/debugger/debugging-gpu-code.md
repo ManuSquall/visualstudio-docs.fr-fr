@@ -1,5 +1,5 @@
 ---
-title: Débogage du Code GPU | Documents Microsoft
+title: Débogage du Code GPU | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e423a36fd9477c01354c23f31afd686d79a3ba4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0c0fdab78364eaf4c0f9fd86753b8ca1c4178415
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673197"
 ---
 # <a name="debugging-gpu-code"></a>Débogage du code GPU
 Vous pouvez déboguer du code C++ qui s'exécute sur l'unité de traitement graphique (GPU). La prise en charge du débogage GPU dans Visual Studio inclut la détection de concurrence, les processus de lancement et leur attachement, ainsi que l'intégration dans les fenêtres de débogage.  
@@ -33,12 +34,12 @@ Vous pouvez déboguer du code C++ qui s'exécute sur l'unité de traitement grap
 ## <a name="configuring-gpu-debugging"></a>Configuration du débogage GPU  
  Le débogueur ne peut pas s'arrêter sur le code UC et le code GPU dans la même exécution d'application. Par défaut, le débogueur s'arrête sur le code UC. Pour déboguer le code GPU, utilisez l'une de ces deux étapes :  
   
--   Dans le **Type de débogage** liste sur le **Standard** barre d’outils, choisissez **GPU uniquement**.  
+-   Dans le **Type déboguer** liste sur le **Standard** barre d’outils, choisissez **GPU uniquement**.  
   
--   Dans **l’Explorateur de solutions**, dans le menu contextuel du projet, choisissez **propriétés**. Dans le **Pages de propriétés** boîte de dialogue, sélectionnez **débogage**, puis sélectionnez **GPU uniquement** dans les **Type de débogueur** liste.  
+-   Dans **l’Explorateur de solutions**, dans le menu contextuel du projet, choisissez **propriétés**. Dans le **Pages de propriétés** boîte de dialogue, sélectionnez **débogage**, puis sélectionnez **GPU uniquement** dans le **Type de débogueur** liste.  
   
 ## <a name="launching-and-attaching-to-applications"></a>Lancement et attachement des applications  
- Vous pouvez utiliser les commandes de débogage Visual Studio pour démarrer et arrêter le débogage GPU. Pour plus d’informations, consultez [Naviguer dans le code avec le débogueur](../debugger/navigating-through-code-with-the-debugger.md). Vous pouvez également attacher le débogueur GPU à un processus en cours d'exécution, mais uniquement si ce processus exécute le code GPU. Pour plus d’informations, consultez [attacher au processus en cours](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+ Vous pouvez utiliser les commandes de débogage Visual Studio pour démarrer et arrêter le débogage GPU. Pour plus d’informations, consultez [Naviguer dans le code avec le débogueur](../debugger/navigating-through-code-with-the-debugger.md). Vous pouvez également attacher le débogueur GPU à un processus en cours d'exécution, mais uniquement si ce processus exécute le code GPU. Pour plus d’informations, consultez [attacher aux processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
 ## <a name="run-current-tile-to-cursor-and-run-to-cursor"></a>Exécuter le tile actuel au curseur et Exécuter jusqu'au curseur  
  Lorsque vous déboguez sur le GPU, vous disposez de deux options pour accéder à l'emplacement du curseur. Les commandes pour les deux options sont disponibles dans le menu contextuel de l'éditeur de code.  
@@ -56,17 +57,17 @@ Vous pouvez déboguer du code C++ qui s'exécute sur l'unité de traitement grap
   
 -   [Guide pratique pour utiliser la fenêtre Espion parallèle](../debugger/how-to-use-the-parallel-watch-window.md)  
   
--   [Déboguer les Threads et processus](../debugger/debug-threads-and-processes.md) (barre d’outils de l’emplacement de débogage)  
+-   [Déboguer les Threads et processus](../debugger/debug-threads-and-processes.md) (barre d’outils emplacement de débogage)  
   
 -   [Guide pratique pour utiliser la fenêtre Threads GPU](../debugger/how-to-use-the-gpu-threads-window.md)  
   
 ## <a name="data-synchronization-exceptions"></a>Exceptions de synchronisation de données  
- Le débogueur peut identifier plusieurs conditions de synchronisation de données pendant l'exécution. Lorsqu'une condition est détectée, le débogueur passe à l'état d'arrêt. Vous avez deux options :**arrêter** ou **continuer**. À l’aide de la **Exceptions** boîte de dialogue, vous pouvez configurer si le débogueur détecte ces conditions et également quelles conditions il s’arrêtera. Pour plus d’informations, consultez [la gestion des Exceptions avec le débogueur](../debugger/managing-exceptions-with-the-debugger.md). Vous pouvez également utiliser le **Options** boîte de dialogue pour spécifier que le débogueur doit ignorer les exceptions si les données sont écrites ne changent pas la valeur des données. Pour plus d’informations, consultez [général, débogage, boîte de dialogue Options](../debugger/general-debugging-options-dialog-box.md).  
+ Le débogueur peut identifier plusieurs conditions de synchronisation de données pendant l'exécution. Lorsqu'une condition est détectée, le débogueur passe à l'état d'arrêt. Vous avez deux options :**rompre** ou **continuer**. À l’aide de la **Exceptions** boîte de dialogue, vous pouvez configurer si le débogueur détecte ces conditions et également quelles conditions il s’arrêtera. Pour plus d’informations, consultez [la gestion des Exceptions avec le débogueur](../debugger/managing-exceptions-with-the-debugger.md). Vous pouvez également utiliser le **Options** boîte de dialogue pour spécifier que le débogueur doit ignorer les exceptions si les données sont écrites ne changent pas la valeur des données. Pour plus d’informations, consultez [général, débogage, boîte de dialogue Options](../debugger/general-debugging-options-dialog-box.md).  
   
 ## <a name="troubleshooting"></a>Résolution des problèmes  
   
 ### <a name="specifying-an-accelerator"></a>Spécification d'un accélérateur  
- Points d’arrêt dans le code GPU sont uniquement atteints si le code s’exécute sur le [accelerator::direct3d_ref](/cpp/parallel/amp/reference/accelerator-class.md#accelerator__direct3d_ref_Data_Member) accélérateur (REF). Si vous ne spécifiez pas un accélérateur dans votre code, l’accélérateur REF est automatiquement sélectionné comme le **Type d’accélérateur de débogage** dans les propriétés du projet. Si votre code sélectionne explicitement un accélérateur, l'accélérateur REF ne sera pas utilisé pendant le débogage et les points d'arrêt ne seront pas atteints tant que votre matériel GPU disposera de la prise en charge du débogage. Vous pouvez y remédier dans la rédaction du code afin qu'il utilise l'accélérateur REF pendant le débogage. Pour plus d’informations, consultez Propriétés du projet et [à l’aide des objets accelerator et accelerator_view](/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects) et [paramètres de projet pour une Configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+ Points d’arrêt dans le code GPU sont uniquement atteints si le code s’exécute sur le [accelerator::direct3d_ref](/cpp/parallel/amp/reference/accelerator-class#direct3d_ref) accélérateur (REF). Si vous ne spécifiez pas un accélérateur dans votre code, l’accélérateur REF est automatiquement sélectionné comme le **Type d’accélérateur de débogage** dans les propriétés du projet. Si votre code sélectionne explicitement un accélérateur, l'accélérateur REF ne sera pas utilisé pendant le débogage et les points d'arrêt ne seront pas atteints tant que votre matériel GPU disposera de la prise en charge du débogage. Vous pouvez y remédier dans la rédaction du code afin qu'il utilise l'accélérateur REF pendant le débogage. Pour plus d’informations, consultez Propriétés du projet et [à l’aide des objets accelerator et accelerator_view](/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects) et [paramètres de projet pour une Configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
 ### <a name="conditional-breakpoints"></a>Points d'arrêt conditionnels  
  Les points d'arrêt conditionnels dans le code GPU sont pris en charge, mais chaque expression ne peut pas être évaluée sur le périphérique. Lorsqu'une expression ne peut pas être évaluée sur le périphérique, elle est évaluée dans le débogueur. Le débogueur risque de s'exécuter plus lentement que le périphérique.  
@@ -78,7 +79,7 @@ Vous pouvez déboguer du code C++ qui s'exécute sur l'unité de traitement grap
  Cette erreur se produit si vous effectuez un débogage sur un ordinateur distant. Le débogueur ne peut pas déterminer avant l'exécution si les pilotes sont installés sur l'ordinateur distant. Les pilotes sont disponibles auprès du fabricant de la carte graphique.  
   
 ### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>Erreur : la fonctionnalité TDR (Timeout Detection and Recovery) doit être désactivée sur le site distant.  
- Les calculs C++ AMP peuvent dépasser l'intervalle de temps par défaut qui est défini par le processus Windows TDR. Lorsque cela se produit, le calcul est annulé et les données sont perdues. Pour plus d’informations, consultez [TDR de gestion en C++ AMP](http://go.microsoft.com/fwlink/p/?LinkId=249154).  
+ Les calculs C++ AMP peuvent dépasser l'intervalle de temps par défaut qui est défini par le processus Windows TDR. Lorsque cela se produit, le calcul est annulé et les données sont perdues. Pour plus d’informations, consultez [gestion des TDR en C++ AMP](http://go.microsoft.com/fwlink/p/?LinkId=249154).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédure pas à pas : Débogage d’une Application C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)   

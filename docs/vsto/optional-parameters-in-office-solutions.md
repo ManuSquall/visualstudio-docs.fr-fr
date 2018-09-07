@@ -1,5 +1,5 @@
 ---
-title: Paramètres optionnels dans les Solutions Office | Documents Microsoft
+title: Paramètres optionnels dans les solutions Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,22 +21,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b03f6112ebf44a89da3b4d5cbf6f7ff23f54b9c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a086fc37be7d9cd8ba4d4f51c1012b6ad0ba7046
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571982"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670800"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Paramètres optionnels dans les solutions Office
-  De nombreuses méthodes des modèles objet fournis dans les applications Microsoft Office acceptent les paramètres optionnels. Si vous utilisez Visual Basic pour développer une solution Office dans Visual Studio, vous n'avez pas besoin de passer de valeur pour les paramètres optionnels, car les valeurs par défaut sont automatiquement utilisées pour les paramètres manquants. Dans la plupart des cas, vous pouvez également omettre les paramètres optionnels dans les projets Visual c#. Toutefois, vous ne pouvez pas omettre **ref** les paramètres de la `ThisDocument` classe dans les projets Word au niveau du document.  
+  De nombreuses méthodes des modèles objet fournis dans les applications Microsoft Office acceptent les paramètres optionnels. Si vous utilisez Visual Basic pour développer une solution Office dans Visual Studio, vous n'avez pas besoin de passer de valeur pour les paramètres optionnels, car les valeurs par défaut sont automatiquement utilisées pour les paramètres manquants. Dans la plupart des cas, vous pouvez également omettre les paramètres optionnels dans les projets Visual c#. Toutefois, vous ne pouvez pas omettre facultatif **ref** paramètres de la `ThisDocument` classe dans les projets au niveau du document Word.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Pour plus d’informations sur l’utilisation des paramètres optionnels dans les projets Visual c# et Visual Basic, consultez [arguments nommés et optionnels &#40;C&#35; guide de programmation&#41; ](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments) et [ &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters).  
+ Pour plus d’informations sur l’utilisation des paramètres optionnels dans les projets Visual c# et Visual Basic, consultez [arguments nommés et facultatifs &#40;C&#35; guide de programmation&#41; ](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments) et [ &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters).  
   
 > [!NOTE]  
->  Dans les versions antérieures de Visual Studio, vous devez passer une valeur pour chaque paramètre optionnel défini dans les projets Visual C#. Pour des raisons pratiques, ces projets incluent une variable globale nommée `missing` que vous pouvez passer à un paramètre optionnel quand vous voulez utiliser la valeur par défaut du paramètre. Projets Visual c# pour Office dans Visual Studio incluent toujours le `missing` variable, mais vous n’est généralement pas nécessaire pour l’utiliser lorsque vous développez des solutions Office dans [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], sauf lorsque vous appelez des méthodes avec **ref** paramètres de la `ThisDocument` classe dans les projets au niveau du document pour Word.  
+>  Dans les versions antérieures de Visual Studio, vous devez passer une valeur pour chaque paramètre optionnel défini dans les projets Visual C#. Pour des raisons pratiques, ces projets incluent une variable globale nommée `missing` que vous pouvez passer à un paramètre optionnel quand vous voulez utiliser la valeur par défaut du paramètre. Projets Visual c# pour Office dans Visual Studio incluent toujours le `missing` variable, mais vous généralement pas doivent-ils utiliser lorsque vous développez des solutions Office dans [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], sauf lorsque vous appelez des méthodes avec **ref** paramètres dans le `ThisDocument` classe dans les projets au niveau du document pour Word.  
   
 ## <a name="example-in-excel"></a>Exemple dans Excel  
  La méthode <xref:Microsoft.Office.Tools.Excel.Worksheet.CheckSpelling%2A> possède de nombreux paramètres optionnels. Vous pouvez spécifier des valeurs pour certains paramètres et accepter la valeur par défaut pour d'autres, comme indiqué dans l'exemple de code suivant. Cet exemple utilise un projet de niveau document avec une classe de feuille de calcul nommée `Sheet1`.  
@@ -50,16 +50,16 @@ ms.locfileid: "34571982"
  [!code-vb[Trin_VstrefGeneralWord#1](../vsto/codesnippet/VisualBasic/worddocument1/ThisDocument.vb#1)]
  [!code-csharp[Trin_VstrefGeneralWord#1](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#1)]  
   
-## <a name="use-optional-parameters-of-methods-in-the-thisdocument-class-in-visual-c-document-level-projects-for-word"></a>Utiliser des paramètres optionnels des méthodes de la classe ThisDocument dans les projets au niveau du document Visual c# pour Word  
- Le modèle objet Word contient de nombreuses méthodes comportant **ref** paramètres qui acceptent les <xref:System.Object> valeurs. Toutefois, vous ne pouvez pas omettre **ref** les paramètres des méthodes généré `ThisDocument` classe dans les projets au niveau du document Visual c# pour Word. Visual c# vous permet d’omettre **ref** paramètres uniquement pour les méthodes des interfaces, ne classes pas. Par exemple, l’exemple de code suivant ne se compile pas, car vous ne pouvez pas omettre **ref** les paramètres de la <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> méthode de la `ThisDocument` classe.  
+## <a name="use-optional-parameters-of-methods-in-the-thisdocument-class-in-visual-c-document-level-projects-for-word"></a>Utiliser des paramètres optionnels des méthodes dans la classe ThisDocument dans les projets au niveau du document Visual c# pour Word  
+ Le modèle objet Word contient de nombreuses méthodes comportant des **ref** paramètres qui acceptent <xref:System.Object> valeurs. Toutefois, vous ne pouvez pas omettre facultatif **ref** optionnels des méthodes de généré `ThisDocument` classe dans les projets au niveau du document Visual c# pour Word. Visual c# vous permet d’omettre facultatif **ref** paramètres uniquement pour les méthodes des interfaces, ne classes pas. Par exemple, l’exemple de code suivant ne compile pas, car vous ne pouvez pas omettre facultatif **ref** paramètres de le <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> méthode de la `ThisDocument` classe.  
   
  [!code-csharp[Trin_VstrefGeneralWord#3](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#3)]  
   
  Quand vous appelez des méthodes de la classe `ThisDocument`, suivez ces consignes :  
   
--   Pour accepter la valeur par défaut facultative **ref** , passez le `missing` variable au paramètre. La variable `missing` est automatiquement définie dans les projets Office Visual C# et est assignée à la valeur <xref:System.Type.Missing> dans le code de projet généré.  
+-   Pour accepter la valeur par défaut facultative **ref** paramètre, passez le `missing` variable au paramètre. La variable `missing` est automatiquement définie dans les projets Office Visual C# et est assignée à la valeur <xref:System.Type.Missing> dans le code de projet généré.  
   
--   Pour spécifier votre propre valeur pour une option **ref** , déclarez un objet qui est assigné à la valeur que vous souhaitez spécifier et puis passer l’objet au paramètre.  
+-   Pour spécifier votre propre valeur pour un élément facultatif **ref** paramètre, déclarer un objet qui est affecté à la valeur que vous souhaitez spécifier, puis passez l’objet au paramètre.  
   
  L’exemple de code suivant montre comment appeler le <xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A> méthode en spécifiant une valeur pour le *ignoreUppercase* paramètre et en acceptant la valeur par défaut pour les autres paramètres.  
   

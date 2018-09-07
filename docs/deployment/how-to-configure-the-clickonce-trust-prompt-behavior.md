@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: badee4bfb98ef34f8d730f35d29f456d783d7d43
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 103fcd8b47e423aaa8d66c3df96afe3598818de2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155095"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774805"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Comment : configurer le comportement invite d’approbation ClickOnce
 Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si les utilisateurs finaux reçoivent l’option d’installation d’applications ClickOnce, telles que les applications Windows Forms, les applications Windows Presentation Foundation, les applications console, de navigateur WPF les applications et les solutions Office. Vous configurez l’invite d’approbation en définissant des clés de Registre sur l’ordinateur de chaque utilisateur final.  
@@ -59,11 +59,11 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
   
     1.  Cliquez sur **Démarrer**, puis cliquez sur **exécuter**.  
   
-    2.  Dans le **Open** , tapez `regedit32`, puis cliquez sur **OK**.  
+    2.  Dans le **Open** , tapez `regedit`, puis cliquez sur **OK**.  
   
 2.  Recherchez la clé de Registre suivante :  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\.NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**  
   
      Si la clé n’existe pas, créez-le.  
   
@@ -122,7 +122,7 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
   
 2.  Recherchez la clé de Registre suivante :  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\.NETFramework\Security\TrustManager\PromptingLevel** 
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel** 
   
      Si la clé n’existe pas, créez-le.  
   

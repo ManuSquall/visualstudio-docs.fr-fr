@@ -9,27 +9,28 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ccb64fba6a646de0974c9de6e35beb98738b7300
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 432246ed1cbb11589e9a42a5fce90cd2e7239223
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671069"
 ---
-# <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Utiliser des ensembles de règles pour spécifier les règles C++ à exécuter
+# <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Utilisez des ensembles de règles pour spécifier les règles C++ à exécuter
 
-Dans Visual Studio, vous pouvez créer et modifier une personnalisée *ensemble de règles* pour répondre aux besoins de projet spécifique associés à l’analyse du code. Les ensembles de règles par défaut sont stockés dans `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
+Dans Visual Studio, vous pouvez créer et modifier un personnalisé *ensemble de règles* pour répondre aux besoins spécifiques de projet associés à l’analyse du code. Les ensembles de règles par défaut sont stockés dans `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
 
-**Visual Studio 2017 version 15.7** vous pouvez créer des ensembles de règles personnalisés à l’aide de n’importe quel texte de l’éditeur et les appliquer dans les versions de ligne de commande, quel que soit ce que vous utilisez de système de génération. Pour plus d’informations, consultez [/ analyze : ruleset](/cpp/build/reference/analyze-code-quality).
+**Visual Studio 2017 version 15.7** vous pouvez créer des ensembles de règles personnalisés à l’aide de n’importe quel texte éditeur et appliquez-les dans les versions de ligne de commande, quel que soit ce que vous utilisez de système de génération. Pour plus d’informations, consultez [/ analyze : ruleset](/cpp/build/reference/analyze-code-analysis).
 
-Pour créer une règle C++ personnalisée définie dans Visual Studio, un projet C/C++ doit être ouvert dans l’IDE de Visual Studio. Vous puis ouvrez un ensemble de règles standard dans l’éditeur d’ensemble de règles et puis ajoutez ou supprimez des règles spécifiques et éventuellement modifiez l’action qui se produit lorsque l’analyse du code détermine qu’une règle a été violée.
+Pour créer une règle de C++ personnalisée définie dans Visual Studio, un projet C/C++ doit être ouvert dans l’IDE Visual Studio. Vous puis ouvrez un ensemble de règles standard dans l’éditeur d’ensemble de règles et puis ajoutez ou supprimez des règles spécifiques et éventuellement modifiez l’action qui se produit lorsque l’analyse du code détermine qu’une règle a été violée.
 
-Pour créer une nouvelle règle personnalisée définie, vous l’enregistrez à l’aide d’un nouveau nom de fichier. L’ensemble de règles personnalisé est automatiquement attribué au projet.
+Pour créer une nouvelle règle personnalisée définie, vous l’enregistrez à l’aide d’un nouveau nom de fichier. L’ensemble de règles personnalisé est automatiquement affecté au projet.
 
 ## <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Pour créer une règle personnalisée à partir d’un seul ensemble de règles existant
 
 1. Dans l’Explorateur de solutions, ouvrez le menu contextuel du projet, puis choisissez **propriétés**.
 
-2. Sur le **propriétés** , onglet choisir **l’analyse du Code**.
+2. Sur le **propriétés** , choisir **analyse du Code**.
 
 3. Dans le **l’ensemble de règles** liste déroulante, effectuez l’une des opérations suivantes :
 
@@ -37,19 +38,19 @@ Pour créer une nouvelle règle personnalisée définie, vous l’enregistrez à
 
      \- ou -
 
-    - Choisissez  **\<Parcourir... >** pour spécifier une règle existante du jeu qui n’est pas dans la liste.
+    - Choisissez  **\<Parcourir... >** pour spécifier une règle existante définie qui n’est pas dans la liste.
 
-4. Choisissez **ouvrir** pour afficher les règles dans l’éditeur d’ensemble de règles.
+4. Choisissez **Open** pour afficher les règles dans l’éditeur d’ensemble de règles.
 
 ## <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Pour modifier une règle définie dans l’éditeur d’ensemble de règles
 
-- Pour modifier le nom complet de l’ensemble de règles, dans le **vue** menu, choisissez **fenêtre Propriétés**. Entrez le nom d’affichage dans le **nom** boîte. Notez que le nom complet peut différer du nom de fichier.
+- Pour modifier le nom complet de l’ensemble de règles, dans le **vue** menu, choisissez **fenêtre Propriétés**. Entrez le nom d’affichage dans le **nom** boîte. Notez que le nom de l’affichage peut différer du nom du fichier.
 
 - Pour ajouter toutes les règles du groupe à un ensemble de règles personnalisé, sélectionnez la case à cocher du groupe. Pour supprimer toutes les règles du groupe, désactivez la case à cocher.
 
-- Pour ajouter une règle spécifique à l’ensemble de règles personnalisé, sélectionnez la case à cocher de la règle. Pour supprimer la règle de l’ensemble de règles, désactivez la case à cocher.
+- Pour ajouter une règle spécifique à l’ensemble de règles personnalisé, sélectionnez la case à cocher de la règle. Pour supprimer la règle à partir de l’ensemble de règles, désactivez la case à cocher.
 
-- Pour modifier l’action effectuée lorsqu’une règle est violée dans une analyse du code, choisissez la **Action** champ pour la règle, puis choisissez une des valeurs suivantes :
+- Pour modifier l’action effectuée lorsqu’une règle est violée dans une analyse du code, choisissez la **Action** champ pour la règle et choisissez l’une des valeurs suivantes :
 
      **Avertir** -génère un avertissement.
 
@@ -63,7 +64,7 @@ Pour créer une nouvelle règle personnalisée définie, vous l’enregistrez à
 
 - Pour réduire les règles dans tous les groupes, choisissez **réduire tout**.
 
-- Pour modifier le champ règles sont regroupées, choisissez le champ à partir de la **Group By** liste. Pour afficher les règles non groupés, choisissez  **\<aucun >**.
+- Pour modifier le champ dont les règles sont regroupés, choisissez le champ à partir de la **Group By** liste. Pour afficher les règles non groupées, choisissez  **\<None >**.
 
 - Pour ajouter ou supprimer des champs dans les colonnes de la règle, choisissez **Options de colonne**.
 
@@ -73,13 +74,13 @@ Pour créer une nouvelle règle personnalisée définie, vous l’enregistrez à
 
 - Pour basculer entre l’affichage et masquage des règles qui sont affectés à l’action de l’avertissement, choisissez **afficher les règles qui peuvent générer des avertissements d’analyse du Code**.
 
-- Pour basculer entre l’affichage et masquage des règles qui sont affectés les **aucun** action, choisissez **afficher les règles qui ne sont pas activées**.
+- Pour basculer entre l’affichage et masquage des règles qui sont affectées la **aucun** action, choisissez **afficher les règles qui ne sont pas activés**.
 
-- Pour ajouter ou supprimer des ensembles de règle par défaut pour l’ensemble de règles actuel Microsoft, choisissez **des ensembles de règles enfants Add ou remove**.
+- Pour ajouter ou supprimer des ensembles de règles de valeur par défaut à l’ensemble de règles actuel de Microsoft, choisissez **ajouter ou supprimer des ensembles de règles enfants**.
 
 ## <a name="to-create-a-rule-set-in-a-text-editor"></a>Pour créer un ensemble de règles dans un éditeur de texte
 
-Vous pouvez créer un ensemble de règles personnalisé dans un texte de l’éditeur, stockez-le dans n’importe quel emplacement avec un `.ruleset` extension et s’appliquent à l’aide du [/ analyze : ruleset](/cpp/build/reference/analyze-code-quality) option du compilateur.
+Vous pouvez créer un ensemble de règles personnalisé dans un texte de l’éditeur, stockez-le dans n’importe quel emplacement avec un `.ruleset` extension et s’appliquent à l’aide du [/ analyze : ruleset](/cpp/build/reference/analyze-code-analysis) option du compilateur.
 
 L’exemple suivant montre qu'une règle de base défini le fichier que vous pouvez utiliser comme point de départ :
 

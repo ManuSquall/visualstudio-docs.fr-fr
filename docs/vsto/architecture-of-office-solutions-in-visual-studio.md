@@ -17,17 +17,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b77990219d6b31d86a919ca1a33ab415a6a9ed86
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 86426e9741e38fb2cbd782659878562e395a2cf1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673772"
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Architecture des solutions Office dans Visual Studio
   Les rubriques de cette section fournissent des informations sur le fonctionnement des solutions créées à l'aide des outils de développement Office dans Visual Studio.  
   
 > [!NOTE]  
->  Vous souhaitez développer des solutions qui étendent l’expérience Office sur [plusieurs plateformes](https://dev.office.com/add-in-availability)? Découvrez le nouvel [modèle des compléments Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Compléments Office ont un faible encombrement mémoire par rapport aux compléments VSTO et les solutions, et vous pouvez les créer à l’aide de presque n’importe quel web technologies, telles que HTML5, JavaScript, CSS3 et XML de programmation.  
+>  Vous souhaitez développer des solutions qui étendent l’expérience Office sur [plusieurs plateformes](https://dev.office.com/add-in-availability)? Découvrez le nouvel [modèle de compléments Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Compléments Office peu encombrantes par rapport aux compléments VSTO et de solutions, et vous pouvez les créer à l’aide de presque toutes les technologies, telles que HTML5, JavaScript, CSS3 et XML de programmation web.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Architecture des personnalisations au niveau du document](../vsto/architecture-of-document-level-customizations.md)  
@@ -40,13 +41,13 @@ ms.lasthandoff: 05/17/2018
  Décrit les différentes versions du runtime utilisé pour les solutions Office.  
   
  [Entrées de Registre pour les Compléments VSTO](../vsto/registry-entries-for-vsto-add-ins.md)  
- Décrit les clés de Registre nécessaires sur les ordinateurs des utilisateurs finals pour détecter et charger les compléments VSTO.  
+ Décrit les clés de Registre requis sur les ordinateurs des utilisateurs finaux pour détecter et charger des Compléments VSTO.  
   
  [Vue d’ensemble des propriétés de document personnalisées](../vsto/custom-document-properties-overview.md)  
  Explique comment les propriétés de document personnalisées fonctionnent dans les personnalisations au niveau du document.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
- [Présentation du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
+ [Vue d’ensemble du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
  Fournit une introduction à l'utilisation de Microsoft Office comme plateforme pour le développement de solutions d'entreprise.  
   
  [Prise en main &#40;développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  

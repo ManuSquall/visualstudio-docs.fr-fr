@@ -1,5 +1,5 @@
 ---
-title: 'Comment : créer des tableaux Word par programmation | Documents Microsoft'
+title: 'Comment : créer des tableaux Word par programmation'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,20 +16,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f77b6ee70d56c12b6c1a6b9c88de36a9adb7d92e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d545b82c913573a5fbfb8d9397efa9ca672e1896
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673700"
 ---
 # <a name="how-to-programmatically-create-word-tables"></a>Comment : créer des tableaux Word par programmation
   La collection <xref:Microsoft.Office.Interop.Word.Tables> est membre des classes <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Tools.Word.Document><xref:Microsoft.Office.Interop.Word.Selection> et <xref:Microsoft.Office.Interop.Word.Range>, ce qui signifie que vous pouvez créer un tableau dans l'un de ces contextes. La méthode <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> de la collection <xref:Microsoft.Office.Interop.Word.Tables> permet d'ajouter un tableau au niveau de la plage spécifiée.  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## <a name="creating-tables-in-document-level-customizations"></a>Création de tableaux dans des personnalisations au niveau du document  
+## <a name="create-tables-in-document-level-customizations"></a>Créer des tables dans des personnalisations au niveau du document  
   
-#### <a name="to-add-a-simple-table-to-a-document"></a>Pour ajouter un tableau simple à un document  
+### <a name="to-add-a-table-to-a-document"></a>Pour ajouter une table à un document  
   
 -   Utilisez la méthode <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> pour ajouter un tableau comprenant trois lignes et quatre colonnes au début du document.  
   
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/16/2018
   
  Lorsque vous créez un tableau, il est automatiquement ajouté à la collection <xref:Microsoft.Office.Interop.Word.Tables> de l'élément hôte <xref:Microsoft.Office.Tools.Word.Document>. Vous pouvez alors faire référence au tableau par son numéro d'élément à l'aide de la propriété <xref:Microsoft.Office.Interop.Word.Tables.Item%2A>, comme illustré dans le code suivant.  
   
-#### <a name="to-refer-to-a-table-by-item-number"></a>Pour faire référence à un tableau à l'aide de son numéro d'élément  
+### <a name="to-refer-to-a-table-by-item-number"></a>Pour faire référence à un tableau à l'aide de son numéro d'élément  
   
 1.  Utilisez la propriété <xref:Microsoft.Office.Interop.Word.Tables.Item%2A> et fournissez le numéro d'élément du tableau auquel vous souhaitez faire référence.  
   
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/16/2018
   
  Chaque objet <xref:Microsoft.Office.Interop.Word.Table> possède également une propriété <xref:Microsoft.Office.Interop.Word.Table.Range%2A> qui vous permet de définir des attributs de mise en forme.  
   
-#### <a name="to-apply-a-style-to-a-table"></a>Pour appliquer un style à un tableau  
+### <a name="to-apply-a-style-to-a-table"></a>Pour appliquer un style à un tableau  
   
 1.  Utilisez la propriété <xref:Microsoft.Office.Interop.Word.Table.Style%2A> pour appliquer au tableau l'un des styles intégrés de Word.  
   
@@ -60,9 +61,9 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#88](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#88)]
      [!code-csharp[Trin_VstcoreWordAutomation#88](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#88)]  
   
-## <a name="creating-tables-in-vsto-add-ins"></a>Création de tableaux dans des compléments VSTO  
+## <a name="create-tables-in-vsto-add-ins"></a>Créer des tables dans des Compléments VSTO  
   
-#### <a name="to-add-a-simple-table-to-a-document"></a>Pour ajouter un tableau simple à un document  
+### <a name="to-add-a-table-to-a-document"></a>Pour ajouter une table à un document  
   
 -   Utilisez la méthode <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> pour ajouter un tableau comprenant trois lignes et quatre colonnes au début du document.  
   
@@ -73,7 +74,7 @@ ms.lasthandoff: 04/16/2018
   
  Lorsque vous créez un tableau, il est automatiquement ajouté à la collection <xref:Microsoft.Office.Interop.Word.Tables> de l'élément <xref:Microsoft.Office.Interop.Word.Document>. Vous pouvez alors faire référence au tableau par son numéro d'élément à l'aide de la propriété <xref:Microsoft.Office.Interop.Word.Tables.Item%2A>, comme illustré dans le code suivant.  
   
-#### <a name="to-refer-to-a-table-by-item-number"></a>Pour faire référence à un tableau à l'aide de son numéro d'élément  
+### <a name="to-refer-to-a-table-by-item-number"></a>Pour faire référence à un tableau à l'aide de son numéro d'élément  
   
 1.  Utilisez la propriété <xref:Microsoft.Office.Interop.Word.Tables.Item%2A> et fournissez le numéro d'élément du tableau auquel vous souhaitez faire référence.  
   
@@ -84,7 +85,7 @@ ms.lasthandoff: 04/16/2018
   
  Chaque objet <xref:Microsoft.Office.Interop.Word.Table> possède également une propriété <xref:Microsoft.Office.Interop.Word.Table.Range%2A> qui vous permet de définir des attributs de mise en forme.  
   
-#### <a name="to-apply-a-style-to-a-table"></a>Pour appliquer un style à un tableau  
+### <a name="to-apply-a-style-to-a-table"></a>Pour appliquer un style à un tableau  
   
 1.  Utilisez la propriété <xref:Microsoft.Office.Interop.Word.Table.Style%2A> pour appliquer au tableau l'un des styles intégrés de Word.  
   
@@ -95,8 +96,8 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Voir aussi  
  [Comment : ajouter texte et mise en forme aux cellules des tableaux Word par programmation](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
- [Comment : ajouter par programmation des lignes et des colonnes à des tableaux Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
- [Comment : remplir par programme des tableaux Word avec des propriétés de Document](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)   
+ [Comment : ajouter par programmation des lignes et colonnes à des tableaux Word](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
+ [Comment : remplir par programmation des tableaux Word avec des propriétés de document](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)   
  [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

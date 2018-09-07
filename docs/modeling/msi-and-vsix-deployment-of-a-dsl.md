@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f25a5e18e78025811e26210de53413b668385539
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 5c8d06e7e06b66f119ad792d3c4fa970645aa886
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566536"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774776"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Déploiement MSI et VSIX d'un langage spécifique à un domaine
 Vous pouvez installer une langue spécifique à un domaine sur votre ordinateur ou sur d’autres ordinateurs. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] doit déjà être installé sur l’ordinateur cible.
@@ -36,7 +36,7 @@ Vous pouvez installer une langue spécifique à un domaine sur votre ordinateur 
 
     1.  Dans **l’Explorateur de solutions**, avec le bouton droit le **DslPackage** de projet, puis cliquez sur **ouvrir le dossier dans l’Explorateur Windows**.
 
-    2.  Recherchez le fichier **bin\\\*\\***VotreProjet***. DslPackage.vsix**
+    2.  Recherchez le fichier **bin\\\*\\**_VotreProjet_**. DslPackage.vsix**
 
 2.  Copie le **.vsix** fichier sur l’ordinateur cible sur lequel vous souhaitez installer la solution DSL. Il peut s’agir de votre propre ordinateur ou d’un autre.
 
