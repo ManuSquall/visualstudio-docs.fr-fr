@@ -1,5 +1,5 @@
 ---
-title: Déboguer du code JavaScript à l’aide de la console | Documents Microsoft
+title: Déboguer du code JavaScript à l’aide de la console | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -17,16 +17,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b21cd5a4c0e6852553c2ca601d22eb9f45bb48d7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 06d1c518b55c6f6df6a579fe1603c556201e7a18
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478302"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280829"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Déboguer du code JavaScript à l’aide de la console dans Visual Studio
   
- Vous pouvez utiliser la fenêtre de JavaScript Console pour interagir avec les applications UWP générées à l’aide de JavaScript. Ces fonctionnalités sont prises en charge pour les applications UWP et les applications créées à l’aide de Visual Studio Tools pour Apache Cordova. Pour obtenir la référence des commandes de la console, voir [JavaScript Console commands](../debugger/javascript-console-commands.md).  
+ Vous pouvez utiliser la fenêtre de JavaScript Console pour interagir avec et déboguer des applications UWP générées à l’aide de JavaScript. Ces fonctionnalités sont prises en charge pour les applications UWP et les applications créées à l’aide de Visual Studio Tools pour Apache Cordova. Pour obtenir la référence des commandes de la console, voir [JavaScript Console commands](../debugger/javascript-console-commands.md).  
   
  La fenêtre de la console JavaScript permet les actions suivantes :  
   
@@ -45,7 +45,7 @@ ms.locfileid: "31478302"
 > [!TIP]
 >  Si la fenêtre de JavaScript Console est fermée, sélectionnez **déboguer**> **Windows** > **JavaScript Console** ouvrir à nouveau. La fenêtre s’ouvre uniquement pendant une session de débogage de script.  
   
- À l’aide de la fenêtre de la console JavaScript, vous pouvez interagir avec votre application sans interrompre et redémarrer le débogueur. Pour plus d’informations, consultez [actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md). Pour plus d’informations sur les fonctionnalités, telles qu’à l’aide de l’Explorateur DOM et la définition de points d’arrêt, le débogage de JavaScript, consultez [démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md) et [déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+ À l’aide de la fenêtre de la console JavaScript, vous pouvez interagir avec votre application sans interrompre et redémarrer le débogueur. Pour plus d’informations, consultez [actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md). Pour plus d’informations sur les fonctionnalités, comme à l’aide de l’Explorateur DOM et la définition des points d’arrêt, de débogage de JavaScript, consultez [Guide de démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md) et [déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
 ##  <a name="InteractiveConsole"></a> Débogage à l’aide de la fenêtre de la console JavaScript  
  La procédure suivante crée une application `FlipView` et montre comment déboguer interactivement une erreur de codage JavaScript.  
@@ -61,7 +61,7 @@ ms.locfileid: "31478302"
   
 3.  Attribuez un nom au projet, tel que `FlipViewApp`, puis choisissez **OK** pour créer l’application.  
   
-4.  Dans l’élément BODY de index.html, remplacez le code HTML existant par le code :  
+4.  Dans l’élément BODY de index.html, remplacez le code HTML existant par ce code :  
   
     ```html  
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -137,7 +137,7 @@ ms.locfileid: "31478302"
     })();  
     ```  
   
-7.  Si une cible de débogage n’est pas déjà sélectionnée, choisissez **ordinateur Local** liste à côté de la liste déroulante le **périphérique** bouton sur le **déboguer** barre d’outils :  
+7.  Si une cible de débogage n’est pas déjà sélectionnée, choisissez **ordinateur Local** à partir de la liste déroulante liste en regard du **appareil** bouton sur le **déboguer** barre d’outils :  
   
      ![Liste cible de débogage sélectionnez](../debugger/media/js_select_target.png "JS_Select_Target")  
   
@@ -145,7 +145,7 @@ ms.locfileid: "31478302"
   
      L’application fonctionne mais les images sont absentes. Les erreurs APPHOST dans la fenêtre de console JavaScript indiquent que les images sont absentes.  
   
-9. Avec la `FlipView` application en cours d’exécution, le type `Data.items` dans l’invite d’entrée de la fenêtre de console (à côté du « >> » symbole) et appuyez sur ENTRÉE.  
+9. Avec le `FlipView` application en cours d’exécution, le type `Data.items` dans l’invite d’entrée de la fenêtre de console (à côté du « >> » symbole) et appuyez sur ENTRÉE.  
   
      Un visualiseur pour l’objet `items` apparaît dans la fenêtre de la console. Cela indique que l’objet `items` a été instancié et qu’il est disponible dans le contexte de script actif. Dans la fenêtre de la console, cliquez sur les nœuds d’un objet pour afficher les valeurs des propriétés (ou utilisez les touches de direction). Si vous cliquez sur l’objet `items._data` , comme le montre l’illustration suivante, vous pouvez noter que les références à la source de l’image sont incorrectes, comme prévu. Les images par défaut (logo.png) sont encore présentes dans l’objet, et des images manquantes sont intercalées avec des images attendues.  
   
@@ -181,7 +181,7 @@ ms.locfileid: "31478302"
   
 13. Pour exécuter le script, sélectionnez la flèche verte.  
   
-14. Appuyez sur Ctrl + Alt + M pour passer l’invite d’entrée de la console pour le mode à ligne simple, puis choisissez **effacer l’entrée** (le « X » rouge) pour supprimer le code à partir de l’invite d’entrée.  
+14. Appuyez sur Ctrl + Alt + M pour passer l’invite d’entrée de la console au mode à ligne simple, puis sélectionnez **effacer l’entrée** (le « X » rouge) pour supprimer le code à partir de l’invite d’entrée.  
   
 15. Tapez `Data.items.length = 3` à l’invite et appuyez sur Entrée. Cela supprime les éléments étrangers des données.  
   
@@ -191,7 +191,7 @@ ms.locfileid: "31478302"
   
 18. Arrêtez le débogage en sélectionnant **Déboguer** > **Arrêter le débogage** ou en appuyant sur Maj+F5, puis corrigez le code source.  
   
-     Pour la page default.html complète contenant des exemples de code corrigé, consultez [exemple de code déboguer du code HTML, CSS et JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md).  
+     Pour la page default.html complète contenant, exemple de code corrigé, consultez [déboguer du code HTML, CSS et JavaScript exemple de code](../debugger/debug-html-css-and-javascript-sample-code.md).  
   
 ##  <a name="InteractiveDebuggingBreakMode"></a> Débogage interactif et mode arrêt  
  Utilisez des points d’arrêt et effectuez une exécution pas-à-pas du code pendant que vous utilisez les outils de débogage JavaScript comme la fenêtre de la console JavaScript. Lorsqu’un programme en cours d’exécution dans le débogueur rencontre un point d’arrêt, le débogueur suspend provisoirement l’exécution du programme. Lorsque l’exécution est suspendue, votre programme passe du mode exécution au mode arrêt. Vous pouvez reprendre manuellement l’exécution à tout moment.  
@@ -239,7 +239,7 @@ ms.locfileid: "31478302"
   
  Le mode à ligne simple fournit l’historique des entrées. Naviguez dans l’historique des entrées à l’aide des touches Haut et Bas. Le mode à ligne simple efface la ligne d’invite d’entrée lorsque vous exécutez les scripts. Pour exécuter un script en mode à ligne simple, appuyez sur Entrée.  
   
- Le mode multiligne n’efface pas l’invite d’entrée lorsque vous exécutez des scripts. Lorsque vous basculez vers le mode à ligne simple à partir du mode multiligne, vous pouvez effacer la ligne d’entrée en appuyant sur **effacer l’entrée** (le « X » rouge). Pour exécuter un script en mode multiligne, appuyez sur Ctrl+Entrée ou sélectionnez le symbole représentant une flèche dans l’angle inférieur droit de la fenêtre.  
+ Le mode multiligne n’efface pas l’invite d’entrée lorsque vous exécutez des scripts. Lorsque vous basculez en mode à ligne simple du mode multiligne, vous pouvez effacer la ligne d’entrée en appuyant sur **effacer l’entrée** (« X » rouge). Pour exécuter un script en mode multiligne, appuyez sur Ctrl+Entrée ou sélectionnez le symbole représentant une flèche dans l’angle inférieur droit de la fenêtre.  
   
 ##  <a name="Switching"></a> Basculement du contexte d’exécution du script  
  La fenêtre de la console JavaScript vous permet d’interagir avec un seul contexte d’exécution, lequel représente une seule instance de l’hôte de la plateforme web (WWAHost.exe), à la fois. Dans certains scénarios, votre application peut démarrer une autre instance de l’hôte, comme lorsque vous utilisez un `iframe`, un contrat de partage, un traitement web ou un contrôle `WebView` . Si une autre instance de l’hôte est en cours d’exécution, vous pouvez sélectionner un autre contexte d’exécution tout en exécutant l’application en sélectionnant le contexte d’exécution dans la liste **Cible** .  
@@ -255,7 +255,7 @@ ms.locfileid: "31478302"
  [Commandes de JavaScript Console](../debugger/javascript-console-commands.md)   
  [Actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Raccourcis clavier](../debugger/keyboard-shortcuts-html-and-javascript.md)   
- [Déboguer les exemples de code HTML, CSS et JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
+ [Déboguer l’exemple de code HTML, CSS et JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [Démarrage rapide : Déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Déboguer un contrôle WebView](../debugger/debug-a-webview-control.md)   
- [Support technique et accessibilité](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
+ [Support technique et accessibilité](https://visualstudio.microsoft.com/vs/support/)

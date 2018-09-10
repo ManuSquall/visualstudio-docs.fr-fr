@@ -13,18 +13,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3203382b33184edf5618daecd9d3dc9102e2ca6
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 7c87b3749c2ea63e89e2e8fb0caf773434a38df2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251648"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281388"
 ---
 # <a name="register-a-custom-debug-engine"></a>Inscrire un moteur de débogage personnalisé
 Le moteur de débogage doit s’auto-enregistrer comme une fabrique de classe, les conventions COM suivantes mais aussi s’inscrire avec Visual Studio via la sous-clé de Registre de Visual Studio.  
   
 > [!NOTE]
->  Vous trouverez un exemple montrant comment inscrire un moteur de débogage dans l’exemple TextInterpreter, qui est intégré dans le cadre de la [didacticiel : création d’un moteur de débogage à l’aide de ATL COM](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24).  
+>  Vous trouverez un exemple montrant comment inscrire un moteur de débogage dans l’exemple TextInterpreter, qui est intégré dans le cadre de la [didacticiel : création d’un moteur de débogage à l’aide de ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24).  
   
 ## <a name="dll-server-process"></a>Processus de serveur DLL  
  Un moteur de débogage est généralement configuré dans sa propre DLL comme serveur COM. Par conséquent, le moteur de débogage doit inscrire le CLSID de la fabrique de classe avec COM avant Visual Studio peuvent y accéder. Ensuite, le moteur de débogage doit s’inscrire avec Visual Studio pour établir toutes les propriétés (autrement dit métriques) le débogage prend en charge du moteur. Le choix des métriques écrites dans la sous-clé de Registre de Visual Studio dépend des fonctionnalités que du moteur de débogage prend en charge.  
@@ -54,4 +54,4 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
 ## <a name="see-also"></a>Voir aussi  
  [Création d’un moteur de débogage personnalisé](../../extensibility/debugger/creating-a-custom-debug-engine.md)   
  [Aides SDK pour le débogage](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
- [Didacticiel : Création d’un moteur de débogage à l’aide de ATL COM](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24)
+ [Didacticiel : Création d’un moteur de débogage à l’aide de ATL COM](https://msdn.microsoft.com/library/9097b71e-1fe7-48f7-bc00-009e25940c24)

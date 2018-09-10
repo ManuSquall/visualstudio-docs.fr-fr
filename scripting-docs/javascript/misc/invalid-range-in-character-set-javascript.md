@@ -1,5 +1,5 @@
 ---
-title: Plage non valide de caractères définie (JavaScript) | Documents Microsoft
+title: Plage incorrecte dans le caractère défini (JavaScript) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,15 +20,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14d0d5ddf282c6994c572668136e6d7283794f6c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e4cc8feb9a33c2995e592f8031beb2e03605891d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632999"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282812"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>Plage non valide dans le jeu de caractères (JavaScript)
-Vous avez tenté de créer une expression régulière avec une plage de jeu de caractère non valide. Les jeux de caractères doivent être comprise entre les caractères uniques uniquement, tels qu’a-z ou 0-9. Vous ne pouvez inclure des classes de caractères tels que \w dans un jeu de caractères. Le premier caractère dans la plage doit également figurer avant le deuxième caractère de la plage. Exemple :  
+Vous avez tenté de créer une expression régulière avec une plage de jeu de caractère non valide. Jeux de caractères doivent être comprise entre les caractères uniques uniquement, tels qu’a-z ou 0-9. Vous ne pouvez inclure des classes de caractères tels que \w dans un jeu de caractères. Le premier caractère dans la plage doit également figurer avant le deuxième caractère dans la plage. Exemple :  
   
 ```JavaScript  
 var good = /[a-z]/;     // A valid character range - a comes before z.  
@@ -37,8 +37,8 @@ var notGood = /[z-a]/;  // An invalid character range - z does not come before a
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Les caractères uniques uniquement permet de composer votre jeu de caractères d’expression régulière et assurez-vous qu’ils sont dans l’ordre approprié.  
+-   Utiliser des caractères uniques uniquement pour composer votre jeu de caractères d’expression régulière et assurez-vous qu’ils sont dans le bon ordre.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Objet d’Expression régulière](../../javascript/reference/regular-expression-object-javascript.md)   
- [Syntaxe d’Expression régulière (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)
+ [Syntaxe d’Expression régulière (JavaScript)](https://msdn.microsoft.com/library/1400241x)

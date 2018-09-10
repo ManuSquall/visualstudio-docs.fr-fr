@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3364bdcab6ac455833e33cf59391aaef4f0af81d
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 6884ec7284fa99a9221b378935250cc676d11de8
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058007"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280203"
 ---
 # <a name="diagnose-problems-after-deployment"></a>Diagnostiquer des problèmes après le déploiement
 Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans votre application web ASP.NET après son déploiement, ajoutez les informations de build à votre version pour permettre à Visual Studio de trouver automatiquement les fichiers sources et fichiers de symboles correspondants nécessaires pour déboguer l’application à l’aide du journal IntelliTrace.  
@@ -41,11 +41,11 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
  
  ####  <a name="TFS2017"></a> Team Foundation Server 2017
 
- Paramétrez votre définition de build de sorte à ajouter l’emplacement de la source, de la génération et des symboles au manifeste de build (fichier BuildInfo.config). Team Foundation Build crée automatiquement ce fichier et le place dans le dossier de sortie de votre projet.
+ Configurer votre pipeline de génération à ajouter l’emplacement de votre source, build et de symboles au manifeste de build (fichier BuildInfo.config). Team Foundation Build crée automatiquement ce fichier et le place dans le dossier de sortie de votre projet.
   
-1.  Si vous avez déjà une définition de build à l’aide du modèle ASP.NET Core (.NET Framework), vous pouvez soit [modifiez votre définition de build ou de créer une nouvelle définition de build.](http://msdn.microsoft.com/Library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)
+1.  Si vous disposez déjà d’un pipeline de génération en utilisant le modèle ASP.NET Core (.NET Framework), vous pouvez soit [modifier votre pipeline de génération ou de créer un pipeline de build.](/azure/devops/pipelines/get-started-designer)
   
-     ![Vue définition de build dans TFS 2017](../debugger/media/ffr_tfs2017viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
+     ![Afficher la build dans TFS 2017 pipeline](../debugger/media/ffr_tfs2017viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
   
 2.  Si vous créez un nouveau modèle, choisissez le modèle ASP.NET Core (.NET Framework). 
   
@@ -55,9 +55,9 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
   
      Si vous utilisez un modèle personnalisé, vérifiez que le modèle a une activité pour indexer votre source. Vous ajouterez plus tard un argument MSBuild pour spécifier l’emplacement où enregistrer les fichiers de symboles.
   
-     ![Définir le chemin d’accès des symboles dans la définition de build TFS 2017](../debugger/media/ffr_tfs2017builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
+     ![Définir le chemin d’accès des symboles dans le pipeline de build TFS 2017](../debugger/media/ffr_tfs2017builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
   
-     Pour plus d’informations sur les symboles, consultez [publier des données symboles](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6).  
+     Pour plus d’informations sur les symboles, consultez [publier des données symboles](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols).  
   
 4.  Ajoutez cet argument MSBuild pour inclure les emplacements de votre TFS et des symboles dans le fichier manifeste de la build :  
   
@@ -70,11 +70,11 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
     Accédez à [étape 2 : publier votre application](#DeployRelease)  
 
 ####  <a name="TFS2013"></a> Team Foundation Server 2013  
- Paramétrez votre définition de build de sorte à ajouter l’emplacement de la source, de la génération et des symboles au manifeste de build (fichier BuildInfo.config). Team Foundation Build crée automatiquement ce fichier et le place dans le dossier de sortie de votre projet.  
+ Configurer votre pipeline de génération à ajouter l’emplacement de votre source, build et de symboles au manifeste de build (fichier BuildInfo.config). Team Foundation Build crée automatiquement ce fichier et le place dans le dossier de sortie de votre projet.  
 
-1.  [Modifiez votre définition de build ou créez une définition de build.](http://msdn.microsoft.com/Library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
+1.  [Modifier votre pipeline de génération ou de créer un pipeline de build.](/azure/devops/pipelines/get-started-designer)  
 
-     ![Vue définition de build dans TFS 2013](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
+     ![Afficher la build dans TFS 2013 pipeline](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
 
 2.  Choisissez le modèle par défaut (TfvcTemplate.12.xaml) ou votre propre modèle personnalisé.  
 
@@ -84,9 +84,9 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
 
      Si vous utilisez un modèle personnalisé, vérifiez que le modèle a une activité pour indexer votre source. Vous ajouterez plus tard un argument MSBuild pour spécifier l’emplacement où enregistrer les fichiers de symboles.  
 
-     ![Définir le chemin d’accès des symboles dans la définition de build TFS 2013](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
+     ![Définir le chemin d’accès des symboles dans le pipeline de build TFS 2013](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
 
-     Pour plus d’informations sur les symboles, consultez [publier des données symboles](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6).  
+     Pour plus d’informations sur les symboles, consultez [publier des données symboles](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols).  
 
 4.  Ajoutez cet argument MSBuild pour inclure les emplacements de votre TFS et des symboles dans le fichier manifeste de la build :  
 
@@ -119,11 +119,11 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
 
 1.  Installez Visual Studio 2013 (n’importe quelle édition) sur votre serveur Team Foundation Build.  
 
-2.  Dans la définition de build, spécifiez où enregistrer les symboles afin que votre source soit indexée automatiquement.  
+2.  Dans votre pipeline de build, spécifiez où enregistrer les symboles afin que votre source soit indexée automatiquement.  
 
      Si vous utilisez un modèle personnalisé, vérifiez que le modèle a une activité pour indexer votre source.  
 
-3.  Ajoutez ces arguments MSBuild à votre définition de build :  
+3.  Ajoutez ces arguments MSBuild à votre pipeline de génération :  
 
     -   **/p:VisualStudioVersion = 12.0**  
 
@@ -176,7 +176,7 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
  **/ p : buildsymbolstorepath =**\<*chemin d’accès aux symboles*>  
 
 ##  <a name="DeployRelease"></a> Étape 2 : Publier votre application  
- Si vous utilisez le [package Web.Deploy](http://msdn.microsoft.com/library/dd394698.aspx) créé par votre processus de génération pour déployer votre application, le manifeste de build «*Nom_projet*.BuildInfo.config » est automatiquement renommé en « BuildInfo.config » et est placé dans le même dossier que le fichier Web.config de votre application sur votre serveur web.  
+ Si vous utilisez le [package Web.Deploy](https://msdn.microsoft.com/library/dd394698.aspx) qui a été créé par votre processus de génération pour déployer votre application, le manifeste de build est renommé automatiquement à partir de «*nom_projet*. BuildInfo.config » en « BuildInfo.config » et est placé dans le même dossier avec le fichier Web.config de votre application sur votre serveur web.  
 
  Si vous utilisez d’autres méthodes pour déployer votre application, assurez-vous que le manifeste de build «*Nom_projet*.BuildInfo.config » est renommé en « BuildInfo.config » et qu’il est placé dans le même dossier que le fichier Web.config de votre application sur le serveur web.  
 
@@ -234,7 +234,7 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
 
      ![Accédez au code d’application à partir de l’événement de performances](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
 
-     Vous pouvez maintenant examiner d’autres valeurs enregistrées, la pile des appels, parcourir votre code ou utiliser la fenêtre **IntelliTrace** pour [remonter ou avancer « dans le temps » entre d’autres méthodes](../debugger/intellitrace.md) appelées pendant cet événement de performance. [Qu’est toutes ces autres événements et informations dans le journal IntelliTrace ? ](../debugger/using-saved-intellitrace-data.md) [Que puis-je faire d’autre à partir d’ici ?](#WhatElse) [Plus d’informations sur les événements de performances ?](http://blogs.msdn.com/b/visualstudioalm/archive/2013/09/20/performance-details-in-intellitrace.aspx)  
+     Vous pouvez maintenant examiner d’autres valeurs enregistrées, la pile des appels, parcourir votre code ou utiliser la fenêtre **IntelliTrace** pour [remonter ou avancer « dans le temps » entre d’autres méthodes](../debugger/intellitrace.md) appelées pendant cet événement de performance. [Qu’est toutes ces autres événements et informations dans le journal IntelliTrace ? ](../debugger/using-saved-intellitrace-data.md) [Que puis-je faire d’autre à partir d’ici ?](#WhatElse) [Plus d’informations sur les événements de performances ?](https://blogs.msdn.microsoft.com/devops/2013/09/20/performance-details-in-intellitrace/)  
 
 ### <a name="diagnose-an-exception"></a>Diagnostiquer une exception  
 
@@ -336,7 +336,7 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
 
      Informations sur votre système de génération, `"TeamBuild"` ou `"MSBuild"`, et les propriétés requises suivantes :  
 
-    -   **BuildLabel** (pour TeamBuild) : nom et numéro de votre build. Cette étiquette est également utilisée comme nom de l’événement de déploiement. Pour plus d’informations sur les numéros de build, consultez [utilisez numéros de build pour attribuer des noms pertinents aux builds terminées](http://msdn.microsoft.com/Library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3).  
+    -   **BuildLabel** (pour TeamBuild) : nom et numéro de votre build. Cette étiquette est également utilisée comme nom de l’événement de déploiement. Pour plus d’informations sur les numéros de build, consultez [utilisez numéros de build pour attribuer des noms pertinents aux builds terminées](/azure/devops/pipelines/build/options).  
 
     -   **SymbolPath** (recommandé) : liste des URI des emplacements de vos symboles (fichier PDB), séparés par des points-virgules. Les URI peuvent être des URL ou des chemins d’accès réseau (UNC). Il est alors plus facile pour Visual Studio de rechercher les symboles correspondants pour vous aider avec le débogage.  
 
@@ -396,9 +396,9 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
      ![Ouvrir à partir du contrôle de code source &#45; migré](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
 
 ####  <a name="WhatWorkspace"></a> Q : qu’est un espace de travail ?  
- **R :** votre [espace de travail stocke une copie de la source](http://msdn.microsoft.com/Library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) afin de pouvoir développer et tester séparément avant d’archiver votre travail. Si vous ne disposez pas déjà d’un espace de travail spécialement mappé à la solution ou au projet trouvé, Visual Studio vous invite à choisir un espace de travail disponible ou à en créer un avec le nom de votre ordinateur comme nom d’espace de travail par défaut.  
+ **R :** votre [espace de travail stocke une copie de la source](/azure/devops/repos/tfvc/create-work-workspaces) afin de pouvoir développer et tester séparément avant d’archiver votre travail. Si vous ne disposez pas déjà d’un espace de travail spécialement mappé à la solution ou au projet trouvé, Visual Studio vous invite à choisir un espace de travail disponible ou à en créer un avec le nom de votre ordinateur comme nom d’espace de travail par défaut.  
 
 ####  <a name="UntrustedSymbols"></a> Q : je reçois ce message sur les symboles non fiables ?  
- ![Déboguer avec le chemin d’accès des symboles non fiables ? ] (../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
+ ![Déboguer avec le chemin d’accès des symboles non fiables ? ](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
 
  **R :** ce message apparaît lorsque le chemin d’accès de symboles dans le fichier de manifeste de build (\<*nom_projet*>. BuildInfo.config) n’est pas inclus dans la liste des chemins d’accès des symboles approuvés. Vous pouvez ajouter le chemin d’accès à la liste des chemins de symboles dans les options du débogueur.

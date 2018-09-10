@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d46bbe3eb392de21cc1b165819fe469eb4de726d
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: d072dcf839f31df2dba14a3293ed962cd3a68fce
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755883"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281024"
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Utiliser des fichiers Dump avec Visual Studio
 Fichiers dump avec ou sans tas ; créer un fichier dump ; ouvrir un fichier dump ; Recherchez les fichiers binaires, du fichier pdb et fichier source pour un fichier de vidage.
@@ -55,7 +55,7 @@ Fichiers dump avec ou sans tas ; créer un fichier dump ; ouvrir un fichier du
 
 -   Visual Studio peut déboguer les fichiers dump des applications natives à partir des périphériques ARM. Visual Studio peut également déboguer les fichiers dump des applications managées à partir des périphériques ARM, mais uniquement dans le débogueur natif.
 
--   Pour déboguer [en mode noyau](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) fichiers dump, téléchargez les outils de débogage pour Windows qui fait partie de la [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
+-   Pour déboguer [en mode noyau](/windows-hardware/drivers/debugger/kernel-mode-dump-files) fichiers dump, téléchargez les outils de débogage pour Windows qui fait partie de la [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
 
 -   Visual Studio ne peut pas déboguer des fichiers dump enregistrés dans l’ancien format dump appelé un [dump complet en mode utilisateur](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx). Notez qu'un dump complet en mode utilisateur n'est pas le même qu'un dump avec le tas.
 
@@ -114,5 +114,5 @@ Fichiers dump avec ou sans tas ; créer un fichier dump ; ouvrir un fichier du
 ## <a name="see-also"></a>Voir aussi
 
 - [le débogage juste-à-temps](../debugger/just-in-time-debugging-in-visual-studio.md)
-- [Spécifier les symboles (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [IntelliTrace](../debugger/intellitrace.md)

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c91ec9343aeb8b20d6140135becd6905c85adda
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: a4e7be9da93b422a28d01b83e023ac76a05ea514
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758176"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283637"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Commencer à développer des Extensions Visual Studio
 Si vous n’avez jamais rédigé une extension de Visual Studio avant, vous avez probablement quelques questions. Nous avons répertorié parmi les plus fréquents ici. Si vous ne voyez pas les informations que vous recherchez, utilisez les boutons de commentaires (**cette page est-elle utile ?** en bas de l’écran) pour demander ce que vous voulez.
@@ -87,4 +87,4 @@ Si vous n’avez jamais rédigé une extension de Visual Studio avant, vous avez
 ## <a name="how-can-i-distribute-my-extension"></a>Comment puis-je distribuer mon extension ?
  Vous pouvez installer votre extension sur un autre ordinateur ou l’envoyer à vos amis en tant qu’un fichier .vsix, que vous installez en double-cliquant dessus. Vous trouverez plus d’informations sur les packages VSIX à [de livraison des Extensions Visual Studio](../extensibility/shipping-visual-studio-extensions.md).
 
- Vous pouvez également publier votre extension dans Visual Studio Marketplace, ce qui le rend visible à un grand nombre de clients de Visual Studio. Pour obtenir un exemple d’empaquetage d’une extension à la place de marché, consultez [procédure pas à pas : publication d’une Extension Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Pour plus d’informations sur ce que vous devez faire pour publier sur la place de marché, consultez [produits et Extensions pour Visual Studio](/vsts/integrate/ide/extensions/overview).
+ Vous pouvez également publier votre extension dans Visual Studio Marketplace, ce qui le rend visible à un grand nombre de clients de Visual Studio. Pour obtenir un exemple d’empaquetage d’une extension à la place de marché, consultez [procédure pas à pas : publication d’une Extension Visual Studio](../extensibility/walkthrough-publishing-a-visual-studio-extension.md). Pour plus d’informations sur ce que vous devez faire pour publier sur la place de marché, consultez [produits et Extensions pour Visual Studio](/azure/devops/extend/overview).

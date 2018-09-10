@@ -1,5 +1,5 @@
 ---
-title: À l’aide des données IntelliTrace enregistrées | Documents Microsoft
+title: À l’aide des données IntelliTrace enregistrées | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54412cff3047f12ec17c8192dc40cd4ebfcbf55b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 19bc4c0fd91284a5dd4da4a50bba5f2778904a28
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479596"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280063"
 ---
 # <a name="using-saved-intellitrace-data"></a>Utilisation des données IntelliTrace enregistrées
 Accédez aux points spécifiques de l’exécution de votre application lorsque vous démarrez le débogage à partir d’un fichier journal IntelliTrace (.iTrace). Ce fichier contient des événements de performance, des exceptions, des threads, des étapes de test, des modules et d’autres informations système qu’IntelliTrace enregistre pendant que votre application s’exécute.  
   
  Vérifiez que vous disposez des éléments suivants :  
   
--   Fichiers sources et fichiers de symboles (.pdb) correspondants pour votre code d’application. Dans le cas contraire, Visual Studio ne peut pas résoudre les emplacements source et le message « Symboles introuvables » s’affiche. Consultez [spécifier de symboles (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) et [diagnostiquer des problèmes après déploiement](../debugger/diagnose-problems-after-deployment.md).  
+-   Fichiers sources et fichiers de symboles (.pdb) correspondants pour votre code d’application. Dans le cas contraire, Visual Studio ne peut pas résoudre les emplacements source et le message « Symboles introuvables » s’affiche. Consultez [spécifier le symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) et [diagnostiquer des problèmes après déploiement](../debugger/diagnose-problems-after-deployment.md).  
   
 -   Visual Studio Enterprise (mais pas les éditions Professional ou Community) sur votre ordinateur de développement ou autre pour ouvrir les fichiers .iTrace  
   
@@ -38,7 +38,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
     |**Source**|**Consultez**|  
     |----------------|-------------|  
     |Session IntelliTrace dans Visual Studio Enterprise (mais pas dans les éditions Professional ou Community).|[Fonctionnalités IntelliTrace](../debugger/intellitrace-features.md)|  
-    |Session de test dans Microsoft Test Manager. Cela lie un fichier .iTrace à un élément de travail de Team Foundation Server.|[Collecter plus de données de diagnostic dans des tests manuels](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
+    |Session de test dans Microsoft Test Manager. Cela lie un fichier .iTrace à un élément de travail de Team Foundation Server.|[Collecter plus de données de diagnostic dans des tests manuels](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
     |Microsoft Monitoring Agent, seul ou avec System Center 2012 R2 Operations Manager, pour les applications web ASP.NET et les applications SharePoint en cours d’exécution dans le déploiement|-   [Diagnostiquer des problèmes après déploiement](../debugger/diagnose-problems-after-deployment.md)<br />-   [Nouveautés de System Center 2012 R2 Operations Manager](http://technet.microsoft.com/library/dn249700.aspx)|  
   
 ##  <a name="GetStarted"></a> Que voulez-vous faire ?  
@@ -79,7 +79,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
 |[Liste de threads](#ThreadsList)|Threads exécutés pendant la collection|Toutes les sources|  
 |[Données de test](#TestData)|Étapes de test et leurs résultats à partir d’une session de test|Gestionnaire de tests|  
 |[Modules](#Modules)|Modules qui ciblent le processus chargé par ordre de chargement.|Toutes les sources| 
-|[Requête Web](#Modules)|Données de la demande Web pour la production IIS applications web et SharePoint 2010 et SharePoint 2013|Microsoft Monitoring Agent et le collecteur autonome| 
+|[Requête Web](#Modules)|Données de la demande Web de production IIS applications web et SharePoint 2010 et SharePoint 2013|Microsoft Monitoring Agent et le collecteur autonome| 
   
  Voici quelques conseils pour vous aider à retrouver les informations dans chaque section :  
   
@@ -120,7 +120,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
      Si la méthode se trouve dans votre code d’application, Visual Studio y accède.  
   
-     ![Accédez au code de l’application à partir de l’événement de performances](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
+     ![Accédez au code d’application à partir de l’événement de performances](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
   
      Vous pouvez maintenant examiner d’autres valeurs enregistrées, la pile des appels, parcourir votre code ou utiliser la fenêtre **IntelliTrace** pour [remonter ou avancer « dans le temps » entre d’autres méthodes](../debugger/intellitrace.md) appelées pendant cet événement de performance.  
   
@@ -137,7 +137,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
      Si l’exception s’est produite dans votre code d’application, Visual Studio accède à l’emplacement où l’exception s’est produite.  
   
-     ![Accédez au code de l’application à partir d’un événement d’exception](../debugger/media/ffr_itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
+     ![Accédez au code d’application à partir d’un événement d’exception](../debugger/media/ffr_itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
   
      Vous pouvez maintenant examiner d’autres valeurs enregistrées, la pile des appels, ou utiliser la fenêtre **IntelliTrace** pour [remonter ou avancer « dans le temps » entre les autres événements enregistrés](../debugger/intellitrace.md), le code connexe et les valeurs enregistrées à ces moments précis.  
   
@@ -161,13 +161,13 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
 1.  Copiez l’ID de corrélation SharePoint à partir de sa source.  
   
-     Par exemple :  
+     Exemple :  
   
      ![IntelliTrace &#45; erreur SharePoint &#45; ID de corrélation](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")  
   
 2.  Ouvrez le fichier .iTrace, puis pointez sur **Analyse** et entrez l’ID de corrélation SharePoint pour examiner la demande correspondante de site web et les événements inscrits.  
   
-     ![Journal IntelliTrace &#45; ID de corrélation SharePoint d’entrez](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
+     ![Journal IntelliTrace &#45; ID de corrélation SharePoint entrez](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
   
 3.  Sous **Événements de requête**, examinez les événements. En commençant à partir du haut, les événements apparaissent dans l’ordre dans lequel ils se produisent.  
   
@@ -205,9 +205,9 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
 3.  Sélectionnez **Exception de débogage** pour démarrer le débogage à l’emplacement et au moment où l’exception s’est produite.  
   
-     ![Journal IntelliTrace &#45; exceptions SharePoint non gérées](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
+     ![Journal IntelliTrace &#45; SharePoint des exceptions non gérées](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
- Pour une procédure pas à pas, consultez [procédure pas à pas : débogage d’une Application SharePoint à l’aide de IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Pour les types de données enregistrées par l’agent, consultez [des fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).  
+ Pour une procédure pas à pas, consultez [procédure pas à pas : débogage d’une Application SharePoint par IntelliTrace à l’aide de](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Pour les types de données enregistrées par l’agent, consultez [fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).  
   
 ###  <a name="ThreadsList"></a> Liste de threads  
  Examinez les threads enregistrés qui se sont exécutés dans le processus cible. Vous pouvez commencer à déboguer à partir du premier événement IntelliTrace valide d’un thread sélectionné.  
@@ -218,7 +218,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
 2.  En bas de **Liste de threads**, choisissez **Démarrer le débogage**. Vous pouvez également double-cliquer sur un thread.  
   
-     Pour démarrer le débogage à partir du démarrage de l’application, double-cliquez sur **Thread principal**. Consultez [des fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).  
+     Pour démarrer le débogage à partir du démarrage de l’application, double-cliquez sur **Thread principal**. Consultez [fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).  
   
  Les données de thread créées par l’utilisateur peuvent être plus utiles que les threads qu’un serveur crée et gère pour les applications web hébergées par IIS.  
   
@@ -258,14 +258,14 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
 |----------------|-------------------|  
 |**Nom du module**|Nom de fichier du module|  
 |**Chemin du module**|Emplacement de chargement du module sur le disque|  
-|**ID de module**|Identificateur unique du module, spécifique à la version et qui contribue aux fichiers de symboles correspondants (PDB). Consultez [Finding symbol (.pdb) files and source files](http://msdn.microsoft.com/en-us/05384c85-d264-4e18-abaa-aa482ab25470).|  
+|**ID de module**|Identificateur unique du module, spécifique à la version et qui contribue aux fichiers de symboles correspondants (PDB). Consultez [recherche les fichiers de symboles (.pdb) et les fichiers sources](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger).|  
   
 ### <a name="where-can-i-get-more-information"></a>Où peut-on obtenir plus d’informations ?  
  [Utilisation du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
  [Fonctionnalités IntelliTrace](../debugger/intellitrace-features.md)  
   
- [Collecter plus de données de diagnostic dans des tests manuels](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)  
+ [Collecter plus de données de diagnostic dans des tests manuels](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests)  
   
  [IntelliTrace](../debugger/intellitrace.md)  
   

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a3c61fc3e2b36dfc28ee7f1a56ace7035360064
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 37ff64b5c1b5cec9a4b05f293bfc8c43ac7e1bb7
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077563"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282265"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Procédures pas à pas et des exemples de déploiement ClickOnce
 Cette section contient des exemples d’applications, exemple de code et procédures pas à pas qui illustrent la syntaxe, structure et les techniques utilisées pour déployer Windows Forms, WPF et les applications de console.  
@@ -40,5 +40,5 @@ Cette section contient des exemples d’applications, exemple de code et procéd
 |[Télécharger des assemblys à la demande avec l’API à l’aide du Concepteur de déploiement ClickOnce](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|Explique comment télécharger les assemblys d'application uniquement lors de leur première utilisation par l'application.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédures pas à pas de Visual Studio](http://msdn.microsoft.com/en-us/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
+ [Procédures pas à pas de Visual Studio](https://msdn.microsoft.com/library/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
  [Exemples Visual Studio](../ide/visual-studio-samples.md)

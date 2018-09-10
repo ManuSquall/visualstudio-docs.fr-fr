@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe3b8333f116ea5606a354dd9d0f88f111077a1b
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5b9be1d03c8635b1d6b01556c8b4c3963db1d7a2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057172"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279334"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Procédure pas à pas : débogage d'un formulaire Web
 Les étapes de cette procédure pas à pas vous expliquent comment déboguer une application Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], également connue sous le nom de Web Form. Il vous montre comment démarrer et arrêter l’exécution, définir des points d’arrêt et examiner des variables dans le **espion** fenêtre.  
@@ -99,7 +99,7 @@ Les étapes de cette procédure pas à pas vous expliquent comment déboguer une
     textBox1.Text = "Button was clicked!";  
     ```  
   
-     Un point rouge s'affiche et le texte de la ligne est surligné en rouge. Le point rouge représente un point d'arrêt. Lorsque vous exécutez l'application dans le débogueur, le débogueur interrompt l'exécution à l'emplacement du code où se trouve ce point d'arrêt. Vous pouvez afficher l'état de votre application et la déboguer. Pour plus d’informations, consultez [des points d’arrêt](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583).  
+     Un point rouge s'affiche et le texte de la ligne est surligné en rouge. Le point rouge représente un point d'arrêt. Lorsque vous exécutez l'application dans le débogueur, le débogueur interrompt l'exécution à l'emplacement du code où se trouve ce point d'arrêt. Vous pouvez afficher l'état de votre application et la déboguer. Pour plus d’informations, consultez [des points d’arrêt](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
 2.  Dans le menu **Déboguer**, cliquez sur **Démarrer le débogage**.  
   

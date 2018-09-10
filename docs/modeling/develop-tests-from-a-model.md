@@ -11,20 +11,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5e0ddb21e12af4c6e35274dd9a5fd572654e6119
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3cdffcb5d71d5caac11cbbb0882b79526862bffa
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953493"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279854"
 ---
 # <a name="develop-tests-from-a-model"></a>Développer des tests à partir d'un modèle
 Vous pouvez utiliser les spécifications et les modèles architecturaux pour mieux organiser les tests de votre système et de ses composants. Cette pratique vous permet de vous assurer que vous testez les impératifs importants des utilisateurs et des autres parties prenantes, et vous aide à mettre rapidement à jour les tests quand les impératifs changent. Si vous utilisez [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], vous pouvez également tenir à jour des liens entre les modèles et les tests.
 
- Pour connaître les versions de Visual Studio prend en charge ces fonctionnalités, consultez [prise en charge de la Version pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Pour connaître les versions de Visual Studio prennent en charge ces fonctionnalités, consultez [versions prises en charge pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="system-and-subsystem-testing"></a>Tests système et de sous-systèmes
- *Test du système,* également appelé *tests d’acceptation*, moyens de test de déterminer si les besoins des utilisateurs sont satisfaits. Ces tests portent sur le comportement extérieurement visible du système, plutôt que sur sa conception interne.
+ *Test du système,* également appelé *tests d’acceptation*, permettent de tester si les besoins des utilisateurs sont respectés. Ces tests portent sur le comportement extérieurement visible du système, plutôt que sur sa conception interne.
 
  Les tests système sont extrêmement utiles lors de l'extension ou de la modification de conception d'un système. Ils vous évitent d'introduire des bogues quand vous modifiez le code.
 
@@ -35,7 +35,7 @@ Vous pouvez utiliser les spécifications et les modèles architecturaux pour mie
  Les tests de sous-systèmes appliquent les mêmes principes aux composants majeurs d'un système. Chaque composant est testé indépendamment des autres composants. Les tests de sous-systèmes sont axés sur le comportement visible au niveau des interfaces utilisateur ou des API du composant.
 
 ## <a name="deriving-system-tests-from-a-requirements-model"></a>Dérivation de tests système à partir d'un modèle d'impératifs
- Vous pouvez créer et tenir à jour une relation entre des tests système et un modèle d'impératifs. Pour établir cette relation, vous devez écrire des tests qui correspondent aux principaux éléments du modèle d'impératifs. Visual Studio vous aide à tenir à jour cette relation en vous permettant de créer des liens entre les tests et les parties du modèle. Pour plus d’informations sur les modèles de configuration requise, consultez [modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md).
+ Vous pouvez créer et tenir à jour une relation entre des tests système et un modèle d'impératifs. Pour établir cette relation, vous devez écrire des tests qui correspondent aux principaux éléments du modèle d'impératifs. Visual Studio vous aide à tenir à jour cette relation en vous permettant de créer des liens entre les tests et les parties du modèle. Pour plus d’informations sur les modèles d’impératifs, consultez [modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md).
 
 ### <a name="write-tests-for-each-use-case"></a>Écrire des tests pour chaque cas d'usage
  Si vous utilisez [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], vous pouvez créer un groupe de tests pour chaque cas d'usage que vous avez défini dans votre modèle d'impératifs. Par exemple, si vous avez un cas d'usage Commander un repas, qui comprend Créer une commande et Ajouter un article à la commande, vous pouvez créer des tests à la fois pour le cas d'usage global et pour les cas d'usage plus détaillés.
@@ -61,11 +61,11 @@ Vous pouvez utiliser les spécifications et les modèles architecturaux pour mie
 
 1.  Dans [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], créez un impératif et basez une suite de tests dessus.
 
-     L'impératif que vous créez est un élément de travail dans [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Il peut s'agir d'un élément de travail Récit utilisateur, Spécification ou Cas d'usage, selon le modèle de processus utilisé par votre projet avec [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]. Pour plus d’informations, consultez [suivre le travail à l’aide de Visual Studio Team Services ou Team Foundation Server](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).
+     L'impératif que vous créez est un élément de travail dans [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Il peut s'agir d'un élément de travail Récit utilisateur, Spécification ou Cas d'usage, selon le modèle de processus utilisé par votre projet avec [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]. Pour plus d’informations, consultez [outils sur Agile et Agile project management](/azure/devops/boards/backlogs/overview?view=vsts).
 
 2.  Liez l'élément de travail Spécification à un ou plusieurs cas d'usage dans votre modèle.
 
-     Dans un diagramme de cas d’utilisation, un cas d’utilisation d’avec le bouton droit, puis **lien vers l’élément de travail**.
+     Dans un diagramme de cas d’utilisation, avec le bouton droit à un cas d’usage, puis sélectionnez **lien vers l’élément de travail**.
 
 3.  Ajoutez à la suite de tests des cas de test qui vérifient les cas d'usage.
 
@@ -112,7 +112,7 @@ Assert (countAfter == countBefore = 1);
 ## <a name="deriving-subsystem-tests-from-models"></a>Dérivation de tests de sous-systèmes à partir de modèles
  Dans la conception globale d'un grand système, vous pouvez identifier les composants ou les sous-systèmes. Ils représentent des parties qui peuvent être conçues séparément, qui se trouvent sur des ordinateurs différents ou qui sont des modules réutilisables pouvant être recombinés de plusieurs manières.
 
- Vous pouvez appliquer à chaque composant majeur les mêmes principes que ceux utilisés pour l'ensemble du système. Dans un grand projet, chaque composant peut avoir son propre modèle d'impératifs. Dans les projets plus petits, vous pouvez créer un modèle d'architecture ou une conception globale pour montrer les principaux composants et leurs interactions. Pour plus d’informations, consultez [modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md).
+ Vous pouvez appliquer à chaque composant majeur les mêmes principes que ceux utilisés pour l'ensemble du système. Dans un grand projet, chaque composant peut avoir son propre modèle d'impératifs. Dans les projets plus petits, vous pouvez créer un modèle d'architecture ou une conception globale pour montrer les principaux composants et leurs interactions. Pour plus d’informations, consultez [modèle d’architecture de votre application](../modeling/model-your-app-s-architecture.md).
 
  Dans les deux cas, vous pouvez établir une relation entre les éléments de modèle et les tests de sous-systèmes comme vous le feriez entre le modèle d'impératifs et les tests système.
 
@@ -130,7 +130,7 @@ Assert (countAfter == countBefore = 1);
 
  Du point de vue des tests, un modèle d'impératifs peut être considéré comme un raccourci pour les tests. Ainsi, il est important de maintenir la relation entre les tests et le modèle tout au long du projet.
 
-##  <a name="Attaching"></a> Attachement de cas de Test pour les éléments de modèle
+##  <a name="Attaching"></a> Attachement de cas de Test aux éléments de modèle
  Si votre projet utilise [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], vous pouvez lier des tests aux éléments de votre modèle. Cela vous permet d'identifier rapidement les tests affectés par une modification des impératifs et de suivre dans quelle mesure un impératif a été satisfait.
 
  Vous pouvez lier des tests à tous les types d'éléments. Voici quelques exemples :
@@ -149,11 +149,11 @@ Assert (countAfter == countBefore = 1);
 
 1.  Dans [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], créez un impératif et basez une suite de tests dessus.
 
-     L'impératif que vous créez est un élément de travail dans [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Il peut s'agir d'un élément de travail Récit utilisateur, Spécification ou Cas d'usage, selon le modèle de processus utilisé par votre projet avec [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]. Pour plus d’informations, consultez [suivre le travail à l’aide de Visual Studio Team Services ou Team Foundation Server](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).
+     L'impératif que vous créez est un élément de travail dans [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Il peut s'agir d'un élément de travail Récit utilisateur, Spécification ou Cas d'usage, selon le modèle de processus utilisé par votre projet avec [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]. Pour plus d’informations, consultez [outils sur Agile et Agile project management](/azure/devops/boards/backlogs/overview?view=vsts).
 
 2.  Liez l'élément de travail Spécification à un ou plusieurs éléments dans votre modèle.
 
-     Dans un diagramme de modélisation, cliquez sur un élément, commentaire ou une relation, puis **lien vers l’élément de travail**.
+     Dans un diagramme de modélisation, avec le bouton droit à un élément, commentaire ou une relation, puis cliquez sur **lien vers l’élément de travail**.
 
 3.  Ajoutez à la suite de tests des cas de test qui vérifient l'impératif exprimé dans l'élément de modèle.
 

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb117a10a7f736e36b30806adfc5e07fe0b8aecf
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 36d001a14815e5e8e8639ba0937506a1c06d3fc2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512251"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280569"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Nouveautés d’extensibilité de Visual Studio 2017
 
@@ -73,7 +73,7 @@ La plupart des assemblys principaux de Visual Studio ne sont plus installés dan
     "culture"="neutral"
     "version"=15.0.0.0
     ```
-    Lors de l’exécution, le sous-système de pkgdef Visual Studio fusionne ces entrées dans le fichier de configuration du runtime du processus Visual Studio (sous *[VSAPPDATA]\devenv.exe.config*) en tant que [ `<codeBase>` ](https://msdn.microsoft.com/en-us/library/efs781xb(v=vs.110).aspx) éléments. Il s’agit de la méthode recommandée pour vous permettre du processus de Visual Studio de trouver votre assembly, car elle évite d’effectuer une recherche dans les chemins d’accès de détection.
+    Lors de l’exécution, le sous-système de pkgdef Visual Studio fusionne ces entrées dans le fichier de configuration du runtime du processus Visual Studio (sous *[VSAPPDATA]\devenv.exe.config*) en tant que [ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) éléments. Il s’agit de la méthode recommandée pour vous permettre du processus de Visual Studio de trouver votre assembly, car elle évite d’effectuer une recherche dans les chemins d’accès de détection.
 
 ### <a name="reacting-to-this-breaking-change"></a>Réagir à cette modification avec rupture
 
@@ -87,7 +87,7 @@ La plupart des assemblys principaux de Visual Studio ne sont plus installés dan
 
 ### <a name="global-com-registration"></a>Inscription de COM globale
 
-* Auparavant, Visual Studio installé de clés de Registre dans les ruches HKEY_CLASSES_ROOT et HKEY_LOCAL_MACHINE pour prendre en charge d’inscription COM native. Pour éviter cet impact, Visual Studio utilise désormais [l’Activation sans inscription pour les composants COM](https://msdn.microsoft.com/en-us/library/ms973913.aspx).
+* Auparavant, Visual Studio installé de clés de Registre dans les ruches HKEY_CLASSES_ROOT et HKEY_LOCAL_MACHINE pour prendre en charge d’inscription COM native. Pour éviter cet impact, Visual Studio utilise désormais [l’Activation sans inscription pour les composants COM](https://msdn.microsoft.com/library/ms973913.aspx).
 * Par conséquent, la plupart des TLB / OLB / fichiers DLL sous % ProgramFiles (x86) %\Common Files\Microsoft Shared\MSEnv ne sont plus installés par défaut par Visual Studio. Ces fichiers sont maintenant installés sous [INSTALLDIR] avec des manifestes Registration-Free COM correspondants utilisés par le processus hôte de Visual Studio.
 * Par conséquent, le code externe qui s’appuie sur l’inscription de COM globale pour les interfaces COM Visual Studio sera ne trouve plus ces inscriptions. Code qui s’exécute à l’intérieur du processus Visual Studio ne verrez pas de différence.
 
@@ -106,5 +106,5 @@ La plupart des assemblys principaux de Visual Studio ne sont plus installés dan
 
 * Code externe doit être converti pour utiliser l’activation sans inscription pour les composants COM et.
 * Composants externes pour trouver l’emplacement de Visual Studio [en suivant les conseils donnés ici](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup).
-* Nous recommandons d’utilisent des composants externes les [Gestionnaire de paramètres externe](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.settings.externalsettingsmanager.aspx) au lieu de lecture/écriture directement aux clés de Registre de Visual Studio.
+* Nous recommandons d’utilisent des composants externes les [Gestionnaire de paramètres externe](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager) au lieu de lecture/écriture directement aux clés de Registre de Visual Studio.
 * Vérifiez si les composants à l’aide de votre extension a peut-être implémenté une autre technique pour l’inscription. Par exemple, les extensions de débogueur peuvent être en mesure de tirer parti de la nouvelle [msvsmon enregistrement JSON-fichier COM](migrate-debugger-COM-registration.md).

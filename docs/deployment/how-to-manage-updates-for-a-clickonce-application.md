@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 30a02c4b438d6e7504056ce5cdcc06bfc129d218
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 5bd9d8d7e88bc9ee8c8b041571ddaa258067c300
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151586"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283650"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Comment : gérer les mises à jour pour une application ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] les applications peuvent vérifier les mises à jour automatiquement ou par programmation. En tant que développeur, vous avez une grande souplesse lors de la spécification de quand et comment les vérifications de mise à jour sont effectuées, si les mises à jour sont obligatoires, et où l’application doit vérifier les mises à jour.  
@@ -109,7 +109,7 @@ ms.locfileid: "39151586"
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:System.Deployment.Application.ApplicationDeployment>   
- [Boîte de dialogue application mises à jour](http://msdn.microsoft.com/en-us/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f)   
+ [Boîte de dialogue application mises à jour](/previous-versions/visualstudio/visual-studio-2010/axw1fa38(v=vs.100))   
  [Choisir une stratégie de mise à jour ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   
  [Publier la liaison de ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Comment : publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   

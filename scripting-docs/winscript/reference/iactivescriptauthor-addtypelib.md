@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::AddTypeLib | Documents Microsoft
+title: IActiveScriptAuthor::AddTypeLib | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 150628f1822c721f1e349005de457951e226ef1b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e1122b5327da5573071bc534b5eb1a16fa69b873
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645619"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283377"
 ---
 # <a name="iactivescriptauthoraddtypelib"></a>IActiveScriptAuthor::AddTypeLib
 Ajoute une bibliothèque de types à l’espace de noms pour le script.  
@@ -47,7 +47,7 @@ HRESULT AddTypeLib(
  [in] Numéro de version principale.  
   
  `dwMinor`  
- [in] Le numéro de version secondaire.  
+ [in] Le numéro de version mineure.  
   
  `dwFlags`  
  [in] Non utilisé.  
@@ -55,14 +55,14 @@ HRESULT AddTypeLib(
 ## <a name="return-value"></a>Valeur de retour  
  Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Valeur|Description|  
+|Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Cette méthode appelle `LoadTypeLib` pour charger la bibliothèque de types. En cas de réussite, cette méthode appelle `IActiveScriptAuthor::AddNamedItem` pour ajouter des informations de type.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IActiveScriptAuthor (Interface)](../../winscript/reference/iactivescriptauthor-interface.md)   
  [IActiveScriptAuthor::AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)   
- [LoadTypeLib](http://msdn.microsoft.com/en-us/155b48e5-5438-409e-9342-630a6a500f60)
+ [LoadTypeLib](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelib)

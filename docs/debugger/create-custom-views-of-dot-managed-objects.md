@@ -1,5 +1,5 @@
 ---
-title: Créer des vues personnalisées d’objets gérés | Documents Microsoft
+title: Créer des vues personnalisées d’objets gérés | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6be491a5c7a0ceb0ed536416cdd3b273f96b4bb1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 970051c5f53c152ea6fee334c3c1f856172b5ed9
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457678"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280543"
 ---
 # <a name="create-custom-views-of-managed-objects"></a>Créer des vues personnalisées d’objets gérés
 Vous pouvez personnaliser la façon dont Visual Studio affiche les types de données dans les fenêtres de variables du débogueur.  
@@ -49,10 +49,10 @@ Vous pouvez personnaliser la façon dont Visual Studio affiche les types de donn
 > [!CAUTION]
 >  La structure de ce fichier et la syntaxe des règles autoexp peuvent varier d'une version à l'autre de Visual Studio.  
   
- Les vues de type natives peuvent également être personnalisées en écrivant un complément Évaluateur d'expression. Pour plus d’informations, consultez [exemple EEAddIn : débogage Expression évaluateur complément](http://msdn.microsoft.com/en-us/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e).  
+ Les vues de type natives peuvent également être personnalisées en écrivant un complément Évaluateur d'expression. Pour plus d’informations, consultez [exemple EEAddIn : débogage Expression évaluateur Add-In](https://msdn.microsoft.com/library/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e).  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide d’attribut DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
+ [À l’aide de l’attribut DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)   
  [À l’aide de l’attribut DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)   
- [Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)   
+ [Espion et Espion express Windows](../debugger/watch-and-quickwatch-windows.md)   
  [Amélioration du débogage avec les attributs d’affichage de débogueur](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d4fa9ea1538d051aebd025c641c0520197f986ef
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e90e8080f8f5afb7bd670d04e0f004f433420d68
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178385"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281531"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Procédure pas à pas : Création d’un Service de données WCF avec WPF et Entity Framework
 Cette procédure pas à pas montre comment créer un simple [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] qui est hébergé dans un [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] application web et y accéder à partir d’une application Windows Forms.
@@ -106,7 +106,7 @@ Dans l’étape suivante, vous allez créer un [!INCLUDE[adonet_edm](../data-too
 7.  Sur le **choisir votre version** page, choisissez le **Entity Framework 5.0** case d’option, puis choisissez le **suivant** bouton.
 
     > [!NOTE]
-    >  Pour pouvoir utiliser la dernière version d’Entity Framework 6 avec les Services WCF, vous devez installer le package NuGet du fournisseur Entity Framework WCF Data Services. Consultez [à l’aide de WCF Data Services 5.6.0 avec Entity Framework 6 +](http://blogs.msdn.com/b/odatateam/archive/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6.aspx).
+    >  Pour pouvoir utiliser la dernière version d’Entity Framework 6 avec les Services WCF, vous devez installer le package NuGet du fournisseur Entity Framework WCF Data Services. Consultez [à l’aide de WCF Data Services 5.6.0 avec Entity Framework 6 +](https://blogs.msdn.microsoft.com/odatateam/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6/).
 
 8.  Sur le **choisir vos objets de base de données** page, développez le **Tables** nœud, sélectionnez le **clients** case à cocher, puis choisissez le **Terminer** bouton.
 

@@ -14,25 +14,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc42977953c70a9d17e1e26401a4d3c0576106e4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e4c06afd005d4d667d168429a922c32120987763
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175889"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278918"
 ---
 # <a name="code-analysis-policy-errors"></a>Erreurs de stratégie d’analyse du code
 Les erreurs suivantes se produisent si la stratégie d’analyse de code n’est pas satisfaite à l’archivage :
 
  **Les paramètres d’analyse du Code pour un ou plusieurs projets ne sont pas compatibles avec la stratégie d’analyse du Code.**
 
- Les exigences d’analyse de code archivage pour le contrôle de code source du projet équipe n’a pas été remplie pour un ou plusieurs projets de code. Cette erreur peut être causée par une ou plusieurs des conditions suivantes :
+ Les exigences d’analyse de code la vérification le contrôle de code source du projet n’a pas été remplie pour un ou plusieurs projets de code. Cette erreur peut être causée par une ou plusieurs des conditions suivantes :
 
 1.  Analyse du code n’est pas activée sur la build pour tous les projets dans la solution.
 
-2.  Règle locale définie pour le projet dans Visual Studio comporte moins restrictif **Action** définissant à la règle de projet d’équipe définie, par exemple, une règle est définie sur **Action**=**erreur**  sur le serveur a sa **Action** définie sur **avertissement** ou **aucun** dans l’ensemble en cours d’exécution dans Visual Studio de règles).
+2.  Règle locale définie pour le projet dans Visual Studio comporte moins restrictif **Action** définissant à la règle de projet définie par exemple, une règle est définie sur **Action**=**erreur** sur le serveur a sa **Action** définie sur **avertissement** ou **aucun** dans l’ensemble en cours d’exécution dans Visual Studio de règles).
 
-3.  L’ensemble spécifié dans Visual Studio de règles ne contient pas toutes les règles qui sont spécifiés dans l’ensemble spécifié dans la stratégie de vérification de l’analyse du Code pour le projet d’équipe de règles.
+3.  L’ensemble spécifié dans Visual Studio de règles ne contient pas toutes les règles qui sont spécifiés dans l’ensemble spécifié dans la stratégie de vérification de l’analyse du Code pour le projet de règles.
 
  **Échec de la stratégie d’analyse du Code. Il existe des erreurs dans le projet {0} ou la build n’est pas à jour.**
 

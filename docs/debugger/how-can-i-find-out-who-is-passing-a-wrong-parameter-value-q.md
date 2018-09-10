@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a46497e45acb4663822b1a7bc6e4ad5a4f09af11
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 91c0574d3783c56a56e9e1932a675c45cb758ded
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472492"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284170"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Comment puis-je savoir d'où provient une valeur de paramètre incorrecte ?
 ## <a name="problem-description"></a>Description du problème  
@@ -42,7 +42,7 @@ ms.locfileid: "31472492"
   
 2.  Cliquez sur le point d’arrêt et sélectionnez **Condition**.  
   
-3.  Dans le **Condition de point d’arrêt** boîte de dialogue, cliquez sur le **Condition** case à cocher. Consultez [avancé des points d’arrêt](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).  
+3.  Dans le **Condition de point d’arrêt** boîte de dialogue, cliquez sur le **Condition** case à cocher. Consultez [avancée des points d’arrêt](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).  
   
 4.  Entrez une expression, telle que `Var==3`, dans la zone de texte, où `Var` est le nom du paramètre qui contient la valeur incorrecte et où `3` correspond à la valeur incorrecte passée.  
   
@@ -53,6 +53,6 @@ ms.locfileid: "31472492"
 7.  Utilisez la fenêtre Pile des appels pour rechercher la fonction d'appel et naviguer jusqu'à son code source. Pour plus d’informations, consultez [Comment : utiliser la fenêtre Pile des appels](../debugger/how-to-use-the-call-stack-window.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Foire aux questions de débogage du Code natif](../debugger/debugging-native-code-faqs.md)   
- [Points d’arrêt](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)   
+ [Forum aux questions de débogage du Code natif](../debugger/debugging-native-code-faqs.md)   
+ [Points d’arrêt](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)   
  [Débogage du code natif](../debugger/debugging-native-code.md)

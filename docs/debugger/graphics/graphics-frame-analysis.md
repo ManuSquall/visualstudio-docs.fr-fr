@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 140d140b94446cf6e778caf33252d4c95bf2334b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: f744848292c4d288be82bf4ca462d7ccae257d8a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512055"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280077"
 ---
 # <a name="graphics-frame-analysis"></a>Analyse des frames graphiques
 Utilisez l’analyse des frames graphiques dans Visual Studio Graphics Analyzer pour analyser et optimiser les performances de rendu de votre jeu ou application Direct3D.  
@@ -34,7 +34,7 @@ Utilisez l’analyse des frames graphiques dans Visual Studio Graphics Analyzer 
   
  Bien que l'analyse des frames vise essentiellement à vous aider à accéder à de meilleures performances de rendu, elle peut également vous aider à obtenir une meilleure qualité visuelle pour une cible de performances donnée ou à réduire la consommation d'énergie du GPU.  
   
- Pour voir une démonstration de ce que l’analyse des frames peut faire pour votre application, vous pouvez regarder la [Visual Studio Graphics Frame Analysis](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) vidéo sur Channel 9.  
+ Pour voir une démonstration de ce que l’analyse des frames peut faire pour votre application, vous pouvez regarder la [Visual Studio Graphics Frame Analysis](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) vidéo sur Channel 9.  
   
 ## <a name="using-frame-analysis"></a>Utilisation de l'analyse des frames  
  Avant de pouvoir utiliser l'analyse des frames, vous devez d'abord capturer les informations graphiques de votre application pendant qu'elle s'exécute, comme vous le feriez avec un autre outil Graphics Analyzer. Puis, dans la fenêtre de document (.vsglog) de journal graphics, choisissez le **analyse des frames** onglet.  
@@ -72,14 +72,14 @@ Utilisez l’analyse des frames graphiques dans Visual Studio Graphics Analyzer 
 #### <a name="timeline"></a>Chronologie  
  La chronologie offre une vue d'ensemble des minutages d'appels de dessin les uns par rapport aux autres. Sachant que le barres les plus longues correspondent aux temps d'appel les plus longs, vous pouvez vous en servir pour repérer rapidement les appels de dessin les plus coûteux du frame. Quand le frame capturé contient un très grand nombre d'appels de dessin, ceux-ci sont combinés en une barre unique dont la longueur représente la somme de ces appels de dessin.  
   
- ![La chronologie indique le dessin&#45;appeler les coûts. ] (media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
+ ![La chronologie indique le dessin&#45;appeler les coûts. ](media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
   
  Vous pouvez placer le pointeur sur une barre pour déterminer à quel événement d'appel de dessin la barre correspond. Si vous sélectionnez la barre, la liste d'événements se synchronise avec cet événement.  
   
 #### <a name="table"></a>Table  
  Le tableau contenant les nombres en dessous de la chronologie présente les performances relatives de chaque variante de rendu pour chaque appel de dessin par rapport au rendu par défaut de votre application. Chaque colonne affiche une variante de rendu différente et chaque ligne représente un appel de dessin différent identifié dans la colonne la plus à gauche ; de là, vous pouvez suivre un lien vers l'événement dans la fenêtre Liste des événements Graphics.  
   
- ![Le tableau récapitulatif montre différents variants. ] (media/pix_frame_analysis_summary.png "pix_frame_analysis_summary")  
+ ![Le tableau récapitulatif montre différents variants. ](media/pix_frame_analysis_summary.png "pix_frame_analysis_summary")  
   
  La deuxième colonne du tableau Résumé en partant de la gauche affiche le temps de rendu du planning de référence de votre application, c’est-à-dire, le temps qu’il faut au rendu par défaut de votre application pour traiter l’appel de dessin. Les autres colonnes présentent les performances relatives de chaque variante de rendu sous la forme d'un pourcentage de la ligne de base, si bien qu'il est plus facile de déterminer si les performances s'améliorent. Les pourcentages supérieurs à 100 % indiquent une durée supérieure à la ligne de base (c'est-à-dire, des performances en baisse), tandis que les pourcentages inférieurs à 100 % ont pris moins de temps (performances en hausse).  
   
@@ -88,7 +88,7 @@ Utilisez l’analyse des frames graphiques dans Visual Studio Graphics Analyzer 
 #### <a name="hot-draw-calls"></a>Appels de dessin « sensibles »  
  Pour attirer l’attention sur les appels de dessin dont la consommation de temps de rendu global est proportionnellement plus élevée ou qui peuvent être ralentis pour des raisons qui pourraient être évitées, la ligne qui contient ces appels de dessin « sensibles » apparaissent en rouge dès lors que leur propre minutage de planning de référence est plus long d’un écart-type que le minutage de ligne de base moyen de tous les appels de dessin du frame.  
   
- ![Cet appel DrawIndexed possède des variants à chaud et froid. ] (media/pix_frame_analysis_hot_calls.png "pix_frame_analysis_hot_calls")  
+ ![Cet appel DrawIndexed possède des variants à chaud et froid. ](media/pix_frame_analysis_hot_calls.png "pix_frame_analysis_hot_calls")  
   
 #### <a name="statistical-significance"></a>Signification statistique  
  Pour attirer l'attention sur les variations de rendu les plus pertinentes, l'analyse des frames détermine la signification statistique de chaque variante de rendu et affiche les plus révélatrices en gras. Elle affiche celles qui améliorent les performances en vert et celles qui les diminuent en rouge. Elle affiche les résultats non significatifs du point de vue statistique en caractères normaux.  
@@ -103,12 +103,12 @@ Utilisez l’analyse des frames graphiques dans Visual Studio Graphics Analyzer 
 #### <a name="platforms-that-do-not-support-hardware-counters"></a>Plateformes qui ne prennent pas en charge les compteurs matériels  
  La plupart des plateformes ne prennent pas entièrement en charge les compteurs GPU (c'est le cas notamment de tous les GPU actuellement proposés par Intel, AMD et nVidia). Quand il n'y aucun compteur matériel auprès duquel collecter des données, le tableau Détails s'affiche et contient le minutage absolu moyen de toutes les variantes.  
   
- ![Le tableau de détails et certaines variantes de la lecture. ] (media/pix_frame_analysis_details.png "pix_frame_analysis_details")  
+ ![Le tableau de détails et certaines variantes de la lecture. ](media/pix_frame_analysis_details.png "pix_frame_analysis_details")  
   
 #### <a name="platforms-that-support-hardware-counters"></a>Plateformes qui prennent en charge les compteurs matériels  
  Pour les plateformes qui prennent en charge les compteurs GPU matériels (par exemple, le SOC T40 SOC et tous les SOC Qualcomm), plusieurs tableaux Détails s'affichent, un pour chaque variante. Chaque compteur matériel disponible fait l'objet d'une collecte pour chaque variante de rendu et est affiché dans son propre tableau Détails.  
   
- ![Compteurs matériels sont affichés lors de la prise en charge. ] (media/pix_frame.png "pix_frame")  
+ ![Compteurs matériels sont affichés lors de la prise en charge. ](media/pix_frame.png "pix_frame")  
   
  Les informations de compteur matériel fournissent une vue très détaillée du comportement spécifique de la plateforme matérielle pour chaque appel de dessin, ce qui peut vous aider à identifier très précisément la cause des goulots d'étranglement qui nuisent aux performances.  
   
