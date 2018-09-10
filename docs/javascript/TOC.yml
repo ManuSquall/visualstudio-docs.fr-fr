@@ -1,31 +1,40 @@
+items:
 - name: Documentation Node.js
-- name: Démarrages rapides
+- name: Guides de démarrage rapide
   items:
-    - name: Créer un projet Node.js
-      href: /visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json
-    - name: Créer un projet Vue.js
-      href: quickstart-vuejs-with-nodejs.md
+  - name: Créer un projet Node.js
+    href: /visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json
+  - name: Créer un projet Vue.js
+    href: quickstart-vuejs-with-nodejs.md
 - name: Didacticiels
   items:
-    - name: Créer une application Node.js avec Express
-      href: tutorial-nodejs.md
-    - name: Créer une application Node.js avec React
-      href: tutorial-nodejs-with-react-and-jsx.md
-    - name: Publier sur Linux App Service
-      href: publish-nodejs-app-azure.md
+  - name: Créer une application Node.js avec Express
+    href: tutorial-nodejs.md
+  - name: Créer une application Node.js avec React
+    href: tutorial-nodejs-with-react-and-jsx.md
+  - name: Publier sur App Service Linux
+    href: publish-nodejs-app-azure.md
 - name: Guides pratiques
   items:
-    - name: Créer une application Vue.js
-      href: create-application-with-vuejs.md
-    - name: Gérer les packages npm
-      href: npm-package-management.md
-    - name: "Développer sans projet ou solution («\_Ouvrir le dossier\_»)"
-      href: develop-javascript-code-without-solutions-projects.md
-    - name: Test unitaire du code JavaScript
-      href: unit-testing-javascript-with-visual-studio.md
-    - name: IntelliSense JavaScript
-      href: /visualstudio/ide/javascript-intellisense?toc=/visualstudio/javascript/toc.json
+  - name: Créer une application Vue.js
+    href: create-application-with-vuejs.md
+  - name: Gérer les packages npm
+    href: npm-package-management.md
+  - name: Développer sans projet ou solution (« Ouvrir le dossier »)
+    href: develop-javascript-code-without-solutions-projects.md
+  - name: Test unitaire du code JavaScript
+    href: unit-testing-javascript-with-visual-studio.md
+  - name: IntelliSense JavaScript
+    href: /visualstudio/ide/javascript-intellisense?toc=/visualstudio/javascript/toc.json
 - name: Ressources
   items:
-    - name: Page Wiki des outils Node.js
-      href: 'https://github.com/Microsoft/nodejstools'
+  - name: Configuration de package.json
+    href: configure-packages-with-package-json.md
+  - name: Page Wiki des outils Node.js
+    href: https://github.com/Microsoft/nodejstools
+ms.openlocfilehash: 934d7cd68dd61dacb5bd60d06e07aef72c34dd04
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124942"

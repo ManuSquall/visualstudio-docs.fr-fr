@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0f530dc6f1223bebeaada4f1225dd025474ceb1c
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 011dc258281eccf7d1a1eca7acbc8cc71a53f00a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808639"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281141"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Débogage à distance un projet c# ou Visual Basic dans Visual Studio
 Pour déboguer une application de Visual Studio qui a été déployée sur un autre ordinateur, installer et exécuter les outils à distance sur l’ordinateur où vous avez déployé votre application, configurez votre projet pour se connecter à l’ordinateur distant à partir de Visual Studio, puis exécutez votre application.
@@ -97,7 +97,7 @@ Le débogueur ne peut pas déployer d’applications de bureau Visual C# ou Visu
 
      Vous devez voir que la fenêtre principale de l’application WPF est ouverte sur l’ordinateur distant.
   
-14. Si nécessaire, prendre des mesures pour atteindre le point d’arrêt. Il doit être actif. Si elle n’est pas le cas, les symboles pour l’application n’est pas chargé. Nouvelle tentative et si cela ne fonctionne pas, obtenir des informations sur le chargement de symboles et comment les résoudre à [paramètres des symboles de présentation des fichiers de symboles et de Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/05/understanding-symbol-files-and-visual-studio-s-symbol-settings.aspx).
+14. Si nécessaire, prendre des mesures pour atteindre le point d’arrêt. Il doit être actif. Si elle n’est pas le cas, les symboles pour l’application n’est pas chargé. Nouvelle tentative et si cela ne fonctionne pas, obtenir des informations sur le chargement de symboles et comment les résoudre à [paramètres des symboles de présentation des fichiers de symboles et de Visual Studio](https://blogs.msdn.microsoft.com/devops/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/).
   
 15. Sur l’ordinateur Visual Studio, l’exécution doit être arrêtée au point d’arrêt.
   

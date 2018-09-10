@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b564c208892ac169fd88b13101945bbf7223d20
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9d5b5eeefe2bbed542ef18689fd7e16073174bd3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152007"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284105"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Problèmes connus et dépannage pour le débogage d’instantané dans Visual Studio
 
@@ -42,7 +42,7 @@ Procédez comme suit :
 
 - Cliquez sur le **modifier les paramètres des symboles...** lien de cette page. Dans le **débogage > symboles** paramètres, ajoutez un répertoire de cache de symboles. Redémarrez le débogage d’instantané une fois que le chemin des symboles a été défini.
 
-   Les symboles, ou les fichiers .pdb disponibles dans votre projet doivent correspondre à votre déploiement d’App Service. La plupart des déploiements (déploiement via Visual Studio, CI/CD avec VSTS ou Kudu, etc.) publiera le long de vos fichiers de symboles à votre App Service. Définition du répertoire de cache de symboles permet à Visual Studio à utiliser ces symboles.
+   Les symboles, ou les fichiers .pdb disponibles dans votre projet doivent correspondre à votre déploiement d’App Service. La plupart des déploiements (déploiement via Visual Studio, CI/CD avec Azure Pipelines ou Kudu, etc.) publiera le long de vos fichiers de symboles à votre App Service. Définition du répertoire de cache de symboles permet à Visual Studio à utiliser ces symboles.
 
    ![Paramètres des symboles](../debugger/media/snapshot-troubleshooting-symbol-settings.png "paramètres des symboles")
 

@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58acebc2607ba05f121a7673f726d8f4bbcb38bd
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 138567792ed57aff0c1471b7f9004999c357764b
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057211"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281102"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Recherche de fuites de mémoire à l'aide de la bibliothèque CRT
 Les fuites de mémoire, qui correspondent à l'échec de désallocation de mémoire précédemment allouée, figurent parmi les bogues les plus difficiles à détecter des applications C/C++. Au début, vous pourrez remarquer une petite fuite de mémoire, mais au fil du temps, cette fuite de mémoire peut progressivement provoquer des problèmes allant d'une perte de performances au blocage de l'application, lorsque la mémoire devient insuffisante. Pire encore, une application connaissant une fuite de mémoire qui utiliserait toute la mémoire disponible pourrait entraîner le blocage d'une autre application, provoquant le doute quant à l'application réellement responsable du blocage. Même les fuites de mémoire apparemment sans incidence peuvent être responsables d'autres problèmes devant être corrigés.  
@@ -108,7 +108,7 @@ Object dump complete.
   
 -   le numéro d'allocation de mémoire, en l'occurrence `18` ;  
   
--   le [type de bloc](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97), en l'occurrence `normal` ;  
+-   Le [type de bloc](https://msdn.microsoft.com/library/e2f42faf-0687-49e7-aa1f-916038354f97), c'est-à-dire `normal` dans cet exemple.  
   
 -   l'emplacement de stockage hexadécimal, en l'occurrence `0x00780E80` ;  
   

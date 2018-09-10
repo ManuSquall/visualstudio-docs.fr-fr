@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27a4204394003f0b4ea6baf7691c9591d3a5b613
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: cb3eda4cc3e8615312353cae064e9179514820c4
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623821"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280222"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénario : modifier votre conception à l'aide de la visualisation et de la modélisation
 
@@ -216,9 +216,9 @@ Au fur et à mesure que le travail avance, les équipes mettent à jour leurs é
 
 Consultez :
 
-- [Effectuer le suivi d’un travail à l’aide de Visual Studio Team Services ou Team Foundation Server](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)
+- [Sur les outils Agile et de gestion de projet Agile](/azure/devops/boards/backlogs/overview?view=vsts)
 
-- [Graphiques, tableaux de bord et widgets (VSTS)](/vsts/report/dashboards/overview?view=vsts)
+- [Graphiques, tableaux de bord et widgets (Services de DevOps Azure)](/azure/devops/report/dashboards/overview?view=vsts)
 
 - [Créer votre journal des travaux en souffrance et vos tâches à l'aide de Project](http://msdn.microsoft.com/Library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)
 
@@ -238,13 +238,13 @@ Pour vous assurer que le code est conforme à la conception, les équipes config
 
 Consultez :
 
-- [Test de l’application](/vsts/test/overview?view=vsts)
+- [Test de l’application](/azure/devops/test/overview?view=vsts)
 
 - [Valider votre système pendant le développement](../modeling/validate-your-system-during-development.md)
 
 - [Utiliser la gestion de version](http://go.microsoft.com/fwlink/?LinkID=525605)
 
-- [Build et release](/vsts/build-release/index)
+- [Pipelines Azure](/azure/devops/pipelines/index)
 
 ## <a name="update-the-system-using-visualization-and-modeling"></a>Mettre à jour le système à l’aide de visualisation et modélisation
 

@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : Le débogage a échoué car l’authentification Windows intégrée n’est pas activée. | Documents Microsoft'
+title: 'Erreur : Le débogage a échoué car l’authentification Windows intégrée n’est pas activée. | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f189e9f3f85fd53941aa51cf2a2d969b9c9ed19
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f56cca9fa637efaa66b6dcab4716d4a1900aa61d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477116"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278643"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Erreur : le débogage a échoué, car l'authentification intégrée de Windows n'est pas activée
 L'authentification de l'utilisateur qui a demandé le débogage a été empêchée en raison d'une erreur d'authentification. Cette erreur peut se produire lorsque vous essayez d'accéder à une application Web ou à un service Web XML. Cette erreur peut provenir, par exemple, du fait que l'authentification Windows intégrée n'est pas activée. Pour l'activer, suivez les étapes décrites dans Activer l'authentification Windows intégrée.  
@@ -43,7 +43,7 @@ L'authentification de l'utilisateur qui a demandé le débogage a été empêch�
   
 5.  Cliquez sur le nœud du serveur web.  
   
-     A **Sites Web** dossier s’ouvre sous le nom du serveur.  
+     Un **Sites Web** dossier s’ouvre sous le nom du serveur.  
   
 6.  Vous pouvez configurer l’authentification pour tous les sites web ou pour certains sites web. Pour configurer l’authentification pour tous les sites Web, cliquez sur le **Sites Web** dossier, puis cliquez sur **propriétés**. Pour configurer l’authentification pour un site Web individuel, ouvrez le **Sites Web** dossier, cliquez sur le site Web individuel, puis cliquez sur **propriétés**.  
   
@@ -53,11 +53,11 @@ L'authentification de l'utilisateur qui a demandé le débogage a été empêch�
   
 8.  Dans le **anonymes et contrôle d’authentification** , cliquez sur **modifier**.  
   
-     Le **les méthodes d’authentification** boîte de dialogue s’affiche.  
+     Le **méthodes d’authentification** boîte de dialogue s’affiche.  
   
-9. Sous **accès authentifié**, sélectionnez **l’authentification Windows intégrée**.  
+9. Sous **un accès authentifié**, sélectionnez **l’authentification Windows intégrée**.  
   
-10. Cliquez sur **OK** pour fermer la **les méthodes d’authentification** boîte de dialogue.  
+10. Cliquez sur **OK** pour fermer la **méthodes d’authentification** boîte de dialogue.  
   
 11. Cliquez sur **OK** pour fermer la **propriétés** boîte de dialogue.  
   
@@ -71,7 +71,7 @@ L'authentification de l'utilisateur qui a demandé le débogage a été empêch�
   
     1.  Cliquez sur **Démarrer**, cliquez sur **le panneau de configuration** puis cliquez sur **programmes**.  
   
-    2.  Sous **programmes et fonctionnalités**, cliquez sur **ou désactiver des fonctionnalités Windows d’activer**.  
+    2.  Sous **programmes et fonctionnalités**, cliquez sur **ou désactiver des fonctionnalités Windows activer**.  
   
          La boîte de dialogue Contrôle d'accès utilisateur s'affiche et vous invite à confirmer que vous êtes autorisé à poursuivre.  
   
@@ -99,11 +99,11 @@ L'authentification de l'utilisateur qui a demandé le débogage a été empêch�
   
 4.  Cliquez sur **affichage classique**, puis double-cliquez sur **outils d’administration**.  
   
-5.  Dans le **nom** colonne et double-cliquez sur **Gestionnaire des Services Internet (IIS)**.  
+5.  Dans le **nom** colonne et double-clic **Internet Information Services (IIS) Manager**.  
   
 6.  Dans le **connexions** colonne, développez le nœud de votre serveur.  
   
-     A **Sites Web** dossier s’ouvre sous le nom du serveur.  
+     Un **Sites Web** dossier s’ouvre sous le nom du serveur.  
   
 7.  Développez le **Sites Web** nœud et cliquez sur le site Web pour lequel vous souhaitez activer l’authentification Windows intégrée.  
   
@@ -113,9 +113,9 @@ L'authentification de l'utilisateur qui a demandé le débogage a été empêch�
   
 9. Dans le **authentification** volet, dans le **nom** colonne, avec le bouton droit **l’authentification Windows** puis cliquez sur **activer**.  
   
-10. Fermer le **Gestionnaire des Services Internet (IIS)** fenêtre.  
+10. Fermer le **Internet Information Services (IIS) Manager** fenêtre.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage d’Applications Web : Erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [Authentification Digest de Microsoft](http://go.microsoft.com/fwlink/?LinkId=77938)   
- [Exécution d’Applications Web sur Windows Vista avec IIS 7.0 et Visual Studio](http://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+ [Authentification Microsoft Digest](http://go.microsoft.com/fwlink/?LinkId=77938)   
+ [Exécution d’Applications Web sur Vista Windows avec IIS 7.0 et Visual Studio](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)

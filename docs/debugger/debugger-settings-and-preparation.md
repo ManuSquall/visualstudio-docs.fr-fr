@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48cc5bfdf53f6a3d6e214b73b46c0fa46267787e
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: d0bde2f36aa644bf9335ce74cf4a1ac3bd433a6c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468297"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282064"
 ---
 # <a name="debugger-settings-and-preparation"></a>Paramètres et préparation du débogueur
 Cette section décrit les paramètres de propriété du débogueur et la préparation nécessaire pour déboguer votre programme à l’aide du débogueur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Si vous créez un programme dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] à l’aide des modèles de projet, ces paramètres sont définis correctement sans votre intervention dans la configuration Debug.  
@@ -46,7 +46,7 @@ Cette section décrit les paramètres de propriété du débogueur et la prépar
  Explique comment déboguer un exécutable qui n’a pas été créé dans le cadre d’un projet Visual Studio.  
   
  [Guide pratique pour déboguer avec une source Code Center Premium](../debugger/how-to-debug-with-code-center-premium-source.md)  
- Décrit comment déboguer la source à partir de Microsoft Code Center Premium dans votre projet Visual Studio.  
+ Décrit comment déboguer une source à partir de Microsoft Code Center Premium dans votre projet Visual Studio.  
   
  [Déboguer des applications 64 bits](../debugger/debug-64-bit-applications.md)  
  Explique comment déboguer des applications 64 bits.  

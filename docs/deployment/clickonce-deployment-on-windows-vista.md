@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4113c2e33e3be97a5102f5e5eca0344087a49c6
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 815186959d4a8cd1daea46c69bda976eb4483c1f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078395"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282584"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Déploiement ClickOnce sur Windows Vista
 
@@ -54,6 +54,6 @@ Visual Studio fournit les options suivantes pour la génération de manifeste :
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)   
- [Autorisations utilisateur et Visual Studio](http://msdn.microsoft.com/en-us/d5c55084-1e7b-4b61-b478-137db01c0fc0)   
+ [Autorisations utilisateur et Visual Studio](https://msdn.microsoft.com/library/d5c55084-1e7b-4b61-b478-137db01c0fc0)   
  [Page Application, Concepteur de projets (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [Page Application, Concepteur de projets (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)

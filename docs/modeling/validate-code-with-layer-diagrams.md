@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 85c7aad0ef5f9374c722a58ec35c001695e55013
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 018b6a2f26f9b83b50498c6a0ec1e560fea94267
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567192"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280686"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Valider du code avec des diagrammes de dépendance
 
@@ -218,7 +218,7 @@ Dans cette version de Visual Studio, validation de dépendance se produit en tem
 
  Pour plus d’informations sur les erreurs de validation, consultez [comprendre et résoudre les erreurs de validation de couche](#UnderstandingValidationErrors). Pour plus d'informations sur [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)], consultez :
 
--   [Build et release](/vsts/build-release/index)
+-   [Pipelines Azure](/azure/devops/pipelines/index)
 
 -   [Utiliser le modèle par défaut pour votre processus de génération](http://msdn.microsoft.com/Library/43930b12-c21b-4599-a980-2995e3d16e31)
 

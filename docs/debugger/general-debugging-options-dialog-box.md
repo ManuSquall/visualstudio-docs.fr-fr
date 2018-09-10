@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 071f6782350a3786b1a3b61b1ef3292d76867531
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e46301c84b1a9b27eed8cb6667b312ff73af2960
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626112"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280635"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Général, Débogage, boîte de dialogue Options
 Le **Outils > Options > Débogage > Général** page vous permet de définir les options décrites dans cet article.
@@ -72,7 +72,7 @@ Dans la condition 2 et 3, l’exception est quelquefois interceptée par le code
   
 - **Appelez la fonction de conversion de chaînes sur des objets dans des fenêtres de variables (C# et JavaScript uniquement)** exécute un appel de conversion de chaînes implicite lors de l’évaluation d’objets dans des fenêtres de variables. Le résultat est affiché sous forme de chaîne au lieu du nom de type. S'applique uniquement lors du débogage en code C#. Ce paramètre peut être substitué par l’attribut DebuggerDisplay (consultez [à l’aide de l’attribut DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
-**Activer le support du serveur source** indique au débogueur Visual Studio pour obtenir des fichiers de code source à partir de serveurs sources qui implémentent le fichier SrcSrv (`srcsrv.dll`) protocole. Team Foundation Server et les outils de débogage pour Windows sont deux serveurs sources qui implémentent le protocole. Pour plus d’informations sur l’installation de SrcSrv, consultez la [SrcSrv](https://msdn.microsoft.com/library/windows/hardware/ff558791(v=vs.85).aspx) documentation. En outre, voir [spécifier de symboles (.pdb) et les fichiers Source](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+**Activer le support du serveur source** indique au débogueur Visual Studio pour obtenir des fichiers de code source à partir de serveurs sources qui implémentent le fichier SrcSrv (`srcsrv.dll`) protocole. Team Foundation Server et les outils de débogage pour Windows sont deux serveurs sources qui implémentent le protocole. Pour plus d’informations sur l’installation de SrcSrv, consultez la [SrcSrv](/windows-hardware/drivers/debugger/srcsrv) documentation. En outre, voir [spécifier de symboles (.pdb) et les fichiers Source](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 > [!IMPORTANT]
 > Étant donné que la lecture de *.pdb* fichiers peut exécuter du code arbitraire dans les fichiers, assurez-vous que vous approuvez le serveur.  

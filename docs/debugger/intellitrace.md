@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ad3344d688159ded35cd8f6c6aa757cc8a7a478
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: 972338fa4b52a61024cabd098c29cd0f5d9c8a4f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623770"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280777"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -46,7 +46,7 @@ Vous pouvez utiliser IntelliTrace dans Visual Studio Enterprise Edition (mais pa
 |||
 |-|-|
 |**Déboguer mon application avec IntelliTrace :**<br /><br /> -Afficher les événements passés.<br />-Afficher des informations avec les événements passés d’appel.<br />-Enregistrer ma session IntelliTrace.<br />-Contrôler les données IntelliTrace collecte.|- [Procédure pas à pas : À l’aide d’IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Fonctionnalités de IntelliTrace](../debugger/intellitrace-features.md)<br />- [Débogage d’historique](../debugger/historical-debugging.md)<br />- [Affichage de clichés à l’aide d’IntelliTrace étape-arrière](../debugger/how-to-use-intellitrace-step-back.md)|
-|**Collecter des données IntelliTrace au cours d’une session de test dans Gestionnaire de tests**|- [Collecter des données de diagnostic plus de tests manuels](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|
+|**Collecter des données IntelliTrace au cours d’une session de test dans Gestionnaire de tests**|- [Collecter des données de diagnostic plus de tests manuels](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests)|
 |**Collecter des données IntelliTrace à partir des applications déployées**|- [L’utilisation du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**Démarrage du débogage depuis un fichier de journal IntelliTrace (.iTrace fichier).**|- [Utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md)|
 
@@ -89,7 +89,7 @@ Vous pouvez enregistrer les données IntelliTrace à partir des sources suivante
 
 - Votre application se bloque sur un ordinateur de test, mais s'exécute correctement sur un ordinateur de développement.
 
-     Vous pouvez collecter les données IntelliTrace avec Microsoft Test Manager, enregistrer les données dans un fichier .iTrace et attacher ce fichier à un élément de travail Team Foundation Server pour un examen approfondi. Voir [collecter les données de diagnostic plus de tests manuels](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests) et [utilisation enregistré des données IntelliTrace](../debugger/using-saved-intellitrace-data.md).
+     Vous pouvez collecter les données IntelliTrace avec Microsoft Test Manager, enregistrer les données dans un fichier .iTrace et attacher ce fichier à un élément de travail Team Foundation Server pour un examen approfondi. Voir [collecter les données de diagnostic plus de tests manuels](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests) et [utilisation enregistré des données IntelliTrace](../debugger/using-saved-intellitrace-data.md).
 
 - Un bogue ou un incident se produit dans une application déployée.
 
@@ -175,7 +175,7 @@ Pour contrôler la quantité d'informations sur les appels qu'IntelliTrace colle
 
 Par défaut, IntelliTrace collecte uniquement les données des événements IntelliTrace sélectionnés. Votre application peut être ralentie ou non, en fonction de la structure et de l'organisation de votre code. Par exemple, si IntelliTrace enregistre souvent un événement, cela peut ralentir votre application. Cela peut aussi vous inciter à refactoriser votre application.
 
-La collecte d'informations sur les appels peut ralentir votre application de manière significative. Cela peut également augmenter la taille des fichiers journaux IntelliTrace (.iTrace) que vous enregistrez sur le disque. Pour minimiser ces effets, collectez des informations sur les appels uniquement pour les modules qui vous intéressent.  Pour modifier la taille maximale de vos fichiers .iTrace, accédez à **outils**, **Options**, **IntelliTrace**, **avancé**.
+La collecte d'informations sur les appels peut ralentir votre application de manière significative. Cela peut également augmenter la taille des fichiers journaux IntelliTrace (.iTrace) que vous enregistrez sur le disque. Pour minimiser ces effets, collectez des informations sur les appels uniquement pour les modules qui vous intéressent.  Pour modifier la taille maximale de vos fichiers .iTrace, accédez à **outils**, **Options**, **IntelliTrace**, **avancé**. 
 
 ## <a name="in-this-section"></a>Dans cette section
 

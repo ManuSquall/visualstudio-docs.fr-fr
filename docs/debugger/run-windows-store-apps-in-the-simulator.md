@@ -1,5 +1,5 @@
 ---
-title: Exécuter les applications UWP dans le simulateur | Documents Microsoft
+title: Exécuter des applications UWP dans le simulateur | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,43 +15,43 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 99881b657f6d3cb6877c7ce6d1fbf80f4eb1d731
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fd0aa403e702a591a0b09d0891116063a3ed9ff2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480659"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281050"
 ---
-# <a name="run-uwp-apps-in-the-simulator"></a>Exécuter les applications UWP dans le simulateur
-Le simulateur de Visual Studio pour applications UWP est une application de bureau qui simule une application UWP. En règle générale, vous devez déboguer sur l’ordinateur local, un appareil connecté ou sur un ordinateur distant. Toutefois, dans certains scénarios, il pouvez que vous souhaitez utiliser le simulateur Visual Studio pour émuler une taille de l’écran physique différent et la résolution. Vous pouvez également simuler la rotation des événements tactiles et courantes et simuler les propriétés de connexion réseau.
+# <a name="run-uwp-apps-in-the-simulator"></a>Exécuter des applications UWP dans le simulateur
+Le simulateur Visual Studio pour les applications UWP est une application de bureau qui simule une application UWP. En règle générale, vous devez déboguer sur l’ordinateur local, un appareil connecté ou un ordinateur distant. Toutefois, dans certains scénarios, vous souhaiterez utiliser le simulateur Visual Studio pour émuler une taille de l’écran physique différent et la résolution. Vous pouvez également simuler rotation événements tactiles et courants et les propriétés de connexion réseau.
   
- Le simulateur fournit un environnement dans lequel vous pouvez concevoir, développer, déboguer et tester les applications UWP. Toutefois, avant de publier votre application sur Microsoft Store, vous devez tester votre application sur un appareil réel.  
+ Le simulateur fournit un environnement dans lequel vous pouvez concevoir, développer, déboguer et tester des applications UWP. Toutefois, avant de publier votre application dans Microsoft Store, vous devez tester votre application sur un appareil réel.  
   
- Le simulateur de Visual Studio pour applications UWP ne s’exécute pas dans un environnement isolé sur votre ordinateur local. Par conséquent, les erreurs qui se produisent dans un simulateur, tel qu'une erreur irrécupérable à l'échelle du système, peuvent également affecter l'ordinateur entier.  
+ Le simulateur Visual Studio pour les applications UWP ne s’exécute pas dans un environnement isolé sur votre ordinateur local. Par conséquent, les erreurs qui se produisent dans un simulateur, tel qu'une erreur irrécupérable à l'échelle du système, peuvent également affecter l'ordinateur entier.  
   
 > [!IMPORTANT]
 >  Le simulateur Visual Studio 2015 n’inclut pas le bouton de géolocalisation. En effet, le simulateur Windows 10 n’inclut pas la simulation de géolocalisation.
   
 ##  <a name="BKMK_Set_the_simulator_as_the_target"></a> Définir un simulateur comme cible  
- Pour exécuter votre application UWP dans le simulateur, sélectionnez **simulateur** à partir de la liste déroulante liste en regard du **démarrer le débogage** bouton du débogueur **Standard** barre d’outils. Cette option est disponible uniquement si votre application **minimale de la plateforme cible. Version** est inférieur ou égal au système d’exploitation sur votre ordinateur de développement. 
+ Pour exécuter votre application UWP dans le simulateur, sélectionnez **simulateur** à partir de la liste déroulante liste en regard du **démarrer le débogage** bouton sur le débogueur **Standard** barre d’outils. Cette option est disponible uniquement si votre application **minimale de la plateforme cible. Version** est inférieur ou égal au système d’exploitation sur votre ordinateur de développement. 
   
  ![En cours d’exécution dans le simulateur](../debugger/media/vsrun_f5_simulator.png "VSRUN_F5_Simulator")  
   
 ##  <a name="BKMK_Choose_an_interaction_mode"></a> Choisir un mode d'interaction  
  Vous avez le choix entre les modes d’interaction suivants  
   
--   ![Bouton de mode](../debugger/media/simulator_mousemodebtn.png "SIMULATOR_MouseModeBtn") mode de la souris : définit le mode d’interaction des mouvements de la souris. Les mouvements de souris incluent les clics, les double-clics et le déplacement d'objets par glissement.  
+-   ![Bouton de mode de la souris](../debugger/media/simulator_mousemodebtn.png "SIMULATOR_MouseModeBtn") mode de la souris : définit le mode d’interaction des mouvements de souris. Les mouvements de souris incluent les clics, les double-clics et le déplacement d'objets par glissement.  
   
--   ![Bouton Démarrer de l’émulation tactile](../debugger/media/simulator_starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn") démarrer l’émulation tactile : définit le mode d’interaction aux entrées tactiles d’un seul doigt. Les événements à un seul doigt incluent la pression simple, le déplacement et le glissement.  
+-   ![Bouton Démarrer de l’émulation tactile](../debugger/media/simulator_starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn") démarrer l’émulation tactile : définit le mode d’interaction d’un seul doigt, les gestes tactiles. Les événements à un seul doigt incluent la pression simple, le déplacement et le glissement.  
   
-     ![Cible à un doigt du simulateur](../debugger/media/simulator_onefinger.png "SIMULATOR_OneFinger") l’icône de cible unique indique l’emplacement des événements dans le simulateur. Utilisez la souris pour positionner le pointeur.  
+     ![Cible un doigt du simulateur](../debugger/media/simulator_onefinger.png "SIMULATOR_OneFinger") l’icône de cible unique indique l’emplacement des événements dans le simulateur. Utilisez la souris pour positionner le pointeur.  
   
-     ![Cible de tactile à un doigt](../debugger/media/simulator_onefingerengaged.png "SIMULATOR_OneFingerEngaged") appuyez sur le bouton gauche de la souris pour activer le mode tactile. Par exemple, cliquez sur le bouton pour simuler une pression simple, ou appuyez sur la touche et maintenez-la enfoncée pendant un déplacement ou un glissement.  
+     ![Cible tactile à un doigt](../debugger/media/simulator_onefingerengaged.png "SIMULATOR_OneFingerEngaged") appuyez sur le bouton gauche de la souris pour activer le mode tactile. Par exemple, cliquez sur le bouton pour simuler une pression simple, ou appuyez sur la touche et maintenez-la enfoncée pendant un déplacement ou un glissement.  
   
 ## <a name="pinch-and-zoom"></a>Pincement de deux doigts pour zoomer  
  Définit le mode d'interaction pour utiliser le pincement de deux doigts pour zoomer.  
   
--   ![Cible de deux doigts du simulateur doigt](../debugger/media/simulator_twofinger.png "SIMULATOR_TwoFinger")  
+-   ![Cible à deux doigts](../debugger/media/simulator_twofinger.png "SIMULATOR_TwoFinger")  
   
      L'icône double cible indique l'emplacement des deux doigts sur l'écran du périphérique.  
   
@@ -97,7 +97,7 @@ Le simulateur de Visual Studio pour applications UWP est une application de bure
 >  Enregistrez les versions mises à l'échelle d'images bitmap dans votre application et Windows chargera l'image appropriée à l'échelle actuelle. Pour plus d’informations, consultez [introduction de conception et de l’interface utilisateur](/windows/uwp/layout/design-and-ui-intro). Toutefois, si vous modifiez la résolution du simulateur pour que Windows sélectionne une image différente en fonction de la résolution, vous devez arrêter et redémarrer la session de débogage pour afficher la nouvelle image.  
   
 ##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Effectuer une capture d’écran de votre application à envoyer au Microsoft Store  
- Quand vous envoyez une application dans Microsoft Store, vous devez inclure des captures d’écran de l’application.  
+ Lorsque vous soumettez une application à Microsoft Store, vous devez inclure des captures d’écran de l’application.  
   
 > [!NOTE]
 >  La capture d'écran est enregistrée dans la résolution en cours du simulateur. Pour modifier la résolution, cliquez sur le bouton **Modifier la résolution** .  
@@ -109,7 +109,7 @@ Le simulateur de Visual Studio pour applications UWP est une application de bure
      ![Menu contextuel des paramètres d’écran](../debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> Simuler des propriétés de connexion réseau  
- Vous pouvez aider les utilisateurs de votre application gérer le coût des connexions réseau limitées en faisant bien comprendre de connexion données ou Coût plan état modifications de réseau et permettant à votre application d’utiliser ces informations pour éviter de subir des frais supplémentaires pour l’itinérance ou supérieure à un limite de transfert de données spécifié. Le [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) API vous permet de répondre aux [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) et [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) les événements qui assurent la connexion. Consultez [Comment gérer les contraintes liées au coût des connexions réseau limitées (HTML)](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
+ Vous pouvez aider les utilisateurs de votre application à gérer le coût des connexions réseau limitées en veillant à rester informé des modifications par connexion réseau coût ou données état de plan et l’activation de votre application d’utiliser ces informations pour éviter d’encourir des frais supplémentaires pour l’itinérance ou supérieure à un limite de transfert de données spécifié. Le [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) API vous permettent de répondre aux [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) et [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) les événements qui se connectent. Consultez [Guide de démarrage rapide : gestion des connexions réseau limitées contraintes liées au coût](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
  Pour déboguer ou tester votre code prenant en charge les coûts de réseau, le simulateur peut simuler les propriétés d’un réseau qui sont exposées par le [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) objet retourné par [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation).
   
@@ -125,7 +125,7 @@ Le simulateur de Visual Studio pour applications UWP est une application de bure
   
 4.  Sélectionnez le [NetworkCostType](/uwp/api/windows.networking.connectivity.networkcosttype) valeur pour le profil à partir de la **Type de coût réseau** liste.  
   
-5.  À partir de la **indicateur d’état de limite de données** la liste, vous pouvez définir le [ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) propriété ou le [OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) sur true, ou vous pouvez choisir  **Sous la limite de données** pour affecter la valeur False.  
+5.  À partir de la **indicateur d’état de limite de données** liste, vous pouvez définir le [ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) propriété ou le [OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) sur true, ou vous pouvez choisir  **Sous la limite de données** pour affecter la valeur False.  
   
 6.  À partir de la **état d’itinérance** liste, définissez la [itinérance](/uwp/api/windows.networking.connectivity.connectioncost) propriété.  
   
@@ -133,20 +133,20 @@ Le simulateur de Visual Studio pour applications UWP est une application de bure
   
  **Pour plus d'informations sur la gestion des connexions réseau**  
   
- [Comment gérer les contraintes liées au coût des connexions réseau limitées (HTML)](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+ [Démarrage rapide : La gestion limitées des contraintes de coût réseau](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
- [Exemple d’informations réseau](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
+ [Exemple informations réseau](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
  [Analyser l’utilisation de l’énergie](../profiling/analyze-energy-use-in-store-apps.md)  
   
  [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)  
   
- [Comment répondre aux événements système avec des tâches en arrière-plan](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
+ [Comment répondre aux événements système avec des tâches en arrière-plan](/previous-versions/windows/apps/hh977058(v=win.10))  
   
- [Comment déclencher des événements d’interruption, de reprise et d’arrière-plan dans des applications UWP](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+ [Comment déclencher des événements d’interruption, de reprise et d’arrière-plan dans des applications UWP](/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Naviguez dans le simulateur à l'aide du clavier  
- Vous pouvez parcourir la barre d’outils du simulateur en appuyant sur **CTRL + ALT + flèche haut** pour déplacer le focus à partir de la fenêtre du simulateur vers la barre d’outils du simulateur. Utilisez **Flèche haut** et **Flèche bas** pour basculer entre les boutons de la barre d'outils.  
+ Vous pouvez accéder à la barre d’outils du simulateur en appuyant sur **CTRL + ALT + flèche haut** pour déplacer le focus à partir de la fenêtre du simulateur vers la barre d’outils du simulateur. Utilisez **Flèche haut** et **Flèche bas** pour basculer entre les boutons de la barre d'outils.  
   
  Vous pouvez arrêter le simulateur en appuyant sur **CTRL + ALT + F4**.  
   

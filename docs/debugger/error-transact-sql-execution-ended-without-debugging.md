@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : L’exécution de Transact-SQL s’est terminée sans débogage | Documents Microsoft'
+title: 'Erreur : L’exécution de Transact-SQL s’est terminée sans débogage | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ccb86621295bb102738e5154f30bd45c6db358
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5e6ae81608ee476e3748fde6830dfaa11c119f7a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474009"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283130"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Erreur : L'exécution de Transact-SQL s'est terminée sans débogage
 Cette erreur se produit lorsque vous essayez de déboguer une procédure Transact-SQL ou SQLCLR et que le débogueur ne reçoit pas de messages de débogage de SQL Server.  
@@ -48,7 +48,7 @@ Cette erreur se produit lorsque vous essayez de déboguer une procédure Transac
 -   Consulter votre administrateur réseau ou de base de données.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Configuration de débogage SQL](http://msdn.microsoft.com/en-us/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   
+ [Configuration du débogage SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))   
  [Comment : définir des autorisations SQL Server pour le débogage](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)   
  [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)   
  [Débogage à distance](../debugger/remote-debugging.md)

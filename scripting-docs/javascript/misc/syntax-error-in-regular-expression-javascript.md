@@ -1,5 +1,5 @@
 ---
-title: Erreur de syntaxe dans l’expression régulière (JavaScript) | Documents Microsoft
+title: Erreur de syntaxe dans l’expression régulière (JavaScript) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,15 +20,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23492c5a5066bf3430430b544b97ee765d26512b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b5f256639fbef222042ca3137eb9d19c2a97d702
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632919"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280375"
 ---
 # <a name="syntax-error-in-regular-expression-javascript"></a>Erreur de syntaxe dans l'expression régulière (JavaScript)
-La structure de votre chaîne de recherche enfreint une ou plusieurs des règles grammaticales d’un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] expression régulière.  
+La structure de votre chaîne de recherche enfreint une ou plusieurs règles grammaticales d’un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] expression régulière.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
@@ -36,5 +36,5 @@ La structure de votre chaîne de recherche enfreint une ou plusieurs des règles
   
 ## <a name="see-also"></a>Voir aussi  
  [Objet d’Expression régulière](../../javascript/reference/regular-expression-object-javascript.md)   
- [Syntaxe d’Expression régulière (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)   
+ [Syntaxe d’Expression régulière (JavaScript)](https://msdn.microsoft.com/library/1400241x)   
  [Méthode compile (Expression régulière)](../../javascript/reference/compile-method-regular-expression-javascript.md)

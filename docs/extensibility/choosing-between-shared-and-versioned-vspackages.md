@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d81aa731a12dedc1237d8af661c718930318f8cd
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 62033dc78e5595cefdf4f3ae39a95e68c64b9ee4
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231494"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283221"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>Choisissez entre les VSPackages partagés et avec contrôle de version
 Différentes versions de Visual Studio peuvent coexister sur le même ordinateur. Packages VS peuvent prendre en charge toute combinaison de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] versions.  
@@ -38,7 +38,7 @@ Différentes versions de Visual Studio peuvent coexister sur le même ordinateur
   
     -   Programmer un VSPackage pour s’adapter à la version de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dans lequel elle s’exécute. Ensuite, si les requêtes de services plus récentes échouer, votre VSPackage peut offrir d’autres services qui sont pris en charge dans les versions antérieures de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
--   Inscrivez votre VSPackage en conséquence. Pour plus d’informations, consultez [l’inscription de VSPackage](../extensibility/internals/vspackage-registration.md) et [l’inscription de VSPackage géré](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
+-   Inscrivez votre VSPackage en conséquence. Pour plus d’informations, consultez [l’inscription de VSPackage](../extensibility/internals/vspackage-registration.md) et [l’inscription de VSPackage géré](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
   
 -   Inscrire des extensions de fichier en conséquence. Pour plus d’informations, consultez [l’inscription des extensions de nom de fichier pour les déploiements côte à côte](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).  
   

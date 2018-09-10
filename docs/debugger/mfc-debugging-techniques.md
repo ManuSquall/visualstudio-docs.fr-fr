@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccaafc15d2aff7e9ecfd32dbdb225d450198780c
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: d22c040857db1b10d084bfdba2e4387071a8ebc1
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059282"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283001"
 ---
 # <a name="mfc-debugging-techniques"></a>Techniques de débogage MFC
 Si vous déboguez un programme MFC, les techniques de débogage suivantes peuvent vous être utiles.  
@@ -83,7 +83,7 @@ _asm int 3
  [Dans cette rubrique](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_The_TRACE_macro"></a> Macro TRACE  
- Pour afficher les messages de votre programme dans la [fenêtre Sortie](../ide/reference/output-window.md)du débogueur, vous pouvez utiliser la macro [ATLTRACE](http://msdn.microsoft.com/Library/c796baa5-e2b9-4814-a27d-d800590b102e) ou la macro MFC [TRACE](http://msdn.microsoft.com/Library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) . De même que les [assertions](../debugger/c-cpp-assertions.md), les macros trace sont actives uniquement dans la version Debug de votre programme et disparaissent après la compilation dans la version Release.  
+ Pour afficher les messages à partir de votre programme dans le débogueur [fenêtre sortie](../ide/reference/output-window.md), vous pouvez utiliser la [ATLTRACE](https://msdn.microsoft.com/Library/c796baa5-e2b9-4814-a27d-d800590b102e) ou la macro MFC [TRACE](https://msdn.microsoft.com/Library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) macro. De même que les [assertions](../debugger/c-cpp-assertions.md), les macros trace sont actives uniquement dans la version Debug de votre programme et disparaissent après la compilation dans la version Release.  
   
  Les exemples suivants présentent certaines utilisations possibles de la macro **TRACE** . À l'instar de `printf`, la macro **TRACE** peut gérer un certain nombre d'arguments.  
   
@@ -119,7 +119,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
  Les MFC fournissent des classes et des fonctions pour détecter la mémoire qui est allouée, mais jamais désallouée.  
   
 ###  <a name="BKMK_Tracking_memory_allocations"></a> Suivi des allocations de mémoire  
- Dans les MFC, vous pouvez utiliser la macro [DEBUG_NEW](http://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) à la place de l'opérateur **new** pour faciliter la localisation des fuites de mémoire. Dans la version Debug de votre programme, `DEBUG_NEW` assure le suivi du nom du fichier et du numéro de ligne pour chaque objet alloué. Lorsque vous compilez une version Release de votre programme, `DEBUG_NEW` est traduit en une opération **new** simple sans les informations de nom de fichier et de numéro de ligne. Ainsi, la vitesse n'est pas pénalisée dans la version Release de votre programme.  
+ Dans MFC, vous pouvez utiliser la macro [DEBUG_NEW](https://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) à la place de la **nouveau** fuites d’opérateur pour aider à localiser la mémoire. Dans la version Debug de votre programme, `DEBUG_NEW` assure le suivi du nom du fichier et du numéro de ligne pour chaque objet alloué. Lorsque vous compilez une version Release de votre programme, `DEBUG_NEW` est traduit en une opération **new** simple sans les informations de nom de fichier et de numéro de ligne. Ainsi, la vitesse n'est pas pénalisée dans la version Release de votre programme.  
   
  Si vous voulez éviter de réécrire le programme entier pour utiliser `DEBUG_NEW` à la place de **new**, vous pouvez définir la macro suivante dans vos fichiers sources :  
   
@@ -138,11 +138,11 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  **Pour activer ou désactiver les diagnostics de la mémoire**  
   
--   Appelez la fonction globale [AfxEnableMemoryTracking](http://msdn.microsoft.com/Library/0a40e0c4-855d-46e2-9577-a8f2346f47db) pour activer ou désactiver l'allocateur de mémoire de diagnostic. Étant donné que les diagnostics de la mémoire se trouvent par défaut dans la bibliothèque de débogage, vous utiliserez normalement cette fonction pour les désactiver provisoirement, ce qui vous permettra d'augmenter la vitesse d'exécution du programme et de réduire la sortie des diagnostics.  
+-   Appelez la fonction globale [AfxEnableMemoryTracking](https://msdn.microsoft.com/Library/0a40e0c4-855d-46e2-9577-a8f2346f47db) pour activer ou désactiver l’allocateur de mémoire de diagnostic. Étant donné que les diagnostics de la mémoire se trouvent par défaut dans la bibliothèque de débogage, vous utiliserez normalement cette fonction pour les désactiver provisoirement, ce qui vous permettra d'augmenter la vitesse d'exécution du programme et de réduire la sortie des diagnostics.  
   
  **Pour sélectionner des fonctionnalités de diagnostic de la mémoire spécifiques avec afxMemDF**  
   
--   Si vous voulez contrôler plus précisément les fonctionnalités de diagnostic de la mémoire, vous pouvez les activer et les désactiver individuellement, de façon sélective, en définissant la valeur de la variable globale MFC [afxMemDF](http://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086). Cette variable peut prendre les valeurs suivantes, comme spécifié par le type énuméré **afxMemDF**:  
+-   Si vous souhaitez un contrôle plus précis sur les fonctionnalités de diagnostic de mémoire, vous pouvez sélectivement activer les fonctionnalités de diagnostic de mémoire et désactiver en définissant la valeur de la variable globale MFC [afxMemDF](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086). Cette variable peut prendre les valeurs suivantes, comme spécifié par le type énuméré **afxMemDF**:  
   
     |Value|Description|  
     |-----------|-----------------|  
@@ -160,7 +160,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> Captures instantanées de la mémoire  
   
-1.  Créer un [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) objet et appelez le [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint) fonction membre. Le premier instantané de la mémoire est alors créé.  
+1.  Créer un [CMemoryState](/previous-versions/visualstudio/visual-studio-2010/2ads32e2(v=vs.100)) objet et appelez le [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint) fonction membre. Le premier instantané de la mémoire est alors créé.  
   
 2.  Une fois que le programme a effectué ses opérations d'allocation et de libération de mémoire, créez un autre objet `CMemoryState` et appelez `Checkpoint` pour cet objet. Vous obtenez ainsi un deuxième instantané de l'utilisation de la mémoire.  
   
@@ -436,9 +436,9 @@ pMyPerson->Dump( afxDump );
   
     1.  Dans le  **\<projet > Pages de propriétés** boîte de dialogue, cliquez sur le **Configuration Manager** bouton.  
   
-    2.  Dans la [boîte de dialogue Gestionnaire de configurations](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b), localisez votre projet à l'intérieur de la grille. Dans le **Configuration** colonne, sélectionnez  **\<nouveau... >**.  
+    2.  Dans le [boîte de dialogue de Configuration Manager](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)), localisez votre projet dans la grille. Dans le **Configuration** colonne, sélectionnez  **\<nouveau... >**.  
   
-    3.  Dans la [boîte de dialogue Nouvelle configuration de projet](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), tapez un nom pour votre nouvelle configuration (par exemple, « Débogage partiel ») dans la zone **Nom de la configuration de projet** .  
+    3.  Dans le [boîte de dialogue Nouvelle Configuration de projet](/previous-versions/visualstudio/visual-studio-2010/0eh8w4cf(v=vs.100)), tapez un nom pour votre nouvelle configuration, tels que « Débogage partiel », dans le **nom de Configuration de projet** boîte.  
   
     4.  Dans la liste **Copier les paramètres à partir de** , cliquez sur **Release**.  
   
