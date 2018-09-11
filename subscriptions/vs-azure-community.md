@@ -9,12 +9,12 @@ description: Découvrez l’avantage Azure Community inclus dans certains abonne
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ded290950425801f4e75dc03156f4260db264cfd
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 2fd37e00e447a380dc35557f2601d570b7eccbf5
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280375"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289395"
 ---
 # <a name="azure-community"></a>Communauté Azure
 
@@ -37,16 +37,16 @@ Il est facile de bien démarrer avec la Communauté Azure.
 1. Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Recherchez la vignette Communauté Azure dans la section Support, puis cliquez sur le lien **Obtenir de l’aide**.
-
-   ![Vignette Communauté Azure](_img/vs-azure-community/vs-azure-community-tile.png)
+    > [!div class="mx-imgBorder"]
+    >![Vignette de la Communauté Azure](_img/vs-azure-community/vs-azure-community-tile.png)
 
 3. La liste des forums disponibles s’affiche.  Cliquez simplement sur le forum de votre choix.
-
-   ![Forums Communauté Azure](_img/vs-azure-community/vs-azure-community-forums.png)
+    > [!div class="mx-imgBorder"]
+    > ![Communauté Azure, Forums](_img/vs-azure-community/vs-azure-community-forums.png)
 
 4.  Dans le forum, vous pouvez afficher les rubriques et les réponses, recherchez des réponses à vos questions ou poser une nouvelle question.
-
-   ![Exemple Communauté Azure](_img/vs-azure-community/vs-azure-community-example.png)
+    > [!div class="mx-imgBorder"]
+    > ![Communauté Azure, Exemple](_img/vs-azure-community/vs-azure-community-example.png)
 
 ## <a name="eligibility"></a>Éligibilité
 La disponibilité de l’avantage Azure Community dépend de votre niveau d’abonnement, comme indiqué ci-dessous :

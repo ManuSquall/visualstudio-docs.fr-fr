@@ -1,28 +1,28 @@
 ---
 title: EditorConfig
 description: Utilisation d’un fichier editorconfig pour assurer la cohérence des styles de codage de projet dans Visual Studio pour Mac.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: 336ec5ef0779bcd67302bea7b51851dced531a7d
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: a2f813bee641b55b52ad3611c155bd273345ba73
+ms.sourcegitcommit: 9e796d8a8b737ed9d5bf024db89b1abf99ea809b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957387"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "43224059"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Création et modification d’un fichier EditorConfig personnalisé
 
-Dans Visual Studio pour Mac, vous pouvez ajouter un fichier [EditorConfig](http://editorconfig.org/) à votre projet ou code base pour que tous les utilisateurs qui travaillent dans le code base utilisent des styles de codage cohérents. Les paramètres déclarés dans le fichier EditorConfig sont prioritaires par rapport aux paramètres globaux de l’éditeur de texte Visual Studio. L’utilisation d’un fichier EditorConfig dans votre projet ou code base vous permet de définir un style de codage, des préférences et des avertissements pour votre projet. Tous les utilisateurs de Visual Studio pour Mac peuvent ainsi adhérer plus facilement aux pratiques de codage d’un projet.
+Dans Visual Studio pour Mac, vous pouvez ajouter un fichier [EditorConfig](http://editorconfig.org/) à votre projet ou votre solution pour permettre à tous ceux qui travaillent dans le code base d’utiliser des styles de codage cohérents. Les paramètres déclarés dans le fichier EditorConfig sont prioritaires sur les paramètres globaux de l’éditeur de texte de Visual Studio pour Mac. L’utilisation d’un fichier EditorConfig dans votre projet ou code base vous permet de définir le style de codage, les préférences et les avertissements relatifs à votre projet. Dans la mesure où le fichier fait partie de votre code base, il est plus facile pour l’ensemble des utilisateurs d’adhérer aux pratiques de codage d’un projet, quel que soit l’IDE ou l’éditeur de code utilisé.
 
 Les fichiers [EditorConfig](http://editorconfig.org/) sont pris en charge sur de nombreux IDE et éditeurs de code, notamment Visual Studio 2017. 
 
 ## <a name="supported-settings"></a>Paramètres pris en charge
 
-L’éditeur de Visual Studio prend en charge l’ensemble principal des [propriétés d’EditorConfig](http://editorconfig.org/#supported-properties) :
+L’éditeur de Visual Studio pour Mac prend en charge le jeu principal de [propriétés EditorConfig](http://editorconfig.org/#supported-properties) :
 
 - `indent_style`
 - `indent_size`
@@ -33,19 +33,25 @@ L’éditeur de Visual Studio prend en charge l’ensemble principal des [propri
 - `insert_final_newline`
 - `root`
 
-EditorConfig prend également en charge la [mise en forme du style de code](https://docs.microsoft.com/visualstudio/ide/editorconfig-code-style-settings-reference) en C#.
+EditorConfig prend également en charge les [conventions de codage](https://docs.microsoft.com/visualstudio/ide/editorconfig-code-style-settings-reference) en C#.
 
 ## <a name="add-an-editorconfig-file-to-a-project"></a>Ajouter un fichier EditorConfig à un projet
 
 ### <a name="adding-a-new-editorconfig-file"></a>Ajout d’un nouveau fichier EditorConfig
 
-1. Ouvrez votre projet dans Visual Studio pour Mac. Sélectionnez le nœud de projet auquel vous souhaitez ajouter des fichiers.
+1. Ouvrez votre projet dans Visual Studio pour Mac. Sélectionnez la solution ou le nœud de projet auquel vous souhaitez ajouter le fichier EditorConfig. L’ajout du fichier au répertoire de la solution permet d’appliquer les paramètres du fichier .editorconfig à tous les projets de la solution. 
 
-2. Une fois le nœud de projet sélectionné, cliquez sur **Fichier > Nouveau fichier** dans la barre de menus pour ouvrir la boîte de dialogue **Nouveau fichier**.
+2. Cliquez avec le bouton droit sur le nœud, puis sélectionnez **Ajouter > Nouveau fichier** pour ouvrir la boîte de dialogue **Nouveau fichier** :
+
+    ![Éléments de menu de contenu](media/editorconfig-image0.png)
 
 3. Choisissez **Divers > Fichier texte vide** et donnez-lui le **Nom** `.editorconfig`. Appuyez sur **Nouveau** pour créer le fichier et l’ouvrir dans l’éditeur :
 
     ![Boîte de dialogue Nouveau fichier](media/editorconfig-image1.png)
+
+    L’ajout de l’élément au niveau de la solution permet de le créer et de l’imbriquer automatiquement dans un dossier **Éléments de solution** :
+
+    ![Élément de solution affiché dans le panneau Solutions](media/editorconfig-image1a.png)
 
 4. Modifiez le fichier. Exemple :
 
@@ -64,28 +70,40 @@ EditorConfig prend également en charge la [mise en forme du style de code](http
     csharp_new_line_before_open_brace = none
     ```
 
-4. Le fait d’ajouter le fichier ne met pas automatiquement à jour vos paramètres. Pour refléter les paramètres du fichier `.editorconfig`, sélectionnez le nœud de projet et choisissez **Edition > Mettre en forme > Mettre en forme le document** dans la barre de menus :
+4. Les paramètres du fichier `.editorconfig` s’appliquent au nouveau code que vous écrivez. Toutefois, vous devrez peut-être remettre en forme le code existant pour qu’il soit cohérent par rapport aux nouveaux paramètres. Pour appliquer les paramètres du fichier `.editorconfig` à un fichier source existant, ouvrez le fichier, puis choisissez **Edition > Format > Mettre le document en forme** dans la barre de menus :
 
     ![Élément de menu Mettre en forme le document](media/editorconfig-image2.png)
 
 ### <a name="adding-an-existing-editorconfig-file"></a>Ajout d’un fichier EditorConfig existant
 
-Si votre projet ou solution contient déjà un fichier `.editorconfig`, aucune intervention de votre part n’est nécessaire pour appliquer les paramètres. Les nouvelles lignes de code sont mises en forme conformément aux paramètres EditorConfig. Bien que Visual Studio pour Mac respecte les fichiers `.editorconfig` au niveau de la solution, il est possible qu’ils n’apparaissent pas dans le Panneau Solutions étant donné que les fichiers commençant par `.` sont masqués dans macOS.
+Si votre projet ou solution contient déjà un fichier `.editorconfig`, aucune intervention de votre part n’est nécessaire pour appliquer les paramètres. Les nouvelles lignes de code sont mises en forme conformément aux paramètres EditorConfig. 
 
-Vous pouvez réutiliser un fichier `.editorconfig` existant dans votre projet. Pour ajouter un fichier existant, vous devez d’abord afficher les fichiers masqués dans le Finder en entrant la commande suivante dans **Terminal** :
+Vous pouvez réutiliser un fichier `.editorconfig` existant dans votre projet. Pour ajouter un fichier existant, effectuez ce qui suit :
 
-```bash
-$ defaults write com.apple.Finder AppleShowAllFiles true
-$ killall Finder
-```
+1. Cliquez avec le bouton droit sur le dossier à ajouter, puis sélectionnez **Ajouter > Ajouter des fichiers**.
 
-Une fois le fichier `.editorconfig` visible, faites-le glisser sur votre nœud de projet. Quand la boîte de dialogue suivante s’affiche, sélectionnez l’option **Copier le fichier dans le répertoire** et sélectionnez **OK** :
+2. Accédez au répertoire du fichier nécessaire. 
 
-![Élément de menu Mettre en forme le document](media/editorconfig-image3.png)
+3. Les fichiers qui commencent par `.` (par exemple `.editorconfig`) sont des fichiers masqués dans macOS. Vous devez donc appuyer sur **Commande + Maj + .** pour rendre le fichier `.editorconfig` visible.
 
-Pour refléter les paramètres du fichier `.editorconfig`, sélectionnez le nœud de projet et choisissez **Edition > Mettre en forme > Mettre en forme le document** dans la barre de menus.
+4. Sélectionnez le fichier `.editorconfig`, puis cliquez sur **Ouvrir** :
+
+    ![fenêtre d’ajout de nouveau fichier](media/editorconfig-image3b.png)
+
+5. Quand la boîte de dialogue suivante s’affiche, sélectionnez l’option **Copier le fichier dans le répertoire** et sélectionnez **OK** :
+
+    ![Options de la boîte de dialogue Ajouter un fichier à un dossier](media/editorconfig-image3.png)
+
+### <a name="reflecting-editorconfig-settings"></a>Reflet des paramètres du fichier .editorconfig
+
+Une fois que vous avez ajouté un fichier EditorConfig à votre code base, tout nouveau code ajouté est automatiquement mis en forme en fonction des paramètres spécifiés. Le code existant ne reflète pas automatiquement les paramètres, sauf si vous mettez en forme le code base.
+
+Pour refléter les paramètres du fichier `.editorconfig`, sélectionnez le nœud de solution, puis choisissez **Edition > Format > Mettre le document en forme** dans la barre de menus :
+
+![Option Mettre le document en forme de la barre de menus](media/editorconfig-image3a.png)
 
 ## <a name="editing-an-editorconfig-file"></a>Modification d’un fichier EditorConfig
+
 
 Pour spécifier des paramètres, les fichiers EditorConfig utilisent une disposition de fichier simple qui est expliquée ci-dessous au moyen d’un exemple précédent :
 
@@ -123,7 +141,7 @@ Pour plus d’informations sur les paramètres EditorConfig disponibles, consult
 
 ## <a name="override-editorconfig-settings"></a>Substituer les paramètres d’EditorConfig
 
-Vous pouvez avoir plusieurs fichiers `.editorconfig` dans chaque solution. Visual Studio pour Mac lit les fichiers `.editorconfig` de haut en bas dans la solution, ajoutant et substituant des paramètres au fur et à mesure. Cela signifie que les paramètres dans le fichier `.editorconfig` _le plus près_ du fichier que vous modifiez sont prioritaires. 
+Vous pouvez avoir plusieurs fichiers `.editorconfig` dans chaque solution. Visual Studio pour Mac lit les fichiers `.editorconfig` de haut en bas dans la solution, en ajoutant et en remplaçant les paramètres au fur et à mesure. Cela signifie que les paramètres de `.editorconfig` _les plus proches_ du fichier que vous modifiez sont prioritaires. Les paramètres sont extraits du fichier `.editorconfig` du même dossier (s’il existe), puis de `.editorconfig` dans le dossier parent (s’il existe), etc. jusqu’à ce que `root=true` soit trouvé.  
 
 Pour être sûr _qu’aucun_ paramètre de fichiers `.editorconfig` de niveau supérieur n’est appliqué à cette partie du code base, ajoutez la propriété `root=true` au fichier `.editorconfig` de niveau inférieur :
 

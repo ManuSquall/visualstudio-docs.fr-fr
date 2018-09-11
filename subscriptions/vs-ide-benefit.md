@@ -9,12 +9,12 @@ description: Découvrez comment télécharger et installer l’IDE de Visual Stu
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 571bca9d5192f8499d36819299e76648beebe1a6
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: f65deb92684f043597256d8e2f0664f18da9cfa1
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282624"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289339"
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>Utilisation de l’avantage Visual Studio 2017
 
@@ -28,34 +28,36 @@ En tant qu’abonné Visual Studio, vous avez accès à l’IDE de Visual Studio
 Pour télécharger l’IDE :
 1. Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Recherchez la vignette IDE Visual Studio dans la section Outils et cliquez sur le lien **Télécharger** en bas de la vignette de l’avantage.  Vous pouvez également télécharger l’avantage à partir de la page [Téléchargements](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
-
-    ![Vignette Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Vignette de Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-tile.png)
 
 3.  Vous êtes ensuite redirigé vers la page Télécharger les résultats pour Visual Studio Enterprise, où vous pouvez télécharger l’IDE et obtenir une clé de produit pour l’activer. Vous pouvez également demander une clé de produit en cliquant sur le lien bleu **Obtenir une clé** ou en demander une ultérieurement à partir de la page [Clés de produit](https://my.visualstudio.com/productkeys).
 4.  Sous l’onglet Détails de la page Télécharger les résultats :
     - Sélectionnez votre architecture (x86, x64).
     - Sélectionnez la langue souhaitée.
 5.  Cliquez sur le bouton bleu de téléchargement.
-    ![Détails du téléchargement de Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-download-details.png)
+    > [!div class="mx-imgBorder"]
+    > ![Détails du téléchargement de Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-download-details.png)
 6.  Pour démarrer l’installation, cliquez sur **Exécuter**.
 7.  Dans la boîte de dialogue Contrôle de compte d’utilisateur, cliquez sur **Oui**.
 8.  Cliquez sur **Continuer** pour accepter les termes du contrat de licence.
 9.  Au démarrage du programme d’installation, choisissez les charges de travail, les composants individuels et les modules linguistiques souhaités sous les onglets correspondants.
-    ![Personnaliser Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-customize-install-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Personnaliser Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-customize-install-cropped.png)
 
 10.  Cliquez sur **Installer**.
 
 11. À la fin de l’installation, vous avez le choix de modifier l’installation ou de lancer Visual Studio.  Cliquez sur **Lancer** pour démarrer.
-
-    ![Lancement de Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-launch-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Lancer Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-launch-cropped.png)
 
 12. Connectez-vous avec le compte associé à votre abonnement Visual Studio.
 
 13. Choisissez votre thème par défaut, puis cliquez sur **Démarrer Visual Studio**.
 
 14. La page de démarrage s’affiche.  Vous êtes prêt à commencer à utiliser Visual Studio !
-
-    ![Commencer à utiliser Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-start-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Commencer à utiliser Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-start-cropped.png)
 
 ## <a name="eligibility"></a>Éligibilité
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
