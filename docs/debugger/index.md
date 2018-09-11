@@ -7,12 +7,12 @@ ms.technology: vs-ide-debug
 ms.author: mikejo
 author: mikejo5000
 manager: douge
-ms.openlocfilehash: ba5cad803a49b97d193d156e46c6235d7c5f8312
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 1fd0777cdb30a5a458a0578129cf22607fd8c1e3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303294"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281206"
 ---
 # <a name="debugging-in-visual-studio"></a>Débogage dans Visual Studio
 
@@ -206,7 +206,7 @@ Le débogueur Visual Studio vous permet d’observer le comportement de votre pr
 
 <ul class="panelContent cardsW">
     <li>
-        <a href="https://msdn.microsoft.com/library/ee661590.aspx">
+        <a href="/visualstudio/debugger/api-reference-for-intellitrace-extensibility">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
