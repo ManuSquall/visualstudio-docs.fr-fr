@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb3eda4cc3e8615312353cae064e9179514820c4
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: ca90a78643b8abc1f73ca61da3d1627261fff59c
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280222"
+ms.locfileid: "44321162"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénario : modifier votre conception à l'aide de la visualisation et de la modélisation
 
@@ -244,7 +244,7 @@ Consultez :
 
 - [Utiliser la gestion de version](http://go.microsoft.com/fwlink/?LinkID=525605)
 
-- [Pipelines Azure](/azure/devops/pipelines/index)
+- [Pipelines Azure](/azure/devops/pipelines/index?view=vsts)
 
 ## <a name="update-the-system-using-visualization-and-modeling"></a>Mettre à jour le système à l’aide de visualisation et modélisation
 

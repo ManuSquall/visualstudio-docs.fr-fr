@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8400ce0d407af2318c4fffa19bc2b41e23f034d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 40e265e5bdc453ec658de16f288e9c184979975f
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284132"
+ms.locfileid: "44321253"
 ---
 # <a name="using-the-code-metrics-results-window"></a>À l’aide de la fenêtre Résultats des métriques de Code
 
@@ -102,9 +102,9 @@ Vous pouvez sélectionner et copier une ligne sélectionnée de données de mét
 
 ## <a name="creating-a-work-item-based-on-code-metric-results"></a>Création d’un élément de travail selon les résultats de métrique du code
 
-Vous pouvez créer un [Azure tableaux](/azure/devops/boards/index) élément de travail qui est basée sur des résultats dans le **Code Metric Results** fenêtre. Lorsque l’élément de travail est créé, Visual Studio insère automatiquement un titre dans le **titre** données de métrique du code et de champ sous la **historique** onglet.
+Vous pouvez créer un [Azure tableaux](/azure/devops/boards/index?view=vsts) élément de travail qui est basée sur des résultats dans le **Code Metric Results** fenêtre. Lorsque l’élément de travail est créé, Visual Studio insère automatiquement un titre dans le **titre** données de métrique du code et de champ sous la **historique** onglet.
 
-Pour plus d’informations sur les forums Azure des éléments de travail, consultez [des éléments de travail](/azure/devops/boards/work-items/index).
+Pour plus d’informations sur les forums Azure des éléments de travail, consultez [des éléments de travail](/azure/devops/boards/work-items/index?view=vsts).
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>Pour créer un élément de travail basé sur un résultat
 
