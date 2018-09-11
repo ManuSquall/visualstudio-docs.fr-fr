@@ -9,12 +9,12 @@ dev_langs:
 - CPP
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: e6b4da669b37be1781b5b1067bd55ba9cf6a15b5
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: f7a802fc1d2a83d3618d19254900a9b3dacb7f7c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43231083"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279867"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>À l’aide des vérificateurs C++ Core Guidelines
 Les recommandations C++ Core Guidelines sont un ensemble portable d’instructions, des règles et des meilleures pratiques sur le codage en C++ créé par les concepteurs et les experts de C++. Visual Studio prend actuellement en charge un sous-ensemble de ces règles dans le cadre de ses outils d’analyse de code C++. Les vérificateurs d’indication core sont installés par défaut dans Visual Studio 2017 et sont [disponible comme package NuGet pour Visual Studio 2015](#vs2015_corecheck).
@@ -236,7 +236,7 @@ Vous devez définir quelques variables d’environnement et utilisez les options
 
 #### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project-in-visual-studio-2015"></a>Pour ajouter le package de Microsoft.CppCoreCheck à votre projet dans Visual Studio 2015
 
-1.  Dans **l’Explorateur de solutions**, avec le bouton droit pour ouvrir le menu contextuel de votre projet dans la Solution que vous souhaitez ajouter le package. Choisissez **gérer les Packages NuGet** pour ouvrir le **Gestionnaire de Package NuGet**.
+1.  Dans **l’Explorateur de solutions**, avec le bouton droit pour ouvrir le menu contextuel de votre projet dans la solution que vous souhaitez ajouter le package. Choisissez **gérer les Packages NuGet** pour ouvrir le **Gestionnaire de Package NuGet**.
 
 2.  Dans le **Gestionnaire de Package NuGet** fenêtre, recherchez Microsoft.CppCoreCheck.
 
