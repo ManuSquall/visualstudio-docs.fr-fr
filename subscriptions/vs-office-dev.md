@@ -3,18 +3,18 @@ title: Avantage Office 365 Développeur dans les abonnements Visual Studio | Mic
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 11/12/2018
+ms.date: 11/12/2017
 ms.topic: Get-Started-Article
 description: Découvrez l’avantage Office 365 Développeur inclus dans votre abonnement Visual Studio.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1d7bd3c76bc92bd10b7ec7a814fb4819f48b5c4b
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 5adf9a2a91f3d40c3df04a365278d6d19e59e8a6
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280544"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289547"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Avantage de l’abonnement Office 365 Développeur dans les abonnements Visual Studio
 
@@ -29,28 +29,28 @@ Les abonnés avec des abonnements Visual Studio Enterprise sélectionnés reçoi
 3. Une fois le processus de connexion terminé, la page des avantages des abonnements est normalement affichée.  Si vous avez plusieurs abonnements, vous pouvez basculer entre les abonnements en cliquant sur la flèche déroulante dans le coin supérieur droit, sous le ruban noir.  La vignette de l’avantage Abonnement Office 365 Développeur se trouve dans la catégorie Outils.  Utilisez la flèche à droite de la ligne de vignettes pour faire défiler jusqu’à ce que la vignette Office soit visible.
 
 4. Recherchez la vignette de l’abonnement Office 365 Développeur dans la section Outils.  Cliquez sur le lien **Obtenir un code** en bas de la vignette de l’avantage.   Une fois le code récupéré, cliquez sur **Activer**.
-
-    ![Vignette Avantage Office 365 Développeur](_img\vs-office-dev\vs-office-dev-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Vignette de l’avantage Office 365 Développeur](_img\vs-office-dev\vs-office-dev-tile.png)
 
 5.  L’étape suivante consiste à créer un compte.  Entrez vos informations de contact, puis cliquez sur **Suivant**.
-
-    ![Compte Avantage Office 365 Développeur](_img\vs-office-dev\vs-office-dev-account-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Avantage Office 365 Développeur, Compte](_img\vs-office-dev\vs-office-dev-account-cropped.png)
 
 6.  Spécifiez les informations demandées sur l’endroit où vous voulez utiliser l’abonnement, puis cliquez sur **Suivant**.  Les informations sont utilisées pour déterminer la disponibilité de l’abonnement et les taxes applicables.
-
-    ![Avantage Office 365 Développeur : Informations de contact](_img\vs-office-dev\vs-office-dev-contact-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Avantage Office 365 Développeur, Informations de contact](_img\vs-office-dev\vs-office-dev-contact-cropped.png)
 
 7.  Créez le nom d’utilisateur et le mot de passe pour votre compte.
-
-    ![Avantage Office 365 Développeur : Nom d’utilisateur](_img\vs-office-dev\vs-office-dev-username-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Avantage Office 365 Développeur, Nom d’utilisateur](_img\vs-office-dev\vs-office-dev-username-cropped.png)
 
 8.  Entrez un numéro de téléphone, et choisissez si vous voulez recevoir votre code via un appel téléphonique ou un SMS.  Ceci nous permet de vérifier que le compte est créé par une personne réelle. Entrez le code reçu, puis cliquez sur **Suivant**.
 
 9.  À ce stade, vous pouvez être invité à vous connecter.  Si plusieurs comptes apparaissent sur la page de connexion d’Office 365, choisissez le compte que vous avez associé à cet abonnement.
 
 10. La page suivante confirme que votre abonnement est disponible pour vous gratuitement.  Cliquez sur **Suivant** pour continuer.
-
-    ![Avantage Office 365 Développeur : Apparence](_img\vs-office-dev\vs-office-dev-price.png)
+    > [!div class="mx-imgBorder"]
+    > ![Avantage Office 365 Développeur, Apparence](_img\vs-office-dev\vs-office-dev-price.png)
 
 11. Lors de la finalisation de « l’étape 3 », vous devez sélectionner une « Méthode de paiement ».  Deux options de paiement sont disponibles.  La première option consiste à ajouter une **Carte de crédit** (comme illustré ci-dessous) ; la deuxième option est **Facture**.  Dans les deux cas, une commande de 0,00 $ est envoyée quand vous cliquez sur **Passer une commande**.
 
@@ -58,8 +58,8 @@ Les abonnés avec des abonnements Visual Studio Enterprise sélectionnés reçoi
     > Les abonnés qui ne souhaitent pas fournir de carte de crédit peuvent sélectionner la méthode de paiement **Facture**.  Vous pouvez également sélectionner **Payer à l’année** pour ne recevoir qu’une seule facture chaque année.
 
 12. À ce stade, vous avez échangé votre avantage Abonnement Office 365 Développeur.  Vous voyez une page confirmant votre commande.  La page contient un lien pour accéder à la [page de connexion](https://portal.office.com "Page de connexion Office 365").  Nous vous recommandons de créer un signet pour la page, pour une utilisation ultérieure.  Il est également recommandé de noter l’ID utilisateur indiqué dans la page.  (Vous recevez aussi un e-mail de bienvenue à l’adresse que vous avez fournie lors de la configuration du compte.)  Cliquez sur **Démarrer la configuration** pour continuer.
-
-    ![Avantage Office 365 Développeur : Commande confirmée](_img\vs-office-dev\vs-office-dev-confirm.png)
+    > [!div class="mx-imgBorder"]
+    > ![Avantage Office 365 Développeur, Commande confirmée](_img\vs-office-dev\vs-office-dev-confirm.png)
 
 ## <a name="eligibility"></a>Éligibilité
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
@@ -86,8 +86,8 @@ R : Configuration de l’avantage de l’abonnement Office 365 Développeur
     > Pour vous connecter à https://portal.office.com, vous devez utiliser votre nouvel identifiant utilisateur lié à l’Abonnement Office 365 Développeur, que vous avez créé à l’étape 7 ci-dessus.
 
 2. Une fois que vous avez cliqué sur **Démarrer la configuration**, « l’étape 1 » vous demande de vous connecter à un domaine dont vous êtes déjà propriétaire ou de continuer à utiliser le locataire configuré lors du processus d’échange.  Dans l’exemple ci-dessous, nous avons choisi de continuer à utiliser notre domaine « appsbyjane2017.onmicrosoft.com ».
-
-    ![Avantage Office 365 Développeur : Centre d’administration](_img\vs-office-dev\vs-office-dev-admin-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Avantage Office 365 Développeur, Centre d’administration](_img\vs-office-dev\vs-office-dev-admin-cropped.png)
 
 
 3.  L’étape 2 permet aux administrateurs d’ajouter des utilisateurs au compte Office 365.  Ajoutez les utilisateurs souhaités, puis cliquez sur **Suivant**.
@@ -104,11 +104,11 @@ R : Configuration de l’avantage de l’abonnement Office 365 Développeur
     - OneDrive Entreprise
 
 5.  Choisissez votre langue préférée et cliquez sur **Installer**.
+    > [!div class="mx-imgBorder"]
+    > ![Avantage Office 365 Développeur, Installer des applications](_img\vs-office-dev\vs-office-dev-install-cropped.png)
 
-    ![Avantage Office 365 Développeur : Installer des applications](_img\vs-office-dev\vs-office-dev-install-cropped.png)
 
-
-6. Cliquez sur **Exécuter** pour commencer l’installation immédiatement, ou cliquez sur **Enregistrer** pour enregistrer le package d’installation sur votre PC et installer plus tard.
+6.  Cliquez sur **Exécuter** pour commencer l’installation immédiatement, ou cliquez sur **Enregistrer** pour enregistrer le package d’installation sur votre PC et installer plus tard.
 
 7.  Quand la boîte de dialogue Contrôle de compte d’utilisateur s’affiche, cliquez sur **Oui** pour autoriser l’installation d’Office sur votre ordinateur.
 

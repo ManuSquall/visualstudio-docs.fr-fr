@@ -9,12 +9,12 @@ description: Découvrez l’avantage Visual Studio App Center inclus dans les ab
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c30bf7ab44728d8a10eaa2f420caddcde154f9d3
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ec1938dca476dcc04c892d183cedbf7f057aef40
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282536"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289529"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center dans les abonnements Visual Studio
 
@@ -29,16 +29,16 @@ La mise en route de Visual Studio App Center est simple.
 1.  Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Recherchez la vignette Visual Studio App Center, puis cliquez sur **Commencer**.
-
-    ![Vignette VS App Center](_img/vs-app-center/vs-app-center-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Vignette de VS App Center](_img/vs-app-center/vs-app-center-tile.png)
 
 3. Créez ensuite un compte.  Vous pouvez utiliser des comptes Microsoft, Google, GitHub ou Facebook existants pour vous connecter, ou créer un compte en fournissant votre nom d’utilisateur, votre adresse e-mail et votre mot de passe.  Cliquez sur **Créer un compte** pour continuer.
-
-    ![Création d’un compte VS App Center](_img/vs-app-center/vs-app-center-create-account.png)
+    > [!div class="mx-imgBorder"]
+    > ![VS App Center, Créer un compte](_img/vs-app-center/vs-app-center-create-account.png)
 
 4. C’est aussi simple que cela.  Cliquez simplement sur **Ajouter une nouvelle organisation** ou sur **Ajouter une nouvelle application** pour commencer.
-
-    ![Portail VS App Center](_img/vs-app-center/vs-app-center-portal.png)
+    > [!div class="mx-imgBorder"]
+    > ![Portail de VS App Center](_img/vs-app-center/vs-app-center-portal.png)
 
 ## <a name="eligibility"></a>Éligibilité
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |

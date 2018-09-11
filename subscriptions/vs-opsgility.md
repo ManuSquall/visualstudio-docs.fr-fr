@@ -9,12 +9,12 @@ description: Découvrez l’avantage Opsgility inclus dans l’abonnement Visual
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f166fe0555bf7eea68927d8c93cdea9790561368
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 036c063aa49f3f5221736f35cb3ada35f854c325
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380308"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289431"
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Avantage Opsgility dans les abonnements Visual Studio
 
@@ -26,17 +26,17 @@ Les abonnements Visual Studio sélectionnés incluent un an d’accès à la for
 2.  Recherchez la vignette Opsgility dans la section Outils de la page Avantages, puis cliquez sur le lien **Activer** en bas de la vignette de l’avantage.
 
 3.  Pour utiliser votre avantage Opsgility, cliquez sur le lien **Obtenir un code** en bas de la vignette de l’avantage.   Vous recevez une notification confirmant l’envoi du code du coupon.  Cliquez sur **Activer** pour continuer.
-
-    ![Vignette de l’avantage Opsgility](_img\vs-opsgility\vs-opsgility-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Vignette de l’avantage Opsgility](_img\vs-opsgility\vs-opsgility-tile.png)
 
 
 4.  Vous êtes redirigé vers la page de destination [Opsgility Online Training for Visual Studio Enterprise](https://www.opsgility.com/vse).  (Vous pouvez être invité à démarrer une session de discussion avec un membre du support technique.  Si vous ne le souhaitez pas, réduisez cette fenêtre.)  Entrez les informations de contact demandées, puis cliquez sur **S’inscrire**.
+    > [!div class="mx-imgBorder"]
+    > ![Avantage Opsgility, Page de destination](_img\vs-opsgility\vs-opsgility-registration.png)
 
-    ![Avantage Opsgility, Page de destination](_img\vs-opsgility\vs-opsgility-registration.png)
-
-5.  C’est aussi simple que cela !  Vous êtes prêt à commencer la formation.  Pour vous aider à démarrer, une liste de conseils de formation vous sont suggérés à gauche de la page.  Bonne formation !
-
-    ![Avantage Opsgility, Page d’accueil](_img\vs-opsgility\vs-opsgility-home-cropped.png)
+5.  C’est aussi simple que cela !  Vous êtes prêt à commencer la formation.  Pour vous aider à démarrer, une liste de conseils de formation vous sont suggérés à gauche de la page.  Bonne lecture !
+    > [!div class="mx-imgBorder"]
+    > ![Avantage Opsgility, Page d’accueil](_img\vs-opsgility\vs-opsgility-home-cropped.png)
 
 ## <a name="eligibility"></a>Éligibilité
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |

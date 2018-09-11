@@ -9,12 +9,12 @@ description: Découvrez plus d’informations sur l’abonnement de formation Pl
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4ae10da644f61d518370605322fee842d3a4e4a7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 5f1582023032dc3581090937d18feddf428033ca
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380790"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289530"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Avantage Pluralsight dans les abonnements Visual Studio
 
@@ -27,8 +27,8 @@ Le tableau ci-dessous présente les avantages de l’abonnement Pluralsight offe
 
 ## <a name="activation-steps"></a>Étapes d’activation
 1. Pour activer votre abonnement, connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs), puis cliquez sur le lien **Obtenir un code** dans la vignette de l’avantage Pluralsight, située dans la section Professional Development (Développement professionnel).
-
-    ![Vignette de l’avantage Pluralsight](_img\vs-pluralsight\vs-pluralsight-3month-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Vignette de l’avantage Pluralsight](_img\vs-pluralsight\vs-pluralsight-3month-tile.png)
 
     > [!IMPORTANT]
     > Quand vous cliquez sur le lien « Obtenir un code » de la vignette de l’avantage Pluralsight, un message du type suivant peut s’afficher :
@@ -36,40 +36,40 @@ Le tableau ci-dessous présente les avantages de l’abonnement Pluralsight offe
     > **« Remarque : Si vous avez préalablement activé une autre offre Pluralsight par le biais de votre abonnement Visual Studio, vous ne pourrez peut-être pas utiliser ce code pour créer un compte Pluralsight. »**
 
 2. Vous recevez une notification confirmant l’envoi du code du coupon.  Cliquez sur **Activer**.
-
-    ![Avantage Pluralsight, Activer](_img\vs-pluralsight\vs-pluralsight-activate.png)
+    > [!div class="mx-imgBorder"]
+    > ![Avantage Pluralsight, Activer](_img\vs-pluralsight\vs-pluralsight-activate.png)
 
 3.  Vous êtes ensuite redirigé vers la page Pluralsight correspondant à l’avantage inclus dans votre abonnement Visual Studio.  Dans cet exemple, nous allons activer l’avantage fourni avec les appartenances Visual Studio Dev Essentials. Cliquez sur **Activate your benefit** (Activer votre avantage).
-
-    ![Avantage VSDE, Page de destination](_img\vs-pluralsight\vs-pluralsight-vsde-landing.png)
+    > [!div class="mx-imgBorder"]
+    > ![Avantage VSDE, Page de destination](_img\vs-pluralsight\vs-pluralsight-vsde-landing.png)
 
 4.  Sur la page d’activation :
     - Entrez les coordonnées demandées dans le formulaire.
     - Cochez la case pour accepter les conditions d’utilisation et la déclaration de confidentialité.
     - Cliquez sur **I agree, activate benefit** (J’accepte. Activer l’avantage).
-
-    ![Avantage Pluralsight, Activation](_img\vs-pluralsight\vs-pluralsight-create-account-no-code.png)
-
-    ![Avantage Pluralsight, Conditions d’utilisation](_img\vs-pluralsight\vs-pluralsight-terms.png)
+    > [!div class="mx-imgBorder"]
+    > ![Avantage Pluralsight, Activation](_img\vs-pluralsight\vs-pluralsight-create-account-no-code.png)
+    > [!div class="mx-imgBorder"]
+    > ![Avantage Pluralsight, Conditions d’utilisation](_img\vs-pluralsight\vs-pluralsight-terms.png)
 
 5.  La création de votre compte peut prendre plusieurs minutes.  À la fin de cette opération, vous voyez une confirmation s’afficher dans la page et vous recevez un e-mail avec vos informations de connexion.  Cet e-mail vous est envoyé à l’alias que vous avez indiqué au moment de la création du compte.  Si vous ne voyez pas ce message, vérifiez qu’il ne se trouve pas dans vos dossiers de courrier indésirable.
-
-    ![Avantage Pluralsight, Confirmation](_img\vs-pluralsight\vs-pluralsight-confirmation-vse.png)
+    > [!div class="mx-imgBorder"]
+    > ![Avantage Pluralsight, Confirmation](_img\vs-pluralsight\vs-pluralsight-confirmation-vse.png)
 
     > [!NOTE]
     > Si votre compte ne permet pas de bénéficier de nouvelles offres, l’e-mail que vous recevez explique que votre compte n’a pas pu être créé en raison de son inéligibilité.  Il contient également des informations expliquant comment contacter l’équipe de support technique de Pluralsight, à laquelle vous pouvez poser des questions concernant votre compte.
 
 6.  Une fois que votre compte a été créé, vous recevez un e-mail qui contient votre nom d’utilisateur et vous invite à créer un mot de passe.  Entrez votre mot de passe, entrez-le une deuxième fois pour le confirmer, puis cliquez sur **Log in to Pluralsight** (Accéder à Pluralsight).
-
-    ![Avantage Pluralsight, E-mail de bienvenue](_img\vs-pluralsight\vs-pluralsight-welcome-email.png)
+    > [!div class="mx-imgBorder"]
+    > ![Avantage Pluralsight, E-mail de bienvenue](_img\vs-pluralsight\vs-pluralsight-welcome-email.png)
 
 7.  Entrez le nom d’utilisateur fourni dans l’e-mail de bienvenue et le mot de passe que vous venez de créer, puis cliquez sur **Sign in** (Connexion).
-
-    ![Avantage Pluralsight, Connexion](_img\vs-pluralsight\vs-pluralsight-login.png)
+    > [!div class="mx-imgBorder"]
+    > ![Avantage Pluralsight, Connexion](_img\vs-pluralsight\vs-pluralsight-login.png)
 
 8.  C’est tout !  Vous êtes maintenant prêt à commencer votre apprentissage à l’aide des milliers de cours Pluralsight disponibles.
-
-    ![Avantage Pluralsight, Accueil](_img\vs-pluralsight\vs-pluralsight-home.png)
+    > [!div class="mx-imgBorder"]
+    > ![Avantage Pluralsight, Accueil](_img\vs-pluralsight\vs-pluralsight-home.png)
 
 ## <a name="eligibility"></a>Éligibilité
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |

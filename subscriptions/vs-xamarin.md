@@ -9,12 +9,12 @@ description: Découvrez l’abonnement Xamarin University Training inclus dans l
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0ba8ec977c0a59e5ae5406cb6bb381c24338d333
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 631a8e692f494c672b8c0894ca7b8434f11525dd
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281142"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289562"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Avantage Xamarin University Training dans les abonnements Visual Studio
 
@@ -28,12 +28,12 @@ Les membres de Visual Studio Dev Essentials peuvent créer un compte gratuit inc
 ## <a name="activation-steps"></a>Étapes d’activation
 1.  Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2.  Recherchez la vignette Xamarin University Training dans la section Développement professionnel, puis cliquez sur le lien **Activer** en bas à gauche de la vignette de l’avantage.
-
-    <img alt="Xamarin University Training Benefit Tile" src="_img/vs-xamarin/vs-xamarin-tile.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Vignette de l’avantage Xamarin University Training](_img/vs-xamarin/vs-xamarin-tile.png)
 
 3.  Vous allez être redirigé vers une page web Xamarin University intitulée « Xamarin University Mobile Training for Microsoft Visual Studio ».  Cliquez sur **Activer mon abonnement**.
-
-    <img alt="Activate My Subscription Now" src="_img/vs-xamarin/vs-xamarin-activate.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Activer mon abonnement maintenant](_img/vs-xamarin/vs-xamarin-activate.png)
 
     > [!NOTE]
     > Selon la résolution et le niveau d’agrandissement de votre écran, vous devrez peut-être faire défiler la page pour afficher le bouton **Activer mon abonnement**.
@@ -47,24 +47,24 @@ Les membres de Visual Studio Dev Essentials peuvent créer un compte gratuit inc
     > 5. Activez à nouveau l’avantage Xamarin University Training.
 
 4.  Une page de connexion apparaît et vous informe que Xamarin a récemment adopté l’authentification Microsoft.  Cliquez sur **Restez connecté avec Microsoft**.
-
-    <img alt="Connect with Microsoft" src="_img/vs-xamarin/vs-xamarin-connect.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Restez connecté avec Microsoft](_img/vs-xamarin/vs-xamarin-connect.png)
 
 5. Vous êtes ensuite invité à autoriser Xamarin University à vous connecter et à accéder à votre adresse e-mail et profil de base.  Pour confirmer, cliquez sur **Oui**. Vous pouvez modifier ultérieurement les autorisations de l’application si vous le souhaitez.
-
-    <img alt="Approve access" src="_img/vs-xamarin/vs-xamarin-access.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Approuver l’accès](_img/vs-xamarin/vs-xamarin-access.png)
 
     > [!NOTE]
     > Étant donné que la connexion est nécessaire pour profiter de l’avantage Xamarin University, si vous cliquez sur **Non**, vous revenez à la page précédente et vous ne pourrez plus accéder à la formation.
 
 
 6. Un message d’accueil s’affiche sur votre nouveau compte.  Cliquez sur **Commencez votre formation**.
-
-    <img alt="Welcome message" src="_img/vs-xamarin/vs-xamarin-confirm.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Message de bienvenue](_img/vs-xamarin/vs-xamarin-confirm.png)
 
 7. C’est tout !  Le portail de Xamarin University apparaît, et vous êtes prêt à commencer la formation.
-
-     <img alt="Xamarin University portal" src="_img/vs-xamarin/vs-xamarin-portal.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Portail de Xamarin University](_img/vs-xamarin/vs-xamarin-portal.png)
 
 ## <a name="eligibility"></a>Éligibilité
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
