@@ -10,12 +10,12 @@ Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 125f1fe960618648a9a04c5bd787523b86d9260f
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: d55e21a7324143b5bbb60ed714b9c2dc070828ce
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36946924"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279243"
 ---
 # <a name="visual-studio-subscriptions"></a>Abonnements Visual Studio
 
@@ -64,7 +64,7 @@ Les abonnés se connectent à [https://my.visualstudio.com](https://my.visualstu
         </a>
     </li>
     <li>
-        <a href="/vsts/">
+        <a href="/azure/devops/">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -74,7 +74,7 @@ Les abonnés se connectent à [https://my.visualstudio.com](https://my.visualstu
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Visual Studio Team Services</h3>
+                        <h3>Azure DevOps Services</h3>
                     </div>
                 </div>
             </div>
@@ -134,7 +134,7 @@ Les abonnés se connectent à [https://my.visualstudio.com](https://my.visualstu
             </div>
         </div>
         </a>
-    </li>   
+    </li>
 </ul>
 
 ---
@@ -158,7 +158,7 @@ Pour rendre votre abonnement encore plus utile, nous ajoutons et mettons souvent
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Visual Studio pour Mac</li>
                             <li>Team Foundation Server et licence d’accès client TFS</li>
-                        </ul>                        
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -174,11 +174,11 @@ Pour rendre votre abonnement encore plus utile, nous ajoutons et mettons souvent
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
+                            <li><a href="/visualstudio/subscriptions/vs-vsts">Azure DevOps Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-office-dev">Abonnement développeur à Office 365</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-pbi">Compte de développeur Windows</a></li>
                             <li>PowerBI Pro</li>
-                        </ul>                        
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -200,7 +200,7 @@ Pour rendre votre abonnement encore plus utile, nous ajoutons et mettons souvent
                             <li><a href="/visualstudio/subscriptions/vs-tech-support">Incidents traités par le support technique professionnel de Microsoft</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-advisory-chat">Conversation Azure Advisory</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-community">Communauté Azure</a></li>
-                        </ul>                        
+                        </ul>
                     </div>
                 </div>
             </div>
