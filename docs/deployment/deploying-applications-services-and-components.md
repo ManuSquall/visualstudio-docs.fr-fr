@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91dc83a1599058e1357c3ac7869f4284a1fc7fc5
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
-ms.translationtype: HT
+ms.openlocfilehash: 83b6449d3f9fb41280d9e0b051c5baf3edbf5a66
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279113"
+ms.locfileid: "44320551"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Démarrage rapide : Premier aperçu au moment du déploiement dans Visual Studio
 
@@ -45,7 +45,7 @@ Déploiement vers un dossier local est généralement utilisé pour le test ou p
 
     ![Choisissez publier](../deployment/media/quickstart-publish.png)
 
-- **Visual C++ runtime**: vous pouvez déployer le runtime Visual C++ à l’aide de déploiement local ou liaison statique. Pour plus d’informations, consultez [déploiement d’Applications de bureau natives (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
+- **Visual C++ runtime**: vous pouvez déployer le runtime Visual C++ à l’aide de déploiement local ou liaison statique. Pour plus d’informations, consultez [déploiement d’Applications de bureau natives (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
 ## <a name="publish-to-azure"></a>Publier sur Azure
 
@@ -76,7 +76,7 @@ Déploiement vers un dossier local est généralement utilisé pour le test ou p
 
     Vous pouvez également déployer des applications ASP.NET et services dans plusieurs autres façons. Pour plus d’informations, consultez [ASP.NET de déploiement d’applications et services web](http://www.asp.net/aspnet/overview/deployment).
 
-- **Visual C++ runtime**: vous pouvez déployer le runtime Visual C++ à l’aide de déploiement central. Pour plus d’informations, consultez [déploiement d’Applications de bureau natives (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp). 
+- **Visual C++ runtime**: vous pouvez déployer le runtime Visual C++ à l’aide de déploiement central. Pour plus d’informations, consultez [déploiement d’Applications de bureau natives (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp).
 
 - **Bureau de Windows** vous pouvez publier une application de bureau Windows à un serveur web ou un partage de fichiers réseau à l’aide du déploiement ClickOnce. Les utilisateurs peuvent ensuite installer l'application d'un seul clic. Pour plus d’informations, consultez [déployer une application de bureau à l’aide de ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) et [déployer une application native à l’aide de ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
 
@@ -114,7 +114,7 @@ Vous pouvez activer plus sophistiquées de développement et de test en déploya
 
 ## <a name="devops-deployment"></a>Déploiement de DevOps
 
-Dans un environnement d’équipe, vous pouvez utiliser des Pipelines d’Azure pour activer le déploiement continu de votre application. Pour plus d’informations, consultez [Azure Pipelines](/azure/devops/pipelines/index) et [déployer sur Azure](/azure/devops/deploy-azure/index).
+Dans un environnement d’équipe, vous pouvez utiliser des Pipelines d’Azure pour activer le déploiement continu de votre application. Pour plus d’informations, consultez [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) et [déployer sur Azure](/azure/devops/deploy-azure/index?view=vsts).
 
 ## <a name="deployment-for-other-app-types"></a>Déploiement pour les autres types d’application
 
@@ -122,7 +122,7 @@ Dans un environnement d’équipe, vous pouvez utiliser des Pipelines d’Azure 
 | --- | --- | --- |
 | **Application Office** | Vous pouvez publier un complément pour Office à partir de Visual Studio. | [Déployer et publier votre complément Office](https://dev.office.com/docs/add-ins/publish/publish) |
 | **Service WCF ou OData**  | Autres applications peuvent utiliser les services RIA WCF que vous déployez sur un serveur web. | [Développement et le déploiement des Services de données WCF](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **LightSwitch** | LightSwitch n’est plus pris en charge dans Visual Studio 2017, mais pourra être déployé à partir de Visual Studio 2015 et versions antérieures. | [Déploiement d’Applications LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) | 
+| **LightSwitch** | LightSwitch n’est plus pris en charge dans Visual Studio 2017, mais pourra être déployé à partir de Visual Studio 2015 et versions antérieures. | [Déploiement d’Applications LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 
 ## <a name="next-steps"></a>Étapes suivantes
 
