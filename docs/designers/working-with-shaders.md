@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8992886290b33027692476988f47454409eb0643
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e77085c840a7ef52bdf40d0c0491bfdfc9d384c3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078314"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280197"
 ---
 # <a name="work-with-shaders"></a>Utiliser des nuanceurs
 
@@ -33,7 +33,7 @@ Vous pouvez utiliser le concepteur Shader pour créer des nuanceurs de pixels de
 
 Le concepteur Shader enregistre les nuanceurs au format DGSL (Directed Graph Shader Language), format XML basé sur le langage DGML (Directed Graph Markup Language). Vous pouvez appliquer des nuanceurs DGSL directement à des modèles 3D dans l’éditeur de modèle. Toutefois, avant de pouvoir utiliser un nuanceur DGSL dans votre application, vous devez l’exporter dans un format pris en charge par DirectX, par exemple HLSL.
 
-Le langage DGSL étant compatible avec le langage DGML, vous pouvez utiliser des outils conçus pour analyser des documents DGML pour analyser vos nuanceurs DGSL. Pour plus d’informations sur le langage DGML, consultez [Fonctionnement du langage DGML (Directed Graph Markup Language)](http://msdn.microsoft.com/library/ee842619.aspx).
+Le langage DGSL étant compatible avec le langage DGML, vous pouvez utiliser des outils conçus pour analyser des documents DGML pour analyser vos nuanceurs DGSL. Pour plus d’informations sur le langage DGML, consultez [Fonctionnement du langage DGML (Directed Graph Markup Language)](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
 ## <a name="related-topics"></a>Rubriques connexes
 
