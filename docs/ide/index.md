@@ -10,12 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ce4e642f06777fd66a12ebffe5a7f9c9aedacc4e
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: a20e248ae13fa15442c753dfce85b56620505d7d
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131942"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384173"
 ---
 # <a name="visual-studio-documentation"></a>Documentation de Visual Studio
 
@@ -79,7 +79,7 @@ Des didacticiels, des vidéos et d’autres documents vous montrent comment cré
     </li>
 </ul>
 
-<h2>Utiliser Visual Studio en suivant des guides de démarrage rapide de 5 minutes</h2>
+## <a name="experience-visual-studio-with-5-minute-quickstarts"></a>Utiliser Visual Studio en suivant des guides de démarrage rapide de 5 minutes
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -246,7 +246,7 @@ Des didacticiels, des vidéos et d’autres documents vous montrent comment cré
     </li>
 </ul>
 
-<h2>Approfondir en suivant des didacticiels</h2>
+## <a name="go-deeper-with-tutorials"></a>Approfondir en suivant des didacticiels
 
 <!-- Converting to icon48 format, this gets cleaner in YAML -->
 <div class="ico48Case halfStack">
