@@ -18,12 +18,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: ghogen
-ms.openlocfilehash: ffe531cf9dab315a43a37688c2b4e9eddf89b470
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 2f58a6b22aa2e7274c6fcf8d702d264a9a592c33
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008406"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280036"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript dans Visual Studio 2017
 
@@ -255,7 +255,7 @@ VSDoc n’est plus pris en charge. Il est désormais remplacé par [JSDoc](http:
 
 ### <a name="intellisensejs-extensions"></a>Extensions `.intellisense.js`
 
-Avant , vous pouviez créer des [extensions IntelliSense](https://msdn.microsoft.com/en-us/library/hh874692.aspx) pour ajouter des résultats de saisie semi-automatique personnalisés pour des bibliothèques tierces.
+Avant , vous pouviez créer des [extensions IntelliSense](https://msdn.microsoft.com/library/hh874692.aspx) pour ajouter des résultats de saisie semi-automatique personnalisés pour des bibliothèques tierces.
 Ces extensions étaient assez difficiles à écrire, et leur installation et leur référencement étaient peu pratiques. Le nouveau service de langage ne prend donc plus en charge ces fichiers.
 Une autre méthode plus simple consiste à écrire un fichier de définition TypeScript pour offrir les mêmes fonctionnalités IntelliSense que les anciennes extensions `.intellisense.js`.
 Pour en savoir plus sur la création de fichiers de déclaration (`.d.ts`), cliquez [ici](http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html).

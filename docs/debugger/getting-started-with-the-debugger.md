@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 235e9386070d316cd9a4f9751ac1d8f1e8fd92b4
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 8717c8f4c9d4bae12acf576620368b4aac64a185
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42623831"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384225"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Didacticiel : Apprenez à déboguer à l’aide de Visual Studio
 
@@ -31,7 +31,7 @@ Cet article présente les fonctionnalités du débogueur Visual Studio dans une 
 |---------|---------|
 |  ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo")  |    [Regardez une vidéo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) sur le débogage, qui affiche des étapes similaires. |
 
-Bien que l’application de démonstration est c# et C++, les fonctionnalités sont applicables à Visual Basic, JavaScript et d’autres langages pris en charge par Visual Studio (sauf indication contraire). Les captures d’écran sont en c#. Pour basculer entre les exemples de code C++ et c#, utilisez le filtre de langue en haut à droite de la page.
+Bien que l’application de démonstration est c# et C++, les fonctionnalités sont applicables à Visual Basic, JavaScript et d’autres langages pris en charge par Visual Studio (sauf indication contraire). Les captures d’écran sont en c#. Pour basculer entre le code c# et C++ exemple dans cet article, utilisez le filtre de langage dans le coin supérieur droit de cette page.
 
 Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
@@ -286,9 +286,9 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Définissez un point d’arrêt et démarrez le débogueur
 
-1. Dans le `foreach` boucle de la `Main` (fonction) (`for` boucle en C++ `main` fonction), définissez un point d’arrêt en cliquant sur la marge gauche de la première ligne de code.
+1. Dans le `foreach` boucle de la `Main` (fonction) (`for` boucle en C++ `main` fonction), définissez un point d’arrêt en cliquant sur la marge gauche de la ligne de code suivante :
 
-    ![Définissez un point d’arrêt](../debugger/media/get-started-set-breakpoint.png "SetABreakPoint")
+    `shape.Draw()` (ou, `shape->Draw()` dans C++)
 
     Un cercle rouge s’affiche où vous avez défini le point d’arrêt.
 
@@ -296,7 +296,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 6. Appuyez sur **F5** ou **démarrer le débogage** bouton, l’application démarre, et le débogueur exécute jusqu'à la ligne de code où vous avez défini le point d’arrêt.
 
-    ![Atteindre un point d’arrêt](../debugger/media/get-started-hit-breakpoint.png "HitABreakPoint")
+    ![Définir et atteindre un point d’arrêt](../debugger/media/get-started-set-breakpoint.gif)
 
     La flèche jaune représente l’instruction sur laquelle le débogueur a suspendu, ce qui interrompt également l’exécution d’application au même moment (cette instruction n’a pas encore exécuté).
 
@@ -308,9 +308,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 Principalement, nous utilisons ici, des raccourcis clavier, car c’est un bon moyen pour obtenir rapidement à l’exécution de votre application dans le débogueur (commandes équivalentes tels que menu commandes sont affichées entre parenthèses).
 
-1. Appuyez sur **F11** (ou choisissez **Déboguer > pas à pas détaillé**) une fois (plusieurs fois dans c#) jusqu'à ce que vous maintenez le pointeur sur le `shape.Draw` appel de méthode dans le `Main` (méthode) (`shape->Draw` en C++).
-
-1. Appuyez sur **F11** une fois de plus pour avancer dans le code pour le `Rectangle` classe.
+1. Pendant la suspension dans le `shape.Draw` appel de méthode dans le `Main` (méthode) (`shape->Draw` en C++), appuyez sur **F11** (ou choisissez **Déboguer > pas à pas détaillé**) pour faire avancer dans le code pour le `Rectangle` classe.
 
      ![Utilisez F11 pour le code pas à pas détaillé](../debugger/media/get-started-f11.png "détaillé F11")
 
@@ -364,19 +362,19 @@ Cliquez sur le **redémarrer** ![redémarrer une application](../debugger/media/
 
 Quand vous appuyez sur **redémarrer**, il fait gagner du temps par rapport à l’arrêt de l’application et de redémarrer le débogueur. Le débogueur s’arrête sur le premier point d’arrêt est atteint par l’exécution de code.
 
-Le débogueur s’arrête à nouveau sur le point d’arrêt que vous avez défini dans le `foreach` boucle (`for` boucle en C++).
+Le débogueur s’arrête à nouveau sur le point d’arrêt que vous définissez, sur le `shape.Draw()` (méthode) (`shape->Draw()` en C++).
 
 ## <a name="inspect-variables-with-data-tips"></a>Inspecter des variables avec des bulles d’informations
 
 Les fonctionnalités qui vous permettent d’inspecter les variables sont une des fonctionnalités plus utiles du débogueur, et il existe différentes manières de procéder. Souvent, lorsque vous essayez de déboguer un problème, vous essayez de déterminer si les variables sont stocker les valeurs que vous attendez d’avoir à un moment donné.
 
-1. Bien que la mise en pause sur le `foreach` boucle (`for` boucle en C++), appuyez sur **F11** une fois.
-
-1. Placez le curseur sur le `shapes` objet et que vous consultez sa valeur de propriété par défaut, le `Count` propriété.
+1. Pendant la suspension sur la `shape.Draw()` (méthode) (`shape->Draw()` en C++), placez le curseur sur le `shapes` objet et que vous consultez sa valeur de propriété par défaut, le `Count` propriété.
 
 1. Développez le `shapes` objet pour voir toutes ses propriétés, telles que le premier index du tableau `[0]`, qui a la valeur de `Rectangle` (c#) ou une adresse mémoire (C++).
 
-     ![Afficher une bulle](../debugger/media/get-started-data-tip.png "afficher une info-bulle de données")
+     ![Afficher une bulle](../debugger/media/get-started-data-tip.gif "afficher une info-bulle de données")
+
+    Vous pouvez développer davantage les objets pour afficher leurs propriétés, telles que le `Height` propriété du rectangle.
 
     Souvent, lors du débogage, vous souhaitez un moyen rapide de vérifier les valeurs de propriété sur les objets et les conseils de données constituent un bon moyen de le faire.
 
