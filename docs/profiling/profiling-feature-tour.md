@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d48ca35940d9635489d65b18794604c29d7a507
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: aeda3752fdee6ce36094c68758d99c612c82fd76
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626561"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320837"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Démarrage rapide : découvrir les outils de profilage
 
@@ -156,7 +156,7 @@ Voici un tableau qui recense les différents outils proposés par Visual Studio,
 |Outil d’analyse des performances|Bureau Windows|UWP|ASP.NET/ASP.NET Core| 
 |----------------------|---------------------|-------------|-------------|  
 |[Utilisation de la mémoire](../profiling/memory-usage.md)|oui|oui|oui| 
-|[Utilisation de l'UC](../profiling/cpu-usage.md)|oui (voir la remarque)|oui|oui (voir la remarque)|
+|[Utilisation de l'UC](../profiling/cpu-usage.md)|oui|oui|oui|
 |[Utilisation du GPU](../debugger/gpu-usage.md)|oui|oui|non| 
 |[Chronologie de l'application](../profiling/application-timeline.md)|oui|oui|Non|
 |[Conseils sur les performances](../profiling/perftips.md)|oui|oui pour XAML, non pour HTML|oui|

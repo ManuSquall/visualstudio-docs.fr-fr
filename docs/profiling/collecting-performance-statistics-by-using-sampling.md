@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fef6883056affd6ee47da86d8f2860c8c9ca047
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 4085fa30d1732e6943453a85d25fee2638fa0638
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548256"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774628"
 ---
 # <a name="collect-performance-statistics-by-using-sampling"></a>Collecter les statistiques de performances à l’aide de l’échantillonnage
 
@@ -34,11 +34,11 @@ Vous pouvez spécifier la méthode d’échantillonnage à l’aide de l’une d
 
 ## <a name="common-tasks"></a>Tâches courantes
 
-Vous pouvez spécifier des options supplémentaires dans la boîte de dialogue *Session de performance***Pages de propriétés*. Pour ouvrir la boîte de dialogue :
+Vous pouvez spécifier des options supplémentaires dans la boîte de dialogue des _pages de propriétés_**session de performance** . Pour ouvrir la boîte de dialogue :
 
 - Dans l’ **Explorateur de performances**, cliquez avec le bouton droit sur le nom de la session de performance, puis cliquez sur **Propriétés**.
 
- Les tâches du tableau suivant décrivent les options que l’on peut spécifier dans la boîte de dialogue *Session de performance***Pages de propriétés** pour effectuer un profilage à l’aide de la méthode par échantillonnage.
+ Les tâches du tableau suivant décrivent les options que vous pouvez spécifier dans la boîte de dialogue _Session de performance_**Pages de propriétés** quand vous effectuez un profilage à l’aide de la méthode d’échantillonnage.
 
 |Tâche|Contenu associé|
 |----------|---------------------|

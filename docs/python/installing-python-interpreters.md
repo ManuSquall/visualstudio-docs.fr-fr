@@ -1,7 +1,7 @@
 ---
 title: Sélection et installation des interpréteurs Python
 description: La liste complète des interpréteurs Python pris en charge dans Visual Studio, accompagnée d’instructions brèves pour trouver les programmes d’installation associés.
-ms.date: 06/07/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 72cb3872462d4e70cdab7510385a5e903af3f7f5
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: bd52efc61baa2dbdb6d458e87e663233ddd27a79
+ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627252"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43996049"
 ---
 # <a name="install-python-interpreters"></a>Installer les interpréteurs Python
 

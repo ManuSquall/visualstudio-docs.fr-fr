@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b632e4aa7ce26c9a64517cc3a02b17fc3f939b07
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: ae09c6921bc4f6e0b3bb2a91eb9c3972c997d566
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890355"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282168"
 ---
 # <a name="display-data-in-blend"></a>Afficher des données dans Blend
 
@@ -43,7 +43,7 @@ Si vous avez déjà créé des classes qui décrivent la structure de vos donné
 
 Pour générer des exemples de données à partir d’une classe, ouvrez un document XAML, puis, dans le panneau **Données**, cliquez sur le bouton **Créer des exemples de données** ![Icône de création d’exemples de données](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png), puis cliquez sur **Créer un exemple de données à partir de la classe**.
 
-**Regardez une courte vidéo :** ![Icône de lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Créer un exemple de données à partir d’une classe](http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=video&cd=1&cad=rja&uact=8&ved=0CB0QtwIwAA&url=http%3A%2F%2Fchannel9.msdn.com%2FShows%2FInside%2BWindows%2BPhone%2FIWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML&ei=F1oHVNryM4ysogSJ2oDYDw&usg=AFQjCNEYvw1WA1rdF7bfpj5RwMLUs7RCVg).
+**Regardez une courte vidéo :** ![Icône de lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Créer un exemple de données à partir d’une classe](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML).
 
 **Regardez une courte vidéo :** ![Icône de lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Combiner une liaison de données avec Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).
 
@@ -53,7 +53,7 @@ Pour générer des exemples de données à partir d’une classe, ouvrez un docu
 
 ## <a name="show-live-data-in-a-store-or-phone-app"></a>Afficher des données en direct dans une application Windows Store ou Windows Phone
 
-Consultez [Utiliser des données et des fichiers (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx).
+Consultez [Utiliser des données et des fichiers (XAML)](/previous-versions/windows/apps/br229562(v=win.10)).
 
 ## <a name="see-also"></a>Voir aussi
 

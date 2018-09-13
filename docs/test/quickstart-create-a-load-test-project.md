@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8b18a80e8279513db6084852b10568b2327700d5
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 515c5d4c1bd09d65ae23d3d1af2f3183607c6b53
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380495"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320954"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Démarrage rapide : Créer un projet de test de charge
 
@@ -59,7 +59,7 @@ Dans cette section, nous créons un projet de test de charge C#. Vous pouvez ég
 
    **L’Assistant Nouveau test de charge** s’ouvre.
 
-1. Sélectionnez l’option **Test de charge local**, puis choisissez **Suivant**. Vous pouvez découvrir plus d’informations sur les tests de charge basés sur le cloud [ici](/vsts/load-test/get-started-simple-cloud-load-test).
+1. Sélectionnez l’option **Test de charge local**, puis choisissez **Suivant**. Vous pouvez découvrir plus d’informations sur les tests de charge basés sur le cloud [ici](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
 
    ![Assistant Nouveau test de charge - première page](media/load-test-wizard-page-1.png)
 

@@ -5,17 +5,17 @@ ms.date: 08/06/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
-author: dantogno
-ms.author: v-davian
+author: conceptdev
+ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f2bea6bca74fa3c97e6501a44f7d9ea950369d6c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 197701258a47b3edc49f4e9477c6634d17b22920
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639727"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775185"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Journal des modifications (Outils Visual Studio pour Unity, Mac)
 Journal des modifications Visual Studio Tools pour Unity
@@ -27,7 +27,7 @@ Journal des modifications Visual Studio Tools pour Unity
 
 -   **Intégration :**
 
-     -   Solution de contournement pour l’élimination d’un bogue de performances Unity (Unity ayant résolu ce problème).
+     -   Restauration de la solution de contournement d’un bogue de performances Unity corrigé par Unity.
      
 ## <a name="1601"></a>1.6.0.1
  Publiée le 10 juillet 2018
