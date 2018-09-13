@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c8565e6169167089ac425d7c6689c517f5ca61d
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 8a5adc68df8b56d69389807e2e1502b2891c73a0
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567207"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384303"
 ---
 # <a name="code-snippets-schema-reference"></a>Référence de schéma des extraits de code
 
@@ -176,7 +176,7 @@ Regroupe des éléments [CodeSnippet](../ide/code-snippets-schema-reference.md#c
 
 |Élément enfant|Description|
 |-------------------|-----------------|
-|[CodeSnippet, élément](../ide/code-snippets-schema-reference.md#codesnippet)|Élément facultatif. Élément parent pour toutes les données d'extrait de code. Un élément `CodeSnippet` peut ne contenir aucun élément `CodeSnippets` ou en contenir plusieurs.|
+|[CodeSnippet, élément](../ide/code-snippets-schema-reference.md#codesnippet-element)|Élément facultatif. Élément parent pour toutes les données d'extrait de code. Un élément `CodeSnippet` peut ne contenir aucun élément `CodeSnippets` ou en contenir plusieurs.|
 
 ## <a name="declarations-element"></a>Declarations, élément
 
@@ -196,7 +196,7 @@ Spécifie les littéraux et les objets qui composent un extrait de code que vous
 
 |Élément parent|Description|
 |--------------------|-----------------|
-|[Snippet, élément](../ide/code-snippets-schema-reference.md#snippet)|Contient les références, importations, déclarations et code de l'extrait de code.|
+|[Snippet, élément](../ide/code-snippets-schema-reference.md#snippet-element)|Contient les références, importations, déclarations et code de l'extrait de code.|
 
 ## <a name="default-element"></a>Default, élément
 
@@ -279,7 +279,7 @@ Spécifie des informations d'ordre général sur l'extrait de code IntelliSense.
 
 |Élément parent|Description|
 |--------------------|-----------------|
-|[CodeSnippet, élément](../ide/code-snippets-schema-reference.md#codesnippet)|Élément parent pour toutes les données d'extrait de code.|
+|[CodeSnippet, élément](../ide/code-snippets-schema-reference.md#codesnippet-element)|Élément parent pour toutes les données d'extrait de code.|
 
 ## <a name="helpurl-element"></a>HelpUrl, élément
 
@@ -422,7 +422,7 @@ Les littéraux et les objets ne peuvent pas contenir d’élément **ID** avec l
 
 |Élément parent|Description|
 |--------------------|-----------------|
-|[Declarations, élément](../ide/code-snippets-schema-reference.md#declarations)|Contient les littéraux et les objets d'un extrait de code que vous pouvez modifier.|
+|[Declarations, élément](../ide/code-snippets-schema-reference.md#declarations-element)|Contient les littéraux et les objets d'un extrait de code que vous pouvez modifier.|
 
 ## <a name="namespace-element"></a>Namespace, élément
 
@@ -491,7 +491,7 @@ Spécifie des informations sur les références d'assembly requises par l'extrai
 
 |Élément parent|Description|
 |--------------------|-----------------|
-|[References, élément](../ide/code-snippets-schema-reference.md#references)|Élément de regroupement pour les éléments `Reference`.|
+|[References, élément](../ide/code-snippets-schema-reference.md#references-element)|Élément de regroupement pour les éléments `Reference`.|
 
 ## <a name="references-element"></a>References, élément
 

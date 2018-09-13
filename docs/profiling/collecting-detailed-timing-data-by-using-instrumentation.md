@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 156e3c45c0ccbc9ad9393a2baf7536bf317335bc
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: a86b74787a574a1ad54b228c117f6cb598f1eb2b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262830"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775163"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>Collecter les données temporelles détaillées à l’aide de l’instrumentation
 La méthode d’instrumentation des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] injecte le code de profilage dans une copie d’un module. Le code enregistre chaque entrée, sortie et appel des fonctions dans le module pendant une exécution du profilage. La méthode d’instrumentation est utile pour rassembler des informations de temporisation détaillées sur une section de votre code et comprendre l’impact des opérations d’entrée et de sortie sur les performances de l’application.  
@@ -32,11 +32,11 @@ La méthode d’instrumentation des outils de profilage [!INCLUDE[vsprvs](../cod
 -   Dans la page **Général** de la boîte de dialogue Propriétés de la session de performance, sélectionnez **Instrumentation**.  
   
 ## <a name="common-tasks"></a>Tâches courantes
- Vous pouvez spécifier des options supplémentaires dans la boîte de dialogue *Session de performance***Pages de propriétés*. Pour ouvrir la boîte de dialogue :  
+ Vous pouvez spécifier des options supplémentaires dans la boîte de dialogue des _pages de propriétés_**session de performance** . Pour ouvrir la boîte de dialogue :  
   
 -   Dans l’ **Explorateur de performances**, cliquez avec le bouton droit sur le nom de la session de performance, puis cliquez sur **Propriétés**.  
   
- Les tâches du tableau suivant décrivent les options que vous pouvez spécifier dans la boîte de dialogue *Session de performance***Pages de propriétés** quand vous effectuez un profilage à l’aide de la méthode d’instrumentation.  
+ Les tâches du tableau suivant décrivent les options que vous pouvez spécifier dans la boîte de dialogue _pages de propriétés_**session de performance** quand vous effectuez un profilage à l’aide de la méthode d’instrumentation.  
   
 |Tâche|Contenu associé|  
 |----------|---------------------|  

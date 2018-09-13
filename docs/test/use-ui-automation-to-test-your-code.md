@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 396fde582c10640bae95261a696c0d752543fc8d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 491a70cd8ef35a1401bfe0cd8b6118709751d183
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381157"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321201"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Utiliser l’automatisation de l’interface utilisateur pour tester votre code
 
@@ -35,7 +35,7 @@ Comme l’illustre la figure ci-dessous, une expérience de développement typiq
 
 Créer un test codé de l'interface utilisateur est très facile. Il vous suffit d’exécuter le test manuellement pendant que le **Générateur de test codé de l’interface utilisateur** s’exécute en arrière-plan. Vous pouvez aussi spécifier les valeurs qui doivent apparaître dans des champs spécifiques. Le **Générateur de test codé de l'interface utilisateur** enregistre vos actions et génère du code à partir de ces actions. Une fois le test créé, vous pouvez le modifier dans un éditeur spécial qui vous permet de modifier la séquence d'actions.
 
-En guise d'alternative, si vous avez un cas de test qui a été enregistré dans Microsoft Test Manager, vous pouvez générer du code à partir de ce cas de test. Pour plus d’informations, consultez [Enregistrer et lire des tests manuels](/vsts/test/mtm/record-play-back-manual-tests).
+En guise d'alternative, si vous avez un cas de test qui a été enregistré dans Microsoft Test Manager, vous pouvez générer du code à partir de ce cas de test. Pour plus d’informations, consultez [Enregistrer et lire des tests manuels](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts).
 
 Le **Générateur de test codé de l'interface utilisateur** et l’éditeur spécialisés simplifient la création et la modification des tests codés de l’interface utilisateur, même si vos compétences principales sont axées sur les tests plutôt que sur le codage. Si vous êtes développeur et que vous souhaitez approfondir le test, le code est structuré pour être facile à copier et à adapter. Par exemple, vous pouvez enregistrer un test d’achat d’un article sur un site web, puis modifier le code généré et ajouter une boucle qui achète de nombreux articles.
 
@@ -441,7 +441,7 @@ Vous pouvez analyser les tests codés de l'interface utilisateur à l'aide de jo
 
 - [Exécuter des tests unitaires avec l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md)
 
-- [Exécuter des tests dans votre processus de génération](/vsts/build-release/test/getting-started-with-continuous-testing)
+- [Exécuter des tests dans votre processus de génération](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
 - [Guide pratique pour configurer votre agent de test pour exécuter des tests qui interagissent avec le Bureau](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
@@ -451,7 +451,7 @@ Vous pouvez analyser les tests codés de l'interface utilisateur à l'aide de jo
 
 - [Étendre des tests codés de l’interface utilisateur et des enregistrements des actions](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-Les tests codés de l'interface utilisateur servent souvent à automatiser des tests manuels. Pour plus d’informations sur les tests manuels, consultez [Exécuter des tests manuels avec Microsoft Test Manager](/vsts/test/mtm/run-manual-tests-with-microsoft-test-manager). Pour plus d’informations sur les tests automatisés, consultez [Outils de test dans Visual Studio](../test/improve-code-quality.md).
+Les tests codés de l'interface utilisateur servent souvent à automatiser des tests manuels. Pour plus d’informations sur les tests manuels, consultez [Exécuter des tests manuels avec Microsoft Test Manager](/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager?view=vsts). Pour plus d’informations sur les tests automatisés, consultez [Outils de test dans Visual Studio](../test/improve-code-quality.md).
 
 ## <a name="see-also"></a>Voir aussi
 

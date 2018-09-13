@@ -5,17 +5,17 @@ ms.date: 07/03/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 66b5b4eb-13b5-4071-98d2-87fafa4598a8
-author: dantogno
-ms.author: v-davian
+author: conceptdev
+ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: bdc196ed997410957412ec02ff4eb4912b3ee63c
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: dbe546f43b0a66abc78b94480894b63dc4f5eafa
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252464"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283106"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Bien démarrer avec Outils Visual Studio pour Unity
 
@@ -85,7 +85,7 @@ Si Visual Studio 2017 est déjà installé ou si vous préférez l’installer 
 
 - Pour Visual Studio Community 2015, Visual Studio Professional 2015 ou Visual Studio Enterprise 2015 :
 
-   [Télécharger Visual Studio 2015 Tools pour Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)
+   [Télécharger Visual Studio 2015 Tools pour Unity](https://marketplace.visualstudio.com/items?itemName=SebastienLebreton.VisualStudio2015ToolsforUnity)
 
 > [!NOTE]
 > Les Outils Visual Studio pour Unity exigent Unity 5.2 ou une version ultérieure, ainsi qu’une version de Visual Studio qui prend en charge les extensions, comme Visual Studio Community, Professional, Premium ou Enterprise. Pour vérifier que les Outils Visual Studio pour Unity sont activés dans votre installation de Unity, sélectionnez **À propos de Unity** dans le menu **Aide** et recherchez le texte « Outils Microsoft Visual Studio pour Unity activés » en bas à gauche de la boîte de dialogue.

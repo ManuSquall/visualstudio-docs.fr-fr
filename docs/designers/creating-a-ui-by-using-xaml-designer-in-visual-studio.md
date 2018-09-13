@@ -15,17 +15,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 3daf20ee3fcb2472e88d2387abf870862b0d5c47
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: f18814d14c28d1f0263950579767490cd7deca38
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37889965"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283689"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Création d'une interface utilisateur à l'aide du concepteur XAML dans Visual Studio
 Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous aider à concevoir des applications web et Windows basées sur XAML. Vous pouvez créer des interfaces utilisateur pour vos applications en faisant glisser des contrôles à partir de la **boîte à outils** et en définissant des propriétés dans la fenêtre **Propriétés** . Vous pouvez également modifier le XAML directement en mode XAML.
 
- Pour plus d’informations sur les tâches de conception XAML avancées telles que les animations et les comportements, consultez [Création d’une interface utilisateur à l’aide de Blend pour Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md). Consultez également [Conception XAML dans Visual Studio et Blend pour Visual Studio](../designers/designing-xaml-in-visual-studio.md) pour avoir une comparaison des outils.
+ Pour plus d’informations sur les tâches de conception XAML avancées telles que les animations et les comportements, consultez [Creating a UI by using Blend for Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md). Consultez également [Conception XAML dans Visual Studio et Blend pour Visual Studio](../designers/designing-xaml-in-visual-studio.md) pour avoir une comparaison des outils.
 
 ## <a name="xaml-designer-workspace"></a>Espace de travail du concepteur XML
  L'espace de travail du concepteur XML se compose de plusieurs éléments d'interface graphique. Ceux-ci incluent la **planche graphique**, l’**Éditeur XAML**, la fenêtre **Appareil**, la fenêtre **Structure du document** et la fenêtre **Propriétés**. Pour ouvrir le concepteur XAML, cliquez avec le bouton droit sur un fichier XAML dans l' **Explorateur de solutions** et choisissez **Concepteur de vues**.
@@ -35,13 +35,13 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
  En mode Création, la fenêtre contenant la *planche graphique* est la fenêtre active et vous pouvez l'utiliser comme surface de travail principale. Vous pouvez l'utiliser pour concevoir visuellement une page dans votre application en ajoutant ou en dessinant des éléments, puis en les modifiant. Pour plus d'informations, consultez [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md). Cette illustration montre la planche graphique en mode Création.
 
- ![Mode Création du concepteur XAML](../designers/media/xaml_editor_design_view.png)
+ ![Mode Design du concepteur XAML](../designers/media/xaml_editor_design_view.png)
 
  Les fonctionnalités suivantes sont disponibles dans la planche graphique :
 
  **Lignes d’alignement** : les lignes d’alignement sont des *limites d’alignement* qui apparaissent sous forme de lignes en pointillés rouges quand les bords des contrôles sont alignés ou que les lignes de base de texte sont alignées. Les limites d'alignement n'apparaissent que si l' **alignement sur les lignes d'alignement** est activé.
 
- **Quadrillages** : les quadrillages de `Grid` permettent de gérer les lignes et les colonnes dans un panneau [Grille](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx). Vous pouvez créer et supprimer des lignes et des colonnes, ainsi qu'ajuster leurs largeurs et hauteurs relatives. Le quadrillage de grille vertical, qui apparaît à gauche de la planche graphique, est utilisé pour les lignes, et la ligne horizontale, qui apparaît en haut, est utilisée pour les colonnes.
+ **Quadrillages** : les quadrillages de `Grid` permettent de gérer les lignes et les colonnes dans un panneau [Grille](/uwp/api/Windows.UI.Xaml.Controls.Grid). Vous pouvez créer et supprimer des lignes et des colonnes, ainsi qu'ajuster leurs largeurs et hauteurs relatives. Le quadrillage de grille vertical, qui apparaît à gauche de la planche graphique, est utilisé pour les lignes, et la ligne horizontale, qui apparaît en haut, est utilisée pour les colonnes.
 
  **Ornements de grille** : un ornement de grille apparaît sous la forme d’un triangle avec une ligne verticale ou horizontale qui y est rattachée sur le quadrillage. Quand vous faites glisser un ornement de grille, les largeurs ou hauteurs des lignes ou colonnes adjacentes se mettent à jour au fur et à mesure que vous déplacez la souris.
 
@@ -49,7 +49,7 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
  **Poignées de redimensionnement** : des poignées de redimensionnement apparaissent sur les contrôles sélectionnés et vous permettent de les redimensionner. Quand vous redimensionnez un contrôle, les valeurs de largeur et de hauteur s'affichent généralement pour permettre de déterminer la taille du contrôle. Pour plus d’informations sur la manipulation des contrôles en mode **Création**, consultez [Travailler avec des éléments dans le concepteur XAML](../designers/working-with-elements-in-xaml-designer.md).
 
- **Marges** : les marges représentent la quantité d’espace fixe entre le bord d’un contrôle et le bord de son conteneur. Vous pouvez définir les marges d’un contrôle à l’aide des propriétés [Margin](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) sous **Disposition** dans la fenêtre Propriétés.
+ **Marges** : les marges représentent la quantité d’espace fixe entre le bord d’un contrôle et le bord de son conteneur. Vous pouvez définir les marges d’un contrôle à l’aide des propriétés [Margin](/uwp/api/windows.ui.xaml.frameworkelement.margin) sous **Disposition** dans la fenêtre Propriétés.
 
  **Ornements de marge** : vous pouvez utiliser des ornements de marge pour modifier les marges d’un élément par rapport à son conteneur de disposition. Quand un ornement de marge est ouvert, une marge n'est pas définie et l'ornement de marge affiche une chaîne interrompue. Quand la marge n’est pas définie et que le conteneur de disposition est redimensionné au moment de l’exécution, les éléments restent en place. Quand un ornement de marge est fermé, un ornement de marge affiche une chaîne ininterrompue, et les éléments se déplacent avec la marge au fur et à mesure que le conteneur de disposition est redimensionné au moment de l’exécution (la marge reste fixe).
 
@@ -57,7 +57,7 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
  En mode **Création**, des commandes supplémentaires de la planche graphique sont disponibles dans la partie inférieure gauche de la zone de l’écran, comme indiqué ci-après :
 
- ![Commandes du mode Création](../designers/media/xaml_editor_design_controls.png)
+ ![Commandes du mode Design](../designers/media/xaml_editor_design_controls.png)
 
  Les commandes suivantes sont disponibles dans cette barre d'outils :
 
@@ -77,12 +77,12 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
  **Zoom de balisage** : le zoom de balisage vous permet de dimensionner la vue **XAML**. Vous pouvez effectuer un zoom de 20 % à 400 %.
 
-## <a name="device-window"></a>Fenêtre Appareil
+## <a name="device-window"></a>Fenêtre Périphérique
  La fenêtre **Appareil** du concepteur XAML vous permet de faire des simulations à l’aide de plusieurs vues, écrans et options d’affichage pour votre projet au moment du design. La fenêtre **Appareil** est disponible dans le menu **Design** quand vous travaillez dans le concepteur XAML. Voici à quoi elle ressemble :
 
- ![Fenêtre Appareil](../designers/media/xaml_editor_device_panel.png)
+ ![Fenêtre Périphérique](../designers/media/xaml_editor_device_panel.png)
 
- Les options disponibles dans la fenêtre Appareil sont les suivantes :
+ Les options disponibles dans la fenêtre Périphérique sont les suivantes :
 
  **Affichage** : spécifie différentes tailles et résolutions d’affichage pour l’application.
 

@@ -1,7 +1,7 @@
 ---
 title: Tutoriel – Découvrir Flask dans Visual Studio, étape 3
 description: Une procédure pas à pas montrant les concepts de base de Flask dans le contexte de projets Visual Studio, expliquant en particulier comment prendre en charge des fichiers statiques, ajouter des pages à l’application et utiliser l’héritage de modèle
-ms.date: 06/04/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 38050d9ecb5956c4e782ec61b5ae2dc6801ad224
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 6cdc8e3658b02c7c4371181d6c0e5723d0a3537c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637641"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775754"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Étape 3 : Prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle
 
@@ -24,13 +24,13 @@ ms.locfileid: "39637641"
 
 Dans les étapes précédentes de ce tutoriel, vous avez découvert comment créer une application Flask minimale avec une seule page HTML autonome. Les applications web modernes sont cependant composées en général de nombreuses pages et utilisent des ressources partagées, comme des fichiers CSS et JavaScript, pour offrir un comportement et un style cohérents.
 
-Dans cette étape, vous apprenez à :
+Dans cette étape, vous apprenez comment :
 
 > [!div class="checklist"]
 > - Utiliser des modèles d’élément Visual Studio pour ajouter rapidement de nouveaux fichiers de types différents avec un code réutilisable pratique (étape 3-1)
 > - Produire des fichiers statiques à partir du code (étape 3-2, facultative)
-> - Ajouter des pages supplémentaires à l’application (étape 3-3)
-> - Utiliser l’héritage de modèle pour créer un en-tête et une barre de navigation utilisés sur plusieurs pages (étape 3-4)
+> - ajoutez des pages supplémentaires à l’application (étape 3-3)
+> - utiliser l’héritage de modèle pour créer un en-tête et une barre de navigation utilisés sur plusieurs pages (étape 3-4)
 
 ## <a name="step-3-1-become-familiar-with-item-templates"></a>Étape 3-1 : se familiariser avec les modèles d’élément
 

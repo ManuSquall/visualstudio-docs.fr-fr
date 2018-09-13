@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db48b940fecb27dd4f41b5fc56f32ee2cc4f5f02
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 531080945413bbc0959d2cdf91e2096c1e51f61d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572343"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668753"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>Résoudre les problèmes liés aux outils d’analyse des performances
 Vous pouvez rencontrer les problèmes suivants quand vous utilisez les outils de profilage :  
   
--   [Aucune donnée n’est collectée par les outils de profilage](#NoDataCollected)  
+-   [Aucune donnée n’est collectée par les outils de profilage](#no-data-is-collected-by-the-profiling-tools)  
   
--   [Les vues et les rapports de performances affichent des numéros pour les noms des fonctions](#NoSymbols)  
+-   [Les vues et les rapports de performances affichent des numéros pour les noms des fonctions](#performance-views-and-reports-display-numbers-for-function-names)  
   
 ## <a name="no-data-is-collected-by-the-profiling-tools"></a>Aucune donnée n’est collectée par les outils de profilage  
  Une fois l’application profilée, aucun fichier de données de profilage (.*vsp*) n’est créé, et l’avertissement suivant s’affiche dans la fenêtre **Sortie** ou la fenêtre Commande :  

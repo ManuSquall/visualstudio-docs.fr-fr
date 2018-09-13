@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 081c61cb0d5a2db28b04ebdd12fd53713b41363f
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 92764cbb78dfc11b718d2640cd059febe913a9b2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34694071"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668801"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Créer un test codé de l’interface utilisateur pour tester une application UWP
 
@@ -128,7 +128,7 @@ La première étape consiste à créer une application UWP simple sur laquelle e
         Assert.AreEqual(Me.AssertMethod1ExpectedValues.UITextBoxEditText, uITextBoxEdit.Text, "Textbox value is unexpected.")
     End Sub
     ```
-1. Ensuite, nous avons besoin d’obtenir le **AutomationId** de l’[application](#create-a-simple-universal-windows-app) UWP que nous voulons tester. Ouvrez le menu **Démarrer** Windows pour voir la vignette de l’application. Ensuite, faites glisser la croix ![Icône de cible](media/target-icon.png) depuis la boîte de dialogue **Générateur de test codé de l’interface utilisateur** vers la vignette de votre application. Lorsqu’une zone bleue entoure la vignette, relâchez la souris.
+1. Ensuite, nous avons besoin d’obtenir le **AutomationId** de l’[application](#create-a-uwp-app-to-test) UWP que nous voulons tester. Ouvrez le menu **Démarrer** Windows pour voir la vignette de l’application. Ensuite, faites glisser la croix ![Icône de cible](media/target-icon.png) depuis la boîte de dialogue **Générateur de test codé de l’interface utilisateur** vers la vignette de votre application. Lorsqu’une zone bleue entoure la vignette, relâchez la souris.
 
    ![Croix](media/cross-hair-tool.png)
 

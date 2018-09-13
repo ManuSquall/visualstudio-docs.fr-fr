@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 6d1d57dc8c0eb07b90da79de3fee5d42678e7a22
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 206c856eb87243fd6021c4ff8bb9f6890b8eaf25
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36279984"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384212"
 ---
 # <a name="application-property-page-uwp-projects"></a>Page de propriétés de l’application (projets UWP)
 
@@ -46,7 +46,7 @@ Pour accéder à cette propriété par programmation, consultez <xref:VSLangProj
 
 Vous pouvez définir la version cible et la version minimale de Windows 10 pour votre application en utilisant les listes déroulantes dans cette section. Nous vous recommandons de cibler la version la plus récente de Windows 10, et si vous développez une application d’entreprise, de prendre en charge une version minimale antérieure également. Pour plus d’informations sur la version Windows 10 à choisir, consultez [Choisir une version UWP](/windows/uwp/updates-and-versions/choose-a-uwp-version).
 
-Pour plus d’informations sur le ciblage de plateforme dans Visual Studio 2017, consultez [Ciblage de plateforme](/visualstudio/productinfo/vs2017-compatibility-vs#a-iddevelopwindows-avisual-studio-2017-support-for-windows-development).
+Pour plus d’informations sur le ciblage de plateforme dans Visual Studio 2017, consultez [Ciblage de plateforme](/visualstudio/productinfo/vs2017-compatibility-vs#platform-targeting).
 
 ## <a name="see-also"></a>Voir aussi
 

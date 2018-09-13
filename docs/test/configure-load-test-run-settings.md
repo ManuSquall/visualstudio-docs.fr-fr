@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: acd2ccd526e32670afa947148f25606aee1299be
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: fb1f9ad69ebe012151a911bf8d7c02ded6af5e11
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382420"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283327"
 ---
 # <a name="configure-load-test-run-settings"></a>Configurer les paramètres d’exécution des tests de charge
 
@@ -37,6 +37,6 @@ Les paramètres d’exécution initiaux sont définis quand vous créez un test 
 |**Spécifier le nombre d’itérations de tests dans les paramètres de série de tests de charge :** vous pouvez spécifier le nombre d’exécutions de tous les tests unitaires et tests de performances web dans l’ensemble des scénarios des tests de charge en configurant la propriété **Itérations de tests**.|-   [Guide pratique pour spécifier le nombre d’itérations de tests dans un paramètre d’exécution](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)|
 |**Spécifier le taux d’échantillonnage d’un paramètre d’exécution du test de charge :** vous pouvez spécifier la fréquence à laquelle le test de charge collecte les données des compteurs de performances en configurant la propriété **Taux d’échantillonnage**.|-   [Guide pratique pour spécifier le taux d’échantillonnage](../test/how-to-specify-the-sample-rate-for-a-load-test.md)|
 |**Spécifier l’option de stockage des détails de minuterie :** vous pouvez spécifier le mode d’enregistrement des détails du test de charge en configurant la propriété **Stockage des détails de minuterie**.|-   [Guide pratique pour spécifier la propriété de stockage des détails de minuterie](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)|
-|**Spécifier la période de rétention des ressources de test :** accélérez le cycle test > correction > nouveau test en conservant les ressources de test pendant une période donnée à l’aide de la propriété **Délai de rétention des ressources**.|-   [Conserver les ressources pour accélérer le test de charge](/vsts/test/load-test/getting-started-with-performance-testing?view=vsts)|
+|**Spécifier la période de rétention des ressources de test :** accélérez le cycle test > correction > nouveau test en conservant les ressources de test pendant une période donnée à l’aide de la propriété **Délai de rétention des ressources**.|-   [Conserver les ressources pour accélérer le test de charge](/azure/devops/test/load-test/getting-started-with-performance-testing?view=vsts)|
 |**Utiliser des paramètres de contexte :** vous pouvez utiliser des paramètres de contexte pour paramétrer une chaîne. Par exemple, si votre test de charge contient un test de performances web qui utilise un serveur web paramétrable, vous pouvez ajouter aux paramètres d’exécution un paramètre de contexte mappé avec un autre serveur.|-   [Guide pratique pour ajouter des paramètres de contexte à un paramètre d’exécution](../test/how-to-add-context-parameters-to-a-load-test-run-setting.md)|
 |**Configuration des propriétés de journalisation des tests :** vous pouvez configurer la fréquence d’écriture des données dans le journal associé aux paramètres d’exécution des tests de charge. Cela peut être important lorsque vous exécutez un test de charge volumineux ou complexe parce que le journal peut atteindre plusieurs gigaoctets.<br /><br /> Vous pouvez également définir l'enregistrement automatique du fichier journal lorsque votre test de charge ne permet pas de déboguer et d'analyser votre application.|-   [Modification des paramètres de journalisation du test de charge](../test/modify-load-test-logging-settings.md)|
