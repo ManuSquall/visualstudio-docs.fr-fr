@@ -14,16 +14,21 @@ ms.assetid: 07b604e5-5579-4df9-a578-dadd0d8370a7
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d3143bb7508af1fcb0a946ce7e3a3f0a8697b204
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 82fe9045173e65b24204a3b04e12b6a7f655c651
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917460"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548398"
 ---
 # <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126 : Les demandes de liaison de types nécessitent des demandes d'héritage
+
 |||
 |-|-|
 |TypeName|TypeLinkDemandsRequireInheritanceDemands|
@@ -35,7 +40,7 @@ ms.locfileid: "31917460"
  Un type unsealed public est protégé avec une demande de liaison, a une méthode substituable, et ni le type ni la méthode est protégée par une demande d’héritage.
 
 ## <a name="rule-description"></a>Description de la règle
- Une demande de liaison sur une méthode ou son type déclarant requiert que l’appelant immédiat de la méthode avoir l’autorisation spécifiée. Une demande d’héritage sur une méthode requiert une méthode de substitution pour avoir l’autorisation spécifiée. Une demande d’héritage sur un type requiert une classe dérivée a l’autorisation spécifiée.
+ Une demande de liaison sur une méthode ou son type déclarant requiert que l’appelant immédiat de la méthode d’avoir l’autorisation spécifiée. Une demande d’héritage sur une méthode nécessite une méthode de substitution pour avoir l’autorisation spécifiée. Une demande d’héritage sur un type requiert une classe dérivée pour avoir l’autorisation spécifiée.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, sécurisez le type ou la méthode avec une demande d’héritage pour la même autorisation que la demande de liaison.
@@ -44,7 +49,7 @@ ms.locfileid: "31917460"
  Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre un type qui enfreint la règle.
+ L’exemple suivant montre un type qui viole la règle.
 
  [!code-cpp[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/CPP/ca2126-type-link-demands-require-inheritance-demands_1.cpp)]
  [!code-vb[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/VisualBasic/ca2126-type-link-demands-require-inheritance-demands_1.vb)]
@@ -60,4 +65,6 @@ ms.locfileid: "31917460"
  [CA2123 : Les demandes de liaison de substitution doivent être identiques au composant de base](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
 
 ## <a name="see-also"></a>Voir aussi
- [Instructions de codage sécurisé](/dotnet/standard/security/secure-coding-guidelines) [demandes de liaison](/dotnet/framework/misc/link-demands)
+
+- [Instructions de codage sécurisé](/dotnet/standard/security/secure-coding-guidelines)
+- [Demandes de liaison](/dotnet/framework/misc/link-demands)

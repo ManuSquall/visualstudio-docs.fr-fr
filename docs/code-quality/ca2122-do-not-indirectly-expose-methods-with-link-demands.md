@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c43cfc1a448d9073a8bbe493d75c7c117f57d737
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8d17c2981e4dabe82817aeedcf4fcab93e970b47
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915554"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548872"
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122 : N'exposez pas indirectement des méthodes avec des demandes de liaison
+
 |||
 |-|-|
 |TypeName|DoNotIndirectlyExposeMethodsWithLinkDemands|
@@ -32,10 +33,10 @@ ms.locfileid: "31915554"
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Un membre public ou protégé a un [les demandes de liaison](/dotnet/framework/misc/link-demands) et est appelé par un membre qui n’effectue pas de vérifications de sécurité.
+ Un membre public ou protégé a un [demandes de liaison](/dotnet/framework/misc/link-demands) et est appelée par un membre qui n’effectue pas les vérifications de sécurité.
 
 ## <a name="rule-description"></a>Description de la règle
- Une demande de liaison vérifie uniquement les autorisations de l’appelant immédiat. Si un membre `X` n’effectue des demandes de sécurité aucun de ses appelants et appelle un code protégé par une demande de liaison, un appelant sans l’autorisation nécessaire peut utiliser `X` pour accéder au membre protégé.
+ Une demande de liaison vérifie uniquement les autorisations de l’appelant immédiat. Si un membre `X` n’effectue aucune des demandes de sécurité de ses appelants et appelle un code protégé par une demande de liaison, un appelant sans l’autorisation nécessaire peut utiliser `X` pour accéder au membre protégé.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Ajouter une sécurité [données et modélisation](/dotnet/framework/data/index) ou demande de liaison au membre afin qu’il ne fournit plus accès non sécurisé au membre protégé par demande de liaison.
@@ -43,18 +44,24 @@ ms.locfileid: "31915554"
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Pour supprimer sans risque un avertissement de cette règle, il se peut que vous devez vous assurer que votre code n’accorde pas ses appelants accès à des opérations ou des ressources qui peuvent être utilisées dans une action destructrice.
 
-## <a name="example"></a>Exemple
- Les exemples suivants montrent une bibliothèque qui enfreint la règle et une application qui montre la faiblesse de la bibliothèque. L’exemple de bibliothèque fournit deux méthodes qui ensemble enfreint la règle. Le `EnvironmentSetting` (méthode) est sécurisée par une demande de liaison pour un accès illimité aux variables d’environnement. Le `DomainInformation` méthode n’effectue aucune des demandes de sécurité de ses appelants avant d’appeler `EnvironmentSetting`.
+## <a name="example-1"></a>Exemple 1
+ Les exemples suivants montrent une bibliothèque qui viole la règle et une application qui montre la faiblesse de la bibliothèque. L’exemple de bibliothèque fournit deux méthodes qui ensemble enfreignent la règle. Le `EnvironmentSetting` méthode est sécurisée par une demande de liaison pour un accès illimité aux variables d’environnement. Le `DomainInformation` méthode n’effectue aucune des demandes de sécurité de ses appelants avant d’appeler `EnvironmentSetting`.
 
  [!code-csharp[FxCop.Security.UnsecuredDoNotCall#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_1.cs)]
 
-## <a name="example"></a>Exemple
+## <a name="example-2"></a>Exemple 2
  L’application suivante appelle le membre de bibliothèque non sécurisé.
 
  [!code-csharp[FxCop.Security.TestUnsecuredDoNot1#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_2.cs)]
 
- Cet exemple produit la sortie suivante.
+Cet exemple génère la sortie suivante :
 
- **Valeur de membre : seattle.corp.contoso.com**
+```txt
+*Value from unsecured member: seattle.corp.contoso.com
+```
+
 ## <a name="see-also"></a>Voir aussi
- [Instructions de codage sécurisé](/dotnet/standard/security/secure-coding-guidelines) [demandes de liaison](/dotnet/framework/misc/link-demands) [données et modélisation](/dotnet/framework/data/index)
+
+- [Instructions de codage sécurisé](/dotnet/standard/security/secure-coding-guidelines)
+- [Demandes de liaison](/dotnet/framework/misc/link-demands)
+- [Données et modélisation](/dotnet/framework/data/index)

@@ -14,16 +14,20 @@ ms.assetid: 197f2378-3c43-427e-80de-9ec25006c05c
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fbe76788510ebb51c0f6bd609cf91d9791dad2dd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2e095c862edc5d7b68e1a6c55ada90a425b7e64f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898913"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550451"
 ---
 # <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019 : Définir des accesseurs pour les arguments d'attribut
+
 |||
 |-|-|
 |TypeName|DefineAccessorsForAttributeArguments|
@@ -39,38 +43,32 @@ ms.locfileid: "31898913"
 
  Les attributs peuvent également définir des arguments facultatifs, qui sont également appelés arguments nommés. Ces arguments sont fournis aux constructeurs d'attributs par noms et doivent disposer d'une propriété en lecture/écriture correspondante.
 
- Pour les arguments obligatoires et facultatifs, les propriétés correspondantes et les paramètres du constructeur doivent utiliser le même nom mais une casse différente. Propriétés utilisent la casse Pascal casse et les paramètres la casse.
+ Pour les arguments obligatoires et facultatifs, les propriétés correspondantes et les paramètres du constructeur doivent utiliser le même nom mais une casse différente. Propriétés utilisent Pascal casse et les paramètres la casse.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, ajoutez une propriété en lecture seule pour chaque paramètre de constructeur qui n’en a pas.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Supprimer un avertissement de cette règle si vous ne souhaitez pas la valeur de l’argument obligatoire soit récupérable.
+ Supprimez un avertissement de cette règle si vous ne souhaitez pas la valeur de l’argument obligatoire soit récupérable.
 
-## <a name="custom-attributes-example"></a>Exemples d’attributs personnalisés
+## <a name="custom-attributes-example"></a>Exemple d’attributs personnalisés
 
-### <a name="description"></a>Description
- L’exemple suivant montre deux attributs qui définissent un paramètre (positionnel) obligatoire. La première implémentation de l’attribut est définie incorrectement. La seconde implémentation est correcte.
+L’exemple suivant montre deux attributs qui définissent un paramètre obligatoire (positionnel). La première implémentation de l’attribut est définie incorrectement. La seconde implémentation est correcte.
 
-### <a name="code"></a>Code
- [!code-csharp[FxCop.Design.AttributeAccessors#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_1.cs)]
- [!code-vb[FxCop.Design.AttributeAccessors#1](../code-quality/codesnippet/VisualBasic/ca1019-define-accessors-for-attribute-arguments_1.vb)]
+[!code-csharp[FxCop.Design.AttributeAccessors#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_1.cs)]
+[!code-vb[FxCop.Design.AttributeAccessors#1](../code-quality/codesnippet/VisualBasic/ca1019-define-accessors-for-attribute-arguments_1.vb)]
 
 ## <a name="positional-and-named-arguments"></a>Arguments nommés et positionnels
 
-### <a name="description"></a>Description
- Arguments nommés et positionnels rendre clairement aux consommateurs de votre bibliothèque les arguments qui sont obligatoires pour l’attribut et les arguments sont facultatifs.
+Arguments nommés et positionnels indiquer clairement à des consommateurs de votre bibliothèque quels sont les arguments obligatoires pour l’attribut et les arguments sont facultatifs.
 
- L’exemple suivant illustre une implémentation d’un attribut qui comporte des arguments nommés et positionnels.
+L’exemple suivant illustre une implémentation d’un attribut qui a des arguments positionnels et nommés :
 
-### <a name="code"></a>Code
- [!code-csharp[FxCop.Design.AttributeAccessorsNamed#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_2.cs)]
+[!code-csharp[FxCop.Design.AttributeAccessorsNamed#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_2.cs)]
 
-### <a name="comments"></a>Commentaires
- L’exemple suivant montre comment appliquer l’attribut personnalisé à deux propriétés.
+L’exemple suivant montre comment appliquer l’attribut personnalisé à deux propriétés :
 
-### <a name="code"></a>Code
- [!code-csharp[FxCop.Design.AttributeAccessorsNamedApplied#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_3.cs)]
+[!code-csharp[FxCop.Design.AttributeAccessorsNamedApplied#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_3.cs)]
 
 ## <a name="related-rules"></a>Règles associées
  [CA1813 : Évitez les attributs unsealed](../code-quality/ca1813-avoid-unsealed-attributes.md)

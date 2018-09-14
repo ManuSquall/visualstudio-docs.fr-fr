@@ -14,16 +14,21 @@ ms.assetid: df0e3a12-67bf-48f1-a10b-2ef60484a5c7
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 981c3191524bed974757ed73cdf0db4b5ddb5810
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9db561355fb59ec187ef87ee767c4706ebddffb9
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914560"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547865"
 ---
 # <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712 : N'ajoutez pas le nom de type en guise de préfixe à des valeurs enum
+
 |||
 |-|-|
 |TypeName|DoNotPrefixEnumValuesWithTypeName|
@@ -35,9 +40,9 @@ ms.locfileid: "31914560"
  Une énumération contient un membre dont le nom commence par le nom de type de l’énumération.
 
 ## <a name="rule-description"></a>Description de la règle
- Noms des membres de l’énumération sont sans le préfixe le nom de type, car les informations de type doit être fournie par les outils de développement.
+ Noms des membres de l’énumération ne sont pas préfixés par le nom de type, car les informations de type sont censées être fournis par les outils de développement.
 
- Conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit le temps nécessaire pour apprendre une nouvelle bibliothèque de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
+ Conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit le temps nécessaire pour apprendre une nouvelle bibliothèque de logiciels, et augmente la confiance des clients que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, supprimez le préfixe de nom de type du membre d’énumération.
@@ -60,4 +65,5 @@ ms.locfileid: "31914560"
  [CA2217 : Ne marquez pas les énumérations avec FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Voir aussi
- <xref:System.Enum?displayProperty=fullName>
+
+- <xref:System.Enum?displayProperty=fullName>

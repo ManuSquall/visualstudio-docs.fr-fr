@@ -14,16 +14,21 @@ ms.assetid: be5bee69-d2d2-44e1-be2e-3ea451969003
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac873aa7a6a86e2c4fe9964d0b690950aa0fb9e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d8e8a4be147a786da06f3fdb7f961a7b36aa85a4
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31897687"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546940"
 ---
 # <a name="ca1041-provide-obsoleteattribute-message"></a>CA1041 : Fournir un message ObsoleteAttribute
+
 |||
 |-|-|
 |TypeName|ProvideObsoleteAttributeMessage|
@@ -32,16 +37,16 @@ ms.locfileid: "31897687"
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Un type ou un membre est marqué avec un <xref:System.ObsoleteAttribute?displayProperty=fullName> attribut qui n’a pas son <xref:System.ObsoleteAttribute.Message%2A?displayProperty=fullName> propriété spécifiée.
+ Un type ou un membre est marqué à l’aide un <xref:System.ObsoleteAttribute?displayProperty=fullName> attribut qui n’a pas son <xref:System.ObsoleteAttribute.Message%2A?displayProperty=fullName> propriété spécifiée.
 
 ## <a name="rule-description"></a>Description de la règle
- <xref:System.ObsoleteAttribute> est utilisé pour marquer les membres et les types de bibliothèque déconseillés. Les consommateurs de bibliothèque doivent éviter l’utilisation de tout type ou membre qui est marqué comme obsolète. Il s’agit, car il ne peut pas être pris en charge et elles sont supprimée des versions ultérieures de la bibliothèque. Lorsqu’un type ou membre marquée à l’aide de <xref:System.ObsoleteAttribute> est compilé, la <xref:System.ObsoleteAttribute.Message%2A> la propriété de l’attribut est affichée. Cela fournit à l'utilisateur des informations sur le type ou le membre obsolète. Ces informations comprennent généralement la durée pendant laquelle le type obsolète ou membre sera être pris en charge par les concepteurs de bibliothèque et le remplacement par défaut à utiliser.
+ <xref:System.ObsoleteAttribute> est utilisé pour marquer les membres et les types de bibliothèque déconseillés. Les consommateurs de bibliothèque doivent éviter l’utilisation de tout type ou membre qui est marqué comme obsolète. Il s’agit, car il ne peut pas être pris en charge et elles sont supprimée dans les versions ultérieures de la bibliothèque. Lorsqu’un type ou membre marquée à l’aide de <xref:System.ObsoleteAttribute> est compilé, le <xref:System.ObsoleteAttribute.Message%2A> propriété de l’attribut s’affiche. Cela fournit à l'utilisateur des informations sur le type ou le membre obsolète. Ces informations comprennent généralement la durée pendant laquelle le type obsolète ou membre sera être pris en charge par les concepteurs de bibliothèque et le remplacement par défaut à utiliser.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, ajoutez le `message` paramètre à la <xref:System.ObsoleteAttribute> constructeur.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez aucun avertissement de cette règle, car le <xref:System.ObsoleteAttribute.Message%2A> propriété fournit des informations essentielles sur le type ou membre obsolète.
+ Ne supprimez pas d’avertissement de cette règle, car le <xref:System.ObsoleteAttribute.Message%2A> propriété fournit des informations critiques sur le type ou membre obsolète.
 
 ## <a name="example"></a>Exemple
  L’exemple suivant montre un membre obsolète qui a correctement déclaré <xref:System.ObsoleteAttribute>.

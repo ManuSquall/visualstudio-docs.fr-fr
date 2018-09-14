@@ -14,16 +14,20 @@ ms.assetid: dfc867bc-f4af-45d7-b071-db04a248f9fc
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f6303cf96e3e8f6c4c0920336602cdbb76cc400a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e5f7021de24ec9b0a6d7c31d53893528790f2cf2
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901160"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548865"
 ---
 # <a name="ca1006-do-not-nest-generic-types-in-member-signatures"></a>CA1006 : Ne pas imbriquer les types génériques dans les signatures de membre
+
 |||
 |-|-|
 |TypeName|DoNotNestGenericTypesInMemberSignatures|
@@ -41,10 +45,10 @@ ms.locfileid: "31901160"
  Pour corriger une violation de cette règle, modifiez le design pour supprimer l’argument de type imbriqué.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez aucun avertissement de cette règle. Fourniture de génériques dans une syntaxe facile à comprendre et à utiliser réduit le temps nécessaire pour en savoir plus et augmente le taux d’adoption de nouvelles bibliothèques.
+ Ne supprimez aucun avertissement de cette règle. Fourniture de génériques dans une syntaxe facile à comprendre et à utiliser réduit le temps qui est nécessaire pour en savoir plus et augmente la vitesse d’adoption de nouvelles bibliothèques.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre une méthode qui enfreint la règle et la syntaxe qui est requis pour appeler la méthode en violation.
+ L’exemple suivant montre une méthode qui viole la règle et la syntaxe qui est requis pour appeler la méthode en violation.
 
  [!code-vb[FxCop.Design.NestedGenerics#1](../code-quality/codesnippet/VisualBasic/ca1006-do-not-nest-generic-types-in-member-signatures_1.vb)]
  [!code-csharp[FxCop.Design.NestedGenerics#1](../code-quality/codesnippet/CSharp/ca1006-do-not-nest-generic-types-in-member-signatures_1.cs)]

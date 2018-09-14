@@ -14,16 +14,20 @@ ms.assetid: 6ab70ec0-220f-4880-af31-45067703133c
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8616c8e70d298e5ed5798ab378590217923d8617
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a54dd39746364d6908f440ac77d7a2b8bbfdbcf6
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901881"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547618"
 ---
 # <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018 : Marquer les attributs avec AttributeUsageAttribute
+
 |||
 |-|-|
 |TypeName|MarkAttributesWithAttributeUsage|
@@ -35,9 +39,9 @@ ms.locfileid: "31901881"
  Le <xref:System.AttributeUsageAttribute?displayProperty=fullName> attribut n’est pas présent sur l’attribut personnalisé.
 
 ## <a name="rule-description"></a>Description de la règle
- Lorsque vous définissez un attribut personnalisé, marquez-le à l’aide <xref:System.AttributeUsageAttribute> pour indiquer où l’attribut personnalisé peut être appliqué dans le code source. La signification et l'utilisation prévue d'un attribut déterminent ses emplacements valides au sein d'un code. Par exemple, vous pouvez définir un attribut qui identifie la personne qui est responsable de la maintenance et l’amélioration de chaque type dans une bibliothèque, et que la responsabilité est toujours attribuée au niveau du type. Dans ce cas, les compilateurs doivent activer l’attribut sur les classes, les énumérations et les interfaces, mais ne devraient pas l’activer sur les méthodes, événements ou propriétés. Les stratégies d’organisation et les procédures seraient déterminent si l’attribut doit être activée sur les assemblys.
+ Lorsque vous définissez un attribut personnalisé, marquez-le à l’aide de <xref:System.AttributeUsageAttribute> pour indiquer où l’attribut personnalisé peut être appliqué dans le code source. La signification et l'utilisation prévue d'un attribut déterminent ses emplacements valides au sein d'un code. Par exemple, vous pouvez définir un attribut qui identifie la personne qui est responsable de la gestion et l’amélioration de chaque type dans une bibliothèque, et que la responsabilité est toujours affectée au niveau du type. Dans ce cas, les compilateurs doivent activer l’attribut sur les classes, énumérations et interfaces, mais ne devraient pas l’activer sur les méthodes, événements ou propriétés. Les stratégies d’organisation et les procédures seraient déterminent si l’attribut doit être activé sur les assemblys.
 
- Le <xref:System.AttributeTargets?displayProperty=fullName> énumération définit les cibles que vous pouvez spécifier pour un attribut personnalisé. Si vous omettez <xref:System.AttributeUsageAttribute>, votre attribut personnalisé sera valide pour toutes les cibles, comme défini par le `All` valeur <xref:System.AttributeTargets> énumération.
+ Le <xref:System.AttributeTargets?displayProperty=fullName> énumération définit les cibles que vous pouvez spécifier pour un attribut personnalisé. Si vous omettez <xref:System.AttributeUsageAttribute>, votre attribut personnalisé sera valide pour toutes les cibles, tel que défini par le `All` valeur <xref:System.AttributeTargets> énumération.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, spécifiez des cibles pour l’attribut à l’aide de <xref:System.AttributeUsageAttribute>. Lisez l'exemple suivant.
@@ -57,4 +61,5 @@ ms.locfileid: "31901881"
  [CA1813 : Évitez les attributs unsealed](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
 ## <a name="see-also"></a>Voir aussi
- [Attributs](/dotnet/standard/design-guidelines/attributes)
+
+- [Attributs](/dotnet/standard/design-guidelines/attributes)

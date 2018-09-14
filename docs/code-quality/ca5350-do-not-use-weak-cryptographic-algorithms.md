@@ -10,14 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f97de4818e6be66b4ee23d97d8995dfa30533985
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: ba5e70505db86b1497e625b216da955bba677245
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510502"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547852"
 ---
 # <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350 : N’utilisez pas d’algorithmes de chiffrement faibles
+
 |||
 |-|-|
 |TypeName|DoNotUseWeakCryptographicAlgorithms|
@@ -26,70 +27,71 @@ ms.locfileid: "39510502"
 |Modification avec rupture|Sans rupture|
 
 > [!NOTE]
->  Cet avertissement a été mis à jour pour la dernière fois en novembre 2015.
+> Cet avertissement a été mis à jour pour la dernière fois en novembre 2015.
 
 ## <a name="cause"></a>Cause
- Les algorithmes de chiffrement, tels que <xref:System.Security.Cryptography.TripleDES> , et les algorithmes de hachage, tels que <xref:System.Security.Cryptography.SHA1> et <xref:System.Security.Cryptography.RIPEMD160> , sont considérés comme faibles.
 
- Ces algorithmes de chiffrement n’offrent pas autant de sécurité que leurs équivalents plus modernes. Les algorithmes de chiffrement et de hachage <xref:System.Security.Cryptography.SHA1> et <xref:System.Security.Cryptography.RIPEMD160> offrent moins de résistance aux collisions que les algorithmes de hachage plus modernes. L’algorithme de chiffrement <xref:System.Security.Cryptography.TripleDES> fournit moins de bits de sécurité que les algorithmes de chiffrement plus modernes.
+Les algorithmes de chiffrement, tels que <xref:System.Security.Cryptography.TripleDES> , et les algorithmes de hachage, tels que <xref:System.Security.Cryptography.SHA1> et <xref:System.Security.Cryptography.RIPEMD160> , sont considérés comme faibles.
+
+Ces algorithmes de chiffrement n’offrent pas autant de sécurité que leurs équivalents plus modernes. Les algorithmes de chiffrement et de hachage <xref:System.Security.Cryptography.SHA1> et <xref:System.Security.Cryptography.RIPEMD160> offrent moins de résistance aux collisions que les algorithmes de hachage plus modernes. L’algorithme de chiffrement <xref:System.Security.Cryptography.TripleDES> fournit moins de bits de sécurité que les algorithmes de chiffrement plus modernes.
 
 ## <a name="rule-description"></a>Description de la règle
- Des algorithmes de chiffrement et des fonctions de hachage faibles sont utilisés aujourd’hui pour plusieurs raisons, mais ils ne doivent pas servir à garantir la confidentialité des données qu’ils protègent.
 
- La règle se déclenche et lève un avertissement quand elle trouve des algorithmes 3DES, SHA1 ou RIPEMD160 dans le code.
+Des algorithmes de chiffrement et des fonctions de hachage faibles sont utilisés aujourd’hui pour plusieurs raisons, mais ils ne doivent pas servir à garantir la confidentialité des données qu’ils protègent.
+
+La règle se déclenche et lève un avertissement quand elle trouve des algorithmes 3DES, SHA1 ou RIPEMD160 dans le code.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Utilisez des options de chiffrement plus fortes :
 
--   Pour le chiffrement TripleDES, utilisez le chiffrement <xref:System.Security.Cryptography.Aes> .
+Utilisez des options de chiffrement plus fortes :
 
--   Pour des fonctions de hachage SHA1 et RIPEMD160, utilisez les fonctions dans le [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) famille (par exemple, <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
+- Pour le chiffrement TripleDES, utilisez le chiffrement <xref:System.Security.Cryptography.Aes> .
+
+- Pour des fonctions de hachage SHA1 et RIPEMD160, utilisez les fonctions dans le [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) famille (par exemple, <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Supprimez un avertissement de cette règle quand le niveau de protection nécessaire pour les données ne nécessite pas une garantie de sécurité.
 
-## <a name="pseudo-code-example"></a>Exemple de pseudo-code
- Au moment de l’écriture de cet article, l’exemple de pseudo-code suivant illustre le schéma détecté par cette règle.
+Supprimez un avertissement de cette règle quand le niveau de protection nécessaire pour les données ne nécessite pas une garantie de sécurité.
+
+## <a name="pseudo-code-examples"></a>Exemples de pseudo-code
+
+Au moment de l’écriture de cet article, l’exemple de pseudo-code suivant illustre le schéma détecté par cette règle.
 
 ### <a name="sha-1-hashing-violation"></a>Violation de hachage SHA-1
 
-```
+```csharp
 using System.Security.Cryptography;
 ...
 var hashAlg = SHA1.Create();
-
 ```
 
-### <a name="solution"></a>Solution
+Solution :
 
-```
+```csharp
 using System.Security.Cryptography;
 ...
 var hashAlg = SHA256.Create();
-
 ```
 
-### <a name="ripemd160-br-br-hashing-violation"></a>RIPEMD160 <br /><br />Violation de hachage
+### <a name="ripemd160-hashing-violation"></a>Violation de hachage RIPEMD160
 
-```
+```csharp
 using System.Security.Cryptography;
 ...
 var hashAlg = RIPEMD160Managed.Create();
-
 ```
 
-### <a name="solution"></a>Solution
+Solution :
 
-```
+```csharp
 using System.Security.Cryptography;
 ...
 var hashAlg = SHA256.Create();
-
 ```
 
 ### <a name="tripledes-encryption-violation"></a>Violation de chiffrement TripleDES
 
-```
+```csharp
 using System.Security.Cryptography;
 ...
 using (TripleDES encAlg = TripleDES.Create())
@@ -98,9 +100,9 @@ using (TripleDES encAlg = TripleDES.Create())
 }
 ```
 
-### <a name="solution"></a>Solution
+Solution :
 
-```
+```csharp
 using System.Security.Cryptography;
 ...
 using (AesManaged encAlg = new AesManaged())

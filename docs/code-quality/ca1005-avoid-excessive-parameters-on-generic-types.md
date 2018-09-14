@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 302ecdfaf4c621f0a9a34b0a5cba79ff652990a9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8b13441c279254525c4ffd892e60ae2b018e39ae
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898036"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547687"
 ---
 # <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005 : Éviter les paramètres excessifs sur les types génériques
 |||
@@ -32,7 +32,7 @@ ms.locfileid: "31898036"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Un type générique visible de l’extérieur a plus de deux paramètres de type.
+ Un type générique extérieurement visible a plus de deux paramètres de type.
 
 ## <a name="rule-description"></a>Description de la règle
  Plus un type générique contient de paramètres de type, plus il est difficile de déterminer et de mémoriser la représentation de chaque paramètre de type. Il est généralement évident avec un paramètre de type, comme dans `List<T>`et dans certains cas avec deux paramètres de type, comme dans `Dictionary<TKey, TValue>`. Si plus de deux paramètres de type existent, la difficulté devient trop grande pour la plupart des utilisateurs (par exemple, `TooManyTypeParameters<T, K, V>` en c# ou `TooManyTypeParameters(Of T, K, V)` dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
@@ -41,7 +41,7 @@ ms.locfileid: "31898036"
  Pour corriger une violation de cette règle, modifiez le design pour utiliser pas plus de deux paramètres de type.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez aucun avertissement de cette règle, sauf si le design nécessite absolument plus de deux paramètres de type. Fourniture de génériques dans une syntaxe facile à comprendre et à utiliser réduit le temps nécessaire pour en savoir plus et augmente le taux d’adoption de nouvelles bibliothèques.
+ Ne supprimez pas d’avertissement de cette règle, sauf si le design nécessite absolument plus de deux paramètres de type. Fourniture de génériques dans une syntaxe facile à comprendre et à utiliser réduit le temps qui est nécessaire pour en savoir plus et augmente la vitesse d’adoption de nouvelles bibliothèques.
 
 ## <a name="related-rules"></a>Règles associées
  [CA1010 : Les collections doivent implémenter une interface générique](../code-quality/ca1010-collections-should-implement-generic-interface.md)

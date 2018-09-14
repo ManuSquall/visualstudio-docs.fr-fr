@@ -14,14 +14,18 @@ ms.assetid: cf45f8df-6855-4cb6-a4e2-7cfed714cf2f
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 883b5a5a00f5be3203b8113103193dd3e597ddfd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0e3e040b659b4e4b1484f7557a3ccececffa20e2
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916023"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549909"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715 : Les identificateurs doivent être dotés d'un préfixe correct
 |||
@@ -29,7 +33,7 @@ ms.locfileid: "31916023"
 |TypeName|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
 |Category|Microsoft.Naming|
-|Modification avec rupture|Avec rupture - lorsque déclenchée sur des interfaces.<br /><br /> Sans rupture - lorsque déclenchée sur les paramètres de type générique.|
+|Modification avec rupture|Avec rupture - lorsque déclenchée sur les interfaces.<br /><br /> Sans rupture - lorsque déclenchée sur les paramètres de type générique.|
 
 ## <a name="cause"></a>Cause
  Le nom d’une interface extérieurement visible ne commence pas par un « I » majuscule.
@@ -43,7 +47,7 @@ ms.locfileid: "31916023"
 
  Noms d’interface doivent commencer par une majuscule « I » suivie d’une autre lettre majuscule. Cette règle signale les violations pour les noms d’interface tels que 'MyInterface' et 'IsolatedInterface'.
 
- Les noms de paramètre de type générique doivent commencer par une majuscule, ' t » et éventuellement peut être suivi par une autre lettre majuscule. Cette règle signale les violations pour les noms de paramètre de type générique tel que « V » et « Type ».
+ Les noms de paramètre de type générique doivent commencer par une majuscule ' t » et éventuellement peut être suivie d’une autre lettre majuscule. Cette règle signale les violations pour les noms de paramètre de type générique comme « V » et « Type ».
 
  Conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage qui est requis pour les nouvelles bibliothèques de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
 
@@ -61,7 +65,7 @@ ms.locfileid: "31916023"
  [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_1.cs)]
 
 ## <a name="example"></a>Exemple
- **L’exemple suivant résout la violation précédente en attribuant l’interface « I ».**
+ **L’exemple suivant résout la violation précédente en préfixant l’interface avec « I ».**
 
  [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_2.cs)]
  [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix2#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_2.cpp)]
@@ -75,7 +79,7 @@ ms.locfileid: "31916023"
  [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix3#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_3.cs)]
 
 ## <a name="example"></a>Exemple
- **L’exemple suivant résout la violation précédente en faisant précéder le paramètre de type générique ' t ».**
+ **L’exemple suivant résout la violation précédente en faisant précéder le paramètre de type générique avec l ' ».**
 
  [!code-cpp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CPP/ca1715-identifiers-should-have-correct-prefix_4.cpp)]
  [!code-csharp[FxCop.Naming.IdentifiersShouldHaveCorrectPrefix4#1](../code-quality/codesnippet/CSharp/ca1715-identifiers-should-have-correct-prefix_4.cs)]

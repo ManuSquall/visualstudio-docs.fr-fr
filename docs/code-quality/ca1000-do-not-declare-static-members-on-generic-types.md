@@ -14,16 +14,20 @@ ms.assetid: 5c0da594-f8d0-4f40-953d-56bf7fbd2087
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b491d49a6bd9a7ffc1164c6cfa45b5260b339192
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5ec0e60302e1d6bff813a7bf0f39e1b71a6f1653
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899376"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548378"
 ---
 # <a name="ca1000-do-not-declare-static-members-on-generic-types"></a>CA1000 : Ne pas déclarer de membres statiques sur les types génériques
+
 |||
 |-|-|
 |TypeName|DoNotDeclareStaticMembersOnGenericTypes|
@@ -32,10 +36,10 @@ ms.locfileid: "31899376"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Un type générique visible de l’extérieur contient un `static` (`Shared` en Visual Basic) membre.
+ Un type générique extérieurement visible contient un `static` (`Shared` en Visual Basic) membre.
 
 ## <a name="rule-description"></a>Description de la règle
- Lorsqu’un `static` membre d’un type générique est appelé, l’argument de type doit être spécifié pour le type. Lorsqu'un membre d'instance générique qui ne prend pas en charge l'inférence est appelé, l'argument de type doit être spécifié pour le membre. La syntaxe pour spécifier l’argument de type dans ces deux cas est différente et peut être facilement confondue, comme les appels suivants montrent :
+ Quand un `static` membre d’un type générique est appelé, l’argument de type doit être spécifié pour le type. Lorsqu'un membre d'instance générique qui ne prend pas en charge l'inférence est appelé, l'argument de type doit être spécifié pour le membre. La syntaxe de spécification de l’argument de type dans ces deux cas est différent et peut être facilement confondue, comme le montrent les appels suivants :
 
 ```vb
 ' Shared method in a generic type.
@@ -53,13 +57,13 @@ GenericType<int>.StaticMethod();
 someObject.GenericMethod<int>();
 ```
 
- En règle générale, les deux déclarations précédentes doivent être évitées afin que l’argument de type ne devra pas être spécifié lorsque le membre est appelé. Cela entraîne une syntaxe pour appeler des membres dans les génériques n’est pas différente de la syntaxe de non génériques. Pour plus d’informations, consultez [CA1004 : les méthodes génériques doivent fournir un paramètre de type](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md).
+ En règle générale, les deux déclarations précédentes doivent être évités afin que l’argument de type ne devra pas être spécifié lorsque le membre est appelé. Cela entraîne une syntaxe pour appeler des membres dans les génériques qui ne diffère pas de la syntaxe pour les non-génériques. Pour plus d’informations, consultez [CA1004 : les méthodes génériques doivent fournir un paramètre de type](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md).
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, supprimez le membre statique ou remplacez-le par un membre d’instance.
+ Pour corriger une violation de cette règle, supprimer le membre statique ou remplacez-le par un membre d’instance.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez aucun avertissement de cette règle. Fourniture de génériques dans une syntaxe facile à comprendre et à utiliser réduit le temps nécessaire pour en savoir plus et augmente le taux d’adoption de nouvelles bibliothèques.
+ Ne supprimez aucun avertissement de cette règle. Fourniture de génériques dans une syntaxe facile à comprendre et à utiliser réduit le temps qui est nécessaire pour en savoir plus et augmente la vitesse d’adoption de nouvelles bibliothèques.
 
 ## <a name="related-rules"></a>Règles associées
  [CA1005 : Évitez trop de paramètres sur les types génériques](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)

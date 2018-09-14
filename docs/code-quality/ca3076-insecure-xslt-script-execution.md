@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a6b495572786bc4934d2972dfdfd27642803d3f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 74fe556d775e60dec5dde4528a1924e55ab4c2ed
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919841"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546390"
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076 : exécution non sécurisée de script XSLT
 
@@ -31,9 +31,9 @@ Si vous exécutez le langage XSLT (Extensible Stylesheet Language Transformation
 
 ## <a name="rule-description"></a>Description de la règle
 
-**XSLT** est une norme World Wide Web Consortium (W3C) pour la transformation des données XML. XSLT est généralement utilisé pour écrire des feuilles de style pour transformer des données XML sous d’autres formats tels que HTML, un texte de longueur fixe, un texte délimité par des virgules ou un autre format XML. Bien qu’il soit interdit par défaut, vous pouvez choisir de l’activer pour votre projet.
+**XSLT** est une norme World Wide Web Consortium (W3C) pour la transformation des données XML. XSLT est généralement utilisé pour écrire des feuilles de style pour transformer des données XML dans d’autres formats tels que HTML, texte de longueur fixe, séparées par des virgules ou un autre format XML. Bien qu’il soit interdit par défaut, vous pouvez choisir de l’activer pour votre projet.
 
-Pour garantir que vous ne vous exposez pas une surface d’attaque, cette règle se déclenche chaque fois que le XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> reçoit des instances de combinaisons non sécurisées de <xref:System.Xml.Xsl.XsltSettings> et <xref:System.Xml.XmlResolver>, ce qui permet le traitement d’un script malveillant.
+Pour garantir que vous n’exposez pas une surface d’attaque, cette règle se déclenche chaque fois que le XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> reçoit des instances de combinaisons non sécurisées de <xref:System.Xml.Xsl.XsltSettings> et <xref:System.Xml.XmlResolver>, ce qui permet le traitement d’un script malveillant.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
@@ -47,7 +47,7 @@ Sauf si vous êtes sûr que l’entrée provient d’une source fiable, ne suppr
 
 ## <a name="pseudo-code-examples"></a>Exemples de pseudo-code
 
-### <a name="violationmdashuses-xsltsettingstrustedxslt"></a>Violation&mdash;utilise XsltSettings.TrustedXslt
+### <a name="violation-that-uses-xsltsettingstrustedxslt"></a>Violation qui utilise XsltSettings.TrustedXslt
 
 ```csharp
 using System.Xml;
@@ -68,7 +68,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solutionmdashuse-xsltsettingsdefault"></a>Solution&mdash;utiliser XsltSettings.Default
+### <a name="solution-that-uses-xsltsettingsdefault"></a>Solution qui utilise XsltSettings.Default
 
 ```csharp
 using System.Xml;
@@ -89,7 +89,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="violationmdashdocument-function-and-script-execution-not-disabled"></a>Violation de&mdash;d’exécution de script et de fonction ne désactivée pas de document
+### <a name="violationmdashdocument-function-and-script-execution-not-disabled"></a>Violation&mdash;documenter l’exécution de script et de fonction ne pas désactivée
 
 ```csharp
 using System.Xml;
@@ -143,4 +143,4 @@ namespace TestNamespace
 
 ## <a name="see-also"></a>Voir aussi
 
-[Considérations de sécurité XSLT (Guide .NET)](/dotnet/standard/data/xml/xslt-security-considerations)
+- [Considérations de sécurité XSLT (Guide .NET)](/dotnet/standard/data/xml/xslt-security-considerations)

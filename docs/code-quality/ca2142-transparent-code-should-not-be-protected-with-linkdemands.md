@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 969c4f73148401f0a4f389f86b866023c316298c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 527086fa2b17de0330b394a7041232312f3b1719
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919342"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547214"
 ---
 # <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142 : Le code transparent ne doit pas être protégé avec des LinkDemands
 |||
@@ -28,13 +28,13 @@ ms.locfileid: "31919342"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Une méthode transparente requiert un <xref:System.Security.Permissions.SecurityAction> ou autres à la demande de sécurité.
+ Une méthode transparente nécessite un <xref:System.Security.Permissions.SecurityAction> ou autres à la demande de sécurité.
 
 ## <a name="rule-description"></a>Description de la règle
- Cette règle se déclenche sur les méthodes transparentes qui requièrent l'accès de LinkDemands. Le code transparent de sécurité ne doit pas être responsable de la vérification de la sécurité d’une opération. Par conséquent, il ne doit pas demander d’autorisations. Étant donné que les méthodes transparentes sont supposées pour être neutre de sécurité, ils ne doivent pas être décisions de sécurité. En outre, code critique sécurisé, qui à des décisions de sécurité, ne doit pas compter sur une telle décision précédemment appliquées au code transparent.
+ Cette règle se déclenche sur les méthodes transparentes qui requièrent l’accès de LinkDemands. Le code transparent de sécurité ne doit pas être responsable de la vérification de la sécurité d’une opération. Par conséquent, il ne doit pas demander d’autorisations. Étant donné que les méthodes transparentes sont supposées pour être neutre de sécurité, ils ne doivent pas être décisions de sécurité. En outre, les code critique sécurisé permettant des décisions de sécurité, ne doit pas compter sur le code transparent à avoir déjà effectuées une telle décision.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, supprimez la demande de liaison sur la méthode transparente ou marquez la méthode avec <xref:System.Security.SecuritySafeCriticalAttribute> attribut si elle exécute sécurité vérifie, telles que les demandes de sécurité.
+ Pour corriger une violation de cette règle, supprimez la demande de liaison sur la méthode transparente ou marquez la méthode avec <xref:System.Security.SecuritySafeCriticalAttribute> attribut si elle exécute sécurité vérifie, telles que des demandes de sécurité.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez aucun avertissement de cette règle.

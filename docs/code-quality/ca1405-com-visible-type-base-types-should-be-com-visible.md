@@ -14,16 +14,20 @@ ms.assetid: a762ea2f-5285-4f73-bfb9-9eb10aea4290
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1eefb3fdb207ecacca4998168509e8c5b9b1a2f1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: efaac5fc5b5f8784d204c31e537a5279a81e2699
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898835"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548279"
 ---
 # <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405 : Les types de base type visibles par COM doivent être visibles par COM
+
 |||
 |-|-|
 |TypeName|ComVisibleTypeBaseTypesShouldBeComVisible|
@@ -32,22 +36,24 @@ ms.locfileid: "31898835"
 |Modification avec rupture|DependsOnFix|
 
 ## <a name="cause"></a>Cause
- Un type visible du modèle COM (Component Object) dérive d’un type qui n’est pas visible par COM.
+ Un type visible de composant COM (Object Model) dérive d’un type qui n’est pas visible par COM.
 
 ## <a name="rule-description"></a>Description de la règle
- Quand un type visible par COM ajoute des membres dans une nouvelle version, il doit se conformer aux recommandations strictes afin d’éviter l’interruption des clients COM qui se lient à la version actuelle. Un type qui est invisible dans COM suppose qu’il ne dispose pas de suivre ces règles de versioning COM lorsqu’il ajoute de nouveaux membres. Toutefois, si un visibles par COM type dérive du type invisible par COM et expose une interface de classe de <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> ou <xref:System.Runtime.InteropServices.ClassInterfaceType> (la valeur par défaut), tous les membres publics du type de base (sauf si elles sont spécifiquement marquées comme COM invisibles, ce qui serait redondant) sont exposées à COM. Si le type de base ajoute de nouveaux membres dans une version ultérieure, les clients COM qui se lient à l’interface de classe du type dérivé peuvent interrompre. Types visibles par COM doivent dériver uniquement de types visibles par COM afin de réduire le risque d’interrompre les clients COM.
+ Lorsqu’un type visible par COM ajoute des membres dans une nouvelle version, il doit se conformer strictement aux instructions pour éviter d’interrompre les clients COM liés à la version actuelle. Un type qui est invisible dans COM suppose qu’il n’a pas de suivre ces règles de versioning COM lorsqu’il ajoute de nouveaux membres. Toutefois, si un visibles par COM type dérive du type invisible par COM et expose une interface de classe de <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> ou <xref:System.Runtime.InteropServices.ClassInterfaceType> (la valeur par défaut), tous les membres publics du type de base (sauf si elles sont spécifiquement marqués comme COM invisibles, ce qui serait redondant) sont exposées à COM. Si le type de base ajoute de nouveaux membres dans une version ultérieure, les clients COM qui se lient à l’interface de classe du type dérivé peuvent interrompre. Types visibles par COM doivent dériver uniquement de types visibles par COM afin de réduire le risque d’arrêt des clients COM.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, rendez les types visibles par COM de base ou le type dérivé COM invisible.
+ Pour corriger une violation de cette règle, rend les types de base visibles par COM ou le type dérivé COM invisible.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre un type qui enfreint la règle.
+ L’exemple suivant montre un type qui viole la règle.
 
  [!code-vb[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1405-com-visible-type-base-types-should-be-com-visible_1.vb)]
  [!code-csharp[FxCop.Interoperability.ComBaseTypes#1](../code-quality/codesnippet/CSharp/ca1405-com-visible-type-base-types-should-be-com-visible_1.cs)]
 
 ## <a name="see-also"></a>Voir aussi
- <xref:System.Runtime.InteropServices.ClassInterfaceAttribute?displayProperty=fullName> [Interopération avec du Code non managé](/dotnet/framework/interop/index)
+
+- <xref:System.Runtime.InteropServices.ClassInterfaceAttribute?displayProperty=fullName>
+- [Interopération avec du code non managé](/dotnet/framework/interop/index)

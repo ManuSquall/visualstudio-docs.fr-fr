@@ -15,16 +15,21 @@ ms.assetid: 79670604-c02a-448d-9c0e-7ea0120bc5fe
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: be39489c30de235248b9e3f2770811fc190ac5a3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bbfafb78022e462c1f629019ddb40c711fcd581b
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918111"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551465"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100 : Rechercher des failles de sécurité dans des requêtes SQL
+
 |||
 |-|-|
 |TypeName|ReviewSqlQueriesForSecurityVulnerabilities|
@@ -33,28 +38,29 @@ ms.locfileid: "31918111"
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Une méthode définit le <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> propriété à l’aide d’une chaîne générée à partir d’un argument de chaîne à la méthode.
+ Une méthode définit le <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> propriété à l’aide d’une chaîne qui est construite à partir d’un argument de chaîne à la méthode.
 
 ## <a name="rule-description"></a>Description de la règle
- Cette règle suppose que l'argument de chaîne contient des entrées d'utilisateur. Une chaîne de commande SQL générée par une entrée d'utilisateur est vulnérable aux attaques par injection de code SQL. Dans une attaque par injection SQL, un utilisateur malveillant fournit des entrées qui modifie la conception d’une requête dans le but d’endommager ou d’accéder à la base de données sous-jacente. Les techniques classiques englobent l’injection d’un guillemet simple ou une apostrophe, qui est le délimiteur de chaîne littérale SQL ; deux tirets, ce qui signifie un commentaire SQL ; et un point-virgule, ce qui indique qu’une nouvelle commande suit. Si l’entrée d’utilisateur doit faire partie de la requête, utilisez une des options suivantes, répertoriées par ordre d’efficacité, afin de réduire le risque d’attaque.
 
--   Utilisez une procédure stockée.
+Cette règle suppose que l’argument de chaîne contient des entrées d’utilisateur. Une chaîne de commande SQL générée par une entrée d'utilisateur est vulnérable aux attaques par injection de code SQL. Dans une attaque par injection SQL, un utilisateur malveillant fournit des entrées qui modifie la conception d’une requête dans le but d’endommager ou d’accès non autorisé à la base de données sous-jacente. Les techniques classiques englobent l’injection d’un guillemet ou une apostrophe, qui est le délimiteur de chaîne littérale SQL ; deux tirets, ce qui signifie un commentaire SQL ; et un point-virgule, ce qui indique qu’une nouvelle commande suit. Si l’entrée d’utilisateur doit faire partie de la requête, utilisez un des éléments suivants, répertoriés par ordre d’efficacité, afin de réduire le risque d’attaque.
 
--   Utilisez une chaîne de commande paramétrable.
+- Utiliser une procédure stockée.
 
--   Valider l’entrée d’utilisateur pour le type et le contenu avant de générer la chaîne de commande.
+- Utilisez une chaîne de commande paramétrable.
 
- Les éléments suivants [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] types implémentent la <xref:System.Data.IDbCommand.CommandText%2A> propriété ou fournissent des constructeurs qui définissent la propriété à l’aide d’un argument de chaîne.
+- Valider l’entrée d’utilisateur pour le type et le contenu avant de générer la chaîne de commande.
 
--   <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> et <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
+Ce qui suit [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] types implémentent le <xref:System.Data.IDbCommand.CommandText%2A> propriété ou fournissent des constructeurs qui définissent la propriété à l’aide d’un argument de chaîne.
 
--   <xref:System.Data.OleDb.OleDbCommand?displayProperty=fullName> et <xref:System.Data.OleDb.OleDbDataAdapter?displayProperty=fullName>
+- <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> et <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
--   <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName> et <xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>
+- <xref:System.Data.OleDb.OleDbCommand?displayProperty=fullName> et <xref:System.Data.OleDb.OleDbDataAdapter?displayProperty=fullName>
 
--   <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> et <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
+- <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName> et <xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>
 
- Notez que cette règle est violée lorsque la méthode ToString d’un type est utilisée explicitement ou implicitement pour construire la chaîne de requête. Voici un exemple.
+- <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> et <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
+
+Notez que cette règle est violée lorsque la méthode ToString d’un type est utilisée explicitement ou implicitement pour construire la chaîne de requête. Voici un exemple.
 
 ```
 int x = 10;

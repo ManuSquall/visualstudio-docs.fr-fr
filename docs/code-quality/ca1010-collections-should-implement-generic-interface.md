@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb43481b80726171414fab6b6a65fee8a5e29cb0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f79a0e4fcb9cf4f82b85e9d62ffa51ef969293c7
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31902014"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550997"
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010 : Les collections doivent implémenter une interface générique
 |||
@@ -32,28 +32,28 @@ ms.locfileid: "31902014"
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Un type visible de l’extérieur implémente la <xref:System.Collections.IEnumerable?displayProperty=fullName> interface mais n’implémente pas le <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> interface et l’assembly conteneur cible [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]. Cette règle ignore les types qui implémentent <xref:System.Collections.IDictionary?displayProperty=fullName>.
+ Un type visible extérieurement implémente le <xref:System.Collections.IEnumerable?displayProperty=fullName> interface mais n’implémente pas le <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> interface et l’assembly conteneur cible [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]. Cette règle ignore les types qui implémentent <xref:System.Collections.IDictionary?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Description de la règle
- Pour étendre la facilité d’utilisation d’une collection, implémentez l’une des interfaces de collection génériques. La collection peut ensuite être utilisée pour remplir des types de collections génériques tels que les éléments suivants :
+ Pour étendre la facilité d’utilisation d’une collection, implémentez l’une des interfaces de collection génériques. Puis la collection peut être utilisée pour remplir des types de collections génériques telles que les éléments suivants :
 
--   <xref:System.Collections.Generic.List%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.List%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.Queue%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.Queue%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.Stack%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.Stack%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, implémentez l’une des interfaces de collection génériques suivantes :
 
--   <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
+- <xref:System.Collections.Generic.IList%601?displayProperty=fullName>
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Il est possible de supprimer un avertissement de cette règle ; Toutefois, la collection aura une utilisation plus limitée.
+ Il est possible de supprimer un avertissement de cette règle ; Toutefois, la collection auront une utilisation plus limitée.
 
 ## <a name="example-violation"></a>Exemple de Violation
 
@@ -64,7 +64,7 @@ ms.locfileid: "31902014"
  [!code-csharp[FxCop.Design.CollectionsGenericViolation#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_1.cs)]
 
 ### <a name="comments"></a>Commentaires
- Pour corriger une violation de cette violation, vous devez implémenter les interfaces génériques ou modifier la classe de base en un type qui implémente déjà les interfaces génériques et non génériques, telles que la `Collection<T>` classe.
+ Pour corriger une violation de cette violation, vous devez implémenter les interfaces génériques ou modifier la classe de base à un type qui implémente déjà les interfaces génériques et non génériques, tels que le `Collection<T>` classe.
 
 ## <a name="fix-by-base-class-change"></a>Résoudre par modification de la classe de Base
 
@@ -75,7 +75,7 @@ ms.locfileid: "31902014"
  [!code-csharp[FxCop.Design.CollectionsGenericBase#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_2.cs)]
 
 ### <a name="comments"></a>Commentaires
- Modification de la classe de base d’une classe déjà finale d’est considérée comme une modification avec rupture pour les utilisateurs existants.
+ Modification de la classe de base d’une classe déjà publiée d’est considéré comme une modification avec rupture pour les utilisateurs existants.
 
 ## <a name="fix-by-interface-implementation"></a>Résoudre par implémentation d’Interface
 

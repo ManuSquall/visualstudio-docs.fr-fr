@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7708f5e968fed8765ca27bff99d479957927440b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0ddeb32032f7fbd6ff088980c342405261e5b473
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916552"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548463"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002 : Ne définissez pas un verrou sur des objets à identité faible
 
@@ -64,7 +64,7 @@ Les types suivants ont une identité faible et sont signalés par la règle :
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, utiliser un objet d’un type qui n’est pas dans la liste dans la section Description.
+Pour corriger une violation de cette règle, utilisez un objet à partir d’un type qui n’est pas dans la liste dans la section de Description.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 
@@ -76,14 +76,14 @@ Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="example"></a>Exemple
 
-L’exemple suivant montre des verrous d’objet qui enfreint la règle.
+L’exemple suivant montre des verrous d’objets qui enfreignent la règle.
 
 [!code-vb[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/VisualBasic/ca2002-do-not-lock-on-objects-with-weak-identity_1.vb)]
 [!code-csharp[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/CSharp/ca2002-do-not-lock-on-objects-with-weak-identity_1.cs)]
 
 ## <a name="see-also"></a>Voir aussi
 
-<xref:System.Threading.Monitor>
-<xref:System.AppDomain>
-[Lock, instruction (c#)](/dotnet/csharp/language-reference/keywords/lock-statement)
-[SyncLock, instruction (Visual Basic)](/dotnet/visual-basic/language-reference/statements/synclock-statement)
+- <xref:System.Threading.Monitor>
+- <xref:System.AppDomain>
+- [Lock, instruction (c#)](/dotnet/csharp/language-reference/keywords/lock-statement)
+- [SyncLock, instruction (Visual Basic)](/dotnet/visual-basic/language-reference/statements/synclock-statement)

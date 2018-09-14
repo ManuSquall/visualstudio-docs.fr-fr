@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 514a062429168592fe46112ad008d0d1f4e60a28
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2b5ee844da2c04a1dd6eac6a7ca458957dd22a71
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914782"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550607"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716 : Les identificateurs ne doivent pas correspondre à des mots clés
 |||
@@ -35,20 +35,20 @@ ms.locfileid: "31914782"
  Un nom d’un espace de noms, un type ou un membre d’interface ou virtuel correspond à un mot clé réservé dans un langage de programmation.
 
 ## <a name="rule-description"></a>Description de la règle
- Identificateurs des espaces de noms, types et virtuels et les membres d’interface ne doivent pas correspondre aux mots clés définis par les langages qui ciblent le common language runtime. Selon le langage utilisé et le mot clé, ambiguïtés et les erreurs du compilateur peuvent rendre la bibliothèque difficile à utiliser.
+ Identificateurs pour les espaces de noms, types et virtuels et les membres d’interface ne doivent pas correspondre aux mots clés définis par les langages qui ciblent le common language runtime. Selon le langage qui est utilisé et le mot clé, ambiguïtés et les erreurs du compilateur peuvent rendre la bibliothèque difficile à utiliser.
 
- Cette règle vérifie par rapport aux mots clés dans les langues suivantes :
+ Cette règle vérifie par rapport à des mots clés dans les langues suivantes :
 
--   Visual Basic
+- Visual Basic
 
--   C#
+- C#
 
--   C++/CLI
+- C++/CLI
 
- Comparaison respectant la casse est utilisé pour [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] les mots clés et une comparaison respectant la casse est utilisé pour les autres langues.
+ Comparaison de non-respect de la casse est utilisée pour [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] mots clés et comparaison respectant la casse est utilisée pour les autres langues.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Sélectionnez un nom qui n’apparaît pas dans la liste de mots clés.
+ Sélectionnez un nom qui n’apparaît pas dans la liste des mots clés.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Vous pouvez supprimer un avertissement de cette règle si vous êtes sûr que l’identificateur sera confondez pas les utilisateurs de l’API, et que la bibliothèque est utilisable dans toutes les langues disponibles dans le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Vous pouvez supprimer un avertissement de cette règle si vous êtes convaincu que l’identificateur sera confondez pas les utilisateurs de l’API, et que la bibliothèque est utilisable dans toutes les langues disponibles dans le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].

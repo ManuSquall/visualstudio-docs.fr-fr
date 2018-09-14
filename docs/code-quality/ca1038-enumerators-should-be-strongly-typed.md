@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b15295b0af35c927e56c37f56a48c86ac4c705af
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 22cc84a0cdc8d4fdb86f6890ae0ebd25eb65beb8
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898848"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545487"
 ---
 # <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038 : Les énumérateurs doivent être fortement typés
+
 |||
 |-|-|
 |TypeName|EnumeratorsShouldBeStronglyTyped|
@@ -32,25 +33,25 @@ ms.locfileid: "31898848"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Un type public ou protégé implémente <xref:System.Collections.IEnumerator?displayProperty=fullName> mais ne fournit ne pas une version fortement typée de la <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> propriété. Les types qui sont dérivés des types suivants sont exempts de cette règle :
+ Un type public ou protégé implémente <xref:System.Collections.IEnumerator?displayProperty=fullName> mais ne fournit ne pas une version fortement typée de la <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> propriété. Les types qui sont dérivés des types suivants sont exemptés de cette règle :
 
--   <xref:System.Collections.CollectionBase?displayProperty=fullName>
+- <xref:System.Collections.CollectionBase?displayProperty=fullName>
 
--   <xref:System.Collections.DictionaryBase?displayProperty=fullName>
+- <xref:System.Collections.DictionaryBase?displayProperty=fullName>
 
--   <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
+- <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Description de la règle
- Cette règle requiert <xref:System.Collections.IEnumerator> implémentations fournissent également une version fortement typée de la <xref:System.Collections.IEnumerator.Current%2A> propriété afin que les utilisateurs ne sont pas tenus d’effectuer un cast de la valeur de retour en type fort lorsqu’ils utilisent les fonctionnalités fournies par l’interface. Cette règle suppose que le type qui implémente <xref:System.Collections.IEnumerator> contient une collection d’instances d’un type plus fort que <xref:System.Object>.
+ Cette règle requiert <xref:System.Collections.IEnumerator> implémentations fournissent également une version fortement typée de la <xref:System.Collections.IEnumerator.Current%2A> propriété afin que les utilisateurs ne soient pas tenus d’effectuer un cast de la valeur de retour vers le type fort lorsqu’ils utilisent les fonctionnalités fournies par l’interface. Cette règle suppose que le type qui implémente <xref:System.Collections.IEnumerator> contient une collection d’instances d’un type plus fort que <xref:System.Object>.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, implémentez la propriété d’interface explicitement (déclarez-le en tant que `IEnumerator.Current`). Ajouter une version fortement typée publique de la propriété, déclarée en tant que `Current`, et qu’il retourne un objet fortement typé.
+ Pour corriger une violation de cette règle, implémentez la propriété d’interface explicitement (déclarez-le en tant que `IEnumerator.Current`). Ajouter une version publique fortement typée de la propriété déclarée comme `Current`, et qu’il renvoie un objet fortement typé.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Supprimer un avertissement de cette règle lorsque vous implémentez un énumérateur basée sur un objet pour une utilisation avec une collection basée sur un objet, par exemple un arbre binaire. Les types qui étendent la nouvelle collection définissent l’énumérateur fortement typé et exposent la propriété fortement typée.
+ Supprimer un avertissement de cette règle lorsque vous implémentez un énumérateur basée sur un objet pour une utilisation avec une collection basée sur un objet, comme un arbre binaire. Les types qui étendent la nouvelle collection définissent l’énumérateur fortement typé et exposent la propriété fortement typée.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant illustre la façon correcte d’implémenter fortement typé <xref:System.Collections.IEnumerator> type.
+ L’exemple suivant montre comment implémenter fortement typé <xref:System.Collections.IEnumerator> type.
 
  [!code-csharp[FxCop.Design.IEnumeratorStrongTypes#1](../code-quality/codesnippet/CSharp/ca1038-enumerators-should-be-strongly-typed_1.cs)]
 
@@ -60,4 +61,8 @@ ms.locfileid: "31898848"
  [CA1039 : Les listes sont fortement typées](../code-quality/ca1039-lists-are-strongly-typed.md)
 
 ## <a name="see-also"></a>Voir aussi
- <xref:System.Collections.IEnumerator?displayProperty=fullName> <xref:System.Collections.CollectionBase?displayProperty=fullName> <xref:System.Collections.DictionaryBase?displayProperty=fullName> <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
+
+- <xref:System.Collections.IEnumerator?displayProperty=fullName>
+- <xref:System.Collections.CollectionBase?displayProperty=fullName>
+- <xref:System.Collections.DictionaryBase?displayProperty=fullName>
+- <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>

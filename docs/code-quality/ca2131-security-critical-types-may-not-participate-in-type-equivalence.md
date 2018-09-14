@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6689e6f0be6db4b14f03006d1aa784ae70642ef
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 681b2916ef6e6e5c90d98b7a88874a7fb0166549
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915693"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546705"
 ---
 # <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131 : Les types critiques de sécurité ne peuvent pas participer à l'équivalence des types
 |||
@@ -28,10 +28,10 @@ ms.locfileid: "31915693"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Un type participe à l’équivalence de type et un type lui-même, ou un membre ou champ du type, est marqué avec la <xref:System.Security.SecurityCriticalAttribute> attribut.
+ Un type participe à l’équivalence de type et un type lui-même, ou un membre ou champ du type, est marqué avec le <xref:System.Security.SecurityCriticalAttribute> attribut.
 
 ## <a name="rule-description"></a>Description de la règle
- Cette règle se déclenche sur tout type ou type critique contenant des méthodes critiques ou des champs qui participent à l'équivalence de type. Lorsque le CLR détecte un tel type, il ne parvient pas à le charger avec une <xref:System.TypeLoadException> en cours d’exécution. En général, cette règle se déclenche uniquement lorsque les utilisateurs implémentent l'équivalence de type manuellement plutôt qu'en comptant sur tlbimp et les compilateurs pour faire l'équivalence de type.
+ Cette règle se déclenche sur tout type ou type critique contenant des méthodes critiques ou des champs qui participent à l’équivalence de type. Lorsque le CLR détecte un tel type, il ne parvient pas à le charger avec une <xref:System.TypeLoadException> en cours d’exécution. En général, cette règle se déclenche uniquement lorsque les utilisateurs implémentent l’équivalence de type manuellement plutôt qu’en comptant sur tlbimp et les compilateurs pour faire l’équivalence de type.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, supprimez l’attribut SecurityCritical.
@@ -40,7 +40,7 @@ ms.locfileid: "31915693"
  Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="example"></a>Exemple
- Les exemples suivants montrent une interface, une méthode et un champ qui fait que cette règle s’applique.
+ Les exemples suivants montrent une interface, une méthode et un champ qui entraîne le déclenchement de cette règle.
 
  [!code-csharp[FxCop.Security.CA2131.CriticalTypesMustNotParticipateInTypeEquivalence#1](../code-quality/codesnippet/CSharp/ca2131-security-critical-types-may-not-participate-in-type-equivalence_1.cs)]
 

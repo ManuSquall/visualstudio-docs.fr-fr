@@ -14,16 +14,20 @@ ms.assetid: 05ed134a-837d-43d7-bf97-906edeac44ce
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a00f78739a9287c996e87f182ca34ecba6d484c7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e56c57343ae61709b6d5875c865857a7475363fd
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898874"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550490"
 ---
 # <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302 : Ne pas coder en dur les chaînes spécifiques aux paramètres régionaux
+
 |||
 |-|-|
 |TypeName|DoNotHardcodeLocaleSpecificStrings|
@@ -35,15 +39,15 @@ ms.locfileid: "31898874"
  Une méthode utilise un littéral de chaîne qui représente la partie du chemin d’accès de certains dossiers système.
 
 ## <a name="rule-description"></a>Description de la règle
- Le <xref:System.Environment.SpecialFolder?displayProperty=fullName> énumération contient des membres qui font référence à des dossiers système spéciaux. Les emplacements de ces dossiers peuvent avoir des valeurs différentes sur différents systèmes d’exploitation, l’utilisateur peut modifier certains des emplacements, et ces derniers sont localisés. Un exemple d’un dossier spécial est le dossier système, qui est « C:\WINDOWS\system32 » sur [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)] mais « C:\WINNT\system32 » sur [!INCLUDE[win2kfamily](../code-quality/includes/win2kfamily_md.md)]. Le <xref:System.Environment.GetFolderPath%2A?displayProperty=fullName> méthode retourne les emplacements qui sont associés les <xref:System.Environment.SpecialFolder> énumération. Les emplacements qui sont retournées par <xref:System.Environment.GetFolderPath%2A> sont localisés et appropriés pour l’ordinateur en cours d’exécution.
+ Le <xref:System.Environment.SpecialFolder?displayProperty=fullName> énumération contient des membres qui font référence à des dossiers système spéciaux. Les emplacements de ces dossiers peuvent avoir des valeurs différentes sur différents systèmes d’exploitation, l’utilisateur peut modifier certains de ces emplacements, et ces derniers sont localisés. Un exemple d’un dossier spécial est le dossier système, qui est « C:\WINDOWS\system32 » sur [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)] mais « C:\WINNT\system32 » sur [!INCLUDE[win2kfamily](../code-quality/includes/win2kfamily_md.md)]. Le <xref:System.Environment.GetFolderPath%2A?displayProperty=fullName> méthode retourne les emplacements qui sont associés les <xref:System.Environment.SpecialFolder> énumération. Les emplacements retournés par <xref:System.Environment.GetFolderPath%2A> sont localisés et appropriés pour l’ordinateur en cours d’exécution.
 
- Cette règle de segmentation en unités lexicales les chemins d’accès du dossier qui sont récupérés à l’aide de la <xref:System.Environment.GetFolderPath%2A> méthode dans les niveaux de répertoires séparés. Chaque littéral de chaîne est comparé aux jetons. Si une correspondance est trouvée, il est supposé que la méthode de générer une chaîne qui fait référence à l’emplacement du système qui est associé au jeton. Pour la portabilité et l’adaptabilité, utilisez la <xref:System.Environment.GetFolderPath%2A> méthode pour récupérer les emplacements des dossiers système spéciaux au lieu d’utiliser des littéraux de chaîne.
+ Cette règle crée des jetons dans les chemins d’accès de dossier sont récupérées en utilisant le <xref:System.Environment.GetFolderPath%2A> méthode dans les niveaux de répertoires séparés. Chaque littéral de chaîne est comparé aux jetons. Si une correspondance est trouvée, il est supposé que la méthode génère une chaîne qui fait référence à l’emplacement du système qui est associé au jeton. Pour la portabilité et d’adaptabilité, utilisez la <xref:System.Environment.GetFolderPath%2A> méthode pour récupérer les emplacements des dossiers système spéciaux au lieu d’utiliser des littéraux de chaîne.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, extraire l’emplacement à l’aide de la <xref:System.Environment.GetFolderPath%2A> (méthode).
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Il est possible de supprimer un avertissement de cette règle si le littéral de chaîne n’est pas utilisé pour faire référence à un des emplacements du système qui est associé à la <xref:System.Environment.SpecialFolder> énumération.
+ Il est possible de supprimer un avertissement de cette règle si le littéral de chaîne n’est pas utilisé pour faire référence à un des emplacements du système qui est associé le <xref:System.Environment.SpecialFolder> énumération.
 
 ## <a name="example"></a>Exemple
  L’exemple suivant génère le chemin d’accès du dossier application data commun, qui génère trois avertissements de cette règle. Ensuite, l’exemple récupère le chemin d’accès à l’aide de la <xref:System.Environment.GetFolderPath%2A> (méthode).

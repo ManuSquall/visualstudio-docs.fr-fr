@@ -13,15 +13,20 @@ helpviewer_keywords:
 ms.assetid: fd805687-0817-481e-804e-b62cfb3b1076
 author: gewarren
 ms.author: gewarren
+dev_langs:
+- CPP
+- CSharp
+- VB
 manager: douge
-ms.openlocfilehash: 6b0d5870b29fea9d6ef99a3951ef12d938b0eab3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ebbad9eb48a448aa756f580ade794ba70eb25611
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914664"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546835"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806 : Ne pas ignorer les résultats de méthode
+
 |||
 |-|-|
 |TypeName|DoNotIgnoreMethodResults|
@@ -30,31 +35,32 @@ ms.locfileid: "31914664"
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Il existe plusieurs raisons possibles pour cet avertissement :
 
--   Un nouvel objet est créé mais jamais utilisé.
+Il existe plusieurs raisons possibles à cet avertissement :
 
--   Une méthode qui crée et retourne une nouvelle chaîne est appelée et la nouvelle chaîne n’est jamais utilisée.
+- Un nouvel objet est créé mais jamais utilisé.
 
--   Une méthode COM ou P/Invoke qui retourne un code HRESULT ou d’erreur qui n’est jamais utilisée. Description de la règle
+- Une méthode qui crée et retourne une nouvelle chaîne est appelée et la nouvelle chaîne n’est jamais utilisée.
 
- Création d’un objet inutile et le garbage collection associé de l’objet inutilisé dégrader les performances.
+- Une méthode COM ou P/Invoke qui retourne un HRESULT ou code d’erreur qui n’est jamais utilisée. Description de la règle
 
- Les chaînes sont immuables et méthodes telles que String.ToUpper retourne une nouvelle instance d’une chaîne au lieu de modifier l’instance de la chaîne dans la méthode d’appel.
+Création d’un objet inutile et le garbage collection associé de l’objet inutilisé dégrader les performances.
 
- Ignorer des HRESULT ou code d’erreur peut entraîner un comportement inattendu dans les conditions d’erreur ou à des conditions de ressources insuffisantes.
+Les chaînes sont immuables et les méthodes telles que String.ToUpper retourne une nouvelle instance d’une chaîne au lieu de modifier l’instance de la chaîne dans la méthode d’appel.
+
+Ignorer les HRESULT ou code d’erreur peut entraîner un comportement inattendu dans les conditions d’erreur ou à des conditions de ressources insuffisantes.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Si la méthode A crée une nouvelle instance de l’objet B qui n’est jamais utilisée, passez l’instance comme argument à une autre méthode ou assignez l’instance à une variable. Si la création d’objets n’est pas nécessaire, supprimez-la.- ou -
+ Si la méthode A crée une nouvelle instance de l’objet B qui n’est jamais utilisée, passez l’instance comme argument à une autre méthode ou assignez l’instance à une variable. Si la création de l’objet n’est pas nécessaire, supprimez-la.- ou -
 
- Si la méthode A appelle la méthode B, mais n’utilise pas la nouvelle instance de chaîne retournée par la méthode B. Passez l’instance comme argument à une autre méthode, assignez l’instance à une variable. Ou bien, supprimez l’appel s’il n’est pas nécessaire.
+ Si la méthode A appelle la méthode B, mais n’utilise pas la nouvelle instance de chaîne retournée par la méthode B. Passez l’instance comme argument à une autre méthode, assignez l’instance à une variable. Ou supprimez l’appel s’il n’est pas nécessaire.
 
  - ou -
 
- Si la méthode A appelle la méthode B, mais n’utilise pas le HRESULT ou code d’erreur que la méthode retourne. Utilisez le résultat dans une instruction conditionnelle, assignez le résultat à une variable ou passez-le en tant qu’argument à une autre méthode.
+ Si la méthode A appelle la méthode B, mais n’utilise pas le HRESULT ou code d’erreur que la méthode retourne. Utiliser le résultat dans une instruction conditionnelle, assignez le résultat à une variable ou passez-le en tant qu’argument à une autre méthode.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez aucun avertissement de cette règle, sauf si l’opération de création de l’objet sert à des fins.
+ Ne supprimez pas un avertissement de cette règle, sauf si l’opération de création de l’objet sert un but quelconque.
 
 ## <a name="example"></a>Exemple
  L’exemple suivant montre une classe qui ignore le résultat de l’appel de String.Trim.
@@ -74,7 +80,7 @@ ms.locfileid: "31914664"
  L’exemple suivant montre une méthode qui n’utilise pas un objet qu’il crée.
 
 > [!NOTE]
->  Cette violation ne peut pas être reproduite en Visual Basic.
+> Cette violation ne peut pas être reproduite dans Visual Basic.
 
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_3.cpp)]
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_3.cs)]

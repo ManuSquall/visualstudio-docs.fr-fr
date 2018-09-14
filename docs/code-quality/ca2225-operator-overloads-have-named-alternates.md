@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 991358ec361e414c9f5d335feb43eadde628a763
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83dc61c31d2951d230c04fb52d7d1e6ffd932a03
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924672"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550305"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225 : Les surcharges d'opérateur offrent d'autres méthodes nommées
 |||
@@ -35,11 +35,11 @@ ms.locfileid: "31924672"
  Une surcharge d'opérateur a été détectée, et la méthode de substitution nommée attendue n'a pas été trouvée.
 
 ## <a name="rule-description"></a>Description de la règle
- Surcharge d’opérateur autorise l’utilisation de symboles pour représenter des calculs pour un type. Par exemple, un type qui surcharge le signe plus (+) pour l’addition aurait en général un membre de substitution nommé 'Add'. Le membre de substitution nommé donne accès à la même fonctionnalité que l’opérateur et est fourni pour les développeurs qui programment dans les langages qui ne prennent pas en charge les opérateurs surchargés.
+ Surcharge d’opérateur autorise l’utilisation de symboles pour représenter des calculs pour un type. Par exemple, un type qui surcharge le symbole plus (+) pour l’addition aurait en général, un membre de substitution nommé 'Add'. Le membre de substitution nommé donne accès à la même fonctionnalité que l’opérateur et est fourni pour les développeurs qui programment dans les langages qui ne prennent pas en charge les opérateurs surchargés.
 
  Cette règle examine les opérateurs répertoriés dans le tableau suivant.
 
-|C#|Visual Basic|C++|Nom de remplacement|
+|C#|Visual Basic|C++|Autre nom|
 |---------|------------------|-----------|--------------------|
 |+ (binaire)|+|+ (binaire)|Ajouter|
 |+=|+=|+=|Ajouter|
@@ -57,8 +57,8 @@ ms.locfileid: "31924672"
 |>=|>=|>=|Comparer|
 |++|N/A|++|Incrémentation|
 |<>|!=|Equals|
-|<<|<<|<<|LeftShift|
-|<<=|<<=|<<=|LeftShift|
+|<<|<<|<<|MAJ|
+|<<=|<<=|<<=|MAJ|
 |<|<|<|Comparer|
 |<=|<=|\<=|Comparer|
 |&&|N/A|&&|LogicalAnd|
@@ -68,27 +68,27 @@ ms.locfileid: "31924672"
 |%=|N/A|%=|Mod|
 |* (binaire)|*|*|Multiplier|
 |*=|N/A|*=|Multiplier|
-|~|pas|~|OnesComplement|
-|>>|>>|>>|MAJ|
-=|N/A|>>=|MAJ|
+|~|Ne convient pas|~|OnesComplement|
+|>>|>>|>>|MAJ droite|
+=|N/A|>>=|MAJ droite|
 |-(binaire)|-(binaire)|-(binaire)|Soustraire|
 |-=|N/A|-=|Soustraire|
 |true|IsTrue|N/A|IsTrue (propriété)|
-|-(unaire)|N/A|-|Inverser le signe|
-|+ (unaire)|N/A|+|signe plus|
+|-(unaire)|N/A|-|Negate|
+|+ (unaire)|N/A|+|Signe plus|
 |False|IsFalse|False|IsTrue (propriété)|
 
  N/a == ne peut pas être surchargé dans la langue sélectionnée.
 
  La règle vérifie également les opérateurs de cast implicites et explicites dans un type (`SomeType`) en recherchant les méthodes nommées `ToSomeType` et `FromSomeType`.
 
- En c#, lorsqu’un opérateur binaire est surchargé, l’opérateur d’assignation correspondant, le cas échéant, est également implicitement surchargé.
+ En c#, lorsqu’un opérateur binaire est surchargé, l’opérateur d’assignation correspondant, le cas échéant, est aussi implicitement surchargé.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, implémentez la méthode de remplacement pour l’opérateur. nom à l’aide de l’autre nom recommandée.
+ Pour corriger une violation de cette règle, implémentez la méthode alternative pour l’opérateur. Nommez-le à l’aide de l’autre nom recommandé.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez aucun avertissement de cette règle si vous implémentez une bibliothèque partagée. Les applications peuvent ignorer un avertissement de cette règle.
+ Ne supprimez pas un avertissement de cette règle si vous implémentez une bibliothèque partagée. Les applications peuvent ignorer un avertissement de cette règle.
 
 ## <a name="example"></a>Exemple
  L’exemple suivant définit une structure qui enfreint cette règle. Pour corriger l’exemple, ajoutez un public `Add(int x, int y)` méthode à la structure.

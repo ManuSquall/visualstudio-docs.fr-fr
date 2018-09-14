@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c952d4cf2533034c12a287149404bee6d267214
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 543763049a297a41d2c424da378d486f910f5e1a
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915582"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552056"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708 : Les identificateurs ne doivent pas différer que par leur casse
 |||
@@ -32,7 +32,7 @@ ms.locfileid: "31915582"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Les noms des deux types, membres, paramètres ou espaces de noms qualifiés complets sont identiques lorsqu’ils sont convertis en minuscules.
+ Les noms des deux types, membres, paramètres ou des espaces de noms qualifiés complets sont identiques lorsqu’ils sont convertis en minuscules.
 
 ## <a name="rule-description"></a>Description de la règle
  Les identificateurs des espaces de noms, types, membres et paramètres ne peuvent pas différer uniquement par la casse car les langages qui ciblent le Common Language Runtime ne sont pas tenus de respecter celle-ci. Par exemple, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] est un langage de non-respect de la casse largement utilisé.
@@ -40,7 +40,7 @@ ms.locfileid: "31915582"
  Cette règle se déclenche sur uniquement les membres visibles publiquement.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Sélectionnez un nom qui est unique lorsqu’elle est comparée à d’autres identificateurs sans respecter la casse.
+ Sélectionnez un nom qui est unique lorsqu’elle est comparée à d’autres identificateurs dans la casse.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez aucun avertissement de cette règle. La bibliothèque ne peut pas être utilisable dans toutes les langues disponibles dans le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
