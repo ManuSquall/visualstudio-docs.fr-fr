@@ -14,16 +14,20 @@ ms.assetid: 45a0e853-1f06-4688-af1b-cc634409e295
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c1b6502647644b59291b9d27ccf633d089d7110
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 26f6e23a340ec018f766477f0bdce089a43ca3e4
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918593"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549675"
 ---
 # <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721 : Les noms des propriétés ne doivent pas être identiques à ceux des méthodes Get
+
 |||
 |-|-|
 |TypeName|PropertyNamesShouldNotMatchGetMethods|
@@ -37,19 +41,19 @@ ms.locfileid: "31918593"
 ## <a name="rule-description"></a>Description de la règle
  Méthodes Get doivent avoir des noms distinguant clairement leur fonction.
 
- Conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit le temps nécessaire pour apprendre une nouvelle bibliothèque de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
+ Conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cette cohérence réduit le temps nécessaire pour apprendre une nouvelle bibliothèque de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Modifier le nom afin qu’il ne corresponde pas le nom d’une méthode qui est précédé de 'Get'.
+ Modifiez le nom afin qu’il ne correspond pas au nom d’une méthode qui est précédé de 'Get'.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez aucun avertissement de cette règle.
 
 > [!NOTE]
->  Cet avertissement peut être exclu si la méthode Get est causée par l’implémentation d’interface IExtenderProvider.
+> Cet avertissement peut être exclu si la méthode Get est causée par l’implémentation de IExtenderProvider (interface).
 
 ## <a name="example"></a>Exemple
- L’exemple suivant contient une méthode et une propriété qui enfreignent cette règle.
+ L’exemple suivant contient une méthode ou une propriété qui violent cette règle.
 
  [!code-csharp[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/CSharp/ca1721-property-names-should-not-match-get-methods_1.cs)]
  [!code-vb[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/VisualBasic/ca1721-property-names-should-not-match-get-methods_1.vb)]

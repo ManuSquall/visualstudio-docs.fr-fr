@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8072c19a5ee5bdf8e8fe28e94334faf0cf7fd44a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 145640d63191b72d2bce880f9ecab637dcbf0246
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281726"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552095"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Spécifiez les fichiers de symbole (.pdb) et les fichiers source dans le débogueur Visual Studio.
 Un fichier de base de données (.pdb) programme, également appelé fichier de symboles, mappe les identificateurs que vous créez dans le code source pour les classes, méthodes et autre code pour les identificateurs qui sont utilisés dans les fichiers exécutables compilés de votre projet. Le fichier .pdb mappe également les instructions du code source aux instructions d'exécution des fichiers exécutables. Le débogueur utilise ces informations pour déterminer deux informations essentielles :
@@ -215,7 +215,7 @@ Pour savoir quels symboles sont disponibles dans la table d'exportation d'une DL
 4.  Informations sources du .pdb du module. Il peut s'agir de l'emplacement du fichier source lorsque le module a été généré, ou d'une commande d'un serveur source.  
   
 ###  <a name="BKMK_Find_and_load_source_files_with_the_No_Source___No_Symbols_Loaded_pages"></a> Rechercher et charger des fichiers sources avec les pages non Source/No symboles chargés  
- Lorsque le débogueur interrompt l'exécution à un emplacement où le fichier source n'est pas disponible, il affiche les pages **Aucune source n'a été chargée** ou **Aucun symbole n'a été chargé** qui peuvent vous aider à trouver le fichier source. Le message **Aucun symbole n'a été chargé** apparaît lorsque le débogueur ne trouve aucun fichier de symboles (.pdb) pour le fichier exécutable pour terminer sa recherche. La page Aucun symbole fournit des options de recherche pour le fichier. Si le fichier .pdb est trouvé après l'exécution d'une des options et que le débogueur peut récupérer le fichier source à l'aide des informations contenues dans le fichier de symboles, la source est affichée. Sinon, la page **Aucune source n'a été chargée** apparaît et décrit le problème. La page affiche les liens d'option qui peuvent effectuer des actions pouvant résoudre le problème.  
+ Lorsque le débogueur interrompt l'exécution à un emplacement où le fichier source n'est pas disponible, il affiche les pages **Aucune source n'a été chargée** ou **Aucun symbole n'a été chargé** qui peuvent vous aider à trouver le fichier source. Le message **Aucun symbole n'a été chargé** apparaît lorsque le débogueur ne trouve aucun fichier de symboles (.pdb) pour le fichier exécutable pour terminer sa recherche. La page Aucun symbole fournit des options de recherche pour le fichier. Si le fichier .pdb est trouvé une fois que vous exécutez une des options et le débogueur peut récupérer le fichier source en utilisant les informations dans le fichier de symboles, la source s’affiche. Sinon, la page **Aucune source n'a été chargée** apparaît et décrit le problème. La page affiche les liens d'option qui peuvent effectuer des actions pouvant résoudre le problème.  
   
 ###  <a name="BKMK_Add_source_file_search_paths_to_a_solution"></a> Ajouter des chemins de recherche de fichier source à une solution  
  Vous pouvez spécifier le réseau ou les répertoires locaux sur lesquels rechercher les fichiers sources.  

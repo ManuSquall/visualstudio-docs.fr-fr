@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8f86037b54b2b7ad5cce1ea683341ca6656c2b3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eb4fc066e45017638eda863c0070e9ee067fcf8e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915627"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548801"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720 : Les identificateurs ne doivent pas contenir de noms de types
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotContainTypeNames|
@@ -39,93 +40,93 @@ ms.locfileid: "31915627"
  Le nom d’un membre extérieurement visible contient un nom de type de données spécifiques au langage.
 
 ## <a name="rule-description"></a>Description de la règle
- Noms de paramètres et les membres sont mieux utilisés pour communiquer leur signification que to décrire leur type, qui doit être fournie par les outils de développement. Pour les noms de membres, si un nom de type de données doit être utilisé, utilisez un nom indépendant du langage au lieu d’une langue spécifique. Par exemple, au lieu du nom de type c# 'int', utilisez le nom de type de données indépendant du langage, Int32.
+ Noms de paramètres et les membres sont mieux utilisés pour communiquer leur signification que to décrire leur type, ce qui devrait être fourni par les outils de développement. Pour les noms de membres, si un nom de type de données doit être utilisé, utilisez un nom indépendant du langage au lieu d’une langue spécifique. Par exemple, au lieu du nom de type c# 'int', utilisez le nom de type de données indépendant du langage, Int32.
 
- Chaque jeton discret dans le nom du paramètre ou le membre est comparée aux noms de types de données spécifiques au langage suivants, sans respecter la casse :
+ Chaque jeton discret dans le nom de paramètre ou de membre est comparée aux noms de types de données spécifiques au langage suivants, casse :
 
--   Bool
+- Bool
 
--   WChar
+- WChar
 
--   Int8
+- Int8
 
--   UInt8
+- UInt8
 
--   Courte
+- Courte
 
--   UShort
+- UShort
 
--   Int
+- Int
 
--   UInt
+- UInt
 
--   Entier
+- Entier
 
--   UInteger
+- UInteger
 
--   Longue
+- Longue
 
--   ULong
+- ULong
 
--   Non signé
+- Non signé
 
--   Signé
+- Signé
 
--   Float
+- Float
 
--   Float32
+- float32
 
--   Float64
+- float64
 
- En outre, les noms d’un paramètre sont également vérifiés par rapport aux noms de types de données indépendant du langage suivants, sans respecter la casse :
+En outre, les noms d’un paramètre sont également vérifiés par rapport à des noms de type de données indépendant du langage suivants, casse :
 
--   Object
+- Object
 
--   obj
+- obj
 
--   Booléen
+- Booléen
 
--   Char
+- Char
 
--   Chaîne
+- Chaîne
 
--   SByte
+- SByte
 
--   Byte
+- Byte
 
--   UByte
+- UByte
 
--   Int16
+- Int16
 
--   UInt16
+- UInt16
 
--   Int32
+- Int32
 
--   UInt32
+- UInt32
 
--   Int64
+- Int64
 
--   UInt64
+- UInt64
 
--   IntPtr
+- IntPtr
 
--   PTR
+- PTR
 
--   Pointeur
+- Pointeur
 
--   UInptr
+- UInptr
 
--   UPtr
+- UPtr
 
--   UPointer
+- UPointer
 
--   Single
+- Single
 
--   Double
+- Double
 
--   Decimal
+- Decimal
 
--   GUID
+- GUID
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  **Si le déclenchement sur un paramètre :**
@@ -137,7 +138,7 @@ ms.locfileid: "31915627"
  Remplacez l’identificateur de type de données spécifiques au langage dans le nom du membre par un terme qui décrit mieux sa signification, un équivalent indépendant du langage ou un terme plus générique, tel que 'value'.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- L’utilisation occasionnelle de noms de membre et de paramètre basée sur le type peut être appropriée. Toutefois, pour un nouveau développement, aucun autre scénarios se produisent lorsque vous ne devez supprimer un avertissement de cette règle. Pour les bibliothèques déjà livrées, vous devrez peut-être supprimer un avertissement de cette règle.
+ Utilisation occasionnelle de noms de paramètres et de membres en fonction de type peut être appropriée. Toutefois, pour un nouveau développement, aucun connus scénarios se produisent dans lequel vous ne devez supprimer un avertissement de cette règle. Pour les bibliothèques déjà livrées, vous devrez peut-être supprimer un avertissement de cette règle.
 
 ## <a name="related-rules"></a>Règles associées
  [CA1709 : La casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)

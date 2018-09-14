@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2131ef8cb0b8f0ba540d7403d7c5f8dbb8b89df
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 016b9f72567f6ff70b19bfa9e781e0f0d14cb702
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901094"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549350"
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002 : Ne pas exposer de listes génériques
 |||
@@ -32,22 +32,22 @@ ms.locfileid: "31901094"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Un type contient un membre extérieurement visible est un <xref:System.Collections.Generic.List%601?displayProperty=fullName> de type, retourne un <xref:System.Collections.Generic.List%601?displayProperty=fullName> type, ou dont la signature inclut un <xref:System.Collections.Generic.List%601?displayProperty=fullName> paramètre.
+ Un type contient un membre extérieurement visible est un <xref:System.Collections.Generic.List%601?displayProperty=fullName> type, retourne un <xref:System.Collections.Generic.List%601?displayProperty=fullName> type, ou dont la signature inclut un <xref:System.Collections.Generic.List%601?displayProperty=fullName> paramètre.
 
 ## <a name="rule-description"></a>Description de la règle
- <xref:System.Collections.Generic.List%601?displayProperty=fullName> est une collection générique conçue pour des performances et non l’héritage. <xref:System.Collections.Generic.List%601?displayProperty=fullName> ne contient pas de membres virtuels qui le rendent plus facile de modifier le comportement d’une classe héritée. Les collections génériques suivantes sont conçues pour l’héritage et doivent être exposées à la place de <xref:System.Collections.Generic.List%601?displayProperty=fullName>.
+ <xref:System.Collections.Generic.List%601?displayProperty=fullName> est une collection générique qui est conçue pour les performances et non l’héritage. <xref:System.Collections.Generic.List%601?displayProperty=fullName> ne contient pas de membres virtuels qui le rendent plus facile de modifier le comportement d’une classe héritée. Les collections génériques suivantes sont conçues pour l’héritage et doivent être exposées au lieu de <xref:System.Collections.Generic.List%601?displayProperty=fullName>.
 
--   <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
 
--   <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>
 
--   <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, modifiez le <xref:System.Collections.Generic.List%601?displayProperty=fullName> type à une des collections génériques qui est conçu pour l’héritage.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez aucun avertissement de cette règle, sauf si l’assembly qui déclenche cet avertissement ne doit pas être une bibliothèque réutilisable. Par exemple, il serait possible de supprimer cet avertissement dans une application de paramétrage des performances sans où un gain de performances a été acquise à partir de l’utilisation de listes génériques.
+ Ne supprimez pas d’avertissement de cette règle, sauf si l’assembly qui déclenche cet avertissement n’est pas destiné à être une bibliothèque réutilisable. Par exemple, il serait possible de supprimer cet avertissement dans une application de paramétrer des performances sans où un gain de performances a été acquise à partir de l’utilisation de listes génériques.
 
 ## <a name="related-rules"></a>Règles associées
  [CA1005 : Évitez trop de paramètres sur les types génériques](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)

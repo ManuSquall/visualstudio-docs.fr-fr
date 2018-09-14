@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bb38d11ca7312a7eda2ec4b516ab384741f9ab7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a11c5bdf6cd5d2c1e278d7e8943aa672621672cd
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917290"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551647"
 ---
 # <a name="ca2141transparent-methods-must-not-satisfy-linkdemands"></a>CA2141 : Les méthodes transparentes ne répondent pas aux LinkDemands
 |||
@@ -28,12 +28,12 @@ ms.locfileid: "31917290"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Une méthode transparente de sécurité appelle une méthode dans un assembly qui n’est pas marqué avec le <xref:System.Security.AllowPartiallyTrustedCallersAttribute> ) l’attribut APTCA (ou une méthode transparente de sécurité satisfait une <xref:System.Security.Permissions.SecurityAction> `.LinkDemand` pour un type ou une méthode.
+ Une méthode transparente de sécurité appelle une méthode dans un assembly qui n’est pas marqué avec le <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attribut (APTCA), ou une méthode transparente de sécurité satisfait une <xref:System.Security.Permissions.SecurityAction> `.LinkDemand` pour un type ou une méthode.
 
 ## <a name="rule-description"></a>Description de la règle
- Répondre à un LinkDemand est une opération de sécurité sensibles qui peut entraîner l’élévation de privilèges involontaire. Code transparent de sécurité ne doit pas répondre aux LinkDemands, car il n’est pas soumis aux mêmes exigences d’audit de sécurité que le code critique de sécurité. Les méthodes transparentes dans des assemblys de niveau 1 de sécurité règle ensemble entraîne tous les LinkDemands qu’ils satisfont en demandes complètes au moment de l’exécution, ce qui peut entraîner des problèmes de performances. Assemblys de niveau 2 de jeu de règle de sécurité, les méthodes transparentes ne parviendra pas à compiler dans le de compilateur juste-à-temps (JIT) s’ils tentent de répondre à une LinkDemand.
+ Répondre à un LinkDemand est une opération de sécurité sensibles qui peut provoquer l’élévation de privilèges involontaire. Code transparent de sécurité ne doit pas répondre aux LinkDemands, car il n’est pas soumis aux mêmes exigences d’audit de sécurité en tant que code critique de sécurité. Les méthodes transparentes dans les assemblys de niveau 1 jeu sécurité règle entraîne tous les LinkDemands qu’ils satisfont en demandes complètes au moment de l’exécution, ce qui peut entraîner des problèmes de performances. Dans les assemblys de niveau 2 d’ensemble de règles de sécurité, les méthodes transparentes échoue à compiler dans le compilateur juste-à-temps (JIT) si elles essaient de satisfaire un LinkDemand.
 
- Dans les assemblys qui usee de sécurité de niveau 2, les tentatives par une méthode transparente de sécurité pour satisfaire un LinkDemand ou appeler une méthode dans un assembly non APTCA déclenche un <xref:System.MethodAccessException>; dans les assemblys de niveau 1 le LinkDemand devient une demande complète.
+ Dans les assemblys qui utilisent la sécurité de niveau 2, les tentatives par une méthode transparente de sécurité pour satisfaire un LinkDemand ou appeler une méthode dans un assembly non-APTCA déclenche un <xref:System.MethodAccessException>; dans les assemblys de niveau 1 le LinkDemand devient une demande complète.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, marquez la méthode d’accès avec le <xref:System.Security.SecurityCriticalAttribute> ou <xref:System.Security.SecuritySafeCriticalAttribute> d’attribut, ou supprimez le LinkDemand de la méthode accédée.

@@ -14,16 +14,21 @@ ms.assetid: ab65c471-1449-49d2-9896-7b9af74284b4
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ac922b2fcf34c3fceff5ad7f82675bac38fa4696
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7697b394396f729133b7cb6a7f3c0501c5c45202
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899284"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547394"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009 : Déclarer les gestionnaires d'événements correctement
+
 |||
 |-|-|
 |TypeName|DeclareEventHandlersCorrectly|
@@ -32,12 +37,12 @@ ms.locfileid: "31899284"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Un délégué qui gère un événement public ou protégé n’a pas de type de retour ou les noms de paramètres de la signature appropriée.
+ Un délégué qui gère un événement public ou protégé n’a pas la signature correcte, de type de retour, ou les noms de paramètre.
 
 ## <a name="rule-description"></a>Description de la règle
- Les méthodes du gestionnaire d'événements acceptent deux paramètres. Le premier est de type <xref:System.Object?displayProperty=fullName> et est nommé 'sender'. Il s'agit de l'objet qui déclenche l'événement. Le deuxième paramètre est de type <xref:System.EventArgs?displayProperty=fullName> et se nomme « e ». Il s'agit des données qui sont associées à l'événement. Par exemple, si l’événement est déclenché chaque fois qu’un fichier est ouvert, les données d’événement contient généralement le nom du fichier.
+ Les méthodes du gestionnaire d'événements acceptent deux paramètres. Le premier est de type <xref:System.Object?displayProperty=fullName> et est nommé 'sender'. Il s'agit de l'objet qui déclenche l'événement. Le deuxième paramètre est de type <xref:System.EventArgs?displayProperty=fullName> et est nommé « e ». Il s'agit des données qui sont associées à l'événement. Par exemple, si l’événement est déclenché chaque fois qu’un fichier est ouvert, les données d’événement contient généralement le nom du fichier.
 
- Méthodes de gestionnaire d’événements ne doivent pas retourner une valeur. Dans le langage de programmation c#, ceci est indiqué par le type de retour `void`. Un gestionnaire d’événements peut appeler plusieurs méthodes dans plusieurs objets. Si les méthodes étaient autorisées à retourner une valeur, plusieurs valeurs de retour sont produit pour chaque événement, et seulement la valeur de la dernière méthode appelée serait disponible.
+ Méthodes de gestionnaire d’événements ne doivent pas retourner une valeur. Dans le langage de programmation c#, cela est indiqué par le type de retour `void`. Un gestionnaire d’événements peut appeler plusieurs méthodes dans plusieurs objets. Si les méthodes étaient autorisées à retourner une valeur, plusieurs valeurs de retour se produirait pour chaque événement, et seule la valeur de la dernière méthode a été appelée serait disponible.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, corrigez la signature, type de retour ou les noms de paramètre du délégué. Pour plus d’informations, consultez l’exemple suivant.
@@ -46,7 +51,7 @@ ms.locfileid: "31899284"
  Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre un délégué qui est adapté à la gestion des événements. Les méthodes qui peuvent être appelées par ce gestionnaire d’événements est conforme à la signature spécifiée dans les règles de conception. `AlarmEventHandler` est le nom de type du délégué. `AlarmEventArgs` dérive de la classe de base de données d’événement, <xref:System.EventArgs>, et contient les données d’événement d’alarme.
+ L’exemple suivant montre un délégué qui est adapté à la gestion des événements. Les méthodes qui peuvent être appelées par ce gestionnaire d’événements conformes à la signature spécifiée dans les instructions de conception. `AlarmEventHandler` est le nom de type du délégué. `AlarmEventArgs` dérive de la classe de base de données d’événement, <xref:System.EventArgs>, et contient les données d’événement d’alarme.
 
  [!code-cpp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CPP/ca1009-declare-event-handlers-correctly_1.cpp)]
  [!code-csharp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CSharp/ca1009-declare-event-handlers-correctly_1.cs)]
@@ -56,4 +61,7 @@ ms.locfileid: "31899284"
  [CA2109 : Passez en revue les gestionnaires d’événements visibles](../code-quality/ca2109-review-visible-event-handlers.md)
 
 ## <a name="see-also"></a>Voir aussi
- <xref:System.EventArgs?displayProperty=fullName> <xref:System.Object?displayProperty=fullName> [Gestion et déclenchement d’événements](/dotnet/standard/events/index)
+
+- <xref:System.EventArgs?displayProperty=fullName>
+- <xref:System.Object?displayProperty=fullName>
+- [Gestion et déclenchement d’événements](/dotnet/standard/events/index)

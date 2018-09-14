@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f444779fc5db725c090f96ec51a86d8427a14d17
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e2823933e4792dd6127ffbd4b1bfe5dfe1b71a0c
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919179"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547546"
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228 : Ne distribuez pas des formats de ressources non commercialisés
 |||
@@ -32,10 +32,10 @@ ms.locfileid: "31919179"
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Un fichier de ressources a été généré à l’aide d’une version de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] qui est actuellement pas en charge.
+ Un fichier de ressources a été créé à l’aide d’une version de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] qui est actuellement pas en charge.
 
 ## <a name="rule-description"></a>Description de la règle
- Fichiers de ressources qui ont été générées à l’aide de versions préliminaires de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ne peut pas être utilisables par les versions prises en charge du .NET Framework.
+ Les fichiers de ressources qui ont été créés à l’aide de versions préliminaires de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] peut ne pas être utilisables par les versions prises en charge du .NET Framework.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, générez la ressource à l’aide d’une version prise en charge de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]k.

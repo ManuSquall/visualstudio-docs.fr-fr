@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ad4417551d45c55c3ea194e4b3b3f28ed04af96
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dda8fd453ae36e11a4d8f20780caf60bf3c915f0
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922744"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547787"
 ---
 # <a name="ca2218-override-gethashcode-on-overriding-equals"></a>CA2218 : Remplacez GetHashCode au moment de remplacer Equals
+
 |||
 |-|-|
 |TypeName|OverrideGetHashCodeOnOverridingEquals|
@@ -32,31 +33,31 @@ ms.locfileid: "31922744"
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Un type public substitue <xref:System.Object.Equals%2A?displayProperty=fullName> mais ne remplace pas <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.
+ Un type public substitue <xref:System.Object.Equals%2A?displayProperty=fullName> mais ne se substitue pas <xref:System.Object.GetHashCode%2A?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Description de la règle
- <xref:System.Object.GetHashCode%2A> Retourne une valeur, en fonction de l’instance actuelle adaptée aux algorithmes de hachage et des structures de données telles qu’une table de hachage. Deux objets sont du même type et égaux doivent retourner le même code de hachage pour garantir le fonctionnement des instances des types suivants :
+ <xref:System.Object.GetHashCode%2A> Retourne une valeur, en fonction de l’instance actuelle, ce qui convient pour les algorithmes de hachage et des structures de données comme une table de hachage. Deux objets sont du même type et égaux doivent retourner le même code de hachage pour vous assurer que les instances des types suivants fonctionnent correctement :
 
--   <xref:System.Collections.Hashtable?displayProperty=fullName>
+- <xref:System.Collections.Hashtable?displayProperty=fullName>
 
--   <xref:System.Collections.SortedList?displayProperty=fullName>
+- <xref:System.Collections.SortedList?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName>
+- <xref:System.Collections.Generic.Dictionary%602?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.SortedDictionary%602?displayProperty=fullName>
+- <xref:System.Collections.Generic.SortedDictionary%602?displayProperty=fullName>
 
--   <xref:System.Collections.Generic.SortedList%602?displayProperty=fullName>
+- <xref:System.Collections.Generic.SortedList%602?displayProperty=fullName>
 
--   <xref:System.Collections.Specialized.HybridDictionary?displayProperty=fullName>
+- <xref:System.Collections.Specialized.HybridDictionary?displayProperty=fullName>
 
--   <xref:System.Collections.Specialized.ListDictionary?displayProperty=fullName>
+- <xref:System.Collections.Specialized.ListDictionary?displayProperty=fullName>
 
--   <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
+- <xref:System.Collections.Specialized.OrderedDictionary?displayProperty=fullName>
 
--   Types qui implémentent <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
+- Types qui implémentent <xref:System.Collections.Generic.IEqualityComparer%601?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, fournissez une implémentation de <xref:System.Object.GetHashCode%2A>. Pour une paire d’objets du même type, vous devez vous assurer que l’implémentation retourne la même valeur si votre implémentation de <xref:System.Object.Equals%2A> retourne `true` pour la paire.
+ Pour corriger une violation de cette règle, fournir une implémentation de <xref:System.Object.GetHashCode%2A>. Pour une paire d’objets du même type, vous devez vous assurer que l’implémentation retourne la même valeur si votre implémentation de <xref:System.Object.Equals%2A> retourne `true` pour la paire.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez aucun avertissement de cette règle.
@@ -101,4 +102,8 @@ ms.locfileid: "31922744"
  [CA2231 : Surchargez l’opérateur égal (equals) en remplaçant ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
 
 ## <a name="see-also"></a>Voir aussi
- <xref:System.Object.Equals%2A?displayProperty=fullName> <xref:System.Object.GetHashCode%2A?displayProperty=fullName> <xref:System.Collections.Hashtable?displayProperty=fullName> [Opérateurs d’égalité](/dotnet/standard/design-guidelines/equality-operators)
+
+- <xref:System.Object.Equals%2A?displayProperty=fullName>
+- <xref:System.Object.GetHashCode%2A?displayProperty=fullName>
+- <xref:System.Collections.Hashtable?displayProperty=fullName>
+- [Opérateurs d’égalité](/dotnet/standard/design-guidelines/equality-operators)

@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4faed3f5d49c6c08ca0a9bc90465f4e21ef3fec8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e3c9b23e555d0752ee33f2031fb883bdf50ff897
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916943"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549730"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711 : Les identificateurs ne doivent pas porter un suffixe incorrect
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectSuffix|
@@ -32,14 +33,16 @@ ms.locfileid: "31916943"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Un identificateur a un suffixe incorrect.
+
+Un identificateur a un suffixe incorrect.
 
 ## <a name="rule-description"></a>Description de la règle
- Par convention, seuls les noms des types qui étendent certains types de base ou qui implémentent certaines interfaces, ou les types dérivés de ces types, doivent se terminer par des suffixes réservés spécifiques. Les autres noms de types ne doivent pas utiliser ces suffixes réservés.
 
- Le tableau suivant répertorie les suffixes réservés et les types de base et les interfaces auxquels ils sont associés.
+Par convention, seuls les noms des types qui étendent certains types de base ou qui implémentent certaines interfaces, ou les types dérivés de ces types, doivent se terminer par des suffixes réservés spécifiques. Les autres noms de types ne doivent pas utiliser ces suffixes réservés.
 
-|Suffixe|Interface/type de base|
+Le tableau suivant répertorie les suffixes réservés et les types de base et les interfaces à laquelle ils sont associés.
+
+|Suffix|Interface/type de base|
 |------------|--------------------------|
 |Attribut|<xref:System.Attribute?displayProperty=fullName>|
 |Collection|<xref:System.Collections.ICollection?displayProperty=fullName><br /><br /> <xref:System.Collections.IEnumerable?displayProperty=fullName><br /><br /> <xref:System.Collections.Queue?displayProperty=fullName><br /><br /> <xref:System.Collections.Stack?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName><br /><br /> <xref:System.Data.DataSet?displayProperty=fullName><br /><br /> <xref:System.Data.DataTable?displayProperty=fullName>|
@@ -52,26 +55,31 @@ ms.locfileid: "31916943"
 |Stack|<xref:System.Collections.Stack?displayProperty=fullName>|
 |Flux|<xref:System.IO.Stream?displayProperty=fullName>|
 
- En outre, les suffixes suivants doivent **pas** être utilisé :
+En outre, les suffixes suivants doivent **pas** servir :
 
--   délégué
+- `Delegate`
 
--   Enum
+- `Enum`
 
--   Impl - utiliser 'Principal' à la place
+- `Impl` (utilisez `Core` à la place)
 
--   Ex ou suffixe semblable pour le distinguer d’une version antérieure du même type
+- `Ex` ou suffixe semblable pour le distinguer d’une version antérieure du même type
 
- Conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage qui est requis pour les nouvelles bibliothèques de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
+Conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage qui est requis pour les nouvelles bibliothèques de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Supprimez le suffixe du nom du type.
+
+Supprimez le suffixe du nom de type.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez aucun avertissement de cette règle, sauf si le suffixe a une signification et non équivoque dans le domaine d’application.
+
+Ne supprimez pas d’avertissement de cette règle, sauf si le suffixe a une signification non équivoque dans le domaine d’application.
 
 ## <a name="related-rules"></a>Règles associées
- [CA1710 : Les identificateurs doivent avoir un suffixe correct](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
+
+- [CA1710 : Les identificateurs doivent avoir un suffixe correct](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
 
 ## <a name="see-also"></a>Voir aussi
- [Attributs](/dotnet/standard/design-guidelines/attributes) [gestion et déclenchement des événements](/dotnet/standard/events/index)
+
+- [Attributs](/dotnet/standard/design-guidelines/attributes)
+- [Gestion et déclenchement d’événements](/dotnet/standard/events/index)

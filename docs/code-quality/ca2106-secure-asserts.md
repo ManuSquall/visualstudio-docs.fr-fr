@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5863f4d8ca4db47f7e537f0b1abc5eb280434c80
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5ff16cdce4be04bd076c93763fb6a22d2721675f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916797"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551780"
 ---
 # <a name="ca2106-secure-asserts"></a>CA2106 : Assertions sécurisées
+
 |||
 |-|-|
 |TypeName|SecureAsserts|
@@ -32,16 +33,18 @@ ms.locfileid: "31916797"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Une méthode déclare une autorisation et aucune vérification de sécurité n’est exécutée sur l’appelant.
+ Une méthode déclare une autorisation et n’effectue aucune vérification de sécurité sur l’appelant.
 
 ## <a name="rule-description"></a>Description de la règle
- L'assertion d'une autorisation de sécurité effectuée sans vérification de sécurité peut rendre votre code vulnérable et facile à exploiter. Un parcours de pile de sécurité s’arrête lorsqu’une autorisation de sécurité est déclarée. Si vous déclarez une autorisation sans effectuer aucune vérification sur l’appelant, l’appelant indirectement exécuter du code à l’aide de vos autorisations. Assertions sans contrôles de sécurité sont autorisées uniquement lorsque vous êtes sûr que l’assertion ne peut pas être utilisée de manière nuisible. Une assertion est sans incidence si le code que vous appelez ne présente aucun danger ou si les utilisateurs ne peut pas transmettre des informations arbitraires au code que vous appelez.
+ L’assertion d’une autorisation de sécurité effectuée sans vérification de sécurité peut rendre votre code vulnérable et facile à exploiter. Un parcours de pile de sécurité s’arrête lorsqu’une autorisation de sécurité est déclarée. Si vous déclarez une autorisation sans effectuer de n’importe quel contrôle sur l’appelant, l’appelant indirectement pourrait exécuter du code à l’aide de vos autorisations. Les assertions sans vérification de sécurité sont autorisées si vous êtes sûr que l’assertion ne peut pas être utilisée de façon préjudiciable. Une assertion est sans conséquence si le code que vous appelez ne présente aucun danger ou si les utilisateurs ne peuvent pas transmettre des informations arbitraires au code que vous appelez.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, ajoutez une demande de sécurité à la méthode ou son type déclarant.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Supprimez un avertissement de cette règle uniquement après un examen minutieux de la sécurité.
+ Supprimer un avertissement de cette règle uniquement après un examen minutieux de la sécurité.
 
 ## <a name="see-also"></a>Voir aussi
- <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> [Instructions de codage sécurisé](/dotnet/standard/security/secure-coding-guidelines)
+
+- <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
+- [Instructions de codage sécurisé](/dotnet/standard/security/secure-coding-guidelines)

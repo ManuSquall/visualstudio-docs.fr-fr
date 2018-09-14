@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bf28c16bc5457309c2de42d79574dbb64739d9e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: faced51a807a69ecc2e11a04e9ed5e292f4d3a19
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901645"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547605"
 ---
 # <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026 : Les paramètres par défaut ne doivent pas être utilisés
 |||
@@ -32,15 +32,15 @@ ms.locfileid: "31901645"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Un type visible de l’extérieur contient une méthode extérieurement visible qui utilise un paramètre par défaut.
+ Un type extérieurement visible contient une méthode extérieurement visible qui utilise un paramètre par défaut.
 
 ## <a name="rule-description"></a>Description de la règle
- Les méthodes qui utilisent les paramètres par défaut sont autorisées sous le Common Language Specification (CLS) ; Toutefois, cette spécification permet aux compilateurs d’ignorer les valeurs assignées à ces paramètres. Code qui est écrit pour les compilateurs qui ignorent les valeurs de paramètre par défaut doit fournir explicitement des arguments pour chaque paramètre par défaut. Pour préserver le comportement souhaité entre les langages de programmation, les méthodes qui utilisent les paramètres par défaut doivent être remplacées par les surcharges de méthode qui fournissent les paramètres par défaut.
+ Les méthodes qui utilisent des paramètres par défaut sont autorisées sous le Common Language Specification (CLS) ; Toutefois, cette spécification permet aux compilateurs d’ignorer les valeurs qui sont assignées à ces paramètres. Le code écrit pour les compilateurs qui ignorent les valeurs de paramètre par défaut doit fournir explicitement des arguments pour chaque paramètre par défaut. Pour conserver le comportement que vous souhaitez entre les langages de programmation, les méthodes qui utilisent des paramètres par défaut doivent être remplacés par des surcharges de méthode qui fournissent les paramètres par défaut.
 
- Le compilateur ignore les valeurs de paramètres par défaut pour les extensions managées pour C++ lorsqu’il accède à du code managé. Le compilateur Visual Basic prend en charge les méthodes qui ont des paramètres par défaut qui utilisent le [facultatif](/dotnet/visual-basic/language-reference/modifiers/optional) (mot clé).
+ Le compilateur ignore les valeurs des paramètres par défaut pour les extensions managées pour C++ lorsqu’il accède à du code managé. Le compilateur Visual Basic prend en charge les méthodes qui ont des paramètres par défaut qui utilisent le [facultatif](/dotnet/visual-basic/language-reference/modifiers/optional) mot clé.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, remplacez la méthode qui utilise les paramètres par défaut avec des surcharges de méthode qui fournissent les paramètres par défaut.
+ Pour corriger une violation de cette règle, remplacez la méthode qui utilise les paramètres par défaut avec les surcharges de méthode qui fournissent les paramètres par défaut.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez aucun avertissement de cette règle.

@@ -15,59 +15,62 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4f83e7754bcb96de05eac3273133cabbc8b8f61
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c81bd543a6695adcea37db5ab8570ff7749c0160
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917825"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551452"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726 : Utilisez les termes par défaut
+
 |||
 |-|-|
 |TypeName|UsePreferredTerms|
 |CheckId|CA1726|
 |Category|Microsoft.Naming|
-|Modification avec rupture|Avec rupture - lorsque déclenchée sur les assemblys<br /><br /> Sans rupture - lorsque déclenchée sur les paramètres de type|
+|Modification avec rupture|Rupture - lorsque déclenchée sur les assemblys<br /><br /> Sans rupture - lorsque déclenchée sur les paramètres de type|
 
 ## <a name="cause"></a>Cause
- Le nom d'un identificateur visible de l'extérieur contient un terme pour lequel un autre terme par défaut existe. Vous pouvez également le nom comprend le terme indicateur ou indicateurs.
+
+Le nom d'un identificateur visible de l'extérieur contient un terme pour lequel un autre terme par défaut existe. Ou bien, le nom inclut le terme indicateur ou indicateurs.
 
 ## <a name="rule-description"></a>Description de la règle
- Cette règle analyse un identificateur dans des jetons. Chaque jeton unique et chaque combinaison de jetons doubles contigu sont comparée à des termes qui sont générés dans la règle et dans la section déconseillé des dictionnaires personnalisés. Le tableau suivant présente les termes qui sont intégrées à la règle et leurs solutions de remplacement par défaut.
+
+Cette règle analyse un identificateur dans des jetons. Chaque jeton unique et chaque combinaison de jetons doubles contigus sont comparés aux termes qui sont intégrés dans la règle et dans la section déconseillé des dictionnaires personnalisés. Le tableau suivant présente les termes qui sont intégrées dans la règle et leurs solutions de remplacement par défaut.
 
 |Terme obsolète|Terme favori|
 |-------------------|--------------------|
-|ne sont pas|Ne sont pas|
-|Annulé|Canceled|
-|Impossible|Ne peut pas|
-|ComPlus|EnterpriseServices|
-|Couldnt|N’a pas pu|
-|N’a pas|DidNot|
-|Lecteur|Ne|
-|Ne pas|Ne pas|
-|Indicateur ou indicateurs|Il n’existe aucun terme de remplacement. Ne pas utiliser.|
-|n’était pas|HadNot|
-|N’a pas|HasNot|
-|ne l’avez pas|HaveNot|
-|Indices|Index|
-|n’est pas|IsNot|
-|Connexion|Ouverture de session|
-|Déconnexion|Fermeture de session|
-|Shouldnt|ShouldNot|
-|Authentification|Ouverture de session|
-|Approbation|Déconnexion|
-|Wasnt|WasNot|
-|n’ont pas été|N’ont pas été|
-|Impossible|WillNot|
-|Wouldnt|WouldNot|
-|Accessible en écriture|Accessible en écriture|
+|`Arent`|`AreNot`|
+|`Cancelled`|`Canceled`|
+|`Cant`|`Cannot`|
+|`ComPlus`|`EnterpriseServices`|
+|`Couldnt`|`CouldNot`|
+|`Didnt`|`DidNot`|
+|`Doesnt`|`DoesNot`|
+|`Dont`|`DoNot`|
+|`Flag` ou `Flags`|Il n’existe aucun terme de remplacement. Ne pas utiliser.|
+|`Hadnt`|`HadNot`|
+|`Hasnt`|`HasNot`|
+|`Havent`|`HaveNot`|
+|`Indices`|`Indexes`|
+|`Isnt`|`IsNot`|
+|`LogIn`|`LogOn`|
+|`LogOut`|`LogOff`|
+|`Shouldnt`|`ShouldNot`|
+|`SignOn`|`SignIn`|
+|`SignOff`|`SignOut`|
+|`Wasnt`|`WasNot`|
+|`Werent`|`WereNot`|
+|`Wont`|`WillNot`|
+|`Wouldnt`|`WouldNot`|
+|`Writeable`|`Writable`|
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, remplacez le terme par le terme de remplacement par défaut.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Supprimer un avertissement de cette règle uniquement si le nom de l’identificateur se rapporte intentionnellement et spécifiquement au terme d’origine au lieu du terme favori.
+ Supprimez un avertissement de cette règle uniquement si le nom de l’identificateur se rapporte intentionnellement et spécifiquement au terme d’origine au lieu du terme favori.
 
 ## <a name="related-rules"></a>Règles associées
  [Avertissements liés à l’affectation de noms](../code-quality/naming-warnings.md)

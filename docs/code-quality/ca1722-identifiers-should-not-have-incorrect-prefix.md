@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 959ce5c3e108aa9a1aa339d33b7bad8243adfb7c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bcb0bfe07c9e9fb843ea6c7a0960b96cc09339b9
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915006"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549454"
 ---
 # <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722 : Les identificateurs ne doivent pas porter un préfixe incorrect
 |||
@@ -37,9 +37,9 @@ ms.locfileid: "31915006"
 ## <a name="rule-description"></a>Description de la règle
  Par convention, seuls certains éléments de programmation présentent des noms qui commencent par un préfixe spécifique.
 
- Noms de types n’ont pas un préfixe spécifique et ne doivent pas être préfixés par un « C ». Cette règle rapporte des violations pour les noms de types tels que 'CMyClass' et ne signale pas les violations pour les noms de types tels que 'Cache'.
+ Noms de types n’ont pas d’un préfixe spécifique et ne doivent pas être préfixés par un « C ». Cette règle signale les violations pour les noms de types tels que 'CMyClass' et ne signale pas de violations pour les noms de types tels que « Cache ».
 
- Conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage qui est requis pour les nouvelles bibliothèques de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
+ Conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cette cohérence réduit la courbe d’apprentissage qui a requis pour les nouvelles bibliothèques de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Supprimez le préfixe de l’identificateur.

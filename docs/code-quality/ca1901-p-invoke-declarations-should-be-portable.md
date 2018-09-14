@@ -1,5 +1,5 @@
 ---
-title: 'CA1901 : Les déclarations P-Invoke doivent être portables'
+title: 'CA1901 : Les déclarations P/Invoke doivent être portables'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed9821d9b80309311a6fd108c4a29f52b2e882bf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 58a7df06d3707e0ed8c9bed9a04b79c3ea99dd04
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915019"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550633"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901 : Les déclarations P/Invoke doivent être portables
 |||
@@ -29,20 +29,20 @@ ms.locfileid: "31915019"
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
 |Category|Microsoft.Portability|
-|Modification avec rupture|Avec rupture - Si P/Invoke est visible en dehors de l’assembly. Sans rupture - Si P/Invoke n’est pas visible à l’extérieur de l’assembly.|
+|Modification avec rupture|Avec rupture - Si P/Invoke est visible en dehors de l’assembly. Sans rupture - Si P/Invoke n’est pas visible en dehors de l’assembly.|
 
 ## <a name="cause"></a>Cause
- Cette règle évalue la taille de chaque paramètre et la valeur de retour d’un P/Invoke et vérifie que leur taille, lorsqu’elle est marshalée au code non managé sur les plateformes 32 bits et 64 bits, est correcte. La violation la plus courante de cette règle consiste à passer à un entier de taille fixe d’où une variable dépendante de la plateforme, la taille du pointeur est requise.
+ Cette règle évalue la taille de chaque paramètre et la valeur de retour d’un P/Invoke et vérifie que leur taille, lorsqu’elle est marshalée au code non managé sur les plateformes 32 bits et 64 bits, est correcte. La violation la plus courante de cette règle consiste à passer un entier de taille fixe où une variable dépendante de la plateforme, la taille du pointeur est requise.
 
 ## <a name="rule-description"></a>Description de la règle
- Un des scénarios suivants viole cette règle se produit :
+ Un des scénarios suivants enfreint cette règle se produit :
 
--   La valeur de retour ou paramètre est typé comme un entier de taille fixe lorsqu’il doit être tapé comme un `IntPtr`.
+- La valeur de retour ou paramètre est typé comme un entier de taille fixe lorsqu’il doit être tapé comme un `IntPtr`.
 
--   La valeur de retour ou paramètre de type est un `IntPtr` quand il doit être tapé comme un entier de taille fixe.
+- La valeur de retour ou paramètre de type est un `IntPtr` quand il doit être tapé sous la forme d’un entier de taille fixe.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Vous pouvez résoudre cette violation à l’aide de `IntPtr` ou `UIntPtr` pour représenter des handles au lieu de `Int32` ou `UInt32`.
+ Vous pouvez corriger cette violation à l’aide de `IntPtr` ou `UIntPtr` pour représenter des handles au lieu de `Int32` ou `UInt32`.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Vous ne devez pas supprimer cet avertissement.
@@ -59,7 +59,7 @@ internal class NativeMethods
 }
 ```
 
- Dans cet exemple, le `nIconIndex` le paramètre est déclaré comme un `IntPtr`, qui est de 4 octets sur une plateforme 32 bits et 8 octets sur une plateforme 64 bits. Dans la déclaration non managée qui suit, vous pouvez voir que `nIconIndex` est un entier non signé de 4 octets sur toutes les plateformes.
+ Dans cet exemple, le `nIconIndex` paramètre est déclaré comme un `IntPtr`, ce qui occupe 4 octets sur une plateforme 32 bits et 8 octets sur une plateforme 64 bits. Dans la déclaration non managée qui suit, vous pouvez voir que `nIconIndex` est un entier non signé de 4 octets sur toutes les plateformes.
 
 ```csharp
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
@@ -67,7 +67,7 @@ HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
 ```
 
 ## <a name="example"></a>Exemple
- Pour corriger la violation, modifiez la déclaration comme suit :
+ Pour corriger la violation, modifiez la déclaration à ce qui suit :
 
 ```csharp
 internal class NativeMethods{

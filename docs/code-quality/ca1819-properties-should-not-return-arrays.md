@@ -14,16 +14,20 @@ ms.assetid: 85fcf312-57f8-438a-8b10-34441fe0bdeb
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d2aca450bba47b73c8fa2e5e8e1246e864a1293c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68f64d37a7616f095a86452353edc498d2d27f28
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917729"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549415"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819 : Les propriétés ne doivent pas retourner des tableaux
+
 |||
 |-|-|
 |TypeName|PropertiesShouldNotReturnArrays|
@@ -38,7 +42,7 @@ ms.locfileid: "31917729"
  Les tableaux retournés par les propriétés ne sont pas protégés en écriture, même si la propriété est en lecture seule. Pour protéger le tableau de toute falsification, la propriété doit retourner une copie du tableau. En général, les utilisateurs ne comprennent l'incidence négative en matière de performances de l'appel à une telle propriété. Plus précisément, ils peuvent utiliser la propriété comme une propriété indexée.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, rendez la propriété à une méthode, ou bien modifier la propriété pour retourner une collection.
+ Pour corriger une violation de cette règle, modifiez la propriété une méthode ou modifier la propriété pour retourner une collection.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Les attributs peuvent contenir des propriétés qui retournent des tableaux, mais ne peut pas contenir des propriétés qui retournent des collections. Vous pouvez supprimer un avertissement est déclenché pour une propriété d’un attribut qui est dérivé de la <xref:System.Attribute> classe. Sinon, ne supprimez aucun avertissement de cette règle.
@@ -53,9 +57,9 @@ ms.locfileid: "31917729"
  [!code-vb[FxCop.Performance.PropertyArrayViolation#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_1.vb)]
 
 ### <a name="comments"></a>Commentaires
- Pour corriger une violation de cette règle, rendez la propriété à une méthode, ou bien modifier la propriété pour retourner une collection au lieu d’un tableau.
+ Pour corriger une violation de cette règle, modifiez la propriété une méthode ou modifier la propriété pour retourner une collection plutôt qu’un tableau.
 
-## <a name="change-the-property-to-a-method-example"></a>Modifiez la propriété à un exemple de méthode
+## <a name="change-the-property-to-a-method-example"></a>Modifiez la propriété d’un exemple de méthode
 
 ### <a name="description"></a>Description
  L’exemple suivant résout la violation en modifiant la propriété à une méthode.
@@ -75,10 +79,10 @@ ms.locfileid: "31917729"
  [!code-csharp[FxCop.Performance.PropertyArrayFixedCollection#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_3.cs)]
  [!code-vb[FxCop.Performance.PropertyArrayFixedCollection#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_3.vb)]
 
-## <a name="allowing-users-to-modify-a-property"></a>Ce qui permet aux utilisateurs de modifier une propriété
+## <a name="allowing-users-to-modify-a-property"></a>Permettre aux utilisateurs de modifier une propriété
 
 ### <a name="description"></a>Description
- Vous pouvez souhaiter permettre au consommateur de la classe modifier une propriété. L’exemple suivant montre une propriété en lecture/écriture qui enfreint cette règle.
+ Vous souhaiterez peut-être permettre au consommateur de la classe modifier une propriété. L’exemple suivant montre une propriété en lecture/écriture qui enfreint cette règle.
 
 ### <a name="code"></a>Code
  [!code-csharp[FxCop.Performance.PropertyModifyViolation#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_4.cs)]

@@ -14,16 +14,20 @@ ms.assetid: eab780ea-3b1f-4d32-b15a-5d48da2df46b
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6379a811da7c62be59a322ee68ad9f030d9693d9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d3e03c1028dc310748aff7c8263ce75ace9985be
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899715"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551731"
 ---
 # <a name="ca1007-use-generics-where-appropriate"></a>CA1007 : Utiliser des classes génériques lorsque cela est approprié
+
 |||
 |-|-|
 |TypeName|UseGenericsWhereAppropriate|
@@ -32,10 +36,10 @@ ms.locfileid: "31899715"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Une méthode visible de l’extérieur contient un paramètre de référence de type <xref:System.Object?displayProperty=fullName>et l’assembly conteneur cible [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+ Une méthode extérieurement visible contient un paramètre de référence de type <xref:System.Object?displayProperty=fullName>et l’assembly conteneur cible [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
 
 ## <a name="rule-description"></a>Description de la règle
- Un paramètre de référence est un paramètre qui est modifié à l’aide de la `ref` (`ByRef` dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) (mot clé). Le type d’argument fourni pour un paramètre de référence doit correspondre exactement au type de paramètre de référence. Pour utiliser un type qui est dérivé du type de paramètre de référence, le type doit tout d’abord être converti et assigné à une variable du type de paramètre de référence. Utilisation d’une méthode générique autorise tous les types, soumis aux contraintes, à passer à la méthode sans cast préalable du type vers le type de paramètre de référence.
+ Un paramètre de référence est un paramètre qui est modifié à l’aide de la `ref` (`ByRef` dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) mot clé. Le type d’argument fourni pour un paramètre de référence doit correspondre exactement au type de paramètre de référence. Pour utiliser un type qui est dérivé du type de paramètre de référence, le type doit tout d’abord être converti et assigné à une variable du type de paramètre de référence. Utilisation d’une méthode générique autorise tous les types, soumis aux contraintes, doivent être passés à la méthode sans cast préalable du type pour le type de paramètre de référence.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, rendez la méthode générique et remplacez le <xref:System.Object> paramètre à l’aide d’un paramètre de type.
@@ -44,7 +48,7 @@ ms.locfileid: "31899715"
  Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre une routine de permutation à usage général qui est implémentée en tant que méthodes génériques et non. Notez l’efficacité avec laquelle les chaînes sont échangées à l’aide de la méthode générique par rapport à la méthode non générique.
+ L’exemple suivant montre une routine de permutation à usage général qui est implémentée en tant que méthodes génériques et non. Notez comment efficacement les chaînes sont permutées à l’aide de la méthode générique par rapport à la méthode non générique.
 
  [!code-vb[FxCop.Design.UseGenerics#1](../code-quality/codesnippet/VisualBasic/ca1007-use-generics-where-appropriate_1.vb)]
  [!code-csharp[FxCop.Design.UseGenerics#1](../code-quality/codesnippet/CSharp/ca1007-use-generics-where-appropriate_1.cs)]

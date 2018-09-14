@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2b59e9b0947c6d2b1cbb37cdc850a144976d495
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68597c0748fbc235178da6b6e583c48b9f1b422f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915595"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551767"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812 : Évitez les classes internes non instanciées
 |||
@@ -39,37 +39,37 @@ ms.locfileid: "31915595"
 
  Les types suivants ne sont pas examinés par cette règle :
 
--   Types de valeur
+- Types de valeur
 
--   Types abstraits
+- Types abstraits
 
--   Énumérations
+- Énumérations
 
--   Délégués
+- Délégués
 
--   Types de tableau émis par le compilateur
+- Types de tableau émis par le compilateur
 
--   Les types qui ne peut pas être instanciée et qui définissent `static` (`Shared` en Visual Basic) uniquement les méthodes.
+- Les types qui ne peut pas être instanciée et qui définissent `static` (`Shared` en Visual Basic) uniquement les méthodes.
 
- Si vous appliquez <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> à l’assembly qui est en cours d’analyse, cette règle se produira pas sur les constructeurs sont marqués comme `internal` parce que vous ne pouvez pas savoir si un champ est utilisé par un autre `friend` assembly.
+ Si vous appliquez <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> à l’assembly qui est en cours d’analyse, cette règle se produira pas sur les constructeurs portent la mention `internal` parce que vous ne pouvez pas savoir si un champ est utilisé par un autre `friend` assembly.
 
- Même si vous ne pouvez pas contourner cette limitation dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] analyse du Code, l’outil FxCop autonome externe se produira sur les constructeurs internes si chaque `friend` assembly est présent dans l’analyse.
+ Même si vous ne pouvez pas contourner cette limitation dans Visual Studio Code Analysis, l’outil FxCop autonome externe se produit sur les constructeurs internes si chaque `friend` assembly est présent dans l’analyse.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, supprimez le type ou ajoutez le code qui l’utilise. Si le type contient uniquement des méthodes statiques, ajoutez une des valeurs suivantes au type pour empêcher le compilateur de l’émission d’un constructeur d’instance public par défaut :
+ Pour corriger une violation de cette règle, supprimez le type ou ajoutez le code qui l’utilise. Si le type contient uniquement des méthodes statiques, ajoutez une des opérations suivantes pour le type pour empêcher le compilateur d’émettre un constructeur d’instance public par défaut :
 
--   Un constructeur privé pour des types qui ciblent [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] versions 1.0 et 1.1.
+- Un constructeur privé pour les types qui ciblent [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] versions 1.0 et 1.1.
 
--   Le `static` (`Shared` en Visual Basic) qui ciblent des types de modificateur pour [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+- Le `static` (`Shared` en Visual Basic) qui ciblent des types de modificateur pour [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Il est possible de supprimer un avertissement de cette règle. Nous vous recommandons de supprimer cet avertissement dans les situations suivantes :
 
--   La classe est créée par le biais des méthodes de liaison tardive réflexion comme <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
+- La classe est créée par le biais des méthodes de la réflexion à liaison tardive comme <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
 
--   La classe est créée automatiquement par le runtime ou [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Par exemple, les classes qui implémentent <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> ou <xref:System.Web.IHttpHandler?displayProperty=fullName>.
+- La classe est créée automatiquement par le runtime ou [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Par exemple, les classes qui implémentent <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> ou <xref:System.Web.IHttpHandler?displayProperty=fullName>.
 
--   La classe est passée comme un paramètre de type générique qui a une nouvelle contrainte. Par exemple, l’exemple suivant génère cette règle.
+- La classe est passée comme un paramètre de type générique qui a une nouvelle contrainte. Par exemple, l’exemple suivant génère cette règle.
 
     ```csharp
     internal class MyClass
@@ -90,7 +90,7 @@ ms.locfileid: "31915595"
     mc.Create();
     ```
 
- Dans ces situations, il est recommandé de que vous supprimez cet avertissement.
+ Dans ces situations, nous vous recommandons de que vous supprimer cet avertissement.
 
 ## <a name="related-rules"></a>Règles associées
  [CA1811 : Évitez le recours à du code privé non appelé](../code-quality/ca1811-avoid-uncalled-private-code.md)
