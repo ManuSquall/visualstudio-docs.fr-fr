@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 303e7abfd2ea820de660ed70df915765f11b68a5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f2427b54cd19e808bed217c981a95d70e4d020fd
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975518"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612712"
 ---
 # <a name="writing-a-t4-text-template"></a>Écriture d'un modèle de texte T4
 Un modèle de texte contient le texte qui sera généré à partir du modèle. Par exemple, un modèle qui crée une page web contiendra «\<html > … » et tous les autres composants standard d’une page HTML. Inséré dans le modèle sont *blocs de contrôle*, qui sont des fragments de code de programme. Les blocs de contrôle fournissent des valeurs variables et permettent à certaines parties du texte d'être conditionnelles et répétées.
@@ -29,11 +29,11 @@ Un modèle de texte contient le texte qui sera généré à partir du modèle. P
 
 -   **Directives** -éléments qui contrôlent la façon dont le modèle est traité.
 
--   **Blocs de texte** - contenu copié directement dans la sortie.
+-   **Blocs de texte** - contenu qui est copié directement dans la sortie.
 
 -   **Blocs de contrôle** -code de programme qui insère les valeurs des variables dans le texte et contrôle les parties conditionnelles ou répétées du texte.
 
- Pour tester les exemples de cette rubrique, copiez-les dans un fichier de modèle comme décrit dans [génération du Code à l’aide de modèles de texte T4 au moment du Design](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Après avoir modifié le fichier de modèle, enregistrez-le, puis examinez la sortie **.txt** fichier.
+Pour tester les exemples de cette rubrique, copiez-les dans un fichier de modèle comme décrit dans [génération de Code au moment du Design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Après avoir modifié le fichier de modèle, enregistrez-le, puis examiner la sortie **.txt** fichier.
 
 ## <a name="directives"></a>Directives
  Les directives de modèle de texte fournissent des instructions générales au moteur de création de modèles de texte concernant la manière de générer le code de transformation et le fichier de sortie.
@@ -41,11 +41,10 @@ Un modèle de texte contient le texte qui sera généré à partir du modèle. P
  Par exemple, la directive suivante spécifie que le fichier de sortie doit avoir une extension .txt :
 
 ```
-
 <#@ output extension=".txt" #>
 ```
 
- Pour plus d’informations sur les directives, consultez [Directives de modèle de texte T4](../modeling/t4-text-template-directives.md).
+ Pour plus d’informations sur les directives, consultez [Directives de modèles de texte T4](../modeling/t4-text-template-directives.md).
 
 ## <a name="text-blocks"></a>Blocs de texte
  Un bloc de texte insère du texte directement dans le fichier de sortie. Il n'y a aucune mise en forme spéciale pour les blocs de texte. Par exemple, le modèle de texte suivant produit un fichier texte qui contient le mot « Hello » :
@@ -72,8 +71,7 @@ Hello
  Par exemple, le bloc de contrôle et le bloc de texte suivants font en sorte que le fichier de sortie contienne la ligne « 0, 1, 2, 3, 4 Hello! ».
 
 ```
-
-      <#
+<#
     for(int i = 0; i < 4; i++)
     {
         Write(i + ", ");
@@ -98,7 +96,7 @@ Hello!
  Vous pouvez insérer un bloc de texte partout où une instruction `Write();` serait autorisée dans le code.
 
 > [!NOTE]
->  Lorsque vous incorporez un bloc de texte dans une instruction composée telle qu’une boucle ou conditionnel, utilisez toujours des accolades {...} pour contenir le bloc de texte.
+>  Lorsque vous incorporez un bloc de texte au sein d’une instruction composée telle qu’une boucle ou conditionnel, utilisez toujours des accolades {...} pour contenir le bloc de texte.
 
 ### <a name="expression-control-blocks"></a>Blocs de contrôle d'expression
  Un bloc de contrôle d'expression évalue une expression et la convertit en chaîne. Celle-ci est insérée dans le fichier de sortie.
@@ -128,7 +126,7 @@ This is hello number <#= i+1 #>: Hello!
 ```
 
 ### <a name="class-feature-control-blocks"></a>Bloc de contrôle de fonctionnalité de classe
- Un bloc de contrôle de fonctionnalité de classe définit des propriétés, des méthodes ou tout autre code qui ne doit pas être inclus dans la transformation principale. Les blocs de fonctionnalité de classe sont fréquemment utilisés pour les fonctions d’assistance.  En règle générale, les blocs de fonctionnalité de classe sont placés dans des fichiers distincts afin qu’ils puissent être [inclus](#Include) par plusieurs modèles de texte.
+ Un bloc de contrôle de fonctionnalité de classe définit des propriétés, des méthodes ou tout autre code qui ne doit pas être inclus dans la transformation principale. Les blocs de fonctionnalité de classe sont fréquemment utilisés pour les fonctions d’assistance.  En règle générale, les blocs de fonctionnalité de classe sont placés dans des fichiers distincts afin qu’ils peuvent être [inclus](#Include) par plusieurs modèles de texte.
 
  Les blocs de fonctionnalité de classe sont délimités par les symboles `<#+ ... #>`.
 
@@ -156,7 +154,7 @@ private int Square(int i)
 
  Les fonctionnalités de classe doivent être placées à la fin du fichier dans lequel elles sont écrites. Toutefois, vous pouvez inclure (`<#@include#>`) un fichier qui contient une fonctionnalité de classe, même si la directive `include` est suivie de texte et de blocs ordinaires.
 
- Pour plus d’informations sur les blocs de contrôle, consultez [blocs de contrôle de modèle de texte](../modeling/text-template-control-blocks.md).
+ Pour plus d’informations sur les blocs de contrôle, consultez [blocs de contrôle de modèles de texte](../modeling/text-template-control-blocks.md).
 
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>Les blocs de fonctionnalité de classe peuvent contenir des blocs de texte
  Vous pouvez écrire une méthode qui génère du texte. Par exemple :
@@ -189,7 +187,7 @@ private void WriteSquareLine(int i)
 <#@ assembly name="System.Xml" #>
 ```
 
- Vous devez utiliser des noms de chemins d'accès absolus ou des noms de macros standard dans le nom du chemin d'accès. Par exemple :
+ Vous devez utiliser des noms de chemins d'accès absolus ou des noms de macros standard dans le nom du chemin d'accès. Exemple :
 
 ```
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>
@@ -213,7 +211,9 @@ private void WriteSquareLine(int i)
 ###  <a name="Include"></a> Y compris le code et le texte
  La directive `include` insère du texte à partir d'un autre fichier de modèle. Par exemple, cette directive insère le contenu de `test.txt`.
 
- `<#@ include file="c:\test.txt" #>`
+```
+<#@ include file="c:\test.txt" #>
+```
 
  Le contenu inclus est traité presque comme s'il faisait partie du modèle de texte d'inclusion. Toutefois, vous pouvez inclure un fichier qui contient un bloc de fonctionnalité de classe `<#+...#>` même si la directive include est suivie de texte ordinaire et de blocs de contrôle standard.
 
@@ -238,14 +238,14 @@ private void WriteSquareLine(int i)
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- **Charger un fichier en tant que modèle navigable**. Une méthode plus puissante consiste à lire les données en tant que modèle navigable par votre code de modèle de texte. Par exemple, vous pouvez charger un fichier XML et le parcourir avec des expressions XPath. Vous pouvez également utiliser [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765) pour créer un ensemble de classes vous pouvez de lire les données XML.
+ **Charger un fichier en tant que modèle navigable**. Une méthode plus puissante consiste à lire les données en tant que modèle navigable par votre code de modèle de texte. Par exemple, vous pouvez charger un fichier XML et le parcourir avec des expressions XPath. Vous pouvez également utiliser [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765) pour créer un ensemble de classes avec lequel vous pouvez lire les données XML.
 
- **Modifiez le fichier de modèle dans un diagramme ou d’un formulaire.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Fournit des outils qui vous permettent de modifier un modèle comme un diagramme ou un Windows form. Il est ainsi plus facile de discuter du modèle avec les utilisateurs de l'application générée. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] crée également un ensemble de classes fortement typées qui reflètent la structure du modèle. Pour plus d’informations, consultez [génération du Code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md).
+ **Modifiez le fichier de modèle dans un formulaire ou un diagramme.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Fournit des outils qui vous permettent de modifier un modèle en tant que diagramme ou formulaire de Windows. Il est ainsi plus facile de discuter du modèle avec les utilisateurs de l'application générée. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] crée également un ensemble de classes fortement typées qui reflètent la structure du modèle. Pour plus d’informations, consultez [génération du Code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>Chemins d’accès de fichiers relatifs dans les modèles au moment de la conception
- Dans un [modèle de texte au moment du design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), si vous souhaitez faire référence à un fichier dans un emplacement relatif au modèle de texte, utilisez `this.Host.ResolvePath()`. Vous devez aussi définir `hostspecific="true"` dans la directive `template` :
+ Dans un [modèle de texte au moment du design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), si vous souhaitez référencer un fichier dans un emplacement relatif au modèle de texte, utilisez `this.Host.ResolvePath()`. Vous devez aussi définir `hostspecific="true"` dans la directive `template` :
 
-```csharp
+```
 <#@ template hostspecific="true" language="C#" #>
 <#@ output extension=".txt" #>
 <#@ import namespace="System.IO" #>
@@ -264,7 +264,7 @@ Vous pouvez également obtenir d'autres services fournis par l'hôte. Pour plus 
 
  Vous devez être conscient qu’un [modèle de texte au moment du design](../modeling/design-time-code-generation-by-using-t4-text-templates.md) s’exécute dans un AppDomain qui est distinct de l’application principale. Dans la plupart des cas cela n'est pas important, mais dans certains cas complexes certaines restrictions peuvent s'appliquer. Par exemple, si vous souhaitez passer des données dans le modèle ou en dehors de celui-ci à partir d'un service distinct, ce service doit fournir une API sérialisable.
 
- (Cela n’est pas vrai un [modèle de texte au moment de l’exécution](../modeling/run-time-text-generation-with-t4-text-templates.md), qui fournit du code est compilé avec le reste de votre code.)
+ (Cela n’est pas vrai pour un [modèle de texte de l’exécution](../modeling/run-time-text-generation-with-t4-text-templates.md), qui fournit le code est compilé avec le reste de votre code.)
 
 ## <a name="editing-templates"></a>Modification de modèles
  Vous pouvez télécharger des éditeurs de modèle de texte spécialisés à partir de la galerie en ligne du Gestionnaire d’extensions. Sur le **outils** menu, cliquez sur **Gestionnaire d’extensions**. Cliquez sur **galerie en ligne**, puis utilisez l’outil de recherche.

@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 145640d63191b72d2bce880f9ecab637dcbf0246
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b9167970030919073bf5a58ccf7368cff69dc896
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552095"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612738"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Spécifiez les fichiers de symbole (.pdb) et les fichiers source dans le débogueur Visual Studio.
 Un fichier de base de données (.pdb) programme, également appelé fichier de symboles, mappe les identificateurs que vous créez dans le code source pour les classes, méthodes et autre code pour les identificateurs qui sont utilisés dans les fichiers exécutables compilés de votre projet. Le fichier .pdb mappe également les instructions du code source aux instructions d'exécution des fichiers exécutables. Le débogueur utilise ces informations pour déterminer deux informations essentielles :
@@ -45,7 +45,11 @@ Un fichier de base de données (.pdb) programme, également appelé fichier de s
 Un fichier de symboles contient également l'emplacement d'origine des fichiers sources, et éventuellement, l'emplacement d'un serveur source d'où les fichiers sources peuvent être extraits.
   
 > [!TIP]
-> Si vous souhaitez déboguer le code en dehors de votre code source du projet, telles que le code de Windows ou tiers appelé par votre projet, vous devez spécifier l’emplacement du fichier .pdb (et éventuellement, les fichiers sources du code externe) et que ces fichiers doivent correspondre exactement à la génération de t Il exécutables.  
+> Si vous souhaitez déboguer le code en dehors de votre code source du projet, telles que le code de Windows ou tiers appelé par votre projet, vous devez spécifier l’emplacement du fichier .pdb (et éventuellement, les fichiers sources du code externe) et que ces fichiers doivent correspondre exactement à la génération de t Il exécutables. 
+
+##  <a name="how-can-i-manage-symbol-files-while-debugging"></a>Comment puis-je gérer les fichiers de symboles pendant le débogage ? 
+
+Le **Modules** fenêtre peut vous indiquer quels modules de code le débogueur est en traitant comme code de l’utilisateur, ou mon Code et le symbole de chargement de l’état du module. Vous pouvez également utiliser cette fenêtre pour charger des symboles pendant le débogage. Pour plus d’informations, consultez [vous familiariser avec la façon dont le débogueur s’attache à votre application](../debugger/debugger-tips-and-tricks.md#modules_window).
  
 ##  <a name="BKMK_Find_symbol___pdb__files"></a> Où le débogueur recherche les fichiers de symboles ? 
   

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b67722884a675dd991cad608ca22cf277e2d6777
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 7e2a9acf315541dcf231d774fdb37e4c82649a4c
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303079"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612725"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Découvrez des conseils de productivité et des astuces pour le débogueur dans Visual Studio
 
@@ -145,7 +145,7 @@ Sélectionnez une opération dans la vue du résumé pour afficher des informati
 
 Pour plus d’informations, consultez [Utilisation du réseau](../profiling/network-usage.md).
 
-## <a name="get-more-familiar-with-how-the-debugger-attaches-to-your-app"></a>Vous familiariser avec la façon dont le débogueur s’attache à votre application
+## <a name="modules_window"></a> Vous familiariser avec la façon dont le débogueur s’attache à votre application
 
 Pour attacher à votre application en cours d’exécution, le débogueur charge les fichiers de symboles (.pdb) générés pour exactement identique à celle de l’application que vous essayez de déboguer. Dans certains scénarios, une petite base de connaissances des fichiers de symboles peut être utile. Vous pouvez examiner la façon dont Visual Studio charge les fichiers de symboles à l’aide de la **Modules** fenêtre.
 
