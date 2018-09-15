@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f39b2ce216ce909837f37fd09fb556a4733098ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a2873f691fdaa1251a5562e21e2bbd0467eb2e2
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627339"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612751"
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>Indiquez si vous souhaitez déboguer uniquement le code utilisateur à l’aide d’uniquement mon Code dans Visual Studio
 Vous pouvez configurer Visual Studio pour effectuer un survol de système, d’infrastructure et d’autres appels de non-utilisateur automatiquement et de réduire ces appels dans la fenêtre Pile des appels. La fonctionnalité qui active ou désactive ce comportement est appelée *uniquement mon Code*. Cette rubrique décrit comment utiliser uniquement mon Code dans les projets c#, Visual Basic, C++ et JavaScript.
@@ -37,6 +37,10 @@ Pour la plupart des langages de programmation, uniquement mon Code est activé p
   
 > [!NOTE]
 >  Le **afficher le Code externe** paramètre est enregistré dans le Générateur de profils de l’utilisateur actuel. Il est appliqué à tous les projets dans tous les langages qui sont ouverts par l'utilisateur.
+
+##  <a name="identify-user-code-while-debugging"></a>Identifier le code de l’utilisateur pendant le débogage 
+
+Le **Modules** fenêtre peut vous indiquer quels modules de code le débogueur va traiter en tant que code utilisateur ou mon Code, ainsi que des informations telles que le symbole de chargement de l’état du module. Pour plus d’informations, consultez [vous familiariser avec la façon dont le débogueur s’attache à votre application](../debugger/debugger-tips-and-tricks.md#modules_window).
   
 ##  <a name="BKMK__NET_Framework_Just_My_Code"></a> Uniquement mon Code .NET framework  
   
