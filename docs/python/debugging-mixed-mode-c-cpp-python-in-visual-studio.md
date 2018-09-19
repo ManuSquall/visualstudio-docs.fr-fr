@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 005ba501dff89ed26cd83bee04aa40e49e2f9dca
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 4d5ec15e6fea377e8ffc23cc5215a88081d0f9bd
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008432"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552082"
 ---
 # <a name="debug-python-and-c-together"></a>Déboguer conjointement Python et C++
 
@@ -104,7 +104,7 @@ Un double-clic sur un frame d’appel quelconque active ce dernier et ouvre le c
 
 ### <a name="step-between-python-and-native-code"></a>Pas à pas détaillé alternant entre du code Python et natif
 
-Quand vous utilisez les commandes **Pas à pas détaillé** (**F11**) ou **Pas à pas sortant**  (**Maj**+**F11**), le débogueur en mode mixte gère correctement l’alternance entre ces types de codes. Par exemple, lorsque Python appelle une méthode d’un type implémenté en C, le pas à pas détaillé sur un appel de cette méthode s’arrête au début de la fonction native implémentant la méthode. De même, lorsqu’un code natif appelle une fonction API Python, un code Python est appelé. Par exemple, l’exécution d’un pas à pas détaillé dans `PyObject_CallObject` sur une valeur de fonction initialement définie dans Python s’arrête au début de la fonction Python. L’exécution d’un pas à pas détaillé alternant entre un code Python et natif est également prise en charge pour les fonctions natives appelées à partir de Python par le biais de [ctypes](http://docs.python.org/3/library/ctypes.html).
+Quand vous utilisez les commandes **Pas à pas détaillé** (**F11**) ou **Pas à pas sortant**  (**Maj**+**F11**), le débogueur en mode mixte gère correctement l’alternance entre ces types de codes. Par exemple, lorsque Python appelle une méthode d’un type implémenté en C, le pas à pas détaillé sur un appel de cette méthode s’arrête au début de la fonction native implémentant la méthode. De même, lorsqu’un code natif appelle une fonction API Python, un code Python est appelé. Par exemple, l’exécution d’un pas à pas détaillé dans `PyObject_CallObject` sur une valeur de fonction initialement définie dans Python s’arrête au début de la fonction Python. L’exécution d’un pas à pas détaillé alternant entre un code Python et natif est également prise en charge pour les fonctions natives appelées à partir de Python par le biais de [ctypes](https://docs.python.org/3/library/ctypes.html).
 
 ### <a name="pyobject-values-view-in-native-code"></a>Vue des valeurs PyObject dans le code natif
 
@@ -137,7 +137,7 @@ Types C affichant les nœuds **[Vue Python]** (si cette option est activée) :
 
 Toutefois, pour Python 2.x, chaque type d’objet déclare généralement son en-tête sous la forme d’une collection de champs inline, et il n’existe aucune association entre les types créés personnalisés et `PyObject` au niveau du système de type en code C/C++. Pour activer les nœuds **[Vue Python]** pour de tels types personnalisés, modifiez le fichier *PythonDkm.natvis* dans le [répertoire d’installation de Python Tools](installing-python-support-in-visual-studio.md#install-locations), et ajoutez un autre élément dans le code XML pour votre struct C ou classe C++.
 
-Une autre option (mieux adaptée) consiste à suivre la spécification [PEP 3123](http://www.python.org/dev/peps/pep-3123/) et à utiliser un champ `PyObject ob_base;` explicite plutôt que `PyObject_HEAD`, bien que cette opération ne soit pas toujours possible pour des raisons de compatibilité descendante.
+Une autre option (mieux adaptée) consiste à suivre la spécification [PEP 3123](https://www.python.org/dev/peps/pep-3123/) et à utiliser un champ `PyObject ob_base;` explicite plutôt que `PyObject_HEAD`, bien que cette opération ne soit pas toujours possible pour des raisons de compatibilité descendante.
 
 ### <a name="native-values-view-in-python-code"></a>Vue des valeurs natives dans le code Python
 

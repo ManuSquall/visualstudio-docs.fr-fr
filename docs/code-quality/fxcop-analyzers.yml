@@ -1,10 +1,10 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: da202cf2d23b148fd35a8da7dc6c0dd303d956e7
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: fafde7c8355b5087c6168345c57540e0356227b1
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "44342930"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46135534"
 documentType: LandingData
 title: Migrer à partir de l’analyse de code FxCop vers les analyseurs de plateforme du compilateur .NET
 metadata:
@@ -27,6 +27,9 @@ abstract:
       src: https://docs.microsoft.com/media/illustrations/bcs-partner-advanced-management-settings-8.svg
     title: 
 sections:
+- title: FAQ
+  items:
+  - html: Obtenez des réponses à certaines <a href="fxcop-analyzers-faq.md">Forum aux questions</a> sur les différences entre FxCop et analyseurs.
 - title: Si vous ne connaissez pas l’analyse du code...
   items:
   - type: list
