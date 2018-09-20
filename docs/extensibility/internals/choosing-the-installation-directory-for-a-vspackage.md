@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18153e86c75f48b362fc09eddb54ea61263e09e1
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 4e32f2581e4980feebbbecb3cc8e7aa98bfeb670
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511880"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370950"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Choisissez le répertoire d’installation d’un VSPackage
 Un VSPackage et ses fichiers de prise en charge doivent être sur le système de fichiers d’un utilisateur. L’emplacement varie selon que le VSPackage est géré ou non gérés, le schéma de contrôle de version côte à côte et de votre choix de l’utilisateur.  
@@ -66,4 +66,4 @@ Si votre DLL VSPackage inclut des ressources et le **SatelliteDll\DllName** entr
 ## <a name="see-also"></a>Voir aussi  
  [Choisissez entre les VSPackages partagés et avec contrôle de version](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
  [Gérer les packages VS](../../extensibility/managing-vspackages.md)   
- [Gérer l’inscription du package](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+ [Gérer l’inscription du package](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

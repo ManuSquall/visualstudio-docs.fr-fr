@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 22d51fff3dcfea81676e18c7b13d91bb5567dde8
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 8046e5fe494839c051662bf313a17c49eea8746b
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321123"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371060"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Valider du code avec des diagrammes de dépendance
 
@@ -52,16 +52,14 @@ Pour vous assurer que le code n’entre en conflit avec sa conception, validez v
 
 -   Visual Studio
 
--   Visual Studio sur votre serveur Team Foundation Build pour valider le code automatiquement avec Team Foundation Build
-
 -   Une solution qui a un projet de modélisation avec un diagramme de dépendances. Ce diagramme de dépendance doit être lié aux artefacts dans les projets c# ou Visual Basic que vous souhaitez valider. Consultez [créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md).
 
- Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
- Vous pouvez valider le code manuellement à partir d’un diagramme de dépendances ouvert dans Visual Studio ou à partir d’une invite de commandes. Vous pouvez également valider le code automatiquement en exécutant des builds locales ou Team Foundation Build. Consultez [vidéo Channel 9 : conception et valider votre architecture à l’aide de diagrammes de dépendance](http://go.microsoft.com/fwlink/?LinkID=252073).
+Vous pouvez valider le code manuellement à partir d’un diagramme de dépendances ouvert dans Visual Studio ou à partir d’une invite de commandes. Vous pouvez également valider le code automatiquement lors de l’exécution de builds locales ou les Pipelines Azure génère. Consultez [vidéo Channel 9 : conception et valider votre architecture à l’aide de diagrammes de dépendance](http://go.microsoft.com/fwlink/?LinkID=252073).
 
 > [!IMPORTANT]
->  Si vous souhaitez effectuer la validation de couche à l’aide de Team Foundation Build, vous devez aussi installer la même version de Visual Studio sur votre serveur de builds.
+> Si vous souhaitez exécuter la validation de couche à l’aide de Team Foundation Server, vous devez également installer la même version de Visual Studio sur votre serveur de builds.
 
 -   [Si un élément prend en charge la validation](#SupportsValidation)
 
@@ -182,51 +180,32 @@ Dans cette version de Visual Studio, validation de dépendance se produit en tem
 |Masquer toutes les erreurs supprimées à partir de la **liste d’erreurs** fenêtre|Avec le bouton droit n’importe où dans le **liste d’erreurs** fenêtre, pointez sur **gérer les erreurs de Validation**, puis cliquez sur **masquer les erreurs supprimées**.|
 
 ##  <a name="ValidateAuto"></a> Valider automatiquement le code
- Exécutez la validation de couche chaque fois que vous exécutez une build locale. Si votre équipe utilise Team Foundation Build, vous pouvez exécuter la validation de couche avec les archivages contrôlés que vous spécifiez en créant une tâche personnalisée MSBuild, puis utilisez les rapports de build pour collecter les erreurs de validation. Pour créer des builds d’archivage contrôlé, consultez [utiliser un processus de build d’archivage contrôlé pour valider les modifications](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
+
+Exécutez la validation de couche chaque fois que vous exécutez une build locale. Si votre équipe utilise Azure DevOps, vous pouvez effectuer la validation de couche avec les archivages, que vous pouvez spécifier en créant une tâche MSBuild personnalisée et utiliser les rapports de build pour collecter les erreurs de validation. Pour créer des builds d’archivage contrôlé, consultez [utiliser un processus de build d’archivage contrôlé pour valider les modifications](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
 
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>Pour valider automatiquement le code au cours d'une build locale
 
--   Utilisez un éditeur de texte pour ouvrir le fichier projet de modélisation (.modelproj), puis y inclure la propriété suivante :
+Utilisez un éditeur de texte pour ouvrir le fichier projet de modélisation (.modelproj), puis y inclure la propriété suivante :
 
 ```xml
 <ValidateArchitecture>true</ValidateArchitecture>
 ```
 
- \- ou -
+\- ou -
 
 1.  Dans **l’Explorateur de solutions**, cliquez sur le projet de modélisation qui contient la dépendance ou les diagrammes, puis cliquez sur **propriétés**.
 
 2.  Dans le **propriétés** fenêtre, définissez le projet de modélisation **valider l’Architecture** propriété **True**.
 
-     Cela inclut le projet de modélisation dans le processus de validation.
+    Cela inclut le projet de modélisation dans le processus de validation.
 
 3.  Dans **l’Explorateur de solutions**, cliquez sur le fichier de diagramme (.layerdiagram) de dépendance que vous souhaitez utiliser pour la validation.
 
 4.  Dans le **propriétés** fenêtre, assurez-vous que le diagramme **Action de génération** propriété est définie sur **Validate**.
 
-     Cela inclut le diagramme de dépendances dans le processus de validation.
+    Cela inclut le diagramme de dépendances dans le processus de validation.
 
- Pour gérer les erreurs dans la fenêtre liste d’erreurs, consultez [gérer les erreurs de Validation](#ManageErrors).
-
-#### <a name="to-validate-code-automatically-during-a-team-foundation-build"></a>Pour valider automatiquement le code au cours d’une build Team Foundation
-
-1.  Dans **Team Explorer**, double-cliquez sur la définition de build, puis cliquez sur **processus**.
-
-2.  Sous **paramètres du processus de génération**, développez **Compilation**et tapez la commande suivante dans le **Arguments MSBuild** paramètre :
-
-     `/p:ValidateArchitecture=true`
-
- Pour plus d’informations sur les erreurs de validation, consultez [comprendre et résoudre les erreurs de validation de couche](#UnderstandingValidationErrors). Pour plus d'informations sur [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)], consultez :
-
--   [Pipelines Azure](/azure/devops/pipelines/index?view=vsts)
-
--   [Utiliser le modèle par défaut pour votre processus de génération](http://msdn.microsoft.com/Library/43930b12-c21b-4599-a980-2995e3d16e31)
-
--   [Modifier une Build héritée basée sur UpgradeTemplate.xaml](http://msdn.microsoft.com/Library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)
-
--   [Personnaliser votre modèle de processus de génération](http://msdn.microsoft.com/Library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
-
--   [Surveiller la progression d’une Build en cours d’exécution](http://msdn.microsoft.com/Library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
+Pour gérer les erreurs dans la fenêtre liste d’erreurs, consultez [gérer les erreurs de Validation](#ManageErrors).
 
 ##  <a name="TroubleshootingValidation"></a> Résoudre les problèmes de validation de couche
  Le tableau suivant décrit les problèmes liés à la validation de couche et propose une résolution. Ces problèmes ne sont pas liés aux erreurs qui résultent de conflits entre le code et la conception. Pour plus d’informations sur ces erreurs, consultez [comprendre et résoudre les erreurs de validation de couche](#UnderstandingValidationErrors).

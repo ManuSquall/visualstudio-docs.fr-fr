@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49b1fbf18fb0dac23fcc55b7d9765dd4d1a88d32
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 1b9d5aa4c3f649f7be44db2e18f67884acd23201
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499697"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370664"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>Obtenir des informations de police et de couleur pour la colorisation de texte
 Le processus qui effectue le rendu ou affiche le texte en couleurs se dans les éléments d’interface (UI) utilisateur varie selon le type de préférences de projet, sa technologie et les développeurs. Le **polices et couleurs** page de propriétés stocke les paramètres.
@@ -50,4 +50,4 @@ Après avoir obtenu les informations de police et couleur, analyser le texte à 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>
 - [Utilisez des polices et texte](/dotnet/framework/winforms/advanced/using-fonts-and-text)
 - [Utiliser des couleurs](/cpp/windows/working-with-color-image-editor-for-icons)
-- [GDI (interface graphique)](http://msdn.microsoft.com/en-us/7e1d4540-bb2e-4257-8eee-eee376acba83)
+- [GDI (interface graphique)](https://msdn.microsoft.com/library/7e1d4540-bb2e-4257-8eee-eee376acba83)

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06f362987a8a52692aa0b38bf921b6763dbc8a2c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 96012a8f498fdab6dfd508906e9abf13591b9dbb
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637053"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370547"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Configuration de l’initialisation et de métadonnées de concepteur
 Manipulation des attributs de métadonnées et de filtre associé à un concepteur ou un composant de concepteur fournit un mécanisme permettant aux applications de définir quels outils sont utilisés par un concepteur particulier pour gérer différents <xref:System.Type> objets (tels que les structures de données, classes, ou les entités graphiques), lorsque le concepteur est disponible, et comment l’IDE Visual Studio est configuré pour prendre en charge le concepteur (pour une instance qui **boîte à outils** catégorie ou un onglet est disponible).  
@@ -100,4 +100,4 @@ Manipulation des attributs de métadonnées et de filtre associé à un concepte
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>   
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>   
  <xref:System.ComponentModel.ToolboxItemFilterType>   
- [Étendre la prise en charge dDesign](http://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+ [Étendre la prise en charge au moment du design](https://msdn.microsoft.com/Library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
