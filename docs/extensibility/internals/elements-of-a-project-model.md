@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b26895a5b25982dbc616b0df3a5618bcdcbb4d6b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: f0df69c18641faa2fe45326eb65ac408dcfd081f
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497563"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370792"
 ---
 # <a name="elements-of-a-project-model"></a>Éléments d’un modèle de projet
 Les interfaces et les implémentations de tous les projets de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] partagent une structure de base : le modèle de projet pour votre type de projet. Dans votre modèle de projet, qui est le VSPackage que vous développez, vous créez des objets qui sont conformes avec vos décisions de conception et l’implication des fonctionnalités globales fournies par l’IDE. Bien que vous contrôlez le mode de conservation d’un élément de projet, par exemple, vous ne contrôlez pas notification qu’un fichier doit être persistante. Lorsqu’un utilisateur met l’accent sur un élément de projet ouvert et choisit **enregistrer** sur le **fichier** menu sur le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] menu barre, votre code de type de projet doit intercepter la commande à partir de l’IDE, conserve le fichier, et envoyer la notification à l’IDE que le fichier est modifié n’est plus.  
@@ -35,7 +35,7 @@ Les interfaces et les implémentations de tous les projets de [!INCLUDE[vsprvs](
   
 -   Chaque projet doit avoir un fichier de modèle ou un Assistant pour initialiser le nouveau fichier de projet lorsqu’un utilisateur crée un nouveau projet via la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’interface utilisateur. Par exemple, le [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] modèles initialiser ce que deviennent des fichiers .vcproj.  
   
- L’illustration suivante montre les interfaces principales, les services et les objets qui composent une implémentation de projet standard. Vous pouvez utiliser l’application d’assistance de l’application, `HierUtil7`, pour créer les objets sous-jacents et autres réutilisable de programmation. Pour plus d’informations sur la `HierUtil7` application d’assistance de l’application, consultez [HierUtil7 de l’utilisation des classes de projet pour implémenter un type de projet (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
+ L’illustration suivante montre les interfaces principales, les services et les objets qui composent une implémentation de projet standard. Vous pouvez utiliser l’application d’assistance de l’application, `HierUtil7`, pour créer les objets sous-jacents et autres réutilisable de programmation. Pour plus d’informations sur la `HierUtil7` application d’assistance de l’application, consultez [HierUtil7 de l’utilisation des classes de projet pour implémenter un type de projet (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
  ![Graphique modèle de projet Visual Studio](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
 modèle de projet  
@@ -46,7 +46,7 @@ modèle de projet
   
 ## <a name="see-also"></a>Voir aussi  
  [Liste de vérification : Créer des types de projet](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Utiliser des classes de projet HierUtil7 pour implémenter un type de projet (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [Utiliser des classes de projet HierUtil7 pour implémenter un type de projet (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [Composants principaux du modèle projet](../../extensibility/internals/project-model-core-components.md)   
  [Créer des instances de projet à l’aide de fabriques de projet](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)   
  [Comment : obtenir un service](../../extensibility/how-to-get-a-service.md)   

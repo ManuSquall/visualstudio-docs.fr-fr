@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca90a78643b8abc1f73ca61da3d1627261fff59c
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 23b84b1ad2b29a842389fb2852abdcfb8e76ea92
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321162"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371093"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénario : modifier votre conception à l'aide de la visualisation et de la modélisation
 
@@ -182,7 +182,7 @@ Dinner Now doit estimer le coût de réalisation pour remplir le nouveau besoin.
 
  **Diagramme de dépendances**
 
-Pour vous assurer qu’est en conflit avec la conception ne se produire pas pendant le développement de code, les équipes utilisent la validation des dépendances sur les builds qui sont exécutés sur Team Foundation Build. Ils créent également une tâche MSBuild personnalisée pour exiger une validation de dépendance dans leurs opérations d’archivage. Elles utilisent des rapports de build pour collecter les erreurs de validation.
+Pour vous assurer qu’est en conflit avec la conception ne se produire pas pendant le développement de code, les équipes utilisent la validation des dépendances sur les builds qui sont exécutés sur Azure DevOps. Ils créent également une tâche MSBuild personnalisée pour exiger une validation de dépendance dans leurs opérations d’archivage. Elles utilisent des rapports de build pour collecter les erreurs de validation.
 
 Consultez :
 
@@ -234,7 +234,7 @@ Consultez :
 
 Dinner Now possède une grande collection de tests automatisés. Lucerne peut réutiliser ces tests, car ils sont presque tous encore applicables. Lucerne peut également s’appuyer sur ces tests et en ajouter de nouveaux pour couvrir les nouvelles fonctionnalités. Les deux sociétés utilisent également Visual Studio pour exécuter des tests manuels.
 
-Pour vous assurer que le code est conforme à la conception, les équipes configurent leurs builds dans Team Foundation Build pour inclure la validation de dépendance. En cas de conflit, un rapport détaillé est généré.
+Pour vous assurer que le code est conforme à la conception, les équipes configurent leurs builds dans Azure DevOps pour inclure la validation de dépendance. En cas de conflit, un rapport détaillé est généré.
 
 Consultez :
 

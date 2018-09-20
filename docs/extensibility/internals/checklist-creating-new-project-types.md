@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69eaf52f9864b61cfc5045da9dbaf0ca6b4410b9
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3da952e22515b48f06fdc50b34b2eb49f5709cc2
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511663"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370573"
 ---
 # <a name="checklist-create-new-project-types"></a>Liste de vérification : Créer des types de projet
 Vous devez effectuer plusieurs tâches pour créer un nouveau type de projet. La liste de vérification suivante fournit un guide pour ces tâches :  
@@ -36,7 +36,7 @@ Vous devez effectuer plusieurs tâches pour créer un nouveau type de projet. La
   
     -   Fabrique de projet, pour gérer la création de projets et ouvrir des projets existants. Pour plus d’informations, consultez [créer des instances de projet à l’aide de fabriques de projet](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).  
   
-    -   Hiérarchie de projet et la gestion des commandes. Pour plus d’informations, consultez [HierUtil7 de l’utilisation des classes de projet pour implémenter un type de projet (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346), [éléments d’un modèle de projet](../../extensibility/internals/elements-of-a-project-model.md), [les composants de base de modèle de projet](../../extensibility/internals/project-model-core-components.md)et [ MenuCommands et OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md).  
+    -   Hiérarchie de projet et la gestion des commandes. Pour plus d’informations, consultez [HierUtil7 de l’utilisation des classes de projet pour implémenter un type de projet (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346), [éléments d’un modèle de projet](../../extensibility/internals/elements-of-a-project-model.md), [les composants de base de modèle de projet](../../extensibility/internals/project-model-core-components.md)et [ MenuCommands et OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md).  
   
     -   Gestion d’éléments de projet, y compris l’ajout de votre projet pour le **nouveau projet** boîte de dialogue. Pour plus d’informations, consultez [ajouter le projet et les modèles d’élément de projet](../../extensibility/internals/adding-project-and-project-item-templates.md) et [inscrire les modèles de projet et d’élément](../../extensibility/internals/registering-project-and-item-templates.md).  
   

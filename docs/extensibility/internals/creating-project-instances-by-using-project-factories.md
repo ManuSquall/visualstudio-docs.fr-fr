@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e25fd72601618fc02c27f3f01e6673229e526d52
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 920f81c432dfed2761bf2d0438b02ad76ce36e4d
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498910"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370716"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Créer des instances de projet à l’aide de fabriques de projet
 Types de projets dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utiliser un *fabrique de projet* pour créer des instances d’objets du projet. Une fabrique de projet est similaire à une fabrique de classe standard pour les objets COM cocreatable. Toutefois, les objets du projet ne sont pas cocreatable ; ils peuvent uniquement être créés à l’aide d’une fabrique de projet.  
@@ -28,7 +28,7 @@ Types de projets dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md
   
  Vous pouvez implémenter la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interface dans une classe dans votre projet. En règle générale, il se trouve dans son propre module.  
   
- Pour obtenir un exemple d’implémentation de la `IVsProjectFactory` l’interface, consultez *PrjFac.cpp*, qui est contenu dans le [projet de base](http://msdn.microsoft.com/en-us/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) répertoire d’exemple.  
+ Pour obtenir un exemple d’implémentation de la `IVsProjectFactory` l’interface, consultez *PrjFac.cpp*, qui est contenu dans le [projet de base](https://www.microsoft.com/download/details.aspx?id=55984) répertoire d’exemple.  
   
  Les projets qui prennent en charge l’agrégation par un propriétaire doivent conserver une clé de propriétaire dans leur fichier projet. Lorsque le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> méthode est appelée sur un projet avec une clé de propriétaire, le projet détenu convertit sa clé de propriétaire à une fabrique de projet GUID appelle ensuite la `CreateProject` méthode sur cette fabrique de projet pour effectuer la création réelle.  
   
