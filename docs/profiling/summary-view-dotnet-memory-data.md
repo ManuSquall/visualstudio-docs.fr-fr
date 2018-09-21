@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 174f8612dd4f0678d8bbdc8be5c6a9b37cfc8b61
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 98b56eece1a51db94482a0a58d54ca877e47e0c1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668776"
 ---
 # <a name="summary-view---net-memory-data"></a>Vue Résumé - Données de la mémoire .NET
 La vue Résumé affiche des informations sur les fonctions et les types .NET qui ont alloué le plus de mémoire, et sur les types qui ont été créés le plus grand nombre de fois dans une exécution du profilage. Pour plus d’informations, notamment une description des liens de notification et des listes de rapports, consultez [Vue Résumé](../profiling/summary-view.md).  
@@ -49,5 +50,5 @@ La vue Résumé affiche des informations sur les fonctions et les types .NET qui
 |**% d’instances**|Pourcentage du nombre total d’objets .NET créés dans l’exécution du profilage et qui étaient des instances de ce type.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vue Résumé](../profiling/summary-view-sampling-data.md)   
- [Vue Résumé](../profiling/summary-view-instrumentation-data.md)
+ [Vue Résumé - Données d’échantillonnage](../profiling/summary-view-sampling-data.md)   
+ [Vue Résumé - Données d’instrumentation](../profiling/summary-view-instrumentation-data.md)

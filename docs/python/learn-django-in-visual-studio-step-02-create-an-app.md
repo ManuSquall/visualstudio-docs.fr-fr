@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f568af59a638024275bdab41b33ac4fbbaf24dd3
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 7e9f5506efb74735975bdddc6f1f5c483c1e5dea
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626967"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547930"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Étape 2 : Créer une application Django avec des vues et des modèles de pages
 
@@ -53,7 +53,7 @@ Une application Django commence généralement par un ensemble standard de fichi
 | **\_\_init\_\_.py** | Le fichier qui identifie l’application en tant que package. |
 | **migrations** | Un dossier dans lequel Django stocke les scripts qui mettent à jour la base de données pour s’aligner avec les modifications apportées aux modèles. Les outils de migration de Django s’appliquent alors aux modifications nécessaires apportées à toute version précédente de la base de données afin qu’elle corresponde aux modèles actuels. À l’aide des migrations, restez concentré sur vos modèles et laissez Django gérer le schéma de la base de données sous-jacente. Les migrations sont présentées à l’étape 6. Pour l’instant, le dossier contient simplement un fichier *\_\_init\_\_.py* (indiquant que le dossier définit son propre package Python). |
 | **templates** | Dossier pour les modèles de page Django contenant un seul fichier *index.html* dans un dossier correspondant au nom de l’application. (Dans Visual Studio 2017 version 15.7 et les versions antérieures, le fichier se trouve directement sous *templates*, et l’étape 2-4 vous amène à créer le sous-dossier.) Les modèles sont des blocs de langage HTML dans lesquels les affichages peuvent ajouter des informations pour afficher une page de manière dynamique. Les « variables » du modèle de page, comme `{{ content }}` dans *index.html*, sont des espaces réservés pour des valeurs dynamiques, comme expliqué plus loin dans cet article (étape 2). Les applications Django créent généralement un espace de noms pour les modèles en les plaçant dans un sous-dossier qui correspond au nom de l’application. |
-| **admin.py** | Le fichier Python dans lequel vous développez l’interface administrative de l’application (reportez-vous à l’étape 6), utilisée pour afficher et modifier des données dans une base de données. Au départ, ce fichier contient uniquement l’instruction, `from django.contrib import admin`. Par défaut, Django inclut une interface administrative standard à partir des entrées dans le fichier *settings.py* du projet Django, que vous pouvez activer en décommentant les entrées existantes dans *urls.py*. |
+| **admin.py** | Le fichier Python dans lequel vous étendez l’interface d’administration de l’application (reportez-vous à l’étape 6), utilisée pour initialiser une base de données et modifier ses données. Au départ, ce fichier contient uniquement l’instruction, `from django.contrib import admin`. Par défaut, Django inclut une interface administrative standard à partir des entrées dans le fichier *settings.py* du projet Django, que vous pouvez activer en décommentant les entrées existantes dans *urls.py*. |
 | **apps.py** | Un fichier Python qui définit une classe de configuration de l’application (voir ci-après, après cette table). |
 | **models.py** | Les modèles sont des objets de données, identifiés par des fonctions, grâce auxquels les affichages interagissent avec la base de données sous-jacente de l’application (consultez l’étape 6). Django fournit le calque de connexion de base de données afin que les applications n’aient pas à se préoccuper de ces détails. Le fichier *models.py* est l’emplacement par défaut dans lequel créer vos modèles et contient initialement uniquement l’instruction, `from django.db import models`. |
 | **tests.py** | Un fichier Python qui contient la structure de base des tests unitaires. |
@@ -125,7 +125,7 @@ Réponse : dans les expressions régulières qui définissent des modèles d’
 
 Si vous n’utilisez pas un symbole $ de fin dans une expression régulière, comme avec `^home`, le modèle d’URL correspond alors à *toute* URL qui commence par « home », tels que « home », « homework », « homestead » et « home192837 ».
 
-Pour faire des essais avec différentes expressions régulières, essayez les outils en ligne tels que [regex101.com](https://regex101.com) sur [pythex.org](http://www.pythex.org).
+Pour faire des essais avec différentes expressions régulières, essayez les outils en ligne tels que [regex101.com](https://regex101.com) sur [pythex.org](https://www.pythex.org).
 
 ## <a name="step-2-3-render-a-view-using-html"></a>Étape 2-3 : afficher un affichage à l’aide de HTML
 

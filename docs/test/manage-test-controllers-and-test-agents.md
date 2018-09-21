@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b130f6272e5ccc04cc15a6c027afe9b95d65c668
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4107f06658c081bc249e9e1b3a26d2a3480584dc
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381118"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279972"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gérer les contrôleurs de test et les agents de test
 
@@ -102,9 +102,9 @@ Pour pouvoir être supprimé, un agent de test doit être hors connexion.
 > [!NOTE]
 > Vous ne pouvez pas utiliser cette procédure pour supprimer les agents inscrits auprès d'un contrôleur dans le cadre d'un environnement lab. Pour supprimer ces agents d'un contrôleur, vous devez supprimer l'environnement à l'aide de Microsoft Test Manager.
 
-### <a name="to-remove-a-test-agent-from-a-test-controller"></a>Pour supprimer un agent de test d'un contrôleur de test
+### <a name="to-remove-a-test-agent-from-a-test-controller"></a>Pour supprimer un agent de test d’un contrôleur de test
 
-1. Si le contrôleur de test n’est pas inscrit auprès d’un projet d’équipe, suivez les étapes suivantes.
+1. Si le contrôleur de test n’est pas inscrit auprès d’un projet, effectuez les étapes suivantes.
 
     1. Dans Visual Studio, ouvrez le fichier de paramètres de test de votre projet de test, choisissez **Rôle**, puis **Gérer les contrôleurs de test** dans la liste déroulante du champ **Contrôleur**.
 
@@ -117,7 +117,7 @@ Pour pouvoir être supprimé, un agent de test doit être hors connexion.
         > [!NOTE]
         > La suppression d’un agent de test ne fait que le dissocier du contrôleur de test. Pour désinstaller complètement l’agent de test, utilisez **Programmes et fonctionnalités** dans le Panneau de configuration sur l’ordinateur de l’agent de test.
 
-2. Si le contrôleur de test est inscrit auprès d’un projet d’équipe, supprimez l’agent à l’aide de Microsoft Test Manager.
+2. Si le contrôleur de test est inscrit auprès d’un projet, supprimez l’agent avec Microsoft Test Manager.
 
 ## <a name="change-the-settings-for-a-test-agent"></a>Modifications des paramètres d’un agent de test
 
@@ -135,7 +135,7 @@ Vous pouvez modifier l'état et d'autres paramètres pour les agents de test à 
 ### <a name="to-change-the-settings-of-a-test-agent"></a>Pour modifier les paramètres d’un agent de test
 
 > [!NOTE]
-> Si l’agent de test est inscrit auprès d’un contrôleur de test inscrit auprès d’un projet d’équipe, changez les paramètres dans Microsoft Test Manager.
+> Si l’agent de test est inscrit auprès d’un contrôleur de test inscrit auprès d’un projet, changez les paramètres dans Microsoft Test Manager.
 
 1. Pour configurer et monitorer le contrôleur de test et les agents inscrits pour un test de charge, choisissez le menu **Test de charge** dans Visual Studio, puis choisissez **Gérer les contrôleurs de test**. Pour tout autre type de test, ouvrez le fichier de paramètres de test de votre projet de test dans Visual Studio, choisissez **Rôle**, puis **Gérer les contrôleurs de test** dans la liste déroulante du champ **Contrôleur**.
 
@@ -153,7 +153,7 @@ Vous pouvez modifier l'état et d'autres paramètres pour les agents de test à 
 |-------------------------|-----------------|
 |**Poids**|Utilisé pour distribuer la charge lorsque vous utilisez des agents de test avec des niveaux de performance différents. Par exemple, un agent de test avec un poids de 100 reçoit une charge deux fois supérieure à celle d’un agent de test avec un poids de 50.|
 |**Commutation IP**|Utilisé pour configurer la commutation IP. La commutation IP permet à un agent de test d'envoyer des demandes à un serveur à l'aide d'une plage d'adresses IP. Cela simule des appels provenant de différents ordinateurs clients.<br /><br /> La commutation IP est importante si votre test de charge accède à une batterie de serveurs web. La plupart des programmes d’équilibrage de charge établissent l’affinité entre un client et un serveur web particulier en utilisant l’adresse IP du client. Si toutes les demandes semblent provenir d’un seul client, l’équilibrage de charge n’équilibre pas la charge. Pour obtenir le bon équilibre de charge dans la batterie de serveurs web, assurez-vous que les demandes proviennent d’une plage d’adresses IP. **Remarque :** Vous pouvez spécifier une carte réseau ou utiliser **(Non assigné)** pour sélectionner automatiquement une carte réseau qui n’est pas actuellement utilisée. <br /><br /> Pour utiliser la fonctionnalité de commutation IP, le service Visual Studio Test Agent doit s’exécuter en tant qu’utilisateur du groupe Administrateurs de cet ordinateur agent. Cet utilisateur est sélectionné pendant la configuration de l'agent, mais peut être modifié en modifiant les propriétés du service puis en le redémarrant.<br /><br /> Pour vérifier que la commutation IP fonctionne correctement, activez le processus d’enregistrement du journal d’IIS sur le serveur web, puis utilisez les fonctionnalités de ce processus pour vérifier que les requêtes proviennent des adresses IP que vous avez configurées.|
-|**Attributs**|Ensemble de paires nom/valeur qui peuvent être utilisées dans la sélection d’agent de test. Par exemple, un test peut exiger un système d'exploitation particulier. Vous pouvez ajouter des attributs dans l’onglet **Rôles** de votre fichier de paramètres de test et ils peuvent être utilisés pour sélectionner un agent de test qui a des attributs identiques. Si vous voulez exécuter un test sur plusieurs ordinateurs, créez un attribut dans le rôle de paramètres de test qui est configuré pour exécuter vos tests, puis configurez un attribut correspondant sur chaque agent de test que vous utilisez dans ce rôle. **Remarque :** Ce paramètre est uniquement disponible pour les agents de test inscrits auprès d’un contrôleur de test qui n’est lui-même pas inscrit auprès d’un projet d’équipe, car ces attributs sont utilisés uniquement dans les paramètres de test pour Visual Studio.|
+|**Attributs**|Ensemble de paires nom/valeur qui peuvent être utilisées dans la sélection d’agent de test. Par exemple, un test peut exiger un système d'exploitation particulier. Vous pouvez ajouter des attributs dans l’onglet **Rôles** de votre fichier de paramètres de test et ils peuvent être utilisés pour sélectionner un agent de test qui a des attributs identiques. Si vous voulez exécuter un test sur plusieurs ordinateurs, créez un attribut dans le rôle de paramètres de test qui est configuré pour exécuter vos tests, puis configurez un attribut correspondant sur chaque agent de test que vous utilisez dans ce rôle. **Remarque :** Ce paramètre est disponible seulement pour les agents de test inscrits auprès d’un contrôleur de test qui n’est lui-même pas inscrit auprès d’un projet, car ces attributs sont utilisés seulement dans les paramètres de test pour Visual Studio.|
 
 Les modifications du poids et des attributs des agents de test sont appliquées immédiatement, mais n’affectent pas les tests en cours d’exécution. La plage d'adresses IP prend effet après le redémarrage du contrôleur de test.
 
@@ -164,12 +164,12 @@ Les modifications du poids et des attributs des agents de test sont appliquées 
 
 ## <a name="configure-a-test-controller"></a>Configuration d'un contrôleur de test
 
-Pour configurer un contrôleur de test, vous devez utiliser **l’outil de configuration du Contrôleur Team Test**. Lorsque vous configurez votre contrôleur de test, vous pouvez l’inscrire auprès d’une autre collection de projets d’équipe ou annuler son inscription auprès d’une collection de projets d’équipe.
+Pour configurer un contrôleur de test, vous devez utiliser **l’outil de configuration du Contrôleur Team Test**. Quand vous configurez votre contrôleur de test, vous pouvez l’inscrire auprès d’une autre collection de projets ou annuler son inscription auprès d’une collection de projets.
 
-Si vous souhaitez inscrire votre contrôleur de test auprès de votre collection de projets Team Foundation Server, le compte que vous utilisez pour le service de contrôleur de test doit être membre du groupe Project Collection Test Service Accounts pour la collection de projets d’équipe, ou le compte que vous utilisez pour exécuter l’outil de configuration du contrôleur de test doit être administrateur de collections de projets.
+Si vous voulez inscrire votre contrôleur de test auprès de votre collection de projets Team Foundation Server, le compte que vous utilisez pour le service de contrôleur de test doit être membre du groupe Project Collection Test Service Accounts pour la collection de projets, ou le compte que vous utilisez pour exécuter l’outil de configuration du contrôleur de test doit être administrateur de collections de projets.
 
 > [!NOTE]
-> Si vous annulez l’inscription d’un contrôleur de test auprès d’une collection de projets d’équipe pour laquelle des environnements sont définis, les environnements sont conservés si vous déplacez cette collection de projets d’équipe et réinscrivez le contrôleur de test auprès de cette dernière.
+> Si vous désinscrivez un contrôleur de test auprès d’une collection de projets pour laquelle des environnements sont définis, les environnements sont conservés si vous déplacez cette collection de projets et que vous réinscrivez le contrôleur de test auprès de cette dernière.
 
 ### <a name="to-configure-a-test-controller"></a>Pour configurer un contrôleur de test
 
@@ -182,7 +182,7 @@ Si vous souhaitez inscrire votre contrôleur de test auprès de votre collection
     > [!NOTE]
     > Les mots de passe null ne sont pas pris en charge pour les comptes d'utilisateurs.
 
-4. (Facultatif) Si vous ne voulez pas utiliser votre contrôleur de test dans un environnement lab, mais uniquement pour exécuter des tests à partir de Visual Studio, désactivez **Inscrire auprès de la collection de projets d’équipe**.
+4. (Facultatif) Si vous ne voulez pas utiliser votre contrôleur de test avec un environnement lab, mais seulement pour exécuter des tests à partir de Visual Studio, désactivez **Inscrire auprès de la collection de projets**.
 
 5. (Facultatif) Pour configurer votre contrôleur de test pour le test de charge, sélectionnez **Configurer pour le test de charge**. Tapez ensuite votre instance SQL Server dans **Créer une base de données de résultats de test de charge dans l’instance SQL Server suivante**.
 

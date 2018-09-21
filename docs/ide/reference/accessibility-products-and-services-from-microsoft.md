@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a389652b969ef4e4d29defbef40c91979d959e1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 17a63dc86e77692538ea75ba708a1ff39f9fb1b9
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948741"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384251"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Services et produits d'accessibilité de Microsoft
 
@@ -55,7 +55,7 @@ Microsoft s’engage à faciliter l’utilisation de ses produits et services. L
 
  Microsoft propose une série de didacticiels pas à pas qui fournissent des procédures détaillées pour régler les options d’accessibilité et les paramètres de votre ordinateur. Ces informations sont présentées dans un format côte à côte pour vous permettre d’apprendre à utiliser la souris, le clavier ou une combinaison des deux.
 
- Pour rechercher les didacticiels pas à pas de produits Microsoft, consultez le [site Microsoft consacré à l’accessibilité](http://go.microsoft.com/fwlink/?LinkId=8431).
+ Pour rechercher des tutoriels pas à pas pour des produits Microsoft, consultez le [site web Microsoft consacré à l’accessibilité](http://go.microsoft.com/fwlink/?LinkId=8431).
 
 ### <a name="assistive-technology-products-for-windows"></a>Produits de technologie d’assistance pour Windows
 
@@ -65,15 +65,15 @@ Microsoft s’engage à faciliter l’utilisation de ses produits et services. L
 
 ##  <a name="altfortmats"></a> Documentation dans d’autres formats
 
- Si vous avez des difficultés à lire ou manipuler les documents imprimés, vous pouvez obtenir la documentation de nombreux produits Microsoft dans des formats plus accessibles. Vous pouvez consulter l’index de la documentation produit accessible sur le [site web Microsoft consacré à l’accessibilité](http://go.microsoft.com/fwlink/?LinkId=8431).
+Si vous avez des difficultés à lire ou manipuler les documents imprimés, vous pouvez obtenir la documentation de nombreux produits Microsoft dans des formats plus accessibles. Vous pouvez consulter l’index de la documentation produit accessible sur le [site web Microsoft consacré à l’accessibilité](http://go.microsoft.com/fwlink/?LinkId=8431).
 
- De plus, vous pouvez vous procurer des publications Microsoft supplémentaires auprès de Recording for le Blind & Dyslexic, Inc (RFB&D). RFB&D distribue ces documents aux membres inscrits et éligibles de son service de distribution. Pour plus d’informations sur la disponibilité de la documentation produit de Microsoft et des ouvrages de Microsoft Press, contactez :
+De plus, vous pouvez vous procurer des publications Microsoft supplémentaires auprès de Learning Ally. Learning Ally distribue ces documents aux membres inscrits et éligibles de son service de distribution. Pour plus d’informations sur la disponibilité de la documentation produit de Microsoft et des ouvrages de Microsoft Press, contactez :
 
-|Recording for the Blind & Dyslexic Inc.|
+|Learning Ally|
 |----------------------------------------------|
-|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Téléphone depuis les États-Unis : (800) 221-4792<br /><br /> Téléphone hors des États-Unis et du Canada : (609) 452-0606<br /><br /> Télécopie : (609) 987-8116<br /><br /> Site web Recording for the Blind & Dyslexic Inc. : [http://www.rfbd.org](http://go.microsoft.com/fwlink/?LinkId=62504).|
+|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Site web de Learning Ally : [http://www.learningally.org](http://www.learningally.org/).|
 
- Comme les adresses web peuvent changer, peut-être ne pourrez-vous pas vous connecter aux sites web ou sites mentionnés ici.
+Comme les adresses web peuvent changer, peut-être ne pourrez-vous pas vous connecter aux sites web ou sites mentionnés ici.
 
 ##  <a name="hearing"></a> Service clientèle pour les personnes atteintes de troubles de l’audition
 

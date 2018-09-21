@@ -2,7 +2,7 @@
 title: Créer une application Node.js et React
 description: Dans ce tutoriel, vous créez une application à l’aide des outils Node.js pour Visual Studio.
 ms.custom: mvc
-ms.date: 05/23/2018
+ms.date: 09/06/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f7bb4dfea8e23941e6d9ad29b9760c9e7c85fc5f
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 0615f557d67c16698e0c737d97e45639be8a5eac
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567140"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44125000"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutoriel : Créer une application Node.js et React dans Visual Studio
 
@@ -31,6 +31,30 @@ Dans ce didacticiel, vous apprendrez à :
 > * Ajouter du code React à votre application
 > * Transpiler du code JSX
 > * Attacher le débogueur
+
+## <a name="before-you-begin"></a>Avant de commencer
+
+Voici un petit forum aux questions qui présente quelques concepts clés.
+
+### <a name="what-is-nodejs"></a>Qu’est-ce que Node.js ?
+
+Node.js est un environnement d’exécution JavaScript côté serveur qui exécute JavaScript côté serveur.
+
+### <a name="what-is-npm"></a>Qu’est-ce que npm ?
+
+npm est le Gestionnaire de package par défaut de Node.js. Le Gestionnaire de package permet aux programmeurs de publier et partager plus facilement le code source des bibliothèques Node.js. Il est conçu pour simplifier l’installation, la mise à jour et la désinstallation des bibliothèques.
+
+### <a name="what-is-react"></a>Présentation de React
+
+React est une infrastructure frontend pour créer une interface utilisateur.
+
+### <a name="what-is-jsx"></a>Présentation de JSX
+
+JSX est une extension de syntaxe JavaScript, généralement utilisée avec React pour décrire des éléments d’interface utilisateur. Le code JSX doit être transpilé en JavaScript standard avant de pouvoir être exécuté dans un navigateur.
+
+### <a name="what-is-webpack"></a>Présentation de webpack
+
+webpack regroupe des fichiers JavaScript pour qu’ils puissent s’exécuter dans un navigateur. Il peut également transformer ou packager d’autres ressources et composants. Il est souvent utilisé pour spécifier un compilateur, comme Babel ou TypeScript, pour transpiler du code JSX ou TypeScript en code JavaScript standard.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -62,13 +86,15 @@ Commencez par créer un projet d’application web Node.js.
 
     ![Projet Node.js dans l’Explorateur de solutions](../javascript/media/tutorial-nodejs-react-project-structure.png)
 
-    * Votre projet mis en gras, avec le nom que vous avez donné dans la boîte de dialogue **Nouveau projet**. Dans le système de fichiers, ce projet est représenté par un fichier *.njsproj* au sein de votre dossier de projet. Vous pouvez définir les propriétés et les variables d’environnement associées au projet en cliquant avec le bouton droit sur le projet et en choisissant **Propriétés**. Vous pouvez effectuer des allers-retours avec d’autres outils de développement, car le fichier projet n’apporte pas de changements personnalisés à la source de projet Node.js.
+    (1) Votre projet est mis en **gras**, avec le nom que vous avez donné dans la boîte de dialogue **Nouveau projet**. Dans le système de fichiers, ce projet est représenté par un fichier *.njsproj* au sein de votre dossier de projet. Vous pouvez définir les propriétés et les variables d’environnement associées au projet en cliquant avec le bouton droit sur le projet et en choisissant **Propriétés**. Vous pouvez effectuer des allers-retours avec d’autres outils de développement, car le fichier projet n’apporte pas de changements personnalisés à la source de projet Node.js.
 
-    * Au niveau le plus élevé figure une solution, qui a par défaut le même nom que votre projet. Une solution, représentée par un fichier *.sln* sur le disque, est un conteneur pour un ou plusieurs projets connexes.
+    (2) Au niveau supérieur figure une solution, qui a par défaut le même nom que votre projet. Une solution, représentée par un fichier *.sln* sur le disque, est un conteneur pour un ou plusieurs projets connexes.
 
-    * Le nœud npm montre tous les packages npm installés. Vous pouvez cliquer avec le bouton droit sur le nœud npm pour rechercher et installer des packages npm à l’aide d’une boîte de dialogue.
+    (3) Le nœud npm montre tous les packages npm installés. Vous pouvez cliquer avec le bouton droit sur le nœud npm pour rechercher et installer des packages npm à l’aide d’une boîte de dialogue, ou vous pouvez installer et mettre à jour des packages à l’aide des paramètres de *package.json* et des options de menu contextuel du nœud npm.
 
-    * Les fichiers projet tels que *server.js* s’affichent sous le nœud de projet. *server.js* est le fichier de démarrage du projet.
+    (4) *package.json* est un fichier utilisé par npm pour gérer les dépendances de packages et les versions de packages des packages installés localement. Pour plus d’informations sur ce fichier, consultez [Configuration de package.json](../javascript/configure-packages-with-package-json.md)
+
+    (5) Les fichiers projet, comme *server.js*, apparaissent sous le nœud de projet. *server.js* est le fichier de démarrage du projet. C’est la raison pour laquelle il apparaît en **gras**. Vous pouvez définir le fichier de démarrage en cliquant avec le bouton droit sur un fichier du projet et en sélectionnant **Définir comme fichier de démarrage de Node.js**.
 
 ## <a name="add-npm-packages"></a>Ajouter des packages npm
 
@@ -95,26 +121,26 @@ Cette application nécessite un certain nombre de modules npm pour s’exécuter
 
     Le fichier *package.json* du projet est mis à jour à l’aide des informations relatives au nouveau package, notamment sa version.
 
-1. Au lieu d’utiliser l’IU pour rechercher et ajouter les packages restants, un par un, collez le code suivant dans le fichier package.json. Pour ce faire, remplacez la section `dependencies` par ce code :
+1. Au lieu d’utiliser l’IU pour rechercher et ajouter les packages restants, un par un, collez le code suivant dans le fichier package.json. Pour cela, ajoutez une section `dependencies` avec ce code :
 
-    ```js
+    ```json
     "dependencies": {
-      "express": "4.16.2",
-      "path": "0.12.7",
-      "react": "16.4.0",
-      "react-dom": "16.4.0",
-      "ts-loader": "4.0.1",
-      "typescript": "2.7.2",
-      "webpack": "4.1.1",
-      "webpack-cli": "2.0.11"
+      "express": "~4.16.3",
+      "path": "~0.12.7",
+      "react": "~16.4.2",
+      "react-dom": "~16.4.2",
+      "ts-loader": "~4.5.0",
+      "typescript": "~2.9.2",
+      "webpack": "~4.17.1",
+      "webpack-cli": "~2.1.5"
     }
     ```
 
-    S’il n’existe aucune section `dependencies` dans votre version du modèle vide, vous devez l’ajouter au lieu de remplacer la section existante.
+    S’il existe déjà une section `dependencies` dans votre version du modèle vide, remplacez-la simplement par le code JSON précédent. Pour plus d’informations sur l’utilisation de ce fichier, consultez [Configuration de package.json](../javascript/configure-packages-with-package-json.md)
 
 1. Cliquez avec le bouton droit sur le nœud **npm** de votre projet, puis choisissez **Mettre à jour les packages npm**.
 
-    Dans le volet inférieur, sélectionnez la fenêtre **Sortie** pour voir la progression de l’installation des packages. L’installation pouvant prendre quelques minutes, vous risquez de ne pas voir les résultats immédiatement. Pour voir la sortie, veillez à sélectionner **Npm** dans le champ **Afficher la sortie à partir de** au sein de la fenêtre **Sortie**.
+    Dans le volet inférieur, sélectionnez la fenêtre **Sortie** pour voir la progression de l’installation des packages. L’installation pouvant prendre quelques minutes, vous risquez de ne pas voir les résultats immédiatement. Pour voir la sortie, veillez à sélectionner **Npm** dans le champ **Afficher la sortie à partir de** de la fenêtre **Sortie**.
 
     Voici les modules npm tels qu’ils apparaissent dans l’Explorateur de solutions après leur installation.
 
@@ -270,7 +296,7 @@ Au cours des étapes précédentes, vous avez ajouté *webpack-config.js* au pro
 
     ![Exécuter webpack](../javascript/media/tutorial-nodejs-react-run-webpack.png)
 
-    Si vous voyez des erreurs à la place de la sortie précédente, vous devez les corriger pour permettre à votre application de fonctionner correctement. Si les versions de votre package npm sont différentes de celles présentées dans ce tutoriel, cela peut constituer une source d’erreurs. Vous pouvez éventuellement corriger les erreurs en utilisant les versions exactes indiquées au cours des étapes précédentes. De plus, si une ou plusieurs de ces versions de package sont dépréciées et génèrent des erreurs, vous devrez peut-être installer une version plus récente pour corriger ces erreurs.
+    Si vous voyez des erreurs à la place de la sortie précédente, vous devez les corriger pour permettre à votre application de fonctionner correctement. Si les versions de votre package npm sont différentes de celles présentées dans ce tutoriel, cela peut constituer une source d’erreurs. Vous pouvez éventuellement corriger les erreurs en utilisant les versions exactes indiquées au cours des étapes précédentes. De plus, si une ou plusieurs de ces versions de package sont dépréciées et génèrent des erreurs, vous devrez peut-être installer une version plus récente pour corriger ces erreurs. Pour plus d’informations sur l’utilisation de *package.json* pour gérer les versions des packages npm, consultez [Configuration de package.json](../javascript/configure-packages-with-package-json.md).
 
 1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le nœud de projet. Choisissez **Ajouter** > **Dossier existant**, le dossier *dist*, puis **Sélectionner un dossier**.
 

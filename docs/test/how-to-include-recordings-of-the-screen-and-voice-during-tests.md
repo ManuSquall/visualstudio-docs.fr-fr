@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6fcf55ed90d2fe73c37ebc6d88e9d88bbc3f11f3
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: c213d7f7119b2c7310212f61c140177ef7c84c76
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381968"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321071"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Guide pratique pour inclure des enregistrements d’écran et des enregistrements vocaux pendant des tests à l’aide des paramètres de test
 
@@ -28,7 +28,7 @@ L'enregistreur à l'écran et vocal peut être utilisé avec des tests manuels o
 
 ## <a name="to-configure-screen-and-voice-recording-for-your-test-settings"></a>Pour configurer l'enregistrement à l'écran et vocal pour vos paramètres de test
 
-1.  Ouvrez les paramètres de test que vous souhaitez configurer pour enregistrer l'image et le son. Pour plus d’informations, consultez [Collecter les données de diagnostic pendant les tests (VSTS)](/vsts/manual-test/collect-diagnostic-data) ou [Collecter des informations de diagnostic à l’aide des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md).
+1.  Ouvrez les paramètres de test que vous souhaitez configurer pour enregistrer l'image et le son. Pour plus d’informations, consultez [Collecter les données de diagnostic pendant les tests (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts) ou [Collecter des informations de diagnostic avec des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md).
 
 2.  Dans les paramètres de test, sélectionnez le **Rôle** à utiliser pour enregistrer l’image et le son.
 
@@ -63,7 +63,7 @@ L'enregistreur à l'écran et vocal peut être utilisé avec des tests manuels o
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Collecter les données de diagnostic pendant les tests (VSTS)](/vsts/manual-test/collect-diagnostic-data)
-- [Collecter des données de diagnostic dans des tests manuels (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
+- [Collecter les données de diagnostic pendant les tests (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
+- [Collecter les données de diagnostic dans des tests manuels (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
 - [Collecter des informations de diagnostic à l’aide des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md)
-- [Exécuter des tests manuels (VSTS)](/vsts/manual-test/getting-started/run-manual-tests)
+- [Exécuter des tests manuels (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts)

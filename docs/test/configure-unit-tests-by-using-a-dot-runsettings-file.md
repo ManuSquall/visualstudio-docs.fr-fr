@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: abecc0968862fd5547e8a2bdff113f1c21abb8d9
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: e4c778e66a8fa9ca2008345675c6c3504786fcdf
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901483"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280283"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurer des tests unitaires à l’aide d’un fichier *.runsettings*
 
@@ -24,7 +24,7 @@ Les fichiers de paramètres d’exécution sont facultatifs. Si vous n’avez pa
 
 ## <a name="specify-a-run-settings-file"></a>Spécifier un fichier de paramètres d’exécution
 
-Les fichiers de paramètres d’exécution permettent de configurer des tests qui sont exécutés depuis la [ligne de commande](vstest-console-options.md), dans l’IDE ou dans un [flux de travail de build](/vsts/pipelines/test/getting-started-with-continuous-testing?view=vsts) à l’aide de Visual Studio Team Services (VSTS) ou Team Foundation Server (TFS).
+Les fichiers de paramètres d’exécution permettent de configurer des tests qui sont exécutés depuis la [ligne de commande](vstest-console-options.md), dans l’IDE ou dans un [flux de travail de build](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) avec Azure Test Plans ou Team Foundation Server (TFS).
 
 ### <a name="specify-a-run-settings-file-in-the-ide"></a>Spécifier un fichier de paramètres d’exécution dans l’IDE
 
@@ -256,4 +256,4 @@ Ces paramètres sont spécifiques à l’adaptateur de test qui exécute les mé
 ## <a name="see-also"></a>Voir aussi
 
 - [Personnaliser l’analyse de la couverture du code](../test/customizing-code-coverage-analysis.md)
-- [Tâche de test Visual Studio (VSTS)](/vsts/pipelines/tasks/test/vstest?view=vsts)
+- [Tâche de test Visual Studio (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)

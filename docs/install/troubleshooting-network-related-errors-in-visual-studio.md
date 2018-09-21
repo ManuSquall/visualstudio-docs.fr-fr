@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b31a8631497b5c4f39b2c0e6ebffa469282da157
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 40898b249fae9f8d13d3fd5a80eafc3c72e3e819
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138389"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281089"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Résolution des erreurs liées au réseau lorsque vous installez ou utilisez Visual Studio
 
@@ -73,7 +73,7 @@ Cette erreur se produit généralement quand les utilisateurs sont connectés à
 
 ## <a name="error-the-underlying-connection-was-closed"></a>Erreur : « La connexion sous-jacente a été fermée »
 
-Si vous utilisez Visual Studio dans un réseau privé qui utilise un pare-feu, Visual Studio risque de ne pas pouvoir se connecter à certaines ressources réseau. Ces ressources peuvent inclure Visual Studio Team Services (VSTS) pour la connexion et la gestion des licences, NuGet et les services Azure. Si Visual Studio ne parvient pas à se connecter à l’une de ces ressources, le message d’erreur suivant s’affiche :
+Si vous utilisez Visual Studio dans un réseau privé qui utilise un pare-feu, Visual Studio risque de ne pas pouvoir se connecter à certaines ressources réseau. Ces ressources peuvent inclure Azure DevOps Services pour la connexion et la gestion des licences, NuGet et des services Azure. Si Visual Studio ne parvient pas à se connecter à l’une de ces ressources, le message d’erreur suivant s’affiche :
 
   **La connexion sous-jacente a été fermée : une erreur inattendue s’est produite lors de l’envoi**
 
@@ -103,7 +103,7 @@ Activez les connexions pour les URL suivantes :
 
 - cdn.vsassets.io (héberge le contenu du réseau de distribution de contenu, ou CDN)
 
-- &#42;.gallerycdn.vsassets.io (héberge les extensions VSTS)
+- &#42;. gallerycdn.vsassets.io (héberge les extensions d’Azure DevOps Services)
 
 - static2.sharepointonline.com (héberge les ressources que Visual Studio utilise dans le kit Office UI Fabric, telles que les polices)
 

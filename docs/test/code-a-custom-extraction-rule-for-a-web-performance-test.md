@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bbafd92f34671564a91926066a2353a1e0421b63
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: edf1f279ef858b70eab82604cace9546fbc3cf5c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179240"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283208"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Coder une règle d’extraction personnalisée pour un test de performances web
 
@@ -31,7 +31,7 @@ Vous pouvez créer vos propres règles d'extraction. Pour cela, vous dérivez vo
 
 ## <a name="to-create-a-custom-extraction-rule"></a>Pour créer une règle d'extraction personnalisée
 
-1.  Ouvrez un projet de test qui contient un test de performances de site web.
+1.  Ouvrez un projet de test qui contient un test de performances web.
 
 2.  (Facultatif) Créez un projet Bibliothèque de classes distinct dans lequel stocker votre règle d'extraction.
 
@@ -44,9 +44,9 @@ Vous pouvez créer vos propres règles d'extraction. Pour cela, vous dérivez vo
 
 5.  (Facultatif) Générez le nouveau projet de bibliothèque de classes.
 
-6.  (Facultatif) Dans le projet de test, ajoutez une référence au projet Bibliothèque de classes qui contient la règle d'extraction personnalisée.
+6.  (Facultatif) Dans le projet de test, ajoutez une référence au projet de bibliothèque de classes qui contient la règle d’extraction personnalisée.
 
-7.  Dans le projet de test, ouvrez un test de performances web dans l’**éditeur de test de performances web**.
+7.  Dans le projet de test, ouvrez un test de performances web dans **l’éditeur de test de performances web**.
 
 8.  Pour ajouter la règle d’extraction personnalisée, cliquez avec le bouton droit sur une requête de test de performances web, puis sélectionnez **Ajouter une règle d’extraction**.
 

@@ -1,6 +1,6 @@
 ---
-title: Visual C++ IntelliSense
-ms.date: 11/04/2016
+title: IntelliSense pour C++
+ms.date: 09/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -9,28 +9,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6fabaa7b1df2522abd9e76a8e4772a2f8111cfe9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 27b7912e624881e7dcd40ff2fdb9476d61d29e1c
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748083"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124903"
 ---
-# <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
+# <a name="visual-c-intellisense-features"></a>Fonctionnalités IntelliSense pour Visual C++
 
-IntelliSense pour C++ peut être utilisé avec des fichiers autonomes, mais aussi avec des fichiers qui font partie d’un projet C++. Dans les projets multiplateformes, certaines fonctionnalités IntelliSense sont disponibles avec les fichiers *.cpp* et *.c* du projet de code partagé, même quand vous êtes dans un contexte Android ou iOS.
+IntelliSense est le nom d’un ensemble de fonctionnalités conçues pour faciliter le codage. IntelliSense pour C++ peut être utilisé avec des fichiers autonomes, mais aussi avec des fichiers qui font partie d’un projet C++. Dans les projets multiplateformes, certaines fonctionnalités IntelliSense sont disponibles avec les fichiers *.cpp* et *.c* du projet de code partagé, même quand vous êtes dans un contexte Android ou iOS.
 
-## <a name="intellisense-features-in-c"></a>Fonctionnalités IntelliSense en C++
-
-IntelliSense est le nom d’un ensemble de fonctionnalités conçues pour faciliter le codage. Étant donné que chaque utilisateur a sa propre opinion sur ce qui est pratique, pratiquement toutes les fonctionnalités IntelliSense peuvent être activées ou désactivées dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Avancé**. La boîte de dialogue **Options** est accessible dans le menu **Outils** dans la barre de menus.
-
-![Boîte de dialogue Options d’outil](../ide/media/sintellisensecpptoolsoptions.PNG)
-
-Vous pouvez utiliser les éléments de menu et les raccourcis clavier indiqués dans l'image suivante pour accéder à IntelliSense.
+Vous pouvez utiliser les éléments de menu et les raccourcis clavier indiqués dans l’image suivante pour accéder à IntelliSense :
 
 ![Menu IntelliSense](../ide/media/vs2015_cpp_intellisense_menu.png)
 
-### <a name="statement-completion-and-member-list"></a>Saisie semi-automatique des instructions et liste des membres
+## <a name="statement-completion-and-member-list"></a>Saisie semi-automatique des instructions et liste des membres
 
 Quand vous commencez à taper un mot clé, un type, une fonction, un nom de variable ou tout autre élément de code reconnu par le compilateur, l'éditeur vous propose de compléter automatiquement la chaîne.
 
@@ -38,23 +32,23 @@ Pour obtenir la liste des icônes et leurs significations, consultez [Affichage 
 
 ![Fenêtre Compléter le mot de Visual C&#43;&#43;](../ide/media/vs2015_cpp_complete_word.png)
 
-Au premier appel de la liste des membres, cette liste affiche uniquement les membres qui sont accessibles pour le contexte actuel. Si vous appuyez ensuite sur **Ctrl**+**J**, elle affiche tous les membres indépendamment de leur accessibilité. Si vous l'appelez une troisième fois, la liste qui s'affiche présente encore plus d'éléments de code. Vous pouvez désactiver la liste des membres dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Général**  >  **Répertorier automatiquement les membres**.
+Au premier appel de la liste des membres, elle montre seulement les membres qui sont accessibles pour le contexte actuel. Si vous appuyez ensuite sur **Ctrl**+**J**, elle affiche tous les membres indépendamment de leur accessibilité. Si vous l'appelez une troisième fois, la liste qui s'affiche présente encore plus d'éléments de code. Vous pouvez désactiver la liste des membres dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Général**  >  **Répertorier automatiquement les membres**.
 
 ![Liste de membres Visual C&#43;&#43;](../ide/media/vs2015_cpp_list_members.png)
 
-### <a name="parameter-help"></a>Aide sur les paramètres
+## <a name="parameter-help"></a>Aide sur les paramètres
 
 Quand vous tapez une accolade ouvrante dans un appel de fonction, ou un crochet pointu dans une déclaration de variable de modèle de classe, l'éditeur ouvre une petite fenêtre qui affiche les types de paramètre pour chaque surcharge de la fonction ou du constructeur. Le paramètre « actuel »&mdash;basé sur l'emplacement du curseur&mdash;est indiqué en gras. Vous pouvez désactiver les informations de paramètre dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Général**  >  **Informations de paramètre**.
 
 ![Aide sur les paramètres Visual C&#43;&#43;](../ide/media/vs_2015_cpp_param_help.png)
 
-### <a name="quick-info"></a>Info express
+## <a name="quick-info"></a>Info express
 
 Quand vous placez le curseur sur une variable, une petite fenêtre inline s'affiche, présentant les informations de type et l'en-tête où le type est défini. Placez le curseur sur un appel de fonction pour afficher la signature de la fonction. Vous pouvez désactiver la fonctionnalité Info express dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Avancé** > **Info express auto**.
 
 ![Info Express Visual C&#43;&#43;](../ide/media/vs2015_cpp_quickinfo.png)
 
-### <a name="error-squiggles"></a>Tildes d'erreur
+## <a name="error-squiggles"></a>Tildes d'erreur
 
 Les tildes affichés sous un élément de code (variable, mot clé, accolade, nom de type, etc.) signalent une erreur réelle ou potentielle dans le code. Quand vous écrivez une déclaration anticipée, un tilde vert s'affiche pour vous rappeler que vous devez encore écrire l'implémentation. Un tilde violet s'affiche dans un projet partagé pour signaler une erreur dans du code qui n'est pas encore actif. C'est le cas, par exemple, quand vous travaillez dans le contexte Windows et que vous entrez du code qui serait erroné dans un contexte Android. Un tilde rouge indique une erreur ou un avertissement de compilateur, dans le code actif, que vous devez traiter.
 
@@ -64,35 +58,31 @@ Les tildes affichés sous un élément de code (variable, mot clé, accolade, no
 
 Les couleurs par défaut et les polices peuvent être modifiés dans la boîte de dialogue **Options** sous **Environnement** > **Polices et couleurs**. Vous pouvez modifier les polices pour de nombreuses fenêtres d'interface utilisateur ici, et pas seulement l'éditeur. Les paramètres spécifiques du langage C++ commencent par « C++ » ; les autres paramètres s'appliquent à tous les langages.
 
-### <a name="cross-platform-intellisense"></a>IntelliSense multiplateforme
+## <a name="cross-platform-intellisense"></a>IntelliSense multiplateforme
 
 Dans un projet de code partagé, certaines fonctionnalités IntelliSense, telles que les tildes, restent toujours disponibles, y compris dans un contexte Android. Si vous écrivez du code qui générerait une erreur dans un projet inactif, IntelliSense affiche des tildes d'une couleur différente de celle des tildes d'erreur indiqués pour le contexte actuel.
 
-Voici une application OpenGLES configurée pour la génération Android et iOS. L'illustration montre le code partagé en cours de modification. Dans la première image, Android est le projet actif :
-
-![Le projet Android est le projet actif.](../ide/media/intellisensecppcrossplatform.png)
-
-Notez les points suivants :
-
-- La branche `#else` sur la ligne 8 est grisée pour indiquer une région inactive, car `__ANDROID__` est défini pour un projet Android.
-
-- La variable greeting à la ligne 11 est initialisée avec l’identificateur `HELLO`, qui comporte un tilde violet. En effet, aucun identificateur `HELLO` n’est défini dans le projet iOS actuellement inactif. Dans un projet Android, la ligne 11 est compilée, alors que ce n’est pas le cas dans un projet iOS. Comme il s'agit de code partagé, vous devez changer cela même si la compilation aboutit dans la configuration active.
-
-- La ligne 12 a un tilde rouge sous l’identificateur `BYE`. Cet identificateur n’est pas défini dans le projet actif actuellement sélectionné.
-
-À présent, changez le projet actif en **iOS.StaticLibrary**, et notez la façon dont les tildes changent.
+Considérez une application OpenGLES configurée pour la génération Android et iOS. L'illustration montre le code partagé en cours de modification. Dans cette image, le projet actif est **iOS.StaticLibrary** :
 
 ![iOS est sélectionné comme projet actif.](../ide/media/intellisensecppcrossplatform2.png)
 
 Notez les points suivants :
 
-- La branche `#ifdef` sur la ligne 6 est grisée pour indiquer une région inactive, car `__ANDROID__` n’est pas défini pour un projet iOS.
+- La branche `#ifdef` sur la ligne 6 est en grisé pour indiquer une région inactive, car `__ANDROID__` n’est pas défini pour un projet iOS.
 
 - La variable greeting à la ligne 11 est initialisée avec l’identificateur `HELLO`, qui comporte à présent un tilde rouge. En effet, aucun identificateur `HELLO` n’est défini dans le projet iOS actuellement actif.
 
-- La ligne 12 a un tilde violet sous l’identificateur `BYE`. Cet identificateur n’est pas défini dans le projet actuellement inactif **Android.NativeActivity**.
+- La ligne 12 a un tilde violet sous l’identificateur `BYE`, car celui-ci n’est pas défini dans le projet **Android.NativeActivity** (actuellement) inactif. Bien que cette ligne soit compilée quand iOS est le projet actif, elle n’est pas compilée quand Android est le projet actif. Comme il s’agit de code partagé, vous devez corriger le code même s’il est compilé correctement dans la configuration active.
 
-### <a name="intellisense-for-stand-alone-files"></a>IntelliSense pour les fichiers autonomes
+Si vous changez le projet actif pour Android, les tildes changent :
+
+- La branche `#else` sur la ligne 8 est en grisé pour indiquer une région inactive, car `__ANDROID__` est défini pour un projet Android.
+
+- La variable greeting à la ligne 11 est initialisée avec l’identificateur `HELLO`, qui comporte un tilde violet. En effet, aucun identificateur `HELLO` n’est défini dans le projet iOS actuellement inactif.
+
+- La ligne 12 a un tilde rouge sous l’identificateur `BYE`, car celui-ci n’est pas défini dans le projet actif.
+
+## <a name="intellisense-for-stand-alone-files"></a>IntelliSense pour les fichiers autonomes
 
 IntelliSense est également disponible quand vous ouvrez un seul fichier en dehors de tout projet. Vous pouvez activer ou désactiver les fonctionnalités IntelliSense dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Avancé**. Si vous souhaitez configurer IntelliSense pour des fichiers individuels qui ne font pas partie d’un projet, recherchez la section **IntelliSense et accès aux fichiers hors projet**.
 
@@ -101,6 +91,12 @@ IntelliSense est également disponible quand vous ouvrez un seul fichier en deho
 Par défaut, IntelliSense pour fichier unique utilise uniquement les répertoires Include standard pour rechercher les fichiers d'en-tête. Pour ajouter d’autres répertoires, ouvrez le menu contextuel du nœud **Solution**, puis ajoutez votre répertoire à la liste **Déboguer le code source**, comme le montre l’illustration suivante :
 
 ![Ajout d'un chemin d'accès à un fichier d'en-tête.](../ide/media/intellisensedebugyourcode.jpg)
+
+## <a name="enable-or-disable-features"></a>Activer ou désactiver des fonctionnalités
+
+Étant donné que chaque utilisateur a sa propre opinion sur ce qui est pratique, pratiquement toutes les fonctionnalités IntelliSense peuvent être activées ou désactivées dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++** > **Avancé**. La boîte de dialogue **Options** est accessible dans le menu **Outils** dans la barre de menus.
+
+![Boîte de dialogue Options d’outil](../ide/media/sintellisensecpptoolsoptions.PNG)
 
 ## <a name="see-also"></a>Voir aussi
 

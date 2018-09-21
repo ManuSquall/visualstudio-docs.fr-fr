@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8b8ec4495c12132b89561bcbbaaf8ebfdbe3483
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 433ec0e4df5108dfcf0bae1c8c62af5b0536bc5e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627010"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548229"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Étape 6 : Utiliser le modèle Sondages du projet web Django
 
@@ -118,7 +118,7 @@ Un choix est lié à un sondage via le champ `poll`, contient une description da
 
 La liste complète des types de champ est `CharField` (texte limité) `TextField` (texte illimité), `EmailField`, `URLField`, `DateTimeField`, `IntegerField`, `DecimalField`, `BooleanField`, `ForeignKey` et `ManyToMany`. Chaque champ utilise certains attributs, tels que `max_length`. L’attribut `blank=True` signifie que le champ est facultatif ; `null=true` signifie qu’une valeur est facultative. Il existe également un attribut `choices` qui les valeurs à des valeurs dans un tableau de valeur de données/des tuples de valeurs affichées. (Consultez la [Référence de champ de modèle](https://docs.djangoproject.com/en/2.0/ref/models/fields/) dans la documentation Django.)
 
-Vous pouvez vérifier exactement ce qui est stocké dans la base de données en examinant le fichier *db.sqlite3* dans le projet à l’aide d’un outil tel que le [navigateur SQLite](http://sqlitebrowser.org/). Dans la base de données, vous voyez qu’un champ de clé étrangère comme `poll` dans le modèle Choice est stocké en tant que `poll_id`; Django gère le mappage automatiquement.
+Vous pouvez vérifier exactement ce qui est stocké dans la base de données en examinant le fichier *db.sqlite3* dans le projet à l’aide d’un outil tel que le [navigateur SQLite](https://sqlitebrowser.org/). Dans la base de données, vous voyez qu’un champ de clé étrangère comme `poll` dans le modèle Choice est stocké en tant que `poll_id`; Django gère le mappage automatiquement.
 
 En général, l’utilisation de votre base de données dans Django signifie l’utilisation exclusive par le biais de vos modèles, afin que Django puisse gérer la base de données sous-jacente en votre nom.
 
@@ -154,7 +154,7 @@ def seed(request):
     return HttpResponseRedirect(reverse('app:home'))
 ```
 
-Pour voir l’effet, commencez par exécuter l’application pour vérifier qu’aucun sondage n’existe encore. Accédez ensuite à l’URL « / seed » et, lorsque l’application revient à la page d’accueil, vous devez voir que des sondages sont maintenant disponibles. Là encore, n’hésitez pas à examiner le fichier brut *db.sqlite3* avec un outil tel que le [navigateur SQLite](http://sqlitebrowser.org/).
+Pour voir l’effet, commencez par exécuter l’application pour vérifier qu’aucun sondage n’existe encore. Accédez ensuite à l’URL « / seed » et, lorsque l’application revient à la page d’accueil, vous devez voir que des sondages sont maintenant disponibles. Là encore, n’hésitez pas à examiner le fichier brut *db.sqlite3* avec un outil tel que le [navigateur SQLite](https://sqlitebrowser.org/).
 
 ![Application de projet web Django de sondage avec base de données amorcée](media/django/step06-app-with-seeded-database.png)
 
@@ -376,8 +376,8 @@ L’exécution d’une application web sur votre ordinateur de développement n�
 
 - Transformer l’application de SQLite en magasin de données au niveau de la production comme PostgreSQL, MySQL et SQL Server (qui peuvent tous être hébergés sur Azure). Comme décrit dans [Quand utiliser SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org), SQLite fonctionne bien sur les sites au trafic faible à moyen, avec moins de 100 000 accès par jour, mais n’est pas recommandé pour les volumes plus élevés. Il est également limité à un seul ordinateur et ne peut par conséquent pas être utilisé dans un scénario multiserveur tel que l’équilibrage de charge et la géoréplication. Pour plus d’informations sur la prise en charge de Django pour d’autres bases de données, consultez [Configuration de la base de données](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). Vous pouvez également utiliser le [kit de développement logiciel (SDK) Azure pour Python](azure-sdk-for-python.md) pour travailler avec les services de stockage Azure, comme les tables et les objets blob.
 
-- Configurer un pipeline d’intégration continue/de déploiement continu sur un service comme Visual Studio Team Services (VSTS). Au-delà de l’utilisation avec le contrôle de code source (sur VSTS, GitHub ou ailleurs), VSTS peut exécuter automatiquement vos tests unitaires comme condition préalable à la mise en production, ainsi que configurer le pipeline à déployer sur un serveur de mise en lots pour des tests supplémentaires avant le déploiement de production. Par ailleurs, VSTS s’intègre aux solutions de surveillance comme App Insights et complète le cycle avec des outils de planification agile. Pour plus d'informations, voir :
+- Configurez un pipeline d’intégration continue/de déploiement continu sur un service comme Azure Pipelines. En plus de l’utilisation du contrôle de code source (sur Azure Repos, GitHub ou ailleurs), Azure Test Plans peut exécuter automatiquement vos tests unitaires comme condition préalable à la mise en production, ainsi que configurer le pipeline pour déployer sur un serveur de préproduction pour des tests supplémentaires avant le déploiement en production. Par ailleurs, Azure DevOps Services s’intègre aux solutions de supervision comme App Insights et complète le cycle avec des outils de planification agile. Pour plus d'informations, voir :
 
-  - [Créer un pipeline d’intégration continue (CI) pour Python avec le projet Azure DevOps](/azure/devops-project/azure-devops-project-python?view=vsts)
+  - [Créer un pipeline CI/CD pour Python avec Azure DevOps Projects](/azure/devops-project/azure-devops-project-python?view=vsts)
   - [Développement Python dans Azure avec Visual Studio Team Services (vidéo, 11 min, 21 s)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/).
 

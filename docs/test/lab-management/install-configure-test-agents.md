@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cfa50ef447675969110a2294d10a596469b87c3
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 83a5716d5a548980b85108b6bbc15329a755bc2b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204204"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320629"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Installer des agents de test et des contrôleurs de test
 
-Pour les scénarios de test qui utilisent Visual Studio et Visual Studio Team Services (VSTS) ou Team Foundation Server (TFS), vous n’avez pas besoin d’un contrôleur de test. Les Agents pour Visual Studio gèrent l’orchestration en communiquant avec VSTS ou TFS. Un scénario peut être que vous exécutez des tests en continu de flux de travail de build et de mise en production dans VSTS ou TFS.
+Pour les scénarios de test qui utilisent Visual Studio et Azure Test Plans ou Team Foundation Server (TFS), vous n’avez pas besoin d’un contrôleur de test. Les Agents pour Visual Studio gèrent l’orchestration en communiquant avec Azure Test Plans ou TFS. On pourrait imaginer un scénario où vous exécutez des tests en continu de flux de travail de build et de mise en production dans Azure Test Plans ou TFS.
 
 Vous pouvez aussi vous demander s’il ne serait pas plus facile [d’utiliser la gestion de build et de mise en production](use-build-or-rm-instead-of-lab-management.md) à la place de Lab Management.
 
@@ -58,13 +58,13 @@ Vous pouvez combiner des versions différentes de TFS, Microsoft Test Manager (M
 
 ## <a name="upgrade-from-visual-studio-2013-test-agents"></a>Mettre à niveau à partir des agents de test Visual Studio 2013
 
-Nous vous recommandons d’utiliser les agents pour Visual Studio dans tous les nouveaux scénarios de tests automatisés. Vous pouvez utiliser la tâche *Déployer les agents de test* dans une définition de build pour télécharger et installer les agents de test sur votre ordinateur.
+Nous vous recommandons d’utiliser les agents pour Visual Studio dans tous les nouveaux scénarios de tests automatisés. Vous pouvez utiliser la tâche *Déployer les agents de test* dans un pipeline de build pour télécharger et installer les agents de test sur votre ordinateur.
 
-Le tableau suivant présente les scénarios pris en charge par les Agents pour Visual Studio 2013 et les alternatives avec Team Foundation Server (TFS) 2015 et VSTS :
+Le tableau suivant présente les scénarios pris en charge par les Agents pour Visual Studio 2013 et les alternatives pour Team Foundation Server (TFS) 2015 et Azure Test Plans :
 
-| Scénarios pris en charge par les Agents pour Visual Studio 2013 | Alternative dans TFS et VSTS |
+| Scénarios pris en charge par les Agents pour Visual Studio 2013 | Alternative dans TFS et Azure Test Plans |
 | --- | --- |
-| Flux de travail Générer-Déployer-Tester dans Visual Studio | Les utilisateurs peuvent employer une [définition de build](/vsts/build-release/) (pas une build XAML) pour générer, déployer et tester les scénarios dans TFS. |
+| Flux de travail Générer-Déployer-Tester dans Visual Studio | Les utilisateurs peuvent employer un [pipeline de build](/azure/devops/pipelines/index?view=vsts) (pas une build XAML) pour générer, déployer et tester des scénarios dans TFS. |
 | Test de charge (test des performances) avec des ordinateurs distants locaux | Utilisez le contrôleur de test et les agents des test de la version 2013 Update 5 pour exécuter les tests de charge localement. |
 | Exécution à distance de tests automatisés à partir de Microsoft Test Manager à l’aide d’un environnement lab | Actuellement, il n’existe pas d’alternative à ce scénario. Nous vous recommandons d’utiliser la tâche Exécuter les tests fonctionnels dans les définitions de build et de mise en production (pas dans une build XAML) pour exécuter les tests à distance. |
 | Développeurs exécutant les tests à distance dans Visual Studio | N'est plus pris en charge. |

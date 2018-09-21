@@ -12,17 +12,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cd52c97d78c4b2b08244e7f4a8f626a536c8d04
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8136369a09145c46c7989bebe12796642851a7b0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668704"
 ---
-# <a name="saving-and-exporting-performance-tools-data"></a>Enregistrement et exportation de données des outils d’analyse des performances
-Cette rubrique décrit comment enregistrer et exporter des fichiers de données de performances.  
+# <a name="save-and-export-performance-tools-data"></a>Enregistrer et exporter les données des outils d’analyse des performances
+Cet article décrit comment enregistrer et exporter des fichiers de données de performances.  
   
-##  <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a> Comment : enregistrer des fichiers de données de performances en tant que fichiers de rapports analysés  
- Vous pouvez enregistrer des vues filtrées ou non filtrées de fichiers de données de profilage (.vsp) en tant que fichiers de rapports analysés (.vsps). Un fichier de rapport analysé peut être visualisé dans la fenêtre d’affichage des rapports et est considérablement plus petit que le fichier .vsp d’origine. Toutefois, vous ne pouvez pas appliquer de filtre aux données d’un fichier .vsps. Vous pouvez créer un fichier de rapport analysé à partir de l’Explorateur de performances sans ouvrir le fichier dans l’environnement de développement intégré (IDE), ou vous pouvez ouvrir et filtrer le fichier .vsp puis enregistrer les résultats.  
+## <a name="how-to-save-performance-data-files-as-analyzed-report-files"></a>Comment enregistrer des fichiers de données de performances en tant que fichiers de rapports analysés  
+ Vous pouvez enregistrer des vues filtrées ou non filtrées de fichiers de données de profilage (.*vsp*) en tant que fichiers de rapports analysés (.*vsps*). Un fichier de rapport analysé peut être visualisé dans la fenêtre d’affichage des rapports et est considérablement plus petit que le fichier .*vsp* d’origine. Cependant, vous ne pouvez pas appliquer de filtre aux données d’un fichier .*vsps*. Vous pouvez créer un fichier de rapport analysé à partir de l’Explorateur de performances sans ouvrir le fichier dans l’IDE, ou vous pouvez ouvrir et filtrer le fichier .*vsp*, puis enregistrer les résultats.  
   
 #### <a name="to-save-an-analyzed-performance-report-from-the-performance-explorer"></a>Pour enregistrer un rapport de performances analysé à partir de l’Explorateur de performances  
   
@@ -34,7 +35,7 @@ Cette rubrique décrit comment enregistrer et exporter des fichiers de données 
   
 #### <a name="to-save-an-analyzed-performance-report-from-the-report-view-window"></a>Pour enregistrer un rapport de performances analysé à partir de la fenêtre d’affichage des rapports  
   
-1.  Ouvrez le fichier de données de profilage (.vsp) dans la fenêtre d’affichage des rapports.  
+1.  Ouvrez le fichier de données de profilage (.*vsp*) dans la fenêtre d’affichage des rapports.  
   
 2.  (Facultatif) Appliquez un filtre aux données. Pour plus d’informations, consultez [Filtre de la vue Rapport de performances](../profiling/performance-report-view-filter.md).  
   
@@ -44,8 +45,8 @@ Cette rubrique décrit comment enregistrer et exporter des fichiers de données 
   
 5.  Cliquez sur **Enregistrer**.  
   
-## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Comment : exporter des rapports d’outils de profilage pour un fichier .xml ou .csv  
- Vous pouvez exporter une ou plusieurs vues de rapports à partir d’un fichier .vsp ou d’un fichier de données de profilage .vsps sous forme de fichier délimité par des virgules ou de fichier XML. Vous pouvez filtrer les données de la fenêtre d’affichage des rapports avant d’exporter, ou exporter des vues de rapport du fichier de données entier à partir de la fenêtre **Explorateur de performances** .  
+## <a name="how-to-export-profiling-tools-reports-to-an-xml-or-csv-file"></a>Comment exporter des rapports d’outils de profilage vers un fichier .xml ou .csv  
+ Vous pouvez exporter une ou plusieurs vues de rapports d’un fichier .*vsp* ou d’un fichier de données de profilage .*vsps* sous forme de fichier délimité par des virgules ou de fichier XML. Vous pouvez filtrer les données de la fenêtre d’affichage des rapports avant d’exporter, ou exporter des vues de rapport du fichier de données entier à partir de la fenêtre **Explorateur de performances** .  
   
 > [!NOTE]
 >  Vous pouvez également copier et coller des lignes sélectionnées à partir de la fenêtre d’affichage des rapports en tant que valeurs séparées par des tabulations.  
@@ -70,7 +71,7 @@ Cette rubrique décrit comment enregistrer et exporter des fichiers de données 
   
 #### <a name="to-export-performance-reports-from-the-report-view-window"></a>Pour exporter des rapports de performances à partir de la fenêtre d’affichage des rapports  
   
-1.  Ouvrez le fichier .vsp dans la fenêtre d’affichage des rapports.  
+1.  Ouvrez le fichier .*vsp* dans la fenêtre d’affichage des rapports.  
   
 2.  (Facultatif) Appliquez un filtre aux données. Pour plus d’informations, consultez [Filtre de la vue Rapport de performances](../profiling/performance-report-view-filter.md).  
   
@@ -90,6 +91,6 @@ Cette rubrique décrit comment enregistrer et exporter des fichiers de données 
   
 ## <a name="see-also"></a>Voir aussi  
  [Explorateur de performances](../profiling/performance-explorer.md)   
- [Analyse des données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)   
- [Comparaison des fichiers de données de performances](../profiling/comparing-performance-data-files.md)   
+ [Analyser les données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)   
+ [Comparer des fichiers de données de performances](../profiling/comparing-performance-data-files.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

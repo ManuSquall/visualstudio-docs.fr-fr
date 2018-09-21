@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a62c7dc2d8f0e0e80b3cfd8ba74b968ebd2e116
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 606ba5ebe7c485adb33fbcfa6884ad5e625d821e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668729"
 ---
 # <a name="summary-view---instrumentation-data"></a>Vue Résumé - Données d’instrumentation
 La vue Résumé affiche des informations sur les fonctions dont le coût est le plus élevé quant aux performances dans une exécution du profilage. Pour plus d’informations, notamment une description des liens de notification et des listes de rapports, consultez [Vue Résumé](../profiling/summary-view.md).  
@@ -46,5 +47,5 @@ La vue Résumé affiche des informations sur les fonctions dont le coût est le 
 |**% de durée exclusive**|Pourcentage du temps total dans les données de profilage que la fonction a passé à exécuter du code dans son corps de fonction. Le temps passé dans les fonctions appelées par la fonction n’est pas inclus.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vue Résumé](../profiling/summary-view-sampling-data.md)   
- [Vue Résumé](../profiling/summary-view-dotnet-memory-data.md)
+ [Vue Résumé - Données d’échantillonnage](../profiling/summary-view-sampling-data.md)   
+ [Vue Résumé - Données de la mémoire .NET](../profiling/summary-view-dotnet-memory-data.md)

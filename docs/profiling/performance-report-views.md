@@ -14,29 +14,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 553a2a53543f25d3794cf07ef760e42a010197f1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 16082a3d04a27355033fd96f3387652063f00cce
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668914"
 ---
-# <a name="performance-report-views"></a>Vues du rapport de performances
+# <a name="performance-report-views"></a>Vues du rapport des performances
 Cette section fournit des informations de référence pour les rapports et les vues des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Les vues des fichiers de données de profilage s’affichent dans l’environnement de développement intégré (IDE) de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Les rapports sont générés par l’outil en ligne de commande [VSPerfReport](../profiling/vsperfreport.md).  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Vues de données communes](../profiling/common-data-views.md)  
+ [Vues des données communes](../profiling/common-data-views.md)  
  Informations de référence pour les vues et rapports des fichiers de données de profilage qui sont communs à toutes les méthodes de profilage.  
   
- [Vues de données de la méthode d’échantillonnage](../profiling/profiler-sampling-method-data-views.md)  
+ [Vues des données de la méthode d’échantillonnage](../profiling/profiler-sampling-method-data-views.md)  
  Informations de référence sur les vues et rapports des fichiers de données de profilage générés à l’aide de la méthode d’échantillonnage.  
   
- [Vues de données de la méthode d’instrumentation](../profiling/instrumentation-method-data-views.md)  
+ [Vues des données de la méthode d’instrumentation](../profiling/instrumentation-method-data-views.md)  
  Informations de référence pour les vues et rapports des fichiers de données de profilage générés à l’aide de la méthode d’instrumentation.  
   
- [Vues de données de mémoire .NET](../profiling/dotnet-memory-data-views.md)  
+ [Vues des données de la mémoire .NET](../profiling/dotnet-memory-data-views.md)  
  Informations de référence pour les vues et rapports des fichiers de données de profilage qui incluent les données de mémoire .NET.  
   
- [Vues de données de conflit de ressources](../profiling/resource-contention-data-views.md)  
+ [Vues des données de conflit de ressources](../profiling/resource-contention-data-views.md)  
  Informations de référence pour les vues et rapports des fichiers de données de profilage générés à l’aide de la méthode concurrentielle.  
   
  [Visualiseur concurrentiel](../profiling/concurrency-visualizer.md)  
@@ -46,4 +47,4 @@ Cette section fournit des informations de référence pour les rapports et les v
  Informations de référence pour la vue et le rapport d’interaction des fichiers de données de profilage qui incluent des données d’interaction de couche.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Analyse des données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)
+ [Analyser les données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)

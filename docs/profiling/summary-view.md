@@ -17,13 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51747dca8e11f7a23b911bbfe8ddcdb81d275d69
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d96f8fcd1e89fa43b3fe06d6dda1ad310da59f00
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668572"
 ---
-# <a name="summary-view"></a>Vue Résumé
+# <a name="summary-view"></a>Mode Résumé
 La vue Résumé affiche des informations sur les fonctions ou les objets dont le coût est le plus pénalisant quant aux performances lors d’une exécution du profilage. Cette vue fournit un graphique chronologique et plusieurs listes de fonctions ou d’objets dont le coût est le plus pénalisant quant aux métriques de performances de la méthode de profilage. Les données de cette vue dépendent de la méthode de profilage qui a été utilisée (échantillonnage, instrumentation ou concurrence) et de l’allocation de mémoire .NET si elle a été collectée ou non.  
   
  Dans toutes les vues Résumé, à l’exception de la vue Résumé des données de concurrence, le graphique chronologique de la vue Résumé montre le pourcentage d’utilisation de l’UC de l’application profilée pendant la durée du profilage.  
@@ -40,7 +41,7 @@ La vue Résumé affiche des informations sur les fonctions ou les objets dont le
 |||  
 |-|-|  
 |**Afficher le code autre que le code utilisateur**<br /><br /> **Afficher Uniquement mon code**|Non disponible pour le code natif ou pour les données de profilage qui ont été collectées avec la méthode d’instrumentation. Bascule entre l’affichage des données du code utilisateur uniquement (**Afficher Uniquement mon code**) et l’affichage des données de tout le code, notamment le code système (**Afficher le code autre que le code utilisateur**). Par défaut, les données sont limitées au code utilisateur. Pour changer le paramètre, consultez [Guide pratique pour filtrer les vues de rapport des outils de profilage de façon à afficher Uniquement mon code](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md).|  
-|**Afficher l’aide**|Affiche les avertissements des règles de performance dans la fenêtre **Liste d’erreurs**. Pour plus d’informations, consultez [Utilisation des règles de performance pour analyser des données](../profiling/using-performance-rules-to-analyze-data.md)|  
+|**Afficher l’aide**|Affiche les avertissements des règles de performance dans la fenêtre **Liste d’erreurs**. Pour plus d’informations, consultez [Utiliser des règles de performance pour analyser des données](../profiling/using-performance-rules-to-analyze-data.md)|  
   
 ## <a name="report"></a>Rapport  
  Vous pouvez cliquer sur les liens dans la liste Rapport pour ouvrir différentes vues et pour comparer, enregistrer ou filtrer le rapport. La liste est à droite du graphique chronologique.  
@@ -49,13 +50,13 @@ La vue Résumé affiche des informations sur les fonctions ou les objets dont le
 |-|-|  
 |**Afficher une arborescence des appels tronquée**|Affiche les chemins d’exécution les plus consommateurs dans la vue Arborescence des appels. Pour plus d’informations, consultez [Arborescence des appels, vue](../profiling/call-tree-view.md).|  
 |**Afficher les hotlines**|Non disponible pour les données de profilage qui ont été collectées avec la méthode d’instrumentation. Affiche les lignes de code source les plus consommatrices dans la vue Lignes. Pour plus d’informations, consultez [Lignes, vue](../profiling/lines-view.md).|  
-|**Comparer des rapports**|Affiche la boîte de dialogue **Sélectionner des fichiers d’analyse à comparer**, où vous pouvez spécifier un autre fichier de données de profilage à comparer au fichier actif. Pour plus d’informations, consultez [Comparaison des fichiers de données de performances](../profiling/comparing-performance-data-files.md).|  
+|**Comparer des rapports**|Affiche la boîte de dialogue **Sélectionner des fichiers d’analyse à comparer**, où vous pouvez spécifier un autre fichier de données de profilage à comparer au fichier actif. Pour plus d’informations, consultez [Comparer des fichiers de données de performances](../profiling/comparing-performance-data-files.md).|  
 |**Exporter les données du rapport**|Affiche la boîte de dialogue **Exporter le rapport**, où vous pouvez spécifier une ou plusieurs vues de rapport à enregistrer comme fichiers .csv (valeurs séparées par des virgules) ou .xml. Pour plus d’informations, consultez [Guide pratique pour exporter les rapports des outils de profilage](http://msdn.microsoft.com/en-us/174b5bd3-df9b-4fd4-88d4-76032ab90451).|  
 |**Enregistrer le rapport analysé**|Enregistre le fichier de données de profilage actif dans un fichier .vsps, qui s’ouvre plus rapidement dans l’interface pour [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Pour plus d’informations, consultez [Guide pratique pour enregistrer des fichiers de données de profilage analysés](http://msdn.microsoft.com/en-us/0340ddde-caf4-48ac-8af3-d15dcdade556).|  
 |**Filtrer les données du rapport**|Affiche le volet de filtrage du rapport de profilage où vous pouvez spécifier des critères pour limiter les données de la vue Rapport. Pour plus d’informations, consultez [Filtre de la vue Rapport de performances](../profiling/performance-report-view-filter.md).|  
 |**Plein écran**|Active ou désactive le mode Plein écran pour la vue Rapport.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Mode Résumé](../profiling/summary-view-sampling-data.md)   
- [Vue Résumé](../profiling/summary-view-instrumentation-data.md)   
- [Vue Résumé](../profiling/summary-view-dotnet-memory-data.md)
+ [Vue Résumé - Données d’échantillonnage](../profiling/summary-view-sampling-data.md)   
+ [Vue Résumé - Données d’instrumentation](../profiling/summary-view-instrumentation-data.md)   
+ [Vue Résumé - Données de la mémoire .NET](../profiling/summary-view-dotnet-memory-data.md)
