@@ -11,15 +11,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77bc0df07520fd2ffab11054e4720bb50ee01903
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: dc86619ae769aa9e947d308eca61004e130c0b2a
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637748"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495841"
 ---
 # <a name="manage-universal-windows-projects"></a>Gérer les projets Windows universel
-Les applications Windows universelles sont des applications qui ciblent Windows 8.1 et Windows Phone 8.1, ce qui permet aux développeurs d’utiliser le code et autres ressources sur les deux plateformes. Le code partagé et les ressources sont conservées dans un projet partagé, tandis que le code spécifique à la plateforme et les ressources sont conservés dans des projets distincts, un pour Windows et l’autre pour Windows Phone. Pour plus d’informations sur les applications Windows universelles, consultez [les applications Windows universelles](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Les extensions de Visual Studio qui gèrent les projets devraient être conscient que les projets d’application Windows universelles ont une structure qui diffère des applications de plateforme unique. Cette procédure pas à pas vous montre comment naviguer dans le projet partagé et de gérer les éléments partagés.  
+Les applications Windows universelles sont des applications qui ciblent Windows 8.1 et Windows Phone 8.1, ce qui permet aux développeurs d’utiliser le code et autres ressources sur les deux plateformes. Le code partagé et les ressources sont conservées dans un projet partagé, tandis que le code spécifique à la plateforme et les ressources sont conservés dans des projets distincts, un pour Windows et l’autre pour Windows Phone. Pour plus d’informations sur les applications Windows universelles, consultez [les applications Windows universelles](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Les extensions de Visual Studio qui gèrent les projets devraient être conscient que les projets d’application Windows universelles ont une structure qui diffère des applications de plateforme unique. Cette procédure pas à pas vous montre comment naviguer dans le projet partagé et de gérer les éléments partagés.  
   
 ## <a name="prerequisites"></a>Prérequis  
  À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS par la suite. Pour plus d’informations, consultez [installer le SDK Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29592f7956177a4894967d7f393605a54f7ec07b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 73a2dd2288ae54c184405793323cd3084b90e35a
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513159"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495282"
 ---
 # <a name="vspackage-registration"></a>Inscription de VSPackage
 Les VSPackages doivent informer [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] qu’ils sont installés et qu’il doivent être chargé. Ce processus s’effectue en écrivant des informations dans le Registre. C’est une tâche classique d’un programme d’installation.  
@@ -60,4 +60,4 @@ Les VSPackages doivent informer [!INCLUDE[vsprvs](../../code-quality/includes/vs
   
 ## <a name="see-also"></a>Voir aussi  
  [Programme d’installation de Windows](/windows/desktop/Msi/windows-installer-portal)   
- [Inscription de Package gérée](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+ [Inscription de Package gérée](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

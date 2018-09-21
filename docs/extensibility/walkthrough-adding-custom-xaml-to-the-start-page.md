@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85a462501637fab8ea916dd5488b0796351164d5
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: b0b6d095ad9fb45d5cc9bd8979a267cb2ccf961f
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500707"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495620"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>Procédure pas à pas : Ajouter XAML personnalisé à la page de démarrage
 Cette procédure pas à pas montre comment créer un Visual Studio Page de démarrage personnalisée qui contient un navigateur Web.  
@@ -93,4 +93,4 @@ Cette procédure pas à pas montre comment créer un Visual Studio Page de déma
   
 ## <a name="see-also"></a>Voir aussi  
  [Personnaliser la page de démarrage](../ide/customizing-the-start-page-for-visual-studio.md)   
- [Conteneur des contrôles WPF](http://msdn.microsoft.com/en-us/a0177167-d7db-4205-9607-8ae316952566)
+ [Conteneur des contrôles WPF](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)

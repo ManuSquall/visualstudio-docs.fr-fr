@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7620922bad8f35186beb4086dd3c24a98ada6d34
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8d4f701b58c95a08f9017043138c98b824d4e406
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499989"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496101"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>Procédure pas à pas : Créer un ornement de vue, les commandes et paramètres (repères de colonne)
 Vous pouvez étendre l’éditeur de texte/code de Visual Studio avec les commandes et les effets de la vue. Cet article vous montre comment commencer avec une fonctionnalité d’extension populaire, repères de colonne. Repères de colonne sont visuellement clair lignes dessinées sur la vue de l’éditeur de texte pour vous aider à gérer votre code pour les largeurs de colonne spécifique. Plus précisément, le code mis en forme peut être important pour obtenir des exemples d’inclure dans les documents, les billets de blog, ou de rapports de bogues.  
@@ -35,7 +35,7 @@ Vous pouvez étendre l’éditeur de texte/code de Visual Studio avec les comman
   
 -   Ajouter la prise en charge pour appeler les commandes à partir de la fenêtre de commande Visual Studio  
   
- Vous pouvez essayer une version de la fonctionnalité de repères de colonne avec cette galerie Visual Studio[extension](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home).  
+ Vous pouvez essayer une version de la fonctionnalité de repères de colonne avec cette galerie Visual Studio[extension](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).  
   
  **Remarque**: dans cette procédure pas à pas, vous collez une grande quantité de code dans quelques fichiers générés par les modèles d’extension de Visual Studio. Toutefois, dès cette procédure pas à pas fait référence à une solution terminée sur github avec d’autres exemples d’extension. Le code complet est légèrement différent car il a des icônes de commande réelles au lieu d’utiliser des icônes de generictemplate.  
   
@@ -1349,7 +1349,7 @@ private int GetApplicableColumn(EventArgs e)
 ## <a name="finished-code-project"></a>Projet de code terminé  
  Il y aura bientôt d’un projet github d’exemples d’extensibilité de Visual Studio, et le projet achevé sera présent. Cet article sera être mis à jour pour pointer il lorsque cela se produit. Le projet d’exemple terminé peut-être avoir des GUID différents et aura une bande de bitmaps différentes pour les icônes de commande.  
   
- Vous pouvez essayer une version de la fonctionnalité de repères de colonne avec cette galerie Visual Studio[extension](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home).  
+ Vous pouvez essayer une version de la fonctionnalité de repères de colonne avec cette galerie Visual Studio[extension](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines).  
   
 ## <a name="see-also"></a>Voir aussi  
  [À l’intérieur de l’éditeur](../extensibility/inside-the-editor.md)   

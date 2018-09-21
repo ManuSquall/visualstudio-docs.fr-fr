@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2919559a748769c3b30e09023ad4f10965d62ce6
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 3b5f9c7b297d98836ca3e5c017d2a0d440a30470
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639488"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495477"
 ---
 # <a name="ngen-support-in-vsix-v3"></a>Prise en charge de Ngen dans VSIX v3
 
@@ -26,7 +26,7 @@ Voici un extrait à partir de MSDN qui explique quelles « ngen » fait :
 
 >Le Générateur d’images natives (*Ngen.exe*) est un outil qui améliore les performances des applications managées. *Ngen.exe* crée des images natives, qui sont des fichiers contenant le code machine compilé spécifique au processeur et les installe dans le cache des images natives sur l’ordinateur local. Le runtime peut utiliser des images natives du cache plutôt que le compilateur juste-à-temps (JIT) pour compiler l'assembly d'origine.
 >
->à partir de [Ngen.exe (Native Image Generator)](https://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.110).aspx)
+>à partir de [Ngen.exe (Native Image Generator)](/dotnet/framework/tools/ngen-exe-native-image-generator)
 
 Dans l’ordre de « ngen » un assembly, l’extension VSIX doit être installé « par instance par ordinateur ». Cela peut être activée en cochant la case à cocher « tous les utilisateurs » le `extension.vsixmanifest` concepteur :
 
@@ -41,7 +41,7 @@ Il existe 4 propriétés qui peuvent être définies :
 1. **Ngen** (booléen) - si la valeur est true, le programme d’installation de Visual Studio sera « ngen » de l’assembly.
 2. **Application Ngen** (chaîne) - Ngen offre la possibilité d’utiliser d’une application *app.config* fichier afin de résoudre les dépendances d’assembly. Cette valeur doit être définie à une application dont la propriété *app.config* vous souhaitez utiliser (par rapport au répertoire d’installation de Visual Studio).
 3. **Ngen Architecture** (énumération) - l’architecture de compiler en mode natif votre assembly. Les options sont : un. NotSpecified b. X86 c. X64 d. Tous
-4. **Priorité de Ngen** (entier compris entre 1 et 3) - niveau de la priorité de Ngen est décrit à l’adresse [les niveaux de priorité de Ngen.exe](https://msdn.microsoft.com/en-us/library/6t9t5wcf(v=vs.110).aspx#Anchor_3).
+4. **Priorité de Ngen** (entier compris entre 1 et 3) - niveau de la priorité de Ngen est décrit à l’adresse [les niveaux de priorité de Ngen.exe](/dotnet/framework/tools/ngen-exe-native-image-generator#priority-levels).
 
 Voici un aperçu de la **propriétés** fenêtre en action :
 

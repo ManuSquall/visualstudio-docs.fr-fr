@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 397147bdc5c6ae11c06bfaa47667ad24aa53e2dc
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: bf5d738751a4873858aaa1ad80179663d9a7b767
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497873"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495945"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Procédure pas à pas : Créer un kit de développement à l’aide de c# ou Visual Basic
 Dans cette procédure pas à pas, vous allez apprendre à créer un kit de développement de bibliothèque mathématique simple à l’aide de Visual c#, puis d’empaqueter le Kit de développement logiciel en tant qu’une Extension Visual Studio (VSIX). Vous allez effectuer les procédures suivantes :  
@@ -93,7 +93,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
       TargetFramework=".NETCore,version=v4.5"
       AppliesTo="WindowsAppContainer"
       SupportsMultipleVersions="Error"
-      MoreInfo="http://www.msdn.microsoft.com/">
+      MoreInfo="https://msdn.microsoft.com/">
     </FileList>
     ```
 
@@ -105,7 +105,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
       TargetFramework=".NETCore,version=v4.5"
       AppliesTo="WindowsAppContainer"
       SupportsMultipleVersions="Error"
-      MoreInfo="http://www.msdn.microsoft.com/">
+      MoreInfo="https://msdn.microsoft.com/">
     </FileList>
     ```  
   
@@ -166,7 +166,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
   
 6.  Dans le volet de détails, choisissez le **Simple mathématiques SDK** extension.  
   
-     Des informations supplémentaires sur votre Kit de développement logiciel s’affiche. Vous pouvez choisir le **plus d’informations** lien pour ouvrir http://www.msdn.microsoft.com, que vous avez spécifié dans le fichier SDKManifest.xml plus haut dans cette procédure pas à pas.  
+     Des informations supplémentaires sur votre Kit de développement logiciel s’affiche. Vous pouvez choisir le **plus d’informations** lien pour ouvrir https://msdn.microsoft.com/, que vous avez spécifié dans le fichier SDKManifest.xml plus haut dans cette procédure pas à pas.  
   
 7.  Dans le **Gestionnaire de références** boîte de dialogue, sélectionnez le **Simple mathématiques SDK** case à cocher, puis choisissez le **OK** bouton.  
   
@@ -243,5 +243,5 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédure pas à pas : Créer un kit de développement à l’aide de C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [Procédure pas à pas : Créer un kit de développement à l’aide de JavaScript](http://msdn.microsoft.com/en-us/6195ff56-4a27-45fc-bd29-4b0451225f4b)   
+ [Procédure pas à pas : Créer un kit de développement à l’aide de JavaScript](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)   
  [Création d’un Kit de développement logiciel](../extensibility/creating-a-software-development-kit.md)

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7dd3bf8f3f31b914debc6dab4eb5c4f6e7b27086
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 863aef532e90d749f5c9c93a9d16cb2daf7f6c0b
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512221"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495984"
 ---
 # <a name="project-model-core-components"></a>Principaux composants d’un modèle de projet
 Les tableaux suivants développent sur le modèle de projet. Ces tableaux indiquent les brèves descriptions des interfaces et des services identifiés dans le modèle et les interfaces et les services associés à des objets spécifiques. En outre, les tables décrit en détail les autres interfaces qui sont facultatives dans la création du projet et de maintenance selon les besoins de votre type de projet spécifique.  
@@ -105,6 +105,6 @@ Les tableaux suivants développent sur le modèle de projet. Ces tableaux indiqu
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [Liste de vérification : Créer de nouveaux Types de projet](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Pas dans la génération : à l’aide des Classes de projet HierUtil7 pour implémenter un Type de projet (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [Pas dans la génération : à l’aide des Classes de projet HierUtil7 pour implémenter un Type de projet (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [Prise en charge des outils de consultation de symbole](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [Éléments d’un modèle de projet](../../extensibility/internals/elements-of-a-project-model.md)
