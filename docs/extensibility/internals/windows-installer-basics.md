@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99bcb83ad085d67d219cea7a7860994fba3e9bd7
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: b1c5044479ca08933f5088101cc088ea3011b4c4
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513424"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495542"
 ---
 # <a name="windows-installer-basics"></a>Éléments de base de Windows Installer
 Le programme d’installation de Windows installe et désinstalle des applications ou des produits logiciels sur l’ordinateur d’un utilisateur, effectuer ces tâches dans des unités appelées des composants du programme d’installation de Windows (parfois appelés WICs ou composants uniquement). Un GUID identifie chaque WIC, qui est l’unité de base de l’installation et le décompte de références pour les installations à l’aide du programme d’installation de Windows.  
@@ -75,4 +75,4 @@ Le programme d’installation de Windows installe et désinstalle des applicatio
 -   Aucune ressource de version ne doit expédier jamais dans plusieurs WIC.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Que se passe-t-il si les règles de composant sont interrompues ?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)
+ [Que se passe-t-il si les règles de composant sont interrompues ?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)

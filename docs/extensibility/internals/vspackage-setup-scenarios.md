@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3dfe3f3c135cb3ed16c7550fc62d334cc548cd1
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c194588de8dfa8746bb79a8d86bff005d90e7550
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510664"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495932"
 ---
 # <a name="vspackage-setup-scenarios"></a>Scénarios d’installation de VSPackage
 
@@ -31,7 +31,7 @@ Les scénarios présentés dans cette rubrique ne sont pas vos seuls choix, mais
 
 ### <a name="make-your-components-independent"></a>Créer des composants indépendants
 
-Une fois que vous identifiez et remplissez un composant, affecter un `GUID`et le déploiement du composant, vous ne pouvez pas modifier sa composition. Si vous ne modifiez pas les composition d’un composant, le composant qui en résulte doit être un nouveau composant avec un nouveau `GUID`. Étant donné ces faits, la plus grande flexibilité de contrôle de version est offerte en rendant chaque unité indépendante, indépendant de composant. Pour plus d’informations sur les règles régissant les composants, consultez [la modification du Code de composant](/windows/desktop/Msi/changing-the-component-code) et [que se passe-t-il si les règles de composant sont répartis ?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx).
+Une fois que vous identifiez et remplissez un composant, affecter un `GUID`et le déploiement du composant, vous ne pouvez pas modifier sa composition. Si vous ne modifiez pas les composition d’un composant, le composant qui en résulte doit être un nouveau composant avec un nouveau `GUID`. Étant donné ces faits, la plus grande flexibilité de contrôle de version est offerte en rendant chaque unité indépendante, indépendant de composant. Pour plus d’informations sur les règles régissant les composants, consultez [la modification du Code de composant](/windows/desktop/Msi/changing-the-component-code) et [que se passe-t-il si les règles de composant sont répartis ?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken).
 
 ### <a name="do-not-mix-shared-and-private-resources-in-a-component"></a>Ne mélangez pas les ressources partagées et privées dans un composant
 
@@ -77,7 +77,7 @@ Dans ce cas, le VSPackage est un VSPackage managé installé dans le global asse
 
 ![Le programme d’installation de Visual Studio côte à côte VS Update Package](../../extensibility/internals/media/vs_sbys_packageupdate.gif "VS_SbyS_PackageUpdate")
 
-Pour plus d’informations sur le déploiement d’assemblys côte à côte, consultez [ce qui simplifie le déploiement et la résolution de l’enfer des DLL avec le .NET Framework](http://msdn.microsoft.com/library/ms973843.aspx).
+Pour plus d’informations sur le déploiement d’assemblys côte à côte, consultez [ce qui simplifie le déploiement et la résolution de l’enfer des DLL avec le .NET Framework](https://msdn.microsoft.com/library/ms973843.aspx).
 
 ## <a name="see-also"></a>Voir aussi
 

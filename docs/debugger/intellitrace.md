@@ -1,7 +1,7 @@
 ---
 title: IntelliTrace | Documents de Microsoft
 ms.custom: ''
-ms.date: 07/18/2017
+ms.date: 09/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bddba938360b56b0ed86d4aca35aa963cdd7a84
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ba9f5f3ad855cdeb4f5c137ebaea04bca078cebb
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321017"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496010"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -45,7 +45,7 @@ Vous pouvez utiliser IntelliTrace dans Visual Studio Enterprise Edition (mais pa
 
 |||
 |-|-|
-|**Déboguer mon application avec IntelliTrace :**<br /><br /> -Afficher les événements passés.<br />-Afficher des informations avec les événements passés d’appel.<br />-Enregistrer ma session IntelliTrace.<br />-Contrôler les données IntelliTrace collecte.|- [Procédure pas à pas : À l’aide d’IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Fonctionnalités de IntelliTrace](../debugger/intellitrace-features.md)<br />- [Débogage d’historique](../debugger/historical-debugging.md)<br />- [Affichage de clichés à l’aide d’IntelliTrace étape-arrière](../debugger/how-to-use-intellitrace-step-back.md)|
+|**Déboguer mon application avec IntelliTrace :**<br /><br /> -Afficher les événements passés.<br />-Afficher des informations avec les événements passés d’appel.<br />-Enregistrer ma session IntelliTrace.<br />-Contrôler les données IntelliTrace collecte.|- [Affichage de clichés à l’aide d’IntelliTrace étape-arrière](../debugger/how-to-use-intellitrace-step-back.md)<br />- [Procédure pas à pas : À l’aide d’IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Fonctionnalités de IntelliTrace](../debugger/intellitrace-features.md)<br />- [Débogage d’historique](../debugger/historical-debugging.md)|
 |**Collecter des données IntelliTrace au cours d’une session de test dans Gestionnaire de tests**|- [Collecter des données de diagnostic plus de tests manuels](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**Collecter des données IntelliTrace à partir des applications déployées**|- [L’utilisation du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**Démarrage du débogage depuis un fichier de journal IntelliTrace (.iTrace fichier).**|- [Utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md)|
@@ -54,9 +54,9 @@ Vous pouvez utiliser IntelliTrace dans Visual Studio Enterprise Edition (mais pa
 
 |||
 |-|-|
-|**Prise en charge**|-Applications de Visual Basic et Visual C# qui utilisent le.NET Framework 2.0 ou versions ultérieures.<br/>Vous pouvez déboguer la plupart des applications, notamment ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010 et SharePoint 2013, ainsi que les applications 64 bits.<br/>Pour déboguer des applications SharePoint avec IntelliTrace, consultez [procédure pas à pas : débogage d’une Application SharePoint par IntelliTrace d’à l’aide de](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Pour déboguer des applications de Microsoft Azure avec IntelliTrace, consultez [débogage d’un Service Cloud publié avec IntelliTrace et Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|
-|**Prise en charge limitée**|-.NET core et des applications de base de ASP.NET pris en charge pour certains événements (événements de contrôleur MVC, ADO.NET et HTTPClicent) dans le débogage local. Le collecteur autonome n’est pas pris en charge pour les applications .NET Core ou Core d’ASP.NET.<br />-Applications F# à titre expérimental<br />-Applications UWP prise en charge des événements uniquement|
-|**Non pris en charge**|-C++, d’autres langages et d’un script<br />-Windows Services, Silverlight, Xbox, ou [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] les applications|
+|**Prise en charge complète**|-Applications de Visual Basic et Visual C# qui utilisent le.NET Framework 2.0 ou versions ultérieures.<br/>Vous pouvez déboguer la plupart des applications, notamment ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, Windows Workflow, SharePoint 2010 et SharePoint 2013, ainsi que les applications 64 bits.<br/>Pour déboguer des applications SharePoint avec IntelliTrace, consultez [procédure pas à pas : débogage d’une Application SharePoint par IntelliTrace d’à l’aide de](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Pour déboguer des applications de Microsoft Azure avec IntelliTrace, consultez [débogage d’un Service Cloud publié avec IntelliTrace et Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|
+|**Prise en charge limitée**|-Applications natives ciblant l’affichage des instantanés à l’aide d’IntelliTrace revenir en arrière de la prise en charge Windows. Seuls les événements de débogueur et l’exception sont pris en charge.<br />-.NET core et des applications de base de ASP.NET pris en charge pour certains événements (événements de contrôleur MVC, ADO.NET et HTTPClicent) dans le débogage local. Le collecteur autonome n’est pas pris en charge pour les applications .NET Core ou Core d’ASP.NET.<br />-Applications F# à titre expérimental<br />-Applications UWP prise en charge des événements uniquement|
+|**Non pris en charge**|-Autres langages et un script<br />-Windows Services, Silverlight, Xbox, ou [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] les applications|
 
 > [!NOTE]
 > Si vous souhaitez déboguer un processus en cours d’exécution, vous pouvez collecter des événements IntelliTrace uniquement (aucune information d’appel). Vous pouvez attacher à un processus 32 bits ou 64 bits sur l’ordinateur local uniquement. Événements qui se produisent avant de joindre au processus ne sont pas collectés.

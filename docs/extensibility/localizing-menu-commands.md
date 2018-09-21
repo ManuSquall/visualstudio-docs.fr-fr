@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94294078ccb1dd2620127fa85acf0ae4564080dd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 782cec69f5129aaa4bbea66d0adb52d2bd172032
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638028"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495451"
 ---
 # <a name="localize-menu-commands"></a>Localiser des commandes de menu
 Vous pouvez fournir un texte localisé pour les commandes de menu et barre d’outils en créant localisée *.vsct* fichiers et localisées *.resx* fichiers pour votre VSPackage et ensuite la mise à jour les fichiers projet pour incorporer le modifications.  
@@ -37,7 +37,7 @@ Vous pouvez fournir un texte localisé pour les commandes de menu et barre d’o
   
 2.  Faites une copie de *filename.en-US.vsct* pour chaque langue localisée.  
   
-     Nommez chaque copie *filename. {} Paramètres régionaux} .vsct*, où *{Locale}* est un nom de culture particulière. Pour obtenir la liste de valeurs de nom de culture, consultez [ID de paramètres régionaux assignés par Microsoft](https://msdn.microsoft.com/en-us/library/windows/apps/jj657969.aspx).  
+     Nommez chaque copie *filename. {} Paramètres régionaux} .vsct*, où *{Locale}* est un nom de culture particulière. Pour obtenir la liste de valeurs de nom de culture, consultez [ID de paramètres régionaux assignés par Microsoft](/windows/uwp/publish/supported-languages).  
   
      Ces *nom de fichier. Locale.VSCT* fichiers contiendra le texte de menu localisée pour votre package.  
   

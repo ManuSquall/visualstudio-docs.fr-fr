@@ -1,7 +1,7 @@
 ---
 title: Fonctionnalités IntelliTrace | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 608b183333d3561f9db586955142f94a8371c055
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7ba3225d793baed9325612ad5b88bd55d629c44f
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279529"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495724"
 ---
 # <a name="intellitrace-features"></a>Fonctionnalités IntelliTrace
 
@@ -42,21 +42,21 @@ Pour confirmer qu’IntelliTrace est activé, ouvrez le **Outils > Options > Int
 > [!NOTE]
 > La portée de tous les paramètres sur le **IntelliTrace** page d’options est Visual Studio comme un entier, non des projets ou solutions. Une modification de ces paramètres s'applique à toutes les instances de Visual Studio, à toutes les sessions de débogage et à tous les projets ou solutions.
 
-## <a name="ChooseEvents"></a> Choisissez les événements qu’IntelliTrace enregistre
+## <a name="ChooseEvents"></a> Choisissez les événements qu’IntelliTrace enregistre (code managé uniquement)
 
 Vous pouvez activer ou désactiver l’enregistrement d’événements IntelliTrace spécifiques.
 
 Si vous êtes en cours de débogage, interrompez-le. Accédez à **Outils > Options > IntelliTrace > événements IntelliTrace**. Choisissez les événements IntelliTrace à enregistrer.
 
-## <a name="Snapshots"></a> Collecter les événements et instantanés
+## <a name="Snapshots"></a> Collecter des instantanés
 
-Cette option n’est pas activée par défaut, mais IntelliTrace peut capturer des instantanés de votre application à chaque événement d’étape de point d’arrêt et le débogueur, et vous pouvez afficher les captures instantanées de ces dans une session de débogage historique. Un instantané vous donne un aperçu de votre état de l’application complète. Pour activer la capture d’instantanés, accédez à **Outils > Options > IntelliTrace > Général**, puis sélectionnez **IntelliTrace événements et instantanés**. Pour plus d’informations, consultez [afficher les captures instantanées à l’aide d’IntelliTrace revenir en arrière](../debugger/how-to-use-intellitrace-step-back.md)
+Cette option n’est pas activée par défaut, mais IntelliTrace peut capturer des instantanés de votre application à chaque événement d’étape de point d’arrêt et le débogueur, et vous pouvez afficher ces captures instantanées dans une session de débogage historique. Un instantané vous donne un aperçu de votre état de l’application complète. Pour activer la capture d’instantanés, accédez à **Outils > Options > IntelliTrace > Général**, puis sélectionnez **instantanés IntelliTrace (natifs et managés)**. Pour plus d’informations, consultez [afficher les captures instantanées à l’aide d’IntelliTrace revenir en arrière](../debugger/how-to-use-intellitrace-step-back.md)
 
-Les instantanés sont disponibles dans Visual Studio Enterprise 2017 version 15.5 et versions ultérieures, et il nécessite la mise à jour anniversaire de Windows 10 ou version ultérieure.  Pour les applications .NET Core et ASP.NET Core, Visual Studio Enterprise 2017 version 15.7 preview 1 est requis.
+Les instantanés sont disponibles dans Visual Studio Enterprise 2017 version 15.5 et versions ultérieures, et il nécessite la mise à jour anniversaire de Windows 10 ou version ultérieure.  Pour les applications .NET Core et ASP.NET Core, Visual Studio Enterprise 2017 version 15.7 est requis. Pour les applications natives ciblant Windows, Visual Studio Enterprise 2017 version 15.9 Preview 2 est requis.
 
-## <a name="GoingFurther"></a> Collecter les événements IntelliTrace et informations d’appels
+## <a name="GoingFurther"></a> Collecter les événements IntelliTrace et informations (code managé uniquement) d’appels
 
-Cette option n’est pas activée par défaut, mais IntelliTrace peut enregistrer les appels de méthode, ainsi que des événements. Pour activer la collecte d’atteindre des appels de méthode **Outils > Options > IntelliTrace > Général**, puis sélectionnez **événements IntelliTrace et informations d’appels**.
+Cette option n’est pas activée par défaut, mais IntelliTrace peut enregistrer les appels de méthode, ainsi que des événements. Pour activer la collecte d’atteindre des appels de méthode **Outils > Options > IntelliTrace > Général**, puis sélectionnez **événements IntelliTrace et informations (managées uniquement) d’appels**.
 
 Informations sur les appels ne sont pas actuellement disponibles pour les applications .NET Core et ASP.NET Core. 
 

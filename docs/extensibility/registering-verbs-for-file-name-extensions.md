@@ -13,17 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a47f45889744db51d68c0f8aeb51b11863823965
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 0b6c0bffb2ce6db081a0c8ddf82c6b603a5dddd9
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639726"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495256"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Inscrire des verbes pour les extensions de nom de fichier
 L’association d’une extension de nom de fichier avec une application a généralement une action par défaut qui se produit lorsqu’un utilisateur double-clique sur un fichier. Cette action est liée à un verbe, par exemple ouvrir, qui correspond à l’action de préférence.  
   
- Vous pouvez inscrire les verbes qui sont associés à un identificateur programmatique (ProgID) pour une extension à l’aide de la clé de Shell situé dans **HKEY_CLASSES_ROOT\{progid} \shell**. Pour plus d’informations, consultez [types de fichiers](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
+ Vous pouvez inscrire les verbes qui sont associés à un identificateur programmatique (ProgID) pour une extension à l’aide de la clé de Shell situé dans **HKEY_CLASSES_ROOT\{progid} \shell**. Pour plus d’informations, consultez [types de fichiers](/windows/desktop/shell/fa-file-types).  
   
 ## <a name="register-standard-verbs"></a>Inscrire des verbes standard  
  Le système d’exploitation reconnaît les verbes standards suivants :  
