@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bd29940bdacdeef4b47432f1b649db4ba61054af
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9db1925036f7522db3fe7a16af362da754ec49e5
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180111"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321058"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Outils de test dans Visual Studio
 
@@ -42,8 +42,7 @@ Les outils de test de Visual Studio peuvent vous aider vous et votre équipe à 
 
 ## <a name="related-scenarios"></a>Scénarios connexes
 
-* [Tests exploratoires et manuels (VSTS)](/vsts/manual-test/)
-* [Tests de charge (VSTS)](/vsts/load-test/index)
-* [Tests continus (VSTS)](/vsts/build-release/test/index)
-* [Vue d’ensemble de DevOps pour Team Services et TFS (VSTS)](/vsts/user-guide/devops-alm-overview)
+* [Tests exploratoires et manuels (Azure Test Plans)](/azure/devops/test/index?view=vsts)
+* [Tests de charge (Azure Test Plans)](/azure/devops/test/load-test/index?view=vsts)
+* [Tests continus (Azure Test Plans)](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 * [Outils d’analyse du code](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)

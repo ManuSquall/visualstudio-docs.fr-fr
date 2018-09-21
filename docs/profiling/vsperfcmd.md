@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1770fd1b6c9fef29592d1a4e1c85875513058a5
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 23abc362b3c91579585272e4ebf1b190cab55dde
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573139"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320980"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 L’outil *VSPerfCmd.exe* est utilisé pour démarrer et arrêter la collecte de données de performances. Il utilise la syntaxe suivante :  
@@ -53,7 +53,7 @@ VSPerfCmd [/U] [/options]
 |[ProcessOff](../profiling/processon-and-processoff.md) **:** `pid`|Arrête la collecte de données pour le processus spécifié.|  
 |[ThreadOn et ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|Reprend le profilage pour le processus spécifié après la mise en suspens du profilage par un appel à **VSPerfCmdThreadOff**. Utilisez **ThreadOn** seulement en cas de profilage avec la méthode d’instrumentation.|  
 |[ThreadOn et ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|Suspend le profilage pour le thread spécifié. Utilisez **ThreadOff** seulement en cas de profilage avec la méthode d’instrumentation.|  
-|[Mark](../profiling/mark.md)  **:** *MarkNum*[**,***MarkText***]**|Insère une marque dans le fichier de données de profilage, avec un texte facultatif.|  
+|[Mark](../profiling/mark.md) **:** _MarkNum_[**,**_MarkText_**]**|Insère une marque dans le fichier de données de profilage, avec un texte facultatif.|  
   
 ## <a name="sample-method-options"></a>Options de méthode d’échantillonnage  
  Les options suivantes sont disponibles seulement quand vous utilisez la méthode de profilage par échantillonnage.  
@@ -63,8 +63,8 @@ VSPerfCmd [/U] [/options]
 |[Launch](../profiling/launch.md) **:** *Exécutable*|Démarre l’application spécifiée et démarre le profileur.|  
 |[Args](../profiling/args.md) **:** *Arguments*|Spécifie les arguments de ligne de commande à passer à l’application lancée.|  
 |[Console](../profiling/console.md)|Démarre la commande spécifiée dans une nouvelle fenêtre d’invite de commandes.|  
-|[Attach](../profiling/attach.md)  **:** *PID*[**,***PID*]|Démarre le profilage des processus spécifiés. Vous pouvez identifier les processus par ID de processus ou par nom de processus.|  
-|[Detach](../profiling/detach.md)[**:***PID*[,*PID*]]|Arrête le profilage des processus spécifiés. Vous pouvez identifier les processus par ID de processus ou par nom de processus. Si aucun processus n’est spécifié, le profilage est arrêté pour tous les processus.|  
+|[Attach](../profiling/attach.md) **:** *PID*[**,**_PID_]|Démarre le profilage des processus spécifiés. Vous pouvez identifier les processus par ID de processus ou par nom de processus.|  
+|[Detach](../profiling/detach.md)[**:**_PID_[,_PID_]]|Arrête le profilage des processus spécifiés. Vous pouvez identifier les processus par ID de processus ou par nom de processus. Si aucun processus n’est spécifié, le profilage est arrêté pour tous les processus.|  
 |[GC](../profiling/gc-vsperfcmd.md)[**:**{**Allocation**`&#124;`**Lifetime**}]|Collecte les données d’allocation de mémoire et les données de durée de vie des objets de .NET. À utiliser seulement avec l’option **VSPerfCmdLaunch**.|  
   
 ### <a name="sample-interval-options"></a>Options d'intervalle d’échantillonnage  
@@ -72,9 +72,9 @@ VSPerfCmd [/U] [/options]
   
 |Option|Description|  
 |------------|-----------------|  
-|[PF](../profiling/pf.md)[**:***n*]|Échantillonne tous les n défauts de page (valeur par défaut=10).|  
-|[Sys](../profiling/sys-vsperfcmd.md)[**:***n*]|Échantillonne tous les n appels système (valeur par défaut=10).|  
-|[Timer](../profiling/timer.md)[**:***n*]|Échantillonne tous les n cycles de processeur (valeur par défaut=10 000 000).|  
+|[PF](../profiling/pf.md)[**:**_n_]|Échantillonne tous les n défauts de page (valeur par défaut=10).|  
+|[Sys](../profiling/sys-vsperfcmd.md)[**:**_n_]|Échantillonne tous les n appels système (valeur par défaut=10).|  
+|[Timer](../profiling/timer.md)[**:**_n_]|Échantillonne tous les n cycles de processeur (valeur par défaut=10 000 000).|  
   
 ## <a name="service-component-and-kernel-mode-device-options"></a>Options des composants de service et des périphériques en mode noyau  
  Les options Admin suivantes prennent en charge le profilage des composants de service ou les pilotes de périphérique en mode noyau. Les options Admin définissent des autorisations de profilage et contrôlent le service profilé ou le pilote de périphérique.  
@@ -83,7 +83,7 @@ VSPerfCmd [/U] [/options]
   
 |Option|Description|  
 |------------|-----------------|  
-|**Admin:Security** \<**ALLOW&#124;DENY**> *Right*[ *Right*] \<*Utilisateur*&#124;*Groupe*>|Autorise ou refuse à l’utilisateur ou au groupe spécifié l’accès aux services de profilage.<br /><br /> `Right` peut être :<br /><br /> CrossSession : donne à l’utilisateur l’accès au service pour faire du profilage intersession.<br /><br /> SampleProfiling : donne à l’utilisateur l’accès au pilote pour activer le profilage par échantillonnage. Également utilisé pour accéder aux informations de transition du noyau lors du profilage de trace.<br /><br /> FullAccess : donne à l’utilisateur l’accès CrossSession et SampleProfiling.|  
+|**Admin:Security**, \<**ALLOW&#124;DENY**>, *Right*[ *Right*], \<*Utilisateur*&#124;*Groupe*>|Autorise ou refuse à l’utilisateur ou au groupe spécifié l’accès aux services de profilage.<br /><br /> `Right` peut être :<br /><br /> CrossSession : donne à l’utilisateur l’accès au service pour faire du profilage intersession.<br /><br /> SampleProfiling : donne à l’utilisateur l’accès au pilote pour activer le profilage par échantillonnage. Également utilisé pour accéder aux informations de transition du noyau lors du profilage de trace.<br /><br /> FullAccess : donne à l’utilisateur l’accès CrossSession et SampleProfiling.|  
 |**Admin:Security, List**|Répertorie les états des services de profilage et les autorisations des utilisateurs.|  
 |**Admin:** \<*Service*&#124;*Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|Démarre, arrête, installe ou désinstalle le composant du service de profilage (service) ou le pilote de périphérique en mode noyau (driver).|  
 |**Admin:** \<*Service*&#124;*Driver*>**AutoStart**\<**ON**&#124;**OFF**>|Active ou désactive automatiquement le démarrage du service de profilage (service) ou du pilote de périphérique en mode noyau (driver) après un redémarrage.|  

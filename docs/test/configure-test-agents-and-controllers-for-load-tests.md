@@ -9,19 +9,19 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a64558f442b6d3ad77a34bb8ae4acb2860273c05
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a0da0ca3fb5c36a0c878e641121312b2773b8215
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176467"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321110"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Configurer les agents de test et les contrôleurs de test pour l’exécution de tests de charge
 
 Visual Studio peut utiliser des ordinateurs physiques ou des machines virtuelles pour générer une charge simulée pour votre application. Ces ordinateurs doivent être configurés comme un contrôleur de test unique, et un ou plusieurs agents de test. Vous pouvez utiliser le contrôleur de test et les agents de test pour générer une charge supérieure à celle qu’un seul ordinateur peut générer à lui seul.
 
 > [!NOTE]
-> Vous pouvez également utiliser le test de charge cloud pour fournir des machines virtuelles qui génèrent la charge de nombreux utilisateurs accédant simultanément à votre site web. Découvrez plus en détail les tests de charge basés sur le cloud dans [Exécuter des tests de charge à l’aide de VSTS](/vsts/load-test/get-started-simple-cloud-load-test).
+> Vous pouvez également utiliser le test de charge cloud pour fournir des machines virtuelles qui génèrent la charge de nombreux utilisateurs accédant simultanément à votre site web. Découvrez plus d’informations sur les tests de charge basés sur le cloud dans [Exécuter des tests de charge avec Azure Test Plans](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
 
 ## <a name="load-simulation-architecture"></a>Architecture de la simulation de charge
 

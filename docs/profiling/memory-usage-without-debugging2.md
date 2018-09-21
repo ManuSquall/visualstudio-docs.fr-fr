@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1b31fde9497438b6abbcbd314462daf4c23f5e7
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 7e6647fb758d6895db98aa6bad47295a6a4aae86
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34265722"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668819"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analyser l’utilisation de la mémoire sans le débogueur de Visual Studio
 Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pour effectuer les opérations suivantes :  
@@ -32,7 +32,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
   
  Cette rubrique explique comment utiliser l’outil Utilisation de la mémoire pour analyser une application XAML UWP. Si vous voulez analyser l’utilisation de la mémoire d’une application UWP qui utilise JavaScript et HTML, consultez [Analyser l’utilisation de la mémoire (JavaScript)](../profiling/javascript-memory.md).  
   
-##  <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Démarrer une session de diagnostic d’utilisation de la mémoire  
+## <a name="start-a-memory-usage-diagnostic-session"></a>Commencer une session de diagnostic de l'utilisation de la mémoire  
   
 1.  Ouvrez un projet Windows universel C# dans Visual Studio.  
   
@@ -42,7 +42,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
   
      ![Démarrer une session de diagnostic d’utilisation de la mémoire](../profiling/media/memuse_start_diagnosticssession.png "MEMUSE_Start_DiagnosticsSession")  
   
-##  <a name="BKMK_Monitor_memory_use"></a> Surveiller l’utilisation de la mémoire  
+## <a name="monitor-memory-use"></a>Surveiller l'utilisation de la mémoire  
  Même si vous pouvez utiliser l’outil **Utilisation de la mémoire** pour générer des rapports détaillés permettant d’identifier et de corriger des problèmes, il permet également d’étudier les effets en temps réel sur la mémoire d’un scénario que vous développez activement.  
   
  Quand vous démarrez une session de diagnostic, votre application démarre et la page **Outils de diagnostic** affiche un graphique chronologique de l’utilisation de la mémoire par votre application.  
@@ -56,12 +56,12 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
   
  Pour arrêter une session de surveillance sans créer de rapport, fermez simplement la fenêtre de diagnostic. Pour générer un rapport quand vous avez créé des instantanés de la mémoire, choisissez **Arrêter**.  
   
-##  <a name="BKMK_Take_snapshots_to_analyze_the_memory_state_of_your_app"></a> Créer des instantanés de l’état de la mémoire de votre application  
+## <a name="take-snapshots-of-the-memory-state-of-your-app"></a>Créer des instantanés de l’état de la mémoire de votre application  
  Si vous détectez un problème de mémoire que vous voulez examiner, vous pouvez prendre des instantanés pendant la session de diagnostic pour capturer des objets dans la mémoire à des moments précis. Dans la mesure où une application utilise un grand nombre de plusieurs types d'objets, il peut être utile de concentrer votre analyse sur un seul scénario. Il peut être également utile de disposer d’un instantané de référence de l’application avant qu’un problème de mémoire ne se produise, d’un autre instantané après la première occurrence du problème et d’un ou plusieurs instantanés supplémentaires si vous pouvez répéter le scénario.  
   
  Pour collecter des instantanés, démarrez une nouvelle session de diagnostic. Choisissez **Prendre un instantané** quand vous voulez capturer les données de mémoire. Pour générer un rapport, choisissez **Arrêter**.  
   
-##  <a name="BKMK_Memory_Usage_overview_page"></a> Page de vue d’ensemble de l’utilisation de la mémoire  
+##  <a name="memory-usage-overview-page"></a>Page de vue d'ensemble de l'utilisation de la mémoire  
  Une fois que vous avez arrêté la collection des données, l’outil Utilisation de la mémoire arrête l’application et affiche le rapport de vue d’ensemble.  
   
  ![Page de vue d’ensemble de l’utilisation de mémoire](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")  
@@ -69,9 +69,9 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a> Vues d’instantanés d’utilisation de la mémoire  
  Vous utilisez les vues d'instantanés pour ouvrir des rapports détaillés dans de nouvelles fenêtres Visual Studio. Il existe deux types de vues d'instantanés :  
   
--   Un [rapport détaillé d’instantané](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports) indique les types et les instances d’un seul instantané.  
+-   Un [rapport détaillé d’instantané](#snapshot-reports) indique les types et les instances d’un seul instantané.  
   
--   Un [rapport de comparaison d’instantanés](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports) compare les types et les instances de deux instantanés.  
+-   Un [rapport de comparaison d’instantanés](#snapshot-difference-diff-reports) compare les types et les instances de deux instantanés.  
   
  ![Liens de la vue Instantané](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
   
@@ -84,7 +84,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
 |![Étape 3](../profiling/media/procguid_3.png "ProcGuid_3")|Le texte du lien indique la différence entre la taille totale des objets dans la mémoire au moment de l'instantané et la taille totale de l'instantané précédent.<br /><br /> Le texte du lien est un nombre positif quand la taille de la mémoire de cet instantané est supérieure à celle du précédent, et un nombre négatif quand la taille est inférieure. Le texte du lien **Planning de référence** indique que cet instantané est le premier de la session de diagnostic. **Aucune différence** indique que la différence est nulle.<br /><br /> Choisissez ce lien pour afficher un rapport différentiel des instantanés, trié selon la différence de taille totale des instances des types.|  
 |![Étape 4](../profiling/media/procguid_4.png "ProcGuid_4")|Le texte du lien indique la différence entre le nombre total d'objets mémoire dans cet instantané et le nombre d'objets de l'instantané précédent.<br /><br /> Choisissez ce lien pour afficher un rapport différentiel des instantanés, trié selon le nombre total d'instances des types.|  
   
-##  <a name="BKMK_Snapshot_reports"></a> Rapports d’instantané  
+## <a name="snapshot-reports"></a>Rapports d'instantané  
  ![Rapport d’instantané d’utilisation de la mémoire](../profiling/media/memuse_snapshotreport_all.png "MEMUSE_SnapshotReport_All")  
   
 ###  <a name="BKMK_Snapshot_report_trees"></a> Arborescences de rapport d’instantané  
@@ -119,7 +119,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
 ####  <a name="BKMK_Just_My_Code"></a> Uniquement mon code  
  Le filtre **Uniquement mon code** masque la plupart des instances générées par du code externe. Les types externes sont détenus par le système d'exploitation ou les composants Framework. Ils peuvent aussi être générés par le compilateur.  
   
-##  <a name="BKMK_Snapshot_details_reports"></a> Rapports détaillés d’instantané  
+## <a name="snapshot-details-reports"></a>Rapports détaillés d'instantané  
  Vous utilisez un rapport détaillé d'instantané pour vous concentrer sur un seul instantané d'une session de diagnostic. Pour ouvrir un rapport détaillé, choisissez l'un des deux liens dans une vue d'instantané, comme indiqué dans l'image suivante. Les deux liens ouvrent le même rapport. La seule différence concerne l’ordre de tri de départ de l’arborescence **Tas managé** dans le rapport. Dans les deux cas, vous pouvez modifier l'ordre de tri après ouverture du rapport.  
   
  ![Liens vers le rapport d’instantané dans une vue Instantané](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
@@ -158,7 +158,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
 |**Taille (octets)**|Pour un type, taille de toutes les instances du type, sans compter la taille des objets contenus dans le type.<br /><br /> Pour une instance, taille de l'objet, sans compter la taille des objets contenus dans l'objet.|  
 |**Taille inclusive (octets)**|Taille totale des instances du type ou taille de l'instance, y compris la taille des objets contenus.|  
   
-##  <a name="BKMK_Snapshot_difference__diff__reports"></a> Rapports différentiels d’instantanés  
+## <a name="snapshot-difference-diff-reports"></a>Rapports différentiels d'instantanés  
  Un rapport différentiel d'instantanés indique les modifications entre un instantané principal et l'instantané qui a été pris immédiatement avant. Pour ouvrir un rapport différentiel, choisissez l'un des deux liens dans une vue d'instantané, comme indiqué dans l'image suivante. Les deux liens ouvrent le même rapport. La seule différence concerne l’ordre de tri de départ de l’arborescence **Tas managé** dans le rapport. Vous pouvez modifier l'ordre de tri après ouverture du rapport.  
   
  ![Liens vers le rapport de différences dans une vue Instantané](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
@@ -203,6 +203,6 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
 ## <a name="see-also"></a>Voir aussi  
  [Mémoire JavaScript](../profiling/javascript-memory.md)  
  [Profilage dans Visual Studio](../profiling/index.md)  
- [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md)  
+ [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)  
  [Bonnes pratiques pour les performances des applications UWP en C++, C# et Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [Diagnostic des problèmes de mémoire avec le nouvel outil Utilisation de la mémoire de Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706)

@@ -9,12 +9,12 @@ description: Découvrez l’avantage Azure Community inclus dans certains abonne
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2fd37e00e447a380dc35557f2601d570b7eccbf5
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 92115e0beef07b50e2ea0783ccde6a9cc792c838
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289395"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283728"
 ---
 # <a name="azure-community"></a>Communauté Azure
 
@@ -68,4 +68,4 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 -  Pour d’autres ressources relatives à la Communauté Azure, visitez la [page Support](https://azure.microsoft.com/support/forums/) de la Communauté Azure.
 -  [Documentation Azure](/azure/).
 -  Besoin d’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio ?  Contactez le [Support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  Vous avez des questions concernant l’IDE Visual Studio, Visual Studio Team Services ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
+-  Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).

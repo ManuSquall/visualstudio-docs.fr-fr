@@ -9,12 +9,12 @@ description: En savoir plus sur les avantages inclus dans votre abonnement Visua
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0dfde28ab55ffadd08d0be3d863d0772604482ed
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: a3fb7fd86a5a875c16072792d9d82737b5f19160
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381544"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282220"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Avantages inclus dans votre abonnement Visual Studio
 
@@ -23,7 +23,7 @@ Les abonnements Visual Studio offrent l’ensemble le plus complet de ressources
 Les avantages sont répartis en trois catégories :
 
 ## <a name="tools"></a>Outils
-La catégorie Outils permet d’accéder à un large éventail d’avantages, y compris les avantages phares tels que [IDE Visual Studio](vs-ide-benefit.md), [Visual Studio Team Services](vs-vsts.md) et [Azure](vs-azure.md).  Selon votre niveau d’abonnement, vous pourrez également consulter des comptes de développeur Windows et Office 365, Visual Studio App Center et les avantages de partenaires, tels que WhiteSource Bolt et ModernRequirements.
+La catégorie Outils permet d’accéder à un large éventail d’avantages, notamment les avantages phares tels que [IDE Visual Studio](vs-ide-benefit.md), [Azure DevOps Services](vs-azure-devops.md) et [Azure](vs-azure.md).  Selon votre niveau d’abonnement, vous pourrez également consulter des comptes de développeur Windows et Office 365, Visual Studio App Center et les avantages de partenaires, tels que WhiteSource Bolt et ModernRequirements.
 
 ## <a name="professional-development"></a>Développement professionnel
 Pour améliorer vos compétences et être toujours informé des dernières technologies, nous fournissons l’accès à certaines des meilleures formations en ligne disponibles provenant d’acteurs majeurs du secteur. Voici quelques exemples de contenu excellent disponible :

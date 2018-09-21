@@ -11,19 +11,20 @@ ms.reviewer: karthiknadig
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: d7034476e3346e4f3d4e24713a62920487845440
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: aeb6026bf7f90d07147ef559bdad9feb03e2c005
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35667130"
 ---
-# <a name="using-docker-containers-with-r-tools-for-visual-studio"></a>Utilisation de conteneurs Docker avec Outils R pour Visual Studio
+# <a name="use-docker-containers-with-r-tools-for-visual-studio"></a>Utiliser des conteneurs Docker avec Outils R pour Visual Studio
 
 Outils R pour Visual Studio (RTVS) version 1.3+, parallèlement à une installation de [Docker pour Windows](https://www.docker.com/docker-windows), prend en charge l’utilisation des conteneurs Docker.
 
-## <a name="creating-a-container"></a>Création d'un conteneur
+## <a name="create-a-container"></a>Créer un conteneur
 
-1. Sélectionnez le bouton **Conteneurs...** situé dans l’angle droit de la fenêtre **Espaces de travail** (**Outils R > Windows > Espaces de travail**). La fenêtre vous informe si vous n’avez pas installé Docker pour Windows et fournit un lien pour son téléchargement. L’installation de Docker peut nécessiter un redémarrage de l’ordinateur.
+1. Sélectionnez le bouton **Conteneurs** dans le coin droit de la fenêtre **Espaces de travail** (**Outils R** > **Windows** > **Espaces de travail**). La fenêtre vous informe si vous n’avez pas installé Docker pour Windows et fournit un lien pour son téléchargement. L’installation de Docker peut nécessiter un redémarrage de l’ordinateur.
 
     ![Fenêtre Espaces de travail dans Outils R pour Visual Studio (VS2017) avec la commande Conteneurs](media/container-workspaces-window.png)
 
@@ -39,17 +40,17 @@ Outils R pour Visual Studio (RTVS) version 1.3+, parallèlement à une installa
 
     ![Fenêtre Conteneurs montrant un conteneur terminé](media/containers-window-created.png)
 
-## <a name="connecting-to-a-container"></a>Connexion à un conteneur
+## <a name="connect-to-a-container"></a>Se connecter à un conteneur
 
 1. La section **Conteneurs en cours d’exécution locaux** de la fenêtre **Espaces de travail** présente les conteneurs qui exécutent le démon RTVS sur le port 5444. (Consultez [R Server distant pour Linux](setting-up-remote-r-service-on-linux.md) pour plus d’informations sur la façon dont le démon est configuré.)
 
     ![Fenêtre Espaces de travail montrant les conteneurs disponibles](media/workspaces-window-running-containers.png)
 
-1. Pour vous connecter à un conteneur, double-cliquez sur son nom ou sélectionnez la flèche située à sa droite. Une fois connecté, une fenêtre **interactive R** apparaît (consultez [Utilisation de la fenêtre interactive R](interactive-repl-for-r-in-visual-studio.md)) :
+1. Pour vous connecter à un conteneur, double-cliquez sur son nom ou sélectionnez la flèche située à sa droite. Une fois connecté, une fenêtre **interactive R** apparaît (consultez [Utiliser la fenêtre interactive R](interactive-repl-for-r-in-visual-studio.md)) :
 
     ![Fenêtre Espaces de travail et fenêtre REPL ouvertes pour un conteneur](media/workspaces-window-container-connected.png)
 
-## <a name="using-custom-built-images"></a>Utilisation d’images personnalisées
+## <a name="use-custom-built-images"></a>Utiliser des images personnalisées
 
 RTVS détecte et autorise la gestion des conteneurs créés à l’aide d’images personnalisées, comme l’image microsoft/rtvs décrite dans le fichier Docker ci-dessous. L’image de base utilisée ici a rtvs-daemon, R 3.4.2 et les packages R courants préinstallés. **Remarque** : modifiez le nom d’utilisateur et le mot de passe indiqués ici, si nécessaire.
 

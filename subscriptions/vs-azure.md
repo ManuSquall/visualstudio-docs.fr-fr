@@ -9,12 +9,12 @@ description: Découvrez comment activer l’avantage Azure inclus dans votre abo
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 20d8474189df34dda9eb2ed7ef2b0e158f06f3b5
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: b8f3542fce0d04e4e6efeba6e2558740c5f5d12f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289558"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282311"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Utiliser Microsoft Azure dans les abonnements Visual Studio
 
@@ -97,7 +97,7 @@ Si vous pouvez acheter un abonnement directement, effectuez une des opérations 
 
 Comparez tous les [abonnements et leurs avantages](https://visualstudio.microsoft.com/vs/pricing/).
 
-Si vous avez un autre abonnement Visual Studio actif au **même** niveau d’abonnement sous un compte Microsoft, vous pouvez le lier à cet avantage Azure en ajoutant un [compte alternatif](manage-vs-subscriptions.md#linking-my-subscription-to-existing-vsts-or-azure-subscriptions) dans le portail des abonnements Visual Studio. Si cela ne fonctionne pas, vous pouvez également essayer de [transférer votre avantage Azure](/azure/billing/billing-subscription-transfer/) à l’abonnement Visual Studio actif.
+Si vous avez un autre abonnement Visual Studio actif au **même** niveau d’abonnement sous un compte Microsoft, vous pouvez le lier à cet avantage Azure en ajoutant un [compte alternatif](manage-vs-subscriptions.md#linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions) dans le portail des abonnements Visual Studio. Si cela ne fonctionne pas, vous pouvez également essayer de [transférer votre avantage Azure](/azure/billing/billing-subscription-transfer/) à l’abonnement Visual Studio actif.
 
 Si vous avez un autre abonnement Visual Studio actif à un niveau d’abonnement **différent** et sous un compte Microsoft, contactez le [support technique Azure](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade) pour obtenir de l’aide.
 
@@ -113,4 +113,4 @@ Si vous pensez que vous avez reçu cet e-mail par erreur, contactez le [support 
     - Support technique : [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
     - [Documentation Azure](/azure/)
 -  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  Vous avez des questions concernant l’IDE Visual Studio, Visual Studio Team Services ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
+-  Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).

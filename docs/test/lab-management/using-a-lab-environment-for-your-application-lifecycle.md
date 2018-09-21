@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7313c12558da4ddda6cd38c8a1dff135a6f55cb8
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 66ed9323b9298f588ad1f29267d88630fae0f39b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844301"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321175"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Utiliser un environnement lab pour votre DevOps
 
@@ -40,9 +40,9 @@ Voici quelques-unes des topologies d’environnements lab les plus courantes :
 |---|---|
 |  ![Icône représentant une caméra pour les vidéos](../../install/media/video-icon.png)  |    [Regardez une vidéo](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) sur la gestion des environnements lab en vue de tests. |
 
-## <a name="use-the-cloud-with-team-services-or-team-foundation-server-build-and-release"></a>Utiliser le cloud avec Build ou Mise en production de Team Services ou Team Foundation Server
+## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Utiliser le cloud avec les fonctionnalités Build et mise en production d’Azure Pipelines ou de Team Foundation Server
 
-Vous pouvez effectuer des tests automatisés et l’automatisation du cycle générer-déployer-tester en utilisant les fonctionnalités de [Build ou Mise en production](/vsts/build-release/) de Team Foundation Server (TFS) et de Visual Studio Team Services. En voici quelques-uns des avantages :
+Vous pouvez effectuer des tests automatisés et automatiser le cycle générer-déployer-tester en utilisant les fonctionnalités de [build et de mise en production](/azure/devops/pipelines/index?view=vsts) de Team Foundation Server (TFS) et d’Azure Test Plans. En voici quelques-uns des avantages :
 
 * Vous n’avez pas besoin d’un contrôleur de build ni d’un contrôleur de test.
 * L’agent de test est installé via une tâche dans le cadre de la génération ou de la mise en production.
@@ -85,12 +85,12 @@ Visual Studio Lab Management permet de créer deux types d’environnements lab�
 
 - **Modèles de machines virtuelles** : un modèle de machine virtuelle est une machine virtuelle dont le nom et les autres identificateurs ont été supprimés. Quand un modèle de machine virtuelle est déployé dans un environnement SCVMM, Microsoft Test Manager génère de nouveaux identificateurs. Cela vous permet de déployer plusieurs copies d'un ordinateur virtuel au sein d'un même environnement ou de plusieurs environnements, et d'exécuter simultanément les ordinateurs virtuels.
 
-- **Machines virtuelles stockées** : il s’agit de machines virtuelles qui sont stockées dans votre bibliothèque de projet d’équipe et qui ont des identificateurs uniques.
+- **Machines virtuelles stockées** : il s’agit de machines virtuelles qui sont stockées dans votre bibliothèque de projet et qui ont des identificateurs uniques.
 
 > [!NOTE]
 > Lab Management ne prend pas en charge SCVMM 2016.
 
-Pour plus d’informations sur SCVMM, consultez [Virtual Machine Manager](/vsts/build-release/apps/cd/scvmm/configure-scvmm).
+Pour plus d’informations sur SCVMM, consultez [Virtual Machine Manager](/azure/devops/pipelines/?view=vsts).
 
 Les environnements standard et SCVMM prennent en charge une grande partie de ces fonctionnalités. Il existe cependant des différences importantes. Le tableau ci-dessous permet de comparer les fonctionnalités qui sont disponibles pour les environnements standard et les environnements SCVMM.
 
@@ -119,9 +119,9 @@ Voici quelques termes supplémentaires avec lesquels vous devez vous familiarise
 |Terme|Description|
 |----------|-----------------|
 |Centre lab|Section de Microsoft Test Manager dans laquelle vous pouvez créer et gérer des environnements lab.|
-|Lab de projets d'équipe|Collection d'environnements lab configurés de manière à pouvoir être connectés les uns aux autres et à pouvoir exécuter les machines virtuelles qu'ils contiennent.|
-|Bibliothèque de projet d'équipe|Bibliothèque comprenant les archives des machines virtuelles, des modèles et des environnements lab stockés ayant été importés dans le groupe hôte d'un projet d'équipe. Vous pouvez utiliser les éléments de la bibliothèque dans les environnements SCVMM. Toutefois, vous ne pouvez pas les ajouter directement à un environnement standard. Les éléments de la bibliothèque ne peuvent pas être exécutés. Vous pouvez toutefois les utiliser pour déployer un nouvel environnement.|
-|Environnement déployé|Environnement lab déployé sur votre lab de projet d’équipe pour que vous puissiez vous y connecter et exécuter les ordinateurs qu’il comprend.|
+|Lab de projets Azure DevOps|Collection d'environnements lab configurés de manière à pouvoir être connectés les uns aux autres et à pouvoir exécuter les machines virtuelles qu'ils contiennent.|
+|Bibliothèque de projets Azure DevOps|Archive des machines virtuelles stockées, des modèles et des environnements lab stockés qui ont été importés dans le groupe hôte de votre projet. Vous pouvez utiliser les éléments de la bibliothèque dans les environnements SCVMM. Toutefois, vous ne pouvez pas les ajouter directement à un environnement standard. Les éléments de la bibliothèque ne peuvent pas être exécutés. Vous pouvez toutefois les utiliser pour déployer un nouvel environnement.|
+|Environnement déployé|Environnement lab déployé sur votre lab de projet pour que vous puissiez vous y connecter et exécuter ses ordinateurs.|
 
 Pour plus d'informations sur Lab Management, consultez :
 
@@ -134,7 +134,7 @@ Pour plus d'informations sur Lab Management, consultez :
 
 Pour plus d’informations sur la configuration des environnements, consultez :
 
-* [Environnements cloud Build et Mise en production](use-build-or-rm-instead-of-lab-management.md)
+* [Environnements cloud de build et de mise en production](use-build-or-rm-instead-of-lab-management.md)
 * [Environnements lab standard](https://msdn.microsoft.com/library/ee390842.aspx)
 * [Environnements (virtuels) SCVMM](https://msdn.microsoft.com/library/ee943322.aspx)
 * [Création et utilisation d’un environnement isolé du réseau](https://msdn.microsoft.com/library/ee518924.aspx)

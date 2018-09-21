@@ -1,7 +1,7 @@
 ---
 title: Gérer des interpréteurs et des environnements Python
 description: Utilisez la fenêtre Environnements Python pour gérer les environnements globaux, virtuels et conda, installer des interpréteurs et des packages Python et affecter des environnements à des projets Visual Studio.
-ms.date: 07/23/2018
+ms.date: 09/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bb2a93ae9c05bef49551e3dd3fa6d68d998e09ec
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 1efa65542fa22f1cb8cfb8c6988b18d86ea66c9b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586575"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320824"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Comment créer et gérer des environnements Python dans Visual Studio
 
@@ -38,7 +38,7 @@ Si vous voulez installer des packages dans un environnement, reportez-vous aux [
 
 ### <a name="global-environments"></a>Environnements globaux
 
-Chaque installation de Python (par exemple, Python 2.7, Python 3.6, Anaconda 4.4.0, etc. – voir [Installer des interpréteurs Python](installing-python-interpreters.md)) gère son propre environnement global. Chaque environnement se compose de l’interpréteur Python spécifique, de sa bibliothèque standard et d’un ensemble de packages préinstallés. L’installation d’un package dans un environnement global le rend disponible à tous les projets qui utilisent cet environnement. Si l’environnement se trouve dans une zone protégée du système de fichiers (par exemple, dans *c:\program files*), l’installation des packages nécessite des privilèges d’administrateur.
+Chaque installation de Python (par exemple Python 2.7, Python 3.6, Python 3.7, Anaconda 4.4.0, etc. – voir [Installer des interpréteurs Python](installing-python-interpreters.md)) gère son propre environnement global. Chaque environnement se compose de l’interpréteur Python spécifique, de sa bibliothèque standard et d’un ensemble de packages préinstallés. L’installation d’un package dans un environnement global le rend disponible à tous les projets qui utilisent cet environnement. Si l’environnement se trouve dans une zone protégée du système de fichiers (par exemple, dans *c:\program files*), l’installation des packages nécessite des privilèges d’administrateur.
 
 Les environnements globaux sont disponibles à tous les projets sur l’ordinateur. Dans Visual Studio, vous sélectionnez un environnement global par défaut, qui est utilisé pour tous les projets, sauf si vous choisissez spécifiquement un autre environnement pour un projet. Pour plus d’informations, consultez [Sélectionner un environnement pour un projet](selecting-a-python-environment-for-a-project.md).
 
@@ -76,6 +76,9 @@ Pour Visual Studio 2017 versions15.6 et antérieures, vous pouvez utiliser des e
 Visual Studio 2017 versions 15.7 et ultérieures détecte automatiquement les environnements conda et les affiche dans la fenêtre **Environnements Python** comme décrit dans la section suivante.
 
 ## <a name="the-python-environments-window"></a>Fenêtre Environnements Python
+
+> [!Note]
+> Les captures d’écran présentées dans cette section représentent Visual Studio 15.8. Vous pouvez voir une interface utilisateur légèrement différente selon votre version de Visual Studio.
 
 Les environnements connus de Visual Studio s’affichent sur la fenêtre **Environnements Python**. Pour ouvrir cette fenêtre, suivez l’une des méthodes ci-dessous :
 
@@ -183,6 +186,6 @@ Suivez les étapes ci-dessous pour identifier un environnement installé à un e
 
 - [Installer les interpréteurs Python](installing-python-interpreters.md)
 - [Sélectionner un interpréteur pour un projet](selecting-a-python-environment-for-a-project.md)
-- [Utilisation requirements.txt pour les dépendances](managing-required-packages-with-requirements-txt.md)
+- [Utiliser requirements.txt pour les dépendances](managing-required-packages-with-requirements-txt.md)
 - [Chemins de recherche](search-paths.md)
 - [Référence sur la fenêtre Environnements Python](python-environments-window-tab-reference.md)

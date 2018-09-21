@@ -10,11 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 6153a59e1875bf7b1dd81e794e0d15a37d47c2f4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6576a701abe699bfe47666acfc21c848dde1f53a
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35666681"
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>Aide dans Outil R pour Visual Studio
 
@@ -25,7 +26,7 @@ L’aide R est intégrée directement à la fenêtre interactive de Visual Stud
 > [!Tip]
 > À l’instar des autres fenêtres dans Visual Studio, vous pouvez réorganiser et ancrer la fenêtre d’aide comme bon vous semble. Consultez [Personnaliser les dispositions de fenêtres dans Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).
 >
-> Pour ouvrir les résultats de l’aide dans un navigateur, sélectionnez le menu **Outils R > Options** et affectez à la propriété **Navigateur de l’aide R** la valeur `External`. Consultez [Options](options-for-r-tools-in-visual-studio.md).
+> Pour ouvrir les résultats de l’aide dans un navigateur, sélectionnez le menu **Outils R** > **Options** et définissez la propriété **Navigateur de l’aide R** sur `External`. Consultez [Options](options-for-r-tools-in-visual-studio.md).
 
 Pour lancer une recherche dans l’aide, utilisez la commande `??` suivie du terme de recherche. Utilisez des guillemets si le terme de recherche contient des espaces :
 
@@ -43,21 +44,21 @@ La fenêtre d’aide comprend également un champ d’entrée de recherche qui v
 
 Les développeurs recherchent souvent de l’aide sur les noms de fonctions, les datasets et d’autres éléments dans la documentation R. Les outils R pour Visual Studio (RTVS) simplifient le processus en intégrant des fonctions de recherche directement dans l’éditeur et les fenêtres interactives.
 
-- Appuyez sur F1 pendant une opération de saisie semi-automatique pour générer une liste de rubriques d’aide correspondant à la sous-chaîne.
+- Appuyez sur **F1** pendant une opération de complétion automatique pour générer une liste de rubriques d’aide correspondant à la sous-chaîne.
 - Cliquez avec le bouton droit sur un terme de recherche (comme une fonction) et sélectionnez la commande **Aide sur** pour ouvrir la rubrique d’aide de cette fonction. Vous pouvez également appeler **Aide sur** pour n’importe quelle sélection.
 
     ![Appel de l’aide par le biais du menu contextuel](media/help-right-click.png)
 
 > [!Tip]
-> Pour ouvrir l’aide intégrée dans un navigateur, sélectionnez **Outils R > Options** et affectez à **Navigateur web (F1)** la valeur `External`. Consultez [Options](options-for-r-tools-in-visual-studio.md).
+> Pour ouvrir l’aide intégrée dans un navigateur, sélectionnez **Outils R** > **Options** et définissez **Navigateur web (F1)** sur `External`. Consultez [Options](options-for-r-tools-in-visual-studio.md).
 
 ## <a name="integrated-stackoverflow-search"></a>Recherche dans StackOverflow intégrée
 
-Outre la documentation R, les développeurs consultent souvent StackOverflow quand ils écrivent du code. RTVS simplifie également ce processus. Cliquez avec le bouton droit sur un terme ou une sélection et sélectionnez la commande **Rechercher sur le web** (Ctrl+F1). Visual Studio ouvre une fenêtre avec les résultats de la recherche limités à StackOverflow :
+Outre la documentation R, les développeurs consultent souvent StackOverflow quand ils écrivent du code. RTVS simplifie également ce processus. Cliquez avec le bouton droit sur un terme ou une sélection et sélectionnez la commande **Rechercher sur le web** (**Ctrl**+**F1**). Visual Studio ouvre alors une fenêtre avec les résultats de la recherche limités à StackOverflow :
 
 ![Résultats d’une recherche web dans Visual Studio](media/help-web-search-results.png)
 
-Vous pouvez modifier la chaîne de portée ajoutée, `R site:stackoverflow`, à l’aide de l’option **Outils R > Options > Chaîne de recherche web (F1)**  :
+Vous pouvez modifier la chaîne de délimitation ajoutée, `R site:stackoverflow` via l’option **Outils R** > **Options** > **Chaîne de recherche web (F1)** :
 
 ![Changement de l’option de chaîne de recherche web (F1)](media/options-dialog.png)
 

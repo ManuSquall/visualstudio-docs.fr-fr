@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bebbc778c71c464a6e4eabaebfff15760b99478
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 78e83a69e21c1c6cd1aa10235d66f63fb1e5e27a
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954257"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775217"
 ---
 # <a name="shortcut-keys-help-viewer"></a>Touches de raccourci (Help Viewer)
 
@@ -61,7 +61,7 @@ Vous pouvez naviguer dans la **visionneuse d’aide Microsoft** à l’aide des 
 |Rubrique|**Ctrl**+**Tab**|Basculer entre les onglets de gauche à droite.|
 |Rubrique|**Ctrl**+**Maj**+**Tab**|Basculer entre les onglets de droite à gauche.|
 |Rubrique|**Ctrl**+**W**|Fermer l’onglet actif.|
-|Rubrique|**Ctrl**+***Nombre***|Basculer vers un onglet spécifique où ***Nombre*** est un nombre compris entre 1 et 9 qui désigne l’onglet dans la séquence.|
+|Rubrique|**Ctrl**+**_Numéro_**|Basculer vers un onglet spécifique, où **_Numéro_** est un nombre compris entre 1 et 9, qui désigne l’onglet dans la séquence.|
 |Rubrique|**Ctrl**+**Alt**+**F4**|Fermer les autres onglets de contenu.|
 |Rubrique|**Ctrl**+**Maj**+**Signe plus**|Augmenter le zoom de 10 %.|
 |Rubrique|**Ctrl**+**Signe moins**|Réduire le zoom de 10 %.|

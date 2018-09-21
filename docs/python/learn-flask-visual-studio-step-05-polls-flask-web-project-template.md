@@ -1,7 +1,7 @@
 ---
 title: Tutoriel – Découvrir Flask dans Visual Studio, étape 5
 description: Une procédure pas à pas montrant les principes de base de Flask dans le contexte de projets Visual Studio, en particulier les fonctionnalités des modèles Projet web Flask de sondage et Projet web Flask/Jade de sondage.
-ms.date: 05/25/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 016305c47da13c879e2895660915121cd93f33e3
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 418ea3661f236866bbadcf278f288632c5e49435
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637615"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280092"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Étape 5 : Utiliser le modèle de projet web Flask de sondage
 
@@ -356,7 +356,7 @@ L’exécution d’une application web sur votre ordinateur de développement n�
 
 - Ajoutez une implémentation du dépôt qui utilise un autre magasin de données de niveau production, comme PostgreSQL, MySQL et SQL Server (chacun pouvant être hébergé sur Azure). Vous pouvez aussi utiliser [Azure SDK pour Python](azure-sdk-for-python.md) pour travailler avec des services de stockage Azure, comme Stockage Table ou Stockage Blob, ainsi que Cosmos DB.
 
-- Configurer un pipeline d’intégration continue/de déploiement continu sur un service comme Visual Studio Team Services (VSTS). Au-delà de l’utilisation avec le contrôle de code source (sur VSTS, GitHub ou ailleurs), VSTS peut exécuter automatiquement vos tests unitaires comme condition préalable à la mise en production, ainsi que configurer le pipeline à déployer sur un serveur de mise en lots pour des tests supplémentaires avant le déploiement de production. Par ailleurs, VSTS s’intègre aux solutions de surveillance comme App Insights et complète le cycle avec des outils de planification agile. Pour plus d'informations, voir :
+- Configurez un pipeline d’intégration continue/de déploiement continu sur un service comme Azure Pipelines. En plus de l’utilisation du contrôle de code source (sur Azure Repos, GitHub ou ailleurs), Azure Test Plans peut exécuter automatiquement vos tests unitaires comme condition préalable à la mise en production, ainsi que configurer le pipeline pour déployer sur un serveur de préproduction pour des tests supplémentaires avant le déploiement en production. Par ailleurs, Azure DevOps Services s’intègre aux solutions de supervision comme App Insights et complète le cycle avec des outils de planification agile. Pour plus d'informations, voir :
 
-  - [Créer un pipeline d’intégration continue (CI) pour Python avec le projet Azure DevOps](/azure/devops-project/azure-devops-project-python?view=vsts)
+  - [Créer un pipeline CI/CD pour Python avec Azure DevOps Projects](/azure/devops-project/azure-devops-project-python?view=vsts)
   - [Développement Python dans Azure avec Visual Studio Team Services (vidéo, 11 min, 21 s)](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/).

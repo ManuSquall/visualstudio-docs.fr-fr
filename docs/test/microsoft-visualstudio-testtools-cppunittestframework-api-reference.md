@@ -9,20 +9,20 @@ manager: douge
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 973147bd497f9202227ab36a1beb948c51c7c698
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8309ee96b0948739124e0e23c4a57dd136f63362
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381984"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280920"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Informations de référence sur l’API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
 Cette rubrique liste les membres publics de l’espace de noms `Microsoft::VisualStudio::CppUnitTestFramework`. Utilisez ces API pour écrire des tests unitaires C++ basés sur le framework de tests unitaires natifs Microsoft. Vous pouvez trouver un [exemple d’utilisation](#example) à la fin de la rubrique.
 
- Les fichiers d’en-tête se trouvent dans le dossier *DossierInstallationVisualStudio2012[x86]***\VC\UnitTest\include**.
+ Les fichiers d’en-tête se trouvent dans le dossier _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\include**.
 
- Les fichiers lib se trouvent dans le dossier *DossierInstallationVisualStudio2012[x86]***\VC\UnitTest\lib**.
+ Les fichiers lib se trouvent dans le dossier _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\lib**.
 
 Les chemins des fichiers d’en-tête et de bibliothèque sont configurés automatiquement dans un projet de test natif.
 

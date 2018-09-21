@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e46b8af413f7f86592ed6c9362ca9f11e61c436f
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 372cc01f1d7a0a21832ff099472e444d43d7a699
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380376"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320538"
 ---
 # <a name="how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter"></a>Guide pratique pour créer un éditeur personnalisé pour les données de votre adaptateur de données de diagnostic
 
@@ -184,7 +184,7 @@ Pour obtenir un exemple complet de projet d’adaptateur de données de diagnost
 
      Le fichier de données que vous avez spécifié dans votre éditeur est joint à vos résultats de tests.
 
- Pour plus d’informations sur la configuration de vos paramètres de test pour l’utilisation d’un environnement lors de l’exécution de vos tests, consultez [Collecter des données de diagnostic durant les tests (VSTS)](/vsts/manual-test/collect-diagnostic-data) ou [Collecter des données de diagnostic dans les tests manuels (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
+ Pour plus d’informations sur la configuration de vos paramètres de test pour l’utilisation d’un environnement lors de l’exécution de vos tests, consultez [Collecter des données de diagnostic durant les tests (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts) ou [Collecter des données de diagnostic dans les tests manuels (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 4ac7aa7d9fbbf4e6f6ffbe5eafd82ff8f1e0bc44
-ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
+ms.openlocfilehash: 069150d7f441b754b21c0a3a487f5238ef94e039
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43054554"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775102"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>FAQ concernant l’Explorateur de tests Visual Studio
 
@@ -30,7 +30,7 @@ ms.locfileid: "43054554"
 
   Générez votre projet et vérifiez que la découverte basée sur les assemblys est activée sous **Outils** > **Options** > **Test**.
 
-  La [découverte de tests en temps réel](https://go.microsoft.com/fwlink/?linkid=862824) correspond à la découverte de tests basée sur les sources. Elle ne peut pas découvrir les tests qui utilisent des théories, des adaptateurs personnalisés, des caractéristiques personnalisés, des instructions `#ifdef`, etc. car ils sont définis au moment de l’exécution. Une build est nécessaire pour découvrir correctement ces tests. Dans les préversions 15.6, la découverte basée sur les assemblys (le découvreur traditionnel) s’exécute uniquement après les builds. En d’autres termes, la découverte de tests en temps réel découvre autant de tests que possible au fur et à mesure que vous effectuez des modifications, et la découverte basée sur les assemblys permet de faire apparaître les tests définis dynamiquement après une build. La découverte de tests en temps réel améliore la réactivité, tout en vous permettant d’obtenir des résultats complets et précis après une build.
+  La [découverte de tests en temps réel](https://go.microsoft.com/fwlink/?linkid=862824) correspond à la découverte de tests basée sur les sources. Elle ne peut pas découvrir les tests qui utilisent des théories, des adaptateurs personnalisés, des caractéristiques personnalisées, des instructions `#ifdef`, etc., car ils sont définis au moment de l’exécution. Une build est nécessaire pour découvrir correctement ces tests. Dans Visual Studio 2017 version 15.6 et ultérieure, la découverte basée sur les assemblys (le découvreur traditionnel) s’exécute seulement après les builds. En d’autres termes, la découverte de tests en temps réel découvre autant de tests que possible au fur et à mesure que vous effectuez des modifications, et la découverte basée sur les assemblys permet de faire apparaître les tests définis dynamiquement après une build. La découverte de tests en temps réel améliore la réactivité, tout en vous permettant d’obtenir des résultats complets et précis après une build.
 
 ## <a name="test-explorer--plus-symbol"></a>Symbole « + » (plus) de l’Explorateur de tests
 **Que signifie le signe plus (+) qui apparaît sur la ligne supérieure l’Explorateur de tests ?**
@@ -93,6 +93,31 @@ Tous les projets de test doivent inclure leur référence d’adaptateur de test
 Le **projet de test{} ne référence aucun adaptateur .NET NuGet. La découverte ou l’exécution de tests risquent de ne pas fonctionner pour ce projet. Il est recommandé de référencer les adaptateurs de test NuGet dans chaque projet de test .NET de la solution.**
 
 Au lieu d’utiliser des extensions d’adaptateur de test, les projets doivent utiliser les packages NuGet de l’adaptateur de test. Cela améliore considérablement les performances et entraîne moins de problèmes avec l’intégration continue. En savoir plus sur la dépréciation de l’Extension de l’adaptateur de Test .NET dans les [notes de version](/visualstudio/releasenotes/vs2017-preview-relnotes#testadapterextension).
+
+> [!NOTE]
+> Si vous utilisez l’adaptateur de test NUnit 2 et que vous ne pouvez pas migrer vers l’adaptateur de test NUnit 3, vous pouvez désactiver ce nouveau comportement de la découverte dans Visual Studio version 15.8 dans **Outils** > **Options**  >  **Test**. 
+
+  ![Comportement de l’adaptateur de l’Explorateur de tests dans les options des outils](media/testex-adapterbehavior.png)
+
+## <a name="uwp-testcontainer-was-not-found"></a>TestContainer UWP est introuvable
+**Mes tests UWP ne sont plus exécutés dans Visual Studio 2017 version 15.7 et ultérieure.**
+
+Les projets de test UWP récents spécifient une propriété de génération de plateforme de test qui permet de meilleures performances pour identifier les applications de test. Si vous avez un projet de test UWP qui a été initialisé avant Visual Studio version 15.7, vous pouvez voir l’erreur suivante dans **Sortie** > **Tests** :
+
+**System.AggregateException : Une ou plusieurs erreurs se sont produites. ---> System.InvalidOperationException : Le TestContainer suivant est introuvable {} sur Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider <GetTestContainerAsync>d__61.MoveNext()**
+  
+Pour résoudre ce problème :
+- Mettez à jour votre propriété de génération de projet de test vers ceci :
+
+```XML
+<UnitTestPlatformVersion Condition="'$(UnitTestPlatformVersion)' == ''">$(VisualStudioVersion)</UnitTestPlatformVersion>
+```
+
+- Mettez à jour la version du SDK TestPlatform vers ceci :
+
+```XML
+<SDKReference Include="TestPlatform.Universal, Version=$(UnitTestPlatformVersion)" />
+```
 
 ## <a name="using-feature-flags"></a>Utiliser les indicateurs de fonctionnalités
 **Comment puis-je activer les indicateurs de fonctionnalités pour tester les nouvelles fonctionnalités de test ?**

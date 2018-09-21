@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d57aa718216b796cf5e7f008186abedc709d108
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 90dfae7e891c805a785db8bba00d3c75d2a84bf3
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177004"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384160"
 ---
 # <a name="toolbox-html-tab"></a>Boîte à outils, onglet HTML
 
@@ -117,7 +117,7 @@ Quand vous faites glisser **Input (Password)** sur la surface en mode Design, un
 ```
 
 > [!IMPORTANT]
-> Si l’application transmet des noms d’utilisateurs et des mots de passe, il est recommandé de configurer le site web afin qu’il utilise le protocole SSL (Secure Sockets Layer) pour chiffrer la transmission. Pour plus d’informations, consultez la rubrique relative à la sécurisation des connexions avec SSL dans le [Guide des opérations IIS](http://go.microsoft.com/fwlink/?linkid=47856). Il est, en outre, recommandé de valider toutes les entrées d’utilisateur. Pour plus d’informations, consultez [Validation des entrées d’utilisateur sur des sites de pages web ASP.NET (Razor)](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).
+> Si l’application transmet des noms d’utilisateurs et des mots de passe, il est recommandé de configurer le site web afin qu’il utilise le protocole SSL (Secure Sockets Layer) pour chiffrer la transmission. Pour plus d’informations, consultez [Sécurisation des connexions](/previous-versions/tn-archive/bb418917(v=technet.10)). Il est, en outre, recommandé de valider toutes les entrées d’utilisateur. Pour plus d’informations, consultez [Validation des entrées d’utilisateur sur des sites de pages web ASP.NET (Razor)](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).
 
 **Input (Check box)**
 

@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7d56030b78abe57c80d816881991b9819ed6456b
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 7f4c98c9279fe4153fb69e371f51833be382090d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924739"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774599"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Développer du code JavaScript et TypeScript dans Visual Studio sans solutions ni projets
 
@@ -58,3 +58,27 @@ Si un fichier *tsconfig.json* figure dans le dossier, vous pouvez cliquer avec l
 
 > [!NOTE]
 > Vous trouverez plus d’informations sur *tsconfig.json* dans la [page du manuel TypeScript sur tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html).
+
+## <a name="unit-tests"></a>Tests unitaires
+Vous pouvez activer l’intégration des tests unitaires dans Visual Studio en spécifiant une racine de test dans votre fichier *package.json* :
+
+```json
+{
+    // ...
+    "vsTest":{
+        "testRoot": "./tests"
+    }
+    // ...
+}
+```
+
+L’exécuteur de tests énumère les packages installés localement pour déterminer quelle infrastructure de test utiliser.
+Si aucune des infrastructures prises en charge n’est reconnue, l’exécuteur de tests utilise par défaut *ExportRunner*. Les autres infrastructures prises en charge sont :
+* Mocha ([mochajs.org](http://mochajs.org/))
+* Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
+* Tape ([github.com/substack/tape](https://github.com/substack/tape))
+
+Après l’ouverture de l’Explorateur de tests (choisissez **Test** > **Fenêtres** > **Explorateur de tests**), Visual Studio détecte et affiche les tests.
+
+> [!NOTE]
+> L’exécuteur de tests énumère seulement les fichiers JavaScript à la racine de test : si votre application est écrite en TypeScript, vous devez d’abord générer ces fichiers.

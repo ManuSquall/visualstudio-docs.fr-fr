@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6cf63d830a90e7240ec0adb4d191b8b765ebb1d4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1222f1aaa68c573a61bf10e3935e21330aa63260
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380356"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320902"
 ---
 # <a name="unit-test-your-code"></a>Tests unitaires de votre code
 
@@ -49,8 +49,8 @@ Utilisez les rubriques suivantes pour mieux comprendre et créer les tests unita
 |**Effectuer des tests unitaires sur du code C++**|-   [Écrire des tests unitaires pour C/C++ à l’aide du framework de tests unitaires Microsoft pour C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|
 |**Isolation des tests unitaires**|-   [Isoler du code testé avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|
 |**Utiliser la couverture du code pour identifier la proportion du code de votre projet qui est testée :** découvrez plus d’informations sur la fonctionnalité de couverture du code des outils de test de Visual Studio.|-   [Utiliser la couverture du code pour déterminer la quantité de code testé](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**Effectuer une analyse des contraintes et des performances avec des tests de charge :** vous pouvez créer un test de charge et lui ajouter vos tests unitaires pour isoler les problèmes de contraintes et de performances de votre application.|-   [Tests de charge (VSTS et TFS)](/vsts/load-test/)|
-|**Définir des niveaux de qualité :** vous pouvez créer des niveaux de qualité pour que les tests soient exécutés avant que le code ne soit archivé, de façon à garantir la qualité du code.|-   [Stratégies d’archivage (VSTS)](/vsts/tfvc/add-check-policies)|
+|**Effectuer une analyse des contraintes et des performances avec des tests de charge :** vous pouvez créer un test de charge et lui ajouter vos tests unitaires pour isoler les problèmes de contraintes et de performances de votre application.|-   [Tests de charge (Azure Test Plans et TFS)](/azure/devops/test/load-test/index?view=vsts)|
+|**Définir des niveaux de qualité :** vous pouvez créer des niveaux de qualité pour que les tests soient exécutés avant que le code soit archivé ou fusionné, de façon à garantir la qualité du code.|-   [Stratégies d’archivage (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
 |**Définir les options de test :** par exemple, vous pouvez spécifier l’emplacement de stockage des résultats des tests.|[Configurer des tests unitaires à l’aide d’un fichier .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>Documentation de référence des API

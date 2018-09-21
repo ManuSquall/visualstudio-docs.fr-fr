@@ -10,15 +10,16 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 8086d28c9591195c90268b52a03325b8acc2e420
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4063787711ae825cd587f72d735710444906d99b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35666512"
 ---
 # <a name="package-manager"></a>Gestionnaire de package
 
-Le Gestionnaire de package Outils R pour Visual Studio (RTVS) est une interface utilisateur pour la gestion des packages R. Pour l’ouvrir, sélectionnez **Outils R > Windows > Packages** ou appuyez sur Ctrl+7.
+Le Gestionnaire de package Outils R pour Visual Studio (RTVS) est une interface utilisateur pour la gestion des packages R. Pour l’ouvrir, sélectionnez **Outils R** > **Windows** > **Packages** ou appuyez sur **Ctrl**+**7**.
 
 Le Gestionnaire de package comporte trois onglets. Chaque onglet affiche une liste des packages pertinents sur la gauche et des détails spécifiques sur le package sélectionné sur la droite, notamment la version, la description, la licence et l’emplacement d’installation du package, ainsi que des liens vers d’autres informations pertinentes. La zone de recherche dans le coin supérieur droit vous permet de filtrer la liste.
 
@@ -41,5 +42,5 @@ Le Gestionnaire de package comporte trois onglets. Chaque onglet affiche une lis
 
 Les packages sont installés aux emplacements suivants :
 
-- Les packages de base fournis avec RTV sont installés dans `C:\Program Files\Microsoft\R Client\R_SERVER\library`.
-- Les packages supplémentaires sont installés dans `%userprofile%\Documents\R\win-library\3.3`.
+- Les packages de base qui sont fournis avec RTVS sont installés dans *C:\Program Files\Microsoft\R Client\R_SERVER\library*
+- Les packages supplémentaires sont installés dans *%userprofile%\Documents\R\win-library\3.3*

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e96da4ad8f55db251f816516c00502991053f7
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: b3a3b798b704111c8afdbaaaa3b219b876ebf6ff
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138420"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280582"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy
 
@@ -68,7 +68,7 @@ Si vous ou votre organisation utilisez des mesures de sécurité tel qu’un par
 | download.oracle.com | Développement mobile avec JavaScript (Kit de développement logiciel (SDK) Java) <br /><br />Développement mobile en .NET (Kit de développement logiciel (SDK) Java) |
 | download.unity3d.com | Développement de jeux avec Unity (Unity) |
 | netstorage.unity3d.com | Développement de jeux avec Unity (Unity) |
-| dl.google.com | Développement mobile avec JavaScript (Kit de développement logiciel Android et NDK, Emulator) <br /><br />Développement mobile avec .NET (Kit de développement logiciel Android et NDK, Emulator) |
+| dl.google.com | Développement mobile avec JavaScript (Android SDK et NDK, émulateur) <br /><br />Développement mobile avec .NET (Android SDK et NDK, émulateur) |
 | www.incredibuild.com | Développement de jeux avec C++ (Incredibuild) |
 | incredibuildvs2017i.azureedge.net | Développement de jeux avec C++ (Incredibuild) |
 | www.python.org | Développement Python (Python) <br /><br />Applications de science des données et analytiques (Python) |
@@ -96,7 +96,7 @@ Pour vous assurer que vous avez accès à tout ce dont vous avez besoin lorsque 
 | Package NPM <br>découverte  |Skimdb.npmjs.com <br><br>Registry.npmjs.org <br><br>Api.npms.io  | https<br><br>http/s<br><br>https | 443<br><br>80/443<br><br>443| Requis pour la recherche de packages NPM et utilisé pour l’installation de packages de scripts côté client dans les projets Web |
 |Package de Bower<br> icônes<br><br>Package de Bower <br>search  |Bower.io <br><br>bowercache.azurewebsites.net <br>go.microsoft.com <br>Registry.bower.io | http<br><br>https<br>http<br>https|80<br><br>443<br>80<br>443 |Fournit l’icône de package Bower par défaut  <br><br>Offre la possibilité de rechercher des packages Bower |
 |NuGet<br><br>Package NuGet<br> découverte | Api.nuget.org <br>www.nuget.org <br>Nuget.org<br><br>crl3.digicert.com <br>crl4.digicert.com <br>ocsp.digicert.com <br>cacerts.digicert.com  | https<br><br>http/s |443<br><br>80/443<br> |Permet de vérifier les packages NuGet signés.<br><br>Requis pour la recherche des versions et packages NuGet |
-|Informations de référentiel GitHub  |api.github.com  |https | 443| Requis pour l’obtention d’informations supplémentaires sur les packages Bower |
+|Informations de dépôt GitHub  |api.github.com  |https | 443| Requis pour l’obtention d’informations supplémentaires sur les packages Bower |
 | Linters Web|Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org  | http|80 | |
 | Cookiecutter<br>Modèle Explorer<br>découverte <br><br>Cookiecutter <br>Projet Explorer<br> création | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org  | https | 443<br> | Permet de détecter les modèles en ligne à partir de notre flux recommandé et de dépôts Github <br><br>Permet de créer un projet à partir d’un modèle cookiecutter qui requiert une installation à la demande unique d’un package Python cookiecutter à partir de l’index du package Python (PyPI)|
 | Package Python <br>découverte<br><br>Package Python <br>gestion<br><br>Python <br>Nouveau projet <br>C++| pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com| https| 443| Offre la possibilité de rechercher des packages pip<br><br>Permet d’installer le pip automatiquement s’il est manquant <br><br> Permet de créer le <br><br>Permet de résoudre les modèles de projets Python suivants dans la boîte de dialogue Nouveau projet pour les URL du modèle de cookiecutter :<br> - Projet Classifier<br>- Projet clustering <br> - Projet Regression <br> - PyGame avec PyKinect <br> - Projet Pyvot |
@@ -119,7 +119,7 @@ Pour vous assurer que vous avez accès à tout ce dont vous avez besoin lorsque 
 |Azure Stream Analytics <br><br>HDInsight | Management.azure.com |https|443 |Permet d’afficher, soumettre, exécuter et gérer des travaux ASA <br><br> Permet de parcourir des clusters HDI et soumettre, diagnostiquer et déboguer des travaux HDI |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | Permet de compiler, soumettre, afficher, diagnostiquer et déboguer des travaux ; utilisé pour parcourir des fichiers ADLS ; permet de charger et télécharger des fichiers |
 | Service d’empaquetage | [compte].visualstudio.com <br/> [compte].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | *.npmjs.org, *.nuget.org et *.nodejs.org ne sont nécessaires que dans certains scénarios de tâches de build (par exemple, le programme d’installation d’outils de NuGet ou de Node), ou pour utiliser des flux ascendants publics. Les trois autres domaines sont requis pour les fonctionnalités de base du service de création de packages. |
-| VSTS | *.vsassets.io <br/> static2.sharepointonline.com  |  |  | Utilisé pour se connecter avec VSTS |
+| Azure DevOps Services | *.vsassets.io <br/> static2.sharepointonline.com  |  |  | Utilisé pour se connecter avec Azure DevOps Services |
 |||||||
 
 ## <a name="troubleshoot-network-related-errors"></a>Résoudre les erreurs liées au réseau

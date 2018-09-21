@@ -9,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64e51bd43d278eb681d08b785c2a7d0c9539ee23
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 0eaba2b81467c60e900aa70b633e15b81175ffc7
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179695"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283468"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Utiliser plusieurs comptes d’utilisateur
 
@@ -59,9 +59,9 @@ Azure AD permet de prendre en charge l'authentification unique des utilisateurs 
 
 Pour plus d’informations sur les différents types d’authentification dans ASP.NET, consultez [Creating ASP.NET web projects in Visual Studio 2013](http://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (les informations relatives à l’authentification sont toujours applicables aux versions actuelles de Visual Studio).
 
-### <a name="access-your-visual-studio-team-services-account"></a>Accéder à votre compte Visual Studio Team Services
+### <a name="access-your-team-foundation-server-tfs-organization"></a>Accéder à votre organisation Team Foundation Server (TFS)
 
-Dans le menu principal, choisissez **Équipe** > **Se connecter à Team Foundation Server** pour afficher la fenêtre **Team Explorer**. Cliquez sur **Sélectionner les projets d’équipe**puis, dans la zone de liste sous **Sélectionner un serveur Team Foundation Server**, vous devriez voir l’URL de votre compte Visual Studio Team Services. Lorsque vous sélectionnez l'URL, vous êtes connecté sans avoir à entrer une nouvelle fois vos informations d'identification.
+Dans le menu principal, choisissez **Équipe** > **Se connecter à Team Foundation Server** pour afficher la fenêtre **Team Explorer**. Cliquez sur **Sélectionner des projets** puis, dans la zone de liste sous **Sélectionner un serveur Team Foundation Server**, vous devez voir l’URL de votre organisation Team Foundation Server. Lorsque vous sélectionnez l'URL, vous êtes connecté sans avoir à entrer une nouvelle fois vos informations d'identification.
 
 ## <a name="add-a-second-user-account-to-visual-studio"></a>Ajouter un deuxième compte d'utilisateur à Visual Studio
 

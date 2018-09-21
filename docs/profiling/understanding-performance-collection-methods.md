@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a6312a674cc3e9764971f2add59c8e1f0441790
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d278f8ca6019dd8a29d5e4c57e1e191137a32972
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477481"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668770"
 ---
 # <a name="understand-performance-collection-methods"></a>Présenter les méthodes de collecte des performances
 
@@ -32,10 +32,10 @@ Les outils de profilage Visual Studio fournissent cinq méthodes que vous pouvez
 |[Échantillonnage](#sampling)|Collecte des données statistiques sur le travail effectué par une application.|
 |[Instrumentation](#instrumentation)|Collecte des informations de minutage détaillées sur chaque appel de fonction.|
 |[Concurrence](#concurrency)|Collecte des informations détaillées sur les applications multithreads.|
-|[Mémoire .NET](#net_memory)|Collecte des informations détaillées sur l’allocation et la garbage collection de la mémoire .NET.|
-|[Interaction de couche](#tier_interaction)|Collecte des informations sur les appels de fonction ADO.NET synchrones à une base de données SQL Server.<br /><br /> Pour collecter des données de profilage d’interaction de couche, vous pouvez utiliser n’importe quelle édition de Visual Studio. Cependant, ces données ne sont consultables que dans Visual Studio Enterprise.|
+|[Mémoire .NET](#net-memory)|Collecte des informations détaillées sur l’allocation et la garbage collection de la mémoire .NET.|
+|[Interaction de couche](#tier-interaction)|Collecte des informations sur les appels de fonction ADO.NET synchrones à une base de données SQL Server.<br /><br /> Pour collecter des données de profilage d’interaction de couche, vous pouvez utiliser n’importe quelle édition de Visual Studio. Cependant, ces données ne sont consultables que dans Visual Studio Enterprise.|
 
-À l’aide de certaines méthodes de profilage, vous pouvez également collecter des données supplémentaires, comme les compteurs de performances matérielles et logicielles. Pour plus d’informations, consultez [Collecte de données de performances supplémentaires](../profiling/collecting-additional-performance-data.md).
+À l’aide de certaines méthodes de profilage, vous pouvez également collecter des données supplémentaires, comme les compteurs de performances matérielles et logicielles. Pour plus d’informations, consultez [Collecte des données de performances supplémentaires](../profiling/collecting-additional-performance-data.md).
 
 ## <a name="sampling"></a>Échantillonnage
 

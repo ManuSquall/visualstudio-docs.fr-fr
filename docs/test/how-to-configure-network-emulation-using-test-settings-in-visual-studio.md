@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a4639e59b8c8847a4368a0f3841fa271a302e7ca
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2ce10d096ff646b462c7b0aff2cbcf33493aad0c
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380842"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320655"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Guide pratique pour configurer l’émulation réseau à l’aide de paramètres de test dans Visual Studio
 
@@ -85,4 +85,4 @@ Un compte qui est doté de privilèges d'administrateur doit être utilisé pour
 ## <a name="see-also"></a>Voir aussi
 
 - [Collecter des informations de diagnostic à l’aide des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md)
-- [Exécuter des tests manuels (VSTS)](/vsts/manual-test/getting-started/run-manual-tests)
+- [Exécuter des tests manuels (Azure Test Plans)](/azure/devops/test/run-manual-tests?view=vsts)

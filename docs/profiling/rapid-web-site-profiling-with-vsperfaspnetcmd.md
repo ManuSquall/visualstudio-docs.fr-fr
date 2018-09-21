@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2efa8cf966967b07e1dbbfe5e2e1f6b7f8f6aef7
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: f0ad2c1411a47acd0219223fe928e4150368c80a
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572879"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43780684"
 ---
-# <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Profilage de site web rapide avec VSPerfASPNETCmd
+# <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Profilage rapide de sites web avec VSPerfASPNETCmd
 
 L’outil en ligne de commande **VSPerfASPNETCmd** vous permet de profiler facilement des applications web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Par rapport à l’outil en ligne de commande [VSPerfCmd](../profiling/vsperfcmd.md), cet outil comporte moins d’options et ne nécessite ni configuration de variables d’environnement, ni redémarrage de l’ordinateur. L’utilisation de **VSPerfASPNETCmd** est la méthode recommandée pour le profilage avec le profileur autonome. Pour plus d’informations, consultez [Guide pratique pour installer le profileur autonome](../profiling/how-to-install-the-stand-alone-profiler.md).
 
@@ -29,27 +29,27 @@ L’outil en ligne de commande **VSPerfASPNETCmd** vous permet de profiler facil
  Dans certains scénarios, comme la collecte des données d’accès concurrentiel, ou la suspension et reprise du profilage, **VSPerfCmd** est la méthode de profilage recommandée.
 
 > [!NOTE]
-> Les outils en ligne de commande des Outils de profilage se trouvent dans le sous-répertoire *\Team Tools\Performance Tools* du répertoire d’installation de Visual Studio. Sur les ordinateurs 64 bits, utilisez l’outil VSPerfASPNETCmd qui se trouve dans le répertoire 32 bits *\Team Tools\Performance Tools*. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes ou bien l’ajouter à la commande elle-même. Pour plus d’informations, consultez [Spécification du chemin d’accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+> Les outils en ligne de commande des Outils de profilage se trouvent dans le sous-répertoire *\Team Tools\Performance Tools* du répertoire d’installation de Visual Studio. Sur les ordinateurs 64 bits, utilisez l’outil VSPerfASPNETCmd qui se trouve dans le répertoire 32 bits *\Team Tools\Performance Tools*. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes ou bien l’ajouter à la commande elle-même. Pour plus d’informations, consultez [Spécifier le chemin d’accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
-## <a name="profiling-an-aspnet-application"></a>Profiler une application ASP.NET
+## <a name="profile-an-aspnet-application"></a>Profiler une application ASP.NET
 
 Pour profiler une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], tapez une des commandes décrites dans les sections suivantes. Votre site web est démarré et le profileur commence à collecter des données. Utilisez votre application, puis fermez le navigateur. Pour arrêter le profilage, appuyez sur la touche **Entrée** dans la fenêtre d’invite de commandes.
 
 > [!NOTE]
-> Par défaut, l’invite de commandes ne réapparaît pas après une commande **vsperfaspnetcmd**. Vous pouvez utiliser l’option **/nowait** pour forcer le retour de l’invite de commandes. Consultez [Utiliser l’option /NoWait](#UsingNoWait).
+> Par défaut, l’invite de commandes ne réapparaît pas après une commande **vsperfaspnetcmd**. Vous pouvez utiliser l’option **/nowait** pour forcer le retour de l’invite de commandes. Consultez [Utiliser l’option /NoWait](#use-the-nowait-option).
 
 ## <a name="to-collect-application-statistics-by-using-the-sampling-method"></a>Pour collecter des statistiques d’application à l’aide de la méthode d’échantillonnage
- L’échantillonnage est la méthode de profilage par défaut de l’outil **VSPerfASPNETCmd** et il n’est pas nécessaire de le spécifier sur la ligne de commande. La ligne de commande suivante collecte les statistiques de l’application web spécifiée :
+ L’échantillonnage est la méthode de profilage par défaut de l’outil **VSPerfASPNETCmd** et il n’est pas nécessaire de le spécifier sur la ligne de commande. La ligne de commande suivante collecte les statistiques de l’application web spécifiée :
 
  **vsperfaspnetcmd**  *URL_site_web*
 
 ## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>Pour collecter les données de minutage détaillées en utilisant la méthode d’instrumentation
 
-Utilisez la ligne de commande suivante pour collecter les données de minutage détaillées pour une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilée dynamiquement :
+Utilisez la ligne de commande suivante pour collecter les données chronologique détaillées pour une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilée dynamiquement :
 
 **vsperfaspnetcmd /trace**  *URL_site_web*
 
-Si vous souhaitez profiler des fichiers .*dll* compilés statiquement dans votre application web, vous devez instrumenter les fichiers à l’aide de l’outil en ligne de commande [VSInstr](../profiling/vsinstr.md). La commande vsperfaspnetcmd /trace inclut alors les données des fichiers instrumentés.
+Si vous voulez profiler des fichiers .*dll* compilés statiquement dans votre application web, vous devez instrumenter les fichiers avec l’outil en ligne de commande [VSInstr](../profiling/vsinstr.md). La commande vsperfaspnetcmd /trace inclut alors les données des fichiers instrumentés.
 
 ## <a name="to-collect-net-memory-data"></a>Pour collecter des données de mémoire .NET
 
@@ -82,15 +82,15 @@ Pour collecter les données d’interaction de couche avec les données d’inst
 
 Pour collecter les données d’interaction de couche avec les données de mémoire .NET :
 
-**vsperfaspnetcmd /memory**[**:lifetime**] **/tip***websiteUrl*
+**vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_URL_site_web_
 
-## <a name="UsingNoWait"></a> Utilisation de l’option /NoWait
+## <a name="use-the-nowait-option"></a>Utiliser l’option /NoWait
 
 Par défaut, l’invite de commandes ne réapparaît pas après une commande **vsperfaspnetcmd**. Vous pouvez utiliser l’option de syntaxe suivante pour forcer le retour de l’invite de commandes. Vous pouvez alors effectuer d’autres opérations dans la fenêtre d’invite de commandes. Pour terminer le profilage, utilisez l’option **/shutdown** dans une commande **vsperfaspnetcmd** distincte.
 
 Pour démarrer le profilage :
 
-**vsperfaspnetcmd** [*/Options*] **/nowait***websiteUrl*
+**vsperfaspnetcmd** [*/Options*] **/nowait**_URL_site_web_
 
 Pour terminer le profilage :
 

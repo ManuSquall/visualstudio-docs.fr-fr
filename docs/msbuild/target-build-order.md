@@ -1,7 +1,7 @@
 ---
 title: Ordre de génération des cibles | Microsoft Docs
 ms.custom: ''
-ms.date: 06/06/2018
+ms.date: 09/04/2018
 ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90118003afcb8227ec3598110c38f3f0951e9adb
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9bab71bce4ccec17f485f6aafad7389e3b981b6e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178954"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774943"
 ---
 # <a name="target-build-order"></a>Ordre de génération des cibles
 Les cibles doivent être classées si l’entrée d’une cible dépend de la sortie d’une autre. Vous pouvez utiliser les attributs suivants pour spécifier l’ordre d’exécution des cibles :  
@@ -114,7 +114,7 @@ Les cibles doivent être classées si l’entrée d’une cible dépend de la so
 
     Les cibles qui listent la cible conditionnelle dans `BeforeTargets` ou `AfterTargets` s’exécutent toujours dans l’ordre indiqué
   
-4.  Avant l’exécution d’une cible, ses cibles `DependsOnTargets` sont exécutées.  
+4.  Avant qu’une cible soit exécutée ou ignorée, si son attribut `Condition` était absent ou n’a pas été évalué à `false`, ses cibles `DependsOnTargets` sont exécutées.  
   
 5.  Avant qu’une cible ne soit exécutée ou ignorée, toute cible qui la répertorie dans un attribut `BeforeTargets` est exécutée.  
   

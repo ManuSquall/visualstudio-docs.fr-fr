@@ -9,11 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe7905175493d2214db86fca288cd72ee1dcbabc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d3ec82822b2004cabb91f8c7677409acce69c199
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668921"
 ---
 # <a name="overview-of-profiling-in-visual-studio"></a>Vue d’ensemble du profilage dans Visual Studio
 
@@ -25,7 +26,7 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md) pour découvrir les nombreuses façons différentes de mesurer les performances d’une application.
+* [Regardez d’abord les outils de profilage](../profiling/profiling-feature-tour.md) pour découvrir les nombreuses façons différentes de mesurer les performances d’une application.
 
 * [Analyser l’utilisation de l’UC](../profiling/cpu-usage.md) pour obtenir des informations détaillées sur l’outil d’utilisation de l’UC.
 
