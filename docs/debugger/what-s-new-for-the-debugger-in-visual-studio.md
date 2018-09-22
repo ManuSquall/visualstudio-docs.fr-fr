@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fac267dfaf27d9afccdb6236244dbd21e99b253b
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: cdb56a12f2f9fb6838579165bbe374e4dfbdca47
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433452"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542431"
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>Quelles sont les nouveautés du débogueur dans [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -46,7 +46,7 @@ Le débogueur inclut ces nouvelles fonctionnalités :
 
     ![Étape vers l’arrière et vers l’avant](../debugger/media/intellitrace-step-back-icons-description.png  "boutons étape précédente et étape suivante")
 
-    Pour plus d’informations, consultez la page [Afficher des captures instantanées avec le retour en arrière IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md).
+    Pour plus d’informations, consultez le [Inspecter les États d’application précédent à l’aide d’IntelliTrace](../debugger/view-historical-application-state.md) page.
 
 - Le **assistance d’Exception** remplace l’Assistant Exception et apparaît dans une zone de la boîte de dialogue non modale où l’erreur s’est produite. Le **assistance d’Exception** fournit un accès plus rapide pour les exceptions internes, une analyse supplémentaire par le débogueur (si disponible) et un accès immédiat à la **paramètres d’Exception** pour l’exception. L’assistance d’Exception peuvent également être déplacée vers une vue flottante si il ne bloque pas quelque chose que vous devez voir.
 
