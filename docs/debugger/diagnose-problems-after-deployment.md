@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 886ad4b022f69034bae0e6188274676522488d8b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: cd3313957ae1cccbd3f56b1fafacfed58570531f
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320733"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542505"
 ---
-# <a name="diagnose-problems-after-deployment"></a>Diagnostiquer des problèmes après le déploiement
+# <a name="diagnose-problems-after-deployment-using-intellitrace"></a>Diagnostiquer des problèmes après déploiement à l’aide d’IntelliTrace
 
 Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans votre application web ASP.NET après son déploiement, ajoutez les informations de build à votre version pour permettre à Visual Studio de trouver automatiquement les fichiers sources et fichiers de symboles correspondants nécessaires pour déboguer l’application à l’aide du journal IntelliTrace.
 
@@ -27,48 +27,27 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
 
  **Vous aurez besoin :**
 
--   Visual Studio 2017, Visual Studio 2015 ou Team Foundation Server 2017, 2015, 2013, 2012 ou 2010 pour paramétrer votre build
+-   Visual Studio, Azure DevOps ou Team Foundation Server 2017, 2015, 2013, 2012 ou 2010 pour paramétrer votre build
 
 -   Microsoft Monitoring Agent pour surveiller votre application et enregistrer les données de diagnostic
 
 -   Visual Studio Enterprise (mais pas Professional ni Community) pour vérifier les données de diagnostic et déboguer votre code avec IntelliTrace
 
 ##  <a name="SetUpBuild"></a> Étape 1 : Ajouter les informations à votre version de build
- Paramétrez votre processus de génération de sorte à créer un manifeste de build (fichier BuildInfo.config) pour votre projet web et ajoutez ce manifeste à votre version. Ce manifeste contient des informations sur le projet, le contrôle de code source et le système de génération utilisés pour créer une build spécifique. Ces informations aident Visual Studio à trouver la source et les symboles correspondants après ouverture du journal IntelliTrace pour examiner les événements enregistrés.
+ Configuration de votre processus de génération pour créer un manifeste de build (*BuildInfo.config* fichier) pour votre site web de projet et ajoutez ce manifeste à votre version. Ce manifeste contient des informations sur le projet, le contrôle de code source et le système de génération utilisés pour créer une build spécifique. Ces informations aident Visual Studio à trouver la source et les symboles correspondants après ouverture du journal IntelliTrace pour examiner les événements enregistrés.
 
 ###  <a name="AutomatedBuild"></a> Créer le manifeste de build pour une build automatisée à l’aide de Team Foundation Server
 
  Procédez comme suit si vous utilisez le contrôle de version ou le fournisseur Git Team Foundation.
 
- ####  <a name="TFS2017"></a> Team Foundation Server 2017
+####  <a name="TFS2017"></a> Azure DevOps et Team Foundation Server 2017
 
- Configurer votre pipeline de génération à ajouter l’emplacement de votre source, build et de symboles au manifeste de build (fichier BuildInfo.config). Team Foundation Build crée automatiquement ce fichier et le place dans le dossier de sortie de votre projet.
+Visual Studio 2017 n’inclut pas le *BuildInfo.config* fichier qui a été déconseillée et puis supprimé. Pour déboguer les applications web ASP.NET après le déploiement, utilisez une des méthodes suivantes :
 
-1.  Si vous disposez déjà d’un pipeline de génération en utilisant le modèle ASP.NET Core (.NET Framework), vous pouvez soit [modifier votre pipeline de génération ou de créer un pipeline de build.](/azure/devops/pipelines/get-started-designer?view=vsts)
+* Pour le déploiement vers Azure, utilisez [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/).
 
-     ![Afficher la build dans TFS 2017 pipeline](../debugger/media/ffr_tfs2017viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
+* Si vous devez utiliser IntelliTrace, ouvrez le projet dans Visual Studio et charger les fichiers de symboles à partir de la build correspondante. Vous pouvez charger des fichiers de symboles à partir de la **Modules** fenêtre ou en configurant des symboles dans **outils** > **Options** > **débogage**   >  **Symboles**.
 
-2.  Si vous créez un nouveau modèle, choisissez le modèle ASP.NET Core (.NET Framework).
-
-     ![Choisissez le modèle de processus de génération &#45; TFS 2017](../debugger/media/ffr_tfs2017buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")
-
-3.  Spécifiez l’emplacement où enregistrer le fichier de symboles (PDB) de sorte que votre source soit indexée automatiquement.
-
-     Si vous utilisez un modèle personnalisé, vérifiez que le modèle a une activité pour indexer votre source. Vous ajouterez plus tard un argument MSBuild pour spécifier l’emplacement où enregistrer les fichiers de symboles.
-
-     ![Définir le chemin d’accès des symboles dans le pipeline de build TFS 2017](../debugger/media/ffr_tfs2017builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
-
-     Pour plus d’informations sur les symboles, consultez [publier des données symboles](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts).
-
-4.  Ajoutez cet argument MSBuild pour inclure les emplacements de votre TFS et des symboles dans le fichier manifeste de la build :
-
-     **/p:IncludeServerNameInBuildInfo = true**
-
-     Toute personne pouvant accéder à votre serveur web peut consulter ces emplacements dans le manifeste de build. Vérifiez que votre serveur source est sécurisé.
-
-6.  Exécutez une nouvelle build.
-
-    Accédez à [étape 2 : publier votre application](#DeployRelease)
 
 ####  <a name="TFS2013"></a> Team Foundation Server 2013
  Configurer votre pipeline de génération à ajouter l’emplacement de votre source, build et de symboles au manifeste de build (fichier BuildInfo.config). Team Foundation Build crée automatiquement ce fichier et le place dans le dossier de sortie de votre projet.
