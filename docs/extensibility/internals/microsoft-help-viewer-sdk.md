@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe6dfd62d8bf9deb296d5530a5c9a371f1d2484d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 808cd12386e6bf0431c3786f7afd89ecd38af372
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513372"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495997"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Kit SDK de Microsoft Help Viewer
 Cet article contient les tâches suivantes pour les intégrateurs de la visionneuse d’aide Visual Studio :  
@@ -822,13 +822,13 @@ Pour effectuer ce test car si déployé :
 ### <a name="additional-resources"></a>Ressources supplémentaires  
 Pour l’API de Runtime, consultez [API d’aide Windows](/previous-versions/windows/desktop/helpapi/helpapi-portal).  
   
-Pour plus d’informations sur la façon de tirer parti de l’API d’aide, consultez [aide des exemples de Code visionneuse](http://visualstudiogallery.msdn.microsoft.com/f08f296f-7076-4aec-8da3-8f0fbe04461e)  
+Pour plus d’informations sur la façon de tirer parti de l’API d’aide, consultez [aide des exemples de Code visionneuse](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples)  
   
 Pour fournir des commentaires sur ces composants, utilisez [Microsoft Connect](http://connect.microsoft.com/).  
   
 Veuillez envoyer des suggestions de fonctionnalités à [Microsoft User Voice](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
   
-Pour obtenir une aide supplémentaire, essayez le [forums MSDN Developer Documentation and Help System](http://social.msdn.microsoft.com/Forums/devdocs/threads)  
+Pour obtenir une aide supplémentaire, essayez le [forums MSDN Developer Documentation and Help System](https://social.msdn.microsoft.com/Forums)  
   
 Mises à jour sur les dernières problème, veuillez consulter le [aide fichier Lisez-moi de visionneuse](http://go.microsoft.com/fwlink/?LinkID=231397&clcid=0x409)  
   
