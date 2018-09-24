@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f37ef9cdc76b86d3ad3c18489f63fb5c340aa6a7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 41b5bce1878ae7d23c21aedd0a4cb1b24b66548d
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918462"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550678"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811 : Évitez le recours à du code privé non appelé
 |||
@@ -34,18 +34,18 @@ ms.locfileid: "31918462"
 ## <a name="cause"></a>Cause
  Membre privé ou interne (de niveau assembly) n’a pas d’appelants dans l’assembly n’est pas appelé par le common language runtime et n’est pas appelé par un délégué. Les membres suivants ne sont pas vérifiés par cette règle :
 
--   Membres d’interface explicite.
+- Membres d’interface explicite.
 
--   Constructeurs statiques.
+- Constructeurs statiques.
 
--   Constructeurs de sérialisation.
+- Constructeurs de sérialisation.
 
--   Les méthodes marquées avec <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> ou <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.
+- Les méthodes marquées avec <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> ou <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.
 
--   Membres qui sont des remplacements.
+- Membres qui sont des remplacements.
 
 ## <a name="rule-description"></a>Description de la règle
- Cette règle peut signaler des faux positifs si les points d’entrée produisent, qui ne sont actuellement pas identifiés par la logique de règle. En outre, un compilateur peut émettre du code ne pouvant être appelé dans un assembly.
+ Cette règle peut rapporter des faux positifs si les points d’entrée produisent, qui ne sont pas identifiées par la logique de règle. En outre, un compilateur peut émettre du code ne pouvant être appelé dans un assembly.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, supprimez le code ne pouvant être appelé ou ajouter du code qui l’appelle.

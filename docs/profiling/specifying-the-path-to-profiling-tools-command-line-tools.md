@@ -10,25 +10,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e25d5052cbc70e4a45040f8ebadb8cb36daa053
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1afb0b00a7e121c611dedbc235684a67cc9cec53
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34814493"
 ---
-# <a name="specifying-the-path-to-profiling-tools-command-line-tools"></a>Spécification du chemin d’accès aux outils en ligne de commande des outils de profilage
+# <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>Spécifier le chemin des outils en ligne de commande des outils de profilage
 Le chemin d'accès aux outils de profilage en ligne de commande de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] n'est pas ajouté à la variable d'environnement PATH. Sur les ordinateurs 32 bits, les outils se trouvent dans un même répertoire. Il existe des versions 32 bits et 64 bits des outils de profilage sur les ordinateurs 64 bits.  
   
 ## <a name="32-bit-computers"></a>Ordinateurs 32 bits  
- Sur les ordinateurs 32 bits, le répertoire par défaut des outils de profilage est *Lecteur*\Program Files\Microsoft Visual Studio 11.0\Team Tools\Performance Tools.  
+ Sur les ordinateurs 32 bits, le répertoire par défaut des outils de profilage est *lecteur\Program Files\Microsoft Visual Studio 11.0\Team Tools\Performance Tools*.  
   
 ## <a name="64-bit-computers"></a>Ordinateurs 64 bits  
  Sur les ordinateurs 64 bits, spécifiez le chemin d’accès en fonction de la plateforme cible de l’application profilée.  
   
 -   Pour les applications 32 bits, le répertoire par défaut des outils de profilage est le suivant :  
   
-     *Lecteur*\Program Files (x86)\Microsoft Visual Studio 11.0\Team Tools\Performance Tools  
+     *lecteur\Program Files (x86)\Microsoft Visual Studio 11.0\Team Tools\Performance Tools*  
   
 -   Pour les applications 64 bits, le répertoire par défaut des outils de profilage est le suivant :  
   
-     *Lecteur*\Program Files (x86)\Microsoft Visual Studio 11.0\Team Tools\Performance Tools\x64
+     *lecteur\Program Files (x86)\Microsoft Visual Studio 11.0\Team Tools\Performance Tools\x64*

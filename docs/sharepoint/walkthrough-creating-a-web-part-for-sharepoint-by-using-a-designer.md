@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 01efc1972ea4833900b5e6f002d36ae51fa63a85
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: f569769613e4fac0b4773a755740274ec0933016
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118913"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635230"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Procédure pas à pas : Créer un composant WebPart pour SharePoint à l’aide d’un concepteur
 
@@ -46,7 +46,7 @@ Cette procédure pas à pas décrit les tâches suivantes :
 
 Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
 
-- Éditions prises en charge de Windows et SharePoint. Consultez [configuration requise pour développer des solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Éditions prises en charge de Windows et SharePoint.
 
 ## <a name="create-a-web-part-project"></a>Créer un projet de composant WebPart
 
@@ -58,7 +58,7 @@ Tout d’abord, créez un projet de composant WebPart à l’aide de la **compos
 
      La boîte de dialogue **Nouveau projet** s’affiche.
 
-3. Dans le **nouveau projet** boîte de dialogue, sous **Visual C#** ou **Visual Basic**, développez **Office/SharePoint**, puis choisissez le  **Les Solutions SharePoint** catégorie.
+3. Dans la **nouveau projet** boîte de dialogue, sous une ou l’autre **Visual C#** ou **de Visual Basic**, développez **Office/SharePoint**, puis cliquez sur le  **Solutions SharePoint** catégorie.
 
 4. Dans la liste des modèles, choisissez le **SharePoint 2013 - composant Visual Web Part** modèle, puis choisissez le **OK** bouton.
 
@@ -100,7 +100,7 @@ Ajoutez le code qui permet à l’utilisateur Ajouter des calendriers à l’aff
 
     - Dans le concepteur, double-cliquez sur le **mise à jour** bouton.
 
-    - Dans le **propriétés** fenêtre pour le **mise à jour** bouton, choisissez la **événements** bouton. Dans le **cliquez sur** propriété, entrez **Button1_Click**, puis choisissez la touche ENTRÉE.
+    - Dans le **propriétés** fenêtre pour le **mise à jour** bouton, choisissez la **événements** bouton. Dans la **cliquez sur** propriété, entrez **Button1_Click**, puis choisissez la touche ENTRÉE.
 
      Le fichier de code du contrôle utilisateur s’ouvre dans l’éditeur de Code et le `Button1_Click` Gestionnaire d’événements s’affiche. Une version ultérieure, vous ajouterez du code à ce gestionnaire d’événements.
 

@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9dc5b1add4f81e91d0ea0e2cdc20e2581116525
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 42bf1427e71c21fecb0cd3822469b143b9d42df5
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31624890"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138649"
 ---
 # <a name="install-build-tools-into-a-container"></a>Installer Build Tools dans un conteneur
 
@@ -141,6 +141,9 @@ Enregistrez l’exemple Dockerfile suivant dans un nouveau fichier sur votre dis
    # Use the latest Windows Server Core image with .NET Framework 4.7.1.
    FROM microsoft/dotnet-framework:4.7.1
 
+   # Restore the default Windows shell for correct batch processing below.
+   SHELL ["cmd", "/S", "/C"]
+
    # Download the Build Tools bootstrapper.
    ADD https://aka.ms/vs/15/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
 
@@ -162,7 +165,7 @@ Enregistrez l’exemple Dockerfile suivant dans un nouveau fichier sur votre dis
    ```
 
    > [!NOTE]
-   > Si vous basez votre image directement sur microsoft/windowsservercore, l’installation du .NET Framework risque de ne pas s’effectuer correctement. De plus, aucune erreur d’installation ne sera signalée. Le code managé risque de ne pas s’exécuter, une fois l’installation effectuée. À la place, basez votre image sur [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) ou une version plus récente.
+   > Si vous basez votre image directement sur microsoft/windowsservercore, l’installation du .NET Framework risque de ne pas s’effectuer correctement. De plus, aucune erreur d’installation ne sera signalée. Le code managé risque de ne pas s’exécuter, une fois l’installation effectuée. À la place, basez votre image sur [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) ou une version plus récente. Notez également que les images les plus récentes peuvent utiliser PowerShell comme `SHELL` par défaut, ce qui provoque l’échec des instructions `RUN` et `ENTRYPOINT`.
 
 4. Exécutez la commande suivante dans ce répertoire.
 
@@ -187,16 +190,7 @@ Maintenant que vous avez créé une image, vous pouvez l’exécuter dans un con
 
 Si vous souhaitez utiliser cette image pour votre flux de travail CI/CD, vous pouvez la publier dans votre propre instance [Azure Container Registry](https://azure.microsoft.com/services/container-registry) ou dans un autre [registre Docker](https://docs.docker.com/registry/deploying) interne, pour que les serveurs n’aient plus qu’à la tirer (pull).
 
-## <a name="get-support"></a>Obtenir de l’aide
-
-Parfois, des problèmes peuvent se produire. Si votre installation de Visual Studio échoue, consultez la page [Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017](troubleshooting-installation-issues.md). Si aucune étape de résolution des problèmes ne vous aide, vous pouvez nous contacter pour une conversation en direct sur une assistance à l’installation (en anglais uniquement). Pour plus de détails, consultez la [page du support Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
-
-Voici d’autres options de support :
-
-* Vous pouvez nous signaler des problèmes au niveau d’un produit via l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio-2017.md) qui s’affiche dans le programme d’installation de Visual Studio et dans l’IDE de Visual Studio.
-* Vous pouvez nous faire part d’une suggestion de produit via [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Vous pouvez suivre les problèmes au niveau d’un produit et obtenir des réponses dans la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com/).
-* Vous pouvez également communiquer avec nous et d’autres développeurs Visual Studio en prenant part à notre [conversation Visual Studio dans la communauté Gitter](https://gitter.im/Microsoft/VisualStudio).  (Cette option nécessite un compte [GitHub](https://github.com/).)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Voir aussi
 

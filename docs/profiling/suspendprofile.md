@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a156e7acfdb68d1fa523263835eeee4a573ff78
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: ae610539ded12c626fb69bffcc973d0424ca2f08
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668933"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 La méthode `SuspendProfile` incrémente le compteur Suspend/Resume pour le niveau de profilage spécifié.  
@@ -63,12 +64,12 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
  Quand l’état Start/Stop et l’état Suspend/Resume sont tous deux ON, l’état du profilage pour le niveau est ON. Pour qu’un thread soit profilé, les états des niveaux Global, Processus et Thread pour le thread doivent tous être ON.  
   
 ## <a name="net-framework-equivalent"></a>Équivalent .NET Framework  
- Microsoft.VisualStudio.Profiler.dll  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Informations sur la fonction  
- En-tête : déclaré dans VSPerf.h  
+ En-tête : déclaré dans *VSPerf.h*  
   
- Bibliothèque d’importation : VSPerf.lib  
+ Bibliothèque d’importation : *VSPerf.lib*  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant montre la méthode SuspendProfile. Cet exemple suppose qu’un appel antérieur à StartProfile a été effectué pour le processus ou le thread identifié par [PROFILE_CURRENTID](../profiling/profile-currentid.md).  

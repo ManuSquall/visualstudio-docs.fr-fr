@@ -1,5 +1,5 @@
 ---
-title: Nom d’élément (modèles Visual Studio) | Documents Microsoft
+title: Nom de l’élément (modèles Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 202542388fc04b07c0792a550029b0d509327c74
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 743c732410c97aa795264dd6fe2495d2d14f2481
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136521"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638868"
 ---
-# <a name="name-element-visual-studio-templates"></a>Name, élément (modèles Visual Studio)
+# <a name="name-element-visual-studio-templates"></a>Name, élément (modèles Visual Studio)
 Spécifie le nom du modèle tel qu’il apparaît dans le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.  
   
  \<VSTemplate >  
@@ -31,11 +31,11 @@ Spécifie le nom du modèle tel qu’il apparaît dans le **nouveau projet** ou 
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
 <Name> Template Name </Name>  
 ```  
   
-```  
+```xml  
 <Name Package="{PackageID}" ID="ResourceID" />  
 ```  
   
@@ -59,7 +59,7 @@ Spécifie le nom du modèle tel qu’il apparaît dans le **nouveau projet** ou 
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Définit la catégorie du modèle et comment il s’affiche dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément** .|  
   
 ## <a name="text-value"></a>Valeur texte  
- Une valeur texte est requise à moins que le `Package` et `ID` les attributs sont utilisés.  
+ Une valeur de texte est obligatoire, sauf si le `Package` et `ID` attributs sont utilisés.  
   
  Le texte fournit le nom du modèle.  
   
@@ -67,9 +67,9 @@ Spécifie le nom du modèle tel qu’il apparaît dans le **nouveau projet** ou 
  `Name` est un élément enfant obligatoire de `TemplateData`.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant affiche les métadonnées d’un modèle de projet pour un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application.  
+ L’exemple suivant montre les métadonnées d’un modèle de projet pour un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application.  
   
-```  
+```xml  
 <VSTemplate Type="Project" Version="3.0.0"  
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
     <TemplateData>  
@@ -94,5 +94,5 @@ Spécifie le nom du modèle tel qu’il apparaît dans le **nouveau projet** ou 
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
+ [Référence de schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Création de modèles de projets et d’éléments](../ide/creating-project-and-item-templates.md)

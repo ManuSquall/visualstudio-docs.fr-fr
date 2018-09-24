@@ -10,20 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 525f4a1d11cd4026410baf696b4593daf2595e12
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 228f8306b803fcbd0e83e23e5b8e919dc2116c37
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751363"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382462"
 ---
-# <a name="how-to-view-data-and-diagnostic-attachments-using-the-load-test-analyzer"></a>Comment : afficher les pièces jointes des données et des diagnostics à l'aide de l'analyseur de test de charge
+# <a name="how-to-view-data-and-diagnostic-attachments-using-the-load-test-analyzer"></a>Guide pratique pour afficher les pièces jointes des données et des diagnostics à l’aide de l’analyseur de test de charge
 
-Avant d'exécuter un test de charge, vous pouvez sélectionner un paramètre de test qui spécifie les adaptateurs de diagnostic et de données que vous souhaitez utiliser. Une fois que le test de charge est terminé, utilisez l'analyseur de test de charge pour afficher les détails des adaptateurs de diagnostic et de données pendant l'analyse des résultats. Pour afficher les détails des adaptateurs de diagnostic et de données, choisissez le bouton **Afficher les pièces jointes de données et diagnostic** dans la barre d’outils de l’analyseur de test de charge. Par exemple, si l'adaptateur des informations système est configuré pour le test de charge dans le paramètre de test, vous pouvez afficher les informations système de l'ordinateur qui a été utilisé lors de l'exécution du test de charge.
+Avant d'exécuter un test de charge, vous pouvez sélectionner un paramètre de test qui spécifie les adaptateurs de diagnostic et de données que vous souhaitez utiliser. Une fois que le test de charge est terminé, utilisez **l’analyseur de test de charge** pour afficher les détails des adaptateurs de diagnostic et de données pendant l’analyse des résultats. Pour afficher les détails des adaptateurs de diagnostic et de données, choisissez le bouton **Afficher les pièces jointes de données et diagnostic** dans la barre d’outils de **l’analyseur de test de charge**. Par exemple, si l'adaptateur des informations système est configuré pour le test de charge dans le paramètre de test, vous pouvez afficher les informations système de l'ordinateur qui a été utilisé lors de l'exécution du test de charge.
 
 ![Boîte de dialogue Sélection de la pièce jointe d'adaptateur de données de diagnostic](../test/media/load_adapterdialog.png)
 
-L'autre exemple est un test de charge qui inclut l'adaptateur IntelliTrace dans le paramètre de test. L'adaptateur IntelliTrace permet d'ouvrir la page Résumé IntelliTrace.
+L'autre exemple est un test de charge qui inclut l'adaptateur IntelliTrace dans le paramètre de test. L’adaptateur IntelliTrace permet d’ouvrir la page **Résumé IntelliTrace**.
 
 ![Résumé IntelliTrace](../test/media/load_intellitrace.png)
 
@@ -31,7 +31,7 @@ Pour plus d’informations, consultez [Collecter des informations de diagnostic 
 
 ## <a name="to-view-data-and-diagnostic-attachments-in-a-load-test-from-the-load-test-analyzer"></a>Pour afficher les pièces jointes de données et diagnostic dans un test de charge à partir de l'analyseur de test de charge
 
-1.  Après avoir effectué un test de charge, ou après avoir affiché un résultat de test de charge, dans la barre d’outils de l’analyseur de test de charge, choisissez **Afficher les pièces jointes de données et diagnostic**.
+1.  Après avoir effectué un test de charge, ou après avoir affiché un résultat de test de charge, dans la barre d’outils de **l’analyseur de test de charge**, choisissez **Afficher les pièces jointes de données et diagnostic**.
 
      La boîte de dialogue **Choisir la pièce jointe de l’adaptateur de données de diagnostic** s’affiche.
 

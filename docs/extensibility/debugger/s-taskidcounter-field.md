@@ -1,5 +1,5 @@
 ---
-title: s_taskIdCounter champ | Documents Microsoft
+title: Champ s_taskIdCounter | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,14 +13,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d49881eb16e05edfc1cfc57dd9520de8991942d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bf5c6b0578495e56086abb8637054e0650b07195
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126603"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252388"
 ---
-# <a name="staskidcounter-field"></a>s_taskIdCounter champ
+# <a name="staskidcounter-field"></a>Champ s_taskIdCounter
 L’identificateur suivant disponible pour un <xref:System.Threading.Tasks.Task> objet.  
   
  **Namespace :** <xref:System.Threading.Tasks?displayProperty=fullName>  
@@ -31,7 +31,7 @@ L’identificateur suivant disponible pour un <xref:System.Threading.Tasks.Task>
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```csharp  
 .field static assembly int32 s_taskIdCounter  
 ```  
   

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb3d1aa14e404cbc4e8efdc425a4c3099f7a42f5
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 56b9e68767d4191aab016e3c0d976efb808aff01
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078850"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282610"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problèmes de configuration de serveur et client dans les déploiements ClickOnce
 Si vous utilisez Internet Information Services (IIS) sur Windows Server, et que votre déploiement contient un type de fichier Windows ne reconnaît pas, tel qu’un fichier Microsoft Word, IIS refusera de transmettre ce fichier, et votre déploiement ne réussira pas.  
@@ -41,7 +41,7 @@ Si vous utilisez Internet Information Services (IIS) sur Windows Server, et que 
   
 -   *.deploy* 
   
- Toutefois, vous pouvez désactiver cette option en désactivant le **utiliser l’extension de fichier « .deploy »** option sur le [Publish Options Dialog Box](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), auquel cas vous devez configurer le serveur Web pour débloquer toutes les extensions de fichier utilisé dans l’application.  
+ Toutefois, vous pouvez désactiver cette option en désactivant le **utiliser l’extension de fichier « .deploy »** option sur le [Publish Options Dialog Box](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100)), auquel cas vous devez configurer le serveur Web pour débloquer toutes les extensions de fichier utilisé dans l’application.  
   
  Vous devrez configurer *.manifest*, *.application*, et *.deploy*, par exemple, si vous utilisez IIS où vous n’avez pas installé le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], ou si vous êtes à l’aide d’un autre serveur Web (par exemple, Apache).  
   
@@ -93,7 +93,7 @@ Si vous utilisez Internet Information Services (IIS) sur Windows Server, et que 
 ## <a name="clickonce-and-mapped-drives"></a>ClickOnce et lecteurs mappés  
  Si vous utilisez Visual Studio pour publier une application ClickOnce, vous ne pouvez pas spécifier un lecteur mappé comme emplacement d’installation. Toutefois, vous pouvez modifier l’application ClickOnce pour installer à partir d’un lecteur mappé à l’aide de l’éditeur (Mage.exe et MageUI.exe) et le Générateur de manifeste. Pour plus d’informations, consultez [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool) et [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client).  
   
-## <a name="ftp-protocol-nt-supported-for-installing-applications"></a>FTP protocole que NT pris en charge pour l’installation d’applications  
+## <a name="ftp-protocol-not-supported-for-installing-applications"></a>Protocole FTP non pris en charge pour l’installation d’applications  
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] prend en charge l’installation d’applications à partir de n’importe quel serveur Web HTTP 1.1 ou le serveur de fichiers. FTP, File Transfer Protocol, n’est pas pris en charge pour l’installation d’applications. Vous pouvez utiliser FTP pour publier des applications uniquement. Le tableau suivant récapitule ces différences :  
   
 |Type d’URL|Description|  

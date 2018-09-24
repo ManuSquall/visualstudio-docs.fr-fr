@@ -1,24 +1,26 @@
 ---
-title: Visite guidée des fonctionnalités de profilage | Microsoft Docs
-ms.custom: H1HackMay2017
+title: Mesurer les performances avec des outils de profilage
+description: Examinez brièvement les différents outils de diagnostic disponibles dans Visual Studio.
+ms.custom: mvc
 ms.date: 05/18/2017
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: quickstart
 helpviewer_keywords:
-- debugger
+- diagnostic tools
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 12c10e06d1dcd789212b04b591f0165e118139b1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: aeda3752fdee6ce36094c68758d99c612c82fd76
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320837"
 ---
-# <a name="profiling-feature-tour"></a>Visite guidée des fonctionnalités de profilage
+# <a name="quickstart-first-look-at-profiling-tools"></a>Démarrage rapide : découvrir les outils de profilage
 
 Visual Studio propose des outils de profilage pour vous aider à diagnostiquer différents types de problèmes de performances en fonction de votre type d’application.
 
@@ -30,7 +32,9 @@ Pendant le débogage, vous pouvez utiliser la fenêtre **Outils de diagnostic** 
 
 ![Vue Résumé des outils de diagnostic](../profiling/media/prof-tour-cpu-and-memory-graph.gif "Résumé des outils de diagnostic")
 
-La fenêtre **Outils de diagnostic** est souvent la meilleure méthode pour profiler des applications, mais pour les versions de mise en production (Release), vous pouvez également effectuer une analyse post-mortem de votre application à la place. Pour plus d’informations sur les différentes approches, consultez [Exécution des outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Pour connaître la prise en charge des outils de profilage pour différents types d’applications, consultez [Quel outil utiliser ?](#tool_support_info).
+La fenêtre **Outils de diagnostic** est souvent la meilleure méthode pour profiler des applications, mais pour les versions de mise en production (Release), vous pouvez également effectuer une analyse post-mortem de votre application à la place. Pour plus d’informations sur les différentes approches, consultez [Exécuter les Outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Pour connaître la prise en charge des outils de profilage pour différents types d’applications, consultez [Quel outil utiliser ?](#which-tool-should-i-use).
+
+> ![REMARQUE] Vous pouvez utiliser les outils post mortem avec Windows 7 et les versions ultérieures. Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**).
 
 ## <a name="analyze-cpu-usage"></a>Analyser l'utilisation de l'UC
 
@@ -52,7 +56,7 @@ Double-cliquez sur une fonction digne d’intérêt ; apparaît alors une vue �
 
 ## <a name="analyze-memory-usage"></a>Analyser l’utilisation de la mémoire
 
-La fenêtre Outils de diagnostic vous permet également d’évaluer l’utilisation de la mémoire dans votre application. Par exemple, vous pouvez consulter le nombre et la taille des objets sur le tas. Vous trouverez des instructions plus détaillées pour analyser la mémoire sur la page [Analyser l’utilisation de la mémoire](../profiling/memory-usage.md).
+La fenêtre **Outils de diagnostic** vous permet également d’évaluer l’utilisation de la mémoire dans votre application. Par exemple, vous pouvez consulter le nombre et la taille des objets sur le tas. Pour obtenir des instructions plus détaillées sur l’analyse de la mémoire, consultez [Analyser l’utilisation de la mémoire](../profiling/memory-usage.md).
 
 Pour analyser l’utilisation de la mémoire, vous devez prendre au moins un instantané de la mémoire pendant le débogage. Souvent, la meilleure façon d’analyser la mémoire consiste à prendre deux instantanés, le premier juste avant un problème de mémoire suspecté et le second juste après. Ensuite, vous pouvez visualiser une comparaison des deux instantanés et voir exactement ce qui a changé.
 
@@ -64,7 +68,7 @@ Quand vous sélectionnez un des liens associés à une flèche, vous obtenez une
 
 Par contre, si vous cliquez sur le lien sur la gauche dans la vue **Utilisation de la mémoire**, la vue du tas est organisée par nombre d’objets ; les objets d’un type particulier dont le nombre a le plus augmenté sont affichés en haut (en fonction de la colonne **Différence de nombre**).
 
-## <a name="examine-performance-events"></a>Examiner les événements de performance
+## <a name="examine-performance-events"></a>Examiner les événements de performances
 
 La vue **Événements** dans les Outils de diagnostic vous présente les différents événements qui se produisent pendant le débogage, tels que la définition d’un point d’arrêt ou une exécution pas à pas du code. Vous pouvez consulter des informations telles que la durée de l’événement (mesurée à partir de la dernière suspension du débogueur ou du démarrage de l’application). Par exemple, si vous parcourez le code pas à pas (F10, F11), la vue **Événements** vous indique la durée d’exécution de l’application entre l’étape précédente et l’étape actuelle.
 
@@ -77,19 +81,19 @@ Les mêmes événements s’affichent aussi dans l’éditeur de code, sous la f
 
 ![Conseils sur les performances dans la visite guidée du profilage](../profiling/media/prof-tour-perf-tips.png "Conseils sur les performances dans la visite guidée du profilage")
 
-## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>Examiner les événements d’accessibilité et de performance de l’interface utilisateur (UWP)
+## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>Examiner les événements d’accessibilité et de performances de l’IU (UWP)
 
-Dans vos applications UWP, vous pouvez activer **Analyse de l’IU** dans la fenêtre Outils de diagnostic. L’outil recherche les problèmes de performances ou d’accessibilité et les affiche dans la vue **Événements** pendant le débogage. Les descriptions des événements fournissent des informations qui peuvent aider à résoudre les problèmes.
+Dans vos applications UWP, vous pouvez activer **Analyse de l’IU** dans la fenêtre **Outils de diagnostic**. L’outil recherche les problèmes de performances ou d’accessibilité et les affiche dans la vue **Événements** pendant le débogage. Les descriptions des événements fournissent des informations qui peuvent aider à résoudre les problèmes.
 
 ![Afficher les événements d’analyse de l’IU dans les Outils de diagnostic](../profiling/media/prof-tour-ui-analysis.png "Outils de diagnostic - Afficher les événements d’analyse de l’IU")
 
-## <a name="profile-release-builds-without-the-debugger"></a>Profiler les versions Release sans le débogueur
+## <a name="post_mortem"></a> Profiler les builds de version Release sans le débogueur
 
-Vous pouvez utiliser les outils de profilage, tels que l’utilisation de l’UC et l’utilisation de la mémoire, avec le débogueur (voir les sections précédentes), ou vous pouvez les exécuter à l’aide du profileur de performances, qui vise à fournir une analyse des versions **Release**. Dans le profileur de performances, vous pouvez collecter des informations de diagnostic pendant l’exécution de l’application, puis examiner ces informations après l’arrêt de l’application. Pour plus d’informations sur les différentes approches, consultez [Exécution des outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Vous pouvez utiliser les Outils de profilage, par exemple Utilisation de l’UC et Utilisation de la mémoire, avec le débogueur (consultez les sections précédentes), ou vous pouvez exécuter les Outils de profilage post mortem à l’aide du profileur de performances, qui vise à fournir une analyse des builds de version **Release**. Dans le profileur de performances, vous pouvez collecter des informations de diagnostic pendant l’exécution de l’application, puis examiner ces informations après l’arrêt de l’application. Pour plus d’informations sur ces différentes approches, consultez [Exécuter les Outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 ![Profileur de performances](../profiling/media/prof-tour-performance-profiler.png "Profileur de performances")
 
-Ouvrez le profileur de performances en choisissant **Déboguer/Profileur de performances**.
+Ouvrez le profileur de performances en choisissant **Déboguer** > **Profileur de performances**.
 
 La fenêtre vous permet de sélectionner plusieurs outils de profilage dans certains scénarios. Les outils comme Utilisation de l’UC peuvent fournir des données complémentaires que vous pouvez utiliser dans votre analyse.
 
@@ -145,14 +149,14 @@ Si vous avez besoin de fonctionnalités qui ne sont pas présentes dans les outi
 
 ![Outil Explorateur de performances](../profiling/media/prof-tour-performance-explorer.png "Explorateur de performances")
 
-## <a name="tool_support_info"></a>Quel outil utiliser ?  
+## <a name="which-tool-should-i-use"></a>Quel outil dois-je utiliser ?  
 
 Voici un tableau qui recense les différents outils proposés par Visual Studio, ainsi que les différents types de projet avec lesquels vous pouvez les utiliser :
   
 |Outil d’analyse des performances|Bureau Windows|UWP|ASP.NET/ASP.NET Core| 
 |----------------------|---------------------|-------------|-------------|  
 |[Utilisation de la mémoire](../profiling/memory-usage.md)|oui|oui|oui| 
-|[Utilisation de l'UC](../profiling/cpu-usage.md)|oui (voir la remarque)|oui|oui (voir la remarque)|
+|[Utilisation de l'UC](../profiling/cpu-usage.md)|oui|oui|oui|
 |[Utilisation du GPU](../debugger/gpu-usage.md)|oui|oui|non| 
 |[Chronologie de l'application](../profiling/application-timeline.md)|oui|oui|Non|
 |[Conseils sur les performances](../profiling/perftips.md)|oui|oui pour XAML, non pour HTML|oui|
@@ -161,9 +165,6 @@ Voici un tableau qui recense les différents outils proposés par Visual Studio,
 |[Utilisation du réseau](../profiling/network-usage.md)|Non|oui|Non|
 |[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|Non|oui pour HTML, non pour XAML|Non| 
 |[Mémoire JavaScript](../profiling/javascript-memory.md)|Non|oui pour HTML, non pour XAML|Non|
-
-> [!NOTE]
-> Pour .NET Core et ASP.NET Core, l’outil Utilisation de l’UC ne fournit pas de résultats précis avec les fichiers PBD portables. Utilisez des fichiers PDB complets à la place.
 
 ## <a name="see-also"></a>Voir aussi  
  [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md)

@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe4d73404f8794c2a5e4e64aef36198d78a0878
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 827da75bb9faadf7506002780273979f628f20cb
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926442"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078571"
 ---
 # <a name="shader-designer-nodes"></a>Nœuds du concepteur Shader
 Les articles de cette section de la documentation contiennent des informations sur les différents nœuds du concepteur Shader pour créer des effets graphiques.
 
 ## <a name="nodes-and-node-types"></a>Nœuds et types de nœuds
- Le concepteur Shader représente des effets visuels sous forme de graphique. Ces graphiques sont générés à partir de nœuds spécifiquement sélectionnés et connectés de façon précise afin d’obtenir l’effet prévu. Chaque nœud représente une information ou une fonction mathématique, et les connexions entre elles représentent le flux d’informations dans le graphique pour produire le résultat. Le concepteur Shader fournit six types de nœuds différents (filtres, nœuds de texture, paramètres, constantes, nœuds d’utilitaire et nœuds mathématiques). Plusieurs nœuds individuels appartiennent à chaque type. Ces nœuds et types de nœuds sont décrits dans les autres articles dans cette section. Consultez les liens à la fin de ce document.
+ Le concepteur Shader représente des effets visuels sous forme de graphe. Ces graphes sont générés à partir de nœuds spécifiquement choisis et connectés de façon précise afin d’obtenir l’effet prévu. Chaque nœud représente une information ou une fonction mathématique, et les connexions entre elles représentent le flux d’informations dans le graphique pour produire le résultat. Le concepteur Shader fournit six types de nœuds différents (filtres, nœuds de texture, paramètres, constantes, nœuds d’utilitaire et nœuds mathématiques). Plusieurs nœuds individuels appartiennent à chaque type. Ces nœuds et types de nœuds sont décrits dans les autres articles de cette section. Pour plus d’informations, consultez les liens figurant à la fin de ce document.
 
 ## <a name="node-structure"></a>Structure de nœuds
  Tous les nœuds sont composés d’une combinaison d’éléments communs. Chaque nœud a au moins un terminal de sortie sur son côté droit (sauf le nœud de couleur finale, qui représente la sortie du nuanceur). Les nœuds qui représentent des calculs ou des échantillonneurs de texture ont des terminaux d’entrée sur leur côté gauche, mais les nœuds qui représentent des informations n’ont aucun terminal d’entrée. Les terminaux de sortie sont connectés aux terminaux d’entrée pour déplacer des informations d’un nœud vers un autre.
@@ -45,9 +45,9 @@ Les articles de cette section de la documentation contiennent des informations s
 
 |Titre|Description|
 |-----------|-----------------|
-|[Nœuds de constante](../designers/constant-nodes.md)|Décrit les nœuds que vous pouvez utiliser pour représenter des valeurs littérales et des informations d’état de vertex interpolées dans les calculs de nuanceurs. Comme l’état de vertex est interpolé, et donc différent pour chaque pixel, chaque instance du nuanceur de pixels reçoit une version différente de la constante.|
-|[Nœuds de paramètre](../designers/parameter-nodes.md)|Décrit les nœuds que vous pouvez utiliser pour représenter la position de l’appareil-photo, les propriétés matérielles, les paramètres d’éclairage, l’heure et d’autres informations sur l’état de l’application dans les calculs de nuanceurs.|
-|[Nœuds de texture](../designers/texture-nodes.md)|Décrit les nœuds que vous pouvez utiliser pour échantillonner différents types de texture, ainsi que des géométries, et pour produire ou transformer des coordonnées de texture avec des techniques courantes.|
+|[Nœuds de constantes](../designers/constant-nodes.md)|Décrit les nœuds que vous pouvez utiliser pour représenter des valeurs littérales et des informations d’état de vertex interpolées dans les calculs de nuanceurs. Comme l’état de vertex est interpolé, et donc différent pour chaque pixel, chaque instance du nuanceur de pixels reçoit une version différente de la constante.|
+|[Nœuds de paramètres](../designers/parameter-nodes.md)|Décrit les nœuds que vous pouvez utiliser pour représenter la position de l’appareil-photo, les propriétés matérielles, les paramètres d’éclairage, l’heure et d’autres informations sur l’état de l’application dans les calculs de nuanceurs.|
+|[Nœuds de textures](../designers/texture-nodes.md)|Décrit les nœuds que vous pouvez utiliser pour échantillonner différents types de texture, ainsi que des géométries, et pour produire ou transformer des coordonnées de texture avec des techniques courantes.|
 |[Nœuds mathématiques](../designers/math-nodes.md)|Décrit les nœuds que vous pouvez utiliser pour effectuer des opérations d’algèbre, de logique, de trigonométrie, et d’autres opérations mathématiques qui correspondent directement aux instructions HLSL.|
 |[Nœuds utilitaires](../designers/utility-nodes.md)|Décrit les nœuds que vous pouvez utiliser pour exécuter des calculs d’éclairage courants et d’autres opérations courantes qui ne correspondent pas directement aux instructions HLSL.|
-|[Nœuds de filtre](../designers/filter-nodes.md)|Décrit les nœuds que vous pouvez utiliser pour effectuer le filtrage de la texture et le filtrage des couleurs.|
+|[Nœuds de filtres](../designers/filter-nodes.md)|Décrit les nœuds que vous pouvez utiliser pour effectuer le filtrage de la texture et le filtrage des couleurs.|

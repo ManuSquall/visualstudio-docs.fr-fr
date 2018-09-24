@@ -1,5 +1,5 @@
 ---
-title: Élément de CommandPlacements | Documents Microsoft
+title: Élément CommandPlacements | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,21 +16,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9cedac197295daed278fb3dce99157b33e4eb8d8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bbbddf7716b34b8367ac014fa65d8ccfc4413e23
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097492"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39230764"
 ---
-# <a name="commandplacements-element"></a>Élément de CommandPlacements
+# <a name="commandplacements-element"></a>Élément CommandPlacements
 L’élément CommandPlacements regroupe les éléments CommandPlacement et autres regroupements CommandPlacements.  
   
- L’élément CommandPlacements est facultative. Si aucun commandes, des groupes ou les menus ne doivent être inclus dans un emplacement secondaire, il est inutile d’inclure cette section dans votre fichier .vsct.  
+ L’élément CommandPlacements est facultatif. Si aucun commandes, les groupes ou les menus ne doivent être inclus dans un emplacement secondaire, il est inutile d’inclure cette section dans votre *.vsct* fichier.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
 <CommandPlacements>  
   <CommandPlacement>... </CommandPlacement>  
   <CommandPlacement>... </CommandPlacement>  
@@ -61,7 +61,7 @@ L’élément CommandPlacements regroupe les éléments CommandPlacement et autr
   
 ## <a name="example"></a>Exemple  
   
-```  
+```xml  
 <CommandPlacements>  
   <CommandPlacement guid="guidWidgetPackage" id="cmdidInsertOptions"  
     priority="0x0300">  
@@ -71,5 +71,5 @@ L’élément CommandPlacements regroupe les éléments CommandPlacement et autr
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Élément de CommandPlacement](../extensibility/commandplacement-element.md)   
- [Fichiers Visual Studio Command Table (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Élément CommandPlacement](../extensibility/commandplacement-element.md)   
+ [Visual Studio fichiers command table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

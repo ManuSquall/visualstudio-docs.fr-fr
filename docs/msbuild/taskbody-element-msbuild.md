@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c031b36501f90619369eedb9622b303ec559f6bd
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7a545a8ff4b4666db168a15e8cc75689d33e89fe
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568017"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567388"
 ---
 # <a name="taskbody-element-msbuild"></a>Élément TaskBody (MSBuild)
-Contient les données transmises à un élément `UsingTask``TaskFactory`. Pour plus d’informations, consultez [UsingTask, élément (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
+Contient les données transmises à `UsingTask` `TaskFactory`. Pour plus d’informations, consultez [Élément UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
 
  \<Project>  
  \<UsingTask>  
@@ -34,7 +34,7 @@ Contient les données transmises à un élément `UsingTask``TaskFactory`. Pour 
 
 ## <a name="syntax"></a>Syntaxe  
 
-```  
+```xml
 <TaskBody Evaluate="true/false" />  
 ```  
 
@@ -77,5 +77,5 @@ Contient les données transmises à un élément `UsingTask``TaskFactory`. Pour 
 
 ## <a name="see-also"></a>Voir aussi  
  [Tâches](../msbuild/msbuild-tasks.md)   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)   
- [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+ [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)   
+ [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

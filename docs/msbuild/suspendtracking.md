@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b484ce1bd47d01092ff28d60b457012805cb16e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b0d52fb5d50a75207a0aad49f7b29cfc66b8e889
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568622"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154194"
 ---
 # <a name="suspendtracking"></a>SuspendTracking
 Interrompt le suivi dans le contexte actuel.  
@@ -37,7 +37,7 @@ HRESULT WINAPI SuspendTracking(void);
  Un **HRESULT** avec le bit **SUCCEEDED** défini si le suivi a été repris.  
   
 ## <a name="requirements"></a>Configuration requise  
- **En-tête :** FileTracker.h  
+ **En-tête :** *FileTracker.h*  
   
 ## <a name="see-also"></a>Voir aussi  
  [ResumeTracking](../msbuild/resumetracking.md)

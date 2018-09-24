@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2c6ebe43bc4237ac55eea534f12fe4a9876f93de
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 166a57cb0b3c80736761e1649da6399a9bd19807
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233540"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379710"
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>Tester des applications SharePoint avec des tests codés de l’interface utilisateur
 
@@ -28,7 +28,7 @@ Pour plus d’informations sur avantages de l’utilisation de tests codés de l
 
 ## <a name="create-a-coded-ui-test-for-a-sharepoint-app"></a>Créer un test codé de l’interface utilisateur pour une application SharePoint
 
-La [création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md) pour vos applications SharePoint est identique à la création de tests pour d’autres types d’applications. L’enregistrement et la lecture sont pris en charge pour tous les contrôles sur l’interface de modification web. L'interface de sélection des catégories et des composants WebPart est constituée de contrôles Web standard.
+La [création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md) pour vos applications SharePoint est identique à la création de tests pour d’autres types d’applications. L’enregistrement et la lecture sont pris en charge pour tous les contrôles sur l’interface de **modification web**. L'interface de sélection des catégories et des composants WebPart est constituée de contrôles Web standard.
 
 ![SharePoint, composants WebPart](../test/media/cuit_sharepoint.png)
 
@@ -94,8 +94,8 @@ Si vous enregistrez des actions dans une cellule qui n’est pas vide, l’enreg
 
 ## See also
 
-- [Use UI Automation To Test Your Code](../test/use-ui-automation-to-test-your-code.md)
-- [Create SharePoint Solutions](../sharepoint/create-sharepoint-solutions.md)
-- [Verifying and Debugging SharePoint Code](../sharepoint/verifying-and-debugging-sharepoint-code.md)
-- [Building and Debugging SharePoint Solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md)
-- [Profiling the Performance of SharePoint Applications](../sharepoint/profiling-the-performance-of-sharepoint-applications.md)
+- [Use UI automation to test your code](../test/use-ui-automation-to-test-your-code.md)
+- [Create SharePoint solutions](../sharepoint/create-sharepoint-solutions.md)
+- [Verify and debug SharePoint code](../sharepoint/verifying-and-debugging-sharepoint-code.md)
+- [Build and debug SharePoint solutions](../sharepoint/building-and-debugging-sharepoint-solutions.md)
+- [Profile the performance of SharePoint applications](../sharepoint/profiling-the-performance-of-sharepoint-applications.md)

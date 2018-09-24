@@ -13,17 +13,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8538ffdb1093accc8446d072ecc980586b73ee7b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 647dba94840383410d06f6e5bf96ec3b0146c394
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567250"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077657"
 ---
-# <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Comment : utiliser des caractères XML réservés dans les fichiers projet
+# <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Guide pratique pour utiliser des caractères XML réservés dans les fichiers projet
 Lorsque vous créez des fichiers projet, vous devrez peut-être utiliser des caractères XML réservés, par exemple, dans les valeurs de propriétés ou dans les valeurs de paramètres de tâche. Toutefois, certains caractères réservés doivent être remplacés par une entité nommée afin que le fichier projet puisse être analysé.  
   
-## <a name="using-reserved-characters"></a>Utilisation de caractères réservés  
+## <a name="use-reserved-characters"></a>Utiliser des caractères réservés  
  Le tableau suivant décrit les caractères XML réservés qui doivent être remplacés par l’entité nommée correspondante afin que le fichier projet puisse être analysé.  
   
 |Caractère réservé|Entité nommée|  
@@ -73,5 +73,5 @@ Lorsque vous créez des fichiers projet, vous devrez peut-être utiliser des car
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence MSBuild](../msbuild/msbuild-reference.md)    
+ [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)    
  [MSBuild](../msbuild/msbuild.md)    

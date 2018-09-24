@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 7761164182188366425a81518f3d0513361b6f19
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: a8de7175b33a91c310da4b3d6d9e4c05c40c3522
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077841"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341688"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>Publier une application Web sur Azure App Service à l’aide de Visual Studio
 
@@ -44,6 +44,13 @@ Vous pouvez utiliser la **publier** outil pour publier des applications ASP.NET,
 1. Sélectionnez **Créer**. Visual Studio déploie l’application sur votre Azure App Service, et l’application web se charge dans votre navigateur. Les propriétés du projet **publier** volet affiche l’URL du site et autres détails.
 
     ![Publier le volet des propriétés affichant un profil de résumé](../deployment/media/quickstart-publish-app-service-summary.png)
+
+## <a name="clean-up-resources"></a>Nettoyer les ressources
+
+Les étapes précédentes, vous avez créé des ressources Azure dans un groupe de ressources. Si vous ne pensez pas avoir besoin de ces ressources à l’avenir, vous pouvez les supprimer en supprimant le groupe de ressources.
+Dans le menu de gauche dans le portail Azure, sélectionnez **groupes de ressources** , puis sélectionnez **myResourceGroup**.
+Sur la page de groupe de ressources, assurez-vous que les ressources répertoriées sont ceux que vous souhaitez supprimer.
+Sélectionnez **supprimer**, type **myResourceGroup** dans la zone de texte, puis sélectionnez **supprimer**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

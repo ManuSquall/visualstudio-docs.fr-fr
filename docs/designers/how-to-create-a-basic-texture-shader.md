@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : créer un nuanceur de texture de base'
+title: Guide pratique pour créer un nuanceur de texture de base
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c73ba8007bf107f9dae5cc1422fb582aa5415916
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 211da971bc7e4e275ef43b88531fe46a7fc0b4eb
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747051"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924064"
 ---
-# <a name="how-to-create-a-basic-texture-shader"></a>Procédure : créer un nuanceur de texture de base
+# <a name="how-to-create-a-basic-texture-shader"></a>Guide pratique pour créer un nuanceur de texture de base
 
 Cet article montre comment utiliser le concepteur Shader et DGSL (Directed Graph Shader Language) pour créer un nuanceur de texture unique. Ce nuanceur définit la couleur finale directement sur les valeurs RVB et alpha échantillonnées à partir de la texture.
 
@@ -29,7 +29,7 @@ Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte
 
 1.  Créez un shader DGSL à utiliser. Pour plus d’informations sur l’ajout d’un nuanceur DGSL à votre projet, consultez la section Prise en main de l’article [Concepteur de nuanceur](../designers/shader-designer.md).
 
-2.  Supprimez le nœud **Couleur du point**. En mode **Sélection**, sélectionnez le nœud **Couleur du point**, puis, dans la barre de menus, choisissez **Modifier**, **Supprimer**. Le nœud ajouté à l'étape suivante bénéficie ainsi d'un espace supplémentaire.
+2.  Supprimez le nœud **Couleur du point**. En mode **Sélection**, sélectionnez le nœud **Couleur du point** puis, dans la barre de menus, choisissez **Modifier** > **Supprimer**. Le nœud ajouté à l'étape suivante bénéficie ainsi d'un espace supplémentaire.
 
 3.  Ajoutez un nœud **Échantillon de texture** au graphique. Dans la **Boîte à outils**, sous **Texture**, sélectionnez **Échantillon de texture** et déplacez-le vers l’aire de conception.
 
@@ -54,7 +54,7 @@ Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs. 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Éditeur d’images](../designers/image-editor.md)
 - [Concepteur Shader](../designers/shader-designer.md)
 - [Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5030fef12683282ca41088790b6bbf47febb91e1
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: b3c0c17da3bd5b83260556a7762733924cfe276c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280943"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283617"
 ---
 # <a name="validate-your-system-during-development"></a>Validation de votre système pendant le développement
 Visual Studio peut vous aider à garder votre logiciel en cohérence avec les besoins des utilisateurs et avec l’architecture de votre système.
@@ -37,12 +37,12 @@ Visual Studio peut vous aider à garder votre logiciel en cohérence avec les be
 |------------------|---------------|
 |**Vidéos**|![lien vers la vidéo](../data-tools/media/playvideo.gif) [Channel 9 : Doug sept : compréhension du Code et conception du système avec Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif) [Channel 9 : architecture d’une Application à l’aide d’un diagramme de dépendances](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif) [série MSDN Comment faire : comment valider du Code à l’aide de diagrammes de dépendance](http://go.microsoft.com/fwlink/?LinkID=214405)|
 |**Forums**|-   [Outils de visualisation et de modélisation Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling (outils DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blogs**|-   [Blog Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)|
+|**Blogs**|-   [Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
 |**Articles et journaux techniques**|[Centre d’architecture MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)|
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Test de l’application](/vsts/test/overview?view=vsts)
+- [Test de l’application](/azure/devops/test/overview?view=vsts)
 - [Modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md)
 - [Analyse et modélisation de l’architecture](../modeling/analyze-and-model-your-architecture.md)
 

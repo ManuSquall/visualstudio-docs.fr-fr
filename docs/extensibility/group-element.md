@@ -1,5 +1,5 @@
 ---
-title: Élément de groupe | Documents Microsoft
+title: Group, élément | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 184bb709d25c55adcc34e73b6df1ac5f4a2448bd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2dad2781a0d8231c40ad16dd2c5bd2a7a0905cd3
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129155"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497106"
 ---
 # <a name="group-element"></a>Élément de groupe
-Définit un groupe de commandes VSPackage.  
+Définit un groupe de commande VSPackage.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
 <Group guid="guidMyCommandSet" id="MyGroup" priority="0x101">  
   <Parent>... </Parent>  
 </Group>  
@@ -59,11 +59,11 @@ Définit un groupe de commandes VSPackage.
   
 ## <a name="example"></a>Exemple  
   
-```  
+```xml  
 <Group guid="cmdSetGuidWidgetCommands" id="groupIDFileEdit">  
   <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_MAINMENU"/>  
 </Group>  
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Fichiers Visual Studio Command Table (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio fichiers command table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

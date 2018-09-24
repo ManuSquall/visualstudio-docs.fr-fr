@@ -16,11 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 82238cc29504b3ad2b757e94efa89a3c521bca90
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 250e3ed3fb548dad26bc29f83fae35b8e6727c9f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671081"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>Personnaliser un ruban pour InfoPath
   Quand vous personnalisez le ruban dans Microsoft Office InfoPath, vous devez prendre en compte l'emplacement où votre ruban personnalisé apparaîtra dans l'application. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] peut afficher le ruban dans les trois types suivants de fenêtres d'application InfoPath :  
@@ -43,7 +44,7 @@ ms.lasthandoff: 05/17/2018
  Vous devez spécifier le type de ruban de chaque fenêtre dans laquelle vous souhaitez que votre ruban apparaisse.  
   
 ## <a name="specify-the-ribbon-type-in-the-ribbon-designer"></a>Spécifiez le type de ruban dans le Concepteur de ruban  
- Si vous utilisez l'élément **Ruban (Concepteur visuel)** , cliquez sur la propriété **RibbonType** du ruban dans la fenêtre **Propriétés** , puis sélectionnez l'un des ID de ruban répertoriés dans le tableau ci-dessous.  
+ Si vous utilisez le **ruban (Concepteur visuel)** d’élément, cliquez sur le **RibbonType** propriété du ruban dans le **propriétés** fenêtre, puis sélectionnez un de l’ID de ruban décrit dans le tableau suivant.  
   
 |ID de ruban|Fenêtre dans laquelle le ruban s'affichera quand vous exécuterez le projet|  
 |---------------|---------------------------------------------------------------------|  
@@ -64,7 +65,7 @@ ms.lasthandoff: 05/17/2018
  [!code-vb[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/VisualBasic/myinfopathproject/ribbon.vb#1)]  
   
 ## <a name="see-also"></a>Voir aussi  
- [Accéder au ruban au moment de l’exécution](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Accéder au ruban lors de l’exécution](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Vue d’ensemble du ruban](../vsto/ribbon-overview.md)   
  [Concepteur de ruban](../vsto/ribbon-designer.md)   
  [Élément XML Ribbon](../vsto/ribbon-xml.md)  

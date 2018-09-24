@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2c52fdfd2a4598c63073476ae6b0ce3ee96bd94a
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d235508bb0b58ac17846d0b02db25f044c504deb
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119198"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634704"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Procédure pas à pas : Profiler une application SharePoint
   Cette procédure pas à pas montre comment utiliser les outils de profilage dans Visual Studio pour optimiser les performances d'une application SharePoint. L’application d’exemple est un récepteur d’événements de fonctionnalité SharePoint qui contient une boucle inactive qui dégrade les performances du récepteur d’événements de fonctionnalité. Le profileur Visual Studio vous permet de définir et supprimer la partie la plus coûteuse (exécution la plus lente) du projet, également connu sous le *chemin réactif*.  
@@ -43,7 +43,7 @@ ms.locfileid: "37119198"
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
--   Éditions prises en charge de Microsoft Windows et SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Configuration requise pour développer des solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Éditions prises en charge de Microsoft Windows et SharePoint.
   
 -   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].  
   

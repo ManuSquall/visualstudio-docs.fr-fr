@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 142ed6bca0513022b8edd1a062c443aa50d08191
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 708d2175afe8d1b0e6bec7c7ec419eac1ee4821f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918619"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551962"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801 : Passez en revue les paramètres inutilisés
 |||
@@ -30,27 +30,27 @@ ms.locfileid: "31918619"
 |TypeName|ReviewUnusedParameters|
 |CheckId|CA1801|
 |Category|Microsoft.Usage|
-|Modification avec rupture|Sans rupture - Si le membre n’est pas visible à l’extérieur de l’assembly, quelle que soit la modification effectuée.<br /><br /> Sans rupture - Si vous modifiez le membre pour utiliser le paramètre dans son corps.<br /><br /> Avec rupture - Si vous supprimez le paramètre et il est visible en dehors de l’assembly.|
+|Modification avec rupture|Sans rupture - Si le membre n’est pas visible en dehors de l’assembly, quelle que soit la modification que vous apportez.<br /><br /> Sans rupture - Si vous modifiez le membre pour utiliser le paramètre dans son corps.<br /><br /> Avec rupture - Si vous supprimez le paramètre et il est visible en dehors de l’assembly.|
 
 ## <a name="cause"></a>Cause
  Une signature de méthode inclut un paramètre qui n'est pas utilisé dans le corps de la méthode. Cette règle n’examine pas les méthodes suivantes :
 
--   Méthodes référencées par un délégué.
+- Méthodes référencées par un délégué.
 
--   Méthodes utilisées en tant que gestionnaires d’événements.
+- Méthodes utilisées en tant que gestionnaires d’événements.
 
--   Les méthodes déclarées avec le `abstract` (`MustOverride` en Visual Basic) modificateur.
+- Les méthodes déclarées avec le `abstract` (`MustOverride` en Visual Basic) modificateur.
 
--   Les méthodes déclarées avec le `virtual` (`Overridable` en Visual Basic) modificateur.
+- Les méthodes déclarées avec le `virtual` (`Overridable` en Visual Basic) modificateur.
 
--   Les méthodes déclarées avec le `override` (`Overrides` en Visual Basic) modificateur.
+- Les méthodes déclarées avec le `override` (`Overrides` en Visual Basic) modificateur.
 
--   Les méthodes déclarées avec le `extern` (`Declare` instruction en Visual Basic) modificateur.
+- Les méthodes déclarées avec le `extern` (`Declare` instruction en Visual Basic) modificateur.
 
 ## <a name="rule-description"></a>Description de la règle
  Passez en revue les paramètres dans les méthodes non virtuelles qui ne sont pas utilisés dans le corps de méthode pour vous assurer n’empêche existe autour d’y accéder. Les paramètres inutilisés impliquent des coûts de maintenance et de performances.
 
- Parfois, une violation de cette règle peut révéler un bogue dans la méthode d’implémentation. Par exemple, le paramètre doit avoir utilisé dans le corps de méthode. Supprimer des avertissements de cette règle si le paramètre doit exister en raison de la compatibilité descendante.
+ Parfois, une violation de cette règle peut pointer vers un bogue d’implémentation dans la méthode. Par exemple, le paramètre doit avoir été utilisé dans le corps de méthode. Supprimer les avertissements de cette règle si le paramètre doit se trouver en raison de la compatibilité descendante.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, supprimez le paramètre inutilisé (une modification avec rupture) ou utilisez le paramètre dans le corps de méthode (une modification sans rupture).

@@ -1,5 +1,5 @@
 ---
-title: Objet de VSTextBuffer | Documents Microsoft
+title: Objet VSTextBuffer | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,30 +16,30 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22e78efc93835aa6b0ac61bfb6cbe59ff0c9d4d8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 587a0193dea0f4a8d16ea0555cf5788cd1ead1d5
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141032"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495347"
 ---
-# <a name="vstextbuffer-object"></a>Objet de VSTextBuffer
-L’objet de mémoire tampon de texte représente un flux de texte Unicode, ce qui est généralement associé à un fichier. A <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objet peut être utilisé en dehors du contexte de l’éditeur de base, comme dans le cas d’un Assistant.  
+# <a name="vstextbuffer-object"></a>Objet VSTextBuffer
+L’objet de mémoire tampon de texte représente un flux de texte Unicode, ce qui est généralement associé à un fichier. Un <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objet peut être utilisé en dehors du contexte de l’éditeur principal, par exemple, un Assistant.  
   
- Le tableau suivant montre les interfaces de `VSTextBuffer`.  
+ Le tableau suivant présente les interfaces de `VSTextBuffer`.  
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[IOleCommandTarget](http://msdn.microsoft.com/library/windows/desktop/ms683797)|Interface standard OLE. Principalement utilisé pour la gestion de la mémoire tampon Annuler/Rétablir.|  
-|[IPersistFile](http://msdn.microsoft.com/library/windows/desktop/ms687223)|Interface standard OLE.|  
-|[IPersistStream](http://msdn.microsoft.com/library/windows/desktop/ms690091)|Interface standard OLE.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Permet la création d’actions de composés (autrement dit, les actions qui sont regroupées dans une unité d’annulation/de rétablissement unique).|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|Active la persistance des données du document gérées par la mémoire tampon de texte.|  
+|[IOleCommandTarget](/windows/desktop/api/docobj/nn-docobj-iolecommandtarget)|Interface OLE standard. Utilisé pour la gestion de la mémoire tampon Annuler/Rétablir.|  
+|[IPersistFile](/windows/desktop/api/objidl/nn-objidl-ipersistfile)|Interface OLE standard.|  
+|[IPersistStream](/windows/desktop/api/objidl/nn-objidl-ipersiststream)|Interface OLE standard.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Permet la création d’actions composés (autrement dit, les actions qui sont regroupées dans une unité d’annulation/de rétablissement unique).|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|Active la persistance des données de document gérées par la mémoire tampon de texte.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>|Fournit des services de base ; utilisé par de nombreux clients.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextFind>|Utilisé pour rechercher une mémoire tampon.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>|Fournit de lecture et en écriture à l’aide de coordonnées à deux dimensions. Hérite de `IVsTextBuffer`.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream>|Fournit des lire et écrire des fonctions à l’aide de coordonnées unidimensionnelles. Hérite de `IVsTextBuffer`.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextScanner>|Offre un accès séquentiel, orienté flux de données à du texte dans la mémoire tampon rapide.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>|Fournit lire et écrire des fonctionnalités à l’aide de coordonnées à deux dimensions. Hérite de `IVsTextBuffer`.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream>|Fournit lire et écrire des fonctionnalités à l’aide des coordonnées unidimensionnelles. Hérite de `IVsTextBuffer`.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextScanner>|Offre un accès séquentiel, orienté flux et à du texte dans la mémoire tampon rapide.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>|Fournit l’accès à une collection générique de propriétés. La propriété la plus importante est le nom ou le moniker, de la mémoire tampon. Vous pouvez stocker vos propres données aléatoires dans la mémoire tampon avec cette interface par la création d’un GUID et l’utiliser en tant que clé.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>|Prend en charge les points de connexion pour les événements.|  
   
@@ -49,4 +49,4 @@ L’objet de mémoire tampon de texte représente un flux de texte Unicode, ce q
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
- [Modifier des chiffres](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)
+ [Édition de figures](https://www.microsoft.com/download/details.aspx?id=55984)

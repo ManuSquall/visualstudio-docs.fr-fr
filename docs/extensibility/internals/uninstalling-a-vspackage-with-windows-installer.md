@@ -1,5 +1,5 @@
 ---
-title: Désinstallation d’un VSPackage avec Windows Installer | Documents Microsoft
+title: Désinstallation d’un VSPackage avec Windows Installer | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,32 +15,32 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8a62692003b26afcd5b7814bdc03320fa1c453a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c619cdeffccb6e5da37eaaf15e5542fe78c44f79
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141094"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495308"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>Désinstallation d’un VSPackage avec Windows Installer
-Dans la plupart des cas, Windows Installer peut désinstaller votre VSPackage simplement par « annulation » qu’elle a pour installer votre VSPackage. Les actions personnalisées présentées dans [commandes que doit être exécuté après l’Installation](../../extensibility/internals/commands-that-must-be-run-after-installation.md) doit être exécuté après une désinstallation ainsi. Étant donné que les appels à devenv.exe se produisent juste avant l’action standard de InstallFinalize pour l’installation et la désinstallation, les entrées de table CustomAction et InstallExecuteSequence dessert les deux cas.  
+La plupart du temps, le programme d’installation de Windows peut désinstaller votre VSPackage simplement en « annulation » qu’elle a effectué pour installer votre VSPackage. Les actions personnalisées abordés dans [commandes que doit être exécuté après l’Installation](../../extensibility/internals/commands-that-must-be-run-after-installation.md) doit être exécuté après une désinstallation également. Étant donné que les appels à devenv.exe soient effectuées juste avant l’action standard de InstallFinalize pour l’installation et la désinstallation, les entrées de table CustomAction et InstallExecuteSequence servent les deux cas.  
   
 > [!NOTE]
 >  Exécutez `devenv /setup` après la désinstallation d’un package MSI.  
   
- En règle générale, si vous ajoutez des actions personnalisées à un package Windows Installer, vous devez gérer ces actions pendant la désinstallation et la restauration. Par exemple, si vous ajoutez des actions personnalisées pour s’inscrire automatiquement à votre VSPackage, vous devez ajouter des actions personnalisées pour annuler l’inscription, trop.  
+ En règle générale, si vous ajoutez des actions personnalisées à un package de programme d’installation de Windows, vous devez gérer ces actions pendant la restauration et de la désinstallation. Par exemple, si vous ajoutez des actions personnalisées pour s’inscrire automatiquement à votre VSPackage, vous devez ajouter des actions personnalisées pour annuler son inscription, trop.  
   
 > [!NOTE]
->  Il est possible pour un utilisateur à installer votre VSPackage, puis désinstallez les versions de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] avec lequel il est intégré. Vous pouvez vous assurer que la désinstallation du VSPackage fonctionne dans ce scénario en éliminant les actions personnalisées qui s’exécutent du code avec des dépendances sur [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+>  Il est possible pour un utilisateur à installer votre package Visual Studio, puis désinstaller les versions de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] avec lequel il est intégré. Vous pouvez vous assurer que la désinstallation de votre VSPackage fonctionne dans ce scénario en éliminant les actions personnalisées qui s’exécutent du code avec des dépendances sur [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
 ## <a name="handling-launch-conditions-at-uninstall-time"></a>Gestion des Conditions de lancement au moment de la désinstallation  
- L’action standard LaunchConditions lit les lignes de la table LaunchCondition pour afficher l’erreur messages si les conditions ne sont pas remplies. Conditions de lancement sont généralement utilisés pour garantir que les exigences système, vous pouvez généralement ignorer des conditions de lancement lors de la désinstallation en ajoutant la condition, `NOT Installed`, à la ligne LaunchConditions de la table LaunchCondition.  
+ L’action standard LaunchConditions lit les lignes de la table LaunchCondition pour afficher l’erreur messages si les conditions ne sont pas remplies. Comme les conditions de lancement sont généralement utilisées pour vous assurer que la configuration système requise est remplies, vous pouvez généralement ignorer des conditions de lancement lors de la désinstallation en ajoutant la condition, `NOT Installed`, à la ligne LaunchConditions de la table LaunchCondition.  
   
- Une alternative consiste à ajouter `OR Installed` pour lancer des conditions qui ne sont pas importantes lors de la désinstallation. Cela garantit que la condition sera toujours true lors de la désinstallation et par conséquent, n’affiche pas le message de condition de lancement.  
+ Une alternative consiste à ajouter `OR Installed` pour lancer des conditions qui ne sont pas importantes lors de la désinstallation. Cela garantit que la condition est toujours true lors de la désinstallation et par conséquent, n’affiche pas le message d’erreur de lancement condition.  
   
 > [!NOTE]
->  `Installed` est la propriété de que Windows Installer définit lorsqu’elle détecte que votre VSPackage a déjà été installé sur le système.  
+>  `Installed` est la propriété de que programme d’installation de Windows définit lorsqu’elle détecte que votre VSPackage a déjà été installé sur le système.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Programme d’installation de Windows](http://msdn.microsoft.com/en-us/187d8965-c79d-4ecb-8689-10930fa8b3b5)   
+ [Programme d’installation de Windows](https://msdn.microsoft.com/library/187d8965-c79d-4ecb-8689-10930fa8b3b5)   
  [Détection de la configuration système requise](../../extensibility/internals/detecting-system-requirements.md)

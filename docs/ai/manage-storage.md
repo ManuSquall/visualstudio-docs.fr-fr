@@ -1,26 +1,26 @@
 ---
 ms.technology: vs-ai-tools
-ms.openlocfilehash: b941d0ba55c540de4bda1cb0f9c4ed18ceab524f
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: d52ed79b28794a3bc1532822e0eb75b6277314b2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2018
-ms.locfileid: "29708275"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280699"
 ---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>Parcourir le stockage pour charger des données ou télécharger des modèles et des journaux
 
-Vous pouvez parcourir tout le stockage sur l’ordinateur distant ou le partage de fichier Azure pour activer le chargement de données ou le téléchargement de modèles et de journaux. Ou si vous souhaitez accéder aux journaux et résultats d’un travail spécifique, vous pouvez utiliser l’explorateur de travaux.
+Vous pouvez parcourir tout le stockage sur l’ordinateur distant ou le partage de fichier Azure pour activer le chargement de données ou le téléchargement de modèles et de journaux. Si vous voulez accéder aux sorties des journaux et des travaux, vous pouvez aussi utiliser l’Explorateur de travaux.
 
 ## <a name="to-access-all-data-on-the-remote-machine-or-file-share"></a>Pour accéder à toutes les données sur l’ordinateur distant ou le partage de fichiers
-1. Ouvrir l’**Explorateur de serveurs**
-2. Développer l’ordinateur distant ou le contexte de calcul Batch AI
-3. Cliquer avec le bouton droit sur **Stockage**, puis cliquer sur **Parcourir**
+1. Ouvrir **l’Explorateur de serveurs**.
+2. Développez l’ordinateur distant ou le contexte de calcul Batch AI.
+3. Cliquez avec le bouton droit sur **Stockage**, puis cliquez sur **Parcourir**.
 
     ![storage](media\manage-storage\browse-storage.png)
 
-## <a name="to-access-job-specific-data-on-the-remote-machine-or-file-share"></a>Pour accéder à des données de travaux spécifiques sur l’ordinateur distant ou le partage de fichiers
+## <a name="to-access-job-specific-data-on-the-remote-machine-or-file-share"></a>Pour accéder à des données spécifiques à des travaux sur l’ordinateur distant ou sur le partage de fichiers
 1. Ouvrir l’[historique des travaux](job-details.md)
-2. Sélectionner le travail
-3. Cliquer sur **Dossier de travail** ou sur StdOut / Stderr pour un accès rapide à ces importants fichiers journaux
+2. Sélectionnez le travail.
+3. Cliquez sur **Dossier de travail** ou sur **StdOut / Stderr** pour accéder rapidement à ces fichiers journaux importants.
 
     ![storage](media\manage-storage\job-workingfolder.png)

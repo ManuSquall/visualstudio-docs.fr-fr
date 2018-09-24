@@ -9,12 +9,12 @@ description: Découvrez l’avantage Concierge Chat inclus dans les abonnements 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7daaca8c9a98162a115453dcd28b0b598dbb67a7
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 1163feb7b1a55a816eef3b4b5f106de01c34669a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281873"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282520"
 ---
 # <a name="concierge-chat"></a>Concierge Chat
 
@@ -27,16 +27,16 @@ Vous pouvez obtenir facilement de l’aide à travers le service Concierge Chat.
 1. Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Recherchez la vignette Concierge Chat dans la section Support de la page des avantages, puis cliquez sur **Démarrer une conversation**.
-
-    ![Vignette Concierge Chat](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Vignette de Concierge Chat](_img/vs-concierge-chat/vs-concierge-chat-tile.png)
 
 3. Cliquez sur **Continuer**.
 
 4. Une fenêtre de conversation s’ouvre et un compteur indique votre position dans la file d’attente.
 
 5. La conversation démarre dès qu’un agent est disponible.
-
-    ![Session de Concierge Chat](_img/vs-concierge-chat/vs-concierge-chat-session.png)
+    > [!div class="mx-imgBorder"]
+    > ![Concierge Chat, Session](_img/vs-concierge-chat/vs-concierge-chat-session.png)
 
 ## <a name="eligibility"></a>Éligibilité
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
@@ -59,7 +59,7 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 
 ## <a name="support-resources"></a>Ressources de support technique
 -  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  Vous avez des questions concernant l’IDE Visual Studio, Visual Studio Team Services ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
+-  Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 
 

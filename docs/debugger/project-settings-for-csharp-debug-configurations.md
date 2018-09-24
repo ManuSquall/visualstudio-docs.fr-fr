@@ -1,9 +1,9 @@
 ---
-title: Paramètres pour les Configurations Debug c# du projet | Documents Microsoft
+title: Paramètres pour les Configurations Debug c# du projet | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - CSharp
 - VB
@@ -22,15 +22,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 65b30c1dc0b4306c7104b4d0b3dcd38a2cc55b1d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c5bd49d550cb03e8234c8740ea8c0f605ed721c2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478325"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283260"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Paramètres de projet pour des configurations Debug C#
-Vous pouvez modifier les paramètres de projet pour une configuration debug c# dans le **Pages de propriétés** fenêtre, comme indiqué dans [Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Les tableaux suivants indiquent où se trouvent les paramètres du débogueur dans le **Pages de propriétés** fenêtre.  
+Vous pouvez modifier les paramètres du projet pour une configuration debug c# dans le **Pages de propriétés** fenêtre, comme indiqué dans [Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Les tableaux suivants indiquent où trouver les paramètres du débogueur dans le **Pages de propriétés** fenêtre.  
   
 > [!WARNING]
 >  Cette rubrique ne s’applique pas aux applications UWP. Consultez [démarrer une session de débogage (VB, c#, C++ et XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
@@ -39,8 +39,8 @@ Vous pouvez modifier les paramètres de projet pour une configuration debug c# d
   
 |**Paramètre**|**Description**|  
 |-----------------|---------------------|  
-|**Configuration**|Définit le mode de compilation de l'application. Choisissez parmi les options **Active (Debug)**, **déboguer**, **version**, **toutes les Configurations**.|  
-|**Action de démarrage**|Ce groupe de contrôles spécifie l'action exécutée lorsque vous cliquez dans le menu Déboguer sur Démarrer.<br /><br /> -   **Démarrer le projet** est la valeur par défaut, lance le projet de démarrage pour le débogage. Pour plus d’informations, consultez [en choisissant le projet de démarrage](http://msdn.microsoft.com/en-us/222e3f32-a6fe-4941-bf37-6b2a921129fd).<br />-   **Démarrer le programme externe** vous permet de démarrer et d’attacher un programme qui n’est pas dans le cadre d’un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet. Pour plus d’informations, consultez [attachement à un programme en cours d’exécution](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).<br />-   **Démarrer l’URL** vous permet de déboguer une application Web.|  
+|**Configuration**|Définit le mode de compilation de l'application. Choisissez parmi **Active (Debug)**, **déboguer**, **version**, **toutes les Configurations**.|  
+|**Action de démarrage**|Ce groupe de contrôles spécifie l'action exécutée lorsque vous cliquez dans le menu Déboguer sur Démarrer.<br /><br /> -   **Démarrer le projet** est la valeur par défaut, lance le projet de démarrage pour le débogage. Pour plus d’informations, consultez [choisir le projet de démarrage](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100)).<br />-   **Démarrer le programme externe** vous permet de démarrer et d’attacher à un programme qui n’est pas dans le cadre d’un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet. Pour plus d’informations, consultez [attachement à un programme en cours d’exécution](/previous-versions/visualstudio/visual-studio-2010/c6wf8e4z(v=vs.100)).<br />-   **Démarrer l’URL** vous permet de déboguer une application Web.|  
 |**Arguments de la ligne de commande**|Spécifie les arguments de la ligne de commande pour le programme à déboguer. Le nom de la commande correspond au nom du programme spécifié dans Démarrer le programme externe. Si Action de démarrage a la valeur Démarrer l’URL, les arguments de la ligne de commande ne peuvent pas être spécifiés.|  
 |**Répertoire de travail**|Spécifie le répertoire de travail du programme en cours de débogage. En [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], le répertoire de travail est celui à partir duquel l'application est lancée : \bin\debug par défaut.|  
 |**Utiliser l’ordinateur distant**|Le nom d’un ordinateur distant où l’application s’exécutera à des fins de débogage ou un [nom de serveur Msvsmon](../debugger/remote-debugging.md). L’emplacement du fichier EXE sur l’ordinateur distant est spécifié par la propriété Chemin de sortie dans le dossier Propriétés de configuration, catégorie Générer. L'emplacement doit être un répertoire pouvant être partagé de l'ordinateur distant.|
@@ -51,7 +51,7 @@ Vous pouvez modifier les paramètres de projet pour une configuration debug c# d
   
 |Paramètre|Description|  
 |-------------|-----------------|  
-|**Symboles de compilation conditionnelle :**|Les constantes DEBUG et TRACE sont définies ici.<br /><br /> Ces constantes activent la compilation conditionnelle de la [classe Debug](/dotnet/api/system.diagnostics.debug) et [classe Trace](/dotnet/api/system.diagnostics.trace). Lorsque ces constantes sont définies, déboguer et méthodes de classe Trace génèrent un résultat vers la [fenêtre sortie](../ide/reference/output-window.md). Sans ces constantes, les méthodes de classe Debug et Trace ne sont pas compilées et aucun résultat n'est généré.<br /><br /> -Debug est normalement défini dans la version Debug d’un programme et non défini dans la version Release.<br />-Trace est normalement défini dans les versions Debug et Release.|  
+|**Symboles de compilation conditionnelle :**|Les constantes DEBUG et TRACE sont définies ici.<br /><br /> Ces constantes activent la compilation conditionnelle de la [classe Debug](/dotnet/api/system.diagnostics.debug) et [classe Trace](/dotnet/api/system.diagnostics.trace). Avec ces constantes sont définies, déboguer et méthodes de classe Trace génèrent un résultat vers la [fenêtre sortie](../ide/reference/output-window.md). Sans ces constantes, les méthodes de classe Debug et Trace ne sont pas compilées et aucun résultat n'est généré.<br /><br /> -Debug est normalement défini dans la version Debug d’un programme et non défini dans la version Release.<br />-Trace est normalement défini dans les versions Debug et Release.|  
 |**Optimiser le code**|À moins que vous ne trouviez un bogue qui n'apparaît que dans le code optimisé, il est conseillé de laisser ce paramètre désactivé dans la version Debug. Le code optimisé est plus difficile à déboguer, car les instructions ne correspondent pas directement à celles de vos fenêtres sources.|  
 |**Chemin de sortie :**|La valeur est généralement bin\Debug pour le débogage.|
 

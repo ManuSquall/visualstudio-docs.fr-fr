@@ -1,6 +1,6 @@
 ---
-title: Autorisations utilisateur et Visual Studio
-ms.date: 11/04/2016
+title: Exécuter en tant qu'administrateur
+ms.date: 06/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -14,53 +14,51 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08b12e09348a28276d0c5d2f375b26e75c1ac3c5
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 3a415d49770b003c15d4394e4635a138a795cb55
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42627313"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Autorisations utilisateur et Visual Studio
 
-Pour des raisons de sécurité, vous devez exécuter Visual Studio en tant qu'utilisateur normal chaque fois que c'est possible.
+Pour des raisons de sécurité, vous devez exécuter Visual Studio en tant qu’utilisateur normal dans la mesure du possible.
 
 > [!WARNING]
 > Vous devez également veiller à ne pas compiler, lancer ou déboguer une solution Visual Studio qui ne provient pas d'une personne de confiance ou d'un emplacement de confiance.
 
-Vous pouvez faire quasiment tout dans l'IDE de Visual Studio comme un utilisateur normal, mais, vous devez avoir des autorisations d'administrateur pour effectuer les tâches suivantes :
+Vous pouvez faire quasiment tout dans l’IDE Visual Studio en tant qu’utilisateur normal. Vous avez besoin d’autorisations d’administrateur pour effectuer les tâches suivantes :
 
 |Domaine|Tâche|Pour plus d'informations|
 |----------|----------|--------------------------|
 |Installation|Installez Visual Studio.|[Installer Visual Studio](../install/install-visual-studio.md)|
-||Installation, mise à jour ou suppression du contenu d'Aide locale.|[Installer et gérer du contenu local](../ide/install-and-manage-local-content.md)|
-|Types d'applications|Développement de solutions pour SharePoint.|[Configuration requise pour développer des solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|  
-||Acquisition d'une licence de développeur pour [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|[Obtenir une licence de développeur](http://go.microsoft.com/fwlink/?LinkID=241313)|
-|Boîte à outils|Ajout de contrôles COM classiques à la **Boîte à outils**.|[Boîte à outils](../ide/reference/toolbox.md)|
-|Compléments|Installation et utilisation des compléments qui ont été écrits à l'aide de COM classique dans l'IDE.|[Créez des compléments et des Assistants](http://msdn.microsoft.com/Library/c5a47c21-6668-4de3-898d-afa969317e73)|
-|Génération|Utilisation des événements post-build qui inscrivent un composant.|[Présentation des étapes de build personnalisée et des événements de build](/cpp/ide/understanding-custom-build-steps-and-build-events)|
-||Inclusion d'une étape d'inscription lors de la gestion de projets C++.|[Présentation des étapes de build personnalisée et des événements de build](/cpp/ide/understanding-custom-build-steps-and-build-events)|
-|Débogage|Débogage d'applications exécutées avec des autorisations élevées.|[Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)|
-||Débogage d’applications exécutées sous un compte utilisateur différent, comme les sites web ASP.NET.|[Déboguer des applications ASP.NET et AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)|
-||Débogage dans la zone pour les applications du navigateur XAML (XBAP).|[Hôte WPF (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
-||Utilisation de l'émulateur pour déboguer des projets de service cloud pour Microsoft Azure.|[Déboguer un service cloud dans Visual Studio](http://go.microsoft.com/fwlink/?LinkId=266725)|
-||Configuration d'un pare-feu pour un débogage distant.|[Débogage distant](../debugger/remote-debugging.md)|
+||Installer, mettre à jour ou supprimer le contenu d’aide locale.|[Installer et gérer le contenu d’aide locale](../ide/install-and-manage-local-content.md)|
+|Boîte à outils|Ajouter des contrôles COM classiques à la **Boîte à outils**.|[Boîte à outils](../ide/reference/toolbox.md)|
+|Génération|Utiliser des événements post-build qui inscrivent un composant.|[Présentation des étapes de build personnalisée et des événements de build](/cpp/ide/understanding-custom-build-steps-and-build-events)|
+||Inclure une étape d’inscription lors de la gestion de projets C++.||
+|Débogage|Déboguer des applications exécutées avec des autorisations élevées.|[Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)|
+||Déboguer des applications exécutées sous un compte d’utilisateur différent, comme les sites web ASP.NET.|[Déboguer des applications ASP.NET et AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)|
+||Déboguer dans la zone pour les applications du navigateur XAML (XBAP).|[Hôte WPF (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
+||Utiliser l’émulateur pour déboguer des projets de service cloud pour Microsoft Azure.|[Déboguer un service cloud dans Visual Studio](/azure/vs-azure-tools-debug-cloud-services-virtual-machines)|
+||Configurer un pare-feu pour le débogage distant|[Débogage distant](../debugger/remote-debugging.md)|
 |Outils d'analyse des performances|Profilage d'une application.|[Guide du débutant en profilage des performances](../profiling/beginners-guide-to-performance-profiling.md)|
-|Déploiement|Déploiement d'une application web vers les Services IIS (Internet Information Services) sur un ordinateur local.|[Déployer une application web ASP.NET sur un fournisseur d’hébergement à l’aide de Visual Studio ou de Visual Web Developer : déployer sur IIS comme environnement de test](http://go.microsoft.com/fwlink/?LinkId=266478)|
->>>>>>> 346075117af3d2bd1fddd9c3aca24516a39fa6a3
+|Déploiement|Déployer une application web sur les Services IIS (Internet Information Services) sur un ordinateur local.|[Déployer une application web ASP.NET à l’aide de Visual Studio](/aspnet/web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/)|
 
 ## <a name="run-visual-studio-as-an-administrator"></a>Exécuter Visual Studio en tant qu’administrateur
 
-Lancez Visual Studio avec des autorisations d'administration chaque fois que vous démarrez l'IDE, ou modifiez le raccourci d'application afin qu'il soit toujours exécuté avec des autorisations d'administration. Pour plus d'informations, consultez l'aide de Windows.
+Si vous avez besoin d’exécuter Visual Studio en tant qu’administrateur, suivez ces étapes pour ouvrir l’IDE :
 
-### <a name="run-visual-studio-with-administrative-permissions"></a>Exécuter Visual Studio avec des autorisations d’administration
-
-Ces instructions concernent Windows 10. Elles sont similaires pour les autres versions de Windows.
+> [!NOTE]
+> Ces instructions concernent Windows 10. Elles sont similaires pour les autres versions de Windows.
 
 1. Ouvrez le menu **Démarrer** puis faites défiler jusqu’à Visual Studio 2017.
 
 1. Dans le menu contextuel de **Visual Studio 2017**, sélectionnez **Plus** > **Exécuter en tant qu’administrateur**.
 
-     Au démarrage de Visual Studio, **(Administrateur)** apparaît après le nom de produit dans la barre de titre.
+   Au démarrage de Visual Studio, **(Administrateur)** apparaît après le nom de produit dans la barre de titre.
+
+Vous pouvez également modifier le raccourci de l’application afin de toujours l’exécuter avec des autorisations administratives.
 
 ## <a name="see-also"></a>Voir aussi
 

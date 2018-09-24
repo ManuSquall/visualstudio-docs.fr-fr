@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d58df5836173993664c5b01c100c5102867866f7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3f4af12b7c73aa2da7f580b11b1984aa2c8238b7
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953360"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566825"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Déploiement d'un processeur de directive personnalisé
 
@@ -54,13 +54,13 @@ Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante 
 
 2.  Dans **source.extension.vsixmanifest**, définissez le type de contenu et les éditions prises en charge.
 
-    1.  Dans l’extension VSIX, l’éditeur de manifeste sur le **actifs** , onglet choisir **nouveau** et définissez les propriétés du nouvel élément :
+    1.  Dans l’extension VSIX, l’éditeur de manifeste sur le **actifs** , choisir **New** et définissez les propriétés du nouvel élément :
 
          **Type de contenu** = **VSPackage**
 
-         **Projet source** = \<*le projet en cours*>
+         **Projet source** = \<*le projet actuel*>
 
-    2.  Cliquez sur **éditions sélectionnées** et vérifiez les types d’installation sur lequel le processeur de directive pour être utilisable.
+    2.  Cliquez sur **éditions sélectionnées** et vérifiez les types d’installation sur lequel vous souhaitez que le processeur de directive pour être utilisable.
 
 3.  Ajoutez un fichier .pkgdef et définissez ses propriétés de sorte qu'il soit inclus dans l'extension VSIX.
 
@@ -72,7 +72,7 @@ Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante 
 
          **Action de génération** = **contenu**
 
-         **Copier dans le répertoire de sortie** = **toujours copier**
+         **Copy to Output Directory** = **toujours copier**
 
          **Inclure dans VSIX** = **True**
 
@@ -128,7 +128,7 @@ Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante 
 
 -   Votre méthode `IsDirectiveSupported` doit retourner la valeur `true` lorsque le nom de votre `CustomDirective` lui est passé.
 
--   Si vous ne voyez pas l’extension dans le Gestionnaire d’extensions, mais le système vous autorisera pas à l’installer, supprimer l’extension à partir de **%localappdata%\Microsoft\VisualStudio\\\*. 0\Extensions\\** .
+-   Si vous ne voyez pas l’extension dans le Gestionnaire d’extensions, mais le système vous autorisera pas à installer, supprimez-la de **%localappdata%\Microsoft\VisualStudio\\\*. 0\Extensions\\** .
 
 -   Ouvrez le fichier .vsix et inspectez son contenu. Pour l’ouvrir, remplacez l’extension de nom du fichier par .zip. Vérifiez qu'il contient les fichiers .dll, .pkgdef et extension.vsixmanifest. Le fichier extension.vsixmanifest doit comporter la liste appropriée dans le nœud SupportedProducts, ainsi qu’un nœud VsPackage sous le nœud de contenu :
 
@@ -143,7 +143,7 @@ Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante 
 
  Placez l'attribut suivant sur la classe de votre package :
 
-```
+```csharp
 [ProvideDirectiveProcessor(typeof(DirectiveProcessorClass), "DirectiveProcessorName", "Directive processor description.")]
 ```
 
@@ -174,11 +174,11 @@ Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante 
 
 3.  Ajoutez une clé de Registre ayant le même nom que la classe du processeur de directive.
 
-    -   Dans l’arborescence du Registre, cliquez sur le **DirectiveProcessors** nœud **nouveau**, puis cliquez sur **clé**.
+    -   Dans l’arborescence du Registre, cliquez sur le **DirectiveProcessors** nœud, pointez sur **New**, puis cliquez sur **clé**.
 
 4.  Dans le nouveau nœud, ajoutez des valeurs de chaîne pour Class, CodeBase ou Assembly, en fonction des tableaux suivants.
 
-    1.  Cliquez sur le nœud que vous avez créé, pointez sur **nouveau**, puis cliquez sur **valeur de chaîne**.
+    1.  Cliquez sur le nœud que vous avez créé, pointez sur **New**, puis cliquez sur **valeur de chaîne**.
 
     2.  Modifiez le nom de la valeur.
 
@@ -190,14 +190,14 @@ Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante 
 |----------|----------|----------|
 |(Default)|REG_SZ|(valeur non définie)|
 |Classe|REG_SZ|**\<Nom de Namespace >. \<Nom de la classe >**|
-|CodeBase|REG_SZ|**\<Le chemin d’accès >\\< votre nom de l’Assembly\>**|
+|CodeBase|REG_SZ|**\<Votre chemin d’accès >\\< votre nom de l’Assembly\>**|
 
  Si l'assembly se trouve dans le GAC, les sous-clés de Registre doivent se présenter comme dans le tableau suivant :
 
 |Name|Type|Données|
 |----------|----------|----------|
 |(Default)|REG_SZ|(valeur non définie)|
-|Classe|REG_SZ|\<**Le nom de classe complet**>|
+|Classe|REG_SZ|\<**Votre nom de classe complet**>|
 |Assembly|REG_SZ|\<**Votre nom de l’Assembly dans le GAC**>|
 
 ## <a name="see-also"></a>Voir aussi

@@ -1,5 +1,5 @@
 ---
-title: FullClassName, élément (Extension de l’Assistant modèle Visual Studio) | Documents Microsoft
+title: FullClassName, élément (Extension de l’Assistant modèle Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: adc76c12570191e8b7b4635b8963f16aa4d21c13
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 05b23039540ed520e2298222e92131248fef0e3b
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127671"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498365"
 ---
-# <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName, élément (extension de l’Assistant Modèle de Visual Studio)
+# <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName, élément (extension de l’Assistant modèle Visual Studio)
 Le nom qualifié complet de la classe qui implémente le `IWizard` interface.  
   
  \<VSTemplate >  
@@ -32,7 +32,7 @@ Le nom qualifié complet de la classe qui implémente le `IWizard` interface.
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
 <FullClassName>ClassName</FullClassName>  
 ```  
   
@@ -49,7 +49,7 @@ Le nom qualifié complet de la classe qui implémente le `IWizard` interface.
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Contient les éléments d’enregistrement pour la personnalisation de l’Assistant de modèle.|  
+|[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|Contient les éléments de l’inscription pour la personnalisation de l’Assistant modèle.|  
   
 ## <a name="text-value"></a>Valeur texte  
  Une valeur texte est requise.  
@@ -60,7 +60,7 @@ Le nom qualifié complet de la classe qui implémente le `IWizard` interface.
  `FullClassName` est un élément enfant obligatoire de `WizardExtension`.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant illustre les métadonnées pour le modèle de projet standard pour une [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application Windows.  
+ L’exemple suivant illustre les métadonnées pour le modèle de projet standard pour une [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application de Windows.  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -91,6 +91,6 @@ Le nom qualifié complet de la classe qui implémente le `IWizard` interface.
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
- [Guide pratique pour utiliser des Assistants avec des modèles de projet](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Référence de schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
+ [Comment : utiliser des Assistants avec des modèles de projet](../extensibility/how-to-use-wizards-with-project-templates.md)

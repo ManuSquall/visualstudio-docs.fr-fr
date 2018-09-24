@@ -1,5 +1,5 @@
 ---
-title: Création d’une Extension avec un VSPackage | Documents Microsoft
+title: Création d’une Extension avec un VSPackage | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,35 +11,35 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 706cdcd26df18af9ccd79b5bf83890c47b1faf57
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 50af15e1c15b5d0b6318c498923229778e8c0169
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109449"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500772"
 ---
-# <a name="creating-an-extension-with-a-vspackage"></a>Création d’une Extension avec un VSPackage
-Cette procédure pas à pas montre comment créer un projet VSIX et ajouter un élément de projet VSPackage. Nous allons utiliser le VSPackage pour obtenir le service de Shell d’interface utilisateur pour afficher une boîte de message.  
+# <a name="create-an-extension-with-a-vspackage"></a>Créer une extension avec un VSPackage
+Cette procédure pas à pas vous montre comment créer un projet VSIX et ajouter un élément de projet VSPackage. Nous allons utiliser le VSPackage pour obtenir le service de l’interpréteur de commandes de l’interface utilisateur pour afficher une boîte de message.  
   
 ## <a name="prerequisites"></a>Prérequis  
- À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme une fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS ultérieurement. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS par la suite. Pour plus d’informations, consultez [installer le SDK Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-a-vspackage"></a>Création d’un VSPackage  
+## <a name="create-a-vspackage"></a>Créer un VSPackage  
   
-1.  Créez un projet VSIX nommé **FirstPackage**. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue sous **Visual c# / extensibilité**.  
+1.  Créez un projet VSIX nommé **FirstPackage**. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue sous **Visual C#** > **extensibilité**.  
   
-2.  Lorsque le projet s’ouvre, ajouter un modèle d’élément de package Visual Studio nommé **FirstPackage**. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **Ajouter / nouvel élément**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual c# / extensibilité** et sélectionnez **Package Visual Studio**. Dans le **nom** au bas de la fenêtre, modifiez le nom de fichier de commande pour **FirstPackage.cs**.  
+2.  Quand le projet s’ouvre, ajoutez un modèle d’élément de package Visual Studio nommé **FirstPackage**. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **ajouter** > **un nouvel élément**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual C#** > **extensibilité** et sélectionnez **Package Visual Studio**. Dans le **nom** en bas de la fenêtre, modifiez le nom de fichier de commande pour *FirstPackage.cs*.  
   
 3.  Générez le projet et commencez le débogage.  
   
-     L’instance expérimentale de Visual Studio s’affiche. Pour plus d’informations sur l’instance expérimentale, consultez [l’Instance expérimentale](../extensibility/the-experimental-instance.md).  
+     L’instance expérimentale de Visual Studio s’affiche. Pour plus d’informations sur l’instance expérimentale, consultez [l’instance expérimentale](../extensibility/the-experimental-instance.md).  
   
-4.  Dans l’instance expérimentale, ouvrez le **outils / Extensions et mises à jour** fenêtre. Vous devez voir le **FirstPackage** extension ici. (Si vous ouvrez **Extensions et mises à jour** dans votre instance de travail de Visual Studio, vous ne verrez pas **FirstPackage**).  
+4.  Dans l’instance expérimentale, ouvrez le **outils** > **Extensions et mises à jour** fenêtre. Vous devez voir le **FirstPackage** extension ici. (Si vous ouvrez **Extensions et mises à jour** dans votre instance de travail de Visual Studio, vous ne verrez pas **FirstPackage**).  
   
-## <a name="loading-the-vspackage"></a>Charger le VSPackage  
- À ce stade l’extension ne charge pas, car il n’a rien de ce que vous oblige à charger. Vous pouvez généralement charger une extension lorsque vous interagissez avec son interface utilisateur (en cliquant sur une commande de menu, en ouvrant une fenêtre outil), ou en spécifiant que le VSPackage doit charger dans un contexte de l’interface utilisateur spécifique. Pour plus d’informations sur le chargement des contextes de VSPackages et l’interface utilisateur, consultez [le chargement des VSPackages](../extensibility/loading-vspackages.md). Pour cette procédure, nous allons vous montrer comment charger un VSPackage lorsqu’une solution est ouverte.  
+## <a name="load-the-vspackage"></a>Charger le VSPackage  
+ À ce stade l’extension ne se charge pas, car il n’a rien qui oblige ce dernier à charger. Vous pouvez généralement charger une extension lorsque vous interagissez avec son interface utilisateur (en cliquant sur une commande de menu, en ouvrant une fenêtre outil), ou en spécifiant que le VSPackage doit se charger dans un contexte de l’interface utilisateur spécifique. Pour plus d’informations sur le chargement des contextes de VSPackages et l’interface utilisateur, consultez [le chargement de VSPackages](../extensibility/loading-vspackages.md). Pour cette procédure, nous allons vous montrer comment charger un VSPackage lorsqu’une solution est ouverte.  
   
-1.  Ouvrez le fichier FirstPackage.cs. Recherchez la déclaration de la classe FirstPackage. Remplacer les attributs existants avec les éléments suivants :  
+1.  Ouvrez le *FirstPackage.cs* fichier. Recherchez la déclaration de la `FirstPackage` classe. Remplacez les attributs existants avec les éléments suivants :  
   
     ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
@@ -49,7 +49,7 @@ Cette procédure pas à pas montre comment créer un projet VSIX et ajouter un �
     public sealed class FirstPackage : Package  
     ```  
   
-2.  Vous allez ajouter un message qui nous permet de savoir que le VSPackage a été chargé. Nous utilisons la méthode Initialize() le VSPackage pour ce faire, car vous pouvez obtenir les services de Visual Studio uniquement après que le VSPackage a été installé. (Pour plus d’informations sur l’obtention de services, consultez [Comment : obtenir un Service](../extensibility/how-to-get-a-service.md).) Remplacer la méthode Initialize() de FirstPackage avec du code qui obtient le <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> de service, obtient le <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interface et appelle son <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A> (méthode).  
+2.  Nous allons ajouter un message qui nous permet de savoir que le VSPackage a été chargé. Nous utilisons le VSPackage `Initialize()` méthode pour ce faire, car vous pouvez obtenir Visual Studio services uniquement une fois que le VSPackage a été placé. (Pour plus d’informations sur l’obtention de services, consultez [Comment : obtenir un service](../extensibility/how-to-get-a-service.md).) Remplacer le `Initialize()` méthode de `FirstPackage` avec du code qui obtient le <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> de service, obtient le <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interface et appelle son <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A> (méthode).  
   
     ```csharp  
     protected override void Initialize()  

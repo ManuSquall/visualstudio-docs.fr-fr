@@ -9,12 +9,12 @@ description: Découvrez comment activer l’abonnement Virtualize/SOA Test Profe
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b03c5a5f47be44f6ae15c0a6d28d7155a37ea34d
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 9636bd3a264cf3cdd364382ffdffb11c376f1598
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280557"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283156"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Avantages de Parasoft Virtualize/SOAtest Professional Desktop dans les abonnements Visual Studio
 
@@ -26,12 +26,12 @@ Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportemen
 1.  Pour utiliser votre avantage Parasoft Virtualize/SOAtest Professional Desktop, connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2.  Recherchez la vignette Parasoft dans la section Outils et cliquez sur le lien **Obtenir le code** en bas de la vignette de l’avantage.   Vous recevez une notification confirmant l’envoi du code.  Cliquez sur **Activer**.
-
-    ![Vignette de l’avantage Parasoft](_img\vs-parasoft\vs-parasoft-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Vignette de l’avantage Parasoft](_img\vs-parasoft\vs-parasoft-tile.png)
 
 2.  Vous êtes ensuite redirigé vers le site web Parasoft pour créer un compte.  Entrez simplement vos coordonnées, puis cliquez sur **Envoyer**.
-
-    ![Avantage Parasoft, Créer un compte](_img\vs-parasoft\vs-parasoft-account-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Avantage Parasoft, Créer un compte](_img\vs-parasoft\vs-parasoft-account-cropped.png)
 
 
 3.  Une fois que vous avez créé votre compte, vous voyez s’afficher une notification indiquant qu’un e-mail avec des instructions de téléchargement vous a été envoyé.  (N’oubliez pas de vérifier vos dossiers de courrier indésirable si vous ne trouvez pas cet e-mail dans votre boîte de réception.)
@@ -39,8 +39,8 @@ Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportemen
 4.  Ouvrez l’e-mail et copiez le **code d’activation** dans le Presse-papiers.
 
 5.  Cliquez sur le lien correspondant à votre système d’exploitation.
-
-    ![Avantage Parasoft, E-mail de bienvenue](_img\vs-parasoft\vs-parasoft-email.png)
+    > [!div class="mx-imgBorder"]
+    > ![Avantage Parasoft, E-mail de bienvenue](_img\vs-parasoft\vs-parasoft-email.png)
 
 6.  Selon le navigateur que vous utilisez, vous pouvez voir des boîtes de dialogue différentes qui vous invitent à exécuter le programme d’installation.  Dans Internet Explorer, par exemple, vous verrez une liste des téléchargements récents, en haut de laquelle figure parasoft_soavirt_9.10.2_win32_x86_64.exe. Cliquez sur **Exécuter** pour démarrer le programme d’installation.
 
@@ -49,8 +49,8 @@ Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportemen
 8.  Choisissez la langue à utiliser, puis cliquez sur **OK**.
 
 9.  L’Assistant Parasoft SOAtest & Virtualize Setup Wizard démarre.  Cliquez sur **Suivant**.
-
-    ![Avantage Parasoft, Démarrage de l’installation](_img\vs-parasoft\vs-parasoft-start-install.png)
+    > [!div class="mx-imgBorder"]
+    >![Avantage Parasoft, Démarrage de l’installation](_img\vs-parasoft\vs-parasoft-start-install.png)
 
 10. Cliquez sur **I accept the agreement** (J’accepte le contrat), puis cliquez sur **Next** (Suivant).
 
@@ -61,14 +61,14 @@ Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportemen
 13. Spécifiez où vous voulez installer le raccourci de l’application, puis cliquez sur **Next** (Suivant).
 
 14. Le certificat d’autorité de certification racine web SOAtest est obligatoire pour certains tests fonctionnels effectués sur des sites HTTPS.  Choisissez si vous voulez installer le certificat d’autorité de certification racine, puis cliquez sur **Next** (Suivant).
-
-    ![Avantage Parasoft, Certificat d’autorité de certification racine](_img\vs-parasoft\vs-parasoft-install-root-ca.png)
+    > [!div class="mx-imgBorder"]
+    > ![Avantage Parasoft, Certificat d’autorité de certification racine](_img\vs-parasoft\vs-parasoft-install-root-ca.png)
 
 15. Choisissez si vous voulez que des icônes de lancement rapide et de Bureau soient créées pendant l’installation, puis cliquez sur **Next** (Suivant).
 
 16. Confirmez les options que vous avez sélectionnées, puis cliquez sur **Install** (Installer) pour démarrer l’installation du logiciel.
-
-    ![Avantage Parasoft, Prêt à installer](_img\vs-parasoft\vs-parasoft-ready-to-install.png)
+    > [!div class="mx-imgBorder"]
+    > ![Avantage Parasoft, Prêt à installer](_img\vs-parasoft\vs-parasoft-ready-to-install.png)
 
 17. À la fin de l’installation, cliquez sur **Finish** (Terminer). Vous êtes maintenant prêt à utiliser votre avantage Parasoft Virtualize/SOAtest Professional Desktop !
 
@@ -91,4 +91,4 @@ Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportemen
     - Support technique : https://www.parasoft.com/support/
     - Centre de ressources Parasoft : https://www.parasoft.com/resources/
 -  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  Vous avez des questions concernant l’IDE Visual Studio, Visual Studio Team Services ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
+-  Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).

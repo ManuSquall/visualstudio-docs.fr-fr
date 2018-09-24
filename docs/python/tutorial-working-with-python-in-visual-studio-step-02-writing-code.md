@@ -1,7 +1,7 @@
 ---
 title: 'Utilisation du didacticiel Python - Étape 2 : Écriture et exécution du code'
 description: Étape 2 d’une procédure pas à pas portant sur les fonctionnalités de Python dans Visual Studio qui explique comment modifier du code et exécuter un projet.
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,22 +11,22 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0769005bbf3715ae46a70e5461a6e34e50830c94
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 2fbd9729c02eedbcacd0955a6766b5627156090e
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031548"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513118"
 ---
-# <a name="step-2-writing-and-running-code"></a>Étape 2 : Écriture et exécution du code
+# <a name="step-2-write-and-run-code"></a>Étape 2 : Écrire et exécuter du code
 
-**Étape précédente : [Création d’un projet Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
+**Étape précédente : [Créer un projet Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
-Si l’Explorateur de solutions soit l’endroit où vous gérez les fichiers des projets, la fenêtre *Éditeur* est généralement l’endroit où vous travaillez avec le *contenu* des fichiers, comme le code source. L’éditeur fonctionne contextuellement selon le type de fichier que vous éditez, notamment le langage de programmation (sur la base de l’extension de fichier) et offre des fonctionnalités appropriées à ce langage, comme la coloration syntaxique et la saisie semi-automatique avec IntelliSense.
+Bien que l’**Explorateur de solutions** soit l’emplacement où vous gérez les fichiers projet, la fenêtre *Éditeur* est généralement l’emplacement où vous travaillez sur les *contenus* des fichiers, par exemple le code source. L’éditeur fonctionne contextuellement selon le type de fichier que vous éditez, notamment le langage de programmation (sur la base de l’extension de fichier) et offre des fonctionnalités appropriées à ce langage, comme la coloration syntaxique et la saisie semi-automatique avec IntelliSense.
 
-1. Une fois que vous avez créé un nouveau projet « Application Python », un fichier vide nommé `PythonApplication1.py` par défaut s’ouvre dans l’éditeur Visual Studio.
+1. Une fois que vous avez créé un projet « Application Python », un fichier vide par défaut nommé *PythonApplication1.py* s’ouvre dans l’éditeur Visual Studio.
 
-1. Dans l’éditeur, commencez à taper `print("Hello, Visual Studio")` et observez la manière dont Visual Studio IntelliSense affiche les options de saisie semi-automatique au cours de la frappe. L’option indiquée dans la liste déroulante correspond au mode de saisie semi-automatique par défaut qui est utilisé lorsque vous appuyez sur la touche de tabulation. Les saisies semi-automatiques sont le plus utiles dans le cas d’instructions ou d’identificateurs plus longs.
+1. Dans l’éditeur, commencez à taper `print("Hello, Visual Studio")` et observez la manière dont Visual Studio IntelliSense affiche les options de saisie semi-automatique au cours de la frappe. L’option indiquée dans la liste déroulante correspond à la complétion par défaut utilisée quand vous appuyez sur la touche **Tab**. Les saisies semi-automatiques sont le plus utiles dans le cas d’instructions ou d’identificateurs plus longs.
 
     ![Menu contextuel de la saisie semi-automatique IntelliSense](media/vs-getting-started-python-04-IntelliSense1b.png)
 
@@ -45,11 +45,11 @@ Si l’Explorateur de solutions soit l’endroit où vous gérez les fichiers de
     ![Coloration syntaxique et mise en évidence des erreurs par IntelliSense](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > L’environnement de développement de quelqu’un étant une affaire très personnelle, Visual Studio vous donne un contrôle complet sur son apparence et son comportement. Sélectionnez la commande de menu **Outils > Options** et explorez les paramètres sous les onglets **Environnement** et **Éditeur de texte**. Par défaut, vous voyez seulement un nombre limité d’options. Pour afficher toutes les options pour chaque langage de programmation, sélectionnez **Afficher tous les paramètres** en bas de la boîte de dialogue. 
+    > L’environnement de développement de quelqu’un étant une affaire très personnelle, Visual Studio vous donne un contrôle complet sur son apparence et son comportement. Sélectionnez la commande de menu **Outils** > **Options**, et explorez les paramètres sous les onglets **Environnement** et **Éditeur de texte**. Par défaut, vous voyez seulement un nombre limité d’options. Pour afficher toutes les options pour chaque langage de programmation, sélectionnez **Afficher tous les paramètres** en bas de la boîte de dialogue. 
 
-1. Exécutez le code que vous avez écrit à ce stade en appuyant sur Ctrl+F5 ou en sélectionnant l’élément de menu **Déboguer > Démarrer sans débogage**. Visual Studio vous avertit si votre code contient encore des erreurs.
+1. Exécutez le code que vous avez écrit à ce stade en appuyant sur **Ctrl**+**F5**, ou en sélectionnant l’élément de menu **Déboguer** > **Exécuter sans débogage**. Visual Studio vous avertit si votre code contient encore des erreurs.
 
-1. Quand vous exécutez le programme, une fenêtre de console affiche les résultats, comme si vous exécutiez un interpréteur Python avec `PythonApplication1.py` à partir de la ligne de commande. Appuyez sur une touche pour fermer la fenêtre et revenir à l’éditeur Visual Studio.
+1. Quand vous exécutez le programme, une fenêtre de console affiche les résultats, comme si vous exécutiez un interpréteur Python avec *PythonApplication1.py* à partir de la ligne de commande. Appuyez sur une touche pour fermer la fenêtre et revenir à l’éditeur Visual Studio.
 
     ![Sortie pour la première exécution du programme](media/vs-getting-started-python-07-output.png)
 
@@ -75,7 +75,7 @@ Si l’Explorateur de solutions soit l’endroit où vous gérez les fichiers de
     ```
 
     > [!Tip]
-    > La saisie semi-automatique fonctionne avec des sous-chaînes au fil de la saisie, en faisant correspondre des parties de mots, des lettres en début de mots et même des caractères ignorés. Pour plus d’informations, consultez la page [Modification du code - Saisie semi-automatique](editing-python-code-in-visual-studio.md#completions).
+    > La saisie semi-automatique fonctionne avec des sous-chaînes au fil de la saisie, en faisant correspondre des parties de mots, des lettres en début de mots et même des caractères ignorés. Pour plus d’informations, consultez [Modifier le code - Complétions](editing-python-code-in-visual-studio.md#completions).
 
 1. Ajoutez un peu plus de code pour afficher les valeurs du cosinus pour 360 degrés :
 
@@ -84,16 +84,16 @@ Si l’Explorateur de solutions soit l’endroit où vous gérez les fichiers de
         print(cos(radians(i)))
     ```
 
-1. Relancez le programme avec Ctrl+F5 ou **Déboguer > Démarrer sans débogage**. Fermez la fenêtre de sortie quand vous avez terminé.
+1. Réexécutez le programme avec **Ctrl**+**F5** ou **Déboguer** > **Exécuter sans débogage**. Fermez la fenêtre de sortie quand vous avez terminé.
 
 ## <a name="next-step"></a>Étape suivante
 
 > [!div class="nextstepaction"]
-> [Utilisation de la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
+> [Utiliser la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 
-## <a name="going-deeper"></a>Pour aller plus loin
+## <a name="go-deeper"></a>Approfondir la question
 
-- [Modification du code](editing-python-code-in-visual-studio.md)
-- [Mise en forme du code](formatting-python-code.md)
-- [Refactorisation du code](refactoring-python-code.md)
-- [Utilisation de PyLint](linting-python-code.md)
+- [Modifier le code](editing-python-code-in-visual-studio.md)
+- [Code du format](formatting-python-code.md)
+- [Refactoriser du code](refactoring-python-code.md)
+- [Utiliser PyLint](linting-python-code.md)

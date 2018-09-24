@@ -13,22 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2663864f0cf9d23db22f11cccfd7a9c474d6577c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 42336bcbded19343651eeff3b18a7f4a52c96fbe
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972090"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382247"
 ---
-# <a name="how-to-import-load-test-results-into-a-repository"></a>Comment : importer les résultats d'un test de charge dans un référentiel
+# <a name="how-to-import-load-test-results-into-a-repository"></a>Guide pratique pour importer les résultats d’un test de charge dans un référentiel
 
-Lorsque vous exécutez un test de charge, les informations recueillies au cours de l'exécution sont stockées dans le référentiel des résultats des tests de charge. Ce référentiel contient des données de compteurs de performance et des informations relatives aux erreurs. Pour plus d’informations, consultez [Gestion des résultats des tests de charge dans le dépôt des résultats de tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md).
+Lorsque vous exécutez un test de charge, les informations recueillies au cours de l'exécution sont stockées dans le référentiel des résultats des tests de charge. Ce référentiel contient des données de compteurs de performance et des informations relatives aux erreurs. Pour plus d’informations, consultez [Gérer les résultats des tests de charge dans le référentiel des résultats des tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
  Vous pouvez gérer les résultats des tests de charge à partir de l’éditeur de test de charge via la boîte de dialogue **Ouvrir et gérer des résultats des tests de charge**. Vous pouvez ouvrir, importer, exporter et supprimer les résultats des tests de charge.
 
 ## <a name="to-import-results-into-a-repository"></a>Pour importer les résultats dans un référentiel
 
-1.  Depuis un projet de test de performances de site Web et de charge, ouvrez un test de charge.
+1.  Depuis un projet de test de performances web et de charge, ouvrez un test de charge.
 
 2.  Dans la barre d’outils incorporée, choisissez **Ouvrir et gérer des résultats**.
 
@@ -55,6 +55,6 @@ Lorsque vous exécutez un test de charge, les informations recueillies au cours 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Gestion des résultats des tests de charge dans le référentiel des résultats des tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md)
+- [Gérer des résultats des tests de charge dans le référentiel des résultats des tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [Analyser les résultats des tests de charge](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Guide pratique pour exporter les résultats des tests de charge à partir d’un référentiel](../test/how-to-export-load-test-results-from-a-repository.md)

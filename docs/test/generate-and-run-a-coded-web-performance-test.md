@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 65331aa24eee140bcba983f1360c02f0227905fe
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 663b2e18eb71cb627bd521df0de6bc21c95cef05
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750852"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320747"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Générer et exécuter un test de performances de site Web codé
 
@@ -29,7 +29,7 @@ Les tests de performances web sont enregistrés lors de la navigation au sein de
 
 ## <a name="generate-a-coded-web-performance-test"></a>Générer un test de performances Web codé
 
-1.  Si vous n’avez pas créé un test de performances web, consultez [Enregistrer un test de performances web](/vsts/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
+1.  Si vous n’avez pas créé un test de performances web, consultez [Enregistrer un test de performances web](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project?view=vsts).
 
 2.  Générez le test codé.
 
@@ -85,7 +85,7 @@ Les tests de performances web sont enregistrés lors de la navigation au sein de
 ## <a name="qa"></a>Questions et réponses
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>Q : Puis-je exécuter plusieurs tests simultanément ?
- **R :** Oui, utilisez le menu contextuel dans l’Explorateur de solutions.
+ **R :** Oui, utilisez le menu contextuel dans l’**Explorateur de solutions**.
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>Q : Dois-je ajouter une source de données avant ou après la génération d'un test codé ?
  **R :** Il est plus facile d’ajouter une [source de données](../test/add-a-data-source-to-a-web-performance-test.md) avant de générer le test codé, car le code sera généré automatiquement pour vous.

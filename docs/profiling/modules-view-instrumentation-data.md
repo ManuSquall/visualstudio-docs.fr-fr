@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c7db34fb4913e3576f286aa7c34fe3cf80296ed
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c849971da7681322b15365bc0d59ce8b3529f508
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256108"
 ---
-# <a name="modules-view---instrumentation-data"></a>Modules, vue - Données d’instrumentation
+# <a name="modules-view---instrumentation-data"></a>Modules, vue - données d’instrumentation
 La vue Modules affiche les données de performances regroupées selon les modules contenus dans les données de profilage. Les fonctions du module sont répertoriées sous le nœud du module.  
   
 ## <a name="general"></a>Général  
@@ -83,5 +84,5 @@ La vue Modules affiche les données de performances regroupées selon les module
   
 ## <a name="see-also"></a>Voir aussi  
  [Vue Modules - Données d’instrumentation](../profiling/modules-view-sampling-data.md)   
- [Modules, vue - Instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
- [Modules, vue - Échantillonnage](../profiling/modules-view-dotnet-memory-sampling-data.md)
+ [Modules, vue - instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
+ [Modules, vue - échantillonnage](../profiling/modules-view-dotnet-memory-sampling-data.md)

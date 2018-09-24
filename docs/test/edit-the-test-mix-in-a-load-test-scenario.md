@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cd3511d138fb6416d8309a3e32c1e96c9b70502b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3fd2ab4689128ca06ab463aed1743a244597b9ea
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750933"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179513"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Modifier la combinaison de tests pour spécifier les tests de performances web, les tests unitaires et les tests codés de l’interface utilisateur à inclure dans un scénario de test de charge
 
@@ -33,9 +33,9 @@ La *combinaison de tests* d’un scénario associe la sélection des tests de pe
 
 ## <a name="add-new-tests-to-a-test-mix-in-an-existing-scenario"></a>Ajouter de nouveaux tests à une combinaison de tests dans un scénario existant
 
-Lorsque vous créez un scénario à l'aide de l'Assistant Nouveau test de charge, vous pouvez spécifier les tests de performances de site Web et les tests unitaires à ajouter à la combinaison de tests du nouveau scénario.
+Lorsque vous créez un scénario à l'aide de l'**Assistant Nouveau test de charge**, vous pouvez spécifier les tests de performances web et les tests unitaires à ajouter à la combinaison de tests du nouveau scénario.
 
-Vous pouvez ajouter d'autres tests de performances de site Web et tests unitaires à la combinaison de tests du scénario à l'aide de l'éditeur de test de charge.
+Vous pouvez ajouter d'autres tests de performances web et tests unitaires à la combinaison de tests du scénario à l'aide de l'**éditeur de test de charge**.
 
 ![Ajout d'un test à un test de charge existant](../test/media/ltest_addingtests.png)
 
@@ -43,9 +43,9 @@ Vous pouvez ajouter d'autres tests de performances de site Web et tests unitaire
 
 1.  Ouvrez un test de charge.
 
-2.  Dans l’éditeur de test de charge, cliquez avec le bouton droit sur un scénario existant, puis choisissez **Ajouter des tests**.
+2.  Dans l’**éditeur de test de charge**, cliquez avec le bouton droit sur un scénario existant, puis choisissez **Ajouter des tests**.
 
-     La boîte de dialogue **Ajouter des tests** s’affiche. Tous les tests de performances de site Web, tests unitaires et tests codés de l'interface utilisateur de votre solution qui ne figurent pas déjà dans votre scénario peuvent y être ajoutés.
+     La boîte de dialogue **Ajouter des tests** s’affiche. Tous les tests de performances web, tests unitaires et tests codés de l'interface utilisateur de votre solution qui ne figurent pas déjà dans votre scénario peuvent y être ajoutés.
 
 3.  Dans le volet **Tests disponibles**, sélectionnez les tests de performances web, les tests unitaires et les tests codés de l’interface utilisateur à ajouter. Choisissez la flèche droite pour ajouter les tests au volet **Tests sélectionnés**.
 
@@ -55,14 +55,14 @@ Vous pouvez ajouter d'autres tests de performances de site Web et tests unitaire
 
 5.  (Facultatif) Ajustez le contrôle de combinaison pour spécifier la distribution de test. Pour plus d’informations, consultez [À propos du contrôle de combinaison](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
-##  <a name="EditingTestMixRemoveTest"></a> Suppression de tests d’un scénario
+##  <a name="remove-tests-from-a-scenario"></a>Supprimer des tests d'un scénario
  ![Suppression d'un test d'un test de charge existant](../test/media/ltest_removetest.png)
 
 ### <a name="to-remove-tests-from-a-scenario"></a>Pour supprimer des tests d'un scénario
 
 1.  Ouvrez un test de charge.
 
-2.  Dans l’éditeur de test de charge, dans l’arborescence des tests de charge, cliquez avec le bouton droit sur le scénario dont vous souhaitez supprimer un test, puis sélectionnez **Modifier la combinaison de tests**. La boîte de dialogue **Modifier la combinaison de tests** s’affiche.
+2.  Dans l’**éditeur de test de charge**, dans l’arborescence des tests de charge, cliquez avec le bouton droit sur le scénario dont vous souhaitez supprimer un test, puis sélectionnez **Modifier la combinaison de tests**. La boîte de dialogue **Modifier la combinaison de tests** s’affiche.
 
 3.  Sélectionnez le test de performances web, le test unitaire ou le test codé de l’interface utilisateur dans la grille, puis choisissez **Supprimer**.
 

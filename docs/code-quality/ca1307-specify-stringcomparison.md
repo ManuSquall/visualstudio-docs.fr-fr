@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dac870bde757d77e1d0025a1b387f54ca928a5f1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 67f0d5152dcdef5ffa3abb76d92e68fd99f9b637
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900853"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550412"
 ---
 # <a name="ca1307-specify-stringcomparison"></a>CA1307 : Spécifier StringComparison
+
 |||
 |-|-|
 |TypeName|SpecifyStringComparison|
@@ -35,15 +36,17 @@ ms.locfileid: "31900853"
  Une opération de comparaison de chaînes utilise une surcharge de méthode qui ne définit pas un <xref:System.StringComparison> paramètre.
 
 ## <a name="rule-description"></a>Description de la règle
- Plusieurs opérations de chaîne, la plus importantes du <xref:System.String.Compare%2A> et <xref:System.String.Equals%2A> méthodes, fournissent une surcharge qui accepte un <xref:System.StringComparison> valeur d’énumération en tant que paramètre.
+ Plusieurs opérations de chaîne, plus importantes la <xref:System.String.Compare%2A> et <xref:System.String.Equals%2A> méthodes, fournissent une surcharge qui accepte un <xref:System.StringComparison> valeur d’énumération en tant que paramètre.
 
- Chaque fois qu’une surcharge existe qui prend un <xref:System.StringComparison> paramètre, il doit être utilisé au lieu d’une surcharge qui n’accepte pas ce paramètre. En définissant ce paramètre explicitement, votre code est souvent plus clair et plus facile à gérer.
+ Chaque fois que les existe une surcharge qui accepte un <xref:System.StringComparison> paramètre, il doit être utilisé au lieu d’une surcharge qui n’accepte pas ce paramètre. En affectant explicitement à ce paramètre, votre code est souvent plus clair et plus facile à gérer.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, substituez les méthodes de comparaison de chaîne pour les surcharges qui acceptent le <xref:System.StringComparison> énumération en tant que paramètre. Par exemple : modifier `String.Compare(str1, str2)` à `String.Compare(str1, str2, StringComparison.Ordinal)`.
+ Pour corriger une violation de cette règle, modifier les méthodes de comparaison de chaînes pour les surcharges qui acceptent le <xref:System.StringComparison> énumération en tant que paramètre. Par exemple : modifier `String.Compare(str1, str2)` à `String.Compare(str1, str2, StringComparison.Ordinal)`.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Il est possible de supprimer un avertissement de cette règle lorsque la bibliothèque ou l’application est destinée à une audience locale limitée et ne sera donc pas localisée.
+ Il est possible de supprimer un avertissement de cette règle lorsque la bibliothèque ou l’application est destinée à une audience locale limitée et ne sera donc pas traduite.
 
 ## <a name="see-also"></a>Voir aussi
- [Avertissements de globalisation](../code-quality/globalization-warnings.md) [CA1309 : utiliser StringComparison avec la valeur ordinal](../code-quality/ca1309-use-ordinal-stringcomparison.md)
+
+- [Avertissements liés à la globalisation](../code-quality/globalization-warnings.md)
+- [CA1309 : Utilisez StringComparison avec la valeur Ordinal](../code-quality/ca1309-use-ordinal-stringcomparison.md)

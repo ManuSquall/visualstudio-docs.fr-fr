@@ -10,15 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64ea0d4d51a7dfbd9a7e1fb58e6297d0842d83b3
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: e5197ba9e1a2fda9cb6a41cfe903bd772db53331
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34268267"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626523"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Exécuter des outils de profilage avec ou sans le débogueur
 Visual Studio offre désormais une sélection d’outils d’analyse des performances. Certains d’entre eux, comme **Utilisation de l’UC** et **Utilisation de la mémoire**, peuvent être exécutés avec ou sans le débogueur. Les outils d’analyse des performances non intégrés au débogueur sont destinés à s’exécuter sur les configurations Release, tandis que ceux intégrés au débogueur sont destinés à s’exécuter sur les configurations Debug.  
+
+Vous pouvez utiliser les Outils de profilage sans débogueur avec Windows 7 et les versions ultérieures. Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**).
   
 ## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>Faut-il exécuter l’outil avec ou sans le débogueur ?  
  Les outils d'analyse des performances intégrés au débogueur vous permettent d'accomplir de nombreuses tâches qui ne sont pas proposées par les outils non intégrés au débogueur, comme la définition de points d'arrêt et l'inspection des valeurs des variables. Les outils non intégrés au débogueur offrent une expérience plus proche de ce que voient les utilisateurs de l’application finale.  

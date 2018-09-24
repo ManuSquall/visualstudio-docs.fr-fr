@@ -1,5 +1,5 @@
 ---
-title: Déboguer des Applications 64 bits | Documents Microsoft
+title: Déboguer des Applications 64 bits | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 17577684c7adffe46326d2151710e88745c60e1f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 28a7625729989252a29ab1d0f65feec010e9e65f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461436"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284079"
 ---
 # <a name="debug-64-bit-applications"></a>Déboguer des applications 64 bits
 Vous pouvez déboguer une application 64 bits qui s'exécute sur l'ordinateur local ou sur un ordinateur distant.  
@@ -46,7 +46,7 @@ Vous pouvez déboguer une application 64 bits qui s'exécute sur l'ordinateur lo
 4.  Démarrez le débogage. Vous devez avoir la même expérience qu’avec une configuration 32 bits. Si vous obtenez des erreurs, consultez la section de résolution des problèmes ci-dessous.  
   
 ## <a name="troubleshooting-64-bit-debugging"></a>Résolution des problèmes de débogage 64 bits  
- Vous pouvez voir une erreur : « une opération de débogage 64 bits prend plus de temps que prévu. » Dans ce cas, Visual Studio a envoyé une demande à la version 64 bits de msvsmon.exe et l’obtention du résultat de cette demande a pris beaucoup de temps.  
+ Vous pouvez rencontrer une erreur : « une opération de débogage 64 bits est plue longue que prévu. » Dans ce cas, Visual Studio a envoyé une demande à la version 64 bits de msvsmon.exe et l’obtention du résultat de cette demande a pris beaucoup de temps.  
   
  Deux causes principales peuvent provoquer cette erreur :  
   
@@ -55,7 +55,7 @@ Vous pouvez déboguer une application 64 bits qui s'exécute sur l'ordinateur lo
 -   Vous rencontrez un problème de blocage ou de performances avec Visual Studio. Si le problème se produit régulièrement, vous pouvez collecter les dumps de Visual Studio (devenv.exe) et le processus de travail (msvsmon.exe), puis les envoyer à Microsoft. Pour plus d’informations sur le signalement d’un problème, consultez [How to Report a Problem with Visual Studio](../ide/How-to-Report-a-Problem-with-Visual-Studio-2017.md).
   
 ## <a name="see-also"></a>Voir aussi  
- [Applications 64 bits](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
+ [Applications 64 bits](https://docs.microsoft.com/dotnet/framework/64-bit-apps)   
  [Configuration des programmes pour 64 bits](/cpp/build/configuring-programs-for-64-bit-visual-cpp)   
  [Prise en charge 64 bits de Visual Studio IDE](../ide/visual-studio-ide-64-bit-support.md)   
  [À l’aide de fichiers de vidage](../debugger/using-dump-files.md)   

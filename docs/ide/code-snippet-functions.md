@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ead5a3f15f5ba7f586c9dfcec86fb309cbda391f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f3362bae41b540ee097e1109848680a11d37a272
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917964"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512133"
 ---
 # <a name="code-snippet-functions"></a>Fonctions des extraits de code
 
-Trois fonctions peuvent être utilisées avec les extraits de code C#. Les fonctions sont spécifiées dans l’élément [Function](../ide/code-snippets-schema-reference.md#function) de l’extrait de code. Pour plus d’informations sur la création d’extraits de code, consultez [Extraits de code](../ide/code-snippets.md).
+Trois fonctions peuvent être utilisées avec les extraits de code C#. Les fonctions sont spécifiées dans l’élément [Function](../ide/code-snippets-schema-reference.md#function-element) de l’extrait de code. Pour plus d’informations sur la création d’extraits de code, consultez [Extraits de code](../ide/code-snippets.md).
 
 ## <a name="functions"></a>Fonctions
 
@@ -31,9 +31,9 @@ Le tableau suivant décrit les fonctions qui peuvent être utilisées avec l’�
 
 |Fonction|Description|Langue|
 |--------------|-----------------|--------------|
-|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Génère une instruction switch et un ensemble d’instructions case pour les membres de l’énumération spécifiée par le paramètre `EnumerationLiteral`. Le paramètre `EnumerationLiteral` doit être une référence à un littéral d’énumération ou un type d’énumération.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|
-|`ClassName()`|Retourne le nom de la classe qui contient l’extrait de code inséré.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|
-|`SimpleTypeName(` `TypeName` `)`|Réduit le paramètre *TypeName* à sa forme la plus simple dans le contexte dans lequel l’extrait de code a été appelé.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|
+|`GenerateSwitchCases(` `EnumerationLiteral` `)`|Génère une instruction switch et un ensemble d’instructions case pour les membres de l’énumération spécifiée par le paramètre `EnumerationLiteral`. Le paramètre `EnumerationLiteral` doit être une référence à un littéral d’énumération ou un type d’énumération.|C#|
+|`ClassName()`|Retourne le nom de la classe qui contient l’extrait de code inséré.|C#|
+|`SimpleTypeName(` `TypeName` `)`|Réduit le paramètre *TypeName* à sa forme la plus simple dans le contexte dans lequel l’extrait de code a été appelé.|C#|
 
 ## <a name="example"></a>Exemple
 
@@ -159,5 +159,5 @@ Cet exemple montre comment utiliser la fonction `SimpleTypeName`. Quand cet extr
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Function, élément](../ide/code-snippets-schema-reference.md#function)
+- [Function, élément](../ide/code-snippets-schema-reference.md#function-element)
 - [Référence de schéma des extraits de code](../ide/code-snippets-schema-reference.md)

@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 107145ddc607aeb981797c935a9d693a3fd9f9a6
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 7f60fa346df7d2b9e89f3d6905e273d0191bdf3b
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2018
-ms.locfileid: "29708931"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281739"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>Former un modèle TensorFlow localement
 

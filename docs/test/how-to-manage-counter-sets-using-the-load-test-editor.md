@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 27a1cdd3390d6f068947bfcb0daef76eb93fd026
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 351d5bd6d46dbc247b125ae56d98c37028f34e35
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751986"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379382"
 ---
-# <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Comment : gérer des ensembles de compteurs à l'aide de l'éditeur de test de charge
+# <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Guide pratique pour gérer des ensembles de compteurs à l’aide de l’éditeur de test de charge
 
 Quand vous créez un test de charge avec l’**Assistant Nouveau test de charge**, vous ajoutez un ensemble initial de compteurs. Ceux-ci vous offrent un groupe d'ensembles de compteurs prédéfinis pour votre test de charge.
 
@@ -56,12 +56,12 @@ La gestion d'ensembles de compteurs implique le choix du jeu d'ordinateurs à pa
 
      Les étiquettes d’ordinateur permettent d’identifier un ordinateur avec un nom facile à reconnaître.
 
-     Les étiquettes s’affichent dans le nœud **Mappages des ensembles de compteurs** de l’arborescence de l’éditeur de test de charge. Plus important, les étiquettes s’affichent dans les rapports Excel, ce qui permet aux parties prenantes d’identifier le rôle de l’ordinateur dans le test de charge. Par exemple, « Server1 Web dans lab2 » ou « SQL Server2 dans le bureau de Phoenix ». Pour plus d’informations, consultez [Création de rapports sur les résultats des tests de charge pour les comparaisons de tests ou l’analyse de tendances](../test/compare-load-test-results.md).
+     Les étiquettes s’affichent dans le nœud **Mappages des ensembles de compteurs** de l’arborescence de l’éditeur de test de charge. Plus important, les étiquettes s’affichent dans les rapports Excel, ce qui permet aux parties prenantes d’identifier le rôle de l’ordinateur dans le test de charge. Par exemple, « Server1 Web dans lab2 » ou « SQL Server2 dans le bureau de Phoenix ». Pour plus d’informations, voir [Créer des rapports sur les résultats des tests de charge à des fins de comparaison ou d’analyse des tendances](../test/compare-load-test-results.md).
 
 6.  Cliquez sur **OK**.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md)
-- [Spécification des ensembles de compteurs et des règles de seuil pour les ordinateurs dans un test de charge](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Configuration des paramètres d’exécution des tests de charge](../test/configure-load-test-run-settings.md)
+- [Spécifier les ensembles de compteurs et les règles de seuil des ordinateurs dans un test de charge](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
+- [Configurer les paramètres d’exécution des tests de charge](../test/configure-load-test-run-settings.md)

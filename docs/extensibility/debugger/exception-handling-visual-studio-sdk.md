@@ -1,5 +1,5 @@
 ---
-title: Exceptions (Visual Studio SDK) | Documents Microsoft
+title: Exceptions (Kit de développement logiciel Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,21 +13,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 646479184061b093d5d84f81827a4106bd3cda47
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ab3a3aafdca83305b86ce083e53e654b637cf110
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100788"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232063"
 ---
-# <a name="exception-handling-visual-studio-sdk"></a>Exceptions (Kit de développement logiciel Visual Studio)
-La liste suivante décrit le processus qui se produit lorsque des exceptions sont levées.  
+# <a name="exception-handling-visual-studio-sdk"></a>Gestion des exceptions (SDK Visual Studio)
+La section suivante décrit le processus qui se produit lorsque des exceptions sont levées.  
   
-## <a name="exception-handling-process"></a>Processus de gestion des exceptions  
+## <a name="exception-handling-process"></a>Processus de gestion d’exception  
   
-1.  Lorsqu’une exception est levée d’abord, mais avant qu’il est géré par le Gestionnaire d’exceptions dans le programme en cours de débogage, le moteur de débogage (DE) envoie une [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) pour le Gestionnaire de session de débogage (SDM) comme un événement d’arrêt. Le `IDebugExceptionEvent2` est envoyé si seuls les paramètres d’exception (spécifié dans la boîte de dialogue Exceptions dans le package de débogage) indiquent que l’utilisateur souhaite arrêter sur les notifications d’exceptions de première chance.  
+1.  Quand une exception est levée d’abord, mais avant qu’il est géré par le Gestionnaire d’exceptions dans le programme en cours de débogage, le moteur de débogage (dé) envoie une [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) avec le Gestionnaire de débogage de session (SDM) comme un événement d’arrêt. Le `IDebugExceptionEvent2` est envoyé si seuls les paramètres d’exception (spécifiée dans la boîte de dialogue Exceptions dans le package de débogage) indiquent que l’utilisateur souhaite arrêter sur les notifications des exceptions de première chance.  
   
-2.  Les appels SDM [IDebugExceptionEvent2::GetException](../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) pour obtenir la propriété de l’exception.  
+2.  Les appels SDM [IDebugExceptionEvent2::GetException](../../extensibility/debugger/reference/idebugexceptionevent2-getexception.md) pour obtenir la propriété d’exception.  
   
 3.  Les appels de package de débogage [IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) pour déterminer quelles options de présenter à l’utilisateur.  
   
@@ -39,17 +39,17 @@ La liste suivante décrit le processus qui se produit lorsque des exceptions son
   
          - ou -  
   
-         Si la méthode retourne S_FALSE, le programme débogué est donné à une deuxième chance pour gérer l’exception.  
+         Si la méthode retourne S_FALSE, le programme en cours de débogage est donné à une seconde chance pour gérer l’exception.  
   
-6.  Si le programme débogué n’a aucun gestionnaire pour une exception de deuxième chance, le D’envoie un `IDebugExceptionEvent2` pour le SDM comme **EVENT_SYNC_STOP**.  
+6.  Si le programme en cours de débogage n’a aucun gestionnaire pour une exception de seconde chance, l’Allemagne envoie un `IDebugExceptionEvent2` pour le SDM comme **EVENT_SYNC_STOP**.  
   
 7.  Le package de débogage demande à l’utilisateur comment gérer l’exception en ouvrant une boîte de dialogue Exceptions de première chance.  
   
 8.  Les appels de package de débogage [IDebugExceptionEvent2::CanPassToDebuggee](../../extensibility/debugger/reference/idebugexceptionevent2-canpasstodebuggee.md) pour déterminer quelles options de présenter à l’utilisateur.  
   
-9. Le package de débogage demande à l’utilisateur comment gérer l’exception en ouvrant une boîte de dialogue d’exception de deuxième chance.  
+9. Le package de débogage demande à l’utilisateur comment gérer l’exception en ouvrant une boîte de dialogue d’exception de seconde chance.  
   
 10. Si la méthode retourne S_OK, appelle `IDebugExceptionEvent2::PassToDebuggee`.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Événements d’appel du débogueur](../../extensibility/debugger/calling-debugger-events.md)
+ [Appeler des événements de débogueur](../../extensibility/debugger/calling-debugger-events.md)

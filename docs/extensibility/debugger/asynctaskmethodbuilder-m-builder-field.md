@@ -1,5 +1,5 @@
 ---
-title: Champ de AsyncTaskMethodBuilder.m_builder | Documents Microsoft
+title: Champ AsyncTaskMethodBuilder.m_builder | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 57e96fc107130469a7f2c73fe516a34caf8325a7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5cada786753db5bc720f3b07cdc58108e7170001
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098717"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155364"
 ---
-# <a name="asynctaskmethodbuildermbuilder-field"></a>Champ de AsyncTaskMethodBuilder.m_builder
-Représente l’objet Générateur générique à laquelle cette instance non générique délègue.  
+# <a name="asynctaskmethodbuildermbuilder-field"></a>Champ AsyncTaskMethodBuilder.m_builder
+Représente l’objet de Générateur générique auquel cette instance non générique délègue.  
   
  **Namespace :** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
@@ -31,7 +31,7 @@ Représente l’objet Générateur générique à laquelle cette instance non g�
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```csharp 
 .field private valuetype System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1<valuetype System.Threading.Tasks.VoidTaskResult> m_builder  
 ```  
   
@@ -39,4 +39,4 @@ Représente l’objet Générateur générique à laquelle cette instance non g�
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>   
- [Valeurs internes d’extension parallèle pour .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+ [Mécanismes internes d’extension parallèle pour le .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

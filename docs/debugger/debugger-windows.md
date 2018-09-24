@@ -1,5 +1,5 @@
 ---
-title: Débogueur Windows dans Visual Studio | Documents Microsoft
+title: Débogueur Windows dans Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
@@ -10,16 +10,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa0c7fb04b05ef1ec1c83fe744458fdcc6ca3743
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ebf9896626a26d1462c2f1d8639722b28ef1e1ea
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481487"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178304"
 ---
-# <a name="learn-about-debugger-windows-in-visual-studio"></a>En savoir plus sur les fenêtres du débogueur dans Visual Studio
+# <a name="learn-about-debugger-windows-in-visual-studio"></a>En savoir plus sur Windows de débogueur dans Visual Studio
 
-Vous pouvez ouvrir la plupart des fenêtres du débogueur pendant le débogage de votre programme. Pour afficher la liste des fenêtres du débogueur, définir un point d’arrêt et démarrer le débogage. Lorsque vous atteignez le s’arrête au point d’arrêt et l’exécution, cliquez sur **Déboguer > Windows**.
+Vous pouvez ouvrir la plupart des fenêtres du débogueur pendant le débogage de votre programme. Pour afficher la liste des fenêtres du débogueur, définir un point d’arrêt et démarrer le débogage. Lorsque vous atteignez le point d’arrêt et l’exécution s’interrompt, cliquez sur **Déboguer > Windows**.
 
 ||||
 |-|-|-|
@@ -34,12 +34,12 @@ Vous pouvez ouvrir la plupart des fenêtres du débogueur pendant le débogage d
 |Piles des appels|Ctrl+Alt+C|[Guide pratique pour utiliser la fenêtre Pile des appels](../debugger/how-to-use-the-call-stack-window.md)|
 |Immédiat|Ctrl+Alt+I|[Exécution, fenêtre](../ide/reference/immediate-window.md)|
 |Piles parallèles|Ctrl+Maj+D, S|[Utilisation de la fenêtre Piles parallèles](../debugger/using-the-parallel-stacks-window.md)|
-|Espion parallèle|Ctrl+Maj+D, (1, 2, 3, 4)|[Obtenir a démarré le débogage des Applications multithread](../debugger/get-started-debugging-multithreaded-apps.md)|
+|Espion parallèle|Ctrl+Maj+D, (1, 2, 3, 4)|[Prise en main du débogage des Applications multithread](../debugger/get-started-debugging-multithreaded-apps.md)|
 |Threads|Ctrl+Alt+H|[Déboguer à l’aide de la fenêtre Threads](../debugger/how-to-use-the-threads-window.md)|
 |Modules|Ctrl+Alt+U|[Guide pratique pour utiliser la fenêtre Modules](../debugger/how-to-use-the-modules-window.md)|
 |Threads GPU|-|[Guide pratique pour utiliser la fenêtre Threads GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
 |Tâches|Ctrl+Maj+D, K|[Utilisation de la fenêtre Tâches](../debugger/using-the-tasks-window.md)|
-|Python Debug Interactive|Maj+Alt+I|[REPL interactif de Python](../python/python-interactive-repl-in-visual-studio.md)|
+|Python Debug Interactive|Maj+Alt+I|[Boucle REPL Interactive Python](../python/python-interactive-repl-in-visual-studio.md)|
 |Console JavaScript|Ctrl+Alt+V, C|[Démarrage rapide : Déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |Explorateur DOM|Ctrl+Alt+V, D|[Déboguer la disposition avec l’Explorateur DOM](../debugger/debug-layout-using-dom-explorer.md)|
 |Arborescence d’éléments visuels en direct|-|[Inspecter les propriétés XAML en phase de débogage](../debugger/inspect-xaml-properties-while-debugging.md)|
@@ -51,4 +51,4 @@ Vous pouvez ouvrir la plupart des fenêtres du débogueur pendant le débogage d
 
 ## <a name="see-also"></a>Voir aussi
 
-[Principes de base du débogueur](../debugger/debugger-basics.md)
+[Principes de base du débogueur](../debugger/getting-started-with-the-debugger.md)

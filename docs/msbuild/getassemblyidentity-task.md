@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b670b8ff3028dc0c9a029d7d00f9fee6f34447c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8762bb1207d7715a14effab7aee2d5d3ba5199b1
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568823"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946587"
 ---
-# <a name="getassemblyidentity-task"></a>GetAssemblyIdentity, tâche
+# <a name="getassemblyidentity-task"></a>GetAssemblyIdentity (tâche)
 Récupère les identités d’assembly des fichiers spécifiés et génère les informations d’identité.  
   
 ## <a name="task-parameters"></a>Paramètres de tâche  
- Le tableau ci-dessous décrit les paramètres de la tâche `GetAssemblyIdentity`.  
+ Le tableau ci-dessous décrit les paramètres de la tâche `GetAssemblyIdentity` .  
   
 |Paramètre|Description|  
 |---------------|-----------------|  
@@ -41,7 +41,7 @@ Récupère les identités d’assembly des fichiers spécifiés et génère les 
 ## <a name="remarks"></a>Notes  
  Les éléments générés par le paramètre `Assemblies` contiennent des entrées de métadonnées d’élément nommées `Version`, `PublicKeyToken` et `Culture`.  
   
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant récupère l’identité des fichiers spécifiés dans l’élément `MyAssemblies`, puis les génère dans l’élément `MyAssemblyIdentities`.  
@@ -61,4 +61,4 @@ Récupère les identités d’assembly des fichiers spécifiés et génère les 
 
 ## <a name="see-also"></a>Voir aussi  
  [Tâches](../msbuild/msbuild-tasks.md)   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)
+ [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

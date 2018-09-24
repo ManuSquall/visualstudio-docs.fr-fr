@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a4230f2787dcfb84567cd60173cc102c243375e5
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 471b62c35cbe7098d52e9cbeb08be29cd39c7d58
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118081"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180423"
 ---
 # <a name="troubleshoot-service-references"></a>Dépanner les références de service
 
@@ -58,7 +58,7 @@ Pour corriger cette erreur :
 2.  Sur le **Options de démarrage** onglet, désactivez le **l’authentification NTLM** case à cocher.
 
     > [!NOTE]
-    > Vous devez désactiver l’authentification NTLM uniquement pour les sites Web qui contiennent exclusivement des services WCF. La sécurité pour les services WCF est gérée via la configuration dans le *web.config* fichier. Cela rend l’authentification NTLM inutiles.
+    > Vous devez désactiver l’authentification NTLM uniquement pour les sites Web contenant exclusivement des services WCF. La sécurité pour les services WCF est gérée via la configuration dans le *web.config* fichier. Cela rend l’authentification NTLM inutiles.
 
 ## <a name="access-level-for-generated-classes-setting-has-no-effect"></a>Niveau d’accès pour les classes générées définition n’a aucun effet
 

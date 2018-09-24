@@ -12,14 +12,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c9ec028dd4e094612736bcd1970be0b59e8a263e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 66e1f402e082eb1ee42faa3e04ea319dca3ed1d5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915978"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546770"
 ---
 # <a name="ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors"></a>CA2132 : Les constructeurs par défaut doivent être au moins aussi critiques que les constructeurs par défaut de type de base
+
 |||
 |-|-|
 |TypeName|DefaultConstructorsMustHaveConsistentTransparency|
@@ -28,23 +29,26 @@ ms.locfileid: "31915978"
 |Modification avec rupture|Rupture|
 
 > [!NOTE]
->  Cet avertissement est appliqué uniquement au code qui est en cours d’exécution (la version du CLR qui est spécifique aux applications Silverlight Web) CoreCLR.
+> Cet avertissement est appliqué uniquement au code qui est en cours d’exécution CoreCLR (la version du CLR qui est spécifique aux applications web Silverlight).
 
 ## <a name="cause"></a>Cause
- L’attribut de transparence du constructeur par défaut d’une classe dérivée n’est pas aussi critique que la transparence de la classe de base.
+
+L’attribut de transparence du constructeur par défaut d’une classe dérivée n’est pas aussi critique que la transparence de la classe de base.
 
 ## <a name="rule-description"></a>Description de la règle
- Types et membres qui ont le <xref:System.Security.SecurityCriticalAttribute> ne peut pas être utilisé par le code d’application Silverlight. Les types et membres critiques de sécurité (security-critical) peuvent être uniquement utilisés par le code de confiance dans la bibliothèque de classes .NET Framework pour Silverlight. Dans la mesure où une construction publique ou protégée dans une classe dérivée doit avoir la même transparence ou une transparence supérieure à sa classe de base, une classe dans une application ne peut pas être dérivée d’une classe marquée SecurityCritical.
 
- Pour le code de plateforme CoreCLR, si un type de base a un constructeur public ou protégé non transparent par défaut puis le type dérivé doit respecter les règles d’héritage du constructeur par défaut. Le type dérivé doit avoir également un constructeur par défaut, et ce constructeur doit être au moins au constructeur par défaut critique du type de base.
+Types et membres qui ont le <xref:System.Security.SecurityCriticalAttribute> ne peut pas être utilisé par le code d’application Silverlight. Les types et membres critiques de sécurité (security-critical) peuvent être uniquement utilisés par le code de confiance dans la bibliothèque de classes .NET Framework pour Silverlight. Dans la mesure où une construction publique ou protégée dans une classe dérivée doit avoir la même transparence ou une transparence supérieure à sa classe de base, une classe dans une application ne peut pas être dérivée d’une classe marquée SecurityCritical.
+
+Pour le code de plateforme CoreCLR, si un type de base a un constructeur public ou protégé non transparent par défaut puis le type dérivé doit respecter les règles d’héritage de constructeur par défaut. Le type dérivé doit également être un constructeur par défaut et ce constructeur doit être au moins en tant que constructeur critiques par défaut du type de base.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger la violation, supprimez le type ou ne dérivent pas de type non transparent de sécurité.
+
+Pour corriger la violation, supprimez le type ou ne dérivent pas de type non transparent de sécurité.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez aucun avertissement de cette règle. Les violations de cette règle par le code d’application provoquent le refus de CoreCLR de charger le type avec un <xref:System.TypeLoadException>.
+
+Ne supprimez pas les avertissements de cette règle. Les violations de cette règle par code d’application provoquent le refus de CoreCLR de charger le type avec un <xref:System.TypeLoadException>.
 
 ### <a name="code"></a>Code
- [!code-csharp[FxCop.Security.CA2132.DefaultConstructorsMustHaveConsistentTransparency#1](../code-quality/codesnippet/CSharp/ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors_1.cs)]
 
-### <a name="comments"></a>Commentaires
+[!code-csharp[FxCop.Security.CA2132.DefaultConstructorsMustHaveConsistentTransparency#1](../code-quality/codesnippet/CSharp/ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors_1.cs)]

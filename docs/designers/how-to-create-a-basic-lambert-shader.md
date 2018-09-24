@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : créer un nuanceur Lambert de base'
+title: Guide pratique pour créer un nuanceur Lambert de base
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e67ca994015dcb2609dce8680000a6d47c3b3a4e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b9700fb8cc84e0403c180b0570ca874fdff784e8
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748203"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924341"
 ---
-# <a name="how-to-create-a-basic-lambert-shader"></a>Procédure : créer un nuanceur Lambert de base
+# <a name="how-to-create-a-basic-lambert-shader"></a>Guide pratique pour créer un nuanceur Lambert de base
 
 Cet article indique comment utiliser le concepteur Shader et DGSL (Directed Graph Shader Language) pour créer un nuanceur d’éclairage implémentant le modèle d’éclairage Lambert classique.
 
@@ -27,7 +27,7 @@ Le modèle d’éclairage Lambert intègre un éclairage ambiant et directionnel
 
 Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte à outils** sont affichées.
 
-1.  Créez un shader DGSL à utiliser. Pour plus d’informations sur l’ajout d’un nuanceur DGSL à votre projet, consultez la section Prise en main de l’article [Concepteur de nuanceur](../designers/shader-designer.md).
+1.  Créez un nuanceur DGSL à utiliser. Pour plus d’informations sur l’ajout d’un nuanceur DGSL à votre projet, consultez la section Prise en main de l’article [Concepteur de nuanceur](../designers/shader-designer.md).
 
 2.  Déconnectez le nœud **Couleur du point** du nœud **Couleur finale**. Choisissez le terminal **RVB** du nœud **Couleur du point**, puis choisissez **Rompre les liaisons**. Laissez le terminal **Alpha** connecté.
 

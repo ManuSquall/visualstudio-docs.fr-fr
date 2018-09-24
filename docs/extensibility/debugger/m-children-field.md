@@ -1,5 +1,5 @@
 ---
-title: m_children champ | Documents Microsoft
+title: Champ m_children | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,32 +13,32 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e71bc592e77daac877b571b14acd2d62a8657b9f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e27704484e5cfb320c8b65432fb3efb283054019
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109975"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231146"
 ---
-# <a name="mchildren-field"></a>m_children champ
+# <a name="mchildren-field"></a>champ de m_children
 La liste des tâches enfants qui sont inscrits auprès de cette tâche.  
   
  **Namespace :** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly :** mscorlib (dans mscorlib.dll)  
+ **Assembly :** mscorlib (dans *mscorlib.dll*)  
   
  Étant donné que vous ne pouvez pas accéder à ce membre interne du .NET Framework, la syntaxe suivante est fournie en commun Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```csharp 
 .field public class System.Collections.Generic.List`1<class System.Threading.Tasks.Task> m_children  
 ```  
   
 ## <a name="remarks"></a>Notes  
  Alors que la tâche est en cours d’exécution, seul le thread qui exécute la tâche doit accéder à ce tableau.  
   
- Si la tâche est terminée, autres threads peuvent accéder à ce champ tant qu’ils n’exigent pas ajouter quoi que ce soit ou supprimer tout élément à partir de celui-ci.  
+ Si la tâche est terminée, autres threads peuvent accéder à ce champ tant que qu’ils n’ajoutent rien à celui-ci ou supprimer quoi que ce soit à partir de celui-ci.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Classe de ContingentProperties](../../extensibility/debugger/contingentproperties-class-internal-members.md)
+ [Classe ContingentProperties](../../extensibility/debugger/contingentproperties-class-internal-members.md)

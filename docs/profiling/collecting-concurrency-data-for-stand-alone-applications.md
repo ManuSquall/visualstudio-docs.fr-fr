@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20ae775a6dc49dd2a6dd3cb391eeaf69ff7fa32c
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: a7966bcffff03c23b99837ba69f591d76258146c
+ms.sourcegitcommit: 4400926d00b5f5d52f03cb5d6f8a582d6049ecd9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335942"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "39276479"
 ---
 # <a name="collect-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Collecter des données concurrentielles pour les applications autonomes en utilisant la ligne de commande du profileur
 La méthode d’accès concurrentiel des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permet de collecter des données de conflit de ressources et des données d’activité de thread montrant l’utilisation du processeur, les conflits de threads, la migration des threads, les délais de synchronisation, les zones d’E/S avec chevauchement, et autres événements système.  
@@ -29,9 +29,9 @@ La méthode d’accès concurrentiel des outils de profilage [!INCLUDE[vsprvs](.
 |Tâche|Contenu connexe|  
 |----------|---------------------|  
 |**Démarrer une application .NET Framework et profiler des données concurrentielles**|-   [Guide pratique pour lancer une application .NET Framework pour collecter des données concurrentielles](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md)|  
-|**Démarrer une application C/C++ et profiler des données concurrentielles**|-   [Guide pratique pour lancer une application native pour collecter des données concurrentielles](../profiling/how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Démarrer une application C/C++ et profiler des données concurrentielles**|-   [Guide pratique pour lancer une application native pour collecter des données concurrentielles](../profiling/how-to-launch-a-stand-alone-native-application-to-collect-concurrency-data.md)|  
 |**Attacher le profileur à une application .NET Framework en cours d’exécution**|-   [Guide pratique pour attacher le profileur à une application .NET Framework pour collecter des données concurrentielles](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md)|  
-|**Attacher le profileur à une application C/C++ en cours d’exécution**|-   [Guide pratique pour attacher le profileur à une application native et collecter des données concurrentielles](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line.md)|  
+|**Attacher le profileur à une application C/C++ en cours d’exécution**|-   [Guide pratique pour attacher le profileur à une application native et collecter des données concurrentielles](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md)|  
   
 ## <a name="related-tasks"></a>Tâches connexes
   

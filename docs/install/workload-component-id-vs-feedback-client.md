@@ -1,11 +1,11 @@
 ---
 title: ID de composant et de charge de travail de Visual Studio Feedback Client 2017
-description: Utiliser les ID de composant et de charge de travail Visual Studio pour fournir des commentaires complets concernant Visual Studio Team Services ou Team Foundation Server
+description: Utiliser les ID de composant et de charge de travail Visual Studio pour fournir un feedback détaillé pour Azure DevOps Services ou Team Foundation Server
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 05/07/2018
+ms.date: 08/14/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 7392a100-100c-458c-9394-828695109015
 ms.workload:
 - multiple
-ms.openlocfilehash: 56b58ec44ecae6e1e0bbd6c0d3e4bc000c1bcf28
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 5037870cfbe1df0a4f997f16ef196d78de983aaa
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283000"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281557"
 ---
 # <a name="visual-studio-feedback-client-2017-component-directory"></a>Répertoire de composants Visual Studio Feedback Client 2017
 
@@ -43,7 +43,7 @@ Pour plus d’informations sur l’utilisation de ces ID, consultez la page [Uti
 
 **ID :** Microsoft.VisualStudio.Workload.FeedbackClient
 
-**Description :** Feedback Client permet de fournir des commentaires détaillés sur Visual Studio Team Services ou Team Foundation Server.
+**Description :** Feedback Client permet de fournir un feedback détaillé pour Azure DevOps Services ou Team Foundation Server.
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 
@@ -59,16 +59,7 @@ ID de composant | Name | Version
 --- | --- | ---
 N/A | N/A | N/A
 
-## <a name="get-support"></a>Obtenir de l’aide
-
-Parfois, des problèmes peuvent se produire. Si votre installation de Visual Studio échoue, consultez la page [Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017](troubleshooting-installation-issues.md). Si aucune étape de résolution des problèmes ne vous aide, vous pouvez nous contacter pour une conversation en direct sur une assistance à l’installation (en anglais uniquement). Pour plus de détails, consultez la [page du support Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Voici d’autres options de support :
-
-* Vous pouvez nous signaler des problèmes au niveau d’un produit via l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio-2017.md) qui s’affiche dans le programme d’installation de Visual Studio et dans l’IDE de Visual Studio.
-* Vous pouvez nous faire part d’une suggestion de produit via [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Vous pouvez suivre les problèmes au niveau d’un produit et obtenir des réponses dans la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com/).
-* Vous pouvez également communiquer avec nous et d’autres développeurs Visual Studio en prenant part à notre [conversation Visual Studio dans la communauté Gitter](https://gitter.im/Microsoft/VisualStudio). (Cette option nécessite un compte [GitHub](https://github.com/).)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -1,6 +1,7 @@
 - name: Documentation d’analyse du code
   href: index.md
 - name: Vue d'ensemble
+  expanded: true
   items:
     - name: Analyse du code pour le code managé
       href: code-analysis-for-managed-code-overview.md
@@ -27,9 +28,14 @@
   items:
     - name: Analyse du code pour le code managé
       items:
-        - name: Installer les analyseurs Roslyn
+        - name: Migrer depuis FxCop
+          href: fxcop-analyzers.yml
+          items:
+            - name: Installer des analyseurs FxCop
+              href: install-fxcop-analyzers.md
+        - name: Installer des analyseurs Roslyn
           href: install-roslyn-analyzers.md
-        - name: Configurer et utiliser les analyseurs Roslyn
+        - name: Configurer et utiliser des analyseurs Roslyn
           href: use-roslyn-analyzers.md
         - name: Activer l’analyse automatique du code
           href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
@@ -42,7 +48,7 @@
         - name: Supprimer les avertissements
           href: in-source-suppression-overview.md
           items:
-            - name: Supprimer les avertissements d’analyse de code pour le code généré
+            - name: Supprimer les avertissements d’analyse du code pour le code généré
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
         - name: Personnaliser le dictionnaire d’analyse du code
           href: how-to-customize-the-code-analysis-dictionary.md
@@ -80,6 +86,8 @@
     - name: Ensembles de règles
       href: using-rule-sets-to-group-code-analysis-rules.md
       items:
+        - name: Ensembles de règles pour les packages de l’analyseur
+          href: analyzer-rule-sets.md
         - name: Ensembles de règles pour le code managé
           href: how-to-configure-code-analysis-for-a-managed-code-project.md
           items:
@@ -126,7 +134,7 @@
         - name: Ensemble de règles des règles de globalisation pour le code managé
           href: globalization-rules-rule-set-for-managed-code.md
         - name: Ensemble de règles des règles minimales managées pour le code managé
-          href: managed-minimun-rules-rule-set-for-managed-code.md
+          href: managed-minimum-rules-rule-set-for-managed-code.md
         - name: Ensemble de règles des règles recommandées managées pour le code managé
           href: managed-recommended-rules-rule-set-for-managed-code.md
         - name: Ensemble de règles des règles minimales mixtes
@@ -567,6 +575,8 @@
               href: ca3076-insecure-xslt-script-execution.md
             - name: 'CA3077 : traitement non sécurisé dans la conception d’API, le document XML et le lecteur de texte XML'
               href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
+            - name: "CA3147\_: Marquer les gestionnaires de verbe avec ValidateAntiForgeryToken"
+              href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
         - name: avertissements liés à l’utilisation
           href: usage-warnings.md
           items:

@@ -5,12 +5,12 @@ author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: ab605b3a8505ac189bc0f628b717c6863f9fd902
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: cd368c6b6bfd8d38817ef1b7014e9f1c91cac2ab
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454513"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37889942"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Utilisation des outils Visual Studio pour Mac pour Unity
 
@@ -71,7 +71,7 @@ Pour ajouter un nouveau script C# MonoBehaviour, **cliquez avec le bouton droit 
 
 ### <a name="add-a-new-unity-shader"></a>Ajouter un nouveau nuanceur Unity
 
-Pour ajouter un nouveau nuanceur Unity, **cliquez avec le bouton droit sur le dossier Ressources** ou sur un sous-répertoire dans le panneau Solutions, puis sélectionnez **Ajouter -> Nouveau nuanceur**.
+Pour ajouter un nouveau nuanceur Unity, **cliquez avec le bouton droit sur le dossier Ressources** ou sur un sous-répertoire dans le panneau Solutions, puis sélectionnez **Ajouter > Nouveau nuanceur**.
 
 ### <a name="add-a-new-folder"></a>Ajouter un nouveau dossier
 

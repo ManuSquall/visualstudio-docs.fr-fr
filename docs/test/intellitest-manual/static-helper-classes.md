@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 59d52895b9eccd80427759fb9a3819be5ab86329
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: d7fc470b0300254cd05f6a1e08ebfde04923c213
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815897"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511065"
 ---
 # <a name="static-helper-classes"></a>Classes d’assistance statiques
 
@@ -25,7 +25,7 @@ IntelliTest fournit un ensemble de classes d’assistance statiques qui peuvent 
 * [PexAssume](#pexassume) : utilisée pour définir des hypothèses sur les entrées ; elle est utile pour filtrer les entrées indésirables.
 * [PexAssert](#pexassert) : une classe d’assertion simple à utiliser si votre framework de tests n’en fournit pas.
 * [PexChoose](#pexchoose) : un flux d’entrées de test supplémentaires géré par IntelliTest.
-* [PexObserve](#pexobserve) : consigne des valeurs concrètes et les vérifie éventuellement dans le code généré
+* [PexObserve](#pexobserve) : consigne les valeurs concrètes et les valide éventuellement dans le code généré
 
 Certaines classes vous permettent d’interagir avec le moteur de raisonnement d’IntelliTest à un bas niveau :
 

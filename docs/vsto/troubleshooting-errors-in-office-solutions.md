@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1047d7ddd3724877aa6933f20f08df39d1e2e240
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 21e2b1a7a90df2baef48483647c692c8b986c59f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693417"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670917"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Résoudre les erreurs dans les solutions Office
   Vous pouvez rencontrer des problèmes quand vous effectuez les tâches suivantes en développant des solutions Office dans Visual Studio :  
@@ -51,11 +51,11 @@ ms.locfileid: "34693417"
   
  Si vous essayez de créer un projet au niveau du document, il est possible qu'un autre document du même nom que le document dans le nouveau projet soit déjà ouvert dans Excel ou Word. Assurez-vous que toutes les autres instances d'Excel ou de Word soient fermées.  
   
-### <a name="control-properties-are-lost-when-you-create-a-new-project-based-on-a-document-from-an-existing-project"></a>Propriétés du contrôle sont perdues lorsque vous créez un projet basé sur un document à partir d’un projet existant  
+### <a name="control-properties-are-lost-when-you-create-a-new-project-based-on-a-document-from-an-existing-project"></a>Propriétés du contrôle sont perdues lorsque vous créez un nouveau projet basé sur un document à partir d’un projet existant  
  Si vous créez un nouveau projet Office basé sur un document issu d'un projet existant, aucune propriété des contrôles qui se trouvent sur le document n'est copiée dans le nouveau projet. Vous devez réinitialiser manuellement les propriétés de tous les contrôles préexistants. Vous pouvez également conserver les propriétés des contrôles en créant une copie du projet existant au lieu de créer un nouveau projet, ou en chargeant le projet existant dans la nouvelle solution (dans le concepteur) et en effectuant un copier-coller des contrôles du document existant dans le nouveau document.  
   
 ### <a name="errors-when-you-create-an-excel-workbook-project-based-on-an-existing-workbook"></a>Erreurs lorsque vous créez un projet de classeur Excel basé sur un classeur existant  
- Si vous créez un projet de classeur Excel basé sur un classeur existant, vous pouvez voir une combinaison des erreurs suivantes.  
+ Si vous créez un nouveau projet de classeur Excel basé sur un classeur existant, vous pouvez constater une combinaison des erreurs suivantes.  
   
  Dans Excel : « Avertissement concernant la confidentialité : ce document contient des macros, des contrôles ActiveX, des informations sur le kit d'extension XML ou des composants Web. Ils peuvent renfermer des informations personnelles qui ne peuvent pas être supprimées par l'Inspecteur de document. »  
   
@@ -100,18 +100,18 @@ ms.locfileid: "34693417"
 -   Un complément Excel VSTO qui est installé sur l'ordinateur de développement affiche une boîte de dialogue au démarrage d'Excel. Pour créer un projet de niveau document Excel, vous devez tout d’abord désactiver le complément VSTO.  
   
 ### <a name="controls-appear-as-black-rectangles-on-the-document-or-worksheet"></a>Contrôles apparaissent sous forme de rectangles noirs sur le document ou la feuille de calcul  
- Si vous groupez des contrôles dans un document ou une feuille de calcul, Visual Studio ne reconnaît plus les contrôles. Contrôles groupés ne sont pas accessibles dans le **propriétés** fenêtre et ils s’affichent sous forme de rectangles noirs sur le document ou la feuille de calcul. Vous devez dissocier les contrôles pour restaurer leurs fonctionnalités.  
+ Si vous groupez des contrôles dans un document ou une feuille de calcul, Visual Studio ne reconnaît plus les contrôles. Contrôles groupés ne sont pas accessibles dans le **propriétés** fenêtre et qu’ils apparaissent sous forme de rectangles noirs sur le document ou la feuille de calcul. Vous devez dissocier les contrôles pour restaurer leurs fonctionnalités.  
   
 ### <a name="controls-on-a-word-template-are-not-visible-in-visual-studio"></a>Les contrôles sur un modèle Word ne sont pas visibles dans Visual Studio  
  Si vous ouvrez un modèle Word dans le concepteur Visual Studio, les contrôles du modèle qui ne sont pas alignés sur le texte peuvent ne pas être visibles. Il s’agit, car Visual Studio ouvre les modèles Word en **Normal** vue. Pour afficher les contrôles, cliquez sur le **vue** menu, pointez sur **vue Microsoft Office Word** puis cliquez sur **page**.  
   
-### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>Insérer une commande images clipart n’a aucun effet dans le concepteur Visual Studio  
- Lorsqu’Excel ou Word est ouvert dans le concepteur Visual Studio, en cliquant sur le **image clipart** bouton sur le **Illustrations** onglet dans le ruban n’ouvre pas le **clipart** volet de tâches. Pour ajouter une image clipart, vous devez ouvrir la copie du classeur ou du document qui se trouve dans le dossier du projet principal (et non la copie qui se trouve dans le *\bin* dossier) en dehors de Visual Studio, ajouter l’image clipart, puis enregistrez le classeur ou le document.  
+### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>Commande d’insertion clip art ne fait rien dans le concepteur Visual Studio  
+ Lorsqu’Excel ou Word est ouvert dans le concepteur Visual Studio, en cliquant sur le **images clipart** bouton sur le **Illustrations** onglet dans le ruban n’ouvre pas le **images clipart** volet de tâches. Pour ajouter des images clipart, vous devez ouvrir la copie du classeur ou du document qui se trouve dans le dossier du projet principal (pas la copie qui se trouve dans le *\bin* dossier) en dehors de Visual Studio, ajouter l’image clipart, puis enregistrez le classeur ou le document.  
   
 ##  <a name="code"></a> Écrire du code  
  Vous pouvez rencontrer les erreurs suivantes quand vous écrivez du code dans des projets Office.  
   
-### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Certains événements des objets Office ne sont pas accessibles à l’utilisation du langage c#  
+### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Certains événements des objets Office ne sont pas accessibles lors de l’utilisation de c#  
  Dans certains cas, une erreur du compilateur comme celle ci-dessous peut s'afficher quand vous essayez d'accéder à un événement particulier d'une instance d'un type d'assembly PIA (Primary Interop Assembly) Office dans un projet Visual C#.  
   
  « Ambiguïté entre 'Microsoft.Office.Interop.Excel._Application.NewWorkbook' et 'Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook' »  
@@ -124,10 +124,10 @@ ms.locfileid: "34693417"
   
  [!code-csharp[Trin_VstcoreTroubleshootingExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingExcelCS/ThisWorkbook.cs#1)]  
   
- Pour plus d’informations sur les interfaces d’événements dans les assemblys PIA Office, consultez [vue d’ensemble des classes et interfaces dans les assemblys PIA Office](http://msdn.microsoft.com/en-us/da92dc3c-8209-44de-8095-a843659368d5).  
+ Pour plus d’informations sur les interfaces d’événement dans les assemblys PIA Office, consultez [vue d’ensemble des classes et interfaces dans les assemblys PIA Office](http://msdn.microsoft.com/da92dc3c-8209-44de-8095-a843659368d5).  
   
 ### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-includenetv40shortsharepointincludesnet-v40-short-mdmd-or-the-includenetv45vstoincludesnet-v45-mdmd"></a>Ne peut pas référence d’assembly PIA Office classes dans les projets qui ciblent le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou le [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
- Dans les projets qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], le code qui fait référence à une classe définie dans un assembly PIA Office ne peut pas être compilé par défaut. Classes dans les assemblys PIA utilisent la convention d’affectation de noms *objectname*Class, telle que <xref:Microsoft.Office.Interop.Word.DocumentClass> et <xref:Microsoft.Office.Interop.Excel.WorkbookClass>. Par exemple, le code suivant issu d’un projet de complément Word VSTO ne peut pas être compilé.  
+ Dans les projets qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], le code qui fait référence à une classe définie dans un assembly PIA Office ne peut pas être compilé par défaut. Classes dans les assemblys PIA utilisent la convention d’affectation de noms *objectname*classe, telle que <xref:Microsoft.Office.Interop.Word.DocumentClass> et <xref:Microsoft.Office.Interop.Excel.WorkbookClass>. Par exemple, le code suivant issu d’un projet de complément Word VSTO ne peut pas être compilé.  
   
 ```vb  
 Dim document As Word.DocumentClass = Globals.ThisAddIn.Application.ActiveDocument  
@@ -156,7 +156,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  Les projets qui ciblent [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] incorporent automatiquement tous les types d'interopérabilité des assemblys PIA Office par défaut. Cette erreur de compilation se produit parce que la fonctionnalité des types interop incorporés fonctionne uniquement avec les interfaces, et non pas avec les classes. Pour plus d’informations sur les interfaces et les classes dans les assemblys PIA Office, consultez [vue d’ensemble des classes et interfaces dans les assemblys PIA Office](http://go.microsoft.com/fwlink/?LinkId=189592). Pour plus d’informations sur la fonctionnalité des types interop incorporés dans les projets Office, consultez [conception et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md).  
   
 ### <a name="references-to-office-classes-are-not-recognized"></a>Références aux classes Office ne sont pas reconnues  
- Certains noms de classe, par exemple, Application, se trouvent dans plusieurs espaces de noms tels que <xref:Microsoft.Office.Interop.Word> et <xref:System.Windows.Forms>. Pour cette raison, le **importations**/**à l’aide de** instruction en haut des modèles de projet inclut une constante qualifiante abrégée, par exemple :  
+ Certains noms de classe, par exemple Application, se trouvent dans plusieurs espaces de noms tels que <xref:Microsoft.Office.Interop.Word> et <xref:System.Windows.Forms>. Pour cette raison, le **importations**/**à l’aide de** instruction en haut des modèles de projet inclut une constante qualifiante abrégée, par exemple :  
   
  [!code-csharp[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#2)]
  [!code-vb[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#2)]  
@@ -176,8 +176,8 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ##  <a name="building"></a> Générer des projets  
  Vous pouvez rencontrer les erreurs suivantes quand vous générez des projets Office.  
   
-### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>Ne peut pas créer un projet au niveau du document qui est basé sur un document avec des autorisations restreintes  
- Visual Studio ne peut pas générer de projets de niveau document si le document a des autorisations limitées. Si votre projet contient un document qui a des autorisations restreintes, le projet ne peut pas être compilé et vous recevrez le message suivant dans le **liste d’erreurs** fenêtre.  
+### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>Impossible de créer un projet au niveau du document qui est basé sur un document avec des autorisations restreintes  
+ Visual Studio ne peut pas générer de projets de niveau document si le document a des autorisations limitées. Si votre projet contient un document qui a des autorisations restreintes, le projet ne sera pas compilé, et vous recevrez le message suivant dans le **liste d’erreurs** fenêtre.  
   
  « Impossible d'ajouter la personnalisation. »  
   
@@ -197,7 +197,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  Cette erreur indique que vous avez précédemment publié et installé la solution Office sur votre ordinateur de développement. Pour empêcher l'affichage de ce message, désinstallez la solution dans la liste des programmes installés sur l'ordinateur avant de déboguer la solution. Vous pouvez également créer un autre compte d'utilisateur sur votre ordinateur de développement pour tester l'installation de la solution publiée.  
   
 ### <a name="document-level-projects-created-at-unc-network-locations-do-not-run-from-visual-studio"></a>Les projets au niveau du document créés à des emplacements réseau UNC ne s’exécutent pas à partir de Visual Studio  
- Si vous créez un projet au niveau du document pour Excel ou Word dans un emplacement réseau UNC, vous devez ajouter l'emplacement du document à la liste des emplacements approuvés dans Excel ou Word. Sinon, la personnalisation n'est pas chargée quand vous essayez d'exécuter ou de déboguer le projet dans Visual Studio. Pour plus d’informations sur les emplacements approuvés, consultez [accorder la confiance à des documents](../vsto/granting-trust-to-documents.md).  
+ Si vous créez un projet au niveau du document pour Excel ou Word dans un emplacement réseau UNC, vous devez ajouter l'emplacement du document à la liste des emplacements approuvés dans Excel ou Word. Sinon, la personnalisation n'est pas chargée quand vous essayez d'exécuter ou de déboguer le projet dans Visual Studio. Pour plus d’informations sur les emplacements approuvés, consultez [accorder une confiance aux documents](../vsto/granting-trust-to-documents.md).  
   
 ### <a name="threads-are-not-stopped-correctly-after-debugging"></a>Threads ne sont pas arrêtés correctement après le débogage  
  Les projets Office dans Visual Studio suivent une convention d'affectation de noms de threads qui permet au débogueur de fermer le programme correctement. Si vous créez des threads dans votre solution, vous devez nommer chaque thread avec le préfixe VSTA_ afin de garantir que ces threads sont gérés correctement quand vous arrêtez le débogage. Par exemple, vous pouvez définir le `Name` propriété d’un thread qui attend un événement réseau **VSTA_NetworkListener**.  
@@ -207,17 +207,17 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
   
  « La personnalisation n'a pas pu être chargée, car le domaine d'application n'a pas pu être créé. »  
   
- Visual Studio utilise Fusion, le chargeur d'assembly du .NET Framework, pour mettre en cache les assemblys avant de charger les solutions Office. Assurez-vous que Visual Studio peut écrire dans le cache de Fusion et réessayez. Pour plus d’informations, consultez [clichés instantanés d’assemblys copie](/dotnet/framework/app-domains/shadow-copy-assemblies).  
+ Visual Studio utilise Fusion, le chargeur d'assembly du .NET Framework, pour mettre en cache les assemblys avant de charger les solutions Office. Assurez-vous que Visual Studio peut écrire dans le cache de Fusion et réessayez. Pour plus d’informations, consultez [assemblys de copie de clichés instantanés](/dotnet/framework/app-domains/shadow-copy-assemblies).  
   
 ### <a name="error-when-stopping-the-debugger-in-a-document-level-project-after-using-edit-and-continue"></a>Erreur lors de l’arrêt du débogueur dans un projet au niveau du document après l’utilisation de modifier & Continuer  
- Si vous utilisez **modifier** et **continuer** pour rendre les modifications du code dans un projet au niveau du document pour Excel ou Word alors que le projet est en mode arrêt, vous pouvez voir une boîte de dialogue avec le message d’erreur suivant si vous Arrêtez le débogueur.  
+ Si vous utilisez **modifier** et **continuer** pour apporter des modifications au code dans un projet au niveau du document pour Excel ou Word alors que le projet est en mode arrêt, vous pouvez voir une boîte de dialogue avec le message d’erreur suivant si vous Arrêtez le débogueur.  
   
  « Si vous terminez le processus dans son état actuel, cela risque de produire des résultats indésirables notamment la perte de données et l'instabilité du système. »  
   
  Si vous cliquez sur **Oui** ou **non** dans la boîte de dialogue, Visual Studio met fin au processus Excel ou Word et arrête le débogueur. Pour arrêter le débogage du projet sans afficher cette boîte de dialogue, quittez Excel ou Word directement au lieu d'arrêter le débogueur dans Visual Studio.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Dépannage des solutions Office](../vsto/troubleshooting-office-solutions.md)   
+ [Résoudre les problèmes des solutions Office](../vsto/troubleshooting-office-solutions.md)   
  [Résoudre les problèmes de sécurité des solutions Office](../vsto/troubleshooting-office-solution-security.md)   
  [Résoudre les problèmes de déploiement de solutions Office](../vsto/troubleshooting-office-solution-deployment.md)  
   

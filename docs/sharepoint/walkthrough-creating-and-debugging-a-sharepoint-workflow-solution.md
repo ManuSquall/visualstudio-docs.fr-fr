@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6035b8ceb693434e2e8bc652b91ee31ceb3ebe02
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: c254f6f3e044f938ed2749567d66ee7a313081e7
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118937"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626486"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Procédure pas à pas : Créer et déboguer une solution de flux de travail SharePoint
   Cette procédure pas à pas montre comment créer un modèle de workflow séquentiel de base. Le flux de travail vérifie une propriété d’une bibliothèque de documents partagés pour déterminer si un document a été révisé. Si le document a été révisé, le flux de travail se termine.  
@@ -47,7 +47,7 @@ ms.locfileid: "37118937"
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
--   Éditions prises en charge de Microsoft Windows et SharePoint. Pour plus d’informations, consultez [configuration requise pour développer des solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Éditions prises en charge de Microsoft Windows et SharePoint.  
   
 -   Visual Studio.  
   

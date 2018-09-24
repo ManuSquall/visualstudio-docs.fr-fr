@@ -1,5 +1,5 @@
 ---
-title: Ajout de répertoires à la boîte de dialogue Nouveau projet | Documents Microsoft
+title: Ajout de répertoires à la boîte de dialogue Nouveau projet | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,21 +13,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4ad992785fdf8ab5ffdd3faa7043e2a0ee5411b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5c8686a34f52c7dc2e6c96b602811d7e12a6a7e6
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128076"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500785"
 ---
-# <a name="adding-directories-to-the-new-project-dialog-box"></a>Ajout de répertoires à la boîte de dialogue Nouveau projet
-Lorsque vous créez de nouveaux types de projet, vous pouvez également inscrire un nouveau répertoire dans le **nouveau projet** boîte de dialogue pour les afficher pour une utilisation en tant que modèles. L’exemple de code suivant explique comment inscrire un nouveau répertoire, également appelé un nœud. Dans l’exemple, les modèles exposées par le VSPackage CLSID_Package sont enregistrés. Par conséquent, le côté gauche de la **nouveau projet** boîte de dialogue donne le nœud ajouté, avec un nom déterminé par la ressource Folder_Label_ResID. Cette ressource est chargée à partir de la DLL du VSPackage satellite.  
+# <a name="add-directories-to-the-new-project-dialog-box"></a>Ajouter des répertoires à la boîte de dialogue Nouveau projet
+Lorsque vous créez de nouveaux types de projet, vous pouvez également inscrire un nouveau répertoire dans le **nouveau projet** boîte de dialogue pour les afficher pour une utilisation en tant que modèles. L’exemple de code suivant explique comment inscrire un nouveau répertoire, également appelé un nœud. Dans l’exemple, les modèles exposés par le VSPackage, *CLSID_Package*, sont inscrits. Par conséquent, le côté gauche de la **nouveau projet** boîte de dialogue offre le nœud ajouté, avec un nom déterminé par le *Folder_Label_ResID* ressource. Cette ressource est chargée à partir de la DLL satellite de VSPackage.  
   
- Le **dossier** valeur représente un GUID d’un dossier sous lequel le nœud Folder_Label_ResID s’affiche. Dans l’exemple, le GUID représente le **autres projets** dossier dans le **Types de projets** volet de la **nouveau projet** boîte de dialogue. Si le **autres projets** valeur est absente, l’étiquette est positionnée au niveau supérieur.  
+ Le **dossier** valeur représente un GUID d’un dossier sous lequel le *Folder_Label_ResID* nœud s’affiche. Dans l’exemple, le GUID représente le **autres projets** dossier dans le **Types de projets** volet de la **nouveau projet** boîte de dialogue. Si le **autres projets** valeur est absente, l’étiquette est positionnée au niveau supérieur.  
   
- La valeur TemplatesDir Spécifie le chemin d’accès complet du répertoire qui contient les modèles de projet. Ces fichiers peuvent être des fichiers .vsz ou des fichiers de modèle standard à cloner.  
+ Le `TemplatesDir` valeur spécifie le chemin d’accès complet du répertoire qui contient les modèles de projet. Ces fichiers peuvent être soit *.vsz* fichiers ou des fichiers de modèle standard à cloner.  
   
- Si vous spécifiez TemplatesLocalizedSubDir, il doit être l’ID de ressource d’une chaîne qui désigne le sous-répertoire de TemplatesDir qui contient les modèles localisés. Étant donné que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] charge la ressource de chaîne à partir d’une DLL satellite si vous en avez, chaque DLL satellite peut contenir un nom de sous-répertoire différents. La valeur SortPriority spécifie un ordre de priorité.  
+ Si vous spécifiez `TemplatesLocalizedSubDir`, il doit être l’ID de ressource d’une chaîne qui nomme le sous-répertoire de `TemplatesDir` qui contient des modèles localisés. Étant donné que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] charge la ressource de chaîne à partir d’une DLL satellite si vous en avez pas, chaque DLL satellite peut contenir un nom de sous-répertoire différents. Le `SortPriority` valeur spécifie un ordre de priorité.  
   
 ```  
 NoRemove NewProjectTemplates  
@@ -49,6 +49,6 @@ NoRemove NewProjectTemplates
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [L’inscription des modèles de projet et élément](../../extensibility/internals/registering-project-and-item-templates.md)   
- [Ajout d’éléments à l’ajouter un nouvel élément boîtes de dialogue](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
- [Ajout de répertoires à la boîte de dialogue Ajouter un élément](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
+ [Inscrire les modèles de projet et d’élément](../../extensibility/internals/registering-project-and-item-templates.md)   
+ [Ajouter des éléments à la boîte de dialogue Ajouter un nouvel élément](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
+ [Ajouter des répertoires à la boîte de dialogue Ajouter un nouvel élément](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)

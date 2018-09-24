@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c872685445dddaf55efc8c5880b053c865ff2351
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 04e8348dc77222fbc06887efebf44c735eb7c8f0
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898165"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550019"
 ---
 # <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059 : Les membres ne doivent pas exposer certains types concrets
 |||
@@ -34,22 +34,22 @@ ms.locfileid: "31898165"
 ## <a name="cause"></a>Cause
  Un membre extérieurement visible est un certain type concret ou expose certains types concrets via un de ses paramètres ou valeur de retour. Actuellement, cette règle signale l’exposition des types concrets suivants :
 
--   Un type dérivé <xref:System.Xml.XmlNode?displayProperty=fullName>.
+- Un type dérivé <xref:System.Xml.XmlNode?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Description de la règle
- Un type concret est un type qui présente une implémentation complète et, par conséquent, peut être instancié. Pour permettre une utilisation généralisée du membre, remplacez le type concret par l’interface suggérée. Ainsi, le membre d’accepter tout type qui implémente l’interface ou de servir où un type qui implémente l’interface est attendu.
+ Un type concret est un type qui présente une implémentation complète et, par conséquent, peut être instancié. Pour permettre une utilisation généralisée du membre, remplacez le type concret par l’interface suggérée. Ainsi, le membre à accepter tout type qui implémente l’interface ou être utilisés là où un type qui implémente l’interface est attendu.
 
  Le tableau suivant répertorie les types concrets ciblés et leurs remplacements suggérés.
 
 |Type concret|Replacement|
 |-------------------|-----------------|
-|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> À l’aide de l’interface dissocie du membre à partir d’une implémentation spécifique d’une source de données XML.|
+|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> À l’aide de l’interface découple le membre d’une implémentation spécifique d’une source de données XML.|
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, remplacez le type concret par l’interface suggérée.
+ Pour corriger une violation de cette règle, modifiez le type concret par l’interface suggérée.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Il est possible de supprimer un message de cette règle si la fonctionnalité spécifique fournie par le type concret est requise.
+ Il est possible de supprimer un message à partir de cette règle si la fonctionnalité spécifique fournie par le type concret est requise.
 
 ## <a name="related-rules"></a>Règles associées
  [CA1011 : Envisagez de passer les types de base comme paramètres](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)

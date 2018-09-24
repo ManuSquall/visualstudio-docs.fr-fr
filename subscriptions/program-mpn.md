@@ -9,12 +9,12 @@ description: MPN donne des détails sur les abonnements proposés, sur les règl
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7db3d68b904ee6ec21f9f43e165291cfa7cbfc10
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: b3bea3831e2d16f43d378bfe77a4dc8f84fdda3f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281028"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283572"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Abonnements Visual Studio offerts aux partenaires du réseau MPN (Microsoft Partner Network)
 Les partenaires qui acquièrent une compétence ou qui achètent l’Action Pack MPN sont éligibles aux abonnements Visual Studio. Ces abonnements sont concédés sous licence par utilisateur et sont valides uniquement quand ils sont attribués à un utilisateur nommé spécifique qui travaille pour la société partenaire.
@@ -54,7 +54,7 @@ Avec l’Action Pack, le partenaire gagne **trois abonnements Visual Studio Prof
 
 Les abonnés Visual Studio Professional (MPN) peuvent également télécharger et utiliser des logiciels gratuits pour leur développement, notamment SQL Server Developer Edition.
 
-L’abonnement Visual Studio Professional (MPN) n’inclut pas les avantages VSTS, les crédits Azure mensuels, le support technique, la formation ou autres avantages réservés aux abonnés qui sont disponibles avec les abonnements Visual Studio proposés dans le commerce.
+L’abonnement Visual Studio Professional (MPN) n’inclut pas les avantages Azure DevOps Services, les crédits Azure mensuels, le support technique, la formation ou d’autres avantages réservés aux abonnés qui sont disponibles avec les abonnements Visual Studio proposés dans le commerce.
 
 ## <a name="internal-use-only-restriction"></a>Restriction à un usage interne uniquement
 Les règles MPN stipulent que tous les logiciels proposés sous la forme d’un avantage du programme peuvent être utilisés uniquement en interne. Cela s’applique aux logiciels offerts pour une utilisation par les abonnés Visual Studio et les avantages globaux liés aux licences de logiciels MPN.

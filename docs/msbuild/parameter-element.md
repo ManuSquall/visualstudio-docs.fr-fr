@@ -19,15 +19,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18db5f6cd5c2bccaca73161713af15a88175bf49
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 2d2407d37191e5a083080db579bc18b91b6c9449
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302601"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151744"
 ---
-# <a name="parameter-element"></a>Parameter, élément
-Contient des informations sur un paramètre spécifique pour une tâche générée par un `UsingTask``TaskFactory`.  Le nom de l’élément est le nom du paramètre.  Pour plus d’informations, consultez l’article [Élément UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
+# <a name="parameter-element"></a>Élément de paramètre
+Contient des informations sur un paramètre spécifique pour une tâche générée par un `UsingTask` `TaskFactory`.  Le nom de l’élément est le nom du paramètre.  Pour plus d’informations, consultez [Élément UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
 
  \<Project>  
  \<UsingTask>  
@@ -49,9 +49,9 @@ Contient des informations sur un paramètre spécifique pour une tâche génér�
 
 |Attribut|Description|  
 |---------------|-----------------|  
-|`ParameterType`|Attribut facultatif.<br /><br /> Type .NET du paramètre, par exemple « System.String ».|  
+|`ParameterType`|Attribut facultatif.<br /><br /> Le type .NET du paramètre, par exemple `System.String`.|  
 |`Output`|Attribut booléen facultatif.<br /><br /> Si cet attribut présente la valeur `true`, ce paramètre est un paramètre de sortie pour la tâche. Par défaut, la valeur est définie sur `false`.|  
-|`Required`|Attribut booléen facultatif.<br /><br /> Si cet attribut présente la valeur `true`, ce paramètre est un paramètre obligatoire pour la tâche. Par défaut, la valeur est définie sur `false`.|  
+|`Required`|Attribut booléen facultatif.<br /><br /> Si cet attribut présente la valeur `true`, ce paramètre est obligatoire pour la tâche. Par défaut, la valeur est définie sur `false`.|  
 
 ### <a name="child-elements"></a>Éléments enfants  
  Aucun.  
@@ -60,7 +60,7 @@ Contient des informations sur un paramètre spécifique pour une tâche génér�
 
 |Élément|Description|  
 |-------------|-----------------|  
-|[ParameterGroup](../msbuild/parametergroup-element.md)|Contient une liste facultative de paramètres qui seront présents sur la tâche générée par un `UsingTask``TaskFactory`.|  
+|[ParameterGroup](../msbuild/parametergroup-element.md)|Contient une liste facultative de paramètres qui seront présents sur la tâche générée par un `UsingTask` `TaskFactory`.|  
 
 ## <a name="example"></a>Exemple  
  L'exemple suivant montre comment utiliser l'élément `Parameter`.  
@@ -80,5 +80,5 @@ Contient des informations sur un paramètre spécifique pour une tâche génér�
 
 ## <a name="see-also"></a>Voir aussi  
  [Tâches](../msbuild/msbuild-tasks.md)   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)   
- [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+ [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)   
+ [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

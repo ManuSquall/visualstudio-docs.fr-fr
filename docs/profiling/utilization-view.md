@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 835226dc867f290c3cd3f553895687abdb895207
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 223535ef0b90869db191327abc7a757b5b79ae6b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477104"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668788"
 ---
-# <a name="utilization-view"></a>vue Utilisation
-**L’affichage Utilisation** affiche des informations sur le processeur, le GPU et d’autres ressources système utilisées par le processus en cours (choisissez **Analyser** > **Visualiseur concurrentiel** pour démarrer le visualiseur concurrentiel). Il montre l’utilisation moyenne des cœurs par le processus analysé, le processus inactif, le processus système et d’autres processus qui s’exécutent sur le système au fil du temps. Il ne montre pas quel cœur spécifique est actif à un moment donné. Par exemple, si deux cœurs s’exécutent chacun à 50 % de leur capacité pendant une période de temps donnée, cette vue ne montre qu’un seul cœur logique en cours d’utilisation. La vue est générée en décomposant la durée du profilage en petits segments de temps. Pour chaque segment, le graphique indique le nombre moyen de threads du processus qui s’exécutent sur les cœurs logiques pendant cet intervalle.  
+# <a name="utilization-view"></a>Vue Utilisation
+La **vue Utilisation** affiche des informations sur le processeur, le GPU et d’autres ressources système utilisées par le processus en cours (choisissez **Analyser** > **Visualiseur concurrentiel** pour démarrer le visualiseur concurrentiel). Il montre l’utilisation moyenne des cœurs par le processus analysé, le processus inactif, le processus système et d’autres processus qui s’exécutent sur le système au fil du temps. Il ne montre pas quel cœur spécifique est actif à un moment donné. Par exemple, si deux cœurs s’exécutent chacun à 50 % de leur capacité pendant une période de temps donnée, cette vue ne montre qu’un seul cœur logique en cours d’utilisation. La vue est générée en décomposant la durée du profilage en petits segments de temps. Pour chaque segment, le graphique indique le nombre moyen de threads du processus qui s’exécutent sur les cœurs logiques pendant cet intervalle.  
   
  ![Vue Utilisation de l’UC](../profiling/media/vsts_ppacpuutil.png "VSTS_PPAcpuUtil")  
   
@@ -48,8 +48,8 @@ ms.locfileid: "34477104"
  Si vous utilisez le GPU via AMP C++ ou DirectX, vous pouvez être intéressé par la détermination du nombre de moteurs GPU utilisés ou les zones où, de façon inattendue, le GPU est inactif.  
   
 ## <a name="zoom"></a>Zoom  
- Pour effectuer un zoom avant sur le graphique Utilisation de l’UC ou sur le graphique Activité du GPU, sélectionnez une section ou utilisez le curseur de zoom au-dessus du graphique. La valeur du zoom est conservée quand vous passez à d’autres vues. Pour refaire un zoom arrière, utilisez le curseur de zoom. Vous pouvez également effectuer un zoom à l’aide de Ctrl+Défilement.  
+ Pour effectuer un zoom avant sur le graphique Utilisation de l’UC ou sur le graphique Activité du GPU, sélectionnez une section ou utilisez le curseur de zoom au-dessus du graphique. La valeur du zoom est conservée quand vous passez à d’autres vues. Pour refaire un zoom arrière, utilisez le curseur de zoom. Vous pouvez également effectuer un zoom avec **Ctrl**+**Défilement**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Visualiseur concurrentiel](../profiling/concurrency-visualizer.md)   
- [Vue Cœurs](../profiling/cores-view.md)
+ [Affichage Cœurs](../profiling/cores-view.md)

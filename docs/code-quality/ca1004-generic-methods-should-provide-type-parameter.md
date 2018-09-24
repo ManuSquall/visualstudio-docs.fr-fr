@@ -14,16 +14,20 @@ ms.assetid: 38755f6a-fb45-4bf2-932e-0354ad826499
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c7f4616f86cdab54d1946203c46b294bea1d7aff
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b282545d04c82efb44ed87d21ddf66ee73ab77af
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899594"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550932"
 ---
 # <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004 : Les méthodes génériques doivent fournir un paramètre de type
+
 |||
 |-|-|
 |TypeName|GenericMethodsShouldProvideTypeParameter|
@@ -32,7 +36,7 @@ ms.locfileid: "31899594"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- La signature de paramètre d’une méthode générique visible de l’extérieur ne contient pas de types qui correspondent à tous les paramètres de type de la méthode.
+ La signature de paramètre d’une méthode générique extérieurement visible ne contient pas de types qui correspondent à tous les paramètres de type de la méthode.
 
 ## <a name="rule-description"></a>Description de la règle
  L’inférence désigne la manière dont l’argument de type d’une méthode générique est déterminé par le type d’argument passé à la méthode, au lieu d’utiliser la spécification explicite de l’argument de type. Pour activer l’inférence, la signature de paramètre d’une méthode générique doit contenir un paramètre du même type que le paramètre de type de la méthode. Dans ce cas, il n’est pas nécessaire de spécifier l’argument de type. Lorsque vous utilisez l’inférence pour tous les paramètres de type, la syntaxe d’appel des méthodes d’instance génériques et non génériques est identique. Cela simplifie l’utilisation des méthodes génériques.
@@ -41,7 +45,7 @@ ms.locfileid: "31899594"
  Pour corriger une violation de cette règle, modifiez la conception afin que la signature de paramètre contienne le même type pour chaque paramètre de type de la méthode.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez aucun avertissement de cette règle. Fourniture de génériques dans une syntaxe facile à comprendre et à utiliser réduit le temps nécessaire pour en savoir plus et augmente le taux d’adoption de nouvelles bibliothèques.
+ Ne supprimez aucun avertissement de cette règle. Fourniture de génériques dans une syntaxe facile à comprendre et à utiliser réduit le temps qui est nécessaire pour en savoir plus et augmente la vitesse d’adoption de nouvelles bibliothèques.
 
 ## <a name="example"></a>Exemple
  L’exemple suivant montre la syntaxe d’appel des deux méthodes génériques. L’argument de type pour `InferredTypeArgument` est déduit et l’argument de type pour `NotInferredTypeArgument` doit être spécifié explicitement.

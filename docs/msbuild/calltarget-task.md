@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83240cfa9deec2585aaa23db4aa79fbfe6929b09
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f01ca83f4aee641f6bdcb8e1c7e1323aee374bc8
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571670"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946792"
 ---
-# <a name="calltarget-task"></a>CallTarget, tâche
+# <a name="calltarget-task"></a>CallTarget (tâche)
 Appelle les cibles spécifiées dans le fichier projet.  
   
 ## <a name="task-parameters"></a>Paramètres de tâche  
- Le tableau ci-dessous décrit les paramètres de la tâche `CallTarget`.  
+ Le tableau ci-dessous décrit les paramètres de la tâche `CallTarget` .  
   
 |Paramètre|Description|  
 |---------------|-----------------|  
@@ -43,7 +43,7 @@ Appelle les cibles spécifiées dans le fichier projet.
   
  Si vous souhaitez générer les cibles par défaut, utilisez la [tâche MSBuild](../msbuild/msbuild-task.md) et définissez le paramètre `Projects` sur la valeur `$(MSBuildProjectFile)`.  
   
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant appelle `TargetA` à partir de `CallOtherTargets`.  
@@ -64,5 +64,5 @@ Appelle les cibles spécifiées dans le fichier projet.
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)   
+ [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)   
  [Cibles](../msbuild/msbuild-targets.md)

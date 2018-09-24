@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2af59e2d5d26a6db1ecde24ca93c3f0d737eb31d
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 0e0a0338f14ecdea36c5a5678a42a76ae234bb6d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118901"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280361"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>Procédure pas à pas : Déployer une définition de liste de tâches de projet
 
@@ -32,9 +32,9 @@ Cette procédure pas à pas explique comment créer, personnaliser, déboguer et
 
 ## <a name="prerequisites"></a>Prérequis
 
-- Éditions prises en charge de Microsoft Windows et SharePoint. Pour plus d’informations, consultez [configuration requise pour développer des solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).
+- Éditions prises en charge de Microsoft Windows et SharePoint.
 
-- Visual Studio 2017 ou une édition de Visual Studio Application Lifecycle Management (ALM).
+- Visual Studio 2017 ou les Services Azure DevOps.
 
 ## <a name="create-a-sharepoint-list"></a>Créer une liste SharePoint
 

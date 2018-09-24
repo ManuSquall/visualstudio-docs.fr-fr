@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35fef17924d0ef4bc431742258d12b03667a25bc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2b6cb8676f95ff86efbcfbe421872cf2d9a3f47c
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31566886"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39150797"
 ---
 # <a name="starttrackingcontext"></a>StartTrackingContext
 Démarre un contexte de suivi.  
@@ -44,4 +44,4 @@ HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskN
  **HRESULT** avec le bit **SUCCEEDED** défini si le contexte de suivi a été créé.  
   
 ## <a name="requirements"></a>Configuration requise  
- **En-tête :** FileTracker.h
+ **En-tête :** *FileTracker.h*

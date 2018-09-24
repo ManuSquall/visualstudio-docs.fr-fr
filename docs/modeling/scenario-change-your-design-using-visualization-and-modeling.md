@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f60b2f1cdb609c5686f834ef147a2f121dc27b11
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 23b84b1ad2b29a842389fb2852abdcfb8e76ea92
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281334"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371093"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénario : modifier votre conception à l'aide de la visualisation et de la modélisation
 
@@ -55,11 +55,11 @@ Pour en savoir plus sur ces outils et les scénarios qu’ils prennent en charge
 
 ## <a name="scenario-overview"></a>Vue d’ensemble du scénario
 
-Ce scénario décrit certaines étapes des cycles de vie du développement de logiciels dans deux entreprises fictives : Dinner Now et Lucerne Publishing. Dinner Now propose un service web de livraison de repas à Seattle. Les clients peuvent commander des repas et les payer sur le site web de Dinner Now. Les commandes sont alors envoyées au restaurant local chargé de les livrer. Lucerne Publishing, une société implantée à New York, exerce plusieurs activités liées ou non au web. Par exemple, elle gère un site web sur lequel ses clients peuvent publier leurs commentaires sur des restaurants.
+Ce scénario décrit certaines étapes des cycles de vie du développement de logiciels dans deux entreprises fictives : Dinner Now et Lucerne Publishing. Dinner Now propose un service web de livraison de repas à Seattle. Les clients peuvent commander des repas et les payer sur le site Web de Dinner Now. Les commandes sont alors envoyées au restaurant local chargé de les livrer. Lucerne Publishing, une société implantée à New York, exerce plusieurs activités liées ou non au web. Par exemple, ils exécuter un site Web où les clients peuvent publier des avis sur des restaurants.
 
 Lucerne a récemment acquis Dinner Now et veut apporter les modifications suivantes :
 
-- Intégrer le site web de Dinner Now en y ajoutant des fonctionnalités de publication d’avis sur les restaurants.
+- Intégrer leurs sites Web en ajoutant des fonctionnalités de révision de restaurant Dinner Now.
 
 - Remplacer le système de paiement de Dinner Now par celui de Lucerne.
 
@@ -182,7 +182,7 @@ Dinner Now doit estimer le coût de réalisation pour remplir le nouveau besoin.
 
  **Diagramme de dépendances**
 
-Pour vous assurer qu’est en conflit avec la conception ne se produire pas pendant le développement de code, les équipes utilisent la validation des dépendances sur les builds qui sont exécutés sur Team Foundation Build. Ils créent également une tâche MSBuild personnalisée pour exiger une validation de dépendance dans leurs opérations d’archivage. Elles utilisent des rapports de build pour collecter les erreurs de validation.
+Pour vous assurer qu’est en conflit avec la conception ne se produire pas pendant le développement de code, les équipes utilisent la validation des dépendances sur les builds qui sont exécutés sur Azure DevOps. Ils créent également une tâche MSBuild personnalisée pour exiger une validation de dépendance dans leurs opérations d’archivage. Elles utilisent des rapports de build pour collecter les erreurs de validation.
 
 Consultez :
 
@@ -216,9 +216,9 @@ Au fur et à mesure que le travail avance, les équipes mettent à jour leurs é
 
 Consultez :
 
-- [Effectuer le suivi d’un travail à l’aide de Visual Studio Team Services ou Team Foundation Server](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)
+- [Sur les outils Agile et de gestion de projet Agile](/azure/devops/boards/backlogs/overview?view=vsts)
 
-- [Graphiques, tableaux de bord et rapports pour Visual Studio ALM](http://msdn.microsoft.com/Library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)
+- [Graphiques, tableaux de bord et widgets (Services de DevOps Azure)](/azure/devops/report/dashboards/overview?view=vsts)
 
 - [Créer votre journal des travaux en souffrance et vos tâches à l'aide de Project](http://msdn.microsoft.com/Library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)
 
@@ -234,17 +234,17 @@ Consultez :
 
 Dinner Now possède une grande collection de tests automatisés. Lucerne peut réutiliser ces tests, car ils sont presque tous encore applicables. Lucerne peut également s’appuyer sur ces tests et en ajouter de nouveaux pour couvrir les nouvelles fonctionnalités. Les deux sociétés utilisent également Visual Studio pour exécuter des tests manuels.
 
-Pour vous assurer que le code est conforme à la conception, les équipes configurent leurs builds dans Team Foundation Build pour inclure la validation de dépendance. En cas de conflit, un rapport détaillé est généré.
+Pour vous assurer que le code est conforme à la conception, les équipes configurent leurs builds dans Azure DevOps pour inclure la validation de dépendance. En cas de conflit, un rapport détaillé est généré.
 
 Consultez :
 
-- [Test de l’application](/vsts/test/overview?view=vsts)
+- [Test de l’application](/azure/devops/test/overview?view=vsts)
 
 - [Valider votre système pendant le développement](../modeling/validate-your-system-during-development.md)
 
 - [Utiliser la gestion de version](http://go.microsoft.com/fwlink/?LinkID=525605)
 
-- [Build et release](/vsts/build-release/index)
+- [Pipelines Azure](/azure/devops/pipelines/index?view=vsts)
 
 ## <a name="update-the-system-using-visualization-and-modeling"></a>Mettre à jour le système à l’aide de visualisation et modélisation
 

@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d238370586a9256d91f89f06fddbe3c58abc27e8
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 4be55cb2108b24c7a8f912844b719e6aa3135a06
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703819"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37923994"
 ---
 # <a name="open-file-command"></a>Ouvrir un fichier, commande
+
 Ouvre un fichier existant et vous permet de spécifier un éditeur.
 
 ## <a name="syntax"></a>Syntaxe
@@ -33,28 +34,32 @@ File.OpenFile filename [/e:editorname]
 ```
 
 ## <a name="arguments"></a>Arguments
- `filename`
 
- Obligatoire. Chemin complet ou partiel et nom du fichier à ouvrir. Les chemins comportant des espaces doivent être placés entre guillemets.
+`filename`
+
+Obligatoire. Chemin complet ou partiel et nom du fichier à ouvrir. Les chemins comportant des espaces doivent être placés entre guillemets.
 
 ## <a name="switches"></a>Commutateurs
- /e:`editorname`
 
- Facultative. Nom de l’éditeur dans lequel le fichier doit être ouvert. Si l’argument est spécifié, mais qu’aucun nom d’éditeur n’est fourni, la boîte de dialogue **Ouvrir avec** s’affiche.
+/e:`editorname`
 
- La syntaxe de l’argument /e:`editorname` utilise les noms d’éditeur tels qu’ils apparaissent dans la boîte de dialogue Ouvrir avec, entre guillemets.
+Facultative. Nom de l’éditeur dans lequel le fichier doit être ouvert. Si l’argument est spécifié, mais qu’aucun nom d’éditeur n’est fourni, la boîte de dialogue **Ouvrir avec** s’affiche.
 
- Par exemple, pour ouvrir un fichier dans l’éditeur de code source, entrez les informations suivantes pour l’argument /e:`editorname`.
+La syntaxe de l’argument /e:`editorname` utilise les noms d’éditeur tels qu’ils apparaissent dans la boîte de dialogue Ouvrir avec, entre guillemets.
+
+Par exemple, pour ouvrir un fichier dans l’éditeur de code source, entrez les informations suivantes pour l’argument /e:`editorname`.
 
 ```cmd
 /e:"Source Code (text) Editor"
 ```
 
 ## <a name="remarks"></a>Notes
- La fonctionnalité de saisie semi-automatique tente de trouver le chemin et le nom de fichier correspondant aux caractères que vous tapez.
+
+La fonctionnalité de saisie semi-automatique tente de trouver le chemin et le nom de fichier correspondant aux caractères que vous tapez.
 
 ## <a name="example"></a>Exemple
- Cet exemple ouvre la feuille de style « Test1.css » dans l’éditeur de code source.
+
+Cet exemple ouvre la feuille de style « Test1.css » dans l’éditeur de code source.
 
 ```cmd
 >File.OpenFile "C:\My Projects\project1\Test1.css" /e:"Source Code (text) Editor"
@@ -64,6 +69,6 @@ File.OpenFile filename [/e:editorname]
 
 - [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Commande, fenêtre](../../ide/reference/command-window.md)
-- [Exécution, fenêtre](../../ide/reference/immediate-window.md)
-- [Rechercher/Commande, zone](../../ide/find-command-box.md)
+- [Fenêtre Exécution](../../ide/reference/immediate-window.md)
+- [Zone Rechercher/Commande](../../ide/find-command-box.md)
 - [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

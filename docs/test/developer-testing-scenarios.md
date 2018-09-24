@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 89d09a8b01dc4179f3b9de4cbdbf1905846f7002
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 83339ebabd3bb8a00f56b90ba9f162084bd43043
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691857"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282846"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Outils de test pour les développeurs, scénarios et fonctions
 
@@ -48,8 +48,8 @@ Que vous choisissiez les meilleurs tests codés de l’interface utilisateur ou 
 
 * [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](use-ui-automation-to-test-your-code.md)
 * [Bien démarrer avec la création, l’édition et la gestion d’un test codé de l’interface utilisateur](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-* [Test des applications UWP avec des tests codés de l’interface utilisateur](test-uwp-app-with-coded-ui-test.md)
-* [Tester les applications SharePoint avec des tests codés de l’interface utilisateur](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
+* [Tester des applications UWP avec des tests codés de l’interface utilisateur](test-uwp-app-with-coded-ui-test.md)
+* [Tester des applications SharePoint avec des tests codés de l’interface utilisateur](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
 * [Introduction aux tests codés de l’interface utilisateur avec Visual Studio Enterprise (laboratoire)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
 
 ## <a name="effective-unit-testing-with-visual-studio-code-coverage"></a>Tests unitaires efficaces avec couverture du code Visual Studio
@@ -60,7 +60,7 @@ L’analyse de couverture du code peut être appliquée à du code managé et no
 
 Vous pouvez avoir recours à la couverture du code lorsque vous exécutez des méthodes de test à l'aide de l'Explorateur de tests. La table des résultats affiche le pourcentage de code exécuté dans chaque assembly, classe et méthode. En outre, l'éditeur de code source vous indique quel code a été testé.
 
-![Test avec Visual Studio Team Services et Team Foundation Server](media/devtest-codecoverage.png)
+![Tester avec Azure Test Plans et Team Foundation Server](media/devtest-codecoverage.png)
 
 * [Utilisation de la couverture du code pour déterminer la quantité de code testé](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 * [Tests unitaires, couverture du code et analyse des clones de code avec Visual Studio (laboratoire)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
@@ -85,5 +85,5 @@ Visual Studio est également extensible et accepte les adaptateurs de tests unit
 
 * [Bien démarrer avec les tests unitaires](getting-started-with-unit-testing.md)
 * [Accélérer l’exécution des tests unitaires dans Team Foundation Server](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx)
-* [Parallel and Context Sensitive Unit Test Execution](https://blogs.msdn.microsoft.com/visualstudioalm/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
+* [Exécution de tests unitaires contextuelle et en parallèle](https://blogs.msdn.microsoft.com/visualstudioalm/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
 * [Tests unitaires, couverture du code et analyse des clones de code avec Visual Studio (laboratoire)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)

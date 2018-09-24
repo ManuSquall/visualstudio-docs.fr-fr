@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 676c8767691610349cc2eee4c09970318feda9f5
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 97063229e2ba72263975247b71686492ee8c64f6
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34269188"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279659"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
 Vous pouvez ajouter des éléments (contrôles, dispositions et formes) à votre application en XAML, dans le code ou à l'aide du concepteur XAML. Cette rubrique décrit comment utiliser des éléments dans le concepteur XAML dans Visual Studio ou Blend pour Visual Studio.
 
 ## <a name="adding-an-element-to-a-layout"></a>Ajout d'un élément à une disposition
- La *disposition* est le processus de dimensionnement et de positionnement des éléments dans une interface utilisateur. Pour positionner des éléments visuels, vous devez les placer dans un élément [Panel](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx) de disposition. Un `Panel` a une propriété enfant qui est une collection de types [FrameworkElement](http://msdn.microsoft.com/library/windows/apps/br208706.aspx). Vous pouvez utiliser différents éléments enfants de `Panel`, tels que [Canvas](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx) et [Grid](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), pour servir de conteneurs de disposition, et positionner et organiser les éléments dans une page.
+ La *disposition* est le processus de dimensionnement et de positionnement des éléments dans une interface utilisateur. Pour positionner des éléments visuels, vous devez les placer dans un élément [Panel](/uwp/api/Windows.UI.Xaml.Controls.Panel) de disposition. Un `Panel` a une propriété enfant qui est une collection de types [FrameworkElement](/uwp/api/Windows.UI.Xaml.FrameworkElement). Vous pouvez utiliser différents éléments enfants de `Panel`, tels que [Canvas](/uwp/api/Windows.UI.Xaml.Controls.Canvas), [StackPanel](/uwp/api/Windows.UI.Xaml.Controls.StackPanel) et [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid), pour servir de conteneurs de disposition, et positionner et organiser les éléments dans une page.
 
  Par défaut, un panneau `Grid` est utilisé comme conteneur de disposition de niveau supérieur dans un formulaire ou une page. Vous pouvez ajouter des contrôles, des panneaux de disposition ou d'autres éléments dans la disposition de niveau supérieur.
 
@@ -29,11 +29,11 @@ Vous pouvez ajouter des éléments (contrôles, dispositions et formes) à votre
 
 -   Dans le concepteur XAML, effectuez l'une des opérations suivantes :
 
-    -   Double-cliquez sur un élément dans la **boîte à outils** (ou sélectionnez un élément dans la boîte à outils et appuyez sur Entrée).
+    -   Double-cliquez sur un élément dans la **Boîte à outils** (ou sélectionnez un élément dans la boîte à outils et appuyez sur **Entrée**).
 
     -   Faites glisser un élément depuis la **boîte à outils** vers la planche graphique.
 
-    -   Dans la **boîte à outils**, sélectionnez l’un des outils de dessin (par exemple, [Ellipse](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) ou [Rectangle](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)), puis dessinez un élément dans le panneau actif.
+    -   Dans la **boîte à outils**, sélectionnez l’un des outils de dessin (par exemple, [Ellipse](/uwp/api/Windows.UI.Xaml.Shapes.Ellipse) ou [Rectangle](/uwp/api/Windows.UI.Xaml.Shapes.Rectangle)), puis dessinez un élément dans le panneau actif.
 
 ## <a name="changing-the-layering-order-of-elements"></a>Modification de l'ordre de superposition des éléments
  Quand la planche graphique du concepteur XAML comporte deux éléments, l'un d'eux apparaît devant l'autre dans l'ordre de superposition. Sauf si la propriété **ZIndex** d’un élément est définie, l’élément au premier plan se trouve en bas de la liste des éléments dans la fenêtre Structure du document. Quand vous insérez un élément dans une page, un formulaire ou un conteneur de disposition, l'élément est automatiquement placé devant les autres éléments dans l'élément de conteneur actif. Pour modifier l’ordre des éléments, vous pouvez utiliser les commandes **Ordre** ou faire glisser les éléments dans l’arborescence d’objets de la fenêtre Structure du document.
@@ -63,7 +63,7 @@ Vous pouvez ajouter des éléments (contrôles, dispositions et formes) à votre
 
 #### <a name="to-align-two-or-more-elements-by-using-menu-commands"></a>Pour aligner deux ou plusieurs éléments à l'aide de commandes de menu
 
-1.  Sélectionnez les éléments que vous voulez aligner. Pour sélectionner plusieurs éléments, appuyez sur la touche Ctrl, puis tout en la maintenant enfoncée, sélectionnez les éléments.
+1.  Sélectionnez les éléments que vous voulez aligner. Pour sélectionner plusieurs éléments, maintenez enfoncée la touche **Ctrl** et sélectionnez les éléments.
 
 2.  Sélectionnez l’une des propriétés suivantes sous **HorizontalAlignment** dans la section **Disposition** de la fenêtre Propriétés : **Gauche**, **Centre**, **Droite** ou **Étirer**.
 
@@ -100,7 +100,7 @@ Vous pouvez ajouter des éléments (contrôles, dispositions et formes) à votre
 
 #### <a name="to-group-elements-into-a-new-layout-container"></a>Pour regrouper des éléments dans un nouveau conteneur de disposition
 
-1.  Sélectionnez les éléments que vous voulez regrouper. (Pour sélectionner plusieurs éléments, appuyez sur la touche Ctrl puis, tout en la maintenant enfoncée, cliquez sur les éléments.)
+1.  Sélectionnez les éléments que vous voulez regrouper. (Pour sélectionner plusieurs éléments, maintenez enfoncée la touche **Ctrl** et cliquez sur les éléments.)
 
 2.  Cliquez avec le bouton droit sur les éléments sélectionnés, pointez sur **Grouper**, puis cliquez sur le type de conteneur de disposition dans lequel vous souhaitez que le groupe réside.
 
@@ -118,7 +118,7 @@ Vous pouvez ajouter des éléments (contrôles, dispositions et formes) à votre
 
 #### <a name="to-reset-the-element-layout"></a>Pour réinitialiser la disposition des éléments
 
--   Dans la fenêtre Structure du document ou la planche graphique, cliquez avec le bouton droit sur l’élément, choisissez **Disposition**, **Réinitialiser** *nom_propriété*, où *nom_propriété* est la propriété à réinitialiser (ou choisissez **Disposition**, **Réinitialiser tout** pour réinitialiser toutes les propriétés de disposition de l’élément).
+-   Dans la fenêtre Structure du document ou la planche graphique, cliquez avec le bouton droit sur l’élément, choisissez **Disposition** > **Réinitialiser** *nom_propriété*, où *nom_propriété* est la propriété à réinitialiser (ou choisissez **Disposition** > **Réinitialiser tout** pour réinitialiser toutes les propriétés de disposition de l’élément).
 
 ## <a name="see-also"></a>Voir aussi
 

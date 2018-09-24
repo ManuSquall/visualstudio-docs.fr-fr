@@ -1,5 +1,5 @@
 ---
-title: Serveurs (Kit de développement logiciel Visual Studio) | Documents Microsoft
+title: Serveurs (Kit de développement logiciel Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,21 +14,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2904641e8188abc6ef2382b2da272a9f96fd0f81
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 871eeb59832c640ede32e0fcd188941605c4afcb
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125490"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276651"
 ---
-# <a name="servers-visual-studio-sdk"></a>Serveurs (Kit de développement logiciel Visual Studio)
-En termes de l’architecture du débogueur, une **server**:  
+# <a name="servers-visual-studio-sdk"></a>Serveurs (SDK Visual Studio)
+Dans l’architecture du débogueur, une *server*:  
   
--   Est un conteneur de ports et les fournisseurs de port et est utilisé pour communiquer des ports et des fournisseurs de port pour le Gestionnaire de session de débogage (SDM) et les moteurs de débogage.  
+-   Est un conteneur de ports et les fournisseurs de port et communique les ports et les fournisseurs de port pour le Gestionnaire de session de débogage (SDM) et les moteurs de débogage.  
   
--   Peut identifier par son nom et énumérer ses ports et les fournisseurs de port.  
+-   Peut s’identifier par son nom et énumérer ses ports et les fournisseurs de port.  
   
--   Est représenté par un [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) interface, ce qui n’est implémentée par Visual Studio (une instance d’un serveur pour chaque instance de l’exécution de Visual Studio).  
+-   Est représenté par un [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) interface, qui est implémentée uniquement par Visual Studio (une seule instance d’un serveur pour chaque instance en cours d’exécution de Visual Studio).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Ports](../../extensibility/debugger/ports.md)   

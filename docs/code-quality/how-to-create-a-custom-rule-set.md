@@ -13,24 +13,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3b1d9b436c3e3be4f241d18791744085be4ece9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 727c11e24eb3409de89fe211c6a37691dfec298c
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920688"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204113"
 ---
-# <a name="custom-rule-sets"></a>Ensembles de règles personnalisés
+# <a name="customize-a-rule-set"></a>Personnaliser un ensemble de règles
 
-Vous pouvez créer un *ensemble de règles* pour répondre aux besoins de projet spécifiques pour l’analyse du code.
+Vous pouvez créer une règle personnalisée définie pour répondre aux besoins de projet spécifiques pour l’analyse du code.
 
 ## <a name="create-a-custom-rule-set"></a>Créer un ensemble de règles personnalisé
 
-Pour créer une règle personnalisée définie, vous pouvez ouvrir une règle intégrée définie dans le **Éditeur d’ensemble de règles**. À partir de là, vous pouvez ajouter ou supprimer des règles spécifiques, et vous pouvez modifier l’action qui se produit lorsqu’une règle est violée&mdash;, par exemple, afficher un avertissement ou une erreur.
+Pour créer une règle personnalisée, vous pouvez ouvrir un intégrés ensemble de règles dans le **Éditeur d’ensemble de règles**. À partir de là, vous pouvez ajouter ou supprimer des règles spécifiques, et vous pouvez modifier l’action qui se produit lorsqu’une règle est violée&mdash;, par exemple, afficher un avertissement ou une erreur.
 
 1. Dans **l’Explorateur de solutions**, cliquez sur le projet, puis sélectionnez **propriétés**.
 
-2. Sur le **propriétés** pages, sélectionnez le **l’analyse du Code** onglet.
+2. Sur le **propriétés** pages, sélectionnez le **analyse du Code** onglet.
 
 3. Dans le **exécuter cet ensemble de règles** liste déroulante, effectuez l’une des opérations suivantes :
 
@@ -38,13 +38,13 @@ Pour créer une règle personnalisée définie, vous pouvez ouvrir une règle in
 
      \- ou -
 
-    - Sélectionnez  **\<Parcourir... >** pour spécifier une règle existante du jeu qui n’est pas dans la liste.
+    - Sélectionnez  **\<Parcourir... >** pour spécifier une règle existante définie qui n’est pas dans la liste.
 
-4. Sélectionnez **ouvrir** pour afficher les règles dans l’éditeur d’ensemble de règles.
+4. Sélectionnez **Open** pour afficher les règles dans l’éditeur d’ensemble de règles.
 
 Vous pouvez également créer un nouveau fichier de jeu de règles à partir de la **nouveau fichier** boîte de dialogue :
 
-1. Sélectionnez **fichier** > **nouveau** > **fichier**, ou appuyez sur **Ctrl**+**N**.
+1. Sélectionnez **fichier** > **New** > **fichier**, ou appuyez sur **Ctrl**+**N**.
 
 2. Dans le **nouveau fichier** boîte de dialogue, sélectionnez le **général** catégorie sur la gauche, puis sélectionnez **ensemble de règles d’analyse de Code**.
 
@@ -56,11 +56,11 @@ Vous pouvez également créer un nouveau fichier de jeu de règles à partir de 
 
 1. Dans l’Explorateur de solutions, cliquez sur le projet, puis sélectionnez **propriétés**.
 
-2. Sur le **propriétés** pages, sélectionnez le **l’analyse du Code** onglet.
+2. Sur le **propriétés** pages, sélectionnez le **analyse du Code** onglet.
 
 3. Sélectionnez  **\<choisir plusieurs règle définit... >** de **exécuter cet ensemble de règles**.
 
-4. Dans le **ajouter ou supprimer des ensembles de règles** boîte de dialogue, sélectionnez les ensembles de règles vous souhaitez inclure dans votre nouvel ensemble de règles.
+4. Dans le **ajouter ou supprimer des ensembles de règles** boîte de dialogue, sélectionnez les ensembles de règles vous voulez inclure dans un ensemble de règles.
 
    ![Ajouter ou supprimer la boîte de dialogue de jeux de règles](media/add-remove-rule-sets.png)
 
@@ -68,7 +68,7 @@ Vous pouvez également créer un nouveau fichier de jeu de règles à partir de 
 
    Nouvel ensemble de règles est sélectionné dans le **exécuter cet ensemble de règles** liste.
 
-6. Sélectionnez **ouvrir** pour ouvrir la nouvelle règle, définie dans l’éditeur d’ensemble de règles.
+6. Sélectionnez **ouvrir** pour ouvrir la nouvelle règle définie dans l’éditeur d’ensemble de règles.
 
 ## <a name="name-and-description"></a>Nom et description
 
@@ -76,7 +76,7 @@ Pour modifier le nom complet d’un ensemble de règles est ouvert dans l’édi
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Maintenant que vous avez une règle définie, l’étape suivante consiste à personnaliser les règles en ajoutant ou supprimant des règles ou modifier le niveau de gravité des violations de règles.
+Maintenant que vous avez une règle définie, l’étape suivante consiste à personnaliser les règles en ajoutant ou supprimant des règles ou modifier le niveau de gravité des violations de règle.
 
 > [!div class="nextstepaction"]
 > [Modifier les règles dans l’éditeur d’ensemble de règles](../code-quality/working-in-the-code-analysis-rule-set-editor.md)

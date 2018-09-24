@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 527a12591b05fcd1f20f8664132bf174ef553477
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0323e6902be9c5b784a17bfc8b48f4f9a1225e41
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978256"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180319"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Anatomie d’un test codé de l’interface utilisateur
 
@@ -55,7 +55,7 @@ using Mouse = Microsoft.VisualStudio.TestTools.UITesting.Mouse;
 using MouseButtons = System.Windows.Forms.MouseButtons;
 ```
 
- L'espace de noms <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls> est inclus pour une interface utilisateur Windows. Pour une interface utilisateur de page Web, l'espace de noms serait <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls> ; pour une interface utilisateur Windows Presentation Foundation, l'espace de noms serait <xref:Microsoft.VisualStudio.TestTools.UITesting.WpfControls>.
+ L'espace de noms <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls> est inclus pour une interface utilisateur Windows. Dans le cas d’une interface utilisateur de page web, l’espace de noms serait <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls> ; pour une interface utilisateur Windows Presentation Foundation, il serait <xref:Microsoft.VisualStudio.TestTools.UITesting.WpfControls>.
 
 ####  <a name="UIMapClass"></a> Classe UIMap
  La section suivante du fichier est la classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>.
@@ -65,7 +65,7 @@ using MouseButtons = System.Windows.Forms.MouseButtons;
 public partial class UIMap
 ```
 
-Le code de la classe commence par un attribut <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> qui est appliqué à la classe, qui est déclarée en tant que classe partielle. Notez que l’attribut est également appliqué à toutes les classes dans ce fichier. L'autre fichier pouvant contenir plus de code pour cette classe est `UIMap.cs`, décrit plus loin.
+Le code de la classe commence par un attribut <xref:System.CodeDom.Compiler.GeneratedCodeAttribute> qui est appliqué à la classe, qui est déclarée en tant que classe partielle. Notez que l’attribut est également appliqué à toutes les classes dans ce fichier. L'autre fichier pouvant contenir plus de code pour cette classe est *UIMap.cs*, décrit plus loin.
 
 La classe `UIMap` générée inclut du code pour chaque méthode qui a été spécifiée quand le test a été enregistré.
 
@@ -120,11 +120,11 @@ public void AddItems()
 }
 ```
 
-Le commentaire récapitulatif de chaque définition de méthode indique la classe à utiliser pour les valeurs de paramètre de cette méthode. Dans cet exemple, il s'agit de la classe `AddItemsParams`, qui est définie ultérieurement dans le fichier `UIMap.cs` et qui correspond également au type de valeur retourné par la propriété `AddItemsParams`.
+Le commentaire récapitulatif de chaque définition de méthode indique la classe à utiliser pour les valeurs de paramètre de cette méthode. Dans cet exemple, il s'agit de la classe `AddItemsParams`, qui est définie ultérieurement dans le fichier *UIMap.cs* et qui correspond également au type de valeur retourné par la propriété `AddItemsParams`.
 
  En haut du code de la méthode se trouve une région `Variable Declarations` qui définit des variables locales pour les objets de l’interface utilisateur que la méthode utilise.
 
- Dans cette méthode, `UIItemWindow` et `UIItemEdit` sont des propriétés accessibles à l'aide de la classe `UICalculatorWindow`, définie ultérieurement dans le fichier `UIMap.cs`.
+ Dans cette méthode, `UIItemWindow` et `UIItemEdit` sont des propriétés accessibles à l'aide de la classe `UICalculatorWindow`, définie ultérieurement dans le fichier *UIMap.cs*.
 
  Ensuite figurent des lignes qui envoient du texte depuis le clavier vers l'application Calculatrice à l'aide des propriétés de l'objet `AddItemsParams`.
 
@@ -156,7 +156,7 @@ public virtual AddItemsParams AddItemsParams
 }
 ```
 
- Notez que la propriété utilise une variable locale privée nommée `mAddItemsParams` pour retenir la valeur avant de la retourner. Le nom de la propriété et le nom de la classe pour l'objet retourné sont identiques. La classe est définie ultérieurement dans le fichier `UIMap.cs`.
+ Notez que la propriété utilise une variable locale privée nommée `mAddItemsParams` pour retenir la valeur avant de la retourner. Le nom de la propriété et le nom de la classe pour l'objet retourné sont identiques. La classe est définie ultérieurement dans le fichier *UIMap.cs*.
 
  Chaque classe retournée par une propriété est structurée de la même façon. Voici la classe `AddItemsParams` :
 
@@ -181,7 +181,7 @@ public class AddItemsParams
 }
 ```
 
-Comme avec toutes les classes incluses dans le fichier `UIMap.cs`, cette classe démarre avec <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. Dans cette petite classe se trouve une région `Fields` qui définit les chaînes à utiliser en tant que paramètres pour la méthode <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName> qui est utilisée dans la méthode `UIMap.AddItems()` décrite précédemment. Vous pouvez écrire du code pour remplacer les valeurs dans ces champs de chaîne avant l'appel de la méthode dans laquelle ces paramètres sont utilisés.
+Comme avec toutes les classes incluses dans le fichier *UIMap.cs*, cette classe démarre avec <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. Dans cette petite classe se trouve une région `Fields` qui définit les chaînes à utiliser en tant que paramètres pour la méthode <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A?displayProperty=fullName> qui est utilisée dans la méthode `UIMap.AddItems()` décrite précédemment. Vous pouvez écrire du code pour remplacer les valeurs dans ces champs de chaîne avant l'appel de la méthode dans laquelle ces paramètres sont utilisés.
 
 ###  <a name="UIMapCS"></a> UIMap.cs
  Par défaut, ce fichier contient une classe `UIMap` partielle dépourvue de méthode ou de propriété.
@@ -264,7 +264,7 @@ public void MyTestCleanup()
 ###  <a name="UIMapuitest"></a> UIMap.uitest
  Il s'agit d'un fichier XML qui représente la structure de l'enregistrement du test codé de l'interface utilisateur et toutes ses parties. Celles-ci incluent les actions et les classes en plus des méthodes et propriétés de ces classes. Le fichier [UIMap.Designer.cs](#UIMapDesignerFile) contient le code généré par le Générateur de test codé de l’interface utilisateur pour reproduire la structure du test et fournir la connexion au framework de test.
 
- Le fichier `UIMap.uitest` n'est pas directement modifiable. Toutefois, vous pouvez utiliser le Générateur de test codé de l’interface utilisateur pour modifier le test, ce qui modifie automatiquement le fichier `UIMap.uitest` et le fichier [UIMap.Designer.cs](#UIMapDesignerFile).
+ Le fichier *UIMap.uitest* n’est pas directement modifiable. Toutefois, vous pouvez utiliser le Générateur de test codé de l’interface utilisateur pour modifier le test, ce qui modifie automatiquement le fichier *UIMap.uitest* et le fichier [*UIMap.Designer.cs*](#UIMapDesignerFile).
 
 ## <a name="see-also"></a>Voir aussi
 
@@ -281,5 +281,5 @@ public void MyTestCleanup()
 - [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
 - [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md)
 - [Bonnes pratiques pour les tests codés de l’interface utilisateur](../test/best-practices-for-coded-ui-tests.md)
-- [Test d’une grande application avec plusieurs mappages d’IU](../test/testing-a-large-application-with-multiple-ui-maps.md)
+- [Test d’une grande application avec plusieurs mappages d'IU](../test/testing-a-large-application-with-multiple-ui-maps.md)
 - [Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

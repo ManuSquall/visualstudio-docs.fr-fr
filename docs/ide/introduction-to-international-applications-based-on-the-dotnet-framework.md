@@ -27,12 +27,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 773e6a2f351c0256fee17b1e07ff37fe9567198b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2ddb993e83cee79afca89d3cd06d55ca9e6fbc19
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943938"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179916"
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>Introduction aux applications internationales basées sur le .NET Framework
 
@@ -44,7 +44,7 @@ Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], il existe deux p
 
  Le système de projet pour les applications Windows Forms peut générer des fichiers de ressources pour la culture de secours et chaque culture d’interface utilisateur supplémentaire souhaitée. Le fichier de ressources de secours est intégré à l’assembly principal, puis les fichiers de ressources spécifiques à une culture sont intégrés aux assemblys satellites, à raison d’un par culture d’interface utilisateur. Quand vous générez un projet, les fichiers de ressources sont compilés à partir du format XML de Visual Studio (.resx) dans un format binaire intermédiaire (.resources), puis incorporés dans des assemblys satellites.
 
- Le système de projet pour les Windows Forms et Web Forms vous permet de générer des fichiers de ressources à l’aide d’un modèle de fichier de ressources d’assembly, d’accéder aux ressources et de générer votre projet. Les assemblys satellites sont créés avec l’assembly principal.
+ Le système de projet pour Windows Forms et les formulaires web vous permet de générer des fichiers de ressources à l’aide d’un modèle de fichier de ressources d’assembly, d’accéder aux ressources et de générer votre projet. Les assemblys satellites sont créés avec l’assembly principal.
 
  Quand une application localisée s’exécute, deux valeurs de culture déterminent son apparence. (Une *culture* est un ensemble de préférences utilisateur liées à la langue, à l’environnement et aux conventions culturelles de l’utilisateur.) Le paramètre de culture de l’interface utilisateur détermine les ressources qui sont chargées. La culture de l’interface utilisateur est définie en tant que `UICulture` dans les fichiers Web.config et les directives de page, et <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> dans le code Visual Basic ou C#. Le paramètre de culture détermine la mise en forme des valeurs telles que les dates, les nombres et les devises. La culture est définie en tant que `Culture` dans les fichiers Web.config et les directives de page, <xref:System.Globalization.CultureInfo.CurrentCulture%2A> dans le code Visual Basic ou C#.
 

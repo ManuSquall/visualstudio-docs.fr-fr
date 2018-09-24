@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fd6d3bc8dbe1ec92fd2802e6cc2b88956d74e854
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5fc3d03e42edbfa6ad4e625a1d4c77df2aadab27
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751648"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382394"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Procédure pas à pas : créer, modifier et gérer un test codé de l’interface utilisateur
 
@@ -38,23 +38,23 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 
 7.  Cliquez sur **OK**.
 
-     Le Concepteur WPF pour Visual Studio s'ouvre et affiche le MainWindow du projet.
+     Le **Concepteur WPF pour Visual Studio** s’ouvre et affiche la fenêtre MainWindow du projet.
 
 8.  Si la boîte à outils n'est pas encore ouverte, ouvrez-la. Choisissez le menu **Affichage**, puis **Boîte à outils**.
 
 9. Sous la section **Tous les contrôles WPF**, faites glisser un contrôle **Button**, **CheckBox** et **ProgressBar** sur la fenêtre MainWindow de l’aire de conception.
 
-10. Sélectionnez le contrôle Button. Dans la fenêtre Propriétés, changez la valeur de la propriété **Nom** de \<Sans nom> en button1. Changez ensuite la valeur de la propriété **Contenu** de Button en Start.
+10. Sélectionnez le contrôle **Button**. Dans la fenêtre **Propriétés**, changez la valeur de la propriété **Nom** de \<Sans nom> en button1. Changez ensuite la valeur de la propriété **Contenu** de Button en Start.
 
-11. Sélectionnez le contrôle ProgressBar. Dans la fenêtre Propriétés, changez la valeur de la propriété **Nom** de \<Sans nom> en progressBar1. Changez ensuite la valeur de la propriété **Maximum** de **100** en **10000**.
+11. Sélectionnez le contrôle **ProgressBar**. Dans la fenêtre **Propriétés**, changez la valeur de la propriété **Nom** de \<Sans nom> en progressBar1. Changez ensuite la valeur de la propriété **Maximum** de **100** en **10000**.
 
-12. Sélectionnez le contrôle Checkbox. Dans la fenêtre Propriétés, changez la valeur de la propriété **Nom** de \<Sans nom> en checkBox1 et effacez la valeur de la propriété **IsEnabled**.
+12. Sélectionnez le contrôle **Checkbox**. Dans la fenêtre **Propriétés**, changez la valeur de la propriété **Nom** de \<Sans nom> en checkBox1 et effacez la valeur de la propriété **IsEnabled**.
 
      ![Application WPF simple](../test/media/codedui_wpfapp.png)
 
 13. Double-cliquez sur le contrôle bouton pour ajouter un gestionnaire d'événements Click.
 
-     MainWindow.xmal.cs s'affiche dans l'Éditeur de code avec le curseur dans la nouvelle méthode button1_Click.
+     *MainWindow.xmal.cs* s’affiche dans l’éditeur de code avec le curseur dans la nouvelle méthode button1_Click.
 
 14. Au début de la classe MainWindow, ajoutez un délégué. Le délégué sera utilisé pour la barre de progression. Pour ajouter le délégué, ajoutez le code suivant :
 
@@ -141,7 +141,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 
      La boîte de dialogue **UIMap - Générateur de test codé de l’interface utilisateur** apparaît et la fenêtre Visual Studio est réduite.
 
-     Pour plus d’informations sur les options de la boîte de dialogue, consultez [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md).
+     Pour plus d’informations sur les options de la boîte de dialogue, consultez [Créer des tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md).
 
 1. Choisissez **Démarrer l’enregistrement** dans la boîte de dialogue **UIMap - Générateur de test codé de l’interface utilisateur**.
 
@@ -184,7 +184,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 
 3. Dans le fichier *CodedUITest1.cs*, recherchez la méthode **CodedUITestMethod**, cliquez avec le bouton droit et sélectionnez **Exécuter les tests** ou exécutez le test à partir de l’**Explorateur de tests**.
 
-   Pendant l'exécution du test codé de l'interface utilisateur, SimpleWPFApp est visible. Les étapes que vous avez effectuées dans la procédure précédente sont exécutées. Toutefois, quand le test tente de cocher la case du contrôle CheckBox, la fenêtre **Résultats des tests** indique que le test a échoué. Cela s'explique par le fait que le test tente de cocher la case, mais ne sait pas que le contrôle CheckBox est désactivé tant que la barre de progression n'a pas atteint 100 %. Vous pouvez corriger ce problème et d'autres problèmes connexes à l'aide des différentes méthodes `UITestControl.WaitForControlXXX()` disponibles pour les tests codés de l'interface utilisateur. La procédure suivante montrera l'utilisation de la méthode `WaitForControlEnabled()` pour corriger le problème à l'origine de l'échec de ce test. Pour plus d’informations, consultez [Suspension des tests codés de l’interface utilisateur en attendant des événements spécifiques pendant la lecture](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
+   Pendant l'exécution du test codé de l'interface utilisateur, SimpleWPFApp est visible. Les étapes que vous avez effectuées dans la procédure précédente sont exécutées. Toutefois, quand le test tente de cocher la case du contrôle CheckBox, la fenêtre **Résultats des tests** indique que le test a échoué. Cela s'explique par le fait que le test tente de cocher la case, mais ne sait pas que le contrôle CheckBox est désactivé tant que la barre de progression n'a pas atteint 100 %. Vous pouvez corriger ce problème et d'autres problèmes connexes à l'aide des différentes méthodes `UITestControl.WaitForControlXXX()` disponibles pour les tests codés de l'interface utilisateur. La procédure suivante montrera l'utilisation de la méthode `WaitForControlEnabled()` pour corriger le problème à l'origine de l'échec de ce test. Pour plus d’informations, consultez [Mettre en suspens des tests codés de l’interface utilisateur en attendant des événements spécifiques lors de la lecture](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
 
 ## <a name="edit-and-rerun-the-coded-ui-test"></a>Modifier et réexécuter le test codé de l’interface utilisateur
 
@@ -314,7 +314,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 
 10. Dans l’**Explorateur de solutions**, ouvrez le fichier *UIMap.Designer.cs*.
 
-11. Dans le fichier UIMap.Designer.cs, recherchez la propriété **UIStartButton1**. Notez que `SearchProperties` a pour valeur `"buttonA"` :
+11. Dans le fichier *UIMap.Designer.cs*, recherchez la propriété **UIStartButton1**. Notez que `SearchProperties` a pour valeur `"buttonA"` :
 
     ```csharp
     public WpfButton UIStartButton1
@@ -334,7 +334,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
             }
     ```
 
-     Vous pouvez maintenant modifier le test codé de l'interface utilisateur pour utiliser le nouveau contrôle mappé. Comme signalé dans la procédure précédente, si vous souhaitez remplacer les méthodes ou les propriétés dans le test codé de l'interface utilisateur, vous devez le faire dans le fichier UIMap.cs.
+     Vous pouvez maintenant modifier le test codé de l'interface utilisateur pour utiliser le nouveau contrôle mappé. Comme signalé dans la procédure précédente, si vous souhaitez remplacer les méthodes ou les propriétés dans le test codé de l’interface utilisateur, vous devez le faire dans le fichier *UIMap.cs*.
 
 12. Dans le fichier *UIMap.cs*, ajoutez un constructeur et spécifiez la propriété `SearchProperties` de la propriété `UIStartButton` pour utiliser la propriété `AutomationID` avec la valeur `"buttonA":`
 
@@ -367,4 +367,4 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 
 - [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
 - [Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-- [Modification des tests codés de l’interface utilisateur à l’aide de l’éditeur de test codé de l’interface utilisateur](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)
+- [Modifier des tests codés de l’interface utilisateur à l’aide de l’éditeur de test codé de l’interface utilisateur](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

@@ -10,17 +10,17 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 500dce15e695cf53a061f8405919e808b8f7c493
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 074128d34f88346708fd344d1bba25b833f2af44
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31066936"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251560"
 ---
 # <a name="import-an-xcode-project"></a>Importer un projet Xcode
 Microsoft Visual C++ pour le développement mobile multiplateforme prend en charge le déplacement de vos projets Xcode dans Visual Studio, où vous pouvez créer des bibliothèques multiplateformes et partager du code avec d’autres projets. L’Assistant Importation à partir de Xcode simplifie le processus d’importation de projets et de fractionnement du code C++ de vos cibles Xcode à utiliser en tant que bibliothèque statique ou projet de code partagé. Vous pouvez gérer votre code spécifique à iOS dans Visual Studio et continuer à utiliser Xcode pour effectuer des storyboards et des builds. Pour plus d’informations sur la façon de déplacer facilement du code entre Visual Studio et Xcode, consultez les détails relatifs au transfert de changements entre Xcode et Visual Studio.  
   
-## <a name="using-the-import-from-xcode-wizard"></a>Utilisation de l’Assistant Importation à partir de Xcode  
+## <a name="use-the-import-from-xcode-wizard"></a>Utiliser l’Assistant Importation à partir de Xcode  
  Cette rubrique montre comment déplacer un projet Xcode dans Visual Studio pour tirer parti du partage de code et des solutions multiplateformes. Au préalable, vous devez jumeler votre Mac à Visual Studio pour pouvoir importer, exporter et générer votre projet. Pour obtenir des instructions sur la configuration du jumelage, consultez [Installer et configurer des outils de génération en utilisant iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Vous devez également partager votre projet Xcode sur le réseau ou le déplacer vers votre ordinateur Visual Studio pour utiliser l’Assistant Importation à partir de Xcode.  
   
 #### <a name="import-from-xcode"></a>Importer à partir de Xcode  
@@ -29,7 +29,7 @@ Microsoft Visual C++ pour le développement mobile multiplateforme prend en cha
   
      ![Choisir le projet cible Xcode à importer](../cross-platform/media/cppmdd_u2_importxcode_choose.PNG "CPPMDD_U2_ImportXCode_Choose")  
   
-2.  Dans le volet **Choisir un projet**, choisissez le bouton Parcourir pour sélectionner un fichier .pbxproj Xcode. Accédez au fichier projet via la boîte de dialogue **Sélectionner un fichier projet Xcode**, puis choisissez **Ouvrir**.  
+2.  Dans le volet **Choisir un projet**, choisissez le bouton Parcourir pour sélectionner un fichier *.pbxproj* Xcode. Accédez au fichier projet via la boîte de dialogue **Sélectionner un fichier projet Xcode**, puis choisissez **Ouvrir**.  
   
      ![Sélectionner un fichier projet dans la boîte de dialogue Sélectionner un fichier projet Xcode](../cross-platform/media/cppmdd_u2_importxcode_browse.PNG "CPPMDD_U2_ImportXCode_Browse")  
   
@@ -59,7 +59,7 @@ Microsoft Visual C++ pour le développement mobile multiplateforme prend en cha
   
      Choisissez **Suivant** pour continuer.  
   
-6.  Le volet **Frameworks** permet de configurer les chemins utilisés par Visual Studio pour parcourir les éléments de votre projet, ainsi que pour IntelliSense. Les chemins doivent être accessibles à Visual Studio pour chaque framework référencé par votre projet Xcode. L’Assistant vérifie les références de framework dans les projets Xcode et indique si Visual Studio peut trouver le framework. Si vous avez déjà configuré un chemin dans les propriétés globales, il doit être découvert par Visual Studio. Les exceptions sont répertoriées dans la liste Frameworks. Pour chaque framework listé avec un X, indiquez un chemin accessible au PC afin de permettre à Visual Studio de trouver le framework. Vous pouvez utiliser le bouton Parcourir [...] pour afficher une boîte de dialogue **Sélectionner un dossier** et trouver le chemin. Le chemin du framework peut être celui d’une copie locale ou d’un partage réseau sur votre Mac.  
+6.  Le volet **Frameworks** permet de configurer les chemins utilisés par Visual Studio pour parcourir les éléments de votre projet, ainsi que pour IntelliSense. Les chemins doivent être accessibles à Visual Studio pour chaque framework référencé par votre projet Xcode. L’Assistant vérifie les références de framework dans les projets Xcode et indique si Visual Studio peut trouver le framework. Si vous avez déjà configuré un chemin dans les propriétés globales, il doit être découvert par Visual Studio. Les exceptions sont répertoriées dans la liste Frameworks. Pour chaque framework listé avec un X, indiquez un chemin accessible au PC afin de permettre à Visual Studio de trouver le framework. Vous pouvez utiliser le bouton Parcourir **...** pour afficher une boîte de dialogue **Sélectionner un dossier** et trouver le chemin. Le chemin du framework peut être celui d’une copie locale ou d’un partage réseau sur votre Mac.  
   
      ![Volet Frameworks de l’importation à partir de Xcode](../cross-platform/media/cppmdd_u2_importxcode_frameworks.jpg "CPPMDD_U2_ImportXCode_Frameworks")  
   
@@ -67,11 +67,11 @@ Microsoft Visual C++ pour le développement mobile multiplateforme prend en cha
   
 7.  Le volet **Paramètres du projet** vous permet de changer le framework et d’inclure les paramètres du chemin de recherche de fichiers d’en-tête Include pour chaque projet créé par l’Assistant. Utilisez ce volet pour définir les chemins spécifiques au projet qui diffèrent des paramètres globaux.  
   
-     Pour définir un chemin spécifique à un projet, dans la liste déroulante **Projet de destination**, sélectionnez le fichier projet, puis définissez les valeurs des contrôles **Chemin de recherche de frameworks** et **Chemin de recherche de fichiers d’en-tête Include**. Vous pouvez utiliser le bouton Parcourir [...] près de chaque contrôle pour afficher une boîte de dialogue **Sélectionner un dossier** et trouver le chemin.  
+     Pour définir un chemin spécifique à un projet, dans la liste déroulante **Projet de destination**, sélectionnez le fichier projet, puis définissez les valeurs des contrôles **Chemin de recherche de frameworks** et **Chemin de recherche de fichiers d’en-tête Include**. Vous pouvez utiliser le bouton Parcourir **...** près de chaque contrôle pour afficher une boîte de dialogue **Sélectionner un dossier** et trouver le chemin.  
   
      ![Volet Projets de l’importation à partir de Xcode](../cross-platform/media/cppmdd_u2_importxcode_projects.jpg "CPPMDD_U2_ImportXCode_Projects")  
   
-     Si aucun Mac distant n’a été jumelé à ce PC dans Visual Studio, le lien Configurer une machine distante s’affiche. Pour obtenir des instructions sur la configuration du jumelage, consultez [Installer et configurer des outils de génération en utilisant iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).  
+     Si aucun Mac distant n’a été jumelé à ce PC dans Visual Studio, le lien **Configurer une machine distante** s’affiche. Pour obtenir des instructions sur la configuration du jumelage, consultez [Installer et configurer des outils de génération en utilisant iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).  
   
      Pour importer le projet Xcode à l’aide des paramètres de l’Assistant, choisissez **Importer**.  
   

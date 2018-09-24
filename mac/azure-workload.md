@@ -2,15 +2,15 @@
 title: Azure
 description: Ajouter le stockage de données Azure, l’authentification et les notifications Push aux applications mobiles à partir de Visual Studio pour Mac
 ms.assetid: 3E5ADF4A-6655-42AD-BFC1-CE5E437C457B
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
-ms.openlocfilehash: 58562fdcb01bf82da49c05a06af1028200c5822e
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: a274af35ba8711d783f5bcb2b2aef9c67120e91a
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34453840"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224002"
 ---
 # <a name="azure"></a>Azure
 

@@ -16,14 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb86a0c906ae2ae43308833cdec79195344abb7a
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 9accca69c5d56461f07d21d25821c0f4181c8fbd
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35672676"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>Comment : ajouter des commandes aux menus contextuels
-  Cette rubrique montre comment ajouter des commandes à un menu contextuel dans une application Office en utilisant un complément VSTO.  
+  Cette rubrique montre comment ajouter des commandes à un menu contextuel dans une application Office à l’aide un VSTO Add-in.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
@@ -42,7 +43,7 @@ ms.lasthandoff: 05/25/2018
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]  
   
-5.  Dans l’ **Explorateur de solutions**, sélectionnez le fichier XML de ruban. Par défaut, le fichier XML du ruban se nomme *Ribbon1.xml*.  
+5.  Dans l’ **Explorateur de solutions**, sélectionnez le fichier XML de ruban. Par défaut, le fichier XML du ruban est nommé *Ribbon1.xml*.  
   
 6.  Dans la barre de menus, sélectionnez **Afficher** > **Code**.  
   
@@ -50,7 +51,7 @@ ms.lasthandoff: 05/25/2018
   
 7.  Dans l’éditeur de code, ajoutez le code XML qui décrit le menu contextuel et le contrôle à ajouter au menu contextuel.  
   
-     L’exemple suivant ajoute un bouton, un menu et un contrôle de galerie au menu contextuel d’un document Word. L’ID du contrôle de ce menu contextuel est ContextMenuText. Pour obtenir la liste complète de contrôle Office 2010 ID, consultez [les fichiers d’aide Office 2010 : identificateurs de contrôle d’interface Office fluent utilisateur](http://go.microsoft.com/fwlink/?LinkID=181052).  
+     L’exemple suivant ajoute un bouton, un menu et un contrôle de galerie au menu contextuel d’un document Word. L’ID du contrôle de ce menu contextuel est ContextMenuText. Pour obtenir la liste complète de contrôle Office 2010 ID, consultez [les fichiers d’aide Office 2010 : identificateurs de contrôle interface Office fluent utilisateur](http://go.microsoft.com/fwlink/?LinkID=181052).  
   
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>  
@@ -74,7 +75,7 @@ ms.lasthandoff: 05/25/2018
   
 8.  Dans l’ **Explorateur de solutions**, choisissez **MyRibbon.cs** ou **MyRibbon.vb**.  
   
-9. Ajoutez la méthode de rappel à la classe `Ribbon1` pour chaque contrôle à gérer.  
+9. Ajoutez une méthode de rappel à la `Ribbon1` classe pour chaque contrôle que vous souhaitez gérer.  
   
      La méthode de rappel suivante gère le bouton **Mon bouton** . Ce code ajoute une chaîne au document actif à l’emplacement actuel du curseur.  
   
@@ -83,7 +84,7 @@ ms.lasthandoff: 05/25/2018
   
 ## <a name="see-also"></a>Voir aussi  
  [Personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md)   
- [Procédure pas à pas : Création de menus contextuels pour les signets](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)   
+ [Procédure pas à pas : Créer des menus contextuels pour les signets](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)   
  [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)   
  [Personnaliser des menus contextuels dans Office 2010](http://go.microsoft.com/fwlink/?LinkId=182186)  
   

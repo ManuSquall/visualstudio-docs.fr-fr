@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25d67c99a9c2b30461170b7e8b5090e0c08241ee
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1ac3f9116366920f833fe8d907181473d6fda106
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917867"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551283"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221 : Les finaliseurs doivent être protégés
+
 |||
 |-|-|
 |TypeName|FinalizersShouldBeProtected|
@@ -32,10 +33,10 @@ ms.locfileid: "31917867"
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Un type public implémente un finaliseur qui ne spécifie pas l’accès family (protégé).
+ Un type public implémente un finaliseur qui ne spécifie pas d’accès (protégé) family.
 
 ## <a name="rule-description"></a>Description de la règle
- Les finaliseurs doivent utiliser le modificateur d'accès family. Cette règle est appliquée par les compilateurs c#, Visual Basic et Visual C++.
+ Les finaliseurs doivent utiliser le modificateur d’accès family. Cette règle est appliquée par les compilateurs c#, Visual Basic et Visual C++.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, modifiez le finaliseur pour un accès family.
@@ -44,7 +45,7 @@ ms.locfileid: "31917867"
  Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="example"></a>Exemple
- Cette règle ne peut pas être violée dans n’importe quel langage .NET de niveau supérieur ; Il peut être violé si vous écrivez Microsoft Intermediate Language.
+ Cette règle ne peut pas être violée dans n’importe quel langage .NET de haut niveau ; Il peut être violé si vous écrivez Microsoft Intermediate Language.
 
 ```
 // =============== CLASS MEMBERS DECLARATION ===================
@@ -80,4 +81,5 @@ ms.locfileid: "31917867"
 ```
 
 ## <a name="see-also"></a>Voir aussi
- [Dispose, modèle](/dotnet/standard/design-guidelines/dispose-pattern)
+
+- [Dispose, modèle](/dotnet/standard/design-guidelines/dispose-pattern)

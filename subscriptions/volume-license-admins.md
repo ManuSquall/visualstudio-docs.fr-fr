@@ -8,13 +8,13 @@ ms.topic: Get-Started-Article
 description: Découvrez comment les administrateurs des abonnements peuvent accéder au portail d’administration et gérer les abonnements acquis via une licence en volume
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
-mearchscope: VS Subscription
-ms.openlocfilehash: 33bcd59bde2cf56349e8100baea6f596362bc1f1
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+searchscope: VS Subscription
+ms.openlocfilehash: de5992adc2ada56ad213ef29e879dadf7b7daad8
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326926"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379538"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>Accès au portail et gestion des administrateurs - pour les abonnements acquis via une licence en volume
 

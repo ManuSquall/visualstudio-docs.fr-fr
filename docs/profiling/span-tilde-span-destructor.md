@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0e7c2d2985946ddd27c5786c22a724c9b2c4eaa
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: ebde2e9659716a73943e2861f8856f6a9817b34b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35669017"
 ---
 # <a name="spanspan-destructor"></a>span::~span, destructeur
 Détruit l’objet `span` et libère ses ressources.  
@@ -30,7 +31,7 @@ Détruit l’objet `span` et libère ses ressources.
 ```  
   
 ## <a name="requirements"></a>Configuration requise  
- **En-tête** : cvmarkersobj.h  
+ **En-tête :** *cvmarkersobj.h*  
   
  **Espace de noms** : Concurrency::diagnostic
  

@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c3f5e60f8cde791f571c5a6663356ad7d2ca80f9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 187822c0217e6aca4f8828c82274520a35e8afe2
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750693"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380653"
 ---
-# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Comment : créer un éditeur de corps HTTP personnalisé pour l'éditeur de test de performances de site Web
+# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Guide pratique pour créer un éditeur de corps HTTP personnalisé pour l’éditeur de test de performances web
 
-Vous pouvez créer un éditeur de contenu personnalisé qui vous permet de modifier le contenu du corps chaîne ou le contenu du corps binaire d’une demande de service web, par exemple, SOAP, REST, asmx, wcf, RIA et d’autres types de demande de service web.
+Vous pouvez créer un éditeur de contenu personnalisé permettant de modifier le contenu du corps de type chaîne ou du corps binaire d’une demande de service web, de type SOAP, REST, asmx, wcf, RIA ou autre.
 
  Vous pouvez implémenter ces types d'éditeurs :
 
@@ -44,34 +44,34 @@ Ces interfaces sont contenues dans l'espace de noms <xref:Microsoft.VisualStudio
 
 3.  Dans la liste des modèles, sélectionnez **Bibliothèque de contrôles Windows Forms**.
 
-4.  Dans la zone de texte Nom, tapez un nom, par exemple `MessageEditors`, puis cliquez sur **OK**.
+4.  Dans la zone de texte **Nom**, tapez un nom, par exemple `MessageEditors`, puis choisissez **OK**.
 
     > [!NOTE]
     > Cet exemple utilise MessageEditors.
 
-     Le projet est ajouté à la nouvelle solution et un <xref:System.Windows.Forms.UserControl> nommé UserControl1.cs est présenté dans le concepteur.
+     Le projet est ajouté à la nouvelle solution et un <xref:System.Windows.Forms.UserControl> nommé *UserControl1.cs* est présenté dans le concepteur.
 
 5.  Dans la **Boîte à outils**, sous la catégorie **Contrôles communs**, faites glisser un <xref:System.Windows.Forms.RichTextBox> sur la surface de UserControl1.
 
 6.  Sélectionnez le glyphe de l’étiquette d’action (![Glyphe d’étiquette active](../test/media/vs_winformsmttagglyph.gif)) en haut à droite du contrôle <xref:System.Windows.Forms.RichTextBox>, puis sélectionnez **Ancrer dans le conteneur parent**.
 
-7.  Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet de bibliothèque Windows Forms et sélectionnez **Propriétés**.
+7.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le projet de bibliothèque Windows Forms et sélectionnez **Propriétés**.
 
-8.  Dans la page Propriétés, sélectionnez l’onglet **Application**.
+8.  Dans la page **Propriétés**, sélectionnez l’onglet **Application**.
 
 9. Dans la liste déroulante **Framework cible**, sélectionnez **.NET Framework 4**.
 
-10. La boîte de dialogue Modification du Framework cible s'affiche.
+10. La boîte de dialogue **Modification du Framework cible** s’affiche.
 
 11. Cliquez sur **Oui**.
 
-12. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le nœud **Références**, puis sélectionnez **Ajouter une référence**.
+12. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le nœud **Références**, puis sélectionnez **Ajouter une référence**.
 
 13. La boîte de dialogue **Ajouter une référence** s’affiche.
 
 14. Choisissez l’onglet **.NET**, faites défiler la liste vers le bas, sélectionnez **Microsoft.VisualStudio.QualityTools.WebTestFramework**, puis choisissez **OK**.
 
-15. Si le Concepteur de vues n’est pas ouvert, dans l’Explorateur de solutions, cliquez avec le bouton droit sur **UserControl1.cs**, puis sélectionnez **Concepteur de vues**.
+15. Si le **Concepteur de vues** n’est pas ouvert, dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur **UserControl1.cs**, puis sélectionnez **Concepteur de vues**.
 
 16. Sur l’aire de conception, cliquez avec le bouton droit et sélectionnez **Afficher le code**.
 
@@ -121,7 +121,7 @@ Ces interfaces sont contenues dans l'espace de noms <xref:Microsoft.VisualStudio
    }
    ```
 
-## <a name="add-a-class-for-to-the-windows-control-library-project"></a>Ajoutez une classe pour le projet de bibliothèque de contrôles Windows Forms.
+## <a name="add-a-class-to-the-windows-control-library-project"></a>Ajouter une classe au projet de bibliothèque de contrôles Windows Forms
 
 Ajoutez une classe au projet. Elle sera utilisée pour implémenter les interfaces <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> et <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>.
 
@@ -139,7 +139,7 @@ private MessageEditorControl messageEditorControl
 
 ### <a name="to-create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface-code"></a>Pour créer une classe et implémenter le code d'interface IStringHttpBodyEditorPlugin
 
-1.  Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet de bibliothèque de contrôles Windows Forms et sélectionnez **Ajouter un nouvel élément**.
+1.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le projet de bibliothèque de contrôles Windows Forms et sélectionnez **Ajouter un nouvel élément**.
 
 2.  La boîte de dialogue **Ajouter un nouvel élément** s’affiche.
 
@@ -282,14 +282,14 @@ Quand la modification du corps chaîne est effectuée et que l’utilisateur cli
 
 ### <a name="to-build-and-deploy-the-resulting-dll-for-the-istringhttpbodyeditorplugin-and-ibinaryhttpbodyeditorplugin"></a>Pour générer et déployer la DLL produite pour IStringHttpBodyEditorPlugin et IBinaryHttpBodyEditorPlugin
 
-1.  Dans le menu Générer, choisissez **Générer \<nom du projet de bibliothèque de contrôles Windows Forms>**.
+1.  Dans le menu **Générer**, choisissez **Générer \<nom du projet de bibliothèque de contrôles Windows Forms>**.
 
 2.  Fermez toutes les instances de Visual Studio.
 
     > [!NOTE]
     > Fermer Visual Studio permet de garantir que le fichier *.dll* n’est pas verrouillé avant d’essayer de le copier.
 
-3.  Copiez le fichier *.dll* résultant depuis le dossier *bin\debug* de vos projets (par exemple *MessageEditors.dll*) vers %ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins.
+3.  Copiez le fichier *.dll* résultant depuis le dossier *bin\debug* de vos projets (par exemple *MessageEditors.dll*) vers *%ProgramFiles%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins*.
 
 4.  Ouvrez Visual Studio.
 
@@ -301,15 +301,15 @@ Quand la modification du corps chaîne est effectuée et que l’utilisateur cli
 
 1.  Créer un projet de test.
 
-2.  Créez un test de performances web et entrez une URL dans le navigateur vers un service web, par exemple http://dev.virtualearth.net/webservices/v1/metadata/searchservice/dev.virtualearth.net.webservices.v1.search.wsdl.
+2.  Créez un test de performances web et entrez l’URL d’un service web dans le navigateur.
 
-3.  Quand vous terminez l’enregistrement, dans l’éditeur de tests de performances web, développez la demande pour le service web et sélectionnez **Corps chaîne** ou **Corps binaire**.
+3.  Après l’enregistrement, développez la demande du service web dans l’éditeur de test de performances web et sélectionnez **Corps de type chaîne** ou **Corps binaire**.
 
-4.  Dans la fenêtre Propriétés, sélectionnez Corps chaîne ou Corps binaire, puis le bouton de sélection (...).
+4.  Dans la fenêtre Propriétés, sélectionnez Corps chaîne ou Corps binaire, puis le bouton de sélection **(…)**.
 
      La boîte de dialogue **Modifier les données du corps HTTP** s’affiche.
 
-5.  Vous pouvez à présent modifier les données avant de cliquer sur OK. La méthode GetNewValue applicable est appelée pour mettre à jour le contenu dans le <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>.
+5.  Vous pouvez à présent modifier les données avant de cliquer sur **OK**. La méthode GetNewValue applicable est appelée pour mettre à jour le contenu dans le <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>.
 
 ## <a name="compile-the-code"></a>Compiler le code
 
@@ -325,9 +325,9 @@ Pour plus d’informations, consultez [Page Application, Concepteur de projets (
 - <xref:System.Windows.Forms.UserControl>
 - <xref:System.Windows.Forms.RichTextBox>
 - [Créer du code et des plug-ins personnalisés pour les tests de charge](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Guide pratique pour créer un plug-in de niveau demande](../test/how-to-create-a-request-level-plug-in.md)
-- [Codage d’une règle d’extraction personnalisée pour un test de performances web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
-- [Codage d’une règle de validation personnalisée pour un test de performances web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
+- [Guide pratique pour créer un plug-in de niveau requête](../test/how-to-create-a-request-level-plug-in.md)
+- [Coder une règle d’extraction personnalisée pour un test de performances web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
+- [Coder une règle de validation personnalisée pour un test de performances web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
 - [Guide pratique pour créer un plug-in de test de charge](../test/how-to-create-a-load-test-plug-in.md)
 - [Générer et exécuter un test de performances web codé](../test/generate-and-run-a-coded-web-performance-test.md)
-- [Guide pratique pour créer un complément Visual Studio pour le visualiseur de résultats de tests de performances web](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)
+- [Guide pratique pour créer un complément Visual Studio pour l’afficheur de résultats de test de performances web](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)

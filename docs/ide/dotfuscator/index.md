@@ -18,12 +18,12 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c34eec9f8eab1f870344ec6995bfcbd8fea8739c
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: d3f061e095575e8692fc733e3f77f7c9b23e37c1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704394"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775433"
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE)
 
@@ -43,25 +43,23 @@ Dotfuscator peut [masquer][obfuscation] vos assemblys .NET afin d’empêcher l�
 
 Il est également important de **protéger l’intégrité de votre application**.
 Outre l’ingénierie inverse, des personnes mal intentionnées peuvent chercher à pirater votre application, modifier son comportement lors de l’exécution, ou manipuler des données.
-Dotfuscator s’intègre à votre application pour vous permettre de [détecter, signaler et répondre à des utilisations non autorisées][checks], notamment la falsification, le débogage par des tiers et les appareils rootés.
+Dotfuscator s’intègre à votre application pour vous permettre de [détecter et répondre à des utilisations non autorisées][checks], notamment la falsification, le débogage par des tiers et les appareils rootés.
 
 Pour plus d’informations sur l’intégration de Dotfuscator dans un cycle de vie de développement de logiciels sécurisé, consultez la [page SDL App Protection][sdl-protection] de PreEmptive Solutions.
 
 ## <a name="about-dotfuscator-ce"></a>À propos de Dotfuscator CE
 
-Votre copie de Microsoft Visual Studio 2017 inclut une copie de  ***Protection PreEmptive - Dotfuscator* Community Edition**, également appelée Dotfuscator CE, dont vous pouvez profiter gratuitement pour un usage personnel.
+Votre copie de Microsoft Visual Studio 2017 inclut une copie de  **_Protection PreEmptive - Dotfuscator_ Community Edition**, également appelée Dotfuscator CE, dont vous pouvez profiter gratuitement pour un usage personnel.
 Pour obtenir des instructions sur l’installation de la version de Dotfuscator CE fournie avec Visual Studio 2017, consultez la [page d’installation][install].
 
 Dotfuscator CE propose toute une gamme de services [de protection et de renforcement][software-protection] destinés aux développeurs, architectes et testeurs.
 Voici des exemples de [masquage .NET][obfuscation] et d’autres fonctionnalités de [protection d’application][app-protection] incluses dans Dotfuscator CE :
 
 * *[Changement du nom][renaming]* des identificateurs afin de compliquer l’ingénierie inverse des assemblys compilés.
-* *[Anti-effraction][tamper]* pour détecter l’exécution des applications falsifiées, transmettre des alertes d’incident et fermer les sessions falsifiées.
-* *[Anti-débogage][debug]* pour détecter la connexion d’un débogueur à une application en cours d’exécution, transmettre des alertes d’incident et fermer les sessions déboguées.
-* *[Appareil anti-rooté] [ root]*  pour détecter si l’application s’exécute sur un appareil Android rooté et termine les sessions sur ces appareils.
-* *[Comportements d’expiration des applications][shelflife]* pour coder la date de « fin de vie », transmettre des alertes lorsque des applications sont exécutées après leur date d’expiration et fermer les sessions d’application qui ont expiré.
-* *[Suivi des exceptions][exceptions]* pour surveiller les exceptions non gérées qui se produisent dans l’application.
-* *[Suivi de l’utilisation des sessions][sessions] et des [fonctionnalités ][features]* pour identifier les applications qui ont été exécutées, dans quelles versions et pendant combien de temps.
+* *[Anti-effraction][tamper]* pour détecter l’exécution des applications falsifiées et de fermer les sessions falsifiées ou d’y répondre.
+* *[Anti-débogage][debug]* pour détecter la connexion d’un débogueur à une application en cours d’exécution et de fermer les sessions déboguées ou d’y répondre.
+* *[Appareil anti-rooté] [ root]*  pour détecter si l’application s’exécute sur un appareil Android rooté et de fermer les sessions sur ces appareils ou d’y répondre.
+* *[Comportements d’expiration des applications][shelflife]* pour code la date de « fin de vie » et fermer les sessions d’application qui ont expiré.
 
 Pour plus d’informations sur ces fonctionnalités, y compris leur intégration dans votre stratégie de protection des applications, consultez la [page sur les fonctionnalités][capabilities].
 
@@ -107,9 +105,5 @@ Consultez le [guide complet de l’utilisateur de Dotfuscator CE sur le site pre
 [debug]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
 [root]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_root.html
 [shelflife]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
-
-[exceptions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
-[sessions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
-[features]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
 
 [full]:  https://www.preemptive.com/dotfuscator/ce/docs/help/index.html

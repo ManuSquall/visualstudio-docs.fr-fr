@@ -1,5 +1,5 @@
 ---
-title: Points d’arrêt (Kit de développement logiciel Visual Studio) | Documents Microsoft
+title: Points d’arrêt (Kit de développement logiciel Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,27 +13,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42f2efe2785f508bedb104e495309ed40fc6ce39
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1aa5fe2ffba7660b3a5774a865572bf10446f09a
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100541"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152641"
 ---
-# <a name="breakpoints-visual-studio-sdk"></a>Points d’arrêt (Kit de développement logiciel Visual Studio)
+# <a name="breakpoints-visual-studio-sdk"></a>Points d’arrêt (SDK Visual Studio)
 Il existe trois types de points d’arrêt : en attente, la limite et d’erreur.  
   
  **Un en attente de point d’arrêt :**  
   
--   Est une abstraction qui contient toutes les informations nécessaires pour lier un point d’arrêt à un ou plusieurs contextes de code dans un ou plusieurs programmes. Chaque fois qu’un programme débogué code cause à charger, le moteur de débogage qui consulte des tous les points d’arrêt en attente pour voir si elles peuvent être liés.  
+-   Est une abstraction qui contient toutes les informations nécessaires pour lier un point d’arrêt à un ou plusieurs contextes de code dans un ou plusieurs programmes. Chaque fois qu’un programme débogué code cause à charger, le moteur de débogage qui consulte des tous les points d’arrêt en attente pour voir si elles peuvent être liées.  
   
-     Un point d’arrêt en attente lui-même jamais lie au code, mais plutôt collecte et est dit pour contenir tous les points d’arrêt les liés qu’elle génère.  
+     Un point d’arrêt en attente lui-même jamais lie au code, mais plutôt collecte et est dit qu’il contient tous les points d’arrêt les liés qu’il génère.  
   
 -   Est représenté par un [IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interface.  
   
  **Un point d’arrêt lié :**  
   
--   Est une abstraction pour un point d’arrêt associée ou liée à un contexte de code unique. Chaque point d’arrêt lié est générée en réponse à un point d’arrêt en attente. Un point d’arrêt en attente peut, cependant, générer plus d’un point d’arrêt lié.  
+-   Est une abstraction pour un point d’arrêt associée ou liée à un contexte de code unique. Chaque point d’arrêt lié est généré en réponse à un point d’arrêt en attente. Un point d’arrêt en attente peut, toutefois, générer plus d’un point d’arrêt lié.  
   
      Lorsque le code est déchargé, un point d’arrêt lié peut être indépendant et ignorée.  
   
@@ -41,7 +41,7 @@ Il existe trois types de points d’arrêt : en attente, la limite et d’erreu
   
  **Un point d’arrêt de l’erreur :**  
   
--   Est une abstraction pour la description d’une erreur lors de la tentative lier un point d’arrêt en attente à un contexte de code. Un point d’arrêt de l’erreur décrit l’erreur emplacement ou dans l’expression de point d’arrêt elle-même. Pour plus d’informations, consultez [de liaison des points d’arrêt](../../extensibility/debugger/binding-breakpoints.md).  
+-   Est une abstraction pour la description d’une erreur dans la tentative de liaison d’un point d’arrêt en attente à un contexte de code. Un point d’arrêt de l’erreur décrit une erreur dans l’emplacement ou dans l’expression de point d’arrêt lui-même. Pour plus d’informations, consultez [liaison des points d’arrêt](../../extensibility/debugger/binding-breakpoints.md).  
   
      L’erreur de point d’arrêt peut être une erreur ou un avertissement.  
   

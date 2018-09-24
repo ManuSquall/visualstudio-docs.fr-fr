@@ -1,5 +1,5 @@
 ---
-title: Conception de Table de commande XML (. Fichiers VSCT) | Documents Microsoft
+title: Conception de Table de commande XML (. Fichiers VSCT) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,116 +13,116 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 865baa3f7b4b0fe4cbbaf2cdf34e9e8041d5c121
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b7a28e8ea14d27eb96100a4f1f67a875746dc5f6
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133357"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499261"
 ---
-# <a name="designing-xml-command-table-vsct-files"></a>Conception de Table de commande XML (. Fichiers VSCT)
-Un fichier de table (.vsct) de commande XML décrit la disposition et l’apparence des éléments de commande pour un VSPackage. Les éléments de commande incluent des boutons, des zones de liste déroulante, des menus, des barres d’outils et des groupes d’éléments de la commande. Cette rubrique décrit les fichiers de la table commandes XML, comment ils affectent les menus et éléments de commande et comment les créer.
+# <a name="design-xml-command-table-vsct-files"></a>Concevoir des fichiers XML command table (.vsct)
+Une table de commande XML (*.vsct*) fichier décrit la disposition et l’apparence des éléments de commande pour un VSPackage. Éléments de commande incluent des boutons, des zones de liste déroulante, des menus, des barres d’outils et des groupes d’éléments de la commande. Cet article décrit les fichiers de table de commande XML, comment elles affectent les menus et éléments de commande et comment les créer.
 
-## <a name="commands-menus-groups-and-the-vsct-file"></a>Commandes, Menus, groupes et le fichier .vsct
- les fichiers .vsct sont organisés autour des commandes, des menus et des groupes de commandes. Les balises XML dans le fichier .vsct représentent chacun de ces éléments, ainsi que d’autres éléments associés tels que les boutons de commande, le placement de commande et les bitmaps.
+## <a name="commands-menus-groups-and-the-vsct-file"></a>Commandes, menus, groupes et le fichier .vsct
+ Le *.vsct* fichiers sont organisés autour des commandes, des menus et des groupes de commandes. Les balises XML dans le *.vsct* représentent chacun de ces éléments, ainsi que d’autres éléments associés tels que des boutons de commande, le placement de commande et les bitmaps de fichiers.
 
- Lorsque vous créez un nouveau VSPackage en exécutant la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] modèle de Package, le modèle génère un fichier .vsct avec les éléments nécessaires pour une commande de menu, une fenêtre outil ou un éditeur personnalisé, selon vos sélections. Ce fichier .vsct peut ensuite être modifié pour satisfaire les exigences d’un VSPackage spécifique. Pour obtenir des exemples de modification d’un fichier .vsct, consultez les exemples de [étendant les Menus et commandes](../../extensibility/extending-menus-and-commands.md).
+ Lorsque vous créez un nouveau VSPackage s’affiche en exécutant la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] modèle de package, le modèle génère un *.vsct* fichier avec les éléments nécessaires pour une commande de menu, une fenêtre outil ou un éditeur personnalisé, en fonction de vos sélections. Cela *.vsct* fichier peut ensuite être modifié pour répondre aux exigences d’un VSPackage spécifique. Pour obtenir des exemples montrant comment modifier un *.vsct* de fichiers, consultez [étendre des menus et commandes](../../extensibility/extending-menus-and-commands.md).
 
- Pour créer un fichier .vsct vierge, consultez [Comment : créer un. Fichier VSCT](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). Une fois créé, ajoutez les éléments XML, les attributs et les valeurs dans le fichier pour décrire la disposition d’élément de commande. Pour un schéma XML détaillé, consultez le [référence du schéma XML VSCT](../../extensibility/vsct-xml-schema-reference.md).
+ Pour créer un nouveau, vide *.vsct* de fichiers, consultez [Comment : créer un *.vsct* fichier](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). Une fois créé, ajoutez les éléments XML, les attributs et les valeurs dans le fichier pour décrire la disposition d’élément de commande. Pour un schéma XML détaillé, consultez le [référence du schéma XML VSCT](../../extensibility/vsct-xml-schema-reference.md).
 
 ## <a name="differences-between-ctc-and-vsct-files"></a>Différences entre les fichiers .ctc et .vsct
- Alors que la signification des balises XML dans un fichier .vsct est les mêmes que celles figurant dans le présent déconseillée le format de fichier .ctc, leur implémentation est légèrement différente.
+ Tandis que la signification derrière le code XML des balises dans un *.vsct* fichier sont les mêmes que ces balises dans désormais déconseillé *.ctc* format de fichier, leur implémentation est un peu différente :
 
--   La nouvelle  **\<extern >** balise est où vous les autres fichiers .h à compiler, telles que celles pour référencer le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] barre d’outils.
+-   La nouvelle  **\<extern >** balise est où vous font référence à d’autres *.h* fichiers à compiler, tels que ces fichiers pour le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] barre d’outils.
 
--   Lors de la prise en charge des fichiers .vsct le **/ inclure** instruction, comme les fichiers .ctc, il comporte également un nouveau \< **Importer >** élément. La différence est, **/ inclure** permet de bénéficier de **tous les** des informations, mais \< **Importer >** affiche uniquement les noms.
+-   Tandis que *.vsct* fichiers de prise en charge la **/ include** instruction, en tant que *.ctc* font des fichiers, il comporte également un nouveau  **\<Importer >** élément. La différence est, **/ include** permet d’utiliser *tous les* des informations, tandis que  **\<Importer >** permet d’utiliser uniquement les noms.
 
--   Bien que .ctc fichiers nécessitent un fichier d’en-tête dans lequel vous définissez les directives de préprocesseur, un n’est pas obligatoire pour les fichiers .vsct. Au lieu de cela, placez vos directives dans la table de symboles, située dans le  **\<symbole >** éléments, situés en bas du fichier .vsct.
+-   Bien que *.ctc* fichiers nécessitent un fichier d’en-tête dans lequel vous définissez vos directives de préprocesseur, un n’est pas obligatoire pour *.vsct* fichiers. Au lieu de cela, placez vos directives dans la table de symboles, située dans le  **\<symbole >** éléments, situés en bas de la *.vsct* fichier.
 
--   fonctionnalité des fichiers .vsct un  **\<Annotation >** balise, qui vous permet d’incorporer toutes les informations que vous le souhaitez, telles que des notes ou même d’images.
+-   *.VSCT* fonctionnalité des fichiers d’un  **\<Annotation >** balise, qui vous permet d’incorporer des informations que vous le souhaitez, telles que des notes ou même d’images.
 
 -   Les valeurs sont stockées en tant qu’attributs sur l’élément.
 
--   Les indicateurs de commande peuvent être stockées individuellement ou empilés.  Toutefois, IntelliSense, ne fonctionne pas sur les indicateurs de commande empilées. Pour plus d’informations sur les indicateurs de commande, consultez le [élément indicateur de commande](../../extensibility/command-flag-element.md).
+-   Indicateurs de commande peuvent être stockées individuellement ou empilés.  Toutefois, IntelliSense, ne fonctionne pas sur les indicateurs de commande empilées. Pour plus d’informations sur les indicateurs de commande, consultez le [CommandFlag élément](../../extensibility/command-flag-element.md).
 
--   Vous pouvez spécifier plusieurs types, tels que les listes déroulantes de fractionnement, combinés, etc.
+-   Vous pouvez spécifier plusieurs types, tels que les listes déroulantes de fractionnement, combos, etc.
 
--   Ne pas valider les GUID.
+-   Ne valident pas les GUID.
 
 -   Chaque élément d’interface utilisateur a une chaîne qui représente le texte qui s’affiche avec lui.
 
--   Parent est facultatif. Si omis, la valeur « Groupe inconnu » est utilisée.
+-   Le parent est facultatif. Si omis, la valeur *groupe inconnu* est utilisé.
 
--   L’argument de l’icône est facultatif.
+-   Le *icône* argument est facultatif.
 
--   La section bitmap--identique à un .ctc de fichiers, à ceci près que vous pouvez maintenant spécifier un nom de fichier via href qui est extraites par le compilateur vsct.exe au moment de la compilation.
+-   Bitmap de section : cette section est le même que dans un *.ctc* de fichiers, à ceci près que vous pouvez désormais spécifier un nom de fichier par le biais de Href qui est extraites à par le *vsct.exe* compilateur au moment de la compilation.
 
--   ResID--l’ID de ressource bitmap ancien peut être utilisé et fonctionne toujours de la même que dans les fichiers .ctc.
+-   ResID : L’ancienne image bitmap ID peut être utilisé et toujours sur le fonctionnement identique à celui de *.ctc* fichiers.
 
--   HRef : une nouvelle méthode qui vous permet de spécifier un nom de fichier pour la ressource bitmap. Il suppose que toutes les sont utilisées, donc vous pouvez omettre la section utilisée. Le compilateur recherche d’abord les ressources locales pour le fichier, puis sur tous les partages réseau et les ressources définies par le commutateur /I.
+-   HRef : Une nouvelle méthode qui vous permet de spécifier un nom de fichier pour la ressource bitmap. Il suppose que toutes sont utilisées, donc vous pouvez omettre la section utilisée. Le compilateur recherche tout d’abord pour les ressources locales pour le fichier, puis sur tous les partages réseau, et toutes les ressources définies par le **/I** basculer.
 
--   KeyBinding--Vous n’avez plus à spécifier un émulateur. Si vous ne spécifiez pas un, le compilateur suppose que l’éditeur et l’émulateur sont identiques.
+-   Combinaison de touches : Vous n’avez plus à spécifier un émulateur. Si vous ne spécifiez pas un, le compilateur suppose que l’éditeur et l’émulateur sont les mêmes.
 
--   Keychord--a été supprimé. Le nouveau format est Mod1, Key1, Key2, le Mod2.  Vous pouvez spécifier un caractère, hexadécimal ou constante VK.
+-   Keychord : Keychord a été supprimé. Le nouveau format est *Mod1, Key1, Key2, le Mod2*.  Vous pouvez spécifier un caractère, hexadécimal ou constante VK.
+       
+Le nouveau compilateur *vsct.exe*, compile les deux *.ctc* et *.vsct* fichiers. L’ancien *ctc.exe* compilateur, toutefois, ne reconnaissent pas ou ne sera pas compiler *.vsct* fichiers.
 
- Le nouveau compilateur, vsct.exe, compile les fichiers .ctc et .vsct. L’ancien compilateur ctc.exe, toutefois, sera reconnaît ni compiler des fichiers .vsct.
-
- Vous pouvez utiliser le compilateur vsct.exe pour convertir un fichier .cto existant dans un fichier .vsct. Pour plus d’informations, consultez [Comment : créer un. Fichier VSCT d’un existant. Fichier CTO](../../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).
+Vous pouvez utiliser la *vsct.exe* compilateur de convertir un existant *.cto* de fichiers dans un *.vsct* fichier. Pour plus d’informations, consultez [Comment : créer un fichier .vsct à partir d’un fichier .cto existant](../../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).
 
 ## <a name="the-vsct-file-elements"></a>Les éléments du fichier .vsct
  La table de commande présente la hiérarchie et les éléments suivants :
 
- [Élément de CommandTable](../../extensibility/commandtable-element.md) : représente l’ensemble de commandes, des groupes de menus et des menus associés le VSPackage.
+ [Élément CommandTable](../../extensibility/commandtable-element.md): représente toutes les commandes, les groupes de menus et les menus associés le VSPackage.
 
- [Élément de extern](../../extensibility/extern-element.md) : fait référence à tous les fichiers .h externe que vous souhaitez fusionner avec le fichier .vsct.
+ [Élément extern](../../extensibility/extern-element.md): fait référence à tous les fichiers .h externe que vous voulez fusionner avec le *.vsct* fichier.
 
- [Élément include](../../extensibility/include-element.md) : fait référence à des fichiers supplémentaires en-tête (.h) à compiler en même temps que le fichier de your.vsct. Un fichier .vsct peut inclure les fichiers .h contenant des constantes qui définissent des commandes, les groupes de menus et les menus qui fournit de l’IDE ou un autre VSPackage.
+ [Élément include](../../extensibility/include-element.md): fait référence à tous les fichiers supplémentaires en-tête (.h) pour effectuer une compilation avec votre *.vsct* fichier. Un *.vsct* fichier peut inclure *.h* fichiers contenant des constantes qui définissent des commandes, les groupes de menus et les menus qui fournit de l’IDE ou un autre package Visual Studio.
 
- [Commandes d’élément](../../extensibility/commands-element.md) , représente toutes les commandes individuelles qui peuvent être exécutés. Chaque commande possède les éléments quatre enfants suivants :
+ [Élément Commands](../../extensibility/commands-element.md): représente toutes les commandes individuelles qui peuvent être exécutés. Chaque commande possède les quatre éléments enfants suivants :
 
- [Élément de menus](../../extensibility/menus-element.md) : représente tous les menus et barres d’outils dans le VSPackage. Les menus sont des conteneurs pour les groupes de commandes.
+ [Élément menus](../../extensibility/menus-element.md): représente tous les menus et barres d’outils dans le VSPackage. Les menus sont des conteneurs de groupes de commandes.
 
- [Élément groupes](../../extensibility/groups-element.md) : représente tous les groupes dans le VSPackage. Les groupes sont des ensembles de commandes individuelles.
+ [Élément Groups](../../extensibility/groups-element.md): représente tous les groupes dans le VSPackage. Les groupes sont des ensembles de commandes individuelles.
 
- [Boutons d’élément](../../extensibility/buttons-element.md) : représente tous les boutons de commande et éléments de menu dans le VSPackage. Boutons sont des contrôles visuels qui peuvent être associés à des commandes.
+ [Élément Buttons](../../extensibility/buttons-element.md): représente tous les boutons de commande et les éléments de menu dans le VSPackage. Boutons sont des contrôles visuels qui peuvent être associés à des commandes.
 
- [Élément de bitmaps](../../extensibility/bitmaps-element.md) : représente tous les bitmaps pour tous les boutons dans le VSPackage. Les images bitmap sont des images affichées à côté ou sur les boutons de commande, en fonction du contexte.
+ [Élément bitmaps](../../extensibility/bitmaps-element.md): représente tous les bitmaps pour tous les boutons dans le VSPackage. Les images bitmap sont des images apparaissant à côté ou sur les boutons de commande, en fonction du contexte.
 
- [Élément de CommandPlacements](../../extensibility/commandplacements-element.md) — indique les autres emplacements où chaque commande doit être placé dans les menus de votre VSPackage.
+ [Élément CommandPlacements](../../extensibility/commandplacements-element.md): indique les emplacements supplémentaires où chaque commande doit être placé dans les menus de votre VSPackage.
 
- [Élément de VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) — spécifie ou non une commande affiche à toutes les heures, ou uniquement dans certains contextes, tels que lorsqu’une boîte de dialogue particulière ou d’une fenêtre s’affiche. Menus et commandes qui ont une valeur de cet élément affiche uniquement lorsque le contexte spécifié est actif. Le comportement par défaut consiste à afficher de la commande à tout moment.
+ [Élément VisibilityConstraints](../../extensibility/visibilityconstraints-element.md): Spécifie si une commande affiche à tous les heures, ou uniquement dans certains contextes, par exemple quand une boîte de dialogue particulière ou une fenêtre s’affiche. Menus et commandes qui ont une valeur pour cet élément affiche uniquement lorsque le contexte spécifié est actif. Le comportement par défaut consiste à afficher la commande à tout moment.
 
- [Élément de combinaisons de touches](../../extensibility/keybindings-element.md) : Spécifie les combinaisons de touches pour les commandes. Autrement dit, une ou plusieurs combinaisons de touches sur lesquelles appuyer pour exécuter la commande, telles que **CTRL + S**.
+ [Élément KeyBindings](../../extensibility/keybindings-element.md): Spécifie les combinaisons de touches pour les commandes. Autrement dit, un ou plusieurs combinaisons de touches qui doivent être activées pour exécuter la commande, telles que **Ctrl**+**S**.
 
- [Élément de UsedCommands](../../extensibility/usedcommands-element.md) — Informs le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement que bien que la commande spécifiée est implémentée par un autre code, quand le VSPackage actuel est actif, il fournit l’implémentation de la commande.
+ [Élément UsedCommands](../../extensibility/usedcommands-element.md): informe le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environnement que bien que la commande spécifiée est implémentée par un autre code, lorsque le VSPackage actuel est actif, il fournit l’implémentation de la commande.
 
- `Symbols Element` : Contient les noms de symboles et d’un ID de GUID pour toutes les commandes dans le package.
+ [Élément Symbols](../../extensibility/symbols-element.md): contient les noms de symboles et les ID de GUID pour toutes vos commandes dans le package.
 
-## <a name="vsct-file-design-guidelines"></a>. Règles de conception de fichier VSCT
- Pour concevoir un fichier .vsct, suivez ces instructions.
+## <a name="vsct-file-design-guidelines"></a>instructions de conception du fichier .vsct
+ À la conception avec succès un *.vsct* de fichiers, suivez ces instructions.
 
--   Commandes peuvent être placés uniquement dans les groupes, les groupes peuvent être placés uniquement dans les menus et menus peuvent être placés uniquement dans les groupes. Uniquement les menus sont réellement affichées dans l’IDE, les groupes et les commandes ne sont pas.
+-   Commandes peuvent être placés uniquement dans les groupes, groupes peuvent être placés uniquement dans les menus et menus peuvent être placés uniquement dans les groupes. Uniquement les menus sont réellement affichées dans l’IDE, les groupes et les commandes ne sont pas.
 
--   Sous-menus ne peut pas être directement attribués à un menu, mais doivent être affectés à un groupe, qui est ensuite assigné à un menu.
+-   Sous-menus ne peut pas être directement attribués à un menu, mais doivent être attribués à un groupe, qui est assigné à son tour à un menu.
 
--   Groupes, des commandes et des sous-menus attribuable à un groupe de parenté ou un menu à l’aide du champ parent de leur définition directive.
+-   Commandes, des sous-menus et des groupes peuvent avoir à un groupe de parentage ou menu à l’aide du champ parent de leur définition directive.
 
--   Organisation d’une table de commandes uniquement via les champs parent dans les directives a une limitation importante. Les directives qui définissent des objets peuvent prendre l’argument qu’un seul parent.
+-   Organisation d’une table de commande uniquement via les champs dans les directives parent a une limitation importante. Les directives qui définissent des objets peuvent prendre l’argument qu’un seul parent.
 
 -   Réutilisation des commandes, des groupes ou des sous-menus requiert l’utilisation d’une directive de nouveau pour créer une nouvelle instance de l’objet avec son propre `GUID:ID` paire.
 
 -   Chaque `GUID:ID` paire doit être unique. Réutilisation d’une commande, par exemple, placée dans un menu, une barre d’outils, ou dans un menu contextuel, est gérée par le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface.
 
--   Commandes et des sous-menus peuvent également être affectés à plusieurs groupes et les groupes peuvent être affectés à plusieurs menus à l’aide de la [élément Commands](../../extensibility/commands-element.md).
+-   Commandes et sous-menus peuvent également être affectés à plusieurs groupes et les groupes peuvent être affectés à plusieurs menus en utilisant la [élément Commands](../../extensibility/commands-element.md).
 
-## <a name="vsct-file-notes"></a>. Notes sur le fichier VSCT
- Si vous apportez des modifications à un fichier .vsct une fois que vous le compiler et placez dans une DLL satellite de native, vous devez exécuter **devenv.exe /setup /nosetupvstemplates**. Cette opération force les ressources VSPackage spécifiés dans le Registre expérimental d’être relus et la base de données interne qui décrit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] à reconstruire.
+## <a name="vsct-file-notes"></a>notes de fichiers .vsct
+ Si vous apportez des modifications à un *.vsct* fichier une fois que vous les compilez et placez dans une DLL satellite native, vous devez exécuter **devenv.exe /setup /nosetupvstemplates**. Ainsi, les ressources de VSPackage spécifiées dans le Registre expérimental d’être relus et de la base de données interne qui décrit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] à reconstruire.
 
- Pendant le développement, il est possible pour plusieurs projets VSPackage doit être créé et enregistré dans la ruche du Registre expérimentale pouvant conduire à confusion l’encombrement dans l’IDE. Pour résoudre ce problème, vous pouvez réinitialiser la ruche expérimentale pour les paramètres par défaut pour supprimer tous des VSPackages et toutes les modifications qu’ils ont peuvent apportées à l’IDE. Pour réinitialiser la ruche expérimentale, utilisez l’outil de CreateExpInstance.exe qui est fourni avec le Kit de développement logiciel Visual Studio. Vous trouverez à l’adresse
+ Pendant le développement, il est possible pour plusieurs projets de VSPackage peuvent être créés et enregistrés dans la ruche expérimentale du Registre pouvant conduire à un encombrement à confusion dans l’IDE. Pour résoudre ce problème, vous pouvez réinitialiser la ruche expérimentale pour supprimer toutes les modifications qu’ils peuvent avoir apportées à l’IDE et des VSPackages enregistrés tous les paramètres par défaut. Pour réinitialiser la ruche expérimentale, utilisez l’outil CreateExpInstance.exe fourni avec le SDK Visual Studio. Vous trouverez à l’adresse :
 
- **% PROGRAMFILES (x 86) %\Visual Studio \<version > SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe**
+ *% PROGRAMFILES (x 86) %\Visual Studio\\\<version > SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe*
 
- Exécutez l’outil à l’aide de la ligne de commande **CreateExpInstance /Reset**. N’oubliez pas de cet outil supprime de la ruche expérimentale tous les packages enregistrés VS pas normalement installées avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+ Exécutez l’outil à l’aide de la commande **CreateExpInstance /Reset**. N’oubliez pas que cet outil supprime la ruche expérimentale tous des VSPackages enregistrés normalement pas installés avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="see-also"></a>Voir aussi
- [Extension des menus et des commandes](../../extensibility/extending-menus-and-commands.md)
+ [Étendre des menus et commandes](../../extensibility/extending-menus-and-commands.md)

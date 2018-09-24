@@ -17,14 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 94398b39e6e1c2f97e2b6851639649fc33dd217c
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 482c7213f695fce68026acbd0fd953cf2d4792ad
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668608"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analyser la réactivité de l’interface utilisateur HTML dans les applications Windows universelles
-Cette rubrique explique comment isoler les problèmes de performances dans vos applications à l’aide du profileur de réactivité de l’interface utilisateur, outil d’analyse des performances disponible pour les applications Windows universelles.  
+Cette rubrique explique comment isoler les problèmes de performances dans vos applications avec le profileur de réactivité de l’interface utilisateur, qui est un outil d’analyse des performances disponible pour les applications Windows universelles.  
   
  Le profileur de réactivité de l'interface utilisateur peut aider à isoler certaines problèmes tels que ceux de la réactivité de l'interface utilisateur ou les effets secondaires de plateforme qui se présentent généralement avec les symptômes suivants :  
   
@@ -34,12 +35,12 @@ Cette rubrique explique comment isoler les problèmes de performances dans vos a
   
 -   Les mises à jour visuelles qui sont moins fréquentes que prévu. Cela se produit si le thread d'interface utilisateur est trop occupé pour assurer une fréquence d'images lisse. Par exemple, si le thread d'interface utilisateur est occupé, des images peuvent être supprimées. Un travail thread qui n'est pas une interface utilisateur, par exemple les demandes réseau, le décodage d'image et les peintures, peut également limiter la fréquence des mises à jour visuelles. (Les peintures ne sont pas toutes exécutées sur le thread d'interface utilisateur.)  
   
-##  <a name="RunningProfiler"></a> Exécuter l’outil de réactivité de l’interface utilisateur HTML  
+## <a name="run-the-html-ui-responsiveness-tool"></a>Exécuter l’outil de réactivité de l’interface utilisateur HTML  
  Vous pouvez utiliser l’outil Réactivité de l'interface utilisateur HTML lorsque vous avez une application UWP ouverte dans Visual Studio.  
   
 1.  Si vous exécutez l’application à partir de Visual Studio, sur la barre d’outils **Standard**, dans la liste **Démarrer le débogage**, choisissez une cible de déploiement, par exemple **Ordinateur local** ou **Appareil**.  
   
-2.  Dans le menu **Déboguer** , choisissez **Profileur de performances**.  
+2.  Dans le menu **Déboguer**, choisissez **Profileur de performances**.  
   
      Pour modifier la cible d’analyse du profileur, sélectionnez**Modifier la cible**.  
   
@@ -67,7 +68,7 @@ Cette rubrique explique comment isoler les problèmes de performances dans vos a
   
 6.  Pour arrêter le profilage de l'application et afficher les données que le profileur a rassemblées, sélectionnez **Arrêter la collecte**.  
   
-##  <a name="IsolateAnIssue"></a> Isoler un problème  
+## <a name="isolate-an-issue"></a>Isoler un problème  
  La section suivante propose des solutions pour vous aider à isoler les problèmes de performances. Pour obtenir une explication pas à pas de l’identification et de la correction des problèmes de performances à l’aide d’un exemple d’application de test de performances, consultez [Procédure pas à pas : amélioration de la réactivité de l’interface utilisateur (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
   
 ###  <a name="Workflow"></a> Isoler un problème de réactivité de l’interface utilisateur  
@@ -75,11 +76,11 @@ Cette rubrique explique comment isoler les problèmes de performances dans vos a
   
 1.  Ouvrez votre application dans Visual Studio.  
   
-2.  Testez votre application afin d'identifier les problèmes de réactivité de l'interface utilisateur. (Appuyez sur Ctrl+F5 pour démarrer votre application sans débogage.)  
+2.  Testez votre application afin d'identifier les problèmes de réactivité de l'interface utilisateur. (Appuyez sur **Ctrl**+**F5** pour démarrer votre application sans débogage.)  
   
      Si vous identifiez un problème, continuez à tester pour essayer de limiter la période pendant laquelle le problème survient ou tenter d'identifier les éléments déclencheurs.  
   
-3.  Basculez à nouveau vers Visual Studio (appuyez sur Alt+Tab) et arrêtez votre application (Maj+F5).  
+3.  Passez à Visual Studio (appuyez sur **Alt**+**Tab**) et arrêtez votre application (**Maj**+**F5**).  
   
 4.  Le cas échéant, vous pouvez ajouter des marques utilisateur à votre code à l'aide de [Marquer du code pour l'analyser](#ProfileMark).  
   
@@ -118,7 +119,7 @@ Cette rubrique explique comment isoler les problèmes de performances dans vos a
   
     -   Pages ou ressources URL chargées par l'application, telles que des évaluations de script pour des événements d'analyse de code HTML. Le nom du fichier ou la ressource est fourni.  
   
-    -   Autres événements spécifiés dans [Profiler event reference](#ProfilerEvents).  
+    -   Autres événements spécifiés dans [Profiler event reference](#profiler-event-reference).  
   
     > [!TIP]
     >  La plupart des informations utiles dans le profileur sont affichées dans le graphique des détails de chronologie.  
@@ -168,7 +169,7 @@ if (performance.mark && performance.measure) {
   
  ![Événement de mesure utilisateur dans la vue des détails de la chronologie](../profiling/media/js_htmlvizprofiler_user_measure.png "JS_HTMLVizProfiler_User_Measure")  
   
-##  <a name="AnalyzeData"></a> Analyser des données  
+## <a name="analyze-data"></a>Analyser des données  
  Les sections suivantes fournissent des informations pour aider à interpréter les données qui s'affichent dans le profileur.  
   
 ###  <a name="Ruler"></a> Visualiser la chronologie de la session de diagnostic  
@@ -187,7 +188,7 @@ if (performance.mark && performance.measure) {
 -   Un événement de navigation, qui se produit lorsque vous accédez à une autre page. L'info-bulle de cet événement indique l'URL de la page de destination.  
   
 ###  <a name="CPUUtilization"></a> Visualiser l'utilisation de l'UC  
- Le graphique d'utilisation de l'UC vous permet d'identifier les périodes pour lesquelles il existe une activité excessive du processeur. Il fournit des informations sur l'utilisation moyenne du processeur par l'application sur une période donnée. Les informations sont colorées pour représenter les catégories spécifiques suivantes : **Chargement en cours**, **Scripts**, garbage collection (**GC**), **Styles**, **Rendu**et **Décodage d'image**. Pour plus d'informations sur ces catégories, consultez [Profiler event reference](#ProfilerEvents) plus loin dans cette rubrique.  
+ Le graphique d'utilisation de l'UC vous permet d'identifier les périodes pour lesquelles il existe une activité excessive du processeur. Il fournit des informations sur l'utilisation moyenne du processeur par l'application sur une période donnée. Les informations sont colorées pour représenter les catégories spécifiques suivantes : **Chargement en cours**, **Scripts**, garbage collection (**GC**), **Styles**, **Rendu**et **Décodage d'image**. Pour plus d'informations sur ces catégories, consultez [Profiler event reference](#profiler-event-reference) plus loin dans cette rubrique.  
   
  Le graphique d'utilisation de l'UC illustre le temps passé sur tous les threads d'application, en combinant les valeurs d'utilisation de l'UC pour un ou plusieurs processeurs en une seule valeur de pourcentage. La valeur d'utilisation de l'UC peut dépasser 100 % lorsque plusieurs processeurs sont en cours d'utilisation.  
   
@@ -247,7 +248,7 @@ if (performance.mark && performance.measure) {
   
  Si vous sélectionnez une partie de la chronologie correspondant à l'utilisation de l'UC et au graphique visuel de débit (i/s), le graphique des détails de chronologie présente des informations détaillées pour la période sélectionnée.  
   
- Les événements présents dans le graphique des détails de chronologie sont colorés pour représenter les mêmes catégories de travail que celles affichées dans le graphique d'utilisation de l'UC. Pour plus d'informations sur les catégories d'événements et les événements spécifiques, voir [Profiler event reference](#ProfilerEvents) dans cette rubrique.  
+ Les événements présents dans le graphique des détails de chronologie sont colorés pour représenter les mêmes catégories de travail que celles affichées dans le graphique d'utilisation de l'UC. Pour plus d'informations sur les catégories d'événements et les événements spécifiques, voir [Profiler event reference](#profiler-event-reference) dans cette rubrique.  
   
  Utilisez le graphique des détails de chronologie pour :  
   
@@ -300,10 +301,10 @@ if (performance.mark && performance.measure) {
   
  ![Événements de la chronologie regroupés par frame](../profiling/media/js_htmlvizprofiler_frame_grouping.png "JS_HTMLVizProfiler_Frame_Grouping")  
   
-##  <a name="SaveSession"></a> Enregistrer une session de diagnostic  
+## <a name="save-a-diagnostic-session"></a>Enregistrer une session de diagnostic  
  Dans Visual Studio, vous pouvez enregistrer une session en fermant l'onglet associé à celle-ci. Les sessions enregistrées peuvent être rouvertes ultérieurement.  
   
-##  <a name="ProfilerEvents"></a> Profiler event reference  
+## <a name="profiler-event-reference"></a>Profiler event reference  
  Les événements du profileur sont classés et colorés dans le profileur de réactivité de l'interface utilisateur. Voici les catégories d'événements :  
   
 -   **Chargement en cours.** Indique le temps passé à la récupération des ressources d'application et à l'analyse du code HTML et CSS lors du premier chargement de l'application. Les demandes réseau peuvent être incluses.  
@@ -348,7 +349,7 @@ if (performance.mark && performance.measure) {
 |Frame|N/A|Les modifications visuelles ont été apportées au DOM, c'est pourquoi toutes les parties concernées dans la page ont été redessinées. Il s'agit d'un événement généré par un outil qui est utilisé pour le regroupement.|  
 |Mesure de l'utilisateur|N/A|Un scénario spécifique à une application a été mesuré à l'aide de la méthode `performance.measure` . Il s'agit d'un événement généré par un outil qui est utilisé pour analyser le code.|  
   
-##  <a name="Tips"></a> Informations supplémentaires  
+## <a name="additional-information"></a>Informations supplémentaires  
   
 -   Visionnez [cette vidéo](http://channel9.msdn.com/Events/Build/2013/3-316) de la conférence Build 2013 sur le profileur de réactivité de l’interface utilisateur.  
   
@@ -357,4 +358,4 @@ if (performance.mark && performance.measure) {
 -   Pour plus d’informations sur le modèle et les performances d’exécution de code monothread, consultez [Exécution du code](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Outils de profilage](../profiling/profiling-tools.md)
+ [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)

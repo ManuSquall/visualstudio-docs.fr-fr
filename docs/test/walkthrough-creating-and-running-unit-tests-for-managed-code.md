@@ -15,22 +15,21 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 36b6eff9f37cdd50e59942ece5ba56dcfe60b8f6
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 13488619b38f5fd974d793d56f6a8d8cf86f15c1
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767684"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469111"
 ---
-# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procédure pas à pas : créer et exécuter des tests unitaires pour le code managé
+# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procédure pas à pas : créer et exécuter des tests unitaires pour le code managé
 
 Cet article décrit la création, l’exécution et la personnalisation d’une série de tests unitaires à l’aide du framework de tests unitaires Microsoft pour le code managé et de **l’explorateur de tests** de Visual Studio. Vous commencez avec un projet C# qui est en développement, vous créez des tests qui utilisent son code, vous exécutez les tests et vous examinez les résultats. Ensuite, vous pouvez modifier le code de votre projet et réexécuter les tests.
 
 > [!NOTE]
 > Cette procédure pas à pas utilise le framework de tests unitaires Microsoft pour le code managé. **L’explorateur de tests** peut également exécuter des tests depuis des frameworks de tests unitaires tiers qui ont des adaptateurs pour **l’explorateur de tests**. Pour plus d’informations, consultez [Installer des frameworks de tests unitaires tiers](../test/install-third-party-unit-test-frameworks.md)
 
-> [!NOTE]
-> Pour plus d’informations sur la façon d’exécuter des tests à partir d’une ligne de commande, consultez [Procédure pas à pas : utilisation de l’utilitaire de test de ligne de commande](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867).
+Pour plus d’informations sur la façon d’exécuter des tests à partir d’une ligne de commande, consultez [Options de ligne de commande VSTest.Console.exe](vstest-console-options.md).
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -85,7 +84,7 @@ public void Debit(double amount)
 
 1. Dans le menu **Fichier**, sélectionnez **Ajouter** > **Nouveau projet**.
 
-2. Dans la boîte de dialogue Nouveau Projet, développez **Installé**, développez **Visual C#**, puis choisissez **Test**.
+2. Dans la boîte de dialogue **Nouveau projet**, développez **Installé**, développez **Visual C#**, puis choisissez **Test**.
 
 3. Dans la liste des modèles, sélectionnez **Projet de test unitaire**.
 
@@ -95,9 +94,9 @@ public void Debit(double amount)
 
 5. Dans le projet **BankTests**, ajoutez une référence au projet **Bank**.
 
-   Dans l’Explorateur de solutions, sélectionnez **Références** dans le projet **BankTests** puis choisissez **Ajouter une référence** dans le menu contextuel.
+   Dans **l’Explorateur de solutions**, sélectionnez **Références** dans le projet **BankTests**, puis choisissez **Ajouter une référence** dans le menu contextuel.
 
-6. Dans la boîte de dialogue Gestionnaire de références, développez **Solution** puis cochez l’élément **Bank** .
+6. Dans la boîte de dialogue **Gestionnaire de références**, développez **Solution**, puis cochez l’élément **Bank**.
 
 ## <a name="create-the-test-class"></a>Créer la classe de test
 
@@ -152,7 +151,7 @@ Il existe au moins trois comportements à vérifier :
 
 - La méthode lève une exception <xref:System.ArgumentOutOfRangeException> si le montant du débit est supérieur au solde.
 
-- La méthode lève l’exception <xref:System.ArgumentOutOfRangeException> si le montant du débit est inférieur à zéro.
+- La méthode lève <xref:System.ArgumentOutOfRangeException> si le montant du débit est inférieur à zéro.
 
 - Si le montant du débit est valide, la méthode le soustrait du solde du compte.
 
@@ -211,7 +210,7 @@ Une méthode de test doit répondre aux spécifications suivantes :
 
 ### <a name="analyze-the-test-results"></a>Analyser les résultats des tests
 
-Le résultat de test contient un message qui décrit l’échec. Pour la méthode `AreEquals`, le message affiche ce qui était attendu (le paramètre **Expected\<*valeur*>**) et ce qui a été reçu réellement (le paramètre **Actual\<*valeur*>**). Alors que le solde aurait dû diminuer, il a augmenté du montant du retrait.
+Le résultat de test contient un message qui décrit l’échec. Pour la méthode `AreEqual`, le message affiche ce qui était attendu (le paramètre **Expected\<*valeur*>**) et ce qui a été reçu réellement (le paramètre **Actual\<*valeur*>**). Vous vous attendiez à ce que le solde diminue, mais il a augmenté du montant du retrait.
 
 Le test unitaire a découvert un bogue : le montant du retrait est *ajouté* au solde du compte quand il doit être *soustrait*.
 
@@ -231,7 +230,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>Réexécuter le test
 
-Dans l’explorateur de tests, choisissez **Exécuter tout** pour réexécuter le test. La barre rouge/verte devient verte pour indiquer que le test a réussi, puis le test est déplacé vers le groupe **Tests réussis**.
+Dans **l’Explorateur de tests**, choisissez **Exécuter tout** pour réexécuter le test. La barre rouge/verte devient verte pour indiquer que le test a réussi, puis le test est déplacé vers le groupe **Tests réussis**.
 
 ## <a name="use-unit-tests-to-improve-your-code"></a>Utiliser les tests unitaires pour améliorer votre code
 

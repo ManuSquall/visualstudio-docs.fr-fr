@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acd90414e101c03bae1d3d74f1be4f538cacfce2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ed69ba759d63ba27114bc097ac1fd9ccbe424edd
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900615"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547736"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036 : Substituer les méthodes sur les types Comparable
+
 |||
 |-|-|
 |TypeName|OverrideMethodsOnComparableTypes|
@@ -32,26 +33,35 @@ ms.locfileid: "31900615"
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Un type public ou protégé implémente les <xref:System.IComparable?displayProperty=fullName> de l’interface et ne remplace pas <xref:System.Object.Equals%2A?displayProperty=fullName> ou ne surcharge pas l’opérateur spécifique à la langue pour l’égalité, inégalité, inférieur ou supérieur. La règle ne signale pas d’une violation si le type hérite seulement d’une implémentation de l’interface.
+ Un type public ou protégé implémente le <xref:System.IComparable?displayProperty=fullName> interface et ne se substitue pas <xref:System.Object.Equals%2A?displayProperty=fullName> ou ne surcharge pas l’opérateur spécifique à la langue pour l’égalité, inégalité, moins-à ou supérieur-que. La règle ne signale pas d’une violation si le type hérite uniquement une implémentation de l’interface.
 
 ## <a name="rule-description"></a>Description de la règle
- Les types qui définissent un ordre de tri personnalisé implémentent la <xref:System.IComparable> interface. Le <xref:System.IComparable.CompareTo%2A> méthode retourne un entier qui indique l’ordre de tri correct pour les deux instances du type. Cette règle identifie les types de définir un ordre de tri ; Cela implique que la signification ordinaire de l’égalité, inégalité, inférieure et supérieure ne s’appliquent pas. Lorsque vous fournissez une implémentation de <xref:System.IComparable>, vous devez généralement également substituer <xref:System.Object.Equals%2A> afin qu’elle retourne des valeurs qui sont cohérents avec <xref:System.IComparable.CompareTo%2A>. Si vous substituez <xref:System.Object.Equals%2A> et codez dans un langage qui prend en charge les surcharges d’opérateur, vous devez également fournir des opérateurs cohérents avec <xref:System.Object.Equals%2A>.
+
+Les types qui définissent un ordre de tri personnalisé implémentent la <xref:System.IComparable> interface. Le <xref:System.IComparable.CompareTo%2A> méthode retourne une valeur entière qui indique l’ordre de tri correct pour les deux instances du type. Cette règle identifie les types de définir un ordre de tri. Définition d’un ordre de tri implique que la signification ordinaire d’égalité, inégalité, less- et inférieur-que ne s’appliquent pas. Lorsque vous fournissez une implémentation de <xref:System.IComparable>, vous devez généralement également substituer <xref:System.Object.Equals%2A> afin qu’il retourne des valeurs qui sont cohérents avec <xref:System.IComparable.CompareTo%2A>. Si vous substituez <xref:System.Object.Equals%2A> et codez dans un langage qui prend en charge les surcharges d’opérateur, vous devez également fournir des opérateurs sont cohérents avec <xref:System.Object.Equals%2A>.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, substituez <xref:System.Object.Equals%2A>. Si votre langage de programmation prend en charge la surcharge d’opérateur, fournissez les opérateurs suivants :
 
--   op_Equality
+Pour corriger une violation de cette règle, substituez <xref:System.Object.Equals%2A>. Si votre langage de programmation prend en charge la surcharge d’opérateur, fournissez les opérateurs suivants :
 
--   op_Inequality
+- op_Equality
 
--   op_LessThan
+- op_Inequality
 
--   op_GreaterThan
+- op_LessThan
 
- Dans c#, les jetons sont utilisés pour représenter ces opérateurs sont les suivants : ==, ! =, \<, et >.
+- op_GreaterThan
+
+En c#, les jetons qui sont utilisés pour représenter ces opérateurs sont les suivantes :
+
+```csharp
+==
+!=
+<
+>
+```
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Il est possible de supprimer un avertissement de cette règle lorsque la violation est provoquée par des opérateurs manquants et votre langage de programmation ne prend pas en charge la surcharge d’opérateur, comme c’est le cas avec Visual Basic. Il est également possible de supprimer un avertissement de cette règle quand elle se déclenche sur les opérateurs d’égalité autres qu’op_Equality si vous déterminez qu’implémente les opérateurs ne se justifie pas dans le contexte de votre application sans. Toutefois, vous ne devriez toujours op_Equality et l’opérateur == si vous substituez Object.Equals.
+ Il est possible de supprimer un avertissement de règle CA1036 quand la violation est due à l’absence d’opérateurs et votre langage de programmation ne prend pas en charge la surcharge d’opérateur, comme c’est le cas avec Visual Basic. Il est également possible de supprimer un avertissement de cette règle quand elle se déclenche sur les opérateurs d’égalité autres qu’op_Equality si vous déterminez que l’implémentation des opérateurs n’est pas pertinent dans votre contexte de l’application sans. Toutefois, vous ne devriez toujours op_Equality et l’opérateur == si vous se substitue à Object.Equals.
 
 ## <a name="example"></a>Exemple
  L’exemple suivant contient un type qui implémente correctement <xref:System.IComparable>. Commentaires de code identifient les méthodes qui satisfont différentes règles liées à <xref:System.Object.Equals%2A> et <xref:System.IComparable> interface.
@@ -59,9 +69,12 @@ ms.locfileid: "31900615"
  [!code-csharp[FxCop.Design.IComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_1.cs)]
 
 ## <a name="example"></a>Exemple
- L’application suivante teste le comportement de la <xref:System.IComparable> implémentation a été indiquée précédemment.
+ L’application suivante teste le comportement de la <xref:System.IComparable> implémentation mentionnée précédemment.
 
  [!code-csharp[FxCop.Design.TestIComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_2.cs)]
 
 ## <a name="see-also"></a>Voir aussi
- <xref:System.IComparable?displayProperty=fullName> <xref:System.Object.Equals%2A?displayProperty=fullName> [Opérateurs d’égalité](/dotnet/standard/design-guidelines/equality-operators)
+
+- <xref:System.IComparable?displayProperty=fullName>
+- <xref:System.Object.Equals%2A?displayProperty=fullName>
+- [Opérateurs d’égalité](/dotnet/standard/design-guidelines/equality-operators)

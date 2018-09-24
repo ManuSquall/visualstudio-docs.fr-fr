@@ -17,7 +17,7 @@
 ## Utilisation des avantages pour les abonnés
 ### Outils
 #### [IDE Visual Studio](vs-ide-benefit.md)
-#### [Visual Studio Team Services](vs-vsts.md)
+#### [Azure DevOps Services](vs-azure-devops.md)
 #### [Crédit Azure](vs-azure.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
 #### [Parasoft ](vs-parasoft.md)
@@ -28,14 +28,14 @@
 #### [Power BI Pro](vs-pbi.md)
 #### [Requirements4TFS modernes](vs-modernreq.md)
 #### [Paiement à l'utilisation Azure](vs-azure-payg.md)
-### Développement professionnel
+### [Développement professionnel](professional-development.md)
 #### [LinkedIn Learning](vs-linkedin-learning.md)
 #### [DataCamp](vs-datacamp.md)
 #### [Opsgility](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
 #### [Formation pour Xamarin University](vs-xamarin.md)
 #### [Abonnement au magazine MSDN](vs-msdn.md)
-### Avantages du support
+### [Avantages du support](technical-support.md)
 #### [Conversation Azure Advisory](vs-azure-advisory-chat.md)
 #### [Communauté Azure](vs-azure-community.md)
 #### [Support technique](vs-tech-support.md)
@@ -48,6 +48,8 @@
 #### [Pour le programme de licence en volume](volume-license-admins.md)
 ##### [Questions fréquentes (FAQ) sur la migration de l’administration de VLSC](vlsc-admin-faq.md)
 ##### Intégration de votre organisation
+###### [Intégration post-migration](post-migration-onboarding.md)
+###### [Migration d’Open et des licences Open](open-migration.md)
 ###### [Intégration des communications par e-mail](volume-license-onboarding-email.md)
 ###### [Recherchez votre PCN](find-pcn.md)
 ###### [Recherchez votre contact principal](find-primary-contact.md)

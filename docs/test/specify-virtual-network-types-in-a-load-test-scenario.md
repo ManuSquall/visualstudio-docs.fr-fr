@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a3c4a4e6db97e99d2ec2df5b27c6fd8293a182f5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b1f545260b3632c8097ce4bfed9eff7f2de0ccbd
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978295"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380226"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Spécifier des types de réseaux virtuels dans un scénario de test de charge
 
@@ -37,7 +37,7 @@ La *combinaison de réseaux* vous permet de simuler une charge avec plus de réa
 
  Pour plus d’informations, consultez [À propos du contrôle de combinaison](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
-## <a name="true-network-emulation"></a>Émulation de réseau véritable
+## <a name="true-network-emulation"></a>Émulation réseau véritable
 
  Visual Studio utilise une émulation de réseau véritable basée sur un logiciel pour tous les types de tests, notamment les tests de charge. L'émulation de réseau véritable simule les conditions d'un réseau par manipulation directe des paquets réseau. L'émulateur de réseau véritable peut émuler le comportement des réseaux avec et sans fil en utilisant un lien physique fiable, par exemple Ethernet. Les attributs de réseau suivants sont incorporés dans une émulation de réseau véritable :
 

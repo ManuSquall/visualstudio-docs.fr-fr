@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20488e1e6da6b6bcc0bf3cdab875d6c19631521c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: fff2c2e16b86e32e561348c4f1cdc870f452858b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693719"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176185"
 ---
 # <a name="working-with-xml-data"></a>Utilisation des données XML
 
@@ -38,11 +38,11 @@ Autres fonctions de l'éditeur :
 
 - **Explorateur de schémas XML**.
 
-## <a name="xml-schema-designer"></a>Concepteur de schémas XML
+## <a name="xml-schema-designer"></a>Concepteur de schéma XML
 
 Le Concepteur de schémas XML est intégré à Visual Studio et l’éditeur XML pour vous permettre de travailler avec des schémas de langage (XSD XML) XML Schema definition.
 
-## <a name="xslt-debugging"></a>Le débogage XSLT
+## <a name="xslt-debugging"></a>Débogage XSLT
 
 Visual Studio permet le débogage de feuilles de style XSLT. Le débogueur permet de définir des points d'arrêt dans une feuille de style XSLT, d'exécuter pas à pas la feuille de style XSLT à partir du code, etc.
 
@@ -52,9 +52,9 @@ Visual Studio permet le débogage de feuilles de style XSLT. Le débogueur perme
 
 [Référence du standard XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) fournit des informations sur les technologies XML, notamment XML, définition de Type de Document (DTD), langage de définition de schéma XML (XSD) et XSLT.
 
-[Créer et configurer des groupes de données dans Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md) fournit une explication des outils au moment du design pour la création de jeux de données.
+[Créer et configurer des datasets dans Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md) fournit une explication des outils au moment du design pour la création de jeux de données.
 
-[Les services Web XML en code managé](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) explique comment créer et déployer des services Web XML et comment accéder aux services Web XML.
+[Les services web XML en code managé](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) explique comment créer et déployer des services web XML et comment accéder aux services web XML.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6b81bfcf0be55236b9b9321a4f04a8dd03f8e3ab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3086f6f99497789eace3ff999a8fa0693b497324
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949891"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567362"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Définition d'une image d'arrière-plan dans un schéma
 Dans le Kit de développement logiciel (SDK) de visualisation et de modélisation de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pouvez définir l'image d'arrière-plan d'un concepteur généré à l'aide de code personnalisé.
@@ -31,11 +31,11 @@ Dans le Kit de développement logiciel (SDK) de visualisation et de modélisatio
 
 4.  Dans le **types de fichiers** , cliquez sur **fichiers Image**.
 
-5.  Cliquez sur le fichier image que vous avez copié dans le répertoire, puis cliquez sur **ajouter**.
+5.  Cliquez sur le fichier image que vous avez copiée dans le répertoire, puis cliquez sur **ajouter**.
 
-6.  Dsl d’avec le bouton droit, puis cliquez sur **propriétés** pour ouvrir les propriétés du projet Dsl.
+6.  Cliquez sur Dsl, puis cliquez sur **propriétés** pour ouvrir les propriétés du projet Dsl.
 
-7.  Sur le **ressources** , cliquez sur **ce projet ne contient pas un fichier de ressources par défaut. Cliquez ici pour en créer un.**
+7.  Sur le **ressources** sous l’onglet **ce projet ne contient pas un fichier de ressources par défaut. Cliquez ici pour en créer un.**
 
 8.  Ajoutez le fichier image au fichier de ressources en faisant glisser l’image à partir de **l’Explorateur de solutions** dans la fenêtre de ressources.
 
@@ -45,13 +45,13 @@ Dans le Kit de développement logiciel (SDK) de visualisation et de modélisatio
 
 11. Si Resources.Designer.cs est manquant, cliquez sur le fichier Resources.resx dans **l’Explorateur de solutions**.
 
-12. Dans le **propriétés** , configurez la `Custom Tool` propriété `ResXFileCodeGenerator`.
+12. Dans le **propriétés** fenêtre, définissez la `Custom Tool` propriété `ResXFileCodeGenerator`.
 
 13. Dans **l’Explorateur de solutions**, cliquez sur le projet Dsl, pointez sur **ajouter**, puis cliquez sur **nouveau dossier**.
 
 14. Nommez le dossier **personnalisé**.
 
-15. Cliquez sur le dossier personnalisé, pointez sur **ajouter**, puis cliquez sur **un nouvel élément**.
+15. Cliquez sur le dossier Custom, pointez sur **ajouter**, puis cliquez sur **un nouvel élément**.
 
 16. Dans le **ajouter un nouvel élément** boîte de dialogue le **modèles** , cliquez sur **fichier de Code**.
 
@@ -61,7 +61,7 @@ Dans le Kit de développement logiciel (SDK) de visualisation et de modélisatio
 
      Remplacez « MyDiagramClass » par le nom de la classe de diagramme partielle définie dans Dsl\GeneratedCode\Diagrams.cs. Vous pouvez aussi récupérer l'espace de noms correct à partir du fichier Dsl\GeneratedCode\Diagrams.cs.
 
-    ```
+    ```csharp
     using System;
     using Microsoft.VisualStudio.Modeling.Diagrams;
 
@@ -100,7 +100,7 @@ Dans le Kit de développement logiciel (SDK) de visualisation et de modélisatio
     }
     ```
 
-     Pour plus d’informations sur la personnalisation du modèle avec le code de programme, consultez [navigation et la mise à jour d’un modèle de Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).
+     Pour plus d’informations sur la personnalisation du modèle avec le code de programme, consultez [navigation et la mise à jour un modèle dans le Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
 ## <a name="see-also"></a>Voir aussi
 

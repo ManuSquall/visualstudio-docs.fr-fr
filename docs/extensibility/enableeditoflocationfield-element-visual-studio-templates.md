@@ -1,5 +1,5 @@
 ---
-title: L’élément EnableEditOfLocationField (modèles Visual Studio) | Documents Microsoft
+title: Élément EnableEditOfLocationField (modèles Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,14 +13,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8aee6e8b763cbc46af1cf426971e68e2e22ea1e1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4a38f023da9f4603bee9c87cb119bd41ec7e6d98
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129790"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638015"
 ---
-# <a name="enableeditoflocationfield-element-visual-studio-templates"></a>Élément EnableEditOfLocationField (modèles Visual Studio)
+# <a name="enableeditoflocationfield-element-visual-studio-templates"></a>Élément EnableEditOfLocationField (modèles Visual Studio)
 Spécifie si l’utilisateur peut modifier le champ d’emplacement.  
   
  \<VSTemplate >  
@@ -37,10 +37,10 @@ Spécifie si l’utilisateur peut modifier le champ d’emplacement.
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.  
   
 ### <a name="attributes"></a>Attributs  
- Aucun  
+ Aucun.  
   
 ### <a name="child-elements"></a>Éléments enfants  
- Aucun  
+ Aucun.  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
@@ -54,12 +54,12 @@ Spécifie si l’utilisateur peut modifier le champ d’emplacement.
  Le texte doit être `true` ou `false`, qui indique si l’utilisateur peut modifier le **emplacement** zone de texte sur le **nouveau projet** boîte de dialogue.  
   
 ## <a name="remarks"></a>Notes  
- `EnableEditOfLocationField` est un élément facultatif. La valeur par défaut est `true`, ce qui permet à l’utilisateur de modifier la valeur dans la **emplacement** zone de texte dans le **nouveau projet** boîte de dialogue.  
+ `EnableEditOfLocationField` est un élément facultatif. La valeur par défaut est `true`, ce qui permet à l’utilisateur de modifier la valeur dans le **emplacement** zone de texte dans le **nouveau projet** boîte de dialogue.  
   
- Dans le **nouveau projet** boîte de dialogue, la **emplacement** zone de texte spécifie le répertoire dans lequel un nouveau projet est enregistré.  
+ Dans le **nouveau projet** boîte de dialogue, le **emplacement** zone de texte spécifie le répertoire dans lequel un nouveau projet est enregistré.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant illustre les métadonnées d’un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application Windows.  
+ L’exemple suivant illustre les métadonnées d’un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application de Windows.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -88,5 +88,5 @@ Spécifie si l’utilisateur peut modifier le champ d’emplacement.
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
+ [Référence de schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Création de modèles de projets et d’éléments](../ide/creating-project-and-item-templates.md)

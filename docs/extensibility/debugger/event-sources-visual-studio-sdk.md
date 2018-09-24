@@ -1,5 +1,5 @@
 ---
-title: Sources d’événements (Visual Studio SDK) | Documents Microsoft
+title: Sources d’événements (Kit de développement logiciel Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,20 +13,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d1dac50183422b6895f6496b7ca78d24312c33e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f196f7711db151ef2da867a11bc6a8b71394d9c8
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099836"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232655"
 ---
-# <a name="event-sources-visual-studio-sdk"></a>Sources d’événements (Kit de développement logiciel Visual Studio)
-Il existe deux sources d’événements : le moteur de débogage (DE) et la session de débogage responsable de la. Événements envoyés à partir d’un D’ont un moteur non NULL, tandis que les événements envoyés par le SDM ont un moteur NULL.  
+# <a name="event-sources-visual-studio-sdk"></a>Sources d’événements (SDK Visual Studio)
+Il existe deux sources d’événements : le moteur de débogage (dé) et la Session de débogage Manager (SDM). Événements envoyés à partir d’un D’ont un moteur non NULL, tandis que les événements envoyés par le SDM ont un moteur NULL.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre comment envoyer la **IDebugProgramCreateEvent2** à partir de la DE pour le SDM.  
+ L’exemple suivant montre comment envoyer la **IDebugProgramCreateEvent2** à partir de l’Allemagne pour le SDM.  
   
-```  
+```csharp  
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();  
 if (FAILED(pCallback->Event(m_pEngine, NULL, m_pProgram, NULL, pProgramCreateEvent, IID_IDebugProgramCreateEvent2, EVENT_ASYNCHRONOUS)))  
 {  

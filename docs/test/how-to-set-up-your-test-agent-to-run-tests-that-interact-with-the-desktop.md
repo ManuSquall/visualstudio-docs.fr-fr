@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d1b6655dd493a2ac62ba333f3858b299ee398f8d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ee961a3f6fa62d46feebdedd10fb62ea8a9ee2a4
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974804"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381727"
 ---
-# <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Comment : configurer votre agent de test pour exécuter des tests qui interagissent avec le bureau
+# <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Guide pratique pour configurer votre agent de test afin d’exécuter des tests qui interagissent avec le Bureau
 
 Si vous souhaitez exécuter des tests automatisés qui interagissent avec le bureau, vous devez configurer votre agent pour qu'il s'exécute en tant que processus au lieu de service. Par exemple, si vous voulez exécuter à distance un test codé de l’interface utilisateur à l’aide d’un contrôleur de test et d’un agent de test, ou si vous voulez exécuter un test et capturer un enregistrement vidéo lorsque vous l’exécutez, vous devez configurer votre agent pour qu’il s’exécute en tant que processus. Quand vous affectez des agents à des rôles dans vos paramètres de test avec Visual Studio ou quand vous affectez des agents à des rôles dans votre environnement avec Microsoft Test Manager, vous devez modifier la configuration des agents affectés à des rôles qui doivent interagir avec le poste de travail.
 
 > [!WARNING]
-> Si vous utilisez Microsoft Test Manager pour configurer un environnement lab, il installe l’agent de test. Vous pouvez spécifier dans l'assistant de création de l'environnement que vous souhaitez configurer l'un des rôles pour exécuter des tests codés de l'interface utilisateur.
+> Si vous utilisez Microsoft Test Manager pour configurer un environnement lab, il installe l’agent de test. Vous pouvez spécifier dans **l’Assistant Création de l’environnement** que vous souhaitez configurer l’un des rôles pour exécuter des tests codés de l’interface utilisateur.
 
 > [!IMPORTANT]
 > L'ordinateur qui exécute un agent sur lequel vous voulez exécuter des tests codés de l'interface utilisateur ne peut pas être verrouillé ou avoir un écran de veille actif.
@@ -79,7 +79,7 @@ Si vous exécutez un test codé de l'interface utilisateur qui lance un navigate
 
      Une boîte de dialogue **Récapitulatif de la configuration** s’affiche et indique l’état de chacune des étapes pour configurer votre agent de test.
 
-9. Pour fermer la boîte de dialogue **Récapitulatif de la configuration**, choisissez **Fermer**. Choisissez ensuite à nouveau **Fermer** pour fermer l’outil de configuration de Test Agent.
+9. Pour fermer la boîte de dialogue **Récapitulatif de la configuration**, choisissez **Fermer**. Ensuite, choisissez à nouveau **Fermer** pour fermer **l’outil de configuration de Test Agent**.
 
     > [!NOTE]
     > Une icône de zone de notification s’exécute sur l’ordinateur pour un agent de test qui s’exécute en tant que processus. Elle affiche l'état de l'agent de test. Vous pouvez démarrer, arrêter ou redémarrer l'agent s'il s'exécute en tant que processus à l'aide de cet outil. Pour démarrer l’agent de test en tant que processus s’il n’est pas en cours d’exécution, choisissez **Démarrer**, **Tous les programmes**, **Microsoft Visual Studio**, **Microsoft Visual Studio Test Agent**.

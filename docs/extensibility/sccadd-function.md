@@ -1,5 +1,5 @@
 ---
-title: Fonction de SccAdd | Documents Microsoft
+title: Fonction SccAdd | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2933d00b7450f946a5fd5409bcaeecc2527a9f64
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d7d65d40fe3205ea3f83ecd43b72fe8bafebb3f
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139544"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639612"
 ---
-# <a name="sccadd-function"></a>SccAdd (fonction)
-Cette fonction ajoute de nouveaux fichiers au système de contrôle de code source.  
+# <a name="sccadd-function"></a>Fonction SccAdd
+Cette fonction ajoute de nouveaux fichiers au système de contrôle source.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -39,27 +39,27 @@ SCCRTN SccAdd(
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+### <a name="parameters"></a>Paramètres  
  pvContext  
- [in] La structure de contexte plug-in de contrôle de code source.  
+ [in] La structure de contexte de plug-in de contrôle de source.  
   
  hWnd  
- [in] Handle vers la fenêtre de l’IDE que le plug-in de contrôle de code source peut utiliser en tant que parent pour toutes les boîtes de dialogue qu’il fournit.  
+ [in] Handle vers la fenêtre de l’IDE que le plug-in de contrôle de code source peut utiliser en tant que parent pour les boîtes de dialogue qu’il fournit.  
   
  nFiles  
  [in] Nombre de fichiers sélectionnés à ajouter au projet actuel en tant que donnée dans le `lpFileNames` tableau.  
   
  lpFileNames  
- [in] Tableau de noms locales complets des fichiers à ajouter.  
+ [in] Tableau de noms locales qualifiés complets de fichiers à ajouter.  
   
  lpComment  
- [in] Le commentaire à appliquer à tous les fichiers à ajouter.  
+ [in] Le commentaire à appliquer à tous les fichiers en cours d’ajout.  
   
  pfOptions  
- [in] Tableau des indicateurs de commande, sur une base par fichier.  
+ [in] Tableau d’indicateurs de commande, fourni sur une base par fichier.  
   
  pvOptions  
- [in] Options spécifiques au plug-in du contrôle source.  
+ [in] Options spécifiques au plug-in de contrôle source.  
   
 ## <a name="return-value"></a>Valeur de retour  
  L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
@@ -68,20 +68,20 @@ SCCRTN SccAdd(
 |-----------|-----------------|  
 |SCC_OK|L’opération d’ajout a réussi.|  
 |SCC_E_FILEALREADYEXISTS|Le fichier sélectionné est déjà sous contrôle de code source.|  
-|SCC_E_TYPENOTSUPPORTED|Le type de fichier (par exemple, binaire) n’est pas pris en charge par le système de contrôle de code source.|  
+|SCC_E_TYPENOTSUPPORTED|Le type du fichier (par exemple, binaire) n’est pas pris en charge par le système de contrôle de code source.|  
 |SCC_E_OPNOTSUPPORTED|Le système de contrôle de code source ne prend pas en charge cette opération.|  
 |SCC_E_ACCESSFAILURE|Impossible d’accéder au système de contrôle source, probablement en raison de problèmes réseau ou de contention. Une nouvelle tentative est recommandée.|  
 |SCC_E_NOTAUTHORIZED|L’utilisateur n’est pas autorisé à effectuer cette opération.|  
-|SCC_E_NONSPECIFICERROR|Erreur non spécifique ; Ajoutez ne pas effectuée.|  
+|SCC_E_NONSPECIFICERROR|Échec non spécifique ; Ajoutez ne pas effectuée.|  
 |SCC_I_OPERATIONCANCELED|L’opération a été annulée avant la fin.|  
 |SCC_I_RELOADFILE|Un fichier ou un projet doit être rechargé.|  
-|SCC_E_FILENOTEXIST|Impossible de trouver le fichier local.|  
+|SCC_E_FILENOTEXIST|Fichier local est introuvable.|  
   
 ## <a name="remarks"></a>Notes  
- Les commandes `fOptions` sont remplacés ici par un tableau, `pfOptions`, avec une `LONG` option spécification par fichier. Il s’agit, car le type de fichier peut varier d’un fichier.  
+ Habituelles `fOptions` sont remplacés ici par un tableau, `pfOptions`, avec une `LONG` option spécification par fichier. Il s’agit, car le type de fichier peut varier d’un fichier.  
   
 > [!NOTE]
->  Il n’est pas valide pour spécifier les deux `SCC_FILETYPE_TEXT` et `SCC_FILETYPE_BINARY` options pour le même fichier, mais il est possible de spécifier aucune des deux. Aucun paramètre est le même que `SCC_FILETYPE_AUTO`, auquel cas la contrôle de code source du plug-in détecte automatiquement le type de fichier.  
+>  Il n’est pas valide pour spécifier les deux `SCC_FILETYPE_TEXT` et `SCC_FILETYPE_BINARY` options pour le même fichier, mais il est possible de spécifier aucune des deux. Aucun paramètre est équivalent au paramètre `SCC_FILETYPE_AUTO`, auquel cas la source de contrôler les plug-in détecte automatiquement le type de fichier.  
   
  Voici la liste des indicateurs utilisés dans le `pfOptions` tableau :  
   
@@ -89,7 +89,7 @@ SCCRTN SccAdd(
 |------------|-----------|-------------|  
 |SCC_FILETYPE_AUTO|0 x 00|Le plug-in de contrôle de code source doit détecter le type de fichier.|  
 |SCC_FILETYPE_TEXT|0 x 01|Indique un fichier texte ASCII.|  
-|SCC_FILETYPE_BINARY|0 x 02|Indique un type de fichier autre que du texte ASCII.|  
+|SCC_FILETYPE_BINARY|0 x 02|Indique un type de fichier autre que texte ASCII.|  
 |SCC_ADD_STORELATEST|0 x 04|Stocke uniquement la dernière copie du fichier, aucun deltas.|  
 |SCC_FILETYPE_TEXT_ANSI|0 x 08|Traite le fichier comme texte ANSI.|  
 |SCC_FILETYPE_UTF8|0x10|Traite le fichier en tant que texte Unicode au format UTF8.|  
@@ -97,4 +97,4 @@ SCCRTN SccAdd(
 |SCC_FILETYPE_UTF16BE|0 x 40|Mettre en forme traite le fichier en tant que texte Unicode Big Endian UTF16.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Fonctions d’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)
+ [Fonctions d’API source contrôle plug-in](../extensibility/source-control-plug-in-api-functions.md)

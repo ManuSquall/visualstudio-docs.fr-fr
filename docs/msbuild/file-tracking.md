@@ -12,17 +12,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51d17894025800acd9c8ab0736ebe92d7f790fc7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 394b40a304d2aba3b79c5878befe33a8a1aaf8b8
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567445"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945557"
 ---
-# <a name="file-tracking"></a>Suivi de fichier
+# <a name="file-tracking"></a>Suivi des fichiers
 Le suivi des fichiers journalise les appels au système de fichiers Windows pour un processus et ses processus enfants. En appelant les fonctions listées ci-dessous, les programmes contrôlent le moment auquel activer et désactiver la journalisation, et spécifient le fichier journal à utiliser.  
   
-## <a name="in-this-section"></a>Dans cette section  
  [EndTrackingContext](../msbuild/endtrackingcontext.md)  
  Arrête le suivi dans le contexte actuel.  
   

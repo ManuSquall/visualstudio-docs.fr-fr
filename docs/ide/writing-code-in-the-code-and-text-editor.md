@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb54b8fa21ae5d2c0580c5d9bc7a570469877c3f
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 397ed4ea94aa54c8f8d31fc6ff0d08da16a93479
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283456"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626671"
 ---
 # <a name="features-of-the-code-editor"></a>Fonctionnalités de l’éditeur de code
 
@@ -51,7 +51,7 @@ De nombreuses fonctionnalités avancées sont disponibles dans le menu **Éditio
 
 |||
 |-|-|
-|Mettre le document en forme|Définit la mise en retrait appropriée des lignes de code et place des accolades pour séparer les lignes dans le document.|
+|[Mettre le document en forme](code-styles-and-quick-actions.md#format-document-command)|Définit la mise en retrait appropriée des lignes de code et place des accolades pour séparer les lignes dans le document.|
 |Mettre la sélection en forme|Définit la mise en retrait appropriée des lignes de code et place des accolades pour séparer les lignes dans la sélection.|
 |Remplacer les espaces par des tabulations|Remplace les espaces à gauche par des tabulations le cas échéant.|
 |Remplacer les tabulations par des espaces|Remplace les tabulations à gauche par des espaces. Si vous souhaitez convertir tous les espaces de votre fichier en tabulations (ou toutes les tabulations en espaces), vous pouvez utiliser les commandes `Edit.ConvertSpacesToTabs` et `Edit.ConvertTabsToSpaces`. Ces commandes n’apparaissent pas dans les menus de Visual Studio, mais vous pouvez les appeler à partir de la fenêtre **Accès rapide** ou de la fenêtre Commande.|

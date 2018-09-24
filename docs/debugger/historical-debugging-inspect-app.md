@@ -1,5 +1,5 @@
 ---
-title: Vérifiez que votre application avec débogage d’historique | Documents Microsoft
+title: Inspecter votre application avec le débogage d’historique | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6a8e4ec27c73516d2eb4ea79ee8beee91dfd19c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2309a3213344607fa0f5b2f626fc67af2eff8f79
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476820"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542336"
 ---
-# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio"></a>Vérifiez que votre application avec débogage dans Visual Studio historique d’IntelliTrace
-Vous pouvez utiliser [le débogage d’historique](../debugger/historical-debugging.md) à déplacer vers le haut et vers l’avant dans l’exécution de votre application et inspecter son état.  
+# <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio"></a>Inspecter votre application avec débogage dans Visual Studio historique d’IntelliTrace
+Vous pouvez utiliser [le débogage d’historique](../debugger/historical-debugging.md) à déplacer vers le haut et les transférer via l’exécution de votre application et inspecter son état.  
   
 Vous pouvez utiliser IntelliTrace dans Visual Studio Enterprise edition, mais pas les éditions Professional ou Community.  
   
@@ -51,7 +51,7 @@ private static int AddInt(int add)
 }  
 ```  
   
- Nous supposons que la valeur attendue de `resultInt` après avoir appelé `AddAll()` est 20 (le résultat de l’incrémentation `testInt` 20 fois). (Nous supposons également que vous ne voyez pas le bogue dans `AddInt()`). Mais le résultat est bien 44. Comment trouver le bogue sans parcourir 10 fois `AddAll()` ? Nous pouvons utiliser le débogage d’historique pour rechercher le bogue plus rapidement et facilement. Voici comment :  
+ Nous supposerons que la valeur attendue de `resultInt` après avoir appelé `AddAll()` est 20 (le résultat de l’incrémentation `testInt` 20 fois). (Nous supposons également que vous ne voyez pas le bogue dans `AddInt()`). Mais le résultat est bien 44. Comment trouver le bogue sans parcourir 10 fois `AddAll()` ? Nous pouvons utiliser le débogage d’historique pour rechercher le bogue plus rapidement et plus facilement. Voici comment :  
   
 1.  Dans **Outils > Options > IntelliTrace > Général**, vérifiez qu’IntelliTrace est activé, puis sélectionnez **événements IntelliTrace et informations d’appels**. Si vous ne sélectionnez pas cette option, vous ne verrez pas la marge de navigation (comme expliqué ci-dessous).  
   
@@ -65,13 +65,13 @@ private static int AddInt(int add)
   
 5.  Vous devez voir une double flèche en regard de la marge de gauche, juste au-dessus du point d'arrêt. Cette zone est appelée la marge de navigation et est utilisée pour le débogage d’historique. Cliquez sur la flèche.  
   
-     Dans la fenêtre de code, vous devez voir que la ligne de code précédente (`int resultInt = AddIterative(testInt);`) est de couleur rose. Au-dessus de la fenêtre, vous devez voir un message que vous êtes maintenant dans le débogage d’historique.  
+     Dans la fenêtre de code, vous devez voir que la ligne de code précédente (`int resultInt = AddIterative(testInt);`) est de couleur rose. Au-dessus de la fenêtre, vous devez voir un message qui vous êtes maintenant dans le débogage d’historique.  
   
      La fenêtre de code doit maintenant ressembler à ceci :  
   
-     ![fenêtre de code en mode débogage historique](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
+     ![fenêtre de code en mode débogage d’historique](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
   
-6.  Maintenant que vous pouvez exécuter dans le `AddAll()` (méthode) (**F11**, ou **pas à pas détaillé** bouton dans la marge de navigation. Avancez (**F10**, ou **aller à l’appel suivant** dans la marge de navigation. Le trait rose est désormais sur la ligne `j = AddInt(j);`. **F10** dans ce cas ne permet pas d’accéder à la ligne suivante de code. En fait, vous accédez à l'appel de fonction suivant. Le débogage d'historique permet de naviguer d'un appel à l'autre. Il ignore les lignes de code qui n'incluent pas d'appel de fonction.  
+6.  Maintenant que vous pouvez entrer dans le `AddAll()` (méthode) (**F11**, ou le **pas à pas détaillé** bouton dans la marge de navigation. Avancez (**F10**, ou **accédez à l’appel suivant** dans la marge de navigation. Le trait rose est désormais sur la ligne `j = AddInt(j);`. **F10** dans ce cas ne pas d’accéder à la ligne de code suivante. En fait, vous accédez à l'appel de fonction suivant. Le débogage d'historique permet de naviguer d'un appel à l'autre. Il ignore les lignes de code qui n'incluent pas d'appel de fonction.  
   
 7.  Maintenant, effectuez un pas à pas détaillé de la méthode `AddInt()`. Vous devez voir immédiatement le bogue dans ce code.  
 
@@ -79,5 +79,5 @@ private static int AddInt(int add)
 
 Cette procédure ne présente que succinctement ce que vous pouvez faire avec le débogage d’historique.
 
-- Pour afficher des instantanés pendant le débogage, consultez [afficher des instantanés à l’aide d’IntelliTrace étape différée](../debugger/how-to-use-intellitrace-step-back.md).
-- Pour plus d’informations sur les différents paramètres et les effets des différents boutons de la marge de navigation, consultez [des fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).
+- Pour afficher les instantanés pendant le débogage, consultez [Inspecter les États d’application précédent à l’aide d’IntelliTrace](../debugger/view-historical-application-state.md).
+- Pour en savoir plus sur les différents paramètres et les effets des différents boutons dans la marge de navigation, consultez [fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).

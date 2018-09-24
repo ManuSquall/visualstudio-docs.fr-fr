@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ac6fe1bc08ce4bed17b2f42c568769ad4314023
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ba1bc49cc9b2a16f32c854805fdd31b095af1629
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255400"
 ---
-# <a name="per-thread-summary-report"></a>Résumé par thread, rapport
+# <a name="per-thread-summary-report"></a>Rapport Récapitulatif par thread
 Cet histogramme présente la proportion de temps que chaque thread non masqué passe dans chaque catégorie d’activité pendant la plage horaire actuellement visible. « Exécution » signifie que le thread est en cours d’exécution ; toutes les autres catégories impliquent que le thread est en attente d’une opération.  
   
 ## <a name="see-also"></a>Voir aussi  
@@ -30,5 +31,5 @@ Cet histogramme présente la proportion de temps que chaque thread non masqué p
  [Durée de préemption](../profiling/preemption-time.md)   
  [Durée de veille](../profiling/sleep-time.md)   
  [Durée de synchronisation](../profiling/synchronization-time.md)   
- [Temps de traitement UI](../profiling/ui-processing-time.md)   
+ [Temps de traitement de l’IU](../profiling/ui-processing-time.md)   
  [Vue Threads](../profiling/threads-view-parallel-performance.md)

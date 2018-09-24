@@ -1,5 +1,5 @@
 ---
-title: Débogage de Script côté client | Documents Microsoft
+title: Débogage de Script côté client | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f31897cc4fb48fd7c814d4d25cb41ce0cb7e57da
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: aa5a21a60ab95b6dbc9aeb27a0c7d6e27ab32773
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464808"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283110"
 ---
 # <a name="client-side-script-debugging"></a>Débogage de scripts côté client
 Le débogueur Visual Studio fournit un environnement de débogage complet pour rechercher et corriger les erreurs dans les scripts clients des pages ASP.NET.  
   
 ## <a name="opening-script-documents"></a>Ouverture de documents de script  
-Vous pouvez afficher les listes de documents de script côté client et côté serveur dans le **l’Explorateur de solutions** à afficher. Vous pouvez ouvrir tout document de script à partir de l' **Explorateur de solutions**. Pour plus d'informations, consultez [How to: View Script Documents](../debugger/how-to-view-script-documents.md).  
+Vous pouvez afficher des listes de documents de script côté serveur et côté client dans le **l’Explorateur de solutions** à afficher. Vous pouvez ouvrir tout document de script à partir de l' **Explorateur de solutions**. Pour plus d'informations, consultez [How to: View Script Documents](../debugger/how-to-view-script-documents.md).  
   
 ## <a name="breakpoint-mapping"></a>Mappage de point d'arrêt  
  Dans Visual Studio, vous ne pouvez pas déboguer directement le code côté serveur, mais vous pouvez définir un point d'arrêt dans un fichier côté serveur. Visual Studio mappe automatiquement le point d'arrêt à un emplacement correspondant dans le fichier côté client et crée un point d'arrêt mappé dans le code côté client.  
@@ -59,11 +59,11 @@ Vous pouvez afficher les listes de documents de script côté client et côté s
 ## <a name="debugging-ajax-script-applications"></a>Débogage d'applications de script AJAX  
  Les applications Web AJAX ont un usage intensif du code de script et représentent un sérieux défi pour le débogage. Pour plus d'informations sur les techniques de débogage AJAX, consultez  
   
- [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
+ [Débogage et de traçage d’ensemble des Applications Ajax](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage des Applications ASP.NET et AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
- [Limitations sur le débogage de Script](../debugger/limitations-on-script-debugging.md)   
- [Fenêtres de variables](../debugger/debugger-windows.md)   
+ [Limitations du débogage de Script](../debugger/limitations-on-script-debugging.md)   
+ [Variable Windows](../debugger/debugger-windows.md)   
  [Fenêtre Exécution](../ide/reference/immediate-window.md)   
- [Vue d’ensemble des Applications Ajax de traçage et de débogage](http://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+ [Débogage et traçage d’ensemble des Applications Ajax](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

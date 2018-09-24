@@ -1,5 +1,5 @@
 ---
-title: Débogage de Code natif | Documents Microsoft
+title: Débogage du Code natif | Microsoft Docs
 ms.custom: ''
 ms.date: 04/11/2017
 ms.technology: vs-ide-debug
@@ -22,15 +22,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f57f1e559452c64f9f1a7b019d75b52384081d65
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: eba1f156589babb9a3bec38982bd27b7c17a83c8
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472904"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180189"
 ---
 # <a name="debugging-native-code"></a>Débogage du code natif
-Cette section décrit des techniques et des problèmes de débogage courants pour les applications natives. Les techniques décrites dans cette section sont des techniques avancées. Pour plus d’informations à l’aide du débogueur Visual Studio, consultez [présentation du débogueur](../debugger/debugger-basics.md).  
+Cette section décrit des techniques et des problèmes de débogage courants pour les applications natives. Les techniques décrites dans cette section sont des techniques avancées. Pour plus d’informations à l’aide du débogueur Visual Studio, consultez [présentation du débogueur](../debugger/getting-started-with-the-debugger.md).  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Guide pratique pour déboguer le code optimisé](../debugger/how-to-debug-optimized-code.md)  
@@ -61,7 +61,7 @@ Cette section décrit des techniques et des problèmes de débogage courants pou
  Explique comment déboguer du code qui utilise des attributs. Les instructions concernent le mode d'activation de l'annotation de la source, le mode d'affichage du code injecté et le mode d'affichage du code machine au point d'exécution en cours.  
   
  [Procédure pas à pas : débogage d’une application parallèle](../debugger/walkthrough-debugging-a-parallel-application.md)  
- Décrit comment utiliser le **tâches parallèles** et **piles parallèles** fenêtres pour déboguer une application parallèle.  
+ Décrit comment utiliser le **tâches parallèles** et **piles parallèles** outil windows pour déboguer une application parallèle.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
  [Types de projets Visual C++](../debugger/debugging-preparation-visual-cpp-project-types.md)  

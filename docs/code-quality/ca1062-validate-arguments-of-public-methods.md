@@ -14,14 +14,17 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8393123f34bf8c33e6a65f26944640b500334dcb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5be9d4e0e251d0e84627b04ccdd5bd4842d2a0e8
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900876"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546861"
 ---
 # <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062 : Valider les arguments de méthodes publiques
 
@@ -38,7 +41,7 @@ Une méthode visible de l’extérieur déréférence l’un de ses arguments de
 
 ## <a name="rule-description"></a>Description de la règle
 
-Tous les arguments de référence passés aux méthodes visibles de l’extérieur doivent être vérifiés `null`. Si besoin, levez une <xref:System.ArgumentNullException> lorsque l’argument est `null`.
+Tous les arguments de référence passés aux méthodes visibles de l’extérieur doivent être vérifiés pour `null`. Si besoin, levez une <xref:System.ArgumentNullException> lorsque l’argument est `null`.
 
 Si une méthode peut être appelée à partir d’un assembly inconnu, car il est déclaré public ou protégé, vous devez valider tous les paramètres de la méthode. Si la méthode est conçue pour être appelée uniquement par les assemblys connus, vous devez rendre la méthode interne et appliquer le <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> d’attribut à l’assembly qui contient la méthode.
 
@@ -52,7 +55,7 @@ Vous pouvez supprimer un avertissement de cette règle si vous êtes sûr que le
 
 ## <a name="example"></a>Exemple
 
-L’exemple suivant montre une méthode qui enfreint la règle et une méthode qui satisfait la règle.
+L’exemple suivant montre une méthode qui viole la règle et une méthode qui satisfait la règle.
 
  ```csharp
  using System;
@@ -122,9 +125,9 @@ End Namespace
 
 ## <a name="example"></a>Exemple
 
-Les constructeurs de copie qui remplissent les propriétés du champ ou qui sont des objets de référence peuvent également violer la règle CA1062. La violation se produit parce que l’objet copié est passé au constructeur de copie peut être `null` (`Nothing` en Visual Basic). Pour résoudre la violation, utilisez une méthode static (Shared en Visual Basic) pour vérifier que l’objet copié n’est pas null.
+Les constructeurs de copie qui remplissent les propriétés du champ ou qui sont des objets de référence peuvent également violer la règle CA1062. La violation se produit parce que l’objet copié est passé au constructeur de copie peut être `null` (`Nothing` en Visual Basic). Pour résoudre la violation, utilisez une méthode statique (Shared en Visual Basic) pour vérifier que l’objet copié n’est pas null.
 
-Dans l’exemple suivant `Person` exemple de classe, le `other` objet est passé à la `Person` constructeur de copie peut être `null`.
+Dans l’exemple suivant `Person` exemple de classe, le `other` objet qui est passé à la `Person` constructeur de copie peut être `null`.
 
 ```csharp
 public class Person
@@ -149,7 +152,7 @@ public class Person
 
 ## <a name="example"></a>Exemple
 
-Suit révisé `Person` exemple, le `other` objet est passé au constructeur de copie est vérifié en premier pour la valeur null dans le `PassThroughNonNull` (méthode).
+Dans le code suivant révisée `Person` exemple, le `other` objet qui est passé au constructeur de copie est vérifié en premier pour null dans le `PassThroughNonNull` (méthode).
 
 ```csharp
 public class Person

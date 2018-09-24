@@ -1,5 +1,5 @@
 ---
-title: Attendu &#39;-&#39; | Documents Microsoft
+title: Attendu &#39;-&#39; | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,15 +20,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b6d1dbf8364ce34af090bfe35cfad965f610ea1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 141d7239ebbd32ceff9be45a8b4be97afd8887b0
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633429"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283273"
 ---
 # <a name="expected-39-39"></a>Attendu &#39;-&#39;
-Vous a tenté de créer une expression régulière littérale, mais n’incluez pas un des barres obliques (/). Tout comme les littéraux de chaîne sont écrits en tant que caractères au sein d’une paire de guillemets, littéraux d’expressions régulières sont exprimées sous forme de caractères au sein d’une paire de caractères de barre oblique (/).  
+Vous a tenté de créer une expression régulière littérale, mais n’incluez pas un des barres obliques (/). Tout comme les littéraux de chaîne sont écrits en tant que caractères dans une paire de guillemets, littéraux d’expressions régulières sont exprimées en tant que caractères dans une paire de caractères de barre oblique (/).  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
@@ -36,4 +36,4 @@ Vous a tenté de créer une expression régulière littérale, mais n’incluez 
   
 ## <a name="see-also"></a>Voir aussi  
  [Objet d’Expression régulière](../../javascript/reference/regular-expression-object-javascript.md)   
- [Syntaxe d’Expression régulière (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)
+ [Syntaxe d’Expression régulière (JavaScript)](https://msdn.microsoft.com/library/1400241x)

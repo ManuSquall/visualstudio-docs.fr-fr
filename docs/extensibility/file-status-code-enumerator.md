@@ -1,5 +1,5 @@
 ---
-title: Énumérateur de Code d’état de fichier | Documents Microsoft
+title: Énumérateur de Code d’état de fichier | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3415440c80fcaa88edbecee924a118f82a9dd99
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b51e20c18562c1c0e6c23968577dd58eadfe59e
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128166"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498166"
 ---
-# <a name="file-status-code-enumerator"></a>Énumérateur de Code de statut de fichier
-Le `SccStatus` énumérateur contient des valeurs de constantes nommées qui spécifient l’état d’un fichier dans le système de contrôle de code source. Cette énumération est utilisée par le [SccQueryInfo](../extensibility/sccqueryinfo-function.md) et `POPLISTFUNC` fonction de rappel (voir [POPLISTFUNC](../extensibility/poplistfunc.md) pour plus d’informations).  
+# <a name="file-status-code-enumerator"></a>Énumérateur de code de statut de fichier
+Le `SccStatus` énumérateur contient des valeurs de constantes nommées qui spécifient l’état d’un fichier dans le système de contrôle source. Cette énumération est utilisée par le [SccQueryInfo](../extensibility/sccqueryinfo-function.md) et `POPLISTFUNC` fonction de rappel (voir [POPLISTFUNC](../extensibility/poplistfunc.md) pour plus d’informations).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -53,7 +53,7 @@ enum SccStatus {
   
 ## <a name="members"></a>Membres  
  SCC_STATUS_INVALID  
- État n’a pas pu être obtenu ; ne comptez pas sur ce dernier.  
+ État n’a pas pu être obtenu ; ne comptez pas sur celle-ci.  
   
  SCC_STATUS_NOTCONTROLLED  
  Fichier n’est pas sous contrôle de code source.  
@@ -80,19 +80,19 @@ enum SccStatus {
  Fichier a été supprimé du projet.  
   
  SCC_STATUS_LOCKED  
- Fichier est verrouillé ; pas de versions plus autorisées.  
+ Fichier est verrouillé ; aucune version plus autorisée.  
   
  SCC_STATUS_MERGED  
- Fichier a été fusionné mais pas encore fixe/vérifiés.  
+ Fichier a été fusionné mais pas encore résolu/vérifié.  
   
  SCC_STATUS_SHARED  
  Fichier est partagé entre les projets.  
   
  SCC_STATUS_PINNED  
- Fichier est partagé à une version explicite.  
+ Fichier est partagé sur une version explicite.  
   
  SCC_STATUS_MODIFIED  
- Fichier a été modifié, divisé/violée.  
+ Fichier a été modifié, rompu/violée.  
   
  SCC_STATUS_OUTBYUSER  
  Fichier est extrait par l’utilisateur actuel.  

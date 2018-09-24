@@ -1,16 +1,16 @@
 ---
 title: Inclusion d’un package NuGet dans votre projet
 description: Ce document explique comment inclure un package NuGet dans un projet Xamarin. Il décrit la recherche et le téléchargement d’un package, et il présente les fonctionnalités d’intégration de l’IDE.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.openlocfilehash: f251080351f1e448d250798c4f9a758114a6e5ab
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: af10c9b6f5b2d2462d0dfd08bb8010c2bbe74e2f
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957490"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43223903"
 ---
 # <a name="including-a-nuget-package-in-your-project"></a>Inclusion d’un package NuGet dans votre projet
 
@@ -60,7 +60,7 @@ Une fois que le package NuGet a été ajouté et que les références du projet 
 Veillez à ajouter les directives `using` nécessaires en haut de votre fichier :
 
 ```csharp
-using Newtownsoft.json;
+using Newtonsoft.Json;
 ```
 
 La plupart des packages NuGet fournissent des informations supplémentaires, comme un lien vers une page README ou Projet vers la source NuGet. Vous pouvez normalement trouver ce lien dans le texte de présentation du package sur la page Ajouter des packages :

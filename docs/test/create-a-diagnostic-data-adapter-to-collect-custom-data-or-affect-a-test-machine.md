@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a12cac4e3a0c7144fd2e2cca2044ad416ac966d0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0839bbf95b701f1104ab5c9fb1c66318ac4707c9
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31964949"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321227"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>Créer un adaptateur de données de diagnostic pour collecter des données personnalisées ou affecter une machine de test
 
@@ -34,7 +34,7 @@ Si vous exécutez vos tests à partir de Visual Studio, vous devez définir ces 
 |-----------|-----------------------|
 |**Création d’un adaptateur de données de diagnostic :** vous pouvez créer un adaptateur de données de diagnostic en définissant une bibliothèque de classes. Vous devez ensuite utiliser les API de l’adaptateur de données de diagnostic pour collecter les informations souhaitées ou impacter un système qui vous permet d’exécuter vos tests.|-   [Guide pratique pour créer un adaptateur de données de diagnostic](../test/how-to-create-a-diagnostic-data-adapter.md)|
 |**Installation d’un adaptateur de données de diagnostic personnalisé :** vous pouvez installer votre adaptateur de données de diagnostic, ou un adaptateur fourni par un tiers, en le copiant dans le répertoire approprié.|-   [Guide pratique pour installer un adaptateur de données de diagnostic personnalisé](../test/how-to-install-a-custom-diagnostic-data-adapter.md)|
-|**Sélection d’un adaptateur de données de diagnostic personnalisé à utiliser durant l’exécution des tests :** vous pouvez sélectionner l’adaptateur de données de diagnostic à utiliser pour vos paramètres de test afin d’employer cet adaptateur quand vous exécutez vos tests.|-   [Collecter les données de diagnostic pendant les tests (VSTS)](/vsts/manual-test/collect-diagnostic-data)<br />-   [Collecter des données de diagnostic dans des tests manuels (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|
+|**Sélection d’un adaptateur de données de diagnostic personnalisé à utiliser durant l’exécution des tests :** vous pouvez sélectionner l’adaptateur de données de diagnostic à utiliser pour vos paramètres de test afin d’employer cet adaptateur quand vous exécutez vos tests.|-   [Collecter les données de diagnostic pendant les tests (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)<br />-   [Collecter les données de diagnostic dans des tests manuels (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**Configuration des opérations exécutées par un adaptateur de données de diagnostic :** vous pouvez configurer les paramètres qui permettent de contrôler les actions de l’adaptateur de données de diagnostic dans ces paramètres de test spécifiques.|-   [Guide pratique pour créer un éditeur personnalisé pour les données de votre adaptateur de données de diagnostic](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)|
 
 ## <a name="see-also"></a>Voir aussi

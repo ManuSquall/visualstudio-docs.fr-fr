@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6397a8b35934842497a756fc3294a47e30fb281
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 40898b249fae9f8d13d3fd5a80eafc3c72e3e819
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978070"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281089"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Résolution des erreurs liées au réseau lorsque vous installez ou utilisez Visual Studio
 
@@ -73,7 +73,7 @@ Cette erreur se produit généralement quand les utilisateurs sont connectés à
 
 ## <a name="error-the-underlying-connection-was-closed"></a>Erreur : « La connexion sous-jacente a été fermée »
 
-Si vous utilisez Visual Studio dans un réseau privé qui utilise un pare-feu, Visual Studio risque de ne pas pouvoir se connecter à certaines ressources réseau. Ces ressources peuvent inclure Visual Studio Team Services (VSTS) pour la connexion et la gestion des licences, NuGet et les services Azure. Si Visual Studio ne parvient pas à se connecter à l’une de ces ressources, le message d’erreur suivant s’affiche :
+Si vous utilisez Visual Studio dans un réseau privé qui utilise un pare-feu, Visual Studio risque de ne pas pouvoir se connecter à certaines ressources réseau. Ces ressources peuvent inclure Azure DevOps Services pour la connexion et la gestion des licences, NuGet et des services Azure. Si Visual Studio ne parvient pas à se connecter à l’une de ces ressources, le message d’erreur suivant s’affiche :
 
   **La connexion sous-jacente a été fermée : une erreur inattendue s’est produite lors de l’envoi**
 
@@ -103,7 +103,7 @@ Activez les connexions pour les URL suivantes :
 
 - cdn.vsassets.io (héberge le contenu du réseau de distribution de contenu, ou CDN)
 
-- &#42;.gallerycdn.vsassets.io (héberge les extensions VSTS)
+- &#42;. gallerycdn.vsassets.io (héberge les extensions d’Azure DevOps Services)
 
 - static2.sharepointonline.com (héberge les ressources que Visual Studio utilise dans le kit Office UI Fabric, telles que les polices)
 
@@ -112,16 +112,7 @@ Activez les connexions pour les URL suivantes :
  > [!NOTE]
  > Les URL des serveurs NuGet dont la propriété est privée peuvent ne pas figurer dans cette liste. Vous pouvez vérifier les serveurs NuGet que vous utilisez dans %APPData%\Nuget\NuGet.Config.
 
-## <a name="get-support"></a>Obtenir de l’aide
-
-Si votre installation de Visual Studio échoue, consultez la page [Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017](troubleshooting-installation-issues.md). Si aucune étape de résolution des problèmes d’installation ne vous aide, vous pouvez nous contacter pour une conversation en direct sur une assistance à l’installation (en anglais uniquement). Pour plus de détails, consultez la [page du support Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Voici d’autres options de support :
-
-* Vous pouvez nous signaler des problèmes au niveau d’un produit via l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio-2017.md) qui s’affiche dans le programme d’installation de Visual Studio et dans l’IDE de Visual Studio.
-* Vous pouvez nous faire part d’une suggestion de produit via [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Vous pouvez suivre les problèmes au niveau d’un produit et obtenir des réponses dans la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com/).
-* Vous pouvez également communiquer avec nous et d’autres développeurs Visual Studio en prenant part à notre [conversation Visual Studio dans la communauté Gitter](https://gitter.im/Microsoft/VisualStudio). (Cette option nécessite un compte [GitHub](https://github.com/).)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Voir aussi
 

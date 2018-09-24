@@ -11,20 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6f2a598ba816b12ca7027495e3775d160a7aefd6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 84cf5649eac1d3183eb0c50f4a7010f202363a78
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974856"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380803"
 ---
-# <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Spécifications du contrôleur de test et de l’agent de test pour le test de charge
+# <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Configuration requise du contrôleur de test et de l’agent de test pour le test de charge
 
 Visual Studio intègre plusieurs types de tests, notamment les tests de performances web, les tests de charge et les tests manuels. Visual Studio permet aux utilisateurs de Visual Studio Application Lifecycle Management d’exécuter des tests sur des ordinateurs distants à l’aide d’un contrôleur de test et d’un ou plusieurs agents. Consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).
 
 ## <a name="hardware-and-software-requirements"></a>Configurations matérielle et logicielle requises
 
-À la fois les ordinateurs du contrôleur de test et de l'agent de test ont des configurations matérielle et logicielle requises spécifiques. De plus, pour déployer les ordinateurs des agents de test et du contrôleur de test en plusieurs langues, vous devez planifier la prise en charge de ces langues.
+À la fois les ordinateurs du contrôleur de test et de l’agent de test ont des configurations matérielle et logicielle requises spécifiques. De plus, pour déployer les ordinateurs des agents de test et du contrôleur de test en plusieurs langues, vous devez planifier la prise en charge de ces langues.
 
 ### <a name="hardware-requirements"></a>Configuration matérielle requise
 
@@ -39,7 +39,7 @@ Le tableau suivant affiche la configuration matérielle requise recommandée pou
 |N x 30 ordinateurs dans l'environnement de test. Avec agents et serveurs en cours de test.|Test Controller|N processeurs 2,6 GHz|||
 
 > [!NOTE]
-> Le nombre d'utilisateurs virtuels varie considérablement d'un test à l'autre. Cette variation est due en grande partie au *temps de réflexion* ou délai d’utilisateur. Pour plus d’informations, consultez [Modification des temps de réflexion pour simuler les retards d’interaction humaine avec un site web](../test/edit-think-times-in-load-test-scenarios.md). Dans un test de charge, les tests Web sont généralement plus efficaces et génèrent une plus grande charge que les tests unitaires. Les chiffres du tableau précédent s'appliquent aux tests Web avec un temps de réflexion de 3 à 5 secondes dans une applications web typique.
+> Le nombre d'utilisateurs virtuels varie considérablement d'un test à l'autre. Cette variation est due en grande partie au *temps de réflexion* ou délai d’utilisateur. Pour plus d’informations, consultez [Modifier les temps de réflexion pour simuler les délais d’interaction humaine avec un site web](../test/edit-think-times-in-load-test-scenarios.md). Dans un test de charge, les tests web sont généralement plus efficaces et génèrent une plus grande charge que les tests unitaires. Les chiffres du tableau précédent s'appliquent aux tests web avec un temps de réflexion de 3 à 5 secondes dans une applications web typique.
 
 Les indications présentées ici fournissent une aide générale en matière de planification matérielle. Les performances des tests seront très différentes selon la quantité de données des tests et le nombre d’agents de test. Pour les agents de test, la vitesse du processeur et la mémoire disponible limiteront la charge du test. Les contrôleurs de test ont besoin de ressources plus nombreuses en fonction du nombre d’agents de test et du volume de données impliqués dans les tests.
 
@@ -51,13 +51,13 @@ Les agents de test génèrent un large volume de données sur les contrôleurs d
 
 Outre le matériel recommandé ici, vous devez envisager d'acquérir du matériel supplémentaire pour les serveurs critiques, tels qu'une alimentation et des ventilateurs supplémentaires.
 
-### <a name="language-requirements"></a>Exigences de la langue
+### <a name="language-requirements"></a>Exigences relatives à la langue
 
 Pour éviter toute confusion et simplifier l’opération, un contrôleur de test et des agents de test doivent être configurés pour utiliser la même langue que le système d’exploitation de l’ordinateur et que celle de Team Foundation Server. Si l’agent de test et le contrôleur de test sont installés sur des ordinateurs différents, ils doivent être configurés afin d’utiliser la même langue. Toutefois, vous pouvez installer une autre version linguistique de Visual Studio sous un système d’exploitation en langue anglaise, si tant est que cette langue correspond à celle du déploiement de Team Foundation Server.
 
-## <a name="monitor-agent-resources"></a>Monitorer les ressources des agents
+## <a name="monitor-agent-resources"></a>Surveiller les ressources des agents
 
-Vous pouvez monitorer les ordinateurs agents pour déterminer leurs besoins en matière de ressources, en observant les processus **QTAgent\*.exe** qui sont exécutés et mis à l’échelle pendant les tests. Le goulot d'étranglement le plus courant pendant les processus QTAgent*.exe correspond à l'utilisation du processeur. Si l'utilisation du processeur est constamment supérieure à 95 %, cela indique que l'agent subit une charge importante. L'autre goulot d'étranglement courant est l'utilisation de la mémoire. Pour les tests exigeants, la surveillance de ces ressources peut aider à déterminer si une augmentation des ressources de l'ordinateur est nécessaire ou si les tests doivent être répartis différemment.
+Vous pouvez monitorer les ordinateurs agents pour déterminer leurs besoins en matière de ressources, en observant les processus *QTAgent\*.exe* qui sont exécutés et mis à l’échelle pendant les tests. Le goulot d’étranglement le plus courant pendant les processus *QTAgent\*.exe* correspond à l’utilisation du processeur. Si l'utilisation du processeur est constamment supérieure à 95 %, cela indique que l'agent subit une charge importante. L'autre goulot d'étranglement courant est l'utilisation de la mémoire. Pour les tests exigeants, la surveillance de ces ressources peut aider à déterminer si une augmentation des ressources de l'ordinateur est nécessaire ou si les tests doivent être répartis différemment.
 
 ## <a name="see-also"></a>Voir aussi
 

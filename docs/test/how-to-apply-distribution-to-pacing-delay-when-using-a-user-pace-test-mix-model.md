@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 268578638524ab4f5e5db605c3d394d28414547a
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 20fa17054c3334566114c5baf9bc98a71025c225
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448517"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204074"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Guide pratique afin d’appliquer une distribution au rythme pour un modèle de combinaison de tests dépendant du rythme de l’utilisateur
 
@@ -28,9 +28,9 @@ La propriété **Appliquer une distribution au rythme** est définie dans la fen
 
 La valeur de la propriété **Appliquer une distribution au rythme** peut avoir la valeur True ou False :
 
-- **True** : Le scénario applique des délais de distribution statistiques normaux spécifiés par la valeur de la colonne **Tests par utilisateur et par heure** dans la boîte de dialogue Modifier la combinaison de tests. Pour plus d’informations, consultez [Modification des modèles de combinaison de texte pour spécifier la probabilité d’exécution d’un test par un utilisateur virtuel](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **True** : le scénario applique des délais de distribution statistiques normaux spécifiés par la valeur de la colonne **Tests par utilisateur et par heure** dans la boîte de dialogue **Modifier la combinaison de tests**. Pour plus d’informations, consultez [Modifier des modèles de combinaison de texte pour spécifier la probabilité d’exécution d’un test par un utilisateur virtuel](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
-     Supposons que vous ayez comme valeur **Tests par utilisateur et par heure** dans la boîte de dialogue Modifier la combinaison de tests du jeu de tests deux utilisateurs par heure. Si la propriété **Appliquer une distribution au rythme** a la valeur **True**, une distribution statistique normale s’applique au délai d’attente entre les tests. Les tests exécuteront toujours deux tests par heure, mais l'intervalle entre eux ne sera pas nécessairement de 30 minutes. Le premier test peut être exécuté après quatre minutes et le deuxième test après 45 minutes.
+     Supposons que vous ayez comme valeur **Tests par utilisateur et par heure** dans la boîte de dialogue **Modifier la combinaison de tests** du jeu de tests deux utilisateurs par heure. Si la propriété **Appliquer une distribution au rythme** a la valeur **True**, une distribution statistique normale s’applique au délai d’attente entre les tests. Les tests exécuteront toujours deux tests par heure, mais l'intervalle entre eux ne sera pas nécessairement de 30 minutes. Le premier test peut être exécuté après quatre minutes et le deuxième test après 45 minutes.
 
 - **False** : Les tests s’exécutent à un rythme que vous avez spécifié avec la valeur de la colonne **Tests par utilisateur et par heure** dans la boîte de dialogue **Modifier la combinaison de tests**. Pour plus d’informations, consultez [Modifier des modèles de combinaison de texte pour spécifier la probabilité d’exécution d’un test par un utilisateur virtuel](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 

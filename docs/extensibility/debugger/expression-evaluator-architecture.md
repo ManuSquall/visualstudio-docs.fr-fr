@@ -1,5 +1,5 @@
 ---
-title: Architecture d’évaluateur d’expression | Documents Microsoft
+title: Architecture d’évaluateur d’expression | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,48 +15,48 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fdcdfef67531af40027a2dfe8c731fe9ba5128f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5110b34c13952e359b494352063a2a277fbdcdde
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107161"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232034"
 ---
 # <a name="expression-evaluator-architecture"></a>Architecture d’évaluateur d’expression
 > [!IMPORTANT]
->  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression managé](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+>  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’expression managé](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Intégration d’un langage propriétaire dans le package de débogage Visual Studio signifie implémentant les interfaces d’évaluateur (Java EE) expression requis et l’appel du fournisseur de symbole d’exécution de langage commun (SP) et les interfaces de classeurs. Les objets SP et le classeur, ainsi que l’adresse de l’exécution en cours, sont le contexte dans lequel les expressions sont évaluées. Les informations que ces interfaces créent et consomment représentent les concepts clés dans l’architecture d’un EE.  
+ L’intégration d’un langage propriétaire dans Visual Studio à déboguer le package signifie que vous doit définir les interfaces d’évaluateur (EE) expression requis et appeler le fournisseur de symbole d’exécution commun language (SP) et des interfaces de classeur. Les objets SP et binder, ainsi que l’adresse de l’exécution en cours, sont le contexte dans lequel les expressions sont évaluées. Les informations que ces interfaces produisent et consomment représentent les concepts clés dans l’architecture d’un EE.  
   
 ## <a name="overview"></a>Vue d'ensemble  
   
-### <a name="parsing-the-expression"></a>Analyse de l’Expression  
- Lorsque vous déboguez un programme, les expressions sont évaluées pendant un nombre de raisons, mais toujours lorsque le programme débogué a été arrêté à un point d’arrêt (un point d’arrêt placée par l’utilisateur ou un provoquée par une exception). Il est en cours de lorsque Visual Studio obtient un frame de pile, tel que représenté par la [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) interface, à partir du moteur de débogage (DE). Visual Studio appelle ensuite [GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) pour obtenir le [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) interface. Cette interface représente un contexte dans lequel les expressions peuvent être évaluées ; [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) est le point d’entrée pour le processus d’évaluation. Jusqu'à présent, toutes les interfaces sont implémentées par le DE.  
+### <a name="parse-the-expression"></a>Analyse de l’Expression  
+ Lorsque vous déboguez un programme, les expressions sont évaluées pour plusieurs raisons, mais toujours lorsque le programme en cours de débogage a été arrêté à un point d’arrêt (un point d’arrêt placée par l’utilisateur ou un provoquée par une exception). Il est pour l’instant lorsque Visual Studio obtient un frame de pile, telle que représentée par le [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) interface, à partir de la (dé) du moteur de débogage. Visual Studio appelle ensuite [GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) pour obtenir le [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) interface. Cette interface représente un contexte dans lequel les expressions peuvent être évaluées ; [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) est le point d’entrée pour le processus d’évaluation. Jusqu'à présent, toutes les interfaces sont implémentées par l’Allemagne.  
   
- Lorsque `IDebugExpressionContext2::ParseText` est appelée, le D’instancie le EE associé à la langue du fichier source où le point d’arrêt s’est produite (le DE également instancie le SH à ce stade). Le EE est représenté par le [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md) interface. Le D’appelle ensuite [analyser](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) pour convertir l’expression (sous forme de texte) dans une expression analysée, prêt pour l’évaluation. Cette expression analysée est représentée par le [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) interface. Notez que l’expression est analysée en général pas évaluée à ce stade.  
+ Lorsque `IDebugExpressionContext2::ParseText` est appelée, l’Allemagne instancie le EE associé à la langue du fichier source où le point d’arrêt s’est produite (le D’instancie également le SH à ce stade). Le EE est représenté par le [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md) interface. Le D’appelle ensuite [analyser](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) pour convertir l’expression (sous forme de texte) en une expression analysée, prêt pour l’évaluation. Cette expression analysée est représentée par le [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) interface. L’expression est analysée en général et pas évaluée à ce stade.  
   
- Le DE crée un objet qui implémente le [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interface, met la `IDebugParsedExpression` de l’objet dans le `IDebugExpression2` objet et retourne le `IDebugExpression2` à partir de l’objet `IDebugExpressionContext2::ParseText`.  
+ Le DE crée un objet qui implémente le [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interface, met le `IDebugParsedExpression` de l’objet dans le `IDebugExpression2` objet et retourne le `IDebugExpression2` à partir de l’objet `IDebugExpressionContext2::ParseText`.  
   
-### <a name="evaluating-the-expression"></a>Évaluation de l’Expression  
- Visual Studio appelle [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) ou [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) pour évaluer l’expression analysée. Ces deux méthodes appellent [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) (`IDebugExpression2::EvaluateSync` appelle la méthode immédiatement, tandis que `IDebugExpression2::EvaluateAsync` appelle la méthode via un thread d’arrière-plan) pour évaluer l’expression analysée et renvoyer un [ IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) interface qui représente la valeur et le type de l’expression analysée. `IDebugParsedExpression::EvaluateSync` utilise SH, l’adresse et le classeur fourni pour convertir l’expression analysée une valeur réelle, représentée par le `IDebugProperty2` interface.  
+### <a name="evaluate-the-expression"></a>Évaluer l’expression  
+ Visual Studio appelle [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) ou [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) pour évaluer l’expression analysée. Ces deux méthodes appellent [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) (`IDebugExpression2::EvaluateSync` appelle la méthode immédiatement, tandis que `IDebugExpression2::EvaluateAsync` appelle la méthode via un thread d’arrière-plan) pour évaluer l’expression analysée et renvoyer un [ IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) interface qui représente la valeur et le type de l’expression analysée. `IDebugParsedExpression::EvaluateSync` utilise le SH, l’adresse et le binder fourni pour convertir l’expression analysée en une valeur réelle, représentée par le `IDebugProperty2` interface.  
   
-### <a name="for-example"></a>Par exemple  
- Après qu’un point d’arrêt est atteint dans un programme en cours d’exécution, l’utilisateur choisit afficher une variable dans le **Espion express** boîte de dialogue. Cette boîte de dialogue affiche le nom de la variable, sa valeur et son type. L’utilisateur peut modifier généralement la valeur.  
+### <a name="for-example"></a>Exemple :  
+ Après qu’un point d’arrêt est atteint dans un programme en cours d’exécution, l’utilisateur choisit d’afficher une variable dans le **Espion express** boîte de dialogue. Cette boîte de dialogue affiche le nom de la variable, sa valeur et son type. L’utilisateur peut modifier généralement la valeur.  
   
- Lorsque le **Espion express** boîte de dialogue s’affiche, le nom de la variable en cours d’examen est envoyé sous forme de texte à [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md). Cette opération retourne un [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) objet qui représente l’expression analysée, dans ce cas, la variable. [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) est alors appelée pour produire un `IDebugProperty2` objet qui représente la valeur de la variable et de type, ainsi que son nom. Il s’agit de ces informations s’affiche.  
+ Lorsque le **Espion express** boîte de dialogue s’affiche, le nom de la variable en cours d’examen est envoyé sous forme de texte à [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md). Cette commande renvoie un [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) objet qui représente l’expression analysée, dans ce cas, la variable. [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) est ensuite appelée pour produire un `IDebugProperty2` objet qui représente la valeur de la variable et de type, ainsi que son nom. Il s’agit de ces informations s’affiche.  
   
  Si l’utilisateur modifie la valeur de la variable, [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) est appelée avec la nouvelle valeur, ce qui modifie la valeur de la variable dans la mémoire, donc il sera utilisé lorsque le programme reprend en cours d’exécution.  
   
- Consultez [afficher les variables locales](../../extensibility/debugger/displaying-locals.md) pour plus d’informations sur ce processus d’afficher les valeurs des variables. Consultez [modification de la valeur des variables locales](../../extensibility/debugger/changing-the-value-of-a-local.md) pour plus d’informations sur la façon dont la valeur d’une variable est modifiée.  
+ Consultez [variables locales affichage](../../extensibility/debugger/displaying-locals.md) pour plus d’informations sur ce processus d’afficher les valeurs des variables. Consultez [modification de la valeur d’une variable locale](../../extensibility/debugger/changing-the-value-of-a-local.md) pour plus d’informations sur la façon dont une valeur est modifiée.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Contexte d’évaluation](../../extensibility/debugger/evaluation-context.md)  
- Fournit les arguments qui sont passées au moment de la D’appelle le Java EE.  
+ Fournit les arguments passés quand le D’appelle le EE.  
   
- [Interfaces d’évaluateur d’expression clé](../../extensibility/debugger/key-expression-evaluator-interfaces.md)  
- Décrit les interfaces cruciales nécessaires lors de l’écriture d’un EE, ainsi que le contexte d’évaluation.  
+ [Interfaces de d’évaluateur d’expression clé](../../extensibility/debugger/key-expression-evaluator-interfaces.md)  
+ Décrit les interfaces essentielles nécessaires lors de l’écriture d’un EE, ainsi que le contexte d’évaluation.  
   
 ## <a name="see-also"></a>Voir aussi  
- [L’écriture d’un évaluateur d’Expression CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
+ [Écriture d’un évaluateur d’expression de CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [Affichage des variables locales](../../extensibility/debugger/displaying-locals.md)   
  [Modification de la valeur d’une variable locale](../../extensibility/debugger/changing-the-value-of-a-local.md)

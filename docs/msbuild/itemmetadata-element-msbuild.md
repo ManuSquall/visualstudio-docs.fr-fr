@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e3251f3f4f9ee43584d427ada7c014a566dc4db
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 78e9bfffc38ac54ec7aeb525665dc7e3a8927f74
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567978"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080487"
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata, élément (MSBuild)
 Contient une clé de métadonnées d’élément définie par l’utilisateur, qui contient la valeur des métadonnées de l’élément. Un élément peut comporter un nombre quelconque de paires clé-valeur de métadonnées.  
@@ -34,7 +34,7 @@ Contient une clé de métadonnées d’élément définie par l’utilisateur, q
 
 ## <a name="syntax"></a>Syntaxe  
 
-```  
+```xml  
 <ItemMetadataName> Item Metadata value</ItemMetadataName>  
 ```  
 
@@ -61,8 +61,6 @@ Contient une clé de métadonnées d’élément définie par l’utilisateur, q
 
  Ce texte spécifie la valeur des métadonnées de l’élément (texte ou XML).  
 
-## <a name="remarks"></a>Notes  
-
 ## <a name="example"></a>Exemple  
  L’exemple de code ci-après indique comment ajouter des métadonnées `Culture` avec la valeur `fr` à l’élément `CSFile`.  
 
@@ -75,5 +73,5 @@ Contient une clé de métadonnées d’élément définie par l’utilisateur, q
 ```  
 
 ## <a name="see-also"></a>Voir aussi  
- [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)   
+ [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)   
  [Éléments](../msbuild/msbuild-items.md)

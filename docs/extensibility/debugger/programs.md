@@ -1,5 +1,5 @@
 ---
-title: Programmes | Documents Microsoft
+title: Programmes | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd3d1c1e72524c393fdb3adc4477ea9ae374fbfa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d8bd34f72f54fe068ff39b752ddbd6348e4970db
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102270"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252373"
 ---
 # <a name="programs"></a>Programs
-En termes de l’architecture du débogueur, une **programme**:  
+Dans l’architecture du débogueur, une *programme*:  
   
 -   Est un conteneur pour un ensemble de threads et un ensemble de modules. Un programme n’a aucune analogie unique dans le système d’exploitation Windows.  
   
-     Un programme est une sorte de sous-processus. Par exemple, lorsque vous déboguez un site Web, un script peut être considéré comme un programme. Même si un script s’exécute dans le processus du moteur de script, indépendamment des autres scripts, il possède aussi son propre ensemble de threads. Un moteur de débogage (DE) joint à un programme et non à un processus ou un thread.  
+     Un programme est un genre de sous-processus. Par exemple, lorsque vous déboguez un site Web, un script peut être considéré comme un programme. Même si un script s’exécute dans le processus de moteur de script, indépendamment des autres scripts, il également possède son propre ensemble de threads. Un moteur de débogage (dé) joint à un programme et non à un processus ou un thread.  
   
--   Peut identifier lui-même et le processus est en cours d’exécution, elle puisse être joint à être détaché et décrivent le DE qui l’a créé, le cas échéant. Un programme peut s’exécuter, arrêter, continuer et se terminer.  
+-   Peut identifier lui-même et le processus, dans qu'il est en cours d’exécution. Un programme peut être attaché pour être détaché et décrivent le DE qui l’a créé, le cas échéant. Un programme peut également exécuter, arrêter, continuer et être arrêtée.  
   
--   Peut énumérer tous les threads. Un programme peut également fournir son propre flux de code machine et peut énumérer tous les contextes de code d’une position de document donné.  
+-   Peut énumérer tous ses threads. Un programme peut également fournir son propre flux de code machine et pouvez énumérer tous les contextes de code d’une position de document donné.  
   
--   Est représenté par un [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) interface, créé avant que le programme est attaché, ou dans le cadre du processus d’attachement, selon l’implémentation. Lorsqu’un port énumère les programmes d’un processus, chaque programme est créé conformément à correspondante [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interface est passée comme argument à [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Alors que les moteurs de débogage également créer `IDebugProgram2` interfaces pour représenter, ces programmes ne sont pas créés en fonction d’un nœud de programme. Le `IDebugProgramNode2` interfaces créés par un DE sont utilisés pour le débogage réel, tandis que ceux créés par un port sont utilisées uniquement pour la découverte les programmes qui sont exécutent dans un processus.  
+-   Est représenté par un [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) interface, créée avant que le programme est attaché, ou dans le cadre du processus d’attachement, selon l’implémentation. Lorsqu’un port énumère les programmes d’un processus, chaque programme est créé conformément à un correspondant [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interface passée en tant qu’argument à [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Tandis que les moteurs de débogage également créer `IDebugProgram2` interfaces pour les programmes, ces programmes ne sont pas créés conformément à un nœud de programme. Le `IDebugProgramNode2` interfaces créés par un DE sont utilisés pour le débogage réel, tandis que ceux créés par un port sont utilisés uniquement pour découvrir les programmes qui sont exécutent dans un processus.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Processus](../../extensibility/debugger/processes.md)   

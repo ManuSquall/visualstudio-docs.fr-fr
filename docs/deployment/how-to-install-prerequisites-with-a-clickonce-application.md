@@ -1,5 +1,5 @@
 ---
-title: 'Comment : installer les composants requis avec une Application ClickOnce | Documents Microsoft'
+title: 'Comment : installer les composants requis avec une Application ClickOnce | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,39 +18,39 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d803ae651d75dd6195e4046b86a77d46d3174fc4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e363b021f8dfb82aa641a1baac4d2f33e0bd3d2e
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31559333"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152472"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Comment : installer les composants requis avec une application ClickOnce
-Tous les [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applications nécessitent que la version correcte du .NET Framework est installée sur un ordinateur avant de pouvoir exécuter ; les autres conditions préalables également de nombreuses applications ont. Lorsque vous publiez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application, vous pouvez choisir un ensemble de composants requis pour être empaqueté avec votre application. Au moment de l’installation, une vérification sera effectuée pour chaque composant requis déterminer s’il existe déjà ; Si elle ne sera pas installé avant d’installer le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.  
+Tous les [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applications requièrent que la version correcte du .NET Framework est installée sur un ordinateur avant de pouvoir exécuter ; de nombreuses applications ont également autres conditions préalables requises. Lorsque vous publiez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application, vous pouvez choisir un ensemble de composants requis à empaqueter avec votre application. Au moment de l’installation, une vérification sera effectuée pour chaque composant requis déterminer s’il existe déjà ; Si pas il sera installé avant d’installer le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.  
   
- Au lieu d’empaquetage et la publication des composants requis, vous pouvez également spécifier un emplacement de téléchargement pour les composants. Par exemple, au lieu d’inclure les composants requis avec chaque application que vous publiez, vous pouvez utiliser un partage de fichiers centralisé ou un emplacement Web qui contient les programmes d’installation pour tous vos composants requis, au moment de l’installation, les composants seront téléchargés et installer à partir de cet emplacement.  
+ Au lieu d’empaquetage et publication des conditions préalables, vous pouvez également spécifier un emplacement de téléchargement pour les composants. Par exemple, au lieu d’inclure les composants requis avec chaque application que vous publiez, vous pouvez utiliser un partage de fichiers centralisé ou un emplacement Web qui contient les programmes d’installation pour tous vos composants requis, au moment de l’installation, les composants seront téléchargés et installer à partir de cet emplacement.  
   
 > [!IMPORTANT]
 >  Vous devez ajouter des packages de programme d’installation préalable sur votre ordinateur de développement avant de publier votre premier [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application. Pour plus d’informations, consultez [Comment : inclure les composants requis avec une Application ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).  
   
- Les composants requis sont gérés dans le **conditions préalables** boîte de dialogue, accessible à partir de la **publier** volet de la **Concepteur de projet**.  
+ Conditions préalables sont gérés dans le **prérequis** boîte de dialogue, accessible à partir de la **publier** volet de la **Concepteur de projets**.  
   
 > [!NOTE]
->  Outre la liste prédéterminée des composants requis, vous pouvez ajouter vos propres composants à la liste. Pour plus d’informations, consultez [création de Packages de programme d’amorçage](../deployment/creating-bootstrapper-packages.md).  
+>  Outre la liste prédéterminée des conditions préalables, vous pouvez ajouter vos propres composants à la liste. Pour plus d’informations, consultez [création de packages de programme d’amorçage](../deployment/creating-bootstrapper-packages.md).  
   
-### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Pour spécifier les conditions requises pour installer avec une application ClickOnce  
+### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Pour spécifier les composants requis à installer avec une application ClickOnce  
   
 1.  Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
 2.  Sélectionnez le **publier** volet.  
   
-3.  Cliquez sur le **conditions préalables** bouton pour ouvrir la **conditions préalables** boîte de dialogue.  
+3.  Cliquez sur le **prérequis** bouton pour ouvrir la **conditions préalables** boîte de dialogue.  
   
 4.  Dans la boîte de dialogue **Composants requis** , vérifiez que la case à cocher **Créer un programme d'installation des composants requis** est activée.  
   
-5.  Dans le **conditions préalables** liste, vérifiez les composants que vous souhaitez installer, puis cliquez sur **OK**.  
+5.  Dans le **prérequis** liste, vérifiez les composants que vous souhaitez installer, puis cliquez sur **OK**.  
   
-     Les composants sélectionnés sont empaquetées et publiées avec votre application.  
+     Les composants sélectionnés seront empaquetés et publiés en même temps que votre application.  
   
 ### <a name="to-specify-a-different-download-location-for-prerequisites"></a>Pour spécifier un autre emplacement de téléchargement pour les composants requis  
   
@@ -58,7 +58,7 @@ Tous les [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] appli
   
 2.  Sélectionnez le **publier** volet.  
   
-3.  Cliquez sur le **conditions préalables** bouton pour ouvrir la **conditions préalables** boîte de dialogue.  
+3.  Cliquez sur le **prérequis** bouton pour ouvrir la **conditions préalables** boîte de dialogue.  
   
 4.  Dans la boîte de dialogue **Composants requis** , vérifiez que la case à cocher **Créer un programme d'installation des composants requis** est activée.  
   
@@ -70,5 +70,5 @@ Tous les [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] appli
     >  Il se peut que vous devez vous assurer que les programmes d’installation pour les composants spécifiés existent à l’emplacement spécifié.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
- [Guide pratique pour publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [Publier des applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
+ [Comment : publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

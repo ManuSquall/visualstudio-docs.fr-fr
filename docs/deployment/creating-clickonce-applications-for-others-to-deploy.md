@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d02482d6dcf0483fe40890039faff1e50fc3695
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: da9941ab179234b9afae95a63dcaaacd66daf7fa
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081424"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512146"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>Créer des applications ClickOnce pour d’autres personnes à déployer
 Pas tous les développeurs qui créent des déploiements ClickOnce plan déployer les applications elles-mêmes. Bon nombre d'entre eux simplement empaqueter leur application à l’aide de ClickOnce et ensuite remettre les fichiers à un client, par exemple une grande entreprise. Le client est alors chargé d’héberger l’application sur son réseau. Cette rubrique décrit certains des problèmes inhérents à ces déploiements dans les versions du .NET Framework antérieures à la version 3.5. Elle décrit ensuite une nouvelle solution fournie dans le .NET Framework 3.5 à l’aide de la nouvelle fonctionnalité « utiliser le manifeste pour approbation ». Enfin, elle présente les stratégies recommandées pour la création de déploiements de ClickOnce pour les clients qui utilisent encore des versions antérieures du .NET Framework.  
@@ -54,7 +54,7 @@ Pas tous les développeurs qui créent des déploiements ClickOnce plan déploye
 ## <a name="create-customer-deployments-by-using-application-manifest-for-trust"></a>Créer des déploiements de client à l’aide du manifeste d’application de confiance  
  ClickOnce dans .NET Framework 3.5 contient une nouvelle fonctionnalité qui permet aux développeurs et aux clients une nouvelle solution pour le scénario de la façon dont les manifestes doivent être signés. Le manifeste d’application ClickOnce prend en charge un nouvel élément nommé `<useManifestForTrust>` qui permet à un développeur d’indiquer que la signature numérique du manifeste d’application qui doit être utilisé pour les décisions d’approbation. Le développeur utilise des outils d’empaquetage ClickOnce, tels que *Mage.exe*, *MageUI.exe*et Visual Studio, d’inclure cet élément dans le manifeste d’application, ainsi que d’incorporer à la fois leur nom de serveur de publication et le nom de l’application dans le manifeste.  
   
- Lorsque vous utilisez `<useManifestForTrust>`, le manifeste de déploiement n’a pas d’être signé avec un certificat Authenticode émis par une autorité de certification. Au lieu de cela, elle peut être signée avec ce que l'on appelle un certificat auto-signé. Un certificat auto-signé est généré par le client ou le développeur à l’aide des outils de kit de développement logiciel .NET Framework standard et puis appliqué au manifeste de déploiement en utilisant les outils de déploiement ClickOnce standards. Pour plus d’informations, consultez [MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968.aspx).  
+ Lorsque vous utilisez `<useManifestForTrust>`, le manifeste de déploiement n’a pas d’être signé avec un certificat Authenticode émis par une autorité de certification. Au lieu de cela, elle peut être signée avec ce que l'on appelle un certificat auto-signé. Un certificat auto-signé est généré par le client ou le développeur à l’aide des outils de kit de développement logiciel .NET Framework standard et puis appliqué au manifeste de déploiement en utilisant les outils de déploiement ClickOnce standards. Pour plus d’informations, consultez [MakeCert](/windows/desktop/SecCrypto/makecert).  
   
  À l’aide d’un certificat auto-signé pour le manifeste de déploiement présente plusieurs avantages. En éliminant la nécessité pour le client obtenir ou créer leur propre certificat Authenticode, `<useManifestForTrust>` simplifie le déploiement du client, tout en permettant au développeur de conserver son identité de personnalisation sur l’application. Le résultat est un ensemble de déploiements signés qui sont plus sûres et ont des identités d’application uniques. Cela élimine le conflit potentiel qui peut se produire à partir du déploiement de la même application à plusieurs clients.  
   

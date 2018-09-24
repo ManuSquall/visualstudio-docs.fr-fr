@@ -9,12 +9,12 @@ description: Découvrez comment activer l’avantage Azure inclus dans votre abo
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 00a69bf03c47ddf57b2b45ba1f3d9e2547132521
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: b8f3542fce0d04e4e6efeba6e2558740c5f5d12f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280655"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282311"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Utiliser Microsoft Azure dans les abonnements Visual Studio
 
@@ -22,7 +22,7 @@ ms.locfileid: "36280655"
 
 En tant qu’abonné Visual Studio, vous pouvez utiliser Microsoft Azure sans frais supplémentaires.  Avec votre [crédit Azure mensuel](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), Azure est votre bac à sable (sandbox) personnel pour le développement et les tests.  Vous pouvez provisionner des machines virtuelles, des services cloud et d’autres ressources Azure.  Les montants du crédit varient selon le niveau de votre abonnement.
 
-## <a name="eligibililty"></a>Éligibilité
+## <a name="eligibility"></a>Éligibilité
 
 | Niveau d'abonnement / Programme                                 | Avantage                     | Renouvelable ?                                                   |
 |--------------------------------------------------------------|-----------------------------|--------------------------------------------------------------|
@@ -53,21 +53,22 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 1.  Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2.  Recherchez la vignette Azure dans la section Outils de la page Avantages, puis cliquez sur le lien **Activer** en bas de la vignette de l’avantage.
-
-    ![Vignette Azure](_img\vs-azure\vs-azure-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Vignette Azure](_img\vs-azure\vs-azure-tile.png)
 
 3.  Entrez les informations demandées pour créer votre abonnement Azure, cochez la case pour accepter les termes et conditions, puis cliquez sur **S’inscrire** :
-
-    ![Inscription à Azure](_img\vs-azure\vs-azure-sign-up-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Inscription à Azure](_img\vs-azure\vs-azure-sign-up-cropped.png)
 
 4.  Quand votre compte est prêt, vous pouvez choisir un plan de support Azure (vendu séparément) ou commencer à utiliser votre abonnement Azure.
-
-    ![Préparation d’Azure](_img\vs-azure\vs-azure-getting-ready-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Préparation d’Azure](_img\vs-azure\vs-azure-getting-ready-cropped.png)
 
 5.  Le tableau de bord Azure se charge. À la première utilisation, vous êtes invité à effectuer une visite guidée.  La visite guidée se compose d’une série d’info-bulles qui vous montrent comment effectuer diverses tâches et trouver les informations dont vous avez besoin.  À la fin ou à la fermeture de la visite guidée, le tableau de bord Azure s’affiche.
 
 6.  Ajoutez un signet au [portail Azure](https://portal.azure.com) pour pouvoir y accéder facilement la prochaine fois.
-![Tableau de bord Azure](_img\vs-azure\vs-azure-dashboard-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Tableau de bord Azure](_img\vs-azure\vs-azure-dashboard-cropped.png)
 
 ## <a name="faq"></a>FAQ
 
@@ -96,7 +97,7 @@ Si vous pouvez acheter un abonnement directement, effectuez une des opérations 
 
 Comparez tous les [abonnements et leurs avantages](https://visualstudio.microsoft.com/vs/pricing/).
 
-Si vous avez un autre abonnement Visual Studio actif au **même** niveau d’abonnement sous un compte Microsoft, vous pouvez le lier à cet avantage Azure en ajoutant un [compte alternatif](manage-vs-subscriptions.md#linking-my-subscription-to-existing-vsts-or-azure-subscriptions) dans le portail des abonnements Visual Studio. Si cela ne fonctionne pas, vous pouvez également essayer de [transférer votre avantage Azure](/azure/billing/billing-subscription-transfer/) à l’abonnement Visual Studio actif.
+Si vous avez un autre abonnement Visual Studio actif au **même** niveau d’abonnement sous un compte Microsoft, vous pouvez le lier à cet avantage Azure en ajoutant un [compte alternatif](manage-vs-subscriptions.md#linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions) dans le portail des abonnements Visual Studio. Si cela ne fonctionne pas, vous pouvez également essayer de [transférer votre avantage Azure](/azure/billing/billing-subscription-transfer/) à l’abonnement Visual Studio actif.
 
 Si vous avez un autre abonnement Visual Studio actif à un niveau d’abonnement **différent** et sous un compte Microsoft, contactez le [support technique Azure](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade) pour obtenir de l’aide.
 
@@ -112,4 +113,4 @@ Si vous pensez que vous avez reçu cet e-mail par erreur, contactez le [support 
     - Support technique : [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
     - [Documentation Azure](/azure/)
 -  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  Vous avez des questions concernant l’IDE Visual Studio, Visual Studio Team Services ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
+-  Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).

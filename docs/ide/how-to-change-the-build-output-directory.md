@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 721b8241a3278ddbf1be3b5477e8829b7aa4447b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: aebb4603d32f61c2d4b50355a550a1a932336962
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942245"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379687"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Guide pratique pour changer le répertoire de sortie de build
 
@@ -28,7 +28,7 @@ Vous pouvez spécifier l’emplacement de sortie en fonction de la configuration
 
 ## <a name="change-the-build-output-directory"></a>Changer le répertoire de sortie de build
 
-1.  Dans la barre de menus, choisissez **Projet** > **\<Nom_application> Propriétés**. Vous pouvez également cliquer avec le bouton droit sur le nœud du projet dans l' **Explorateur de solutions** , puis sélectionner **Propriétés**.
+1.  Dans la barre de menus, choisissez **Projet** > **\<Nom_application> Propriétés**. Vous pouvez également cliquer avec le bouton droit sur le nœud du projet dans **Explorateur de solutions**, puis sélectionner **Propriétés**.
 
 2.  Si vous avez un projet Visual Basic, sélectionnez l'onglet **Compiler** . Si vous avez un projet C#, sélectionnez l'onglet **Générer**. Si vous avez un projet C++ ou un projet JavaScript, sélectionnez l'onglet **Général** .
 

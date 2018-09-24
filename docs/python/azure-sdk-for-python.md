@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 241c7c424f9ef670f16eead4fc400e375584f8c2
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 6c7f38dbe58c5172c8480c88ae84c6e28f5d512b
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057952"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545552"
 ---
 # <a name="azure-sdk-for-python"></a>Kit de développement logiciel (SDK) Azure pour Python
 
@@ -39,9 +39,9 @@ Vous pouvez également suivre les instructions d’[installation de Python et du
 
 Vous trouverez la documentation sur [azure-sdk-for-python.readthedocs.org](https://docs.microsoft.com/en-us/python/azure/?view=azure-python).
 
-Le [kit SDK Azure pour le centre de développement Python](http://azure.microsoft.com/develop/python/) dispose également d’un certain nombre de ressources utiles, y compris d’une série de didacticiels :
+Le [kit SDK Azure pour le centre de développement Python](https://azure.microsoft.com/develop/python/) dispose également d’un certain nombre de ressources utiles, y compris d’une série de didacticiels :
 
-- Création d’applications web avec [Django](/azure/app-service-web/web-sites-python-create-deploy-django-app) [Flask](/azure/app-service-web/web-sites-python-create-deploy-flask-app) et [Bottle](/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
+- Création d’applications web avec [Django](/azure/app-service-web/web-sites-python-create-deploy-django-app), [Flask](/azure/app-service-web/web-sites-python-create-deploy-flask-app) et [Bottle](/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
 - [Stockage d’objets BLOB](/azure/storage/storage-python-how-to-use-blob-storage)
 - [Stockage de tables](/azure/storage/storage-python-how-to-use-table-storage)
 - [Stockage de file d’attente](/azure/storage/storage-python-how-to-use-queue-storage)
@@ -55,7 +55,6 @@ Pour les API publiques sans documentation, les tests unitaires du [référentiel
 - [Créer des tests d’unités](https://github.com/Azure/azure-storage-python/tree/master/tests)
 - [Tests d’unités Service Bus](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-servicebus/tests)
 - [Tests d’unités de gestion des services](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-servicemanagement-legacy/tests)
-- [Tests d’unités de gestion des ressources](https://github.com/Azure/azure-sdk-for-python/tree/master/azure-mgmt/tests)
 
 ## <a name="support"></a>Assistance
 

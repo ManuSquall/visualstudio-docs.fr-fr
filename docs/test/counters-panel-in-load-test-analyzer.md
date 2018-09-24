@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fd87cdb912b7e2dcf13476bab610935db5ca4fd7
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 2b85d2d20f4400e252cbfd19ea169c7b27b2aecf
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36304340"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176877"
 ---
 # <a name="use-the-counters-panel-in-graphs-view-and-tables-view"></a>Utiliser le volet Compteurs dans la vue Graphiques et la vue Tables
 
@@ -37,7 +37,7 @@ Le volet des compteurs fournit les fonctionnalités suivantes :
 
     -   **Nom du scénario :** les branches portant le nom du scénario de test de charge dans l’arborescence des compteurs de performance contiennent toutes les instances des compteurs de test de charge associées à un scénario de test de charge particulier. La plupart des compteurs de test de charge sont imbriqués dans une branche de scénario.
 
-         Une branche de scénario contient des nœuds de test de performances de site web. Les nœuds de test de performances de site web contiennent les nœuds Pages, Requêtes et Transaction. Tout nœud terminal dans cette structure est un compteur de performance qui peut être ajouté à un graphique.
+         Une branche de scénario contient des nœuds de test de performances web. Ceux-ci contiennent des nœuds Pages, Demandes et Transaction. Tout nœud terminal dans cette structure est un compteur de performance qui peut être ajouté à un graphique.
 
     -   **Ordinateurs :** contient toutes les instances des compteurs qui ne correspondent pas à un test de charge, regroupées par ordinateur. La branche Ordinateurs contient un nœud pour chaque ordinateur associé au contrôleur du test de charge spécifié dans la section Rôles des paramètres de test actuellement sélectionnés. Pour plus d’informations, consultez [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md).
 
@@ -49,7 +49,7 @@ Le volet des compteurs fournit les fonctionnalités suivantes :
 
 |Volet Compteurs|Description|
 |-|-|
-|![Nœud de nom de scénario du panneau Compteur](../test/media/ltest__namenode.png)|1. Tous les compteurs de performance associés à Scenario1 du test de charge s'affichent sous ce nœud.<br />2. Tous les tests d'un scénario se trouvent sous le nœud du scénario. L'étiquette indique le nom du test.<br />3. Les nœuds terminaux sous un nœud de test sont des compteurs de cas de test du test de charge, pour lesquels le nom de l’instance du compteur est le nom du test.<br />4. Toutes les instances du compteur des pages du test de charge associées à une branche de test de performances de site web. Au niveau de ce nœud, toutes les instances des compteurs de pages du test de charge, associées à Obtention d'ouverture de session (nom du rapport) de la page du test de performances de site web IBuyBrowse dans Scenario1 du test de charge sont contenues ici.<br />5. Les nœuds terminaux sous un nœud de page sont des compteurs de pages de test de charge.<br />6. Toutes les instances des compteurs de requêtes du test de charge associées à un test de performances de site web sont contenues dans une branche de test de performances de site web. Au niveau de ce nœud, toutes les instances des compteurs de requêtes, associées à Obtention d'ouverture de session (nom du rapport) de la requête du test de performances de site web IBuyBrowse dans Scenario1 du test de charge sont contenues ici.<br />7. Les nœuds terminaux sous un nœud de demande sont des compteurs de demandes du test de charge.<br />8. Toutes les instances des compteurs de transactions du test de charge associées à un test de performances de site web sont contenues dans une branche de test de performances de site web. Au niveau de ce nœud, toutes les instances de compteur des transactions associées à la transaction nommée Transaction1 du test de performances de site web IBuyBrowse dans Scenraio1 du test de charge sont contenues ici.<br />9. Les nœuds terminaux sous un nœud de transactions sont des compteurs de transactions du test de charge.<br />10. Noeud de test unitaire.|
+|![Nœud de nom de scénario du panneau Compteur](../test/media/ltest__namenode.png)|1. Tous les compteurs de performance associés à Scenario1 du test de charge s'affichent sous ce nœud.<br />2. Tous les tests d'un scénario se trouvent sous le nœud du scénario. L'étiquette indique le nom du test.<br />3. Les nœuds terminaux sous un nœud de test sont des compteurs de cas de test du test de charge, pour lesquels le nom de l’instance du compteur est le nom du test.<br />4. Toutes les instances de compteurs de pages du test de charge associées à une branche de test de performances web. Toutes les instances de compteurs de pages du test de charge associées à la page Login GET (nom du rapport) du test de performances web IBuyBrowse dans le scénario Scenario1 du test de charge sont contenues au niveau de ce nœud.<br />5. Les nœuds terminaux sous un nœud de page sont des compteurs de pages de test de charge.<br />6. Toutes les instances de compteurs de demandes du test de charge associées à un test de performances web sont contenues dans une branche de test de performances web. Toutes les instances de compteurs de demandes associées à la demande Login GET (nom du rapport) du test de performances web IBuyBrowse dans le scénario Scenario1 du test de charge sont contenues au niveau de ce nœud.<br />7. Les nœuds terminaux sous un nœud de demande sont des compteurs de demandes du test de charge.<br />8. Toutes les instances de compteurs de transactions du test de charge associées à un test de performances web sont contenues dans une branche de test de performances web. Toutes les instances de compteurs de transactions associées à la transaction nommée Transaction1 du test de performances web IBuyBrowse dans le scénario Scenario1 du test de charge sont contenues au niveau de ce nœud.<br />9. Les nœuds terminaux sous un nœud de transactions sont des compteurs de transactions du test de charge.<br />10. Noeud de test unitaire.|
 
 ## <a name="tasks"></a>Tâches
 

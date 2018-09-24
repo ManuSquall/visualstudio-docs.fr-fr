@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc361925d26bb6274a90d62c0b0c2085b47210c4
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 914b0c3e493e8486247704ef22967c8ccd511ed2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34476699"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668578"
 ---
 # <a name="timer"></a>Minuterie
-L’option **Timer** de VSPerfCmd.exe définit l’événement de profilage qui est échantillonné aux cycles d’horloge du processeur et change éventuellement le nombre de cycles dans un intervalle d’échantillonnage (la valeur par défaut est 10 000 000). Sur un processeur d'1 GHz (un gigahertz), 10 000 000 de cycles d'horloge correspondent environ à 100 échantillons par seconde. Vous pouvez spécifier au minimum 50 000 cycles.  
+L’option **Timer** de *VSPerfCmd.exe* définit l’événement de profilage qui est échantillonné aux cycles d’horloge du processeur et change éventuellement le nombre de cycles dans un intervalle d’échantillonnage (la valeur par défaut étant 10 000 000). Sur un processeur d'1 GHz (un gigahertz), 10 000 000 de cycles d'horloge correspondent environ à 100 échantillons par seconde. Vous pouvez spécifier au minimum 50 000 cycles.  
   
  **Timer** peut être utilisé seulement quand vous utilisez la méthode de profilage par échantillonnage, et seulement sur une ligne de commande qui contient aussi l’option **Launch** ou **Attach**.  
   

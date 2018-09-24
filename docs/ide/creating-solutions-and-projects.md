@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee3a25927b80db9da2c9217ce04cf2064e26461a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: dc3b7e95e2d162df5a9a84fbc8777907253149e5
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571612"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118100"
 ---
 # <a name="create-solutions-and-projects"></a>Créer des solutions et des projets
 
@@ -43,7 +43,7 @@ Cela étant dit, le développement d’applications dans Visual Studio peut se f
 
 ## <a name="to-create-a-project-from-a-project-template"></a>Pour créer un projet à partir d’un modèle de projet
 
-1. Il existe plusieurs façons de créer un projet dans Visual Studio. Dans la **Page de démarrage**, entrez le nom d’un modèle de projet dans la zone **Rechercher dans les modèles de projet**, ou choisissez le lien **Créer un projet** pour ouvrir la boîte de dialogue **Nouveau projet**. Vous pouvez également choisir **Fichier** > **Nouveau** > **Projet...**  dans la barre de menus ou le bouton **Nouveau projet** dans la barre d’outils.
+1. Il existe plusieurs façons de créer un projet dans Visual Studio. Dans la **Page de démarrage**, entrez le nom d’un modèle de projet dans la zone **Rechercher dans les modèles de projet**, ou choisissez le lien **Créer un projet** pour ouvrir la boîte de dialogue **Nouveau projet**. Vous pouvez également choisir **Fichier** > **Nouveau** > **Projet** dans la barre de menus ou le bouton **Nouveau projet** dans la barre d’outils.
 
   ![Page de démarrage](./media/vside-newproject1.png)
 
@@ -100,7 +100,7 @@ Vous pouvez également créer des solutions vides qui ne contiennent pas de proj
 
 ### <a name="to-create-an-empty-solution"></a>Pour créer une solution vide
 
-1. Dans le menu, choisissez **Fichier** > **Nouveau** > **Projet...**.
+1. Dans le menu, choisissez **Fichier** > **Nouveau** > **Projet**.
 
 1. Dans le volet (**Modèles**) de gauche, choisissez **Autres types de projets** > **Solutions Visual Studio dans la liste développée**.
 

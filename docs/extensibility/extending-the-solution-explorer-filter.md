@@ -1,5 +1,5 @@
 ---
-title: Étendre le filtre de l’Explorateur de solutions | Documents Microsoft
+title: Étendre le filtre de l’Explorateur de solutions | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,28 +14,28 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 890c3572bf556b92481be204f947b62e6d596264
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bf43243abc361df6c5b32b0e71e966c61a501b52
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135503"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498786"
 ---
-# <a name="extending-the-solution-explorer-filter"></a>Étendre le filtre de l’Explorateur de solutions
-Vous pouvez étendre **l’Explorateur de solutions** filtrer les fonctionnalités pour afficher ou masquer les différents fichiers. Par exemple, vous pouvez créer un filtre qui affiche uniquement c# fabrique fichiers de classe dans le **l’Explorateur de solutions**, comme cette procédure pas à pas montre comment.  
+# <a name="extend-the-solution-explorer-filter"></a>Étendre le filtre de l’Explorateur de solutions
+Vous pouvez étendre **l’Explorateur de solutions** fonctionnalité pour afficher ou masquer les différents fichiers de filtrage. Par exemple, vous pouvez créer un filtre qui affiche uniquement classe factory fichiers c# dans le **l’Explorateur de solutions**, comme illustré dans cette procédure pas à pas.  
   
 ## <a name="prerequisites"></a>Prérequis  
- À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme une fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS ultérieurement. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+ À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS par la suite. Pour plus d’informations, consultez [installer le SDK Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
-### <a name="create-a-visual-studio-package-project"></a>Créer un projet de Package Visual Studio  
+### <a name="create-a-visual-studio-package-project"></a>Créer un projet de package Visual Studio  
   
-1.  Créez un projet VSIX nommé `FileFilter`. Ajouter un modèle d’élément de commande personnalisée nommé **FileFilter**. Pour plus d’informations, consultez [avec une commande de Menu pour créer une Extension](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1.  Créez un projet VSIX nommé `FileFilter`. Ajouter un modèle d’élément de commande personnalisée nommé **FileFilter**. Pour plus d’informations, consultez [créer une extension avec une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
 2.  Ajoutez une référence à `System.ComponentModel.Composition` et `Microsoft.VisualStudio.Utilities`.  
   
-3.  Afficher la commande de menu dans le **l’Explorateur de solutions** barre d’outils. Ouvrez le fichier FileFilterPackage.vsct.  
+3.  Afficher la commande de menu sur le **l’Explorateur de solutions** barre d’outils. Ouvrez le *FileFilterPackage.vsct* fichier.  
   
-4.  Modifier la `<Button>` bloc pour les éléments suivants :  
+4.  Modifier le `<Button>` bloc à ce qui suit :  
   
     ```xml  
     <Button guid="guidFileFilterPackageCmdSet" id="FileFilterId" priority="0x0400" type="Button">  
@@ -49,9 +49,9 @@ Vous pouvez étendre **l’Explorateur de solutions** filtrer les fonctionnalit�
   
 ### <a name="update-the-manifest-file"></a>Mettre à jour le fichier manifeste  
   
-1.  Dans le fichier source.extension.vsixmanifest, ajoutez une ressource qui est un composant MEF.  
+1.  Dans le *source.extension.vsixmanifest* , ajoutez un élément multimédia qui est un composant MEF.  
   
-2.  Sur le **actifs** , choisir le **nouveau** bouton.  
+2.  Sur le **actifs** , choisir le **New** bouton.  
   
 3.  Dans le **Type** champ, choisissez **Microsoft.VisualStudio.MefComponent**.  
   
@@ -59,22 +59,22 @@ Vous pouvez étendre **l’Explorateur de solutions** filtrer les fonctionnalit�
   
 5.  Dans le **projet** champ, choisissez **FileFilter**, puis choisissez le **OK** bouton.  
   
-### <a name="add-the-filter-code"></a>Ajoutez le Code de filtre  
+### <a name="add-the-filter-code"></a>Ajoutez le code de filtre  
   
-1.  Ajoutez des GUID pour le fichier FileFilterPackageGuids.cs :  
+1.  Ajouter des GUID pour le *FileFilterPackageGuids.cs* fichier :  
   
     ```csharp  
     public const string guidFileFilterPackageCmdSetString = "00000000-0000-0000-0000-00000000"; // get your GUID from the .vsct file  
     public const int FileFilterId = 0x100;  
     ```  
   
-2.  Ajouter un fichier de classe au projet FileFilter nommé FileNameFilter.cs.  
+2.  Ajouter un fichier de classe au projet FileFilter nommé *FileNameFilter.cs*.  
   
 3.  Remplacez l’espace de noms vide et la classe vide par le code ci-dessous.  
   
      Le `Task<IReadOnlyObservableSet> GetIncludedItemsAsync(IEnumerable<IVsHierarchyItem rootItems)` méthode accepte la collection qui contient la racine de la solution (`rootItems`) et retourne la collection d’éléments à inclure dans le filtre.  
   
-     Le `ShouldIncludeInFilter` méthode filtre les éléments de la **l’Explorateur de solutions** hiérarchie basée à condition que vous spécifiez.  
+     Le `ShouldIncludeInFilter` méthode filtre les éléments dans le **l’Explorateur de solutions** hiérarchie basée à condition que vous spécifiez.  
   
     ```csharp  
     using System;  
@@ -161,7 +161,7 @@ Vous pouvez étendre **l’Explorateur de solutions** filtrer les fonctionnalit�
   
     ```  
   
-4.  Dans FileFilter.cs, supprimez le code de positionnement et la gestion des commandes à partir du constructeur FileFilter. Le résultat doit ressembler à ceci :  
+4.  Dans *FileFilter.cs*, supprimer le placement de commande et de gestion de code à partir du constructeur FileFilter. Le résultat doit ressembler à ceci :  
   
     ```csharp  
     private FileFilter(Package package)  
@@ -175,9 +175,9 @@ Vous pouvez étendre **l’Explorateur de solutions** filtrer les fonctionnalit�
     }  
     ```  
   
-     Supprimez la méthode ShowMessageBox() également.  
+     Supprimer le `ShowMessageBox()` méthode également.  
   
-5.  Dans FileFilterPackage, cs, remplacez le code dans la méthode Initialize() avec les éléments suivants :  
+5.  Dans *FileFilterPackage.cs*, remplacez le code dans le `Initialize()` méthode par le code suivant :  
   
     ```csharp  
     protected override void Initialize()  
@@ -187,12 +187,12 @@ Vous pouvez étendre **l’Explorateur de solutions** filtrer les fonctionnalit�
     }  
     ```  
   
-### <a name="test-your-code"></a>Tester votre Code  
+### <a name="test-your-code"></a>Tester votre code  
   
 1.  Générez et exécutez le projet. Une seconde instance de Visual Studio apparaît. Il s’agit de l’instance expérimentale.  
   
 2.  Dans l’instance expérimentale de Visual Studio, ouvrez un projet c#.  
   
-3.  Recherchez le bouton que vous avez ajouté dans la barre d’outils de l’Explorateur de solutions. Il doit être le quatrième bouton de gauche.  
+3.  Recherchez le bouton que vous avez ajouté sur le **l’Explorateur de solutions** barre d’outils. Il doit être le quatrième bouton de la gauche.  
   
-4.  Lorsque vous cliquez sur le bouton, tous les fichiers doivent être éliminées par filtrage, et vous devez voir « tous les éléments ont été filtrés à partir de la vue. » dans l’Explorateur de solutions.
+4.  Lorsque vous cliquez sur le bouton, tous les fichiers doivent être filtrés, et vous devriez voir **tous les éléments ont été filtrés à partir de la vue.** dans le **l’Explorateur de solutions**.

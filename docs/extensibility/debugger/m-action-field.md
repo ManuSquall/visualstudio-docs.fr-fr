@@ -1,5 +1,5 @@
 ---
-title: m_action champ | Documents Microsoft
+title: Champ m_action | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,30 +13,30 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bd045c19b08ec5b3ba5db71e72e6380e65093a7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2ed825569809568269726e6ba592118f8b03c80b
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109247"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232375"
 ---
-# <a name="maction-field"></a>m_action champ
+# <a name="maction-field"></a>champ de m_action
 Délégué qui représente le code à exécuter dans le <xref:System.Threading.Tasks.Task> objet.  
   
  **Namespace :** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly :** mscorlib (dans mscorlib.dll)  
+ **Assembly :** mscorlib (dans *mscorlib.dll*)  
   
  Étant donné que vous ne pouvez pas accéder à ce membre interne du .NET Framework, la syntaxe suivante est fournie en commun Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```csharp  
 .field assembly object m_action  
 ```  
   
 ## <a name="remarks"></a>Notes  
- Il s’agit de la `action` paramètre dans le <xref:System.Threading.Tasks.Task.%23ctor%2A> constructeur.  
+ Il s’agit du `action` paramètre dans le <xref:System.Threading.Tasks.Task.%23ctor%2A> constructeur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Classe de tâche](../../extensibility/debugger/task-class-internal-members.md)

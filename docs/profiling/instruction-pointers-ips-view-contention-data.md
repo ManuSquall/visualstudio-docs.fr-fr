@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4109282bea850e7bca6154a56d0023c5ebb1c746
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b1157183bcb7cd13f2683d6d6dac32cfb81d8974
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845075"
 ---
-# <a name="instruction-pointers-ips-view---contention-data"></a>Pointeurs d’instructions (IP), vue - Données de conflit
+# <a name="instruction-pointers-ips-view---contention-data"></a>Pointeurs d’instructions (IP), vue - données de conflit
 La vue IP des données de conflit répertorie les données des instructions d’assembly dont l’exécution a été bloquée dans le cadre de l’exécution du profilage.  
   
  Le tableau suivant explique les valeurs des colonnes dans la vue Pointeurs d’instruction.  
@@ -44,7 +45,7 @@ La vue IP des données de conflit répertorie les données des instructions d�
 |**Fin ligne source**|Numéro de ligne dans le fichier source au niveau duquel cette instruction se termine.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour personnaliser les colonnes de la vue Rapport](../profiling/how-to-customize-report-view-columns.md)   
- [Pointeurs d’instruction (IP), vue](../profiling/instruction-pointers-ips-view.md)   
- [Vue Pointeurs d’instructions (IP) - Données d’échantillonnage de mémoire .NET](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
+ [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)   
+ [Pointeurs d’instruction (IP), vue - Données d’échantillonnage](../profiling/instruction-pointers-ips-view.md)   
+ [Pointeurs d’instruction (IP), vue - échantillonnage](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
  [Vue Pointeurs d’instruction (IP)](../profiling/instruction-pointers-ips-view-sampling-data.md)

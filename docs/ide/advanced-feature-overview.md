@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a60e340639a023adf50b739870035c0b81a82643
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 2c32f63f6272d550604df79186ae7c54cfc3f22e
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282523"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320941"
 ---
 # <a name="features-of-visual-studio-2017"></a>Fonctionnalités de Visual Studio 2017
 
-La rubrique [Vue d’ensemble de l’IDE de Visual Studio](../ide/visual-studio-ide.md) fournit une présentation générale de Visual Studio. Cet article décrit les fonctionnalités qui peuvent être plus appropriées pour les développeurs expérimentés, ou pour ceux qui sont déjà familiarisés avec Visual Studio.
+L’article [Vue d’ensemble de l’IDE Visual Studio](../ide/visual-studio-ide.md) fournit une présentation générale de Visual Studio. Cet article décrit les fonctionnalités qui peuvent être plus appropriées pour les développeurs expérimentés, ou pour ceux qui sont déjà familiarisés avec Visual Studio.
 
 ## <a name="modular-installation"></a>Installation modulaire
 
@@ -56,7 +56,7 @@ Pour plus d’informations, consultez [Accéder au cloud avec Visual Studio et A
 
 ## <a name="create-apps-for-the-web"></a>Créer des applications pour le web
 
-Le web est le moteur de notre monde moderne et Visual Studio peut vous aider à écrire des applications conçues pour lui. Vous pouvez créer des applications web à l’aide de ASP.NET, Node.js, Python, JavaScript et TypeScript. Visual Studio comprend les frameworks web, telles que Angular, jQuery, Express et plus encore. ASP.NET Core et .NET Core s’exécutent sur les systèmes d’exploitation Windows, Mac et Linux. [ASP.NET Core](http://www.asp.net/core/overview) est une mise à jour majeure de MVC, WebAPI et SignalR, qui s’exécute sur Windows, Mac et Linux.  ASP.NET Core a été spécialement conçu pour vous fournir une pile .NET adaptée et composable servant à générer des services et des applications web cloud modernes.
+Le web est le moteur de notre monde moderne et Visual Studio peut vous aider à écrire des applications conçues pour lui. Vous pouvez créer des applications web avec ASP.NET, Node.js, Python, JavaScript et TypeScript. Visual Studio comprend les frameworks web, telles que Angular, jQuery, Express et plus encore. ASP.NET Core et .NET Core s’exécutent sur les systèmes d’exploitation Windows, Mac et Linux. [ASP.NET Core](http://www.asp.net/core/overview) est une mise à jour majeure de MVC, WebAPI et SignalR, qui s’exécute sur Windows, Mac et Linux.  ASP.NET Core a été spécialement conçu pour vous fournir une pile .NET adaptée et composable servant à générer des services et des applications web cloud modernes.
 
 Pour plus d’informations, consultez [Outils web modernes](https://visualstudio.microsoft.com/vs/modern-web-tooling/).
 
@@ -100,19 +100,19 @@ Quand vous êtes prêt à déployer votre application terminée auprès d’util
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Gérer votre code source et collaborer avec d’autres utilisateurs
 
-Vous pouvez gérer votre code source dans des dépôts Git hébergés par tous types de fournisseurs, notamment GitHub. Ou utilisez [Visual Studio Team Services (VSTS)](/vsts/index) pour gérer le code en même temps que les bogues et les éléments de travail de votre projet entier. Pour plus d’informations sur la gestion des dépôts Git dans Visual Studio avec Team Explorer, consultez [Bien démarrer avec Git et Team Services (VSTS)](/vsts/git/gitquickstart?tabs=visual-studio). Visual Studio dispose également d’autres fonctionnalités de contrôle de code source intégrées. Pour plus d’informations sur ces fonctionnalités, consultez le billet de blog [New Git Features in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/).
+Vous pouvez gérer votre code source dans des dépôts Git hébergés par tous types de fournisseurs, notamment GitHub. Vous pouvez aussi utiliser [Azure DevOps Services](/azure/devops/index?view=vsts) pour gérer le code, ainsi que les bogues et les éléments de travail de tout votre projet. Pour en savoir plus sur la gestion des dépôts Git dans Visual Studio avec Team Explorer, consultez la page [Bien démarrer avec Git et Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio). Visual Studio dispose également d’autres fonctionnalités de contrôle de code source intégrées. Pour plus d’informations sur ces fonctionnalités, consultez le billet de blog [New Git Features in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/).
 
-Visual Studio Team Services est un service basé sur le cloud destiné à héberger des projets de logiciels et à permettre la collaboration dans des équipes. VSTS prend en charge les systèmes de contrôle de code source Git et Team Foundation, ainsi que les méthodologies de développement Scrum, CMMI et Agile. La gestion de version Team Foundation (TFVC) utilise un dépôt de serveur unique et centralisé pour effectuer le suivi et la gestion des versions des fichiers. Les modifications locales sont toujours archivées sur le serveur central, où les autres développeurs peuvent obtenir les dernières modifications.
+Les services Azure DevOps Services sont des services cloud pour la planification, l’hébergement, l’automatisation et le déploiement de logiciels, et pour la collaboration dans les équipes. Azure DevOps Services prend en charge les dépôts Git (gestion distribuée des versions) et Team Foundation Version Control (gestion centralisée des versions), ainsi que des pipelines de build en continu et de mise en production (CI/CD) du code stocké dans les systèmes de gestion de versions. Azure DevOps Services prend également en charge les méthodologies de développement Scrum, CMMI et Agile.
 
 Team Foundation Server (TFS) est le hub de gestion du cycle de vie des applications pour Visual Studio. Il permet à toutes personnes impliquées dans le processus de développement de participer à une même solution. TFS est également utile pour la gestion des équipes et des projets hétérogènes.
 
-Si vous avez un compte Visual Studio Team Services ou Team Foundation Server sur votre réseau, vous vous y connectez via la fenêtre **Team Explorer** dans Visual Studio. Depuis cette fenêtre, vous pouvez vérifier le code dans ou en dehors du contrôle de code source, gérer des éléments de travail, démarrer des builds et accéder aux salles d'équipe et aux espaces de travail. Vous pouvez ouvrir **Team Explorer** à partir de la zone **Lancement rapide** ou, dans le menu principal, à partir de **Affichage** > **Team Explorer** ou de **Équipe** > **Gérer les connexions**.
+Si vous avez une organisation Azure DevOps Services ou Team Foundation Server sur votre réseau, vous vous y connectez via la fenêtre **Team Explorer** dans Visual Studio. Depuis cette fenêtre, vous pouvez vérifier le code dans ou en dehors du contrôle de code source, gérer des éléments de travail, démarrer des builds et accéder aux salles d'équipe et aux espaces de travail. Vous pouvez ouvrir **Team Explorer** à partir de la zone **Lancement rapide** ou, dans le menu principal, à partir de **Affichage** > **Team Explorer** ou de **Équipe** > **Gérer les connexions**.
 
-L’illustration suivante montre la fenêtre **Team Explorer** pour une solution qui est hébergée dans VSTS.
+L’illustration suivante montre la fenêtre **Team Explorer** pour une solution qui est hébergée dans Azure DevOps Services.
 
 ![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)
 
-Vous pouvez automatiser votre processus de génération pour générer le code que les développeurs de votre équipe ont archivé dans la gestion de versions. Par exemple, vous pouvez générer un ou plusieurs projets la nuit ou chaque fois le code est archivé. Pour plus d’informations, consultez [Build et release (VSTS et TFS)](/vsts/build-release/index).
+Vous pouvez automatiser votre processus de génération pour générer le code que les développeurs de votre équipe ont archivé dans la gestion de versions. Par exemple, vous pouvez générer un ou plusieurs projets la nuit ou chaque fois le code est archivé. Pour plus d’informations, consultez [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="extend-visual-studio"></a>Extension de Visual Studio
 

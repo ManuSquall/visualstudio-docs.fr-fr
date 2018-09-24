@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b91c0cb6357d465f612d1002476c03781822475c
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: a30659fcfd1b373360dc7bf9e9e53ae442ac4992
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433166"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510147"
 ---
 # <a name="mip-map-generation-variant"></a>Variante de génération mipmap
 Active les mipmaps sur les textures qui ne sont pas des cibles de rendu.  
@@ -28,7 +28,7 @@ Active les mipmaps sur les textures qui ne sont pas des cibles de rendu.
  Si cette variante donne lieu à un gain de performances sensible, cela indique que vous utilisez des textures sans avoir activé les mipmaps et que donc vous ne tirez pas le meilleur parti du cache de texture.  
   
 ## <a name="remarks"></a>Notes  
- La génération de mipmaps est forcée à chaque appel à `ID3D11Device::CreateTexture2D`, qui est chargé de créer une texture source. Plus spécifiquement, la génération de mipmaps est forcée quand l'objet D3D11_TEXTUR2D_DESC passé dans `pDesc` décrit une ressource de nuanceur inchangé, à savoir :  
+ La génération de mipmaps est forcée à chaque appel à `ID3D11Device::CreateTexture2D`, qui est chargé de créer une texture source. Plus précisément, génération de mipmaps est forcée quand l’objet D3D11_TEXTURE2D_DESC passé dans `pDesc` décrit une ressource de nuanceur qui est :  
   
 -   Seul l'indicateur D3D11_BIND_SHADER_RESOURCE du membre BindFlags est défini.  
   

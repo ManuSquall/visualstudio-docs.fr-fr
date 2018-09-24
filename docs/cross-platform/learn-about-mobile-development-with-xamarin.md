@@ -11,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 562bd68722674d7b33f9be0941d5e351d8d198bc
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 98371b648dc7fe18315904d4759b55701a07f7b1
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757836"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251677"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>En savoir plus sur le développement pour appareils mobiles avec Xamarin
 
@@ -102,19 +102,19 @@ Pour déboguer vos applications multiplateformes sans avoir à utiliser d’appa
 
 ### <a name="microsofts-android-emulator"></a>Émulateur Android de Microsoft
 
-Il est recommandé d’utiliser [l’émulateur Visual Studio pour Android](visual-studio-emulator-for-android.md) de Microsoft, qui est installé avec Visual Studio.  La vidéo sur l’ [émulateur Visual Studio pour Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Channel9, 5 minutes et 55 secondes) donne une vue d’ensemble de l’émulateur et montre comment l’utiliser.
+Il est recommandé d’utiliser [l’émulateur Visual Studio pour Android](visual-studio-emulator-for-android.md) de Microsoft, qui est installé avec Visual Studio.  La vidéo sur [l’émulateur Visual Studio pour Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Channel9, 5 minutes et 55 secondes) donne une vue d’ensemble de l’émulateur et montre comment l’utiliser.
 
 ### <a name="apples-ios-simulator"></a>Simulateur iOS d’Apple
 
-Pour en savoir plus, consultez [Getting Started with the iOS Simulator](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com).
+Pour en savoir plus, consultez [Get started with the iOS Simulator](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com).
 
-### <a name="microsofts-windows-phone-emulator"></a>Émulateur Windows Phone de Microsoft.
+### <a name="microsofts-windows-phone-emulator"></a>Émulateur Windows Phone de Microsoft
 
 Pour en savoir plus, consultez [Test avec l’émulateur Microsoft pour Windows 10 Mobile](/windows/uwp/debug-test-perf/test-with-the-emulator).
 
 <a name="components" />
 
-## <a name="deeper-dive-xamarin-components"></a>Deeper Dive: Xamarin Components
+## <a name="deeper-dive-xamarin-components"></a>Approfondissement : composants Xamarin
 
 *10 minutes*
 

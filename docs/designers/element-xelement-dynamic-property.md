@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82bc4566fbfa4a5801feb710f07d4391a11bde67
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bf8d964a41193d1db845a608749b0ca671dd9349
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923522"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924051"
 ---
 # <a name="element-xelement-dynamic-property"></a>Element (propriété dynamique XElement)
 
@@ -26,7 +26,7 @@ Obtient un indexeur utilisé pour récupérer l’instance d’élément enfant 
 
 ## <a name="syntax"></a>Syntaxe
 
-```
+```xaml
 elem.Element[{namespaceName}localName]
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: EnableLocationBrowseButton, élément (modèles Visual Studio) | Documents Microsoft
+title: EnableLocationBrowseButton, élément (modèles Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d3573a1359cf7cc6347ede28b5361b01bbb7efb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7bebf88b8d5c98722226f42f9a1b1666695a3b7e
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126843"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639537"
 ---
-# <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton, élément (modèles Visual Studio)
+# <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton, élément (modèles Visual Studio)
 Spécifie si le **Parcourir** bouton n’est disponible dans le **nouveau projet** boîte de dialogue, afin que les utilisateurs peuvent facilement modifier le répertoire par défaut dans lequel un nouveau projet est enregistré.  
   
  \<VSTemplate >  
@@ -53,15 +53,15 @@ Spécifie si le **Parcourir** bouton n’est disponible dans le **nouveau projet
 ## <a name="text-value"></a>Valeur texte  
  Une valeur texte est requise.  
   
- Le texte doit être `true` ou `false`, indiquant s’il faut ou non afficher le **Parcourir** bouton sur le **nouveau projet** boîte de dialogue.  
+ Le texte doit être `true` ou `false`, indiquant s’il faut afficher le **Parcourir** bouton sur le **nouveau projet** boîte de dialogue.  
   
 ## <a name="remarks"></a>Notes  
  `EnableLocationBrowseButton` est un élément facultatif. La valeur par défaut est `true`, qui affiche le **Parcourir** situé dans le **nouveau projet** boîte de dialogue.  
   
- Dans le **nouveau projet** boîte de dialogue, la **emplacement** zone de texte spécifie le répertoire dans lequel un nouveau projet est enregistré. Le **Parcourir** bouton vous permet de modifier ce répertoire en affichant le **emplacement du projet** boîte de dialogue qui vous permet de naviguer facilement dans un répertoire différent est disponible à partir de votre ordinateur, et puis choisissez en tant que le répertoire où le nouveau projet est enregistré.  
+ Dans le **nouveau projet** boîte de dialogue, le **emplacement** zone de texte spécifie le répertoire dans lequel un nouveau projet est enregistré. Le **Parcourir** bouton vous permet de modifier ce répertoire en affichant le **emplacement du projet** boîte de dialogue qui vous permet de naviguer facilement dans un répertoire différent est disponible à partir de votre ordinateur, et puis choisissez en tant que le répertoire dans lequel le nouveau projet est enregistré.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant illustre les métadonnées d’un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application Windows.  
+ L’exemple suivant illustre les métadonnées d’un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application de Windows.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -89,5 +89,5 @@ Spécifie si le **Parcourir** bouton n’est disponible dans le **nouveau projet
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
+ [Référence de schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Création de modèles de projets et d’éléments](../ide/creating-project-and-item-templates.md)

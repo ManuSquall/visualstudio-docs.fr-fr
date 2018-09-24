@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - azure
-ms.openlocfilehash: ec0db69bbde1e2abab7022759ed0f7a3d2a88530
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 871b4d2fdd180481bdd496aa45ef960a24b1ef18
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31046327"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278320"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Former des modèles IA dans Azure Batch AI
 
@@ -34,9 +34,9 @@ Comme il est intégré à Visual Studio Tools pour IA, vous pouvez dynamiquement
 
     ![Galerie d’exemples](media\train-model\batchai.png)
 
-3. Sélectionnez **Affichage > Team Explorer...** pour ouvrir la fenêtre **Team Explorer**, dans laquelle vous pouvez vous connecter à GitHub ou à Visual Studio Team Services, ou cloner un dépôt.
+3. Sélectionnez **Affichage > Team Explorer...** pour ouvrir la fenêtre **Team Explorer**, dans laquelle vous pouvez vous connecter à GitHub ou à Azure DevOps Services, ou bien cloner un dépôt.
 
-    ![Fenêtre Team Explorer montrant Visual Studio Team Services, GitHub et le clonage d’un dépôt](media\train-model\team-explorer.png)
+    ![Fenêtre Team Explorer montrant Azure DevOps Services, GitHub et le clonage d’un dépôt](media\train-model\team-explorer.png)
 
 4. Dans le champ URL, sous **Dépôts Git locaux**, entrez `https://github.com/Microsoft/samples-for-ai`, entrez un dossier pour les fichiers clonés, puis sélectionnez **Cloner**.
 

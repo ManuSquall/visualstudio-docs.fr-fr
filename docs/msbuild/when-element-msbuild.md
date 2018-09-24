@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd42c94ba5e63cdc285242f0a48556c073337671
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 2a4a9a68b00d4eed998a5ba742e640cd27db74cc
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303333"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152422"
 ---
 # <a name="when-element-msbuild"></a>When, élément (MSBuild)
 Spécifie un bloc de code que l’élément `Choose` peut sélectionner.  
@@ -126,5 +126,5 @@ Spécifie un bloc de code que l’élément `Choose` peut sélectionner.
 ```  
 
 ## <a name="see-also"></a>Voir aussi  
- [Constructions conditionnelles MSBuild](../msbuild/msbuild-conditional-constructs.md)   
- [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+ [Constructions conditionnelles](../msbuild/msbuild-conditional-constructs.md)   
+ [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

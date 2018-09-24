@@ -1,5 +1,5 @@
 ---
-title: Commande Code énumérateur | Documents Microsoft
+title: Énumérateur de Code de commande | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ba40c0506bdeecc7d6438f83f2d4342c62cc2e5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 67c133339f47a3f15822e4ff79587f9a09253a66
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098652"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231972"
 ---
-# <a name="command-code-enumerator"></a>Énumérateur de Code de commande
+# <a name="command-code-enumerator"></a>Énumérateur de code de commande
 Cet énumérateur est utilisé dans les options pour le [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) et [SccPopulateList](../extensibility/sccpopulatelist-function.md)pour indiquer la commande pour laquelle les options sont spécifiées.  
   
 ## <a name="syntax"></a>Syntaxe  

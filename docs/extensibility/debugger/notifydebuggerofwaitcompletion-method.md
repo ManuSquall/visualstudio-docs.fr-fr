@@ -1,5 +1,5 @@
 ---
-title: Méthode de NotifyDebuggerOfWaitCompletion | Documents Microsoft
+title: Méthode NotifyDebuggerOfWaitCompletion | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95c510cd0b9be97c53d2026a54335b07bcd1da9f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1288034f171c56e78f17d02f39843cf4ff600e5e
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102728"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233098"
 ---
-# <a name="notifydebuggerofwaitcompletion-method"></a>NotifyDebuggerOfWaitCompletion (méthode)
-Méthode d’espace réservé utilisé en tant que point d’arrêt cible par le débogueur. Cette méthode ne doit pas être inline ou optimisé.  
+# <a name="notifydebuggerofwaitcompletion-method"></a>Méthode NotifyDebuggerOfWaitCompletion
+Méthode d’espace réservé utilisée comme cible de point d’arrêt par le débogueur. Cette méthode ne doit pas être inline ou optimisé.  
   
  **Namespace :** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly :** mscorlib (dans mscorlib.dll)  
+ **Assembly :** mscorlib (dans *mscorlib.dll*)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -36,7 +36,7 @@ private void NotifyDebuggerOfWaitCompletion()
 ## <a name="remarks"></a>Notes  
  Toutes les opérations de jointure avec une tâche doivent appeler cette méthode si leur bit de notification de débogueur est défini.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
   
 ## <a name="see-also"></a>Voir aussi  
  [Classe de tâche](../../extensibility/debugger/task-class-internal-members.md)

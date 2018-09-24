@@ -14,16 +14,21 @@ ms.assetid: cf05936d-0d6c-49ed-a1b4-220032e50b97
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bfd13bb09e8e9e3338ed37723f74ca42b09fdeb3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2cf56f8fc692b79ef6e0c1b19bcbd3de4a1f647f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920810"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548375"
 ---
 # <a name="ca2240-implement-iserializable-correctly"></a>CA2240 : Implémentez ISerializable comme il se doit
+
 |||
 |-|-|
 |TypeName|ImplementISerializableCorrectly|
@@ -32,16 +37,17 @@ ms.locfileid: "31920810"
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Un type visible de l’extérieur ne peut être assigné à la <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interface et une des conditions suivantes est vraie :
 
--   Le type hérite mais ne remplace pas le <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> (méthode) et le type déclare des champs d’instance qui ne sont pas marqués avec le <xref:System.NonSerializedAttribute?displayProperty=fullName> attribut.
+Un type extérieurement visible ne peut être assigné à la <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interface et une des conditions suivantes est vraie :
 
--   Le type n’est pas sealed et le type implémente une <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> méthode qui n’est pas visible et substituable de façon externe.
+- Le type hérite mais ne remplace pas le <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> (méthode) et le type déclare des champs d’instance qui ne sont pas marqués avec le <xref:System.NonSerializedAttribute?displayProperty=fullName> attribut.
+
+- Le type n’est pas scellé et le type implémente une <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> méthode qui n’est pas extérieurement visible et substituable.
 
 ## <a name="rule-description"></a>Description de la règle
- Champs d’instance qui sont déclarés dans un type qui hérite du <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interface ne sont pas inclus automatiquement dans le processus de sérialisation. Pour inclure les champs, le type doit implémenter la <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> (méthode) et le constructeur de sérialisation. Si les champs ne doivent pas être sérialisés, appliquez le <xref:System.NonSerializedAttribute> pour les champs pour indiquer explicitement la décision d’attribut.
+ Champs d’instance qui sont déclarés dans un type qui hérite du <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interface ne sont pas automatiquement inclus dans le processus de sérialisation. Pour inclure les champs, le type doit implémenter la <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> (méthode) et le constructeur de sérialisation. Si les champs ne doivent pas être sérialisées, appliquez le <xref:System.NonSerializedAttribute> aux champs pour indiquer explicitement la décision d’attribut.
 
- Pour les types non sealed, les implémentations de la <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> méthode doit être visible de l’extérieur. Par conséquent, la méthode peut être appelée par des types dérivés et est substituable.
+ Dans les types qui ne sont pas sealed, les implémentations de la <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> méthode doit être visible de l’extérieur. Par conséquent, la méthode peut être appelée par des types dérivés et est substituable.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, rendez le <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> méthode visible et substituable et assurez-vous que tous les champs d’instance sont inclus dans le processus de sérialisation ou sont marqués explicitement avec le <xref:System.NonSerializedAttribute> attribut.
@@ -50,7 +56,7 @@ ms.locfileid: "31920810"
  Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre deux types sérialisables qui enfreint la règle.
+ L’exemple suivant montre deux types sérialisables qui enfreignent la règle.
 
  [!code-csharp[FxCop.Usage.ImplementISerializableCorrectly#1](../code-quality/codesnippet/CSharp/ca2240-implement-iserializable-correctly_1.cs)]
  [!code-cpp[FxCop.Usage.ImplementISerializableCorrectly#1](../code-quality/codesnippet/CPP/ca2240-implement-iserializable-correctly_1.cpp)]
@@ -64,4 +70,11 @@ ms.locfileid: "31920810"
  [!code-vb[FxCop.Usage.ImplementISerializableCorrectly2#1](../code-quality/codesnippet/VisualBasic/ca2240-implement-iserializable-correctly_2.vb)]
 
 ## <a name="related-rules"></a>Règles associées
- [CA2236 : Appelez des méthodes de classe de base sur les types ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md) [CA2229 : implémentez des constructeurs de sérialisation](../code-quality/ca2229-implement-serialization-constructors.md) [CA2238 : implémentez les méthodes de sérialisation](../code-quality/ca2238-implement-serialization-methods-correctly.md) [ CA2235 : Marquez tous les champs non sérialisés](../code-quality/ca2235-mark-all-non-serializable-fields.md) [CA2237 : marquer les types ISerializable avec SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md) [CA2239 : fournir des méthodes de désérialisation pour les champs facultatifs](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md) [CA2120 : sécuriser des constructeurs de sérialisation](../code-quality/ca2120-secure-serialization-constructors.md)
+
+- [CA2236 : Appelez les méthodes de la classe de base sur les types ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
+- [CA2229 : Implémentez des constructeurs de sérialisation](../code-quality/ca2229-implement-serialization-constructors.md)
+- [CA2238 : Implémentez les méthodes de sérialisation correctement](../code-quality/ca2238-implement-serialization-methods-correctly.md)
+- [CA2235 : Marquez tous les champs non sérialisables](../code-quality/ca2235-mark-all-non-serializable-fields.md)
+- [CA2237 : Marquez les types ISerializable avec SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)
+- [CA2239 : Spécifiez des méthodes de désérialisation pour les champs facultatifs](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
+- [CA2120 : Sécurisez les constructeurs de sérialisation](../code-quality/ca2120-secure-serialization-constructors.md)

@@ -11,27 +11,27 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 91a3651dcc7fd16bec2e094fd152242e67fa2d70
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: c8638f9398be823b05d2575157c1992e230674f9
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056909"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008666"
 ---
-# <a name="formatting-python-code"></a>Mise en forme de code Python
+# <a name="format-python-code"></a>Mettre en forme le code Python
 
 Dans Visual Studio, vous pouvez rapidement remettre en forme le code selon les options de mise en forme préconfigurées.
 
-- Pour mettre en forme une sélection : sélectionnez **Modifier > Avancé > Mettre la sélection en forme** ou appuyez sur Ctrl+E,F.
-- Pour mettre en forme la totalité du fichier : sélectionnez **Modifier > Avancé > Mettre le document en forme** ou appuyez sur Ctrl+E,D.
+- Pour mettre en forme une sélection : sélectionnez **Modifier** > **Avancé** > **Mettre la sélection en forme** ou appuyez sur **Ctrl**+**E** > **F**.
+- Pour mettre en forme la totalité du fichier : sélectionnez **Modifier** > **Avancé** > **Mettre le document en forme** ou appuyez sur **Ctrl**+**E** > **D**.
 
-Les options sont définies via **Outils > Options > Éditeur de texte > Python > Mise en forme** et ses onglets imbriqués. Vous devez sélectionner **Afficher tous les paramètres** pour que ces options s’affichent :
+Les options sont définies via **Outils** > **Options** > **Éditeur de texte** > **Python** > **Mise en forme** et ses onglets imbriqués. Vous devez sélectionner **Afficher tous les paramètres** pour que ces options s’affichent :
 
 ![Options de mise en forme Python dans Visual Studio](media/options-editor-formatting.png)
 
 Les options de mise en forme par défaut sont définies pour correspondre à un sur-ensemble du [guide de style PEP 8](http://www.python.org/dev/peps/pep-0008/). L’onglet **Général** détermine les cas dans lesquels la mise en forme est appliquée ; les paramètres des trois autres onglets sont décrits dans cet article.
 
-La [prise en charge de Python dans Visual Studio](installing-python-support-in-visual-studio.md) ajoute également la commande [Remplir le paragraphe de commentaire](#fill-comment-paragraph-command) utile au menu **Modifier > Avancé**, comme dans une section ultérieure.
+La [prise en charge de Python dans Visual Studio](installing-python-support-in-visual-studio.md) ajoute également la commande [**Remplir le paragraphe de commentaire**](#fill-comment-paragraph-command) utile au menu **Modifier** > **Avancé**, comme dans une section ultérieure.
 
 ## <a name="spacing"></a>Espacement
 
@@ -45,41 +45,41 @@ Les tableaux ci-après fournissent des exemples des différentes options :
 
 | Option des définitions de classe | Activé | Effacé |
 | --- | --- | --- | 
-| Insérer un espace entre le nom d’une déclaration de classe et une liste de bases | `class X (object): pass` | `class X(object): pass` | 
-| Insérer un espace entre les parenthèses d’une liste de bases | `class X( object ): pass` | `class X(object): pass` |
-| Insérer un espace entre les parenthèses d’une liste de bases vide | `class X( ): pass` | `class X(): pass` |
+| **Insérer un espace entre le nom d’une déclaration de classe et une liste de bases** | `class X (object): pass` | `class X(object): pass` | 
+| **Insérer un espace entre les parenthèses d’une liste de bases** | `class X( object ): pass` | `class X(object): pass` |
+| **Insérer un espace entre les parenthèses d’une liste de bases vide** | `class X( ): pass` | `class X(): pass` |
 
 <br/>
 
 | Option des définitions de fonction | Activé | Effacé |
 | --- | --- | --- |
-| Insérer un espace entre le nom d’une déclaration de fonction et une liste de paramètres | `def X (): pass` | `def X(): pass` | 
-| Insérer un espace entre les parenthèses d’une liste de paramètres | `def X( a, b ): pass` | `def X(a, b): pass` |
-| Insérer un espace entre les parenthèses d’une liste de paramètres vide | `def X( ): pass` | `def X(): pass` |
-| Insérer des espaces autour du caractère « = » dans les valeurs de paramètre par défaut | `includes X(a = 42): pass` | `includes X(a=42): pass` |
-| Insérer un espace avant et après les opérateurs d’annotation de renvoi | `includes X() -> 42: pass` | `includes X()->42: pass` |
+| **Insérer un espace entre le nom d’une déclaration de fonction et une liste de paramètres** | `def X (): pass` | `def X(): pass` | 
+| **Insérer un espace entre les parenthèses d’une liste de paramètres** | `def X( a, b ): pass` | `def X(a, b): pass` |
+| **Insérer un espace entre les parenthèses d’une liste de paramètres vide** | `def X( ): pass` | `def X(): pass` |
+| **Insérer des espaces autour du caractère « = » dans les valeurs de paramètre par défaut** | `includes X(a = 42): pass` | `includes X(a=42): pass` |
+| **Insérer un espace avant et après les opérateurs d’annotation de retour** | `includes X() -> 42: pass` | `includes X()->42: pass` |
 
 <br/>
 
 | Option des opérateurs | Activé | Effacé |
 | --- | --- | --- |
-| Insérer des espaces autour des opérateurs binaires | `a + b` | `a+b` |
-| Insérer des espaces autour des attributions | `a = b` | `a=b` |
+| **Insérer des espaces autour des opérateurs binaires** | `a + b` | `a+b` |
+| **Insérer des espaces autour des assignations** | `a = b` | `a=b` |
 
 <br/>
 
 | Option d’espacement d’expression | Activé | Effacé |
 | --- | --- | --- |
-| Insérer un espace entre le nom d’un appel de fonction et une liste d’arguments | `X ()` | `X()` |
-| Insérer un espace dans les parenthèses de la liste d'arguments vide | `X( )` | `X()` |
-| Insérer un espace dans les parenthèses de la liste d'arguments | `X( a, b )` | `X(a, b)` |
-| Insérer un espace entre les parenthèses d’expression | `( a )` | `(a)` |
-| Insérer un espace entre les parenthèses d’un tuple vide | `( )` | `()` |
-| Insérer un espace entre les parenthèses d’un tuple | `( a, b )` | `(a, b)` |
-| Insérer un espace dans des crochets vides | `[ ]` | `[]` |
-| Insérer des espaces entre les crochets des listes | `[ a, b ]` | `[a, b]` |
-| Insérer un espace avant un crochet ouvrant | `x [i]` | `x[i]` |
-| Insérer un espace dans les crochets | `x[ i ]` | `x[i]` |
+| **Insérer un espace entre le nom d’un appel de fonction et une liste d’arguments** | `X ()` | `X()` |
+| **Insérer un espace dans les parenthèses de la liste d’arguments vide** | `X( )` | `X()` |
+| **Insérer un espace dans les parenthèses de la liste d’arguments** | `X( a, b )` | `X(a, b)` |
+| **Insérer un espace entre les parenthèses d’une expression** | `( a )` | `(a)` |
+| **Insérer un espace entre les parenthèses d’un tuple vide** | `( )` | `()` |
+| **Insérer un espace entre les parenthèses d’un tuple** | `( a, b )` | `(a, b)` |
+| **Insérer un espace dans des crochets vides** | `[ ]` | `[]` |
+| **Insérer des espaces entre les crochets des listes** | `[ a, b ]` | `[a, b]` |
+| **Insérer un espace avant un crochet ouvrant** | `x [i]` | `x[i]` |
+| **Insérer un espace dans les crochets** | `x[ i ]` | `x[i]` |
 
 <br/>
 
@@ -89,9 +89,9 @@ Les options **Instructions** contrôlent la réécriture automatique de différe
 
 | Option | Avant la mise en forme | Après la mise en forme |
 | --- | --- | --- |
-| Placer les modules importés sur une nouvelle ligne | `import sys, pickle` | `import sys`<br/>`import pickle` |
-| Supprimer les points-virgules inutiles | `x = 42;` | `x = 42` |
-| Placer plusieurs instructions sur une nouvelle ligne | `x = 42; y = 100` | `x = 42`<br/>`y = 100` |
+| **Placer les modules importés sur une nouvelle ligne** | `import sys, pickle` | `import sys`<br/>`import pickle` |
+| **Supprimer les points-virgules inutiles** | `x = 42;` | `x = 42` |
+| **Placer chaque instruction d’un groupe de plusieurs instructions sur une nouvelle ligne** | `x = 42; y = 100` | `x = 42`<br/>`y = 100` |
 
 ## <a name="wrapping"></a>Retour à la ligne
 
@@ -110,7 +110,7 @@ L’onglet **Retour à la ligne** vous permet de définir l’option **Largeur m
 
 ## <a name="fill-comment-paragraph-command"></a>Commande Fill Comment Paragraph (Redisposer le paragraphe de commentaires)
 
-La commande **Modifier > Avancé > Remplir le paragraphe de commentaire** (Ctrl+E, P) redispose et remet en forme le texte des commentaires en combinant les lignes courtes et en scindant les lignes longues.
+La commande **Modifier** > **Avancé** > **Remplir le paragraphe de commentaire** (**Ctrl**+**E** > **P**) redispose et remet en forme le texte des commentaires en combinant les lignes courtes et en scindant les lignes longues.
 
 Exemple :
 

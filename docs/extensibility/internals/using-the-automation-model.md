@@ -1,5 +1,5 @@
 ---
-title: À l’aide du modèle Automation | Documents Microsoft
+title: À l’aide du modèle Automation | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,18 +13,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 679e9966e66de1c79cb3c6394f1d80ab6d6733bb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6633aefe783cf163ee27f8a0c4a879aec898d325
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136534"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495438"
 ---
-# <a name="using-the-automation-model"></a>À l’aide du modèle Automation
-Après vous être connecté à votre VSPackage à l’automation, vous pouvez obtenir les propriétés et méthodes en appelant le <xref:EnvDTE.DTEClass.GetObject%2A> méthode sur le <xref:EnvDTE._DTE> objet, en passant une chaîne qui représente l’objet que vous souhaitez récupérer.  
+# <a name="using-the-automation-model"></a>Utilisation du modèle d’automatisation
+Une fois que vous avez connecté votre VSPackage à automation, vous pouvez obtenir les propriétés et méthodes en appelant le <xref:EnvDTE.DTEClass.GetObject%2A> méthode sur le <xref:EnvDTE._DTE> objet, en passant une chaîne qui représente l’objet que vous souhaitez récupérer.  
   
 ## <a name="obtaining-project-objects"></a>Obtention d’objets du projet  
- Voici deux exemples de code qui montrent comment un client automation Obtient le projet objets automation. Pour plus d’informations sur l’obtention de l’objet DTE, consultez [Comment : obtenir des références pour les objets DTE et DTE2](http://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4).  
+ Voici deux exemples de code qui montrent la façon dont un utilisateur d’automation Obtient le projet objets automation. Pour plus d’informations sur l’obtention de l’objet DTE, consultez [Comment : obtenir des références pour les objets DTE et DTE2](https://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4).  
   
 ```vb  
 Sub DoAutomation()  

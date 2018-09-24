@@ -1,5 +1,5 @@
 ---
-title: 'Comment : attacher à un Script | Documents Microsoft'
+title: 'Comment : attacher à un Script | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -20,21 +20,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4192460ca7825947c88170b7bd36898595504438
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 66f9ceb4d89c2c33e903811b891438d130f5552b
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454343"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284001"
 ---
 # <a name="how-to-attach-to-script"></a>Comment : attacher à un script
 Cette rubrique explique comment attacher manuellement le débogueur Visual Studio à un fichier de script pour le débogage.  
   
 ### <a name="to-attach-to-a-running-process"></a>Pour établir un attachement à un processus en cours d'exécution  
   
-1.  Dans le menu **Débogage** , sélectionnez **Attacher au processus**. (Si aucun projet n’est ouvert, choisissez **attacher au processus** sur la **outils** menu.)  
+1.  Dans le menu **Débogage** , sélectionnez **Attacher au processus**. (Si aucun projet n’est ouvert, choisissez **attacher au processus** sur le **outils** menu.)  
   
-2.  Dans le **attacher au processus** boîte de dialogue, examinez le **processus disponibles** liste et rechercher le processus de script vous voulez attacher. Vous pouvez identifier les processus de script en examinant le **Type** colonne.  
+2.  Dans le **attacher au processus** boîte de dialogue, examinez le **processus disponibles** liste et trouver le processus de script vous voulez attacher. Vous pouvez identifier les processus de script en examinant le **Type** colonne.  
   
     1.  Si le processus que vous souhaitez déboguer est en cours d'exécution sur un autre ordinateur, sélectionnez d'abord l'ordinateur distant.
   
@@ -58,17 +58,17 @@ Cette rubrique explique comment attacher manuellement le débogueur Visual Studi
   
  La liste **Processus disponibles** s’affiche automatiquement quand vous ouvrez la boîte de dialogue **Processus** . Les processus peuvent démarrer et s’interrompre en arrière-plan pendant que la boîte de dialogue est ouverte. Le contenu n'est donc pas toujours à jour. Vous pouvez actualiser la liste à tout moment pour afficher la liste actuelle des processus en appuyant sur la **Actualiser** bouton.  
   
- Vous pouvez attacher un débogueur à plusieurs programmes à la fois, mais un seul d’entre eux est actif dans le débogueur à un moment donné. Vous pouvez définir le programme actif dans la barre d'outils Emplacement de débogage. Pour plus d’informations, consultez [Comment : définir le processus actuel](http://msdn.microsoft.com/en-us/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
+ Vous pouvez attacher un débogueur à plusieurs programmes à la fois, mais un seul d’entre eux est actif dans le débogueur à un moment donné. Vous pouvez définir le programme actif dans la barre d'outils Emplacement de débogage. Pour plus d’informations, consultez [Comment : définir le processus actuel](/previous-versions/visualstudio/visual-studio-2010/d5d4sxdw(v=vs.100)).  
   
  Tous les **déboguer** commandes de menu d’exécution affectent le programme actif. Vous pouvez interrompre tout programme débogué à partir de la boîte de dialogue processus. Consultez [à l’aide de points d’arrêt](../debugger/using-breakpoints.md).  
   
 > [!NOTE]
->  Si vous essayez d'établir un attachement à un processus appartenant à un compte d'utilisateur non fiable, une boîte de dialogue d'avertissement de sécurité s'affiche avec un message de confirmation. Pour plus d’informations, consultez [avertissement de sécurité : l’attachement à un processus appartenant à un utilisateur non fiable peut être dangereux. Si les informations ci-dessous semblent suspectes ou si vous n’êtes pas sûr, n’attachez pas ce processus](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
+>  Si vous essayez d'établir un attachement à un processus appartenant à un compte d'utilisateur non fiable, une boîte de dialogue d'avertissement de sécurité s'affiche avec un message de confirmation. Pour plus d’informations, consultez [avertissement de sécurité : l’attachement à un processus appartenant à un utilisateur non fiable peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, n’attachez pas ce processus](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
   
- Dans certains cas, lors du débogage dans une session Terminal Services (Bureau à distance), la liste Processus disponibles n'affiche pas tous les processus disponibles. Dans [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] ou une version ultérieure, si vous exécutez Visual Studio avec un compte d'utilisateur limité, la liste Processus disponibles n'affiche pas les processus qui s'exécutent dans la session 0, qui est utilisée pour les services et les autres processus serveur, notamment w3wp.exe. Vous pouvez résoudre le problème en exécutant Visual Studio sous un compte administrateur ou à partir de la console serveur au lieu d'une session Terminal Services. Si aucune de ces solutions n’est possible, une troisième option consiste à attacher au processus en entrant vsjitdebugger.exe ProcessId -p à la ligne de commande Windows. Vous pouvez déterminer l'ID de processus à l'aide de tlist.exe. Pour obtenir tlist.exe, téléchargez et installez les outils de débogage pour Windows, disponible à l’adresse [Windows Hardware Developer Central](/windows-hardware/drivers/dashboard/).  
+ Dans certains cas, lors du débogage dans une session Terminal Services (Bureau à distance), la liste Processus disponibles n'affiche pas tous les processus disponibles. Dans [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] ou une version ultérieure, si vous exécutez Visual Studio avec un compte d'utilisateur limité, la liste Processus disponibles n'affiche pas les processus qui s'exécutent dans la session 0, qui est utilisée pour les services et les autres processus serveur, notamment w3wp.exe. Vous pouvez résoudre le problème en exécutant Visual Studio sous un compte administrateur ou à partir de la console serveur au lieu d'une session Terminal Services. Si aucune de ces solutions n’est possible, une troisième option consiste à attacher au processus en entrant vsjitdebugger.exe ProcessId -p en ligne de commande Windows. Vous pouvez déterminer l'ID de processus à l'aide de tlist.exe. Pour obtenir tlist.exe, téléchargez et installez les outils de débogage pour Windows, disponible à l’adresse [Windows Hardware Developer Central](/windows-hardware/drivers/dashboard/).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage de Script côté client](../debugger/client-side-script-debugging.md)   
  [Attacher au processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Avertissement de sécurité : L’attachement à un processus appartenant à un utilisateur non approuvé peut être dangereux. Si les informations ci-dessous semblent suspectes ou si vous n’êtes pas sûr, n’attachez pas ce processus](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)   
+ [Avertissement de sécurité : L’attachement à un processus appartenant à un utilisateur non approuvé peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, n’attachez pas ce processus](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)   
  [Sécurité du débogueur](../debugger/debugger-security.md)

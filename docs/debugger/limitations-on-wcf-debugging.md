@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b579712827033dab1556739f4ea79340232e761
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: ce5fda0eee836a8da5ad69053faa23d3c6e60082
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058521"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280648"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Limitations du débogage WCF
 Il existe trois façons de commencer à déboguer un service WCF :  
@@ -63,7 +63,7 @@ Il existe trois façons de commencer à déboguer un service WCF :
   
 -   Le service doit faire partie de la solution [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que vous déboguez.  
   
--   Le service doit être hébergé. Il peut faire partie d’un projet de site web (système de fichiers et HTTP), d’un projet d’application Web (système de fichiers et HTTP) ou d’un projet Bibliothèque du service WCF. Les projets Bibliothèque du service WCF peuvent être des bibliothèques du service ou des bibliothèques du service de workflow.  
+-   Le service doit être hébergé. Il peut faire partie d’un projet de Site Web (système de fichiers et HTTP), le projet d’Application Web (système de fichiers et HTTP) ou le projet bibliothèque du Service WCF. Les projets Bibliothèque du service WCF peuvent être des bibliothèques du service ou des bibliothèques du service de workflow.  
   
 -   Le service doit être appelé à partir d'un client WCF.  
   

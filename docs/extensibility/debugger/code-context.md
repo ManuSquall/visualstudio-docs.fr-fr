@@ -1,5 +1,5 @@
 ---
-title: Contexte de code | Documents Microsoft
+title: Contexte de code | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a84596246ae930cdffc0265f2f2e09652661819
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 31b1f3d91fd44308c1737f8066c13af730454abe
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097833"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203343"
 ---
 # <a name="code-context"></a>Contexte de code
 Dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] débogage, un **contexte de code**:  
   
--   Fournit une abstraction d’une position dans le code comme connu du moteur de débogage (DE). Pour la plupart des architectures d’exécution aujourd'hui, un contexte de code peut être considéré comme une adresse dans le flux d’instructions d’un programme. Pour les langues non traditionnel, où code ne peut pas être représenté par des instructions, un contexte de code peut-être être représenté par d’autres moyens.  
+-   Fournit une abstraction d’une position dans le code comme connu du moteur de débogage (dé). Pour la plupart des architectures d’exécution dès aujourd'hui, un contexte de code peut être considéré comme une adresse dans le flux d’instructions d’un programme. Pour les langues non traditionnel, où code ne peut pas être représenté par des instructions, un contexte de code peut être représenté par d’autres moyens.  
   
--   Décrit la position actuelle dans le flux d’exécution du programme en cours de débogage.  
+-   Décrit la position actuelle dans le flux d’exécution du programme que vous déboguez.  
   
 -   Existe uniquement lorsqu’un programme s’est arrêté à un point d’arrêt.  
   

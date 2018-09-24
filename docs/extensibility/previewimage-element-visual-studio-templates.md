@@ -1,5 +1,5 @@
 ---
-title: Élément PreviewImage (modèles Visual Studio) | Documents Microsoft
+title: Élément PreviewImage (modèles Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee25a764326572531e02eb91985aa6150c310715
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5265a2d5632bd014103b557a9f024d3b7d5c5062
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136804"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638975"
 ---
-# <a name="previewimage-element-visual-studio-templates"></a>Élément PreviewImage (modèles Visual Studio)
-Spécifie l’image d’aperçu, sous la forme d’un nom de fichier pour l’image d’aperçu qui s’affiche, que ce soit le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.  
+# <a name="previewimage-element-visual-studio-templates"></a>Élément PreviewImage (modèles Visual Studio)
+Spécifie l’image d’aperçu, comme un nom de fichier pour l’image d’aperçu qui apparaîtra dans le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -47,7 +47,7 @@ Spécifie l’image d’aperçu, sous la forme d’un nom de fichier pour l’im
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Définit la catégorie du modèle et comment il est affiché, que ce soit le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Définit la catégorie du modèle et comment il est affiché dans un le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.|  
   
 ## <a name="text-value"></a>Valeur texte  
  Une valeur texte est requise.  
@@ -58,5 +58,5 @@ Spécifie l’image d’aperçu, sous la forme d’un nom de fichier pour l’im
  `PreviewImage` est un élément facultatif.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
+ [Référence de schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Création de modèles de projets et d’éléments](../ide/creating-project-and-item-templates.md)

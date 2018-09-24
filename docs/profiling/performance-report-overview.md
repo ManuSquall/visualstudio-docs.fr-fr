@@ -14,19 +14,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ba00d3b31761fa42f58dfdbd72eae9a7f5b44c6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: af31d6bce4f1c44fbe759423ddaeec9537054688
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255991"
 ---
 # <a name="performance-report-overview"></a>Vue d’ensemble du rapport Performances
 Vous pouvez afficher les données de profilage d’une session de performance dans la fenêtre **Rapport de performances** de l’environnement de développement intégré (IDE) de Visual Studio Team System Development Edition. Les données de profilage sont enregistrées dans des fichiers .vsp et .vsps. Grâce aux fenêtres de vue Rapport, vous pouvez afficher et analyser les problèmes de performances d’une application.  
   
 > [!CAUTION]
->  Un fichier de données de profilage contient des informations sensibles telles que le nom de l’ordinateur, la version du système d’exploitation, les chemins des fichiers, les informations sur la mémoire et d’autres informations relatives à la configuration de l’ordinateur. Vous devez maintenir un contrôle strict sur la distribution des données, aussi bien au format natif .vsp qu’en cas d’exportation vers un fichier .csv ou .xml.  
+>  Un fichier de données de profilage contient des informations sensibles telles que le nom de l’ordinateur, la version du système d’exploitation, les chemins des fichiers, les informations sur la mémoire et d’autres informations relatives à la configuration de l’ordinateur. Vous devez maintenir un contrôle strict sur la distribution des données, aussi bien au format natif .*vsp* qu’en cas d’exportation vers un fichier .*csv* ou .*xml*.  
 >   
->  Si les données de suivi d’événements sont collectées dans le cadre de la session de performance, des informations supplémentaires peuvent s’afficher dans le fichier journal de suivi d’événements (.etl). Ces informations incluent votre nom de domaine et d’utilisateur ; par conséquent, vous devez maintenir un contrôle strict sur la distribution du fichier journal.  
+>  Si les données de suivi d’événements sont collectées dans le cadre de la session de performance, des informations supplémentaires peuvent s’afficher dans le fichier journal de suivi d’événements (.*etl*). Ces informations incluent votre nom de domaine et d’utilisateur ; par conséquent, vous devez maintenir un contrôle strict sur la distribution du fichier journal.  
   
 ## <a name="performance-report-window"></a>Fenêtre Rapport de performances  
  La fenêtre Rapport de performances est une fenêtre Outil permettant d’afficher, de gérer et de filtrer les données de performance et qui inclut un contrôle de requête personnalisable.  
@@ -70,7 +71,7 @@ Vous pouvez afficher les données de profilage d’une session de performance da
  La vue Pointeurs d’instruction vous permet de consulter les instructions spécifiques qui ont été exécutées pendant le profilage d’échantillonnage. Pour plus d’informations, consultez [Pointeurs d’instruction (IP), vue](../profiling/instruction-pointers-ips-view.md).  
   
 ### <a name="allocation-view"></a>Vue Allocations  
- La vue Allocations est disponible si l’option **Collecter les informations d’allocation d’objets .NET** a été sélectionnée dans la page **Général** de la boîte de dialogue de propriétés **Session de performance**. Consultez [Vue d’ensemble des sessions de performances](../profiling/performance-session-overview.md). La vue Allocations répertorie les objets .NET alloués par l’application ou le composant. Quand vous développez une ligne d’objet, une arborescence des appels s’affiche. Elle indique les chemins d’exécution qui ont entraîné la création de l’objet. Cette arborescence affiche également des informations sur le nombre d’allocations inclusives et exclusives pour chaque fonction. La vue Allocations peut également être développée pour mettre en surbrillance le chemin d’exécution d’une fonction qui a alloué le plus grand nombre d’objets. Pour afficher le chemin le plus actif, cliquez avec le bouton droit sur la fonction, puis cliquez sur **Développer le chemin réactif**. Pour plus d’informations, consultez [Collecte des données liées à la durée de vie des objets et à l’allocation de mémoire .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) et [Allocations, vue](../profiling/dotnet-memory-allocations-view.md).  
+ La vue Allocations est disponible si l’option **Collecter les informations d’allocation d’objets .NET** a été sélectionnée dans la page **Général** de la boîte de dialogue de propriétés **Session de performance**. Consultez [Vue d’ensemble des sessions de performances](../profiling/performance-session-overview.md). La vue Allocations répertorie les objets .NET alloués par l’application ou le composant. Quand vous développez une ligne d’objet, une arborescence des appels s’affiche. Elle indique les chemins d’exécution qui ont entraîné la création de l’objet. Cette arborescence affiche également des informations sur le nombre d’allocations inclusives et exclusives pour chaque fonction. La vue Allocations peut également être développée pour mettre en surbrillance le chemin d’exécution d’une fonction qui a alloué le plus grand nombre d’objets. Pour afficher le chemin le plus actif, cliquez avec le bouton droit sur la fonction, puis cliquez sur **Développer le chemin réactif**. Pour plus d’informations, consultez [Collecter des données liées à la durée de vie des objets et à l’allocation de mémoire .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) et [Allocations, vue](../profiling/dotnet-memory-allocations-view.md).  
   
 ### <a name="objects-lifetime-view"></a>Vue Durée de vie des objets  
  La vue Durée de vie des objets est disponible si les options **Collecter les informations d’allocation d’objets .NET** et **Collecter aussi les informations de durée de vie des objets .NET** ont été sélectionnées dans la page **Général** de la boîte de dialogue de propriétés **Session de performance**.  
@@ -95,5 +96,5 @@ Vous pouvez afficher les données de profilage d’une session de performance da
 -   **Exporter** : enregistre le rapport actuel dans un fichier au format .CVS ou .XML, avec des options pour enregistrer les différentes vues.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Analyse des données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)   
- [Vues du rapport de performances](../profiling/performance-report-views.md)
+ [Analyser les données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)   
+ [Vues du rapport des performances](../profiling/performance-report-views.md)

@@ -5,16 +5,16 @@ ms.author: jaunger
 manager: evelynp
 ms.date: 10/03/2017
 ms.topic: Get-Started-Article
-mescription: Learn how to manage your organization's Visual Studio subscriptions with the Administrator Portal.
+description: Découvrez comment gérer les abonnements Visual Studio de votre organisation dans le portail d’administration.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 41f594057051625acb6771ee9d66cad60b4508fd
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 63f3cbc3b4eb108a17c85eaa46992989a6dac742
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327390"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289382"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Utilisation du portail d’administration des abonnements Visual Studio
 
@@ -25,7 +25,7 @@ Quand vous utilisez le portail d’administration des abonnements Visual Studio,
 - **Le niveau d’abonnement d’un abonné doit être mis à jour** quand l’abonnement est mis à niveau (après l’achat d’une licence de niveau supérieur) ou renouvelé à un niveau inférieur. 
 - **Ne partagez pas d’abonnements entre abonnés.** Vous devez attribuer un abonnement à chaque personne qui utilise la totalité ou une partie des avantages de l’abonnement (logiciels de développement et de test, Microsoft Azure, eLearning, etc.). 
 
-## <a name="adminstrator-roles"></a>Rôles d’administrateur
+## <a name="administrator-roles"></a>Rôles d’administrateur
 
 Dans le nouveau portail d’administration des abonnements Visual Studio, deux rôles sont disponibles pour les clients de licence en volume. Ces rôles s’apparentent au rôle Contact principal/Destinataire des avis et au rôle Gestionnaire d’abonnements disponibles dans VLSC. 
 
@@ -68,9 +68,11 @@ Une fois que vous avez attribué les abonnements, l’onglet Abonnés fournit de
 - Champ facultatif indiquant une adresse e-mail pour les communications différente de celle pour la connexion. 
 
 Sur le côté gauche de cette page, vous pouvez voir des informations supplémentaires sur le nombre de licences d’abonnement achetées, attribuées et encore disponibles dans votre organisation pour chaque contrat.
-    ![Page Abonnés dans le portail d’administration des abonnements Visual Studio](_img/using-admin-portal/subscribers-page.png)
+> [!div class="mx-imgBorder"]
+> ![Page Abonnés dans le portail d’administration des abonnements Visual Studio](_img/using-admin-portal/subscribers-page.png)
 
 ### <a name="understanding-the-details-page"></a>Présentation de la page Détails
 Pour obtenir plus d’informations sur le contrat affiché, sélectionnez l’onglet Détails. Cet onglet indique le statut du contrat, le compte d’achat, des détails sur l’organisation, les contacts principaux (VLSC), les super administrateurs (le cas échéant) et d’autres informations utiles.
-    ![Page Détails dans le portail d’administration des abonnements Visual Studio](_img/using-admin-portal/details-page.png)
+> [!div class="mx-imgBorder"]
+> ![Page Détails dans le portail d’administration des abonnements Visual Studio](_img/using-admin-portal/details-page.png)
 

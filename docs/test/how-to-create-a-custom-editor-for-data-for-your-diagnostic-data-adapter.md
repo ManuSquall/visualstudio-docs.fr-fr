@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6141defb2248cf79888b0ed94824a827bd36815f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 372cc01f1d7a0a21832ff099472e444d43d7a699
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976306"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320538"
 ---
-# <a name="how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter"></a>Comment : créer un éditeur personnalisé pour les données de votre adaptateur de données de diagnostic
+# <a name="how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter"></a>Guide pratique pour créer un éditeur personnalisé pour les données de votre adaptateur de données de diagnostic
 
 Durant la création d’un adaptateur de données de diagnostic, vous souhaiterez peut-être que l’utilisateur final puisse configurer des données spécifiques si votre adaptateur de données de diagnostic personnalisé est sélectionné pour ses paramètres de test. Par exemple, vous pouvez sélectionner les données de configuration qui spécifient les clés de Registre à extraire, le niveau de charge réseau à simuler ou le répertoire dans lequel doivent se trouver les fichiers temporaires ou les fichiers de travail à joindre.
 
@@ -184,13 +184,13 @@ Pour obtenir un exemple complet de projet d’adaptateur de données de diagnost
 
      Le fichier de données que vous avez spécifié dans votre éditeur est joint à vos résultats de tests.
 
- Pour plus d’informations sur la configuration de vos paramètres de test pour l’utilisation d’un environnement lors de l’exécution de vos tests, consultez [Collecter des données de diagnostic durant les tests (VSTS)](/vsts/manual-test/collect-diagnostic-data) ou [Collecter des données de diagnostic dans les tests manuels (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
+ Pour plus d’informations sur la configuration de vos paramètres de test pour l’utilisation d’un environnement lors de l’exécution de vos tests, consultez [Collecter des données de diagnostic durant les tests (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts) ou [Collecter des données de diagnostic dans les tests manuels (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
 ## <a name="see-also"></a>Voir aussi
 
 - <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute>
-- [Création d’un adaptateur de données de diagnostic pour collecter des données personnalisées ou affecter un ordinateur de test](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
+- [Créer un adaptateur de données de diagnostic pour collecter des données personnalisées ou affecter une machine de test](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
 - [Collecter des informations de diagnostic à l’aide des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md)
 - [Exemple de projet pour la création d’un adaptateur de données de diagnostic](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)

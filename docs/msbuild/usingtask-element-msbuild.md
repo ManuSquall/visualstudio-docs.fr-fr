@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c9a60212a3e89e8c7f445e5670858f524df9a70
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 64d3fd57f5c55a321ca09495adcd7c712964b01f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302948"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154602"
 ---
-# <a name="usingtask-element-msbuild"></a>UsingTask, élément (MSBuild)
+# <a name="usingtask-element-msbuild"></a>Élément UsingTask (MSBuild)
 Mappe la tâche référencée dans un élément [Task](../msbuild/task-element-msbuild.md) sur l’assembly qui contient l’implémentation de la tâche.  
 
  \<Project>  
@@ -72,9 +72,9 @@ Mappe la tâche référencée dans un élément [Task](../msbuild/task-element-m
  Les variables d'environnement, propriétés de ligne de commande, propriétés au niveau du projet et éléments au niveau du projet peuvent être référencés n'importe où dans les éléments `UsingTask` inclus dans le fichier projet, directement ou via un fichier projet importé. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).  
 
 > [!NOTE]
->  Les propriétés et éléments au niveau du projet n'ont aucune signification si l'élément `UsingTask` provient de l'un des fichiers .tasks inscrits globalement auprès du moteur MSBuild. Les valeurs au niveau du projet ne sont pas globales pour MSBuild.  
+>  Les propriétés et éléments de niveau projet n’ont aucune signification si l’élément `UsingTask` provient de l’un des fichiers *.tasks* inscrits globalement auprès du moteur MSBuild. Les valeurs au niveau du projet ne sont pas globales pour MSBuild.  
 
- Dans MSBuild 4.0, l’utilisation de tâches peut être chargée à partir de fichiers .overridetask.  
+ Dans MSBuild 4.0, les tâches peuvent être chargées à partir de fichiers *.overridetask*.  
 
 ## <a name="example"></a>Exemple  
  L'exemple suivant montre comment utiliser l'élément `UsingTask` avec un attribut `AssemblyName`.  
@@ -102,5 +102,5 @@ Mappe la tâche référencée dans un élément [Task](../msbuild/task-element-m
 
 ## <a name="see-also"></a>Voir aussi  
  [Tâches](../msbuild/msbuild-tasks.md)   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)   
- [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+ [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)   
+ [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

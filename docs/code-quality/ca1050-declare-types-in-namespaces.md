@@ -14,16 +14,20 @@ ms.assetid: 1002748d-ac8d-404f-85dd-7a12d1ad3e05
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bf38fde258a033fd4050e93d3ad69015f365dc60
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5bff984d9ea11ba8fd7f2e42deb5898f04da7d44
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899985"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548480"
 ---
 # <a name="ca1050-declare-types-in-namespaces"></a>CA1050 : Déclarer les types dans des espaces de noms
+
 |||
 |-|-|
 |TypeName|DeclareTypesInNamespaces|
@@ -35,13 +39,13 @@ ms.locfileid: "31899985"
  Un type public ou protégé est défini en dehors de l’étendue d’un espace de noms nommé.
 
 ## <a name="rule-description"></a>Description de la règle
- Les types sont déclarés dans les espaces de noms pour empêcher des collisions de nom et comme un moyen d’organiser les types associés dans une hiérarchie d’objets. Les types qui sont en dehors de tout espace de noms nommé sont dans un espace de noms global qui ne peut pas être référencé dans le code.
+ Les types sont déclarés dans les espaces de noms pour empêcher les collisions de nom et comme un moyen d’organiser les types associés dans une hiérarchie d’objets. Les types qui sont en dehors de tout espace de noms nommé sont dans un espace de noms global qui ne peut pas être référencé dans le code.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, placez le type dans un espace de noms.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Bien que vous deviez jamais supprimer un avertissement de cette règle, il est possible lorsque l’assembly ne sera jamais utilisé avec d’autres assemblys.
+ Bien que vous ayez jamais supprimer un avertissement de cette règle, il est possible pour ce faire, lorsque l’assembly ne sera jamais utilisé avec d’autres assemblys.
 
 ## <a name="example"></a>Exemple
  L’exemple suivant montre une bibliothèque qui a un type déclaré incorrectement hors d’un espace de noms et un type qui a le même nom déclaré dans un espace de noms.

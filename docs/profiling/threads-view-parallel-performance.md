@@ -15,11 +15,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: a2831dd07bcbb5e909357ebdf89496cf92bb815d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573165"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668692"
 ---
 # <a name="threads-view-parallel-performance"></a>Threads, vue (niveau de performance parallèle)
 **L’Affichage Threads** est le mode le plus détaillé et le plus riche en fonctionnalités du visualiseur concurrentiel (choisissez **Analyser** > **Visualiseur concurrentiel** pour démarrer le visualiseur concurrentiel). En utilisant cette vue, vous pouvez déterminer si les threads sont en cours d’exécution ou s’ils sont bloqués à cause d’une synchronisation, d’E/S ou pour une autre raison.  

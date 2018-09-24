@@ -1,7 +1,7 @@
 ---
 title: Émulateur Visual Studio pour Android | Microsoft Docs
 ms.custom: ''
-ms.date: 07/17/2017
+ms.date: 07/03/2018
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
@@ -10,20 +10,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55e1e24a1482f40664d3f0c154d362c08bb9fa17
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6799bc7d3a2a79fadfb6d0535b8ccbbf0b0cffd
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31066708"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283664"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Émulateur Visual Studio pour Android
+
 L'Émulateur Visual Studio pour Android est une application de bureau qui émule un appareil Android. Il fournit un environnement virtualisé dans lequel vous pouvez déboguer et tester des applications Android sans appareil physique. Il fournit également un environnement isolé pour les prototypes de votre application.  
 
 > [!IMPORTANT]
 > Dans la plupart des scénarios, il est recommandé d’utiliser l’émulateur Google Android au lieu de l’émulateur Visual Studio pour Android :
-> - Si vous avez besoin d’images d’émulateur contenant Android 7.0 ou une version ultérieure, car aucune publication d’images Android n’est prévue au-delà de la version 6.0 en vue de leur utilisation dans l’émulateur Visual Studio pour Android.
-> - Si vous utilisez Visual Studio Tools pour Apache Cordova. Pour plus d’informations, consultez [Exécuter votre application Apache Cordova sur Android](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator).
+> - L’Émulateur Visual Studio pour Android n’est pas pris en charge après Visual Studio 2015.
+> - Les images d’émulateur postérieures à Android version 6.0 ne sont pas disponibles pour l’Émulateur Visual Studio pour Android.
+> - L’émulateur Google Android prend désormais en charge [Hyper-V](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#hyper-v).
+> - Visual Studio Tools pour Apache Cordova fonctionne avec l’émulateur Google Android. Pour plus d’informations, consultez [Exécuter votre application Apache Cordova sur Android](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#google-android-emulator) (notez que vous n’avez plus à désactiver Hyper-V, comme expliqué dans cet article).
+>
+> Pour plus d’informations sur la configuration et l’utilisation de l’Émulateur Google Android, voir [Configuration de l’Émulateur Android](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/).
   
  L'Émulateur Visual Studio pour Android est conçu pour fournir des performances comparables à un appareil réel. Avant de publier votre application, nous vous recommandons toutefois de la tester sur un appareil physique.  
   
@@ -46,7 +51,7 @@ L'Émulateur Visual Studio pour Android est une application de bureau qui émule
 ##  <a name="Requirements"></a> Configuration système requise et compatibilité descendante  
  Pour obtenir des informations importantes sur la configuration matérielle et logicielle requise de l’Émulateur Visual Studio pour Android, consultez la rubrique suivante.  
   
--   [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+-   [Configuration requise pour l’Émulateur Visual Studio pour Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
  L'Émulateur Visual Studio pour Android nécessite Visual Studio 2015. Il n'est pas compatible avec les versions antérieures de Visual Studio.  
   
@@ -63,7 +68,7 @@ L'Émulateur Visual Studio pour Android est une application de bureau qui émule
   
  Pour comprendre les fonctions de la connexion réseau de l'émulateur, imaginez qu'il s'agit d'une connexion Wi-Fi entre votre téléphone Android et le même réseau. Si une application en cours d'exécution sur votre téléphone peut accéder à une ressource réseau via sa connexion Wi-Fi, une application en cours d'exécution sur l'émulateur peut aussi accéder à la même ressource réseau.  
   
- Pour plus d’informations sur la configuration réseau requise, consultez [Configuration système requise pour l’Émulateur Visual Studio pour Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md).  
+ Pour plus d’informations sur la configuration réseau requise, voir [Configuration requise pour l’Émulateur Visual Studio pour Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md).  
   
  Pour plus d’informations sur la résolution des problèmes de réseau, consultez [Résolution des problèmes liés à l’émulateur Visual Studio pour Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).  
   
@@ -79,7 +84,7 @@ L'Émulateur Visual Studio pour Android est une application de bureau qui émule
  Une fois que vous avez installé l’ensemble de profils que vous souhaitez cibler, vous pouvez démarrer ces nouveaux profils directement à partir du gestionnaire en appuyant sur le bouton vert **Lecture**. Les profils apparaissent également dans le menu déroulant de la cible de débogage dans n’importe quel type de projet mobile multiplateforme Visual Studio.  
   
 ##  <a name="FeaturesTest"></a> Fonctionnalités que vous pouvez tester dans l’émulateur  
- Pour plus d’informations sur les fonctionnalités que vous pouvez tester dans l’émulateur, consultez ce [billet de blog](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx).  
+ Pour plus d’informations sur les fonctionnalités que vous pouvez tester dans l’émulateur, consultez ce [billet de blog](https://blogs.msdn.microsoft.com/devops/2014/11/12/introducing-visual-studios-emulator-for-android/).  
   
 ##  <a name="FeaturesNonTest"></a> Fonctionnalités que vous ne pouvez pas tester dans l’émulateur  
  La liste suivante décrit les fonctionnalités de la plateforme Android que vous **ne pouvez pas** tester dans l’émulateur. Vous devez tester ces fonctionnalités sur un appareil physique.  
@@ -92,7 +97,7 @@ L'Émulateur Visual Studio pour Android est une application de bureau qui émule
   
 -   Luminosité. La modification du niveau de luminosité de l'émulateur n'affecte pas visuellement la façon dont l'appareil apparaît sur votre écran.  
   
-##  <a name="Support"></a> Ressources de support technique  
+##  <a name="Support"></a> Ressources de support  
  Si votre ordinateur hôte satisfait à la configuration système requise et que vous rencontrez un problème non couvert dans ce guide de dépannage :  
   
 -   Posez une question sur StackOverflow en utilisant les balises [android-emulator](http://stackoverflow.com/questions/tagged/android-emulator) et visual-studio.  
@@ -100,5 +105,5 @@ L'Émulateur Visual Studio pour Android est une application de bureau qui émule
 -   Signalez un problème en utilisant l'outil Envoyer un sourire dans Visual Studio ou dans le gestionnaire de l'émulateur.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Configuration requise pour l’émulateur Visual Studio pour Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
+ [Configuration requise pour l’Émulateur Visual Studio pour Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
  [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

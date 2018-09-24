@@ -41,11 +41,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0874ab1c883b7a56b7a031dc861949b05d9add56
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: b1006a8c4b04fcb935d651f65031764a874b75f8
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673293"
 ---
 # <a name="content-controls"></a>Contrôles de contenu
   Les contrôles de contenu vous permettent de concevoir des documents et des modèles qui ont les fonctionnalités suivantes :  
@@ -58,7 +59,7 @@ ms.lasthandoff: 05/17/2018
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vidéo") pour une démonstration vidéo connexe, consultez [à l’aide de Visual Studio Tools pour Office system (3.0) des contrôles de contenu de lier des données au format Word 2007](http://go.microsoft.com/fwlink/?LinkId=136785).  
+ ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [à l’aide de Visual Studio Tools pour Office system (3.0) de contrôles de contenu de lier des données pour Word 2007](http://go.microsoft.com/fwlink/?LinkId=136785).  
   
 ## <a name="overview-of-content-controls"></a>Vue d’ensemble des contrôles de contenu  
  Les contrôles de contenu fournissent une interface utilisateur optimisée à la fois pour l'entrée d'utilisateur et pour l'impression. Lorsque vous ajoutez un contrôle de contenu à un document, le contrôle est identifié par une bordure, un titre et un texte temporaire qui peut fournir des instructions à l'utilisateur. La bordure et le titre du contrôle n'apparaissent pas dans les versions imprimées du document.  
@@ -77,10 +78,10 @@ ms.lasthandoff: 05/17/2018
 >  Vous pouvez utiliser des contrôles de contenu uniquement dans les documents enregistrés au format Open XML. Vous ne pouvez pas utiliser les contrôles de contenu dans les documents qui sont enregistrés dans le document Word 97-2003 (*.doc*) format.  
   
 ## <a name="types-of-content-controls"></a>Types de contrôles de contenu  
- Vous pouvez ajouter neuf types de contrôles de contenu différents à des documents. La plupart des contrôles de contenu disposent d'un type correspondant dans l'espace de noms <xref:Microsoft.Office.Tools.Word>. Vous avez également la possibilité d'utiliser un <xref:Microsoft.Office.Tools.Word.ContentControl> générique, qui peut représenter l'un des contrôles de contenu disponibles. Pour une procédure pas à pas qui montre comment utiliser chacun des contrôles de contenu disponibles, consultez [procédure pas à pas : création d’un modèle à l’aide de contrôles de contenu](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
+ Vous pouvez ajouter neuf types de contrôles de contenu différents à des documents. La plupart des contrôles de contenu disposent d'un type correspondant dans l'espace de noms <xref:Microsoft.Office.Tools.Word>. Vous avez également la possibilité d'utiliser un <xref:Microsoft.Office.Tools.Word.ContentControl> générique, qui peut représenter l'un des contrôles de contenu disponibles. Pour une procédure pas à pas qui montre comment utiliser chacun des contrôles de contenu disponibles, consultez [procédure pas à pas : créer un modèle à l’aide de contrôles de contenu](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
   
 ### <a name="build-block-gallery"></a>Galerie de blocs de build  
- Une galerie de blocs de construction permet aux utilisateurs de sélectionner dans une liste de *blocs de construction de document* à insérer dans un document. Un bloc de construction de document est une partie de contenu créée pour être utilisée plusieurs fois, telle qu'une page de garde commune, un tableau mis en forme ou un en-tête. Pour plus d'informations, consultez le type <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>. Pour plus d’informations sur les blocs de construction, consultez [Nouveautés pour les développeurs dans Word 2007](http://msdn.microsoft.com/en-us/74aa6688-65b3-4167-997d-131f26ad8f84).  
+ Une galerie de bloc de construction permet aux utilisateurs de sélectionner parmi une liste de *blocs de construction de document* à insérer dans un document. Un bloc de construction de document est une partie de contenu créée pour être utilisée plusieurs fois, telle qu'une page de garde commune, un tableau mis en forme ou un en-tête. Pour plus d'informations, consultez le type <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>. Pour plus d’informations sur les blocs de construction, consultez [quelles sont les nouveautés pour les développeurs dans Word 2007](http://msdn.microsoft.com/74aa6688-65b3-4167-997d-131f26ad8f84).  
   
 ### <a name="check-box"></a>Case à cocher  
  Une case à cocher fournit une interface utilisateur qui représente un état binaire : coché ou décoché.  
@@ -150,14 +151,14 @@ ms.lasthandoff: 05/17/2018
   
 -   Vous pouvez lier des contrôles de contenu à des champs de base de données ou à des objets managés en utilisant le même modèle de liaison de données que Windows Forms.  
   
--   Vous pouvez lier des contrôles de contenu aux éléments de fragments XML (également appelée *des parties XML personnalisées*) qui sont incorporées dans le document.  
+-   Vous pouvez lier des contrôles de contenu aux éléments de fragments XML (également nommé *des parties XML personnalisées*) qui sont incorporés dans le document.  
   
  Pour une vue d’ensemble de la liaison de contrôles hôtes aux données dans les solutions Office, consultez [lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
-### <a name="use-the-windows-forms-data-binding-model"></a>Utilisez le modèle de liaison de données Windows Forms  
+### <a name="use-the-windows-forms-data-binding-model"></a>Utiliser le modèle de liaison de données Windows Forms  
  La plupart des contrôles de contenu prennent en charge le modèle de liaison de données simple que Windows Forms utilise. La liaison de données simple signifie qu’un contrôle est lié à un élément de données unique, tel qu’une valeur dans une colonne d’une table de données. Pour plus d’informations, consultez [liaison de données et Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
   
- Dans les projets au niveau du document, vous pouvez lier des données aux contrôles de contenu à l’aide de la **des Sources de données** fenêtre dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Pour plus d’informations sur l’ajout de contrôles de contenu liés aux données à des documents, consultez [Comment : remplir des documents avec les données d’une base de données](../vsto/how-to-populate-documents-with-data-from-a-database.md) et [Comment : remplir des documents avec les données d’objets](../vsto/how-to-populate-documents-with-data-from-objects.md).  
+ Dans les projets au niveau du document, vous pouvez lier des données aux contrôles de contenu à l’aide de la **des Sources de données** fenêtre dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Pour plus d’informations sur l’ajout de contrôles de contenu liés aux données à des documents, consultez [Comment : remplir des documents avec des données à partir d’une base de données](../vsto/how-to-populate-documents-with-data-from-a-database.md) et [Comment : remplir des documents avec des données à partir d’objets](../vsto/how-to-populate-documents-with-data-from-objects.md).  
   
  Le tableau suivant répertorie les contrôles de contenu que vous pouvez lier à chaque type de données dans le **des Sources de données** fenêtre.  
   
@@ -165,7 +166,7 @@ ms.lasthandoff: 05/17/2018
 |---------------|-----------------------------|----------------------------------------------------------------|  
 |<xref:System.Boolean><br /><br /> <xref:System.Byte><br /><br /> <xref:System.Char><br /><br /> <xref:System.Double><br /><br /> <xref:System.Enum><br /><br /> <xref:System.Guid><br /><br /> <xref:System.Int16><br /><br /> <xref:System.Int32><br /><br /> <xref:System.Int64><br /><br /> <xref:System.SByte><br /><br /> <xref:System.Single><br /><br /> <xref:System.String><br /><br /> <xref:System.TimeSpan><br /><br /> <xref:System.UInt16><br /><br /> <xref:System.UInt32><br /><br /> <xref:System.UInt64>|<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.DatePickerContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|  
 |<xref:System.DateTime>|<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PlainTextContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|  
-|<xref:System.Drawing.Image><br /><br /> Tableau <xref:System.Byte>|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|Aucun|  
+|<xref:System.Drawing.Image><br /><br /> Tableau <xref:System.Byte>|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|Aucun.|  
   
  Dans les projets au niveau du document et les projets de complément VSTO, vous pouvez lier par programmation un contrôle de contenu à une source de données en utilisant la méthode <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> de la propriété <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> du contrôle. Dans ce cas, passez la chaîne **texte** à la *propertyName* paramètre de la <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> (méthode). Le **texte** propriété est la propriété de liaison de données par défaut des contrôles de contenu.  
   
@@ -187,7 +188,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price")
 plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, null);  
 ```  
   
- Pour une procédure pas à pas qui montre comment lier des contrôles de contenu à des parties XML personnalisées dans plus de détails, consultez [procédure pas à pas : liaison de contrôles de contenu à des parties XML personnalisées](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
+ Pour une procédure pas à pas qui montre comment lier des contrôles de contenu à des parties XML personnalisées dans plus de détails, consultez [procédure pas à pas : lier des contrôles de contenu à des parties XML personnalisées](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
   
  Lorsque vous liez un contrôle de contenu à une partie XML personnalisée, la liaison de données bidirectionnelle est automatiquement activée. Si un utilisateur modifie le texte dans le contrôle, les éléments XML correspondants sont automatiquement mis à jour. De la même façon, si les valeurs d'élément dans les parties XML personnalisées sont modifiées, les contrôles de contenu liés aux éléments XML afficheront les nouvelles données.  
   
@@ -203,10 +204,10 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
   
 -   <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>  
   
-### <a name="data-bind-events-for-content-controls"></a>Événements de contrôles de contenu de lier des données  
+### <a name="data-bind-events-for-content-controls"></a>Événements pour les contrôles de contenu de liaison de données  
  Tous les contrôles de contenu fournissent un jeu des événements que vous pouvez gérer afin d’effectuer des tâches liées aux données, par exemple pour vérifier que le texte d’un contrôle répond à certains critères avant que la source de données soit mise à jour. Le tableau suivant répertorie les événements de contrôle de contenu associés à la liaison de données.  
   
-|Tâche|événement|  
+|Tâche|Événement|  
 |----------|-----------|  
 |Exécuter le code juste avant que Word mette automatiquement à jour le texte d'un contrôle de contenu lié à une partie XML personnalisée.|<xref:Microsoft.Office.Tools.Word.ContentControlBase.ContentUpdating>|  
 |Exécuter le code juste avant que Word mette automatiquement à jour les données dans une partie XML personnalisée liée à un contrôle de contenu (autrement dit, après que le texte du contrôle de contenu a été modifié).|<xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>|  
@@ -216,7 +217,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ## <a name="limitations-of-content-controls"></a>Limitations des contrôles de contenu  
  Lorsque vous utilisez des contrôles de contenu dans vos projets Office, vous devez garder à l'esprit les limitations suivantes.  
   
-### <a name="behavior-differences-between-design-time-and-runtime"></a>Différences de comportement entre le moment de la conception et d’exécution  
+### <a name="behavior-differences-between-design-time-and-runtime"></a>Différences de comportement entre le moment du design et runtime  
  Un grand nombre des limitations que Microsoft Office Word impose aux contrôles de contenu au moment de l'exécution ne sont pas appliquées au moment du design. Lorsque vous concevez l'interface utilisateur d'une solution au niveau du document dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], veillez à n'apporter aux contrôles de contenu que des modifications susceptibles d'être prises en charge au moment de l'exécution.  
   
  Si vous modifiez un contrôle de contenu au moment du design d'une façon que le contrôle ne prend pas en charge au moment de l'exécution, le concepteur [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ne vous signalera pas les modifications non prises en charge. Toutefois, lorsque vous déboguez ou exécutez le projet, ou si vous enregistrez puis rouvrez le projet, Word affichera un message d'erreur et demandera l'autorisation de réparer le document. Lorsque vous réparez le document, Word supprime du contrôle tout le contenu et toute la mise en forme non pris en charge.  
@@ -228,18 +229,18 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ### <a name="event-limitations"></a>Limitations d’événement  
  Les contrôles de contenu ne fournissent pas un événement déclenché lorsque l'utilisateur modifie le texte ou d'autres éléments dans le contrôle. Par exemple, aucun événement n'est déclenché lorsqu'un utilisateur sélectionne un autre élément dans un <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> ou un <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>.  
   
- Pour déterminer quand un utilisateur modifie le contenu d'un contrôle de contenu, vous pouvez lier le contrôle à une partie XML personnalisée, puis gérer l'événement <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>. Cet événement est déclenché lorsque l'utilisateur modifie le contenu d'un contrôle lié à une partie XML personnalisée. Pour une procédure pas à pas qui montre comment lier un contrôle de contenu à une partie XML personnalisée, consultez [procédure pas à pas : liaison de contrôles de contenu à des parties XML personnalisées](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
+ Pour déterminer quand un utilisateur modifie le contenu d'un contrôle de contenu, vous pouvez lier le contrôle à une partie XML personnalisée, puis gérer l'événement <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating>. Cet événement est déclenché lorsque l'utilisateur modifie le contenu d'un contrôle lié à une partie XML personnalisée. Pour une procédure pas à pas qui montre comment lier un contrôle de contenu à une partie XML personnalisée, consultez [procédure pas à pas : lier des contrôles de contenu à des parties XML personnalisées](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
   
 ###  <a name="checkbox"></a> Contrôles de contenu de case à cocher dans les projets Word  
- Word 2010 a introduit un nouveau type de contrôle de contenu représentant une case à cocher. Toutefois, le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ne fournit pas un type CheckBoxContentControl correspondant à utiliser dans les projets Office. Pour créer un contrôle de contenu de case à cocher dans un projet [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] ou Word 2010, utilisez la méthode <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> pour créer un objet <xref:Microsoft.Office.Tools.Word.ContentControl>, puis passez la valeur <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> à la méthode pour spécifier un contrôle de contenu de case à cocher. L'exemple de code suivant montre comment procéder.  
+ Word 2010 a introduit un nouveau type de contrôle de contenu représentant une case à cocher. Toutefois, le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ne fournit pas un type CheckBoxContentControl correspondant que vous pouvez utiliser dans les projets Office. Pour créer un contrôle de contenu de case à cocher dans un projet [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] ou Word 2010, utilisez la méthode <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> pour créer un objet <xref:Microsoft.Office.Tools.Word.ContentControl>, puis passez la valeur <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> à la méthode pour spécifier un contrôle de contenu de case à cocher. L'exemple de code suivant montre comment procéder.  
   
  [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)]
  [!code-csharp[Trin_ContentControlReference#800](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/checkbox.cs#800)]  
   
 ## <a name="see-also"></a>Voir aussi  
- [Automatisation de Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md)   
+ [Automatiser Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md)   
  [Comment : ajouter des contrôles de contenu à des documents Word](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [Procédure pas à pas : Création d’un modèle à l’aide de contrôles de contenu](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)   
+ [Procédure pas à pas : Créer un modèle à l’aide de contrôles de contenu](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)   
  [Données dans les solutions Office](../vsto/data-in-office-solutions.md)   
  [Lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Limitations de programmation des éléments hôtes et des contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+ [Limitations de programmation des éléments hôtes et contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  

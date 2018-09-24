@@ -1,5 +1,5 @@
 ---
-title: ProjectItem, élément (modèles de projet Visual Studio) | Documents Microsoft
+title: ProjectItem, élément (modèles de projet Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,14 +16,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a7dfbfd03df24c2968dc9dae141ffc7a300e8be
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 306f8c0497228ff67adab1b472ea74e2ba9e5d90
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31142524"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637180"
 ---
-# <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem, élément (modèles de projet Visual Studio)
+# <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem, élément (modèles de projet Visual Studio)
 Spécifie un fichier qui est inclus dans le modèle de projet.  
   
 > [!NOTE]
@@ -55,12 +55,12 @@ Spécifie un fichier qui est inclus dans le modèle de projet.
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`TargetFileName`|Attribut facultatif.<br /><br /> Spécifie le nom et le chemin d’accès de l’élément de projet lorsqu’un projet est créé à partir du modèle. Cet attribut est utile pour la création d’une structure de répertoires différente de la structure de répertoires dans le fichier .zip du modèle, ou pour utiliser le remplacement de paramètre pour créer un nom d’élément.|  
-|`ReplaceParameters`|Attribut facultatif.<br /><br /> Valeur booléenne qui spécifie si l’élément a les valeurs de paramètre qui doivent être remplacés lorsqu’un projet est créé à partir du modèle. La valeur par défaut est `false`.|  
-|`OpenInEditor`|Attribut facultatif.<br /><br /> Valeur booléenne qui spécifie si l’élément doit être ouvert dans son éditeur respectif dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lorsqu’un projet est créé à partir du modèle.<br /><br /> Le `OpenInWebBrowser` et `OpenInHelpBrowser` attributs ignorés sur un élément avec un `OpenInEditor` valeur `true`.<br /><br /> La valeur par défaut est `false`.|  
-|`OpenInWebBrowser`|Attribut facultatif.<br /><br /> Valeur booléenne qui spécifie si l’élément doit être ouvert le navigateur Web lorsqu’un projet est créé à partir du modèle.<br /><br /> Uniquement les fichiers HTML et les fichiers texte locaux du projet peuvent être ouverts dans le navigateur Web. URL externes ne peut pas être ouvert avec cet attribut.<br /><br /> La valeur par défaut est `false`.|  
-|`OpenInHelpBrowser`|Attribut facultatif.<br /><br /> Valeur booléenne qui spécifie si l’élément doit être ouvert dans la visionneuse d’aide lorsqu’un projet est créé à partir du modèle.<br /><br /> Uniquement les fichiers HTML et les fichiers texte locaux du projet peuvent être ouverts dans le navigateur d’aide. URL externes ne peut pas être ouvert avec cet attribut.<br /><br /> La valeur par défaut est `false`.|  
-|`OpenOrder`|Attribut facultatif.<br /><br /> Spécifie une valeur numérique qui représente l’ordre que les éléments seront ouverts dans leurs éditeurs respectifs. Toutes les valeurs doivent être des multiples de 10. Les éléments avec une valeur supérieure `OpenOrder` valeurs sont ouverts en premier.|  
+|`TargetFileName`|Attribut facultatif.<br /><br /> Spécifie le nom et le chemin d’accès de l’élément de projet lorsqu’un projet est créé à partir du modèle. Cet attribut est utile pour la création d’une structure de répertoires différente de la structure de répertoires dans le modèle *.zip* fichier, ou d’utiliser le remplacement de paramètre pour créer un nom d’élément.|  
+|`ReplaceParameters`|Attribut facultatif.<br /><br /> Valeur booléenne qui spécifie si l’élément a des valeurs de paramètre qui doivent être remplacés lorsqu’un projet est créé à partir du modèle. La valeur par défaut est `false`.|  
+|`OpenInEditor`|Attribut facultatif.<br /><br /> Valeur booléenne qui spécifie si l’élément doit être ouvert dans son éditeur respectif dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lorsqu’un projet est créé à partir du modèle.<br /><br /> Le `OpenInWebBrowser` et `OpenInHelpBrowser` attributs sont ignorés sur un élément avec un `OpenInEditor` valeur `true`.<br /><br /> La valeur par défaut est `false`.|  
+|`OpenInWebBrowser`|Attribut facultatif.<br /><br /> Valeur booléenne qui spécifie si l’élément doit être ouvert le navigateur Web lorsqu’un projet est créé à partir du modèle.<br /><br /> Uniquement les fichiers HTML et les fichiers texte qui sont locaux du projet peuvent être ouverts dans le navigateur Web. URL externes ne peut pas être ouvert avec cet attribut.<br /><br /> La valeur par défaut est `false`.|  
+|`OpenInHelpBrowser`|Attribut facultatif.<br /><br /> Une valeur booléenne qui spécifie si l’élément doit être ouvert dans la visionneuse d’aide lorsqu’un projet est créé à partir du modèle.<br /><br /> Uniquement les fichiers HTML et les fichiers texte qui sont locaux du projet peuvent être ouverts dans le navigateur d’aide. URL externes ne peut pas être ouvert avec cet attribut.<br /><br /> La valeur par défaut est `false`.|  
+|`OpenOrder`|Attribut facultatif.<br /><br /> Spécifie une valeur numérique qui représente l’ordre que les éléments seront ouverts dans leurs éditeurs respectifs. Toutes les valeurs doivent être des multiples de 10. Éléments avec une version ultérieure `OpenOrder` valeurs sont d’abord ouvertes.|  
   
 ### <a name="child-elements"></a>Éléments enfants  
  Aucun.  
@@ -74,47 +74,47 @@ Spécifie un fichier qui est inclus dans le modèle de projet.
 ## <a name="text-value"></a>Valeur texte  
  Une valeur texte est requise.  
   
- Un `string` qui représente le nom ou le chemin d’accès à un fichier dans le fichier .zip du modèle.  
+ Un `string` qui représente le nom ou le chemin d’accès à un fichier dans le modèle *.zip* fichier.  
   
 ## <a name="remarks"></a>Notes  
  `ProjectItem` est un enfant facultatif de `Project`.  
   
- Le `TargetFileName` attribut peut être utilisé pour créer une structure de répertoires différente de la structure de répertoires dans le fichier .zip du modèle. Par exemple, si le fichier `MyFile.vb` existe à la racine du fichier .zip du modèle, mais vous souhaitez que le fichier doit être placé dans un répertoire nommé `CustomFiles` dans tous les projets créés à partir du modèle, vous utiliseriez le code XML suivant :  
+ Le `TargetFileName` attribut peut être utilisé pour créer une structure de répertoire différente à partir de la structure de répertoires dans le modèle *.zip* fichier. Par exemple, si le fichier *MyFile.vb* existe à la racine du modèle *.zip* fichier, mais vous souhaitez que le fichier est placé dans un répertoire nommé *CustomFiles* dans tous les projets créé à partir du modèle, vous utiliseriez le code XML suivant :  
   
-```  
+```xml  
 <ProjectItem TargetFileName="CustomFiles\MyFile.vb">MyFile.vb</ProjectItem>  
 ```  
   
- Le `TargetFileName` attribut peut également être utilisé pour renommer des fichiers qui contiennent des caractères internationaux. Par exemple, un fichier .zip du modèle ne peut pas contenir des noms de fichiers avec des caractères Unicode, donc le fichier doit être renommé avant qu’il peut être compressé dans un fichier .zip. Le `TargetFileName` attribut peut être utilisé pour définir le nom du fichier vers le nom de fichier Unicode d’origine.  
+ Le `TargetFileName` attribut peut également être utilisé pour renommer des fichiers qui contiennent des caractères internationaux. Par exemple, un modèle *.zip* fichier ne peut pas contenir les noms de fichiers avec des caractères Unicode, le fichier doit être renommé avant peuvent être compressée dans un *.zip* fichier. Le `TargetFileName` attribut peut être utilisé pour définir le nom du fichier vers le nom de fichier Unicode d’origine.  
   
- Le `TargetFileName` attribut peut également être utilisé pour renommer des fichiers avec des paramètres. La procédure suivante explique comment renommer le fichier `MyFile.vb`, qui existe dans le répertoire racine du fichier .zip du modèle, à un nom de fichier basé sur le nom du projet.  
+ Le `TargetFileName` attribut peut également être utilisé pour renommer des fichiers avec des paramètres. La procédure suivante explique comment renommer le fichier *MyFile.vb*, qui existe dans le répertoire racine du modèle *.zip* fichier, à un nom de fichier basé sur le nom du projet.  
   
 ### <a name="to-rename-files-with-parameters"></a>Pour renommer des fichiers avec des paramètres  
   
-1.  Dans le fichier .vstemplate, utilisez le code XML suivant :  
+1.  Utilisez le code XML suivant dans le *.vstemplate* fichier :  
   
-    ```  
+    ```xml  
     <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
     ```  
   
-2.  Ouvrez le fichier projet (.vbproj pour un [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projet) dans un éditeur de texte ou [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+2.  Ouvrez le fichier projet (*.vbproj* pour un [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projet) dans un éditeur de texte ou [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
 3.  Recherchez la ligne dans le fichier projet qui ressemble au code XML suivant :  
   
-    ```  
+    ```xml  
     <Compile Include="MyFile.vb">  
     ```  
   
-4.  Remplacez la ligne de code avec le code XML suivant :  
+4.  Remplacez la ligne de code par le code XML suivant :  
   
-    ```  
+    ```xml  
     <Compile Include="$safeprojectname$.vb">  
     ```  
   
-     Lorsqu’un projet est créé à partir de ce modèle, le nom de fichier doit reposer sur le nom de l’utilisateur a entré dans le **nouveau projet** boîte de dialogue, avec tous les caractères non sécurisés et supprimés les espaces. Pour plus d’informations, consultez [les paramètres de modèle](../ide/template-parameters.md).  
+     Lorsqu’un projet est créé à partir de ce modèle, le nom de fichier doit reposer sur le nom de l’utilisateur a entré dans le **nouveau projet** boîte de dialogue, avec tous les caractères sécurisés et supprimés les espaces. Pour plus d’informations, consultez [paramètres de modèle](../ide/template-parameters.md).  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant affiche les métadonnées d’un modèle de projet pour un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application.  
+ L’exemple suivant montre les métadonnées d’un modèle de projet pour un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -141,7 +141,7 @@ Spécifie un fichier qui est inclus dans le modèle de projet.
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
+ [Référence de schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
  [Paramètres de modèle](../ide/template-parameters.md)   
- [Élément ProjectItem (modèles d'élément Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)
+ [ProjectItem, élément (modèles d’élément Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)

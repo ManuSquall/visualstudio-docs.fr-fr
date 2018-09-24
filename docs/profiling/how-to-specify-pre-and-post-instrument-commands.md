@@ -16,11 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c6bd02ae2a89f8ea8e66cb6d7b943344450375
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d8ce82bea823307e02b719fbfae43fe0697aca65
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844636"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Guide pratique pour spécifier des commandes de pré-instrumentation et de post-instrumentation
 
@@ -32,7 +33,7 @@ Le répertoire de travail dans lequel les commandes sont exécutées dépend du 
 
  **Ordinateurs 32 bits**
 
-Sur les ordinateurs 32 bits, le répertoire des outils de profilage par défaut est Lecteur\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools.
+Sur les ordinateurs 32 bits, le répertoire par défaut des outils de profilage est *lecteur\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*.
 
 **Ordinateurs 64 bits**
 
@@ -40,11 +41,11 @@ Sur les ordinateurs 64 bits, spécifiez le chemin en fonction de la plateforme 
 
 - Pour les applications 32 bits, le répertoire par défaut des outils de profilage est le suivant :
 
-     *Lecteur*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools
+     *lecteur\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools*
 
 - Pour les applications 64 bits, le répertoire par défaut des outils de profilage est le suivant :
 
-     *Lecteur*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64
+     *lecteur\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64*
 
 ## <a name="to-specify-pre-instrument-commands"></a>Pour spécifier des commandes de pré-instrumentation
 
@@ -86,4 +87,4 @@ Sur les ordinateurs 64 bits, spécifiez le chemin en fonction de la plateforme 
 
 ## <a name="see-also"></a>Voir aussi
 
-[Configuration de sessions de performances](../profiling/configuring-performance-sessions.md)
+[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)

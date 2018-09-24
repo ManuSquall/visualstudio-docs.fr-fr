@@ -9,16 +9,16 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 29b6bd8abb99d269a91b2eaf7af8872ab7f41a73
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: c2988bb821a91ec1bc5f37955bef8a61897f2c4d
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845754"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382088"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Démarrage rapide : développement piloté par les tests avec l’Explorateur de tests
 
-Nous vous recommandons de créer des tests unitaires pour que votre code continue à s'exécuter correctement dans de nombreuses étapes incrémentielles de développement. Vous pouvez utiliser plusieurs Infrastructures pour écrire des tests unitaires, y compris ceux développés par des tiers. Certaines infrastructures de tests sont spécialisées pour les tests dans différents langages ou sur différentes plateformes. L'explorateur de tests fournit une interface unique pour les tests unitaires dans l'une de ces infrastructures. Les adaptateurs sont disponibles pour les infrastructures les plus couramment utilisées, et vous pouvez écrire vos propres adaptateurs pour d'autres frameworks.
+Nous vous recommandons de créer des tests unitaires pour que votre code continue à s'exécuter correctement dans de nombreuses étapes incrémentielles de développement. Vous pouvez utiliser plusieurs Infrastructures pour écrire des tests unitaires, y compris ceux développés par des tiers. Il existe des frameworks de tests qui sont spécialisés dans les tests avec certains langages ou certaines plateformes. L'explorateur de tests fournit une interface unique pour les tests unitaires dans l'une de ces infrastructures. Les adaptateurs sont disponibles pour les infrastructures les plus couramment utilisées, et vous pouvez écrire vos propres adaptateurs pour d'autres frameworks.
 
  L'Explorateur de tests remplace les fenêtres de test unitaire trouvées dans les éditions antérieures de Visual Studio. Ses avantages incluent :
 
@@ -28,10 +28,10 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
 
 -   Consultez dans une seule fenêtre toutes les informations dont vous avez besoin.
 
-## <a name="using-test-explorer"></a>Utilisation de l'Explorateur de tests
+## <a name="use-test-explorer"></a>Utiliser l’Explorateur de tests
  ![Explorateur de tests unitaires indiquant le bouton Exécuter tout](../test/media/unittestexplorer-beta-.png)
 
-### <a name="to-run-unit-tests-by-using-test-explorer"></a>Pour exécuter des tests unitaires à l'aide de l'Explorateur de tests
+### <a name="to-run-unit-tests-by-using-test-explorer"></a>Pour exécuter des tests unitaires à l’aide de l’Explorateur de tests
 
 1.  Créez des tests unitaires qui utilisent les frameworks de test de votre choix.
 
@@ -39,7 +39,7 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
 
     1.  Créez un projet de test.
 
-         Dans la boîte de dialogue **Nouveau projet** , développez **Visual Basic**, **Visual C#**, ou **Visual C++**, puis choisissez **Test**.
+         Dans la boîte de dialogue **Nouveau projet**, développez **Visual Basic** > **Visual C#** ou **Visual C++**, puis choisissez **Test**.
 
          Sélectionnez **Projet de test unitaire**.
 
@@ -47,7 +47,7 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
 
 2.  Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
 
-3.  Dans la barre de menus, sélectionnez **Test**, **Exécuter les tests unitaires**, **Tous les tests**.
+3.  Dans la barre de menus, sélectionnez **Test** > **Exécuter les tests unitaires** > **Tous les tests**.
 
      La solution se génère et les tests s'exécutent.
 
@@ -69,16 +69,16 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
 > Si aucun test n'apparaît, vérifiez que vous avez installé un adaptateur pour connecter l'Explorateur de tests à l'infrastructure de test que vous utilisez. Pour plus d’informations, consultez [Installer des frameworks de tests unitaires de tiers](install-third-party-unit-test-frameworks.md).
 
 
-##  <a name="walkthrough"></a> Procédure pas à pas : Utilisation de tests unitaires pour développer une méthode
+##  <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Procédure pas à pas : Utilisation de tests unitaires pour développer une méthode
  Cette procédure pas-à-pas montre comment développer une méthode testée en C# à l'aide de l'infrastructure des tests unitaires Microsoft. Vous pouvez facilement l'adapter à d'autres langages et utiliser d'autres infrastructures de tests comme NUnit. Pour plus d’informations, consultez [Installer des frameworks de tests unitaires de tiers](install-third-party-unit-test-frameworks.md).
 
-#### <a name="creating-the-test-and-method"></a>Créer le test et la méthode
+### <a name="create-the-test-and-method"></a>Créer le test et la méthode
 
 1.  Créez un projet de bibliothèque de classes Visual C#. Ce projet contiendra le code que nous voulons fournir. Dans cet exemple, cela est nommé `MyMath`.
 
 2.  Créez un projet de test.
 
-    -   Dans la boîte de dialogue **Nouveau projet** , choisissez **Visual C#**, **Test** puis **Projet de test unitaire**.
+    -   Dans la boîte de dialogue **Nouveau projet**, choisissez **Visual C#** > **Test**, puis **Projet de test unitaire**.
 
          ![Nouveaux codes et projets de test](../test/media/unittestexplorerwalk1.png)
 
@@ -104,15 +104,15 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
 
 4.  Générez la méthode à partir du test.
 
-    1.  Placez le curseur sur `Rooter`, puis dans le menu contextuel, choisissez **Générer**, **Nouveau type**.
+    1.  Placez le curseur sur `Rooter`, puis dans le menu contextuel, choisissez **Générer** > **Nouveau type**.
 
     2.  Dans la boîte de dialogue **Générer un nouveau type** , définissez **Projet** sur le projet de bibliothèque de classes. Dans cet exemple, il s’agit de `MyMath`.
 
-    3.  Placez le curseur sur `SquareRoot`, puis dans le menu contextuel, choisissez **Générer**, **Stub de méthode**.
+    3.  Placez le curseur sur `SquareRoot`, puis dans le menu contextuel, choisissez **Générer** > **Stub de méthode**.
 
 5.  Exécutez le test unitaire.
 
-    1.  Dans le menu **Test** , choisissez **Exécuter les tests unitaires**, **Tous les tests**.
+    1.  Dans le menu **Test**, choisissez **Exécuter les tests unitaires** > **Tous les tests**.
 
          La solution se génère et s'exécute.
 
@@ -132,7 +132,7 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
 
 #### <a name="after-every-change-make-all-the-tests-pass"></a>Après chaque modification, faites en sorte que tous les tests réussissent
 
-1.  Dans `MyMath\Rooter.cs`, améliorez le code de `SquareRoot`:
+1.  Dans *MyMath\Rooter.cs*, améliorez le code de `SquareRoot` :
 
     ```csharp
     public double SquareRoot(double input)

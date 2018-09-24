@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d45255b3d92ad57fa57d347b7544a700fa22ae
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 42131bc1a596cf14a219f674227dbbadeb26c370
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573178"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668813"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Guide du débutant en échantillonnage de l’UC
 Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les problèmes de performances dans votre application. Cette procédure montre comment utiliser des données **d’échantillonnage**.
@@ -41,7 +41,7 @@ Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les 
 ## <a name="create-and-run-a-performance-session"></a>Créer et exécuter une session de performance  
  Pour obtenir les données que vous devez analyser, vous devez d'abord créer une session de performance, puis exécuter cette session. **L’Assistant Performance** vous permet de faire les deux.  
   
- Si vous ne profilez pas une application de bureau Windows ou ASP.NET, vous devez utiliser un autre outil de profilage. Consultez [Découvrir les outils de profilage](../profiling/profiling-tools.md).  
+ Si vous ne profilez pas une application de bureau Windows ou ASP.NET, vous devez utiliser un autre outil de profilage. Consultez [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md).  
   
 #### <a name="to-create-and-run-a-performance-session"></a>Pour créer et exécuter une session de performance  
   
@@ -64,7 +64,7 @@ Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les 
   
      Une fois que vous avez terminé d’exécuter l’application, la vue **Résumé** des données de profilage s’affiche dans la fenêtre principale de Visual Studio et une icône s’affiche pour la nouvelle session dans la fenêtre **Explorateur de performances**.  
   
-## <a name="step-2-analyze-sampling-data"></a>Étape 2 : Analyser les données d'échantillonnage  
+## <a name="step-2-analyze-sampling-data"></a>Étape 2 : Analyser les données d’échantillonnage  
  Lorsque vous terminez d’exécuter une session de performance, la vue **Résumé** du rapport de profilage s’affiche dans la fenêtre principale de Visual Studio.  
   
  Nous vous recommandons de commencer à analyser vos données en examinant le **chemin réactif**, puis la liste des fonctions qui effectuent la majeure partie du travail, et enfin, en vous concentrant sur d’autres fonctions à l’aide de la **chronologie Résumé**. Vous pouvez également consulter des avertissements et des suggestions de profilage dans la fenêtre **Liste d’erreurs**.  
@@ -129,4 +129,4 @@ Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les 
  [Bien démarrer](../profiling/getting-started-with-performance-tools.md)   
  [Vues d’ensemble](../profiling/overviews-performance-tools.md)  
  [Profilage dans Visual Studio](../profiling/index.md)  
- [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md)
+ [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)

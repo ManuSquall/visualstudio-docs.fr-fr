@@ -1,5 +1,5 @@
 ---
-title: Création d’un fichier Page de démarrage | Documents Microsoft
+title: Page de démarrage de création personnalisé | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,39 +11,39 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71892262d98b175b111218068a02d03ad3d04caa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 30c161478bb04dcf964cb2054e714689c13b6538
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100681"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497636"
 ---
 # <a name="creating-a-custom-start-page"></a>Création d’une Page de démarrage personnalisée
 Vous pouvez créer une Page de démarrage personnalisée en suivant les étapes décrites dans ce document.  
   
-## <a name="creating-a-blank-start-page"></a>Création d’une page de démarrage vierge  
- Vérifiez tout d’abord, une Page de démarrage vierge en créant un fichier .xaml qui a une structure de balise que Visual Studio reconnaît. Ensuite, ajoutez le balisage et code-behind pour produire l’apparence et les fonctionnalités que vous souhaitez.  
+## <a name="create-a-blank-start-page"></a>Créer une Page de démarrage vierge  
+ Vérifiez tout d’abord, une Page de démarrage vierge en créant un *.xaml* fichier qui a une structure de balise que Visual Studio reconnaît. Ensuite, ajoutez le balisage et code-behind pour produire l’apparence et les fonctionnalités que vous souhaitez.  
   
-#### <a name="to-create-a-blank-start-page"></a>Pour créer une Page de démarrage vierge  
+### <a name="to-create-a-blank-start-page"></a>Pour créer une Page de démarrage vierge  
   
-1.  Créez un projet du type **Application WPF** (**Visual C# / Bureau Windows**.  
+1.  Créez un projet du type **Application WPF** (**Visual C#** > **Windows Desktop**).  
   
 2.  Ajoutez une référence à `Microsoft.VisualStudio.Shell.14.0`.  
   
-3.  Ouvrez le fichier XAML dans l’éditeur XML et modifier le niveau supérieur \<fenêtre > élément à un \<UserControl > élément sans supprimer une des déclarations d’espace de noms.  
+3.  Ouvrez le fichier XAML dans l’éditeur XML et modifiez le niveau supérieur \<fenêtre > élément à un \<UserControl > élément sans le supprimer d’une des déclarations d’espace de noms.  
   
-4.  Supprimer le `x:Class` déclaration de l’élément de niveau supérieur. Cela rend le contenu XAML compatible avec la fenêtre d’outils de Visual Studio qui héberge la page de démarrage.  
+4.  Supprimer le `x:Class` déclaration à partir de l’élément de niveau supérieur. Cela rend le contenu XAML compatible avec la fenêtre d’outil de Visual Studio qui héberge la Page de démarrage.  
   
 5.  Ajoutez les déclarations d’espace de noms suivantes au niveau supérieur \<UserControl > élément.  
   
-    ```  
+    ```vb  
     xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"  
     xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"  
     ```  
   
-     Ces espaces de noms vous permettent d’accéder aux commandes de Visual Studio, les contrôles et les paramètres d’interface utilisateur. Pour plus d’informations, consultez [ajoutant les commandes Visual Studio à une Page de démarrage](../extensibility/adding-visual-studio-commands-to-a-start-page.md).  
+     Ces espaces de noms vous permettent d’accéder aux commandes de Visual Studio, les contrôles et les paramètres de l’interface utilisateur. Pour plus d’informations, consultez [commandes Ajouter Visual Studio à une Page de démarrage](../extensibility/adding-visual-studio-commands-to-a-start-page.md).  
   
-     L’exemple suivant montre le balisage dans le fichier .xaml pour une Page de démarrage vierge. N’importe quel contenu personnalisé doit être placé dans interne <xref:System.Windows.Controls.Grid> élément.  
+     L’exemple suivant montre le balisage dans le *.xaml* fichier pour une Page de démarrage vierge. N’importe quel contenu personnalisé doit être placé dans interne <xref:System.Windows.Controls.Grid> élément.  
   
     ```vb  
     <UserControl  
@@ -63,32 +63,32 @@ Vous pouvez créer une Page de démarrage personnalisée en suivant les étapes 
     </UserControl>  
     ```  
   
-6.  Ajouter des contrôles à vide \<UserControl > élément pour remplir votre Page de démarrage personnalisée. Pour plus d’informations sur l’ajout de fonctionnalités spécifiques à Visual Studio, consultez [ajoutant les commandes Visual Studio à une Page de démarrage](../extensibility/adding-visual-studio-commands-to-a-start-page.md).  
+6.  Ajouter des contrôles à la vider \<UserControl > élément pour remplir dans votre Page de démarrage personnalisée. Pour plus d’informations sur l’ajout de fonctionnalités spécifiques à Visual Studio, consultez [commandes Ajouter Visual Studio à une Page de démarrage](../extensibility/adding-visual-studio-commands-to-a-start-page.md).  
   
-## <a name="testing-and-applying-the-custom-start-page"></a>Test et application de la page de démarrage personnalisée  
- Ne définissez pas l’instance principale de Visual Studio pour exécuter la Page de démarrage personnalisée avant de vérifier qu’il ne bloque pas Visual Studio. Au lieu de cela, le test dans l’instance expérimentale.  
+## <a name="test-and-apply-the-custom-start-page"></a>Tester et appliquer la Page de démarrage personnalisée  
+ Ne définissez pas l’instance principale de Visual Studio pour exécuter la Page de démarrage personnalisée avant de vérifier qu’il ne bloque pas Visual Studio. Au lieu de cela, le tester dans l’instance expérimentale.  
   
-#### <a name="to-test-a-manually-created-custom-start-page"></a>Pour tester une Page de démarrage personnalisée créée manuellement  
+### <a name="to-test-a-manually-created-custom-start-page"></a>Pour tester une Page de démarrage du personnalisés créés manuellement  
   
-1.  Copie de votre fichier XAML et les fichiers texte ou balisage des fichiers, à la **%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\**  dossier.  
+1.  Copie de votre fichier XAML et les fichiers texte ou balisage des fichiers, à la *%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\*  dossier.  
   
-2.  Si votre page de démarrage fait référence à des contrôles ou les types dans les assemblys qui ne sont pas installés par Visual Studio, copiez les assemblys et les coller dans * dossier d’installation de Visual Studio ***\Common7\IDE\PrivateAssemblies\\** .  
+2.  Si votre page de démarrage fait référence à des contrôles ou les types dans les assemblys qui ne sont pas installés par Visual Studio, copiez les assemblys et les coller ensuite dans *{dossier d’installation de Visual Studio} \Common7\IDE\PrivateAssemblies\\* .  
   
-3.  À une invite de commandes Visual Studio, tapez **devenv/rootsuffix Exp** pour ouvrir une instance expérimentale de Visual Studio.  
+3.  À une invite de commandes Visual Studio, tapez **devenv /rootsuffix Exp** pour ouvrir une instance expérimentale de Visual Studio.  
   
-4.  Dans l’instance expérimentale, accédez à la **Outils / Options / environnement / démarrage** page et sélectionnez votre fichier XAML à partir de la **personnaliser la Page de démarrage** liste déroulante.  
+4.  Dans l’instance expérimentale, accédez à la **outils** > **Options** > **environnement** > **dedémarrage** page et sélectionnez votre fichier XAML à partir de la **personnaliser la Page de démarrage** liste déroulante.  
   
 5.  Dans le menu **Affichage** , cliquez sur **Page de démarrage**.  
   
-     Votre page de démarrage personnalisée doit être affiché. Si vous souhaitez modifier des fichiers, vous devez fermez l’instance expérimentale, apportez les modifications, copiez et collez les fichiers modifiés, puis ouvrez à nouveau l’instance expérimentale pour afficher les modifications.  
+     Votre page de démarrage personnalisée doit être affiché. Si vous souhaitez modifier tous les fichiers, fermez l’instance expérimentale, apportez les modifications, copiez et collez les fichiers modifiés et puis ouvrez à nouveau l’instance expérimentale pour afficher les modifications.  
   
-#### <a name="to-apply-the-custom-start-page-in-the-primary-instance-of-visual-studio"></a>Pour appliquer personnalisé page de démarrage dans l’instance principale de Visual Studio  
+### <a name="to-apply-the-custom-start-page-in-the-primary-instance-of-visual-studio"></a>Pour appliquer personnalisé page de démarrage dans l’instance principale de Visual Studio  
   
--   Après avoir testé votre Page de démarrage et qu’il soit stable trouvé, utilisez la **personnaliser la Page de démarrage** option dans le **Options** boîte de dialogue pour le sélectionner comme page de démarrage dans l’instance principale de Visual Studio  
+-   Après avoir testé votre Page de démarrage et jugé stable, utilisez le **personnaliser la Page de démarrage** option dans le **Options** boîte de dialogue pour le sélectionner comme page de démarrage dans l’instance principale de Visual Studio  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : Ajout de code XAML personnalisé à la Page de démarrage](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)   
- [Ajout du contrôle utilisateur à la Page de démarrage](../extensibility/adding-user-control-to-the-start-page.md)   
- [Ajout de commandes de Visual Studio à une Page de démarrage](../extensibility/adding-visual-studio-commands-to-a-start-page.md)   
- [Procédure pas à pas : Enregistrement des paramètres utilisateur sur une Page de démarrage](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)   
- [Déploiement de pages de démarrage personnalisées](../extensibility/deploying-custom-start-pages.md)
+ [Procédure pas à pas : Ajouter XAML personnalisé à la Page de démarrage](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)   
+ [Ajouter un contrôle utilisateur à la Page de démarrage](../extensibility/adding-user-control-to-the-start-page.md)   
+ [Ajouter des commandes de Visual Studio à une Page de démarrage](../extensibility/adding-visual-studio-commands-to-a-start-page.md)   
+ [Procédure pas à pas : Enregistrer les paramètres utilisateur sur une Page de démarrage](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)   
+ [Déployer les Pages de démarrage personnalisées](../extensibility/deploying-custom-start-pages.md)

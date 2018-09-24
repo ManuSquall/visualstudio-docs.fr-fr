@@ -11,18 +11,20 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 971eb7ce863fc4281d73e2d4d363805de22810f4
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: feafc7d53e8d450bc980b6d842e9c2a5f0ade2e4
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058628"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468814"
 ---
-# <a name="profiling-python-code"></a>Profilage de code Python
+# <a name="profile-python-code"></a>Profiler du code Python
 
 Vous pouvez profiler une application Python si des interpréteurs CPython sont utilisés. (Consultez [Profilage dans la matrice des fonctionnalités](overview-of-python-tools-for-visual-studio.md#matrix-profiling) pour connaître la disponibilité de cette fonctionnalité dans les différentes versions de Visual Studio.)
 
-La commande de menu **Analyser > Launch Python Profiling** (Lancer le profilage Python) permet de lancer le profilage et ouvre une boîte de dialogue de configuration :
+## <a name="profiling-for-cpython-based-interpreters"></a>Profilage pour les interpréteurs CPython
+
+La commande de menu **Analyser** > **Lancer le profilage Python** permet de lancer le profilage, ce qui entraîne l’ouverture d’une boîte de dialogue de configuration :
 
 ![Boîte de dialogue de configuration du profilage](media/profiling-start.png)
 
@@ -41,6 +43,6 @@ Lorsque vous sélectionnez **OK**, le profileur s’exécute et ouvre un rapport
 
 IronPython n’étant pas un interpréteur CPython, la fonctionnalité de profilage ci-dessus ne fonctionne pas.
 
-Utilisez plutôt le profileur Visual Studio .NET en lançant `ipy.exe` directement en tant qu’application cible, avec les arguments appropriés pour lancer votre script de démarrage. Ajoutez `-X:Debug` sur la ligne de commande pour s’assurer que l’ensemble de votre code Python peut être débogué et profilé. Cet argument génère un rapport de performances incluant le temps passé dans le runtime IronPython et votre code. Votre code est identifié à l’aide de noms tronqués.
+Utilisez plutôt le profileur Visual Studio .NET en lançant *ipy.exe* directement en tant qu’application cible. Utilisez les arguments appropriés pour lancer votre script de démarrage. Ajoutez `-X:Debug` sur la ligne de commande pour s’assurer que l’ensemble de votre code Python peut être débogué et profilé. Cet argument génère un rapport de performances qui inclut le temps passé dans le runtime IronPython et votre code. Votre code est identifié à l’aide de noms tronqués.
 
 IronPython possède également ses fonctionnalités de profilage intégrées, mais à ce jour, aucun visualiseur approprié n’est disponible pour celles-ci. Consultez [An IronPython Profiler](http://blogs.msdn.com/b/curth/archive/2009/03/29/an-ironpython-profiler.aspx) (Un profileur IronPython) (blogs MSDN) pour connaître ce qui est disponible.

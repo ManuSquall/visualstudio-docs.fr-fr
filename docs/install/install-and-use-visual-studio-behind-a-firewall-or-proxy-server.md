@@ -2,7 +2,7 @@
 title: Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy | Microsoft Docs
 description: Passez en revue les URL de domaine à ajouter à la liste verte, ainsi que les ports et protocoles à ouvrir, si votre organisation utilise un pare-feu ou un serveur proxy
 ms.custom: ''
-ms.date: 02/12/2018
+ms.date: 07/10/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aeb7b1fc308247d5eebb810113aba1ed4afe89c
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: b3a3b798b704111c8afdbaaaa3b219b876ebf6ff
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765666"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280582"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy
 
@@ -49,7 +49,7 @@ Si vous ou votre organisation utilisez des mesures de sécurité tel qu’un par
 | download.visualstudio.com | Emplacement de téléchargement des packages d’installation |
 | dl.xamarin.com | Emplacement de téléchargement des packages d’installation |
 | visualstudiogallery.msdn.microsoft.com | Emplacement de téléchargement des extensions Visual Studio |
-| www.visualstudio.com | Emplacement de la documentation |
+| visualstudio.microsoft.com | Emplacement de la documentation |
 | docs.microsoft.com | Emplacement de la documentation |
 | msdn.microsoft.com | Emplacement de la documentation |
 | www.microsoft.com | Emplacement de la documentation |
@@ -68,7 +68,7 @@ Si vous ou votre organisation utilisez des mesures de sécurité tel qu’un par
 | download.oracle.com | Développement mobile avec JavaScript (Kit de développement logiciel (SDK) Java) <br /><br />Développement mobile en .NET (Kit de développement logiciel (SDK) Java) |
 | download.unity3d.com | Développement de jeux avec Unity (Unity) |
 | netstorage.unity3d.com | Développement de jeux avec Unity (Unity) |
-| dl.google.com | Développement mobile avec JavaScript (Kit de développement logiciel Android et NDK, Emulator) <br /><br />Développement mobile avec .NET (Kit de développement logiciel Android et NDK, Emulator) |
+| dl.google.com | Développement mobile avec JavaScript (Android SDK et NDK, émulateur) <br /><br />Développement mobile avec .NET (Android SDK et NDK, émulateur) |
 | www.incredibuild.com | Développement de jeux avec C++ (Incredibuild) |
 | incredibuildvs2017i.azureedge.net | Développement de jeux avec C++ (Incredibuild) |
 | www.python.org | Développement Python (Python) <br /><br />Applications de science des données et analytiques (Python) |
@@ -96,7 +96,7 @@ Pour vous assurer que vous avez accès à tout ce dont vous avez besoin lorsque 
 | Package NPM <br>découverte  |Skimdb.npmjs.com <br><br>Registry.npmjs.org <br><br>Api.npms.io  | https<br><br>http/s<br><br>https | 443<br><br>80/443<br><br>443| Requis pour la recherche de packages NPM et utilisé pour l’installation de packages de scripts côté client dans les projets Web |
 |Package de Bower<br> icônes<br><br>Package de Bower <br>search  |Bower.io <br><br>bowercache.azurewebsites.net <br>go.microsoft.com <br>Registry.bower.io | http<br><br>https<br>http<br>https|80<br><br>443<br>80<br>443 |Fournit l’icône de package Bower par défaut  <br><br>Offre la possibilité de rechercher des packages Bower |
 |NuGet<br><br>Package NuGet<br> découverte | Api.nuget.org <br>www.nuget.org <br>Nuget.org<br><br>crl3.digicert.com <br>crl4.digicert.com <br>ocsp.digicert.com <br>cacerts.digicert.com  | https<br><br>http/s |443<br><br>80/443<br> |Permet de vérifier les packages NuGet signés.<br><br>Requis pour la recherche des versions et packages NuGet |
-|Informations de référentiel GitHub  |api.github.com  |https | 443| Requis pour l’obtention d’informations supplémentaires sur les packages Bower |
+|Informations de dépôt GitHub  |api.github.com  |https | 443| Requis pour l’obtention d’informations supplémentaires sur les packages Bower |
 | Linters Web|Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org  | http|80 | |
 | Cookiecutter<br>Modèle Explorer<br>découverte <br><br>Cookiecutter <br>Projet Explorer<br> création | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org  | https | 443<br> | Permet de détecter les modèles en ligne à partir de notre flux recommandé et de dépôts Github <br><br>Permet de créer un projet à partir d’un modèle cookiecutter qui requiert une installation à la demande unique d’un package Python cookiecutter à partir de l’index du package Python (PyPI)|
 | Package Python <br>découverte<br><br>Package Python <br>gestion<br><br>Python <br>Nouveau projet <br>C++| pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com| https| 443| Offre la possibilité de rechercher des packages pip<br><br>Permet d’installer le pip automatiquement s’il est manquant <br><br> Permet de créer le <br><br>Permet de résoudre les modèles de projets Python suivants dans la boîte de dialogue Nouveau projet pour les URL du modèle de cookiecutter :<br> - Projet Classifier<br>- Projet clustering <br> - Projet Regression <br> - PyGame avec PyKinect <br> - Projet Pyvot |
@@ -113,12 +113,13 @@ Pour vous assurer que vous avez accès à tout ce dont vous avez besoin lorsque 
 | Azure Functions <br>Mise à jour de l’interface CLI <br>Valider | functionscdn.azureedge.net | https | 443 | Utilisé pour la vérification des versions mises à jour de l’interface CLI Azure Functions. Si désactivé, une copie mise en cache (ou la copie effectuée par le composant Azure Functions) de l’interface CLI sera utilisée à la place |
 | Cordova | npmjs.org<br>gradle.org | http/s | 80/443 | Le protocole HTTP est utilisé pour les téléchargements de Gradle lors de la génération ; HTTPS est utilisé pour inclure les plug-ins Cordova aux projets|
 | Cloud Explorer | 1. &#60;clusterendpoint&#62; <br>Service Fabric <br>2. &#60;point de terminaison de gestion&#62;<br>Exp Cloud général <br>3. &#60;point de terminaison de graphique&#62;<br>Exp Cloud général<br>4. &#60;point de terminaison du compte de stockage&#62;<br>Nœuds de stockage <br>5. &#60;URL du portail Azure&#62;<br>Exp Cloud général <br>6. &#60;points de terminaison du coffre de clés&#62; <br>Nœuds de machine virtuelle Azure Resource Manager<br>7. &#60;PublicIPAddressOfCluster&#62;<br>Débogage distant et traces ETW Service Fabric |   <br>1. https<br>2. https<br>3. https<br>4. https<br>5. https<br>6. https<br>7 : tcp| 1. 19080<br>2. 443 <br>3. 443 <br>4. 443 <br>5. 443 <br>6. 443 <br>7. dynamique   | 1. Exemple : test12.eastus.cloudapp.com<br>2. Récupère les abonnements et récupère/gère les ressources Azure<br>3. Récupère les abonnements Azure Stack<br>4. Gère les ressources de stockage (exemple : mystorageaccount.blob.core.windows.net)<br>5. Option de menu contextuel « Ouvrir dans le portail » (ouvre une ressource dans le portail Azure)<br>6. Crée et utilise des coffres de clé pour le débogage de la machine virtuelle (exemple : myvault.vault.azure.net) <br><br>7. Alloue dynamiquement un bloc de ports en fonction du nombre de nœuds dans le cluster et des ports disponibles. <br><br>Un bloc de ports tentera d’obtenir trois fois le nombre de nœuds avec un minimum de 10 ports.<br><br>Pour les traces de diffusion en continu, une tentative est effectuée pour obtenir le bloc de ports à partir de 810. Si un de ces blocs de ports est déjà utilisé, une tentative est alors effectuée pour obtenir le bloc suivant et ainsi de suite. (Si l’équilibreur de charge est vide, les ports à partir de 810 sont très probablement utilisés) <br><br>De même pour le débogage, quatre jeux de ces blocs de ports sont réservés : <br>- connectorPort : 30398, <br>- forwarderPort : 31398, <br>- forwarderPortx86 : 31399,<br>- fileUploadPort : 32398<br>|
-| Services cloud | 1. Protocole RDP (Remote Desktop Protocol)<br><br>2. core.windows.net <br><br>3.  management.azure.com<br> management.core.windows.net <br><br>4. &#42;.blob.core.windows.net <br>&#42;.queue.core.windows.net<br>&#42;.table.core.windows.net <br><br>5. portal.azure.com <br><br>6. &#60;service de cloud utilisateur &#62;.cloudapp.net <br> &#60;Machine virtuelle de l’utilisateur&#62;.&#60;région&#62;.azure.com | 1. rdp <br><br> 2. https <br><br> 3. https <br><br> 4. https <br><br> 5. https <br><br>6. tcp | 1. 3389 <br><br> 2. 443 <br><br> 3. 443 <br><br>4. 443 <br><br>5. 443 <br><br> 6. a) 30398 <br> 6. b) 30400 <br> 6. c) 31398 <br> 6. d) 31400 <br> 6. e) 32398 <br> 6. f) 32400 | 1.  Bureau à distance vers la machine virtuelle des services Cloud <br><br> 2.  Composant de compte de stockage de la configuration des diagnostics privés <br><br> 3.  portail Azure <br><br> 4. Explorateur de serveurs - stockage Azure & #42 ;  est le compte de stockage nommé par l’utilisateur  <br><br> 5.  Liens permettant d’ouvrir le portail & #47 ; Télécharger le certificat d’abonnement & #47 ; Publier le fichier de paramètres <br><br>6. a)  Port local du connecteur pour le débogage à distance pour le service de cloud et la machine virtuelle<br> 6. b)  Port public du connecteur pour le débogage à distance pour le service de cloud et la machine virtuelle <br> 6. c)  Port local redirecteur pour le débogage à distance pour le service de cloud et la machine virtuelle <br> 6. d) Port public redirecteur pour le débogage à distance pour le service de cloud et la machine virtuelle  <br> 6. e) Port local chargeur de fichiers pour le débogage à distance pour le service de cloud et la machine virtuelle <br> 6. f) Port public chargeur de fichiers pour le débogage à distance pour le service de cloud et la machine virtuelle |
+| Services cloud | 1. Protocole RDP (Remote Desktop Protocol)<br><br>2. core.windows.net <br><br>3.  management.azure.com<br> management.core.windows.net <br><br>4. &#42;.blob.core.windows.net <br>&#42;.queue.core.windows.net<br>&#42;.table.core.windows.net <br><br>5. portal.azure.com <br><br>6. &#60;service de cloud utilisateur &#62;.cloudapp.net <br> &#60;Machine virtuelle de l’utilisateur&#62;.&#60;région&#62;.azure.com | 1. rdp <br><br> 2. https <br><br> 3. https <br><br> 4. https <br><br> 5. https <br><br>6. tcp | 1. 3389 <br><br> 2. 443 <br><br> 3. 443 <br><br>4. 443 <br><br>5. 443 <br><br> 6. a) 30398 <br> 6. b) 30400 <br> 6. c) 31398 <br> 6. d) 31400 <br> 6. e) 32398 <br> 6. f) 32400 | 1.  Bureau à distance vers la machine virtuelle des services Cloud <br><br> 2.  Composant de compte de stockage de la configuration des diagnostics privés <br><br> 3.  portail Azure <br><br> 4. Explorateur de serveurs - stockage Azure  &#42;  est le compte de stockage nommé par l’utilisateur  <br><br> 5.  Liens permettant d’ouvrir le portail &#47; Télécharger le certificat d’abonnement &#47; Publier le fichier de paramètres <br><br>6. a)  Port local du connecteur pour le débogage à distance pour le service de cloud et la machine virtuelle<br> 6. b)  Port public du connecteur pour le débogage à distance pour le service de cloud et la machine virtuelle <br> 6. c)  Port local redirecteur pour le débogage à distance pour le service de cloud et la machine virtuelle <br> 6. d) Port public redirecteur pour le débogage à distance pour le service de cloud et la machine virtuelle  <br> 6. e) Port local chargeur de fichiers pour le débogage à distance pour le service de cloud et la machine virtuelle <br> 6. f) Port public chargeur de fichiers pour le débogage à distance pour le service de cloud et la machine virtuelle |
 | Service Fabric | 1. <br>ocs.Microsoft.com<br>aka.ms <br>go.microsoft.com <br><br>2. <br>vssftools.blob.core.windows.net <br>Vault.azure.com <br>Portal.azure.com <br><br> 3. &#42; vault.azure.net<br><br> 4. <br>app.vsaex.visualstudio.com<br>&#42; .vsspsext.visualstudio.com<br>clouds.vsrm.visualstudio.com <br>clouds.visualstudio.com<br>app.vssps.visualstudio.com <br>&#42; .visualstudio.com | https | 443 | 1. Documentation <br><br> 2. Créer la fonctionnalité de cluster <br><br>3. Le &#42; est le nom du coffre de clés Azure (Exemple :- test11220180112110108.vault.azure.net  <br><br>  4. Le &#42 ; est dynamique (exemple : vsspsextprodch1su1.vsspsext.visualstudio.com) |
 | Instantané <br>Débogueur | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (dépendant de la version Visual Studio) | 1. Fichier .json de requête sur la taille de la référence (SKU) du service d’applications <br>2. Différents appels du Gestionnaire de ressources Azure <br>3. Appel de préparation de site via  <br>4. Point de terminaison Kudu du service d’application ciblé du client <br>5. Version de l’Extension de site de requête publiée dans nuget.org <br>6. Canal de débogage à distance |
 |Azure Stream Analytics <br><br>HDInsight | Management.azure.com |https|443 |Permet d’afficher, soumettre, exécuter et gérer des travaux ASA <br><br> Permet de parcourir des clusters HDI et soumettre, diagnostiquer et déboguer des travaux HDI |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | Permet de compiler, soumettre, afficher, diagnostiquer et déboguer des travaux ; utilisé pour parcourir des fichiers ADLS ; permet de charger et télécharger des fichiers |
-|Service d’empaquetage | [compte].visualstudio.com <br/> [compte].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | *.npmjs.org, *.nuget.org et *.nodejs.org ne sont nécessaires que dans certains scénarios de tâches de build (par exemple, le programme d’installation d’outils de NuGet ou de Node), ou pour utiliser des flux ascendants publics. Les trois autres domaines sont requis pour les fonctionnalités de base du service de création de packages. |
+| Service d’empaquetage | [compte].visualstudio.com <br/> [compte].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | *.npmjs.org, *.nuget.org et *.nodejs.org ne sont nécessaires que dans certains scénarios de tâches de build (par exemple, le programme d’installation d’outils de NuGet ou de Node), ou pour utiliser des flux ascendants publics. Les trois autres domaines sont requis pour les fonctionnalités de base du service de création de packages. |
+| Azure DevOps Services | *.vsassets.io <br/> static2.sharepointonline.com  |  |  | Utilisé pour se connecter avec Azure DevOps Services |
 |||||||
 
 ## <a name="troubleshoot-network-related-errors"></a>Résoudre les erreurs liées au réseau
@@ -127,12 +128,14 @@ Parfois, exécuté pour des erreurs liées au réseau ou au proxy lorsque vous i
 
 ## <a name="get-support"></a>Obtenir de l’aide
 
-Vous trouverez ici quelques autres options de support :
+Nous offrons une option de support par [**Conversation en direct**](https://visualstudio.microsoft.com/vs/support/#talktous) (en anglais uniquement) pour les problèmes liés à l’installation.
 
-* Vous pouvez nous signaler des problèmes au niveau d’un produit via l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio-2017.md) qui s’affiche dans Visual Studio Installer et dans l’IDE de Visual Studio.
-* Vous pouvez nous faire part d’une suggestion de produit via [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Vous pouvez suivre les problèmes au niveau d’un produit et obtenir des réponses dans la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com/).
-* Vous pouvez également communiquer avec nous et d’autres développeurs Visual Studio en prenant part à notre [conversation Visual Studio dans la communauté Gitter](https://gitter.im/Microsoft/VisualStudio). (Cette option nécessite un compte [GitHub](https://github.com/).)
+Voici d’autres options de support :
+
+* Signalez-nous les problèmes au niveau d’un produit via l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio-2017.md) qui apparaît dans Visual Studio Installer et dans l’IDE Visual Studio.
+* Faites-nous part d’une suggestion sur un produit via [UserVoice](https://visualstudio.uservoice.com/forums/121579).
+* Suivez les problèmes au niveau d’un produit et trouvez des réponses dans la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com/).
+* Utilisez [GitHub](https://github.com/) pour communiquer avec nous et d’autres développeurs Visual Studio en prenant part à la [conversation Visual Studio dans la communauté Gitter](https://gitter.im/Microsoft/VisualStudio).
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 71ea82ea9588315748a9c79eb9abd7b06eace680
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d48393a2d160e3691069a4b5f86dd814b63d935d
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237680"
 ---
-# <a name="functions-view---net-memory-instrumentation-data"></a>Vue Fonctions - Données d’instrumentation de la mémoire .NET
+# <a name="functions-view---net-memory-instrumentation-data"></a>Fonctions, vue - données d’instrumentation de la mémoire .NET
 La vue Fonctions des données de profilage de l’allocation mémoire de .NET qui ont été collectées avec la méthode d’instrumentation liste les fonctions qui ont alloué de la mémoire lors de l’exécution du profilage. Une ligne de fonction indique la taille et le nombre d’allocations, ainsi que les données chronologiques de la fonction.  
   
 ## <a name="general"></a>Général  
@@ -98,7 +99,7 @@ La vue Fonctions des données de profilage de l’allocation mémoire de .NET qu
 |**Temps exclusif d’application min.**|Temps exclusif d’application minimal d’un appel à cette fonction.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour personnaliser les colonnes de la vue Rapport](../profiling/how-to-customize-report-view-columns.md)   
- [Vue Fonctions - Échantillonnage](../profiling/functions-view-dotnet-memory-sampling-data.md)   
+ [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)   
+ [Fonctions, vue - échantillonnage](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [Vue Fonctions](../profiling/functions-view-instrumentation-data.md)   
  [Vue Fonctions](../profiling/functions-view-sampling-data.md)

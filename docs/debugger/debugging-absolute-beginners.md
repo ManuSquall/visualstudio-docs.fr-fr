@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42a04a64f5ed7f62f4b01f703efa85e36aa854ff
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 6c10032bf12060c8c5e42f93f6596fe576adfccf
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131867"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612673"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Le débogage pour les débutants
 
@@ -25,7 +25,7 @@ Sans échec, le code que nous écrivons en tant que développeurs de logiciels n
 
 Un débogueur, malheureusement, n’est pas quelque chose qui peut révéler comme par magie tous les problèmes ou « bogues », dans notre code. *Débogage* moyen d’exécuter votre code pas à pas dans un outil de débogage que Visual Studio, pour trouver le point exact où vous avez effectué une erreur de programmation. Vous comprenez ensuite les corrections que vous devez faire dans votre code et outils de débogage vous permettent souvent d’apporter des modifications temporaires pour pouvoir continuer l’exécution du programme.
 
-À l’aide d’un débogueur efficacement est également une compétence qui nécessaire du temps et des exercices pratiques pour en savoir plus, mais il est finalement essentiel pour tout développeur de logiciels. Dans cet article, puis, nous présentent les principes fondamentaux du débogage et fournissent des conseils pour vous aider à démarrer.
+À l’aide d’un débogueur efficacement est également une qualification qui demande du temps et pratique pour en savoir plus, mais qui est finalement une tâche essentielle pour chaque développeur de logiciels. Dans cet article, puis, nous présentent les principes fondamentaux du débogage et fournissent des conseils pour vous aider à démarrer.
 
 ## <a name="clarify-the-problem-by-asking-yourself-the-right-questions"></a>Clarifier le problème par vous-même poser les bonnes questions
 
@@ -35,7 +35,7 @@ Cela permet de clarifier le problème que vous avez rencontré avant d’essayer
 
 * Qu’est-il arrivé à la place ?
 
-    Si vous avez rencontré une erreur (exception) pendant l’exécution de votre application, qui peut être une bonne chose ! Une exception est un événement inattendu rencontré lors de l’exécution de code, généralement une erreur quelconque. Un outil de débogage vous permet d’accéder à l’emplacement exact dans votre code où l’exception s’est produite et peut vous aider à examiner les solutions possibles.
+    Si vous avez rencontré une erreur (exception) pendant l’exécution de votre application, qui peut être une bonne chose ! Une exception est un événement inattendu rencontré lors de l’exécution de code, généralement une erreur quelconque. Un outil de débogage vous permet d’accéder à l’endroit exact dans votre code où l’exception s’est produite et peut vous aider à rechercher des solutions possibles.
 
     Si quelque chose d’autre s’est produit, ce qui est le symptôme du problème ? Après vous, déjà où ce problème s’est produite dans votre code ? Par exemple, si votre code affiche du texte, mais le texte est incorrect, vous savez que vos données soient incorrectes ou que le code que définir le texte d’affichage a un type de bogue. En parcourant le code dans un débogueur, vous pouvez examiner chaque modification à vos variables pour découvrir exactement quand et comment les valeurs incorrectes sont affectés.
 
@@ -45,7 +45,7 @@ Avant d’examiner un bogue ou une erreur, considérez les hypothèses que vous 
 
 * Vous utilisez l’API de droite (autrement dit, l’objet droit, fonction, méthode ou propriété) ? Une API que vous utilisez peut ne pas faire ce que vous pensez qu’il fait. (Une fois que vous examinez l’appel d’API dans le débogueur, sa correction peut nécessiter un aller-retour vers la documentation pour aider à identifier l’API appropriée.)
 
-* Vous utilisez une API correctement ? Peut-être vous utilisé le droit d’API, mais n’a pas l’utiliser dans la bonne façon.
+* Vous utilisez une API correctement ? Peut-être vous utilisé l’API de droite mais n’a pas l’utiliser correctement.
 
 * Votre code contient-il des fautes de frappe ? Quelques fautes de frappe, comme une faute d’orthographe simple d’un nom de variable peuvent être difficiles à voir, en particulier lorsque vous travaillez avec les langues qui ne nécessitent pas de variables à être déclarés avant leur utilisation.
 
@@ -228,7 +228,7 @@ Ensuite, nous allons créer une application qui a quelques bogues.
 
 1. Cliquez sur le **redémarrer** ![redémarrer une application](../debugger/media/dbg-tour-restart.png "RestartApp") bouton dans la barre d’outils déboguer (**Ctrl** + **MAJ**   +  **F5**).
 
-    L’application s’arrête au point d’arrêt que vous définissez. Le hightlighting jaune indique où le débogueur est suspendu (la ligne jaune de code n’a pas encore exécuté).
+    L’application s’arrête au point d’arrêt que vous définissez. La mise en surbrillance jaune indique où le débogueur est suspendu (la ligne jaune de code n’a pas encore exécuté).
 
 1. Placez le curseur sur le `GalaxyType` variable sur la droite, puis, à gauche de l’icône de clé, développez `theGalaxy.GalaxyType`. Vous pouvez constater que `GalaxyType` contient une propriété `MyGType`, et la valeur de propriété est définie sur `Spiral`.
 
@@ -258,7 +258,7 @@ Ensuite, nous allons créer une application qui a quelques bogues.
     public GType GalaxyType { get; set; }     
     ```
 
-1. Cliquez sur le **redémarrer** ![redémarrer une application](../debugger/media/dbg-tour-restart.png "RestartApp") bouton dans la barre d’outils déboguer (**Ctrl** + **MAJ**   +  **F5**) pour recompiler le code et de redémarrer.
+1. Cliquez sur le **redémarrage** ![redémarrer l’application](../debugger/media/dbg-tour-restart.png "RestartApp") bouton dans la barre d’outils de débogage (**Ctrl** + **MAJ**   +  **F5**) pour recompiler le code et redémarrer.
 
     Désormais, lorsque le débogueur met en pause sur `Console.WriteLine`, vous pouvez pointer sur `theGalaxy.GalaxyType.MyGType`et vérifie qu’elle est définie correctement.
 
@@ -283,7 +283,7 @@ Ensuite, nous allons créer une application qui a quelques bogues.
 
     Ce code étant où le type galaxy est défini, nous souhaitons tirer un examiner plus en détail.
 
-1. Cliquez sur le **redémarrer** ![redémarrer une application](../debugger/media/dbg-tour-restart.png "RestartApp") bouton dans la barre d’outils déboguer (**Ctrl** + **MAJ**   +  **F5**) à redémarrer.
+1. Cliquez sur le **redémarrage** ![redémarrer l’application](../debugger/media/dbg-tour-restart.png "RestartApp") bouton dans la barre d’outils de débogage (**Ctrl** + **MAJ**   +  **F5**) pour redémarrer.
 
     Le débogueur s’arrête à la ligne de code où vous avez défini le point d’arrêt.  
 
@@ -303,7 +303,7 @@ Ensuite, nous allons créer une application qui a quelques bogues.
 
     En examinant le code, vous voyez une faute de frappe dans le `case 'l'` instruction. Il doit être `case 'I'`.
 
-1. Cliquez sur dans le code de `case 'l'`et remplacez-la par ' case 'I'.
+1. Cliquez sur dans le code de `case 'l'` et remplacez-la par `case 'I'`.
 
 1. Supprimer votre point d’arrêt, puis cliquez sur le **redémarrer** bouton redémarrer l’application.
 
@@ -332,4 +332,4 @@ Lorsque vous trouvez la région de code avec le problème, utilisez le débogueu
 Dans cet article, vous avez appris quelques concepts généraux de débogage. Ensuite, vous pouvez démarrer d’apprendre à déboguer avec Visual Studio.
 
 > [!div class="nextstepaction"]
-> [Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)
+> [Apprendre à déboguer avec Visual Studio](../debugger/getting-started-with-the-debugger.md)

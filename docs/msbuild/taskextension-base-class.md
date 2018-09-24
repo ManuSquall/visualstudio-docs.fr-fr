@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35c746ea76358b631cac65846b95fc355e6cc17f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fd47bc4a481a8a7e0ce15395770e7cc8bc67bbab
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571876"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152943"
 ---
-# <a name="taskextension-base-class"></a>Classe TaskExtension Base
+# <a name="taskextension-base-class"></a>Classe de base TaskExtension
 De nombreuses tâches héritent de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, laquelle hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Cette chaîne d’héritage ajoute plusieurs paramètres aux tâches qui en dérivent. Ces paramètres sont répertoriés dans ce document.  
   
 ## <a name="parameters"></a>Paramètres  
@@ -40,5 +40,5 @@ De nombreuses tâches héritent de la classe <xref:Microsoft.Build.Tasks.TaskExt
 |<xref:Microsoft.Build.Tasks.TaskExtension.Log%2A>|Paramètre en lecture seule <xref:Microsoft.Build.Utilities.TaskLoggingHelper> facultatif.<br /><br /> Obtient un objet `TaskLoggingHelperExtension` qui contient des méthodes de journalisation des tâches.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)   
+ [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)   
  [Tâches](../msbuild/msbuild-tasks.md)

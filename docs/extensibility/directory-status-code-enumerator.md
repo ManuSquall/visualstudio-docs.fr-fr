@@ -1,5 +1,5 @@
 ---
-title: Énumérateur de Code d’état Active | Documents Microsoft
+title: Énumérateur de Code de statut de répertoire | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 539dc4c2ea7b33ce88465f1d8f6651dc890c8e45
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ea8abd11f3af8be510e88579651fb0a7f92e075b
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126082"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638464"
 ---
-# <a name="directory-status-code-enumerator"></a>Énumérateur de Code d’état Active
-Le `SccDirStatus` énumérateur contient des valeurs de constantes nommées qui spécifient l’état d’un répertoire dans le système de contrôle de code source. Cette énumération est utilisée par le [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). Cela a été introduite dans la version 1.2 de l’API de plug-in du contrôle Source.  
+# <a name="directory-status-code-enumerator"></a>Énumérateur de code de statut de répertoire
+Le `SccDirStatus` énumérateur contient des valeurs de constantes nommées qui spécifient l’état d’un répertoire dans le système de contrôle source. Cette énumération est utilisée par le [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md). Cela a été introduite dans la version 1.2 de l’API de plug-in de contrôle de Source.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,7 +37,7 @@ enum SccDirStatus {
   
 ## <a name="members"></a>Membres  
  SCC_DIRSTATUS_INVALID  
- État n’a pas pu être obtenu ; ne comptez pas sur ce dernier.  
+ État n’a pas pu être obtenu ; ne comptez pas sur celle-ci.  
   
  SCC_DIRSTATUS_NOTCONTROLLED  
  Répertoire n’est pas sous contrôle de code source.  

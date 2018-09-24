@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ba084cb3d18d661198f481323d012c98cb37b2c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 0deaf83c224270b582043e918b64591468d5783f
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746778"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078951"
 ---
 # <a name="shader-designer"></a>Concepteur Shader
 
@@ -32,18 +32,18 @@ Le concepteur de nuanceur prend en charge les formats de nuanceur suivants :
 
 |Nom de format|Extension de fichier|Opérations prises en charge (afficher, modifier, exporter)|
 |-----------------|--------------------|-------------------------------------------------|
-|DGSL (Directed Graph Shader Language)|.dgsl|Afficher, modifier|
-|Nuanceur HLSL (code source)|.hlsl|Exporter|
-|Nuanceur HLSL (bytecode)|.cso|Exporter|
-|En-tête C++ (tableau de bytecode HLSL)|.h|Exporter|
+|DGSL (Directed Graph Shader Language)|*.dgsl*|Afficher, modifier|
+|Nuanceur HLSL (code source)|*.hlsl*|Exporter|
+|Nuanceur HLSL (bytecode)|*.cso*|Exporter|
+|En-tête C++ (tableau de bytecode HLSL)|*.h*|Exporter|
 
-## <a name="get-started"></a>Bien démarrer
+## <a name="get-started"></a>Prise en main
 
 Cette section explique comment ajouter un nuanceur DGSL à votre projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et fournit les informations de base pour commencer.
 
 ### <a name="to-add-a-dgsl-shader-to-your-project"></a>Pour ajouter un nuanceur DGSL à votre projet
 
-1.  Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du projet auquel vous souhaitez ajouter le nuanceur, puis choisissez **Ajouter**, **Nouvel élément**.
+1.  Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du projet auquel vous voulez ajouter le nuanceur, puis choisissez **Ajouter** > **Nouvel élément**.
 
 2.  Dans la boîte de dialogue **Ajouter un nouvel élément**, sous **Installé**, sélectionnez **Graphiques**, puis **Graphe de nuanceur visuel (.dgsl)**.
 
@@ -74,8 +74,8 @@ Ce tableau décrit les éléments de la barre d’outils **Mode du concepteur de
 |Élément de la barre d'outils|Description|
 |------------------|-----------------|
 |**Select**|Permet l’interaction avec des nœuds et des bords dans le graphique. Dans ce mode, vous pouvez sélectionner des nœuds et les déplacer ou les supprimer. Vous pouvez également créer des bords ou les couper.|
-|**Panoramique**|Permet de déplacer un graphe de nuanceur par rapport au cadre de la fenêtre. Pour effectuer un mouvement panoramique, sélectionnez un point dans l’aire de conception et déplacez-le.<br /><br /> En mode **Sélection**, vous pouvez appuyer sur la touche Ctrl de façon prolongée pour activer temporairement le mode **Panoramique**.|
-|**Zoom**|Permet d’afficher un graphique de nuanceur avec plus ou moins de détails par rapport au cadre de la fenêtre. En mode **Zoom**, sélectionnez un point dans l’aire de conception et déplacez-le vers la droite ou le bas pour effectuer un zoom avant, ou vers la gauche ou le haut pour effectuer un zoom arrière.<br /><br /> En mode **Sélection**, vous pouvez appuyer sur la touche Ctrl de façon prolongée pour effectuer un zoom avant ou arrière à l’aide de la roulette de la souris.|
+|**Panoramique**|Permet de déplacer un graphe de nuanceur par rapport au cadre de la fenêtre. Pour effectuer un mouvement panoramique, sélectionnez un point dans l’aire de conception et déplacez-le.<br /><br /> En mode **Sélection**, vous pouvez maintenir enfoncée la touche **Ctrl** pour activer temporairement le mode **Panoramique**.|
+|**Zoom**|Permet d’afficher un graphique de nuanceur avec plus ou moins de détails par rapport au cadre de la fenêtre. En mode **Zoom**, sélectionnez un point dans l’aire de conception et déplacez-le vers la droite ou le bas pour effectuer un zoom avant, ou vers la gauche ou le haut pour effectuer un zoom arrière.<br /><br /> En mode **Sélection**, vous pouvez maintenir enfoncée la touche **Ctrl** pour effectuer un zoom avant ou arrière à l’aide de la roulette de la souris.|
 |**Zoom pour ajuster**|Affiche le graphe de nuanceur complet dans le cadre de la fenêtre.|
 |**Mode de rendu en temps réel**|Lorsque le rendu en temps réel est activé, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] redessine l'aire de conception, même lorsqu'aucune action utilisateur n'est effectuée. Ce mode est utile lorsque vous travaillez avec des nuanceurs qui évoluent avec le temps.|
 |**Aperçu avec la sphère**|Si cette option est activée, un modèle de sphère est utilisé pour afficher un aperçu du nuanceur. Une seule forme d’aperçu peut être activée à la fois.|
@@ -86,7 +86,7 @@ Ce tableau décrit les éléments de la barre d’outils **Mode du concepteur de
 |**Aperçu avec le plan**|Si cette option est activée, un modèle de plan est utilisé pour afficher un aperçu du nuanceur. Une seule forme d’aperçu peut être activée à la fois.|
 |**Boîte à outils**|Affiche ou masque la **Boîte à outils**.|
 |**Propriétés**|Affiche ou masque la fenêtre **Propriétés**.|
-|**Avancé**|Contient des commandes et des options avancées.<br /><br /> **Exporter** : permet l’exportation d’un nuanceur dans plusieurs formats.<br /><br /> **Exporter en tant que** : exporte le nuanceur soit en tant que code source HLSL ou en tant que bytecode de nuanceur compilé. Pour plus d’informations sur l’exportation des nuanceurs, consultez l’article [Comment : exporter un nuanceur](../designers/how-to-export-a-shader.md).<br /><br /> **Moteurs Graphics** : permet de sélectionner le renderer utilisé pour afficher l’aire de conception.<br /><br /> **Render with D3D11 (Afficher avec D3D11)**  : utilise Direct3D 11 pour afficher l’aire de conception du concepteur de nuanceur.<br /><br /> **Render with D3D11WARP (Afficher avec D3D11WARP)**  : utilise la plateforme WARP (Windows Advanced Rasterization Platform) D3D11 WARP pour afficher l’aire de conception du concepteur de nuanceur.<br /><br /> **Vue** : permet de sélectionner des informations supplémentaires sur le concepteur de nuanceur.<br /><br /> **Fréquence d’images** : si cette option est activée, affiche la fréquence d’images actuelle dans l’angle supérieur droit de l’aire de conception. La fréquence d'images est le nombre d'images dessinées par seconde.  Cette option est utile lorsque vous activez l’option **Mode de rendu en temps réel**.|
+|**Avancé**|Contient des commandes et des options avancées.<br /><br /> **Exporter** : permet l’exportation d’un nuanceur dans plusieurs formats.<br /><br /> **Exporter en tant que** : exporte le nuanceur soit en tant que code source HLSL ou en tant que bytecode de nuanceur compilé. Pour plus d’informations sur la façon d’exporter des nuanceurs, consultez [Guide pratique pour exporter un nuanceur](../designers/how-to-export-a-shader.md).<br /><br /> **Moteurs Graphics** : permet de sélectionner le renderer utilisé pour afficher l’aire de conception.<br /><br /> **Render with D3D11 (Afficher avec D3D11)**  : utilise Direct3D 11 pour afficher l’aire de conception du concepteur de nuanceur.<br /><br /> **Render with D3D11WARP (Afficher avec D3D11WARP)**  : utilise la plateforme WARP (Windows Advanced Rasterization Platform) D3D11 WARP pour afficher l’aire de conception du concepteur de nuanceur.<br /><br /> **Vue** : permet de sélectionner des informations supplémentaires sur le concepteur de nuanceur.<br /><br /> **Fréquence d’images** : si cette option est activée, affiche la fréquence d’images actuelle dans l’angle supérieur droit de l’aire de conception. La fréquence d'images est le nombre d'images dessinées par seconde. Cette option est utile lorsque vous activez l’option **Mode de rendu en temps réel**.|
 
 > [!TIP]
 > Vous pouvez choisir le bouton **Avancé** pour réexécuter la dernière commande.
@@ -101,7 +101,7 @@ Utilisez le mode **Sélection** pour ajouter, supprimer, repositionner, connecte
 
     -   Pour ajouter un nœud au graphique, sélectionnez-le dans la **boîte à outils**, puis déplacez-le vers l’aire de conception.
 
-    -   Pour supprimer un nœud du graphique, sélectionnez-le, puis appuyez sur Suppr.
+    -   Pour supprimer un nœud du graphe, sélectionnez-le, puis appuyez sur la touche **Suppr**.
 
     -   Pour repositionner un nœud, sélectionnez-le, puis déplacez-le vers un nouvel emplacement.
 
@@ -157,34 +157,34 @@ Pour faire pivoter la forme, appuyez et maintenez enfoncée la touche **Alt**, p
 
 Avant de pouvoir utiliser un nuanceur dans votre application, vous devez l’exporter dans un format pris en charge par DirectX.
 
-Vous pouvez exporter des nuanceurs en tant que code source HLSL ou bytecode de nuanceur compilé. Le code source HLSL est exporté dans un fichier texte pourvu de l’extension de nom de fichier .hlsl. Le bytecode de nuanceur peut être exporté dans un fichier binaire brut pourvu de l’extension de nom de fichier .cso ou dans un fichier d’en-tête (.h) en C++, qui encode le bytecode de nuanceur dans un tableau.
+Vous pouvez exporter des nuanceurs en tant que code source HLSL ou bytecode de nuanceur compilé. Le code source HLSL est exporté dans un fichier texte ayant l’extension de nom de fichier  *.hlsl*. Le bytecode de nuanceur peut être exporté dans un fichier binaire brut ayant l’extension de nom de fichier  *.cso* ou dans un fichier d’en-tête (*.h*) en C++, qui encode le bytecode de nuanceur dans un tableau.
 
-Pour plus d’informations sur l’exportation des nuanceurs, consultez l’article [Comment : exporter un nuanceur](../designers/how-to-export-a-shader.md).
+Pour plus d’informations sur la façon d’exporter des nuanceurs, consultez [Guide pratique pour exporter un nuanceur](../designers/how-to-export-a-shader.md).
 
 ## <a name="keyboard-shortcuts"></a>Raccourcis clavier
 
 |Commande|Raccourcis clavier|
 |-------------|------------------------|
-|Passer en mode **Sélection**|Ctrl+G, Ctrl+Q<br /><br /> S|
-|Passer en mode **Zoom**|Ctrl+G, Ctrl+Z<br /><br /> Z|
-|Passer en mode **Panoramique**|Ctrl+G, Ctrl+P<br /><br /> K|
-|Sélectionner tout|Ctrl+A|
-|Supprimer la sélection actuelle|Supprimer|
-|Annuler la sélection actuelle|Échap|
-|Zoom avant|Ctrl+Roulette de la souris vers l'avant<br /><br /> Signe plus (+)|
-|Zoom arrière|Ctrl-Roulette de la souris vers l’arrière<br /><br /> Signe moins (-)|
-|Mouvement panoramique vers le haut de l’aire de conception|Roulette de la souris vers l'arrière<br /><br /> Pg suiv|
-|Mouvement panoramique vers le bas de l’aire de conception|Roulette de la souris vers l'avant<br /><br /> Pg préc|
-|Mouvement panoramique vers la gauche de l’aire de conception|Maj+Roulette de la souris vers l'arrière<br /><br /> Roulette de la souris vers la gauche<br /><br /> Maj+Pg. suiv|
-|Mouvement panoramique vers la droite de l’aire de conception|Maj+Roulette de la souris vers l'avant<br /><br /> Roulette de la souris vers la droite<br /><br /> Maj+Pg. préc|
-|Déplacer le focus clavier vers un autre nœud|Touches de direction|
-|Sélectionner le nœud ayant le focus clavier (ajoute le nœud au groupe de sélection)|Maj+Espace|
-|Activer la sélection du nœud ayant le focus clavier|Ctrl+Barre d'espace|
-|Activer la sélection actuelle (si aucun nœud n’est sélectionné, sélectionner le nœud ayant le focus clavier)|Barre d’espace|
-|Déplacer la sélection actuelle vers le haut|Maj+Haut|
-|Déplacer la sélection actuelle vers le bas|Maj+Bas|
-|Déplacer la sélection actuelle vers la gauche|Maj+Gauche|
-|Déplacer la sélection actuelle vers la droite|Maj+Droite|
+|Passer en mode **Sélection**|**Ctrl**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
+|Passer en mode **Zoom**|**Ctrl**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
+|Passer en mode **Panoramique**|**Ctrl**+**G**, **Ctrl**+**P**<br /><br /> **K**|
+|Sélectionner tout|**Ctrl**+**A**|
+|Supprimer la sélection actuelle|**Supprimer**|
+|Annuler la sélection actuelle|**Échappement** (**Échap**)|
+|Zoom avant|**Ctrl**+**Roulette de la souris vers l’avant**<br /><br /> Signe plus (**+**)|
+|Zoom arrière|**Ctrl**+**Roulette de la souris vers l’arrière**<br /><br /> Signe moins (**-**)|
+|Mouvement panoramique vers le haut de l’aire de conception|**Roulette de la souris vers l’arrière**<br /><br /> **Pg. suiv**|
+|Mouvement panoramique vers le bas de l’aire de conception|**Roulette de la souris vers l’avant**<br /><br /> **Pg. préc**|
+|Mouvement panoramique vers la gauche de l’aire de conception|**Maj**+**Roulette de la souris vers l’arrière**<br /><br /> **Roulette de la souris vers la gauche**<br /><br /> **Maj**+**Pg. suiv**|
+|Mouvement panoramique vers la droite de l’aire de conception|**Maj**+**Roulette de la souris vers l’avant**<br /><br /> **Roulette de la souris vers la droite**<br /><br /> **Maj**+**Pg. préc**|
+|Déplacer le focus clavier vers un autre nœud|**Touches de direction**|
+|Sélectionner le nœud ayant le focus clavier (ajoute le nœud au groupe de sélection)|**Maj**+**Espace**|
+|Activer la sélection du nœud ayant le focus clavier|**Ctrl**+**Espace**|
+|Activer la sélection actuelle (si aucun nœud n’est sélectionné, sélectionner le nœud ayant le focus clavier)|**Barre d’espace**|
+|Déplacer la sélection actuelle vers le haut|**Maj**+**Flèche haut**|
+|Déplacer la sélection actuelle vers le bas|**Maj**+**Flèche bas**|
+|Déplacer la sélection actuelle vers la gauche|**Maj**+**Flèche gauche**|
+|Déplacer la sélection actuelle vers la droite|**Maj**+**Flèche droite**.|
 
 ## <a name="related-topics"></a>Rubriques connexes
 

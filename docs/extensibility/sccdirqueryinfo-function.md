@@ -1,5 +1,5 @@
 ---
-title: Fonction de SccDirQueryInfo | Documents Microsoft
+title: Fonction SccDirQueryInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1de32b8502e40c953bd7080d64e56047e6bb5ce9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d2c7c00f2023d7debd684b442b3901547ac8d1d2
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140366"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639417"
 ---
-# <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo (fonction)
+# <a name="sccdirqueryinfo-function"></a>Fonction SccDirQueryInfo
 Cette fonction examine une liste de répertoires complets pour leur état actuel.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -36,18 +36,18 @@ LPLONG  lpStatus
 );  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+### <a name="parameters"></a>Paramètres  
  pContext  
- [in] La structure de contexte plug-in de contrôle de code source.  
+ [in] La structure de contexte de plug-in de contrôle de source.  
   
  nDirs  
  [in] Le nombre de répertoires sélectionnés à interroger.  
   
  lpDirNames  
- [in] Un tableau des chemins d’accès complets des répertoires à interroger.  
+ [in] Un tableau des chemins qualifiés complets des répertoires à interroger.  
   
  lpStatus  
- [dans, out] Une structure de tableau pour le plug-in pour retourner les indicateurs d’état de contrôle de code source (voir [Code d’état Active](../extensibility/directory-status-code-enumerator.md) pour plus d’informations).  
+ [in, out] Une structure de tableau pour le plug-in pour retourner les indicateurs d’état de contrôle de code source (consultez [code d’état Directory](../extensibility/directory-status-code-enumerator.md) pour plus d’informations).  
   
 ## <a name="return-value"></a>Valeur de retour  
  L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
@@ -60,13 +60,13 @@ LPLONG  lpStatus
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Erreur non spécifique.|  
   
 ## <a name="remarks"></a>Notes  
- La fonction remplit le tableau de résultats avec un masque de bits de bits à partir de la `SCC_DIRSTATUS` famille (consultez [Code d’état Active](../extensibility/directory-status-code-enumerator.md)), une entrée pour chaque répertoire donné. Le tableau de l’état est alloué par l’appelant.  
+ La fonction remplit le tableau de résultats avec un masque de bits de bits à partir de la `SCC_DIRSTATUS` famille (consultez [code d’état Directory](../extensibility/directory-status-code-enumerator.md)), une entrée pour chaque répertoire donné. Le tableau de statut est alloué par l’appelant.  
   
- L’IDE utilise cette fonction avant qu’un répertoire est renommé pour vérifier si le répertoire est sous contrôle de code source en interrogeant s’il dispose d’un projet correspondant. Si le répertoire n’est pas sous contrôle de code source, l’IDE peut fournir l’avertissement approprié à l’utilisateur.  
+ L’IDE utilise cette fonction avant qu’un répertoire est renommé pour vérifier si le répertoire est sous contrôle de code source en interrogeant si elle possède un projet correspondant. Si le répertoire n’est pas sous contrôle de code source, l’IDE peut fournir l’avertissement approprié à l’utilisateur.  
   
 > [!NOTE]
->  Si un plug-in de contrôle de code source choisit ne pas implémenter une ou plusieurs valeurs d’état, non implémentées bits doivent être définis à zéro.  
+>  Si un plug-in de contrôle de code source choisit de n'implémenter pas une ou plusieurs valeurs d’état, non implémentées bits doivent être définis sur zéro.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Fonctions d’API de plug-in de contrôle de source](../extensibility/source-control-plug-in-api-functions.md)   
- [Code d’état Active](../extensibility/directory-status-code-enumerator.md)
+ [Fonctions d’API source contrôle plug-in](../extensibility/source-control-plug-in-api-functions.md)   
+ [Code d’état de répertoire](../extensibility/directory-status-code-enumerator.md)

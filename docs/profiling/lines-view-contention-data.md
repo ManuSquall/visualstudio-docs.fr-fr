@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b01c8aa176fe92cb4309990693063dcd27cf15a8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ae52ad47e18a0572a883c50f43689bdaae60234d
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843849"
 ---
-# <a name="lines-view---contention-data"></a>Lignes, vue - Données de conflit
+# <a name="lines-view---contention-data"></a>Lignes, vue - données de conflit
 La vue Lignes des données de conflit répertorie les données de performance pour les instructions qui étaient en cours d’exécution au moment de la collecte des échantillons dans le cadre de l’exécution du profilage. Dans un fichier source, une instruction peut couvrir plusieurs lignes d'un fichier source, et une ligne unique peut inclure plusieurs instructions.  
   
  Une instruction est identifiée par les données suivantes :  
@@ -64,7 +65,7 @@ La vue Lignes des données de conflit répertorie les données de performance po
 |**Fin ligne source**|Numéro de ligne dans le fichier source au niveau duquel l’instruction se termine.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour personnaliser les colonnes de la vue Rapport](../profiling/how-to-customize-report-view-columns.md)   
+ [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)   
  [Lignes, vue](../profiling/lines-view.md)   
- [Lignes, vue - Échantillonnage](../profiling/lines-view-dotnet-memory-sampling-data.md)   
+ [Lignes, vue - échantillonnage](../profiling/lines-view-dotnet-memory-sampling-data.md)   
  [Lignes, vue](../profiling/lines-view-sampling-data.md)

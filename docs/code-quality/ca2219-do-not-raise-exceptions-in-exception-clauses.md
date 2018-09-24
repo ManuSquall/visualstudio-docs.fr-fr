@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d90e56eee9c68ff94b18204928ecaeeeb55ae0a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e80409a1837da3e82e375561341f4fb4c3da9c28
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919532"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548242"
 ---
 # <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219 : Ne pas lever d'exceptions dans les clauses d'exception
 |||
@@ -32,20 +32,20 @@ ms.locfileid: "31919532"
 |Modification avec rupture|Sans rupture, rupture|
 
 ## <a name="cause"></a>Cause
- Une exception est levée depuis une `finally`, filtre ou une clause fault.
+ Une exception est levée à partir d’un `finally`, filtre ou une clause fault.
 
 ## <a name="rule-description"></a>Description de la règle
- Lorsqu’une exception est levée dans une clause d’exception, il augmente considérablement la difficulté du débogage.
+ Lorsqu’une exception est déclenchée dans une clause d’exception, elle augmente considérablement la difficulté du débogage.
 
  Lorsqu’une exception est levée dans un `finally` ou une clause fault, la nouvelle exception masque l’exception active, le cas échéant. Cela rend l’erreur d’origine difficile à détecter et à déboguer.
 
- Lorsqu’une exception est levée dans une clause de filtre, l’exécution en mode silencieux intercepte l’exception et provoque le filtre doit évaluer sur false. Il n’existe aucun moyen de faire la différence entre l’évaluation de filtre à false et qu’une exception soit levée à partir d’un filtre. Cela rend difficile à détecter et déboguer des erreurs dans la logique du filtre.
+ Lorsqu’une exception est déclenchée dans une clause de filtre, le runtime en mode silencieux intercepte l’exception et provoque le filtre doit évaluer sur false. Il n’existe aucun moyen de faire la différence entre l’évaluation de filtre false et une exception soit levée à partir d’un filtre. Cela rend difficiles à détecter et à déboguer les erreurs dans la logique du filtre.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour résoudre cette violation de cette règle, ne levez pas explicitement d’exception à partir d’un `finally`, filtre ou une clause fault.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez aucun avertissement de cette règle. Il n’existe aucun scénario dans lequel une exception levée dans une clause d’exception présente un avantage au code en cours d’exécution.
+ Ne supprimez pas d’avertissement pour cette règle. Il n’existe aucun scénario dans lequel une exception levée dans une clause d’exception confère un avantage pour l’exécution de code.
 
 ## <a name="related-rules"></a>Règles associées
  [CA1065 : Ne levez pas d’exceptions dans des emplacements inattendus](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)

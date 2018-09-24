@@ -14,23 +14,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6948bd0a9cb3469141ea8c879effa130e7b00e86
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 1083633410c42c63f8c3e9a2ff341a2278f0b63a
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38785236"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153213"
 ---
-# <a name="how-to-create-a-localized-bootstrapper-package"></a>Comment : créer un package du programme d'amorçage localisé
-Après avoir créé un package de programme d'amorçage, vous pouvez créer des versions localisées de ce dernier en créant deux fichiers de plus pour chacun des paramètres régionaux : un fichier des termes du contrat de licence logiciel (par exemple eula.rtf) et un manifeste du package (package.xml).  
+# <a name="how-to-create-a-localized-bootstrapper-package"></a>Comment : créer un package de programme d’amorçage localisé
+Après avoir créé un package de programme d’amorçage, vous pouvez créer des versions localisées du package du programme d’amorçage en créant deux fichiers supplémentaires pour chacun des paramètres régionaux : fichier de termes du contrat de licence du logiciel (comme un *eula.rtf*) et un manifeste de package (*package.xml*).  
   
  Par défaut, Visual Studio 2010 inclut des packages de programme d'amorçage localisés uniquement pour .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 et F# Runtime 4.0. Vous pouvez créer des packages localisés pour d'autres programmes d'amorçage en trois étapes.  
   
-1.  Créez un dossier nommé d’après le nom des paramètres régionaux dans \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*Nom_package_programme_amorçage*.  
+1.  Créez un dossier nommé d’après le nom des paramètres régionaux dans *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<Nom_package_programme_amorçage >*.  
   
 2.  Créez un fichier qui contient les termes du contrat de licence logiciel du package du programme d’amorçage et placez-le dans le nouveau dossier.  
   
-3.  Créez un manifeste du package nommé package.xml, mettez à jour les chaînes et la culture, puis placez le fichier dans le nouveau dossier. Si vous avez déjà créé un programme d'amorçage de Visual Studio dans la langue cible, vous pouvez copier le fichier Visual Studio package.xml et le changer durant cette étape.  
+3.  Créer un manifeste du package nommé *package.xml*, mettre à jour les chaînes et la culture et de placer le fichier dans le nouveau dossier. Si vous avez déjà créé un programme d’amorçage de Visual Studio dans le langage cible, vous pouvez copier le Visual Studio *package.xml* de fichiers et la modifier dans cette étape.  
   
 > [!NOTE]
 >  Si vous utilisez un projet d’installation pour déployer des applications, vous pouvez localiser votre application en modifiant le **localisation** propriété.  
@@ -41,9 +41,9 @@ Après avoir créé un package de programme d'amorçage, vous pouvez créer des 
   
 1.  Créez un dossier nommé en fonction du nom des paramètres régionaux.  
   
-     Sur les ordinateurs 32 bits, créez le dossier dans le Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*Nom_package_programme_amorçage*\ dossier.  
+     Sur les ordinateurs 32 bits, créez le dossier dans le *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<Nom_package_programme_amorçage >\\*  dossier.  
   
-     Sur les ordinateurs 64 bits, créez le dossier dans le \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages Files (86) \Program\\*Nom_package_programme_amorçage*\ dossier.  
+     Sur les ordinateurs 64 bits, créez le dossier dans le *\Program Files (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<Nom_package_programme_amorçage >\\*  dossier.  
   
      Le tableau suivant indique les noms de dossiers qui peuvent correspondre à des paramètres régionaux.  
   
@@ -64,35 +64,35 @@ Après avoir créé un package de programme d'amorçage, vous pouvez créer des 
     |Russe|ru|  
     |Turc|tr|  
   
-2.  Créez un fichier qui contient les termes du contrat de licence logiciel du package du programme d'amorçage et placez-le dans le nouveau dossier.  
+2.  Créez un fichier qui contient les termes du contrat de licence logiciel du package du programme d’amorçage et placez-le dans le nouveau dossier.  
   
-3.  Créez un manifeste du package nommé package.xml et placez-le dans le nouveau dossier. Pour plus d’informations, consultez [Comment : créer un manifeste de Package](../deployment/how-to-create-a-package-manifest.md).  
+3.  Créer un manifeste du package nommé *package.xml* et placez-le dans le nouveau dossier. Pour plus d’informations, consultez [Comment : créer un manifeste de package](../deployment/how-to-create-a-package-manifest.md).  
   
 4.  Mettez à jour la section `<Strings>` du manifeste du package pour que les chaînes soient dans la langue appropriée en fonction des paramètres régionaux.  
   
 5.  Changez la valeur de `<String Name="Culture">` pour qu'elle corresponde au nom du dossier.  
   
-6.  Enregistrez le fichier package.xml.  
+6.  Enregistrer le *package.xml* fichier.  
   
 ### <a name="to-create-a-bootstrapper-package-for-net-framework-35-service-pack-1-localized-in-french"></a>Pour créer un package de programme d'amorçage pour .NET Framework 3.5 Service Pack 1 localisé en français  
   
-1.  Créez un dossier nommé fr. Le nom du dossier doit correspondre au nom des paramètres régionaux.  
+1.  Créez un dossier nommé *fr*. Le nom du dossier doit correspondre au nom des paramètres régionaux.  
   
-     Sur les ordinateurs 32 bits, créez le dossier dans le dossier \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\.  
+     Sur les ordinateurs 32 bits, créez le dossier dans le *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\*  dossier.  
   
-     Sur les ordinateurs 64 bits, créez le dossier dans le dossier \Program Files (86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\.  
+     Sur les ordinateurs 64 bits, créez le dossier dans le *\Program Files (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\*  dossier.  
   
-2.  Placez une version localisée des termes du contrat de licence logiciel dans le dossier fr.  
+2.  Placez une version localisée des termes du contrat de licence de logiciel dans le *fr* dossier.  
   
-3.  Copiez le fichier \Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\en\package.xml dans le dossier fr, puis ouvrez le fichier dans le Concepteur XML.  
+3.  Copie le *\Program fichiers (x86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\en\package.xml* de fichiers à la *fr* dossier, puis ouvrez le fichier dans le Concepteur XML.  
   
 4.  Mettez à jour la section `<Strings>` du manifeste du package pour que les chaînes d'erreur soient en français.  
   
-5.  Changez la valeur de `<String Name="Culture">` en fr.  
+5.  Modifier le `<String Name="Culture">` valeur *fr*.  
   
-6.  Enregistrez le fichier package.xml.  
+6.  Enregistrer le *package.xml* fichier.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Création de packages de programme d’amorçage](../deployment/creating-bootstrapper-packages.md)   
- [Prérequis pour le déploiement d’applications](../deployment/application-deployment-prerequisites.md)   
+ [Créer des packages de programme d’amorçage](../deployment/creating-bootstrapper-packages.md)   
+ [Conditions préalables au déploiement de application](../deployment/application-deployment-prerequisites.md)   
  [Guide pratique pour créer un manifeste de package](../deployment/how-to-create-a-package-manifest.md)

@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2ae66ff032b3f43f80f8c00b12e2d344bba298b9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 85759cc5f9297ba2bb0706352d788ba619a8021c
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970702"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380666"
 ---
-# <a name="how-to-create-a-web-service-test"></a>Comment : créer un test de service Web
+# <a name="how-to-create-a-web-service-test"></a>Guide pratique pour créer un test de service web
 
-Vous pouvez utiliser un test de performances de site web pour tester des services web. À l’aide des options **Insérer une requête** et **Insérer une requête de service web**, vous pouvez personnaliser les requêtes individuelles dans **l’éditeur de test de performances web** pour localiser des pages de service web. En général, vous n'affichez pas ces pages dans l'applications web. Par conséquent, vous devez personnaliser la requête pour accéder à ces pages.
+Vous pouvez utiliser un test de performances web pour tester des services web. À l’aide des options **Insérer une requête** et **Insérer une requête de service web**, vous pouvez personnaliser les requêtes individuelles dans **l’éditeur de test de performances web** pour localiser des pages de service web. En général, vous n'affichez pas ces pages dans l'application web. Par conséquent, vous devez personnaliser la requête pour accéder à ces pages.
 
 Les procédures suivantes utilisent un service web contenu dans le Starter Kit Commerce. Vous pouvez le télécharger à partir du lien [Starter Kit ASP.NET Commerce](http://go.microsoft.com/fwlink/?LinkId=181469).
 
@@ -31,13 +31,13 @@ Les procédures suivantes utilisent un service web contenu dans le Starter Kit C
 
 ## <a name="to-test-a-web-service"></a>Pour tester un service web
 
-1.  Créer un test de performances de site web. Dès que le navigateur s’ouvre, choisissez **Arrêter**.
+1.  Créez un test de performances web. Dès que le navigateur s’ouvre, choisissez **Arrêter**.
 
 2.  Dans **l’éditeur de test de performances web**, cliquez avec le bouton droit sur le test de performances web et sélectionnez **Ajouter une requête de service web**.
 
 3.  Dans la propriété **Url** de la nouvelle requête, tapez le nom du service web, par exemple **http://localhost/storecsvs/InstantOrder.asmx**.
 
-4.  Ouvrez une session distincte du navigateur et tapez l’URL de la page .asmx dans la barre d’outils **Adresse**. Sélectionnez la méthode à tester et examinez le message SOAP. Il contient un `SOAPAction`.
+4.  Ouvrez une session distincte du navigateur et tapez l’URL de la page *.asmx* dans la barre d’outils **Adresse**. Sélectionnez la méthode à tester et examinez le message SOAP. Il contient un `SOAPAction`.
 
 5.  Dans **l’éditeur de test de performances web**, cliquez avec le bouton droit sur la requête et sélectionnez **Ajouter un en-tête** pour ajouter un nouvel en-tête. Dans la propriété **Nom**, tapez `SOAPAction`. Dans la propriété **Valeur**, tapez la valeur qui apparaît dans `SOAPAction` (par exemple, `"http://tempuri.org/CheckStatus"`).
 
@@ -60,7 +60,7 @@ Les procédures suivantes utilisent un service web contenu dans le Starter Kit C
      </soap:Envelope>
      ```
 
-9. Retournez à **l’éditeur de test de performances web**, puis cliquez sur le bouton de sélection (…) dans la propriété **Corps chaîne**. Collez le contenu du Presse-papiers dans la propriété.
+9. Retournez à **l’éditeur de test de performances web**, puis cliquez sur le bouton de sélection **(…)** dans la propriété **Corps chaîne**. Collez le contenu du Presse-papiers dans la propriété.
 
 10. Vous devez remplacer toutes les valeurs d'espace réservé par des valeurs valides pour que le test réussisse. Dans l'exemple précédent, vous devez remplacer les deux instances de `string` et un `int`. Cette opération de service web ne se termine que si un utilisateur inscrit passe une commande.
 
@@ -71,7 +71,7 @@ Les procédures suivantes utilisent un service web contenu dans le Starter Kit C
     > [!NOTE]
     > Vous pouvez utiliser la liaison de données dans le corps SOAP pour remplacer n'importe quelle valeur d'espace réservé par des valeurs liées aux données à l'aide de la syntaxe `{{DataSourceName.TableName.ColumnName}}`.
 
-13. Exécutez le test. Dans le volet supérieur de l'Afficheur des résultats des tests de performances de site web, sélectionnez la requête de service web. Dans le volet inférieur, sélectionnez l'onglet Navigateur Web. Le XML qui est retourné par le service web et les résultats de toutes les opérations sont affichés.
+13. Exécutez le test. Dans le volet supérieur de l'**Afficheur des résultats des tests de performances web**, sélectionnez la requête de service web. Dans le volet inférieur, sélectionnez l'onglet Navigateur Web. Le XML qui est retourné par le service web et les résultats de toutes les opérations sont affichés.
 
 ## <a name="see-also"></a>Voir aussi
 

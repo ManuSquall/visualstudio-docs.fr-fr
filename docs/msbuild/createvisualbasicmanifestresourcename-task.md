@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20575936a6831e5001b2d3c0a413842969219c57
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: faab286dede4c66ab431a1fd1e1bca338ee1eeb2
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572903"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946561"
 ---
-# <a name="createvisualbasicmanifestresourcename-task"></a>CreateVisualBasicManifestResourceName, tâche
-Crée un nom de manifeste de style [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] à partir d’un nom de fichier .resx donné ou d’une autre ressource.  
+# <a name="createvisualbasicmanifestresourcename-task"></a>CreateVisualBasicManifestResourceName (tâche)
+Crée un nom de manifeste de style [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] à partir d’un nom de fichier *.resx* donné ou d’une autre ressource.  
   
 ## <a name="parameters"></a>Paramètres  
  Le tableau suivant décrit les paramètres de la [tâche CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md).  
@@ -40,10 +40,10 @@ Crée un nom de manifeste de style [!INCLUDE[vbprvb](../code-quality/includes/vb
 |`ResourceFilesWithManifestResourceNames`|Paramètre de sortie `String` en lecture seule facultatif.<br /><br /> Retourne le nom du fichier de ressources qui inclut maintenant le nom de ressource de manifeste.|  
   
 ## <a name="remarks"></a>Notes  
- La [tâche CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md) détermine le nom de ressource de manifeste approprié à assigner à un fichier .resx ou autre fichier de ressources donné. La tâche fournit un nom logique à un fichier de ressources, puis l’attache à un paramètre de sortie en tant que métadonnées.  
+ La [tâche CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md) détermine le nom de ressource de manifeste approprié à assigner à un fichier *.resx* ou autre fichier de ressources donné. La tâche fournit un nom logique à un fichier de ressources, puis l’attache à un paramètre de sortie en tant que métadonnées.  
   
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [TaskExtension Base Class](../msbuild/taskextension-base-class.md).  
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Tâches](../msbuild/msbuild-tasks.md)   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)
+ [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 361ff48c1363fc2e736f01c983b32a3ee229a839
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e0f11f797955dd2b909b75c0bc758209e1a0a028
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569902"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152152"
 ---
-# <a name="task-base-class"></a>Classe de base de tâche
+# <a name="task-base-class"></a>Classe de base Task
 De nombreuses tâches héritent au final de la classe <xref:Microsoft.Build.Utilities.Task>. Cette classe ajoute plusieurs paramètres aux tâches qui en dérivent. Ces paramètres sont répertoriés dans ce document.  
   
 ## <a name="parameters"></a>Paramètres  
@@ -37,5 +37,5 @@ De nombreuses tâches héritent au final de la classe <xref:Microsoft.Build.Util
 |<xref:Microsoft.Build.Utilities.Task.Log%2A>|Paramètre en lecture seule <xref:Microsoft.Build.Utilities.TaskLoggingHelper> facultatif.<br /><br /> Objet application d’assistance de journalisation...|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)   
+ [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)   
  [Tâches](../msbuild/msbuild-tasks.md)

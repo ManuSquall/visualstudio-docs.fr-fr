@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38a30dde405c172a1bf29f69edf4e3b9d1b79eee
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: d44b88f5d97fb8c70391506dc2daab99482d6a44
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327357"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154978"
 ---
-# <a name="property-element-msbuild"></a>Property, élément (MSBuild)
+# <a name="property-element-msbuild"></a>Élément Property (MSBuild)
 Contient une valeur et un nom de propriété définis par l’utilisateur. Chaque propriété utilisée dans un projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doit être spécifiée en tant qu’enfant d’un élément `PropertyGroup`.  
 
  \<Project>  
@@ -63,7 +63,7 @@ Contient une valeur et un nom de propriété définis par l’utilisateur. Chaqu
  Ce texte spécifie la valeur de propriété et peut contenir du code XML.  
 
 ## <a name="remarks"></a>Notes  
- Les noms de propriétés sont limités uniquement aux caractères ASCII. Les valeurs de propriété sont référencées dans le projet en plaçant le nom de propriété entre « `$(` » et « `)` ». Par exemple, `$(builddir)\classes` serait résolu en « build\classes » si la propriété `builddir` avait la valeur `build`. Pour plus d’informations sur les propriétés, consultez l’article [Propriétés MSBuild](../msbuild/msbuild-properties.md).  
+ Les noms de propriétés sont limités uniquement aux caractères ASCII. Les valeurs de propriété sont référencées dans le projet en plaçant le nom de propriété entre « `$(` » et « `)` ». Par exemple, `$(builddir)\classes` serait résolu en *build\classes* si la propriété `builddir` avait la valeur `build`. Pour plus d’informations sur les propriétés, voir [Propriétés MSBuild](../msbuild/msbuild-properties.md).  
 
 ## <a name="example"></a>Exemple  
  Le code suivant définit la propriété `Optimization` sur `false` et la propriété `DefaultVersion` sur `1.0` si la propriété `Version` est vide.  
@@ -77,4 +77,4 @@ Contient une valeur et un nom de propriété définis par l’utilisateur. Chaqu
 
 ## <a name="see-also"></a>Voir aussi
 [Propriétés MSBuild](../msbuild/msbuild-properties.md)  
- [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+ [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

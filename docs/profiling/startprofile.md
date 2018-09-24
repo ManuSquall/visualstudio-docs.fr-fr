@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4de525650c7e93497c86fa7ebf493922d8fad6ef
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 6aa365df2d7cdc1219ceea718594682685f2a759
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668777"
 ---
 # <a name="startprofile"></a>StartProfile
 La fonction `StartProfile` définit le compteur sur 1 (désactivé) pour le niveau de profilage spécifié.  
@@ -63,12 +64,12 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
  Quand l’état Start/Stop et l’état Suspend/Resume sont tous deux ON, l’état du profilage pour le niveau est ON. Pour qu’un thread soit profilé, les états des niveaux Global, Processus et Thread pour le thread doivent tous être ON.  
   
 ## <a name="net-framework-equivalent"></a>Équivalent .NET Framework  
- Microsoft.VisualStudio.Profiler.dll  
+ *Microsoft.VisualStudio.Profiler.dll*  
   
 ## <a name="function-information"></a>Informations sur la fonction  
- En-tête : déclaré dans VSPerf.h  
+ En-tête : déclaré dans *VSPerf.h*  
   
- Bibliothèque d’importation : VSPerf.lib  
+ Bibliothèque d’importation : *VSPerf.lib*  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant illustre l’appel de la fonction StartProfile.  

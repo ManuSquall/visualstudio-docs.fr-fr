@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cbabbe7eed62506bc80cbf112c85cda002e409dd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 14aa15d53977167a61d5570d4bc2ac7edffb197d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977775"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511650"
 ---
-# <a name="input-generatation-using-dynamic-symbolic-execution"></a>Génération d’entrées avec l’exécution symbolique dynamique
+# <a name="input-generation-using-dynamic-symbolic-execution"></a>Génération d’entrées à l’aide de l’exécution symbolique dynamique
 
 IntelliTest génère des entrées pour les [tests unitaires paramétrables](test-generation.md#parameterized-unit-testing) en analysant les conditions de branche dans le programme. Les entrées de test sont choisies en fonction de leur capacité à déclencher de nouveaux comportements de création de branches du programme. L’analyse est un processus incrémentiel. Elle redéfinit un prédicat **q: I -> {true, false}** sur les paramètres d’entrée de test formels **I**. **q** représente l’ensemble des comportements déjà observés par IntelliTest. Au départ, **q : = false**, car rien n’a encore été observé.
 
@@ -59,7 +59,7 @@ IntelliTest utilise le solveur de contrainte [Z3](https://github.com/Z3Prover/z3
 Effet collatéral de la surveillance de l’exécution, IntelliTest collecte les données de couverture dynamique de code. La couverture est dite *dynamique* car IntelliTest connaît uniquement le code qui a été exécuté. Par conséquent, il ne peut pas donner de valeurs absolues pour la couverture comme d’autres outils de couverture peuvent généralement en donner. 
 
 Par exemple, quand IntelliTest signale la couverture dynamique de 5/10 blocs de base, cela signifie que cinq blocs sur dix ont été couverts, où le nombre total de blocs de toutes les méthodes qui ont été atteintes jusqu'à présent par l’analyse (par opposition à toutes les méthodes qui existent dans l’assembly testé) est de 10.
-Plus loin dans l’analyse, quand d’autres méthodes accessibles sont découvertes, le numérateur (5 dans cet exemple) et le dénominateur (10) peuvent tous les deux augmenter.
+Plus tard au cours de l’analyse, quand d’autres méthodes accessibles sont découvertes, le numérateur (5 dans cet exemple) et le dénominateur (10) peuvent tous les deux augmenter.
 
 <a name="integers-and-floats"></a>
 ## <a name="integers-and-floats"></a>Nombres entiers et à virgule flottante
@@ -72,7 +72,7 @@ Le [solveur de contrainte](#constraint-solver) d’IntelliTest détermine les va
 IntelliTest peut [créer des instances de classes .NET existantes](#existing-classes) ou vous pouvez utiliser IntelliTest pour automatiquement [créer des objets fictifs](#parameterized-mocks) qui implémentent une interface spécifique et qui se comportent différemment selon leur utilisation.
 
 <a name="existing-classes"></a>
-## <a name="instantiating-existing-classes"></a>Instanciation de classes existantes
+## <a name="instantiate-existing-classes"></a>Instancier les classes existantes
 
 **Quel est le problème ?**
 
@@ -135,7 +135,7 @@ IntelliTest surveille les instructions exécutées quand il exécute un test et 
 IntelliTest tente de réduire la taille des tableaux et des chaînes nécessaires pour déclencher des comportements de programme intéressants.
 
 <a name="additional-inputs"></a>
-## <a name="obtaining-additional-inputs"></a>Obtention d’entrées supplémentaires
+## <a name="obtain-additional-inputs"></a>Obtenir des entrées supplémentaires
 
 La classe statique [PexChoose](static-helper-classes.md#pexchoose) peut être utilisée pour obtenir des entrées supplémentaires dans un test et pour implémenter des [objets fictifs paramétrables](#parameterized-mocks).
 

@@ -1,5 +1,5 @@
 ---
-title: Interrogation de la. Le fichier PDB | Documents Microsoft
+title: Interrogation de la. Fichier PDB | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,15 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b552300926ae0448aacd084b54934f03527f81e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a13f98e9d1507c0044057099d61b625e1142929e
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470060"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282051"
 ---
 # <a name="querying-the-pdb-file"></a>Interrogation du fichier .Pdb
-Un fichier de base de données de programme (.pdb extension) est un fichier binaire qui contient le type et les informations de débogage symboliques collectées au cours de la compilation et la liaison du projet. Un fichier PDB est créé lorsque vous compilez un programme C/C++ avec **/Zi** ou **/Zi** ou un [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], ou [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] programmer avec le **/debug** option. Fichiers objets contiennent des références dans le fichier .pdb pour les informations de débogage. Pour plus d’informations sur les fichiers pdb, consultez [fichiers PDB](http://msdn.microsoft.com/en-us/1761c84e-8c2c-4632-9649-b5f99964ed3f). Une application de DIA peut utiliser les étapes générales suivantes pour obtenir des détails sur les symboles de différents, les objets et les éléments de données dans une image exécutable.  
+Un fichier de base de données de programme (.pdb extension) est un fichier binaire qui contient le type et les informations de débogage symboliques collectées au cours de la compilation et liaison du projet. Un fichier PDB est créé lorsque vous compilez un programme C/C++ avec **/Zi** ou **/Zi** ou un [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], ou [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] programmer avec le **/debug** option. Fichiers objets contiennent des références dans le fichier .pdb pour les informations de débogage. Pour plus d’informations sur les fichiers pdb, consultez [fichiers PDB](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100)). Une application de DIA peut utiliser les étapes générales suivantes pour obtenir des détails sur les différents symboles, les objets et les éléments de données dans une image exécutable.  
   
 ### <a name="to-query-the-pdb-file"></a>Pour interroger le fichier .pdb  
   
@@ -77,7 +77,7 @@ Un fichier de base de données de programme (.pdb extension) est un fichier bina
     }  
     ```  
   
-5.  Utilisez le `IDiaEnum*` interfaces d’énumérer et d’analyser les symboles ou d’autres éléments des informations de débogage.  
+5.  Utilisez le `IDiaEnum*` interfaces pour énumérer et parcourir les symboles ou d’autres éléments d’informations de débogage.  
   
     ```C++  
     CComPtr<IDiaEnumTables> pTables;  

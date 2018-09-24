@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1ad1edbd9d093fc5f1c7f746b7b5f2a2b9d2bd31
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: ad1b093c224e37ce53dc77472518d03f2dc8093b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131880"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320811"
 ---
 # <a name="overview-of-code-analysis-for-managed-code"></a>Vue d’ensemble de l’analyse du code pour le code managé
 
@@ -71,14 +71,14 @@ En tant qu'organisation, vous pourriez demander à ce que tous les archivages re
 
 - Analyse du code est exécutée dans le cadre de la build la plus récente.
 
-Vous pouvez l’effectuer en spécifiant des stratégies d’archivage. Pour plus d’informations, consultez [améliorant la qualité du Code avec les stratégies d’archivage projet d’équipe](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).
+Vous pouvez l’effectuer en spécifiant des stratégies d’archivage. Pour plus d’informations, consultez [améliorant la qualité du Code avec les stratégies d’archivage de projet](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).
 
 ## <a name="team-build-integration"></a>Intégration de Team build
 
-Vous pouvez utiliser les fonctionnalités intégrées du système de génération pour exécuter l’outil d’analyse dans le cadre du processus de génération. Pour plus d’informations, consultez [Build et release (VSTS)](/vsts/build-release/index).
+Vous pouvez utiliser les fonctionnalités intégrées du système de génération pour exécuter l’outil d’analyse dans le cadre du processus de génération. Pour plus d’informations, consultez [Azure Pipelines](/azure/devops/pipelines/index?view=vsts).
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Vue d’ensemble des analyseurs de Roslyn](../code-quality/roslyn-analyzers-overview.md)
 - [Utilisation d’ensembles de règles pour regrouper des règles d’analyse du code](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
-- [Comment : activer et désactiver l’analyse du Code automatique](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [Guide pratique pour activer et désactiver l’analyse du code automatique](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b2948b33db198ddd8f7e002acbad155da66da58
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4bdda75e5c8796ccd6e0b1d86b717dbd9bc48926
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925623"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924445"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Guide pratique pour créer et modifier les niveaux MIP
 Ce document montre comment utiliser l’**Éditeur d’images** pour générer et modifier des *niveaux MIP* pour le niveau de détail de l’espace de texture.
@@ -27,7 +27,7 @@ Ce document montre comment utiliser l’**Éditeur d’images** pour générer e
 
 1.  Commencez par une texture de base, comme décrit dans [Guide pratique pour créer une texture de base](../designers/how-to-create-a-basic-texture.md). Pour de meilleurs résultats, spécifiez une texture qui a une largeur et une hauteur qui sont une puissance de deux, par exemple, 256, 512, 1 024, etc.
 
-2.  Générez les niveaux MIP. Sur la barre d’outils **Mode de l’éditeur d’images**, choisissez **Avancé**, **Outils**, **Générer les mips**.
+2.  Générez les niveaux MIP. Dans la barre d’outils **Mode de l’éditeur d’images**, choisissez **Avancé** > **Outils** > **Générer les mips**.
 
      Notez que les boutons **Accéder au niveau MIP suivant** et **Accéder au niveau MIP précédent** apparaissent désormais dans la barre d’outils **Mode de l’éditeur d’images**. Si la fenêtre **Propriétés** est affichée, notez également que les propriétés en lecture seule **Niveau MIP** et **Nombre de niveaux MIP** apparaissent désormais dans les propriétés de l’image.
 
@@ -41,8 +41,8 @@ Ce document montre comment utiliser l’**Éditeur d’images** pour générer e
 2.  Après avoir sélectionné le niveau MIP que vous voulez modifier, vous pouvez utiliser les outils de dessin pour le modifier sans changer le contenu d’autres niveaux MIP. Les outils de dessin sont disponibles sur la barre d’outils **Éditeur d’images**. Après avoir sélectionné un outil, vous pouvez modifier ses propriétés dans la fenêtre **Propriétés**. Pour plus d’informations sur les outils de dessin et leurs propriétés, consultez [Éditeur d’images](../designers/image-editor.md).
 
 > [!NOTE]
->  Si vous n’avez pas besoin de modifier le contenu de niveaux MIP individuels, ce que vous pouvez faire pour obtenir certains effets, nous vous recommandons de générer des mappages MIP à partir de la texture source au moment de la génération. Ceci permet de garantir que les niveaux MIP restent synchronisés avec la texture source, car les modifications apportées à un niveau MIP ne sont pas propagées automatiquement vers les autres niveaux. Pour plus d’informations sur la façon de générer des mipmaps au moment de la génération, consultez [Comment : exporter une texture qui contient des mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md).
+>  Si vous n’avez pas besoin de modifier le contenu de niveaux MIP individuels, ce que vous pouvez faire pour obtenir certains effets, nous vous recommandons de générer des mappages MIP à partir de la texture source au moment de la génération. Ceci permet de garantir que les niveaux MIP restent synchronisés avec la texture source, car les modifications apportées à un niveau MIP ne sont pas propagées automatiquement vers les autres niveaux. Pour plus d’informations sur la façon de générer des mipmaps au moment de la génération, consultez [Guide pratique pour exporter une texture qui contient des mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Comment : créer une texture de base](../designers/how-to-create-a-basic-texture.md)
+- [Guide pratique pour créer une texture de base](../designers/how-to-create-a-basic-texture.md)

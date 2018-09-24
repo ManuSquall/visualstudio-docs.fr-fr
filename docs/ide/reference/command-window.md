@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6594b87ad313b7f452f579059af377e6128a887a
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 54a6dee20c35b290b50306d5484dc139e8a7600a
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704757"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235100"
 ---
 # <a name="command-window"></a>Commande, fenêtre
 La fenêtre **Commande** est utilisée pour exécuter des commandes ou des alias directement dans l’environnement de développement intégré (IDE) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Vous pouvez exécuter à la fois les commandes de menu et les commandes qui n’apparaissent dans aucun menu. Pour afficher la fenêtre **Commande**, sélectionnez **Autres fenêtres** dans le menu **Affichage** et choisissez **Fenêtre Commande**.

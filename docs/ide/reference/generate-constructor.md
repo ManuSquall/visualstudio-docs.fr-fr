@@ -4,17 +4,17 @@ ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
-author: kuhlenh
-ms.author: kaseyu
+author: gewarren
+ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 44235bcacf6f60a3c58fa08f01465f6aad9e57f4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6c063d8abc3b00ce15726ebfe0e8733254718428
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954486"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124981"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Générer un constructeur dans Visual Basic
 
@@ -54,7 +54,7 @@ Cette génération de code s’applique à :
 
    ![Générer l’aperçu du constructeur](media/constructor1-preview-cs.png)
 
-1. Sélectionnez **Générer le constructeur...** dans le menu déroulant.
+1. Sélectionnez **Générer le constructeur** dans le menu déroulant.
 
    La boîte de dialogue **Choisir les membres** s’ouvre.
 

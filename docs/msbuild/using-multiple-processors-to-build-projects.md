@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aff6d2ff6f509bca31283e2fbb04896f6e8adce9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ae7ff885ea7707ebe2f60001b265913856cbd125
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31577507"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177748"
 ---
-# <a name="using-multiple-processors-to-build-projects"></a>Utilisation de plusieurs processeurs pour générer des projets
+# <a name="use-multiple-processors-to-build-projects"></a>Utiliser plusieurs processeurs pour générer des projets
 MSBuild permet d’exploiter des systèmes dotés de plusieurs processeurs ou de processeurs à plusieurs cœurs. Un processus de génération séparé est créé pour chaque processeur disponible. Par exemple, si le système comporte quatre processeurs, quatre processus de génération sont créés. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] peut traiter ces builds simultanément, et par conséquent la durée globale de génération est réduite. Toutefois, la génération parallèle introduit des modifications dans le déroulement du processus de génération. Cette rubrique aborde ces modifications.  
   
 ## <a name="project-to-project-references"></a>Références entre projets  
@@ -33,7 +33,7 @@ MSBuild permet d’exploiter des systèmes dotés de plusieurs processeurs ou de
  Dans les builds parallèles, les erreurs et exceptions ne se produisent pas nécessairement aux mêmes moments que dans une build non parallèle, et quand la build d’un projet échoue, les autres builds de projet continuent. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] n’arrête aucune génération de projet qui s’exécute parallèlement à celle qui a échoué. La génération d’autres projets continue jusqu’à ce qu’elles réussissent ou échouent. Toutefois, si <xref:Microsoft.Build.Framework.IBuildEngine.ContinueOnError%2A> a été activé, aucune génération ne s’arrête, même si une erreur se produit.  
   
 ## <a name="visual-c-project-vcproj-and-solution-sln-files"></a>Fichiers projet (.vcproj) et solution (.sln) Visual C++  
- Vous pouvez passer des fichiers projet (.vcproj) et solution (.sln) [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] à la [tâche MSBuild](../msbuild/msbuild-task.md). Pour les projets [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], VCWrapperProject est appelé, puis le projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] interne est créé. Pour les solutions [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], un SolutionWrapperProject est créé, puis le projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] interne. Dans les deux cas, le projet résultant est traité comme tout autre projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
+ Vous pouvez passer des fichiers projet [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] (*.vcproj*) et solution (*.sln*) à la [tâche MSBuild](../msbuild/msbuild-task.md). Pour les projets [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], VCWrapperProject est appelé, puis le projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] interne est créé. Pour les solutions [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], un SolutionWrapperProject est créé, puis le projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] interne. Dans les deux cas, le projet résultant est traité comme tout autre projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
   
 ## <a name="multi-process-execution"></a>Exécution de plusieurs processus  
  Presque toutes les activités liées à la génération nécessitent un répertoire constant durant le processus de génération pour éviter les erreurs liées aux chemins. Les projets ne peuvent donc pas s’exécuter sur des threads différents dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] car ils provoqueraient la création de plusieurs répertoires.  
@@ -41,5 +41,5 @@ MSBuild permet d’exploiter des systèmes dotés de plusieurs processeurs ou de
  Pour éviter ce problème tout en autorisant la génération multiprocesseur, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] utilise « l’isolation des processus ». Grâce à l’isolation des processus, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] peut créer au maximum `n` processus, où `n` représente le nombre de processeurs disponibles sur le système. Par exemple, si [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] génère une solution sur un système à deux processeurs, seuls deux processus de génération sont créés. Ces processus sont réutilisés pour générer tous les projets dans la solution.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Génération parallèle de plusieurs projets](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)   
+ [Générer plusieurs projets en parallèle](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)   
  [Tâches](../msbuild/msbuild-tasks.md)

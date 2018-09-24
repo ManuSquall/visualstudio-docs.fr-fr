@@ -1,105 +1,117 @@
 ---
-title: Visite guidée de l’IDE de Visual Studio | Microsoft Docs
-ms.custom: ''
-ms.date: 11/15/2017
-ms.technology:
-- vs-ide-general
+title: Présentation de l’IDE Visual Studio
+ms.date: 07/12/2018
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c9dfa3ba8f4e87b842d2ba8677f76aabd4931d1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dbf969e6e9a37179621cad52243418a2d0536f1a
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42626853"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Démarrage rapide : premier aperçu de l'IDE Visual Studio
 
 Dans cette présentation de 5-10 minutes de l’environnement de développement intégré (IDE) de Visual Studio, vous allez effectuer une visite guidée de quelques fenêtres, menus et autres fonctionnalités de l’interface utilisateur.
 
-Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) pour l’installer gratuitement.
+Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) pour l’installer gratuitement.
 
 ## <a name="start-page"></a>Page de démarrage
 
-Lorsque vous lancez Visual Studio, la première chose qui s’affiche en général est la Page de démarrage. La Page de démarrage est conçu comme un « hub » pour vous aider à trouver plus rapidement les commandes et fichiers projet dont vous avez besoin. La section **Récent** affiche les projets et dossiers que vous avez utilisés récemment. Sous **Nouveau projet**, vous pouvez cliquer sur un lien pour afficher la boîte de dialogue Nouveau projet ou sous **Ouvrir**, vous pouvez ouvrir un projet ou dossier de code existant. Vous trouverez à droite un flux des dernières informations pour les développeurs.
+Quand vous lancez Visual Studio, la première chose qui s’affiche en général est la **Page de démarrage**. La **Page de démarrage** est conçue comme un « hub » pour vous aider à trouver plus rapidement les commandes et fichiers projet dont vous avez besoin. La section **Récent** affiche les projets et dossiers que vous avez utilisés récemment. Sous **Nouveau projet**, vous pouvez cliquer sur un lien pour afficher la boîte de dialogue **Nouveau projet**, ou sous **Ouvrir**, vous pouvez ouvrir un projet ou dossier de code existant. Vous trouverez à droite un flux des dernières informations pour les développeurs.
 
-![Page de démarrage VS](media/quickstart-IDE-start-page.png)
+![Page de démarrage dans Visual Studio](media/start-page.png)
 
-Si vous fermez la Page de démarrage et souhaitez l’afficher à nouveau, vous pouvez la rouvrir à partir du menu **Fichier**.
+Si vous fermez la **Page de démarrage** et souhaitez la revoir, vous pouvez la rouvrir à partir du menu **Fichier**.
 
-![menu Fichier](media/quickstart-IDE-file-menu-large.png)
+![Menu Fichier dans Visual Studio](media/quickstart-IDE-file-menu-large.png)
 
-Pour continuer à explorer l’IDE, créons un projet.
+## <a name="create-a-project"></a>Créer un projet
 
-1. Dans la **Page de démarrage**, dans la zone de recherche sous **Nouveau projet**, entrez `console` pour filtrer la liste des types de projets. Choisissez une application de console C# ou VB **(.NET Framework)**. (Ou, si vous êtes un développeur en C++, Javascript ou autre langage, n’hésitez pas à créer un projet dans l’un de ces langages. L’interface utilisateur que nous allons explorer est identique pour tous les langages.)
+Pour continuer à explorer les fonctionnalités de Visual Studio, nous allons créer un projet.
 
-1. Dans la boîte de dialogue **Nouveau projet**, acceptez le nom de projet par défaut et sélectionnez **OK**.
+1. Dans la **Page de démarrage**, dans la zone de recherche sous **Nouveau projet**, tapez **console** pour filtrer la liste des types de projets à ceux dont le nom contient le mot « console ».
 
-   Le projet est créé et un fichier nommé **Program.cs** ou **Program.vb** s’ouvre dans la fenêtre **Éditeur**. L’Éditeur affiche le contenu des fichiers. C’est là que vous effectuerez la majeure partie de votre travail de codage dans Visual Studio.
+   ![Rechercher des modèles de projet dans la page de démarrage de Visual Studio](media/start-page-search-templates.png)
+
+   Visual Studio fournit différents types de modèles de projet qui vous aident à bien démarrer le codage. Choisissez un modèle de projet C# **Application console (.NET Framework)**. (Ou, si vous êtes un développeur en Visual Basic, C++, Javascript ou autre langage, n’hésitez pas à créer un projet dans l’un de ces langages. L’interface utilisateur que nous allons explorer est identique pour tous les langages de programmation.)
+
+1. Dans la boîte de dialogue **Nouveau projet** qui apparaît, acceptez le nom de projet par défaut et sélectionnez **OK**.
+
+   Le projet est créé et un fichier nommé *Program.cs* s’ouvre dans la fenêtre **Éditeur**. **L’Éditeur** affiche le contenu des fichiers. C’est là que vous effectuez la majeure partie de votre travail de codage dans Visual Studio.
+
+   ![Éditeur dans Visual Studio](media/editor.png)
 
 ## <a name="solution-explorer"></a>Explorateur de solutions
 
-L’Explorateur de solutions affiche une représentation graphique de la hiérarchie des fichiers et des dossiers dans votre projet, solution ou dossier de code. Vous pouvez parcourir la hiérarchie et atteindre un fichier dans l’Explorateur de solutions.
+L’**Explorateur de solutions**, qui se trouve généralement sur le côté droit de Visual Studio, affiche une représentation graphique de la hiérarchie des fichiers et des dossiers dans votre projet, solution ou dossier de code. Vous pouvez parcourir la hiérarchie et atteindre un fichier dans **l’Explorateur de solutions**.
 
-![Explorateur de solutions](media/quickstart-IDE-solution-explorer.png)
+![Explorateur de solutions dans Visual Studio](media/quickstart-IDE-solution-explorer.png)
 
 ## <a name="menus"></a>Menus
 
-La barre de menus au sommet de l’IDE regroupe les commandes en catégories. Par exemple, le menu **Projet** contient les commandes liées au projet sur lequel vous travaillez. Dans le menu **Outils**, vous pouvez personnaliser l’IDE en sélectionnant **Options** ou vous pouvez ajouter des fonctionnalités à votre installation en sélectionnant **Obtenir des outils et des fonctionnalités...**.
+La barre de menus en haut de la fenêtre de Visual Studio regroupe les commandes en catégories. Par exemple, le menu **Projet** contient les commandes liées au projet sur lequel vous travaillez. Dans le menu **Outils**, vous pouvez personnaliser le comportement de Visual Studio en sélectionnant **Options**, ou vous pouvez ajouter des fonctionnalités à votre installation en sélectionnant **Obtenir des outils et des fonctionnalités**.
 
-![Barre de menus](media/quickstart-IDE-menu-bar.png)
+![Barre de menus dans Visual Studio](media/quickstart-IDE-menu-bar.png)
 
-Ouvrons la fenêtre Liste d’erreurs en sélectionnant le menu **Afficher**, puis **Liste d’erreurs**.
+Ouvrons la fenêtre **Liste d’erreurs** en sélectionnant le menu **Afficher**, puis **Liste d’erreurs**.
 
 ## <a name="error-list"></a>Liste d'erreurs
 
-La Liste d’erreurs affiche les erreurs, avertissements et messages concernant l’état actuel de votre code. S’il existe des erreurs (par exemple, une erreur de typographie dans la syntaxe) dans votre fichier, ou n’importe où dans votre projet, elles sont répertoriées ici.
+La **Liste d’erreurs** affiche les erreurs, avertissements et messages concernant l’état actuel de votre code. S’il existe des erreurs (par exemple, une accolade ou un point-virgule manquant) dans votre fichier, ou n’importe où dans votre projet, elles sont répertoriées ici.
 
-![Liste d'erreurs](media/quickstart-IDE-error-list.png)
+![Liste d’erreurs dans Visual Studio](media/quickstart-IDE-error-list.png)
 
 ## <a name="output-window"></a>Fenêtre Sortie
 
-La fenêtre Sortie affiche des messages de sortie à partir de Générer et de Contrôle de la source.
+La fenêtre **Sortie** affiche les messages de sortie après la génération de votre projet et les messages retournés par votre fournisseur de contrôle de code source.
 
-Générons le projet pour afficher une journalisation de sortie. Dans le menu **Générer** , cliquez sur **Générer la solution**. La fenêtre Sortie est automatiquement mise au point et affiche un message de génération réussie.
+Générons le projet pour afficher une sortie de génération. Dans le menu **Générer** , cliquez sur **Générer la solution**. La fenêtre **Sortie** obtient automatiquement le focus et affiche un message de génération réussie.
 
-![Fenêtre Sortie](media/quickstart-IDE-output.png)
+![Fenêtre Sortie dans Visual Studio](media/build-output-minimal.png)
 
 ## <a name="quick-launch"></a>Lancement rapide
 
-La zone Lancement rapide permet d’effectuer rapidement et facilement presque n’importe quelle opération dans l’IDE. Vous pouvez saisir du texte concernant ce que vous voulez faire et une liste d’options pertinente s’affiche. Imaginons, par exemple, que nous voulons augmenter les commentaires sur la sortie de la génération pour afficher des informations de journalisation supplémentaires ce que fait la génération :
+La zone **Lancement rapide** permet d’effectuer rapidement et facilement presque n’importe quelle opération dans Visual Studio. Vous pouvez saisir du texte concernant ce que vous voulez faire et une liste d’options pertinente s’affiche. Imaginez par exemple que vous souhaitez augmenter les commentaires de la sortie de la génération pour afficher des détails supplémentaires sur ce que fait la génération. Voici comment procéder :
 
-1. Entrez `verbosity` dans la zone **Lancement rapide**, puis choisissez **Projets et solutions -> Générer et exécuter** sous la catégorie **Options**.
+1. Tapez **commentaires** dans la zone **Lancement rapide**. Parmi les résultats affichés, choisissez **Projets et solutions --> Générer et exécuter** sous la catégorie **Options**.
 
-   ![Zone Lancement rapide](media/quickstart-IDE-quick-launch.png)
+   ![Zone de lancement rapide dans Visual Studio](media/quickstart-IDE-quick-launch.png)
 
    La boîte de dialogue **Options** s’affiche sur la page des options **Générer et exécuter**.
 
 1. Sous **Commentaires relatifs à la sortie de génération du projet MSBuild**, choisissez **Normal**, puis cliquez sur **OK**.
 
-1. Maintenant, nous allons générer le projet à nouveau en cliquant avec le bouton droit sur le projet **ConsoleApp1** dans **l’Explorateur de solutions** et en choisissant **Regénérer** dans le menu contextuel.
+1. Regénérez le projet en cliquant avec le bouton droit sur le projet **ConsoleApp1** dans l’**Explorateur de solutions** et en choisissant **Regénérer** dans le menu contextuel.
 
-   Cette fois, la fenêtre Sortie affiche une journalisation de commentaires plus importante à partir du processus de génération, notamment quels fichiers ont été copiés et où.
+   Cette fois, la fenêtre **Sortie** affiche une journalisation de commentaires plus importante à partir du processus de génération, notamment quels fichiers ont été copiés et où.
+
+   ![Sortie de génération avec commentaires dans Visual Studio](media/build-output-verbose.png)
 
 ## <a name="send-feedback-menu"></a>Menu Envoyer des commentaires
 
-Si vous rencontrez des problèmes lors de l’utilisation de Visual Studio, ou si vous avez des suggestions d’amélioration du produit, vous pouvez utiliser le menu **Envoyer des commentaires** au sommet de l’IDE, à côté de la zone Lancement rapide.
+Si vous rencontrez des problèmes pendant l’utilisation de Visual Studio, ou si vous avez des suggestions d’amélioration du produit, vous pouvez utiliser le menu **Envoyer des commentaires** en haut de la fenêtre de Visual Studio, à côté de la zone **Lancement rapide**.
 
-![Menu Envoyer des commentaires](media/quickstart-IDE-send-feedback.png)
+![Menu Envoyer des commentaires dans Visual Studio](media/quickstart-IDE-send-feedback.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Nous avons exploré quelques fonctionnalités de l’IDE de Visual Studio pour nous familiariser avec l’interface utilisateur. Pour en apprendre davantage :
+Nous avons exploré quelques fonctionnalités de Visual Studio pour nous familiariser avec l’interface utilisateur. Pour en apprendre davantage :
 
-- Parcourez la section Éléments généraux de l’interface utilisateur dans la documentation VS, qui explore plus en détail les fenêtres comme [Liste d’erreurs](../ide/reference/error-list-window.md), [fenêtre Sortie](../ide/reference/output-window.md), [fenêtre Propriétés](../ide/reference/properties-window.md) et [boîte de dialogue Options](../ide/reference/options-dialog-box-visual-studio.md)
+> [!div class="nextstepaction"]
+> [Découvrez l’éditeur de code](../ide/quickstart-editor.md)
 
-- Effectuez une visite guidée plus approfondie de l’IDE et essayez-vous au débogage, dans [Présentation de l’IDE de Visual Studio](../ide/visual-studio-ide.md)
+> [!div class="nextstepaction"]
+> [Découvrir les projets et les solutions](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Démarrage rapide : personnalisation de l’IDE](../ide/personalizing-the-visual-studio-ide.md)
-- [Démarrage rapide : codage dans l’éditeur](../ide/quickstart-editor.md)
-- [Démarrage rapide : projets et solutions](../ide/quickstart-projects-solutions.md)
+- [Vue d’ensemble de l’IDE Visual Studio](../ide/visual-studio-ide.md)
+- [Fonctionnalités supplémentaires de Visual Studio 2017](../ide/advanced-feature-overview.md)
+- [Changer le thème et les couleurs de police](../ide/quickstart-personalize-the-ide.md)

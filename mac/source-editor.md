@@ -1,16 +1,16 @@
 ---
 title: Éditeur de code source
 description: Utilisation de l’éditeur de code source dans Visual Studio pour Mac
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: 8660ee0de90813e95a221c3b4ea3a50528b4307a
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 566a776b64cf649443292e1f11efa5a43c539357
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956996"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224408"
 ---
 # <a name="source-editor"></a>Éditeur de code source
 
@@ -78,4 +78,4 @@ Quand l’option «Mettre en évidence les références d’identificateur » es
 
 La couleur de la mise en évidence est également pratique pour indiquer que quelque chose fait l’objet d’une affectation ou qu’il est référencé. Si quelque chose fait l’objet d’une affectation, il est mis en évidence en rouge ; s’il est référencé, il est mis en évidence en bleu :
 
-![Exemple illustrant la couleur de la mise en évidence](media/source-editor-image7.png)
+![Exemple illustrant la couleur de la mise en surbrillance](media/source-editor-image7.png)

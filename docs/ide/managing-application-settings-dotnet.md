@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04d2c31db4c117f3bc902218a61656e5eca49e27
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3333aa5db6f28d23db901fef811b9291fdf1270e
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951019"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177891"
 ---
 # <a name="manage-application-settings-net"></a>Gérer les paramètres d’application (.NET)
 
@@ -36,7 +36,7 @@ De plus, les paramètres d’application peuvent être liés à une propriété 
 
 Selon la portée, on distingue deux types de paramètres d’application :
 
-- Les paramètres de portée application peuvent être utilisés pour des informations telles qu’une URL pour un service Web ou une chaîne de connexion à une base de données. Ces valeurs sont associées à l’application. Par conséquent, les utilisateurs ne peuvent pas les modifier au moment de l’exécution.
+- Les paramètres de portée application peuvent être utilisés pour des informations telles qu’une URL pour un service web ou une chaîne de connexion à une base de données. Ces valeurs sont associées à l’application. Par conséquent, les utilisateurs ne peuvent pas les modifier au moment de l’exécution.
 
 - Les paramètres de portée utilisateur peuvent être utilisés pour des informations telles que la persistance de la dernière position d’un formulaire ou d’une préférence de police. Les utilisateurs peuvent modifier ces valeurs au moment de l’exécution.
 
@@ -70,7 +70,7 @@ Quand vous créez un paramètre de portée utilisateur (par exemple, une police 
 
 ## <a name="use-customized-settings-files"></a>Utiliser des fichiers de paramètres personnalisés
 
-Vous pouvez ajouter des fichiers de paramètres personnalisés à votre projet pour une gestion pratique des groupes de paramètres. Comme les paramètres contenus dans un fichier unique sont chargés et enregistrés en tant qu’unité. Stocker les paramètres dans des fichiers séparés pour les groupes utilisés fréquemment et ceux utilisés rarement peut économiser du temps en termes de chargement et d’enregistrement des paramètres.
+Vous pouvez ajouter des fichiers de paramètres personnalisés à votre projet pour une gestion pratique des groupes de paramètres. Comme les paramètres contenus dans un fichier unique sont chargés et enregistrés en tant qu’unité, Stocker les paramètres dans des fichiers séparés pour les groupes utilisés fréquemment et ceux utilisés rarement peut économiser du temps en termes de chargement et d’enregistrement des paramètres.
 
 Par exemple, vous pouvez ajouter un fichier tel que *SpecialSettings.settings* à votre projet. Tandis que votre classe `SpecialSettings` n’est pas exposée dans l’espace de noms `My` , le mode **Afficher le code** peut lire le fichier des paramètres personnalisés qui contient `Partial Class SpecialSettings`.
 

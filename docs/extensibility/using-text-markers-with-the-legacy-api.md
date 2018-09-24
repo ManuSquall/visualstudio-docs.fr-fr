@@ -1,5 +1,5 @@
 ---
-title: À l’aide de marqueurs de texte avec l’API héritée | Documents Microsoft
+title: À l’aide de marqueurs de texte avec l’API héritée | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,35 +13,35 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ebef6593a019b09e7ee00cced56777d8488323f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bcfae4cc786fb7a3e0c2ccd48f867bb6c32530d6
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141940"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496127"
 ---
-# <a name="using-text-markers-with-the-legacy-api"></a>À l’aide de marqueurs de texte avec l’API hérité
-Un marqueur de texte est une plage flottante du texte dans une mémoire tampon qui peut affecter l’affichage et le comportement d’une zone de texte. Marqueurs incluent les points d’arrêt, les signets, les soulignements ondulés et les zones en lecture seule. Marqueurs de texte sont fondamentalement différents de coloration de la syntaxe. La coloration de syntaxe est un moyen rapide de communiquer la syntaxe du langage qui est associée à une zone de texte. La coloration de syntaxe est généralement demandée lorsque Windows repeint l’écran, la vitesse est importante. La coloration de syntaxe modifie uniquement la couleur du texte. Des marqueurs de texte peuvent modifier de nombreuses autres propriétés de texte. Marqueurs de texte peuvent s’appliquer un comportement spécial et « flotter » et la coloration.  
+# <a name="using-text-markers-with-the-legacy-api"></a>À l’aide de marqueurs de texte avec l’API héritée
+Un marqueur de texte est une plage flottante de texte dans une mémoire tampon qui peut affecter l’affichage et le comportement d’une zone de texte. Marqueurs incluent des points d’arrêt, les signets, les soulignements ondulés et les zones en lecture seule. Marqueurs de texte sont fondamentalement différents à partir de la coloration syntaxique. Coloration de la syntaxe est un moyen rapide de communiquer la syntaxe du langage qui est associée à une zone de texte. Coloration de la syntaxe est généralement demandée lorsque Windows redessine l’écran, la vitesse est importante. La coloration syntaxique modifie uniquement la couleur du texte. Marqueurs de texte peuvent modifier de nombreuses autres propriétés de texte. Marqueurs de texte peuvent « flotter » et appliquer un comportement particulier et la couleur.  
   
  En raison de la surcharge de performances associée aux marqueurs de texte, ne créez pas plusieurs marqueurs pour vos tampons de texte. Chaque marqueur est mis à jour chaque fois qu’un utilisateur modifie le contenu de la mémoire tampon.  
   
 > [!NOTE]
->  Les utilisateurs peuvent modifier la couleur d’un type de marqueur visibles, mais pas sa forme et le style. Pour plus d’informations, consultez [polices et couleurs, environnement, boîte de dialogue Options](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
+>  Les utilisateurs peuvent modifier la couleur d’un type de marqueur visible mais pas sa forme et son style. Pour plus d’informations, consultez [polices et couleurs, environnement, boîte de dialogue Options](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
   
 ## <a name="related-topics"></a>Rubriques connexes  
   
 |Titre|Description|  
 |-----------|-----------------|  
-|[Comment : ajouter des marqueurs de texte Standard](../extensibility/how-to-add-standard-text-markers.md)|Décrit comment ajouter un type de marqueur de texte standard fourni par le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur principal à une vue de texte.|  
-|[Comment : implémenter des marqueurs d’erreur](../extensibility/how-to-implement-error-markers.md)|Décrit comment implémenter une instance de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] marqueur est utilisé pour indiquer les erreurs à l’aide de soulignements ondulés rouges.|  
-|[Comment : créer des marqueurs de texte personnalisé](../extensibility/how-to-create-custom-text-markers.md)|Décrit comment créer et ajouter un type de marqueur de texte personnalisé à une vue de texte.|  
-|[Comment : utiliser des marqueurs de texte](../extensibility/how-to-use-text-markers.md)|Explique comment ajouter des marqueurs de texte.|  
+|[Guide pratique pour ajouter des marqueurs de texte standard](../extensibility/how-to-add-standard-text-markers.md)|Décrit comment ajouter un type de marqueur de texte standard fourni par le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur principal pour un affichage de texte.|  
+|[Guide pratique pour implémenter des marqueurs d’erreur](../extensibility/how-to-implement-error-markers.md)|Décrit comment implémenter une instance de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] marqueur qui sert à indiquer les erreurs à l’aide des soulignements ondulés rouges.|  
+|[Guide pratique pour créer des marqueurs de texte personnalisés](../extensibility/how-to-create-custom-text-markers.md)|Décrit comment créer et ajouter un type de marqueur de texte personnalisé à une vue de texte.|  
+|[Guide pratique pour utiliser des marqueurs de texte](../extensibility/how-to-use-text-markers.md)|Explique comment ajouter des marqueurs de texte.|  
 |[Dans l’éditeur de base](../extensibility/inside-the-core-editor.md)|Décrit les fonctionnalités de l’éditeur principal et fournit des détails sur la personnalisation de l’éditeur principal.|  
-|[Fonctionnalités de l’éditeur](http://msdn.microsoft.com/en-us/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Décrit les fonctionnalités disponibles dans le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur principal.|  
+|[Fonctionnalités de l’éditeur](https://msdn.microsoft.com/library/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Décrit les fonctionnalités disponibles dans le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur principal.|  
   
 ## <a name="reference"></a>Référence  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  
- Fournit un mécanisme uniform pour obtenir des informations sur un type de marqueur de texte spécifique, si prédéfinis par l’éditeur ou enregistré par un VSPackage.  
+ Fournit un mécanisme uniforme pour obtenir des informations sur un type de marqueur de texte spécifique, si prédéfini par l’éditeur ou inscrit par un VSPackage.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLineMarker>  
  Permet d’accéder à et ajuste la position d’un marqueur de texte dans une mémoire tampon de texte à l’aide de coordonnées à deux dimensions.  
@@ -50,25 +50,25 @@ Un marqueur de texte est une plage flottante du texte dans une mémoire tampon q
  Fournit des méthodes pour la gestion des marqueurs de texte.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>  
- Fournit des rappels pour les [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE et les autres processus qui sont utilisées pour ajuster un marqueur de texte.  
+ Fournit des rappels à la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE et d’autres processus qui sont utilisés pour ajuster un marqueur de texte.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced>  
- Étend les fonctionnalités qui est disponible via le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interface en fournissant des rappels supplémentaires.  
+ Étend les fonctionnalités qui sont disponible via le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interface en fournissant des rappels supplémentaires.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx>  
- Étend les fonctionnalités qui est disponible via le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interface en fournissant des rappels supplémentaires.  
+ Étend les fonctionnalités qui sont disponible via le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interface en fournissant des rappels supplémentaires.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerColorSet>  
  Permet à un type de marqueur déterminer si autres types de marqueur d'partagent le même jeu de couleurs.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>  
- Fournit le contexte pour les marqueurs de texte dans l’éditeur principal. Pour chaque type de marqueur de texte qui se trouve dans l’éditeur principal, l’interface IDE crée un distinct <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> objet.  
+ Fournit le contexte pour les marqueurs de texte dans l’éditeur principal. Pour chaque type de marqueur de texte qui se trouve dans l’éditeur principal, l’IDE crée un distinct <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> objet.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerGlyphDropHandler>  
  Un gestionnaire qui est fourni pour les marqueurs dont glyphes prennent en charge le glisser-déplacer. Un glyphe est une icône qui indique la position d’un marqueur.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>  
- Retourne un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType> interface à partir d’un service qui fournit un texte de marqueurs à d’autres packages VS.  
+ Retourne un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType> interface à partir d’un service qui fournit un texte marqueurs aux autres VSPackages.  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamMarker>  
- Permet d’accéder à et ajuste la position d’un marqueur de texte dans une mémoire tampon de texte à l’aide de coordonnées unidimensionnelles. S’il est possible, n’utilisez pas cette interface.
+ Permet d’accéder à et ajuste la position d’un marqueur de texte dans une mémoire tampon de texte à l’aide des coordonnées unidimensionnelles. S’il est possible, n’utilisez pas cette interface.

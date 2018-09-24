@@ -14,16 +14,20 @@ ms.assetid: 402101b6-555d-4cf7-b223-1d9fdfaaf1cd
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e605cb0188ca72cb74905e34ee5196a07f748cd6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29bd98677715a8772143ab448206f2a5ccddd763
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899962"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551617"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003 : Utiliser les instances du gestionnaire d'événements génériques
+
 |||
 |-|-|
 |TypeName|UseGenericEventHandlerInstances|
@@ -32,10 +36,10 @@ ms.locfileid: "31899962"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Un type contient un délégué qui retourne void, dont la signature contient deux paramètres (le premier est un objet et le second est un type pouvant être assigné à EventArgs) et l’assembly conteneur cible [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+ Un type contienne un délégué qui retourne void, dont la signature contient deux paramètres (le premier est un objet et le second est un type pouvant être assigné à EventArgs) et l’assembly conteneur cible [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
 
 ## <a name="rule-description"></a>Description de la règle
- Avant de [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], afin de passer des informations personnalisées au gestionnaire d’événements, un nouveau délégué devait être déclaré qui a spécifié une classe qui est dérivée de la <xref:System.EventArgs?displayProperty=fullName> classe. Cela n’est plus remplie dans [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], qui a introduit le <xref:System.EventHandler%601?displayProperty=fullName> déléguer. Ce délégué générique permet de n’importe quelle classe dérivée de <xref:System.EventArgs> pour être utilisée avec le Gestionnaire d’événements.
+ Avant de [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], afin de passer des informations personnalisées au gestionnaire d’événements, un nouveau délégué devait être déclaré qui a spécifié une classe qui était dérivée de la <xref:System.EventArgs?displayProperty=fullName> classe. Ce n’est plus vrai dans [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], qui a introduit le <xref:System.EventHandler%601?displayProperty=fullName> déléguer. Ce délégué générique permet à n’importe quelle classe dérivée de <xref:System.EventArgs> pour être utilisée avec le Gestionnaire d’événements.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, supprimez le délégué et remplacez son utilisation à l’aide de la <xref:System.EventHandler%601?displayProperty=fullName> déléguer. Si le délégué est généré automatiquement par le [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] compilateur, modifiez la syntaxe de la déclaration d’événement à utiliser le <xref:System.EventHandler%601?displayProperty=fullName> déléguer.
@@ -44,13 +48,13 @@ ms.locfileid: "31899962"
  Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre un délégué qui enfreint la règle. Dans la [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] exemple, commentaires expliquent comment modifier l’exemple pour satisfaire la règle. Pour l’exemple c#, Voici un exemple qui montre le code modifié.
+ L’exemple suivant montre un délégué qui enfreint la règle. Dans le [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] exemple, commentaires expliquent comment modifier l’exemple pour satisfaire à la règle. Pour l’exemple c#, un exemple qui suit présente le code modifié.
 
  [!code-vb[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/VisualBasic/ca1003-use-generic-event-handler-instances_1.vb)]
  [!code-csharp[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_1.cs)]
 
 ## <a name="example"></a>Exemple
- L’exemple suivant supprime la déclaration du délégué de l’exemple précédent, qui respecte la règle et remplace son utilisation dans les `ClassThatRaisesEvent` et `ClassThatHandlesEvent` méthodes à l’aide de la <xref:System.EventHandler%601?displayProperty=fullName> déléguer.
+ L’exemple suivant supprime la déclaration du délégué de l’exemple précédent, ce qui satisfait à la règle et remplace son utilisation dans le `ClassThatRaisesEvent` et `ClassThatHandlesEvent` méthodes aide le <xref:System.EventHandler%601?displayProperty=fullName> déléguer.
 
  [!code-csharp[FxCop.Design.GenericEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_2.cs)]
 
@@ -70,4 +74,5 @@ ms.locfileid: "31899962"
  [CA1007 : Utiliser des méthodes génériques lorsque cela est approprié](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Voir aussi
- [Génériques](/dotnet/csharp/programming-guide/generics/index)
+
+- [Génériques](/dotnet/csharp/programming-guide/generics/index)

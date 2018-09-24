@@ -9,26 +9,26 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: b354045ceb464a14ff909a503aa62477c73b983c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 778ad9112d4133871bd15292847d21af73c3ad86
+ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280875"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44701707"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Bien démarrer avec Visual Studio Tools de Kubernetes
 
-Les outils Kubernetes de Visual Studio vous aider à rationaliser le développement d’applications en conteneur ciblant Kubernetes. Visual Studio peut automatiquement créer les fichiers de configuration en tant que code nécessaires pour prendre en charge le déploiement de Kubernetes, telles que des graphiques Dockerfiles et Helm. En outre, vous pouvez publier directement à un cluster Azure Kubernetes Service (AKS) à partir de Visual Studio.
+Les outils Kubernetes de Visual Studio vous aider à rationaliser le développement d’applications en conteneur ciblant Kubernetes. Visual Studio peut automatiquement créer les fichiers de configuration en tant que code nécessaires pour prendre en charge le déploiement de Kubernetes, telles que des graphiques Dockerfiles et Helm. Vous pouvez déboguer votre code dans un cluster Azure Kubernetes Service (AKS) en direct à l’aide d’espaces de développement Azure, ou publier directement sur un cluster AKS à partir de Visual Studio.
 
 ## <a name="prerequisites"></a>Prérequis
 
 Pour tirer parti de cette nouvelle fonctionnalité, vous devez :
 
-- La dernière version préliminaire de [Visual Studio 2017](https://visualstudio.microsoft.com/vs/preview) avec la charge de travail de développement Azure.
+- La dernière version de [Visual Studio 2017](https://visualstudio.microsoft.com/download) avec la *ASP.NET et développement web* charge de travail.
 
 - Le [outils Kubernetes pour Visual Studio](https://aka.ms/get-vsk8stools), disponible en téléchargement séparé.
 
-- [Docker pour Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows) installé sur votre station de travail de développement (autrement dit, où vous exécutez Visual Studio)
+- [Docker pour Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows) installé sur votre station de travail de développement (autrement dit, où vous exécutez Visual Studio), si vous souhaitez générer des images Docker, déboguer les conteneurs Docker s’exécutant localement, ou publier dans AKS.
 
 - Si vous souhaitez publier sur AKS à partir de Visual Studio :
 
@@ -38,7 +38,7 @@ Pour tirer parti de cette nouvelle fonctionnalité, vous devez :
 
     1.  Helm CLI est installée sur votre station de travail de développement. Pour plus d’informations, consultez [installation de Helm](https://github.com/kubernetes/helm/blob/master/docs/install.md).
 
-    1.  Helm configuré sur votre cluster AKS. Pour plus d’informations sur la façon de procéder, consultez [comment configurer Helm](/azure/aks/kubernetes-helm#configure-helm).
+    1.  Helm configuré sur votre cluster AKS à l’aide de la `helm init` commande. Pour plus d’informations sur la façon de procéder, consultez [comment configurer Helm](/azure/aks/kubernetes-helm#configure-helm).
 
 ## <a name="create-a-new-kubernetes-project"></a>Créer un nouveau projet de Kubernetes
 
@@ -74,7 +74,7 @@ Les fichiers ajoutés sont :
 
 - un graphique Helm et un *graphiques* dossier. Ces fichiers yaml composent le graphique Helm pour l’application, vous pouvez utiliser pour déployer sur Kubernetes. Pour plus d’informations sur Helm, consultez [ https://www.helm.sh ](https://www.helm.sh).
 
-- *azds.yaml*. Il contient des paramètres pour les espaces de développement Azure, un nouveau service qui fournit une expérience de débogage rapide et itérative dans Azure Kubernetes Service. Ce fichier n’est actuellement pas utilisé, mais il est réservé pour une utilisation ultérieure par des espaces de développement Azure.
+- *azds.yaml*. Il contient des paramètres pour les espaces de développement Azure, qui fournit une expérience de débogage rapide et itérative dans Azure Kubernetes Service. Pour plus d’informations, veuillez vous reporter [la documentation Azure Dev espaces](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces).
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>Publier sur Azure Kubernetes Service (AKS)
 
@@ -82,7 +82,7 @@ Avec tous ces fichiers en place, vous pouvez utiliser l’IDE Visual Studio pour
 
 Une fois que vous disposez de votre code en cours d’exécution comme vous le souhaitez, vous pouvez publier directement à partir de Visual Studio sur un cluster AKS.
 
-Pour ce faire, vous devez d’abord configurer un profil de publication qui publie votre image de conteneur Azure Container Registry (ACR). ACS peut extraire votre image de conteneur à partir d’ACR, puis le déployer dans le cluster.
+Pour ce faire, vous devez tout d’abord vérifier que vous avez installé tous les éléments comme décrit dans la [conditions préalables](#prerequisities) section sous l’élément pour la publication sur AKS, puis exécutez toutes les étapes de ligne de commande donné dans les liens. Ensuite, configurez un profil de publication qui publie votre image de conteneur Azure Container Registry (ACR). ACS peut extraire votre image de conteneur à partir d’ACR, puis le déployer dans le cluster.
 
 1. Dans **l’Explorateur de solutions**, avec le bouton droit sur votre *projet* et choisissez **publier**.
 

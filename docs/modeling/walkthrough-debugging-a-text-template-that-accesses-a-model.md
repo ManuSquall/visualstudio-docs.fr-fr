@@ -9,25 +9,25 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 560849eaeefc8efd8337cbc98ad3de91e4d15fd9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 403b85ba7c5fc45a2809f695ce038a4e1576c93a
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968118"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382537"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Procédure pas à pas : débogage d'un modèle de texte accédant à un modèle
-Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de langage spécifique à un domaine, vous obtiendrez des erreurs lorsque le moteur transforme le modèle de code source, ou lors de la compilation du code généré. La procédure suivante présente quelques-unes des choses que vous pouvez faire pour déboguer un modèle de texte.
+Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de langage spécifique à un domaine, vous obtiendrez des erreurs lorsque le moteur transforme le modèle de code source ou lors de la compilation du code généré. La procédure suivante montre quelques opérations que vous pouvez faire pour déboguer un modèle de texte.
 
 > [!NOTE]
->  Pour plus d’informations sur le texte modèles en général, consultez [génération de Code et les modèles de texte T4](../modeling/code-generation-and-t4-text-templates.md). Pour plus d’informations sur le débogage des modèles de texte, consultez [procédure pas à pas : débogage d’un modèle de texte](http://msdn.microsoft.com/Library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).
+>  Pour plus d’informations sur le texte modèles en général, consultez [génération de Code et modèles de texte T4](../modeling/code-generation-and-t4-text-templates.md). Pour plus d’informations sur le débogage des modèles de texte, consultez [procédure pas à pas : débogage d’un modèle de texte](http://msdn.microsoft.com/Library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).
 
 ## <a name="creating-a-domain-specific-language-solution"></a>Création d’une Solution de langage spécifique à un domaine
- Dans cette procédure, vous créez une solution de langage spécifique à un domaine qui a les caractéristiques suivantes :
+ Dans cette procédure, vous créez une solution de langage spécifique à un domaine qui présente les caractéristiques suivantes :
 
 -   Nom : DebuggingTestLanguage
 
--   Modèle de solution : langue minimale
+-   Modèle de solution : langage Minimal
 
 -   Extension de fichier : .ddd
 
@@ -40,23 +40,23 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
 
 #### <a name="to-create-a-text-template"></a>Pour créer un modèle de texte
 
-1.  Générez la solution et commencer à l’exécuter dans le débogueur. (Sur le **générer** menu, cliquez sur **régénérer la Solution**, puis, dans le **déboguer** menu, cliquez sur **démarrer le débogage**.) Une nouvelle instance de Visual Studio ouvre le projet de débogage.
+1.  Générez la solution et commencer à l’exécuter dans le débogueur. (Sur le **Build** menu, cliquez sur **régénérer la Solution**, puis, dans le **déboguer** menu, cliquez sur **démarrer le débogage**.) Une nouvelle instance de Visual Studio ouvre le projet de débogage.
 
 2.  Ajoutez un fichier texte nommé `DebugTest.tt` au projet de débogage.
 
-3.  Assurez-vous que le **un outil personnalisé** de DebugTest.tt est définie sur `TextTemplatingFileGenerator`.
+3.  Assurez-vous que le **un outil personnalisé** a la valeur de propriété de DebugTest.tt `TextTemplatingFileGenerator`.
 
 ## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>Débogage des directives qui accèdent à un modèle à partir d’un modèle de texte
- Avant de pouvoir accéder à un modèle à partir des instructions et expressions dans un modèle de texte, vous devez d’abord appeler un processeur de directive généré. Appeler le processeur de directive généré rend les classes dans votre modèle disponible au code du modèle de texte en tant que propriétés. Pour plus d’informations, consultez [l’accès à des modèles à partir de modèles de texte](../modeling/accessing-models-from-text-templates.md).
+ Avant que vous pouvez accéder à un modèle à partir des instructions et expressions dans un modèle de texte, vous devez d’abord appeler un processeur de directive généré. Appeler le processeur de directive généré rend les classes dans votre modèle disponibles pour le code de modèle de texte en tant que propriétés. Pour plus d’informations, consultez [l’accès à des modèles à partir de modèles de texte](../modeling/accessing-models-from-text-templates.md).
 
  Dans les procédures suivantes, vous allez déboguer un nom de directive incorrect et un nom de propriété incorrecte.
 
 #### <a name="to-debug-an-incorrect-directive-name"></a>Pour déboguer un nom de directive incorrect
 
-1.  Remplacez le code dans le fichier DebugTest.tt par le code suivant :
+1.  Remplacez le code dans DebugTest.tt par le code suivant :
 
     > [!NOTE]
-    >  Le code contient une erreur. Vous introduisez l’erreur afin de déboguer.
+    >  Le code contient une erreur. Vous risquez d’introduire l’erreur pour la déboguer.
 
     ```csharp
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>
@@ -91,7 +91,7 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
 
 2.  Dans **l’Explorateur de solutions**, DebugTest.tt d’avec le bouton droit, puis cliquez sur **exécuter un outil personnalisé**.
 
-     Le **liste d’erreurs** affiche cette erreur :
+     Le **liste d’erreurs** fenêtre affiche cette erreur :
 
      **Le processeur nommé 'DebuggingTestLanguageDirectiveProcessor' ne prend pas en charge la directive nommée 'modelRoot'. La transformation ne sera pas exécutée.**
 
@@ -113,14 +113,14 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
 
 5.  Dans **l’Explorateur de solutions**, DebugTest.tt d’avec le bouton droit, puis cliquez sur **exécuter un outil personnalisé**.
 
-     Maintenant, le système transforme le modèle de texte et génère le fichier de sortie correspondant. Vous ne verrez pas les erreurs dans le **liste d’erreurs** fenêtre.
+     Maintenant, le système transforme le modèle de texte et génère le fichier de sortie correspondant. Vous ne verrez pas toutes les erreurs dans le **liste d’erreurs** fenêtre.
 
 #### <a name="to-debug-an-incorrect-property-name"></a>Pour déboguer un nom de propriété incorrecte
 
-1.  Remplacez le code dans le fichier DebugTest.tt par le code suivant :
+1.  Remplacez le code dans DebugTest.tt par le code suivant :
 
     > [!NOTE]
-    >  Le code contient une erreur. Vous introduisez l’erreur afin de déboguer.
+    >  Le code contient une erreur. Vous risquez d’introduire l’erreur pour la déboguer.
 
     ```csharp
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>
@@ -153,19 +153,19 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
     #>
     ```
 
-2.  Dans le **l’Explorateur de solutions**, DebugTest.tt d’avec le bouton droit, puis cliquez sur **exécuter un outil personnalisé**.
+2.  Dans **l’Explorateur de solutions**, DebugTest.tt d’avec le bouton droit, puis cliquez sur **exécuter un outil personnalisé**.
 
      Le **liste d’erreurs** fenêtre apparaît et affiche l’un de ces erreurs :
 
      (C#)
 
-     **La compilation de transformation : Microsoft.VisualStudio.TextTemplating\<GUID >. GeneratedTextTransformation' ne contient pas de définition pour 'ExampleModel'**
+     **Compilation de la transformation : Microsoft.VisualStudio.TextTemplating\<GUID >. GeneratedTextTransformation' ne contient pas d’une définition pour 'ExampleModel'**
 
      (Visual Basic)
 
-     **La compilation de transformation : 'ExampleModel' n’est pas un membre de ' Microsoft.VisualStudio.TextTemplating\<GUID >. GeneratedTextTransformation'.**
+     **Compilation de la transformation : 'ExampleModel' n’est pas un membre de ' Microsoft.VisualStudio.TextTemplating\<GUID >. GeneratedTextTransformation'.**
 
-     Dans ce cas, le code de modèle de texte contient un nom de propriété incorrecte. Vous avez spécifié `ExampleModel` comme nom de la propriété, mais la propriété correcte est nom `LibraryModel`. Vous pouvez rechercher le nom de propriété correct dans l’offre de paramètre, comme indiqué dans le code suivant :
+     Dans ce cas, le code de modèle de texte contient un nom de propriété incorrecte. Vous avez spécifié `ExampleModel` en tant que le nom de propriété, mais la propriété correcte est nom `LibraryModel`. Vous pouvez rechercher le nom de la propriété appropriée dans l’offre de paramètre, comme indiqué dans le code suivant :
 
     ```
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>
@@ -210,4 +210,4 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
 
 5.  Dans **l’Explorateur de solutions**, DebugTest.tt d’avec le bouton droit, puis cliquez sur **exécuter un outil personnalisé**.
 
-     Maintenant, le système transforme le modèle de texte et génère le fichier de sortie correspondant. Vous ne verrez pas les erreurs dans le **liste d’erreurs** fenêtre.
+     Maintenant, le système transforme le modèle de texte et génère le fichier de sortie correspondant. Vous ne verrez pas toutes les erreurs dans le **liste d’erreurs** fenêtre.

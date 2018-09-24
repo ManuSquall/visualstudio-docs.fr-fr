@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7ec4c37c8014fe20b136f01d7170240fc4813d04
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 504ec33ef2cf6e0e691c00e3cf1cc013ece5ce81
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37119202"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626163"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Procédure pas à pas : Créer un composant WebPart Silverlight qui affiche OData pour SharePoint
   SharePoint 2010 expose ses données de liste au moyen d’OData. Dans SharePoint, le service OData est implémenté par le service RESTful ListData.svc. Cette procédure pas à pas montre comment créer un composant WebPart SharePoint qui héberge une application Silverlight. L’application Silverlight affiche des informations de liste SharePoint annonce à l’aide de ListData.svc. Pour plus d’informations, consultez [Interface REST de SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=225999) et [Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000).  
@@ -30,7 +30,7 @@ ms.locfileid: "37119202"
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
--   Éditions prises en charge de Microsoft Windows et SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Configuration requise pour développer des solutions SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Éditions prises en charge de Microsoft Windows et SharePoint.
   
 -   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].  
   

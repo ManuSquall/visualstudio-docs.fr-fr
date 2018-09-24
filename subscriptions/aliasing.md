@@ -9,16 +9,16 @@ description: La connexion peut échouer si des alias ou des noms conviviaux sont
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 765862efcd3b83be2d52767dbc81570da2e8f9d6
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d05ecb8645b9970b08ad15418a43a5c95f8b2c3c
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477650"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637680"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>La connexion à Abonnements Visual Studio peut échouer lors de l’utilisation d’alias
 
-Selon le type de compte utilisé pour la connexion, les abonnements disponibles peuvent ne pas s’afficher correctement lors de la connexion à [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Ce cas peut se produire si l’utilisateur emploie des « alias » ou des « noms conviviaux » au lieu de l’identité de connexion à laquelle l’abonnement est affecté. On parle ici d’utilisation d’alias. 
+Selon le type de compte utilisé pour la connexion, les abonnements disponibles peuvent ne pas s’afficher correctement lors de la connexion à [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Ce cas peut se produire si l’utilisateur emploie des « alias » ou des « noms conviviaux » au lieu de l’identité de connexion à laquelle l’abonnement est affecté. On parle ici d’utilisation d’alias.
 
 ## <a name="what-is-aliasing"></a>Qu’est-ce que l’utilisation d’alias ?
 
@@ -28,7 +28,7 @@ Une entreprise peut par exemple posséder un service en ligne Microsoft pour sa 
 
 ## <a name="as-an-administrator-what-options-do-i-have"></a>En tant qu’administrateur, quelles options ai-je à ma disposition ?
 
-En tant qu’administrateur, vous avez deux options pour garantir à vos abonnés la réussite de leur expérience de connexion sur [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). 
+En tant qu’administrateur, vous avez deux options pour garantir à vos abonnés la réussite de leur expérience de connexion sur [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs).
 - La première option (recommandée) consiste à utiliser le compte d’annuaire en tant qu’adresse attribuée dans le Centre de gestion des licences en volume (VLSC). Pour plus d’informations, consultez la section [Attribution d’un compte d’annuaire à des abonnés](#assigning-subscribers-to-a-directory-account) de cet article.
 - La deuxième option (moins sécurisée) consiste à permettre à vos abonnés d’associer leur adresse e-mail « professionnelle ou scolaire » à un compte « personnel » (également appelé compte Microsoft ou MSA). Pour plus d’informations, consultez la section [Définition d’un compte professionnel ou scolaire en tant que compte personnel](#defining-a-work-or-school-account-as-a-personal-account ) de cet article.
 
@@ -37,73 +37,60 @@ En tant qu’administrateur, vous avez deux options pour garantir à vos abonné
 
 ## <a name="as-a-subscriber-what-options-do-i-have"></a>En tant qu’abonné, quelles sont mes options ?
 
-En tant qu’abonné, il est important de collaborer dans un premier temps avec votre administrateur pour bien comprendre la configuration des identités de votre entreprise.  Si nécessaire, votre administrateur peut avoir à mettre à jour les paramètres de votre compte à partir de son portail d’administration, ou vous devrez peut-être créer un compte Microsoft (MSA) en utilisant votre adresse e-mail d’entreprise.  Avant d’effectuer les étapes requises pour créer un compte MSA, contactez votre administrateur pour vous renseigner sur les stratégies ou problèmes liés à cette action.  Pour plus d’informations, consultez la section [Définition d’un compte professionnel ou scolaire en tant que compte personnel](#defining-a-work-or-school-account-as-a-personal-account ) de cet article.  
+En tant qu’abonné, il est important de collaborer dans un premier temps avec votre administrateur pour bien comprendre la configuration des identités de votre entreprise.  Si nécessaire, votre administrateur peut avoir à mettre à jour les paramètres de votre compte à partir de son portail d’administration, ou vous devrez peut-être créer un compte Microsoft (MSA) en utilisant votre adresse e-mail d’entreprise.  Avant d’effectuer les étapes requises pour créer un compte MSA, contactez votre administrateur pour vous renseigner sur les stratégies ou problèmes liés à cette action.  Pour plus d’informations, consultez la section [Définition d’un compte professionnel ou scolaire en tant que compte personnel](#defining-a-work-or-school-account-as-a-personal-account ) de cet article.
 
-## <a name="assigning-subscribers-to-a-directory-account"></a>Attribution d’abonnés à un compte d’annuaire 
+## <a name="assigning-subscribers-to-a-directory-account"></a>Attribution d’abonnés à un compte d’annuaire
 
 Dans tous les cas, le Gestionnaire d’abonnements du Centre de gestion des licences en volume (VLSC) doit utiliser l’adresse d’annuaire pour les nouveaux abonnés ou mettre à jour l’adresse e-mail pour les abonnés « existants ».  Il est important de souligner le fait que quand l’adresse d’annuaire est utilisée, les nouveaux abonnés ne reçoivent pas de message de bienvenue. L’administrateur doit par conséquent notifier l’abonné qu’un abonnement lui a été attribué.  Après avoir effectué les étapes ci-dessous, vous pouvez, si vous le souhaitez, utiliser le [modèle](#notifying-your-subscribers-with-directory-addresses) de message électronique pour notifier vos abonnés et les aider à réaliser le processus de connexion.
 
 ### <a name="adding-new-subscribers"></a>Ajout de nouveaux abonnés
+
 Suivez les étapes ci-dessous pour ajouter un nouvel abonné avec un compte d’annuaire.
 
 1. Accédez au [Centre de gestion des licences en volume](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (VLSC) et connectez-vous.
 2. Sur la page d’administration de VLSC, cliquez sur **Abonnements**, puis sur **Abonnements Visual Studio**.
 
-    <img alt="Subscriptions menu" src="_img//vlsc/vlsc-subscriptions.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Menu Abonnements](_img//vlsc/vlsc-subscriptions.png)
+
 
 3. Cliquez sur le **numéro de contrat** associé à l’abonnement Visual Studio.
 
-    <img alt="Select agreement" src="_img/vlsc/vlsc-agreement.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Sélection du contrat](_img/vlsc/vlsc-agreement.png)
 
 4. Cliquez sur **Attribuer un abonnement**.
-
-    <img alt="Assign subscription" src="_img/vlsc/vlsc-assign.png" style="border: 1px solid #CCCCCC" />
-
-
 5. Sélectionnez le **niveau d’abonnement** souhaité.
-
-    <img alt="Subscription level" src="_img/vlsc/vlsc-subscription-level.png" style="border: 1px solid #CCCCCC" /> 
-
 6. Vérifiez que vous disposez d’abonnements disponibles à attribuer, puis cliquez sur **Suivant**.
-7.  Entrez les détails de l’abonné et l’adresse d’annuaire dans le champ Adresse e-mail, puis cliquez sur **Suivant**.
-
-    <img alt="Email address" src="_img/vlsc/vlsc-email-address.png" style="border: 1px solid #CCCCCC" /> 
-        
+7. Entrez les détails de l’abonné et l’adresse d’annuaire dans le champ Adresse e-mail, puis cliquez sur **Suivant**.
 8. Confirmez les informations de l’abonné et cliquez sur **Terminer**.
-
 9. Notifiez l’abonné de son nouvel abonnement à l’aide du [modèle](#notifying-your-subscribers-with-directory-addresses) ci-dessous.
 
 ### <a name="updating-an-existing-subscriber"></a>Mise à jour d’un abonné existant
+
 Suivez les étapes ci-dessous pour mettre à jour un abonné existant avec un compte d’annuaire.
 
 1. Accédez au [Centre de gestion des licences en volume](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (VLSC) et connectez-vous.
-
 2. Sur les pages d’administration de VLSC, cliquez sur **Abonnements**, puis sur **Abonnements Visual Studio**.
-
 3. Cliquez sur le **numéro de contrat** associé à l’abonnement Visual Studio.
-
 4. Cliquez sur la **flèche vers le bas** dans la barre de recherche.
-
 5. Recherchez l’abonné à l’aide du champ « Adresse e-mail ».
-
 6. Dans la liste des résultats, cliquez sur le **nom** de l’abonné.
-
 7. Cliquez sur **Modifier**.
-
 8. Remplacez l’adresse du champ Adresse e-mail par l’adresse d’annuaire souhaitée, puis cliquez sur **Enregistrer**.
-
 9. Notifiez l’abonné de son nouvel abonnement à l’aide du modèle de message électronique ci-dessous.
 
 ### <a name="notifying-your-subscribers-with-directory-addresses"></a>Notification de vos abonnés avec des adresses d’annuaire
+
 Étant donné que le message de bienvenue ne sera pas correctement envoyé à votre abonné, copiez et collez le message ci-dessous dans un e-mail et envoyez-le à votre abonné. Remplacez %TEXTE% par les informations appropriées pour chaque abonné.
 
 ----------- Copiez le texte suivant (Ctrl+C) -----------
 
 Bonjour %NOM DE L’ABONNÉ%,
 
-Un abonnement Visual Studio vous a été attribué.  Consultez https://my.visualstudio.com et connectez-vous avec votre adresse %DIRECTORY ADDRESS% pour activer votre abonnement et y accéder. 
+Un abonnement Visual Studio vous a été attribué.  Consultez https://my.visualstudio.com et connectez-vous avec votre adresse %DIRECTORY ADDRESS% pour activer votre abonnement et y accéder.
 
-Si vous rencontrez des problèmes, contactez l’équipe de support technique (https://www.visualstudio.com/subscriptions/support/).
+Si vous rencontrez des problèmes, contactez l’équipe de support technique (https://visualstudio.microsoft.com/subscriptions/support/).
 
 En bas de la page, sélectionnez les options suivantes :
    - Support pour les comptes, les abonnements et la facturation
@@ -115,14 +102,16 @@ En bas de la page, sélectionnez les options suivantes :
 
 
 
-## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>Définition d’un compte professionnel ou scolaire comme compte personnel 
+## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>Définition d’un compte professionnel ou scolaire comme compte personnel
+
 Reportez-vous aux instructions décrites dans la section [Attribution d’un compte d’annuaire à des abonnés](#assigning-subscribers-to-a-directory-account) pour ajouter un nouvel utilisateur ou mettre à jour l’adresse e-mail d’un utilisateur dans le Centre de gestion des licences en volume (VLSC).  Si l’adresse e-mail n’est pas reconnue par l’annuaire, l’utilisateur devra procéder à la création d’un nouveau compte pour définir l’adresse e-mail en tant que compte personnel.  À court terme, l’équipe des abonnements Visual Studio a mis en place une exemption de la stratégie d’identité définie ci-dessous, mais nous investissons actuellement dans les ressources nécessaires pour supprimer cette stratégie.
 
 > [!WARNING]
 > Microsoft ne recommande pas la combinaison d’identités « professionnelles et scolaires » avec des identités « personnelles ».  En effet, avec ce type de combinaison, l’entreprise perd la propriété et le contrôle du compte, et l’employé peut continuer à accéder à des produits ou services spécifiques, même après avoir quitté l’entreprise.  Pour plus d’informations, consultez ce [billet de blog](https://blogs.technet.microsoft.com/enterprisemobility/2016/09/15/cleaning-up-the-azure-ad-and-microsoft-account-overlap/), publié par l’équipe chargée des identités Microsoft.
 
 ### <a name="defining-an-email-address-as-a-personal-account"></a>Définition d’une adresse e-mail comme compte personnel
-Une fois qu’un abonnement est attribué à l’abonné, il reçoit un e-mail lui demandant de consulter https://my.visualstudio.com pour bénéficier des avantages de son abonnement.  La tentative de connexion à l’abonnement Visual Studio échouera, avec un message d’erreur indiquant que le compte n’est pas reconnu.  Avant qu’il ne se connecte à l’expérience de https://my.visualstudio.com, demandez à votre abonné de suivre ces instructions.  Si nécessaire, vous pouvez utiliser ce [modèle](#notifying-your-subscribers-using-personal-accounts) pour notifier votre abonné après lui avoir attribué un abonnement.
+
+Une fois qu’un abonnement est attribué à l’abonné, il reçoit un e-mail lui demandant de consulter [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) pour bénéficier des avantages de son abonnement.  La tentative de connexion à l’abonnement Visual Studio échouera, avec un message d’erreur indiquant que le compte n’est pas reconnu.  Avant qu’il ne se connecte à l’expérience de [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), demandez à votre abonné de suivre ces instructions.  Si nécessaire, vous pouvez utiliser ce [modèle](#notifying-your-subscribers-using-personal-accounts) pour notifier votre abonné après lui avoir attribué un abonnement.
 
 1. Accédez à https://my.visualstudio.com, puis cliquez sur **Créer un compte Microsoft**.
 
@@ -151,7 +140,7 @@ Un abonnement Visual Studio vous a été attribué. Selon votre e-mail de bienve
 
 2. Cliquez sur Créer un compte Microsoft à droite.
 
-3. Remplissez le formulaire : 
+3. Remplissez le formulaire :
     - Utilisez votre adresse e-mail d’entreprise dans la zone someone@example.com.
     - Entrez un mot de passe.
     - Sélectionnez vos préférences de type promotionnel.
@@ -165,7 +154,7 @@ Un abonnement Visual Studio vous a été attribué. Selon votre e-mail de bienve
 
 Remarque : Lors de vos visites ultérieures de https://my.visualstudio.com, vous pouvez être invité à sélectionner le compte que vous souhaitez utiliser (par exemple « Compte professionnel ou scolaire » ou « Compte personnel »).  Une fois les étapes ci-dessus réalisées, vous devrez utiliser l’option « Compte personnel ».
 
-Si vous rencontrez des problèmes, contactez l’équipe de support technique (https://www.visualstudio.com/subscriptions/support/).
+Si vous rencontrez des problèmes, contactez l’équipe de support technique (https://visualstudio.microsoft.com/subscriptions/support/).
 
 En bas de la page, sélectionnez les options suivantes :
    - Support pour les comptes, les abonnements et la facturation

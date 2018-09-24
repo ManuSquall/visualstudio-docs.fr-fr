@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2d4b3f802b3854fc311a359149f44d75562691e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 90dfae7e891c805a785db8bba00d3c75d2a84bf3
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752694"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384160"
 ---
 # <a name="toolbox-html-tab"></a>Boîte à outils, onglet HTML
 
-L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les pages web et les formulaires web. Pour afficher cet onglet, ouvrez d’abord un document pour le modifier dans le concepteur HTML. Dans le menu **Affichage**, cliquez sur **Boîte à outils**, puis sur l’onglet **HTML** de la boîte à outils.
+L’onglet **HTML** de la boîte à outils comporte des composants utiles sur les pages web et les formulaires web. Pour afficher cet onglet, ouvrez d’abord un document pour le modifier dans le concepteur HTML. Dans le menu **Affichage**, cliquez sur **Boîte à outils**, puis sur l’onglet **HTML** de la boîte à outils.
 
  Pour créer une instance d’un outil sous l’onglet **HTML**, double-cliquez sur l’outil pour l’ajouter à votre document au point d’insertion actuel, ou sélectionnez l’outil et faites-le glisser à la position souhaitée dans la surface d’édition.
 
@@ -117,7 +117,7 @@ Quand vous faites glisser **Input (Password)** sur la surface en mode Design, un
 ```
 
 > [!IMPORTANT]
-> Si votre application transmet des noms d’utilisateurs et des mots de passe, vous devez configurer votre site web afin qu’il utilise SSL (Secure Sockets Layer) pour chiffrer la transmission. Pour plus d’informations, consultez la rubrique relative à la sécurisation des connexions avec SSL dans le [Guide des opérations IIS](http://go.microsoft.com/fwlink/?linkid=47856). Il est, en outre, recommandé de valider toutes les entrées d’utilisateur. Pour plus d’informations, consultez [Validation des entrées d’utilisateur sur des sites de pages web ASP.NET (Razor)](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).
+> Si l’application transmet des noms d’utilisateurs et des mots de passe, il est recommandé de configurer le site web afin qu’il utilise le protocole SSL (Secure Sockets Layer) pour chiffrer la transmission. Pour plus d’informations, consultez [Sécurisation des connexions](/previous-versions/tn-archive/bb418917(v=technet.10)). Il est, en outre, recommandé de valider toutes les entrées d’utilisateur. Pour plus d’informations, consultez [Validation des entrées d’utilisateur sur des sites de pages web ASP.NET (Razor)](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).
 
 **Input (Check box)**
 

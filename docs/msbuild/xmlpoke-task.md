@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fdd33968958c2f8423f16ae1ac964915fc12489
-ms.sourcegitcommit: 0853338831925fc63398b49f21f457b39f3c0a12
+ms.openlocfilehash: 8d38510799984e1ea690c9c145b7d7664b338f5e
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39030414"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231260"
 ---
-# <a name="xmlpoke-task"></a>Tâche XmlPoke
+# <a name="xmlpoke-task"></a>XmlPoke (tâche)
 
 Définit les valeurs comme spécifié par une requête XPath dans un fichier XML.
 
@@ -42,7 +42,7 @@ Définit les valeurs comme spécifié par une requête XPath dans un fichier XML
 
 ## <a name="remarks"></a>Notes
 
- En plus des paramètres répertoriés dans le tableau, cette tâche comprend des paramètres qu’elle hérite de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [TaskExtension Base Class](../msbuild/taskextension-base-class.md).
+ En plus des paramètres répertoriés dans le tableau, cette tâche comprend des paramètres qu’elle hérite de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Exemple
 
@@ -84,4 +84,4 @@ Dans cet exemple, si vous souhaitez modifier `/Package/mp:PhoneIdentity/PhonePub
 ## <a name="see-also"></a>Voir aussi
 
  [Tâches](../msbuild/msbuild-tasks.md)   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)
+ [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

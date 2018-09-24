@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 022e7f47f17292c62b851868b85773e8295a6991
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b745920a6afd4fb07d1904b7587e32350bb796a3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578729"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177836"
 ---
 # <a name="al-assembly-linker-task"></a>AL (Assembly Linker), tâche
-La tâche AL encapsule AL.exe, un outil distribué avec le [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. L’outil Assembly Linker sert à créer un assembly avec un manifeste à partir d’un ou plusieurs fichiers qui sont soit des modules, soit des fichiers de ressources. Les compilateurs et les environnements de développement pouvant déjà fournir ces fonctionnalités, il n’est généralement pas nécessaire d’utiliser cette tâche directement. Assembly Linker est très utile aux développeurs ayant besoin de créer un assembly unique à partir de plusieurs fichiers de composant, tels que ceux qui peuvent être générés par le développement en plusieurs langages. Cette tâche ne combine pas les modules dans un fichier d’assembly unique. Les modules individuels doivent toujours être distribués et disponibles pour que l’assembly résultant se charge correctement. Pour plus d’informations sur AL.exe, consultez [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).  
+La tâche AL encapsule *AL.exe*, un outil distribué avec le [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. L’outil Assembly Linker sert à créer un assembly avec un manifeste à partir d’un ou plusieurs fichiers qui sont soit des modules, soit des fichiers de ressources. Les compilateurs et les environnements de développement pouvant déjà fournir ces fonctionnalités, il n’est généralement pas nécessaire d’utiliser cette tâche directement. Assembly Linker est très utile aux développeurs ayant besoin de créer un assembly unique à partir de plusieurs fichiers de composant, tels que ceux qui peuvent être générés par le développement en plusieurs langages. Cette tâche ne combine pas les modules dans un fichier d’assembly unique. Les modules individuels doivent toujours être distribués et disponibles pour que l’assembly résultant se charge correctement. Pour plus d’informations sur *AL.exe*, consultez [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).  
   
 ## <a name="parameters"></a>Paramètres  
  Le tableau ci-dessous décrit les paramètres de la tâche `AL` .  
@@ -59,7 +59,7 @@ La tâche AL encapsule AL.exe, un outil distribué avec le [!INCLUDE[winsdklong]
 |`ProductVersion`|Paramètre `String` facultatif.<br /><br /> Spécifie une chaîne pour le champ `ProductVersion` de l'assembly. Pour plus d’informations, consultez la documentation relative à l’option `/productv[ersion]` dans [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`ResponseFiles`|Paramètre `String[]` facultatif.<br /><br /> Spécifie les fichiers réponse qui contiennent des options supplémentaires à passer à Assembly Linker.|  
 |`SdkToolsPath`|Paramètre `String` facultatif.<br /><br /> Spécifie le chemin des outils du SDK, comme resgen.exe.|  
-|`SourceModules`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Un ou plusieurs modules à compiler dans un assembly. Les modules seront répertoriés dans le manifeste de l’assembly résultant, et devront toujours être distribués et disponibles pour que l’assembly se charge. Les éléments passés dans ce paramètre peuvent avoir des métadonnées supplémentaires appelées `Target`, qui spécifient le chemin et le nom de fichier où la tâche copie le fichier, avant de compiler ce nouveau fichier dans l’assembly. Pour plus d’informations, consultez la documentation relative [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). Ce paramètre correspond à la liste des modules passés dans Al.exe sans commutateur spécifique.|  
+|`SourceModules`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Un ou plusieurs modules à compiler dans un assembly. Les modules seront répertoriés dans le manifeste de l’assembly résultant, et devront toujours être distribués et disponibles pour que l’assembly se charge. Les éléments passés dans ce paramètre peuvent avoir des métadonnées supplémentaires appelées `Target`, qui spécifient le chemin et le nom de fichier où la tâche copie le fichier, avant de compiler ce nouveau fichier dans l’assembly. Pour plus d’informations, consultez la documentation relative [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker). Ce paramètre correspond à la liste des modules transmis à *Al.exe* sans commutateur spécifique.|  
 |`TargetType`|Paramètre `String` facultatif.<br /><br /> Spécifie le format du fichier de sortie : `library` (bibliothèque de codes), `exe` (application console) ou `win` (application Windows). La valeur par défaut est `library`. Ce paramètre correspond à l’option `/t[arget]` dans [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`TemplateFile`|Paramètre `String` facultatif.<br /><br /> Spécifie l’assembly à partir duquel hériter de toutes les métadonnées d’assembly, à l’exception du champ Culture. L’assembly spécifié doit avoir un nom fort.<br /><br /> Un assembly créé avec le paramètre `TemplateFile` est un assembly satellite. Ce paramètre correspond à l’option `/template` dans [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`Timeout`|Paramètre `Int32` facultatif.<br /><br /> Spécifie le délai, en millisecondes, après lequel l’exécutable de la tâche est arrêté. La valeur par défaut est `Int.MaxValue`, ce qui indique qu’il n’existe aucun délai d’expiration.|  
@@ -67,11 +67,11 @@ La tâche AL encapsule AL.exe, un outil distribué avec le [!INCLUDE[winsdklong]
 |`ToolPath`|Paramètre `String` facultatif.<br /><br /> Spécifie l’emplacement à partir duquel la tâche chargera le fichier exécutable sous-jacent (Al.exe). Si vous ne spécifiez pas ce paramètre, la tâche utilise le chemin d’installation du SDK correspondant à la version du framework qui exécute [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].|  
 |`Trademark`|Paramètre `String` facultatif.<br /><br /> Spécifie une chaîne pour le champ `Trademark` de l'assembly. Pour plus d’informations, consultez la documentation relative à l’option `/trade[mark]` dans [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`Version`|Paramètre `String` facultatif.<br /><br /> Spécifie les informations de version pour cet assembly. Le format de la chaîne est *principale.mineure.build.révision*. La valeur par défaut est 0. Pour plus d’informations, consultez la documentation relative à l’option `/v[ersion]` dans [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
-|`Win32Icon`|Paramètre `String` facultatif.<br /><br /> Insère un fichier .ico dans l'assembly. Le fichier .ico donne au fichier de sortie l'aspect souhaité dans l'Explorateur de fichiers. Ce paramètre correspond à l’option `/win32icon` dans [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
-|`Win32Resource`|Paramètre `String` facultatif.<br /><br /> Insère une ressource Win32 (fichier .res) dans le fichier de sortie. Pour plus d’informations, consultez la documentation relative à l’option `/win32res` dans [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
+|`Win32Icon`|Paramètre `String` facultatif.<br /><br /> Insère un fichier *.ico* dans l’assembly. Le fichier *.ico* donne au fichier de sortie l’aspect souhaité dans l’Explorateur de fichiers. Ce paramètre correspond à l’option `/win32icon` dans [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
+|`Win32Resource`|Paramètre `String` facultatif.<br /><br /> Insère une ressource Win32 (fichier *.res*) dans le fichier de sortie. Pour plus d’informations, consultez la documentation relative à l’option `/win32res` dans [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).|  
   
 ## <a name="remarks"></a>Notes  
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et de leurs descriptions, consultez l’article [ToolTaskExtension Base Class (Classe de base ToolTaskExtension)](../msbuild/tooltaskextension-base-class.md).  
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant crée un assembly avec les options spécifiées.  
@@ -94,5 +94,5 @@ La tâche AL encapsule AL.exe, un outil distribué avec le [!INCLUDE[winsdklong]
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)   
+ [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)   
  [Tâches](../msbuild/msbuild-tasks.md)

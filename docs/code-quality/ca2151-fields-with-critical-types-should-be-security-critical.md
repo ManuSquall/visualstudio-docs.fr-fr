@@ -10,14 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fb3a7e1818013694633a5337e415a01baaae286
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 14df76b363f4df5d09b06436765b5f0c66ad2c5d
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918702"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551888"
 ---
 # <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151 : les champs avec des types critiques doivent être des champs critiques de sécurité
+
 |||
 |-|-|
 |TypeName||
@@ -26,7 +27,8 @@ ms.locfileid: "31918702"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Un champ transparent de sécurité ou un champ critique sécurisé est déclaré. Son type est spécifié comme critique de sécurité. Par exemple :
+
+Un champ transparent de sécurité ou un champ critique sécurisé est déclaré. Son type est spécifié comme critique de sécurité. Exemple :
 
 ```csharp
 [assembly: AllowPartiallyTrustedCallers]
@@ -38,16 +40,17 @@ ms.locfileid: "31918702"
    {
       Type1 m_field; // CA2151, transparent field of critical type
    }
-
 ```
 
- Dans cet exemple, `m_field` est un champ transparent de sécurité d'un type critique de sécurité.
+Dans cet exemple, `m_field` est un champ transparent de sécurité d'un type critique de sécurité.
 
 ## <a name="rule-description"></a>Description de la règle
- Pour utiliser les types critiques de sécurité, le code qui référence le type doit être critique de sécurité ou critique sécurisé. Ceci est vrai même si la référence est indirecte. Par exemple, lorsque vous faites référence à un champ transparent de type critique, votre code doit être critique de sécurité ou critique sécurisé. Par conséquent, un champ transparent de sécurité ou critique sécurisé est trompeur, car le code transparent ne pourra toujours pas accéder au champ.
+
+Pour utiliser les types critiques de sécurité, le code qui référence le type doit être critique de sécurité ou critique sécurisé. Ceci est vrai même si la référence est indirecte. Par exemple, lorsque vous faites référence à un champ transparent de type critique, votre code doit être critique de sécurité ou critique sécurisé. Par conséquent, un champ transparent de sécurité ou critique sécurisé est trompeur, car le code transparent ne pourra toujours pas accéder au champ.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, marquez le champ avec l'attribut <xref:System.Security.SecurityCriticalAttribute> ou faites en sorte que le type référencé par le champ soit transparent de sécurité ou critique sécurisé.
+
+Pour corriger une violation de cette règle, marquez le champ avec le <xref:System.Security.SecurityCriticalAttribute> d’attribut, ou rendez le type qui est référencé par le champ soit sécurité transparente ou sans échec critique.
 
 ```csharp
 // Fix 1: Make the referencing field security critical
@@ -72,13 +75,12 @@ ms.locfileid: "31918702"
       [SecurityCritical]
       Type1 m_field; // Fixed: critical type, critical field
    }
-
 ```
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez aucun avertissement de cette règle.
+
+Ne supprimez aucun avertissement de cette règle.
 
 ### <a name="code"></a>Code
- [!code-csharp[FxCop.Security.CA2145.TransparentMethodsShouldNotUseSuppressUnmanagedCodeSecurity#1](../code-quality/codesnippet/CSharp/ca2151-fields-with-critical-types-should-be-security-critical_1.cs)]
 
-### <a name="comments"></a>Commentaires
+[!code-csharp[FxCop.Security.CA2145.TransparentMethodsShouldNotUseSuppressUnmanagedCodeSecurity#1](../code-quality/codesnippet/CSharp/ca2151-fields-with-critical-types-should-be-security-critical_1.cs)]

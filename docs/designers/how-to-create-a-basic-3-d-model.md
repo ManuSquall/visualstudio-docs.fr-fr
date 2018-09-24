@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6627bac92221d66bd2cc1ab32efe10d0588c3b7e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d4a111c1f7bc228a26ab320f82f19111eafaf2ee
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745683"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924328"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Guide pratique pour créer un modèle 3D de base
 
@@ -42,7 +42,7 @@ Cet article montre comment utiliser l’éditeur de modèle pour créer un modè
 
 ### <a name="to-create-a-simplified-3d-model-of-a-house"></a>Pour créer un modèle 3D simplifié d’une maison
 
-1.  Créez un modèle 3D que vous allez utiliser. Pour plus d’informations sur l’ajout d’un modèle à votre projet, consultez la section Getting Started (Prise en main) de l’article [Model Editor (Éditeur de modèle)](../designers/model-editor.md).
+1.  Créez un modèle 3D avec lequel travailler. Pour plus d’informations sur l’ajout d’un modèle à votre projet, consultez la section Getting Started (Prise en main) de l’article [Model Editor (Éditeur de modèle)](../designers/model-editor.md).
 
 2.  Ajoutez un cube à la scène. Dans la fenêtre **Boîte à outils**, sous **Formes**, sélectionnez **Cube**, puis faites glisser cette option vers l’aire de conception.
 
@@ -52,7 +52,7 @@ Cet article montre comment utiliser l’éditeur de modèle pour créer un modè
 
      ![Le haut du cube a été subdivisé](../designers/media/gfx_model_demo_house_subdiv.png)
 
-5.  Extrudez deux côtés adjacents du cube, par exemple, les côtés avant et droit du cube. En mode de sélection de face, sélectionnez le cube une fois pour l'activer pour la sélection, puis choisissez un côté du cube. Appuyez sur la touche Contrôle de façon prolongée, choisissez un autre côté du cube adjacent au côté que vous avez sélectionné en premier, puis choisissez **Extruder la face** dans la barre d’outils de l’éditeur de modèle.
+5.  Extrudez deux côtés adjacents du cube, par exemple, les côtés avant et droit du cube. En mode de sélection de face, sélectionnez le cube une fois pour l'activer pour la sélection, puis choisissez un côté du cube. Maintenez enfoncée la touche **Ctrl**, choisissez un autre côté du cube adjacent au côté que vous avez sélectionné en premier, puis choisissez **Extruder la face** dans la barre d’outils de l’éditeur de modèle.
 
      ![Les côtés du cube ont été extrudés](../designers/media/gfx_model_demo_house_extrude.png)
 
@@ -60,9 +60,9 @@ Cet article montre comment utiliser l’éditeur de modèle pour créer un modè
 
      ![Un côté du cube a été plus extrudé.](../designers/media/gfx_model_demo_house_extend.png)
 
-7.  Effectuez une triangulation du modèle. Dans la barre d’outils de l’éditeur de modèle, choisissez **Avancé**, **Outils**, **Effectuer une triangulation**.
+7.  Effectuez une triangulation du modèle. Dans la barre d’outils de l’éditeur de modèle, choisissez **Avancé** > **Outils** > **Effectuer une triangulation**.
 
-8.  Créez le toit de la maison. Passez en mode de sélection d’arête en choisissant **Sélectionner le bord** dans la barre d’outils de l’éditeur de modèle, puis choisissez le cube pour l’activer. Appuyez sur la touche Contrôle et maintenez-la enfoncée tout en sélectionnant les arêtes illustrées ici :
+8.  Créez le toit de la maison. Passez en mode de sélection d’arête en choisissant **Sélectionner le bord** dans la barre d’outils de l’éditeur de modèle, puis choisissez le cube pour l’activer. Maintenez enfoncée la touche **Ctrl** tout en sélectionnant les arêtes illustrées ici :
 
      ![Bords qui forment la pointe du toit](../designers/media/gfx_model_demo_house_edges.png)
 
@@ -76,6 +76,6 @@ Cet article montre comment utiliser l’éditeur de modèle pour créer un modè
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour modéliser un terrain 3D](../designers/how-to-model-3-d-terrain.md)
-- [Éditeur de modèle](../designers/model-editor.md)
+- [Guide pratique pour modéliser un terrain 3D](../designers/how-to-model-3-d-terrain.md)
+- [Éditeur de modèles](../designers/model-editor.md)
 - [Concepteur Shader](../designers/shader-designer.md)

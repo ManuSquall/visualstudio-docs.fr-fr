@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46ea8c1ffd52805be4f93fb59c2831f5f0fe610c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 900241a25fabc259fb19ffa2b75f2fa12ad6e517
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574257"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152553"
 ---
 # <a name="common-msbuild-project-items"></a>Éléments communs des projets MSBuild
-Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], un élément est une référence nommée à un ou plusieurs fichiers. Les éléments contiennent des métadonnées, comme des noms de fichiers, des chemins et des numéros de version. Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], tous les types de projets ont plusieurs éléments en commun. Ces éléments sont définis dans le fichier Microsoft.Build.CommonTypes.xsd.  
+Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], un élément est une référence nommée à un ou plusieurs fichiers. Les éléments contiennent des métadonnées, comme des noms de fichiers, des chemins et des numéros de version. Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], tous les types de projets ont plusieurs éléments en commun. Ces éléments sont définis dans le fichier *Microsoft.Build.CommonTypes.xsd*.  
   
 ## <a name="common-items"></a>Éléments communs  
  Voici une liste de tous les éléments de projet communs.  
@@ -78,6 +78,7 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
 |Name|Chaîne facultative. Nom complet de la référence.|  
 |Projet|Chaîne facultative. GUID de la référence sous la forme {12345678-1234-1234-1234-1234567891234}.|  
 |Package|Chaîne facultative. Chemin d’accès du fichier projet référencé.|  
+|ReferenceOutputAssembly|Valeur booléenne facultative. Si sa valeur est `false`, n’inclut pas la sortie du projet référencé comme [Référence](#Reference) de ce projet, mais fait quand même en sorte que l’autre projet se génère avant celui-ci. La valeur par défaut est `true`.|
   
 ### <a name="compile"></a>Compile  
  Représente les fichiers sources du compilateur.  

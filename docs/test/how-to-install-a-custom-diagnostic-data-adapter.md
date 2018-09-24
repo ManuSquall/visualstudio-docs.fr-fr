@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d24ce9f954164cd8d243edfab4387f6b174c0648
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9d2d6c30696636bc8fd2ca571940ac0165eabbcf
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968534"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321045"
 ---
-# <a name="how-to-install-a-custom-diagnostic-data-adapter"></a>Comment : installer un adaptateur de données de diagnostic personnalisé
+# <a name="how-to-install-a-custom-diagnostic-data-adapter"></a>Guide pratique pour installer un adaptateur de données de diagnostic personnalisé
 
 Si vous avez créé un adaptateur de données de diagnostic personnalisé ou qu'un tel adaptateur vous a été fourni, vous pouvez installer votre assembly d'adaptateur de données de diagnostic en copiant le fichier d'assembly correspondant dans le répertoire approprié de votre ordinateur local.
 
@@ -25,7 +25,7 @@ Si vous avez créé un adaptateur de données de diagnostic personnalisé ou qu'
 
  Utilisez la procédure suivante pour installer votre adaptateur de diagnostic personnalisé dans les emplacements appropriés. Vous devez disposer d'autorisations d'administration sur l'ordinateur où vous installez l'adaptateur de données de diagnostic.
 
-## <a name="installing-a-custom-diagnostic-data-adapter"></a>Installation d'un adaptateur de données de diagnostic personnalisé
+## <a name="install-a-custom-diagnostic-data-adapter"></a>Installer un adaptateur de données de diagnostic personnalisé
 
 ### <a name="to-install-a-custom-diagnostic-data-adapter"></a>Pour installer un adaptateur de données de diagnostic personnalisé
 
@@ -35,9 +35,9 @@ Si vous avez créé un adaptateur de données de diagnostic personnalisé ou qu'
 
      Fichiers à copier :
 
-    -   Assembly d'adaptateur de données de diagnostic (.dll) (obligatoire)
+    -   Assembly d’adaptateur de données de diagnostic (*.dll*) (obligatoire)
 
-    -   Fichier de données de débogage (.pdb) pour votre adaptateur (facultatif)
+    -   Fichier de données de débogage (*.pdb*) pour votre adaptateur (facultatif)
 
     -   Fichier de configuration pour votre adaptateur (`<diagnostic data adapter name>.dll.config`), si vous avez des paramètres de configuration par défaut (facultatif)
 
@@ -46,7 +46,7 @@ Si vous avez créé un adaptateur de données de diagnostic personnalisé ou qu'
     > [!NOTE]
     > Bien que votre adaptateur de données de diagnostic et votre éditeur de configuration puissent être créés dans le même projet et générés dans le même assembly, vous pouvez utiliser des projets distincts et créer des assemblys séparés, si tel est votre choix.
 
-     Pour plus d’informations sur la configuration de vos paramètres de test pour l’utilisation d’un environnement durant l’exécution de vos tests, consultez [Collecter des données de diagnostic dans les tests manuels (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests).
+     Pour plus d’informations sur la configuration de vos paramètres de test pour l’utilisation d’un environnement durant l’exécution de vos tests, consultez [Collecter les données de diagnostic dans les tests manuels (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
 2.  Pour sélectionner votre adaptateur de données de diagnostic pour un test, vous devez d’abord sélectionner les paramètres d’un test existant, ou en créer un à partir de Test Manager ou de Visual Studio, puis sélectionner votre adaptateur de données de diagnostic sous l’onglet **Données et diagnostics** des paramètres du test sélectionné.
 
@@ -63,5 +63,5 @@ Si vous avez créé un adaptateur de données de diagnostic personnalisé ou qu'
 - [Guide pratique pour créer un adaptateur de données de diagnostic](../test/how-to-create-a-diagnostic-data-adapter.md)
 - [Guide pratique pour créer un éditeur personnalisé pour les données de votre adaptateur de données de diagnostic](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)
 - [Exemple de projet pour la création d’un adaptateur de données de diagnostic](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)
-- [Création d’un adaptateur de données de diagnostic pour collecter des données personnalisées ou affecter un ordinateur de test](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
+- [Créer un adaptateur de données de diagnostic pour collecter des données personnalisées ou affecter une machine de test](../test/create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine.md)
 - [Collecter des informations de diagnostic à l’aide des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md)

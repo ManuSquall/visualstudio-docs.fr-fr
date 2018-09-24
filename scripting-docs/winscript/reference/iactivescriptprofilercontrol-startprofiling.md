@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl::StartProfiling | Documents Microsoft
+title: IActiveScriptProfilerControl::StartProfiling | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -16,15 +16,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5362eaba439ff7a645a8323c4eed5d9496f6d88
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5540573991be11230acb33b088174bbb5c39f7f7
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724869"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281713"
 ---
 # <a name="iactivescriptprofilercontrolstartprofiling"></a>IActiveScriptProfilerControl::StartProfiling
-Démarre le profilage sur le moteur de script. Le moteur de script crée une instance de l’objet de profileur en effectuant un appel à [CoCreateInstance](http://msdn.microsoft.com/en-us/7295a55b-12c7-4ed0-a7a4-9ecee16afdec).  
+Démarre le profilage sur le moteur de script. Le moteur de script crée une instance de l’objet de profileur en effectuant un appel à [CoCreateInstance](https://docs.microsoft.com/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,16 +37,16 @@ HRESULT StartProfiling(
   
 #### <a name="parameters"></a>Paramètres  
  `clsidProfilerObject`  
- [in] Identificateur (CLSID) de l’objet de profileur doit être créée de la classe.  
+ [in] Classe identificateur (CLSID) de l’objet de profileur doit être créé.  
   
  `dwEventMask`  
- [in] Masque de bits sur 4 octets qui spécifie les types d’événements. Les bits sont définis dans [profiler_event_mask, énumération](../../winscript/reference/profiler-event-mask-enumeration.md).  
+ [in] Un masque de bits sur 4 octets qui spécifie les types d’événements. Les bits sont définis dans [profiler_event_mask, énumération](../../winscript/reference/profiler-event-mask-enumeration.md).  
   
  `dwContext`  
  [in] Une valeur de 4 octets qui est passée à l’objet de profileur.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne une valeur HRESULT. Les valeurs possibles sont les suivantes :  
+ Retourne une valeur HRESULT. Les valeurs possibles sont les suivantes :  
   
 |Valeur de retour|Signification|  
 |------------------|-------------|  

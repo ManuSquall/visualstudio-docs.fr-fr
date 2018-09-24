@@ -17,14 +17,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f8836644e109e37855aa79dc67b461591b273786
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4cbb4c6ea167dd06328c3cce513f42cdfcf3c7a1
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921510"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546416"
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224 : Remplacez Equals au moment de surcharger l'opérateur égal
+
 |||
 |-|-|
 |TypeName|OverrideEqualsOnOverloadingOperatorEquals|
@@ -33,91 +34,91 @@ ms.locfileid: "31921510"
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Un type public implémente l’opérateur d’égalité, mais ne remplace pas <xref:System.Object.Equals%2A?displayProperty=fullName>.
+
+Un type public implémente l’opérateur d’égalité, mais ne remplace pas <xref:System.Object.Equals%2A?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Description de la règle
- L’opérateur d’égalité est destinée à être un moyen pratique de point de vue syntaxique pour accéder aux fonctionnalités de la <xref:System.Object.Equals%2A> (méthode). Si vous implémentez l’opérateur d’égalité, sa logique doit être identique à celui de <xref:System.Object.Equals%2A>.
 
- Le compilateur c# émet un avertissement si votre code ne respecte pas cette règle.
+L’opérateur d’égalité est destinée à être un point de vue syntaxique pour accéder facilement les fonctionnalités de la <xref:System.Object.Equals%2A> (méthode). Si vous implémentez l’opérateur d’égalité, sa logique doit être identique à celle de <xref:System.Object.Equals%2A>.
+
+Le compilateur c# émet un avertissement si votre code ne respecte pas cette règle.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, vous devez supprimer l’implémentation de l’opérateur d’égalité ou substituer <xref:System.Object.Equals%2A> et ont les deux méthodes retournent les mêmes valeurs. Si l’opérateur d’égalité n’introduit aucun comportement incohérent, vous pouvez corriger la violation en fournissant une implémentation de <xref:System.Object.Equals%2A> qui appelle le <xref:System.Object.Equals%2A> méthode dans la classe de base.
+
+Pour corriger une violation de cette règle, vous devez supprimer l’implémentation de l’opérateur d’égalité ou substituer <xref:System.Object.Equals%2A> et avoir les deux méthodes retournent les mêmes valeurs. Si l’opérateur d’égalité n’introduit pas de comportement incohérent, vous pouvez corriger la violation en fournissant une implémentation de <xref:System.Object.Equals%2A> qui appelle le <xref:System.Object.Equals%2A> méthode dans la classe de base.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Il est possible de supprimer un avertissement de cette règle si l’opérateur d’égalité retourne la même valeur que l’implémentation héritée de <xref:System.Object.Equals%2A>. La section exemple inclut un type qui pourrait supprimer sans risque un avertissement de cette règle.
+
+Il est possible de supprimer un avertissement de cette règle si l’opérateur d’égalité retourne la même valeur que l’implémentation héritée de <xref:System.Object.Equals%2A>. Les exemples dans cet article incluent un type qui pourrait supprimer sans risque un avertissement de cette règle.
 
 ## <a name="examples-of-inconsistent-equality-definitions"></a>Exemples de définitions d’égalité incohérentes
 
-### <a name="description"></a>Description
- L’exemple suivant montre un type avec des définitions d’égalité incohérentes. `BadPoint` Modifie la signification d’égalité en fournissant une implémentation personnalisée de l’opérateur d’égalité, mais ne remplace pas <xref:System.Object.Equals%2A> afin qu’il se comporte de façon identique.
+L’exemple suivant illustre un type avec des définitions d’égalité incohérentes. `BadPoint` Modifie la signification de l’égalité en fournissant une implémentation personnalisée de l’opérateur d’égalité, mais ne se substitue pas <xref:System.Object.Equals%2A> afin qu’il a un comportement identique.
 
-### <a name="code"></a>Code
- [!code-csharp[FxCop.Usage.OperatorEqualsRequiresEquals#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_1.cs)]
+[!code-csharp[FxCop.Usage.OperatorEqualsRequiresEquals#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_1.cs)]
 
-## <a name="example"></a>Exemple
- Le code suivant teste le comportement de `BadPoint`.
+Le code suivant teste le comportement de `BadPoint`.
 
- [!code-csharp[FxCop.Usage.TestOperatorEqualsRequiresEquals#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_2.cs)]
+[!code-csharp[FxCop.Usage.TestOperatorEqualsRequiresEquals#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_2.cs)]
 
- Cet exemple produit la sortie suivante.
+Cet exemple génère la sortie suivante :
 
- **a = ([0] 1,1) et b = ([1] 2,2) sont égaux ? Ne**
-**un == b ? Ne**
-**a1 et a sont égaux ? Oui**
-**a1 == un ? Oui**
-**b et b copie sont égaux ? Ne**
-**b == bcopy ? Oui**
-## <a name="example"></a>Exemple
- L’exemple suivant montre un type qui viole cette règle techniquement, mais ne se comporte pas de façon incohérente.
+```txt
+a =  ([0] 1,1) and b = ([1] 2,2) are equal? No
+a == b ? No
+a1 and a are equal? Yes
+a1 == a ? Yes
+b and bcopy are equal ? No
+b == bcopy ? Yes
+```
 
- [!code-csharp[FxCop.Usage.ValueTypeEquals#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_3.cs)]
+L’exemple suivant illustre un type qui techniquement enfreint cette règle, mais ne se comporte pas de façon incohérente.
 
-## <a name="example"></a>Exemple
- Le code suivant teste le comportement de `GoodPoint`.
+[!code-csharp[FxCop.Usage.ValueTypeEquals#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_3.cs)]
 
- [!code-csharp[FxCop.Usage.TestValueTypeEquals#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_4.cs)]
+Le code suivant teste le comportement de `GoodPoint`.
 
- Cet exemple produit la sortie suivante.
+[!code-csharp[FxCop.Usage.TestValueTypeEquals#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_4.cs)]
 
- **a = (1,1) et b = (2,2) sont égaux ? Ne**
-**un == b ? Ne**
-**a1 et a sont égaux ? Oui**
-**a1 == un ? Oui**
-**b et b copie sont égaux ? Oui**
-**b == bcopy ? Oui**
+Cet exemple génère la sortie suivante :
+
+```txt
+a =  (1,1) and b = (2,2) are equal? No
+a == b ? No
+a1 and a are equal? Yes
+a1 == a ? Yes
+b and bcopy are equal ? Yes
+b == bcopy ? Yes
+```
+
 ## <a name="class-example"></a>Exemple de classe
 
-### <a name="description"></a>Description
- L’exemple suivant montre une classe (type référence) qui enfreint cette règle.
+L’exemple suivant montre une classe (type référence) qui enfreint cette règle.
 
-### <a name="code"></a>Code
- [!code-csharp[FxCop.Usage.OverrideEqualsClassViolation#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_5.cs)]
+[!code-csharp[FxCop.Usage.OverrideEqualsClassViolation#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_5.cs)]
 
-## <a name="example"></a>Exemple
- L’exemple suivant résout la violation en substituant <xref:System.Object.Equals%2A?displayProperty=fullName>.
+L’exemple suivant résout la violation en substituant <xref:System.Object.Equals%2A?displayProperty=fullName>.
 
- [!code-csharp[FxCop.Usage.OverrideEqualsClassFixed#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_6.cs)]
+[!code-csharp[FxCop.Usage.OverrideEqualsClassFixed#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_6.cs)]
 
 ## <a name="structure-example"></a>Exemple de structure
 
-### <a name="description"></a>Description
- L’exemple suivant montre une structure (type valeur) qui enfreint cette règle.
+L’exemple suivant montre une structure (type valeur) qui enfreint cette règle :
 
-### <a name="code"></a>Code
- [!code-csharp[FxCop.Usage.OverrideEqualsStructViolation#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_7.cs)]
+[!code-csharp[FxCop.Usage.OverrideEqualsStructViolation#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_7.cs)]
 
-## <a name="example"></a>Exemple
- L’exemple suivant résout la violation en substituant <xref:System.ValueType.Equals%2A?displayProperty=fullName>.
+L’exemple suivant résout la violation en substituant <xref:System.ValueType.Equals%2A?displayProperty=fullName>.
 
- [!code-csharp[FxCop.Usage.OverrideEqualsStructFixed#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_8.cs)]
+[!code-csharp[FxCop.Usage.OverrideEqualsStructFixed#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_8.cs)]
 
 ## <a name="related-rules"></a>Règles associées
- [CA1046 : Ne pas surcharger l’opérateur égal sur les types de référence](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2225 : Les surcharges d’opérateur ont d’autres méthodes nommées](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+[CA1046 : Ne pas surcharger l’opérateur égal sur les types de référence](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2226 : Les opérateurs doivent avoir des surcharges symétriques](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+[CA2225 : Les surcharges d’opérateur ont d’autres méthodes nommées](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
 
- [CA2218 : Remplacez GetHashCode lors du remplacement de Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+[CA2226 : Les opérateurs doivent avoir des surcharges symétriques](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2231 : Surchargez l’opérateur égal (equals) en remplaçant ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
+[CA2218 : Remplacez GetHashCode lors du remplacement de Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+
+[CA2231 : Surchargez l’opérateur égal (equals) en remplaçant ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)

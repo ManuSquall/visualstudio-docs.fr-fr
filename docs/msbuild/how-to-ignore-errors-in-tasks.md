@@ -11,17 +11,17 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 348a026815d0d48390fed5741e6dba741fda9937
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 619f2c17d3653895c8c969e89d7a342e73f8c8d9
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578599"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081473"
 ---
-# <a name="how-to-ignore-errors-in-tasks"></a>Comment : ignorer des erreurs dans des tâches
+# <a name="how-to-ignore-errors-in-tasks"></a>Guide pratique pour ignorer des erreurs dans des tâches
 Vous souhaiterez parfois qu’une génération soit à tolérance de panne dans certaines tâches. En cas d’échec de ces tâches non critiques, vous souhaiterez continuer la génération, car elle peut toujours produire la sortie requise. Par exemple, si un projet utilise une tâche `SendMail` pour envoyer un message électronique après la génération de chaque composant, vous pouvez juger acceptable de poursuivre la génération jusqu’à son achèvement, même si les serveurs de messagerie ne sont pas disponibles et que les messages d’état ne peuvent pas être envoyés. Si des fichiers intermédiaires sont habituellement supprimés pendant la génération, vous pouvez également estimer que la génération peut se poursuivre jusqu’à son achèvement, même si ces fichiers ne peuvent pas être supprimés.  
   
-## <a name="using-the-continueonerror-attribute"></a>Utilisation de l’attribut ContinueOnError  
+## <a name="use-the-continueonerror-attribute"></a>Utiliser l’attribut ContinueOnError  
  L’attribut `ContinueOnError` de l’élément `Task` contrôle si une génération s’arrête ou se poursuit en cas d’échec d’une tâche. Cet attribut détermine également si les erreurs sont considérées comme des erreurs ou des avertissements si la génération se poursuit.  
   
  L’attribut `ContinueOnError` peut contenir l’une des valeurs suivantes :  
@@ -63,5 +63,5 @@ Vous souhaiterez parfois qu’une génération soit à tolérance de panne dans 
   
 ## <a name="see-also"></a>Voir aussi
 [MSBuild](../msbuild/msbuild.md)  
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)   
- [Tâches](../msbuild/msbuild-tasks.md)
+[Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)   
+[Tâches](../msbuild/msbuild-tasks.md)

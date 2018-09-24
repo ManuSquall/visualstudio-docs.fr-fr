@@ -13,22 +13,22 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 34c0b1a09a6483d45adda63f0fa1bf9d3ff032fa
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: db06323da8ccd3009c52be3ba9dd51478d1d722c
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747279"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008458"
 ---
-# <a name="introduction-to-wpf"></a>Présentation de WPF
+# <a name="wpf-overview"></a>Vue d’ensemble de WPF
 
 Windows Presentation Foundation (WPF) vous permet de créer des applications clientes de bureau pour Windows avec des expériences utilisateur visuellement surprenantes.
 
- ![Exemple d’interface utilisateur Contoso Healthcare](../designers/media/wpfintrofigure24.png)
+![Exemple d’interface utilisateur Contoso Healthcare](../designers/media/wpfintrofigure24.png)
 
- Le cœur de WPF est un moteur de rendu vectoriel et indépendant de toute résolution, créé pour tirer parti du matériel graphique moderne. WPF étend le cœur avec un ensemble complet de fonctionnalités de développement d’applications qui incluent XAML (Extensible Application Markup Language), des contrôles, la liaison de données, la disposition, les graphiques 2D et 3D, l’animation, des styles, des modèles, des documents, des médias, du texte et de la typographie. WPF étant inclus dans le .NET Framework, vous pouvez développer des applications qui incorporent d’autres éléments de la bibliothèque de classes .NET Framework.
+Le cœur de WPF est un moteur de rendu vectoriel et indépendant de toute résolution, créé pour tirer parti du matériel graphique moderne. WPF étend le cœur avec un ensemble complet de fonctionnalités de développement d’applications qui incluent XAML (Extensible Application Markup Language), des contrôles, la liaison de données, la disposition, les graphiques 2D et 3D, l’animation, des styles, des modèles, des documents, des médias, du texte et de la typographie. WPF étant inclus dans le .NET Framework, vous pouvez développer des applications qui incorporent d’autres éléments de la bibliothèque de classes .NET Framework.
 
- Cette vue d’ensemble est destinée aux utilisateurs inexpérimentés ; elle couvre les fonctions et les concepts clés de WPF.
+Cette vue d’ensemble est destinée aux utilisateurs inexpérimentés ; elle couvre les fonctions et les concepts clés de WPF.
 
 ## <a name="program-with-wpf"></a>Programmer avec WPF
 
@@ -48,9 +48,9 @@ WPF vous permet de développer une application en utilisant à la fois le *balis
 
 ### <a name="markup"></a>balisage
 
-XAML est un langage de balisage fondé sur XML qui est utilisé pour implémenter l’apparence d’une application de façon déclarative. Il est généralement utilisé pour créer des fenêtres, des boîtes de dialogue, des pages et des contrôles utilisateur, et pour les remplir avec des contrôles, des formes et des graphiques.
+XAML est un langage de balisage fondé sur XML qui implémente l’apparence d’une application de façon déclarative. Vous l’utilisez généralement pour créer des fenêtres, des boîtes de dialogue, des pages et des contrôles utilisateur, et pour les remplir avec des contrôles, des formes et des graphismes.
 
- L’exemple suivant utilise XAML pour implémenter l’apparence d’une fenêtre qui contient un seul bouton.
+L’exemple suivant utilise XAML pour implémenter l’apparence d’une fenêtre qui contient un seul bouton.
 
 ```xaml
 <Window
@@ -64,13 +64,13 @@ XAML est un langage de balisage fondé sur XML qui est utilisé pour implémente
 </Window>
 ```
 
- Plus précisément, ce code XAML définit une fenêtre et un bouton à l’aide des éléments `Window` et `Button` , respectivement. Chaque élément est configuré avec des attributs, tels que l’attribut `Window` de l’élément `Title` pour spécifier le texte de la barre de titre de la fenêtre. Pendant l’exécution, WPF convertit les éléments et les attributs définis dans le balisage en instances des classes WPF. Par exemple, l’élément `Window` est converti en une instance de la classe <xref:System.Windows.Window> dont la propriété <xref:System.Windows.Window.Title%2A> est la valeur de l’attribut `Title` .
+Plus précisément, ce code XAML définit une fenêtre et un bouton à l’aide des éléments `Window` et `Button` , respectivement. Chaque élément est configuré avec des attributs, tels que l’attribut `Window` de l’élément `Title` pour spécifier le texte de la barre de titre de la fenêtre. Pendant l’exécution, WPF convertit les éléments et les attributs définis dans le balisage en instances des classes WPF. Par exemple, l’élément `Window` est converti en une instance de la classe <xref:System.Windows.Window> dont la propriété <xref:System.Windows.Window.Title%2A> est la valeur de l’attribut `Title` .
 
- L’illustration suivante montre l’interface utilisateur définie par XAML dans l’exemple précédent.
+L’illustration suivante montre l’interface utilisateur définie par XAML dans l’exemple précédent.
 
- ![Fenêtre qui contient un bouton](../designers/media/wpfintrofigure10.png)
+![Fenêtre qui contient un bouton](../designers/media/wpfintrofigure10.png)
 
- Comme XAML est basé sur XML, l’interface utilisateur que vous composez avec est assemblée dans une hiérarchie d’éléments imbriqués, connue sous le nom d’ [arborescence des éléments](/dotnet/framework/wpf/advanced/trees-in-wpf). L’arborescence des éléments offre un moyen logique et intuitif de créer et gérer des interfaces utilisateur.
+Comme XAML est basé sur XML, l’interface utilisateur que vous composez avec est assemblée dans une hiérarchie d’éléments imbriqués, connue sous le nom d’ [arborescence des éléments](/dotnet/framework/wpf/advanced/trees-in-wpf). L’arborescence des éléments offre un moyen logique et intuitif de créer et gérer des interfaces utilisateur.
 
 ### <a name="code-behind"></a>Code-behind
 
@@ -149,7 +149,7 @@ L’illustration suivante affiche le résultat obtenu quand vous cliquez sur le 
 
 ## <a name="controls"></a>Contrôles
 
-Les expériences utilisateur fournies par le modèle d’application sont des contrôles construits. Dans WPF, « contrôle » est un terme général qui s’applique à une catégorie de classes WPF qui sont hébergées dans une fenêtre ou une page, qui ont une interface utilisateur et qui implémentent un certain comportement.
+Les expériences utilisateur fournies par le modèle d’application sont des contrôles construits Dans WPF, *contrôle* est un terme général qui s’applique à une catégorie de classes WPF qui sont hébergées dans une fenêtre ou une page, qui ont une interface utilisateur et qui implémentent un certain comportement.
 
 Pour plus d’informations, consultez [Contrôles](/dotnet/framework/wpf/controls/index).
 
@@ -258,7 +258,7 @@ Le balisage suivant lie la <xref:System.Windows.Controls.TextBox> à une instanc
 
 Dans cet exemple, la classe `Person` est instanciée en code-behind et définie comme contexte de données de `DataBindingWindow`. Dans le balisage, la propriété <xref:System.Windows.Controls.TextBox.Text%2A> de la <xref:System.Windows.Controls.TextBox> est liée à la propriété `Person.Name` (à l’aide de la syntaxe XAML`{Binding ... }`). Ce code XAML demande à WPF de lier le contrôle <xref:System.Windows.Controls.TextBox> à l’objet `Person` stocké dans la propriété <xref:System.Windows.FrameworkElement.DataContext%2A> de la fenêtre.
 
-Le moteur de liaison de données WPF fournit une prise en charge supplémentaire qui inclut la validation, le tri, le filtrage et le regroupement. En outre, la liaison de données prend en charge l’utilisation de modèles de données afin de créer une interface utilisateur personnalisée pour les données liées quand l’interface utilisateur affichée par les contrôles WPF standard n’est pas appropriée.
+Le moteur de liaison de données WPF fournit une prise en charge supplémentaire qui inclut la validation, le tri, le filtrage et le regroupement En outre, la liaison de données prend en charge l’utilisation de modèles de données afin de créer une interface utilisateur personnalisée pour les données liées quand l’interface utilisateur affichée par les contrôles WPF standard n’est pas appropriée.
 
 Pour plus d’informations, consultez [Vue d’ensemble de la liaison de données](/dotnet/framework/wpf/data/data-binding-overview).
 
@@ -301,7 +301,7 @@ Les objets<xref:System.Windows.Shapes.Path> peuvent être utilisés pour dessine
 
 Les objets <xref:System.Windows.Media.Geometry> peuvent être utilisés pour le découpage, les tests de recherche et le rendu de données graphiques 2D.
 
-![Différentes utilisations d’un Chemin d’accès](../designers/media/wpfintrofigure5.png)
+![Différentes utilisations d’un chemin](../designers/media/wpfintrofigure5.png)
 
 Pour plus d’informations, consultez [Vue d’ensemble de Geometry](/dotnet/framework/wpf/graphics-multimedia/geometry-overview).
 
@@ -319,7 +319,7 @@ WPF comprend également des fonctionnalités de rendu 3D qui s’intègrent aux 
 
 ![Capture d’écran : exemple Visual3D](../designers/media/wpfintrofigure13.png)
 
-Pour plus d’informations, consultez [Vue d’ensemble des graphiques 3D](/dotnet/framework/wpf/graphics-multimedia/3-d-graphics-overview).
+Pour plus d’informations, consultez [Vue d’ensemble des graphismes 3D](/dotnet/framework/wpf/graphics-multimedia/3-d-graphics-overview).
 
 ## <a name="animation"></a>Animation
 
@@ -585,7 +585,7 @@ Cet exemple implémente une ressource de couleur d’arrière-plan à l’aide d
 
 Les diverses portées offrent une grande flexibilité en ce qui concerne la manière de définir et partager vos ressources.
 
-Au lieu d’associer directement vos ressources à une portée précise, vous pouvez empaqueter une ou plusieurs ressources à l’aide d’un <xref:System.Windows.ResourceDictionary> séparé qui peut être référencé dans d’autres parties d’une application. L’exemple suivant définit une couleur d’arrière-plan par défaut dans un dictionnaire de ressources.
+Au lieu d’associer directement vos ressources à une portée précise, vous pouvez empaqueter une ou plusieurs ressources à l’aide d’un <xref:System.Windows.ResourceDictionary> séparé qui peut être référencé dans d’autres parties d’une application L’exemple suivant définit une couleur d’arrière-plan par défaut dans un dictionnaire de ressources.
 
 ```xaml
 <ResourceDictionary
@@ -639,18 +639,18 @@ Toutefois, à ce stade, vous pouvez tirer parti de l’un des trois modèles WPF
 
 L’exemple suivant montre un contrôle NumericUpDown personnalisé dérivé de <xref:System.Windows.Controls.UserControl>.
 
- [!code-xaml[IntroToWPFSnippets#UserControlMARKUP](../designers/codesnippet/Xaml/introduction-to-wpf_33.xaml)]
+[!code-xaml[IntroToWPFSnippets#UserControlMARKUP](../designers/codesnippet/Xaml/introduction-to-wpf_33.xaml)]
 
- [!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/CSharp/introduction-to-wpf_34.cs)]
- [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/VisualBasic/introduction-to-wpf_34.vb)]
+[!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/CSharp/introduction-to-wpf_34.cs)]
+[!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/VisualBasic/introduction-to-wpf_34.vb)]
 
- L’exemple suivant illustre le code XAML requis pour incorporer le contrôle utilisateur dans une <xref:System.Windows.Window>.
+L’exemple suivant illustre le code XAML requis pour incorporer le contrôle utilisateur dans une <xref:System.Windows.Window>.
 
- [!code-xaml[IntroToWPFSnippets#UserControlWindowMARKUP1](../designers/codesnippet/Xaml/introduction-to-wpf_37.xaml)]
+[!code-xaml[IntroToWPFSnippets#UserControlWindowMARKUP1](../designers/codesnippet/Xaml/introduction-to-wpf_37.xaml)]
 
- L’illustration suivante montre le contrôle `NumericUpDown` hébergé dans une <xref:System.Windows.Window>.
+L’illustration suivante montre le contrôle `NumericUpDown` hébergé dans une <xref:System.Windows.Window>.
 
- ![UserControl personnalisé](../designers/media/wpfintrofigure3.png)
+![UserControl personnalisé](../designers/media/wpfintrofigure3.png)
 
 Pour plus d’informations sur les contrôles personnalisés, consultez [Vue d’ensemble de la création de contrôles](/dotnet/framework/wpf/controls/control-authoring-overview).
 

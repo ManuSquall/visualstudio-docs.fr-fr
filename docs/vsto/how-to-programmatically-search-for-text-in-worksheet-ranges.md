@@ -1,5 +1,5 @@
 ---
-title: 'Comment : rechercher le texte dans les plages de feuille de calcul par programmation | Documents Microsoft'
+title: 'Comment : rechercher du texte dans les plages de feuille de calcul par programmation'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,27 +17,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2749834f459085b8d182b58f12a4c372f7493cba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ba3c4cea78e2c5c32d1bb7159243155e18fd01ce
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671173"
 ---
-# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Comment : rechercher du texte dans les plages de la feuille de calcul par programmation
-  Le <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> méthode de la <xref:Microsoft.Office.Interop.Excel.Range> objet vous permet de rechercher du texte dans la plage. Ce texte peut être également une des chaînes d’erreur qui peuvent apparaître dans une cellule de feuille de calcul, tel que `#NULL!` ou `#VALUE!`. Pour plus d’informations sur les chaînes d’erreur, consultez [valeurs d’erreur](http://msdn.microsoft.com/library/office/ff839168.aspx).  
+# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Comment : rechercher par programmation pour le texte dans les plages de feuille de calcul
+  Le <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> méthode de la <xref:Microsoft.Office.Interop.Excel.Range> objet vous permet de rechercher du texte dans la plage. Ce texte peut également être une des chaînes d’erreur qui peuvent s’afficher dans une cellule de feuille de calcul comme `#NULL!` ou `#VALUE!`. Pour plus d’informations sur les chaînes d’erreur, consultez [les valeurs d’erreur de cellule](http://msdn.microsoft.com/library/office/ff839168.aspx).  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- L’exemple suivant recherche une plage nommée `Fruits` et modifie la police des cellules qui contiennent le mot « apples ». Cette procédure utilise également le <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> (méthode), qui utilise la recherche des paramètres pour répéter la recherche. Vous spécifiez la cellule à partir de laquelle effectuer la recherche et le <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> méthode gère le reste.  
+ L’exemple suivant recherche une plage nommée `Fruits` et modifie la police des cellules qui contiennent le mot « apples ». Cette procédure utilise également le <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> (méthode), qui utilise précédemment défini les paramètres pour répéter la recherche de recherche. Vous spécifiez la cellule après laquelle effectuer la recherche et le <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> méthode gère le reste.  
   
 > [!NOTE]  
->  Le <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> recherche de la méthode encapsule jusqu’au début de la plage de recherche une fois qu’il a atteint la fin de la plage. Votre code doit s’assurer que la recherche n’encapsule pas autour d’une boucle infinie. L’exemple de procédure montre une façon de gérer cette situation à l’aide de la <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> propriété.  
+>  Le <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> recherche de la méthode reprend au début de la plage de recherche une fois qu’il a atteint la fin de la plage. Votre code doit s’assurer que la recherche ne pas inclure dans un wrapper autour de dans une boucle infinie. L’exemple de procédure montre comment gérer cette situation à l’aide de la <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> propriété.  
   
- ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vidéo") pour une démonstration vidéo connexe, consultez [comment faire pour utiliser la méthode Find dans un complément à Excel ?](http://go.microsoft.com/fwlink/?LinkID=130294).  
+ ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [comment faire : utiliser la méthode Find dans un complément à Excel ?](http://go.microsoft.com/fwlink/?LinkID=130294).  
   
-### <a name="to-search-for-text-in-a-worksheet-range"></a>Pour rechercher du texte dans une plage de feuille de calcul  
+## <a name="to-search-for-text-in-a-worksheet-range"></a>Pour rechercher du texte dans une plage de feuille de calcul  
   
-1.  Déclarez les variables pour le suivi de l’intégralité de la plage, de la première plage trouvée et de la plage trouvée actuelle.  
+1.  Déclarer des variables pour le suivi de la plage entière, la première plage est trouvée et la plage trouvée actuelle.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#58](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#58)]
      [!code-vb[Trin_VstcoreExcelAutomation#58](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#58)]  
@@ -47,7 +48,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreExcelAutomation#59](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#59)]
      [!code-vb[Trin_VstcoreExcelAutomation#59](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#59)]  
   
-3.  Continuer la recherche aussi longtemps qu’il existe des correspondances.  
+3.  Continuez à chercher tant de correspondances.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#60)]
      [!code-vb[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#60)]  
@@ -57,7 +58,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#61)]
      [!code-vb[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#61)]  
   
-5.  Quitter la boucle si l’adresse de la plage trouvée correspond à l’adresse de la première plage trouvée.  
+5.  Quitter la boucle si l’adresse de la plage trouvée correspond à l’adresse de la première plage est trouvée.  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#62](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#62)]
      [!code-vb[Trin_VstcoreExcelAutomation#62](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#62)]  
@@ -79,9 +80,9 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstcoreExcelAutomation#57](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#57)]  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilisation des plages](../vsto/working-with-ranges.md)   
- [Comment : appliquer des Styles à des plages dans les classeurs par programmation](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [Comment : faire référence par programmation aux plages de feuille de calcul dans le Code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [Travailler avec des plages](../vsto/working-with-ranges.md)   
+ [Comment : appliquer des styles à des plages dans les classeurs par programmation](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [Comment : faire référence par programmation aux plages de feuille de calcul dans le code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
  [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

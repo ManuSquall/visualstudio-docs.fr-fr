@@ -9,12 +9,12 @@ description: Découvrez l’avantage Opsgility inclus dans l’abonnement Visual
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b8f2a7457500ccde75fb0ac8ce698eb27c760459
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: cd0409eef71ebd97b98f93631b0229d5d8526362
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280418"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280894"
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Avantage Opsgility dans les abonnements Visual Studio
 
@@ -26,17 +26,17 @@ Les abonnements Visual Studio sélectionnés incluent un an d’accès à la for
 2.  Recherchez la vignette Opsgility dans la section Outils de la page Avantages, puis cliquez sur le lien **Activer** en bas de la vignette de l’avantage.
 
 3.  Pour utiliser votre avantage Opsgility, cliquez sur le lien **Obtenir un code** en bas de la vignette de l’avantage.   Vous recevez une notification confirmant l’envoi du code du coupon.  Cliquez sur **Activer** pour continuer.
-
-    ![Vignette de l’avantage Opsgility](_img\vs-opsgility\vs-opsgility-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Vignette de l’avantage Opsgility](_img\vs-opsgility\vs-opsgility-tile.png)
 
 
 4.  Vous êtes redirigé vers la page de destination [Opsgility Online Training for Visual Studio Enterprise](https://www.opsgility.com/vse).  (Vous pouvez être invité à démarrer une session de discussion avec un membre du support technique.  Si vous ne le souhaitez pas, réduisez cette fenêtre.)  Entrez les informations de contact demandées, puis cliquez sur **S’inscrire**.
+    > [!div class="mx-imgBorder"]
+    > ![Avantage Opsgility, Page de destination](_img\vs-opsgility\vs-opsgility-registration.png)
 
-    ![Avantage Opsgility, Page de destination](_img\vs-opsgility\vs-opsgility-registration.png)
-
-5.  C’est aussi simple que cela !  Vous êtes prêt à commencer la formation.  Pour vous aider à démarrer, une liste de conseils de formation vous sont suggérés à gauche de la page.  Bonne formation !
-
-    ![Avantage Opsgility, Page d’accueil](_img\vs-opsgility\vs-opsgility-home-cropped.png)
+5.  C’est aussi simple que cela !  Vous êtes prêt à commencer la formation.  Pour vous aider à démarrer, une liste de conseils de formation vous sont suggérés à gauche de la page.  Bonne lecture !
+    > [!div class="mx-imgBorder"]
+    > ![Avantage Opsgility, Page d’accueil](_img\vs-opsgility\vs-opsgility-home-cropped.png)
 
 ## <a name="eligibility"></a>Éligibilité
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
@@ -55,4 +55,4 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 ## <a name="support-resources"></a>Ressources de support technique
 -  Besoin d’aide avec Opsgility ?  Envoyez un ticket de support via la page [Nous contacter](https://www.opsgility.com/SupportTicket).
 -  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  Vous avez des questions concernant l’IDE Visual Studio, Visual Studio Team Services ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
+-  Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).

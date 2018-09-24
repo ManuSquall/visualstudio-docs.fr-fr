@@ -1,19 +1,21 @@
 ---
-title: Analyser l’utilisation de mémoire dans Visual Studio | Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: Mesurer l’utilisation de la mémoire dans vos applications
+description: Recherchez les fuites de mémoire et les utilisations inefficaces de la mémoire durant le débogage avec l’outil de diagnostic intégré au débogueur.
+ms.custom: mvc
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: tutorial
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de4cf17e02391db4430bcd41fb8cfa2ea09b98f7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c6924ff846da2ca7fb3ad7591f6d1c8e07f89b0d
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626744"
 ---
 # <a name="profile-memory-usage-in-visual-studio"></a>Profiler l’utilisation de la mémoire dans Visual Studio
 Recherchez les fuites de mémoire et les utilisations inefficaces de la mémoire durant le débogage avec l’outil de diagnostic **Utilisation de la mémoire** intégré au débogueur. L’outil Utilisation de la mémoire vous permet de prendre un ou plusieurs *instantanés* du tas de mémoire managée et native afin de mieux comprendre l’impact de l’utilisation de la mémoire des types d’objets. Vous pouvez collecter des instantanés d’applications .NET, natives ou en mode mixte (.NET et native).  
@@ -24,7 +26,7 @@ Recherchez les fuites de mémoire et les utilisations inefficaces de la mémoire
   
  Bien que vous puissiez collecter des instantanés de la mémoire à tout moment dans l’outil **Utilisation de la mémoire** , vous pouvez utiliser le débogueur Visual Studio pour contrôler la façon dont votre application s’exécute lors de l’examen des problèmes de performances. La définition de points d’arrêt, l’exécution pas à pas, Interrompre tout et d’autres actions du débogueur peuvent vous aider à concentrer vos investigations en matière de performances sur les chemins du code qui sont les plus pertinents. Le fait d’effectuer ces actions pendant l’exécution de votre application peut éliminer le bruit du code qui ne vous intéresse pas et réduire considérablement le temps nécessaire pour diagnostiquer un problème.  
   
- Vous pouvez également utiliser l’outil Utilisation de la mémoire en dehors du débogueur. Consultez [Memory Usage without Debugging](../profiling/memory-usage-without-debugging2.md).  
+ Vous pouvez également utiliser l’outil Utilisation de la mémoire en dehors du débogueur. Consultez [Utilisation de la mémoire sans débogage](../profiling/memory-usage-without-debugging2.md). Vous pouvez utiliser les Outils de profilage sans débogueur attaché avec Windows 7 et les versions ultérieures. Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**).
   
 > [!NOTE]
 >  **Prise en charge des allocateurs personnalisés** Le profileur de mémoire native fonctionne en collectant des données d’événements [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) d’allocation émises pendant l’exécution.  Les allocateurs dans le CRT et le Kit de développement logiciel (SDK) Windows ont été annotés au niveau de la source afin que leurs données d’allocation puissent être capturées.  Si vous écrivez vos propres allocateurs, toutes les fonctions qui retournent un pointeur vers la mémoire du tas nouvellement allouée peuvent être décorées avec [__declspec](/cpp/cpp/declspec)(allocator), comme l’illustre cet exemple pour myMalloc :  
@@ -48,7 +50,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 2.  Définissez un deuxième point d’arrêt à la fin de la fonction ou de la région de code que vous voulez analyser (ou après qu’un problème mémoire supposé se soit produit).
   
-3.  La fenêtre **Outils de diagnostic** apparaît automatiquement, sauf si vous l’avez désactivée. Pour réafficher la fenêtre, cliquez sur **Déboguer / Fenêtres / Afficher les outils de diagnostic**.
+3.  La fenêtre **Outils de diagnostic** apparaît automatiquement, sauf si vous l’avez désactivée. Pour réafficher la fenêtre, cliquez sur **Déboguer** > **Fenêtres** > **Afficher les outils de diagnostic**.
 
 4.  Choisissez **Utilisation de la mémoire** avec **Sélectionner les outils** dans la barre d’outils.
 
@@ -61,11 +63,11 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
      ![Onglet Résumé des outils de diagnostics](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
      > [!NOTE]
-     >  Comme la collecte des données de la mémoire peut affecter les performances du débogage de vos applications natives ou en mode mixte, les instantanés de la mémoire sont désactivés par défaut. Pour activer les instantanés dans des applications natives ou en mode mixte, démarrez une session de débogage (touche de raccourci : **F5**). Quand la fenêtre **Outils de diagnostic** apparaît, choisissez l’onglet Utilisation de la mémoire, puis **Profilage du tas**.  
+     >  Comme la collecte des données de la mémoire peut affecter les performances du débogage de vos applications natives ou en mode mixte, les instantanés de la mémoire sont désactivés par défaut. Pour activer les instantanés dans des applications natives ou en mode mixte, démarrez une session de débogage (touche de raccourci : **F5**). Quand la fenêtre **Outils de diagnostic** apparaît, choisissez l’onglet **Utilisation de la mémoire**, puis choisissez **Profilage du tas**.  
      >   
      >  ![Activer les instantanés](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
      >   
-     >  Arrêtez (touche de raccourci : **Maj + F5**) et redémarrez le débogage.  
+     >  Arrêtez (touche de raccourci : **Maj**+**F5**) et redémarrez le débogage.  
 
 6.  Pour prendre un instantané au début de votre session de débogage, choisissez **Prendre un instantané** dans la barre d’outils récapitulative **Utilisation de la mémoire**. (Il peut être utile de définir un point d’arrêt ici aussi.)
 
@@ -78,7 +80,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 7.  Quand le débogueur est en pause sur le premier point d’arrêt, choisissez **Prendre un instantané** dans la barre d’outils récapitulative **Utilisation de la mémoire**.  
 
-8.  Appuyez sur F5 pour exécuter l’application jusqu’au deuxième point d’arrêt.
+8.  Appuyez sur **F5** pour exécuter l’application jusqu’au deuxième point d’arrêt.
 
 9.  Prenez maintenant un autre instantané.
 
@@ -125,7 +127,7 @@ Pour analyser l’utilisation de la mémoire, cliquez sur un des liens qui ouvre
   
  ![Vue Instances](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")  
   
- La vue **Instances** affiche les instances de l’objet sélectionné dans l’instantané dans le volet du haut. Le volet Chemins d’accès aux types racine et référence affiche les objets qui référencent l’instance sélectionnée et les types qu’elle référence. Quand le débogueur est arrêté du point où l’instantané a été pris, vous pouvez pointer sur la cellule Valeur pour afficher les valeurs de l’objet dans une info-bulle.  
+ La vue **Instances** affiche les instances de l’objet sélectionné dans l’instantané dans le volet du haut. Les volets **Chemins d’accès à la racine** et **Objets référencés** affichent les objets qui référencent l’instance sélectionnée, ainsi que les types référencés par l’instance sélectionnée. Quand le débogueur est arrêté du point où l’instantané a été pris, vous pouvez pointer sur la cellule **Valeur** pour afficher les valeurs de l’objet dans une info-bulle.  
   
 ### <a name="native-type-reports"></a>Rapports sur les types natifs  
  Cliquez sur le lien actif d’une cellule **Allocations (Diff.)** ou **Taille du tas (Diff.)** dans la table récapitulative Utilisation de la mémoire de la fenêtre **Outils de diagnostic**.  

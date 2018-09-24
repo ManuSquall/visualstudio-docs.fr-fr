@@ -1,7 +1,7 @@
 ---
 title: Utilisation de Visual Studio sur une machine virtuelle Azure
 description: En savoir plus sur l’utilisation de Visual Studio sur une machine virtuelle Azure
-ms.date: 03/03/2018
+ms.date: 07/10/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4ee86cf7a42182cde4d015dfa10c7102563c9a6
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 2fa13718a27b2840ee027a20238702fccd2bc8f4
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957669"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42626755"
 ---
 # <a id="top"> </a> Images Visual Studio sur Azure
 
@@ -34,9 +34,9 @@ Sur la Place de marché Microsoft Azure, vous trouverez des images des versions 
 
 | Version commerciale                                              | Éditions                     |     Version du produit     |
 |:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017 : Dernière version (15.7)                    |    Enterprise, Community     |      Version 15.7.0     |
-| Visual Studio 2017 : Dernière préversion (version 15.8, préversion 1) |    Enterprise, Community     |      Version 15.8.1     |
-|         Visual Studio 2017 : RTW                              |    Enterprise, Community     |      Version 15.0.13    |
+| Visual Studio 2017 : dernière version (15.8)                    |    Enterprise, Community     |      Version 15.8.0     |
+| Visual Studio 2017 : Dernière préversion (version 15.8, préversion 5) |    Enterprise, Community     |      Version 15.8.5     |
+|         Visual Studio 2017 : RTW                              |    Enterprise, Community     |      Version 15.0.17    |
 |   Visual Studio 2015 : Dernière version (Update 3)                      |    Enterprise, Community     |  Version 14.0.25431.01  |
 |         Visual Studio 2015 : RTW                              |             Aucun.             | (Expirée pour la maintenance) |
 
@@ -59,14 +59,14 @@ Nous utilisons la ligne de commande suivante pour installer Visual Studio durant
 
 ```shell
     vs_enterprise.exe --allWorkloads --includeRecommended --passive ^
-       add Microsoft.Net.Component.4.7.SDK ^
-       add Microsoft.Net.Component.4.7.TargetingPack ^
-       add Microsoft.Net.Component.4.6.2.SDK ^
-       add Microsoft.Net.Component.4.6.2.TargetingPack ^
-       add Microsoft.Net.ComponentGroup.4.7.DeveloperTools ^
-       add Microsoft.VisualStudio.Component.FSharp ^
-       add Component.GitHub.VisualStudio ^
-       add Microsoft.VisualStudio.Component.LinqToSql
+       --add Microsoft.Net.Component.4.7.SDK ^
+       --add Microsoft.Net.Component.4.7.TargetingPack ^
+       --add Microsoft.Net.Component.4.6.2.SDK ^
+       --add Microsoft.Net.Component.4.6.2.TargetingPack ^
+       --add Microsoft.Net.ComponentGroup.4.7.DeveloperTools ^
+       --add Microsoft.VisualStudio.Component.FSharp ^
+       --add Component.GitHub.VisualStudio ^
+       --add Microsoft.VisualStudio.Component.LinqToSql
 ```
 
 Si les images n’incluent pas la fonctionnalité de Visual Studio dont vous avez besoin, faites-nous-en part à l’aide de l’outil de commentaires dans l’angle supérieur droit de la page.

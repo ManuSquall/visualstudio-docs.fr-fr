@@ -13,16 +13,20 @@ ms.assetid: 09f458ac-dd88-4cd7-a47f-4106c1e80ece
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 195f64d6ccb06c551c729d1b1b640e42e689654f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5ec69fc08375bb88287cfb89eb49e52fa45466e6
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31897328"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550529"
 ---
 # <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012 : Les types abstraits ne doivent pas avoir de constructeurs
+
 |||
 |-|-|
 |TypeName|AbstractTypesShouldNotHaveConstructors|
@@ -37,7 +41,7 @@ ms.locfileid: "31897328"
  Les constructeurs des types abstraits peuvent être appelés uniquement par des types dérivés. Étant donné que les constructeurs publics créent des instances d'un type et que vous ne pouvez pas créer d'instance d'un type abstrait, un type abstrait doté d'un constructeur public est de conception incorrecte.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, rendez le constructeur protégé, ou bien ne pas déclarer le type comme abstract.
+ Pour corriger une violation de cette règle, protégez le constructeur ou ne déclarez pas le type comme abstraite.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez aucun avertissement de cette règle. Le type abstrait a un constructeur public.

@@ -1,5 +1,5 @@
 ---
-title: Afficher les valeurs de Registre dans le débogueur Visual Studio | Documents Microsoft
+title: Afficher les valeurs de Registre dans le débogueur Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -25,28 +25,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7630ab56ef738febcf80058916272958e267a386
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ceadd2f131a75e01cec67c21dca0d7837b02738a
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477009"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551845"
 ---
-# <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger"></a>Afficher les valeurs de Registre et utiliser la fenêtre registres dans le débogueur Visual Studio
+# <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger"></a>Afficher les valeurs de s’inscrire et utiliser la fenêtre registres dans le débogueur Visual Studio
 La fenêtre Registres est disponible uniquement si le débogage au niveau des adresses est activé dans le **Options** boîte de dialogue, **débogage** nœud, **général** catégorie.  
   
  Le **inscrit** fenêtre affiche le contenu du Registre. Si vous conservez le **inscrit** fenêtre à mesure que vous parcourez votre programme, vous pouvez voir valeurs des registres modifier votre code s’exécute. Les valeurs récemment modifiées s'affichent en rouge. Il est possible de modifier les valeurs des registres. Pour plus d’informations, consultez [Comment : modifier une valeur de Registre](../debugger/how-to-edit-a-register-value.md).  
   
- Pour réduire l’encombrement, la **inscrit** fenêtre classe les registres en groupes, lesquels varient en fonction de la plateforme de processeur et de type. Vous pouvez afficher ou masquer des groupes selon vos besoins. Pour plus d’informations, consultez [Comment : afficher et masquer les groupes de registres](../debugger/how-to-display-and-hide-register-groups.md).  
+ Pour réduire l’encombrement, la **inscrit** fenêtre classe les registres en groupes, lesquels varient en fonction de la plateforme et le processeur de type. Vous pouvez afficher ou masquer des groupes selon vos besoins. Pour plus d’informations, consultez [Comment : afficher et masquer les groupes de registres](../debugger/how-to-display-and-hide-register-groups.md).  
   
- Pour obtenir une présentation générale des concepts qui sous-tendent les registres et la fenêtre Registres, consultez [principes fondamentaux de débogage : fenêtre Registres](../debugger/debugging-basics-registers-window.md).  
+ Pour une introduction avancée aux concepts qui sous-tendent les registres et la fenêtre Registres, consultez [principes fondamentaux de débogage : fenêtre Registres](../debugger/debugging-basics-registers-window.md).  
   
 > [!NOTE]
 >  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
 ### <a name="to-display-the-registers-window"></a>Pour afficher la fenêtre Registres  
   
--   Sur le **déboguer** menu, choisissez **Windows**, puis choisissez **inscrit**.  
+-   Sur le **déboguer** menu, choisissez **Windows**, puis choisissez **inscrit** (ou choisissez **Ctrl** + **Alt**   +  **G**).  
   
      Le débogueur doit être en cours d'exécution ou en mode arrêt.  
   

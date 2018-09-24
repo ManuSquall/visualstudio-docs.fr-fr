@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fb5534d376cf1a0c60b20080df8c8bfc6ad6689
-ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
+ms.openlocfilehash: 3a2873f691fdaa1251a5562e21e2bbd0467eb2e2
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "34851823"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612751"
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>Indiquez si vous souhaitez déboguer uniquement le code utilisateur à l’aide d’uniquement mon Code dans Visual Studio
 Vous pouvez configurer Visual Studio pour effectuer un survol de système, d’infrastructure et d’autres appels de non-utilisateur automatiquement et de réduire ces appels dans la fenêtre Pile des appels. La fonctionnalité qui active ou désactive ce comportement est appelée *uniquement mon Code*. Cette rubrique décrit comment utiliser uniquement mon Code dans les projets c#, Visual Basic, C++ et JavaScript.
@@ -37,6 +37,10 @@ Pour la plupart des langages de programmation, uniquement mon Code est activé p
   
 > [!NOTE]
 >  Le **afficher le Code externe** paramètre est enregistré dans le Générateur de profils de l’utilisateur actuel. Il est appliqué à tous les projets dans tous les langages qui sont ouverts par l'utilisateur.
+
+##  <a name="identify-user-code-while-debugging"></a>Identifier le code de l’utilisateur pendant le débogage 
+
+Le **Modules** fenêtre peut vous indiquer quels modules de code le débogueur va traiter en tant que code utilisateur ou mon Code, ainsi que des informations telles que le symbole de chargement de l’état du module. Pour plus d’informations, consultez [vous familiariser avec la façon dont le débogueur s’attache à votre application](../debugger/debugger-tips-and-tricks.md#modules_window).
   
 ##  <a name="BKMK__NET_Framework_Just_My_Code"></a> Uniquement mon Code .NET framework  
   
@@ -67,7 +71,9 @@ Pour la plupart des langages de programmation, uniquement mon Code est activé p
 ##  <a name="BKMK_C___Just_My_Code"></a> Uniquement mon Code C++  
   
 ###  <a name="BKMK_CPP_User_and_non_user_code"></a> Code utilisateur et non-utilisateur  
- Uniquement mon Code C++ est différent d'Uniquement mon code .NET Framework et JavaScript, car le comportement d'exécution pas à pas est indépendant du comportement de la pile des appels.  
+Uniquement mon Code C++ est différent d'Uniquement mon code .NET Framework et JavaScript, car le comportement d'exécution pas à pas est indépendant du comportement de la pile des appels.  
+
+À compter de 15.8 de 2017 Visual Studio, vous pouvez spécifier s’il faut activer uniquement mon Code pour l’utilisation de C++ **outils** > **Options** > **débogage**  >  **Général** > **activer uniquement mon Code** (il est activé par défaut). Cela équivaut à utiliser le [/JMC (débogage uniquement mon code)](/cpp/build/reference/jmc) commutateur de compilateur.
   
  **Les piles d’appels**  
   
@@ -88,7 +94,7 @@ Pour la plupart des langages de programmation, uniquement mon Code est activé p
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> Comportement d’exécution pas à pas  
  Lorsque vous **pas à pas détaillé** (raccourci clavier : F11) code de non-utilisateur depuis du code utilisateur, le débogueur exécute le code à la ligne suivante de code utilisateur. Lorsque vous **pas à pas sortant** (clavier : MAJ + F11), le débogueur s’exécute à la ligne suivante du code utilisateur. Si aucun code utilisateur n’est rencontrée, l’exécution se poursuit jusqu'à ce que l’application se ferme, un point d’arrêt est atteint, ou une exception se produit.  
   
- Si le débogueur s'arrête dans du code non-utilisateur (par exemple si une commande Interrompre tout s'arrête dans du code non-utilisateur), l'exécution pas à pas continue dans le code non-utilisateur.  
+ Si le débogueur s'arrête dans du code non-utilisateur (par exemple si une commande Interrompre tout s'arrête dans du code non-utilisateur), l'exécution pas à pas continue dans le code non-utilisateur.
   
 ###  <a name="BKMK_CPP_Exception_behavior"></a> Comportement d’exception  
  Lorsque le débogueur rencontre une exception, il s’arrête sur l’exception qu’il s’agisse de l’utilisateur ou le code non-utilisateur. Le **User-unhandled** options dans le **Exceptions** boîte de dialogue sont ignorés.  
@@ -282,7 +288,7 @@ Pour la plupart des langages de programmation, uniquement mon Code est activé p
   
 |||  
 |-|-|  
-|**Version d’évaluation**|un script qui est exécuté en passant une chaîne à la fonction `eval` fournie par l'hôte. Par défaut, le script Eval est classé comme **MyCode**.|  
+|**Eval**|un script qui est exécuté en passant une chaîne à la fonction `eval` fournie par l'hôte. Par défaut, le script Eval est classé comme **MyCode**.|  
 |**Function**|un script qui est exécuté en passant une chaîne au constructeur `Function`. Par défaut, le script Function est classé en tant que **LibraryCode**.|  
 |**ScriptBlock**|un script qui est exécuté en passant une chaîne aux fonctions `setTimeout`, `setImmediate` ou `setInterval`. Par défaut, le script ScriptBlock est classé en tant que **UnrelatedCode**.|  
   

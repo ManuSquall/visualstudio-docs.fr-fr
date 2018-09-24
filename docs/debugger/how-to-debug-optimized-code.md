@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d6ada3b5375737cb4deec777f64344096fbdaae
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 47b26883d0800611f2fba5cbf7a02907fef1d948
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058508"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280816"
 ---
 # <a name="how-to-debug-optimized-code"></a>Comment : déboguer le code optimisé
 > [!NOTE]
@@ -88,7 +88,7 @@ ms.locfileid: "37058508"
 for (x=0; x<10; x++)  
 ```  
   
- Supposons que vous définissez un point d'arrêt sur cette ligne. Vous pouvez supposer que le point d'arrêt sera atteint 10 fois ; mais si le code est optimisé, il ne sera atteint qu'une seule fois. Cela est dû au fait que la première instruction affecte la valeur 0 à `x`. Le compilateur reconnaît que l'opération doit être effectuée une seule fois et la sort de la boucle. Le point d'arrêt est déplacé en même temps. Les instructions qui comparent et incrémentent `x` restent à l'intérieur de la boucle. Lorsque vous affichez le **désassemblage** fenêtre, le [unité d’étape](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9) est automatiquement définie sur Instruction pour un meilleur contrôle, ce qui est utile lorsque vous parcourez le code optimisé.  
+ Supposons que vous définissez un point d'arrêt sur cette ligne. Vous pouvez supposer que le point d'arrêt sera atteint 10 fois ; mais si le code est optimisé, il ne sera atteint qu'une seule fois. Cela est dû au fait que la première instruction affecte la valeur 0 à `x`. Le compilateur reconnaît que l'opération doit être effectuée une seule fois et la sort de la boucle. Le point d'arrêt est déplacé en même temps. Les instructions qui comparent et incrémentent `x` restent à l'intérieur de la boucle. Lorsque vous affichez le **désassemblage** fenêtre, le [unité d’étape](/previous-versions/visualstudio/visual-studio-2010/ek13f001(v=vs.100)) est automatiquement définie sur Instruction pour un meilleur contrôle, ce qui est utile lorsque vous parcourez le code optimisé.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité du débogueur](../debugger/debugger-security.md)   

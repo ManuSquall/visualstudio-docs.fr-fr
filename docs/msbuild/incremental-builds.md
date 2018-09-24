@@ -12,17 +12,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 17f33be85a5baf35235721c720386dd237d9ec85
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8e877d6383a4a4257fa72fde0d1daf4a91626025
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572974"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079214"
 ---
 # <a name="incremental-builds"></a>Builds incrémentielles
 Les builds incrémentielles sont des builds optimisées qui permettent de ne pas exécuter les cibles dont les fichiers de sortie sont à jour par rapport à leurs fichiers d’entrée correspondants. Un élément cible peut avoir à la fois un attribut `Inputs`, qui indique les éléments que la cible attend comme entrée, et un attribut `Outputs` qui indique les éléments qu’il produit comme sortie. MSBuild tente de trouver une correspondance « 1 à 1 » entre les valeurs de ces attributs. Si une correspondance « 1 à 1 » existe, MSBuild compare l’horodatage de chaque élément d’entrée avec celui de l’élément de sortie correspondant. Les fichiers de sortie sans correspondance « 1 à 1 » sont comparés à tous les fichiers d’entrée. Un élément est considéré comme à jour si son fichier de sortie a une date de création identique ou antérieure à celle du ou des fichiers d’entrée.  
   
- Si tous les éléments de sortie sont à jour, MSBuild ignore la cible. Cette *build incrémentielle* de la cible peut améliorer considérablement la vitesse de génération. Si seuls certains fichiers sont à jour, MSBuild exécute la cible en ignorant les éléments à jour, pour que tous les éléments soient à jour. C’est ce qu’on appelle une *build incrémentielle partielle*.  
+ Si tous les éléments de sortie sont à jour, MSBuild ignore la cible. Cette *build incrémentielle* de la cible peut améliorer considérablement la vitesse de génération. Si seuls certains fichiers sont à jour, MSBuild exécute la cible en ignorant les éléments à jour, pour que tous les éléments soient à jour. Ce processus est appelé « *build incrémentielle partielle* ».  
   
  Les correspondances « 1 à 1 » sont généralement produites par des transformations d’éléments. Pour plus d’informations, consultez l’article [Transforms (Transformations MSBuild)](../msbuild/msbuild-transforms.md).  
   
@@ -36,10 +36,10 @@ Les builds incrémentielles sont des builds optimisées qui permettent de ne pas
 </Target>  
 ```  
   
- Le jeu de fichiers représenté par le type d’élément `Compile` est copié dans un répertoire de sauvegarde. Les fichiers de sauvegarde ont l’extension de nom de fichier .bak. Si les fichiers représentés par le type d’élément `Compile`, ou les fichiers de sauvegarde correspondants, ne sont pas supprimés ou modifiés après l’exécution de la cible de sauvegarde, celle-ci est ignorée dans les builds suivantes.  
+ Le jeu de fichiers représenté par le type d’élément `Compile` est copié dans un répertoire de sauvegarde. Les fichiers de sauvegarde ont l’extension de nom de fichier *.bak*. Si les fichiers représentés par le type d’élément `Compile`, ou les fichiers de sauvegarde correspondants, ne sont pas supprimés ou modifiés après l’exécution de la cible de sauvegarde, celle-ci est ignorée dans les builds suivantes.  
   
 ## <a name="output-inference"></a>Inférence de sortie  
- MSBuild compare les attributs `Inputs` et `Outputs` d’une cible pour déterminer si celle-ci doit être exécutée. Dans l’idéal, le jeu de fichiers qui existe après une build incrémentielle doit rester le même, que les cibles associées soient exécutées ou non. Étant donné que les propriétés et les éléments qui sont créés ou modifiés par les tâches peuvent affecter la build, MSBuild doit déduire leurs valeurs, même si la cible associée est ignorée. C’est ce qu’on appelle *l’inférence de sortie*.  
+ MSBuild compare les attributs `Inputs` et `Outputs` d’une cible pour déterminer si celle-ci doit être exécutée. Dans l’idéal, le jeu de fichiers qui existe après une build incrémentielle doit rester le même, que les cibles associées soient exécutées ou non. Étant donné que les propriétés et les éléments qui sont créés ou modifiés par les tâches peuvent affecter la build, MSBuild doit déduire leurs valeurs, même si la cible associée est ignorée. Ce processus est appelé « *inférence de sortie* ».  
   
  Celle-ci s’utilise dans trois cas :  
   
@@ -48,8 +48,8 @@ Les builds incrémentielles sont des builds optimisées qui permettent de ne pas
 -   La cible comprend des sorties obsolètes, et est donc exécutée pour les mettre à jour.  
   
 -   La cible ne comprend aucune sortie obsolète, et est donc ignorée. MSBuild évalue la cible et apporte des modifications aux éléments et aux propriétés comme si la cible avait été exécutée.  
-  
- Pour que la compilation incrémentielle soit prise en charge, les tâches doivent vérifier que la valeur de l’attribut `TaskParameter` d’un élément `Output` est égale à un paramètre d’entrée de tâche. Voici quelques exemples :  
+
+Pour que la compilation incrémentielle soit prise en charge, les tâches doivent vérifier que la valeur de l’attribut `TaskParameter` d’un élément `Output` est égale à un paramètre d’entrée de tâche. Voici quelques exemples :  
   
 ```xml  
 <CreateProperty Value="123">  
@@ -57,7 +57,7 @@ Les builds incrémentielles sont des builds optimisées qui permettent de ne pas
 </CreateProperty>  
 ```  
   
- Cela crée la propriété Easy, dont la valeur est « 123 », que la cible ait été ou non exécutée ou ignorée.  
+ Ce code crée la propriété Easy, dont la valeur est « 123 », que la cible ait été ou non exécutée ou ignorée.  
   
 ```xml  
 <CreateItem Include="a.cs;b.cs">  
@@ -65,11 +65,11 @@ Les builds incrémentielles sont des builds optimisées qui permettent de ne pas
 </CreateItem>  
 ```  
   
- Cela crée le type d’élément Simple, qui comprend les deux éléments « a.cs » et « b.cs », que la cible ait été ou non exécutée ou ignorée.  
+ Ce code crée le type d’élément Simple, qui comprend les deux éléments, *a.cs* et *b.cs*, que la cible ait été ou non exécutée ou ignorée.  
   
  À compter de MSBuild 3.5, l’inférence de sortie est exécutée automatiquement sur les groupes de propriétés et d’éléments de la cible. Les tâches `CreateItem` ne sont pas obligatoires dans la cible et doivent être évitées. De plus, les tâches `CreateProperty` ne doivent être utilisées dans une cible que pour déterminer si celle-ci a été exécutée.  
   
-## <a name="determining-whether-a-target-has-been-run"></a>Déterminer si une cible a été exécutée  
+## <a name="determine-whether-a-target-has-been-run"></a>Déterminer si une cible a été exécutée  
  En raison de l’inférence de sortie, vous devez ajouter une tâche `CreateProperty` à une cible pour examiner les propriétés et les éléments, et ainsi, déterminer si la cible a été exécutée. Ajoutez la tâche `CreateProperty` à la cible et attribuez-lui un élément `Output` dont le `TaskParameter` est défini sur « ValueSetByTask ».  
   
 ```xml  
@@ -78,7 +78,7 @@ Les builds incrémentielles sont des builds optimisées qui permettent de ne pas
 </CreateProperty>  
 ```  
   
- Cela crée la propriété CompileRan et lui attribue la valeur `true`, mais uniquement si la cible est exécutée. Si la cible est ignorée, CompileRan n’est pas créé.  
+ Ce code crée la propriété CompileRan et lui attribue la valeur `true`, mais uniquement si la cible est exécutée. Si la cible est ignorée, CompileRan n’est pas créé.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md)
+ [Cibles](../msbuild/msbuild-targets.md)

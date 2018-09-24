@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51543921049082b4fca5a04f20b8adfc753d8112
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 4b7e42c274bd1ef5bb2d04db2e856418ea6719f8
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283443"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384290"
 ---
 # <a name="install-visual-studio-2017"></a>Installer Visual Studio 2017
 
@@ -69,7 +69,7 @@ Ensuite, exécutez le fichier du programme d’amorçage pour installer Visual S
 
   Si vous recevez une notification du contrôle de compte d’utilisateur, cliquez sur **Oui**.
 
-2. Vous devez accepter les [Termes du contrat de licence](https://visualstudio.microsoft.com/license-terms/) Microsoft et la [Déclaration de confidentialité](https://go.microsoft.com/fwlink/?LinkID=824704) Microsoft. Cliquez sur **Continuer**.
+2. Vous devez accepter les [Termes du contrat de licence](https://visualstudio.microsoft.com/license-terms/) Microsoft et la [Déclaration de confidentialité](https://privacy.microsoft.com/privacystatement) Microsoft. Cliquez sur **Continuer**.
 
    ![Termes du contrat de licence et déclaration de confidentialité](media/vs2017-privacy-and-license-terms.PNG "Termes du contrat de licence et déclaration de confidentialité Microsoft")
 
@@ -138,16 +138,7 @@ Pour plus d’informations, consultez la page [Changer les emplacements d’inst
    Par exemple, pour [créer une application C++](../ide/getting-started-with-cpp-in-visual-studio.md), cliquez sur **Installé**, développez **Visual C++**, puis sélectionnez le type de projet C++ que vous souhaitez générer. <br><br>
    Pour [créer une application C#](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), cliquez sur **Installé**, développez **Visual C#**, puis sélectionnez le type de projet C# que vous souhaitez générer.
 
-## <a name="get-support"></a>Obtenir de l’aide
-
-Parfois, des problèmes peuvent se produire. Si votre installation de Visual Studio échoue, consultez la page [Résolution des problèmes d’installation et de mise à niveau de Visual Studio 2017](troubleshooting-installation-issues.md). Si aucune étape de résolution des problèmes ne vous aide, vous pouvez nous contacter pour une conversation en direct sur une assistance à l’installation (en anglais uniquement). Pour plus de détails, consultez la [page du support Visual Studio](https://visualstudio.microsoft.com/vs/support/#talktous).
-
-Voici d’autres options de support :
-
-* Vous pouvez nous signaler des problèmes au niveau d’un produit via l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio-2017.md) qui s’affiche dans le programme d’installation de Visual Studio et dans l’IDE de Visual Studio.
-* Vous pouvez nous faire part d’une suggestion de produit via [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Vous pouvez suivre les problèmes au niveau d’un produit et obtenir des réponses dans la [Communauté des développeurs Visual Studio](https://developercommunity.visualstudio.com/).
-* Vous pouvez également communiquer avec nous et d’autres développeurs Visual Studio en prenant part à notre [conversation Visual Studio dans la communauté Gitter](https://gitter.im/Microsoft/VisualStudio). (Cette option nécessite un compte [GitHub](https://github.com/).)
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)] 
 
 ## <a name="see-also"></a>Voir aussi
 
@@ -155,6 +146,5 @@ Voici d’autres options de support :
 * [Modifier Visual Studio 2017](modify-visual-studio.md)
 * [Désinstaller Visual Studio 2017](uninstall-visual-studio.md)
 * [Créer une installation hors connexion de Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
-* [Guide de l’administrateur Visual Studio 2017](visual-studio-administrator-guide.md)
-  * [Utiliser les paramètres de ligne de commande pour installer Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
-* [Installer les outils de génération dans un conteneur](build-tools-container.md)
+* [Utiliser les paramètres de ligne de commande pour installer Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
+* [Installer et configurer Visual Studio pour Mac](/visualstudio/mac/installation)

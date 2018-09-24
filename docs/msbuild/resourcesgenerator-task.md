@@ -19,26 +19,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ea13b4d097792baf2da46745be2f64a565fdf2e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7b72ce231b514250a40e9f3a4bf5ceb5aa2c69f8
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575973"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178889"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator, tâche
-La tâche <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> incorpore une ou plusieurs ressources (.jpg, .ico, .bmp, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] au format binaire et d’autres types d’extensions) dans un fichier .resources.  
+La tâche <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> incorpore une ou plusieurs ressources (*.jpg*, *.ico*, *.bmp*, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] au format binaire et d’autres types d’extensions) dans un fichier *.resources*.  
   
 ## <a name="task-parameters"></a>Paramètres de tâche  
   
 |Paramètre|Description|  
 |---------------|-----------------|  
 |`OutputPath`|Paramètre **String** obligatoire.<br /><br /> Spécifie le chemin du répertoire de sortie. Si le chemin n’est pas absolu, il est traité comme un chemin relatif au répertoire racine du projet.|  
-|`OutputResourcesFile`|Paramètre de sortie **ITaskItem[]** obligatoire.<br /><br /> Spécifie le chemin et le nom du fichier .resources généré. Si le chemin n’est pas absolu, le fichier .resources est généré par rapport au répertoire racine du projet.|  
-|`ResourcesFiles`|Paramètre **ITaskItem[]** obligatoire.<br /><br /> Spécifie une ou plusieurs ressources à incorporer dans le fichier .resources généré.|  
+|`OutputResourcesFile`|Paramètre de sortie **ITaskItem[]** obligatoire.<br /><br /> Spécifie le chemin et le nom du fichier *.resources* généré. Si le chemin n’est pas absolu, le fichier *.resources* est généré par rapport au répertoire racine du projet.|  
+|`ResourcesFiles`|Paramètre **ITaskItem[]** obligatoire.<br /><br /> Spécifie une ou plusieurs ressources à incorporer dans le fichier *.resources* généré.|  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant génère un fichier .resources avec une seule ressource .bmp. La ressource .bmp est générée dans un répertoire relatif au répertoire racine du projet.  
+ L’exemple suivant génère un fichier *.resources* avec une seule ressource *.bmp*. La ressource *.bmp* est générée dans un répertoire relatif au répertoire racine du projet.  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -56,7 +56,7 @@ La tâche <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> incorpore une 
   
 ## <a name="see-also"></a>Voir aussi  
  [Informations de référence sur MSBuild WPF](../msbuild/wpf-msbuild-reference.md)   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/wpf-msbuild-task-reference.md)   
- [Référence MSBuild](../msbuild/msbuild-reference.md)   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)   
- [Génération d’une application WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+ [Informations de référence sur les tâches](../msbuild/wpf-msbuild-task-reference.md)   
+ [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)   
+ [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)   
+ [Générer une application WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

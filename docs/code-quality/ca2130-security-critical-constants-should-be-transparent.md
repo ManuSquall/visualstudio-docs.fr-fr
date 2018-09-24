@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 999a4a15dd83db66365bc9ee3701fd3130cedeb1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 212bd1bc9f1f5b66fa8ddb485c5ec287ff39c754
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914352"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551348"
 ---
 # <a name="ca2130-security-critical-constants-should-be-transparent"></a>CA2130 : Les constantes critiques de sécurité doivent être transparentes
 |||
@@ -40,6 +40,6 @@ ms.locfileid: "31914352"
  Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="example"></a>Exemple
- Dans les exemples suivants, la valeur enum `EnumWithCriticalValues.CriticalEnumValue` et la constante `CriticalConstant` génère cet avertissement. Pour résoudre les problèmes, supprimez le [`SecurityCritical`] attribut pour qu’elles soient transparentes de sécurité.
+ Dans les exemples suivants, la valeur enum `EnumWithCriticalValues.CriticalEnumValue` et la constante `CriticalConstant` déclenchent cet avertissement. Pour corriger les problèmes, supprimez le [`SecurityCritical`] attribut pour qu’elles soient transparentes de sécurité.
 
  [!code-csharp[FxCop.Security.CA2130.ConstantsShouldBeTransparent#1](../code-quality/codesnippet/CSharp/ca2130-security-critical-constants-should-be-transparent_1.cs)]

@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15e76507b64ea15d390f10cf4896830c03a2c963
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5fdd9dadc92143fabfaeea35d776b57b4b4c1748
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056796"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468528"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Procédure pas à pas : débogage d'un Windows Form
 Un formulaire Windows est une des applications managées plus courantes. Un formulaire Windows crée une application Windows standard. Vous pouvez effectuer cette procédure pas à pas à l’aide de Visual Basic, c# ou C++.  
@@ -51,27 +51,25 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
   
 2.  Dans le volet Types de projets, ouvrez le **Visual Basic**, **Visual C#**, ou **Visual C++** nœud, puis  
   
-    1.  Pour Visual Basic ou Visual c#, sélectionnez le **Windows** nœud, puis sélectionnez **Application de formulaire Windows** dans le **modèles** volet.  
+    1.  Pour Visual Basic ou Visual c#, sélectionnez **Windows Desktop** > **application de formulaire Windows**.  
   
-    2.  Pour Visual C++, sélectionnez le **CLR** nœud, puis sélectionnez **Application de formulaire Windows** dans le **modèles** volet...  
+    2.  Pour Visual C++, sélectionnez **Application de bureau Windows**.  
   
-3.  Dans le **modèles** volet, sélectionnez **Windows Application**.  
+3.  Dans le **nom** boîte, donnez un nom unique (par exemple, Walkthrough_SimpleDebug) au projet.  
   
-4.  Dans le **nom** boîte, donnez un nom unique (par exemple, Walkthrough_SimpleDebug) au projet.  
-  
-5.  Cliquez sur **OK**.  
+4.  Cliquez sur **OK**.  
   
      Visual Studio crée un nouveau projet et affiche un nouveau formulaire dans le Concepteur Windows Forms. Pour plus d’informations, consultez [Windows Forms Designer](http://msdn.microsoft.com/en-us/3c3d61f8-f36c-4d41-b9c3-398376fabb15).  
   
-6.  Sur le **vue** menu, sélectionnez **boîte à outils**.  
+5.  Sur le **vue** menu, sélectionnez **boîte à outils**.  
   
      La boîte à outils s'ouvre. Pour plus d'informations, consultez [Boîte à outils](../ide/reference/toolbox.md).  
   
-7.  Dans la boîte à outils, cliquez sur le **bouton** contrôler et faites glisser le contrôle sur l’aire de conception du formulaire. Relâchez le bouton sur le formulaire.  
+6.  Dans la boîte à outils, cliquez sur le **bouton** contrôler et faites glisser le contrôle sur l’aire de conception du formulaire. Relâchez le bouton sur le formulaire.  
   
-8.  Dans la boîte à outils, cliquez sur le **zone de texte** contrôler et faites glisser le contrôle sur l’aire de conception du formulaire. Supprimer le **zone de texte** sur le formulaire.  
+7.  Dans la boîte à outils, cliquez sur le **zone de texte** contrôler et faites glisser le contrôle sur l’aire de conception du formulaire. Supprimer le **zone de texte** sur le formulaire.  
   
-9. Sur l’aire de conception de formulaire, double-cliquez sur le bouton.  
+8. Sur l’aire de conception de formulaire, double-cliquez sur le bouton.  
   
      Vous accédez alors à la page de codes. Le curseur doit se trouver dans `button1_Click`.  
   

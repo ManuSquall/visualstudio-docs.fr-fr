@@ -12,16 +12,16 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1cdff316b5553a8c1425927275e1547294040002
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 98fc473a9459aa6d1a1d7c10be7b6f240a4ab7d0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749458"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668584"
 ---
 # <a name="custom-native-etw-heap-events"></a>Événements de tas ETW natifs personnalisés
 
-Visual Studio contient de nombreux [outils de profilage et de diagnostic](../profiling/profiling-tools.md), y compris un profileur de mémoire native.  Ce profileur raccorde les [événements ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) à partir du fournisseur de tas et fournit une analyse indiquant comment la mémoire est allouée et utilisée.  Par défaut, cet outil peut uniquement analyser les allocations effectuées à partir du tas Windows standard, et aucune allocation en dehors de ce tas natif n’est affichée.
+Visual Studio contient de nombreux [outils de profilage et de diagnostic](../profiling/profiling-feature-tour.md), y compris un profileur de mémoire native.  Ce profileur raccorde les [événements ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) à partir du fournisseur de tas et fournit une analyse indiquant comment la mémoire est allouée et utilisée.  Par défaut, cet outil peut uniquement analyser les allocations effectuées à partir du tas Windows standard, et aucune allocation en dehors de ce tas natif n’est affichée.
 
 Il existe de nombreux cas dans lesquels vous souhaiterez utiliser votre propre tas personnalisé et éviter la surcharge d’allocation liée au tas standard.  Par exemple, vous pouvez utiliser [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) pour allouer une grande quantité de mémoire au démarrage de l’application ou du jeu, puis gérer vos propres blocs dans cette liste.  Dans ce scénario, le profileur de mémoire voit uniquement cette allocation initiale, et pas la gestion personnalisée effectuée à l’intérieur du bloc de mémoire.  Toutefois, à l’aide du fournisseur ETW de tas natif personnalisé, vous pouvez laisser l’outil connaître toutes les allocations que vous effectuez en dehors du tas standard.
 
@@ -155,8 +155,8 @@ Le tas *Tas NT* par défaut a le même aspect qu’auparavant, à ceci près que
 Comme avec le tas Windows standard, vous pouvez également utiliser cet outil pour comparer des instantanés et rechercher des fuites et des défaillances dans votre tas personnalisé, comme le décrit la documentation principale [Memory Usage](../profiling/memory-usage.md) (Utilisation de la mémoire).
 
 > [!TIP]
-> Visual Studio contient également un outil **Utilisation de la mémoire** dans l’ensemble d’outils de **profilage des performances**, que vous pouvez activer à l’aide de l’option de menu **Déboguer**>**Profileur de performances** ou de la combinaison de touches **Alt**+**F2**.  Cette fonctionnalité n’inclut pas le suivi de tas et n’affiche pas votre tas personnalisé comme décrit ici.  Cette fonctionnalité est uniquement disponible dans la fenêtre **Outils de diagnostic**, que vous pouvez activer avec le menu **Déboguer**>**Fenêtres**>**Afficher les outils de diagnostic** ou la combinaison de touches **Ctrl**+**Alt**+**F2**.
+> Visual Studio contient également un outil **Utilisation de la mémoire** dans l’ensemble d’outils de **profilage des performances**, que vous pouvez activer à l’aide de l’option de menu **Déboguer** > **Profileur de performances** ou de la combinaison de touches **Alt**+**F2**.  Cette fonctionnalité n’inclut pas le suivi de tas et n’affiche pas votre tas personnalisé comme décrit ici.  Cette fonctionnalité est uniquement disponible dans la fenêtre **Outils de diagnostic**, que vous pouvez activer avec le menu **Déboguer** > **Fenêtres** > **Afficher les outils de diagnostic** ou la combinaison de touches **Ctrl**+**Alt**+**F2**.
 
 ## <a name="see-also"></a>Voir aussi
-[Outils de profilage](../profiling/profiling-tools.md)  
+[Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)  
 [Utilisation de la mémoire](../profiling/memory-usage.md)

@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ccc41d7cc2e1150c6c4eb9ca1e62719517b194fa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 886fc925c4053e7f9fdc9939ff33a5cda4228c0b
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975544"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381590"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Utiliser le framework MSTest dans les tests unitaires
 

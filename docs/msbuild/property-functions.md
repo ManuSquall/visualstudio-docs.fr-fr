@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc1665b0b5a12f8e1719116e61f13ac915083c0d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7a238e0bb35efd3ddf984a692a032535c37dfd88
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978217"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468697"
 ---
 # <a name="property-functions"></a>Fonctions de propriétés
 
@@ -43,7 +43,7 @@ $(ProjectOutputFolder.Substring(0,3))
 
 ### <a name="static-property-functions"></a>Fonctions de propriété statique
 
-Dans votre script de génération, vous pouvez accéder aux propriétés et aux méthodes statiques de nombreuses classes système. Pour obtenir la valeur d’une propriété statique, utilisez la syntaxe suivante, où *Class* est le nom de la classe système et *Property* le nom de la propriété.
+Dans votre script de génération, vous pouvez accéder aux propriétés et aux méthodes statiques de nombreuses classes système. Pour obtenir la valeur d’une propriété statique, utilisez la syntaxe suivante, où \<Class> est le nom de la classe système et \<Property> le nom de la propriété.
 
 ```fundamental
 $([Class]::Property)
@@ -55,7 +55,7 @@ Par exemple, vous pouvez utiliser le code suivant pour définir une propriété 
 <Today>$([System.DateTime]::Now)</Today>
 ```
 
-Pour appeler une méthode statique, utilisez la syntaxe suivante, où *Class* est le nom de la classe système, *Method* le nom de la méthode et *(Parameters)* la liste des paramètres de la méthode :
+Pour appeler une méthode statique, utilisez la syntaxe suivante, où \<Class> est le nom de la classe système, \<Method> le nom de la méthode et (\<Parameters>) la liste des paramètres de la méthode :
 
 ```fundamental
 $([Class]::Method(Parameters))
@@ -117,9 +117,9 @@ Vous pouvez également utiliser les méthodes et propriétés statiques suivante
 - System.IO.File::GetLastWriteTime
 - System.IO.File::ReadAllText
 
-### <a name="calling-instance-methods-on-static-properties"></a>Appel de méthodes d'instance sur des propriétés statiques
+### <a name="calling-instance-methods-on-static-properties"></a>Appeler des méthodes d’instance sur des propriétés statiques
 
-Si vous accédez à une propriété statique qui retourne une instance d'un objet, vous pouvez appeler les méthodes d'instance de cet objet. Pour appeler une méthode d’instance, utilisez la syntaxe suivante, où *Class* est le nom de la classe système, *Property* le nom de la propriété, *Method* le nom de la méthode et *(Parameters)* la liste des paramètres de la méthode :
+Si vous accédez à une propriété statique qui retourne une instance d'un objet, vous pouvez appeler les méthodes d'instance de cet objet. Pour appeler une méthode d’instance, utilisez la syntaxe suivante, où \<Class> est le nom de la classe système, \<Property> le nom de la propriété, \<Method> le nom de la méthode et (\<Parameters>) la liste des paramètres de la méthode :
 
 ```fundamental
 $([Class]::Property.Method(Parameters))
@@ -135,7 +135,7 @@ Par exemple, vous pouvez utiliser le code suivant pour définir une propriété 
 
 ### <a name="msbuild-property-functions"></a>Fonctions de propriété MSBuild
 
-Vous pouvez accéder à plusieurs méthodes statiques dans votre build, qui prennent en charge des fonctions liées à l'arithmétique, à la logique au niveau du bit et aux caractères d'échappement. Vous accédez à ces méthodes en utilisant la syntaxe suivante, où *Method* est le nom de la méthode et *Parameters* la liste des paramètres de la méthode.
+Vous pouvez accéder à plusieurs méthodes statiques dans votre build, qui prennent en charge des fonctions liées à l'arithmétique, à la logique au niveau du bit et aux caractères d'échappement. Pour accéder à ces méthodes, utilisez la syntaxe suivante, où \<Method> est le nom de la méthode et \<(Parameters>) la liste des paramètres de la méthode.
 
 ```fundamental
 $([MSBuild]::Method(Parameters))
@@ -144,12 +144,12 @@ $([MSBuild]::Method(Parameters))
 Par exemple, pour ajouter en même temps deux propriétés qui ont des valeurs numériques, utilisez le code suivant.
 
 ```fundamental
-$([MSBuild]::Add($(NumberOne), $(NumberTwo))
+$([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 ```
 
 Voici une liste de fonctions de propriété MSBuild :
 
-|Signature de la fonction|Description|
+|Signature de fonction|Description|
 |------------------------|-----------------|
 |double Add(double a, double b)|Additionne deux doubles.|
 |long Add(long a, long b)|Additionne deux longs.|
@@ -261,7 +261,7 @@ Le syntaxe de cette fonction de propriété est :
 [MSBuild]::GetRegistryValueFromView(string keyName, string valueName, object defaultValue, params object[] views)
 ```
 
-Le système d'exploitation Windows 64 bits gère une clé de Registre HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node qui présente une vue de Registre HKEY_LOCAL_MACHINE\SOFTWARE pour les applications 32 bits.
+Le système d’exploitation Windows 64 bits gère une clé de Registre **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node** qui présente une vue de Registre **HKEY_LOCAL_MACHINE\SOFTWARE** pour les applications 32 bits.
 
 Par défaut, une application 32 bits s'exécutant sur WOW64 accède à la vue de Registre 32 bits et une application 64 bits accède à la vue de Registre 64 bits.
 
@@ -279,7 +279,7 @@ Voici un exemple.
 $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))
 ```
 
-extrait les données de SLRuntimeInstallPath de la clé ReferenceAssemblies, en recherchant d'abord dans la vue de Registre 64 bits puis dans la vue de Registre 32 bits.
+Il extrait les données de **SLRuntimeInstallPath** de la clé **ReferenceAssemblies**, en recherchant d’abord dans la vue de Registre 64 bits, puis dans la vue de Registre 32 bits.
 
 ## <a name="msbuild-makerelative"></a>Fonction MSBuild MakeRelative
 
@@ -341,4 +341,5 @@ Output:
 ## <a name="see-also"></a>Voir aussi
 
 [Propriétés MSBuild](../msbuild/msbuild-properties.md)
+
 [Vue d’ensemble de MSBuild](../msbuild/msbuild.md)

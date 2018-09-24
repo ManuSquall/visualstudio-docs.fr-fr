@@ -1,5 +1,5 @@
 ---
-title: Objet de VSCodeWindowManager | Documents Microsoft
+title: Objet VSCodeWindowManager | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,21 +16,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc4f01240f5f969b91bb3f4cfe46f74a9abb643e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7617062caf233f0711ce2b97d6816af25023ad83
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137600"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586737"
 ---
-# <a name="vscodewindowmanager-object"></a>Objet de VSCodeWindowManager
-Le service de langage implémente le Gestionnaire de fenêtre de code et est chargé de gérer les motifs (par exemple, la barre déroulante). Pour plus d’informations, consultez [personnalisation des fenêtres de Code à l’aide de l’API héritée](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  
+# <a name="vscodewindowmanager-object"></a>Objet VSCodeWindowManager
+Le service de langage implémente le Gestionnaire de fenêtres de code et est chargé de gérer les ornements (par exemple, la barre déroulante). Pour plus d’informations, consultez [personnalisation de Code Windows à l’aide de l’API héritée](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).  
   
- Le tableau suivant montre les interfaces dans le `VSCodeWindowManager` objet.  
+ Le tableau suivant présente les interfaces dans le `VSCodeWindowManager` objet.  
   
 |Interface|Description|  
 |---------------|-----------------|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Ornements (par exemple, les barres de la liste déroulante) permet d’être ajouté ou supprimé à partir d’une fenêtre de code.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Ornements (tels que les barres déroulantes) permet d’être ajoutés ou supprimés à partir d’une fenêtre de code.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Personnalisation des fenêtres de Code à l’aide de l’API héritée](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)
+ [Personnalisation des fenêtres de code à l’aide de l’API héritée](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)

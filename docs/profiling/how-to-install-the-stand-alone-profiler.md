@@ -13,13 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21a285c95e3649cc7aaa53995070091f0abea509
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3898f61987f1767dba57a63bfb3b5b753e8d37aa
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815611"
 ---
-# <a name="how-to-install-the-stand-alone-profiler"></a>Comment : installer le profileur autonome
+# <a name="how-to-install-the-stand-alone-profiler"></a>Guide pratique pour installer le profileur autonome
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fournit un profileur autonome basé sur la ligne de commande qui peut être exécuté sans installer l’IDE [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Cette situation se produit quand un environnement de développement n’est pas ou ne peut pas être installé sur un ordinateur. Par exemple, vous ne devez pas installer un environnement de développement sur un serveur web de production.  
   
 > [!NOTE]
@@ -27,12 +28,12 @@ ms.lasthandoff: 04/19/2018
   
 ### <a name="to-install-the-stand-alone-profiler"></a>Pour installer le profileur autonome  
   
-1.  Recherchez le programme d’installation du profileur autonome (vs_profiler.exe) sur le support d’installation de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dans le répertoire qui inclut le chemin \Standalone Profiler et exécutez-le.  
+1.  Recherchez le programme d’installation du profileur autonome (*vs_profiler.exe*) sur le support d’installation de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dans le répertoire qui inclut le chemin *\Standalone Profiler* et exécutez-le.  
   
-2.  Ajoutez les chemins pour vsintr.exe et msdis150.dll au chemin du système.  
+2.  Ajoutez les chemins pour *vsintr.exe* et *msdis150.dll* au chemin du système.  
   
     > [!NOTE]
-    >  Dans l’installation par défaut de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vsinstr.exe et msdis150.dll se trouvent dans \Program Files\Visual Studio 10\Team Tools\Performance Tools.  
+    >  Dans l’installation par défaut de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], *vsinstr.exe* et *msdis150.dll* se trouvent dans *\Program Files\Visual Studio 10\Team Tools\Performance Tools*.  
   
 3.  À l’invite de commandes, entrez **VSInstr**.  
   
@@ -51,7 +52,7 @@ ms.lasthandoff: 04/19/2018
 6.  Utilisez l’outil [VSPerfReport](../profiling/vsperfreport.md) pour sérialiser vos symboles dans le fichier de profilage de données (.vsp). Utilisez les commutateurs **VSPerfReport /summary:all /packsymbols**. Si aucun symbole n’est inséré dans votre fichier de données, vérifiez que la variable d’environnement _NT_SYMBOL_PATH est définie.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Profilage à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md)   
+ [Profiler à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [Procédure pas à pas : profilage de la ligne de commande à l’aide de l’échantillonnage](../profiling/walkthrough-command-line-profiling-using-sampling.md)   
  [Procédure pas à pas : profilage de la ligne de commande à l’aide de l’instrumentation](../profiling/walkthrough-command-line-profiling-using-instrumentation.md)   
  [Guide pratique pour référencer les informations de symboles Windows](../profiling/how-to-reference-windows-symbol-information.md)   

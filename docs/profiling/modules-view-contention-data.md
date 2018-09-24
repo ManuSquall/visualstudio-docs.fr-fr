@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 619e2a38c794a6823f7efcfb5606bd9fbe9f461c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6f9ad65a81820e37c01d55a0ddba441dd30977b4
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256056"
 ---
-# <a name="modules-view---contention-data"></a>Vue Modules - Données de conflit
+# <a name="modules-view---contention-data"></a>Modules, vue - données de conflit
 La vue Modules des données de conflit affiche les données de concurrence regroupées selon les modules qui ont été échantillonnés dans les données de profilage. Chaque module est la racine d’une arborescence hiérarchique. Les fonctions du module dans lequel les événements de concurrence se sont produits sont répertoriés sous le nœud du module.  
   
  Si la fonction exécutait son propre code quand un événement de conflit s’est produit (autrement dit, si elle était en haut de la pile des appels), les lignes sources et les adresses des instructions qui s’exécutaient sont répertoriées sous le nœud de la fonction. Comme les données sont collectées pour une ligne source ou un pointeur d’instruction quand la ligne ou l’instruction est en cours d’exécution, les valeurs inclusives et exclusives sont toujours les mêmes pour les données de ligne et les données d’instruction.  
@@ -44,9 +45,9 @@ La vue Modules des données de conflit affiche les données de concurrence regro
 |**Fichier source**|Fichier source contenant la définition pour cette fonction.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour personnaliser les colonnes de la vue Rapport](../profiling/how-to-customize-report-view-columns.md)   
+ [Guide pratique pour personnaliser les colonnes de la vue de rapport](../profiling/how-to-customize-report-view-columns.md)   
  [Vue Modules - Données d’instrumentation](../profiling/modules-view.md)   
- [Modules, vue - Instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
- [Vue Modules - Échantillonnage](../profiling/modules-view-dotnet-memory-sampling-data.md)   
+ [Modules, vue - instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
+ [Modules, vue - échantillonnage](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [Vue Modules - Données d’instrumentation](../profiling/modules-view-instrumentation-data.md)   
  [Vue Modules - Données d’échantillonnage](../profiling/modules-view-sampling-data.md)

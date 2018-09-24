@@ -9,12 +9,12 @@ description: Découvrez l’avantage Visual Studio App Center inclus dans les ab
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c30bf7ab44728d8a10eaa2f420caddcde154f9d3
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 266ce307b8ee06eed427385d67c48d4258ae2a1c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282536"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283169"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center dans les abonnements Visual Studio
 
@@ -29,16 +29,16 @@ La mise en route de Visual Studio App Center est simple.
 1.  Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Recherchez la vignette Visual Studio App Center, puis cliquez sur **Commencer**.
-
-    ![Vignette VS App Center](_img/vs-app-center/vs-app-center-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Vignette de VS App Center](_img/vs-app-center/vs-app-center-tile.png)
 
 3. Créez ensuite un compte.  Vous pouvez utiliser des comptes Microsoft, Google, GitHub ou Facebook existants pour vous connecter, ou créer un compte en fournissant votre nom d’utilisateur, votre adresse e-mail et votre mot de passe.  Cliquez sur **Créer un compte** pour continuer.
-
-    ![Création d’un compte VS App Center](_img/vs-app-center/vs-app-center-create-account.png)
+    > [!div class="mx-imgBorder"]
+    > ![VS App Center, Créer un compte](_img/vs-app-center/vs-app-center-create-account.png)
 
 4. C’est aussi simple que cela.  Cliquez simplement sur **Ajouter une nouvelle organisation** ou sur **Ajouter une nouvelle application** pour commencer.
-
-    ![Portail VS App Center](_img/vs-app-center/vs-app-center-portal.png)
+    > [!div class="mx-imgBorder"]
+    > ![Portail de VS App Center](_img/vs-app-center/vs-app-center-portal.png)
 
 ## <a name="eligibility"></a>Éligibilité
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
@@ -69,4 +69,4 @@ Vous devriez à présent être en mesure d’accéder au portail App Center et d
     - Pour obtenir des conseils et des réponses de l’équipe d’App Center, accédez au centre d’aide [App Center Help Center](https://intercom.help/appcenter/).
     - Consultez la [documentation complète sur App Center](/appcenter/).
 -  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  Vous avez des questions concernant l’IDE Visual Studio, Visual Studio Team Services ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
+-  Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).

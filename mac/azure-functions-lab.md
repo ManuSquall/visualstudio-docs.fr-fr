@@ -1,18 +1,18 @@
 ---
 title: 'Tutoriel : Azure Functions'
 description: Utilisation de fonctions Azure dans Visual Studio pour Mac.
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 80c04182733204a18ee669d3851deab867cc56cd
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 446ec0dbc13e3f1d0907933388830c6f7d02f091
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "33877330"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224442"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutoriel : Bien démarrer avec Azure Functions
 
@@ -46,8 +46,10 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 
 1. Développez les nœuds dans le **Panneau Solutions**. Le modèle de projet par défaut inclut des références NuGet à une variété de packages AzureWebJobs, ainsi qu’au package Newtonsoft.Json. 
 
-     Il comprend également trois fichiers : - **host.json** pour décrire les options de configuration globales pour l’hôte. - **local.settings.json** pour configurer les paramètres de service. 
-        - Le modèle de projet crée également un HttpTrigger par défaut. Pour les besoins de cet atelier, supprimez le fichier **HttpTrigger.cs** du projet.
+     Il y a également trois fichiers :  
+        - **host.json** pour décrire les options de configuration globale de l’hôte  
+        - **local.settings.json** pour configurer les paramètres de service.  
+        - Le modèle de projet crée également un HttpTrigger par défaut. Pour les besoins de cet atelier, supprimez le fichier **HttpTrigger.cs** du projet.  
 
     Ouvrez **local.settings.json**. Il contient par défaut deux paramètres de chaîne de connexion vides.
 

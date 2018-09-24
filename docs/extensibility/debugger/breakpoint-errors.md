@@ -1,5 +1,5 @@
 ---
-title: Erreurs de point d’arrêt | Documents Microsoft
+title: Erreurs de point d’arrêt | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,25 +15,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e3c7271cc573388231045143f275d1032bef437
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b08b9bee82a2505411be95ef2e6634e7897c15ec
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099881"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153752"
 ---
 # <a name="breakpoint-errors"></a>Erreurs de point d’arrêt
-La liste suivante décrit le processus lorsqu’un point d’arrêt tente de se lier au code, mais échoue :  
+Ce qui suit décrit le processus lorsqu’un point d’arrêt tente de se lier au code, mais échoue.  
   
-## <a name="troubleshooting-a-breakpoint-error"></a>Résolution d’une erreur de point d’arrêt  
+## <a name="troubleshoot-a-breakpoint-error"></a>Corriger une erreur de point d’arrêt  
   
-1.  Le moteur de débogage (DE) envoie une [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) pour le Gestionnaire de session de débogage (SDM).  
+1.  Le moteur de débogage (dé) envoie une [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) pour le Gestionnaire de session de débogage (SDM).  
   
 2.  Les appels SDM [IDebugBreakpointErrorEvent2::GetErrorBreakpoint](../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md) (IDebugErrorBreakpoint2 ** `ppErrorBP`) pour obtenir le point d’arrêt de l’erreur.  
   
 3.  Les appels SDM [IDebugErrorBreakpoint2::GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md) pour obtenir le point d’arrêt en attente dont provenance le point d’arrêt de l’erreur.  
   
-4.  Les appels SDM [IDebugErrorBreakpoint2::GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) pour obtenir la raison de l’échec du point d’arrêt de l’erreur à lier.  
+4.  Les appels SDM [IDebugErrorBreakpoint2::GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) pour obtenir la raison de l’échec le point d’arrêt de l’erreur à lier.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Événements d’appel du débogueur](../../extensibility/debugger/calling-debugger-events.md)
+ [Appel des événements de débogueur](../../extensibility/debugger/calling-debugger-events.md)

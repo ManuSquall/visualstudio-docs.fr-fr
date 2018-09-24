@@ -1,21 +1,20 @@
 ---
-title: Conseils et astuces sur les performances dans Visual Studio
-ms.date: 08/31/2017
+title: Conseils pour améliorer les performances
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3dcd85ee926e545aa17597f5597fac985645dd
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 5215770d362e2f1ebd21f9131b82073376c28bf6
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37433533"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626616"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Conseils et astuces sur les performances dans Visual Studio
 
@@ -40,7 +39,13 @@ Visual Studio affiche un avertissement dans une barre jaune quand la restauratio
 
 1. Dans la page **Projets et solutions** > **Général**, désactivez l’option **Rouvrir les documents au chargement de la solution**.
 
-Si vous désactivez la restauration automatique de fichiers, un moyen rapide de naviguer jusqu’aux fichiers que vous souhaitez ouvrir est d’utiliser l’option [Atteindre](../ide/go-to.md). Sélectionnez **Edition** > **Atteindre** > **Atteindre tout**, ou appuyez sur **Ctrl**+**T**.
+Si vous désactivez la restauration automatique de fichiers, vous pouvez accéder rapidement aux fichiers à ouvrir, à l’aide de l’une des commandes [Atteindre](../ide/go-to.md) :
+
+- Pour la fonctionnalité **Atteindre** générale, sélectionnez **Edition** > **Atteindre** > **Atteindre tout**, ou appuyez sur **Ctrl**+**T**.
+
+- Dans Visual Studio 2017 version 15.8 et les versions ultérieures, vous pouvez accéder à l’emplacement de la dernière modification d’une solution via **Edition** > **Atteindre** > **Accéder à l’emplacement de la dernière modification**, ou en appuyant sur **Ctrl**+**Maj**+**Ret. arr**.
+
+- Dans Visual Studio 2017 version 15.8 et les versions ultérieures, utilisez **Aller au fichier récent** pour afficher la liste des derniers fichiers ouverts dans une solution. Sélectionnez **Edition** > **Atteindre** > **Aller au fichier récent**, ou appuyez sur **Ctrl**+**1**, **Ctrl**+**R**.
 
 ## <a name="configure-debugging-options"></a>Configurer les options de débogage
 

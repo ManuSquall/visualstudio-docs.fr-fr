@@ -1,5 +1,5 @@
 ---
-title: 'Comment : lire et écrire les propriétés de document | Documents Microsoft'
+title: 'Comment : lire et écrire aux propriétés de document'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,20 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0f420968461b8f4d11416abe85521ed002cf11ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 14cecb63e7f96e58b17672bbb5cb67a345b9ece8
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35673612"
 ---
-# <a name="how-to-read-from-and-write-to-document-properties"></a>Comment : lire des propriétés de document et en écrire
+# <a name="how-to-read-from-and-write-to-document-properties"></a>Comment : lire et écrire aux propriétés de document
   Vous pouvez stocker des propriétés de document avec un document. Les applications Office fournissent plusieurs propriétés intégrées, telles que l'auteur, le titre et l'objet. Cette rubrique indique comment définir des propriétés de document dans Microsoft Office Excel et Microsoft Office Word.  
   
- ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vidéo") pour une démonstration vidéo connexe, consultez [comment faire pour accéder et manipuler des propriétés de Document personnalisées dans Microsoft Word ?](http://go.microsoft.com/fwlink/?LinkId=136772).  
+ ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [comment accéder et manipuler les propriétés de document personnalisées dans Microsoft Word ?](http://go.microsoft.com/fwlink/?LinkId=136772).  
   
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]  
   
-## <a name="setting-document-properties-in-excel"></a>Définition des propriétés de document dans Excel  
+## <a name="set-document-properties-in-excel"></a>Définir les propriétés de document dans Excel  
  Pour travailler avec des propriétés intégrées dans Excel, utilisez les propriétés suivantes :  
   
 -   Dans un projet au niveau du document, utilisez la propriété <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> de la classe `ThisWorkbook` .  
@@ -42,7 +43,7 @@ ms.lasthandoff: 04/16/2018
   
  L'exemple de code suivant indique comment modifier la propriété intégrée **Revision Number** dans un projet au niveau du document.  
   
-#### <a name="to-change-the-revision-number-property-in-excel"></a>Pour modifier la propriété Revision Number dans Excel  
+### <a name="to-change-the-revision-number-property-in-excel"></a>Pour modifier la propriété Revision Number dans Excel  
   
 1.  Assignez les propriétés de document intégrées à une variable.  
   
@@ -54,8 +55,8 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreProgramming#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#8)]
      [!code-csharp[Trin_VstcoreProgramming#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#8)]  
   
-## <a name="setting-document-properties-in-word"></a>Définition des propriétés de document dans Word  
- Pour travailler avec des propriétés intégrées dans Word, utilisez les propriétés suivantes :  
+## <a name="set-document-properties-in-word"></a>Définir les propriétés de document dans Word  
+ Pour travailler avec des propriétés intégrées dans Word, utilisez les propriétés suivantes :  
   
 -   Dans un projet au niveau du document, utilisez la propriété <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> de la classe `ThisDocument` .  
   
@@ -65,7 +66,7 @@ ms.lasthandoff: 04/16/2018
   
  L'exemple de code suivant indique comment modifier la propriété intégrée **Subject** dans un projet au niveau du document.  
   
-#### <a name="to-change-the-subject-property"></a>Pour modifier la propriété Subject  
+### <a name="to-change-the-subject-property"></a>Pour modifier la propriété Subject  
   
 1.  Assignez les propriétés de document intégrées à une variable.  
   
@@ -83,8 +84,8 @@ ms.lasthandoff: 04/16/2018
  Bien que vous utilisiez Word et Excel ainsi que leurs objets, Microsoft Office fournit la liste des propriétés de document intégrées disponibles. Toute tentative d'accès à une propriété non définie lève une exception.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
- [Programmation des personnalisations au niveau du Document](../vsto/programming-document-level-customizations.md)   
- [Guide pratique pour créer et modifier des propriétés de document personnalisées](../vsto/how-to-create-and-modify-custom-document-properties.md)  
+ [Programmer des Compléments VSTO](../vsto/programming-vsto-add-ins.md)   
+ [Programmer des personnalisations au niveau du document](../vsto/programming-document-level-customizations.md)   
+ [Comment : créer et modifier les propriétés de document personnalisées](../vsto/how-to-create-and-modify-custom-document-properties.md)  
   
   

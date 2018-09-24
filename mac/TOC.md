@@ -21,6 +21,7 @@
 ## [Gestion des références dans un projet](managing-references-in-a-project.md)
 ### [Procédure pas à pas : inclusion d’un package NuGet dans votre projet](nuget-walkthrough.md)
 ## [Gestion des ressources d’application](managing-app-resources.md)
+## [Guide pratique pour ouvrir plusieurs solutions ou instances](open-multiple-solutions.md)
 
 # [Éditeur de code source](source-editor.md)
 ## [Refactorisation](refactoring.md)
@@ -61,6 +62,8 @@
 ## [Développement de jeux Unity](unity-tools.md)
 ### [Installation](setup-vsmac-tools-unity.md)
 ### [Utilisation des outils Unity](using-vsmac-tools-unity.md)
+### [Utilisation de .NET 4.x dans Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
+### [Journal des modifications](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
 
 # [Accessibilité](accessibility.md)
 

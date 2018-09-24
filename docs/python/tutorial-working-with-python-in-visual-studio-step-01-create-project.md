@@ -1,7 +1,7 @@
 ---
 title: 'Utilisation du didacticiel Python - Étape 1 : Création d’un projet'
 description: Vue d’ensemble et étape 1 d’une procédure pas à pas portant sur les fonctionnalités de Python dans Visual Studio qui présente les conditions préalables et explique comment créer un projet Python.
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,26 +11,26 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4c7c4f0174b81c8f527c02da951c7e58de8752ec
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 9bf904b85b2fc0f4836e60e3a75df7ba528a2a7c
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031707"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639430"
 ---
-# <a name="working-with-python-in-visual-studio"></a>Utilisation de Python dans Visual Studio
+# <a name="tutorial-work-with-python-in-visual-studio"></a>Tutoriel : Utiliser Python dans Visual Studio
 
 Python est un langage de programmation très apprécié, car il est fiable, souple, simple d’emploi et utilisable sur tous les systèmes d’exploitation. Il est soutenu à la fois par une solide communauté de développeurs et par de nombreuses bibliothèques gratuites. Le langage prend en charge toutes les méthodes de développement, notamment les applications Web, les services web, les applications pour poste de travail, les scripts et le calcul scientifique, et il est utilisé par une multitude d’universités, de scientifiques et de développeurs, aussi bien occasionnels que professionnels.
 
 Visual Studio fournit une prise en charge du langage de premier ordre pour Python. Ce didacticiel vous guide tout au long des étapes suivantes :
 
 - [Étape 0 : Installation](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
-- [Étape 1 : Création d’un projet Python (cet article)](#step-1-create-a-new-python-project)
-- [Étape 2 : Écriture et exécution du code pour voir à l’œuvre Visual Studio IntelliSense](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
-- [Étape 3 : Créer davantage de code dans la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
+- [Étape 1 : Créer un projet Python (cet article)](#step-1-create-a-new-python-project)
+- [Étape 2 : Écrire et exécuter du code pour voir à l’œuvre Visual Studio IntelliSense](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
+- [Étape 3 : Créer davantage de code dans la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 - [Étape 4 : Exécuter le programme terminé dans le débogueur Visual Studio](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
-- [Étape 5 : Installation de packages et gestion des environnements Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
-- [Étape 6 : Utilisation de Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
+- [Étape 5 : Installer des packages et gérer des environnements Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
+- [Étape 6 : Utiliser Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
 [!INCLUDE[tutorial-prereqs](includes/tutorial-prereqs.md)]
 
@@ -40,9 +40,9 @@ Un *projet* représente la façon dont Visual Studio gère tous les fichiers qui
 
 Dans ce didacticiel, vous commencez avec un projet simple contenant un seul fichier de code vide.
 
-1. Dans Visual Studio, sélectionnez **Fichier > Nouveau > Projet** (Ctrl+Maj+N) pour afficher la boîte de dialogue **Nouveau projet**. Ici, vous parcourez les modèles pour différents langages, puis vous en sélectionnez un pour votre projet et vous spécifiez l’emplacement où Visual Studio place les fichiers.
+1. Dans Visual Studio, sélectionnez **Fichier** > **Nouveau** > **Projet** (**Ctrl**+**Maj**+**N**), pour afficher la boîte de dialogue **Nouveau projet**. Ici, vous parcourez les modèles pour différents langages, puis vous en sélectionnez un pour votre projet et vous spécifiez l’emplacement où Visual Studio place les fichiers.
 
-1. Pour voir les modèles Python, sélectionnez **Installés > Python** à gauche, ou effectuez une recherche sur « Python ». L’utilisation de la recherche est un bon moyen de trouver un modèle quand vous ne vous souvenez pas de son emplacement dans l’arborescence des langages.
+1. Pour voir les modèles Python, sélectionnez **Installés** > **Python** sur la gauche, ou recherchez « Python ». L’utilisation de la recherche est un bon moyen de trouver un modèle quand vous ne vous souvenez pas de son emplacement dans l’arborescence des langages.
 
     ![Boîte de dialogue Nouveau projet avec les projets Python](media/vs-getting-started-python-01-new-project.png)
 
@@ -50,30 +50,30 @@ Dans ce didacticiel, vous commencez avec un projet simple contenant un seul fich
 
 1. Sélectionnez le modèle **Application Python**, spécifiez un nom pour le projet, puis sélectionnez **OK**.
 
-1. Après quelques instants, Visual Studio affiche la structure du projet dans la fenêtre **Explorateur de solutions** (1). Le fichier de code par défaut est ouvert dans l’éditeur (2). La fenêtre Propriétés (3) apparaît également et affiche des informations supplémentaires sur les éléments sélectionnés dans l’Explorateur de solutions, notamment son emplacement exact sur le disque.
+1. Après quelques instants, Visual Studio affiche la structure du projet dans la fenêtre **Explorateur de solutions** (1). Le fichier de code par défaut est ouvert dans l’éditeur (2). La fenêtre **Propriétés** (3) apparaît également et affiche des informations supplémentaires sur les éléments sélectionnés dans l’**Explorateur de solutions**, notamment son emplacement exact sur le disque.
 
     ![Explorateur de solutions avec un projet Python](media/vs-getting-started-python-02-windows.png)
 
-1. Prenez quelques moments pour vous familiariser avec l’Explorateur de solutions, qui est l’endroit où vous parcourez les fichiers et les dossiers de votre projet.
+1. Prenez quelques instants pour vous familiariser avec l’**Explorateur de solutions**, car il vous permet de parcourir les fichiers et dossiers du projet.
 
     ![L’Explorateur de solutions développé pour montrer différentes fonctionnalités](media/vs-getting-started-python-03-solution-explorer.png)
 
-    (1) Votre projet mis en gras, avec le nom que vous avez donné dans la boîte de dialogue Nouveau projet. Sur le disque, ce projet est représenté par un fichier `.pyproj` dans le dossier de votre projet.
+    (1) Votre projet est mis en gras, avec le nom que vous lui avez donné dans la boîte de dialogue **Nouveau projet**. Sur le disque, ce projet est représenté par un fichier *.pyproj* au sein du dossier de projet.
 
-    (2) Au niveau le plus élevé, vous voyez une *solution*, qui a par défaut le même nom que votre projet. Une solution, représentée par un fichier `.sln` sur le disque, est un conteneur pour un ou plusieurs projets connexes. Par exemple, si vous écrivez une extension C++ pour votre application Python, ce projet C++ peut se trouver dans la même solution. La solution peut également contenir un projet pour un service web, ainsi que des projets pour les programmes de test dédiés. 
+    (2) Au niveau le plus élevé, vous voyez une *solution*, qui a par défaut le même nom que votre projet. Une solution, représentée par un fichier *.sln* sur le disque, est un conteneur pour un ou plusieurs projets connexes. Par exemple, si vous écrivez une extension C++ pour votre application Python, ce projet C++ peut se trouver dans la même solution. La solution peut également contenir un projet pour un service web, ainsi que des projets pour les programmes de test dédiés. 
 
-    (3) Dans votre projet, vous voyez les fichiers sources : dans le cas présent, il n’y a qu’un seul fichier `.py`. La sélection d’un fichier fait apparaître ses propriétés dans la fenêtre Propriétés. Le fait de double-cliquer sur un fichier l’ouvre d’une façon appropriée pour ce fichier.
+    (3) Dans le projet, vous voyez les fichiers sources. Dans le cas présent, il s’agit d’un unique fichier *.py*. La sélection d’un fichier fait apparaître ses propriétés dans la fenêtre **Propriétés**. Le fait de double-cliquer sur un fichier l’ouvre d’une façon appropriée pour ce fichier.
 
     (4) Le nœud **Environnements Python** figure également sous le projet. Une fois qu’il est développé, vous voyez les interpréteurs Python disponibles. Développez un nœud d’interpréteur pour voir les bibliothèques qui sont installées dans cet environnement (5).
 
-    Cliquez avec le bouton droit sur n’importe quel nœud ou élément dans l’Explorateur de solutions pour accéder à un menu des commandes applicables. Par exemple, la commande **Renommer** vous permet de changer le nom d’un nœud ou d’un élément, y compris le projet et la solution.
+    Cliquez avec le bouton droit sur un nœud ou élément dans l’**Explorateur de solutions** pour accéder à un menu de commandes applicables. Par exemple, la commande **Renommer** vous permet de changer le nom d’un nœud ou d’un élément, y compris le projet et la solution.
 
 ## <a name="next-step"></a>Étape suivante
 
 > [!div class="nextstepaction"]
-> [Écriture et exécution de code](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
+> [Écrire et exécuter du code](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
 
-## <a name="going-deeper"></a>Pour aller plus loin
+## <a name="go-deeper"></a>Approfondir la question
 
 - [Projets Python dans Visual Studio](managing-python-projects-in-visual-studio.md).
 - [En savoir plus sur le langage Python sur python.org](https://www.python.org)

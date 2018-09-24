@@ -12,20 +12,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39bc1acd059c9a915f330c74140c89d5f4fa40ff
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8cdb171d16b6612562ea21608cdeb622f4ef8bb5
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574638"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179045"
 ---
 # <a name="msbuild-inline-tasks"></a>Tâches inline MSBuild
 Les tâches MSBuild sont généralement créées en compilant une classe qui implémente l’interface <xref:Microsoft.Build.Framework.ITask>. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).  
   
  À compter du .NET Framework version 4, vous pouvez créer des tâches inline dans le fichier projet. Vous n’êtes pas obligé de créer un assembly distinct pour héberger la tâche. Cela facilite le suivi du code source et le déploiement de la tâche. Le code source est intégré au script.  
   
+
+ Dans MSBuild 15.8, [RoslynCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md) a été ajouté et permet de créer des tâches inline multiplateformes .NET Standard.  Si vous avez besoin d’utiliser des tâches inline sur .NET Core, vous devez recourir à RoslynCodeTaskFactory.
 ## <a name="the-structure-of-an-inline-task"></a>Structure d’une tâche inline  
- Une tâche inline est contenue dans un élément [UsingTask](../msbuild/usingtask-element-msbuild.md). La tâche inline et l’élément `UsingTask` qui la contient sont généralement inclus dans un fichier .targets et importés dans d’autres fichiers projet selon les besoins. Voici une tâche inline de base. Notez qu’elle n’a aucun effet.  
+ Une tâche inline est contenue dans un élément [UsingTask](../msbuild/usingtask-element-msbuild.md). La tâche inline et l’élément `UsingTask` qui la contient sont généralement inclus dans un fichier *.targets* et importés dans d’autres fichiers projet selon les besoins. Voici une tâche inline de base. Notez qu’elle n’a aucun effet.  
   
 ```xml  
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -52,23 +54,23 @@ Les tâches MSBuild sont généralement créées en compilant une classe qui imp
 -   L’attribut `TaskFactory` nomme la classe qui implémente la fabrique de tâches inline.  
   
 -   L’attribut `AssemblyFile` indique l’emplacement de la fabrique de tâches inline. Vous pouvez également utiliser l’attribut `AssemblyName` pour spécifier le nom qualifié complet de la classe de fabrique de tâches inline, qui se trouve généralement dans le global assembly cache (GAC).  
+
+Les éléments restants de la tâche `DoNothing` sont vides et fournis pour illustrer l’ordre et la structure d’une tâche inline. Un exemple plus pertinent est présenté plus loin dans cette rubrique.  
   
- Les éléments restants de la tâche `DoNothing` sont vides et fournis pour illustrer l’ordre et la structure d’une tâche inline. Un exemple plus pertinent est présenté plus loin dans cette rubrique.  
-  
--   L’élément `ParameterGroup` est facultatif. Quand il est spécifié, il déclare les paramètres de la tâche. Pour plus d’informations sur les paramètres d’entrée et de sortie, consultez « Paramètres d’entrée et de sortie » plus loin dans cette rubrique.  
+-   L’élément `ParameterGroup` est facultatif. Quand il est spécifié, il déclare les paramètres de la tâche. Pour plus d’informations sur les paramètres d’entrée et de sortie, consultez [Paramètres d’entrée et de sortie](#input-and-output-parameters) plus loin dans cette rubrique.  
   
 -   L’élément `Task` décrit et contient le code source de la tâche.  
   
 -   L’élément `Reference` spécifie des références aux assemblys .NET que vous utilisez dans votre code. Cela équivaut à ajouter une référence à un projet dans Visual Studio. L’attribut `Include` spécifie le chemin de l’assembly référencé.  
   
 -   L’élément `Using` répertorie les espaces de noms auxquels vous souhaitez accéder. Cela ressemble à l’instruction `Using` en Visual C#. L’attribut `Namespace` spécifie l’espace de noms à inclure.  
-  
- Les éléments `Reference` et `Using` sont indépendants du langage. Les tâches inline peuvent être écrites dans n’importe quel langage .NET CodeDom pris en charge, par exemple Visual Basic ou Visual C#.  
+
+Les éléments `Reference` et `Using` sont indépendants du langage. Les tâches inline peuvent être écrites dans n’importe quel langage .NET CodeDom pris en charge, par exemple Visual Basic ou Visual C#.  
   
 > [!NOTE]
 >  Les éléments contenus dans l’élément `Task` sont propres à la fabrique de tâches, dans le cas présent la fabrique de tâches de code.  
   
-### <a name="code-element"></a>Élément Code  
+### <a name="code-element"></a>Élément de code  
  Le dernier élément enfant de l’élément `Task` est l’élément `Code`. L’élément `Code` contient ou identifie le code à compiler dans une tâche. Ce que vous placez dans l’élément `Code` dépend de la façon dont vous souhaitez écrire la tâche.  
   
  L’attribut `Language` spécifie le langage dans lequel votre code est écrit. Les valeurs acceptables sont `cs` pour C# et `vb` pour Visual Basic.  
@@ -80,15 +82,15 @@ Les tâches MSBuild sont généralement créées en compilant une classe qui imp
 -   Si la valeur de `Type` est `Method`, le code définit une substitution de la méthode `Execute` de l’interface <xref:Microsoft.Build.Framework.ITask>.  
   
 -   Si la valeur de `Type` est `Fragment`, le code définit le contenu de la méthode `Execute`, mais pas la signature ou l’instruction `return`.  
+
+Le code proprement dit apparaît généralement entre un marqueur `<![CDATA[` et un marqueur `]]>`. Comme le code se trouve dans une section CDATA, vous n’avez pas à vous soucier de l’échappement des caractères réservés, tels que « \< » ou « > ».  
   
- Le code proprement dit apparaît généralement entre un marqueur `<![CDATA[` et un marqueur `]]>`. Comme le code se trouve dans une section CDATA, vous n’avez pas à vous soucier de l’échappement des caractères réservés, tels que « \< » ou « > ».  
-  
- Vous pouvez également utiliser l’attribut `Source` de l’élément `Code` pour spécifier l’emplacement d’un fichier qui contient le code de votre tâche. Le code dans le fichier source doit être du type spécifié par l’attribut `Type`. Si l’attribut `Source` est présent, la valeur par défaut de `Type` est `Class`. Si `Source` est absent, la valeur par défaut est `Fragment`.  
+Vous pouvez également utiliser l’attribut `Source` de l’élément `Code` pour spécifier l’emplacement d’un fichier qui contient le code de votre tâche. Le code dans le fichier source doit être du type spécifié par l’attribut `Type`. Si l’attribut `Source` est présent, la valeur par défaut de `Type` est `Class`. Si `Source` est absent, la valeur par défaut est `Fragment`.  
   
 > [!NOTE]
 >  Quand vous définissez la classe de la tâche dans le fichier source, le nom de classe doit correspondre à l’attribut `TaskName` de l’élément [UsingTask](../msbuild/usingtask-element-msbuild.md) correspondant.  
   
-## <a name="hello-world"></a>Hello World  
+## <a name="helloworld"></a>HelloWorld  
  Voici une tâche inline plus robuste. La tâche HelloWorld affiche « Hello, world! » sur l’appareil de journalisation des erreurs par défaut, qui est généralement la console système ou la fenêtre **Sortie** de Visual Studio. L’élément `Reference` dans l’exemple est fourni uniquement à titre d’illustration.  
   
 ```xml  
@@ -114,7 +116,7 @@ Log.LogError("Hello, world!");
 </Project>  
 ```  
   
- Vous pouvez enregistrer la tâche HelloWorld dans un fichier nommé HelloWorld.targets, puis l’appeler à partir d’un projet en procédant comme suit.  
+ Vous pouvez enregistrer la tâche HelloWorld dans un fichier nommé *HelloWorld.targets*, puis l’appeler à partir d’un projet en procédant comme suit.  
   
 ```xml  
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -142,7 +144,7 @@ Log.LogError("Hello, world!");
   
 -   `Output` est un attribut facultatif qui est `false` par défaut. Si cet attribut est `true`, vous devez affecter une valeur au paramètre avant le retour de la méthode Execute.  
   
- Par exemple :  
+Par exemple :  
   
 ```xml  
 <ParameterGroup>  
@@ -152,15 +154,15 @@ Log.LogError("Hello, world!");
 </ParameterGroup>  
 ```  
   
- définit ces trois paramètres :  
+définit ces trois paramètres :  
   
 -   `Expression` est un paramètre d’entrée obligatoire de type System.String.  
   
 -   `Files` est un paramètre d’entrée de liste d’éléments obligatoire.  
   
 -   `Tally` est un paramètre de sortie de type System.Int32.  
-  
- Si l’élément `Code` a un attribut `Type` égal à `Fragment` ou `Method`, des propriétés sont créées automatiquement pour chaque paramètre. Dans le cas contraire, les propriétés doivent être déclarées explicitement dans le code source de la tâche, et elles doivent correspondre exactement à leurs définitions de paramètres.  
+
+Si l’élément `Code` a un attribut `Type` égal à `Fragment` ou `Method`, des propriétés sont créées automatiquement pour chaque paramètre. Dans le cas contraire, les propriétés doivent être déclarées explicitement dans le code source de la tâche, et elles doivent correspondre exactement à leurs définitions de paramètres.  
   
 ## <a name="example"></a>Exemple  
  La tâche inline suivante remplace chaque occurrence d’un jeton dans le fichier spécifié par la valeur donnée.  
@@ -192,4 +194,4 @@ File.WriteAllText(Path, content);
   
 ## <a name="see-also"></a>Voir aussi  
  [Tâches](../msbuild/msbuild-tasks.md)   
- [Procédure pas à pas : création d’une tâche inline](../msbuild/walkthrough-creating-an-inline-task.md)
+ [Procédure pas à pas : Créer une tâche inline](../msbuild/walkthrough-creating-an-inline-task.md)

@@ -9,22 +9,25 @@ description: Informations destinées aux fournisseurs de solutions cloud concern
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: bdf956b02c4bfc5125b452b6eece0cb39e454bc3
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: a455e645629266be28e50718ae5fffde309b3dd9
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283375"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282285"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Acheter et gérer des abonnements cloud Visual Studio pour vos clients
 
-Les partenaires du programme [Fournisseur de solutions Cloud](https://partner.microsoft.com/en-US/cloud-solution-provider) peuvent acheter des abonnements cloud Visual Studio Enterprise et Visual Studio Professional pour leurs clients.
+Les partenaires du programme [Fournisseur de solutions Cloud](https://partner.microsoft.com/cloud-solution-provider) peuvent acheter des abonnements cloud Visual Studio Enterprise et Visual Studio Professional pour leurs clients.
 
 [Comparer les options d’abonnement cloud](https://visualstudio.microsoft.com/vs/pricing)
 
 ## <a name="prerequisites"></a>Prérequis
+
 Vous devez tout d’abord configurer votre locataire de clients dans l’Espace partenaires et créer un abonnement Azure pour ce locataire.
-[En savoir plus](https://docs.microsoft.com/vsts/billing/csp/set-up-csp-customer)
+
+[En savoir plus](/azure/devops/organizations/billing/csp/set-up-csp-customer)
+
 
 ## <a name="how-to-buy"></a>Comment acheter
 
@@ -79,24 +82,27 @@ Voici comment interpréter les différents éléments de cette feuille de calcul
 
 Nous offrons une remise de 5 % sur la sixième unité que vous achetez (pour un client donné) chaque mois pour chaque abonnement Visual Studio. C’est pourquoi il y a deux lignes pour chaque option d’abonnement. Une ligne affiche une « Valeur minimale » de 0, ce que vous devez interpréter comme prix de base pour les unités de 1 à 5. L’autre ligne affiche une « Valeur minimale » de 5. Il s’agit de la remise de 5 % qui s’applique aux unités 6 et plus.
 
-
 ## <a name="frequently-asked-questions"></a>FAQ
+
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>Q : Comment les frais d’abonnement cloud **mensuels** sont-ils traités ?
+
 R : Lors du premier achat, nous facturons une quantité au prorata pour couvrir les jours restants du mois en cours. Par exemple, si un achat de 10 abonnements cloud mensuels Visual Studio Professional a été effectué le 15 avril, nous facturons cinq unités, car il reste 15 jours sur les 30 du mois d’avril (soit 50 %), et nous facturons donc les unités au prorata de 50 %.
 Le premier mai et chaque mois suivant jusqu’à ce que vous annuliez, les dix unités seront facturées.
 
 Quand vous augmentez la quantité payée ultérieurement, nous calculons également au prorata les unités accrues afin de couvrir les jours restants dans le mois en cours. Ainsi, si vous avez acheté un abonnement cloud Visual Studio Professional mensuel en plus le 10 mai, nous facturerons environ 0,677 unité (21 jours restants sur les 31 jours du mois de mai).
 
 ### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>Q : Comment les frais d’abonnement cloud **annuels** sont-ils traités ?
+
 R : Lors de chaque achat, nous facturons immédiatement la quantité totale achetée. Les frais ne sont pas répartis sur l’année, et il n’existe aucun prorata. Si vous achetez des abonnements cloud annuels à différents moments de l’année, vous devrez renouveler vos abonnements à des dates différentes. Nous ne faisons pas en sorte que tous les abonnements cloud annuels d’un client se terminent en même temps, comme cela est courant avec les achats Contrat de licence en volume Microsoft.
 
-### <a name="q-how-do-cancelations-work"></a>Q : Que se passe-t-il en cas d’annulation ?
+### <a name="q-how-do-cancellations-work"></a>Q : Que se passe-t-il en cas d’annulation ?
+
 R : Quand vous annulez un abonnement cloud Visual Studio, vous annulez le renouvellement automatique. L’abonnement continue jusqu’à sa date de renouvellement normale, puis il arrive simplement à expiration.
 À l’expiration, l’abonné Visual Studio ne peut plus utiliser Visual Studio ni d’autres avantages de l’abonnement.
 
 Avec les abonnements cloud mensuels, les annulations prennent effet le premier jour du mois suivant. Si vous annulez uniquement certains des abonnements cloud mensuels de vos clients, veillez à supprimer les utilisateurs le premier jour du mois suivant pour vous assurer que des abonnements actifs sont toujours affectés aux personnes appropriées.
 
-Pour les abonnements cloud annuels, les annulations prennent effet le premier jour du mois suivant 12 mois à partir de l’achat initial, ou 12 mois à partir de la dernière facturation de renouvellement annuel. Par exemple, si vous avez acheté un abonnement cloud annuel Visual Studio Enterprise le 3 janvier 2018, il reste actif jusqu’au 1er février 2019, date de son renouvellement automatique pour une autre année. Si vous annulez à tout moment entre cette date et le 1er février 2020, l’abonnement expire le 1er février 2020. Aucune remise n’est accordée en cas d’annulation en cours d’année d’abonnement avec les abonnements cloud annuels.
+Pour les abonnements cloud annuels, les annulations prennent effet le premier jour du mois qui suit les 12 mois suivant l’achat initial, ou les 12 mois suivant la dernière facturation de renouvellement annuel. Par exemple, si vous avez acheté un abonnement cloud annuel Visual Studio Enterprise le 3 janvier 2018, il reste actif jusqu’au 1er février 2019, date de son renouvellement automatique pour une autre année. Si vous annulez à tout moment entre cette date et le 1er février 2020, l’abonnement expire le 1er février 2020. Aucune remise n’est accordée en cas d’annulation en cours d’année d’abonnement avec les abonnements cloud annuels.
 
 ### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>Q : Quels sont les types de remise sur la quantité disponibles pour les abonnements Visual Studio ?
 

@@ -17,18 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 753cf038cf6d8129aa9a4691b0f88c046aadf640
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 882b2511c547837466f45578031c86e6b0df9d74
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750907"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234983"
 ---
-# <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analyse des violations de règles de seuil dans les tests de charge dans l'Analyseur de test de charge
+# <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analyse des violations de règles de seuil dans les tests de charge dans l’analyseur de test de charge
 
 Les règles de seuil sont associées à des compteurs de performance spécifiques, et les violations indiquent qu'un compteur de performance a dépassé ou est descendu en dessous d'une valeur définie. Lorsque vous exécutez un test de charge, vous pouvez analyser les violations qui se produisent pour les règles de seuil définies précédemment.
 
-Si des violations se produisent, un lien hypertexte **Violations de seuil** apparaît sur la barre d’état de l’analyseur de test de charge et spécifie le nombre de violations qui se sont produites. Vous cliquez sur le lien hypertexte pour afficher le tableau des violations de seuils. Vous pouvez également consulter les violations de seuil dans la fenêtre **Compteurs** et sur le graphique.
+Si des violations se produisent, un lien hypertexte **Violations de seuil** apparaît sur la barre d’état de **Analyseur de test de charge** et spécifie le nombre de violations qui se sont produites. Vous cliquez sur le lien hypertexte pour afficher le tableau des violations de seuils. Vous pouvez également consulter les violations de seuil dans la fenêtre **Compteurs** et sur le graphique.
 
 ## <a name="view-threshold-violations-in-the-table"></a>Affichage des violations de seuil du tableau
 

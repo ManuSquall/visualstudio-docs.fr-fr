@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec8a5520716f6073d49ab2b5a64becfb760092d2
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: b4fca64abf91105e0363ecd67ea5244c533996f3
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234921"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497173"
 ---
-# <a name="folder-element-visual-studio-project-templates"></a>Folder, élément (modèles de projet Visual Studio)
+# <a name="folder-element-visual-studio-project-templates"></a>Folder, élément (modèles de projet Visual Studio)
 Spécifie un dossier qui sera ajouté au projet.  
   
  \<VSTemplate >  
@@ -47,7 +47,7 @@ Spécifie un dossier qui sera ajouté au projet.
 |Attribut|Description|  
 |---------------|-----------------|  
 |`Name`|Attribut requis.<br /><br /> Le nom du dossier du projet.|  
-|`TargetFolderName`|Attribut facultatif.<br /><br /> Spécifie le nom à attribuer au dossier lorsqu’un projet est créé à partir du modèle. Cet attribut est utile pour l’utilisation de remplacement de paramètres pour créer un nom de dossier ou d’affectation de noms un dossier avec une chaîne internationale qui ne peut pas être utilisée directement dans le fichier .zip.|  
+|`TargetFolderName`|Attribut facultatif.<br /><br /> Spécifie le nom à attribuer au dossier lorsqu’un projet est créé à partir du modèle. Cet attribut est utile pour l’utilisation de remplacement de paramètres pour créer un nom de dossier ou d’affectation de noms un dossier avec une chaîne internationale qui ne peut pas être utilisée directement dans le *.zip* fichier.|  
   
 ### <a name="child-elements"></a>Éléments enfants  
   
@@ -67,7 +67,7 @@ Spécifie un dossier qui sera ajouté au projet.
   
  Vous pouvez utiliser une des méthodes suivantes pour organiser les éléments de projet dans des dossiers dans un modèle :  
   
--   Inclure les dossiers dans le fichier .zip du modèle et ajoutez-les au projet dans le fichier .vstemplate en spécifiant le chemin d’accès au fichier dans le `ProjectItem` éléments, sans aucune `Folder` éléments. Il s’agit de la méthode recommandée. Exemple :  
+-   Inclure les dossiers dans le modèle *.zip* de fichiers et les ajouter au projet dans le *.vstemplate* fichier en spécifiant le chemin d’accès au fichier dans le `ProjectItem` éléments, sans aucune `Folder` éléments. Il s’agit de la méthode recommandée. Exemple :  
   
      `...`  
   
@@ -77,7 +77,7 @@ Spécifie un dossier qui sera ajouté au projet.
   
      `...`  
   
--   Inclure les dossiers dans le fichier .zip du modèle et ajoutez-les au projet dans le fichier .vstemplate avec `Folder` éléments. Exemple :  
+-   Inclure les dossiers dans le modèle *.zip* de fichiers et les ajouter au projet dans le *.vstemplate* de fichiers avec `Folder` éléments. Exemple :  
   
      `...`  
   
@@ -91,7 +91,7 @@ Spécifie un dossier qui sera ajouté au projet.
   
      `...`  
   
--   N’incluez pas de dossiers dans le fichier .zip du modèle, mais ajoutez des dossiers à l’aide de la `TargetFileName` attribut de la `ProjectItem` élément. Exemple :  
+-   N’incluez pas de dossiers dans le modèle *.zip* de fichier, mais ajouter des dossiers à l’aide de la `TargetFileName` attribut de la `ProjectItem` élément. Exemple :  
   
      `...`  
   
@@ -131,6 +131,6 @@ Spécifie un dossier qui sera ajouté au projet.
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Référence de schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
- [Élément ProjectItem (modèles d'élément Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)
+ [ProjectItem, élément (modèles d’élément Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)

@@ -11,14 +11,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd0c2a0d239cca67eda9454f522e5041af29c7fc
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b28afd645351577073eb7525cf4bed321afb09c0
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747878"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008393"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Tutoriel 2 : créer un questionnaire mathématique chronométré
+
 Dans ce didacticiel, vous générez un questionnaire dans lequel la personne interrogée doit résoudre quatre problèmes arithmétiques aléatoires dans un délai imparti. Vous apprenez à :
 
 -   Générer des nombres aléatoires à l'aide de la classe <xref:System.Random>.
@@ -29,16 +30,16 @@ Dans ce didacticiel, vous générez un questionnaire dans lequel la personne int
 
 -   Effectuer des opérations arithmétiques de base dans le code.
 
- Lorsque vous aurez terminé, votre questionnaire ressemblera à celui illustré ci-dessous, avec des valeurs différentes.
+Quand vous avez terminé, votre questionnaire ressemble à l’image suivante, avec des valeurs différentes :
 
- ![Questionnaire mathématique avec quatre problèmes](../ide/media/express_finishedquiz.png) Questionnaire créé dans ce didacticiel
+![Questionnaire mathématique avec quatre problèmes](../ide/media/express_finishedquiz.png)
 
 ## <a name="tutorial-links"></a>Liens de tutoriels
 
- Pour télécharger la version finale du questionnaire, consultez [Exemple complet de questionnaire de mathématiques du tutoriel](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
+Pour télécharger la version finale du questionnaire, consultez [Exemple complet de questionnaire de mathématiques du tutoriel](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 > [!NOTE]
->  Ce didacticiel couvre à la fois Visual C# et Visual Basic : ne tenez compte que des informations spécifiques au langage de programmation que vous utilisez.
+> Ce didacticiel couvre à la fois Visual C# et Visual Basic : ne tenez compte que des informations spécifiques au langage de programmation que vous utilisez.
 
 ## <a name="related-topics"></a>Rubriques connexes
 

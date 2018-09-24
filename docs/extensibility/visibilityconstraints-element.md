@@ -1,5 +1,5 @@
 ---
-title: Élément de VisibilityConstraints | Documents Microsoft
+title: Élément VisibilityConstraints | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,19 +16,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f81ddd40a6de287fb40840c0473e5702d385793d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b851590cb8654a39ef55700bb62e912cbc6624c0
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138309"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586233"
 ---
-# <a name="visibilityconstraints-element"></a>Élément de VisibilityConstraints
+# <a name="visibilityconstraints-element"></a>Élément VisibilityConstraints
 L’élément VisibilityConstraints détermine la visibilité statique de groupes de commandes et des barres d’outils. La visibilité est tout d’abord contrôlée par le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) sans charger le VSPackage.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
 <VisibilityConstraints>  
   <VisibilityConstraint>... </VisibilityConstraint>  
   <VisibilityConstraint>... </VisibilityConstraint>  
@@ -55,11 +55,11 @@ L’élément VisibilityConstraints détermine la visibilité statique de groupe
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent des commandes (par exemple, des éléments de menu, menus, barres d’outils et zones de liste déroulante) par un VSPackage à l’IDE.|  
+|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent les commandes (par exemple, les éléments de menu, menus, barres d’outils et zones de liste déroulante) qu’un VSPackage fournit à l’IDE.|  
   
 ## <a name="example"></a>Exemple  
   
-```  
+```xml  
 <VisibilityConstraints>  
   <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"  
     context="guidNotViewSourceMode"/>  
@@ -67,5 +67,5 @@ L’élément VisibilityConstraints détermine la visibilité statique de groupe
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Élément de VisibilityItem](../extensibility/visibilityitem-element.md)   
- [Fichiers Visual Studio Command Table (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Élément VisibilityItem](../extensibility/visibilityitem-element.md)   
+ [Table de commande Visual Studio (. Fichiers VSCT)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

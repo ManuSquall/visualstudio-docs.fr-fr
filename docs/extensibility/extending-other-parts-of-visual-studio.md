@@ -1,5 +1,5 @@
 ---
-title: Extension d’autres parties de Visual Studio | Documents Microsoft
+title: Extension d’autres parties de Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,31 +13,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86c9da7eac05a489e027de30736e1baf449927d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8cad30462879240fd6691c3a7a5a15ea69856b7d
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133660"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639524"
 ---
-# <a name="extending-other-parts-of-visual-studio"></a>Extension d’autres parties de Visual Studio
-Il existe de nombreux éléments de plus de l’interface d’utilisateur Visual Studio que vous pouvez étendre. Vous pouvez voir ici que quelques-uns.  
+# <a name="extend-other-parts-of-visual-studio"></a>Étendre d’autres parties de Visual Studio
+Il existe de nombreux éléments de plus de l’interface de Visual Studio que vous pouvez étendre. Vous pouvez voir ici quelques-unes.  
   
-## <a name="creating-a-vspackage"></a>Création d’un VSPackage  
- Les blocs de construction d’extensibilité de Visual Studio sont des VSPackages.  Découvrez comment ajouter un VSPackage : [création d’une Extension avec un VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)  
+## <a name="create-a-vspackage"></a>Créer un VSPackage  
+ Les blocs de construction de l’extensibilité de Visual Studio sont des VSPackages.  Découvrez comment ajouter un VSPackage : [créer une extension avec un VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)  
   
-## <a name="extending-the-toolbox"></a>Extension de la boîte à outils  
- Découvrez comment ajouter de nouveaux contrôles et autres éléments à la boîte à outils et comment utiliser les fonctionnalités de la boîte à outils :  
+## <a name="extend-the-toolbox"></a>Étendre la boîte à outils  
+ Découvrez comment ajouter de nouveaux contrôles et autres éléments à la boîte à outils et comment utiliser les fonctionnalités de boîte à outils :  
   
--   [Création d’un contrôle de boîte à outils WPF](../extensibility/creating-a-wpf-toolbox-control.md)  
+-   [Créer un contrôle de boîte à outils WPF](../extensibility/creating-a-wpf-toolbox-control.md)  
   
--   [Création d’un contrôle de boîte à outils Windows Forms](../extensibility/creating-a-windows-forms-toolbox-control.md)  
+-   [Créer un contrôle de boîte à outils Windows Forms](../extensibility/creating-a-windows-forms-toolbox-control.md)  
   
-## <a name="extending-the-status-bar"></a>Extension de la barre d’état  
- Découvrez comment lire et écrire dans la barre d’état et la barre de progression et comment assurer animations et toute autre interface utilisateur : [extension de la barre d’état](../extensibility/extending-the-status-bar.md).  
+## <a name="extend-the-status-bar"></a>Étendre la barre d’état  
+ Découvrez comment lire et écrire dans la barre d’état et la barre de progression et comment fournir des animations et toute autre interface utilisateur : [étendre la barre d’état](../extensibility/extending-the-status-bar.md).  
   
-## <a name="creating-custom-start-pages"></a>Création de Pages de démarrage personnalisée  
- Découvrez comment définir votre propre page de démarrage, de toutes pièces ou à partir d’un exemple de page de démarrage téléchargeable : [création d’une Page de démarrage personnalisée](../extensibility/creating-a-custom-start-page.md).  
+## <a name="create-custom-start-pages"></a>Créer des Pages de démarrage personnalisées  
+ Découvrez comment apporter votre propre page de démarrage, à partir de zéro ou à partir d’un exemple de page de démarrage téléchargeable : [créer une Page de démarrage personnalisée](../extensibility/creating-a-custom-start-page.md).  
   
 ## <a name="write-to-the-activity-log"></a>Écrire dans le journal d’activité  
  Apprenez à écrire dans le journal d’activité : [Comment : utiliser le journal d’activité](../extensibility/how-to-use-the-activity-log.md).

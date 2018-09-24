@@ -43,16 +43,16 @@ f1_keywords:
 - vc.project.AdditionalOptionsPage
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 8a1fd92a41f145e097615bea4434ea80fd592416
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: efceeb201a7f1afcbf7cc2c6d46619301284d823
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31067530"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232115"
 ---
 # <a name="clang-project-properties-android-c"></a>Propriétés du projet Clang (Android C++)
 
-Propriété | Description | Options
+Property | Description | Options
 --- | ---| ---
 Autres répertoires Include | Spécifie un ou plusieurs répertoires à ajouter au chemin include. Si vous ajoutez plusieurs répertoires, séparez-les par des points-virgules. (-I[path]).
 Format des informations de débogage | Indique le type d'informations de débogage générées par le compilateur. | **Aucune** : ne génère aucune information de débogage ; la compilation peut donc être plus rapide.<br>**Informations de débogage complètes (DWARF2)** : générez des informations de débogage DWARF2.<br>**Informations de numéro de ligne** : générez uniquement des informations de numéro de ligne.<br>

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9539fdb1a349fe7fc7331e8d3f352506eac9d00b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d2f6c23ea3ad48c361c12912926e0642f35f853a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081681"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283455"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Ajouter une extension du protocole de serveur de langage
 
@@ -111,26 +111,6 @@ Pour créer une extension de service de langage à l’aide d’un serveur de la
 Créez ensuite un nouveau VSIXProject vide en accédant à **fichier** > **nouveau projet** > **Visual C#**  >   **Extensibilité** > **projet VSIX**:
 
 ![créer le projet vsix](media/lsp-vsix-project.png)
-
-Pour la version préliminaire, prise en charge de Visual Studio pour le partenaire LSP sera sous la forme d’une extension VSIX ([Microsoft.VisualStudio.LanguageServer.Client.Preview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)). Les développeurs d’extensions qui souhaitent créer une extension à l’aide de serveurs de langage LSP doivent prendre une dépendance sur ce VSIX. Par conséquent, les clients qui souhaitent installer une extension de serveur de langage **doit tout d’abord installer la langue serveur protocole Client Preview extension VSIX.**
-
-Pour définir la dépendance VSIX, ouvrez le Concepteur de manifeste VSIX pour votre projet VSIX (en double-cliquant sur le *source.extension.vsixmanifest* fichier dans votre projet) et accédez à **dépendances**:
-
-![Ajouter une référence au client de protocole de serveur de langage](media/lsp-reference-lsp-dependency.png)
-
-Créer une nouvelle dépendance comme suit :
-
-![définir la dépendance de client de protocole de serveur langue](media/lsp-define-lsp-dependency.png)
-
-* **Source**: définis manuellement
-* **Nom**: langage Server protocole Client Preview
-* **Identificateur**: Microsoft.VisualStudio.LanguageServer.Client.Preview
-* **Plage de versions**: [1.0,2.0)
-* **Comment est la dépendance est résolue**: installé par utilisateur
-* **URL de téléchargement**: [https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)
-
-> [!NOTE]
-> Le **URL de téléchargement** doit être renseigné afin que les utilisateurs de l’installation de votre extension sachent comment installer la dépendance requise.
 
 ### <a name="language-server-and-runtime-installation"></a>Installation du serveur et de runtime de langage
 
@@ -250,7 +230,7 @@ Une fois que votre classe de client de langage est implémentée, vous devez dé
 
 ### <a name="mef"></a>MEF
 
-Visual Studio utilise [MEF](https://github.com/Microsoft/vs-mef/blob/master/doc/index.md) (Managed Extensibility Framework) pour gérer ses points d’extensibilité. Le [exporter](https://msdn.microsoft.com/library/system.componentmodel.composition.exportattribute(v=vs.110).aspx) attribut indique à Visual Studio que cette classe doit être récupérée en tant qu’un point d’extension et chargée au moment opportun.
+Visual Studio utilise [MEF](https://github.com/Microsoft/vs-mef/blob/master/doc/index.md) (Managed Extensibility Framework) pour gérer ses points d’extensibilité. Le [exporter](/dotnet/api/system.componentmodel.composition.exportattribute) attribut indique à Visual Studio que cette classe doit être récupérée en tant qu’un point d’extension et chargée au moment opportun.
 
 Pour utiliser MEF, vous devez également définir MEF en tant que ressource dans le manifeste VSIX.
 

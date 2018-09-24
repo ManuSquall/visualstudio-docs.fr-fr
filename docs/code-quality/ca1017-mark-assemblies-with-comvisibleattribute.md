@@ -14,16 +14,21 @@ ms.assetid: 4842cb49-8dd8-4e5d-a2d6-ceeaf6c6cf8e
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bf6ea87a1a84f5c9f527b0d0c2550093d8824152
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d2e720bf4e0bd613b5f31b82e7c50084b1b6d3c1
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899142"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548554"
 ---
 # <a name="ca1017-mark-assemblies-with-comvisibleattribute"></a>CA1017 : Marquer les assemblys avec ComVisibleAttribute
+
 |||
 |-|-|
 |TypeName|MarkAssembliesWithComVisible|
@@ -32,10 +37,10 @@ ms.locfileid: "31899142"
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Un assembly n’a pas la <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> attribut appliqué à celui-ci.
+ Un assembly n’a pas la <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> attribut appliqué à ce dernier.
 
 ## <a name="rule-description"></a>Description de la règle
- Le <xref:System.Runtime.InteropServices.ComVisibleAttribute> attribut détermine la façon dont les clients COM accèdent du code managé. Un bon design stipule que les assemblys indiquent explicitement la visibilité COM. La visibilité COM peut être définie pour un assembly entier et puis être substituée pour des types et membres de type. Si l’attribut n’est pas présent, le contenu de l’assembly est visible aux clients COM.
+ Le <xref:System.Runtime.InteropServices.ComVisibleAttribute> attribut détermine comment les clients COM accèdent à du code managé. Un bon design stipule que les assemblys indiquent explicitement la visibilité COM. Visibilité COM peut être définie pour un assembly entier et puis être substituée pour des types et membres de type. Si l’attribut n’est pas présent, le contenu de l’assembly est visible aux clients COM.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, ajoutez l’attribut à l’assembly. Si vous ne souhaitez pas que l’assembly soit visible par les clients COM, appliquez l’attribut et définissez sa valeur sur `false`.
@@ -51,4 +56,6 @@ ms.locfileid: "31899142"
  [!code-csharp[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/CSharp/ca1017-mark-assemblies-with-comvisibleattribute_1.cs)]
 
 ## <a name="see-also"></a>Voir aussi
- [Interopérabilité avec du Code non managé](/dotnet/framework/interop/index) [qualifier des Types .NET pour l’interopérabilité](/dotnet/framework/interop/qualifying-net-types-for-interoperation)
+
+- [Interopération avec du code non managé](/dotnet/framework/interop/index)
+- [Qualifier des types .NET pour l'interopérabilité](/dotnet/framework/interop/qualifying-net-types-for-interoperation)

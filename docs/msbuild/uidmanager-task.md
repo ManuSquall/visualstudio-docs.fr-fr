@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e6156111c680bb7d9462fc94f879df9784486c2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 22274c37abe31f4212a921633f9b53729ce70bd8
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575817"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178993"
 ---
 # <a name="uidmanager-task"></a>UidManager, tâche
 La tâche <xref:Microsoft.Build.Tasks.Windows.UidManager> vérifie, met à jour ou supprime les identificateurs uniques (UID) pour localiser tous les éléments [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] inclus dans les fichiers [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] sources.  
@@ -58,8 +58,8 @@ La tâche <xref:Microsoft.Build.Tasks.Windows.UidManager> vérifie, met à jour 
   
 ## <a name="see-also"></a>Voir aussi  
  [Informations de référence sur MSBuild WPF](../msbuild/wpf-msbuild-reference.md)   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/wpf-msbuild-task-reference.md)   
- [Référence MSBuild](../msbuild/msbuild-reference.md)   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)   
- [Génération d’une application WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)   
+ [Informations de référence sur les tâches](../msbuild/wpf-msbuild-task-reference.md)   
+ [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)   
+ [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)   
+ [Générer une application WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)   
  [Guide pratique pour localiser une application](/dotnet/framework/wpf/advanced/how-to-localize-an-application)

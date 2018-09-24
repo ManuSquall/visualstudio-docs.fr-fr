@@ -236,6 +236,8 @@
           href: remote-debugger-port-assignments.md
         - name: Configurer le pare-feu Windows pour le débogage à distance
           href: configure-the-windows-firewall-for-remote-debugging.md
+        - name: Débloquer le téléchargement sur Windows Server
+          href: remote-debugging-unblock-file-download.md
         - name: Erreurs de débogage à distance et dépannage
           href: remote-debugging-errors-and-troubleshooting.md
           items:

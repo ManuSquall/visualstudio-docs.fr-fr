@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 0d92e2c8e09791aa2efa4cc1d3c0df6c91ce36aa
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: f297b9202dabfcfe40ea63b187bc914e187b974f
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691022"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626964"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analyser la consommation des ressources et l’activité des threads de l’interface utilisateur (XAML)
 Utilisez le profileur **Chronologie de l'application** pour rechercher et corriger les problèmes de performances liés à l'interaction d'application dans les applications XAML. Cet outil vous aide à améliorer les performances des applications XAML en fournissant une vue détaillée de la consommation des ressources des applications. Vous pouvez analyser le temps passé par votre application à préparer les trames de l'interface utilisateur (mise en page et rendu), à traiter les demandes du réseau et des disques, et dans les scénarios comme le démarrage de l'application, le chargement des pages et le redimensionnement des fenêtres.  
@@ -97,7 +97,7 @@ Utilisez le profileur **Chronologie de l'application** pour rechercher et corrig
 |||  
 |-|-|  
 |**Analyse**|Temps passé à l'analyse de fichiers XAML et à la création d'objets.<br /><br /> Le développement d'un nœud **Analyse** dans **Détails de la chronologie** affiche la chaîne de dépendance de tous les fichiers XAML qui ont été analysés comme résultat de l'événement racine. Cela vous permettra d'identifier l'analyse de fichiers inutiles et la création d'objets dans les scénarios critiques de performances, et de les optimiser.|  
-|**Disposition**|Dans les grandes applications, des milliers d'éléments peuvent s'afficher en même temps sur l'écran. Ceci peut entraîner un faible débit des trames d'interface utilisateur et en conséquence, une réactivité faible de l'application. L’événement Layout détermine avec précision le coût de la disposition de chaque élément (c’est-à-dire le temps passé dans Arrange, Measure, ApplyTemplate et ArrangeOverride) et génère les arborescences d’éléments visuels qui ont participé à une passe de disposition. Vous pouvez utiliser cette visualisation pour déterminer laquelle de vos arborescences logiques doit être élaguée ou pour évaluer d'autres mécanismes de report pour optimiser votre passe de disposition.|  
+|**Disposition**|Dans les grandes applications, des milliers d'éléments peuvent s'afficher en même temps sur l'écran. Ceci peut entraîner un faible débit des trames d'interface utilisateur et en conséquence, une réactivité faible de l'application. L’événement Layout détermine avec précision le coût de la disposition de chaque élément (c’est-à-dire le temps passé dans Arrange, Measure, ApplyTemplate, ArrangeOverride et MeasureOverride) et génère les arborescences d’éléments visuels qui ont participé à une passe de disposition. Vous pouvez utiliser cette visualisation pour déterminer laquelle de vos arborescences logiques doit être élaguée ou pour évaluer d'autres mécanismes de report pour optimiser votre passe de disposition.|  
 |**Afficher**|Temps passé à dessiner les éléments XAML à l'écran.|  
 |**E/S**|Durée de récupération de données à partir du disque local ou à partir des ressources réseau qui sont accessibles par le biais de l’ [API Microsoft Windows Internet (WinINet)](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx).|  
 |**Code d'application**|Indique le temps passé à l'exécution du code de l'application (utilisateur) qui n'est pas lié à l'analyse ou à la disposition.|  
@@ -121,4 +121,4 @@ Utilisez le profileur **Chronologie de l'application** pour rechercher et corrig
  [Bonnes pratiques pour les performances des applications UWP en C++, C# et Visual Basic](http://msdn.microsoft.com/en-us/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
  [Optimiser les performances des applications WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
  [Profilage dans Visual Studio](../profiling/index.md)  
- [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md)
+ [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)

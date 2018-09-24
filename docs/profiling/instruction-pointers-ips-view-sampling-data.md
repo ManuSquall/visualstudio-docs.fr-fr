@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 617ff8d4ed59aebefd3a4456ad36f148b1ee3de0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2fdc7069ee0d422fd59b297b4b99a982d265e3a2
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844278"
 ---
-# <a name="instruction-pointers-ips-view---sampling-data"></a>Pointeurs d’instruction (IP), vue - Données d’échantillonnage
+# <a name="instruction-pointers-ips-view---sampling-data"></a>Pointeurs d’instruction (IP), vue - données d’échantillonnage
 La vue Pointeurs d’instruction des données d’échantillonnage répertorie les données de performance pour les instructions d’assembly qui s’exécutaient directement lors de la collecte des échantillons dans le cadre de l’exécution du profilage.  
   
 > [!NOTE]
@@ -43,4 +44,4 @@ La vue Pointeurs d’instruction des données d’échantillonnage répertorie l
 |**% d’échantillons exclusifs**|Pourcentage de tous les échantillons collectés pendant l’exécution de l’instruction dans le cadre de l’exécution du profilage.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Pointeurs d’instruction (IP), vue - Échantillonnage](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
+ [Pointeurs d’instruction (IP), vue - échantillonnage](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)

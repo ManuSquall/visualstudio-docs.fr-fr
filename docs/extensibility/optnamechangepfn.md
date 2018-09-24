@@ -1,5 +1,5 @@
 ---
-title: OPTNAMECHANGEPFN | Documents Microsoft
+title: OPTNAMECHANGEPFN | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3ecb80b1ac0b71de935da59d29a3f5c39f85bee
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 083b91dd44101f387c89e2313dba3ffb9a9ee737
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137243"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636514"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
-Il s’agit d’une fonction de rappel spécifiée dans un appel à la [SccSetOption](../extensibility/sccsetoption-function.md) (à l’aide d’option `SCC_OPT_NAMECHANGEPFN`) et est utilisé pour communiquer des modifications de nom effectuées par le contrôle de source de plug-in à l’IDE.  
+Il s’agit d’une fonction de rappel spécifiée dans un appel à la [SccSetOption](../extensibility/sccsetoption-function.md) (à l’aide d’option `SCC_OPT_NAMECHANGEPFN`) et est utilisé pour communiquer les modifications de nom apportées par le contrôle de code source plug-in à l’IDE.  
   
 ## <a name="signature"></a>Signature  
   
@@ -40,18 +40,18 @@ typedef void (*OPTNAMECHANGEPFN)(
  [in] Valeur de l’utilisateur spécifié dans un appel précédent à la [SccSetOption](../extensibility/sccsetoption-function.md) (à l’aide d’option `SCC_OPT_USERDATA`).  
   
  pszOldName  
- [in] Le nom du fichier d’origine.  
+ [in] Le nom d’origine du fichier.  
   
  pszNewName  
  [in] Le nom du fichier a été renommé.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Aucun  
+ Aucun.  
   
 ## <a name="remarks"></a>Notes  
- Si un fichier est renommé pendant une opération de contrôle de code source, le plug-in de contrôle de code source peut avertir l’IDE sur le changement de nom via ce rappel.  
+ Si un fichier est renommé pendant une opération de contrôle de code source, le plug-in de contrôle de code source peut avertir l’IDE du changement de nom via ce rappel.  
   
- Si l’IDE ne prend pas en charge ce rappel, elle n’appelle pas la [SccSetOption](../extensibility/sccsetoption-function.md) de le spécifier. Si le plug-in ne prend pas en charge ce rappel, elle retournera `SCC_E_OPNOTSUPPORTED` à partir de le `SccSetOption` lors de l’IDE tente de définir le rappel de fonction.  
+ Si l’IDE ne prend pas en charge ce rappel, il n’appelle pas la [SccSetOption](../extensibility/sccsetoption-function.md) à le spécifier. Si le plug-in ne prend pas en charge ce rappel, elle retournera `SCC_E_OPNOTSUPPORTED` à partir de la `SccSetOption` lors de l’IDE tente de définir le rappel de fonction.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions de rappel implémentées par l’IDE](../extensibility/callback-functions-implemented-by-the-ide.md)   

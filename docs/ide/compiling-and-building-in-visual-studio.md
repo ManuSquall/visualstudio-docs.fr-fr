@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e2d9d26d91034d296334ae1456c92027a359175
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: d7ee37ddd9899b979d8440202c89d03284b26f48
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283124"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279074"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Compiler et générer dans Visual Studio
 
@@ -28,7 +28,7 @@ En générant souvent une build à partir de votre code, vous pouvez identifier 
 
 Une build réussie est essentiellement une validation que le code source de l’application contient une syntaxe correcte et que toutes les références statiques à des bibliothèques, des assemblys et à d’autres composants ont été résolues. Le résultat est une application exécutable dont le fonctionnement correct peut ensuite être testé à la fois dans un [environnement de débogage](../debugger/index.md) et par différents tests manuels et automatisés pour [vérifier la qualité du code](../test/improve-code-quality.md). Une fois que l’application a été entièrement testée, vous pouvez alors compiler une version Release à déployer auprès de vos clients. Vous trouverez une présentation de ce processus sur la page [Procédure pas à pas : générer une application](../ide/walkthrough-building-an-application.md).
 
-Dans la famille de produits Visual Studio, vous pouvez utiliser trois méthodes pour générer une application : l’IDE de Visual Studio, les outils en ligne de commande MSBuild et Team Foundation Build sur Visual Studio Team Services :
+Vous pouvez utiliser une des méthodes suivantes pour générer une application : l’IDE Visual Studio, les outils en ligne de commande de MSBuild, Team Foundation Build et Azure DevOps Services :
 
 | Méthode de génération | Avantages |
 | --- |--- | --- |
@@ -36,7 +36,7 @@ Dans la famille de produits Visual Studio, vous pouvez utiliser trois méthodes 
 | Ligne de commande MSBuild| - Générer des projets sans installer Visual Studio.<br />- Exécuter des builds multiprocesseurs pour tous les types de projets.<br />- Personnaliser la plupart des éléments du système de génération.|
 | Team Foundation Build | - Automatiser votre processus de génération dans un pipeline d’intégration continue/de livraison continue.<br />- Appliquer des tests automatisés avec chaque build.<br />- Utiliser des ressources cloud virtuellement illimitées pour les processus de génération.<br />- Modifier le flux de travail de la génération et créer des activités de génération pour effectuer des tâches fortement personnalisées.|
 
-La documentation de cette section contient plus de détails sur le processus de génération avec l’IDE. Pour plus d’informations sur les autres méthodes, consultez [MSBuild](../msbuild/msbuild.md) et [Intégration et déploiement continus](/vsts/pipelines/index?view=vsts), respectivement.
+La documentation de cette section contient plus de détails sur le processus de génération avec l’IDE. Pour plus d’informations sur les autres méthodes, consultez [MSBuild](../msbuild/msbuild.md) et [Pipelines Azure](/azure/devops/pipelines/index?view=vsts), respectivement.
 
 ## <a name="overview-of-building-from-the-ide"></a>Vue d’ensemble de la génération à partir de l’IDE
 

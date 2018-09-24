@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6ed3212affbcc7cee3587780116d435b19a4706f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f4c29f3b98440c9e8462083a24012944157b848b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968630"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178411"
 ---
 # <a name="edit-load-tests"></a>Modifier des tests de charge
 
@@ -31,21 +31,21 @@ Un test de charge est défini par des *scénarios*, des *ensembles de compteurs*
 
 ## <a name="edit-load-test-scenario-settings"></a>Modifier les paramètres des scénarios de test de charge
 
-Un scénario est utilisé pour modéliser la manière dont un groupe d’utilisateurs interagit avec une application serveur. Un scénario se compose d’un modèle de charge, d’un modèle de combinaison de tests, d’une combinaison de tests, d’une combinaison de navigateurs et d’une combinaison de réseaux. Un test de charge peut avoir plusieurs scénarios et un scénario peut contenir des tests de performances de site Web et des tests unitaires. En groupant des paramètres semblables, un scénario vous permet de grouper et d'exécuter ensemble des tests de nature semblable.
+Un scénario est utilisé pour modéliser la manière dont un groupe d’utilisateurs interagit avec une application serveur. Un scénario se compose d’un modèle de charge, d’un modèle de combinaison de tests, d’une combinaison de tests, d’une combinaison de navigateurs et d’une combinaison de réseaux. Un test de charge peut avoir plusieurs scénarios et un scénario peut contenir des tests de performances web et des tests unitaires. En groupant des paramètres semblables, un scénario vous permet de grouper et d'exécuter ensemble des tests de nature semblable.
 
-Pour plus d’informations, consultez [Modification de scénarios de test de charge](../test/edit-load-test-scenarios.md) et [Propriétés des scénarios de test de charge](../test/load-test-scenario-properties.md).
+Pour plus d’informations, consultez [Modifier les scénarios de test de charge](../test/edit-load-test-scenarios.md) et [Propriétés des scénarios de test de charge](../test/load-test-scenario-properties.md).
 
 ## <a name="configure-and-manage-performance-counter-sets"></a>Configurer et gérer des ensembles de compteurs de performances
 
-Les tests de charge fournissent des ensembles de compteurs nommés, organisés par technologie, qui sont utiles lorsque vous analysez des données de compteur de performance. Les ensembles de compteurs incluent Test de charge, IIS, ASP.NET et SQL. Quand vous créez un test de charge avec l’Assistant Nouveau test de charge, un ensemble initial de compteurs prédéfinis et importants est configuré pour les ordinateurs à inclure dans le test de charge. Vous gérez vos compteurs dans l'éditeur de test de charge.
+Les tests de charge fournissent des ensembles de compteurs nommés, organisés par technologie, qui sont utiles lorsque vous analysez des données de compteur de performance. Les ensembles de compteurs incluent Test de charge, IIS, ASP.NET et SQL. Quand vous créez un test de charge avec l’**Assistant Nouveau test de charge**, un ensemble initial de compteurs prédéfinis et importants est configuré pour les ordinateurs à inclure dans le test de charge. Vous gérez vos compteurs dans l’**éditeur de test de charge**.
 
-Pour plus d’informations, consultez [Spécification des ensembles de compteurs et des règles de seuil pour les ordinateurs dans un test de charge](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+Pour plus d’informations, consultez [Spécifier les ensembles de compteurs et des règles de seuil pour les ordinateurs dans un test de charge](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
 ## <a name="configure-and-manage-load-test-run-settings"></a>Configurer et gérer les paramètres d’exécution des tests de charge
 
-Les paramètres d’exécution sont des propriétés qui influencent la façon dont un test de charge s’exécute. Les paramètres d'exécution sont classés par catégories dans la fenêtre Propriétés.
+Les paramètres d’exécution sont des propriétés qui influencent la façon dont un test de charge s’exécute. Les paramètres d’exécution sont classés par catégories dans la fenêtre **Propriétés**.
 
-Pour plus d’informations, consultez [Configuration des paramètres d’exécution des tests de charge](../test/configure-load-test-run-settings.md) et [Propriétés des paramètres d’exécution pour le test de charge](../test/load-test-run-settings-properties.md).
+Pour plus d’informations, consultez [Configurer les paramètres d’exécution des tests de charge](../test/configure-load-test-run-settings.md) et [Propriétés des paramètres d’exécution pour le test de charge](../test/load-test-run-settings-properties.md).
 
 ## <a name="see-also"></a>Voir aussi
 

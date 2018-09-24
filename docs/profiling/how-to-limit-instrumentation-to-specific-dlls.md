@@ -11,15 +11,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ca2c966c395edf189cbab04c20cdb77c6b0e4e3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: aefa0d5953d1e8d61615ac5bfe0af136082c96f3
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843947"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Procédure : limiter l’instrumentation à des DLL spécifiques
+# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Guide pratique pour limiter l’instrumentation à des DLL spécifiques
 
-La méthode de profilage par instrumentation vous permet de limiter la collecte de données de profilage à une ou plusieurs DLL d’une application. Pour profiler une ou plusieurs DLL d’une application, créez une session de performance qui comprenne ces fichiers .dll en tant que cibles. Vous pouvez spécifier les DLL à profiler en tant que projets dans une solution Visual Studio, ou en tant que fichiers binaires indépendants.
+La méthode de profilage par instrumentation vous permet de limiter la collecte de données de profilage à une ou plusieurs DLL d’une application. Pour profiler une ou plusieurs DLL d’une application, créez une session de performance qui comprend les fichiers .*dll* comme cibles. Vous pouvez spécifier les DLL à profiler en tant que projets dans une solution Visual Studio, ou en tant que fichiers binaires indépendants.
 
 ## <a name="to-limit-instrumentation-to-specific-dlls-in-a-visual-studio-solution"></a>Pour limiter l’instrumentation à certaines DLL dans une solution Visual Studio
 
@@ -29,7 +30,7 @@ La méthode de profilage par instrumentation vous permet de limiter la collecte 
 
 3. Choisissez **Instrumentation** comme méthode de profilage, puis cliquez sur **Suivant**.
 
-4. Dans la page **Laquelle des cibles disponibles suivantes voulez-vous profiler ?**, sélectionnez le nom du projet .dll, puis cliquez sur **Suivant**.
+4. Dans la page **Laquelle des cibles disponibles suivantes voulez-vous profiler ?**, sélectionnez le nom du projet .*dll*, puis cliquez sur **Suivant**.
 
 5. Cliquez sur **Terminer** pour quitter l’Assistant et afficher la nouvelle session de performance dans l’**Explorateur de performances**.
 
@@ -51,9 +52,9 @@ La méthode de profilage par instrumentation vous permet de limiter la collecte 
 
 4. Dans la deuxième page de l’Assistant, effectuez les étapes suivantes :
 
-    - Dans **Chemin d’accès de la DLL**, tapez le chemin et le nom du fichier .dll que vous voulez profiler. Vous pouvez également cliquer sur le bouton de sélection (...) pour rechercher le fichier dans la boîte de dialogue **Bibliothèque de liens dynamiques à profiler**. Notez que vous devez spécifier la copie du fichier .dll qui sera lancé par le fichier exécutable (.exe) que vous allez sélectionner.
+    - Tapez le chemin et le nom du fichier .*dll* à profiler dans **Chemin d’accès de la DLL**. Vous pouvez également cliquer sur le bouton de sélection (...) pour rechercher le fichier dans la boîte de dialogue **Bibliothèque de liens dynamiques à profiler**. Notez que vous devez spécifier la copie du fichier .*dll* qui sera lancé par le fichier exécutable (.*exe*) que vous allez sélectionner.
 
-    - Dans **Chemin d’accès de l’exécutable**, tapez le chemin et le nom du fichier exécutable (.exe) qui doit exécuter le fichier .dll. Vous pouvez également cliquer sur le bouton de sélection (...) pour rechercher le fichier dans la boîte de dialogue **Exécutable à lancer**.
+    - Tapez le chemin et le nom du fichier exécutable (.*exe*) qui doit exécuter le fichier .*dll* dans **Chemin d’accès de l’exécutable**. Vous pouvez également cliquer sur le bouton de sélection (...) pour rechercher le fichier dans la boîte de dialogue **Exécutable à lancer**.
 
     - Facultative. Dans **Arguments de ligne de commande**, tapez les arguments de ligne de commande que vous voulez passer au fichier exécutable. Si nécessaire, spécifiez le répertoire de travail de l’application dans **Répertoire de travail**.
 
@@ -63,12 +64,12 @@ La méthode de profilage par instrumentation vous permet de limiter la collecte 
 
 6. Cliquez sur **Terminer** pour quitter l’Assistant et afficher la nouvelle session de performance dans l’**Explorateur de performances**.
 
-7. Facultative. Pour ajouter des fichiers .dll, cliquez avec le bouton droit sur **Cibles**, puis sélectionnez **Ajouter un fichier binaire cible**. Sélectionnez les fichiers dans la boîte de dialogue **Ajouter un fichier binaire cible**.
+7. Facultative. Pour ajouter des fichiers .*dll*, cliquez avec le bouton droit sur **Cibles**, puis sélectionnez **Ajouter un fichier binaire cible**. Sélectionnez les fichiers dans la boîte de dialogue **Ajouter un fichier binaire cible**.
 
     > [!NOTE]
-    > Ne spécifiez pas le fichier exécutable (.exe) qui exécute les DLL.
+    > Ne spécifiez pas le fichier exécutable (.*exe*) qui exécute les DLL.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Contrôle de la collecte de données](../profiling/controlling-data-collection.md)  
+[Contrôler la collecte des données](../profiling/controlling-data-collection.md)  
 [Guide pratique pour limiter l’instrumentation à des fonctions spécifiques](../profiling/how-to-limit-instrumentation-to-specific-functions.md)

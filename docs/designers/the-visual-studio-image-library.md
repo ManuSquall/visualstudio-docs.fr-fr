@@ -18,20 +18,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 224341ab753c5dd1ad7d4af072c67207f5dd6774
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7bd67b6b548852fa21a28696328004d75ec53fe8
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921190"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078899"
 ---
-# <a name="the-visual-studio-image-library"></a>Bibliothèque d’images Visual Studio
+# <a name="the-visual-studio-image-library"></a>Bibliothèque d’images Visual Studio
 
 Visual Studio Image Library contient les images d'application qui apparaissent dans Microsoft Visual Studio, Microsoft Windows, Office System et les autres logiciels Microsoft. Elle contient plus de 1 000 images qui donnent une certaine harmonie visuelle entre les applications Microsoft.
 
-[Téléchargez la bibliothèque d’images Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=275090)
+[Télécharger la bibliothèque d’images Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=275090)
 
-La bibliothèque d'images est divisée en cinq catégories : éléments communs, actions, annotations, icônes et objets. Les fichiers Readme sont inclus au format PDF pour les types courants d'éléments et d'icônes. Ils contiennent des informations relatives à l'utilisation appropriée de ces images dans vos applications.
+La bibliothèque d’images est divisée en cinq catégories : éléments communs, actions, annotations, icônes et objets. Les fichiers Readme sont inclus au format PDF pour les types courants d'éléments et d'icônes. Ils contiennent des informations relatives à l'utilisation appropriée de ces images dans vos applications.
 
 ## <a name="see-also"></a>Voir aussi
 

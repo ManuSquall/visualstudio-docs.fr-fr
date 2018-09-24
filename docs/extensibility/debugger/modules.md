@@ -1,5 +1,5 @@
 ---
-title: Modules | Documents Microsoft
+title: Modules | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f587e015263336436588d14edeeb5c6935872950
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8750c1f6676966be8564fbf4a175a66fa180a401
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098142"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233163"
 ---
 # <a name="modules"></a>Modules
-En termes de l’architecture du débogueur, une **module**:  
+En termes d’architecture du débogueur, une *module*:  
   
--   Est un conteneur physique de code, par exemple un fichier exécutable ou une DLL.  
+-   Est un conteneur physique de code, comme un fichier exécutable ou une DLL.  
   
--   Permet de recharger les symboles et de se décrire lui-même. Descriptions de module sont affichées dans la fenêtre Modules de l’IDE.  
+-   Peut recharger ses symboles et décrire lui-même. Descriptions de module sont affichées dans la fenêtre Modules de l’IDE.  
   
 -   Est représenté par un [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md) interface, créée par un moteur de débogage pour décrire le module.  
   

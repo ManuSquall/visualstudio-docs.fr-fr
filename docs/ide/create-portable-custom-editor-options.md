@@ -1,6 +1,6 @@
 ---
 title: Utilisation des paramètres EditorConfig dans Visual Studio
-ms.date: 12/13/2017
+ms.date: 08/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editorconfig [Visual Studio]
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 3ace523bd68b9d96916c23ebdbc93eaadd339da6
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 8e2118564cb6e0a3eb4811cb69283256cd48a489
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446499"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626934"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Créer des paramètres d’éditeur personnalisés et portables avec EditorConfig
 
@@ -23,7 +23,7 @@ Dans Visual Studio 2017, vous pouvez ajouter un fichier [EditorConfig](http://ed
 Les paramètres EditorConfig sont pris en charge par de nombreux éditeurs de code et IDE, notamment Visual Studio. C’est un composant portable qui accompagne votre code et peut appliquer des styles de codage même en dehors de Visual Studio.
 
 > [!NOTE]
-> Quand vous ajoutez un fichier EditorConfig à votre projet dans Visual Studio, la mise en forme du code existant n’est pas modifiée, sauf si vous mettez en forme le document (**Modifier** > **Avancé** > **Mettre le document en forme** ou **Ctrl**+**K**, **Ctrl**+**D**). Toutefois, les nouvelles lignes de code sont mises en forme selon les paramètres EditorConfig.
+> Quand vous ajoutez un fichier EditorConfig à votre projet dans Visual Studio, la mise en forme du code existant ne change pas, sauf si vous mettez en forme le document (**Edition** > **Avancé** > **Mettre le document en forme** ou **Ctrl**+**K**, **Ctrl**+**D** dans le profil par défaut). Toutefois, les nouvelles lignes de code sont mises en forme selon les paramètres EditorConfig. Vous pouvez définir les paramètres EditorConfig que la commande **Mettre le document en forme** doit appliquer dans la [page **Options de mise en forme**](reference/options-text-editor-csharp-formatting.md#format-document-settings).
 
 ## <a name="coding-consistency"></a>Cohérence du codage
 
@@ -81,9 +81,15 @@ Si vous supprimez un fichier EditorConfig de votre projet ou base de code, vous 
    csharp_new_line_before_open_brace = methods
    ```
 
-Vous pouvez également installer l’[extension du service de langage EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig). Après avoir installé cette extension, choisissez simplement **Ajouter** > **Fichier .editorconfig** en cliquant avec le bouton droit pour afficher un menu contextuel sur le nœud de la solution, le nœud du projet ou n’importe quel dossier de l’Explorateur de solutions.
+### <a name="other-ways-to-add-an-editorconfig-file"></a>Autres façons d’ajouter un fichier EditorConfig
 
-![Ajouter le fichier .editorconfig avec l’extension](media/editorconfig-extension-add.png)
+Il existe d’autres façons d’ajouter un fichier EditorConfig au projet :
+
+- Installez l’[extension des services de langage EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) pour ajouter plus facilement un fichier *.editorconfig* vide au projet. Après avoir installé cette extension, choisissez simplement **Ajouter** > **Fichier .editorconfig** en cliquant avec le bouton droit pour afficher un menu contextuel du nœud de la solution, du nœud de projet ou d’un dossier de l’**Explorateur de solutions**. Cette extension améliore également l’expérience utilisateur permettant de modifier le fichier *.editorconfig*.
+
+   ![Ajouter le fichier .editorconfig avec l’extension](media/editorconfig-extension-add.png)
+
+- Essayez l’[extension IntelliCode](/visualstudio/intellicode/intellicode-visual-studio). Cette extension expérimentale déduit vos styles de code à partir du code existant, puis crée un fichier *.editorconfig* non vide avec vos préférences de style de code déjà définies.
 
 ## <a name="override-editorconfig-settings"></a>Substituer les paramètres d’EditorConfig
 

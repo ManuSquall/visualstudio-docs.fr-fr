@@ -1,5 +1,5 @@
 ---
-title: Migrer l’inscription de classe Windows 64 bits débogueur COM | Documents Microsoft
+title: Migrer d’inscription de classe COM du débogueur 64 bits | Microsoft Docs
 ms.custom: ''
 ms.date: 11/10/2016
 ms.technology:
@@ -11,24 +11,24 @@ ms.author: greggm
 manager: douge
 ms.workload:
 - greggm
-ms.openlocfilehash: 28516038170dd34028d11bf9a070cf265ecfd830
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6c7578ddbdf84a1520a732fb64380bb53e5359f9
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140444"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637849"
 ---
 # <a name="migrate-64-bit-debugger-com-class-registration"></a>Migrer le débogueur 64 bits d’inscription de classe COM
 
-Pour les extensions de débogueur qui enregistrent des classes COM dans HKEY_CLASSES_ROOT (à l’aide de regsvr32, regasm, ou directement l’écriture dans le Registre) et chargement dans msvsmon.exe (le débogueur distant), il est possible de fournir cette inscription à msvsmon sans avoir besoin de pour écrire dans HKEY_CLASSES_ROOT. Cela affecte les évaluateurs d’expression de débogueur .NET héritées ou les moteurs de débogage qui sont configurés pour se charger dans le processus msvsmon.exe.
+Pour les extensions de débogueur qui s’inscrivent COM des classes dans HKEY_CLASSES_ROOT à l’aide de regsvr32, regasm ou écrit directement dans le Registre et chargé dans *msvsmon.exe* (le débogueur distant), il est maintenant possible de fournir ce inscription à msvsmon sans avoir à écrire dans HKEY_CLASSES_ROOT. Cela affecte les évaluateurs d’expression de débogueur .NET héritées ou les moteurs de débogage qui sont configurés pour se charger dans le *msvsmon.exe* processus.
 
-## <a name="msvsmon-comclass-def"></a>msvsmon-comclass-def.
+## <a name="msvsmon-comclass-def"></a>msvsmon-comclass-def
 
-Pour utiliser cette technique, ajoutez un fichier de *.msvsmon-comclass-def.json en regard de msvsmon (InstallDir:\Common7\IDE\Remote Debugger\x64).
+Pour utiliser cette technique, ajoutez un  **.msvsmon-comclass-def.json* fichier en regard de msvsmon (InstallDir :* \Common7\IDE\Remote Debugger\x64*).
 
-Voici un exemple de fichier msvsmon-comclass-def qui enregistre une gérés et une classe native :
+Voici un exemple de fichier msvsmon-comclass-def qui enregistre si elle est gérée et une classe native :
 
-Nom de fichier : MyCompany.MyExample.msvsmon-comclass-def.json
+Nom de fichier : *MyCompany.MyExample.msvsmon-comclass-def.json*
 
 ```json
 {

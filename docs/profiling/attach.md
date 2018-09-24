@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d227fd84cd14db165ad0253cb7ceefd4f50eb580
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 7d54d31a1a4478f114e997df39bcbeeb95d5cda5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690625"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668782"
 ---
 # <a name="attach"></a>Attach
 L’option **Attach** de *VSPerfCmd.exe* démarre le profilage par échantillonnage du processus en cours d’exécution spécifié par le PID (ID de processus).  
@@ -77,6 +77,6 @@ VSPerfCmd.exe /Attach:12345
   
 ## <a name="see-also"></a>Voir aussi  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Profilage d’applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilage d’applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilage de services](../profiling/command-line-profiling-of-services.md)
+ [Profiler des applications autonomes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Profiler des applications web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profiler des services](../profiling/command-line-profiling-of-services.md)

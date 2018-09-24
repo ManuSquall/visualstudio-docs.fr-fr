@@ -1,5 +1,5 @@
 ---
-title: ProjectType, élément (modèles Visual Studio) | Documents Microsoft
+title: ProjectType, élément (modèles Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,18 +15,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb16116994648ec70c770af7ca4932cd1443bd30
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0452f6bbee3232c757c2a5483d9c08fca220ad01
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137880"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636748"
 ---
-# <a name="projecttype-element-visual-studio-templates"></a>ProjectType, élément (modèles Visual Studio)
-Catégorie du modèle de projet afin qu’il apparaisse sous le groupe spécifié dans le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.  
+# <a name="projecttype-element-visual-studio-templates"></a>ProjectType, élément (modèles Visual Studio)
+Catégorie du modèle de projet pour qu’il apparaisse sous le groupe spécifié dans le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.  
   
 > [!WARNING]
->  Modèles de projet sont pris en charge pour C++ à partir de Visual Studio 2012. Elles ne sont pas prises en charge de C++ dans Visual Studio 2010 et les versions antérieures.  
+>  Modèles de projet sont pris en charge pour C++ à partir de Visual Studio 2012. Ils ne sont pas pris en charge pour C++ dans Visual Studio 2010 et versions antérieures.  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -34,7 +34,7 @@ Catégorie du modèle de projet afin qu’il apparaisse sous le groupe spécifi�
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
 <ProjectType> CSharp/VisualBasic/VC/Web </ProjectType>  
 ```  
   
@@ -56,7 +56,7 @@ Catégorie du modèle de projet afin qu’il apparaisse sous le groupe spécifi�
 ## <a name="text-value"></a>Valeur texte  
  Une valeur texte est requise.  
   
- Cette valeur spécifie le type de projet que le modèle créera et doit contenir l’une des valeurs suivantes :  
+ Cette valeur spécifie le type de projet, le modèle créera et doit contenir l’une des valeurs suivantes :  
   
 -   `CSharp`: Spécifie que le modèle crée un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projet ou un élément.  
   
@@ -72,7 +72,7 @@ Catégorie du modèle de projet afin qu’il apparaisse sous le groupe spécifi�
  Un sous-type de modèle peut être spécifié à l’aide de la [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) élément.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant affiche les métadonnées d’un modèle de projet pour un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application.  
+ L’exemple suivant montre les métadonnées d’un modèle de projet pour un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -99,6 +99,6 @@ Catégorie du modèle de projet afin qu’il apparaisse sous le groupe spécifi�
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
- [Élément ProjectSubType (modèles Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md)
+ [Référence de schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
+ [ProjectSubType, élément (modèles Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md)

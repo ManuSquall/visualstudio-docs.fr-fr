@@ -9,12 +9,12 @@ description: Découvrez comment tirer parti de l’avantage Azure Advisory Chat 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 983f253ea468be58cd9a7f24577b14342f05059e
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 653611a2baa9211c74fa28ee90d2397c11c4bbe3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280801"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278892"
 ---
 # <a name="azure-advisory-chat"></a>Azure Advisory Chat
 
@@ -25,16 +25,16 @@ Obtenez de l’aide avec Azure en temps réel ! Inclut des conseils pour les ser
 L’utilisation d’Azure Advisory Chat est très simple.
 1. Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Recherchez la vignette Azure Advisory Chat dans la section Support, puis cliquez sur **Démarrer une conversation**.
-
-    ![Vignette Azure Advisory Chat](_img/vs-azure-advisory/vs-azure-advisory-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Vignette d’Azure Advisory Chat](_img/vs-azure-advisory/vs-azure-advisory-tile.png)
 
 3. Une notification indique que le service est actuellement disponible en anglais uniquement, à l’exception du support pour les questions relatives aux comptes, à la facturation et aux abonnements.  Cliquez sur **Continuer**.
-
-    ![Notification Azure Advisory Chat](_img/vs-azure-advisory/vs-azure-advisory-disclaimer.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure Advisory Chat, Clause d’exclusion de responsabilité](_img/vs-azure-advisory/vs-azure-advisory-disclaimer.png)
 
 4. C’est aussi simple que cela.  Une fenêtre de conversation s’ouvre et affiche un état indiquant votre position dans la file d’attente.  Le prochain expert disponible vous répondra.
-
-    ![Azure Advisory Chat](_img/vs-azure-advisory/vs-azure-advisory-chat.png)
+    > [!div class="mx-imgBorder"]
+    > ![Conversation Azure Advisory](_img/vs-azure-advisory/vs-azure-advisory-chat.png)
 
 ## <a name="eligibility"></a>Éligibilité
 
@@ -56,4 +56,4 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 
 ## <a name="support-resources"></a>Ressources de support technique
 -  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  Vous avez des questions concernant l’IDE Visual Studio, Visual Studio Team Services ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
+-  Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).

@@ -1,5 +1,5 @@
 ---
-title: Fait référence à l’élément (modèles Visual Studio) | Documents Microsoft
+title: Fait référence à l’élément (modèles Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,14 +16,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e758bb0bc493086d9e8090c14eaca744129c277
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 24b1e29faf2a322bf8dd40d48622b3e2a0c8da65
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136495"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639160"
 ---
-# <a name="references-element-visual-studio-templates"></a>References, élément (modèles Visual Studio)
+# <a name="references-element-visual-studio-templates"></a>References, élément (modèles Visual Studio)
 Regroupe les références d’assembly que le modèle ajoute aux projets.  
   
  \<VSTemplate >  
@@ -32,7 +32,7 @@ Regroupe les références d’assembly que le modèle ajoute aux projets.
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
 <References>  
     <Reference>... </Reference>  
     <Reference>... </Reference>  
@@ -61,12 +61,12 @@ Regroupe les références d’assembly que le modèle ajoute aux projets.
 ## <a name="remarks"></a>Notes  
  `References` est un élément enfant facultatif de `TemplateContent`.  
   
- Le `Reference` et `References` éléments ne peuvent être utilisés dans les fichiers .vstemplate dont un `Type` valeur d’attribut `Item`.  
+ Le `Reference` et `References` éléments peuvent uniquement être utilisés dans *.vstemplate* fichiers ayant une `Type` valeur d’attribut `Item`.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant illustre la `TemplateContent` élément d’un modèle d’élément. Ce code XML ajoute des références aux assemblys System.dll et System.Data.dll.  
+ L’exemple suivant illustre la `TemplateContent` élément d’un modèle d’élément. Ce code XML ajoute des références à la *System.dll* et *System.Data.dll* assemblys.  
   
-```  
+```xml  
 <TemplateContent>  
     <References>  
         <Reference>  
@@ -85,5 +85,5 @@ Regroupe les références d’assembly que le modèle ajoute aux projets.
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
+ [Référence de schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Création de modèles de projets et d’éléments](../ide/creating-project-and-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: Référence de schéma de modèle Visual Studio | Documents Microsoft
+title: Référence de schéma de modèle Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,23 +15,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb18385c32cee40ae4a6bf902bf79623c3bc2854
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 566a07af35181433b88d5c84ea461e2b7546fe4b
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571518"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586337"
 ---
-# <a name="visual-studio-template-schema-reference"></a>Référence du schéma de modèle Visual Studio
-Cette section contient des informations sur les éléments XML dans des fichiers .vstemplate, qui stockent les métadonnées des modèles de projet, d'élément et des Starter Kits.
+# <a name="visual-studio-template-schema-reference"></a>Référence de schéma de modèle Visual Studio
+Cette section contient des informations sur les éléments XML dans *.vstemplate* , des fichiers qui stockent les métadonnées pour les modèles de projet, des modèles d’élément et des Starter Kits.
 
- Vous pouvez utiliser vstemplate.xsd pour valider des fichiers .vstemplate personnalisés. Ce fichier est disponible sous... \\ *Dossier d’installation de visual Studio*\Xml\Schemas\1033\vstemplate.xsd.
+ Vous pouvez utiliser *vstemplate.xsd* pour valider personnalisé *.vstemplate* fichiers. Ce fichier est disponible à l’adresse *... \\ \<Dossier d’installation de visual Studio > \Xml\Schemas\1033\vstemplate.xsd*.
 
 |Élément|Éléments enfants|Attributs|
 |-------------|--------------------|----------------|
-|[appliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|Aucun.|Aucun.|
+|[AppliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|Aucun.|Aucun.|
 |[Assembly (modèle)](../extensibility/assembly-element-visual-studio-templates.md)|--|--|
-|[Assembly (Extension Assistant)](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|--|--|
+|[Assembly (Extension de l’Assistant)](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|--|--|
 |[BuildProjectOnload](../extensibility/buildprojectonload-element-visual-studio-templates.md)|--|--|
 |[CreateInPlace](../extensibility/createinplace-visual-studio-templates.md)|--|--|
 |[CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md)|--|--|
@@ -61,7 +61,7 @@ Cette section contient des informations sur les éléments XML dans des fichiers
 |[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|--|Nom_projet|
 |[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)|--|--|
 |[PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md)|--|--|
-|[ProvideDefaultName la valeur](../extensibility/providedefaultname-element-visual-studio-templates.md)|--|--|
+|[ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)|--|--|
 |[Référence](../extensibility/reference-element-visual-studio-templates.md)|Assembly|--|
 |[Références](../extensibility/references-element-visual-studio-templates.md)|Référence|--|
 |[RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md)|--|--|
@@ -69,7 +69,7 @@ Cette section contient des informations sur les éléments XML dans des fichiers
 |[SDKReference](../extensibility/sdkreference-element-visual-studio-templates.md)|--|Package|
 |[ShowByDefault](../extensibility/showbydefault-visual-studio-templates.md)|--|--|
 |[SolutionFolder](../extensibility/solutionfolder-element-visual-studio-templates.md)|ProjectTemplateLink<br /><br /> SolutionFolder|Name|
-|[Ordre de tri](../extensibility/sortorder-element-visual-studio-templates.md)|--|--|
+|[SortOrder](../extensibility/sortorder-element-visual-studio-templates.md)|--|--|
 |[SupportsCodeSeparation](../extensibility/supportscodeseparation-element-visual-studio-templates.md)|--|--|
 |[SupportsLanguageDropDown](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md)|--|--|
 |[SupportsMasterPage](../extensibility/supportsmasterpage-element-visual-studio-templates.md)|--|--|

@@ -1,10 +1,9 @@
 ---
-title: Rechercher du code à l’aide des commandes Atteindre
-ms.date: 09/26/2017
+title: Atteindre le fichier, atteindre le symbole, atteindre la ligne
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-ms.assetid: 509b2107-23d1-4fb3-987f-ab99ef45b72e
 helpviewer_keywords:
 - code editor, go to
 - code editor, go to line
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aca1106bb6dfa3838890e4ae5c1886875e3e357
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 00ec7361304d76d33264b98b45cf373bc5fc9f51
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447191"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626814"
 ---
 # <a name="find-code-using-go-to-commands"></a>Rechercher du code à l’aide des commandes Atteindre
 
@@ -56,12 +55,13 @@ Par défaut, l’élément spécifié est recherché dans tous les éléments de
 Pour limiter votre recherche à un type spécifique d’élément de code, vous pouvez spécifier un préfixe dans la zone de recherche ou sélectionner l’une des cinq icônes de filtre ci-dessous :
 
 Préfixe | Icône | Raccourci | Description
-:----: | ---- | -------- | ---
-\#     | ![Icône de symbole](media/gotoall_symbolicon.png) | **Ctrl**+**1**, **Ctrl**+**S** | Atteindre le symbole spécifié
-f      | ![Icône de fichier](media/gotoall_fileicon.png)     | **Ctrl**+**1**, **Ctrl**+**F** | Atteindre le fichier spécifié
-m      | ![Icône Membre](media/gotoall_membericon.png) | **Ctrl**+**1**, **Ctrl**+**M** | Atteindre le membre spécifié
-t      | ![Icône de type](media/gotoall_typeicon.png)     | **Ctrl**+**1**, **Ctrl**+**T** | Atteindre le type spécifié
-:      | ![Icône de ligne](media/gotoall_lineicon.png)     | **Ctrl**+**G**         | Atteindre le numéro de ligne spécifié
+:-: | - | - | -
+:| ![Icône de ligne](media/gotoall-line-icon.png) | **Ctrl**+**G**         | Atteindre le numéro de ligne spécifié
+f| ![Icône de fichiers](media/gotoall-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**F** | Atteindre le fichier spécifié
+b| ![Icône de fichiers récents](media/gotoall-recent-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**R** | Atteindre le fichier spécifié, récemment ouvert
+t| ![Icône de types](media/gotoall-types-icon.png) | **Ctrl**+**1**, **Ctrl**+**T** | Atteindre le type spécifié
+m| ![Icône de membres](media/gotoall-members-icon.png) | **Ctrl**+**1**, **Ctrl**+**M** | Atteindre le membre spécifié
+\#| ![Icône de symboles](media/gotoall-symbols-icon.png) | **Ctrl**+**1**, **Ctrl**+**S** | Atteindre le symbole spécifié
 
 ### <a name="filter-to-a-specific-location"></a>Filtrer sur un emplacement spécifique
 

@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b16d3b5feeadc033083cbd051497cb973372c3bb
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 7829df456540bc303993217c577bd6be3952a198
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302790"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152628"
 ---
-# <a name="parametergroup-element"></a>ParameterGroup, élément
-Contient une liste facultative de paramètres qui seront présents sur la tâche générée par un `UsingTask``TaskFactory`. Pour plus d’informations, consultez [UsingTask, élément (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
+# <a name="parametergroup-element"></a>Élément ParameterGroup
+Contient une liste facultative de paramètres qui seront présents sur la tâche générée par `UsingTask` `TaskFactory`. Pour plus d’informations, voir [Élément UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
 
  \<Project>  
  \<UsingTask>  
@@ -48,7 +48,7 @@ Contient une liste facultative de paramètres qui seront présents sur la tâche
 
 |Élément|Description|  
 |-------------|-----------------|  
-|[Paramètre](../msbuild/parameter-element.md)|Contient des informations sur un paramètre spécifique pour une tâche générée par un `UsingTask``TaskFactory`. Le nom de l’élément est le nom du paramètre.|  
+|[Paramètre](../msbuild/parameter-element.md)|Contient des informations sur un paramètre propre à une tâche générée par `UsingTask` `TaskFactory`. Le nom de l’élément est le nom du paramètre.|  
 
 ### <a name="parent-elements"></a>Éléments parents  
 
@@ -74,5 +74,5 @@ Contient une liste facultative de paramètres qui seront présents sur la tâche
 
 ## <a name="see-also"></a>Voir aussi  
  [Tâches](../msbuild/msbuild-tasks.md)   
- [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)   
- [Référence du schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
+ [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)   
+ [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

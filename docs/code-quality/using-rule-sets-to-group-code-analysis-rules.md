@@ -1,5 +1,5 @@
 ---
-title: Définit des règles d’analyse du code dans Visual Studio
+title: Ensembles de règles d'analyse du code
 ms.date: 04/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,24 +13,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20e727fd331ebd98a74acbb63738e6921e5ad1a0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fa287570213e6238d0a8dffc9f6e70367b133591
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923053"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204425"
 ---
-# <a name="use-rule-sets-to-group-code-analysis-rules"></a>Utiliser la règle définit aux règles d’analyse de code de groupe
+# <a name="use-rule-sets-to-group-code-analysis-rules"></a>Utiliser la règle définit pour les règles d’analyse de code de groupe
 
-Lorsque vous configurez l’analyse du code dans Visual Studio, vous pouvez choisir parmi une liste d’intégré *ensembles de règles*. Un ensemble de règles s’applique à un projet et est un regroupement de code des règles d’analyse qui identifient les problèmes ciblés et des conditions spécifiques pour ce projet. Par exemple, vous pouvez appliquer un ensemble de règles est conçu pour analyser le code des API publiques disponibles, ou simplement la valeur minimale des règles recommandées. Vous pouvez également appliquer un ensemble de règles qui inclut toutes les règles.
+Lorsque vous configurez l’analyse du code dans Visual Studio, vous pouvez choisir parmi une liste des intégré *ensembles de règles*. Un ensemble de règles s’applique à un projet et est un regroupement de code des règles d’analyse qui identifient les problèmes ciblés et des conditions spécifiques pour ce projet. Par exemple, vous pouvez appliquer un ensemble de règles est conçu pour analyser le code des API disponibles publiquement, ou simplement la valeur minimale des règles recommandées. Vous pouvez également appliquer un ensemble de règles qui inclut toutes les règles.
 
-Vous pouvez personnaliser un ensemble de règles en ajoutant ou supprimant des règles, ou en modifiant les niveaux de gravité de règle apparaissent comme des avertissements ou erreurs dans le **liste d’erreurs**. Ensembles de règles personnalisés peuvent répondre à un besoin pour votre environnement de développement particulier. Lorsque vous personnalisez un ensemble de règles, l’éditeur d’ensemble de règles fournit des outils pour vous aider dans le processus de filtrage et de recherche.
+Vous pouvez personnaliser un ensemble de règles en ajoutant ou supprimant des règles, ou en modifiant les niveaux de gravité de règle apparaissent comme des avertissements ou erreurs dans le **liste d’erreurs**. Ensembles de règles personnalisés peuvent répondre à un besoin pour votre environnement de développement particulier. Lorsque vous personnalisez un ensemble de règles, l’éditeur d’ensemble de règles fournit la recherche et des outils pour vous aider dans le processus de filtrage.
+
+Ensembles de règles sont disponibles pour [analyse statique du code managé](how-to-configure-code-analysis-for-a-managed-code-project.md), [analyse du code C++](using-rule-sets-to-specify-the-cpp-rules-to-run.md), et [analyseurs de Roslyn](analyzer-rule-sets.md).
 
 ## <a name="rule-set-format"></a>Format d’ensemble de règles
 
-Un ensemble de règles est spécifié au format XML dans un *.ruleset* fichier. Règles, qui se composent d’un ID et un *action*, sont regroupés par ID de l’analyseur et l’espace de noms dans le fichier.
+Un ensemble de règles est spécifié au format XML dans un *.ruleset* fichier. Les règles, qui se composent d’un ID et un *action*, sont regroupés par ID de l’analyseur et l’espace de noms dans le fichier.
 
-Le contenu XML d’un *.ruleset* fichier ressemble à ceci :
+Le contenu d’un *.ruleset* fichier ressemble à ce document XML :
 
 ```xml
 <RuleSet Name="Rules for Hello World project" Description="These rules focus on critical issues for the Hello World app." ToolsVersion="10.0">
@@ -54,9 +56,9 @@ Le contenu XML d’un *.ruleset* fichier ressemble à ceci :
 ```
 
 > [!TIP]
-> Il est plus facile de [modifier un ensemble de règles](../code-quality/working-in-the-code-analysis-rule-set-editor.md) dans l’affichage graphique **Éditeur d’ensemble de règles** que manuellement.
+> Il est plus facile à [modifier un ensemble de règles](../code-quality/working-in-the-code-analysis-rule-set-editor.md) dans le graphique **Éditeur d’ensemble de règles** que manuellement.
 
-La règle définie pour un projet est défini par le `CodeAnalysisRuleSet` propriété dans le fichier de projet Visual Studio. Par exemple :
+La règle définie pour un projet est spécifié par le **CodeAnalysisRuleSet** propriété dans le fichier de projet Visual Studio. Exemple :
 
 ```xml
 <CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>

@@ -1,5 +1,5 @@
 ---
-title: Élément de liste déroulante | Documents Microsoft
+title: Élément de liste déroulante | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca91102467755610144e4d24405e89ace5a013b7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c8ab79ace55b8248b3770f2e5911bf974e724296
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100937"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233124"
 ---
 # <a name="combo-element"></a>Élément de liste déroulante
 Définit des commandes qui s’affichent dans une zone de liste déroulante. Il existe quatre types de zones de liste déroulante, comme suit : DropDownCombo, DynamicCombo, IndexCombo et MRUCombo.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml 
 <combo guid="guidMyCommandSet" id="MyCommand" defaultWidth="20" idCommandList="MyCommandListID" priority="0x102" type="DropDownCombo">  
   <Parent>... </Parent  
   <CommandFlag>... </CommandFlag>  
@@ -44,9 +44,9 @@ Définit des commandes qui s’affichent dans une zone de liste déroulante. Il 
 |GUID|Obligatoire. GUID de l’identificateur de commande/ID GUID.|  
 |ID|Obligatoire. ID de l’identificateur de commande/ID GUID.|  
 |defaultWidth|Obligatoire. Entier qui spécifie une largeur en pixels de la zone de liste déroulante.|  
-|idCommandList|Obligatoire. Un ID qui est envoyé à la cible de commande active pour récupérer la liste des éléments à afficher dans la zone de liste déroulante. L’ID sera dans la même étendue GUID en tant que le contrôle.|  
+|idCommandList|Obligatoire. Un ID qui est envoyé à la cible de commande active pour récupérer la liste des éléments à afficher dans la zone de liste déroulante. L’ID sera dans la même étendue GUID que le contrôle.|  
 |priority|Facultatif. Une valeur numérique qui spécifie la priorité.|  
-|type|Facultatif. Valeur énumérée qui spécifie le type de bouton.<br /><br /> Si non, utilise le bouton.<br /><br /> DropDownCombo<br /> Le VSPackage est chargé pour remplir le contenu de cette zone de liste déroulante. L’utilisateur ne peut pas taper quoi que ce soit dans la zone de texte de ce menu déroulant.<br /><br /> DynamicCombo<br /> Le VSPackage est chargé pour remplir le contenu de cette zone de liste déroulante. L’utilisateur peut modifier cette liste déroulante et sélectionnez également les éléments qu’il contient.<br /><br /> IndexCombo<br /> Identique à DynamicCombo, sauf qu’elle déclenche l’index de l’élément plutôt que son texte.<br /><br /> MRUCombo<br /> Rempli par l’environnement de développement intégré (IDE) pour le compte le VSPackage.  L’utilisateur peut modifier cette zone de liste modifiable. L’IDE se souvient jusqu'à 16 dernières écritures par zone de liste déroulante.<br /><br /> Lorsque l’utilisateur sélectionne un élément dans la zone de liste déroulante, ou passe à un nouvel élément, l’IDE notifie le VSPackage approprié.|  
+|type|Facultatif. Valeur énumérée qui spécifie le type de bouton.<br /><br /> Si non, utilise le bouton.<br /><br /> DropDownCombo<br /> Le VSPackage est chargé de remplir le contenu de cette zone de liste déroulante. L’utilisateur ne peut pas taper quoi que ce soit dans la zone de texte de cette liste déroulante.<br /><br /> DynamicCombo<br /> Le VSPackage est chargé de remplir le contenu de cette zone de liste déroulante. L’utilisateur peut modifier cette liste déroulante et sélectionnez également les éléments qu’il contient.<br /><br /> IndexCombo<br /> Identique à DynamicCombo, à ceci près qu’il déclenche l’index de l’élément plutôt que son texte.<br /><br /> MRUCombo<br /> Rempli par l’environnement de développement intégré (IDE) pour le compte le VSPackage.  L’utilisateur peut modifier dans cette zone de liste déroulante. L’IDE se souvient jusqu'à 16 dernières écritures par zone de liste déroulante.<br /><br /> Lorsque l’utilisateur sélectionne un élément dans la zone de liste déroulante, ou passe à quelque chose de nouveau, l’IDE notifie le VSPackage approprié.|  
 |Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Éléments enfants  
@@ -54,19 +54,19 @@ Définit des commandes qui s’affichent dans une zone de liste déroulante. Il 
 |Élément|Description|  
 |-------------|-----------------|  
 |Parent|Facultatif. L’élément parent du bouton.|  
-|CommandFlag|Obligatoire. Consultez [élément de l’indicateur de commande](../extensibility/command-flag-element.md). Voici les valeurs CommandFlag valides pour un bouton.<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -Les touches filtres<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
-|Chaînes|Obligatoire. Consultez [chaînes élément](../extensibility/strings-element.md). L’élément de ButtonText enfant doit être défini.|  
+|CommandFlag|Obligatoire. Consultez [élément Command flag](../extensibility/command-flag-element.md). Voici les valeurs CommandFlag valides pour un bouton.<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -FilterKeys<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
+|Chaînes|Obligatoire. Consultez [élément Strings](../extensibility/strings-element.md). L’élément ButtonText enfant doit être défini.|  
 |Annotation|Commentaire facultatif.|  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément Commands](../extensibility/commands-element.md)|Représente la collection de commandes dans la barre d’outils du VSPackage.|  
+|[Élément Commands](../extensibility/commands-element.md)|Représente la collection de commandes sur la barre d’outils de VSPackage.|  
   
 ## <a name="example"></a>Exemple  
   
-```  
+```xml  
 <Combo guid="guidWidgetPackage" id="cmdidInsertOptions"  
   defaultWidth="100" idCommandList="cmdidGetInsertOptionsList">  
   <CommandFlag>DynamicVisibility</CommandFlag>  
@@ -87,4 +87,4 @@ Définit des commandes qui s’affichent dans une zone de liste déroulante. Il 
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Fichiers Visual Studio Command Table (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio fichiers command table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

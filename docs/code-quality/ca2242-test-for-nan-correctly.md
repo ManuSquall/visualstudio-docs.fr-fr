@@ -13,16 +13,20 @@ ms.assetid: e12dcffc-e255-4e1e-8fdf-3c6054d44abe
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 164072203a4dc4dc9d0351f6c45f425260078848
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c742c73d73802a21ea7a21a426cf815ee4e34e2d
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921304"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545617"
 ---
 # <a name="ca2242-test-for-nan-correctly"></a>CA2242 : Effectuez correctement des tests NaN
+
 |||
 |-|-|
 |TypeName|TestForNaNCorrectly|
@@ -34,10 +38,10 @@ ms.locfileid: "31921304"
  Une expression teste une valeur par rapport à <xref:System.Single.NaN?displayProperty=fullName> ou <xref:System.Double.NaN?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Description de la règle
- <xref:System.Double.NaN?displayProperty=fullName>, qui représente le not-a-number, résulte lorsqu’une opération arithmétique est indéfinie. Toute expression qui teste l’égalité entre une valeur et <xref:System.Double.NaN?displayProperty=fullName> retourne toujours `false`. Toute expression qui teste l’inégalité entre une valeur et <xref:System.Double.NaN?displayProperty=fullName> retourne toujours `true`.
+ <xref:System.Double.NaN?displayProperty=fullName>, qui représente le not-a-number, se produit lorsque l’opération arithmétique n’est pas définie. Toute expression qui teste l’égalité entre une valeur et <xref:System.Double.NaN?displayProperty=fullName> retourne toujours `false`. Toute expression qui teste l’inégalité entre une valeur et <xref:System.Double.NaN?displayProperty=fullName> retourne toujours `true`.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle et permettra de déterminer si une valeur représente <xref:System.Double.NaN?displayProperty=fullName>, utilisez <xref:System.Single.IsNaN%2A?displayProperty=fullName> ou <xref:System.Double.IsNaN%2A?displayProperty=fullName> pour tester la valeur.
+ Pour corriger une violation de cette règle et de déterminer avec précision si une valeur représente <xref:System.Double.NaN?displayProperty=fullName>, utilisez <xref:System.Single.IsNaN%2A?displayProperty=fullName> ou <xref:System.Double.IsNaN%2A?displayProperty=fullName> pour tester la valeur.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez aucun avertissement de cette règle.

@@ -10,22 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb48c27ab305908ddbf68334fd818bb9c07cfd1e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 1409431b0cdaec775ecd420fb9b6ea1ded0868de
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748798"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626810"
 ---
 # <a name="analyze-cpu-usage"></a>Analyser l’utilisation de l’UC
 Lorsque vous devez étudier les problèmes de performances de votre application, un bon point de départ consiste à comprendre son utilisation du processeur. L’outil **Utilisation du processeur** vous montre où le processeur exécute du code Visual C++, Visual C#/Visual Basic et JavaScript. À compter de Visual Studio 2015 Update 1, vous pouvez afficher une répartition par fonction de l’utilisation du processeur sans quitter le débogueur. Vous pouvez activer et désactiver le profilage du processeur pendant le débogage, et afficher les résultats quand l’exécution est arrêtée, par exemple à un point d’arrêt.  
   
-Vous disposez de plusieurs options pour exécuter et gérer votre session de diagnostic. Par exemple, vous pouvez exécuter l’outil **Utilisation du processeur** sur les ordinateurs locaux ou distants, ou bien dans un simulateur ou un émulateur. Vous pouvez analyser les performances d’un projet ouvert dans Visual Studio, attaché à une application en cours d’exécution, ou démarrer une application installée à partir du Microsoft Store. Pour plus d’informations, consultez [Exécution des outils de profilage avec ou sans débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Vous disposez de plusieurs options pour exécuter et gérer votre session de diagnostic. Par exemple, vous pouvez exécuter l’outil **Utilisation du processeur** sur les ordinateurs locaux ou distants, ou bien dans un simulateur ou un émulateur. Vous pouvez analyser les performances d’un projet ouvert dans Visual Studio, attaché à une application en cours d’exécution, ou démarrer une application installée à partir du Microsoft Store. Pour plus d’informations, consultez [Exécution des outils de profilage avec ou sans débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md). 
 
-Nous vous montrons ici comment collecter et analyser l’utilisation de l’UC avec les versions finales. Pour analyser l’utilisation de l’UC pendant le débogage, consultez [Guide du débutant en profilage des performances](../profiling/beginners-guide-to-performance-profiling.md). 
+Nous vous montrons ici comment collecter et analyser l’utilisation de l’UC avec les versions finales. Pour analyser l’utilisation de l’UC pendant le débogage, consultez [Guide du débutant en profilage des performances](../profiling/beginners-guide-to-performance-profiling.md).
 
-> [!NOTE]
-> Pour .NET Core et ASP.NET Core, l’outil Utilisation de l’UC ne fournit pas de résultats précis avec les fichiers PBD portables. Utilisez des fichiers PDB complets à la place.
+Windows 7 ou version ultérieure est obligatoire pour utiliser l’outil de profilage présenté dans cet article, à savoir le [Profileur de performances](../profiling/profiling-feature-tour.md).
   
 ##  <a name="collect-cpu-usage-data"></a>Collecter les données d'utilisation de l'UC  
   

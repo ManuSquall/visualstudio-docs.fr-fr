@@ -1,5 +1,5 @@
 ---
-title: Élément CustomDataSignature (modèles Visual Studio) | Documents Microsoft
+title: Élément CustomDataSignature (modèles Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f56f9b2ffcb09ea8399b6d949cc781f5a99e7c2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b2f32c90adf1732cac1542935a8a6ce2da983c35
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097326"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500642"
 ---
-# <a name="customdatasignature-element-visual-studio-templates"></a>Élément CustomDataSignature (modèles Visual Studio)
+# <a name="customdatasignature-element-visual-studio-templates"></a>Élément CustomDataSignature (modèles Visual Studio)
 Spécifie la signature de texte pour localiser les données personnalisées.  
   
  \<VSTemplate >  
@@ -47,16 +47,16 @@ Spécifie la signature de texte pour localiser les données personnalisées.
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Définit la catégorie du modèle et comment il est affiché, que ce soit le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Définit la catégorie du modèle et comment il est affiché dans un le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.|  
   
 ## <a name="text-value"></a>Valeur texte  
  Une valeur texte est requise.  
   
- Le texte est une chaîne qui possède la signature de texte qui est nécessaire pour localiser les données personnalisées.  
+ Le texte est une chaîne qui a la signature de texte qui est nécessaire pour localiser les données personnalisées.  
   
 ## <a name="remarks"></a>Notes  
  `CustomDataSignature` est un élément facultatif.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
+ [Référence de schéma de modèle de Studio Visual](../extensibility/visual-studio-template-schema-reference.md)   
+ [Création de modèles de projets et d’éléments](../ide/creating-project-and-item-templates.md)

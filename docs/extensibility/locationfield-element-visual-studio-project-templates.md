@@ -1,5 +1,5 @@
 ---
-title: LocationField, élément (modèles de projet Visual Studio) | Documents Microsoft
+title: LocationField, élément (modèles de projet Visual Studio) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0877d374317e3a7142996b012ff6abefc6b94724
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 76ed39186796b692dd6bc93ab0eaea50f217b7af
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138757"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636283"
 ---
-# <a name="locationfield-element-visual-studio-project-templates"></a>LocationField, élément (modèles de projet Visual Studio)
+# <a name="locationfield-element-visual-studio-project-templates"></a>LocationField, élément (modèles de projet Visual Studio)
 Spécifie si le **emplacement** zone de texte dans le **nouveau projet** boîte de dialogue est activée, désactivée ou masquée pour le modèle de projet.  
   
  \<VSTemplate >  
@@ -48,18 +48,18 @@ Spécifie si le **emplacement** zone de texte dans le **nouveau projet** boîte 
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Définit la catégorie du modèle et comment il s’affiche, que ce soit le **nouveau projet**.|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Définit la catégorie du modèle et comment il s’affiche dans le **nouveau projet**.|  
   
 ## <a name="text-value"></a>Valeur texte  
  Une valeur texte est requise.  
   
- Les valeurs texte valides sont :  
+ Valeurs texte valides sont :  
   
--   `Enabled`, qui spécifie que la **emplacement** zone de la **nouveau projet** boîte de dialogue est activée.  
+-   `Enabled`, qui spécifie que le **emplacement** zone de la **nouveau projet** boîte de dialogue est activée.  
   
--   `Disabled`, qui spécifie que la **emplacement** zone de la **nouveau projet** boîte de dialogue est désactivée.  
+-   `Disabled`, qui spécifie que le **emplacement** zone de la **nouveau projet** boîte de dialogue est désactivée.  
   
--   `Hidden`, qui spécifie que la **emplacement** zone de la **nouveau projet** boîte de dialogue est masquée.  
+-   `Hidden`, qui spécifie que le **emplacement** zone de la **nouveau projet** boîte de dialogue est masquée.  
   
 ## <a name="remarks"></a>Notes  
  La valeur par défaut est `Enabled`.  
@@ -97,5 +97,5 @@ Spécifie si le **emplacement** zone de texte dans le **nouveau projet** boîte 
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
+ [Référence de schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Création de modèles de projets et d’éléments](../ide/creating-project-and-item-templates.md)

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93cc4b36372d1e5ef6c81f16dc74285c336d08cc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 297f6025cb8ea24ad333f9e6962d8659e78eb8d2
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914573"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551871"
 ---
 # <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717 : Seuls les noms des enums FlagsAttribute doivent être au pluriel
 |||
@@ -35,14 +35,14 @@ ms.locfileid: "31914573"
  Le nom d’une énumération extérieurement visible se termine par un mot au pluriel et l’énumération n’est pas marquée avec le <xref:System.FlagsAttribute?displayProperty=fullName> attribut.
 
 ## <a name="rule-description"></a>Description de la règle
- Conventions d’affectation de noms exigent un nom au pluriel pour une énumération indique que plusieurs valeurs de l’énumération peuvent être spécifiées simultanément. La <xref:System.FlagsAttribute> indique aux compilateurs que l’énumération doit être traitée comme un champ de bits qui autorise des opérations au niveau du bit dans l’énumération.
+ Selon les conventions d’affectation de noms qu’un nom au pluriel pour une énumération indique que plusieurs valeurs de l’énumération peuvent être spécifiées simultanément. La <xref:System.FlagsAttribute> indique aux compilateurs que l’énumération doit être traitée comme un champ de bits qui autorise des opérations au niveau du bit sur l’énumération.
 
- Si uniquement une valeur d’une énumération peut être spécifiée à la fois, le nom de l’énumération doit être un mot au singulier. Par exemple, une énumération qui définit les jours de la semaine peut être conçue pour une utilisation dans une application où vous pouvez spécifier plusieurs jours. Cette énumération doit avoir le <xref:System.FlagsAttribute> et peut être appelée 'Jours'. Une énumération semblable qui permet uniquement à un jour d’être spécifié n’aurait pas l’attribut et peut être appelée « Day ».
+ Si seulement une valeur d’une énumération peut être spécifiée à la fois, le nom de l’énumération doit être un mot au singulier. Par exemple, une énumération qui définit les jours de la semaine peut être conçue pour une utilisation dans une application dans laquelle vous pouvez spécifier plusieurs jours. Cette énumération doit avoir le <xref:System.FlagsAttribute> et peut être appelée 'Jours'. Une énumération semblable qui permet uniquement à un jour d’être spécifié n’a pas l’attribut et peut être appelée « Day ».
 
  Conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit le temps nécessaire pour apprendre une nouvelle bibliothèque de logiciels et confirment au client que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Vérifiez le nom de l’énumération un mot au singulier ou ajoutez le <xref:System.FlagsAttribute>.
+ Rendre le nom de l’énumération un mot au singulier ou ajoutez le <xref:System.FlagsAttribute>.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Il est possible de supprimer un avertissement à partir de la règle si le nom se termine par un mot au singulier.
@@ -55,4 +55,6 @@ ms.locfileid: "31914573"
  [CA2217 : Ne marquez pas les énumérations avec FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Voir aussi
- <xref:System.FlagsAttribute?displayProperty=fullName> [Conception de l’enum](/dotnet/standard/design-guidelines/enum)
+
+- <xref:System.FlagsAttribute?displayProperty=fullName>
+- [Conception d’énumérations](/dotnet/standard/design-guidelines/enum)

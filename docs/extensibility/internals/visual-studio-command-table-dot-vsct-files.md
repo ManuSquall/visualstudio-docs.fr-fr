@@ -1,5 +1,5 @@
 ---
-title: Tableau de commandes de Visual Studio (. Fichiers VSCT) | Documents Microsoft
+title: Visual Studio Command Table (. Fichiers VSCT) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,30 +14,30 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3407c21f242cf45337ddad2ff19993d9e0130fbf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb1cf61f1c1120e27ffcb5a93eff35817f1ed0b3
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140467"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495867"
 ---
-# <a name="visual-studio-command-table-vsct-files"></a>Tableau de commandes de Visual Studio (. Fichiers VSCT)
-Un fichier de configuration de table de commande est un fichier texte qui décrit l’ensemble des commandes contenant un VSPackage. Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] commande compilateur de table (VSTC) compile des fichiers de configuration XML (fichiers .vsct) en fichiers de sortie (.cto) de table de commande binary. Les fichiers .cto résultants sont les mêmes que celles qui sont créées en utilisant le compilateur de table (CTC) de commande pour compiler des fichiers de configuration .ctc. Toutefois, les fichiers .vsct de basé sur XML a certains avantages, notamment un éditeur XML et le XML IntelliSense.  
+# <a name="visual-studio-command-table-vsct-files"></a>Fichiers Visual Studio Command Table (.Vsct)
+Un fichier de configuration de table de commande est un fichier texte qui décrit l’ensemble des commandes qui contient un VSPackage. Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] commande les compilateur (VSTC) de table compile les fichiers de configuration XML (fichiers .vsct) en fichiers de sortie (.cto) de table de commande binaire. Les fichiers .cto résultants sont les mêmes que celles qui sont créées en utilisant le compilateur de table (CTC) de commande pour compiler des fichiers de configuration .ctc. Toutefois, les fichiers .vsct basé sur XML a certains avantages, notamment un éditeur XML et le XML IntelliSense.  
   
- Pour en savoir plus sur la syntaxe et la sémantique des fichiers .vsct, consultez [conception d’une Table de commande XML (. Fichiers VSCT)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
+ Pour en savoir plus sur la syntaxe et la sémantique des fichiers .vsct, consultez [conception XML Command Table (. Fichiers VSCT)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Conception de fichiers XML Command Table (.Vsct)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
  Explique comment concevoir des fichiers .vsct.  
   
  [Guide pratique pour créer un fichier .Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)  
- Compare les méthodes de création d’un fichier .vsct. Décrit le processus de création manuelle d’un nouveau fichier .vsct.  
+ Compare les méthodes de création d’un fichier .vsct. Décrit le processus permettant de créer manuellement un nouveau fichier .vsct.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
  [Schéma de référence XML VSCT](../../extensibility/vsct-xml-schema-reference.md)  
- Fournit des détails sur chaque section du fichier de configuration XML de table de commande.  
+ Fournit des détails sur chaque section du fichier de configuration XML de table de commandes.  
   
- [Configuration de la Table de commandes (. Fichiers CTC)](http://msdn.microsoft.com/en-us/3413dda1-f372-4669-bcf0-c64d3463842c)  
+ [Commande de Configuration de la Table (. Fichiers CTC)](https://msdn.microsoft.com/library/3413dda1-f372-4669-bcf0-c64d3463842c)  
  Présente une vue d’ensemble du format de fichier .ctc déconseillées.  
   
  [Comment VSPackages ajoute des éléments de l’interface utilisateur](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  

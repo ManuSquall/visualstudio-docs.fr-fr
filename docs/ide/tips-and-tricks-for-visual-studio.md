@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a420876ca53f5d3cb407d759ebbc9bb430f7a5ad
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: cc99820eded646d745d54e50fb58917a2c15b094
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32065063"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321279"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Raccourcis clavier pour Visual Studio
 
@@ -127,5 +127,5 @@ Vous pouvez naviguer dans Visual Studio plus facilement en utilisant les raccour
 ## <a name="see-also"></a>Voir aussi
 
 - [Conseils et astuces d’accessibilité](../ide/reference/accessibility-tips-and-tricks.md)
-- [Raccourcis clavier (VSTS et TFS)](/vsts/collaborate/keyboard-shortcuts)
+- [Raccourcis clavier (Azure DevOps Services et TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)
 - [Blog de conseils et d’astuces pour Visual Studio](http://blogs.msdn.com/b/zainnab)

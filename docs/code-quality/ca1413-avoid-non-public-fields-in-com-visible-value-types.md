@@ -14,16 +14,20 @@ ms.assetid: 1352e7eb-fefc-4239-8847-25edc7804a54
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 11f2badbf6af73367dcdfe90344012704b8de8b4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 060d8ebd26b08ef02a9986846bdab2a25a85072f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917079"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547904"
 ---
 # <a name="ca1413-avoid-non-public-fields-in-com-visible-value-types"></a>CA1413 : Éviter les champs non publics dans les types valeur visibles par COM
+
 |||
 |-|-|
 |TypeName|AvoidNonpublicFieldsInComVisibleValueTypes|
@@ -35,18 +39,18 @@ ms.locfileid: "31917079"
  Un type valeur qui est marqué spécifiquement comme visible pour COM Component Object Model () déclare un champ d’instance non publics.
 
 ## <a name="rule-description"></a>Description de la règle
- Les champs d'instance non publics des types valeur visibles par COM sont visibles par les clients COM. Passez en revue le contenu du champ pour plus d’informations qui ne doivent pas être exposées, ou qui aura un effet de conception ou de sécurité involontaire.
+ Les champs d'instance non publics des types valeur visibles par COM sont visibles par les clients COM. Passez en revue le contenu du champ pour plus d’informations qui ne doivent pas être exposées et qui aura un effet de conception ou de sécurité involontaire.
 
- Par défaut, tous les types valeur publics sont visibles par COM. Toutefois, pour réduire les faux positifs, cette règle requiert la visibilité COM du type à être défini explicitement. L’assembly conteneur doit être marqué avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> la valeur `false` et le type doit être marqué avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute> la valeur `true`.
+ Par défaut, tous les types valeur publics sont visibles par COM. Toutefois, pour réduire les faux positifs, cette règle requiert que la visibilité COM du type d’être explicitement spécifié. L’assembly conteneur doit être marqué avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> définie sur `false` et le type doit être marqué avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute> défini sur `true`.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle et garder le champ masqué, remplacez le type valeur à un type référence ou supprimez la <xref:System.Runtime.InteropServices.ComVisibleAttribute> attribut à partir du type.
+ Pour corriger une violation de cette règle et garder le champ masqué, modifier le type de valeur à un type référence ou de supprimer le <xref:System.Runtime.InteropServices.ComVisibleAttribute> attribut à partir du type.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Il est possible de supprimer un avertissement de cette règle si l’exposition publique du champ est acceptable.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre un type qui enfreint la règle.
+ L’exemple suivant montre un type qui viole la règle.
 
  [!code-csharp[FxCop.Interoperability.NonpublicField#1](../code-quality/codesnippet/CSharp/ca1413-avoid-non-public-fields-in-com-visible-value-types_1.cs)]
  [!code-vb[FxCop.Interoperability.NonpublicField#1](../code-quality/codesnippet/VisualBasic/ca1413-avoid-non-public-fields-in-com-visible-value-types_1.vb)]
@@ -57,4 +61,6 @@ ms.locfileid: "31917079"
  [CA1017 : Marquez les assemblys avec ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>Voir aussi
- [Interopérabilité avec du Code non managé](/dotnet/framework/interop/index) [qualifier des Types .NET pour l’interopérabilité](/dotnet/framework/interop/qualifying-net-types-for-interoperation)
+
+- [Interopération avec du code non managé](/dotnet/framework/interop/index)
+- [Qualifier des types .NET pour l'interopérabilité](/dotnet/framework/interop/qualifying-net-types-for-interoperation)

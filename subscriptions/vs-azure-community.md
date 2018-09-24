@@ -9,12 +9,12 @@ description: Découvrez l’avantage Azure Community inclus dans certains abonne
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ded290950425801f4e75dc03156f4260db264cfd
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 92115e0beef07b50e2ea0783ccde6a9cc792c838
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280375"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283728"
 ---
 # <a name="azure-community"></a>Communauté Azure
 
@@ -37,16 +37,16 @@ Il est facile de bien démarrer avec la Communauté Azure.
 1. Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Recherchez la vignette Communauté Azure dans la section Support, puis cliquez sur le lien **Obtenir de l’aide**.
-
-   ![Vignette Communauté Azure](_img/vs-azure-community/vs-azure-community-tile.png)
+    > [!div class="mx-imgBorder"]
+    >![Vignette de la Communauté Azure](_img/vs-azure-community/vs-azure-community-tile.png)
 
 3. La liste des forums disponibles s’affiche.  Cliquez simplement sur le forum de votre choix.
-
-   ![Forums Communauté Azure](_img/vs-azure-community/vs-azure-community-forums.png)
+    > [!div class="mx-imgBorder"]
+    > ![Communauté Azure, Forums](_img/vs-azure-community/vs-azure-community-forums.png)
 
 4.  Dans le forum, vous pouvez afficher les rubriques et les réponses, recherchez des réponses à vos questions ou poser une nouvelle question.
-
-   ![Exemple Communauté Azure](_img/vs-azure-community/vs-azure-community-example.png)
+    > [!div class="mx-imgBorder"]
+    > ![Communauté Azure, Exemple](_img/vs-azure-community/vs-azure-community-example.png)
 
 ## <a name="eligibility"></a>Éligibilité
 La disponibilité de l’avantage Azure Community dépend de votre niveau d’abonnement, comme indiqué ci-dessous :
@@ -68,4 +68,4 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 -  Pour d’autres ressources relatives à la Communauté Azure, visitez la [page Support](https://azure.microsoft.com/support/forums/) de la Communauté Azure.
 -  [Documentation Azure](/azure/).
 -  Besoin d’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio ?  Contactez le [Support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  Vous avez des questions concernant l’IDE Visual Studio, Visual Studio Team Services ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
+-  Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).

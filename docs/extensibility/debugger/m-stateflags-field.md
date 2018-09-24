@@ -1,5 +1,5 @@
 ---
-title: m_stateFlags champ | Documents Microsoft
+title: Champ m_stateFlags | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,30 +13,30 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8842b4e7a3b6c0cb13b0c0d446e0e03b525ae903
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ee0cdebe00acce67fc9032a4ba9e7e566ecd9786
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098119"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232076"
 ---
-# <a name="mstateflags-field"></a>m_stateFlags champ
+# <a name="mstateflags-field"></a>champ m_stateFlags
 Stocke des informations sur l’état actuel de la <xref:System.Threading.Tasks.Task> objet.  
   
  **Namespace :** <xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **Assembly :** mscorlib (dans mscorlib.dll)  
+ **Assembly :** mscorlib (dans *mscorlib.dll*)  
   
  Étant donné que vous ne pouvez pas accéder à ce membre interne du .NET Framework, la syntaxe suivante est fournie en commun Intermediate Language (CIL).  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```csharp  
 .field assembly int32 modreq(System.Runtime.CompilerServices.IsVolatile) m_stateFlags  
 ```  
   
 ## <a name="remarks"></a>Notes  
- Vous utilisez généralement la <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> propriété pour accéder à cette valeur.  
+ Vous utilisez généralement le <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> propriété pour accéder à cette valeur.  
   
  Ce membre peut être n’importe quelle combinaison des valeurs suivantes :  
   

@@ -13,13 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 885d01d0d8f363a0b5b3a6abe2d3c2c018334092
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ce535ee8df4d33ad67f62c3a69def65ceabf3e79
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255156"
 ---
-# <a name="performance-session-overview"></a>Vue d’ensemble des sessions de performances
+# <a name="performance-session-overview"></a>Vue d’ensemble de la session de performance
 Cette vue d’ensemble explique les principes de base du profilage. Les développeurs qui débutent dans le domaine des tâches liées aux performances vont découvrir comment les outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] peuvent leur permettre de devenir rapidement productifs et d’optimiser les performances de leur code. Quant aux développeurs expérimentés dans le profilage, ils peuvent obtenir une vue d’ensemble des fonctionnalités et des processus spécifiques des outils de profilage.  
   
  Les outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permettent d’identifier les problèmes de performance dans le code source et de comparer les performances des solutions potentielles. Les Assistants et les paramètres par défaut des outils de profilage peuvent vous fournir instantanément des renseignements sur de nombreux problèmes de performance. Les fonctionnalités et les options des outils de profilage contrôlent avec précision le processus de profilage. Elles permettent notamment de cibler des sections de code précises, de collecter des informations de durée de niveau bloc et d’inclure des données supplémentaires sur les performances du processeur et du système dans vos données.  
@@ -76,4 +77,4 @@ Cette vue d’ensemble explique les principes de base du profilage. Les dévelop
   
 ## <a name="see-also"></a>Voir aussi  
  [Vues d’ensemble](../profiling/overviews-performance-tools.md)   
- [Procédure pas à pas : Identification des problèmes de performances](../profiling/walkthrough-identifying-performance-problems.md)
+ [Procédure pas à pas : identifier les problèmes de performances](../profiling/walkthrough-identifying-performance-problems.md)
