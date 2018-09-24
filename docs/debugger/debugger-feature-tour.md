@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6d0354e7e7c5f59c070baa6e6913d85cf7c06d
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: e2339dcfe80e994b8bc9062d137263d3b25d274d
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433546"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542414"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Tout d’abord examiner le débogueur Visual Studio
 
@@ -211,7 +211,7 @@ Vous pouvez parcourir et afficher les captures instantanées à l’aide des bou
 
 ![Étape vers l’arrière et vers l’avant](../debugger/media/intellitrace-step-back-icons-description.png  "boutons étape précédente et étape suivante")
 
-Pour plus d’informations, consultez la page [Afficher des captures instantanées avec le retour en arrière IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md).
+Pour plus d’informations, consultez le [Inspecter les États d’application précédent à l’aide d’IntelliTrace](../debugger/view-historical-application-state.md) page.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

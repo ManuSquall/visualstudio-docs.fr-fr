@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ba3225d793baed9325612ad5b88bd55d629c44f
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 59ff5fa898aa808c99dd5f52df1605336edd1694
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495724"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542466"
 ---
 # <a name="intellitrace-features"></a>Fonctionnalités IntelliTrace
 
@@ -50,7 +50,7 @@ Si vous êtes en cours de débogage, interrompez-le. Accédez à **Outils > Opti
 
 ## <a name="Snapshots"></a> Collecter des instantanés
 
-Cette option n’est pas activée par défaut, mais IntelliTrace peut capturer des instantanés de votre application à chaque événement d’étape de point d’arrêt et le débogueur, et vous pouvez afficher ces captures instantanées dans une session de débogage historique. Un instantané vous donne un aperçu de votre état de l’application complète. Pour activer la capture d’instantanés, accédez à **Outils > Options > IntelliTrace > Général**, puis sélectionnez **instantanés IntelliTrace (natifs et managés)**. Pour plus d’informations, consultez [afficher les captures instantanées à l’aide d’IntelliTrace revenir en arrière](../debugger/how-to-use-intellitrace-step-back.md)
+Cette option n’est pas activée par défaut, mais IntelliTrace peut capturer des instantanés de votre application à chaque événement d’étape de point d’arrêt et le débogueur, et vous pouvez afficher ces captures instantanées dans une session de débogage historique. Un instantané vous donne un aperçu de votre état de l’application complète. Pour activer la capture d’instantanés, accédez à **Outils > Options > IntelliTrace > Général**, puis sélectionnez **instantanés IntelliTrace (natifs et managés)**. Pour plus d’informations, consultez [Inspecter les États d’application précédent à l’aide d’IntelliTrace](../debugger/view-historical-application-state.md)
 
 Les instantanés sont disponibles dans Visual Studio Enterprise 2017 version 15.5 et versions ultérieures, et il nécessite la mise à jour anniversaire de Windows 10 ou version ultérieure.  Pour les applications .NET Core et ASP.NET Core, Visual Studio Enterprise 2017 version 15.7 est requis. Pour les applications natives ciblant Windows, Visual Studio Enterprise 2017 version 15.9 Preview 2 est requis.
 

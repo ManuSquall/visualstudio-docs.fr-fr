@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba9f5f3ad855cdeb4f5c137ebaea04bca078cebb
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: cfa8b1430bde66416a47d2bbc93bd6f728c0709b
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496010"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542453"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -45,7 +45,7 @@ Vous pouvez utiliser IntelliTrace dans Visual Studio Enterprise Edition (mais pa
 
 |||
 |-|-|
-|**Déboguer mon application avec IntelliTrace :**<br /><br /> -Afficher les événements passés.<br />-Afficher des informations avec les événements passés d’appel.<br />-Enregistrer ma session IntelliTrace.<br />-Contrôler les données IntelliTrace collecte.|- [Affichage de clichés à l’aide d’IntelliTrace étape-arrière](../debugger/how-to-use-intellitrace-step-back.md)<br />- [Procédure pas à pas : À l’aide d’IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Fonctionnalités de IntelliTrace](../debugger/intellitrace-features.md)<br />- [Débogage d’historique](../debugger/historical-debugging.md)|
+|**Déboguer mon application avec IntelliTrace :**<br /><br /> -Afficher les événements passés.<br />-Afficher des informations avec les événements passés d’appel.<br />-Enregistrer ma session IntelliTrace.<br />-Contrôler les données IntelliTrace collecte.|- [Inspecter les États d’application précédent à l’aide d’IntelliTrace](../debugger/view-historical-application-state.md)<br />- [Procédure pas à pas : À l’aide d’IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Fonctionnalités de IntelliTrace](../debugger/intellitrace-features.md)<br />- [Débogage d’historique](../debugger/historical-debugging.md)|
 |**Collecter des données IntelliTrace au cours d’une session de test dans Gestionnaire de tests**|- [Collecter des données de diagnostic plus de tests manuels](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**Collecter des données IntelliTrace à partir des applications déployées**|- [L’utilisation du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**Démarrage du débogage depuis un fichier de journal IntelliTrace (.iTrace fichier).**|- [Utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md)|
@@ -149,7 +149,7 @@ Par défaut, IntelliTrace enregistre uniquement les événements IntelliTrace :
 
 Vous pouvez configurer IntelliTrace pour capturer des instantanés à chaque point d’arrêt et l’événement d’étape du débogueur. IntelliTrace enregistre l’état de l’application complète à chaque instantané, ce qui vous permet d’afficher des variables complexes et évaluer des expressions.
 
-Consultez [afficher les captures instantanées à l’aide d’IntelliTrace revenir en arrière](../debugger/how-to-use-intellitrace-step-back.md).
+Consultez [Inspecter les États d’application précédent à l’aide d’IntelliTrace](../debugger/view-historical-application-state.md).
 
 **Collecter des informations sur les appels de fonction**
 
