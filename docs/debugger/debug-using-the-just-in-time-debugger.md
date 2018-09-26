@@ -1,7 +1,7 @@
 ---
 title: Déboguer à l’aide du débogueur juste à temps | Microsoft Docs
 ms.custom: ''
-ms.date: 07/06/17
+ms.date: 09/24/18
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa31d9d9b536a614cc1000f7c25ae6fbb5e4d510
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 7a2e6cfbd6d26d575bab5d7592f320779ffd8888
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176439"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168394"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Déboguer à l’aide du débogueur juste à temps dans Visual Studio
 Le débogage juste-à-temps lance Visual Studio automatiquement lorsqu’une exception ou un incident se produit dans une application qui s’exécute en dehors de Visual Studio. Cela vous permet de tester votre application lorsque Visual Studio n’est pas en cours d’exécution et commencez le débogage avec Visual Studio lorsqu’un problème survient.
@@ -48,6 +48,8 @@ Vous pouvez activer ou désactiver le débogage à partir de Visual Studio juste
 4.  Dans le **activer le débogage de ces types de code** zone, sélectionnez ou désactivez les types de programmes adéquats : **managé**, **natif**, ou **Script**.
 
 5.  Cliquez sur **OK**.
+
+    Si vous activez juste-à-temps débogueur, mais vous ne le voyez pas sur un incident d’application ou d’une exception, consultez [erreurs de débogage juste-à-temps](#jit_errors).
 
 Le débogage juste-à-temps peut toujours être activé même si Visual Studio n'est plus installé sur votre ordinateur. Lorsque Visual Studio n’est pas installé, vous ne pouvez pas désactiver le débogage à partir de Visual Studio juste-à-temps **Options** boîte de dialogue. Dans ce cas, vous pouvez désactiver le débogage juste-à-temps en modifiant le Registre Windows.
 
@@ -152,28 +154,33 @@ static void Main(string[] args)
 
  Vous pouvez démarrer le débogage à ce stade. S’il s’agissait d’une application réelle, vous devez savoir pourquoi le code lève l’exception.
 
-## <a name="just-in-time-debugging-errors"></a>Erreurs du débogage juste-à-temps
- Si vous ne voyez pas la boîte de dialogue lorsque le programme se bloque, le problème est peut-être en raison des paramètres de rapport d’erreurs Windows sur votre ordinateur. Pour plus d’informations, consultez [. Paramètres de rapport d’erreurs Windows](/windows-hardware/drivers/dashboard/windows-error-reporting-getting-started).
+## <a name="jit_errors"></a> Erreurs de débogage juste-à-temps
+ Si vous ne voyez pas la boîte de dialogue lorsque le programme se bloque et avez besoin activer la fonctionnalité, le problème est peut-être en raison des paramètres de rapport d’erreurs Windows sur votre ordinateur. Veillez à ajouter un **désactivé** valeur aux clés de Registre suivante et définissez la valeur sur 1 :
 
- Vous pouvez voir s'afficher les messages d'erreur suivants associés au débogage juste-à-temps.
+* Rapport d’erreurs HKLM\Software\Microsoft\Windows\Windows
+* Rapport d’erreurs HKLM\Software\WOW6432Node\Microsoft\Windows\Windows
+ 
+Pour plus d’informations sur ces paramètres, consultez [. Paramètres de rapport d’erreurs Windows](https://docs.microsoft.com/windows/desktop/wer/wer-settings).
 
--   **Impossible de s’attacher au processus bloqué. Le programme spécifié n’est pas un programme Windows ou MS-DOS.**
+En outre, vous pouvez voir les messages d’erreur suivants associés à juste-à-temps de débogage.
 
-     Cette erreur se produit lorsque vous essayez d’attacher à un processus en cours d’exécution en tant qu’un autre utilisateur.
+- **Impossible de s’attacher au processus bloqué. Le programme spécifié n’est pas un programme Windows ou MS-DOS.**
 
-     Pour contourner ce problème, démarrez Visual Studio, ouvrez le **attacher au processus** boîte de dialogue à partir de la **déboguer** menu, puis recherchez le processus à déboguer dans la **processus disponibles**liste. Si vous ne connaissez pas le nom du processus, examinez le **débogueur de Visual Studio juste à temps** boîte de dialogue et notez l’ID de processus. Sélectionnez le processus dans le **processus disponibles** liste et cliquez sur **attacher**. Dans le **débogueur de Visual Studio juste à temps** boîte de dialogue, cliquez sur **non** pour faire disparaître la boîte de dialogue.
+    Cette erreur se produit lorsque vous essayez d’attacher à un processus en cours d’exécution en tant qu’un autre utilisateur.
 
--   **Débogueur n’a pas pu être démarré, car aucun utilisateur n’est connecté.**
+    Pour contourner ce problème, démarrez Visual Studio, ouvrez le **attacher au processus** boîte de dialogue à partir de la **déboguer** menu, puis recherchez le processus à déboguer dans la **processus disponibles**liste. Si vous ne connaissez pas le nom du processus, examinez le **débogueur de Visual Studio juste à temps** boîte de dialogue et notez l’ID de processus. Sélectionnez le processus dans le **processus disponibles** liste et cliquez sur **attacher**. Dans le **débogueur de Visual Studio juste à temps** boîte de dialogue, cliquez sur **non** pour faire disparaître la boîte de dialogue.
 
-     Cette erreur se produit lorsque le débogage juste-à-temps tente de démarrer Visual Studio sur un ordinateur où aucun utilisateur n'a ouvert de session sur la console. Dans la mesure où aucun utilisateur n'a ouvert de session, il n'y a aucune session utilisateur pour afficher la boîte de dialogue Débogage juste-à-temps.
+- **Débogueur n’a pas pu être démarré, car aucun utilisateur n’est connecté.**
 
-     Pour résoudre ce problème, ouvrez une session sur l'ordinateur.
+    Cette erreur se produit lorsque le débogage juste-à-temps tente de démarrer Visual Studio sur un ordinateur où aucun utilisateur n'a ouvert de session sur la console. Dans la mesure où aucun utilisateur n'a ouvert de session, il n'y a aucune session utilisateur pour afficher la boîte de dialogue Débogage juste-à-temps.
 
--   **Classe non inscrite.**
+    Pour résoudre ce problème, ouvrez une session sur l'ordinateur.
 
-     Cette erreur indique que le débogueur a essayé de créer une classe COM qui n'est pas inscrite, probablement en raison d'un problème d'installation.
+- **Classe non inscrite.**
 
-     Pour résoudre ce problème, utilisez le disque d'installation pour réinstaller ou réparer votre installation de Visual Studio.
+    Cette erreur indique que le débogueur a essayé de créer une classe COM qui n'est pas inscrite, probablement en raison d'un problème d'installation.
+
+    Pour résoudre ce problème, utilisez le disque d'installation pour réinstaller ou réparer votre installation de Visual Studio.
 
 ## <a name="see-also"></a>Voir aussi
  [Sécurité du débogueur](../debugger/debugger-security.md) [principes fondamentaux du débogueur](../debugger/getting-started-with-the-debugger.md) [juste-à-temps, débogage, boîte de dialogue Options](../debugger/just-in-time-debugging-options-dialog-box.md) [avertissement de sécurité : l’attachement à un processus appartenant à un utilisateur non fiable peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, ne faites pas d’attachement à ce processus](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
