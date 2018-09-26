@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 574f6bb6a48df9df600c4c8be3bd97ffbb9d0382
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9dc5de54ee4c983fd422437af170c065ac72413c
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283333"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496062"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Utiliser Visual Studio Tools pour Unity
 
@@ -94,14 +94,6 @@ Pour créer des définitions de méthode MonoBehavior vides avec l’Assistant M
 - Dans le menu principal de Visual Studio, choisissez **Affichage > Explorateur de projets Unity**. Raccourci clavier : **Alt**+**Maj**+**E**
 
      ![Afficher la fenêtre Explorateur de projet Unity.](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_unity_project_explorer")
-
-## <a name="unity-error-list"></a>Liste d'erreurs Unity
-
- Vous pouvez afficher les messages à partir de la console Unity à l'intérieur de Visual Studio lorsqu'il est connecté à une instance Unity. Les erreurs et les avertissements Unity sont inclus. Les messages sont affichés dans la fenêtre **Liste d’erreurs** de Visual Studio ; les messages d’erreur Unity s’affichent sous l’onglet **Erreurs**, les messages d’avertissement sous l’onglet **Avertissements** et les autres messages, comme ceux envoyés à l’aide de l’API Unity Debug.Log, sous l’onglet **Messages**.
-
- Votre projet Unity doit être connecté à Visual Studio (cf. la section [Débogage Unity](#unity-debugging)) pour que vous puissiez voir les messages.
-
- Si vous ne voulez pas voir les erreurs, avertissements et messages Unity dans la fenêtre **Liste d’erreurs** de Visual Studio, vous pouvez les désactiver dans le menu Configuration.
 
 ## <a name="unity-debugging"></a>Débogage Unity
 
