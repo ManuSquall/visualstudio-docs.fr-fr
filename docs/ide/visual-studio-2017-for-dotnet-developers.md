@@ -1,7 +1,7 @@
 ---
 title: Améliorer votre productivité pour le développement .NET
 description: Vue d’ensemble de la navigation, de l’analyse du code, des tests unitaires et d’autres fonctionnalités qui vont vous aider à écrire du code .NET plus performant plus rapidement.
-author: gewarren
+author: kuhlenh
 ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 47c24aecce518cc62c93fe5e6885d77f64d49cad
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 545bcaa46226b315fb338e352968c5b74dd0232f
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44125024"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495789"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Guide de productivité C# pour Visual Studio 2017
 

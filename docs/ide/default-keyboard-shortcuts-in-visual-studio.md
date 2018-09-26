@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1bc542665e69a3997b8633ca5e351875f06848
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: cd9f04b616ee7551f04a8c0b260eb69995943a8b
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513172"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371158"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Raccourcis clavier par défaut dans Visual Studio
 
@@ -761,12 +761,6 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |TeamFoundationContextMenus.Commands.TeamExplorerNavigateForward|**Alt+Droite**|
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageCreateCopyWI|**Maj+Alt+C**|
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|**Maj+Alt+L**|
-|View.Refresh|**F5**|
-
-##  <a name="team-foundation-build-detail-editor"></a>Éditeur des détails Team Foundation Build
-
-|Commande|Raccourci clavier|
-|-------------|-----------------------|
 |View.Refresh|**F5**|
 
 ##  <a name="test-explorer"></a>Explorateur de tests

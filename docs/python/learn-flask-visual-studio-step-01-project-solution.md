@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e010dd429c0ef182d9e6dc5ed205e04624c1f367
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9865e8e6faaac7b0c3af28532223ea2d5c9f7c01
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283416"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029064"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutoriel : Bien démarrer avec le framework web Flask dans Visual Studio
 
@@ -36,7 +36,7 @@ Dans ce didacticiel, vous apprendrez à :
 Au cours de ces étapes, vous créez une même solution Visual Studio qui contient trois projets distincts. Vous créez le projet en utilisant différents modèles de projet Flask qui sont inclus dans Visual Studio. Conserver les projets dans la même solution vous pouvez permet de basculer facilement entre différents fichiers pour effectuer des comparaisons.
 
 > [!Note]
-> Ce tutoriel diffère de [Flask - Démarrage rapide](../ide/quickstart-python.md?context=visualstudio/python/default) en cela que vous en apprenez plus sur Flask et que vous découvrez comment utiliser les différents modèles de projet Flask qui constituent un point de départ plus avancé pour vos propres projets. Par exemple, les modèles de projet installent automatiquement le package Flask lors de la création d’un projet, ce qui vous évite de devoir l’installer manuellement, comme expliqué dans le guide de démarrage rapide.
+> Ce tutoriel diffère de [Flask - Démarrage rapide](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json) en cela que vous en apprenez plus sur Flask et que vous découvrez comment utiliser les différents modèles de projet Flask qui constituent un point de départ plus avancé pour vos propres projets. Par exemple, les modèles de projet installent automatiquement le package Flask lors de la création d’un projet, ce qui vous évite de devoir l’installer manuellement, comme expliqué dans le guide de démarrage rapide.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -60,7 +60,7 @@ Le développement Python n’est actuellement pas pris en charge dans Visual Stu
     - **Emplacement** : spécifiez un emplacement où créer la solution et le projet Visual Studio.
     - **Nom de la solution** : défini sur **LearningFlask**, qui convient pour la solution en tant que conteneur pour plusieurs projets de ce tutoriel.
     - **Créer un répertoire pour la solution** : laissez cette option activée (par défaut).
-    - **Créer un dépôt Git** : sélectionnez cette option (qui est clairement par défaut), afin que Visual Studio crée un dépôt Git local lorsqu’il crée la solution. Si vous ne voyez pas cette option, exécutez le programme d’installation de Visual Studio 2017 et ajoutez **Git pour Windows** et **Extension GitHub pour Visual Studio** sous l’onglet **Composants individuels** sous **Outils de code**.
+    - **Créez un référentiel Git** : sélectionnez cette option (qui est clairement par défaut), afin que Visual Studio crée un référentiel Git local lorsqu’il crée la solution. Si vous ne voyez pas cette option, exécutez le programme d’installation de Visual Studio 2017 et ajoutez **Git pour Windows** et **Extension GitHub pour Visual Studio** sous l’onglet **Composants individuels** sous **Outils de code**.
 
 1. Au bout d’un moment, Visual Studio affiche une boîte de dialogue indiquant **Des packages externes sont nécessaires pour ce projet** (voir plus bas). Cette boîte de dialogue s’affiche, car le modèle inclut un fichier *requirements.txt* référençant le dernier package Flask 1.x. (Sélectionnez **Afficher les packages requis** pour voir les dépendances exactes.)
 
@@ -68,32 +68,32 @@ Le développement Python n’est actuellement pas pris en charge dans Visual Stu
 
 1. Sélectionnez l’option **I will install them myself**. Vous créez brièvement l’environnement virtuel pour vous assurer qu’il est exclu du contrôle de code source. (L’environnement peut toujours être créé à partir de *requirements.txt*.)
 
-## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Étape 1-2 : examiner les contrôles Git et publiez sur un dépôt distant
+## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Étape 1-2 : examiner les contrôles Git et publiez sur un référentiel distant
 
-Étant donné que vous avez sélectionné **Créer un dépôt Git** dans la boîte de dialogue **Nouveau projet**, le projet est déjà validé par le contrôle de code source local dès que le processus de création est terminé. À cette étape, vous vous familiarisez avec les contrôles Git de Visual Studio et la fenêtre **Team Explorer** dans laquelle vous travaillez avec le contrôle de code source.
+Étant donné que vous avez sélectionné **Créer un référentiel Git** dans la boîte de dialogue **Nouveau projet**, le projet est déjà validé par le contrôle de code source local dès que le processus de création est terminé. À cette étape, vous vous familiarisez avec les contrôles Git de Visual Studio et la fenêtre **Team Explorer** dans laquelle vous travaillez avec le contrôle de code source.
 
-1. Examinez les contrôles Git dans le coin inférieur de la fenêtre principale de Visual Studio. De gauche à droite, ces contrôles montrent les validations inactives, les modifications non validées, le nom du dépôt et la branche actuelle :
+1. Examinez les contrôles Git dans le coin inférieur de la fenêtre principale de Visual Studio. De gauche à droite, ces contrôles montrent les validations inactives, les modifications non validées, le nom du référentiel et la branche actuelle :
 
     ![Contrôles GIT dans la fenêtre Visual Studio](media/flask/step01-git-controls.png)
 
     > [!Note]
-    > Si vous ne sélectionnez pas **Créer un dépôt Git** dans la boîte de dialogue **Nouveau projet**, les contrôles Git affichent seulement une commande **Ajouter au contrôle de code source** qui crée un dépôt local.
+    > Si vous ne sélectionnez pas **Créer un référentiel Git** dans la boîte de dialogue **Nouveau projet**, les contrôles Git affichent seulement une commande **Ajouter au contrôle de code source** qui crée un référentiel local.
     >
-    > ![Ajouter au contrôle de code Source s’affiche dans Visual Studio si vous n’avez pas créé de dépôt.](media/tutorials-common/step01-git-add-to-source-control.png)
+    > ![Ajouter au contrôle de code Source s’affiche dans Visual Studio si vous n’avez pas créé de référentiel.](media/tutorials-common/step01-git-add-to-source-control.png)
 
 1. Lorsque vous sélectionnez le bouton Modifications, Visual Studio ouvre sa fenêtre **Team Explorer** à la page **Modifications** page. Étant donné que le projet nouvellement créé est déjà automatiquement validé dans le contrôle de code source, vous ne voyez pas de modifications en attente.
 
     ![Fenêtre Team Explorer à la page Modifications](media/flask/step01-team-explorer-changes.png)
 
-1. Dans la barre d’état de Visual Studio, sélectionnez le bouton des validations n’ayant pas fait l’objet d’un Push (flèche haut avec **2**) pour ouvrir la page **Synchronisation** dans **Team Explorer**. Étant donné que vous avez uniquement un dépôt local, la page fournit des options simples pour publier le dépôt sur les différents dépôts à distance.
+1. Dans la barre d’état de Visual Studio, sélectionnez le bouton des validations n’ayant pas fait l’objet d’un Push (flèche haut avec **2**) pour ouvrir la page **Synchronisation** dans **Team Explorer**. Étant donné que vous avez uniquement un référentiel local, la page fournit des options simples pour publier le référentiel sur les différents référentiels à distance.
 
-    ![La fenêtre Team Explorer affiche les options de dépôts disponibles pour le contrôle de code source.](media/flask/step01-team-explorer.png)
+    ![La fenêtre Team Explorer affiche les options de référentiels disponibles pour le contrôle de code source.](media/flask/step01-team-explorer.png)
 
     Vous pouvez choisir le service souhaité pour vos propres projets. Ce tutoriel montre l’utilisation de GitHub, où l’exemple de code terminé pour le tutoriel est conservé dans le dépôt [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask).
 
-1. Lors de la sélection d’un des contrôles **Publication**, **Team Explorer** vous invite à obtenir plus d’informations. Par exemple, lors de la publication de l’exemple de ce tutoriel, le dépôt proprement dit a dû être créé en premier, auquel cas l’option **Push sur le dépôt distant** a été utilisée avec l’URL du dépôt.
+1. Lors de la sélection d’un des contrôles **Publication**, **Team Explorer** vous invite à obtenir plus d’informations. Par exemple, lors de la publication de l’exemple de ce tutoriel, le référentiel proprement dit a dû être créé en premier, auquel cas l’option **Push sur référentiel distant** a été utilisée avec l’URL du référentiel.
 
-    ![Fenêtre Team Explorer pour pousser vers un dépôt distant existant](media/flask/step01-push-to-github.png)
+    ![Fenêtre Team Explorer pour pousser vers un référentiel distant existant](media/flask/step01-push-to-github.png)
 
     Si vous n’avez pas de dépôt existant, les options **Publier sur GitHub** et **Envoyer (push) sur Azure DevOps** vous permettent d’en créer un directement dans Visual Studio.
 
@@ -104,7 +104,7 @@ Le développement Python n’est actuellement pas pris en charge dans Visual Stu
 
 ### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Question : Quels sont les avantages de l’utilisation du contrôle de code source dès le début d’un projet ?
 
-Réponse : Tout d’abord, l’utilisation du contrôle de code source dès le début, en particulier si vous utilisez également un dépôt distant, assure une sauvegarde hors site régulière de votre projet. Contrairement au maintien d’un projet uniquement sur un système de fichiers local, le contrôle de code source fournit également un historique complet des modifications et permet de revenir facilement à un état précédent d’un seul fichier ou de tout le projet. L’historique des modifications aide à déterminer la cause des régressions (échecs de test). Par ailleurs, le contrôle de code source est essentiel si plusieurs personnes travaillent sur un projet, car il gère les remplacements et permet la résolution des conflits. Enfin, grâce au contrôle de code source, qui est fondamentalement une forme d’automatisation, vous êtes bien préparés à l’automatisation de la génération, des tests et de la gestion des versions. Il s’agit bien là de la première étape de l’utilisation de DevOps pour un projet, et étant donné qu’il y a peu d’obstacles à l’entrée, il n’y a vraiment aucune raison de ne pas utiliser le contrôle de code source dès le début.
+Réponse : Tout d’abord, l’utilisation du contrôle de code source dès le début, en particulier si vous utilisez également un référentiel distant, assure une sauvegarde hors site régulière de votre projet. Contrairement au maintien d’un projet uniquement sur un système de fichiers local, le contrôle de code source fournit également un historique complet des modifications et permet de revenir facilement à un état précédent d’un seul fichier ou de tout le projet. L’historique des modifications aide à déterminer la cause des régressions (échecs de test). Par ailleurs, le contrôle de code source est essentiel si plusieurs personnes travaillent sur un projet, car il gère les remplacements et permet la résolution des conflits. Enfin, grâce au contrôle de code source, qui est fondamentalement une forme d’automatisation, vous êtes bien préparés à l’automatisation de la génération, des tests et de la gestion des versions. Il s’agit bien là de la première étape de l’utilisation de DevOps pour un projet, et étant donné qu’il y a peu d’obstacles à l’entrée, il n’y a vraiment aucune raison de ne pas utiliser le contrôle de code source dès le début.
 
 Pour poursuivre la discussion sur le contrôle de code source comme méthode d’automatisation, consultez Pour obtenir des informations supplémentaires sur le contrôle de code source en tant qu’automation, consultez [La Source de vérité : le rôle des référentiels dans DevOps](https://msdn.microsoft.com/magazine/mt763232), un article de MSDN Magazine écrit pour les applications mobiles qui s’applique également aux applications web.
 
@@ -138,7 +138,7 @@ Maintenant que vous avez configuré le contrôle de code source pour votre proje
 
 1. Après l’exclusion de l’environnement virtuel, les seules modifications restantes sont dans le fichier projet et dans *.gitignore*. Le fichier *.gitignore* contient une entrée ajoutée pour le dossier de l’environnement virtuel. Vous pouvez double-cliquer sur le fichier pour voir la différence.
 
-1. Entrez un message de validation et sélectionnez le bouton **Valider tout**, puis envoyez les validations à votre dépôt distant si vous le souhaitez.
+1. Entrez un message de validation et sélectionnez le bouton **Valider tout**, puis envoyez les validations à votre référentiel distant si vous le souhaitez.
 
 ### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Question : Pourquoi créer un environnement virtuel ?
 

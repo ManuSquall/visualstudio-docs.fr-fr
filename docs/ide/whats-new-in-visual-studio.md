@@ -17,16 +17,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 619d7b0f93985f59a46fbc67f289cae8fd7ac8a9
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: d2762843141d1383c1fb4f7d4925b1fbe37a9298
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384186"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029106"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Nouveautés de Visual Studio 2017
 
-**Mis à jour pour la [version 15.8](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)**
+**Mis à jour pour la [version 15.8](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
 
 Vous envisagez de mettre à niveau une version antérieure de Visual Studio ? Visual Studio 2017 peut vous apporter une productivité inégalée pour l’ensemble des développements, applications et plateformes. Utilisez Visual Studio 2017 afin de développer des applications pour Android, iOS, Windows, le web et le Cloud. Écrivez votre code rapidement, déboguez et diagnostiquez facilement, testez souvent et publiez en toute confiance. Vous pouvez également étendre et personnaliser Visual Studio en créant vos propres extensions. Avec cette version, utilisez la gestion de versions, soyez agile et collaborez efficacement !
 
@@ -42,7 +42,7 @@ Voici un récapitulatif général des changements par rapport à la version ant�
 * **[Développement IA](#ai-development)**. Avec Visual Studio Tools for AI, vous pouvez utiliser les fonctionnalités de productivité de Visual Studio pour accélérer l’innovation en matière d’intelligence artificielle (IA). Générez, testez et déployez des solutions de Deep Learning / IA qui s’intègrent directement à Azure Machine Learning pour des fonctionnalités d’expérimentation robustes.
 
 > [!NOTE]
-> Pour obtenir une liste complète des nouvelles fonctions et fonctionnalités disponibles dans Visual Studio 2017, consultez les [notes de la version actuelle](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default). Pour avoir un aperçu des fonctionnalités à venir, consultez les [notes de la préversion](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default).
+> Pour obtenir une liste complète des nouvelles fonctions et fonctionnalités disponibles dans Visual Studio 2017, consultez les [notes de la version actuelle](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017). Pour avoir un aperçu des fonctionnalités à venir, consultez les [notes de la préversion](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default&contextView=vs-2017).
 
 Voici des informations détaillées sur quelques-unes des nouvelles fonctionnalités et des améliorations les plus marquantes de Visual Studio 2017.
 
@@ -50,7 +50,7 @@ Voici des informations détaillées sur quelques-unes des nouvelles fonctionnali
 
 ### <a name="a-new-setup-experience"></a>Une nouvelle expérience d'installation
 
-[Télécharger Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ou [Vérifier la configuration système requise pour Visual Studio](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default)
+[Télécharger Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) ou [Vérifier la configuration système requise pour Visual Studio](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default&contextView=vs-2017)
 
  Visual Studio simplifie et accélère l’installation des fonctionnalités dont vous avez besoin, quand vous en avez besoin. Une désinstallation « propre » est également disponible.
 
@@ -164,7 +164,7 @@ Pour plus d’informations, consultez [Actions rapides](../ide/common-quick-acti
 
 #### <a name="interact-with-git"></a>Interagir avec Git
 
-Lorsque vous travaillez avec un projet dans Visual Studio, vous pouvez installer et rapidement valider et publier votre code sur un service Git. Vous pouvez également gérer vos dépôts Git en cliquant dans les menus à partir des boutons situés en bas à droite de l’IDE.
+Lorsque vous travaillez avec un projet dans Visual Studio, vous pouvez installer et rapidement valider et publier votre code sur un service Git. Vous pouvez également gérer vos référentiels Git en cliquant dans les menus à partir des boutons situés en bas à droite de l’IDE.
 
 ![Visual Studio 2017 interagit avec la boîte de dialogue Git](../ide/media/vsIDE-GitInteraction.png)
 
@@ -258,7 +258,7 @@ Pour plus d’informations, consultez [Déboguer des applications ASP.NET en pro
 
 ### <a name="universal-windows-platform"></a>Plateforme Windows universelle
 
-La plateforme Windows universelle (UWP) est la plateforme d’applications pour Windows 10. Avec seulement un ensemble d’API, un package d’application et un Store, vous pouvez développer des applications UWP qui s’exécutent sur tous les appareils Windows 10 &ndash; PC, tablette, téléphone, Xbox, HoloLens, Surface Hub, etc. UWP prend en charge plusieurs tailles d’écran et de nombreux modèles d’interaction (écran tactile, souris, clavier, commande de jeu ou stylet). La conception des applications UWP s’articule autour de l’idée que les utilisateurs veulent pouvoir utiliser TOUS leurs appareils indifféremment, en choisissant l’appareil qui leur semble le plus pratique ou le plus performant pour la tâche qu’ils ont à faire.
+La plateforme Windows universelle (UWP) est la plateforme d’applications pour Windows 10. Avec seulement un ensemble d’API, un package d’application et un Store, vous pouvez développer des applications UWP qui s’exécutent sur tous les appareils Windows 10 &ndash; PC, tablette, téléphone, Xbox, HoloLens, Surface Hub, etc. UWP prend en charge plusieurs tailles d’écran et de nombreux modèles d’interaction (tactile, souris, clavier, contrôleur de jeu ou stylet). La conception des applications UWP s’articule autour de l’idée que les utilisateurs veulent pouvoir utiliser TOUS leurs appareils indifféremment, en choisissant l’appareil qui leur semble le plus pratique ou le plus performant pour la tâche qu’ils ont à faire.
 
  ![Plateforme Windows universelle](../cross-platform/media/uwp_coreextensions.png)
 
@@ -381,7 +381,7 @@ Si vous souhaitez faire des suggestions sur la façon dont nous pouvons amélior
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Notes de publication de Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)
+* [Notes de publication de Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)
 * [Nouveautés de Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Nouveautés de C#](/dotnet/csharp/whats-new)
 * [Nouveautés de Team Foundation Server](/tfs/server/whats-new?view=vsts)
