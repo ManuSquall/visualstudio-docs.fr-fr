@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 543763049a297a41d2c424da378d486f910f5e1a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 852ca3d81b2dc72e4f0cb518a002b746a77cf5e3
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552056"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860158"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708 : Les identificateurs ne doivent pas différer que par leur casse
 |||
@@ -43,7 +43,7 @@ ms.locfileid: "45552056"
  Sélectionnez un nom qui est unique lorsqu’elle est comparée à d’autres identificateurs dans la casse.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez aucun avertissement de cette règle. La bibliothèque ne peut pas être utilisable dans toutes les langues disponibles dans le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Ne supprimez aucun avertissement de cette règle. La bibliothèque n’est peut-être pas utilisable dans toutes les langues disponibles dans le .NET Framework.
 
 ## <a name="example-of-a-violation"></a>Exemple de Violation
  L’exemple suivant montre une violation de cette règle.

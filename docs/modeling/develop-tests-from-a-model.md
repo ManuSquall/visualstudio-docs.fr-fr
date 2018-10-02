@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3cdffcb5d71d5caac11cbbb0882b79526862bffa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 4f741b8b47b4ddf5b07cec2a612173a52bf5fbd9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279854"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859781"
 ---
 # <a name="develop-tests-from-a-model"></a>Développer des tests à partir d'un modèle
 Vous pouvez utiliser les spécifications et les modèles architecturaux pour mieux organiser les tests de votre système et de ses composants. Cette pratique vous permet de vous assurer que vous testez les impératifs importants des utilisateurs et des autres parties prenantes, et vous aide à mettre rapidement à jour les tests quand les impératifs changent. Si vous utilisez [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], vous pouvez également tenir à jour des liens entre les modèles et les tests.
@@ -61,7 +61,7 @@ Vous pouvez utiliser les spécifications et les modèles architecturaux pour mie
 
 1.  Dans [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], créez un impératif et basez une suite de tests dessus.
 
-     L'impératif que vous créez est un élément de travail dans [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Il peut s'agir d'un élément de travail Récit utilisateur, Spécification ou Cas d'usage, selon le modèle de processus utilisé par votre projet avec [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]. Pour plus d’informations, consultez [outils sur Agile et Agile project management](/azure/devops/boards/backlogs/overview?view=vsts).
+     L'impératif que vous créez est un élément de travail dans [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Il peut être un élément de travail récit utilisateur, une exigence ou cas d’usage, selon le modèle de processus que votre projet utilise avec Team Foundation. Pour plus d’informations, consultez [outils sur Agile et Agile project management](/azure/devops/boards/backlogs/overview?view=vsts).
 
 2.  Liez l'élément de travail Spécification à un ou plusieurs cas d'usage dans votre modèle.
 
@@ -130,7 +130,7 @@ Assert (countAfter == countBefore = 1);
 
  Du point de vue des tests, un modèle d'impératifs peut être considéré comme un raccourci pour les tests. Ainsi, il est important de maintenir la relation entre les tests et le modèle tout au long du projet.
 
-##  <a name="Attaching"></a> Attachement de cas de Test aux éléments de modèle
+## <a name="Attaching"></a> Attachement de cas de Test aux éléments de modèle
  Si votre projet utilise [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], vous pouvez lier des tests aux éléments de votre modèle. Cela vous permet d'identifier rapidement les tests affectés par une modification des impératifs et de suivre dans quelle mesure un impératif a été satisfait.
 
  Vous pouvez lier des tests à tous les types d'éléments. Voici quelques exemples :
@@ -149,7 +149,7 @@ Assert (countAfter == countBefore = 1);
 
 1.  Dans [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], créez un impératif et basez une suite de tests dessus.
 
-     L'impératif que vous créez est un élément de travail dans [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Il peut s'agir d'un élément de travail Récit utilisateur, Spécification ou Cas d'usage, selon le modèle de processus utilisé par votre projet avec [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]. Pour plus d’informations, consultez [outils sur Agile et Agile project management](/azure/devops/boards/backlogs/overview?view=vsts).
+     L'impératif que vous créez est un élément de travail dans [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Il peut être un élément de travail récit utilisateur, une exigence ou cas d’usage, selon le modèle de processus que votre projet utilise avec Team Foundation. Pour plus d’informations, consultez [outils sur Agile et Agile project management](/azure/devops/boards/backlogs/overview?view=vsts).
 
 2.  Liez l'élément de travail Spécification à un ou plusieurs éléments dans votre modèle.
 

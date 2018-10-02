@@ -9,17 +9,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d826787a028aba4f5397ce5577acf60f67120973
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: b69015a58b4772a13c387f67f0dc9d6a2571e1b7
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567339"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859222"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Comment : utiliser des transactions pour mettre à jour le modèle
 Transactions Assurez-vous que les modifications qui ont été apportées dans le magasin sont traitées en tant que groupe. Les modifications qui sont regroupées peuvent être validées ou restaurées en tant qu’unité unique.
 
- Chaque fois que votre code de programme modifie, ajoute ou supprime un élément dans le Store dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Visualization and Modeling SDK, elle doit le faire à l’intérieur d’une transaction. Il doit y avoir une instance active de <xref:Microsoft.VisualStudio.Modeling.Transaction> associé le Store lorsque la modification se produit. Cela s’applique à tous les éléments de modèle, relations, formes, diagrammes et leurs propriétés.
+ Chaque fois que votre code de programme modifie, ajoute ou supprime un élément dans le Store dans Visual Studio Visualization and Modeling SDK, elle doit le faire à l’intérieur d’une transaction. Il doit y avoir une instance active de <xref:Microsoft.VisualStudio.Modeling.Transaction> associé le Store lorsque la modification se produit. Cela s’applique à tous les éléments de modèle, relations, formes, diagrammes et leurs propriétés.
 
  Le mécanisme de transaction vous permet d’éviter des états incohérents. Si une erreur se produit lors d’une transaction, toutes les modifications sont annulées. Si l’utilisateur exécute une commande d’annulation, chaque transaction récente est traitée comme une seule étape. L’utilisateur ne peut pas annuler les parties d’une modification récente, sauf si vous les placez dans des transactions distinctes.
 

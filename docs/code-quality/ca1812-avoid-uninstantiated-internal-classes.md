@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 68597c0748fbc235178da6b6e583c48b9f1b422f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b82f18f4cc6ff5bb2666a51c4e8f37e22fd7d32b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551767"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859001"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812 : Évitez les classes internes non instanciées
 |||
@@ -58,7 +58,7 @@ ms.locfileid: "45551767"
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, supprimez le type ou ajoutez le code qui l’utilise. Si le type contient uniquement des méthodes statiques, ajoutez une des opérations suivantes pour le type pour empêcher le compilateur d’émettre un constructeur d’instance public par défaut :
 
-- Un constructeur privé pour les types qui ciblent [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] versions 1.0 et 1.1.
+- Un constructeur privé pour les types qui ciblent des versions 1.0 et 1.1 du .NET Framework.
 
 - Le `static` (`Shared` en Visual Basic) qui ciblent des types de modificateur pour [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
 

@@ -12,16 +12,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: eb9fb268ec98d60dcea46a8802592261493e4b56
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ab42f0a8b3dafebaf73c116e8ce3295d99ce6fdd
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776169"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859275"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Propagation de modifications en dehors du modèle par des gestionnaires d'événements
 
-Dans Visualization and Modeling SDK, vous pouvez définir des gestionnaires d’événements de magasin pour propager les modifications apportées aux ressources en dehors du magasin, telles que les variables non-store, des fichiers de modèles dans d’autres magasins, ou d’autres [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensions. Gestionnaires d’événements Store sont exécutés après la fin de la transaction dans laquelle l’événement de déclenchement s’est produite. Elles sont également exécutées en une opération d’annulation ou de rétablissement. Par conséquent, contrairement au magasin de règles, événements de stockage sont particulièrement utiles pour la mise à jour des valeurs qui sont en dehors du magasin. Contrairement aux événements de .NET, les gestionnaires d’événements de magasin sont inscrit pour écouter à une classe : vous n’avez pas à inscrire un gestionnaire distinct pour chaque instance. Pour plus d’informations sur comment choisir entre les différentes façons de gérer les modifications, consultez [réponse en cours à et propagation des modifications](../modeling/responding-to-and-propagating-changes.md).
+Dans Visualization and Modeling SDK, vous pouvez définir des gestionnaires d’événements de magasin pour propager les modifications apportées aux ressources en dehors du magasin, telles que les variables non-store, des fichiers de modèles dans d’autres magasins ou des autres extensions Visual Studio. Gestionnaires d’événements Store sont exécutés après la fin de la transaction dans laquelle l’événement de déclenchement s’est produite. Elles sont également exécutées en une opération d’annulation ou de rétablissement. Par conséquent, contrairement au magasin de règles, événements de stockage sont particulièrement utiles pour la mise à jour des valeurs qui sont en dehors du magasin. Contrairement aux événements de .NET, les gestionnaires d’événements de magasin sont inscrit pour écouter à une classe : vous n’avez pas à inscrire un gestionnaire distinct pour chaque instance. Pour plus d’informations sur comment choisir entre les différentes façons de gérer les modifications, consultez [réponse en cours à et propagation des modifications](../modeling/responding-to-and-propagating-changes.md).
 
 La surface graphique et autres contrôles d’interface utilisateur sont des exemples de ressources externes qui peuvent être gérés par les événements de magasin.
 

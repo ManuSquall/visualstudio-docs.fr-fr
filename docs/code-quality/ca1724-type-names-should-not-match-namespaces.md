@@ -1,6 +1,6 @@
 ---
 title: 'CA1724 : les noms de types ne doivent pas être identiques aux espaces de noms'
-ms.date: 11/04/2016
+ms.date: 09/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c178558743ca69fb3b62eccaf8164e4b49167ad3
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: bf359ffcc098fa2b5653c28da302e2777216ea5b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547566"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860262"
 ---
-# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724 : les noms de types ne doivent pas être identiques aux espaces de noms
+# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724 : Les noms de types ne doivent pas correspondre aux espaces de noms
+
 |||
 |-|-|
 |TypeName|TypeNamesShouldNotMatchNamespaces|
@@ -32,13 +33,17 @@ ms.locfileid: "45547566"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Un nom de type correspond à un [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] noms d’espace de noms dans une comparaison respectant la casse.
+
+Un nom de type correspond à un nom d’espace de noms référencé qui a un ou plusieurs types visibles de l’extérieur. La comparaison des noms respecte la casse.
 
 ## <a name="rule-description"></a>Description de la règle
- Les noms de types ne doivent pas correspondre aux noms d'espaces de noms définis dans la bibliothèque de classes [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Enfreindre cette règle peut réduire la facilité d'utilisation de la bibliothèque.
+
+Les noms de type créés par l’utilisateur ne doivent pas correspondre les noms des espaces de noms référencés qui ont des types visibles de l’extérieur. Violation de cette règle peut réduire la facilité d’utilisation de votre bibliothèque.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Sélectionnez un nom de type qui ne correspond pas au nom d’un [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] espace de noms de bibliothèque.
+
+Renommer le type de sorte qu’il ne correspond pas à celui d’un espace de noms référencé qui a des types visibles de l’extérieur.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Pour un nouveau développement, aucun connus scénarios se produisent où vous devez supprimer un avertissement de cette règle. Avant de pouvoir supprimer l’avertissement, étudiez attentivement la façon dont les utilisateurs de votre bibliothèque peuvent être désorientés par le nom correspondant. Pour livrer des bibliothèques, vous devrez peut-être supprimer un avertissement de cette règle.
+
+Pour un nouveau développement, aucun connus scénarios se produisent où vous devez supprimer un avertissement de cette règle. Avant de pouvoir supprimer l’avertissement, étudiez attentivement la façon dont les utilisateurs de votre bibliothèque peuvent être désorientés par le nom correspondant. Pour livrer des bibliothèques, vous devrez peut-être supprimer un avertissement de cette règle.

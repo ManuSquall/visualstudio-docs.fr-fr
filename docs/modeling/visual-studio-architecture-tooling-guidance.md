@@ -9,15 +9,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b666a4870cccdd653ad77dc50a9096f1da17723d
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: aba2064ddac03f4370028a928469c7d2acee4850
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623700"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47857936"
 ---
 # <a name="visual-studio-architecture-tooling-guidance"></a>Guide des outils d'architecture Visual Studio
 
 Ce guide des outils d’Architecture est un package téléchargeable de conseils pratiques sur l’utilisation des outils de modélisation de Visual Studio 2010. Il présente une vue d’ensemble de l’utilisation de tous les outils de modélisation d’une manière intégrée et décrit les scénarios les plus courants dans lesquels les outils sont utilisés.
 
-Le contenu a été créé par le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ALM Rangers, un groupe spécial qui possède les membres à partir de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] équipe de produit, les Services de Microsoft, Microsoft Most Valued Professional (MVP), et [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] communautaire des prospects.
+Le contenu a été créé par Visual Studio ALM Rangers, un groupe spécial qui comporte des membres de l’équipe de produit Visual Studio, Microsoft Services, Microsoft Most Valued Professional (MVP) et entraîne de Visual Studio Community.
