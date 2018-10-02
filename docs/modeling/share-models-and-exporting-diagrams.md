@@ -12,38 +12,36 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3aa9a3157731d70971d15c514a088af761360848
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7210a5c156b779b9064f72db9cab5445d0ce20c3
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948299"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858352"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Partager des modèles et exporter des diagrammes
 Dans Visual Studio, vous pouvez partager des modèles et des diagrammes avec vos collègues de plusieurs façons.
 
- Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Pour voir quelles éditions de Visual Studio prennent en charge cette fonctionnalité, consultez [prise en charge de l’édition pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="working-on-a-model-as-a-team"></a>Travail en équipe sur un modèle
- Les utilisateurs de Visual Studio peuvent créer et modifier des modèles, des diagrammes de dépendance et des graphiques orientés.
+ Les utilisateurs de Visual Studio peuvent créer et modifier des diagrammes de dépendance, des modèles et des graphiques orientés.
 
- Différents utilisateurs peuvent travailler simultanément sur un modèle, mais doivent fonctionner sur les différents packages.
+ Différents utilisateurs peuvent travailler simultanément sur un modèle, mais il doivent fonctionner sur les différents packages.
 
- Nous vous recommandons d'utiliser [!INCLUDE[esprscc](../code-quality/includes/esprscc_md.md)].
-
- Pour obtenir des suggestions sur l’organisation de modèles dans un projet de moyenne ou grand, consultez [structurer votre solution de modélisation](../modeling/structure-your-modeling-solution.md).
+ Pour obtenir des suggestions sur l’organisation des modèles dans un projet de moyenne ou grande taille, consultez [structurer votre solution de modélisation](../modeling/structure-your-modeling-solution.md).
 
 ## <a name="reading-and-reviewing-models"></a>Lecture et examen de modèles
- Membres de l’équipe à l’aide de certaines versions de Visual Studio (qui ne peut pas créer des modèles) peuvent lire des modèles, des diagrammes et des graphiques orientés de modélisation, mais ne peut pas les modifier.  Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Membres de l’équipe à l’aide de certaines versions de Visual Studio (qui ne peut pas créer de modèles) peuvent lire des modèles, modéliser les diagrammes et graphiques orientés, mais ne peut pas les modifier.  Pour voir quelles éditions de Visual Studio prennent en charge cette fonctionnalité, consultez [prise en charge de l’édition pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
- Un diagramme de dépendances peut être ouverte uniquement dans le modèle dans lequel il a été créé. Pour fournir l'accès à un diagramme, vous devez donc fournir l'accès à tous les fichiers de projets de modélisation ou à des copies de ces fichiers.
+ Un diagramme de dépendances peut être ouvert uniquement dans le modèle dans lequel il a été créé. Pour fournir l'accès à un diagramme, vous devez donc fournir l'accès à tous les fichiers de projets de modélisation ou à des copies de ces fichiers.
 
  Pour plus d’informations, consultez [lire des modèles et des diagrammes dans d’autres éditions de Visual Studio](../modeling/read-models-and-diagrams-in-other-visual-studio-editions.md).
 
 ## <a name="using-diagrams-in-documents-and-presentations"></a>Utilisation de diagrammes dans des documents et des présentations
  Vous pouvez copier des parties de diagrammes dans des documents ou des présentations. Vous pouvez aussi imprimer des diagrammes, par exemple dans des fichiers XPS.
 
- Pour plus d’informations, consultez [exporter des diagrammes sous forme d’images](../modeling/export-diagrams-as-images.md).
+ Pour plus d’informations, consultez [exporter des diagrammes en tant qu’images](../modeling/export-diagrams-as-images.md).
 
 ## <a name="related-topics"></a>Rubriques connexes
 

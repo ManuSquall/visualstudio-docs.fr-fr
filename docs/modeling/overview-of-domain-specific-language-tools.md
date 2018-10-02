@@ -11,72 +11,72 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d64c819e1d07fed44372edca2c7107d956937d58
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 873c377b4b2262df6b12f581f1cdac901d27ffce
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949522"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859431"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Vue d'ensemble des outils de langage spécifique à un domaine
-Outils de langage spécifique à un domaine (outils DSL), qui sont hébergés dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], laissez concevoir un langage spécifique à un domaine et de générer tout ce que les utilisateurs doivent disposer pour créer des modèles qui sont basées sur le langage.
+Outils Domain-Specific Language (outils DSL), qui sont hébergés dans Visual Studio, vous permettent de concevoir un langage spécifique à un domaine et de générer tout ce que les utilisateurs doivent disposer pour créer des modèles qui sont basés sur le langage.
 
  Les outils suivants sont inclus dans les outils DSL :
 
--   Un Assistant de projet qui utilise des modèles de l’autre solution pour vous aider à commencer à développer votre langage spécifique à un domaine.
+-   Un Assistant de projet qui utilise des modèles de solution différents pour vous aider à commencer à développer votre langage spécifique à un domaine.
 
 -   Un concepteur graphique pour créer et modifier votre définition de langage spécifique à un domaine.
 
--   Un moteur de validation qui permet de s’assurer que la définition de langage spécifique à un domaine est correcte et affiche les erreurs et avertissements s’il existe des problèmes.
+-   Un moteur de validation qui permet de s’assurer que la définition de langage spécifique à un domaine est correctement formée et affiche les erreurs et avertissements s’il existe des problèmes.
 
--   Générateur de code qui prend une définition de langage spécifique à un domaine en tant qu’entrée et génère le code source en tant que sortie.
+-   Un générateur de code qui prend une définition de langage spécifique à un domaine en tant qu’entrée et génère le code source en tant que sortie.
 
 ## <a name="the-dsl-tools-solution"></a>La Solution d’outils DSL
- L’Assistant de concepteur spécifique à un domaine fournit les modèles de solution suivants :
+ L’Assistant Concepteur Domain-Specific fournit les modèles de solution suivants :
 
 -   Flux de tâches
 
 -   Diagrammes de classes
 
--   Langage minimale
+-   Langage minimal
 
 -   Modèles de composants
 
--   WPF minimale
+-   WPF minimal
 
--   Windows.Forms minimale
+-   Windows.Forms minimal
 
 -   Bibliothèque DSL
 
- Pour plus d’informations, consultez [choisir un modèle de Solution de langage spécifique à un domaine](../modeling/choosing-a-domain-specific-language-solution-template.md).
+ Pour plus d’informations, consultez [choix d’un modèle de Solution de langage spécifique à un domaine](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
- L’Assistant crée un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution qui contient les projets suivants :
+ L’Assistant crée une solution Visual Studio qui a les projets suivants :
 
 -   DSL
 
-     Le projet Dsl définit le langage spécifique à un domaine et ses outils de modification et de traitement.
+     Le projet Dsl définit le langage spécifique à un domaine et ses outils d’éditions et de traitement.
 
 -   **DslPackage**
 
-     Le projet DslPackage détermine comment intégrant les outils de langage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+     Le projet DslPackage détermine comment les outils de langage intègrent avec Visual Studio.
 
-## <a name="the-dsl-tools-graphical-interface"></a>L’Interface graphique d’outils DSL
- Vous pouvez utiliser l’interface graphique outils DSL pour ajouter des éléments et des relations à votre langage spécifique à un domaine. Après avoir ajouté les éléments, vous pouvez définir leur apparence en les mappant aux formes, personnaliser les couleurs et l’ajout des éléments décoratifs. Vous pouvez également ajouter les éléments à la boîte à outils.
+## <a name="the-dsl-tools-graphical-interface"></a>L’Interface graphique des outils DSL
+ Vous pouvez utiliser l’interface graphique d’outils DSL pour ajouter des éléments et des relations à votre langage spécifique à un domaine. Une fois que vous avez ajouté les éléments, vous pouvez définir leur apparence en les mappant aux formes, la personnalisation des couleurs et l’ajout d’éléments décoratifs. Vous pouvez également ajouter les éléments à la boîte à outils.
 
-## <a name="validation-in-dsl-tools"></a>Validation des outils DSL
- DSL fournit un niveau de validation pour vous assurer que le modèle de domaine répond aux exigences de base pour la génération de code. En règle générale, lorsque vous créez votre propre langage spécifique à un domaine, vous devez ajouter votre propre validation pour exprimer vos règles de logique métier. Pour plus d’informations sur la validation personnalisée, consultez [Validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md).
+## <a name="validation-in-dsl-tools"></a>Validation dans les outils DSL
+ DSL offre un niveau de validation pour vous assurer que le modèle de domaine répond aux exigences de base pour la génération de code. En règle générale, lorsque vous créez votre propre langage spécifique à un domaine, vous devez ajouter votre propre validation pour exprimer vos règles de logique métier. Pour plus d’informations sur la validation personnalisée, consultez [Validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md).
 
- Nous vous recommandons de valider votre langage spécifique à un domaine souvent lors de sa création. Si votre langage spécifique à un domaine comporte des erreurs de validation, vous ne pouvez pas générer de code source. Le processus de génération de code source à partir des modèles est effectué en cliquant sur **transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions. Chaque fois que vous modifiez la définition de langage, veillez également à **transformer tous les modèles**. Pour plus d’informations, consultez [Comment : créer une Solution de langage spécifique à un domaine](../modeling/how-to-create-a-domain-specific-language-solution.md).
+ Nous vous recommandons de valider votre langage spécifique à un domaine souvent lors de sa création. Si votre langage spécifique à un domaine comporte des erreurs de validation, vous ne pouvez pas générer le code source. Le processus de génération de code source à partir des modèles est effectué en cliquant sur **transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions. Chaque fois que vous modifiez la définition de langage, veillez également à **transformer tous les modèles**. Pour plus d’informations, consultez [Comment : créer une Solution de langage spécifique à un domaine](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 ## <a name="customization-of-dsl-tools"></a>Personnalisation des outils DSL
- Vous pouvez fournir un code supplémentaire pour affiner le comportement du modèle et de définir des contraintes sur votre langue. Si nécessaire, vous pouvez apporter des modifications importantes en modifiant les modèles de texte.
+ Vous pouvez fournir un code supplémentaire pour affiner le comportement du modèle et définir des contraintes sur votre langue. Si nécessaire, vous pouvez apporter des modifications significatives en modifiant les modèles de texte.
 
-## <a name="distributing-your-dsl-solution"></a>Distribution de votre Solution DSL
- Outils DSL génère un package qui est hébergé dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Le package affiche une boîte à outils, un Explorateur DSL et autres éléments d’interface utilisateur qui permettent aux utilisateurs de créer des modèles à l’aide de votre langage spécifique à un domaine.
+## <a name="distributing-your-dsl-solution"></a>Distribuer votre Solution DSL
+ Outils DSL génère un package qui est hébergé dans Visual Studio. Le package affiche une boîte à outils, un Explorateur DSL et autres éléments d’interface utilisateur qui permettent aux utilisateurs de créer des modèles à l’aide de votre langage spécifique à un domaine.
 
- Lorsque vous générez et exécuter la solution outils DSL dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], une deuxième instance de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vous montre comment votre langage spécifique à un domaine à l’utilisateur de la langue. Après avoir vérifié que tout fonctionne correctement, vous pouvez distribuer le `.vsix` fichier que vous trouverez dans le dossier de génération du projet DslPackage. Ce fichier peut être utilisé pour installer la DSL comme un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extension sur d’autres ordinateurs.  Pour plus d’informations, consultez [déploiement de Solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).
+ Lorsque vous générez et exécutez la solution DSL outils dans Visual Studio, une deuxième instance de Visual Studio, vous montre comment votre langage spécifique à un domaine à l’utilisateur de la langue. Après avoir vérifié que tout fonctionne correctement, vous pouvez distribuer le `.vsix` fichier que vous trouverez dans le dossier de génération du projet DslPackage. Ce fichier peut être utilisé pour installer la solution DSL comme une extension de Visual Studio sur d’autres ordinateurs.  Pour plus d’informations, consultez [déploiement de Solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Instance expérimentale](../extensibility/the-experimental-instance.md)
-- [Glossaire des outils de langage spécifique à un domaine](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossaire des outils Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

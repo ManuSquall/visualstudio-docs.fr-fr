@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5db66307ef9c0099e152e46c0aac761519881cd3
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 49f3c0e9cdd1feee0161c95d30bed03244d14e15
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34269087"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47857625"
 ---
 # <a name="visualize-code"></a>Visualiser du code
 
@@ -32,15 +32,15 @@ Vous pouvez utiliser les outils de modélisation et de visualisation dans Visual
 
 Ces outils vous aident également à communiquer plus facilement avec les personnes impliquées dans votre projet.
 
-Pour connaître les versions de Visual Studio qui prennent en charge chaque fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Pour voir quelles éditions de Visual Studio prennent en charge chaque fonctionnalité, consultez [prise en charge de l’édition pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)
 
 ## <a name="what-do-you-want-to-do"></a>Que voulez-vous faire ?
 
 |||
 |-|-|
 |**Comprendre le code et ses relations :**<br /><br /> Mapper des relations entre des éléments de code spécifiques.<br /><br /> Voir une présentation des relations dans votre code pour l'ensemble de la solution.|- [Mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md)<br />- [Utiliser des cartes de code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)<br />- [Rechercher des problèmes potentiels à l’aide des analyseurs de carte de code](../modeling/find-potential-problems-using-code-map-analyzers.md)<br />- [Mapper les méthodes sur la pile des appels pendant le débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)|
-|**Comprendre les structures de la classe :**<br /><br /> Visualiser la structure des classes dans un projet en créant des diagrammes de classes à partir du code.|[Guide pratique pour ajouter des diagrammes de classes aux projets (Concepteur de classes)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
-|**Décrire la conception du système de niveau supérieur et valider le code par rapport à cette conception :**<br /><br /> Décrire la conception du système de niveau supérieur et ses dépendances prévues en créant des diagrammes de dépendance. Valider le code par rapport à cette conception pour s'assurer que les dépendances dans le code demeurent cohérentes avec la conception.|- [Créer des diagrammes de dépendance à partir de votre code.](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagrammes de dépendance : référence](../modeling/layer-diagrams-reference.md)<br />- [Diagrammes de dépendance : instructions](../modeling/layer-diagrams-guidelines.md)<br />- [Valider le code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)|
+|**Comprendre les structures de classes :**<br /><br /> Visualiser la structure des classes dans un projet en créant des diagrammes de classes à partir du code.|[Guide pratique pour ajouter des diagrammes de classes aux projets (Concepteur de classes)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)|
+|**Décrire la conception du système de haut niveau et valider le code par rapport à cette conception :**<br /><br /> Décrire la conception du système de haut niveau et ses dépendances prévues en créant des diagrammes de dépendance. Valider le code par rapport à cette conception pour s'assurer que les dépendances dans le code demeurent cohérentes avec la conception.|- [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagrammes de dépendance : référence](../modeling/layer-diagrams-reference.md)<br />- [Diagrammes de dépendance : recommandations](../modeling/layer-diagrams-guidelines.md)<br />- [Valider du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)|
 
 ## <a name="see-also"></a>Voir aussi
 
