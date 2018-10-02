@@ -9,22 +9,22 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6044dd970029b3f233f8b20eb2e334b5041ceb33
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 624afd32a9b0f44e3190fba7e3b126663b96f6f4
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953534"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860197"
 ---
 # <a name="t4-output-directive"></a>Directive de sortie T4
 
-Dans les modèles de texte [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], la directive `output` sert à définir l'extension du nom de fichier et l'encodage du fichier transformé.
+Dans les modèles de texte de Visual Studio, le `output` directive est utilisée pour définir l’extension de nom de fichier et l’encodage du fichier transformé.
 
- Par exemple, si votre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet inclut un fichier modèle nommé **MyTemplate.tt** qui contient la directive suivante :
+ Par exemple, si votre projet Visual Studio inclut un fichier de modèle nommé **MyTemplate.tt** qui contient la directive suivante :
 
  `<#@output extension=".cs"#>`
 
- puis [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] génère un fichier nommé **MyTemplate.cs**
+ Visual Studio génère un fichier nommé **MyTemplate.cs**
 
  La directive `output` n'est pas obligatoire dans un modèle de texte au moment de l'exécution (prétraité). Au lieu de cela, votre application obtient la chaîne générée en appelant `TextTransform()`. Pour plus d’informations, consultez [génération de texte d’exécution avec les modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
