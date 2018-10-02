@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b2dc7b322d6a1e812e88930f1586458ac892249b
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: ca9047866b5b8f030ee8e1f5a043683234edeb72
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549789"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859534"
 ---
 # <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147 : Les méthodes transparentes ne peuvent pas utiliser d'assertions de sécurité
 |||
@@ -40,7 +40,7 @@ ms.locfileid: "45549789"
 
  À l’exécution, tous les appels à <xref:System.Security.CodeAccessPermission.Assert%2A> à partir du code transparent entraîne un <xref:System.InvalidOperationException> levée. Cela peut se produire dans les deux assemblys transparents de 100 %, ainsi que dans les assemblys mixtes mi-critique où une méthode ou le type est déclaré transparent, mais inclut une assertion déclarative ou impérative.
 
- Le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 a introduit une fonctionnalité nommée *transparence*. Types de champs, interfaces, classes et méthodes individuelles peuvent être transparent ou critique.
+ Le .NET Framework 2.0 a introduit une fonctionnalité nommée *transparence*. Types de champs, interfaces, classes et méthodes individuelles peuvent être transparent ou critique.
 
  Code transparent n’est pas autorisé à élever les privilèges de sécurité. Par conséquent, toutes les autorisations accordées ou sollicitées sont automatiquement transmises via le code pour le domaine d’application appelant ou l’hôte. Exemples d’élévations incluent les assertions, les LinkDemands, l’attribut SuppressUnmanagedCode et `unsafe` code.
 

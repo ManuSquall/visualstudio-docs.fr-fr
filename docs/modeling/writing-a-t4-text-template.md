@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f2427b54cd19e808bed217c981a95d70e4d020fd
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: abb318f74c04c372aaddb520ff581e7f84128f5e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612712"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860392"
 ---
 # <a name="writing-a-t4-text-template"></a>Écriture d'un modèle de texte T4
 Un modèle de texte contient le texte qui sera généré à partir du modèle. Par exemple, un modèle qui crée une page web contiendra «\<html > … » et tous les autres composants standard d’une page HTML. Inséré dans le modèle sont *blocs de contrôle*, qui sont des fragments de code de programme. Les blocs de contrôle fournissent des valeurs variables et permettent à certaines parties du texte d'être conditionnelles et répétées.
@@ -208,7 +208,7 @@ private void WriteSquareLine(int i)
 
  Pour plus d’informations, consultez [Directive d’importation T4](../modeling/t4-import-directive.md).
 
-###  <a name="Include"></a> Y compris le code et le texte
+### <a name="Include"></a> Y compris le code et le texte
  La directive `include` insère du texte à partir d'un autre fichier de modèle. Par exemple, cette directive insère le contenu de `test.txt`.
 
 ```
@@ -275,7 +275,7 @@ Vous pouvez également obtenir d'autres services fournis par l'hôte. Pour plus 
 |----------|-----------|
 |Écrire un modèle.|[Instructions relatives à l’écriture de modèles de texte T4](../modeling/guidelines-for-writing-t4-text-templates.md)|
 |Générer du texte à l'aide de code de programme.|[Structure de modèle de texte](../modeling/writing-a-t4-text-template.md)|
-|Générer des fichiers dans une solution [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|[Génération de code au moment du design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
-|Exécuter la génération de texte en dehors de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|[Génération de fichiers avec l’utilitaire TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|
+|Générer des fichiers dans une solution Visual Studio.|[Génération de code au moment du design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
+|Exécution de la génération de texte en dehors de Visual Studio.|[Génération de fichiers avec l’utilitaire TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|
 |Transformer vos données sous la forme d’un langage spécifique à un domaine.|[Génération de code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Écrire des processeurs de directive pour transformer vos propres sources de données.|[Personnalisation d’une transformation de texte T4](../modeling/customizing-t4-text-transformation.md)|
