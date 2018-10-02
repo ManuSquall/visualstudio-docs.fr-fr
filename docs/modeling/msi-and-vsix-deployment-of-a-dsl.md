@@ -9,26 +9,26 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5c8d06e7e06b66f119ad792d3c4fa970645aa886
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c8a7c88c0c1808b5155ada9d46cfbdad9edd5cf5
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774776"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859352"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Déploiement MSI et VSIX d'un langage spécifique à un domaine
-Vous pouvez installer une langue spécifique à un domaine sur votre ordinateur ou sur d’autres ordinateurs. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] doit déjà être installé sur l’ordinateur cible.
+Vous pouvez installer une langue spécifique à un domaine sur votre ordinateur ou sur d’autres ordinateurs. Visual Studio doit déjà être installé sur l’ordinateur cible.
 
-##  <a name="which"></a> Choix entre VSIX et de déploiement MSI
+## <a name="which"></a> Choix entre VSIX et de déploiement MSI
  Il existe deux méthodes de déploiement d’un langage spécifique à un domaine :
 
 |Méthode|Avantages|
 |------------|--------------|
-|VSX ([!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Extension)|Très facile à déployer : copie et d’exécuter le **.vsix** fichier à partir du projet DslPackage.<br /><br /> Pour plus d’informations, consultez [installation et désinstallation d’une solution DSL à l’aide de la VSX](#Installing).|
-|MSI (fichier de programme d’installation)|-Permet à l’utilisateur ouvrir [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en double-cliquant sur un fichier DSL.<br />-Associe une icône avec le type de fichier DSL dans l’ordinateur cible.<br />-Associe un XSD (schéma XML) avec le type de fichier DSL. Cela évite des avertissements lorsque le fichier est chargé dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].<br /><br /> Vous devez ajouter un projet d’installation à votre solution pour créer un fichier MSI.<br /><br /> Pour plus d’informations, consultez [déploiement d’une solution DSL à l’aide d’un fichier MSI](#msi).|
+|VSX (Extension de Visual Studio)|Très facile à déployer : copie et d’exécuter le **.vsix** fichier à partir du projet DslPackage.<br /><br /> Pour plus d’informations, consultez [installation et désinstallation d’une solution DSL à l’aide de la VSX](#Installing).|
+|MSI (fichier de programme d’installation)|-Permet à l’utilisateur ouvrir Visual Studio en double-cliquant sur un fichier DSL.<br />-Associe une icône avec le type de fichier DSL dans l’ordinateur cible.<br />-Associe un XSD (schéma XML) avec le type de fichier DSL. Cela évite des avertissements lorsque le fichier est chargé dans Visual Studio.<br /><br /> Vous devez ajouter un projet d’installation à votre solution pour créer un fichier MSI.<br /><br /> Pour plus d’informations, consultez [déploiement d’une solution DSL à l’aide d’un fichier MSI](#msi).|
 
-##  <a name="Installing"></a> Installation et désinstallation d’une solution DSL à l’aide de la VSX
- Lorsque votre solution DSL est installé par cette méthode, l’utilisateur peut ouvrir un fichier DSL depuis [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], mais le fichier ne peut pas être ouvert à partir de l’Explorateur Windows.
+## <a name="Installing"></a> Installation et désinstallation d’une solution DSL à l’aide de la VSX
+ Lorsque votre solution DSL est installé par cette méthode, l’utilisateur peut ouvrir un fichier DSL à partir de Visual Studio, mais le fichier ne peut pas être ouvert à partir de l’Explorateur Windows.
 
 #### <a name="to-install-a-dsl-by-using-the-vsx"></a>Pour installer une solution DSL à l’aide de la VSX
 
@@ -42,7 +42,7 @@ Vous pouvez installer une langue spécifique à un domaine sur votre ordinateur 
 
     -   L’ordinateur cible doit avoir une des éditions de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] qui prend en charge les langages DSL en cours d’exécution. Pour plus d’informations, consultez [pris en charge les éditions Visual Studio pour Visualization and Modeling SDK](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md).
 
-    -   L’ordinateur cible doit avoir une des éditions de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] spécifié dans **DslPackage\source.extensions.manifest**.
+    -   L’ordinateur cible doit avoir une des éditions de Visual Studio spécifié dans **DslPackage\source.extensions.manifest**.
 
 3.  Sur l’ordinateur cible, double-cliquez sur le **.vsix** fichier.
 
@@ -50,7 +50,7 @@ Vous pouvez installer une langue spécifique à un domaine sur votre ordinateur 
 
 4.  Démarrez ou redémarrez [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)].
 
-5.  Pour tester la solution DSL, utilisez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour créer un nouveau fichier portant l’extension que vous avez défini pour votre DSL.
+5.  Pour tester la solution DSL, utilisez Visual Studio pour créer un nouveau fichier portant l’extension que vous avez défini pour votre DSL.
 
 #### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>Pour désinstaller une solution DSL a été installée à l’aide de VSX
 
@@ -64,12 +64,12 @@ Vous pouvez installer une langue spécifique à un domaine sur votre ordinateur 
 
  *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**
 
-##  <a name="msi"></a> Déploiement d’une solution DSL dans un fichier MSI
+## <a name="msi"></a> Déploiement d’une solution DSL dans un fichier MSI
  En définissant un fichier MSI (Windows Installer) pour votre DSL, vous pouvez autoriser les utilisateurs à ouvrir des fichiers DSL à partir de l’Explorateur Windows. Vous pouvez également associer une icône et une brève description votre extension de nom de fichier. En outre, le fichier MSI peut installer un XSD qui peut être utilisé pour valider des fichiers DSL. Si vous le souhaitez, vous pouvez ajouter d’autres composants dans le fichier MSI qui est installé en même temps.
 
  Pour plus d’informations sur les fichiers MSI et d’autres options de déploiement, consultez [déploiement d’Applications, Services et composants](../deployment/deploying-applications-services-and-components.md).
 
- Pour générer un fichier MSI, vous ajoutez un projet d’installation pour votre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution. La méthode la plus simple de création d’un projet d’installation consiste à utiliser le modèle CreateMsiSetupProject.tt, que vous pouvez télécharger depuis le [site VMSDK](http://go.microsoft.com/fwlink/?LinkID=186128).
+ Pour générer un fichier MSI, vous ajoutez un projet d’installation à votre solution Visual Studio. La méthode la plus simple de création d’un projet d’installation consiste à utiliser le modèle CreateMsiSetupProject.tt, que vous pouvez télécharger depuis le [site VMSDK](http://go.microsoft.com/fwlink/?LinkID=186128).
 
 #### <a name="to-deploy-a-dsl-in-an-msi"></a>Pour déployer une solution DSL dans un fichier MSI
 
@@ -101,7 +101,7 @@ Vous pouvez installer une langue spécifique à un domaine sur votre ordinateur 
 
 5.  Ajouter **CreateMsiSetupProject.tt** à votre projet Dsl.
 
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Crée un fichier nommé **CreateMsiSetupProject.vdproj**.
+     Visual Studio crée un fichier nommé **CreateMsiSetupProject.vdproj**.
 
 6.  Dans l’Explorateur Windows, copiez Dsl\\\*.vdproj vers un nouveau dossier nommé le programme d’installation.
 
@@ -125,7 +125,7 @@ Vous pouvez installer une langue spécifique à un domaine sur votre ordinateur 
 
     -   Dans la vue de liste de l’Explorateur Windows, le fichier s’affiche avec l’icône et la description que vous avez défini.
 
-    -   Lorsque vous double-cliquez sur le fichier, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] démarre et ouvre le fichier DSL dans l’éditeur de votre DSL.
+    -   Lorsque vous double-cliquez sur le fichier, Visual Studio démarre et ouvre le fichier DSL dans l’éditeur de votre DSL.
 
  Si vous préférez, vous pouvez créer le projet d’installation manuellement, au lieu d’utiliser le modèle de texte. Pour une procédure pas à pas qui inclut cette procédure, consultez le chapitre 5 du [de visualisation et modélisation de laboratoire de kit de développement logiciel](http://go.microsoft.com/fwlink/?LinkId=208878).
 

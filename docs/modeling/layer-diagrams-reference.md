@@ -1,6 +1,6 @@
 ---
 title: Référence des diagrammes de dépendance
-ms.date: 11/04/2016
+ms.date: 09/28/2018
 ms.topic: reference
 f1_keywords:
 - vs.teamarch.layerdiagram.layerexplorer.artifactlink
@@ -22,20 +22,23 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 727063820b9b2970f93fb6ccf552b6a7a49f3b99
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 92b4b6eea3fcaa4ce6785385fe5e779ba38dac61
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951542"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860028"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagrammes de dépendance : référence
 
-Dans Visual Studio, vous pouvez utiliser un *diagramme de dépendances* pour visualiser l’architecture de haut niveau, la logique de votre système. Un diagramme de dépendances organise les artefacts physiques dans votre système en groupes logiques et abstraits appelés *couches*. Ces couches décrivent les tâches principales que les artefacts exécutent ou les principaux composants de votre système. Chaque couche peut également contenir des couches imbriquées qui décrivent des tâches plus détaillées.
+Dans Visual Studio, vous pouvez utiliser un *diagramme de dépendances* pour visualiser l’architecture de haut niveau et logique de votre système. Un diagramme de dépendances organise les artefacts physiques dans votre système en groupes logiques et abstraits appelés *couches*. Ces couches décrivent les tâches principales que les artefacts exécutent ou les principaux composants de votre système. Chaque couche peut également contenir des couches imbriquées qui décrivent des tâches plus détaillées.
 
-Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Pour voir quelles éditions de Visual Studio prennent en charge cette fonctionnalité, consultez [prise en charge de l’édition pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-Vous pouvez spécifier les dépendances prévues ou existantes entre des couches. Ces dépendances, représentées comme des flèches, indiquent quelles couches peuvent utiliser ou actuellement utiliser la fonctionnalité représentée par d'autres couches. En organisant votre système en couches qui décrivent les fonctions et les rôles distincts, un diagramme de dépendances peut aider à rendre plus facile à comprendre, réutiliser et gérer votre code.
+> [!NOTE]
+> Diagrammes de dépendance ne sont pas pris en charge pour les projets .NET Core dans Visual Studio 2017.
+
+Vous pouvez spécifier les dépendances prévues ou existantes entre des couches. Ces dépendances, représentées comme des flèches, indiquent quelles couches peuvent utiliser ou actuellement utiliser la fonctionnalité représentée par d'autres couches. En organisant votre système en couches qui décrivent des fonctions et des rôles distincts, un diagramme de dépendances peut aider à rendre plus facile à comprendre, la réutilisation et la maintenance de votre code.
 
 Utilisez un diagramme de dépendances pour vous aider à effectuer les tâches suivantes :
 
@@ -47,7 +50,7 @@ Utilisez un diagramme de dépendances pour vous aider à effectuer les tâches s
 
 -   renforcer l'architecture prévue pendant le développement et la maintenance de votre code en incluant la validation avec vos opérations de build et d'archivage.
 
-Cette rubrique décrit les éléments que vous pouvez utiliser sur un diagramme de dépendances. Pour plus d’informations sur la création et dessiner des diagrammes de dépendance, consultez [des diagrammes de dépendance : instructions](../modeling/layer-diagrams-guidelines.md). Pour plus d’informations sur les modèles en couches, visitez le [site Patterns & Practices](http://go.microsoft.com/fwlink/?LinkId=145794).
+Cette rubrique décrit les éléments que vous pouvez utiliser sur un diagramme de dépendances. Pour plus d’informations sur la façon de créer et dessiner des diagrammes de dépendance, consultez [des diagrammes de dépendance : recommandations](../modeling/layer-diagrams-guidelines.md). Pour plus d’informations sur les modèles en couches, visitez le [Patterns & Practices site](http://go.microsoft.com/fwlink/?LinkId=145794).
 
 ## <a name="reading-dependency-diagrams"></a>Lecture des diagrammes de dépendance
 
@@ -57,13 +60,13 @@ Le tableau suivant décrit les éléments que vous pouvez utiliser sur un diagra
 
 |**Forme**|**Élément**|**Description**|
 |---------------|-----------------|---------------------|
-|1|**Couche**|Groupe logique d'artefacts physiques dans votre système. Ces artefacts peuvent correspondre à des espaces de noms, des projets, des classes, des méthodes, etc.<br /><br /> Pour voir les artefacts qui sont liés à une couche, ouvrez le menu contextuel de la couche, puis choisissez **afficher les liens** pour ouvrir **Explorateur de couches**.<br /><br /> Pour plus d’informations, consultez [Explorateur de couches](#Explorer).<br /><br /> -   **Il est interdit de dépendances de Namespace** -Spécifie que les artefacts associés à cette couche ne peuvent pas dépendre d’espaces de noms spécifiés.<br />-   **Il est interdit d’espaces de noms** -Spécifie que les artefacts associés à cette couche ne doivent pas appartenir aux espaces de noms spécifiés.<br />-   **Requis des espaces de noms** -Spécifie que les artefacts associés à cette couche doivent appartenir à un des espaces de noms spécifiés.|
-|2|**Dépendance**|Indique qu'une couche peut utiliser les fonctionnalités d'une autre couche, mais pas l'inverse.<br /><br /> -   **Direction** -spécifie la direction de la dépendance.|
+|1|**Couche**|Groupe logique d'artefacts physiques dans votre système. Ces artefacts peuvent correspondre à des espaces de noms, des projets, des classes, des méthodes, etc.<br /><br /> Pour voir les artefacts qui sont liés à une couche, ouvrez le menu contextuel de la couche, puis choisissez **afficher les liens** pour ouvrir **Explorateur de couches**.<br /><br /> Pour plus d’informations, consultez [Explorateur de couches](#Explorer).<br /><br /> -   **Il est interdit de dépendances de Namespace** -Spécifie que les artefacts associés à cette couche ne peut pas dépendre d’espaces de noms spécifiés.<br />-   **Il est interdit d’espaces de noms** -Spécifie que les artefacts associés à cette couche ne doivent pas appartenir aux espaces de noms spécifiés.<br />-   **Required Namespaces** -Spécifie que les artefacts associés à cette couche doivent appartenir à un des espaces de noms spécifiés.|
+|2|**dépendance**|Indique qu'une couche peut utiliser les fonctionnalités d'une autre couche, mais pas l'inverse.<br /><br /> -   **Direction** -spécifie la direction de la dépendance.|
 |3|**Dépendance bidirectionnelle**|Indique qu'une couche peut utiliser les fonctionnalités d'une autre couche, et vice versa.<br /><br /> -   **Direction** -spécifie la direction de la dépendance.|
 |4|**Commentaire**|Permet d'ajouter des remarques générales au diagramme ou aux éléments du diagramme.|
 |5|**Lien de commentaire**|Permet de lier des commentaires aux éléments du diagramme.|
 
-##  <a name="Explorer"></a> Explorateur de couches
+## <a name="Explorer"></a> Explorateur de couches
 
 Vous pouvez lier chaque couche aux artefacts de votre solution, tels que des projets, des classes, des espaces de noms, des fichiers projet et d'autres parties de votre logiciel. Le nombre indiqué sur une couche représente le nombre d'artefacts liés à cette couche. Toutefois, quand vous lisez le nombre d'artefacts sur une couche, tenez compte des points suivants :
 
@@ -75,25 +78,25 @@ Vous pouvez lier chaque couche aux artefacts de votre solution, tels que des pro
 
 Pour plus d'informations sur la liaison des couches et des artefacts, consultez :
 
--   [Diagrammes de dépendance : instructions](../modeling/layer-diagrams-guidelines.md)
+-   [Diagrammes de dépendance : recommandations](../modeling/layer-diagrams-guidelines.md)
 
 -   [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)
 
-#### <a name="to-examine-the-linked-artifacts"></a>Pour examiner les artefacts liés
+### <a name="examine-the-linked-artifacts"></a>Examiner les artefacts liés
 
--   Dans le diagramme de la dépendance, ouvrez le menu contextuel pour une ou plusieurs couches, puis choisissez **afficher les liens**.
+Sur le diagramme de la dépendance, ouvrez le menu contextuel pour une ou plusieurs couches, puis choisissez **afficher les liens**.
 
-     **Explorateur de couches** s’ouvre et affiche les artefacts liés aux couches sélectionnées. **Explorateur de couches** a une colonne qui affiche chacune des propriétés des liens d’artefact.
+**Explorateur de couches** s’ouvre et affiche les artefacts liés aux couches sélectionnées. **Explorateur de couches** a une colonne qui affiche chacune des propriétés des liens d’artefact.
 
-    > [!NOTE]
-    > Si vous ne voyez pas toutes ces propriétés, développez le **Explorateur de couches** fenêtre.
+> [!NOTE]
+> Si vous ne voyez pas toutes ces propriétés, développez le **Explorateur de couches** fenêtre.
 
-    |**Colonne dans l’Explorateur de couches**|**Description**|
-    |----------------------------------|---------------------|
-    |**Catégories**|Genre d'artefact, tel qu'une classe, un espace de noms, un fichier source, etc.|
-    |**Couche**|Couche liée à l'artefact.|
-    |**Prend en charge la Validation**|Si **True**, puis le processus de validation de couche peut vérifier que le projet est conforme aux dépendances vers ou à partir de cet élément.<br /><br /> Si **False**, puis le lien ne participe pas le processus de validation de couche.<br /><br /> Pour plus d’informations, consultez [des diagrammes de dépendance : instructions](../modeling/layer-diagrams-guidelines.md).|
-    |**Identificateur**|Référence à l'artefact lié.|
+|**Colonne dans l’Explorateur de couches**|**Description**|
+|----------------------------------|---------------------|
+|**Catégories**|Genre d'artefact, tel qu'une classe, un espace de noms, un fichier source, etc.|
+|**Couche**|Couche liée à l'artefact.|
+|**Prend en charge la Validation**|Si **True**, puis le processus de validation de couche peut vérifier que le projet est conforme aux dépendances vers ou à partir de cet élément.<br /><br /> Si **False**, puis le lien ne participe pas le processus de validation de couche.<br /><br /> Pour plus d’informations, consultez [des diagrammes de dépendance : recommandations](../modeling/layer-diagrams-guidelines.md).|
+|**Identificateur**|Référence à l'artefact lié.|
 
 ## <a name="see-also"></a>Voir aussi
 

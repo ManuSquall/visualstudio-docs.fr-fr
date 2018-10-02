@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b7b5b360a6288b6ff2e13b6d7fc29df6728fad6f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 45804f08ea25ab8582d28632baf07abea24e0406
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546247"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859482"
 ---
 # <a name="ca1813-avoid-unsealed-attributes"></a>CA1813 : Évitez les attributs unsealed
 
@@ -41,7 +41,7 @@ Un type public hérite <xref:System.Attribute?displayProperty=fullName>, n’est
 
 ## <a name="rule-description"></a>Description de la règle
 
-La bibliothèque de classes du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] fournit des méthodes pour récupérer des attributs personnalisés. Par défaut, ces méthodes recherchent la hiérarchie d'héritage des attributs. Par exemple, <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> recherche le type d’attribut spécifié ou n’importe quel type d’attribut qui étend le type d’attribut spécifié. Le fait de sceller l’attribut élimine la recherche dans la hiérarchie d’héritage et peut améliorer les performances.
+La bibliothèque de classes .NET Framework fournit des méthodes pour récupérer des attributs personnalisés. Par défaut, ces méthodes recherchent la hiérarchie d'héritage des attributs. Par exemple, <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> recherche le type d’attribut spécifié ou n’importe quel type d’attribut qui étend le type d’attribut spécifié. Le fait de sceller l’attribut élimine la recherche dans la hiérarchie d’héritage et peut améliorer les performances.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 

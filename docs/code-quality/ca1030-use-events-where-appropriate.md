@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d1b0bac434ad7a182dc56ac08173646068623bd
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 31eb949588353a6f2f11ddbbdf516d1a5da63488
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547543"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859730"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030 : Utiliser des événements lorsque cela est approprié
 |||
@@ -45,10 +45,10 @@ ms.locfileid: "45547543"
 ## <a name="rule-description"></a>Description de la règle
  Cette règle détecte des méthodes qui présentent des noms qui ordinairement seraient utilisés pour des événements. Événements suivent le modèle de design observateur ou publier / abonner ; ils sont utilisés lorsqu’un changement d’état dans un objet doit être communiqué à d’autres objets. Si une méthode est appelée en réponse à un changement d’état clairement définie, la méthode doit être appelée par un gestionnaire d’événements. Les objets qui appellent la méthode doivent déclencher des événements au lieu d'appeler directement la méthode.
 
- Voici quelques exemples courants d’événements sont trouvent dans des applications d’interface utilisateur où une action de l’utilisateur comme un clic sur un bouton provoque un segment de code à exécuter. Le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modèle d’événement n’est pas limité aux interfaces utilisateur ; il doit être utilisé partout où vous devez communiquer l’état passe à un ou plusieurs objets.
+ Voici quelques exemples courants d’événements sont trouvent dans des applications d’interface utilisateur où une action de l’utilisateur comme un clic sur un bouton provoque un segment de code à exécuter. Le modèle d’événement .NET Framework n’est pas limité aux interfaces utilisateur ; Il doit être utilisé partout où que vous devez communiquer l’état passe à un ou plusieurs objets.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Si la méthode est appelée lorsque l’état d’un objet change, vous devez envisager de modifier la conception à utiliser le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modèle d’événement.
+ Si la méthode est appelée lorsque l’état d’un objet change, vous devez envisager de modifier la conception pour utiliser le modèle d’événement .NET Framework.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Supprimer un avertissement de cette règle si la méthode ne fonctionne pas avec le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modèle d’événement.
+ Supprimez un avertissement de cette règle si la méthode ne fonctionne pas avec le modèle d’événement .NET Framework.

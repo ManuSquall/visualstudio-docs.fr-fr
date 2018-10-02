@@ -11,39 +11,39 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: be119703868316f2335f06174c9f21c2dddd2edc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a2f919e1dce6864fa25348acd9c9858f9e4022f8
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949590"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47857701"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Propriétés d'une définition DSL
-Définissent des propriétés de DslDefinition *langage spécifique à un domaine* propriétés telles que la numérotation des versions de la définition. Les propriétés de DslDefinition s’affichent dans le **propriétés** fenêtre lorsque vous cliquez sur une zone ouverte du diagramme dans le *Concepteur de langage spécifique à un domaine*.
+Définissent les propriétés DslDefinition *langage spécifique à un domaine* propriétés telles que la numérotation des versions de la définition. Les propriétés DslDefinition s’affichent dans le **propriétés** fenêtre lorsque vous cliquez sur une zone ouverte du diagramme dans le *Concepteur de langage spécifique à un domaine*.
 
- Pour plus d’informations, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md). Pour plus d’informations sur la façon d’utiliser ces propriétés, consultez [personnalisation et l’extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).
+ Pour plus d’informations, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md). Pour plus d’informations sur l’utilisation de ces propriétés, consultez [personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
  DslDefinition a les propriétés dans le tableau suivant :
 
 |Propriété|Description|Par défaut|
 |--------------|-----------------|-------------|
 |Modificateur d'accès|Détermine si le modificateur d’accès pour la classe de domaine est public ou interne.|public|
-|Attributs personnalisés|Custom attributs définis pour la classe de domaine.<br /><br /> **Remarque** utiliser le bouton Parcourir pour ajouter un attribut.|\<Aucun >|
+|Attributs personnalisés|Custom attributs définis pour la classe de domaine.<br /><br /> **Remarque** utilisez le bouton Parcourir pour ajouter un attribut.|\<Aucun >|
 |Nom de la société|Le nom du nom de la société actuelle dans le Registre système.|Nom de la société|
 |Name|Le nom de cette classe de domaine.|Nom actuel|
 |Espace de noms|L’espace de noms affilié à cette classe de domaine.|Espace de noms actuel|
-|Guid du package|Le guid pour le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] package généré pour cette DSL.|\<Aucun >|
-|Package Namespace|L’espace de noms pour le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] package généré pour cette DSL.|\<Aucun >|
-|Nom du produit|Le nom du produit qui sera inscrit pour le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] package généré pour cette DSL.|\<Aucun >|
+|Guid du package|Le guid pour le package Visual Studio généré pour ce DSL.|\<Aucun >|
+|Package Namespace|L’espace de noms pour le package Visual Studio généré pour ce DSL.|\<Aucun >|
+|Nom du produit|Le nom du produit qui sera inscrit pour le package Visual Studio généré pour ce DSL.|\<Aucun >|
 |Notes|Notes associées à cette classe de domaine.|\<Aucun >|
-|Description|Description pour cette classe de domaine.|\<Aucun >|
-|Nom complet|Le nom qui sera affiché dans le concepteur généré pour cette classe de domaine.|\<Aucun >|
+|Description|Description de cette classe de domaine.|\<Aucun >|
+|Nom complet|Le nom qui s’affichera dans le concepteur généré pour cette classe de domaine.|\<Aucun >|
 |Help Keyword|Le mot clé d’aide associé à cette classe de domaine.|\<Aucun >|
-|Générer|Numéro de build incrémentielle pour cette définition de langage spécifique à un domaine.|0|
-|Version principale|Le numéro de build majeur incrémentielle pour cette définition de langage spécifique à un domaine.|1|
+|Build|Numéro de build incrémentielle de cette définition de langage spécifique à un domaine.|0|
+|Version majeure|Le numéro de build majeur incrémentielle pour cette définition de langage spécifique à un domaine.|1|
 |Version mineure|Le numéro de build mineure incrémentielle pour cette définition de langage spécifique à un domaine.|0|
 |Révision|La révision incrémentiel numéro de build pour cette définition de langage spécifique à un domaine.|0|
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Glossaire des outils de langage spécifique à un domaine](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossaire des outils Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
