@@ -1,0 +1,44 @@
+---
+title: Uniquement mon code (vue Threads) | Microsoft Docs
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
+ms.topic: article
+f1_keywords:
+- vs.cv.threads.jmc
+helpviewer_keywords:
+- Concurrency Visualizer, Just My Code (Threads View)
+ms.assetid: a9ac8a2c-9d99-4207-8ed4-e87f033f440d
+caps.latest.revision: 13
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: be1c495a9bf3becc36f23508ac71f40b42bf7600
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "47508007"
+---
+# <a name="just-my-code-threads-view"></a>Uniquement mon code (vue Threads)
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+Vous trouverez la dernière version de cette rubrique dans [uniquement mon Code (vue Threads)](https://docs.microsoft.com/visualstudio/profiling/just-my-code-threads-view).  
+  
+Si vous sélectionnez cette option, vous filtrez la pile des appels pour afficher uniquement votre code, plus un niveau des fonctions appelées.  
+  
+ En activant cette option, vous pouvez réduire considérablement la complexité de la pile des appels et éventuellement faciliter le diagnostic d’un problème particulier.  
+  
+ Dans certains cas, cette option peut éliminer l’appel bloquant. Si vous avez besoin des détails de la pile des appels complète pour déterminer cet appel, désactivez cette option de façon à afficher la totalité de la pile des appels.  
+  
+## <a name="see-also"></a>Voir aussi  
+ [Vue Threads](../profiling/threads-view-parallel-performance.md)   
+ [Pourcentage de réduction du bruit](../profiling/noise-reduction-percentage.md)
+
+
+
