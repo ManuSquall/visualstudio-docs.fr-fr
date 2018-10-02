@@ -12,18 +12,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: fd0930445ef409f27f87658a249f9c89aac22e91
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: d26c66b6bcbab2eafe2ae8b01597ef09985dcfa8
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567062"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858650"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>Débogage à l'aide de la visionneuse de banque d'information
 Avec la visionneuse Store, vous pouvez examiner l’état d’un *stocker* utilisé par [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. La visionneuse Store affiche tous les éléments de modèle de domaine qui se trouvent dans un magasin spécifique, ainsi que les propriétés de l’élément et les liens entre les éléments.
 
 ## <a name="opening-store-viewer"></a>Visionneuse de l’ouverture Store
- Lorsque vous êtes dans le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] expérimentale de build, arrêtez votre code à un point d’arrêt où une instance de la banque contient des informations sur le modèle. Ensuite, ouvrir la visionneuse de Store en tapant la commande suivante dans le **immédiat** fenêtre :
+ Lorsque vous êtes dans la build expérimentale de Visual Studio, arrêtez votre code à un point d’arrêt où une instance de la banque contient des informations sur le modèle. Ensuite, ouvrir la visionneuse de Store en tapant la commande suivante dans le **immédiat** fenêtre :
 
 ```csharp
 Microsoft.VisualStudio.Modeling.Diagnostics.StoreViewer.Show(mystore);

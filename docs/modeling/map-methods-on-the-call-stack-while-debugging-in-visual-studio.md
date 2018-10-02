@@ -30,12 +30,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9a1c98007c968f12e220c0fef841e7680f299f7
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: a99899f9a909ead3db7d925cd703612a7f68bcf2
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283192"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858704"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapper les méthodes sur la pile des appels tout en déboguant dans Visual Studio
 Créer une carte de code pour suivre visuellement la pile des appels pendant le débogage. Vous pouvez rédiger des notes sur la carte pour effectuer le suivi de ce que fait le code afin de vous concentrer sur la recherche de bogues.
@@ -66,7 +66,7 @@ Créer une carte de code pour suivre visuellement la pile des appels pendant le 
 
  Pour des informations sur les commandes et les actions que vous pouvez utiliser lorsque vous travaillez avec des cartes de code, consultez [Parcourir et réorganiser des cartes de code](../modeling/browse-and-rearrange-code-maps.md).
 
-##  <a name="MapStack"></a> Mapper la pile des appels
+## <a name="MapStack"></a> Mapper la pile des appels
 
 1.  Démarrez le débogage. (Clavier : **F5**)
 
@@ -80,17 +80,17 @@ Créer une carte de code pour suivre visuellement la pile des appels pendant le 
 
      La carte se mettra à jour automatiquement pendant que vous continuez le débogage. Consultez [mettre à jour de la carte avec la pile d’appels suivante](#UpdateMap).
 
-##  <a name="MakeNotes"></a> Rédiger des notes sur le code
+## <a name="MakeNotes"></a> Rédiger des notes sur le code
  Ajouter des commentaires pour effectuer le suivi de ce qui se passe dans le code. Pour ajouter une nouvelle ligne dans un commentaire, appuyez sur **MAJ + ENTRÉE**.
 
  ![Ajouter un commentaire à la pile d’appels sur la carte de code](../debugger/media/debuggermap_addcomment.png)
 
-##  <a name="UpdateMap"></a> Mettre à jour de la carte avec la pile d’appels suivante
+## <a name="UpdateMap"></a> Mettre à jour de la carte avec la pile d’appels suivante
  Exécutez votre application jusqu'au point d'arrêt suivant ou exécutez pas à pas une fonction. La carte ajoute une nouvelle pile d'appels.
 
  ![Mettre à jour la carte de code avec la pile d’appels suivante](../debugger/media/debuggermap_addclearcallstack.png)
 
-##  <a name="AddRelatedCode"></a> Ajouter du code associé à la carte
+## <a name="AddRelatedCode"></a> Ajouter du code associé à la carte
  Vous disposez maintenant une carte - ce qu’ensuite ? Si vous travaillez avec c# ou Visual Basic, ajoutez des éléments, tels que des champs, propriétés et d’autres méthodes, pour effectuer le suivi de ce qui se passe dans le code.
 
  Double-cliquez sur une méthode pour afficher sa définition de code ou utilisez le menu contextuel pour la méthode. (Clavier : sélectionnez la méthode sur la carte et appuyez sur **F12**)
@@ -114,7 +114,7 @@ Créer une carte de code pour suivre visuellement la pile des appels pendant le 
 
  ![Méthodes qui utilisent un champ sur la carte du code de la pile d’appels](../debugger/media/debuggermap_foundallreferences.png)
 
-##  <a name="FindBugs"></a> Rechercher des bogues à l’aide de la carte
+## <a name="FindBugs"></a> Rechercher des bogues à l’aide de la carte
  La visualisation de votre code peut vous aider à rechercher des bogues plus rapidement. Par exemple, supposons que vous recherchiez un bogue dans un programme de dessin. Lorsque vous tracez une ligne et essayez de l'annuler, rien ne se produit jusqu'à ce que vous traciez une autre ligne.
 
  Vous définissez donc des points d'arrêt dans les méthodes `clear`, `undo` et `Repaint`, vous démarrez le débogage et vous générez une carte comme celle-ci :
@@ -127,7 +127,7 @@ Créer une carte de code pour suivre visuellement la pile des appels pendant le 
 
  ![Ajouter un nouvel appel de méthode à la pile d’appels sur le code de mappage](../debugger/media/debuggermap_addnewcallforrepaint.png)
 
-##  <a name="QA"></a> Q et R
+## <a name="QA"></a> Q et R
 
 -   **Pas tous les appels apparaissent sur la carte. Pourquoi ?**
 
@@ -159,7 +159,7 @@ Créer une carte de code pour suivre visuellement la pile des appels pendant le 
 
 -   **Puis-je partager la carte avec d’autres personnes ?**
 
-     Vous pouvez exporter la carte, l’envoyer à d’autres personnes si vous disposez de Microsoft Outlook ou l’enregistrer dans votre solution afin de pouvoir la vérifier dans Team Foundation Version Control.
+     Vous pouvez exporter la carte, l’envoyer à d’autres personnes si vous disposez de Microsoft Outlook ou enregistrez dans votre solution afin de vérifier dans le contrôle de code source.
 
      ![Partager la carte du code de la pile d'appels avec les autres](../debugger/media/debuggermap_sharewithothers.png)
 

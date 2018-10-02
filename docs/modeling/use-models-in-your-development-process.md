@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1d780f8ab293a9503f3c2c8675e4de1e3584b28
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: 5e2d973d1ec992002b2239383f9dbed228a0d59b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623639"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859391"
 ---
 # <a name="use-models-in-your-development-process"></a>Utiliser des modèles dans votre processus de développement
 
@@ -48,7 +48,7 @@ Dans les deux cas, la création d'un modèle entraîne presque toujours une réd
 
 ## <a name="use-models-with-other-artifacts"></a>Utiliser des modèles avec d’autres artefacts
 
-Un modèle n'est pas en soi une architecture ou une spécification de configuration. C'est un outil qui permet d'exprimer plus clairement certains aspects de ces choses, mais les concepts impliqués dans la conception de logiciel ne peuvent pas tous être exprimés. Vous devez donc utiliser des modèles avec d'autres moyens de communication, tels que des pages ou des paragraphes OneNote, des documents Microsoft Office, des éléments de travail dans [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] ou des pense-bêtes sur le mur de la salle de projet. Mis à part ce dernier élément, tous ces types d'objets peuvent être liés aux parties des éléments du modèle.
+Un modèle n'est pas en soi une architecture ou une spécification de configuration. C'est un outil qui permet d'exprimer plus clairement certains aspects de ces choses, mais les concepts impliqués dans la conception de logiciel ne peuvent pas tous être exprimés. Les modèles doivent donc être utilisés avec d’autres moyens de communication, tels que des éléments de travail des pages ou des paragraphes, les documents Microsoft Office OneNote dans Team Foundation ou des pense-bêtes sur le mur de salle de projet. Mis à part ce dernier élément, tous ces types d'objets peuvent être liés aux parties des éléments du modèle.
 
 Voici d'autres aspects de spécification qui sont couramment utilisés avec les modèles. Selon l'échelle et le style de votre projet, vous pourriez utiliser plusieurs de ces aspects ou aucun d'entre eux :
 
@@ -88,7 +88,7 @@ Les suggestions suivantes peuvent vous aider à tirer parti des avantages offert
 
 - À l'approche de la fin de chaque itération, organisez un atelier de spécifications pour définir en détail les spécifications ou les récits utilisateur qui seront développés dans l'itération suivante. Invitez les utilisateurs et les parties prenantes qui peuvent décider des priorités, ainsi que les développeurs et les testeurs système. Trois heures seront généralement nécessaires pour définir les spécifications pour une itération de deux semaines.
 
-- L'objectif de cet atelier est que tout le monde s'entende sur ce qui doit être accompli à la fin de l'itération suivante. Utilisez des modèles comme outil pour aider à clarifier les spécifications. La conséquence de l'atelier est la création d'un backlog d'itération, c'est-à-dire une liste de tâches de développement dans [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] et des suites de tests dans [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)].
+- L'objectif de cet atelier est que tout le monde s'entende sur ce qui doit être accompli à la fin de l'itération suivante. Utilisez des modèles comme outil pour aider à clarifier les spécifications. La sortie de l’atelier est un backlog d’itération : autrement dit, une liste de tâches de développement dans les suites de test et de Team Foundation dans [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)].
 
 - Lors de l'atelier de spécifications, discutez de la conception  uniquement dans le cadre de la détermination des estimations pour les tâches de développement. Autrement, ne discutez que du comportement du système avec lequel les utilisateurs auront une interaction directe. Séparez le modèle d'impératifs du modèle d'architecture.
 
@@ -96,7 +96,7 @@ Les suggestions suivantes peuvent vous aider à tirer parti des avantages offert
 
 ### <a name="link-model-to-work-items"></a>Lier le modèle aux éléments de travail
 
-Après l'atelier de spécifications, élaborez les détails du modèle d'impératifs et liez le modèle à des tâches de développement. Vous pouvez pour cela lier des éléments de travail dans [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] à des éléments du modèle.
+Après l'atelier de spécifications, élaborez les détails du modèle d'impératifs et liez le modèle à des tâches de développement. Pour cela, en liant des éléments de travail dans Team Foundation pour les éléments dans le modèle.
 
 Vous pouvez lier n'importe quel élément à des éléments de travail, mais les éléments les plus utiles sont les suivants :
 
