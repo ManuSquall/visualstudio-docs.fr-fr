@@ -11,15 +11,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b9c1aec06469e5ea0845a8658d9dcb88563e1984
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 7b20aed36dbde31b63956fa104c5c1a50e0088d1
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567166"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859300"
 ---
 # <a name="customizing-the-properties-window"></a>Personnalisation de la fenêtre Propriétés
-Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propriétés dans votre langage spécifique à un domaine (DSL) dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Dans votre définition DSL, vous définissez les propriétés de domaine sur chaque classe de domaine. Par défaut, lorsque vous sélectionnez une instance de la classe, sur un diagramme ou dans l’Explorateur de modèles, chaque propriété de domaine est répertoriée dans la fenêtre Propriétés. Vous pouvez ainsi afficher et modifier les valeurs des propriétés de domaine, même si vous n’avez pas mappé les aux champs de forme sur le diagramme.
+Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propriétés dans votre langage spécifique à un domaine (DSL) dans Visual Studio. Dans votre définition DSL, vous définissez les propriétés de domaine sur chaque classe de domaine. Par défaut, lorsque vous sélectionnez une instance de la classe, sur un diagramme ou dans l’Explorateur de modèles, chaque propriété de domaine est répertoriée dans la fenêtre Propriétés. Vous pouvez ainsi afficher et modifier les valeurs des propriétés de domaine, même si vous n’avez pas mappé les aux champs de forme sur le diagramme.
 
 ## <a name="names-descriptions-and-categories"></a>Noms, Descriptions et les catégories
  **Nom et nom complet**. Dans votre définition d’une propriété de domaine, le nom complet de la propriété est le nom qui apparaît lors de l’exécution dans la fenêtre Propriétés. En revanche, le nom est utilisé lorsque vous écrivez du code de programme pour mettre à jour la propriété. Le nom doit être un nom d’alphanumériques CLR correct, mais le nom d’affichage peut contenir des espaces.
