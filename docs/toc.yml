@@ -136,7 +136,11 @@ items:
   - name: Node.js dans Visual Studio
     href: javascript/tutorial-nodejs.md
   - name: C# dans Visual Studio
-    href: ide/tutorial-csharp-aspnet-core.md
+    items:
+    - name: 'C# : créer une application web'
+      href: ide/tutorial-csharp-aspnet-core.md
+    - name: 'C# : créer une application console'
+      href: ide/tutorial-csharp-console.md
   - name: Visual Basic dans Visual Studio
     href: ide/tutorial-visual-basic-console.md
   - name: Déboguer dans Visual Studio
@@ -282,6 +286,8 @@ items:
             href: ide/reference/generate-field-property-local.md
           - name: Générer le constructeur
             href: ide/reference/generate-constructor.md
+          - name: Ajouter un paramètre à une méthode
+            href: ide/reference/add-parameter.md
           - name: Générer le remplacement
             href: ide/reference/generate-override.md
           - name: Générer des substitutions de méthode Equals et GetHashCode
@@ -1071,9 +1077,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Nous contacter
     href: ide/talk-to-us.md
-ms.openlocfilehash: 5ef237f64da0664b3847f16f7d2d643899d74697
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 8b82cd95d65b28326607fb44852e39f24ee44c52
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029093"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443660"
