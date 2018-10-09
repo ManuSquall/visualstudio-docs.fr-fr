@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8018f3f72fd774a1ac64cd1d6d968ad8be65b453
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: aee6e5656142d0597ff6101da5e2e5f690f8fcc5
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512237"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863947"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Notifications et progression pour Visual Studio
 ##  <a name="BKMK_NotificationSystems"></a> Systèmes de notification  
@@ -213,7 +213,7 @@ ms.locfileid: "39512237"
  La zone de sélection numérique (également appelé une « boucle de progression ») est un indicateur de progression indéterminée principalement utilisé en relation avec l’interface utilisateur contextuel. Afficher un compteur à proximité de son contenu associé, tel qu’un en-tête de catégorie textuelle, messagerie ou contrôle.  
   
 ##### <a name="cursor-feedback"></a>Commentaire du curseur  
- Pour les opérations qui prennent entre 2 à 7 secondes, fournir des commentaires de curseur. En règle générale, cela signifie que le curseur d’attente fourni par le système d’exploitation à l’aide de. Pour obtenir des instructions, consultez l’article MSDN [Cursors.Wait propriété](https://msdn.microsoft.com/en-us/library/system.windows.input.cursors.wait\(v=vs.110\).aspx).  
+ Pour les opérations qui prennent entre 2 à 7 secondes, fournir des commentaires de curseur. En règle générale, cela signifie que le curseur d’attente fourni par le système d’exploitation à l’aide de. Pour obtenir des instructions, consultez l’article MSDN [Cursors.Wait propriété](/dotnet/api/system.windows.input.cursors.wait).  
   
 #### <a name="progress-indicator-locations"></a>Emplacements d’indicateur de progression  
   

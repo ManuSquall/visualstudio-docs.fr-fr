@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3cc30f572f48622776bb1014c2a5e3c17bf8f27b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 05faacee77496f8d25ca926e4a1d441819cd9d9d
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512374"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863931"
 ---
 # <a name="layout-for-visual-studio"></a>Mise en page pour Visual Studio
 La majorité des boîtes de dialogue Visual Studio sont [mise en page de la boîte de dialogue utilitaire](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), qui sont l’unthemed boîtes de dialogue de cette norme suivi [principes de mise en page de boîte de dialogue Windows Desktop](/windows/desktop/uxguide/win-dialog-box). Lorsque Visual Studio s’à actualiser son interface utilisateur, certaines des boîtes de dialogue plus apparents ont une nouvelle conception qui établit les expériences comme définition de produit. Ces [mise en page de boîte de dialogue à thème](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) ont une apparence à thème.  
@@ -159,5 +159,5 @@ La majorité des boîtes de dialogue Visual Studio sont [mise en page de la boî
   
 ## <a name="see-also"></a>Voir aussi  
  [Modèles d’application pour Visual Studio](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)   
- [Contrôles (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx)   
- [Boîtes de dialogue (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499\(v=vs.85\).aspx)
+ [Contrôles (Windows)](/windows/desktop/uxguide/controls)   
+ [Boîtes de dialogue (Windows)](/windows/desktop/uxguide/win-dialog-box)
