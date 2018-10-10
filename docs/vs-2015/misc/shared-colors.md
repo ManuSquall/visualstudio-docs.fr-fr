@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: v-brickg
-ms.openlocfilehash: 3871ee1f31b2bc63f575e308b3b9008b3335a224
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d2f36b3b5213003e65f51f7d93a2d7d90a3ff12
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501056"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881174"
 ---
 # <a name="shared-colors"></a>Couleurs partagés
 Insérez l'introduction ici.  
@@ -25,7 +25,7 @@ Insérez l'introduction ici.
 ## <a name="shared-colors"></a>Couleurs partagés  
  Quand vous concevez l’interface utilisateur qui utilise des éléments d’interpréteur de commandes Visual Studio, ou si vous voulez que votre élément d’interface soit cohérent avec des fonctionnalités similaires, utilisez des noms de jeton existants dans les fichiers de définition de package pour choisir et assigner des couleurs. Ainsi, votre interface utilisateur reste cohérente avec l’environnement Visual Studio global et elle se met à jour automatiquement quand des thèmes sont ajoutés ou mis à jour.  
   
- Cet article décrit les éléments d’interface utilisateur communs et les noms de jeton qu’ils utilisent, que vous pouvez référencer pour créer une interface utilisateur similaire. Pour obtenir des informations spécifiques sur la façon d’accéder à ces jetons de couleur, consultez [The VSColor Service](../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).  
+ Cet article décrit les éléments d’interface utilisateur communs et les noms de jeton qu’ils utilisent, que vous pouvez référencer pour créer une interface utilisateur similaire. Pour plus d’informations sur la façon d’accéder à ces jetons de couleur, consultez [The VSColor Service](../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).  
   
  Assurez-vous d’utiliser correctement les noms de jeton :  
   
@@ -245,7 +245,7 @@ Insérez l'introduction ici.
 #####  <a name="BKMK_CommandComboBox"></a> Zone de liste déroulante  
   
 > [!IMPORTANT]
->  Les zones de liste modifiable ressemblent aux listes déroulantes, mais elles comprennent une zone de texte modifiable. Si votre liste déroulante n’inclut pas de zone de texte modifiable, utilisez les jetons de couleur disponibles sous [déroulante](../misc/shared-colors.md#BKMK_CommandDropDown).  
+>  Les zones de liste modifiable ressemblent aux listes déroulantes, mais elles comprennent une zone de texte modifiable. Si votre liste déroulante n’inclut pas de zone de texte modifiable, utilisez les jetons de couleur disponibles sous [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown).  
   
  ![Ligne rouge de zone de liste déroulante](../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303-029_ComboBoxRedline")  
   
@@ -323,7 +323,7 @@ Insérez l'introduction ici.
 #####  <a name="BKMK_CommandDropDown"></a> Liste déroulante  
   
 > [!IMPORTANT]
->  Les listes déroulantes ressemblent aux zones de liste modifiable, mais elles ne disposent pas de zones de texte modifiable. Si votre liste déroulante inclut une zone de texte modifiable, utilisez les jetons de couleur disponibles sous [zone de liste déroulante](../misc/shared-colors.md#BKMK_CommandComboBox).  
+>  Les listes déroulantes ressemblent aux zones de liste modifiable, mais elles ne disposent pas de zones de texte modifiable. Si votre liste déroulante inclut une zone de texte modifiable, utilisez les jetons de couleur disponibles sous [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox).  
   
  ![DROP&#45;vers le bas ligne rouge](../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303-042_DropdownRedline")  
   
@@ -387,7 +387,7 @@ Insérez l'introduction ici.
 |![DROP&#45;le bouton désactivé](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303-052_DropdownButtonDisabled")|Premier plan (glyphe)|`Environment.DropDownDisabledGlyph`|  
   
 ##### <a name="split-button"></a>Bouton Fractionner  
- Les boutons partagés partagent de nombreux noms de jeton avec d’autres contrôles de barre de commandes, tels que des boutons, menus et texte de barre de commandes. Toutes les actions nécessaires et les noms de jeton bouton de liste déroulante sont répétés ici par commodité. Listes de liste déroulante du bouton partagé sont des implémentations de barre de commandes [Menus](../misc/shared-colors.md#BKMK_CommandMenus).  
+ Les boutons partagés partagent de nombreux noms de jeton avec d’autres contrôles de barre de commandes, tels que des boutons, menus et texte de barre de commandes. Toutes les actions nécessaires et les noms de jeton bouton de liste déroulante sont répétés ici par commodité. Les listes déroulantes de bouton partagé sont des implémentations de la barre de commandes [Menus](../misc/shared-colors.md#BKMK_CommandMenus).  
   
  ![Ligne rouge de bouton partagé](../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303-053_SplitButtonRedline")  
   
@@ -648,7 +648,7 @@ Insérez l'introduction ici.
 |![Onglet d’aperçu d’arrière-plan au pointage](../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303-082_PreviewBackgroundTabHover")<br /><br /> **Onglet d’arrière-plan onglet d’aperçu au pointage**|Bordure|`Environment.FileTabProvisionalHoverBorder`<br /><br /> Défini sur la même couleur que l’arrière-plan.|  
   
 ##### <a name="document-overflow-button"></a>Bouton de dépassement de capacité de document  
- Le bouton de dépassement de capacité de document est présent si un ou plusieurs documents sont ouverts, que l’espace vertical défini dans la configuration actuelle suffise ou non pour loger tous les onglets de document. Le menu de liste déroulante de dépassement de capacité de document, qui est contrôlé par le **CommandBarMenu** couleurs (voir [Menus](../misc/shared-colors.md#BKMK_CommandMenus)), affiche une liste de tous les documents ouverts, visibles et masqués et les modifications de glyphe de dépassement de capacité selon que tous les documents ouverts sont affichés dans le canal d’onglet.  
+ Le bouton de dépassement de capacité de document est présent si un ou plusieurs documents sont ouverts, que l’espace vertical défini dans la configuration actuelle suffise ou non pour loger tous les onglets de document. Le menu déroulant de dépassement de capacité de document, contrôlé par les couleurs **CommandBarMenu** (consultez [Menus](../misc/shared-colors.md#BKMK_CommandMenus)), présente la liste de tous les documents ouverts, à la fois visibles et masqués, ainsi que le glyphe de dépassement de capacité change selon que tous les documents ouverts sont affichés dans le canal d’onglet.  
   
  ![Ligne rouge de dépassement de capacité](../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303-083_OverflowRedline")  
   
@@ -1085,7 +1085,7 @@ Insérez l'introduction ici.
 |![Barre d’informations](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303-139_Infobar")<br /><br /> **Barre d’informations**|Bordure|`Environment.ToolWindowBorder`|  
   
 #### <a name="scroll-bar"></a>Barre de défilement  
- Les barres de défilement sont stylisées par l’environnement Visual Studio et aucun thème ne doit leur être appliqué. Toutefois, vous pouvez décider d’exploiter les couleurs utilisées dans les fenêtres de défilement, afin que votre interface utilisateur apparaisse toujours cohérente avec cette partie de l’environnement Visual Studio.  
+ Les barres de défilement sont stylisées par l’environnement Visual Studio et aucun thème ne doit leur être appliqué. Toutefois, vous pouvez décider que vous souhaitez exploiter les couleurs utilisées dans les barres de défilement afin que votre interface utilisateur apparaisse toujours cohérente avec cette partie de l’environnement Visual Studio.  
   
  ![Ligne rouge de barre de défilement](../extensibility/ux-guidelines/media/0303-140-scrollbarredline.png "0303-140_ScrollbarRedline")  
   
@@ -1182,7 +1182,7 @@ Insérez l'introduction ici.
 |![Arborescence actif au pointage](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br /><br /> **Focus**|Présentation|`TreeView.SelectedItemActive`|  
 |![Arborescence actif au pointage](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br /><br /> **Focus**|Premier plan (texte)|`TreeView.SelectedItemActive`|  
 |![Arborescence actif au pointage](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br /><br /> **Focus**|Premier plan (glyphe)|`TreeView.SelectedItemActiveGlyphMouseOver`|  
-|![Arborescence actif au pointage](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br /><br /> **Focus**|Bordure|None`TreeView.FocusVisualBorder`|  
+|![Arborescence actif au pointage](../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303-153_TreeViewFocusedHover")<br /><br /> **Focus**|Bordure|Aucun`TreeView.FocusVisualBorder`|  
 |![Arborescence inactive au pointage](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br /><br /> **Inactif**|Présentation|`TreeView.SelectedItemInactive`|  
 |![Arborescence inactive au pointage](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br /><br /> **Inactif**|Premier plan (texte)|`TreeView.SelectedItemInactive`|  
 |![Arborescence inactive au pointage](../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")<br /><br /> **Inactif**|Premier plan (glyphe)|`TreeView.SelectedItemActiveGlyphMouseOver`|  
@@ -1295,7 +1295,7 @@ Insérez l'introduction ici.
  N’utilisez pas...  
  -   pour toute interface utilisateur qui n’est pas une zone déroulante ou une zone de liste modifiable.  
   
--   pour un [déroulante](../misc/shared-colors.md#BKMK_CommandDropDown) ou [zone de liste déroulante](../misc/shared-colors.md#BKMK_CommandComboBox) dans la barre de commandes.  
+-   pour un [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown) ou [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox) dans la barre de commandes.  
   
  **Default**  
   
@@ -1600,22 +1600,22 @@ Insérez l'introduction ici.
   
 |Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
-|![Nœud parent de boîte à outils concentré](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br /><br /> **Nœud parent avec focus**|Présentation|`TreeView.SelectedItemActive`<br /><br /> À partir de [arborescence](../misc/shared-colors.md#BKMK_TreeView) catégorie|  
-|![Nœud enfant de boîte à outils concentré](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br /><br /> **Nœud enfant avec focus**|Présentation|`TreeView.SelectedItemActive`<br /><br /> À partir de [arborescence](../misc/shared-colors.md#BKMK_TreeView) catégorie|  
-|![Nœud parent de boîte à outils concentré](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br /><br /> **Nœud parent avec focus**|Bordure|`TreeView.FocusVisualBorder`<br /><br /> À partir de [arborescence](../misc/shared-colors.md#BKMK_TreeView) catégorie|  
-|![Nœud enfant de boîte à outils concentré](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br /><br /> **Nœud enfant avec focus**|Bordure|`TreeView.FocusVisualBorder`<br /><br /> À partir de [arborescence](../misc/shared-colors.md#BKMK_TreeView) catégorie|  
-|![Nœud parent de boîte à outils concentré](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br /><br /> **Nœud parent avec focus**|Premier plan (glyphe)|`TreeView.SelectedItemActive`<br /><br /> À partir de [arborescence](../misc/shared-colors.md#BKMK_TreeView) catégorie|  
-|![Nœud enfant de boîte à outils concentré](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br /><br /> **Nœud enfant avec focus**|Premier plan (glyphe)|`TreeView.SelectedItemActive`<br /><br /> À partir de [arborescence](../misc/shared-colors.md#BKMK_TreeView) catégorie|  
-|![Nœud parent de boîte à outils concentré](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br /><br /> **Nœud parent avec focus**|Premier plan (texte)|`TreeView.SelectedItemActive`<br /><br /> À partir de [arborescence](../misc/shared-colors.md#BKMK_TreeView) catégorie|  
-|![Nœud enfant de boîte à outils concentré](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br /><br /> **Nœud enfant avec focus**|Premier plan (texte)|`TreeView.SelectedItemActive`<br /><br /> À partir de [arborescence](../misc/shared-colors.md#BKMK_TreeView) catégorie|  
-|![Nœud parent de boîte à outils inactif](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br /><br /> **Nœud parent sans focus**|Présentation|`TreeView.SelectedItemInactive`<br /><br /> À partir de [arborescence](../misc/shared-colors.md#BKMK_TreeView) catégorie|  
-|![Nœud enfant de boîte à outils inactif](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br /><br /> **Nœud enfant sans focus**|Présentation|`TreeView.SelectedItemInactive`<br /><br /> À partir de [arborescence](../misc/shared-colors.md#BKMK_TreeView) catégorie|  
+|![Nœud parent de boîte à outils concentré](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br /><br /> **Nœud parent avec focus**|Présentation|`TreeView.SelectedItemActive`<br /><br /> À partir de la catégorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Nœud enfant de boîte à outils concentré](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br /><br /> **Nœud enfant avec focus**|Présentation|`TreeView.SelectedItemActive`<br /><br /> À partir de la catégorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Nœud parent de boîte à outils concentré](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br /><br /> **Nœud parent avec focus**|Bordure|`TreeView.FocusVisualBorder`<br /><br /> À partir de la catégorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Nœud enfant de boîte à outils concentré](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br /><br /> **Nœud enfant avec focus**|Bordure|`TreeView.FocusVisualBorder`<br /><br /> À partir de la catégorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Nœud parent de boîte à outils concentré](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br /><br /> **Nœud parent avec focus**|Premier plan (glyphe)|`TreeView.SelectedItemActive`<br /><br /> À partir de la catégorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Nœud enfant de boîte à outils concentré](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br /><br /> **Nœud enfant avec focus**|Premier plan (glyphe)|`TreeView.SelectedItemActive`<br /><br /> À partir de la catégorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Nœud parent de boîte à outils concentré](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br /><br /> **Nœud parent avec focus**|Premier plan (texte)|`TreeView.SelectedItemActive`<br /><br /> À partir de la catégorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Nœud enfant de boîte à outils concentré](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br /><br /> **Nœud enfant avec focus**|Premier plan (texte)|`TreeView.SelectedItemActive`<br /><br /> À partir de la catégorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Nœud parent de boîte à outils inactif](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br /><br /> **Nœud parent sans focus**|Présentation|`TreeView.SelectedItemInactive`<br /><br /> À partir de la catégorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Nœud enfant de boîte à outils inactif](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br /><br /> **Nœud enfant sans focus**|Présentation|`TreeView.SelectedItemInactive`<br /><br /> À partir de la catégorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
 |![Nœud parent de boîte à outils inactif](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br /><br /> **Nœud parent sans focus**|Bordure|Aucun.|  
 |![Nœud enfant de boîte à outils inactif](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br /><br /> **Nœud enfant sans focus**|Bordure|Aucun.|  
-|![Nœud parent de boîte à outils inactif](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br /><br /> **Nœud parent sans focus**|Premier plan (glyphe)|`TreeView.SelectedItemInactive`<br /><br /> À partir de [arborescence](../misc/shared-colors.md#BKMK_TreeView) catégorie|  
-|![Nœud enfant de boîte à outils inactif](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br /><br /> **Nœud enfant sans focus**|Premier plan (glyphe)|`TreeView.SelectedItemInactive`<br /><br /> À partir de [arborescence](../misc/shared-colors.md#BKMK_TreeView) catégorie|  
-|![Nœud parent de boîte à outils inactif](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br /><br /> **Nœud parent sans focus**|Premier plan (texte)|`TreeView.SelectedItemInactive`<br /><br /> À partir de [arborescence](../misc/shared-colors.md#BKMK_TreeView) catégorie|  
-|![Nœud enfant de boîte à outils inactif](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br /><br /> **Nœud enfant sans focus**|Premier plan (texte)|`TreeView.SelectedItemInactive`<br /><br /> À partir de [arborescence](../misc/shared-colors.md#BKMK_TreeView) catégorie|  
+|![Nœud parent de boîte à outils inactif](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br /><br /> **Nœud parent sans focus**|Premier plan (glyphe)|`TreeView.SelectedItemInactive`<br /><br /> À partir de la catégorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Nœud enfant de boîte à outils inactif](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br /><br /> **Nœud enfant sans focus**|Premier plan (glyphe)|`TreeView.SelectedItemInactive`<br /><br /> À partir de la catégorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Nœud parent de boîte à outils inactif](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br /><br /> **Nœud parent sans focus**|Premier plan (texte)|`TreeView.SelectedItemInactive`<br /><br /> À partir de la catégorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
+|![Nœud enfant de boîte à outils inactif](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br /><br /> **Nœud enfant sans focus**|Premier plan (texte)|`TreeView.SelectedItemInactive`<br /><br /> À partir de la catégorie [Tree view](../misc/shared-colors.md#BKMK_TreeView)|  
   
 ## <a name="color-value-reference"></a>Référence de valeur de couleur  
   

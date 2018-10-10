@@ -14,19 +14,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13d0bcf02bb46de9116ab4dbd33b4a034c786252
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b180eed67b617cd7e46610b78865fe0ae088d85e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504080"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879816"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Procédure pas à pas : objets manquants en raison de Vertex Shader
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : manquant objets en raison de l’ombrage de Vertex](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-missing-objects-due-to-vertex-shading).  
   
-Cette procédure pas à pas montre comment utiliser le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] outils Graphics Diagnostics pour examiner un objet est manquant, car une erreur se produit pendant l’étape de nuanceur de sommets.  
+Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnostics dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour examiner un objet qui est manquant à cause d’une erreur survenue à l’étape du nuanceur de sommets.  
   
  Cette procédure pas à pas décrit les tâches suivantes :  
   
@@ -50,7 +50,7 @@ Cette procédure pas à pas montre comment utiliser le [!INCLUDE[vsprvs](../incl
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Pour examiner un frame dans un journal de graphiques  
   
-1.  Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], chargez un journal de graphisme qui contient un frame présentant l’objet manquant. Un nouvel onglet de journal de graphisme s’affiche dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. La partie supérieure de cet onglet contient la sortie de la cible de rendu du frame sélectionné. La partie inférieure contient la **Liste de frames**, qui affiche chaque frame capturé sous forme de miniature.  
+1.  Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], chargez un journal de graphiques qui contient un frame présentant l’objet manquant. Un nouvel onglet de journal de graphisme s’affiche dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. La partie supérieure de cet onglet contient la sortie de la cible de rendu du frame sélectionné. La partie inférieure contient la **Liste de frames**, qui affiche chaque frame capturé sous forme de miniature.  
   
 2.  Dans la **Liste de frames**, sélectionnez un frame qui montre que l’objet n’est pas affiché. La cible de rendu est mise à jour pour refléter le frame sélectionné. Dans ce scénario, l'onglet du journal de graphisme se présente comme suit :  
   
@@ -116,7 +116,7 @@ Cette procédure pas à pas montre comment utiliser le [!INCLUDE[vsprvs](../incl
     > [!TIP]
     >  Si vous déboguez simultanément votre application, vous pouvez définir un point d’arrêt à cet emplacement, qui sera atteint lorsque le frame suivant sera affiché. En examinant ensuite les membres de `m_marbleConstantBufferData` , vous constatez que le membre `projection` a une valeur composée uniquement de zéros quand la mémoire tampon constante est remplie.  
   
- Vous avez trouvé l’endroit où la mémoire tampon constante est remplie et découvert que ses valeurs proviennent de la variable `m_marbleConstantBufferData`. Vous devez maintenant trouver l’endroit où le membre `m_marbleConstantBufferData.projection` a une valeur composée de zéros. Vous pouvez utiliser **Rechercher toutes les références** pour rechercher rapidement le code qui modifie la valeur de `m_marbleConstantBufferData.projection`.  
+ Une fois que vous recherchez l’emplacement où la mémoire tampon constante est remplie et que vous découvrez que ses valeurs proviennent de la variable `m_marbleConstantBufferData`, l’étape suivante consiste à trouver l’endroit où le `m_marbleConstantBufferData.projection` membre est défini sur tous les zéros non significatifs. Vous pouvez utiliser **Rechercher toutes les références** pour rechercher rapidement le code qui modifie la valeur de `m_marbleConstantBufferData.projection`.  
   
 #### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>Pour rechercher où le membre projection est défini dans le code source de votre application  
   

@@ -14,17 +14,17 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 10e5db2b81df20ab4b3002f367104fce61631faf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e24338a75dd631cee86ea8ac81e774e81732bba5
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507528"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48878990"
 ---
 # <a name="create-jsdoc-comments-for-javascript-intellisense"></a>Créer des commentaires JSDoc pour IntelliSense JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Documentation Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/).  
+Vous trouverez la dernière version de cette rubrique dans [Documentation Visual Studio 2017](/visualstudio/).  
   
 IntelliSense dans Visual Studio affiche les informations que vous ajoutez à un script sous forme de commentaires JSDoc standard. Vous pouvez utiliser des commentaires JSDoc pour fournir des informations sur les éléments de code, tels que les fonctions, les champs et les variables.  
   

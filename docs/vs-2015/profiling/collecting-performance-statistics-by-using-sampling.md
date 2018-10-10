@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a6ed7ba926869359db9c9602f316cb0fc3934d7
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ce6a9fed51e4c5dc93fca406dbb43787700d83d2
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590660"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880407"
 ---
 # <a name="collecting-performance-statistics-by-using-sampling"></a>Collecte de statistiques de performance à l’aide de l’échantillonnage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

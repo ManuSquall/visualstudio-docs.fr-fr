@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3a799ebced2f790d94a4062b663b59dfa3fa41c3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aab6de915d6bb26b123b931fe10b7e0116688357
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501189"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880914"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Étape 1 : créer un projet et ajouter des étiquettes à votre formulaire
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Les premières étapes du développement de ce questionnaire consistent à crée
 > [!NOTE]
 >  Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour obtenir une vue d’ensemble du didacticiel, consultez [Didacticiel 2 : créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
-### <a name="to-create-a-project-and-and-set-properties-for-a-form"></a>Pour créer un projet et définir des propriétés pour un formulaire  
+### <a name="to-create-a-project-and-set-properties-for-a-form"></a>Pour créer un projet et définir des propriétés pour un formulaire  
   
 1.  Dans la barre de menus, sélectionnez **Fichier**, **Nouveau**, **Projet**.  
   

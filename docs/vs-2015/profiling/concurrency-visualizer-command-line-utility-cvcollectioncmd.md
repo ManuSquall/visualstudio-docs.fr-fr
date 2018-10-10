@@ -16,12 +16,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1925a240c011e4a9e7ede1a0aeb673b5d33c23bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dbc4f235d56554b37033703158126a003ddbca93
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493450"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880823"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilitaire en ligne de commande du visualiseur concurrentiel (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,10 +31,10 @@ Vous trouverez la dernière version de cette rubrique dans [de ligne de commande
 Vous pouvez utiliser l’utilitaire en ligne de commande Visualiseur concurrentiel (CVCollectionCmd.exe) pour recueillir des traces à partir de la ligne de commande de façon à les afficher dans le Visualiseur concurrentiel pour Visual Studio. Vous pouvez utiliser ces outils sur des ordinateurs sur lesquels Visual Studio n’est pas installé.  
   
 > [!NOTE]
->  À compter de Visual Studio 2013, le Visualiseur concurrentiel est une extension facultative (il était autrefois inclus dans Visual Studio). Vous pouvez télécharger les [Outils de collecte du visualiseur concurrentiel pour Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) à partir du Centre de téléchargement.  
+>  À compter de Visual Studio 2013, le Visualiseur concurrentiel est une extension facultative (il était autrefois inclus dans Visual Studio). Vous pouvez télécharger les [Outils de collecte du visualiseur concurrentiel pour Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) à partir du Centre de téléchargement.  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Télécharger l’utilitaire en ligne de commande Visualiseur concurrentiel  
- Pour télécharger et installer l’utilitaire en ligne de commande, accédez aux [outils de collecte du visualiseur concurrentiel pour Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) , puis suivez les instructions. Par défaut, CVCollectionCmd.exe est installé dans %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ sur les ordinateurs x64).  
+ Pour télécharger et installer l’utilitaire en ligne de commande, accédez aux [outils de collecte du visualiseur concurrentiel pour Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) , puis suivez les instructions. Par défaut, CVCollectionCmd.exe est installé dans %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ sur les ordinateurs x64).  
   
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>Recueillir une trace avec CVCollectionCmd  
  Vous pouvez recueillir une trace en démarrant l’application avec CVCollectionCmd ou en vous y attachant. Pour plus d’informations sur les options, consultez ci-dessous les informations de référence sur les commandes. Exemple :  

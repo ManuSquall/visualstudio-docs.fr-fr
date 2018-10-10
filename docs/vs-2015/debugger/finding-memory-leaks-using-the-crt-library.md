@@ -35,12 +35,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c102bba09901e55e9ec6196009965b912f8be967
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d2c45ed2377b400fb00ac264aa2dcf8e5df8410
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516637"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879770"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Recherche de fuites de mémoire à l'aide de la bibliothèque CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Les fuites de mémoire, qui correspondent à l'échec de désallocation de mémo
   
  Pour que les CRT fonctionnent correctement, les instructions `#include` doivent respecter l'ordre indiqué ici.  
   
- Notamment les cartes de crtdbg.h le `malloc` et [gratuit](http://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) fonctions vers leurs versions debug, [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) et `free`, qui effectuent le suivi d’allocation de mémoire et la désallocation. Ce mappage se produit uniquement dans les versions Debug avec `_DEBUG`. Les versions Release utilisent les fonctions `malloc` et `free` ordinaires.  
+ L'inclusion de crtdbg.h a pour résultat le mappage des fonctions `malloc` et [free](http://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) vers leurs versions Debug, [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) et `free`, qui effectuent le suivi de l'allocation et de la désallocation de mémoire. Ce mappage se produit uniquement dans les versions Debug avec `_DEBUG`. Les versions Release utilisent les fonctions `malloc` et `free` ordinaires.  
   
  L'instruction `#define` mappe une version de base des fonctions de tas CRT vers la version Debug correspondante. Si vous omettez l'instruction `#define` , le dump de fuite de mémoire sera moins détaillé.  
   
@@ -74,7 +74,7 @@ Les fuites de mémoire, qui correspondent à l'échec de désallocation de mémo
 _CrtDumpMemoryLeaks();  
 ```  
   
- Si votre application dispose de plusieurs sorties, vous n’avez pas besoin d’un appel à manuellement [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) à chaque point de sortie. Si vous appelez `_CrtSetDbgFlag` au début de votre application, `_CrtDumpMemoryLeaks` sera automatiquement appelé à chaque point de sortie. Vous devez définir les deux champs de bits indiqués ci-dessous :  
+ Si votre application dispose de plusieurs sorties, il n'est pas nécessaire d'appeler manuellement [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) à chaque point de sortie. Si vous appelez `_CrtSetDbgFlag` au début de votre application, `_CrtDumpMemoryLeaks` sera automatiquement appelé à chaque point de sortie. Vous devez définir les deux champs de bits indiqués ci-dessous :  
   
 ```  
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );  
@@ -89,7 +89,7 @@ _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );
 ```  
   
 ## <a name="interpreting-the-memory-leak-report"></a>Interprétation du rapport des fuites de mémoire  
- Si votre application ne définit pas `_CRTDBG_MAP_ALLOC`, [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) affiche un rapport des fuites de mémoire similaire à celui-ci :  
+ Si votre application ne définit pas `_CRTDBG_MAP_ALLOC`, [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) affiche un rapport des fuites de mémoire similaire à celui-ci :  
   
 ```  
 Detected memory leaks!  
@@ -194,7 +194,7 @@ Cela vous indique que l’allocation d’une fuite a été à la ligne 20 du deb
   
 2.  Lorsque l'application s'arrête au point d'arrêt, ouvrez la fenêtre **Espion** .  
   
-3.  Depuis la fenêtre **Espion** , tapez `_crtBreakAlloc` dans la colonne **Nom** .  
+3.  Dans le **espion** fenêtre, tapez `_crtBreakAlloc` dans le **nom** colonne.  
   
      Si vous utilisez la version DLL multithread de la bibliothèque CRT (l'option /MD), incluez l'opérateur de contexte : `{,,ucrtbased.dll}_crtBreakAlloc`  
   

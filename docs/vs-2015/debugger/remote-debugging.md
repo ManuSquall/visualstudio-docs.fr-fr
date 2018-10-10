@@ -24,12 +24,12 @@ caps.latest.revision: 81
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cc6cbcb4bba7e808a72ca389ab8ad9157e80375c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f658c14c75f3ec0e93ed05226a8b1192d73bf478
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506690"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880719"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Vous pouvez télécharger les outils à distance directement sur l’appareil ou
 
 ### <a name="to-download-and-install-the-remote-tools"></a>Pour télécharger et installer les outils à distance
   
-1.  Sur l’ordinateur serveur ou périphérique que vous souhaitez déboguer (plutôt que l’ordinateur exécutant Visual Studio), obtenir la version correcte de la les outils à distance.
+1.  Sur l’appareil ou serveur machine que vous souhaitez déboguer (plutôt que l’ordinateur qui exécute Visual Studio), obtenir la version des outils à distance.
 
     |Version|Lien|Notes|
     |-|-|-|
@@ -286,7 +286,7 @@ Vous pouvez trouver le débogueur distant (**msvsmon.exe**) sur un ordinateur av
 ## <a name="set-up-debugging-with-remote-symbols"></a>Configurer le débogage avec des symboles distants  
  Vous devez pouvoir déboguer votre code avec les symboles que vous générez sur l’ordinateur Visual Studio. Les performances du débogueur distant sont nettement meilleures quand vous utilisez des symboles locaux.  Si vous devez utiliser des symboles distants, vous devez indiquer au Remote Debugging Monitor de rechercher les symboles sur l’ordinateur distant.  
   
- À partir de Visual Studio 2013 Update 2, vous pouvez utiliser le commutateur de ligne de commande msvsmon suivant pour utiliser des symboles distants pour le code managé : `Msvsmon / /FallbackLoadRemoteManagedPdbs`  
+ À partir de Visual Studio 2013 Update 2, vous pouvez utiliser le commutateur de ligne de commande msvsmon suivant pour utiliser des symboles distants pour le code managé : `Msvsmon / /FallbackLoadRemoteManagedPdbs`  
   
  Pour plus d’informations, consultez l’aide du débogage distant (appuyez sur **F1** dans la fenêtre du débogueur distant, ou cliquez sur **aide / utilisation**). Vous trouverez plus d’informations sur [modifications symboles distants .NET le chargement dans Visual Studio 2012 et 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)  
   
@@ -304,7 +304,7 @@ Vous pouvez trouver le débogueur distant (**msvsmon.exe**) sur un ordinateur av
 ## <a name="see-also"></a>Voir aussi  
  [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md)   
  [Configurer le pare-feu Windows pour le débogage distant](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
- [Affectations de Port du débogueur distant](../debugger/remote-debugger-port-assignments.md)   
+ [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)   
  [Débogage distant ASP.NET sur un ordinateur distant IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)  
  [Erreurs et résolution des problèmes du débogage distant](../debugger/remote-debugging-errors-and-troubleshooting.md)
 

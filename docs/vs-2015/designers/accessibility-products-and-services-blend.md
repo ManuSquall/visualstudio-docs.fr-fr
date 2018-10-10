@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3e90c3f5ec522190cf08027bdffbc9a9558cee90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0eb5e91d22549cf99b10f7575a8669d908e4832b
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496195"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880769"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Services et produits d’accessibilité (Blend)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ Microsoft s’engage à faciliter l’utilisation de ses produits et services. L
   
  Comme les adresses web peuvent changer, peut-être ne pourrez-vous pas vous connecter au site mentionné ici.  
   
-## <a name="customer-service-for-people-people-with-hearing-impairments"></a>Service clientèle pour les personnes atteintes de troubles de l’audition  
+## <a name="customer-service-for-people-with-hearing-impairments"></a>Service clientèle pour les personnes atteintes de troubles de l’audition  
  Si vous êtes atteint de surdité ou de troubles de l’audition, un accès complet aux services clientèle et produits Microsoft est disponible via un service télétexte/téléscripteur (TTY/TDD) :  
   
  Pour le service clientèle, contactez Microsoft Sales Information Center au (800) 892-5234 entre 6 h 30 et 17 h 30 Pacifique, du lundi au vendredi, hors jours fériés.  

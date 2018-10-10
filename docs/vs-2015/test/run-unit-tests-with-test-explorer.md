@@ -15,12 +15,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a22eb5467533b83116055f0fbd301f4619255711
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a93bdbac30421d17c203d202f0ef01b05686903e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492807"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879728"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Exécuter des tests unitaires avec l'Explorateur de tests
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -195,7 +195,7 @@ TEST_METHOD(Method1)
 ###  <a name="BKMK_Search_and_filter_the_test_list"></a> Rechercher et filtrer la liste de tests  
  Vous pouvez utiliser des filtres de l'Explorateur de tests pour limiter les méthodes de test dans les projets que vous affichez et exécutez.  
   
- Quand vous tapez une chaîne dans la zone de recherche de l'Explorateur de tests et appuyez sur Entrée, la liste de tests est filtrée pour afficher uniquement les tests dont les noms qualifiés complets contiennent la chaîne.  
+ Quand vous tapez une chaîne dans la zone de recherche de l’Explorateur de tests et appuyez sur Entrée, la liste de tests est filtrée pour afficher uniquement les tests dont les noms qualifiés complets contiennent la chaîne.  
   
  Pour filtrer selon un autre critère :  
   

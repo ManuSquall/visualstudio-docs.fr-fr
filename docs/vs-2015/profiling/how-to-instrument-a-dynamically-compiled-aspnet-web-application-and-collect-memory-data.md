@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 37ace853b737f7e7031ac003240463d250fd49f9
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 4693b7e1b0b274c9166bfa4f8d25531433a566bb
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47590462"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879296"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Comment : instrumenter une application Web ASP.NET compilée dynamiquement et collecter des données de mémoire en utilisant la ligne de commande du profileur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Vous trouverez la dernière version de cette rubrique dans [Comment : instrumen
 Cette rubrique explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] afin de collecter des données détaillées sur l’allocation de mémoire et la durée de vie des objets dans .NET pour une application web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] compilée dynamiquement via la méthode de profilage par instrumentation.  
   
 > [!NOTE]
->  Les outils en ligne de commande des outils de profilage se trouvent dans le sous-répertoire \Team Tools\Performance Tools du répertoire d’installation de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils de ligne de commande du profileur, vous devez ajouter le chemin d’accès des outils à la variable d’environnement PATH de la fenêtre d’invite de commandes ou l’ajouter à la commande elle-même. Pour plus d’informations, consultez [Spécification du chemin d’accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  Les outils en ligne de commande des outils de profilage se trouvent dans le sous-répertoire \Team Tools\Performance Tools du répertoire d’installation de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande. Pour plus d’informations, consultez [Spécification du chemin d’accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
  Pour collecter les données de performances d’une application web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], vous modifiez le fichier web.config de l’application cible pour permettre à l’outil [VSInstr.exe](../profiling/vsinstr.md) d’instrumenter les fichiers d’application compilés dynamiquement. Utilisez ensuite l’outil [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) pour configurer le serveur qui héberge l’application web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] et activer le profilage de mémoire .NET en définissant les variables d’environnement appropriées, puis redémarrez l’ordinateur.  
   
@@ -79,7 +79,7 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
     |Option|Description|  
     |------------|-----------------|  
     |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Spécifie les informations facultatives relatives au nom de domaine et au nom d’utilisateur du compte propriétaire du processus de travail [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Cette option est nécessaire si le processus s’exécute sous le compte d’un utilisateur autre que l’utilisateur connecté. Le nom est listé dans la colonne Nom d’utilisateur, sous l’onglet Processus du Gestionnaire des tâches Windows.|  
-    |[/crosssession](../profiling/crosssession.md)|Active le profilage des processus dans d’autres sessions. Cette option est nécessaire si l’application s’exécute dans une autre session. L’id de session est répertorié dans la colonne d’ID de Session sur le l’onglet processus du Gestionnaire des tâches Windows. **/CS** peut être spécifié comme abréviation de **/crosssession**.|  
+    |[/crosssession](../profiling/crosssession.md)|Active le profilage des processus dans d’autres sessions. Cette option est nécessaire si l’application s’exécute dans une autre session. L’ID de session est répertorié dans la colonne ID de session, sous l’onglet Processus du gestionnaire des tâches de Windows. **/CS** peut être spécifié comme abréviation de **/crosssession**.|  
     |[/globaloff](../profiling/globalon-and-globaloff.md)|Démarre le profileur avec la collecte de données suspendue. Utilisez [/globalon](../profiling/globalon-and-globaloff.md) pour reprendre le profilage.|  
     |[/counter](../profiling/counter.md) **:** `Config`|Collecte les informations du compteur de performances du processeur spécifié dans `Config`. Les informations du compteur sont ajoutées aux données collectées à chaque événement de profilage.|  
     |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Spécifie le compteur de performances Windows dont les données doivent être collectées au cours du profilage.|  

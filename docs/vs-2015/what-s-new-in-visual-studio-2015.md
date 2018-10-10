@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cb14269c933d8e8de191b8a8c52e9f41e63ca79d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d31863e3dfdf39481a6215a29f37186a2f528050
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503595"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880368"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Ce que&#39;s dans Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Bienvenue dans Visual Studio 2015, une suite intégrée d'outils de productivit�
   
  Cette page présente certaines des fonctionnalités les plus importantes apparues depuis Visual Studio 2013 RTM, y compris les fonctionnalités introduites dans les mises à jour de Visual Studio 2013. Pour obtenir la liste complète des nouveautés de Visual Studio 2015, consultez [Notes de publication](https://www.visualstudio.com/news/vs2015-vs).  
   
- Pour en savoir plus sur les nombreuses améliorations et nouvelles fonctionnalités de Visual Studio ALM, consultez [quelles sont les nouveautés d’Application Lifecycle Management dans Visual Studio 2015](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938).  
+ Pour en savoir plus sur les nombreuses améliorations et nouvelles fonctionnalités de Visual Studio ALM, consultez [Nouveautés d'Application Lifecycle Management dans Visual Studio 2015](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938).  
   
 ## <a name="a-new-setup-experience"></a>Une nouvelle expérience d'installation  
  [!INCLUDE[downloadvs](./includes/downloadvs-md.md)]  
@@ -43,7 +43,7 @@ Bienvenue dans Visual Studio 2015, une suite intégrée d'outils de productivit�
 ## <a name="sign-in-across-multiple-accounts"></a>Se connecter sur plusieurs comptes  
  Avec Visual Studio 2015, la nouvelle expérience de connexion simplifiée est conçue pour simplifier considérablement l'accès aux ressources en ligne, même si vous possédez plusieurs comptes Visual Studio. Une fois connecté à Visual Studio, vous êtes automatiquement connecté à toutes les instances de Visual Studio 2015 et de Blend sur votre ordinateur. La connexion démarre automatiquement l'itinérance de vos paramètres. Dans Visual Studio 2015, votre compte est partagé entre les différentes fonctionnalités. Ainsi, tant que vous disposez d’un jeton approprié, vous pouvez accéder à vos comptes Visual Studio Team Services à partir de **Team Explorer**, ainsi qu’aux ressources et sites web de votre abonnement Microsoft Azure dans l’Explorateur de serveurs. Vos ressources Azure sont aussi visibles dans la boîte de dialogue Nouveau projet pour les projets Application Insights. Quant à vos comptes Azure Mobile, Azure Storage, [Microsoft Office 365](http://msdn.microsoft.com/office/aa905340.aspx) et [développeur Saleforce.com](https://developer.salesforce.com/) , ils sont répertoriés dans la nouvelle boîte de dialogue **Ajouter un service connecté** .  
   
- Vous pouvez utiliser plusieurs comptes d'utilisateur dans Visual Studio en les ajoutant au fur et à mesure ou en recourant au nouveau gestionnaire de comptes. Vous pouvez ensuite passer d'un compte à un autre, à la volée, quand vous vous connectez aux services ou quand vous accédez aux ressources en ligne. Visual Studio mémorise les comptes que vous ajoutez pour que vous puissiez les utiliser à partir de n'importe quelle instance de Visual Studio ou Blend. Visual Studio saura également rendre itinérante la liste des comptes (toutefois, nous n'allons pas rendre itinérantes vos informations d'identification importantes) avec votre compte de personnalisation pour que vous puissiez rapidement commencer à utiliser l'un de ces comptes sur un autre appareil. Bien sûr, vous pouvez supprimer des comptes à partir de la boîte de dialogue Paramètres de compte, à tout moment. Pour commencer, consultez [fonctionne avec plusieurs comptes d’utilisateur](./ide/work-with-multiple-user-accounts.md).  
+ Vous pouvez utiliser plusieurs comptes d'utilisateur dans Visual Studio en les ajoutant au fur et à mesure ou en recourant au nouveau gestionnaire de comptes. Vous pouvez ensuite passer d'un compte à un autre, à la volée, quand vous vous connectez aux services ou quand vous accédez aux ressources en ligne. Visual Studio mémorise les comptes que vous ajoutez pour que vous puissiez les utiliser à partir de n'importe quelle instance de Visual Studio ou Blend. Visual Studio saura également rendre itinérante la liste des comptes (toutefois, nous n'allons pas rendre itinérantes vos informations d'identification importantes) avec votre compte de personnalisation pour que vous puissiez rapidement commencer à utiliser l'un de ces comptes sur un autre appareil. Bien sûr, vous pouvez supprimer des comptes à partir de la boîte de dialogue Paramètres de compte, à tout moment. Pour commencer, consultez [Work with multiple user accounts](./ide/work-with-multiple-user-accounts.md).  
   
  ![Gestionnaire de comptes](./ide/media/vs2015-accountmanager.gif "VS2015_AccountManager")  
   
@@ -53,7 +53,7 @@ Bienvenue dans Visual Studio 2015, une suite intégrée d'outils de productivit�
  Naturellement, la prise en charge des applications de bureau classiques est optimale, grâce aux nombreuses améliorations apportées aux langages, bibliothèques et outils.  
   
 ### <a name="cross-platform-mobile-apps-in-c-with-xamarin-for-visual-studio"></a>Applications mobiles multiplateformes en C# avec Xamarin pour Visual Studio  
- Xamarin est une infrastructure mobile. Elle vous permet d'écrire du code en C# qui se lie de façon native aux API iOS et Android. Microsoft a conclu un partenariat en étroite collaboration avec Xamarin concernant leur version de Xamarin pour Visual Studio, une extension qui vous permet de développer pour Android, iOS et Windows Phone dans une seule solution avec du code partagé. Avec Xamarin, vous utiliserez un langage et une base de code avec des deltas minimaux entre les plateformes.  Xamarin pour Visual Studio est pris en charge par Visual Studio 2010 et versions ultérieures. L'édition starter de Xamarin est fournie avec Visual Studio 2015. Pour commencer, consultez [créer des applications avec une interface utilisateur native à l’aide de Xamarin dans Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md).  
+ Xamarin est une infrastructure mobile. Elle vous permet d'écrire du code en C# qui se lie de façon native aux API iOS et Android. Microsoft a conclu un partenariat en étroite collaboration avec Xamarin concernant leur version de Xamarin pour Visual Studio, une extension qui vous permet de développer pour Android, iOS et Windows Phone dans une seule solution avec du code partagé. Avec Xamarin, vous utiliserez un langage et une base de code avec des deltas minimaux entre les plateformes.  Xamarin pour Visual Studio est pris en charge par Visual Studio 2010 et versions ultérieures. L’édition starter de Xamarin est incluse dans Visual Studio 2015. Pour commencer, consultez [créer des applications avec une interface utilisateur native à l’aide de Xamarin dans Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md).  
   
 ### <a name="cross-platform-mobile-apps-in-htmljavascript-with-apache-cordova"></a>Applications mobiles multiplateformes en HTML/JavaScript avec Apache Cordova  
  Visual Studio Tools pour Apache Cordova est le fruit d'une étroite collaboration entre Microsoft et la communauté Open Source d'Apache Cordova. Ces outils permettent le développement multiplateforme pour appareils mobiles en HTML, CSS et JavaScript (ou TypeScript). Vous pouvez cibler des plateformes Android, iOS et Windows avec une base de code unique, et tirer parti de la richesse de l'IDE de Visual Studio, notamment avec JavaScript IntelliSense, l'explorateur DOM, la console JavaScript, les points d'arrêt, les espions, les variables locales, Uniquement mon code, etc.  Avec Visual Studio Tools pour Apache Cordova, vos applications ont accès aux fonctionnalités natives des appareils sur toutes les plateformes grâce à des plug-ins qui fournissent une API JavaScript commune. Pour commencer, consultez [bien démarrer avec Visual Studio Tools pour Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42).  
@@ -103,7 +103,7 @@ Bienvenue dans Visual Studio 2015, une suite intégrée d'outils de productivit�
  ![Menu d’aperçu appareil](./ide/media/vs2015-device-preview.png "vs2015_device_preview")  
   
 ## <a name="visual-studio-graphics-diagnostics"></a>Diagnostics des graphiques Visual Studio  
- Depuis Visual Studio 2013, Diagnostics des graphiques Visual Studio a ajouté de nombreuses nouvelles fonctionnalités, y compris l'analyse des frames, la prise en charge de Windows Phone, la modification et l'application de nuanceur, ainsi que des outils de capture de ligne de commande. La prise en charge du débogage des applications DirectX12 a également été ajoutée. Pour plus d’informations, consultez [Visual Studio Graphics Diagnostics](./debugger/visual-studio-graphics-diagnostics.md).  
+ Depuis Visual Studio 2013, Diagnostics des graphiques Visual Studio a ajouté de nombreuses nouvelles fonctionnalités, y compris l'analyse des frames, la prise en charge de Windows Phone, la modification et l'application de nuanceur, ainsi que des outils de capture de ligne de commande. La prise en charge du débogage des applications DirectX12 a également été ajoutée. Pour plus d'informations, consultez [Diagnostics des graphiques Visual Studio](./debugger/visual-studio-graphics-diagnostics.md).  
   
 ## <a name="connect-to-services"></a>Se connecter aux services  
  Visual Studio 2015 facilite de façon considérable la connexion de votre application à des services.  Le nouvel Assistant qui offre la fonctionnalité Ajouter un service connecté configure votre projet, ajoute la prise en charge de l'authentification appropriée, puis télécharge les paquets NuGet nécessaires pour vous aider à démarrer le codage de votre service rapidement et facilement. L'Assistant lié à la fonctionnalité Ajouter un service connecté s'intègre également au nouveau gestionnaire de comptes pour faciliter le travail avec plusieurs comptes d'utilisateur et abonnements. Dans Visual Studio 2015, la prise en charge des services suivants est fournie par défaut (vous devez disposer d'un compte) :  
@@ -137,7 +137,7 @@ Bienvenue dans Visual Studio 2015, une suite intégrée d'outils de productivit�
 -   **C++ / Android**. Utilisez les modèles de [Visual C++ pour le développement mobile multiplateforme](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) , ainsi que les outils tiers, tels que [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) , pour créer des applications natives pour Windows et Android.  
   
 ## <a name="debugging-and-diagnostics"></a>Débogage et diagnostics  
- Pour plus d’informations sur les nouvelles fonctionnalités de débogage, consultez [quelles sont les nouveautés du débogueur dans Visual Studio 2015](./debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md).  
+ Pour plus d’informations sur les nouvelles fonctionnalités de débogage, consultez [What’s New for the Debugger in Visual Studio 2015](./debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md).  
   
  Pour plus d’informations sur les nouveautés introduite dans les diagnostics, consultez [What ' s New in des outils de profilage](./profiling/what-s-new-in-profiling-tools.md).  
   
@@ -147,7 +147,7 @@ Bienvenue dans Visual Studio 2015, une suite intégrée d'outils de productivit�
  Les conseils pour les performances indiquent le temps d'exécution des méthodes durant le débogage, ce qui vous permet d'identifier rapidement les goulots d'étranglement, sans avoir à invoquer le profileur. Pour commencer, consultez [Conseils sur les performances : Performance Information at-a-glance while Debugging with Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
   
 ### <a name="error-list"></a>Liste d'erreurs  
- La liste d'erreurs prend désormais en charge le filtrage sur n'importe quelle colonne. Elle affiche aussi une vue dynamique des erreurs, des avertissements et de l'analyse du code dans l'ensemble de votre solution C# ou Visual Basic, au fur et à mesure que vous tapez, même quand un changement de code produit des milliers d'avertissements. La nouvelle liste d'erreurs est compatible avec les usages existants. Pour plus d’informations, consultez [fenêtre liste d’erreurs](./ide/reference/error-list-window.md).  
+ La liste d'erreurs prend désormais en charge le filtrage sur n'importe quelle colonne. Elle affiche aussi une vue dynamique des erreurs, des avertissements et de l'analyse du code dans l'ensemble de votre solution C# ou Visual Basic, au fur et à mesure que vous tapez, même quand un changement de code produit des milliers d'avertissements. La nouvelle liste d'erreurs est compatible avec les usages existants. Pour plus d'informations, consultez [Error List Window](./ide/reference/error-list-window.md).  
   
 ### <a name="gpu-usage-tool"></a>Outil Utilisation du GPU  
  L'outil Utilisation du GPU vous aide à collecter et analyser les données sur l'utilisation du GPU dans les applications et jeux DirectX. Il vous aide également à déterminer si les goulots d'étranglement en matière de performances sont dus à l'UC ou au GPU. Pour commencer à utiliser l’outil, consultez ce [billet de blog de l’équipe Visual C++](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx).  
@@ -163,7 +163,7 @@ Bienvenue dans Visual Studio 2015, une suite intégrée d'outils de productivit�
  Visual Studio 2013 a introduit les paramètres synchronisés pour certains des paramètres les plus souvent configurés, par exemple l'éditeur de texte, les combinaisons de touches, les thèmes, les polices et couleurs, le démarrage et les alias d'environnement.  Visual Studio 2015 améliore cette expérience en synchronisant davantage de paramètres, et en les synchronisant pour l'ensemble des applications de la famille Visual Studio (par exemple, les versions Professional, Enterprise, Express et Blend). Quand vous vous connectez à Visual Studio 2015 pour la première fois avec le compte utilisé dans Visual Studio 2013, vos paramètres synchronisés sont appliqués à partir de Visual Studio 2013. Vous pouvez également accéder à vos paramètres en tapant « sync » dans **lancement rapide**, ou en accédant à **Outils > Options > environnement > Paramètres synchronisés**.  
   
 ### <a name="automatic-extension-updates"></a>mises à jour d'extensions automatiques  
- Les extensions Visual Studio installées sont automatiquement mises à jour lorsqu'une nouvelle version est disponible dans la galerie Visual Studio. Consultez [recherche et utilisation des Extensions Visual Studio](./ide/finding-and-using-visual-studio-extensions.md) pour plus d’informations sur comment vous pouvez personnaliser les mises à jour de l’extension automatique.  
+ Les extensions Visual Studio installées sont automatiquement mises à jour lorsqu'une nouvelle version est disponible dans la galerie Visual Studio. Consultez [Recherche et utilisation des extensions Visual Studio](./ide/finding-and-using-visual-studio-extensions.md) pour plus d'informations sur la personnalisation des mises à jour d'extensions automatiques.  
   
 ### <a name="title-case-menus"></a>Menus avec 1re lettre des mots en majuscule  
  Nous vous avons entendus. Les menus de Visual Studio comportent à nouveau la 1re lettre des mots en majuscule, par défaut. Toutefois, si vous aimez le style tout en majuscules, vous pouvez configurer sur Démarrer, ou dans le **Outils > Options > Général** page de propriétés :  
@@ -176,7 +176,7 @@ Bienvenue dans Visual Studio 2015, une suite intégrée d'outils de productivit�
  ![Touch prise en charge dans l’éditeur](./ide/media/vs2015-touchsupport.png "VS2015_TouchSupport")  
   
 ### <a name="custom-layouts"></a>Dispositions personnalisées  
- Vous pouvez créer, stocker et rendre itinérantes des dispositions de fenêtres personnalisées. Par exemple, vous pouvez définir une disposition favorite à utiliser sur votre ordinateur de bureau, et une autre disposition à utiliser sur un ordinateur portable ou un appareil avec un petit écran. Vous pouvez également préférer une disposition particulière pour un projet d'interface utilisateur, et une autre pour un projet de base de données. Les combinaisons de touches vous permettent de passer rapidement d'une disposition à une autre. Ces dispositions sont accessibles dans toutes les instances de Visual Studio quand vous êtes connecté. Pour plus d’informations, consultez [créer des dispositions de fenêtres personnalisées](./misc/create-custom-window-layouts.md).  
+ Vous pouvez créer, stocker et rendre itinérantes des dispositions de fenêtres personnalisées. Par exemple, vous pouvez définir une disposition favorite à utiliser sur votre ordinateur de bureau, et une autre disposition à utiliser sur un ordinateur portable ou un appareil avec un petit écran. Vous pouvez également préférer une disposition particulière pour un projet d'interface utilisateur, et une autre pour un projet de base de données. Les combinaisons de touches vous permettent de passer rapidement d'une disposition à une autre. Ces dispositions sont accessibles dans toutes les instances de Visual Studio quand vous êtes connecté. Pour plus d'informations, consultez [Créer des dispositions de fenêtres personnalisées](./misc/create-custom-window-layouts.md).  
   
  ![Élément de menu de Visual Studio une disposition personnalisée](./ide/media/vs2015-customlayout.png "VS2015_CustomLayout")  
   
@@ -233,7 +233,7 @@ Bienvenue dans Visual Studio 2015, une suite intégrée d'outils de productivit�
   
 -   **Création de diagrammes à partir de l'Affichage de classes et de l'Explorateur d'objets**. Glissez-déplacez des fichiers et des assemblys sur une carte nouvelle ou existante à partir des fenêtres Affichage de classes et Explorateur d'objets.  
   
- Consultez [mapper les dépendances dans vos solutions](./modeling/map-dependencies-across-your-solutions.md).  
+ Consultez [Map dependencies across your solutions](./modeling/map-dependencies-across-your-solutions.md).  
   
  **Autres modifications de conception et de modélisation dans cette version :**  
   
@@ -244,7 +244,7 @@ Bienvenue dans Visual Studio 2015, une suite intégrée d'outils de productivit�
 -   **Navigateur de l'architecture**. Vous ne pouvez plus utiliser le Navigateur de l'architecture pour créer des diagrammes. Mais vous pouvez toujours utiliser l'Explorateur de solutions.  
   
 ## <a name="visual-studio-extensibility-tools"></a>Outils d'extensibilité de Visual Studio  
- Il n'a jamais été aussi facile d'installer les outils d'extensibilité Visual Studio (Kit de développement logiciel Visual Studio et modèles), car ils sont désormais inclus en tant que composant facultatif lors de l'installation.  Les outils d'extensibilité permettent aux développeurs d'écrire des extensions pour personnaliser et ajouter des fonctionnalités à Visual Studio. Pour plus d’informations sur l’extensibilité de Visual Studio, consultez [SDK Visual Studio](./extensibility/visual-studio-sdk.md)  
+ Il n'a jamais été aussi facile d'installer les outils d'extensibilité Visual Studio (Kit de développement logiciel Visual Studio et modèles), car ils sont désormais inclus en tant que composant facultatif lors de l'installation.  Les outils d'extensibilité permettent aux développeurs d'écrire des extensions pour personnaliser et ajouter des fonctionnalités à Visual Studio. Pour plus d'informations sur l'extensibilité de Visual Studio, consultez [Kit de développement logiciel Visual Studio](./extensibility/visual-studio-sdk.md)  
   
  Si vous souhaitez inclure les outils d'extensibilité dans votre installation personnalisée, vous les trouverez sous **Fonctionnalités / Outils courants / Outils d'extensibilité de Visual Studio**.  Vous pouvez également installer les outils d'extensibilité ultérieurement en ouvrant la boîte de dialogue **Nouveau projet** et en sélectionnant l'élément **Installer les outils d'extensibilité Visual Studio** sous **Visual C# / Extensibilité**.  
   
@@ -280,4 +280,4 @@ Bienvenue dans Visual Studio 2015, une suite intégrée d'outils de productivit�
 * [Créer des dispositions de fenêtres personnalisées](./misc/create-custom-window-layouts.md)   
 * [Effectuer des actions rapides avec des ampoules](./ide/perform-quick-actions-with-light-bulbs.md)   
 * [Quelles sont les nouveautés d’Application Lifecycle Management dans Visual Studio 2015](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)
-* [Nouveautés de Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)
+* [Nouveautés de Visual Studio 2017](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)

@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3e064460c0b707ba033f0f1643e2e0ad35601141
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f57318867ac758be0652d30154a30aa1d285b7c2
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501422"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879151"
 ---
 # <a name="vsperf"></a>VSPerf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ Utilisez l’outil en ligne de commande **VsPerf** pour :
 |||  
 |-|-|  
 |**/launch:{exécutable}**|Démarre et commence le profilage du fichier exécutable spécifié.|  
-|**/args:{arguments_exécutable}**|Spécifie les arguments de ligne de commande à passer à la cible **/launch**.|  
+|**/args:{arguments_exécutable}**|Spécifie les arguments de ligne de commande à passer à la cible de **/launch**.|  
 |**/console**|Exécute la cible **/launch** dans une nouvelle fenêtre de commande.|  
   
 ##  <a name="BKMK_All_applications"></a>Toutes les applications  

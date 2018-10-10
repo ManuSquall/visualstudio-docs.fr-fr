@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 418307fc1390b8a1518be621c3e903a18ef39c73
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a453f7e926175b6ebf4825d015626e0f81688f35
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506211"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879380"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Comment : déboguer avec une source Code Center Premium
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Avec le débogueur [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], v
   
 5.  Effacer la **activer uniquement mon Code (managé uniquement)** case à cocher.  
   
-6.  Sélectionnez **activer le Support du serveur Source**.  
+6.  Sélectionnez **activer la prise en charge du serveur Source**.  
   
 7.  Effacer **les fichiers sources doivent correspondre exactement à la version d’origine**.  
   

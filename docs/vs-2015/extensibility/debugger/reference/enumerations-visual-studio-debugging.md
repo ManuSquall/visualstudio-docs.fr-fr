@@ -16,12 +16,12 @@ ms.assetid: 557065bf-081f-4d57-8744-bae02b8a5a6e
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d5433d6b5930304ae7df3a71aadc7f51d231b0d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e6c431624c176142007b383470d67dc4f73e50f
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516605"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881044"
 ---
 # <a name="enumerations-visual-studio-debugging"></a>Énumérations (débogage Visual Studio)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -121,7 +121,7 @@ Voici les énumérations pour le [!INCLUDE[vsprvs](../../../includes/vsprvs-md.m
  Spécifie l’étendue du flux de code machine.  
   
  [DisplayKind](../../../extensibility/debugger/reference/displaykind.md)  
- Énumère les valeurs valides qui représentent les types d’informations à prendre dans un un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) de l’objet et l’afficher à l’utilisateur.  
+ Énumère les valeurs valides qui représentent les types d’informations à prendre dans un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) de l’objet et l’afficher à l’utilisateur.  
   
  [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md)  
  Spécifie les critères pour la comparaison de deux contextes de document.  

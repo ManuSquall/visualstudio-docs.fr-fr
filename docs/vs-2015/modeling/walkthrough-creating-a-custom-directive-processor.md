@@ -15,12 +15,12 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 628e4128877eb6872dd8d6af6fd0902b4e10bb64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d84fd8f389db771c1cbabbc3c5b830837703808e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495765"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880693"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>Procédure pas à pas : création d'un processeur de directive personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +91,7 @@ End Property
 1.  Dans Visual Studio, créez un projet de bibliothèque de classes C# ou Visual Basic nommé CustomDP.  
   
     > [!NOTE]
-    >  Si vous voulez installer le processeur de directive sur plusieurs ordinateurs, il est préférable d'utiliser un projet d'extension [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX) et d'inclure un fichier .pkgdef dans l'extension. Pour plus d’informations, consultez [déploiement d’un processeur de Directive personnalisé](../modeling/deploying-a-custom-directive-processor.md).  
+    >  Si vous voulez installer le processeur de directive sur plusieurs ordinateurs, il est préférable d’utiliser un projet d’extension [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX) et d’inclure un fichier .pkgdef dans l’extension. Pour plus d’informations, consultez [déploiement d’un processeur de Directive personnalisé](../modeling/deploying-a-custom-directive-processor.md).  
   
 2.  Ajoutez des références aux assemblys suivants :  
   
@@ -136,7 +136,7 @@ End Property
   
             //These are the errors that occur during processing. The engine passes   
             //the errors to the host, and the host can decide how to display them,  
-            //for example the the host can display the errors in the UI  
+            //for example the host can display the errors in the UI  
             //or write them to a file.  
             //---------------------------------------------------------------------  
             private CompilerErrorCollection errorsValue;  
@@ -396,7 +396,7 @@ End Property
   
             'These are the errors that occur during processing. The engine passes   
             'the errors to the host, and the host can decide how to display them,  
-            'for example the the host can display the errors in the UI  
+            'for example the host can display the errors in the UI  
             'or write them to a file.  
             '---------------------------------------------------------------------  
             Private errorsValue As CompilerErrorCollection  

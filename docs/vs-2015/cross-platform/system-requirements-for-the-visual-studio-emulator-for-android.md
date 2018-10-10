@@ -13,12 +13,12 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: c70cf8ae41652d0426f40d26dd5217ca4507aad8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2bf6251b8152224b521f60b0ec1694e03adeb9b1
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504108"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880467"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,12 +135,12 @@ L’émulateur Visual Studio pour Android s’exécute en tant que machine virtu
  Quand vous exécutez l’émulateur, si vous n’êtes pas encore membre du groupe Administrateurs Hyper-V, vous êtes invité à rejoindre le groupe (la boîte de dialogue fait référence à l’émulateur Windows Phone). Rejoindre le groupe nécessite des droits d’administrateur.  
   
 > [!IMPORTANT]
->  Une fois que vous avez rejoint le groupe, déconnectez-vous ou redémarrez l’ordinateur pour que la modification prenne effet.  
+> Une fois que vous avez rejoint le groupe, déconnectez-vous ou redémarrez l’ordinateur pour que la modification prenne effet.  
   
  ![Entrée dans le groupe de sécurité Administrateurs Hyper&#45;V](../cross-platform/media/android-emu-hyperv-admin.png "Android_Emu_HyperV_Admin")  
   
- Pour vous ajouter à un groupe manuellement, ouvrez le composant logiciel enfichable Utilisateurs et groupes locaux. Pour plus d’informations, consultez [Ajouter un compte d’utilisateur à un groupe](http://windows.microsoft.com/en-us/windows/add-user-account-to-group#1TC=windows-7). (Cette rubrique Windows 7 s’applique aussi à Windows 8.)  
-  
+ Pour vous ajouter à un groupe manuellement, ouvrez le composant logiciel enfichable Utilisateurs et groupes locaux.
+ 
 ##  <a name="BootableVHD"></a> L’exécution de l’émulateur à partir d’un disque dur virtuel démarrable n’est pas prise en charge  
  Si vous essayez d’exécuter une application sur l’émulateur Visual Studio pour Android pendant que vous exécutez Windows à partir d’un disque dur virtuel démarrable, le démarrage de l’émulateur prend généralement plusieurs minutes ou échoue. Quand le démarrage de l’émulateur échoue, le message suivant s’affiche : Échec du déploiement de l’application. Réessayez.  
   

@@ -15,12 +15,12 @@ ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
 caps.latest.revision: 63
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7204f3c44eacf9b27e455502c636fe6d64f570b2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fe6e26a534f7bb02d0a309d436d9b62927639a6
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505893"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880244"
 ---
 # <a name="creating-an-options-page"></a>Création d’une page d’options
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +116,7 @@ Cette procédure pas à pas crée une page Outils/Options simple qui utilise une
   
 2.  Ajoutez le code suivant à l’aide d’instruction.  
   
-    ```vb  
+    ```csharp  
     using System.Windows.Forms;  
     ```  
   

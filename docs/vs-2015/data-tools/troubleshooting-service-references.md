@@ -20,12 +20,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6d9510bf667b95dde4619f469b51041c07c0b4e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 696c6f2a0e738d965b5992e3df52a77831ab27a0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516592"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880888"
 ---
 # <a name="troubleshooting-service-references"></a>Dépannage des références de service
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Cette rubrique répertorie les problèmes courants qui peuvent se produire lorsq
 
  Lorsque vous ajoutez une référence à un service WCF qui fait partie de la solution actuelle, une dépendance de génération explicite est ajoutée entre le projet de service et le projet de client de service. Cela garantit que le client accède toujours les fichiers binaires du service à jour, ce qui est particulièrement important pour le débogage des scénarios tels que l’exécution pas à pas du code client dans le code de service.
 
- Si le projet de service est supprimé de la solution, cette dépendance de génération explicite est invalidée. Visual Studio ne peut plus garantir que que le projet de service est régénéré selon les besoins.
+ Si le projet de service est supprimé de la solution, cette dépendance de génération explicite est invalidée. Visual Studio ne peut plus garantir que le projet de service est régénéré selon les besoins.
 
  Pour corriger cette erreur, vous devrez manuellement régénérer le projet de service :
 
