@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Comment : déboguer une partie non exécutable d’une Solution Visual Studio | Microsoft Docs'
 ms.custom: ''
 ms.date: 2018-06-30
