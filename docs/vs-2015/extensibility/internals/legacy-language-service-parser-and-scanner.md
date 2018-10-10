@@ -16,12 +16,12 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8aaf608c4a03816fb109e65c2b8d71d06a279799
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5bd5fa0fd23f2608e7cfd00896b0632cfb13fa38
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504657"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880234"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Scanneur et analyseur du service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ namespace MyNamespace
 ## <a name="parsing-for-matching-braces"></a>L’analyse pour les accolades correspondantes  
  Cet exemple montre le flux de contrôle pour la mise en correspondance une accolade fermante saisi par l’utilisateur a. Dans ce processus, le moteur d’analyse qui est utilisé pour la colorisation est également utilisé pour déterminer le type de jeton et indique si le jeton peut déclencher une opération d’accolade de correspondance. Si le déclencheur est trouvé, le <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode est appelée pour rechercher l’accolade correspondante. Enfin, les deux accolades sont mises en surbrillance.  
   
- Même si les accolades sont utilisés dans les noms de déclencheurs et d’analyser les raisons, ce processus n’est pas limité aux accolades réelles. Toute paire de caractères qui est spécifiée comme étant une correspondance coupler est pris en charge. Exemples (et), \< et >, et [et].  
+ Même si les accolades sont utilisés dans les noms de déclencheurs et d’analyser les raisons, ce processus n’est pas limité aux accolades réelles. Toute paire de caractères qui est spécifiée comme étant une paire correspondante est pris en charge. Exemples (et), \< et >, et [et].  
   
  Partons du principe que le service de langage prend en charge les accolades correspondantes.  
   

@@ -14,17 +14,17 @@ caps.latest.revision: 11
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 45ed6a059c0a9cf9ae5063e538ec9b9c87698ef1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 07f09cbc2deedaeb701a52ffc09532e36e30c308
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506962"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879071"
 ---
 # <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>Comment : appliquer automatiquement les clés de produit lors du déploiement de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour la documentation la plus récente pour Visual Studio 2017, consultez [appliquer automatiquement les clés de produit lors du déploiement de Visual Studio](https://docs.microsoft.com/en-us/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio).
+Pour la documentation la plus récente pour Visual Studio 2017, consultez [appliquer automatiquement les clés de produit lors du déploiement de Visual Studio](/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio).
 
 Vous pouvez appliquer votre clé de produit par programmation dans le cadre d’un script utilisé pour automatiser le déploiement de Visual Studio 2015. Les clés de produit peuvent être définies sur un appareil par programmation pendant l'installation de Visual Studio ou au terme d'une installation.  
   
@@ -58,7 +58,7 @@ Vous pouvez appliquer votre clé de produit par programmation dans le cadre d’
 |Visual Studio Professional 2013|06177|  
 |Visual Studio Test Professional 2013|06194|  
   
- Pour plus d’informations sur l’obtention d’une clé de produit, consultez [Comment : trouver la clé de produit Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md).  
+ Pour plus d’informations sur l’obtention d’une clé de produit, consultez [How to: Locate the Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md).  
   
  Si la clé de produit est correctement appliquée, StorePID.exe retourne 0. Si elle rencontre des erreurs, elle renvoie un nombre compris entre 1 et 6.  
   

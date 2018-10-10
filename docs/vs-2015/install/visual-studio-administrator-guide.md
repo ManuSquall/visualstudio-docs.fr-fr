@@ -18,17 +18,17 @@ caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: e95970c19020e28c3b7592068b0ef1df7f1c56f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b8f25b995079aeedca262dedd62b2f9c880efb52
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507094"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879200"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour la documentation la plus récente pour Visual Studio 2017, consultez le [guide de l’administrateur Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/install/visual-studio-administrator-guide).
+Pour la documentation la plus récente pour Visual Studio 2017, consultez le [guide de l’administrateur Visual Studio 2017](/visualstudio/install/visual-studio-administrator-guide).
 
 Vous pouvez déployer Visual Studio 2015 sur un réseau tant que chaque ordinateur cible remplit la [configuration minimale requise](http://www.microsoft.com/visualstudio/eng/products/2013-editions). Vous pouvez créer un partage réseau en exécutant le fichier d’installation avec le commutateur/Layout (comme décrit dans la [créer une Installation hors connexion de Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) page) et en le copiant à partir de l’ordinateur local au partage réseau. Si vous utilisez un fichier ISO, vous pouvez monter l’image ISO et partagez-le ou copiez l’image ISO sur un partage réseau.  
   
@@ -59,7 +59,7 @@ Vous pouvez déployer Visual Studio 2015 sur un réseau tant que chaque ordinate
 ## <a name="controlling-what-is-installed"></a>Contrôle des composants installés  
  Si vous voulez contrôler les composants que votre utilisateur final peut installer, il existe deux options : l’installation du fichier administrateur et les options de ligne de commande. Sélectionnez l’installation du fichier administrateur si votre objectif est de limiter les composants que votre utilisateur final peut choisir pendant l’exécution du programme d’installation de Visual Studio. Sélectionnez les paramètres de ligne de commande si vous voulez créer une configuration initiale, tout en autorisant l’utilisateur final à choisir une installation personnalisée de Visual Studio.  
   
- Pour plus d’informations sur l’utilisation du fichier administrateur, consultez [Comment : créer et exécuter une Installation sans assistance de Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) et [Comment : appliquer automatiquement les clés de produit lors du déploiement de Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).  Pour plus d’informations sur les contrôles de ligne de commande, consultez le [utiliser des paramètres de ligne de commande pour installer Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) page.  
+ Pour plus d’informations sur l’expérience de fichier administrateur, consultez [How to: Create and Run an Unattended Installation of Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) et [How to: Automatically apply product keys when deploying Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).  Pour plus d’informations sur les contrôles de ligne de commande, consultez le [utiliser des paramètres de ligne de commande pour installer Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) page.  
   
 ## <a name="specifying-customer-feedback-settings"></a>Spécification de paramètres pour les commentaires client  
  Par défaut, l’installation de Visual Studio active les commentaires client. Vous pouvez configurer Visual Studio pour désactiver les commentaires client sur un ordinateur en affectant la valeur "0" à la clé de Registre suivante :  

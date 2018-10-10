@@ -13,12 +13,12 @@ ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 587da32a1216c219b1811e8fbc8c1dd9ed2b01ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b8b352b5abdeb975c09d3be95fc7384930eb022
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505963"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880927"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Couleurs partagées pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Vous trouverez la dernière version de cette rubrique dans [partagé des couleur
   
 Quand vous concevez l’interface utilisateur qui utilise des éléments d’interpréteur de commandes Visual Studio, ou si vous voulez que votre élément d’interface soit cohérent avec des fonctionnalités similaires, utilisez des noms de jeton existants dans les fichiers de définition de package pour choisir et assigner des couleurs. Ainsi, votre interface utilisateur reste cohérente avec l’environnement Visual Studio global et elle se met à jour automatiquement quand des thèmes sont ajoutés ou mis à jour.  
   
- Cet article décrit les éléments d’interface utilisateur communs et les noms de jeton qu’ils utilisent, que vous pouvez référencer pour créer une interface utilisateur similaire. Pour obtenir des informations spécifiques sur la façon d’accéder à ces jetons de couleur, consultez [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).  
+ Cet article décrit les éléments d’interface utilisateur communs et les noms de jeton qu’ils utilisent, que vous pouvez référencer pour créer une interface utilisateur similaire. Pour plus d’informations sur la façon d’accéder à ces jetons de couleur, consultez [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).  
   
  Assurez-vous d’utiliser correctement les noms de jeton :  
   
@@ -561,7 +561,7 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
 ####  <a name="BKMK_CommandComboBox"></a> Zone de liste déroulante  
   
 > [!IMPORTANT]
->  Les zones de liste modifiable ressemblent aux listes déroulantes, mais elles comprennent une zone de texte modifiable. Si votre liste déroulante n’inclut pas de zone de texte modifiable, utilisez les jetons de couleur disponibles sous [déroulante](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).  
+>  Les zones de liste modifiable ressemblent aux listes déroulantes, mais elles comprennent une zone de texte modifiable. Si votre liste déroulante n’inclut pas de zone de texte modifiable, utilisez les jetons de couleur disponibles sous [Drop-down](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).  
   
  ![Ligne rouge de zone de liste déroulante](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303-029_ComboBoxRedline")  
   
@@ -808,7 +808,7 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
 ####  <a name="BKMK_CommandDropDown"></a> Liste déroulante  
   
 > [!IMPORTANT]
->  Les listes déroulantes ressemblent aux zones de liste modifiable, mais elles ne disposent pas de zones de texte modifiable. Si votre liste déroulante inclut une zone de texte modifiable, utilisez les jetons de couleur disponibles sous [zone de liste déroulante](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).  
+>  Les listes déroulantes ressemblent aux zones de liste modifiable, mais elles ne disposent pas de zones de texte modifiable. Si votre liste déroulante inclut une zone de texte modifiable, utilisez les jetons de couleur disponibles sous [Combo box](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).  
   
  ![DROP&#45;vers le bas ligne rouge](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303-042_DropdownRedline")  
   
@@ -1017,7 +1017,7 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
  `Environment.DropDownDisabledGlyph`  
   
 #### <a name="split-button"></a>Bouton Fractionner  
- Les boutons partagés partagent de nombreux noms de jeton avec d’autres contrôles de barre de commandes, tels que des boutons, menus et texte de barre de commandes. Toutes les actions nécessaires et les noms de jeton bouton de liste déroulante sont répétés ici par commodité. Listes de liste déroulante du bouton partagé sont des implémentations de barre de commandes [Menus](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus).  
+ Les boutons partagés partagent de nombreux noms de jeton avec d’autres contrôles de barre de commandes, tels que des boutons, menus et texte de barre de commandes. Toutes les actions nécessaires et les noms de jeton bouton de liste déroulante sont répétés ici par commodité. Les listes déroulantes de bouton partagé sont des implémentations de la barre de commandes [Menus](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus).  
   
  ![Ligne rouge de bouton partagé](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303-053_SplitButtonRedline")  
   
@@ -1668,7 +1668,7 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
  Défini sur la même couleur que l’arrière-plan.  
   
 #### <a name="document-overflow-button"></a>Bouton de dépassement de capacité de document  
- Le bouton de dépassement de capacité de document est présent si un ou plusieurs documents sont ouverts, que l’espace vertical défini dans la configuration actuelle suffise ou non pour loger tous les onglets de document. Le menu de liste déroulante de dépassement de capacité de document, qui est contrôlé par le **CommandBarMenu** couleurs (voir [Menus](../../misc/shared-colors.md#BKMK_CommandMenus)), affiche une liste de tous les documents ouverts, visibles et masqués et les modifications de glyphe de dépassement de capacité selon que tous les documents ouverts sont affichés dans le canal d’onglet.  
+ Le bouton de dépassement de capacité de document est présent si un ou plusieurs documents sont ouverts, que l’espace vertical défini dans la configuration actuelle suffise ou non pour loger tous les onglets de document. Le menu déroulant de dépassement de capacité de document, contrôlé par les couleurs **CommandBarMenu** (consultez [Menus](../../misc/shared-colors.md#BKMK_CommandMenus)), présente la liste de tous les documents ouverts, à la fois visibles et masqués, ainsi que le glyphe de dépassement de capacité change selon que tous les documents ouverts sont affichés dans le canal d’onglet.  
   
  ![Ligne rouge de dépassement de capacité](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303-083_OverflowRedline")  
   
@@ -2802,7 +2802,7 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
  `Environment.ToolWindowBorder`  
   
 ### <a name="scroll-bar"></a>Barre de défilement  
- Les barres de défilement sont stylisées par l’environnement Visual Studio et aucun thème ne doit leur être appliqué. Toutefois, vous pouvez décider d’exploiter les couleurs utilisées dans les fenêtres de défilement, afin que votre interface utilisateur apparaisse toujours cohérente avec cette partie de l’environnement Visual Studio.  
+ Les barres de défilement sont stylisées par l’environnement Visual Studio et aucun thème ne doit leur être appliqué. Toutefois, vous pouvez décider que vous souhaitez exploiter les couleurs utilisées dans les barres de défilement afin que votre interface utilisateur apparaisse toujours cohérente avec cette partie de l’environnement Visual Studio.  
   
  ![Ligne rouge de barre de défilement](../../extensibility/ux-guidelines/media/0303-140-scrollbarredline.png "0303-140_ScrollbarRedline")  
   
@@ -3079,7 +3079,7 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
   
  Bordure  
   
- None`TreeView.FocusVisualBorder`  
+ Aucun`TreeView.FocusVisualBorder`  
   
  ![Arborescence inactive au pointage](../../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303-154_TreeViewUnfocusedHover")  
   
@@ -3348,7 +3348,7 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
  N’utilisez pas...  
  -   pour toute interface utilisateur qui n’est pas une zone déroulante ou une zone de liste modifiable.  
   
--   pour un [déroulante](../../misc/shared-colors.md#BKMK_CommandDropDown) ou [zone de liste déroulante](../../misc/shared-colors.md#BKMK_CommandComboBox) dans la barre de commandes.  
+-   pour un [Drop-down](../../misc/shared-colors.md#BKMK_CommandDropDown) ou [Combo box](../../misc/shared-colors.md#BKMK_CommandComboBox) dans la barre de commandes.  
   
  **Default**  
   
@@ -4156,25 +4156,25 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
   
  `TreeView.SelectedItemActive`  
   
- À partir de [arborescence](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) catégorie  
+ À partir de la catégorie [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  Bordure  
   
  `TreeView.FocusVisualBorder`  
   
- À partir de [arborescence](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) catégorie  
+ À partir de la catégorie [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  Premier plan (glyphe)  
   
  `TreeView.SelectedItemActive`  
   
- À partir de [arborescence](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) catégorie  
+ À partir de la catégorie [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  Premier plan (texte)  
   
  `TreeView.SelectedItemActive`  
   
- À partir de [arborescence](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) catégorie  
+ À partir de la catégorie [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  ![Nœud parent de boîte à outils inactif](../../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")  
   
@@ -4188,7 +4188,7 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
   
  `TreeView.SelectedItemInactive`  
   
- À partir de [arborescence](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) catégorie  
+ À partir de la catégorie [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  Bordure  
   
@@ -4198,11 +4198,11 @@ Quand vous concevez l’interface utilisateur qui utilise des éléments d’int
   
  `TreeView.SelectedItemInactive`  
   
- À partir de [arborescence](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) catégorie  
+ À partir de la catégorie [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)  
   
  Premier plan (texte)  
   
  `TreeView.SelectedItemInactive`  
   
- À partir de [arborescence](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) catégorie
+ À partir de la catégorie [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)
 

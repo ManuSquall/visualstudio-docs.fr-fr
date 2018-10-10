@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5725dc2be204ae3b657a857c5a358a29b8c3709
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 583754b01f25509146bc3e3924e5132288a05285
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495166"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881135"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Contrôler l'exécution d'une application du Windows Store dans une session de débogage Visual Studio pour des applications du Windows Store (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -301,7 +301,7 @@ Ce guide de démarrage rapide montre comment naviguer dans le débogueur Visual 
   
     -   **Fonction anonyme** montre la ligne de la fonction `module` où l’exécution est suspendue. Il s’agit du haut de la pile des appels.  
   
-4.  **Effectuer un pas à pas détaillé dans les fonctions pour atteindre la fonction example5_d.** Appuyez sur **Pas à pas détaillé** on the **Déboguer** (clavier : **F11**) pour exécuter les appels dans le chemin d'appel jusqu'à atteindre le point d'entrée de la fonction example5_d. Notez que chaque fois qu'une fonction appelle une fonction, le numéro de ligne de la fonction appelante est enregistré et la fonction appelée est placée en haut de la pile. Le numéro de ligne de la fonction appelante est le point auquel elle a interrompu l'exécution. Une flèche jaune pointe vers la fonction actuellement en cours d’exécution.  
+4.  **Effectuer un pas à pas détaillé dans les fonctions pour atteindre la fonction example5_d.** Choisissez **pas à pas détaillé** sur le **déboguer** menu (clavier : **F11**) pour exécuter les appels dans le chemin d’appel jusqu'à atteindre le point d’entrée de la fonction example5_d. Notez que chaque fois qu'une fonction appelle une fonction, le numéro de ligne de la fonction appelante est enregistré et la fonction appelée est placée en haut de la pile. Le numéro de ligne de la fonction appelante est le point auquel elle a interrompu l'exécution. Une flèche jaune pointe vers la fonction actuellement en cours d’exécution.  
   
      ![Fenêtre Pile des appels](../debugger/media/dbg-jsnav-callstack-windows.png "DBG_JSNAV_CallStack_windows")  
   

@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dbb444a8de184f47bc8c6915bbf0fafcaf6c7ca3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e0a9787e7e0a203a77e456ec61ea8a80057ce92
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516444"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879978"
 ---
 # <a name="just-my-code"></a>Uniquement mon code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -174,7 +174,7 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`Name`|Obligatoire. Chemin d'accès complet du ou des fichiers sources à traiter comme du code externe. Vous pouvez utiliser les caractères génériques Windows `?` et `*` quand vous spécifiez le chemin d'accès.|  
+|`Name`|Obligatoire. Chemin d'accès complet du ou des fichiers sources à traiter comme du code externe. Vous pouvez utiliser les caractères génériques Windows `?` et `*` quand vous spécifiez le chemin d’accès.|  
   
  **Attributs de l’élément (fonction)**  
   
@@ -195,7 +195,7 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
 |-|-|  
 |**MyCode**|Code utilisateur dont vous êtes propriétaire et que vous contrôlez.|  
 |**LibraryCode**|Code non-utilisateur provenant de bibliothèques que vous utilisez régulièrement et sur lequel votre application s'appuie pour fonctionner correctement (par exemple WinJS ou jQuery).|  
-|**UnrelatedCode**|Code non-utilisateur qui s'exécute dans votre application, mais dont vous n'êtes pas propriétaire et sur lequel votre application ne s'appuie pas pour fonctionner correctement (par exemple un Kit de développement logiciel (SDK) publicitaire qui affiche des publicités). Dans les projets du Windows Store, tout code chargé dans votre application à partir d'une URI HTTP ou HTTPS est également considéré comme du code UnrelatedCode.|  
+|**UnrelatedCode**|Code non-utilisateur qui peut s’exécuter dans votre application, mais vous n’êtes pas propriétaire et que votre application ne s’appuie dessus pour fonctionner correctement (par exemple, il s’agit d’un SDK advertising qui affiche des publicités). Dans les projets du Windows Store, tout code chargé dans votre application à partir d'une URI HTTP ou HTTPS est également considéré comme du code UnrelatedCode.|  
   
  Le débogueur JavaScript classe automatiquement ces types de code :  
   
@@ -209,7 +209,7 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
   
 -   Le fichier `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` spécifie d'autres codes utilisateur et non-utilisateur pour tous les projets JavaScript Visual Studio.  
   
- Vous pouvez modifier les classifications par défaut et classer des fichiers et des URL spécifiques en ajoutant un fichier .json nommé `mycode.json` au dossier racine d'un projet.  
+ Vous pouvez modifier les classifications par défaut et classer des fichiers et des URL spécifiques en ajoutant un fichier .json nommé `mycode.json` au dossier racine d’un projet.  
   
  Reste du code est classé comme **MyCode**.  
   

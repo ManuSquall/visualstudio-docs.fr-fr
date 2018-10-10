@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e213f6c009ff5fdd5caa48a326c18026f02ec5e6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a16bef2afa14d992300649d4ec9ffd9752def099
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590684"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880680"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Profilage de site Web rapide avec VSPerfASPNETCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,9 +73,9 @@ L’outil en ligne de commande **VSPerfASPNETCmd** vous permet de profiler facil
 ## <a name="to-collect-tier-interaction-data"></a>Pour collecter les données d’interaction de couche  
   
 > [!WARNING]
->  Les données de profilage d’interaction de couche peuvent être collectées en utilisant [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] ou [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Cependant, les données de profilage d’interaction de couche peuvent être affichées seulement dans [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] et dans [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
+>  Les données de profilage d’interaction de couche peuvent être collectées en utilisant [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] ou [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Cependant, les données de profilage d’interaction de couche ne peuvent être affichées que dans [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] et [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
 >   
->  Pour collecter des données de profilage d’interaction de couche sur Windows 8 ou Windows Server 2012, vous devez utiliser l’option d’instrumentation (**/trace**).  
+>  Pour collecter des données TIP sur Windows 8 ou Windows Server 2012, vous devez utiliser l’option d’instrumentation (**/trace**).  
   
  Pour collecter les données d’interaction de couche avec les données d’échantillonnage :  
   

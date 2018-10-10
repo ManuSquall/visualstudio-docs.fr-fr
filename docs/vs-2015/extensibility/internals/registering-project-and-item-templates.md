@@ -19,12 +19,12 @@ ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4dd0e668f9bf657d38b69beb1bc132547dd6bda1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c43c2fb57cecc19002c1275e3281a841244c2b60
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494831"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880077"
 ---
 # <a name="registering-project-and-item-templates"></a>Inscription de modèles de projet et d’élément
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Types de projets doivent inscrire les répertoires où se trouvent leurs modèle
 |SortPriority|REG_DWORD|Définissez SortPriority pour régir l’ordre dans lequel les modèles sont affichés dans le **ajouter un nouvel élément** boîte de dialogue. Plus grandes valeurs SortPriority apparaissent plus haut dans la liste des modèles.|  
   
 ### <a name="registering-file-filters"></a>L’inscription des filtres de fichiers  
- Si vous le souhaitez, vous pouvez inscrire des filtres qui [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] utilise lorsqu’il vous invite à entrer des noms de fichier. Par exemple, le [!INCLUDE[csprcs](../../includes/csprcs-md.md)] filtrer pour le le **ouvrir un fichier** boîte de dialogue est :  
+ Si vous le souhaitez, vous pouvez inscrire des filtres qui [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] utilise lorsqu’il vous invite à entrer des noms de fichier. Par exemple, le [!INCLUDE[csprcs](../../includes/csprcs-md.md)] filtrer pour le **ouvrir un fichier** boîte de dialogue est :  
   
  **Fichiers Visual c# (\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl) ;\*. cs,\*.resx,\*.settings,\*.xsd,\*.wsdl)**  
   

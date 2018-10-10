@@ -25,17 +25,17 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9b6a7e624298ae3766f67a1bd49760b9b5e066bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e99f18122dc0be7e3a68871aa58a9109502da9c0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494568"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880953"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Lier des contrôles WPF à des données dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Documentation Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/).  
+Vous trouverez la dernière version de cette rubrique dans [Documentation Visual Studio 2017](/visualstudio/).  
   
 Vous pouvez créer lié aux données [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] contrôles à l’aide de la **des Sources de données** fenêtre. Tout d’abord, ajoutez une source de données pour le **des Sources de données** fenêtre. Ensuite, faites glisser des éléments à partir de la **des Sources de données** fenêtre pour le**Concepteur WPF**.  
   
@@ -114,9 +114,9 @@ Vous pouvez créer lié aux données [!INCLUDE[TLA#tla_titlewinclient](../includ
   
 1.  Dans le **des Sources de données** fenêtre, utilisez une des procédures suivantes :  
   
-    -   Pour ajouter une liaison de données à un contrôle existant affichant plusieurs champs de données, tel que <xref:System.Windows.Controls.DataGrid> ou <xref:System.Windows.Controls.ListView>, sélectionnez l'élément représentant la table ou l'objet que vous voulez lier au contrôle.  
+    -   Pour ajouter une liaison de données à un contrôle existant affichant plusieurs champs de données, tel que <xref:System.Windows.Controls.DataGrid> ou <xref:System.Windows.Controls.ListView>, sélectionnez l’élément représentant la table ou l’objet que vous voulez lier au contrôle.  
   
-    -   Pour ajouter une liaison de données à un contrôle existant affichant un seul champ de données, tel que <xref:System.Windows.Controls.ComboBox> ou <xref:System.Windows.Controls.TextBox>, développez l'élément représentant la table ou l'objet qui contient les données, puis sélectionnez l'élément représentant les données à lier au contrôle.  
+    -   Pour ajouter une liaison de données à un contrôle existant affichant un seul champ de données, tel que <xref:System.Windows.Controls.ComboBox> ou <xref:System.Windows.Controls.TextBox>, développez l’élément représentant la table ou l’objet qui contient les données, puis sélectionnez l’élément représentant les données à lier au contrôle.  
   
 2.  Faites glisser l’élément sélectionné à partir de la **des Sources de données** fenêtre sur un contrôle existant dans le concepteur. Le contrôle doit être une cible de dépôt valide. Pour plus d’informations, consultez [WPF de lier des contrôles à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   

@@ -17,17 +17,17 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 79aeb36e62279dcdafd2adb0143fa70ce2ee0eba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f6b4808112e746e30f0e40d4626f546c3f99b193
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505067"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879016"
 ---
 # <a name="ltsummarygt-javascript"></a>&lt;Résumé&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Documentation Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/).  
+Vous trouverez la dernière version de cette rubrique dans [Documentation Visual Studio 2017](/visualstudio/).  
   
 Spécifie la description d'une fonction ou d'une méthode.  
   

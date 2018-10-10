@@ -13,12 +13,12 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 469ce43d35d0fdf282a164596fa4cd48eb442534
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e8f6d371bea8927c272f97dccd1c8d033635616a
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516735"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880059"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Résolution des problèmes liés à l’émulateur Visual Studio pour Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -142,7 +142,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
   
      ![Android&#95;Emu&#95;V&#95;Switch&#95;Man](../cross-platform/media/android-emu-v-switch-man.png "Android_Emu_V_Switch_Man")  
   
-     Si le programme d’installation ne fonctionne pas correctement sur Windows 10, essayez de [réinstaller les périphériques réseau à l’aide de la commande netcfg –d](http://windows.microsoft.com/en-us/windows-10/fix-network-connection-issues) (section 6).  
+     Si le programme d’installation ne fonctionne pas correctement sur Windows 10, essayez de [réinstaller les périphériques réseau à l’aide de la commande netcfg –d](http://windows.microsoft.com/windows-10/fix-network-connection-issues) (section 6).  
   
 -   Si ces étapes ne résolvent pas le problème, consultez [Emulator fails to start (first use)](#NoStart) pour obtenir des informations sur les logiciels tiers susceptibles d’interférer avec l’émulateur.  
   

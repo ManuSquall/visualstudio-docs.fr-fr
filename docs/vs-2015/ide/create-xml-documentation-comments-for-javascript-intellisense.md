@@ -19,17 +19,17 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 74302bb9aea552bfc4e8fedc93fd7aebc69fb4b2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3801fb58f09ac70c26e21304957e31f7b3ec4ddc
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508282"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881018"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>Créer des commentaires de Documentation XML pour JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Documentation Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/).  
+Vous trouverez la dernière version de cette rubrique dans [Documentation Visual Studio 2017](/visualstudio/).  
   
 *Commentaires de documentation XML* sont des commentaires JavaScript que vous ajoutez à un script pour fournir des informations sur les éléments de code tels que les fonctions, les champs et les variables. Dans Visual Studio, ces descriptions textuelles sont affichées avec IntelliSense lorsque vous référencez la fonction de script.  
   
