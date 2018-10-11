@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3f52834b1983b808a2da57795dc2c5653511f88
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 1096188a6cf6be34d56c6330d588e56e0c306581
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058709"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073933"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Impossible de se connecter à l’ordinateur Microsoft Visual Studio Remote Debugging Monitor
 Ce message peut survenir parce que remote debugging monitor n’est pas correctement configuré sur l’ordinateur distant ou l’ordinateur distant est inaccessible en raison de problèmes réseau ou la présence d’un pare-feu.
@@ -116,7 +116,7 @@ Cela peut être un problème hérité spécifique à Windows XP et Windows 7. Co
 
 Si vous ne pouvez pas vous connecter en utilisant le nom de l’ordinateur distant, essayez d’utiliser l’adresse IP à la place. Vous pouvez utiliser `ipconfig` dans une ligne de commande sur l’ordinateur distant pour obtenir l’adresse IPv4. Si vous utilisez un fichier HOSTS, vérifiez qu’il est configuré correctement.
 
-Si cette tentative échoue, vérifiez que l’ordinateur distant est accessible sur le réseau ([ping](https://technet.microsoft.com/en-us/library/cc732509(v=ws.10).aspx) l’ordinateur distant). Débogage à distance via Internet n’est pas pris en charge, sauf dans certains scénarios Microsoft Azure.
+Si cette tentative échoue, vérifiez que l’ordinateur distant est accessible sur le réseau ([ping](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10)) l’ordinateur distant). Débogage à distance via Internet n’est pas pris en charge, sauf dans certains scénarios Microsoft Azure.
   
 ### <a name="server_incorrect"></a> Le nom du serveur est incorrect ou d’un logiciel tiers interfère avec le débogueur distant
 
@@ -153,7 +153,7 @@ Pour résoudre ce problème, vous pouvez procéder de différentes façons :
 ### <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>Les ordinateurs locaux et distants utilisent des modes d’authentification différents  
  Les ordinateurs locaux et distants doivent utiliser le même mode d’authentification. Pour résoudre ce problème, assurez-vous que les deux ordinateurs utilisent le même mode d’authentification. Vous pouvez modifier le mode d’authentification. Dans la fenêtre du débogueur distant, accédez à la **Outils > Options** boîte de dialogue.
   
- Pour plus d’informations sur les modes d’authentification, consultez [Vue d’ensemble de l’authentification Windows](https://technet.microsoft.com/en-us/library/hh831472.aspx).   
+ Pour plus d’informations sur les modes d’authentification, consultez [Vue d’ensemble de l’authentification Windows](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831472(v=ws.11)).   
   
 ### <a name="anti-virus-software-is-blocking-the-connections"></a>Un antivirus bloque les connexions  
  L’antivirus Windows autorise les connexions au débogueur distant, mais certains antivirus tiers peuvent les bloquer. Consultez la documentation de votre antivirus pour savoir comment autoriser ces connexions.  
@@ -168,4 +168,4 @@ Pour résoudre ce problème, vous pouvez procéder de différentes façons :
  Pour obtenir l’aide du débogueur distant de plus, ouvrez la page d’aide du débogueur distant (**aide > utilisation** dans le débogueur distant).
   
 ## <a name="see-also"></a>Voir aussi  
- [Débogage à distance](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
