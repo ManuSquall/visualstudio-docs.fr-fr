@@ -13,12 +13,12 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9363362f5f0c701250d10b6cb5b4226c05d6dbaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a3c89384c7c095160c5c77753b084540bed6339
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506473"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881148"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Kit SDK de Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -360,7 +360,7 @@ some F# code
 |Propriété (représentation HTML)|Description|  
 |--------------------------------------|-----------------|  
 |\< contenu de métadonnées name="Microsoft.Help.Locale » = « [code de langue] » / >|Définit les paramètres régionaux pour cette rubrique. Si cette balise est utilisée dans une rubrique, il doit être utilisé qu’une seule fois et doit être insérée au-dessus de toutes les autres balises de Microsoft Help. Si cette balise n’est pas utilisée, le texte du corps de la rubrique est indexé à l’aide du séparateur de mots qui est associé avec le paramètres régionaux du produit, s’il est spécifié ; Sinon, l’en-us lexical est utilisé. Cette balise est conforme à la norme RFC 4646 ISOC. Pour vous assurer que Microsoft Help fonctionne correctement, utilisez cette propriété au lieu de l’attribut de langue général.|  
-|\< contenu de métadonnées name="Microsoft.Help.TopicLocale » = « [code de langue] » / >|Définit les paramètres régionaux pour cette rubrique lorsque d’autres paramètres régionaux est également utilisés. Si cette balise est utilisée dans une rubrique, il doit être utilisé qu’une seule fois. Utilisez cette balise lorsque le catalogue contient le contenu dans plusieurs langues. Plusieurs rubriques dans un catalogue peuvent avoir le même ID, mais chacun doit spécifier un TopicLocale unique. La rubrique qui spécifie un TopicLocale qui correspond aux paramètres régionaux du catalogue est la rubrique qui s’affiche dans la table des matières. Toutefois, toutes les versions linguistiques de la rubrique sont affichées dans les résultats de la recherche.|  
+|\< contenu de métadonnées name="Microsoft.Help.TopicLocale » = « [code de langue] » / >|Définit les paramètres régionaux pour cette rubrique lorsque d’autres paramètres régionaux est également utilisés. Si cette balise est utilisée dans une rubrique, il doit être utilisé qu’une seule fois. Utilisez cette balise lorsque le catalogue contient le contenu dans plusieurs langues. Plusieurs rubriques dans un catalogue peuvent avoir le même ID, mais chacun doit spécifier un TopicLocale unique. La rubrique qui spécifie un TopicLocale qui correspond aux paramètres régionaux du catalogue est de la rubrique qui s’affiche dans la table des matières. Toutefois, toutes les versions linguistiques de la rubrique sont affichées dans les résultats de la recherche.|  
 |\< titre > [Title] \< /title >|Spécifie le titre de cette rubrique. Cette balise est obligatoire et doit être utilisée qu’une seule fois dans une rubrique. Si le corps de la rubrique ne contient pas un titre \<div > section, ce titre s’affiche dans la rubrique et dans la table des matières.|  
 |\< nom de métadonnées = « Microsoft.Help.Keywords » contenu = « [aKeywordPhrase] » / >|Spécifie le texte d’un lien qui s’affiche dans le volet de l’index de la visionneuse d’aide. Un clic sur le lien, la rubrique s’affiche. Vous pouvez spécifier plusieurs mots clés d’index pour une rubrique, ou vous pouvez omettre cette balise si vous ne souhaitez pas que des liens vers cette rubrique apparaissent dans l’index. Mots clés « K » à partir de versions antérieures de l’aide peuvent être convertis en cette propriété.|  
 |\< contenu de métadonnées name="Microsoft.Help.Id » = « [TopicID] » / >|Définit l’identificateur pour cette rubrique. Cette balise est obligatoire et doit être utilisée qu’une seule fois dans une rubrique. L’ID doit être unique parmi les rubriques dans le catalogue qui ont les mêmes paramètres régionaux. Dans une autre rubrique, vous pouvez créer un lien vers cette rubrique à l’aide de ce code.|  
