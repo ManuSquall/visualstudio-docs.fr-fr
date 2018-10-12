@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 392b2b5a129afe9504f306378103862d631d456e
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 2e77f5bbcdc09e44018e1a10c861e9875c569f65
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425710"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371054"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Procédure pas à pas : créer un environnement de build sur plusieurs ordinateurs
 
@@ -27,43 +27,27 @@ Ce document ne confère pas de droits pour redistribuer le logiciel en externe o
 
 > Exclusion de responsabilité<br /><br /> Ce document est fourni « en l’état ». Nous avons testé les étapes décrites, mais nous ne pouvons pas tester exhaustivement chaque configuration. Nous tenterons de maintenir le document à jour avec toute information supplémentaire obtenue. Les informations et opinions présentées dans ce document, notamment les URL et autres références à des sites web Internet, peuvent être modifiées sans information préalable. Microsoft n’offre aucune garantie, expresse ou implicite, concernant les informations fournies ici. Vous assumez tous les risques liés à leur utilisation.<br /><br /> Ce document ne vous donne aucun droit légal de propriété intellectuelle quant aux produits Microsoft. Vous pouvez copier et utiliser ce document à titre de référence interne.<br /><br /> Vous n’avez aucune obligation de faire à Microsoft des suggestions, commentaires ou autre retour concernant ce document. Toutefois, tout commentaire que vous fournissez volontairement peut être utilisé dans des produits Microsoft et les spécifications liées ou dans une autre documentation (collectivement, les "Offres Microsoft") qui peuvent elles-mêmes être utilisées par des tiers pour développer leurs propres produits. Par conséquent, si vous envoyez des retours sous forme de commentaires à Microsoft concernant n’importe quelle version de ce document ou les Offres Microsoft auxquelles ils s’appliquent, vous acceptez les points suivants : (a) Microsoft peut librement utiliser, reproduire, autoriser, distribuer et commercialiser vos commentaires dans toute Offre Microsoft ; (b) vous n’accorderez également aux tiers, sans frais, que les droits de brevet nécessaires pour permettre à d’autres produits d’utiliser ou d’interagir avec toutes les parties spécifiques d’un produit Microsoft qui incorporent vos commentaires ; et (c) vous n’enverrez à Microsoft aucun commentaire (i) pour lequel vous avez une raison de croire qu’il est soumis à un brevet, un copyright ou une autre revendication de propriété intellectuelle ou un autre droit envers un tiers ; ou (ii) qui soit soumis aux termes d’un contrat de licence exigeant que toute Offre Microsoft intégrant ou dérivée de ces commentaires, ou d’une autre propriété intellectuelle Microsoft, soit fournie sous licence à tout tiers ou partagée avec celui-ci.
 
-Cette procédure pas à pas a été validée par rapport aux systèmes d’exploitation suivants, en exécutant MSBuild à partir de la ligne de commande et en utilisant Team Foundation Build.
+Cette procédure pas à pas a été validée sur les systèmes d’exploitation suivants :
 
 - Windows 8 (x86 et x64)
 - Windows 7 Édition Intégrale
 - Windows Server 2008 R2 Standard
 
- Après avoir effectué les étapes de cette procédure, vous pouvez utiliser l’environnement à plusieurs ordinateurs pour générer les types d’applications suivants :
+Après avoir effectué les étapes de cette procédure, vous pouvez utiliser l’environnement à plusieurs ordinateurs pour générer les types d’applications suivants :
 
 - Applications de bureau C++ qui utilisent Windows 8 SDK
 - Applications de bureau Visual Basic ou C# qui ciblent .NET Framework 4.5
 
- Il n’est pas possible d’utiliser l’environnement à plusieurs ordinateurs pour générer les types d’applications suivants :
+Il n’est pas possible d’utiliser l’environnement à plusieurs ordinateurs pour générer les types d’applications suivants :
 
 - Applications UWP. Pour générer des applications UWP, vous devez installer Visual Studio sur l’ordinateur de build.
 - Applications de bureau qui ciblent .NET Framework 4 ou version antérieure. Pour générer ce genre d’applications, vous devez installer Visual Studio ou bien les outils et assemblys de référence .NET (à partir du SDK Windows 7.1) sur l’ordinateur de build.
 
- Cette procédure pas à pas est divisée en différentes parties, notamment les suivantes :
-
-- [Installer le logiciel sur les ordinateurs](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingSoftware)
-
-- [Copier des fichiers de l’ordinateur hôte vers l’ordinateur de build](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles)
-
-- [Créer des paramètres de Registre](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingRegistry)
-
-- [Définir des variables d’environnement sur l’ordinateur de build](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#SettingEnvVariables)
-
-- [Installer les assemblys MSBuild dans le GAC (Global Assembly Cache) sur l’ordinateur de build](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)
-
-- [Générer des projets](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#BuildingProjects)
-
-- [Créer l’environnement de build afin qu’il puisse être archivé dans le contrôle de code source](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingForSourceControl)
-
 ## <a name="prerequisites"></a>Prérequis
 
-- Visual Studio, avec la charge de travail Développement Desktop .NET.
+- Visual Studio, avec la charge de travail **Développement Desktop .NET**.
 
-## <a name="InstallingSoftware"></a> Installer le logiciel sur les ordinateurs
+## <a name="install-software-on-the-computers"></a>Installer le logiciel sur les ordinateurs
 
 Configurez tout d’abord l’ordinateur hôte, puis l’ordinateur de build.
 
@@ -73,7 +57,7 @@ En installant Visual Studio sur l’ordinateur hôte, vous créez des fichiers e
 
 2. Sur l’ordinateur de build, installez .NET Framework 4.5. Pour vérifier qu’il est installé, assurez-vous que la valeur de la clé de Registre **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET FrameworkSetup\NDP\v4\Full@Version** commence par « 4.5 ».
 
-## <a name="CopyingFiles"></a> Copier des fichiers de l’ordinateur hôte vers l’ordinateur de build
+## <a name="copy-files-from-the-host-computer-to-the-build-computer"></a>Copier des fichiers de l’ordinateur hôte sur l’ordinateur de build
 
 Cette section décrit la copie de fichiers, compilateurs, outils de génération, composants MSBuild et paramètres de Registre spécifiques à partir de l’ordinateur hôte vers l’ordinateur de build. Ces instructions supposent que vous avez installé Visual Studio à l’emplacement par défaut sur l’ordinateur hôte ; si vous l’avez installé à un autre emplacement, ajustez les étapes en conséquence.
 
@@ -85,7 +69,7 @@ Notez que le nom du dossier *Program Files* dépend du système d’exploitation
 > [!NOTE]
 > Sur l’ordinateur de build, tous les fichiers appropriés doivent se trouver sur le même lecteur ; toutefois, la lettre de ce lecteur peut être différente de la lettre du lecteur sur lequel Visual Studio est installé sur l’ordinateur hôte. Dans tous les cas, vous devez tenir compte de l’emplacement des fichiers quand vous créez des entrées de Registre, comme décrit plus loin dans ce document.
 
-#### <a name="copy-the-windows-sdk-files-to-the-build-computer"></a>Copier les fichiers du SDK Windows sur l’ordinateur de build
+### <a name="copy-the-windows-sdk-files-to-the-build-computer"></a>Copier les fichiers du SDK Windows sur l’ordinateur de build
 
 1. Si seul le SDK Windows pour Windows 8 est installé, copiez ces dossiers de manière récursive de l’ordinateur hôte sur l’ordinateur de build :
 
@@ -103,7 +87,7 @@ Notez que le nom du dossier *Program Files* dépend du système d’exploitation
 
     - %ProgramFiles%\Windows Kits\8.0\References\
 
-     Si les autres Kits Windows 8 suivants le sont aussi...
+    Si les autres Kits Windows 8 suivants le sont aussi...
 
     - Kit de déploiement et d’évaluation Microsoft Windows
 
@@ -111,7 +95,7 @@ Notez que le nom du dossier *Program Files* dépend du système d’exploitation
 
     - Kit de certification de matériel Microsoft Windows
 
-     ...ils peuvent avoir installé des fichiers dans les dossiers *%ProgramFiles%\Windows Kits\8.0* indiqués à l’étape précédente, et les termes du contrat de licence peuvent ne pas autoriser les droits de serveur de builds pour ces fichiers. Consultez les termes du contrat de licence pour chaque Kit Windows installé afin de vérifier si les fichiers peuvent être copiés vers votre ordinateur de build. Si ces termes n’autorisent pas les droits de serveur de builds, supprimez les fichiers de l’ordinateur de build.
+    ...ils peuvent avoir installé des fichiers dans les dossiers *%ProgramFiles%\Windows Kits\8.0* indiqués à l’étape précédente, et les termes du contrat de licence peuvent ne pas autoriser les droits de serveur de builds pour ces fichiers. Consultez les termes du contrat de licence pour chaque Kit Windows installé afin de vérifier si les fichiers peuvent être copiés vers votre ordinateur de build. Si ces termes n’autorisent pas les droits de serveur de builds, supprimez les fichiers de l’ordinateur de build.
 
 2. Copiez les dossiers suivants de manière récursive de l’ordinateur hôte vers l’ordinateur de build :
 
@@ -205,8 +189,9 @@ Notez que le nom du dossier *Program Files* dépend du système d’exploitation
 
     - \Microsoft.VC110.DebugOpenMP\vcomp110d.dll
 
-##  <a name="CreatingRegistry"></a> Créer des paramètres de Registre
- Vous devez créer des entrées de Registre pour configurer des paramètres pour MSBuild.
+## <a name="create-registry-settings"></a>Créer des paramètres de Registre
+
+Vous devez créer des entrées de Registre pour configurer des paramètres pour MSBuild.
 
 1. Identifiez le dossier parent des entrées du Registre. Toutes les entrées du Registre sont créées sous la même clé parente. Sur un ordinateur x86, la clé parente est **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft**. Sur un ordinateur x64, la clé parente est **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft**. Indépendamment de l’architecture du système, cette procédure pas à pas fait référence à la clé parente sous la forme %RegistryRoot%.
 
@@ -251,11 +236,11 @@ Notez que le nom du dossier *Program Files* dépend du système d’exploitation
 
     - **%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11**
 
-     Sur un ordinateur de build x64, créez également l’entrée de Registre suivante, et reportez-vous à l’ordinateur hôte pour déterminer comment la définir.
+    Sur un ordinateur de build x64, créez également l’entrée de Registre suivante, et reportez-vous à l’ordinateur hôte pour déterminer comment la définir.
 
     - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder**
 
-     Si votre ordinateur de build est un ordinateur x64 et que vous voulez utiliser la version 64 bits de MSBuild, ou si vous utilisez le service de build Team Foundation Server sur un ordinateur x64, vous devez créer les entrées de Registre suivantes dans le Registre 64 bits natif. Reportez-vous à l’ordinateur hôte pour savoir comment définir ces entrées.
+    Si votre ordinateur de build est un ordinateur x64 et que vous voulez utiliser la version 64 bits de MSBuild, ou si vous utilisez le service de build Team Foundation Server sur un ordinateur x64, vous devez créer les entrées de Registre suivantes dans le Registre 64 bits natif. Reportez-vous à l’ordinateur hôte pour savoir comment définir ces entrées.
 
     - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Setup\VS@ProductDir**
 
@@ -265,23 +250,23 @@ Notez que le nom du dossier *Program Files* dépend du système d’exploitation
 
     - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11**
 
-## <a name="SettingEnvVariables"></a> Définir des variables d’environnement sur l’ordinateur de build
+## <a name="set-environment-variables-on-the-build-computer"></a>Définir des variables d’environnement sur l’ordinateur de build
 
 Pour utiliser MSBuild sur l’ordinateur de build, vous devez définir les variables d’environnement PATH. Pour ce faire, vous pouvez utiliser *vcvarsall.bat*, ou vous pouvez les configurer manuellement.
 
 ### <a name="use-vcvarsallbat-to-set-environment-variables"></a>Utiliser vcvarsall.bat pour définir des variables d’environnement
 
-- Ouvrez une fenêtre **Invite de commandes** sur l’ordinateur de build, puis exécutez *%Program Files%\Microsoft Visual Studio 11.0\VC\vcvarsall.bat*. Vous pouvez utiliser un argument de ligne de commande pour spécifier l’ensemble d’outils à utiliser : compilateur croisé x64, x64 natif ou x86. Si vous ne spécifiez pas d’argument de ligne de commande, l’ensemble d’outils x86 est utilisé.
+Ouvrez une fenêtre **Invite de commandes** sur l’ordinateur de build, puis exécutez *%Program Files%\Microsoft Visual Studio 11.0\VC\vcvarsall.bat*. Vous pouvez utiliser un argument de ligne de commande pour spécifier l’ensemble d’outils à utiliser : compilateur croisé x64, x64 natif ou x86. Si vous ne spécifiez pas d’argument de ligne de commande, l’ensemble d’outils x86 est utilisé.
 
-     Le tableau suivant décrit les arguments pris en charge pour *vcvarsall.bat* :
+Le tableau suivant décrit les arguments pris en charge pour *vcvarsall.bat* :
 
-    |Argument Vcvarsall.bat|Compilateur|Architecture de l’ordinateur de build|Architecture de sortie de génération|
-    |----------------------------|--------------|---------------------------------|-------------------------------|
-    |x86 (valeur par défaut)|Natif 32 bits|x86, x64|x86|
-    |x86_amd64|x64 croisé|x86, x64|X64|
-    |amd64|x64 natif|X64|X64|
+|Argument Vcvarsall.bat|Compilateur|Architecture de l’ordinateur de build|Architecture de sortie de génération|
+|----------------------------|--------------|---------------------------------|-------------------------------|
+|x86 (valeur par défaut)|Natif 32 bits|x86, x64|x86|
+|x86_amd64|x64 croisé|x86, x64|X64|
+|amd64|x64 natif|X64|X64|
 
-     Si *vcvarsall.bat* s’exécute correctement (autrement dit si aucun message d’erreur ne s’affiche), vous pouvez ignorer l’étape suivante et passer à la section [Installer les assemblys MSBuild dans le GAC (Global Assembly Cache) sur l’ordinateur de build](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) de ce document.
+Si *vcvarsall.bat* s’exécute correctement (autrement dit si aucun message d’erreur ne s’affiche), vous pouvez ignorer l’étape suivante et passer à la section [Installer les assemblys MSBuild dans le GAC (Global Assembly Cache) sur l’ordinateur de build](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) de ce document.
 
 ### <a name="manually-set-environment-variables"></a>Définir manuellement des variables d’environnement
 
@@ -291,19 +276,19 @@ Pour utiliser MSBuild sur l’ordinateur de build, vous devez définir les varia
 
 2. Si vous le souhaitez, vous pouvez également ajouter les chemins suivants à la variable PATH afin de faciliter l’utilisation de MSBuild pour générer vos solutions.
 
-     Si vous voulez utiliser MSBuild 32 bits natif, ajoutez les chemins suivants à la variable PATH :
+    Si vous voulez utiliser MSBuild 32 bits natif, ajoutez les chemins suivants à la variable PATH :
 
     - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools
 
     - %windir%\Microsoft.NET\Framework\v4.0.30319
 
-     Si vous voulez utiliser MSBuild 64 bits natif, ajoutez les chemins suivants à la variable PATH :
+    Si vous voulez utiliser MSBuild 64 bits natif, ajoutez les chemins suivants à la variable PATH :
 
     - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\x64
 
     - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
-## <a name="InstallingMSBuildToGAC"></a> Installer les assemblys MSBuild dans le GAC (Global Assembly Cache) sur l’ordinateur de build
+## <a name="install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a>Installer les assemblys MSBuild dans le GAC (Global Assembly Cache) sur l’ordinateur de build
 
 MSBuild exige que certains assemblys supplémentaires soient installés dans le GAC sur l’ordinateur de build.
 
@@ -324,9 +309,9 @@ MSBuild exige que certains assemblys supplémentaires soient installés dans le 
     > [!NOTE]
     > Pour qu’un assembly s’installe totalement dans le GAC, un redémarrage peut être nécessaire.
 
-## <a name="BuildingProjects"></a> Générer des projets
+## <a name="build-projects"></a>Générer des projets
 
-Vous pouvez utiliser Team Foundation Build pour générer des projets et des solutions [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]. Vous pouvez également les générer sur la ligne de commande. Quand vous utilisez Team Foundation Build pour générer des projets, il appelle l’exécutable MSBuild correspondant à l’architecture système. Sur la ligne de commande, vous pouvez utiliser MSBuild 32 bits ou MSBuild 64 bits, et vous pouvez choisir l’architecture de MSBuild en définissant la variable d’environnement PATH ou en appelant directement l’exécutable MSBuild spécifique à l’architecture.
+Pour générer des projets et des solutions Visual Studio, vous pouvez soit utiliser Azure Pipelines, soit le faire en ligne de commande. Si vous optez pour Azure Pipelines, il appelle l’exécutable MSBuild correspondant à l’architecture système. Sur la ligne de commande, vous pouvez utiliser MSBuild 32 bits ou MSBuild 64 bits, et vous pouvez choisir l’architecture de MSBuild en définissant la variable d’environnement PATH ou en appelant directement l’exécutable MSBuild spécifique à l’architecture.
 
 Pour utiliser *msbuild.exe* à l’invite de commandes, exécutez la commande suivante, dans laquelle *solution.sln* est un espace réservé pour le nom de votre solution.
 
@@ -334,14 +319,9 @@ Pour utiliser *msbuild.exe* à l’invite de commandes, exécutez la commande su
 
 Pour plus d’informations sur l’utilisation de MSBuild sur la ligne de commande, consultez [Informations de référence sur la ligne de commande](../msbuild/msbuild-command-line-reference.md).
 
-> [!NOTE]
-> Pour générer des projets [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], vous devez utiliser l’ensemble d’outils de plateforme "v110". Si vous ne souhaitez pas modifier les fichiers projet [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], vous pouvez définir l’ensemble d’outils de plateforme en utilisant l’argument de ligne de commande suivant :
->
-> **msbuild** *solution.sln* **/p:PlatformToolset=v110**
+## <a name="create-the-build-environment-so-that-it-can-be-checked-into-source-control"></a>Créer l’environnement de build de sorte qu’il soit archivable dans le contrôle de code source
 
-## <a name="CreatingForSourceControl"></a> Créer l’environnement de build afin qu’il puisse être archivé dans le contrôle de code source
-
-Vous pouvez créer un environnement de build qui peut être déployé sur plusieurs ordinateurs et qui ne nécessite pas d’installer des fichiers dans le GAC ou de modifier des paramètres du Registre. Les étapes suivantes sont juste une manière d’accomplir cette opération. Adaptez ces étapes aux caractéristiques propres à votre environnement de build.
+Vous pouvez créer un environnement de build qui peut être déployé sur plusieurs ordinateurs sans qu’il soit nécessaire d’installer des fichiers dans le GAC ou de modifier des paramètres du Registre. Les étapes suivantes sont juste une manière d’accomplir cette opération. Adaptez ces étapes aux caractéristiques propres à votre environnement de build.
 
 > [!NOTE]
 > Vous devez désactiver la génération incrémentielle afin que *tracker.exe* ne provoque pas d’erreur lors de la génération. Pour désactiver une génération incrémentielle, définissez le paramètre de build suivant :
@@ -407,9 +387,9 @@ Vous pouvez créer un environnement de build qui peut être déployé sur plusie
 
     - Set Depot=*emplacement du répertoire Depot que vous avez créé à l’étape 1*
 
-    - Set path=%path%;*emplacement de MSBuild sur l’ordinateur*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 11.0\Common7\IDE\
+    - Set path=%path%;*emplacement de MSBuild sur l’ordinateur*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 15.0\Common7\IDE\
 
-         Pour une génération 64 bits native, pointez sur MSBuild 64 bits.
+       Pour une génération 64 bits native, pointez sur MSBuild 64 bits.
 
 ## <a name="see-also"></a>Voir aussi
 

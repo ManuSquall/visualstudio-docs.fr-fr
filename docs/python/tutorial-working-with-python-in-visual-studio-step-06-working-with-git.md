@@ -1,5 +1,5 @@
 ---
-title: 'Utilisation du tutoriel Python - Étape 6 : Utilisation de git'
+title: 'Utiliser le tutoriel Python – Étape 6 : Utiliser git'
 description: Étape 6 d’une procédure pas à pas portant sur Python dans Visual Studio qui décrit les fonctionnalités Git de Visual Studio.
 ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5f21528571a929fe31e8eb8cf891918a32fe2dce
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: b75b87af9df8487144aa0f4f7d7a96c31d2b38a1
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278724"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549283"
 ---
 # <a name="step-6-work-with-git"></a>Étape 6 : Utiliser Git
 
@@ -24,15 +24,15 @@ ms.locfileid: "44278724"
 
 Visual Studio fournit une intégration directe aux dépôts Git locaux et aux dépôts distants sur des services comme GitHub et Azure Repos. L’intégration inclut le clonage d’un dépôt, la validation des modifications et la gestion des branches.
 
-Cet article donne une vue d’ensemble de base de la création d’un dépôt Git local pour un projet existant et de votre familiarisation avec certaines des fonctionnalités de Visual Studio Git.
+Cet article donne une vue d’ensemble de base de la création d’un référentiel Git local pour un projet existant et de votre familiarisation avec certaines des fonctionnalités de Visual Studio Git.
 
-1. Avec un projet ouvert dans Visual Studio, comme le projet de [l’étape précédente](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md), cliquez avec le bouton droit sur la solution et sélectionnez **Ajouter la solution au contrôle de code source**. Visual Studio crée un dépôt Git local qui contient le code de votre projet.
+1. Avec un projet ouvert dans Visual Studio, comme le projet de [l’étape précédente](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md), cliquez avec le bouton droit sur la solution et sélectionnez **Ajouter la solution au contrôle de code source**. Visual Studio crée un référentiel Git local qui contient le code de votre projet.
 
-1. Lorsque Visual Studio détecte que le projet est géré dans un dépôt Git, les contrôles Git s’affichent en bas à droite de la fenêtre Visual Studio. Les contrôles montrent les validations en attente, les modifications, le nom du dépôt et la branche. Placez le curseur sur les contrôles pour afficher des informations supplémentaires.
+1. Lorsque Visual Studio détecte que le projet est géré dans un référentiel Git, les contrôles Git s’affichent dans l’angle inférieur droit de la fenêtre Visual Studio. Les contrôles montrent les validations en attente, les modifications, le nom du dépôt et la branche. Placez le curseur sur les contrôles pour afficher des informations supplémentaires.
 
     ![Des informations supplémentaires apparaissent quand vous placez le curseur sur un contrôle Git dans la fenêtre Visual Studio](media/working-with-git-01.png)
 
-1. Lorsque vous créez un dépôt ou sélectionnez une commande Git, Visual Studio ouvre la fenêtre **Team Explorer**. (Vous pouvez ouvrir la fenêtre à tout moment avec la commande de menu **Affichage** > **Team Explorer**.) La fenêtre comporte trois volets principaux entre lesquels vous pouvez basculer avec la liste déroulante de l’en-tête **Team Explorer**. Le volet **Synchronisation**, qui fournit des opérations de publication, s’affiche également quand vous sélectionnez le contrôle d’**envoi** (push), c’est-à-dire l’icône représentant une flèche vers le haut :
+1. Lorsque vous créez un référentiel ou sélectionnez une commande Git, Visual Studio ouvre la fenêtre **Team Explorer**. (Vous pouvez ouvrir la fenêtre à tout moment avec la commande de menu **Affichage** > **Team Explorer**.) La fenêtre comporte trois volets principaux entre lesquels vous pouvez basculer avec la liste déroulante de l’en-tête **Team Explorer**. Le volet **Synchronisation**, qui fournit des opérations de publication, s’affiche également quand vous sélectionnez le contrôle d’**envoi** (push), c’est-à-dire l’icône représentant une flèche vers le haut :
 
     ![Team Explorer dans Visual Studio après la création d’un dépôt local](media/working-with-git-02.png)
 

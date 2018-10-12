@@ -1,6 +1,6 @@
 ---
 title: Concepteur Shader
-ms.date: 11/04/2016
+ms.date: 09/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
@@ -13,22 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0deaf83c224270b582043e918b64591468d5783f
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e57a42846833024fefb4bf73660484123474d00a
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078951"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029051"
 ---
 # <a name="shader-designer"></a>Concepteur Shader
 
-Ce document décrit l’utilisation du concepteur de nuanceur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour créer, modifier et exporter des effets visuels personnalisés, appelés *nuanceurs*.
+Ce document explique comment utiliser le **Concepteur de nuanceur** Visual Studio pour créer, modifier et exporter des effets visuels personnalisés, appelés *nuanceurs*.
 
-Le concepteur de nuanceur vous permet de créer des effets visuels personnalisés pour votre jeu ou votre application même si vous ne connaissez pas la programmation HLSL. Pour créer un nuanceur dans le concepteur de nuanceur, il vous suffit de le disposer sous forme de graphique. En d’autres termes, vous ajoutez à l’aire de conception des *nœuds* qui représentent des données et des opérations, avant de créer des connexions entre eux pour définir le traitement des données par ces opérations. À chaque nœud d’opération, un aperçu de l’effet jusqu’à ce point est fourni afin que vous puissiez visualiser son résultat. Les flux de données transitent via les nœuds vers un nœud final qui représente la sortie du nuanceur.
+Le **Concepteur de nuanceur** permet de créer des effets visuels personnalisés pour un jeu ou une application sans même connaître la programmation HLSL (High Level Shader Language). Un nuanceur créé dans le **Concepteur de nuanceur** est présenté sous forme de graphe. En d’autres termes, vous ajoutez à l’aire de conception des *nœuds* qui représentent les données et les opérations, avant de créer des connexions pour définir la manière dont ces opérations traitent les données. À chaque nœud d’opération, un aperçu de l’effet jusqu’à ce point est fourni afin que vous puissiez visualiser son résultat. Les flux de données transitent via les nœuds vers un nœud final qui représente la sortie du nuanceur.
 
 ## <a name="supported-formats"></a>Formats pris en charge
 
-Le concepteur de nuanceur prend en charge les formats de nuanceur suivants :
+Le **Concepteur de nuanceur** prend en charge les formats de nuanceur suivants :
 
 |Nom de format|Extension de fichier|Opérations prises en charge (afficher, modifier, exporter)|
 |-----------------|--------------------|-------------------------------------------------|
@@ -39,17 +39,29 @@ Le concepteur de nuanceur prend en charge les formats de nuanceur suivants :
 
 ## <a name="get-started"></a>Prise en main
 
-Cette section explique comment ajouter un nuanceur DGSL à votre projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et fournit les informations de base pour commencer.
+Cette section explique comment ajouter un nuanceur DGSL à un projet C++ Visual Studio et donne des informations de base pour commencer.
+
+> [!NOTE]
+> L’intégration de la génération automatique d’éléments graphiques comme les graphes de nuanceurs (fichiers .dgsl) n’est prise en charge que pour les projets C++.
 
 ### <a name="to-add-a-dgsl-shader-to-your-project"></a>Pour ajouter un nuanceur DGSL à votre projet
 
-1.  Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du projet auquel vous voulez ajouter le nuanceur, puis choisissez **Ajouter** > **Nouvel élément**.
+1. Vérifiez que le composant Visual Studio dont vous avez besoin pour travailler avec les graphismes est installé. Il s’appelle **Éditeurs d’images et de modèles 3D**.
 
-2.  Dans la boîte de dialogue **Ajouter un nouvel élément**, sous **Installé**, sélectionnez **Graphiques**, puis **Graphe de nuanceur visuel (.dgsl)**.
+   Pour l’installer, ouvrez Visual Studio Installer en sélectionnant **Outils** > **Obtenir des outils et des fonctionnalités** dans la barre de menus, puis l’onglet **Composants individuels**. Sélectionnez le composant **Éditeurs d’images et de modèles 3D** sous la catégorie **Jeux et graphismes**, puis sélectionnez **Modifier**.
 
-3.  Spécifiez le **Nom** du fichier du nuanceur, ainsi que l’**Emplacement** où vous souhaitez le créer.
+   ![Composant Éditeurs d’images et de modèles 3D](media/image-3d-model-editors-component.png)
 
-4.  Choisissez le bouton **Ajouter** .
+2. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel du projet C++ auquel vous voulez ajouter le nuanceur, puis choisissez **Ajouter** > **Nouvel élément**.
+
+3. Dans la boîte de dialogue **Ajouter un nouvel élément**, sous **Installé**, sélectionnez **Graphiques**, puis **Graphe de nuanceur visuel (.dgsl)**.
+
+   > [!NOTE]
+   > Si la catégorie **Graphismes** n’apparaît pas dans la boîte de dialogue **Ajouter un nouvel élément** alors que le composant **Éditeurs d’images et de modèles 3D** est installé, cela signifie que les éléments graphiques ne sont pas pris en charge pour votre type de projet.
+
+4. Spécifiez le **Nom** du fichier du nuanceur, ainsi que l’**Emplacement** où vous souhaitez le créer.
+
+5. Choisissez le bouton **Ajouter** .
 
 ### <a name="the-default-shader"></a>Nuanceur par défaut
 
@@ -63,7 +75,7 @@ Les sections suivantes décrivent l’utilisation du concepteur de nuanceur avec
 
 Les barres d’outils du concepteur de nuanceur contiennent des commandes qui vous permettent de travailler avec des graphes de nuanceur DGSL.
 
-Les commandes qui affectent l’état du concepteur de nuanceur se trouvent dans la barre d’outils **Mode du concepteur de nuanceur**, dans la fenêtre principale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Les outils et commandes de conception sont situés dans la barre d’outils **Concepteur de nuanceur** de l’aire de conception du concepteur de nuanceur.
+Les commandes qui affectent l’état du concepteur de nuanceur se trouvent dans la barre d’outils **Mode du concepteur de nuanceur**, dans la fenêtre principale de Visual Studio. Les outils et commandes de conception sont situés dans la barre d’outils **Concepteur de nuanceur** de l’aire de conception du concepteur de nuanceur.
 
 Barre d’outils **Mode du concepteur de nuanceur** :
 
@@ -77,7 +89,7 @@ Ce tableau décrit les éléments de la barre d’outils **Mode du concepteur de
 |**Panoramique**|Permet de déplacer un graphe de nuanceur par rapport au cadre de la fenêtre. Pour effectuer un mouvement panoramique, sélectionnez un point dans l’aire de conception et déplacez-le.<br /><br /> En mode **Sélection**, vous pouvez maintenir enfoncée la touche **Ctrl** pour activer temporairement le mode **Panoramique**.|
 |**Zoom**|Permet d’afficher un graphique de nuanceur avec plus ou moins de détails par rapport au cadre de la fenêtre. En mode **Zoom**, sélectionnez un point dans l’aire de conception et déplacez-le vers la droite ou le bas pour effectuer un zoom avant, ou vers la gauche ou le haut pour effectuer un zoom arrière.<br /><br /> En mode **Sélection**, vous pouvez maintenir enfoncée la touche **Ctrl** pour effectuer un zoom avant ou arrière à l’aide de la roulette de la souris.|
 |**Zoom pour ajuster**|Affiche le graphe de nuanceur complet dans le cadre de la fenêtre.|
-|**Mode de rendu en temps réel**|Lorsque le rendu en temps réel est activé, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] redessine l'aire de conception, même lorsqu'aucune action utilisateur n'est effectuée. Ce mode est utile lorsque vous travaillez avec des nuanceurs qui évoluent avec le temps.|
+|**Mode de rendu en temps réel**|Quand le rendu en temps réel est activé, Visual Studio redessine l’aire de conception, même quand aucune action utilisateur n’est effectuée. Ce mode est utile lorsque vous travaillez avec des nuanceurs qui évoluent avec le temps.|
 |**Aperçu avec la sphère**|Si cette option est activée, un modèle de sphère est utilisé pour afficher un aperçu du nuanceur. Une seule forme d’aperçu peut être activée à la fois.|
 |**Aperçu avec le cube**|Si cette option est activée, un modèle de cube est utilisé pour afficher un aperçu du nuanceur. Une seule forme d’aperçu peut être activée à la fois.|
 |**Aperçu avec le cylindre**|Si cette option est activée, un modèle de cylindre est utilisé pour afficher un aperçu du nuanceur. Une seule forme d’aperçu peut être activée à la fois.|
@@ -97,19 +109,19 @@ Utilisez le mode **Sélection** pour ajouter, supprimer, repositionner, connecte
 
 #### <a name="to-perform-basic-operations-in-select-mode"></a>Pour effectuer des opérations de base en mode Sélection
 
--   Voici comment :
+- Voici comment :
 
-    -   Pour ajouter un nœud au graphique, sélectionnez-le dans la **boîte à outils**, puis déplacez-le vers l’aire de conception.
+   - Pour ajouter un nœud au graphique, sélectionnez-le dans la **boîte à outils**, puis déplacez-le vers l’aire de conception.
 
-    -   Pour supprimer un nœud du graphe, sélectionnez-le, puis appuyez sur la touche **Suppr**.
+   - Pour supprimer un nœud du graphe, sélectionnez-le, puis appuyez sur la touche **Suppr**.
 
-    -   Pour repositionner un nœud, sélectionnez-le, puis déplacez-le vers un nouvel emplacement.
+   - Pour repositionner un nœud, sélectionnez-le, puis déplacez-le vers un nouvel emplacement.
 
-    -   Pour connecter deux nœuds, déplacez un terminal de sortie d’un nœud vers un terminal d’entrée de l’autre nœud. Seuls les terminaux de type compatible peuvent être connectés. Une ligne entre les terminaux indique la connexion.
+   - Pour connecter deux nœuds, déplacez un terminal de sortie d’un nœud vers un terminal d’entrée de l’autre nœud. Seuls les terminaux de type compatible peuvent être connectés. Une ligne entre les terminaux indique la connexion.
 
-    -   Pour supprimer une connexion, dans le menu contextuel de l’un des terminaux connectés, choisissez **Rompre les liaisons**.
+   - Pour supprimer une connexion, dans le menu contextuel de l’un des terminaux connectés, choisissez **Rompre les liaisons**.
 
-    -   Pour configurer les propriétés d’un nœud, sélectionnez le nœud, puis, dans la fenêtre **Propriétés**, spécifiez de nouvelles valeurs pour les propriétés.
+   - Pour configurer les propriétés d’un nœud, sélectionnez le nœud, puis, dans la fenêtre **Propriétés**, spécifiez de nouvelles valeurs pour les propriétés.
 
 ### <a name="preview-shaders"></a>Afficher un aperçu des nuanceurs
 
@@ -122,15 +134,16 @@ Le concepteur de nuanceur comprend six formes (une sphère, un cube, un cylindr
 Pour choisir une forme d’aperçu, dans la barre d’outils **Mode du concepteur Shader**, choisissez la forme souhaitée.
 
 #### <a name="textures-and-material-parameters"></a>Paramètres des textures et des matériaux
- De nombreux nuanceurs utilisent des textures et des propriétés de matériau pour produire une apparence unique pour chaque type d’objet de votre application. Pour voir à quoi votre nuanceur ressemblera dans votre application, vous pouvez définir les textures et les propriétés de matériau qui sont utilisées pour afficher l’aperçu pour qu’elles correspondent aux textures et aux paramètres que vous pouvez utiliser dans votre application.
 
-##### <a name="to-bind-a-different-texture-to-a-texture-register-or-to-modify-other-material-parameters"></a>Pour lier une autre texture à un registre de texture ou pour modifier d’autres paramètres de matériau
+De nombreux nuanceurs utilisent des textures et des propriétés de matériau pour produire une apparence unique pour chaque type d’objet de votre application. Pour voir à quoi votre nuanceur ressemblera dans votre application, vous pouvez définir les textures et les propriétés de matériau qui sont utilisées pour afficher l’aperçu pour qu’elles correspondent aux textures et aux paramètres que vous pouvez utiliser dans votre application.
 
-1.  En mode **Sélection**, sélectionnez une zone vide de l’aire de conception. La fenêtre **Propriétés** affiche alors les propriétés globales du nuanceur.
+Pour lier une autre texture à un registre de textures ou pour modifier d’autres paramètres de matière :
 
-2.  Dans la fenêtre **Propriétés**, spécifiez de nouvelles valeurs pour les propriétés de texture et de paramètre que vous souhaitez modifier.
+1. En mode **Sélection**, sélectionnez une zone vide de l’aire de conception. La fenêtre **Propriétés** affiche alors les propriétés globales du nuanceur.
 
-Voici les paramètres de nuanceur que vous pouvez modifier :
+2. Dans la fenêtre **Propriétés**, spécifiez de nouvelles valeurs pour les propriétés de texture et de paramètre que vous souhaitez modifier.
+
+Le tableau suivant présente les paramètres modifiables du nuanceur :
 
 |Paramètre|Propriétés|
 |---------------|----------------|
@@ -190,6 +203,6 @@ Pour plus d’informations sur la façon d’exporter des nuanceurs, consultez [
 
 |Titre|Description|
 |-----------|-----------------|
-|[Utilisation de composants 3D pour les jeux et les applications](../designers/working-with-3-d-assets-for-games-and-apps.md)|Présente les outils [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que vous pouvez utiliser avec les textures et les images, les modèles 3D et les effets de nuanceur.|
-|[Éditeur d’images](../designers/image-editor.md)|Explique comment utiliser l'éditeur d'images de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour travailler avec des textures et des images.|
-|[Éditeur de modèle](../designers/model-editor.md)|Décrit comment utiliser l’éditeur de modèle [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour travailler avec des modèles 3D.|
+|[Utilisation de composants 3D pour les jeux et les applications](../designers/working-with-3-d-assets-for-games-and-apps.md)|Présente les outils Visual Studio permettant de travailler avec les textures et les images, les modèles 3D et les effets de nuanceur.|
+|[Éditeur d’images](../designers/image-editor.md)|Décrit comment utiliser l’éditeur d’images Visual Studio pour travailler avec des textures et des images.|
+|[Éditeur de modèle](../designers/model-editor.md)|Décrit comment utiliser l’éditeur de modèle Visual Studio pour travailler avec des modèles 3D.|
