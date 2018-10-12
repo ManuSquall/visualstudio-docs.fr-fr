@@ -10,12 +10,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c3f6bed7cc010f0aeaff22cd46eb7bcaaa4caf6
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: d0f77fb6bb22c82fb8f3bb0b3bf2a7a32a9be559
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280621"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542375"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Guide pratique pour déverrouiller Visual Studio
 
@@ -27,14 +27,14 @@ Vous pouvez évaluer Visual Studio gratuitement pendant 30 jours. La connexion �
 
 ## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>Pour déverrouiller Visual Studio à l'aide d'un abonnement en ligne
 
-Pour déverrouiller Visual Studio avec un abonnement Visual Studio ou une organisation Azure DevOps Services associé à un compte Microsoft, ou à un compte professionnel ou scolaire :
+Pour déverrouiller Visual Studio avec un abonnement Visual Studio ou une organisation Azure DevOps associé à un compte Microsoft ou à un compte professionnel ou scolaire :
 
 1. Cliquez sur le bouton **Connexion** en haut à droite de l’IDE (ou accédez à **Fichier** > **Paramètres du compte** pour ouvrir la boîte de dialogue **Paramètres du compte**, puis cliquez sur le bouton **Connexion**).
 
-1. Entrez les informations d'identification d'un compte Microsoft ou d'un compte professionnel ou scolaire. Visual Studio recherche un abonnement Visual Studio ou une organisation Azure DevOps Services associé à votre compte.
+1. Entrez les informations d'identification d'un compte Microsoft ou d'un compte professionnel ou scolaire. Visual Studio recherche un abonnement Visual Studio ou une organisation Azure DevOps associé à votre compte.
 
 > [!IMPORTANT]
-> Visual Studio recherche automatiquement les abonnements en ligne associés quand vous vous connectez à une organisation Azure DevOps Services à partir de la fenêtre Outil **Team Explorer**. Quand vous vous connectez à une organisation Azure DevOps Services, vous pouvez utiliser un compte Microsoft, ou un compte professionnel ou scolaire. Si un abonnement en ligne existe pour ce compte d'utilisateur, Visual Studio déverrouille automatiquement l'IDE.
+> Visual Studio recherche automatiquement les abonnements en ligne associés quand vous vous connectez à une organisation Azure DevOps dans la fenêtre Outil **Team Explorer**. Vous pouvez alors utiliser un compte Microsoft ou un compte professionnel ou scolaire. Si un abonnement en ligne existe pour ce compte d'utilisateur, Visual Studio déverrouille automatiquement l'IDE.
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>Pour déverrouiller Visual Studio avec une clé de produit
 

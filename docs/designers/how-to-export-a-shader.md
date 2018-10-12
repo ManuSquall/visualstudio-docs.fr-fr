@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour exporter un nuanceur
+title: 'Procédure : exporter un nuanceur'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
@@ -10,32 +10,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1eb69a4662521c08fc8d2df34bbbfa41a5d1d7ea
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: bd06664cda1c60d2624b77a0381e1269fcb3c484
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924077"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028973"
 ---
 # <a name="how-to-export-a-shader"></a>Guide pratique pour exporter un nuanceur
-Ce document indique comment utiliser le concepteur de nuanceur pour exporter un nuanceur DGSL (Directed Graph Shader Language) afin de pouvoir l’utiliser dans votre application.
 
- Ce document illustre cette activité :
+Cet article indique comment utiliser le **Concepteur de nuanceur** pour exporter un nuanceur DGSL (Directed Graph Shader Language) afin de pouvoir l’utiliser dans une application.
 
--   Exportation d’un nuanceur
+## <a name="export-a-shader"></a>Exporter un nuanceur
 
-## <a name="exporting-a-shader"></a>Exportation d’un nuanceur
- Après avoir créé un nuanceur à l’aide du concepteur de nuanceur et pour pouvoir l’utiliser dans votre application, vous devez l’exporter dans un format pris en charge par votre API de graphismes. Vous pouvez exporter un nuanceur de différentes façons en fonction de vos besoins.
+Après avoir créé un nuanceur à l’aide du concepteur de nuanceur et pour pouvoir l’utiliser dans votre application, vous devez l’exporter dans un format pris en charge par votre API de graphismes. Vous pouvez exporter un nuanceur de différentes façons en fonction de vos besoins.
 
-### <a name="to-export-a-shader"></a>Pour exporter un nuanceur
-
-1.  Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ouvrez un fichier **Graphe de nuanceur visuel (.dgsl)**.
+1. Dans Visual Studio, ouvrez un fichier **Visual Shader Graph (.dgsl)**.
 
      Si vous ne disposez pas d’un fichier **Graphe de nuanceur visuel (.dgsl)**, créez-en un en suivant la description de l’article [Guide pratique pour créer un nuanceur de couleur de base](../designers/how-to-create-a-basic-color-shader.md).
 
-2.  Dans la barre d’outils **Concepteur de nuanceur**, choisissez **Avancé** > **Exporter** > **Exporter en tant que**. La boîte de dialogue **Exporter le nuanceur** apparaît.
+2. Dans la barre d’outils **Concepteur de nuanceur**, choisissez **Avancé** > **Exporter** > **Exporter en tant que**. La boîte de dialogue **Exporter le nuanceur** apparaît.
 
-3.  Dans la liste déroulante **Type de fichier**, choisissez le format d’exportation souhaité.
+3. Dans la liste déroulante **Type de fichier**, choisissez le format d’exportation souhaité.
 
      Voici les formats que vous pouvez choisir :
 
@@ -45,7 +41,7 @@ Ce document indique comment utiliser le concepteur de nuanceur pour exporter un 
 
      **En-tête C++ (\*.h)** Exporte le nuanceur en tant qu’en-tête de style C qui définit un tableau d’octets contenant le bytecode HLSL. Cette option peut allonger la durée du débogage et de la mise à jour corrective du code basé sur les problèmes des utilisateurs finaux, car l’application doit être recompilée pour tester le correctif. Toutefois, comme cette option rend difficile, mais pas impossible, la modification du nuanceur après son déploiement dans une application, elle est celle qui présente le niveau de difficulté le plus élevé pour un utilisateur souhaitant modifier le nuanceur de manière indésirable.
 
-4.  Dans la zone de liste modifiable **Nom de fichier**, spécifiez un nom pour le nuanceur exporté, puis choisissez le bouton **Enregistrer**.
+4. Dans la zone de liste modifiable **Nom de fichier**, spécifiez un nom pour le nuanceur exporté, puis choisissez le bouton **Enregistrer**.
 
 ## <a name="see-also"></a>Voir aussi
 

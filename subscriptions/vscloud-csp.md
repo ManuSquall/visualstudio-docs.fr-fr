@@ -9,12 +9,12 @@ description: Informations destinées aux fournisseurs de solutions cloud concern
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a455e645629266be28e50718ae5fffde309b3dd9
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9d040d2f586e2c47a6f904f06d483fe484a57429
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282285"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495802"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Acheter et gérer des abonnements cloud Visual Studio pour vos clients
 
@@ -28,6 +28,8 @@ Vous devez tout d’abord configurer votre locataire de clients dans l’Espace 
 
 [En savoir plus](/azure/devops/organizations/billing/csp/set-up-csp-customer)
 
+## <a name="who-can-buy-visual-studio-subscriptions"></a>Qui peut acheter des abonnements Visual Studio ?
+Toute personne ayant un [accès Propriétaire ou Contributeur](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) à l’abonnement Azure peut acheter des abonnements Visual Studio. 
 
 ## <a name="how-to-buy"></a>Comment acheter
 

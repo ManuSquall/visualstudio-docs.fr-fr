@@ -1,6 +1,6 @@
 ---
-title: Couverture du code dans Visual Studio
-ms.date: 11/04/2016
+title: Tests de couverture du code
+ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 - VB
 - CPP
+author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 8dc6ff1e2813f1457e8a41328f759e8e27d9aa65
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: dc8b08b68bb6c48fa22abaa90ba8b0b9daa25e89
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279945"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370937"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Utiliser la couverture du code pour déterminer la quantité de code testé
 
@@ -32,26 +32,26 @@ Vous pouvez avoir recours à la couverture du code lorsque vous exécutez des m�
 
 ![Résultats de la couverture du code avec coloration](../test/media/codecoverage1.png)
 
- **Spécifications**
+## <a name="requirements"></a>Configuration requise
 
--   Visual Studio Enterprise
+La fonctionnalité de couverture du code n’est disponible que dans l’édition Visual Studio Enterprise.
 
 ## <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>Pour analyser la couverture du code sur les tests unitaires dans l'Explorateur de tests
 
-1.  Dans le menu **Test**, choisissez **Analyser la couverture du code**.
+1. Dans le menu **Test**, choisissez **Analyser la couverture du code**.
 
-2.  Pour voir les lignes qui ont été exécutées, choisissez ![Icône Afficher la coloration de la couverture du code](../test/media/codecoverage-showcoloringicon.png)**Afficher la coloration de la couverture du code**.
+2. Pour voir les lignes qui ont été exécutées, choisissez ![Icône Afficher la coloration de la couverture du code](../test/media/codecoverage-showcoloringicon.png) **Afficher la coloration de la couverture du code**.
 
-     Pour changer les couleurs ou utiliser des caractères gras, choisissez **Outils** > **Options** > **Environnement** > **Polices et couleurs** > **Afficher les paramètres de : Éditeur de texte**. Sous **Éléments affichés**, ajustez les éléments de couverture.
+   Pour changer les couleurs ou utiliser des caractères gras, choisissez **Outils** > **Options** > **Environnement** > **Polices et couleurs** > **Afficher les paramètres de : Éditeur de texte**. Sous **Éléments affichés**, ajustez les éléments de couverture.
 
-3.  Si les résultats indiquent une couverture basse, recherchez les parties du code qui ne sont pas testées, puis élaborez d'autres tests pour les couvrir. Les équipes de développement visent généralement une couverture de code qui avoisine 80 %. Dans certaines situations, une couverture inférieure est acceptable. Par exemple, une couverture inférieure est acceptable lorsqu'un code est généré à partir d'un modèle standard.
+3. Si les résultats indiquent une couverture basse, recherchez les parties du code qui ne sont pas testées, puis élaborez d'autres tests pour les couvrir. Les équipes de développement visent généralement une couverture de code qui avoisine 80 %. Dans certaines situations, une couverture inférieure est acceptable. Par exemple, une couverture inférieure est acceptable lorsqu'un code est généré à partir d'un modèle standard.
 
 > [!TIP]
 > - Vérifiez que l’optimisation du compilateur est désactivée.
 > - Si vous travaillez avec du code non managé (natif), utilisez une version Debug.
 > - Vérifiez que vous générez des fichiers de symboles (.pdb) pour chaque assembly.
 
-Si vous n’obtenez pas les résultats escomptés, consultez [Résolution des problèmes liés à la couverture du code](../test/troubleshooting-code-coverage.md). N’oubliez pas de réexécuter la couverture du code après la mise à jour de votre code. Les résultats de couverture et la coloration du code ne sont pas automatiquement mis à jour après avoir la modification de votre code ou lorsque vous exécutez des tests.
+Si vous n’obtenez pas les résultats escomptés, consultez [Résoudre les problèmes liés à la couverture du code](../test/troubleshooting-code-coverage.md). N’oubliez pas de réexécuter la couverture du code après la mise à jour de votre code. Les résultats de couverture et la coloration du code ne sont pas automatiquement mis à jour après avoir la modification de votre code ou lorsque vous exécutez des tests.
 
 ## <a name="report-in-blocks-or-lines"></a>Rapport pour les blocs ou les lignes
 
@@ -69,42 +69,44 @@ La fenêtre de couverture du code peut également être utilisée pour afficher 
 
 Vous pouvez fusionner les résultats de plusieurs séries, par exemple les résultats de séries qui utilisent des données de test différentes.
 
--   **Pour afficher un ensemble de résultats antérieur**, sélectionnez-le dans le menu déroulant. Le menu affiche une liste temporaire qui est supprimée lorsque vous ouvrez une nouvelle solution.
+- **Pour afficher un ensemble de résultats antérieur**, sélectionnez-le dans le menu déroulant. Le menu affiche une liste temporaire qui est supprimée lorsque vous ouvrez une nouvelle solution.
 
--   **Pour afficher les résultats d’une session antérieure**, choisissez **Importer les résultats de la couverture du code**, accédez au dossier **TestResults** dans votre solution, puis importez un fichier *.coverage*.
+- **Pour afficher les résultats d’une session antérieure**, choisissez **Importer les résultats de la couverture du code**, accédez au dossier **TestResults** dans votre solution, puis importez un fichier *.coverage*.
 
-    La coloration de couverture peut être incorrecte si le code source a été modifié depuis que le fichier *.coverage* a été généré.
+   La coloration de couverture peut être incorrecte si le code source a été modifié depuis que le fichier *.coverage* a été généré.
 
--   **Pour afficher les résultats sous forme de texte**, choisissez **Exporter les résultats de la couverture du code**. Un fichier *.coveragexml* lisible est généré. Vous pouvez le traiter avec d’autres outils ou l’envoyer facilement par-email.
+- **Pour afficher les résultats sous forme de texte**, choisissez **Exporter les résultats de la couverture du code**. Un fichier *.coveragexml* lisible est généré. Vous pouvez le traiter avec d’autres outils ou l’envoyer facilement par courrier électronique.
 
--   **Pour envoyer les résultats à une autre personne**, envoyez un fichier *.coverage* ou un fichier *.coveragexml* exporté. Cela permet ensuite à la personne d'importer le fichier. Si la personne a la même version de code source, elle a accès à la coloration de couverture.
+- **Pour envoyer les résultats à une autre personne**, envoyez un fichier *.coverage* ou un fichier *.coveragexml* exporté. Cela permet ensuite à la personne d'importer le fichier. Si la personne a la même version de code source, elle a accès à la coloration de couverture.
 
 ## <a name="merge-results-from-different-runs"></a>Fusionner les résultats de différentes exécutions
 
 Dans certains cas, différents blocs de votre code seront utilisés, en fonction des données de test. Par conséquent, vous pouvez souhaiter combiner les résultats des plusieurs séries de tests.
 
- Supposons par exemple que, lorsque vous exécutez un test avec l'entrée « 2 », vous constatez que 50 % d'une fonction spécifique est couvert. Lorsque vous exécutez le test une deuxième fois avec l'entrée « -2 », vous constatez dans la vue de coloration de couverture que le reste de la fonction (50 %) est couvert. Fusionnez maintenant les résultats des deux séries de tests. Le rapport et la vue de coloration de couverture indiquent que la fonction a été couverte à 100 %.
+Supposons par exemple que, lorsque vous exécutez un test avec l'entrée « 2 », vous constatez que 50 % d'une fonction spécifique est couvert. Si vous exécutez le test une deuxième fois avec l'entrée « -2 », la deuxième moitié de la fonction apparaît couverte dans la vue avec coloration de la couverture. Fusionnez maintenant les résultats des deux séries de tests. Le rapport et la vue de coloration de couverture indiquent que la fonction a été couverte à 100 %.
 
- Pour cela, utilisez ![Icône du bouton de fusion dans la fenêtre Couverture du code](../test/media/codecoverage-mergeicon.png)**Fusionner les résultats de la couverture du code**. Vous pouvez choisir n'importe quelle combinaison de séries récentes ou de résultats importés. Si vous souhaitez combiner des résultats exportés, vous devez d'abord les importer.
+Pour cela, utilisez ![Icône du bouton Fusionner dans la fenêtre Couverture du code](../test/media/codecoverage-mergeicon.png) **Fusionner les résultats de la couverture du code**. Vous pouvez choisir n'importe quelle combinaison de séries récentes ou de résultats importés. Si vous souhaitez combiner des résultats exportés, vous devez d'abord les importer.
 
- Utilisez **Exporter les résultats de la couverture du code** pour enregistrer les résultats d’une opération de fusion.
+Utilisez **Exporter les résultats de la couverture du code** pour enregistrer les résultats d’une opération de fusion.
 
 ### <a name="limitations-in-merging"></a>Limitations lors de la fusion
 
--   Si vous fusionnez des données de couverture de différentes versions du code, les résultats s'affichent séparément, mais ils ne sont pas combinés. Pour obtenir des résultats entièrement combinés, utilisez la même version du code et modifiez uniquement les données de test.
+- Si vous fusionnez des données de couverture de différentes versions du code, les résultats s'affichent séparément, mais ils ne sont pas combinés. Pour obtenir des résultats entièrement combinés, utilisez la même version du code et modifiez uniquement les données de test.
 
--   Si vous fusionnez un fichier de résultats qui a été exporté puis importé, vous pouvez uniquement consulter les résultats par lignes, et non pas par blocs. Utilisez la commande **Ajouter/supprimer des colonnes** pour afficher les données des lignes.
+- Si vous fusionnez un fichier de résultats qui a été exporté puis importé, vous pouvez uniquement consulter les résultats par lignes, et non pas par blocs. Utilisez la commande **Ajouter/supprimer des colonnes** pour afficher les données des lignes.
 
--   Si vous fusionnez les résultats des tests d’un projet ASP .NET, les résultats des tests distincts sont affichés, mais ils ne sont pas combinés. Cela s'applique uniquement aux artefacts ASP .NET eux-mêmes : les résultats de tous les autres assemblys sont combinés.
+- Si vous fusionnez les résultats des tests d’un projet ASP .NET, les résultats des tests distincts sont affichés, mais ils ne sont pas combinés. Cela s'applique uniquement aux artefacts ASP .NET eux-mêmes : les résultats de tous les autres assemblys sont combinés.
 
 ## <a name="exclude-elements-from-the-code-coverage-results"></a>Exclure des éléments des résultats de la couverture du code
 
-Vous pouvez exclure des éléments spécifiques dans votre code à partir des notes de couverture, par exemple si le code est généré à partir d'un modèle de texte. Ajoutez l'attribut `System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage` aux éléments de code suivants : classe, structure, méthode, propriété, accesseur Set ou accesseur Get de propriété, événement. Notez que l'exclusion d'une classe n'exclut pas ses classes dérivées.
+Vous pouvez exclure des éléments spécifiques dans votre code à partir des notes de couverture, par exemple si le code est généré à partir d'un modèle de texte. Ajoutez l'attribut <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName> aux éléments de code suivants : classe, struct, méthode, propriété, setter ou getter de propriété, événement.
 
- Exemple :
+> [!TIP]
+> Le fait d’exclure une classe n'a pas pour effet d’exclure ses classes dérivées.
+
+Exemple :
 
 ```csharp
-
 using System.Diagnostics.CodeAnalysis;
 ...
 public class ExampleClass1
@@ -132,7 +134,6 @@ public class ExampleClass1
 }
 [ExcludeFromCodeCoverage]
 class ExampleClass2 { ... }
-
 ```
 
 ```vb
@@ -222,23 +223,23 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 Utilisez les macros suivante :
 
- `ExcludeFromCodeCoverage(` *NomExclusion* `, L"` *NomFonction* `");`
+`ExcludeFromCodeCoverage(` *NomExclusion* `, L"` *NomFonction* `");`
 
- `ExcludeSourceFromCodeCoverage(` *NomExclusion* `, L"` *CheminFichierSource* `");`
+`ExcludeSourceFromCodeCoverage(` *NomExclusion* `, L"` *CheminFichierSource* `");`
 
--   *NomExclusion* est un nom unique.
+- *NomExclusion* est un nom unique.
 
--   *NomFonction* est un nom qualifié complet de fonction. Il peut contenir des caractères génériques. Par exemple, pour exclure toutes les fonctions d'une classe, écrivez `MyNamespace::MyClass::*`
+- *NomFonction* est un nom qualifié complet de fonction. Il peut contenir des caractères génériques. Par exemple, pour exclure toutes les fonctions d'une classe, écrivez `MyNamespace::MyClass::*`
 
--   *CheminFichierSource* est le chemin local ou UNC d’un fichier .cpp. Il peut contenir des caractères génériques. L'exemple suivant exclut tous les fichiers d'un répertoire particulier : `\\MyComputer\Source\UnitTests\*.cpp`
+- *CheminFichierSource* est le chemin local ou UNC d’un fichier .cpp. Il peut contenir des caractères génériques. L'exemple suivant exclut tous les fichiers d'un répertoire particulier : `\\MyComputer\Source\UnitTests\*.cpp`
 
--   `#include <CodeCoverage\CodeCoverage.h>`
+- `#include <CodeCoverage\CodeCoverage.h>`
 
--   Placez les appels aux macros d'exclusion dans l'espace de noms global, et non dans un espace de noms ou dans une classe.
+- Placez les appels aux macros d'exclusion dans l'espace de noms global, et non dans un espace de noms ou dans une classe.
 
--   Vous pouvez placer les exclusions dans le fichier de code de test unitaire ou dans le fichier de code de l'application.
+- Vous pouvez placer les exclusions dans le fichier de code de test unitaire ou dans le fichier de code de l'application.
 
--   Les exclusions doivent être compilées en tant que code non managé (natif), en définissant l'option du compilateur ou à l'aide de `#pragma managed(off)`.
+- Les exclusions doivent être compilées en tant que code non managé (natif), en définissant l'option du compilateur ou à l'aide de `#pragma managed(off)`.
 
 > [!NOTE]
 > Pour exclure des fonctions dans le code C++/CLI, appliquez l'attribut `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` à la fonction. La procédure est la même que pour C#.
@@ -251,41 +252,30 @@ Vous pouvez mieux contrôler les assemblys et les éléments qui sont sélection
 
 ## <a name="analyze-code-coverage-in-azure-pipelines"></a>Analyse de la couverture du code dans Azure Pipelines
 
-Lorsque vous archivez votre code, vos tests s’exécutent sur le serveur de builds, avec l’ensemble des tests des autres membres de l’équipe. (Si vous ne l’avez pas déjà fait, consultez [Exécuter des tests dans votre processus de génération](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) L’analyse de la couverture du code dans Azure Pipelines est pratique, car elle permet d’obtenir l’image la plus récente et la plus complète de la couverture du projet complet. Elle inclut également des tests système automatisés et d’autres tests codés qui ne sont généralement pas exécutés sur les ordinateurs de développement.
-
-1. Dans **Team Explorer**, ouvrez **Builds**, puis ajoutez ou modifiez une définition de build.
-
-2. Dans la page **Processus**, développez **Tests automatisés**, **Source de test**, **Paramètres d’exécution**. Affectez à **Type des paramètres d’exécution** la valeur **Couverture du code activée**.
-
-   Si vous avez plusieurs définitions de source de test, répétez cette étape pour chaque définition.
-
-   ![Définition de build pour la couverture du code](../test/media/codecoverage-plaincc.png)
-
-> [!TIP]
-> S’il n’existe aucun champ nommé **Type de fichier de paramètres d’exécution**, changez la propriété **Test Runner**. Sous **Tests automatisés**, sélectionnez **Assembly de test**, puis choisissez le bouton de sélection **[...]** situé à la fin de la ligne. Dans la boîte de dialogue **Ajouter/Modifier une série de tests**, sous **Test Runner**, choisissez **Visual Studio Test Runner**.
-
-Après l'exécution de la build, les résultats de la couverture du code sont liés à la série de tests et s'affichent dans le résumé de la build.
+Lorsque vous archivez votre code, vos tests s’exécutent sur le serveur de builds, avec les tests des autres membres de l’équipe. Il est utile d’analyser la couverture du code dans Azure Pipelines, car cela permet d’obtenir l’image la plus récente et la plus complète possible de la couverture sur la totalité du projet. Cette analyse comporte également des tests système automatisés et d’autres tests codés qui ne sont généralement pas exécutés sur les ordinateurs de développement. Pour plus d’informations, voir [Exécuter des tests unitaires avec des builds](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts).
 
 ## <a name="analyze-code-coverage-from-the-command-line"></a>Analyser la couverture du code depuis la ligne de commande
 
 Pour exécuter des tests à partir de la ligne de commande, utilisez *vstest.console.exe*. La couverture du code est une option de l’utilitaire *vstest.console.exe*.
 
-1.  Lancez l'invite de commandes développeur Visual Studio :
+1. Lancez l’Invite de commandes développeur pour Visual Studio :
 
-    Dans le menu **Démarrer** de Windows, choisissez **Visual Studio 2017** > **Invite de commandes développeur pour VS 2017**.
+   Dans le menu **Démarrer** de Windows, choisissez **Visual Studio 2017** > **Invite de commandes développeur pour Visual Studio 2017**.
 
-2.  Exécutez la commande suivante :
+2. À l'invite de commandes, exécutez la commande suivante :
 
-    `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`
+   ```shell
+   vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage
+   ```
 
 Pour plus d’informations, consultez [Options de ligne de commande VSTest.Console.exe](vstest-console-options.md).
 
 ## <a name="troubleshoot"></a>Résoudre les problèmes
 
-Si vous ne voyez pas les résultats de la couverture du code, consultez la rubrique [Résoudre les problèmes liés à la couverture du code](../test/troubleshooting-code-coverage.md).
+Si vous ne voyez pas les résultats de la couverture du code, consultez l’article [Résoudre les problèmes liés à la couverture du code](../test/troubleshooting-code-coverage.md).
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Personnaliser l’analyse de la couverture du code](../test/customizing-code-coverage-analysis.md)
-- [Dépannage de la couverture du code](../test/troubleshooting-code-coverage.md)
+- [Résoudre les problèmes liés à la couverture du code](../test/troubleshooting-code-coverage.md)
 - [Tests unitaires sur votre code](../test/unit-test-your-code.md)

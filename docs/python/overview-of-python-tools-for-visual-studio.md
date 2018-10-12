@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ef83d9caebbeea1496a627282ba2c30b47cc0e22
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: fe19c1239c2f08417b1b7ee76cb07ae150c891d1
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552108"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029145"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Utiliser Python dans Visual Studio sur Windows
 
@@ -30,7 +30,7 @@ Pour commencer :
 
 - Suivez les [instructions d’installation](installing-python-support-in-visual-studio.md) pour configurer la charge de travail Python.
 - Familiarisez-vous avec les fonctionnalités Python de Visual Studio en parcourant les sections de cet article. Vous pouvez également [Regarder une série de vidéos (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) pour une présentation de Python dans Visual Studio (22 minutes au total).
-- Suivez un ou plusieurs guides de démarrage rapide pour créer un projet. Si vous ne savez pas comment, commencez par [Créer une application web avec Flask](../ide/quickstart-python.md?context=visualstudio/python/default).
+- Suivez un ou plusieurs guides de démarrage rapide pour créer un projet. Si vous ne savez pas comment, commencez par [Créer une application web avec Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json).
 - Suivez le tutoriel [Utiliser Python dans Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) pour une expérience utilisateur complète.
 
 ## <a name="support-for-multiple-interpreters"></a>Prise en charge de plusieurs interpréteurs
@@ -45,7 +45,7 @@ Pour plus d'informations :
 
 - Vidéo (2 min 35 s) : [Gérer les environnements Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
 - Documentation : [Gérer les environnements Python](managing-python-environments-in-visual-studio.md)
-- Documentation : [Référence sur la fenêtre Environnements Python](python-environments-window-tab-reference.md)
+- Documentation : [Référence sur les environnements Python](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Large éventail de fonctionnalités de modification, IntelliSense et d’inclusion de code
 

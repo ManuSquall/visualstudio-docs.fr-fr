@@ -1,5 +1,5 @@
 ---
-title: Utiliser Build ou Release Management pour les tests automatisés dans Visual Studio
+title: Utiliser la gestion des mises en production ou des builds pour les tests automatisés
 ms.date: 03/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cc8935db33f5c4b584cf825a46ae62f0d31d2351
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: a5896eccbee65450ab6206dd26a8f76d3fc48d5c
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320616"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46135601"
 ---
-# <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Utiliser Build ou Release Management au lieu de Lab Management pour les tests automatisés
+# <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Utiliser Azure Test Plans au lieu de Lab Management pour les tests automatisés
 
 Si vous utilisez Microsoft Test Manager (MTM) et Lab Management pour les tests automatisés ou pour l’automatisation du cycle générer-déployer-tester, cette rubrique vous explique comment atteindre les mêmes objectifs en utilisant les fonctionnalités de [build et de mise en production](/azure/devops/pipelines/index?view=vsts) de Team Foundation Server (TFS) et d’Azure Test Plans.
 
@@ -64,7 +64,7 @@ Le tableau suivant récapitule les activités standard que vous effectuez dans l
 | Connectez-vous aux machines. | Ouvrez l’environnement lab dans la visionneuse d’environnement. | Utilisez la console d’administration SCVMM directement pour vous connecter aux machines virtuelles. Vous pouvez aussi utiliser l’adresse IP ou les noms DNS des machines virtuelles pour ouvrir des sessions Bureau à distance. |
 | Prenez un point de contrôle d’un environnement ou restaurez un environnement à un point de contrôle correct. | Ouvrez l’environnement lab dans la visionneuse d’environnement. Choisissez entre prendre un point de contrôle et restaurer à un point de contrôle antérieur. | Utilisez la console d’administration SCVMM directement pour effectuer ces opérations sur les machines virtuelles. Pour effectuer ces étapes dans le cadre d’une automatisation plus vaste, vous pouvez aussi inclure les tâches du point de contrôle à partir de l’[extension d’intégration de SCVMM](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) dans le cadre de l’environnement dans une définition de version. |
 
-## <a name="creation-of-network-isolated-environments"></a>Création d’environnements isolés du réseau
+## <a name="create-network-isolated-environments"></a>Créer des environnements isolés du réseau
 
 Un environnement lab isolé du réseau est un groupe de machines virtuelles SCVMM qui peut être cloné en toute sécurité sans provoquer de conflits réseau. Ceci a été effectué dans MTM à l’aide d’une série d’instructions qui ont utilisé un ensemble de cartes réseau pour configurer les machines virtuelles dans un réseau privé, et un autre ensemble de cartes réseau pour configurer les machines virtuelles dans un réseau public.
 
