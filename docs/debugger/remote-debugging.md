@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46913c1bb671c1986c4f302a84d4183fe17f5878
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 9edfae9eb2109a81208cd864dd992dee565f7958
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778292"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101086"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Vous pouvez déboguer une application Visual Studio qui a été déployée sur un autre ordinateur. Pour ce faire, utilisez le débogueur distant Visual Studio.
@@ -47,47 +47,6 @@ Si vous avez simplement à télécharger et installer le débogueur distant et q
 ## <a name="download-and-install-the-remote-tools"></a>Téléchargez et installez les outils à distance
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-
-## <a name="unblock_msvsmon"></a> Débloquer le téléchargement des outils à distance sur Windows Server
-
-Les paramètres de sécurité par défaut dans Internet Explorer sur Windows Server peuvent rendre fastidieuse télécharger les composants, tels que les outils à distance.
-
-* Configuration de sécurité renforcée est activée sur Internet Explorer, ce qui vous empêche d’ouvrir des sites Web et l’accès aux ressources web, sauf si le domaine contenant la ressource est explicitement autorisé (autrement dit, approuvé). Bien que vous pouvez désactiver ce paramètre, il est déconseillé de qu'elle, car il peut présente un risque de sécurité.
-
-* Sur Windows Server 2016, un paramètre par défaut dans **Options Internet** > **sécurité** > **Internet**  >   **Personnaliser le niveau** > **télécharge** également désactive les téléchargements de fichiers. Si vous choisissez de télécharger les outils à distance directement sur Windows Server, vous devez activer le téléchargement du fichier.
-
-Pour télécharger les outils de Windows Server, nous vous recommandons une des opérations suivantes :
-
-* Téléchargez les outils à distance sur un autre ordinateur, telles que l’exécution de Visual Studio et puis copiez le *.exe* fichier vers Windows Server.
-
-* Exécuter le débogueur distant [à partir d’un partage de fichiers](#fileshare_msvsmon) sur votre ordinateur Visual Studio.
-
-* Téléchargez les outils à distance directement sur Windows Server et acceptez les invites pour ajouter des sites de confiance. Sites Web modernes incluent souvent de nombreuses ressources de tiers, donc cela peut entraîner un grand nombre d’invites. En outre, des liens redirigés peuvent avoir à être ajoutés manuellement. Vous pouvez choisir d’ajouter les sites de confiance avant de commencer le téléchargement. Accédez à **Options Internet > sécurité > Sites de confiance > Sites** et ajoutez les sites suivants.
-
-  * VisualStudio.Microsoft.com
-  * download.visualstudio.microsoft.com
-  * à propos : vide
-
-  Pour les versions antérieures du débogueur sur my.visualstudio.com, ajoutez ces sites supplémentaires pour vous assurer que la connexion est réussie :
-
-  * Microsoft.com
-  * go.microsoft.com
-  * download.microsoft.com
-  * My.VisualStudio.com
-  * Login.microsoftonline.com
-  * Login.Live.com
-  * Secure.aadcdn.microsoftonline-p.com
-  * msft.STS.Microsoft.com
-  * AUTH.GFX.MS
-  * app.vssps.visualstudio.com
-  * vlscppe.Microsoft.com
-  * Query.prod.cms.RT.Microsoft.com
-
-    Si vous choisissez d’ajouter ces domaines lors du téléchargement des outils à distance, puis choisissez **ajouter** lorsque vous y êtes invité.
-
-    ![Boîte de dialogue de contenu bloqué](../debugger/media/remotedbg-blocked-content.png)
-
-    Lorsque vous téléchargez le logiciel, vous obtenez certaines demandes supplémentaires pour accorder des autorisations requises pour charger des différents scripts de site web et des ressources. Sur my.visualstudio.com, nous vous recommandons d’ajouter les domaines supplémentaires pour vous assurer que la connexion est réussie.
 
 ## <a name="requirements_msvsmon"></a> Spécifications
 

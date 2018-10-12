@@ -17,7 +17,7 @@
 ## Utilisation des avantages pour les abonnés
 ### Outils
 #### [IDE Visual Studio](vs-ide-benefit.md)
-#### [Azure DevOps Services](vs-azure-devops.md)
+#### [Azure DevOps](vs-azure-devops.md)
 #### [Crédit Azure](vs-azure.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
 #### [Parasoft ](vs-parasoft.md)
@@ -31,7 +31,7 @@
 ### [Développement professionnel](professional-development.md)
 #### [LinkedIn Learning](vs-linkedin-learning.md)
 #### [DataCamp](vs-datacamp.md)
-#### [Opsgility](vs-opsgility.md)
+#### [Skill Me Up](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
 #### [Formation pour Xamarin University](vs-xamarin.md)
 #### [Abonnement au magazine MSDN](vs-msdn.md)
