@@ -1,7 +1,7 @@
 ---
 title: Afficher les chaînes dans un visualiseur de chaîne | Microsoft Docs
 ms.custom: ''
-ms.date: 07/11/2017
+ms.date: 07/11/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
@@ -22,49 +22,50 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca6e4519a85659b36e5cf6baebaadd1d1c626f1a
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 689889e98a5a9b69a49e73ccea73f30fc3c25249
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151032"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274311"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Afficher les chaînes dans un visualiseur de chaîne dans Visual Studio
-Pendant le débogage, vous pouvez ouvrir un visualiseur de chaîne à afficher les chaînes qui sont trop longs à afficher dans une fenêtre d’info-bulle ou débogueur de données. Dans de nombreux scénarios, le visualiseur peut vous aider à identifier des chaînes mal formés.
 
-Les visualiseurs de chaîne intégrées standard incluent du texte brut, XML, HTML et JSON. Pour d’autres types tels que les objets WPF qui s’affichent dans le débogueur windows telles que la **automatique** fenêtre, vous pouvez également ouvrir des visualiseurs.
+Lorsque vous déboguez dans Visual Studio, vous pouvez afficher les chaînes avec le visualiseur de chaîne intégrées. Le visualiseur de chaîne indique les chaînes qui sont trop longues pour une fenêtre d’info-bulle ou débogueur de données. Il peut également vous aider à identifier des chaînes mal formés.
+
+Le visualiseur de chaîne intégrées inclut le texte brut, XML, HTML et JSON options. Vous pouvez également ouvrir des visualiseurs pour d’autres types, tels que les objets WPF, à partir de la **automatique** ou autres fenêtres du débogueur.
 
 ## <a name="open-a-string-visualizer"></a>Ouvrir un visualiseur de chaîne
 
-Pour afficher un texte brut, d’une chaîne XML, HTML ou JSON, cliquez sur l’icône de loupe ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "icône de visualiseur") tout en pointant sur une variable contenant une valeur de chaîne. Vous devez être suspendu dans le débogueur pour voir l’icône de loupe.
+Pour ouvrir le visualiseur de chaîne, vous devez être suspendus pendant le débogage. Pointez sur une variable qui a un texte brut, XML, HTML ou JSON valeur de chaîne, puis sélectionnez l’icône de loupe ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "icône de visualiseur").
 
-![Ouvrir un visualiseur de chaîne](../debugger/media/dbg-tips-string-visualizers.png "OpenStringVisualizer")
+![Ouvrir un visualiseur de chaîne](../debugger/media/dbg-tips-string-visualizers.png "visualiseur de chaîne ouvert")
 
-## <a name="view-string-data"></a>Afficher les données de chaîne
+## <a name="view-string-visualizer-data"></a>Afficher les données de visualiseur de chaîne
 
-Le **Expression** champ dans le visualiseur de chaîne indique la variable actuelle ou l’expression vous dessus dans le débogueur.
+Dans la fenêtre visualiseur de chaîne, le **Expression** champ indique la variable ou l’expression que vous pointez sur, et le **valeur** champ affiche la valeur de chaîne. 
 
-Le **valeur** champ affiche la valeur de chaîne. Le visualiseur de texte affiche le texte brut.
+Une valeur vide **valeur** signifie que le visualiseur choisi ne peut pas reconnaître la chaîne. Par exemple, le **visualiseur XML** montre une valeur vide **valeur** pour une chaîne de texte avec les balises XML ou une chaîne JSON. 
 
-Une valeur vide **valeur** indique que le visualiseur spécifique ne peut pas reconnaître le type de chaîne. Par exemple, le visualiseur XML affiche une valeur vide **valeur** pour une simple chaîne (avec aucune balise XML) ou le texte JSON au format chaîne. Si vous avez besoin afficher une chaîne non reconnaissable dans un visualiseur, utiliser le visualiseur de texte.
+Pour afficher les chaînes qui le visualiseur choisi ne peut pas reconnaître, choisissez le **visualiseur de texte**. Le **visualiseur de texte** affiche le texte brut.
 
 ### <a name="view-json-string-data"></a>Afficher les données de chaîne JSON
 
-Une chaîne JSON bien formée sera identique à l’illustration suivante dans le visualiseur JSON. JSON incorrect peut afficher une icône d’erreur (ou est vide si non reconnu). Si vous voyez une icône d’erreur, copiez et collez la chaîne JSON en un outil de référencement JSON comme [JSLint](https://www.jslint.com/) pour identifier l’erreur JSON.
+Une chaîne JSON correcte est semblable à l’illustration suivante dans le visualiseur JSON. JSON incorrect peut afficher une icône d’erreur (ou est vide si non reconnu). Pour identifier l’erreur JSON, copier et coller la chaîne dans un outil de vérification (linting) JSON tels que [JSLint](https://www.jslint.com/).
 
 ![Visualiseur de chaîne JSON](../debugger/media/dbg-tips-string-visualizer-json.png "visualiseur de chaîne JSON")
 
 ### <a name="view-xml-string-data"></a>Afficher les données de chaîne XML
 
-Une chaîne XML bien formée sera identique à l’illustration suivante dans le visualiseur XML. Code XML incorrect peut s’afficher sans les balises XML (ou est vide si non reconnu).
+Une chaîne XML bien formée ressemble à l’illustration suivante dans le visualiseur XML. Code XML incorrect peut afficher sans les balises XML, ou est vide si non reconnu.
 
 ![Visualiseur de chaîne XML](../debugger/media/dbg-string-visualizers-xml.png "visualiseur de chaîne XML")
 
 ### <a name="view-html-string-data"></a>Données de chaîne d’affichage HTML
 
-Une chaîne HTML bien formée est semblable à la vue que vous verriez si la chaîne est rendue dans un navigateur, comme indiqué dans l’illustration suivante. Code HTML mal formé peut afficher en tant que texte brut.
+Une chaîne HTML bien formée apparaît comme s’affiché dans un navigateur, comme indiqué dans l’illustration suivante. Code HTML mal formé peut afficher en tant que texte brut.
 
-![Visualiseur de chaîne au format HTML](../debugger/media/dbg-string-visualizers-html.png "visualiseur de chaîne au format HTML")
+![Visualiseur de chaîne HTML](../debugger/media/dbg-string-visualizers-html.png "visualiseur de chaîne HTML")
 
 ## <a name="see-also"></a>Voir aussi  
  [Créer des visualiseurs personnalisés (c#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)

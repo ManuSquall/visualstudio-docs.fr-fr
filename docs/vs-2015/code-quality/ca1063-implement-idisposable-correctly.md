@@ -1,7 +1,7 @@
 ---
 title: 'CA1063 : Implémenter IDisposable correctement | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ed6b7832f17a39c145452d0bbfecfbda9be98547
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: e80857ae1cfafdc6733af3eec78735dc249f4905
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588058"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287480"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063 : Implémenter IDisposable correctement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Vous trouverez la dernière version de cette rubrique dans [CA1063 : implémenter IDisposable correctement](https://docs.microsoft.com/visualstudio/code-quality/ca1063-implement-idisposable-correctly).
-
 |||
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|

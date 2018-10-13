@@ -1,7 +1,7 @@
 ---
 title: NameProfile | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 966a3557c4436a625c7b8cd07ce850216085f194
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47db8dc67108e8d443e5f485babb906bd7b040f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493892"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301936"
 ---
 # <a name="nameprofile"></a>NameProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [NameProfile](https://docs.microsoft.com/visualstudio/profiling/nameprofile).  
-  
 La fonction `NameProfile` affecte une chaîne au processus ou au thread spécifié.  
   
  L’API NameProfile est disponible seulement pour le profilage par instrumentation. L’API NameProfile n’est pas prise en charge pour le profilage par échantillonnage.  

@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour spécifier des commandes de pré-instrumentation et de post-instrumentation | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20cf4545a217adf07cc753a1d2ab190a00e3d4f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b152b381aaca2b9e43729616979cd7765d3a8c53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496339"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305460"
 ---
-# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Comment : spécifier des commandes de pré-instrumentation et de post-instrumentation
+# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Guide pratique pour spécifier des commandes de pré-instrumentation et de post-instrumentation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : spécifier des commandes de prétraitement et de post-instrumentation](https://docs.microsoft.com/visualstudio/profiling/how-to-specify-pre-and-post-instrument-commands).  
-  
 Vous pouvez spécifier des commandes qui s’exécutent avant ou après l’instrumentation des fichiers binaires d’une session de performance. Vous pouvez spécifier toute commande pouvant être émise à partir de la ligne de commande comme événement de pré-instrumentation ou de post-instrumentation. Par exemple, vous pouvez spécifier des commandes qui automatisent la nouvelle signature d’un assembly avec une clé de nom fort dans un fichier de commandes exécuté une fois les fichiers binaires instrumentés.  
   
  Vous pouvez spécifier des commandes pour tous les fichiers binaires instrumentés dans le cadre de l’exécution du profilage ou pour des fichiers binaires individuels. Toutefois, vous ne pouvez spécifier qu’une seule commande de pré-instrumentation à exécuter avant le processus d’instrumentation et une seule commande de post-instrumentation à exécuter après. Vous ne pouvez pas spécifier des commandes à la fois pour tous les fichiers binaires et pour des fichiers binaires individuels. Quand vous spécifiez des commandes pour tous les fichiers binaires, les commandes sont exécutées avant ou après l’instrumentation de chaque fichier binaire de la session.  

@@ -1,7 +1,7 @@
 ---
 title: Gestion des paramètres d’une application (.NET) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bc739c3ad34d5ed3b3de0a72ec76245c1ba0c155
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb2623c9122b987d8e0fe781b62127cd65bde0dc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506602"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289508"
 ---
 # <a name="managing-application-settings-net"></a>Gestion des paramètres d'une application (.NET)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [paramètres de la gestion de l’Application (.NET)](https://docs.microsoft.com/visualstudio/ide/managing-application-settings-dotnet).  
-  
 Les paramètres d’application vous permettent de stocker des informations sur l’application de manière dynamique. Les paramètres vous permettent de stocker sur l’ordinateur client des informations qui ne doivent pas être incluses dans le code d’application (par exemple une chaîne de connexion), des préférences utilisateur et d’autres informations nécessaires au moment de l’exécution.  
   
  Les paramètres d’application remplacent les propriétés dynamiques utilisées dans les versions antérieures de Visual Studio.  

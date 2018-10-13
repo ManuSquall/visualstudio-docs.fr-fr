@@ -1,7 +1,7 @@
 ---
 title: Vue Appelant/Appelé - Données de conflit | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36a12b6444209b0911c93c376c5cecb7ced5f975
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 633c56fedf14efc835d119f9d112baa6eb3299ae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507409"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271763"
 ---
 # <a name="caller--callee-view----contention-data"></a>Vue Appelant/Appelé - Données de conflit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [vue appelant / appelé - données de conflit de](https://docs.microsoft.com/visualstudio/profiling/caller-callee-view-contention-data).  
-  
 La vue Appelant/Appelé affiche des données de conflit pour la fonction sélectionnée, ainsi que pour ses fonctions parentes et enfants. La vue Appelant/Appelé comprend trois grilles.  
   
  La grille centrale intitulée **Fonction active** contient les informations de conflit associées à la fonction sélectionnée. Les valeurs incluent tous les conflits bloquants pour la fonction.  

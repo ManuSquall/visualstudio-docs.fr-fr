@@ -1,7 +1,7 @@
 ---
 title: Débogage du Code GPU | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1eead3a8f706564f9f91a385086f39ca31dc706e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f0bc862e114319642ee54f8ef16824fa24065e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505140"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279264"
 ---
 # <a name="debugging-gpu-code"></a>Débogage du code GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [débogage du Code GPU](https://docs.microsoft.com/visualstudio/debugger/debugging-gpu-code).  
-  
 Vous pouvez déboguer du code C++ qui s'exécute sur l'unité de traitement graphique (GPU). La prise en charge du débogage GPU dans Visual Studio inclut la détection de concurrence, les processus de lancement et leur attachement, ainsi que l'intégration dans les fenêtres de débogage.  
   
 ## <a name="supported-platforms"></a>Plateformes prises en charge  
@@ -70,7 +68,7 @@ Vous pouvez déboguer du code C++ qui s'exécute sur l'unité de traitement grap
 -   [Guide pratique pour utiliser la fenêtre Threads GPU](../debugger/how-to-use-the-gpu-threads-window.md)  
   
 ## <a name="data-synchronization-exceptions"></a>Exceptions de synchronisation de données  
- Le débogueur peut identifier plusieurs conditions de synchronisation de données pendant l'exécution. Lorsqu'une condition est détectée, le débogueur passe à l'état d'arrêt. Vous avez deux options :**rompre** ou **continuer**. À l’aide de la **Exceptions** boîte de dialogue, vous pouvez configurer si le débogueur détecte ces conditions et également quelles conditions il s’arrêtera. Pour plus d’informations, consultez [la gestion des Exceptions avec le débogueur](../debugger/managing-exceptions-with-the-debugger.md). Vous pouvez également utiliser le **Options** boîte de dialogue pour spécifier que le débogueur doit ignorer les exceptions si les données sont écrites ne changent pas la valeur des données. Pour plus d’informations, consultez [général, débogage, boîte de dialogue Options](../debugger/general-debugging-options-dialog-box.md).  
+ Le débogueur peut identifier plusieurs conditions de synchronisation de données pendant l'exécution. Lorsqu'une condition est détectée, le débogueur passe à l'état d'arrêt. Vous avez deux options :**rompre** ou **continuer**. À l’aide de la **Exceptions** boîte de dialogue, vous pouvez configurer si le débogueur détecte ces conditions et également quelles conditions il s’arrêtera. Pour plus d’informations, consultez [la gestion des Exceptions avec le débogueur](../debugger/managing-exceptions-with-the-debugger.md). Vous pouvez également utiliser le **Options** boîte de dialogue pour spécifier que le débogueur doit ignorer les exceptions si les données sont écrites ne changent pas la valeur des données. Pour plus d'informations, consultez [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md).  
   
 ## <a name="troubleshooting"></a>Résolution des problèmes  
   

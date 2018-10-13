@@ -1,7 +1,7 @@
 ---
 title: Présentation des configurations de build | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d847b560b2dcedcd7b6841eccff17f40016c73fe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c7a6304683095b0a3db5c175535d7d28e38eecb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501412"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304133"
 ---
 # <a name="understanding-build-configurations"></a>Présentation des configurations de build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [présentation des Configurations de Build](https://docs.microsoft.com/visualstudio/ide/understanding-build-configurations).  
-  
 Vous pouvez enregistrer différentes configurations de propriétés de solution et de projet à utiliser dans différents types de builds. Pour créer, sélectionner, modifier ou supprimer une configuration, vous pouvez utiliser le **Gestionnaire de configurations**. Pour l’ouvrir, dans la barre de menus, choisissez **Générer**, **Gestionnaire de configurations**, ou tapez simplement **Configuration** dans la zone **Lancement rapide**. Vous pouvez également utiliser la liste **Configurations de solutions** dans la barre d’outils **Standard** pour sélectionner une configuration ou ouvrir le **Gestionnaire de configurations**.  
   
 > [!NOTE]

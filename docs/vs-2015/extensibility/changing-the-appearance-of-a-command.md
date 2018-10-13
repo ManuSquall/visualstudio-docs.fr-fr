@@ -1,7 +1,7 @@
 ---
 title: Modification de l’apparence d’une commande | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d707451b71efdd41a470c2e1e54353e2fdfe4f01
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 832a6732789d8e218a739b03fb5aa6541ec8276f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508156"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294721"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>Modification de l’apparence d’une commande
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [modification de l’apparence d’une commande](https://docs.microsoft.com/visualstudio/extensibility/changing-the-appearance-of-a-command).  
-  
 Vous pouvez fournir des commentaires à votre utilisateur en modifiant l’apparence d’une commande. Par exemple, vous souhaiterez une commande à un aspect différent quand il n’est pas disponible. Vous pouvez activer ou désactiver les commandes, masquer ou afficher, ou vérifier ou décochez la case dans le menu.  
   
  Pour modifier l’apparence d’une commande, effectuez l’une des actions suivantes :  

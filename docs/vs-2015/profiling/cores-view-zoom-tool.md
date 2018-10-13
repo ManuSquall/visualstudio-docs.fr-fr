@@ -1,7 +1,7 @@
 ---
 title: Outil Zoom de la vue Cœurs | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 204817e24df6eadd18dcffc7829ababfa94530c4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b72ad17581ec461c9b4309b4fd049ccb324542e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493395"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291290"
 ---
 # <a name="cores-view-zoom-tool"></a>Outil Zoom de l'affichage Cœurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [outil Zoom de la vue cœurs](https://docs.microsoft.com/visualstudio/profiling/cores-view-zoom-tool).  
-  
 Le contrôle Zoom est un curseur qui vous permet d’effectuer un zoom avant et arrière sur la chronologie, et de vous concentrer ainsi sur les zones qui vous intéressent. Ce contrôle effectue le zoom sur le centre de la vue active : ajustez donc la vue avant d’effectuer un zoom avant.  
   
 ## <a name="other-ways-to-zoom"></a>Autres moyens d’effectuer un zoom  

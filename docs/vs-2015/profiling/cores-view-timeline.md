@@ -1,7 +1,7 @@
 ---
 title: Chronologie de la vue Cœurs | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0cc11d873ff29cccd9a71575c2cd0f0e84e4f3ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8aefbaf557cd6388fb90d722fa698b33c9582428
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501806"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277106"
 ---
 # <a name="cores-view-timeline"></a>Chronologie de l'affichage Cœurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [chronologie de la vue cœurs](https://docs.microsoft.com/visualstudio/profiling/cores-view-timeline).  
-  
 Chaque ligne de la chronologie représente un cœur de processeur logique sur le système profilé. Pour chaque ligne, l’axe horizontal indique le thread qui s’exécutait sur un cœur logique à un moment donné dans le temps. Vous pouvez pointer sur une couleur dans une chronologie pour afficher une info-bulle qui identifie le thread. Pour faciliter l’identification du thread, la légende dans le bas de la fenêtre indique ce que représente chaque couleur. Utilisez l’outil Zoom pour effectuer un zoom avant ou arrière, en cliquant et en faisant glisser, ou en appuyant sur Ctrl et en actionnant la roulette de la souris. La cohérence du zoom est conservée quand vous basculez entre la vue Cœurs et la vue Threads.  
   
 ## <a name="see-also"></a>Voir aussi  

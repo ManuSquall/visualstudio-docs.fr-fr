@@ -1,7 +1,7 @@
 ---
 title: Mise à niveau de tests codés de l’interface utilisateur à partir de Visual Studio 2010 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9a82102259212743fe11a9936f3b24dee85340ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec0229107b4a9ab3ef3710fb5306f1dfdcccfa44
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495702"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298946"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Mise à niveau de tests codés de l'interface utilisateur à partir de Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [mise à niveau des Tests codés de l’interface utilisateur à partir de Visual Studio 2010](https://docs.microsoft.com/visualstudio/test/upgrading-coded-ui-tests-from-visual-studio-2010).  
-  
 Les projets de test contenant des tests codés de l'interface utilisateur créées dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 sont réparés silencieusement quand vous les ouvrez dans Visual Studio 2012. Si les projets de test sont archivés dans le contrôle de code source, les fichiers projet sont extraits pour cette réparation. Une fois réparés, ces projets de test contenant des tests codés de l'interface utilisateur peuvent alors être utilisés à la fois dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 et [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].  
   
  **Spécifications**  
@@ -48,7 +46,7 @@ Les projets de test contenant des tests codés de l'interface utilisateur créé
   
 |Fonctionnalité d'interface utilisateur codée|Problème|Solution|  
 |----------------------------|-----------|--------------|  
-|Test de l'interface utilisateur Silverlight non pris en charge dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]|**Échec de la build**<br /><br /> Si vous avez [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Feature Pack 2 et que vous avez créé des projets de test codé de l'interface utilisateur pour des applications Silverlight, ces projets ne peuvent pas être ouverts dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|Nous vous recommandons de gérer ces projets dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Feature Pack 2 uniquement.|  
+|Test de l'interface utilisateur Silverlight non pris en charge dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]|**Échec de la build**<br /><br /> Si vous avez [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Feature Pack 2 et que vous avez créé des projets de test codé de l'interface utilisateur pour des applications Silverlight, ces projets ne peuvent pas être ouverts dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|Nous vous recommandons de gérer ces projets dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Feature Pack 2 uniquement.|  
 |Test de l'interface utilisateur Firefox non pris en charge dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]|**Réussite de la build, mais échec de la série de tests**<br /><br /> Si vous avez [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Feature Pack 2 et que vous avez créé des projets de test codé de l'interface utilisateur pour des applications web dans Firefox, ces projets ne peuvent pas être ouverts dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|Nous vous recommandons de gérer ces projets dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] Feature Pack 2 uniquement.|  
 |Nouvelles API de test de code d'interface utilisateur ajoutées dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]|**Échec de la build**<br /><br /> Si vous créez des tests codés de l'interface utilisateur à l'aide de la nouvelle API de test de l'interface utilisateur dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], ces projets ne peuvent pas être ouverts dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)].|Vous devez gérer les projets qui utilisent la nouvelle API uniquement dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|  
 |Dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], des références ont été ajoutées à l'intérieur d'une instruction Choose dans le fichier csproj. Dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], nous utilisons un fichier .targets de commentaires pour inclure des références d'assembly de test codé de l'interface utilisateur.|Dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], un test codé de l'interface utilisateur ne peut pas être ajouté à un projet de test créé dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] (ou SP1) qui ne contenait pas de test codé de l'interface utilisateur.<br /><br /> Le processus de réparation ajoute le fichier .targets et l'instruction Choose. Si un test codé de l'interface utilisateur n'est pas dans le projet de test, alors le projet est marqué comme étant réparé et les références appropriées ne sont pas ajoutées lors de l'ajout du test codé de l'interface utilisateur dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|Vous devez créer un projet de test dans la même solution à l'aide de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] et y ajouter votre nouveau test codé de l'interface utilisateur. Sinon, vous pouvez ajouter des tests codés de l'interface utilisateur au projet de test dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 et ouvrir ce projet dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|  

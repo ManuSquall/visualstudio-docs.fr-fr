@@ -1,7 +1,7 @@
 ---
 title: -ResetSettings (devenv.exe) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 25697a792b0c48746a1d7840b8091ea718f5cdc7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 276205ae2aab3c38ceb3d4f1419e0bac13ae626c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501166"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273492"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [- ResetSettings (devenv.exe)](https://docs.microsoft.com/visualstudio/ide/reference/resetsettings-devenv-exe).  
-  
   
 Restaure les paramètres par défaut de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] et lance automatiquement l’IDE [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Réinitialise éventuellement les paramètres avec les valeurs d’un fichier .vssettings spécifié.  
   

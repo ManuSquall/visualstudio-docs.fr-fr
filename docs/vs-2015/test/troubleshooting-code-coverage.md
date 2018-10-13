@@ -1,7 +1,7 @@
 ---
 title: Résolution des problèmes liés à la couverture du code | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5934f1e42b9954d0d8206db90304142d77f8df78
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7df2f4c83a61c62a7774bea475d54c3deea4c47
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508317"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306045"
 ---
 # <a name="troubleshooting-code-coverage"></a>Dépannage de la couverture du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [dépannage de la couverture du Code](https://docs.microsoft.com/visualstudio/test/troubleshooting-code-coverage).  
-  
 L'outil d'analyse de couverture du code dans Visual Studio collecte des données pour le code natif et les assemblys managés (fichiers .dll ou .exe). Toutefois, dans certains cas, la fenêtre Résultats de la couverture du code affiche une erreur semblable à « Des résultats vides ont été générés : … » Plusieurs raisons possibles expliquent pourquoi cela peut se produire. Cette rubrique est conçue pour aider à résoudre ces problèmes.  
   
 ## <a name="what-you-should-see"></a>Ce que vous devriez voir  

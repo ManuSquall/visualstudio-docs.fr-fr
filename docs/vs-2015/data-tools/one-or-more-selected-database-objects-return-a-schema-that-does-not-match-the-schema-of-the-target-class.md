@@ -1,7 +1,7 @@
 ---
 title: Un ou plusieurs objets de base de données sélectionnés retournent un schéma qui ne correspond pas au schéma de la classe cible | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 516d7c30345b66fe2c57879db5ff6ab1f38fdd4d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82f59583c1ab8bd38c1e1fb3207970ac9478d498
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508543"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272673"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Un ou plusieurs des objets de base de données sélectionnés retournent un schéma qui ne correspond pas au schéma de la classe cible
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [un ou plusieurs objets de base de données sélectionnés retournent un schéma qui ne correspond pas au schéma de la classe cible](https://docs.microsoft.com/visualstudio/data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class).  
-  
   
 Un ou plusieurs des objets de base de données sélectionnés retournent un schéma qui ne correspond pas au schéma de la classe de données cible. Aucun élément n'a été ajouté au concepteur.  
   

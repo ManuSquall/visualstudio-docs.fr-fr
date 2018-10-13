@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_isOptimizedAway | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 32eb30f5ce3037e1316a8ef51bec3558e215007e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d7e9eaa71569157ce38a1d31ab62a0bbdba12e7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495983"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274922"
 ---
 # <a name="idiasymbolgetisoptimizedaway"></a>IDiaSymbol::get_isOptimizedAway
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDiaSymbol::get_isOptimizedAway](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-isoptimizedaway).  
-  
 Spécifie si la variable est optimisée.  
   
 ## <a name="syntax"></a>Syntaxe  

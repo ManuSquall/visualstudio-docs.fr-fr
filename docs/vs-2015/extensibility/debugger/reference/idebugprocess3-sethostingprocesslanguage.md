@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess3::SetHostingProcessLanguage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e42f33ed-f29c-4e45-92ce-ab504b72d77c
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1f9b849f2da8c834a807286d251cafab8a4c4c27
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0d3cad93ea74b4e6ac57a9944855079d6acdf05
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508796"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276196"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDebugProcess3::SetHostingProcessLanguage](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage).  
-  
 Cette méthode définit la langue dans laquelle le processus sera hébergé sous. Ce langage peut ensuite être utilisé par le moteur de débogage (dé) pour charger l’évaluateur d’expression appropriée.  
   
 ## <a name="syntax"></a>Syntaxe  

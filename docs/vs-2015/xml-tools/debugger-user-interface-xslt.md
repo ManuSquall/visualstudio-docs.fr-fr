@@ -1,7 +1,7 @@
 ---
 title: L’Interface utilisateur (XSLT) du débogueur | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ac2a1afdd9ccd36843ecce6c2536e2b477cdf5a5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0117053e47ee9238ee225b9265865b34c6f2140
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507233"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300181"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interface utilisateur du débogueur (XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ Cette rubrique décrit les fenêtres et boîtes de dialogue du débogueur. Elle 
  Si vous cliquez sur un autre élément que celui situé en haut de la liste, les flèches vertes et le surlignage vert standard indiquent le branchement de l'exécution XSLT.  
   
 ## <a name="quickwatch-dialog-box"></a>Boîte de dialogue Espion express  
- Le **Espion express** boîte de dialogue est utilisée pour évaluer des expressions XPath 1.0. Le nœud de contexte (le nœud `self::node()` de la fenêtre Variables locales) est le contexte de l'exécution de l'expression XPath. Le résultat de l'exécution de l'expression XPath s'affiche dans la fenêtre Espion.  
+ Le **Espion express** boîte de dialogue est utilisée pour évaluer des expressions XPath 1.0. Le nœud de contexte (le nœud `self::node()` de la fenêtre Variables locales) est le contexte de l’exécution de l’expression XPath. Le résultat de l'exécution de l'expression XPath s'affiche dans la fenêtre Espion.  
   
  La liste suivante décrit certaines limitations liées à l'évaluation des expressions XPath.  
   

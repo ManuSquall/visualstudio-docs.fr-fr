@@ -1,7 +1,7 @@
 ---
 title: GUID et ID des commandes de Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc949b400cc5c6a6efe231dff8f0ae17155ef6e1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93efc7bfec5f4ba3e545dec7fff57f73e49260d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505695"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302443"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>GUID et ID des commandes Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [GUID et ID de commandes Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/internals/guids-and-ids-of-visual-studio-commands).  
-  
 Les valeurs GUID et l’ID de commandes incluses dans l’environnement de développement intégré (IDE) Visual Studio sont définies dans les fichiers .vsct qui sont installés dans le cadre du SDK Visual Studio. Pour plus d’informations, consultez [IDE-Defined commandes, Menus et les groupes](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
   
  Pour plus d’informations sur l’utilisation des objets d’IDE qui sont définis dans les fichiers .vsct, consultez [extension des Menus et commandes](../../extensibility/extending-menus-and-commands.md).  

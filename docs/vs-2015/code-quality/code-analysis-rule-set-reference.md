@@ -1,7 +1,7 @@
 ---
 title: Référence d’ensemble de règles d’analyse de code | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0834d9c08cd8c570ae28a1a604f65627656b7009
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 928b838a4172537ec12937b02c3deab2cf666ddd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495710"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279160"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Référence d’ensemble de règles d’analyse du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [référence d’ensemble de règles d’analyse de Code](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-rule-set-reference).  
-  
 Lorsque vous configurez l’analyse du code pour des projets de code dans managé [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], ou [!INCLUDE[vsPro](../includes/vspro-md.md)]vous sont présentées avec une liste des intégré *ensembles de règles*. Vous pouvez utiliser un des ensembles de règles standard, ou vous pouvez personnaliser un ensemble de règles à adapter à vos besoins de projet.  
   
 ## <a name="available-rule-sets"></a>Ensembles de règles disponibles  

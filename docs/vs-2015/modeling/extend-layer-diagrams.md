@@ -1,7 +1,7 @@
 ---
 title: Étendre des diagrammes de couche | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 41
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: af5058ba0d88c91ea89a33523002294339dd32f3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5551a982b7f7135235c116cde28c71a0695874db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503401"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301832"
 ---
 # <a name="extend-layer-diagrams"></a>Extend layer diagrams
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [étendre des diagrammes de dépendance](https://docs.microsoft.com/visualstudio/modeling/extend-layer-diagrams).  
-  
 Vous pouvez écrire du code pour créer et mettre à jour des diagrammes de couche et pour valider la structure de votre code de programme par rapport aux diagrammes de couche dans Visual Studio. Vous pouvez ajouter des commandes qui s’affichent dans le menu contextuel des diagrammes, personnaliser les mouvements de glisser-déplacer et accéder au modèle de couche à partir de modèles de texte. Vous pouvez empaqueter ces extensions dans une extension d’intégration Visual Studio (VSIX) et les distribuer à d’autres utilisateurs de Visual Studio.  
   
  Pour plus d’informations sur les diagrammes de couche, consultez :  
@@ -46,13 +44,13 @@ Vous pouvez écrire du code pour créer et mettre à jour des diagrammes de couc
   
 -   Visual Studio  
   
--   [SDK Visual Studio](../extensibility/visual-studio-sdk.md)  
+-   [Kit de développement logiciel Visual Studio](../extensibility/visual-studio-sdk.md)  
   
 -   [SDK Modeling pour Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)  
   
  Une version appropriée de Visual Studio doit être installée sur l’ordinateur où vous voulez exécuter vos extensions de couche. Pour plus d’informations, consultez [déployer une extension de modèle de couche](../modeling/deploy-a-layer-model-extension.md).  
   
- Pour connaître les versions de Visual Studio prennent en charge les diagrammes de couche, consultez [versions prises en charge pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Pour connaître les versions de Visual Studio qui prennent en charge les diagrammes de couche, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Ajouter des commandes et des mouvements aux diagrammes de couche](../modeling/add-commands-and-gestures-to-layer-diagrams.md)  

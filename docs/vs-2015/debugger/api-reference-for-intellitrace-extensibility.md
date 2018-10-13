@@ -1,7 +1,7 @@
 ---
 title: Référence des API pour l’extensibilité IntelliTrace | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c2956378c8da8d9488ad74db58ce54614411c34f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0506044893049c54ff76ebc39e79d84629b51724
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495655"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295085"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>Informations de référence sur l’API pour l’extensibilité IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [référence de l’API pour l’extensibilité IntelliTrace](https://docs.microsoft.com/visualstudio/debugger/api-reference-for-intellitrace-extensibility).  
-  
 Les informations de cette section vous aideront à utiliser les API d'extensibilité IntelliTrace pour lire et décoder les fichiers .itrace de votre application.  
   
 ## <a name="in-this-section"></a>Dans cette section  

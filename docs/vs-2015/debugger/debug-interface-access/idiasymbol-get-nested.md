@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_nested | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 78f62d9986068b3683a2ca8e8323dd957644bcc4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 283c8d15f4c58f3f1d36dc8ba0506bd1b7c0b4ae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493151"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277652"
 ---
 # <a name="idiasymbolgetnested"></a>IDiaSymbol::get_nested
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDiaSymbol::get_nested](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-nested).  
-  
 Récupère un indicateur qui spécifie si le type de données défini par l’utilisateur est imbriqué.  
   
 ## <a name="syntax"></a>Syntaxe  

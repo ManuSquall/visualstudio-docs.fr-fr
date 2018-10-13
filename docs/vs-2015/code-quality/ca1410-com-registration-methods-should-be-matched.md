@@ -1,7 +1,7 @@
 ---
 title: 'CA1410 : Les méthodes d’inscription COM doivent être mises en correspondance | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e7b21b7afc6c422cf77a920fd7abb3d3fbfb2193
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 228c5faffc2cf3ceb48cc8c88c6cefa88f63b2cf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47590084"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273622"
 ---
 # <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410 : Les méthodes d'inscription COM doivent être mises en correspondance
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Vous trouverez la dernière version de cette rubrique dans [CA1410 : les méthodes d’inscription COM doivent être mises en correspondance](https://docs.microsoft.com/visualstudio/code-quality/ca1410-com-registration-methods-should-be-matched).
-
 |||
 |-|-|
 |TypeName|ComRegistrationMethodsShouldBeMatched|

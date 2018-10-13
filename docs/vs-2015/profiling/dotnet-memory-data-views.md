@@ -1,7 +1,7 @@
 ---
 title: Vues de données de mémoire .NET | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,22 +17,20 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16a0e14489319f16a10671c6df5ca6d4b046cd26
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7a3734552871d171ff592640f131b4257421a4b6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506898"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292277"
 ---
 # <a name="net-memory-data-views"></a>Vues de données de mémoire .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [vues de données de mémoire .NET](https://docs.microsoft.com/visualstudio/profiling/dotnet-memory-data-views).  
-  
 Cette section contient des informations de référence sur les vues et les rapports des fichiers de données du profileur qui comprennent des données de profilage de mémoire .NET.  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Vue Résumé](../profiling/summary-view-dotnet-memory-data.md)  
+ [Mode Résumé](../profiling/summary-view-dotnet-memory-data.md)  
  Répertorie les fonctions et les types qui ont alloué le plus de mémoire.  
   
  [Allocations, vue](../profiling/dotnet-memory-allocations-view.md)  

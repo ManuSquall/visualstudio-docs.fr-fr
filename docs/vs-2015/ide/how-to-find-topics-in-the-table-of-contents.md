@@ -1,7 +1,7 @@
 ---
 title: 'Comment : rechercher des rubriques dans la Table des matières | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 77c6221dc8362fb8a6bea6a272ca1e39d7fcd9af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7805113a1d35b352c048711f7ce4aa634ad4cb5e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501654"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292745"
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>Comment : rechercher des rubriques dans la table des matières
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : rechercher des rubriques dans la Table des matières](https://docs.microsoft.com/visualstudio/ide/how-to-find-topics-in-the-table-of-contents).  
-  
 Sous l’onglet **Sommaire**, vous pouvez utiliser la table des matières pour rechercher des informations. La table des matières est une liste pouvant être développée qui contient toutes les rubriques des livres installés. Pour des informations d’accessibilité relatives à la navigation dans la table des matières, consultez [Touches de raccourci (Help Viewer)](../ide/shortcut-keys-help-viewer.md).  
   
 > [!IMPORTANT]

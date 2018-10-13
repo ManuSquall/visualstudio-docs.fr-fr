@@ -1,7 +1,7 @@
 ---
 title: Ensemble de règles des règles recommandées mixtes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ccf58c04c266741350e834cedbfdeebf237c9f71
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf0fa74c80a570271e6fb5e92dbb2d3fc46f1551
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493963"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299401"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Ensemble de règles des règles recommandées mixtes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [ensemble de règles des règles recommandées mixtes](https://docs.microsoft.com/visualstudio/code-quality/mixed-recommended-rules-rule-set).  
-  
 Les règles recommandées mixtes Microsoft vous concentrer sur les problèmes plus courants et critiques dans vos projets C++ qui prennent en charge le Common Language Runtime, y compris les failles de sécurité potentielles, les blocages d’application et les autres erreurs de logique et de conception importantes. Vous devez inclure cet ensemble de règles dans tout ensemble de règles personnalisé que vous créez pour vos projets C++ qui prennent en charge le Common Language Runtime. Ce groupe de règles est conçu pour être configuré avec l’édition de Visual Studio Professional et versions ultérieures.  
   
 |Règle|Description|  
