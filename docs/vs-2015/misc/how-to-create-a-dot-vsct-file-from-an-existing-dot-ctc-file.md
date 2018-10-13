@@ -1,7 +1,7 @@
 ---
 title: 'Comment : créer un. Fichier VSCT d’un existant. Les fichiers CTC | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
 manager: douge
-ms.openlocfilehash: 0d267e6046539001cbe454ab69867c02f0a606ed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e159fea34dc395ce2d7bded813f2d8feaa453006
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505639"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303483"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Comment : créer un fichier .Vsct à partir d’un fichier .Ctc existant
-Vous pouvez créer un fichier .vsct XML à partir d’un fichier source .ctc de table de commande existant. Ce faisant, vous pouvez tirer parti du nouveau basé sur XML [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] format de compilateur (VSTC) de table de commande.  
+Vous pouvez créer un fichier .vsct XML à partir d’un fichier source .ctc de table de commande existant. Ainsi, vous pouvez tirer parti du nouveau format du compilateur (VSTC) de table de commande [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] XML.  
   
 ### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>Pour créer un fichier .vsct à partir d’un fichier .ctc  
   
@@ -34,7 +34,7 @@ Vous pouvez créer un fichier .vsct XML à partir d’un fichier source .ctc de 
   
 4.  Placez les fichiers dans le même répertoire.  
   
-5.  Dans la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fenêtre d’invite de commandes, accédez au répertoire.  
+5.  Dans la fenêtre d’invite de commandes [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , accédez au répertoire.  
   
 6.  Type  
   

@@ -1,7 +1,7 @@
 ---
 title: ProjectItem, élément (modèles d’élément Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 51fe9e60bf646e91b957210c43ca020b16f420c4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7e14747559552a851706de9306ce11a0c7add442
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503287"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303860"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem, élément (modèles d'élément Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [ProjectItem, élément (modèles d’élément Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/projectitem-element-visual-studio-item-templates).  
-  
 Spécifie un fichier qui est inclus dans le modèle d’élément.  
   
 > [!NOTE]

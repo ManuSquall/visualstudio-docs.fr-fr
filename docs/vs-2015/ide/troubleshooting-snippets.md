@@ -1,7 +1,7 @@
 ---
 title: Dépannage des extraits | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a6cc8cde833d9580e3fae03df2df11e87eed8cf2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4fff2767c962cf6899840e54bff798bae1f9e202
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506415"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304809"
 ---
 # <a name="troubleshooting-snippets"></a>Dépannage des extraits
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [dépannage des extraits de code](https://docs.microsoft.com/visualstudio/ide/troubleshooting-snippets).  
-  
 Les problèmes liés aux extraits de code IntelliSense sont généralement provoqués pour deux raisons : un fichier d’extrait endommagé ou un fichier d’extrait avec du contenu incorrect.  
   
 ## <a name="common-problems"></a>Problèmes courants  

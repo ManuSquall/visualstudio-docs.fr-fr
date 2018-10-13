@@ -1,7 +1,7 @@
 ---
 title: 'CA2001 : Évitez d’appeler des méthodes | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3a62259f0c0d4de701cba9619ba8a067926a99e6
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 8fff5bf48b16efb7d6347aba09bfca02a229cffe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47516902"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306213"
 ---
 # <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001 : Évitez d'appeler des méthodes susceptibles de poser des problèmes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Vous trouverez la dernière version de cette rubrique dans [CA2001 : Évitez d’appeler des méthodes](https://docs.microsoft.com/visualstudio/code-quality/ca2001-avoid-calling-problematic-methods).
-
 |||
 |-|-|
 |TypeName|AvoidCallingProblematicMethods|

@@ -1,31 +1,29 @@
 ---
 title: 'Procédure pas à pas : création d’un composant simple avec Visual C# ou Visual Basic | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-general
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 269616a5d8725399ecc5f577bc400b75de596332
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 49c1a38130b2182b18d5355181fabbf2703140a3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502379"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305550"
 ---
-# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Procédure pas à pas : création d'un composant simple avec Visual C# ou Visual Basic
+# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Procédure pas à pas : création d'un composant simple avec Visual C# ou Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : créer une Application Simple avec Visual c# ou Visual Basic](https://docs.microsoft.com/visualstudio/ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic).  
-  
 En suivant cette procédure pas-à-pas, vous vous familiariserez avec la plupart des outils, boîtes de dialogue et concepteurs que vous pouvez utiliser lorsque vous développez des applications avec Visual Studio. Vous allez créer une application « Hello, World » simple, concevoir l'interface utilisateur, ajouter du code et déboguer des erreurs, tout en découvrant l'utilisation de l'environnement de développement intégré (IDE).  
   
  Cette rubrique contient les sections suivantes :  

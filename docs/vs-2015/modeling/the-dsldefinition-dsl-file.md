@@ -1,7 +1,7 @@
 ---
 title: Le fichier DslDefinition.dsl | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8d6df6e4957eec471e4d0f1212493c088e19703b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5bf56b06771b905ec4982f7de7f91648c2e6b3a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503489"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306121"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Le fichier DslDefinition.dsl
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [le fichier DslDefinition.dsl](https://docs.microsoft.com/visualstudio/modeling/the-dsldefinition-dsl-file).  
-  
 Cette rubrique décrit la structure du fichier DslDefinition.dsl dans le projet Dsl d’un [!INCLUDE[dsl](../includes/dsl-md.md)] solution, qui définit un *langage spécifique à un domaine*. Le fichier DslDefinition.dsl décrit les classes et les relations d’un langage spécifique à un domaine, ainsi que le diagramme, des formes, connecteurs, le format de sérialisation, et **boîte à outils** du langage spécifique à un domaine et son outils d’édition. Dans une solution de langage spécifique à un domaine, le code qui définit ces outils est généré en fonction des informations contenues dans le fichier DslDefinition.dsl.  
   
  En général, vous utilisez le *Concepteur de langage spécifique à un domaine* pour modifier le fichier DslDefinition.dsl. Toutefois, il s'agit dans sa forme brute d'un fichier XML et vous pouvez ouvrir un fichier DslDefinition.dsl dans un éditeur XML. Il peut être utile de bien comprendre les informations contenues dans le fichier et comment elles sont organisées à des fins de débogage et d'extension.  

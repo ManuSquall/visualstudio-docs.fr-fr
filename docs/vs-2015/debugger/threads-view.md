@@ -1,7 +1,7 @@
 ---
 title: Vue threads | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79c0443d17ed18573cdbe990474ee328f2d3678f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 12ab9170c0f071ba319c0560f55291f41174ddf9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508687"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306265"
 ---
 # <a name="threads-view"></a>vue Threads
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [vue Threads](https://docs.microsoft.com/visualstudio/debugger/threads-view).  
-  
 La vue Threads est une liste plate de tous les threads associés à windows sur votre système. L’ID de Thread et le nom du module pour chaque thread sont affichés. Ils ne sont pas inclus, mais vous pouvez facilement trouver le processus possédant un thread sélectionné.  
   
 ## <a name="procedures"></a>Procédures  

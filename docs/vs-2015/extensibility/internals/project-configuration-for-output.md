@@ -1,7 +1,7 @@
 ---
 title: Configuration pour la sortie de projet | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3c2d4a8641189e7ff9d4190ee68a578f5dd51785
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5e871a2053bb14b30ad47955104edb5c3fe4658
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495053"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304120"
 ---
 # <a name="project-configuration-for-output"></a>Configuration de projet pour la sortie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Configuration de projet pour la sortie](https://docs.microsoft.com/visualstudio/extensibility/internals/project-configuration-for-output).  
-  
 Chaque configuration peut prendre en charge un ensemble de processus de génération qui produisent des éléments de sortie tels que les fichiers exécutables ou des ressources. Ces éléments de sortie sont privés à l’utilisateur et peuvent être placés dans les groupes qui lient les types associés de sortie tels que des fichiers exécutables (.exe, .dll, .lib) et les fichiers sources (.idl, fichiers .h).  
   
  Éléments de sortie peuvent être rendues disponibles via le <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2> méthodes et énumérée avec le <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs> méthodes. Lorsque vous souhaitez regrouper les éléments de sortie, votre projet doit également implémenter le <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup> interface.  
