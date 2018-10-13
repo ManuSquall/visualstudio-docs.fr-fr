@@ -1,7 +1,7 @@
 ---
 title: Tâches de débogage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5d60e9e8-305e-4a48-829f-b9440fc8af7b
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 64a9a55a659b4aaa81a1e491445400d18de30a40
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab02c40911f4dbeb2d4452bebfd42c13ec232fc4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507147"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254058"
 ---
 # <a name="debugging-tasks"></a>Tâches de débogage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [tâches de débogage](https://docs.microsoft.com/visualstudio/extensibility/debugger/debugging-tasks).  
-  
 Pour déboguer un programme, il doit être lancé et un moteur de débogage (dé) doit être attaché à celui-ci, sans quoi le DE doit être attaché à un programme lancé précédemment. Une fois attaché, le DE doit générer certains événements de démarrage. En réponse, le package de débogage tente de lier les points d’arrêt définis dans l’IDE. Quand le programme atteint un point d’arrêt lié, il s’arrête et attend une saisie de l’utilisateur.  
   
 ## <a name="in-this-section"></a>Dans cette section  

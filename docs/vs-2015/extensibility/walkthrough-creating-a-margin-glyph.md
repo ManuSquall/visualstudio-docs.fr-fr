@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : Création d’un glyphe de marge | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 814185db-24f9-417f-b3b1-7c5aabb42b45
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 83b721c7b0ac33d9a37d9705cd780edcd591d9aa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a44b816df914567ff3470f6726ac7ba380921839
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502615"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270996"
 ---
 # <a name="walkthrough-creating-a-margin-glyph"></a>Procédure pas à pas : création d’un glyphe de marge
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : création d’un glyphe de marge](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-creating-a-margin-glyph).  
-  
 Vous pouvez personnaliser l’apparence des marges de l’éditeur à l’aide des extensions de l’éditeur personnalisé. Cette procédure pas à pas place un glyphe personnalisé sur la marge des indicateurs chaque fois que le mot « todo » s’affiche dans un commentaire de code.  
   
 ## <a name="prerequisites"></a>Prérequis  

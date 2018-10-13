@@ -1,7 +1,7 @@
 ---
 title: Proposent des Extensions de Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,19 +17,18 @@ ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c419de36379b277a661442e2d863696db02c105
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ac367f2482a6b8bc5b5b25fca72e8ca05e1f58b7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495984"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260175"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Publication d’extensions Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Remarque**: la galerie Visual Studio est remplacée par la place de marché Visual Studio. Consultez la dernière version de cette rubrique pour plus d’informations.
 
-Vous trouverez la dernière version de cette rubrique dans [de livraison des Extensions Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/shipping-visual-studio-extensions).  
   
 Une fois que vous avez terminé de développer votre extension, vous pouvez l’installer sur d’autres ordinateurs, partager avec vos amis et collègues ou publiez-la sur la galerie Visual Studio. Dans cette section, nous vous expliquons tout ce que vous devez effectuer pour publier et mettre à jour votre extension : utilisation des fichiers .vsix, publication, la localisation et la mise à jour.  
   

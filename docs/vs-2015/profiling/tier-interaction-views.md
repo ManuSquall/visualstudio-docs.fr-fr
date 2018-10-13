@@ -1,7 +1,7 @@
 ---
 title: Vues Interaction de couche | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b163642e27bfdc3e07c296eec72a6b61fa0bffc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9483767c3e16fb39bece2d61e8384d80de9d3026
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508290"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257593"
 ---
 # <a name="tier-interaction-views"></a>Interaction de couche, vues
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [vues interactions de couche](https://docs.microsoft.com/visualstudio/profiling/tier-interaction-views).  
-  
 Le profilage d’interaction de couche fournit des informations supplémentaires sur les temps d’exécution des fonctions des applications multicouches qui communiquent avec des bases de données via [!INCLUDE[vstecado](../includes/vstecado-md.md)]. Les données sont collectées uniquement pour les appels de fonctions synchrones. Vous pouvez inclure des données d’interaction de couche dans toutes les méthodes de profilage.  
   
  **Spécifications**  

@@ -1,7 +1,7 @@
 ---
 title: Présentation des valeurs des données de conflit de ressources | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10c06805db7ef817421f7c9f85e316af8d4b5b35
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 54f8c7a545e0517c9d27dc32b68428e078cdfd40
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502313"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263235"
 ---
 # <a name="understanding-resource-contention-data-values"></a>Fonctionnement des valeurs de données de conflit de ressources
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [présentation des valeurs de données de conflit de ressources](https://docs.microsoft.com/visualstudio/profiling/understanding-resource-contention-data-values).  
-  
 Le profilage de conflit de ressources collecte les informations détaillées de la pile des appels chaque fois que des threads en concurrence dans une application sont forcés d’attendre pour accéder à une ressource partagée.  
   
  **Spécifications**  

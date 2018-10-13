@@ -1,7 +1,7 @@
 ---
 title: 'Comment : synchroniser des ensembles de règles de projet de Code avec la stratégie d’archivage du projet d’équipe | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d7d20680fdba3affa5da4ee917fb12bf1b98457b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 482f3107aeb7545951632f6841c43968067b1b2a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516782"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263118"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Comment : synchroniser des ensembles de règles applicables à des projets de code avec la stratégie d'archivage du projet d'équipe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : synchroniser des ensembles de règles Code projet avec la stratégie d’archivage de projet d’équipe](https://docs.microsoft.com/visualstudio/code-quality/how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy).  
-  
 Vous synchronisez les paramètres d’analyse de code pour les projets de code à la stratégie d’archivage du projet d’équipe en spécifiant un ensemble de règles qui contient au moins les règles qui sont spécifiés dans l’ensemble de règles pour la stratégie d’archivage. Votre développeur en chef peut informer vous du nom et l’emplacement de l’ensemble de règles pour la stratégie d’archivage. Vous pouvez utiliser une des options suivantes pour vous assurer que l’analyse du code pour le projet utilise le jeu de règles approprié :  
   
 -   Si la stratégie d’archivage utilise un des ensembles de règles intégrés Microsoft, ouvrez la boîte de dialogue Propriétés du projet de code, afficher la page analyse du Code et sélectionnez la règle définie dans la page analyse du Code, les code des paramètres de projet. L’ensembles de règles standard sont automatiquement installés avec Visual Studio de Microsoft sont la valeur est en lecture seule et ne doit pas être modifié. Si les ensembles de règles ne sont pas modifiés, les règles dans la stratégie et les ensembles de règles locales sont garantis pour correspondre.  

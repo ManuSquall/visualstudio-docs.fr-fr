@@ -1,7 +1,7 @@
 ---
 title: Hiérarchie d’appels | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 212109c37e1c85d5ddbc55413ab5a972edbfa337
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 07d4cdc8551f7c8a8dbbcc14f682001a4bc8d83a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590618"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260078"
 ---
 # <a name="call-hierarchy"></a>Hiérarchie d'appels
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [hiérarchie d’appels](https://docs.microsoft.com/visualstudio/ide/reference/call-hierarchy).  
-  
   
 La hiérarchie d’appels vous permet de parcourir votre code en affichant tous les appels à destination et en provenance d’une méthode, d’une propriété ou d’un constructeur sélectionné. Cela vous permet de mieux comprendre le flux du code et d’évaluer les effets des modifications apportées au code. Vous pouvez examiner plusieurs niveaux de code pour afficher les chaînes complexes d’appels de méthodes et les points d’entrée supplémentaires dans le code, ce qui vous permet d’explorer tous les chemins d’exécution possibles.  
   

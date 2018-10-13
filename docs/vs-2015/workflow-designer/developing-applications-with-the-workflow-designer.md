@@ -1,7 +1,7 @@
 ---
 title: Développement d’Applications avec le Concepteur de flux de travail | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 6a010a0df75e683ad26ac0ca297a0ab817bd22cd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 71cde900802543a21a20bc02e95bcfedc50d5541
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493199"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259153"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Développement d'applications avec Workflow Designer
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] est un concepteur visuel et un débogueur pour la construction graphique et le débogage d'applications [!INCLUDE[wf](../includes/wf-md.md)] dans le [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] hébergé dans l'environnement de développement [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Il vous permet de composer une application de workflow composite, une bibliothèque d'activités ou un service [!INCLUDE[indigo1](../includes/indigo1-md.md)] via l'utilisation de modèles et de concepteurs d'activités. [!INCLUDE[crabout](../includes/crabout-md.md)] flux de travail, consultez le [Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
@@ -63,7 +63,7 @@ ms.locfileid: "47493199"
  Explique comment exécuter des procédures de débogage traditionnelles, ainsi que le débogage de code XAML et d'expressions.  
   
  [Aide sur l’interface utilisateur du Concepteur de flux de travail](../workflow-designer/workflow-designer-ui-help.md)  
- Contient des rubriques d'aide contextuelle relatives aux boîtes de dialogue fournies par [!INCLUDE[wfd1](../includes/wfd1-md.md)], ainsi qu'une aide sur les fonctionnalités du shell du concepteur, les raccourcis clavier et les messages d'erreur.  
+ Contient des rubriques d’aide contextuelle relatives aux boîtes de dialogue fournies par [!INCLUDE[wfd1](../includes/wfd1-md.md)], ainsi qu’une aide sur les fonctionnalités du shell du concepteur, les raccourcis clavier et les messages d’erreur.  
   
  [Développement d’applications de flux de travail qui ciblent le .NET Framework 3.0 ou 3.5](../workflow-designer/developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md)  
  Contient de l'aide sur l'utilisation du concepteur hérité qui cible le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

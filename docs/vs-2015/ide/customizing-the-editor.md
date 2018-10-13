@@ -1,7 +1,7 @@
 ---
 title: Personnalisation de l’éditeur | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4a74276e0b9ae70f94d87aa258eacf6168f20653
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0b9d01c6582d1bf67b0b33e5372d94700a62587
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516588"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259316"
 ---
 # <a name="customizing-the-editor"></a>Personnalisation de l’éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [personnalisation de l’éditeur](https://docs.microsoft.com/visualstudio/ide/customizing-the-editor).  
-  
 Vous pouvez personnaliser la mise en forme, les onglets, les polices et les couleurs, IntelliSense et bien d’autres fonctionnalités de l’éditeur en général, ou d’un éditeur spécifique à un langage en modifiant les options. Pour plus d’informations sur ces options, consultez [Éditeur de texte, boîte de dialogue Options](../ide/reference/text-editor-options-dialog-box.md) ou tapez `Editor` dans **Lancement rapide**. Vous pouvez également changer le mode d'affichage des fenêtres de l'éditeur.  
   
 ## <a name="in-this-section"></a>Dans cette section  

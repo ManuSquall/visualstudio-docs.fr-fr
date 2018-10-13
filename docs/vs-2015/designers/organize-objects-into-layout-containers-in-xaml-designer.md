@@ -1,7 +1,7 @@
 ---
 title: Organiser les objets en conteneurs de disposition dans le concepteur XAML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 329e41454431c0d19adda5175b455449d4f48e7b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c92af4e78715c608fdee860690fd58561b8bb2d5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501115"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219555"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organiser les objets en conteneurs de disposition dans le concepteur XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [organiser les objets en conteneurs de disposition dans le concepteur XAML](https://docs.microsoft.com/visualstudio/designers/organize-objects-into-layout-containers-in-xaml-designer).  
-  
 Réfléchissez à l'endroit où vous souhaitez faire figurer les objets dans une page (des objets tels que des images, des boutons et des vidéos). Peut-être souhaiterez-vous qu'ils apparaissent dans des lignes et des colonnes, dans une seule ligne verticale ou horizontale ou bien à des emplacements fixes ?  
   
  Une fois que vous avez déterminé l'aspect que vous voulez donner à la page, choisissez un panneau de disposition. Il s'agit de la structure de base de toutes les pages à laquelle vous allez ajouter vos objets. Par défaut, il s’agit une **grille** , mais vous pouvez changer cela.  
@@ -109,7 +107,7 @@ Réfléchissez à l'endroit où vous souhaitez faire figurer les objets dans une
   
 -   [Border](#Border)  
   
--   [Popup](#Popup)  
+-   [Fenêtre contextuelle](#Popup)  
   
 -   [ScrollViewer](#Scroll)  
   

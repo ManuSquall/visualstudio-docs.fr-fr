@@ -1,7 +1,7 @@
 ---
 title: Définir le processus actuel | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5281d1c0d926d8d6acdedf323649216c74a4cab9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0baea39c341e8034ff222de32548d0518f115e82
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502671"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246660"
 ---
 # <a name="set-current-process"></a>Définir le processus actuel
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [définir un processus en cours](https://docs.microsoft.com/visualstudio/ide/reference/set-current-process).  
-  
   
 Définit le processus spécifié comme processus actif dans le débogueur.  
   

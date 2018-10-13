@@ -1,7 +1,7 @@
 ---
 title: Modification du Shell isolé à l’aide de le. Fichier de Pkgundef | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9cee2a20-f8ac-4d9d-aef9-068fcd9f27a4
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3741fc9abdae6693670538c80288dfdefcefd84e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5663c3e7f8dfb3460e163c851751bde95fb630d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494893"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256423"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgundef-file"></a>Modification du Shell isolé à l’aide de le. Fichier de Pkgundef
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [modifiant l’isolé Shell par à l’aide du. Fichier de Pkgundef](https://docs.microsoft.com/visualstudio/extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file).  
-  
 Vous pouvez modifier le fichier .pkgundef pour exclure les entrées de Registre spécifiée à partir d’une application de shell isolé. En règle générale, la première fois qu’une application est démarrée sur un ordinateur, le shell Visual Studio copie les entrées de Registre de Visual Studio existantes dans la clé de Registre racine pour l’application. Cela inclut toutes les références aux VSPackages actuellement installées.  
   
  Pour exclure une entrée de Registre spécifique à partir d’une application de shell isolé, ajoutez au fichier .pkgundef application la clé de package suivie de l’entrée. Entrées et clés sont représentées comme dans le fichier .pkgdef ; Autrement dit, sous la forme [$$RootKey] ou [$RootKey$\\*sous-clé*] et «*entrée*» =*valeur*, où *sous-clé* est la sous-clé à affecter, *entrée* est l’entrée à supprimer, et *valeur* est soit `""` ou `dword:00000000`.  

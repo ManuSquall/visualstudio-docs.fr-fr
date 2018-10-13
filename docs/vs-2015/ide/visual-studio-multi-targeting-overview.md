@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble du multiciblage Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6fcc7f1a1fb7b9f348ace817c800a5e353694e96
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ab13a42c706b5f8c45f128e54bb4630b164e6a2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506508"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277067"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Vue d’ensemble du multiciblage Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Visual Studio présentation du multi-ciblage](https://docs.microsoft.com/visualstudio/ide/visual-studio-multi-targeting-overview).  
-  
 Dans cette version de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez spécifier la version du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] exigée pour votre application. Par conséquent, si vous souhaitez utiliser cette version de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour continuer à développer un projet démarré dans une version antérieure, il n’est pas nécessaire de changer la cible du Framework. Vous pouvez également créer une solution contenant des projets qui ciblent différentes versions du Framework. Le ciblage du Framework permet aussi de garantir que l’application utilise uniquement les fonctionnalités disponibles dans la version spécifiée du Framework.  
   
 > [!TIP]

@@ -1,7 +1,7 @@
 ---
 title: Ajouter des stéréotypes à des éléments de modèle UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b570889c117f2fac037ddf40efe32abbd0b309c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 48bc410c2f9f6a3dfb0e18b713a9b50dda499ea8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506113"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259712"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>Ajouter des stéréotypes à des éléments de modèle UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [ajouter des stéréotypes à UML les éléments de modèle](https://docs.microsoft.com/visualstudio/modeling/add-stereotypes-to-uml-model-elements).  
-  
 Vous pouvez ajouter un stéréotype à un élément de modèle UML pour l'annoter et lui associer des propriétés spécialisées. Pour ajouter un stéréotype à un élément de modèle, il faut que le stéréotype soit défini dans un profil et vous devez lier ce profil à un package ou au modèle qui contient l'élément de modèle. Chaque stéréotype peut être ajouté uniquement à certains types d'éléments de modèles, tels que les classes UML, les cas d'usage ou les composants.  
   
  Par exemple, si vous souhaitez définir une classe UML avec le stéréotype « spécification », vous devez le créer dans un package ou un modèle qui est lié au Profil standard L2.  

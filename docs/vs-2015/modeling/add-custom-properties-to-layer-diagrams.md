@@ -1,7 +1,7 @@
 ---
 title: Ajouter des propriétés personnalisées aux diagrammes de couche | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 23
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1fc9c3e67cbb10484c814acb0eedbfbae2729eb4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b43f7ab5a3247bbff4954616732aa0861726cc2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495408"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235155"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>Ajouter des propriétés personnalisées à des diagrammes de couche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [ajouter des propriétés personnalisées aux diagrammes de dépendance](https://docs.microsoft.com/visualstudio/modeling/add-custom-properties-to-layer-diagrams).  
-  
 Quand vous écrivez du code d'extension pour des diagrammes de couche, vous pouvez stocker des valeurs avec n'importe quel élément sur un diagramme de couche. Les valeurs persisteront lorsque le diagramme est enregistré et rouvert. Vous pouvez également faire apparaître ces propriétés dans le **propriétés** fenêtre afin que les utilisateurs peuvent voir et les modifier. Par exemple, vous pouvez permettre aux utilisateurs de spécifier une expression régulière pour chaque couche, et écrire le code de validation pour vérifier que les noms de classes dans chaque couche sont conformes au modèle spécifié par l’utilisateur.  
   
 ## <a name="properties-not-visible-to-the-user"></a>Propriétés non visibles par l'utilisateur  

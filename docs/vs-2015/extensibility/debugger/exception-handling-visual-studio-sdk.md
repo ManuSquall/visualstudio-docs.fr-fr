@@ -1,7 +1,7 @@
 ---
 title: Exceptions (Kit de développement logiciel Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 7279dc16-db14-482c-86b8-7b3da5a581d2
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e42e4dbe18b0d2fe6da522d24d493270518e884e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ac3e05d37c844006642469e28eadff22553ec31e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508829"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269215"
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>Gestion des exceptions (SDK Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [(SDK Visual Studio) de gestion des exceptions](https://docs.microsoft.com/visualstudio/extensibility/debugger/exception-handling-visual-studio-sdk).  
-  
 La section suivante décrit le processus qui se produit lorsque des exceptions sont levées.  
   
 ## <a name="exception-handling-process"></a>Processus de gestion d’exception  

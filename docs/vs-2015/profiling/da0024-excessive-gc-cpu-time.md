@@ -1,7 +1,7 @@
 ---
 title: 'DA0024 : Temps CPU GC excessif | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9fdc10bc78bed3597ea121376ca2235cfd6acbc7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba4069e653ce692c0561c63853bf6f4c8bf5f67a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494483"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221323"
 ---
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024 : Temps CPU GC excessif
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [DA0024 : temps CPU GC excessif](https://docs.microsoft.com/visualstudio/profiling/da0024-excessive-gc-cpu-time).  
-  
 Id de règle | DA0024 |  
 | Catégorie de |. Utilisation de NET Framework |  
 | Méthode de profilage | Tous les |  

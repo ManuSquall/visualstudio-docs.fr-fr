@@ -1,7 +1,7 @@
 ---
 title: Collecte de données concurrentielles pour un service en utilisant la ligne de commande du profileur | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a8d5d646df224f546d338ac7a9b474cafe8902c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0a783c30c575bbf2f55b4c31840392e7e213940e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503598"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250976"
 ---
-# <a name="collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line"></a>Collecte de données de concurrence pour un service en utilisant la ligne de commande du profileur
+# <a name="collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line"></a>Collecte de données concurrentielles pour un service en utilisant la ligne de commande du profileur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [collecte des données d’accès concurrentiel pour un Service à l’aide de la ligne de commande de Profiler](https://docs.microsoft.com/visualstudio/profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line).  
-  
 La méthode d’accès concurrentiel des outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permet de collecter des données de conflit de ressources et des données d’activité de thread montrant l’utilisation du processeur, les conflits de threads, la migration des threads, les délais de synchronisation, les zones d’E/S avec chevauchement, et autres événements système.  
   
 > [!NOTE]

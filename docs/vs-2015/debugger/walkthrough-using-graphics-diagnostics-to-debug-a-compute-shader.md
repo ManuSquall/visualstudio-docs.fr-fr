@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : Utilisation de Graphics Diagnostics pour déboguer un nuanceur de calcul | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c46db6517571e1d5df592ce322c89c1b18c75926
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9742fa2c17bf982cde7c919648d76c63ff761ac4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507801"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250144"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Procédure pas à pas : utilisation de Graphics Diagnostics pour déboguer un Shader de calcul
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : à l’aide de Graphics Diagnostics pour déboguer un nuanceur de calcul](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader).  
-  
 Cette procédure pas à pas montre comment utiliser les outils Visual Studio Graphics Diagnostics pour examiner un nuanceur de calcul qui génère des résultats incorrects.  
   
  Cette procédure pas à pas décrit les tâches suivantes :  
@@ -41,7 +39,7 @@ Cette procédure pas à pas montre comment utiliser les outils Visual Studio Gra
   
  ![Le fluide simulé est défaillant. ](../debugger/media/gfx-diag-demo-compute-shader-fluid-problem.png "gfx_diag_demo_compute_shader_fluid_problem")  
   
- Pour plus d’informations sur la capture des problèmes de graphisme dans un journal de graphisme, consultez [capture les informations graphiques](../debugger/capturing-graphics-information.md).  
+ Pour plus d’informations sur la capture des problèmes de graphisme dans un journal de graphisme, consultez [Capturing Graphics Information](../debugger/capturing-graphics-information.md).  
   
 ## <a name="investigation"></a>Examen  
  Vous pouvez utiliser les outils Graphics Diagnostics pour charger le fichier journal de graphisme et inspecter les frames capturés.  

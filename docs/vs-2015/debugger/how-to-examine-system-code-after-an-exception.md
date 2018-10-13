@@ -1,7 +1,7 @@
 ---
 title: 'Comment : examiner du Code système après une Exception | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c66e77a2e5cc7596bb8473678b84f962453df41
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 91b0f0ba806868420b56f59d1b3f6de99a87886b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493269"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255773"
 ---
 # <a name="how-to-examine-system-code-after-an-exception"></a>Comment : examiner du code système après une exception
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : examiner System Code après une Exception](https://docs.microsoft.com/visualstudio/debugger/how-to-examine-system-code-after-an-exception).  
-  
 Lorsqu'une exception est levée, il peut s'avérer nécessaire d'examiner le code dans un appel système afin de déterminer la cause de l'exception. Pour ce faire, suivez la procédure ci-dessous si aucun symbole n'est chargé pour le code système ou si l'option Uniquement mon code est activée.  
   
 ### <a name="to-examine-system-code-following-an-exception"></a>Pour examiner du code système après une exception  

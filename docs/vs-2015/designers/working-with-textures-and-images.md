@@ -1,7 +1,7 @@
 ---
 title: Utilisation des textures et des images | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7b9132ec16fa42ccff33bae226c823c710f77b18
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ff5125ce46abe993f35551a0ce46a0d211af99bb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493646"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250495"
 ---
 # <a name="working-with-textures-and-images"></a>Utilisation des textures et des images
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [utilisation des Textures et Images](https://docs.microsoft.com/visualstudio/designers/working-with-textures-and-images).  
-  
 Vous pouvez utiliser l’Éditeur d’images de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour créer et modifier des textures et des images. L’Éditeur d’images prend en charge les formats enrichis de textures et d’images, tels que ceux utilisés dans le développement d’applications DirectX.  
   
 > [!NOTE]
@@ -56,7 +54,7 @@ Vous pouvez utiliser l’Éditeur d’images de [!INCLUDE[vsprvs](../includes/vs
   
 |Titre|Description|  
 |-----------|-----------------|  
-|[Éditeur d’images](../designers/image-editor.md)|Décrit comment utiliser l’Éditeur d’images pour utiliser les textures et les images.|  
+|[Image Editor](../designers/image-editor.md)|Décrit comment utiliser l’Éditeur d’images pour utiliser les textures et les images.|  
 |[Exemples de l’éditeur d’images](../designers/image-editor-examples.md)|Fournit des liens vers des rubriques qui expliquent comment utiliser l’Éditeur d’images pour effectuer des tâches de traitement d’images courantes.|
 
 

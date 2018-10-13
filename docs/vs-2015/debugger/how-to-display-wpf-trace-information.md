@@ -1,7 +1,7 @@
 ---
 title: 'Comment : afficher les informations de Trace WPF | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 07cdebcc636f768c7caf2437af55f20283db7b6c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec7a25cc9a9b72af9a659ee0f958607c750905fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503924"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239458"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Comment : afficher les informations de trace WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : afficher les informations de Trace WPF](https://docs.microsoft.com/visualstudio/debugger/how-to-display-wpf-trace-information).  
-  
 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] peut recevoir des informations de trace de débogage à partir d’applications WPF et afficher ces informations dans le **sortie** fenêtre. Pour afficher les informations de trace de débogage, le traçage WPF doit être activé.  
   
  Vous pouvez activer le traçage WPF dans votre fichier App.Config ou par programmation en utilisant la classe <xref:System.Diagnostics.PresentationTraceSources>. Un moyen plus simple pour activer le traçage WPF est à l’aide de la **Options** fenêtre. Le traçage WPF pour les applications Web n'est pas pris en charge.  

@@ -1,7 +1,7 @@
 ---
 title: Outil de Configuration de la fenêtre Affichage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ff1e5b95b684c347ee1885d5dfddeb5eebb5a82
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a76f446721ee640de306aabb36ecea71a702fb5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507142"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271958"
 ---
 # <a name="tool-window-display-configuration"></a>Configuration de l’affichage fenêtre outil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [affichage Configuration de la fenêtre outil](https://docs.microsoft.com/visualstudio/extensibility/tool-window-display-configuration).  
-  
 Quand un VSPackage enregistre une fenêtre outil, de la position par défaut, de taille, de style d’ancrage et d’autres informations de visibilité est spécifié dans les valeurs facultatives. Pour plus d’informations sur l’inscription de fenêtre outil, consultez [Windows d’outil dans le Registre](../extensibility/tool-windows-in-the-registry.md)  
   
 ## <a name="window-display-information"></a>Informations d’affichage de fenêtre  

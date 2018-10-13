@@ -1,7 +1,7 @@
 ---
 title: Configurer le pare-feu Windows pour le débogage à distance | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9189cbc49d327a9106284dc6078eed3e21cc0f9f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cb3473e8c34f36e1cde0450563711824ce22a37d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493219"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273882"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Configurer le Pare-feu Windows pour le débogage distant
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [configurer le pare-feu Windows pour le débogage distant](https://docs.microsoft.com/visualstudio/debugger/configure-the-windows-firewall-for-remote-debugging).  
-  
 Cette rubrique explique comment configurer le pare-feu pour activer le débogage distant sur des ordinateurs qui exécutent les systèmes d’exploitation suivants :  
   
 -   Windows 7  
@@ -119,7 +117,7 @@ Cette rubrique explique comment configurer le pare-feu pour activer le débogage
 8.  Vous devez voir votre nouvelle règle dans la liste **Règles de trafic entrant** ou **Règles de trafic sortant** .  
   
 ## <a name="see-also"></a>Voir aussi  
- [Débogage à distance](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

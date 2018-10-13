@@ -1,7 +1,7 @@
 ---
 title: Implémentation de Code personnalisé Analysis stratégies d’archivage pour le Code managé | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6f0fe69b8afd4a33a783126b6006cbbb5545ba3f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82f360bb9dc256fd78a8b06aca66d9e49c57ab22
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508488"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268968"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implémentation de stratégies d'archivage de l'analyse du code personnalisées pour le code managé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [analyse du Code personnalisé implémentant les stratégies d’archivage pour le Code managé](https://docs.microsoft.com/visualstudio/code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code).  
-  
 Une stratégie d’archivage spécifie un ensemble de règles que les membres d’un projet d’équipe doivent exécuter sur le code source avant l’analyse du code est archivée au contrôle de version. Microsoft fournit un ensemble de la norme *ensembles de règles* cette analyse de code de groupe de règles dans des zones fonctionnelles. *Ensembles de règles de stratégie d’archivage personnalisée* spécifier un ensemble de règles d’analyse du code qui sont spécifiques à un projet d’équipe. Un ensemble de règles est stocké dans un fichier .ruleset.  
   
  Stratégies d’archivage sont définies au niveau du projet d’équipe et spécifiées par l’emplacement d’un fichier .ruleset dans l’arborescence de contrôle de version. Il n’existe aucune restriction sur l’emplacement du contrôle de version de l’ensemble de règles personnalisé de stratégie team.  

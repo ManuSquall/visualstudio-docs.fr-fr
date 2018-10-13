@@ -1,7 +1,7 @@
 ---
 title: Messages de diagnostic dans la fenêtre de sortie | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0a9e0bb4fa34133937e39b310cb05360e66a443
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 72d9da2ea3ab6cb9807fc7e0a668155d37110c3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507433"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246785"
 ---
 # <a name="diagnostic-messages-in-the-output-window"></a>Messages de diagnostic dans la fenêtre Sortie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [des Messages de Diagnostic dans la fenêtre sortie](https://docs.microsoft.com/visualstudio/debugger/diagnostic-messages-in-the-output-window).  
-  
 Vous pouvez écrire des messages d'exécution dans la fenêtre Sortie en utilisant les classes Debug ou Trace, qui font partie de la bibliothèque de classes <xref:System.Diagnostics>. Utilisez la classe Debug si vous n'utilisez que la version Debug de votre programme pour la sortie. Utilisez la classe Trace si vous souhaitez obtenir une sortie pour les versions Debug et Release.  
   
 ## <a name="output-methods"></a>Méthodes de sortie  

@@ -1,7 +1,7 @@
 ---
 title: Isolé des paramètres de Point d’entrée interpréteur de commandes (C++) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 174deddd0783c53aecd5e2edd361587bbb02cb34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f19165a5941f62fd5594a715c8812c065b371608
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504329"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247686"
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>Paramètres de Point d’entrée Shell isolé (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [isolé Shell entrée Point de paramètres (C++)](https://docs.microsoft.com/visualstudio/extensibility/isolated-shell-entry-point-parameters-cpp).  
-  
 Lorsqu’une application basée sur l’interpréteur de commandes de Visual Studio démarre, il appelle le point d’entrée de démarrage de l’interpréteur de commandes de Visual Studio. Les paramètres suivants peuvent être remplacés dans l’appel au point d’entrée de démarrage de l’interpréteur de commandes. Pour obtenir une description de chaque paramètre, consultez [. Fichiers pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md).  
   
 -   AddinsAllowed  

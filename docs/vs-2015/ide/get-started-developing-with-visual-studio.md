@@ -1,7 +1,7 @@
 ---
 title: Bien démarrer avec le développement dans Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: deeb0b377c863bdfb742e4d483e8b5e5f160dd1e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2575e3e9ffa5f1b67709bc1fd342dbcf95417aad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504212"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261506"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Bien démarrer avec le développement dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Get Started Developing with Visual Studio](https://docs.microsoft.com/visualstudio/ide/get-started-developing-with-visual-studio).  
-  
 Bienvenue dans Visual Studio ! Une fois que vous avez [téléchargé](http://www.visualstudio.com/community) le produit, ces pages vous permettent de commencer à développer.  
   
 -   **[Créer des applications web](https://www.visualstudio.com/features/modern-web-tooling-vs)**  : outils permettant de créer et de déployer des applications web modernes.  
@@ -40,7 +38,7 @@ Bienvenue dans Visual Studio ! Une fois que vous avez [téléchargé](http://www
   
 -   **[Créer des applications mobiles multiplateformes en C# ou Visual Basic (Xamarin)](../cross-platform/visual-studio-and-xamarin.md)**  : commencez à utiliser Visual Studio et les outils pour Xamarin pour créer des applications mobiles qui s’exécutent sur Android, iOS et la plateforme Windows universelle à partir d’une base de code partagée.  
   
-     Charger un exemple :[Tasky Portable](http://developer.xamarin.com/samples/mobile/TaskyPortable/) (interface utilisateur native) ou [exemple Xamarin Forms Todo](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (interface utilisateur de partagée Xamarin.Forms) &#124; [suivre un didacticiel](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124; [Parcourir les documents](https://msdn.microsoft.com/library/mt299001.aspx) &#124; [regarder une vidéo                                                                  ](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)  
+     Charger un exemple :[Tasky Portable](http://developer.xamarin.com/samples/mobile/TaskyPortable/) (interface utilisateur native) ou [exemple Xamarin Forms Todo](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo) (interface utilisateur de partagée Xamarin.Forms) &#124; [suivre un didacticiel](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124; [Parcourir les documents](https://msdn.microsoft.com/library/mt299001.aspx) &#124; [regarder une vidéo](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)  
   
 -   **[Créer des applications et des bibliothèques multiplateforme natives en C++](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)** Cliquez ici pour commencer à créer des applications et des bibliothèques C++ qui s’exécutent sur Android, iOS et la plateforme Windows universelle.  
   
@@ -72,7 +70,7 @@ Bienvenue dans Visual Studio ! Une fois que vous avez [téléchargé](http://www
   
 |||  
 |-|-|  
-|[Bien démarrer avec Visual Basic et Visual C#](../ide/getting-started-with-visual-csharp-and-visual-basic.md)|[Écriture de code JavaScript](http://msdn.microsoft.com/library/cte3c772\(v=vs.94\).aspx)|  
+|[Mises en route de Visual Basic et Visual C#](../ide/getting-started-with-visual-csharp-and-visual-basic.md)|[Écriture de code JavaScript](http://msdn.microsoft.com/library/cte3c772\(v=vs.94\).aspx)|  
 |[Visual C++ pour le développement mobile multiplateforme](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md)|[Présentation de la programmation fonctionnelle à l’aide de F#](http://msdn.microsoft.com/library/vstudio/dd233147.aspx)|  
 |[Bien démarrer avec C++](../ide/getting-started-with-cpp-in-visual-studio.md)|[Bien démarrer avec le débogage dans Visual Studio 2015](../ide/getting-started-with-debugging-in-visual-studio-2015.md)|
 

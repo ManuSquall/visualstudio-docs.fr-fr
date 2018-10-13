@@ -1,7 +1,7 @@
 ---
 title: Notifications Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ea1ce5086b9afea272fefd68660d1ef2881bde22
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 60d5ce504b9e4725035b662d0ccb6dd97b294e57
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504605"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274350"
 ---
 # <a name="visual-studio-notifications"></a>Notifications Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [notifications Visual Studio](https://docs.microsoft.com/visualstudio/ide/visual-studio-notifications).  
-  
 Visual Studio dispose d'un système de notification qui vous avertit de divers événements :  
   
 1.  Une mise à jour est disponible pour un composant dans Visual Studio  

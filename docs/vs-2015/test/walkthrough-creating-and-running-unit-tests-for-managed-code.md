@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : création et exécution de tests unitaires pour le code managé | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8a0bc6ab5854d0db9fc5bae7c642b804bc5af27a
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: e50cfc446bf13e93258e28877f9706a3ccd86ae7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881109"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270632"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Procédure pas à pas : création et exécution de tests unitaires pour le code managé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : création et exécution des Tests unitaires pour le Code managé](https://docs.microsoft.com/visualstudio/test/walkthrough-creating-and-running-unit-tests-for-managed-code).  
-  
 Cette procédure pas à pas décrit la création, l’exécution et la personnalisation d’une série de tests unitaires à l’aide du framework de tests unitaires Microsoft pour le code managé et de l’explorateur de tests de Visual Studio. Vous commencez avec un projet C# qui est en développement, vous créez des tests qui utilisent son code, vous exécutez les tests et vous examinez les résultats. Ensuite, vous pouvez modifier le code de votre projet et réexécuter les tests.  
   
  Cette rubrique contient les sections suivantes :  

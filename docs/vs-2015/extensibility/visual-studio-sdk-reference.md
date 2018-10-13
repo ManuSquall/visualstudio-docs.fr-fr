@@ -1,7 +1,7 @@
 ---
 title: Référence du Kit de développement logiciel Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 048423c5ff981b1c3b14ccb9db1ce0ffe1076209
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: db82d0ccfbd4a82686e2b8069a26d3cdadffb73b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494939"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232061"
 ---
 # <a name="visual-studio-sdk-reference"></a>Informations de référence sur le SDK Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [référence du Kit de développement logiciel Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/visual-studio-sdk-reference).  
-  
 Cette section contient des informations sur les espaces de noms Visual Studio, les espaces de noms et les autres zones d’intérêt pour les développeurs qui utilisent le SDK Visual Studio.  
   
 ## <a name="in-this-section"></a>Dans cette section
@@ -314,6 +312,6 @@ Cette section contient des informations sur les espaces de noms Visual Studio, l
  Utilisé pour MSBuild.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
- [SDK Visual Studio](../extensibility/visual-studio-sdk.md)  
+ [Kit de développement logiciel Visual Studio](../extensibility/visual-studio-sdk.md)  
  Inclut la documentation, exemples et le code pour vous aider à développer des produits qui s’intègrent à Visual Studio.
 

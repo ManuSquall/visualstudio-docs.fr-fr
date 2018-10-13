@@ -1,7 +1,7 @@
 ---
 title: Lier des mises à jour du modèle UML à l’aide de transactions | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 18
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b05f0f1d178099337122cba2213b4bba22d2eead
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f63b7df949f87407735c994ffe5ca7aa65fcd29a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503441"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274259"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>Lier des mises à jour de modèles UML à l’aide de transactions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [mises à jour du modèle UML de lien à l’aide de transactions](https://docs.microsoft.com/visualstudio/modeling/link-uml-model-updates-by-using-transactions).  
-  
-Lorsque vous définissez une extension des concepteurs UML dans Visual Studio, vous pouvez regrouper plusieurs modifications dans une transaction unique appelée un *contexte d’annulation lié*. Pour connaître les versions de Visual Studio prennent en charge les modèles UML, consultez [versions prises en charge pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+Lorsque vous définissez une extension des concepteurs UML dans Visual Studio, vous pouvez regrouper plusieurs modifications dans une transaction unique appelée un *contexte d’annulation lié*. Pour connaître les versions de Visual Studio qui prennent en charge les modèles UML, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  Par défaut, chaque modification apportée par votre code à un modèle peut être annulée séparément par l'utilisateur. Par exemple, si vous définissez une commande de menu qui intervertit les noms de deux classes UML, un utilisateur peut appeler la commande et exécuter une annulation unique. Cela annulerait la modification apportée à un nom, mais pas à l'autre, et laisserait donc votre modèle dans un état non souhaitable.  
   

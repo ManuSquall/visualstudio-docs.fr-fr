@@ -1,7 +1,7 @@
 ---
 title: T4 Directive d’inclusion | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,19 +12,17 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 32af7c25070f4e93c40d01da0cc0ba09e80c2193
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0ad5f409b6f7da852abbf2872bf01ef678b7a5d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493977"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233985"
 ---
 # <a name="t4-include-directive"></a>Directive d'inclusion T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Directive Include de T4](https://docs.microsoft.com/visualstudio/modeling/t4-include-directive).  
-  
-Dans un modèle de texte dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez inclure du texte d'un autre fichier à l'aide d'une directive `<#@include#>`. Vous pouvez placer les directives `include` n'importe où dans un modèle de texte avant le premier bloc de fonctionnalité de classe `<#+ ... #>`. Les fichiers inclus peuvent également contenir des directives `include` et d'autres directives. Cela vous permet de partager du code de modèle et du texte réutilisable entre les modèles.  
+Dans un modèle de texte dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez inclure du texte d'un autre fichier à l'aide d'une directive `<#@include#>`. Vous pouvez placer les directives `include` n’importe où dans un modèle de texte avant le premier bloc de fonctionnalité de classe `<#+ ... #>`. Les fichiers inclus peuvent également contenir des directives `include` et d'autres directives. Cela vous permet de partager du code de modèle et du texte réutilisable entre les modèles.  
   
 ## <a name="using-include-directives"></a>Utilisation de directives Include  
   
@@ -36,7 +34,7 @@ Dans un modèle de texte dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous
   
      De plus, les extensions [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] spécifiques peuvent spécifier leurs propres répertoires dans lesquels rechercher des fichiers Include. Par exemple, lorsque vous avez installé la visualisation et le SDK de modélisation (outils DSL), le dossier suivant est ajouté à la liste d’inclusion : `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.  
   
-     Ces dossiers d’inclusion supplémentaires peuvent dépendre de l’extension du fichier d’inclusion. Par exemple, le dossier d'inclusion des outils DSL est uniquement accessible aux fichiers d'inclusion ayant l'extension de fichier `.tt`  
+     Ces dossiers d’inclusion supplémentaires peuvent dépendre de l’extension du fichier d’inclusion. Par exemple, le dossier d’inclusion des outils DSL est uniquement accessible aux fichiers d’inclusion ayant l’extension de fichier `.tt`  
   
 -   `filePath` peut inclure des variables d'environnement délimitées par "%". Exemple :  
   
@@ -44,7 +42,7 @@ Dans un modèle de texte dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous
     <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>  
     ```  
   
--   Le nom d'un fichier inclus n'a pas à utiliser l'extension `".tt"`.  
+-   Le nom d’un fichier inclus n’a pas à utiliser l’extension `".tt"`.  
   
      Vous pouvez utiliser une autre extension telle que `".t4"` pour les fichiers inclus. C’est pourquoi, lorsque vous ajoutez un `.tt` fichier à un projet, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] définit automatiquement son **un outil personnalisé** propriété `TextTemplatingFileGenerator`. En général, vous ne souhaitez pas que les fichiers inclus soient transformés individuellement.  
   

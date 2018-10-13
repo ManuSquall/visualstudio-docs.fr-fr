@@ -1,7 +1,7 @@
 ---
 title: Essentiel des VSPackages | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: 6c72a73c-5d2a-4052-a62f-89b5847c937c
 caps.latest.revision: 12
 manager: douge
-ms.openlocfilehash: 0d5f795713a447f12c54efc0dab207eda875c2f3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc9bc58209fb176c20d7ad2a8a6fca565de6380e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494657"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260843"
 ---
 # <a name="vspackage-essentials"></a>Essentiel des VSPackages
-Les VSPackages sont des modules logiciels qui constituent et étendent Visual Studio avec des éléments, des services, des projets, des éditeurs et des concepteurs d’interfaces utilisateur. Les VSPackages sont l’unité architecturale au centre de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lui-même est écrit principalement comme une collection de VSPackages.  
+Les VSPackages sont des modules logiciels qui constituent et étendent Visual Studio avec des éléments, des services, des projets, des éditeurs et des concepteurs d’interfaces utilisateur. Les VSPackages incarnent l’unité architecturale au centre de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lui-même est écrit principalement comme une collection de VSPackages.  
   
- Pour créer un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] application d’extensibilité, vous créez tout d’abord un VSPackage. Vous pouvez ensuite ajouter des commandes de menu, les fenêtres Outil, les fenêtres de document ou autre code pour étendre le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.  
+ Pour créer une application d’extensibilité [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous créez d’abord un VSPackage. Vous pouvez ensuite ajouter des commandes de menu, des fenêtres Outil, des fenêtres de document ou tout autre code pour étendre l’IDE [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
  Pour utiliser des VSPackages, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   

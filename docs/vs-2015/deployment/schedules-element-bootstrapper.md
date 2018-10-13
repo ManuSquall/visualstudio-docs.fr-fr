@@ -1,7 +1,7 @@
 ---
 title: '&lt;Planifications&gt; élément (programme d’amorçage) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: c72ee64bcc174bcd11d800bbc8dd0e1b9848b746
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba556d1f9ab7dfefd5502ee150354d4f664d6710
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504052"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250989"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Planifications&gt; élément (programme d’amorçage)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [ &lt;planifications&gt; élément (programme d’amorçage)](https://docs.microsoft.com/visualstudio/deployment/schedules-element-bootstrapper).  
-  
 Le `Schedules` élément contient `Schedule` éléments qui définissent des heures spécifiques commandes définies par le `Command` élément doit être exécuté.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -50,7 +48,7 @@ Le `Schedules` élément contient `Schedule` éléments qui définissent des heu
 ```  
   
 ## <a name="elements-and-attributes"></a>Éléments et attributs  
- Le `Schedules` élément est un enfant de le `Product` élément. Chaque `Product` élément peut avoir au maximum un `Schedules` élément. Le `Schedules` élément ne possède pas d’attributs.  
+ Le `Schedules` élément est un enfant de le `Product` élément. Chaque `Product` élément peut avoir au maximum un `Schedules` élément. L’élément `Schedules` ne comporte pas d’attributs.  
   
 ## <a name="schedule"></a>Planification  
  Le `Schedule` élément est un enfant de le `Schedules` élément. Un `Schedules` élément doit avoir au moins un `Schedule` élément.  

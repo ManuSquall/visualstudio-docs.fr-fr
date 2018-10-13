@@ -1,7 +1,7 @@
 ---
-title: 'Comment : déboguer à partir d’un projet de DLL | Documents Microsoft'
+title: 'Comment : déboguer à partir d’un projet de DLL | Microsoft Docs'
 ms.custom: ''
-ms.date: 05/24/2017
+ms.date: 05/24/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -20,70 +20,71 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 63581cee8816e72492a67a0981a9077b9fec2935
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b7b38ac26a07965dc5408c1da1c655a010b6a788
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475809"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266186"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio"></a>Comment : déboguer à partir d’un projet DLL dans Visual Studio
-Un pour déboguer un projet DLL consiste à spécifier l’application appelante dans les propriétés de projet du projet DLL et vous pouvez ensuite démarrer le débogage à partir du projet DLL lui-même. Pour cette méthode fonctionne, l’application doit appeler la DLL, et la DLL doit être dans l’emplacement où l’application s’attend à trouver (dans le cas contraire, l’application peut rechercher une autre version de la DLL et qui charge à la place, et il ne sera pas atteint vos points d’arrêt). Pour les autres méthodes de débogage de DLL, consultez [le débogage de projets de DLL](../debugger/debugging-dll-projects.md).
-  
-Si une DLL managée est appelée par du code natif et que vous voulez déboguer les deux, vous pouvez le spécifier dans les propriétés du projet. Pour plus d'informations, consultez [How to: Debug in Mixed Mode](../debugger/how-to-debug-in-mixed-mode.md).   
 
-Les pages de propriétés C++ diffèrent dans la disposition et le contenu par rapport aux pages de propriétés C# et Visual Basic. 
+Une façon de déboguer un projet de DLL consiste à spécifier l’application appelante dans les propriétés du projet DLL. Vous pouvez ensuite démarrer le débogage à partir du projet DLL lui-même. Pour cette méthode fonctionne, l’application doit appeler la même DLL dans le même emplacement que celui que vous configurez. Si l’application détecte et charge une version différente de la DLL, cette version ne contient pas vos points d’arrêt. Pour d’autres méthodes de débogage de DLL, consultez [projets DLL de débogage](../debugger/debugging-dll-projects.md).
   
-### <a name="to-specify-the-calling-application-in-a-c-project"></a>Pour spécifier l'application appelante dans un projet C++  
-  
-1.  Cliquez sur le nœud du projet dans le **l’Explorateur de solutions** et sélectionnez **propriétés**.  
-  
-2.  Assurez-vous que le **Configuration** a la valeur de champ en haut de la fenêtre **déboguer**. 
+Si votre application managée appelle une DLL native ou votre application native appelle une DLL managée, vous pouvez déboguer la DLL et l’application appelante. Pour plus d’informations, consultez [Comment : déboguer en mode mixte](../debugger/how-to-debug-in-mixed-mode.md).   
 
-    A **déboguer** configuration est requise pour cette méthode. 
-  
-3.  Accédez à **propriétés de Configuration > débogage**.  
-  
-4.  Dans le **débogueur à lancer** , choisissez **débogueur Windows Local** ou **débogueur Windows distant**.  
-  
-5.  Dans le **commande** ou **commande distante** zone, ajoutez le nom de chemin qualifié complet de l’application appelante (par exemple, un fichier .exe).
+Les projets DLL natifs et managés ont des paramètres différents pour spécifier les applications appelantes. 
 
-    ![Fenêtre Propriétés de débogage](../debugger/media/dbg-debugging-properties-dll.png "DebuggingPropertiesWindow")  
+## <a name="specify-a-calling-app-in-a-native-dll-project"></a>Spécifier une application appelante dans un projet DLL natif  
   
-6.  Ajoutez les arguments de programme nécessaires à la **Arguments de commande** boîte.  
+1. Sélectionnez le projet de DLL C++ dans **l’Explorateur de solutions**. Sélectionnez le **propriétés** icône, appuyez sur **Alt**+**entrée**, ou avec le bouton droit et choisissez **propriétés**.
+   
+1. Dans le  **\<projet > Pages de propriétés** boîte de dialogue zone, assurez-vous que le **Configuration** champ en haut de la fenêtre est défini sur **déboguer**. 
+   
+1. Sélectionnez **propriétés de Configuration** > **débogage**.  
+   
+1. Dans le **débogueur à lancer** liste, choisissez **débogueur Windows Local** ou **débogueur Windows distant**.  
+   
+1. Dans le **commande** ou **commande à distance** zone, ajoutez le chemin d’accès complet et le nom de l’application appelante, comme un *.exe* fichier.
+   
+   ![Fenêtre de propriétés de débogage](../debugger/media/dbg-debugging-properties-dll.png "fenêtre Propriétés de débogage")  
+   
+1. Ajoutez les arguments de programme nécessaires à la **Arguments de commande** boîte.  
+   
+1. Sélectionnez **OK**.
+
+## <a name="specify-a-calling-app-in-a-managed-dll-project"></a>Spécifiez une application appelante dans un projet DLL managée  
   
-### <a name="to-specify-the-calling-application-in-a-c-or-visual-basic-project"></a>Pour spécifier l'application appelante dans un projet C# ou Visual basic  
-  
-1.  Cliquez sur le nœud du projet dans le **l’Explorateur de solutions** et sélectionnez **propriétés**, puis sélectionnez le **déboguer** onglet.
+1. Sélectionnez le projet c# ou Visual Basic DLL dans **l’Explorateur de solutions**. Sélectionnez le **propriétés** icône, appuyez sur **Alt**+**entrée**, ou avec le bouton droit et choisissez **propriétés**.
+   
+1. Assurez-vous que le **Configuration** champ en haut de la fenêtre est défini sur **déboguer**.
+   
+1. Sous **action de démarrage**:
+   
+   - Pour des DLL .NET Framework, sélectionnez **démarrer le programme externe**et ajoutez le chemin d’accès complet et le nom de l’application appelante.
+     
+   - Ou sélectionnez **démarrer le navigateur avec URL** et entrez l’URL d’une application ASP.NET locale. 
+   
+   - Pour des DLL .NET Core, le **déboguer** page de propriétés est différente. Sélectionnez **exécutable** à partir de la **lancer** liste déroulante, puis ajoutez le chemin d’accès complet et le nom de l’application appelante dans les **exécutable** champ. 
+   
+1. Ajoutez les arguments de ligne de commande nécessaires dans le **arguments de ligne de commande** ou **arguments Application** champ.
+   
+   ![Fenêtre Propriétés de débogage c#](../debugger/media/dbg-debugging-properties-dll-csharp.png "fenêtre Propriétés de débogage c#") 
+   
+1. Utilisez **fichier** > **enregistrer les éléments sélectionnés** ou **Ctrl**+**S** pour enregistrer les modifications.
 
-2.  Assurez-vous que le **Configuration** a la valeur de champ en haut de la fenêtre **déboguer**.
+## <a name="debug-from-the-dll-project"></a>Déboguer à partir du projet DLL  
+ 
+1. Définissez des points d’arrêt dans le projet DLL.
 
-3.  (.NET framework) Sélectionnez **démarrer le programme externe**et ajoutez le nom de chemin qualifié complet de l’application appelante.
+1. Cliquez sur le projet DLL et choisissez **définir comme projet de démarrage**. 
 
-4.  (.NET core) Sélectionnez **exécutable** à partir de la **lancer** liste, puis ajoutez le nom de chemin qualifié complet de l’application appelante dans les **exécutable** champ. 
-  
-     Si vous avez besoin d’ajouter des arguments de ligne de commande du programme externe, ajoutez-les dans le **arguments de ligne de commande** (ou **arguments Application**) champ.
+1. Assurez-vous que le **Solutions Configuration** champ est défini sur **déboguer**. Appuyez sur **F5**, cliquez sur le vert **Démarrer** flèche, ou sélectionnez **déboguer** > **démarrer le débogage**.
 
-    ![Fenêtre Propriétés de débogage](../debugger/media/dbg-debugging-properties-dll-csharp.png "DebuggingPropertiesWindow") 
-
-5.  Si vous le souhaitez, vous pouvez également appeler une application en tant qu’URL. (Vous pouvez procéder ainsi si vous déboguez une DLL managée utilisée par une application ASP.NET locale.)  
-  
-     Sous **Action de démarrage**, sélectionnez le **démarrer le navigateur avec l’URL :** case d’option et entrez l’URL.
-  
-### <a name="to-start-debugging-from-the-dll-project"></a>Pour démarrer le débogage à partir du projet de DLL  
-  
-1.  Définir des points d’arrêt dans le projet de DLL. 
-
-2.  Cliquez sur le projet de DLL et choisissez **définir comme projet de démarrage**. 
-
-    (En outre, assurez-vous que le **Solutions Configuration** champ est toujours défini sur **déboguer**.)   
-  
-3.  Démarrer le débogage (appuyez sur F5, cliquez sur la flèche verte ou **Déboguer > Démarrer le débogage**).
-
-    Vous atteignez les points d’arrêt dans votre DLL. Si vous ne pouvez pas les points d’arrêt, assurez-vous que votre DLL de sortie (par défaut, le **project\Debug** dossier) est dans un emplacement que l’application appelante s’attend à trouver.
+Si le débogage n’atteint pas vos points d’arrêt, assurez-vous que votre DLL de sortie (par défaut, le  *\<projet > \Debug* dossier) est l’emplacement de l’appel de l’application appelante.
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage de projets DLL](../debugger/debugging-dll-projects.md)   
- [Paramètres de projet pour des configurations Debug C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Paramètres de projet pour une configuration Debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [Paramètres du projet pour les configurations debug c#](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Paramètres de projet pour une configuration de débogage Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Paramètres de projet pour une configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)

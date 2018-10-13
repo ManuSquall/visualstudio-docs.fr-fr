@@ -1,7 +1,7 @@
 ---
 title: Boîte de dialogue Pages de propriété de Source des fichiers, les propriétés communes, Solution de débogage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b94306c44b8a19d1fbf924fe361d317dd911110b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 08e2dcac4c105753febc86d3bec6e5dc0035e268
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494946"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253810"
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>Fichiers sources pour le débogage, Propriétés communes, boîte de dialogue Pages de propriétés de Solution
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [boîte de dialogue Pages de propriétés déboguer les fichiers sources, propriétés communes, Solution](https://docs.microsoft.com/visualstudio/debugger/debug-source-files-common-properties-solution-property-pages-dialog-box).  
-  
 Cette page de propriétés spécifie à quel endroit le débogueur recherchera les fichiers sources lors du débogage de la solution.  
   
  Pour accéder à la **déboguer les fichiers sources** page de propriétés, avec le bouton droit sur votre Solution dans **l’Explorateur de solutions** et sélectionnez **propriétés** dans le menu contextuel. Développez le **propriétés communes** dossier, puis cliquez sur le **déboguer les fichiers sources** page.  

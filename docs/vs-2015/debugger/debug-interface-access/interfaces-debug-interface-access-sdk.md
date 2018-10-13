@@ -1,7 +1,7 @@
 ---
 title: Interfaces (SDK Debug Interface Access) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 430d310b4a42440d827dcefd209579b36eda9807
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 40934ff90ea794c0bc86c7d3a9d8fbe4fe1d3703
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516716"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233315"
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>Interfaces (Kit de développement logiciel Debug Interface Access)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Interfaces (Debug Interface Access SDK)](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/interfaces-debug-interface-access-sdk).  
-  
 Méthodes sont répertoriées par ordre alphabétique sous chaque interface dans la table des matières et sur la page de l’interface dans l’ordre Vtable.  
   
 ## <a name="in-this-section"></a>Dans cette section  

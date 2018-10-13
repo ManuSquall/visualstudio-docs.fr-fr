@@ -1,7 +1,7 @@
 ---
 title: Quand créer des Types de projet | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c99aed424094d21fa1cd84163d5ee36f206fa19
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 98dd3f0058e2dacd1a6ab8ed3fc048dfd2e6397e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506181"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245399"
 ---
 # <a name="when-to-create-project-types"></a>Quand créer des types de projets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [quand créer des Types de projet](https://docs.microsoft.com/visualstudio/extensibility/internals/when-to-create-project-types).  
-  
 Création d’un nouveau type de projet fournit une base pour la personnalisation [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pour vos utilisateurs. Toutefois, la création d’un nouveau type de projet n’est pas requis pour tous les [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] personnalisations. Les instructions suivantes devraient vous aider à déterminer si un nouveau type de projet est nécessaire pour votre scénario.  
   
 ## <a name="create-a-new-project-type"></a>Créer un nouveau Type de projet  

@@ -1,7 +1,7 @@
 ---
 title: Serveurs (Kit de développement logiciel Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 62236d64-7956-448c-9ac3-5528f3edac1d
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e79e5e00bb4708359c19fd6a2ff95c7f31fd1179
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 84fb3ea778dd5652458c185171dc3fbcaca5a098
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516750"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274220"
 ---
 # <a name="servers-visual-studio-sdk"></a>Serveurs (SDK Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [serveurs (SDK Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/debugger/servers-visual-studio-sdk).  
-  
 En termes d’architecture du débogueur, une **server**:  
   
 -   Est un conteneur de ports et les fournisseurs de port et est utilisé pour communiquer les ports et les fournisseurs de port pour le Gestionnaire de session de débogage (SDM) et de déboguer les moteurs.  

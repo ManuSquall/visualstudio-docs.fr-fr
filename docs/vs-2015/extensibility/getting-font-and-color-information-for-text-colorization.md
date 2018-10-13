@@ -1,7 +1,7 @@
 ---
 title: L’obtention de la police et les informations de couleur de colorisation de texte | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0d4b5ebbaea2b146f1b853360b88bad2363ce77f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c7916e954079d627340a1ca41faeeadf7555acfc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516650"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274246"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>L’obtention de la police et les informations de couleur de colorisation de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [obtention de la police et les informations de couleur de colorisation de texte](https://docs.microsoft.com/visualstudio/extensibility/getting-font-and-color-information-for-text-colorization).  
-  
 Le processus qui effectue le rendu ou affiche le texte en couleurs se dans les éléments d’interface (UI) utilisateur varie selon le type de préférences de projet, sa technologie et les développeurs. Le **polices et couleurs** page de propriétés stocke les paramètres.  
   
  La plupart des implémentations qui affichent du texte en couleurs se doivent le `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults` et associés des interfaces pour les paramètres d’affichage de présentation, la récupération et le stocker du texte.  

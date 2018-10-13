@@ -1,7 +1,7 @@
 ---
 title: Avertissements du fiabilité | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f3bfaff6a434a138024f0baa454935a6da4e67da
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5add1f5436546d64c1c50e2613c72ffce922acf3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502660"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269124"
 ---
 # <a name="reliability-warnings"></a>avertissements liés à la fiabilité
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [avertissements du fiabilité](https://docs.microsoft.com/visualstudio/code-quality/reliability-warnings).  
-  
 Avertissements de fiabilité prennent en charge la fiabilité de bibliothèque et d’application, tels que l’utilisation de mémoire et le thread correcte.  
   
 ## <a name="in-this-section"></a>Dans cette section  

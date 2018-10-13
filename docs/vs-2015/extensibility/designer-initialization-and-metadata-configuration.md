@@ -1,7 +1,7 @@
 ---
 title: L’initialisation du concepteur et Configuration des métadonnées | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 550f4c00d669d22b8c4a887c2917d9afdc462278
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96124b0b1dcad9be58759624e30180414eff1439
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502346"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260876"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Initialisation du concepteur et configuration des métadonnées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [l’initialisation du concepteur et Configuration des métadonnées](https://docs.microsoft.com/visualstudio/extensibility/designer-initialization-and-metadata-configuration).  
-  
 Manipulation des attributs de métadonnées et de filtre associé à un concepteur ou un composant de concepteur fournit un mécanisme permettant aux applications de définir quels outils sont utilisés par un concepteur particulier pour gérer différents <xref:System.Type> objets (tels que les structures de données, classes, ou les entités graphiques), lorsque le concepteur est disponible, et comment l’IDE Visual Studio est configuré pour prendre en charge le concepteur (pour une instance qui **boîte à outils** catégorie ou un onglet est disponible).  
   
  Le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] fournit plusieurs mécanismes pour faciliter le contrôle de l’initialisation du concepteur ou de du composant de concepteur et la manipulation de ses métadonnées par un VSPackage.  

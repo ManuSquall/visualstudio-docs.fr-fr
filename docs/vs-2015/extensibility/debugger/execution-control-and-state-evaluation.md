@@ -1,7 +1,7 @@
 ---
 title: Contrôle d’exécution et évaluation de l’état | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 55adde38-1622-4b51-83cb-ce1b04c1ca7a
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72b13fece6129c6b3996363bb0ec082330c9b686
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 20c2737d233e90cba5813709b2c4cf8ac232105f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503629"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263196"
 ---
 # <a name="execution-control-and-state-evaluation"></a>Contrôle de l’exécution et évaluation de l’état
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [contrôle d’exécution et évaluation de l’état](https://docs.microsoft.com/visualstudio/extensibility/debugger/execution-control-and-state-evaluation).  
-  
 Débogage d’une application nécessite en implémentant des fonctionnalités de contrôle de l’exécution en tant que détaillé des fonctions, l’arrêt aux points d’arrêt et continuer l’exécution. Bases de débogage Visual Studio son contrôle de l’exécution sur les événements envoyés entre les composants du débogueur.  
   
 ## <a name="in-this-section"></a>Dans cette section  

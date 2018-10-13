@@ -1,7 +1,7 @@
 ---
 title: Afficher les valeurs de données dans des bulles d’informations dans l’éditeur de code | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f1a7e755fd81bb66d822f7232e903fea9c53087c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2da6004598d04ca91cea6e29e07ae9fcc1fb28e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493439"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273921"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Afficher les valeurs des données dans les conseils de données de l'éditeur de code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [afficher des valeurs de données dans des bulles d’informations dans l’éditeur de code](https://docs.microsoft.com/visualstudio/debugger/view-data-values-in-data-tips-in-the-code-editor).  
-  
 Les DataTips sont un moyen pratique de visualiser des informations sur les variables de votre programme au cours du débogage. Les DataTips ne fonctionnent qu'en mode arrêt, et uniquement avec les variables comprises dans la portée d'exécution actuelle.  
   
  Dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], les DataTips peuvent être épinglés à un emplacement spécifique dans un fichier source ou flotter au-dessus de toutes les [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] windows.  

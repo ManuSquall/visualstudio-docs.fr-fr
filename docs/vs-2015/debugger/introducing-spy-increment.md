@@ -1,7 +1,7 @@
 ---
 title: Présentation de Spy ++ | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,19 +16,17 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f219d2e15dfeef325ea6ec7be44878e674cf10e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5e420adb00bc8972aead555eb281826db689914
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495182"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276261"
 ---
 # <a name="introducing-spy"></a>Présentation de Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [présentation de Spy ++](https://docs.microsoft.com/visualstudio/debugger/introducing-spy-increment).  
-  
-Spy++ vous permet d’effectuer les tâches suivantes :  
+Spy++ vous permet d’effectuer les tâches suivantes :  
   
 -   Afficher une arborescence graphique des relations entre les objets système. Il s’agit notamment des [processus](../debugger/processes-view.md), [threads](../debugger/threads-view.md)et [fenêtres](../debugger/windows-view.md).  
   
@@ -40,7 +38,7 @@ Spy++ vous permet d’effectuer les tâches suivantes :
   
 -   Utilisez l’ [Outil Recherche](../debugger/how-to-use-the-finder-tool.md) pour sélectionner une fenêtre grâce au positionnement du pointeur de la souris.  
   
--   Définissez **options des messages** à l’aide des paramètres de sélection de journaux de messages complexes.  
+-   Définir des **options de messages** à l’aide de paramètres de sélection de journaux de messages complexes.  
   
  Spy++ propose une barre d’outils et des liens hypertexte pour vous aider à travailler plus rapidement. Il offre également une commande **Actualiser** pour mettre à jour la vue active, un **Outil Recherche de fenêtres** pour simplifier l’espionnage, et une boîte de dialogue **Police** pour personnaliser les fenêtres d’affichage. En outre, Spy++ vous permet d’enregistrer et de restaurer les préférences de l’utilisateur.  
   

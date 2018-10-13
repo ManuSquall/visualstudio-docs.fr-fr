@@ -1,7 +1,7 @@
 ---
 title: Substitution et extension des Classes générées | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 31db7980738c8976fdcd318e87d8350a833f6252
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b74929d741b166d30762d7a84bf001a0ea7ba429
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502247"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268164"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Substitution et extension des classes générées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [substitution et extension des Classes générées](https://docs.microsoft.com/visualstudio/modeling/overriding-and-extending-the-generated-classes).  
-  
 Votre définition DSL est une plateforme sur laquelle vous pouvez créer un ensemble puissant d’outils qui sont basées sur un langage spécifique à un domaine. Plusieurs extensions et les adaptations réalisables par substitution et extension des classes qui sont générés à partir de la définition DSL. Ces classes incluent non seulement les classes de domaine que vous avez explicitement définies dans le diagramme de définition DSL, mais également d’autres classes qui définissent la boîte à outils, explorer, sérialisation et ainsi de suite.  
   
 ## <a name="extensibility-mechanisms"></a>Mécanismes d’extensibilité  

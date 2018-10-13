@@ -1,7 +1,7 @@
 ---
 title: Éditeur de modèle | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d53d22baf0ff1e458a2dd1ee601f59cdfe081ffa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3fb0b83e266fbe865023d6a31f926ac31b61a10a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508366"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264035"
 ---
 # <a name="model-editor"></a>Éditeur de modèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [l’éditeur de modèle](https://docs.microsoft.com/visualstudio/designers/model-editor).  
-  
 Ce document explique comment utiliser l'éditeur de modèle [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour afficher, créer et modifier des modèles 3D.  
   
  Vous pouvez utiliser l'éditeur de modèle pour créer des modèles 3D élémentaires à partir de zéro, ou pour afficher et modifier des modèles 3D plus complexes, créés à l'aide d'outils de modélisation 3D complets. L'éditeur de modèle prend en charge plusieurs formats de modèle 3D qui sont utilisés dans le développement d'applications DirectX.  
@@ -317,7 +315,7 @@ Ce document explique comment utiliser l'éditeur de modèle [!INCLUDE[vsprvs](..
 |Titre|Description|  
 |-----------|-----------------|  
 |[Utilisation de ressources 3D pour les jeux et les applications](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fournit une vue d'ensemble des outils [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que vous pouvez appliquer à des ressources graphiques, tels que les textures et les images, les modèles 3D et les effets de nuanceur.|  
-|[Éditeur d’images](../designers/image-editor.md)|Explique comment utiliser l'éditeur d'images de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour travailler avec des textures et des images.|  
+|[Image Editor](../designers/image-editor.md)|Explique comment utiliser l'éditeur d'images de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour travailler avec des textures et des images.|  
 |[Concepteur Shader](../designers/shader-designer.md)|Explique comment utiliser le concepteur Shader de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour travailler avec des nuanceurs.|
 
 

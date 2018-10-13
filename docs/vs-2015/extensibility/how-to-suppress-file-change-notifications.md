@@ -1,7 +1,7 @@
 ---
 title: 'Comment : supprimer les Notifications de modification de fichier | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 312c34b143608cb6d829e2d79b6be2eae724a238
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed4995cabc71af9c7e2227495e93a21d423d0187
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501931"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257515"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>Comment : supprimer les Notifications de modification de fichier
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : supprimer les Notifications de modification fichier](https://docs.microsoft.com/visualstudio/extensibility/how-to-suppress-file-change-notifications).  
-  
 Lorsque le fichier physique qui représente la mémoire tampon a été modifié, une boîte de dialogue s’affiche avec le message **voulez-vous enregistrer les modifications apportées aux éléments suivants ?** Il s’agit en tant que notification de modification de fichier. Si de nombreuses modifications vont être dans le fichier, cependant, cette boîte de dialogue Affichage indéfiniment peut rapidement devenir ennuyeux.  
   
  Vous pouvez supprimer par programmation de cette boîte de dialogue à l’aide de la procédure suivante. Ce faisant, vous pouvez recharger un fichier immédiatement sans avoir à inviter l’utilisateur à enregistrer les modifications chaque fois.  

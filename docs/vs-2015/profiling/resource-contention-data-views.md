@@ -1,7 +1,7 @@
 ---
 title: Vues des données de conflit de ressources | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,28 +17,26 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5434c2ba1f841c28a3aefbc8febc07c1eccd1b96
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c24c74ce976dbc571dd4b5410196f2d01782eba1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501675"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231827"
 ---
 # <a name="resource-contention-data-views"></a>Vues de données de conflit de ressources
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [les vues de données de conflit de ressources](https://docs.microsoft.com/visualstudio/profiling/resource-contention-data-views).  
-  
 Cette section contient des informations de référence sur les vues et les rapports des fichiers de données du profileur qui comprennent des données de profilage des conflits de threads.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Vue Récapitulatif - Données de conflit du profileur](../profiling/resource-contention-data-views.md)  
  Affiche une chronologie graphique des données de profilage et liste les fonctions et les ressources qui ont participé aux événements les plus bloquants.  
   
- [Vue Arborescence des appels](../profiling/call-tree-view-contention-data.md)  
+ [Mode Arborescence des appels](../profiling/call-tree-view-contention-data.md)  
  Affiche une arborescence hiérarchique qui représente les chemins d’exécution et les données des conflits de ressources des fonctions lors de l’exécution du profilage.  
   
- [Vue Modules](../profiling/modules-view-contention-data.md)  
+ [Modules, mode](../profiling/modules-view-contention-data.md)  
  Organise les données des conflits de threads et de ressources par module et liste les fonctions, les lignes de code source et les instructions qui étaient en cours d’exécution quand des événements bloquants se sont produits.  
   
  [Vue Appelant/Appelé - Données de conflit](../profiling/caller-callee-view-contention-data.md)  
@@ -50,7 +48,7 @@ Cette section contient des informations de référence sur les vues et les rappo
  [Détails relatifs au thread, vue](../profiling/thread-details-view-contention-data.md)  
  Affiche une chronologie graphique des événements bloquants pour chaque thread et répertorie le contenu de la pile des appels pour les événements bloquants.  
   
- [Vue Fonctions](../profiling/functions-view-contention-data.md)  
+ [Mode Fonctions](../profiling/functions-view-contention-data.md)  
  Liste les données de conflits de threads et de ressources par fonction.  
   
  [Vue Conflits de ressources](../profiling/resource-contentions-view-contention-data.md)  

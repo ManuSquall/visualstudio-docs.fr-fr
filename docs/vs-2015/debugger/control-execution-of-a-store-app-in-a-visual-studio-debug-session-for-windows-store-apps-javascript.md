@@ -1,7 +1,7 @@
 ---
 title: Contrôler l’exécution d’une application de Store dans une session de débogage de Visual Studio pour les applications du Windows Store (JavaScript) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 583754b01f25509146bc3e3924e5132288a05285
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 598785a54980c73928a8d38b73fb105bc8bbe775
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881135"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275520"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Contrôler l'exécution d'une application du Windows Store dans une session de débogage Visual Studio pour des applications du Windows Store (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [contrôler l’exécution d’une application de Store dans une session de débogage de Visual Studio pour les applications du Windows Store (JavaScript)](https://docs.microsoft.com/visualstudio/debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript).  
-  
 Ce guide de démarrage rapide montre comment naviguer dans le débogueur Visual Studio, et comment afficher l’état du programme dans une session.  
   
  Ce guide de démarrage rapide s'adresse aux développeurs qui découvrent le débogage avec Visual Studio et aux développeurs qui souhaitent apprendre à naviguer dans une session de débogage Visual Studio. Il n'explique pas les techniques de débogage. Les fonctions figurant dans l'exemple de code sont destinées uniquement à illustrer les procédures de débogage décrites dans cette rubrique. Ces fonctions n'appliquent pas les meilleures pratiques en matière de conception d'application ou de fonction. En fait, vous allez rapidement découvrir que les méthodes et l’application elle-même font peu de choses.  

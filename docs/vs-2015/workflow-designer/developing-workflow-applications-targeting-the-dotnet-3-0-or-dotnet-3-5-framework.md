@@ -1,7 +1,7 @@
 ---
 title: Développement d’Applications de flux de travail ciblant le .NET 3.0 ou 3.5 de .NET Framework | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 80695d4a31f80e02a52c49ec73f56351a3475947
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 658d1050cae8469d8b8b05e08f5d97815764de4a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496265"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245308"
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>Développement d'applications de workflow qui ciblent le .NET 3.0 ou .NET 3.5 Framework
 [!INCLUDE[vs2010](../includes/vs2010-md.md)] fournit le [!INCLUDE[wfd1](../includes/wfd1-md.md)] pour la création d'applications [!INCLUDE[wf](../includes/wf-md.md)] qui ciblent le [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]. Le concepteur utilise l'interface utilisateur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que les utilisateurs connaissent bien pour la construction graphique et le débogage d'applications de workflow.  

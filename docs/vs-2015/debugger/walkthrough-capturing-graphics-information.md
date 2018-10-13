@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : Capture d’informations graphiques | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de553729d37bb82d1b30c6a142f7e65c983bb1c1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f81009d942a7d77bfe34d3bcc3ae16b1c824b75b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494786"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273011"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>Procédure pas à pas : capture d'informations Graphics
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : capture d’informations graphiques](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-capturing-graphics-information).  
-  
-Cette procédure pas à pas montre comment utiliser le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Graphics Diagnostics pour capturer manuellement les informations graphiques d’une application Direct3D.  
+Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour capturer manuellement les informations graphiques d’une application Direct3D.  
   
  Cette procédure pas à pas décrit les tâches suivantes :  
   
@@ -39,7 +37,7 @@ Cette procédure pas à pas montre comment utiliser le [!INCLUDE[vsprvs](../incl
   
 #### <a name="to-enable-the-capture-of-graphics-information-after-a-project-or-solution-is-loaded"></a>Pour activer la capture des informations graphiques après le chargement d’un projet ou d’une solution  
   
-1.  Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], charger un fichier projet ou solution pour l’application que vous souhaitez capturer les informations graphiques.  
+1.  Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], chargez un fichier projet ou solution pour l’application dont vous souhaitez capturer les informations graphiques.  
   
 2.  Dans la barre d’outils Graphics Diagnostics, choisissez **Démarrer les diagnostics**.  
   
@@ -69,7 +67,7 @@ Cette procédure pas à pas montre comment utiliser le [!INCLUDE[vsprvs](../incl
 -   Découvrez comment analyser les informations graphiques capturées à l’aide des outils Graphics Diagnostics. Consultez [vue d’ensemble](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Capture d’informations graphiques](../debugger/capturing-graphics-information.md)
+ [Capturing Graphics Information](../debugger/capturing-graphics-information.md)
 
 
 

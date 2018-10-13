@@ -1,7 +1,7 @@
 ---
 title: Utilisation de polices et couleurs | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: d1a9b99f-fbdc-45ed-920a-e08c3d931ac9
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6db4f030a3367a5fd2fb449b3515643fe6cd6033
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6ed3c7a67ca8463c2afef38fc39e28e3d81fd58
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493971"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245971"
 ---
 # <a name="using-fonts-and-colors"></a>Utilisation de polices et couleurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [à l’aide des polices et couleurs](https://docs.microsoft.com/visualstudio/extensibility/using-fonts-and-colors).  
-  
 Le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] fournit la prise en charge pour l’utilisation des polices et couleurs pour afficher le texte.  
   
 ## <a name="in-this-section"></a>Dans cette section  
@@ -81,5 +79,5 @@ Le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] fournit la prise en charge pou
  Explique comment la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] éditeur utilise les services de langage pour implémenter la coloration syntaxique.  
   
  [Extension d’autres parties de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
- Explique comment utiliser [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] services pour créer des éléments d’interface utilisateur qui correspondent au reste de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ Explique comment utiliser les services de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour créer des éléments d’interface utilisateur qui correspondent au reste de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 

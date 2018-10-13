@@ -1,7 +1,7 @@
 ---
 title: Déploiement de composants COM avec ClickOnce | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 2ddf7e14d3a9e1ceb2e1432e70942dd455621058
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8a544f954ed80e9adb41e0730960c4947f6357a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495735"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246842"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Déploiement de composants COM avec ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [déploiement de composants COM avec ClickOnce](https://docs.microsoft.com/visualstudio/deployment/deploying-com-components-with-clickonce).  
-  
 Déploiement de composants COM hérités a toujours été une tâche difficile. Composants doivent être inscrits dans le monde entier et peuvent donc entraîner des effets secondaires indésirables entre les applications qui se chevauche. Cette situation n’est généralement pas un problème dans les applications .NET Framework, car les composants sont complètement isolés dans une application ou offrent une compatibilité côte à côte. Visual Studio vous permet de déployer des composants COM isolés sur le Windows XP ou un système d’exploitation ultérieur.  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] fournit un mécanisme simple et sécurisé pour le déploiement de vos applications .NET. Toutefois, si vos applications utilisent les composants COM installés, vous devez prendre des mesures supplémentaires pour les déployer. Cette rubrique décrit comment déployer des composants COM isolés et référencer des composants natifs (par exemple, à partir de Visual Basic 6.0 ou Visual C++).  
@@ -69,7 +67,7 @@ Déploiement de composants COM hérités a toujours été une tâche difficile. 
   
 1.  À l’aide de Visual Basic 6.0, à partir de la **fichier** menu, cliquez sur **New**, puis **projet**.  
   
-2.  Dans le **nouveau projet** boîte de dialogue, sélectionnez le **Visual Basic** nœud et sélectionnez un **DLL ActiveX** projet. Dans la zone **Nom**, tapez `VB6Hello`.  
+2.  Dans le **nouveau projet** boîte de dialogue, sélectionnez le **Visual Basic** nœud et sélectionnez un **DLL ActiveX** projet. Dans la zone **Nom** , tapez `VB6Hello`.  
   
     > [!NOTE]
     >  Types de projets DLL ActiveX et le contrôle ActiveX sont pris en charge avec COM sans inscription ; Types de projets EXE ActiveX et ActiveX Document ne sont pas pris en charge.  
@@ -95,7 +93,7 @@ Déploiement de composants COM hérités a toujours été une tâche difficile. 
   
 1.  À l’aide de Visual Basic, à partir de la **fichier** menu, cliquez sur **New**, puis **projet**.  
   
-2.  Dans le **nouveau projet** boîte de dialogue, sélectionnez le **Visual Basic** nœud et sélectionnez **Windows Application**. Dans la zone **Nom**, tapez `RegFreeComDemo`.  
+2.  Dans le **nouveau projet** boîte de dialogue, sélectionnez le **Visual Basic** nœud et sélectionnez **Windows Application**. Dans la zone **Nom** , tapez `RegFreeComDemo`.  
   
 3.  Dans **l’Explorateur de solutions**, cliquez sur le **afficher tous les fichiers** bouton pour afficher les références du projet.  
   

@@ -1,7 +1,7 @@
 ---
 title: Règles de performances de la surveillance des ressources | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b2bd11b8b18e5dd4e3f6625b1b269d104a6fd5a5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 21de8db42b172f82caf4901169f0bbb603057724
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505627"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248974"
 ---
 # <a name="resource-monitoring-performance-rules"></a>Règles de performance de l'analyse de ressource
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [ressource Surveillance des règles de performances](https://docs.microsoft.com/visualstudio/profiling/resource-monitoring-performance-rules).  
-  
 Les messages liés aux performances de la catégorie Surveillance des ressources fournissent des données supplémentaires sur les performances de votre application. Vous pouvez utiliser ces données pour analyser les problèmes de performances. Ces règles fournissent des informations et sont signalées pour chaque exécution du profilage.  
   
 |||  

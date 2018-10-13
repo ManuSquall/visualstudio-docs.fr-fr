@@ -1,7 +1,7 @@
 ---
 title: Élément PreviewImage (modèles Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d1796f20-523b-4e0d-8ac3-ca87f3b5a9b6
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 916b500862f614a58c4c7234a42fef299e8e206d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 802137fc1f8331157c697042392e4e6ef1622cd7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507380"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257866"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>Élément PreviewImage (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [PreviewImage élément (modèles Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/previewimage-element-visual-studio-templates).  
-  
 Spécifie l’image d’aperçu, comme un nom de fichier pour l’image d’aperçu qui apparaîtra dans le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.  
   
  \<VSTemplate >  

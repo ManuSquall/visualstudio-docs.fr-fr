@@ -1,7 +1,7 @@
 ---
 title: Fonction SccGetProjPath | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b0809ab976712d45f1cae8ec39990438e591744f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e80cae5439ec1ec0042a1357c0675a2013ff718
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494677"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269278"
 ---
 # <a name="sccgetprojpath-function"></a>Fonction SccGetProjPath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [fonction SccGetProjPath](https://docs.microsoft.com/visualstudio/extensibility/sccgetprojpath-function).  
-  
 Cette fonction invite l’utilisateur à un chemin d’accès du projet, qui est une chaîne qui est uniquement explicite pour le plug-in de contrôle de code source. Elle est appelée lorsque l’utilisateur est :  
   
 -   Création d’un projet  

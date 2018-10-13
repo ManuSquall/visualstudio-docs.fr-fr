@@ -1,7 +1,7 @@
 ---
 title: Écriture de code dans l’éditeur de code et de texte | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -65,18 +65,15 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cb879efdc3370578d57b529194a9a8790c9136dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 64b8af9e995dc863fe578f61e22647726da73b35
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495432"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220530"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Écriture de code dans l'éditeur de code et de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Vous trouverez la dernière version de cette rubrique dans [écriture de Code dans l’éditeur de texte et le Code](https://docs.microsoft.com/visualstudio/ide/writing-code-in-the-code-and-text-editor).
-
 L’éditeur Visual Studio fournit de nombreuses fonctionnalités facilitant l’écriture et la gestion de votre code. Vous pouvez développer et réduire différents blocs de code en utilisant le mode Plan. Vous pouvez obtenir plus d’informations sur le code que vous utilisez à l’aide d’IntelliSense, de l’ **Explorateur d’objets**et de la hiérarchie d’appels. Vous pouvez naviguer dans votre code en utilisant des fonctionnalités telles que **Naviguer vers**, **Atteindre la définition**et **Rechercher toutes les références**. Vous pouvez insérer des blocs de code à l’aide d’extraits de code et vous pouvez générer du code en utilisant des fonctionnalités telles que **Générer à partir de l’utilisation**. Si vous n’avez encore jamais utilisé l’éditeur Visual Studio 2015, consultez [Modification de votre code](https://www.visualstudio.com/features/ide-vs) pour obtenir une vue d’ensemble rapide.  
 
  Vous pouvez afficher votre code de différentes façons. Pour consulter l’affichage de classes de votre solution, vous pouvez ouvrir la fenêtre **Affichage de classes** ou développer les nœuds dans l’ **Explorateur de solutions** sous vos fichiers de classe.  
@@ -130,7 +127,7 @@ L’éditeur Visual Studio fournit de nombreuses fonctionnalités facilitant l�
 
  ![Boutons de navigation Suivant et Précédent](../ide/media/vs2015-nav-buttons.png "VS2015_Nav_buttons")  
 
- Vous pouvez également utiliser la barre de défilement améliorée dans une fenêtre de code pour bénéficier d’une vue panoramique de votre code. En mode Plan, vous pouvez afficher des aperçus du code en déplaçant le curseur vers le haut et le bas dans la barre de défilement. Pour plus d’informations, consultez [Guide pratique pour suivre votre code en personnalisant la barre de défilement](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).  
+ Vous pouvez également utiliser la barre de défilement améliorée dans une fenêtre de code pour bénéficier d’une vue panoramique de votre code. En mode plan, vous pouvez afficher des aperçus du code en déplaçant le curseur vers le haut et le bas dans la barre de défilement. Pour plus d’informations, consultez [How to: Track Your Code by Customizing the Scrollbar](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).  
 
  Les commandes suivantes sont des méthodes de navigation spécifiques au code :  
 

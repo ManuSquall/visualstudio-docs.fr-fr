@@ -1,7 +1,7 @@
 ---
 title: Impossible de s’attacher au processus | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41eed3132039f2622c5d46b9937893ddaafa2dbf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b8ba032d30999ec1dcf9f135aab0e2b03364aa2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495400"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246946"
 ---
 # <a name="unable-to-attach-to-the-process"></a>Impossible de s'attacher au processus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Impossible d’attacher au processus](https://docs.microsoft.com/visualstudio/debugger/unable-to-attach-to-the-process).  
-  
 Impossible de s'attacher au processus Le composant Débogueur sur le serveur s'est vu refuser l'accès pendant la connexion à cet ordinateur.  
   
  Deux scénarios courants peuvent être à l'origine de cette erreur :  

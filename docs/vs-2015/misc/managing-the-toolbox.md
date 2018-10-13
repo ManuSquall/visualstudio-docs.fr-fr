@@ -1,7 +1,7 @@
 ---
 title: La gestion de la boîte à outils | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,29 +15,29 @@ helpviewer_keywords:
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: douge
-ms.openlocfilehash: fa9b30429de00f950e4d9de160fe72ece7f06760
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1a42c50addeb878041087d9017321ed71daac115
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493076"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254408"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
-Le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] permet à un VSPackage, tel qu’un éditeur ou un concepteur, pour gérer l’appartenance et l’apparence de la **boîte à outils**.  
+Le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] permet à un VSPackage, tel qu’un éditeur ou un concepteur, de gérer l’appartenance et l’apparence de la **boîte à outils**.  
   
- De plus, la **boîte à outils** peut être gérée de manière automatisée. Pour plus d’informations sur la gestion d’une boîte à outils grâce à l’automatisation, consultez [Comment : contrôler la boîte à outils](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
+ De plus, la **boîte à outils** peut être gérée de manière automatisée. Pour plus d’informations sur la gestion d’une boîte à outils grâce à l’automatisation, consultez [How to: Control the Toolbox](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
   
 ## <a name="automatic-toolbox-tab-selection"></a>Sélection automatique d’onglets dans la boîte à outils  
  Vous pouvez activer automatiquement un onglet ou une catégorie de la **boîte à outils** en fonction de l’éditeur ou du concepteur actuellement actif. Par exemple, si un concepteur de formulaires est activé, vous pouvez souhaiter sélectionner l’onglet **Tous les Windows Forms** .  
   
  Cette prise en charge est limitée aux éditeurs et concepteurs nécessitant ce qui suit :  
   
-1.  L’implémentation d’un objet usine pour fournir des instances de l’éditeur ou du concepteur. Pour plus d’informations sur l’implémentation d’un objet de fabrique concepteur ou un éditeur, consultez [fabriques d’éditeur](../extensibility/editor-factories.md).  
+1.  L’implémentation d’un objet usine pour fournir des instances de l’éditeur ou du concepteur. Pour plus d’informations sur l’implémentation d’un objet usine pour un concepteur ou un éditeur, consultez [Editor Factories](../extensibility/editor-factories.md).  
   
 2.  Inscription de l’onglet de boîte à outils qui est activé automatiquement si l’éditeur ou le concepteur est ouvert.  
   
 ## <a name="controlling-the-toolbox"></a>Contrôle de la boîte à outils  
- En complément de la prise en charge de l’automation, la [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] fournit les interfaces suivantes pour fournir des VSPackages mieux contrôler comment la **boîte à outils** est géré.  
+ En complément de la prise en charge de l’automatisation, le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] fournit les interfaces suivantes qui permettent aux VSPackages un plus grand contrôle sur la gestion de la **boîte à outils** .  
   
 |Interface|Description|  
 |---------------|-----------------|  

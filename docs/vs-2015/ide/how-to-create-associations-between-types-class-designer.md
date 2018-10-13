@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour créer des associations entre les types (Concepteur de classes) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 86f380525eef965de87c2f7e40a61e033a9ea46c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad870c9b470e96a120e334c79ed5b36e44cca41a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506952"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247882"
 ---
 # <a name="how-to-create-associations-between-types-class-designer"></a>Comment : créer des associations entre les types (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : créer des Associations entre les Types (Concepteur de classes)](https://docs.microsoft.com/visualstudio/ide/how-to-create-associations-between-types-class-designer).  
-  
 Les lignes d'association du Concepteur de classes affichent la façon dont les classes d'un diagramme sont liées. Une ligne d'association représente une classe qui est le type d'une propriété ou d'un champ d'une autre classe de votre projet. Les lignes d'association sont en général utilisées pour illustrer les relations les plus importantes entre les classes de votre projet.  
   
  Même si vous pouvez afficher tous les champs et propriétés comme associations, il est plus raisonnable de n'afficher comme associations que les membres importants, en fonction des informations que vous voulez souligner dans le diagramme. (Vous pouvez afficher des membres moins importants comme membres normaux ou les masquer entièrement.)  

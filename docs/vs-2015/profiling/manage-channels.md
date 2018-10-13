@@ -1,7 +1,7 @@
 ---
 title: Gérer des canaux | Documents Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48507f8133466c7ab48ba2992434c751a8e32014
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1a12c6f58b383f5aa0301f826238839d265cdec2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516660"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269163"
 ---
 # <a name="manage-channels"></a>Gérer les canaux
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [gérer des canaux](https://docs.microsoft.com/visualstudio/profiling/manage-channels).  
-  
 Dans la **vue Threads** du visualiseur concurrentiel, vous pouvez organiser les canaux pour votre processus afin de pouvoir examiner des modèles particuliers. Vous pouvez trier les canaux, les déplacer vers le haut et vers le bas, ainsi que les masquer ou les afficher.  
   
 ## <a name="sort-by"></a>Trier par  

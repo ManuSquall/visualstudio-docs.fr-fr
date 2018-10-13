@@ -1,7 +1,7 @@
 ---
 title: Collecte de données de mémoire de services .NET Framework en utilisant la ligne de commande du profileur | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ee88087c96b05854359a7e6bcfd95b6c09925ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 303e740aa753536a9c15543a03712e7480f41e0d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493449"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269618"
 ---
 # <a name="collecting-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Collecte de données de mémoire de services .NET Framework en utilisant la ligne de commande du profileur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [collecte des données de mémoire à partir de Services .NET Framework à l’aide de la ligne de commande de Profiler](https://docs.microsoft.com/visualstudio/profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line).  
-  
 Cette section décrit les procédures et les options de collecte des données d’allocation de mémoire et de durée de vie des objets pour un service [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] utilisant la méthode d’échantillonnage à partir de la ligne de commande.  
   
 ## <a name="common-tasks"></a>Tâches courantes  
@@ -44,7 +42,7 @@ Cette section décrit les procédures et les options de collecte des données d�
 |----------|---------------------|  
 |**Profiler à l’aide de la méthode d’échantillonnage**|-   [Collecte de statistiques d’applications en utilisant l’échantillonnage](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|  
 |**Profiler à l’aide de la méthode d’instrumentation**|-   [Collecte de données de temporisation détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line.md)|  
-|**Profiler le conflit des ressources et l’activité des threads**|-   [Collecte de données concurrentielles](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|  
+|**Profiler le conflit des ressources et l’activité des threads**|-   [Collecte de données de concurrence](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|  
   
 ### <a name="profiling-net-framework-memory-data"></a>Profilage de données de mémoire .NET Framework  
   

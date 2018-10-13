@@ -1,7 +1,7 @@
 ---
 title: Opérateurs logiques dans les expressions de recherche | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0cf55bbdc025b4aabd13f7ded72c2ea69386a61b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8337c455ac283e7b9abbf70c39493b31c01a7d06
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494612"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212535"
 ---
 # <a name="logical-operators-in-search-expressions"></a>Opérateurs logiques dans les expressions de recherche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [opérateurs logiques dans les Expressions de recherche](https://docs.microsoft.com/visualstudio/ide/logical-operators-in-search-expressions).  
-  
 À l’aide des opérateurs logiques, vous pouvez affiner votre recherche de contenu en créant des expressions de recherche plus complexes. Comme le montre le tableau suivant, les opérateurs logiques spécifient comment plusieurs termes de recherche doivent être combinés dans une requête de recherche.  
   
 > [!IMPORTANT]

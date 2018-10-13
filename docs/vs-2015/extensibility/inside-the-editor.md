@@ -1,7 +1,7 @@
 ---
 title: À l’intérieur de l’éditeur | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0333c6e25aca7650fbdc3c09709e282bfd97b868
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55bd1e82af3e87fc7845bd122794888a24ca7f02
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506293"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251964"
 ---
 # <a name="inside-the-editor"></a>Dans l’éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [à l’intérieur de l’éditeur de](https://docs.microsoft.com/visualstudio/extensibility/inside-the-editor).  
-  
 L’éditeur est composée d’un nombre de différents sous-systèmes, lesquels sont conçus pour empêcher l’éditeur de texte modèle distinct l’affichage de texte et l’interface utilisateur.  
   
  Ces sections décrivent les différents aspects de l’éditeur :  

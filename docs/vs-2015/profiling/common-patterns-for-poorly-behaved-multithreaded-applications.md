@@ -1,7 +1,7 @@
 ---
 title: Modèles courants pour des applications multithread au comportement médiocre | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 91a8ba5e4cecddd4acc047d891b491dac963044b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 846c756511bc10a3d019294a16ba2d2e98fb37a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506505"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244112"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modèles courants pour des applications multithread au comportement médiocre
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [modèles courants pour les Applications multithread Poorly-Behaved](https://docs.microsoft.com/visualstudio/profiling/common-patterns-for-poorly-behaved-multithreaded-applications).  
-  
 Le visualiseur concurrentiel permet aux développeurs de visualiser le comportement d’une application multithread. Cet outil comprend une galerie de modèles courants pour les applications multithread au comportement médiocre. La galerie comprend des modèles visuels typiques et reconnaissables, exposés via l’outil, ainsi qu’une explication du comportement représenté par chaque modèle, le résultat probable de ce comportement et l’approche la plus courante pour le résoudre.  
   
 ## <a name="lock-contention-and-serialized-execution"></a>Conflits de verrous et exécution sérialisée  
@@ -74,7 +72,7 @@ Le visualiseur concurrentiel permet aux développeurs de visualiser le comportem
  Les convois de verrouillage se produisent lorsque l’application acquiert des verrous dans un ordre de premier arrivé, premier servi, alors que le taux d’arrivée au verrou est supérieur au taux d’acquisition. La combinaison de ces deux conditions provoque l’envoi de demandes de sauvegarde au verrou. Une des méthodes possibles pour résoudre ce problème consiste à utiliser des verrous inéquitables, qui permettent au premier thread qui les trouve à l’état déverrouillé de les acquérir. L’illustration précédente montre ce comportement de convoi. Pour résoudre ce problème, essayez de réduire le nombre de conflits au niveau des objets de synchronisation et d’utiliser des verrous inéquitables.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vue Threads](../profiling/threads-view-parallel-performance.md)
+ [vue Threads](../profiling/threads-view-parallel-performance.md)
 
 
 
