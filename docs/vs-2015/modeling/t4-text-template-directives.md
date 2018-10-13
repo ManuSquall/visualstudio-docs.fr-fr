@@ -1,7 +1,7 @@
 ---
 title: T4 Directives de modèles de texte | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 83
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e079b21c3a85f883351808b8defda6d0d68619f7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 00853b21ec077825337c2c360cac33775189dfdb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503376"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302170"
 ---
 # <a name="t4-text-template-directives"></a>Directives de modèles de texte T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Directives de modèles de texte T4](https://docs.microsoft.com/visualstudio/modeling/t4-text-template-directives).  
-  
 Les directives fournissent des instructions au moteur de transformation de modèle de texte.  
   
  La syntaxe des directives est la suivante :  
@@ -41,7 +39,7 @@ Les directives fournissent des instructions au moteur de transformation de modè
   
  Toutes les valeurs d'attribut doivent être placées entre guillemets doubles. Si la valeur elle-même contient des guillemets, ils doivent être placés dans une séquence d'échappement au moyen du caractère \.  
   
- En général, les directives sont les premiers éléments d'un fichier modèle ou d'un fichier inclus. Vous ne devez pas les placer à l'intérieur d'un bloc de code `<#...#>` ou après un bloc de fonctionnalité de classe `<#+...#>`.  
+ En général, les directives sont les premiers éléments d'un fichier modèle ou d'un fichier inclus. Vous ne devez pas les placer à l’intérieur d’un bloc de code `<#...#>` ou après un bloc de fonctionnalité de classe `<#+...#>`.  
   
  [Directive du modèle T4](../modeling/t4-template-directive.md)  
  ```  

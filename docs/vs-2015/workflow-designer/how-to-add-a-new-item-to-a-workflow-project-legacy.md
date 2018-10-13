@@ -1,7 +1,7 @@
 ---
 title: 'Comment : ajouter un nouvel élément à un projet de flux de travail (hérité) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 1a0ccdc10a76f8c8bc594130bcba5210190fb34a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 26be9519a4f9ee496ea36a61debffec7f96ffbe5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495726"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301156"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>Procédure : ajouter un nouvel élément à un projet de workflow (héritée)
 Après avoir créé un projet de workflow à l'aide du [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité fourni par [!INCLUDE[vs2010](../includes/vs2010-md.md)] qui cible le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], vous pouvez ajouter à votre projet des éléments [!INCLUDE[wf](../includes/wf-md.md)] et d'autres éléments [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] qui vous sont familiers.  

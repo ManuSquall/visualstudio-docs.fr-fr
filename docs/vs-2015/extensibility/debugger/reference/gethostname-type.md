@@ -1,7 +1,7 @@
 ---
 title: GETHOSTNAME_TYPE | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 2be92bea-8133-412b-9015-1833baf16e1b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: de6c2bd19e69c1005ab964193904f560d8757b32
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1235592e9da0f677867cb1b882a935f30cdc5c2f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493442"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299716"
 ---
 # <a name="gethostnametype"></a>GETHOSTNAME_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [GETHOSTNAME_TYPE](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/gethostname-type).  
-  
 Spécifie le type du nom d’hôte.  
   
 ## <a name="syntax"></a>Syntaxe  
