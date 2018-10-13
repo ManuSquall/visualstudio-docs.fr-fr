@@ -1,12 +1,12 @@
 ---
 title: Utiliser des cartes de code pour déboguer vos applications | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Ultimate, visualizing code
 - Visual Studio Ultimate, navigating code visually
@@ -21,18 +21,16 @@ caps.latest.revision: 51
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f3dd19804a8e7749a976b5334ea691918eeae906
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 354c99a9e11f7dbf86f93dab48f669c206323ce5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503381"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263987"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Utiliser des cartes du code pour déboguer vos applications
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [les cartes de code de l’utiliser pour déboguer vos applications](https://docs.microsoft.com/visualstudio/modeling/use-code-maps-to-debug-your-applications).  
-  
 Les cartes de code peuvent vous éviter de vous perdre dans les bases de code volumineuses, dans du code inconnu ou dans du code hérité. Par exemple, lorsque vous effectuez un débogage, il peut s'avérer nécessaire d'examiner le code sur de nombreux fichiers et projets. Utilisez des cartes de code pour naviguer parmi les éléments de code et comprendre les relations entre eux. Ainsi, vous n'avez pas à effectuer le suivi de ce code dans votre tête, ni à dessiner un diagramme distinct. Si vous devez interrompre votre travail de codage, les cartes de code vous aident à vous rafraîchir la mémoire concernant le code sur lequel vous travaillez.  
   
  ![Carte de code &#45; mapper des relations dans le code](../modeling/media/codemapstoryboardpaint.png "CodeMapStoryboardPaint")  

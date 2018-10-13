@@ -1,7 +1,7 @@
 ---
 title: 'Bien démarrer avec PTVS : modification du Code | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: f70e551fd44c18c9dbfc37437703ca092e982d6a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef0a84523a2d828e696fb50f641f392ab7bbd39f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505638"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265783"
 ---
 # <a name="getting-started-with-ptvs-editing-code"></a>Prise en main des outils Python pour Visual Studio : édition du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ return " " * int(10 * cos(radians(x)) + 10) + "o"
   
  Vous voyez que les outils Python pour Visual Studio supposent que le paramètre est un entier, car ils ont analysé les emplacements des appels à cette fonction.   Vous devez également utiliser la correction rapide pour importer `radians`.  
   
- Utilisez un autre extrait de code pour créer un bloc main en tapant `main` tout en haut, en appelant l'interface utilisateur des balises actives et en utilisant la touche tabulation pour choisir « main def ... »  Écrivez une boucle de base pour appeler `make_dot_string`.  Vous voyez que les outils Python pour Visual Studio savent que la fonction retourne une chaîne si vous cliquez sur le point et que vous consultez les saisies semi-automatiques proposées.  Ces informations de type seront présentées tout au long de votre programme. Ainsi, partout où vos valeurs se retrouvent, nous pouvons fournir des info-bulles et des saisies semi-automatiques qui vous aideront à mieux comprendre et à écrire votre code.  
+ Utilisez un autre extrait de code pour créer un bloc main en tapant `main` tout en haut, en appelant l’interface utilisateur des étiquettes actives et en utilisant la touche tabulation pour choisir « main def ... »  Écrivez une boucle de base pour appeler `make_dot_string`.  Vous voyez que les outils Python pour Visual Studio savent que la fonction retourne une chaîne si vous cliquez sur le point et que vous consultez les saisies semi-automatiques proposées.  Ces informations de type seront présentées tout au long de votre programme. Ainsi, partout où vos valeurs se retrouvent, nous pouvons fournir des info-bulles et des saisies semi-automatiques qui vous aideront à mieux comprendre et à écrire votre code.  
   
  Ajoutez un appel à print. Votre fonction main doit être similaire à ceci :  
   

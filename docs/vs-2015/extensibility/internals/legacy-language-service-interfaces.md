@@ -1,7 +1,7 @@
 ---
 title: Interfaces de Service de langage hérité | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e68b9b5273d78d35086369f00106b1ebbde4a8ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 654a0d7de3ad75c541d14a38a2a897adb731ea7a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494091"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249208"
 ---
 # <a name="legacy-language-service-interfaces"></a>Interfaces du service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Interfaces de Service de langage hérité](https://docs.microsoft.com/visualstudio/extensibility/internals/legacy-language-service-interfaces).  
-  
 Pour n’importe quel langage de programmation particulier, il peut y avoir qu’une seule instance d’un service de langage à la fois. Toutefois, un service de langage unique peut servir plusieurs éditeurs.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] n’associe pas un service de langage à n’importe quel éditeur particulier. Par conséquent, lorsque vous demandez une opération de service de langage, vous devez identifier l’éditeur approprié en tant que paramètre.  
@@ -43,7 +41,7 @@ Pour n’importe quel langage de programmation particulier, il peut y avoir qu�
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock>(facultatif)  
+-   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> (facultatif)  
   
  Le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interface doit être implémentée sur tous les services de langage. Il fournit des informations sur votre service de langage, tels que le nom localisé du langage, les extensions de nom de fichier associés avec le service de langage et comment récupérer un Coloriseur.  
   

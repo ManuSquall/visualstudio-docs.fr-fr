@@ -1,7 +1,7 @@
 ---
 title: Tests unitaires sur votre code | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
 caps.latest.revision: 64
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a1c6c521e09795619af503e0a121e51f6edc33b9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 59d0de3dd53d7d9ab3a54fc11eb50666d39dfdc7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504443"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231216"
 ---
 # <a name="unit-test-your-code"></a>Tests unitaires sur votre code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Test unitaire votre Code](https://docs.microsoft.com/visualstudio/test/unit-test-your-code).  
-  
 Les tests unitaires offrent aux développeurs et aux testeurs une méthode rapide pour rechercher des erreurs de logique dans les méthodes des classes des projets [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)], [!INCLUDE[vb_current_short](../includes/vb-current-short-md.md)] et [!INCLUDE[cpp_current_short](../includes/cpp-current-short-md.md)].  
   
  Les outils de test unitaire incluent :  

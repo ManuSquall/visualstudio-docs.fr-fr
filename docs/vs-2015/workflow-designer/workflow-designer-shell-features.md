@@ -1,7 +1,7 @@
 ---
 title: Fonctionnalités de Shell du Concepteur de flux de travail | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: e0ac119908003efdbdbda4c01bce18de4a5f0faa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0f75d545055a4657ed4cefdbafe211ea2f34680f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502338"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275299"
 ---
 # <a name="workflow-designer-shell-features"></a>Fonctionnalités du shell Workflow Designer
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] est composé de trois zones d'interface utilisateur principales : l'aire du concepteur, la barre de navigation au-dessus et l'interpréteur de commandes en dessous. La barre de navigation, située en haut de l'écran, sert à afficher la liste des ancêtres de l'activité racine actuelle. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Comment : utiliser l’arborescence de Navigation](../workflow-designer/how-to-use-breadcrumb-navigation.md). L'aire du concepteur, située au centre de l'écran, permet de composer des flux de travail. L'interpréteur de commandes, situé en bas de l'écran, contient plusieurs boutons pour gérer l'affichage actuel.  

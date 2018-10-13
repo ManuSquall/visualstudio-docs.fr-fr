@@ -1,7 +1,7 @@
 ---
 title: Impossible de se connecter à Microsoft Visual Studio Remote Debugging Monitor | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,22 +21,20 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: edc3d1384a67576bd805ef5efb60614a215a7a92
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 70a186ce1e75f516a08a85e3ce5ec792e6e4a788
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505976"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265901"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Impossible de se connecter à l’ordinateur Microsoft Visual Studio Remote Debugging Monitor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Impossible de se connecter à Microsoft Visual Studio Remote Debugging Monitor](https://docs.microsoft.com/visualstudio/debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor).  
-  
 Ce message d’erreur apparaît lorsque vous entrez un nom non valide pour Visual Studio Remote Debugging Monitor dans la boîte de dialogue **Attacher au processus** . Le nom Remote Debugging Monitor est généralement le même que celui de l’ordinateur auquel vous tentez de vous connecter pour le débogage distant. Ce message peut survenir, car l’ordinateur distant n’existe pas sur le réseau, Remote Debugging Monitor n’est pas installé correctement sur l’ordinateur distant ou l’ordinateur distant est inaccessible en raison de problèmes de réseau ou de la présence d’un pare-feu.  
   
 > [!IMPORTANT]
->  Si vous pensez avoir reçu ce message en raison d’un bogue de produit, Veuillez signaler ce problème à Visual Studio [envoyer un sourire](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b). Si vous avez besoin d’aide supplémentaire, consultez [Talk to Us](../ide/talk-to-us.md) pour savoir comment contacter Microsoft.  
+>  Si vous pensez avoir reçu ce message en raison d’un bogue présent dans le produit, veuillez signaler ce problème à Visual Studio à l’aide de la fonctionnalité [Envoyer un sourire](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b). Si vous avez besoin d’aide supplémentaire, consultez [Talk to Us](../ide/talk-to-us.md) pour savoir comment contacter Microsoft.  
   
 ## <a name="i-got-this-message-while-i-was-debugging-locally"></a>J’ai reçu ce message pendant une session de débogage locale  
  Si ce message s’affiche pendant un débogage local, il est possible que le problème provienne de votre antivirus ou d’un pare-feu tiers. Visual Studio étant une application 32 bits, elle utilise la version 64 bits du débogueur distant pour déboguer les applications 64 bits. Les deux processus communiquent à l’aide du réseau local au sein de l’ordinateur local. Aucun trafic réseau ne quitte l’ordinateur, mais il peut arriver que des logiciels de sécurité tiers bloquent la communication.  
@@ -52,15 +50,15 @@ Ce message d’erreur apparaît lorsque vous entrez un nom non valide pour Visua
 -   Vérifiez que l’ordinateur distant est accessible sur le réseau.  
   
 ## <a name="the-remote-machine-is-not-reachable"></a>L’ordinateur distant n’est pas accessible  
- Essayez [ping](https://technet.microsoft.com/library/ee624059\(v=ws.10\).aspx) l’ordinateur distant. S’il ne répond pas à la commande ping, les outils à distance ne pourront pas non plus se connecter. Essayez de redémarrer l’ordinateur distant et vérifiez qu’il est correctement configuré sur le réseau.  
+ Essayez d’exécuter une commande [ping](https://technet.microsoft.com/library/ee624059\(v=ws.10\).aspx) sur l’ordinateur distant. S’il ne répond pas à la commande ping, les outils à distance ne pourront pas non plus se connecter. Essayez de redémarrer l’ordinateur distant et vérifiez qu’il est correctement configuré sur le réseau.  
   
 ## <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>La version du débogueur distant ne correspond pas à la version de Visual Studio  
- La version de Visual Studio que vous exécutez localement doit correspondre à la version de Remote Debugging Monitor qui s’exécute sur l’ordinateur distant. Pour résoudre ce problème, téléchargez et installez la version correspondante de Remote Debugging Monitor. Accédez à la [centre de téléchargement](http://www.microsoft.com/download) pour rechercher la version appropriée du débogueur distant.  
+ La version de Visual Studio que vous exécutez localement doit correspondre à la version de Remote Debugging Monitor qui s’exécute sur l’ordinateur distant. Pour résoudre ce problème, téléchargez et installez la version correspondante de Remote Debugging Monitor. Accédez au [Centre de téléchargement](http://www.microsoft.com/download) pour rechercher la version appropriée du débogueur distant.  
   
 ## <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>Les ordinateurs locaux et distants utilisent des modes d’authentification différents  
  Les ordinateurs locaux et distants doivent utiliser le même mode d’authentification. Pour résoudre ce problème, assurez-vous que les deux ordinateurs utilisent le même mode d’authentification. Vous pouvez modifier le mode d’authentification du débogueur distant dans la boîte de dialogue **Outils/Options** .  
   
- Pour plus d’informations sur les modes d’authentification, consultez [vue d’ensemble de l’authentification Windows](https://technet.microsoft.com/library/hh831472.aspx).  
+ Pour plus d’informations sur les modes d’authentification, consultez [Vue d’ensemble de l’authentification Windows](https://technet.microsoft.com/library/hh831472.aspx).  
   
 ## <a name="the-remote-debugger-is-running-under-a-different-user-account"></a>Le débogueur distant s’exécute sous un compte d’utilisateur différent  
  Pour résoudre ce problème, vous pouvez procéder de différentes façons :  
@@ -80,7 +78,7 @@ Ce message d’erreur apparaît lorsque vous entrez un nom non valide pour Visua
  L’antivirus Windows autorise les connexions au débogueur distant, mais certains antivirus tiers peuvent les bloquer. Consultez la documentation de votre antivirus pour savoir comment autoriser ces connexions.  
   
 ## <a name="network-security-policy-is-blocking-communication-between-the-remote-machine-and-visual-studio"></a>La stratégie de sécurité réseau bloque la communication entre l’ordinateur distant et Visual Studio  
- Passez en revue la sécurité de votre réseau pour vous assurer qu’elle ne bloque pas les communications. Pour plus d’informations sur la stratégie de sécurité réseau de Windows, consultez [gestion de la sécurité](https://msdn.microsoft.com/library/windows/desktop/ms721855\(v=vs.85\).aspx).  
+ Passez en revue la sécurité de votre réseau pour vous assurer qu’elle ne bloque pas les communications. Pour plus d’informations sur la stratégie de sécurité réseau Windows, consultez [Gestion de la sécurité](https://msdn.microsoft.com/library/windows/desktop/ms721855\(v=vs.85\).aspx).  
   
 ## <a name="the-network-is-too-busy-to-support-remote-debugging"></a>Le réseau est trop occupé pour prendre en charge le débogage distant  
  Dans ce cas, vous devrez peut-être procéder au débogage distant ultérieurement ou replanifier le travail sur le réseau à une heure différente.  
@@ -91,7 +89,7 @@ Ce message d’erreur apparaît lorsque vous entrez un nom non valide pour Visua
  **res://C:\Program%20Files\Microsoft%20Visual%20Studio%2014.0\Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm**  
   
 ## <a name="see-also"></a>Voir aussi  
- [Débogage à distance](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

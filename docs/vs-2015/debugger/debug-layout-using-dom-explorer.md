@@ -1,7 +1,7 @@
 ---
 title: Déboguer la disposition à l’aide de l’Explorateur DOM | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,21 +23,19 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 413f24ffa1927998cb9d2d98880e92de4e68f534
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 65d0bc2dbd48609f1e229691551ab2b713988471
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507943"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272612"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Déboguer la disposition avec l’Explorateur DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [disposition de débogage à l’aide de l’Explorateur DOM](https://docs.microsoft.com/visualstudio/debugger/debug-layout-using-dom-explorer).  
-  
 S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png « windows_and_phone_content »)  
   
- Le **disposition** onglet de l’Explorateur DOM affiche le [modèle de boîte CSS](http://go.microsoft.com/fwlink/?LinkID=238778) pour l’élément sélectionné dans un [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] application, application du Windows Phone Store ou une application créée à l’aide de Visual Studio Tools pour Apache Cordova. Vous pouvez utiliser cette représentation visuelle du modèle de boîte pour identifier et modifier les valeurs relatives à la disposition qui affectent l’apparence des éléments.  
+ L’onglet **Disposition** de l’Explorateur DOM affiche le [modèle de boîte CSS](http://go.microsoft.com/fwlink/?LinkID=238778) pour l’élément sélectionné dans une application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , une application du Windows Phone Store ou une application créée à l’aide de Visual Studio Tools pour Apache Cordova. Vous pouvez utiliser cette représentation visuelle du modèle de boîte pour identifier et modifier les valeurs relatives à la disposition qui affectent l’apparence des éléments.  
   
 > [!TIP]
 >  Les modifications que vous effectuez dans l’onglet **Disposition** ne sont pas définitives. Vous pouvez apporter des modifications permanentes à votre code source, puis actualiser votre application à l’aide du bouton **Actualiser l’application Windows** (applications du Windows Store et Windows Phone Store uniquement) de la barre d’outils Déboguer. Ainsi, vous pouvez éviter de redémarrer le débogueur.  

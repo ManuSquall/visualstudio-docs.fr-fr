@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugCodeContexts2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 72915146-215f-4c99-a034-131b2b474e0e
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 387dce09ee6a01b2ff092e963fa4197d833ef142
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 91a226c7927f5969f5bad64f5128e24e0912d6ec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507795"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262247"
 ---
 # <a name="ienumdebugcodecontexts2"></a>IEnumDebugCodeContexts2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IEnumDebugCodeContexts2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugcodecontexts2).  
-  
 Cette interface énumère les contextes de code associé liés la session de débogage, ou à un document ou un programme particulier.  
   
 ## <a name="syntax"></a>Syntaxe  

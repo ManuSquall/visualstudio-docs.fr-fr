@@ -1,7 +1,7 @@
 ---
 title: À l’aide et de fourniture de Services | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: c0b415ba-b825-4da0-9faf-8a60a663e302
 caps.latest.revision: 42
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: facf0bb9968e3ffbc9a68eb8eee906f300eb1859
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a2aca4c0d9ce518410250b8274d70e17d27ab859
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516574"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247602"
 ---
 # <a name="using-and-providing-services"></a>Utilisation et fourniture de services
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [utilisation et fourniture de Services](https://docs.microsoft.com/visualstudio/extensibility/using-and-providing-services).  
-  
 Un service est un contrat entre deux VSPackages. Un VSPackage offre un ensemble spécifique d’interfaces pour un autre package Visual Studio consommer. Par exemple, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] offre la <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> service à n’importe quel package VS de charges. Ce service fournit le <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface, ce qui peut être utilisé pour écrire dans le journal d’activité. Pour plus d’informations, consultez [Comment : utiliser le journal d’activité](../extensibility/how-to-use-the-activity-log.md).  
   
  Les VSPackages peuvent offrir des services de façon autonome, à l’aide de la <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> interface...  
@@ -58,5 +56,5 @@ Un service est un contrat entre deux VSPackages. Un VSPackage offre un ensemble 
  Aborde les problèmes courants et présente des solutions pour eux.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
- [SDK Visual Studio](../extensibility/visual-studio-sdk.md)
+ [Kit de développement logiciel Visual Studio](../extensibility/visual-studio-sdk.md)
 

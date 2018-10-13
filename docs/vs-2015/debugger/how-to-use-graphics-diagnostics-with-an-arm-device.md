@@ -1,7 +1,7 @@
 ---
 title: 'Comment : utiliser Graphics Diagnostics avec un appareil ARM | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 24067412f875001185a0709c41f930ce3cdc8f3c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0b5b2430f0fe3ca5100fdec072fdf9e21eb221b2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504618"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255827"
 ---
 # <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Comment : utiliser Graphics Diagnostics avec un appareil ARM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : utiliser Graphics Diagnostics avec un appareil ARM](https://docs.microsoft.com/visualstudio/debugger/graphics/how-to-use-graphics-diagnostics-with-an-arm-device).  
-  
 Graphics Diagnostics prend en charge le débogage distant des applications Direct3D sur les appareils ARM qui exécutent Windows RT 8.1 ou Windows Phone 8.1. Vous pouvez capturer les informations graphiques de votre application Direct3D pendant qu'elle s'exécute sur l'appareil ou utiliser ce dernier comme ordinateur de lecture pour des informations graphiques capturées antérieurement.  
   
 ## <a name="using-graphics-diagnostics-with-an-arm-based-device"></a>Utilisation de Graphics Diagnostics avec un appareil ARM  

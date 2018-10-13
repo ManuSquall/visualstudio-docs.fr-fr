@@ -1,7 +1,7 @@
 ---
 title: Propriétés des associations dans UML des diagrammes de classes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 96dc1d942a06e4030992889970fd3946d2e4d9d4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f8274cd45142886dd71e0c8ce8e1950c0fee9609
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493176"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252065"
 ---
 # <a name="properties-of-associations-on-uml-class-diagrams"></a>Propriétés des associations dans les diagrammes de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [propriétés des associations dans UML des diagrammes de classes](https://docs.microsoft.com/visualstudio/modeling/properties-of-associations-on-uml-class-diagrams).  
-  
 Dans un diagramme de classes UML, vous pouvez dessiner *associations* entre toute paire de types. Un type est une classe, une interface ou une énumération.  
   
  Une association indique que le système que vous développez stocke des liens d'un genre spécifique entre les instances des types associés. En général, elle n'indique rien concernant l'implémentation des liens. Par exemple, il peut s'agir de pointeurs, de lignes d'une table, de noms faisant l'objet de références croisées au format XML, etc.  

@@ -1,7 +1,7 @@
 ---
 title: Document journal de graphisme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 385744b280bbd8069acef4da0a36ae9bd9716fcb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b35cd0a0063ab02af0ed0831079439926b446794
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500912"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261558"
 ---
 # <a name="graphics-log-document"></a>Document de journal Graphics
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Document journal de graphisme](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-log-document).  
-  
 Le document journal de graphisme est l’enregistrement des événements graphiques qui se sont produits pendant l’exécution de votre application sous une session Graphics Diagnostics. Une fois les événements enregistrés, vous pouvez examiner le journal dans Visual Studio Graphics Analyzer pour diagnostiquer les problèmes de rendu et de performances.  
   
  Voici comment se présente un document journal de graphisme dans Graphics Analyzer :  
@@ -86,7 +84,7 @@ Le document journal de graphisme est l’enregistrement des événements graphiq
   
 |Propriété|Description|  
 |--------------|-----------------|  
-|**Chemin**|Chemin d’accès du fichier .vsglog. **Remarque :** sous la capture héritée, cette propriété n’est pas utilisée.|  
+|**Chemin d’accès**|Chemin d’accès du fichier .vsglog. **Remarque :** sous la capture héritée, cette propriété n’est pas utilisée.|  
   
  **Informations de module**  
  Répertorie le nom et la version des bibliothèques de liens dynamiques (DLL) qui ont été chargées par l'application pendant la session de capture.  
@@ -108,7 +106,7 @@ Le document journal de graphisme est l’enregistrement des événements graphiq
 |Propriété|Description|  
 |--------------|-----------------|  
 |**Date/heure de dernière modification**|Date et heure de génération de l'application.|  
-|**Chemin**|Chemin d’accès de l’application.|  
+|**Chemin d’accès**|Chemin d’accès de l’application.|  
 |**ID du processus**|ID de processus donné à l'application.|  
 |**Version**|Version de l'application.|  
   

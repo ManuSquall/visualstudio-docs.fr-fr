@@ -1,7 +1,7 @@
 ---
 title: Définir un gestionnaire de mouvements sur un diagramme de modélisation | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,24 +15,22 @@ caps.latest.revision: 36
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8afc13a03fcff51eaad0507af753f3a434eac093
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0aa5eef915aea0eea01e9d6195228cddf8e974ee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590593"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248074"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Définir un gestionnaire de mouvements sur un diagramme de modélisation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [définir un gestionnaire de mouvements sur un diagramme de modélisation](https://docs.microsoft.com/visualstudio/modeling/define-a-gesture-handler-on-a-modeling-diagram).  
-  
 Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand l’utilisateur double-clique sur des éléments ou les fait glisser sur un diagramme UML. Vous pouvez empaqueter ces extensions dans une extension d’intégration Visual Studio ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) et les distribuer à d’autres utilisateurs de Visual Studio.  
   
  Si un comportement intégré existe déjà pour le type de diagramme et le type d’élément que vous souhaitez faire glisser, il se peut que vous ne puissiez pas effectuer d’ajouts à ce comportement ni le substituer.  
   
 ## <a name="requirements"></a>Configuration requise  
- Consultez [exigences](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
+ Consultez [Spécifications](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
   
  Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -79,7 +77,7 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
   
      `System.Windows.Forms`  
   
-     `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` : cette référence n'est utile que si vous étendez des diagrammes de couche. Pour plus d’informations, consultez [étendre des diagrammes de couche](../modeling/extend-layer-diagrams.md).  
+     `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` : cette référence n’est utile que si vous étendez des diagrammes de couche. Pour plus d’informations, consultez [étendre des diagrammes de couche](../modeling/extend-layer-diagrams.md).  
   
 3.  Ajouter un fichier de classe au projet et définissez le code suivant comme contenu.  
   
@@ -244,15 +242,15 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
   
      Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] démarre.  
   
-     **Résolution des problèmes**: si un nouveau [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne démarre pas :  
+     **Dépannage**: si une nouvelle instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne démarre pas :  
   
     -   Si vous avez plusieurs projets, vérifiez que le projet VSIX est défini comme projet de démarrage de la solution.  
   
-    -   Dans l’Explorateur de solutions, dans le menu contextuel du projet de démarrage ou unique, choisissez Propriétés. Dans l’éditeur de propriétés du projet, choisissez l’onglet **Déboguer** . Assurez-vous que la chaîne dans le **démarrer le programme externe** champ est le chemin d’accès complet de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], en général :  
+    -   Dans l’Explorateur de solutions, dans le menu contextuel du projet de démarrage ou unique, choisissez Propriétés. Dans l’éditeur de propriétés du projet, choisissez l’onglet **Déboguer** . Assurez-vous que la chaîne dans le champ Démarrer le programme externe** correspond au nom du chemin complet de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], qui est en général le suivant :  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  Dans l'instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ouvrez ou créez un projet de modélisation, puis ouvrez ou créez un diagramme de modélisation. Utilisez un diagramme qui appartient à l’un des types répertoriés dans les attributs de la classe de votre gestionnaire de mouvements.  
+2.  Dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ouvrez ou créez un projet de modélisation, puis ouvrez ou créez un diagramme de modélisation. Utilisez un diagramme qui appartient à l’un des types répertoriés dans les attributs de la classe de votre gestionnaire de mouvements.  
   
 3.  Double-cliquez sur le diagramme. Votre gestionnaire de double-clic doit être appelé.  
   
@@ -279,7 +277,7 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 |-|-|  
 |`bool CanDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|Retournez la valeur `true` pour autoriser le déplacement de l’élément source référencé dans `dragEvent` vers cette cible.<br /><br /> Cette méthode ne doit pas apporter de modifications au modèle. Elle doit fonctionner rapidement, car elle permet de déterminer l’état de la flèche à mesure que l’utilisateur déplace la souris.|  
 |`void OnDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|Mettez à jour le modèle basé sur l’objet source référencé dans `dragEvent`et la cible.<br /><br /> Appelée quand l’utilisateur relâche le bouton de la souris après avoir effectué un glissement.|  
-|`void OnDoubleClick (ShapeElement target, DiagramPointEventArgs pointEvent)`|`target` est la forme sur laquelle l'utilisateur a double-cliqué.|  
+|`void OnDoubleClick (ShapeElement target, DiagramPointEventArgs pointEvent)`|`target` est la forme sur laquelle l’utilisateur a double-cliqué.|  
   
  Vous pouvez écrire des gestionnaires qui peuvent accepter non seulement des éléments UML, mais également une vaste gamme d’autres éléments, comme des fichiers, des nœuds dans un affichage de classes .NET, etc. L’utilisateur peut faire glisser l’un de ces éléments dans un diagramme UML, à condition que vous écriviez une méthode `OnDragDrop` capable de décoder la forme sérialisée des éléments. Les méthodes de décodage varient d’un type d’élément à l’autre.  
   
@@ -354,7 +352,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
  Pour plus d’informations, consultez [naviguer dans le modèle UML](../modeling/navigate-the-uml-model.md).  
   
 ##  <a name="Installing"></a> Installation et désinstallation d’une extension  
- Vous pouvez installer une extension [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] sur votre propre ordinateur et sur d'autres ordinateurs.  
+ Vous pouvez installer une extension [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] sur votre propre ordinateur et sur d’autres ordinateurs.  
   
 #### <a name="to-install-an-extension"></a>Pour installer une extension  
   
@@ -366,7 +364,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
 2.  Copiez le fichier **.vsix** sur l’ordinateur cible sur lequel vous souhaitez installer l’extension. Il peut s’agir de votre propre ordinateur ou d’un autre.  
   
-     L’ordinateur cible doit avoir une des éditions de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] que vous avez spécifié dans **source.extension.vsixmanifest**.  
+     L’ordinateur cible doit disposer de l’une des éditions de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] que vous avez spécifiées dans **source.extension.vsixmanifest**.  
   
 3.  Sur l’ordinateur cible, ouvrez le fichier **.vsix** .  
   

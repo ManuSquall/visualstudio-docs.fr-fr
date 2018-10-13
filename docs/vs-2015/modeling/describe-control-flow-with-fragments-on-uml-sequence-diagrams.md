@@ -1,7 +1,7 @@
 ---
 title: Décrire le flux de contrôle avec des fragments dans les diagrammes de séquence UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,24 +20,22 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 05cb3be018db16a2377132896a98f0d2b13bfa07
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c90270876721f2a43c78375108608064d325b39a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504970"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260219"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Décrire le flux de contrôle à l'aide de fragments dans les diagrammes de séquence UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Describe des flux de contrôle avec des fragments de diagrammes de séquence UML](https://docs.microsoft.com/visualstudio/modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams).  
-  
 Dans un diagramme de séquence UML, les *fragments combinés* vous permettent d’afficher des boucles, des branches et d’autres éléments.  
   
  Un fragment combiné se compose d’un ou de plusieurs *opérandes d’interaction*, chacun d’entre eux contenant un ou plusieurs messages, utilisations d’interactions ou encore fragments combinés.  
   
 > [!NOTE]
->  Cette rubrique traite des fragments dans les diagrammes de séquence. Pour plus d’informations sur la lecture des diagrammes de séquence UML, consultez [diagrammes de séquence UML : référence](../modeling/uml-sequence-diagrams-reference.md). Pour plus d’informations sur la façon de dessiner des diagrammes de séquence UML, consultez [diagrammes de séquence UML : indications](../modeling/uml-sequence-diagrams-guidelines.md).  
+>  Cette rubrique traite des fragments dans les diagrammes de séquence. Pour plus d’informations sur la lecture des diagrammes de séquence UML, consultez [diagrammes de séquence UML : référence](../modeling/uml-sequence-diagrams-reference.md). Pour plus d’informations sur le dessin des diagrammes de séquence UML, consultez [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md).  
   
  ![Fragment avec deux opérandes d’Interaction combiné](../modeling/media/uml-seqfragments.png "UML_SeqFragments")  
   

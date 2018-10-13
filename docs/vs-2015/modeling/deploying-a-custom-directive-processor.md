@@ -1,7 +1,7 @@
 ---
 title: Déploiement d’un processeur de Directive personnalisé | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b46d95aae0908a4e1e2ba72e860d56ec975b051f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc49795a2d19ab28eb4462efc9d6361e1ac18ab6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494917"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251951"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Déploiement d'un processeur de directive personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [déploiement d’un processeur de Directive personnalisé](https://docs.microsoft.com/visualstudio/modeling/deploying-a-custom-directive-processor).  
-  
 Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sur n'importe quel ordinateur, vous devez l'inscrire au moyen de l'une des méthodes décrites dans cette rubrique.  
   
  Les différentes méthodes disponibles sont les suivantes :  
@@ -159,7 +157,7 @@ Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](..
   
  Vérifiez que le fichier .pkgdef s’affiche dans le dossier de génération, qui correspond en général à bin\Debug ou bin\Release. S'il ne s'affiche pas, ouvrez le fichier .csproj dans un éditeur de texte et supprimez le nœud suivant : `<GeneratePkgDefFile>false</GeneratePkgDefFile>`.  
   
- Pour plus d’informations, consultez [VSPackages](../extensibility/internals/vspackages.md).  
+ Pour plus d'informations, consultez [VSPackages](../extensibility/internals/vspackages.md).  
   
 ## <a name="setting-a-registry-key"></a>Définition d'une clé de Registre  
  Cette méthode d'installation d'un processeur de directive personnalisé est la moins recommandée. Elle ne permet pas d'activer ni de désactiver facilement le processeur de directive, et ne fournit pas de méthode pour distribuer le processeur de directive aux autres utilisateurs.  

@@ -1,7 +1,7 @@
 ---
 title: Choix entre les VSPackages partagés et avec contrôle de version | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 14b2ec1884fcbbebb28667e04d03e2c1424175dd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d642c265104f490739613897e1fd5c177ac0d6f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516812"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263690"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Choix entre les VSPackages partagés et à versions gérées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [en choisissant entre partagées et des VSPackages avec version](https://docs.microsoft.com/visualstudio/extensibility/choosing-between-shared-and-versioned-vspackages).  
-  
 Différentes versions de Visual Studio peuvent coexister sur le même ordinateur. Packages VS peuvent prendre en charge toute combinaison de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] versions.  
   
  Vous pouvez activer des installations côte à côte de VSPackages via une des deux stratégies, la stratégie partagée ou la stratégie avec contrôle de version. Les deux prendre en charge la présence de plusieurs versions de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et associées de versions de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  

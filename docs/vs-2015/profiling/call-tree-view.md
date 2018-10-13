@@ -1,7 +1,7 @@
 ---
 title: Vue Arborescence des appels | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b672670dc621b66e51228678af025db8d7f449b3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1df170176397bd8b74c169e8331baaffa9f6b744
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494473"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225444"
 ---
 # <a name="call-tree-view"></a>Vue Arborescence des appels
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [vue arborescence des appels](https://docs.microsoft.com/visualstudio/profiling/call-tree-view).  
-  
 La vue Arborescence des appels affiche les chemins d’exécution de la fonction empruntés dans l’application profilée. La racine de l’arborescence correspond au point d’entrée de l’application ou du composant. Chaque nœud de fonction liste toutes les fonctions appelées par la fonction et les données de performances liées à ces appels de fonction.  
   
  La vue Arborescence des appels peut également être développée et mettre en surbrillance le chemin d’exécution d’une fonction qui a exigé le plus de temps ou qui a fait l’objet du plus grand nombre d’échantillonnages. Pour faire apparaître le chemin le plus coûteux en matière de performances, cliquez avec le bouton droit sur la fonction, puis cliquez sur **Développer le chemin réactif**.  
@@ -50,13 +48,13 @@ La vue Arborescence des appels affiche les chemins d’exécution de la fonction
   
  Pour plus d’informations sur les définitions des colonnes dans la vue Arborescence des appels, consultez les rubriques suivantes :  
   
- [Vue Arborescence des appels](../profiling/call-tree-view-sampling-data.md)  
+ [Mode Arborescence des appels](../profiling/call-tree-view-sampling-data.md)  
   
- [Vue Arborescence des appels](../profiling/call-tree-view-instrumentation-data.md)  
+ [Mode Arborescence des appels](../profiling/call-tree-view-instrumentation-data.md)  
   
  [Vue Arborescence des appels - Échantillonnage](../profiling/call-tree-view-dotnet-memory-sampling-data.md)  
   
- [Vue Arborescence des appels](../profiling/call-tree-view-contention-data.md)  
+ [Mode Arborescence des appels](../profiling/call-tree-view-contention-data.md)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Vues du rapport des performances](../profiling/performance-report-views.md)   

@@ -1,7 +1,7 @@
 ---
 title: Lignes, vue - Données de conflit | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09149f44e80155a13986d42d2b3279e5c39c8884
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c53db386ee9eb0815ebb27f82794118035d6cba6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503479"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254733"
 ---
 # <a name="lines-view---contention-data"></a>Lignes, vue - Données de conflit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [vue lignes - données de conflit](https://docs.microsoft.com/visualstudio/profiling/lines-view-contention-data).  
-  
 La vue Lignes des données de conflit répertorie les données de performance pour les instructions qui étaient en cours d’exécution au moment de la collecte des échantillons dans le cadre de l’exécution du profilage. Dans un fichier source, une instruction peut couvrir plusieurs lignes d'un fichier source, et une ligne unique peut inclure plusieurs instructions.  
   
  Une instruction est identifiée par les données suivantes :  

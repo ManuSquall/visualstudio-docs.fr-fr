@@ -1,7 +1,7 @@
 ---
 title: Résumé par thread, rapport | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f48091bd55993e8692a382a4bd3209b31197d31f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bfb172c1b676d54312fdd49d9239fd3de92206a4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496326"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268565"
 ---
-# <a name="per-thread-summary-report"></a>Résumé par thread (rapport)
+# <a name="per-thread-summary-report"></a>Résumé par thread, rapport
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [rapport résumé par Thread](https://docs.microsoft.com/visualstudio/profiling/per-thread-summary-report).  
-  
 Cet histogramme présente la proportion de temps que chaque thread non masqué passe dans chaque catégorie d’activité pendant la plage horaire actuellement visible. « Exécution » signifie que le thread est en cours d’exécution ; toutes les autres catégories impliquent que le thread est en attente d’une opération.  
   
 ## <a name="see-also"></a>Voir aussi  
@@ -40,7 +38,7 @@ Cet histogramme présente la proportion de temps que chaque thread non masqué p
  [Durée de veille](../profiling/sleep-time.md)   
  [Durée de synchronisation](../profiling/synchronization-time.md)   
  [Temps de traitement UI](../profiling/ui-processing-time.md)   
- [Vue Threads](../profiling/threads-view-parallel-performance.md)
+ [vue Threads](../profiling/threads-view-parallel-performance.md)
 
 
 

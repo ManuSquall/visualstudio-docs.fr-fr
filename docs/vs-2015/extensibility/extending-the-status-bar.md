@@ -1,7 +1,7 @@
 ---
 title: Extension de la barre d’état | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc9a691b3ee8955f7fad33c84d7d0d40652e6a8f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c8ea7854bb90564f68a7f178ceda7b561b123dce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504612"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244736"
 ---
 # <a name="extending-the-status-bar"></a>Extension de la barre d’état
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [extension de la barre d’état](https://docs.microsoft.com/visualstudio/extensibility/extending-the-status-bar).  
-  
 Vous pouvez utiliser la barre d’état Visual Studio en bas de l’IDE pour afficher des informations.  
   
  Lorsque vous étendez la barre d’état, vous pouvez afficher des informations et l’interface utilisateur dans quatre régions : la zone de commentaires, de la barre de progression, de la région d’animation et de la zone du concepteur. La zone de commentaires permet d’afficher du texte et mettre en surbrillance le texte affiché. La barre de progression indique la progression incrémentielle pour les opérations d’exécution courte telles que l’enregistrement d’un fichier. La région d’animation affiche une animation en boucle en continu pour les opérations longues ou l’opération de durée indéterminée, tels que la création de plusieurs projets dans une solution. Et la zone du concepteur affiche le numéro de ligne et colonne de l’emplacement du curseur.  

@@ -1,7 +1,7 @@
 ---
 title: Commandes définies par l’IDE pour l’extension des systèmes de projet | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 0e33b8e9-16fa-4400-a941-e92d56120e7e
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b00a83774185b4fe65ee2b7171e25492320b5bfb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ac4cb73c5875a37d25a1eb8f4fe8600657c4b2a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503803"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270768"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>Commandes définies par l’IDE pour l’extension des systèmes de projet
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDE-Defined des commandes pour les systèmes de projet d’extension](https://docs.microsoft.com/visualstudio/extensibility/internals/ide-defined-commands-for-extending-project-systems).  
-  
 Lorsque vous souhaitez étendre les systèmes de projet, vous pouvez utiliser les commandes et commande de groupes fournis par le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE.  
   
  Les sections suivantes répertorient les éléments de commande qui sont particulièrement utiles pour l’extension des systèmes de projet.  

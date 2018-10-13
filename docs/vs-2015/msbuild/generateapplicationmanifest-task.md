@@ -1,7 +1,7 @@
 ---
 title: Tâche GenerateApplicationManifest | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b0533e5ca79bf9d2cb49149ecc80ac58c911d22
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da5c9cb78ff4d3d9542c956a377f6342945d11a0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494237"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245568"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest, tâche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [GenerateApplicationManifest, tâche](https://docs.microsoft.com/visualstudio/msbuild/generateapplicationmanifest-task).  
-  
   
 Génère un manifeste d’application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ou un manifeste natif. Un manifeste natif décrit un composant en lui définissant une identité unique et en identifiant tous les assemblys et fichiers qui le composent. Un manifeste d’application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] étend un manifeste natif en indiquant le point d’entrée de l’application et en spécifiant le niveau de sécurité des applications.  
   

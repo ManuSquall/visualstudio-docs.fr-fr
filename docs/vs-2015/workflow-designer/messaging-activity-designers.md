@@ -1,7 +1,7 @@
 ---
 title: Concepteurs d’activités de messagerie | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 6c592c748775361f3ed6a746accd0aa30dcc42af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 254b8d819da8cd1d06d21699940c3b118aa75119
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505861"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274753"
 ---
 # <a name="messaging-activity-designers"></a>Concepteurs d'activités de messagerie
 Les concepteurs d'activités de messagerie permettent de créer et configurer des activités de messagerie qui envoient et reçoivent des messages [!INCLUDE[indigo1](../includes/indigo1-md.md)] à partir d'une application [!INCLUDE[wf](../includes/wf-md.md)]. Le [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] introduit cinq activités de messagerie et [!INCLUDE[wfd1](../includes/wfd1-md.md)] fournit deux nouveaux concepteurs de modèles qui vous permettent de gérer la messagerie dans un workflow. Les rubriques contenues dans cette section et répertoriées dans le tableau suivant fournissent des conseils sur la façon d'utiliser les concepteurs d'activités et de modèles [!INCLUDE[wfd2](../includes/wfd2-md.md)].  

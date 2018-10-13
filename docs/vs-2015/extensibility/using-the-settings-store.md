@@ -1,7 +1,7 @@
 ---
 title: À l’aide de la Store paramètres | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b106604455814e8d8ed13a6c6e1eb3a2d8196b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 15f0aeda589b101d9d02c9741eabf8b0e1866e4c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507516"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273362"
 ---
 # <a name="using-the-settings-store"></a>Utilisation de la banque de paramètres
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [à l’aide de la Store paramètres](https://docs.microsoft.com/visualstudio/extensibility/using-the-settings-store).  
-  
 Il existe deux types de magasins de paramètres :  
   
 -   Paramètres de configuration, qui sont des paramètres de Visual Studio et VSPackage en lecture seule. Visual Studio fusionne les paramètres à partir de tous les fichiers .pkgdef connus dans ce magasin.  

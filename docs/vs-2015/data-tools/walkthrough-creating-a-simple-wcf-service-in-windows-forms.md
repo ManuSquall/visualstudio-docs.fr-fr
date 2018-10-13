@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : Création d’un Service WCF simple dans les Windows Forms | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e14944157a14be4a5e06c26464a4de2cdb2bff1b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6e73659c2d28cf97a8a7136ed8232cfbc5f0b77c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494846"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247206"
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>Procédure pas à pas : Création d’un Service WCF simple dans les Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : création d’un Service WCF simple dans les Windows Forms](https://docs.microsoft.com/visualstudio/data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms).  
-  
   
 Cette procédure pas à pas montre comment créer un simple service [!INCLUDE[vsindigo](../includes/vsindigo-md.md)], le tester et y accéder à partir d'une application Windows Forms.  
   

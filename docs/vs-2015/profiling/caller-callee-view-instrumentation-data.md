@@ -1,7 +1,7 @@
 ---
 title: Vue Appelant/Appelé - Données d’instrumentation | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9f00ecf2bf9e99fe2dc40c9a849fa6bbf576bc4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc820808db428ec1b4919c5d65ca9e12091a987e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503229"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250547"
 ---
 # <a name="callercallee-view---instrumentation-data"></a>Vue Appelant/Appelé - Données d’instrumentation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [vue appelant / appelé - données d’Instrumentation](https://docs.microsoft.com/visualstudio/profiling/caller-callee-view-instrumentation-data).  
-  
 La vue Appelant/Appelé affiche des données de profilage pour la fonction sélectionnée, ainsi que pour ses fonctions parents et enfants dans l’arborescence des appels. La vue Appelant/Appelé comprend trois grilles.  
   
  La grille centrale intitulée **Fonction active** contient les informations de profilage associées à la fonction sélectionnée. Les valeurs incluent tous les appels à la fonction.  

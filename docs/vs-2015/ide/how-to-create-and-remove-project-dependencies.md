@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour créer et supprimer les dépendances d’un projet | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3626cc4c13600b0a6f20cc40713bd77f4527a3ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 559aea010cb7403e9e8ea52f8bf6c6fb549c665c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504852"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247681"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Comment : créer et supprimer les dépendances d'un projet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : créer et supprimer des dépendances du projet](https://docs.microsoft.com/visualstudio/ide/how-to-create-and-remove-project-dependencies).  
-  
 Quand vous générez une solution qui contient plusieurs projets, vous pouvez être amené à générer d’abord certains projets pour générer le code utilisé par les autres projets. Quand un projet utilise un code exécutable généré par un autre projet, le projet qui génère le code une dépendance du projet qui utilise le code. Vous pouvez définir ces relations de dépendance dans la boîte de dialogue **Dépendances du projet**.  
   
 ### <a name="to-assign-dependencies-to-projects"></a>Pour assigner des dépendances à des projets  
@@ -73,7 +71,7 @@ Quand vous générez une solution qui contient plusieurs projets, vous pouvez ê
  [Génération et nettoyage de solutions et de projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)   
  [Présentation des configurations de build](../ide/understanding-build-configurations.md)   
- [NIB Comment : modifier des propriétés de projet et des paramètres de configuration](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [NIB Procédure : modification des propriétés de projet et des paramètres de configuration](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
 
 
 

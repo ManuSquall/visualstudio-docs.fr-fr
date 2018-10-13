@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumTables::Skip | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49e6e42cf2d24899c54057937b6ded310558298c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8e731462df676d9646859c127de28995ec263cff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507402"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253634"
 ---
 # <a name="idiaenumtablesskip"></a>IDiaEnumTables::Skip
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDiaEnumTables::Skip](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumtables-skip).  
-  
 Ignore un nombre spécifié de tables dans une séquence d’énumération.  
   
 ## <a name="syntax"></a>Syntaxe  

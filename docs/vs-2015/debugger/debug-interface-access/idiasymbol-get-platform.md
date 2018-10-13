@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_platform | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1bc62a75919e354906cc1cc5cb865a337f3d4117
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0406d259ea3a4e1f0e4b7f015f4adcb4fa4a4e69
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504381"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265172"
 ---
 # <a name="idiasymbolgetplatform"></a>IDiaSymbol::get_platform
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDiaSymbol::get_platform](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-platform).  
-  
 Récupère le type de plateforme pour laquelle le module a été compilée.  
   
 ## <a name="syntax"></a>Syntaxe  

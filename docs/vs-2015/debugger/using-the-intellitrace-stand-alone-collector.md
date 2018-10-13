@@ -1,7 +1,7 @@
 ---
 title: L’utilisation du collecteur autonome IntelliTrace | Documents de Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 111
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 74c17850ebbbd8a7031bc1380bc4e651d0f9dda0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b35b6b42126bb0a1b159e3bf90e67aee15dd540
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503068"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267473"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Utilisation du collecteur autonome IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [à l’aide du collecteur autonome IntelliTrace](https://docs.microsoft.com/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).  
-  
 Le **collecteur autonome IntelliTrace** vous permet de collecter des données de diagnostic IntelliTrace pour vos applications exécutées sur des serveurs de production ou d’autres environnements, sans avoir à installer Visual Studio sur l’ordinateur cible ni à modifier l’environnement du système cible. Ce collecteur fonctionne avec les applications web, SharePoint, WPF et Windows Forms. Quand vous avez terminé la collecte des données, supprimez simplement le collecteur pour le désinstaller.  
   
  Regardez IntelliTrace en action : [Collecte et analyse des données IntelliTrace dans l’environnement de production pour le débogage (vidéo Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)  
@@ -88,7 +86,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
   
 1.  Sur le serveur de votre application, créez le répertoire du collecteur, par exemple **C:\IntelliTraceCollector**  
   
-2.  Installez le collecteur à partir du Centre de téléchargement Microsoft ou du dossier d’installation de Visual Studio 2013 Update 3. [Collecteur IntelliTrace pour Visual Studio 2013 Update 4](https://www.microsoft.com/download/details.aspx?id=44909)::  
+2.  Installez le collecteur à partir du Centre de téléchargement Microsoft ou du dossier d’installation de Visual Studio 2013 Update 3. [Collecteur IntelliTrace pour Visual Studio 2013 Update 4](https://www.microsoft.com/download/details.aspx?id=44909):  
   
     -   **Centre de téléchargement Microsoft**:  
   
@@ -390,7 +388,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
   
 -   À partir d’un IntelliTrace débogage de session dans l’entreprise de Visual Studio, voir [les fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).  
   
--   À partir d’une session de test dans Microsoft Test Manager, consultez [Comment : collecter des données IntelliTrace pour aider au débogage difficiles problèmes](~/E:/Repos/visualstudio-docs-pr/docs/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).  
+-   À partir d’une session de test dans Microsoft Test Manager, consultez [Comment : collecter des données IntelliTrace pour aider au débogage des problèmes difficiles](~/E:/Repos/visualstudio-docs-pr/docs/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).  
   
 ## <a name="where-can-i-get-more-information"></a>Où peut-on obtenir plus d’informations ?  
  [Utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md)  

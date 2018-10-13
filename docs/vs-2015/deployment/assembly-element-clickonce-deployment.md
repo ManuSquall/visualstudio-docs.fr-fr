@@ -1,7 +1,7 @@
 ---
 title: '&lt;assembly&gt; , élément (déploiement ClickOnce) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 96978ec8329ddf31b2cc641bf02d2b38a9e98f4a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5fa45d64956fe1347477abb533e45565f27996f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495514"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259946"
 ---
 # <a name="ltassemblygt-element-clickonce-deployment"></a>&lt;assembly&gt; , élément (déploiement ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [ &lt;assembly&gt; , élément (déploiement ClickOnce)](https://docs.microsoft.com/visualstudio/deployment/assembly-element-clickonce-deployment).  
-  
 Élément de niveau supérieur pour le manifeste de déploiement.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -48,7 +46,7 @@ Vous trouverez la dernière version de cette rubrique dans [ &lt;assembly&gt; , 
 ## <a name="elements-and-attributes"></a>Éléments et attributs  
  Le `assembly` élément est l’élément racine et est obligatoire. Le premier élément de relation contenant-contenu doit être un `assemblyIdentity` élément. Les éléments du manifeste doivent être dans les espaces de noms suivants : `urn:schemas-microsoft-com:asm.v1`, `urn:schemas-microsoft-com:asm.v2`, et `http://www.w3.org/2000/09/xmldsig#`. Les éléments enfants de l’assembly doivent également être dans ces espaces de noms, par héritage ou par balisage.  
   
- Le `assembly` élément a l’attribut suivant.  
+ L’élément `assembly` comporte l’attribut suivant.  
   
 |Attribut|Description|  
 |---------------|-----------------|  

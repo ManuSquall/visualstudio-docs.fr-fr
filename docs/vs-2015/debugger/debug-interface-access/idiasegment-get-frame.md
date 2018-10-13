@@ -1,7 +1,7 @@
 ---
 title: IDiaSegment::get_frame | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2dfebd3a6086422169fb273768643968675e9bbf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b2538c2199493c7c7fe6434e7850a4b9e254f01
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495229"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270931"
 ---
 # <a name="idiasegmentgetframe"></a>IDiaSegment::get_frame
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDiaSegment::get_frame](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasegment-get-frame).  
-  
 Récupère le numéro de segment.  
   
 ## <a name="syntax"></a>Syntaxe  

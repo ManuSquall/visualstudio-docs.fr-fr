@@ -1,7 +1,7 @@
 ---
 title: 'Comment : créer un ensemble de règles personnalisé | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ee21452912fa87b63b49db609828ef44cac7c4c3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4b6c401b602575b34fb80ab98b31bb4ebcd1620
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496327"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255500"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>Comment : créer un ensemble de règles personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : créer un ensemble de règles personnalisé](https://docs.microsoft.com/visualstudio/code-quality/how-to-create-a-custom-rule-set).  
-  
 Dans [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)], et [!INCLUDE[vsPro](../includes/vspro-md.md)], vous pouvez créer et modifier un personnalisé *ensemble de règles* pour répondre aux besoins spécifiques de projet associés à l’analyse du code. Pour créer une règle personnalisée définie, vous ouvrez un ou des ensembles de règles standard dans l’éditeur d’ensemble de règles. Vous pouvez ensuite ajouter ou supprimer des règles spécifiques, et vous pouvez modifier l’action qui se produit lorsque l’analyse du code détermine qu’une règle a été violée.  
   
  Pour créer une nouvelle règle personnalisée définie, vous l’enregistrez à l’aide d’un nouveau nom de fichier. L’ensemble de règles personnalisé est automatiquement affecté au projet.  

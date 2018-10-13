@@ -1,7 +1,7 @@
 ---
 title: 'Comment : jeu de Configurations Debug et Release | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -40,18 +40,16 @@ caps.latest.revision: 48
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 137c85f5433343327cf677ef76c1116bd6ef6821
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7e0dae046e02685e7ce1d6ce7f744b568e47c5eb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493345"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243124"
 ---
 # <a name="how-to-set-debug-and-release-configurations"></a>Comment : définir des configurations Debug et Release
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : définir Configurations Debug et Release](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations).  
-  
 Les projets Visual Studio ont des configurations Release et Debug distinctes pour votre programme. Comme le nom l'indique, vous générez la version Debug pour le débogage et la version Release pour la distribution de la version finale.  
   
  La configuration Debug de votre programme est compilée avec des informations de débogage relatives aux symboles et aucune optimisation. L'optimisation complique le débogage, étant donné que la relation entre le code source et les instructions générées est plus complexe.  

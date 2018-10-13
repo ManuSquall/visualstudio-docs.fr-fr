@@ -1,7 +1,7 @@
 ---
 title: Extensibilité du débogueur Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: c088b6a2-c3ad-446b-830d-9c6f41b2934b
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d4c3a9644e7150ea31cca2aba927bbdbacb8b0eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca40964befc940bd0cf28457755f5f338ea36579
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506433"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212613"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Extensibilité du débogueur de Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [extensibilité du débogueur Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/debugger/visual-studio-debugger-extensibility).  
-  
 Visual Studio inclut un débogueur de code source totalement interactives, en fournissant un outil puissant et facile à utiliser pour le suivi des bogues dans votre programme. Le débogueur a prise en charge complète Visual Basic, c#, C/C++ et JavaScript. Toutefois, avec la [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], qui est disponible à partir de la [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=214453),, autres langages de programmation peuvent être pris en charge dans le débogueur avec les mêmes fonctionnalités riches.  
   
  Le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] débogueur est le serveur frontal courantes (autrement dit, l’interface utilisateur) pour les composants de débogage qui sont, quant à lui, spécifiques au langage en cours de débogage. De nouveaux langages, tout ce qui est nécessaire pour prendre en charge par le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] débogueur consiste à créer les composants principaux nécessaires, comme un moteur de débogage (dé). C’est là le [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] arrive.  

@@ -1,7 +1,7 @@
 ---
 title: Propriétés d’éléments des diagrammes d’activités UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 19
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c50a84f9e3c5425459ea458c3f6bbc282d64b0b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c9f2830f66ad7f79a49b096bb489b542124efe6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494131"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269977"
 ---
 # <a name="properties-of-elements-on-uml-activity-diagrams"></a>Propriétés d'éléments sur les diagrammes d'activités UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [propriétés d’éléments des diagrammes d’activités UML](https://docs.microsoft.com/visualstudio/modeling/properties-of-elements-on-uml-activity-diagrams).  
-  
 Sur un diagramme d'activités UML, chaque élément du diagramme possède des propriétés. Pour afficher les propriétés d’un élément, cliquez sur l’élément sur le diagramme ou dans **Explorateur de modèles UML** puis cliquez sur **propriétés**. Les propriétés s’affichent dans le **propriétés** fenêtre.  
   
 > [!NOTE]

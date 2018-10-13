@@ -1,7 +1,7 @@
 ---
 title: Récupération automatique, Environnement, boîte de dialogue Options | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1fc2eb7cb70fbbafc91880d33b01c87f84073dfa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4be9e975c850101874bd0ecef51478cc4c3067c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502244"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263983"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>Récupération automatique, Environnement, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [récupération automatique, environnement, boîte de dialogue Options](https://docs.microsoft.com/visualstudio/ide/reference/autorecover-environment-options-dialog-box).  
-  
   
 Utilisez cette page de la boîte de dialogue Options pour spécifier si les fichiers sont automatiquement sauvegardés ou non. Cette page vous permet également de spécifier si les fichiers modifiés sont restaurés ou non quand l’environnement de développement intégré (IDE) s’arrête de façon inattendue. Vous pouvez accéder à cette boîte de dialogue en sélectionnant **Options** dans le menu **Outils**, puis la page **Récupération automatique** dans le dossier **Environnement**. Si cette page n’apparaît pas dans la liste, sélectionnez **Afficher tous les paramètres** dans la boîte de dialogue **Options**.  
   

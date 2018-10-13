@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : création d’une boule de billard 3D réaliste | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f20907e33ba8a0f077c0d68c6fbfebf2fd1d0b44
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 303d826a22ff67ec499fcd4e8d59d6a7819a822d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501398"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274116"
 ---
 # <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Procédure pas à pas : création d'une boule de billard 3D réaliste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : création d’une boule de billard 3D réaliste](https://docs.microsoft.com/visualstudio/designers/walkthrough-creating-a-realistic-3-d-billiard-ball).  
-  
 Cette procédure pas à pas montre comment créer une boule de billard 3D réaliste en utilisant le concepteur Shader et l’Éditeur d’images dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. L’apparence 3D de la boule de billard s’obtient en combinant plusieurs techniques de nuanceur avec les ressources appropriées en texture.  
   
  Ce document illustre ces activités :  

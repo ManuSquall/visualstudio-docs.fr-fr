@@ -1,7 +1,7 @@
 ---
 title: Écriture de tests unitaires pour C-C++ à l’aide du framework de tests unitaires Microsoft pour C++ | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d4e5da38500e5fd35fb14e1854fe1fa378a8553c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c3b24aea533083e7d9158b54e2e68b5095f06df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505645"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250534"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Écriture de tests unitaires pour C/C++ à l’aide du framework de tests unitaires Microsoft pour C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [écriture de tests unitaires pour C/C++ avec l’infrastructure de tests unitaires Microsoft pour C++](https://docs.microsoft.com/visualstudio/test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp).  
-  
 Dans Visual Studio, vous pouvez créer des tests unitaires pour le code non managé écrit en C++. Le code non managé est parfois appelé code natif.  
   
  La procédure suivante contient les informations essentielles qui vous aideront à démarrer. Les sections suivantes fournissent une procédure pas à pas qui décrit les étapes plus en détail.  

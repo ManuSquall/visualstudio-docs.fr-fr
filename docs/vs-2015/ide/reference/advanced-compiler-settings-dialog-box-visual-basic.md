@@ -1,7 +1,7 @@
 ---
 title: Paramètres avancés du compilateur, boîte de dialogue (Visual Basic) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 683bf50a62b29369bd70394a6001d255e3e4f29b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6f64f5510974af133100a355656bf3689d928869
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501585"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261584"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Paramètres avancés du compilateur, boîte de dialogue (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [avancé de boîte de dialogue de paramètres du compilateur (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic).  
-  
   
 Utilisez la boîte de dialogue **Paramètres avancés du compilateur** du **Concepteur de projets** pour spécifier les propriétés de configuration de build avancées du projet. Cette boîte de dialogue s’applique uniquement aux projets Visual Basic.  
   

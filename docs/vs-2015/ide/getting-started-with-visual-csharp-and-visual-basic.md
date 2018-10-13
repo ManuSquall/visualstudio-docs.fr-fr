@@ -1,14 +1,14 @@
 ---
 title: Mise en route avec Visual c# et Visual Basic | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-general
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - C# tutorial
 - Visual Basic tutorial
@@ -21,18 +21,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d526da8cb5013de7f56d5cc43b8ee2ec52014b47
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 747b36d69bfbd0a70c6df67e57174b3baf623543
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493681"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253771"
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic"></a>Mises en route de Visual Basic et Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [mise en route avec Visual c# et Visual Basic](https://docs.microsoft.com/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic).  
-  
 Si vous débutez en Visual C# ou en Microsoft Visual Basic, les didacticiels sont un bon point de départ. L'Aide de Mise en route comprend une suite de leçons qui vous initient à Visual C# et à Visual Basic. Amusez-vous et écrivez une grande application logicielle.  
   
  Pour en savoir plus sur Visual C++, consultez les [ressources Visual C++](http://msdn.microsoft.com/vstudio/hh386302.aspx).  

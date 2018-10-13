@@ -1,7 +1,7 @@
 ---
 title: Génération de code et modèles de texte T4 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,19 +22,17 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e57349e8c6f969986333eb8b12a9a3cf70ba3ce6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d1310d08138e4df172a5dc9f390d0407a68fe769
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493160"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229818"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Génération de code et modèles de texte T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [génération de Code et modèles de texte T4](https://docs.microsoft.com/visualstudio/modeling/code-generation-and-t4-text-templates).  
-  
-Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], un *modèle de texte T4* est un mélange de blocs de texte et la logique de contrôle qui peut générer un fichier texte. La logique de contrôle est écrite comme des fragments de code de programme dans [!INCLUDE[csprcs](../includes/csprcs-md.md)] ou [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. Dans Visual Studio 2015 Update 2 et versions ultérieures, vous pouvez utiliser les fonctionnalités C# version 6.0 dans les directives de modèles T4. Le fichier généré peut être du texte de tout type, tel qu’une page web ou un fichier de ressources, ou du code source de programme dans tout langage.  
+Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], un *modèle de texte T4* est un mélange de blocs de texte et de logique de contrôle qui peut générer un fichier texte. La logique de contrôle est écrite comme des fragments de code du programme en [!INCLUDE[csprcs](../includes/csprcs-md.md)] ou [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. Dans Visual Studio 2015 Update 2 et versions ultérieures, vous pouvez utiliser les fonctionnalités C# version 6.0 dans les directives de modèles T4. Le fichier généré peut être du texte de tout type, tel qu’une page web ou un fichier de ressources, ou du code source de programme dans tout langage.  
   
  Il existe deux types de modèles de texte T4 :  
   
@@ -58,13 +56,13 @@ string webResponseText = new MyTemplate().TransformText();
   
 ```  
   
- Votre application peut s’exécuter sur un ordinateur qui n’a pas [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] installé.  
+ Votre application peut s’exécuter sur un ordinateur sur lequel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] n’est pas installé.  
   
  Pour créer un modèle au moment de l’exécution, ajoutez un fichier **Modèle de texte prétraité** à votre projet. Vous pouvez également ajouter un fichier texte brut et affecter à sa propriété **Outil personnalisé** la valeur **TextTemplatingFilePreprocessor**.  
   
  Pour plus d’informations, consultez [génération de texte d’exécution avec les modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md). Pour plus d’informations sur la syntaxe des modèles, consultez [écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md).  
   
- **Modèles de texte T4 au moment du design** sont exécutées dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour définir une partie du code source et autres ressources de votre application.  
+ Les**modèles de texte T4 au moment du design** sont exécutés dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour définir une partie du code source et d’autres ressources de votre application.  
  En général, vous utilisez plusieurs modèles qui lisent les données dans une base de données ou un fichier d’entrée unique et génèrent une partie de vos fichiers `.cs`ou `.vb`, ou d’autres fichiers sources. Chaque modèle génère un fichier. Ils sont exécutés dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
  Par exemple, vos données d’entrée peuvent être un fichier XML de données de configuration. Chaque fois que vous modifiez le fichier XML pendant le développement, les modèles de texte régénèrent une partie du code d’application. L’un des modèles peut ressembler à l’exemple suivant :  
@@ -112,7 +110,7 @@ namespace Fabrikam.FirstJob
  La génération de code et d’autres ressources à partir d’un modèle vous permet de mettre à jour votre application en mettant à jour le modèle.  
   
  [Génération de code dans un processus de génération](../modeling/code-generation-in-a-build-process.md)  
- Si vous avez installé [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK, vous pouvez garantir le logiciel généré restera à jour des modifications dans le modèle.  
+ Si vous avez installé le Kit de développement logiciel (SDK) Visualization and Modeling pour [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , vous pouvez garantir que le logiciel généré restera à jour des modifications dans le modèle.  
   
  [Écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md)  
  Syntaxe d’un fichier modèle de texte.  

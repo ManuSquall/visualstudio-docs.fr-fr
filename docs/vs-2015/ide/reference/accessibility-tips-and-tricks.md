@@ -1,7 +1,7 @@
 ---
 title: Conseils et astuces d’accessibilité │ Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39f12a7f895d4bd1a625b22dee1fa3465a625bec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4fe4f45f6c858ede7bebc7cbbf3a5e734130000
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507576"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241018"
 ---
 # <a name="accessibility-tips-and-tricks"></a>Conseils et astuces d'accessibilité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [des astuces d’accessibilité](https://docs.microsoft.com/visualstudio/ide/reference/accessibility-tips-and-tricks).  
-  
   
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] inclut des fonctionnalités d’accessibilité intégrées pour utiliser le clavier facilement ainsi que des lecteurs d’écran ou d’autres appareils de technologie d’assistance. Cette rubrique propose des suggestions permettant d’optimiser [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pour l’accessibilité, ainsi que certaines combinaisons de touches de raccourci utiles.  
   

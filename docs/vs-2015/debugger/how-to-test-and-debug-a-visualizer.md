@@ -1,7 +1,7 @@
 ---
 title: 'Comment : tester et déboguer un visualiseur | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9972951b1c5064fcc0582909976a234158ea096
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dba924f94da967cd19d63982ee2f6eb93384d0a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507600"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237248"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>Comment : tester et déboguer un visualiseur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : tester et déboguer un visualiseur](https://docs.microsoft.com/visualstudio/debugger/how-to-test-and-debug-a-visualizer).  
-  
 Après avoir écrit un visualiseur, vous devez le déboguer et le tester.  
   
  Une façon de tester un visualiseur consiste à l'installer dans Visual Studio et de l'appeler d'une fenêtre du débogueur. (Consultez [Comment : installer un visualiseur](../debugger/how-to-install-a-visualizer.md).) Si vous procédez ainsi, vous devez utiliser une deuxième instance de Visual Studio pour attacher et déboguer le visualiseur, qui s'exécute dans la première instance du débogueur.  

@@ -1,7 +1,7 @@
 ---
 title: Suppression d’un point d’arrêt | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 75a046cc-d20a-4c79-ad2d-1f18426ac5d0
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 18b88cc55a4c641e56c062356a9f74c2224835a8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8b20ac5b76dfcd24e0dbed5fbc08720c33d88fdd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504524"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254083"
 ---
 # <a name="deleting-a-breakpoint"></a>Suppression d’un point d’arrêt
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [suppression d’un point d’arrêt](https://docs.microsoft.com/visualstudio/extensibility/debugger/deleting-a-breakpoint).  
-  
 La section suivante décrit le processus lors de la suppression d’un point d’arrêt en attente :  
   
 ## <a name="deletion-process"></a>Processus de suppression  

@@ -1,7 +1,7 @@
 ---
 title: Ouvrir un projet, commande | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9c8f70d5605f4ee47171992e3a94c145cbdc8785
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b25ee0e6ba4dfa5c29d5a009087afb55509d0c08
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493192"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263913"
 ---
 # <a name="open-project-command"></a>Ouvrir un projet, commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [commande Ouvrir de projet](https://docs.microsoft.com/visualstudio/ide/reference/open-project-command).  
-  
   
 Ouvre un projet existant.  
   
@@ -63,7 +61,7 @@ File.OpenProject filename
  [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Fenêtre Commande](../../ide/reference/command-window.md)   
  [Zone Rechercher/Commande](../../ide/find-command-box.md)   
- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

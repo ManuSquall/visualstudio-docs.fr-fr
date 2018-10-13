@@ -1,7 +1,7 @@
 ---
 title: GenerateDeploymentManifest, tâche | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 86b26edae7b96c9ce29bcef4ed1b37744faf68eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ad0b9919c5c567662d78573573f1bf046c93552
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505236"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261885"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest, tâche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [GenerateDeploymentManifest, tâche](https://docs.microsoft.com/visualstudio/msbuild/generatedeploymentmanifest-task).  
-  
   
 Génère un manifeste de déploiement [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Un manifeste de déploiement [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] décrit le déploiement d’une application en définissant une identité unique pour le déploiement, en identifiant des caractéristiques de déploiement comme le mode d’installation ou le mode en ligne, en spécifiant les paramètres de mise à jour de l’application et les emplacements de mise à jour, et en indiquant le manifeste d’application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] correspondant.  
   

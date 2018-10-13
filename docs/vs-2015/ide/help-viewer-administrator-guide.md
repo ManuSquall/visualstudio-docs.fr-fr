@@ -1,7 +1,7 @@
 ---
 title: Guide de l’administrateur Help Viewer │ Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 97d28d0651be2fd04e283b05e5a9a0e81997c338
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d68f1ab876ffc24e5b422265f427ef5b26937d23
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492821"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256956"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guide de l'administrateur Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Guide administrateur de la visionneuse d’aide](https://docs.microsoft.com/visualstudio/ide/help-viewer-administrator-guide).  
-  
 La visionneuse d’aide vous permet de gérer les installations locales d’aide pour les environnements réseau avec ou sans accès à Internet. Le contenu d’aide locale est configuré sur la base de l’ordinateur. Par défaut, les utilisateurs doivent disposer des droits d’administrateur pour mettre à jour leur installation d’aide locale.  
   
  Si votre environnement réseau permet aux clients d’accéder à Internet, la visionneuse d’aide vous permet d’utiliser les scripts de ligne de commande pour déployer le contenu d’aide locale depuis Internet.  

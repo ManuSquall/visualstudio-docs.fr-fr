@@ -1,7 +1,7 @@
 ---
 title: 'Comment : modifier l’ordinateur de lecture Graphics Diagnostics | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e33d2acc46cbf92c9b2bbd699903ad3169661a54
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 327dd9c14c4bbfe2b5c37cbe26823d8bd02c76ed
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502318"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274467"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Comment : modifier l’ordinateur de lecture Graphics Diagnostics
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : modifier l’ordinateur de lecture Graphics Diagnostics](https://docs.microsoft.com/visualstudio/debugger/graphics/how-to-change-the-graphics-diagnostics-playback-machine).  
-  
 Vous pouvez lire les informations graphiques à l’aide de votre ordinateur local, ou à l’aide d’un ordinateur distant ou un périphérique.  
   
 ## <a name="choosing-a-playback-machine"></a>Choix d’un ordinateur de lecture  

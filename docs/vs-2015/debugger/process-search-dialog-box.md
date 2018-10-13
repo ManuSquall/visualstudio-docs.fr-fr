@@ -1,7 +1,7 @@
 ---
 title: Boîte de dialogue de recherche processus | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 455921678267ae918175445bdd06fe4391f84fff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 43f856e849974375e9360dac1844e634c9915000
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506732"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244645"
 ---
 # <a name="process-search-dialog-box"></a>Boîte de dialogue Recherche d'un processus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [boîte de dialogue de recherche de processus](https://docs.microsoft.com/visualstudio/debugger/process-search-dialog-box).  
-  
 Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud d’un processus spécifique dans [vue processus](../debugger/processes-view.md). Pour afficher cette boîte de dialogue, déplacez le focus à un **processus** fenêtre d’affichage. Puis choisissez **rechercher le processus** à partir de la **recherche** menu.  
   
  Les paramètres suivants sont disponibles :  

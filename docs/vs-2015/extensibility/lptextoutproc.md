@@ -1,7 +1,7 @@
 ---
 title: LPTEXTOUTPROC | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e8fc709353e4a2e39059cade96aa49c30fedac4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5ef5d1c5e92282de6454ca3da8c2adbb8914248
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505813"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266942"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [LPTEXTOUTPROC](https://docs.microsoft.com/visualstudio/extensibility/lptextoutproc).  
-  
 Lorsque l’utilisateur exécute une opération de contrôle de code source à partir d’à l’intérieur de l’environnement de développement intégré (IDE), le plug-in de contrôle de code source pouvez souhaiter transmettre les messages d’erreur ou d’état concernant l’opération. Le plug-in peut afficher ses propres boîtes de message à cet effet. Toutefois, pour une intégration plus transparente, le plug-in peut passer des chaînes à l’IDE, ce qui les affiche ensuite dans ses moyen natif d’affichage des informations d’état. Le mécanisme est le `LPTEXTOUTPROC` pointeur de fonction. L’IDE implémente cette fonction (décrite plus en détail ci-dessous) pour afficher l’erreur et état.  
   
  L’IDE transmet le contrôle de source de plug-in un pointeur de fonction à cette fonction, comme le `lpTextOutProc` paramètre, quand vous appelez le [SccOpenProject](../extensibility/sccopenproject-function.md). Pendant une opération de contrôle de code source, par exemple, au milieu d’un appel à la [SccGet](../extensibility/sccget-function.md) le plug-in impliquant de nombreux fichiers, peut appeler le `LPTEXTOUTPROC` fonction en passant périodiquement des chaînes à afficher. L’IDE peut afficher ces chaînes sur une barre d’état dans une fenêtre de sortie, ou dans un message distinct, comme il convient. Si vous le souhaitez, l’IDE peut être en mesure d’afficher certains messages avec un **Annuler** bouton. Cela permet à l’utilisateur d’annuler l’opération, et vous offre l’IDE la possibilité de transmettre ces informations au plug-in.  

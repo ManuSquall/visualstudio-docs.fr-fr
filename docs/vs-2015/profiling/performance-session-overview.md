@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble des sessions de performances | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da90a5ae4e35f36306e8537ca2cd743e98ffd33f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 23de3ebb79acb342f711593200795246ded97c49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503684"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242812"
 ---
-# <a name="performance-session-overview"></a>Vue d’ensemble de la session de performance
+# <a name="performance-session-overview"></a>Vue d’ensemble des sessions de performances
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [vue d’ensemble de la Session de Performance](https://docs.microsoft.com/visualstudio/profiling/performance-session-overview).  
-  
 Cette vue d’ensemble explique les principes de base du profilage. Les développeurs qui débutent dans le domaine des tâches liées aux performances vont découvrir comment les outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] peuvent leur permettre de devenir rapidement productifs et d’optimiser les performances de leur code. Quant aux développeurs expérimentés dans le profilage, ils peuvent obtenir une vue d’ensemble des fonctionnalités et des processus spécifiques des outils de profilage.  
   
  Les outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permettent d’identifier les problèmes de performance dans le code source et de comparer les performances des solutions potentielles. Les Assistants et les paramètres par défaut des outils de profilage peuvent vous fournir instantanément des renseignements sur de nombreux problèmes de performance. Les fonctionnalités et les options des outils de profilage contrôlent avec précision le processus de profilage. Elles permettent notamment de cibler des sections de code précises, de collecter des informations de durée de niveau bloc et d’inclure des données supplémentaires sur les performances du processeur et du système dans vos données.  

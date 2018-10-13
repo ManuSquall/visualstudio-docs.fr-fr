@@ -1,7 +1,7 @@
 ---
 title: IDiaLoadCallback2::RestrictOriginalPathAccess | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb703ea0ffdab842e735a896c26066173943205e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7ebea1841a5d546bf30de7a900abf5278b98067
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501623"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265302"
 ---
 # <a name="idialoadcallback2restrictoriginalpathaccess"></a>IDiaLoadCallback2::RestrictOriginalPathAccess
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDiaLoadCallback2::RestrictOriginalPathAccess](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idialoadcallback2-restrictoriginalpathaccess).  
-  
 Détermine s’il est OK rechercher un fichier .pdb dans le répertoire de débogage d’origine.  
   
 ## <a name="syntax"></a>Syntaxe  

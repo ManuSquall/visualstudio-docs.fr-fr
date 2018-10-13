@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : amélioration de la réactivité de l’interface utilisateur (HTML) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9409a8af25d2283e3b808c7e779aa86361d2e454
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 40cc0e20b08f151e3a7bbda8060469f40b2b9050
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501789"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258308"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Procédure pas à pas : amélioration de la réactivité de l'interface utilisateur (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : amélioration UI responsiveness (HTML)](https://docs.microsoft.com/visualstudio/profiling/walkthrough-improving-ui-responsiveness-html).  
-  
 Cette procédure pas à pas vous guide dans le processus d’identification et de résolution d’un problème de performance à l’aide du [profileur de réactivité de l’interface utilisateur XAML](../profiling/html-ui-responsiveness.md). Le profileur est disponible dans Visual Studio pour les applications universelles Windows et du Windows Store en JavaScript. Dans ce scénario, vous créez une application de test de performance qui met à jour les éléments DOM trop fréquemment, et vous utilisez le profileur pour identifier et résoudre ce problème.  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Création et exécution de l'application de test de performance  

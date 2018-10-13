@@ -1,7 +1,7 @@
 ---
 title: Référence du schéma Package et produit | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7812354ee1de5341838029e2198912840da6f0b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6fb70a1dff0f166aabeaf0facdd4b031f3d4fb6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507815"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271028"
 ---
 # <a name="product-and-package-schema-reference"></a>Référence du schéma de produit et de package
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [produit et la référence du schéma de Package](https://docs.microsoft.com/visualstudio/deployment/product-and-package-schema-reference).  
-  
 Un *fichier produit* est un manifeste XML qui décrit toutes les dépendances externes requis par un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application. Exemples de dépendances externes le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] et Microsoft Data Access Components (MDAC). Un fichier de package est similaire à un fichier de produit, mais est utilisé pour installer les composants dépendent de la culture d’une dépendance, tels que les assemblys localisés, les contrats de licence et documentation.  
   
  Le fichier de produit et les packages compose d’un niveau supérieur `Product` ou `Package` élément, chacun d’eux contient les éléments suivants.  
@@ -169,7 +167,7 @@ Un *fichier produit* est un manifeste XML qui décrit toutes les dépendances ex
   
 ## <a name="see-also"></a>Voir aussi  
  [Manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [Manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md)
+ [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
 
 
 

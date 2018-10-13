@@ -1,7 +1,7 @@
 ---
 title: Définir un profil pour étendre UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b54babfc6bb4350ba1cc99d6ce34a05f70dab693
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: aebac5a95a6d1b1ab6aa0d4230094003de2a2062
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590821"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221258"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Définir un profil pour étendre UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [définir un profil pour étendre UML](https://docs.microsoft.com/visualstudio/modeling/define-a-profile-to-extend-uml).  
-  
 Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèle standard à des fins spécifiques. Un profil définit un ou plusieurs *stéréotypes UML*. Un stéréotype permet de marquer un type comme représentant un genre d'objet particulier. Un stéréotype peut également étendre la liste de propriétés d'un élément.  
   
  Plusieurs profils sont installés avec les éditions prises en charge de Visual Studio. Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport). Pour plus d’informations sur ces profils et sur la façon d’appliquer des stéréotypes, consultez [personnaliser votre modèle avec des profils et stéréotypes](../modeling/customize-your-model-with-profiles-and-stereotypes.md).  

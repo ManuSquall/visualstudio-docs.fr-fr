@@ -1,7 +1,7 @@
 ---
 title: Modifier & Continuer (Visual C++) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b95de832050cd6283b85ec4fe6bd99b67c8c1d4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c82835c669eb1afd7f2fc558f89c3c30382a9b0a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506670"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255078"
 ---
 # <a name="edit-and-continue-visual-c"></a>Modifier & Continuer (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Modifier & Continuer (Visual C++)](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-visual-cpp).  
-  
 Vous pouvez utiliser Modifier et continuer dans les projets Visual C++. Consultez [modifications de Code prises en charge (C++)](../debugger/supported-code-changes-cpp.md) pour plus d’informations sur les limitations de modifier & Continuer.  
   
  À partir de Visual Studio 2015 Update 1, vous pouvez maintenant utiliser Modifier & Continuer dans les applications Windows Store C++ et DirectX, car il prend désormais en charge la **/Zi** commutateur de compilateur avec **/bigobj** basculer. Vous pouvez également utiliser Modifier & Continuer avec les fichiers binaires compilés avec la **/FASTLINK** basculer.  

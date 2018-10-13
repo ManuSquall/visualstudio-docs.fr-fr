@@ -1,7 +1,7 @@
 ---
 title: Créer et exécuter des tests unitaires pour une application du Windows Store dans Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 28
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: 76a73232cf4c522baf261d50910d188234e8a4c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea2cf8293a0969a152e38304b469e0b4042073c0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501254"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249506"
 ---
-# <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>Créer et exécuter des tests unitaires pour une application du Windows Store dans Visual Studio
+# <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>Créer et exécuter des tests unitaires pour une application du Windows Store dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [créer et tests unitaires exécution pour une application de Store dans Visual Studio](https://docs.microsoft.com/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio).  
-  
 Les outils de test unitaire Visual Studio 2012 Express pour Windows 8 sont destinés à aider les développeurs et les équipes qui intègrent les tests unitaires à leurs pratiques de développement de logiciels. Les tests unitaires offrent aux développeurs et aux testeurs une solution efficace et facile à gérer qui permet de rechercher les erreurs dans les méthodes des classes au sein des projets Visual C#, Visual Basic et Visual C++.  
   
 > [!NOTE]

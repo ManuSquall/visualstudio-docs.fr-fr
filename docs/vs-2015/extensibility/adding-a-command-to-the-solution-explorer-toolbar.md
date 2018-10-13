@@ -1,7 +1,7 @@
 ---
 title: Ajout d’une commande à la barre d’outils de l’Explorateur de solutions | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0dfc2aeb0b0e73e48fd0dcf64b5b7c09fcbea9f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f32cc47b796ea7d32207448e7888c17a1d40a73a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507441"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254377"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Ajout d’une commande à la barre d’outils de l’Explorateur de solutions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Ajout d’une commande à la barre d’outils de l’Explorateur de solutions](https://docs.microsoft.com/visualstudio/extensibility/adding-a-command-to-the-solution-explorer-toolbar).  
-  
 Cette procédure pas à pas montre comment ajouter un bouton à la **l’Explorateur de solutions** barre d’outils.  
   
  N’importe quelle commande dans un menu ou une barre d’outils est appelée un bouton dans Visual Studio. Lorsque le bouton est activé, le code dans le Gestionnaire de commandes est exécuté. En règle générale, les commandes associées sont regroupés pour former un groupe. Menus ou barres d’outils agissent comme des conteneurs pour les groupes. Priorité détermine l’ordre dans lequel les commandes individuelles dans un groupe apparaissent dans le menu ou la barre d’outils. Vous pouvez empêcher un bouton de s’afficher sur la barre d’outils ou dans le menu en contrôlant sa visibilité. Une commande qui est répertoriée dans un `<VisibilityConstraints>` section du fichier .vsct apparaît uniquement dans le contexte associé. La visibilité ne peut pas être appliquée aux groupes.  

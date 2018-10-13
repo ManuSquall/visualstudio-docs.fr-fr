@@ -1,7 +1,7 @@
 ---
 title: Analyseur de Service de langage hérité et le moteur d’analyse | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5bd5fa0fd23f2608e7cfd00896b0632cfb13fa38
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: f3d704be00294f1b7b52e5a9bd4a01d0692bc5ee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880234"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255285"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Scanneur et analyseur du service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Analyseur de Service de langage hérité et scanneur](https://docs.microsoft.com/visualstudio/extensibility/internals/legacy-language-service-parser-and-scanner).  
-  
 L’analyseur est le cœur du service de langage. Les classes de langage de Managed Package Framework (MPF) nécessitent un analyseur de langage pour sélectionner des informations sur le code affiché. Un analyseur sépare le texte en jetons lexicaux et identifie ces jetons par type et de fonctionnalités.  
   
 ## <a name="discussion"></a>Discussion  

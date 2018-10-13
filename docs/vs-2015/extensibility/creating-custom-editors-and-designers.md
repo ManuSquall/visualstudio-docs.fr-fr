@@ -1,7 +1,7 @@
 ---
 title: Création de concepteurs et éditeurs personnalisés | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e9916d58a714580162b7295df02907eed8b65569
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1abb0905e276c2e9a2c5fc99b7d77edffedbb2d7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504086"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242585"
 ---
 # <a name="creating-custom-editors-and-designers"></a>Création d’éditeurs et de concepteurs personnalisés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [création des éditeurs personnalisés et les concepteurs](https://docs.microsoft.com/visualstudio/extensibility/creating-custom-editors-and-designers).  
-  
 L’environnement de développement intégré (IDE) Visual Studio peut héberger différents types de l’éditeur :  
   
 -   L’éditeur principal de Visual Studio  
