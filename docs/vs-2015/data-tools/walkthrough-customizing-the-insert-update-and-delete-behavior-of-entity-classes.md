@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : Personnalisation de l’insertion, mise à jour et supprimer le comportement des classes d’entité | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4bc04af81d3617646f5c7311919ad9ef36a28d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d8ef69258d9c672bb5deb01b9c2e0972d4e8303
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495527"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193542"
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Procédure pas à pas : Personnalisation de l’insertion, mise à jour et supprimer le comportement des classes d’entité
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : personnalisation de l’insertion, mise à jour et supprimer le comportement des classes d’entité](https://docs.microsoft.com/visualstudio/data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes).  
-  
   
 Le [outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fournit une aire de conception visuelle pour créer et modifier [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] des classes (classes d’entité) basées sur des objets dans une base de données. À l’aide de [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655), vous pouvez utiliser la technologie LINQ pour les bases de données access SQL. Pour plus d’informations, consultez [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).  
   
@@ -257,7 +255,7 @@ Le [outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-vi
     >  Si votre application utilise SQL Server Express Edition, selon la valeur de la **Copy to Output Directory** propriété du fichier de base de données, les modifications n’apparaissent pas lorsque vous appuyez sur F5 à l’étape 10. Pour plus d’informations, consultez [Comment : gérer les fichiers de données Local dans votre projet](../data-tools/how-to-manage-local-data-files-in-your-project.md).  
   
 ## <a name="next-steps"></a>Étapes suivantes  
- Selon les spécifications de votre application, vous pouvez effectuer différentes étapes après avoir créé des classes d'entité [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]. Vous pouvez apporter à cette procédure pas à pas les améliorations suivantes :  
+ Selon les exigences de votre application, vous pouvez effectuer différentes étapes après avoir créé des classes d’entité [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]. Vous pouvez apporter à cette procédure pas à pas les améliorations suivantes :  
   
 -   Implémenter la vérification des accès concurrentiels pendant les mises à jour. Pour plus d’informations, consultez [d’accès concurrentiel optimiste : vue d’ensemble](http://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694).  
   

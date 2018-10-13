@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : profilage à l’aide d’outils en ligne de commande et de l’échantillonnage | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 703faf6ca5cd50fc340ecf81dec1c7c619d3bfa6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cec9ac0038c84e267d046d35e5d65cc83d9c35c3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492771"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203214"
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>Procédure pas à pas : profilage de la ligne de commande à l’aide de l’échantillonnage
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>Procédure pas à pas : profilage de la ligne de commande à l’aide de l’échantillonnage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : profilage de l’échantillonnage à l’aide de ligne de commande](https://docs.microsoft.com/visualstudio/profiling/walkthrough-command-line-profiling-using-sampling).  
-  
 Cette procédure pas à pas montre comment profiler une application à l’aide d’outils en ligne de commande et de l’échantillonnage pour identifier les problèmes de performances.  
   
  Dans cette procédure pas à pas, vous allez voir comment profiler une application managée à l’aide d’outils de ligne de commande et utiliser l’échantillonnage pour isoler et identifier les problèmes de performances de l’application.  

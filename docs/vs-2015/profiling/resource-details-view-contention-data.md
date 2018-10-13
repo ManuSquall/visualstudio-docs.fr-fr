@@ -1,7 +1,7 @@
 ---
 title: Vue Informations sur les ressources - Données de conflit | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 760240544971062da3a5161eab7d203ba6d097c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a99cce1d78c91ce2300e30127d0e5375d2cc1b1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494203"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203721"
 ---
 # <a name="resource-details-view---contention-data"></a>Vue Informations sur les ressources - Données de conflit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [affichage Détails des ressources - données de conflit](https://docs.microsoft.com/visualstudio/profiling/resource-details-view-contention-data).  
-  
 La vue Informations sur les ressources présente un graphique chronologique des événements bloquants provoqués par des conflits sur une ressource sélectionnée. Un événement bloquant se produit quand un thread est forcé d’interrompre l’exécution, car un autre thread a verrouillé l’accès à une ressource.  
   
  Cette vue représente la chronologie d’exécution de chaque thread sous la forme d’une barre horizontale et chaque événement bloquant sous la forme d’une barre verticale sur la chronologie du thread. Si nécessaire, vous pouvez effectuer un zoom sur une section de la chronologie pour afficher les événements individuels. Pour afficher le chemin d’exécution (la pile des appels) des fonctions qui ont provoqué l’événement, cliquez sur la barre de l’événement. Les fonctions apparaissent dans la fenêtre **Pile des appels**. Quand le code source d’une fonction est disponible, vous pouvez cliquer sur le nom de la fonction pour modifier le fichier source dans l’interface de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  

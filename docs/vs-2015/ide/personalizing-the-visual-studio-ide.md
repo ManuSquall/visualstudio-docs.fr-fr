@@ -1,7 +1,7 @@
 ---
 title: Personnalisation de l’IDE Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24def685632c995f173ad1c0b50910ef36d484e6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8729b9d2e532909a89e6293d48aefb21922fb4d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495919"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219990"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>Personnalisation de l'IDE de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [personnaliser l’IDE de Visual Studio](https://docs.microsoft.com/visualstudio/ide/personalizing-the-visual-studio-ide).  
-  
 Cette section décrit comment personnaliser Visual Studio de différentes manières pour l’adapter du mieux possible à votre propre style de développement et à vos exigences. Vous pouvez définir et enregistrer plusieurs dispositions de fenêtres et basculer entre elles. Par exemple, vous pouvez définir une disposition pour le codage et une autre pour le débogage. Vous pouvez personnaliser les couleurs, les polices et la mise en forme dans l’éditeur de code pour chaque langage. Vous pouvez choisir un thème de couleur pour votre environnement (bleu, sombre ou clair), ou vous pouvez créer des thèmes personnalisés en téléchargeant et en installant l’éditeur de thème Visual Studio à partir de la galerie Visual Studio Code. De nombreuses autres options sont également exposées par le biais de la [boîte de dialogue Options d’environnement](../ide/reference/environment-options-dialog-box.md).  
   
  Bon nombre des paramètres que vous définissez vous suivent dans les différentes instances de Visual Studio. Pour plus d’informations, consultez [Paramètres synchronisés](../ide/synchronized-settings-in-visual-studio.md).  

@@ -1,7 +1,7 @@
 ---
 title: Créer et configurer des datasets dans Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eddb8ffbe483d0c2d5396530333db2f7e7827d04
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bea966bfde9726047ab52d10523a54be3f15c373
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507811"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217389"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Créer et configurer des datasets dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [créer et configurer des datasets dans Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/create-and-configure-datasets-in-visual-studio).  
-  
   
 Un *dataset* est un ensemble d’objets de stocker des données à partir d’une base de données en mémoire et prend en charge le suivi des modifications pour activer la créer, lire, mettre à jour et supprimer des opérations sur ces données sans avoir à être toujours connectés à la base de données. Jeux de données ont été conçus pour simple *formulaires sur données* applications métier. Pour les nouvelles applications, envisagez d’utiliser Entity Framework pour stocker et modéliser des données en mémoire. Pour utiliser des jeux de données, vous devez posséder une connaissance base des concepts de base de données.  
   

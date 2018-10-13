@@ -1,7 +1,7 @@
 ---
 title: Utilisation du diagramme de définition DSL | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0874d5eff99b7e37807daee7115e66740d2661d8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1fc0dbc007dcb3e15891a4176fc5bdb96babbfa8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501104"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208583"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Utilisation du schéma de définition DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [fonctionne avec le diagramme de définition DSL](https://docs.microsoft.com/visualstudio/modeling/working-with-the-dsl-definition-diagram).  
-  
 Le diagramme d’un [!INCLUDE[dsl](../includes/dsl-md.md)] définition est un outil important pour la définition de la langue spécifique à un domaine. Vous pouvez ajouter des éléments à votre modèle de domaine et définir des relations sur le diagramme ; vous pouvez également modifier la disposition du diagramme pour accroître sa lisibilité.  
   
 ## <a name="the-layout-of-the-diagram"></a>Disposition du diagramme  

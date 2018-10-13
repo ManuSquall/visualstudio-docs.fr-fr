@@ -1,7 +1,7 @@
 ---
 title: Activation en Place | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
 caps.latest.revision: 26
 manager: douge
-ms.openlocfilehash: c41ac709efd980dc1f49307d4fdffb465c9c627e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d8badf198d86e9643dbc6e98683dd3437d72f64
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504778"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232191"
 ---
 # <a name="in-place-activation"></a>L’Activation sur Place
 Si votre mode Éditeur héberge ActiveX ou d’autres contrôles actifs, vous devez l’implémenter en tant que contrôle ActiveX ou en tant qu’objet de données de document actif à l’aide du modèle d’activation en place.  
@@ -51,7 +51,7 @@ Si votre mode Éditeur héberge ActiveX ou d’autres contrôles actifs, vous de
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>|Vue|Principaux moyens utilisés par un objet incorporé pour fournir des fonctionnalités de base à son conteneur et communiquer avec lui.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceActiveObject>|Vue|Gère l’activation et la désactivation des objets sur place, et détermine quelle proportion de l’objet sur place doit être visible.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceObject>|Vue|Fournit un canal de communication direct entre un objet sur place, la fenêtre frame la plus à l’extérieur dans l’application associée et la fenêtre de document de l’application qui contient l’objet incorporé.|  
-|<xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument>|Vue|Implémente un objet ActiveX. Notez que les méthodes de <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> et `T:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView` que les données de document distinct et les vues ne sont pas utilisées dans l’IDE.|  
+|<xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument>|Vue|Implémente un objet ActiveX. Notez que les méthodes de <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> et `T:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView` qui séparent les données de document et les vues ne sont pas utilisées dans l’IDE.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|Vue/Données|Permet à l’objet de données de document ou à l’objet de vue de document (ou aux deux) de participer à la gestion des commandes.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>|Vue|Permet la mise à jour de la barre d’état.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>|Vue|Permet d’ajouter des éléments à la boîte à outils.|  

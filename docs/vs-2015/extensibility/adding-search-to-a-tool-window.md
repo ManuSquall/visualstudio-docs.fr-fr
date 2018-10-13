@@ -1,7 +1,7 @@
 ---
 title: Ajout de la recherche à une fenêtre outil | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8bdee40e2af2e09844314cd1727f480b3cd33462
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab478d6a007081787d8b076e906f5094caea8b2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508518"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206919"
 ---
 # <a name="adding-search-to-a-tool-window"></a>Ajout de la recherche dans une fenêtre d’outil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Ajout d’une recherche à une fenêtre outil](https://docs.microsoft.com/visualstudio/extensibility/adding-search-to-a-tool-window).  
-  
 Lorsque vous créez ou mettez à jour d’une fenêtre outil dans votre extension, vous pouvez ajouter les mêmes fonctionnalités de recherche apparaît ailleurs dans Visual Studio. Cette fonctionnalité inclut les fonctionnalités suivantes :  
   
 -   Une zone de recherche qui se trouve toujours dans une zone personnalisée de la barre d’outils.  
@@ -57,7 +55,7 @@ Lorsque vous créez ou mettez à jour d’une fenêtre outil dans votre extensio
   
 ## <a name="to-create-a-vsix-project"></a>Pour créer un projet VSIX  
   
-1.  Créez un projet VSIX nommé `TestToolWindowSearch` avec une fenêtre Outil nommée **TestSearch**. Si vous avez besoin d’aide pour cette opération, consultez [création d’une Extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md).  
+1.  Créez un projet VSIX nommé `TestToolWindowSearch` avec une fenêtre Outil nommée **TestSearch**. Si vous avez besoin d’aide pour cette opération, consultez [Creating an Extension with a Tool Window](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 ## <a name="to-create-a-tool-window"></a>Pour créer une fenêtre outil  
   

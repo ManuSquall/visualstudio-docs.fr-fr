@@ -1,7 +1,7 @@
 ---
 title: Désactiver les contraintes pendant le remplissage d’un jeu de données | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4b14830b7ed4922b4e383ef245c0366c184b606e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c47d3cb5e02117cb75ab86579b0cb3b166bd510
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501656"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259907"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Désactiver les contraintes pendant le remplissage d’un dataset
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [désactiver les contraintes pendant le remplissage d’un jeu de données](https://docs.microsoft.com/visualstudio/data-tools/turn-off-constraints-while-filling-a-dataset).  
-  
   
 Si un jeu de données contient des contraintes (telles que les contraintes de clé étrangère), se déclenchent des erreurs liées à l’ordre des opérations qui sont exécutées sur le jeu de données. Par exemple, le chargement des enregistrements enfants avant les enregistrements parents de loadingrelated peut enfreindre une contrainte et provoque une erreur. Dès que vous chargez un enregistrement enfant, la contrainte vérifie l’enregistrement parent connexes et génère une erreur.  
   
@@ -57,7 +55,7 @@ Si un jeu de données contient des contraintes (telles que les contraintes de cl
   
 1.  Ouvrez votre jeu de données dans le [création et modification de données typés](../data-tools/creating-and-editing-typed-datasets.md). Pour plus d’informations, consultez [Comment : ouvrir un jeu de données dans le Concepteur de Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Dans le **propriétés** fenêtre, définissez la <xref:System.Data.DataSet.EnforceConstraints%2A> propriété `false`.  
+2.  Dans la fenêtre **Propriétés** , définissez la propriété <xref:System.Data.DataSet.EnforceConstraints%2A> sur `false`.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Remplir des jeux de données à l’aide de TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)   

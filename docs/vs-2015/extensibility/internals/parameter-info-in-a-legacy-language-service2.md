@@ -1,7 +1,7 @@
 ---
 title: Informations sur les paramètres dans un langage hérité2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bee48d3688a43a3dbfb32848818c318f1cf7b2d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6362b05967d937afa3b08a0680fd62854645b728
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508074"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200029"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informations sur les paramètres dans un Service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [informations sur les paramètres dans un langage hérité2](https://docs.microsoft.com/visualstudio/extensibility/internals/parameter-info-in-a-legacy-language-service2).  
-  
 Informations sur les paramètres IntelliSense est une info-bulle qui affiche la signature d’une méthode lorsque l’utilisateur tape la liste de paramètres Démarrer caractère (généralement une parenthèse ouvrante) pour la liste de paramètres de méthode. Comme l’entrée de chaque paramètre et le type est le séparateur de paramètre (en général une virgule), l’info-bulle est mise à jour pour afficher le paramètre suivant en gras.  
   
  Les classes de framework (MPF) de package gérée prennent en charge la gestion de l’info-bulle d’informations sur les paramètres. L’analyseur doit détecter paramètre démarre paramètre ensuite, et les caractères de fin de paramètre et il doivent fournir une liste des signatures de méthode et leurs paramètres associés.  

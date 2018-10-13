@@ -1,7 +1,7 @@
 ---
 title: 'Diagrammes de couche : Instructions | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,24 +17,22 @@ caps.latest.revision: 57
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bd0115021ba00d8e727f67260f5bcdb00464dd2b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2307bb0bfbc366ab1d2d1636f5e289ac0f4b4bfa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493940"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202577"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagrammes de couche : instructions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [des diagrammes de dépendance : recommandations](https://docs.microsoft.com/visualstudio/modeling/layer-diagrams-guidelines).  
-  
 Décrire l’architecture de votre application à un niveau élevé en créant *diagrammes de couche* dans Visual Studio. Assurez-vous que votre code demeure conforme à cette conception en le validant avec un diagramme de couche. Vous pouvez également inclure la validation de couche dans votre processus de génération. Consultez [vidéo Channel 9 : conception et valider votre architecture à l’aide de diagrammes de couche](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
  Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="what-is-a-layer-diagram"></a>Qu'est-ce qu'un diagramme de couche ?  
- À l'image d'un diagramme d'architecture traditionnel, un diagramme de couche identifie les principaux composants ou unités fonctionnelles de la conception et leurs interdépendances. Chaque nœud dans le diagramme, appelé un *couche*, représente un groupe logique d’espaces de noms, de projets ou d’autres artefacts. Vous pouvez dessiner les dépendances qui doivent exister dans votre conception. Contrairement à un diagramme d'architecture traditionnel, vous pouvez vérifier que les dépendances réelles dans le code source sont conformes aux dépendances prévues que vous avez spécifiées. En incluant la partie validation d'une build normale dans [!INCLUDE[esprtfs](../includes/esprtfs-md.md)], vous pouvez vous assurer que le code du programme continue à respecter l'architecture du système au travers des modifications futures. Consultez [diagrammes de couche : référence](../modeling/layer-diagrams-reference.md).  
+ À l'image d'un diagramme d'architecture traditionnel, un diagramme de couche identifie les principaux composants ou unités fonctionnelles de la conception et leurs interdépendances. Chaque nœud dans le diagramme, appelé un *couche*, représente un groupe logique d’espaces de noms, de projets ou d’autres artefacts. Vous pouvez dessiner les dépendances qui doivent exister dans votre conception. Contrairement à un diagramme d'architecture traditionnel, vous pouvez vérifier que les dépendances réelles dans le code source sont conformes aux dépendances prévues que vous avez spécifiées. En incluant la partie validation d’une build normale dans [!INCLUDE[esprtfs](../includes/esprtfs-md.md)], vous pouvez vous assurer que le code du programme continue à respecter l’architecture du système au travers des modifications futures. Consultez [diagrammes de couche : référence](../modeling/layer-diagrams-reference.md).  
   
 ##  <a name="Update"></a> Comment concevoir ou mettre à jour de votre application avec des diagrammes de couche  
  Les étapes suivantes fournissent une vue d'ensemble de l'utilisation des diagrammes de couche dans le processus de développement. Les sections suivantes de cette rubrique décrivent plus en détail chaque étape. Si vous développez une nouvelle conception, ignorez les étapes qui font référence au code existant.  
@@ -162,7 +160,7 @@ Décrire l’architecture de votre application à un niveau élevé en créant *
 > [!NOTE]
 >  Lorsque vous développez ou refactorisez le code, il se peut que vous ayez de nouveaux artefacts à lier au diagramme de couche. Toutefois, cela peut ne pas être nécessaire : par exemple, lorsque des couches représentent des espaces de noms existants et que le nouveau code ajoute seulement plus de documentation à ces espaces de noms.  
   
- Pendant le processus de développement, vous pouvez supprimer certains conflits signalés pendant la validation. Par exemple, vous pouvez supprimer des erreurs que vous êtes déjà en train de traiter qui ne sont pas pertinentes dans le cadre de votre scénario spécifique. Lorsque vous supprimez une erreur, il est conseillé d'entrer un élément de travail dans [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Pour effectuer cette tâche, consultez [valider du code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md).  
+ Pendant le processus de développement, vous pouvez supprimer certains conflits signalés pendant la validation. Par exemple, vous pouvez supprimer des erreurs que vous êtes déjà en train de traiter qui ne sont pas pertinentes dans le cadre de votre scénario spécifique. Lorsque vous supprimez une erreur, il est conseillé d’entrer un élément de travail dans [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Pour effectuer cette tâche, consultez [valider du code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md).  
   
 ##  <a name="BuildValidation"></a> Inclure la validation de couche dans le processus de génération  
  Pour vous assurer que les futures modifications du code sont conformes aux diagrammes de couche, incluez la validation de couche au processus de génération standard de votre solution. Chaque fois que les autres membres de l’équipe génèrent la solution, les différences entre les dépendances dans le code et le diagramme de couche sont signalées comme erreurs de build. Pour plus d’informations sur l’inclusion de validation de couche dans le processus de génération, consultez [valider du code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md).  

@@ -1,7 +1,7 @@
 ---
 title: Tâches du Concepteur de schémas XML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fcf60a61cb6311e7794abe2961cdf1f319bde7b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e69fdb617fc5ce6fd91bd89422561ab6a1c65d61
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502131"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233263"
 ---
 # <a name="xml-schema-designer-tasks"></a>Tâches du Concepteur de schémas XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [tâches du Concepteur de schémas XML](https://docs.microsoft.com/visualstudio/xml-tools/xml-schema-designer-tasks).  
-  
   
 Cette section décrit comment effectuer des tâches courantes à l’aide des outils du Concepteur de schémas XML.  
   

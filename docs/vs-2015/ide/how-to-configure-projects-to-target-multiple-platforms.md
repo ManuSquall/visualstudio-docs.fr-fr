@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour configurer des projets pour plusieurs plateformes cibles | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 07c949e392ee2203804a8675a7659e71ced5c0fb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4056a390bf2ed486df6391d48fd17c1d0af2cdad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507374"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194738"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Comment : configurer des projets pour plusieurs plateformes cibles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : configurer des projets pour plusieurs plateformes cibles](https://docs.microsoft.com/visualstudio/ide/how-to-configure-projects-to-target-multiple-platforms).  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permet à une solution de cibler en même temps plusieurs architectures, ou plateformes, de processeur différentes. Les propriétés permettant de les définir sont accessibles à l’aide de la boîte de dialogue **Gestionnaire de configurations**.  
   
 ## <a name="targeting-a-platform"></a>Ciblage d’une plateforme  

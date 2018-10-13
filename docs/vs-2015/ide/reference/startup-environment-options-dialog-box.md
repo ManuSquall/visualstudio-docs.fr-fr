@@ -1,7 +1,7 @@
 ---
 title: Démarrage, Environnement, boîte de dialogue Options | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b24200ac77e826ba809039d8a4e04703693c964f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e490d5005e455f58468bb6017c964067e8cc6820
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505292"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192515"
 ---
 # <a name="startup-environment-options-dialog-box"></a>Démarrage, Environnement, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [démarrage, environnement, boîte de dialogue Options](https://docs.microsoft.com/visualstudio/ide/reference/startup-environment-options-dialog-box).  
-  
   
 Utilisez cette page pour personnaliser la page de démarrage de Visual Studio ou pour définir une autre action par défaut au démarrage de Visual Studio. Pour plus d’informations, consultez [Personnalisation de la page de démarrage](../../ide/customizing-the-start-page-for-visual-studio.md).  
   

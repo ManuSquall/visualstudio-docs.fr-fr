@@ -1,7 +1,7 @@
 ---
 title: 'Comment : générer un extrait XML à partir d’un schéma XML | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b2583513acde49736358c9a1df97af74c950ad51
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7911a23530a8aea7aa93e52f23f4aeb473e35c6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508425"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210734"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procédure : générer un extrait XML à partir d'un schéma XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : générer un XML extrait de code à partir d’un schéma XML](https://docs.microsoft.com/visualstudio/xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema).  
-  
   
 L'éditeur XML permet de générer des extraits XML à partir d'un schéma de langage XSD (XML Schema definition). Par exemple, lorsque vous créez un fichier XML alors que le curseur est placé à côté du nom d'un élément, vous pouvez appuyer sur TAB pour remplir l'élément avec des données XML générées à partir des informations de schéma de cet élément.  
   
@@ -95,7 +93,7 @@ L'éditeur XML permet de générer des extraits XML à partir d'un schéma de la
   
 3.  Sélectionnez **Contact** à partir de la liste des membres et appuyez sur ENTRÉE.  
   
-     L'éditeur ajoute la balise de début `<Contact` et place le curseur après le nom de l'élément.  
+     L’éditeur ajoute l’étiquette de début `<Contact` et place le curseur après le nom de l’élément.  
   
 4.  Appuyez sur TAB pour générer des données XML pour l'élément `Contact` d'après ses informations de schéma.  
   

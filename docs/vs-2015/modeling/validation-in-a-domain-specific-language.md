@@ -1,7 +1,7 @@
 ---
 title: Validation dans un langage spécifique à un domaine | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2ba087620d926c651be18c8993d992d3bc498952
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 75df1e1f2bbc5bc5c3bdd56b8c16f0587f18751b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505268"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263638"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Validation dans un langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Validation dans un langage spécifique à un domaine](https://docs.microsoft.com/visualstudio/modeling/validation-in-a-domain-specific-language).  
-  
 En tant qu'auteur d'un langage spécifique à un domaine (DSL), vous pouvez définir des contraintes de validation afin de vérifier que le modèle créé par l'utilisateur a un sens. Par exemple, si votre DSL permet aux utilisateurs de tracer l'arbre généalogique d'une famille et de ses ancêtres, vous pouvez écrire une contrainte qui garantit que les enfants ont des dates de naissance postérieures à celles de leurs parents.  
   
  Vous pouvez avoir les contraintes de validation à exécuter lorsque le modèle est enregistré, lorsqu’il est ouvert, et lorsque l’utilisateur exécute explicitement la **Validate** commande de menu. Vous pouvez aussi exécuter la validation sous le contrôle du programme. Par exemple, vous pouvez exécuter la validation en réponse à la modification d'une valeur de propriété ou d'une relation.  

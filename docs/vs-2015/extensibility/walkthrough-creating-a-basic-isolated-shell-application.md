@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : Création d’un base des Application Shell isolée | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 68b4fb6f7bb07cbb25d2fa8552e92875c5c242bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7158dcbd55229998e49e2d2891ae46d88c7fbc9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505933"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199535"
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Procédure pas à pas : Création d’une Application Shell isolée de base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : création d’une Application Shell isolée de base](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-creating-a-basic-isolated-shell-application).  
-  
 Cette procédure pas à pas montre comment créer une solution de shell isolé, personnaliser la fenêtre outil à propos d’et créer un programme d’installation qui installe le shell isolé.  
   
 ## <a name="prerequisites"></a>Prérequis  

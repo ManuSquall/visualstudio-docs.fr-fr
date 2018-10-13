@@ -1,7 +1,7 @@
 ---
 title: JavaScript IntelliSense | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b64dc915dddb7290eb80a8a38352e87a331e0dd0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1daa2681b52f8e052d2868135d028bbbe0092fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516635"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194712"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [JavaScript IntelliSense](https://docs.microsoft.com/visualstudio/ide/javascript-intellisense).  
-  
 IntelliSense vous aide à écrire du code plus vite et avec moins d'erreurs en fournissant des informations pendant l'écriture du code. Lorsque vous travaillez avec un script client dans l'éditeur JavaScript, IntelliSense répertorie les objets, les fonctions, les propriétés et les paramètres qui sont disponibles en fonction de votre contexte actuel. Vous pouvez sélectionner une option de programmation dans la liste contextuelle fournie par IntelliSense pour compléter le code.  
   
  IntelliSense simplifie la réalisation des tâches suivantes :  
@@ -152,7 +150,7 @@ IntelliSense vous aide à écrire du code plus vite et avec moins d'erreurs en f
 </script>  
 ```  
   
- Si vous travaillez avec une page Web compatible ASP.NET AJAX, vous pouvez référencer des fichiers de script à l'aide de l'objet <xref:System.Web.UI.ScriptReference> du contrôle <xref:System.Web.UI.ScriptManager>.  
+ Si vous travaillez avec une page web compatible ASP.NET AJAX, vous pouvez référencer des fichiers de script à l’aide de l’objet <xref:System.Web.UI.ScriptReference> du contrôle <xref:System.Web.UI.ScriptManager>.  
   
  L'exemple suivant montre un balisage qui utilise un objet <xref:System.Web.UI.ScriptReference> dans un contrôle <xref:System.Web.UI.ScriptManager> pour référencer un fichier de script.  
   
@@ -220,7 +218,7 @@ IntelliSense vous aide à écrire du code plus vite et avec moins d'erreurs en f
   
 -   Si une référence de page est spécifiée, aucun autre type de directives de référence n'est autorisé.  
   
--   Les noms de fichiers utilisent des chemins d'accès relatifs. Vous pouvez utiliser l'opérateur tilde (`~`) pour indiquer des chemins d'accès relatifs au niveau de la racine de l'application.  
+-   Les noms de fichiers utilisent des chemins d'accès relatifs. Vous pouvez utiliser l’opérateur tilde (`~`) pour indiquer des chemins d’accès relatifs au niveau de la racine de l’application.  
   
 -   Les chemins d'accès absolus sont ignorés.  
   

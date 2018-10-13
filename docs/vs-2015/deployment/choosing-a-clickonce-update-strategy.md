@@ -1,7 +1,7 @@
 ---
 title: Choix d’une stratégie de mise à jour ClickOnce | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: a4db43fd289aab969ec2d4c4031cdfbe1a3a18ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ed97cecb01a8e42a01a3e358ecc953857ca55b6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495054"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191345"
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>Choix d'une stratégie de mise à jour ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [choix d’une stratégie de mise à jour ClickOnce](https://docs.microsoft.com/visualstudio/deployment/choosing-a-clickonce-update-strategy).  
-  
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] peut fournir des mises à jour d'application automatiques. Un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application lit périodiquement son fichier manifeste de déploiement pour voir si des mises à jour de l’application sont disponibles. Si disponible, la nouvelle version de l'application est téléchargée et exécutée. Pour des raisons d'efficacité, seuls les fichiers modifiés sont téléchargés.  
   
  Lorsque vous concevez une application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], vous devez déterminer quelle stratégie l'application utilisera pour vérifier les mises à jour disponibles. Trois stratégies de base sont possibles : la vérification des mises à jour au démarrage de l'application, la vérification des mises à jour après le démarrage de l'application (exécutée dans un thread d'arrière-plan) ou la présentation d'une interface utilisateur destinée aux mises à jour.  
@@ -119,7 +117,7 @@ Vous trouverez la dernière version de cette rubrique dans [choix d’une strat�
   
  Pour bloquer la vérification de la mise à jour, désactivez la **l’application doit vérifier les mises à jour** case à cocher dans la boîte de dialogue d’Application des mises à jour.  
   
- Vous pouvez également bloquer la vérification des mises à jour en supprimant la balise `<Subscription>` dans le manifeste de déploiement.  
+ Vous pouvez également bloquer la vérification des mises à jour en supprimant l’étiquette `<Subscription>` dans le manifeste de déploiement.  
   
 ## <a name="permission-elevation-and-updates"></a>Élévation d'autorisations et mises à jour  
  Si une nouvelle version d'une application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] requiert l'exécution d'un niveau de confiance supérieur à la version précédente, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] invite l'utilisateur à indiquer s'il souhaite que ce niveau supérieur de confiance soit accordé à l'application. Si l'utilisateur refuse d'accorder le niveau de confiance supérieur, la mise à jour n'est pas installée. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] invitera l'utilisateur à installer de nouveau l'application lors du prochain redémarrage. Si l'utilisateur refuse d'accorder le niveau de confiance supérieur à ce stade et que la mise à jour ne soit pas marquée comme étant obligatoire, l'ancienne version de l'application est exécutée. Toutefois, si la mise à jour est obligatoire, l'application ne sera pas exécutée tant que l'utilisateur n'aura pas accepté le niveau de confiance supérieur.  

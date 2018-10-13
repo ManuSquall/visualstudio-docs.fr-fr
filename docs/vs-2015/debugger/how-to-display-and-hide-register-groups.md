@@ -1,7 +1,7 @@
 ---
 title: 'Comment : afficher et masquer les groupes de registres | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3060a21d9ffbaf079696eef83f01b7f0787ed59a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ff44cb0977103d7169ac0b3f14a8bf0fb8f6c7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502752"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206490"
 ---
 # <a name="how-to-display-and-hide-register-groups"></a>Comment : afficher et masquer les groupes de registres
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : afficher et masquer les groupes de registres](https://docs.microsoft.com/visualstudio/debugger/how-to-display-and-hide-register-groups).  
-  
 Le **inscrit** fenêtre est disponible uniquement si le débogage au niveau des adresses est activé dans le **Options** boîte de dialogue, **débogage** nœud, **général**catégorie.  
   
  Pour réduire l’encombrement, la **inscrit** fenêtre classe les registres en groupes. Si vous cliquez sur le **inscrit** fenêtre, vous verrez un menu contextuel contenant ces groupes, vous pouvez afficher ou masquer comme vous le souhaitez en suivant la procédure ci-dessous.  

@@ -1,7 +1,7 @@
 ---
 title: Concepteur d’activités TryCatch | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 2177e96c34777eee6655f1cbb60220c5baeb0d17
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 74b54ef6b82e4f98ab94972b5d9b0155c16060a9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496187"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240992"
 ---
 # <a name="trycatch-activity-designer"></a>Concepteur d'activités TryCatch
 Le **TryCatch** ActivityDesigner est utilisé pour créer et configurer un <xref:System.Activities.Statements.TryCatch> activité.  

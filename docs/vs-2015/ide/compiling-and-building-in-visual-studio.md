@@ -1,7 +1,7 @@
 ---
 title: Compilation et génération dans Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ec3a74d911a32d7e7f869ee099c70914cafe9a08
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 65fbe40a3609b0729bdc376196940f2adb670a2c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516745"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229227"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Compilation et génération dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [compilation et génération dans Visual Studio](https://docs.microsoft.com/visualstudio/ide/compiling-and-building-in-visual-studio).  
-  
 Vous pouvez utiliser Visual Studio pour générer des applications et créer des assemblys et des programmes exécutables à intervalles fréquents pendant un cycle de développement. En générant souvent votre code, vous pouvez identifier plus tôt les erreurs de compilation, telles qu'une syntaxe incorrecte, des mots clés mal orthographiés et des incompatibilités de types. Vous pouvez également détecter et corriger les erreurs d'exécution, telles que les erreurs de logique et les erreurs sémantiques, en générant et en exécutant souvent les versions Debug du code.  
   
  Une fois qu'un projet ou une solution est entièrement développé et suffisamment débogué, il est possible de compiler ses composants dans une version Release. Par défaut, une version Release est optimisée et conçue pour être plus petite et s’exécuter plus rapidement qu’une version Debug. Pour plus d’informations, consultez [Procédure pas à pas : génération d’une application](../ide/walkthrough-building-an-application.md).  

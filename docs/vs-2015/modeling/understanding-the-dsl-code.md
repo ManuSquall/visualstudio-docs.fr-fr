@@ -1,7 +1,7 @@
 ---
 title: Fonctionnement du Code DSL | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7d92a14466b7ca915b70bd0cad096266160e5994
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 78ef4b1a0e6622b077039797df2adcb02a355df0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501332"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251158"
 ---
 # <a name="understanding-the-dsl-code"></a>Fonctionnement du code DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [fonctionnement du Code DSL](https://docs.microsoft.com/visualstudio/modeling/understanding-the-dsl-code).  
-  
 Une solution DSL (Domain-Specific Language) génère une API que vous pouvez utiliser pour lire et mettre à jour des instances du DSL dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Cette API est définie dans le code généré à partir de la définition DSL. Cette rubrique décrit l'API générée.  
   
 ## <a name="the-example-solution-component-diagrams"></a>Exemple de solution : diagrammes de composants  

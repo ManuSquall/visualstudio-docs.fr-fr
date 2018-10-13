@@ -1,7 +1,7 @@
 ---
 title: Cœurs logiques de la vue Cœurs | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bbed5d7bf72d50be6f6096bd402c045695b4580b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ba6c630666d2d5eda684a912de65e463d2fe052
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493944"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247624"
 ---
 # <a name="cores-view-logical-cores"></a>Cœurs logiques de l'affichage Cœurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [cœurs logiques de vue cœurs](https://docs.microsoft.com/visualstudio/profiling/cores-view-logical-cores).  
-  
 Chaque nom de canal représente un des cœurs logiques qui existent sur le système profilé. Le nommage va de 0 au nombre total de cœurs logiques. Par exemple, un système à quatre cœurs va du cœur logique 0 au cœur logique 3.  
   
 ## <a name="see-also"></a>Voir aussi  

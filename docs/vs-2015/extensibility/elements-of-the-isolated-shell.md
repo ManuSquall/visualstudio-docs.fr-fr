@@ -1,7 +1,7 @@
 ---
 title: Éléments du Shell isolé | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9edba9d02b0c02321cd468cdc75630be92d53fe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c051425f2d3ae131362c2d95494ed0edbef5353e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506565"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246049"
 ---
 # <a name="elements-of-the-isolated-shell"></a>Éléments du Shell isolé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [éléments du Shell isolé](https://docs.microsoft.com/visualstudio/extensibility/elements-of-the-isolated-shell).  
-  
 Vous pouvez modifier les paramètres du Registre, paramètres d’exécution et application point d’entrée de votre application de shell isolé et son .vsct .pkgdef, les fichiers and.pkgundef.  
   
 ## <a name="registry-settings"></a>Paramètres du Registre  

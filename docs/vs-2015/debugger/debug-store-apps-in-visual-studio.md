@@ -1,7 +1,7 @@
 ---
 title: Applications de Store de débogage dans Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3afe6e31062b8f55add97455f0e1836128b7d0e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f2e9780672abbff1cec9c74298579e575e59a665
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506206"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219139"
 ---
 # <a name="debug-store-apps-in-visual-studio"></a>Déboguer des applications du Windows Store dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [applications Store de débogage dans Visual Studio](https://docs.microsoft.com/visualstudio/debugger/debug-store-apps-in-visual-studio).  
-  
 Le débogueur Visual Studio vous permet de contrôler l'exécution d'un programme et d'examiner son état. Vous pouvez utiliser le débogueur pour trouver la cause des défauts de votre application Windows Store et pour comprendre le fonctionnement exact de votre application. Quand vous suspendez (pause) l'exécution dans le débogueur, Visual Studio affiche le fichier source qui contient le code en cours d'exécution et met en surbrillance l'instruction en cours d'exécution. Vous pouvez observer les valeurs des variables, la pile d'appels des fonctions en cours d'exécution et d'autres aspects de l'état de votre programme. Vous pouvez continuer à exécuter (parcourir) le programme instruction par instruction pour voir comment elles modifient les valeurs du programme. Dans les applications écrites en JavaScript, vous pouvez examiner et manipuler le DOM de la page.  
   
 ## <a name="in-this-section"></a>Dans cette section  

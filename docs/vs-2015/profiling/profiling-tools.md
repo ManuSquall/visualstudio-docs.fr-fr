@@ -1,7 +1,7 @@
 ---
 title: Outils de profilage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8672dd6d05b3a111ad5a1460a57a47b58d1d426a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: feeab1d1f00a681ee3af40436b395d0149cc3334
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501453"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244035"
 ---
 # <a name="profiling-tools"></a>outils de profilage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [profilage dans Visual Studio](https://docs.microsoft.com/visualstudio/profiling/profiling-feature-tour).  
-  
 Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilisation de la mémoire et du processeur et d’autres problèmes au niveau de l’application. Grâce à ces outils, vous pouvez accumuler des données (par exemple, des valeurs de variables, des appels de fonctions et des événements) pendant que vous exécutez votre application dans le débogueur. Vous pouvez examiner l’état de votre application à différents stades au cours de l’exécution de votre code.  
   
  Vous trouverez au bas de l’article un résumé des outils disponibles pour le type de votre projet (par exemple, application de bureau, UWP, ASP.NET).  
@@ -48,7 +46,7 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
 ## <a name="cpu-usage"></a>Utilisation de l'UC  
  ![DiagCPUSmall](../profiling/media/diagcpusmall.png "DiagCPUSmall")  
   
- L'outil **Utilisation du processeur** vous montre où le processeur consacre son temps à exécuter le code C++, C#/VB et JavaScript.  Vous pouvez utiliser cet outil avec les applications de bureau et les applications universelles Windows, mais aussi avec les applications Azure App Services. L’outil **Utilisation de l’UC** peut être exécuté à partir de la fenêtre **Outils de diagnostic** pendant le débogage (**Déboguer / Windows / Afficher les outils de diagnostic**) ou en dehors du débogueur (**Déboguer / Profileur de performances...**). Consultez [l’utilisation du processeur](../profiling/cpu-usage.md) pour plus d’informations.  
+ L'outil **Utilisation du processeur** vous montre où le processeur consacre son temps à exécuter le code C++, C#/VB et JavaScript.  Vous pouvez utiliser cet outil avec les applications de bureau et les applications universelles Windows, mais aussi avec les applications Azure App Services. L’outil **Utilisation de l’UC** peut être exécuté à partir de la fenêtre **Outils de diagnostic** pendant le débogage (**Déboguer / Windows / Afficher les outils de diagnostic**) ou en dehors du débogueur (**Déboguer / Profileur de performances...**). Pour plus d’informations sur les différentes approches, consultez [Utilisation de l'UC](../profiling/cpu-usage.md) .  
   
 ## <a name="performance-explorer"></a>Explorateur de performances  
  ![PerfTools](../profiling/media/perftools.png "PerfTools")  

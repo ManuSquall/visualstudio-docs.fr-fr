@@ -1,7 +1,7 @@
 ---
 title: Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8138129c928a02ed5fb6684bc6ee06282435860e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1e495f5f07e5db2214c7eca8bc2c21df253fa49e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590882"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195518"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [outils de performances sur les applications Windows 8 et Windows Server 2012](https://docs.microsoft.com/visualstudio/profiling/performance-tools-on-windows-8-and-windows-server-2012-applications).  
-  
 Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2012 ont imposé des modifications importantes dans la façon dont les outils d’analyse des performances Visual Studio collectent les données sur ces plateformes. Les applications Windows Store demandent aussi de nouvelles techniques de collecte. Cette rubrique décrit les modifications concernant les outils d’analyse des performances sur les plateformes Windows 8 et Windows Server 2012.  
   
 > [!NOTE]
@@ -143,7 +141,7 @@ Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2
   
  **Collecte de données TIP sur un ordinateur distant**  
   
- Pour collecter des données d’interaction de couche sur un ordinateur distant, vous devez copier le **vs\_profileur\_**_\<plateforme >_ **\_**  _\<Langue >_**.exe** de fichiers à partir de la _VSInstallDir%_**\Team Tools\Setups**dossier de Visual Studio de l’ordinateur à l’ordinateur distant et l’installer. Vous ne pouvez pas utiliser les outils de profilage dans le [outils distants Visual Studio](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) télécharger le package.  
+ Pour collecter des données d’interaction de couche sur un ordinateur distant, vous devez copier le **vs\_profileur\_**_\<plateforme >_ **\_**  _\<Langue >_**.exe** de fichiers à partir de la _VSInstallDir%_**\Team Tools\Setups**dossier de Visual Studio de l’ordinateur à l’ordinateur distant et l’installer. Vous ne pouvez pas utiliser les outils de profilage contenus dans le package de téléchargement [Outils de contrôle à distance de Visual Studio](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
   
  Vous pouvez utiliser [VSPerfCmd](../profiling/vsperfcmd.md) ou [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) pour collecter les données de profilage.  
   

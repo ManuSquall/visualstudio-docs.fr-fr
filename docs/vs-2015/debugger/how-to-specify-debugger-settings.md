@@ -1,7 +1,7 @@
 ---
 title: 'Comment : spécifier les paramètres du débogueur | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1cbfe565c66650b310c674ef22ecee74ea31a498
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7251c2cf2c2b8d6879a85dfdc4427dc456fbf8f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508289"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215551"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Comment : spécifier les paramètres du débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : spécifier les paramètres de débogueur](https://docs.microsoft.com/visualstudio/debugger/how-to-specify-debugger-settings).  
-  
 Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez utiliser divers paramètres pour spécifier le comportement du débogueur, notamment le mode d'affichage des variables, la présentation ou non des avertissements, la définition des points d'arrêt, ainsi que la manière dont les programmes sont affectés par les interruptions. Vous spécifiez les paramètres du débogueur dans le **Options** boîte de dialogue.  
   
 ### <a name="to-set-debugger-options"></a>Pour définir les options du débogueur  
@@ -50,7 +48,7 @@ Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez utiliser divers p
   
 3.  Dans le **débogage** dossier, choisissez la catégorie d’options souhaitée.  
   
-     Options les plus courantes se trouvent dans le **général** catégorie. Pour plus d’informations, consultez [général, débogage, boîte de dialogue Options](../debugger/general-debugging-options-dialog-box.md).  
+     Options les plus courantes se trouvent dans le **général** catégorie. Pour plus d'informations, consultez [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md).  
   
 4.  Activez ou désactivez les options souhaitées. Appuyez sur F1 pour obtenir de l'aide concernant les options.  
   

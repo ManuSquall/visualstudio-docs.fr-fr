@@ -1,7 +1,7 @@
 ---
 title: Personnaliser votre modèle avec des profils et stéréotypes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 20
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2dd494b475b5d9068597857a2f4df12e5fed8e2f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7a64fa754d2693f6ea469eb2ec211935c896ebb9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501424"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254941"
 ---
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>Personnaliser votre modèle avec des profils et des stéréotypes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [personnaliser votre modèle avec des profils et stéréotypes](https://docs.microsoft.com/visualstudio/modeling/customize-your-model-with-profiles-and-stereotypes).  
-  
 Dans Visual Studio, vous pouvez adapter les éléments de modèle UML standard, tels que les classes et les composants, pour les personnaliser à des fins spécifiques. Vous pouvez appliquer un *stéréotype* à un élément de modèle qui peut modifier des liste l’élément de propriétés. Les stéréotypes sont définis dans des collections appelées *profils*.  
   
  Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

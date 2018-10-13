@@ -1,7 +1,7 @@
 ---
 title: Boîte à outils, onglet Composants | Documents Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b253e170adc8510aebd9c96a468169058d2a87fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 405c7db0ca437aa5462068e2be3cfcc2d76c1cae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505919"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203123"
 ---
 # <a name="toolbox-components-tab"></a>Boîte à outils, onglet Composants
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [boîte à outils, onglet composants](https://docs.microsoft.com/visualstudio/ide/reference/toolbox-components-tab).  
-  
   
 Affiche les composants que vous pouvez ajouter aux concepteurs [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] et [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. En plus des composants [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] inclus avec [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], tels que les composants <xref:System.Messaging.MessageQueue> et <xref:System.Diagnostics.EventLog>, vous pouvez ajouter vos propres composants ou des composants tiers à cet onglet. Pour plus d’informations, consultez [Comment : manipuler des onglets de boîte à outils](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db).  
   

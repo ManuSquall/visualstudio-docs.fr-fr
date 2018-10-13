@@ -1,7 +1,7 @@
 ---
 title: 'Comment : vérifier les paramètres de propriété IIS | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46daaa21a75e221a3174092032c3b7b99dee7d59
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 38e647c25268b8d7c9e55fe1ee30f933a66f9f72
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494189"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236143"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Comment : vérifier les paramètres des propriétés IIS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : vérifier les paramètres de propriété IIS](https://docs.microsoft.com/visualstudio/debugger/how-to-verify-iis-property-settings).  
-  
 Vous pouvez définir les propriétés d'une application Web à l'aide de l'outil d'administration IIS. Ces propriétés doivent être correctement définies pour que l'application s'exécute. Il est donc souvent nécessaire de vérifier ces paramètres pour pouvoir dépanner.  
   
 > [!NOTE]

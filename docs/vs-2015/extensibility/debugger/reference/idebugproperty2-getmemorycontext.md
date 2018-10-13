@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty2::GetMemoryContext | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 91793d25-790f-4881-a5c0-d0458e534514
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 67f29bb34bf1a514fe94db44bf235b5994b647ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 13c65c1a6abd0123ab161ca035f3f5d4372db22d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506456"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201784"
 ---
 # <a name="idebugproperty2getmemorycontext"></a>IDebugProperty2::GetMemoryContext
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDebugProperty2::GetMemoryContext](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugproperty2-getmemorycontext).  
-  
 Obtient le contexte de la mémoire de la valeur de propriété.  
   
 ## <a name="syntax"></a>Syntaxe  

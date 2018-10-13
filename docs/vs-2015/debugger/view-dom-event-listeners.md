@@ -1,7 +1,7 @@
 ---
 title: Afficher les écouteurs d’événements DOM | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7eeca4964df8e89511b1a077cace83484c35f44d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d9d6f5c913cb2868df1af25470eb69f84575ffab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494233"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223299"
 ---
 # <a name="view-dom-event-listeners"></a>Afficher les écouteurs d'événements DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [écouteurs d’événements DOM de la vue](https://docs.microsoft.com/visualstudio/debugger/view-dom-event-listeners).  
-  
 S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png « windows_and_phone_content »)  
   
  Le **événements** onglet de l’Explorateur DOM affiche les événements qui sont associés à un élément DOM. Chaque nœud supérieur dans le **événements** onglet représente un événement qui a des abonnés actifs. Le nœud supérieur contient des sous-nœuds qui représentent les écouteurs d'événements inscrits pour l'événement spécifique. En outre, pour afficher les écouteurs d'événements, vous pouvez utiliser cet onglet pour accéder à l'emplacement de l'écouteur d'événements dans le code JavaScript. Les informations contenues dans cette rubrique s'appliquent aux applications de Store conçues à l'aide de HTML et de JavaScript.  
@@ -62,7 +60,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 6.  Dans l'explorateur DOM, sélectionnez `Find` dans le coin supérieur droit.  
   
-7.  Type `ListView`, puis appuyez sur ENTRÉE.  
+7.  Tapez `ListView`, puis appuyez sur Entrée.  
   
 8.  Si nécessaire, choisissez le **suivant** bouton pour rechercher le `DIV` élément qui représente le `ListView` contrôle (cet élément a un `data-win-control` valeur `WinJS.UI.ListView`).  
   

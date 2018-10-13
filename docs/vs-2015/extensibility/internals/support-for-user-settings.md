@@ -1,7 +1,7 @@
 ---
 title: Prise en charge pour les paramètres utilisateur | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,23 +17,21 @@ ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 12200fcee084a58520047ca4731dbcc1ed1b4ed4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 74f96a6177409057d2c24aca6103de29d97e19fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508804"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215655"
 ---
 # <a name="support-for-user-settings"></a>Prise en charge des paramètres utilisateur
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [prise en charge pour les paramètres utilisateur](https://docs.microsoft.com/visualstudio/extensibility/internals/support-for-user-settings).  
-  
 Un VSPackage peut définir une ou plusieurs catégories de paramètres qui sont des groupes de variables d’état qui persistent lorsqu’un utilisateur choisit le **importer/exporter les paramètres** commande sur le **outils** menu. Pour activer cette persistance, vous utilisez les paramètres API dans le [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   
  Une entrée de Registre qui est appelée un Point de paramètres personnalisés et un GUID définit la catégorie de paramètres d’un VSPackage. Un VSPackage peut prendre en charge plusieurs catégories de paramètres, chacun défini par un Point de paramètres personnalisés.  
   
--   Les implémentations de paramètres qui sont basées sur les assemblys d’interopérabilité (à l’aide de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> interface) doit créer le Point de paramètres personnalisés en modifiant le Registre ou à l’aide d’un script de bureau d’enregistrement (fichier .rgs). Pour plus d’informations, consultez [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
+-   Les implémentations de paramètres qui sont basées sur les assemblys d’interopérabilité (à l’aide de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> interface) doit créer le Point de paramètres personnalisés en modifiant le Registre ou à l’aide d’un script de bureau d’enregistrement (fichier .rgs). Pour plus d'informations, consultez [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
   
 -   Code qui utilise Managed Package Framework (MPF) doit créer des Points de paramètres personnalisés en attachant un <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> au VSPackage pour chaque Point de paramètres personnalisés.  
   

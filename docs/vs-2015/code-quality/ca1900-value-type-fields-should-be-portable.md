@@ -1,7 +1,7 @@
 ---
 title: 'CA1900 : Les champs de type valeur doivent être portables | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,12 +20,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b0a636c1de245aa46adb0b0e43c6802dddf57810
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d8794fc1e30e2afb70c6816b6d10feb8d69a5d86
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508669"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236299"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900 : Les champs de type valeur doivent être portables
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

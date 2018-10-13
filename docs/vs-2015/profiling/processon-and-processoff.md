@@ -1,7 +1,7 @@
 ---
 title: ProcessOn et ProcessOff | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd2d33a6d0e333600c31e540f03d6140853e796d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 377031abf3ebcada283df8447cd1c695e1f797e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504624"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255075"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn et ProcessOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [ProcessOn et ProcessOff](https://docs.microsoft.com/visualstudio/profiling/processon-and-processoff).  
-  
 Les sous commandes **ProcessOff** et **ProcessOn** de VSPerfCmd.exe permettent de suspendre et de reprendre le profilage pour le processus spécifié dans une session de profilage en ligne de commande. **ProcessOff** arrête le profilage du processus et **ProcessOn** le démarre.  
   
  Dans la plupart des cas, vous spécifiez **ProcessOn** ou **ProcessOff** comme seule option d’une ligne de commande VSPerfCmd.exe, mais elles peuvent aussi être combinées avec les sous-commandes **GlobalOn**, **GlobalOff**, **ThreadOn** et **ThreadOff**.  

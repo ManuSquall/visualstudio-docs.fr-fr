@@ -1,7 +1,7 @@
 ---
 title: Vue Fonctions - Données d’échantillonnage de mémoire .NET | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ac8c19c02754d17a8af3b5472ecd580948793962
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6382849660d7dea44286fc467d497502caef6180
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506283"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224794"
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>Vue Fonctions - Données d’échantillonnage de la mémoire .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [mode fonctions - données d’échantillonnage de mémoire .NET](https://docs.microsoft.com/visualstudio/profiling/functions-view-dotnet-memory-sampling-data).  
-  
 La vue Fonctions des données de profilage de l’allocation mémoire .NET qui ont été collectées avec la méthode d’échantillonnage répertorie les fonctions qui ont alloué de la mémoire lors de l’exécution du profilage, et indique la taille et le nombre des allocations.  
   
 |Colonne|Description|  
@@ -51,8 +49,8 @@ La vue Fonctions des données de profilage de l’allocation mémoire .NET qui o
   
 ## <a name="see-also"></a>Voir aussi  
  [Vue Fonctions - Instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
- [Vue Fonctions](../profiling/functions-view-sampling-data.md)   
- [Vue Fonctions](../profiling/functions-view-instrumentation-data.md)
+ [Mode Fonction](../profiling/functions-view-sampling-data.md)   
+ [Mode Fonctions](../profiling/functions-view-instrumentation-data.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour sélectionner des fichiers dans une build | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 284ad92c170e0b34b73ca15a7eb2f35b744f44a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b8eeb62b8a5091743345c1a5c136bc2fa87269c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508822"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223806"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Guide pratique pour sélectionner des fichiers dans une build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : sélectionner des fichiers dans une Build](https://docs.microsoft.com/visualstudio/msbuild/how-to-select-the-files-to-build).  
-  
   
 Quand vous générez un projet contenant plusieurs fichiers, vous pouvez lister chaque fichier un à un dans le fichier projet ou utiliser des caractères génériques pour inclure tous les fichiers d’un répertoire ou d’un ensemble imbriqué de répertoires.  
   

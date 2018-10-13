@@ -1,7 +1,7 @@
 ---
 title: les variantes MSAA x-4 x-2 0 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97203b9ecc44e5aa487f7fad35b47e050ce50766
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 876e901e13a2fe25957744665e54f703e209fc7d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516785"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251177"
 ---
 # <a name="0x2x4x-msaa-variants"></a>Variantes MSAA 0x/2x/4x
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [les variantes MSAA 0 x x-4 x-2](https://docs.microsoft.com/visualstudio/debugger/graphics/0x-2x-4x-msaa-variants).  
-  
 Substitue les paramètres d‘anticrénelage MSSA (Multi-Sample Anti-Aliasing) sur l‘ensemble des cibles de rendu et des chaînes de permutation.  
   
 ## <a name="interpretation"></a>Interprétation  
@@ -39,7 +37,7 @@ Substitue les paramètres d‘anticrénelage MSSA (Multi-Sample Anti-Aliasing) s
 >  Il se peut que votre matériel ne prenne pas entièrement en charge MSAA pour tous les formats. Si l'une de ces variantes rencontre une limitation matérielle qu'il n'est pas possible de contourner, sa colonne dans le tableau de résumé des performances est vide et un message d'erreur est généré.  
   
 ## <a name="remarks"></a>Notes  
- Ces variantes substituent le nombre d'échantillons et les arguments de qualité d'échantillon dans les appels à `ID3DDevice::CreateTexture2D`, qui sont chargés de créer des cibles de rendu. Plus précisément, ces paramètres sont substitués dans les cas suivants :  
+ Ces variantes substituent le nombre d’échantillons et les arguments de qualité d’échantillon dans les appels à `ID3DDevice::CreateTexture2D`, qui sont chargés de créer des cibles de rendu. Plus précisément, ces paramètres sont substitués dans les cas suivants :  
   
 -   L'objet `D3D11_TEXTURE2D_DESC` passé dans `pDesc` décrit une cible de rendu, à savoir :  
   

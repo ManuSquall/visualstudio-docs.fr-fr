@@ -1,7 +1,7 @@
 ---
 title: LAUNCH_FLAGS | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f51aab02-d257-4302-bb79-b7d8ba9ac4e5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6333405364cd88f1975c049a4742b7b021c9475a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 702e6570f57cd2fa330c1374e0c76e18b8c2755b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507554"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196974"
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [LAUNCH_FLAGS](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/launch-flags).  
-  
 Spécifie les indicateurs de lancement du débogage.  
   
 ## <a name="syntax"></a>Syntaxe  

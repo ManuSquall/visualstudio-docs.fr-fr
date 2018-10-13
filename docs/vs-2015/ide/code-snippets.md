@@ -1,7 +1,7 @@
 ---
 title: Extraits de code | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 29087da38fe7c89936e3823b43e591116396e432
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 317471f73c9e7507768b9b600ce995a35b000c23
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492793"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242168"
 ---
 # <a name="code-snippets"></a>Extraits de code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [extraits de Code](https://docs.microsoft.com/visualstudio/ide/code-snippets).  
-  
 Les extraits de code sont de petits blocs de code réutilisables que vous pouvez insérer dans un fichier de code à l'aide d'une commande de menu contextuel ou une combinaison de touches d'accès rapide. Ils contiennent généralement des blocs de code fréquemment utilisés tels que les blocs try-finally ou if-else, mais ils permettent d'insérer des classes ou des méthodes entières.  
   
 ## <a name="expansion-snippets-and-surround-with-snippets"></a>Extraits de code d'extension et extraits de code d'encerclement  

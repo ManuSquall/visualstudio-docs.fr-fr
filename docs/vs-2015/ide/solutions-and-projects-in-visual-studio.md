@@ -1,7 +1,7 @@
 ---
 title: Solutions et projets dans Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -55,18 +55,16 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7223acc3612d12fc5589e46b06b9fa76b5ecf002
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e5996d07a3186c1881e4fc44b3b1622a9ab221f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507387"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211144"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Solutions et projets dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Solutions et projets dans Visual Studio](https://docs.microsoft.com/visualstudio/ide/solutions-and-projects-in-visual-studio).  
-  
 Quand vous créez une application pour mobile, une application, un site web, une application web, un script, un plug-in, etc. dans Visual Studio, vous démarrez avec un *projet*. Au sens logique, un projet contient tous les fichiers de code source, toutes les icônes, toutes les images, tous les fichiers de données et tous les autres éléments qui seront compilés en un programme exécutable ou en un site web, ou ce qui est nécessaire pour effectuer la compilation.  Un projet contient également tous les paramètres de compilateur et les autres fichiers de configuration qui peuvent être nécessaires aux différents services ou composants avec lesquels votre programme communiquera.  
   
  Concrètement, un projet est un fichier XML (*.vbproj, \*.csproj, \*.vcxproj) qui définit une hiérarchie de dossiers virtuels ainsi que les chemins d’accès à tous les éléments qu’il « contient » et tous les paramètres de build. Dans Visual Studio, le fichier projet est utilisé par l'Explorateur de solutions pour afficher le contenu et les paramètres du projet. Quand vous compilez votre projet, le moteur MSBuild utilise le fichier projet pour créer l'exécutable. Vous pouvez également personnaliser des projets pour produire d'autres types de sorties.  

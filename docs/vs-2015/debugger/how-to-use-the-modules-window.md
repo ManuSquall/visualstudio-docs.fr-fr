@@ -1,7 +1,7 @@
 ---
 title: 'Comment : utiliser la fenêtre Modules | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4f7a5c71a95c0e4c366b7001a3adf86d5bacc9c8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fcd1b19557cf07901b5834539095847e7e1395ae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500949"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225171"
 ---
 # <a name="how-to-use-the-modules-window"></a>Comment : utiliser la fenêtre Modules
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [afficher les Modules, les DLL et les exécutables dans le débogueur](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-modules-window).  
-  
 REMARQUE]
 >  Cette fonctionnalité n’est pas disponible pour le débogage de script ou SQL.  
   

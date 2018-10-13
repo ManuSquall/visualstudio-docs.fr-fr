@@ -1,7 +1,7 @@
 ---
 title: 'Comment : afficher les défauts du Code managé | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e9de19a3d371a832ad8d8fa52d7bb2bd9b06363e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4f0dff4744e3c77ed94afe78396008a3de7646c3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496271"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239419"
 ---
 # <a name="how-to-view-managed-code-defects"></a>Procédure : afficher les défauts du code managé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : afficher les défauts du Code géré](https://docs.microsoft.com/visualstudio/code-quality/how-to-view-managed-code-defects).  
-  
 Dans l’analyse du code, les erreurs, avertissements et messages sont signalés dans la fenêtre analyse du Code. La fenêtre analyse du Code s’affiche automatiquement lorsque vous exécutez l’analyse du code sur un projet ou une solution.  
   
  Dans la fenêtre analyse du Code, vous pouvez :  

@@ -1,7 +1,7 @@
 ---
 title: Référence des API pour les modèles de texte T4 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 34e1c49b534257697c97a9eebec0836e11fbd4b4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 762e1ceb0cd91f6946a3b06b28d897f2ef040a7d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505884"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220011"
 ---
 # <a name="api-reference-for-t4-text-templates"></a>Référence API pour les modèles de texte T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [référence de l’API pour les modèles de texte T4](https://docs.microsoft.com/visualstudio/modeling/api-reference-for-t4-text-templates).  
-  
 L’API de création de modèles de texte vous permet d’appeler et de personnaliser la transformation de [modèles de texte](../modeling/code-generation-and-t4-text-templates.md).  
   
 ## <a name="namespaces"></a>Espaces de noms  

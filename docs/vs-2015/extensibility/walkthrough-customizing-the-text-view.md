@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : Personnalisation de l’affichage de texte | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 32d32ac8-22ff-4de7-af69-bd46ec4ad9bf
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 39dca1309adeef8270ae7bb716c4274874451b91
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 661c812625856551f2f6c8194fa97e5df21efbaf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495231"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199041"
 ---
 # <a name="walkthrough-customizing-the-text-view"></a>Procédure pas à pas : personnalisation de l’affichage du texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : personnalisation de l’affichage de texte](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-customizing-the-text-view).  
-  
 Vous pouvez personnaliser un affichage de texte en modifiant les propriétés suivantes dans sa table de format de l’éditeur :  
   
 -   Marge des indicateurs  

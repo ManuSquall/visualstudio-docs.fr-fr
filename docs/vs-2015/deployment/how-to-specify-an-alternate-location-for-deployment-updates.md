@@ -1,7 +1,7 @@
 ---
 title: 'Comment : spécifier un autre emplacement pour le déploiement des mises à jour | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: a0db7eddc38a2b2ab3581ba2b1ff04c90e2adb77
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c992feab2b31ffebf07dcea36bc5bd5cfddc6eab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516625"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228798"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Comment : spécifier un autre emplacement pour les mises à jour du déploiement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : spécifier un autre emplacement pour le déploiement des mises à jour](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-an-alternate-location-for-deployment-updates).  
-  
 Vous pouvez installer votre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application initialement à partir d’un CD ou un partage de fichiers, mais l’application doit rechercher les mises à jour périodiques sur le Web. Vous pouvez spécifier un autre emplacement pour les mises à jour dans votre manifeste de déploiement afin que votre application peut mettre à jour lui-même à partir du Web après son installation initiale.  
   
 > [!NOTE]

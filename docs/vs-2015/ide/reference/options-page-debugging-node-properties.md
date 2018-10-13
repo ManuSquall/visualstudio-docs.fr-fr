@@ -1,7 +1,7 @@
 ---
 title: Page Options, Débogage, propriétés de nœud | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 128e4719775a4ce9d06214547936110ed88b7a14
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8bcc4637ebb933c2d6cc8a06d15ad70c1fbb76c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493444"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223847"
 ---
 # <a name="options-page-debugging-node-properties"></a>Page Options, Débogage, propriétés de nœud
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Page Options, propriétés de nœud débogage](https://docs.microsoft.com/visualstudio/ide/reference/options-page-debugging-node-properties).  
-  
   
 Les tableaux suivants décrivent les pages (ou collections de propriétés) associées à la catégorie **Débogage**, `DTE.Properties("Debugging", <Property Page>)`, de la boîte de dialogue **Options**.  
   

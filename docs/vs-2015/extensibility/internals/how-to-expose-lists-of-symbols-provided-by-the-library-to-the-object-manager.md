@@ -1,7 +1,7 @@
 ---
 title: 'Comment : exposer de listes de symboles fournies par la bibliothèque pour le Gestionnaire d’objets | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0773e20a71516fab47f4bd0c72a1c3a50531532c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09a13b7fecb0d1e337def074b91eb92913a65b70
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508281"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263625"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Comment : exposer de listes de symboles fournies par la bibliothèque pour le Gestionnaire d’objets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [exposer répertorie de symboles fournies pour le Gestionnaire d’objets](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager).  
-  
 Les outils de consultation de symboles, **affichage de classes**, **Explorateur d’objets**, **Explorateur d’appels** et **résultats**, transmettre les demandes de nouvelles données à le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Gestionnaire d’objets. Le Gestionnaire d’objets détecte que les bibliothèques appropriées et demande les nouvelles listes de symboles. Les bibliothèques de répondent en fournissant les données demandées à le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Gestionnaire d’objets via le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interface. Le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Gestionnaire d’objets appelle les méthodes dans <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> pour obtenir les données de l’interface et l’utilise pour remplir ou mettre à jour les vues des outils de recherche de symboles.  
   
  Une bibliothèque peut recevoir des demandes de données en l’outil est appelé, le nœud est développé, ou la vue soit actualisée. Lorsqu’un outil de consultation de symboles est appelé pour la première fois, le Gestionnaire d’objets demande la bibliothèque pour fournir la liste de niveau supérieur. Lorsque l’utilisateur développe un nœud de la liste, la bibliothèque fournit une liste d’enfants sous ce nœud. Chaque consultation de gestionnaire d’objet contient un index de l’élément concerné. Pour afficher une nouvelle liste, le Gestionnaire d’objets doit déterminer combien d’éléments figurent dans la liste, le type d’éléments, leurs noms, d’accessibilité et d’autres propriétés.  

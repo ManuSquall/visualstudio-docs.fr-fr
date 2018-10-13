@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : Mise en surbrillance de texte | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
 caps.latest.revision: 43
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 238d9d65ac43fc5d33c05a28c48ed62c57102d92
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 504f9c099b76bf2b59cabb271b12b7b419586248
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501784"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224287"
 ---
 # <a name="walkthrough-highlighting-text"></a>Procédure pas à pas : mise en surbrillance de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : mise en surbrillance le texte](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-highlighting-text).  
-  
 Vous pouvez ajouter différents effets visuels à l’éditeur en créant des composants de Managed Extensibility Framework (MEF). Cette procédure pas à pas montre comment mettre en surbrillance chaque occurrence du mot actuel dans un fichier texte. Si un mot se produit plusieurs fois dans un fichier texte, et vous positionnez le signe insertion dans une seule occurrence, toutes les occurrences sont mis en surbrillance.  
   
 ## <a name="prerequisites"></a>Prérequis  

@@ -1,7 +1,7 @@
 ---
 title: Paramètres synchronisés dans Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1e0facac569671c880004d1fc1a7aa29487e7926
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29e962192644d605f83504fb14df10398e1237ea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506412"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228395"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Paramètres synchronisés dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [synchroniser vos paramètres dans Visual Studio](https://docs.microsoft.com/visualstudio/ide/synchronized-settings-in-visual-studio).  
-  
 Lorsque vous utilisez le même compte de personnalisation pour vous connecter à Visual Studio sur plusieurs ordinateurs, vos paramètres sont synchronisés par défaut sur tous les ordinateurs.  
   
 ## <a name="synchronized-settings"></a>Paramètres synchronisés  

@@ -1,7 +1,7 @@
 ---
 title: Modèles de prise en charge des sites Web | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f062390fbf0aa47021dbec8ed7939d440333950f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b18d6fe0574782a6d04adb49787ac2f49f649314
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504090"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233569"
 ---
 # <a name="web-site-support-templates"></a>Modèles de prise en charge de site web
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [modèles de prise en charge de Site Web](https://docs.microsoft.com/visualstudio/extensibility/internals/web-site-support-templates).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Modèles de projet et d’élément de site Web fournissent un site Web réutilisables et personnalisables des stubs qui accélèrent le processus de développement en supprimant la nécessité de créer de nouveaux projets de site Web et des éléments à partir de zéro. Pour plus d’informations sur [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] modèles, consultez [création de projet et modèles d’élément](../../ide/creating-project-and-item-templates.md).  
   
 ## <a name="project-template-folder"></a>Dossier de modèles de projet  

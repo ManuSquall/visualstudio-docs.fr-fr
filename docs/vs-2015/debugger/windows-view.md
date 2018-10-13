@@ -1,7 +1,7 @@
 ---
 title: Affichage de Windows | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd40259af773e268a8786f370591d5d0a474b05e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4622e268aaaf76a2968a2bc6ef67ead7b0c45b5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516580"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261701"
 ---
 # <a name="windows-view"></a>Vue Fenêtres
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Windows vue](https://docs.microsoft.com/visualstudio/debugger/windows-view).  
-  
 Lorsque vous ouvrez Spy ++, Windows affiche une arborescence de toutes les fenêtres et les contrôles dans le système. Le nom de handle et de la classe de fenêtre sont affichés. La fenêtre du bureau actuelle est en haut de l’arborescence. Toutes les autres fenêtres sont des enfants du bureau et sont répertoriés en fonction de la hiérarchie de fenêtre standard. Fenêtres sœurs s’affichent dans les listes extensible mis en retrait sous leurs parents.  
   
  La figure ci-dessous montre une vue de Spy ++ Windows classique avec le nœud supérieur est développé.  

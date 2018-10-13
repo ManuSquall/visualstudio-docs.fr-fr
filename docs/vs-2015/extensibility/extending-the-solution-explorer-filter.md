@@ -1,7 +1,7 @@
 ---
 title: Étendre le filtre de l’Explorateur de solutions | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: df93778a54da9c24b59228bd27e4930721273cbf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7dfe0d8e8341847941880bd2b44ee29341cc07ec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508172"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195752"
 ---
 # <a name="extending-the-solution-explorer-filter"></a>Extension du filtre de l’Explorateur de solutions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [étendre le filtre de l’Explorateur de solutions](https://docs.microsoft.com/visualstudio/extensibility/extending-the-solution-explorer-filter).  
-  
 Vous pouvez étendre **l’Explorateur de solutions** fonctionnalité pour afficher ou masquer les différents fichiers de filtrage. Par exemple, vous pouvez créer un filtre qui affiche uniquement classe factory fichiers c# dans le **l’Explorateur de solutions**, comme illustré dans cette procédure pas à pas.  
   
 ## <a name="prerequisites"></a>Prérequis  

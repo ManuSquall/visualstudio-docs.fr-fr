@@ -1,7 +1,7 @@
 ---
 title: Project, élément (modèles Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 1da15ea6-26e2-462b-a03e-584ef4996579
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c5c318d26c0a09aaca03cb0043c2b0eb54d43146
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a7f0ee60ac515e40a54103f3b34ac492aab51068
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505247"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191852"
 ---
 # <a name="project-element-visual-studio-templates"></a>Project, élément (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Project, élément (modèles Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/project-element-visual-studio-templates).  
-  
 Spécifie les fichiers ou répertoires à ajouter au projet.  
   
  \<VSTemplate >  

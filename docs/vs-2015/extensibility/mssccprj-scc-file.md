@@ -1,7 +1,7 @@
 ---
 title: MSSCCPRJ. Fichier de SCC | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a3387d5563cee60149c8d59a0d7f7179c211a10
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a220dbbf80320603b997f03ca16db58dd2865be0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504629"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246023"
 ---
 # <a name="mssccprjscc-file"></a>Fichier MSSCCPRJ.SCC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [MSSCCPRJ. Fichier de SCC](https://docs.microsoft.com/visualstudio/extensibility/mssccprj-scc-file).  
-  
 Lorsqu’une solution Visual Studio ou un projet est placé sous contrôle de code source à l’aide de l’IDE, l’IDE reçoit deux informations essentielles à partir du plug-in sous la forme de chaînes de contrôle de source. Ces chaînes, « AuxPath » et « ProjName », sont opaques à l’IDE, mais elles sont utilisées par le plug-in pour rechercher la solution ou le projet dans le contrôle de version. L’IDE obtient généralement ces chaînes de la première fois en appelant le [SccGetProjPath](../extensibility/sccgetprojpath-function.md), et il les enregistre ensuite dans le fichier solution ou un projet pour les appels suivants à la [SccOpenProject](../extensibility/sccopenproject-function.md). Lorsqu’il est incorporé dans les fichiers solution et projet, les chaînes « AuxPath » et « ProjName » ne sont pas automatiquement mis à jour un utilisateur, les branchements, branches ou copie des fichiers solution et projet qui se trouvent dans le contrôle de version. Pour vous assurer que les fichiers solution et projet pointent vers leur emplacement correct dans le contrôle de version, les utilisateurs doivent mettre à jour manuellement les chaînes. Étant donné que les chaînes sont destinés à être opaque, il peut pas toujours clair comment ils doivent être mis à jour.  
   
  Le plug-in de contrôle de code source peut éviter ce problème en stockant les chaînes « AuxPath » et « ProjName » dans un fichier spécial appelé le MSSCCPRJ. Fichier de contrôle de code source. C’est un fichier local, côté client qui est détenu et géré par le plug-in. Ce fichier n’est jamais placé sous contrôle de code source, mais est généré par le plug-in pour chaque répertoire qui contient les fichiers sous contrôle de code source. Pour déterminer quels fichiers sont des fichiers solution et projet de Visual Studio, un plug-in de contrôle de code source peut comparer les extensions de fichier par rapport à une liste standard ou fourni par l’utilisateur. Une fois que l’IDE détecte qu’un plug-in prend en charge la MSSCCPRJ. Fichier de contrôle de code source, il cesse d’incorporer le « AuxPath » et les chaînes « ProjName » dans la solution, les fichiers de projet et il lit la MSSCCPRJ ces chaînes. Contrôle de code source du fichier à la place.  

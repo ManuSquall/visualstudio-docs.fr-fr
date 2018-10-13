@@ -1,7 +1,7 @@
 ---
 title: Afficher les registres, commande | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c9ff1287bb4c92d074c0a0e123d48ddb7e61cc90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e52b7de812be9168c30093b16041db42ea4676b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503605"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195414"
 ---
 # <a name="list-registers-command"></a>Afficher les registres, commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [afficher les registres, commande](https://docs.microsoft.com/visualstudio/ide/reference/list-registers-command).  
-  
   
 Affiche la valeur des registres sélectionnés et vous permet de modifier la liste de registres à afficher.  
   

@@ -1,7 +1,7 @@
 ---
 title: Attachement directement à un programme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: ad2b7db8-821c-440c-ba07-c55c6a395e0f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab866d46e99c6cdee8300bc194468b115ab59e51
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a30805988b00fa2c25057f75ebdc3b6359444ab5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503527"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265927"
 ---
 # <a name="attaching-directly-to-a-program"></a>Attachement direct à un programme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [attachement directement à un programme](https://docs.microsoft.com/visualstudio/extensibility/debugger/attaching-directly-to-a-program).  
-  
 Les utilisateurs qui souhaitent déboguer des programmes dans un processus qui est déjà en cours d’exécution en général, procédez comme suit :  
   
 1.  Dans l’IDE, choisissez le **déboguer les processus** commande à partir de la **outils** menu.  

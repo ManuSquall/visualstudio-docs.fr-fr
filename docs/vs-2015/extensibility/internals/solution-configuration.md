@@ -1,7 +1,7 @@
 ---
 title: Configuration de la solution | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5f8735f841f7b26f03c30bc7f42b06b3ca5e260d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c2efd5a626e92d180f7c842172f764fa7f8011e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504016"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245792"
 ---
 # <a name="solution-configuration"></a>Configuration de la solution
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Configuration de la Solution](https://docs.microsoft.com/visualstudio/extensibility/internals/solution-configuration).  
-  
 Les configurations de solution stockent des propriétés au niveau de la solution. Ils contrôlent le comportement de la **Démarrer** touche (F5) et **Build** commandes. Par défaut, ces commandes créent et démarrer la configuration debug. Les deux commandes s’exécutent dans le contexte d’une configuration de solution. Cela signifie que l’utilisateur peut attendre F5 pour démarrer et quelle que soit la solution active est configurée via les paramètres de build. L’environnement est conçu pour optimiser pour les solutions plutôt que des projets lorsqu’il s’agit de création et l’exécution.  
   
  La barre d’outils standard de Visual Studio contient un bouton de démarrage et une liste déroulante à droite du bouton Démarrer de configuration de solution. Cette liste permet aux utilisateurs de choisir la configuration à démarrer lorsque vous appuyez sur F5, créer leurs propres configurations de solutions ou modifier une configuration existante.  

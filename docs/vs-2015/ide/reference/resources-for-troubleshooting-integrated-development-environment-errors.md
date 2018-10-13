@@ -1,7 +1,7 @@
 ---
 title: Ressources pour résoudre les erreurs d’environnement de développement intégré | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -99,18 +99,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 31668e379b601b996d06bf70515ac43dff4e9093
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 269806ea71794f1b328fd94e147dbf055b78ca1f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503611"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232659"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Ressources pour résoudre les erreurs d'environnement de développement intégré
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [ressources pour la résolution des problèmes des erreurs d’environnement de développement intégré](https://docs.microsoft.com/visualstudio/ide/reference/resources-for-troubleshooting-integrated-development-environment-errors).  
-  
   
 Les messages d’erreur n’ont pas tous une rubrique d’aide associée. Si les informations du message d’erreur ne vous aident pas à résoudre le problème, vous pouvez consulter d’autres ressources, telles que les articles de la Base de connaissances, la communauté des développeurs ou le support technique.  
   

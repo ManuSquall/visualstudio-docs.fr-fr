@@ -1,7 +1,7 @@
 ---
 title: Fonction SccIsMultiCheckoutEnabled | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 6721639d-e475-4766-81b5-ee40a280fc70
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 11bd525d90f6c593c7a78de5734fa2b2e718c9db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: adef38debbdfbed9e224a453fd80215df7cfaa2c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507877"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223013"
 ---
 # <a name="sccismulticheckoutenabled-function"></a>Fonction SccIsMultiCheckoutEnabled
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [fonction SccIsMultiCheckoutEnabled](https://docs.microsoft.com/visualstudio/extensibility/sccismulticheckoutenabled-function).  
-  
 Cette fonction vérifie si le plug-in de contrôle de code source autorise les extractions multiples sur un fichier.  
   
 ## <a name="syntax"></a>Syntaxe  

@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_liveRangeStartAddressOffset | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 07da171ba58c5567a7ea58b68b1834b5ba624e42
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0da08e8e9d79ee5d94b81225bd241f8a1071f27
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494636"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249286"
 ---
 # <a name="idiasymbolgetliverangestartaddressoffset"></a>IDiaSymbol::get_liveRangeStartAddressOffset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDiaSymbol::get_liveRangeStartAddressOffset](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset).  
-  
 Retourne la partie décalage de l’adresse de départ de la plage dans laquelle le symbole local est valide.  
   
 ## <a name="syntax"></a>Syntaxe  

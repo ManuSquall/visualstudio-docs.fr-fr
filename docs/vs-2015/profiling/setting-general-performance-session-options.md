@@ -1,7 +1,7 @@
 ---
 title: Définition des options générales d’une session de performances | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abf40be314191096447e389ef145385d2e0f616b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b33848b2985cdc4303b75bdc493bfaf33af36b1e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501922"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256774"
 ---
 # <a name="setting-general-performance-session-options"></a>Définition des options générales d'une session de performance
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [définition des Options de Session général performances](https://docs.microsoft.com/visualstudio/profiling/setting-general-performance-session-options).  
-  
 Vous pouvez définir la méthode de collecte et les conventions de nommage des noms de données pour une session de performances des Outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dans la page **Général** de la boîte de dialogue des propriétés de la session de performances. Pour ouvrir cette boîte de dialogue depuis **l’Explorateur de performances**, cliquez avec le bouton droit sur la session de performances, puis cliquez sur **Propriétés**.  
   
  **Spécifications**  

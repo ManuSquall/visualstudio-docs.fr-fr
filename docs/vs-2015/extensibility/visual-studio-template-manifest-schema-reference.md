@@ -1,7 +1,7 @@
 ---
 title: Référence du schéma de manifeste de modèle Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b079e6b7356cdd84a98314beef95f4b1a8fbc5ee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 28301729091333191bcb0c381e37e20d3d9c53aa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495485"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217090"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Informations de référence sur le schéma de manifeste de modèle Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [référence modèle Visual Studio Manifest schéma](https://docs.microsoft.com/visualstudio/extensibility/visual-studio-template-manifest-schema-reference).  
-  
 Ce schéma décrit le format des fichiers de manifeste (.vstman) de modèle Visual Studio généré pour les modèles de projet ou d’élément Visual Studio et décrit l’emplacement et autres informations pertinentes concernant le modèle.  
   
  : Comme élément distinct et les répertoires de modèle de projet, un manifeste ne devez jamais avoir une combinaison des modèles de projet et d’élément.  

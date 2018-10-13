@@ -1,7 +1,7 @@
 ---
 title: Définir des règles de règles de conception étendue pour le code managé | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fb9b8544d2d4f902bf5bd64afc937f505990b736
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7b486156a2b2fb9161b20441cfb8e62c2a9b4bb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495416"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207816"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Ensemble de règles de règles de conception étendue pour le code managé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [règle de règles de conception étendue définie pour le code managé](https://docs.microsoft.com/visualstudio/code-quality/extended-design-guidelines-rules-rule-set-for-managed-code).  
-  
 L’ensemble de règles intitulé règles de conception étendue Microsoft s’appuie sur les règles de conception de base pour optimiser les problèmes de facilité d’utilisation et la facilité de gestion qui sont signalés. Accentuation supplémentaire est placée sur les règles de dénomination. Vous devez envisager d’y compris cet ensemble de règles si votre projet inclut le code de bibliothèque ou si vous souhaitez appliquer les normes la plus élevées pour l’écriture de code qui est facile à gérer.  
   
  Les règles de conception étendue incluent l’ensemble de la conception de règles de base Microsoft. Les règles de conception de base incluent l’ensemble de règles Microsoft minimales recommandées. Pour plus d’informations, consultez [règle de règles de conception base définie pour le code managé](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) et [gérés recommandé de règles défini pour le code managé](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)  

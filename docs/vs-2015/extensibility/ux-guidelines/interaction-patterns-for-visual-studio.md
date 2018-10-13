@@ -1,7 +1,7 @@
 ---
 title: Modèles d’interaction pour Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: a3643792-b0df-481c-bc35-576f948e04cf
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf21a8aa3c2a2813c71907d1d79bdcd4f7cde323
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ac6dde1b09e0488f3ae07b3a6ea02409d69892e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502408"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192060"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Modèles d’interaction pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [modèles d’Interaction pour Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/interaction-patterns-for-visual-studio).  
-  
 ## <a name="overview"></a>Vue d'ensemble  
  Un modèle de conception, en général, est le cœur d’une conception qui peut être appliqué dans des situations spécifiques pour résoudre des problèmes avec des ensembles similaires de contraintes. Concepteurs de fonctionnalités et système utilisent ces modèles de conception comme alternatives qui peuvent ensuite être adaptées à leur situation particulière.  
   

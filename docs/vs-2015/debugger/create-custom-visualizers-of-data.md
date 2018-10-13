@@ -1,7 +1,7 @@
 ---
 title: Créer des visualiseurs de données personnalisés | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a025068d1657d9feb569a77731aa8bab517bae2f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1fccaad8cb22bdd5193f2a674c5a9c6bafb49a7a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504831"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217631"
 ---
 # <a name="create-custom-visualizers-of-data"></a>Créer des visualiseurs de données personnalisés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [créer des visualiseurs personnalisés de données](https://docs.microsoft.com/visualstudio/debugger/create-custom-visualizers-of-data).  
-  
 Les visualiseurs sont des composants de la [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] interface utilisateur du débogueur. Un *visualiseur* crée une boîte de dialogue ou une autre interface pour afficher une variable ou un objet d’une manière qui convient à son type de données. Par exemple, un visualiseur HTML interprète une chaîne HTML et affiche le résultat tel qu'il apparaîtrait dans une fenêtre du navigateur ; un visualiseur bitmap interprète une structure bitmap et affiche le graphique représenté. Certains visualiseurs vous permettent de modifier et de consulter les données.  
   
  Le débogueur [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] comprend six visualiseurs standard. Il s’agit de texte, les visualiseurs HTML, XML et JSON, qui fonctionnent sur les objets de chaîne ; le visualiseur de l’arborescence WPF, pour afficher les propriétés d’une arborescence d’objets visual WPF ; et le visualiseur dataset, qui fonctionne pour les objets DataSet, DataView et DataTable. Des visualiseurs supplémentaires sont disponibles auprès de tiers et de la communauté. Vous pourrez en télécharger plus tard chez Microsoft Corporation. De plus, vous pouvez écrire vos propres visualiseurs et les installer dans le débogueur [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  

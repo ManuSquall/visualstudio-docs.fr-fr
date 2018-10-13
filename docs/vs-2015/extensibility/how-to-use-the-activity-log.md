@@ -1,7 +1,7 @@
 ---
 title: 'Comment : utiliser le journal d’activité | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 79a06bd3bcaa8b6361d0aaa19dffb8081d652a3b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4804f07a673abb99d2b0405b397fe53d2e52f589
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507379"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212445"
 ---
 # <a name="how-to-use-the-activity-log"></a>Comment : utiliser le journal d’activité
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : utiliser le journal d’activité](https://docs.microsoft.com/visualstudio/extensibility/how-to-use-the-activity-log).  
-  
 Les VSPackages peuvent écrire des messages dans le journal d’activité. Cette fonctionnalité est particulièrement utile pour déboguer les VSPackages dans les environnements de vente au détail.  
   
 > [!TIP]

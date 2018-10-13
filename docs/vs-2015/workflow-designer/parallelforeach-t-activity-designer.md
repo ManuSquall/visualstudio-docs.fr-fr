@@ -1,7 +1,7 @@
 ---
 title: ParallelForEach&lt;T&gt; Concepteur d’activités | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,17 +14,17 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 7a384844ca8d41b9e40de13c7dc7bc161d6c09f7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb97ba6abb40c34d03e612c346e2c721719024de
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495628"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216396"
 ---
 # <a name="parallelforeachlttgt-activity-designer"></a>ParallelForEach&lt;T&gt; Concepteur d’activités
-L'activité <xref:System.Activities.Statements.ParallelForEach%601> énumère les éléments d'une collection et, pour chacun d'eux, exécute en parallèle une instruction incorporée, qui se trouve de façon asynchrone sur le même thread. Utilisez cette activité de contrôle de flux au lieu de l'activité <xref:System.Activities.Statements.Sequence> si ses activités enfants sont censées devenir inactives.  
+L’activité <xref:System.Activities.Statements.ParallelForEach%601> énumère les éléments d’une collection et, pour chacun d’eux, exécute en parallèle une instruction incorporée, qui se trouve de façon asynchrone sur le même thread. Utilisez cette activité de contrôle de flux au lieu de l'activité <xref:System.Activities.Statements.Sequence> si ses activités enfants sont censées devenir inactives.  
   
- L'activité <xref:System.Activities.Statements.ParallelForEach%601> a une propriété <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> qui contient une expression [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] spécifiée par l'utilisateur. L'activité <xref:System.Activities.Statements.ParallelForEach%601> évalue cette propriété après l'exécution de chaque branche. Si elle a la valeur **true**, puis le <xref:System.Activities.Statements.ParallelForEach%601> activité se termine sans exécuter les autres branches. Si le <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> ne correspond pas à **true**, puis le <xref:System.Activities.Statements.ParallelForEach%601> activité se termine lorsque toutes ses activités enfants sont terminées.  
+ L'activité <xref:System.Activities.Statements.ParallelForEach%601> a une propriété <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> qui contient une expression [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] spécifiée par l'utilisateur. L’activité <xref:System.Activities.Statements.ParallelForEach%601> évalue cette propriété après l’exécution de chaque branche. Si elle a la valeur **true**, puis le <xref:System.Activities.Statements.ParallelForEach%601> activité se termine sans exécuter les autres branches. Si le <xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A> ne correspond pas à **true**, puis le <xref:System.Activities.Statements.ParallelForEach%601> activité se termine lorsque toutes ses activités enfants sont terminées.  
   
 ## <a name="the-parallelforeacht-activity"></a>ParallelForEach\<T > activité  
  L'activité <xref:System.Activities.Statements.ParallelForEach%601> énumère ses valeurs et planifie la propriété <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> pour chaque valeur énumérée. Elle planifie seulement la propriété <xref:System.Activities.Statements.ParallelForEach%601.Body%2A>. La manière dont le corps s'exécute dépend de l'inactivation de la propriété <xref:System.Activities.Statements.ParallelForEach%601.Body%2A>.  

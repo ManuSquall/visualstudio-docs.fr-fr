@@ -1,7 +1,7 @@
 ---
 title: L’Instance expérimentale | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: ead0df4e-6f88-4b42-9297-581b7902f050
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3d819be41806e075de23dbfb5b5b3cded5bbeb40
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 212fc490c26ab66284cf7bdfa4e51946c817266d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503230"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220439"
 ---
 # <a name="the-experimental-instance"></a>Instance expérimentale
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [l’Instance expérimentale](https://docs.microsoft.com/visualstudio/extensibility/the-experimental-instance).  
-  
 Afin de préserver votre environnement de développement Visual Studio à partir d’applications non testées susceptible du modifier, l’extensibilité Visual Studio fournit un espace expérimental que vous pouvez utiliser pour faire des essais. Développer de nouvelles applications à l’aide de Visual Studio comme d’habitude, mais les exécuter à l’aide de cette instance expérimentale.  
   
  Chaque application qui dispose d’un package VSIX lance l’instance expérimentale de Visual Studio en mode débogage.  

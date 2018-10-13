@@ -1,7 +1,7 @@
 ---
 title: Propagation de modifications dans le modèle de règles | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c2e0b710d96d5da7b31ac2fce7542b0c981fe1b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab05923a02176f4c0d8aa30ac9d26b0e41868396
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494109"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222714"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Propagation de modifications dans le modèle par des règles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [propager les modifications dans le modèle de règles](https://docs.microsoft.com/visualstudio/modeling/rules-propagate-changes-within-the-model).  
-  
 Vous pouvez créer une règle de magasin pour propager une modification d’un élément à un autre dans la visualisation et modélisation de kit de développement logiciel (SDK) VISUALIZATION. En cas de modification à un élément dans le Store, les règles sont planifiées pour être exécutée, généralement lors de la transaction externe est validée. Il existe différents types de règles pour différents types d’événements, comme l’ajout d’un élément ou sa suppression. Vous pouvez attacher des règles à des types d’éléments, des formes ou des diagrammes. Nombreuses fonctionnalités intégrées sont définies par les règles : par exemple, règles garantissent qu’un diagramme est mis à jour quand le modèle change. Vous pouvez personnaliser votre langage spécifique à un domaine en ajoutant vos propres règles.  
   
  Règles de Store sont particulièrement utiles pour les modifications de propagation des modifications à l’intérieur de la banque : autrement dit, des propriétés pour les éléments de modèle, des relations, des formes ou des connecteurs et leur domaine. Les règles ne s’exécutent pas lorsque l’utilisateur appelle les commandes d’annulation ou de rétablissement. Au lieu de cela, le Gestionnaire de transactions permet de s’assurer que le magasin de contenu est restauré à l’état correct. Si vous souhaitez propager les modifications apportées aux ressources en dehors du magasin, utilisez les événements de Store. Pour plus d’informations, consultez [gestionnaires propager les modifications en dehors le modèle d’événement](../modeling/event-handlers-propagate-changes-outside-the-model.md).  

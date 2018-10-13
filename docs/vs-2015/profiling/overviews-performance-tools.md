@@ -1,7 +1,7 @@
 ---
 title: Vues d’ensemble (Outils d’analyse des performances) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 83bea4bba1314c6363308cf36b0eb075e256ddd3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 679f85dc565ba55631bf6ef9877803ca407e9f85
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503999"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226263"
 ---
 # <a name="overviews-performance-tools"></a>Vues d’ensemble (Outils d’analyse des performances)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [présentations (outils de performances)](https://docs.microsoft.com/visualstudio/profiling/overviews-performance-tools).  
-  
 Cette section fournit des vues d’ensemble conceptuelles et terminologiques des outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], que vous pouvez utiliser pour mesurer les caractéristiques de performances d’une application en cours de développement.  
   
 ## <a name="in-this-section"></a>Dans cette section  

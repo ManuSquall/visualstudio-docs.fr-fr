@@ -1,7 +1,7 @@
 ---
 title: Installer et gérer un contenu local | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 298448421430491cba3c367dc1976cf755f2b601
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9cc71753fa34ceee7ba23cc63d45288d9b583b7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508310"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193834"
 ---
 # <a name="install-and-manage-local-content"></a>Installer et gérer un contenu local
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [installer et gérer le contenu Local](https://docs.microsoft.com/visualstudio/ide/install-and-manage-local-content).  
-  
 Microsoft Help Viewer vous permet d’ajouter, de supprimer, de mettre à jour et de déplacer le contenu d’aide installé sur votre ordinateur pour répondre à vos besoins de développement de logiciels.  
   
  Pour gérer le contenu sur votre ordinateur local, vous devez vous connecter avec un compte qui dispose des autorisations d'administration. Par ailleurs, vous ne pourrez peut-être pas gérer le contenu local si vous travaillez dans un environnement d'entreprise, car il est possible que les administrateurs système prennent ces décisions pour votre organisation. Pour plus d’informations, consultez le [Guide de l’administrateur de la visionneuse d’aide](../ide/help-viewer-administrator-guide.md).  

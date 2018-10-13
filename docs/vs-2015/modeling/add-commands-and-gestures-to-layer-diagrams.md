@@ -1,7 +1,7 @@
 ---
 title: Ajouter des commandes et des mouvements aux diagrammes de couche | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 40
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9434c93caf9cfe614a01cf9a10912f1d0562b9bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3985372ba8c6aa8ba198f70a3538e3062a6d89ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503502"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223212"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Ajouter des commandes et des mouvements aux diagrammes de couche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [ajouter des commandes et des mouvements aux diagrammes de dépendance](https://docs.microsoft.com/visualstudio/modeling/add-commands-and-gestures-to-layer-diagrams).  
-  
 Vous pouvez définir des commandes de menu contextuel et des gestionnaires de mouvements dans des diagrammes de couche dans Visual Studio. Vous pouvez empaqueter ces extensions dans une extension d’intégration Visual Studio (VSIX) et les distribuer à d’autres utilisateurs de Visual Studio.  
   
  Si vous le souhaitez, vous pouvez définir plusieurs commandes et gestionnaires de mouvements dans le même projet Visual Studio. Vous pouvez également combiner plusieurs de ces projets dans une extension VSIX. Vous pouvez par exemple définir une extension VSIX qui comprend des commandes de couche, un langage spécifique à un domaine et des commandes pour des diagrammes UML.  
@@ -60,7 +58,7 @@ Vous pouvez définir des commandes de menu contextuel et des gestionnaires de mo
   
      [Définition d’un gestionnaire de mouvements](#gesture)  
   
-6.  Pour installer l’extension dans l’instance principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou sur un autre ordinateur, recherchez le **.vsix** fichier **bin\\\***. Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer, puis double-cliquez dessus. Pour le désinstaller, utilisez **Extensions et mises à jour** dans le menu **Outils** .  
+6.  Pour installer l’extension dans l’instance principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou sur un autre ordinateur, recherchez le fichier **.vsix** dans **bin\\\***. Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer, puis double-cliquez dessus. Pour le désinstaller, utilisez **Extensions et mises à jour** dans le menu **Outils** .  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Ajout d’une commande ou d’un mouvement à une extension VSIX distincte  
  Si vous souhaitez créer une extension VSIX qui contient des commandes, des validateurs de couche et d’autres extensions, nous vous recommandons de créer un projet pour définir l’extension VSIX et des projets distincts pour les gestionnaires. Pour plus d’informations sur les autres types d’extensions de modélisation, consultez [modèles et diagrammes UML étendre](../modeling/extend-uml-models-and-diagrams.md).  
@@ -111,7 +109,7 @@ Vous pouvez définir des commandes de menu contextuel et des gestionnaires de mo
   
 2.  Pour tester la fonctionnalité, appuyez sur Ctrl+F5 ou F5. Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] s'ouvre. Dans cette instance, créez ou ouvrez un diagramme de couche.  
   
-3.  Pour installer l’extension VSIX dans l’instance principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou sur un autre ordinateur, recherchez le **.vsix** de fichiers dans le **bin** répertoire du projet VSIX. Copiez-le sur l’ordinateur sur lequel vous souhaitez installer l’extension VSIX. Double-cliquez sur le fichier VSIX dans l’Explorateur Windows (l’Explorateur de fichiers dans Windows 8).  
+3.  Pour installer l’extension VSIX dans l’instance principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou sur un autre ordinateur, recherchez le fichier **.vsix** dans le répertoire **bin** du projet VSIX. Copiez-le sur l’ordinateur sur lequel vous souhaitez installer l’extension VSIX. Double-cliquez sur le fichier VSIX dans l’Explorateur Windows (l’Explorateur de fichiers dans Windows 8).  
   
      Pour le désinstaller, utilisez **Extensions et mises à jour** dans le menu **Outils** .  
   

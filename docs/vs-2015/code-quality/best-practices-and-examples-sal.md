@@ -1,7 +1,7 @@
 ---
 title: Meilleures pratiques et exemples (SAL) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9391be90516dcd7549124d7992777fd52d3134d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 35cae638c5838d098632ff244545acc749400a24
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508495"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202187"
 ---
 # <a name="best-practices-and-examples-sal"></a>Meilleures pratiques et exemples (SAL)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [meilleures pratiques et exemples (SAL)](https://docs.microsoft.com/visualstudio/code-quality/best-practices-and-examples-sal).  
-  
 Voici quelques méthodes permettant de tirer le meilleur hors de la langue Annotation du Code Source (SAL) et éviter certains problèmes courants.  
   
 ## <a name="in"></a>_In\_  

@@ -1,7 +1,7 @@
 ---
 title: Collecte de statistiques de performance à l’aide de l’échantillonnage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce6a9fed51e4c5dc93fca406dbb43787700d83d2
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: eaa8ae8c5e073d4c83ae6489cd32953b0959072f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880407"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223691"
 ---
 # <a name="collecting-performance-statistics-by-using-sampling"></a>Collecte de statistiques de performance à l’aide de l’échantillonnage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [collecte des statistiques de performances par l’échantillonnage à l’aide de](https://docs.microsoft.com/visualstudio/profiling/collecting-performance-statistics-by-using-sampling).  
-  
 Par défaut, la méthode d’échantillonnage des outils de profilage de [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] collecte les informations de profilage tous les 10 000 000 cycles de processeur (soit environ tous les centièmes de seconde sur un ordinateur de 1 GHz). La méthode d’échantillonnage est utile pour détecter les problèmes d’utilisation du processeur. De plus, elle est conseillée pour commencer la plupart des examens de performances.  
   
  **Spécifications**  

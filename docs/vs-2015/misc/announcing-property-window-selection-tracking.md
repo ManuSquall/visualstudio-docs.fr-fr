@@ -1,7 +1,7 @@
 ---
 title: Annonce de suivi de sélection de fenêtre de propriété | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: a7536f82-afd7-4894-9a60-84307fb92b7e
 caps.latest.revision: 13
 manager: douge
-ms.openlocfilehash: bb2f2ceb7ed7faa3165f2346a0e0d14de1371166
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9639e0347689fc99e0b43c4b69394b522af984da
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503048"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246738"
 ---
 # <a name="announcing-property-window-selection-tracking"></a>Annonce du suivi de sélection de la fenêtre Propriétés
 Si vous souhaitez travailler avec le **propriétés** fenêtre ou le **propriété** des pages, par exemple, un formulaire, texte ou une sélection pour lequel vous souhaitez voir les propriétés, puis vous devez avoir une connaissance complète de la façon vous coordonner la sélection. Par exemple, vous devez connaître si vous disposez d’une sélection unique ou plusieurs sélections. Vous devez ensuite annoncer votre type de sélection (un ou plusieurs) à l’IDE à l’aide de la <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> interface. Cette interface fournit des informations requises par le **propriétés** fenêtre.  

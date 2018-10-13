@@ -1,7 +1,7 @@
 ---
 title: Graphique de l’objet Table | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 64c2cf7af6c7133182d915c62aa763b2d8718c90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09ddad36cf6d9ae70c21a0e1f9505e257b253ca3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507089"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219518"
 ---
 # <a name="graphics-object-table"></a>Table des objets Graphics
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Table des objets Graphics](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-object-table).  
-  
 La Table des objets Graphics dans Visual Studio Graphics Analysis vous permet d'identifier les objets Direct3D qui prennent en charge un frame de votre jeu ou application.  
   
  Voici la Table des objets :  
