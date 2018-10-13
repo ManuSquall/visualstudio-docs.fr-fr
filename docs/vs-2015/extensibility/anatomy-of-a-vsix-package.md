@@ -1,7 +1,7 @@
 ---
 title: Anatomie d’un Package VSIX | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 645d9bff0b1f1bd3ac3afe3f5c815d9b9cd208d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 207abbda08134c2a1e065cf73050fc2451d4eaab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503242"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181456"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomie d’un package VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Anatomie d’un Package VSIX](https://docs.microsoft.com/visualstudio/extensibility/anatomy-of-a-vsix-package).  
-  
 Un package VSIX est un fichier .vsix contenant une ou plusieurs extensions de Visual Studio, ainsi que les métadonnées de que Visual Studio utilise pour classifier et installer les extensions. Ces métadonnées sont contenues dans le manifeste VSIX et le fichier [Content_Types] .xml. Un package VSIX peut également contenir un ou plusieurs fichiers Extension.vsixlangpack pour fournir un texte localisé le programme d’installation et peut contenir des packages VSIX supplémentaires pour installer les dépendances.  
   
  Le format de package VSIX suit la norme Open Packaging Conventions (OPC). Le package contient des fichiers binaires et fichiers de prise en charge, ainsi que d’un fichier [Content_Types] .xml et un .vsix du fichier manifeste. Un package VSIX peut contenir la sortie de plusieurs projets, ou même plusieurs packages qui ont leur propre manifeste.  

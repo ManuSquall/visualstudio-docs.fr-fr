@@ -1,7 +1,7 @@
 ---
 title: Création d’une Page d’Options | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
 caps.latest.revision: 63
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0fe6e26a534f7bb02d0a309d436d9b62927639a6
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: bd04ea51fb73f6f095c9f5bcddce735deb06066e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880244"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219698"
 ---
 # <a name="creating-an-options-page"></a>Création d’une page d’options
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [création d’une Page d’Options](https://docs.microsoft.com/visualstudio/extensibility/creating-an-options-page).  
-  
 Cette procédure pas à pas crée une page Outils/Options simple qui utilise une grille de propriétés pour examiner et définir des propriétés.  
   
  Pour enregistrer ces propriétés à et les restaurer à partir d’un fichier de paramètres, procédez comme suit, puis consultez [Creating a Settings Category](../extensibility/creating-a-settings-category.md).  

@@ -1,7 +1,7 @@
 ---
 title: SDK Modeling pour Visual Studio - langages spécifiques à un domaine | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 79
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4f41594e1a39046e82cd7280c5569edbbeb65eb7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 384592f89df9537300c11cdf3e8cea622d8c9c63
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493440"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224729"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Kit de développement logiciel de modélisation pour Visual Studio - Langages spécifiques à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Modeling SDK pour Visual Studio - langages spécifiques à un domaine](https://docs.microsoft.com/visualstudio/modeling/modeling-sdk-for-visual-studio-domain-specific-languages).  
-  
 À l’aide du Kit de développement logiciel de modélisation pour [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (MSDK), vous pouvez créer des outils de développement puissants basés sur le modèle que vous pouvez intégrer à [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Par exemple, les outils UML sont créés à l'aide du MSDK. De la même manière, vous pouvez créer une ou plusieurs définitions de modèle et la/les intégrer dans un ensemble d'outils.  
   
  La définition d'un modèle créé pour représenter les concepts de votre secteur d'activité est au cœur du MSDK. Vous pouvez encadrer le modèle de divers outils, tels qu'une vue schématique, la capacité à générer du code et autres artefacts, les commandes pour transformer le modèle, et la possibilité d'interagir avec le code et les autres objets dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Lorsque vous développez le modèle, vous pouvez le combiner avec d'autres modèles et outils et créer un ensemble d'outils puissant centré sur le développement.  

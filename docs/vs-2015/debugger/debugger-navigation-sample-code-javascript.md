@@ -1,7 +1,7 @@
 ---
 title: Navigation exemple code débogueur (JavaScript) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10c7fb0a2ae5aa16174541010568d81787479a10
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 33703a08212c46d4207ff320fcd947f5161d4f8f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495388"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174172"
 ---
 # <a name="debugger-navigation-sample-code-javascript"></a>Exemple de code de navigation du débogueur (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [navigation exemple code débogueur (JavaScript)](https://docs.microsoft.com/visualstudio/debugger/debugger-navigation-sample-code-javascript).  
-  
 Le code dans cette rubrique est l’exemple de fichier pour le [contrôler l’exécution dans une session de débogage (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md) rubrique.  
   
 ## <a name="defaultjs-sample-code"></a>exemple de code default.js  

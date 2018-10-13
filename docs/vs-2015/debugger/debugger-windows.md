@@ -1,31 +1,29 @@
 ---
 title: Débogueur Windows | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ae2d5c50cd6061b4ea0939e6ec088cf691b4640
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 43b4c95a81d41b6764a301904782998334127ef8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502181"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213251"
 ---
 # <a name="debugger-windows"></a>Fenêtres du débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Windows de débogueur dans Visual Studio](https://docs.microsoft.com/visualstudio/debugger/debugger-windows).  
-  
 Vous pouvez ouvrir la plupart des fenêtres du débogueur pendant le débogage de votre programme. Pour afficher la liste des fenêtres du débogueur, définir un point d’arrêt et démarrer le débogage. Quand vous atteignez le point d’arrêt et que l’exécution s’interrompt, cliquez sur **Déboguer/Fenêtres**.  
   
 ||||  

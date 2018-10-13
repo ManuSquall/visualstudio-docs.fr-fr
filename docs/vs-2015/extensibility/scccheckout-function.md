@@ -1,7 +1,7 @@
 ---
 title: Fonction SccCheckout | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 06e9ecd7-fc09-40c1-9dd1-2b56c622c80b
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4cf1d8196c855612aab93404ca24072c8262e122
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad6621b2a7e4493883bf3639f388a76fa4e552fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516589"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210535"
 ---
 # <a name="scccheckout-function"></a>Fonction SccCheckout
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [fonction SccCheckout](https://docs.microsoft.com/visualstudio/extensibility/scccheckout-function).  
-  
 Étant donné une liste de noms de fichier complet, cette fonction extrait les sur le lecteur local. Le commentaire s’applique à tous les fichiers extraits. L’argument de commentaire peut être un `null` chaîne.  
   
 ## <a name="syntax"></a>Syntaxe  

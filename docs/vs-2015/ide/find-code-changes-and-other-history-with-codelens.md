@@ -1,7 +1,7 @@
 ---
 title: Rechercher les modifications de code et d’autres historiques avec CodeLens | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 25aa0b7f87d769d463f97f272f2a64eaa2fcfbf6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c1fac3a8fde417065aecb7e3882ff9dc12b06402
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494087"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224956"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Rechercher les modifications de code et d'autres historiques avec CodeLens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [rechercher les modifications de code et des autres historiques avec CodeLens](https://docs.microsoft.com/visualstudio/ide/find-code-changes-and-other-history-with-codelens).  
-  
 Restez concentré sur votre travail pendant que vous cherchez ce qui est arrivé à votre code, sans quitter l'éditeur. Trouvez les références et les changements relatifs à votre code, les bogues liés, les éléments de travail, les révisions du code et les tests unitaires.  
   
 > [!NOTE]

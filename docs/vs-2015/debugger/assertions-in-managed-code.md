@@ -1,7 +1,7 @@
 ---
 title: Assertions dans du Code managé | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,19 +31,17 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 08cdbcde693655997fd980c018935a2b1c6df768
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5cd62b5cc5eabd731e5ad398cbb9ddbe60db073
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502232"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219113"
 ---
 # <a name="assertions-in-managed-code"></a>Assertions dans du code managé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Assertions dans du Code managé](https://docs.microsoft.com/visualstudio/debugger/assertions-in-managed-code).  
-  
-Une assertion, ou instruction `Assert`, teste une condition, que vous spécifiez en tant qu'argument à l'instruction `Assert`. Si la condition a la valeur true, aucune action ne se produit. Si la condition a la valeur false, l'assertion échoue. S'il est exécuté avec une version Debug, votre programme passe en mode arrêt.  
+Une assertion, ou instruction `Assert`, teste une condition, que vous spécifiez en tant qu’argument à l’instruction `Assert`. Si la condition a la valeur true, aucune action ne se produit. Si la condition a la valeur false, l'assertion échoue. S'il est exécuté avec une version Debug, votre programme passe en mode arrêt.  
   
 ##  <a name="BKMK_In_this_topic"></a> Dans cette rubrique  
  [Assertions dans le Namespace System.Diagnostics](#BKMK_Asserts_in_the_System_Diagnostics_Namespace)  

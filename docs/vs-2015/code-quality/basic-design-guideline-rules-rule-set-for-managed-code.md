@@ -1,7 +1,7 @@
 ---
 title: Règle de règles de conception de base défini pour le code managé | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: aad4bb755889ca4d2aa9766836f156495d281bca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed0728eb0daa5c1ff0f322db42f66373181f3e23
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495763"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184715"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Ensemble de règles de règles de conception de base pour le code managé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [règle de règles de conception base définie pour le code managé](https://docs.microsoft.com/visualstudio/code-quality/basic-design-guideline-rules-rule-set-for-managed-code).  
-  
 Vous pouvez utiliser l’ensemble pour vous concentrer sur ce qui rend votre code plus facile à comprendre et utiliser de règles de règles de conception de base Microsoft. Vous devez inclure cet ensemble de règles si votre projet inclut le code de bibliothèque ou si vous souhaitez appliquer les meilleures pratiques pour le code qui est facile à gérer.  
   
  Les règles de conception de base incluent toutes les règles dans l’ensemble de règles de règles Microsoft minimales recommandées. Pour obtenir la liste des règles minimales, consultez [gérés recommandé de règles défini pour le code managé](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md).  

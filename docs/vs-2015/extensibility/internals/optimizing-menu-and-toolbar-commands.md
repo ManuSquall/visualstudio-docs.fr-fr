@@ -1,7 +1,7 @@
 ---
 title: Optimisation des menus et commandes de la barre d’outils | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 8385f1a6-1e98-4dca-83d2-fcbed7177242
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5e9ba18b203a7ccd7fa6384bf4f23cb888286035
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 099e3e30fafdd2aab71baf26add1f0b115c470fc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505915"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205502"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>Optimisation des commandes de menu et de barre d’outils
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [optimisation des menus et commandes de la barre d’outils](https://docs.microsoft.com/visualstudio/extensibility/internals/optimizing-menu-and-toolbar-commands).  
-  
 L’ajout des VSPackages et leurs commandes correspondantes à [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] peut entraîner une interface utilisateur encombrée. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Fournit des méthodes permettant de limiter la confusion de commande de l’interface utilisateur.  
   
 ## <a name="in-this-section"></a>Dans cette section  

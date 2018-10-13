@@ -1,7 +1,7 @@
 ---
 title: Débogage des Applications ClickOnce qui utilisent System.Deployment.Application | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: b57db2c1c4c5b2bd3ca91762f28b2f3360929671
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab43a3dbe75001f8713d5fff98953f6a5ce43881
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503531"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228668"
 ---
 # <a name="debugging-clickonce-applications-that-use-systemdeploymentapplication"></a>Débogage des applications ClickOnce qui utilisent System.Deployment.Application
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [débogage ClickOnce Applications qui utilisent System.Deployment.Application](https://docs.microsoft.com/visualstudio/deployment/debugging-clickonce-applications-that-use-system-deployment-application).  
-  
 Dans [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement vous permet de configurer la façon dont une application est mise à jour. Toutefois, si vous souhaitez utiliser et personnaliser avancés [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] des fonctionnalités de déploiement, vous devrez accéder au modèle objet de déploiement fourni par <xref:System.Deployment.Application>. Vous pouvez utiliser le <xref:System.Deployment.Application> API pour des tâches avancées telles que :  
   
 -   Création d’une option « Mise à jour maintenant » dans votre application  

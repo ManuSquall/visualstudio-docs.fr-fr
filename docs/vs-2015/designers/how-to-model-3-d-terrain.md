@@ -1,7 +1,7 @@
 ---
 title: 'Comment : modéliser un terrain 3D | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93bce3336a4ccb8731730616d36191fdf83c5241
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 217dcf8e4080727a3e0c76032e0796b380433e99
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507567"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202226"
 ---
-# <a name="how-to-model-3-d-terrain"></a>Procédure : modéliser un terrain 3D
+# <a name="how-to-model-3-d-terrain"></a>Procédure : modéliser un terrain 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : modéliser un Terrain 3D](https://docs.microsoft.com/visualstudio/designers/how-to-model-3-d-terrain).  
-  
 Ce document montre comment utiliser l’éditeur de modèle pour créer un modèle de terrain 3D.  
   
  Ce document illustre ces activités :  

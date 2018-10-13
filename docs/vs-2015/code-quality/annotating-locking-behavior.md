@@ -1,7 +1,7 @@
 ---
 title: Annotation du comportement de verrouillage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -38,18 +38,16 @@ caps.latest.revision: 11
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f34eb22d56cc6a1e47e07229a5b3e922aee5c386
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 881fa2a0355c1524855008d508163a3012f95dff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494216"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187504"
 ---
 # <a name="annotating-locking-behavior"></a>Annotation du comportement de verrouillage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [comportement de verrouillage annotant](https://docs.microsoft.com/visualstudio/code-quality/annotating-locking-behavior).  
-  
 Pour éviter les bogues d’accès concurrentiel dans votre programme multithread, suivez toujours une discipline de verrouillage appropriée et utilisez les annotations SAL.  
   
  Il est notoirement difficile de reproduire, de diagnostiquer et de déboguer des bogues d'accès concurrentiel en raison de leur nature non déterministe. Comprendre les entrelacements de thread est au mieux difficile, et devient impossible lorsque vous concevez un corps de code qui compte plus que quelques threads. Par conséquent, il est recommandé de suivre une règle de verrouillage dans vos programmes multithread. Par exemple, obéir à un ordre de verrou tout en obtenant plusieurs verrous permet d'éviter des interblocages, et acquérir le verrou de garde approprié avant d'accéder à une ressource partagée permet d'éviter des conditions de concurrence.  
@@ -76,24 +74,24 @@ Pour éviter les bogues d’accès concurrentiel dans votre programme multithrea
   
 |Annotation|Description|  
 |----------------|-----------------|  
-|`_Acquires_exclusive_lock_(expr)`|Annote une fonction et indique qu'à l'état postérieur la fonction incrémente d'une unité le nombre de verrous exclusifs de l'objet verrou nommé par `expr`.|  
-|`_Acquires_lock_(expr)`|Annote une fonction et indique qu'à l'état postérieur la fonction incrémente d'une unité le nombre de verrous de l'objet verrou nommé par `expr`.|  
+|`_Acquires_exclusive_lock_(expr)`|Annote une fonction et indique qu’à l’état postérieur la fonction incrémente d’une unité le nombre de verrous exclusifs de l’objet verrou nommé par `expr`.|  
+|`_Acquires_lock_(expr)`|Annote une fonction et indique qu’à l’état postérieur la fonction incrémente d’une unité le nombre de verrous de l’objet verrou nommé par `expr`.|  
 |`_Acquires_nonreentrant_lock_(expr)`|Le verrou nommé par `expr` est acquis.  Une erreur est signalée si le verrou est déjà détenu.|  
-|`_Acquires_shared_lock_(expr)`|Annote une fonction et indique qu'à l'état postérieur la fonction incrémente d'une unité le nombre de verrous partagés de l'objet verrou nommé par `expr`.|  
+|`_Acquires_shared_lock_(expr)`|Annote une fonction et indique qu’à l’état postérieur la fonction incrémente d’une unité le nombre de verrous partagés de l’objet verrou nommé par `expr`.|  
 |`_Create_lock_level_(name)`|Instruction qui déclare le symbole `name` comme un niveau de verrou afin qu'il puisse être utilisé dans les annotations `_Has_Lock_level_` et `_Lock_level_order_`.|  
 |`_Has_lock_kind_(kind)`|Annote n’importe quel objet pour affiner les informations de type d’un objet de ressource. Parfois, un type commun est utilisé pour différents types de ressources et le type surchargé n’est pas suffisant pour distinguer les exigences sémantiques entre les différentes ressources. Voici la liste des paramètres `kind` prédéfinis :<br /><br /> `_Lock_kind_mutex_`<br /> ID de type de verrouillage pour les mutex.<br /><br /> `_Lock_kind_event_`<br /> ID de type de verrouillage pour les événements.<br /><br /> `_Lock_kind_semaphore_`<br /> ID de type de verrouillage pour les sémaphores.<br /><br /> `_Lock_kind_spin_lock_`<br /> ID de type de verrouillage pour les verrous de rotation.<br /><br /> `_Lock_kind_critical_section_`<br /> ID de type de verrouillage pour les sections critiques.|  
 |`_Has_lock_level_(name)`|Annote un objet verrou, en lui donnant le niveau de verrou de `name`.|  
 |`_Lock_level_order_(name1, name2)`|Une instruction qui donne le verrou de classement entre `name1` et `name2`.|  
-|`_Post_same_lock_(expr1, expr2)`|Annote une fonction et indique qu'à l'état postérieur les deux verrous, `expr1` et `expr2`, sont traités comme s'ils étaient le même objet verrou.|  
-|`_Releases_exclusive_lock_(expr)`|Annote une fonction et indique qu'à l'état postérieur la fonction décrémente d'une unité le nombre de verrous exclusifs de l'objet verrou nommé par `expr`.|  
-|`_Releases_lock_(expr)`|Annote une fonction et indique qu'à l'état postérieur la fonction décrémente d'une unité le nombre de verrous de l'objet verrou nommé par `expr`.|  
+|`_Post_same_lock_(expr1, expr2)`|Annote une fonction et indique qu’à l’état postérieur les deux verrous, `expr1` et `expr2`, sont traités comme s’ils étaient le même objet verrou.|  
+|`_Releases_exclusive_lock_(expr)`|Annote une fonction et indique qu’à l’état postérieur la fonction décrémente d’une unité le nombre de verrous exclusifs de l’objet verrou nommé par `expr`.|  
+|`_Releases_lock_(expr)`|Annote une fonction et indique qu’à l’état postérieur la fonction décrémente d’une unité le nombre de verrous de l’objet verrou nommé par `expr`.|  
 |`_Releases_nonreentrant_lock_(expr)`|Le verrou nommé par `expr` est libéré. Une erreur est signalée si le verrou n'est pas actuellement détenu.|  
-|`_Releases_shared_lock_(expr)`|Annote une fonction et indique qu'à l'état postérieur la fonction décrémente d'une unité le nombre de verrous partagés de l'objet verrou nommé par `expr`.|  
-|`_Requires_lock_held_(expr)`|Annote une fonction et indique qu'à l'état antérieur le nombre de verrous de l'objet nommé par `expr` est d'au moins un.|  
-|`_Requires_lock_not_held_(expr)`|Annote une fonction et indique qu'à l'état antérieur le nombre de verrous de l'objet nommé par `expr` est zéro.|  
+|`_Releases_shared_lock_(expr)`|Annote une fonction et indique qu’à l’état postérieur la fonction décrémente d’une unité le nombre de verrous partagés de l’objet verrou nommé par `expr`.|  
+|`_Requires_lock_held_(expr)`|Annote une fonction et indique qu’à l’état antérieur le nombre de verrous de l’objet nommé par `expr` est d’au moins un.|  
+|`_Requires_lock_not_held_(expr)`|Annote une fonction et indique qu’à l’état antérieur le nombre de verrous de l’objet nommé par `expr` est zéro.|  
 |`_Requires_no_locks_held_`|Annote une fonction et indique que le nombre de verrous de tous les verrous connus par le vérificateur est égal à zéro.|  
-|`_Requires_shared_lock_held_(expr)`|Annote une fonction et indique qu'à l'état antérieur le nombre de verrous partagés de l'objet nommé par `expr` est d'au moins un.|  
-|`_Requires_exclusive_lock_held_(expr)`|Annote une fonction et indique qu'à l'état antérieur le nombre de verrous exclusifs de l'objet nommé par `expr` est d'au moins un.|  
+|`_Requires_shared_lock_held_(expr)`|Annote une fonction et indique qu’à l’état antérieur le nombre de verrous partagés de l’objet nommé par `expr` est d’au moins un.|  
+|`_Requires_exclusive_lock_held_(expr)`|Annote une fonction et indique qu’à l’état antérieur le nombre de verrous exclusifs de l’objet nommé par `expr` est d’au moins un.|  
   
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>Intrinsèques SAL pour les objets de verrouillage non exposés  
  Certains objets de verrou ne sont pas exposés par l’implémentation des fonctions de verrouillage associées.  Le tableau suivant répertorie les variables intrinsèques SAL qui autorisent les annotations sur les fonctions qui s'exécutent sur ces objets verrous non exposés.  
@@ -110,10 +108,10 @@ Pour éviter les bogues d’accès concurrentiel dans votre programme multithrea
   
 |Annotation|Description|  
 |----------------|-----------------|  
-|`_Guarded_by_(expr)`|Annote une variable et indique qu'à chaque accès à la variable, le nombre de verrous de l'objet verrou nommé par `expr` est d'au moins un.|  
+|`_Guarded_by_(expr)`|Annote une variable et indique qu’à chaque accès à la variable, le nombre de verrous de l’objet verrou nommé par `expr` est d’au moins un.|  
 |`_Interlocked_`|Annote une variable et équivaut à `_Guarded_by_(_Global_interlock_)`.|  
 |`_Interlocked_operand_`|Le paramètre de fonction annoté est l’opérande de cible d’une des diverses fonctions Interlocked.  Les opérandes doivent avoir des propriétés supplémentaires spécifiques.|  
-|`_Write_guarded_by_(expr)`|Annote une variable et indique qu'à chaque modification de la variable, le nombre de verrous de l'objet verrou nommé par `expr` est d'au moins un.|  
+|`_Write_guarded_by_(expr)`|Annote une variable et indique qu’à chaque modification de la variable, le nombre de verrous de l’objet verrou nommé par `expr` est d’au moins un.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilisation d’Annotations SAL pour réduire les défauts du Code C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   

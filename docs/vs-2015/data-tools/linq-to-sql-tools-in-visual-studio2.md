@@ -1,7 +1,7 @@
 ---
 title: Outils LINQ to SQL dans Visual Studio2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19d9bccad36a186c93aeb8aef8e93b63320a00d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0ff09fea0f534343fcc5e896e082f550e6bcdcd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494354"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195375"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Outils LINQ to SQL dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [outils LINQ to SQL dans Visual Studio2](https://docs.microsoft.com/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2).  
-  
   
 LINQ to SQL a été la première technologie de mapping objet-relationnel publiée par Microsoft. Il fonctionne bien dans les scénarios de base et continue à être pris en charge dans Visual Studio, mais il n’est plus en cours de développement. Utiliser LINQ to SQL lors de la mise à jour une application héritée qui utilise déjà, ou dans des applications simples qui utilisent SQL Server et ne nécessitent pas de mappage de plusieurs table. En règle générale, les nouvelles applications doivent utiliser Entity Framework lorsqu’une couche de Mappeur objet-relationnel est requise.  
   
@@ -93,7 +91,7 @@ LINQ to SQL a été la première technologie de mapping objet-relationnel publi�
  Décrit comment configurer un <xref:System.Data.Linq.DataContext> pour utiliser des procédures stockées lors de l'enregistrement des données de classes d'entité dans une base de données.  
   
  [Guide pratique pour modifier le type de retour d’une méthode DataContext (Concepteur O/R)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)  
- Décrit comment définir le type de retour d'une méthode <xref:System.Data.Linq.DataContext> : type d'une classe d'entité ou type généré automatiquement par le Concepteur O/R.  
+ Décrit comment définir le type de retour d’une méthode <xref:System.Data.Linq.DataContext> : type d’une classe d’entité ou type généré automatiquement par le Concepteur O/R.  
   
  [Guide pratique pour ajouter une validation à des classes d’entité](../data-tools/how-to-add-validation-to-entity-classes.md)  
  Décrit comment générer des méthodes partielles qui permettent l'ajout de code pendant le changement de propriété et la mise à jour de classe d'entité.  

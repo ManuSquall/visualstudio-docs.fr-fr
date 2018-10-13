@@ -1,7 +1,7 @@
 ---
 title: 'Comment : ouvrir un modèle depuis un fichier de Code de programme | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d0884148a6e3f390654842b5e35a9e53643ea17d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f3397cb520014ee9997a116ebbbfbc1c20dc9f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494121"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190500"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Comment : ouvrir un modèle depuis un fichier dans le code de programme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : ouvrir un modèle depuis un fichier de Code de programme](https://docs.microsoft.com/visualstudio/modeling/how-to-open-a-model-from-file-in-program-code).  
-  
 Vous pouvez ouvrir les modèles DSL dans n’importe quelle application.  
   
  À partir d’un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extension, vous pouvez utiliser ModelBus à cet effet. ModelBus fournit un mécanisme standard pour faire référence à un modèle ou éléments dans un modèle et pour rechercher le modèle si elle a été déplacé. Pour plus d’informations, consultez [l’intégration de modèles à l’aide de Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).  

@@ -1,7 +1,7 @@
 ---
 title: Page Application, Concepteur de projet (Visual Basic) │ Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6dfd1d2c3d5c7467672e604ce4d7d6b9da449210
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9d2b23b5570a6372b727906a63ffb51513019df7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504279"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175485"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Page Application, Concepteur de projet (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Page Application, Concepteur de projets (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
-  
   
 Utilisez la page **Application** du Concepteur de projet pour spécifier les paramètres d’application et les propriétés du projet.  
   

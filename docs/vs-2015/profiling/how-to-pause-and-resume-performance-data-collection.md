@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour suspendre et reprendre la collecte de données de performances | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c780e3bbb545ec3611b00dd56d21cb3f87c75d44
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f0e3c64575d7efe6ee724ee2486d7785a5f655f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508621"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205619"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Guide pratique pour suspendre et reprendre la collecte de données de performances
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : suspendre et reprendre la collecte de données de performances](https://docs.microsoft.com/visualstudio/profiling/how-to-pause-and-resume-performance-data-collection).  
-  
 À partir de la fenêtre de la page de session de profilage, vous pouvez contrôler de manière interactive la collecte des données de profilage.  
   
  Le contrôle de la collecte de données permet de réduire la taille du fichier des données de profil et de limiter la collecte des données aux opérations qui vous intéressent. Vous pouvez suspendre et reprendre le profilage plusieurs fois au cours d’une même session de performance.  

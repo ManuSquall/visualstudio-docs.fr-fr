@@ -1,7 +1,7 @@
 ---
 title: Couleurs de syntaxe dans un Service de langage hérité | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 57d8115be296beba910da7a1bdb1019645c0ee5b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c938f6d4a08e164638e70be969fe310fe2a324c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493961"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223494"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Couleurs de syntaxe dans un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [couleurs de syntaxe dans un Service de langage hérité](https://docs.microsoft.com/visualstudio/extensibility/internals/syntax-colorizing-in-a-legacy-language-service).  
-  
 La coloration syntaxique est une fonctionnalité qui provoque des différents éléments d’un langage de programmation à afficher dans un fichier source dans différentes couleurs et styles. Pour prendre en charge cette fonctionnalité, vous devez fournir un analyseur ou l’analyseur qui peut identifier les types d’éléments lexicaux ou des jetons dans le fichier. De nombreux langages distinguent des mots clés, des délimiteurs (tels que des parenthèses ou d’accolades) et des commentaires en Coloriser les différentes manières.  
   
  Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour plus d’informations, consultez [extension de l’éditeur et les Services de langage](../../extensibility/extending-the-editor-and-language-services.md).  

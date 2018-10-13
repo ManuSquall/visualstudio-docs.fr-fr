@@ -1,7 +1,7 @@
 ---
 title: Exécuter des tests unitaires sur des extensions UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,23 +12,21 @@ caps.latest.revision: 9
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ac030a4e0b93d189a8b69db5f1df52b65bdf11df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 34568cc24253eb2c0288fd7ba4311b5f33964df0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503046"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205062"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Exécuter des tests unitaires sur des extensions UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [exécuter des tests unitaires sur des extensions UML](https://docs.microsoft.com/visualstudio/modeling/run-unit-tests-on-uml-extensions).  
-  
 Pour préserver la stabilité de votre code au fil des modifications successives, nous vous recommandons d’écrire des tests unitaires et de les exécuter dans le cadre d’un processus de génération normal. Pour plus d’informations, consultez [Tests unitaires sur votre code](../test/unit-test-your-code.md). Pour configurer des tests pour les extensions de modélisation Visual Studio, vous avez besoin de certaines informations clés. En résumé :  
   
 -   [Configuration d’un Test unitaire pour les Extensions VSIX](#Host)  
   
-     Exécutez les tests avec l’adaptateur hôte IDE VS. Faites précéder chaque méthode de test du préfixe `[HostType("VS IDE")]`. Cet adaptateur hôte démarre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pendant l'exécution de vos tests.  
+     Exécutez les tests avec l’adaptateur hôte IDE VS. Faites précéder chaque méthode de test du préfixe `[HostType("VS IDE")]`. Cet adaptateur hôte démarre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pendant l’exécution de vos tests.  
   
 -   [Accéder à DTE et ModelStore](#DTE)  
   
@@ -51,7 +49,7 @@ Pour préserver la stabilité de votre code au fil des modifications successives
  Vous trouverez un exemple d’extension UML ayant fait l’objet de tests unitaires dans la galerie d’exemples de code à la page [UML – Entrée rapide avec du texte](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a).  
   
 ## <a name="requirements"></a>Configuration requise  
- Consultez [exigences](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
+ Consultez [Spécifications](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
   
  Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   

@@ -1,7 +1,7 @@
 ---
 title: Vue Arborescence des appels - Données de conflit | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 337152a7a91f7e2f6ce4a19a4cb77b166ebe5754
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc4b4b7b0ac3a6bb77c539b54162bf449e19771a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493447"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179211"
 ---
 # <a name="call-tree-view---contention-data"></a>Vue Arborescence des appels - Données de conflit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [vue arborescence des appels - données de conflit](https://docs.microsoft.com/visualstudio/profiling/call-tree-view-contention-data).  
-  
 La vue Arborescence des appels affiche les chemins d’exécution de la fonction empruntés dans l’application profilée. La racine de l’arborescence correspond au point d’entrée de l’application ou du composant. Chaque nœud de fonction répertorie toutes les fonctions appelées, le nombre de fois où la fonction a été bloquée, et la durée pendant laquelle la fonction a été bloquée car elle était en conflit pour une ressource avec d’autres threads ou processus.  
   
  Les valeurs qui s’affichent dans la vue Arborescence des appels sont celles des instances de fonction qui ont été appelées par la fonction parent dans l’arborescence des appels. Les valeurs en pourcentage sont calculées en comparant la valeur des instances de fonctions au nombre total de conflits de l’exécution du profilage.  
@@ -68,7 +66,7 @@ La vue Arborescence des appels affiche les chemins d’exécution de la fonction
  [Vue Arborescence des appels - Instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Vue Arborescence des appels - Échantillonnage](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
  [Arborescence des appels, vue](../profiling/call-tree-view-instrumentation-data.md)   
- [Vue Arborescence des appels](../profiling/call-tree-view-sampling-data.md)
+ [Mode Arborescence des appels](../profiling/call-tree-view-sampling-data.md)
 
 
 

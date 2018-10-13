@@ -1,7 +1,7 @@
 ---
 title: 'Procédure : collecte des données de performances pour un site web | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca6d854345ca32500b379e68249e516f9e1efcd3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b1ebe51079735beab22e63d595ae3a3cfbee3e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508114"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185897"
 ---
-# <a name="how-to-collect-performance-data-for-a-web-site"></a>Procédure : collecte des données de performances pour un site web
+# <a name="how-to-collect-performance-data-for-a-web-site"></a>Procédure : collecte des données de performances pour un site web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : collecter des données de performances pour un Site Web](https://docs.microsoft.com/visualstudio/profiling/how-to-collect-performance-data-for-a-web-site).  
-  
 Vous pouvez utiliser l’ **Assistant Performance** pour collecter des données de performances pour une application web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Vous pouvez profiler une application web qui est ouverte dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou profiler un site web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] qui se trouve sur votre ordinateur local et qui n’est pas ouvert dans l’IDE [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 > [!NOTE]
@@ -93,7 +91,7 @@ Vous pouvez utiliser l’ **Assistant Performance** pour collecter des données 
   
     -   Pour les sites externes dont vous souhaitez collecter les données JavaScript, tapez une URL telle que http://www.contoso.com.  
   
-     Pour plus d’informations, consultez les pages de propriétés un binaire cible [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
+     Pour plus d’informations, consultez les pages de propriétés un binaire cible [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] .  
   
 6.  Sur la troisième page de l’Assistant, vous pouvez choisir d’ajouter des données de profilage d’interaction de couche (TIP), des données du JavaScript s’exécutant dans les pages web, ou les deux.  
   

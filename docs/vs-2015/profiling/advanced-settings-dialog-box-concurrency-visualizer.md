@@ -1,7 +1,7 @@
 ---
 title: Paramètres avancés, boîte de dialogue (visualiseur concurrentiel) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 28098cceb3225162b283c81ee5fd42d49f09fead
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b09b5d3a6bb279291df64c0de720ba03f2eee16d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501807"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204427"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Paramètres avancés, boîte de dialogue (visualiseur concurrentiel)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [avancé une boîte de dialogue Paramètres (visualiseur concurrentiel)](https://docs.microsoft.com/visualstudio/profiling/advanced-settings-dialog-box-concurrency-visualizer).  
-  
 La boîte de dialogue **Paramètres avancés** du visualiseur concurrentiel vous permet de contrôler la façon dont les traces sont collectées.  La boîte de dialogue comprend des onglets pour les symboles, « Uniquement mon code », la mise en mémoire tampon, le filtrage, les événements du CLR, les marqueurs, les fournisseurs et les fichiers.  
   
 ## <a name="symbols"></a>Symboles  

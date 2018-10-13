@@ -1,7 +1,7 @@
 ---
 title: Vue Arborescence des appels - Données d’instrumentation de la mémoire .NET | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7192ebc341c471cf164ca3f54bcbbd15c9224d11
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af70592ef3d0c9365732c9964872b03fa4328a81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507809"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205151"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>Vue Arborescence des appels - Données d’instrumentation de la mémoire .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [vue arborescence des appels - données d’Instrumentation de mémoire de .NET](https://docs.microsoft.com/visualstudio/profiling/call-tree-view-dotnet-memory-instrumentation-data).  
-  
 La vue Arborescence des appels des données de profilage pour l’allocation de la mémoire .NET qui ont été collectées avec la méthode d’instrumentation montre les chemins d’exécution empruntés par les fonctions dans l’application profilée. La racine de l’arborescence correspond au point d’entrée de l’application ou du composant. Chaque nœud d’une fonction répertorie toutes les fonctions qu’elle a appelées, ainsi que les données concernant la mémoire et la chronologie .NET pour la fonction.  
   
  Les valeurs qui s’affichent dans la vue Arborescence des appels sont celles des instances de fonction qui ont été appelées par la fonction parent dans l’arborescence des appels. Les valeurs en pourcentage sont calculées en comparant la valeur de l’instance de la fonction au nombre total ou à la taille totale des allocations dans l’exécution du profilage.  

@@ -1,7 +1,7 @@
 ---
 title: Propriétés des couloirs | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: dd274d1de99ab4a9dac6dd6c045ef6d313fe9bb7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c914703d4cbe48e516d1d4e1aa48afb20c9e1cfe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500945"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189930"
 ---
 # <a name="properties-of-swimlanes"></a>Propriétés des couloirs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [propriétés des couloirs](https://docs.microsoft.com/visualstudio/modeling/properties-of-swimlanes).  
-  
 Vous pouvez ajouter des couloirs à un diagramme. Couloirs divisent un diagramme en zones verticales ou horizontales. Vous pouvez définir d’autres formes à afficher à l’intérieur des couloirs. Pour plus d’informations, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md). Pour plus d’informations sur l’utilisation de ces propriétés, consultez [personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
  Couloirs ont les propriétés qui sont répertoriées dans le tableau suivant.  

@@ -1,14 +1,14 @@
 ---
 title: Mapper les méthodes sur la pile des appels pendant le débogage dans Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 f1_keywords:
 - vs.progression.debugwithcodemaps
 dev_langs:
@@ -35,18 +35,16 @@ caps.latest.revision: 43
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 3920253cfda19325ebfb6121da2b09d1a9fab691
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0841670c1dfe65f1ad542f931267c310d0ef711a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496333"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194872"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapper les méthodes sur la pile des appels tout en déboguant dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [mapper les méthodes sur la pile des appels pendant le débogage dans Visual Studio](https://docs.microsoft.com/visualstudio/debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio).  
-  
 Créez une carte de code pour effectuer un suivi visuel de la pile des appels pendant le débogage. Vous pouvez rédiger des notes sur la carte pour effectuer le suivi de ce que fait le code afin de vous concentrer sur la recherche de bogues.  
   
  ![Débogage avec les piles d’appels sur les cartes de code](../debugger/media/debuggermap-overview.png "DebuggerMap_Overview")  

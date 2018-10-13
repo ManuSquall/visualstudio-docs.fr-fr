@@ -1,7 +1,7 @@
 ---
 title: Supprimer les avertissements à l’aide de l’attribut SuppressMessage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3ea1aff6aa086c5babb3e6ecf52e7427ffa06813
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 91ae1c5d15ddbb364aeba16c2c4de49ce19d09c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502832"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205957"
 ---
 # <a name="suppress-warnings-by-using-the-suppressmessage-attribute"></a>Supprimer des avertissements à l'aide de l'attribut SuppressMessage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [supprimer les avertissements par à l’aide de l’attribut SuppressMessage](https://docs.microsoft.com/visualstudio/code-quality/suppress-warnings-by-using-the-suppressmessage-attribute).  
-  
 Il est souvent utile d’indiquer que l’avertissement est ressorti pour permettre aux utilisateurs de savoir que le code a été révisé et qu’il a été déterminé que l’avertissement doit être supprimé. Dans Source ISS (Suppression) permet à un développeur de placer l’attribut qui supprime un avertissement proche de l’emplacement qui a généré l’avertissement. Vous pouvez ajouter l’attribut ISS directement au fichier source, ou vous pouvez utiliser le menu contextuel dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.  
   
 ## <a name="in-this-section"></a>Dans cette section  

@@ -1,7 +1,7 @@
 ---
 title: Collecte de données de minutage détaillées à l’aide de l’instrumentation | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae3d2335c73f68f790e9b3def8f2a1d4ced7c969
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8355911a54e6682b763d7f3aecbf29812fa4a1e9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590606"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186262"
 ---
-# <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>Collecte de données de temporisation détaillées à l’aide de l’instrumentation
+# <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>Collecte de données de minutage détaillées à l’aide de l’instrumentation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [collecte de données de minutage détaillées par l’Instrumentation à l’aide de](https://docs.microsoft.com/visualstudio/profiling/collecting-detailed-timing-data-by-using-instrumentation).  
-  
 La méthode d’instrumentation des outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] injecte le code de profilage dans une copie d’un module. Le code enregistre chaque entrée, sortie et appel des fonctions dans le module pendant une exécution du profilage. La méthode d’instrumentation est utile pour rassembler des informations de temporisation détaillées sur une section de votre code et comprendre l’impact des opérations d’entrée et de sortie sur les performances de l’application.  
   
  Vous pouvez spécifier la méthode d’instrumentation à l’aide de l’une des procédures suivantes :  

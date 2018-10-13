@@ -1,7 +1,7 @@
 ---
 title: Création d’un Package de programme d’installation de Windows | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a9b56ea9120e3cbee18d8018420a94748dc52eec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ed245a1d26be951f6cada4b8ae58c158102d190
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493237"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198274"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Création d’un package Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [création d’un Package de programme d’installation de Windows](https://docs.microsoft.com/visualstudio/extensibility/internals/authoring-a-windows-installer-package).  
-  
 Les lecteurs de données du modèle de programme d’installation de Windows. Au lieu d’écrire un script de procédure pour copier des fichiers et écrire des entrées de Registre, par exemple, vous créer des lignes et des colonnes dans les tables de base de données qui contiennent des données de fichiers et du Registre.  
   
 ## <a name="database-entries"></a>Entrées de la base de données  

@@ -1,7 +1,7 @@
 ---
 title: Utilisation de ressources 3D dans vos jeux et applications | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ab73f8ecdb9507459c7214de37b2349c01062f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09035e985926e3f1db3bd2dd1fc2bc009f111e33
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492841"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226304"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Utilisation de ressources 3D dans vos jeux et applications
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [à l’aide de ressources 3D dans votre jeu ou application](https://docs.microsoft.com/visualstudio/designers/using-3-d-assets-in-your-game-or-app).  
-  
 Cet article explique comment vous pouvez utiliser [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour traiter les ressources 3D et les inclure dans vos builds.  
   
  Une fois que vous avez utilisé les outils de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour créer des ressources 3D, l'étape suivante consiste à les utiliser dans votre application. Mais avant de pouvoir les utiliser, vos ressources doivent être converties dans un format compatible avec DirectX. Pour vous aider à transformer vos ressources, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fournit des personnalisations de build pour chaque type de ressource qu'il peut générer. Pour inclure les ressources dans votre build, il vous suffit de configurer votre projet pour utiliser les personnalisations de build, ajouter les ressources à votre projet, puis configurer les ressources pour utiliser la personnalisation de build appropriée. Ensuite, vous pouvez charger les ressources dans votre application et les utiliser en créant et complétant des ressources DirectX comme dans n'importe quelle autre application DirectX.  

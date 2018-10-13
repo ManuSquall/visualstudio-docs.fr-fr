@@ -1,7 +1,7 @@
 ---
 title: Ajout d’une liste à un sous-menu utilisés récemment | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aa2a5f0177243c178890673986b0c04b4627505e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 89526f799c0b4e260bba140c413f2c89e573a701
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501671"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223730"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Ajout d’une liste de fichiers récents à un sous-menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Ajout d’une plus récemment utilisé liste à un sous-menu](https://docs.microsoft.com/visualstudio/extensibility/adding-a-most-recently-used-list-to-a-submenu).  
-  
 Cette procédure pas à pas s’appuie sur des démonstrations de [Ajout d’un sous-menu à un Menu](../extensibility/adding-a-submenu-to-a-menu.md)et montre comment ajouter une liste dynamique à un sous-menu. La liste dynamique constitue la base pour la création d’une liste plus récemment utilisés (MRU).  
   
  Une liste de menu dynamique commence par un espace réservé dans un menu. Chaque fois que le menu est affiché, l’environnement de développement intégré (IDE) Visual Studio vous demande le VSPackage pour toutes les commandes qui doivent être affichées à l’espace réservé. Une liste dynamique peut se produire à n’importe où dans un menu. Toutefois, les listes dynamiques sont généralement stockés et affichés par eux-mêmes de sous-menus ou au bas de menus. À l’aide de ces modèles de conception, vous activez la liste dynamique des commandes pour développer et réduire sans affecter la position des autres commandes dans le menu. Dans cette procédure pas à pas, la liste des fichiers récents dynamique s’affiche en bas d’un sous-menu existant, séparé du reste du sous-menu par une ligne.  

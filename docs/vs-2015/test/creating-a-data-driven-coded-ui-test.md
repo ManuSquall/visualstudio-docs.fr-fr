@@ -1,7 +1,7 @@
 ---
 title: Création d’un test codé de l’interface utilisateur piloté par les données | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 725628eb8234960b3880f6e5d080a04e54bea6a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09cf6f69348c08ec284e074feea8d9a33c488f0b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501273"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229462"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Création d'un test codé de l'interface utilisateur piloté par les données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [création d’un Test codé de l’interface utilisateur piloté par les données](https://docs.microsoft.com/visualstudio/test/creating-a-data-driven-coded-ui-test).  
-  
 Pour tester différentes conditions, vous pouvez exécuter vos tests à plusieurs reprises avec différentes valeurs de paramètre. Les tests codés de l'interface utilisateur pilotés par les données sont un moyen pratique pour cela. Vous définissez des valeurs de paramètre dans une source de données et chaque ligne de la source de données est une itération du test codé de l'interface utilisateur. Le résultat global du test repose sur le résultat de toutes les itérations. Par exemple, si une itération de test échoue, le résultat global du test est un échec.  
   
  **Spécifications**  

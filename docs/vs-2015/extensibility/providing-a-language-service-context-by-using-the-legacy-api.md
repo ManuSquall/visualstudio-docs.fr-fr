@@ -1,7 +1,7 @@
 ---
 title: Fournissant un contexte de Service de langage à l’aide de l’API héritée | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: daa2df22-9181-4bad-b007-a7d40302bce1
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72bcd275fab0ae8380167dbbc8a9fae21c28a36c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 950e7606292487f10ee6e901e82abaa3c6f92a08
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495633"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195726"
 ---
 # <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>Fournissant un contexte de Service de langage à l’aide de l’API héritée
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [fournissant un contexte de Service de langage à l’aide de l’API héritée](https://docs.microsoft.com/visualstudio/extensibility/providing-a-language-service-context-by-using-the-legacy-api).  
-  
 Il existe deux options pour un service de langage fournir le contexte de l’utilisateur à l’aide la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] éditeur principal : fournir un contexte de marqueur de texte, ou fournir tout le contexte utilisateur. Les différences sont décrites ici.  
   
  Pour plus d’informations sur la fourniture de contexte à un service de langage qui est connecté à votre propre éditeur, consultez [Comment : fournir un contexte pour les éditeurs](../extensibility/how-to-provide-context-for-editors.md).  

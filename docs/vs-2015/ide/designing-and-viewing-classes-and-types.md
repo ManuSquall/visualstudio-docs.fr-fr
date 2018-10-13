@@ -1,7 +1,7 @@
 ---
 title: Conception et affichage des classes et des types | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e2a882f5da56884c86d042d2c562796ae6111dc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 559702f41f2694a6042e26b2760251e775c9cad3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504129"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191618"
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>Conception et affichage des classes et des types
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [conception et affichage des Classes et des Types](https://docs.microsoft.com/visualstudio/ide/designing-and-viewing-classes-and-types).  
-  
 Concevez, visualisez et refactorisez les classes et d'autres types dans votre code à l'aide du Concepteur de classes de Visual Studio. Utilisez les diagrammes de classes pour créer et changer les classes de votre projet Visual C# .NET, Visual Basic .NET ou C++, pour mieux comprendre la structure de votre projet ou pour réorganiser votre code.  
   
  Voici plus d'informations sur ce que vous pouvez faire avec les diagrammes de classes :  

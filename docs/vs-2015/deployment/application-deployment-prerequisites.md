@@ -1,7 +1,7 @@
 ---
 title: Conditions préalables au déploiement de application | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 3a866105a2b9d4549fd3684dc4726f165d43a7af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 699d7261db325b23502003f250e8ed2fc61f5c7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494481"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217930"
 ---
 # <a name="application-deployment-prerequisites"></a>Composants requis pour le déploiement d'applications
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [conditions préalables au déploiement de Application](https://docs.microsoft.com/visualstudio/deployment/application-deployment-prerequisites).  
-  
 Pour vous assurer que votre application sera installée et exécutée correctement, vérifiez que tous les composants dont dépend votre application sont déjà installés sur l'ordinateur cible. Par exemple, la plupart des applications créées à l'aide de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ont une dépendance par rapport au [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] ; la version appropriée du Common Language Runtime doit être présente sur l'ordinateur de destination avant que l'application ne soit installée.  
   
  Vous pouvez sélectionner ces conditions préalables dans le **Prerequisites Dialog Box** et installer le .NET Framework et autres composants redistribuables dans le cadre de votre installation. Cette pratique est appelée *amorçage*. Ensuite, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] génère un programme exécutable Windows nommé Setup.exe, également appelé un *programme d’amorçage*. Le programme d'amorçage effectue l'installation des composants requis avant que votre application ne s'exécute. Pour plus d’informations sur la sélection de ces conditions préalables, consultez [Prerequisites Dialog Box](../ide/reference/prerequisites-dialog-box.md).  
@@ -71,7 +69,7 @@ Pour vous assurer que votre application sera installée et exécutée correcteme
  Si vous générez le programme d'amorçage à l'aide de l'Assistant Publication ClickOnce ou de la page Publish dans Visual Studio, le fichier Setup.exe est automatiquement signé. Toutefois, si vous souhaitez utiliser le certificat de votre client pour signer le programme d'amorçage, vous pouvez signer le fichier plus tard.  
   
 ## <a name="bootstrapping-and-msbuild"></a>Amorçage et MSBuild  
- Si vous n'utilisez pas [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], mais que vous compilez vos applications sur la ligne de commande, vous pouvez créer l'application d'amorçage [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] à l'aide d'une tâche Microsoft Build Engine (MSBuild). Pour plus d’informations, consultez [GenerateBootstrapper, tâche](../msbuild/generatebootstrapper-task.md).  
+ Si vous n’utilisez pas [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], mais que vous compilez vos applications sur la ligne de commande, vous pouvez créer l’application d’amorçage [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] à l’aide d’une tâche Microsoft Build Engine (MSBuild). Pour plus d’informations, consultez [GenerateBootstrapper, tâche](../msbuild/generatebootstrapper-task.md).  
   
  À la place de l'amorçage, vous pouvez prédéployer les composants à l'aide d'un système électronique de distribution de logiciels, par exemple Microsoft Systems Management Server (SMS).  
   

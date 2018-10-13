@@ -1,7 +1,7 @@
 ---
 title: Boîte de dialogue de fenêtre Rechercher | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04a2875d29248df45f8c9b92f49df8237e7fe993
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 946d147e0fc77086039a89419a47c2a2d078785e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495536"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224443"
 ---
 # <a name="find-window-dialog-box"></a>Boîte de dialogue Rechercher une fenêtre
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [boîte de dialogue Rechercher une fenêtre](https://docs.microsoft.com/visualstudio/debugger/find-window-dialog-box).  
-  
 Utilisez cette boîte de dialogue pour sélectionner une fenêtre et afficher ses propriétés ou les messages. Pour afficher cette boîte de dialogue, choisissez **rechercher une fenêtre** à partir de la **Spy** menu.  
   
  Les paramètres suivants sont disponibles :  

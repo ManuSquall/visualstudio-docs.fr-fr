@@ -1,7 +1,7 @@
 ---
 title: Déboguer les styles CSS à l’aide de l’Explorateur DOM | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 889626b5d80afebfd701a7bc347466da97ba707b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a30ac9669c7093c7eb3b656076c606cbf5a9fdc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506835"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220719"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>Déboguer les styles CSS avec l’explorateur DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [styles CSS déboguer à l’aide de l’Explorateur DOM](https://docs.microsoft.com/visualstudio/debugger/debug-css-styles-using-dom-explorer).  
-  
 S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png « windows_and_phone_content »)  
   
  Quand vous déboguez des applications Windows Store, des applications Windows Phone Store et des applications créées avec Visual Studio Tools pour Apache Cordova, vous pouvez afficher et modifier les règles CSS pour les éléments DOM sélectionnés et leurs éléments enfants.  
@@ -58,7 +56,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 >  Les modifications que vous effectuez sous les onglets **Styles** et **Calculé** ne sont pas définitives. Elles ne sont pas conservées quand vous arrêtez le débogage. Pour modifier le code source et recharger les pages sans arrêter et redémarrer le débogueur, actualisez votre application à l’aide de la ![bouton d’application Windows Actualiser](../debugger/media/js-refresh.png "JS_Refresh") bouton (**Windows actualiser application** ) sur le **déboguer** la barre d’outils (applications Windows Store et Windows Phone Store uniquement). Pour plus d’informations, consultez [actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
 ## <a name="example-of-fixing-a-css-rule"></a>Exemple de définition d’une règle CSS  
- Cet exemple montre comment examiner les règles CSS et déboguer un problème de style. Pour cet exemple, supposons que vous souhaitez modifier la couleur d'une police utilisée pour afficher les titres de groupe dans le modèle Application partagée [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)].  
+ Cet exemple montre comment examiner les règles CSS et déboguer un problème de style. Pour cet exemple, supposons que vous souhaitez modifier la couleur d’une police utilisée pour afficher les titres de groupe dans le modèle Application partagée [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] .  
   
 > [!NOTE]
 >  Cet exemple illustre une application Windows Store, mais toutes les fonctionnalités de l’explorateur DOM présentées s’appliquent également à une application Windows Phone Store et, à l’exception de l’onglet Modifications, à une application créée avec Visual Studio Tools pour Apache Cordova.  

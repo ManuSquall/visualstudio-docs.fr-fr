@@ -1,7 +1,7 @@
 ---
 title: Prise en charge des modifications de Code (C++) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49e56918753d93cfd70a3d9a7458f36a72bbabaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dd4e1af62032920196dbd8171769f1dc079324e8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508546"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225353"
 ---
 # <a name="supported-code-changes-c"></a>Modifications de code prises en charge (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [modifications de Code prises en charge (C++)](https://docs.microsoft.com/visualstudio/debugger/supported-code-changes-cpp).  
-  
 Modifier & Continuer pour Visual C++ gère la plupart des types de modifications du code. Toutefois, certaines modifications ne peuvent pas être appliquées pendant l'exécution du programme. Pour appliquer ces modifications, vous devez arrêter l'exécution et générer une nouvelle version du code.  
   
  Pour plus d’informations sur l’utilisation de Modifier &amp; Continuer pour C++ dans Visual Studio, consultez [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) .  
@@ -77,7 +75,7 @@ Modifier & Continuer pour Visual C++ gère la plupart des types de modifications
 ##  <a name="BKMK_Unsupported_scenarios"></a> Scénarios non pris en charge  
  Modifier & Continuer pour C/C++ n'est pas disponible dans les scénarios de débogage suivants :  
   
--   Débogage des applications natives compilées avec  [ /zo (améliorer le débogage optimisé)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)  
+-   Débogage des applications natives compilées avec [/zo (Améliorer le débogage optimisé)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)  
   
 -   Dans les versions de Visual Studio antérieures à Visual Studio 2015 Mise à jour 1, débogage des applications ou des composants du Windows Store. À partir de Visual Studio 2015 Update 1, vous pouvez utiliser Modifier &amp; Continuer dans les applications C++ Windows Store et les applications DirectX, car il prend désormais en charge le commutateur de compilateur `/ZI` avec le commutateur  `/bigobj` . Vous pouvez également utiliser l’option Modifier &amp; Continuer avec des fichiers binaires compilés à l’aide du commutateur `/FASTLINK` .  
   
@@ -147,7 +145,7 @@ Modifier & Continuer pour Visual C++ gère la plupart des types de modifications
 3.  Désactivez la case à cocher **Autoriser la précompilation** .  
   
 ##  <a name="BKMK_IDL_Attribute_Limitations"></a> Limitations des attributs IDL  
- La fonction Modifier & Continuer ne régénère pas de fichiers de définition d'interface (IDL). Par conséquent, les modifications des attributs IDL ne seront pas reflétées pendant le débogage. Pour voir le résultat des modifications apportées aux attributs IDL, vous devez arrêter le débogage et régénérer votre application. Modifier & Continuer ne génère pas d'erreur ou d'avertissement lorsque des attributs IDL ont été modifiés. Pour plus d’informations, consultez [attributs IDL](http://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6).  
+ La fonction Modifier & Continuer ne régénère pas de fichiers de définition d'interface (IDL). Par conséquent, les modifications des attributs IDL ne seront pas reflétées pendant le débogage. Pour voir le résultat des modifications apportées aux attributs IDL, vous devez arrêter le débogage et régénérer votre application. Modifier & Continuer ne génère pas d'erreur ou d'avertissement lorsque des attributs IDL ont été modifiés. Pour plus d'informations, consultez [Attributs IDL](http://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)

@@ -1,7 +1,7 @@
 ---
 title: Automatisation de la Configuration et des objets SelectedItem | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 120377f1-51aa-4445-b2f7-06ab7fc2b47f
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9d5da07c4505aef38fbef22b8680a8c0914056a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 80c67567a3e9ed3fd482a9a88f6d52cddcc0a3e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500916"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185417"
 ---
 # <a name="automation-for-configuration-and-selecteditem-objects"></a>Automatisation de la configuration et des objets SelectedItem
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Automation pour la Configuration et des objets SelectedItem](https://docs.microsoft.com/visualstudio/extensibility/internals/automation-for-configuration-and-selecteditem-objects).  
-  
 Vous pouvez automatiser la génération et le processus de l’élément sélectionné dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
 ## <a name="automation-for-builds"></a>Automation pour les Builds  

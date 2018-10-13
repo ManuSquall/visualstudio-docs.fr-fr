@@ -1,7 +1,7 @@
 ---
 title: Débogage à l’aide de la visionneuse de Store | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d0955cae279ece70498ce05584d6b17d6e254f89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 78a7cad2db2efa8057f2b95d117f93c59cc328cb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501631"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189074"
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>Débogage à l'aide de la visionneuse de banque d'information
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [débogage à l’aide de la visionneuse de Store](https://docs.microsoft.com/visualstudio/modeling/debugging-by-using-the-store-viewer).  
-  
 Avec la visionneuse Store, vous pouvez examiner l’état d’un *stocker* utilisé par [!INCLUDE[dsl](../includes/dsl-md.md)]. La visionneuse Store affiche tous les éléments de modèle de domaine qui se trouvent dans un magasin spécifique, ainsi que les propriétés de l’élément et les liens entre les éléments.  
   
 ## <a name="opening-store-viewer"></a>Visionneuse de l’ouverture Store  

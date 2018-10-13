@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : Mise en relief | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6737d9fffa1f0f38fab57edd4031647d0cc1510e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0d86dd811339122415a4511b7b7cf28f239be752
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504849"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181972"
 ---
 # <a name="walkthrough-outlining"></a>Procédure pas à pas : mode Plan
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : mise en relief](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-outlining).  
-  
 Vous pouvez implémenter des fonctionnalités reposant sur le langage comme le mode plan en définissant les types de zones de texte que vous souhaitez développer ou réduire. Vous pouvez définir des régions dans le contexte d’un service de langage, ou vous pouvez définir votre propre type de contenu et d’extension de nom fichier et s’appliquent de la définition de la région à uniquement à ce type, ou vous pouvez appliquer les définitions de la région à un type de contenu existant (par exemple, « text »). Cette procédure pas à pas montre comment définir et afficher les régions en mode plan.  
   
 ## <a name="prerequisites"></a>Prérequis  

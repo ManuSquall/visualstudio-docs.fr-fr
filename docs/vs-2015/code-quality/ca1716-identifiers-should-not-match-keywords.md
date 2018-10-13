@@ -1,7 +1,7 @@
 ---
 title: 'CA1716 : Les identificateurs ne doivent pas correspondre aux mots clés | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c1a3affbecf7a39ee323fd64bc8a56d92e8a4d5e
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: cb5e3fe219d6ed8d976cf4bf03b3411dd5855a5c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588079"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189772"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716 : Les identificateurs ne doivent pas correspondre à des mots clés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Vous trouverez la dernière version de cette rubrique dans [CA1716 : les identificateurs ne doivent pas correspondre aux mots clés](https://docs.microsoft.com/visualstudio/code-quality/ca1716-identifiers-should-not-match-keywords).
-
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotMatchKeywords|

@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour lancer une application .NET Framework autonome avec le profileur pour collecter des données de mémoire en utilisant la ligne de commande | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1993b410f749a121d3520b3bf47db19743f90c40
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: fe93aee18146aeeebbef01095f929b1ade38871e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47590498"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208505"
 ---
-# <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Comment : lancer une application .NET Framework autonome avec le profileur pour collecter des données de mémoire en utilisant la ligne de commande
+# <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Comment : lancer une application .NET Framework autonome avec le profileur pour collecter des données de mémoire en utilisant la ligne de commande
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : lancer une Application autonome .NET Framework avec le Profiler pour collecter des données de mémoire à l’aide de la ligne de commande](https://docs.microsoft.com/visualstudio/profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line).  
-  
 Cette rubrique explique comment utiliser les outils en ligne de commande des outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour démarrer une application autonome (cliente) .NET Framework et collecter des données de mémoire.  
   
  Une session de profilage est constituée de trois parties :  

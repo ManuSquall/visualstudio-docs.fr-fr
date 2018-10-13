@@ -1,7 +1,7 @@
 ---
 title: AssignTargetPath, tâche | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63836579d43ed9415d85f987b04b440eb387e95c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 667725da8006e99e8eba4d4d4cd18e101ae1dd4e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495921"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189461"
 ---
 # <a name="assigntargetpath-task"></a>Tâche AssignTargetPath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [AssignTargetPath, tâche](https://docs.microsoft.com/visualstudio/msbuild/assigntargetpath-task).  
-  
   
 Cette tâche accepte une liste de fichiers et ajoute des attributs `<TargetPath>` s’ils ne sont pas déjà spécifiés.  
   

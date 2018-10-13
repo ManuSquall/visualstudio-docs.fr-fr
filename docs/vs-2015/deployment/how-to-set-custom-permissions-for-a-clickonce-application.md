@@ -1,7 +1,7 @@
 ---
 title: 'Comment : définir des autorisations personnalisées pour une Application ClickOnce | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 6cf4b1c91650bf505daececfdf46ba42cfee68fb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 27302c3b2b925e66ca4b30f858fc8a54362451a9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504384"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219256"
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Comment : définir des autorisations personnalisées pour une application ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : Set Custom Permissions for a ClickOnce Application](https://docs.microsoft.com/visualstudio/deployment/how-to-set-custom-permissions-for-a-clickonce-application).  
-  
 Vous pouvez déployer une application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] qui utilise les autorisations par défaut pour la zone Internet ou Intranet local. Vous pouvez également créer une zone personnalisée pour les autorisations spécifiques nécessaires à l’application. Vous pouvez pour cela personnaliser les autorisations de sécurité dans la page **Sécurité** du **Concepteur de projets**.  
   
 ### <a name="to-customize-a-permission"></a>Pour personnaliser une autorisation  

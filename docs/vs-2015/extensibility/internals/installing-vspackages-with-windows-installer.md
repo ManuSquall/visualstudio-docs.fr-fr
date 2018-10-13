@@ -1,7 +1,7 @@
 ---
 title: Installation de VSPackages avec Windows Installer | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 41d2c72c-0a97-4fcd-b3aa-33a8d3aa962a
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9776c4c9ec58bc84bd1e60bc5eb98d7bda1c0130
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae0e99b278924a123410f5590cea9f8239acd9ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505643"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227966"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Installation de VSPackages avec Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [installation les VSPackages avec Windows Installer](https://docs.microsoft.com/visualstudio/extensibility/internals/installing-vspackages-with-windows-installer).  
-  
 L’intégration de votre VSPackage dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] nécessite plus qu’une simple copie de fichiers à l’ordinateur d’un utilisateur. Programme d’installation de votre VSPackage doit installer le package Visual Studio et ses fichiers dépendants et de s’inscrire et de les intégrer à [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Votre VSPackage peut tirer parti des fonctionnalités d’intégration tels que l’affichage d’une icône sur la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] écran et la boîte de dialogue à propos de démarrage.  
   
  Les fichiers de programme d’installation de Microsoft Windows sont la méthode recommandée pour distribuer vos VSPackages. Facile à utiliser les packages de programme d’installation de Windows peuvent s’exécuter sur n’importe quel système d’exploitation Windows pris en charge par [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Pour plus d’informations, consultez [programme d’installation de Windows](http://msdn.microsoft.com/en-us/121be21b-b916-43e2-8f10-8b080516d2a0).  

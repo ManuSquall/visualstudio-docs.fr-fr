@@ -1,7 +1,7 @@
 ---
 title: Paramètres du projet du débogueur | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5530d4cbdbb4f9a28f7b6b92dd487d598349019
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2336002552c2fa0772941d4812914b4756ebd40b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500904"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195557"
 ---
 # <a name="debugger-project-settings"></a>Paramètres du projet du débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [les paramètres de projet de débogueur](https://docs.microsoft.com/visualstudio/debugger/debugger-project-settings).  
-  
 Certains paramètres de projet affectent également le débogage. Ces paramètres déterminent des éléments tels que les répertoires de recherche du débogueur, la commande et les arguments de commande utilisés pour démarrer le programme, ainsi que le type d'informations de débogage créées pour le programme. Vous pouvez modifier ces paramètres dans la boîte de dialogue **Pages de propriétés** .  
   
  Cette section décrit les options disponibles et la manière de les définir.  
@@ -58,7 +56,7 @@ Certains paramètres de projet affectent également le débogage. Ces paramètre
  Répertorie les propriétés disponibles dans la boîte de dialogue **Pages de propriétés** de projets Web.  
   
  [Paramètres de projet pour une configuration Debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)  
- Répertorie les propriétés disponibles dans le **Pages de propriétés** boîte de dialogue [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projets.  
+ Répertorie les propriétés disponibles dans la boîte de dialogue **Pages de propriétés** de projets [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] .  
   
 ## <a name="related-sections"></a>Rubriques connexes  
  [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
@@ -68,7 +66,7 @@ Certains paramètres de projet affectent également le débogage. Ces paramètre
  Décrit comment déboguer les applications Windows Store. (Centre de développement Windows)  
   
  [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)  
- Décrit les paramètres de propriété du débogueur et la préparation nécessaire pour déboguer votre programme à l'aide du débogueur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+ Décrit les paramètres de propriété du débogueur et la préparation nécessaire pour déboguer votre programme à l'aide du débogueur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité du débogueur](../debugger/debugger-security.md)

@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::findSymbolByRVA | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a432defaec5785b355b3a3e752d44e722d15338c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a7fdb1ef423c0fa7ccd1b788843720de092e20b4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508459"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215252"
 ---
 # <a name="idiasessionfindsymbolbyrva"></a>IDiaSession::findSymbolByRVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDiaSession::findSymbolByRVA](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findsymbolbyrva).  
-  
 Récupère un type de symbole spécifié qui contienne, ou est le plus proche, une adresse virtuelle relative (RVA) spécifiée.  
   
 ## <a name="syntax"></a>Syntaxe  

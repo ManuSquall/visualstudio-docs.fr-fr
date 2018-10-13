@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_backEndMinor | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3169318bc1f73a8e23e0b4f72f1683a23e8b99c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 494d0b8311de61dcff3c6adbb5edbb46e01cb50e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508809"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219126"
 ---
 # <a name="idiasymbolgetbackendminor"></a>IDiaSymbol::get_backEndMinor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDiaSymbol::get_backEndMinor](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-backendminor).  
-  
 Récupère le numéro de version mineure de back-end du compilateur.  
   
 ## <a name="syntax"></a>Syntaxe  

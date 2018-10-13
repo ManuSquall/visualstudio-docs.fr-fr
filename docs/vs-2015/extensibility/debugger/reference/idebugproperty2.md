@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a7d5c70f-a1a5-4120-9f70-184e01c25bff
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c728c2e4955d35e2954fbda0a4a4432c550666d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63b39e45d73be47538263b7e7cd5ce1e12769f95
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506944"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215642"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDebugProperty2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugproperty2).  
-  
 Cette interface représente une propriété de frame de pile, une propriété de document du programme ou une autre propriété. La propriété est généralement le résultat d’une évaluation d’expression.  
   
 > [!NOTE]

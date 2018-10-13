@@ -1,7 +1,7 @@
 ---
 title: À l’aide de l’infrastructure de Package gérée pour implémenter un Type de projet (c#) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 926de536-eead-415b-9451-f1ddc8c44630
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72d2ce8d817ab0d01a1a54f5e001165cd943c478
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: faedd7d5630205679c851ab5f9d6b46bbe25e3ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493030"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213731"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Utilisation de l’infrastructure de package gérée pour implémenter un type de projet (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [à l’aide de Managed Package Framework pour un Type de projet (c#)](https://docs.microsoft.com/visualstudio/extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp).  
-  
 Managed Package Framework (MPF) fournit les classes c# vous pouvez utiliser ou hériter pour implémenter vos propres types de projet. MPF implémente la plupart des interfaces de que Visual Studio attend un type de projet pour fournir, en vous laissant permettant de vous concentrer sur l’implémentation de l’exactitude de votre type de projet.  
   
 ## <a name="using-the-mpf-project-source-code"></a>En utilisant le Code Source du projet MPF  

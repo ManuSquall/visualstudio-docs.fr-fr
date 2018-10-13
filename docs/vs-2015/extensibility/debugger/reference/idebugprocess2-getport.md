@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess2::GetPort | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e39b6e5a-64eb-48cf-a53d-da4fdb968e2d
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5aa2f90f13a452ba611b7bf66e809f6fef4b3239
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45498934579b5e5f0b62efcbab0f558e6bb2381e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502539"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221024"
 ---
 # <a name="idebugprocess2getport"></a>IDebugProcess2::GetPort
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDebugProcess2::GetPort](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocess2-getport).  
-  
 Obtient le port que le processus est en cours d’exécution.  
   
 ## <a name="syntax"></a>Syntaxe  

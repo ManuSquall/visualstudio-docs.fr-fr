@@ -1,7 +1,7 @@
 ---
 title: Comment déclencher suspendre, reprendre, événements et d’arrière-plan pour les applications du Windows Store dans Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0466441d83d3d0203167f86e6f1afa8c85acb32d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5496e9b5122d2f2206118445a4e7316c2717bc37
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505581"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214758"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>Comment déclencher des événements de suspension, de reprise et d'arrière-plan pour les applications Windows Store dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [comment déclencher suspendre, reprendre, événements et d’arrière-plan pour les applications du Windows Store dans Visual Studio](https://docs.microsoft.com/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio).  
-  
 Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management** (PLM) contrôle l'état d'exécution de votre application, soit son démarrage, sa suspension, sa reprise et sa fin en réponse aux actions utilisateur et à l'état du périphérique. Lorsque vous effectuez un débogage, Windows désactive ces événements d'activation. Cette rubrique décrit comment déclencher ces événements dans le débogueur.  
   
  Cette rubrique décrit également comment déboguer les **tâches en arrière-plan**. Les tâches en arrière-plan vous permettent d'effectuer certaines opérations dans un processus en arrière-plan, même lorsque votre application n'est pas en cours d'exécution. Utilisez le débogueur pour placer votre application en mode débogage, puis, sans démarrer l'interface utilisateur, démarrez et déboguez la tâche en arrière-plan.  
@@ -135,7 +133,7 @@ Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management
  [Test des applications du Windows Store avec Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
  [Cycle de vie des applications](http://msdn.microsoft.com/en-us/53cdc987-c547-49d1-a5a4-fd3f96b2259d)   
- [Lancement de la reprise et multitâche](http://msdn.microsoft.com/en-us/04307b1b-05af-46a6-b639-3f35e297f71b)
+ [Launching, resuming, and multitasking](http://msdn.microsoft.com/en-us/04307b1b-05af-46a6-b639-3f35e297f71b)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: 'CA1040 : Éviter les interfaces vides | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 50a32f619617662297b903b680276ce39854dbfd
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: b5e2ff26842f63ea1c21e599b301e4ce4e78bf80
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588059"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190318"
 ---
 # <a name="ca1040-avoid-empty-interfaces"></a>CA1040 : Éviter les interfaces vides
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Vous trouverez la dernière version de cette rubrique dans [CA1040 : éviter les interfaces vides](https://docs.microsoft.com/visualstudio/code-quality/ca1040-avoid-empty-interfaces).
-
 |||
 |-|-|
 |TypeName|AvoidEmptyInterfaces|

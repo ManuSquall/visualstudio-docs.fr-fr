@@ -1,7 +1,7 @@
 ---
 title: Profil d’exécution, rapport| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6e13e18857ce67bc5d333fb2d91b2df97fdc08d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fb4b84193f341163dc0a39ded71781cc678c7650
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503506"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192658"
 ---
 # <a name="execution-profile-report"></a>Profil d’exécution, rapport
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [rapport de profil d’exécution](https://docs.microsoft.com/visualstudio/profiling/execution-profile-report).  
-  
 Le rapport Profil d’exécution est un profil d’échantillonnage classique. Des échantillons sont créés chaque milliseconde environ pendant des périodes où un thread s’exécute sur un cœur logique, et le visualiseur concurrentiel génère une arborescence des appels typique en assemblant les échantillons de piles accumulés. Les données de ce tableau peuvent être affectées par la plage horaire actuelle et les threads cachés, ainsi que par les filtres qui peuvent être appliqués :  
   
 -   Si l’option Uniquement mon code est activée, seuls les frames de pile contenant du code utilisateur sont présentés, ainsi que le premier niveau situé sous le code utilisateur.  
@@ -50,7 +48,7 @@ Le rapport Profil d’exécution est un profil d’échantillonnage classique. D
  Ce tableau peut être consulté dans la vue [Durée d’exécution (vue Threads)](../profiling/execution-time-threads-view.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vue Threads](../profiling/threads-view-parallel-performance.md)
+ [vue Threads](../profiling/threads-view-parallel-performance.md)
 
 
 

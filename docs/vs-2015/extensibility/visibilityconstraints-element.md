@@ -1,7 +1,7 @@
 ---
 title: Élément VisibilityConstraints | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: d6dcd314-6fe4-4693-a189-91fa026c7b34
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9fd6d6968984f0640dd73067c286a4259ade6745
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b5b290884a2377cdaba573788f0881ec82a19cdf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507254"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222376"
 ---
 # <a name="visibilityconstraints-element"></a>Élément VisibilityConstraints
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [VisibilityConstraints élément](https://docs.microsoft.com/visualstudio/extensibility/visibilityconstraints-element).  
-  
 L’élément VisibilityConstraints détermine la visibilité statique de groupes de commandes et des barres d’outils. La visibilité est tout d’abord contrôlée par le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] l’environnement de développement intégré (IDE) sans charger le VSPackage.  
   
 ## <a name="syntax"></a>Syntaxe  

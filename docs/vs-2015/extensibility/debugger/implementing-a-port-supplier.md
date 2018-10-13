@@ -1,7 +1,7 @@
 ---
 title: Implémentation d’un fournisseur de Port | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6b8579df-58df-4c7f-8112-6015993e8765
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5d14c2642d30ee46df0cd1b766540ae0b135e4d4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 33ca3287b6408541f64152609a6f33b4eac03632
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507730"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180750"
 ---
 # <a name="implementing-a-port-supplier"></a>Implémentation d’un fournisseur de ports
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [implémentant un fournisseur de Port](https://docs.microsoft.com/visualstudio/extensibility/debugger/implementing-a-port-supplier).  
-  
 Un fournisseur de port fournit des ports à la demande sur le Gestionnaire de session de débogage (SDM). Un fournisseur de port doit être implémentée lors du débogage sur un ordinateur non-DCOM ou lorsqu’un nouvel appareil doit être pris en charge. Par exemple, pour fournir le débogage à un téléphone portable, vous pouvez implémenter un fournisseur de port qui fournit des ports qui se connectent au téléphone cellulaire (par exemple au moyen de runtime d’intégration ou d’une connexion de cellule) énumère les processus et les programmes s’exécutant sur le téléphone.  
   
  Pour le débogage des programmes sur des ordinateurs Windows (y compris le débogage à distance), Visual Studio fournit des fournisseurs de port pour natif et les processus de Common Language Runtime (CLR), il est donc inutile d’implémenter votre propre fournisseur de port dans ces cas.  

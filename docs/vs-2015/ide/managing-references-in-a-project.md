@@ -1,7 +1,7 @@
 ---
 title: Gestion des références dans un projet | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,12 +28,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: aa9b96370d6b0e1b39b414eeee737a32bfefcd34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 10fed2fa77274469a7b82a1583e825c57ca4a581
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508011"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195596"
 ---
 # <a name="managing-references-in-a-project"></a>Gestion des références dans un projet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,5 +124,5 @@ Avant d’écrire du code pour un composant externe ou un service connecté, vou
 ## <a name="see-also"></a>Voir aussi  
  [Troubleshooting Broken References](../ide/troubleshooting-broken-references.md)   
  [Programmation à l’aide d’assemblys](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
- [Guide pratique pour ajouter ou supprimer des références à l’aide du gestionnaire de références](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+ [How to: Add or Remove References By Using the Reference Manager](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
 

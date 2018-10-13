@@ -1,7 +1,7 @@
 ---
 title: Générer du code à partir de diagrammes de classes UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 53
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8874e5aa1c2dcf440c7cfed1cc2ce42c4187bdc1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e13ad8f658fafa2a20556e95123c5cd5965934e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493106"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222831"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Générer du code à partir de diagrammes de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [générer du code à partir de diagrammes de classes UML](https://docs.microsoft.com/visualstudio/modeling/generate-code-from-uml-class-diagrams).  
-  
 Pour générer le code Visual c# .NET à partir de diagrammes de classes UML dans Visual Studio, utilisez le **générer le Code** commande. Par défaut, la commande génère un type C# pour chaque type UML que vous sélectionnez. Vous pouvez modifier et étendre ce comportement en modifiant ou en copiant les modèles de texte qui génèrent le code. Vous pouvez spécifier un comportement distinct pour les types contenus dans les différents packages de votre modèle.  
   
  Le **générer le Code** commande est particulièrement adaptée à la génération de code à partir de la sélection de l’utilisateur d’éléments et à la génération d’un fichier pour chaque classe UML ou un autre élément. Par exemple, la capture d'écran présente deux fichiers C# générés à partir de deux classes UML.  
@@ -173,9 +171,9 @@ Pour générer le code Visual c# .NET à partir de diagrammes de classes UML dan
     |------------------|---------------------|  
     |Name|Nom pour cette liaison. Pour substituer une liaison héritée d'un modèle ou d'un package contenant, utilisez le même nom que la liaison à substituer.|  
     |Overwrite|Si la valeur est true, tout code existant est remplacé.|  
-    |Nom de la cible|Nom du fichier généré.<br /><br /> Vous pouvez insérer des expressions dans cette chaîne comme `{Name}` ou `{Owner.Name}`. Par exemple, vous pouvez écrire : `{Owner.Name}_{Name}`. L'expression est évaluée sur l'élément de modèle. Elle peut utiliser des propriétés d'éléments, mais pas de méthodes. Pour rechercher les propriétés peuvent être utilisées, examinez les propriétés des types dans **Microsoft.VisualStudio.Uml.\*** . **Important :** `{Name}` ou `{Owner.Name}` peut uniquement être utilisée dans le **nom cible** propriété.   Pour modifier le nom de la classe générée, vous devez modifier le modèle. Pour plus d’informations, consultez [écriture d’un modèle de texte](#writing).|  
+    |Nom de la cible|Nom du fichier généré.<br /><br /> Vous pouvez insérer des expressions dans cette chaîne comme `{Name}` ou `{Owner.Name}`. Par exemple, vous pouvez écrire : `{Owner.Name}_{Name}`. L'expression est évaluée sur l'élément de modèle. Elle peut utiliser des propriétés d'éléments, mais pas de méthodes. Pour rechercher les propriétés peuvent être utilisées, examinez les propriétés des types dans **Microsoft.VisualStudio.Uml.\*** . **Important :** `{Name}` ou `{Owner.Name}` peut uniquement être utilisée dans le **nom cible** propriété. Pour modifier le nom de la classe générée, vous devez modifier le modèle. Pour plus d’informations, consultez [écriture d’un modèle de texte](#writing).|  
     |Chemin d’accès au projet|Spécifie le chemin d'accès au projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] qui contiendra les fichiers de sortie de la transformation. Utilisez des valeurs typées pour créer un projet. Choisissez le bouton de sélection (**[...]** ) pour sélectionner un projet existant.<br /><br /> Un projet est créé s'il n'existe pas. Il s'agit d'un projet de bibliothèque de classes C#.<br /><br /> Pour ce faire, vous devez taper le projet directement. Vous pouvez inclure des macros de variables d'environnement telles que %ProgramFiles% ou %LocalAppData%.|  
-    |Répertoire cible|Dossier dans lequel le fichier cible est généré. Le chemin d'accès est relatif au dossier du projet.<br /><br /> Vous pouvez utiliser l'expression `{PackageStructure}` pour insérer un chemin d'accès qui correspond aux noms des packages contenants. La valeur par défaut est `\GeneratedCode\{PackageStructure}`. Vous pouvez également inclure des variables d'environnement telles que %TEMP% ou %HomePath%. **Important :** `{PackageStructure}` peut uniquement être utilisée dans le **répertoire cible** propriété.  |  
+    |Répertoire cible|Dossier dans lequel le fichier cible est généré. Le chemin d'accès est relatif au dossier du projet.<br /><br /> Vous pouvez utiliser l'expression `{PackageStructure}` pour insérer un chemin d'accès qui correspond aux noms des packages contenants. La valeur par défaut est `\GeneratedCode\{PackageStructure}`. Vous pouvez également inclure des variables d'environnement telles que %TEMP% ou %HomePath%. **Important :** `{PackageStructure}` peut uniquement être utilisée dans le **répertoire cible** propriété.|  
     |Chemin d’accès au fichier de modèle|Modèle qui exécutera la transformation.<br /><br /> Vous pouvez utiliser les modèles fournis ou créer le vôtre. Les modèles fournis se trouvent à l'emplacement suivant :<br /><br /> …\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\|  
   
 5.  Vous pouvez joindre à un élément le nombre de liaisons de votre choix.  
@@ -219,7 +217,7 @@ Pour générer le code Visual c# .NET à partir de diagrammes de classes UML dan
   
  Les points suivants peuvent vous être utiles lorsque vous écrivez un modèle de texte. Ces informations sont décrites en détail dans [génération de Code et modèles de texte T4](../modeling/code-generation-and-t4-text-templates.md).  
   
--   Vous pouvez définir l'extension de nom de fichier du résultat dans la directive `Output`. Une directive `Output` est obligatoire dans chaque modèle de texte.  
+-   Vous pouvez définir l’extension de nom de fichier du résultat dans la directive `Output`. Une directive `Output` est obligatoire dans chaque modèle de texte.  
   
 -   Certains assemblys sont référencés automatiquement par le modèle. Ces assemblys incluent par exemple System.dll et Microsoft.VisualStudio.Uml.Interfaces.dll.  
   

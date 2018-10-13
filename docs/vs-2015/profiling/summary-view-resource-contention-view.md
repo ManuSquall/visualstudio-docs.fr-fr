@@ -1,7 +1,7 @@
 ---
 title: Vue Résumé - Vue Conflit de ressources | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bf83509cd56343001a94da619b9246464ed75bdf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7cf00fbb7237194b88edc9e748abfa06483a44a5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493078"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229747"
 ---
 # <a name="summary-view---resource-contention-view"></a>Vue Résumé - Vue Conflit de ressources
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [vue Résumé - vue conflit de ressources](https://docs.microsoft.com/visualstudio/profiling/summary-view-resource-contention-view).  
-  
 La vue Résumé affiche des informations sur les événements de votre application dans lesquels un thread ou un processus a été interrompu dans l’attente de pouvoir à une ressource.  
   
  Pour plus d’informations, notamment une description des liens de notification et des listes de rapports, consultez [Vue Résumé](../profiling/summary-view.md).  

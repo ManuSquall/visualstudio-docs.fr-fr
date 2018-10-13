@@ -1,7 +1,7 @@
 ---
 title: Recherche de fuites de mémoire à l’aide de la bibliothèque CRT | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -35,18 +35,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6d2c45ed2377b400fb00ac264aa2dcf8e5df8410
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 4be0ac6e3e0de77f19f63b41ec53f433478f5063
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879770"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198079"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Recherche de fuites de mémoire à l'aide de la bibliothèque CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [bibliothèque de recherche de fuites de mémoire à l’aide de la bibliothèque CRT](https://docs.microsoft.com/visualstudio/debugger/finding-memory-leaks-using-the-crt-library).  
-  
 Les fuites de mémoire, qui correspondent à l'échec de désallocation de mémoire précédemment allouée, figurent parmi les bogues les plus difficiles à détecter des applications C/C++. Au début, vous pourrez remarquer une petite fuite de mémoire, mais au fil du temps, cette fuite de mémoire peut progressivement provoquer des problèmes allant d'une perte de performances au blocage de l'application, lorsque la mémoire devient insuffisante. Pire encore, une application connaissant une fuite de mémoire qui utiliserait toute la mémoire disponible pourrait entraîner le blocage d'une autre application, provoquant le doute quant à l'application réellement responsable du blocage. Même les fuites de mémoire apparemment sans incidence peuvent être responsables d'autres problèmes devant être corrigés.  
   
  Le débogueur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et les bibliothèques runtime C (CRT) vous offrent la possibilité de détecter et d'identifier les fuites de mémoire.  

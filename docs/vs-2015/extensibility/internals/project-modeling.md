@@ -1,7 +1,7 @@
 ---
 title: Projet de modélisation | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: c8db8fdb-88c1-4b12-86fe-f3c30a18f9ee
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 58262c6d4edda1dd0be7d147ae21645b3305bfaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 324c870e42a9a9da37036979304e06637364c4d0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495502"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229721"
 ---
 # <a name="project-modeling"></a>Modélisation de projet
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [projet de modélisation](https://docs.microsoft.com/visualstudio/extensibility/internals/project-modeling).  
-  
 L’étape suivante de la fourniture de l’automatisation pour votre projet consiste à implémenter les objets de projet standard : le <xref:EnvDTE.Projects> et `ProjectItems` collections ; la `Project` et <xref:EnvDTE.ProjectItem> objets ; et les objets restants uniques à votre implémentation. Ces objets standards sont définis dans le fichier de Dteinternal.h. Une implémentation des objets standards est fournie dans l’exemple BscPrj. Vous pouvez utiliser ces classes en tant que modèles pour créer vos propres objets de projet standard qui en matière de côte à côte avec les objets du projet à partir d’autres types de projets.  
   
  Un utilisateur d’automation part du principe que pour être en mesure d’appeler <xref:EnvDTE.Solution>(«`<UniqueProjName>")` et <xref:EnvDTE.ProjectItems> (`n`) où n est un numéro d’index pour l’obtention d’un projet spécifique dans la solution. Cet appel d’automation, l’environnement d’appeler <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.GetProperty%2A> sur la hiérarchie de projet approprié, en passant VSITEMID_ROOT comme paramètre d’ItemID et VSHPROPID_ExtObject en tant que paramètre VSHPROPID. `IVsHierarchy::GetProperty` Retourne un `IDispatch` pointeur vers l’objet automation fournir les principales `Project` interface, ce qui vous avez implémenté.  

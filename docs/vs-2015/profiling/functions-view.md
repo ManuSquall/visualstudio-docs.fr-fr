@@ -1,7 +1,7 @@
 ---
 title: Vue Fonctions | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4bc15c21400b720bd5dde9c18111d7cc68afc34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 88ae3a5053c6e1cdd5f3e8ab36c80823fdb13b41
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501927"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205606"
 ---
 # <a name="functions-view"></a>Vue Fonctions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [vue fonctions](https://docs.microsoft.com/visualstudio/profiling/functions-view).  
-  
 La vue Fonctions répertorie les fonctions appelées lors du profilage.  
   
  Par défaut, les fonctions sont listées par nom. Pour afficher les fonctions par module, cliquez avec le bouton droit dans la fenêtre Vue Fonctions, puis sélectionnez **Afficher en mode Module**. Cette action fait apparaître la vue Module.  
@@ -42,8 +40,8 @@ La vue Fonctions répertorie les fonctions appelées lors du profilage.
  Les colonnes qui sont disponibles dans la vue Fonctions dépendent de la méthode de profilage (échantillonnage ou instrumentation) utilisée pour collecter les données, mais également de la présence de données de mémoire .NET parmi les données collectées lors de l’exécution du profilage.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vue Fonctions](../profiling/functions-view-sampling-data.md)   
- [Vue Fonctions](../profiling/functions-view-instrumentation-data.md)   
+ [Mode Fonction](../profiling/functions-view-sampling-data.md)   
+ [Mode Fonction](../profiling/functions-view-instrumentation-data.md)   
  [Vue Fonctions - Instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [Vue Fonctions - Échantillonnage](../profiling/functions-view-dotnet-memory-sampling-data.md)
 

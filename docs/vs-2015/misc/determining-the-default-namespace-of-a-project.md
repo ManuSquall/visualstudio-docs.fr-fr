@@ -1,7 +1,7 @@
 ---
 title: Déterminer le Namespace par défaut d’un projet | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 6d890676-7016-458c-8a6a-95cc0a068612
 caps.latest.revision: 13
 manager: douge
-ms.openlocfilehash: 27919985c09356764533e736899dc6a7cb5d0090
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a456b9b48ce9ba0817070fb5f04b5c9f80ffb149
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495273"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223325"
 ---
 # <a name="determining-the-default-namespace-of-a-project"></a>Détermination de l’espace de noms par défaut d’un projet
 Pour [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], si le `CustomToolNamespace` propriété est définie sur le fichier d’entrée, puis la valeur de `CustomToolNamespace` devient la valeur du paramètre d’espace de noms par défaut passé à la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> (méthode). Sinon, le `wszDefaultNamespace` paramètre passé à `Generate` est toujours égal à l’espace de noms racine. Pour plus d’informations sur les espaces de noms, consultez [mots clés Namespace](http://msdn.microsoft.com/library/091a66eb-b10d-4f54-9102-5ac0d4bdb84b).  

@@ -1,7 +1,7 @@
 ---
 title: Boîte de dialogue Options de thèmes, Concepteur de Workflow (hérité) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 12d7155d41bd22832dc40526258911f844f59f40
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4bbf3b934a58aed06f95ee567795d71adfaf71b3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502395"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229877"
 ---
 # <a name="themes-workflow-designer-options-dialog-box-legacy"></a>Thèmes, Concepteur de Workflow, Options, boîte de dialogue (héritée)
 Cette rubrique décrit comment utiliser le **thèmes, Concepteur de Workflow, Options** boîte de dialogue dans les anciennes [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

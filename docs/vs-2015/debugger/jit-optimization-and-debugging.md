@@ -1,7 +1,7 @@
 ---
 title: JIT optimisation et débogage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb73c434c978f7a8b1847976c73fe2bff47e3b89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e798d44371f04b955db9019c741100ce9e5e5ef6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506110"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201978"
 ---
 # <a name="jit-optimization-and-debugging"></a>Optimisation JIT et débogage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [l’optimisation JIT et débogage](https://docs.microsoft.com/visualstudio/debugger/jit-optimization-and-debugging).  
-  
 Lorsque vous déboguez une application managée, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] supprime l’optimisation du code de juste-à-temps (JIT) par défaut. La suppression de l'optimisation JIT signifie que vous déboguez un code non optimisé. Le code s'exécute un peu plus lentement parce qu'il n'est pas optimisé, mais votre expérience de débogage est beaucoup plus complète. Le débogage de code optimisé est plus ardu et est recommandé uniquement si vous rencontrez un bogue qui se produit dans un code optimisé mais ne peut pas être reproduit dans la version non optimisée.  
   
  L’optimisation JIT est contrôlée dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] par le **supprimer l’optimisation JIT lors du chargement du module** option. Vous pouvez trouver cette option sur le **général** page sous le **débogage** nœud dans le **Options** boîte de dialogue.  

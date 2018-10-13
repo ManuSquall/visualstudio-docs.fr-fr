@@ -1,7 +1,7 @@
 ---
 title: Extension et personnalisation de Windows de l’outil | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 46b2892e-7b2b-4b3f-83a7-b884f1e114ee
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 90ba7833a48647043fcb9b6d8ca9095be7cabef0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 591351f41d0cd85de92836990e8d8523258f3d33
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494420"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199938"
 ---
 # <a name="extending-and-customizing-tool-windows"></a>Extension et personnalisation des fenêtres d’outils
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [extension et personnalisation de Windows d’outil](https://docs.microsoft.com/visualstudio/extensibility/extending-and-customizing-tool-windows).  
-  
 Visual Studio fournit plusieurs types différents de windows, par exemple les fenêtres Outil, les fenêtres de document et boîte de dialogue windows. Autres fenêtres telles que la fenêtre Propriétés, la fenêtre Sortie et la fenêtre liste des tâches, sont des types de fenêtres Outil.  
   
 ## <a name="tool-windows"></a>Fenêtres d'outils  
@@ -43,7 +41,7 @@ Visual Studio fournit plusieurs types différents de windows, par exemple les fe
   
  Dans le frame de document, les fenêtres Outils peuvent être des fenêtres ancrées,  flottantes ou avec onglets. Le frame de fenêtre Outil, fourni par l’IDE, permet de contrôler la taille, l’emplacement, l’état d’ancrage et d’autres propriétés persistantes. Le volet de la fenêtre Outil affiche le contenu. La taille et l’emplacement par défaut s’appliquent uniquement à la première ouverture de la fenêtre Outil ; après cela, l’état de la fenêtre Outil est rendu persistant.  
   
- Les volets de la fenêtre Outil peuvent héberger des contrôles utilisateur WPF et prendre en charge des barres d’outils. Vous pouvez remplacer le <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> propriété pour retourner le handle du contrôle hébergé.  
+ Les volets de la fenêtre Outil peuvent héberger des contrôles utilisateur WPF et prendre en charge des barres d’outils. Vous pouvez substituer la propriété <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> pour retourner le handle du contrôle hébergé.  
   
  Vous pouvez ajouter de nombreuses fonctionnalités différentes aux fenêtres Outil. Par exemple, vous pouvez ajouter une barre d’outils : [Ajout d’une barre d’outils à une fenêtre outil](../extensibility/adding-a-toolbar-to-a-tool-window.md) ou un menu contextuel : [Ajout d’un Menu contextuel dans une fenêtre outil](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md). Vous pouvez ajouter un contrôle de recherche qui vous permet de rechercher des éléments à l’intérieur de votre fenêtre outil : [Ajout d’une recherche à une fenêtre outil](../extensibility/adding-search-to-a-tool-window.md).  
   

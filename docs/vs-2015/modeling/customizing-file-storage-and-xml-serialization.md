@@ -1,7 +1,7 @@
 ---
 title: Personnalisation du stockage de fichier et de sérialisation XML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ee8a3b5a5510ef5b8a104e3a55ace3af9ce7d318
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 012805e83e0fa3fae2a58274bfa400818d6d22fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590743"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183015"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Personnalisation du stockage de fichiers et de la sérialisation XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [stockage de fichiers de personnalisation et la sérialisation XML](https://docs.microsoft.com/visualstudio/modeling/customizing-file-storage-and-xml-serialization).  
-  
 Quand l’utilisateur enregistre une instance, ou *modèle*, d’un langage spécifique à un domaine (DSL) dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], un fichier XML est créé ou mis à jour. Le fichier peut être rechargé pour recréer le modèle dans le Store.  
   
  Vous pouvez personnaliser le schéma de sérialisation en ajustant les paramètres sous **comportement de sérialisation Xml** dans l’Explorateur DSL. Il existe un nœud sous **comportement de sérialisation Xml** pour chaque classe de domaine, la propriété et la relation. Les relations sont situées sous leurs classes de source. Il existe également des nœuds correspondant à la forme, connecteur et les classes de diagramme.  

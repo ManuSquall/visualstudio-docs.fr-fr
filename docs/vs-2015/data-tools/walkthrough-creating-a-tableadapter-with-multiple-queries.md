@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : Création d’un TableAdapter avec plusieurs requêtes | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: e48750cf876f561b25802fd20b1e270215a1b605
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4226fc805ed0335109d0a6b98f1235ae46de1664
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503800"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206698"
 ---
 # <a name="walkthrough-creating-a-tableadapter-with-multiple-queries"></a>Procédure pas à pas : création d'un TableAdapter avec plusieurs requêtes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -167,7 +167,7 @@ Dans cette procédure pas à pas, vous allez créer un TableAdapter dans un jeu 
   
 -   Ajoutez des contrôles <xref:System.Windows.Forms.TextBox> et <xref:System.Windows.Forms.Button>, et passez la valeur de la zone de texte à la requête. (`CustomersTableAdapter.FillByCity(NorthwindDataSet.Customers, TextBox1.Text)`).  
   
--   Ajoutez une logique de validation à l'événement <xref:System.Data.DataTable.ColumnChanging> ou <xref:System.Data.DataTable.RowChanging> des tables de données du dataset. Pour plus d’informations, consultez [valider des données dans les jeux de données](../data-tools/validate-data-in-datasets.md).  
+-   Ajoutez une logique de validation à l’événement <xref:System.Data.DataTable.ColumnChanging> ou <xref:System.Data.DataTable.RowChanging> des tables de données du dataset. Pour plus d’informations, consultez [valider des données dans les jeux de données](../data-tools/validate-data-in-datasets.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Vue d’ensemble de TableAdapter](../data-tools/tableadapter-overview.md)   

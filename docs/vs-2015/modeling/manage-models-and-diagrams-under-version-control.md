@@ -1,7 +1,7 @@
 ---
 title: Gérer des modèles et des diagrammes sous contrôle de version | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,24 +14,22 @@ caps.latest.revision: 32
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1c2cc85b5ae94e95ef5f1e07a6d3ca13663fbb44
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4aa1da880195e3566460d8169c6eed4e81bb0fb1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507580"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187551"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Gérer des modèles et des diagrammes sous la gestion de version
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [gérer des modèles et des diagrammes sous contrôle de version](https://docs.microsoft.com/visualstudio/modeling/manage-models-and-diagrams-under-version-control).  
-  
-Gérez les différentes versions de vos projets de modélisation et les diagrammes, y compris les cartes de code (fichiers .dgml), à l’aide de [utiliser le contrôle de version Team Foundation ou Git](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314), avec en local Team Foundation Server ou dans le cloud avec Visual Studio Team Services.  
+Gérez les différentes versions de vos projets et diagrammes de modélisation, notamment les cartes de code (fichiers .dgml), à l’aide du [contrôle de version Team Foundation ou de Git](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314), avec une version locale de Team Foundation Server ou dans le cloud avec Visual Studio Team Services.  
   
  Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!IMPORTANT]
->  Faites attention quand plusieurs utilisateurs travaillent sur le même projet de modélisation. Découvrez comment vous pouvez [organiser les modèles dans les projets de taille moyennes ou grandes](../modeling/structure-your-modeling-solution.md).  
+>  Faites attention quand plusieurs utilisateurs travaillent sur le même projet de modélisation. Découvrez comment vous pouvez [organiser les modèles dans des projets de taille moyenne ou grande](../modeling/structure-your-modeling-solution.md).  
   
 ##  <a name="ModelingProjects"></a> Fichiers dans un projet de modélisation  
  Plusieurs utilisateurs peuvent travailler sur un projet de modélisation en même temps, à condition qu’ils travaillent sur des fichiers différents.  
@@ -66,7 +64,7 @@ Gérez les différentes versions de vos projets de modélisation et les diagramm
   
 -   Pour vous aider à effectuer le suivi des packages, renommez les fichiers de package pour refléter les noms réels des packages.  
   
--   Dans [!INCLUDE[esprscc](../includes/esprscc-md.md)], effectuez toujours **archiver** et **obtenir la dernière Version** opérations sur le projet de modélisation complet, jamais sur des fichiers individuels.  
+-   Dans [!INCLUDE[esprscc](../includes/esprscc-md.md)], effectuez toujours les opérations **Archiver** et **Obtenir la dernière version** sur le projet de modélisation complet, jamais sur des fichiers individuels.  
   
 -   Effectuez toujours une opération **Obtenir** immédiatement avant d’archiver le projet de modélisation.  
   
@@ -82,7 +80,7 @@ Gérez les différentes versions de vos projets de modélisation et les diagramm
   
 -   Modifier les propriétés de relations qui traversent les limites du package.  
   
--   Pour en savoir plus sur les verrous d’extraction, consultez [vérifier et modifier des fichiers](http://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a).  
+-   Pour en savoir plus sur les verrous d’extraction, consultez [Extraire et modifier des fichiers](http://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a).  
   
 ##### <a name="to-move-a-diagram-file-in-or-out-of-a-project-folder"></a>Pour déplacer un fichier de diagramme dans un dossier de projet ou l’en retirer  
   

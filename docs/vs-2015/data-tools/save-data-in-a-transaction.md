@@ -1,7 +1,7 @@
 ---
 title: Enregistrer des données dans une transaction | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e4b6d6befe4bbe29147a59b9700b8f148154e6c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 60f3014707fe9b06818bf9a47745ca8b253290d4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502136"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208897"
 ---
 # <a name="save-data-in-a-transaction"></a>Enregistrer des données dans une transaction
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [enregistrer des données dans une transaction](https://docs.microsoft.com/visualstudio/data-tools/save-data-in-a-transaction).  
-  
   
 Cette procédure pas à pas montre comment enregistrer des données dans une transaction à l’aide de la <xref:System.Transactions> espace de noms. Cet exemple utilise les tables `Customers` et `Orders` de l'exemple de base de données Northwind.  
   
@@ -99,7 +97,7 @@ Cette procédure pas à pas montre comment enregistrer des données dans une tra
      Un <xref:System.Windows.Forms.DataGridView> s'affiche dans le formulaire. Un [OrdersTableAdapter](../data-tools/tableadapter-overview.md) et <xref:System.Windows.Forms.BindingSource> s’affichent dans la barre d’état du composant.  
   
 ## <a name="add-a-reference-to-the-systemtransactions-assembly"></a>Ajoutez une référence à l’assembly System.Transactions  
- Les transactions utilisent l'espace de noms <xref:System.Transactions>. Une référence de project vers l'assembly system.transactions n'est pas ajoutée par défaut, vous devez donc l'ajouter manuellement.  
+ Les transactions utilisent l’espace de noms <xref:System.Transactions>. Une référence de project vers l'assembly system.transactions n'est pas ajoutée par défaut, vous devez donc l'ajouter manuellement.  
   
 #### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>Pour ajouter une référence au fichier DLL System.Transactions  
   

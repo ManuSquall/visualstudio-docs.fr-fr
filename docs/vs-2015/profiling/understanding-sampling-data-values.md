@@ -1,7 +1,7 @@
 ---
 title: Présentation des valeurs de données d’échantillonnage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 60087d2788cd4b46b77d670cf430bf0e0198b6f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5834768784465b02b896b21339dc240a90781353
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503374"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221388"
 ---
 # <a name="understanding-sampling-data-values"></a>Fonctionnement des valeurs de données d’échantillonnage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [présentation des valeurs de données d’échantillonnage](https://docs.microsoft.com/visualstudio/profiling/understanding-sampling-data-values).  
-  
 La méthode de profilage par *échantillonnage* des outils de profilage de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] interrompt le processeur de l’ordinateur à des intervalles définis et collecte la pile des appels des fonctions. Une *pile des appels* est une structure dynamique qui stocke des informations sur les fonctions qui s’exécutent sur le processeur.  
   
  **Spécifications**  

@@ -1,7 +1,7 @@
 ---
 title: InvokeDelegate | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: steved0x
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0abb68a1cb123be7463d0fe3ec102f438eb8a2ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3b47a975c12cfcfd02b01925685b47cba47cc1fc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494205"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228850"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 
@@ -44,7 +44,7 @@ Le tableau suivant présente les propriétés de <xref:System.Activities.Stateme
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial de l'activité <xref:System.Activities.Statements.InvokeDelegate>. InvokeDelegate est la valeur par défaut.<br /><br /> Bien que la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé d'en utiliser une.|
 |<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|True|Nom de <xref:System.Activities.ActivityDelegate> à appeler lorsque l'activité s'exécute. Cette propriété peut être modifiée dans l'aire du concepteur. Il s'agit d'une propriété obligatoire.|
-|<<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|Collection d'argument du délégué appelé. Les clés sont les noms des objets <xref:System.Activities.DelegateArgument> de l'<xref:System.Activities.ActivityDelegate>, tandis que les valeurs sont les arguments dont les expressions sont évaluées et affectées aux objets <xref:System.Activities.DelegateArgument> correspondants. Dans la grille des propriétés, cliquez sur le bouton de sélection dans le **DelegateArguments** champ, il affiche le **DelegateArguments** boîte de dialogue pour vous permettre de définir cette propriété. Cliquez sur le **créer un Argument** champ pour ajouter les arguments.|
+|<<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|Collection d'argument du délégué appelé. Les clés sont les noms des objets <xref:System.Activities.DelegateArgument> de l’<xref:System.Activities.ActivityDelegate>, tandis que les valeurs sont les arguments dont les expressions sont évaluées et affectées aux objets <xref:System.Activities.DelegateArgument> correspondants. Dans la grille des propriétés, cliquez sur le bouton de sélection dans le **DelegateArguments** champ, il affiche le **DelegateArguments** boîte de dialogue pour vous permettre de définir cette propriété. Cliquez sur le **créer un Argument** champ pour ajouter les arguments.|
 
 ## <a name="see-also"></a>Voir aussi
 

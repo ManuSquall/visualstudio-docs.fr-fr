@@ -1,7 +1,7 @@
 ---
 title: Points d’arrêt (Kit de développement logiciel Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: acfcabed-9f2f-436c-ad18-7ca2f45d631b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 194551141ed6d56344a4ed49962df41fd3b8d2ae
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 13c7206bfdf97e5833c78d4010ecca547a0d83ba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493443"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199080"
 ---
 # <a name="breakpoints-visual-studio-sdk"></a>Points d’arrêt (SDK Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [des points d’arrêt (SDK Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/debugger/breakpoints-visual-studio-sdk).  
-  
 Il existe trois types de points d’arrêt : en attente, la limite et d’erreur.  
   
  **Un en attente de point d’arrêt :**  

@@ -1,7 +1,7 @@
 ---
 title: 'Comment : supprimer les avertissements à l’aide de l’élément de Menu | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: be62471a950dc794bc3b9ff704cb187bbc943ce1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c756a5ab6516d78f5370622555898c98658e8b3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494194"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211782"
 ---
 # <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>Comment : supprimer des avertissements à l’aide de l’élément de menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : supprimer les avertissements à l’aide de l’élément de Menu](https://docs.microsoft.com/visualstudio/code-quality/how-to-suppress-warnings-by-using-the-menu-item).  
-  
 REMARQUE]
 >  Dans la source de suppression n’est pas pris en charge pour les projets de site web.  
   

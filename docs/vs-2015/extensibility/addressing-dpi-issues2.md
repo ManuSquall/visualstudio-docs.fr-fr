@@ -1,7 +1,7 @@
 ---
 title: Adressage « Incidents2 » PPP | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3cb14cf601633efa6bbb022d8d1a56e62cc0f9b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e9d86204eb79eb0dd20db45d4ffe5c1f80c2e9dc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501434"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194055"
 ---
 # <a name="addressing-dpi-issues"></a>Résolution des problèmes DPI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [« Incidents2 » du paramètre PPP de l’adressage](https://docs.microsoft.com/visualstudio/extensibility/addressing-dpi-issues2).  
-  
 Un nombre croissant de périphériques fournies dans les écrans « haute résolution ». Ces écrans ont généralement plus de 200 pixels par pouce (PPP). Travailler avec une application sur ces ordinateurs nécessitera contenu mis à l’échelle pour répondre aux besoins de l’affichage du contenu à une distance de l’affichage normal pour l’appareil. À compter de 2014, la cible principale pour les écrans à haute densité est mobile computing appareils (tablettes, ordinateurs portables coque et téléphones).  
   
  Windows 8.1 et versions ultérieures contient plusieurs fonctionnalités pour activer ces ordinateurs travailler avec les environnements où l’ordinateur est attaché à la fois à haute densité et densité standard affiche en même temps et les affiche.  

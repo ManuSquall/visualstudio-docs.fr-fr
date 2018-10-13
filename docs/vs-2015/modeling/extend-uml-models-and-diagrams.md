@@ -1,7 +1,7 @@
 ---
 title: Étendre les modèles et diagrammes UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,19 +17,17 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d15da471e077e737bb7ba82d19d68f24f15db687
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fa0196000e2349f5f323d28138186b59ae07cfd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493080"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179125"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Étendre des diagrammes et des modèles UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [modèles et diagrammes UML étendre](https://docs.microsoft.com/visualstudio/modeling/extend-uml-models-and-diagrams).  
-  
-Cette rubrique résume les différentes manière d’étendre les outils de modélisation UML fournis avec Visual Studio. Pour connaître les versions de Visual Studio prennent en charge chaque outil et le type de modèle, consultez [versions prises en charge pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+Cette rubrique résume les différentes manière d’étendre les outils de modélisation UML fournis avec Visual Studio. Pour connaître les versions de Visual Studio qui prennent en charge chaque outil et type de modèle, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  Dans l’exemple de scénario suivant, Fabrikam conçoit et installe des systèmes de gestion de bagages pour les aéroports. D’un projet d’aéroport à un autre, il existe de nombreuses similitudes en termes d’équipement de base et de logiciel de contrôle. Toutefois, plusieurs facteurs peuvent également varier considérablement, comme la configuration des tapis roulants, des bureaux d’enregistrement, des emplacements de stockage et d’autres équipements de manutention de bagages.  
   

@@ -1,7 +1,7 @@
 ---
 title: 'DA0013 : Utilisation intensive de String.Split ou de String.Substring | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c8f835e120f730f9c223477959e9c93dfefa240
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 06e738444b2a8e3e888da406097e94fbc9e10a28
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506114"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198690"
 ---
 # <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013 : Utilisation intensive de String.Split/String.Substring
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [DA0013 : utilisation intensive de String.Split ou de String.Substring](https://docs.microsoft.com/visualstudio/profiling/da0013-high-usage-of-string-split-or-string-substring).  
-  
 Id de règle | DA0013 |  
 | Catégorie de |. Conseils d’utilisation de NET Framework |  
 | Méthodes de profilage | Échantillonnage |  

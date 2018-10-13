@@ -1,7 +1,7 @@
 ---
 title: 'DA0503 : Jeu de travail moyen en octets pour le processus en cours de profilage | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e71d7e630505d44392610ab5ba94c19b3928f7f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 75d27084ec0d086770db088db9708d5ea4608066
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501114"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181719"
 ---
 # <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503 : jeu de travail moyen, en octets, pour le processus en cours de profilage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [DA0503 : jeu de travail moyen en octets pour le processus profilé](https://docs.microsoft.com/visualstudio/profiling/da0503-average-working-set-in-bytes-for-the-process-being-profiled).  
-  
 Id de règle | DA0503 |  
 | Catégorie | Surveillance des ressources |  
 | Méthode de profilage | Tous les |  

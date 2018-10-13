@@ -1,7 +1,7 @@
 ---
 title: Modèles composites pour Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 445b4c8a54f93e9ff479b51e432ac3a6ff823c8a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9ca83b58de966a8ddc54252e61a8717b4213cdfe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493221"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182765"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Modèles composites pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [modèles composites pour Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/composite-patterns-for-visual-studio).  
-  
 Modèles composites combinent des éléments de conception et d’interaction dans des configurations distinctes. Les modèles composites plus importantes dans Visual Studio en matière de cohérence sont les suivantes :  
   
 -   [Visualisation des données](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_DataVisualization)  

@@ -1,7 +1,7 @@
 ---
 title: Mise en route avec le Service de langage et les Extensions de l’éditeur | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d2ca0b3a4c1128c316ca2967033752ab45799648
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b089794cc9135d8658a47d61d3d40c3feef7451a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502366"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227004"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Bien démarrer avec les extensions du service de langage et de l’éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [mise en route avec le Service de langage et les Extensions de l’éditeur](https://docs.microsoft.com/visualstudio/extensibility/getting-started-with-language-service-and-editor-extensions).  
-  
 Vous pouvez utiliser des extensions de l’éditeur pour ajouter des fonctionnalités de service de langage telles que le mode plan, correspondance des accolades, IntelliSense et des ampoules à votre propre langage de programmation ou à n’importe quel type de contenu. Vous pouvez également personnaliser l’apparence et le comportement de l’éditeur Visual Studio, par exemple le texte de coloration, marges, les ornements et les autres éléments visuels. Vous pouvez également définir votre propre type de contenu et spécifier l’apparence et le comportement des vues de texte dans lequel votre contenu s’affiche.  
   
  Pour commencer à écrire des extensions de l’éditeur, utilisez les modèles de projet d’éditeur qui sont installés dans le cadre du SDK Visual Studio. Le SDK Visual Studio est un ensemble téléchargeable d’outils qui facilitent le développement d’extensions Visual Studio, à l’aide de VSPackages ou à l’aide de Managed Extensibility Framework (MEF).  

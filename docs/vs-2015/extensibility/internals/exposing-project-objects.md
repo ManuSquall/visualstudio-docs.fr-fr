@@ -1,7 +1,7 @@
 ---
 title: Exposer des objets de projet | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 5bb24967-434a-4ef4-87a0-2f3250c9e22d
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5514589660df1850dc2f5d9fce3079f6769ec06e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a3cc9f3ffc7869506dc5ac46a715c9bd7b042a81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493036"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210794"
 ---
 # <a name="exposing-project-objects"></a>Exposition des objets de projet
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [exposer des objets de projet](https://docs.microsoft.com/visualstudio/extensibility/internals/exposing-project-objects).  
-  
 Les types de projet personnalisés peuvent fournir des objets automation afin d’autoriser l’accès au projet à l’aide des interfaces d’automatisation. Chaque type de projet est censé fournir la norme <xref:EnvDTE.Project> objet automation qui est accessible à partir de <xref:EnvDTE.Solution>, qui contient une collection de tous les projets qui sont ouverts dans l’IDE. Chaque élément dans le projet doit être exposé par un <xref:EnvDTE.ProjectItem> objet accédé avec <xref:EnvDTE.Project.ProjectItems>. Outre ces objets automation standard, les projets peuvent choisir de fournir des objets automation de projet spécifique.  
   
  Vous pouvez créer des personnalisés au niveau racine objets automation que vous pouvez accéder à liaison tardive à partir de l’objet DTE racine à l’aide `DTE.<customeObjectName>` ou `DTE.GetObject(“<customObjectName>”)`. Par exemple, Visual C++ crée la collection de projet spécifique à un projet C++ appelée « VCProjects » que vous pouvez accéder à l’aide de DTE. VCProjects ou DTE. Par exemple, DTE. Vous pouvez également créer un Project.Object, qui est unique pour le type de projet, Project.CodeModel, ce qui peut être interrogé pour son objet plus dérivé, ProjectItem, qui expose ProjectItem.Object et un ProjectItem.FileCodeModel.  

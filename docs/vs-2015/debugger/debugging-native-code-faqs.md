@@ -1,7 +1,7 @@
 ---
 title: Débogage de Code natif FAQ | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0bd53cece94724059f9e7f90daae766d261134ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e93ca53eb8e04241274e8b262be29cf651dd488a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507272"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228538"
 ---
 # <a name="debugging-native-code-faqs"></a>Forum Aux Questions sur le débogage du code natif
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [débogage natif FAQ de Code](https://docs.microsoft.com/visualstudio/debugger/debugging-native-code-faqs).  
-  
 Les rubriques suivantes contiennent des réponses à quelques questions fréquemment posées :  
   
 -   [Comment puis-je déboguer les Violations d’accès lorsque mon programme de façon autonome en cours d’exécution ?](../debugger/how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger-q.md)  

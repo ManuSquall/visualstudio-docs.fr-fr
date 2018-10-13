@@ -1,7 +1,7 @@
 ---
 title: Propriétés des formes géométriques | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 70424ef2b3ce091b1c1290db2c4962481c9f68ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a531dadba426bc04a788d7c75516afd581d1722f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508718"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178891"
 ---
 # <a name="properties-of-geometry-shapes"></a>Propriétés des formes de géométrie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [propriétés des formes géométriques](https://docs.microsoft.com/visualstudio/modeling/properties-of-geometry-shapes).  
-  
 Vous pouvez utiliser des formes géométriques pour spécifier comment les instances des classes de domaine sont affichées dans un langage spécifique à un domaine. Pour plus d’informations, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md). Pour plus d’informations sur l’utilisation de ces propriétés, consultez [personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
  Formes géométriques ont les propriétés qui sont répertoriées dans le tableau suivant.  

@@ -1,7 +1,7 @@
 ---
 title: 'DA0021 : Taux élevé de garbage collection Gen 1 | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c4e47b4db4f40223e577966532686c8b23081d0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f1db38b671fdea982ef950b458352b73ffff635c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506533"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181127"
 ---
 # <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021 : Taux élevé de garbage collection Gen 1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [DA0021 : taux élevé de garbage collection Gen 1](https://docs.microsoft.com/visualstudio/profiling/da0021-high-rate-of-gen-1-garbage-collections).  
-  
 Id de règle | DA0021 |  
 | Catégorie de |. Utilisation de NET Framework |  
 | Méthodes de profilage | Tous les |  

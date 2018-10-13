@@ -1,7 +1,7 @@
 ---
 title: Assistants | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1396837a0d9eee3b31a5e938a2305052d5cc2761
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2331c75b5e0d708d6a2d0fa1ab987cc869879cd2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507291"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224300"
 ---
 # <a name="wizards"></a>Assistants
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Assistants](https://docs.microsoft.com/visualstudio/extensibility/internals/wizards).  
-  
 Après avoir créé un Assistant, vous souhaiterez généralement ajouter à la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] développement environnement intégré (IDE) afin que d’autres peuvent l’utiliser. L’Assistant Ajout apparaît alors dans le **ajouter un nouveau projet** ou **ajouter un nouvel élément** boîtes de dialogue. Pour voir les **ajouter un nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue zones, cliquez sur une solution ouverte dans **l’Explorateur de solutions**, pointez sur **ajouter**, et puis cliquez sur **nouveau projet** ou **un nouvel élément**.  
   
  Assistants peuvent être implémentées dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pour permettre aux utilisateurs sélectionnez à partir d’une arborescence de valeurs disponibles lorsqu’ils ouvrent le **ajouter un nouveau projet** boîte de dialogue ou la **ajouter un nouvel élément** boîte de dialogue, ou quand ils droit un élément dans **l’Explorateur de solutions**.  
@@ -61,5 +59,5 @@ Après avoir créé un Assistant, vous souhaiterez généralement ajouter à la 
  Illustre comment créer un Assistant.  
   
  [Extension des projets](../../extensibility/extending-projects.md)  
- Décrit comment utiliser [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] projets et solutions possibles pour organiser les fichiers de code et les fichiers de ressources et comment implémenter le contrôle de code source.
+ Décrit comment utiliser des projets et des solutions [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pour organiser des fichiers de code et de ressources, et comment implémenter le contrôle de code source.
 

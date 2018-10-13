@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour définir les autorisations | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4bed698bd520255dd762aa223e3eb94a5d704e6f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 41641a0c5b24ea9492b2980fac998155b8ea5332
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506128"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187541"
 ---
 # <a name="how-to-set-permissions"></a>Guide pratique pour définir les autorisations
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : définir des autorisations](https://docs.microsoft.com/visualstudio/profiling/how-to-set-permissions).  
-  
 Cette rubrique indique comment l’administrateur d’un ordinateur accorde les autorisations de sécurité exigées pour le profilage à un utilisateur ou un groupe qui ne dispose pas des autorisations d’administrateur sur cet ordinateur.  
   
  Selon un principe de sécurité de base, les applications ne doivent pas s’exécuter avec plus d’autorisations que nécessaire. Ce principe s’applique également aux utilisateurs. Si les utilisateurs peuvent travailler de manière pleinement efficace quand ils se connectent en tant que membres du groupe Utilisateurs et non du groupe Administrateurs, ils ne doivent pas bénéficier d’autorisations d’administrateur. La première procédure, « Pour créer un compte d’utilisateur disposant d’autorisations utilisateurs », explique comment créer un compte d’utilisateur pour un membre du groupe Utilisateurs.  

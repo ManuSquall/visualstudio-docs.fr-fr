@@ -1,7 +1,7 @@
 ---
 title: Microsoft Help Viewer | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0ea278b49ba47c81f691d2a20f5ae9f7fa87e579
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a51372b48eb01f0ff424c6919b572646235039f4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500998"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194831"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Microsoft Help Viewer](https://docs.microsoft.com/visualstudio/ide/microsoft-help-viewer).  
-  
 Vous pouvez installer et afficher le contenu de divers produits et technologies sur votre ordinateur local à l’aide de Microsoft Help Viewer.  
   
 > [!WARNING]

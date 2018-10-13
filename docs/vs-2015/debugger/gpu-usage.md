@@ -1,7 +1,7 @@
 ---
 title: Utilisation du GPU | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a917f8c9b775a8dbd85554bd703aaa9e1ad10f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 082471c04bd8354e392a075f1ff559961cd402ea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501443"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194118"
 ---
 # <a name="gpu-usage"></a>Utilisation du GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [utilisation du GPU](https://docs.microsoft.com/visualstudio/profiling/gpu-usage).  
-  
 Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostics de Visual Studio pour mieux comprendre l'utilisation du matériel de pointe par votre application Direct3D. Vous pouvez l'utiliser pour déterminer si les performances de votre application sont liées à l'UC ou au GPU, et mieux comprendre comment tirer parti de la plateforme matérielle plus efficacement. L'outil Utilisation du GPU prend en charge les applications Direct3D 12, Direct3D 11 et Direct3D 10. Il ne prend pas en charge les autres API graphiques telles que Direct2D ou OpenGL.  
   
  Voici la fenêtre **Rapport d’utilisation du GPU** :  

@@ -1,7 +1,7 @@
 ---
 title: Extensions et mises à jour, Environnement, boîte de dialogue Options | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 48af71d66b21c8175841c56f7d94a927f6e1a5a1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b0b51d3b5f61a256a440673b9770f10efecb7b0e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493888"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181088"
 ---
 # <a name="extensions-and-updates-environment-options-dialog-box"></a>Extensions et mises à jour, Environnement, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Extensions et mises à jour, environnement, boîte de dialogue Options](https://docs.microsoft.com/visualstudio/ide/reference/extensions-and-updates-environment-options-dialog-box).  
-  
   
 Utilisez cette page pour définir les options selon lesquelles Visual Studio effectue les mises à jour, et comment les extensions sont mises à jour et découvertes.  
   

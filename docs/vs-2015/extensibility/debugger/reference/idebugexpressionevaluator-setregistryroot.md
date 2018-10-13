@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionEvaluator::SetRegistryRoot | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 790886d8-1975-4d3c-9a75-cd86c1faf4ca
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bb6b7bde8c0d4da316112828b495a414ba4f1fb0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 38661596f30ea8b534dda983e2ad7ed482fc2742
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492915"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178085"
 ---
 # <a name="idebugexpressionevaluatorsetregistryroot"></a>IDebugExpressionEvaluator::SetRegistryRoot
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDebugExpressionEvaluator::SetRegistryRoot](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugexpressionevaluator-setregistryroot).  
-  
 Cette méthode définit la racine du Registre. Utilisé pour le débogage côte à côte.  
   
 ## <a name="syntax"></a>Syntaxe  

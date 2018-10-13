@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::findFile | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2967e99d116b5de10d3b90869e9a68a88fb2120
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e6c5cfca23bcffd8e363e3b2850f3c9a4a01bd1f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505633"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208674"
 ---
 # <a name="idiasessionfindfile"></a>IDiaSession::findFile
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDiaSession::findFile](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findfile).  
-  
 Récupère les fichiers sources par compiland et le nom.  
   
 ## <a name="syntax"></a>Syntaxe  

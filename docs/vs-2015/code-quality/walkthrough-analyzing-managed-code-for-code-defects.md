@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : Analyse du Code managé pour les erreurs de Code | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9137e7319cd8cddfb54ab4b6a6929567b24bb6e5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c8bf9d1f293895c762348752b64c7be8cf6d510
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506492"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217477"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Procédure pas à pas : analyse du code managé pour les erreurs de code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : analyse du Code géré pour les erreurs de Code](https://docs.microsoft.com/visualstudio/code-quality/walkthrough-analyzing-managed-code-for-code-defects).  
-  
 Dans cette procédure pas à pas, vous analysez un projet managé pour détecter les erreurs de code à l’aide de l’outil d’analyse de code.  
   
  Cette procédure pas à pas vous guidera tout au long du processus d’utilisation de l’analyse du code pour analyser les assemblys de code managé .NET pour la conformité avec les instructions de conception de Microsoft .NET Framework.  

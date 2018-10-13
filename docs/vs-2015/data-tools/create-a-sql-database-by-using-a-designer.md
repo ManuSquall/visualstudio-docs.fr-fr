@@ -1,7 +1,7 @@
 ---
 title: Créer une base de données SQL à l’aide d’un concepteur | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 7a641edfbe1b584d324bffca3404a1f7cd3a72ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a1765c142fcf039b28b2e1c2e6ad1bf7038aaa9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492911"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220751"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Créer une base de données SQL à l’aide d’un concepteur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [créer une base de données SQL à l’aide d’un concepteur](https://docs.microsoft.com/visualstudio/data-tools/create-a-sql-database-by-using-a-designer).  
-  
   
 Vous pouvez explorer les tâches de base, telles que l’ajout de tables et définition des colonnes, à l’aide de Visual Studio pour créer et mettre à jour un fichier de base de données locale dans SQL Server Express LocalDB. Après avoir terminé cette procédure pas à pas, vous pouvez découvrir des fonctionnalités plus avancées en utilisant votre base de données locale comme point de départ d'autres procédures pas à pas qui en ont besoin.  
   

@@ -1,7 +1,7 @@
 ---
 title: Commande disponibilité | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: c74e3ccf-d771-48c8-a2f9-df323b166784
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9933975b005241e89444c47a96b80bf0e43bfbcb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bfaff5de68bd9d81b6cba6a03a4acec4ad1f0959
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516569"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182648"
 ---
 # <a name="command-availability"></a>Disponibilité de commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [disponibilité de la commande](https://docs.microsoft.com/visualstudio/extensibility/internals/command-availability).  
-  
 Le contexte de Visual Studio détermine les commandes qui sont disponibles. Le contexte peut changer selon le projet actuel, l’éditeur actuel, les VSPackages sont chargés et autres aspects de l’environnement de développement intégré (IDE).  
   
 ## <a name="command-contexts"></a>Contextes de commande  
