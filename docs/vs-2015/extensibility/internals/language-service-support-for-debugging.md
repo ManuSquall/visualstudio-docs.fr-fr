@@ -1,7 +1,7 @@
 ---
 title: Prise en charge du Service de langage pour le débogage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 7a44067f-a410-4a6a-84d2-bda5184140bc
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dae5b2200b9fa9bbc6381e9335bdbd8c6039626e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a568ef30a26ad198d839ddcde257fec3036cf3c5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501459"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173704"
 ---
 # <a name="language-service-support-for-debugging"></a>Prise en charge du service de langage pour le débogage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [prise en charge du Service de langage pour le débogage](https://docs.microsoft.com/visualstudio/extensibility/internals/language-service-support-for-debugging).  
-  
 Un service de langage peut fournir des fonctionnalités qui prennent en charge d’un débogueur via le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo> interface. Ces fonctionnalités incluent la validation des points d’arrêt et en fournissant une liste d’expressions pour les **automatique** fenêtre.  
   
  Toutefois, vous devez disposer d’un évaluateur d’expression pour déboguer votre langue. L’évaluateur d’expression est chargée d’évaluer des expressions afin de générer des valeurs pendant le débogage. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez :  

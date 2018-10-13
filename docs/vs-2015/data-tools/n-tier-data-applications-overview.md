@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble des Applications de données multicouches | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 761002eb9e46ec0e344c653affbebb10b3922466
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 912752c39d8180f7f3cd5dc0cca719e39e39a0e8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501816"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171962"
 ---
 # <a name="n-tier-data-applications-overview"></a>Vue d'ensemble des applications de données multicouches
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [vue d’ensemble des Applications de données multicouches](https://docs.microsoft.com/visualstudio/data-tools/n-tier-data-applications-overview).  
-  
   
 N-* de couche données qui sont des données applications sont divisées en plusieurs *niveaux*. Également appelées « applications distribuées » et « applications à plusieurs niveaux », avec applications multicouches séparent le traitement en couches discrètes qui sont distribuées entre le client et le serveur. Lorsque vous développez des applications qui accèdent aux données, vous devez avoir une séparation claire entre les différentes couches qui composent l’application.  
   

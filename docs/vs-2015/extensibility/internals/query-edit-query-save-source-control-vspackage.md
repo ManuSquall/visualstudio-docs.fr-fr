@@ -1,7 +1,7 @@
 ---
 title: Modifier la requête d’enregistrement (VSPackage de contrôle de code Source) de requête | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: c360d2ad-fe42-4d65-899d-d1588cc8a322
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8d1ab375ff40d141a0c40740a0052674ec13ef11
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 612bd94ba360f496c08ea25fd1a45e15c88edb6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508493"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172391"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>Modifier la requête Enregistrer la requête (VSPackage de contrôle de code source)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [modifier les requêtes d’enregistrement des requêtes (VSPackage de contrôle de code Source)](https://docs.microsoft.com/visualstudio/extensibility/internals/query-edit-query-save-source-control-vspackage).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] les éditeurs peuvent diffuse les événements de requête modifier requête enregistrer (QEQS). [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Stub de contrôle source implémente le service QEQS, afin qu’il soit le destinataire d’événements QEQS. Ces événements sont alors délégués pour le VSPackage de contrôle source actuellement active. Le contrôle de source active VSPackage implémente la <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> et ses méthodes. Les méthodes de la `IVsQueryEditQuerySave2` interface sont généralement appelées immédiatement avant la modification d’un document pour la première fois et immédiatement avant l’enregistrée d’un document.  
   
 ## <a name="queryeditquerysave-events"></a>Événements de QueryEditQuerySave  

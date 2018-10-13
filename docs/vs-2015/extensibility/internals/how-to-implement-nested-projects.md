@@ -1,7 +1,7 @@
 ---
 title: 'Comment : implémenter des projets imbriqués | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 860f231771db2385afa830a97749286f128e77f0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3892d02e39eb29039f815df5ff9174ce39415a81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493388"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173574"
 ---
 # <a name="how-to-implement-nested-projects"></a>Comment : implémenter des projets imbriqués
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : implémenter les projets imbriqués](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-implement-nested-projects).  
-  
 Lorsque vous créez un type de projet imbriqué il sont un plusieurs étapes supplémentaires qui doivent être implémenté. Un projet parent prend en charge certaines responsabilités de mêmes que la solution dispose de ses projets imbriqués (enfants). Le projet parent est un conteneur de projets similaires à une solution. En particulier, il existe plusieurs événements qui doivent être déclenchés par la solution et par les projets parent pour générer la hiérarchie de projets imbriqués. Ces événements sont décrits dans le processus suivant pour la création de projets imbriqués.  
   
 ### <a name="to-create-nested-projects"></a>Pour créer des projets imbriqués  
