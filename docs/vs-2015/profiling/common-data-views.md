@@ -1,7 +1,7 @@
 ---
 title: Vues de données communes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,31 +17,29 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1253d6ca6a2dc80c1d8875e729f532944038b1b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4bcd83f3be97400b3b6f52646732d7a82ddd2849
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495171"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255877"
 ---
 # <a name="common-data-views"></a>Vues de données communes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [vues de données communes](https://docs.microsoft.com/visualstudio/profiling/common-data-views).  
-  
 Cette section contient des informations de référence sur les vues et les rapports des fichiers de données du profileur qui sont communs à toutes les méthodes de profilage.  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Vue Résumé](../profiling/summary-view.md)  
+ [Mode Résumé](../profiling/summary-view.md)  
  Décrit la vue et le rapport Résumé. Les colonnes de données qui s’affichent dépendent de la méthode de profilage.  
   
  [Vue Appelant/Appelé](../profiling/caller-callee-view.md)  
  Décrit la vue et le rapport de l’arborescence des appels. Les colonnes de données qui s’affichent dépendent de la méthode de profilage.  
   
- [Vue Arborescence des appels](../profiling/call-tree-view.md)  
+ [Mode Arborescence des appels](../profiling/call-tree-view.md)  
  Décrit la vue et le rapport de l’arborescence des appels. Les colonnes de données qui s’affichent dépendent de la méthode de profilage.  
   
- [Vue Modules](../profiling/modules-view.md)  
+ [Modules, mode](../profiling/modules-view.md)  
  Décrit la vue et le rapport Modules. Les colonnes de données qui s’affichent dépendent de la méthode de profilage.  
   
  [Vue Fonctions](../profiling/functions-view.md)  

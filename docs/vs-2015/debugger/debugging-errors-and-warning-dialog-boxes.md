@@ -1,7 +1,7 @@
 ---
 title: Erreurs de débogage et de boîtes de dialogue d’avertissement | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef599f3d786618339ac695b182a4efb5682035d1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 225cd9e209d3fd513d4991e5c20bfc4a6a07e9d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493687"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216660"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Erreur et avertissement, boîtes de dialogue pour le débogage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [erreurs de débogage et les boîtes de dialogue d’avertissement](https://docs.microsoft.com/visualstudio/debugger/debugging-errors-and-warning-dialog-boxes).  
-  
 Vous trouverez ci-après la liste des boîtes de dialogue d'erreur et d'avertissement que vous pouvez rencontrer lors du débogage de votre application.  
   
 ## <a name="in-this-section"></a>Dans cette section  

@@ -1,7 +1,7 @@
 ---
 title: Inscrivez une fenêtre outil | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 8c8c4a24-3da4-497b-9db2-0ddd7cfbfdd2
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a2ec947455383fd1d2a22ec98f8627ee53fbbad5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 14dc8020247214ef812a93cb4518e5dfeeb502d1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505636"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213575"
 ---
 # <a name="registering-a-tool-window"></a>Enregistrement d’une fenêtre d’outil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [l’inscription d’une fenêtre outil](https://docs.microsoft.com/visualstudio/extensibility/registering-a-tool-window).  
-  
 Vous pouvez inscrire vos fenêtres Outil à l’aide de <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> et  <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>  
   
 ## <a name="example"></a>Exemple  

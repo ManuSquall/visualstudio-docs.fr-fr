@@ -1,7 +1,7 @@
 ---
 title: Valider votre modèle UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 42e0733668a1f96dc1881d4d4d58a575eeb9eb64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 470eadf92fa76e294ee92899a8c92cb1391a9b58
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496346"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292693"
 ---
 # <a name="validate-your-uml-model"></a>Valider votre modèle UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [valider votre modèle UML](https://docs.microsoft.com/visualstudio/modeling/validate-your-uml-model).  
-  
 Certains des modèles UML que vous pouvez dessiner dans Visual Studio peuvent être considérés comme non valides dans votre projet. Par exemple, vous pouvez demander qu'un cas d'usage soit toujours lié à un diagramme de séquence comportant des lignes de vie qui représentent les acteurs du cas d'usage. Vous pouvez installer ou définir *contraintes* qui aide votre équipe à se conformer à des spécifications telles que celle-ci. Les contraintes peuvent être appliquées quand l'utilisateur enregistre ou ouvre un modèle, et appelées par une commande de menu.  
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] n'est pas fourni avec des contraintes, car celles-ci dépendent de la façon dont votre équipe interprète et utilise les modèles UML. Toutefois, vous pouvez définir vos propres contraintes et installer des contraintes définies par d'autres utilisateurs. Pour savoir comment définir des contraintes et de les regrouper pour la distribution, consultez [définir des contraintes de validation pour les modèles UML](../modeling/define-validation-constraints-for-uml-models.md).  

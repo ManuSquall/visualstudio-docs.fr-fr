@@ -1,7 +1,7 @@
 ---
 title: Nœuds de paramètre | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bed941a35af21b78ea5159a218ccd36d2ff5f1e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb15b19ebdef04facdb66d4b97042bb47e4cb5fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516778"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276288"
 ---
 # <a name="parameter-nodes"></a>Nœuds de paramètre
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [les nœuds de paramètre](https://docs.microsoft.com/visualstudio/designers/parameter-nodes).  
-  
 Dans le concepteur de nuanceur, les nœuds de paramètre représentent les entrées dans le nuanceur qui sont sous le contrôle de l’application dessin par dessin, par exemple, les propriétés de matériau, les lumières directionnelles et la position de la caméra. Comme vous pouvez modifier ces paramètres à chaque appel de dessin, vous pouvez utiliser le même nuanceur pour attribuer différentes apparences à un objet.  
   
 ## <a name="parameter-node-reference"></a>Informations de référence des nœuds de paramètre  

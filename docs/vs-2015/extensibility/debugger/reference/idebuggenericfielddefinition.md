@@ -1,7 +1,7 @@
 ---
 title: IDebugGenericFieldDefinition | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: b5a853b7-221e-4d62-8948-07423089d75d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ff8e44a7963aab80a1f2947fe9a34532a0b7e725
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ee253ac5f51e71e1fc58d41fe44a6b76473722c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506569"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289652"
 ---
 # <a name="idebuggenericfielddefinition"></a>IDebugGenericFieldDefinition
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDebugGenericFieldDefinition](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebuggenericfielddefinition).  
-  
 Représente la définition d’un champ pour un type générique du code managé.  
   
 ## <a name="syntax"></a>Syntaxe  

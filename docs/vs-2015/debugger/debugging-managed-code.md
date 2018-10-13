@@ -1,7 +1,7 @@
 ---
 title: Débogage du Code managé | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: efa999fabc0d27900900c6d1512cca3fde76043d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ba07591cf4682ef40579f58b290f6b26bb4c111
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508344"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211586"
 ---
 # <a name="debugging-managed-code"></a>Débogage du code managé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Debugging Managed Code](https://docs.microsoft.com/visualstudio/debugger/debugging-managed-code).  
-  
 Cette section décrit les problèmes de débogage courants et les techniques destinées aux applications managées ou aux applications écrites dans des langages qui ciblent le Common Language Runtime, tels que Visual Basic, C# et C++. Les techniques présentées ici sont d'un niveau élevé. Pour plus d’informations, consultez [l’utilisation du débogueur](../debugger/debugger-basics.md).  
   
 ## <a name="in-this-section"></a>Dans cette section  
@@ -45,7 +43,7 @@ Cette section décrit les problèmes de débogage courants et les techniques des
  Décrit le <xref:System.Diagnostics.Debug> et <xref:System.Diagnostics.Trace> classes, avec lequel vous pouvez écrire des messages d’exécution pour le **sortie** fenêtre. Ces classes contiennent des méthodes de sortie qui permettent la génération d'informations sans interrompre l'exécution et la génération d'informations avec interruption de l'exécution si une condition spécifique échoue.  
   
  [Assertions dans du code managé](../debugger/assertions-in-managed-code.md)  
- Décrit des assertions en code managé, qui testent les conditions que vous spécifiez comme arguments aux méthodes `Assert`. De plus, cette rubrique fournit des exemples de code, des informations sur l'utilisation des méthodes de classe  <xref:System.Diagnostics.Debug> et <xref:System.Diagnostics.Trace>, des considérations des versions Debug et Release de code, les effets secondaires, les arguments assert, la personnalisation du comportement d'assertion et les fichiers de configuration.  
+ Décrit des assertions en code managé, qui testent les conditions que vous spécifiez comme arguments aux méthodes `Assert`. De plus, cette rubrique fournit des exemples de code, des informations sur l’utilisation des méthodes de classe <xref:System.Diagnostics.Debug> et <xref:System.Diagnostics.Trace>, des considérations des versions Debug et Release de code, les effets secondaires, les arguments assert, la personnalisation du comportement d’assertion et les fichiers de configuration.  
   
  [Instructions Stop en Visual Basic](../debugger/stop-statements-in-visual-basic.md)  
  Décrit l'instruction `Stop`, qui propose une alternative à la définition d'un point d'arrêt. Un exemple de code, ainsi que les comparaisons entre les instructions `Stop` et `End` et les instructions `Stop` et `Assert` sont également fournis.  
@@ -56,7 +54,7 @@ Cette section décrit les problèmes de débogage courants et les techniques des
  [Débogage de la méthode OnStart](../debugger/how-to-debug-the-onstart-method.md)  
  Fournit des exemples de code pour vous permettre de déboguer la méthode `OnStart` d'un service Windows managé. Pour déboguer la méthode `OnStart` d'un service Windows, vous devez ajouter quelques lignes de code pour simuler le service.  
   
- [Le débogage en Mode mixte](../debugger/debugging-mixed-mode-applications.md)  
+ [Mixed-Mode Debugging](../debugger/debugging-mixed-mode-applications.md)  
  Présente les applications de débogage en mode mixte. Désigne toutes les applications qui combinent du code natif avec du code managé.  
   
  [Erreur : le débogage est impossible, car un débogueur du noyau est activé sur le système](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
@@ -78,7 +76,7 @@ Cette section décrit les problèmes de débogage courants et les techniques des
  [Suivi et instrumentation d’applications](http://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)  
  Décrit le traçage, qui vous permet de contrôler l'exécution de votre application lorsque celle-ci s'exécute, et l'instrumentation, qui implique de placer des instructions de traçage à des endroits stratégiques de votre code. Cette rubrique fournit également des liens vers une introduction à l'instrumentation et au traçage, aux commutateurs de trace, aux écouteurs de la trace, au code de traçage dans une application, à l'ajout d'instructions de traçage au code d'une application et à la compilation conditionnelle avec <xref:System.Diagnostics.Debug> et <xref:System.Diagnostics.Trace>.  
   
- [/ ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)  
+ [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)  
  Décrit une option de l’éditeur de liens qui ajoute <xref:System.Diagnostics.DebuggableAttribute> au code écrit avec C++. Cet attribut est nécessaire pour utiliser les fonctionnalités de débogage telles que l’attachement avec C++.  
   
  [Débogage des Applications Service Windows](http://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2)  
@@ -91,7 +89,7 @@ Cette section décrit les problèmes de débogage courants et les techniques des
  Décrit les problèmes et techniques de débogage courants relatifs au débogage de scripts et d'applications Web.  
   
  [Nouveautés du débogueur dans Visual Studio 2015](../debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md)  
- Description des nouvelles fonctionnalités de débogage ajoutées à cette version de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+ Description des nouvelles fonctionnalités de débogage ajoutées à cette mise en production de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  [Page d’accueil de débogage](../debugger/debugging-in-visual-studio.md)  
  Fournit des liens vers des sections plus vastes de la documentation relative au débogage. Les informations présentées sont les suivantes : nouveautés du débogueur, paramètres et préparation, points d'arrêt, gestion des exceptions, fonctionnalité Modifier & Continuer, débogage de code managé, débogage de projets Visual C++, débogage COM et ActiveX, débogage de DLL, débogage SQL et les références relatives à l'interface utilisateur.  

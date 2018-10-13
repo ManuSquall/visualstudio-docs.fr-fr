@@ -1,7 +1,7 @@
 ---
 title: 'CA1036 : Substituer les méthodes sur les types comparable | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 906ee4c3e5300f04b5627c7b3aa19ba7950f3239
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 1069316d0a027678b1161a948765bb81f1de68de
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588111"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202824"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036 : Substituer les méthodes sur les types Comparable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Vous trouverez la dernière version de cette rubrique dans [CA1036 : substituer les méthodes sur les types comparables](https://docs.microsoft.com/visualstudio/code-quality/ca1036-override-methods-on-comparable-types).
-
 |||
 |-|-|
 |TypeName|OverrideMethodsOnComparableTypes|

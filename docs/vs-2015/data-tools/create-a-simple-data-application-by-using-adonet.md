@@ -1,7 +1,7 @@
 ---
 title: Créer une application de données simple à l’aide d’ADO.NET | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e9ba21aa4cf5d2f11ba7aa24f095acaaea13924
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7a38d92aa43056b3824b4d583ccd93f255b1439f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503491"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204306"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Créer une application de données simple à l’aide d’ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [créer une application de données simple à l’aide d’ADO.NET](https://docs.microsoft.com/visualstudio/data-tools/create-a-simple-data-application-by-using-adonet).  
-  
   
 Quand vous créez une application qui manipule les données d’une base de données, vous effectuez des tâches élémentaires, comme définir les chaînes de connexion, insérer les données et exécuter les procédures stockées. En suivant cette rubrique, vous pouvez découvrir comment interagir avec une base de données à partir d’une application de « formulaires de données » de Windows Forms simple à l’aide de Visual c# ou Visual Basic et ADO.NET.  Toutes les technologies de données .NET, y compris les datasets, LINQ to SQL et Entity Framework — finalement les étapes qui sont très similaires à celles présentées dans cet article.  
   
@@ -221,7 +219,7 @@ Quand vous créez une application qui manipule les données d’une base de donn
   
     |Commentaire|Description|  
     |-------------|-----------------|  
-    |Util-1|Ajouter le `System.Configuration` espace de noms.|  
+    |Util-1|Ajouter l’espace de noms `System.Configuration`|  
     |Util-2|Définissez une variable `returnValue` et initialisez-la sur `null` (C#) ou `Nothing` (Visual Basic).|  
     |Util-3|Même si vous avez entré `connString` comme nom de la chaîne de connexion dans le **propriétés** fenêtre, vous devez spécifier `"SimpleDataApp.Properties.Settings.connString"` (c#) ou `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) dans le code.|  
   

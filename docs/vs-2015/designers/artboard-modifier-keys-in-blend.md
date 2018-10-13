@@ -1,7 +1,7 @@
 ---
 title: Touches de modification de la planche graphique dans Blend | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cc6939a0c9630dfde3fa482606afc72f7d6bba12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a730ec3c50880087d9200d5c7003e7b3cb631bca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507445"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278185"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Touches de modification de la planche graphique dans Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [touches de modification de planche graphique dans Blend](https://docs.microsoft.com/visualstudio/designers/artboard-modifier-keys-in-blend).  
-  
 Certains raccourcis clavier ne sont pas associés à des éléments de menu et il est donc impossible d'utiliser l'interface utilisateur [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] pour les découvrir. Le tableau suivant répertorie les raccourcis qui modifient une action, par exemple le redimensionnement d’un objet.  
   
 |Pour|Procédez comme suit|  

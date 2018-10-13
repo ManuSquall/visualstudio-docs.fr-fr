@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : utilisation de MSBuild | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3dc173f438af65d6952d0d5df8adecd56530c801
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9d5970c7612e38b33e1f25d8e19b63a1042a9b6b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516477"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266693"
 ---
 # <a name="walkthrough-using-msbuild"></a>Procédures pas à pas : utilisation de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : utilisation de MSBuild](https://docs.microsoft.com/visualstudio/msbuild/walkthrough-using-msbuild).  
-  
   
 MSBuild est la plateforme de génération pour Microsoft et Visual Studio. Cette procédure pas à pas vous présente les blocs de construction de MSBuild, et vous indique comment écrire, manipuler et déboguer des projets MSBuild. Vous allez découvrir comment :  
   
@@ -48,7 +46,7 @@ MSBuild est la plateforme de génération pour Microsoft et Visual Studio. Cett
   
 2.  Dans le menu **Fichier** , pointez sur **Nouveau**, puis cliquez sur **Projet**.  
   
-3.  Dans la boîte de dialogue **Nouveau projet**, sélectionnez le type de projet Visual C#, puis le modèle **Application Windows Forms**. Dans la zone **Nom**, tapez `BuildApp`. Entrez un **Emplacement** pour la solution, par exemple, `D:\`. Acceptez les valeurs par défaut des options **Créer le répertoire pour la solution** (sélectionnée), **Ajouter au contrôle de code source** (non sélectionnée) et **Nom de la solution** (`BuildApp`).  
+3.  Dans la boîte de dialogue **Nouveau projet**, sélectionnez le type de projet Visual C#, puis le modèle **Application Windows Forms**. Dans la zone **Nom** , tapez `BuildApp`. Entrez un **Emplacement** pour la solution, par exemple, `D:\`. Acceptez les valeurs par défaut des options **Créer le répertoire pour la solution** (sélectionnée), **Ajouter au contrôle de code source** (non sélectionnée) et **Nom de la solution** (`BuildApp`).  
   
      Cliquez sur **OK** pour créer le fichier projet.  
   

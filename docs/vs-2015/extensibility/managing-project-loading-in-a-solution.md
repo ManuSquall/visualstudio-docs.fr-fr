@@ -1,7 +1,7 @@
 ---
 title: La gestion du chargement de projet dans une Solution | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dab040cc22375244d0a091eeb63d8ad011c3b12f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 465adc1c7804582767415c3e9e5311c2379c7b8b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494885"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281383"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Gestion du chargement de projet dans une solution
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [la gestion du chargement de projet dans une Solution](https://docs.microsoft.com/visualstudio/extensibility/managing-project-loading-in-a-solution).  
-  
 Solutions Visual Studio peuvent contenir un grand nombre de projets. Le comportement de Visual Studio par défaut est de charger tous les projets dans une solution au moment de que l’ouverture de la solution et non à autoriser l’utilisateur à accéder à tous les projets jusqu'à la fin du chargement de tous les. Lorsque le processus de chargement de projet dure plus de deux minutes, une barre de progression s’affiche, indiquant le nombre de projets chargés et le nombre total de projets. L’utilisateur peut décharger les projets tout en travaillant dans une solution avec plusieurs projets, mais cette procédure présente certains inconvénients : les projets déchargés ne sont pas générés dans le cadre d’une commande de régénérer la Solution, et les descriptions IntelliSense des types et membres de fermeture projets ne sont pas affichés.  
   
  Les développeurs peuvent réduire les temps de chargement de solution et gérer le comportement de chargement en créant un chargement de solution Gestionnaire de projet. Le Gestionnaire de chargement de solution peut définir l’autre projet, le chargement des priorités pour les projets spécifiques ou des types de projets, assurez-vous que les projets sont chargés avant de démarrer une build en arrière-plan, retarder le chargement d’en arrière-plan jusqu'à ce que les autres tâches en arrière-plan sont terminées et effectuer autres tâches de gestion de charge de projet.  

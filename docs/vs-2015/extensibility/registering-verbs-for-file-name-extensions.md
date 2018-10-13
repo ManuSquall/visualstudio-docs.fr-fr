@@ -1,7 +1,7 @@
 ---
 title: Inscription des verbes pour les Extensions de nom de fichier | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b6c42b1682c7f599513b9894646b30dee029740e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 73555abcc1a3c6afebf6528cc493e62a403ad00a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507974"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196321"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Inscription des verbes pour les extensions de nom de fichier
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [l’inscription des verbes pour les Extensions de nom de fichier](https://docs.microsoft.com/visualstudio/extensibility/registering-verbs-for-file-name-extensions).  
-  
 L’association d’une extension de nom de fichier avec une application a généralement une action par défaut qui se produit lorsqu’un utilisateur double-clique sur un fichier. Cette action est liée à un verbe, par exemple ouvrir, qui correspond à l’action de préférence.  
   
  Vous pouvez inscrire les verbes qui sont associés à un identificateur programmatique (ProgID) d’une extension à l’aide de la clé de l’interpréteur de commandes située à HKEY_CLASSES_ROOT\\*progid*\shell. Pour plus d’informations, consultez [Types de fichiers](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  

@@ -1,7 +1,7 @@
 ---
 title: Le processus de Transformation de modèle de texte | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c7b39517e5e4c88bbefe6bf378e1dffd3c233872
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 146d391cc843291b79dc34af29851cfed4c80a46
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505908"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203773"
 ---
 # <a name="the-text-template-transformation-process"></a>Processus de transformation du modèle de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [le processus de Transformation de modèle de texte](https://docs.microsoft.com/visualstudio/modeling/the-text-template-transformation-process).  
-  
 Le processus de transformation de modèle de texte prend un fichier de modèle de texte comme entrée et génère un nouveau fichier texte comme sortie. Par exemple, vous pouvez utiliser des modèles de texte pour générer du code Visual Basic ou c#, ou vous pouvez générer un rapport HTML.  
   
  Trois composants prennent part à ce processus : le moteur, l’hôte et les processeurs de directive. Le moteur contrôle le processus ; Il interagit avec l’hôte et le processeur de directive pour produire le fichier de sortie. L’hôte fournit toutes les interactions avec l’environnement, comme la localisation des fichiers et les assemblys. Le processeur de directive ajoute des fonctionnalités, telles que la lecture des données à partir d’un fichier XML ou une base de données.  

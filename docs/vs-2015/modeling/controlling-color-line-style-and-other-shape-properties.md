@@ -1,7 +1,7 @@
 ---
 title: Contrôle la couleur, Style de ligne et autres propriétés des formes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1722a3f8a5ff05589cfad987fff6448d44e96ec8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b5694e81721bcc16b13c1857a07072fcaef00a08
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493419"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285478"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Contrôle de la couleur, du style de ligne et d'autres propriétés des formes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [contrôle la couleur, Style de ligne et d’autres propriétés de la forme](https://docs.microsoft.com/visualstudio/modeling/controlling-color-line-style-and-other-shape-properties).  
-  
 Certaines propriétés de la forme telles que la couleur peut être « exposée – », autrement dit, lié à une propriété de domaine de la forme. Les autres ont à être directement contrôlée.  
   
 ## <a name="exposing-a-property"></a>Exposer une propriété  

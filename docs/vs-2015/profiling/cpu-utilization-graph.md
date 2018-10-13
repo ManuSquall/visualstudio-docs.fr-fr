@@ -1,7 +1,7 @@
 ---
 title: Graphique d’utilisation du processeur | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: defa2f16a18c97a10f74e8d351152442ccc0907f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fc7dace6156cbb0909c2a54294a82f848fcb5b5e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501629"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292219"
 ---
 # <a name="cpu-utilization-graph"></a>Graphique d’utilisation du processeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [graphique d’utilisation du processeur](https://docs.microsoft.com/visualstudio/profiling/cpu-utilization-graph).  
-  
 Le graphique d’utilisation du processeur affiche le niveau d’utilisation d’une application dans le temps. L’axe des abscisses représente la durée du suivi et l’axe des ordonnées représente le nombre de cœurs logiques sur le système. Le graphique n’affiche pas les cœurs qui sont actifs à un moment donné. Par exemple, si deux cœurs s’exécutent chacun à 50 % de leur capacité pendant une période donnée, cette vue ne montre qu’un seul cœur logique en cours d’utilisation.  
   
 ## <a name="cpu-utilization-graph-colors"></a>Couleurs du graphique d’utilisation du processeur  

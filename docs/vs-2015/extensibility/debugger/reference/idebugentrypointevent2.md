@@ -1,7 +1,7 @@
 ---
 title: IDebugEntryPointEvent2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a15d1cc3-97b7-438c-8d24-c23149708f42
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c823ef8266f54a9d97bf9311083d77ae170f067
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8a3b7c05b8898971d43520b7138e5b7c4e146b7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508288"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284282"
 ---
 # <a name="idebugentrypointevent2"></a>IDebugEntryPointEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDebugEntryPointEvent2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugentrypointevent2).  
-  
 Le moteur de débogage (dé) envoie cette interface pour le Gestionnaire de session de débogage (SDM) lorsque le programme est prêt à exécuter sa première instruction du code utilisateur.  
   
 ## <a name="syntax"></a>Syntaxe  

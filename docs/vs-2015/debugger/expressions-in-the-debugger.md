@@ -1,14 +1,14 @@
 ---
 title: Expressions dans le débogueur | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
 dev_langs:
@@ -32,18 +32,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4b8350356b82b6d2cefc3fda725d90dccea75e55
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d02d36e29f823db424c32cf40d036d498282da7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493719"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289326"
 ---
 # <a name="expressions-in-the-debugger"></a>Expressions dans le débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Expressions dans le débogueur](https://docs.microsoft.com/visualstudio/debugger/expressions-in-the-debugger).  
-  
 Le débogueur Visual Studio inclut des évaluateurs d’expression qui fonctionnent lorsque vous entrez une expression dans la boîte de dialogue **Espion express** , la fenêtre **Espion** ou la fenêtre **Exécution** . Les évaluateurs d’expression travaillent également dans la fenêtre **Points d’arrêt** et à beaucoup d’autres emplacements du débogueur.  
   
  Les sections suivantes fournissent plus d’informations sur les expressions dans différents langages.  
@@ -138,7 +136,7 @@ int main()
 ## <a name="c---unsupported-expressions"></a>Expressions non prises en charge en C#  
   
 ### <a name="dynamic-objects"></a>Objets dynamiques  
- Vous pouvez utiliser des variables dans les expressions du débogueur qui sont typées statiquement comme dynamiques. Lorsque des objets qui implémentent le <xref:System.Dynamic.IDynamicMetaObjectProvider> sont évalués dans la fenêtre Espion, un nœud Affichage dynamique est ajouté. Le nœud Affichage dynamique affiche les membres de l’objet, mais n’autorise pas la modification des valeurs des membres.  
+ Vous pouvez utiliser des variables dans les expressions du débogueur qui sont typées statiquement comme dynamiques. Quand des objets qui implémentent l’interface <xref:System.Dynamic.IDynamicMetaObjectProvider> sont évalués dans la fenêtre Espion, un nœud Affichage dynamique est ajouté. Le nœud Affichage dynamique affiche les membres de l’objet, mais n’autorise pas la modification des valeurs des membres.  
   
  Les fonctionnalités suivantes des objets dynamiques ne sont pas prises en charge :  
   
@@ -162,7 +160,7 @@ int main()
 ## <a name="visual-basic---unsupported-expressions"></a>Expressions non prises en charge en Visual Basic  
   
 ### <a name="dynamic-objects"></a>Objets dynamiques  
- Vous pouvez utiliser des variables dans les expressions du débogueur qui sont typées statiquement comme dynamiques. Lorsque des objets qui implémentent le <xref:System.Dynamic.IDynamicMetaObjectProvider> sont évalués dans la fenêtre Espion, un nœud Affichage dynamique est ajouté. Le nœud Affichage dynamique affiche les membres de l’objet, mais n’autorise pas la modification des valeurs des membres.  
+ Vous pouvez utiliser des variables dans les expressions du débogueur qui sont typées statiquement comme dynamiques. Quand des objets qui implémentent l’interface <xref:System.Dynamic.IDynamicMetaObjectProvider> sont évalués dans la fenêtre Espion, un nœud Affichage dynamique est ajouté. Le nœud Affichage dynamique affiche les membres de l’objet, mais n’autorise pas la modification des valeurs des membres.  
   
  Les fonctionnalités suivantes des objets dynamiques ne sont pas prises en charge :  
   
@@ -223,7 +221,7 @@ int main()
   
 ## <a name="see-also"></a>Voir aussi  
  [Spécificateurs de format en C++](../debugger/format-specifiers-in-cpp.md)   
- [Opérateur de contexte (C++)](../debugger/context-operator-cpp.md)   
+ [Context Operator (C++)](../debugger/context-operator-cpp.md)   
  [Spécificateurs de format en c#](../debugger/format-specifiers-in-csharp.md)   
  [Pseudo-variables](../debugger/pseudovariables.md)
 

@@ -1,7 +1,7 @@
 ---
 title: IDebugBoundBreakpoint2::SetHitCount | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 8145d875-26b1-4049-a2a2-e7d3d7f4735f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 423b36f2839aa6a6e2a2336d16a3088a8a1af851
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed811e61517c8d78306852728e9af653b1f47232
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507546"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286648"
 ---
 # <a name="idebugboundbreakpoint2sethitcount"></a>IDebugBoundBreakpoint2::SetHitCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDebugBoundBreakpoint2::SetHitCount](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugboundbreakpoint2-sethitcount).  
-  
 Définit le nombre d’accès pour le point d’arrêt lié.  
   
 ## <a name="syntax"></a>Syntaxe  

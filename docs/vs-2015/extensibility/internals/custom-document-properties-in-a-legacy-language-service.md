@@ -1,7 +1,7 @@
 ---
 title: Propriétés de Document personnalisées dans un Service de langage hérité | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: cc714a67-b33e-4440-9203-3c90f648bd9c
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f6e29fe0831385456a36f6d3519c28f5adf1006a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 139c5b92d8dd9198e518c50b45531138e5cbc06b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495951"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194855"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Propriétés de document personnalisé dans un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [des propriétés de Document personnalisées dans un Service de langage hérité](https://docs.microsoft.com/visualstudio/extensibility/internals/custom-document-properties-in-a-legacy-language-service).  
-  
 Propriétés de document peuvent être affichées dans le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **propriétés** fenêtre. Langages de programmation ne disposent généralement pas de propriétés associées aux fichiers sources individuels. Toutefois, XML prend en charge les propriétés de document qui affectent l’encodage, schéma et la feuille de style.  
   
 ## <a name="discussion"></a>Discussion  

@@ -1,7 +1,7 @@
 ---
 title: L’inscription d’un Type de projet | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 336658e0a216f7fc24435715bf978ce5badefe5c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 30956d812aa2ece166231d6ae7580b226025e308
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508280"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271776"
 ---
 # <a name="registering-a-project-type"></a>Inscription d’un type de projet
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [l’inscription d’un Type de projet](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-a-project-type).  
-  
 Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de Registre qui permettent [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] à reconnaître et à travailler avec votre type de projet. En règle générale, vous créez ces entrées de Registre à l’aide d’un fichier de script (d’inscription.rgs) du Registre.  
   
  Dans l’exemple ci-dessous, les instructions à partir du Registre fournissent des chemins d’accès par défaut et les données, le cas échéant, suivie d’une table qui contient des entrées à partir du script de Registre pour chaque instruction. Les tableaux fournissent les entrées du script et des informations supplémentaires sur les instructions.  

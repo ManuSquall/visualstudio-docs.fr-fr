@@ -1,7 +1,7 @@
 ---
 title: Exemples Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 58
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2b8f5a4a957616743634ac033a56a836585e6444
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 27345bb7bdedd833c4eaf2a05ce5029960373ae3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494919"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206219"
 ---
 # <a name="visual-studio-samples"></a>Exemples Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [exemples Visual Studio](https://docs.microsoft.com/visualstudio/ide/visual-studio-samples).  
-  
 Vous trouverez des exemples de code Visual Studio sur le site web [MSDN Code Gallery](http://go.microsoft.com/fwlink/?LinkID=127810) .  
   
  Vous pouvez utiliser la boîte de dialogue **Nouveau projet** pour rechercher des exemples. (Pour ouvrir la boîte de dialogue, dans la barre de menus, choisissez **Fichier**, **Nouveau**, **Projet**.)  
@@ -49,7 +47,7 @@ Vous trouverez des exemples de code Visual Studio sur le site web [MSDN Code Gal
 |[Exemples d’extensibilité Visual Studio](http://aka.ms/vs2015sdksamples)|Montre comment étendre Visual Studio.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Bien démarrer avec Visual Basic et Visual C#](../ide/getting-started-with-visual-csharp-and-visual-basic.md)
+ [Mises en route de Visual Basic et Visual C#](../ide/getting-started-with-visual-csharp-and-visual-basic.md)
 
 
 

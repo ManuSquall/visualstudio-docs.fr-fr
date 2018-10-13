@@ -1,7 +1,7 @@
 ---
 title: 'Comment : créer un nuanceur Phong de base | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 652d146cbf58dd6f248a8f36e98ea37d23e7c1a3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ad96b9ed53b7600417f3c3e8a283c7a4a372842
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503644"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286492"
 ---
-# <a name="how-to-create-a-basic-phong-shader"></a>Comment : créer un nuanceur Phong de base
+# <a name="how-to-create-a-basic-phong-shader"></a>Comment : créer un nuanceur Phong de base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : créer un nuanceur Phong de base](https://docs.microsoft.com/visualstudio/designers/how-to-create-a-basic-phong-shader).  
-  
 Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed Graph Shader Language) pour créer un nuanceur d’éclairage implémentant le modèle d’éclairage Phong classique.  
   
  Ce document illustre ces activités :  

@@ -1,7 +1,7 @@
 ---
 title: Rapport sur les profils de temps de blocage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae0c4f34f0d3447f63afbf08e9d788304b2d353f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6cf06fc37a10f6bf028d3f4ef7174e73574b604b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493400"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180802"
 ---
 # <a name="blocking-time-profile-report"></a>Profil de temps de blocage, rapport
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [rapport de profil de temps de blocage](https://docs.microsoft.com/visualstudio/profiling/blocking-time-profile-report).  
-  
 Les rapports de profil rassemblent des données relatives au temps de blocage pour les piles d’appels qui sont spécifiques à chaque catégorie de blocage (par exemple « E/S » ou « Synchronisation »). Le rapport Anticipation répertorie les processus qui ont anticipé le processus en cours, ainsi que le nombre d’instances d’anticipations. Pour générer le rapport de profil de blocage, l’outil collecte des appels d’API bloquants et les rassemble au sein d’une arborescence de piles d’appels. Les données figurant dans ces rapports varient selon la plage horaire, les threads masqués et les deux filtres suivants qui peuvent être appliqués :  
   
 -   Si l’option Uniquement mon code est activée, seuls les frames de pile contenant du code utilisateur sont présentés, ainsi que le premier niveau situé sous le code utilisateur.  
@@ -69,7 +67,7 @@ Les rapports de profil rassemblent des données relatives au temps de blocage po
  Le rapport Traitement de l’interface utilisateur affiche les appels responsables des segments qui se bloquent lors d’un blocage d’interface utilisateur, ainsi que les durées totales de blocage pour chaque pile des appels. Pour plus d’informations, consultez [Temps de traitement UI](../profiling/ui-processing-time.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vue Threads](../profiling/threads-view-parallel-performance.md)
+ [vue Threads](../profiling/threads-view-parallel-performance.md)
 
 
 

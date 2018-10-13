@@ -1,7 +1,7 @@
 ---
 title: Message de boîte de dialogue Options | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0960c9fe2454affc38766da42a5035b3d95896d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7824ce5a0e65b762d992392b0d9b0e267d85e236
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493959"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286518"
 ---
 # <a name="message-options-dialog-box"></a>Options des messages, boîte de dialogue
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [la boîte de dialogue Options des messages](https://docs.microsoft.com/visualstudio/debugger/message-options-dialog-box).  
-  
 Utilisez cette boîte de dialogue pour sélectionner les messages sont répertoriés dans [vue Messages](../debugger/messages-view.md). Pour afficher cette boîte de dialogue, choisissez **Messages du journal** à partir de la **Spy** menu.  
   
 ## <a name="in-this-section"></a>Dans cette section  

@@ -1,7 +1,7 @@
 ---
 title: Définition d’une Image d’arrière-plan sur un diagramme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ea74561974db32a831b4123578bffb755a24cbc8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fd9d5ca21dbe1b0444c650a127fc0184dfb640f1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501433"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240550"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Définition d'une image d'arrière-plan dans un schéma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [définition d’une Image d’arrière-plan sur un diagramme](https://docs.microsoft.com/visualstudio/modeling/setting-a-background-image-on-a-diagram).  
-  
 Dans le Kit de développement logiciel (SDK) de visualisation et de modélisation de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez définir l'image d'arrière-plan d'un concepteur généré à l'aide de code personnalisé.  
   
 ## <a name="setting-the-background-image"></a>Définition de l'image d'arrière-plan  
@@ -52,7 +50,7 @@ Dans le Kit de développement logiciel (SDK) de visualisation et de modélisatio
   
 11. Si Resources.Designer.cs est manquant, cliquez sur le fichier Resources.resx dans **l’Explorateur de solutions**.  
   
-12. Dans le **propriétés** fenêtre, définissez la `Custom Tool` propriété `ResXFileCodeGenerator`.  
+12. Dans la fenêtre **Propriétés** , définissez la propriété `Custom Tool` sur `ResXFileCodeGenerator`.  
   
 13. Dans **l’Explorateur de solutions**, cliquez sur le projet Dsl, pointez sur **ajouter**, puis cliquez sur **nouveau dossier**.  
   

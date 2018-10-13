@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour générer et exécuter l’exemple LinqToXmlDataBinding | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 63b82af28599683f739c98314a9d4f71ad474a25
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e299000cd8477ccc36829e806072cb25e115f8f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506563"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237911"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Guide pratique pour générer et exécuter l’exemple LinqToXmlDataBinding
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : générer et exécuter l’exemple LinqToXmlDataBinding](https://docs.microsoft.com/visualstudio/designers/how-to-build-and-run-the-linqtoxmldatabinding-example).  
-  
 Cette rubrique montre comment créer et générer le projet Visual Studio LinqToXmlDataBinding et comment exécuter l'exemple de programme WPF (Windows Presentation Foundation) LinqToXmlDataBinding résultant.  
   
  Pour plus d’informations sur l’utilisation de Visual Studio pour créer des projets, consultez [Développement d’applications dans Visual Studio](http://msdn.microsoft.com/en-us/97490c1b-a247-41fb-8f2c-bc4c201eff68).  

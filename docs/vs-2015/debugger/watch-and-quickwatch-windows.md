@@ -1,7 +1,7 @@
 ---
 title: Espion et Espion express Windows | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e15167169b8940d65eeca66aaf3871997300cd04
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2a136647fc3ce8114b492e8f055efe0eb1a3889
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501642"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173626"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Espion et Espion express, fenêtres
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [définir un espion sur les Variables dans Visual Studio](https://docs.microsoft.com/visualstudio/debugger/watch-and-quickwatch-windows).  
-  
 Vous pouvez utiliser la **espion** (**déboguer / Windows / espion / espion (1, 2, 3, 4)**) et **Espion express** (avec le bouton droit sur la variable / **déboguer / Espion express**) pour observer les variables et expressions pendant une session de débogage.  La fenêtre **Espion** permet d’afficher plusieurs variables, à la différence de la fenêtre **Espion express** , qui n’en affiche qu’une à la fois.  
   
 ## <a name="observing-a-single-variable-with-quickwatch"></a>Observation d’une variable dans la fenêtre Espion express  
@@ -104,7 +102,7 @@ static void Main(string[] args)
   
 5.  Poursuivez le débogage.  
   
- Vous constatez normalement que les valeurs des variables changent à mesure que vous itérez au sein de la boucle `for` .  
+ Vous constatez normalement que les valeurs des variables changent à mesure que vous itérez au sein de la boucle `for`.  
   
  Si vous programmez en code natif, vous devrez peut-être parfois qualifier le contexte d’un nom de variable ou d’une expression contenant un nom de variable. Le contexte est la fonction, le fichier source et le module où se trouve une variable. Dans ce cas, vous pouvez utiliser la syntaxe d’opérateur de contexte. Pour plus d’informations, consultez Expressions en C++.  
   

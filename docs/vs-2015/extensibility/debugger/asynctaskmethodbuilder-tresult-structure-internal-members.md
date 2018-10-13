@@ -1,7 +1,7 @@
 ---
 title: AsyncTaskMethodBuilder&lt;TResult&gt; Structure - membres internes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ ms.assetid: 17ebc340-8170-4aff-bf54-dc4548c83632
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 644d4907fc32e823fff0a7e5ea0dd29d34973b8d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7a79d9744f53190f8d795f0f2072d1b0c2e0a9cf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508807"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296281"
 ---
 # <a name="asynctaskmethodbuilderlttresultgt-structure---internal-members"></a>AsyncTaskMethodBuilder&lt;TResult&gt; Structure - membres internes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [AsyncTaskMethodBuilder&lt;TResult&gt; Structure - membres internes](https://docs.microsoft.com/visualstudio/extensibility/debugger/asynctaskmethodbuilder-tresult-structure-internal-members).  
-  
 Cette rubrique décrit les membres internes de la <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> classe. Pour obtenir des informations générales sur cette classe, consultez le <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> rubrique de référence.  
   
- **Namespace :** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
+ **Espace de noms :** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
  **Assembly :** mscorlib (dans mscorlib.dll)  
   

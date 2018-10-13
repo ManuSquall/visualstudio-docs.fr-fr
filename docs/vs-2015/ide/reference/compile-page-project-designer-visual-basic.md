@@ -1,7 +1,7 @@
 ---
 title: Page Compiler, Concepteur de projets (Visual Basic) │ Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 65
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 77dd35111f22ffa1418963e14222e858fadd4f6a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2c8ed6735a1038ba2bbdf3e3fffe548be47da9d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508924"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279636"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Page Compiler, Concepteur de projets (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Page Compiler, Concepteur de projets (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/compile-page-project-designer-visual-basic).  
-  
   
 La page **Compiler** du Concepteur de projets vous permet de spécifier les instructions de compilation. Vous pouvez également spécifier dans cette page les options avancées du compilateur et les événements pré-build ou post-build.  
   

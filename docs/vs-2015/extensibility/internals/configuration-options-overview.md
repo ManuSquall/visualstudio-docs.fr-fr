@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble des Options de configuration | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 85fa1b9d19beca6bd879d98bc7a24af0fd5756c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4778fd01dde3f08bcc76cd6fc5dd5814f2bc913b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494308"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294292"
 ---
 # <a name="configuration-options-overview"></a>Présentation des options de configuration
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [vue d’ensemble des Options de Configuration](https://docs.microsoft.com/visualstudio/extensibility/internals/configuration-options-overview).  
-  
 Dans les projets [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] peut prendre en charge les configurations multiples qui peuvent être générées, débogué, exécution et/ou déployé. Une configuration est un type de build décrit avec un jeu nommé de propriétés, en général, les commutateurs du compilateur et les emplacements de fichiers. Par défaut, les nouvelles solutions contiennent deux configurations Debug et Release. Ces configurations peuvent être appliquées à l’aide de leurs paramètres par défaut ou modifiés pour répondre à vos besoins spécifiques de solution ou projet. Certains packages peuvent être générées de deux manières : en tant qu’ActiveX éditeur ou comme un composant sur place. Projets n’avez pas besoin de prendre en charge plusieurs configurations, toutefois. S’il n'existe qu’une seule configuration disponible, cette configuration est mappée dans toutes les configurations de solution.  
   
  Les configurations sont généralement consistant de deux parties : le nom de la configuration (par exemple, Debug ou Release) et les paramètres de plateforme. Nom de la plateforme d’une configuration identifie l’environnement que définir la configuration cible, par exemple une API ou une plateforme de système d’exploitation. Les utilisateurs de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Impossible de créer une plateforme ; ils doivent choisir dans les sélections à un projet VSPackage permet. Quand un utilisateur s’installe un VSPackage, la plateforme de livraison créée au cours du développement du package peut apparaître n’importe quel nom de la plateforme souhaitée selon les critères définis par le créateur du package. L’utilisateur peut ensuite sélectionner dans la liste des plateformes accessibles via le VSPackage lorsque les pages de propriétés sont instanciés.  

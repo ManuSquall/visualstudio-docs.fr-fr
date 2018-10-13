@@ -1,7 +1,7 @@
 ---
 title: Utilisation de contrôles HTML5 dans des tests codés de l’interface utilisateur | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: 19
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 14bdab12cf241914d1f41581ae5434ae1776ec2b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 92ee95d4840ab9a833adc1b0060117f0d6b94fbd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507106"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254460"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Utilisation de contrôles HTML5 dans des tests codés de l'interface utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [à l’aide de contrôles HTML5 dans des Tests codés de l’interface utilisateur](https://docs.microsoft.com/visualstudio/test/using-html5-controls-in-coded-ui-tests).  
-  
 Les tests codés de l'interface utilisateur incluent la prise en charge d'une partie des contrôles HTML5 inclus dans Internet Explorer 9 et Internet Explorer 10.  
   
  **Spécifications**  

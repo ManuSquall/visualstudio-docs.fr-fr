@@ -1,7 +1,7 @@
 ---
 title: Fonction SccPopulateList | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e37b011da322639c2393d8fea1fb7eeaefac729
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 03fedd4854103186eb9d6f034d11a8e0f8b11c9c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494607"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279563"
 ---
 # <a name="sccpopulatelist-function"></a>Fonction SccPopulateList
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [fonction SccPopulateList](https://docs.microsoft.com/visualstudio/extensibility/sccpopulatelist-function).  
-  
 Cette fonction met à jour une liste des fichiers pour une commande de contrôle de code source particulier et fournit l’état de contrôle de code source sur tous les fichiers donnés.  
   
 ## <a name="syntax"></a>Syntaxe  

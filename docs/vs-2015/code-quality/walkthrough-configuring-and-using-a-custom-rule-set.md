@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : Configuration et à l’aide d’un ensemble de règles | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b17767f6bb0f8b72b9c06e2870146f6b037a7ca7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5410127cd94bc8e43de4fec82597686d4c11805
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494381"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221635"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Procédure pas à pas : configuration et utilisation d’un ensemble de règles personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : configuration et à l’aide d’un ensemble de règles personnalisé](https://docs.microsoft.com/visualstudio/code-quality/walkthrough-configuring-and-using-a-custom-rule-set).  
-  
 Cette procédure pas à pas montre comment utiliser les outils d’analyse de code qui ont été configurés pour utiliser un texte personnalisé *ensemble de règles* sur une bibliothèque de classes. Vous pouvez sélectionner un ensemble de règles relatives au type de projet que vous avez spécifié pour votre solution, ou vous pouvez sélectionner autres ensembles de règles pour répondre à un besoin spécifique, comme l’analyse du code hérité pour les problèmes qui peuvent être résolus de façon permanente. Dans les deux cas, les ensembles de règles peuvent également être personnalisés pour les adapter précisément aux besoins de votre projet.  
   
  Dans cette procédure pas à pas, vous allez voir comment ces processus :  

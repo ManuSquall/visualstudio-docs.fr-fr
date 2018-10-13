@@ -1,7 +1,7 @@
 ---
 title: 'Comment : spécifier une Version du .NET Framework pour le débogage | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a07975591525f9109fecfbfb5aaa27642fc9562
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 914c4bfb58485bd1d423e58bbe8fc8ab7f1a898a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501008"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272959"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Comment : spécifier une version .NET Framework pour le débogage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : spécifier une Version .NET Framework pour le débogage](https://docs.microsoft.com/visualstudio/debugger/how-to-specify-a-dotnet-framework-version-for-debugging).  
-  
 Le débogueur [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] prend en charge le débogage des versions antérieures ainsi que de la version actuelle de Microsoft [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Si vous démarrez une application à partir de Visual Studio, le débogueur identifie toujours la version correcte de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] pour l’application que vous déboguez. Si l’application est déjà en cours d’exécution et que vous utilisez **attacher à**, le débogueur pas peut toujours être en mesure d’identifier une version antérieure de le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Si cela se produit, un message d'erreur s'affiche qui indique,  
   
  Le débogueur a évalué de façon incorrecte la version du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que votre application va utiliser.  

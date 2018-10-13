@@ -1,7 +1,7 @@
 ---
 title: Processus | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a6a1efdc-b243-40c8-a778-6f69f6b018be
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 37aa4436baa449e702d5cb6f76078b2bb36311fd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 218f6aa05bebfe0d35776b64e6a42e4fbea4e72f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507817"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296463"
 ---
 # <a name="processes"></a>Processus
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [processus](https://docs.microsoft.com/visualstudio/extensibility/debugger/processes).  
-  
 En termes d’architecture du débogueur, une **processus**:  
   
 -   Est un conteneur pour un ensemble de programmes. Il est très similaire à un processus Windows, qui est un conteneur pour un ensemble de threads.  

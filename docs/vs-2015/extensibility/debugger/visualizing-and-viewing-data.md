@@ -1,7 +1,7 @@
 ---
 title: Visualisation et affichage des données | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 699dd0f5-7569-40b3-ade6-d0fe53e832bc
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 10d83291a8d5820241ff2837b6b4a773c7b6fdba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a88969139c993163c88f2dc16fc8cbdb7a62feb6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506814"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202772"
 ---
 # <a name="visualizing-and-viewing-data"></a>Visualisation et affichage des données
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [visualisation et affichage des données](https://docs.microsoft.com/visualstudio/extensibility/debugger/visualizing-and-viewing-data).  
-  
 Visualiseurs de type et les visionneuses personnalisées présentent les données de manière significative rapidement à un développeur. L’évaluateur d’expression (EE) peut prendre en charge les visualiseurs de types de fournisseurs tiers ainsi que fournir ses propres visionneuses personnalisées.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Détermine combien des visualiseurs de type et des visionneuses personnalisées sont associées avec le type d’objet en appelant le [GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) (méthode). Si le visualiseur d’au moins un type ou de la visionneuse personnalisée est disponible, Visual Studio appelle le [GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) méthode pour récupérer une liste de ces visualiseurs et les visionneuses (en fait, une liste de `CLSID`s qui implémentent le les visualiseurs et les visionneuses) et les présente à l’utilisateur.  

@@ -1,7 +1,7 @@
 ---
 title: 'Préparation du débogage : Des Applications Web ASP.NET | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,19 +24,17 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20731f5036a89c3c19fbea0d825d67fc02c13cf9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9268cca555486e0c432e60947350bd69202c4fb6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504094"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292888"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>Préparation du débogage : applications Web ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [préparation du débogage : Applications Web ASP.NET](https://docs.microsoft.com/visualstudio/debugger/debugging-preparation-aspnet-web-applications).  
-  
-Le [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]modèle de site Web crée une application Web Form. Lorsque vous créez un site Web à l'aide de ce modèle, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] crée les paramètres par défaut pour le débogage. Dans le **propriétés du projet** boîte de dialogue, vous pouvez spécifier si vous souhaitez que la page Web soit une page de démarrage. Lorsque vous commencez à déboguer un [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]Site Web avec ces paramètres par défaut, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] démarre Internet Explorer et attache le débogueur à la [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] des processus de travail (aspnet_wp.exe ou w3wp.exe). Pour plus d’informations, consultez [requise](../debugger/aspnet-debugging-system-requirements.md).  
+Le [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]modèle de site Web crée une application Web Form. Lorsque vous créez un site web à l’aide de ce modèle, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] crée les paramètres par défaut pour le débogage. Dans le **propriétés du projet** boîte de dialogue, vous pouvez spécifier si vous souhaitez que la page Web soit une page de démarrage. Lorsque vous commencez à déboguer un [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]Site Web avec ces paramètres par défaut, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] démarre Internet Explorer et attache le débogueur à la [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] des processus de travail (aspnet_wp.exe ou w3wp.exe). Pour plus d'informations, voir [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
   
 ### <a name="to-create-a-web-forms-application"></a>Pour créer une application Web Forms  
   

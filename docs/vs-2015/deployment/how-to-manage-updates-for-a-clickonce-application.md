@@ -1,7 +1,7 @@
 ---
 title: 'Comment : gérer les mises à jour pour une Application ClickOnce | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 32a221b994bba78f70d70c758ae6c7f58f0668bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: adf0a6df54c3e6bd758896ac8a836b6174e767b8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505917"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272465"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Comment : gérer des mises à jour pour une application ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : gérer les mises à jour pour une Application ClickOnce](https://docs.microsoft.com/visualstudio/deployment/how-to-manage-updates-for-a-clickonce-application).  
-  
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] les applications peuvent vérifier les mises à jour automatiquement ou par programmation. En tant que développeur, vous avez une grande souplesse lors de la spécification de quand et comment les vérifications de mise à jour sont effectuées, si les mises à jour sont obligatoires, et où l’application doit vérifier les mises à jour.  
   
  Vous pouvez configurer l’application pour rechercher les mises à jour automatiquement avant le démarrage de l’application ou à des intervalles définis après le démarrage de l’application. En outre, vous pouvez spécifier une version minimale requise ; Autrement dit, une mise à jour est installé si la version de l’utilisateur est inférieure à la version requise.  

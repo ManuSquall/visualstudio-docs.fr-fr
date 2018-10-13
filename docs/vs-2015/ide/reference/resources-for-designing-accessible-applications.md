@@ -1,7 +1,7 @@
 ---
 title: Ressources pour la conception d’applications accessibles | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4576508ba8864e6fc85d4151f3ae696e39a18c34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ea004e0b0bf106bf4e7b795cd684357733a2589
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502245"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178280"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ressources pour la conception d'applications accessibles
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [ressources pour la conception d’Applications accessibles](https://docs.microsoft.com/visualstudio/ide/reference/resources-for-designing-accessible-applications).  
-  
   
 Utilisez les liens suivants pour trouver des informations sur les technologies qui prennent en charge un design axé sur l’accessibilité, ainsi que des conseils et des exemples en matière de développement d’applications Windows et de sites web accessibles. Vous trouverez des informations générales sur l’accessibilité dans [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/).  
   

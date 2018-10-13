@@ -1,7 +1,7 @@
 ---
 title: 'Diagrammes de classes UML : Indications | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 56
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 073fb32fae3d02e7edaa8adb8347901e797d047f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a9c7b5f5a88e8563930615c883c6911956932d17
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508628"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181777"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>Diagrammes de classes UML : indications
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [diagrammes de classes UML : indications](https://docs.microsoft.com/visualstudio/modeling/uml-class-diagrams-guidelines).  
-  
 Dans Visual Studio, vous pouvez utiliser un *diagramme de classes UML* pour décrire les types de données et leurs relations, indépendamment de leur implémentation. Le diagramme permet de se concentrer sur les aspects logiques des classes, plutôt que sur leur implémentation.  
   
  Pour créer un diagramme de classes UML, sur le **Architecture** menu, choisissez **nouveau diagramme UML ou diagramme de couche**.  

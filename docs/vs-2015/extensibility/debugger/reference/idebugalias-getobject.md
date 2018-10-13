@@ -1,7 +1,7 @@
 ---
 title: IDebugAlias::GetObject | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 97bc3af6-6e55-4940-8a6d-692c61257806
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 78e60d0932906d02a232ee6160d7d398cf9c95a4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5e1d514e49b6f411fff62b8ed0ba71f3897f56fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503904"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222064"
 ---
 # <a name="idebugaliasgetobject"></a>IDebugAlias::GetObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDebugAlias::GetObject](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugalias-getobject).  
-  
 Obtient l’objet auquel cet alias est destinée.  
   
 ## <a name="syntax"></a>Syntaxe  

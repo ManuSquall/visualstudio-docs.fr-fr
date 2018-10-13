@@ -1,7 +1,7 @@
 ---
 title: À propos des Extensions de nom de fichier | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 99f4f9ff-fb84-4258-9787-6890f308a57f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8a299d7b2470b16761e4a418e0717a91c2929e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4278e27b4070ad3330b488cb8b426ffbd6484b27
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508287"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279810"
 ---
 # <a name="about-file-name-extensions"></a>À propos des extensions de nom de fichier
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Extensions de nom de fichier](https://docs.microsoft.com/visualstudio/extensibility/about-file-name-extensions).  
-  
 Lorsque vous inscrivez une extension de fichier d’un VSPackage, associez-la à une version de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Cela est important si, et plusieurs versions de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est installé sur un ordinateur.  
   
  Extensions de fichier pour les VSPackages sont enregistrées sous la clé HKEY_CLASSES_ROOT avec une valeur par défaut qui pointe vers l’associée identificateur programmatique (ProgID).  

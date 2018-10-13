@@ -1,7 +1,7 @@
 ---
 title: Création d’un Windows Forms de contrôle de boîte à outils | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc1deab4439133eb43348289fcfbba204a1cf9ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b7f1c5f9f052253e2b18ac2f7c669b7442ac391
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505269"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294214"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Création d’un contrôle de boîte à outils Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [création d’un contrôle de boîte à outils Windows Forms](https://docs.microsoft.com/visualstudio/extensibility/creating-a-windows-forms-toolbox-control).  
-  
 Le modèle d’élément de contrôle de boîte à outils Windows Forms qui est inclus dans les outils d’extensibilité de Visual Studio (Visual Studio SDK) vous permet de créer un contrôle qui est automatiquement ajouté à la **boîte à outils** lorsque l’extension est installée. Cette rubrique montre comment utiliser le modèle pour créer un contrôle simple compteur que vous pouvez distribuer à d’autres utilisateurs.  
   
 ## <a name="prerequisites"></a>Prérequis  
@@ -67,7 +65,7 @@ Le modèle d’élément de contrôle de boîte à outils Windows Forms qui est 
     |`Button1`|**Text**|Réinitialiser|  
   
 ### <a name="coding-the-user-control"></a>Codage du contrôle utilisateur  
- Le contrôle `Counter` expose une méthode pour incrémenter le compteur, un événement à déclencher chaque fois que le compteur est incrémenté, un bouton `Reset` et trois propriétés pour stocker le nombre actuel, stocker le texte affiché et indiquer s’il convient d’afficher ou de masquer le bouton `Reset` . Le `ProvideToolboxControl` attribut détermine où dans le **boîte à outils** le `Counter` contrôle apparaît.  
+ Le contrôle `Counter` expose une méthode pour incrémenter le compteur, un événement à déclencher chaque fois que le compteur est incrémenté, un bouton `Reset` et trois propriétés pour stocker le nombre actuel, stocker le texte affiché et indiquer s’il convient d’afficher ou de masquer le bouton `Reset` . L’attribut `ProvideToolboxControl` détermine l’emplacement dans la **boîte à outils** où le contrôle `Counter` s’affiche.  
   
 ##### <a name="to-code-the-user-control"></a>Pour coder le contrôle utilisateur  
   
@@ -145,7 +143,7 @@ Le modèle d’élément de contrôle de boîte à outils Windows Forms qui est 
   
     ```  
   
-8.  Immédiatement au-dessus de la définition de classe, dans le `ProvideToolboxControl` déclaration d’attribut, modifiez la valeur du premier paramètre à partir de `"MyWinFormsControl.Counter"` à `"General"`. Le nom du groupe d’éléments qui va héberger le contrôle dans la **boîte à outils**est ainsi défini.  
+8.  Immédiatement au-dessus de la définition de classe, dans la déclaration d’attribut `ProvideToolboxControl` , remplacez la valeur `"MyWinFormsControl.Counter"` du premier paramètre par `"General"`. Le nom du groupe d’éléments qui va héberger le contrôle dans la **boîte à outils**est ainsi défini.  
   
      L’exemple suivant illustre l’attribut `ProvideToolboxControl` et la définition de classe ajustée.  
   

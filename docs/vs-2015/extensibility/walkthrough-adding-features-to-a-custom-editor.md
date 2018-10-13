@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : Ajout de fonctionnalités à un éditeur personnalisé | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ee6ca09f1bef7057e64287afb4ff8522fffb3f06
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7f0d7c79590c197b7c226fb2cb2841235049bb3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504794"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283060"
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>Procédure pas à pas : ajout de fonctionnalités à un éditeur personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : ajout de fonctionnalités à un éditeur personnalisé](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-adding-features-to-a-custom-editor).  
-  
 Après avoir créé un éditeur personnalisé, vous pouvez ajouter davantage de fonctionnalités à ce dernier.  
   
 ### <a name="to-create-an-editor-for-a-vspackage"></a>Pour créer un éditeur pour un VSPackage  
@@ -128,7 +126,7 @@ Après avoir créé un éditeur personnalisé, vous pouvez ajouter davantage de 
   
 13. Exposer un modèle d’objet Automation à partir de votre éditeur en implémentant le `IDispatch` interface.  
   
-     Pour plus d’informations, consultez [qui contribuent au modèle Automation](../extensibility/internals/contributing-to-the-automation-model.md).  
+     Pour plus d'informations, consultez [Contributing to the Automation Model](../extensibility/internals/contributing-to-the-automation-model.md).  
   
 ## <a name="robust-programming"></a>Programmation fiable  
   

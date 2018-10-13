@@ -1,7 +1,7 @@
 ---
 title: Ce que&#39;nouveauté d’un contrôle de code Source | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f098c9f46d649a8b93c29eff57c5606438d3e399
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fac4b901c7e9b3c5a59e125a9480b21703b19a8a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503915"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217036"
 ---
 # <a name="what39s-new-in-source-control"></a>Ce que&#39;nouveauté d’un contrôle de code Source
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [que&#39;Nouveautés de contrôle de code Source](https://docs.microsoft.com/visualstudio/extensibility/internals/what-s-new-in-source-control).  
-  
 Dans [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] vous pouvez fournir une solution de contrôle de code source profondément intégré en implémentant un VSPackage de contrôle de code source. Cette section décrit les fonctionnalités de contrôle de code source VSPackages et fournit une vue d’ensemble des étapes d’implémentation.  
   
 ## <a name="the-source-control-vspackage"></a>Le VSPackage de contrôle de code Source  

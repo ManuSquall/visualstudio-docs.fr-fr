@@ -1,7 +1,7 @@
 ---
 title: Création. Fichiers VSCT | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0c2efb41474f9eeef29cc389529541ad460d9b89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 85a30c8987311ea8d6216312533dc70072c96f2c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503233"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283671"
 ---
 # <a name="authoring-vsct-files"></a>Création. Fichiers VSCT
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Authoring. Fichiers VSCT](https://docs.microsoft.com/visualstudio/extensibility/internals/authoring-dot-vsct-files).  
-  
 Ce document montre comment créer un fichier .vsct pour ajouter des éléments de menu, les barres d’outils et les autres éléments d’interface (UI) à l’environnement de développement intégré (IDE) Visual Studio. Utilisez ces étapes lorsque vous ajoutez des éléments d’interface utilisateur à un Package Visual Studio (VSPackage) qui n’a pas déjà un fichier .vsct.  
   
  Pour les nouveaux projets, nous vous recommandons d’utiliser le modèle de Package Visual Studio, car il génère un fichier .vsct qui, en fonction de vos sélections, a déjà les éléments requis pour une commande de menu, une fenêtre outil ou un éditeur personnalisé. Vous pouvez modifier ce fichier .vsct pour satisfaire les besoins de votre VSPackage. Pour plus d’informations sur la modification d’un fichier .vsct, consultez les exemples de [extension des Menus et commandes](../../extensibility/extending-menus-and-commands.md).  

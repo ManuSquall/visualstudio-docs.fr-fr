@@ -1,7 +1,7 @@
 ---
 title: Annotation des paramètres de fonction et valeurs de retour | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -131,18 +131,16 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8c3a0cad60dc7867b31238669a612cdb0dac4097
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8e3a49283763a8de2bec7cee003610b75cc62ce2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505877"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297165"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Annotation de paramètres de fonction et valeurs de retour
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [annoter des paramètres de fonction et valeurs de retour](https://docs.microsoft.com/visualstudio/code-quality/annotating-function-parameters-and-return-values).  
-  
 Cet article décrit les utilisations courantes des annotations pour les paramètres de fonction simple, scalaires et des pointeurs vers des classes et structures et la plupart des types de mémoires tampons.  Cet article montre également les modes d’utilisation courants pour les annotations. Pour des annotations supplémentaires qui sont liées aux fonctions, consultez [annoter le comportement (fonction)](../code-quality/annotating-function-behavior.md)  
   
 ## <a name="pointer-parameters"></a>Paramètres de pointeur  

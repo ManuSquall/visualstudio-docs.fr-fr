@@ -1,7 +1,7 @@
 ---
 title: Boîte de dialogue Propriétés de fenêtre | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab4606972db64fe0e89cd0585b85353bfe0e2d37
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eee934eb2a0b1fa04a85dc77735e3d92dcbff80e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495651"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288013"
 ---
 # <a name="window-properties-dialog-box"></a>boîte de dialogue Propriétés de la fenêtre
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [boîte de dialogue Propriétés de fenêtre](https://docs.microsoft.com/visualstudio/debugger/window-properties-dialog-box).  
-  
 Utilisez cette boîte de dialogue pour en savoir plus sur une fenêtre spécifique. Pour afficher cette boîte de dialogue, déplacez le focus vers le [Windows vue](../debugger/windows-view.md) fenêtre. Sélectionnez n’importe quel nœud de fenêtre dans l’arborescence, puis choisissez **propriétés** à partir de la **vue** menu.  
   
 ## <a name="in-this-section"></a>Dans cette section  

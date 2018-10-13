@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : Affichage de saisie semi-automatique des instructions | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9d7cd7a1ea3ffa3fd85cbe8ed7088347298f849c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ceb59310597cd0481007ec9c08f5312a8d75090
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508808"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280579"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>Procédure pas à pas : affichage de la saisie semi-automatique des instructions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : affichage de saisie semi-automatique des instructions](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-statement-completion).  
-  
 Vous pouvez implémenter la saisie semi-automatique des instructions en langage en définissant les identificateurs pour lequel vous souhaitez fournir la saisie semi-automatique et puis déclenchant une session de saisie semi-automatique. Vous pouvez définir la saisie semi-automatique des instructions dans le contexte d’un service de langage, définir votre propre extension de nom de fichier et le type de contenu et ensuite afficher la saisie semi-automatique pour uniquement ce type, ou vous pouvez déclencher la saisie semi-automatique pour un type de contenu existant, par exemple, « texte en clair ». Cette procédure pas à pas montre comment déclencher la saisie semi-automatique des instructions pour le type de contenu « texte en clair », qui est le type de contenu des fichiers texte. Le type de contenu « texte » est l’ancêtre de tous les autres types de contenu, y compris le code et les fichiers XML.  
   
  Saisie semi-automatique des instructions sont généralement déclenchées en tapant certains caractères, par exemple, en tapant le début d’un identificateur, tel que « using ». Il est généralement ignorée en appuyant sur la touche espace, tabulation ou entrée pour valider une sélection. Vous pouvez implémenter les fonctionnalités IntelliSense qui sont déclenchées en tapant un caractère à l’aide d’un gestionnaire de commandes pour les séquences de touches (la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface) et un fournisseur de gestionnaire qui implémente le <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> interface. Pour créer la source d’achèvement, qui est la liste des identificateurs qui participent à saisie semi-automatique, implémentez le <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> interface et un fournisseur de source de saisie semi-automatique (le <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> interface). Les fournisseurs sont des composants de Managed Extensibility Framework (MEF). Ils sont chargés pour exporter les classes source et de contrôleur et importer des services et des courtiers — par exemple, le <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, qui permet la navigation dans la mémoire tampon de texte et le <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>, qui déclenche la session de saisie semi-automatique.  

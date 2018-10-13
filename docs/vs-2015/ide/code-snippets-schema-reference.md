@@ -1,7 +1,7 @@
 ---
 title: Référence de schéma des extraits de code | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9dfcb6e7bc29fe29f33b919545a6781a731b7734
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 19a14972d36bcb7070e0604b47caab55f41d0126
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506243"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188108"
 ---
 # <a name="code-snippets-schema-reference"></a>Référence de schéma des extraits de code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [référence de schéma des extraits de Code](https://docs.microsoft.com/visualstudio/ide/code-snippets-schema-reference).  
-  
 Les extraits de code IntelliSense sont des parties de code précréées et prêtes à être insérées dans votre application avec [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vous pouvez augmenter la productivité en fournissant des extraits de code qui réduisent le nombre d'heures passées à taper un code répétitif ou à rechercher des exemples. Vous pouvez utiliser le schéma XML des extraits de code IntelliSense pour créer vos propres extraits de code et les ajouter aux extraits de code que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] contient déjà.  
   
 ## <a name="intellisense-code-snippets-schema-elements"></a>Éléments du schéma des extraits de code IntelliSense  

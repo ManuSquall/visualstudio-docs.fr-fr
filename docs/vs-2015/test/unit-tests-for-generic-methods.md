@@ -1,7 +1,7 @@
 ---
 title: Tests unitaires pour les méthodes génériques | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 19e17718cdee01b4fec4b126072126d4ff9ee281
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 208682486f2a1b3c9be69e969b5d80374c8fde32
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502669"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295787"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Tests unitaires pour les méthodes génériques
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [de tests unitaires pour les méthodes génériques](https://docs.microsoft.com/visualstudio/test/unit-tests-for-generic-methods).  
-  
 Vous pouvez générer des tests unitaires pour les méthodes génériques exactement comme vous le feriez pour d’autres méthodes, comme décrit dans [Comment : créer et exécuter un test unitaire](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Les sections suivantes fournissent des informations et des exemples de création de tests unitaires pour les méthodes génériques.  
   
 ## <a name="type-arguments-and-type-constraints"></a>Arguments de type et contraintes de type  

@@ -1,7 +1,7 @@
 ---
 title: Fonction SccOpenProject | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d609510b-660a-46d7-b93d-2406df20434d
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 988d869d0cca977705efa8c5363f70317c063e69
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c2118d6ed43355d6882c1c2034388f3c438a5a6f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504484"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264379"
 ---
 # <a name="sccopenproject-function"></a>Fonction SccOpenProject
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [fonction SccOpenProject](https://docs.microsoft.com/visualstudio/extensibility/sccopenproject-function).  
-  
 Cette fonction ouvre un projet de contrôle de code source existant ou crée un nouveau.  
   
 ## <a name="syntax"></a>Syntaxe  

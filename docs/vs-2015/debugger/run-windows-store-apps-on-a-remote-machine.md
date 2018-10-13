@@ -1,7 +1,7 @@
 ---
 title: Applications d’exécution Windows Store sur un ordinateur à distance | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 289c7a4153a5a3485d80cc9c0739a37e4e9d6882
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a5e6044a56bfc94f7bc0e517ccbd91ae10d5b9d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502354"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289573"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>Exécuter des applications du Windows Store sur un ordinateur distant
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [applications Run Windows Store sur un ordinateur distant](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine).  
-  
 S’applique uniquement à Windows] (.. /Image/windows_only_content.png « windows_only_content »)  
   
  Les outils de contrôle à distance de Visual Studio permettent d'exécuter, de déboguer, de profiler et de tester une application Windows Store en cours d'exécution sur un périphérique à partir d'un deuxième ordinateur exécutant Visual Studio. L'exécution sur un périphérique distant peut être particulièrement efficace lorsque l'ordinateur Visual Studio ne prend pas en charge une fonctionnalité spécifique aux applications Windows Store, telle que la fonction tactile, la géo-localisation et l'orientation physique. Cette rubrique décrit les procédures de configuration et de démarrage d'une session distante.  

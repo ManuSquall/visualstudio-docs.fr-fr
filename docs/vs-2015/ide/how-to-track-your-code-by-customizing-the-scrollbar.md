@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour suivre votre code en personnalisant la barre de défilement | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cbf25e7f3f46d58919c6cdffd95663de18a0fe2e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bcbce0884dbc5be78371b6df00b0eb482aa8c26e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494889"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270775"
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Comment : suivre votre code en personnalisant la barre de défilement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

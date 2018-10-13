@@ -1,7 +1,7 @@
 ---
 title: Algorithme de routage de commande | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 998b616b-bd08-45cb-845f-808efb8c33bc
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2136bbff40a24b1b376d5d737367630256230c35
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 23975d0ae73edd3bb411334e034672a6b5f0e477
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516634"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209311"
 ---
 # <a name="command-routing-algorithm"></a>Algorithme de routage de commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [algorithme de routage de commande](https://docs.microsoft.com/visualstudio/extensibility/internals/command-routing-algorithm).  
-  
 Dans Visual Studio, les commandes sont gérées par un nombre de différents composants. Commandes sont routées à partir du contexte plus profond, ce qui est basé sur la sélection actuelle, pour le contexte le plus extérieur (également appelé global). Pour plus d’informations, consultez [disponibilité](../../extensibility/internals/command-availability.md).  
   
 ## <a name="order-of-command-resolution"></a>Ordre de résolution de la commande  

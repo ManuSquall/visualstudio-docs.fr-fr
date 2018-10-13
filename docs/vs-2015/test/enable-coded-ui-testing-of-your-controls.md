@@ -1,7 +1,7 @@
 ---
 title: Activer le test codé de l’interface utilisateur de vos contrôles | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 316c8e80a1ccfd95ea83114092604e1542292a05
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9883b266e74db115c57f0a7cc245889ed59a599d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505669"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247869"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Activer le test codé de l'interface utilisateur de vos contrôles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [activer codé de l’interface utilisateur de test de vos contrôles](https://docs.microsoft.com/visualstudio/test/enable-coded-ui-testing-of-your-controls).  
-  
 Vous pouvez tester votre contrôle plus facilement si vous implémentez la prise en charge du framework de test codé de l'interface utilisateur. Vous pouvez ajouter des niveaux croissants de prise en charge de manière incrémentielle. Vous pouvez commencer en prenant en charge l'enregistrement et la lecture, ainsi que la validation de propriété. Cette option vous permet d'autoriser le générateur de test codé de l'interface utilisateur à reconnaître les propriétés personnalisées de votre contrôle et de fournir aux classes personnalisées l'accès à ces propriétés à partir du code généré. Vous pouvez également aider à ce que les actions de capture du générateur de test codé de l'interface utilisateur soient plus proches de l'objectif de l'action en cours d'enregistrement.  
   
  **Dans cette rubrique :**  
@@ -88,7 +86,7 @@ Vous pouvez tester votre contrôle plus facilement si vous implémentez la prise
 >  Cette rubrique commence par l'exemple d'accessibilité de <xref:System.Windows.Forms.AccessibleObject> dans la procédure, puis se base dessus dans les procédures suivantes. Si vous souhaitez créer une version opérationnelle de l'exemple d'accessibilité, créez une application console et remplacez le code du fichier Program.cs par celui de l'exemple. Vous devez ajouter des références à Accessibility, System.Drawing et System.Windows.Forms. Vous devez modifier la propriété **Incorporer les types d’interopérabilité** d’Accessibility et lui attribuer la valeur **False** afin de prévenir un avertissement de build. Vous pouvez modifier le type de sortie du projet et remplacer **Application Console** par **Application Windows** afin qu’une fenêtre de console n’apparaisse pas lorsque vous exécutez l’application.  
   
 ##  <a name="customproprties"></a> Prendre en charge la validation de propriété personnalisée en implémentant un fournisseur de propriétés  
- Une fois que vous avez implémenté la prise en charge de base pour l'enregistrement et la lecture, ainsi que pour la validation de propriété, vous pouvez rendre les propriétés personnalisées de votre contrôle accessibles aux tests codés de l'interface utilisateur en implémentant un plug-in <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>. Par exemple, la procédure suivante crée un fournisseur de propriétés qui permet aux tests codés de l'interface utilisateur d'accéder à la propriété State des contrôles enfants CurveLegend du contrôle de graphique.  
+ Une fois que vous avez implémenté la prise en charge de base pour l’enregistrement et la lecture, ainsi que pour la validation de propriété, vous pouvez rendre les propriétés personnalisées de votre contrôle accessibles aux tests codés de l’interface utilisateur en implémentant un plug-in <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>. Par exemple, la procédure suivante crée un fournisseur de propriétés qui permet aux tests codés de l'interface utilisateur d'accéder à la propriété State des contrôles enfants CurveLegend du contrôle de graphique.  
   
  ![CUIT&#95;CustomProps](../test/media/cuit-customprops.png "CUIT_CustomProps")  
   

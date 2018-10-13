@@ -1,7 +1,7 @@
 ---
 title: 'DA0008 : Peu d’échantillons collectés | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 205bedf2baa7c9fa1e1c5f40ccbaa4041427074b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6e294c03f958259f26938865a3e26c6fb7669d6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516591"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289807"
 ---
 # <a name="da0008-few-samples-collected"></a>DA0008 : Peu d'échantillons collectés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [DA0008 : peu d’échantillons collectés](https://docs.microsoft.com/visualstudio/profiling/da0008-few-samples-collected).  
-  
 Id de règle | DA0008 |  
 | Catégorie | Utilisation des outils de profilage |  
 | Méthode de profilage | Échantillonnage |  

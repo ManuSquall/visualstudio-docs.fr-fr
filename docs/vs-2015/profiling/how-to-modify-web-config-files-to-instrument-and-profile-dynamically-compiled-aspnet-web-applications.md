@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour modifier des fichiers Web.Config pour instrumenter et profiler des applications web ASP.NET compilées dynamiquement | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2b9f0220d2b25b9bf7f3e319ef8a63ae5ea3a62
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c5cfc94bef15e34deaec9d07a4b66021cb4fc39
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506118"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176304"
 ---
-# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Comment : modifier des fichiers Web.Config pour instrumenter et profiler des applications Web ASP.NET compilées dynamiquement
+# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Guide pratique pour modifier des fichiers Web.Config pour instrumenter et profiler des applications web ASP.NET compilées dynamiquement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : modifier des fichiers Web.Config pour instrumenter et profiler dynamiquement compilé Web des Applications ASP.NET](https://docs.microsoft.com/visualstudio/profiling/how-to-modify-web-config-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications).  
-  
 Vous pouvez utiliser la méthode d’instrumentation des outils de profilage de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour collecter des données de minutage détaillées, des données d’allocation de mémoire .NET et des données de durée de vie des objets .NET à partir d’applications web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] compilées dynamiquement.  
   
  Cette rubrique décrit comment modifier le fichier de configuration web.config pour activer l’instrumentation et le profilage d’applications web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
@@ -148,7 +146,7 @@ Vous pouvez utiliser la méthode d’instrumentation des outils de profilage de 
     |Nom d'attribut|Valeur d'attribut|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
-    |**value**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
+    |**valeur**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
   
 4.  Ajoutez un autre élément **add** en tant qu’enfant de l’élément **appSettings**.  
   
@@ -157,7 +155,7 @@ Vous pouvez utiliser la méthode d’instrumentation des outils de profilage de 
     |Nom d'attribut|Valeur d'attribut|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
-    |**value**|`PerformanceToolsFolder`|  
+    |**valeur**|`PerformanceToolsFolder`|  
   
      `PerformanceToolsFolder` est le chemin des fichiers exécutables du profileur. Si [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est installé à l’emplacement par défaut, cette valeur est **C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools**.  
   

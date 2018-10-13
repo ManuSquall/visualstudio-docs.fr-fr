@@ -1,7 +1,7 @@
 ---
 title: Raccourcis clavier de la liaison aux éléments de Menu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f661129a4706ce0ac501a5fbad9a7ce5a60e3127
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dfc5c937033087e3bea7b5326e90be64410fcfb8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503256"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277470"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Liaison de raccourcis clavier à des éléments de menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [liaison des raccourcis clavier aux éléments de Menu](https://docs.microsoft.com/visualstudio/extensibility/binding-keyboard-shortcuts-to-menu-items).  
-  
 Pour lier un raccourci clavier à une commande de menu personnalisé, ajoutez simplement une entrée dans le fichier .vsct pour le package. Cette rubrique explique comment mapper un raccourci clavier pour un bouton personnalisé, un élément de menu ou une commande de barre d’outils et comment appliquer le mappage du clavier dans l’éditeur par défaut ou de limiter à un éditeur personnalisé.  
   
  Pour affecter des raccourcis clavier aux éléments de menu de Visual Studio existants, consultez [identification et personnalisation des raccourcis clavier](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  

@@ -1,7 +1,7 @@
 ---
 title: 'Nouvelle génération de projet : Les rouages, partie deux | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 132baff48f92b8ff6cea5841c41bdb7824fd2753
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ce2ad60c2c3c072ab5e38f2dbee11035d44176a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507249"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279589"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Génération de nouveau projet : les rouages du système, partie 2
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [nouvelle génération de projet : Under the Hood, partie deux](https://docs.microsoft.com/visualstudio/extensibility/internals/new-project-generation-under-the-hood-part-two).  
-  
 Dans [nouvelle génération de projet : Under the Hood, 1ère partie](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) nous l’avons vu comment le **nouveau projet** boîte de dialogue boîte est remplie. Supposons que vous avez sélectionné un **Application Windows Visual c#**, renseigné le **nom** et **emplacement** zones de texte et cliquer sur OK.  
   
 ## <a name="generating-the-solution-files"></a>Génération des fichiers de Solution  

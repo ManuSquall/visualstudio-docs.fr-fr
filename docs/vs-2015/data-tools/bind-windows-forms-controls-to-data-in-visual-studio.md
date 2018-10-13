@@ -1,7 +1,7 @@
 ---
 title: Lier des contrôles Windows Forms à des données dans Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ce8945fd535f92a15d510a56e9bc39fd178317f4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e63d20bc226abe0c0bdf4c77179a94b0d0e6212c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506523"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293668"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Lier des contrôles Windows Forms à des données dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [lier les formulaires Windows contrôle aux données dans Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/bind-windows-forms-controls-to-data-in-visual-studio).  
-  
   
 Vous pouvez afficher des données aux utilisateurs de votre application en liant des données à des Windows Forms. Pour créer ces contrôles liés aux données, vous pouvez faire glisser des éléments à partir de la **des Sources de données** fenêtre jusqu’au Concepteur Windows Forms dans Visual Studio. Cette rubrique décrit certaines des tâches, outils et classes impliquées dans la création d’applications de Windows Forms lié aux données plus courants.  
   

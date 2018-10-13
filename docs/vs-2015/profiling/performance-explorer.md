@@ -1,7 +1,7 @@
 ---
 title: Explorateur de performances | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2076aaa86f51da7928b0f81213ff97553262eb56
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d504c06cb038bbaa7298249384e88ad5bb2d5705
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493158"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248480"
 ---
 # <a name="performance-explorer"></a>Explorateur de performances
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Explorateur de performances](https://docs.microsoft.com/visualstudio/profiling/performance-explorer).  
-  
 Grâce aux outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], les développeurs peuvent mesurer, évaluer et cibler les problèmes de performances de leur code. Ces outils sont totalement intégrés à l'environnement de développement intégré (IDE) pour fournir une expérience utilisateur conviviale et accessible.  
   
  Le profilage d'une application est simple. Vous commencez par créer une session de performance. Dans l'édition Visual Studio Team System Development, vous pouvez utiliser l'Assistant Création d'une nouvelle session de performance pour créer une session de performance. À la fin de la session de performance, les données rassemblées lors du profilage sont enregistrées dans un fichier .vsp. Vous pouvez afficher le fichier .vsp dans l'interface IDE. Plusieurs vues de rapport sont disponibles pour vous aider à visualiser et à détecter les problèmes de performances provenant des données collectées.  

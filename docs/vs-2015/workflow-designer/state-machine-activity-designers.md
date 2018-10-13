@@ -1,7 +1,7 @@
 ---
 title: Concepteurs d’activités de Machine d’état | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: steved0x
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 5b9da275c3c4c679fcc6de08f5611b2a594bd8bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fff12b5d3ba67f01a210d708081a010c4c20eea1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505109"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245516"
 ---
 # <a name="state-machine-activity-designers"></a>Concepteurs d'activités d'ordinateur d'état
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] inclut plusieurs concepteurs d'activités que vous pouvez utiliser lors de la construction de vos workflows. Cette section contient les concepteurs d'activités fournis par le système utilisés pour créer et gérer des workflows de machine à états. Les rubriques suivantes décrivent ces concepteurs et fournissent des conseils sur la façon de les utiliser.  

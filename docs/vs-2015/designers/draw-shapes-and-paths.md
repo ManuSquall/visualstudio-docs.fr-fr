@@ -1,7 +1,7 @@
 ---
 title: Dessiner des formes et des tracés | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 79a48b91c7d467e66be8311692a85dc1b4de25dd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0f59ecbdf9e69093d5c445cdb6d4780eb3b6f86e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495185"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188186"
 ---
 # <a name="draw-shapes-and-paths"></a>Dessiner des formes et des tracés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [dessiner des formes et des chemins d’accès](https://docs.microsoft.com/visualstudio/designers/draw-shapes-and-paths).  
-  
 Dans le concepteur XAML, une *forme* correspond exactement à ce à quoi vous pensez : un cercle, un rectangle, une ellipse, etc. Un *tracé* est une sorte de forme qui offre davantage de souplesse. Vous pouvez notamment le remodeler ou le combiner à d'autres tracés pour créer de nouvelles formes.  
   
  Les formes et les tracés font appel à des graphiques vectoriels pour mieux s’adapter aux affichages à haute résolution. Pour en savoir plus sur les graphiques vectoriels, regardez la vidéo [What are Vector Graphics](https://www.youtube.com/watch?v=MoCSwF0n-io) (Présentation des graphiques vectoriels) ou lisez la définition des [graphiques vectoriels](http://www.webopedia.com/TERM/V/vector_graphics.html).  

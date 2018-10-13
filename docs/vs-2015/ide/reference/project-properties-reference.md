@@ -1,7 +1,7 @@
 ---
 title: Référence de propriétés de projet | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c31817310f1626c95ac4380e6cb1e922e72defc4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 497afd9c7fb6f1449d8d9c2227c7ae1ee7af44b8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505270"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297529"
 ---
 # <a name="project-properties-reference"></a>Référence de propriétés de projet
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [référence des propriétés de projet](https://docs.microsoft.com/visualstudio/ide/reference/project-properties-reference).  
-  
   
 Découvrez-en plus sur la façon de configurer et personnaliser les propriétés de projet.  
   

@@ -1,7 +1,7 @@
 ---
 title: 'Diagrammes d’activités UML : Référence | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bfe4eaad401ce61534e5785ed82b9e33fa2f6610
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3fe8a0d33b0e9be8eecdc55ac68d23138f6506d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494616"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177838"
 ---
 # <a name="uml-activity-diagrams-reference"></a>Diagrammes d'activités UML : référence
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [diagrammes d’activités UML : référence](https://docs.microsoft.com/visualstudio/modeling/uml-activity-diagrams-reference).  
-  
 Un *diagramme d’activités* montre un processus d’entreprise ou un processus logiciel comme un flux de travail via une série d’actions. Ces actions peuvent être effectuées par des personnes, des composants logiciels ou des ordinateurs.  
   
  Vous pouvez utiliser un diagramme d'activités pour décrire des processus de plusieurs types, par exemple :  

@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour visualiser une association de collections (Concepteur de classes) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 42cf379e9cfb2d8a84412a534eb13702febc945a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8e997cf30e4fe8508dd8e1fa8049bdc83e93d53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506694"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197689"
 ---
 # <a name="how-to-visualize-a-collection-association-class-designer"></a>Comment : visualiser une association de collections (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : visualiser une Association de collections (Concepteur de classes)](https://docs.microsoft.com/visualstudio/ide/how-to-visualize-a-collection-association-class-designer).  
-  
 Les propriétés et les champs qui sont des collections d’autres types peuvent être affichés sur le diagramme de classes en tant qu’association de collection. Contrairement à une association normale, qui affiche un champ ou une propriété sous la forme d’une ligne reliant la classe propriétaire au type du champ, une association de collection s’affiche sous la forme d’une ligne reliant la classe propriétaire au type collecté.  
   
 ### <a name="to-create-a-collection-association"></a>Pour créer une association de collection  

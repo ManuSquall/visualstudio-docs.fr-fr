@@ -1,7 +1,7 @@
 ---
 title: '&lt;Produit&gt; élément (programme d’amorçage) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 0936024609bffcdefbae76515f25ac0ffb02885d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4a8f210ffcd327d8d5d6d3e456b3b9588ef72ffe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508326"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261674"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;Produit&gt; élément (programme d’amorçage)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [ &lt;produit&gt; élément (programme d’amorçage)](https://docs.microsoft.com/visualstudio/deployment/product-element-bootstrapper).  
-  
 Le `Product` élément est l’élément XML de niveau supérieur à l’intérieur d’un fichier de produit.  
   
 ## <a name="syntax"></a>Syntaxe  

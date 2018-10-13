@@ -1,7 +1,7 @@
 ---
 title: 'Comment : publier une Application ClickOnce à l’aide de l’Assistant Publication | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 46b969a20859ed537549aaede8818e10c0d13fde
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82600212626ea5c5f0543579b82d95903f1fcc8e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502841"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293902"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Comment : publier une application ClickOnce à l'aide de l'Assistant Publication
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : publier une Application ClickOnce à l’aide de l’Assistant Publication](https://docs.microsoft.com/visualstudio/deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard).  
-  
 Pour mettre une application ClickOnce à la disposition des utilisateurs, vous devez la publier sur un partage de fichiers ou un chemin d’accès, un serveur FTP ou un média amovible. Vous pouvez publier l’application à l’aide de l’Assistant Publication ; propriétés supplémentaires liées à la publication sont disponibles sur le **publier** page de la **Concepteur de projet**. Pour plus d’informations, consultez [publication d’Applications ClickOnce](../deployment/publishing-clickonce-applications.md).  
   
  Avant d'exécuter l'Assistant Publication, vous devez correctement définir les propriétés de publication. Par exemple, si vous souhaitez spécifier une clé pour signer votre application ClickOnce, vous pouvez le faire ainsi de suite le **signature** page de la **Concepteur de projet**. Pour plus d’informations, consultez [Sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md).  

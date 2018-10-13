@@ -1,7 +1,7 @@
 ---
 title: Exécuter des tests unitaires pour les applications du Windows Store dans Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: f7ae0de7e5acd62930b20dd9795d7c76f79599e1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cba96af95aaab2416d12a3791df2165f2f8d4102
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495772"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228505"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Exécuter des tests unitaires pour les applications du Windows Store dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [exécuter des tests unitaires pour les applications de Store dans Visual Studio](https://docs.microsoft.com/visualstudio/test/run-unit-tests-for-store-apps-in-visual-studio).  
-  
 Cette rubrique décrit comment exécuter des tests unitaires à l'aide de l'Explorateur de tests dans Microsoft Visual Studio.  
   
 > [!NOTE]

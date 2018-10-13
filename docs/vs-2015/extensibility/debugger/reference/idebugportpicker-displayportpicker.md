@@ -1,7 +1,7 @@
 ---
 title: IDebugPortPicker::DisplayPortPicker | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 08511ef5-be64-4069-b169-a569cc94bc64
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f21168f249c10a4a7321b78195d86eba8c0a195a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e718df47b45c66b32d88b57b69d81b8f69b9077c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496184"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285803"
 ---
 # <a name="idebugportpickerdisplayportpicker"></a>IDebugPortPicker::DisplayPortPicker
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDebugPortPicker::DisplayPortPicker](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugportpicker-displayportpicker).  
-  
 Affiche la boîte de dialogue spécifiée qui permet à l’utilisateur de sélectionner un port.  
   
 ## <a name="syntax"></a>Syntaxe  

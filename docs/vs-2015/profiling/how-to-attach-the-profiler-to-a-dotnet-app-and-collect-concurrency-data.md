@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour attacher le profileur à une application .NET Framework autonome pour collecter des données concurrentielles en utilisant la ligne de commande │ Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fbc944695293c0ead248c61bec5335749a582d9d
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 4e68155fc835bd17b2ccc5dcf6f639f060774324
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47590479"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276625"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line"></a>Guide pratique pour attacher le profileur à une application .NET Framework autonome pour collecter des données concurrentielles en utilisant la ligne de commande
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : attacher le Profiler pour une Application .NET Framework autonome pour collecter des données d’accès concurrentiel à l’aide de la ligne de commande](https://docs.microsoft.com/visualstudio/profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line).  
-  
 Cette rubrique explique comment utiliser les outils de profilage en ligne de commande [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour attacher le profileur à une application .NET Framework autonome (cliente), et collecter et traiter des données concurrentielles de thread.  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: Collecte des données liées à la durée de vie des objets et à l’allocation de mémoire .NET | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 057bdb7073b1518e20ec0bee461d19478033e3b1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 53443ed1681e5709edc0581fca8e2fd46a51834d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590587"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245555"
 ---
-# <a name="collecting-net-memory-allocation-and-lifetime-data"></a>Collecte de données liées à l’allocation et à la durée de vie de la mémoire .NET
+# <a name="collecting-net-memory-allocation-and-lifetime-data"></a>Collecte des données liées à la durée de vie des objets et à l’allocation de mémoire .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [collecte une Allocation de mémoire .NET et les données de durée de vie](https://docs.microsoft.com/visualstudio/profiling/collecting-dotnet-memory-allocation-and-lifetime-data).  
-  
 Les outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prennent en charge la collecte des données d’allocation de mémoire .NET et de durée de vie des objets, ce qui permet de détecter les problèmes de performances liés à la mémoire de votre application.  
   
 -   Les données concernant l’allocation de mémoire .NET incluent le nombre d’objets mémoire .NET Framework qui ont été alloués, ainsi que leur taille.  

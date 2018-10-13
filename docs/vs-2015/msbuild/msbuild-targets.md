@@ -1,7 +1,7 @@
 ---
 title: Cibles de MSBuild | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 68a596eaf744649047ae912e4b9aac00922e2360
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2eab4a6085ce6756d1b55b0669008cb745b82e28
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494114"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288676"
 ---
 # <a name="msbuild-targets"></a>Cibles de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [cibles MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild-targets).  
-  
   
 Les cibles regroupent les tâches dans un ordre particulier et permet au processus de génération d’être factorisé en unités plus petites. Par exemple, une cible peut supprimer tous les fichiers du répertoire de sortie pour préparer la génération, pendant qu’une autre compile les entrées pour le projet et les place dans le répertoire vide. Pour plus d’informations sur les tâches, consultez [Tâches MSBuild](../msbuild/msbuild-tasks.md).  
   

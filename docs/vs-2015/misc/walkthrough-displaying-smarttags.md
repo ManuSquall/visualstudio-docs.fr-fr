@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : Affichage de balises actives | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,19 @@ helpviewer_keywords:
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
 manager: douge
-ms.openlocfilehash: 15e02986012f186ce4bcb2fdcd6914396b2b597e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 84736e4cb4212b912d87caa7849a37bbc726ffdd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505088"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291016"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>Procédure pas à pas : affichage de balises actives
-Les balises actives sont déconseillées au profit des ampoules. Consultez [Walkthrough : Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
+Les balises actives sont déconseillées au profit des ampoules. Consultez [Walkthrough: Displaying Light Bulb Suggestions](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
   
  Les balises actives sont des balises sur du texte qui se développent pour afficher un ensemble d’actions. Par exemple, dans un projet Visual Basic ou Visual C#, une ligne rouge apparaît sous un mot quand vous renommez un identificateur tel qu’un nom de variable. Lorsque vous déplacez le pointeur sur le trait de soulignement, un bouton est affiché près du pointeur. Si vous cliquez sur le bouton, une action suggérée est affichée, par exemple **Renommer IsRead en IsReady**. Si vous cliquez sur l’action, toutes les références à **IsRead** dans le projet sont renommées **IsReady**.  
   
- Bien que les balises actives font partie de l’implémentation d’IntelliSense dans l’éditeur, vous pouvez implémenter des balises actives en sous-classant <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>, puis en implémentant la <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> interface et le <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> interface.  
+ Même si les étiquettes actives font partie de l’implémentation d’IntelliSense dans l’éditeur, vous pouvez implémenter des étiquettes actives en sous-classant <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>, puis en implémentant les interfaces <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> et <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>.  
   
 > [!NOTE]
 >  Vous pouvez implémenter d’autres types de balises de manière similaire.  
@@ -70,12 +70,12 @@ Les balises actives sont déconseillées au profit des ampoules. Consultez [Walk
      [!code-csharp[VSSDKSmartTagTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#2)]
      [!code-vb[VSSDKSmartTagTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#2)]  
   
-4.  Ajoutez un constructeur pour cette classe qui appelle le constructeur de base avec un <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType> de <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType>, ce qui entraîne une ligne bleue sous le premier caractère d’un mot. (Si vous utilisez <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType>, une ligne rouge apparaît sous le dernier caractère du mot.)  
+4.  Ajoutez un constructeur pour cette classe qui appelle le constructeur de base avec un <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType> égal à <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType>, ce qui provoquera l’affichage d’une ligne bleue sous le premier caractère d’un mot. (Si vous utilisez <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTagType>, une ligne rouge apparaîtra sous le dernier caractère du mot.)  
   
      [!code-csharp[VSSDKSmartTagTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#3)]
      [!code-vb[VSSDKSmartTagTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#3)]  
   
-5.  Ajoutez une classe nommée `TestSmartTagger` qui hérite de <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> de type `TestSmartTag`et implémente <xref:System.IDisposable>.  
+5.  Ajoutez une classe nommée `TestSmartTagger` qui hérite de <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> de type `TestSmartTag` et implémente <xref:System.IDisposable>.  
   
      [!code-csharp[VSSDKSmartTagTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#4)]
      [!code-vb[VSSDKSmartTagTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#4)]  
@@ -85,12 +85,12 @@ Les balises actives sont déconseillées au profit des ampoules. Consultez [Walk
      [!code-csharp[VSSDKSmartTagTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#5)]
      [!code-vb[VSSDKSmartTagTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#5)]  
   
-7.  Ajoutez un constructeur qui définit les champs privés et s’abonne à la <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> événement.  
+7.  Ajoutez un constructeur qui définit les champs privés et s’abonne à l’événement <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>.  
   
      [!code-csharp[VSSDKSmartTagTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#6)]
      [!code-vb[VSSDKSmartTagTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#6)]  
   
-8.  Implémentez <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> afin que la balise est créée pour le mot actuel. (Cette méthode appelle également une méthode privée `GetSmartTagActions` qui est expliquée plus loin.)  
+8.  Implémentez <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> pour que la balise soit créée pour le mot actuel. (Cette méthode appelle également une méthode privée `GetSmartTagActions` qui est expliquée plus loin.)  
   
      [!code-csharp[VSSDKSmartTagTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#7)]
      [!code-vb[VSSDKSmartTagTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#7)]  
@@ -100,17 +100,17 @@ Les balises actives sont déconseillées au profit des ampoules. Consultez [Walk
      [!code-csharp[VSSDKSmartTagTest#8](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#8)]
      [!code-vb[VSSDKSmartTagTest#8](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#8)]  
   
-10. Déclarez l’événement `SmartTagsChanged` .  
+10. Déclarez l’événement `SmartTagsChanged`.  
   
      [!code-csharp[VSSDKSmartTagTest#9](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#9)]
      [!code-vb[VSSDKSmartTagTest#9](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#9)]  
   
-11. Implémentez le `OnLayoutChanged` Gestionnaire d’événements à déclencher le `TagsChanged` événement, ce qui entraîne <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> à appeler.  
+11. Implémentez le gestionnaire d’événements `OnLayoutChanged` pour déclencher l’événement `TagsChanged`, ce qui provoque l’appel à <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A>.  
   
      [!code-csharp[VSSDKSmartTagTest#10](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#10)]
      [!code-vb[VSSDKSmartTagTest#10](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#10)]  
   
-12. Implémentez le <xref:System.IDisposable.Dispose%2A> méthode afin qu’elle annule son abonnement à la <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> événement.  
+12. Implémentez la méthode <xref:System.IDisposable.Dispose%2A> pour qu’elle annule son abonnement à l’événement <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>.  
   
      [!code-csharp[VSSDKSmartTagTest#11](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#11)]
      [!code-vb[VSSDKSmartTagTest#11](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#11)]  
@@ -119,12 +119,12 @@ Les balises actives sont déconseillées au profit des ampoules. Consultez [Walk
   
 #### <a name="to-implement-the-smart-tag-tagger-provider"></a>Pour implémenter le fournisseur de baliseur de balise active  
   
-1.  Ajoutez une classe nommée `TestSmartTagTaggerProvider` qui hérite de <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>. Exportez-la avec un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de « text », un <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> d’avant = « default » et un <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> de <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>.  
+1.  Ajoutez une classe nommée `TestSmartTagTaggerProvider` qui hérite de <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>. Exportez-la avec un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> égal à "text", un <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> égal à Before="default" et un <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> égal à <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>.  
   
      [!code-csharp[VSSDKSmartTagTest#12](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#12)]
      [!code-vb[VSSDKSmartTagTest#12](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#12)]  
   
-2.  Importer le <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> en tant que propriété.  
+2.  Importez le <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> en tant que propriété.  
   
      [!code-csharp[VSSDKSmartTagTest#13](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#13)]
      [!code-vb[VSSDKSmartTagTest#13](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#13)]  
@@ -146,7 +146,7 @@ Les balises actives sont déconseillées au profit des ampoules. Consultez [Walk
      [!code-csharp[VSSDKSmartTagTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#16)]
      [!code-vb[VSSDKSmartTagTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#16)]  
   
- Les deux classes sont similaires à ceci près que l’une appelle <xref:System.String.ToUpper%2A> et les autres appels <xref:System.String.ToLower%2A>. Les étapes suivantes traitent uniquement de la classe d’action de mise en majuscules, mais vous devez implémenter les deux classes. Appliquez les étapes d’implémentation de l’action de mise en majuscules comme modèle pour l’implémentation de l’action de mise en minuscules.  
+ Elles sont identiques, sauf que l’une appelle <xref:System.String.ToUpper%2A> et l’autre appelle <xref:System.String.ToLower%2A>. Les étapes suivantes traitent uniquement de la classe d’action de mise en majuscules, mais vous devez implémenter les deux classes. Appliquez les étapes d’implémentation de l’action de mise en majuscules comme modèle pour l’implémentation de l’action de mise en minuscules.  
   
 1.  Déclarez un ensemble de champs privés.  
   
@@ -163,7 +163,7 @@ Les balises actives sont déconseillées au profit des ampoules. Consultez [Walk
      [!code-csharp[VSSDKSmartTagTest#19](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#19)]
      [!code-vb[VSSDKSmartTagTest#19](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#19)]  
   
-4.  Implémentez la <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagAction.Invoke%2A> méthode en remplaçant le texte dans l’étendue par son équivalent en majuscule.  
+4.  Implémentez la méthode <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagAction.Invoke%2A> en remplaçant le texte dans l’étendue par son équivalent en majuscules.  
   
      [!code-csharp[VSSDKSmartTagTest#20](../snippets/csharp/VS_Snippets_VSSDK/vssdksmarttagtest/cs/testsmarttag.cs#20)]
      [!code-vb[VSSDKSmartTagTest#20](../snippets/visualbasic/VS_Snippets_VSSDK/vssdksmarttagtest/vb/testsmarttag.vb#20)]  

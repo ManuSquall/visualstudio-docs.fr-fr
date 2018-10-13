@@ -1,7 +1,7 @@
 ---
 title: Onglet de la mémoire, de la boîte de dialogue Propriétés de processus | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 45d7933b70555a3c80a094ea8cd3f982e232f5de
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 724e760c585f0e6423164e1a6bb28aefbf696c2f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494790"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245795"
 ---
 # <a name="memory-tab-process-properties-dialog-box"></a>Onglet Mémoire de la boîte de dialogue Propriétés du processus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [onglet de la mémoire, la boîte de dialogue Propriétés du processus](https://docs.microsoft.com/visualstudio/debugger/memory-tab-process-properties-dialog-box).  
-  
 Utilisez le **mémoire** tab pour montrer comment un processus utilise la mémoire. Pour afficher le [boîte de dialogue Propriétés de processus](../debugger/process-properties-dialog-box.md), déplacez le focus à un [vue processus](../debugger/processes-view.md) fenêtre. Sélectionnez n’importe quel nœud de processus dans l’arborescence, puis choisissez **propriétés** à partir de la **vue** menu.  
   
  Les paramètres suivants sont disponibles sur le **mémoire** onglet :  

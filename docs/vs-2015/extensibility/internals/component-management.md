@@ -1,7 +1,7 @@
 ---
 title: Gestion des composants | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: be8a771c0f5de92664914f4f158db9054e321e19
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45a2c4fb0f3fa54a2d2b89c8473961143ec3185c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502528"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280330"
 ---
 # <a name="component-management"></a>Gestion des composants
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [gestion des composants](https://docs.microsoft.com/visualstudio/extensibility/internals/component-management).  
-  
 Unités de tâches dans le programme d’installation de Windows sont appelées composants de programme d’installation de Windows (parfois appelés WICs ou composants uniquement). Un GUID identifie chaque WIC, qui est l’unité de base de l’installation et le décompte de références pour les installations qui utilisent Windows Installer.  
   
  Bien que vous pouvez utiliser plusieurs produits pour créer votre programme d’installation de package Visual Studio, cette discussion suppose l’utilisation de fichiers Windows Installer (.msi). Lorsque vous créez votre programme d’installation, vous devez gérer correctement les déploiement de fichiers, afin que le comptage de références correctes effectuée à tout moment. Par conséquent, différentes versions de votre produit ne seront pas interférer avec ou rompre eux dans une combinaison de l’installation et désinstaller des scénarios.  

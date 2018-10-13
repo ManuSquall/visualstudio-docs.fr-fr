@@ -1,7 +1,7 @@
 ---
 title: Fonction SccBeginBatch | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 33968183-2e15-4e0d-955b-ca12212d1c25
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e62074fa30d68e4cd283fb431f0ae64cff957ed4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 50fa6d14507a9af98d9ca303bc7bf9dbbf93ab6a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501839"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283450"
 ---
 # <a name="sccbeginbatch-function"></a>Fonction SccBeginBatch
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [fonction SccBeginBatch](https://docs.microsoft.com/visualstudio/extensibility/sccbeginbatch-function).  
-  
 Cette fonction démarre une séquence de traitement par lots des opérations de contrôle de code source. Le [SccEndBatch](../extensibility/sccendbatch-function.md) sera appelé pour terminer le lot. Ces lots ne peuvent pas être imbriqués.  
   
 ## <a name="syntax"></a>Syntaxe  

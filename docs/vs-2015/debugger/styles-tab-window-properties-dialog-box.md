@@ -1,7 +1,7 @@
 ---
 title: Onglet, boîte de dialogue Propriétés de fenêtre Styles | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8733cea5451760c355b1c8bc804a4936fa144aae
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 798b858a173f7c8c6ffa1d00048f1900aae8b395
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507278"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277509"
 ---
 # <a name="styles-tab-window-properties-dialog-box"></a>Onglet Styles de la boîte de dialogue Propriétés de la fenêtre
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [onglet Styles, boîte de dialogue Propriétés de fenêtre](https://docs.microsoft.com/visualstudio/debugger/styles-tab-window-properties-dialog-box).  
-  
 Utilisez le **Styles** onglet pour afficher les styles appliqués à la fenêtre sélectionnée. Pour afficher le [boîte de dialogue Propriétés de fenêtre](../debugger/window-properties-dialog-box.md), déplacer le focus vers le [Windows vue](../debugger/windows-view.md) fenêtre. Sélectionnez n’importe quel nœud de fenêtre dans l’arborescence, puis choisissez **propriétés** à partir de la **vue** menu.  
   
  Les paramètres suivants sont disponibles sur le **Styles** onglet :  

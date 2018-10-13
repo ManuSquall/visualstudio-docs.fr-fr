@@ -1,7 +1,7 @@
 ---
 title: Enum (SDK Debug Interface Access) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 18c4868a30a2d363aada73473f7c4a198c76da8b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba4f198ee07337531fe0e8b6fe4ed40b0eac939d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495752"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290691"
 ---
 # <a name="enum-debug-interface-access-sdk"></a>Énumération (Kit de développement logiciel SDK de Debug Interface Access)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Enum (Debug Interface Access SDK)](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/enum-debug-interface-access-sdk).  
-  
 Énumérations sont identifiées par `SymTagEnum` symboles. Chaque valeur d’énumération apparaît comme un enfant de la classe avec un `SymTagConstant` balise.  
   
 ## <a name="properties"></a>Properties  

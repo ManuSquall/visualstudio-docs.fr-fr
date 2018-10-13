@@ -1,7 +1,7 @@
 ---
 title: Exemples de développement mobile multiplateforme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 5
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: ba7f3ed346222a7aa67ffb5212bbb851c5ffeea2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d3e28af0acc9738aa85ac08315ed0bea4b7346fc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502157"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277873"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Exemples de développement mobile multiplateforme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Cross-Platform Mobile Development Examples](https://docs.microsoft.com/visualstudio/cross-platform/cross-platform-mobile-development-examples).  
-  
   
 Plusieurs des modèles installés par Développement multiplateforme en Visual C++ pour appareils mobiles génèrent des exemples complets que vous pouvez utiliser pour en savoir plus. En outre, le Centre de développement Windows présente plusieurs exemples d’applications que vous pouvez télécharger et essayer dans Visual Studio.  
   

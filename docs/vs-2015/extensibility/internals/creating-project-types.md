@@ -1,7 +1,7 @@
 ---
 title: Création de Types de projet | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: bdb2d22e-d622-450c-bb2d-98152a745fcf
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e7bb4ac2f65180476bcc2a793c478c8900ae97cd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6b23e63d8bf04c859b156a23a04af8a91b2dd932
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494416"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260245"
 ---
 # <a name="creating-project-types"></a>Création de types de projets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [création de Types de projet](https://docs.microsoft.com/visualstudio/extensibility/internals/creating-project-types).  
-  
 Vous pouvez étendre [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] en créant un nouveau type de projet. Pour créer un nouveau type de projet, vous devez comprendre les différents concepts et effectuer un certain nombre d’étapes. Les rubriques suivantes fournissent une vue d’ensemble de la création de types de projets.  
   
 ## <a name="in-this-section"></a>Dans cette section  

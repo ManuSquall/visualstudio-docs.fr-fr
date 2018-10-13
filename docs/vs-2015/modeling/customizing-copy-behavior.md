@@ -1,7 +1,7 @@
 ---
 title: Personnalisation du comportement de copie | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 58d96fd67189db7f3984ff1f82537d11306bfb7f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b5e57f5d7b3ab3fa7f956516879f687ff9ac7491
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503329"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286466"
 ---
 # <a name="customizing-copy-behavior"></a>Personnalisation du comportement de la commande copier
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [personnalisation du comportement de copie](https://docs.microsoft.com/visualstudio/modeling/customizing-copy-behavior).  
-  
 Dans un langage spécifique à un domaine (DSL, Domain-Specific Language) créé avec le Kit de développement logiciel (SDK) de visualisation et de modélisation de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez modifier ce qui se produit quand l'utilisateur copie et colle des éléments.  
   
 ## <a name="standard-copy-and-paste-behavior"></a>Comportement standard de copie et de collage  

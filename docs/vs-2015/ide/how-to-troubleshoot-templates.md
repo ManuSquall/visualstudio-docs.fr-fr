@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour résoudre les problèmes des modèles | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b249fe28f91a8dfb24e73ab86f785103910ee9d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a68097745de1f1d94e5c09963a474a0095588fba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502667"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296424"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Comment : dépanner des modèles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : résoudre les problèmes de modèles](https://docs.microsoft.com/visualstudio/ide/how-to-troubleshoot-templates).  
-  
 Si le chargement d’un modèle dans l’environnement de développement échoue, il existe plusieurs façons de procéder pour localiser le problème.  
   
 ## <a name="validating-the-vstemplate-file"></a>Validation du fichier .vstemplate  

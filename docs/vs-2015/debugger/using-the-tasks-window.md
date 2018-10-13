@@ -1,7 +1,7 @@
 ---
 title: À l’aide de la fenêtre tâches | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e7e5d4c979d8160e9b2a9cee1a937bcc8049fc5b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 638c0c44be94398da8b1964a849ad99011044f78
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516617"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226198"
 ---
 # <a name="using-the-tasks-window"></a>Utilisation de la fenêtre Tâches
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [à l’aide de la fenêtre tâches](https://docs.microsoft.com/visualstudio/debugger/using-the-tasks-window).  
-  
 Le **tâches** fenêtre ressemble à la **Threads** fenêtre, à ceci près qu’il affiche des informations <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7), ou [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) des objets au lieu de chaque thread. Comme les threads, les tâches représentent des opérations asynchrones qui peuvent s’exécuter simultanément. Toutefois, plusieurs tâches peuvent s’exécuter sur le même thread. Consultez [programmation asynchrone dans JavaScript (applications du Windows Store)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) pour plus d’informations.  
   
  Dans le code managé, vous pouvez utiliser la **tâches** fenêtre lorsque vous travaillez avec <xref:System.Threading.Tasks.Task?displayProperty=fullName> objets ou avec le **await** et **async** mots clés (**Await** et **Async** en Visual Basic). Pour plus d’informations sur les tâches en code managé, consultez [à la programmation parallèle](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d).  
@@ -48,7 +46,7 @@ Le **tâches** fenêtre ressemble à la **Threads** fenêtre, à ceci près qu�
  ![Fenêtre Tâches parallèles](../debugger/media/parallel-tasks-window.png "Parallel_Tasks_Window")  
   
 > [!NOTE]
->  En code managé, <xref:System.Threading.Tasks.Task> qui a un état <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus> ou <xref:System.Threading.Tasks.TaskStatus>, ne peut pas s'afficher dans la fenêtre Tâches lorsque les threads managés sont à l'état de veille ou à l'état de jonction.  
+>  En code managé, <xref:System.Threading.Tasks.Task> qui a un état <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus> ou <xref:System.Threading.Tasks.TaskStatus>, ne peut pas s’afficher dans la fenêtre Tâches lorsque les threads managés sont à l’état de veille ou à l’état de jonction.  
   
 ## <a name="tasks-column-information"></a>Informations sur les colonnes de la fenêtre Tâches  
  Les colonnes dans le **tâches** la fenêtre affiche les informations suivantes.  

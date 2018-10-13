@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram2::EnumThreads | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0f2a8c51-1315-4c96-8aa1-6a937dc2a769
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 081a658261523a5ed318cba44778164406683a99
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ce07287270c010c3bd27be279ea973d1e2f521f8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493675"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288143"
 ---
 # <a name="idebugprogram2enumthreads"></a>IDebugProgram2::EnumThreads
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDebugProgram2::EnumThreads](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogram2-enumthreads).  
-  
 Récupère une liste des threads qui s’exécutent dans le programme.  
   
 ## <a name="syntax"></a>Syntaxe  

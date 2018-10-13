@@ -1,7 +1,7 @@
 ---
 title: Gestion des ressources d’une application (.NET) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,12 +27,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 487da2a484c49e265306c26d881a2fffc7608002
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b29f32fa59f719af3efab6901596b682c95a5d57
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494730"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287220"
 ---
 # <a name="managing-application-resources-net"></a>Gestion des ressources d'une application (.NET)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

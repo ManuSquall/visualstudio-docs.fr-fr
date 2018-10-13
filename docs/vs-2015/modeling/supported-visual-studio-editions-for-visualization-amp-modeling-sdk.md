@@ -1,7 +1,7 @@
 ---
 title: Prise en charge des éditions de Visual Studio pour la visualisation &amp; Modeling SDK | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3ebfedef5231234ab6c9d0e1319cd6d427a832bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ee0e8021c68e16409bb1c107920cd802e06ee165
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501959"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227051"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Prise en charge des éditions de Visual Studio pour la visualisation &amp; Modeling SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [pris en charge les éditions Visual Studio pour la visualisation &amp; Modeling SDK](https://docs.microsoft.com/visualstudio/modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk).  
-  
 Les éléments suivants sont des listes d’éditions de Visual Studio qui sont prises en charge avec [!INCLUDE[dsl](../includes/dsl-md.md)] dans les environnements de création et de déploiement. Pour plus d’informations sur ces éditions, consultez le Microsoft [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [centre de développement](http://go.microsoft.com/fwlink/?LinkId=75628).  
   
 ## <a name="authoring-edition"></a>Édition de création  

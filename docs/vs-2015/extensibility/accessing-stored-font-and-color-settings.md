@@ -1,7 +1,7 @@
 ---
 title: L’accès à stockée paramètres de police et couleur | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3387c5e611ad12ce81347e51893e8459ecd9a3c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8179262ceabe1765ee6c9eab96553bcbcbbee419
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495297"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191397"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>L’accès à la police stockée ni les paramètres de couleur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [l’accès à stockées paramètres de police et couleur](https://docs.microsoft.com/visualstudio/extensibility/accessing-stored-font-and-color-settings).  
-  
 Le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] l’environnement de développement intégré (IDE) stocke les paramètres modifiés pour les polices et couleurs dans le Registre. Vous pouvez utiliser le <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface pour accéder à ces paramètres.  
   
 ## <a name="to-initiate-state-persistence-of-fonts-and-colors"></a>Pour initier la persistance de l’état de polices et couleurs  

@@ -1,7 +1,7 @@
 ---
 title: Élément buildProjectOnload (modèles Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: b07d3074-0fc9-45e1-baf5-da6bd4f3f1c0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1c194f4236f04eea7d8d1a156c8ee308ff58a143
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 96a58ca3baeb03f01cd2df1a5c4267d444da1728
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "47590918"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253264"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>Élément BuildProjectOnload (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [élément BuildProjectOnload (modèles Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/buildprojectonload-element-visual-studio-templates).  
-  
 Génère les nouveaux projets uniquement quand vous créez et les ajoutez à une solution. L’ensemble de la solution n’est pas généré.  
   
  \<VSTemplate >  

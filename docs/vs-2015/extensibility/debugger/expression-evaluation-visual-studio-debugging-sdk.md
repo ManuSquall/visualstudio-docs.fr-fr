@@ -1,7 +1,7 @@
 ---
 title: Évaluation de l’expression (Kit de développement logiciel de débogage de Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 5044ced5-c18c-4534-b0bf-cc3e50cd57ac
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd5fb9ac88b2535c897978cdd63f9cf0716d53a1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 80e30f9a7579d511a6d2c1678d0980efdb7b8d2e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502603"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238041"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Évaluation d’expression (SDK de débogage Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [évaluation des expressions (débogage SDK Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk).  
-  
 En mode arrêt, l’IDE doit être en mesure d’évaluer des expressions simples impliquant plusieurs variables de votre programme. Pour ce faire, le moteur de débogage (dé) doit être en mesure d’analyser et évaluer une expression qui est entrée dans une des fenêtres de l’IDE.  
   
  Les expressions sont créées à l’aide de la [IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) (méthode) et sont représentées par résultant [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) interface.  

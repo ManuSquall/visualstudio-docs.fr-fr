@@ -1,7 +1,7 @@
 ---
 title: Installer les Versions Visual Studio côte à côte | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,12 +18,12 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: ae67e83b2f1444c09129ed5242afac2c3939c954
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6cc66b828b07c0facb8fae19b562dc6566df420
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507612"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199899"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Installer les Versions Visual Studio côte à côte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ ms.locfileid: "47507612"
 Visual Studio peut être installé sur un ordinateur sur lequel une version antérieure de Visual Studio l’est déjà. Si vous rencontrez un problème d’installation, vous pouvez utiliser l’ [outil de collecte de journaux](http://go.microsoft.com/fwlink/?LinkId=262077) pour collecter des informations sur les échecs de sorte que vous puissiez déboguer les problèmes vous-même.  
   
 > [!NOTE]
->  Nous vous recommandons d’installer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] versions dans l’ordre dans lequel ils ont été publiés. Par exemple, installez Visual Studio 2013 avant d’installer Visual Studio 2015.  
+>  Nous vous recommandons d’installer des versions de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dans leur ordre de commercialisation. Par exemple, installez Visual Studio 2013 avant d’installer Visual Studio 2015.  
   
  Avant d’installer plusieurs versions sur la même machine, vérifiez que les conditions suivantes sont bien réunies :  
   
--   Si vous utilisez Visual Studio 2015 pour ouvrir une solution qui a été créée dans [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], vous pouvez ultérieurement ouvrir et modifier la solution à nouveau dans la version antérieure tant que vous n’avez pas implémenté toutes les fonctionnalités qui sont spécifiques à Visual Studio 2015.  
+-   Si vous utilisez Visual Studio 2015 pour ouvrir une solution créée dans [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], vous pouvez par la suite ouvrir et modifier à nouveau la solution dans la version antérieure à condition de ne pas avoir implémenté de fonctionnalités spécifiques à Visual Studio 2015.  
   
--   Si vous essayez d’utiliser Visual Studio 2015 pour ouvrir une solution qui a été créée dans [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] ou une version antérieure, vous devrez peut-être modifier vos projets et fichiers pour être compatible avec Visual Studio 2015. Pour plus d’informations, consultez le [porter, migrer et mettre à niveau des projets Visual Studio](../misc/port-migrate-and-upgrade-visual-studio-projects-in-visual-studio-15-rc.md) page.  
+-   Si vous essayez d’utiliser Visual Studio 2015 pour ouvrir une solution créée dans [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] ou une version antérieure, vous devrez peut-être modifier vos projets et fichiers pour qu’ils soient compatibles avec Visual Studio 2015. Pour plus d’informations, consultez le [porter, migrer et mettre à niveau des projets Visual Studio](../misc/port-migrate-and-upgrade-visual-studio-projects-in-visual-studio-15-rc.md) page.  
   
--   Si vous désinstallez une version de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sur un ordinateur ayant plusieurs versions installées, les associations de fichier pour [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sont supprimées pour toutes les versions. Vous pouvez remapper ces associations de fichiers à l’aide de la **restaurer les Associations de fichier** bouton sur le **environnement**, **général** page de la [Options](../ide/reference/general-environment-options-dialog-box.md) boîte de dialogue.  
+-   Si vous désinstallez une version de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sur un ordinateur ayant plusieurs versions installées, les associations de fichiers pour [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sont supprimées pour toutes les versions. Vous pouvez remapper ces associations de fichiers à l’aide du bouton **Restaurer les associations de fichiers** sous les onglets **Environnement**, **Général** de la boîte de dialogue [Options](../ide/reference/general-environment-options-dialog-box.md) .  
   
 -   Visual Studio ne met pas automatiquement à niveau les extensions, car elles ne sont pas toutes compatibles. Vous devez réinstaller les extensions à partir de la [galerie Visual Studio](http://go.microsoft.com/fwlink/?LinkId=178891) ou de l’éditeur du logiciel.  
   

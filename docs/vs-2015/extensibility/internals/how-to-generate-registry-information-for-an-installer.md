@@ -1,7 +1,7 @@
 ---
 title: 'Comment : générer des informations de Registre pour un programme d’installation | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a9d23c0c4c6dab73be10425291c9623bf8c01553
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 15e5d71786b64b9224d89ca6a84eb7186cb12437
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505307"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294787"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Comment : générer des informations de Registre pour un programme d’installation
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : générer des informations de Registre pour un programme d’installation](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-generate-registry-information-for-an-installer).  
-  
 L’utilitaire RegPkg.exe peut être utilisé pour générer un manifeste de l’inscription d’un VSPackage managé. Le manifeste peut être incorporé dans un package d’installation de programme d’installation de Windows. RegPkg peut également générer un fichier qui peut être inclus dans un fichier de source d’installation basé sur le [Windows Installer XML Toolset](http://go.microsoft.com/fwlink/?LinkId=62238).  
   
 > [!IMPORTANT]

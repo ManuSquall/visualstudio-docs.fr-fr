@@ -1,7 +1,7 @@
 ---
 title: Prise en charge plusieurs vues de Document | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c1dc6614e90b0f4830991116440e94048145bae
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c82100a544a9f59fbb64af8b78d51314b39690f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495061"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282696"
 ---
 # <a name="supporting-multiple-document-views"></a>Prise en charge de vues de document multiples
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [prenant en charge plusieurs vues de Document](https://docs.microsoft.com/visualstudio/extensibility/supporting-multiple-document-views).  
-  
 Vous pouvez fournir plusieurs vues d’un document en créant des données de document distinct et les objets de vue de document pour votre éditeur. Certains cas dans lesquels une vue de document supplémentaire serait utile sont :  
   
 -   Nouvelle prise en charge de la fenêtre : vous souhaitez que votre éditeur pour fournir deux ou plusieurs vues du même type, afin qu’un utilisateur qui possède déjà une fenêtre Ouvrir dans l’éditeur peut ouvrir une nouvelle fenêtre en sélectionnant le **nouvelle fenêtre** commande à partir de la **fenêtre** menu.  
