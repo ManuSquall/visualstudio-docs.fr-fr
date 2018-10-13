@@ -1,7 +1,7 @@
 ---
 title: Définition d’une stratégie de verrouillage pour créer des Segments en lecture seule | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8af4722d76b9d68f4e880175bccdb1730b6e163b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b9a332916d1f680f403992c35a1fb5a47a6be093
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505180"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231411"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Définition d'une stratégie de verrouillage pour créer des segments en lecture seule
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [définition d’une stratégie de verrouillage pour créer des Segments en lecture seule](https://docs.microsoft.com/visualstudio/modeling/defining-a-locking-policy-to-create-read-only-segments).  
-  
 L’API d’immuabilité de la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK permet à un programme à tout ou partie de verrouillage d’un modèle de langage spécifique à un domaine (DSL) afin qu’il peut être lue mais pas modifié. Cette option en lecture seule peut être utilisée, par exemple, afin qu’un utilisateur peut demander à vos collègues à annoter et passez en revue un modèle DSL, mais leur interdire de modifier l’original.  
   
  En outre, en tant qu’auteur d’un DSL, vous pouvez définir un *stratégie de verrouillage.* Une stratégie de verrouillage définit quels verrous sont autorisés, non autorisé ou obligatoire. Par exemple, lorsque vous publiez une solution DSL, vous pouvez encourager les développeurs tiers pour l’étendre avec de nouvelles commandes. Mais vous pouvez également utiliser une stratégie de verrouillage pour les empêcher de modifier l’état en lecture seule des parties spécifiées du modèle.  

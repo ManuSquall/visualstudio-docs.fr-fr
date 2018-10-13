@@ -1,7 +1,7 @@
 ---
 title: Lier des contrôles WPF à des données dans Visual Studio1 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f07087ce1f7637e63bd2d99aeb2cb125265a2d22
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c71181a939ae91986ed31e2518456002f5bb417c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506885"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237014"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Lier des contrôles WPF à des données dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [WPF de lier des contrôles à des données dans Visual Studio - partie 1 | Microsoft Docs](https://docs.microsoft.com/visualstudio/data-tools/bind-wpf-controls-to-data-in-visual-studio).  
-  
   
 Vous pouvez afficher des données pour les utilisateurs de votre application en liant des données à des contrôles [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)]. Pour créer ces contrôles liés aux données, vous pouvez faire glisser des éléments à partir de la **des Sources de données** fenêtre vers le [!INCLUDE[wpfdesigner_current_short](../includes/wpfdesigner-current-short-md.md)] dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Cette rubrique décrit quelques tâches, outils et classes les plus courants que vous pouvez utiliser pour créer des applications [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] liées aux données.  
   

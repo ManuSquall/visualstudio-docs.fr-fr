@@ -1,7 +1,7 @@
 ---
 title: 'CA3077 : Le traitement non sécurisé dans la conception d’API, Document XML et le lecteur de texte XML | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -13,18 +13,15 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 175d655c2283dfe764564d42b6893b12d1f09e22
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: e70b31b86d8eb19f2d6dd437feea34a499ed7747
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47589981"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233531"
 ---
 # <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077 : traitement non sécurisé dans la conception d’API, le document XML et le lecteur de texte XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Vous trouverez la dernière version de cette rubrique dans [CA3077 : traitement non sécurisé dans la conception d’API, Document XML et le lecteur de texte XML](https://docs.microsoft.com/visualstudio/code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader).
-
 |||
 |-|-|
 |TypeName|InsecureDTDProcessingInAPIDesign|
@@ -36,7 +33,7 @@ Vous trouverez la dernière version de cette rubrique dans [CA3077 : traitement
  Lors de la conception d’une API dérivée de XMLDocument et XMLTextReader, tenez compte de <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>.  L’utilisation d’instances de DTDProcessing non sécurisées lors de la référence ou la résolution de sources d’entités externes ou la définition de valeurs non sécurisées dans le code XML peut aboutir à la divulgation d’informations.
 
 ## <a name="rule-description"></a>Description de la règle
- Un [définition de Type de Document (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) est une des deux façons pour un analyseur XML de déterminer la validité d’un document, tel que défini par le [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Cette règle recherche les propriétés et instances où les données non fiables sont acceptées pour informer les développeurs potentiel [la divulgation d’informations](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) les menaces, ce qui peuvent conduire à [par déni de Service (DoS)](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) les attaques. Cette règle se déclenche quand :
+ Une [définition de type de document (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) est l’une des deux façons pour un analyseur XML de déterminer la validité d’un document, comme défini par la recommandation du  [World Wide Web Consortium (W3C) sur le langage XML (Extensible Markup Language) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Cette règle recherche les propriétés et instances où les données non fiables sont acceptées pour informer les développeurs de menaces de [Information Disclosure](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) éventuelles, qui peuvent entraîner des attaques [par déni de service](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Cette règle se déclenche quand :
 
 -   <xref:System.Xml.XmlDocument> ou <xref:System.Xml.XmlTextReader> classes utilisent les valeurs du programme de résolution par défaut pour le traitement des DTD.
 

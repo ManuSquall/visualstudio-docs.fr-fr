@@ -1,7 +1,7 @@
 ---
 title: Vue Résumé - Données d’échantillonnage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fdfa43dab60268eb428c2affbc6ad072e04b45cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3e88a974c38ab4538faa0ebf6163ec2d8e92db8e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501386"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232965"
 ---
 # <a name="summary-view---sampling-data"></a>Vue Résumé - Données d’échantillonnage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [vue Résumé - données d’échantillonnage](https://docs.microsoft.com/visualstudio/profiling/summary-view-sampling-data).  
-  
 La vue Résumé affiche des informations sur les fonctions dont le coût est le plus élevé quant aux performances dans une exécution du profilage. Pour plus d’informations, notamment une description des liens de notification et des listes de rapports, consultez [Vue Résumé](../profiling/summary-view.md).  
   
 > [!NOTE]
@@ -62,7 +60,7 @@ La vue Résumé affiche des informations sur les fonctions dont le coût est le 
   
 ## <a name="see-also"></a>Voir aussi  
  [Vue Résumé](../profiling/summary-view-dotnet-memory-data.md)   
- [Vue Résumé](../profiling/summary-view-instrumentation-data.md)
+ [Mode Résumé](../profiling/summary-view-instrumentation-data.md)
 
 
 

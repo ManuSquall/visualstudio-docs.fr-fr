@@ -1,7 +1,7 @@
 ---
 title: Génération de Code à partir d’un langage spécifique à un domaine | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3fbe7e40a277174eb556a61b50eb88279adebfb2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5edc6e267957f08837399ae5c2e56bce3cc26cce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506713"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231996"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Génération de code à partir d'un langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [génération du Code à partir d’un langage spécifique à un domaine](https://docs.microsoft.com/visualstudio/modeling/generating-code-from-a-domain-specific-language).  
-  
 Microsoft [!INCLUDE[dsl](../includes/dsl-md.md)] offre un moyen puissant pour générer le code, les documents, les fichiers de configuration et les autres artefacts à partir des données représentées dans les modèles. À l’aide de [!INCLUDE[dsl](../includes/dsl-md.md)], vous pouvez créer un ensemble de classes qui représentent vos données, vous pouvez écrire vos modèles de texte dans les classes dont les noms et propriétés reflètent ces données.  
   
  Par exemple, Fabrikam a un fichier XML de noms de clients et les adresses de messagerie. Leurs développeurs de créer un modèle dans lequel le client est une classe, avec les propriétés nom et adresse électronique. Ils écrivent plusieurs modèles de texte pour traiter les données, y compris ce fragment qui génère une table de tous les clients dans le cadre d’une page HTML :  

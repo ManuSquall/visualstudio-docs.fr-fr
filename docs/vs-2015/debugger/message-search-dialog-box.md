@@ -1,7 +1,7 @@
 ---
 title: Boîte de dialogue de recherche de message | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3ca8eed2caa106b1c528da80ea4c5e2eb4497cc0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2466efee1232f244a01215db5e8495936de2868a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495624"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237040"
 ---
 # <a name="message-search-dialog-box"></a>Boîte de dialogue Recherche d'un message
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [boîte de dialogue de recherche de Message](https://docs.microsoft.com/visualstudio/debugger/message-search-dialog-box).  
-  
 Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud pour un message spécifique dans [vue Messages](../debugger/messages-view.md). Pour afficher cette boîte de dialogue, déplacer le focus vers une fenêtre d’affichage de Messages. Puis choisissez **rechercher le Message** à partir de la **recherche** menu.  
   
  Les paramètres suivants sont disponibles :  

@@ -1,7 +1,7 @@
 ---
 title: Mise à jour hiérarchique | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ddef56f8ec38d73524db661b89e83c456bc50ce0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 550eedd1157d05f180e2229cec7594ae48c2fe45
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494684"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239380"
 ---
 # <a name="hierarchical-update"></a>Mise à jour hiérarchique
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [mise à jour hiérarchique](https://docs.microsoft.com/visualstudio/data-tools/hierarchical-update).  
-  
   
 Mise à jour hiérarchique * désigne le processus d’enregistrement des données mises à jour (à partir d’un jeu de données avec deux ou plusieurs tables liées) à une base de données tout en conservant les règles d’intégrité référentielle. *L’intégrité référentielle* fait référence aux règles de cohérence fournies par les contraintes dans une base de données qui contrôlent le comportement de l’insertion, la mise à jour et suppression des enregistrements associés. Par exemple, il est l’intégrité référentielle impose la création d’un enregistrement de client avant d’autoriser des commandes doit être créé pour ce client.  Pour plus d’informations sur les relations dans les jeux de données, consultez [relations dans les jeux de données](../data-tools/relationships-in-datasets.md)  
   
@@ -84,7 +82,7 @@ Mise à jour hiérarchique * désigne le processus d’enregistrement des donné
   
  Une fois que vous déposez les éléments de la **Sources de données** fenêtre, le code est ajouté automatiquement à la `Form_Load` événement pour remplir chaque table (la `TableAdapter.Fill` méthodes). Code est également ajouté à la **enregistrer** événement de clic du bouton le <xref:System.Windows.Forms.BindingNavigator> pour enregistrer les données du jeu de données dans la base de données (le `TableAdapterManager.UpdateAll` méthode).  
   
- Le code d'enregistrement généré contient également une ligne de code qui appelle la méthode `CustomersBindingSource.EndEdit`. Plus spécifiquement, il appelle le <xref:System.Windows.Forms.BindingSource.EndEdit%2A> méthode du premier <xref:System.Windows.Forms.BindingSource>qui est ajouté au formulaire. En d’autres termes, ce code est généré uniquement pour la première table qui est déplacée de la **des Sources de données** fenêtre vers le formulaire. L'appel de <xref:System.Windows.Forms.BindingSource.EndEdit%2A> valide toutes les modifications en cours de tous les contrôles liés aux données modifiés. Par conséquent, si un contrôle lié aux données a encore le focus et que vous cliquez sur le **enregistrer** bouton, toutes les modifications en attente dans ce contrôle sont validées avant l’enregistrement réel (le `TableAdapterManager.UpdateAll` méthode).  
+ Le code d'enregistrement généré contient également une ligne de code qui appelle la méthode `CustomersBindingSource.EndEdit`. Plus spécifiquement, il appelle le <xref:System.Windows.Forms.BindingSource.EndEdit%2A> méthode du premier <xref:System.Windows.Forms.BindingSource>qui est ajouté au formulaire. En d’autres termes, ce code est généré uniquement pour la première table qui est déplacée de la **des Sources de données** fenêtre vers le formulaire. L’appel de <xref:System.Windows.Forms.BindingSource.EndEdit%2A> valide toutes les modifications en cours de tous les contrôles liés aux données modifiés. Par conséquent, si un contrôle lié aux données a encore le focus et que vous cliquez sur le **enregistrer** bouton, toutes les modifications en attente dans ce contrôle sont validées avant l’enregistrement réel (le `TableAdapterManager.UpdateAll` méthode).  
   
 > [!NOTE]
 >  Le Concepteur de Dataset ajoute uniquement les `BindingSource.EndEdit` code pour la première table qui est déplacée vers le formulaire. Par conséquent, vous devez ajouter une ligne de code pour appeler la méthode `BindingSource.EndEdit` pour chaque table associée dans le formulaire. Dans cette procédure pas à pas, cela signifie que vous devez ajouter un appel à la méthode `OrdersBindingSource.EndEdit`.  
@@ -124,9 +122,9 @@ Mise à jour hiérarchique * désigne le processus d’enregistrement des donné
 |Membre|Description|  
 |------------|-----------------|  
 |Méthode `UpdateAll`|Enregistre toutes les données de toutes les tables de données.|  
-|Propriété `BackUpDataSetBeforeUpdate`|Détermine s’il faut créer une copie de sauvegarde du jeu de données avant d’exécuter le `TableAdapterManager.UpdateAll` (méthode). Valeur booléenne.|  
+|Propriété`BackUpDataSetBeforeUpdate` |Détermine s’il faut créer une copie de sauvegarde du jeu de données avant d’exécuter le `TableAdapterManager.UpdateAll` (méthode). Valeur booléenne.|  
 |*tableName* `TableAdapter` propriété|Représente un `TableAdapter`. Le texte généré `TableAdapterManager` contient une propriété pour chaque `TableAdapter` qu’il gère. Par exemple, un jeu de données avec une table Customers et Orders est généré avec un `TableAdapterManager` contenant `CustomersTableAdapter` et `OrdersTableAdapter` propriétés.|  
-|Propriété `UpdateOrder`|Contrôler l’ordre de l’individuel insert, update et les commandes delete. Définissez ce paramètre à une des valeurs dans le `TableAdapterManager.UpdateOrderOption` énumération.<br /><br /> Par défaut, le `UpdateOrder` a la valeur **InsertUpdateDelete**. Cela signifie que les insertions, puis met à jour et supprime ensuite sont effectuées pour toutes les tables dans le jeu de données. Pour plus d’informations, consultez [Comment : définir l’ordre quand effectuer une mise à jour hiérarchique](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).|  
+|Propriété`UpdateOrder` |Contrôler l’ordre de l’individuel insert, update et les commandes delete. Définissez ce paramètre à une des valeurs dans le `TableAdapterManager.UpdateOrderOption` énumération.<br /><br /> Par défaut, le `UpdateOrder` a la valeur **InsertUpdateDelete**. Cela signifie que les insertions, puis met à jour et supprime ensuite sont effectuées pour toutes les tables dans le jeu de données. Pour plus d’informations, consultez [Comment : définir l’ordre quand effectuer une mise à jour hiérarchique](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md)

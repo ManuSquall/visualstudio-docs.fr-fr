@@ -1,7 +1,7 @@
 ---
 title: Ajout de références avec NuGet ou un kit SDK d’extension | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 54197aa4f8074c206e05e41d2b70d81a76c38f1e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 031b582665abeb14f705725c7bee97f272bd5ab4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508728"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235805"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Ajout de références avec NuGet ou un kit SDK d’extension
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Ajout de références à l’aide de NuGet par rapport à un SDK d’Extension](https://docs.microsoft.com/visualstudio/ide/adding-references-using-nuget-versus-an-extension-sdk).  
-  
 Dans les projets Visual Studio, vous pouvez fournir un package pour la consommation avec l’extension NuGet pour Visual Studio ou avec un kit SDK. En décrivant les ressemblances et les différences entre les deux mécanismes, cette rubrique peut vous aider à choisir la plus adaptée à votre tâche.  
   
 -   NuGet est un système de gestion de packages open source qui simplifie le processus d’intégration de bibliothèques dans une solution de projet. Pour plus d’informations, consultez une [présentation de NuGet](http://go.microsoft.com/fwlink/?LinkId=254877).  

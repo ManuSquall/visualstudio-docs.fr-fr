@@ -1,7 +1,7 @@
 ---
 title: Élément bitmap | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: edcd7891-f4e7-416d-809d-5e2eed9f17e4
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: efcf92479b26e25b1eab485851a849ab083cc54c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cfade1c45e7299450a47c290d3746e4e36817319
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494925"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231517"
 ---
 # <a name="bitmap-element"></a>Élément Bitmap
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [élément de Bitmap](https://docs.microsoft.com/visualstudio/extensibility/bitmap-element).  
-  
 Définit une image bitmap. La bitmap est chargée à partir d’une ressource ou d’un fichier.  
   
 ## <a name="syntax"></a>Syntaxe  

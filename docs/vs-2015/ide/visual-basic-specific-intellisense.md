@@ -1,7 +1,7 @@
 ---
 title: Options IntelliSense spécifiques à Visual Basic | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9bae55b10695ba73fec86d7ab63943e3440e3f05
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d9d9d41b6b98396d253b810fb8ea9485a3d9e0df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507719"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239484"
 ---
 # <a name="visual-basic-specific-intellisense"></a>Options IntelliSense spécifiques à Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [options IntelliSense spécifiques à Visual Basic](https://docs.microsoft.com/visualstudio/ide/visual-basic-specific-intellisense).  
-  
 L’éditeur de code source de Visual Basic propose les fonctionnalités IntelliSense suivantes :  
   
 -   Conseils de syntaxe  

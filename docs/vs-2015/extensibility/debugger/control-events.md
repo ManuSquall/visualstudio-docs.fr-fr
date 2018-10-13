@@ -1,7 +1,7 @@
 ---
 title: Événements de contrôle | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 0fc63484-5fb6-4887-9ea4-1905b459ca9d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7ac93da53f21b56df38a6ad597d7c4911075a670
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d7dcdcf67b4349a5e15e06c702177194045c62f4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507435"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236468"
 ---
 # <a name="control-events"></a>Événements de contrôle
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [événements de contrôle](https://docs.microsoft.com/visualstudio/extensibility/debugger/control-events).  
-  
 Vous devez envoyer des événements pendant l’exécution contrôlée de votre programme. Tous les événements sont envoyés à l’aide de la [IDebugEvent2](../../extensibility/debugger/reference/idebugevent2.md) interface et ont des attributs qui vous obligent à implémenter le [IDebugEvent2::GetAttributes](../../extensibility/debugger/reference/idebugevent2-getattributes.md) (méthode).  
   
 ## <a name="additional-methods"></a>Méthodes supplémentaires  

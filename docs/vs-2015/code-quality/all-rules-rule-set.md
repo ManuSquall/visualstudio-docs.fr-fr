@@ -1,7 +1,7 @@
 ---
 title: Ensemble de règles de toutes les règles | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 67acfe8c77159bb491cc44da8adb86d5c2271d80
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f2afe335fe77293cc690dcd6ea5a2cf491281dbd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504986"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233491"
 ---
 # <a name="all-rules-rule-set"></a>Ensemble de règles de toutes les règles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [ensemble de règles de toutes les règles](https://docs.microsoft.com/visualstudio/code-quality/all-rules-rule-set).  
-  
 L’ensemble de règles de toutes les règles contient toutes les règles pour le code natif et managé. L’ensemble de règles inclut toutes les règles qui sont décrites dans les rubriques suivantes :  
   
 1.  [Avertissements liés à l’analyse de code C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)  

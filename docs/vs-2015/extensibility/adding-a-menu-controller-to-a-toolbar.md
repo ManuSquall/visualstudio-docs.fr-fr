@@ -1,7 +1,7 @@
 ---
 title: Ajout d’un contrôleur de Menu à une barre d’outils | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8f6d124b1dc6bcd16b0f4d62c47df521ba25b07b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a5389626f31fa45f04ec58723450baba5370b24f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505778"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231177"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Ajout d’un contrôleur de menu à une barre d’outils
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Ajout d’un contrôleur de Menu à une barre d’outils](https://docs.microsoft.com/visualstudio/extensibility/adding-a-menu-controller-to-a-toolbar).  
-  
 Cette procédure pas à pas s’appuie sur le [Ajout d’une barre d’outils à une fenêtre outil](../extensibility/adding-a-toolbar-to-a-tool-window.md) procédure pas à pas et montre comment ajouter un contrôleur de menu à la barre d’outils de la fenêtre outil. Les étapes présentées ici peuvent également être appliqués à la barre d’outils qui est créé dans le [Ajout d’une barre d’outils](../extensibility/adding-a-toolbar.md) procédure pas à pas.  
   
  Un contrôleur de menu est un contrôle de fractionnement. Le côté gauche du contrôleur de menu affiche la commande utilisé en dernier, et il peut être exécuté en cliquant dessus. Le côté droit du contrôleur de menu est une flèche qui, lorsque vous cliquez dessus, ouvre une liste de commandes supplémentaires. Lorsque vous cliquez sur une commande dans la liste, la commande s’exécute, et il remplace la commande sur le côté gauche du contrôleur de menu. De cette façon, le contrôleur de menu fonctionne comme un bouton de commande qui affiche toujours la commande utilisé en dernier dans la liste.  

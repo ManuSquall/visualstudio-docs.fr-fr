@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble du modèle Automation | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 12b6d6db-0d22-4aaa-aa7d-1365f759b7b0
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fdce23e892fe2fa14dc7f24f95d5744be2c67c39
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c31d3b9f18ede2137b5cffe2dd3600de727b9de1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502177"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235688"
 ---
 # <a name="automation-model-overview"></a>Modèle d’automatisation
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [vue d’ensemble du modèle Automation](https://docs.microsoft.com/visualstudio/extensibility/internals/automation-model-overview).  
-  
 Le modèle automation se compose d’un ensemble d’objets par rapport à laquelle vous pouvez écrire un complément Visual Studio ou une extension. Un complément est une application qui peut manipuler l’environnement Visual Studio et automatiser les tâches courantes. Une extension Visual Studio peut créer des composants personnalisés de Visual Studio ou ajouter des fonctionnalités de composants standard tels que l’éditeur de texte.  
   
 ## <a name="objects-in-the-automation-model"></a>Objets dans le modèle Automation  

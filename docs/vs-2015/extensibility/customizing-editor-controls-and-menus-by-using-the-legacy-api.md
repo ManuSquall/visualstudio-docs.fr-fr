@@ -1,7 +1,7 @@
 ---
 title: Personnalisation des Menus et contrôles d’édition à l’aide de l’API héritée | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 1ce1f55b-6825-4654-a60a-7831af2ab44f
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b5a4e5acc7dfc3db2eefad146db24849f1c3b36d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2038d3e084778a6df6c765be5fbff9e7d53a1f90
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504119"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240493"
 ---
 # <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>Personnalisation des Menus et contrôles d’édition à l’aide de l’API héritée
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [personnalisation des contrôles d’édition et les Menus à l’aide de l’API héritée](https://docs.microsoft.com/visualstudio/extensibility/customizing-editor-controls-and-menus-by-using-the-legacy-api).  
-  
 Un service de langage ou un affichage de texte peut contrôler les menus contextuels et les contrôles dans l’éditeur. Les pages de cette section décrit en détail comment travailler avec ces fonctionnalités.  
   
 ## <a name="in-this-section"></a>Dans cette section  

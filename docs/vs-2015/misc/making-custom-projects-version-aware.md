@@ -1,7 +1,7 @@
 ---
 title: Rendre les projets personnalisés prenant en charge les Version | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,34 +12,34 @@ ms.topic: article
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: douge
-ms.openlocfilehash: 164a56973ac35220a0efd7e85da2f0a074b88b3c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ae06a36155ed7270ce01178fa49e40dff06aed8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493897"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236325"
 ---
 # <a name="making-custom-projects-version-aware"></a>Prise en charge des versions dans les projets personnalisés
 Dans votre système de projet personnalisé, vous pouvez faire en sorte que les projets de ce type se chargent dans plusieurs versions de Visual Studio. Vous pouvez aussi empêcher les projets de ce type de se charger dans une version antérieure de Visual Studio. De même, vous pouvez permettre à un projet de s’identifier dans une version ultérieure dans le cas où il aurait besoin d’être réparé, converti ou désapprouvé.  
   
 ## <a name="allowing-projects-to-load-in-multiple-versions"></a>Autorisation du chargement de projets dans plusieurs versions  
- Vous pouvez modifier la plupart des projets qui ont été créés dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] avec SP1 ou version ultérieure pour fonctionner dans plusieurs versions.  
+ Vous pouvez modifier la plupart des projets qui ont été créés dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] avec SP1 ou une version ultérieure de façon à les faire fonctionner dans plusieurs versions.  
   
- Avant de charger un projet, Visual Studio appelle le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly%2A> méthode pour déterminer si le projet peut être mis à niveau. Si le projet peut être mis à niveau, le `UpgradeProject_CheckOnly` méthode définit un indicateur qui provoque un appel ultérieur à la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> méthode pour mettre à niveau le projet. Sachant que les projets incompatibles ne peuvent pas être mis à niveau, `UpgradeProject_CheckOnly` doit d’abord vérifier que le projet est compatible, comme l’indique la section précédente.  
+ Avant de charger un projet, Visual Studio appelle la méthode <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly%2A> pour déterminer si le projet peut être mis à niveau. Si c’est le cas, la méthode `UpgradeProject_CheckOnly` définit un indicateur qui provoque un appel ultérieur à la méthode <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> pour mettre à niveau le projet. Sachant que les projets incompatibles ne peuvent pas être mis à niveau, `UpgradeProject_CheckOnly` doit d’abord vérifier que le projet est compatible, comme l’indique la section précédente.  
   
- En tant qu’auteur d’un système de projet, vous devez implémenter `UpgradeProject_CheckOnly` (à partir de l’interface `IVsProjectUpgradeViaFactory4` ) pour permettre aux utilisateurs de votre système de projet de vérifier les possibilités de mise à niveau. Quand les utilisateurs ouvrent un projet, cette méthode est appelée pour déterminer si un projet doit être réparé avant d’être chargé. Les conditions possibles de mise à niveau sont énumérées dans `VSPUVF_REPAIRFLAGS`; voici les différentes possibilités :  
+ En tant qu’auteur d’un système de projet, vous devez implémenter `UpgradeProject_CheckOnly` (à partir de l’interface `IVsProjectUpgradeViaFactory4` ) pour permettre aux utilisateurs de votre système de projet de vérifier les possibilités de mise à niveau. Quand les utilisateurs ouvrent un projet, cette méthode est appelée pour déterminer si un projet doit être réparé avant d’être chargé. Les conditions possibles de mise à niveau sont énumérées dans `VSPUVF_REPAIRFLAGS` ; voici les différentes possibilités :  
   
-1.  `SPUVF_PROJECT_NOREPAIR`: Aucune réparation n’est nécessaire.  
+1.  `SPUVF_PROJECT_NOREPAIR` : aucune réparation n’est nécessaire.  
   
-2.  `VSPUVF_PROJECT_SAFEREPAIR`: Rend le projet compatible avec une version antérieure sans les problèmes que vous pouvez être exposé avec les versions précédentes du produit.  
+2.  `VSPUVF_PROJECT_SAFEREPAIR` : rend le projet compatible avec une version antérieure sans les problèmes auxquels vous auriez pu être exposé avec les versions précédentes du produit.  
   
-3.  `VSPUVF_PROJECT_UNSAFEREPAIR`: Rend le projet rétrocompatible tout à certains des problèmes que vous auriez pu rencontrer avec les versions précédentes du produit. Par exemple, le projet ne sera pas compatible s’il dépend de différentes versions de Kit de développement logiciel (SDK).  
+3.  `VSPUVF_PROJECT_UNSAFEREPAIR` : rend le projet rétrocompatible tout en vous exposant à certains problèmes que vous auriez pu rencontrer avec les versions précédentes du produit. Par exemple, le projet ne sera pas compatible s’il dépend de différentes versions de Kit de développement logiciel (SDK).  
   
-4.  `VSPUVF_PROJECT_ONEWAYUPGRADE`: Rend le projet incompatible avec une version antérieure.  
+4.  `VSPUVF_PROJECT_ONEWAYUPGRADE` : rend le projet incompatible avec une version antérieure.  
   
-5.  `VSPUVF_PROJECT_INCOMPATIBLE`: Indique que la version actuelle ne prend en charge ce projet.  
+5.  `VSPUVF_PROJECT_INCOMPATIBLE` : indique que la version actuelle ne prend pas en charge ce projet.  
   
-6.  `VSPUVF_PROJECT_DEPRECATED`: Indique que ce projet n’est plus pris en charge.  
+6.  `VSPUVF_PROJECT_DEPRECATED` : indique que ce projet n’est plus pris en charge.  
   
 > [!NOTE]
 >  Pour éviter toute confusion, ne définissez pas plusieurs indicateurs de mise à niveau. Par exemple, ne créez pas un état de mise à niveau ambigu tel que `VSPUVF_PROJECT_SAFEREPAIR | VSPUVF_PROJECT_DEPRECATED`.  
@@ -50,14 +50,14 @@ Dans votre système de projet personnalisé, vous pouvez faire en sorte que les 
   
  Pour des implémentations managées, les interfaces de mise à niveau de projet sont disponibles dans l’assembly d’interopérabilité Microsoft.VisualStudio.Shell.Interop.11.0.dll.  
   
- La méthode `UpgradeProject` peut déterminer si les modifications qu’elle apporte empêcheraient le projet de se charger dans une version antérieure de Visual Studio. Si tel est le cas, la méthode marque le projet comme étant incompatible. Pour comprendre comment un projet est marqué comme étant incompatible, consultez [marquage d’un projet comme étant incompatibles](../misc/making-custom-projects-version-aware.md#BKMK_Incompat) plus haut dans cette rubrique. Nous vous recommandons de marquer le projet comme étant incompatible dès l’affichage de cette boîte de dialogue en appelant directement la méthode `IVsAppCompat.BreakAssetCompatibility` , au lieu d’appeler d’abord la méthode `IVsAppCompat.AskForUserConsentToBreakAssetCompat` , car la boîte de dialogue n’a pas besoin d’être affichée deux fois.  
+ La méthode `UpgradeProject` peut déterminer si les modifications qu’elle apporte empêcheraient le projet de se charger dans une version antérieure de Visual Studio. Si tel est le cas, la méthode marque le projet comme étant incompatible. Pour comprendre comment un projet est marqué « incompatible », consultez [Marking a Project as Incompatible](../misc/making-custom-projects-version-aware.md#BKMK_Incompat) plus haut dans cette rubrique. Nous vous recommandons de marquer le projet comme étant incompatible dès l’affichage de cette boîte de dialogue en appelant directement la méthode `IVsAppCompat.BreakAssetCompatibility` , au lieu d’appeler d’abord la méthode `IVsAppCompat.AskForUserConsentToBreakAssetCompat` , car la boîte de dialogue n’a pas besoin d’être affichée deux fois.  
   
  Voici un exemple qui résume l’expérience utilisateur de la boîte de dialogue de compatibilité. Si un projet a été créé dans une version antérieure et que la version actuelle détermine qu’une mise à niveau est nécessaire, Visual Studio affiche une boîte de dialogue pour demander à l’utilisateur l’autorisation d’apporter les modifications. Si l’utilisateur accepte, le projet est modifié puis chargé. Si la solution est ensuite fermée et rouverte dans une version antérieure, le projet ayant fait l’objet d’une mise à niveau définitive devient incompatible et ne se charge pas. Si le projet nécessite seulement une réparation (et non une mise à niveau), le projet réparé continue de s’ouvrir dans les deux versions.  
   
 ##  <a name="BKMK_Incompat"></a> Marquage d’un projet comme étant Incompatible  
- Vous pouvez marquer un projet comme étant incompatible avec les versions antérieures de Visual Studio.  Par exemple, supposons que vous créez un projet qui utilise une fonctionnalité de .NET Framework 4.5. Étant donné que ce projet ne peut pas être généré [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], vous pouvez le marquer comme étant incompatibles pour empêcher que la version d’essayer de le charger.  
+ Vous pouvez marquer un projet comme étant incompatible avec les versions antérieures de Visual Studio.  Par exemple, supposons que vous créez un projet qui utilise une fonctionnalité de .NET Framework 4.5. Comme ce projet ne peut pas être généré dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], vous pouvez le marquer comme étant incompatibles pour empêcher cette version de le charger.  
   
- Le composant qui ajoute la fonctionnalité incompatible est chargé de marquer le projet comme étant incompatible. Le composant doit avoir accès à la <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interface qui représente les projets dignes d’intérêt.  
+ Le composant qui ajoute la fonctionnalité incompatible est chargé de marquer le projet comme étant incompatible. Le composant doit avoir accès à l’interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> qui représente les projets qui présentent un intérêt.  
   
 #### <a name="to-mark-a-project-as-incompatible"></a>Pour marquer un projet comme étant incompatible  
   
@@ -108,7 +108,7 @@ Dans votre système de projet personnalisé, vous pouvez faire en sorte que les 
 ## <a name="detecting-whether-a-project-is-incompatible"></a>Détection d’une incompatibilité de projet  
  Un projet qui n’est pas compatible avec la version actuelle de Visual Studio ne doit pas être chargé. De plus, il ne peut ni être mis à niveau ni réparé. Par conséquent, la compatibilité d’un projet doit être vérifiée à deux moments : le premier, quand il s’agit de déterminer s’il doit être mis à niveau ou réparé et le deuxième, avant son chargement.  
   
- Pour activer la détection d’incompatibilité de projet, vous devez implémenter le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly%2A> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> méthodes. Si le projet est incompatible, `UpgradeProject_CheckOnly` doit retourner le code de réussite `VS_S_INCOMPATIBLEPROJECT`et `CreateProject` le code d’erreur `VS_E_INCOMPATIBLEPROJECT`. Pour les projets ayant différentes versions, vous devez implémenter `IVsProjectFlavorUpgradeViaFactory2.UpgradeProjectFlavor_CheckOnly` au lieu de `IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly`.  
+ Pour permettre la détection d’une incompatibilité de projet, vous devez implémenter les méthodes <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly%2A> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>. Si le projet est incompatible, `UpgradeProject_CheckOnly` doit retourner le code de réussite `VS_S_INCOMPATIBLEPROJECT`et `CreateProject` le code d’erreur `VS_E_INCOMPATIBLEPROJECT`. Pour les projets ayant différentes versions, vous devez implémenter `IVsProjectFlavorUpgradeViaFactory2.UpgradeProjectFlavor_CheckOnly` au lieu de `IVsProjectUpgradeViaFactory4.UpgradeProject_CheckOnly`.  
   
  Un système de projet est dit à plusieurs versions s’il intègre un type de projet web, Office (VSTO), Silverlight ou autre. Les anciens systèmes de projet qui implémentent déjà `IVsProjectUpgradeViaFactory.UpgradeProject_CheckOnly` et les systèmes de projet à plusieurs versions qui implémentent déjà `IVsProjectFlavorUpgradeViaFactory.UpgradeProjectFlavor_CheckOnly` continuent d’être pris en charge. L’ancienne version de `IVsProjectUpgradeViaFactory.UpgradeProject_CheckOnly` a la signature d’implémentation suivante :  
   
@@ -123,7 +123,7 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
 )  
 ```  
   
- Si cette méthode attribue à `pUpgradeRequired` la valeur TRUE et retourne `S_OK`, le résultat est considéré comme une « Mise à niveau » et comme si la méthode attribuait à un indicateur de mise à niveau la valeur `VSPUVF_PROJECT_ONEWAYUPGRADE`, qui est décrite plus loin dans cette rubrique. Les valeurs de retour suivantes sont prises en charge en utilisant cette ancienne méthode, mais seulement quand `pUpgradeRequired` a la valeur TRUE :  
+ Si cette méthode attribue à `pUpgradeRequired` la valeur TRUE et retourne `S_OK`, le résultat est considéré comme une « Mise à niveau » et comme si la méthode attribuait à un indicateur de mise à niveau la valeur `VSPUVF_PROJECT_ONEWAYUPGRADE`, qui est décrite plus loin dans cette rubrique. Les valeurs de retour suivantes sont prises en charge en utilisant cette ancienne méthode, mais seulement quand `pUpgradeRequired` a la valeur TRUE :  
   
 1.  `VS_S_PROJECT_SAFEREPAIRREQUIRED`. Cette valeur de retour traduit la valeur `pUpgradeRequired` en valeur TRUE qui est l’équivalent de `VSPUVF_PROJECT_SAFEREPAIR`, dont vous trouverez la description plus loin dans cette rubrique.  
   
@@ -136,7 +136,7 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
 > [!NOTE]
 >  Vous pouvez mettre en cache le résultat de la vérification de compatibilité exécutée par la méthode `UpgradeProject_CheckOnly` de sorte que le prochain appel à `CreateProject`puisse aussi l’utiliser.  
   
- Par exemple, si le `UpgradeProject_CheckOnly` et `CreateProject` les méthodes qui sont écrites pour un [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] avec le système de projet SP1 examinent un fichier projet et constatez que le `<MinimumVisualStudioVersion>` propriété de build est « 11.0 », Visual Studio 2010 SP1 ne charge pas le projet. De plus, **Solution Navigator** indique que le projet est « incompatible » et ne le charge pas.  
+ Par exemple, si les méthodes `UpgradeProject_CheckOnly` et `CreateProject` qui sont écrites pour un système de projet [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] avec SP1 examinent un fichier projet et déterminent que la propriété de build `<MinimumVisualStudioVersion>` a la valeur « 11.0 », Visual Studio 2010 SP1 ne charge pas le projet. De plus, **Solution Navigator** indique que le projet est « incompatible » et ne le charge pas.  
   
 ##  <a name="BKMK_UpgradeLogger"></a> Le journal de mise à niveau  
  L’appel à `IVsProjectUpgradeViaFactory::UpgradeProject` contient un enregistreur d’événements `IVsUpgradeLogger` que les systèmes et versions de projet doivent utiliser pour fournir un suivi de mise à niveau détaillé à des fins de dépannage. Si un avertissement ou une erreur est consigné, Visual Studio affiche le rapport de mise à niveau.  

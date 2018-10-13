@@ -1,7 +1,7 @@
 ---
 title: 'Comment : configurer l’analyse du Code pour un projet de Code managé | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 34c3088aee4089c69669eaa3af5a08a657553363
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 98f3d14b73b0219d0fcec4312648bf613f37378e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508660"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239185"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Procédure : configurer l’analyse du code pour un projet de code managé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : configurer l’analyse du Code pour un projet de Code managé](https://docs.microsoft.com/visualstudio/code-quality/how-to-configure-code-analysis-for-a-managed-code-project).  
-  
 Dans [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] et [!INCLUDE[vsPro](../includes/vspro-md.md)], vous pouvez choisir parmi une liste d’analyse du code *ensembles de règles* à appliquer à un projet de code managé. L’ensemble de règles par défaut est de règles Microsoft minimales recommandées. Vous pouvez appliquer un autre ensemble de règles à un projet ou à tous les projets dans une solution.  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: Vues uniques et multiples onglet | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84893d8465316d35098efbc99eb7ba988fcbe8d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e429add1b4b18cff84a2933601c56c7b026db15
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505271"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236000"
 ---
 # <a name="single-and-multi-tab-views"></a>Vues à onglet unique et onglets multiples
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [unique et les vues de l’onglet multi](https://docs.microsoft.com/visualstudio/extensibility/single-and-multi-tab-views).  
-  
 Un éditeur peut créer différents types de vues. Par exemple, une fenêtre d’éditeur de code, un autre est un concepteur de formulaires.  
   
  Une vue dotée de plusieurs onglets est une vue qui comporte plusieurs onglets. Par exemple, l’éditeur HTML comporte deux onglets en bas : **conception** et **Source**, chacun une vue logique. La vue de conception affiche une page web affichée, tandis que l’autre affiche le code HTML qui comprend la page web.  

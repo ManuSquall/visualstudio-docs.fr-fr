@@ -1,7 +1,7 @@
 ---
 title: Déploiement de Pages de démarrage personnalisées | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a7c4ec55263212ef7c44c7e5b6093ef4a3e9adb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 99520828ff4a6ac44ca4512b2104cb3019a9785a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504497"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235376"
 ---
 # <a name="deploying-custom-start-pages"></a>Déploiement de pages de démarrage personnalisées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Deploying Custom Start Pages](https://docs.microsoft.com/visualstudio/extensibility/deploying-custom-start-pages).  
-  
 Vous pouvez déployer les Pages de démarrage personnalisées à l’aide de déploiement VSIX ou en copiant les fichiers aux emplacements appropriés sur l’ordinateur cible.  
   
 ## <a name="vsix-deployment-by-using-the-start-page-project-template"></a>Déploiement VSIX à l’aide du modèle de projet de Page de démarrage  

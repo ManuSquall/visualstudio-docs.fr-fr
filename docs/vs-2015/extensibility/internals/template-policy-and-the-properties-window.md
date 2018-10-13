@@ -1,7 +1,7 @@
 ---
 title: Stratégie de modèle et de la fenêtre Propriétés | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 1d8019d3-5e57-47ba-b358-526b0796a63b
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9f8b2085818c539fe0e751a63562496363b43555
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 56ba04319023c60edca1e295d07d864e959f5f7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507944"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236923"
 ---
 # <a name="template-policy-and-the-properties-window"></a>Stratégie de modèle et fenêtre Propriétés
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [stratégie de modèle et de la fenêtre Propriétés](https://docs.microsoft.com/visualstudio/extensibility/internals/template-policy-and-the-properties-window).  
-  
 Lorsqu’un projet est contenu à l’intérieur d’un projet de modèle d’entreprise, ce projet de modèle d’entreprise peut appliquer la stratégie. Stratégie de modèle devienne un système de contrainte qui peut être utilisé pour définir les valeurs par défaut pour les propriétés, masquer les propriétés, ajouter des propriétés et ainsi de suite.  
   
  À l’aide de la stratégie de modèle pour contrôler l’affichage des informations dans le **propriétés** fenêtre est différente de l’implémentation <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> gère les propriétés de l’objet au niveau du composant, tandis que la stratégie de modèle peut être utilisée pour limiter les propriétés de l’objet au niveau de la solution ou le projet. En d’autres termes  

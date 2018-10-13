@@ -1,7 +1,7 @@
 ---
 title: L’inscription de gestionnaires de commandes d’Assembly d’interopérabilité | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2288c1692f50e3937bbfa71502a0572a1747c976
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea0ea8a8374f63335e3e5b2a7c00bdb8c3084d11
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503223"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234965"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Inscription des gestionnaires de commandes d’assemblys d’interopérabilité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [l’inscription de gestionnaires de commandes Assembly Interop](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-interop-assembly-command-handlers).  
-  
 Un VSPackage doit inscrire avec [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] afin que l’environnement de développement intégré (IDE) achemine ses commandes correctement.  
   
- Le Registre peut être mis à jour par une modification manuelle ou à l’aide d’un fichier d’inscription (.rgs). Pour plus d’informations, consultez [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
+ Le Registre peut être mis à jour par une modification manuelle ou à l’aide d’un fichier d’inscription (.rgs). Pour plus d'informations, consultez [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
   
  Managed Package Framework (MPF) fournit cette fonctionnalité via le <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> classe.  
   

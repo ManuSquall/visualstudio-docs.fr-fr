@@ -1,7 +1,7 @@
 ---
 title: Utilisation du Concepteur de flux de travail d’ordinateur état hérité | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -21,12 +21,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: aafe537adf0a48ea38cdeb84a3461fef30cb13e0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 30eaf026d0558538c51b4cbda313e051348a5120
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501652"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231684"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Utilisation du Concepteur de Workflow d'ordinateur d'état hérité
 Quand vous créez un nouveau projet de flux de travail de machine état dans [!INCLUDE[vs2010](../includes/vs2010-md.md)] qui cible le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], vous pouvez choisir d’utiliser soit le **Console Application de Workflow de Machine d’état** ou le  **Bibliothèque de flux de travail de Machine d’état** modèle de projet hérité. Si vous choisissez l'un de ces modèles de projet d'ordinateur d'état, le concepteur d'ordinateurs d'état est présenté comme interface utilisateur de concepteur de workflow hérité. Pour plus d’informations sur les modèles de projet d’ordinateur état hérités, consultez [Comment : créer état Machine Applications Console de Workflow (hérité)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) et [Comment : créer une bibliothèque de flux de travail de Machine état (héritée)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  

@@ -1,7 +1,7 @@
 ---
 title: Modèle de projet VSIX | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ec54b88483966851149449bc1c605ee991c436b6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fea3271ed628455d53a927fd5993e887564d27ea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508094"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236182"
 ---
 # <a name="vsix-project-template"></a>Modèle de projet VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [modèle de projet VSIX](https://docs.microsoft.com/visualstudio/extensibility/vsix-project-template).  
-  
 Vous pouvez utiliser le modèle de projet VSIX pour encapsuler une ou plusieurs extensions de Visual Studio dans un projet VSIX et puis publier le package sur le [galerie Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) site Web.  
   
  Déploiement VSIX prend en charge les VSPackages, assemblys, MEF composants, modèles de projet, modèles d’élément, les contrôles de boîte à outils et types d’extension personnalisée.  

@@ -1,7 +1,7 @@
 ---
 title: Générer et configurer votre application à partir de modèles | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 9
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d972e56ebd434f9e302d48ce325c66320f50be74
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c236a0b0896c135035d4d20eecfe5379b62522a3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508832"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240641"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Générer et configurer votre application à partir de modèles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [générer et configurer votre application à partir de modèles](https://docs.microsoft.com/visualstudio/modeling/generate-and-configure-your-app-from-models).  
-  
 Vous pouvez générer ou configurer certaines parties de votre application à partir d'un modèle. Ce modèle peut être en langage UML ou DSL.  
   
  Il représente les impératifs plus directement que le code. En dérivant le comportement de l'application directement à partir du modèle, vous pouvez répondre aux changements d'impératifs avec beaucoup plus de rapidité et de fiabilité que par la mise à jour du code. Bien qu'un travail initial soit nécessaire pour configurer la dérivation, cet investissement est rentable si vous prévoyez que les impératifs changeront ou si vous envisagez de créer plusieurs variantes du produit.  
