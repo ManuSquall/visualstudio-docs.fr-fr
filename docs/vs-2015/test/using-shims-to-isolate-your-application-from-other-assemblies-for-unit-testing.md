@@ -1,7 +1,7 @@
 ---
 title: Utilisation de shims pour isoler votre application des autres assemblys pour des tests unitaires| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: 14
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9a1047f9399efd86b004eb22ce7064f2c7081910
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 54702db4a89bdabb58805560ed8b9909652c649e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505568"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173691"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Utilisation de shims pour isoler votre application des autres assemblys pour des tests unitaires
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [à l’aide de shims pour isoler votre application à partir d’autres assemblys pour les tests unitaires](https://docs.microsoft.com/visualstudio/test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing).  
-  
 Types shim ** sont une des deux technologies utilisées par le Framework Microsoft Fakes pour vous permettre d’isoler facilement des composants sous test à partir de l’environnement. Les shims détournent les appels à des méthodes spécifiques vers le code que vous écrivez dans le cadre de votre test. De nombreuses méthodes retournent des résultats différents selon les conditions externes, mais un shim est sous le contrôle de votre test et peut retourner des résultats cohérents lors de chaque appel. Cela facilite l'écriture de vos tests.  
   
  Utilisez les shims pour isoler le code des assemblys qui ne font pas partie de votre solution. Pour isoler les composants de votre solution les uns des autres, nous vous recommandons d'utiliser les stubs.  

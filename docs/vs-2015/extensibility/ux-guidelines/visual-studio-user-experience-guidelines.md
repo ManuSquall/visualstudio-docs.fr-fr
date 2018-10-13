@@ -1,7 +1,7 @@
 ---
 title: Recommandations pour l’expérience utilisateur Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d5773bdbd493b29281d148066306daf5ad9d2d2f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c64ed14a412902679d96a45c45d06438d57fcc64
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505644"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172001"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Lignes directrices pour l’expérience utilisateur dans Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [recommandations pour l’expérience utilisateur Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/visual-studio-user-experience-guidelines).  
-  
 Les consignes d’environnement utilisateur Visual Studio sont conçus pour ceux qui conçoivent des nouvelles fonctionnalités pour Visual Studio. Ces instructions contiennent des informations sur les modèles courants de l’utilisateur et les modèles d’interaction afin que les concepteurs de nouvelles interfaces utilisateur (IU) peuvent créer des expériences utilisateur transparente et cohérente dans l’environnement de développement.  
   
  Développement de logiciels pour comprendre les instructions fournies par Windows signifie que de produits Microsoft. Il existe trois ressources importantes à connaître :  

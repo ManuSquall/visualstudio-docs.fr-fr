@@ -1,7 +1,7 @@
 ---
 title: Vue Résumé - Données d’instrumentation | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17534c0c7970238d4b6ef3de79c87d637743ff83
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae151d944dc85f62e72e0719e6bb2dccc0f21637
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493156"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172430"
 ---
 # <a name="summary-view---instrumentation-data"></a>Vue Résumé - Données d’instrumentation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [vue Résumé - données d’Instrumentation](https://docs.microsoft.com/visualstudio/profiling/summary-view-instrumentation-data).  
-  
 La vue Résumé affiche des informations sur les fonctions dont le coût est le plus élevé quant aux performances dans une exécution du profilage. Pour plus d’informations, notamment une description des liens de notification et des listes de rapports, consultez [Vue Résumé](../profiling/summary-view.md).  
   
 ## <a name="timeline-graph"></a>Graphique chronologique  
@@ -56,7 +54,7 @@ La vue Résumé affiche des informations sur les fonctions dont le coût est le 
   
 ## <a name="see-also"></a>Voir aussi  
  [Vue Résumé](../profiling/summary-view-sampling-data.md)   
- [Vue Résumé](../profiling/summary-view-dotnet-memory-data.md)
+ [Mode Résumé](../profiling/summary-view-dotnet-memory-data.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Utilisation de la boîte à outils | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 140387efef05d7f03812a2d5147aa3cdfc111ed1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 28f142a011f86afe70bfe83fd2cec274548c7b50
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493049"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173145"
 ---
 # <a name="using-the-toolbox"></a>Utilisation de la boîte à outils
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [à l’aide de la boîte à outils](https://docs.microsoft.com/visualstudio/ide/using-the-toolbox).  
-  
 Vous pouvez utiliser la boîte à outils pour ajouter des contrôles et d'autres éléments à votre projet. Vous pouvez glisser-déplacer différents contrôles sur la surface du concepteur que vous utilisez, puis les redimensionner et les positionner.  
   
  La boîte à outils accompagne les modes concepteur, tels que celui associé à un fichier XAML. La boîte à outils affiche uniquement les contrôles utilisables dans le concepteur actuel.  

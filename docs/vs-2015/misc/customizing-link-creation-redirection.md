@@ -1,7 +1,7 @@
 ---
 title: Personnalisation de la création de lien - redirection | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: alancameronwills
 ms.author: awills
 manager: kamrani
-ms.openlocfilehash: 42a410a859aa7414f49c54f5359c6196668289da
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e0246e2d476d7ddd51f302c98fd358ffa83d409d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507205"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172950"
 ---
 # <a name="customizing-link-creation---redirection"></a>Personnalisation de la création de lien - redirection
 Le contenu de cette rubrique a été fusionné avec la rubrique suivante :  

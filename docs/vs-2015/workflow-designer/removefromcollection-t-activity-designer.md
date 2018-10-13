@@ -1,7 +1,7 @@
 ---
 title: RemoveFromCollection&lt;T&gt; Concepteur d’activités | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,18 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 9cb791c64909cf8c494b5c5b3dc481f106dc8cf1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 341ed640666cc4501ac8917b568bf3f41b89b823
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504792"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49170923"
 ---
 # <a name="removefromcollectionlttgt-activity-designer"></a>RemoveFromCollection&lt;T&gt; Concepteur d’activités
 Le **RemoveFromCollection\<T >** ActivityDesigner est utilisé pour créer et configurer un <xref:System.Activities.Statements.RemoveFromCollection%601> activité.  
   
 ## <a name="the-removefromcollectiont-activity"></a>RemoveFromCollection\<T > activité  
- L'activité <xref:System.Activities.Statements.RemoveFromCollection%601> supprime un élément spécifié d'une collection particulière.  
+ L’activité <xref:System.Activities.Statements.RemoveFromCollection%601> supprime un élément spécifié d’une collection particulière.  
   
 ### <a name="using-the-removefromcollectiont-activity-designer"></a>À l’aide de RemoveFromCollection\<T > Concepteur d’activités  
  Le **RemoveFromCollection\<T >** Concepteur d’activités peut être trouvé dans le **Collection** catégorie de la **boîte à outils**, qui est accessible en cliquant sur le **Boîte à outils** onglet [!INCLUDE[wfd2](../includes/wfd2-md.md)] (ou bien, sélectionnez **barre d’outils** à partir de la **vue** menu ou CTRL + ALT + X.)  

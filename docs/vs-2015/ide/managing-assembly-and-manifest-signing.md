@@ -1,7 +1,7 @@
 ---
 title: Gestion d’assembly et signature de manifeste | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 76ab4cc115f8c9f052f48c6e0dccd06693ddb970
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab8ab81c83f98a7a35620db7cbb10a0f700d78e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503932"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172742"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Gestion d'assembly et signature de manifeste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [gestion d’Assembly et signature de manifeste](https://docs.microsoft.com/visualstudio/ide/managing-assembly-and-manifest-signing).  
-  
 La signature avec un nom fort fournit à un composant logiciel une identité globalement unique. L’utilisation de noms forts garantit que l’assembly ne peut pas être usurpé et que les dépendances de composants et les instructions de configuration correspondent aux composant et version de composant appropriés.  
   
  Un nom fort est constitué de l’identité de l’assembly (simple nom textuel, numéro de version et informations de culture), ainsi que d’un jeton de clé publique et d’une signature numérique.  

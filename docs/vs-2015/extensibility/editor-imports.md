@@ -1,7 +1,7 @@
 ---
 title: Importations de l’éditeur | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7017d4a99bbfd58a854ba1cd33230f11928024cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b7bb4ccf7c599b66d8e4e50c01270d5fede1f3b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508353"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171873"
 ---
 # <a name="editor-imports"></a>Importations de l’éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [importations de l’éditeur](https://docs.microsoft.com/visualstudio/extensibility/editor-imports).  
-  
 Vous pouvez importer un nombre de services de l’éditeur, les fabriques et les courtiers et fournissent votre extension avec différents types d’accès à l’éditeur principal. Par exemple, vous pouvez importer le <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> pour vous donner un <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> pour un type de contenu donné. (Ce navigateur permet de qu'effectuer de différents types de recherche sur une mémoire tampon de texte.)  
   
  Pour utiliser une importation de l’éditeur, importez-le en tant que champ ou propriété d’une classe qui exporte une partie du composant Managed Extensibility Framework.  
@@ -81,7 +79,7 @@ internal SVsServiceProvider ServiceProvider = null;
 |Import|Fournit|  
 |------------|--------------|  
 |<xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService>|La relation entre les extensions de fichier et <xref:Microsoft.VisualStudio.Utilities.IContentType> objets.|  
-|<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>|Collection d'objets <xref:Microsoft.VisualStudio.Utilities.IContentType>.|  
+|<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>|Collection d’objets <xref:Microsoft.VisualStudio.Utilities.IContentType>.|  
 |<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformationService>|Objets <xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformation>.|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>|Plusieurs objets de carte de l’éditeur :<br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|  
 |<xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearchFactoryService>|Un <xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearch> objet pour un affichage de texte donné.|  
