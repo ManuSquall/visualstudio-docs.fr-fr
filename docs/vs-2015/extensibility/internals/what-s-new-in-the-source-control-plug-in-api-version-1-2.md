@@ -1,7 +1,7 @@
 ---
 title: Ce que&#39;s dans la Source de contrôle plug-in API Version 1.2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 7c5fa471-456e-4f95-8309-5750ec4e5e85
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 439e91730ffa0c8ab3d73454198c09803df59f3d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9df28160f321cdd585cd9adba8d80c43cfcb18d6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503029"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300155"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>Ce que&#39;s dans la Source de contrôle plug-in API Version 1.2
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [que&#39;Nouveautés de Version 1.2 des API de plug-in de contrôle Source](https://docs.microsoft.com/visualstudio/extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2).  
-  
 Cette section met en évidence les fonctionnalités de contrôle de code source avancées dans l’API de plug-in de contrôle de Source version 1.2. Ce qui suit répertorie les nouvelles fonctionnalités dans la version 1.2 :  
   
 ## <a name="changes"></a>Modifications  

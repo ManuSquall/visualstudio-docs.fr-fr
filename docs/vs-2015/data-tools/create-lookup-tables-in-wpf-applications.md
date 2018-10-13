@@ -1,7 +1,7 @@
 ---
 title: Créer des tables de recherche dans les applications WPF | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 12940c7be5e09975c6a6cf71fad94c47f3f6db32
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ce3b1cb07256c35949591b4d6ea012f56e432c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496317"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303340"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Créer des tables de recherche dans les applications WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [créer des tables de recherche dans les applications WPF](https://docs.microsoft.com/visualstudio/data-tools/create-lookup-tables-in-wpf-applications).  
-  
   
 Le terme *table de recherche* (parfois appelé un *liaison de correspondance*) décrit un contrôle qui affiche des informations à partir d’une table de données basée sur la valeur d’un champ de clé étrangère dans une autre table. Vous pouvez créer une table de recherche en faisant glisser le nœud principal d’une table parente ou de l’objet dans le **des Sources de données** fenêtre sur un contrôle qui est déjà lié à une colonne ou une propriété dans une table enfant connexe.  
   
@@ -46,7 +44,7 @@ Le terme *table de recherche* (parfois appelé un *liaison de correspondance*) d
   
 1.  Ajoutez l’un des types suivants de sources de données avec les données associées à votre projet :  
   
-    -   Jeu de données ou Entity Data Model. Pour plus d’informations, consultez [Comment : se connecter aux données dans une base de données](../data-tools/how-to-connect-to-data-in-a-database.md).  
+    -   Jeu de données ou Entity Data Model. Pour plus d'informations, consultez [How to: Connect to Data in a Database](../data-tools/how-to-connect-to-data-in-a-database.md).  
   
     -   Service de données WCF, service WCF ou service Web. Pour plus d’informations, consultez [Comment : se connecter aux données dans un Service](../data-tools/how-to-connect-to-data-in-a-service.md).  
   

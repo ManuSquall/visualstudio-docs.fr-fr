@@ -1,7 +1,7 @@
 ---
 title: CreateVisualBasicManifestResourceName, tâche | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7a1588ce170ad9e833f7378a837e4e75853c19ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 43cd2b3c4516479f7cf97182d2a66570066e891a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503876"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302820"
 ---
 # <a name="createvisualbasicmanifestresourcename-task"></a>CreateVisualBasicManifestResourceName, tâche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [CreateVisualBasicManifestResourceName, tâche](https://docs.microsoft.com/visualstudio/msbuild/createvisualbasicmanifestresourcename-task).  
-  
   
 Crée un nom de manifeste de style [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] à partir d’un nom de fichier .resx donné ou d’une autre ressource.  
   

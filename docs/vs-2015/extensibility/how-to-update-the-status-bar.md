@@ -1,7 +1,7 @@
 ---
 title: 'Comment : mettre à jour de la barre d’état | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 7500c8a7-4913-4818-a88b-bfd1b9887cb6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 97b96023682d1acfda5aa0c47c07169b558c7569
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cd784b718fb370ec8ce04937119a9d64995cdd8d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502522"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301091"
 ---
 # <a name="how-to-update-the-status-bar"></a>Comment : mettre à jour de la barre d’état
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : mettre à jour de la barre d’état](https://docs.microsoft.com/visualstudio/extensibility/how-to-update-the-status-bar).  
-  
 Le **barre d’état** une barre de contrôle ne se trouve en bas de nombreuses fenêtres d’application qui contient un ou plusieurs lignes de texte d’état ou des indicateurs.  
   
 ### <a name="to-update-the-status-bar"></a>Pour mettre à jour de la barre d’état  

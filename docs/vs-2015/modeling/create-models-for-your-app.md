@@ -1,7 +1,7 @@
 ---
 title: Créer des modèles pour votre application | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -42,18 +42,16 @@ caps.latest.revision: 60
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 769542e2f2864864146cb0f94c4dbf5bf1920b5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb7c2e0095d83ecbe21e6002f86c44682745341a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503076"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301897"
 ---
 # <a name="create-models-for-your-app"></a>Créer des modèles pour votre application
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [créer des modèles pour votre application](https://docs.microsoft.com/visualstudio/modeling/create-models-for-your-app).  
-  
 Les diagrammes de modélisation vous aident à comprendre, clarifier et communiquer vos idées concernant votre code et les besoins des utilisateurs que votre système logiciel doit prendre en charge. Par exemple, pour décrire et communiquer les besoins des utilisateurs, vous pouvez utiliser des diagrammes de cas d'usage, d'activités, de classe et de séquence UML (Unified Modeling Language). Pour décrire et communiquer les fonctionnalités de votre système, vous pouvez utiliser des diagrammes de composants, de classes, d'activités et de séquence UML.  
   
  Voir [Channel 9 Video : améliorer l’architecture par une modélisation de](http://go.microsoft.com/fwlink/?LinkID=252078).  

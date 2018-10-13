@@ -1,7 +1,7 @@
 ---
 title: Vue Résumé | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b253767977a59ba782dbaae9eb3384bba5f313d8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 242250476a55ce33344863003a90d9c829eaea1a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503409"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301533"
 ---
 # <a name="summary-view"></a>Vue Résumé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [vue Résumé](https://docs.microsoft.com/visualstudio/profiling/summary-view).  
-  
 La vue Résumé affiche des informations sur les fonctions ou les objets dont le coût est le plus pénalisant quant aux performances lors d’une exécution du profilage. Cette vue fournit un graphique chronologique et plusieurs listes de fonctions ou d’objets dont le coût est le plus pénalisant quant aux métriques de performances de la méthode de profilage. Les données de cette vue dépendent de la méthode de profilage qui a été utilisée (échantillonnage, instrumentation ou concurrence) et de l’allocation de mémoire .NET si elle a été collectée ou non.  
   
  Dans toutes les vues Résumé, à l’exception de la vue Résumé des données de concurrence, le graphique chronologique de la vue Résumé montre le pourcentage d’utilisation de l’UC de l’application profilée pendant la durée du profilage.  
@@ -66,8 +64,8 @@ La vue Résumé affiche des informations sur les fonctions ou les objets dont le
   
 ## <a name="see-also"></a>Voir aussi  
  [Mode Résumé](../profiling/summary-view-sampling-data.md)   
- [Vue Résumé](../profiling/summary-view-instrumentation-data.md)   
- [Vue Résumé](../profiling/summary-view-dotnet-memory-data.md)
+ [Mode Résumé](../profiling/summary-view-instrumentation-data.md)   
+ [Mode Résumé](../profiling/summary-view-dotnet-memory-data.md)
 
 
 
