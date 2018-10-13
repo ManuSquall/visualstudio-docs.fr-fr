@@ -1,7 +1,7 @@
 ---
 title: Informations de référence sur les API du profileur Visual Studio (natives) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 74a66580cf7fb0b5fb998442fe59a3cb601da437
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 780556a3c36880bdf24db03a626ba06c95fb4cba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495507"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185937"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Informations de référence sur les API du profileur Visual Studio (natives)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Visual Studio Profiler référence de l’API (Native)](https://docs.microsoft.com/visualstudio/profiling/visual-studio-profiler-api-reference-native).  
-  
 Les API du profileur Visual Studio vous permettent de contrôler par programmation la quantité de données collectées et d’insérer des marques d’horodateur et de profil durant le profilage. Pour utiliser des API natives, vous devez inclure le fichier d’en-tête VSPerf.h et ajouter VSPerf.lib dans votre projet.  
   
 > [!NOTE]

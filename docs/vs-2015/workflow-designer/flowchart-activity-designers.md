@@ -1,7 +1,7 @@
 ---
 title: Concepteurs d’activité d’organigramme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 4a901e78222a58cf67bb23c6a12efe12437da987
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fb74c7db38cc57d337cec649ad683ab4761552f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492819"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189213"
 ---
 # <a name="flowchart-activity-designers"></a>Concepteurs d'activités d'organigramme
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] inclut plusieurs activités fournies par le système que vous pouvez utiliser lors de la construction de vos workflows. Cette section contient les activités fournies par le système utilisées pour gérer des organigrammes dans un workflow. Les rubriques suivantes décrivent ces activités et fournissent des conseils sur la façon de les utiliser.  

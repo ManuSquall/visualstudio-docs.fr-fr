@@ -1,7 +1,7 @@
 ---
 title: Sélectionnez le Type de Code, boîte de dialogue | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 87949e312607fd3461e370481aed344c392a02ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e25ff3a0c21288744306455735324d4d72547cb3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506192"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200900"
 ---
 # <a name="select-code-type-dialog-box"></a>Sélectionner le type de code, boîte de dialogue
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [boîte de dialogue Sélectionner le Type de Code](https://docs.microsoft.com/visualstudio/debugger/select-code-type-dialog-box).  
-  
 Pour ouvrir cette boîte de dialogue, ouvrez le **attacher au processus** boîte de dialogue, puis cliquez sur le **sélectionnez** bouton.  
   
  **Déterminer automatiquement le type de code à déboguer**  

@@ -1,7 +1,7 @@
 ---
 title: Définir des contraintes de validation pour les modèles UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,33 +14,31 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1caf688f6ecc84413d3bdb86c1c1825241aa5ba3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6f2b97f2b7f3db141bbbbe17d5cf1ab63212be81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590762"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176538"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Définir des contraintes de validation pour les modèles UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [définir des contraintes de validation pour les modèles UML](https://docs.microsoft.com/visualstudio/modeling/define-validation-constraints-for-uml-models).  
-  
 Vous pouvez définir des contraintes de validation qui vérifient si le modèle remplit une condition spécifiée. Par exemple, vous pouvez définir une contrainte pour vous assurer qu’un utilisateur ne crée pas de boucle de relations d’héritage. La contrainte, qui est appelée quand l’utilisateur essaie d’ouvrir ou d’enregistrer le modèle, peut également être appelée manuellement. Si la contrainte échoue, un message d’erreur que vous définissez est ajouté à la fenêtre d’erreur. Vous pouvez empaqueter ces contraintes dans une extension d’intégration Visual Studio ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) et la distribuer à d’autres utilisateurs de Visual Studio.  
   
  Vous pouvez également définir des contraintes qui valident le modèle par rapport à des ressources externes telles que des bases de données. Si vous souhaitez valider le code de programme par rapport à un diagramme de couche, consultez [ajouter la validation d’architecture personnalisée aux diagrammes de couche](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
   
- Pour connaître les versions de Visual Studio prennent en charge les modèles UML, consultez [versions prises en charge pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Pour connaître les versions de Visual Studio qui prennent en charge les modèles UML, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="requirements"></a>Configuration requise  
- Consultez [exigences](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
+ Consultez [Spécifications](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
   
  Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="applying-validation-constraints"></a>Application de contraintes de validation  
  Les contraintes de validation sont appliquées dans trois cas : quand vous enregistrez un modèle, quand vous ouvrez un modèle et quand vous cliquez sur **Valider le modèle UML** dans le menu **Architecture** . Dans chaque cas, seules les contraintes qui ont été définies pour ce cas sont appliquées, bien qu’en général vous définissez chaque contrainte pour qu’elle s’applique dans plusieurs cas.  
   
- Les erreurs de validation sont signalées dans la fenêtre d'erreurs de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et vous pouvez double-cliquer sur l'erreur pour sélectionner les éléments de modèle concernés.  
+ Les erreurs de validation sont signalées dans la fenêtre d’erreurs de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et vous pouvez double-cliquer sur l’erreur pour sélectionner les éléments de modèle concernés.  
   
  Pour plus d’informations sur l’application de la validation, consultez [valider votre modèle UML](../modeling/validate-your-uml-model.md).  
   
@@ -120,7 +118,7 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 1.  Cette procédure est inutile si vous avez créé une classe de validation avec sa propre extension VSIX à partir du modèle de projet de validation.  
   
-2.  Dans le projet de classe de validation, ajoutez des références aux assemblys [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] suivants :  
+2.  Dans le projet de classe de validation, ajoutez des références aux assemblys [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] suivants :  
   
      `Microsoft.VisualStudio.Modeling.Sdk.[version]`  
   
@@ -192,15 +190,15 @@ using Microsoft.VisualStudio.Uml.Classes;
   
      Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] démarre.  
   
-     **Résolution des problèmes**: si un nouveau [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne démarre pas :  
+     **Dépannage**: si une nouvelle instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne démarre pas :  
   
     -   Si vous avez plusieurs projets, vérifiez que le projet VSIX est défini comme projet de démarrage de la solution.  
   
-    -   Dans l’Explorateur de solutions, dans le menu contextuel du projet de démarrage ou du projet unique, choisissez **Propriétés**. Dans l’éditeur de propriétés du projet, sélectionnez l’onglet **Déboguer** . Assurez-vous que la chaîne dans le **démarrer le programme externe** champ est le chemin d’accès complet de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], en général :  
+    -   Dans l’Explorateur de solutions, dans le menu contextuel du projet de démarrage ou du projet unique, choisissez **Propriétés**. Dans l’éditeur de propriétés du projet, sélectionnez l’onglet **Déboguer** . Assurez-vous que la chaîne dans le champ Démarrer le programme externe** correspond au chemin d’accès complet de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], qui est en général le suivant :  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  Dans l'instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ouvrez ou créez un projet de modélisation, puis ouvrez ou créez un diagramme de modélisation.  
+2.  Dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ouvrez ou créez un projet de modélisation, puis ouvrez ou créez un diagramme de modélisation.  
   
 3.  Pour configurer un test pour l’exemple de contrainte fourni dans la section précédente  
   
@@ -244,7 +242,7 @@ public void ValidateTypeName(ValidationContext context, IType type)
  }  
 ```  
   
- Consultez [Programming with the UML API](../modeling/programming-with-the-uml-api.md) pour plus d’informations sur les méthodes et les types que vous pouvez utiliser pour parcourir et lire le modèle.  
+ Pour plus d’informations sur les méthodes et les types que vous pouvez utiliser pour parcourir et lire le modèle, consultez [Programming with the UML API](../modeling/programming-with-the-uml-api.md) .  
   
 ### <a name="about-validation-constraint-methods"></a>À propos des méthodes de contrainte de validation  
  Chaque contrainte de validation est définie par une méthode au format suivant :  
@@ -270,11 +268,11 @@ public void ValidateSomething
  Vous pouvez définir autant de méthodes de validation que vous le souhaitez, avec des types différents dans le deuxième paramètre. Quand la validation est appelée, chaque méthode de validation est appelée sur chaque élément de modèle conforme au type de paramètre.  
   
 ### <a name="reporting-validation-errors"></a>Signalement des erreurs de validation  
- Pour créer un rapport d’erreurs, utilisez les méthodes fournies par `ValidationContext`:  
+ Pour créer un rapport d’erreurs, utilisez les méthodes fournies par `ValidationContext` :  
   
  `context.LogError("error string", errorCode, elementsWithError);`  
   
--   `"error string"` apparaît dans la liste d'erreurs de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
+-   `"error string"` apparaît dans la liste d’erreurs de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
 -   `errorCode` est une chaîne qui doit être un identificateur unique de l'erreur  
   
@@ -369,7 +367,7 @@ context.LogError(... , usecase);
 |`Context.GetValue<T>()`|Obtenir une valeur du type spécifié.|  
   
 ##  <a name="Installing"></a> Installation et désinstallation d’une extension  
- Vous pouvez installer une extension [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] sur votre propre ordinateur et sur d'autres ordinateurs.  
+ Vous pouvez installer une extension [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] sur votre propre ordinateur et sur d’autres ordinateurs.  
   
 #### <a name="to-install-an-extension"></a>Pour installer une extension  
   
@@ -381,7 +379,7 @@ context.LogError(... , usecase);
   
 2.  Copiez le fichier **.vsix** sur l’ordinateur cible sur lequel vous souhaitez installer l’extension. Il peut s’agir de votre propre ordinateur ou d’un autre.  
   
-    -   L’ordinateur cible doit avoir une des éditions de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] que vous avez spécifié dans **source.extension.vsixmanifest**.  
+    -   L’ordinateur cible doit disposer de l’une des éditions de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] que vous avez spécifiées dans **source.extension.vsixmanifest**.  
   
 3.  Sur l’ordinateur cible, ouvrez le fichier **.vsix** .  
   

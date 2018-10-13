@@ -1,7 +1,7 @@
 ---
 title: Exemples de l’éditeur d’images | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f97ea4e992a3243da2a86d85d130cf14fdca54a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1f6a00dfb0ce15280bb028fb38eb116754c43db1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494082"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206750"
 ---
 # <a name="image-editor-examples"></a>Exemples de l'éditeur d'images
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [exemples de l’éditeur d’images](https://docs.microsoft.com/visualstudio/designers/image-editor-examples).  
-  
 Les articles de cette section de la documentation contiennent des exemples qui illustrent comment utiliser l’éditeur d’images.  
   
 ## <a name="related-topics"></a>Rubriques connexes  

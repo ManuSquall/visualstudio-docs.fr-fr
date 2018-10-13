@@ -1,7 +1,7 @@
 ---
 title: Liste d’objets de fenêtre de propriétés | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6c159c9d-345d-4b23-8ddd-9839d338b62f
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 87592deaec57b5638336cf191f12896cccbcb5b3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6fd821da5d54afdb7ea8b3d16dc32f818222a961
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508338"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183103"
 ---
 # <a name="properties-window-object-list"></a>Liste d’objets de la fenêtre Propriétés
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [liste d’objets de fenêtre de propriétés](https://docs.microsoft.com/visualstudio/extensibility/internals/properties-window-object-list).  
-  
 La liste d’objets dans le **propriétés** fenêtre est une liste déroulante qui vous permet de modifier la sélection à d’autres objets disponibles au sein d’une ou plusieurs fenêtres sélectionnés. Sélection d’un objet différent dans cette liste déclenche un appel à <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> pour informer l’environnement qu’un nouvel objet a été sélectionné. Les informations affichées dans le **propriétés** fenêtre est ensuite modifiée pour afficher les propriétés associées à l’objet qui vient d’être sélectionné.  
   
 ## <a name="the-object-list"></a>La liste d’objets  

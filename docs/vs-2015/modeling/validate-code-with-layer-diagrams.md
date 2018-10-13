@@ -1,7 +1,7 @@
 ---
 title: Valider du code avec des diagrammes de couche | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 84
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5430d436684be0bbf50004204da8bcd6a18d9bee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4aea0373c57f046b257ad51b102e5b2f1190bfbf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493404"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173717"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Valider du code avec des diagrammes de couche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [valider du code avec des diagrammes de dépendance](https://docs.microsoft.com/visualstudio/modeling/validate-code-with-layer-diagrams).  
-  
 Pour vous assurer que le code n'est pas en conflit avec sa conception, validez votre code avec des diagrammes de couche dans Visual Studio. Cela peut vous aider à :  
   
 -   Rechercher des conflits entre des dépendances dans votre code et des dépendances sur le diagramme de couche.  
@@ -147,7 +145,7 @@ Pour vous assurer que le code n'est pas en conflit avec sa conception, validez v
  Pour plus d’informations sur les erreurs de validation, consultez [comprendre et résoudre les erreurs de validation de couche](#UnderstandingValidationErrors).  
   
 ###  <a name="ManageErrors"></a> Gérer les erreurs de validation  
- Pendant le processus de développement, vous pouvez supprimer certains conflits signalés pendant la validation. Par exemple, vous pouvez supprimer des erreurs que vous êtes déjà en train de traiter qui ne sont pas pertinentes dans le cadre de votre scénario spécifique. Lorsque vous supprimez une erreur, il est conseillé d'entrer un élément de travail dans [!INCLUDE[esprfound](../includes/esprfound-md.md)].  
+ Pendant le processus de développement, vous pouvez supprimer certains conflits signalés pendant la validation. Par exemple, vous pouvez supprimer des erreurs que vous êtes déjà en train de traiter qui ne sont pas pertinentes dans le cadre de votre scénario spécifique. Lorsque vous supprimez une erreur, il est conseillé d’entrer un élément de travail dans [!INCLUDE[esprfound](../includes/esprfound-md.md)].  
   
 > [!WARNING]
 >  Vous devez être connecté à un contrôle de code source (SSC, Source Code Control) TFS pour créer un élément de travail ou un lien vers celui-ci. Si vous essayez d'ouvrir une connexion à un autre contrôle de code source TFS, Visual Studio ferme automatiquement la solution actuelle. Vérifiez que vous êtes connecté au contrôle de code source TFS approprié avant d'essayer de créer un élément de travail ou un lien vers celui-ci. Dans les versions ultérieures de Visual Studio, les commandes de menu ne sont pas disponibles si vous n'êtes pas connecté à un contrôle de code source.  

@@ -1,7 +1,7 @@
 ---
 title: 'Comment : attacher à un Script | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 18f9ec77b990113cc039142f6bfe51058d532408
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b86987554a3cd39d96a44f1f0c3396a1c32b98fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506107"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209688"
 ---
 # <a name="how-to-attach-to-script"></a>Comment : attacher à un script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : attacher à un Script](https://docs.microsoft.com/visualstudio/debugger/how-to-attach-to-script).  
-  
 Cette rubrique explique comment attacher manuellement le débogueur Visual Studio à un fichier de script pour le débogage.  
   
 ### <a name="to-attach-to-a-running-process"></a>Pour établir un attachement à un processus en cours d'exécution  

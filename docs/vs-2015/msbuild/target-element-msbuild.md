@@ -1,7 +1,7 @@
 ---
 title: Élément Target (MSBuild) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e247d547cb292c4fdc5d5fc645230e6430a12d76
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bc4224930782e24b20d3e9720c517304b0153f2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495194"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173405"
 ---
 # <a name="target-element-msbuild"></a>Target, élément (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Target, élément (MSBuild)](https://docs.microsoft.com/visualstudio/msbuild/target-element-msbuild).  
-  
   
 Contient un ensemble de tâches que [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] doit exécuter séquentiellement.  
   
@@ -93,7 +91,7 @@ Contient un ensemble de tâches que [!INCLUDE[vstecmsbuild](../includes/vstecmsb
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Projet](../msbuild/project-element-msbuild.md)|Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].|  
+|[Projet](../msbuild/project-element-msbuild.md)|Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .|  
   
 ## <a name="remarks"></a>Notes  
  La première cible à exécuter est spécifiée au moment de l’exécution. Les cibles peuvent avoir des relations de dépendance avec d’autres cibles. Par exemple, une cible de déploiement dépend d’une cible de compilation. Le moteur [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] exécute des dépendances dans l’ordre dans lequel elles apparaissent dans l’attribut `DependsOnTargets`, de gauche à droite. Pour plus d’informations, consultez l’article [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md).  

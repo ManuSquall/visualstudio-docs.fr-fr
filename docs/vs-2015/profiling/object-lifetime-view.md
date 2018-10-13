@@ -1,7 +1,7 @@
 ---
 title: Vue Durée de vie des objets | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3aaff07ecc6732403ef1d611cb23129207a27351
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a503a0de6a8b9935fbfb6b7e415d79cb0520f67d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494817"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202850"
 ---
 # <a name="object-lifetime-view"></a>Mode Durée de vie de l'objet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [vue durée de vie de l’objet](https://docs.microsoft.com/visualstudio/profiling/object-lifetime-view).  
-  
 La vue Durée de vie des objets est disponible quand l’option **Collecter aussi les informations de durée de vie des objets .NET** est activée dans les pages de propriétés de la session de performance.  
   
  Le récupérateur de mémoire du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] gère l’allocation et la libération de mémoire pour votre application. Pour optimiser les performances du garbage collector, le tas managé est divisé en trois générations : 0, 1 et 2. Le récupérateur de mémoire du runtime stocke les nouveaux objets dans la génération 0. Les objets qui survivent aux collectes sont promus et stockés dans les générations 1 et 2.  

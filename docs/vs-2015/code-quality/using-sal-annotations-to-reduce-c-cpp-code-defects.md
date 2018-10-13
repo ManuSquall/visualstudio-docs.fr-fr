@@ -1,7 +1,7 @@
 ---
 title: Utilisation d’Annotations SAL pour réduire les défauts du Code C / C++ | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 29
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cdeb2c4d03d172d3bd2051077b3099515faf7b67
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca7e8a406b02aa5d3b09d9ad588546ae3d965b89
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502258"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207010"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Utilisation d’annotations SAL pour réduire les défauts du code C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [à l’aide d’Annotations SAL pour réduire les défauts du Code C/C++](https://docs.microsoft.com/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).  
-  
 SAL est le langage d’annotation Microsoft source code. À l’aide des annotations de code source, vous êtes l’intention derrière votre code explicite. Ces annotations permettent également des outils d’analyse statique automatisée analyser votre code plus précisément, avec beaucoup moins de faux positifs et de faux négatifs.  
   
  Les articles de cette section de la documentation décrivent les aspects de SAL fournissent de référence pour la syntaxe SAL et donnent des exemples de son utilisation.  
