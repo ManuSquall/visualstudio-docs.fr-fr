@@ -1,7 +1,7 @@
 ---
 title: Touches de modification de l’outil Plume dans Blend | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e393f6014d6541378f32a13b7bbb76618b6308b2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4fd240ffae322d21e37049b5ec0a862515b00f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506472"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172105"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Touches de modification de l’outil Plume dans Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Pen des touches de modification d’outil dans Blend](https://docs.microsoft.com/visualstudio/designers/pen-tool-modifier-keys-in-blend).  
-  
 Le tableau suivant liste les raccourcis que vous pouvez utiliser pour modifier un tracé lors de sa création avec l’outil **Plume** ![](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a"). Vous pouvez aussi utiliser l’outil **Plume** pour ajouter ou supprimer des points sur un tracé existant, ou pour joindre deux tracés existants.  
   
 |Pour|Procédez comme suit|Pointeur|  

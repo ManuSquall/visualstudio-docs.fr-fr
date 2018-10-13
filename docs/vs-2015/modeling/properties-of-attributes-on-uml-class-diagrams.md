@@ -1,7 +1,7 @@
 ---
 title: Propriétés d’attributs sur UML des diagrammes de classes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a9cd12bb002efbf28443b8052382c29ed87036b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8b3f1379aa692cae06c38ac6bf55c6efba4d5c94
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502403"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173068"
 ---
 # <a name="properties-of-attributes-on-uml-class-diagrams"></a>Propriétés d’attributs dans des diagrammes de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [diagrammes de classes de propriétés d’attributs sur UML](https://docs.microsoft.com/visualstudio/modeling/properties-of-attributes-on-uml-class-diagrams).  
-  
 Dans un diagramme de classes UML, vous pouvez ajouter des *attributs* aux classes et interfaces. Un attribut définit des valeurs qui peuvent être associées à des instances de la classe ou de l’interface.  
   
  Pour ajouter un attribut, cliquez avec le bouton droit sur la classe ou l’interface, pointez sur **Ajouter**, puis cliquez sur **Attribut**.  

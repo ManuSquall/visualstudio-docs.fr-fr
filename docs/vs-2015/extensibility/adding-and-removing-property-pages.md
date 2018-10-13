@@ -1,7 +1,7 @@
 ---
 title: Ajout et suppression de Pages de propriétés | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 02295041a660ff3e4e7b0565cffd260a4e64c78d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3b78fd8c6d89e93e208d00cda069f93a4deb10e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504510"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221986"
 ---
 # <a name="adding-and-removing-property-pages"></a>Ajout et suppression de pages de propriétés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Ajout et suppression de Pages de propriétés](https://docs.microsoft.com/visualstudio/extensibility/adding-and-removing-property-pages).  
-  
 Le Concepteur de projet fournit un emplacement centralisé pour la gestion des propriétés du projet, les paramètres et les ressources dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Il apparaît comme une fenêtre unique dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] développement environnement intégré (IDE) et contient un nombre de volets qui sont accessibles via les onglets sur la gauche à droite. Les volets (souvent appelés pages de propriétés) dans le Concepteur de projets varient selon la langue et le type de projet. Le Concepteur de projet est accessible avec la **propriétés** commande sur le **projet** menu.  
   
  Un sous-type de projet doit fréquemment afficher des pages de propriétés supplémentaires dans le Concepteur de projets. De même, certains sous-types de projet peuvent nécessiter que les pages de propriétés intégrées être supprimé. Pour effectuer l’une, votre sous-type de projet doit implémenter le <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interface et remplacer le <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (méthode). En substituant cette méthode et en utilisant `propId` paramètre qui contient l’une des valeurs de la <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> énumération, vous pouvez filtrer, ajouter ou supprimer des propriétés de projet. Par exemple, vous devrez peut-être ajouter une page vers les pages de propriétés dépendantes de la configuration. Pour ce faire, vous devez filtrer les pages de propriétés dépendantes de la configuration, puis ajouter une nouvelle page à la liste existante.  

@@ -1,7 +1,7 @@
 ---
 title: Règles de performances de l’utilisation du .NET Framework | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7ddb790042e263b3d2eb8a9d7db3f73cd023db79
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0f1fee0c059189c2a120dfb83556ec94f119a2f5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501123"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197624"
 ---
-# <a name="net-framework-usage-performance-rules"></a>Règles de performance de l'utilisation du .NET Framework
+# <a name="net-framework-usage-performance-rules"></a>Règles de performance de l'utilisation du .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [règles de Performance de l’utilisation de .NET Framework](https://docs.microsoft.com/visualstudio/profiling/dotnet-framework-usage-performance-rules).  
-  
 Les règles de performances de la catégorie Utilisation du .NET Framework permettent d’identifier les méthodes qui peuvent être optimisées, ainsi que des modèles d’utilisation plus généraux, tels que le garbage collection et les conflits de verrou, qui peuvent être examinés pour comprendre les problèmes de performances.  
   
 |||  

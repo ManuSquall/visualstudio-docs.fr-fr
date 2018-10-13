@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble de solutions | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e0512178d3c47853c9eba7c900a57738da6bed05
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8204dcfc7a0d8937551914ebedbc035767127507
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495915"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292657"
 ---
 # <a name="solutions-overview"></a>Présentation des solutions
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [vue d’ensemble des Solutions](https://docs.microsoft.com/visualstudio/extensibility/internals/solutions-overview).  
-  
 Une solution est un regroupement d’un ou plusieurs projets qui fonctionnent ensemble pour créer une application. Les informations de projet et d’état relatives à la solution sont stockés dans deux fichiers de solution différent. Le fichier solution (.sln) est en mode texte et peuvent être placés sous contrôle de code source et partagé entre les utilisateurs. Le fichier des options (.suo) solution utilisateur est binaire. Par conséquent, le fichier .suo ne peuvent pas être placé sous contrôle de code source et contient des informations spécifiques à l’utilisateur.  
   
  Un VSPackage peut écrire dans ces deux types de fichier solution. En raison de la nature des fichiers, il existe deux interfaces différentes implémentées pour y écrire. Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> interface écrit les informations de texte dans le fichier .sln et <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> interface écrit des flux de données binaires dans le fichier .suo.  

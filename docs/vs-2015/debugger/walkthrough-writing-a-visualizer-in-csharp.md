@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : Écriture d’un visualiseur en c# | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 871856c38b40d38892b6236fa02b63f47b62d112
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bd8c12e415b37f04635327d195ef0f96649a2894
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507448"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199184"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Procédure pas à pas : écriture d'un visualiseur en C# #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : écriture d’un visualiseur en c#](https://docs.microsoft.com/visualstudio/debugger/walkthrough-writing-a-visualizer-in-csharp).  
-  
 Cette procédure pas à pas montre comment écrire un visualiseur simple à l’aide de c#. Le visualiseur que vous allez créer dans cette procédure pas à pas affiche le contenu d’une chaîne à l’aide d’une boîte de message Windows forms. Ce visualiseur de chaîne simple n’est pas particulièrement utile en soi, mais il montre les étapes de base que vous devez suivre pour créer des visualiseurs plus utiles pour les autres types de données.  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: Propriétés de fichier, JavaScript | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fb3f9dcef138bdb9e0452eb1b739dca652d0844d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 31e05d98af75758dfcd05ba70c6340c5b7f4be4a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494652"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286284"
 ---
 # <a name="file-properties-javascript"></a>Propriétés des fichiers, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [propriétés du fichier, JavaScript](https://docs.microsoft.com/visualstudio/ide/reference/file-properties-javascript).  
-  
   
 Vous pouvez utiliser les propriétés de fichier pour indiquer les actions que le système de projet doit effectuer sur les fichiers. Par exemple, vous pouvez définir des propriétés de fichier pour indiquer si un fichier doit être ajouté au package en tant que fichier de ressources.  
   

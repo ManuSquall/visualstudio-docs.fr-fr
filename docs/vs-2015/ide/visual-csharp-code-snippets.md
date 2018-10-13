@@ -1,7 +1,7 @@
 ---
 title: Extraits de code Visual C# | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2afbadccfc894dd5ba5baba9c58ab43417f44ed5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9c06243b4f41919c1c51002f0ed805a3fbd67112
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590726"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297412"
 ---
 # <a name="visual-c-code-snippets"></a>Extraits de code Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [extraits de Code Visual C#](https://docs.microsoft.com/visualstudio/ide/visual-csharp-code-snippets).  
-  
 Les extraits de code sont des extraits prêts à l’emploi que vous pouvez rapidement insérer dans votre code. Par exemple, l’extrait de code `for` crée une boucle `for` vide. Certains extraits de code sont des extraits « Entourer de ». Il vous permettent de sélectionner des lignes de code, puis de choisir un extrait de code qui incorpore les lignes sélectionnées. Par exemple, quand vous sélectionnez des lignes de code et que vous activez l’extrait de code `for`, cela crée une boucle `for` avec ces lignes de code dans le bloc de boucle. Les extraits de code peuvent accélérer, simplifier et fiabiliser l’écriture de code de programme.  
   
  Vous pouvez insérer un extrait de code à l’emplacement du curseur, ou insérer un extrait de code « Entourer de » autour du code actuellement sélectionné. L’outil d’insertion d’extraits de code est appelé par le biais de la commande **Insérer un extrait de code** ou **Entourer de** du menu **IntelliSense**, ou à l’aide des raccourcis clavier Ctrl+K puis X, ou Ctrl+K puis S, respectivement.  

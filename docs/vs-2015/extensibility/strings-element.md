@@ -1,7 +1,7 @@
 ---
 title: Chaînes d’élément | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 23a42074-a689-481d-824f-b43aa448f266
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 12e6b1cbc12e7b0deff97a239db08977ac38144c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 788dd763906ca2d1410b6ec5d9efb4b7e6e1807d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504607"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280941"
 ---
 # <a name="strings-element"></a>Élément Strings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [élément Strings](https://docs.microsoft.com/visualstudio/extensibility/strings-element).  
-  
 L’élément de chaînes doit contenir au moins un **ButtonText** élément enfant. Tous les autres éléments enfants sont facultatifs. Des caractères XML non valide, tel que '&' et ' <' doivent être codés en tant qu’entités ('&amp;« et »&lt;» et ainsi de suite).  
   
  Un « et commercial » dans la chaîne de texte spécifie le raccourci clavier de la commande.  

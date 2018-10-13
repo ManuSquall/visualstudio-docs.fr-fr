@@ -1,7 +1,7 @@
 ---
 title: Concepteur d’activités d’état | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: steved0x
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 3c1d0019179d0a8e3f82001c371e760172251c2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc6d0d13b1bb924847c52ae8e41e2b859d2e7b2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508564"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184013"
 ---
 # <a name="state-activity-designer"></a>Concepteur d'activités d'état
 Un <xref:System.Activities.Statements.State> représente un état dans lequel une machine à états peut être.  
   
 ## <a name="using-the-state-activity-designer"></a>Utilisation du concepteur d'activités State  
- Pour ajouter un <xref:System.Activities.Statements.State> à un workflow, faites glisser le **état** Concepteur d’activités à partir de la **Machine à états** section de la **boîte à outils** et déposez-le sur une <xref:System.Activities.Statements.StateMachine> activité sur le [!INCLUDE[wfd1](../includes/wfd1-md.md)] surface. Une activité <xref:System.Activities.Statements.State> peut être déposée sur un <xref:System.Activities.Statements.StateMachine> et des transitions ajoutées ultérieurement ; ou une transition peut être créée lorsque l'activité <xref:System.Activities.Statements.State> est déposée. Pour ajouter un <xref:System.Activities.Statements.State> activité et créer une transition en une seule étape, faites glisser un **état** activité à partir de la **Machine à états** section de la **boîte à outils** et placez-la sur un autre état dans le Concepteur de flux de travail. Lorsque le <xref:System.Activities.Statements.State> est déplacé vers un autre <xref:System.Activities.Statements.State>, quatre triangles apparaissent autour de l'autre <xref:System.Activities.Statements.State>. Si <xref:System.Activities.Statements.State> est déposé sur un des quatre triangles, il est ajouté à la machine à états et une transition est créée à partir du <xref:System.Activities.Statements.State> source vers le <xref:System.Activities.Statements.State> de destination de dépôt. Pour plus d’informations, consultez [Transition](../workflow-designer/transition-activity-designer.md).  
+ Pour ajouter un <xref:System.Activities.Statements.State> à un workflow, faites glisser le **état** Concepteur d’activités à partir de la **Machine à états** section de la **boîte à outils** et déposez-le sur une <xref:System.Activities.Statements.StateMachine> activité sur le [!INCLUDE[wfd1](../includes/wfd1-md.md)] surface. Une activité <xref:System.Activities.Statements.State> peut être déposée sur un <xref:System.Activities.Statements.StateMachine> et des transitions ajoutées ultérieurement ; ou une transition peut être créée lorsque l’activité <xref:System.Activities.Statements.State> est déposée. Pour ajouter un <xref:System.Activities.Statements.State> activité et créer une transition en une seule étape, faites glisser un **état** activité à partir de la **Machine à états** section de la **boîte à outils** et placez-la sur un autre état dans le Concepteur de flux de travail. Lorsque le <xref:System.Activities.Statements.State> est déplacé vers un autre <xref:System.Activities.Statements.State>, quatre triangles apparaissent autour de l'autre <xref:System.Activities.Statements.State>. Si <xref:System.Activities.Statements.State> est déposé sur un des quatre triangles, il est ajouté à la machine à états et une transition est créée à partir du <xref:System.Activities.Statements.State> source vers le <xref:System.Activities.Statements.State> de destination de dépôt. Pour plus d’informations, consultez [Transition](../workflow-designer/transition-activity-designer.md).  
   
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>Propriétés de l'activité State dans le concepteur de workflow  
  Le tableau suivant indique les propriétés  <xref:System.Activities.Statements.State> qui peuvent être définies à l'aide du concepteur de workflow et explique comment elles sont utilisées dans le concepteur. Certaines de ces propriétés peuvent être modifiées dans la grille des propriétés et certaines peuvent être modifiées dans l'aire de conception.  

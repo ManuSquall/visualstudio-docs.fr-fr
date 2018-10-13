@@ -1,7 +1,7 @@
 ---
 title: Ressources de la communauté Microsoft | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 06b7022f44f6aa8c180e28ef13493d17c1a008df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 326670dcb5087961b17d45f8f945c989da044c9c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507266"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297095"
 ---
 # <a name="wpf-community-resources"></a>Ressources de la communauté WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [ressources de la Communauté WPF](https://docs.microsoft.com/visualstudio/designers/wpf-community-resources).  
-  
 Microsoft met en avant de nombreuses ressources de la communauté pour vous permettre de découvrir Windows Presentation Foundation (WPF), d’en discuter et de fournir des commentaires à son sujet, y compris des blogs produits par les membres de l’équipe WPF et les responsables de la communauté, des forums et le centre de commentaires Microsoft Connect.  
   
 ## <a name="community"></a>Communauté  

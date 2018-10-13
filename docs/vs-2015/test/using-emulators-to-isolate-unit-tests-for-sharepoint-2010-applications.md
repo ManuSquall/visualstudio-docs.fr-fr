@@ -1,7 +1,7 @@
 ---
 title: Utilisation d’émulateurs pour isoler des tests unitaires pour des applications Sharepoint 2010 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,24 +13,22 @@ ms.assetid: b681164c-c87a-4bd7-be48-ed77e1578471
 caps.latest.revision: 17
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 85e3236e83d29e16c4501091cebf644605bfa82c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d45ea88fea9f30bf02c24e927694c81d8639559
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504158"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178306"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Utilisation d'émulateurs pour isoler des tests unitaires pour des applications Sharepoint 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [à l’aide d’émulateurs pour isoler des tests unitaires pour les applications Sharepoint 2010](https://docs.microsoft.com/visualstudio/test/using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications).  
-  
 Le package Microsoft.SharePoint.Emulators fournit un jeu de bibliothèques qui vous aide à créer des tests unitaires isolés pour les applications Microsoft SharePoint 2010. Les émulateurs utilisent des [shims](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) du framework d’isolation [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) pour créer des objets en mémoire légers qui imitent les objets et les méthodes les plus courants de l’API SharePoint. Quand une méthode SharePoint n'est pas émulée, ou que vous voulez modifier le comportement par défaut d'un émulateur, vous pouvez créer des shims Fakes pour fournir les résultats souhaités.  
   
  Les classes et méthodes de test existantes peuvent facilement être converties pour s'exécuter dans le contexte d'émulateur. Cette fonction vous permet de créer des tests à double utilisation. Un test à double utilisation peut basculer entre des tests d'intégration sur la véritable API SharePoint et des tests unitaires isolés qui utilisent les émulateurs.  
   
 ##  <a name="BKMK_In_this_topic"></a> Dans cette rubrique  
- [Requirements](#BKMK_Requirements)  
+ [Spécifications](#BKMK_Requirements)  
   
  [Exemple d’AppointmentsWebPart](#BKMK_The_AppointmentsWebPart_example)  
   
@@ -597,7 +595,7 @@ namspace MySPAppTests
 ## <a name="see-also"></a>Voir aussi  
  [Tests unitaires sur votre code](../test/unit-test-your-code.md)   
  [Test des applications SharePoint 2010 avec des tests codés de l’interface utilisateur](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)   
- [Test de performances web et tests de charge des applications SharePoint 2010 et 2013](http://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54)   
+ [Test de performances de site Web et tests de charge des applications SharePoint 2010 et 2013](http://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54)   
  [Développement de solutions SharePoint](http://msdn.microsoft.com/library/059bce0f-c301-4234-a0b4-9c14b7cdfa3e)
 
 

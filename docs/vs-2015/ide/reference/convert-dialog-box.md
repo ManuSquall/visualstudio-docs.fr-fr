@@ -1,7 +1,7 @@
 ---
 title: Convertir, boîte de dialogue | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8c11336399ec9bda3743c4ae858e99c98050f8ed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d08c18daf91e9fa4d879d9a2f12242a1c75b8ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493535"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282995"
 ---
-# <a name="convert-dialog-box"></a>Convertir (boîte de dialogue)
+# <a name="convert-dialog-box"></a>Convertir, boîte de dialogue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [boîte de dialogue convertir](https://docs.microsoft.com/visualstudio/ide/reference/convert-dialog-box).  
-  
   
 La boîte de dialogue **Convertir** vous permet de sélectionner un outil de conversion pour créer un projet à partir d’un ancien projet, par exemple créer un projet [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] à partir d’un projet Visual Basic 6. Vous pouvez également utiliser le [convertisseur de projet Visual Studio](http://go.microsoft.com/fwlink/?LinkID=246465), disponible sur le site web CodePlex, pour mettre à niveau des projets créés dans des versions précédentes de Visual Studio.  
   

@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : Implémentation d’extraits de Code | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 86d0ef82422b5f9cd419bf31e8b92b789fac1226
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b11234cd9dda19d010eb8408c359067697d95d80
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507541"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287155"
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>Procédure pas à pas : implémentation d’extraits de code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : implémentation des extraits de Code](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-implementing-code-snippets).  
-  
 Vous pouvez créer des extraits de code et incluez-les dans une extension de l’éditeur, afin que les utilisateurs de l’extension de les ajouter à leur propre code.  
   
  Un extrait de code est un fragment de code ou autre texte qui peut être incorporé dans un fichier. Pour afficher tous les extraits de code qui ont été inscrits pour les langages de programmation particuliers, sur le **outils** menu, cliquez sur **Gestionnaire des extraits de Code**. Pour insérer un extrait de code dans un fichier, avec le bouton droit où vous souhaitez que l’extrait de code, cliquez sur **insérer un extrait** ou **entourer**, recherchez l’extrait de code, puis double-cliquez dessus. Appuyez sur TAB ou MAJ + TAB pour modifier les parties pertinentes de l’extrait de code, puis appuyez sur entrée ou ÉCHAP pour l’accepter. Pour plus d’informations, consultez [Extraits de code](../ide/code-snippets.md).  

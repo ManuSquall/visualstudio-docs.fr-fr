@@ -1,7 +1,7 @@
 ---
 title: 'Préparation du débogage : Projets Console | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be92c7a77791e1cb329392773d19ce9e794bed75
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 870bbccafb25c855557bcd8c02a13d0218e5935a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493917"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265854"
 ---
 # <a name="debugging-preparation-console-projects"></a>Préparation du débogage : projets console
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [préparation du débogage : projets Console](https://docs.microsoft.com/visualstudio/debugger/debugging-preparation-console-projects).  
-  
 La préparation du débogage d'un projet console est identique à celle d'un projet Windows, avec quelques éléments supplémentaires à prendre en compte. Pour plus d’informations, consultez [les Applications Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md), et [préparation du débogage : Applications de formulaires Windows (.NET)](http://msdn.microsoft.com/en-us/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5). En raison de la similarité de toutes les applications console, cette rubrique couvre les types de projets suivants :  
   
 -   Application console C#  

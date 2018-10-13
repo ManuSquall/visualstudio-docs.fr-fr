@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : Objets manquants en raison état de l’appareil | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 665075ce6656d2cebb246b7591821491b1cf2f58
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 95d962ec83b5d0c3a89d41ab8f8cc40ee76ffbb4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506177"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280837"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>Procédure pas à pas : objets manquants en raison de l'état du périphérique
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : manquant objets en raison d’état de l’appareil](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-missing-objects-due-to-device-state).  
-  
-Cette procédure pas à pas montre comment utiliser [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Graphics Diagnostics pour examiner un objet est manquant à cause mal configuré l’état de l’appareil.  
+Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour examiner un objet qui est manquant à cause de la configuration incorrecte de l’état de l’appareil.  
   
  Cette procédure pas à pas montre comment effectuer les opérations suivantes :  
   
@@ -45,7 +43,7 @@ Cette procédure pas à pas montre comment utiliser [!INCLUDE[vsprvs](../include
   
  ![L’application avant la résolution du problème](../debugger/media/vsg-walkthru1-firstview.png "vsg_walkthru1_firstview")  
   
- Pour plus d’informations sur la capture des problèmes de graphisme dans un journal de graphisme, consultez [capture les informations graphiques](../debugger/capturing-graphics-information.md).  
+ Pour plus d’informations sur la capture des problèmes de graphisme dans un journal de graphisme, consultez [Capturing Graphics Information](../debugger/capturing-graphics-information.md).  
   
 ## <a name="investigation"></a>Examen  
  À l’aide des outils Graphics Diagnostics, vous pouvez charger le fichier journal de graphisme pour examiner les frames capturés pendant le test.  
@@ -104,7 +102,7 @@ Cette procédure pas à pas montre comment utiliser [!INCLUDE[vsprvs](../include
   
 1.  Ouvrez la fenêtre **Table des objets Graphics** . Dans la barre d’outils **Graphics Diagnostics** , choisissez **Table des objets**.  
   
-2.  Recherchez l’objet **Périphérique D3D10** dans **Table des objets Graphics**, puis ouvrez l’objet **Périphérique D3D10** . Un nouveau **d3d10 appareil** onglet s’ouvre dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pour simplifier cette opération, vous pouvez trier la **Table des objets Graphics** par **Type**:  
+2.  Recherchez l’objet **Périphérique D3D10** dans **Table des objets Graphics**, puis ouvrez l’objet **Périphérique D3D10** . Un nouvel onglet **Périphérique D3D10** s’ouvre dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pour simplifier cette opération, vous pouvez trier la **Table des objets Graphics** par **Type**:  
   
      ![Table des objets Graphics et état de périphérique associé](../debugger/media/vsg-walkthru1-objtable.png "vsg_walkthru1_objtable")  
   

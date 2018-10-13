@@ -1,7 +1,7 @@
 ---
 title: Diagnostiquer des problèmes après déploiement | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 66
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a7979cdde9ec6411db83753b0006a2f55c4afb4b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 26a852bdf955a17dd59ffe79d29e2601362e47d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494886"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270593"
 ---
 # <a name="diagnose-problems-after-deployment"></a>Diagnostiquer des problèmes après le déploiement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [diagnostiquer des problèmes après déploiement](https://docs.microsoft.com/visualstudio/debugger/diagnose-problems-after-deployment).  
-  
 Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans votre application web ASP.NET après son déploiement, ajoutez les informations de build à votre version pour permettre à Visual Studio de trouver automatiquement les fichiers sources et fichiers de symboles correspondants nécessaires pour déboguer l’application à l’aide du journal IntelliTrace.  
   
  Si vous utilisez Microsoft Monitoring Agent pour contrôler IntelliTrace, vous devez également configurer l’analyse des performances de l’application sur votre serveur web. Cela permet d’enregistrer des événements de diagnostic pendant l’exécution de votre application et d’enregistrer les événements dans un fichier journal IntelliTrace. Vous pouvez ensuite examiner les événements dans Visual Studio Enterprise (mais pas Professional ni Community), accéder au code où l’événement s’est produit, observer les valeurs enregistrées à cet instant donné, et avancer ou reculer dans le code qui a été exécuté. Après avoir identifié et corrigé le problème, répétez le cycle de génération, publication et surveillance de votre version, de sorte à pouvoir résoudre les éventuels problèmes futurs plus tôt et plus vite.  
@@ -63,7 +61,7 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
   
      ![Définir le chemin d’accès des symboles dans la définition de build TFS 2013](../debugger/media/ffr-tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
   
-     Pour plus d’informations sur les symboles, consultez [publier des données symboles](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6).  
+     Pour plus d’informations sur les symboles, consultez [Publier les données de symbole](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6).  
   
 4.  Ajoutez cet argument MSBuild pour inclure les emplacements de votre TFS et des symboles dans le fichier manifeste de la build :  
   
@@ -156,7 +154,7 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
  Si vous utilisez d’autres méthodes pour déployer votre application, assurez-vous que le manifeste de build «*Nom_projet*.BuildInfo.config » est renommé en « BuildInfo.config » et qu’il est placé dans le même dossier que le fichier Web.config de votre application sur le serveur web.  
   
 ## <a name="step-3-monitor-your-app"></a>Étape 3 : Surveiller votre application  
- Paramétrez la surveillance des performances de l’application sur votre serveur web de sorte à pouvoir surveiller si votre application rencontre des problèmes, enregistrer des événements de diagnostic et enregistrer ces événements dans un fichier journal IntelliTrace. Consultez [surveiller votre version pour les problèmes de déploiement](../debugger/using-the-intellitrace-stand-alone-collector.md).  
+ Paramétrez la surveillance des performances de l’application sur votre serveur web de sorte à pouvoir surveiller si votre application rencontre des problèmes, enregistrer des événements de diagnostic et enregistrer ces événements dans un fichier journal IntelliTrace. Consultez [Surveiller votre version pour identifier les problèmes de déploiement](../debugger/using-the-intellitrace-stand-alone-collector.md).  
   
 ##  <a name="InvestigateEvents"></a> Étape 4 : Identifier le problème  
  Vous devez installer Visual Studio Enterprise sur votre ordinateur de développement ou un autre ordinateur pour examiner les événements enregistrés et déboguer votre code à l’aide d’IntelliTrace. Vous pouvez aussi utiliser des outils comme CodeLens, les cartes de débogueur et les cartes de code pour vous aider à diagnostiquer le problème.  
@@ -209,7 +207,7 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
   
      ![Accédez au code d’application à partir de l’événement de performances](../debugger/media/ffr-itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
   
-     Vous pouvez maintenant examiner d’autres valeurs enregistrées, la pile des appels, parcourir votre code ou utiliser la fenêtre **IntelliTrace** pour [remonter ou avancer « dans le temps » entre d’autres méthodes](../debugger/intellitrace.md) appelées pendant cet événement de performance. [Qu’est toutes ces autres événements et informations dans le journal IntelliTrace ? ](../debugger/using-saved-intellitrace-data.md) [Que puis-je faire d’autre à partir d’ici ?](#WhatElse) [Plus d’informations sur les événements de performances ?](http://blogs.msdn.com/b/visualstudioalm/archive/2013/09/20/performance-details-in-intellitrace.aspx)  
+     Vous pouvez maintenant examiner d’autres valeurs enregistrées, la pile des appels, parcourir votre code ou utiliser la fenêtre **IntelliTrace** pour [remonter ou avancer « dans le temps » entre d’autres méthodes](../debugger/intellitrace.md) appelées pendant cet événement de performance. [En quoi consistent tous les autres événements et informations du journal IntelliTrace ?](../debugger/using-saved-intellitrace-data.md)[What else can I do from here?](#WhatElse)[Vous voulez plus d’informations sur les événements de performances?](http://blogs.msdn.com/b/visualstudioalm/archive/2013/09/20/performance-details-in-intellitrace.aspx)  
   
 ### <a name="diagnose-an-exception"></a>Diagnostiquer une exception  
   
@@ -227,7 +225,7 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
   
 ###  <a name="WhatElse"></a> Que puis-je faire d’autre à partir d’ici ?  
   
--   [Obtenir plus d’informations sur ce code](../ide/find-code-changes-and-other-history-with-codelens.md). Pour trouver des références à ce code, son historique de modification, les bogues associés, les éléments de travail, les révisions du code ou les tests unitaires, le tout sans quitter l’éditeur, utilisez les indicateurs CodeLens de l’éditeur.  
+-   [Obtenez plus d’informations sur ce code](../ide/find-code-changes-and-other-history-with-codelens.md). Pour trouver des références à ce code, son historique de modification, les bogues associés, les éléments de travail, les révisions du code ou les tests unitaires, le tout sans quitter l’éditeur, utilisez les indicateurs CodeLens de l’éditeur.  
   
      ![CodeLens &#45; afficher les références à ce code](../debugger/media/ffr-itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")  
   
@@ -311,7 +309,7 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
   
      Informations sur votre système de génération, `"TeamBuild"` ou `"MSBuild"`, et les propriétés requises suivantes :  
   
-    -   **BuildLabel** (pour TeamBuild) : nom et numéro de votre build. Cette étiquette est également utilisée comme nom de l’événement de déploiement. Pour plus d’informations sur les numéros de build, consultez [utilisez numéros de build pour attribuer des noms pertinents aux builds terminées](http://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3).  
+    -   **BuildLabel** (pour TeamBuild) : nom et numéro de votre build. Cette étiquette est également utilisée comme nom de l’événement de déploiement. Pour plus d’informations sur les numéros de build, consultez [Utiliser des numéros de build pour attribuer des noms pertinents aux builds terminées](http://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3).  
   
     -   **SymbolPath** (recommandé) : liste des URI des emplacements de vos symboles (fichier PDB), séparés par des points-virgules. Les URI peuvent être des URL ou des chemins d’accès réseau (UNC). Il est alors plus facile pour Visual Studio de rechercher les symboles correspondants pour vous aider avec le débogage.  
   
@@ -371,7 +369,7 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
      ![Ouvrir à partir du contrôle de code source &#45; migré](../debugger/media/ffr-openprojectfromsourcecontrol-migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
   
 ####  <a name="WhatWorkspace"></a> Q : qu’est un espace de travail ?  
- **R :** votre [espace de travail stocke une copie de la source](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) afin de pouvoir développer et tester séparément avant d’archiver votre travail. Si vous ne disposez pas déjà d’un espace de travail spécialement mappé à la solution ou au projet trouvé, Visual Studio vous invite à choisir un espace de travail disponible ou à en créer un avec le nom de votre ordinateur comme nom d’espace de travail par défaut.  
+ **R :** Votre [espace de travail stocke une copie de la source](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) pour que vous puissiez le développer et le tester séparément avant d’archiver votre travail. Si vous ne disposez pas déjà d’un espace de travail spécialement mappé à la solution ou au projet trouvé, Visual Studio vous invite à choisir un espace de travail disponible ou à en créer un avec le nom de votre ordinateur comme nom d’espace de travail par défaut.  
   
 ####  <a name="UntrustedSymbols"></a> Q : je reçois ce message sur les symboles non fiables ?  
  ![Déboguer avec le chemin d’accès des symboles non fiables ? ](../debugger/media/ffr-ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  

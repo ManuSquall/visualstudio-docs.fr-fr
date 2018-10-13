@@ -1,7 +1,7 @@
 ---
 title: IDiaStackFrame::get_allocatesBasePointer | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 467dc4b1a6743cd62ce57f4be5119e5a8462f89b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7f0980e030e3adc9851585932ca18e768d95e35e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505053"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293447"
 ---
 # <a name="idiastackframegetallocatesbasepointer"></a>IDiaStackFrame::get_allocatesBasePointer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDiaStackFrame::get_allocatesBasePointer](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer).  
-  
 Récupère un indicateur qui indique si le pointeur de base est alloué pour le code dans cette plage d’adresses.  
   
 ## <a name="syntax"></a>Syntaxe  

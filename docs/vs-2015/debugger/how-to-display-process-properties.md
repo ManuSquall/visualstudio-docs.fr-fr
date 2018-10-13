@@ -1,7 +1,7 @@
 ---
 title: 'Comment : afficher les propriétés de processus | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: edb77bcc22ab4e507f5b35d29c191efe26e9ad3b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6816aed50bd7d03338508856472f893b441842e2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494218"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296066"
 ---
 # <a name="how-to-display-process-properties"></a>Comment : afficher les propriétés d'un processus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : afficher les propriétés de processus](https://docs.microsoft.com/visualstudio/debugger/how-to-display-process-properties).  
-  
 Pour en savoir plus sur un processus listé dans [vue processus](../debugger/processes-view.md), utilisez le [boîte de dialogue Propriétés de processus](../debugger/process-properties-dialog-box.md).  
   
 ### <a name="to-open-a-process-properties-dialog-box"></a>Pour ouvrir une boîte de dialogue Propriétés du processus  

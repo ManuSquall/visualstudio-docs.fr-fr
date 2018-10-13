@@ -1,7 +1,7 @@
 ---
 title: Ce que&#39;nouveauté de Visualization and Modeling SDK | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: alancameronwills
 ms.author: awills
 manager: kamrani
-ms.openlocfilehash: a8ec483e9fcd21b41de092584aef02258bdfedde
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dde1bf464cfbf89a44ec3a8a606579d03c8f65a7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506159"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289846"
 ---
 # <a name="what39s-new-in-visualization-and-modeling-sdk"></a>Ce que&#39;nouveauté de Visualization and Modeling SDK
 ## <a name="new-features-in-dsl-tools-for-visual-studio-2011"></a>Nouvelles fonctionnalités dans les outils DSL pour Visual Studio 2011

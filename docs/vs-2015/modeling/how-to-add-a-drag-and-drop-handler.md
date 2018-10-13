@@ -1,7 +1,7 @@
 ---
 title: 'Comment : ajouter un gestionnaire glisser-déplacer | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 503231fbae306c198e7c1e728f7c2b63794289b7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e163386c7f00f0646bb711617e402a1873e544e2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508313"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280525"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Comment : ajouter un gestionnaire glisser-déplacer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : ajouter un gestionnaire glisser-déplacer](https://docs.microsoft.com/visualstudio/modeling/how-to-add-a-drag-and-drop-handler).  
-  
 Vous pouvez ajouter des gestionnaires pour les événements glisser-déplacer à votre DSL, de telle sorte que les utilisateurs puissent faire glisser des éléments vers votre diagramme à partir d'autres diagrammes ou d'autres parties de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vous pouvez aussi ajouter des gestionnaires pour des événements tels que les doubles clics. Ensemble, sont appelés les gestionnaires de glisser-déposer et de double-clic *gestionnaires de mouvements*.  
   
  Cette rubrique traite des mouvements de type glisser-déplacer dont l'origine se situe sur d'autres diagrammes. Pour déplacer et copier des événements au sein d'un seul diagramme, pensez à l'autre solution qui consiste à définir une sous-classe d'`ElementOperations`. Pour plus d’informations, consultez [personnalisation du comportement de copie](../modeling/customizing-copy-behavior.md). Vous avez aussi la possibilité de personnaliser la définition DSL.  

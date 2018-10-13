@@ -1,7 +1,7 @@
 ---
 title: Élément EnableEditOfLocationField (modèles Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 51a91963-8a3f-4741-928e-bc90c11473bb
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af7488a2f67faf9bacc51b54fc17226c412c1733
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 98d59f92291becedb4dba53c5e10012dddd51e0c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507411"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274701"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>Élément EnableEditOfLocationField (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [EnableEditOfLocationField élément (modèles Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/enableeditoflocationfield-element-visual-studio-templates).  
-  
 Spécifie si l’utilisateur peut modifier le champ d’emplacement.  
   
  \<VSTemplate >  

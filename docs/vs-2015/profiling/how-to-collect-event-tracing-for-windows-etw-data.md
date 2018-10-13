@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour collecter les données de suivi d’événements pour Windows (ETW) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a9f3476a5aa27075f28d9d02f8ca7167cd3f7e64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 18a6ffc20cca04478d382ee58ed84b7d3a2a9f2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506878"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277912"
 ---
-# <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Comment : collecter les données de suivi d’événements pour Windows (ETW)
+# <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Guide pratique pour collecter les données de suivi d’événements pour Windows (ETW)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : collecter Event Tracing for Windows (ETW) données](https://docs.microsoft.com/visualstudio/profiling/how-to-collect-event-tracing-for-windows-etw-data).  
-  
 Le suivi d’événements pour Windows (ETW) est une fonctionnalité de traçage efficace de niveau noyau qui permet de journaliser les événements de noyau et les événements définis par l’application du profileur. Les données collectées à partir du fournisseur d’événements ne peuvent être affichées qu’à l’aide de l’option /**Summary:ETW** de l’outil en ligne de commande [VSPerfReport](../profiling/vsperfreport.md). Vous pouvez utiliser ce rapport pour déterminer où se situent les problèmes de performances au sein de l’application.  
   
  **Spécifications**  

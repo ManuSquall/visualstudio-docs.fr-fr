@@ -1,7 +1,7 @@
 ---
 title: Vue Arborescence des appels - Données d’instrumentation | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54360ded2c3e758658969484515e06e50b86b45e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fde596d095a07ce609b0a357f16f17fabfa4258
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503085"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297269"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Vue Arborescence des appels - Données d’instrumentation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [vue arborescence des appels - données d’Instrumentation](https://docs.microsoft.com/visualstudio/profiling/call-tree-view-instrumentation-data).  
-  
 Les valeurs d’une fonction dans l’arborescence des appels indiquent une durée pour les instances de fonctions qui ont été appelées par la fonction parent dans l’arborescence des appels. Les valeurs en pourcentage sont calculées en comparant la valeur des instances de fonctions au temps inclusif écoulé total de toutes les fonctions comprises dans l’exécution du profilage.  
   
 ## <a name="general"></a>Général  

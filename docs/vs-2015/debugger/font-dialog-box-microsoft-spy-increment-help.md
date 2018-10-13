@@ -1,7 +1,7 @@
 ---
 title: Boîte de dialogue Police (aide de Microsoft Spy ++) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8e753bd3f0e00e813556813689cb0702fc43214
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0fa7fcf78180790e9f57ae2f944a9b5683e8423
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505421"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288066"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>Boîte de dialogue Police (aide de Microsoft Spy++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [boîte de dialogue Police (aide Spy ++ de Microsoft)](https://docs.microsoft.com/visualstudio/debugger/font-dialog-box-microsoft-spy-increment-help).  
-  
 Utilisez cette boîte de dialogue pour configurer la police de caractères dans un [vues Spy ++](../debugger/spy-increment-views.md) fenêtre. Pour afficher cette boîte de dialogue, développez le **vue** menu et choisissez **police**.  
   
  Les paramètres suivants sont disponibles :  

@@ -1,7 +1,7 @@
 ---
 title: Info express dans un Service de langage hérité | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ba5d6d2c08d6b4d39efe9d662dda7a0e324cbf6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d1dab76881ac7cd4fe5cba36ec79dc48f4c1ecf1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493031"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250679"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>Informations rapides dans un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Info express dans un Service de langage hérité](https://docs.microsoft.com/visualstudio/extensibility/internals/quick-info-in-a-legacy-language-service).  
-  
 Info express IntelliSense affiche des informations sur un identificateur dans la source lorsque l’utilisateur place le signe insertion dans l’identificateur sélectionne **Info Express** à partir de la **IntelliSense** menu ou détient la souris curseur sur l’identificateur. Cela entraîne une info-bulle apparaisse avec des informations sur l’identificateur. Ces informations se composent généralement de type identificateur. Lorsque le moteur de débogage est actif, ces informations peuvent inclure la valeur actuelle. Le moteur de débogage fournit des valeurs de l’expression, tandis que le service de langage gère uniquement des identificateurs.  
   
  Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour plus d’informations, consultez [procédure pas à pas : affichage des info-bulles Info](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md).  

@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_registerType | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b7257bbe47cfaaac114db017b1b53ff5bc39e30
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c5c435abcd4b6a708de8ad0275c0b8f7c6c4008f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500887"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278834"
 ---
 # <a name="idiasymbolgetregistertype"></a>IDiaSymbol::get_registertype
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDiaSymbol::get_registerType](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-registertype).  
-  
 Récupère le type de Registre.  
   
 ## <a name="syntax"></a>Syntaxe  

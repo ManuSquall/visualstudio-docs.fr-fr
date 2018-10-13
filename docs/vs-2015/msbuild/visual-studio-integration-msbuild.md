@@ -1,7 +1,7 @@
 ---
 title: Intégration de Visual Studio (MSBuild) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f49afd0b0f613e2617c7533f85e4f6efdd2db7e3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2b9591ebff8708d0cd63825854c31cf297d32ce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504358"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294851"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Intégration de Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [intégration de Visual Studio (MSBuild)](https://docs.microsoft.com/visualstudio/msbuild/visual-studio-integration-msbuild).  
-  
   
 Visual Studio héberge[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pour charger et générer des projets managés. Dans la mesure où [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] est responsable du projet, la plupart des projets au format [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] peut être utilisé sans problème dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], même si le projet a été créé par un outil différent et possède un processus de génération personnalisé.  
   

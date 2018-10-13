@@ -1,7 +1,7 @@
 ---
 title: Déboguer les Threads et processus | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bda70d9f99b4b97623d5d9f03ca440721f9a728
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 711aaeaa76edbb4ea9d070254213f9a7207e12f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493059"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191488"
 ---
 # <a name="debug-threads-and-processes"></a>Déboguer les threads et processus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [déboguer les Threads et processus](https://docs.microsoft.com/visualstudio/debugger/debug-threads-and-processes).  
-  
 Threads * et *processus* sont des concepts liés en informatique. Tous deux représentent des séquences d'instructions qui doivent s'exécuter dans un ordre spécifique. Les instructions dans des threads ou processus séparés, toutefois, peuvent s'exécuter en parallèle.  
   
  Les processus existent dans le système d'exploitation et correspondent à ce que les utilisateurs voient sous la forme de programmes ou d'applications. Un thread, en revanche, existe dans un processus. Pour cette raison, les threads sont parfois appelés *processus légers*. Chaque processus est constitué d'un ou de plusieurs threads.  

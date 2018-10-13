@@ -1,7 +1,7 @@
 ---
 title: 'Erreur : Échec de l’authentification Kerberos | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed475ecf2ac0bd62dd710832540d599cb367aedc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a1fbea1d9279bb85c82a534873941f74ac7586e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502713"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293200"
 ---
 # <a name="error-kerberos-authentication-failed"></a>Erreur : L'authentification Kerberos a échoué
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [erreur : Échec de l’authentification Kerberos](https://docs.microsoft.com/visualstudio/debugger/error-kerberos-authentication-failed).  
-  
 Lorsque vous essayez d'effectuer un débogage distant, le message d'erreur suivant peut s'afficher :  
   
 ```  
@@ -71,7 +69,7 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 ## <a name="see-also"></a>Voir aussi  
  [Erreurs de débogage distant et dépannage](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Débogage à distance](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

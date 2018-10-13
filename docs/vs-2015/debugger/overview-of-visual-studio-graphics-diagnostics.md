@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble de Visual Studio Graphics Diagnostics | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2321e590591d6c3d80b41c58147820cf0248f403
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 87b9486430f4d2a8bf2b33b468aca865f78671b2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495754"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285738"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Vue d’ensemble de Visual Studio Graphics Diagnostics
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [vue d’ensemble de Visual Studio Graphics Diagnostics](https://docs.microsoft.com/visualstudio/debugger/graphics/overview-of-visual-studio-graphics-diagnostics).  
-  
 Visual Studio *Graphics Diagnostics* est un ensemble d’outils pour l’enregistrement, puis en analysant les problèmes de rendu et de performances dans les applications Direct3D. Graphics Diagnostics peut être utilisé sur les applications qui s’exécutent localement sur votre PC Windows, dans un émulateur d’appareil Windows, ou sur un PC ou un appareil distant.  
   
 ## <a name="using-graphics-diagnostics-to-debug-rendering-problems"></a>Utilisation de Graphics Diagnostics pour déboguer les problèmes de rendu  
@@ -42,7 +40,7 @@ Visual Studio *Graphics Diagnostics* est un ensemble d’outils pour l’enregis
  Windows 10 assure également la prise en charge des versions précédentes de Direct3D, ainsi que des jeux et applications qui reposent sur ces dernières. Graphics Diagnostics dans Visual Studio 2015 continue à prendre en charge Direct3D 10 et Direct3D 11 sur Windows 10, ainsi que sur Windows 8.1.  
   
 ### <a name="windows-81-and-direct3d-112"></a>Windows 8.1 et Direct3D 11.2  
- Dans [!INCLUDE[win81](../includes/win81-md.md)], DirectX 11.2 inaugure de nouvelles fonctionnalités qui prennent en charge la capture d'informations graphiques pendant toute son exécution. [!INCLUDE[win81](../includes/win81-md.md)] utilise la nouvelle capture basée sur le runtime, connu sous le nom *capture robuste*— exclusivement pour toutes les versions de DirectX qui [!INCLUDE[win81](../includes/win81-md.md)] prend en charge. La capture robuste prend aussi en charge les nouvelles fonctionnalités de Direct3D 11.2.  
+ Dans [!INCLUDE[win81](../includes/win81-md.md)], DirectX 11.2 inaugure de nouvelles fonctionnalités qui prennent en charge la capture d’informations graphiques pendant toute son exécution. [!INCLUDE[win81](../includes/win81-md.md)] utilise la nouvelle capture basée sur le runtime, connu sous le nom *capture robuste*— exclusivement pour toutes les versions de DirectX qui [!INCLUDE[win81](../includes/win81-md.md)] prend en charge. La capture robuste prend aussi en charge les nouvelles fonctionnalités de Direct3D 11.2.  
   
 ### <a name="limited-direct2d-support"></a>Prise en charge limitée de Direct2D  
  Étant donné que Direct2D est une API en mode utilisateur générée d'après Direct3D, vous pouvez utiliser Graphics Diagnostics pour déboguer les problèmes de rendu dans les applications qui utilisent Direct2D. Toutefois, étant donné que seuls les événements de Direct3D sous-jacents sont stockés à la place des événements de niveau supérieur de Direct2D, les événements de Direct2D n'apparaîtront pas dans la liste des événements graphiques. En outre, comme les relations entre les événements de Direct2D et les événements de Direct3D qui en résultent ne sont pas toujours claires, le fait d'utiliser Graphics Diagnostics pour déboguer les problèmes de rendu dans des applications qui utilisent Direct2D n'est pas simple. Vous pouvez toujours utiliser Graphics Diagnostics pour obtenir des informations sur les problèmes de bas niveau de rendu dans les applications qui utilisent Direct2D.  

@@ -1,7 +1,7 @@
 ---
 title: Raccourcis clavier et touches de modification dans Blend | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba02644e3be4aeb5b9d6d1dced8e990065552eee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 40970dbbffcb6f20fe605ac07a10ae359e300578
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506466"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283892"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Raccourcis clavier et touches de modification dans Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [raccourcis clavier et touches de modification dans Blend](https://docs.microsoft.com/visualstudio/designers/keyboard-shortcuts-and-modifier-keys-in-blend).  
-  
 Les raccourcis clavier peuvent accélérer votre travail en réduisant une action qui nécessiterait plusieurs clics de la souris à un seul raccourci clavier. Les raccourcis clavier dans [!INCLUDE[blend_first](../includes/blend-first-md.md)] sont classés dans les deux catégories suivantes :  
   
 -   **Touches d’accès rapide** Vous pouvez utiliser les touches d’accès rapide pour accéder à une commande de menu ou à une zone d’une boîte de dialogue en appuyant sur une touche spécifique du clavier. Les touches d'accès sont identifiées par des traits de soulignement qui apparaissent dans la commande ou la boîte de dialogue sélectionnée.  

@@ -1,7 +1,7 @@
 ---
 title: 'Comment : créer une texture de base | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1fd26ddef0e4076603ef22589bcbd59e472bf9d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 143bf4f094a603c20e12b52adb452b193fb57a33
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503226"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292797"
 ---
-# <a name="how-to-create-a-basic-texture"></a>Comment : créer une texture de base
+# <a name="how-to-create-a-basic-texture"></a>Comment : créer une texture de base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : créer une Texture de base](https://docs.microsoft.com/visualstudio/designers/how-to-create-a-basic-texture).  
-  
 Ce document montre comment utiliser l’éditeur d’images pour créer une texture de base.  
   
  Ce document illustre ces activités :  
@@ -98,7 +96,7 @@ Ce document montre comment utiliser l’éditeur d’images pour créer une text
  Ensuite, vous pouvez générer des niveaux MIP pour cette texture. Pour plus d’informations, consultez l’article [Comment : créer et modifier les niveaux MIP](../designers/how-to-create-and-modify-mip-levels.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Éditeur d’images](../designers/image-editor.md)
+ [Image Editor](../designers/image-editor.md)
 
 
 

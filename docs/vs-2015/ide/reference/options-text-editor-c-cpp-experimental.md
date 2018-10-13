@@ -1,7 +1,7 @@
 ---
 title: Options, éditeur de texte, C / C++, expérimental | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6ab69c9b777fc28d1abc02267d9d94a1dca70c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6b07bdc7ab114619629ab4ef360ded3bf6655e6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494918"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285114"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Options, Éditeur de texte, C/C++, Expérimental
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Options, éditeur de texte, C/C++, expérimental](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-c-cpp-experimental).  
-  
   
 En modifiant ces options, vous pouvez changer le comportement lié à IntelliSense et la base de données de navigation quand vous programmez en C ou C++.  
   

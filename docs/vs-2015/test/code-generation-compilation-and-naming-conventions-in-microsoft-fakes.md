@@ -1,7 +1,7 @@
 ---
 title: Génération, compilation de code et conventions de nommage dans Microsoft Fakes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 98969c10a5a4464ea36b60aa1f4f024a6d96e1f7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93d08695a891aeda0d4f153fa2f3e6738d647b27
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507141"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200016"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Génération et compilation de code et conventions de nommage dans Microsoft Fakes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [génération de Code, compilation et conventions de nommage dans Microsoft Fakes](https://docs.microsoft.com/visualstudio/test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes).  
-  
 Cette rubrique traite des options et des problèmes dans la génération et la compilation de code Fakes, et décrit les conventions de nommage pour les types Fakes générés, les membres et les paramètres.  
   
  **Spécifications**  

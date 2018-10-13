@@ -1,7 +1,7 @@
 ---
 title: Débogage dans Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,15 @@ caps.latest.revision: 55
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 73c87560e6ce238877088def248afe9d8ce42103
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c3323c2513b21ad5432b6784ea305bf1693990d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506707"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296443"
 ---
 # <a name="debugging-in-visual-studio"></a>Débogage dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Vous trouverez la dernière version de cette rubrique dans [débogage dans Visual Studio](https://docs.microsoft.com/visualstudio/debugger/debugger-feature-tour).
-
 Le débogueur Visual Studio vous permet d’observer le comportement de votre programme au moment de l’exécution et de déterminer détecter les problèmes. Le débogueur fonctionne avec tous les langages de programmation Visual Studio et les bibliothèques qui leur sont associées. Avec le débogueur, vous pouvez interrompre l’exécution de votre programme afin d’examiner votre code, d’examiner et de modifier les variables, de visualiser les registres, d’afficher les instructions créées à partir de votre code source et de connaître l’espace mémoire utilisé par votre application.  
   
  Pour une présentation rapide du débogage et des diagnostics dans Visual Studio, consultez [Déboguer, profiler et diagnostiquer](https://www.visualstudio.com/features/debugging-and-diagnostics-vs).  

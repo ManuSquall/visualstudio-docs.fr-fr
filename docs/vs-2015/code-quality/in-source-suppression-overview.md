@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble de la Suppression Source | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7f02a57be8d267126deb6736c9e0a690b1ac3e2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 844681d079e5565aab9eceadb73f7d8a61cbb2c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504330"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209038"
 ---
 # <a name="in-source-suppression-overview"></a>Vue d’ensemble de la suppression à la source
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [dans Source Suppression vue d’ensemble](https://docs.microsoft.com/visualstudio/code-quality/in-source-suppression-overview).  
-  
 Suppression à la source est la possibilité de supprimer ou d’ignorer des violations d’analyse du Code dans le code managé en ajoutant la **SuppressMessage** les segments de code qui provoquent les violations de l’attribut. Le **SuppressMessage** attribut est un attribut conditionnel qui est inclus dans les métadonnées de langage intermédiaire de votre assembly de code managé uniquement si le symbole de compilation CODE_ANALYSIS est défini au moment de la compilation.  
   
  En C / c++ / CLI, utilisez les macros CA_SUPPRESS_MESSAGE ou CA_GLOBAL_SUPPRESS_MESSAGE dans le fichier d’en-tête, pour ajouter l’attribut.  

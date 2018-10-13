@@ -1,7 +1,7 @@
 ---
 title: 'Comment : rechercher une fenêtre dans la vue de Windows | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 043e3e92004eb5b0995bc285e90a138f4dc902f4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9cd33d8c7414d4db989533475a328ca8abf2ffdb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504584"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295059"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>Comment : rechercher une fenêtre dans la vue Fenêtres
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : rechercher une fenêtre dans la vue de Windows](https://docs.microsoft.com/visualstudio/debugger/how-to-search-for-a-window-in-windows-view).  
-  
 Vous pouvez rechercher une fenêtre spécifique dans la vue de Windows à l’aide de son handle, légende, classe ou une combinaison de sa légende et de la classe en tant que critères de recherche. Vous pouvez également spécifier le sens initial de la recherche. Les champs dans la boîte de dialogue affiche les attributs de la fenêtre sélectionnée dans l’arborescence de la fenêtre.  
   
  Démarrer avec l’arborescence développée au deuxième niveau (toutes les fenêtres qui sont des enfants du bureau), afin que vous puissiez identifier au niveau du bureau de windows par leur nom de classe et le titre. Une fois que vous avez choisi une fenêtre de niveau bureau, vous pouvez développer ce niveau pour rechercher une fenêtre enfant spécifique.  

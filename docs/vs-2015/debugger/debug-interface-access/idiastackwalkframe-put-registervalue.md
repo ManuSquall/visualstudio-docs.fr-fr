@@ -1,7 +1,7 @@
 ---
 title: IDiaStackWalkFrame::put_registerValue | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5dd647802847364d9cf85afbcd722508f82ad9cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 384e1cebb6645222fc06394511036a2d59d9cd1e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502861"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279355"
 ---
 # <a name="idiastackwalkframeputregistervalue"></a>IDiaStackWalkFrame::put_registerValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDiaStackWalkFrame::put_registerValue](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiastackwalkframe-put-registervalue).  
-  
 Définit la valeur d’un Registre.  
   
 ## <a name="syntax"></a>Syntaxe  

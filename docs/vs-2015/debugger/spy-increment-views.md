@@ -1,7 +1,7 @@
 ---
 title: Vues Spy ++ | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 648c0d32b19964d3e85feb3d16a04ccbd235444b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a361e09e534a19e0fc68bd44a68cccd8359b4b0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494207"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190968"
 ---
 # <a name="spy-views"></a>Vues Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [vues Spy ++](https://docs.microsoft.com/visualstudio/debugger/spy-increment-views).  
-  
 Spy ++ affiche les vues de l’arborescence de windows, les messages, les processus et les threads disponibles sur votre ordinateur.  
   
 ## <a name="in-this-section"></a>Dans cette section  
@@ -41,7 +39,7 @@ Spy ++ affiche les vues de l’arborescence de windows, les messages, les proces
  [Vue Processus](../debugger/processes-view.md)  
  Affiche une arborescence des processus actifs.  
   
- [Vue Threads](../debugger/threads-view.md)  
+ [vue Threads](../debugger/threads-view.md)  
  Affiche une arborescence des threads actifs.  
   
 ## <a name="related-sections"></a>Rubriques connexes  

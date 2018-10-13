@@ -1,7 +1,7 @@
 ---
 title: TypeDef (SDK Debug Interface Access) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69649bfddd2fd76a6dcec423fc510317ae8fd3a5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cdb4effcdff8a4eb6ffb23c9dfc4c39b35e613de
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501009"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232698"
 ---
 # <a name="typedef-debug-interface-access-sdk"></a>Typedef (Kit de développement logiciel de Debug Interface Access)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [(typedef) (Debug Interface Access SDK)](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/typedef-debug-interface-access-sdk).  
-  
 Symboles avec `SymTagTypedef` balises introduisent des noms pour les autres types.  
   
 ## <a name="properties"></a>Properties  

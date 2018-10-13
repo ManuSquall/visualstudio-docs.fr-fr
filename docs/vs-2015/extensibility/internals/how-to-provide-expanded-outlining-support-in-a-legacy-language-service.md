@@ -1,7 +1,7 @@
 ---
 title: 'Comment : fournir une prise en charge étendue de mode plan dans un Service de langage hérité | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: df759e89-8193-418c-8038-6626304d387b
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ab97a9b26c1dd76949a4bae6dd9640319398bd7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a6371339da12d88832e84d5086ed2d8a83226a94
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507568"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239530"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Comment : fournir une prise en charge étendue de mode plan dans un Service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [fournir prise en charge le mode plan dans un Service de langage](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service).  
-  
 Il existe deux options pour étendre la prise en charge en mode plan pour votre langage au-delà de la prise en charge la **réduire aux définitions** commande. Vous pouvez ajouter des régions en mode de plan contrôlés par l’éditeur et ajouter des régions en mode plan de contrôlé par le client.  
   
 ## <a name="adding-editor-controlled-outline-regions"></a>Ajout de régions de contour contrôlés par l’éditeur  

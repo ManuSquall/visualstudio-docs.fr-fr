@@ -1,7 +1,7 @@
 ---
 title: Référence du schéma XML VSCT | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84490c5bbaba926cb76927b5e545b88c4c1d4757
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a8975e53d690f4f2e13b08ccf290492955c49b0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501934"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293057"
 ---
 # <a name="vsct-xml-schema-reference"></a>Informations de référence sur le schéma XML VSCT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [VSCT XML Schema Reference](https://docs.microsoft.com/visualstudio/extensibility/vsct-xml-schema-reference).  
-  
 Fournit un tableau d’éléments de schéma du compilateur de Table de commande, avec enfant autorisé éléments et attributs pour chacun.  
   
  Un fichier de configuration (.vsct) de table de commande basé sur XML définit les éléments de commande qui fournit un VSPackage à l’environnement de développement intégré (IDE). Ces éléments incluent les éléments de menu, des menus, des barres d’outils et des zones de liste déroulante.  

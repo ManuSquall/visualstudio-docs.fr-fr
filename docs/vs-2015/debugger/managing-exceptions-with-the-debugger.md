@@ -1,7 +1,7 @@
 ---
 title: Gestion des Exceptions avec le débogueur | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -38,18 +38,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8837a633c12277a1caac2f88af3eb85a4db2dafc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05fda0b130d765d5028e9c257102100708908dca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503059"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285920"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Gestion des exceptions avec le débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [gérer les exceptions avec le débogueur Visual Studio](https://docs.microsoft.com/visualstudio/debugger/managing-exceptions-with-the-debugger).  
-  
 Une exception est une indication d'un état d'erreur qui se produit pendant qu'un programme est en cours d'exécution. Vous pouvez et devez fournir des gestionnaires qui répondent aux exceptions les plus importantes, mais il est important de savoir comment configurer le débogueur pour qu'il s'arrête sur les exceptions que vous voulez afficher.  
   
  Lorsqu'une exception est levée, le débogueur écrit un message d'exception dans la fenêtre Sortie. Cette action peut interrompre l'exécution dans les cas suivants :  
@@ -58,7 +56,7 @@ Une exception est une indication d'un état d'erreur qui se produit pendant qu'u
   
 -   quand le débogueur est configuré pour arrêter immédiatement l’exécution d’une exception qui est levée, avant même l’appel d’un gestionnaire ;  
   
--   Si vous avez défini [uniquement mon Code](../debugger/just-my-code.md), et le débogueur est configuré pour s’arrêter sur toute exception non gérée dans le code utilisateur.  
+-   si vous avez défini [Just My Code](../debugger/just-my-code.md)et que le débogueur est configuré pour arrêter l’exécution de toute exception non gérée dans le code utilisateur.  
   
 > [!NOTE]
 >  ASP.NET a un gestionnaire d'exceptions de niveau supérieur qui affiche les pages d'erreur dans un navigateur. Il n'interrompt pas l'exécution, à moins que l'option **Uniquement mon code** soit activée. Pour obtenir un exemple, consultez [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) , ci-dessous.  

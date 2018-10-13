@@ -1,7 +1,7 @@
 ---
 title: Déterminer quel éditeur ouvre un fichier dans un projet | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b144b9d380e652857b08733e48d43b5b7609ffd6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba2241a8c8572b46dab0d4df1776f65ab8f10d67
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506214"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241031"
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>Déterminer quel éditeur ouvre un fichier dans un projet
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [déterminer quel éditeur ouvre un fichier dans un projet](https://docs.microsoft.com/visualstudio/extensibility/internals/determining-which-editor-opens-a-file-in-a-project).  
-  
 Lorsqu’un utilisateur ouvre un fichier dans un projet, l’environnement passe par un processus d’interrogation, finalement ouvrir l’éditeur approprié ou le concepteur pour ce fichier. La procédure initiale employée par l’environnement est identique pour les éditeurs standard et personnalisées. L’environnement utilise divers critères lors de l’interrogation de l’éditeur à utiliser pour ouvrir un fichier et le VSPackage doit coordonner avec l’environnement pendant ce processus.  
   
  Par exemple, lorsqu’un utilisateur sélectionne le **Open** commande à partir de la **fichier** menu et choisit ensuite `filename`.rtf (ou tout autre fichier avec une extension .rtf), l’environnement appelle le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> implémentation pour chaque projet, mais finit par parcourir toutes les instances de projet dans la solution. Projets de retournent un jeu d’indicateurs qui identifient les revendications sur un document par priorité. À l’aide de la priorité la plus élevée, l’environnement appelle approprié <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A> (méthode). Pour plus d’informations sur le processus d’interrogation, [Ajout d’un projet et des modèles d’élément de projet](../../extensibility/internals/adding-project-and-project-item-templates.md).  

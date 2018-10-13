@@ -1,7 +1,7 @@
 ---
 title: Mise à niveau des modèles de projets et modèles d’élément pour Visual Studio « 15 » | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 02c7b14051a41616ed1b98812d1f1b7762f7165e
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 7e44ea1c267d9fe57c3f32ddad876b412f69ea24
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "47590900"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221154"
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-15"></a>Mise à niveau des modèles de projets et modèles d’élément pour Visual Studio « 15 »
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Upgrading Custom Project et des modèles d’élément pour Visual Studio ](https://docs.microsoft.com/visualstudio/extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017).  
-  
 À compter de Visual Studio « 15 » Preview 4, Visual Studio modifie la façon qu’il découvre les modèles de projet et d’élément qui ont été installés par un .vsix ou un fichier .msi. Si vous possédez des extensions qui utilisent des modèles d’élément ou de projet personnalisé, vous devez mettre à jour vos extensions. Cette rubrique explique la marche à suivre.  
   
  Cette modification affecte uniquement Visual Studio « 15 ». Il n’affecte pas les versions précédentes de Visual Studio.  

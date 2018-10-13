@@ -1,7 +1,7 @@
 ---
 title: Avertissements de mobilité | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 804c10b83f0fd648b11d0d50b9315225a6441ee6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6e73864234604f22ec15340740442505fec3e078
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502063"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270073"
 ---
 # <a name="mobility-warnings"></a>avertissements liés à la mobilité
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [mobilité avertissements](https://docs.microsoft.com/visualstudio/code-quality/mobility-warnings).  
-  
 Avertissements de mobilité prennent en charge la consommation d’énergie efficace.  
   
 ## <a name="in-this-section"></a>Dans cette section  

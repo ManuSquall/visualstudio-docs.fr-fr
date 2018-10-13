@@ -1,7 +1,7 @@
 ---
 title: Éditeur de jeu de travail dans la règle d’analyse de Code | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 098cf799ad99eb61a8aa53112eb7e44ee200c6c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cd107f2ac0c377765fda2f62f175d7285eb01bb6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502369"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269644"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>Utilisation de l'Éditeur d'ensembles de règles d'analyse du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [travaillant dans l’éditeur de définir des règles Code Analysis](https://docs.microsoft.com/visualstudio/code-quality/working-in-the-code-analysis-rule-set-editor).  
-  
 L’éditeur d’ensembles de règles analyse du Code vous permet de spécifier les règles qui sont inclus dans un ensemble de règles personnalisé et pour spécifier l’action. Vous pouvez également spécifier l’action à entreprendre lorsque l’analyse du code rencontre une violation de la règle.  
   
 |Action|Description|  

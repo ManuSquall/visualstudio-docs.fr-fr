@@ -1,7 +1,7 @@
 ---
 title: La mise à jour des formes et connecteurs pour refléter le modèle | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 99539a417ea61073cb4826d6a1e94e96564a108f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93c079a5dc80b0a26e133258328fb7b5b9fb8d41
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503388"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192450"
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Mise à jour des formes et des connecteurs pour refléter le modèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [la mise à jour des formes et connecteurs pour refléter le modèle](https://docs.microsoft.com/visualstudio/modeling/updating-shapes-and-connectors-to-reflect-the-model).  
-  
 Dans un langage spécifique à un domaine dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez rendre l’apparence d’une forme reflètent l’état du modèle sous-jacent.  
   
  Les exemples de code dans cette rubrique doivent être ajoutés à un `.cs` de fichiers dans votre `Dsl` projet. Vous aurez besoin de ces instructions dans chaque fichier :  

@@ -1,7 +1,7 @@
 ---
 title: T4 Directive du paramètre | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 00403f562771498a86c24e8433769ab7a44ec890
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 87e493667af1626cd97e575ddb614e7fd12c21d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508273"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294552"
 ---
 # <a name="t4-parameter-directive"></a>Directive du paramètre T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Directive du paramètre T4](https://docs.microsoft.com/visualstudio/modeling/t4-parameter-directive).  
-  
 Dans un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] modèle de texte, la `parameter` directive déclare des propriétés dans votre code de modèle qui sont initialisées à partir de valeurs passées par le contexte externe. Vous pouvez définir ces valeurs si vous écrivez du code qui appelle la transformation de texte.  
   
 ## <a name="using-the-parameter-directive"></a>À l’aide de la Directive du paramètre  

@@ -1,7 +1,7 @@
 ---
 title: ClickOnce et Authenticode | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: cf05c73ee621d9eda1619627b2d0b65611e447fd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: df3d87e240476aa02f5129f2238a1df55eb3be79
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507138"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289482"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce et Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [ClickOnce et Authenticode](https://docs.microsoft.com/visualstudio/deployment/clickonce-and-authenticode).  
-  
 Authenticode * est une technologie Microsoft qui utilise le chiffrement standard pour signer le code d’application avec des certificats numériques qui vérifient l’authenticité du serveur de publication de l’application. En utilisant Authenticode pour le déploiement d’applications, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] réduit le risque d’un cheval de Troie. Un cheval de Troie est un virus ou autre programme dangereux qu’un tiers malveillant présente comme un programme légitime provenant d’une source de confiance connue. La signature des déploiements [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] avec un certificat numérique est une étape facultative permettant de vérifier que les assemblys et les fichiers ne sont pas falsifiés.  
   
  Les sections suivantes décrivent les différents types de certificats numériques utilisés avec Authenticode, la validation des certificats à l’aide d’autorités de certification (CA), le rôle de l’horodatage dans les certificats et les méthodes de stockage possibles pour les certificats.  
@@ -43,7 +41,7 @@ Authenticode * est une technologie Microsoft qui utilise le chiffrement standard
 ## <a name="authenticode-and-code-signing"></a>Authenticode et signature de code  
  Un *certificat numérique* est un fichier qui contient une paire de clés publique/privée de chiffrement, ainsi que des métadonnées décrivant l’éditeur à qui le certificat a été délivré et l’agence qui a publié le certificat.  
   
- Il existe différents types de certificats Authenticode. Chacun d’eux est configuré pour un type de signature particulier. Pour les applications [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], vous devez disposer d’un certificat Authenticode valide pour la signature de code. Si vous tentez de signer un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application avec un autre type de certificat, tel qu’un certificat numérique par e-mail, il ne fonctionnera pas. Pour plus d’informations, consultez [Introduction to Code Signing](http://go.microsoft.com/fwlink/?LinkId=179452)(Présentation de la signature de code).  
+ Il existe différents types de certificats Authenticode. Chacun d’eux est configuré pour un type de signature particulier. Pour les applications [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , vous devez disposer d’un certificat Authenticode valide pour la signature de code. Si vous tentez de signer une application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] avec un autre type de certificat, tel qu’un certificat numérique par e-mail, cela ne fonctionne pas. Pour plus d’informations, consultez [Introduction to Code Signing](http://go.microsoft.com/fwlink/?LinkId=179452)(Présentation de la signature de code).  
   
  Vous pouvez obtenir un certificat pour la signature de code de trois façons différentes :  
   
@@ -76,7 +74,7 @@ Authenticode * est une technologie Microsoft qui utilise le chiffrement standard
   
 ### <a name="storing-certificates"></a>Stockage des certificats  
   
--   Vous pouvez stocker les certificats dans un fichier .pfx sur votre système de fichiers ou les stocker dans un conteneur de clé. Un utilisateur d’un domaine Windows peut avoir un ou plusieurs conteneurs de clé. Par défaut, MakeCert.exe stocke les certificats dans votre conteneur de clé personnel, sauf si vous spécifiez qu’il doit les enregistrer dans un fichier .pfx. Mage.exe et MageUI.exe, outils du [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] pour la création de déploiements [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], vous permettent d’utiliser des certificats stockés à l’aide de l’une ou l’autre de ces méthodes.  
+-   Vous pouvez stocker les certificats dans un fichier .pfx sur votre système de fichiers ou les stocker dans un conteneur de clé. Un utilisateur d’un domaine Windows peut avoir un ou plusieurs conteneurs de clé. Par défaut, MakeCert.exe stocke les certificats dans votre conteneur de clé personnel, sauf si vous spécifiez qu’il doit les enregistrer dans un fichier .pfx. Mage.exe et MageUI.exe, outils du [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] pour la création de déploiements [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , vous permettent d’utiliser des certificats stockés à l’aide de l’une ou l’autre de ces méthodes.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)   

@@ -1,7 +1,7 @@
 ---
 title: 'Comment : exécuter le processus de travail sous un compte d’utilisateur | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 08ac00384110cc73175286365fef6ee4b67a0170
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a07e492bf8c3ae71b430acd5bde69a852b96baee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495484"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280187"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Comment : exécuter le processus de travail sous un compte d'utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : exécuter le travail processus sous un compte d’utilisateur](https://docs.microsoft.com/visualstudio/debugger/how-to-run-the-worker-process-under-a-user-account).  
-  
 Pour configurer votre ordinateur afin de pouvoir exécuter le processus de traitement [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] (aspnet_wp.exe ou w3wp.exe) sous un compte d'utilisateur, procédez comme suit.  
   
 ## <a name="procedure"></a>Procédure  
@@ -73,7 +71,7 @@ Pour configurer votre ordinateur afin de pouvoir exécuter le processus de trait
     net start w3svc  
     ```  
   
-6.  Recherchez le dossier des fichiers [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] temporaires, qui doit se trouver sur le même chemin d'accès que le dossier CONFIG. Avec le bouton droit de la variable temporaire [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] dossier des fichiers et choisissez **propriétés** dans le menu contextuel.  
+6.  Recherchez le dossier des fichiers [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] temporaires, qui doit se trouver sur le même chemin d'accès que le dossier CONFIG. Cliquez avec le bouton droit sur le dossier des fichiers [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] temporaires et sélectionnez **Propriétés** dans le menu contextuel.  
   
 7.  Dans la boîte de dialogue **Propriétés des fichiers ASP.NET temporaires** , cliquez sur l'onglet **Sécurité** .  
   

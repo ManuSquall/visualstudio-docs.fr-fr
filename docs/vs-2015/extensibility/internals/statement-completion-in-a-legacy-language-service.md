@@ -1,7 +1,7 @@
 ---
 title: Saisie semi-automatique des instructions dans un Service de langage hérité | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 337ea5de468755fcba5cefe0fe4067b73bd59def
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab481ff516cb6b10a4330b4255ea3e75a333f3da
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495488"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175056"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Saisie semi-automatique des instructions dans un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [saisie semi-automatique des instructions dans un Service de langage hérité](https://docs.microsoft.com/visualstudio/extensibility/internals/statement-completion-in-a-legacy-language-service).  
-  
 Saisie semi-automatique des instructions sont le processus par lequel le service de langage permet aux utilisateurs de terminer un mot clé du langage ou un élément qu’il démarre en tapant dans l’éditeur principal. Cette rubrique explique le fonctionnement de la saisie semi-automatique des instructions et comment l’implémenter dans votre service de langage.  
   
  Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour en savoir plus sur la nouvelle façon d’implémenter la saisie semi-automatique des instructions, consultez [procédure pas à pas : affichage de saisie semi-automatique des instructions](../../extensibility/walkthrough-displaying-statement-completion.md).  

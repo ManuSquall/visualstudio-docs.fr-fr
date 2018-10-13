@@ -1,7 +1,7 @@
 ---
 title: Choose, élément (MSBuild) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2dbb67391a2dcb3aea15eca2b06d52664ea8cebf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4c5fe8ede508f82984bb3101ecb74cb2ed3e7626
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505138"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225718"
 ---
 # <a name="choose-element-msbuild"></a>Choose, élément (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Choose, élément (MSBuild)](https://docs.microsoft.com/visualstudio/msbuild/choose-element-msbuild).  
-  
   
 Évalue des éléments enfants pour sélectionner un ensemble d’éléments `ItemGroup` et/ou d’éléments `PropertyGroup` à évaluer.  
   
@@ -75,7 +73,7 @@ Vous trouverez la dernière version de cette rubrique dans [Choose, élément (M
 |Élément|Description|  
 |-------------|-----------------|  
 |[Otherwise](../msbuild/otherwise-element-msbuild.md)|Spécifie le bloc de code à exécuter si les conditions de tous les éléments `When` correspondent à la valeur `false`.|  
-|[Projet](../msbuild/project-element-msbuild.md)|Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].|  
+|[Projet](../msbuild/project-element-msbuild.md)|Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .|  
 |[When](../msbuild/when-element-msbuild.md)|Spécifie un bloc de code que l’élément `Choose` peut sélectionner.|  
   
 ## <a name="remarks"></a>Notes  

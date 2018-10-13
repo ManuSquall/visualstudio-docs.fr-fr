@@ -1,7 +1,7 @@
 ---
 title: Lier des contrôles WPF à un jeu de données | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e04e8ec9ae181a7cb894b22efecab0ad6ba68b7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b56371ed66287f4b8f8005b6e793f6311427100
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508322"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289560"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Lier des contrôles WPF à un dataset
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [WPF de lier des contrôles à un jeu de données](https://docs.microsoft.com/visualstudio/data-tools/bind-wpf-controls-to-a-dataset).  
-  
   
 Dans cette procédure pas à pas, vous allez créer une application WPF qui contient des contrôles liés aux données. Les contrôles sont liés aux enregistrements produit encapsulés dans un dataset. Vous allez également ajouter des boutons pour parcourir les produits et enregistrer les modifications apportées aux enregistrements produit.  
   
@@ -205,14 +203,14 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
      [!code-csharp[Data_WPFDATASET#1](../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs#1)]
      [!code-vb[Data_WPFDATASET#1](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#1)]  
   
-3.  Ajoutez le code suivant au gestionnaire d'événements `backButton_Click` :  
+3.  Ajoutez le code suivant au gestionnaire d'événements `backButton_Click` :  
   
      [!code-csharp[Data_WPFDATASET#2](../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs#2)]
      [!code-vb[Data_WPFDATASET#2](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#2)]  
   
 4.  Revenez dans le concepteur et le double-clic le **>** bouton.  
   
-5.  Ajoutez le code suivant au gestionnaire d'événements `nextButton_Click` :  
+5.  Ajoutez le code suivant au gestionnaire d'événements `nextButton_Click` :  
   
      [!code-csharp[Data_WPFDATASET#3](../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs#3)]
      [!code-vb[Data_WPFDATASET#3](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#3)]  
@@ -226,7 +224,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
   
      Visual Studio ouvre le fichier code-behind et crée un nouveau `saveButton_Click` Gestionnaire d’événements pour le <xref:System.Windows.Controls.Primitives.ButtonBase.Click> événement.  
   
-2.  Ajoutez le code suivant au gestionnaire d'événements `saveButton_Click` :  
+2.  Ajoutez le code suivant au gestionnaire d'événements `saveButton_Click` :  
   
      [!code-csharp[Data_WPFDATASET#4](../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs#4)]
      [!code-vb[Data_WPFDATASET#4](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb#4)]  

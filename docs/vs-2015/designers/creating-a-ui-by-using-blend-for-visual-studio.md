@@ -1,7 +1,7 @@
 ---
 title: Création d’une interface utilisateur à l’aide de Blend pour Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8609163dadcfc6425874c86c4aaf49f9452401ab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 206664ef95d7eda5d906bf62599819a92fc6506f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508545"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289898"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Création d'une interface utilisateur à l'aide de Blend pour Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [création d’une interface utilisateur à l’aide de Blend pour Visual Studio](https://docs.microsoft.com/visualstudio/designers/creating-a-ui-by-using-blend-for-visual-studio).  
-  
 Blend pour Visual Studio vous aide à concevoir des applications de bureau Windows, web, [Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx) et du [Windows Store](http://msdn.microsoft.com/library/windows/apps/jj129478.aspx) basées sur XAML. Il fournit la même expérience de conception XAML de base que Visual Studio et ajoute des concepteurs visuels pour des tâches avancées telles que les animations et les comportements.  
   
  Comme Blend pour Visual Studio est inclus dans le cadre de Visual Studio, il est inutile de le télécharger. Toutefois, vous devez le sélectionner dans le programme d’installation de Visual Studio pour l’installer sur votre système.  

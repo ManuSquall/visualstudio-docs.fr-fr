@@ -1,7 +1,7 @@
 ---
 title: À l’aide de la règle définit pour les règles d’analyse de Code de groupe | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ae7374ae6b713fe7fa1911cdcce3effa600482b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8af8cbc27a61369640a80dbccb4d99dd2466f3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508093"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220582"
 ---
 # <a name="using-rule-sets-to-group-code-analysis-rules"></a>Utilisation d'ensembles de règles pour regrouper des règles d'analyse du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [à l’aide des ensembles de règles à un groupe de règles d’analyse du Code](https://docs.microsoft.com/visualstudio/code-quality/using-rule-sets-to-group-code-analysis-rules).  
-  
 Lorsque vous configurez l’analyse du code dans [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], ou [!INCLUDE[vsPro](../includes/vspro-md.md)], vous pouvez choisir parmi une liste des intégré de Microsoft *ensembles de règles*. Un ensemble de règles est un regroupement logique de règles d’analyse du code qui identifient les problèmes ciblés et des conditions spécifiques. Par exemple, vous pouvez appliquer un ensemble de règles est conçu pour analyser le code des API disponibles publiquement, ou vous pouvez appliquer un ensemble de règles qui inclut uniquement les règles minimales recommandées. Vous pouvez également appliquer un ensemble de règles qui inclut toutes les règles.  
   
  Vous pouvez personnaliser un ensemble de règles en ajoutant ou supprimant des règles, ou en modifiant les règles apparaissent dans le **liste d’erreurs** fenêtre comme des avertissements ou erreurs. Ensembles de règles personnalisés peuvent répondre à un besoin pour votre environnement de développement particulier. Lorsque vous personnalisez un ensemble de règles, la page d’ensemble de règles fournit la recherche et filtrage des outils pour vous aider dans le processus.  

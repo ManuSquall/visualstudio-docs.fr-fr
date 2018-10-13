@@ -1,7 +1,7 @@
 ---
 title: Implémentation de la coloration syntaxique | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c86a782b3b100811d29b1f81bf2beb6c8cfae1a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4315b9e6b6fdb12a0fcb3e97f6b208d6b84acd9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506414"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259247"
 ---
 # <a name="implementing-syntax-coloring"></a>Implémentation de la coloration de syntaxe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [implémentant la coloration de syntaxe](https://docs.microsoft.com/visualstudio/extensibility/internals/implementing-syntax-coloring).  
-  
 Lorsque le service de langage fournit la coloration syntaxique, l’analyseur convertit une ligne de texte dans un tableau d’éléments coloriables et retourne les types de jetons correspondant à ces éléments coloriables. L’analyseur doit retourner des types de jetons qui appartiennent à une liste d’éléments coloriables. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] affiche chaque élément coloriable dans la fenêtre de code selon les attributs assignés par l’objet de Coloriseur pour le type de jeton approprié.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ne spécifie pas une interface de l’analyseur, et l’implémentation de l’analyseur complètement vous revient. Toutefois, une implémentation d’analyseur par défaut est fournie dans le projet de Package de langage de Visual Studio. Pour le code managé, l’infrastructure de package managé (MPF) fournit la prise en charge complète pour la colorisation de texte.  

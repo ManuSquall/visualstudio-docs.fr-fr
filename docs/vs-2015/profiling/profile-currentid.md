@@ -1,7 +1,7 @@
 ---
 title: PROFILE_CURRENTID | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6509645be235c0ca1804b913ccd13e69dbabb770
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a33f3a873aaf9b7a25fb2d3018866b2ddf4fabbb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504376"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295501"
 ---
 # <a name="profilecurrentid"></a>PROFILE_CURRENTID
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [PROFILE_CURRENTID](https://docs.microsoft.com/visualstudio/profiling/profile-currentid).  
-  
 PROFILE_CURRENTID retourne le pseudo-jeton pour l’ID de thread ou l’ID de processus, dans un appel aux fonctions NameProfile, StartProfile, StopProfile, SuspendProfile et ResumeProfile. Utilisez-le pour que la fonction soit appliquée au thread ou au processus actif, au lieu d’un thread ou processus spécifiquement indiqué.  
   
 ## <a name="example"></a>Exemple  

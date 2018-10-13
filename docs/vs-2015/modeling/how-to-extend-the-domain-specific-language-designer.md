@@ -1,7 +1,7 @@
 ---
 title: 'Comment : étendre le concepteur Domain-Specific Language | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 568b5f608d06c61b25b84bce56bb8c80a1a6d690
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e6a7bf23ab8b64516f474c6741cef48d7a0d4b43
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505709"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294266"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Comment : étendre le concepteur de langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Vous pouvez créer des extensions au concepteur qui vous permet de modifier des 
      System.Windows.Forms  
   
 ## <a name="testing-and-deployment"></a>Tests et déploiement  
- Pour tester les extensions dans cette rubrique, générer et exécuter la solution. Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] s'ouvre. Dans cette instance, ouvrez une solution DSL. Modifier le diagramme DslDefinition. Le comportement d’extension peut être consulté.  
+ Pour tester les extensions dans cette rubrique, générer et exécuter la solution. Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] s’ouvre. Dans cette instance, ouvrez une solution DSL. Modifier le diagramme DslDefinition. Le comportement d’extension peut être consulté.  
   
  Pour déployer les extensions vers les principaux [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]et à d’autres ordinateurs, procédez comme suit :  
   

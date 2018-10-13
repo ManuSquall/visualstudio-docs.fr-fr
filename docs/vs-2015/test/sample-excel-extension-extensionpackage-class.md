@@ -1,7 +1,7 @@
 ---
 title: 'Exemple d’extension Excel : classe ExtensionPackage | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 6e45410a-1819-4d54-ac21-7280152f7e3a
 caps.latest.revision: 11
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fadfbf9291daf35cea4e7ef3005cf3791c2fe052
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 64e6d838172325bb00cdd8a28ef6adb6d1a345b5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493174"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286011"
 ---
 # <a name="sample-excel-extension-extensionpackage-class"></a>Exemple d'extension Excel : classe ExtensionPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [exemple d’Extension Excel : classe ExtensionPackage](https://docs.microsoft.com/visualstudio/test/sample-excel-extension-extensionpackage-class).  
-  
 Cette classe étend la classe <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> et fournit le point d’entrée pour un test codé de l’interface utilisateur qui teste une feuille de calcul [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)].  
   
 ## <a name="assembly-attribute"></a>Attribut d’assembly  

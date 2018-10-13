@@ -1,7 +1,7 @@
 ---
 title: Utilisation des règles de performances pour analyser des données | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d22ca90e115d72db00998b26f2501b24adc60652
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 175f7a9bf34228b516fbec3d8b9044e58ad47a54
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495174"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288611"
 ---
 # <a name="using-performance-rules-to-analyze-data"></a>Utilisation des règles de performance pour analyser des données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [à l’aide des règles de Performance pour analyser les données](https://docs.microsoft.com/visualstudio/profiling/using-performance-rules-to-analyze-data).  
-  
 Les avertissements de performances des outils de profilage de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] signalent les problèmes qui surviennent dans une application profilée et qui peuvent ralentir l’exécution du programme. Les avertissements peuvent également vous informer que vous devez changer de méthode de collecte pour collecter des données plus utiles. Les avertissements de performances sont générés automatiquement dans une session de profilage. Les avertissements s’affichent dans la fenêtre **Liste d’erreurs** quand un fichier de données de profilage est ouvert dans Visual Studio. Dans la fenêtre **Liste d’erreurs**, vous pouvez localiser le code source du problème et vous pouvez afficher des informations détaillées sur l’erreur, comme des informations sur la façon de résoudre le problème. Vous pouvez également désactiver les avertissements qui ne vous n’intéressent pas.  
   
 > [!NOTE]

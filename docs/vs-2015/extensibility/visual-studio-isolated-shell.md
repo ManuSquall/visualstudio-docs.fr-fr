@@ -1,7 +1,7 @@
 ---
 title: Shell isolé Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed81e88b12e371f74adb9d3911719112bca8b139
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e28a411ff5ef70cfd32e846edb0b70caa82c4764
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507761"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286063"
 ---
 # <a name="visual-studio-isolated-shell"></a>Shell isolé Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Shell isolé Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/visual-studio-isolated-shell).  
-  
 Le shell isolé Visual Studio vous permet de créer des applications autonomes qui peuvent s’exécuter côte à côte avec d’autres versions de Visual Studio. Il est principalement utilisée pour héberger des outils spécialisés qui peuvent utiliser les services de Visual Studio, mais également avoir une apparence personnalisée et de personnalisation. Fonctionnalités de Visual Studio et les groupes de commandes de menu peuvent être facilement activées et désactivée. Titres de l’application, les icônes d’application et les écrans de démarrage sont entièrement personnalisables. Pour obtenir la liste des fonctionnalités personnalisables, consultez [personnalisation du Shell isolé](../extensibility/customizing-the-isolated-shell.md).  
   
  Pour travailler avec un projet de shell isolé, vous devez installer le SDK Visual Studio. À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS par la suite. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

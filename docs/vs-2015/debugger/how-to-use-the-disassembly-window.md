@@ -1,7 +1,7 @@
 ---
 title: 'Comment : utiliser la fenêtre code machine | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17747cdab2987a053ef5fff2bc7b8a11867d94fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa414aacc8b7ffc39132157686abee860cac994c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506725"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287753"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>Comment : utiliser la fenêtre Code Machine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [afficher le Code machine dans le débogueur dans Visual Studio](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-disassembly-window).  
-  
 Cette fonctionnalité est disponible uniquement si le débogage au niveau des adresses est activé le **Options** boîte de dialogue, **débogage** nœud. Elle n'est pas disponible pour le débogage de script ni le débogage SQL.  
   
  Le **désassemblage** fenêtre montre le code assembleur correspondant aux instructions créées par le compilateur. Si vous déboguez du code managé, ces instructions assembleur correspondent au code natif créé par le compilateur juste-à-temps (JIT), et non au langage intermédiaire de Microsoft (MSIL) généré par le compilateur Visual Studio.  

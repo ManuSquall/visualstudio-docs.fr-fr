@@ -1,7 +1,7 @@
 ---
 title: Attributs de prise en charge de Site Web | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 46d52e2c-ca2a-4bbd-8500-5b0129768aec
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3fd60c1ffcb6bb4d3c386cf55fb1f33540bb3dd2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 39ee9ee4e842dc49484170845cd451366aeb3a3c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507399"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172846"
 ---
 # <a name="web-site-support-attributes"></a>Attributs de prise en charge de site web
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [attributs de prise en charge de Site Web](https://docs.microsoft.com/visualstudio/extensibility/internals/web-site-support-attributes).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Projet de site Web peut être étendu pour prendre en charge pour le Web, langages de programmation. La langue doit s’inscrire avec [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] afin que les modèles de projet peuvent apparaître dans le **nouveau Site Web** boîte de dialogue lors de la langue sélectionnée.  
   
  L’exemple de IronPython Studio inclut la prise en charge du site web. Vous pouvez le trouver avec le [exemples d’extensibilité Visual Studio](../../misc/vssdk-samples.md). Il inclut des classes d’attributs suivantes pour inscrire IronPython comme un langage de code-behind pour les nouveaux projets Web.  

@@ -1,7 +1,7 @@
 ---
 title: À l’aide de la règle définit pour spécifier les règles C++ à exécuter | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9466bf421ca5844d3d7083528fb1a27e3c488937
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0d343139a23453af12555b4ffbec8e3de7e2a827
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494377"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230873"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Utilisation des ensembles de règles pour spécifier les règles C++ à exécuter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [à l’aide des ensembles de règles pour spécifier les règles C++ à exécuter](https://docs.microsoft.com/visualstudio/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run).  
-  
 Dans [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] et [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], vous pouvez créer et modifier un personnalisé *ensemble de règles* pour répondre aux besoins spécifiques de projet associés à l’analyse du code. Pour créer une règle de C++ personnalisée défini, un projet C/C++ doit être ouvert dans l’IDE Visual Studio. Vous puis ouvrez un ensemble de règles standard dans l’éditeur d’ensemble de règles et puis ajoutez ou supprimez des règles spécifiques et éventuellement modifiez l’action qui se produit lorsque l’analyse du code détermine qu’une règle a été violée.  
   
  Pour créer une nouvelle règle personnalisée définie, vous l’enregistrez à l’aide d’un nouveau nom de fichier. L’ensemble de règles personnalisé est automatiquement affecté au projet.  

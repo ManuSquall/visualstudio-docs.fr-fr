@@ -1,7 +1,7 @@
 ---
 title: Liaison des points d’arrêt | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b19c1fc2857cf007f223f4cbb8e8bb307f972c94
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6e89a671d8b243869639a5c3825233ff60b19c2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494304"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283320"
 ---
 # <a name="binding-breakpoints"></a>Liaison de points d’arrêt
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [liaison des points d’arrêt](https://docs.microsoft.com/visualstudio/extensibility/debugger/binding-breakpoints).  
-  
 Si l’utilisateur définit un point d’arrêt, peut-être en appuyant sur F9, l’IDE formule la demande et vous invite à entrer la session de débogage pour créer le point d’arrêt.  
   
 ## <a name="setting-a-breakpoint"></a>Définition d'un point d'arrêt  

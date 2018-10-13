@@ -1,7 +1,7 @@
 ---
 title: À l’aide de l’attribut DebuggerTypeProxy | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aa4b5d363366f61b9001a3ac7f476804c0c2de19
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e0014ec8677cf8b437780ab23fdd521f3ec5f938
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494721"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196312"
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>Utilisation de l'attribut DebuggerTypeProxy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [à l’aide de l’attribut DebuggerTypeProxy](https://docs.microsoft.com/visualstudio/debugger/using-debuggertypeproxy-attribute).  
-  
 DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAttribute?qualifyHint=False & autoUpgrade = True) spécifie un proxy, ou en remplaçant, pour un type et modifie la façon dont le type est affiché dans les fenêtres du débogueur. Lorsque vous visualisez une variable possédant un proxy, ce dernier remplace le type d’origine dans le **afficher**. La fenêtre de variables du débogueur   n'affiche que les membres publics du type du proxy. Les membres privés ne sont pas affichés.  
   
  Cet attribut peut s'appliquer aux éléments suivants :  

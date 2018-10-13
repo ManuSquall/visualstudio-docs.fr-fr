@@ -1,7 +1,7 @@
 ---
 title: Mode Plan | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 939bb5ac1188a54217339c1bf3e9e3a828493d90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af7f854f6e097471cdd744537a4be4cbd1646400
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494062"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282514"
 ---
 # <a name="outlining"></a>mode Plan
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [mode plan](https://docs.microsoft.com/visualstudio/ide/outlining).  
-  
 Vous pouvez choisir de masquer certaines parties du code en réduisant une zone de code pour qu’elle apparaisse sous un signe plus (+). Pour développer une zone réduite, vous devez cliquer sur le signe plus (+). (Vous pouvez aussi appuyer sur Ctrl + M + M pour réduire une zone, puis sur Ctrl + M + M pour la redévelopper.) Vous pouvez aussi réduire une zone en mode Plan en double-cliquant sur n’importe quelle ligne dans la zone dans la marge de mode Plan, affichée juste à gauche du code. Vous pouvez afficher le contenu d’une zone réduite sous forme d’info-bulle quand vous pointez sur la partie réduite.  
   
  Les zone dans la marge de mode Plan sont également mises en surbrillance quand vous pointez sur la marge avec la souris. La couleur de mise en surbrillance par défaut peut sembler plutôt fade dans certaines configurations de couleur. Vous pouvez la modifier dans **Outils/Options/Environnement/Polices et couleurs/Zone réductible**.  

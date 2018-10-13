@@ -1,7 +1,7 @@
 ---
 title: '&lt;dépendance&gt; , élément (Application ClickOnce) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 8a998e5649b45b3e442701bd78c95f85844f71d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e76d517af1e0bd93507a47facd63bd50ae98e635
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492976"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233855"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;dépendance&gt; , élément (Application ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [ &lt;dépendance&gt; , élément (Application ClickOnce)](https://docs.microsoft.com/visualstudio/deployment/dependency-element-clickonce-application).  
-  
 Identifie une dépendance de plateforme ou l’assembly qui est requise pour l’application.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -112,10 +110,10 @@ Identifie une dépendance de plateforme ou l’assembly qui est requise pour l�
 |`description`|Facultatif. Décrit, dans une forme lisible, le système d’exploitation décrit par le `dependentOS` élément.|  
   
 ### <a name="osversioninfo"></a>osVersionInfo  
- Obligatoire. Cet élément est un enfant de l’élément `dependentOS` et contient l’élément `os`. Cet élément n’a pas d’attributs.  
+ Obligatoire. Cet élément est un enfant de l’élément `dependentOS` et contient l’élément `os` . Cet élément n’a pas d’attributs.  
   
 ### <a name="os"></a>système d’exploitation  
- Obligatoire. Cet élément est un enfant de l’élément `osVersionInfo`. Cet élément comprend les attributs suivants.  
+ Obligatoire. Cet élément est un enfant de l’élément `osVersionInfo` . Cet élément comprend les attributs suivants.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
@@ -152,29 +150,29 @@ Identifie une dépendance de plateforme ou l’assembly qui est requise pour l�
 |`language`|Facultatif. Identifie les codes de langue de deux parties, telles que EN-US, de l’assembly.|  
   
 ### <a name="hash"></a>hash  
- Le `hash` élément est un enfant facultatif de la `assemblyIdentity` élément. Le `hash` élément ne possède pas d’attributs.  
+ Le `hash` élément est un enfant facultatif de la `assemblyIdentity` élément. L’élément `hash` ne comporte pas d’attributs.  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] utilise un hachage algorithmique de tous les fichiers dans une application en tant qu’une vérification de sécurité, pour vous assurer qu’aucun des fichiers ont été modifiés après le déploiement. Si le `hash` élément n’est pas inclus, cette vérification ne sera pas effectuée. Par conséquent, en omettant le `hash` élément n’est pas recommandé.  
   
 ### <a name="dsigtransforms"></a>dsig : TRANSFORMS  
- Le `dsig:Transforms` élément est un enfant requis de le `hash` élément. Le `dsig:Transforms` élément ne possède pas d’attributs.  
+ Le `dsig:Transforms` élément est un enfant requis de le `hash` élément. L’élément `dsig:Transforms` ne comporte pas d’attributs.  
   
 ### <a name="dsigtransform"></a>dsig : Transform  
- Le `dsig:Transform` élément est un enfant requis de le `dsig:Transforms` élément. Le `dsig:Transform` élément a les attributs suivants.  
+ Le `dsig:Transform` élément est un enfant requis de le `dsig:Transforms` élément. L’élément `dsig:Transform` a les attributs suivants.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
 |`Algorithm`|L’algorithme utilisé pour calculer le condensat pour ce fichier. La seule valeur utilisée par [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] est `urn:schemas-microsoft-com:HashTransforms.Identity`.|  
   
 ### <a name="dsigdigestmethod"></a>dsig:DigestMethod  
- Le `dsig:DigestMethod` élément est un enfant requis de le `hash` élément. Le `dsig:DigestMethod` élément a les attributs suivants.  
+ Le `dsig:DigestMethod` élément est un enfant requis de le `hash` élément. L’élément `dsig:DigestMethod` a les attributs suivants.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
 |`Algorithm`|L’algorithme utilisé pour calculer le condensat pour ce fichier. La seule valeur utilisée par [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] est `http://www.w3.org/2000/09/xmldsig#sha1`.|  
   
 ### <a name="dsigdigestvalue"></a>dsig : DigestValue  
- Le `dsig:DigestValue` élément est un enfant requis de le `hash` élément. Le `dsig:DigestValue` élément ne possède pas d’attributs. Sa valeur de texte est le hachage calculé pour le fichier spécifié.  
+ Le `dsig:DigestValue` élément est un enfant requis de le `hash` élément. L’élément `dsig:DigestValue` ne comporte pas d’attributs. Sa valeur de texte est le hachage calculé pour le fichier spécifié.  
   
 ## <a name="remarks"></a>Notes  
  Tous les assemblys utilisés par votre application doivent correspondre à un `dependency` élément. Assemblys dépendants n’incluent pas les assemblys qui doivent être préinstallés dans le global assembly cache en tant qu’assemblys de plateforme.  

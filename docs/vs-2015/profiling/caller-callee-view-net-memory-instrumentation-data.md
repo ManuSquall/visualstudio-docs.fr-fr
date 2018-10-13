@@ -1,7 +1,7 @@
 ---
 title: Vue Appelant/Appelé - Données d’instrumentation de la mémoire .NET | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2cd30b9dcc72ba2afd97577f69ac059a2e8a1d32
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a8cb22cb8274ea9af8fbea045eeeb779835c84a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507213"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273830"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>Vue Appelant/Appelé - Données d’instrumentation de la mémoire .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [vue appelant / appelé - données d’Instrumentation mémoire NET](https://docs.microsoft.com/visualstudio/profiling/caller-callee-view-net-memory-instrumentation-data).  
-  
 La vue Appelant/Appelé des données de profilage de la mémoire .NET, collectées à l’aide de la méthode d’instrumentation, affiche les données d’allocation et de durée de la fonction sélectionnée et de ses fonctions parents et enfants. La vue Appelant/Appelé comprend trois grilles.  
   
  La grille centrale intitulée **Fonction active** contient les informations de profilage de mémoire associées à la fonction sélectionnée. Ces valeurs incluent tous les appels échantillonnés émis vers la fonction.  

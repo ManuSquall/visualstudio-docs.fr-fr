@@ -1,7 +1,7 @@
 ---
 title: Le débogage juste-à-temps dans Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1256584c2d4517b566095b3b71c6d080c6327df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 606f0129d49e8d5b8f07e6c8fac60fa5029a4828
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493201"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294045"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Débogage just-in-time dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [juste à temps débogage dans Visual Studio](https://docs.microsoft.com/visualstudio/debugger/just-in-time-debugging-in-visual-studio).  
-  
 Le débogage juste-à-temps lance Visual Studio automatiquement lorsqu’une exception ou un incident se produit dans une application qui s’exécute en dehors de Visual Studio. Cela vous permet de tester votre application lorsque Visual Studio n’est pas en cours d’exécution et commencez le débogage avec Visual Studio lorsqu’un problème survient.
 
 Fonctionne avec le débogage juste-à-temps pour les applications de bureau Windows. Il ne fonctionne pas pour les applications Windows universelles, et il ne fonctionne pas pour le code managé qui est hébergé dans une application native, par exemple les visualiseurs.

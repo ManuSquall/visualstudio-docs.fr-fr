@@ -1,7 +1,7 @@
 ---
 title: Application Lifecycle Management (ALM) avec les applications Unity | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 23e501554bf5a8502cc8ac5a271c0a803ad25808
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 997533d55274ef23966a3b229886f67023d20bdb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495758"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247024"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) avec les applications Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Application Lifecycle Management (ALM) avec les applications Unity](https://docs.microsoft.com/visualstudio/cross-platform/application-lifecycle-management-alm-with-unity-apps).  
-  
   
 Le développement d'applications pour des plateformes modernes implique de nombreuses activités qui vont bien au-delà de la simple écriture de code. Ces activités, appelées DevOps (développement + opérations), couvrent le cycle de vie complet de l’application et incluent la planification et le suivi du travail, la conception et l’implémentation du code, la gestion d’un référentiel de code source, l’exécution des builds, la gestion des intégrations continues et des déploiements en continu, les tests (y compris les tests unitaires et les tests d’interface utilisateur), différentes formes de diagnostics dans les environnements de développement et de production, ainsi que la surveillance en temps réel des performances des applications et des comportements des utilisateurs via la télémétrie et l’analyse.  
   

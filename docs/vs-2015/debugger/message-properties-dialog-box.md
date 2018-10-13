@@ -1,7 +1,7 @@
 ---
 title: Boîte de dialogue Propriétés du message | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be3975be4a50fd51e7004d4a587c28a2001d932c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c5fa9f785b3b374e917c62f66c1d49dc6f8232a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504641"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278902"
 ---
 # <a name="message-properties-dialog-box"></a>Boîte de dialogue Propriétés du message
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [boîte de dialogue Propriétés de Message](https://docs.microsoft.com/visualstudio/debugger/message-properties-dialog-box).  
-  
 Utilisez cette boîte de dialogue pour en savoir plus sur un message spécifique. Pour afficher cette boîte de dialogue, déplacez le focus à un [vue Messages](../debugger/messages-view.md) fenêtre. Sélectionnez n’importe quel nœud de message dans l’arborescence, puis choisissez **propriétés** à partir de la **vue** menu.  
   
  Le **général** onglet est le seul onglet affiché. Les paramètres suivants sont disponibles :  

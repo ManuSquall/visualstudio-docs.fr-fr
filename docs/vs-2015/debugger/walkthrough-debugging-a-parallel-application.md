@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : Débogage d’une Application parallèle | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22a4d8ea3bfe98a034f485be8ceec1004f8fba75
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6c46fbd570765d8843c9e6d87f37a5395c5b0133
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502151"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279771"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>Procédure pas à pas : débogage d'une application parallèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : débogage d’une Application parallèle](https://docs.microsoft.com/visualstudio/debugger/walkthrough-debugging-a-parallel-application).  
-  
 Cette procédure pas à pas montre comment utiliser le **tâches parallèles** et **piles parallèles** windows pour déboguer une application parallèle. Ces fenêtres vous aident à comprendre et à vérifier le comportement d’exécution de code qui utilise le [bibliothèque parallèle de tâches (TPL)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23) ou [Runtime d’accès concurrentiel](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c). Cette procédure pas à pas fournit un exemple de code qui comporte des points d'arrêt intégrés. Une fois que le code s’arrête, la procédure pas à pas montre comment utiliser le **tâches parallèles** et **piles parallèles** windows pour l’examiner.  
   
  Cette procédure pas à pas aborde les tâches suivantes :  

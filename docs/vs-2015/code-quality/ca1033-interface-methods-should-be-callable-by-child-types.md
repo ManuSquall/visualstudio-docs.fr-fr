@@ -1,7 +1,7 @@
 ---
 title: 'CA1033 : Les méthodes d’Interface doivent pouvoir être appelées par les types enfants | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a71462661c577bebbd76e7fa05aeca9d613c4c23
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: a63a757177ebf807b73bc06465a6ab860c94e72c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47590077"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191787"
 ---
 # <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033 : Les méthodes d'interface doivent pouvoir être appelées par les types enfants
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Vous trouverez la dernière version de cette rubrique dans [CA1033 : les méthodes d’Interface doivent pouvoir être appelées par les types enfants](https://docs.microsoft.com/visualstudio/code-quality/ca1033-interface-methods-should-be-callable-by-child-types).
-
 |||
 |-|-|
 |TypeName|InterfaceMethodsShouldBeCallableByChildTypes|

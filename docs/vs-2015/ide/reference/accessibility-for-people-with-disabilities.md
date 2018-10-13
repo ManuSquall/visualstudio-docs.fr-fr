@@ -1,7 +1,7 @@
 ---
 title: Accessibilité pour les personnes handicapées | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a0d19af2fd17f70adff47bd1e9afadbaa21d8da3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 309d1dc34e66bef6b5c1f4e8cac980d41d17ea66
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508666"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233783"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>Accessibilité pour les personnes handicapées
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [accessibilité pour les personnes atteintes de handicaps](https://docs.microsoft.com/visualstudio/ide/reference/accessibility-for-people-with-disabilities).  
-  
   
 Microsoft s’engage à faciliter l’utilisation de ses produits et services. Les rubriques suivantes fournissent des informations sur les fonctionnalités, produits et services visant à rendre Microsoft [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] plus accessible aux personnes handicapées.  
   

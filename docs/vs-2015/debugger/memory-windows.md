@@ -1,7 +1,7 @@
 ---
 title: Mémoire Windows | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 180abd9aed356613456790a328fb45d1c3ffcf69
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9ce78912be4e4b29e323061996de650e1f2ff255
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495953"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297192"
 ---
 # <a name="memory-windows"></a>Fenêtres Mémoire
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [afficher la mémoire pour les Variables dans le débogueur](https://docs.microsoft.com/visualstudio/debugger/memory-windows).  
-  
 Le **mémoire** fenêtre fournit une vue dans l’espace mémoire utilisé par votre application. Le **espion** fenêtre, **Espion express** boîte de dialogue, **automatique** fenêtre, et **variables locales** fenêtre vous affichez le contenu des variables, lesquelles sont stockées à des emplacements spécifiques dans la mémoire. Mais le **mémoire** fenêtre vous montre l’image à grande échelle. Cette vue peut s'avérer pratique pour l'examen de grands fragments de données (mémoires tampons ou longues chaînes, par exemple) dont l'affichage n'est pas satisfaisant dans les autres fenêtres. Toutefois, le **mémoire** fenêtre n’est pas tenu d’afficher des données. Elle affiche tout ce qui se trouve dans l'espace mémoire, qu'il s'agisse de données, de code ou de bits aléatoires de garbage de la mémoire non assignée.  
   
  Le **mémoire** fenêtre est disponible uniquement si le débogage au niveau des adresses est activé dans le **Options**boîte de dialogue,**débogage** nœud. Le **mémoire** fenêtre n’est pas disponible pour le Script ou SQL, qui sont des langages qui ne reconnaissent pas le concept de mémoire.  

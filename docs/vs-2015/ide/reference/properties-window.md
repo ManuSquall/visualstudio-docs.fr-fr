@@ -1,7 +1,7 @@
 ---
 title: Fenêtre Propriétés | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 88ff9388a7d23543a32368e763b5efb7abbdc8cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a3faa4b9e0bf7d0ad59a33ed93f895a83e6ff8dc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503290"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282371"
 ---
 # <a name="properties-window"></a>Propriétés (fenêtre)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [fenêtre Propriétés](https://docs.microsoft.com/visualstudio/ide/reference/properties-window).  
-  
   
 Utilisez cette fenêtre pour afficher et modifier les événements et propriétés au moment du design des objets sélectionnés qui sont situés dans les éditeurs et les concepteurs. Vous pouvez également utiliser la fenêtre **Propriétés** pour afficher et modifier les propriétés des fichiers, des projets et des solutions. Vous trouverez la fenêtre **Propriétés** dans le menu **Affichage**. Vous pouvez également l’ouvrir en appuyant sur F4 ou en tapant **Propriétés** dans la fenêtre **Lancement rapide**.  
   

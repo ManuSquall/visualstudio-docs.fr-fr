@@ -1,7 +1,7 @@
 ---
 title: Modification du Shell isolé à l’aide de le. Fichier pkgdef | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 69e8f78e-bcf1-46cb-8866-7de37d134997
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f70036f91eb52d85054465e6eea9f82672d851f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3a9b56d946e5a337c5afeb6cdd399c3c7ba24bd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504172"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291458"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgdef-file"></a>Modification du Shell isolé à l’aide de le. Fichier pkgdef
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [modifiant l’isolé Shell par à l’aide du. Fichier pkgdef](https://docs.microsoft.com/visualstudio/extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file).  
-  
 Le fichier .pkgdef prend en charge les paramètres que vous pouvez utiliser pour personnaliser une application de shell isolé. Il spécifie les valeurs qui sont créés lorsqu’une application est installée sur un ordinateur et qui sont référencées par le shell Visual Studio lorsqu’il démarre l’application. Les paramètres sont organisés dans le fichier selon les clés de Registre applicables.  
   
 > [!WARNING]

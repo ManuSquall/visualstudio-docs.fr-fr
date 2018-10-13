@@ -1,7 +1,7 @@
 ---
 title: Commandes d’élément | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 47cf16a5-d78b-452e-86f6-b5893856dddf
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed21cfb92cbf39b384be512aca640555bb4884f7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a2383bb24ecd54bdbc7a30c98cd1fff555b4aeb9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496321"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182936"
 ---
 # <a name="commands-element"></a>Élément Commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [élément Commands](https://docs.microsoft.com/visualstudio/extensibility/commands-element).  
-  
 Représente la collection de commandes sur la barre d’outils de VSPackage. La collection peut avoir jusqu'à cinq sous-sections, comme suit : menus, des groupes, des boutons, des combos et des bitmaps.  
   
  Chaque élément enfant sous-section, par exemple, \<Menu >, est identifié par un ID de commande unique qui est un GUID et une paire d’identificateur numérique. Le GUID identifie le jeu de commandes « » et est utilisé pour regrouper les commandes liés logiquement entre eux. Le VSPackage doit définir son propre jeu de commandes pour éviter les collisions avec les ID de commande qui sont définies par les autres VSPackages.  

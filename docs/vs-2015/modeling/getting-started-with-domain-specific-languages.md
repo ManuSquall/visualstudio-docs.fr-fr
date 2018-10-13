@@ -1,7 +1,7 @@
 ---
 title: Mise en route avec les langages spécifiques à un domaine | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 128c96c6bd400f74ac698df550fdba70ffec2eed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fc0cf72be3fccbfdafd5ab3a7570ea6aac900f11
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492840"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251977"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Mise en route des langages spécifiques à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [mise en route avec les langages spécifiques à un domaine](https://docs.microsoft.com/visualstudio/modeling/getting-started-with-domain-specific-languages).  
-  
 Cette rubrique explique les concepts de base dans la définition et utilisation d’un langage spécifique à un domaine (DSL) créé avec le SDK de modélisation pour Visual Studio.  
   
  Si vous ne connaissez pas DSL, nous vous recommandons de collaborer via le **atelier des outils DSL**, que vous trouverez dans ce site : [création and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  

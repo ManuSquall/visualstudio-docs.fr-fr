@@ -1,14 +1,14 @@
 ---
 title: Automatique et variables locales Windows | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.autos
 - vs.debug.locals
@@ -26,18 +26,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 877d145f83ce15cd5c1bb49b607519888ad0e96b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94b583fee7f0e03fae3f194f1614d82016136e13
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494969"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191319"
 ---
 # <a name="autos-and-locals-windows"></a>Fenêtres Variables locales et Automatique
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [inspecter des Variables dans le débogueur dans Visual Studio](https://docs.microsoft.com/visualstudio/debugger/autos-and-locals-windows).  
-  
 La fenêtre **Automatique** (lors du débogage, **CTRL+ALT+V, A**, ou **Déboguer/Fenêtres/Automatique**) et la fenêtre **Variables locales** (lors du débogage, **CTRL+ALT+V, L**, ou **Déboguer/Fenêtres/Variables locales**) s’avèrent particulièrement utiles quand vous voulez voir les valeurs de variables pendant le débogage. La fenêtre **Variables locales** affiche les variables définies dans la portée locale, qui est généralement la fonction ou méthode en cours d’exécution. La fenêtre **Automatique** affiche les variables utilisées autour de la ligne actuelle (l’emplacement où le débogueur est arrêté). Les variables affichées sont différentes selon les langages. Consultez quelles variables s’affichent dans la fenêtre automatique ? ci-dessous.  
   
  Si vous avez besoin de plus d’informations sur le débogage de base, consultez [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md).  

@@ -1,7 +1,7 @@
 ---
 title: BP_STATE | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 08aa6a3f-3e5f-4c83-8eca-7b7b5f8e208d
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f6fc9cdcdedb9b733da27489232558f394879cc1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8973bf18fdcf81d174216568b753cdd805f483bb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507415"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288715"
 ---
 # <a name="bpstate"></a>BP_STATE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [BP_STATE](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bp-state).  
-  
 Spécifie l’existence d’un point d’arrêt lié ainsi que si elle est activée.  
   
 ## <a name="syntax"></a>Syntaxe  

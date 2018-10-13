@@ -1,7 +1,7 @@
 ---
 title: 'Comment : assigner des procédures stockées pour effectuer des mises à jour, insertions et suppressions (Concepteur O-R) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 802627f59f54b9a4b1179ba5c643b4671f4f7ce0
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 4f65af06a275dc50afafc70fd95c9b93d9bba458
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48878952"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232711"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Comment : assigner des procédures stockées pour effectuer des mises à jour, insertions et suppressions (Concepteur O/R)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : assigner des procédures stockées pour effectuer des mises à jour, insertions et suppressions (Concepteur O-R)](https://docs.microsoft.com/visualstudio/data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer).  
-  
   
 Les procédures stockées peuvent être ajoutées au Concepteur O/R et être exécutées comme méthodes <xref:System.Data.Linq.DataContext> typiques. Ils peuvent également être utilisés pour remplacer la valeur par défaut [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] comportement d’exécution qui effectue des insertions, mises à jour et des suppressions lorsque les modifications sont enregistrées à partir des classes d’entité dans une base de données (par exemple, lorsque vous appelez le <xref:System.Data.Linq.DataContext.SubmitChanges%2A> méthode).  
   

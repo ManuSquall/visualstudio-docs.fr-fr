@@ -1,7 +1,7 @@
 ---
 title: CvEnterSpan, fonction | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99a3f4d418706ddf282f698ebc25a7cc0e0766a3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 61062503ecd2f7a92116ca43f9dffd75841fcea3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506886"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173184"
 ---
 # <a name="cventerspan-function"></a>CvEnterSpan, fonction
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [cventerspan, fonction](https://docs.microsoft.com/visualstudio/profiling/cventerspan-function).  
-  
 Marque le début d’un nouvel intervalle.  
   
 ## <a name="syntax"></a>Syntaxe  

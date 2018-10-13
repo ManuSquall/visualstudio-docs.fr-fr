@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram2::GetENCUpdate | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9832aac8-6320-4fd8-91dd-2a0852febb00
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5b06716c2a9de2e2fb61a372c51f2f574065aefc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 748ba51a67fcccc77b69a56461c2fbdda6e1e652
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508008"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231554"
 ---
 # <a name="idebugprogram2getencupdate"></a>IDebugProgram2::GetENCUpdate
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDebugProgram2::GetENCUpdate](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogram2-getencupdate).  
-  
 Cette méthode obtient la mise à jour de modifier & Continuer (ENC) pour ce programme. Un moteur de débogage personnalisé retourne toujours `E_NOTIMPL`.  
   
 ## <a name="syntax"></a>Syntaxe  

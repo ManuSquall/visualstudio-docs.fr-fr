@@ -1,7 +1,7 @@
 ---
 title: Vue d’ensemble de la liaison de données WPF avec LINQ to XML | Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 584645062920143787c599c317a9ca93dd7da2b6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 985dfb5193082f22431db3384cc6a652f36cfb2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495740"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247271"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Vue d’ensemble de la liaison de données WPF avec LINQ to XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [une liaison de données WPF avec LINQ to XML Overview](https://docs.microsoft.com/visualstudio/designers/wpf-data-binding-with-linq-to-xml-overview).  
-  
 Cette rubrique présente les fonctionnalités de liaison de données dynamiques dans l'espace de noms <xref:System.Xml.Linq>. Ces fonctionnalités peuvent être utilisées en tant que source de données pour des éléments d'interface utilisateur dans Windows Presentation Foundation (WPF).  
   
 ## <a name="xaml-and-linq-to-xml"></a>XAML et LINQ to XML  

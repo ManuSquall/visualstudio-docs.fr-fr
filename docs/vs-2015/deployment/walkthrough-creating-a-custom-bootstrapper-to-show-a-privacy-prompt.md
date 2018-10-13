@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : Création d’un programme d’amorçage personnalisé pour afficher l’invite de déclaration de confidentialité | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 790aa1c67ef8c76e404876bd61a42d4b286892da
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4184e8400c50c518b461a0877f06c54db5f84927
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493445"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217958"
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Procédure pas à pas : création d'un programme d'amorçage personnalisé pour afficher une invite de confidentialité
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : création d’un programme d’amorçage personnalisé pour afficher une invite de confidentialité](https://docs.microsoft.com/visualstudio/deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt).  
-  
 Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquement lorsque les assemblys avec des versions plus récentes de fichier et les versions d’assembly sont disponibles. Pour vous assurer que vos clients acceptent ce comportement, vous pouvez afficher une invite de confidentialité pour eux. Ensuite, ils peuvent choisir s’il faut accorder l’autorisation de l’application pour mettre à jour automatiquement. Si l’application n’est pas autorisée à mettre à jour automatiquement, il n’installe pas.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  

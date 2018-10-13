@@ -1,7 +1,7 @@
 ---
 title: Conservation de la propriété d’un élément de projet | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 874a147883155fe59acee100e8619cc6c7e57156
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2f9094dfd2ffa9edab1b884f2658f74db718ab3c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495056"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285101"
 ---
 # <a name="persisting-the-property-of-a-project-item"></a>Conservation de la propriété d’un élément de projet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [conservation de la propriété d’un élément de projet](https://docs.microsoft.com/visualstudio/extensibility/persisting-the-property-of-a-project-item).  
-  
 Voulez-vous conserver une propriété que vous ajoutez à un élément de projet, telles que l’auteur d’un fichier source. Pour ce faire, vous pouvez stocker la propriété dans le fichier projet.  
   
  La première étape pour conserver une propriété dans un fichier projet consiste à obtenir la hiérarchie du projet comme une <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interface. Vous pouvez obtenir cette interface à l’aide d’Automation ou à l’aide de <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>. Une fois que vous obtenez l’interface, vous pouvez l’utiliser pour déterminer quel élément de projet est actuellement sélectionné. Une fois que vous avez l’ID d’élément de projet, vous pouvez utiliser <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> pour ajouter la propriété.  

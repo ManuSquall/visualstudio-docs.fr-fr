@@ -1,7 +1,7 @@
 ---
 title: Écriture de tâches | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab2b612ec64cfb2f818d40181d3e89e0c77ac058
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4b15434c75fb4cd2a295789794f6c9f8eb882bb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494425"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254890"
 ---
 # <a name="task-writing"></a>Écriture de tâches
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [écriture de tâches](https://docs.microsoft.com/visualstudio/msbuild/task-writing).  
-  
   
 Les tâches fournissent le code exécuté pendant le processus de génération. Les tâches sont contenues dans les cibles. Une bibliothèque de tâches types est incluse dans [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. De plus, vous pouvez créer vos propres tâches. Pour plus d’informations sur la bibliothèque de tâches incluse dans [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], consultez [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md).  
   

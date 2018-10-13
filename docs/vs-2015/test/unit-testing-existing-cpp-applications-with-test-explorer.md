@@ -1,7 +1,7 @@
 ---
 title: Réalisation de tests unitaires d’applications C++ existantes avec l’Explorateur de tests | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
 caps.latest.revision: 13
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 040e3f0a236067a96d107f64f4c9aca06d0706e3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63761dc543b327c1c8639203c80afb92d4700c8d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493621"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172456"
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>Applications C++ existantes de tests unitaires avec Test Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [tests unitaires des applications C++ existantes avec l’Explorateur de tests](https://docs.microsoft.com/visualstudio/test/unit-testing-existing-cpp-applications-with-test-explorer).  
-  
 Nous vous recommandons, avant de modifier une application existante, de vérifier qu'elle a une bonne couverture de tests unitaires. Vous êtes ainsi sûr que vos modifications n'ont pas introduit de bogues. Si l'application n'a pas encore de tests unitaires, vous pouvez les ajouter à l'aide des techniques expliquées dans cette rubrique. Cette rubrique décrit comment ajouter des tests unitaires pour du code Visual C++ existant, en commençant par choisir comment tester votre code, puis en créant, écrivant et enfin exécutant les tests.  
   
 ## <a name="deciding-how-to-test-your-code"></a>Décider comment tester votre code  

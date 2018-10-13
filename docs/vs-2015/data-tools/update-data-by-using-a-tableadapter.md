@@ -1,7 +1,7 @@
 ---
 title: Mettre à jour des données à l’aide d’un TableAdapter | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2dfeced126cfa80d28ad1e3245486c63101e6e1f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 19e694e617b15b42029ff641516c59fcecdfbd69
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506172"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237274"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Mettre à jour les données à l’aide d’un TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [mettre à jour des données à l’aide d’un TableAdapter](https://docs.microsoft.com/visualstudio/data-tools/update-data-by-using-a-tableadapter).  
-  
   
 Une fois que les données dans votre jeu de données a été modifiées et validées, vous pouvez envoyer les données mises à jour à un appel databaseby le `Update` méthode d’un [TableAdapter](../data-tools/tableadapter-overview.md). Le `Update` méthode met à jour une table de données unique et exécute la commande correcte (INSERT, UPDATE ou DELETE), selon le <xref:System.Data.DataRow.RowState%2A> de chaque ligne de données dans la table. Lorsque les tables sont liées à un jeu de données, Visual Studio génère une classe TableAdapterManager qui vous permet d’effectuer les mises à jour. La classe TableAdapterManager garantit que les mises à jour sont effectuées dans l’ordre approprié selon les contraintes de clé étrangère sont définies dans la base de données. Lorsque vous utilisez des contrôles liés aux données, l’architecture de liaison de données crée une variable de membre de la classe de TableAdapterManager appelée tableAdapterManager. Pour plus d’informations, consultez [vue d’ensemble de mise à jour hiérarchique](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6).  
   

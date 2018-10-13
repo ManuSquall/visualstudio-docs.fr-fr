@@ -1,7 +1,7 @@
 ---
 title: Basculer le point d’arrêt, commande | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c7dd3bd7a4d42b8135aed034464223af53091f87
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f993d9a0377531b155301bed235c00bf8e6667c4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493191"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223156"
 ---
 # <a name="toggle-breakpoint-command"></a>Basculer le point d'arrêt, commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [basculer le point d’arrêt, commande](https://docs.microsoft.com/visualstudio/ide/reference/toggle-breakpoint-command).  
-  
   
 Active ou désactive le point d’arrêt, en fonction de son état actuel, à l’emplacement actuel dans le fichier.  
   
@@ -56,7 +54,7 @@ Debug.ToggleBreakpoint [text]
  [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Fenêtre Commande](../../ide/reference/command-window.md)   
  [Zone Rechercher/Commande](../../ide/find-command-box.md)   
- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

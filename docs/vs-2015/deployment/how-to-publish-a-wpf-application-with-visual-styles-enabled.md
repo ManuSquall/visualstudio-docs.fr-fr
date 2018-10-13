@@ -1,7 +1,7 @@
 ---
 title: 'Comment : publier une Application WPF avec les Styles visuels activés | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: b93ea96bfaa03dc11cccf137c04e7d0cf3ca50ac
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b36d2ac3aa378a14dff0ec5a59a1d23f0843d3b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590666"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250209"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Comment : publier une application WPF avec les styles visuels activés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : publier une Application WPF avec activé des Styles Visual](https://docs.microsoft.com/visualstudio/deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled).  
-  
 Styles visuels activer l’apparence des contrôles communs à changer en fonction du thème choisi par l’utilisateur. Par défaut, les styles visuels ne sont pas activés pour les applications Windows Presentation Foundation (WPF), vous devez les activer manuellement. Toutefois, l’activation des styles visuels pour une application WPF, puis publiez la solution provoque une erreur. Cette rubrique décrit comment résoudre cette erreur et le processus de publication d’une application WPF avec les styles visuels sont activés. Pour plus d’informations sur les styles visuels, consultez [vue d’ensemble des Styles Visual](http://msdn.microsoft.com/en-us/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Pour plus d’informations sur le message d’erreur, consultez [dépannage des erreurs spécifiques dans les déploiements ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
   
  Pour résoudre l’erreur et publiez la solution, vous devez effectuer les tâches suivantes :  

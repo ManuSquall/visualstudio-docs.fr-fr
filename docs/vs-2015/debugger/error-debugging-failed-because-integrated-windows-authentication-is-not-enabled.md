@@ -1,7 +1,7 @@
 ---
 title: 'Erreur : Le débogage a échoué car l’authentification Windows intégrée n’est pas activée. | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a3ef22190b37b85256476259ee42288ffd0ef0bc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c7855ede01c522f3e79dd4c342e38830cd2fd23
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508835"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296138"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Erreur : le débogage a échoué, car l'authentification intégrée de Windows n'est pas activée
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [erreur : le débogage a échoué, car intégré Windows authentification est pas activée](https://docs.microsoft.com/visualstudio/debugger/error-debugging-failed-because-integrated-windows-authentication-is-not-enabled).  
-  
 L'authentification de l'utilisateur qui a demandé le débogage a été empêchée en raison d'une erreur d'authentification. Cette erreur peut se produire lorsque vous essayez d'accéder à une application Web ou à un service Web XML. Cette erreur peut provenir, par exemple, du fait que l'authentification Windows intégrée n'est pas activée. Pour l'activer, suivez les étapes décrites dans Activer l'authentification Windows intégrée.  
   
  Si vous avez activé l’authentification Windows intégrée et que cette erreur persiste, il est possible que cette erreur est provoquée par **l’authentification Digest pour les serveurs de domaine Windows** est activé. Dans ce cas, contactez votre administrateur réseau.  

@@ -1,7 +1,7 @@
 ---
 title: Saisie semi-automatique de mots dans un Service de langage hérité | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cd176c232bafd0d5a7a2b6735ba71b2bb490781d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 591967bd9ac61b611b1b062a006a5069fc94d114
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507881"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285296"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Saisie semi-automatique de mot dans un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [semi-automatique dans un Service de langage hérité](https://docs.microsoft.com/visualstudio/extensibility/internals/word-completion-in-a-legacy-language-service).  
-  
 Saisie semi-automatique de mot renseigne les caractères manquants sur un mot partiel tapé. En l’absence d’achèvement possible qu’un seul, le mot est terminé lorsque le caractère de saisie semi-automatique est entré. Si le mot partiel correspond à plusieurs possibilités, une liste des saisies semi-automatiques possibles s’affiche. Un caractère de fin peut être n’importe quel caractère qui n’est pas utilisé pour les identificateurs.  
   
  Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour plus d’informations, consultez [extension de l’éditeur et les Services de langage](../../extensibility/extending-the-editor-and-language-services.md).  

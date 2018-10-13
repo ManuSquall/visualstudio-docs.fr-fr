@@ -1,7 +1,7 @@
 ---
 title: BP_COND_STYLE | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a93b1412-f447-48a1-af9d-38f3dbb3092f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea5e0df33ef462d6b1b8bbe013f30baab894ea82
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 18bd677c973adca556259a017802476c591f83b4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494820"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216293"
 ---
 # <a name="bpcondstyle"></a>BP_COND_STYLE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [BP_COND_STYLE](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bp-cond-style).  
-  
 Spécifie le style de condition de point d’arrêt pour en attente et de points d’arrêt liés.  
   
 ## <a name="syntax"></a>Syntaxe  

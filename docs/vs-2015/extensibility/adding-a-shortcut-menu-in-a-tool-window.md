@@ -1,7 +1,7 @@
 ---
 title: Ajout d’un Menu contextuel dans une fenêtre outil | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a09e288771702ec6c5abde1838d8139e151504d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5326d604c36299d9cc1a553a61a8e4e1fabdc066
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501450"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217982"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Ajout d’un menu contextuel dans une fenêtre d’outil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Ajout d’un Menu contextuel dans une fenêtre outil](https://docs.microsoft.com/visualstudio/extensibility/adding-a-shortcut-menu-in-a-tool-window).  
-  
 Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un menu contextuel est un menu qui s’affiche quand un utilisateur clique sur un bouton, une zone de texte ou un arrière-plan de la fenêtre. Commandes du menu contextuel comportent comme des commandes sur d’autres menus ou les barres d’outils. Pour prendre en charge un menu contextuel, spécifiez-le dans le fichier .vsct et l’afficher en réponse à un clic droit de la souris.  
   
  Une fenêtre outil est constitué d’un contrôle utilisateur WPF dans une classe de fenêtre Outil personnalisée qui hérite de <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>.  

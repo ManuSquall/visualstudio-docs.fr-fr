@@ -1,7 +1,7 @@
 ---
 title: Comment puis-je utiliser les fenêtres du débogueur pendant le débogage d'un programme d'avant-plan ? | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ee4f9f7635fbd588d9bb6553e89a4b61b48491d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 296cb0da8615e07c4f7cb22e76b81d6819a8f816
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505052"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286505"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>Comment puis-je utiliser les fenêtres du débogueur pendant le débogage d'un programme d'avant-plan ?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [comment faire utilisez débogueur Windows pendant le débogage un programme d’avant-plan ?](https://docs.microsoft.com/visualstudio/debugger/how-can-i-use-debugger-windows-while-debugging-a-foreground-program-q).  
-  
 Description du problème  
  J'essaie de corriger un problème de peinture de l'écran. Pour observer ce problème, je dois conserver mon programme au premier plan. Autrement dit, je n'ai pas accès aux fenêtres de débogage. Que puis-je faire ?  
   

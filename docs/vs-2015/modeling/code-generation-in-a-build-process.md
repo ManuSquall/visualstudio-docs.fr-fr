@@ -1,7 +1,7 @@
 ---
 title: Génération de code dans un processus de génération | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,15 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ce072f85873530d419589f0d1830dc76688afa5c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 142e39a9d1b826edaaf519eea2ecaf8dfb72b5ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503960"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208648"
 ---
 # <a name="code-generation-in-a-build-process"></a>Génération de code dans un processus de génération
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Vous trouverez la dernière version de cette rubrique dans [génération de Code dans un processus de génération](https://docs.microsoft.com/visualstudio/modeling/code-generation-in-a-build-process).
-
 Transformation de texte peut être appelée dans le cadre du processus de génération d’une solution Visual Studio. Il existe des tâches de génération qui sont spécialisées pour la transformation de texte. Les tâches de génération T4 exécutent les modèles de texte au moment du design. En outre, elles compilent les modèles de texte (prétraités) au moment de l'exécution.
 
 Il existe quelques différences en matière de possibilités offertes par les tâches de génération, selon le moteur de génération que vous utilisez. Lorsque vous générez la solution dans Visual Studio, un modèle de texte peut accéder à l’API Visual Studio (EnvDTE) si le [hostspecific = « true »](../modeling/t4-template-directive.md) attribut est défini. Mais cela n'est pas vrai lorsque vous générez la solution à partir de la ligne de commande ou lorsque vous démarrez une génération serveur via Visual Studio. Dans ces situations, la génération est exécutée par MSBuild et un autre hôte T4 est utilisé.

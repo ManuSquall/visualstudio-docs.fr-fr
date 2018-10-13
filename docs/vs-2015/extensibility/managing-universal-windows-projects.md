@@ -1,7 +1,7 @@
 ---
 title: Gestion de projets de Windows universelle | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aedd9a3d85af50924a0371d3d1d4c26da3d4daac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 40d9a160d839b965c4b5f6db2413237af0af30ce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503773"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252809"
 ---
 # <a name="managing-universal-windows-projects"></a>Gestion de projets Windows universels
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [gestion de projets Windows universel](https://docs.microsoft.com/visualstudio/extensibility/managing-universal-windows-projects).  
-  
 Les applications Windows universelles sont des applications qui ciblent Windows 8.1 et Windows Phone 8.1, ce qui permet aux développeurs d’utiliser le code et autres ressources sur les deux plateformes. Le code partagé et les ressources sont conservées dans un projet partagé, tandis que le code spécifique à la plateforme et les ressources sont conservés dans des projets distincts, un pour Windows et l’autre pour Windows Phone. Pour plus d’informations sur les applications Windows universelles, consultez [des applications Windows universelles](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Les extensions de Visual Studio qui gèrent les projets devraient être conscient que les projets d’application Windows universelles ont une structure qui diffère des applications de plateforme unique. Cette procédure pas à pas vous montre comment naviguer dans le projet partagé et de gérer les éléments partagés.  
   
 ## <a name="prerequisites"></a>Prérequis  

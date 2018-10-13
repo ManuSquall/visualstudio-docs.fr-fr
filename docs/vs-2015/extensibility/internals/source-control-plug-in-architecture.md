@@ -1,7 +1,7 @@
 ---
 title: Architecture de plug-in de contrôle de source | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 35351d4c-9414-409b-98fc-f2023e2426b7
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 15446ac6ed0da57775416abfbe2ee737bc2fe663
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 885e761cc23d6dac86882943bf15401586acc656
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504943"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282345"
 ---
 # <a name="source-control-plug-in-architecture"></a>Architecture du plug-in de contrôle de code source
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Architecture de plug-in de contrôle de Source](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-plug-in-architecture).  
-  
 Vous pouvez ajouter la prise en charge du contrôle de source pour le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] l’environnement de développement intégré (IDE) en implémentant et en joignant un plug-in de contrôle de code source. L’IDE se connecte au contrôle de source de plug-in via l’API de plug-in de contrôle Source bien défini. L’IDE expose les fonctionnalités de contrôle de version du système de contrôle de source en fournissant une interface utilisateur (IU) qui se compose de barres d’outils et commandes de menu. Le plug-in de contrôle de code source implémente la fonctionnalité de contrôle de code source.  
   
 ## <a name="source-control-plug-in-resources"></a>Ressources Plug-in de contrôle de code source  

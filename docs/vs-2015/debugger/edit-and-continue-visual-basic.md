@@ -1,7 +1,7 @@
 ---
 title: Modifier & Continuer (Visual Basic) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,19 +26,17 @@ caps.latest.revision: 43
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 825eac4ab53e95904e85a794b665ce6f6b11f873
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 61ce8f61092bdcc612ea535debfcface976ebff8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495635"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265099"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Modifier & Continuer (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Modifier & Continuer (Visual Basic)](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-visual-basic).  
-  
-La fonctionnalité Modifier & Continuer destinée au débogage de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] vous permet d'apporter des modifications à votre code pendant qu'il s'exécute en mode Arrêt. Après avoir modifié le code, vous pouvez continuer son exécution avec les nouvelles modifications en place et observer leurs effets.  
+La fonctionnalité Modifier & Continuer destinée au débogage de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] vous permet d’apporter des modifications à votre code pendant qu’il s’exécute en mode Arrêt. Après avoir modifié le code, vous pouvez continuer son exécution avec les nouvelles modifications en place et observer leurs effets.  
   
  Vous pouvez utiliser la fonctionnalité Modifier & Continuer toutes les fois que vous passez en mode Arrêt. En mode Arrêt, le pointeur d'instruction, la flèche jaune dans la fenêtre source, pointe sur la ligne qui doit être exécutée ensuite et se trouve sur une instruction exécutable dans le corps d'une méthode ou d'une propriété. Vous pouvez apporter tout type de modification ou presque aux instructions exécutables en mode Arrêt et cette modification sera incorporée dans le projet sous-jacent. Toutefois, en mode Arrêt, vous n'êtes généralement pas autorisé à modifier des instructions de déclaration, telles que des méthodes publiques, des champs publics ou des déclarations de classe.  
   

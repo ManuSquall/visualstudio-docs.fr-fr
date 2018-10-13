@@ -1,7 +1,7 @@
 ---
 title: Prise en charge du contrôle de code Source | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 01941fdd4899142ae8abb96f57f93e3ebd0b6256
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 12a7cb2de6f3710f7b9e608f008d72d3b0b0e777
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508798"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279576"
 ---
 # <a name="supporting-source-control"></a>Prise en charge du contrôle de code source
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [prenant en charge un contrôle de code Source](https://docs.microsoft.com/visualstudio/extensibility/internals/supporting-source-control).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] prend en charge les extractions de fichiers, des archivages et autres opérations de contrôle de source de votre projet ou l’éditeur. Comme un client de contrôle de code source, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] est conçu pour interagir avec un package de contrôle de code source, tel que [!INCLUDE[vsvss](../../includes/vsvss-md.md)], qui fournit l’archivage, le contrôle de version et des fonctionnalités de contrôle pour un ensemble de fichiers définis dynamiquement.  
   
 ## <a name="in-this-section"></a>Dans cette section  

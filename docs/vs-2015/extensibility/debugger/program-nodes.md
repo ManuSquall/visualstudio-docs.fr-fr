@@ -1,7 +1,7 @@
 ---
 title: Nœuds du programme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 1c5a5c13-c14d-42c3-af11-4c63f1032c8d
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: caff608b85dc8fc563ace8f5d582dba1cba427c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 41ce3fd47850df5bab1db771177637102e9ec57a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505891"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287883"
 ---
 # <a name="program-nodes"></a>Nœuds de programme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [programme nœuds](https://docs.microsoft.com/visualstudio/extensibility/debugger/program-nodes).  
-  
 En termes d’architecture du débogueur, une **nœud du programme**:  
   
 -   Est une description léger d’un programme.  

@@ -1,7 +1,7 @@
 ---
 title: Énumérateur de message | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4a4faa0d-d352-40ea-a21d-c09ea286a8e1
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 374881ecfe7af76b4d5aed3c6ae56b64094406fa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d03e4c56a5cee3964ae5a4ec2fd9ca328988cdab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493096"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285582"
 ---
 # <a name="message-enumerator"></a>Énumérateur de message
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [énumérateur de Message](https://docs.microsoft.com/visualstudio/extensibility/message-enumerator).  
-  
 Les indicateurs suivants sont utilisés pour le `TEXTOUTPROC` (fonction), qui est une fonction de rappel que l’IDE fournit lorsqu’il appelle le [SccOpenProject](../extensibility/sccopenproject-function.md) (consultez [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) pour plus d’informations sur le rappel fonction).  
   
  Si l’IDE est invité à annuler le processus, il peut obtenir un des messages d’annulation. Dans ce cas, la source de contrôler les plug-in utilise `SCC_MSG_STARTCANCEL` pour demander de l’IDE pour afficher le **Annuler** bouton. Après cela, n’importe quel jeu de messages normaux peut-être être envoyé. Si un des ces retourne `SCC_MSG_RTN_CANCEL`, puis le plug-in se ferme l’opération et retourne. Le plug-in également interroge `SCC_MSG_DOCANCEL` périodiquement pour déterminer si l’utilisateur a annulé l’opération. Lorsque toutes les opérations sont effectuées, ou si l’utilisateur a annulé, envoie le plug-in `SCC_MSG_STOPCANCEL`. Le `SCC_MSG_INFO`, SCC_MSG_WARNING, et les types SCC_MSG_ERROR sont utilisés pour les messages qui s’affichent dans la liste déroulante des messages. `SCC_MSG_STATUS` est un type spécial qui indique que le texte doit apparaître dans une barre d’état ou de la zone d’affichage temporaire. Il ne reste pas définitivement dans la liste.  

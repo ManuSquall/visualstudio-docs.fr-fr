@@ -1,7 +1,7 @@
 ---
 title: Définir un gestionnaire de liaison des éléments de travail | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 73a0a71e50360f7c70b7f4e466d6000333c3b89e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eae89672a6fcbf56dcd2426547e1fb528c270db2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507947"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290418"
 ---
 # <a name="define-a-work-item-link-handler"></a>Définir un gestionnaire de liens d’éléments de travail
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [définir un gestionnaire de liaison des éléments de travail](https://docs.microsoft.com/visualstudio/modeling/define-a-work-item-link-handler).  
-  
 Vous pouvez créer une extension d’intégration Visual Studio qui répond quand l’utilisateur crée ou supprime un lien entre un élément de modèle ULM et un élément de travail. Par exemple, quand l'utilisateur choisit de lier un nouvel élément de travail à un élément de modèle, votre code peut initialiser les champs de l'élément de travail à partir de valeurs dans le modèle.  
   
 ## <a name="set-up-a-uml-extension-solution"></a>Configurer une solution d'extension UML  
@@ -167,7 +165,7 @@ namespace WorkItems
   
      **Résolution des problèmes**: si un nouveau [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne démarre pas, vérifiez que le projet VSIX est défini comme projet de démarrage de la solution.  
   
-2.  Dans l'instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ouvrez ou créez un projet de modélisation, puis ouvrez ou créez un diagramme de modélisation.  
+2.  Dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ouvrez ou créez un projet de modélisation, puis ouvrez ou créez un diagramme de modélisation.  
   
 3.  Créez un élément de modèle tel qu'une classe UML, et attribuez-lui un nom.  
   

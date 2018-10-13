@@ -1,7 +1,7 @@
 ---
 title: Propagation des modifications et réponse aux | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 157908b1d612f840f4d1c3e48c5ecd0350491b39
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 32deaa75ed09ad1a1320ec72d95d75adc92c12b2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505252"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280382"
 ---
 # <a name="responding-to-and-propagating-changes"></a>Propagation et réponse aux modifications en attente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [réponse en cours à et propagation des modifications](https://docs.microsoft.com/visualstudio/modeling/responding-to-and-propagating-changes).  
-  
 Lorsqu’un élément est créé, supprimé ou mis à jour, vous pouvez écrire du code qui propage la modification aux autres parties du modèle, ou à des ressources externes telles que des fichiers, de bases de données ou d’autres composants.  
   
 ## <a name="in-this-section"></a>Dans cette section  

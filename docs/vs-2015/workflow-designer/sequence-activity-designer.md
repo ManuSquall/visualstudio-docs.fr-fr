@@ -1,7 +1,7 @@
 ---
 title: Concepteur d’activités de séquence | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,15 +14,15 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: d3f005ba61ad93eb2b1dd2663831b33a133b64e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d676c4270d636d0869d5b2f95f7a265bf0a085ec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516585"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282774"
 ---
 # <a name="sequence-activity-designer"></a>Concepteur d'activités Sequence
-L'activité <xref:System.Activities.Statements.Sequence> contient une collection ordonnée d'activités enfants qu'elle exécute dans l'ordre.  
+L’activité <xref:System.Activities.Statements.Sequence> contient une collection ordonnée d’activités enfants qu’elle exécute dans l’ordre.  
   
  Une autre façon d'exécuter un ensemble d'activités dans l'ordre consiste à utiliser une activité <xref:System.Activities.Statements.Flowchart>. Envisagez d’utiliser le [organigramme](../workflow-designer/flowchart-activity-designer.md) lorsque vous avez un branchement ou en boucle les flux de programme que vous souhaitez modéliser schématiquement.  
   

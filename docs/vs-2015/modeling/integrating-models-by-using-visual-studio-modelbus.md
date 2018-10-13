@@ -1,7 +1,7 @@
 ---
 title: Intégration de modèles à l’aide de Visual Studio Modelbus | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2cbc89ae03e96a574e3d63a8448628d29ecf163f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1aa105ea43eaee0c82ee4572c21beb2e7b74315a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516587"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256254"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Intégration de modèles à l'aide de Visual Studio Modelbus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [l’intégration de modèles à l’aide de Visual Studio Modelbus](https://docs.microsoft.com/visualstudio/modeling/integrating-models-by-using-visual-studio-modelbus).  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus fournit une méthode de création de liens entre les modèles et d’autres outils dans des modèles. Par exemple, vous pouvez lier des modèles de langage spécifique à un domaine (DSL) et des modèles UML. Vous pouvez créer un ensemble intégré de DSL.  
   
  ModelBus vous permet de créer une référence unique à un modèle ou à un élément spécifique à l'intérieur d'un modèle. Cette référence peut être stockée en dehors du modèle : dans un élément d'un autre modèle, par exemple. Quand, en une occasion ultérieure, un outil veut obtenir un accès à l'élément, l'infrastructure de bus de modèles charge le modèle approprié et retourne l'élément. Si vous le désirez, vous pouvez afficher le modèle pour l'utilisateur. S'il n'est pas possible d'accéder au fichier dans son emplacement précédent, ModelBus demande à l'utilisateur de le rechercher. Si l'utilisateur trouve le fichier, ModelBus corrige toutes les références au fichier.  

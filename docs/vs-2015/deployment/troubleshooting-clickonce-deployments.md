@@ -1,7 +1,7 @@
 ---
 title: Dépannage des déploiements ClickOnce | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7ece1315bf95e5b24c0f689796752a5cde100654
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 20a162a8280854954a58fb0447957a3894325cea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501457"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284750"
 ---
 # <a name="troubleshooting-clickonce-deployments"></a>Dépannage des déploiements ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [dépannage des déploiements ClickOnce](https://docs.microsoft.com/visualstudio/deployment/troubleshooting-clickonce-deployments).  
-  
 Cette rubrique vous aide à diagnostiquer et résoudre les problèmes les plus courants avec [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiements.  
   
  Dans la plupart des cas, un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] télécharger sur l’ordinateur d’un utilisateur et l’exécution sans problèmes d’application. Il existe certains cas, toutefois, où les problèmes de configuration de serveur ou une application Web peuvent entraîner des problèmes imprévus.  
@@ -60,7 +58,7 @@ Cette rubrique vous aide à diagnostiquer et résoudre les problèmes les plus c
   
 ## <a name="see-also"></a>Voir aussi  
  [Manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [Manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md)
+ [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
 
 
 

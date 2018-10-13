@@ -1,7 +1,7 @@
 ---
 title: Fonctions d’élément | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 58344d897630244f5f2c1e987f5f41971bfc720c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 687d740a379bd3b04bd47d0d2e3111bb71e7934d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493645"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207920"
 ---
 # <a name="item-functions"></a>Fonctions d'élément
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [fonctions d’élément](https://docs.microsoft.com/visualstudio/msbuild/item-functions).  
-  
   
 À compter de MSBuild 4.0, le code dans les tâches et les cibles peut appeler des fonctions d’élément pour obtenir des informations sur les éléments du projet. Ces fonctions simplifient l’obtention des éléments Distinct() et sont plus rapides que l’exécution d’une boucle dans les éléments.  
   

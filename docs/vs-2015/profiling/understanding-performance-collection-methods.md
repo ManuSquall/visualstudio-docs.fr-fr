@@ -1,7 +1,7 @@
 ---
 title: Présentation des méthodes de collecte des performances | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57be2cf704521f25b48495e6537d384633cfd85f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 77ccabd5a75e2290f57d97af70d23d6e4e136fbe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501207"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295722"
 ---
 # <a name="understanding-performance-collection-methods"></a>Présentation des méthodes de collecte des performances
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [comprendre les méthodes de collecte de performances](https://docs.microsoft.com/visualstudio/profiling/understanding-performance-collection-methods).  
-  
 Les outils de profilage Visual Studio fournissent cinq méthodes que vous pouvez utiliser pour collecter des données de performances. Cette rubrique décrit les différentes méthodes et suggère quelques scénarios dans lesquels la collecte des données avec une méthode particulière peut être appropriée.  
   
 > [!NOTE]

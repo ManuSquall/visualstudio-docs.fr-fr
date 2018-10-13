@@ -1,7 +1,7 @@
 ---
 title: Déboguer plusieurs processus | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f573a677d1c74613bb66219a0ac75aa5bf267f12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c3bbd49aeab7df414d558a8841a55d982d8d2595
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502613"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289872"
 ---
 # <a name="debug-multiple-processes"></a>Déboguer plusieurs processus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [déboguer plusieurs processus](https://docs.microsoft.com/visualstudio/debugger/debug-multiple-processes).  
-  
 Voici comment démarrer les processus de débogage, basculer d'un processus à un autre, arrêter et continuer l'exécution, parcourir la source, arrêter le débogage et mettre fin ou se détacher d'un processus.  
   
 ##  <a name="BKMK_Contents"></a> Sommaire  

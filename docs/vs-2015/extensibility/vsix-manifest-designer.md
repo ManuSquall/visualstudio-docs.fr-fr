@@ -1,7 +1,7 @@
 ---
 title: Concepteur de manifeste VSIX | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9eeefb94d066eeef7a58e0b11658d9d6110f935d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 20b46ee920ed4ed7e32ed7e0ebbf326e5bc80f1a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502672"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271413"
 ---
 # <a name="vsix-manifest-designer"></a>Concepteur de manifeste VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Concepteur de manifeste VSIX](https://docs.microsoft.com/visualstudio/extensibility/vsix-manifest-designer).  
-  
 Modifie un fichier de manifeste de package VSIX, qui définit le comportement d’installation pour une extension Visual Studio.  
   
  Le **Concepteur de manifeste VSIX** mappe au schéma VSIX sous-jacent. Chaque élément dans le schéma peut être définie à l’aide d’un contrôle correspondant dans le concepteur. Pour plus d’informations sur le schéma, consultez [VSIX Extension de schéma 2.0 référence](../extensibility/vsix-extension-schema-2-0-reference.md).  

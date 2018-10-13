@@ -1,7 +1,7 @@
 ---
 title: Hiérarchie des Types de symboles de classes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 35db9ca51285e10310a7fcee0c6db32dd9dff4a4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a6fc7ee76ae8f7b1490d61cc0cc0022b719b0d7a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502987"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284035"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>Hiérarchie de classes des types de symboles
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [hiérarchie de classe de Types de symboles](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/class-hierarchy-of-symbol-types).  
-  
 Le tableau suivant décrit les types de symboles dans la hiérarchie de classes.  
   
 ## <a name="symbol-types"></a>Types de symboles  

@@ -1,7 +1,7 @@
 ---
 title: Commentaire du Code dans un Service de langage hérité | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 9600d6f0-e2b6-4fe0-b935-fb32affb97a4
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3314d27ce81e48237fa69b332b203d557d0a11d0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da04f97cc31ba235fd70aea60f01c51f8c8a2b75
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493594"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291900"
 ---
 # <a name="commenting-code-in-a-legacy-language-service"></a>Commentaire du code dans un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [de commentaires de Code dans un Service de langage hérité](https://docs.microsoft.com/visualstudio/extensibility/internals/commenting-code-in-a-legacy-language-service).  
-  
 En général, les langages de programmation fournissent un moyen d’annoter ou de commenter le code. Un commentaire est une section de texte qui fournit des informations supplémentaires sur le code, mais est ignoré pendant la compilation ou une interprétation.  
   
  Les classes de framework (MPF) de package gérée prennent en charge les commentaires et suppression de commentaires dans le texte sélectionné.  

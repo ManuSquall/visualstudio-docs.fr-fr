@@ -1,7 +1,7 @@
 ---
 title: L’accès à theText vue à l’aide de l’API héritée | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 8f751f72-c972-4be3-84ee-19c281e02e25
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a65dcf8c67169e26fa508dfa7043717ea919df7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 943a55f09404224ec3d9b793c2ff473b90a66f0d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503079"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296190"
 ---
 # <a name="accessing-thetext-view-by-using-the-legacy-api"></a>L’accès à theText vue à l’aide de l’API héritée
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [accès theText vue à l’aide de l’API héritée](https://docs.microsoft.com/visualstudio/extensibility/accessing-thetext-view-by-using-the-legacy-api).  
-  
 Une vue de texte est une présentation du texte qui est stocké dans une mémoire tampon de texte. Vous pouvez accéder à l’affichage de texte à l’aide de l’API héritée comme indiqué dans la section suivante.  
   
 ## <a name="text-view-object"></a>Objet de vue de texte  

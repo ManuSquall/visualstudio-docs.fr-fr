@@ -1,7 +1,7 @@
 ---
 title: Mise en route avec les analyseurs Roslyn | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 367c2ec8-3059-46a5-9d1c-57bead0419e7
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 178826bbb1a5f920af0c6d20527e4e004b1918cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 337aec1b68759102d9e2a50bd4a23c13ddde7739
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501688"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284737"
 ---
 # <a name="getting-started-with-roslyn-analyzers"></a>Bien démarrer avec les analyseurs Roslyn
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [mise en route avec les analyseurs Roslyn](https://docs.microsoft.com/visualstudio/extensibility/getting-started-with-roslyn-analyzers).  
-  
 Avec les analyseurs de code en direct, basée sur le projet dans Visual Studio, les auteurs de l’API peuvent être livrées analyse du code spécifique à un domaine dans le cadre de leurs packages NuGet.  Étant donné que ces analyseurs sont alimentées par la plateforme de compilateur .NET (nom de code « Roslyn »), peuvent produire des avertissements dans votre code en cours de frappe avant même que vous avez terminé la ligne (pas d’autres en attente pour générer votre code pour découvrir des problèmes).  Les analyseurs peuvent également se manifester un correctif de code automatique via l’invite d’ampoule Visual Studio pour vous permettre de nettoyer votre code immédiatement  
   
 ## <a name="getting-started"></a>Prise en main  
