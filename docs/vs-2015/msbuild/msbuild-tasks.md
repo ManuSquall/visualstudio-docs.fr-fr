@@ -1,7 +1,7 @@
 ---
 title: Tâches MSBuild | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da0d80e08a198b954e4530e7c39b2741eb955552
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dff7c0ce45c71340f3b931e32843adb6a90ea075
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508833"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176696"
 ---
 # <a name="msbuild-tasks"></a>Tâches MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [tâches MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild-tasks).  
-  
   
 Une plateforme de génération doit pouvoir exécuter plusieurs actions pendant le processus de génération. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] utilise des *tâches* pour effectuer ces actions. Une tâche est une unité de code exécutable utilisée par [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pour exécuter des opérations de génération atomiques.  
   

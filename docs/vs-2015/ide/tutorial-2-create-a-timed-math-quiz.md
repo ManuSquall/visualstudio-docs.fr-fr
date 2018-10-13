@@ -1,7 +1,7 @@
 ---
 title: 'Didacticiel 2 : créer un questionnaire mathématique chronométré| Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4ec4c1bd1c01229ab0c8f32a78e2b7483a1efc06
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d86d42ce7e345a30c56390bede6957dff8bcd67
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502252"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205066"
 ---
-# <a name="tutorial-2-create-a-timed-math-quiz"></a>Didacticiel 2 : créer un questionnaire mathématique chronométré
+# <a name="tutorial-2-create-a-timed-math-quiz"></a>Didacticiel 2 : créer un questionnaire mathématique chronométré
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [didacticiel 2 : créer un questionnaire mathématique chronométré](https://docs.microsoft.com/visualstudio/ide/tutorial-2-create-a-timed-math-quiz).  
-  
 Dans ce didacticiel, vous générez un questionnaire dans lequel la personne interrogée doit résoudre quatre problèmes arithmétiques aléatoires dans un délai imparti. Vous apprenez à :  
   
 -   Générer des nombres aléatoires à l'aide de la classe `Random`.  

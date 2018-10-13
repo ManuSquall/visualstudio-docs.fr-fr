@@ -1,7 +1,7 @@
 ---
 title: Configuration pour la génération de projet | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 799330ffa4fbedc5d1fee1ff4cb2f0dfdb3049f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bcac8acced823f294c4e6dd33302e3eea30b0439
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503244"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221115"
 ---
 # <a name="project-configuration-for-building"></a>Configuration de projet pour la création
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Configuration de projet pour la création de](https://docs.microsoft.com/visualstudio/extensibility/internals/project-configuration-for-building).  
-  
 La liste des configurations de solution pour une solution donnée est gérée par la boîte de dialogue Configurations de Solution.  
   
  Un utilisateur peut créer des configurations de solution supplémentaires, chacune avec son propre nom unique. Lorsque l’utilisateur crée une nouvelle configuration de solution, l’IDE par défaut est le nom de configuration correspondant dans les projets, ou débogage si aucun nom correspondant existe. L’utilisateur peut modifier la sélection pour répondre aux exigences spécifiques si nécessaire. La seule exception à ce comportement est lorsque le projet prend en charge une configuration qui correspond au nom de la nouvelle configuration de solution. Par exemple, supposons qu'une solution contient Project1 et Project2. Project1 a des configurations de projet Debug et MyConfig1 vente au détail. Project2 a des configurations de projet Debug et MyConfig2 vente au détail.  

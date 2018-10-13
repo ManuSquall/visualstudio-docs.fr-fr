@@ -1,7 +1,7 @@
 ---
 title: 'Comment : créer un nuanceur de couleur de base | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 23a7082c305bdabf139e284d448fafdf375762e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f37e725c0666da39bf75b8c04b7c2a73d8622ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500948"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209558"
 ---
-# <a name="how-to-create-a-basic-color-shader"></a>Comment : créer un nuanceur de couleur de base
+# <a name="how-to-create-a-basic-color-shader"></a>Comment : créer un nuanceur de couleur de base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : créer un nuanceur de couleur de base](https://docs.microsoft.com/visualstudio/designers/how-to-create-a-basic-color-shader).  
-  
 Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed Graph Shader Language) pour créer un nuanceur de couleur plat. Ce nuanceur définit la couleur finale sur une valeur de couleur RVB de constante.  
   
  Ce document illustre ces activités :  

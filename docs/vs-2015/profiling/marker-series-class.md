@@ -1,7 +1,7 @@
 ---
 title: marker_series, classe | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 18967d9f89f701dd02feb70670147db3f1275978
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5a5791d338b204417d4d765b22a5050f4065faef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493745"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203852"
 ---
 # <a name="markerseries-class"></a>marker_series, classe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [marker_series, classe](https://docs.microsoft.com/visualstudio/profiling/marker-series-class).  
-  
 Représente un canal série d’événements générés par un fournisseur unique.  
   
 ## <a name="syntax"></a>Syntaxe  

@@ -1,7 +1,7 @@
 ---
 title: Modifier et continuer, boîte de dialogue erreur Message | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d649df9584fc06ee08b7a7d1e846597c12519019
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8b6252fbaf67a9a5b4173c0fee3f65607e9cc462
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496172"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227231"
 ---
 # <a name="edit-and-continue-error-message-dialog-box"></a>Message d'erreur de Modifier & Continuer, boîte de dialogue
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Modifier & Continuer le boîte de dialogue de Message d’erreur](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-error-message-dialog-box).  
-  
 Cette boîte de dialogue s’affiche lorsque vous déboguez dans un langage qui prend en charge Modifier & Continuer, mais **Modifier & Continuer** n’est pas disponible pour le type de modifications du code que vous avez apportées. Le message d'erreur affiché dans la boîte de dialogue fournit une explication plus détaillée. Les raisons pouvant justifier l'affichage de cette boîte de dialogue sont les suivantes :  
   
 -   Vous avez essayé de modifier un code managé alors que le débogage non managé était activé. Modifier & Continuer ne fonctionne pas en débogage en mode mixte.  

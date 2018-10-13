@@ -1,7 +1,7 @@
 ---
 title: Extension de JavaScript IntelliSense | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 59189ae35ce43877e59309382dfd9cbf278ce8f0
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 4c961d0a8e313760db20a74fb1397706d5890b96
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881122"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214251"
 ---
 # <a name="extending-javascript-intellisense"></a>Extension de JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Documentation Visual Studio 2017](/visualstudio/).  
-  
 La fonctionnalité d’extensibilité JavaScript IntelliSense vous permet de personnaliser les résultats d’IntelliSense dans l’éditeur JavaScript pour des bibliothèques tierces. Cela peut améliorer l’expérience de développeurs qui utilisent ces bibliothèques.  
   
  Le service de langage JavaScript offre des fonctionnalités IntelliSense pour les bibliothèques JavaScript tierces qui sont ajoutés à un projet. Pour la plupart des bibliothèques, la saisie semi-automatique des instructions sont fournie automatiquement par le service de langage. L’illustration suivante montre un exemple de saisie semi-automatique des instructions :  

@@ -1,7 +1,7 @@
 ---
 title: Les modèles de contrôle courants pour Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9dc12c1f7f61f6a4f5d52d232d7cca71b1f16888
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fb915f7d17070d78e5749834c325bfee4e8a6879
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500929"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224040"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Modèles de contrôle courants pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [des modèles de contrôle courants pour Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/common-control-patterns-for-visual-studio).  
-  
 ##  <a name="BKMK_CommonControls"></a> Contrôles communs  
   
 ### <a name="overview"></a>Vue d'ensemble  

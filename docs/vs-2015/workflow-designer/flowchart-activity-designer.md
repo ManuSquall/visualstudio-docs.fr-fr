@@ -1,7 +1,7 @@
 ---
 title: Concepteur d’activités flowchart | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 1fb9c6493390b0f489b2afaf27dc0293748c70a6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 67bebeec9c2d88ba1912bc50b27e38f8278e7e3f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504614"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226237"
 ---
 # <a name="flowchart-activity-designer"></a>Concepteur d'activités d'organigramme
 L'activité <xref:System.Activities.Statements.Flowchart> permet de créer des flux de travail qui définissent et gèrent des contrôles de flux complexes. <xref:System.Activities.Statements.Flowchart> peut être créé dans le code ou à l'aide de [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Cette rubrique explique comment utiliser [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Le concepteur d'activités de flux de travail [!INCLUDE[wfd1](../includes/wfd1-md.md)] permet aux développeurs de créer des flux de travail de façon naturelle.  
@@ -44,7 +44,7 @@ L'activité <xref:System.Activities.Statements.Flowchart> permet de créer des f
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Spécifie le nom d'affichage du concepteur d'activités dans l'en-tête. La valeur par défaut est Flowchart. La valeur peut être modifiée dans le **propriétés** fenêtre ou directement sur l’en-tête du Concepteur d’activité.<br /><br /> Bien que la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé d'en utiliser une.|  
 |<xref:System.Activities.Statements.Flowchart.Variables%2A>|False|Collection de variables dont l'étendue est limitée par cet objet <xref:System.Activities.Statements.Flowchart> pour partager l'état entre ses activités enfants.|  
 |<xref:System.Activities.Statements.Flowchart.StartNode%2A>|False|Objet <xref:System.Activities.Statements.FlowNode> exécuté lorsque <xref:System.Activities.Statements.Flowchart> démarre.|  
-|<xref:System.Activities.Statements.Flowchart.Nodes%2A>|False|Contient la collection d'objets <xref:System.Activities.Statements.FlowNode> dans <xref:System.Activities.Statements.Flowchart>.|  
+|<xref:System.Activities.Statements.Flowchart.Nodes%2A>|False|Contient la collection d’objets <xref:System.Activities.Statements.FlowNode> dans <xref:System.Activities.Statements.Flowchart>.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Diagramme de flux](../workflow-designer/flowchart-activity-designers.md)   

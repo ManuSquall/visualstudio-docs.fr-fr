@@ -1,7 +1,7 @@
 ---
 title: La propriété de connexion dans le fichier de paramètres de l’Application est manquante ou incorrecte | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5f49731e554c737a8dd0a26dab22f5ccaad99cc4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b01ae69a63014f4f413e89942a3b9b3c6a74db61
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506205"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216216"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>La propriété de connexion est manquante ou incorrecte dans le fichier des paramètres de l'application
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [la propriété de connexion dans le fichier de paramètres de l’Application est manquante ou incorrecte](https://docs.microsoft.com/visualstudio/data-tools/the-connection-property-in-the-application-settings-file-is-missing-or-incorrect).  
-  
   
 La propriété de connexion dans le fichier des paramètres de l'application est manquante ou incorrecte. La chaîne de connexion du fichier .dbml a été utilisée à la place.  
   

@@ -1,7 +1,7 @@
 ---
 title: Activités de Workflow hérité | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 7f661254b06174c12b4d7dece194e345ac0056bc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ff21a431e380a281ce1261215367b89c4ecf1a3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500950"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205398"
 ---
 # <a name="legacy-workflow-activities"></a>Activités de workflow héritées
 [!INCLUDE[wf](../includes/wf-md.md)] inclut un ensemble d'activités par défaut qui fournit les fonctionnalités utilisées pour le flux de contrôle, les conditions, la gestion des événements, la gestion des états et pour communiquer avec les applications et les services. Lorsque vous concevez des workflows, vous pouvez utiliser les activités fournies par le système via [!INCLUDE[wfd1](../includes/wfd1-md.md)], ou vous pouvez créer vos propres activités personnalisées.  

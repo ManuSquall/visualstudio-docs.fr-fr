@@ -1,7 +1,7 @@
 ---
 title: 'Comment : appliquer du Code facile à maintenir avec une stratégie d’archivage de l’analyse du Code | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 97b321fe5a72c6f3ace680476340eca48f7ed309
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ef282bf1b19cb2d72075619539921cdb88d08f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506115"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174849"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Comment : appliquer du code facile à maintenir avec une stratégie d’archivage de l’analyse du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : appliquer un Code facile à maintenir avec une stratégie d’archivage de l’analyse du Code](https://docs.microsoft.com/visualstudio/code-quality/how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy).  
-  
 Les développeurs peuvent utiliser l’outil de métrique du Code pour mesurer la complexité et la facilité de maintenance de leur code, mais ils ne peuvent pas appeler métrique du code dans le cadre d’une stratégie d’archivage. Toutefois, une équipe peut activer des règles d’analyse du Code pour vérifier la conformité de leur code avec les normes de la métrique du Code et appliquent les règles via des stratégies d’archivage. Pour plus d’informations sur la métrique du code, consultez le [des valeurs de métriques de Code](../code-quality/code-metrics-values.md).  
   
  Les développeurs peuvent activer la profondeur d’héritage, couplage de classe, indice de maintenabilité et règles de complexité appliquer du code facile à gérer via des stratégies d’archivage d’analyse du Code. Les quatre de ces règles sont trouvent sous la catégorie « Règles de maintenance » dans l’éditeur de stratégie d’analyse du Code.  

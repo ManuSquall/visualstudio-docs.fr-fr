@@ -1,7 +1,7 @@
 ---
 title: Boîte de dialogue informations de chargement de symboles | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1a8b644bf56210a0484957a444ef32de23dc3d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8caded198e3eeaa324d439d4d8756c20f054b022
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516823"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218762"
 ---
 # <a name="symbol-load-information-dialog-box"></a>Informations sur le chargement de symboles, boîte de dialogue
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [boîte de dialogue informations de symbole charge](https://docs.microsoft.com/visualstudio/debugger/symbol-load-information-dialog-box).  
-  
 Le **les informations de chargement de symboles** boîte de dialogue s’ouvre lorsque vous cliquez sur le **Modules** fenêtre et choisissez **les informations de chargement de symboles**.  
   
 ## <a name="uielement-list"></a>Liste des éléments d’interface  

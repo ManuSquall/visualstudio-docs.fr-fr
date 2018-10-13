@@ -1,7 +1,7 @@
 ---
 title: Vue Arborescence des appels - Données d’échantillonnage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7f7f4f435b0b00fb68395d0c00670d7f89c9cb2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8e8e04ff22333731e49e8d28f355de513fa57675
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504323"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195680"
 ---
 # <a name="call-tree-view---sampling-data"></a>Vue Arborescence des appels - Données d’échantillonnage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [vue arborescence des appels - données d’échantillonnage](https://docs.microsoft.com/visualstudio/profiling/call-tree-view-sampling-data).  
-  
 La vue Arborescence des appels affiche les chemins d’exécution de la fonction empruntés dans l’application profilée.  
   
 > [!NOTE]
@@ -67,7 +65,7 @@ La vue Arborescence des appels affiche les chemins d’exécution de la fonction
  [Vue Arborescence des appels - Données d’échantillonnage du profileur](../profiling/call-tree-view-sampling-data.md)   
  [Vue Arborescence des appels - Échantillonnage](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
  [Vue Arborescence des appels - Instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
- [Vue Arborescence des appels](../profiling/call-tree-view-instrumentation-data.md)
+ [Mode Arborescence des appels](../profiling/call-tree-view-instrumentation-data.md)
 
 
 

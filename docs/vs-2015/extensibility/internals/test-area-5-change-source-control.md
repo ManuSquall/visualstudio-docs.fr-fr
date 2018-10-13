@@ -1,7 +1,7 @@
 ---
 title: 'Zone de test 5 : Modifier le contrôle de code Source | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b5aab46b6a87f6178219075ac64951be3b76fd7a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 808ed1ce13af06fa263a339bc9c6788595a261a6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503779"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229253"
 ---
 # <a name="test-area-5-change-source-control"></a>Zone de test 5 : Modifier le contrôle de code source
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Test zone 5 : modifier le contrôle de Source](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-5-change-source-control).  
-  
 Cette zone de test plug-in de contrôle de code source couvre la modification du contrôle de code source via le **modifier le contrôle de Source** commande.  
   
  **Modifier le contrôle de code Source** commande fournit quatre fonctions de base pour l’utilisateur :  

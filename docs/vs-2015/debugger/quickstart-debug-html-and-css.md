@@ -1,7 +1,7 @@
 ---
 title: 'Démarrage rapide : Déboguer du code HTML et CSS | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,21 +26,19 @@ caps.latest.revision: 104
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b331ccf0cf180364738f5ac9084b0bd2ff6b716b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2896d88ee5730482aeca737f89e5b5340070be7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508701"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225483"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Démarrage rapide : déboguer du code HTML et CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Guide de démarrage rapide : déboguer du code HTML et CSS](https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-html-and-css).  
-  
 S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png « windows_and_phone_content »)  
   
- Pour les applications JavaScript, Visual Studio fournit une expérience de débogage complète qui inclut des fonctionnalités familières aux développeurs Internet Explorer et Visual Studio. Ces fonctionnalités sont prises en charge pour [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], les applications Windows Phone Store et pour les applications créées à l’aide de Visual Studio Tools pour Apache Cordova  
+ Pour les applications JavaScript, Visual Studio fournit une expérience de débogage complète qui inclut des fonctionnalités familières aux développeurs Internet Explorer et Visual Studio. Ces fonctionnalités sont prises en charge par les applications [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], les applications Windows Phone Store et les applications créées avec Visual Studio Tools pour Apache Cordova.  
   
  Grâce au modèle de débogage interactif fourni par les outils d’inspection DOM, vous pouvez afficher et modifier le rendu du code HTML et CSS. Et cela, sans avoir à arrêter ni redémarrer le débogueur.  
   
@@ -197,7 +195,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
      ![Explorateur DOM](../debugger/media/js-dom-explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
-    >  Vous pouvez également sélectionner l’élément DIV dans le coin inférieur gauche de la fenêtre de JavaScript Console en tapant `select(fView)` à la >> d’entrée invite et appuyez sur ENTRÉE.  
+    >  Vous pouvez aussi sélectionner l’élément DIV en bas à gauche de la fenêtre de la console JavaScript en tapant `select(fView)` à l’invite de commandes >> et en appuyant sur Entrée.  
   
      Les valeurs qui s’affichent sous les onglets à droite de la fenêtre de l’explorateur DOM sont automatiquement mises à jour pour refléter l’élément en cours dans l’explorateur DOM.  
   
@@ -295,13 +293,13 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 ##  <a name="BrowserSupport"></a> Navigateurs et plateformes pris en charge  
  Les outils Visual Studio pour JavaScript, l’explorateur DOM et la fenêtre de la console JavaScript sont pris en charge sur les plateformes suivantes :  
   
--   Applications [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] et Windows Phone Store en JavaScript et HTML  
+-   Applications[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] et Windows Phone Store en JavaScript et HTML  
   
 -   Internet Explorer 11 s'exécutant sur [!INCLUDE[win81](../includes/win81-md.md)]  
   
--   Internet Explorer 10 s'exécutant sur [!INCLUDE[win8](../includes/win8-md.md)]  
+-   Internet Explorer 10 s’exécutant sur [!INCLUDE[win8](../includes/win8-md.md)]  
   
- Accédez [ici](http://go.microsoft.com/fwlink/?LinkID=232448) télécharger [!INCLUDE[win8](../includes/win8-md.md)] et Visual Studio.  
+ Allez [ici](http://go.microsoft.com/fwlink/?LinkID=232448) pour télécharger [!INCLUDE[win8](../includes/win8-md.md)] et Visual Studio.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
@@ -311,7 +309,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
  [Actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Déboguer un contrôle WebView](../debugger/debug-a-webview-control.md)   
  [Raccourcis clavier](../debugger/keyboard-shortcuts-html-and-javascript.md)   
- [Commandes de JavaScript Console](../debugger/javascript-console-commands.md)   
+ [JavaScript Console commands](../debugger/javascript-console-commands.md)   
  [Déboguer l’exemple de code HTML, CSS et JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [Support technique et accessibilité](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
 

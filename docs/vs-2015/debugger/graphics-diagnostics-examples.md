@@ -1,7 +1,7 @@
 ---
 title: Exemples Graphics Diagnostics | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ee2476b8456492db52bcf802c127a22b5faec7e6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 02b8c3d8d21e19f671901a353af00163c17025fb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501019"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188537"
 ---
 # <a name="graphics-diagnostics-examples"></a>Exemples Graphics Diagnostics
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [exemples Graphics Diagnostics](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-diagnostics-examples).  
-  
-Ces exemples montrent comment déboguer les problèmes de rendu dans les applications DirectX à l'aide des outils Graphics Diagnostics de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+Ces exemples montrent comment déboguer les problèmes de rendu dans les applications DirectX à l’aide des outils Graphics Diagnostics de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="capturing-graphics-information"></a>Capture d'informations graphiques  
  Avant d'utiliser Graphics Diagnostics pour diagnostiquer des problèmes de rendu dans votre application, vous devez capturer les informations graphiques de l'application pendant qu'elle s'exécute. Les informations graphiques peuvent être capturées à partir d'une application s'exécutant en local ou sur un ordinateur ou autre appareil distant. Ces procédures pas à pas montrent comment capturer les informations graphiques d'une application manuellement ou par programmation :  

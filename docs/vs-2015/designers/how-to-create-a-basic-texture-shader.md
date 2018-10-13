@@ -1,7 +1,7 @@
 ---
 title: 'Comment : créer un nuanceur de texture de base | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 421b02692af0235582845a5884c228933f0ca7c2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 247be4afe0b9363bd12a37ddfb753fe1a0f1c68c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508331"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180178"
 ---
-# <a name="how-to-create-a-basic-texture-shader"></a>Procédure : créer un nuanceur de texture de base
+# <a name="how-to-create-a-basic-texture-shader"></a>Procédure : créer un nuanceur de texture de base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : créer un nuanceur de Texture de base](https://docs.microsoft.com/visualstudio/designers/how-to-create-a-basic-texture-shader).  
-  
 Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed Graph Shader Language) pour créer un nuanceur de texture unique. Ce nuanceur définit la couleur finale directement sur les valeurs RVB et alpha échantillonnées à partir de la texture.  
   
  Ce document illustre ces activités :  

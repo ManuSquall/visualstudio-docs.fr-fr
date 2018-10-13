@@ -1,7 +1,7 @@
 ---
 title: Lier des contrôles WPF à des données dans Visual Studio2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e99f18122dc0be7e3a68871aa58a9109502da9c0
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 9cd13723e1483a33e4b98dc544c6e8448dc9a980
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880953"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208238"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Lier des contrôles WPF à des données dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Documentation Visual Studio 2017](/visualstudio/).  
-  
 Vous pouvez créer lié aux données [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] contrôles à l’aide de la **des Sources de données** fenêtre. Tout d’abord, ajoutez une source de données pour le **des Sources de données** fenêtre. Ensuite, faites glisser des éléments à partir de la **des Sources de données** fenêtre pour le**Concepteur WPF**.  
   
 ##  <a name="adding"></a> Ajouter une source de données à la fenêtre Sources de données  

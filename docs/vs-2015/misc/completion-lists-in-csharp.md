@@ -1,7 +1,7 @@
 ---
 title: Listes de saisie semi-automatique en c# | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 16
 author: BillWagner
 ms.author: billchi
 manager: douge
-ms.openlocfilehash: f76cbca7ba16de4f80de3769b63f7381476a16d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: de5b6596a7a487dbc4ea1b6c0d16b137b209e8b7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506648"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200043"
 ---
 # <a name="completion-lists-in-c"></a>Listes de saisie semi-automatique en C# #
 Ce contenu a été déplacé vers [Visual c# IntelliSense](../ide/visual-csharp-intellisense.md)  

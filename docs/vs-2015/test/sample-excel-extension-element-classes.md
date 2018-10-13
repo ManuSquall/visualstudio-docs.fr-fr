@@ -1,7 +1,7 @@
 ---
 title: 'Exemple d’extension Excel : classes d’éléments | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 7c251098-00aa-49cf-9e37-5717c0c6b3f1
 caps.latest.revision: 11
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0babaf7e387f9255dc8a60958483ba9db66cc879
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 814431f673757c2a3f3e37aac50bf2d6b89f35da
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505812"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179294"
 ---
 # <a name="sample-excel-extension-element-classes"></a>Exemple d'extension Excel : classes d'éléments
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [exemple d’Extension Excel : Classes d’éléments](https://docs.microsoft.com/visualstudio/test/sample-excel-extension-element-classes).  
-  
 L’extension utilise des classes dérivées de <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> et qui représentent le contrôle Worksheet et le contrôle Cell dans [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)].  
   
  L’élément de base de cette extension est `ExcelElement`. La classe `ExcelWorksheetElement` et la classe `ExcelCellElement` héritent de cet élément  

@@ -1,7 +1,7 @@
 ---
 title: 'Comment : exporter un nuanceur | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bc5969dfd900f3974a1a70e5adefdea6d13ad648
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e8c3a6ea90b43caeb1140cbb9ab7c699bdb09c3e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496358"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213289"
 ---
-# <a name="how-to-export-a-shader"></a>Procédure : exporter un nuanceur
+# <a name="how-to-export-a-shader"></a>Procédure : exporter un nuanceur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : exporter un nuanceur](https://docs.microsoft.com/visualstudio/designers/how-to-export-a-shader).  
-  
 Ce document indique comment utiliser le concepteur de nuanceur pour exporter un nuanceur DGSL (Directed Graph Shader Language) afin de pouvoir l’utiliser dans votre application.  
   
  Ce document illustre cette activité :  

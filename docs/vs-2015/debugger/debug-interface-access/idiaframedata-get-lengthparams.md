@@ -1,7 +1,7 @@
 ---
 title: IDiaFrameData::get_lengthParams | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf273cccc7e6c598418426ee5e0ca67fa98dff52
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c2a29cfeb72e8a342ae3e6d3e443637c980700d7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507126"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179502"
 ---
 # <a name="idiaframedatagetlengthparams"></a>IDiaFrameData::get_lengthParams
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDiaFrameData::get_lengthParams](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaframedata-get-lengthparams).  
-  
 Récupère le nombre d’octets de l’objet d’un push sur la pile de paramètres.  
   
 ## <a name="syntax"></a>Syntaxe  

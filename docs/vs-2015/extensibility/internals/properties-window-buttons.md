@@ -1,7 +1,7 @@
 ---
 title: Boutons de la fenêtre Propriétés | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 579f0a287e171872fccebbd251fae618ba615692
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05b23a5dff0c668487f569ceb4fcd5efb6a582aa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504731"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176798"
 ---
 # <a name="properties-window-buttons"></a>Boutons de la fenêtre Propriétés
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [boutons de la fenêtre Propriétés](https://docs.microsoft.com/visualstudio/extensibility/internals/properties-window-buttons).  
-  
 Selon le langage de développement et le type de produit, certains boutons sont affichés par défaut sur la barre d’outils pour le **propriétés** fenêtre. Dans tous les cas, le **par catégorie**, **Alphabetized**, **propriétés**, et **Pages de propriétés** boutons sont affichés. Dans Visual c# et Visual Basic, le **événements** bouton s’affiche également. Dans des projets Visual C++, le **VC ++ Messages** et **VC remplace** boutons sont affichés. Boutons supplémentaires peuvent s’afficher pour les autres types de projets. Pour plus d’informations sur les boutons dans la **propriétés** fenêtre, consultez [fenêtre Propriétés](../../ide/reference/properties-window.md).  
   
 ## <a name="implementation-of-properties-window-buttons"></a>Implémentation de boutons de la fenêtre Propriétés  

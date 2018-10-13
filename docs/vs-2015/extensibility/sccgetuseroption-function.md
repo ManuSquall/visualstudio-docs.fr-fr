@@ -1,7 +1,7 @@
 ---
 title: Fonction SccGetUserOption | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 17863747-1901-4c53-a2b3-ed996085e120
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 567dbf987887d203a811a1dc965ecd4a472d5641
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4739b15925512bda60748f1aa644d169b770d8f5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505859"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182466"
 ---
 # <a name="sccgetuseroption-function"></a>Fonction SccGetUserOption
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [fonction SccGetUserOption](https://docs.microsoft.com/visualstudio/extensibility/sccgetuseroption-function).  
-  
 Cette fonction récupère une variété d’options spécifiques à l’utilisateur.  
   
 ## <a name="syntax"></a>Syntaxe  

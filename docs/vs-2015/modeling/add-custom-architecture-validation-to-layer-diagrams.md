@@ -1,7 +1,7 @@
 ---
 title: Ajouter une validation d’architecture personnalisée aux diagrammes de couche | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3ef9831dd5268c545373433d728df7e36d31cf83
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2012ff0729853d365ed9bb32a9420f5b41bf47fb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493460"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231092"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Ajouter une validation d’architecture personnalisée aux diagrammes de couche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [ajouter la validation d’architecture personnalisée aux diagrammes de dépendance](https://docs.microsoft.com/visualstudio/modeling/add-custom-architecture-validation-to-layer-diagrams).  
-  
 Dans Visual Studio, les utilisateurs peuvent valider le code source dans un projet par rapport à un modèle de couche de manière à vérifier que le code source est conforme aux dépendances sur un diagramme de couche. Il existe un algorithme de validation standard, mais vous pouvez définir vos propres extensions de validation.  
   
  Quand l’utilisateur sélectionne la commande **Valider l’architecture** sur un diagramme de couche, la méthode de validation standard est appelée, suivie de toutes les extensions de validation installées.  
@@ -65,7 +63,7 @@ Dans Visual Studio, les utilisateurs peuvent valider le code source dans un proj
     > [!NOTE]
     >  Votre méthode est appelée uniquement dans des circonstances spécifiques et les points d’arrêt ne fonctionnent pas automatiquement. Pour plus d’informations, consultez [Débogage de la validation de couche](#debugging).  
   
-5.  Pour installer l’extension dans l’instance principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou sur un autre ordinateur, recherchez le **.vsix** fichier **bin\\\***. Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer, puis double-cliquez dessus. Pour le désinstaller, utilisez **Extensions et mises à jour** dans le menu **Outils** .  
+5.  Pour installer l’extension dans l’instance principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou sur un autre ordinateur, recherchez le fichier **.vsix** dans **bin\\\***. Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer, puis double-cliquez dessus. Pour le désinstaller, utilisez **Extensions et mises à jour** dans le menu **Outils** .  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Ajout d’un validateur de couche à une extension VSIX séparée  
  Si vous souhaitez créer une extension VSIX qui contient des validateurs de couche, des commandes et d’autres extensions, nous vous recommandons de créer un projet pour définir l’extension VSIX et des projets séparés pour les gestionnaires. Pour plus d’informations sur les autres types d’extensions de modélisation, consultez [modèles et diagrammes UML étendre](../modeling/extend-uml-models-and-diagrams.md).  
@@ -122,7 +120,7 @@ Dans Visual Studio, les utilisateurs peuvent valider le code source dans un proj
     > [!NOTE]
     >  Votre méthode est appelée uniquement dans des circonstances spécifiques et les points d’arrêt ne fonctionnent pas automatiquement. Pour plus d’informations, consultez [Débogage de la validation de couche](#debugging).  
   
-8.  Pour installer l’extension VSIX dans l’instance principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou sur un autre ordinateur, recherchez le **.vsix** de fichiers dans le **bin** répertoire du projet VSIX. Copiez-le sur l’ordinateur sur lequel vous souhaitez installer l’extension VSIX. Double-cliquez sur le fichier VSIX dans l’Explorateur Windows. (Explorateur de fichiers dans Windows 8).  
+8.  Pour installer l’extension VSIX dans l’instance principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou sur un autre ordinateur, recherchez le fichier **.vsix** dans le répertoire **bin** du projet VSIX. Copiez-le sur l’ordinateur sur lequel vous souhaitez installer l’extension VSIX. Double-cliquez sur le fichier VSIX dans l’Explorateur Windows. (Explorateur de fichiers dans Windows 8).  
   
      Pour le désinstaller, utilisez **Extensions et mises à jour** dans le menu **Outils** .  
   
@@ -215,12 +213,12 @@ Dans Visual Studio, les utilisateurs peuvent valider le code source dans un proj
   
  Pour attacher le débogueur au processus de validation, insérez un appel à `System.Diagnostics.Debugger.Launch()` au début de votre méthode de validation. Quand la boîte de dialogue de débogage s'affiche, sélectionnez l'instance principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- Vous pouvez également insérer un appel à `System.Windows.Forms.MessageBox.Show()`. Quand la boîte de message s’affiche, accédez à l’instance principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] puis, dans le **déboguer** menu, cliquez sur **attacher au processus**. Sélectionnez le processus nommé **Graphcmd.exe**.  
+ Vous pouvez également insérer un appel à `System.Windows.Forms.MessageBox.Show()`. Quand la boîte de message s’affiche, accédez à l’instance principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et, dans le menu **Déboguer** , cliquez sur **Attacher au processus**. Sélectionnez le processus nommé **Graphcmd.exe**.  
   
  Démarrez toujours l’instance expérimentale en appuyant sur Ctrl+F5 (**Exécuter sans débogage**).  
   
 ### <a name="deploying-a-validation-extension"></a>Déploiement d’une extension de validation  
- Pour installer votre extension de validation sur un ordinateur sur lequel une version appropriée de Visual Studio est installée, ouvrez le fichier VSIX sur l’ordinateur cible. Pour l'installer sur un ordinateur sur lequel [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] est installé, vous devez extraire manuellement le contenu du VSIX dans un dossier Extensions. Pour plus d’informations, consultez [déployer une extension de modèle de couche](../modeling/deploy-a-layer-model-extension.md).  
+ Pour installer votre extension de validation sur un ordinateur sur lequel une version appropriée de Visual Studio est installée, ouvrez le fichier VSIX sur l’ordinateur cible. Pour l’installer sur un ordinateur sur lequel [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] est installé, vous devez extraire manuellement le contenu du fichier VSIX dans un dossier Extensions. Pour plus d’informations, consultez [déployer une extension de modèle de couche](../modeling/deploy-a-layer-model-extension.md).  
   
 ##  <a name="example"></a> Example code  
   

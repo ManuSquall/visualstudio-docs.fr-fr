@@ -1,7 +1,7 @@
 ---
 title: 'Comment : afficher des connexes à des données dans un Windows Forms Application | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,12 +28,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: fc62789860cc10f5c410849936715a8ef82eae3f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3fd7a29e1de66a5b5fd57dab1adbcf99128001ac
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506922"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215460"
 ---
 # <a name="how-to-display-related-data-in-a-windows-forms-application"></a>Comment : afficher des données connexes dans une application Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

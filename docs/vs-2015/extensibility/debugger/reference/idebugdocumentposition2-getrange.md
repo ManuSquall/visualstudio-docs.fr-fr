@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentPosition2::GetRange | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 91a06ee7-253a-4215-be22-04bf57305aa8
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 654767613b48bc0c885da3af6a494661beddc5c4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ec8033979fa65738826a6591329416bb16bfe77
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493274"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188030"
 ---
 # <a name="idebugdocumentposition2getrange"></a>IDebugDocumentPosition2::GetRange
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDebugDocumentPosition2::GetRange](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugdocumentposition2-getrange).  
-  
 Obtient la plage de cette position du document.  
   
 ## <a name="syntax"></a>Syntaxe  

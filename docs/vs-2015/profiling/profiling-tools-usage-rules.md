@@ -1,7 +1,7 @@
 ---
 title: Règles d’utilisation des outils de profilage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6d508fdfe1845a75f0ef7e0ba36730afbaa4e157
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fb1d25dd17ab00755de56a8b75fc3d6cead13e19
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506651"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198805"
 ---
-# <a name="profiling-tools-usage-rules"></a>Règles d'utilisation des outils de profilage
+# <a name="profiling-tools-usage-rules"></a>Règles d’utilisation des outils de profilage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [règles l’utilisation des outils de profilage](https://docs.microsoft.com/visualstudio/profiling/profiling-tools-usage-rules).  
-  
 Les règles de performance de la catégorie d’utilisation des outils de profilage fournissent des conseils sur l’utilisation du profileur pour collecter des données de manière plus efficace.  
   
 |||  

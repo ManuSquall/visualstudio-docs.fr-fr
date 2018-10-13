@@ -1,7 +1,7 @@
 ---
 title: 'Diagrammes de composants UML : Référence | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 38
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f628ebfa84246c6d991543352f4de36a51cc7fbf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b99188aa069a830d17e31733ad20b0ae727d63f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507268"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206737"
 ---
 # <a name="uml-component-diagrams-reference"></a>Diagrammes de composants UML : référence
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [diagrammes de composants UML : référence](https://docs.microsoft.com/visualstudio/modeling/uml-component-diagrams-reference).  
-  
 Dans Visual Studio, un *diagramme de composant* montre les parties d’une conception pour un système logiciel. Un diagramme de composant vous aide à visualiser la structure globale du système et le comportement de service que ces parties fournissent et consomment via des interfaces. Pour créer un diagramme de composant UML, dans le **Architecture** menu, cliquez sur **nouveau UML ou diagramme de couche**.  
   
  Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

@@ -1,7 +1,7 @@
 ---
 title: Tâche MIDL | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d496bba38b9b0dbf1c5346bda928f491ce697edf
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 345cd480cd5e34a6fe4650c9321d3ad9f90db01e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590749"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215785"
 ---
 # <a name="midl-task"></a>Tâche MIDL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [tâche MIDL](https://docs.microsoft.com/visualstudio/msbuild/midl-task).  
-  
   
 Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), midl.exe. Pour plus d’informations, consultez « MIDL Command-Line Reference (Informations de référence sur les lignes de commande MIDL) » sur le site web [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
@@ -68,7 +66,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **ApplicationConfigurationMode**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, vous permet d’utiliser certains mots clés ACF dans le fichier IDL.  
   
@@ -132,7 +130,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **ErrorCheckAllocations**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, vérifie les erreurs de mémoire insuffisante.  
   
@@ -140,7 +138,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **ErrorCheckBounds**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, vérifie la taille des tableaux ouverts et variables par rapport aux spécifications de durée de transmission.  
   
@@ -148,7 +146,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **ErrorCheckEnumRange**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, vérifie que les valeurs enum sont comprises dans une plage autorisée.  
   
@@ -156,7 +154,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **ErrorCheckRefPointers**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, vérifie qu’aucun pointeur de référence null n’a été transmis à des stubs clients.  
   
@@ -164,7 +162,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **ErrorCheckStubData**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, génère un stub qui intercepte les exceptions d’unmarshaling côté serveur et les propage de nouveau vers le client.  
   
@@ -202,7 +200,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **GenerateStublessProxies**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, génère des stubs entièrement interprétés avec des proxies sans stub pour les interfaces objet.  
   
@@ -210,7 +208,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **GenerateTypeLibrary**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, aucun fichier bibliothèque de types (.tlb) n’est généré.  
   
@@ -226,7 +224,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **IgnoreStandardIncludePath**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, la tâche MIDL effectue des recherches uniquement dans les répertoires spécifiés à l’aide du commutateur **AdditionalIncludeDirectories**, et ignore le répertoire actuel ainsi que les répertoires spécifiés par la variable d’environnement INCLUDE.  
   
@@ -250,7 +248,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **MkTypLibCompatible**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, requiert que le format du fichier d’entrée soit compatible avec mktyplib.exe, version 2.03.  
   
@@ -322,7 +320,7 @@ Encapsule l’outil Compilateur MIDL (Microsoft Interface Definition Language), 
   
 -   **SuppressCompilerWarnings**  
   
-     Paramètre **booléen** facultatif.  
+     Paramètre **Boolean** facultatif.  
   
      Si `true`, supprime les messages d’avertissement de la tâche MIDL.  
   

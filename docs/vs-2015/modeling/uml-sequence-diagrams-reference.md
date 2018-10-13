@@ -1,7 +1,7 @@
 ---
 title: 'Diagrammes de séquence UML : Référence | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 43
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 94ae423e74e0d78389a196adf1185ebdfa062069
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ebadcc72e346aac26b227ff069e20ffd81a601e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508548"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195128"
 ---
 # <a name="uml-sequence-diagrams-reference"></a>Diagrammes de séquence UML : référence
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [diagrammes de séquence UML : référence](https://docs.microsoft.com/visualstudio/modeling/uml-sequence-diagrams-reference).  
-  
 Dans Visual Studio, un *diagramme de séquence* montre une interaction, qui représente la séquence de messages entre des instances de classes, les composants, les sous-systèmes ou acteurs. Le diagramme suit une chronologie de haut en bas et il montre le flux de contrôle d'un participant à un autre. Utilisez des diagrammes de séquence pour visualiser des instances et des événements, plutôt que des classes et des méthodes. Plusieurs instances du même type peuvent apparaître dans le diagramme. Plusieurs occurrences du même message peuvent également apparaître.  
   
  Les diagrammes de séquence UML font partie d'un modèle UML et ils existent uniquement dans des projets de modélisation UML. Pour créer un diagramme de séquence UML, dans le **Architecture** menu, cliquez sur **nouveau UML ou diagramme de couche**. Découvrez comment créer et dessiner [diagrammes de séquence UML](../modeling/uml-sequence-diagrams-guidelines.md) ou [diagrammes de modélisation UML](../modeling/edit-uml-models-and-diagrams.md) en général.  

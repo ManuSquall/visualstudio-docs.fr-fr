@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_hasAssignmentOperator | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f449818322516002f0000b3a3b4a20b11b4bd806
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 86fc443825bf26830988544885a314cdeec0cb3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502838"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216058"
 ---
 # <a name="idiasymbolgethasassignmentoperator"></a>IDiaSymbol::get_hasAssignmentOperator
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDiaSymbol::get_hasAssignmentOperator](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-hasassignmentoperator).  
-  
 Récupère un indicateur qui spécifie si le type de données défini par l’utilisateur a des opérateurs d’assignation définies.  
   
 ## <a name="syntax"></a>Syntaxe  

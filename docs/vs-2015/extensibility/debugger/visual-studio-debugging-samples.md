@@ -1,7 +1,7 @@
 ---
 title: Exemples de débogage Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: fbcc42a7-7851-487f-b981-8c4ae7ec7347
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 591bcb7808ed7429a3b663f7d18adf50a6c753b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 64b5c47c769901455b02d6b08f859562846a0c0c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494236"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183207"
 ---
 # <a name="visual-studio-debugging-samples"></a>Exemples de débogage Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [exemples de débogage de Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/debugger/visual-studio-debugging-samples).  
-  
 Deux exemples montrent comment étendre le débogueur Visual Studio à l’aide de [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   
 -   L’exemple d’évaluateur d’Expression de débogueur, pour les langages managés, est inclus dans le [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. Dans le [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] fenêtre, cliquez sur le **exemples** , cliquez sur **tous les** ou **c#** dans la liste des langues, puis cliquez sur **débogueur**.  

@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : Connexion aux données dans un fichier de base de données locale (Windows Forms) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,12 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 9b2d17c5ed86e37d3c674ef9238702cd8557a90f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 71898c88a8d7a1d4a119a7e7a932e295ae12eb34
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506664"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176161"
 ---
 # <a name="walkthrough-connecting-to-data-in-a-local-database-file-windows-forms"></a>Procédure pas à pas : connexion à des données dans un fichier de base de données local (Windows Forms)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

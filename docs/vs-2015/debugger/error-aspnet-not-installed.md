@@ -1,7 +1,7 @@
 ---
 title: 'Erreur : ASP.NET ne pas installé | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0617f5200a69809afc86fe9405dc3ea9bd8fcda0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 35268c6867c5438f2f3d0c4c4f9e649451a21991
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504278"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220972"
 ---
 # <a name="error-aspnet-not-installed"></a>Erreur : ASP.NET n'est pas installé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [erreur : ASP.NET pas installé](https://docs.microsoft.com/visualstudio/debugger/error-aspnet-not-installed).  
-  
 Cette erreur se produit quand [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] n'est pas installé correctement sur l'ordinateur que vous tentez de déboguer. Cela peut signifier qu'[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] n'a jamais été installé ou qu'[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] a été installé avant les services IIS (Internet Information Services).  
   
 ### <a name="to-reinstall-aspnet"></a>Pour réinstaller ASP.NET  

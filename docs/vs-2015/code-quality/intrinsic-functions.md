@@ -1,7 +1,7 @@
 ---
 title: Fonctions intrinsèques | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 9
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a391bc1f5208b47ffb1aca51dbbd40b5b15fb04d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b50742c0176b8c880d3ed0b58b7b8ef76355777
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507225"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174484"
 ---
 # <a name="intrinsic-functions"></a>Fonctions intrinsèques
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [fonctions intrinsèques](https://docs.microsoft.com/visualstudio/code-quality/intrinsic-functions).  
-  
 Une expression dans SAL peut être une expression C/C++ condition qu’il soit une expression qui n’a pas d’effets secondaires, par exemple, ++,--et les appels de fonction tous avoir des effets secondaires dans ce contexte.  Toutefois, SAL fournit certains objets de type fonction et certains symboles réservés qui peuvent être utilisées dans les expressions de SAL. Ils sont désignés comme *fonctions intrinsèques*.  
   
 ## <a name="general-purpose"></a>Usage général  
@@ -44,7 +42,7 @@ Une expression dans SAL peut être une expression C/C++ condition qu’il soit u
 |`_Inexpressible_(expr)`|Exprime une situation où la taille d’une mémoire tampon est trop complexe pour représenter à l’aide d’une expression d’annotation, par exemple, quand elle est calculée en analysant un jeu de données d’entrée et de puis comptage des membres sélectionnés.|  
 |`_Nullterm_length_(param)`|`param` est le nombre d’éléments dans la mémoire tampon jusqu'à mais ne pas y compris une marque de fin null. Il peut être appliqué à une mémoire tampon de type non agrégé, non void.|  
 |`_Old_(expr)`|Lorsqu’elle est évaluée de la précondition, `_Old_` retourne la valeur d’entrée `expr`.  Lorsqu’elle est évaluée dans la condition préalable, il retourne la valeur `expr` telle qu’elle est évaluée dans la condition préalable.|  
-|`_Param_(n)`|Le `n`ième paramètre à une fonction, en partant de 1 à `n`, et `n` est une constante intégrale littéral. Si le paramètre est nommé, cette annotation est identique à accéder à la paramètre par nom. **Remarque :** `n` peuvent faire référence aux paramètres positionnels sont définies par les points de suspension, ou peuvent être utilisés dans les prototypes de fonction où les noms ne sont pas utilisés.  |  
+|`_Param_(n)`|Le `n`ième paramètre à une fonction, en partant de 1 à `n`, et `n` est une constante intégrale littéral. Si le paramètre est nommé, cette annotation est identique à accéder à la paramètre par nom. **Remarque :** `n` peuvent faire référence aux paramètres positionnels sont définies par les points de suspension, ou peuvent être utilisés dans les prototypes de fonction où les noms ne sont pas utilisés.|  
 |`return`|Le C/C++ de mot clé réservé `return` peut être utilisé pour indiquer la valeur de retour d’une fonction dans une expression de SAL.  La valeur est disponible uniquement dans l’état de la publication ; Il est une erreur de syntaxe à utiliser dans un état antérieur.|  
   
 ## <a name="string-specific"></a>Chaîne spécifique  

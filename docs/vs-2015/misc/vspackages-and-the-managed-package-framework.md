@@ -1,7 +1,7 @@
 ---
 title: VSPackages et infrastructure de Package gérée | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e8d80e0f-6b5b-4baf-a7df-59fd808c60cd
 caps.latest.revision: 16
 manager: douge
-ms.openlocfilehash: 41eb5cc816616ca2d99b68eb73fedbd527778274
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2e265a342ec32abea40ab9b352b5735079462a46
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494922"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227979"
 ---
 # <a name="vspackages-and-the-managed-package-framework"></a>VSPackages et infrastructure de package gérée
 Vous pouvez réduire le temps de développement en créant un VSPackage avec le package géré classes framework (MPF) au lieu d’à l’aide des classes COM interop.  

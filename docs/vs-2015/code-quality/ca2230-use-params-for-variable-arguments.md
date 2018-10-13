@@ -1,7 +1,7 @@
 ---
 title: 'CA2230 : Utilisez params pour les arguments de variables | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 67788eb84e52e966cbd36311c2f329d5f57331e0
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: b591ca9ba3ad56fec5dde1a8df11d7cc4abcecf4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588063"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193620"
 ---
 # <a name="ca2230-use-params-for-variable-arguments"></a>CA2230 : Utilisez le mot clé params pour les arguments de variables
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Vous trouverez la dernière version de cette rubrique dans [CA2230 : utilisez params pour les arguments de variables](https://docs.microsoft.com/visualstudio/code-quality/ca2230-use-params-for-variable-arguments).
-
 |||
 |-|-|
 |TypeName|UseParamsForVariableArguments|

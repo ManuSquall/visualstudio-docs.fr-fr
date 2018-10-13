@@ -1,7 +1,7 @@
 ---
 title: 'Comment : créer et exécuter une Installation sans assistance de Visual Studio | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,17 +17,17 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3604c43dc3a406c303b3b056fe3b155efe182e77
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d4f460d39d01f231cea03bf6bc81b927528844e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506126"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173847"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Comment : créer et exécuter une installation sans assistance de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez exécuter l'application d'installation pour [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] comme installation sans assistance via un intranet plutôt qu'à partir de supports tels que les DVD. Cette rubrique décrit comment préparer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour ce type d’installation à partir d’un partage réseau.  
+Vous pouvez exécuter l’application d’installation pour [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] comme installation sans assistance via un intranet plutôt qu’à partir de supports tels que les DVD. Cette rubrique décrit comment préparer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour ce type d’installation à partir d’un partage réseau.  
   
 ## <a name="creating-a-network-image"></a>Création d’une image réseau  
  Tout d'abord, créez une image réseau du support [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -60,13 +60,13 @@ Vous pouvez exécuter l'application d'installation pour [!INCLUDE[vsprvs](../inc
 >  Une autre façon de procéder consiste à simplement omettre les enfants facultatifs d’un parent (en d’autres termes, vous excluez les éléments « Selected="no" »), mais vous devez quand même placer tous les éléments « Selected="yes" » à la fin du fichier AdminDeployment.xml.  
   
 > [!IMPORTANT]
->  Pendant l’installation, l’ordinateur peut redémarrer automatiquement une ou plusieurs fois. Après qu’il a redémarré, vous devez vous reconnecter avec le même compte d’utilisateur que celui avec lequel vous étiez connecté pour effectuer l’installation avant le redémarrage de l’ordinateur. Vous pouvez éviter les redémarrages automatiques en installant les composants requis avant d’exécuter une installation sans assistance. Pour plus d’informations, consultez la section intitulée « Éviter le redémarrage pendant l’installation » dans le [Visual Studio Administrator Guide](../install/visual-studio-administrator-guide.md).  
+>  Pendant l’installation, l’ordinateur peut redémarrer automatiquement une ou plusieurs fois. Après qu’il a redémarré, vous devez vous reconnecter avec le même compte d’utilisateur que celui avec lequel vous étiez connecté pour effectuer l’installation avant le redémarrage de l’ordinateur. Vous pouvez éviter les redémarrages automatiques en installant les composants requis avant d’exécuter une installation sans assistance. Pour plus d’informations, consultez la section intitulée « Éviter le redémarrage lors de l’installation » dans le [Visual Studio Administrator Guide](../install/visual-studio-administrator-guide.md).  
   
  Le schéma de fichier AdminDeployment contient les éléments suivants :  
   
 |Élément|Attribut|Valeurs|Description|  
 |-------------|---------------|------------|-----------------|  
-|BundleCustomizations|TargetDir|*Chemin*|Identique au remplacement du chemin d’accès dans l’interface utilisateur de l’application d’installation. Cet élément est ignoré si Visual Studio est déjà installé.|  
+|BundleCustomizations|TargetDir|*Chemin d’accès*|Identique au remplacement du chemin d’accès dans l’interface utilisateur de l’application d’installation. Cet élément est ignoré si Visual Studio est déjà installé.|  
 |BundleCustomizations|NoWeb|Oui&#124;par défaut|Si la valeur de cet élément est Oui, l’application d’installation ne tente jamais d’accéder au web lors de l’action d’installation.|  
 |SelectableItemCustomization|Hidden|Oui&#124;non|Si la valeur de cet élément est Oui, masque un élément sélectionnable dans l’arborescence de la personnalisation.|  
 |SelectableItemCustomization|Selected|Oui&#124;non|Active ou désactive un élément sélectionnable dans l’arborescence de la personnalisation.|  
@@ -111,7 +111,7 @@ Vous pouvez exécuter l'application d'installation pour [!INCLUDE[vsprvs](../inc
   
 -   Ouvrez le **Panneau de configuration**, puis choisissez **Programmes et fonctionnalités**.  
   
--   Choisissez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puis choisissez **modification**.  
+-   Choisissez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puis choisissez **Modifier**.  
   
 #### <a name="to-change-admindeployment-settings-on-a-client-computer-after-visual-studio-has-been-installed"></a>Pour modifier les paramètres d’AdminDeployment sur un ordinateur client après l’installation de Visual Studio  
   
@@ -170,7 +170,7 @@ Vous pouvez exécuter l'application d'installation pour [!INCLUDE[vsprvs](../inc
         4.  La dernière mise à jour doit apparaître sur la page de fonctionnalités. Sélectionnez les autres fonctionnalités que vous souhaitez installer, cliquez sur **suivant**, puis cliquez sur **mettre à jour** pour installer la mise à jour et les nouvelles fonctionnalités.  
   
 ## <a name="registering-the-product"></a>Inscription du produit  
- Une fois l'installation terminée, vous pouvez enregistrer votre copie de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] depuis [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+ Une fois l’installation terminée, vous pouvez enregistrer votre copie de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] depuis [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 #### <a name="to-register"></a>Pour inscrire  
   

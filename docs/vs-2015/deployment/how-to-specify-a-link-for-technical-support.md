@@ -1,7 +1,7 @@
 ---
 title: 'Comment : spécifier un lien pour le Support technique | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 333e9729012c24f93c6b3cefef3903e47af45ae6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a2a772122851bb48e5cb5f0cf388110df8e5b371
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506673"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196142"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>Comment : spécifier un lien pour le support technique
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : spécifier un lien pour le Support technique](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-a-link-for-technical-support).  
-  
 Lorsque vous publiez un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application, le **URL du support technique** propriété identifie une page Web ou un partage de fichiers où les utilisateurs peuvent accéder à obtenir des informations sur l’application. Cette propriété est facultative. s’il est fourni, l’URL s’affichera dans l’entrée de l’application **Ajout / Suppression de programmes** boîte de dialogue.  
   
  Le **URL du support technique** propriété peut être définie sur le **publier** page de la **Concepteur de projet**.  

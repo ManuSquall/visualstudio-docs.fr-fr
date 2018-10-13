@@ -1,7 +1,7 @@
 ---
 title: Tri, filtrage et regroupement (Explorateur de schémas XML) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9cb8086e894130fa20f8c270c9dafe6b302c989c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 49bd65d0ca9be83665f5f364f5e1f2115279cf5c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505620"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229734"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Tri, filtrage et regroupement (Explorateur de schémas XML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [tri, filtrage et regroupement (Explorateur de schémas XML)](https://docs.microsoft.com/visualstudio/xml-tools/sorting-filtering-and-grouping-xml-schema-explorer).  
-  
   
 Cette rubrique décrit les options qui sont disponibles via le **tri, filtrage et regroupement Options** menu sur la barre d’outils Explorateur de schémas XML.  
   

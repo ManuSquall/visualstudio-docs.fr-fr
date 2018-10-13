@@ -1,7 +1,7 @@
 ---
 title: 'Comment : fournir la prise en charge de texte masqué dans un Service de langage hérité | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 1c1dce9f-bbe2-4fc3-a736-5f78a237f4cc
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b689bdfff45f12bc85f79b3cba8581e728c89728
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8d5a29cf2d36653ecad83524f14ad38d8f7d2c7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501476"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206724"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Comment : fournir la prise en charge de texte masqué dans un Service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : fournir masqué texte prise en charge dans un Service de langage hérité](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service).  
-  
 Vous pouvez créer des zones de texte masqué en plus de régions en mode plan. Zones de texte masqué peuvent être contrôlé par le client ou contrôlée par l’éditeur et sont utilisés pour masquer une zone de texte complètement. L’éditeur affiche une zone masquée en tant que lignes horizontales. Un exemple de ceci est le mode Script uniquement dans l’éditeur HTML.  
   
 ## <a name="procedure"></a>Procédure  

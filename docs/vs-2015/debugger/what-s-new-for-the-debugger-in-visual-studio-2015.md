@@ -1,7 +1,7 @@
 ---
 title: Quelles sont les nouveautés du débogueur dans Visual Studio 2015 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 86
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b7a854e872a7739054379b1f6d01794f142f448
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 743875ef4ab7582bd4c1a254c82f168b96ba8208
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "47590911"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188615"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2015"></a>Nouveautés du débogueur dans Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [quelles sont les nouveautés du débogueur](https://docs.microsoft.com/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio).  
-  
 Pour plus d’informations sur toutes les nouveautés en matière de débogage et de diagnostics dans Visual Studio 2015, consultez les [Notes de publication de Visual Studio 2015 Update 1](https://www.visualstudio.com/news/vs2015-update1-vs#debug).  
   
  Pour plus d’informations sur toutes les nouveautés en matière de débogage et de diagnostics dans Visual Studio 2015 RTM, consultez les [Notes de publication de Visual Studio 2015](https://www.visualstudio.com/news/vs2015-vs#debug).  
@@ -43,7 +41,7 @@ Pour plus d’informations sur toutes les nouveautés en matière de débogage e
 ## <a name="visual-studio-2015-update-1-changes"></a>Modifications apportées à Visual Studio 2015 Update 1  
  La fonctionnalité C++ Modifier & Continuer offre davantage de fonctionnalités. Pour plus d’informations, consultez [Modifier & Continuer (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
   
- Pour déboguer les violations d’accès Visual C++, une nouvelle boîte de dialogue d’exception spécifie le pointeur à l’origine de l’exception. Pour plus d’informations, consultez [comment puis-je déboguer une Violation d’accès ?](../debugger/how-can-i-debug-an-access-violation-q.md) et [Improvement to Debugging C++ Access Violations in Visual Studio 2015 Update 1](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/29/improvement-to-debugging-c-access-violations-in-visual-studio-2015-update-1.aspx)  
+ Pour déboguer les violations d’accès Visual C++, une nouvelle boîte de dialogue d’exception spécifie le pointeur à l’origine de l’exception. Pour plus d’informations, consultez [How Can I Debug an Access Violation?](../debugger/how-can-i-debug-an-access-violation-q.md) et [Improvement to Debugging C++ Access Violations in Visual Studio 2015 Update 1](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/29/improvement-to-debugging-c-access-violations-in-visual-studio-2015-update-1.aspx)  
   
 ## <a name="visual-studio-2015-rtm-debugger-ui-and-hotkey-changes"></a>Interface utilisateur du débogueur et changements de touches d’accès rapide dans Visual Studio 2015 RTM  
  Des modifications significatives ont été apportées à l’interface utilisateur relative aux exceptions et aux points d’arrêt.  

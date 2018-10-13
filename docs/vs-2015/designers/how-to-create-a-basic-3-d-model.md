@@ -1,7 +1,7 @@
 ---
 title: 'Comment : créer un modèle 3D de base | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bf8180f13328c198131ee3d5fca3884dcd20be2c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e61c86e553672ac619f71a27f8a651b417700c8f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495325"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224781"
 ---
-# <a name="how-to-create-a-basic-3-d-model"></a>Procédure : créer un modèle 3D de base
+# <a name="how-to-create-a-basic-3-d-model"></a>Procédure : créer un modèle 3D de base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : créer un modèle 3D de base](https://docs.microsoft.com/visualstudio/designers/how-to-create-a-basic-3-d-model).  
-  
 Ce document montre comment utiliser l'éditeur de modèle pour créer un modèle 3D de base.  
   
  Ce document illustre ces activités :  
