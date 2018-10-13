@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : liaison aux données dans le concepteur XAML | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24c3d4cc0f2807a1aaeedb44e5004465869d2210
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 597145da912c8d80508b67f4ff47c901f5ccac1d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494787"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298764"
 ---
 # <a name="walkthrough-binding-to-data-in-xaml-designer"></a>Procédure pas à pas : liaison aux données dans le concepteur XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : liaison de données dans le concepteur XAML](https://docs.microsoft.com/visualstudio/designers/walkthrough-binding-to-data-in-xaml-designer).  
-  
 Dans le concepteur XAML, vous pouvez définir des propriétés de liaison de données à l’aide de la planche graphique et de la fenêtre Propriétés. L'exemple dans cette procédure pas à pas montre comment lier des données à un contrôle. Plus précisément, la procédure pas à pas montre comment créer une classe de panier d’achat simple dotée d’une propriété [DependencyProperty](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.dependencyproperty.aspx) nommée `ItemCount`, puis lier la propriété `ItemCount` à la propriété **Text** d’un contrôle [TextBlock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx).  
   
 ### <a name="to-create-a-class-to-use-as-a-data-source"></a>Pour créer une classe à utiliser comme source de données  

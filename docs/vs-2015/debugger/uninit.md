@@ -1,7 +1,7 @@
 ---
 title: UnInit | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4cd66d7329fa4bfc288f3d60879e45cc86ded94e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 485a00c5e05b04873cfdcbf10c428786408e3a72
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495956"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298101"
 ---
 # <a name="uninit"></a>UnInit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [UnInit](https://docs.microsoft.com/visualstudio/debugger/graphics/uninit).  
-  
 Finalise le fichier journal de graphisme, il ferme et libère les ressources qui ont été utilisés pendant que l’application a été enregistre activement les informations graphiques.  
   
 ## <a name="syntax"></a>Syntaxe  

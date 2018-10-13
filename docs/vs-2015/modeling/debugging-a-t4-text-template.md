@@ -1,7 +1,7 @@
 ---
 title: Débogage d’un modèle de texte T4 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d04fe451a752c5132a376fd63091aeb6b1ee1f49
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f299b89f7f59cbfc043bb77e6e56c3e5fac22d16
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493178"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298907"
 ---
 # <a name="debugging-a-t4-text-template"></a>Débogage d'un modèle de texte T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [débogage d’un modèle de texte T4](https://docs.microsoft.com/visualstudio/modeling/debugging-a-t4-text-template).  
-  
 Vous pouvez définir des points d’arrêt dans les modèles de texte. Pour déboguer un modèle de texte au moment du design, enregistrez le fichier de modèle de texte, puis choisissez **déboguer le modèle T4** dans le menu contextuel du fichier dans l’Explorateur de solutions. Pour déboguer un modèle de texte de l’exécution, simplement déboguer l’application à laquelle il appartient.  
   
  Pour déboguer un modèle de texte, vous devez comprendre les étapes du processus de transformation du modèle. Différents types d’erreurs peuvent se produire au sein de chaque étape. Les étapes sont les suivantes.  

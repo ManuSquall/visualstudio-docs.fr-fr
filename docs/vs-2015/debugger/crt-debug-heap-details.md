@@ -1,7 +1,7 @@
 ---
 title: Détails du tas de débogage CRT | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -80,18 +80,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bffaf070bfd92be0611156df65f008bd06c1ec32
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a97054db575d1d92f2077efe46d89573fba02dfd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493714"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297729"
 ---
 # <a name="crt-debug-heap-details"></a>Détails du tas de débogage CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [CRT Debug Heap Details](https://docs.microsoft.com/visualstudio/debugger/crt-debug-heap-details).  
-  
 Cette rubrique présente en détail le tas de débogage CRT.  
   
 ##  <a name="BKMK_Contents"></a> Sommaire  
@@ -280,7 +278,7 @@ int main( )   {
 }  
 ```  
   
- La version Debug de l'opérateur `delete` fonctionne avec tous les types de bloc et ne nécessite aucune modification dans votre programme lorsque vous compilez une version Release.  
+ La version Debug de l’opérateur `delete` fonctionne avec tous les types de bloc et ne nécessite aucune modification dans votre programme lorsque vous compilez une version Release.  
   
  ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
