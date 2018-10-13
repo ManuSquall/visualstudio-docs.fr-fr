@@ -1,7 +1,7 @@
 ---
 title: Description du modèle de répertoire (. Fichiers VSDir) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b0d4281201c0aa7d699deb5c1d2d9ae1b183fd76
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 733f59b4498ccec80b1223c87e32de0fab2ded69
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508384"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201973"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Fichiers de description de répertoire de modèles (.Vsdir)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Description du modèle de répertoire (. Fichiers VSDir)](https://docs.microsoft.com/visualstudio/extensibility/internals/template-directory-description-dot-vsdir-files).  
-  
 Un fichier de description de répertoire de modèle (.vsdir) est un fichier texte qui permet à l’environnement de développement intégré (IDE) pour afficher les dossiers, les fichiers .vsz de l’Assistant et les fichiers de modèle qui sont associés à votre projet dans les boîtes de dialogue. Le contenu inclut un enregistrement par fichier ou dossier. Tous les fichiers .vsdir dans un emplacement référencé sont fusionnés, bien que .vsdir qu’un seul fichier est généralement fourni pour décrire plusieurs dossiers, les Assistants ou les fichiers de modèle.  
   
  Dossiers (les sous-répertoires), les fichiers qui sont référencés dans le fichier .vsdir et le fichier .vsdir lui-même se trouvent toutes dans le même répertoire. Lorsque l’IDE exécute un Assistant ou affiche un dossier ou un fichier dans le **nouveau projet** ou **ajouter un nouvel élément** boîtes de dialogue, l’IDE examine le répertoire qui contient les fichiers exécutées pour déterminer si un fichier .vsdir présent. Si un fichier .vsdir est trouvé, l’IDE lit pour déterminer s’il contient une entrée du fichier ou dossier exécuté ou affiché. Si une entrée est trouvée, l’IDE utilise les informations de l’exécution de l’Assistant ou d’affichage du contenu.  

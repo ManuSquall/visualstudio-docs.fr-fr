@@ -1,7 +1,7 @@
 ---
 title: Ajouter des icônes aux commandes de Menu | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 051fc6b33a04870f0d21e14ecbe0adc8fcd525be
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b264a6b03baf5b77796b329ef6dd05fa4614bad0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502219"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184513"
 ---
 # <a name="adding-icons-to-menu-commands"></a>Ajout d’icônes aux commandes de menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Ajout d’icônes aux commandes de Menu](https://docs.microsoft.com/visualstudio/extensibility/adding-icons-to-menu-commands).  
-  
 Commandes peuvent apparaître dans les menus et barres d’outils. Des barres d’outils, il est courant pour une commande à afficher avec une simple icône (pour économiser de l’espace) tout en les menus de qu'une commande apparaît généralement avec une icône et du texte.  
   
  Icônes sont de 16 pixels de large par 16 pixels de haut et peuvent être de couleurs 8 bits (256 couleurs) ou de profondeur de couleur 32 bits (couleurs vraies). icônes de couleur 32 bits sont préférables. Icônes sont généralement organisés en une seule ligne horizontale dans une seule bitmap, bien que plusieurs images bitmap sont autorisés. Cette image bitmap est déclarée dans le fichier .vsct, ainsi que des icônes disponibles dans l’image bitmap. Consultez la référence pour le [Bitmaps élément](../extensibility/bitmaps-element.md) pour plus d’informations.  

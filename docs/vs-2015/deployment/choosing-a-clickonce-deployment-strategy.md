@@ -1,7 +1,7 @@
 ---
 title: Choix d’une stratégie de déploiement ClickOnce | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 24eee31385ea2ef1c01924660e47e370fbed83f8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 54bf4f58a4cfe8622e12b3808ea9f36c8cf1ee49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494111"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175628"
 ---
 # <a name="choosing-a-clickonce-deployment-strategy"></a>Choix d'une stratégie de déploiement ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [choix d’une stratégie de déploiement ClickOnce](https://docs.microsoft.com/visualstudio/deployment/choosing-a-clickonce-deployment-strategy).  
-  
 Pour déployer une application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], trois stratégies sont possibles. Celle que vous choisissez dépend principalement du type d'application que vous déployez. Les trois stratégies de déploiement sont les suivantes :  
   
 -   Installation à partir du Web ou d'un partage réseau  

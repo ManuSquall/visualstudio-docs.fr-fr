@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour comparer des fichiers de données de performances | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0574c518342ea24ad2bd3aaf4fd3df9a4ee34a03
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a4860296945c623052efd6c5817215401210783
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508605"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190565"
 ---
 # <a name="how-to-compare-performance-data-files"></a>Guide pratique pour comparer des fichiers de données de performances
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : comparer des fichiers de données de performances](https://docs.microsoft.com/visualstudio/profiling/how-to-compare-performance-data-files).  
-  
 Vous pouvez comparer les résultats de deux fichiers de données du profileur (.vsp ou .vsps) en créant un rapport ou une vue de comparaison (« Différences »). Le rapport de comparaison montre les différences, les régressions de performances et les améliorations qui se sont produites d’une session de profilage à l’autre.  
   
  Le rapport Différences présente les données sous forme de tableau. Le tableau présente les données delta, c’est-à-dire ce qui a été modifié par rapport à la base de référence. Ces données sont calculées en déterminant la différence entre l’ancienne valeur, la valeur de base de référence et la valeur résultante de la nouvelle analyse.  

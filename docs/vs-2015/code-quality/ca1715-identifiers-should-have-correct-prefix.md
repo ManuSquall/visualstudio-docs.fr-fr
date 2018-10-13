@@ -1,7 +1,7 @@
 ---
 title: 'CA1715 : Les identificateurs doivent avoir un préfixe correct | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,12 +20,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ef0e457d583f727fcb7393feafac0069b947bac0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e0e3d1290f95872c176447fb834c09bef036e784
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505882"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205905"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715 : Les identificateurs doivent être dotés d'un préfixe correct
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

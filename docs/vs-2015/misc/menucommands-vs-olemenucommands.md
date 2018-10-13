@@ -1,7 +1,7 @@
 ---
 title: MenuCommands Vs. OleMenuCommands | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
 manager: douge
-ms.openlocfilehash: b60f56c0622750751848e0d6492c4235c9458e9f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c555b306c38d852f8fbd02c6f2b9347f4a359559
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494821"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193581"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands Vs. OleMenuCommands
 Vous pouvez créer des commandes de menu en dérivant de <xref:System.ComponentModel.Design.MenuCommand> ou de l’objet <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> et en implémentant les gestionnaires d’événements appropriés. Dans la plupart des cas, vous pouvez utiliser <xref:System.ComponentModel.Design.MenuCommand>, à l’instar du modèle de projet VSPackage, mais vous pouvez parfois être amené à utiliser <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
@@ -71,13 +71,13 @@ Vous pouvez créer des commandes de menu en dérivant de <xref:System.ComponentM
      
     1.  Définissez les champs `guid` et `id` de façon à les faire correspondre à la paire GUID:ID de la nouvelle commande.  
   
-    2.  Définissez l’attribut `priority` .  
+    2.  Définissez l’attribut `priority`.  
   
          L’attribut `priority` est utilisé par le fichier .vsct pour déterminer l’emplacement du bouton parmi les autres objets présents dans son groupe parent.  
   
          Les commandes qui ont des valeurs de priorité inférieure s’affichent au-dessus ou à gauche des commandes qui ont des valeurs de priorité plus élevées. Les valeurs de priorité en double sont autorisées, mais la position relative des commandes de même priorité est déterminée par l’ordre de traitement des VSPackages au moment de l’exécution, et cet ordre ne peut pas être prédéterminé.  
   
-         Si vous omettez l’attribut `priority` , la valeur 0 lui est affectée.  
+         Si vous omettez l’attribut `priority`, la valeur 0 lui est affectée.  
   
     3.  Définissez l’attribut `type` . Dans la plupart des cas, sa valeur est `"Button"`. Pour obtenir une description des autres types de boutons valides, consultez [Button Element](../extensibility/button-element.md).  
   
@@ -210,7 +210,7 @@ Vous pouvez créer des commandes de menu en dérivant de <xref:System.ComponentM
   
 1.  Retournez <xref:Microsoft.VisualStudio.VSConstants.S_OK> pour les commandes valides.  
   
-2.  Définissez l’élément `cmdf` du paramètre `prgCmds` .  
+2.  Définissez l’élément `cmdf` du paramètre `prgCmds`.  
   
      La valeur de l’élément `cmdf` est l’union logique des valeurs de l’énumération <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> , combinées à l’aide de l’opérateur logique OR (`|`).  
   
@@ -238,7 +238,7 @@ Vous pouvez créer des commandes de menu en dérivant de <xref:System.ComponentM
   
          `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXMENU`  
   
-    -   Si la commande utilise l’indicateur `TEXTCHANGES` , affectez à l’élément `rgwz` du paramètre `pCmdText` le nouveau texte de la commande et affectez à l’élément `cwActual` du paramètre `pCmdText` la taille de la chaîne de commande.  
+    -   Si la commande utilise l’indicateur `TEXTCHANGES`, affectez à l’élément `rgwz` du paramètre `pCmdText` le nouveau texte de la commande et affectez à l’élément `cwActual` du paramètre `pCmdText` la taille de la chaîne de commande.  
   
      Pour les conditions d’erreur, la méthode <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> doit gérer les cas d’erreur suivants :  
   

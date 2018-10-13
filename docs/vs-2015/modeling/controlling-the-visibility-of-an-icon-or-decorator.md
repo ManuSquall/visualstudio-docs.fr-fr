@@ -1,7 +1,7 @@
 ---
 title: Contrôle de la visibilité d’une icône ou d’élément décoratif | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9cc74f7ba8c71c2b8828ad19c4d6af80d6e8b8e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 299abef4d60b6bdc6fdf07cb8257034a6ee22d10
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492762"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207855"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Contrôle de la visibilité d'une icône ou d'un élément décoratif
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [contrôle de la visibilité d’une icône ou d’élément décoratif](https://docs.microsoft.com/visualstudio/modeling/controlling-the-visibility-of-an-icon-or-decorator).  
-  
 Un *decorator* est une icône ou une ligne de texte qui apparaît sur la forme d’un langage spécifique à un domaine (DSL). Vous pouvez afficher l’élément décoratif et disparaissent selon l’état des propriétés dans le modèle. Par exemple, sur une forme représentant une personne, vous pouvez avoir des icônes différentes qui s’affichent en fonction du sexe de la personne, nombre d’enfants et ainsi de suite.  
   
 ## <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Contrôle de la visibilité d’une icône ou d’élément décoratif  

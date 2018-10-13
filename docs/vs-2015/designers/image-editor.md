@@ -1,7 +1,7 @@
 ---
 title: Éditeur d’images | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 49149fcae2afa25c22132f23298d3dea6bccf60f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 748d58ec8446841242fdf7b5b990eebe90df5ba1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506807"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185768"
 ---
 # <a name="image-editor"></a>Éditeur d’images
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Éditeur d’images](https://docs.microsoft.com/visualstudio/designers/image-editor).  
-  
 Ce document décrit comment utiliser l’éditeur d’images de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour afficher et modifier des ressources de texture et d’image.  
   
  Vous pouvez utiliser l’éditeur d’images pour travailler avec les types de formats de texture et d’image enrichis qui sont utilisés dans le développement d’applications DirectX : ceci inclut la prise en charge des formats de fichiers et des codages des couleurs répandus, des fonctionnalités comme les canaux alpha et le mappage MIP, ainsi que de nombreux formats de texture fortement compressés et avec accélération matérielle pris en charge par DirectX.  

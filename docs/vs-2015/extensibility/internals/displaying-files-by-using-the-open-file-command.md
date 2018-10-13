@@ -1,7 +1,7 @@
 ---
 title: Afficher les fichiers à l’aide de la commande Ouvrir un fichier | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 139eb83f2260c44a3e0f8c50868d42aca8160694
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5d9b4198a2d88d7a3a71f07a393ed8e4e07df1e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507961"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177539"
 ---
 # <a name="displaying-files-by-using-the-open-file-command"></a>Affichage de fichiers à l’aide de la commande Ouvrir un fichier
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [affichage des fichiers à l’aide de la commande fichier ouvrir](https://docs.microsoft.com/visualstudio/extensibility/internals/displaying-files-by-using-the-open-file-command).  
-  
 Les étapes suivantes décrivent comment l’IDE gère le **ouvrir un fichier** commande, qui est disponible sur le **fichier** menu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Les étapes décrivent également la façon dont les projets doivent répondre aux appels issus de cette commande.  
   
  Lorsqu’un utilisateur clique sur le **ouvrir un fichier** commande sur le **fichier** menu et sélectionne un fichier à partir de la **ouvrir un fichier** boîte de dialogue, la processus suivante se produit.  

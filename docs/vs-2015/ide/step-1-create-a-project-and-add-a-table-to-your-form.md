@@ -1,7 +1,7 @@
 ---
 title: 'Étape 1 : créer un projet et ajouter une table au formulaire | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 02b87c7a2f7384b69c6037eb77090ba76a2481f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dade91d67418fcaf788ffbcea0c5a7764e4840a4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516620"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204462"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Étape 1 : créer un projet et ajouter une table au formulaire
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [étape 1 : créer un projet et ajouter une Table à votre formulaire](https://docs.microsoft.com/visualstudio/ide/step-1-create-a-project-and-add-a-table-to-your-form).  
-  
 La première étape pour créer un jeu de combinaisons consiste à créer le projet et à ajouter une table à votre formulaire. La table permet d'aligner les icônes dans une grille 4x4, de façon ordonnée. Vous définissez également plusieurs propriétés pour améliorer l'apparence de la grille de jeu.  
   
 ### <a name="to-create-a-project-and-add-a-table-to-your-form"></a>Pour créer un projet et ajouter une table à votre formulaire  

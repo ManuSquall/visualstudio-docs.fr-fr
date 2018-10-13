@@ -1,7 +1,7 @@
 ---
 title: 'Comment : créer des marqueurs de texte personnalisé | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0467c2516e0d4aab94c36245fd6c24d871ac03cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05c8e43d90837ec73f4d6674e35581eecc5d2e3e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502703"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181621"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Comment : créer des marqueurs de texte personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : créer des marqueurs de texte personnalisé](https://docs.microsoft.com/visualstudio/extensibility/how-to-create-custom-text-markers).  
-  
 Si vous souhaitez créer un marqueur de texte personnalisé pour mettre en évidence ou organiser le code, vous devez procédez comme suit :  
   
 -   Inscrire le nouveau marqueur de texte, afin que les autres outils puissent y accéder  

@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour configurer des tests unitaires et cibler une version antérieure du .NET Framework | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 051c6e9284ecfaa84957aa21b5966fd503a5f0a5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e0e608f58f19acf0d2ae01b288943f71f9983c6a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495183"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173106"
 ---
-# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Comment : configurer des tests unitaires pour cibler une version antérieure du .NET Framework
+# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Guide pratique pour configurer des tests unitaires et cibler une version antérieure du .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : configurer des Tests unitaires pour cible une Version antérieure du .NET Framework](https://docs.microsoft.com/visualstudio/test/how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework).  
-  
 Quand vous créez un projet de test dans Microsoft Visual Studio, la version la plus récente du .NET Framework est définie en tant que cible, par défaut. De plus, si vous mettez à niveau des projets de test à partir de versions antérieures de Visual Studio, ceux-ci sont mis à niveau pour cibler la version la plus récente du .NET Framework. En modifiant les propriétés du projet, vous pouvez recibler explicitement le projet vers des versions antérieures du .NET Framework.  
   
  Vous pouvez créer des projets de test unitaire qui ciblent des versions spécifiques du .NET Framework. La version ciblée doit correspondre à la version 3.5 (ou une version ultérieure) et ne peut pas être une version client. Visual Studio assure la prise en charge de base suivante pour les tests unitaires qui ciblent des versions spécifiques :  

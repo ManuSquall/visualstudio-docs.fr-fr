@@ -1,7 +1,7 @@
 ---
 title: ClickOnce et paramètres d’Application | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 2aa565721bc934fb78a7b183b0e4b4b637bafaf8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29f51960ad953318c8d9de749f28f684128e52ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503165"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176978"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce et paramètres d'application
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [ClickOnce et paramètres d’Application](https://docs.microsoft.com/visualstudio/deployment/clickonce-and-application-settings).  
-  
 Paramètres d’application pour Windows Forms rend plus facile à créer, stocker et gérer des applications personnalisées et préférences de l’utilisateur sur le client. Le document suivant explique le fonctionnement des fichiers de paramètres d’application dans une application ClickOnce, et comment ClickOnce migre les paramètres lorsque l’utilisateur met à niveau vers la prochaine version.  
   
  Les informations ci-dessous s’appliquent uniquement à un fournisseur de paramètres d’application par défaut, le <xref:System.Configuration.LocalFileSettingsProvider> classe. Si vous fournissez un fournisseur personnalisé, ce fournisseur détermine comment il stocke ses données et comment il met à niveau ses paramètres entre les versions. Pour plus d’informations sur les fournisseurs de paramètres d’application, consultez [Application Settings Architecture](http://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562).  
