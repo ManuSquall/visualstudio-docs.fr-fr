@@ -1,7 +1,7 @@
 ---
 title: '&lt;Package&gt; élément (programme d’amorçage) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 65523e419e10612a09324f9e33ac3ae147e94bbe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b605d891fac3dceae77eb9bd3a1c0707b3fd6650
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501653"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298673"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Package&gt; élément (programme d’amorçage)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [ &lt;Package&gt; élément (programme d’amorçage)](https://docs.microsoft.com/visualstudio/deployment/package-element-bootstrapper).  
-  
 Le `Package` élément est l’élément XML de niveau supérieur à l’intérieur d’un fichier de package.  
   
 ## <a name="syntax"></a>Syntaxe  

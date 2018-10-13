@@ -1,7 +1,7 @@
 ---
 title: 'Étape 3 : Assigner une icône aléatoire à chaque contrôle Label | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c5b906fbae93823c106dead99534979fe78bdcd7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ce8047cbdf6d487a1b4ff00ae99c617a9548fca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495704"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298777"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Étape 3 : Assigner une icône aléatoire à chaque contrôle Label
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [étape 3 : assigner une icône aléatoire à chaque contrôle Label](https://docs.microsoft.com/visualstudio/ide/step-3-assign-a-random-icon-to-each-label).  
-  
 Si les icônes se trouvent dans les mêmes cellules à chaque partie, le jeu ne sera pas intéressant. Pour éviter cela, affectez les icônes de façon aléatoire aux contrôles Label du formulaire en utilisant une méthode `AssignIconsToSquares()`.  
   
 ### <a name="to-assign-a-random-icon-to-each-label"></a>Pour assigner une icône aléatoire à chaque contrôle Label  

@@ -1,7 +1,7 @@
 ---
 title: Mettre à niveau les fichiers .mdf | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 773f88e34c111b44f92080c3117eb7e2e42dd70c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a684a4c07379021b9b5c625a20a3f715e572d8c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503027"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298114"
 ---
 # <a name="upgrade-mdf-files"></a>Mettre à jour des fichiers .mdf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [mettre à niveau les fichiers .mdf](https://docs.microsoft.com/visualstudio/data-tools/upgrade-dot-mdf-files).  
-  
   
 Cette rubrique décrit les options de mise à niveau de votre fichier de base de données (.mdf) après avoir installé une version plus récente de Visual Studio. Il inclut des instructions pour les tâches suivantes :  
   

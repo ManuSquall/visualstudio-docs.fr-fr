@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugBoundBreakpoints2::Skip | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 95659709-6d7c-44ca-b598-629eb688429f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ae0fa35671dd2b5375e2fe15d84154c7429ab1c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 65540a995b4ba5dee64486f77e236bba53d2dfec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507414"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298595"
 ---
 # <a name="ienumdebugboundbreakpoints2skip"></a>IEnumDebugBoundBreakpoints2::Skip
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IEnumDebugBoundBreakpoints2::Skip](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugboundbreakpoints2-skip).  
-  
 Ignore le nombre spécifié d’éléments.  
   
 ## <a name="syntax"></a>Syntaxe  
