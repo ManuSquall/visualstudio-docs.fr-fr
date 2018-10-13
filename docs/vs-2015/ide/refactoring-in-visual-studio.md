@@ -1,7 +1,7 @@
 ---
 title: Refactorisation dans Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c4af183871634a4008d48226b171383e8e87ae88
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e621d8bccdb8dceb1a6516ff0c070393962cea11
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493381"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303795"
 ---
 # <a name="refactoring-in-visual-studio"></a>Refactorisation dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [génération de Code dans Visual Studio](https://docs.microsoft.com/visualstudio/ide/code-generation-in-visual-studio).  
-  
 La refactorisation est le processus de modification du code pour le rendre plus facile à gérer, à comprendre et à étendre, mais sans changer son comportement. Certaines *refactorisations* courantes incluent les tâches suivantes :  
   
 1.  fractionnement des fonctions longues en fonctions plus petites ;  

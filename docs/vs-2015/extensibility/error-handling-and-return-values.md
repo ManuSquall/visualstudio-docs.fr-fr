@@ -1,7 +1,7 @@
 ---
 title: Gestion des erreurs et des valeurs de retour | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b2d9079d-39a6-438a-8010-290056694b5c
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b306918843f5acb1ed70f46e104116ffb0a012d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 315315e925eecd45b1c001531f5ebb6be207b2e7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495711"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306850"
 ---
 # <a name="error-handling-and-return-values"></a>Gestion des erreurs et valeurs de retour
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [gestion des erreurs et les valeurs de retour](https://docs.microsoft.com/visualstudio/extensibility/error-handling-and-return-values).  
-  
 VSPackages et COM utilisent la même architecture pour les erreurs. Le `SetErrorInfo` et `GetErrorInfo` fonctions font partie de l’interface de programmation d’application (API) Win32. Un VSPackage dans l’environnement de développement intégré (IDE) peut appeler ces global des API Win32 pour les informations d’erreur complètes enregistrement lors de la réception d’une notification d’erreur. Le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] fournit les assemblys PIA pour gérer les informations d’erreur.  
   
 ## <a name="interop-methods"></a>Méthodes d’interopérabilité  

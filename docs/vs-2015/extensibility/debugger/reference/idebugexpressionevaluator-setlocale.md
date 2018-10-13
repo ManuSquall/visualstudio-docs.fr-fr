@@ -1,7 +1,7 @@
 ---
 title: IDebugExpressionEvaluator::SetLocale | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d3d2027d-74e2-4ae6-bcc7-59d12f873b7c
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f4ab663e249f174570482307e5daa3156b89a5f2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 529af4156fc4d570c8bbbf3805534fa6dcd2d19c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493227"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306765"
 ---
 # <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDebugExpressionEvaluator::SetLocale](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugexpressionevaluator-setlocale).  
-  
 Cette méthode définit la langue à utiliser pour créer des résultats imprimables.  
   
 ## <a name="syntax"></a>Syntaxe  

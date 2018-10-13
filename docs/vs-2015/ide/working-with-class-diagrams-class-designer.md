@@ -1,7 +1,7 @@
 ---
 title: Utilisation des diagrammes de classes (Concepteur de classes) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cf7812d7d0047b71bac846e03ec15e7b3c92869f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8bf855566c24e91137d7aaeadeb2c65843eca9e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501769"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306707"
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Utilisation des diagrammes de classes (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [diagrammes de classes (Concepteur de classes)](https://docs.microsoft.com/visualstudio/ide/working-with-class-diagrams-class-designer).  
-  
 Les diagrammes de classes vous aident à comprendre la structure des classes des projets écrits par d'autres personnes (ou que vous avez écrits longtemps auparavant). Vous pouvez les utiliser pour personnaliser, partager et présenter des informations de projet.  
   
  La première étape de la présentation des informations de projet consiste à créer un diagramme de classes qui affiche ce que vous souhaitez montrer. Pour plus d’informations, consultez [Affichage des types et relations (Concepteur de classes)](../ide/viewing-types-and-relationships-class-designer.md). Vous pouvez créer plusieurs diagrammes de classes pour un projet, ce qui vous permet d'afficher une vue distincte du projet, une partie spécifique des types du projet ou une partie spécifique des membres de types.  

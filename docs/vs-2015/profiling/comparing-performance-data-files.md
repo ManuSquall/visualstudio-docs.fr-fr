@@ -1,7 +1,7 @@
 ---
 title: Comparaison des fichiers de données de performances | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd1c93942282c8a5cb3baf9fdf007a0ba55e3ebe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 65543b917a35ec50c3feadbfa4c8db917f4aeb78
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506517"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306161"
 ---
 # <a name="comparing-performance-data-files"></a>Comparaison des fichiers de données de performances
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [fichiers de données de performances de comparaison](https://docs.microsoft.com/visualstudio/profiling/comparing-performance-data-files).  
-  
 La fonctionnalité de comparaison de fichiers de données des outils de profilage permet de sélectionner deux fichiers de rapport (.VSP et/ou .VSP) et de générer un rapport montrant les différences, les régressions de performances et les améliorations qui se sont produites entre deux sessions de profilage.  
   
  Dans un rapport de comparaison de fichiers de données des outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], les résultats d’une analyse d’un fichier de données de profilage sont comparés aux résultats d’une analyse de base de référence d’un autre fichier de données. Les deux fichiers de données doivent avoir été générés à l’aide de la même méthode de profilage. Le rapport des comparaisons analysées est enregistré dans un fichier .vsps.  

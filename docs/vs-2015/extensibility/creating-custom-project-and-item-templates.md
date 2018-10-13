@@ -1,7 +1,7 @@
 ---
 title: Création de modèles de projets et modèles d’élément | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cd850cf73f9d7a9c443c374bd8a83e48c3470a31
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 3135702050caf1b1825c41eb909958a7ab5d8ffb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "47590906"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304627"
 ---
 # <a name="creating-custom-project-and-item-templates"></a>Création de modèles de projet et d’élément personnalisés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [création personnalisée de projet et modèles d’élément](https://docs.microsoft.com/visualstudio/extensibility/creating-custom-project-and-item-templates).  
-  
 Le SDK Visual Studio inclut des modèles de projet de créer un modèle de projet personnalisé et un modèle d’élément personnalisé. Ces modèles incluent des substitutions de paramètre commun et générer en tant que fichiers zip. Ils ne sont pas automatiquement déployés, et ils ne sont pas disponibles dans l’instance expérimentale. Vous devez copier le fichier zip de fichiers à l’emplacement vous  
   
  Les modèles de création de modèle vous permettent d’inclure des modèles dans des extensions plus volumineuses. Cela vous permet d’implémenter le contrôle de version dans les fichiers source et de créer un groupe de projets de modèle dans un package VSIX.  

@@ -1,7 +1,7 @@
 ---
 title: Vue Fonctions - Données d’instrumentation | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c99ac53b5059877a7025d978439a8c3468640eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 60238ee0fab8819d2b44ff68ba5122b7f65444ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506890"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306876"
 ---
 # <a name="functions-view---instrumentation-data"></a>Vue Fonctions - Données d’instrumentation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [mode fonctions - données d’Instrumentation](https://docs.microsoft.com/visualstudio/profiling/functions-view-instrumentation-data).  
-  
 La vue du rapport Fonctions répertorie les données de profilage par nom de fonction.  
   
 ## <a name="general"></a>Général  
