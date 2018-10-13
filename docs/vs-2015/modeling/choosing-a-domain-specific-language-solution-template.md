@@ -1,7 +1,7 @@
 ---
 title: Choix d’un modèle de Solution Domain-Specific Language | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cded93126f4e02aa5f0417819c7a76f17e0da6d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 618a26740759431ffe9de2b6ed5b51ffb32ea69e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506245"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268481"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Choix d'un modèle de solution de langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [choix d’un modèle de Solution de langage spécifique à un domaine](https://docs.microsoft.com/visualstudio/modeling/choosing-a-domain-specific-language-solution-template).  
-  
 Pour créer une solution de langage spécifique à un domaine, choisissez un des modèles de solution sont disponibles dans l’Assistant Concepteur de langage spécifique à un domaine. En choisissant le modèle qui ressemble le plus à la langue que vous souhaitez créer, vous pouvez limiter les modifications que vous avez à faire à la solution de départ.  
   
  Les modèles de solution suivants sont disponibles dans l’Assistant Concepteur de langage spécifique à un domaine.  

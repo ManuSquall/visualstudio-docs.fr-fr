@@ -1,7 +1,7 @@
 ---
 title: Débogage de projets DLL | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,25 +24,23 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13e124c4c9c24ad298c2528f2901d5aa1d52d54c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb1d8cf355aee56797b5c814341255cb47cf4f9b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503758"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267382"
 ---
 # <a name="debugging-dll-projects"></a>Débogage de projets DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [le débogage de projets de DLL](https://docs.microsoft.com/visualstudio/debugger/debugging-dll-projects).  
-  
 Les modèles suivants créent des DLL :  
   
 -   (C++, C# et Visual Basic) : bibliothèque de classes  
   
 -   (C++, C# et Visual Basic) : bibliothèque de contrôles Windows Forms  
   
-     Le débogage d'une bibliothèque de contrôles Windows est semblable à celui d'un projet Bibliothèque de classes. Dans la plupart des cas, vous appelez le contrôle Windows à partir d'un autre projet. Lorsque vous déboguez le projet appelant, vous pouvez exécuter pas à pas le code de votre contrôle Windows, définir des points d'arrêt et effectuer d'autres opérations de débogage. Pour plus d’informations, consultez [des contrôles Windows Forms](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a).  
+     Le débogage d'une bibliothèque de contrôles Windows est semblable à celui d'un projet Bibliothèque de classes. Dans la plupart des cas, vous appelez le contrôle Windows à partir d'un autre projet. Lorsque vous déboguez le projet appelant, vous pouvez exécuter pas à pas le code de votre contrôle Windows, définir des points d'arrêt et effectuer d'autres opérations de débogage. Pour plus d'informations, consultez [Contrôles Windows Forms](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a).  
   
 -   (C# et Visual Basic) : bibliothèque de contrôles Web  
   
@@ -83,7 +81,7 @@ Les modèles suivants créent des DLL :
 ##  <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Génération d’une Version de débogage  
  Quelle que soit la façon dont vous démarrez le débogage, vérifiez que vous générez d'abord la version Debug de la DLL et que celle-ci se trouve à l'emplacement attendu par l'application. Cette étape semble évidente mais si vous l'omettez, l'application peut rechercher et charger une autre version de la DLL. Le programme continuera alors de s'exécuter, et vous vous demanderez pourquoi votre point d'arrêt n'a pas été atteint. Durant le processus de débogage, vous pouvez vérifier quelles DLL ont été chargées par votre programme en ouvrant la fenêtre **Modules** du débogueur. La fenêtre **Modules** répertorie chaque DLL ou EXE chargé au cours du processus de débogage. Pour plus d'informations, consultez [How to: Use the Modules Window](../debugger/how-to-use-the-modules-window.md).  
   
- Pour que le débogueur s'attache au code écrit en C++, le code doit émettre `DebuggableAttribute`. Vous pouvez ajouter cela automatiquement à votre code en les liant avec le [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) option de l’éditeur de liens.  
+ Pour que le débogueur s'attache au code écrit en C++, le code doit émettre `DebuggableAttribute`. Vous pouvez ajouter cela automatiquement à votre code grâce à la liaison, à l'aide de l'option [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) .  
   
 ##  <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Mixed-Mode Debugging  
  L'application appelante qui appelle votre DLL peut être écrite en code managé ou natif. Si votre DLL managée est appelée par du code natif et que vous souhaitez déboguer les deux types de code, vous devez activer les débogueurs managés et natifs. Vous pouvez sélectionner ceci dans le  **\<projet > Pages de propriétés** boîte de dialogue ou la fenêtre. Tout dépend si vous avez démarré le débogage à partir du projet DLL ou du projet de l'application appelante. Pour plus d'informations, consultez [How to: Debug in Mixed Mode](../debugger/how-to-debug-in-mixed-mode.md).  
@@ -92,7 +90,7 @@ Les modèles suivants créent des DLL :
  Lorsque vous créez un projet d'application console à l'aide du modèle de projet, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] crée automatiquement les paramètres requis pour les configurations Debug et Release. Si nécessaire, vous pouvez modifier ces paramètres. Pour plus d’informations, consultez [paramètres de projet pour une Configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md), [des paramètres de projet pour les Configurations Debug c#](../debugger/project-settings-for-csharp-debug-configurations.md), [paramètres de projet pour une Configuration Debug Visual Basic ](../debugger/project-settings-for-a-visual-basic-debug-configuration.md), et [Comment : jeu de Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md).  
   
 ##  <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a> Procédures pour déboguer la DLL  
- Chacun des projets de cette section crée une DLL. Vous ne pouvez pas exécuter une DLL directement, celle-ci doit être appelée par une application, généralement un EXE. Pour plus d’informations, consultez [création et gestion de projets Visual C++](http://msdn.microsoft.com/library/11003cd8-9046-4630-a189-a32bf3b88047). L'application appelante peut satisfaire un des critères suivants :  
+ Chacun des projets de cette section crée une DLL. Vous ne pouvez pas exécuter une DLL directement, celle-ci doit être appelée par une application, généralement un EXE. Pour plus d'informations, consultez [Creating and Managing Visual C++ Projects](http://msdn.microsoft.com/library/11003cd8-9046-4630-a189-a32bf3b88047). L'application appelante peut satisfaire un des critères suivants :  
   
 -   Une application générée dans un autre projet de la même solution [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] qui contient la bibliothèque de classes.  
   
@@ -111,7 +109,7 @@ Les modèles suivants créent des DLL :
   
 -   Vous pouvez la déboguer à partir du projet de DLL. Pour plus d'informations, consultez [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md).  
   
--   Vous pouvez la déboguer à partir de la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **immédiat** fenêtre. Dans ce cas, la fenêtre **Exécution** joue le rôle de l'application.  
+-   Vous pouvez la déboguer à partir de la fenêtre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Immediate** window. Dans ce cas, la fenêtre **Exécution** joue le rôle de l'application.  
   
  Avant de commencer le débogage de l'application appelante, vous devez généralement définir un point d'arrêt dans la bibliothèque de classes. Pour plus d'informations, consultez [Breakpoints and Tracepoints](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583). Lorsque le point d'arrêt est atteint, vous pouvez exécuter le code pas à pas, en observant chaque action ligne par ligne, jusqu'à ce que vous ayez isolé le problème. Pour plus d'informations, consultez [Code Stepping Overview](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9).  
   

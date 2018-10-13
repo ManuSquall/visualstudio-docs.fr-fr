@@ -1,7 +1,7 @@
 ---
 title: Dictionnaire de langage Visual pour Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9eee2e412024cdb9eae7669d65e2283fc24488d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 250e7c80e47b9ea53306697d57b305fdcc9c645c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501872"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267629"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Dictionnaire de langage Visual pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [dictionnaire de langage Visual pour Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio).  
-  
 Visual Studio utilise un langage visuel commun pour illustrer les concepts qui sont des blocs de construction de son iconographie et autres images. Lorsque vous concevez des nouvelles icônes, utilisez ce dictionnaire pour identifier les concepts que vous souhaitez transmettre dans votre propre image.  
   
  **Recommandations générales**  
@@ -297,7 +295,7 @@ Visual Studio utilise un langage visuel commun pour illustrer les concepts qui s
 |**Fenêtre indépendante**|![POP icône](../../extensibility/ux-guidelines/media/vld-c-popout.png "VLD_C_PopOut")|![POP dans icône](../../extensibility/ux-guidelines/media/vld-c-popout-popin.png "VLD_C_PopOut_PopIn") Pop dans|  
 |**Puissance**|![Icône d’alimentation](../../extensibility/ux-guidelines/media/vld-c-power.png "VLD_C_Power")|![Icône d’onduleurs](../../extensibility/ux-guidelines/media/vld-c-power-uninterruptiblepowersupply.png "VLD_C_Power_UninterruptiblePowerSupply") d’alimentation non interruptible|  
 |**Précédent**|![Icône précédent](../../extensibility/ux-guidelines/media/vld-c-previous.png "VLD_C_Previous")|![Icône de signet précédent](../../extensibility/ux-guidelines/media/vld-c-previous-previousbookmark.png "VLD_C_Previous_PreviousBookmark") signet précédent ![icône précédent Find](../../extensibility/ux-guidelines/media/vld-c-previous-findprevious.png "VLD_C_Previous_FindPrevious") rechercher précédent|  
-|**Impression**|![Icône d’impression](../../extensibility/ux-guidelines/media/vld-c-print.png "VLD_C_Print")|![Icône d’impression directe](../../extensibility/ux-guidelines/media/vld-c-print-printdirect.png "VLD_C_Print_PrintDirect") direct de l’impression ![icône de boîte de dialogue d’impression](../../extensibility/ux-guidelines/media/vld-c-print-printdialog.png "VLD_C_Print_PrintDialog") boîte de dialogue Imprimer ![imprimer icône de contrôle de document](../../extensibility/ux-guidelines/media/vld-c-print-printdocumentcontrol.png "VLD_C_Print_PrintDocumentControl") le contrôle de document d’impression|  
+|**Imprimer**|![Icône d’impression](../../extensibility/ux-guidelines/media/vld-c-print.png "VLD_C_Print")|![Icône d’impression directe](../../extensibility/ux-guidelines/media/vld-c-print-printdirect.png "VLD_C_Print_PrintDirect") direct de l’impression ![icône de boîte de dialogue d’impression](../../extensibility/ux-guidelines/media/vld-c-print-printdialog.png "VLD_C_Print_PrintDialog") boîte de dialogue Imprimer ![imprimer icône de contrôle de document](../../extensibility/ux-guidelines/media/vld-c-print-printdocumentcontrol.png "VLD_C_Print_PrintDocumentControl") le contrôle de document d’impression|  
 |**Procédure** fenêtre Interactive|![Icône de procédure](../../extensibility/ux-guidelines/media/vld-c-procedure.png "VLD_C_Procedure")|![Icône de fenêtre interactive Python](../../extensibility/ux-guidelines/media/vld-c-procedure-pythoninteractivewindow.png "VLD_C_Procedure_PythonInteractiveWindow") fenêtre interactive Python ![icône d’avertissement de procédure](../../extensibility/ux-guidelines/media/vld-c-procedure-procedurewarning.png "VLD_C_Procedure_ ProcedureWarning") avertissement de procédure ![icône de la procédure stockée](../../extensibility/ux-guidelines/media/vld-c-procedure-storedprocedure.png "VLD_C_Procedure_StoredProcedure") procédure stockée|  
 |**Propriété** paramètres, configurations|![Icône propriété](../../extensibility/ux-guidelines/media/vld-c-property.png "VLD_C_Property")|![Icône de propriété ajouter](../../extensibility/ux-guidelines/media/vld-c-property-addproperty.png "VLD_C_Property_AddProperty") ajouter une propriété ![icône d’avertissement propriété étendu](../../extensibility/ux-guidelines/media/vld-c-property-extendedpropertywarning.png "VLD_C_Property_ExtendedPropertyWarning") Propriété – étendue avertissement ![icône de nouvelle propriété](../../extensibility/ux-guidelines/media/vld-c-property-newproperty.png "VLD_C_Property_NewProperty") nouvelle propriété|  
   
