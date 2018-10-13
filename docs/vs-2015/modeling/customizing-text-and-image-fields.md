@@ -1,7 +1,7 @@
 ---
 title: Personnalisation des champs de texte et Image | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 125830eed33bd86be983fdc4b48a7c79cf84fa5e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c73f14e2b581ea5a9c0bd22f50c11ed205c0f804
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507569"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271126"
 ---
 # <a name="customizing-text-and-image-fields"></a>Personnalisation des champs de texte et d'image
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [personnalisation des champs de texte et Image](https://docs.microsoft.com/visualstudio/modeling/customizing-text-and-image-fields).  
-  
 Lorsque vous définissez un décorateur de texte dans une forme, il est représenté par un champ de texte. Pour obtenir des exemples de l’initialisation de TextFields et autres dont ShapeFields, inspecter Dsl\GeneratedCode\Shapes.cs dans votre solution DSL.  
   
  Un champ de texte est un objet qui gère une zone dans une forme, telles que l’espace affecté à une étiquette. Une instance de TextField est partagée entre plusieurs formes de la même classe. L’instance TextField ne stocke pas le texte de l’étiquette séparément pour chaque instance : au lieu de cela, le `GetDisplayText(ShapeElement)` méthode prend la forme en tant que paramètre et peut rechercher le texte dépendant de l’état actuel de la forme et son élément de modèle.  

@@ -1,7 +1,7 @@
 ---
 title: 'Comment : utiliser la fenêtre Pile des appels | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75b617e9de62c20cc1e8a32cf993f5f03201f4fc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0e79c491eeec373bd3753a5ea55777a079cc51ab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590612"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271659"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>Comment : utiliser la fenêtre Pile des appels
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [afficher la pile des appels dans le débogueur dans Visual Studio](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-call-stack-window).  
-  
 À l’aide de la **pile des appels** , vous pouvez afficher les appels de fonction ou une procédure qui se trouvent actuellement sur la pile.  
   
  Le **pile des appels** fenêtre affiche le nom de chaque fonction et il est écrit dans le langage de programmation. Le nom de la fonction ou de la procédure peut être accompagné d'informations facultatives, telles qu'un nom de module et un numéro de ligne, ainsi que des noms, des valeurs et des types de paramètres. L'affichage de ces informations facultatives peut être activé ou désactivé.  

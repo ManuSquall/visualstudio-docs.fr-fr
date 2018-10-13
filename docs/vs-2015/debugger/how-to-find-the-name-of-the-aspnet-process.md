@@ -1,7 +1,7 @@
 ---
 title: 'Comment : rechercher le nom du processus ASP.NET | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d29d40f55bc693040d1acce632feba72b0a58d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6b036fdd9f75afc0c9976591ae0df23194b196d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500928"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268903"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>Comment : rechercher le nom du processus ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : rechercher le nom du processus ASP.NET](https://docs.microsoft.com/visualstudio/debugger/how-to-find-the-name-of-the-aspnet-process).  
-  
 Pour créer un attachement à une application [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] en cours d'exécution, vous devez connaître le nom du processus [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] :  
   
 -   Si vous exécutez IIS 6.0 ou IIS 7.0, le nom est w3wp.exe.  
