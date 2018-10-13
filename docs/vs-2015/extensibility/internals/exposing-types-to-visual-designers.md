@@ -1,7 +1,7 @@
 ---
 title: Exposition des Types aux concepteurs visuels | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e09161d7ea2e27fbc1f4c7bd68cc7da952d3f1d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 401ba1744ad03260140ca29d706f24d699863246
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501291"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242006"
 ---
 # <a name="exposing-types-to-visual-designers"></a>Exposition des types aux concepteurs visuels
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [exposition de Types aux concepteurs visuels](https://docs.microsoft.com/visualstudio/extensibility/internals/exposing-types-to-visual-designers).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] doit avoir accès aux définitions de classe et le type au moment du design pour afficher un concepteur visuel. Les classes sont chargés à partir d’un ensemble prédéfini d’assemblys qui incluent le jeu complète des dépendances du projet actuel (références plus leurs dépendances). Il peut également être nécessaire pour les concepteurs visuels pour accéder aux classes et des types qui sont définis dans les fichiers générés par les outils personnalisés.  
   
  Le [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] et [!INCLUDE[csprcs](../../includes/csprcs-md.md)] projet fournissent une assistance pour accéder à des types et des classes générées via temporaire portable fichiers exécutables (PE temporaires). N’importe quel fichier généré par un outil personnalisé peut être compilé dans un assembly temporaire afin que les types peuvent être chargées à partir de ces assemblys et exposés aux concepteurs. La sortie de chaque outil personnalisé est compilée dans un PE temporaire distinct, et la réussite ou l’échec de cette compilation temporaire dépend uniquement ou non le fichier généré peut être compilé. Même si un projet peuvent ne pas générer dans sa globalité, PE temporaires individuel peut rester disponible pour les concepteurs.  

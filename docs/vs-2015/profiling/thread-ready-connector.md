@@ -1,7 +1,7 @@
 ---
 title: Connecteur de thread | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 250729a453c1964e1954b89faae614660690a8e0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fe7bd10426dd9d101cbbee8dff1067e99c832e66
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493033"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239744"
 ---
 # <a name="thread-ready-connector"></a>Connecteur de thread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [connecteur de Thread](https://docs.microsoft.com/visualstudio/profiling/thread-ready-connector).  
-  
 Quand vous cliquez sur un segment de blocage pour afficher une pile des appels et sa pile de déblocage, le connecteur de thread peut également apparaître. Si l’événement de déblocage s’est produit sur un autre thread du processus actif, le connecteur de thread identifie visuellement le thread et le segment d’exécution qui a permis au thread bloqué de reprendre l’exécution.
 
 

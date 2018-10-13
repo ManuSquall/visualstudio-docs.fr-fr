@@ -1,7 +1,7 @@
 ---
 title: Liste d’erreurs, fenêtre | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a0f7bb3d50a68ca7e6908a89d1fd680377b77c9e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2e3e87a2786e2eb5ffafda2924920eaad7640039
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508205"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232282"
 ---
 # <a name="error-list-window"></a>Liste d'erreurs, fenêtre
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [fenêtre liste d’erreurs](https://docs.microsoft.com/visualstudio/ide/reference/error-list-window).  
-  
   
 REMARQUE]
 >  La liste d'erreurs affiche des informations sur un message d'erreur spécifique. Vous pouvez copier le numéro d'erreur ou le texte de la chaîne d'erreur dans la fenêtre Sortie. Pour afficher la fenêtre Sortie, appuyez sur Ctrl+Alt+O. Consultez [Sortie, fenêtre](../../ide/reference/output-window.md).  

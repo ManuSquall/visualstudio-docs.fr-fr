@@ -1,7 +1,7 @@
 ---
 title: '&lt;déploiement&gt; , élément (déploiement ClickOnce) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 65ca88f335dfbbe270eedf25464a05194740fbd7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6d4472502315a12529c6c7ea59007c5502cfd5d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504303"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231541"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;déploiement&gt; , élément (déploiement ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [ &lt;déploiement&gt; , élément (déploiement ClickOnce)](https://docs.microsoft.com/visualstudio/deployment/deployment-element-clickonce-deployment).  
-  
 Identifie les attributs utilisés pour le déploiement de mises à jour et l'exposition au système.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -68,7 +66,7 @@ Identifie les attributs utilisés pour le déploiement de mises à jour et l'exp
 ```  
   
 ## <a name="elements-and-attributes"></a>Éléments et attributs  
- L’élément `deployment` est obligatoire et se trouve dans l’espace de noms `urn:schemas-microsoft-com:asm.v1`. L’élément a les attributs suivants.  
+ L’élément `deployment` est obligatoire et se trouve dans l’espace de noms `urn:schemas-microsoft-com:asm.v1` . L’élément a les attributs suivants.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
@@ -81,12 +79,12 @@ Identifie les attributs utilisés pour le déploiement de mises à jour et l'exp
  Le `deployment` élément contient également les éléments enfants suivants.  
   
 ## <a name="subscription"></a>Abonnement  
- Facultatif. Contient le `update` élément. Le `subscription` élément ne possède pas d’attributs. Si le `subscription` élément n’existe pas, le [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application ne vérifie jamais les mises à jour. Si le `install` attribut de la `deployment` élément est `false`, le `subscription` élément est ignoré, car un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application always lancée à partir du réseau utilise la version la plus récente.  
+ Facultatif. Contient le `update` élément. L’élément `subscription` ne comporte pas d’attributs. Si le `subscription` élément n’existe pas, le [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application ne vérifie jamais les mises à jour. Si le `install` attribut de la `deployment` élément est `false`, le `subscription` élément est ignoré, car un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application always lancée à partir du réseau utilise la version la plus récente.  
   
 ## <a name="update"></a>update  
  Obligatoire. Cet élément est un enfant de la `subscription` élément et contient le `beforeApplicationStartup` ou `expiration` élément. `beforeApplicationStartup` et `expiration` ne peut pas être spécifiés dans le même manifeste de déploiement.  
   
- Le `update` élément ne possède pas d’attributs.  
+ L’élément `update` ne comporte pas d’attributs.  
   
 ## <a name="beforeapplicationstartup"></a>beforeApplicationStartup  
  Facultatif. Cet élément est un enfant de le `update` élément et n’a aucun attribut. Lorsque le `beforeApplicationStartup` élément existe, l’application sera bloqué quand [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] vérifie les mises à jour, si le client est en ligne. Si cet élément n’existe pas, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] commence par vérifier les mises à jour selon les valeurs spécifiées pour le `expiration` élément. `beforeApplicationStartup` et `expiration` ne peut pas être spécifiés dans le même manifeste de déploiement.  

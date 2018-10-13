@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour créer et appliquer une ressource | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 75041cb9db00b48ea81dfe9a8639c41e4267262c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5f89540c7ca084c6ef60d83b7678bb8cd4f56990
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508111"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236507"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Guide pratique pour créer et appliquer une ressource
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [comment créer et appliquer une ressource](https://docs.microsoft.com/visualstudio/designers/how-to-create-and-apply-a-resource).  
-  
 Les styles et les modèles des éléments du concepteur XAML sont stockés dans des entités réutilisables appelées ressources. Les styles vous permettent de définir les propriétés des éléments et de réutiliser ces paramètres pour que l'apparence des différents éléments demeure cohérente. Un [ControlTemplate](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) définit l’apparence d’un contrôle et peut également être appliqué en tant que ressource. Pour plus d’informations, consultez [Démarrage rapide : contrôles de styles](http://go.microsoft.com/fwlink/?LinkID=248239) et [Démarrage rapide : modèles de contrôles](http://go.microsoft.com/fwlink/?LinkID=247982).  
   
  Quand vous créez une ressource à partir d’une propriété existante, [Style](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.style.aspx) ou `ControlTemplate`, la boîte de dialogue **Créer une ressource** vous permet de définir la ressource au niveau de l’application, du document ou de l’élément. Ces niveaux déterminent où vous pouvez utiliser la ressource. Par exemple, si vous définissez la ressource au niveau de l'élément, elle peut être appliquée uniquement à l'élément sur lequel vous l'avez créée. Vous pouvez également choisir de stocker la ressource dans un dictionnaire de ressources. Il s'agit d'un fichier distinct que vous pouvez réutiliser dans un autre projet.  

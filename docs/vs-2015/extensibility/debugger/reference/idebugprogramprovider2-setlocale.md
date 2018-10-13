@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramProvider2::SetLocale | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b41d20a7-ba40-4c42-a450-16f413d6a04f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0027c0c85cdccf3a55f830f181d53f5153f41ec4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 74a50191ba432c8fc2574a60e75f1029150c5455
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504097"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236845"
 ---
 # <a name="idebugprogramprovider2setlocale"></a>IDebugProgramProvider2::SetLocale
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDebugProgramProvider2::SetLocale](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogramprovider2-setlocale).  
-  
 Établit les paramètres régionaux à utiliser pour toutes les ressources spécifiques.  
   
 ## <a name="syntax"></a>Syntaxe  

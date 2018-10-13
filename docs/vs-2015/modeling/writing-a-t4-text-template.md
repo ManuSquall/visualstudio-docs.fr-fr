@@ -1,7 +1,7 @@
 ---
 title: Écriture d’un modèle de texte T4 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c3cfa97bb4b46ddf84916d92ce8437eb80556b80
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0f7a3da89f98d469dde60b98ad68de0574d10db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496006"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231632"
 ---
 # <a name="writing-a-t4-text-template"></a>Écriture d'un modèle de texte T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [écriture d’un modèle de texte T4](https://docs.microsoft.com/visualstudio/modeling/writing-a-t4-text-template).  
-  
 Un modèle de texte contient le texte qui sera généré à partir du modèle. Par exemple, un modèle qui crée une page web contiendra «\<html > … » et tous les autres composants standard d’une page HTML. Inséré dans le modèle sont *blocs de contrôle*, qui sont des fragments de code de programme. Les blocs de contrôle fournissent des valeurs variables et permettent à certaines parties du texte d'être conditionnelles et répétées.  
   
  Cette structure simplifie le développement de modèle, car vous pouvez commencer avec un prototype du fichier généré et insérer de manière incrémentielle des blocs de contrôle qui font varier le résultat.  

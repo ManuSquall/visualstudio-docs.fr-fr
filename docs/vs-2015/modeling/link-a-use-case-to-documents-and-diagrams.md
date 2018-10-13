@@ -1,7 +1,7 @@
 ---
 title: Lier un cas d’usage à des documents et diagrammes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d0fd5bfedc803ff928a87f34abece9b2449a5033
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e97c514ea861b74cfb66eeba00da97799b956c8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494305"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232529"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Lier un cas d'usage à des documents et diagrammes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [lier un cas d’usage à des documents et diagrammes](https://docs.microsoft.com/visualstudio/modeling/link-a-use-case-to-documents-and-diagrams).  
-  
 Vous pouvez lier un cas d'usage dans un diagramme de cas d'usage à un autre diagramme ou document. Par exemple, vous pouvez lier le cas d'usage aux documents et diagrammes suivants :  
   
 -   un diagramme de séquence qui indique la façon dont les objectifs du cas d'usage sont atteints par des interactions entre les utilisateurs et le système ou ses principaux composants ;  

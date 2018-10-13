@@ -1,7 +1,7 @@
 ---
 title: Lier des contrôles Windows Forms à des données | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b3f454e1eb6e754327a50b22a4aefdc5e4afa0eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d1d8710ef98339c0cf4b44ddd3fa41cca8676570
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500996"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237469"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Lier des contrôles Windows Forms à des données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [lier les formulaires Windows contrôle aux données](https://docs.microsoft.com/visualstudio/data-tools/bind-windows-forms-controls-to-data).  
-  
   
 Vous pouvez lier des sources de données aux contrôles en faisant glisser des objets à partir de la **des Sources de données** fenêtre sur un formulaire Windows ou sur un contrôle existant sur un formulaire. Avant de faire glisser des éléments, vous pouvez définir le type de contrôle que vous souhaitez établir une liaison. Des valeurs différentes s’affichent selon que vous choisissez la table elle-même, ou une colonne individuelle.  Vous pouvez également définir des valeurs personnalisées. Pour une table, « Détails » signifie que chaque colonne est liée à un contrôle séparé.  
   

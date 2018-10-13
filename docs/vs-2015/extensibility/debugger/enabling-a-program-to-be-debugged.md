@@ -1,7 +1,7 @@
 ---
 title: Activation d’un programme à déboguer | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 61d24820-0cd9-48b6-8674-6813f7493237
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f0dcb98df8562a5f35fc0d56d5a4ef6570021664
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8d3f2db58e09060871f5d70b1daf766c993807b3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507395"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231710"
 ---
 # <a name="enabling-a-program-to-be-debugged"></a>Activation d’un programme à déboguer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [activation d’un programme à déboguer](https://docs.microsoft.com/visualstudio/extensibility/debugger/enabling-a-program-to-be-debugged).  
-  
 Avant votre moteur de débogage (dé) pouvez déboguer un programme, vous devez tout d’abord lancer le DE ou attacher à un programme existant.  
   
 ## <a name="in-this-section"></a>Dans cette section  

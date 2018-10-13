@@ -1,7 +1,7 @@
 ---
 title: Définir une propriété Automation unique pour les contrôles Windows Store à des fins de test| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: 12
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3dd593efa23d40278a314f6b1c1d90e7f7905922
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0e20186a7615f774f3cef0b57c56a61a3b076b8a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505875"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238873"
 ---
 # <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>Définir une propriété Automation unique pour les contrôles Windows Store à des fins de test
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [définir une Unique propriété pour Windows Store contrôles Automation de test](https://docs.microsoft.com/visualstudio/test/set-a-unique-automation-property-for-windows-store-controls-for-testing).  
-  
 Si vous souhaitez exécuter des tests codés de l’interface utilisateur pour vos applications du Windows Store en XAML, vous devez définir une propriété Automation unique qui identifie chaque contrôle.  
   
  Vous pouvez assigner une propriété Automation unique selon le type de contrôle XAML dans votre application. Voilà comment assigner cette propriété Automation unique dans les situations suivantes :  

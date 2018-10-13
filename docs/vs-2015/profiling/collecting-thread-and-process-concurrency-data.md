@@ -1,7 +1,7 @@
 ---
 title: Collecte de données de concurrence de threads et de processus | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fd63966dba73d57d12d68552e57828b9d17ee84e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2cb7c842d6fdcc024b4146981ece251fb5189652
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590707"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234427"
 ---
 # <a name="collecting-thread-and-process-concurrency-data"></a>Collecte de données de concurrence de threads et de processus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [collecte des threads et traiter les données d’accès concurrentiel](https://docs.microsoft.com/visualstudio/profiling/collecting-thread-and-process-concurrency-data).  
-  
 La méthode de profilage d’accès concurrentiel des outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permet de collecter des données de conflit de ressources comprenant des informations sur chaque événement de synchronisation en raison duquel une fonction de l’application profilée doit attendre l’accès à une ressource.  
   
  **Spécifications**  

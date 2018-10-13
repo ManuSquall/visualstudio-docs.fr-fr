@@ -1,7 +1,7 @@
 ---
 title: 'Comment : configurer le comportement d’invite d’approbation ClickOnce | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: bfabfb3304d737dba46f0ed1840978815d6db198
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f8fdb17bc724cc9cbf7385451a773a68ecf3df4e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505105"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235662"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Comment : configurer le comportement de l'invite d'approbation ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : configurer le comportement d’invite d’approbation ClickOnce](https://docs.microsoft.com/visualstudio/deployment/how-to-configure-the-clickonce-trust-prompt-behavior).  
-  
 Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si les utilisateurs finaux reçoivent l’option d’installation d’applications ClickOnce, telles que les applications Windows Forms, les applications Windows Presentation Foundation, les applications console, de navigateur WPF les applications et les solutions Office. Vous configurez l’invite d’approbation en définissant des clés de Registre sur l’ordinateur de chaque utilisateur final.  
   
  Le tableau suivant montre les options de configuration qui peuvent être appliquées à chacune des cinq zones (Internet, UntrustedSites, MyComputer, LocalIntranet et TrustedSites).  
@@ -241,7 +239,7 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
  [Guide pratique pour définir une zone de sécurité pour une application ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
  [Guide pratique pour définir des autorisations personnalisées pour une application ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [Guide pratique pour déboguer une application ClickOnce avec des autorisations restreintes](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [Comment : ajouter un éditeur approuvé à un ordinateur Client pour les Applications ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
+ [Comment : ajouter un éditeur approuvé à un ordinateur client pour les applications ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
  [Guide pratique pour resigner des manifestes d’application et de déploiement](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
 
 

@@ -1,7 +1,7 @@
 ---
 title: 'Démarrage rapide : Analyse du Code pour C / C++ | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 10
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 97e3aa842a2ebb19492370836058ec2236a44564
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5a9cb92b601fa8ba03e11d64e66bd24f9b9cca26
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503336"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241772"
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>Démarrage rapide : analyse du code pour C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [démarrage rapide : analyse du Code pour C/C++](https://docs.microsoft.com/visualstudio/code-quality/quick-start-code-analysis-for-c-cpp).  
-  
 Vous pouvez améliorer la qualité de votre application en exécutant l'analyse de code de manière régulière sur le code C ou C++. Cela peut vous aider à rechercher les problèmes courants, les violations d'une bonne pratique de programmation ou les défauts difficiles à détecter à travers des tests. Les avertissements d'analyse du code diffèrent des avertissements et des erreurs du compilateur, car l'analyse du code recherche des modèles de codes spécifiques qui sont valides, mais qui peuvent engendrer des problèmes pour vous ou d'autres personnes qui utilisent votre code.  
   
 ## <a name="in-this-topic"></a>Dans cette rubrique  

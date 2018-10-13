@@ -1,7 +1,7 @@
 ---
 title: Annotation du comportement de la fonction | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c05fca9a23f213f14aaecffda87478819291e1f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1be20fed5e7fd98860a4a62c3d59fc458bed04ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503886"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234388"
 ---
 # <a name="annotating-function-behavior"></a>Annotation du comportement d’une fonction
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [comportement de la fonction annotation](https://docs.microsoft.com/visualstudio/code-quality/annotating-function-behavior).  
-  
 En plus d’annoter [paramètres de fonction et valeurs de retour](../code-quality/annotating-function-parameters-and-return-values.md), vous pouvez annoter les propriétés de la fonction entière.  
   
 ## <a name="function-annotations"></a>Annotations (fonction)  
@@ -45,7 +43,7 @@ En plus d’annoter [paramètres de fonction et valeurs de retour](../code-quali
   
 |Annotation|Description|  
 |----------------|-----------------|  
-|`_Called_from_function_class_(name)`|Non destinée à une utilisation autonome ; il s'agit plutôt d'un prédicat à utiliser avec l'annotation `_When_`. Pour plus d’informations, consultez [spécifiant quand et où une Annotation s’applique](../code-quality/specifying-when-and-where-an-annotation-applies.md).<br /><br /> Le `name` paramètre est une chaîne arbitraire qui apparaît également dans un `_Function_class_` annotation dans la déclaration de certaines fonctions.  `_Called_from_function_class_` retourne zéro si la fonction qui est actuellement en cours d’analyse est annotée à l’aide de `_Function_class_` qui a la même valeur de `name`; sinon, elle retourne zéro.|  
+|`_Called_from_function_class_(name)`|Non destinée à une utilisation autonome ; il s’agit plutôt d’un prédicat à utiliser avec l’annotation `_When_`. Pour plus d’informations, consultez [spécifiant quand et où une Annotation s’applique](../code-quality/specifying-when-and-where-an-annotation-applies.md).<br /><br /> Le `name` paramètre est une chaîne arbitraire qui apparaît également dans un `_Function_class_` annotation dans la déclaration de certaines fonctions.  `_Called_from_function_class_` retourne zéro si la fonction qui est actuellement en cours d’analyse est annotée à l’aide de `_Function_class_` qui a la même valeur de `name`; sinon, elle retourne zéro.|  
 |`_Check_return_`|Annote une valeur de retour et indique que l’appelant doit l’inspecter. Le vérificateur signale une erreur si la fonction est appelée dans un contexte void.|  
 |`_Function_class_(name)`|Le paramètre `name` est une chaîne arbitraire indiquée par l'utilisateur.  Il existe dans un espace de noms distinct des autres espaces de noms. Une fonction, un pointeur de fonction ou, plus utilement, un type de pointeur de fonction peut être désigné comme appartenant à une ou plusieurs classes de fonction.|  
 |`_Raises_SEH_exception_`|Annote une fonction qui déclenche toujours une exception SEH, soumise aux conditions `_When_` et `_On_failure_`. Pour plus d’informations, consultez [spécifiant quand et où une Annotation s’applique](../code-quality/specifying-when-and-where-an-annotation-applies.md).|  
@@ -59,9 +57,9 @@ En plus d’annoter [paramètres de fonction et valeurs de retour](../code-quali
 |Annotation|Description|  
 |----------------|-----------------|  
 |`_Always_(anno_list)`|Équivalente à `anno_list _On_failure_(anno_list)` ; en d'autres termes, les annotations dans `anno_list` s'appliquent, indépendamment de la réussite ou de l'échec de la fonction.|  
-|`_On_failure_(anno_list)`|À utiliser uniquement lorsque l'annotation `_Success_` est également utilisée pour annoter la fonction, explicitement ou implicitement via `_Return_type_success_` sur un typedef. Lorsque l'annotation `_On_failure_` est présente sur un paramètre de fonction ou une valeur de retour, chaque annotation dans `anno_list` (anno) se comporte comme si elle était codée en tant que `_When_(!expr, anno)`, où `expr` est le paramètre de l'annotation requise `_Success_`. Cela signifie que l'application implicite de `_Success_` à toutes les post-conditions n'est pas applicable à `_On_failure_`.|  
+|`_On_failure_(anno_list)`|À utiliser uniquement lorsque l’annotation `_Success_` est également utilisée pour annoter la fonction, explicitement ou implicitement via `_Return_type_success_` sur un typedef. Lorsque l'annotation `_On_failure_` est présente sur un paramètre de fonction ou une valeur de retour, chaque annotation dans `anno_list` (anno) se comporte comme si elle était codée en tant que `_When_(!expr, anno)`, où `expr` est le paramètre de l'annotation requise `_Success_`. Cela signifie que l'application implicite de `_Success_` à toutes les post-conditions n'est pas applicable à `_On_failure_`.|  
 |`_Return_type_success_(expr)`|Peut être appliquée à un typedef. Indique que toutes les fonctions qui retournent ce type et n'ont pas explicitement l'annotation `_Success_` sont annotées comme si elles avaient l'annotation `_Success_(expr)`. L'annotation `_Return_type_success_` ne peut pas être utilisée sur un typedef de fonction ou de pointeur de fonction.|  
-|`_Success_(expr)`|`expr` est une expression qui retourne une valeur rvalue. Lorsque l'annotation `_Success_` est présente dans une déclaration ou une définition de fonction, chaque annotation (`anno`) sur la fonction et dans la condition préalable se comporte comme si elle était codée en tant que `_When_(expr, anno)`. L'annotation `_Success_` peut uniquement être utilisée sur une fonction, et non sur ses paramètres ou son type de retour. Il peut y avoir au plus une annotation `_Success_` sur une fonction, et elle ne peut pas être dans `_When_`, `_At_` ou `_Group_`. Pour plus d’informations, consultez [spécifiant quand et où une Annotation s’applique](../code-quality/specifying-when-and-where-an-annotation-applies.md).|  
+|`_Success_(expr)`|`expr` est une expression qui retourne une valeur rvalue. Lorsque l'annotation `_Success_` est présente dans une déclaration ou une définition de fonction, chaque annotation (`anno`) sur la fonction et dans la condition préalable se comporte comme si elle était codée en tant que `_When_(expr, anno)`. L’annotation `_Success_` peut uniquement être utilisée sur une fonction, et non sur ses paramètres ou son type de retour. Il peut y avoir au plus une annotation `_Success_` sur une fonction, et elle ne peut pas être dans `_When_`, `_At_` ou `_Group_`. Pour plus d’informations, consultez [spécifiant quand et où une Annotation s’applique](../code-quality/specifying-when-and-where-an-annotation-applies.md).|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilisation d’Annotations SAL pour réduire les défauts du Code C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   

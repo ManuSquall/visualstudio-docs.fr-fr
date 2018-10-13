@@ -1,7 +1,7 @@
 ---
 title: 'Comment : déplacer des binaires instrumentés | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3114ee88feefdbb409ed1a1e1ad025a18123c002
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d0ddfb3cd52e212965ebf928bf087519f38b0bf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506659"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240979"
 ---
 # <a name="how-to-relocate-instrumented-binaries"></a>Comment : déplacer des binaires instrumentés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : déplacer des binaires instrumentés](https://docs.microsoft.com/visualstudio/profiling/how-to-relocate-instrumented-binaries).  
-  
 Lors de l’instrumentation, des sondes sont insérées dans le fichier binaire pour mesurer les performances de l’application. Quand vous choisissez de déplacer le fichier binaire instrumenté, une copie du fichier binaire d’origine est instrumentée et placée à l’emplacement spécifié. Cette option est utile si vous ne voulez pas que le profileur renomme votre fichier binaire d’origine. Si le fichier binaire n’est pas déplacé, la version d’origine du fichier binaire est remplacée.  
   
  **Spécifications**  

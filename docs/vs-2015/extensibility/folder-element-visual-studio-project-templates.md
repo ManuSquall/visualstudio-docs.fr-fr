@@ -1,7 +1,7 @@
 ---
 title: Folder, élément (modèles de projet Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 558e3d41-0db5-4c44-82bb-6bb87892b093
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c26dd5652b2c167e8ae33be4250015ba32c34a96
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 486448ec92ef05890c95ec5277e5b5b99e976231
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48878873"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236156"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder, élément (modèles de projet Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Folder, élément (modèles de projet Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/folder-element-visual-studio-project-templates).  
-  
 Spécifie un dossier qui sera ajouté au projet.  
   
  \<VSTemplate >  

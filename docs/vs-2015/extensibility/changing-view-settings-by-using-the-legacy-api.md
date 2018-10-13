@@ -1,7 +1,7 @@
 ---
 title: Modification des paramètres de la vue à l’aide de l’API héritée | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 12c9b300-0894-4124-96a1-764326176d77
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c6ffd7796e0f90748ed46050d5d07ce2df210db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 550acb027d4d9b0fdaecdcd6057610413ae0da3c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516742"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234843"
 ---
 # <a name="changing-view-settings-by-using-the-legacy-api"></a>Modification des paramètres de vue à l’aide de l’API héritée
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [modification des paramètres de vue à l’aide de l’API héritée](https://docs.microsoft.com/visualstudio/extensibility/changing-view-settings-by-using-the-legacy-api).  
-  
 Paramètres pour les principales fonctionnalités de l’éditeur, telles que le retour automatique à la marge de sélection et l’espace virtuel, peuvent être modifiés par l’utilisateur par le biais de la **Options** boîte de dialogue. Toutefois, il est également possible de modifier ces paramètres par programmation.  
   
 ## <a name="changing-settings-by-using-the-legacy-api"></a>Modification des paramètres à l’aide de l’API héritée  

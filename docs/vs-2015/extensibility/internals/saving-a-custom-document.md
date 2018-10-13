@@ -1,7 +1,7 @@
 ---
 title: Enregistrement d’un Document personnalisé | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 040b36d6-1f0a-4579-971c-40fbb46ade1d
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d5a25cc7f64c50ca088e11cc69a122f97333dfc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1402dd3ed2acf6c4801953c59f14d2454b95c01d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504528"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235727"
 ---
 # <a name="saving-a-custom-document"></a>Enregistrement d’un document personnalisé
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [enregistrer un Document de personnalisé](https://docs.microsoft.com/visualstudio/extensibility/internals/saving-a-custom-document).  
-  
 Les handles d’environnement le **enregistrer**, **enregistrer en tant que**, et **Enregistrer tout** commandes. Lorsqu’un utilisateur clique **enregistrer**, **enregistrer en tant que**, **ou enregistrer tout** sur le **fichier** menu ou ferme la solution, ce qui entraîne un Enregistrer tout, ce qui suit le processus se produit.  
   
  ![Enregistrer l’Éditeur du client](../../extensibility/internals/media/private.gif "privé")  

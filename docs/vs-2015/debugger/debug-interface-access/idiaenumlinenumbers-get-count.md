@@ -1,7 +1,7 @@
 ---
 title: IDiaEnumLineNumbers::get_Count | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd9b61681d8e711f6e143849af6a478a5b8f5b58
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29c6f648cc258cabbd54e689de16b9c09cae24e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504103"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230969"
 ---
 # <a name="idiaenumlinenumbersgetcount"></a>IDiaEnumLineNumbers::get_Count
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDiaEnumLineNumbers::get_Count](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaenumlinenumbers-get-count).  
-  
 Récupère le nombre de numéros de ligne.  
   
 ## <a name="syntax"></a>Syntaxe  

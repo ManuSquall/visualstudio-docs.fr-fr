@@ -1,7 +1,7 @@
 ---
 title: Ce que&#39;s dans la Source de contrôle plug-in API Version 1.3 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 7dfb2227-6e1d-4028-bce9-f8967456a993
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d5e8e5fd761cbd8c1baf2b75160010f19a8430cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f6abe06f57e0e7ba83298f8dd5b2658a8f2e26c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495762"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242103"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>Ce que&#39;s dans la Source de contrôle plug-in API Version 1.3
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [que&#39;Nouveautés de Version 1.3 des API de plug-in de contrôle Source](https://docs.microsoft.com/visualstudio/extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3).  
-  
 L’API de plug-in de contrôle de Source version 1.3 présente les nouvelles fonctions suivantes pour fournir un contrôle plus avancée.  
   
 ## <a name="changes"></a>Modifications  

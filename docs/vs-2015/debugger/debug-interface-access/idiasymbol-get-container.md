@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_container | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c52bdb047dcaf8f3fb705c8ef6bfcfd6b90dd393
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b41a17d1eff1067aef278e3071c4464a2ffed3f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504777"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237417"
 ---
 # <a name="idiasymbolgetcontainer"></a>IDiaSymbol::get_container
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDiaSymbol::get_container](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-container).  
-  
 Cette fonction récupère un pointeur vers un symbole représentant le conteneur/parent de ce symbole.  
   
 ## <a name="syntax"></a>Syntaxe  

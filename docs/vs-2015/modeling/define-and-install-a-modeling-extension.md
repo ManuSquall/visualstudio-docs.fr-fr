@@ -1,7 +1,7 @@
 ---
 title: Définir et installer une extension de modélisation | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,24 +15,22 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c3d6ea563d7b7d4e2cac0e4f69ea5fddcd192418
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e550d7c34640b1c4b436f6a2e098a3f3ee494757
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590581"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234401"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Définir et installer une extension de modélisation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [définir et installer une extension de modélisation](https://docs.microsoft.com/visualstudio/modeling/define-and-install-a-modeling-extension).  
-  
 Dans Visual Studio, vous pouvez définir des extensions de diagrammes de modélisation. De cette manière, vous pouvez adapter les diagrammes et les modèles à vos besoins. Par exemple, vous pouvez définir des commandes de menu, des profils UML, des contraintes de validation et des éléments de boîte à outils. Vous pouvez définir plusieurs composants dans une même extension. Vous pouvez aussi distribuer ces extensions à d’autres utilisateurs de Visual Studio sous la forme d’une [Extension d’intégration Visual Studio (VSIX)](http://go.microsoft.com/fwlink/?LinkId=160780). Vous pouvez créer une extension VSIX à l’aide d’un projet VSIX dans Visual Studio.  
   
 ## <a name="requirements"></a>Configuration requise  
- Consultez [exigences](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
+ Consultez [Spécifications](../modeling/extend-uml-models-and-diagrams.md#Requirements).  
   
- Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+ Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="creating-a-modeling-extension-solution"></a>Création d’une solution d’extension de modélisation  
  Pour définir une extension de modélisation, vous devez créer une solution contenant ces projets :  
@@ -102,7 +100,7 @@ Dans Visual Studio, vous pouvez définir des extensions de diagrammes de modéli
   
 #### <a name="to-run-an-extension-during-its-development"></a>Pour exécuter une extension durant son développement  
   
-1.  Dans le [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **déboguer** menu, choisissez **démarrer le débogage**.  
+1.  Dans le menu [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **de** , choisissez **Start deging**.  
   
      Le projet est généré et une nouvelle instance de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] démarre en mode expérimental.  
   

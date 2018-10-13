@@ -1,7 +1,7 @@
 ---
 title: AssignCulture, tâche | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8ee44937f48101454a00128405fb03ce4260de4a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c35d949f2d3cf3924a63ce6db0e596af1fccddbd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494717"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235649"
 ---
 # <a name="assignculture-task"></a>AssignCulture, tâche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [AssignCulture, tâche](https://docs.microsoft.com/visualstudio/msbuild/assignculture-task).  
-  
   
 Cette tâche accepte une liste d’éléments dont le nom de fichier peut contenir une chaîne d’identificateur de culture .NET valide. De plus, cette tâche génère des éléments dont les métadonnées nommées `Culture` contiennent l’identificateur de culture correspondant. Par exemple, le nom de fichier Form1.fr-fr.resx comprend l’identificateur de culture incorporé « fr-fr ». Cette tâche génère donc un élément qui porte le même nom de fichier et dont les métadonnées `Culture` sont égales à `fr-fr`. La tâche génère également une liste de noms de fichiers desquels la culture a été supprimée.  
   

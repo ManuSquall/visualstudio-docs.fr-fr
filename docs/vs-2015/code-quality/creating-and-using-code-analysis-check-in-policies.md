@@ -1,7 +1,7 @@
 ---
 title: Création et utilisation de stratégies d’archivage de l’analyse du Code | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2719e9ec021a1fa2c40d7afb56a4ac459542a7b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b2eb5059d5ec027654b1e4de7098c732e897088
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494745"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238353"
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Création et utilisation de stratégies d’archivage de l’analyse du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [création et à l’aide de stratégies analyse du Code archivage](https://docs.microsoft.com/visualstudio/code-quality/creating-and-using-code-analysis-check-in-policies).  
-  
 Lorsque vous utilisez Team Foundation Version Control (TFVC), vous pouvez créer une stratégie d’archivage de l’analyse du code pour le .NET Framework et les projets de code natifs (C/C++) dans un projet d’équipe. Vous pouvez utiliser la stratégie d’archivage de l’analyse du code pour contrôler et améliorer la qualité du code est archivé dans la base de code.  
   
  La stratégie est passée lorsque la version locale est à jour et d’analyse du code a été exécutée sur les fichiers les plus récents de la source. Au minimum, les règles d’analyse de code qui sont activées dans le projet de code doivent contenir les mêmes règles que celles qui sont définies dans la stratégie projet d’équipe archivage. Les règles qui ont été spécifiés comme des erreurs dans les paramètres de projet d’équipe doivent également être spécifiés comme des erreurs dans le projet de code  

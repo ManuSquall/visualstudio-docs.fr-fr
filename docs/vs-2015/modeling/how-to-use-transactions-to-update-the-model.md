@@ -1,7 +1,7 @@
 ---
 title: 'Comment : utiliser des Transactions pour mettre à jour le modèle | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fe70656f5bcc9e8c132594ff6bb4fec646e5df5c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 50f9d491ed52098edb8a8ccd1a7b2f9c8834447e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507139"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236858"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Comment : utiliser des transactions pour mettre à jour le modèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : utiliser les Transactions pour mettre à jour le modèle](https://docs.microsoft.com/visualstudio/modeling/how-to-use-transactions-to-update-the-model).  
-  
 Transactions Assurez-vous que les modifications qui ont été apportées dans le magasin sont traitées en tant que groupe. Les modifications qui sont regroupées peuvent être validées ou restaurées en tant qu’unité unique.  
   
  Chaque fois que votre code de programme modifie, ajoute ou supprime un élément dans le Store dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling SDK, elle doit le faire à l’intérieur d’une transaction. Il doit y avoir une instance active de <xref:Microsoft.VisualStudio.Modeling.Transaction> associé le Store lorsque la modification se produit. Cela s’applique à tous les éléments de modèle, relations, formes, diagrammes et leurs propriétés.  

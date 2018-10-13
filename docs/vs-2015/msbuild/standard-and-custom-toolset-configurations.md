@@ -1,7 +1,7 @@
 ---
 title: Configurations standard et personnalisée de l’ensemble d’outils | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cbba44792fe004eb06de20d86bf5607af561107e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cdc08d7bdce1f916ad7ed40002069ea7d5f6907f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507810"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236897"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configurations standard et personnalisée de l'ensemble d'outils
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Configurations Standard et personnalisée ensemble d’outils](https://docs.microsoft.com/visualstudio/msbuild/standard-and-custom-toolset-configurations).  
-  
   
 Un ensemble d’outils MSBuild contient des références à des tâches, des cibles et des outils que vous pouvez utiliser pour générer un projet d’application. MSBuild inclut un ensemble d’outils standard, mais vous pouvez également créer des ensembles d’outils personnalisés. Pour plus d’informations sur la façon de spécifier un ensemble d’outils, consultez [Ensemble d’outils (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  
   

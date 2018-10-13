@@ -1,7 +1,7 @@
 ---
 title: Passage en Mode arrêt | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: e9a8a241-cd21-4d4e-999a-283554c288b1
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 25adcc12e6d474899165c1a486fd550f34dd99a4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc4fe6dc7e2739e9f41e43e0f90ec9257c18b9fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500986"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233660"
 ---
 # <a name="entering-break-mode"></a>Entrée dans le mode arrêt
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [entrer le Mode arrêt](https://docs.microsoft.com/visualstudio/extensibility/debugger/entering-break-mode).  
-  
 La section suivante décrit le processus qui se produit lorsqu’un point d’arrêt est rencontrée après le pas à pas détaillé dans une fonction, en cours d’exécution à la ligne de code source qui comporte le curseur ou en cours d’exécution à un point d’arrêt.  
   
 ## <a name="break-mode-process"></a>Arrêter le processus de Mode  

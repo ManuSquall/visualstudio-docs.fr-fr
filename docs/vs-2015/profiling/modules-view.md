@@ -1,7 +1,7 @@
 ---
 title: Vue Modules | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: baf208e30a96efa73e0524fc10a761ac01c316e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c84b71772c42bf11b90005a6951aadbc4b222e53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494527"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239211"
 ---
 # <a name="modules-view"></a>Vue Modules
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [vue Modules](https://docs.microsoft.com/visualstudio/profiling/modules-view).  
-  
 La vue Modules liste les modules des données de profilage. Chaque module est le nœud racine d’une arborescence hiérarchique. Les fonctions profilées du module sont répertoriées sous le nœud du module. Si les données de profilage ont été collectées avec la méthode d’échantillonnage, les informations de ligne figurent sous le nœud de fonction et les données de pointeur d’instruction sont répertoriées sous le nœud de ligne.  
   
  Développez ou réduisez le nom du module pour afficher ou fermer la vue des données de performances du module.  
@@ -45,7 +43,7 @@ La vue Modules liste les modules des données de profilage. Chaque module est le
  [Vue Modules - Données d’instrumentation](../profiling/modules-view-instrumentation-data.md)   
  [Modules, vue - Instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Vue Modules - Échantillonnage](../profiling/modules-view-dotnet-memory-sampling-data.md)   
- [Vue Modules](../profiling/modules-view-contention-data.md)
+ [Modules, mode](../profiling/modules-view-contention-data.md)
 
 
 

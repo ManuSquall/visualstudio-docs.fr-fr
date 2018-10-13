@@ -1,7 +1,7 @@
 ---
 title: Métadonnées en tant que Source | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,12 +20,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: eeebb2e84c7724002b82be68a73f471ca1bcabf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8bcac8071d0cc76c29a5b9d0478727fea0b59901
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495967"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232945"
 ---
 # <a name="metadata-as-source"></a>Métadonnées en tant que source
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
