@@ -1,7 +1,7 @@
 ---
 title: À l’aide de Visual Studio ModelBus dans un modèle de texte | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3c6c3d9e35f14a03f8130982c562ba812ac11d6b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6defdf3613f9ac8f270a8e0140115cdca2328e0c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508166"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189395"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Utilisation de Visual Studio ModelBus dans un modèle de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [à l’aide de Visual Studio ModelBus dans un modèle de texte](https://docs.microsoft.com/visualstudio/modeling/using-visual-studio-modelbus-in-a-text-template).  
-  
 Si vous écrivez des modèles de texte qui lisent un modèle qui contient [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] référence ModelBus, vous pouvez résoudre les références pour accéder aux modèles cible. Dans ce cas, vous devez adapter les modèles de texte et les langages spécifiques à un domaine référencés (DSL) :  
   
 -   La solution DSL qui est la cible des références doit avoir un adaptateur ModelBus configuré pour l’accès à partir de modèles de texte. Si vous accédez également à la solution DSL à partir de tout autre code, la carte reconfigurée est nécessaire en plus de l’adaptateur ModelBus standard.  

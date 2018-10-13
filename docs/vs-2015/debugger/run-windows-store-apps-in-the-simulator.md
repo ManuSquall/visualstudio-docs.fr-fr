@@ -1,7 +1,7 @@
 ---
 title: Applications d’exécution Windows Store dans le simulateur | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3007d0e6ea7a835cd9147f5f5ff94c91f9f7bda4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b17f8abed32a14aead89a685a030654e1afe32f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504501"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190721"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Exécuter des applications du Windows Store dans le simulateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Run Windows Store des applications dans le simulateur](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-in-the-simulator).  
-  
 Le simulateur Visual Studio pour les applications Windows Store est une application de bureau qui simule une application Windows Store. Vous pouvez exécuter des applications et simuler les événements tactiles et de rotation courants sur votre ordinateur de développement. Vous pouvez également choisir la taille d’écran et la résolution physiques que vous souhaitez émuler et simuler les propriétés de connexion réseau.  
   
  Le simulateur fournit un environnement dans lequel vous pouvez concevoir, développer, déboguer et tester des applications du Windows Store. Toutefois, avant de publier votre application sur le Windows Store, vous devez la tester sur un appareil réel.  
@@ -104,7 +102,7 @@ Le simulateur Visual Studio pour les applications Windows Store est une applicat
  La taille et la résolution de l'écran sont indiquées en *Largeur écran pouces, largeur pixel X hauteur pixel*. Notez que la taille et la résolution de l'écran sont simulées. Les coordonnées de l'emplacement sur le simulateur sont traduites en coordonnées de la taille et de la résolution du périphérique sélectionnées.  
   
 > [!NOTE]
->  Enregistrez les versions mises à l'échelle d'images bitmap dans votre application et Windows chargera l'image appropriée à l'échelle actuelle. Pour plus d’informations, consultez [101 de conception réactive](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx). Toutefois, si vous modifiez la résolution du simulateur pour que Windows sélectionne une image différente en fonction de la résolution, vous devez arrêter et redémarrer la session de débogage pour afficher la nouvelle image.  
+>  Enregistrez les versions mises à l'échelle d'images bitmap dans votre application et Windows chargera l'image appropriée à l'échelle actuelle. Pour plus d’informations, consultez [Conception dynamique (101) des applications de plateforme Windows universelle (UWP)](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx). Toutefois, si vous modifiez la résolution du simulateur pour que Windows sélectionne une image différente en fonction de la résolution, vous devez arrêter et redémarrer la session de débogage pour afficher la nouvelle image.  
   
 ##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Capturer un écran de votre application à envoyer au Windows Store  
  Quand vous envoyez une application au Windows Store, vous devez inclure des captures d’écran de l’application.  
@@ -119,9 +117,9 @@ Le simulateur Visual Studio pour les applications Windows Store est une applicat
      ![Menu contextuel des paramètres d’écran](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> Simuler des propriétés de connexion réseau  
- Vous pouvez aider les utilisateurs de votre application à gérer le coût des connexions réseau limitées en faisant bien comprendre le coût des connexions réseau ou les modifications de l'état du forfait données et en permettant à votre application d'utiliser ces informations pour éviter de subir des frais d'itinérance supplémentaires ou de dépasser la limite de transfert de données spécifiée. Le [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) API vous permettent de répondre aux [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) et [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) les événements qui se connectent. Consultez [Comment gérer les contraintes liées au coût des connexions réseau limitées (HTML)](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
+ Vous pouvez aider les utilisateurs de votre application à gérer le coût des connexions réseau limitées en faisant bien comprendre le coût des connexions réseau ou les modifications de l'état du forfait données et en permettant à votre application d'utiliser ces informations pour éviter de subir des frais d'itinérance supplémentaires ou de dépasser la limite de transfert de données spécifiée. Les API [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) vous permettent de répondre aux événements [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) et [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) qui assurent la connexion. Consultez [Comment gérer les contraintes liées au coût des connexions réseau limitées (HTML)](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
- Pour déboguer ou tester votre code prenant en charge les coûts de réseau, le simulateur peut simuler les propriétés d’un réseau qui sont exposées par le [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) objet retourné par [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx)...  
+ Pour déboguer ou tester votre code réseau sensible au coût, le simulateur peut simuler les propriétés d’un réseau qui sont exposées par l’objet [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) retourné par [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx).  
   
  Pour simuler les propriétés d'un réseau :  
   
@@ -131,15 +129,15 @@ Le simulateur Visual Studio pour les applications Windows Store est une applicat
   
      Désactivez la case à cocher pour supprimer la simulation et pour revenir aux propriétés du réseau de l'interface actuellement connectée.  
   
-3.  Entrez un nom dans **Nom du profil** pour le réseau simulé. Nous vous recommandons d’utiliser un nom unique que vous pouvez utiliser pour identifier la simulation dans la [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) propriété de la [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) objet.  
+3.  Entrez un nom dans **Nom du profil** pour le réseau simulé. Nous vous recommandons d’utiliser un nom unique que vous pouvez utiliser pour identifier la simulation dans la propriété [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) de l’objet [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) .  
   
-4.  Sélectionnez le [NetworkCostType](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) valeur pour le profil à partir de la **Type de coût réseau** liste.  
+4.  Sélectionnez la valeur [NetworkCostType](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) du profil dans la liste **Type de coût réseau** .  
   
-5.  À partir de la **indicateur d’état de limite de données** liste, vous pouvez définir le [ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx) propriété ou le [OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)sur true, ou vous pouvez choisir  **Sous la limite de données** pour affecter la valeur False.  
+5.  Dans la liste **Indicateur d’état de limite de données** , vous pouvez affectez la valeur true à la propriété [ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx) ou [OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)ou choisir **En deçà de la limite de données** pour affecter la valeur false aux deux propriétés.  
   
-6.  À partir de la **état d’itinérance** liste, définissez la [itinérance](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx) propriété.  
+6.  Dans la liste **État d’itinérance** , définissez la propriété [Roaming](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx) .  
   
-7.  Choisissez **définir les propriétés** pour simuler les propriétés réseau en déclenchant un premier plan [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) événement et un arrière-plan [SystemTrigger](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) de type  **NetworkStateChange**.  
+7.  Choisissez **Définir les propriétés** pour simuler les propriétés réseau en déclenchant un événement [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) de premier plan et un événement [SystemTrigger](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) d’arrière-plan de type **NetworkStateChange**.  
   
  **Pour plus d'informations sur la gestion des connexions réseau**  
   

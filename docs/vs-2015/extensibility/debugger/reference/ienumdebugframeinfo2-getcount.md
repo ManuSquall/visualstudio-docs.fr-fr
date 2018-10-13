@@ -1,7 +1,7 @@
 ---
 title: IEnumDebugFrameInfo2::GetCount | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d02a08e3-f34f-461e-8195-5157e154c481
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0fb2d31b74b73f59586be359e62d5ab176b8c9f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e75cc1491851785cb72251e7fe27ee305348060d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502393"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184780"
 ---
 # <a name="ienumdebugframeinfo2getcount"></a>IEnumDebugFrameInfo2::GetCount
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IEnumDebugFrameInfo2::GetCount](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ienumdebugframeinfo2-getcount).  
-  
 Retourne le nombre d’éléments dans l’énumération.  
   
 ## <a name="syntax"></a>Syntaxe  

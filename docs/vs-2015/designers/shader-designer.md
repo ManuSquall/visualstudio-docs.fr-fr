@@ -1,7 +1,7 @@
 ---
 title: Concepteur de nuanceur | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a8a6e0bb39ee501f72c96b55575859af0ce1e26
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c1342d97d07ab44a30768e7515521c7d08b90e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508556"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182792"
 ---
 # <a name="shader-designer"></a>Concepteur Shader
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [concepteur Shader](https://docs.microsoft.com/visualstudio/designers/shader-designer).  
-  
 Ce document décrit l’utilisation du concepteur de nuanceur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour créer, modifier et exporter des effets visuels personnalisés, appelés *nuanceurs*.  
   
  Le concepteur de nuanceur vous permet de créer des effets visuels personnalisés pour votre jeu ou votre application même si vous ne connaissez pas la programmation HLSL. Pour créer un nuanceur dans le concepteur de nuanceur, il vous suffit de le disposer sous forme de graphique. En d’autres termes, vous ajoutez à l’aire de conception des *nœuds* qui représentent des données et des opérations, avant de créer des connexions entre eux pour définir le traitement des données par ces opérations. À chaque nœud d’opération, un aperçu de l’effet jusqu’à ce point est fourni afin que vous puissiez visualiser son résultat. Les flux de données transitent via les nœuds vers un nœud final qui représente la sortie du nuanceur.  

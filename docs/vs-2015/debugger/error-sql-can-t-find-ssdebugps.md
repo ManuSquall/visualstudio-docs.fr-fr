@@ -1,7 +1,7 @@
 ---
 title: 'Erreur : SQL peut&#39;t à détecter SSDEBUGPS | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1782412ded2c4edff0da29b13160107664170d20
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f775bd99c019a119d1bcd5193df0efd7ceadd096
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506971"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180165"
 ---
 # <a name="error-sql-can39t-find-ssdebugps"></a>Erreur : SQL peut&#39;t à détecter SSDEBUGPS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [erreur : SQL peut&#39;t pas SSDEBUGPS de trouver](https://docs.microsoft.com/visualstudio/debugger/error-sql-can-t-find-ssdebugps).  
-  
 SSDEBUGPS.dll est le composant SQL Server Debugging Host.  
   
  Cette erreur se produit lorsque vous essayez de commencer à déboguer, et indique que le fichier spécifié n'est pas présent sur l'ordinateur [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)]. Les causes possibles sont que soit le programme d'installation du débogage distant n'a jamais été exécuté, soit ce fichier a été supprimé.  

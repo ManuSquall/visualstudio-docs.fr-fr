@@ -1,7 +1,7 @@
 ---
 title: Utiliser plusieurs comptes d’utilisateur | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3559e6df1f675489d15b2cfd53ef80737e003cb5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93f029a067e5a45930c2ac827862c1807e32aff8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505586"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176265"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Utiliser plusieurs comptes d’utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [fonctionne avec plusieurs comptes d’utilisateur](https://docs.microsoft.com/visualstudio/ide/work-with-multiple-user-accounts).  
-  
 Si vous avez plusieurs comptes Microsoft et/ou comptes professionnels ou scolaires, vous pouvez les ajouter à Visual Studio. Vous avez ainsi accès aux ressources de n'importe quel compte sans avoir à vous y connecter séparément. À compter de Visual Studio 2015 RTM, Azure, Application Insights, Team Foundation Server et Office 365 prennent en charge l'expérience de connexion simplifiée. D'autres services pourront être rajoutés au fil du temps.  
   
  Après avoir ajouté plusieurs comptes sur un ordinateur, vous pourrez y accéder si vous vous connectez à Visual Studio sur un autre ordinateur. Il est important de noter que, bien que les noms de comptes soient itinérants, les informations d'identification ne le sont pas. Par conséquent, vous devrez entrer les informations d'identification de ces autres comptes la première fois que vous essayerez d'utiliser leurs ressources sur le nouvel ordinateur.  

@@ -1,7 +1,7 @@
 ---
 title: Paramètres pour une Configuration de débogage Visual Basic du projet | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: af9d9976c6aa6743cfda4c69d3b2f8d958ab03bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a3bcc3b6090efb16d74485bf8e7747d7cc8ee7b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501659"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188667"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Paramètres de projet pour une configuration Debug Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [paramètres de projet pour une Configuration Debug Visual Basic](https://docs.microsoft.com/visualstudio/debugger/project-settings-for-a-visual-basic-debug-configuration).  
-  
 Vous pouvez modifier les paramètres du projet pour un [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] configuration de débogage dans le **Pages de propriétés** fenêtre, comme indiqué dans [Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Les tableaux suivants indiquent où trouver les paramètres du débogueur dans le **Pages de propriétés** fenêtre.  
   
 > [!WARNING]

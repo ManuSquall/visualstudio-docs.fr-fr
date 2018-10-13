@@ -1,7 +1,7 @@
 ---
 title: TemplateData, élément (modèles Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: db17ec9b-bfdf-46b1-bbe7-5ccc140056e2
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 03825105f549030c05ac202f1e3601977adec7f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 52ca9ada28f40beb26ce88c6dfcd42a170ea5010
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495401"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172352"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData, élément (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [TemplateData, élément (modèles Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/templatedata-element-visual-studio-templates).  
-  
 Définit la catégorie du modèle et comment il s’affiche dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément** .  
   
  \<VSTemplate >  
@@ -56,7 +54,7 @@ Définit la catégorie du modèle et comment il s’affiche dans la boîte de di
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Nom](../extensibility/name-element-visual-studio-templates.md)|Élément requis.<br /><br /> Spécifie le nom du modèle tel qu’il apparaît dans un le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.|  
+|[Name](../extensibility/name-element-visual-studio-templates.md)|Élément requis.<br /><br /> Spécifie le nom du modèle tel qu’il apparaît dans un le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.|  
 |[Description](../extensibility/description-element-visual-studio-templates.md)|Élément requis.<br /><br /> Spécifie la description du modèle tel qu’il apparaît dans un le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.|  
 |[Icône](../extensibility/icon-element-visual-studio-templates.md)|Élément requis.<br /><br /> Spécifie le chemin d’accès et le nom de fichier du fichier image qui sert d’icône qui apparaît dans un le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue, pour le modèle.|  
 |[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)|Élément requis.<br /><br /> Catégorie du modèle de projet pour qu’il apparaisse sous le groupe spécifié dans le **nouveau projet** boîte de dialogue.|  

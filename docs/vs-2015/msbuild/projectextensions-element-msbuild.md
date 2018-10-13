@@ -1,7 +1,7 @@
 ---
 title: Élément ProjectExtensions (MSBuild) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 156a35a953169c5b1ed8208c8d4f044f7b9fa36f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 41b3ed5fc742f95cde3c834e5d8612daafef5d6d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508716"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189109"
 ---
 # <a name="projectextensions-element-msbuild"></a>ProjectExtensions, élément (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [ProjectExtensions, élément (MSBuild)](https://docs.microsoft.com/visualstudio/msbuild/projectextensions-element-msbuild).  
-  
   
 Permet à des fichiers projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] de contenir des informations autres que [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Tout élément inclus dans un élément `ProjectExtensions` est ignoré par [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
@@ -63,7 +61,7 @@ Permet à des fichiers projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-m
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Projet](../msbuild/project-element-msbuild.md)|Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].|  
+|[Projet](../msbuild/project-element-msbuild.md)|Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .|  
   
 ## <a name="remarks"></a>Notes  
  Un seul élément `ProjectExtensions` peut être utilisé dans un projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  

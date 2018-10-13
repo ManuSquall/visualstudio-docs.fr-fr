@@ -1,7 +1,7 @@
 ---
 title: IDiaSourceFile::get_compilands | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bc576a2fdd3b2a02b1b049a90bdf9f45f490f737
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ea4603f6ddf6446fa51691ea1b482c18e707457
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506231"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184156"
 ---
 # <a name="idiasourcefilegetcompilands"></a>IDiaSourceFile::get_compilands
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDiaSourceFile::get_compilands](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasourcefile-get-compilands).  
-  
 Récupère un énumérateur de compilands qui ont des numéros de ligne référençant ce fichier.  
   
 ## <a name="syntax"></a>Syntaxe  

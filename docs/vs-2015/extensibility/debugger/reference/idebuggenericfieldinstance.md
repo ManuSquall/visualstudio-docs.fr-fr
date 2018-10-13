@@ -1,7 +1,7 @@
 ---
 title: IDebugGenericFieldInstance | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f68b4761-be8b-4801-9d4b-cde90e01d95e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 09e8789c68d6f96aa1cb8cc64e3b1e39002608a8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 35e05b0c57e32832c2203da12948168ba1e12ec3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505085"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186132"
 ---
 # <a name="idebuggenericfieldinstance"></a>IDebugGenericFieldInstance
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDebugGenericFieldInstance](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebuggenericfieldinstance).  
-  
 Représente une instance d’un champ pour un type générique du code managé.  
   
 ## <a name="syntax"></a>Syntaxe  

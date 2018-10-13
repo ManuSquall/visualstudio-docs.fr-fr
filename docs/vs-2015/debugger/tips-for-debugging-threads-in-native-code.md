@@ -1,7 +1,7 @@
 ---
 title: Conseils pour le débogage de Threads en Code natif | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02343da30e4f185a5b4aa236ed9b0b3ef823c4bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 06e8690583794c23ce95fb52ef6cab3ab6667afe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494968"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184923"
 ---
 # <a name="tips-for-debugging-threads-in-native-code"></a>Conseils pour le débogage de threads en code natif
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [conseils pour le débogage de Threads en Code natif](https://docs.microsoft.com/visualstudio/debugger/tips-for-debugging-threads-in-native-code).  
-  
 Voici quelques conseils que vous utiles pour le débogage de threads en code natif :  
   
 -   Vous pouvez afficher le contenu du bloc d’informations du Thread en tapant `@TIB` dans le **espion** fenêtre ou **Espion express** boîte de dialogue.  

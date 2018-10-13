@@ -1,7 +1,7 @@
 ---
 title: Features1 de Service de langage hérité | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a646e4f0-767d-4cd1-8e1a-9a2aa210a1b7
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6ed5b66c8148df36b89cfb6e6ae048a05f393551
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4e864f9899c274fe58da16cdb5581058dd20f725
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501096"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185386"
 ---
 # <a name="legacy-language-service-features"></a>Fonctionnalités de Service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Features1 de Service de langage hérité](https://docs.microsoft.com/visualstudio/extensibility/internals/legacy-language-service-features1).  
-  
 Un service de langage de framework (MPF) package managé peut prendre en charge un ou plusieurs [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fonctionnalités, telles que la coloration syntaxique, IntelliSense et validation de point d’arrêt. Chaque fonctionnalité peut être implémentée indépendant des autres, mais requièrent tous un analyseur et un analyseur à l’exception de la coloration syntaxique, ce qui nécessite uniquement un scanneur.  
   
 ## <a name="in-this-section"></a>Dans cette section  

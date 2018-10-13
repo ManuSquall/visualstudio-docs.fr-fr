@@ -1,7 +1,7 @@
 ---
 title: 'Comment : déboguer en Mode mixte | Microsoft Docs'
 ms.custom: ''
-ms.date: 06/19/2017
+ms.date: 06/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,46 +19,48 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 834288c063a4bc0d830f121dcb8589b509c61bcf
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 8a08cf3cf95073d06c1dfa350f2de86bf72837c5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256160"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182674"
 ---
 # <a name="how-to-debug-in-mixed-mode"></a>Comment : déboguer en mode mixte
-Les procédures suivantes décrivent comment déboguer le code managé et le code natif, également connu sous le nom de débogage en mode mixte. Pour ce faire, il existe deux scénarios, selon si la DLL ou l'application est écrite en code natif :  
+Les procédures suivantes décrivent comment activer le débogage de code managé et natif simultanément, également appelé en mode mixte. Il existe deux scénarios de débogage en mode mixte :  
   
--   L'application appelante qui appelle votre DLL est écrite en code natif. Dans ce cas, votre DLL est managée et les débogueurs managés et natifs doivent être activés pour déboguer ces deux types de code. Vous pouvez le vérifier dans le  **\<projet > Pages de propriétés** boîte de dialogue. Tout dépend si vous avez démarré le débogage à partir du projet DLL ou du projet de l'application appelante.  
+- L’application qui appelle une DLL est écrite en code natif, et la DLL est gérée. 
   
--   L'application appelante qui appelle votre DLL est écrite en code managé et votre DLL est écrite en code natif. Pour obtenir un didacticiel qui vous guide à travers ces étapes, consultez [déboguer le code managé et natif](../debugger/how-to-debug-managed-and-native-code.md).
-  
+- L’application qui appelle une DLL est écrite en code managé, et la DLL est en code natif. Pour obtenir un didacticiel qui vous guide tout au long de ce scénario plus en détail, consultez [déboguer le code managé et natif](../debugger/how-to-debug-managed-and-native-code.md).
+   
+Vous pouvez activer les débogueurs managés et natifs dans le projet application appelant **propriété** pages. Les paramètres diffèrent entre les applications natives et managées. 
+
+Si vous n’avez pas accès au projet de l’appel d’une application, vous pouvez déboguer la DLL à partir du projet DLL. Vous n’avez pas besoin en mode mixte pour déboguer uniquement le projet DLL. Pour plus d’informations, consultez [Comment : déboguer à partir d’un projet de DLL](../debugger/how-to-debug-from-a-dll-project.md). 
+
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Les boîtes de dialogue et les commandes que vous voyez peuvent différer de ceux de cet article, en fonction de vos paramètres Visual Studio ou votre édition. Pour modifier vos paramètres, choisissez **outils** > **importation et exportation de paramètres**. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-Si vous n’avez pas accès au projet pour l’application appelante, vous pouvez déboguer une DLL à partir du projet DLL. Pour plus d'informations, consultez [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md). Vous n’avez pas besoin d’utiliser le mode mixte pour déboguer uniquement le projet DLL.
+## <a name="enable-mixed-mode-debugging-for-a-native-calling-app"></a>Activer le débogage en mode mixte pour une application d’appel native  
   
-### <a name="to-enable-mixed-mode-debugging-c-calling-app"></a>Pour activer le débogage en mode mixte (application appelante C++)  
-  
-1.  Dans **l’Explorateur de solutions**, sélectionnez le projet natif.
-  
-2.  Dans le menu **vue**, cliquez sur **Pages de propriétés**.
-  
-3.  Dans le  **\<projet > Pages de propriétés** boîte de dialogue, développez le **propriétés de Configuration** nœud, puis sélectionnez **débogage**.  
-  
-4.  Définissez **Type de débogueur** à **mixte** ou **automatique**.
+1. Sélectionnez le projet C++ dans **l’Explorateur de solutions** et cliquez sur le **propriétés** icône, appuyez sur **Alt**+**entrée**, ou avec le bouton droit et choisissez **propriétés**.
+   
+1. Dans le  **\<projet > Pages de propriétés** boîte de dialogue, développez **propriétés de Configuration**, puis sélectionnez **débogage**.  
+   
+1. Définissez **Type de débogueur** à **mixte** ou **automatique**.
+   
+1. Sélectionnez **OK**.
+   
+   ![Activer le débogage en mode mixte](../debugger/media/dbg-mixed-mode-from-native.png "activer le débogage en mode mixte")
 
-    ![Activer le débogage en mode mixte](../debugger/media/dbg-mixed-mode-from-native.png "activer le débogage en mode mixte")
+## <a name="enable-mixed-mode-debugging-for-a-managed-calling-app"></a>Activer le débogage en mode mixte pour une application gérée par appelante  
+  
+1. Sélectionnez le projet c# ou Visual Basic dans **l’Explorateur de solutions** et sélectionnez le **propriétés** icône, appuyez sur **Alt**+**entrée**, ou avec le bouton droit et choisissez **propriétés**.
+   
+1. Sélectionnez le **déboguer** onglet, puis sélectionnez **activer le débogage du code natif**.
+   
+1. Utilisez **fichier** > **enregistrer les éléments sélectionnés** ou **Ctrl + S** pour enregistrer les modifications.
 
-### <a name="to-enable-mixed-mode-debugging-c-or-vb-calling-app"></a>Pour activer le débogage en mode mixte (application appelante en c# ou Visual Basic)   
-  
-1.  Dans **l’Explorateur de solutions**, sélectionnez le projet managé.  
-  
-2.  Dans le menu **vue**, cliquez sur **Pages de propriétés**.  
-  
-3.  Dans le  **\<projet > Pages de propriétés** boîte de dialogue, sélectionnez le **déboguer** onglet, puis sélectionnez **activer le débogage du code natif**
-
-    ![Activer le débogage du code natif](../debugger/media/dbg-mixed-mode-from-csharp.png "activer le débogage du code natif")
+   ![Activer le débogage du code natif](../debugger/media/dbg-mixed-mode-from-csharp.png "activer le débogage du code natif")
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour déboguer à partir d’un projet DLL](../debugger/how-to-debug-from-a-dll-project.md)

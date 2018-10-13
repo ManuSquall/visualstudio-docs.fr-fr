@@ -1,7 +1,7 @@
 ---
 title: Options utilisateur de solution (. Fichier suo) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 75258e0d-600d-4a3d-94f4-3d7ac12cb47c
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 408acad4031417f4c3dd70b49758f8bee8e2819d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e6e9ccc973c4187cce5f44f6f13262fbee0ea53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495269"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186788"
 ---
 # <a name="solution-user-options-suo-file"></a>Fichiers des options utilisateur de solution (.Suo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Options utilisateur de Solution (. Fichier suo)](https://docs.microsoft.com/visualstudio/extensibility/internals/solution-user-options-dot-suo-file).  
-  
 Le fichier d’options (.suo) de solution utilisateur contient des options de la solution par l’utilisateur. Ce fichier ne doit pas être archivé au contrôle de code source.  
   
  Fichier des options (.suo) solution utilisateur soit un stockage structuré, composé, par fichier stocké dans un format binaire. Vous enregistrez des informations utilisateur dans le flux de données avec le nom du flux de données en cours de la clé qui servira à identifier les informations contenues dans le fichier .suo. Le fichier d’options utilisateur solution est utilisé pour stocker les paramètres de préférence utilisateur et est créé automatiquement lorsque Visual Studio enregistre une solution.  

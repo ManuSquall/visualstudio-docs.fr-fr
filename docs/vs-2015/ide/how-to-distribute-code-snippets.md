@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour distribuer des extraits de code | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2bda2aa5e7639b951b0df6bb83ff2d50fd4331e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 14dea3842289b626b79d8dc7e294ba5f335d0351
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495393"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185703"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Guide pratique pour distribuer des extraits de code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : distribuer des extraits de Code](https://docs.microsoft.com/visualstudio/ide/how-to-distribute-code-snippets).  
-  
 Vous pouvez vous contenter de donner vos extraits de code à vos amis pour qu'ils les installent sur leurs propres ordinateurs à l'aide du Gestionnaire des extraits de code. Toutefois, si vous avez plusieurs extraits de code à distribuer ou que vous souhaitez les distribuer plus largement, vous pouvez inclure votre fichier d'extraits de code dans une extension Visual Studio, que les utilisateurs de Visual Studio peuvent installer.  
   
  Vous devez installer le kit SDK Visual Studio pour pouvoir créer des extensions Visual Studio. Recherchez la version du SDK Visual Studio qui correspond à votre installation de Visual Studio dans [téléchargements de Visual Studio 2015](http://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs.aspx).  

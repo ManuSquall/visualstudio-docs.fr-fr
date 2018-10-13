@@ -1,7 +1,7 @@
 ---
 title: Navigation et mise à jour d’un modèle dans du Code programme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4ee04ef978714f2d4925ed14604bf700fd623ef7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4630c6a277c6d9698c7fd1d65b5a292862dc3438
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503490"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190671"
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>Navigation et mise à jour d'un modèle dans le code de programme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [navigation et la mise à jour un modèle dans le Code de programme](https://docs.microsoft.com/visualstudio/modeling/navigating-and-updating-a-model-in-program-code).  
-  
 Vous pouvez écrire du code pour créer et supprimer des éléments de modèle, définissez leurs propriétés et créer et supprimer des liens entre les éléments. Toutes les modifications doivent être effectuées dans une transaction. Si les éléments peuvent être affichés sur un diagramme, le diagramme sera « résolu « automatiquement à la fin de la transaction.  
   
 ## <a name="in-this-topic"></a>Dans cette rubrique  

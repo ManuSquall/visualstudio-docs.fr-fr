@@ -1,7 +1,7 @@
 ---
 title: Modifier & Continuer des erreurs et avertissements (c#) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -66,12 +66,12 @@ ms.assetid: c0e12b0a-8009-4a4a-979f-c804a91a5d9b
 caps.latest.revision: 11
 ms.author: susanno
 manager: douge
-ms.openlocfilehash: 98ee36f703af67b3f6ede230203676a30acf19d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 277208c47a51b1320a29d7cac869b0e786b7b291
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508309"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175953"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>Erreurs et avertissements de Modifier & Continuer (C#)
 Vous avez modifié une section de code qui n'est pas autorisée en Visual C# dans Modifier & Continuer.  
@@ -80,7 +80,7 @@ Vous avez modifié une section de code qui n'est pas autorisée en Visual C# dan
   
  Les modifications de code déclaratif qui affectent la structure publique d'une classe sont interdites, et certaines modifications que vous pouvez apporter à une méthode, au corps d'une propriété ou à des déclarations privées dans une classe ne sont pas autorisées. Autant que possible, Modifier & Continuer marque le code qui ne peut pas être modifié en gris clair et affiche un message d'erreur.  
   
- Pour plus d’informations sur les modifications prises en charge dans Modifier & Continuer pour [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)], consultez [les modifications de Code prises en charge (c#)](../debugger/supported-code-changes-csharp.md). Pour plus d’informations sur une erreur ou un avertissement spécifique, vous pouvez lancer une recherche ou publier une question sur le [forum de l’IDE Visual C#](http://go.microsoft.com/fwlink/?LinkId=214693)dans MSDN.  
+ Pour plus d’informations sur les modifications prises en charge par Modifier &amp; Continuer pour [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)], consultez [Supported Code Changes (C#)](../debugger/supported-code-changes-csharp.md). Pour plus d’informations sur une erreur ou un avertissement spécifique, vous pouvez lancer une recherche ou publier une question sur le [forum de l’IDE Visual C#](http://go.microsoft.com/fwlink/?LinkId=214693)dans MSDN.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   

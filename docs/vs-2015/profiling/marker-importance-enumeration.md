@@ -1,7 +1,7 @@
 ---
 title: marker_importance, énumération | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1564de8b63efa48ad83b1aa09f1fce75ff3fbd75
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 853b31ddec99587c9c649e3ee10d77a6f4b4803e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506972"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179450"
 ---
 # <a name="markerimportance-enumeration"></a>marker_importance, énumération
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [marker_importance, énumération](https://docs.microsoft.com/visualstudio/profiling/marker-importance-enumeration).  
-  
 Représente le niveau d’importance d’un marqueur du visualiseur concurrentiel.  
   
 ## <a name="syntax"></a>Syntaxe  
