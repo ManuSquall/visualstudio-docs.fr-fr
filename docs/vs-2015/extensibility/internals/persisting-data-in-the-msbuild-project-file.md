@@ -1,7 +1,7 @@
 ---
 title: Conservation des données dans le fichier projet MSBuild | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 288fe5387a25ed74f0fd18d9d461328f4e922724
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4fb062ab2a3f3ad692c3b8aff2d6b8d5fefef207
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505246"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187685"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Données persistantes dans le fichier projet MSBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [persistance des données dans le fichier projet MSBuild](https://docs.microsoft.com/visualstudio/extensibility/internals/persisting-data-in-the-msbuild-project-file).  
-  
 Un sous-type de projet peut devoir conserver les données de sous-type dans le fichier projet pour une utilisation ultérieure. Un sous-type de projet utilise la persistance d’un fichier projet pour répondre aux exigences suivantes :  
   
 1.  Conserver les données utilisées dans le cadre de la génération du projet. (Pour plus d’informations sur Microsoft Build Engine, consultez [MSBuild](http://msdn.microsoft.com/en-us/7c49aba1-ee6c-47d8-9de1-6f29a906e20b).) Informations liées à la génération peuvent soit :  

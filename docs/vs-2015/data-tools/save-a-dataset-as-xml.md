@@ -1,7 +1,7 @@
 ---
 title: Enregistrer un jeu de données au format XML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bfea6a97dd5126216d5163dee1dc17e5f6364b46
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a91bc594f2f028f7dfc7a11263b7aac23150b7f5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493211"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287571"
 ---
 # <a name="save-a-dataset-as-xml"></a>Enregistrer un dataset au format XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [enregistrer un jeu de données au format XML](https://docs.microsoft.com/visualstudio/data-tools/save-a-dataset-as-xml).  
-  
   
 Les données XML dans un jeu de données sont accessible en appelant les méthodes XML disponibles sur le jeu de données. Pour enregistrer les données au format XML, vous pouvez appeler soit la <xref:System.Data.DataSet.GetXml%2A> (méthode) ou le <xref:System.Data.DataSet.WriteXml%2A> méthode d’un <xref:System.Data.DataSet>.  
   

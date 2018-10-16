@@ -1,7 +1,7 @@
 ---
 title: EXCEPTION_STATE | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 597f4f4c-9b70-485c-b5dc-3c2e3aecc664
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 13f58a6442046705fa3971d38a27613d52cd07d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c35c59d491f28051bf7b5149ddcff74a386d179e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493956"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306761"
 ---
 # <a name="exceptionstate"></a>EXCEPTION_STATE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [EXCEPTION_STATE](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/exception-state).  
-  
 Spécifie l’état d’exception.  
   
 ## <a name="syntax"></a>Syntaxe  

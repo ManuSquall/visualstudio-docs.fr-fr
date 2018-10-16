@@ -1,7 +1,7 @@
 ---
 title: Mettre à jour un modèle UML à partir d’un thread d’arrière-plan | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 448a24d2bfe7a466a239c025046bd0e6f13ea64e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ed72cc65535849516de35c861942913ca750fba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516647"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216851"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>Mettre à jour un modèle UML à partir d'un thread d'arrière-plan
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [mettre à jour un modèle UML à partir d’un thread d’arrière-plan](https://docs.microsoft.com/visualstudio/modeling/update-a-uml-model-from-a-background-thread).  
-  
 Il peut parfois être utile apporter des modifications à un modèle dans un thread d'arrière-plan. Par exemple, si vous chargez des informations à partir d'une ressource externe lente, vous pouvez utiliser un thread d'arrière-plan pour superviser les mises à jour. Cela permet à l'utilisateur de voir chaque mise à jour dès qu'elle a lieu.  
   
  Toutefois, vous devez savoir que le magasin UML n'est pas thread-safe. Les précautions suivantes sont importantes :  

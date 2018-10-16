@@ -1,7 +1,7 @@
 ---
 title: '&lt;assembly&gt; , élément (Application ClickOnce) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: edd968ffb6f2b0422e54bc6d456c1090d189fcc0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 44437c0ff78c5f957a0d774530e8911513ba0fd6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504494"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191774"
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;assembly&gt; , élément (Application ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [ &lt;assembly&gt; , élément (Application ClickOnce)](https://docs.microsoft.com/visualstudio/deployment/assembly-element-clickonce-application).  
-  
 Élément de niveau supérieur pour le manifeste d’application.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -56,7 +54,7 @@ Vous trouverez la dernière version de cette rubrique dans [ &lt;assembly&gt; , 
   
  Les éléments enfants de l’assembly doivent également être dans ces espaces de noms, par héritage ou par balisage.  
   
- Le `assembly` élément a l’attribut suivant.  
+ L’élément `assembly` comporte l’attribut suivant.  
   
 |Attribut|Description|  
 |---------------|-----------------|  

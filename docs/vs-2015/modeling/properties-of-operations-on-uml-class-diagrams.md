@@ -1,7 +1,7 @@
 ---
 title: Propriétés d’opérations sur UML des diagrammes de classes | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e977ede02f355724f1a93f82f1c688de27e36fa6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c2392cf951c5f25a5b287a1d56338b03bebb27e0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590605"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207023"
 ---
 # <a name="properties-of-operations-on-uml-class-diagrams"></a>Propriétés d'opérations dans des diagrammes de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [diagrammes de classes de propriétés d’opérations sur UML](https://docs.microsoft.com/visualstudio/modeling/properties-of-operations-on-uml-class-diagrams).  
-  
 Sur un diagramme de classes UML, vous pouvez ajouter *opérations* aux classes et interfaces. Une opération est une méthode ou une fonction qui peut être exécutée par une instance d'une classe ou d'une interface.  
   
  Pour ajouter une opération, avec le bouton droit de la classe ou interface, pointez sur **ajouter**, puis cliquez sur **opération**.  

@@ -1,7 +1,7 @@
 ---
 title: Créer des diagrammes et projets de modélisation UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3cf34434bb600131bdd3a5aeeee9d2d3be98c96f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69027b99d1c7db25f1d01e91d8e6d5c05141a2d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507732"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250482"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Créer des projets et des diagrammes de modélisation UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [diagrammes et projets de modélisation UML créer](https://docs.microsoft.com/visualstudio/modeling/create-uml-modeling-projects-and-diagrams).  
-  
 Les modèles UML vous aident à comprendre, à expliquer et à concevoir les systèmes logiciels. Visual Studio fournit des modèles pour cinq des diagrammes UML les plus fréquemment utilisés : activités, classes, composant, séquence et cas d'usage. En outre, vous pouvez créer des diagrammes de couche, qui vous aideront à définir la structure de votre système.  
   
  Les diagrammes de modélisation UML et les diagrammes de couche ne peuvent exister qu'à l'intérieur d'un projet de modélisation. Chaque projet de modélisation contient un modèle UML partagé et plusieurs diagrammes UML. Chaque diagramme est une vue partielle du modèle. Le modèle UML contient tous les éléments des diagrammes UML et peut être affiché à l'aide de l'Explorateur de modèles UML. Pour plus d’informations sur les modèles et leur relation aux diagrammes, consultez [modèles et diagrammes UML modifier](../modeling/edit-uml-models-and-diagrams.md). Pour plus d’informations sur les projets de modélisation sous contrôle de version, consultez [gérer des modèles et des diagrammes sous contrôle de version](../modeling/manage-models-and-diagrams-under-version-control.md) et [structurer votre solution de modélisation](../modeling/structure-your-modeling-solution.md)  
@@ -148,7 +146,7 @@ Les modèles UML vous aident à comprendre, à expliquer et à concevoir les sys
   
 -   Diagrammes de classes créés en tant que vues du code source. Ils ne sont pas liés aux diagrammes de classes UML. Pour plus d’informations, consultez [conception et affichage des Classes et des Types](../ide/designing-and-viewing-classes-and-types.md).  
   
--   Cartes de code. Consultez [mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md).  
+-   Cartes de code. Consultez [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md).  
   
 -   Diagrammes qui ne sont pas des diagrammes UML ou des diagrammes de couche, tels que les langages spécifiques du domaine.  
   

@@ -1,7 +1,7 @@
 ---
 title: La vue messages | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d603ad157786df756f130c3bf203961b48a610f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 76d033cdbe0949cfe861f44be8f390d72c316af8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507135"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182089"
 ---
 # <a name="messages-view"></a>Affichage Messages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [vue Messages](https://docs.microsoft.com/visualstudio/debugger/messages-view).  
-  
 Chaque fenêtre a un flux de message associé. Une fenêtre d’affichage de Messages affiche ce flux de message. Le handle de fenêtre, le code de message et le message sont affichés. Vous pouvez créer un affichage de Messages pour un thread ou un processus. Cela vous permet de vous permet d’afficher les messages envoyés à toutes les fenêtres appartenant à un processus spécifique ou un thread, qui est particulièrement utile pour capturer les messages de l’initialisation de fenêtre.  
   
  Une fenêtre d’affichage de Messages standard s’affiche ci-dessous. Notez que la première colonne contient le handle de fenêtre et la deuxième colonne contient un code de message (expliqué dans [Codes des messages](../debugger/message-codes.md)). Paramètres de message décodés et les valeurs de retour sont sur la droite.  

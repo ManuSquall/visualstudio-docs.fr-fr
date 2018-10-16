@@ -1,7 +1,7 @@
 ---
 title: Concepteur d’activités Send | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 95aa5a3bd0cefae930d2eb0023b6ddd7afbe14e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d2d0bfb5d760d21f832523231b4984362ba2eb3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493574"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272686"
 ---
 # <a name="send-activity-designer"></a>Concepteur d'activités Send
 Le **envoyer** ActivityDesigner est utilisé pour créer et configurer un <xref:System.ServiceModel.Activities.Send> activité.  
@@ -32,7 +32,7 @@ Le **envoyer** ActivityDesigner est utilisé pour créer et configurer un <xref:
   
  Le **envoyer** Concepteur d’activités peut être déplacé de la **boîte à outils** et déposé dans le [!INCLUDE[wfd2](../includes/wfd2-md.md)] surface, là où les activités sont généralement placées. Cette opération crée une activité <xref:System.ServiceModel.Activities.Send> avec une propriété <xref:System.Activities.Activity.DisplayName%2A> affectée de la valeur par défaut Send. Le <xref:System.Activities.Activity.DisplayName%2A> peuvent être modifiées dans l’en-tête de la **envoyer** Concepteur d’activités ou dans le **DisplayName** case de la grille des propriétés.  
   
- Pour créer un <xref:System.ServiceModel.Activities.ReceiveReply> activité et liez-le au <xref:System.ServiceModel.Activities.Send> activité, avec le bouton droit le **envoyer** cliquez concepteur, activité le **Create ReceiveReply** élément dans le menu contextuel et le **ReceiveReplyForSend** concepteur apparaît sous le **envoyer** concepteur. L'activité <xref:System.ServiceModel.Activities.ReceiveReply> est une activité qui reçoit un message dans le cadre d'un modèle d'échange de messages de demande/réponse sur le client. Il peut être configuré avec le **ReceiveReplyForSend** concepteur.  
+ Pour créer un <xref:System.ServiceModel.Activities.ReceiveReply> activité et liez-le au <xref:System.ServiceModel.Activities.Send> activité, avec le bouton droit le **envoyer** cliquez concepteur, activité le **Create ReceiveReply** élément dans le menu contextuel et le **ReceiveReplyForSend** concepteur apparaît sous le **envoyer** concepteur. L’activité <xref:System.ServiceModel.Activities.ReceiveReply> est une activité qui reçoit un message dans le cadre d’un modèle d’échange de messages de demande/réponse sur le client. Il peut être configuré avec le **ReceiveReplyForSend** concepteur.  
   
  Vous pouvez également le **SendAndReceiveReply** Concepteur de modèles dans le **Messaging** catégorie de la **boîte à outils** peut être utilisé pour créer une paire de préconfiguré<xref:System.ServiceModel.Activities.Send>et <xref:System.ServiceModel.Activities.ReceiveReply> activités. [!INCLUDE[crabout](../includes/crabout-md.md)] l’utilisation de la **SendAndReceiveReply** et **ReceiveReplyForSend** modèles, consultez le [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md) rubrique.  
   
@@ -46,7 +46,7 @@ Le **envoyer** ActivityDesigner est utilisé pour créer et configurer un <xref:
 |<xref:System.ServiceModel.Activities.Send.ServiceContractName%2A>|True|Nom du contrat de service que le service à appeler implémente.|  
 |<xref:System.ServiceModel.Activities.Send.Content%2A>|False|Spécifie le contenu du message ou du paramètre à recevoir. Il peut s'agir d'une activité <xref:System.ServiceModel.Activities.ReceiveMessageContent> ou d'une activité <xref:System.ServiceModel.Activities.ReceiveParametersContent>. Modifier cette propriété en cliquant sur le bouton de sélection en regard de la **contenu** champ dans la grille des propriétés ou en cliquant sur le **définir...** bouton en regard de la **contenu** de l’étiquette sur le **réception** aire du Concepteur d’activités. Les deux affichent la **définition du contenu** boîte de dialogue. [!INCLUDE[crabout](../includes/crabout-md.md)] comment utiliser cette zone, consultez la [boîte de dialogue de définition de contenu](../workflow-designer/content-definition-dialog-box.md) rubrique.|  
 |<xref:System.ServiceModel.Activities.Send.CorrelatesWith%2A>|False|Spécifie l'objet <xref:System.ServiceModel.Activities.CorrelationHandle> utilisé pour router le message vers l'instance de workflow appropriée.<br /><br /> Cliquez sur le bouton de sélection en regard du <xref:System.ServiceModel.Activities.Send.CorrelatesWith%2A> propriété dans la grille des propriétés pour ouvrir la **Éditeur d’Expression** boîte de dialogue. [!INCLUDE[crabout](../includes/crabout-md.md)] l’utilisation de cette boîte de dialogue, consultez la [Comment : utiliser l’éditeur d’expressions](../workflow-designer/how-to-use-the-expression-editor.md) rubrique.|  
-|<xref:System.ServiceModel.Activities.Send.CorrelationInitializers%2A>|False|Spécifie la collection d'objets <xref:System.ServiceModel.Activities.CorrelationInitializer> initialisant plusieurs objets <xref:System.ServiceModel.Activities.CorrelationHandle> qui configurent cette activité <xref:System.ServiceModel.Activities.Send> dans le workflow. Cliquez sur le bouton de sélection en regard du <xref:System.ServiceModel.Activities.Send.CorrelationInitializers%2A> propriété dans la grille des propriétés pour ouvrir la **ajouter des initialiseurs de corrélation** boîte de dialogue. [!INCLUDE[crabout](../includes/crabout-md.md)] l’utilisation de cette zone, consultez la [boîte de dialogue Ajouter CorrelationInitializers](../workflow-designer/add-correlationinitializers-dialog-box.md) rubrique.|  
+|<xref:System.ServiceModel.Activities.Send.CorrelationInitializers%2A>|False|Spécifie la collection d’objets <xref:System.ServiceModel.Activities.CorrelationInitializer> initialisant plusieurs objets <xref:System.ServiceModel.Activities.CorrelationHandle> qui configurent cette activité <xref:System.ServiceModel.Activities.Send> dans le workflow. Cliquez sur le bouton de sélection en regard du <xref:System.ServiceModel.Activities.Send.CorrelationInitializers%2A> propriété dans la grille des propriétés pour ouvrir la **ajouter des initialiseurs de corrélation** boîte de dialogue. [!INCLUDE[crabout](../includes/crabout-md.md)] l’utilisation de cette zone, consultez la [boîte de dialogue Ajouter CorrelationInitializers](../workflow-designer/add-correlationinitializers-dialog-box.md) rubrique.|  
 |<xref:System.ServiceModel.Activities.Send.KnownTypes%2A>|False|Collection de types connus pour l'opération de service que cette activité <xref:System.ServiceModel.Activities.Send> doit appeler. Cette propriété doit être utilisée conjointement à la propriété <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> affectée de la valeur <xref:System.Runtime.Serialization.DataContractSerializer>. Elle est ignorée si <xref:System.Xml.Serialization.XmlSerializer> est utilisé.<br /><br /> Cliquez sur le bouton de sélection en regard de la **KnownTypes** champ dans la grille des propriétés pour afficher la **éditeur de collections de Type** boîte de dialogue avec laquelle vous pouvez ajouter des types pertinents.<br /><br /> Cliquez sur le bouton de sélection en regard de la **KnownTypes** champ dans la grille des propriétés pour afficher la **éditeur de collections de Type** boîte de dialogue avec laquelle vous pouvez ajouter des types pertinents. [!INCLUDE[crabout](../includes/crabout-md.md)] l’utilisation de cette zone, consultez la [boîte de dialogue Éditeur de Type Collection](../workflow-designer/type-collection-editor-dialog-box.md) rubrique.|  
 |<xref:System.ServiceModel.Activities.Send.ProtectionLevel%2A>|True|Spécifie l'objet <xref:System.Net.Security.ProtectionLevel> du message.<br /><br /> 1. <xref:System.Net.Security.ProtectionLevel> signifie que l’authentification uniquement.<br />2. <xref:System.Net.Security.ProtectionLevel> signifie la signature des données pour garantir l’intégrité des données transmises.<br />3. <xref:System.Net.Security.ProtectionLevel> signifie chiffrer et signer des données pour garantir la confidentialité et l’intégrité des données transmises.|  
 |<xref:System.ServiceModel.Activities.Send.SerializerOption%2A>|True|Sérialiseur à utiliser pour l'opération de service que l'activité <xref:System.ServiceModel.Activities.Send> doit appeler. La valeur par défaut est <xref:System.Runtime.Serialization.DataContractSerializer>, qui sérialise et désérialise une instance d'un type dans un flux ou document XML utilisant un contrat de données fourni.|  

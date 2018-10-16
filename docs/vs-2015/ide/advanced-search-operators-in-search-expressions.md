@@ -1,7 +1,7 @@
 ---
 title: Opérateurs de recherche avancée dans les expressions de recherche | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24bf027f2fa480f95c0f223f8a319e7977615454
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 706d6d89d46a1e5db4f94c2e7d5e35ace73e1bac
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505064"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177984"
 ---
 # <a name="advanced-search-operators-in-search-expressions"></a>Opérateurs de recherche avancée dans les expressions de recherche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [opérateurs de recherche avancée dans les Expressions de recherche](https://docs.microsoft.com/visualstudio/ide/advanced-search-operators-in-search-expressions).  
-  
 À l’aide des opérateurs de recherche avancée, vous pouvez affiner votre recherche de contenu en créant des expressions de recherche plus complexes parmi ceux qui sont plus simples. Comme le montre le tableau suivant, ces opérateurs limitent le contexte dans lequel une requête s’exécute.  
   
 > [!WARNING]

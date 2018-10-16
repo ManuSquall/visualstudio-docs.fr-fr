@@ -1,7 +1,7 @@
 ---
 title: Préparation du débogage ASP.NET | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,23 +21,21 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d9f19e062f60f1f72ca1f7e3ee54aeb211e4b75
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 57031fa7529a7ef12c7ad8c2c61b41194bd18f74
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494663"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171495"
 ---
 # <a name="preparing-to-debug-aspnet"></a>Préparation d'un débogage ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [préparation ASP.NET déboguer](https://docs.microsoft.com/visualstudio/debugger/preparing-to-debug-aspnet).  
-  
 Cette section décrit comment configurer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour déboguer un [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ou application WCF.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Configuration système requise](../debugger/aspnet-debugging-system-requirements.md)  
- Décrit la configuration de système d'exploitation requise pour déboguer des applications Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ou WCF à l'aide de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+ Décrit la configuration de système d’exploitation requise pour déboguer des applications Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ou WCF à l’aide de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  [Limitations du débogage WCF](../debugger/limitations-on-wcf-debugging.md)  
  Explique les limites relatives au mode de débogage d'applications Web WCF à l'aide de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  

@@ -1,7 +1,7 @@
 ---
 title: Tâche AssignProjectConfiguration | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c812b74735720d11c5fc4662faff056073dc778d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 57e513dc8b5cb914fd26f23b63e1a7e7d4908b76
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516440"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290509"
 ---
 # <a name="assignprojectconfiguration-task"></a>Tâche AssignProjectConfiguration
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Tâche AssignProjectConfiguration](https://docs.microsoft.com/visualstudio/msbuild/assignprojectconfiguration-task).  
-  
   
 Cette tâche accepte une liste de chaînes de configuration et les affecte aux projets spécifiés.  
   

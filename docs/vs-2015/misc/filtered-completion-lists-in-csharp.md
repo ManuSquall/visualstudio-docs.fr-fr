@@ -1,7 +1,7 @@
 ---
 title: Filtrer les listes de saisie semi-automatique en c# | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,12 +18,12 @@ caps.latest.revision: 17
 author: BillWagner
 ms.author: billchi
 manager: douge
-ms.openlocfilehash: 60b5094c5cacc264fb2a30f9ae7e6445f1859971
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d3960862563728aa4220210581b278a624e2f040
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502228"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258971"
 ---
 # <a name="filtered-completion-lists-in-c"></a>Listes de saisie semi-automatique filtrées en C# #
 Ce contenu a été déplacé vers [listes de saisie semi-automatique en c#](../misc/completion-lists-in-csharp.md)

@@ -1,7 +1,7 @@
 ---
 title: 'Comment : définir un nom de Thread en Code natif | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5b369aaef3134c64ddabbc03d8f7391bcdea3647
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c040677dfe88c4fdd5db2f7077cfcea9e81099c7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505276"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191683"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Comment : définir un nom de thread dans le code natif
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : définir un nom de Thread dans du Code natif](https://docs.microsoft.com/visualstudio/debugger/how-to-set-a-thread-name-in-native-code).  
-  
 Pour définir le nom d'un thread dans votre programme, utilisez la fonction `SetThreadName` , comme le montre l'exemple de code suivant. Notez que le nom de thread est copié vers le thread de sorte que la mémoire du paramètre `threadName` puisse être libérée.  
   
 ## <a name="example"></a>Exemple  

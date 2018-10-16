@@ -1,7 +1,7 @@
 ---
 title: Modifier et continuer, boîte de dialogue | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f3e2dc09bdd40902f934e6f29067f4cb88cbbe48
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5dcb10d5703926fd862060b716e9f2203bfadd45
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502799"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250469"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Boîte de dialogue Modifier & Continuer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Modifier & Continuer la boîte de dialogue](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-dialog-box).  
-  
 Natif uniquement) cette boîte de dialogue s’affiche lorsque vous avez modifié le code pendant le débogage et **Modifier & Continuer** reconnaît pouvoir appliquer les modifications du code. Pour plus d’informations, consultez [Modifier & Continuer](../debugger/edit-and-continue.md).  
   
  **Ne plus afficher cette boîte de dialogue Nouveau**  

@@ -1,7 +1,7 @@
 ---
 title: 'Nouvelle génération de projet : Sous le capot, première partie | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 07532630263c4f7ff8fe0d9281abbbbd47772b3c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 122ef6b8f1e597006fd53e6360d10d304cc760b8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493167"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302612"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Génération de nouveau projet : les rouages du système, partie 1
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [nouvelle génération de projet : Under the Hood, 1ère partie](https://docs.microsoft.com/visualstudio/extensibility/internals/new-project-generation-under-the-hood-part-one).  
-  
 Jamais pensé que sur la façon de créer votre propre type de projet ? Vous vous demandez ce qui se passe réellement lorsque vous créez un nouveau projet ? Prenons un œil en coulisses et voyons ce qui se passe vraiment.  
   
  Il existe plusieurs tâches qui coordonne les Visual Studio pour vous :  

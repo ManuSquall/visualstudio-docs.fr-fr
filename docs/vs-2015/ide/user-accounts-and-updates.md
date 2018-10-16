@@ -1,7 +1,7 @@
 ---
 title: Comptes d’utilisateur et mises à jour | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e3547d2084fe8644b099bac96c8b6b772e16e1e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 76f1e52ed548cdca5bd2e910023e4371fdc87e1f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507797"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222418"
 ---
 # <a name="user-accounts-and-updates"></a>Comptes d'utilisateur et mises à jour
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [comptes d’utilisateur et les mises à jour](https://docs.microsoft.com/visualstudio/ide/user-accounts-and-updates).  
-  
 Visual Studio lui-même est un environnement connecté. En vous connectant, vous activez l'accès à tous les services associés à votre compte d'utilisateur, ainsi qu'à tous les comptes qui sont liés à ce compte. Les paramètres de votre compte vous suivent partout où vous utilisez Visual Studio. Vous pouvez configurer des niveaux d'autorisation sur une instance spécifique de Visual Studio pour des utilisateurs individuels. En outre, Visual Studio vous informe quand une mise à jour est disponible pour les composants de votre installation, par exemple pour un kit SDK.  
   
 ## <a name="in-this-section"></a>Dans cette section  

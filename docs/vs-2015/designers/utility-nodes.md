@@ -1,7 +1,7 @@
 ---
 title: Nœuds utilitaires | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fa242e6c2f609c8ac6214fcbd20d210f7c794b77
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1d85735c5fb355163f2003a27a96675ed097d66e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502178"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174419"
 ---
 # <a name="utility-nodes"></a>Nœuds utilitaires
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [nœuds utilitaires](https://docs.microsoft.com/visualstudio/designers/utility-nodes).  
-  
 Dans le concepteur de nuanceur, les nœuds utilitaires représentent des calculs de nuanceur communs et utiles qui ne s’inscrivent pas parfaitement dans les autres catégories. Certains nœuds utilitaires effectuent des opérations simples comme l’ajout de vecteurs ou le choix conditionnel de résultats, tandis que d’autres effectuent des opérations complexes telles que le calcul des contributions d’éclairage en fonction des modèles d’éclairage les plus utilisés.  
   
 ## <a name="utility-node-reference"></a>Informations de référence des nœuds utilitaires  

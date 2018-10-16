@@ -1,7 +1,7 @@
 ---
 title: Création de groupes de boutons réutilisables | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0c561617-fb86-476d-8bd1-c6e5e7464c65
 caps.latest.revision: 45
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3bf0e2f0fd80e5d6cc4dee56b5c7c87dd7cfd8e5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b248543fa68e700ab978270c5cdb7bbd908c39d4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504982"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232964"
 ---
 # <a name="creating-reusable-groups-of-buttons"></a>Création de groupes de boutons réutilisables
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [création de groupes réutilisable de boutons](https://docs.microsoft.com/visualstudio/extensibility/creating-reusable-groups-of-buttons).  
-  
 Un groupe de commandes est une collection de commandes qui apparaissent toujours ensemble dans un menu ou une barre d’outils. N’importe quel groupe de commandes permettre être réutilisé en l’assignant à menus parent différent dans la section CommandPlacements du fichier .vsct.  
   
  Groupes de commandes contiennent généralement des boutons, mais elles peuvent également contenir des autres menus ou les zones de liste déroulante.  

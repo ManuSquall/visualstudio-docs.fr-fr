@@ -1,7 +1,7 @@
 ---
 title: Définir des règles de règles recommandées managées pour le code managé | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: dedbe4329c35f3d59c4650b028330e4e98691148
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 33c35304643d0743b5da53a75cae9a01125b7da6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493761"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296099"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>Ensemble de règles des règles recommandées managées pour le code managé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [gérés recommandé de règles défini pour le code managé](https://docs.microsoft.com/visualstudio/code-quality/managed-recommended-rules-rule-set-for-managed-code).  
-  
 Vous pouvez utiliser la règle le règles recommandées gérées Microsoft à vous concentrer sur les problèmes les plus critiques dans votre code managé, y compris les failles de sécurité potentielles, les blocages d’application et les autres erreurs de logique et de conception importantes. Vous devez inclure cet ensemble de règles dans tout ensemble de règles personnalisé que vous créez pour vos projets.  
   
 |Règle|Description|  

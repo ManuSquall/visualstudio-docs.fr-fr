@@ -1,7 +1,7 @@
 ---
 title: Serveur et les problèmes de Configuration de Client dans les déploiements ClickOnce | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 17ab417649818e9f56dbd1065929a6240a23d417
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 58a7c92cab0f7bbf410d28cc1bc86dd6ce4f13df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494920"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231523"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problèmes de configuration de serveur et de client lors de déploiements ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [serveur et les problèmes de Configuration de Client dans les déploiements ClickOnce](https://docs.microsoft.com/visualstudio/deployment/server-and-client-configuration-issues-in-clickonce-deployments).  
-  
 Si vous utilisez Internet Information Services (IIS) sur Windows Server, et que votre déploiement contient un type de fichier Windows ne reconnaît pas, tel qu’un fichier Microsoft Word, IIS refusera de transmettre ce fichier, et votre déploiement ne réussira pas.  
   
  En outre, certains serveurs Web et Web tels que les logiciels d’application, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], contiennent une liste de fichiers et les types que vous ne pouvez pas télécharger de fichiers. Par exemple, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] empêche le téléchargement de tous les fichiers Web.config. Ces fichiers peuvent contenir des informations sensibles telles que les noms d’utilisateur et mots de passe.  

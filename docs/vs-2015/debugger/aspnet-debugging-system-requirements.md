@@ -1,7 +1,7 @@
 ---
 title: 'Débogage ASP.NET : Configuration requise | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,19 +22,17 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5386390261028fd635f93bc06d3a3fc8805ebdd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f57cdfc52079a11bfb3bd83baa2e3ff2484d368f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493435"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286479"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>Débogage ASP.NET : configuration requise
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [débogage ASP.NET : configuration système requise](https://docs.microsoft.com/visualstudio/debugger/aspnet-debugging-system-requirements).  
-  
-Cette rubrique décrit les exigences de sécurité et les logiciels pour [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] scénarios de débogage :  
+Cette rubrique décrit les conditions de sécurité et les logiciels requis pour les scénarios de débogage de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] :  
   
 -   Débogage local, dans lequel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et l'application Web s'exécutent sur le même ordinateur. Il y a deux versions de ce scénario :  
   
@@ -47,7 +45,7 @@ Cette rubrique décrit les exigences de sécurité et les logiciels pour [!INCLU
 ## <a name="security-requirements"></a>Conditions de sécurité  
  Pour le débogage distant, les ordinateurs locaux et distants doivent être sur une installation de domaine ou une installation de groupe de travail.  
   
- Pour déboguer le processus de traitement [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], vous devez disposer de l'autorisation pour déboguer ce processus. Par défaut, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] applications s’exécutent en tant que le **ASPNET** utilisateur. Si le processus de traitement s'exécute en tant qu' **ASPNET**ou que **SERVICE RÉSEAU**, vous devez disposer de droits d'administrateur pour le déboguer.  
+ Pour déboguer le processus de traitement [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , vous devez disposer de l'autorisation pour déboguer ce processus. Par défaut, les applications [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] s'exécutent en tant qu'utilisateur **ASPNET** . Si le processus de traitement s'exécute en tant qu' **ASPNET**ou que **SERVICE RÉSEAU**, vous devez disposer de droits d'administrateur pour le déboguer.  
   
  Le nom du processus de traitement [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] varie en fonction du scénario de débogage et de la version d'IIS. Pour plus d'informations, consultez [How to: Find the Name of the ASP.NET Process](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
   

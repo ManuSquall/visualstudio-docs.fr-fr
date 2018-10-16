@@ -1,7 +1,7 @@
 ---
 title: FuncDebugStart | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a0c18b0eed351e059f39adfdc9b66aff6509c7c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 76c88ba68de21eb9f3327953a31776870dc51507
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47496179"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293798"
 ---
 # <a name="funcdebugstart"></a>FuncDebugStart
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [FuncDebugStart](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/funcdebugstart).  
-  
 Si une fonction comporte un point défini sur lequel le débogage consiste à commencer, que le point est identifié par un symbole avec un `SymTagFuncDebugStart` balise.  
   
 ## <a name="properties"></a>Properties  

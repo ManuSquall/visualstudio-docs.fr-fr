@@ -1,7 +1,7 @@
 ---
 title: 'Étape 2 : créer un problème d’addition aléatoire | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 59addf4513afbc1208cabc7ec61eb7a4be4b9a5a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47429cb995dd7374276a9e2872d1b80ed452281a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507131"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204371"
 ---
-# <a name="step-2-create-a-random-addition-problem"></a>Étape 2 : créer un problème d'addition aléatoire
+# <a name="step-2-create-a-random-addition-problem"></a>Étape 2 : créer un problème d'addition aléatoire
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [étape 2 : créer un problème d’Addition aléatoire](https://docs.microsoft.com/visualstudio/ide/step-2-create-a-random-addition-problem).  
-  
 Dans la deuxième partie de ce didacticiel, vous rendez le questionnaire plus difficile en ajoutant des problèmes mathématiques basés sur des nombres aléatoires. Vous créez également une méthode qui s'appelle `StartTheQuiz()` et qui renseigne les problèmes et démarre le temporisateur. Plus tard dans ce didacticiel, vous ajouterez des problèmes de soustraction, de multiplication et de division.  
   
 > [!NOTE]

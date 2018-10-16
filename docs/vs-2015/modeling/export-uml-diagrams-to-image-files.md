@@ -1,7 +1,7 @@
 ---
 title: Exporter des diagrammes UML aux fichiers image | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 10
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 72df20d9d696d6a7febc7931e7a1e342a07632a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93972dfda37b47c3d8b7ae25cfdf8e69578af1ed
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505566"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228356"
 ---
 # <a name="export-uml-diagrams-to-image-files"></a>Exporter des diagrammes UML dans des fichiers image
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [diagrammes UML d’exporter dans des fichiers image](https://docs.microsoft.com/visualstudio/modeling/export-uml-diagrams-to-image-files).  
-  
 Vous pouvez exporter un document UML de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] d’une image qui est sous contrôle du programme. par exemple dans le cadre de la génération automatique de documents.  
   
  Si vous souhaitez exporter manuellement un document vers une image, vous pouvez copier et coller les formes d'un diagramme dans d'autres programmes tels que Word. Vous pouvez aussi imprimer des documents au format XPS. Pour plus d’informations, consultez [exporter des diagrammes en tant qu’images](../modeling/export-diagrams-as-images.md).  

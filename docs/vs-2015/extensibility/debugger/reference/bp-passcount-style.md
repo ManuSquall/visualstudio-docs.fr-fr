@@ -1,7 +1,7 @@
 ---
 title: BP_PASSCOUNT_STYLE | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0a647047-e2d5-4724-a0b8-68108425ecad
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3c5a505df625b6ac787f1c13a84e11eddb4d8e7a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 19f40e23b54a28d84154e62567cc8d4fb442d0db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501965"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284191"
 ---
 # <a name="bppasscountstyle"></a>BP_PASSCOUNT_STYLE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [BP_PASSCOUNT_STYLE](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/bp-passcount-style).  
-  
 Spécifie la condition associée au nombre de passage de point d’arrêt qui provoque le point d’arrêt à déclencher.  
   
 ## <a name="syntax"></a>Syntaxe  

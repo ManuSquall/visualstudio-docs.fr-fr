@@ -1,7 +1,7 @@
 ---
 title: Vue Fonctions - Données de conflit | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1250dfc781b57f3b289cbafc9d386b27b669ddf7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 661700a9faba7886294db904d8676277dd0501d1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501190"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214576"
 ---
 # <a name="functions-view---contention-data"></a>Vue Fonctions - Données de conflit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [mode fonctions - données de conflit](https://docs.microsoft.com/visualstudio/profiling/functions-view-contention-data).  
-  
 La vue de rapport Fonctions des données de conflit répertorie les fonctions dans l’exécution du profilage dont l’exécution a été bloquée pendant l’exécution du profilage.  
   
  Le tableau suivant explique les valeurs qui sont affichées dans la vue Fonctions d’un fichier de données de profilage collectées avec la méthode de concurrence.  
@@ -53,11 +51,11 @@ La vue de rapport Fonctions des données de conflit répertorie les fonctions da
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour personnaliser les colonnes de la vue Rapport](../profiling/how-to-customize-report-view-columns.md)   
- [Vue Fonctions](../profiling/functions-view.md)   
+ [Mode Fonction](../profiling/functions-view.md)   
  [Vue Fonctions - Instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [Vue Fonctions - Échantillonnage](../profiling/functions-view-dotnet-memory-sampling-data.md)   
- [Vue Fonctions](../profiling/functions-view-instrumentation-data.md)   
- [Vue Fonctions](../profiling/functions-view-sampling-data.md)
+ [Mode Fonction](../profiling/functions-view-instrumentation-data.md)   
+ [Mode Fonctions](../profiling/functions-view-sampling-data.md)
 
 
 

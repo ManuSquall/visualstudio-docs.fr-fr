@@ -1,7 +1,7 @@
 ---
 title: Applications d’exécution Windows Store sur l’ordinateur local | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d69e4224627d78d4fdd9482097ef248e69f6571f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b460d1eecfe96cddce27926ee8e31aae258d8dcf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504118"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188381"
 ---
 # <a name="run-windows-store-apps-on-the-local-machine"></a>Exécuter des applications du Windows Store sur un ordinateur local
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Run Windows Store des applications sur l’ordinateur local](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-on-the-local-machine).  
-  
 S’applique uniquement à Windows] (.. /Image/windows_only_content.png « windows_only_content »)  
   
  Pour déboguer, tester ou exécuter l'analyse des performances d'une application du Windows Store, vous pouvez exécuter l'application sur le même ordinateur que celui qui héberge Visual Studio. Si l'appareil dispose d'un écran tactile, vous pouvez tester l'ensemble des fonctionnalités de l'application ; sinon, vous devrez vous contenter du clavier et des mouvements de la souris.  

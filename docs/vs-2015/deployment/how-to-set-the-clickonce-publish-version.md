@@ -1,7 +1,7 @@
 ---
 title: 'Comment : définir la publication ClickOnce Version | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: d832f28ddbd12bd72d018c841cf114ddae709e38
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3965e9600fa3ef6a091ae8e32439e8e4f420668
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508006"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271711"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>Comment : définir la version de publication ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : définir la Version de publication ClickOnce](https://docs.microsoft.com/visualstudio/deployment/how-to-set-the-clickonce-publish-version).  
-  
 Le [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] `Publish Version` propriété détermine si l’application que vous publiez sera traitée comme une mise à jour. Chaque version de l’heure est incrémentée, l’application sera publiée en tant qu’une mise à jour.  
   
  Le `Publish Version` propriété peut être définie sur le **publier** page de la **Concepteur de projet**.  

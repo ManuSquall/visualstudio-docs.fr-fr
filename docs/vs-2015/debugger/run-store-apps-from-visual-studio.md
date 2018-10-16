@@ -1,7 +1,7 @@
 ---
 title: Applications de Store de l’exécution à partir de Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 697ee8f4a3c9b796e5270e2a48a9786b657b3636
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f16b0d6dc3d1f4f37119826d841aaef1cd8871b6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495402"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249521"
 ---
 # <a name="run-store-apps-from-visual-studio"></a>Exécuter des applications du Windows Store à partir de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Store de l’exécution des applications à partir de Visual Studio](https://docs.microsoft.com/visualstudio/debugger/run-store-apps-from-visual-studio).  
-  
 Les applications Windows Store s'exécutent sur une grande variété d'appareils et Visual Studio vous fournit plusieurs façons d'exécuter ces applications et d'interagir avec elles. L'expérience « F5 » est améliorée pour faciliter le débogage, le profilage et le test des applications pendant le développement.  
   
  ![Démarrez le débogage et sélectionnez cible](../debugger/media/vsrun-dropdownlist.png "VSRUN_DropDownList")  

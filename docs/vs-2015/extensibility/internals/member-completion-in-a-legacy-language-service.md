@@ -1,7 +1,7 @@
 ---
 title: Saisie semi-automatique de membres dans un Service de langage hérité | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6c17404b115c7e8b3f8036c52e493f6932411731
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4e375cc8d314163b277cc20685ae19f134236b0a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493489"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240810"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Saisie semi-automatique de membre dans un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [saisie semi-automatique de membres dans un Service de langage hérité](https://docs.microsoft.com/visualstudio/extensibility/internals/member-completion-in-a-legacy-language-service).  
-  
 La saisie semi-automatique de membres IntelliSense est une info-bulle qui affiche une liste de membres possibles d’une étendue particulière tel qu’une classe, structure, énumération ou espace de noms. Par exemple, en c#, si l’utilisateur tape « this » suivi d’un point, une liste de tous les membres de la classe ou structure dans la portée actuelle est présentée dans une liste à partir de laquelle l’utilisateur peut sélectionner.  
   
  L’infrastructure de package managé (MPF) fournit la prise en charge pour l’info-bulle et la gestion de la liste dans l’info-bulle ; tout ce qui est nécessaire est coopération à partir de l’analyseur pour fournir les données qui apparaissent dans la liste.  

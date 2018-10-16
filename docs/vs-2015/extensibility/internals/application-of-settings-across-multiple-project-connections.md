@@ -1,7 +1,7 @@
 ---
 title: Application des paramètres entre plusieurs connexions de projet | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 2116d3d0-c46c-4d0a-b482-08a178584f46
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cc2be78900e7bef33be138dfc8ed9dc1531af7c8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 81d6a1f540314863e4e24b3b91c7f4112e0af8f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494419"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197611"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Application des paramètres entre plusieurs connexions de projets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Application des paramètres entre plusieurs connexions de projets](https://docs.microsoft.com/visualstudio/extensibility/internals/application-of-settings-across-multiple-project-connections).  
-  
 Un plug-in de contrôle de code source créé à l’aide du 1.2 API de plug-in du contrôle Source, peut utiliser une opération par lot pour exécuter l’opération de contrôle de code source même entre plusieurs projets ou de plusieurs contextes de connexion. Lots peuvent être utilisés pour éliminer redondants, des boîtes de dialogue à partir de l’expérience utilisateur par projet.  
   
  Si un utilisateur sélectionne plusieurs éléments qui appartiennent à plusieurs connexions dans un plug-in de contrôle de code source créée à l’aide de la Source contrôle plug-in API 1.1, (par exemple, deux les projets Web sur le partage de fichiers différentes machines) et les vérifie, l’utilisateur voit la boîte de dialogue à plusieurs reprises. Cela se produit même si l’utilisateur clique sur le **appliquer à tous** case à cocher dans la boîte de dialogue, car l’IDE réinitialise son état pour chaque contexte de connexion.  

@@ -1,7 +1,7 @@
 ---
 title: Erreurs de stratégie d’analyse du code | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ff0e93d7259217cec67ab1ecd52073860089eaed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb8e429c7f8ee54ab2c7f0bad08129542d4ce87d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507818"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286375"
 ---
 # <a name="code-analysis-policy-errors"></a>Erreurs de stratégie d’analyse du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [erreurs stratégie d’analyse du Code](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-policy-errors).  
-  
 Les erreurs suivantes se produisent si la stratégie d’analyse de code n’est pas satisfaite à l’archivage :  
   
  **Les paramètres d’analyse du Code pour un ou plusieurs projets ne sont pas compatibles avec la stratégie d’analyse du Code.**  

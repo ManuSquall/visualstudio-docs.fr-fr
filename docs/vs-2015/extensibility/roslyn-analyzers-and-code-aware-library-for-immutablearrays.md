@@ -1,7 +1,7 @@
 ---
 title: Analyseurs de Roslyn et bibliothèque de Code pour ImmutableArrays | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3353596474525a381a495288f5f5b951b7e5efac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94dbfbc39260e0cfcab374c2db12ab103f310b28
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503234"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173353"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analyseurs Roslyn et bibliothèque de code pour ImmutableArrays
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [analyseurs Roslyn et bibliothèque de Code pour ImmutableArrays](https://docs.microsoft.com/visualstudio/extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays).  
-  
 Le [.NET Compiler Platform](https://github.com/dotnet/roslyn) (« Roslyn ») vous permet de générer des bibliothèques de code prenant en charge.  Une bibliothèque de code fournit des fonctionnalités que vous pouvez utiliser et des outils (analyseurs de Roslyn) pour vous aider à utiliser la bibliothèque de façon optimale, ou pour éviter les erreurs.  Cette rubrique vous montre comment créer un analyseur Roslyn de monde réel pour intercepter les erreurs courantes lors de l’utilisation du [NIB : Collections immuables](http://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca) package NuGet.  L’exemple montre également comment fournir un correctif de code pour un problème de code identifié par l’analyseur.  Utilisateurs voient les correctifs de code dans l’ampoule Visual Studio l’interface utilisateur et peuvent appliquer un correctif pour le code automatiquement.  
   
 ## <a name="getting-started"></a>Prise en main  

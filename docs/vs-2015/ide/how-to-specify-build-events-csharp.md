@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour spécifier des événements de build (C#) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5bda99acace01e068c58bae78e20b44b28313722
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4f0a5198f1f8c402fda54f448f3c9b520baabfb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506509"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297291"
 ---
 # <a name="how-to-specify-build-events-c"></a>Guide pratique pour spécifier des événements de build (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : spécifier des événements de Build (c#)](https://docs.microsoft.com/visualstudio/ide/how-to-specify-build-events-csharp).  
-  
 Utilisez des événements de build pour spécifier des commandes à exécuter avant que la génération commence ou après qu’elle se termine. Les événements de build sont exécutés uniquement si la build atteint ces étapes du processus de génération.  
   
  Lorsqu’un projet est généré, les événements pré-build sont ajoutés à un fichier nommé PreBuildEvent.bat et les événements post-build sont ajoutés à un fichier nommé PostBuildEvent.bat. Pour garantir la vérification des erreurs, ajoutez vos propres commandes de vérification d’erreurs aux étapes de génération.  

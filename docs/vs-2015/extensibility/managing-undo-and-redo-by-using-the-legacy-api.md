@@ -1,7 +1,7 @@
 ---
 title: La gestion Annuler et rétablir à l’aide de l’API héritée | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 838c0ddf-fdf3-4df1-8d21-79610b8ba0b1
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0bb1cc883941c8365e4d4341c93084beaef44d48
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb2ff049635d75608114be380c9697faf0585725
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505229"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177890"
 ---
 # <a name="managing-undo-and-redo-by-using-the-legacy-api"></a>La gestion des Annuler et rétablir à l’aide de l’API héritée
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [gestion Annuler et rétablir à l’aide de l’API héritée](https://docs.microsoft.com/visualstudio/extensibility/managing-undo-and-redo-by-using-the-legacy-api).  
-  
 Les éditeurs doivent prendre en charge les opérations d’annulation qui permettent aux utilisateurs d’annuler leurs modifications récentes quand ils modifient le code. La plupart des éditeurs implémentés sous [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] peut avoir prise en charge de l’annulation fournie automatiquement par l’environnement de développement intégré (IDE).  
   
 ## <a name="in-this-section"></a>Dans cette section  

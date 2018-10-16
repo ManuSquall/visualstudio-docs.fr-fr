@@ -1,7 +1,7 @@
 ---
 title: Fonction SccProperties | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 1bed38c9-73d2-4474-9717-f9dc26a89cbe
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7bb8fd8172468dc1fc4d60d0f5e36ee7b4f9a588
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c5b4324fd2e140e2df55d8324c4942308db7b968
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494881"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204926"
 ---
 # <a name="sccproperties-function"></a>Fonction SccProperties
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [fonction SccProperties](https://docs.microsoft.com/visualstudio/extensibility/sccproperties-function).  
-  
 Cette fonction affiche les propriétés de contrôle de source d’un fichier ou un projet.  
   
 ## <a name="syntax"></a>Syntaxe  

@@ -1,7 +1,7 @@
 ---
 title: La gestion des Associations de fichiers de côte à côte | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9b6df3bc-d15c-4a5d-9015-948a806193b7
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 79bd0fe8d298aaa6635cb30efaf7f4d0d0be8c28
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55a3649385ca8fc840bed8bd28555bcb17f6ac91
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494095"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253979"
 ---
 # <a name="managing-side-by-side-file-associations"></a>Gestion des associations de fichiers côte à côte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Associations de fichiers côte à côte de gestion des](https://docs.microsoft.com/visualstudio/extensibility/managing-side-by-side-file-associations).  
-  
 Si votre VSPackage fournit des associations de fichiers, vous devez décider comment gérer les installations côte à côte dans lequel une version particulière de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] doit être appelé pour ouvrir un fichier. Formats de fichier incompatibles composée le problème.  
   
  Les utilisateurs attendent une nouvelle version d’un produit pour être compatible avec les versions antérieures, afin que les fichiers existants peuvent être chargées dans une nouvelle version sans perte de données. Dans l’idéal, votre VSPackage peut charger et enregistrer les formats de fichier des versions antérieures. Si tel n’est pas vrai, vous pouvez proposer mettre à niveau le format de fichier vers la nouvelle version de votre VSPackage. L’inconvénient de cette approche est que le fichier mis à niveau ne peut pas être ouvert dans une version antérieure.  

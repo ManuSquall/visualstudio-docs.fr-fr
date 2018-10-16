@@ -1,7 +1,7 @@
 ---
 title: IDiaStackFrame::get_rawLVarInstanceValue | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2aca4ea4468409937cd0b90b7c2201898a9f93a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 440a780ccd92a6f8f46f74c462e4adfc591c97ce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506454"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175511"
 ---
 # <a name="idiastackframegetrawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDiaStackFrame::get_rawLVarInstanceValue](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiastackframe-get-rawlvarinstancevalue).  
-  
 Cette méthode récupère la valeur de la variable locale spécifiée comme octets bruts.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -54,7 +52,7 @@ HRESULT get_rawLVarInstanceValue(
  [out] Retourne le nombre réel d’octets stockés dans la mémoire tampon.  
   
  `pbData`  
- [out] Une mémoire tampon à remplir avec des données. Cela ne peut pas être `NULL`.  
+ [out] Une mémoire tampon à remplir avec des données. Il ne peut pas être `NULL`.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  

@@ -1,7 +1,7 @@
 ---
 title: Options (boîte de dialogue), Projets et solutions, Générer et exécuter | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 38374893aea62af1b664065edf0ca9195f3dd301
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9669437ff47bc141c898a61c055b3a0de8d5d235
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516438"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189291"
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Options (boîte de dialogue), Projets et solutions, Générer et exécuter
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [boîte de dialogue Options, projets et Solutions, générer et exécuter](https://docs.microsoft.com/visualstudio/ide/reference/options-dialog-box-projects-and-solutions-build-and-run).  
-  
   
 Dans cette boîte de dialogue, vous pouvez spécifier le nombre maximal de projets Visual C++ ou Visual C# pouvant être générés simultanément, certains comportements de génération par défaut et certains paramètres du journal de génération. Pour ouvrir le **Options** boîte de dialogue, sélectionnez **outils**, **Options** sur la barre de menus. Pour accéder à cet ensemble d’options, développez **projets et Solutions**, puis choisissez **générer et exécuter**.  
   

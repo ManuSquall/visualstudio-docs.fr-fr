@@ -1,7 +1,7 @@
 ---
 title: Adaptation de l’éditeur de Code hérité | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a208d38e-9bea-41c9-9fe2-38bd86a359cb
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b477436826b69e7e0123e6003c23ed719b1a7466
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c828632e2c6de2666edecbedf04479598085890c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506188"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197741"
 ---
 # <a name="adapting-legacy-code-to-the-editor"></a>Adaptation de l’éditeur de Code hérité
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [adapter le Code hérité à l’éditeur](https://docs.microsoft.com/visualstudio/extensibility/adapting-legacy-code-to-the-editor).  
-  
 L’éditeur Visual Studio propose de nombreuses fonctionnalités que vous pouvez accéder depuis les composants de code existants. Les instructions suivantes indiquent comment adapter un composant non MEF, par exemple, un VSPackage pour utiliser les fonctionnalités de l’éditeur. Les instructions indiquent également comment utiliser des adaptateurs pour obtenir les services de l’éditeur de code managé et non managé.  
   
 ## <a name="editor-adapters"></a>Adaptateurs de l’éditeur  

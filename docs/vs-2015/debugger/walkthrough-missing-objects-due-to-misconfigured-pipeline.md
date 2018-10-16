@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : Objets manquants en raison Pipeline mal configuré | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5cbe580bed0cda79a5a218109be1fd7f633f115
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f1b0d94fcc04c8f7ca8c2deb10af4c5dcc0cbbe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505771"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293525"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Procédure pas à pas : objets manquants en raison d'un pipeline mal configuré
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : manquant objets en raison de Pipeline mal configuré](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-missing-objects-due-to-misconfigured-pipeline).  
-  
-Cette procédure pas à pas montre comment utiliser le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] outils Graphics Diagnostics pour examiner un objet est manquant à cause d’un nuanceur de pixels non défini.  
+Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour examiner un objet qui est manquant, car un nuanceur de pixels n’a pas été défini.  
   
  Cette procédure pas à pas décrit les tâches suivantes :  
   
@@ -50,7 +48,7 @@ Cette procédure pas à pas montre comment utiliser le [!INCLUDE[vsprvs](../incl
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Pour examiner un frame dans un journal de graphisme  
   
-1.  Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], charger un document de journal de graphisme qui contient un frame présentant l’objet manquant. Un nouvel onglet de journal de graphisme s’affiche dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. La partie supérieure de cet onglet contient la sortie de la cible de rendu du frame sélectionné. La partie inférieure contient la **Liste de frames**, qui affiche chaque frame capturé sous forme de miniature.  
+1.  Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], chargez un document de journal de graphisme qui contient un frame qui montre l’objet manquant. Un nouvel onglet de journal de graphisme s’affiche dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. La partie supérieure de cet onglet contient la sortie de la cible de rendu du frame sélectionné. La partie inférieure contient la **Liste de frames**, qui affiche chaque frame capturé sous forme de miniature.  
   
 2.  Dans la **Liste de frames**, sélectionnez un frame qui montre que l’objet n’est pas affiché. La cible de rendu est mise à jour pour refléter le frame sélectionné. Dans ce scénario, l'onglet du journal de graphisme se présente comme suit :  
   

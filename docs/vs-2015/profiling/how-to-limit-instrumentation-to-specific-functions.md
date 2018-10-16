@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour limiter l’instrumentation à des fonctions spécifiques | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab089bd02fafc4dc711fa01c49a9690bbd9f6a65
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0432a3e07d10db9daa03395f182836726bdf753
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505035"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249182"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Comment : limiter l’instrumentation à des fonctions spécifiques
+# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Comment : limiter l’instrumentation à des fonctions spécifiques
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : Instrumentation de limite à des fonctions spécifiques](https://docs.microsoft.com/visualstudio/profiling/how-to-limit-instrumentation-to-specific-functions).  
-  
 Vous pouvez limiter l’instrumentation et la collecte de données à une ou plusieurs fonctions en configurant des options dans la page **Avancé** de la **Session de performance** ou dans les pages de propriétés des fichiers binaires cibles :  
   
 -   Si vous spécifiez des fonctions dans la page de propriétés de la session de performance, seules ces fonctions seront instrumentées dans tous les fichiers binaires instrumentés de la session.  

@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : Affichage d’accolades correspondantes | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 11021dc98acfd80f1e91443cc834eb4ae0126455
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a0568060ec19fc24731850b20dc70dfa7a48231d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493491"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247830"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>Procédure pas à pas : affichage d’accolades correspondantes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : affichage des accolades correspondant](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-matching-braces).  
-  
 Vous pouvez implémenter en langage de fonctionnalités telles que les accolades correspondantes en définissant les accolades que vous souhaitez faire correspondre et puis en ajoutant une balise de marqueur de texte pour les accolades correspondantes lorsque le signe insertion se trouve sur un des accolades. Vous pouvez définir des accolades dans le contexte d’un langage, ou vous pouvez définir votre propre type de contenu et d’extension de nom fichier et appliquer les balises à uniquement ce type, ou vous pouvez appliquer des balises à un type de contenu existant (par exemple, « text »). La procédure suivante montre comment appliquer des balises pour le type de contenu « texte » de la correspondance des accolades.  
   
 ## <a name="prerequisites"></a>Prérequis  

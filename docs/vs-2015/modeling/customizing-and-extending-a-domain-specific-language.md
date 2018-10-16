@@ -1,7 +1,7 @@
 ---
 title: Personnalisation et extension d’un langage spécifique à un domaine | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 158bebd18e62ac23560a09fcfacb2125e1988477
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3d5b55a9b9a55d00cbfb7928295699c254f72639
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508540"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180685"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personnalisation et extension d'un langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [personnalisation et extension d’un langage spécifique à un domaine](https://docs.microsoft.com/visualstudio/modeling/customizing-and-extending-a-domain-specific-language).  
-  
 Visual Studio de modélisation et de visualisation Kit de développement logiciel (SDK) VISUALIZATION fournit plusieurs niveaux à laquelle vous pouvez définir des outils de modélisation :  
   
 1.  Définir un langage spécifique à un domaine (DSL) à l’aide du diagramme de définition DSL. Vous pouvez rapidement créer une solution DSL avec une notation visuelle, un formulaire XML lisible et les outils de base qui sont requises pour générer le code et autres artefacts.  

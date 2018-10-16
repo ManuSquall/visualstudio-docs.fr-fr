@@ -1,7 +1,7 @@
 ---
 title: Pile des appels événement Graphics | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d866e63ecffbed5cd5e9a9e477f99fbd8e8c3fc9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 99a7bf8b128d75744925c12396a26515aca9d7c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503044"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216334"
 ---
 # <a name="graphics-event-call-stack"></a>Pile des appels des événements Graphics
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [événements Graphics](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-event-call-stack).  
-  
 La pile des appels des événements Graphics dans Visual Studio Graphics Analyzer vous permet de mapper la relation entre les événements graphiques problématiques et le code source de votre application.  
   
  Voici la fenêtre Pile des appels des événements :  

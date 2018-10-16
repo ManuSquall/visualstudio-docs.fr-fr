@@ -1,7 +1,7 @@
 ---
 title: 'Comment : spécifier une URL de prise en charge pour chaque composant requis dans un déploiement ClickOnce | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 99003812248a10ca8797a5727911caf4ba3a0a60
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6b7f9c9f718b0f76d2a2b0c313c951064c5dc6f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492898"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262260"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Comment : spécifier une URL du support technique pour chaque composant requis lors d'un déploiement ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : spécifier une URL de prise en charge pour chaque composant requis dans un déploiement ClickOnce](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment).  
-  
 Un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement peut tester plusieurs conditions préalables qui doivent être disponibles sur l’ordinateur client pour le [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application de s’exécuter. Citons notamment la version minimale requise de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], la version du système d’exploitation et tous les assemblys qui doivent être préinstallés dans le global assembly cache (GAC). [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], toutefois, ne peut pas installer un de ces conditions préalables lui-même ; Si une condition préalable n’est trouvée, il simplement arrête l’installation et affiche une boîte de dialogue expliquant pourquoi l’installation a échoué.  
   
  Il existe deux méthodes pour l’installation des composants requis. Vous pouvez les installer à l’aide d’un programme d’amorçage. Vous pouvez également spécifier une URL de prise en charge pour chaque composant requis, ce qui est affichée aux utilisateurs sur la boîte de dialogue si le composant requis est introuvable. La page référencée par cette URL peut contenir des liens vers des instructions d’installation du composant requis. Si une application ne spécifie pas une URL de prise en charge pour un composant requis, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] affiche l’URL de prise en charge spécifiée dans le manifeste de déploiement pour l’application dans son ensemble, si elle est définie.  

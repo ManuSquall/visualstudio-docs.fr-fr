@@ -1,7 +1,7 @@
 ---
 title: L’accès à la mémoire tampon de texte à l’aide de l’API héritée | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: cd6cf4ae-fff5-4e23-b293-7cbafdb8aed2
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e89b91dbacf60df034ac7ce3653c25c2cae7ab3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 84843f40b6d07e937837914f07aecf10adad2bba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505220"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277210"
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>L’accès à la mémoire tampon de texte à l’aide de l’API héritée
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [l’accès à la mémoire tampon de texte à l’aide de l’API héritée](https://docs.microsoft.com/visualstudio/extensibility/accessing-the-text-buffer-by-using-the-legacy-api).  
-  
 Le texte est chargé de gérer les flux de texte et la persistance du fichier. Bien que la mémoire tampon pour lire ou écrire les autres formats, toutes les communications normales avec la mémoire tampon sont effectuée à l’aide d’Unicode. Dans les API héritées, la mémoire tampon de texte peut utiliser soit un une ou un système de coordonnées à deux dimensions pour identifier les emplacements de caractère dans la mémoire tampon.  
   
 ## <a name="one--and-two-dimension-coordinate-systems"></a>Et deux-unidimensionnel coordonner les systèmes  

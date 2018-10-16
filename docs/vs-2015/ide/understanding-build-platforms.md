@@ -1,7 +1,7 @@
 ---
 title: Présentation des plateformes de générations | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7470e082fa7f3877464081c01e7969f786f0b219
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a25dd219a7fc2f99a75ad7b8a6a1e94cd82e2ca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47500943"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246830"
 ---
 # <a name="understanding-build-platforms"></a>Présentation des plateformes de générations
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [présentation des plateformes de Build](https://docs.microsoft.com/visualstudio/ide/understanding-build-platforms).  
-  
 Vous pouvez stocker différentes versions de propriétés de solution et de projet qui s’appliquent à diverses plateformes cibles. Par exemple, vous pouvez créer une configuration de débogage qui cible une plateforme x86 et une autre qui cible une plateforme x64. Vous pouvez rapidement changer la plateforme active et ainsi générer facilement plusieurs configurations.  
   
 ## <a name="in-this-section"></a>Dans cette section  

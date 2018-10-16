@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour créer et modifier des configurations | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d6e253bebc5cd56690d8b8251ef7f4d1c4b1fcf0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55d10e779ebd949f3f229e0abc4822b7a2da64e0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503061"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195676"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Guide pratique pour créer et modifier des configurations
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : créer et modifier des Configurations](https://docs.microsoft.com/visualstudio/ide/how-to-create-and-edit-configurations).  
-  
 Vous pouvez créer plusieurs configurations de build pour une solution. Par exemple, vous pouvez configurer une build de débogage que vos testeurs peuvent utiliser pour rechercher et résoudre des problèmes. Vous pouvez également configurer différents types de builds que vous pouvez distribuer à des clients différents.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
@@ -133,7 +131,7 @@ Vous pouvez créer plusieurs configurations de build pour une solution. Par exem
 ## <a name="see-also"></a>Voir aussi  
  [Présentation des configurations de build](../ide/understanding-build-configurations.md)   
  [Génération et nettoyage de solutions et de projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [NIB Comment : modifier des propriétés de projet et des paramètres de configuration](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
+ [NIB Procédure : modification des propriétés de projet et des paramètres de configuration](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)
 
 
 

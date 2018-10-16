@@ -1,7 +1,7 @@
 ---
 title: L’accès à Visual Studio ou autres hôtes à partir d’un modèle de texte | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5bcd1811db000b39f7c9897f1329434af9fe5258
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3eb61ab5d372d02581c68391d125c7def23a402a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502692"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298478"
 ---
 # <a name="accessing-visual-studio-or-other-hosts-from-a-text-template"></a>Accès à Visual Studio ou à d'autres hôtes à partir d'un modèle de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [l’accès à Visual Studio ou autres hôtes à partir d’un modèle de texte](https://docs.microsoft.com/visualstudio/modeling/accessing-visual-studio-or-other-hosts-from-a-text-template).  
-  
 Dans un modèle de texte, vous pouvez utiliser les méthodes et propriétés exposées par l’hôte qui exécute le modèle, tel que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  Cela s’applique aux modèles de texte standard, les modèles de texte prétraités pas.  

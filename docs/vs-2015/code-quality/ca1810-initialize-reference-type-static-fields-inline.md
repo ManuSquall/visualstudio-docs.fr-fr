@@ -1,7 +1,7 @@
 ---
 title: 'CA1810 : Initialisez référence type champs statiques en ligne | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: acf344e26ba1345d4790ee3ed518a7af6a9fbaef
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 43e00ef4b471b1748501c4beef08f86cc8eb4c99
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47589807"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261012"
 ---
 # <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810 : Initialisez les champs statiques de type référence en ligne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Vous trouverez la dernière version de cette rubrique dans [CA1810 : Initialisez référence type champs statiques en ligne](https://docs.microsoft.com/visualstudio/code-quality/ca1810-initialize-reference-type-static-fields-inline).
-
 |||
 |-|-|
 |TypeName|InitializeReferenceTypeStaticFieldsInline|

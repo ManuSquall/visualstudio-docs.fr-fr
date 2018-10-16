@@ -1,7 +1,7 @@
 ---
 title: 'Comment : évaluer une Expression XPath | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 82d1330860a67b5dcb2ea52777bd84cceda4db00
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05758034c0228f0efd7fb3ae63bd3b7e0d5e3095
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506649"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210429"
 ---
 # <a name="how-to-evaluate-an-xpath-expression"></a>Procédure : évaluer une expression XPath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,11 +39,11 @@ Vous pouvez évaluer des expressions XPath avec le **Espion express** boîte de 
   
 ### <a name="to-evaluate-an-xpath-expression"></a>Pour évaluer une expression XPath  
   
-1.  Insérez un point d'arrêt à la balise de début `xsl:if`.  
+1.  Insérez un point d’arrêt à l’étiquette de début `xsl:if`.  
   
 2.  Cliquez sur le **débogage XSLT** dans la barre d’outils de l’éditeur XML.  
   
-     Le débogueur démarre et s'arrête à la balise `xsl:if`.  
+     Le débogueur démarre et s’arrête à l’étiquette `xsl:if`.  
   
 3.  Avec le bouton droit et sélectionnez **Espion express**.  
   

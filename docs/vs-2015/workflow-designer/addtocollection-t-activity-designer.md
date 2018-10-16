@@ -1,7 +1,7 @@
 ---
 title: AddToCollection&lt;T&gt; Concepteur d’activités | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 061a289a7faa9d2ef90a11750f87118570cf247d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 009f9f90c5cd22e5cf0da4240d008ce3dc1bb4ca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508426"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304422"
 ---
 # <a name="addtocollectionlttgt-activity-designer"></a>AddToCollection&lt;T&gt; Concepteur d’activités
 Le **AddToCollection\<T >** ActivityDesigner est utilisé pour créer et configurer un <xref:System.Activities.Statements.AddToCollection%601> activité.  
   
 ## <a name="the-addtocollectiont-activity"></a>AddToCollection\<T > activité  
- L'activité <xref:System.Activities.Statements.AddToCollection%601> ajoute un élément à une collection.  
+ L’activité <xref:System.Activities.Statements.AddToCollection%601> ajoute un élément à une collection.  
   
 ### <a name="using-the-addtocollectiont-activity-designer"></a>À l’aide de AddToCollection\<T > Concepteur d’activités  
  Le **AddToCollection\<T >** Concepteur d’activités peut être trouvé dans le **Collection** catégorie de la **boîte à outils**, qui est accessible en cliquant sur le  **Boîte à outils** onglet de la [!INCLUDE[wfd2](../includes/wfd2-md.md)] (ou bien, sélectionnez **barre d’outils** à partir de la **vue** menu ou CTRL + ALT + X.)  

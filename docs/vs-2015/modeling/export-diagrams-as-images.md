@@ -1,7 +1,7 @@
 ---
 title: Exporter des diagrammes sous forme d’images | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7d29905f63cb9438800b4e3911b3f9ffae5c7d12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ab54543b2f79728f91d530439b6d8474d158347
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507255"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266018"
 ---
 # <a name="export-diagrams-as-images"></a>Exporter des diagrammes en tant qu'images
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [exporter des diagrammes en tant qu’images](https://docs.microsoft.com/visualstudio/modeling/export-diagrams-as-images).  
-  
 Dans Visual Studio, vous pouvez enregistrer des diagrammes dans des formats en lecture seule de modélisation afin que vous pouvez les partager avec les parties prenantes, les utilisateurs ou les membres de l’équipe projet qui n’utilisent pas la même version de Visual Studio.  
   
  Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

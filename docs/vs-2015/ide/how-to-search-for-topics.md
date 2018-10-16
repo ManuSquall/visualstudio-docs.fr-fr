@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour rechercher des rubriques | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c094e255a6e87c1b2d6d8036bf033874399e000
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef0cbdff47423fe1ed580f3f51ba1e6039ee3e01
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495403"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248286"
 ---
 # <a name="how-to-search-for-topics"></a>Comment : rechercher des rubriques
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : rechercher des rubriques](https://docs.microsoft.com/visualstudio/ide/how-to-search-for-topics).  
-  
 Vous pouvez utiliser la fonctionnalité de recherche en texte intégral pour trouver toutes les rubriques qui contiennent un mot particulier. Si vous le souhaitez, affinez et personnalisez également votre recherche à l’aide d’expressions génériques, d’opérateurs logiques et d’opérateurs de recherche avancée.  
   
 ### <a name="to-open-the-search-tab"></a>Pour ouvrir l’onglet de recherche  

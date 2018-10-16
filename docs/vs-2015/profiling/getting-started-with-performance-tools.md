@@ -1,7 +1,7 @@
 ---
 title: Bien démarrer avec les outils d’analyse des performances | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0bb0fa65bbd11e18f6b83fafe0a7ad8df9fd15eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 89822656a518c13467e20b9b79ad36fd09ef36a7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503583"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249482"
 ---
 # <a name="getting-started-with-performance-tools"></a>Bien démarrer avec les outils d’analyse des performances
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [prise en main des outils de performances](https://docs.microsoft.com/visualstudio/profiling/getting-started-with-performance-tools).  
-  
 Cette section fournit une vue d’ensemble des concepts et des tâches que vous devez suivre lorsque vous collectez, affichez et analysez les performances du code à l’aide des outils d’analyse des performances de Visual Studio.  
   
  Ces outils fournissent plusieurs méthodes pour collecter et analyser les données de performances. Toutefois, dans de nombreux cas, la meilleure façon de commencer est d’utiliser les paramètres par défaut de l’Assistant Performance, qui vous permettent de collecter des statistiques d’applications pouvant vous indiquer des problèmes de performance dans votre code.  

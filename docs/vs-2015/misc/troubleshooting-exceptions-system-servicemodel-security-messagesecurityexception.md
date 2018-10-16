@@ -1,7 +1,7 @@
 ---
 title: 'Dépannage des Exceptions : Les System.ServiceModel.Security.MessageSecurityException | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
 manager: douge
-ms.openlocfilehash: 9d886b8eeddc84c8b6597bca77e2d7b63ca21875
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 304847259f9955706f345ef0f27800dfb77eddfb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508192"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241226"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Dépannage des exceptions : System.ServiceModel.Security.MessageSecurityException
 Un <xref:System.ServiceModel.Security.MessageSecurityException> exception est levée lorsque [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] détermine qu’un message n’est pas correctement sécurisé ou qu’il a été falsifié. L'erreur se produit le plus fréquemment lorsque les conditions suivantes se vérifient toutes :  
@@ -31,13 +31,13 @@ Un <xref:System.ServiceModel.Security.MessageSecurityException> exception est le
   
 -   Vous ne possédez pas des autorisations d'administrateur sur le site distant.  
   
--   Les demandes adressées à localhost sur le site distant sont gérées par le serveur de développement [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
+-   Les demandes adressées à localhost sur le site distant sont gérées par le serveur de développement [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] .  
   
 ## <a name="associated-tips"></a>Conseils associés  
  **Résoudre les problèmes d’authentification NTLM lors de l’utilisation du serveur de développement ASP.Net.**  
- La sécurité de Stimulation/Réponse de Windows NT (NTLM) est généralement désactivée sur le serveur de développement [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], ce qui permet l'accès anonyme. Par défaut, lorsque vous exécutez une session Terminal Services ou utilisez une connexion à distance, la sécurité NTLM est activée. Lorsque NTLM est activé, toutes les demandes adressées à localhost sont validées par rapport aux informations d'identification de l'utilisateur ou du processus qui a démarré le serveur de développement [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Ceci réduit les menaces pour la sécurité. Toutefois, WCF exécute également sa propre authentification et n'autorise pas un compte non-administrateur à consommer des services WCF.  
+ La sécurité de Stimulation/Réponse de Windows NT (NTLM) est généralement désactivée sur le serveur de développement [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , ce qui permet l'accès anonyme. Par défaut, lorsque vous exécutez une session Terminal Services ou utilisez une connexion à distance, la sécurité NTLM est activée. Lorsque NTLM est activé, toutes les demandes adressées à localhost sont validées par rapport aux informations d'identification de l'utilisateur ou du processus qui a démarré le serveur de développement [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Ceci réduit les menaces pour la sécurité. Toutefois, WCF exécute également sa propre authentification et n'autorise pas un compte non-administrateur à consommer des services WCF.  
   
- Si un utilisateur distant peut exécuter le site Web à l’aide de la [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] serveur de développement et d’utiliser également un service Web ou WCF, vous pouvez créer une liaison de service personnalisée ou désactiver la sécurité NTLM.  
+ Si un utilisateur distant est susceptible d'exécuter le site Web à l'aide du serveur de développement [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] et d'utiliser également un service Web ou WCF, vous pouvez créer une liaison de service personnalisée ou désactiver la sécurité NTLM.  
   
 > [!IMPORTANT]
 >  Il n'est pas recommandé de désactiver la sécurité NTLM car cela pourrait constituer une menace pour la sécurité.  

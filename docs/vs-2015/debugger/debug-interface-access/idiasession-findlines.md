@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::findLines | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7a74255c5c6f88596521d8977506b234a0e4e71d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f963911a7bb6dc9c5038d1c8a550e3c512deb82e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495281"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295124"
 ---
 # <a name="idiasessionfindlines"></a>IDiaSession::findLines
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDiaSession::findLines](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findlines).  
-  
 Récupère les numéros de ligne au sein de compiland spécifié et les identificateurs de fichier source.  
   
 ## <a name="syntax"></a>Syntaxe  

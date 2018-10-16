@@ -1,7 +1,7 @@
 ---
 title: Référence (Capture par programmation) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 70581d468c32964d7e081ec0ee4af3fe411b71b9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c68b196829b1ecf27732e325c6d2b402c720c94
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504392"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230345"
 ---
 # <a name="reference-programmatic-capture"></a>Référence (capture par programmation)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [référence (Capture par programmation)](https://docs.microsoft.com/visualstudio/debugger/graphics/reference-programmatic-capture).  
-  
 Graphics Diagnostics prend en charge le contrôle par programme de ses fonctionnalités de capture par l’intermédiaire de l’API de capture par programme. Vous pouvez utiliser cette API pour activer/désactiver et ajouter des messages au HUD (Head-Up Display) de diagnostics graphiques, initialiser et créer des fichiers journaux graphiques, et capturer des informations graphiques.  
   
 ## <a name="programmatic-capture-apis"></a>API de capture par programme  
@@ -48,7 +46,7 @@ Graphics Diagnostics prend en charge le contrôle par programme de ses fonctionn
   
 |Titre|Description|  
 |-----------|-----------------|  
-|[Capture d’informations graphiques](../debugger/capturing-graphics-information.md)|Vous pouvez capturer les informations graphiques de votre application basée sur DirectX de manière à utiliser les outils Graphics Diagnostics [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour diagnostiquer les problèmes de rendu.|  
+|[Capturing Graphics Information](../debugger/capturing-graphics-information.md)|Vous pouvez capturer les informations graphiques de votre application basée sur DirectX de manière à utiliser les outils Graphics Diagnostics [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour diagnostiquer les problèmes de rendu.|  
 |[Vue d’ensemble](../debugger/overview-of-visual-studio-graphics-diagnostics.md)|Montre comment Graphics Diagnostics peut vous aider à déboguer les erreurs de rendu dans les applications et jeux DirectX.|
 
 

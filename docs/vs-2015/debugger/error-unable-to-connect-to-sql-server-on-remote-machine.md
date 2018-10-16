@@ -1,7 +1,7 @@
 ---
 title: 'Erreur : Impossible de se connecter à SQL Server sur un ordinateur distant | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a30d9747d954ef70b0400af4a412d6e8d58ee77a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 64f10867668b44c91268a6a27d61ddb1edfb3145
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504493"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221765"
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Erreur : Connexion impossible à SQL Server à partir de l'ordinateur distant
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [erreur : Impossible de se connecter à SQL Server sur un ordinateur distant](https://docs.microsoft.com/visualstudio/debugger/error-unable-to-connect-to-sql-server-on-remote-machine).  
-  
 Impossible de se connecter à SQL Server sur un ordinateur distant *nom*. Accès refusé. Vérifiez que vous avez installé le débogueur distant sur l'ordinateur distant. Si l'ordinateur distant ne se trouve pas dans un domaine ou si Visual Studio s'exécute en tant que compte local, l'ordinateur distant doit avoir un compte avec les mêmes nom d'utilisateur et mot de passe que le compte local.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  

@@ -1,7 +1,7 @@
 ---
 title: Visual C++ IntelliSense | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f4e4d59b57c61dea2c42b2b99714b8bf0bdf154
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 104c85f7b23af8bfb412423ad1eeb27190a235c2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494898"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212932"
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ Intellisense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Visual C++ Intellisense](https://docs.microsoft.com/visualstudio/ide/visual-cpp-intellisense).  
-  
 Dans Visual Studio 2015, IntelliSense peut être utilisé avec des fichiers de code individuels, mais aussi avec des fichiers de projets. Dans les projets interplateforme, certaines fonctionnalités IntelliSense sont disponibles avec les fichiers .cpp et .c du projet de code partagé, y compris dans un contexte Android ou iOS.  
   
 ## <a name="intellisense-features-in-c"></a>Fonctionnalités IntelliSense en C++  

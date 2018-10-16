@@ -1,7 +1,7 @@
 ---
 title: VSPerf | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f57318867ac758be0652d30154a30aa1d285b7c2
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 50b36e33bb589e2866a14acd9dc253af78d7d9c7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879151"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176038"
 ---
 # <a name="vsperf"></a>VSPerf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [VSPerf](https://docs.microsoft.com/visualstudio/profiling/vsperf).  
-  
 Utilisez l’outil en ligne de commande **VsPerf** pour :  
   
 1.  Profiler des applications du Windows Store à partir de la ligne de commande quand Visual Studio n’est pas installé sur l’appareil.  

@@ -1,7 +1,7 @@
 ---
 title: Ouvrir et enregistrer des éléments de projet | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f71898ad-335f-4c43-a177-4da87078afd1
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c1013253f39dec2b3d0a97f1bc4b8deb2dca913a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6a642d2cffe66a4ed5ddc68db75368e1d2e71fbb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504270"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283568"
 ---
 # <a name="opening-and-saving-project-items"></a>Ouverture et enregistrement d’éléments de projet
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [d’ouverture et de l’enregistrement des éléments de projet](https://docs.microsoft.com/visualstudio/extensibility/internals/opening-and-saving-project-items).  
-  
 Lorsque vous ajoutez un nouveau type de projet, vous devez gérer l’ouverture et l’enregistrement de vos fichiers de projets dans le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] l’environnement de développement intégré (IDE). Les rubriques suivantes décrivent les différentes approches pour ouvrir et enregistrer des fichiers.  
   
 ## <a name="in-this-section"></a>Dans cette section  

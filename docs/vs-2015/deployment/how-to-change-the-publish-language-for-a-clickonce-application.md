@@ -1,7 +1,7 @@
 ---
 title: 'Comment : modifier la langue de publication pour une Application ClickOnce | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 90699b4e12c8384327a3840799506e393bed2e82
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2330f234b5b00fdde99376fbe5664bd5dbd99551
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506287"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239654"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Comment : modifier la langue de publication pour une application ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : modifier la langue de publication pour une Application ClickOnce](https://docs.microsoft.com/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application).  
-  
 Lorsque vous publiez un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application, l’interface utilisateur affichée pendant l’installation par défaut de la langue et la culture de votre ordinateur de développement. Si vous publiez une application localisée, vous devez spécifier une langue et une culture correspondant à la version localisée. Cela est déterminé par le `Publish language` propriété pour votre projet.  
   
  Le `Publish language` propriété peut être définie le **Options de publication** boîte de dialogue, accessible à partir de la **publier** page de la **Concepteur de projet**.  

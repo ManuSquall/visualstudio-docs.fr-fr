@@ -1,7 +1,7 @@
 ---
 title: Parcourir une session de débogage dans Visual Studio (Xaml et c#) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c9aed98b7f2649aa5c62e930e1833b80d58b7ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 59ff131289d5ae69cc66f3069bb7fd693e7878f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504798"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306304"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Parcourir une session de débogage dans Visual Studio (XAML et C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [parcourir une session de débogage dans Visual Studio (Xaml et c#)](https://docs.microsoft.com/visualstudio/debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp).  
-  
 Ce guide de démarrage rapide montre comment naviguer dans les sessions de débogage Visual Studio et comment afficher et modifier l'état du programme dans la session.  
   
  Ce guide de démarrage rapide s'adresse aux développeurs qui découvrent le débogage avec Visual Studio et aux développeurs qui souhaitent apprendre à naviguer dans une session de débogage Visual Studio. Il n'explique pas les techniques de débogage. Les méthodes décrites dans l'exemple de code sont conçues pour illustrer les procédures de débogage décrites dans cette rubrique. Les méthodes n'utilisent pas les meilleures pratiques en matière de conception d'applications ou de fonctions. En fait, vous découvrirez rapidement que les méthodes, et l'application elle-même, ne font pas grand-chose.  

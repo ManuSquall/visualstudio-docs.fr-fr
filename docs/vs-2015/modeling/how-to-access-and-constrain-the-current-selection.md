@@ -1,7 +1,7 @@
 ---
 title: 'Comment : accéder à et contraindre la sélection actuelle | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 308187842eeaed8e216336ab84c6e9036c1ced70
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec8ff7ae0b0e006528b11604f54dc74170857cf7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507209"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187571"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Comment : accéder à et contraindre la sélection actuelle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : accéder à et contraindre la sélection actuelle](https://docs.microsoft.com/visualstudio/modeling/how-to-access-and-constrain-the-current-selection).  
-  
 Lorsque vous écrivez un gestionnaire de mouvements ou de commandes pour votre langage spécifique à un domaine, vous pouvez déterminer quel élément cliqué l’utilisateur. Vous pouvez également empêcher des formes ou des champs sélectionnés. Par exemple, vous pouvez organiser que lorsque l’utilisateur clique sur un élément décoratif d’icône, la forme qui le contient est sélectionnée à la place. Contraindre la sélection de cette manière réduit le nombre de gestionnaires d’avoir à écrire. Il facilite également pour l’utilisateur, ce qui vous pouvez cliquer sur n’importe où dans la forme sans avoir à éviter l’élément décoratif.  
   
 ## <a name="accessing-the-current-selection-from-a-command-handler"></a>L’accès à la sélection actuelle à partir d’un gestionnaire de commandes  
@@ -43,10 +41,10 @@ Lorsque vous écrivez un gestionnaire de mouvements ou de commandes pour votre l
     |Méthode <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A>|Retourne `true` si le diagramme est sélectionné dans le Générateur de modèles ; sinon, `false`.|  
     |Méthode <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleDocumentSelection%2A>|Retourne `true` si exactement un élément est sélectionné dans le Générateur de modèles ; sinon, `false`.|  
     |Méthode <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A>|Retourne `true` si exactement un élément est sélectionné dans la fenêtre active ; sinon, `false`.|  
-    |Propriété <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A>|Obtient une collection en lecture seule des éléments sélectionnés dans le Générateur de modèles.|  
-    |Propriété <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A>|Obtient une collection en lecture seule des éléments sélectionnés dans la fenêtre active.|  
-    |Propriété <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A>|Obtient l’élément principal de la sélection dans le Générateur de modèles.|  
-    |Propriété <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A>|Obtient l’élément principal de la sélection dans la fenêtre active.|  
+    |Propriété<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A> |Obtient une collection en lecture seule des éléments sélectionnés dans le Générateur de modèles.|  
+    |Propriété<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A> |Obtient une collection en lecture seule des éléments sélectionnés dans la fenêtre active.|  
+    |Propriété<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A> |Obtient l’élément principal de la sélection dans le Générateur de modèles.|  
+    |Propriété<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A> |Obtient l’élément principal de la sélection dans la fenêtre active.|  
   
 2.  Le <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet.CurrentDocView%2A> propriété de la <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> classe fournit l’accès à la <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView> objet qui représente la fenêtre Concepteur de modèles et fournit un accès supplémentaire les éléments sélectionnés dans le Générateur de modèles.  
   

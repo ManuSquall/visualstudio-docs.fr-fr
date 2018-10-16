@@ -1,7 +1,7 @@
 ---
 title: 'Comment : créer un. Fichier VSCT | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 79d2c0c059d9e257fc0239731fb013a56c6dd6a1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b28fe38a9d45816481233c3ae267b3c764ee264
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507650"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186667"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Comment : créer un. Fichier VSCT
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : créer un. Fichier VSCT](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-create-a-dot-vsct-file).  
-  
 Il existe plusieurs façons de créer un fichier de configuration (.vsct) basé sur XML Visual Studio Command Table.  
   
 -   Vous pouvez créer un nouveau VSPackage s’affiche dans le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] modèle de Package.  

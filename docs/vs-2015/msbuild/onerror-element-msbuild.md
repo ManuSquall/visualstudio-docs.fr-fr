@@ -1,7 +1,7 @@
 ---
 title: Élément OnError (MSBuild) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 323aff310061cf62af7cac10ee266c15d24e6eae
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 10f89d21441418ae0b5c267c0fea7e8451115afe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508165"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228707"
 ---
 # <a name="onerror-element-msbuild"></a>OnError, élément (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [OnError élément (MSBuild)](https://docs.microsoft.com/visualstudio/msbuild/onerror-element-msbuild).  
-  
   
 Provoque l’exécution d’une ou de plusieurs cibles si l’attribut `ContinueOnError` est défini sur `false` pour une tâche en échec.  
   

@@ -1,7 +1,7 @@
 ---
 title: Fonctionnalités d’accessibilité de la visionneuse d’aide | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 623e2c6514f8eddfd587848aff5fc68c29640885
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d6dee81d823c52986922d59a4e41f402db4fbd5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505386"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242129"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Fonctionnalités d’accessibilité de la Visionneuse d’aide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [fonctionnalités d’accessibilité de la visionneuse d’aide](https://docs.microsoft.com/visualstudio/ide/accessibility-features-of-the-help-viewer).  
-  
 Microsoft s’engage à faciliter l’utilisation de ses produits et services. Cette rubrique contient des informations sur les fonctionnalités, les produits et les services qui permettent d'accéder à Microsoft Help Viewer 2.2 via un large éventail de possibilités.  
   
 ## <a name="keyboard-access"></a>Accès par le clavier  

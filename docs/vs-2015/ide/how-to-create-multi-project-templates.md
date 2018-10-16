@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour créer des modèles à plusieurs projets | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ce7147df5b15dd6aaa639c27b2d2ffbc0b3d3152
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 99c8a008cf48d596569e61534d7bfbf7cb9e45c8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494546"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256566"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Comment : créer des modèles à plusieurs projets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : créer des modèles à projets multiples](https://docs.microsoft.com/visualstudio/ide/how-to-create-multi-project-templates).  
-  
 Les modèles à plusieurs projets jouent le rôle de conteneurs pour au moins deux projets. Quand un projet basé sur un modèle à plusieurs projets est créé à partir de la boîte de dialogue **Nouveau projet**, tous les projets inclus dans le modèle sont ajoutés à la solution.  
   
  Un modèle à plusieurs projets doit inclure les éléments suivants, compressés dans un fichier .zip :  

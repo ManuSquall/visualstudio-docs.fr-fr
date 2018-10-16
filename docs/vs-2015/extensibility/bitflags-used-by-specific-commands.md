@@ -1,7 +1,7 @@
 ---
 title: Indicateurs de bits utilisés par des commandes spécifiques | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7f9a633dd88e0018c6c9ccc82438ed99770885c1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 97569043b84cbfc18a62e3058f03e4f7f6c4b8f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504285"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300363"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Indicateurs de bits utilisés par des commandes spécifiques
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [indicateurs de bits utilisés par les commandes spécifiques](https://docs.microsoft.com/visualstudio/extensibility/bitflags-used-by-specific-commands).  
-  
 Le comportement d’un nombre de fonctions dans l’API de plug-in de contrôle de Source peut être modifié en définissant un ou plusieurs bits dans une valeur unique. Ces valeurs sont appelées des indicateurs de bits. Les différents indicateurs de bits utilisés par l’API de plug-in de contrôle de Source sont détaillées ici, regroupés par la fonction qui les utilise.  
   
 ## <a name="checked-out-flag"></a>Extrait d’indicateur  

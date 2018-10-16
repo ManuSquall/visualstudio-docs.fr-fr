@@ -1,7 +1,7 @@
 ---
 title: 'Comment : définir et utiliser des délégués d’activité dans le Concepteur de flux de travail | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: steved0x
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 5bf6a53879e90dab2a0a57d99ee27d81bd1dfc35
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5f7b69d0fb1ccd547d522d65fab803bd79a10ed2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508826"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183376"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procédure : définir et utiliser des délégués d'activité dans le Concepteur de flux de travail
 [!INCLUDE[net_v45](../includes/net-v45-md.md)] inclut un nouveau concepteur prêt à l'emploi pour l'activité <xref:System.Activities.Statements.InvokeDelegate>. Ce concepteur peut être utilisé pour assigner des délégués à l'activité qui dérive de <xref:System.Activities.ActivityDelegate>, telle que <xref:System.Activities.ActivityAction> ou <xref:System.Activities.ActivityFunc%601>.  
@@ -60,7 +60,7 @@ ms.locfileid: "47508826"
   
 18. Dans le **valeur** colonne de l’argument nommé **Argument**, entrez **Items [Index]**. Cliquez sur **Ok** pour fermer la **DelegateArguments** boîte de dialogue.  
   
-19. Faites glisser une activité <xref:System.Activities.Statements.Assign> sur la ligne horizontale sous l'activité <xref:System.Activities.Statements.InvokeDelegate>. Le <xref:System.Activities.Statements.Assign> activité est créée et un <xref:System.Activities.Statements.Sequence> activité est créée automatiquement pour contenir les deux activités dans le **corps** section de la **MyForEach** activité. La séquence est nécessaire, car le **corps** section peut contenir uniquement une seule activité. La fonctionnalité de création automatique d'une nouvelle activité <xref:System.Activities.Statements.Sequence> est une nouveauté du [!INCLUDE[net_v45](../includes/net-v45-md.md)].  
+19. Faites glisser une activité <xref:System.Activities.Statements.Assign> sur la ligne horizontale sous l'activité <xref:System.Activities.Statements.InvokeDelegate>. Le <xref:System.Activities.Statements.Assign> activité est créée et un <xref:System.Activities.Statements.Sequence> activité est créée automatiquement pour contenir les deux activités dans le **corps** section de la **MyForEach** activité. La séquence est nécessaire, car le **corps** section peut contenir uniquement une seule activité. La fonctionnalité de création automatique d’une nouvelle activité <xref:System.Activities.Statements.Sequence> est une nouveauté du [!INCLUDE[net_v45](../includes/net-v45-md.md)].  
   
 20. Définir le **à** propriété de la <xref:System.Activities.Statements.Assign> activité **index**. Définir le **valeur** propriété de la **affecter** activité **index + 1**.  
   

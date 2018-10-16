@@ -1,7 +1,7 @@
 ---
 title: Quand un point d’arrêt est lié ou devient indépendant | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 61bf00b2-8293-49d3-b919-1efb0dec9151
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e2f14f141993e65509f4ee3ba21e727a5a4abfb4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1bc99f7170b24e48c5066d3bd36e6b9204f9d2d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495268"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258737"
 ---
 # <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>Quand un point d’arrêt est lié ou devient indépendant
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [lorsqu’un point d’arrêt est lié ou devient indépendant](https://docs.microsoft.com/visualstudio/extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound).  
-  
 Lorsqu’un point d’arrêt ne peut pas être liée au moment un appel est effectué pour le [IDebugPendingBreakpoint2::CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) (méthode), la liaison temps et de création du point d’arrêt sont différentes.  
   
 ## <a name="methods-called"></a>Méthodes appelées  

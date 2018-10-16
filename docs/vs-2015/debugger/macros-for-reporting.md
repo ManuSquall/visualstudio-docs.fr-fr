@@ -1,7 +1,7 @@
 ---
 title: Macros pour la création de rapports | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22f3637aeee41f764825a0d8f8cd4fdca2cb3e94
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 84b5e72b15d085e29823fb8c8e116a153ff550e8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506704"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224378"
 ---
 # <a name="macros-for-reporting"></a>Macros pour la création de rapports
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Macros pour la création de rapports](https://docs.microsoft.com/visualstudio/debugger/macros-for-reporting).  
-  
 Vous pouvez utiliser la **_RPTn**, et **_RPTFn** macros, définies dans CRTDBG. H, au lieu de l’utilisation de `printf` instructions pour le débogage. Ces macros disparaissent automatiquement dans votre version Release lorsque **_DEBUG** n’est pas défini, il est donc inutile de les placer dans **#ifdef**s.  
   
 |Macro|Description|  

@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : Débogage d’erreurs dues à la trame de rendu | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9bd3416e9a3902a77489b4d3a5547e3614376c59
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c73553e73dc2010afb03deba9a1421e76f962308
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506244"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210169"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Procédure pas à pas : débogage des erreurs de rendus dues à la trame
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : débogage de rendu erreurs en raison d’une trame de fond](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-debugging-rendering-errors-due-to-shading).  
-  
-Cette procédure pas à pas montre comment utiliser [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Graphics Diagnostics pour examiner un objet qui est de couleur incorrecte en raison d’un bogue de nuanceur.  
+Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour examiner un objet dont la couleur n’est pas correcte à cause d’un problème de nuanceur.  
   
  Cette procédure pas à pas montre comment effectuer les opérations suivantes :  
   
@@ -48,7 +46,7 @@ Cette procédure pas à pas montre comment utiliser [!INCLUDE[vsprvs](../include
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Pour examiner un frame dans un journal de graphiques  
   
-1.  Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], chargez un journal de graphisme qui contient un frame présentant le modèle manquant. Une nouvelle fenêtre de document du journal de graphiques s'affiche dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. La partie supérieure de cette fenêtre contient la sortie de la cible de rendu du frame sélectionné. La partie inférieure contient la **Liste de frames**, qui affiche chaque frame capturé sous forme de miniature.  
+1.  Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], chargez un journal de graphiques qui contient un frame présentant le modèle manquant. Une nouvelle fenêtre de document du journal de graphiques s'affiche dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. La partie supérieure de cette fenêtre contient la sortie de la cible de rendu du frame sélectionné. La partie inférieure contient la **Liste de frames**, qui affiche chaque frame capturé sous forme de miniature.  
   
 2.  Dans **Liste de frames**, sélectionnez un frame dans lequel l’objet n’a pas l’apparence correcte. La cible de rendu est mise à jour pour refléter le frame sélectionné. Dans ce scénario, la fenêtre de document du journal de graphiques se présente comme suit :  
   

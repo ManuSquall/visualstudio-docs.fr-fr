@@ -1,7 +1,7 @@
 ---
 title: Création d’ensembles de règles analyse de Code personnalisé | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 67df017724f31a14504bbd7e2b66657b1db918b5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0dabe89c47e42eee57803475abf5274a74ec651
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501518"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273583"
 ---
 # <a name="creating-custom-code-analysis-rule-sets"></a>Création d'ensembles de règles d'analyse du code personnalisés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [ensembles de règles d’analyse de création personnalisé Code](https://docs.microsoft.com/visualstudio/code-quality/creating-custom-code-analysis-rule-sets).  
-  
 Vous appliquez des règles d’analyse du code à un projet de code managé en spécifiant un ensemble de règles qui contient une ou plusieurs règles. Les ensembles de règles standard de Microsoft fournissent des groupes de règles sont organisées par fonction et de profondeur. Par exemple, les règles Microsoft les instructions de conception de base et les règles d’instructions de conception étendue Microsoft contiennent des règles qui vous concentrer sur la facilité d’utilisation et de poser des problèmes, avec des règles d’affectation de noms dans l’ensemble de règles étendu de.  
   
  Vous pouvez également créer un ensemble de règles personnalisé qui combine deux ou les ensembles de règles standard ou qui spécifie les règles dans un ou plusieurs ensembles de règles standard. Vous enregistrez la règle personnalisée définit dans un fichier .ruleset, et vous pouvez les spécifier dans plusieurs projets de code.  

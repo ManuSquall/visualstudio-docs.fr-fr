@@ -1,7 +1,7 @@
 ---
 title: Définir un personnalisé élément de boîte à outils de modélisation | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 33
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bd2d7ff2b31e8975574cb6b2780a352faa1cd663
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 994bb8dfd047320ac0ea4a0d63260f19a2c3d45c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501002"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252367"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Définir un élément de boîte à outils de modélisation personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [définir un personnalisé élément de boîte à outils de modélisation](https://docs.microsoft.com/visualstudio/modeling/define-a-custom-modeling-toolbox-item).  
-  
 Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après un modèle que vous utilisez souvent, vous pouvez ajouter de nouveaux outils à la boîte à outils des diagrammes de modélisation dans Visual Studio. Vous pouvez distribuer ces éléments de boîte à outils à d'autres utilisateurs de Visual Studio.  
   
  Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

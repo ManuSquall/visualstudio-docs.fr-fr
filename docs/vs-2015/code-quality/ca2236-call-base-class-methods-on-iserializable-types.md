@@ -1,7 +1,7 @@
 ---
 title: 'CA2236 : Appelez les méthodes de classe de base sur les types ISerializable | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1219e1c2252565e671d73924f5ac96ba00ecef18
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 3087c3aa4b7d1e1fcba43dafbdf717cfd33e10cc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47590071"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238574"
 ---
 # <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236 : Appelez les méthodes de la classe de base sur les types ISerializable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Vous trouverez la dernière version de cette rubrique dans [CA2236 : appelez les méthodes de classe de base sur les types ISerializable](https://docs.microsoft.com/visualstudio/code-quality/ca2236-call-base-class-methods-on-iserializable-types).
-
 |||
 |-|-|
 |TypeName|CallBaseClassMethodsOnISerializableTypes|

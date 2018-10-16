@@ -1,7 +1,7 @@
 ---
 title: Collecte de statistiques d’applications pour des applications web ASP.NET en utilisant la méthode d’échantillonnage du profileur à partir de la ligne de commande | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4353308ce42ad61fdc53732d1a077f510ed2c1c
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 004f09db73c1eaa977d64b8bafb376a60a45a7a0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881550"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277886"
 ---
 # <a name="collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line"></a>Collecte de statistiques d’applications pour des applications Web ASP.NET en utilisant la méthode d’échantillonnage du profileur à partir de la ligne de commande
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [collecte des statistiques d’applications pour les Applications Web ASP.NET à l’aide de la méthode d’échantillonnage de Profiler à partir de la ligne de commande](https://docs.microsoft.com/visualstudio/profiling/collecting-application-statistics-for-aspnet-web-applications-using-the-profiler-sampling-method-from-the-command-line).  
-  
 Cette section décrit les procédures et les options de collecte des statistiques de performances pour une application web ASP.NET à l’aide des outils en ligne de commande **VSPerfASPNETCmd** et **VSPerfCmd**, et de la méthode de profilage par échantillonnage.  
   
 > [!NOTE]

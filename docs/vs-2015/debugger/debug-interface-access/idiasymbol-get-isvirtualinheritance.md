@@ -1,7 +1,7 @@
 ---
 title: IDiaSymbol::get_isVirtualInheritance | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b0385bf9cd9dcc7fab65075a726f5874815639f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 254115e8c7215685d3373332487feb48a5421cc3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495292"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184234"
 ---
 # <a name="idiasymbolgetisvirtualinheritance"></a>IDiaSymbol::get_isVirtualInheritance
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDiaSymbol::get_isVirtualInheritance](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-isvirtualinheritance).  
-  
 Spécifie si le `this` pointeur pointe vers un membre de données avec l’héritage virtuel.  
   
 ## <a name="syntax"></a>Syntaxe  

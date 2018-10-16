@@ -1,7 +1,7 @@
 ---
 title: Erreurs d’accès aux ressources supplémentaires pour la résolution des problèmes de données | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -234,18 +234,16 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 3971ac35e308c134fbf0f25fc2ed05e741616e8d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 415d403bc5282e2759805558ea6a91a1c2cf9bdf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503493"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263016"
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Ressources supplémentaires pour le dépannage des erreurs d’accès aux données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [erreurs d’accès aux ressources supplémentaires pour la résolution des problèmes de données](https://docs.microsoft.com/visualstudio/data-tools/additional-resources-for-troubleshooting-data-access-errors).  
-  
   
 Vous pouvez trouver de l'aide sur la résolution des erreurs et des avertissements dans les forums publics Microsoft Developer Network (MSDN). Le tableau suivant répertorie les données liées forums disponibles sur MSDN.  
   

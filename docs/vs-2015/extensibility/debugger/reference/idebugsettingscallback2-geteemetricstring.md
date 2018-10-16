@@ -1,7 +1,7 @@
 ---
 title: IDebugSettingsCallback2::GetEEMetricString | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 85e3c093-6a91-4101-ab32-d8ac6eed4918
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9f60a80b6a0b3245613c033929aa421b0a5d5b29
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e67d2451a9e032e1af456e3ee4722e85ba00e01e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506162"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222363"
 ---
 # <a name="idebugsettingscallback2geteemetricstring"></a>IDebugSettingsCallback2::GetEEMetricString
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [IDebugSettingsCallback2::GetEEMetricString](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugsettingscallback2-geteemetricstring).  
-  
 Récupère la chaîne de valeur d’une métrique d’évaluateur d’expression étant donné son nom.  
   
 ## <a name="syntax"></a>Syntaxe  

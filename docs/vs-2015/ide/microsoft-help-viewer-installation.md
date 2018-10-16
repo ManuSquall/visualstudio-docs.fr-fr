@@ -1,7 +1,7 @@
 ---
 title: Installation de Microsoft Help Viewer | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fb5344c5c11777d45cd9ff253682e481982026be
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0a1934035c9a52e4b5f32061866da64319248806
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503993"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213536"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Installation de Microsoft Help Viewer 2.0
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Microsoft aide visionneuse Installation](https://docs.microsoft.com/visualstudio/ide/microsoft-help-viewer-installation).  
-  
 Plusieurs produits affichent l’aide dans Microsoft Help Viewer. Les instructions d'installation varient en fonction du produit qui a installé la visionneuse d'aide.  
   
 ## <a name="locating-setup-information"></a>Rechercher les informations de configuration  

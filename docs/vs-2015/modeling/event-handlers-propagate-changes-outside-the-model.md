@@ -1,7 +1,7 @@
 ---
 title: Gestionnaires d’événements propagent les modifications en dehors du modèle | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 93b971c80cdf0c13567364d507f72027d62faae9
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 38958aae1c2449145107faa7abe00a2d86baaa9a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590731"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303197"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Propagation de modifications en dehors du modèle par des gestionnaires d'événements
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [gestionnaires propager les modifications en dehors le modèle d’événement](https://docs.microsoft.com/visualstudio/modeling/event-handlers-propagate-changes-outside-the-model).  
-  
 Dans Visualization and Modeling SDK, vous pouvez définir des gestionnaires d’événements de magasin pour propager les modifications apportées aux ressources en dehors du magasin, telles que les variables non-store, des fichiers de modèles dans d’autres magasins, ou d’autres [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensions. Gestionnaires d’événements Store sont exécutés après la fin de la transaction dans laquelle l’événement de déclenchement s’est produite. Elles sont également exécutées en une opération d’annulation ou de rétablissement. Par conséquent, contrairement au magasin de règles, événements de stockage sont particulièrement utiles pour la mise à jour des valeurs qui sont en dehors du magasin. Contrairement aux événements de .NET, les gestionnaires d’événements de magasin sont inscrit pour écouter à une classe : vous n’avez pas à inscrire un gestionnaire distinct pour chaque instance. Pour plus d’informations sur comment choisir entre les différentes façons de gérer les modifications, consultez [réponse en cours à et propagation des modifications](../modeling/responding-to-and-propagating-changes.md).  
   
  La surface graphique et autres contrôles d’interface utilisateur sont des exemples de ressources externes qui peuvent être gérés par les événements de magasin.  

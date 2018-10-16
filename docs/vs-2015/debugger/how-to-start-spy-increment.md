@@ -1,7 +1,7 @@
 ---
 title: 'Comment : démarrer Spy ++ | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9eb5d8cd8a5ca0ba32f59e483265942379eb3122
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 50b9e68862c8dfc3d608f965cb61ee1e0c1012b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501407"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180308"
 ---
 # <a name="how-to-start-spy"></a>Comment : démarrer Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : démarrer Spy ++](https://docs.microsoft.com/visualstudio/debugger/how-to-start-spy-increment).  
-  
 Vous pouvez démarrer Spy ++ à partir de Visual Studio ou à une invite de commandes.  
   
  Lorsque vous démarrez Spy ++, si un message s’affiche pour demander l’autorisation d’apporter des modifications à l’ordinateur, cliquez sur **Oui**.  

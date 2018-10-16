@@ -1,7 +1,7 @@
 ---
 title: Élément de l’indicateur de commande | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 5ef63399-d2db-4dc1-97ce-be1bd4ef4e39
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bec5b38550209764bf4b770fef96735235ec3819
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 32e1e5f4c5bf236ec1c38f6a0a5314eb278a59f8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505804"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272192"
 ---
 # <a name="command-flag-element"></a>Élément Command Flag
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [élément Command Flag](https://docs.microsoft.com/visualstudio/extensibility/command-flag-element).  
-  
 Modifie son élément parent.  
   
 ## <a name="syntax"></a>Syntaxe  

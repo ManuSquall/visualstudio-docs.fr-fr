@@ -1,7 +1,7 @@
 ---
 title: Afficher les données de document et de documents dans les éditeurs personnalisés | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6df543f832fa85ea6d74fc2846355fbf9deab912
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 258718a99e774b7098ff29dd66efc51a57062475
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494842"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206906"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Données de documents et affichage de documents dans les éditeurs personnalisés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [des données du Document et affichage de documents dans les éditeurs personnalisés](https://docs.microsoft.com/visualstudio/extensibility/document-data-and-document-view-in-custom-editors).  
-  
 Un éditeur personnalisé se compose de deux parties : un objet de données de document et un objet de vue de document. Comme leur nom le suggère, l’objet de données représente les données de texte à afficher et l’objet de vue de document (ou « vue ») représente une ou plusieurs fenêtres d’affichage de l’objet de données de document.  
   
 ## <a name="document-data-object"></a>Objet de données de document  

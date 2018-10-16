@@ -1,12 +1,12 @@
 ---
 title: Mapper les dépendances dans vos solutions | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemap
 - vs.progression.standardgraphsdialog
@@ -32,18 +32,16 @@ caps.latest.revision: 245
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 06dc2d18ab6641847e2f0edb0d34cb671bca28a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae5e9491b8a02293a48a3ccc3e5e21a87fa5e878
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494910"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200770"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapper les dépendances dans vos solutions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [mapper les dépendances dans vos solutions](https://docs.microsoft.com/visualstudio/modeling/map-dependencies-across-your-solutions).  
-  
 Pour comprendre les dépendances présentes dans votre code, vous pouvez les visualiser en créant des cartes de code. Vous pouvez ainsi voir comment le code s’ajuste sans avoir à parcourir les fichiers et les lignes de code.  
   
  ![Afficher les dépendances dans vos solutions](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
@@ -289,7 +287,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
      ![Utilisez le volet de filtre pour simplifier l’affichage](../modeling/media/almcodemapfilterpane.png "ALMCodeMapFilterPane")  
   
 ##  <a name="SeeSourceHeader"></a> Visualiser les dépendances entre les fichiers sources et les fichiers d’en-tête C et C++  
- Si vous souhaitez créer des cartes plus complètes pour des projets C++, définissez l’option du compilateur d’informations de consultation (**/FR**) sur ces projets. Consultez [/FR, /Fr (créer. Fichier de sbr)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). Sinon, un message vous invite à définir cette option. Si vous sélectionnez **OK**, l’option est définie uniquement pour la carte active. Vous pouvez choisir de masquer le message pour toutes les cartes ultérieures. Si vous masquez ce message, vous pouvez le faire réapparaître. Affectez à la clé de Registre suivante la valeur `0` ou supprimez-la :  
+ Si vous souhaitez créer des cartes plus complètes pour des projets C++, définissez l’option du compilateur d’informations de consultation (**/FR**) sur ces projets. Consultez [/FR, /Fr (Create .Sbr File)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). Sinon, un message vous invite à définir cette option. Si vous sélectionnez **OK**, l’option est définie uniquement pour la carte active. Vous pouvez choisir de masquer le message pour toutes les cartes ultérieures. Si vous masquez ce message, vous pouvez le faire réapparaître. Affectez à la clé de Registre suivante la valeur `0` ou supprimez-la :  
   
  **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
   
@@ -315,12 +313,12 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 |**Problème**|**Causes possibles**|**Résolution**|  
 |---------------|------------------------|--------------------|  
 |Échec de la génération de la carte de code.|Aucun projet de la solution n’a été généré correctement.|Corrigez les erreurs de build qui se sont produites, puis régénérez la carte.|  
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cesse de répondre lorsque vous essayez de générer une carte de code à partir de la **Architecture** menu.|Le fichier de base de données du programme (.pdb) peut être endommagé.<br /><br /> Un fichier .pdb stocke des informations de débogage, telles que des informations sur le type, la méthode et le fichier source.|Régénérez la solution puis recommencez.|  
-|Certains paramètres de la base de données de navigation IntelliSense sont désactivés.|Certains paramètres IntelliSense peuvent être désactivés dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **Options** boîte de dialogue.|Activez les paramètres.<br /><br /> Consultez [Options, éditeur de texte, C/C++, avancé](../ide/reference/options-text-editor-c-cpp-advanced.md).|  
-|Le message **Méthodes inconnues** s’affiche sur un nœud de méthode.<br /><br /> Ce problème se produit car le nom de la méthode ne peut pas être résolu.|Le fichier binaire peut ne pas avoir de table de réadressage de base.|Activez l’option **/FIXED:NO** dans l’éditeur de liens.<br /><br /> Consultez [/FIXED (adresse de Base fixe)](http://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).|  
-||Le fichier de base de données du programme (.pdb) peut ne pas être généré.<br /><br /> Un fichier .pdb stocke des informations de débogage, telles que des informations sur le type, la méthode et le fichier source.|Activez l’option **/DEBUG** dans l’éditeur de liens.<br /><br /> Consultez [/Debug (Generate Debug Info)](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).|  
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne répond pas quand vous essayez de générer une carte de code à partir du menu **Architecture** .|Le fichier de base de données du programme (.pdb) peut être endommagé.<br /><br /> Un fichier .pdb stocke des informations de débogage, telles que des informations sur le type, la méthode et le fichier source.|Régénérez la solution puis recommencez.|  
+|Certains paramètres de la base de données de navigation IntelliSense sont désactivés.|Certains paramètres IntelliSense peuvent être désactivés dans la boîte de dialogue [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**Options** .|Activez les paramètres.<br /><br /> Consultez [Options, éditeur de texte, C/C++, avancé](../ide/reference/options-text-editor-c-cpp-advanced.md).|  
+|Le message **Méthodes inconnues** s’affiche sur un nœud de méthode.<br /><br /> Ce problème se produit car le nom de la méthode ne peut pas être résolu.|Le fichier binaire peut ne pas avoir de table de réadressage de base.|Activez l’option **/FIXED:NO** dans l’éditeur de liens.<br /><br /> Consultez [/FIXED (Fixed Base Address)](http://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).|  
+||Le fichier de base de données du programme (.pdb) peut ne pas être généré.<br /><br /> Un fichier .pdb stocke des informations de débogage, telles que des informations sur le type, la méthode et le fichier source.|Activez l’option **/DEBUG** dans l’éditeur de liens.<br /><br /> Consultez [/DEBUG (Generate Debug Info)](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).|  
 ||Impossible d’ouvrir ou de localiser le fichier .pdb aux emplacements attendus.|Assurez-vous que le fichier .pdb existe dans les emplacements attendus.|  
-||Les informations de débogage ont été supprimées du fichier .pdb.|Si l’option **/PDBSTRIPPED** a été utilisée dans l’éditeur de liens, incluez à la place le fichier .pdb complet.<br /><br /> Consultez [/PDBSTRIPPED (supprimer les symboles privés)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|  
+||Les informations de débogage ont été supprimées du fichier .pdb.|Si l’option **/PDBSTRIPPED** a été utilisée dans l’éditeur de liens, incluez à la place le fichier .pdb complet.<br /><br /> Consultez [/PDBSTRIPPED (Strip Private Symbols)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|  
 ||L’appelant n’est pas une fonction ; il correspond à un thunk dans le fichier binaire ou à un pointeur dans la section de données.|Lorsque l'appelant est un thunk, essayez d'utiliser `_declspec(dllimport)` pour éviter le thunk.<br /><br /> Consultez :<br /><br /> -   [Règles générales et Limitations](http://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [Importation d’appels de fonction à l’aide de __declspec (dllimport)](http://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](http://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
   
 ##  <a name="RenderMoreQuickly"></a> Accélérer le rendu des cartes de code  

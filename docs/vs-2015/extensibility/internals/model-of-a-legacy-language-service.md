@@ -1,7 +1,7 @@
 ---
 title: Modèle d’un Service de langage hérité | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1ccea832f1979601a764c0b979b0f7d4d72bd796
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb8b7ebc9cb5f0b1f6b2f2b313fa42418105ceec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495237"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294032"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modèle d’un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [modèle d’un Service de langage hérité](https://docs.microsoft.com/visualstudio/extensibility/internals/model-of-a-legacy-language-service).  
-  
 Un service de langage définit les éléments et les fonctionnalités pour une langue spécifique et est utilisé pour fournir l’éditeur avec les informations spécifiques à cette langue. Par exemple, l’éditeur doit connaître les éléments et les mots clés du langage pour prendre en charge la coloration syntaxique.  
   
  Le service de langage travaille en étroite collaboration avec la mémoire tampon de texte géré par l’éditeur et la vue qui contienne l’éditeur. Microsoft IntelliSense **Info Express** option est un exemple d’une fonctionnalité fournie par un service de langage.  

@@ -1,7 +1,7 @@
 ---
 title: Parcourir et mettre à jour des modèles de couche dans le code de programme | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3b4be16e9778ffe39e03e55254f6e38e64f3ad21
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69286377a302fabc900fe4cf9384bb65d094a378
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503991"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214922"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Parcourir et mettre à jour les modèles de couche dans le code de programme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Parcourir et mise à jour des modèles dans le code de programme de couche](https://docs.microsoft.com/visualstudio/modeling/navigate-and-update-layer-models-in-program-code).  
-  
 Cette rubrique décrit les éléments et les relations au sein des modèles de couche, que vous pouvez parcourir et mettre à jour à l'aide de code de programme. Pour plus d’informations sur les diagrammes de couche à partir du point de vue de l’utilisateur, consultez [diagrammes de couche : référence](../modeling/layer-diagrams-reference.md) et [diagrammes de couche : instructions](../modeling/layer-diagrams-guidelines.md).  
   
  Le modèle <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> décrit dans cette rubrique rappelle le modèle plus général <xref:Microsoft.VisualStudio.GraphModel>. Si vous écrivez un [extension de mouvements ou de commandes de menu](../modeling/add-commands-and-gestures-to-layer-diagrams.md), utilisez la `Layer` modèle. Si vous écrivez un [extension de validation de couche](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), il est plus facile à utiliser le `GraphModel`.  

@@ -1,7 +1,7 @@
 ---
 title: 'Erreur : Impossible de démarrer le débogage sur le serveur Web | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -33,18 +33,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 410b180d7b533c925aa183d01bd8f64463225629
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ccfce76d1cedacecdc467971151a6f9a66d5af68
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504583"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217878"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Erreur : impossible de démarrer le débogage sur le serveur web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [erreur : Impossible de démarrer le débogage sur le serveur Web](https://docs.microsoft.com/visualstudio/debugger/error-unable-to-start-debugging-on-the-web-server).  
-  
 Quand vous essayez de déboguer une application ASP.NET exécutée sur un serveur web, le message d’erreur suivant peut s’afficher : Impossible de démarrer le débogage sur le serveur web.
   
 Dans de nombreux cas, cette erreur se produit, car IIS n’est pas configuré correctement.

@@ -1,7 +1,7 @@
 ---
 title: Référence des API de visualiseur | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ab8b56cb8eea3424d03292d761816c7b7ac9fb4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 849b8d93722f7ca70ba161b297449dc33cfd1acc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503460"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206347"
 ---
 # <a name="visualizer-api-reference"></a>Référence des API du visualiseur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [référence des API de visualiseur](https://docs.microsoft.com/visualstudio/debugger/visualizer-api-reference).  
-  
 Les API de visualiseur sont fournies aux utilisateurs qui souhaitent écrire un visualiseur pour le débogueur Visual Studio. Une visualiseur est une petite application qui étend les fonctionnalités de l'interface utilisateur du débogueur Visual Studio. Un visualiseur peut afficher (et éventuellement modifier) un objet de données d'un type spécifique pour lequel le visualiseur est conçu.  
   
 ## <a name="in-this-section"></a>Dans cette section  

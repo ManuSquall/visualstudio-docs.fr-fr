@@ -1,7 +1,7 @@
 ---
 title: Affichage des types et relations (Concepteur de classes) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dc7bf4d9f005b5514be5ec6765744b8d043a3979
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 801481c6fed2dab33774cd9895685e91e49ab361
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505612"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240758"
 ---
 # <a name="viewing-types-and-relationships-class-designer"></a>Affichage des types et relations (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [affichage des Types et relations (Concepteur de classes)](https://docs.microsoft.com/visualstudio/ide/viewing-types-and-relationships-class-designer).  
-  
 Le Concepteur de classes utilise des diagrammes de classes pour afficher des informations détaillées sur les types, telles que leurs membres constitutifs et les relations qu’ils partagent. La visualisation de ces entités est en fait une vue dynamique du code. Vous pouvez donc modifier les types dans le concepteur, puis visualiser vos modifications dans le code source de l’entité. De même, le diagramme de classes est constamment synchronisé avec les modifications apportées aux entités du code.  
   
 > [!NOTE]

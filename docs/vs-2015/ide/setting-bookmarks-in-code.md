@@ -1,7 +1,7 @@
 ---
 title: Définition de signets dans le code | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 989333e23310009a4b3282fb4520395a32d6b270
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bbb6775411af7bc93cd8168af460974fb5c18d3d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505287"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219750"
 ---
 # <a name="setting-bookmarks-in-code"></a>Définition de signets dans le code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [définition de signets dans le Code](https://docs.microsoft.com/visualstudio/ide/setting-bookmarks-in-code).  
-  
 Vous pouvez utiliser des signets pour marquer les lignes de votre code afin de pouvoir rapidement revenir à un emplacement spécifique et basculer d'un emplacement à un autre.  
   
  Les commandes et les icônes de signet sont disponibles à deux emplacements : la fenêtre de signet (**Affichage/Fenêtre Signet**) et la barre d’outils de l’Éditeur de texte.  

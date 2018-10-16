@@ -1,7 +1,7 @@
 ---
 title: Affichage des données dans le débogueur | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,19 +28,17 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 048f1a531c9de81c8ba316449835b022e4393222
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6d90342e97e4e331cacd87adf33d9cc7e434576
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493092"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204358"
 ---
 # <a name="viewing-data-in-the-debugger"></a>Affichage des données dans le débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [affichage de données dans le débogueur](https://docs.microsoft.com/visualstudio/debugger/viewing-data-in-the-debugger).  
-  
-Le débogueur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fournit tout un ensemble d'outils permettant d'examiner et de modifier l'état de votre programme. La plupart de ces outils ne fonctionnent qu’en mode arrêt.  
+Le débogueur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fournit tout un ensemble d’outils permettant d’examiner et de modifier l’état de votre programme. La plupart de ces outils ne fonctionnent qu’en mode arrêt.  
   
 ## <a name="datatips"></a>DataTips  
  Les DataTips sont l’un des outils les plus pratiques pour consulter des informations sur les variables et les objets de votre programme au moment du débogage. Lorsque le débogueur est en mode arrêt, pour afficher la valeur d’une variable dans la portée actuelle, placez le pointeur de la souris sur la variable dans une fenêtre source. Pour plus d’informations, consultez [Afficher les valeurs des données dans les conseils de données](../debugger/view-data-values-in-data-tips-in-the-code-editor.md).  

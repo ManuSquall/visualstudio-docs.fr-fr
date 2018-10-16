@@ -1,7 +1,7 @@
 ---
 title: Prise en charge pour le SDK Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 05e5e4d30601c59d04a96cdca2e71609ea3e0bc5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f3e33a47052a399b0edac2bb4425c27872cb6b37
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506461"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229201"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Prise en charge du SDK Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [prise en charge pour le SDK Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/support-for-the-visual-studio-sdk).  
-  
 Plusieurs options de support sont disponibles pour les clients qui ont des questions sur la façon d’étendre l’environnement de développement intégré (IDE) Visual Studio.  
   
 ## <a name="free-support"></a>Support gratuit  

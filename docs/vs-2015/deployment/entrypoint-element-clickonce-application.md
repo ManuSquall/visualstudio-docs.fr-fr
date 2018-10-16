@@ -1,7 +1,7 @@
 ---
 title: '&lt;point d’entrée&gt; , élément (Application ClickOnce) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 05e8e08718d9a0a87a1a3903e512c690ab0ebff8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da308de644dfc73d9364b65e21e820d6fc6c2a8a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508091"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255311"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;point d’entrée&gt; , élément (Application ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [ &lt;entryPoint&gt; , élément (Application ClickOnce)](https://docs.microsoft.com/visualstudio/deployment/entrypoint-element-clickonce-application).  
-  
 Identifie l’assembly qui doit être exécutée lorsque cela [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application est exécutée sur un ordinateur client.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -61,9 +59,9 @@ Identifie l’assembly qui doit être exécutée lorsque cela [!INCLUDE[ndpteccl
 ```  
   
 ## <a name="elements-and-attributes"></a>Éléments et attributs  
- L’élément `entryPoint` est obligatoire et se trouve dans l’espace de noms `urn:schemas-microsoft-com:asm.v2`. Il peut être uniquement un `entryPoint` élément défini dans un manifeste d’application.  
+ L’élément `entryPoint` est obligatoire et se trouve dans l’espace de noms `urn:schemas-microsoft-com:asm.v2` . Il peut être uniquement un `entryPoint` élément défini dans un manifeste d’application.  
   
- Le `entryPoint` élément a l’attribut suivant.  
+ L’élément `entryPoint` comporte l’attribut suivant.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
@@ -122,7 +120,7 @@ Identifie l’assembly qui doit être exécutée lorsque cela [!INCLUDE[ndpteccl
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md)
+ [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
 
 
 

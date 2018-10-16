@@ -1,7 +1,7 @@
 ---
 title: Ajout d’une propriété de suivi à une définition de Domain-Specific Language | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7f17058f2300e607707a5f2208eebe9bb2570095
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 183c459871f991aedb3cec19c7a83105091d2706
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502336"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182999"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Ajout d'une propriété de suivi à une définition de langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Ajout d’une propriété de suivi à une définition de langage spécifique à un domaine](https://docs.microsoft.com/visualstudio/modeling/adding-a-tracking-property-to-a-domain-specific-language-definition).  
-  
 Cette procédure pas à pas montre comment ajouter une propriété de suivi à un modèle de domaine.  
   
  Un *suivi domaine* propriété est une propriété qui peut être mis à jour par l’utilisateur, mais qui a la valeur par défaut qui est calculée en utilisant les valeurs d’autres propriétés de domaine ou les éléments.  

@@ -1,7 +1,7 @@
 ---
 title: 'Diagrammes de cas d’usage UML : Référence | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 35
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2bc0d23a1404925183af00ab710a422639e51654
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9fbdf85b3177b88e1a7e97f3cbcd4f901961958d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504638"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256306"
 ---
 # <a name="uml-use-case-diagrams-reference"></a>Diagrammes de cas d'usage UML : référence
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [diagrammes de cas d’usage UML : référence](https://docs.microsoft.com/visualstudio/modeling/uml-use-case-diagrams-reference).  
-  
 Dans Visual Studio, un *utiliser le diagramme de cas* résume qui utilise votre application ou système, et ce qu’ils font avec lui. Pour créer un diagramme de cas d’usage UML, sur le **Architecture** menu, cliquez sur **nouveau UML ou diagramme de couche**.  
   
  Un diagramme de cas d'usage est l'emplacement central où vous décrivez les besoins des utilisateurs. Il décrit les relations entre les besoins, les utilisateurs et les principaux composants. Il ne décrit pas les besoins en détail. Ceux-ci peuvent être décrits dans des diagrammes séparés ou dans des documents qui peuvent être liés à chaque cas d'usage. Pour savoir comment les diagrammes de cas d’utilisation peuvent vous aider à comprendre, discuter et communiquer les besoins de vos utilisateurs, consultez [modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md).  

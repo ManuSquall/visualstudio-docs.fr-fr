@@ -1,7 +1,7 @@
 ---
 title: L’installation de systèmes de base de données, des outils et exemples | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1dea5adb6903c7beaf39c65909296224afa2a44c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f18ace9a18eefd0758e581b83001b85c3f48a3da
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494424"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244281"
 ---
 # <a name="installing-database-systems-tools-and-samples"></a>L’installation de systèmes de base de données, des outils et des exemples
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [l’installation de systèmes de base de données, des outils et des exemples](https://docs.microsoft.com/visualstudio/data-tools/installing-database-systems-tools-and-samples).  
-  
   
 Visual Studio n’inclut pas les systèmes de base de données autres que ceux utilisés en interne. Pour développer une application connecté aux données dans Visual Studio, votre généralement installer le système de base de données sur votre ordinateur de développement local, puis déployer l’application et la base de données dans un environnement de production lorsqu’elles sont prêtes. Pour le système de base de données soient accessibles à partir d’applications .NET et pour être visible dans les fenêtres outils de données Visual Studio, il doit avoir un fournisseur de données ADO.NET. Un fournisseur doit prendre spécifiquement en charge Entity Framework si vous envisagez d’utiliser des modèles de données d’entité dans votre application .NET.     De nombreux fournisseurs sont proposées via le Gestionnaire de Package NuGet ou via la galerie Visual Studio.  
   

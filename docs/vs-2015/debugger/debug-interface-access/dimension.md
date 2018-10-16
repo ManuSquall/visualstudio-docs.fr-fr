@@ -1,7 +1,7 @@
 ---
 title: Dimension | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cfe5deec761426692b8f8fa1507ce4b3ca56629d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 49a8bb43ab1e8cfc253cc45dd2e08f18463dc9d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47508301"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197728"
 ---
 # <a name="dimension"></a>Dimension
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Dimension](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/dimension).  
-  
 Chaque tableau FORTRAN a une dimension qui est identifiée par un `SymTagDimension` symbole.  
   
 ## <a name="properties"></a>Properties  

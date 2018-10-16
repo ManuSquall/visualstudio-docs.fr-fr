@@ -1,7 +1,7 @@
 ---
 title: Dépanner les extensions des diagrammes de couche | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 27
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 44d06774d5eec41885bf9efbcf74a76373d22b2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c8ea8f4e6b102dd9bb4a84154096d5cef906eeab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506711"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250066"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>Dépanner les extensions des diagrammes de couche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [dépanner les extensions de diagrammes de dépendance](https://docs.microsoft.com/visualstudio/modeling/troubleshoot-extensions-for-layer-diagrams).  
-  
 Cette rubrique aborde certains problèmes que vous pouvez rencontrer quand vous créez des extensions de modèle de couche.  
   
 #### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-layer-diagrams-in-the-experimental-instance-of-includevsprvsincludesvsprvs-mdmd"></a>Quand j'appuie sur F5 pour déboguer mon extension, mes commandes, gestionnaires de mouvements, extensions de validation ou propriétés personnalisées n'apparaissent pas sur les diagrammes de couche dans l'instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  

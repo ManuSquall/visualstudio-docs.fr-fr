@@ -1,7 +1,7 @@
 ---
 title: Prise en charge des extraits de Code dans un Service de langage hérité | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 83fcde82b2b4b509745c8a81045f01b822620fce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 71098c0dda7c06f446658c4970d0b6cf2e35e55e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494423"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198508"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Prise en charge des extraits de code dans un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [prise en charge des extraits de Code dans un Service de langage hérité](https://docs.microsoft.com/visualstudio/extensibility/internals/support-for-code-snippets-in-a-legacy-language-service).  
-  
 Un extrait de code est un morceau de code est inséré dans le fichier source. L’extrait de code est un modèle basé sur XML avec un ensemble de champs. Ces champs sont mis en surbrillance une fois que l’extrait de code est inséré et peut avoir des valeurs différentes en fonction du contexte dans lequel l’extrait de code est inséré. Immédiatement après que l’extrait de code est inséré, le service de langage peut mettre en forme l’extrait de code.  
   
  L’extrait de code est inséré dans un mode d’édition spéciale qui permet les champs de l’extrait de code pour permettre une navigation à l’aide de la touche TAB. Les champs peuvent prendre en charge les menus déroulants de type IntelliSense. L’utilisateur valide l’extrait de code dans le fichier source en tapant l’entrée ou la touche ÉCHAP. Pour en savoir plus sur les extraits de code, consultez [extraits de Code](../../ide/code-snippets.md).  

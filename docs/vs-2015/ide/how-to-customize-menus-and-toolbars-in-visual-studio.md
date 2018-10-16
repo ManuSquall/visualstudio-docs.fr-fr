@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour personnaliser des menus et des barres d’outils dans Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -33,18 +33,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 74908b64c6ef1f17d040e74abd4e9b1013929c9a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7301a05ff17c20532a394fd1f26ab9fd98c3b65
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502614"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237885"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Comment : personnaliser des menus et des barres d'outils dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : personnaliser des Menus et barres d’outils dans Visual Studio](https://docs.microsoft.com/visualstudio/ide/how-to-customize-menus-and-toolbars-in-visual-studio).  
-  
 Vous pouvez personnaliser Visual Studio non seulement en ajoutant et en supprimant des barres d'outils et des menus dans la barre de menus, mais aussi en ajoutant et en supprimant des commandes dans une barre d'outils ou un menu quelconques.  
   
 > [!WARNING]

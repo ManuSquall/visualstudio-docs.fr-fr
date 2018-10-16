@@ -1,7 +1,7 @@
 ---
 title: Déboguer XAML dans Blend | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a1fe1c312c747e25fc1b1e93a51e26d6e67c4a9b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0c2e135c788ce4fc632efa617323e7ac6fc1f3e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507447"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179879"
 ---
 # <a name="debug-xaml-in-blend"></a>Déboguer XAML dans Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [déboguer le XAML dans Blend](https://docs.microsoft.com/visualstudio/debugger/debug-xaml-in-blend).  
-  
 Vous pouvez utiliser les outils de [!INCLUDE[blend_first](../includes/blend-first-md.md)] pour déboguer le code XAML dans votre application. Lorsque vous générez un projet, toutes les erreurs sont affichées dans le **résultats** Panneau de configuration. Double-cliquez sur une erreur pour localiser le balisage associé à l'erreur. Si vous avez besoin de plus d’espace de travail, vous pouvez masquer la **résultats** panneau en appuyant sur F12.  
   
 ## <a name="syntax-errors"></a>Erreurs de syntaxe  
@@ -117,7 +115,7 @@ Vous pouvez utiliser les outils de [!INCLUDE[blend_first](../includes/blend-firs
   
 2.  Double-cliquez sur la description « '0' n’est pas valide au début d’un nom. » `Margin="0,149,0,0"` semble être correct. Toutefois, notez que le codage en couleur de `Margin` n'est pas le même que celui des autres instances de `Margin` dans le code. L'absence de guillemets anglais fermants dans la paire nom/valeur précédente (`VerticalAlignment="Top`) fait que `Margin="` est lu comme faisant partie de la valeur de l'attribut précédent, et 0 est lu comme le début de la paire nom/ valeur. Tapez le guillemet anglais fermant pour `Top`. La liste d’erreurs dans le **résultats** panneau mises à jour pour refléter vos modifications.  
   
-3.  Double-cliquez sur l’erreur restante : « Le Bouton d’étiquette XML de fermeture ne correspond pas » Le pointeur se trouve à la fermeture **grille** balise (`</Grid>`), suggérant que l’erreur se trouve dans le `Grid` objet. Notez que la balise de fermeture est manquante dans le deuxième objet `Button`. Après avoir ajouté la fermeture `/`, le **résultats** liste du panneau est mis à jour. Ces erreurs initiales sont à présent résolues, mais deux erreurs supplémentaires ont été identifiées.  
+3.  Double-cliquez sur l’erreur restante : « Le Bouton d’étiquette XML de fermeture ne correspond pas » Le pointeur se trouve à la fermeture **grille** balise (`</Grid>`), suggérant que l’erreur se trouve dans le `Grid` objet. Notez que l’étiquette de fermeture est manquante dans le deuxième objet `Button`. Après avoir ajouté la fermeture `/`, le **résultats** liste du panneau est mis à jour. Ces erreurs initiales sont à présent résolues, mais deux erreurs supplémentaires ont été identifiées.  
   
 4.  Double-cliquez sur « Le membre "contenu" n'est pas reconnu ou n'est pas accessible. ». Le `c` dans `content` devrait être en majuscules. Remplacez le « c » minuscule par un « c » majuscule.  
   

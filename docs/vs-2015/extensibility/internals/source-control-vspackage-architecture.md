@@ -1,7 +1,7 @@
 ---
 title: Architecture de VSPackage de contrôle source | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 453125fc-23dc-49b1-8476-94581f05e6c7
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d2a76a877581085b6bdffd8522bfcea24ea9e24
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69cbcd1f8ab1f04f02d89839eed1e0cd67aa2fd9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494849"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190461"
 ---
 # <a name="source-control-vspackage-architecture"></a>Architecture de VSPackage de contrôle de code source
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Architecture de VSPackage de contrôle de Source](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-vspackage-architecture).  
-  
 Un package de contrôle de code source est un VSPackage qui utilise des services qui la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fournit de l’IDE. En retour, un package de contrôle de code source fournit ses fonctionnalités comme un service de contrôle de code source. En outre, un package de contrôle de code source est une alternative plus polyvalente que le plug-in pour l’intégration du contrôle de code source dans un contrôle de code source [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
  Un plug-in qui implémente l’API de plug-in de contrôle de Source de contrôle de code source respecte un contrat strict. Par exemple, un plug-in Impossible de remplacer la valeur par défaut [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] l’interface utilisateur (IU). En outre, l’API de plug-in de contrôle de Source ne permet pas un plug-in implémenter son propre modèle de contrôle de code source. Un package de contrôle de code source, surmonte Toutefois, ces deux restrictions. Un package de contrôle de code source a contrôle complet sur l’expérience de contrôle de source d’un [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] utilisateur. En outre, un package de contrôle de code source peut utiliser son propre modèle de contrôle source et la logique, et elle peut définir toutes les interfaces utilisateur relatifs au contrôle de source.  

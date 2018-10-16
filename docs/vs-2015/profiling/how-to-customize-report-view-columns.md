@@ -1,7 +1,7 @@
 ---
 title: Guide pratique pour personnaliser les colonnes de la vue Rapport | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,23 +19,21 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14e6e751f826d0ee52db5f00712a225f2171ecc9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b5bc7b18e4df3baac4f6acb65d39c9ab66bcafa5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504007"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202811"
 ---
-# <a name="how-to-customize-report-view-columns"></a>Comment : personnaliser les colonnes de la vue de rapport
+# <a name="how-to-customize-report-view-columns"></a>Comment : personnaliser les colonnes de la vue de rapport
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Comment : personnaliser les colonnes de vue rapport](https://docs.microsoft.com/visualstudio/profiling/how-to-customize-report-view-columns).  
-  
 Les outils d’analyse des performances de Visual Studio Team System Development Edition sont entièrement intégrés à l’environnement de développement intégré (IDE) pour fournir une expérience utilisateur transparente. La liste qui suit répertorie les vues que vous pouvez personnaliser en ajoutant, en supprimant et en réorganisant des colonnes :  
   
--   [Vue Modules](../profiling/modules-view.md)  
+-   [Modules, mode](../profiling/modules-view.md)  
   
--   [Vue Fonctions](../profiling/functions-view.md)  
+-   [Mode Fonctions](../profiling/functions-view.md)  
   
 -   [Lignes, vue](../profiling/lines-view.md)  
   
@@ -43,7 +41,7 @@ Les outils d’analyse des performances de Visual Studio Team System Development
   
 -   [Vue Appelant/Appelé](../profiling/caller-callee-view.md)  
   
--   [Vue Arborescence des appels](../profiling/call-tree-view.md)  
+-   [Mode Arborescence des appels](../profiling/call-tree-view.md)  
   
 -   [Vue Allocations](../profiling/dotnet-memory-allocations-view.md)  
   

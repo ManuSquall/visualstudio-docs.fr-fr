@@ -1,7 +1,7 @@
 ---
 title: Rapport basé sur un intervalle de temps visible | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c07943ada629e79fc88be54da915fb9f464fd0cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f13ab0b7d7ff1ea7ba264ed264b1ba70b79195b2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47507133"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176239"
 ---
 # <a name="report-based-on-visible-time-range"></a>Rapport basé sur une plage horaire affichée
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [rapport basé sur un intervalle de temps Visible](https://docs.microsoft.com/visualstudio/profiling/report-based-on-visible-time-range).  
-  
 La vue Profil affiche des rapports basés sur l’intervalle de temps et les canaux actuellement visibles. Pour plus de détails sur les différents sous-ensembles de données, cliquez sur les éléments dans la légende.  
   
  Vous pouvez trouver plus d’informations sur les données dans les tableaux ci-après.  
@@ -45,7 +43,7 @@ La vue Profil affiche des rapports basés sur l’intervalle de temps et les can
  [Temps de traitement UI](../profiling/ui-processing-time.md)   
  [Rapport sur les opérations de disque](../profiling/disk-operations-report-threads-view.md)   
  [Rapport Récapitulatif par thread](../profiling/per-thread-summary-report.md)   
- [Vue Threads](../profiling/threads-view-parallel-performance.md)
+ [vue Threads](../profiling/threads-view-parallel-performance.md)
 
 
 

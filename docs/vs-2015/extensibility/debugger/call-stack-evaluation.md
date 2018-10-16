@@ -1,7 +1,7 @@
 ---
 title: Appeler l’évaluation de la pile | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 373d6b49-0459-4cce-816e-05745a44fe49
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a591fd743a6753a8e11f60c043a3791e2553d325
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 016fd54eef973934acba28a6b25a349a35edb42b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506577"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184299"
 ---
 # <a name="call-stack-evaluation"></a>Évaluation de la pile des appels
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [évaluation de la pile appeler](https://docs.microsoft.com/visualstudio/extensibility/debugger/call-stack-evaluation).  
-  
 Pour afficher les frames de pile de la pile des appels en mode arrêt, vous devez implémenter le [EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) (méthode).  
   
 ## <a name="methods-for-evaluation"></a>Méthodes pour l’évaluation  

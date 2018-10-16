@@ -1,7 +1,7 @@
 ---
 title: Créer et gérer des boîtes de dialogue modales | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b79ec93ae3783355d41d78a25dd5083dd5cd6361
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c49db22686481abd824b94178c854d681a1373db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506826"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177253"
 ---
 # <a name="creating-and-managing-modal-dialog-boxes"></a>Création et gestion de boîtes de dialogue modales
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [création et la gestion des boîtes de dialogue modales](https://docs.microsoft.com/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).  
-  
 Lorsque vous créez une boîte de dialogue modale dans Visual Studio, vous devez vous assurer que la fenêtre parente de la boîte de dialogue est désactivée lorsque la boîte de dialogue s’affiche, puis réactiver la fenêtre parente après la fermeture de la boîte de dialogue. Si vous ne le faites pas, vous pouvez recevoir l’erreur : « Microsoft Visual Studio ne peut pas arrêter, car une boîte de dialogue modale est active. Fermez la boîte de dialogue active et réessayez. »  
   
  Il existe deux façons d’effectuer cette opération. Si vous avez une boîte de dialogue WPF, il est recommandé de dériver à partir <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>, puis appelez <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A> pour afficher la boîte de dialogue. Si vous procédez ainsi, il est inutile de gérer l’état modal de la fenêtre parente.  

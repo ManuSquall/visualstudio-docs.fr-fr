@@ -1,7 +1,7 @@
 ---
 title: Spécification des gestionnaires de fichiers pour les Extensions de nom de fichier | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 83bbc57098a68239a1ef26548e9cf05fd31322bb
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 7805cd0f146289e6993971805107faca5cf42920
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47590588"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198430"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Spécification des gestionnaires de fichiers pour les extensions de nom de fichier
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [spécifiant des gestionnaires de fichiers pour les Extensions de nom de fichier](https://docs.microsoft.com/visualstudio/extensibility/specifying-file-handlers-for-file-name-extensions).  
-  
 Il existe plusieurs façons de déterminer l’application qui gère un fichier qui a une extension de fichier particulier. Les verbes OpenWithList et OpenWithProgids sont deux façons de spécifier des gestionnaires de fichiers sous l’entrée de Registre pour l’extension de fichier.  
   
 ## <a name="openwithlist-verb"></a>OpenWithList verbe  

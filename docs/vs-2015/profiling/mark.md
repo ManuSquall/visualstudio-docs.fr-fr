@@ -1,7 +1,7 @@
 ---
 title: Mark | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb1b5d35e11cd3317db473330d908e0f7300d576
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d1bd78f356ed8fc48db9b7712e46fe88e8d3a83
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516606"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297568"
 ---
 # <a name="mark"></a>Marque
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Mark](https://docs.microsoft.com/visualstudio/profiling/mark).  
-  
 L’option **Mark** de VSPerfCmd.exe insère les informations spécifiées dans le fichier de données de profilage. Une marque peut apparaître dans un rapport VSPerfReport distinct ou dans la vue Rapport de marques de l’interface utilisateur du profileur. L’option **Mark** peut être utilisée pour spécifier des points de début et fin dans les filtres des rapports et des vues.  
   
  L’option **Mark** doit être la seule option spécifiée sur la ligne de commande.  

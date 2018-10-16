@@ -1,7 +1,7 @@
 ---
 title: 'Étape 6 : Ajouter une minuterie | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 02ec36c9dbb6f659e3cc5c59d7ee82abffcac34d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 577ef28c49d769bac8d979330f181c67b8d35687
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47495925"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293373"
 ---
 # <a name="step-6-add-a-timer"></a>Étape 6 : Ajouter une minuterie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [étape 6 : ajouter une minuterie](https://docs.microsoft.com/visualstudio/ide/step-6-add-a-timer).  
-  
 Ensuite, ajoutez un contrôle **Timer** au jeu de combinaisons. Une minuterie attend un nombre donné de millisecondes, puis déclenche un événement, appelé *battement*. Ceci permet de démarrer ou répéter périodiquement une action. Ici, vous devez utiliser un minuteur pour permettre aux joueurs de choisir deux icônes et, si ces icônes ne correspondent pas, pour masquer les deux icônes à nouveau après un bref délai.  
   
 ### <a name="to-add-a-timer"></a>Pour ajouter un minuteur  

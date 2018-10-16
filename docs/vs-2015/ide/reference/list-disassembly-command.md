@@ -1,7 +1,7 @@
 ---
 title: Afficher le code machine, commande | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6834bc8f6c9bc3aacb95ae3705195fde32c4d6cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4cbdc3ee566135fe86301deefe1e8be8db431f9f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47505218"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256657"
 ---
 # <a name="list-disassembly-command"></a>Afficher le code machine, commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [afficher le code machine, commande](https://docs.microsoft.com/visualstudio/ide/reference/list-disassembly-command).  
-  
   
 Commence le processus de débogage et permet de spécifier comment les erreurs sont gérées.  
   
@@ -75,7 +73,7 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
  [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Fenêtre Commande](../../ide/reference/command-window.md)   
  [Zone Rechercher/Commande](../../ide/find-command-box.md)   
- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

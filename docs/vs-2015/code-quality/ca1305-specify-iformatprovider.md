@@ -1,7 +1,7 @@
 ---
 title: 'CA1305 : Spécifier IFormatProvider | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8d4d187383a139198cbdbcf1ebf8d69338450959
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 107248d0dddf89f63056a8a385eeb2a942ca91c8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47588163"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186695"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305 : Spécifier IFormatProvider
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Vous trouverez la dernière version de cette rubrique dans [CA1305 : spécifier un IFormatProvider](https://docs.microsoft.com/visualstudio/code-quality/ca1305-specify-iformatprovider).
-
 |||
 |-|-|
 |TypeName|SpecifyIFormatProvider|

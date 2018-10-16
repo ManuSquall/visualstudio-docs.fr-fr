@@ -1,7 +1,7 @@
 ---
 title: Appel d’une Transformation de texte dans une Extension VS | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4484979739dda4838009bab312237a1860066eac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0751229e778e13375698f591d789edfd318b3ffc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501296"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298621"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Appel d’une transformation de texte dans une extension VS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [appel d’une Transformation de texte dans une Extension VS](https://docs.microsoft.com/visualstudio/modeling/invoking-text-transformation-in-a-vs-extension).  
-  
 Si vous écrivez un [extension Visual Studio](http://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14) comme une commande de menu ou [langage spécifique à un domaine](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), vous pouvez utiliser le service de création de modèles de texte pour transformer les modèles de texte. Obtenez le service <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> et effectuez le cast de celui-ci en <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.  
   
 ## <a name="getting-the-text-templating-service"></a>Obtention du service de création de modèles de texte  
@@ -148,7 +146,7 @@ Sample text.
  Pour générer du texte à partir d'un modèle de texte prétraité :  
  Appelez la méthode `TransformText()` de la classe générée. Pour plus d’informations, consultez [génération de texte d’exécution avec les modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md).  
   
- Pour générer du texte en dehors d'une extension [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] :  
+ Pour générer du texte en dehors d’une extension [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] :  
  Définissez un hôte personnalisé. Pour plus d’informations, consultez [de traitement des modèles de texte à l’aide d’un hôte personnalisé](../modeling/processing-text-templates-by-using-a-custom-host.md).  
   
  Pour générer du code source qui peut ensuite être compilé et exécuté :  

@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : rechercher une fuite de mémoire (JavaScript) | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 242dd78d7110a36e0c8baf4d1ea1e1a7f323a1c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7feaa8629078be9e5e7a915fe3c09a9599a8f292
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47501651"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234193"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Procédure pas à pas : rechercher une fuite de mémoire (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [procédure pas à pas : rechercher une fuite de mémoire (JavaScript)](https://docs.microsoft.com/visualstudio/profiling/walkthrough-find-a-memory-leak-javascript).  
-  
 S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png « windows_and_phone_content »)  
   
  Cette procédure pas à pas vous guide dans le processus d'identification et de résolution d'un problème de mémoire simple à l'aide de l'analyseur de mémoire JavaScript. L'analyseur de mémoire JavaScript est disponible dans Visual Studio pour les applications du Windows Store générées pour Windows en JavaScript. Dans ce scénario, vous créez une application qui conserve incorrectement les éléments DOM en mémoire au lieu de les éliminer au rythme auquel ils sont créés.  

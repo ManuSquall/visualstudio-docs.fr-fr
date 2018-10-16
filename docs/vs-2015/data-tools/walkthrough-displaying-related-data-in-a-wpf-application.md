@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : Affichage de données liées dans une Application WPF | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: f6a052f7894c37e35defc748528b01124957cbc6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 922d33e52e02a0d2cde9c17f799f6e35f1ae2db4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47494486"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253186"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Procédure pas à pas : affichage de données connexes dans une application WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui affi
   
 5.  Sélectionnez le **Application WPF** modèle de projet.  
   
-6.  Dans la zone **Nom**, tapez `AdventureWorksOrdersViewer`.  
+6.  Dans la zone **Nom** , tapez `AdventureWorksOrdersViewer`.  
   
 7.  Cliquez sur **OK**.  
   

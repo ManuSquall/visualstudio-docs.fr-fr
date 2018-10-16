@@ -1,7 +1,7 @@
 ---
 title: Création de Packages de programme d’amorçage | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: ee6badf48d0d196001c948495f9b658114c66ff6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9224314dbcb5fcb424708c7dad4ca674af661604
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47503300"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208901"
 ---
 # <a name="creating-bootstrapper-packages"></a>Création de packages de programme d'amorçage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [création de Packages de programme d’amorçage](https://docs.microsoft.com/visualstudio/deployment/creating-bootstrapper-packages).  
-  
 Le programme d'installation est un programme d'installation générique qui peut être configuré pour détecter et installer les composants redistribuables tels que les fichiers Windows Installer (msi) et les programmes exécutables. Le programme d'installation est également appelé programme d'amorçage. Il est programmé via un ensemble de manifestes XML qui spécifient les métadonnées permettant de gérer l'installation du composant.  
   
  Le programme d'amorçage détecte d'abord si l'un des composants requis est déjà installé. Si des composants requis ne sont pas installés, le programme d'amorçage commence par afficher les contrats de licence. Une fois que l'utilisateur a accepté les contrats de licence, l'installation des composants requis s'exécute. Si tous les composants requis sont détectés, le programme d'amorçage démarre simplement le programme d'installation de l'application.  
@@ -133,9 +131,9 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour installer des composants requis avec une application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [Boîte de dialogue composants requis](../ide/reference/prerequisites-dialog-box.md)   
+ [Composants requis, boîte de dialogue](../ide/reference/prerequisites-dialog-box.md)   
  [Référence du schéma Package et produit](../deployment/product-and-package-schema-reference.md)   
- [Utiliser le Visual Studio 2005 du programme d’amorçage pour lancer votre Installation](http://go.microsoft.com/fwlink/?LinkId=107537)
+ [Utiliser le programme d’amorçage de Visual Studio 2005 pour démarrer rapidement votre installation](http://go.microsoft.com/fwlink/?LinkId=107537)
 
 
 

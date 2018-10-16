@@ -1,7 +1,7 @@
 ---
 title: Analyse de la qualité du Code managé à l’aide de l’analyse du Code | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3e0538c47dec2dd11b9488a80dd4f71baddc487f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e034db6fc7383ea5f944900713dffe1cc3e78473
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47493607"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263887"
 ---
 # <a name="analyzing-managed-code-quality-by-using-code-analysis"></a>Analyse de la qualité d’un code managé à l’aide de l’analyse du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [analyser la qualité du Code géré par l’analyse du Code à l’aide de](https://docs.microsoft.com/visualstudio/code-quality/analyzing-managed-code-quality-by-using-code-analysis).  
-  
 Vous pouvez utiliser les outils d’analyse de code dans Visual Studio pour découvrir d’éventuels problèmes dans votre code, telles que l’accès aux données non sécurisé, les violations de l’utilisation et les problèmes de conception. Analyse du code fonctionne sur .NET Framework, natif (C et C++) et les applications de base de données. Analyse du code pour le code managé organise des règles dans *ensembles de règles* qui ciblent les problèmes d’encodage.  
   
 ## <a name="common-tasks"></a>Tâches courantes  

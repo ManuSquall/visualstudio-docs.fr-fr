@@ -1,7 +1,7 @@
 ---
 title: L’évaluation des Expressions | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 5ccfcc80-dea5-48a1-8bae-6a26f8d3bc56
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c51cc08da8c71a2ac1f25d02461ea9c24797ebc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b0aae7193c6840d389f7990f155fecb0149edc7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47504432"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213679"
 ---
 # <a name="evaluating-expressions"></a>Évaluation des expressions
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [l’évaluation des Expressions](https://docs.microsoft.com/visualstudio/extensibility/debugger/evaluating-expressions).  
-  
 Expressions sont créées à partir de chaînes passées à partir de l’automatique, Espion, Espion express ou immédiates windows. Lorsqu’une expression est évaluée, il génère une chaîne imprimable qui contient le nom et le type de variable ou argument et sa valeur. Cette chaîne est affichée dans la fenêtre IDE correspondante.  
   
 ## <a name="implementation"></a>Implémentation  

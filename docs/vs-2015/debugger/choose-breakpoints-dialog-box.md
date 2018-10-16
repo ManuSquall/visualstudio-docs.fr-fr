@@ -1,7 +1,7 @@
 ---
 title: Choisissez la boîte de dialogue points d’arrêt | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 55c33c6fc0d93f9ceee3f9e06089ec85ed3fc00b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a48e4181e2efc36faa26739bbcfbdee020c47a16
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502372"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174042"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Boîte de dialogue Choisir les points d’arrêt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [boîte de dialogue Choisir des points d’arrêt](https://docs.microsoft.com/visualstudio/debugger/choose-breakpoints-dialog-box).  
-  
 Le **choisissez les points d’arrêt** boîte de dialogue s’ouvre lorsque vous essayez de définir un point d’arrêt à partir de l’entrée ambiguë dans le **nouveau point d’arrêt** boîte de dialogue. Un exemple courant de l’entrée ambiguë est un nom de fonction surchargée.  
   
  **Points d’arrêt**  

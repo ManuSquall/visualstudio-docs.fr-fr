@@ -1,7 +1,7 @@
 ---
 title: 'Procédure pas à pas : Utilisation des fonctionnalités de l’éditeur XML | Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b88e916680b7a9a2098060bca10f6bc1dd139da
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b054f7bfc4a70ee19e60315e3e7bc2a790db3cba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47502711"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252283"
 ---
 # <a name="walkthrough-using-xml-editor-features"></a>Procédure pas à pas : utilisation des fonctionnalités de l’Éditeur XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
   
 4.  Sur une nouvelle ligne, tapez `<`, puis sélectionnez **employé** à partir de la liste des membres.  
   
-     L'éditeur ajoute le début d'un élément XML, `<employee`. À ce stade, vous pouvez ajouter des attributs à l'élément ou fermer la balise de fin en entrant `>`.  
+     L'éditeur ajoute le début d'un élément XML, `<employee`. À ce stade, vous pouvez ajouter des attributs à l’élément ou fermer l’étiquette de fin en entrant `>`.  
   
 5.  Entrez `>` pour fermer la balise.  
   
@@ -81,7 +81,7 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
   
 7.  Type `<` et sélectionnez **ID** à partir de la liste des membres. Entrez ensuite `>`.  
   
-     L'éditeur ajoute l'élément XML `<ID></ID>` et place le curseur après la balise de début ID.  
+     L’éditeur ajoute l’élément XML `<ID></ID>` et place le curseur après l’étiquette de début ID.  
   
 8.  Type **abc**.  
   
@@ -97,7 +97,7 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
   
 11. Placez le curseur après la balise de fin ID, entrez `<`, sélectionnez hire-date dans la liste des membres, puis entrez `>`.  
   
-     L'éditeur ajoute l'élément XML `<hire-date></hire-date>` et place le curseur après la balise de début hire-date.  
+     L’éditeur ajoute l’élément XML `<hire-date></hire-date>` et place le curseur après l’étiquette de début hire-date.  
   
 12. Tapez dans **2003-01-10** pour la valeur de l’élément hire-date.  
   

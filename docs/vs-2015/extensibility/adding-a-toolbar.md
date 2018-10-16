@@ -1,7 +1,7 @@
 ---
 title: Ajout d’une barre d’outils | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 17302c25-6f59-4e97-8c85-54f95336a07f
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ebfd86a05be72b5a0c35664dee0dc0fcd4189be
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e3aa697ab6ac25c1fe273f4229cff462f097a35e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47506223"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222909"
 ---
 # <a name="adding-a-toolbar"></a>Ajout d’une barre d’outils
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [Ajout d’une barre d’outils](https://docs.microsoft.com/visualstudio/extensibility/adding-a-toolbar).  
-  
 Cette procédure pas à pas montre comment ajouter une barre d’outils à l’IDE Visual Studio.  
   
  Une barre d’outils est une bande horizontale ou verticale qui contient les boutons qui sont liés aux commandes. En fonction de son implémentation, une barre d’outils dans l’IDE peut être repositionné, ancré sur n’importe quel côté de la fenêtre principale de l’IDE ou apportée à rester devant les autres fenêtres.  

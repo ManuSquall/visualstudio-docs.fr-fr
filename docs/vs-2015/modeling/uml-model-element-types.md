@@ -1,7 +1,7 @@
 ---
 title: Types d’éléments modèle UML | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5b8cb26c6e3d6cd51d087454d0b0c0700c1793db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 782485523cd5c80e61032eafc575c111592895b6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47516624"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252380"
 ---
 # <a name="uml-model-element-types"></a>Types d'éléments de modèles UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous trouverez la dernière version de cette rubrique dans [types d’éléments UML modèle](https://docs.microsoft.com/visualstudio/modeling/uml-model-element-types).  
-  
 Vous pouvez lire et manipuler un modèle UML via une interface de programmation. Cette rubrique résume la hiérarchie des types d'éléments. La hiérarchie est la même que celle définie dans la spécification UML.  
   
  Les détails de chaque type sont fournis dans [référence des API pour l’extensibilité de la modélisation UML](../modeling/api-reference-for-uml-modeling-extensibility.md).  
