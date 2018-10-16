@@ -198,9 +198,9 @@ Les étapes suivantes exécutent le flux d’authentification et décrivent les 
 
 1. Lorsque vous avez tout terminé, arrêtez le serveur et validez à nouveau les modifications apportées au contrôle de code source.
 
-### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a>Question : Quel est l’objectif de la balise {% crsf_token %} qui s’affiche dans les éléments du \<formulaire\> ?
+### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a><a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a> Question : Quel est l’objectif de la balise {% csrf_token %} qui s’affiche dans les éléments du \<formulaire\> ?
 
-Réponse : la balise `{% crsf_token %}` inclut la [protection (crsf) de falsification de requêtes intersites](https://docs.djangoproject.com/en/2.0/ref/csrf/) intégrée dans Django (documents Django). En général, vous ajoutez cette balise à tout élément qui implique des méthodes de requête POST, PUT ou DELETE, comme un formulaire. La fonction de rendu de modèle (`render`) insère ensuite la protection nécessaire.
+Réponse : la balise `{% csrf_token %}` inclut la [protection (csrf) de falsification de requêtes intersites](https://docs.djangoproject.com/en/2.0/ref/csrf/) intégrée dans Django (documents Django). En général, vous ajoutez cette balise à tout élément qui implique des méthodes de requête POST, PUT ou DELETE, comme un formulaire. La fonction de rendu de modèle (`render`) insère ensuite la protection nécessaire.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
