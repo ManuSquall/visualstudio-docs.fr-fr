@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ef4857b88c6e18b83cdc0e43bb1b8cf031221f4
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 153077e7231aba485b6f8e08efcf5e6d5752b89a
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550110"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859326"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107 : Passez en revue l'utilisation des méthodes Deny et PermitOnly
 |||
@@ -35,7 +35,7 @@ ms.locfileid: "45550110"
  Une méthode contient une vérification de sécurité qui spécifie l’action de sécurité PermitOnly ou Deny.
 
 ## <a name="rule-description"></a>Description de la règle
- Le <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> action de sécurité doit être utilisée uniquement par les utilisateurs qui ont une connaissance avancée de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] sécurité. Le code qui utilise ces actions de sécurité doit subir une révision de sécurité.
+ Le <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> action de sécurité doit être utilisée uniquement par les utilisateurs qui ont une connaissance avancée de la sécurité .NET Framework. Le code qui utilise ces actions de sécurité doit subir une révision de sécurité.
 
  Refuser modifie le comportement par défaut de la pile qui se produit en réponse à une demande de sécurité. Il vous permet de spécifier des autorisations qui ne doivent pas être accordées sur la durée de la méthode de refus, indépendamment des autorisations réelles des appelants dans la pile des appels. Si le parcours de pile détecte une méthode sécurisée par Deny, et si l’autorisation demandée est incluse dans les autorisations refusées, le parcours de pile échoue. PermitOnly modifie également le comportement par défaut de la pile. Il permet au code de spécifier uniquement les autorisations qui peuvent être accordées, quelles que soient les autorisations des appelants. Si le parcours de pile détecte une méthode sécurisée par PermitOnly, et si l’autorisation demandée n’est pas incluse dans les autorisations qui sont spécifiées par l’action PermitOnly, le parcours de pile échoue.
 

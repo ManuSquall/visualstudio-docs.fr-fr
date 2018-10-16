@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a5716d5a548980b85108b6bbc15329a755bc2b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: bcdc556366a84deffa37d7e0234b1c543882022c
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320629"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370963"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Installer des agents de test et des contrôleurs de test
 
@@ -36,7 +36,7 @@ Le tableau suivant présente la configuration système requise pour l’installa
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Installer le contrôleur de test et les agents de test
 
-Vous pouvez télécharger des agents pour Visual Studio 2017 à partir de [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Faites défiler la page jusqu’en bas, puis recherchez *Agents pour Visual Studio 2017*. Sélectionnez *Agent* ou *Contrôleur*, puis choisissez *Télécharger*. Exécutez l’exécutable téléchargé pour installer l’agent de test ou le contrôleur de test.
+Vous pouvez télécharger des agents pour Visual Studio 2017 à partir de [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Recherchez *Agents pour Visual Studio 2017*, sélectionnez *Agent* ou *Contrôleur*, puis choisissez *Télécharger*. Exécutez l’exécutable téléchargé pour installer l’agent de test ou le contrôleur de test.
 
 Vous pouvez télécharger des agents pour Visual Studio 2015 et Visual Studio 2013 à partir de la page [Téléchargements plus anciens](https://visualstudio.microsoft.com/vs/older-downloads/).
 
@@ -63,7 +63,7 @@ Nous vous recommandons d’utiliser les agents pour Visual Studio dans tous les 
 Le tableau suivant présente les scénarios pris en charge par les Agents pour Visual Studio 2013 et les alternatives pour Team Foundation Server (TFS) 2015 et Azure Test Plans :
 
 | Scénarios pris en charge par les Agents pour Visual Studio 2013 | Alternative dans TFS et Azure Test Plans |
-| --- | --- |
+| - | - |
 | Flux de travail Générer-Déployer-Tester dans Visual Studio | Les utilisateurs peuvent employer un [pipeline de build](/azure/devops/pipelines/index?view=vsts) (pas une build XAML) pour générer, déployer et tester des scénarios dans TFS. |
 | Test de charge (test des performances) avec des ordinateurs distants locaux | Utilisez le contrôleur de test et les agents des test de la version 2013 Update 5 pour exécuter les tests de charge localement. |
 | Exécution à distance de tests automatisés à partir de Microsoft Test Manager à l’aide d’un environnement lab | Actuellement, il n’existe pas d’alternative à ce scénario. Nous vous recommandons d’utiliser la tâche Exécuter les tests fonctionnels dans les définitions de build et de mise en production (pas dans une build XAML) pour exécuter les tests à distance. |

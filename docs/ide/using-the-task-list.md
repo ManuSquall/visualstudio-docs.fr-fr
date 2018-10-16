@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46a156e7f016c0966321240f5ae2362f2bc161e7
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 47468c7ff7ead04ad2c6261725089ca454faffc2
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336069"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612699"
 ---
 # <a name="use-the-task-list"></a>Utiliser la liste des tâches
 
@@ -65,9 +65,9 @@ Un commentaire dans votre code, précédé d'un marqueur de commentaire et d'un 
 
 ### <a name="custom-tokens"></a>Jetons personnalisés
 
-Par défaut, Visual Studio inclut les jetons suivants : `HACK`, `TODO`, `UNDONE` et `NOTE`. Ils ne respectent pas la casse.
+Par défaut, Visual Studio inclut les jetons suivants : `HACK`, `TODO`, `UNDONE` et `UnresolvedMergeConflict`. Ils ne respectent pas la casse. Vous pouvez également créer vos propres jetons personnalisés.
 
-Vous pouvez également créer vos propres jetons personnalisés. Pour créer un jeton personnalisé :
+Pour créer un jeton personnalisé :
 
 1. Dans le menu **Outils** , choisissez **Options**.
 
@@ -77,9 +77,11 @@ Vous pouvez également créer vos propres jetons personnalisés. Pour créer un 
 
    ![Liste des tâches Visual Studio](../ide/media/vs2015_task_list_options.png)
 
-3. Dans la catégorie **Jetons** , dans la zone de texte **Nom** , entrez le nom du jeton, par exemple **BOGUE**.
+3. Dans la zone de texte **Nom**, entrez le nom de votre jeton, par exemple **BOGUE**.
 
-4. Dans la liste déroulante **Priorité** , choisissez une priorité par défaut pour le nouveau jeton. Choisissez le bouton **Ajouter** .
+4. Dans la liste déroulante **Priorité** , choisissez une priorité par défaut pour le nouveau jeton.
+
+5. Sélectionnez **Ajouter**.
 
 ### <a name="c-todo-comments"></a>Commentaires TODO C++
 

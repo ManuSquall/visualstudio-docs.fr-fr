@@ -2,7 +2,7 @@
 title: Utiliser Visual Studio pour créer une application web ASP.NET Core dans C#
 description: Découvrez comment créer une simple application web Hello World dans Visual Studio avec C# et ASP.NET Core, étape par étape.
 ms.custom: mvc
-ms.date: 07/30/2018
+ms.date: 09/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ae4dc5f14db66bee10c8b2e95ea687f71ced2abb
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 53bed90ea686897c2a668ddbc64c60a95c8edfe8
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135598"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028934"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Démarrage rapide : utiliser Visual Studio pour créer votre première application web ASP.NET Core
 
@@ -39,9 +39,9 @@ Vous allez d’abord créer un projet d’application web ASP.NET Core. Voici co
 
 1. Dans la boîte de dialogue **Nouvelle application web ASP.NET Core**, vérifiez que **ASP.NET Core 2.0** apparaît dans le menu déroulant supérieur. Ensuite, choisissez **Application web** et sélectionnez **OK**.
 
-  ![Afficher le fichier .gif animé qui montre comment créer un projet C# ASP.NET Core dans Visual Studio](../ide/media/csharp-aspnet-animated-create-project.gif)
+   ![Afficher le fichier .gif animé qui montre comment créer un projet C# ASP.NET Core dans Visual Studio](../ide/media/csharp-aspnet-animated-create-project.gif)
 
-  Peu après, Visual Studio ouvre votre fichier projet.
+   Peu après, Visual Studio ouvre votre fichier projet.
 
    > [!NOTE]
    > Si vous ne voyez pas la catégorie du modèle de projet **.NET Core**, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche.
@@ -58,13 +58,15 @@ Vous allez d’abord créer un projet d’application web ASP.NET Core. Voici co
 
 Ensuite, vous allez créer et exécuter votre application web « Hello World ». Voici comment procéder.
 
-1. Dans **l’Explorateur de solutions**, développez le dossier **Pages**, puis choisissez **About.cshtml**.
+1. Dans **l’Explorateur de solutions** de Visual Studio, développez le dossier **Pages**. Ensuite, choisissez **About.cshtml**.
 
-   Ce fichier correspond à la page nommée **À propos de** de l’application web.
+   ![Choisir le fichier About.cshtml dans l’Explorateur de solutions](../ide/media/csharp-aspnet-about-page-html-file.png)
+
+   Ce fichier correspond à la page nommée **About** de l’application web, qui exécute un navigateur web.
 
    ![Page À propos de de l’application web](../ide/media/csharp-aspnet-about-page.png)
 
-1. Remplacez le texte « additional information » par « **Hello World!** ».
+1. Dans l’éditeur de code Visual Studio, remplacez le texte « additional information » par « **Hello World!** ».
 
 1. Dans **l’Explorateur de solutions**, développez **About.cshtml**, puis choisissez **About.cshtml.cs**.
 
@@ -72,12 +74,12 @@ Ensuite, vous allez créer et exécuter votre application web « Hello World ».
 
 1. Choisissez **IIS Express** ou appuyez sur **Ctrl**+**F5** pour exécuter l’application et l’ouvrir dans un navigateur web.
 
-  ![Afficher le fichier .gif animé qui montre comment créer et exécuter une application web C# ASP.NET Core dans Visual Studio](../ide/media/csharp-aspnet-animated-hello-world.gif)
+   ![Afficher le fichier .gif animé qui montre comment créer et exécuter une application web C# ASP.NET Core dans Visual Studio](../ide/media/csharp-aspnet-animated-hello-world.gif)
 
    > [!NOTE]
    > Si un message d’erreur indique **Impossible de se connecter au serveur web « IIS Express »**, fermez Visual Studio et rouvrez-le en utilisant l’option **Exécuter en tant qu’administrateur** dans le menu contextuel. Ensuite, réexécutez l’application.
 
-1. Vérifiez que la page **À propos de** inclut votre texte mis à jour.
+1. Dans le navigateur web, vérifiez que la page **About** comporte votre texte mis à jour.
 
 1. Fermez le navigateur web.
 

@@ -1,5 +1,5 @@
 ---
-title: Dépanner les extensions de diagrammes de dépendance
+title: Dépanner des extensions pour des diagrammes de dépendance
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -12,45 +12,45 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b56ccd587df4a830eab5bee000cafcc02b0031e8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1ab3e3c2f299adb8a2f0ec5703f81b14fe5fc4ff
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949369"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860353"
 ---
-# <a name="troubleshoot-extensions-for-dependency-diagrams"></a>Dépanner les extensions de diagrammes de dépendance
+# <a name="troubleshoot-extensions-for-dependency-diagrams"></a>Dépanner des extensions pour des diagrammes de dépendance
 
 Cette rubrique aborde certains problèmes que vous pouvez rencontrer quand vous créez des extensions de modèle de couche.
 
-## <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-dependency-diagrams-in-the-experimental-instance-of-includevsprvscode-qualityincludesvsprvsmdmd"></a>Lorsque vous appuyez sur F5 pour déboguer mon extension, Mes commandes, les gestionnaires de mouvements, les extensions de validation ou des propriétés personnalisées n’apparaissent pas sur les diagrammes de dépendance dans l’instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]
+## <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-dependency-diagrams-in-the-experimental-instance-of-visual-studio"></a>Lorsque j’appuie sur F5 pour déboguer mon extension, Mes commandes, gestionnaires de mouvements, extensions de validation ou des propriétés personnalisées n’apparaissent pas sur des diagrammes de dépendance dans l’instance expérimentale de Visual Studio
 
-1.  Ouvrez votre solution d’extension dans l’instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], puis, dans le **générer** menu, cliquez sur **régénérer la Solution**.
+1.  Ouvrez votre solution d’extension dans l’instance expérimentale de Visual Studio et sur le **Build** menu, cliquez sur **régénérer la Solution**.
 
-2.  Appuyez sur **F5** ou **CTRL + F5** pour démarrer l’instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Ouvrir un diagramme de dépendances et tester votre extension.
+2.  Appuyez sur **F5** ou **CTRL + F5** pour démarrer l’instance expérimentale de Visual Studio. Ouvrez un diagramme de dépendance et testez votre extension.
 
  Continuez avec la procédure suivante si nécessaire.
 
 ## <a name="an-old-version-of-my-extension-runs"></a>Une ancienne version de mon extension s'exécute.
 
-1.  Assurez-vous qu'aucune instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] n'est en cours d'exécution.
+1.  Assurez-vous qu’aucune instance expérimentale de Visual Studio n’est en cours d’exécution.
 
 2.  Supprimez le dossier suivant : %LocalAppData%\Microsoft\VisualStudio\\[version] \ComponentModelCache
 
     > [!NOTE]
-    > %LocalAppData% est généralement *%drivename*: \Users\\*nom d’utilisateur*\AppData\Local.
+    > %LocalAppData% est généralement *nom_lecteur*: \Users\\*nom d’utilisateur*\AppData\Local.
 
  Continuez avec la procédure suivante si nécessaire.
 
 ## <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>Une ancienne version de mes résultats de validation s'affiche ou ma méthode de validation n'est pas appelée.
 
-1.  Dans l’instance expérimentale de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], dans le **générer** menu, cliquez sur **nettoyer la Solution**. Cette opération efface les résultats mis en cache de l'analyse de validation précédente.
+1.  Dans l’instance expérimentale de Visual Studio, sur le **Build** menu, cliquez sur **nettoyer la Solution**. Cette opération efface les résultats mis en cache de l'analyse de validation précédente.
 
 2.  Assurez-vous que les couches dans votre modèle sont associées à des éléments de code et qu'il existe au moins un lien de dépendance dans le modèle. La validation n'est pas appelée s'il n'y a rien à valider.
 
 3.  Les points d'arrêt ordinaires peuvent ne pas fonctionner dans une méthode de validation, car elle s'exécute dans un processus séparé. Vous devez insérer un appel à `System.Diagnostics.Debugger.Launch()` si vous souhaitez parcourir votre méthode pas à pas.
 
-4.  Dans **source.extension.vsixmanifest** dans votre projet de validation de couche, assurez-vous que vous avez ajouté à la fois un **composant MEF** élément et un **Type d’Extension personnalisée** d’élément sous **Contenu**.
+4.  Dans **source.extension.vsixmanifest** dans votre projet de validation de couche, assurez-vous que vous avez ajouté à la fois un **composant MEF** élément et un **Type d’Extension personnalisée** sous **Contenu**.
 
 ## <a name="see-also"></a>Voir aussi
 

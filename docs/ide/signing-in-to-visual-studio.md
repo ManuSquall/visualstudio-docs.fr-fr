@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 681d687432cdfc6c3e5cf4d4d549b2148c2eeff3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 67207d653d7300ecc5d0a7ae7a85ddea1bc0d7e9
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284183"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542492"
 ---
 # <a name="sign-in-to-visual-studio"></a>Se connecter à Visual Studio
 
@@ -36,7 +36,7 @@ Voici une liste complète de tous les avantages dont vous pouvez éventuellement
 
 - **Prolongez la période d’évaluation de Visual Studio** : vous pouvez utiliser Visual Studio Professional ou Visual Studio Enterprise pendant 90 jours supplémentaires, au lieu de vous limiter à la période d’évaluation de 30 jours.
 
-- **Déverrouillez Visual Studio si vous utilisez un compte qui est associé à un abonnement MSDN ou à une organisation Azure DevOps Services**. Consultez [Déverrouillage de Visual Studio](../ide/how-to-unlock-visual-studio.md).
+- **Déverrouillez Visual Studio si vous utilisez un compte associé à un abonnement Visual Studio ou à une organisation Azure DevOps**. Consultez [Déverrouillage de Visual Studio](../ide/how-to-unlock-visual-studio.md).
 
 - **Connectez-vous automatiquement à des services comme Azure et Azure DevOps Services** dans l’IDE sans avoir à fournir à nouveau les informations d’identification pour le même compte.
 

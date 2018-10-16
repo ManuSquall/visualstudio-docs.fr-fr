@@ -9,17 +9,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 63599452347ce08140d4c530aa87f2deb938104d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 77d26595bd97a98ef9a4cd1f72c14739695bb755
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948091"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859846"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Génération de code à partir d'un langage spécifique à un domaine
-Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] offre un moyen puissant pour générer du code, les documents, les fichiers de configuration et les autres artefacts à partir des données représentées dans les modèles. À l’aide de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], vous pouvez créer un ensemble de classes qui représentent des données et vous pouvez écrire vos modèles de texte dans les classes dont les noms et propriétés reflètent ces données.
+Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] offre un moyen puissant pour générer le code, les documents, les fichiers de configuration et les autres artefacts à partir des données représentées dans les modèles. À l’aide de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], vous pouvez créer un ensemble de classes qui représentent vos données, vous pouvez écrire vos modèles de texte dans les classes dont les noms et propriétés reflètent ces données.
 
- Par exemple, Fabrikam a un fichier XML de noms de clients et les adresses de messagerie. Les développeurs de créer un modèle dans lequel le client est une classe, avec le nom de propriété et de courrier électronique. Écriture de plusieurs modèles de texte pour traiter les données, y compris ce fragment qui génère une table de tous les clients dans le cadre d’une page HTML :
+ Par exemple, Fabrikam a un fichier XML de noms de clients et les adresses de messagerie. Leurs développeurs de créer un modèle dans lequel le client est une classe, avec les propriétés nom et adresse électronique. Ils écrivent plusieurs modèles de texte pour traiter les données, y compris ce fragment qui génère une table de tous les clients dans le cadre d’une page HTML :
 
 ```
 <table>
@@ -29,11 +29,11 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] offre un moyen puissan
 <# } #>  </table>
 ```
 
- Lors du traitement de la base de données client, le fichier XML est lu dans le magasin de modèles. A *processeur de directive*, créé à l’aide de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], rend la classe de client disponibles pour le code dans le modèle de texte. De nombreux modèles de texte peuvent être exécutés sur le même magasin.
+ Lors du traitement de la base de données client, le fichier XML est lu dans le magasin de modèles. Un *processeur de directive*, créé à l’aide de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], rend la classe de client disponibles pour le code dans le modèle de texte. De nombreux modèles de texte peuvent être exécutés sur le même magasin.
 
- Modèles de texte sont essentiels pour [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Ils sont utilisés pour générer le code source pour les éléments du modèle de domaine, ainsi que pour le VSPackage et les contrôles qui sont utilisées pour intégrer les outils avec [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+ Modèles de texte sont essentiels pour [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Ils sont utilisés pour générer le code source pour les éléments du modèle de domaine, ainsi que pour le VSPackage et les contrôles qui sont utilisées pour intégrer les outils Visual Studio.
 
- Cette section présente certaines des méthodes pour créer, modifier et déboguer des modèles de texte utilisés dans [!INCLUDE[dsl](../modeling/includes/dsl_md.md)].
+ Cette section décrit certaines des méthodes pour créer, modifier et déboguer des modèles de texte utilisés dans [!INCLUDE[dsl](../modeling/includes/dsl_md.md)].
 
 ## <a name="in-this-section"></a>Dans cette section
  [Accès aux modèles depuis des modèles de texte](../modeling/accessing-models-from-text-templates.md)
@@ -42,20 +42,20 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] offre un moyen puissan
 
  [Procédure pas à pas : débogage d’un modèle de texte accédant à un modèle](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)
 
- Décrit comment effectuer la résolution des problèmes et de débogage sur un modèle de texte qui fait référence à un langage spécifique à un domaine.
+ Décrit comment effectuer dépannage et débogage sur un modèle de texte qui fait référence à un langage spécifique à un domaine.
 
  [Procédure pas à pas : connexion d’un hôte à un processeur de directives généré](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)
 
- Décrit comment se connecter à un hôte personnalisé pour un processeur de directive généré.
+ Décrit comment vous connecter à un hôte personnalisé à un processeur de directive généré.
 
  [DslTextTransform, commande](../modeling/the-dsltexttransform-command.md)
 
- Décrit le fichier de commandes qui s’exécute l’exécutable TextTransform sur la ligne de commande pour les modèles de texte qui référencent des langages spécifiques à un domaine.
+ Décrit le fichier de commandes qui exécute l’exécutable TextTransform sur la ligne de commande pour les modèles de texte qui référencent des langages spécifiques à un domaine.
 
 ## <a name="reference"></a>Référence
  [Écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md)
 
- Fournit la syntaxe des directives de modèle de texte et les blocs de contrôle.
+ Fournit la syntaxe des directives de modèles de texte et les blocs de contrôle.
 
 ## <a name="related-sections"></a>Rubriques connexes
  [Génération de code au moment du design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
@@ -64,4 +64,4 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] offre un moyen puissan
 
  [Génération de code dans un processus de génération](../modeling/code-generation-in-a-build-process.md)
 
- Lisez cette rubrique si vous générez des fichiers à partir d’une DSL sur un serveur de builds.
+ Lisez cette rubrique si vous générez des fichiers à partir d’un DSL sur un serveur de builds.

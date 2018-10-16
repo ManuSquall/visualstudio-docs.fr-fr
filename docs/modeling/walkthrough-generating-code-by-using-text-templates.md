@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: bc9d9e65cc893780c6b64dfd281d8db51fb5cce9
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 09bfb2e1a17a4832f4afa4f432e4232ce6845323
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566581"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859794"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Procédure pas à pas : générer du code à l’aide de modèles de texte
 
@@ -30,7 +30,7 @@ L’espace de noms System.Xml fournit des outils complets pour charger un docume
 Dans cet exemple de projet, un modèle lit un exemple de fichier XML et génère des classes qui correspondent à chaque type de nœud. Dans le code écrit manuellement, vous pouvez utiliser ces classes pour parcourir le fichier XML. Vous pouvez également exécuter votre application sur tout autre fichier qui utilise les mêmes types de nœuds. L’objectif de l’exemple de fichier XML est de fournir des exemples de tous les types de nœuds que vous souhaitez que votre application puisse gérer.
 
 > [!NOTE]
-> L’application [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), qui est fournie avec [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], peut générer des classes fortement typées à partir de fichiers XML. Le modèle présenté ici est fourni comme exemple.
+> L’application [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), qui est fourni avec Visual Studio, peut générer des classes fortement typées à partir de fichiers XML. Le modèle présenté ici est fourni comme exemple.
 
 Voici l’exemple de fichier :
 
@@ -142,7 +142,7 @@ Ajoutez un fichier de modèle de texte et définissez l’extension de sortie su
 
 3.  Dans le fichier, dans la directive de modèle, affectez la valeur `hostspecific` à l’attribut `true`.
 
-     Cette modification permettra au code de modèle d’accéder aux services [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] .
+     Cette modification permettra au code de modèle accéder aux services Visual Studio.
 
 4.  Dans la directive de sortie, affectez « .cs » comme attribut d’extension, pour que le modèle génère un fichier C#. Dans un projet Visual Basic, vous choisiriez « .vb ».
 
@@ -272,7 +272,7 @@ Vous pouvez ajouter plus de détails tels que les propriétés des nœuds enfant
 
 ### <a name="access-the-visual-studio-api"></a>Accéder à l’API Visual Studio
 
-La définition de l’attribut `hostspecific` de la directive `<#@template#>` permet au modèle d’accéder à l’API [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] . Le modèle peut utiliser cette API pour obtenir l’emplacement des fichiers projet, pour éviter d’utiliser un chemin absolu dans le code du modèle.
+Définition de la `hostspecific` attribut de la `<#@template#>` directive permet au modèle obtenir l’accès à l’API Visual Studio. Le modèle peut utiliser cette API pour obtenir l’emplacement des fichiers projet, pour éviter d’utiliser un chemin absolu dans le code du modèle.
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>

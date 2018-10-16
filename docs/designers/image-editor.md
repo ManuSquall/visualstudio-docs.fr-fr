@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc8582981fc75dd0ce9c0bcb09cc7f865b0e9d43
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 4ed7c1ec10b6cc6b2eac450ea33beceaaf58bc06
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42627007"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029119"
 ---
 # <a name="image-editor"></a>éditeur d'images
 
@@ -53,8 +53,6 @@ Cette section décrit comment ajouter une image à votre projet Visual Studio et
    > Si vous ne voyez pas la catégorie **Graphisme** dans la boîte de dialogue **Ajouter un nouvel élément**, il peut être nécessaire d’installer le composant **Éditeurs d’images et de modèles 3D**. Fermez la boîte de dialogue, puis sélectionnez **Outils** > **Obtenir les outils et fonctionnalités** dans la barre de menus pour ouvrir le **programme d’installation de Visual Studio**. Sélectionnez l’onglet **Composants individuels**, puis sélectionnez le composant **Éditeurs d’images et de modèles 3D** sous la catégorie **Jeux et graphismes**. Sélectionnez **Modifier**.
    >
    > ![Composant Éditeurs d’images et de modèles 3D](media/image-3d-model-editors-component.png)
-   >
-   > Si le composant **Éditeurs d’images et de modèles 3D** est installé et que vous ne voyez toujours pas la catégorie de modèles **Graphisme**, notez que cette catégorie apparaît seulement pour certains types de projets, par exemple des applications de console.
 
    Pour plus d’informations sur le choix d’un format de fichier en fonction de vos exigences, consultez [Choisir le format d’image](#choose-the-image-format).
 

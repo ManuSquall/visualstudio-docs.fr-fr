@@ -19,12 +19,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1de4f6a71394c38ef72224cfeacd23663b0bac7b
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: b158955c9730898c3624c9a832f5cc75c62ba338
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468655"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549649"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Options pour Python dans Visual Studio
 
@@ -46,7 +46,7 @@ Il existe également des options supplémentaires spécifiques à Python sous l�
 | **Afficher la fenêtre Sortie pendant la création d’environnements virtuels**| Activé | Désactivez-la pour empêcher la fenêtre **Sortie** de s’afficher. |
 | **Afficher la fenêtre Sortie pendant l’installation ou la suppression des packages** | Activé | Désactivez-la pour empêcher la fenêtre **Sortie** de s’afficher. |
 | **Toujours exécuter pip comme administrateur** | Off | Élève toujours les privilèges des opérations `pip install` pour tous les environnements. Au moment de l’installation des packages, Visual Studio demande des privilèges d’administrateur, si l’environnement se trouve dans une zone protégée du système de fichiers, par exemple *c:\Program Files*. Dans cette invite, vous pouvez choisir de toujours élever les privilèges de `pip install` pour cet environnement uniquement. Consultez [Onglet packages](python-environments-window-tab-reference.md#packages-tab). |
-| **Générer automatiquement la base de données de saisie semi-automatique à la première utilisation** | Activé | *S’applique à Visual Studio 2017 version 15.5, versions antérieures et versions ultérieures lorsque vous utilisez une base de données IntelliSense.* Donne la priorité à l’achèvement de la base de données pour une bibliothèque quand vous écrivez du code qui l’utilise. Pour plus d’informations, consultez [Référence sur la fenêtre Environnements - onglet Intellisense](python-environments-window-tab-reference.md). |
+| **Générer automatiquement la base de données de saisie semi-automatique à la première utilisation** | Activé | *S’applique à Visual Studio 2017 version 15.5, versions antérieures et versions ultérieures lorsque vous utilisez une base de données IntelliSense.* Donne la priorité à l’achèvement de la base de données pour une bibliothèque quand vous écrivez du code qui l’utilise. Pour plus d’informations, voir [Onglet IntelliSense](python-environments-window-tab-reference.md#intellisense-tab). |
 | **Ignorer les variables PYTHONPATH à l’échelle du système** | Activé | PYTHONPATH est ignoré par défaut, car Visual Studio fournit un moyen plus direct de spécifier des chemins de recherche dans les projets et environnements. Consultez la page [Chemins de recherche](search-paths.md) pour plus d’informations. |
 | **Mettre à jour les chemins de recherche lors de l’ajout de fichiers liés** | Activé | Quand cette option est définie, l’ajout d’un [fichier lié](managing-python-projects-in-visual-studio.md#linked-files) à un projet met à jour les [Chemins de recherche](search-paths.md) afin qu’IntelliSense puisse inclure le contenu du dossier du fichier lié dans sa base de données de saisie semi-automatique. Désactivez cette option pour exclure ce contenu de la base de données de saisie semi-automatique. |
 | **Avertir quand le module importé est introuvable** | Activé | Désactivez cette option pour supprimer les avertissements quand vous savez qu’un module importé n’est actuellement pas disponible, mais n’affecte pas par ailleurs le fonctionnement du code. |
@@ -111,7 +111,7 @@ Il existe également des options supplémentaires spécifiques à Python sous l�
 
 | Option | Par défaut | Description |
 | --- | --- | --- |
-| **Validé en tapant les caractères suivants** | **{}[]().,:;+-*/%&&#124;^~=<>#@\\** | Comme ces caractères suivent généralement un identificateur qui peut être sélectionné dans une liste de saisie semi-automatique, il est pratique de valider la saisie semi-automatique simplement en tapant un caractère. Vous pouvez supprimer ou ajouter des caractères spécifiques dans la liste si vous le souhaitez.  |
+| **Validé en tapant les caractères suivants** | **{}\[\]().,:;+-*/%&&#124;^~=<>#@\\** | Comme ces caractères suivent généralement un identificateur qui peut être sélectionné dans une liste de saisie semi-automatique, il est pratique de valider la saisie semi-automatique simplement en tapant un caractère. Vous pouvez supprimer ou ajouter des caractères spécifiques dans la liste si vous le souhaitez.  |
 | **Entrée valide la saisie semi-automatique actuelle** | Activé | Quand cette option est définie, la touche **Entrée** permet de choisir et d’appliquer la complétion sélectionnée, comme avec les caractères ci-dessus (mais, bien entendu, il n’existe pas de caractère pour la touche **Entrée** pouvant être intégré directement dans cette liste !). |
 | **Ajouter une ligne avec entrée après le mot complet tapé** | Off | Par défaut, si vous tapez le mot entier qui s’affiche dans la fenêtre contextuelle de saisie semi-automatique, et si vous appuyez sur **Entrée**, vous validez cette complétion. En définissant cette option, vous validez de manière effective les complétions quand vous avez fini de taper l’identificateur. Ainsi, **Entrée** permet d’insérer une nouvelle ligne. |
 

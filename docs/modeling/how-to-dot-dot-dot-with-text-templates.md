@@ -9,38 +9,38 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 34c8c26343eef22d3b36ad70d4d7d484de76d866
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4564772fd118e3928f6e8a091c1066e2e8e92534
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953977"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859885"
 ---
 # <a name="how-to--with-text-templates"></a>Comment : écrire avec des modèles de texte
-Modèles de texte dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] offrent un moyen utile de générer du texte de n’importe quel type. Vous pouvez utiliser des modèles de texte pour générer du texte au moment de l’exécution en tant que partie de votre application et au moment du design pour générer une partie de votre code de projet. Cette rubrique résume les plus fréquemment posées « Comment... ? » questions.
+Modèles de texte dans Visual Studio fournissent un moyen utile de génération de texte quelconque. Vous pouvez utiliser des modèles de texte pour générer du texte en cours d’exécution dans le cadre de votre application et au moment du design pour générer une partie de votre code de projet. Cette rubrique récapitule les plus fréquemment posées « Comment faire... ? » questions.
 
  Dans cette rubrique, les réponses multiples qui sont précédés de puces sont des suggestions alternatives.
 
- Pour obtenir une introduction générale aux modèles de texte, consultez [génération de Code et les modèles de texte T4](../modeling/code-generation-and-t4-text-templates.md).
+ Pour une introduction générale aux modèles de texte, consultez [génération de Code et modèles de texte T4](../modeling/code-generation-and-t4-text-templates.md).
 
 ## <a name="how-to-"></a>Comment...
 
-### <a name="generate-part-of-my-application-code"></a>Générer une partie du code de mon application
- Disposez d’une configuration ou *modèle* dans un fichier ou une base de données. Une ou plusieurs parties de mon code dépendent de ce modèle.
+### <a name="generate-part-of-my-application-code"></a>Générer une partie de mon code d’application
+ J’ai une configuration ou *modèle* dans un fichier ou une base de données. Une ou plusieurs parties de mon code dépendent de ce modèle.
 
--   Génèrent une partie de vos fichiers de code à partir de modèles de texte. Pour plus d’informations, consultez [génération du Code à l’aide de modèles de texte T4 au moment du Design](../modeling/design-time-code-generation-by-using-t4-text-templates.md) et [quelle est la meilleure façon de commencer à écrire un modèle ?](#starting).
+-   Générer certaines de vos fichiers de code à partir de modèles de texte. Pour plus d’informations, consultez [génération de Code au moment du Design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md) et [quelle est la meilleure façon de commencer à écrire un modèle ?](#starting).
 
-### <a name="generate-files-at-run-time-passing-data-into-the-template"></a>Générer des fichiers au moment de l’exécution, en passant des données dans le modèle
- Au moment de l’exécution, mon application génère des fichiers texte, tels que les rapports, qui contiennent un mélange de texte standard et les données. Je veux éviter d’écrire des centaines de `write` instructions.
+### <a name="generate-files-at-run-time-passing-data-into-the-template"></a>Générer des fichiers en cours d’exécution, en passant des données dans le modèle
+ Au moment de l’exécution, mon application génère des fichiers texte, tels que des rapports, qui contiennent un mélange de texte standard et les données. Je souhaite éviter d’écrire des centaines de `write` instructions.
 
--   Ajouter un modèle de texte runtime à votre projet. Ce modèle crée une classe dans votre code, vous pouvez instancier et utiliser pour générer du texte. Vous pouvez passer des données à celle-ci dans les paramètres du constructeur. Pour plus d’informations, consultez [génération de texte d’exécution avec les modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+-   Ajouter un modèle de texte du runtime à votre projet. Ce modèle crée une classe dans votre code, que vous pouvez instancier et utiliser pour générer du texte. Vous pouvez passer des données à ce dernier dans les paramètres du constructeur. Pour plus d’informations, consultez [génération de texte d’exécution avec les modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
--   Si vous souhaitez générer à partir de modèles qui sont uniquement disponibles au moment de l’exécution, vous pouvez utiliser des modèles de texte standard. Si vous écrivez un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extension, vous pouvez appeler le service de création de modèles de texte. Pour plus d’informations, consultez [appeler la Transformation de texte dans une Extension VS](../modeling/invoking-text-transformation-in-a-vs-extension.md). Dans d’autres contextes, vous pouvez utiliser le moteur de création de modèles de texte. Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>.
+-   Si vous souhaitez générer à partir de modèles qui sont uniquement disponibles au moment de l’exécution, vous pouvez utiliser des modèles de texte standard. Si vous écrivez une extension Visual Studio, vous pouvez appeler le service de création de modèles de texte. Pour plus d’informations, consultez [appel d’une Transformation de texte dans une Extension VS](../modeling/invoking-text-transformation-in-a-vs-extension.md). Dans d’autres contextes, vous pouvez utiliser le moteur de création de modèles de texte. Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>.
 
-     Utilisez le \<#@parameter#> directive pour passer des paramètres à ces modèles. Pour plus d’informations, consultez [Directive du paramètre T4](../modeling/t4-parameter-directive.md).
+     Utilisez le \<#@parameter#> directive pour transmettre des paramètres à ces modèles. Pour plus d’informations, consultez [Directive du paramètre T4](../modeling/t4-parameter-directive.md).
 
 ### <a name="read-another-project-file-from-a-template"></a>Lire un autre fichier projet à partir d’un modèle
- Pour lire un fichier à partir de la même [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet comme modèle :
+ Pour lire un fichier depuis le même projet Visual Studio en tant que le modèle :
 
 -   Insérez `hostSpecific="true"` dans la directive `<#@template#>`.
 
@@ -49,37 +49,37 @@ Modèles de texte dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]
 ### <a name="invoke-methods-from-a-template"></a>Appeler des méthodes à partir d’un modèle
  Si les méthodes existent déjà, par exemple, dans la norme [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] classes :
 
--   Utilisez le \<#@assembly#> la directive pour charger l’assembly et utiliser \<#@import#> pour définir le contexte de l’espace de noms. Pour plus d’informations, consultez [Directive d’importation T4](../modeling/t4-import-directive.md).
+-   Utiliser le \<#@assembly#> la directive pour charger l’assembly, utilisez \<#@import#> pour définir le contexte de l’espace de noms. Pour plus d’informations, consultez [Directive d’importation T4](../modeling/t4-import-directive.md).
 
-     Si vous fréquemment utilisez le même ensemble de l’assembly et directives d’importation, envisagez d’écrire un processeur de directive. Dans chaque modèle, vous pouvez appeler le processeur de directive, ce qui peut charger les assemblys et les fichiers de modèle et définir le contexte de l’espace de noms. Pour plus d’informations, consultez [création de processeurs de Directive de modèle personnalisé T4 texte](../modeling/creating-custom-t4-text-template-directive-processors.md).
+     Si fréquemment, vous utilisez le même ensemble de l’assembly et importez des directives, envisagez d’écrire un processeur de directive. Dans chaque modèle, vous pouvez appeler le processeur de directive, ce qui peut charger les assemblys et les fichiers de modèle et définir le contexte de l’espace de noms. Pour plus d’informations, consultez [processeurs de Directive modèles de création personnalisé T4 texte](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
  Si vous écrivez vous-même les méthodes :
 
--   Si vous écrivez un modèle de texte runtime, écrivez une définition de classe partielle qui porte le même nom que votre modèle de texte du runtime. Ajoutez les méthodes supplémentaires dans cette classe.
+-   Si vous écrivez un modèle de texte de runtime, écrivez une définition de classe partielle qui a le même nom que votre modèle de texte de runtime. Ajoutez les méthodes supplémentaires dans cette classe.
 
--   Écrire un bloc de contrôle de fonctionnalité de classe `<#+ ... #>` dans laquelle vous pouvez déclarer des méthodes, des propriétés et des classes privées. Lorsque le modèle de texte est compilé, il est transformé en une classe. Les blocs de contrôle standard `<#...#>` texte sont transformés en une seule méthode, et les blocs de fonctionnalité de classe sont insérés en tant que membres distincts. Pour plus d’informations, consultez [blocs de contrôle de modèle de texte](../modeling/text-template-control-blocks.md).
+-   Écrire un bloc de contrôle de fonctionnalité de classe `<#+ ... #>` dans lequel vous pouvez déclarer méthodes, propriétés et classes privées. Lorsque le modèle de texte est compilé, il est transformé en une classe. Les blocs de contrôle standard `<#...#>` texte sont transformées en une seule méthode, et les blocs de fonctionnalité de classe sont insérés en tant que membres distincts. Pour plus d’informations, consultez [blocs de contrôle de modèles de texte](../modeling/text-template-control-blocks.md).
 
      Méthodes définies comme des fonctionnalités de la classe peuvent également inclure des blocs de texte incorporé.
 
      Envisagez de placer les fonctionnalités de la classe dans un fichier distinct que vous pouvez `<#@include#>` dans un ou plusieurs fichiers de modèle.
 
--   Les méthodes d’écriture dans un assembly séparé (bibliothèque de classes) et les appeler à partir de votre modèle. Utilisez le `<#@assembly#>` la directive pour charger l’assembly, et `<#@import#>` pour définir le contexte de l’espace de noms. Notez que pour régénérer l’assembly pendant que vous effectuez le débogage, vous devrez peut-être arrêter et redémarrer [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Pour plus d’informations, consultez [Directives de modèle de texte T4](../modeling/t4-text-template-directives.md).
+-   Écrire les méthodes dans un assembly séparé (bibliothèque de classes) et les appeler à partir de votre modèle. Utilisez le `<#@assembly#>` directive pour charger l’assembly, et `<#@import#>` pour définir le contexte de l’espace de noms. Notez que pour régénérer l’assembly pendant que vous le déboguez, vous devrez peut-être arrêter et redémarrer Visual Studio. Pour plus d’informations, consultez [Directives de modèles de texte T4](../modeling/t4-text-template-directives.md).
 
 ### <a name="generate-many-files-from-one-model-schema"></a>Générer de nombreux fichiers à partir d’un schéma de modèle
  Si vous générez souvent des fichiers à partir de modèles qui ont le même schéma XML ou de base de données :
 
--   Envisagez d’écrire un processeur de directive. Cela vous permet de remplacer plusieurs instructions assembly et l’importer dans chaque modèle avec une directive personnalisée unique. Le processeur de directive peut également charger et analyser le fichier de modèle. Pour plus d’informations, consultez [création de processeurs de Directive de modèle personnalisé T4 texte](../modeling/creating-custom-t4-text-template-directive-processors.md).
+-   Envisager d’écrire un processeur de directive. Cela vous permet de remplacer plusieurs instructions assembly et import dans chaque modèle avec une directive personnalisée unique. Le processeur de directive peut également charger et analyser le fichier de modèle. Pour plus d’informations, consultez [processeurs de Directive modèles de création personnalisé T4 texte](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
 ### <a name="generate-files-from-a-complex-model"></a>Générer des fichiers à partir d’un modèle complexe
 
--   Envisagez de créer un langage spécifique à un domaine (DSL) pour représenter le modèle. Cela rend beaucoup plus facile d’écrire les modèles, car vous utilisez des types et des propriétés qui reflètent les noms des éléments dans votre modèle. Vous n’avez pas à analyser le fichier ou de parcourir les nœuds XML. Par exemple :
+-   Envisagez de créer un langage spécifique à un domaine (DSL) pour représenter le modèle. Cela rend beaucoup plus facile d’écrire les modèles, car vous utilisez des types et des propriétés qui reflètent les noms des éléments dans votre modèle. Vous n’avez pas à analyser le fichier ou de parcourir les nœuds XML. Exemple :
 
      `foreach (Book book in this.Library) { ... }`
 
-     Pour plus d’informations, consultez [prise en main de langages spécifiques à un domaine](../modeling/getting-started-with-domain-specific-languages.md) et [génération du Code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md).
+     Pour plus d’informations, consultez [mise en route avec les langages spécifiques à un domaine](../modeling/getting-started-with-domain-specific-languages.md) et [génération du Code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md).
 
-### <a name="get-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>Obtenez des données [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]
- Pour utiliser les services fournis dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], par jeu le `hostSpecific` attribut et charge le `EnvDTE` assembly. Par exemple :
+### <a name="get-data-from-visual-studio"></a>Obtenir des données à partir de Visual Studio
+ Pour utiliser les services fournis dans Visual Studio, par le jeu le `hostSpecific` attribut et charge le `EnvDTE` assembly. Exemple :
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -100,29 +100,29 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 
 ## <a name="more-general-questions"></a>Questions plus générales
 
-###  <a name="starting"></a> Qu’est la meilleure façon de commencer à écrire un modèle de texte ?
+### <a name="starting"></a> Quel est le meilleur moyen pour commencer à écrire un modèle de texte ?
 
-1.  Écrivez un exemple spécifique du fichier généré.
+1.  Écrire un exemple spécifique du fichier généré.
 
-2.  Transformer un modèle de texte en insérant la `<#@template #>` directive et les directives et code qui sont requises pour charger le fichier d’entrée ou le modèle.
+2.  Transformer en un modèle de texte en insérant la `<#@template #>` directive et les directives et code qui sont requis pour charger le fichier d’entrée ou le modèle.
 
-3.  Remplacez progressivement des parties du fichier avec l’expression et les blocs de code.
+3.  Remplacez progressivement des parties du fichier avec expression et les blocs de code.
 
 ### <a name="what-is-a-model"></a>Qu’est un « modèle » ?
 
--   L’entrée lue par votre modèle. Il peut être dans un fichier ou dans une base de données. Il peut être XML, ou un dessin Visio, ou un langage spécifique à un domaine (DSL) ou un modèle UML ou il peut s’agir de texte brut. Il peut être répartie sur plusieurs fichiers. En général, plusieurs modèles lit un modèle.
+-   L’entrée lue par votre modèle. Il peut être dans un fichier ou dans une base de données. Il peut être XML, ou un dessin Visio, ou un langage spécifique à un domaine (DSL) ou un modèle UML, ou il peut s’agir de texte brut. Il pourrait être répartie sur plusieurs fichiers. En général, plusieurs modèles lit un seul modèle.
 
-     La conséquence du « modèle » est qu’il représente un aspect de votre entreprise plus directement que le code de programme généré ou d’autres fichiers. Par exemple, il peut représenter le plan d’un réseau de communications vos logiciels générés seront supervise.
+     La conséquence de « modèle » est qu’elle représente un aspect de votre entreprise plus directement que le code du programme généré ou d’autres fichiers. Par exemple, il peut représenter le plan d’un réseau de communications, chargés de superviser sera votre logiciel généré.
 
-### <a name="what-is-the-benefit-of-using-text-templates"></a>Quel est l’avantage d’utiliser des modèles de texte ?
- En règle générale, vous générez plusieurs code ou autres fichiers à partir d’un modèle. Le modèle représente les spécifications plus directement que le code généré. Elle omet le détail d’implémentation et est écrit en termes de la configuration requise, plutôt que le code. Lorsque les besoins changent - comme ils le font généralement - vous pouvez mettre à jour le modèle plus facilement et plus fiable que les différentes parties du code du programme.
+### <a name="what-is-the-benefit-of-using-text-templates"></a>Quel est l’avantage de l’utilisation de modèles de texte ?
+ En règle générale, vous générez plusieurs code ou autres fichiers à partir d’un modèle. Le modèle représente les spécifications plus directement que le code généré. Il omet le détail d’implémentation et est écrit en termes de la configuration requise, plutôt que le code. Lorsque les besoins changent - comme ils le font généralement - vous pouvez mettre à jour le modèle plus facilement et plus fiable que les différentes parties du code du programme.
 
  Génération de code est donc un outil précieux du point de vue des méthodes de développement agile.
 
-### <a name="what-best-practices-are-there-for-text-templates"></a>Les « meilleures pratiques » sont de modèles de texte ?
+### <a name="what-best-practices-are-there-for-text-templates"></a>Les « meilleures pratiques » existe-t-il pour les modèles de texte ?
 
--   Pour plus d’informations, consultez [des recommandations pour les modèles de texte T4 écrit](../modeling/guidelines-for-writing-t4-text-templates.md).
+-   Pour plus d’informations, consultez [instructions pour l’écriture de modèles de texte T4](../modeling/guidelines-for-writing-t4-text-templates.md).
 
 ### <a name="what-is-t4"></a>Qu’est « T4 » ?
 
--   Un autre nom pour le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fonctionnalités de modèle de texte décrites ici. La version précédente, ce qui n’était pas publiée, est l’abréviation de « Transformation du modèle de texte ».
+-   Un autre nom pour les fonctionnalités de modèle de texte Visual Studio décrites ici. La version précédente, ce qui n’était pas publiée, a été une abréviation de « Transformation de modèle de texte ».

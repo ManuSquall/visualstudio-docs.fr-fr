@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5b49e5659787420c90fb708f21b2810bb56fea1
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 85b34fd85e8449949bb1e96efc1dd79aacbc1bd9
+ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542594"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48243950"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Inspecter les États d’application précédente à l’aide de revenir en arrière IntelliTrace dans Visual Studio
 
@@ -105,7 +105,9 @@ L’impact sur les performances globales du pas à pas dépend de votre applicat
 ## <a name="known-issues"></a>Problèmes connus  
 * Si vous utilisez le mode d’événements et instantanés IntelliTrace sur les versions de Windows antérieures à Windows 10 Fall Creators Update (RS3), et si la cible de plateforme de débogage de l’application est définie sur x86, IntelliTrace ne prend pas de captures instantanées.
 
-    Solution de contournement :
+    Solutions de contournement :
+    * Si vous êtes sur la mise à jour anniversaire Windows 10 (RS1) et inférieur à la version 10.0.14393.2273, [installer KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720). 
+    * Si vous êtes sur Windows 10 Creators Update (RS2) et inférieur à la version 10.0.15063.1112, [installer KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722).
     * Installer ou mettre à niveau vers Windows 10 Fall Creators Update (RS3). 
     * Vous pouvez également : 
         1. Installez l’ensemble d’outils VC ++ 2015.3 v140 du composant poste de travail (x86, x64) à partir du programme d’installation de Visual Studio.

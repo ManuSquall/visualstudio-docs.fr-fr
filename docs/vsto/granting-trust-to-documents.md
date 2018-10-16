@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c78db0a141d711a1a0ac3e46fa49255e754bf52d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 717bfaf8bc97c0f45a45bdc8ba686d4c1df12e49
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673724"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073439"
 ---
 # <a name="grant-trust-to-documents"></a>Accorder votre confiance à des documents
   Un projet au niveau du document présente les mêmes exigences de sécurité que les projets au niveau de l’application : il convient de signer les manifestes à l’aide d’un certificat ou de cliquer sur l’invite d’approbation. En outre, le document ou le classeur doit se trouver dans un répertoire désigné comme emplacement approuvé.  
@@ -33,7 +33,7 @@ ms.locfileid: "35673724"
 ## <a name="trusted-locations"></a>Emplacements approuvés  
  Applications dans [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] et Office 2010 disposent de centres de confiance dans lequel les utilisateurs peuvent configurer les paramètres de sécurité, telles que les emplacements approuvés. Pour les solutions Office, l’ordinateur local est considéré comme un emplacement approuvé. Toutefois, en raison de risques plus élevés, certains répertoires ne peuvent jamais être approuvés, tels que les dossiers temporaires système propres à chaque utilisateur et à Internet Explorer.  
   
- Pour plus d’informations sur le centre de confidentialité, consultez [sécurité et les stratégies et les paramètres dans Office 2010](http://go.microsoft.com/fwlink/?LinkId=89202). Pour plus d’informations sur la façon de créer, gérer, supprimer et configurer des dossiers approuvés, consultez [configurer les paramètres des emplacements et éditeurs approuvés dans Office system 2007](http://go.microsoft.com/fwlink/?LinkId=89203) et [créer, supprimer ou modifier un emplacement pour vos fichiers approuvé](https://support.office.com/en-au/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
+ Pour plus d’informations sur le centre de confidentialité, consultez [sécurité et les stratégies et les paramètres dans Office 2010](http://go.microsoft.com/fwlink/?LinkId=89202). Pour plus d’informations sur la façon de créer, gérer, supprimer et configurer des dossiers approuvés, consultez [configurer les paramètres des emplacements et éditeurs approuvés dans Office system 2007](http://go.microsoft.com/fwlink/?LinkId=89203) et [créer, supprimer ou modifier un emplacement pour vos fichiers approuvé](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
   
 ## <a name="security-considerations-for-office-solutions"></a>Considérations sur la sécurité pour les solutions Office  
  Plusieurs problèmes de sécurité se posent quand vous déterminez les dossiers à ajouter aux emplacements approuvés :  

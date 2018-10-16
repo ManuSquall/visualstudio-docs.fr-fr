@@ -1,6 +1,6 @@
 ---
 title: Gérer les contrôleurs de test et les agents de test dans Visual Studio
-ms.date: 11/04/2016
+ms.date: 09/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4107f06658c081bc249e9e1b3a26d2a3480584dc
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 5cd391cd922d32dc466a30e5ff1bf037cbd22a33
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279972"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371028"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gérer les contrôleurs de test et les agents de test
 
@@ -41,17 +41,15 @@ Il est possible d’ajouter un agent de test à un contrôleur de test différen
     > [!NOTE]
     > Un agent de test doit déjà être installé pour pouvoir l’ajouter à un contrôleur de test. Pour plus d’informations sur la façon d’installer un agent de test, consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).
 
-2. Si vous souhaitez modifier le mode d’exécution de l’agent de test, choisissez **Options d’exécution**.
+2. Deux modes d’exécution de l’agent de test sont proposés :
 
-     Deux options s’affichent pour vous permettre de définir le mode d’exécution de l’agent de test :
+   - **Service** Si vous n’avez pas à exécuter de tests automatisés qui interagissent avec le poste de travail (tests codés de l’interface utilisateur, par exemple) ni à créer un enregistrement vidéo lors de l’exécution de votre test, sous **Exécuter l’agent de test en tant que**, sélectionnez **Service**. L’agent de test démarrera en tant que service. Sélectionnez **Suivant**.
 
-     **Service** Si vous n’avez pas à exécuter de tests automatisés qui interagissent avec le poste de travail (tests codés de l’interface utilisateur, par exemple) ni à créer un enregistrement vidéo lors de l’exécution de votre test, sous **Exécuter l’agent de test en tant que**, sélectionnez **Service**. L’agent de test démarrera en tant que service. Sélectionnez **Suivant**.
+      Vous pouvez maintenant entrer les détails relatifs à l’utilisateur lorsque l’agent de test démarre en tant que service.
 
-     Vous pouvez maintenant entrer les détails relatifs à l’utilisateur lorsque l’agent de test démarre en tant que service.
+      1. Entrez le nom dans **Nom d’utilisateur**.
 
-    1. Entrez le nom dans **Nom d’utilisateur**.
-
-    2. Entrez le mot de passe dans **Mot de passe**.
+      2. Entrez le mot de passe dans **Mot de passe**.
 
         |**Informations importantes sur le compte d’utilisateur**|
         |--------------------------------------------|
@@ -60,27 +58,20 @@ Il est possible d’ajouter un agent de test à un contrôleur de test différen
         |- Si le nom d’utilisateur de l’agent n’est pas dans le service d’agent, celui-ci essaiera de l’ajouter, ce qui nécessite des autorisations sur le contrôleur de test.|
         |- L’utilisateur qui essaie d’utiliser le contrôleur de test doit figurer dans le compte Utilisateurs du contrôleur de test ; sinon il ne pourra pas exécuter les tests sur le contrôleur.|
 
-     **Processus interactif** Si vous souhaitez exécuter des tests automatisés qui doivent interagir avec le poste de travail (tests codés de l’interface utilisateur, par exemple) ou créer un enregistrement vidéo lors de l’exécution de votre test, sélectionnez **Processus interactif**. L’agent de test démarrera en tant que processus interactif et non en tant que service.
+   - **Processus interactif** Si vous souhaitez exécuter des tests automatisés qui doivent interagir avec le poste de travail (tests codés de l’interface utilisateur, par exemple) ou créer un enregistrement vidéo lors de l’exécution de votre test, sélectionnez **Processus interactif**. L’agent de test démarrera en tant que processus interactif et non en tant que service.
 
-     Sur la page suivante, entrer les détails relatifs à l’utilisateur lorsque l’agent de test démarre en tant que processus, ainsi que d’autres options.
+      Sur la page suivante, entrer les détails relatifs à l’utilisateur lorsque l’agent de test démarre en tant que processus, ainsi que d’autres options.
 
-    1. Entrez le nom dans **Nom d’utilisateur**.
+      1. Entrez le nom dans **Nom d’utilisateur**.
 
-    2. Entrez le mot de passe dans **Mot de passe**.
+      2. Entrez le mot de passe dans **Mot de passe**.
 
         > [!NOTE]
         > Si vous configurez l’agent de test pour qu’il fonctionne en tant que processus interactif avec un autre utilisateur qui n’est pas l’utilisateur actuellement actif, vous devez redémarrer l’ordinateur et ouvrir une session avec cet autre utilisateur pour pouvoir démarrer l’agent. Les mots de passe null ne sont par ailleurs pas pris en charge pour les comptes d'utilisateurs. Si vous souhaitez utiliser le collecteur IntelliTrace ou l'émulation de réseau, le compte d'utilisateur doit être membre du groupe Administrateurs.
 
-        |**Informations importantes sur le compte d’utilisateur**|
-        |--------------------------------------------|
-        |- Les mots de passe null ne sont pas pris en charge pour les comptes d’utilisateurs.|
-        |- Si vous souhaitez utiliser IntelliTrace ou les données d’émulation réseau et l’adaptateur de diagnostic, le compte d’utilisateur doit être membre du groupe Administrateurs. Si l’ordinateur qui exécute l’agent de test utilise un système d’exploitation avec un compte d’utilisateur de moindre privilège, vous devez également l’exécuter en tant qu’administrateur (avec privilège élevé).|
-        |- Si le nom d’utilisateur de l’agent n’est pas dans le service d’agent, celui-ci essaiera de l’ajouter, ce qui nécessite des autorisations sur le contrôleur de test.|
-        |- L’utilisateur qui essaie d’utiliser le contrôleur de test doit figurer dans le compte Utilisateurs du contrôleur de test ; sinon il ne pourra pas exécuter les tests sur le contrôleur.|
+      3. Pour vérifier qu’un ordinateur sur lequel est installé un agent de test puisse exécuter des tests après avoir redémarré, vous pouvez configurer l’ordinateur de sorte qu’il ouvre automatiquement une session avec l’utilisateur de l’agent de test. Sélectionnez **Se connecter automatiquement**. Ainsi, le nom d'utilisateur et le mot de passe seront stockés dans un formulaire chiffré dans le Registre.
 
-    3. Pour vérifier qu’un ordinateur sur lequel est installé un agent de test puisse exécuter des tests après avoir redémarré, vous pouvez configurer l’ordinateur de sorte qu’il ouvre automatiquement une session avec l’utilisateur de l’agent de test. Sélectionnez **Se connecter automatiquement**. Ainsi, le nom d'utilisateur et le mot de passe seront stockés dans un formulaire chiffré dans le Registre.
-
-    4. Pour vérifier que l’écran de veille est désactivé étant donné que cela peut interférer avec tout test automatisé qui doit interagir avec le poste de travail, sélectionnez **S’assurer que l’écran de veille est désactivé**.
+      4. Pour vérifier que l’écran de veille est désactivé étant donné que cela peut interférer avec tout test automatisé qui doit interagir avec le poste de travail, sélectionnez **S’assurer que l’écran de veille est désactivé**.
 
         > [!WARNING]
         > Se connecter automatiquement ou désactiver l'écran de veille présente des risques. En activant la connexion automatique, vous permettez à d'autres utilisateurs de démarrer cet ordinateur et d'utiliser le compte sur lequel il se connecte automatiquement. Si vous désactivez l'écran de veille, l'ordinateur peut ne pas inviter l'utilisateur à ouvrir une session pour déverrouiller l'ordinateur. Tout personne peut ainsi accéder à l'ordinateur, à partir du moment où celle-ci peut y accéder physiquement. Si vous activez ces fonctionnalités sur un ordinateur, vous devez vous assurer que ces ordinateurs sont physiquement sécurisés. S'ils se trouvent, par exemple, dans un lab physiquement sécurisé. (La désactivation de l’option **S’assurer que l’écran de veille est désactivé** ne permet pas d’activer l’écran de veille.)
@@ -160,7 +151,7 @@ Les modifications du poids et des attributs des agents de test sont appliquées 
 (Facultatif) Pour modifier l'état d'un agent de test, sélectionnez l'agent dans la liste puis sélectionnez une action parmi les choix disponibles, en fonction de l'état actuel de l'agent.
 
 > [!NOTE]
-> Si votre agent de test s'exécute en tant que processus, il est possible de gérer l'état de l'agent de test à partir de l'icône de zone de notification qui s'exécute sur l'ordinateur sur lequel est installé votre agent de test. Elle indique l'état de l'agent de test. Vous pouvez démarrer, arrêter ou redémarrer l'agent s'il s'exécute en tant que processus à l'aide de cet outil. Pour démarrer l’agent de test comme processus s’il ne s’exécute pas, choisissez **Démarrer** > **Tous les programmes**  > **Microsoft Visual Studio** > **Microsoft Visual Studio Test Agent**. Cela ajoute l'icône de zone de notification.
+> Si votre agent de test s'exécute en tant que processus, il est possible de gérer l'état de l'agent de test à partir de l'icône de zone de notification qui s'exécute sur l'ordinateur sur lequel est installé votre agent de test. Elle indique l'état de l'agent de test. Vous pouvez démarrer, arrêter ou redémarrer l'agent s'il s'exécute en tant que processus à l'aide de cet outil.
 
 ## <a name="configure-a-test-controller"></a>Configuration d'un contrôleur de test
 
@@ -173,7 +164,7 @@ Si vous voulez inscrire votre contrôleur de test auprès de votre collection de
 
 ### <a name="to-configure-a-test-controller"></a>Pour configurer un contrôleur de test
 
-1. Pour exécuter l’outil afin de reconfigurer votre contrôleur de test à tout moment, choisissez **Démarrer** > **Tous les programmes** >  **Microsoft Visual Studio** > **Outil de configuration de Microsoft Visual Studio Test Controller**.
+1. Pour exécuter l’outil afin de reconfigurer votre contrôleur de test à tout moment, choisissez **Démarrer** > **Outil de configuration de Test Controller**.
 
      La boîte de dialogue **Configurer le contrôleur de test** s’affiche.
 
@@ -182,9 +173,9 @@ Si vous voulez inscrire votre contrôleur de test auprès de votre collection de
     > [!NOTE]
     > Les mots de passe null ne sont pas pris en charge pour les comptes d'utilisateurs.
 
-4. (Facultatif) Si vous ne voulez pas utiliser votre contrôleur de test avec un environnement lab, mais seulement pour exécuter des tests à partir de Visual Studio, désactivez **Inscrire auprès de la collection de projets**.
+4. (Facultatif) Si vous ne voulez pas utiliser votre contrôleur de test dans un environnement lab, mais seulement pour exécuter des tests dans Visual Studio, désactivez **Inscrire le contrôleur de test auprès de la collection de projets d’équipe**.
 
-5. (Facultatif) Pour configurer votre contrôleur de test pour le test de charge, sélectionnez **Configurer pour le test de charge**. Tapez ensuite votre instance SQL Server dans **Créer une base de données de résultats de test de charge dans l’instance SQL Server suivante**.
+5. (Facultatif) Pour configurer les tests de charge sur votre contrôleur de test, sélectionnez **Configurer les tests de charge sur le contrôleur de test**. Entrez ensuite l’instance SQL Server sous **Créer une base de données de résultats de test de charge dans l’instance SQL Server suivante**.
 
 > [!NOTE]
 > Pour plus d’informations sur la résolution des problèmes liés aux contrôleurs de test, consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).

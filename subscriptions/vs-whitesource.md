@@ -9,12 +9,12 @@ description: Découvrez comment activer l’abonnement WhiteSource Bolt inclus d
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 765b96955b27b83acd0c0674eed6a40f8d153ee1
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: a7c384a8bc4b84aea4982bd195b0d92820c68ecb
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279165"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542349"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt dans les abonnements Visual Studio
 
@@ -45,7 +45,7 @@ Détectez et corrigez les vulnérabilités open source, puis générez des rappo
     > [!div class="mx-imgBorder"]
     > ![Avantage WhiteSource, Installer l’extension](_img\vs-whitesource\vs-whitesource-download-install.png)
 
-    - Ensuite, sélectionnez l’organisation Azure DevOps Services que vous voulez utiliser, puis cliquez sur **Confirmer**.  (Si vous n’avez pas encore configuré Azure DevOps Services, visitez la page [Avantages](https://my.visualstudio.com/benefits) et activez votre avantage Azure DevOps Services.)
+    - Ensuite, sélectionnez l’organisation Azure DevOps que vous souhaitez utiliser et cliquez sur **Confirmer**.  (Si vous n’avez pas encore configuré Azure DevOps Services, visitez la page [Avantages](https://my.visualstudio.com/benefits) et activez votre avantage Azure DevOps Services.)
 
     > [!div class="mx-imgBorder"]
     > ![Avantage WhiteSource, Confirmer le compte](_img\vs-whitesource\vs-whitesource-confirm-account.png)
@@ -54,7 +54,7 @@ Détectez et corrigez les vulnérabilités open source, puis générez des rappo
     > [!div class="mx-imgBorder"]
     > ![Avantage WhiteSource, Installation effectuée](_img\vs-whitesource\vs-whitesource-install-complete.png)
 
-5.  Ouvrez votre tableau de bord de projet Azure DevOps Services, cliquez sur le menu **Pipelines Azure** et choisissez **WhiteSource Bolt**.
+5.  Ouvrez votre tableau de bord de projet Azure DevOps, cliquez sur le menu **Azure Pipelines** et choisissez **WhiteSource Bolt**.
     > [!div class="mx-imgBorder"]
     > ![Avantage WhiteSource, Ajouter l’extension](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
 

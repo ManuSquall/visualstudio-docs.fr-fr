@@ -115,12 +115,14 @@ items:
     href: ide/quickstart-python.md
   - name: 'Node.js : créer une application web'
     href: ide/quickstart-nodejs.md
-  - name: 'C# : créer une application web'
-    href: ide/quickstart-aspnet-core.md
   - name: 'F# : créer un service web'
     href: ide/quickstart-fsharp.md
+  - name: 'C# : créer une application web'
+    href: ide/quickstart-aspnet-core.md
   - name: 'C# : créer une application UWP'
     href: ide/quickstart-uwp-csharp.md
+  - name: 'C# : créer une application console'
+    href: ide/quickstart-csharp-console.md
   - name: 'Visual Basic : créer une application console'
     href: ide/quickstart-visual-basic-console.md
 - name: Didacticiels
@@ -134,11 +136,15 @@ items:
   - name: Node.js dans Visual Studio
     href: javascript/tutorial-nodejs.md
   - name: C# dans Visual Studio
-    href: ide/tutorial-csharp-aspnet-core.md
+    items:
+    - name: 'C# : créer une application web'
+      href: ide/tutorial-csharp-aspnet-core.md
+    - name: 'C# : créer une application console'
+      href: ide/tutorial-csharp-console.md
   - name: Visual Basic dans Visual Studio
     href: ide/tutorial-visual-basic-console.md
   - name: Déboguer dans Visual Studio
-    href: debugger/getting-started-with-the-debugger.md?context=visualstudio/default
+    href: debugger/getting-started-with-the-debugger.md?context=visualstudio/default&contextView=vs-2017
 - name: Guides pratiques
   items:
   - name: Développer
@@ -280,6 +286,8 @@ items:
             href: ide/reference/generate-field-property-local.md
           - name: Générer le constructeur
             href: ide/reference/generate-constructor.md
+          - name: Ajouter un paramètre à une méthode
+            href: ide/reference/add-parameter.md
           - name: Générer le remplacement
             href: ide/reference/generate-override.md
           - name: Générer des substitutions de méthode Equals et GetHashCode
@@ -348,6 +356,8 @@ items:
           href: ide/javascript-intellisense.md
         - name: Visual C++ IntelliSense
           href: ide/visual-cpp-intellisense.md
+        - name: Configurer un projet C++ pour IntelliSense
+          href: ide/visual-cpp-intellisense-configuration.md
       - name: Parcourir votre code
         href: ide/navigating-code.md
         items:
@@ -1036,30 +1046,32 @@ items:
   - name: Notes de publication et configuration requise
     items:
     - name: Notes de publication actuelles
-      href: /visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default
+      href: /visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017
     - name: Notes de publication de la préversion
-      href: /visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default
+      href: /visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default&contextView=vs-2017
     - name: Historique des notes de publication
-      href: /visualstudio/releasenotes/vs2017-relnotes-history?context=visualstudio/default
+      href: /visualstudio/releasenotes/vs2017-relnotes-history?context=visualstudio/default&contextView=vs-2017
     - name: Fréquence des versions
-      href: /visualstudio/productinfo/vs2017-release-rhythm?context=visualstudio/default
+      href: /visualstudio/productinfo/vs2017-release-rhythm?context=visualstudio/default&contextView=vs-2017
     - name: Feuille de route Visual Studio
-      href: /visualstudio/productinfo/vs2018-roadmap?context=visualstudio/default
+      href: /visualstudio/productinfo/vs2018-roadmap?context=visualstudio/default&contextView=vs-2017
     - name: Configuration requise
-      href: /visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default
+      href: /visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default&contextView=vs-2017
     - name: Compatibilité de la plateforme
-      href: /visualstudio/productinfo/vs2017-compatibility-vs?context=visualstudio/default
+      href: /visualstudio/productinfo/vs2017-compatibility-vs?context=visualstudio/default&contextView=vs-2017
     - name: Gestion des licences
       href: https://visualstudio.microsoft.com/license-terms/
     - name: Code distribuable
-      href: /visualstudio/productinfo/2017-redistribution-vs?context=visualstudio/default
+      href: /visualstudio/productinfo/2017-redistribution-vs?context=visualstudio/default&contextView=vs-2017
     - name: Cycle de vie du support et maintenance
-      href: /visualstudio/productinfo/vs-servicing-vs?context=visualstudio/default
+      href: /visualstudio/productinfo/vs-servicing-vs?context=visualstudio/default&contextView=vs-2017
   - name: Signaler un problème avec Visual Studio 2017
     href: ide/how-to-report-a-problem-with-visual-studio-2017.md
     items:
     - name: Confidentialité des données de la communauté des développeurs
       href: ide/developer-community-privacy.md
+  - name: Proposer une fonctionnalité pour Visual Studio
+    href: ide/suggest-a-feature.md
   - name: Programme d'amélioration de l'expérience utilisateur
     href: ide/visual-studio-experience-improvement-program.md
     items:
@@ -1069,9 +1081,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: Nous contacter
     href: ide/talk-to-us.md
-ms.openlocfilehash: e8506d9d6ed3fcaff6e69c42fdcc89a87477d115
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 3777ffcf9ea782d31ad4cc68823ddc2066433e9f
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384264"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49074128"

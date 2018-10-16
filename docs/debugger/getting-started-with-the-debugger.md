@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f12e1e95daed3a4e9c6228808123f87174f2202a
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 4534db0f4e85cda2cb3f0c45fdd57e768fa75ab1
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612686"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101041"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Didacticiel : Apprenez à déboguer à l’aide de Visual Studio
 
@@ -31,7 +31,7 @@ Cet article présente les fonctionnalités du débogueur Visual Studio dans une 
 |---------|---------|
 |  ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo")  |    [Regardez une vidéo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) sur le débogage, qui affiche des étapes similaires. |
 
-Bien que l’application de démonstration est c# et C++, les fonctionnalités sont applicables à Visual Basic, JavaScript et d’autres langages pris en charge par Visual Studio (sauf indication contraire). Les captures d’écran sont en c#. Pour basculer entre le code c# et C++ exemple dans cet article, utilisez le filtre de langage dans le coin supérieur droit de cette page.
+Bien que l’application de démonstration est c# et C++, les fonctionnalités sont applicables à Visual Basic, JavaScript et d’autres langages pris en charge par Visual Studio (sauf indication contraire). Les captures d’écran sont en c#.
 
 Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
@@ -60,6 +60,9 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 3. Tapez un nom tel que **get-démarré-débogage** et cliquez sur **OK**.
 
     Visual Studio crée le projet.
+
+    > [!NOTE]
+    > Pour basculer entre le code c# et C++ exemple dans cet article, utilisez le filtre de langage dans le coin supérieur droit de cette page.
 
 4. Dans *Program.cs* (c#) ou *get-démarré-debugging.cpp* (C++), remplacez le code suivant
 

@@ -12,12 +12,12 @@ author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e78491f9e811a6ee9e6166734e11077fad272370
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7f090607f1ebae6a03c7f12536e0dd5d46199f6e
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279685"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612660"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Options de ligne de commande VSTest.Console.exe
 
@@ -54,6 +54,10 @@ Le tableau suivant répertorie toutes les options de *VSTest.Console.exe*, ainsi
 |**/ListSettingsProviders**|Répertorie les fournisseurs de paramètres installés.|
 |**/Blame**|Effectue le suivi des tests à mesure qu’ils sont exécutés et, si le processus hôte des tests plante, émet les noms des tests dans l’ordre de leur exécution, le dernier test cité étant celui qui était en cours d’exécution au moment du plantage. Cette sortie permet d’isoler le test incriminé et d’établir un diagnostic plus facilement. [Plus d’informations](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
 |**/Diag:[*nom de fichier*]**|Écrit les journaux de trace de diagnostic dans le fichier spécifié.|
+|**/ResultsDirectory:[*chemin*]**|Un répertoire de résultats de test sera créé dans le chemin d’accès spécifié s’il n’en existe pas.<br />Exemple : `/ResultsDirectory:<pathToResultsDirectory>`|
+|**/ParentProcessId:[*ID_processus_parent*]**|ID du processus parent chargé de lancer le processus actif.|
+|**/Port:[*port*]**|Port de connexion de socket et de réception des messages d’événement.|
+|**/Collect:[*nom_convivial collecteur_de_données*]**|Active le collecteur de données pour la série de tests. [Plus d’informations](https://aka.ms/vstest-collect).|
 
 > [!TIP]
 > Les options et les valeurs ne respectent pas la casse.

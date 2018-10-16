@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bed49c87828463c16912da4d31073ba2ac32fdc
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 9ea4b3a0ed5f041b2f09c3f3e57f334bf11777f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511990"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273089"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Polices et mise en forme pour Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> La police d’environnement
@@ -83,7 +83,7 @@ window.ShowModal()
   
  `ShowModal` Retourne une valeur bool ? (valeur booléenne nullable) avec le `DialogResult`, qui peut être utilisé si nécessaire. La valeur renvoyée est true si la boîte de dialogue a été fermée avec **OK**.  
   
- Si vous avez besoin afficher certains UI WPF qui n’est pas une boîte de dialogue et qui est hébergé dans son propre `HwndSource`, comme une fenêtre contextuelle ou une fenêtre enfant WPF d’une fenêtre de fenêtre Win32/WinForms parent, vous devez définir le `FontFamily` et `FontSize` sur l’élément racine du e WPF élément. (L’interpréteur de commandes définit les propriétés de la fenêtre principale, mais ils ne seront pas héritées après un `HWND`). L’interpréteur de commandes fournit des ressources dans lequel les propriétés peuvent être liées, comme suit :  
+ Si vous avez besoin afficher certains UI WPF qui n’est pas une boîte de dialogue et qui est hébergé dans son propre `HwndSource`, comme une fenêtre contextuelle ou une fenêtre enfant WPF d’une fenêtre parent de Win32/WinForms, vous devez définir le `FontFamily` et `FontSize` sur l’élément racine de l’élément WPF. (L’interpréteur de commandes définit les propriétés de la fenêtre principale, mais ils ne seront pas héritées après un `HWND`). L’interpréteur de commandes fournit des ressources dans lequel les propriétés peuvent être liées, comme suit :  
   
 ```xaml
 <Setter Property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />  
@@ -466,5 +466,5 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 -   Texte de police d’environnement en gras doit suivre la marge intérieure et l’espacement de hauteur de ligne par défaut.  
   
 ## <a name="see-also"></a>Voir aussi  
- [MSDN : Polices (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742483\(v=vs.85\).aspx)   
- [MSDN : Texte de l’Interface utilisateur (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742478\(v=vs.85\).aspx)
+ [MSDN : Polices (Windows)](/windows/desktop/uxguide/vis-fonts)   
+ [MSDN : Texte de l’Interface utilisateur (Windows)](/windows/desktop/uxguide/text-ui)
