@@ -9,16 +9,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a0d5ab3c86c454a547ea80307c5440441424b1c
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 91d9c809d16a3763bed75d5de4c03bd7112c6e8a
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499563"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356754"
 ---
 # <a name="create-your-first-extension-hello-world"></a>Créer votre première extension : Hello World
 
-Cet exemple Hello World vous explique comment créer votre première extension pour Visual Studio. Ce didacticiel vous explique comment ajouter une nouvelle commande à Visual Studio.
+Cet exemple Hello World vous explique comment créer votre première extension pour Visual Studio. Ce didacticiel vous montre comment ajouter une nouvelle commande à Visual Studio.
 
 Dans le processus, vous allez apprendre comment :
 
@@ -35,11 +35,12 @@ Pour cet exemple, vous utiliserez Visual c# pour ajouter qu'un bouton de menu pe
 
 Avant de commencer, assurez-vous que vous avez installé le **développement d’extensions Visual Studio** charge de travail qui inclut le modèle VSIX, vous avez besoin et exemple de code.
 
-Remarque : Vous pouvez utiliser n’importe quelle version de Visual Studio (Community, Professional ou Enterprise) pour créer un projet d’extensibilité de Visual Studio.
+> [!NOTE]
+> Vous pouvez utiliser n’importe quelle édition de Visual Studio (Community, Professional ou Enterprise) pour créer un projet d’extensibilité de Visual Studio.
 
 ## <a name="create-an-extensibility-project"></a>Créer un projet d’extensibilité
 
-Étape 1. À partir de la **fichier** menu, cliquez sur **nouveau projet**. En bas de l’écran, vous pouvez entrer le nom de votre projet.
+Étape 1. À partir de la **fichier** menu, cliquez sur **nouveau projet**. En bas de l’écran, entrez le nom de votre projet.
 
 Étape 2. À partir de la **modèles** menu, cliquez sur **Visual C#**, cliquez sur **extensibilité**, puis cliquez sur **projet VSIX**.
 
@@ -53,15 +54,15 @@ Si vous devez laisser ce didacticiel et revenir à ce dernier, vous pouvez trouv
 
 Étape 1. Si vous sélectionnez le manifeste, vous pouvez voir quelles sont les options modifiables, pour l’instance, métadonnées, la description et version.
 
-Étape 2. Cliquez sur le projet (pas la solution). Dans le menu contextuel, cliquez sur **ajouter**, puis cliquez sur **contrôle utilisateur**.
+Étape 2. Cliquez sur le projet (pas la solution). Dans le menu contextuel, cliquez sur **ajouter**, puis cliquez sur **un nouvel élément**.
 
-Étape 3. Revenez à la **extensibilité** section, puis cliquez sur **commande personnalisée**.
+Étape 3. Sélectionnez le **extensibilité** section, puis cliquez sur **commande personnalisée**.
 
 Étape 4. Dans le **nom** champ du bas, donnez-lui un nom, par exemple *Command.cs*.
 
 ![commande personnalisée](media/hello-world-custom-command.png)
 
-Votre nouvelle commande s’afficheront dans le **l’Explorateur de solutions** sous le **ressources** branche. Il s’agit également où vous trouverez les autres fichiers associés à votre commande, telles que les fichiers PNG et ICO, si vous souhaitez modifier l’image.
+Votre nouvelle commande est répertorié dans **l’Explorateur de solutions** sous le **ressources** branche. Il s’agit également où vous trouverez les autres fichiers associés à votre commande, telles que les fichiers PNG et ICO, si vous souhaitez modifier l’image.
 
 ## <a name="modify-the-source-code"></a>Modifier le code source
 
@@ -116,7 +117,7 @@ Veillez à enregistrer vos modifications dans chaque fichier.
 
 Vous pouvez maintenant exécuter le code source dans l’Instance expérimentale de Visual Studio.
 
-Étape 1. Cliquez sur **Démarrer** dans la barre d’outils. Cela génère votre projet et démarrer le débogueur, lancer une nouvelle instance de Visual Studio appelé le **Instance expérimentale**.
+Étape 1. Cliquez sur **Démarrer** dans la barre d’outils. Cela génère votre projet et démarre le débogueur, lancer une nouvelle instance de Visual Studio appelé le **Instance expérimentale**.
 
 Vous verrez les mots **Instance expérimentale** dans la barre de titre de Visual Studio.
 
