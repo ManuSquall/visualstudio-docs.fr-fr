@@ -48,7 +48,7 @@ Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez utiliser divers p
   
 3.  Dans le dossier **Débogage**, choisissez la catégorie d’options souhaitée.  
   
-     Options les plus courantes se trouvent dans le **général** catégorie. Pour plus d'informations, consultez [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md).  
+     Les options les plus courantes se trouvent dans la catégorie **Général**. Pour plus d'informations, consultez [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md).  
   
 4.  Activez ou désactivez les options souhaitées. Appuyez sur F1 pour obtenir de l'aide concernant les options.  
   
