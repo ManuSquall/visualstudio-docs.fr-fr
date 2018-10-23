@@ -33,7 +33,7 @@ Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pouvez util
   
 ### <a name="to-set-debugger-options"></a>Pour définir les options du débogueur  
   
-1.  Dans le menu **Outils** , cliquez sur **Options**.  
+1.  Dans le menu **Outils**, cliquez sur **Options**.  
   
 2.  Dans la boîte de dialogue **Options**, ouvrez le dossier **Débogage**.  
   
