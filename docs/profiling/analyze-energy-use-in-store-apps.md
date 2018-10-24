@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 3578573a2020dbf048e3da4e0bf44a54df07860b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 5e74ec5e1e4efe4cbdf98125aa17cb3646fbc136
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668614"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930906"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analyser la consommation d’énergie dans les applications UWP
 Le profileur **Consommation d’énergie** de Visual Studio vous permet d’analyser la consommation d’électricité et de batterie des applications UWP sur les tablettes de faible puissance qui fonctionnent tout ou partie du temps sur batterie. Sur un périphérique alimenté par batterie, une application trop gourmande en énergie peut entraîner le mécontentement du client, voire, éventuellement, sa désinstallation. L’optimisation de l’utilisation d’énergie peut augmenter la popularité et l’utilisation de votre application par les clients.  
@@ -35,15 +35,15 @@ Le profileur **Consommation d’énergie** de Visual Studio vous permet d’anal
   
  Le profileur de consommation d'énergie utilise les définitions de *puissance* et d' *énergie*suivantes :  
   
--   La*puissance* est la mesure de la force utilisée pour effectuer une tâche sur une période donnée. En électricité, l’unité de mesure de la puissance est le *watt*. Un watt correspond à la puissance avec laquelle un ampère de courant parcourt une différence de potentiel électrique d’un volt. Dans le graphique **Consommation d’énergie** , les unités sont affichées en milliwatts ( **mW** ). Un milliwatt représente un millième de watt.  
+- La*puissance* est la mesure de la force utilisée pour effectuer une tâche sur une période donnée. En électricité, l’unité de mesure de la puissance est le *watt*. Un watt correspond à la puissance avec laquelle un ampère de courant parcourt une différence de potentiel électrique d’un volt. Dans le graphique **Consommation d’énergie** , les unités sont affichées en milliwatts ( **mW** ). Un milliwatt représente un millième de watt.  
   
-     La puissance étant un taux, elle a une direction (l’intensité peut augmenter ou baisser dans une période donnée) et une vitesse (le volume d’augmentation ou de baisse d’intensité).  
+   La puissance étant un taux, elle a une direction (l’intensité peut augmenter ou baisser dans une période donnée) et une vitesse (le volume d’augmentation ou de baisse d’intensité).  
   
--   L'*énergie* mesure la puissance totale, comme une capacité ou un potentiel, telle la capacité de puissance d'une batterie, ou comme la puissance totale consommée au cours d'une période donnée. L'unité d'énergie est le watt-heure, la quantité de puissance d'un watt constamment appliquée à une heure. Dans le **Résumé d'énergie**, les unités sont affichées sous forme de milliwatts heure **mW-h**.  
+- L'*énergie* mesure la puissance totale, comme une capacité ou un potentiel, telle la capacité de puissance d'une batterie, ou comme la puissance totale consommée au cours d'une période donnée. L'unité d'énergie est le watt-heure, la quantité de puissance d'un watt constamment appliquée à une heure. Dans le **Résumé d'énergie**, les unités sont affichées sous forme de milliwatts heure **mW-h**.  
   
- ![Capacité d’énergie, énergie utilisée, énergie totale utilisée](../profiling/media/energyprof_capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
+  ![Capacité d’énergie, énergie utilisée, énergie totale utilisée](../profiling/media/energyprof_capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
   
- Par exemple, la batterie entièrement chargée d'une tablette stocke une certaine quantité d'énergie. Lorsque l'énergie est utilisée pour effectuer des tâches telles que la communication sur un réseau, le calcul de valeurs, ou l'affichage de graphiques, la puissance de la batterie se dissipe à des taux différents. Pour une période définie, le total de puissance consommé est également mesuré en énergie.  
+  Par exemple, la batterie entièrement chargée d'une tablette stocke une certaine quantité d'énergie. Lorsque l'énergie est utilisée pour effectuer des tâches telles que la communication sur un réseau, le calcul de valeurs, ou l'affichage de graphiques, la puissance de la batterie se dissipe à des taux différents. Pour une période définie, le total de puissance consommé est également mesuré en énergie.  
   
 ## <a name="identify-scenarios-with-user-marks"></a>Identifier des scénarios avec des marques utilisateur  
  Vous pouvez ajouter des *marques utilisateur* à vos données de profilage pour vous aider à identifier des zones dans la chronologie.  
@@ -59,8 +59,8 @@ Le profileur **Consommation d’énergie** de Visual Studio vous permet d’anal
  Lors de l'exécution de la méthode, une marque utilisateur est ajoutée aux données de profilage accompagnées d'un message.  
   
 > [!NOTE]
->  -   Windows.Foundation.Diagnostics LoggingChannel implémente l’interface [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) interface (projetée comme [System.IDisposable](/dotnet/api/system.idisposable) en C# et Visual Basic). Pour éviter la fuite de ressources du système d’exploitation, appelez [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) en C# et Visual Basic) quand vous avez terminé d’utiliser un canal d’enregistrement.  
-> -   Chaque canal d'enregistrement ouvert doit avoir un nom unique. La tentative de création d'un canal d'enregistrement avec un nom identique comme un canal non supprimé entraîne une exception.  
+> - Windows.Foundation.Diagnostics LoggingChannel implémente l’interface [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) interface (projetée comme [System.IDisposable](/dotnet/api/system.idisposable) en C# et Visual Basic). Pour éviter la fuite de ressources du système d’exploitation, appelez [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) en C# et Visual Basic) quand vous avez terminé d’utiliser un canal d’enregistrement.  
+>   -   Chaque canal d'enregistrement ouvert doit avoir un nom unique. La tentative de création d'un canal d'enregistrement avec un nom identique comme un canal non supprimé entraîne une exception.  
   
  Consultez la page [LoggingSession Sample](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) concernant un exemple du Kit de développement logiciel (SDK) Windows.  
   
@@ -80,9 +80,9 @@ if (performance && performance.mark) {
  Pour obtenir des estimations correctes, effectuez le profilage de l’utilisation d’énergie de l’application sur un appareil de faible puissance alimenté par batterie. Comme Visual Studio ne s’exécute pas sur la plupart de ces appareils, vous devez connecter votre ordinateur Visual Studio à l’appareil à l’aide des Outils de contrôle à distance Visual Studio. Pour se connecter à un appareil distant, vous devez configurer le projet Visual Studio et l'appareil distant. Pour plus d’informations, consultez [Exécuter des applications UWP sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 > [!TIP]
->  -   Nous ne recommandons pas le profilage de l’énergie sur le simulateur UWP ou sur l’ordinateur Visual Studio. Les données collectées lors d'un profilage sur le périphérique réel sont beaucoup plus réalistes.  
-> -   Effectuez le profilage sur le périphérique cible alors qu'il est alimenté par batterie.  
-> -   Fermez les applications pouvant utiliser les mêmes ressources (réseau, UC, ou affichage).  
+> - Nous ne recommandons pas le profilage de l’énergie sur le simulateur UWP ou sur l’ordinateur Visual Studio. Les données collectées lors d'un profilage sur le périphérique réel sont beaucoup plus réalistes.  
+>   -   Effectuez le profilage sur le périphérique cible alors qu'il est alimenté par batterie.  
+>   -   Fermez les applications pouvant utiliser les mêmes ressources (réseau, UC, ou affichage).  
   
 ## <a name="collect-energy-profile-data-for-your-app"></a>Collecter les données de profil d'énergie de votre application  
   
@@ -106,15 +106,15 @@ if (performance && performance.mark) {
 ## <a name="collect-energy-profile-data-for-an-installed-app"></a>Collecter les données de profil d'énergie d'une application installée  
  L'outil Consommation d'énergie ne peut être exécuté que sur des applications UWP lancées à partir d'une solution Visual Studio ou installées depuis le Microsoft Store. Lorsqu'une solution est ouverte dans Visual Studio, la cible par défaut est le **Projet de démarrage**. Pour cibler une application installée :  
   
-1.  Choisissez **Modifier la cible** puis **Application installée**.  
+1. Choisissez **Modifier la cible** puis **Application installée**.  
   
-2.  Dans la liste **Sélectionner le package d'application installé** , choisissez la cible.  
+2. Dans la liste **Sélectionner le package d'application installé** , choisissez la cible.  
   
-3.  Choisissez **Consommation d'énergie** dans la page du concentrateur de diagnostic.  
+3. Choisissez **Consommation d'énergie** dans la page du concentrateur de diagnostic.  
   
-4.  Choisissez **Démarrer** pour démarrer le profilage.  
+4. Choisissez **Démarrer** pour démarrer le profilage.  
   
- Pour arrêter le profilage, rebasculez vers Visual Studio (Alt + Tab) et cliquez sur **Arrêter la collecte** sur la page du hub de diagnostic.  
+   Pour arrêter le profilage, rebasculez vers Visual Studio (Alt + Tab) et cliquez sur **Arrêter la collecte** sur la page du hub de diagnostic.  
   
 ## <a name="analyze-energy-profile-data"></a>Analyser des données de profil d'énergie  
  Les données de profil d'énergie s'affichent dans la fenêtre de document de Visual Studio :  

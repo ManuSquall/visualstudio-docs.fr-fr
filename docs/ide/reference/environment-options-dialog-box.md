@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 959be2a2f80f215aa3d72a36b8b989e6fa219c3d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 45a7cef09937181fbf6c721b8c8eca73b6351742
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947935"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930542"
 ---
 # <a name="environment-options-dialog-box"></a>Environnement, boîte de dialogue Options
 Vous pouvez utiliser les pages du dossier **Environnement** de la boîte de dialogue **Options** pour définir comment certains éléments de l’environnement de développement intégré (IDE) s’affichent et se comportent. Vous pouvez accéder aux pages Environnement en choisissant **Outils** et **Options** dans la barre de menus, puis en sélectionnant **Environnement**.
@@ -28,7 +28,7 @@ Vous pouvez utiliser les pages du dossier **Environnement** de la boîte de dial
 
 
 |Pour plus d'informations sur|Voir|
-|----------------------------------|---------|
+| - |---------|
 |Personnaliser la personnalisation de la présentation et du comportement des fenêtres, des menus et d'autres éléments de l'environnement de développement intégré (IDE).|[Général, Environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)|
 |Modifier les paramètres par défaut d'enregistrement et de restauration automatiques des fichiers.|[Récupération automatique, Environnement, boîte de dialogue Options](../../ide/reference/autorecover-environment-options-dialog-box.md)|
 |Définir les paramètres de gestion et d'affichage de documents, y compris du comportement des Fichiers divers.|[Documents, Environnement, boîte de dialogue Options](../../ide/reference/documents-environment-options-dialog-box.md)|

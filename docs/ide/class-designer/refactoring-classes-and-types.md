@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee534ca3c8b2a1cef441005586bc58601fb15ed7
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 0d5683f28150089335f04e9cf2e5274ad3ff413c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957431"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922521"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>Refactoriser des classes et des types dans le Concepteur de classes
 
@@ -38,7 +38,7 @@ Quand vous refactorisez du code, vous le rendez plus facile à comprendre et à 
 ## <a name="common-tasks"></a>Tâches courantes
 
 |Tâche|Contenu de support|
-|----------|------------------------|
+|----------| - |
 |**Refactorisation des classes** : vous pouvez utiliser les opérations de refactorisation pour fractionner une classe en classes partielles ou pour implémenter une classe de base abstraite.|-   [Guide pratique pour diviser une classe en classes partielles](how-to-split-a-class-into-partial-classes.md)|
 |**Utilisation des interfaces** : dans le Concepteur de classes, vous pouvez implémenter une interface pour le diagramme de classes en la connectant à une classe qui fournit du code pour les méthodes d’interface.|-   [Guide pratique pour implémenter une interface](how-to-implement-an-interface.md)|
 |**Refactorisation des types, des membres de type et des paramètres** : à l’aide du Concepteur de classes, vous pouvez renommer des types, substituer des membres de type ou les déplacer d’un type à un autre. Vous pouvez également créer des types Nullable.|-   [Renommer des types et des membres de type](#rename-types-and-type-members)<br />-   [Déplacer des membres de type d’un type à un autre](#move-type-members-from-one-type-to-another)<br />-   [Guide pratique pour créer un type Nullable](how-to-create-a-nullable-type.md)|

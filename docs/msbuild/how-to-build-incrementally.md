@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56727c338f0f11c9d79704644888448c04064466
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f9e0251d41feb5bd9c61a719d932c6fd954be947
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178967"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932427"
 ---
 # <a name="how-to-build-incrementally"></a>Guide pratique pour effectuer des builds incrémentielles
 Quand vous générez un projet volumineux, il est important de ne pas regénérer les composants précédemment générés qui sont encore à jour. Si toutes les cibles sont générées à chaque fois, la génération de builds prend beaucoup de temps. Pour activer les builds incrémentielles (builds dans lesquelles seules les cibles obsolètes ou n’ayant pas été déjà générées sont regénérées), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) peut comparer les horodateurs des fichiers d’entrée avec ceux des fichiers de sortie et déterminer s’il faut ignorer, générer ou regénérer partiellement une cible. Toutefois, il doit exister un mappage un-à-un entre les entrées et les sorties. Vous pouvez utiliser des transformations pour permettre aux cibles d’identifier ce mappage direct. Pour plus d’informations sur les transformations, consultez [Transformations](../msbuild/msbuild-transforms.md).  
@@ -29,15 +29,15 @@ Quand vous générez un projet volumineux, il est important de ne pas regénére
   
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>Pour spécifier les entrées et les sorties d’une cible  
   
--   Utilisez les attributs `Inputs` et `Outputs` de l’élément `Target`. Exemple :  
+- Utilisez les attributs `Inputs` et `Outputs` de l’élément `Target`. Exemple :  
   
-    ```xml  
-    <Target Name="Build"  
-        Inputs="@(CSFile)"  
-        Outputs="hello.exe">  
-    ```  
+  ```xml  
+  <Target Name="Build"  
+      Inputs="@(CSFile)"  
+      Outputs="hello.exe">  
+  ```  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] peut comparer les horodateurs des fichiers d’entrée avec ceux des fichiers de sortie et déterminer s’il faut ignorer, générer ou regénérer partiellement une cible. Dans l’exemple suivant, si un fichier de la liste d’éléments `@(CSFile)` est plus récent que le fichier *hello.exe*, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] exécute la cible ; sinon, il l’ignore :  
+  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] peut comparer les horodateurs des fichiers d’entrée avec ceux des fichiers de sortie et déterminer s’il faut ignorer, générer ou regénérer partiellement une cible. Dans l’exemple suivant, si un fichier de la liste d’éléments `@(CSFile)` est plus récent que le fichier *hello.exe*, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] exécute la cible ; sinon, il l’ignore :  
   
 ```xml  
 <Target Name="Build"   
