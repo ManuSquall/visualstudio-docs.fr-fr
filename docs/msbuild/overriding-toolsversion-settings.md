@@ -13,32 +13,32 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dea73a4f21a36907e3252530f68263e1a63a8819
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 0f0abe9db7178678c4ffda7f4179117817b3add6
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153915"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879300"
 ---
 # <a name="override-toolsversion-settings"></a>Écraser les paramètres ToolsVersion
 Vous pouvez changer l’Ensemble d’outils pour les projets et solutions de trois manières :  
   
-1.  Avec le commutateur `/ToolsVersion` (ou `/tv` en abrégé) lors de la génération du projet ou de la solution en ligne de commande.  
+1.  Avec le commutateur `-ToolsVersion` (ou `-tv` en abrégé) lors de la génération du projet ou de la solution en ligne de commande.  
   
 2.  En définissant le paramètre `ToolsVersion` sur la tâche MSBuild.  
   
 3.  En définissant la propriété `$(ProjectToolsVersion)` sur un projet dans une solution. Cela vous permet de générer un projet dans une solution avec une version de l’Ensemble d’outils qui diffère de celle des autres projets.  
   
 ## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>Écraser les paramètres ToolsVersion de projets et de solutions sur des générations en ligne de commande  
- Bien que les projets Visual Studio soient généralement générés avec la version ToolsVersion spécifiée dans le fichier projet, vous pouvez utiliser le commutateur `/ToolsVersion` (ou `/tv`) sur la ligne de commande pour substituer cette valeur et générer tous les projets et leurs dépendances projet-à-projet avec un autre Ensemble d’outils. Exemple :  
+ Bien que les projets Visual Studio soient généralement générés avec la version ToolsVersion spécifiée dans le fichier projet, vous pouvez utiliser le commutateur `-ToolsVersion` (ou `-tv`) sur la ligne de commande pour substituer cette valeur et générer tous les projets et leurs dépendances projet-à-projet avec un autre Ensemble d’outils. Exemple :  
   
 ```cmd  
-msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug  
+msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug  
 ```  
   
  Dans cet exemple, tous les projets sont générés à l’aide de ToolsVersion 12.0. (Voir cependant la section [Ordre de priorité](#order-of-precedence) plus loin dans cette rubrique.)  
   
- Quand vous utilisez le commutateur `/tv` sur la ligne de commande, vous pouvez éventuellement utiliser la propriété `$(ProjectToolsVersion)` dans des projets pour les générer avec une autre valeur de ToolsVersion que les autres projets dans la solution.  
+ Quand vous utilisez le commutateur `-tv` sur la ligne de commande, vous pouvez éventuellement utiliser la propriété `$(ProjectToolsVersion)` dans des projets pour les générer avec une autre valeur de ToolsVersion que les autres projets dans la solution.  
   
 ## <a name="override-the-toolsversion-settings-using-the-toolsversion-parameter-of-the-msbuild-task"></a>Écraser les paramètres ToolsVersion avec le paramètre ToolsVersion de la tâche MSBuild  
  La tâche MSBuild est le moyen principal par lequel un projet peut en générer un autre. Pour permettre à la tâche MSBuild de générer un projet avec des paramètres ToolsVersion différents de ceux spécifiés dans le projet, un paramètre de tâche facultatif nommé `ToolsVersion` est disponible. L’exemple suivant illustre comment utiliser ce paramètre :  
@@ -78,10 +78,10 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
 3.  À l’invite de commandes, tapez la commande suivante :  
   
     ```cmd  
-    msbuild projectA.proj /t:go /toolsversion:3.5  
+    msbuild projectA.proj -t:go -toolsversion:3.5  
     ```  
   
-4.  La sortie suivante apparaît. Pour `projectA`, le paramètre `/toolsversion:3.5` de la ligne de commande remplace le paramètre `ToolsVersion=12.0` dans la balise `Project`.  
+4.  La sortie suivante apparaît. Pour `projectA`, le paramètre `-toolsversion:3.5` de la ligne de commande remplace le paramètre `ToolsVersion=12.0` dans la balise `Project`.  
   
      `ProjectB` est appelé par une tâche dans `projectA`. Cette tâche a `ToolsVersion=2.0`, qui remplace les autres paramètres `ToolsVersion` pour `projectB`.  
   
@@ -101,7 +101,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
 1.  L’attribut `ToolsVersion` sur la tâche MSBuild utilisé pour générer le projet, le cas échéant.  
   
-2.  Le commutateur `/toolsversion` (ou `/tv`) utilisé dans la commande msbuild.exe, le cas échéant.  
+2.  Le commutateur `-toolsversion` (ou `-tv`) utilisé dans la commande msbuild.exe, le cas échéant.  
   
 3.  Si la variable d’environnement `MSBUILDTREATALLTOOLSVERSIONSASCURRENT` est définie, utiliser le paramètre `ToolsVersion` actuel.  
   

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db39f9c58c0fa2f0ea57d94cd1be404173720088
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 87b447c3cf2fbba77584675edf3d34f44a98cb64
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957312"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848499"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe
 
@@ -31,7 +31,7 @@ Vous pouvez utiliser le clavier en plus de la souris pour naviguer dans le **Con
 Les actions de la souris suivantes sont prises en charge dans les diagrammes de classes :
 
 |Combinaison avec la souris|Contexte|Description|
-|-----------------------|-------------|-----------------|
+| - |-------------|-----------------|
 |Double-clic|éléments Shape|Ouvre l'éditeur de code.|
 |Double-clic|Connecteur d'interface lollipop|Développe/réduit l'interface lollipop.|
 |Double-clic|Étiquette du connecteur d'interface lollipop|Appelle la commande **Afficher l’interface**.|

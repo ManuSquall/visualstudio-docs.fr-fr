@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 17a63dc86e77692538ea75ba708a1ff39f9fb1b9
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 58f3ad239802b032006a5a28816462147018982f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384251"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839529"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Services et produits d'accessibilité de Microsoft
 
@@ -45,7 +45,6 @@ Microsoft s’engage à faciliter l’utilisation de ses produits et services. L
 
 > [!NOTE]
 > Les informations contenues dans cette section peuvent s’appliquer uniquement aux utilisateurs qui ont acheté leurs produits Microsoft aux États-Unis. Si vous avez obtenu ce produit en dehors des États-Unis, vous pouvez utiliser la fiche d’informations accompagnant votre package logiciel ou visiter le [site web Microsoft consacré à l’accessibilité](http://go.microsoft.com/fwlink/?LinkId=8431) pour obtenir la liste des numéros de téléphone et des adresses des services de support Microsoft. Vous pouvez contacter votre filiale pour savoir si les types de produits et services décrits dans cette section sont disponibles dans votre région. Les informations sur l'accessibilité sont disponibles dans d'autres langues, y compris le japonais et le français.
-
 
 ##  <a name="windows"></a> Fonctionnalités d’accessibilité de Windows
 
@@ -70,24 +69,24 @@ Si vous avez des difficultés à lire ou manipuler les documents imprimés, vous
 De plus, vous pouvez vous procurer des publications Microsoft supplémentaires auprès de Learning Ally. Learning Ally distribue ces documents aux membres inscrits et éligibles de son service de distribution. Pour plus d’informations sur la disponibilité de la documentation produit de Microsoft et des ouvrages de Microsoft Press, contactez :
 
 |Learning Ally|
-|----------------------------------------------|
+| - |
 |20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Site web de Learning Ally : [http://www.learningally.org](http://www.learningally.org/).|
 
 Comme les adresses web peuvent changer, peut-être ne pourrez-vous pas vous connecter aux sites web ou sites mentionnés ici.
 
 ##  <a name="hearing"></a> Service clientèle pour les personnes atteintes de troubles de l’audition
 
- Si vous êtes atteint de surdité ou de troubles de l’audition, un accès complet aux services clientèle et produits Microsoft est disponible via un service télétexte/téléscripteur (TTY/TDD) :
+Si vous êtes atteint de surdité ou de troubles de l’audition, un accès complet aux services clientèle et produits Microsoft est disponible via un service télétexte/téléscripteur (TTY/TDD) :
 
--   Pour le service clientèle, contactez Microsoft Sales Information Center au (800) 892-5234 entre 6 h 30 et 17 h 30 Pacifique, du lundi au vendredi, hors jours fériés.
+- Pour le service clientèle, contactez Microsoft Sales Information Center au (800) 892-5234 entre 6 h 30 et 17 h 30 Pacifique, du lundi au vendredi, hors jours fériés.
 
--   Pour obtenir une assistance technique aux États-Unis, contactez le support technique Microsoft au (800) 892-5234 entre 6 h 00 et 18 h 00 Pacifique, du lundi au vendredi, hors jours fériés. Au Canada, composez le (905) 568-9641 entre 8 h 00 et 20 h 00 Est, du lundi au vendredi, hors jours fériés.
+- Pour obtenir une assistance technique aux États-Unis, contactez le support technique Microsoft au (800) 892-5234 entre 6 h 00 et 18 h 00 Pacifique, du lundi au vendredi, hors jours fériés. Au Canada, composez le (905) 568-9641 entre 8 h 00 et 20 h 00 Est, du lundi au vendredi, hors jours fériés.
 
- Le support Microsoft est soumis au tarif et aux conditions en vigueur au moment de l’utilisation du service.
+Le support Microsoft est soumis au tarif et aux conditions en vigueur au moment de l’utilisation du service.
 
 ##  <a name="moreinfo"></a> Pour plus d'informations
 
- Pour plus d’informations sur la façon dont les technologies d’accessibilité pour ordinateurs contribuent à améliorer la vie des personnes handicapées, consultez le [site web Microsoft consacré à l’accessibilité](http://go.microsoft.com/fwlink/?LinkId=8431).
+Pour plus d’informations sur la façon dont les technologies d’accessibilité pour ordinateurs contribuent à améliorer la vie des personnes handicapées, consultez le [site web Microsoft consacré à l’accessibilité](http://go.microsoft.com/fwlink/?LinkId=8431).
 
 ## <a name="see-also"></a>Voir aussi
 

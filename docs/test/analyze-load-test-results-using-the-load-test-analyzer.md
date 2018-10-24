@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7890f5c1db26616ec1041b202a3863d1fbfae20e
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 72b5472b6a23729026d9e044b7190f031eaaf4bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234161"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845433"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>Analyse des résultats des tests de charge à l’aide de l’analyseur de test de charge
 
@@ -44,7 +44,7 @@ Vous pouvez effectuer ces tâches si vous exécutez votre test de charge à part
 ## <a name="tasks"></a>Tâches
 
 |Tâches|Rubriques associées|
-|-----------|-----------------------|
+|-|-|
 |**Accès aux résultats de votre test de charge :** quand vous exécutez un test de charge à partir de l’éditeur de test de charge, les résultats des tests de charge s’ouvrent automatiquement, et le test de charge en cours d’exécution s’affiche dans **l’analyseur de test de charge**.|-   [Guide pratique pour accéder aux résultats des tests de charge à des fins d’analyse](../test/how-to-access-load-test-results-for-analysis.md)|
 |**Ajouter des remarques d’analyse à votre test de charge :** vous pouvez ajouter des commentaires au test de charge quand vous effectuez votre analyse. Les commentaires sont stockés définitivement avec le résultat du test de charge. La description que vous entrez s’affiche également dans la colonne **Description** associée au test de charge dans la boîte de dialogue **Ouvrir et gérer des résultats des tests de charge** de l’éditeur de test de charge.<br /><br /> Pour plus d’informations, consultez [Guide pratique pour accéder aux résultats des tests de charge à des fins d’analyse](../test/how-to-access-load-test-results-for-analysis.md).<br /><br /> En outre, les commentaires s'affichent lorsque vous créez un rapport Excel pour les résultats de test de charge.<br /><br /> Pour plus d’informations, consultez [Création de rapports sur les résultats des tests de charge pour les comparaisons de tests ou l’analyse de tendances](../test/compare-load-test-results.md).|-   [Guide pratique pour ajouter des commentaires pendant l’analyse d’un test de charge terminé](../test/how-to-add-comments-on-a-completed-load-test.md)|
 |**Analyse des résultats de votre test de charge :** après avoir accédé aux données d’exécution des tests de charge, vous pouvez analyser les données résultantes. Vous pouvez consulter le Résumé du test de charge pour comprendre rapidement les résultats. Ce résumé affiche les résultats clés dans un format compact et facile à lire.<br /><br /> Vous pouvez l'imprimer. Cela rend son utilisation pratique lorsque vous communiquez des résultats aux parties prenantes.<br /><br /> Vous pouvez analyser les détails des résultats du test de charge en utilisant les graphiques et les tables dans les résultats, notamment **Erreurs**, **Pages**, **Requêtes**, **SQL Trace**, **Tests**, **Seuils**  et **Transactions**.|-   [Vue d’ensemble du résumé des résultats des tests de charge](../test/load-test-results-summary-overview.md)<br />-   [Guide pratique pour afficher le temps de réponse d’une page web](../test/how-to-view-web-page-response-time-in-a-load-test.md)<br />-   [Analyse des violations des règles de seuil](../test/analyze-threshold-rule-violations-in-load-tests.md)<br />-   [Analyser les résultats des tests de charge dans la vue Graphiques](../test/analyze-load-test-results-in-the-graphs-view.md)<br />-   [Analyser les résultats et les erreurs des tests de charge dans la vue Tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)|

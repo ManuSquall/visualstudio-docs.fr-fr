@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b9b29cef4ad215e76af57e66c73eb2e8a134db
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3668b5e4275071513deb31e2e479adcd91d11589
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953834"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839269"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Guide pratique pour ajouter ou supprimer des références à l’aide du Gestionnaire de références
 
@@ -100,7 +100,7 @@ Selon la version du .NET Framework de votre projet, certains composants de la li
 
     Lorsque vous créez une application, certains projets ciblent le [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] par défaut.
 
-- Évitez si possible d'ajouter des références de fichier aux sorties d'un autre projet de la même solution, car cela risquerait de provoquer des erreurs de compilation. Utilisez l’onglet **Projets** de la boîte de dialogue **Ajouter une référence** afin de créer des références entre projets. Cela facilite le développement en équipe, en permettant une meilleure gestion des bibliothèques de classes créées dans vos projets. Pour plus d’informations, consultez [Dépanner des références rompues](../ide/troubleshooting-broken-references.md).
+Évitez si possible d'ajouter des références de fichier aux sorties d'un autre projet de la même solution, car cela risquerait de provoquer des erreurs de compilation. Utilisez l’onglet **Projets** de la boîte de dialogue **Ajouter une référence** afin de créer des références entre projets. Cela facilite le développement en équipe, en permettant une meilleure gestion des bibliothèques de classes créées dans vos projets. Pour plus d’informations, consultez [Dépanner des références rompues](../ide/troubleshooting-broken-references.md).
 
 > [!NOTE]
 > Dans Visual Studio 2015 ou version ultérieure, une référence de fichier est créée au lieu d’une référence de projet si la version cible du .NET Framework d’un projet est la version 4.5 ou ultérieure et que la version cible du de l’autre projet est 2, 3, 3.5 ou 4.0.
@@ -109,9 +109,9 @@ Selon la version du .NET Framework de votre projet, certains composants de la li
 
 - Déplacez ou copiez l'assembly vers l'un des emplacements suivants :
 
-    - Le répertoire de projet actuel (vous pouvez rechercher ces assemblys via l’onglet **Parcourir** ).
+   - Le répertoire de projet actuel (vous pouvez rechercher ces assemblys via l’onglet **Parcourir** ).
 
-    - Autres répertoires de projet de la même solution (vous pouvez rechercher ces assemblys à l’aide de l’onglet **Projets**)
+   - Autres répertoires de projet de la même solution (vous pouvez rechercher ces assemblys à l’aide de l’onglet **Projets**)
 
     \- ou -
 
@@ -175,7 +175,7 @@ Dans les projets d’application de bureau, le sous-groupe **Principal** ne s’
 </PropertyGroup>
 ```
 
-Cochez bien la case **Windows** sur ce sous-groupe. Vous devriez ensuite pouvoir utiliser les éléments Windows Runtime. Toutefois, vous devez également ajouter <xref:System.Runtime>, dans lequel Windows Runtime définit certaines classes et interfaces standard, par exemple <xref:System.Collections.IEnumerable>, qui sont utilisées dans l’ensemble des bibliothèques Windows Runtime. Pour plus d’informations sur l’ajout de <xref:System.Runtime>, consultez [Applications de bureau managées et Windows Runtime](http://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types).
+Cochez bien la case **Windows** sur ce sous-groupe. Vous devriez ensuite pouvoir utiliser les éléments Windows Runtime. Toutefois, vous devez également ajouter <xref:System.Runtime>, dans lequel Windows Runtime définit certaines classes et interfaces standard, par exemple <xref:System.Collections.IEnumerable>, qui sont utilisées dans l’ensemble des bibliothèques Windows Runtime. Pour plus d’informations sur l’ajout de <xref:System.Runtime>, consultez [Applications de bureau managées et Windows Runtime](/previous-versions/windows/apps/jj856306(v=win.10)#consuming-standard-windows-runtime-types).
 
 ### <a name="extensions-subgroup"></a>Sous-groupe Extensions
 

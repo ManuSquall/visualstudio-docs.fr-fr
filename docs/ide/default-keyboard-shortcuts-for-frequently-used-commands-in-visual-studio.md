@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50e9a56d6682c32d4f02f5d45899867ce21768ec
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: f917486a6b4a539401c8652f70ca95b2e7bc7bc7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370976"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843196"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Raccourcis clavier par défaut pour les commandes fréquemment utilisées dans Visual Studio
 
@@ -26,7 +26,7 @@ Vous pouvez accéder à des commandes fréquemment utilisées dans Visual Studio
 ## <a name="build"></a>Générer
 
 |Commandes|Raccourcis clavier [Contextes]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Build.BuildSolution|**Ctrl+Maj+B** [Global]|
 |Build.Cancel|**Ctrl+Pause** [Global]|
 |Build.Compile|**Ctrl+F7** [Global]|
@@ -35,7 +35,7 @@ Vous pouvez accéder à des commandes fréquemment utilisées dans Visual Studio
 ## <a name="debug"></a>Débogage
 
 |Commandes|Raccourcis clavier [Contextes]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Debug.BreakatFunction|**Ctrl+B** [Global]|
 |Debug.BreakAll|**Ctrl+Alt+Pause** [Global]|
 |Debug.DeleteAllBreakpoints|**Ctrl+Maj+F9** [Global]|
@@ -55,7 +55,7 @@ Vous pouvez accéder à des commandes fréquemment utilisées dans Visual Studio
 ## <a name="edit"></a>Modifier
 
 |Commandes|Raccourcis clavier [Contextes]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Edit.BreakLine|**Entrée** [Éditeur de texte, Concepteur de rapports, Concepteur Windows Forms]<br /><br /> ou **Maj+Entrée** [Éditeur de texte]|
 |Edit.CollapseToDefinitions|**Ctrl+M**, **Ctrl+O** [Éditeur de texte]|
 |Edit.CommentSelection|**Ctrl+K**, **Ctrl+C** [Éditeur de texte]|
@@ -106,7 +106,7 @@ Vous pouvez accéder à des commandes fréquemment utilisées dans Visual Studio
 ## <a name="file"></a>Fichier
 
 |Commandes|Raccourcis clavier [Contextes]|
-|--------------|-------------------------------------|
+|--------------| - |
 |File.Exit|**Alt+F4** [Global]|
 |File.NewFile|**Ctrl+N** [Global]|
 |File.NewProject|**Ctrl+Maj+N** [Global]|
@@ -122,26 +122,26 @@ Vous pouvez accéder à des commandes fréquemment utilisées dans Visual Studio
 ## <a name="project"></a>Projet
 
 |Commandes|Raccourcis clavier [Contextes]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Project.AddExistingItem|**Maj+Alt+A** [Global]|
 |Project.AddNewItem|**Ctrl+Maj+A** [Global]|
 
 ## <a name="refactor"></a>Réorganiser
 
 |Commande|Raccourci clavier [Contexte]|
-|-------------|-----------------------------------|
+|-------------| - |
 |Refactor.ExtractMethod|**Ctrl+R, Ctrl+M** [Global]|
 
 ## <a name="tools"></a>Outils
 
 |Commande|Raccourci clavier [Contexte]|
-|-------------|-----------------------------------|
+|-------------| - |
 |Tools.AttachtoProcess|**Ctrl+Alt+P** [Global]|
 
 ## <a name="view"></a>Vue
 
 |Commandes|Raccourcis clavier [Contextes]|
-|--------------|-------------------------------------|
+|--------------| - |
 |View.ClassView|**Ctrl+Maj+C** [Global]|
 |View.EditLabel|**F2** [Global]|
 |View.ErrorList|**Ctrl+\\, Ctrl+E** [Global]<br /><br /> ou **Ctrl+\\, E** [Global]|
@@ -162,7 +162,7 @@ Vous pouvez accéder à des commandes fréquemment utilisées dans Visual Studio
 ## <a name="window"></a>Fenêtre
 
 |Commandes|Raccourcis clavier [Contextes]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Window.ActivateDocumentWindow|**Échap** [Global]|
 |Window.CloseDocumentWindow|**Ctrl+F4** [Global]|
 |Window.NextDocumentWindow|**Ctrl+F6** [Global]|

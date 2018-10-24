@@ -1,7 +1,7 @@
 ---
 title: Porter, migrer et mettre à niveau des projets
 description: Ce document contient des informations de référence sur la prise en charge dans Visual Studio 2017 des projets créés dans des versions antérieures de Visual Studio et aborde la façon dont Visual Studio décide à quel moment il doit migrer un projet.
-ms.date: 06/19/2018
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: e83aec143d2b7fdb6ed7a338b6a726aa81147e7f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 84c023342bb3c54e1d967f869962a204fbf1289d
+ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280724"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49325027"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Informations de référence sur la migration et la mise à niveau de projets pour Visual Studio 2017
 
@@ -41,7 +41,7 @@ Cet article fournit des détails uniquement sur les types de projets pouvant êt
 
 La liste suivante décrit la prise en charge dans Visual Studio 2017 pour les projets qui ont été créés dans des versions antérieures.
 
-Si un type de projet ou de fichier n’apparaît pas alors qu’il le devrait, consultez la [version Visual Studio 2015 de cet article](port-migrate-and-upgrade-visual-studio-projects.md) et utilisez l’option d’envoi de commentaires sur la documentation située au bas de cette page pour fournir les détails de votre projet. (Si vous souhaitez obtenir une réponse, utilisez les commentaires de la documentation plutôt que le contrôle « Cette page est-elle utile ? », qui est anonyme.)
+Si un type de projet ou de fichier n’apparaît pas alors qu’il le devrait, consultez la [version Visual Studio 2015 de cet article](https://docs.microsoft.com/visualstudio/porting/porting-migrating-and-upgrading-visual-studio-projects?view=vs-2015) et utilisez l’option d’envoi de commentaires sur la documentation située au bas de cette page pour fournir les détails de votre projet. (Si vous souhaitez obtenir une réponse, utilisez les commentaires de la documentation plutôt que le contrôle « Cette page est-elle utile ? », qui est anonyme.)
 
 | Type de projet | Assistance |
 | --- | --- |

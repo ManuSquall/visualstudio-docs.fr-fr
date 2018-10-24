@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 482c7213f695fce68026acbd0fd953cf2d4792ad
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c89a437938a042ead343ee5c1386ea11d637663d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668608"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834520"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analyser la réactivité de l’interface utilisateur HTML dans les applications Windows universelles
 Cette rubrique explique comment isoler les problèmes de performances dans vos applications avec le profileur de réactivité de l’interface utilisateur, qui est un outil d’analyse des performances disponible pour les applications Windows universelles.  
@@ -201,36 +201,36 @@ if (performance.mark && performance.measure) {
   
  Utilisez ce graphique pour :  
   
--   Identifier les zones générales posant problème.  
+- Identifier les zones générales posant problème.  
   
--   Choisir une période spécifique à afficher dans le graphique des détails de chronologie. Pour choisir une période, sélectionnez une partie du graphique et faites glisser le pointeur pour effectuer une sélection.  
+- Choisir une période spécifique à afficher dans le graphique des détails de chronologie. Pour choisir une période, sélectionnez une partie du graphique et faites glisser le pointeur pour effectuer une sélection.  
   
--   Obtenez une vue plus détaillée d'une période sélectionnée en sélectionnant le bouton **Zoom avant** .  
+- Obtenez une vue plus détaillée d'une période sélectionnée en sélectionnant le bouton **Zoom avant** .  
   
- Pour plus d'informations sur l'utilisation du graphique, voir [Isolate a UI responsiveness problem](#Workflow) dans cette rubrique.  
+  Pour plus d'informations sur l'utilisation du graphique, voir [Isolate a UI responsiveness problem](#Workflow) dans cette rubrique.  
   
 ###  <a name="VisualThroughput"></a> Visualiser le débit visuel (i/s)  
  Le graphique visuel de débit vous permet d'identifier les périodes durant lesquelles la fréquence d'images a été supprimée. Il indique les images par seconde (i/s) pour l'application. Ce graphique est très utile pour le développement de jeux et d'applications multimédias élaborées.  
   
  La fréquence d'images affichée peut différer de la fréquence d'images réelle. Gardez les informations ci-dessous à l'esprit lorsque vous examinez les données de ce graphique.  
   
--   Le graphique affiche la fréquence d'images (en i/s) que l'application peut atteindre à un moment spécifique. Lorsque l'application est inactive, la fréquence d'images est identique à la fréquence de rafraîchissement du moniteur.  
+- Le graphique affiche la fréquence d'images (en i/s) que l'application peut atteindre à un moment spécifique. Lorsque l'application est inactive, la fréquence d'images est identique à la fréquence de rafraîchissement du moniteur.  
   
--   Le graphique affiche la fréquence d'images réelle si l'application effectue un travail qui requiert des mises à jour visuelles.  
+- Le graphique affiche la fréquence d'images réelle si l'application effectue un travail qui requiert des mises à jour visuelles.  
   
--   Le graphique affiche la valeur zéro si les images sont en cours de suppression.  
+- Le graphique affiche la valeur zéro si les images sont en cours de suppression.  
   
- L'exemple suivant montre à quoi ressemble le graphique visuel de débit :  
+  L'exemple suivant montre à quoi ressemble le graphique visuel de débit :  
   
- ![Graphique du débit d’affichage](../profiling/media/js_htmlvizprof_vizthru.png "JS_HTMLVizProf_VizThru")  
+  ![Graphique du débit d’affichage](../profiling/media/js_htmlvizprof_vizthru.png "JS_HTMLVizProf_VizThru")  
   
- Utilisez le graphique visuel de débit pour :  
+  Utilisez le graphique visuel de débit pour :  
   
--   Identifier les zones générales posant problème.  
+- Identifier les zones générales posant problème.  
   
--   Choisir une période spécifique à afficher dans le graphique des détails de chronologie. Pour choisir une période, sélectionnez une partie du graphique et faites glisser le pointeur pour effectuer une sélection.  
+- Choisir une période spécifique à afficher dans le graphique des détails de chronologie. Pour choisir une période, sélectionnez une partie du graphique et faites glisser le pointeur pour effectuer une sélection.  
   
--   Obtenez une vue plus détaillée d'une période sélectionnée en sélectionnant le bouton **Zoom avant** .  
+- Obtenez une vue plus détaillée d'une période sélectionnée en sélectionnant le bouton **Zoom avant** .  
   
 ###  <a name="TimelineDetails"></a> Visualiser les détails de la chronologie  
  Le graphique des détails de chronologie s'affiche dans le volet inférieur du profileur de réactivité de l'interface utilisateur. Il fournit des informations séquentielles et hiérarchiques sur les événements qui ont consommé le plus de temps processeur pendant les périodes sélectionnées. Ce graphique peut vous aider à déterminer ce qui a déclenché un événement particulier et, pour certains événements, comment l'événement est mappé en retour au code source. Ce graphique vous aide également à déterminer le temps nécessaire pour peindre des mises à jour visuelles sur l'écran.  
@@ -307,23 +307,23 @@ if (performance.mark && performance.measure) {
 ## <a name="profiler-event-reference"></a>Profiler event reference  
  Les événements du profileur sont classés et colorés dans le profileur de réactivité de l'interface utilisateur. Voici les catégories d'événements :  
   
--   **Chargement en cours.** Indique le temps passé à la récupération des ressources d'application et à l'analyse du code HTML et CSS lors du premier chargement de l'application. Les demandes réseau peuvent être incluses.  
+- **Chargement en cours.** Indique le temps passé à la récupération des ressources d'application et à l'analyse du code HTML et CSS lors du premier chargement de l'application. Les demandes réseau peuvent être incluses.  
   
--   **Scripts.** Indique le temps passé à l'analyse et à l'exécution du code JavaScript. Sont inclus les événements DOM, les minuteries, l'évaluation des scripts et le framework d'animation. Sont compris le code utilisateur et le code de bibliothèque.  
+- **Scripts.** Indique le temps passé à l'analyse et à l'exécution du code JavaScript. Sont inclus les événements DOM, les minuteries, l'évaluation des scripts et le framework d'animation. Sont compris le code utilisateur et le code de bibliothèque.  
   
--   **GC.** Indique le temps passé à effectuer le garbage collection.  
+- **GC.** Indique le temps passé à effectuer le garbage collection.  
   
--   **Style.** Indique le temps passé à analyser le code CSS et à calculer la présentation et la disposition des éléments.  
+- **Style.** Indique le temps passé à analyser le code CSS et à calculer la présentation et la disposition des éléments.  
   
--   **Rendu.** Indique le temps consacré à la peinture de l'écran.  
+- **Rendu.** Indique le temps consacré à la peinture de l'écran.  
   
--   **Décodage d'image.** Indique le temps passé à décompresser er décoder les images.  
+- **Décodage d'image.** Indique le temps passé à décompresser er décoder les images.  
   
- Pour le script et les catégories de style, le profileur de réactivité de l'interface utilisateur peut fournir des données sur lesquelles vous pouvez agir dans le graphique des détails de chronologie. Si vous identifiez des problèmes liés aux scripts comme un problème, vous pouvez exécuter le profileur d'échantillonnage de l'UC avec le profileur de réactivité de l'interface utilisateur. Vous pouvez également utiliser le profileur de fonction de Visual Studio pour obtenir un plus grand nombre de données détaillées. Pour plus d'informations, consultez [Mémoire JavaScript](../profiling/javascript-memory.md).  
+  Pour le script et les catégories de style, le profileur de réactivité de l'interface utilisateur peut fournir des données sur lesquelles vous pouvez agir dans le graphique des détails de chronologie. Si vous identifiez des problèmes liés aux scripts comme un problème, vous pouvez exécuter le profileur d'échantillonnage de l'UC avec le profileur de réactivité de l'interface utilisateur. Vous pouvez également utiliser le profileur de fonction de Visual Studio pour obtenir un plus grand nombre de données détaillées. Pour plus d'informations, consultez [Mémoire JavaScript](../profiling/javascript-memory.md).  
   
- Pour les autres catégories d'événements, vous pouvez peut-être identifier les effets secondaires de plateforme qui résultent de l'ajout de fonctionnalités à votre application, mais dans ce cas vous ne pouvez peut-être pas résoudre les problèmes de performance particuliers à l'aide du profileur de réactivité de l'interface utilisateur.  
+  Pour les autres catégories d'événements, vous pouvez peut-être identifier les effets secondaires de plateforme qui résultent de l'ajout de fonctionnalités à votre application, mais dans ce cas vous ne pouvez peut-être pas résoudre les problèmes de performance particuliers à l'aide du profileur de réactivité de l'interface utilisateur.  
   
- Ce tableau affiche les événements et leurs descriptions :  
+  Ce tableau affiche les événements et leurs descriptions :  
   
 |événement|Catégorie d'événement|Se produit lorsque|  
 |-----------|--------------------|-----------------|  

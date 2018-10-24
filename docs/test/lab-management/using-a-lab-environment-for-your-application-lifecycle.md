@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 66ed9323b9298f588ad1f29267d88630fae0f39b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: dc7351c9449993b624569cc13ac5ced7d169b129
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321175"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837111"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Utiliser un environnement lab pour votre DevOps
 
@@ -36,9 +36,9 @@ Voici quelques-unes des topologies d’environnements lab les plus courantes :
 |![Environnement lab cloud](../media/topology_cloud.png)| Cet environnement lab fournit des fonctionnalités similaires, ainsi que des fonctionnalités comme la _topologie de type serveur_, mais élimine l’obligation pour les machines physiques ou virtuelles de s’exécuter dans un environnement local, ce qui peut réduire les temps d’installation, simplifier la maintenance et réduire les coûts. La configuration de plusieurs sites web et plusieurs machines virtuelles en même temps qu’une mise en réseau personnalisée est rapide et facile dans un environnement cloud comme Microsoft Azure.|
 |![Environnement lab du client serveur](../media/topology_clientserver.png)| Cet environnement lab a une *topologie de type client-serveur*, qui est souvent utilisée pour tester une application comprenant à la fois des composants serveur et client. Dans une topologie de type client/serveur, tous les ordinateurs clients et serveurs utilisés pour tester l'application se trouvent dans l'environnement lab. Cette topologie vous permet de collecter des données de test sur tous les ordinateurs concernés par vos tests.|
 
-|   |   |
+| | |
 |---|---|
-|  ![Icône représentant une caméra pour les vidéos](../../install/media/video-icon.png)  |    [Regardez une vidéo](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) sur la gestion des environnements lab en vue de tests. |
+| ![Icône représentant une caméra pour les vidéos](../../install/media/video-icon.png) | [Regardez une vidéo](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) sur la gestion des environnements lab en vue de tests. |
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Utiliser le cloud avec les fonctionnalités Build et mise en production d’Azure Pipelines ou de Team Foundation Server
 
@@ -95,7 +95,7 @@ Pour plus d’informations sur SCVMM, consultez [Virtual Machine Manager](/azure
 Les environnements standard et SCVMM prennent en charge une grande partie de ces fonctionnalités. Il existe cependant des différences importantes. Le tableau ci-dessous permet de comparer les fonctionnalités qui sont disponibles pour les environnements standard et les environnements SCVMM.
 
 |Fonctionnalité|Environnement SCVMM|Environnements standard|
-|----------------|------------------------|---------------------------|
+|-|------------------------|-|
 |**Test**|||
 |Exécuter des tests manuels|Prise en charge|Prise en charge|
 |Exécuter des tests codés de l'interface utilisateur et autres tests automatisés|Prise en charge|Prise en charge|
@@ -117,7 +117,7 @@ Les environnements standard et SCVMM prennent en charge une grande partie de ces
 Voici quelques termes supplémentaires avec lesquels vous devez vous familiariser avant d'aller plus loin :
 
 |Terme|Description|
-|----------|-----------------|
+|-|-----------------|
 |Centre lab|Section de Microsoft Test Manager dans laquelle vous pouvez créer et gérer des environnements lab.|
 |Lab de projets Azure DevOps|Collection d'environnements lab configurés de manière à pouvoir être connectés les uns aux autres et à pouvoir exécuter les machines virtuelles qu'ils contiennent.|
 |Bibliothèque de projets Azure DevOps|Archive des machines virtuelles stockées, des modèles et des environnements lab stockés qui ont été importés dans le groupe hôte de votre projet. Vous pouvez utiliser les éléments de la bibliothèque dans les environnements SCVMM. Toutefois, vous ne pouvez pas les ajouter directement à un environnement standard. Les éléments de la bibliothèque ne peuvent pas être exécutés. Vous pouvez toutefois les utiliser pour déployer un nouvel environnement.|

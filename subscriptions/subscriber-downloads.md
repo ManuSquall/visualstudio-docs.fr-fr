@@ -9,12 +9,12 @@ description: Découvrez comment localiser et télécharger les produits Microsof
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4ac1f74f9f60526c8b1f884cd63907329d2f91a2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ec2dd900e0cfae3b150bba52e31834efb53628e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637735"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831430"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Utilisation de téléchargements réservés aux abonnés dans des abonnements Visual Studio
 Dans le cadre de vos avantages réservés aux abonnés, vous avez accès à un large éventail de téléchargements de logiciels.
@@ -42,11 +42,11 @@ Seuls les téléchargements inclus dans votre abonnement s’affichent dans la p
 
 Quand vous visitez la page [Téléchargements](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs), les téléchargements les plus populaires s’affichent organisés en groupes par type de produit.  Vous pouvez sélectionner l’un des téléchargements les plus fréquents affichés, ou rechercher un produit à l’aide de la barre de recherche située en haut de la page.
 > [!div class="mx-imgBorder"]
-> ![Page des téléchargements réservés aux abonnés](_img\subscriber-downloads\subscriber-downloads-resized.png)
+> ![Page des téléchargements réservés aux abonnés](_img/subscriber-downloads/subscriber-downloads-resized.png)
 
 Par exemple, si vous choisissez **Visual Studio 2017** dans la liste des outils de développement, la liste des téléchargements Visual Studio 2017 disponibles s’affiche.
 > [!div class="mx-imgBorder"]
-> ![Téléchargements Visual Studio 2017](_img\subscriber-downloads\vs2017-new-UI.png)
+> ![Téléchargements Visual Studio 2017](_img/subscriber-downloads/vs2017-new-UI.png)
 
 Vous pouvez facilement sélectionner l’architecture, la langue et le type de fichier appropriés dans les menus déroulants. Choisissez les options souhaitées, puis cliquez sur **Télécharger** pour démarrer le téléchargement du produit.
 
@@ -54,13 +54,13 @@ Vous pouvez facilement sélectionner l’architecture, la langue et le type de f
 
 Cliquez sur le nom du produit ou sur le lien **Info** pour afficher les détails du téléchargement et consulter les notes de version du produit.
 > [!div class="mx-imgBorder"]
-> ![Détails du téléchargement de Visual Studio 2017 Pro](_img\subscriber-downloads\vs2017-pro-details.png)
+> ![Détails du téléchargement de Visual Studio 2017 Pro](_img/subscriber-downloads/vs2017-pro-details.png)
 
 Dans le volet d’informations, vous pouvez également cliquer sur l’onglet **Clés** pour vérifier l’état de vos clés de produit.
 > [!div class="mx-imgBorder"]
-> ![Clés de produit Visual Studio 2017 Pro](_img\subscriber-downloads\vs2017-pro-keys.png)
+> ![Clés de produit Visual Studio 2017 Pro](_img/subscriber-downloads/vs2017-pro-keys.png)
 
 ### <a name="obtaining-product-keys"></a>Obtention de clés de produit
 Pour obtenir une clé de produit en vue du téléchargement, cliquez sur la clé bleue intitulée **Obtenir une clé** ou, si vous êtes déjà dans le volet d’informations, cliquez sur **Demander une clé** sous l’onglet **Clés**.
 > [!div class="mx-imgBorder"]
-> ![Demande de clés de produit Visual Studio 2017 Pro](_img\subscriber-downloads\vs2017-pro-claim-keys.png)
+> ![Demande de clés de produit Visual Studio 2017 Pro](_img/subscriber-downloads/vs2017-pro-claim-keys.png)

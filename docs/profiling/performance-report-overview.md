@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af31d6bce4f1c44fbe759423ddaeec9537054688
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 455c05ae0d8645040d3f9eac68d20f57138df5cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255991"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830767"
 ---
 # <a name="performance-report-overview"></a>Vue d’ensemble du rapport Performances
 Vous pouvez afficher les données de profilage d’une session de performance dans la fenêtre **Rapport de performances** de l’environnement de développement intégré (IDE) de Visual Studio Team System Development Edition. Les données de profilage sont enregistrées dans des fichiers .vsp et .vsps. Grâce aux fenêtres de vue Rapport, vous pouvez afficher et analyser les problèmes de performances d’une application.  
@@ -42,13 +42,13 @@ Vous pouvez afficher les données de profilage d’une session de performance da
 ### <a name="callercallee-view"></a>Vue Appelant/Appelé  
  La vue Appelant/Appelé affiche une arborescence des appels pour une fonction spécifique. Cette vue est composée de trois parties :  
   
--   La fonction cible figure au milieu de la vue.  
+- La fonction cible figure au milieu de la vue.  
   
--   Les fonctions qui ont appelé la fonction (appelants) sont affichées au-dessus de la fonction cible.  
+- Les fonctions qui ont appelé la fonction (appelants) sont affichées au-dessus de la fonction cible.  
   
--   Les fonctions qui sont appelées par la fonction cible (appelés) sont affichées sous la cible.  
+- Les fonctions qui sont appelées par la fonction cible (appelés) sont affichées sous la cible.  
   
- Vous pouvez sélectionner une fonction différente en double-cliquant sur n’importe quelle fonction de la liste des appelés ou des appelants. Pour plus d’informations, consultez [Vue Appelant/Appelé](../profiling/caller-callee-view.md).  
+  Vous pouvez sélectionner une fonction différente en double-cliquant sur n’importe quelle fonction de la liste des appelés ou des appelants. Pour plus d’informations, consultez [Vue Appelant/Appelé](../profiling/caller-callee-view.md).  
   
 ### <a name="call-tree-view"></a>Vue Arborescence des appels  
  La vue Arborescence des appels affiche les chemins d’exécution de la fonction empruntés dans l’application profilée. La racine de l’arborescence correspond au point d’entrée de l’application ou du composant. Chaque nœud de fonction répertorie toutes les fonctions appelées et les données de performance liées à ces appels de fonction.  
