@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37dfbb9fda19363aefa1600fe9b0186862963cc1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 27a9da182a2e4db76db0b5221178dfa6dc371723
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177696"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942996"
 ---
 # <a name="immediate-window"></a>Exécution (fenêtre)
 La fenêtre **Exécution** est utilisée pour déboguer et évaluer des expressions, exécuter des instructions, imprimer les valeurs des variables, etc. Elle vous permet d’entrer des expressions qui doivent être évaluées ou exécutées par le langage de développement lors du processus de débogage. Pour afficher la fenêtre **Exécution**, ouvrez un projet à modifier, puis choisissez **Fenêtres** dans le menu **Déboguer** et sélectionnez **Exécution**, ou appuyez sur Ctrl+Alt+I.
@@ -54,27 +54,27 @@ La fenêtre **Exécution** est utilisée pour déboguer et évaluer des expressi
 
 #### <a name="to-execute-a-function-at-design-time"></a>Pour exécuter une fonction au moment du design
 
-1.  Copiez le code suivant dans une application console [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] :
+1. Copiez le code suivant dans une application console [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] :
 
-    ```vb
-    Module Module1
+   ```vb
+   Module Module1
 
-        Sub Main()
-            MyFunction(5)
-        End Sub
+       Sub Main()
+           MyFunction(5)
+       End Sub
 
-        Function MyFunction(ByVal input as Integer) As Integer
-            Return input * 2
-        End Function
+       Function MyFunction(ByVal input as Integer) As Integer
+           Return input * 2
+       End Function
 
-    End Module
-    ```
+   End Module
+   ```
 
-2.  Dans le menu **Déboguer**, cliquez sur **Fenêtres**, puis sur **Exécution**.
+2. Dans le menu **Déboguer**, cliquez sur **Fenêtres**, puis sur **Exécution**.
 
-3.  Tapez `?MyFunction(2)` dans la fenêtre **Exécution** et appuyez sur Entrée.
+3. Tapez `?MyFunction(2)` dans la fenêtre **Exécution** et appuyez sur Entrée.
 
-     La fenêtre **Exécution** exécute `MyFunction` et affiche `4`.
+    La fenêtre **Exécution** exécute `MyFunction` et affiche `4`.
 
 Si la fonction ou la sous-routine contient un point d’arrêt, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] arrête l’exécution à ce point. Vous pouvez ensuite utiliser les fenêtres du débogueur pour examiner l’état de votre programme. Pour plus d’informations, consultez [Procédure pas à pas : débogage au moment du design](../../debugger/walkthrough-debugging-at-design-time.md).
 
@@ -131,5 +131,5 @@ Vous ne pouvez pas utiliser l’évaluation des expressions au moment du design 
 - [Débogage dans Visual Studio](../../debugger/debugging-in-visual-studio.md)
 - [Principes de base du débogueur](../../debugger/getting-started-with-the-debugger.md)
 - [Procédure pas à pas : débogage au moment du design](../../debugger/walkthrough-debugging-at-design-time.md)
-- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [Utilisation d’expressions régulières dans Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

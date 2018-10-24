@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 417d901504eb20894b3bd3e83d286dac4e66b072
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 371be943dc062c5c3b5aac7f59493aa5f4f53002
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749370"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897146"
 ---
 # <a name="cvwriteflag-function"></a>CvWriteFlag, fonction
 Écrit un indicateur dans le fichier de trace du visualiseur concurrentiel.  
@@ -88,7 +88,7 @@ HRESULT CvWriteFlagExVA(
   
  **Unicode** : CvWriteFlagExW, CvWriteFlagExVW  
   
- **ANSI** : CvWriteFlagExA, CvWriteFlagExVA  
+ <strong>ANSI</strong> : CvWriteFlagExA, CvWriteFlagExVA  
   
 ## <a name="see-also"></a>Voir aussi  
  [Informations de référence sur la bibliothèque C++](../profiling/cpp-library-reference.md)

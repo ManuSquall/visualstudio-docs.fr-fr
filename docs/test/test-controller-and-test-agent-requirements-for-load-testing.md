@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 84cf5649eac1d3183eb0c50f4a7010f202363a78
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: f29e43c66844f915d9d79de3819166905b083df2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380803"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813984"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Configuration requise du contrôleur de test et de l’agent de test pour le test de charge
 
@@ -31,7 +31,7 @@ Visual Studio intègre plusieurs types de tests, notamment les tests de performa
 Le tableau suivant affiche la configuration matérielle requise recommandée pour le déploiement d’un contrôleur de test et d’agents de test.
 
 |**Configuration**|**Composant**|**Processeur**|**Disque dur**|**Mémoire**|
-|-----------------------|-------------------|-------------|------------|----------------|
+|-|-------------------|-|------------|-|
 |< 500 utilisateurs virtuels|Agent de test|2,6 GHz|10 Go|2 Go|
 |< 1 000 utilisateurs virtuels|Agent de test|Biprocesseur, 2,6 GHz|10 Go|2 Go|
 |N x 1 000 utilisateurs virtuels|Agent de test|Évolutivité à N agents avec, chacun, un biprocesseur 2,6 GHz|10 Go|2 Go|

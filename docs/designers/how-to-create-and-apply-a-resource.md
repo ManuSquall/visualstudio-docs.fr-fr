@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 98aece47b3936108b171ad7e2e1100e98d601312
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 405b208df0aedffe69c9e476a5a31745faeb84f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282787"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872562"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Guide pratique pour créer et appliquer une ressource
 Les styles et les modèles des éléments du concepteur XAML sont stockés dans des entités réutilisables appelées ressources. Les styles vous permettent de définir les propriétés des éléments et de réutiliser ces paramètres pour que l'apparence des différents éléments demeure cohérente. Un [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) définit l’apparence d’un contrôle et peut également être appliqué en tant que ressource. Pour plus d’informations, consultez [Démarrage rapide : contrôles de styles](http://go.microsoft.com/fwlink/?LinkID=248239) et [Démarrage rapide : modèles de contrôles](http://go.microsoft.com/fwlink/?LinkID=247982).
@@ -51,18 +51,18 @@ Les styles et les modèles des éléments du concepteur XAML sont stockés dans 
 
 ### <a name="to-apply-a-resource-to-an-element-or-property"></a>Pour appliquer une ressource à un élément ou à une propriété
 
-1.  Dans la fenêtre Structure du document, choisissez l’élément auquel vous souhaitez appliquer une ressource.
+1. Dans la fenêtre Structure du document, choisissez l’élément auquel vous souhaitez appliquer une ressource.
 
-2.  Effectuez l’une des opérations suivantes :
+2. Effectuez l’une des opérations suivantes :
 
-    -   Appliquer une ressource à une propriété. Dans la fenêtre Propriétés, cliquez sur le marqueur de propriété en regard de la valeur de propriété, choisissez **Ressource locale** ou **Ressource système**, puis sélectionnez une ressource disponible dans la liste qui apparaît.
+   - Appliquer une ressource à une propriété. Dans la fenêtre Propriétés, cliquez sur le marqueur de propriété en regard de la valeur de propriété, choisissez **Ressource locale** ou **Ressource système**, puis sélectionnez une ressource disponible dans la liste qui apparaît.
 
-         L’absence d’une ressource peut s’expliquer par le fait que son type ne correspond pas au type de la propriété.
+      L’absence d’une ressource peut s’expliquer par le fait que son type ne correspond pas au type de la propriété.
 
-    -   Appliquer une ressource de modèle de style ou de contrôle à un contrôle. Ouvrez le menu contextuel d’un contrôle dans la fenêtre Structure du document, choisissez **Modifier un modèle** ou **Modifier d’autres modèles**, **Appliquer la ressource**, puis le nom du modèle de contrôle dans la liste qui s’affiche.
+   - Appliquer une ressource de modèle de style ou de contrôle à un contrôle. Ouvrez le menu contextuel d’un contrôle dans la fenêtre Structure du document, choisissez **Modifier un modèle** ou **Modifier d’autres modèles**, **Appliquer la ressource**, puis le nom du modèle de contrôle dans la liste qui s’affiche.
 
-        > [!NOTE]
-        >  **Modifier le modèle** applique des modèles de contrôle. **Modifier d’autres modèles** applique d’autres types de modèle.
+     > [!NOTE]
+     >  **Modifier le modèle** applique des modèles de contrôle. **Modifier d’autres modèles** applique d’autres types de modèle.
 
      Vous pouvez appliquer des ressources partout où elles sont compatibles. Par exemple, vous pouvez appliquer une ressource de pinceau à la propriété **Foreground** d’un contrôle <xref:Windows.UI.Xaml.Controls.TextBox>.
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5a1be45dd85fdbc7df9870fe7d0db16b4020376c
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: b8eba85de98dd46a8ff6ad44154249598a489f5a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370677"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862097"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Guide pratique pour configurer votre agent de test afin d’exécuter des tests qui interagissent avec le Bureau
 
@@ -48,27 +48,27 @@ Utilisez la procédure suivante pour configurer les agents assignés à un rôle
 
    > [!NOTE]
    > - L’utilisateur que vous ajoutez pour démarrer le processus doit également être ajouté en tant que membre du groupe TeamTestAgentService sur l’ordinateur du contrôleur de test pour cet agent. Si cet utilisateur est l'utilisateur actuel, vous devez fermer votre session ou redémarrer l'ordinateur lorsque vous l’ajoutez à l'ordinateur de contrôleur de test.
-   - Les mots de passe null ne sont pas pris en charge pour les comptes d'utilisateurs.
-   - Si vous souhaitez utiliser IntelliTrace ou les données d'émulation de réseau et l'adaptateur de diagnostic, le compte d'utilisateur doit être membre du groupe Administrateurs. Si l’ordinateur qui exécute l’agent de test utilise un système d’exploitation avec un compte d’utilisateur de moindre privilège, vous devez également l’exécuter en tant qu’administrateur (avec privilège élevé). Si le nom d'utilisateur de l'agent n'est pas dans le service d'agent, celui-ci essaiera de l'ajouter, ce qui nécessite des autorisations sur le contrôleur de test.
-   - L'utilisateur qui tente d'utiliser le contrôleur de test doit figurer dans le compte Utilisateurs du contrôleur de test. Si ce n'est pas le cas, il ne pourra pas exécuter les tests sur le contrôleur.
+   > - Les mots de passe null ne sont pas pris en charge pour les comptes d'utilisateurs.
+   > - Si vous souhaitez utiliser IntelliTrace ou les données d'émulation de réseau et l'adaptateur de diagnostic, le compte d'utilisateur doit être membre du groupe Administrateurs. Si l’ordinateur qui exécute l’agent de test utilise un système d’exploitation avec un compte d’utilisateur de moindre privilège, vous devez également l’exécuter en tant qu’administrateur (avec privilège élevé). Si le nom d'utilisateur de l'agent n'est pas dans le service d'agent, celui-ci essaiera de l'ajouter, ce qui nécessite des autorisations sur le contrôleur de test.
+   > - L'utilisateur qui tente d'utiliser le contrôleur de test doit figurer dans le compte Utilisateurs du contrôleur de test. Si ce n'est pas le cas, il ne pourra pas exécuter les tests sur le contrôleur.
 
 4. Pour que l’ordinateur sur lequel est installé un agent de test puisse exécuter des tests après avoir redémarré, vous pouvez configurer l’ordinateur de façon à ce qu’il se connecte automatiquement comme utilisateur de l’agent de test. Sélectionnez **Se connecter automatiquement**. Ainsi, le nom d'utilisateur et le mot de passe seront stockés dans un formulaire chiffré dans le Registre.
 
    > [!NOTE]
    > Lorsque vous êtes connecté à l'environnement lab à l'aide d'une connexion Bureau à distance ou d'une connexion basée sur invité, des déconnexions fréquentes et inattendues peuvent se produire. Cela peut être dû au fait que l'ordinateur est configuré pour se connecter automatiquement au réseau.
 
-7. Pour vérifier que l’écran de veille est désactivé étant donné que cela peut interférer avec tout test automatisé qui doit interagir avec le poste de travail, sélectionnez **S’assurer que l’écran de veille est désactivé**.
+5. Pour vérifier que l’écran de veille est désactivé étant donné que cela peut interférer avec tout test automatisé qui doit interagir avec le poste de travail, sélectionnez **S’assurer que l’écran de veille est désactivé**.
 
    > [!WARNING]
    > Se connecter automatiquement ou désactiver l'écran de veille présente des risques. En activant la connexion automatique, vous permettez à d'autres utilisateurs de démarrer cet ordinateur et d'utiliser le compte sur lequel il se connecte automatiquement. Si vous désactivez l'écran de veille, l'ordinateur peut ne pas inviter l'utilisateur à ouvrir une session pour déverrouiller l'ordinateur. Cela permet à n'importe quelle personne d'accéder à l'ordinateur dès lors qu'elle peut y accéder physiquement. Si vous activez ces fonctionnalités sur un ordinateur, vous devez vous assurer que ces ordinateurs sont physiquement sécurisés. S'ils se trouvent, par exemple, dans un lab physiquement sécurisé. Si vous désactivez **S’assurer que l’écran de veille est désactivé**, ceci n’active pas votre écran de veille.
 
    Pour exécuter de nouveau l’agent en tant que service, vous pouvez utiliser cet outil et sélectionner **Service**.
 
-8. Pour appliquer vos modifications, choisissez **Appliquer les paramètres**.
+6. Pour appliquer vos modifications, choisissez **Appliquer les paramètres**.
 
    Une boîte de dialogue **Récapitulatif de la configuration** s’affiche et indique l’état de chacune des étapes pour configurer votre agent de test.
 
-9. Pour fermer la boîte de dialogue **Récapitulatif de la configuration**, choisissez **Fermer**. Ensuite, choisissez à nouveau **Fermer** pour fermer **l’outil de configuration de Test Agent**.
+7. Pour fermer la boîte de dialogue **Récapitulatif de la configuration**, choisissez **Fermer**. Ensuite, choisissez à nouveau **Fermer** pour fermer **l’outil de configuration de Test Agent**.
 
    > [!NOTE]
    > Une icône de zone de notification s’exécute sur l’ordinateur pour un agent de test qui s’exécute en tant que processus. Elle affiche l'état de l'agent de test. Vous pouvez démarrer, arrêter ou redémarrer l'agent s'il s'exécute en tant que processus à l'aide de cet outil. Pour démarrer l’agent de test comme processus s’il n’est pas en cours d’exécution, choisissez **Démarrer** > **Tous les programmes** > **Microsoft Visual Studio Test Agent**.

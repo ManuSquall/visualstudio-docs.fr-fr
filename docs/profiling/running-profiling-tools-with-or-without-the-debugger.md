@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5197ba9e1a2fda9cb6a41cfe903bd772db53331
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 92744b9fdbfa0e383ba061cfe51c80c9b8cd9976
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626523"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929424"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Exécuter des outils de profilage avec ou sans le débogueur
 Visual Studio offre désormais une sélection d’outils d’analyse des performances. Certains d’entre eux, comme **Utilisation de l’UC** et **Utilisation de la mémoire**, peuvent être exécutés avec ou sans le débogueur. Les outils d’analyse des performances non intégrés au débogueur sont destinés à s’exécuter sur les configurations Release, tandis que ceux intégrés au débogueur sont destinés à s’exécuter sur les configurations Debug.  
@@ -42,60 +42,60 @@ Vous pouvez utiliser les Outils de profilage sans débogueur avec Windows 7 et 
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Collecter les données de profilage pendant le débogage  
  La section suivante porte sur le débogage local. Vous pouvez trouver des informations à propos du débogage sur un appareil, ou débogage à distance, dans les sections suivantes.  
   
-1.  Ouvrez le projet que vous voulez déboguer, puis cliquez sur **Déboguer** > **Démarrer le débogage** (ou **Démarrer** dans la barre d’outils ou **F5**).  
+1. Ouvrez le projet que vous voulez déboguer, puis cliquez sur **Déboguer** > **Démarrer le débogage** (ou **Démarrer** dans la barre d’outils ou **F5**).  
   
-2.  La fenêtre **Outils de diagnostic** apparaît automatiquement, sauf si vous l’avez désactivée. Pour réafficher la fenêtre, cliquez sur **Déboguer** > **Fenêtres** > **Afficher les outils de diagnostic**.  
+2. La fenêtre **Outils de diagnostic** apparaît automatiquement, sauf si vous l’avez désactivée. Pour réafficher la fenêtre, cliquez sur **Déboguer** > **Fenêtres** > **Afficher les outils de diagnostic**.  
   
-3.  Exécutez les scénarios pour lesquels vous voulez collecter des données.  
+3. Exécutez les scénarios pour lesquels vous voulez collecter des données.  
   
-     Pendant l’exécution de la session, vous pouvez voir plus d’informations sur les événements, sur la mémoire du processus et sur l’utilisation de l’UC.  
+    Pendant l’exécution de la session, vous pouvez voir plus d’informations sur les événements, sur la mémoire du processus et sur l’utilisation de l’UC.  
   
-     L’illustration suivante montre la fenêtre **Outils de diagnostic** de Visual Studio 2015 Update 1 :  
+    L’illustration suivante montre la fenêtre **Outils de diagnostic** de Visual Studio 2015 Update 1 :  
   
-     ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
+    ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
-4.  Vous pouvez choisir d’afficher **Utilisation de la mémoire** ou **Utilisation de l’UC** (ou les deux) avec le paramètre **Sélectionner les outils** sur la barre d’outils. Si vous exécutez Visual Studio Enterprise, vous pouvez activer ou désactiver IntelliTrace dans **Outils** > **Options** > **IntelliTrace**.  
+4. Vous pouvez choisir d’afficher **Utilisation de la mémoire** ou **Utilisation de l’UC** (ou les deux) avec le paramètre **Sélectionner les outils** sur la barre d’outils. Si vous exécutez Visual Studio Enterprise, vous pouvez activer ou désactiver IntelliTrace dans **Outils** > **Options** > **IntelliTrace**.  
   
-5.  La session de diagnostic se termine quand vous arrêtez le débogage.  
+5. La session de diagnostic se termine quand vous arrêtez le débogage.  
   
- Dans Visual Studio 2015 Update 1, la fenêtre **Outils de diagnostic** vous permet de vous concentrer sur les événements qui vous intéressent.   Les noms des événements sont désormais affichés avec les préfixes des catégories (**Mouvement**, **Sortie du programme**, **Point d’arrêt**, **Fichier**, etc.), ce qui vous permet de rechercher rapidement dans la liste une catégorie donnée ou d’ignorer les catégories qui ne vous intéressent pas.  
+   Dans Visual Studio 2015 Update 1, la fenêtre **Outils de diagnostic** vous permet de vous concentrer sur les événements qui vous intéressent.   Les noms des événements sont désormais affichés avec les préfixes des catégories (**Mouvement**, **Sortie du programme**, **Point d’arrêt**, **Fichier**, etc.), ce qui vous permet de rechercher rapidement dans la liste une catégorie donnée ou d’ignorer les catégories qui ne vous intéressent pas.  
   
- La fenêtre a maintenant une zone de recherche permettant de rechercher une chaîne spécifique dans la liste des événements. Par exemple, l’illustration suivante montre les résultats de recherche de la chaîne « installer » pour laquelle quatre événements ont été trouvés :  
+   La fenêtre a maintenant une zone de recherche permettant de rechercher une chaîne spécifique dans la liste des événements. Par exemple, l’illustration suivante montre les résultats de recherche de la chaîne « installer » pour laquelle quatre événements ont été trouvés :  
   
- ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
+   ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
   
- Vous pouvez également filtrer les événements de manière à les afficher ou à les masquer. Dans la liste déroulante **Filtrer** , vous pouvez activer ou désactiver des catégories spécifiques d’événements. Les noms des catégories sont les mêmes que les noms des préfixes.  
+   Vous pouvez également filtrer les événements de manière à les afficher ou à les masquer. Dans la liste déroulante **Filtrer** , vous pouvez activer ou désactiver des catégories spécifiques d’événements. Les noms des catégories sont les mêmes que les noms des préfixes.  
   
- ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
+   ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
   
- Pour plus d’informations, consultez [Searching and filtering the Events tab of the Diagnostic Tools window](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
+   Pour plus d’informations, consultez [Searching and filtering the Events tab of the Diagnostic Tools window](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
   
 ## <a name="collect-profiling-data-without-debugging"></a>Collecter les données de profilage sans débogage  
  Certains outils de profilage nécessitent des privilèges d’administrateur pour s’exécuter. Vous pouvez démarrer Visual Studio en tant qu’administrateur, ou vous pouvez choisir d’exécuter les outils en tant qu’administrateur lorsque vous démarrez la session de diagnostic.  
   
-1.  Ouvrez le projet dans Visual Studio.  
+1. Ouvrez le projet dans Visual Studio.  
   
-2.  Dans le menu **Déboguer**, choisissez **Profileur de performances...** (touche de raccourci : **Alt**+**F2**).  
+2. Dans le menu **Déboguer**, choisissez **Profileur de performances...** (touche de raccourci : **Alt**+**F2**).  
   
-3.  Dans la page de lancement des outils de diagnostic, choisissez un ou plusieurs outils à exécuter dans la session. Seuls les outils applicables au type de projet, au système d'exploitation et au langage de programmation sont affichés. Lorsque vous choisissez un outil de diagnostic, les sélections d'outils qui ne peuvent pas être exécutées dans la même session de diagnostic sont désactivées. Vous pourriez effectuer les choix suivants pour une application C# UWP :  
+3. Dans la page de lancement des outils de diagnostic, choisissez un ou plusieurs outils à exécuter dans la session. Seuls les outils applicables au type de projet, au système d'exploitation et au langage de programmation sont affichés. Lorsque vous choisissez un outil de diagnostic, les sélections d'outils qui ne peuvent pas être exécutées dans la même session de diagnostic sont désactivées. Vous pourriez effectuer les choix suivants pour une application C# UWP :  
   
-     ![Sélectionner les outils de diagnostic](../profiling/media/diag_selecttool.png "DIAG_SelectTool")  
+    ![Sélectionner les outils de diagnostic](../profiling/media/diag_selecttool.png "DIAG_SelectTool")  
   
-4.  Pour démarrer la session de diagnostic, cliquez sur **Démarrer**.  
+4. Pour démarrer la session de diagnostic, cliquez sur **Démarrer**.  
   
-5.  Exécutez les scénarios pour lesquels vous souhaitez collecter des données.  
+5. Exécutez les scénarios pour lesquels vous souhaitez collecter des données.  
   
-     Pendant l'exécution de la session, certains outils affichent des graphiques de données en temps réel dans la page de lancement des outils de diagnostic.  
+    Pendant l'exécution de la session, certains outils affichent des graphiques de données en temps réel dans la page de lancement des outils de diagnostic.  
   
-     ![Collecter des données dans la page Performances et diagnostics](../profiling/media/pdhub_collectdata.png "PDHUB_CollectData")  
+    ![Collecter des données dans la page Performances et diagnostics](../profiling/media/pdhub_collectdata.png "PDHUB_CollectData")  
   
-6.  Pour terminer la session de diagnostic, cliquez sur **Arrêter la collecte**.  
+6. Pour terminer la session de diagnostic, cliquez sur **Arrêter la collecte**.  
   
- Lorsque vous arrêtez la collecte de données dans une session de diagnostic, les données sont analysées et le rapport s'affiche dans la page Diagnostic.  
+   Lorsque vous arrêtez la collecte de données dans une session de diagnostic, les données sont analysées et le rapport s'affiche dans la page Diagnostic.  
   
- Vous pouvez également ouvrir les fichiers de session .diagnostic de la liste récemment ouverte dans la page de lancement des outils de diagnostic.  
+   Vous pouvez également ouvrir les fichiers de session .diagnostic de la liste récemment ouverte dans la page de lancement des outils de diagnostic.  
   
- ![Ouvrir un fichier de session de diagnostic enregistré](../profiling/media/pdhub_openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
+   ![Ouvrir un fichier de session de diagnostic enregistré](../profiling/media/pdhub_openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
   
 ## <a name="the-profiling-report"></a>Le rapport de profilage  
  ![Rapport des outils de diagnostic](../profiling/media/diag_report.png "DIAG_Report")  

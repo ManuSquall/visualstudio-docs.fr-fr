@@ -12,26 +12,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8850671c3c6e7fa93d4734c47c8052451ad74b4f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 32a2923342fd62428095babdaecc5bd9c5cac06e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154448"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850059"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>Démarrer une build à partir de l’environnement IDE
 Les systèmes de projet personnalisés doivent utiliser <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> pour démarrer des builds. Cet article explique les raisons de cette exigence et décrit la procédure.  
-  
+
 ## <a name="parallel-builds-and-threads"></a>Builds et threads parallèles  
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] autorise les builds parallèles, ce qui nécessite une médiation pour l’accès aux ressources communes. Les systèmes de projet peuvent exécuter des builds en mode asynchrone, mais ils ne doivent pas appeler de fonctions de génération à partir des rappels qui sont fournis au gestionnaire de build.  
-  
+
  Si le système de projet modifie des variables d’environnement, il doit définir le NodeAffinity de la build sur OutOfProc. En raison de cette exigence, il n’est pas possible d’utiliser des objets hôtes, puisqu’ils exigent le nœud in-process.  
-  
+
 ## <a name="use-ivsbuildmanageraccessor"></a>Utiliser IVSBuildManagerAccessor  
  Le code ci-dessous présente une méthode qui peut être utilisée par un système de projet pour démarrer une build :  
-  
+
 ```csharp
-  
+
 public bool Build(Project project, bool isDesignTimeBuild)  
 {  
     // Get the accessor from the IServiceProvider interface for the   
@@ -118,5 +118,4 @@ public bool Build(Project project, bool isDesignTimeBuild)
          }  
      }  
 }  
-  
 ```
