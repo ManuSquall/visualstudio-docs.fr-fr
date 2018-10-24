@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a5896eccbee65450ab6206dd26a8f76d3fc48d5c
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 1347e6170b5cf58a4e88365d7c1653389cfb6607
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135601"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950652"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>Utiliser Azure Test Plans au lieu de Lab Management pour les tests automatisés
 
@@ -27,7 +27,7 @@ Si vous utilisez Microsoft Test Manager (MTM) et Lab Management pour les tests a
 MTM et Lab Management se basent sur une définition de build XAML pour automatiser la génération, le déploiement et le test de vos applications. Pour atteindre cet objectif, la build XAML s’appuie sur différentes constructions créées dans MTM, comme un environnement lab, des suites de test et des paramètres de test, ainsi que sur différents composants de l’infrastructure, comme un contrôleur de build, des agents de build, un contrôleur de test et des agents de test. Vous pouvez réaliser la même chose avec moins d’étapes en utilisant Build ou Release Management dans TFS et Azure Pipelines.
 
 | Étapes | Avec une build XAML | Avec Build ou Release Management |
-|-------|----------------------|-----------------|
+|-------|-|-----------------|
 | Identifiez les machines sur lesquelles déployer la build et exécutez les tests. | Créez un environnement lab standard dans MTM avec ces machines. | N/A |
 | Identifiez les tests à exécuter. | Créez une suite de tests dans MTM, créez des cas de test et associez une automatisation à chaque cas de test. Créez des paramètres de test dans MTM en identifiant le rôle des machines dans l’environnement lab dans lequel les tests doivent être exécutés. | Créez de la même façon une suite de tests automatisés dans MTM si vous prévoyez de gérer vos tests via des plans de test. Vous pouvez aussi ignorer cette étape si vous voulez exécuter des tests directement à partir des fichiers binaires de test produits par vos générations. Il n’est pas nécessaire de créer des paramètres de test dans les deux cas. |
 | Automatisez le déploiement et les tests. | Créez une définition de build XAML en utilisant LabDefaultTemplate.*.xaml. Spécifiez la build, les suites de tests et l’environnement lab dans la définition de build. | Créez un [pipeline de build ou de mise en production](/azure/devops/pipelines/index?view=vsts) avec un seul environnement. Exécutez le même script de déploiement (à partir de la définition de build XAML) en utilisant la tâche de ligne de commande, et exécutez les tests automatisés en utilisant les tâches Déploiement de l’agent de test et Exécuter les tests fonctionnels. Spécifiez la liste des machines et leurs informations d’identification comme entrées pour ces tâches. |
@@ -58,7 +58,7 @@ Cependant, en raison de l’évolution des systèmes de gestion des clouds publi
 Le tableau suivant récapitule les activités standard que vous effectuez dans le Centre lab, et comment vous pouvez les réaliser via SCVMM ou Azure (s’il s’agit d’activités de gestion d’infrastructure), ou via TFS et Azure DevOps Services (s’il s’agit d’activités de test ou de déploiement) :
 
 | Étapes | Avec le Centre lab | Avec Build ou Release Management |
-|-------|----------------------|-----------------|
+|-------|-|-----------------|
 | Gérez une bibliothèque de modèles d’environnement. | Créez un environnement lab. Installez les logiciels nécessaires sur les machines virtuelles. Préparez le système et stockez l’environnement sous forme de modèle dans une bibliothèque. | Utilisez la console d’administration SCVMM directement pour créer et gérer des modèles de machine virtuelle ou des modèles de service. Lorsque vous utilisez Azure, sélectionnez l’un des [modèles de démarrage rapide Azure](https://azure.microsoft.com/resources/templates/). |
 | Créez un environnement lab. | Sélectionnez un modèle d’environnement dans la bibliothèque et déployez-le. Spécifiez les paramètres nécessaires pour personnaliser les configurations de machine virtuelle. | Utilisez la console d’administration SCVMM directement pour créer des machines virtuelles ou des instances de service à partir des modèles. Utilisez le portail Azure directement pour créer des ressources. Vous pouvez aussi créer une définition de version avec un environnement. Utilisez les tâches Azure ou des tâches de l’[extension d’intégration de SCVMM](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) pour créer des machines virtuelles. La création d’une nouvelle version de cette définition équivaut à créer un nouvel environnement dans le Centre lab. |
 | Connectez-vous aux machines. | Ouvrez l’environnement lab dans la visionneuse d’environnement. | Utilisez la console d’administration SCVMM directement pour vous connecter aux machines virtuelles. Vous pouvez aussi utiliser l’adresse IP ou les noms DNS des machines virtuelles pour ouvrir des sessions Bureau à distance. |
