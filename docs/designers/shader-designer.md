@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e57a42846833024fefb4bf73660484123474d00a
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 6f2f53e801df70345e34c14c15d4456e39561623
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029051"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847628"
 ---
 # <a name="shader-designer"></a>Concepteur Shader
 
@@ -31,7 +31,7 @@ Le **Concepteur de nuanceur** permet de créer des effets visuels personnalisés
 Le **Concepteur de nuanceur** prend en charge les formats de nuanceur suivants :
 
 |Nom de format|Extension de fichier|Opérations prises en charge (afficher, modifier, exporter)|
-|-----------------|--------------------|-------------------------------------------------|
+|-----------------| - | - |
 |DGSL (Directed Graph Shader Language)|*.dgsl*|Afficher, modifier|
 |Nuanceur HLSL (code source)|*.hlsl*|Exporter|
 |Nuanceur HLSL (bytecode)|*.cso*|Exporter|
@@ -177,7 +177,7 @@ Pour plus d’informations sur la façon d’exporter des nuanceurs, consultez [
 ## <a name="keyboard-shortcuts"></a>Raccourcis clavier
 
 |Commande|Raccourcis clavier|
-|-------------|------------------------|
+|-------------| - |
 |Passer en mode **Sélection**|**Ctrl**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
 |Passer en mode **Zoom**|**Ctrl**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
 |Passer en mode **Panoramique**|**Ctrl**+**G**, **Ctrl**+**P**<br /><br /> **K**|
@@ -204,5 +204,5 @@ Pour plus d’informations sur la façon d’exporter des nuanceurs, consultez [
 |Titre|Description|
 |-----------|-----------------|
 |[Utilisation de composants 3D pour les jeux et les applications](../designers/working-with-3-d-assets-for-games-and-apps.md)|Présente les outils Visual Studio permettant de travailler avec les textures et les images, les modèles 3D et les effets de nuanceur.|
-|[Éditeur d’images](../designers/image-editor.md)|Décrit comment utiliser l’éditeur d’images Visual Studio pour travailler avec des textures et des images.|
+|[Image Editor](../designers/image-editor.md)|Décrit comment utiliser l’éditeur d’images Visual Studio pour travailler avec des textures et des images.|
 |[Éditeur de modèle](../designers/model-editor.md)|Décrit comment utiliser l’éditeur de modèle Visual Studio pour travailler avec des modèles 3D.|

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4cff83eb490f8012e8679dbd0b2c6a65d27f8e14
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 00e3f1d994c854bab319b6fec823fce213f4f2ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945088"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822785"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>Générer un champ, une propriété ou une variable locale dans Visual Studio
 
@@ -36,24 +36,24 @@ Cette génération de code s’applique à :
 
    - C# :
 
-    ![Code C# mis en surbrillance](media/field-highlight-cs.png)
+       ![Code C# mis en surbrillance](media/field-highlight-cs.png)
 
    - Visual Basic :
 
-    ![Code VB mis en surbrillance](media/field-highlight-vb.png)
+       ![Code VB mis en surbrillance](media/field-highlight-vb.png)
 
-1. Effectuez ensuite l'une des opérations suivantes :
+2. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-     - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+      - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
-     - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-     - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![Ampoule](media/bulb-cs.png) qui apparaît.
-     - Cliquez sur le bouton ![Ampoule](media/bulb-cs.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
+      - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
+      - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![Ampoule](media/bulb-cs.png) qui apparaît.
+      - Cliquez sur le bouton ![Ampoule](media/bulb-cs.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
 
-    ![Aperçu de l’action Générer le champ/la propriété/la valeur locale](media/field-preview-cs.png)
+      ![Aperçu de l’action Générer le champ/la propriété/la valeur locale](media/field-preview-cs.png)
 
-1. Sélectionnez l’une des options de génération dans le menu déroulant.
+3. Sélectionnez l’une des options de génération dans le menu déroulant.
 
    > [!TIP]
    > Utilisez le lien **Aperçu des modifications** en bas de la fenêtre d’aperçu [pour voir tous les changements](../../ide/preview-changes.md) qui seront apportés avant d’effectuer votre sélection.
@@ -62,11 +62,11 @@ Cette génération de code s’applique à :
 
    - C# :
 
-      ![Résultat de l’action Générer une méthode (C#)](media/field-result-cs.png)
+       ![Résultat de l’action Générer une méthode (C#)](media/field-result-cs.png)
 
    - Visual Basic :
 
-      ![Résultat de l’action Générer une méthode (VB)](media/field-result-vb.png)
+       ![Résultat de l’action Générer une méthode (VB)](media/field-result-vb.png)
 
 ## <a name="see-also"></a>Voir aussi
 

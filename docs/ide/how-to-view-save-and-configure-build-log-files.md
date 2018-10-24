@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1888e2244182296ad2c5375d0055583dda69e592
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2b745a9e74fd4016db60883b06091a33c6d30d52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944971"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860667"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération
 
@@ -44,7 +44,7 @@ Si vous générez un projet à l’aide de MSBuild, vous pouvez créer un fichie
 3.  Dans la liste **Commentaires relatifs à la sortie de génération du projet MSBuild**, choisissez l’une des valeurs suivantes, puis choisissez le bouton **OK**.
 
     |Niveau de détail|Description|
-    |---------------------|-----------------|
+    | - |-----------------|
     |**Silencieux**|Affiche uniquement un récapitulatif de la génération.|
     |**Minimale**|Affiche un récapitulatif de la génération, ainsi que les erreurs, avertissements et messages qui sont classés comme très importants.|
     |**Normal**|Affiche un récapitulatif de la génération ; les erreurs, avertissements et messages qui sont classés comme très importants ; et les principales étapes de la génération. Ce niveau de détail est celui que vous utiliserez le plus souvent.|

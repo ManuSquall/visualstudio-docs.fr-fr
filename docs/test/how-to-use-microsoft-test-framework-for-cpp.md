@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 6087b864ba497d3754adfa01dc0168da5317aa5e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 53243502e0368d3cb988950edf266cc56adbaa22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379551"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812450"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Utiliser le framework de tests unitaires Microsoft pour C++ dans Visual Studio
 
@@ -28,20 +28,22 @@ En règle générale, vous exécutez votre code de test dans son propre projet, 
 
 Dans certains cas, par exemple lors du test de fonctions non exportées dans une DLL, il peut être nécessaire de créer les tests dans le même projet que le programme que vous testez. Pour écrire des tests unitaires dans le même projet :
 
-1.  Modifiez les propriétés du projet de façon à inclure les fichiers d’en-tête et les fichiers bibliothèques nécessaires aux tests unitaires.
+1. Modifiez les propriétés du projet de façon à inclure les fichiers d’en-tête et les fichiers bibliothèques nécessaires aux tests unitaires.
 
-    1.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet du programme que vous testez, puis choisissez **Propriétés** > **Propriétés de configuration** > **Répertoires VC++**.
+   1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le nœud du projet du programme que vous testez, puis choisissez **Propriétés** > **Propriétés de configuration** > **Répertoires VC++**.
 
-    3.  Cliquez sur la flèche vers le bas dans les lignes suivantes et choisissez **<Edit>** :
+   2. Cliquez sur la flèche vers le bas dans les lignes suivantes et choisissez **<Edit>** :
 
-        |Répertoire|Property|
-        |-|-|
-        |**Répertoires Include**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
-        |**Répertoires de bibliothèques**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
 
-2.  Ajoutez un fichier de test unitaire C++ :
+      | Répertoire | Property |
+      |-| - |
+      | **Répertoires Include** | **$(VCInstallDir)UnitTest\include;$(IncludePath)** |
+      | **Répertoires de bibliothèques** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)** |
 
-    -   Cliquez avec le bouton droit sur le nœud du projet dans **l’Explorateur de solutions**, puis choisissez **Ajouter** > **Nouvel élément** > **Test unitaire C++**.
+
+2. Ajoutez un fichier de test unitaire C++ :
+
+   -   Cliquez avec le bouton droit sur le nœud du projet dans **l’Explorateur de solutions**, puis choisissez **Ajouter** > **Nouvel élément** > **Test unitaire C++**.
 
 ## <a name="write-the-tests"></a>Écrire les tests
 
@@ -53,13 +55,13 @@ Utilisez les méthodes statiques de la classe [Assert](microsoft-visualstudio-te
 
 ## <a name="run-the-tests"></a>Exécuter les tests
 
-1.  Dans le menu **Test**, choisissez **Fenêtres** > **Explorateur de tests**.
+1. Dans le menu **Test**, choisissez **Fenêtres** > **Explorateur de tests**.
 2. Si vos tests n’apparaissent pas tous dans la fenêtre, générez le projet de test en cliquant avec le bouton droit sur son nœud dans **l’Explorateur de solutions** et en choisissant **Générer** ou **Régénérer**.
 
-2.  Dans **l’Explorateur de tests**, choisissez **Exécuter tout** ou sélectionnez les tests spécifiques à exécuter. Cliquez avec le bouton droit sur un test pour accéder à d’autres options, notamment son exécution en mode débogage avec des points d’arrêt activés.
-3. Dans la **fenêtre Sortie**, choisissez **Tests** dans la liste déroulante pour afficher les messages écrits par la classe `Logger` :
+3. Dans **l’Explorateur de tests**, choisissez **Exécuter tout** ou sélectionnez les tests spécifiques à exécuter. Cliquez avec le bouton droit sur un test pour accéder à d’autres options, notamment son exécution en mode débogage avec des points d’arrêt activés.
+4. Dans la **fenêtre Sortie**, choisissez **Tests** dans la liste déroulante pour afficher les messages écrits par la classe `Logger` :
 
-  ![Fenêtre Sortie C++ affichant des messages de test](media/cpp-test-output-window.png)
+   ![Fenêtre Sortie C++ affichant des messages de test](media/cpp-test-output-window.png)
 
 ## <a name="define-traits-to-enable-grouping"></a>Définir des caractéristiques pour permettre le regroupement
 
@@ -90,7 +92,7 @@ TEST_METHOD(Method1)
 Les caractéristiques prédéfinies suivantes se trouvent dans `CppUnitTest.h`. Pour plus d’informations, consultez [Informations de référence sur l’API du framework de tests unitaires Microsoft pour C++](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
 
 |Macro|Description|
-|-----------|-----------------|
+|-|-----------------|
 |`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|Utilisez la macro TEST_METHOD_ATTRIBUTE pour définir une caractéristique.|
 |`TEST_OWNER(ownerAlias)`|Utilisez la caractéristique Owner prédéfinie pour spécifier un propriétaire de la méthode de test.|
 |`TEST_PRIORITY(priority)`|Utilisez la caractéristique Priority prédéfinie pour assigner des priorités relatives à vos méthodes de test.|

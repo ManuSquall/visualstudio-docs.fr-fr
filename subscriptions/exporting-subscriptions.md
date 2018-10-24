@@ -9,12 +9,12 @@ description: Découvrez comment exporter une liste d’abonnés et des informati
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9b2e03235391826c7a8cc486089a5a3e6384b09a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 8881c2d1779d3aea8289397e459c70868698e0f3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39635880"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867245"
 ---
 # <a name="exporting-subscription-information"></a>Exportation des informations sur les abonnements
 
@@ -24,4 +24,4 @@ Cette fonctionnalité est utile pour certains scénarios, tels que le suivi des 
 
 Pour effectuer l’exportation, il suffit de sélectionner l’onglet **Exportation** : le fichier est alors téléchargé sur votre machine locale. Le fichier inclut le nom du compte de ce contrat qui contient les abonnements de vos utilisateurs, ainsi que la date de l’exportation.  
 > [!div class="mx-imgBorder"]
-> ![Exporter des abonnés](_img\exporting-subscriptions\exporting-subscriptions.png)
+> ![Exporter des abonnés](_img/exporting-subscriptions/exporting-subscriptions.png)

@@ -30,12 +30,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8289b44359508d788b43fa155c6f91b58d304138
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d0a6947127fd564eace97c919a425d4a3a3360c4
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916998"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863567"
 ---
 # <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>Classes spécifiques à la culture pour les Windows Forms et les Web Forms globaux
 
@@ -46,7 +46,7 @@ Chaque culture a ses propres conventions d’affichage des dates, des heures, de
 
 ## <a name="using-the-culture-setting"></a>Utilisation du paramètre de culture
 
-Utilisez le paramètre de culture stocké dans l’application ou dans **Options régionales** du Panneau de configuration pour déterminer les conventions de culture au moment de l’exécution, et mettre en forme les informations de manière appropriée. Pour plus d’informations sur la définition de la culture, consultez [Guide pratique pour définir la culture et la culture de l’interface utilisateur pour la globalisation des pages web ASP.NET](http://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0). Les classes qui mettent en forme automatiquement les informations en fonction du paramètre de culture sont appelées des classes *spécifiques à une culture*. Les méthodes spécifiques à une culture sont
+Utilisez le paramètre de culture stocké dans l’application ou dans **Options régionales** du Panneau de configuration pour déterminer les conventions de culture au moment de l’exécution, et mettre en forme les informations de manière appropriée. Pour plus d’informations sur la définition de la culture, consultez [Guide pratique pour définir la culture et la culture de l’interface utilisateur pour la globalisation des pages web ASP.NET](https://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0). Les classes qui mettent en forme automatiquement les informations en fonction du paramètre de culture sont appelées des classes *spécifiques à une culture*. Les méthodes spécifiques à une culture sont
 - <xref:System.IFormattable.ToString%2A?displayProperty=fullName>
 - <xref:System.Console.WriteLine%2A?displayProperty=fullName>
 - <xref:System.String.Format%2A?displayProperty=fullName>

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c589e58fb1e5b6a63706889de666d4e622f0ceb5
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 67398d5a4b2b33ace2d3ba3c74d63693861e586e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180241"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837137"
 ---
 # <a name="edit-load-test-scenarios"></a>Modifier les scénarios de test de charge
 
@@ -46,7 +46,7 @@ Un scénario comporte plusieurs autres propriétés que vous pouvez modifier à 
 ## <a name="tasks"></a>Tâches
 
 |Tâches|Rubriques associées|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Ajouter des pauses d’interaction humaine artificielle dans votre scénario :** les temps de réflexion permettent de simuler un comportement humain semblable à l’attente des utilisateurs pendant leurs interactions avec un site web. Ils ont lieu entre les demandes dans un test de performances web et entre les itérations de test dans un scénario de test de charge. L'utilisation de temps de réflexion dans un test de charge peut être utile pour la création de simulations de charge plus précises.|-   [Modifier les temps de réflexion pour simuler les retards d’interaction humaine avec un site web](../test/edit-think-times-in-load-test-scenarios.md)|
 |**Spécifier le nombre d’utilisateurs virtuels pour votre scénario :** vous pouvez configurer les propriétés du modèle de charge afin de spécifier la façon dont la charge utilisateur simulée est ajustée pendant un test de charge. Vous obtenez trois modèles de charge intégrés : constant, dans l’étape et en fonction des objectifs. Vous choisissez le modèle de charge et ajustez les propriétés aux niveaux appropriés à vos objectifs de test de charge.|-   [Modifier des modèles de charge pour modéliser les activités des utilisateurs virtuels](../test/edit-load-patterns-to-model-virtual-user-activities.md)|
 |**Configurer la probabilité qu’un utilisateur virtuel exécute un test dans le scénario :** vous pouvez utiliser la combinaison de tests, qui spécifie la probabilité qu’un utilisateur virtuel exécute un test donné dans un scénario de test de charge. Cela vous permet de simuler la charge de façon plus réaliste. Au lieu d'avoir un seul flux de travail dans vos applications, vous pouvez en avoir plusieurs, ce qui représente une meilleure approximation de la façon dont les utilisateurs finaux interagissent avec vos applications.|-   [Modifier des modèles de combinaison de tests](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)|

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 29a7bec902f28c67e5e6d6e9d63d9a85239c32c1
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: fb497953775bc283dcc908e9617fd7692fc76afe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586363"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861577"
 ---
 # <a name="refactor-python-code"></a>Refactoriser du code Python
 
@@ -30,27 +30,27 @@ Visual Studio fournit plusieurs commandes pour transformer et nettoyer automatiq
 ## <a name="rename"></a>Renommer
 
 1. Cliquez avec le bouton droit sur l’identificateur à renommer, puis sélectionnez **Renommer**, ou placez le point d’insertion sur cet identificateur et sélectionnez la commande de menu **Modifier** > **Refactoriser** > **Renommer** (**F2**).
-1. Dans la boîte de dialogue **Renommer** qui s’affiche, entrez le nouveau nom de l’identificateur et sélectionnez **OK** :
+2. Dans la boîte de dialogue **Renommer** qui s’affiche, entrez le nouveau nom de l’identificateur et sélectionnez **OK** :
 
-  ![Renommer l’invite pour le nouveau nom d’identificateur](media/code-refactor-rename-1.png)
+   ![Renommer l’invite pour le nouveau nom d’identificateur](media/code-refactor-rename-1.png)
 
-1. Dans la boîte de dialogue suivante, sélectionnez les fichiers et les instances de votre code auxquels appliquer le changement de nom. Sélectionnez n’importe quelle instance pour afficher un aperçu de la modification spécifique :
+3. Dans la boîte de dialogue suivante, sélectionnez les fichiers et les instances de votre code auxquels appliquer le changement de nom. Sélectionnez n’importe quelle instance pour afficher un aperçu de la modification spécifique :
 
-  ![Renommer la boîte de dialogue pour sélectionner l’endroit ou appliquer les modifications](media/code-refactor-rename-2.png)
+   ![Renommer la boîte de dialogue pour sélectionner l’endroit ou appliquer les modifications](media/code-refactor-rename-2.png)
 
-1. Sélectionnez **Appliquer** pour modifier vos fichiers de code source. (Cette action peut être annulée.)
+4. Sélectionnez **Appliquer** pour modifier vos fichiers de code source. (Cette action peut être annulée.)
 
 ## <a name="extract-method"></a>Extraire la méthode
 
 1. Sélectionnez les lignes de code ou l’expression à extraire dans une méthode distincte.
-1. Sélectionnez la commande de menu **Modifier** > **Refactoriser** > **Extraire la méthode**, ou tapez **Ctrl**+**R** > **M**.
-1. Dans la boîte de dialogue qui s’affiche, entrez un nouveau nom de méthode, indiquez vers où l’extraire, puis sélectionnez toutes les variables de fermeture. Les variables qui ne sont pas sélectionnées pour la fermeture sont transformées en arguments de méthode :
+2. Sélectionnez la commande de menu **Modifier** > **Refactoriser** > **Extraire la méthode**, ou tapez **Ctrl**+**R** > **M**.
+3. Dans la boîte de dialogue qui s’affiche, entrez un nouveau nom de méthode, indiquez vers où l’extraire, puis sélectionnez toutes les variables de fermeture. Les variables qui ne sont pas sélectionnées pour la fermeture sont transformées en arguments de méthode :
 
-  ![Boîte de dialogue Extraire la méthode](media/code-refactor-extract-method-1.png)
+   ![Boîte de dialogue Extraire la méthode](media/code-refactor-extract-method-1.png)
 
-1. Sélectionnez **OK** pour modifier le code en conséquence :
+4. Sélectionnez **OK** pour modifier le code en conséquence :
 
-  ![Effet lié à l’extraction d’une méthode](media/code-refactor-extract-method-2.png)
+   ![Effet lié à l’extraction d’une méthode](media/code-refactor-extract-method-2.png)
 
 ## <a name="add-import"></a>Ajouter à l’importation
 

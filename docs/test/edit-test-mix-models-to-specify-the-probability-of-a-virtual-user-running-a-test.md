@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 32fc3ef0684c89c422fac76550ba1fa123eb2f6b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ee123e474ad4b52b3debe6ad65bf6424388fe191
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180439"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816013"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Modifier les modèles de combinaison de tests pour spécifier la probabilité d’exécution d’un test par un utilisateur virtuel
 
@@ -37,7 +37,7 @@ Vous pouvez spécifier l'une des options de modèle de combinaison de tests suiv
 ## <a name="tasks"></a>Tâches
 
 |Tâches|Rubriques associées|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Spécification de la combinaison de tests pour votre test de charge :** quand vous créez un test de charge, vous spécifiez les paramètres du test de charge dans l’**Assistant Nouveau test de charge**. Dans l'**Assistant Nouveau test de charge**, vous choisissez les tests Web et unitaires à ajouter au scénario initial. Après avoir ajouté des tests au scénario, vous spécifiez la combinaison de tests pour le scénario.<br /><br /> Vous utilisez les options de modélisation de charge pour prédire l’utilisation réelle attendue d’un site web ou d’une application dont vous testez la charge. Il est important de le faire parce qu'un test de charge qui n'est pas basé sur un modèle de charge précis peut générer des résultats trompeurs.|-   [Émuler l’utilisation réelle attendue d’une application ou d’un site web](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
 |**Modifier le modèle de combinaison de tests :** vous pouvez changer un scénario de test de charge pour utiliser l’un des modèles de combinaison de tests à l’aide de l’**éditeur de test de charge**.||
 |**Configurer le rythme d’un modèle de combinaison de tests basé sur le rythme de l’utilisateur :** si votre scénario de test de charge est configuré pour utiliser le modèle de combinaison de tests **Sur la base du rythme de l’utilisateur**, vous pouvez spécifier le mode de configuration du rythme de distribution.|-   [Guide pratique pour appliquer une distribution au rythme durant l’utilisation d’un modèle de combinaison de tests dépendant du rythme de l’utilisateur](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|

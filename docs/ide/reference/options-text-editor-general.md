@@ -49,12 +49,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a3296ec07194f1815b819f69cf97224be50368f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4405e50a2bc264c88c073980da77fafbedf49cbe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747813"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830663"
 ---
 # <a name="options-text-editor-general"></a>Options, Éditeur de texte, Général
 
@@ -88,7 +88,7 @@ Par défaut, l’éditeur détecte l’encodage en recherchant les marques d’o
 Quand cette option est sélectionnée, une marge verticale s’affiche le long du bord gauche de la zone de texte de l’éditeur. Vous pouvez cliquer dans cette marge pour sélectionner toute une ligne de texte, ou cliquer et faire glisser la souris pour sélectionner des lignes de texte consécutives.
 
 |Marge de sélection activée|Marge de sélection désactivée|
-|-------------------------|--------------------------|
+| - | - |
 |![Capture d'écran HTMLpageSelectionMarginOn](../../ide/reference/media/vxselmaron.gif)|![Capture d'écran HTMLpageSelectionMarginOff](../../ide/reference/media/vxselmaroff.gif)|
 
 ### <a name="indicator-margin"></a>Marge des indicateurs

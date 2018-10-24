@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de351e019c4daacc61bbbdd2757b0f0d9a46e584
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a2c189afe9051d0f85c7f5f24a928d475d0eaca9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942839"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872848"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>Opérateurs logiques et opérateurs avancés dans les expressions de recherche
 
@@ -57,7 +57,7 @@ Les opérateurs de recherche avancés permettent d’affiner la recherche de con
 Vous pouvez utiliser l’opérateur `code:` pour rechercher du contenu sur l’un des langages de programmation. Si vous voulez retourner des exemples pour un langage de programmation spécifique, utilisez l’une des valeurs de langage de programmation suivantes :
 
 |Langage de programmation|Syntaxe de l’opérateur de recherche|
-|--------------------|---------|
+| - |---------|
 |Visual Basic|`code:vb`<br/>`code:visualbasic`|
 |C#|`code:c#`<br/>`code:csharp`|
 |C++|`code:cpp`<br/>`code:c++`<br/>`code:cplusplus`|

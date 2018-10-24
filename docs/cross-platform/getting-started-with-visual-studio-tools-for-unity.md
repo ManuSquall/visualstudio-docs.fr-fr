@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: dbe546f43b0a66abc78b94480894b63dc4f5eafa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9d924ee92258e348d5ffee1551fcde7707d711cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283106"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855207"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Bien démarrer avec Outils Visual Studio pour Unity
 
@@ -47,7 +47,7 @@ La version de Visual Studio fournie avec l’installation de Unity n’est pas t
 
 Si Visual Studio 2017 est déjà installé ou si vous préférez l’installer manuellement, exécutez le programme d’installation de Visual Studio.
 
-1. [Téléchargez le programme d’installation de Visual Studio](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio), ou ouvrez-le s’il est déjà installé.
+1. [Téléchargez le programme d’installation de Visual Studio](/visualstudio/install/install-visual-studio), ou ouvrez-le s’il est déjà installé.
 
 1. Cliquez sur **Modifier** (s’il est déjà installé) ou **Installer** (pour les nouvelles installations) sur la version souhaitée de Visual Studio.
 
@@ -63,21 +63,21 @@ Si Visual Studio 2017 est déjà installé ou si vous préférez l’installer 
 
 1. Sélectionnez **Préférences** dans le menu **Modifier**.
 
-  ![Sélectionner Préférences](media/vstu_unity-preferences.png)
+   ![Sélectionner Préférences](media/vstu_unity-preferences.png)
 
-1. Dans la boîte de dialogue Préférences, sélectionnez l’onglet **Outils externes**.
+2. Dans la boîte de dialogue Préférences, sélectionnez l’onglet **Outils externes**.
 
-1. Dans la liste déroulante **Éditeur de scripts externe**, choisissez la version de Visual Studio de votre choix si elle apparaît ; sinon, sélectionnez **Parcourir…**.
+3. Dans la liste déroulante **Éditeur de scripts externe**, choisissez la version de Visual Studio de votre choix si elle apparaît ; sinon, sélectionnez **Parcourir…**.
 
-  ![Sélectionner Visual Studio](media/vstu_unity-external-tools.png)
+   ![Sélectionner Visual Studio](media/vstu_unity-external-tools.png)
 
-1. Si **Parcourir…** a été sélectionné, accédez au répertoire **Common7/IDE** à l’intérieur de votre répertoire d’installation de Visual Studio, puis sélectionnez **devenv.exe**. Ensuite, cliquez sur **Ouvrir**.
+4. Si **Parcourir…** a été sélectionné, accédez au répertoire **Common7/IDE** à l’intérieur de votre répertoire d’installation de Visual Studio, puis sélectionnez **devenv.exe**. Ensuite, cliquez sur **Ouvrir**.
 
-  ![Sélectionner Ouvrir](media/vstu_browse-for-application.png)
+   ![Sélectionner Ouvrir](media/vstu_browse-for-application.png)
 
-1. Une fois Visual Studio sélectionné dans la liste **Éditeur de scripts externe**, vérifiez que la case **Attachement de l’éditeur** est cochée.
+5. Une fois Visual Studio sélectionné dans la liste **Éditeur de scripts externe**, vérifiez que la case **Attachement de l’éditeur** est cochée.
 
-1. Fermez la boîte de dialogue **Préférences** pour terminer le processus de configuration.
+6. Fermez la boîte de dialogue **Préférences** pour terminer le processus de configuration.
 
 ## <a name="support-for-older-versions"></a>Prise en charge des versions antérieures
 
@@ -85,7 +85,7 @@ Si Visual Studio 2017 est déjà installé ou si vous préférez l’installer 
 
 - Pour Visual Studio Community 2015, Visual Studio Professional 2015 ou Visual Studio Enterprise 2015 :
 
-   [Télécharger Visual Studio 2015 Tools pour Unity](https://marketplace.visualstudio.com/items?itemName=SebastienLebreton.VisualStudio2015ToolsforUnity)
+   [Télécharger Visual Studio 2015 Tools pour Unity](https://marketplace.visualstudio.com/items?itemName=SebastienLebreton.VisualStudio2015ToolsforUnity)
 
 > [!NOTE]
 > Les Outils Visual Studio pour Unity exigent Unity 5.2 ou une version ultérieure, ainsi qu’une version de Visual Studio qui prend en charge les extensions, comme Visual Studio Community, Professional, Premium ou Enterprise. Pour vérifier que les Outils Visual Studio pour Unity sont activés dans votre installation de Unity, sélectionnez **À propos de Unity** dans le menu **Aide** et recherchez le texte « Outils Microsoft Visual Studio pour Unity activés » en bas à gauche de la boîte de dialogue.
