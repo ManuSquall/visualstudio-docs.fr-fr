@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a0ea42942fc06225bc5c64c02eba85a766a94ef1
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2c2a5366a9772060a3e94de14b12f5d2ae62cbdf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381105"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949309"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Guide pratique pour créer un complément Visual Studio pour l’afficheur de résultats de test de performances web
 
@@ -49,28 +49,28 @@ Un complément est une DLL compilée qui s’exécute dans l’environnement de 
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>Pour créer un complément en utilisant l'Assistant Complément
 
-1.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur la solution, choisissez **Ajouter** puis sélectionnez **Nouveau projet**.
+1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur la solution, choisissez **Ajouter** puis sélectionnez **Nouveau projet**.
 
-     La boîte de dialogue **Nouveau projet** s’affiche.
+    La boîte de dialogue **Nouveau projet** s’affiche.
 
-2.  Sous **Modèles installé**, développez **Autres types de projets** et sélectionnez **Extensibilité**.
+2. Sous **Modèles installé**, développez **Autres types de projets** et sélectionnez **Extensibilité**.
 
-3.  Dans la liste des modèles, sélectionnez **Complément Visual Studio**.
+3. Dans la liste des modèles, sélectionnez **Complément Visual Studio**.
 
-4.  Sous **Nom**, tapez un nom pour le complément. Par exemple, **WebPerfTestResultsViewerAddin**.
+4. Sous **Nom**, tapez un nom pour le complément. Par exemple, **WebPerfTestResultsViewerAddin**.
 
-5.  Cliquez sur **OK**.
+5. Cliquez sur **OK**.
 
-     **L’Assistant Complément** Visual Studio démarre.
+    **L’Assistant Complément** Visual Studio démarre.
 
-6.  Sélectionnez **Suivant**.
+6. Sélectionnez **Suivant**.
 
-7.  Dans la page **Sélectionner un langage de programmation**, sélectionnez le langage de programmation que vous souhaitez utiliser pour écrire le complément.
+7. Dans la page **Sélectionner un langage de programmation**, sélectionnez le langage de programmation que vous souhaitez utiliser pour écrire le complément.
 
-    > [!NOTE]
-    > Pour l'exemple de code, cette rubrique utilise Visual C#.
+   > [!NOTE]
+   > Pour l'exemple de code, cette rubrique utilise Visual C#.
 
-8.  Dans la page **Sélectionner une application hôte**, sélectionnez **Visual Studio** et désactivez **Visual Studio Macros**.
+8. Dans la page **Sélectionner une application hôte**, sélectionnez **Visual Studio** et désactivez **Visual Studio Macros**.
 
 9. Sélectionnez **Suivant**.
 
@@ -96,18 +96,18 @@ Un complément est une DLL compilée qui s’exécute dans l’environnement de 
 
      Vous ajouterez le code au fichier *Connect.cs* après la procédure suivante, qui crée un contrôle utilisateur référencé par ce projet WebPerfTestResultsViewerAddin.
 
- Après avoir créé un complément, vous devez l’inscrire auprès de Visual Studio avant de l’activer dans le **Gestionnaire de compléments**. Pour cela, vous devez utiliser un fichier XML avec l’extension de fichier *.addin*.
+    Après avoir créé un complément, vous devez l’inscrire auprès de Visual Studio avant de l’activer dans le **Gestionnaire de compléments**. Pour cela, vous devez utiliser un fichier XML avec l’extension de fichier *.addin*.
 
- Le fichier *.addin* contient les informations nécessaires à Visual Studio pour afficher le complément dans le  **Gestionnaire de compléments**. Durant son démarrage, Visual Studio recherche les fichiers *.addin* disponibles à l’emplacement des fichiers *.addin*. Si des fichiers sont trouvés, Visual Studio lit le fichier XML et transmet au **Gestionnaire de compléments** les informations dont il a besoin pour démarrer le complément quand un utilisateur clique dessus.
+    Le fichier *.addin* contient les informations nécessaires à Visual Studio pour afficher le complément dans le  **Gestionnaire de compléments**. Durant son démarrage, Visual Studio recherche les fichiers *.addin* disponibles à l’emplacement des fichiers *.addin*. Si des fichiers sont trouvés, Visual Studio lit le fichier XML et transmet au **Gestionnaire de compléments** les informations dont il a besoin pour démarrer le complément quand un utilisateur clique dessus.
 
- Le fichier *.addin* est créé automatiquement lors de la création d’un complément à l’aide de **l’Assistant Complément**.
+    Le fichier *.addin* est créé automatiquement lors de la création d’un complément à l’aide de **l’Assistant Complément**.
 
 ### <a name="add-in-file-locations"></a>Emplacements du fichier .addin
 
 Deux copies du fichier *.addin* sont créées automatiquement par **l’Assistant Complément** :
 
 |**Emplacement du fichier .addin**|**Description**|
-|------------------------------|----------------------------|---------------------|
+|-|----------------------------|-|
 |Dossier de projet racine|Utilisé pour le déploiement du projet de complément. Incluse dans le projet pour des modifications facilitées. Chemin d'accès local pour un déploiement de style XCopy.|
 |Dossier des compléments|Utilisé pour exécuter le complément dans l'environnement de débogage. Doit toujours pointer sur le chemin de sortie de la configuration de build actuelle.|
 
