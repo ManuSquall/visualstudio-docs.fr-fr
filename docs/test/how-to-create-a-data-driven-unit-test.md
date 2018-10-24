@@ -16,12 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 435e4d852464a74a1dc4f418ffa9906c1e22791a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: a05729efcc475fa99026d99abc24d09c2511a2b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382579"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939252"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Comment : créer un test unitaire piloté par des données
 
@@ -69,7 +69,7 @@ public int AddIntegers(int first, int second)
  Pour tester la méthode `AddIntegers`, créez une source de données qui spécifie une plage de valeurs pour les paramètres et la somme à retourner. Dans cet exemple, nous allons créer une base de données SQL Compact nommée `MathsData` et une table nommée `AddIntegersData`, qui contient les noms et valeurs de colonnes suivants
 
 |FirstNumber|SecondNumber|Sum|
-|-----------------|------------------|---------|
+|-|------------------|-|
 |0|1|1|
 |1|1|2|
 |2|-3|-1|

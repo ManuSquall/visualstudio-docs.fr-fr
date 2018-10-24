@@ -5,12 +5,12 @@ author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: cd368c6b6bfd8d38817ef1b7014e9f1c91cac2ab
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: f91651d72cff067bcc0e679fa66f250a8a1a55d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37889942"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898822"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Utilisation des outils Visual Studio pour Mac pour Unity
 
@@ -33,31 +33,31 @@ Le moteur Unity diffuse des messages aux scripts MonoBehaviour, ce qui permet au
 
 Toutefois, les outils Visual Studio pour Mac pour Unity étendent leur fonctionnalité IntelliSense aux messages Unity. De cette façon, l’implémentation des messages Unity dans les scripts MonoBehaviour est plus facile, de même que l’apprentissage de l’API Unity. Pour utiliser IntelliSense pour les messages Unity :
 
-1.  Placez le curseur sur une nouvelle ligne dans le corps d’une classe qui dérive de MonoBehaviour.
+1. Placez le curseur sur une nouvelle ligne dans le corps d’une classe qui dérive de MonoBehaviour.
 
-2.  Commencez à taper le nom d’un message Unity, par exemple, `OnTriggerEnter`.
+2. Commencez à taper le nom d’un message Unity, par exemple, `OnTriggerEnter`.
 
-3.  Une fois que les lettres « **ont** » ont été tapées, une liste de suggestions IntelliSense s’affiche.
+3. Une fois que les lettres « **ont** » ont été tapées, une liste de suggestions IntelliSense s’affiche.
 
-  ![Using IntelliSense](media/using-vsmac-tools-unity-image2.png)
+   ![Using IntelliSense](media/using-vsmac-tools-unity-image2.png)
 
-4.  Vous pouvez changer la sélection dans la liste de trois façons :
+4. Vous pouvez changer la sélection dans la liste de trois façons :
 
-    * Avec les flèches **Haut** et **Bas**.
+   * Avec les flèches **Haut** et **Bas**.
 
-    * En cliquant avec la souris sur l’élément souhaité.
+   * En cliquant avec la souris sur l’élément souhaité.
 
-    * En continuant de taper le nom de l’élément souhaité.
+   * En continuant de taper le nom de l’élément souhaité.
 
-5.  IntelliSense peut insérer le message Unity sélectionné, y compris tous les paramètres nécessaires :
+5. IntelliSense peut insérer le message Unity sélectionné, y compris tous les paramètres nécessaires :
 
-    * En appuyant sur **Tab**.
+   * En appuyant sur **Tab**.
 
-    * En appuyant sur **Entrée**.
+   * En appuyant sur **Entrée**.
 
-    * En double-cliquant sur l’élément sélectionné.
+   * En double-cliquant sur l’élément sélectionné.
 
-  ![Insérer un message Unity à partir d’IntelliSense](media/using-vsmac-tools-unity-image3.png)
+   ![Insérer un message Unity à partir d’IntelliSense](media/using-vsmac-tools-unity-image3.png)
 
 ## <a name="adding-new-unity-files-and-folders"></a>Ajout de nouveaux fichiers et dossiers Unity
 
@@ -93,22 +93,22 @@ Les projets Unity peuvent être débogués avec Visual Studio pour Mac.
 
 Pour démarrer le débogage :
 
-1.  Connectez Visual Studio à Unity en cliquant sur le bouton **Lire**, ou appuyez sur **Commande + Entrée** ou **F5**.
+1. Connectez Visual Studio à Unity en cliquant sur le bouton **Lire**, ou appuyez sur **Commande + Entrée** ou **F5**.
 
-  ![Cliquer sur Lire dans Visual Studio](media/using-vsmac-tools-unity-image5.png)
+   ![Cliquer sur Lire dans Visual Studio](media/using-vsmac-tools-unity-image5.png)
 
-2.  Basculez sur Unity et cliquez sur le bouton **Lire** pour exécuter le jeu dans l’éditeur.
+2. Basculez sur Unity et cliquez sur le bouton **Lire** pour exécuter le jeu dans l’éditeur.
 
-  ![Cliquer sur Lire dans Unity](media/using-vsmac-tools-unity-image6.png)
+   ![Cliquer sur Lire dans Unity](media/using-vsmac-tools-unity-image6.png)
 
-3.  Quand le jeu s’exécute dans l’éditeur Unity, tout en étant connecté à Visual Studio, les points d’arrêt rencontrés suspendent l’exécution du jeu et affichent la ligne de code où le jeu a rencontré le point d’arrêt dans Visual Studio pour Mac.
+3. Quand le jeu s’exécute dans l’éditeur Unity, tout en étant connecté à Visual Studio, les points d’arrêt rencontrés suspendent l’exécution du jeu et affichent la ligne de code où le jeu a rencontré le point d’arrêt dans Visual Studio pour Mac.
 
 ### <a name="stop-debugging"></a>Arrêter le débogage
 
 Pour arrêter le débogage :
 
-1.  Cliquez sur le bouton **Arrêter** dans Visual Studio pour Mac ou appuyez sur **MAJ + Commande + Entrée**.
+1. Cliquez sur le bouton **Arrêter** dans Visual Studio pour Mac ou appuyez sur **MAJ + Commande + Entrée**.
 
-  ![Cliquer sur Arrêter dans Visual Studio](media/using-vsmac-tools-unity-image7.png)
+   ![Cliquer sur Arrêter dans Visual Studio](media/using-vsmac-tools-unity-image7.png)
 
 Pour en savoir plus sur le débogage dans Visual Studio pour Mac, consultez [Utilisation du débogueur](https://docs.microsoft.com/visualstudio/mac/debugging).

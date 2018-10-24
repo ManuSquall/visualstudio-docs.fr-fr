@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 7006802f38076283221b9351ba9660448e64a696
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 8c84fbb3001bffb93d6c06f383551c073461419b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
-ms.locfileid: "30306719"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911335"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Former un modèle TensorFlow dans le cloud
 
@@ -51,20 +51,20 @@ Téléchargez ce [référentiel GitHub](https://github.com/Microsoft/samples-for
 
 - Sélectionnez le dossier **Exemples TensorFlow** dans le dépôt des exemples téléchargé et ouvrez le fichier **TensorflowExamples.sln**.
 
-![Ouvrir un projet](media\tensorflow-local\open-project.png)
+   ![Ouvrir un projet](media/tensorflow-local/open-project.png)
 
-![Ouvrir une solution](media\tensorflow-local\open-solution.png)
+   ![Ouvrir une solution](media/tensorflow-local/open-solution.png)
 
 ## <a name="add-azure-remote-vm"></a>Ajouter la machine virtuelle distante Azure
 
 Dans l’Explorateur de serveurs, cliquez avec le bouton droit sur le nœud **Remote Machines** (Ordinateurs distants) sous le nœud AI Tools (Outils IA) et sélectionnez « Ajouter...». Entrez le nom d’affichage de l’ordinateur distant ainsi que l’hôte IP, le port SSH, le nom d’utilisateur et le fichier de clé/mot de passe.
 
-![Ajouter un nouvel ordinateur distant](media\tensorflow-vm\add-remote-vm.png)
+![Ajouter un nouvel ordinateur distant](media/tensorflow-vm/add-remote-vm.png)
 
 ## <a name="submit-job-to-azure-vm"></a>Envoyer la tâche à la machine virtuelle Azure
 Cliquez avec le bouton droit sur le projet MNIST dans **l’Explorateur de solutions**, puis sélectionnez **Envoyer la tâche**.
 
-![Envoi de tâche à un ordinateur distant](media\tensorflow-vm\job-submission.png)
+![Envoi de tâche à un ordinateur distant](media/tensorflow-vm/job-submission.png)
 
 Dans la fenêtre d’envoi :
 
@@ -77,7 +77,7 @@ Dans la fenêtre d’envoi :
 ## <a name="check-status-of-job"></a>Vérifier l’état de la tâche
 Pour afficher l’état et les détails relatifs aux tâches : développez la machine virtuelle à laquelle vous avez envoyé la tâche dans **l’Explorateur de serveurs**. Double cliquez sur **Tâches**.
 
-![Explorateur de travaux](media\tensorflow-vm\job-browser.png)
+![Explorateur de travaux](media/tensorflow-vm/job-browser.png)
 
 ## <a name="clean-up-resources"></a>Nettoyer les ressources
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bccbd4f1365ea42b3e0331283a5659502038e133
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 897de3b54781cf5738e80ffcc878fd8d34f6168f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704265"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951091"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guide de l’administrateur Help Viewer
 
@@ -50,7 +50,6 @@ Configuration requise :
 -   Les ordinateurs clients doivent avoir accès à Internet.
 
 -   Les utilisateurs doivent disposer des droits d’administrateur pour mettre à jour, ajouter ou supprimer le contenu d’aide locale une fois celui-ci installé.
-
 
 Avertissements :
 
@@ -93,17 +92,17 @@ Avant de pouvoir créer l’ensemble de contenu de base, vous devez d’abord d�
 
 #### <a name="to-uninstall-local-help"></a>Pour désinstaller l’aide locale
 
-1.  Dans Help Viewer, choisissez l’onglet **Gérer le contenu**.
+1. Dans Help Viewer, choisissez l’onglet **Gérer le contenu**.
 
-2.  Accédez à l’ensemble de documents Visual Studio.
+2. Accédez à l’ensemble de documents Visual Studio.
 
-3.  Choisissez **Supprimer** à côté de chaque sous-élément.
+3. Choisissez **Supprimer** à côté de chaque sous-élément.
 
-4.  Choisissez **Mettre à jour** pour désinstaller l’aide locale.
+4. Choisissez **Mettre à jour** pour désinstaller l’aide locale.
 
-5.  Accédez à *%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15* et vérifiez que le dossier contient uniquement le fichier *catalogType.xml*.
+5. Accédez à *%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15* et vérifiez que le dossier contient uniquement le fichier *catalogType.xml*.
 
- Une fois que vous avez supprimé tout le contenu local installé précédemment à l’aide de Visual Studio, vous êtes prêt à télécharger l’ensemble de contenu de base.
+   Une fois que vous avez supprimé tout le contenu local installé précédemment à l’aide de Visual Studio, vous êtes prêt à télécharger l’ensemble de contenu de base.
 
 #### <a name="to-download-the-content"></a>Pour télécharger le contenu
 
@@ -112,7 +111,6 @@ Avant de pouvoir créer l’ensemble de contenu de base, vous devez d’abord d�
 2.  Sous **Documentation recommandée** ou **Documentation disponible**, accédez aux ensembles de documents à télécharger, puis choisissez **Ajouter**.
 
 3.  Choisissez **Mettre à jour**.
-
 
 Vous devez ensuite créer un package du contenu pour qu’il puisse être déployé sur les ordinateurs clients.
 
@@ -128,7 +126,7 @@ Vous devez ensuite créer un package du contenu pour qu’il puisse être déplo
 
      `Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o `
 
-     Par exemple :`Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`
+     Exemple : `Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`.
 
 ### <a name="deploy-the-content"></a>Déployer le contenu
 

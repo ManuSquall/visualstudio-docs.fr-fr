@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 6cc733d3d926581801391a086c7886db3cec1bcc
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9458fd6886243102f6479166fb9df21f9e4869fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382726"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877255"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Guide pratique pour écrire des tests unitaires pour des DLL C++
 
@@ -117,53 +117,53 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
 
 ##  <a name="make_functions_visible"></a> Associer le projet de test au projet DLL
 
-1.  Ajoutez le projet DLL aux références de projet du projet de test :
+1. Ajoutez le projet DLL aux références de projet du projet de test :
 
-    1.  Ouvrez les propriétés du projet de test et choisissez **Propriétés communes** > **Framework et références**.
+   1.  Ouvrez les propriétés du projet de test et choisissez **Propriétés communes** > **Framework et références**.
 
-         ![Propriétés du projet C++ | Framework et références](../test/media/utecpp08.png)
+        ![Propriétés du projet C++ | Framework et références](../test/media/utecpp08.png)
 
-    2.  Choisissez **Ajouter une nouvelle référence**.
+   2.  Choisissez **Ajouter une nouvelle référence**.
 
-         Dans la boîte de dialogue **Ajouter une référence** , sélectionnez le projet DLL et choisissez **Ajouter**.
+        Dans la boîte de dialogue **Ajouter une référence** , sélectionnez le projet DLL et choisissez **Ajouter**.
 
-         ![Propriétés du projet C++ | Ajouter une nouvelle référence](../test/media/utecpp09.png)
+        ![Propriétés du projet C++ | Ajouter une nouvelle référence](../test/media/utecpp09.png)
 
-2.  Dans le fichier *.cpp* de test unitaire principal, incluez le fichier *.h* du code de la DLL :
+2. Dans le fichier *.cpp* de test unitaire principal, incluez le fichier *.h* du code de la DLL :
 
-    ```cpp
-    #include "..\RootFinder\RootFinder.h"
-    ```
+   ```cpp
+   #include "..\RootFinder\RootFinder.h"
+   ```
 
-3.  Ajoutez un test de base qui utilise la fonction exportée :
+3. Ajoutez un test de base qui utilise la fonction exportée :
 
-    ```cpp
-    TEST_METHOD(BasicTest)
-    {
-       CRootFinder rooter;
-       Assert::AreEqual(
-          // Expected value:
-          0.0,
-          // Actual value:
-          rooter.SquareRoot(0.0),
-          // Tolerance:
-          0.01,
-         // Message:
-         L"Basic test failed",
-         // Line number - used if there is no PDB file:
-         LINE_INFO());
-    }
-    ```
+   ```cpp
+   TEST_METHOD(BasicTest)
+   {
+      CRootFinder rooter;
+      Assert::AreEqual(
+         // Expected value:
+         0.0,
+         // Actual value:
+         rooter.SquareRoot(0.0),
+         // Tolerance:
+         0.01,
+        // Message:
+        L"Basic test failed",
+        // Line number - used if there is no PDB file:
+        LINE_INFO());
+   }
+   ```
 
-4.  Générez la solution.
+4. Générez la solution.
 
-     Le nouveau test s’affiche dans **l’Explorateur de tests**.
+    Le nouveau test s’affiche dans **l’Explorateur de tests**.
 
-5.  Dans **l’Explorateur de tests**, choisissez **Exécuter tout**.
+5. Dans **l’Explorateur de tests**, choisissez **Exécuter tout**.
 
-     ![Explorateur de tests unitaires &#45; Test de base réussi](../test/media/utecpp10.png)
+    ![Explorateur de tests unitaires &#45; Test de base réussi](../test/media/utecpp10.png)
 
- Vous avez configuré le test et les projets de code, et vérifié que vous pouviez exécuter des tests exécutant les fonctions du projet de code. Maintenant, vous pouvez commencer à écrire le code et les tests réels.
+   Vous avez configuré le test et les projets de code, et vérifié que vous pouviez exécuter des tests exécutant les fonctions du projet de code. Maintenant, vous pouvez commencer à écrire le code et les tests réels.
 
 ##  <a name="iterate"></a> Augmenter itérativement les tests et les faire réussir
 

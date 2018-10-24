@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 316c1f4a6927805c75feee143f92a8e31ac4dc20
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0c6594521774ca7e4fe91bc47776c4f0c4a489a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945244"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942918"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Encapsuler un champ (refactorisation)
 
@@ -41,20 +41,20 @@ Cette refactorisation s’applique à :
 
    - C# :
 
-    ![Code mis en surbrillance (C#)](media/encapsulate-highlight-cs.png)
+       ![Code mis en surbrillance (C#)](media/encapsulate-highlight-cs.png)
 
    - Visual Basic :
 
-    ![Code mis en surbrillance (Visual Basic)](media/encapsulate-highlight-vb.png)
+       ![Code mis en surbrillance (Visual Basic)](media/encapsulate-highlight-vb.png)
 
-1. Effectuez ensuite l'une des opérations suivantes :
+2. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-     - Appuyez sur **Ctrl+R**, puis **Ctrl+E**.  (Notez que le raccourci clavier peut varier en fonction du profil que vous avez sélectionné.)
-     - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**, puis sélectionnez l’entrée **Encapsuler le champ** dans la fenêtre contextuelle d’aperçu.
+      - Appuyez sur **Ctrl+R**, puis **Ctrl+E**.  (Notez que le raccourci clavier peut varier en fonction du profil que vous avez sélectionné.)
+      - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**, puis sélectionnez l’entrée **Encapsuler le champ** dans la fenêtre contextuelle d’aperçu.
    - **Souris**
-     - Sélectionnez **Modifier > Refactoriser > Encapsuler le champ**.
-     - Cliquez avec le bouton droit sur le code et choisissez le menu **Actions rapides et refactorisations**, puis sélectionnez l’entrée **Encapsuler le champ** dans la fenêtre contextuelle d’aperçu.
+      - Sélectionnez **Modifier > Refactoriser > Encapsuler le champ**.
+      - Cliquez avec le bouton droit sur le code et choisissez le menu **Actions rapides et refactorisations**, puis sélectionnez l’entrée **Encapsuler le champ** dans la fenêtre contextuelle d’aperçu.
 
    Sélection | Description
    --------- | -----------
@@ -68,11 +68,11 @@ Cette refactorisation s’applique à :
 
    - C# :
 
-    ![Résultat de l’action Encapsuler une propriété (C#)](media/encapsulate-result-cs.png)
+      ![Résultat de l’action Encapsuler une propriété (C#)](media/encapsulate-result-cs.png)
 
    - Visual Basic :
 
-    ![Résultat de l’action Encapsuler une propriété (Visual Basic)](media/encapsulate-result-vb.png)
+      ![Résultat de l’action Encapsuler une propriété (Visual Basic)](media/encapsulate-result-vb.png)
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ba9cd561c80aec7a0b1b47b98f75ff8046d8a1b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b41416ea923e8f14aa39bf1607ad7c349e0b149c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081307"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880674"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>Utiliser des composants 3D dans votre jeu ou votre application
 
@@ -41,7 +41,7 @@ Avant de déployer vos composants 3D dans le cadre de votre build, Visual Studio
 2.  Sous **Fichiers de personnalisation de la build disponibles**, cochez les cases qui correspondent aux types de ressources que vous voulez utiliser dans votre projet, comme décrit dans le tableau suivant :
 
     |Type de ressource|Nom de personnalisation de la build|
-    |----------------|------------------------------|
+    |----------------| - |
     |Textures et images|**ImageContentTask(.targets, .props)**|
     |Modèles 3D|**MeshContentTask(.targets, .props)**|
     |Nuanceurs|**ShaderGraphContentTask(.targets, .props)**|
@@ -67,7 +67,7 @@ Avant de déployer vos composants 3D dans le cadre de votre build, Visual Studio
 Voici les trois types d’éléments de pipeline de contenu et leurs types de fichiers sources et de sortie associés.
 
 |Type d'élément|Types de fichiers sources|Format des fichiers de sortie|
-|---------------|-----------------------|------------------------|
+|---------------| - | - |
 |**Pipeline de contenu d’image**|Portable Network Graphics (*.png*)<br /><br /> JPEG (*.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> Direct Draw Surface (*.dds*)<br /><br /> Graphics Interchange Format (*.gif*)<br /><br /> Bitmap (*.bmp*, *.dib*)<br /><br /> Tagged Image File Format (*.tif*, *.tiff*)<br /><br /> Targa (*.tga*)|DirectDraw Surface (*.dds*)|
 |**Pipeline de contenu de maillage**|Fichier d’échange AutoDesk FBX (*.fbx*)<br /><br /> Fichier DAE Collada (*.dae*)<br /><br /> Fichier Wavefront OBJ (*.obj*)|Fichier de maillage 3D (*.cmo*)|
 |**Pipeline de contenu de nuanceur**|Graphe de nuanceur visuel (*.dgsl*)|Sortie de nuanceur compilé (*.cso*)|
