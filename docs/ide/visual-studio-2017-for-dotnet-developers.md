@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 545bcaa46226b315fb338e352968c5b74dd0232f
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 31800a7ec4e5a008234f7ee72b6c43bba559fbf9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495789"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928345"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Guide de productivité C# pour Visual Studio 2017
 
@@ -57,7 +57,7 @@ Le tableau suivant liste les principaux raccourcis de Visual Studio :
 > [!NOTE]
 > Certaines extensions dissocient les combinaisons de touches de Visual Studio par défaut. Pour utiliser les commandes ci-dessus, restaurez les valeurs par défaut de Visual Studio de vos combinaisons de touches en accédant à **Outils** > **Paramètres d’importation et d’exportation** > **Réinitialiser tous les paramètres** ou à **Outils** > **Options** > **Clavier** > **Réinitialiser**.
 
-Pour en savoir plus sur les raccourcis clavier et les commandes dans Visual Studio, consultez [notre documentation](..\ide\tips-and-tricks-for-visual-studio.md).
+Pour en savoir plus sur les raccourcis clavier et les commandes dans Visual Studio, consultez [notre documentation](../ide/tips-and-tricks-for-visual-studio.md).
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>J’ai besoin d’accéder rapidement à des fichiers ou des types
 
@@ -161,7 +161,7 @@ Voici une liste de fonctionnalités de l’éditeur liées à la productivité p
 | Activer la navigation vers les sources décompilées | Permet d’activer la fonctionnalité Atteindre la définition sur les types/membres de sources externes et d’utiliser le décompilateur ILSpy pour afficher les corps de méthodes | **Outils** > **Options** > **Éditeur de texte** > **C#** > **Avancé** > **Activer la navigation vers les sources décompilées** |
 | Mode de saisie semi-automatique/suggestion | Change le comportement de saisie semi-automatique dans IntelliSense - Les développeurs qui connaissent IntelliJ ont tendance à changer le paramètre par défaut | **Menu** > **Modifier** > **IntelliSense** > **Activer/Désactiver le mode de saisie semi-automatique** |
 | [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Affiche les informations de référence du code et l’historique des modifications dans l’éditeur | **Outils** > **Options** > **Éditeur de texte** > **Tous les langages** > **CodeLens** |
-| [Extraits de code](../ide/visual-csharp-code-snippets.md) | Permet de vous épargner le texte réutilisable courant |  Tapez un nom d’extrait et appuyez deux fois sur **Tab**. |
+| [Extraits de code](../ide/visual-csharp-code-snippets.md) | Permet de vous épargner le texte réutilisable courant | Tapez un nom d’extrait et appuyez deux fois sur **Tab**. |
 
 ## <a name="missing-a-feature-that-makes-you-productive-or-experiencing-poor-performance"></a>Est-ce qu’il vous manque une fonctionnalité qui améliore votre productivité, ou est-ce que vous trouvez le niveau de performance médiocre ?
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 124516b0e214f1999792f40425976441bf3c9313
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3f1169ff5bc9487fc062ab7cbc6e2adb01151a19
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283484"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926148"
 ---
 # <a name="codeindex-command"></a>CodeIndex, commande
 
@@ -41,13 +41,13 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 ### <a name="parameters"></a>Paramètres
 
 |**Argument**|**Description**|
-|------------------|---------------------|
+|------------------| - |
 |`CollectionName`|Spécifie le nom de la collection de projets. Si le nom contient des espaces, placez-le entre guillemets. Exemple : "Fabrikam Website".|
 |`CollectionId`|Spécifie le numéro d’identification de la collection de projets.|
 |`ServerPath`|Spécifie le chemin d’accès d’un fichier de code.|
 
 |**Option**|**Description**|
-|----------------|---------------------|
+|----------------| - |
 |**/indexingStatus**|Affichez l'état et la configuration du service d'indexation de code.|
 |**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on** : démarrer l’indexation de tous les ensembles de modifications.<br />-   **off** : arrêter l’indexation de tous les ensembles de modifications.<br />-   **off** : arrêter l’indexation des ensembles de modifications créés précédemment et commencer l’indexation de nouveaux ensembles de modifications uniquement.|
 |**/ignoreList:**[ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> Vous pouvez utiliser le caractère générique (*) au début, à la fin ou aux deux extrémités du chemin d’accès au serveur.|Spécifie une liste de fichiers de code et leurs chemins d’accès à ne pas indexer.<br /><br /> -   **add** : ajouter le fichier à ne pas indexer à la liste des fichiers ignorés.<br />-   **remove** : supprimer le fichier à indexer de la liste des fichiers ignorés.<br />-   **removeAll** : effacer la liste des fichiers ignorés et démarrer l’indexation de tous les fichiers.<br />-   **view** : afficher tous les fichiers qui ne sont pas indexés.|
