@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: dd638a539b8956716aa60b5361bd003c18d35f9b
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: a203d471d5947df9919ed8c9afe7d1c2d41296f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283323"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908906"
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Démarrage rapide : Créer votre première application de plateforme Windows universelle dans Visual Studio avec XAML et C&#35;
 
@@ -46,9 +46,9 @@ Créez tout d’abord un projet de plateforme Windows universelle. Le type de pr
 
    ![Accepter les paramètres par défaut pour Version cible et Version minimale dans la boîte de dialogue Nouveau projet de plateforme Windows universelle](../ide/media/new-uwp-project-target-minver-dialog.png)
 
-  > [!NOTE]
-  > S’il s’agit de la première fois que vous avez utilisé Visual Studio pour créer une application UWP, une boîte de dialogue **Paramètres** peut s’afficher. Choisissez **Mode développeur**, puis **Oui**.<br><br>
- ![Activer le mode développeur dans la boîte de dialogue Paramètres du projet UWP](../ide/media/enable-developer-mode.png)<br><br>Visual Studio installe un autre package en mode développeur pour vous. Une fois l’installation du package terminée, fermez la boîte de dialogue **Paramètres**.
+   > [!NOTE]
+   > S’il s’agit de la première fois que vous avez utilisé Visual Studio pour créer une application UWP, une boîte de dialogue **Paramètres** peut s’afficher. Choisissez **Mode développeur**, puis **Oui**.<br><br>
+   ![Activer le mode développeur dans la boîte de dialogue Paramètres du projet UWP](../ide/media/enable-developer-mode.png)<br><br>Visual Studio installe un autre package en mode développeur pour vous. Une fois l’installation du package terminée, fermez la boîte de dialogue **Paramètres**.
 
 ## <a name="create-the-application"></a>Créer l’application
 
@@ -58,29 +58,29 @@ Il est temps de commencer à développer. Vous allez ajouter un contrôle bouton
 
 1. Dans **l’Explorateur de solutions**, double-cliquez sur *MainPage.xaml* pour ouvrir un mode fractionné.
 
-  ![Ouvrir MainPage.xaml à partir de l’Explorateur de solutions ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
+   ![Ouvrir MainPage.xaml à partir de l’Explorateur de solutions ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
 
-  Il existe deux volets : **le concepteur XAML**, qui comprend une zone de conception et **l’éditeur XAML**, où vous pouvez ajouter ou modifier le code.
+   Il existe deux volets : **le concepteur XAML**, qui comprend une zone de conception et **l’éditeur XAML**, où vous pouvez ajouter ou modifier le code.
 
-  ![Volet du concepteur XAML dans l’éditeur XAML](../ide/media/uwp-xaml-editor.png)
+   ![Volet du concepteur XAML dans l’éditeur XAML](../ide/media/uwp-xaml-editor.png)
 
 2. Choisissez **Boîte à outils** pour ouvrir la fenêtre volante Boîte à outils.
 
-  ![Cliquer sur Boîte à outils pour ouvrir la fenêtre volante Boîte à outils](../ide/media/uwp-toolbox.png)
+   ![Cliquer sur Boîte à outils pour ouvrir la fenêtre volante Boîte à outils](../ide/media/uwp-toolbox.png)
 
-  (Si vous ne voyez pas l’option **Boîte à outils**, ouvrez-la à partir de la barre de menus. Pour ce faire, choisissez **Affichage** > **Barre d’outils**. Vous pouvez aussi appuyer sur **Ctrl**+**Alt**+**X**.)
+   (Si vous ne voyez pas l’option **Boîte à outils**, ouvrez-la à partir de la barre de menus. Pour ce faire, choisissez **Affichage** > **Barre d’outils**. Vous pouvez aussi appuyer sur **Ctrl**+**Alt**+**X**.)
 
 3. Cliquez sur l’icône **Épingler** pour ancrer la fenêtre Boîte à outils.
 
-  ![Cliquer sur l’icône Épingler pour ancrer la fenêtre Boîte à outils](../ide/media/uwp-toolbox-autohide.png)
+   ![Cliquer sur l’icône Épingler pour ancrer la fenêtre Boîte à outils](../ide/media/uwp-toolbox-autohide.png)
 
 4. Cliquez sur le contrôle **Button**, puis faites-le glisser dans la zone de conception.
 
    ![Cliquer sur le contrôle Button, puis le faire glisser dans la zone de conception](../ide/media/uwp-toolbox-add-button-control.png)
 
-  Si vous examinez le code dans **l’éditeur XAML**, vous verrez que le contrôle Button y a aussi été ajouté :
+   Si vous examinez le code dans **l’éditeur XAML**, vous verrez que le contrôle Button y a aussi été ajouté :
 
-  ![Cliquer sur le contrôle Button, puis le faire glisser dans la zone de conception](../ide/media/uwp-xaml-control-code-window.png)
+   ![Cliquer sur le contrôle Button, puis le faire glisser dans la zone de conception](../ide/media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>Ajouter une étiquette au bouton
 
@@ -100,18 +100,18 @@ Un « gestionnaire d’événements » semble compliqué, mais il s’agit simpl
 
 2. Modifiez le code de gestionnaire d’événements dans *MainPage.xaml.cs*, la page code-behind.
 
- C’est ici que les choses deviennent intéressantes. Voici à quoi ressemble le gestionnaire d’événements par défaut :
+   C’est ici que les choses deviennent intéressantes. Voici à quoi ressemble le gestionnaire d’événements par défaut :
 
    ![Gestionnaire d’événements Button_Click par défaut ](../ide/media/uwp-button-click-code.png)
 
- Modifions-le afin qu’il ressemble à ceci :
+   Modifions-le afin qu’il ressemble à ceci :
 
     ![Nouveau gestionnaire d’événements Button_Click asynchrone ](../ide/media/uwp-add-hello-world-async-code.png)
 
-  Voici le code à copier et coller :
+   Voici le code à copier et coller :
 
-  ```C#
-  private async void Button_Click(object sender, RoutedEventArgs e)
+   ```C#
+   private async void Button_Click(object sender, RoutedEventArgs e)
          {
              MediaElement mediaElement = new MediaElement();
              var synth = new Windows.Media.SpeechSynthesis.SpeechSynthesizer();
@@ -119,7 +119,7 @@ Un « gestionnaire d’événements » semble compliqué, mais il s’agit simpl
              mediaElement.SetSource(stream, stream.ContentType);
              mediaElement.Play();
          }
-  ```
+   ```
 
 #### <a name="what-did-we-just-do"></a>Que venons-nous de faire ?
 
@@ -141,7 +141,7 @@ Il est temps de générer, déployer et lancer l’application UWP « Hello Worl
 
 3. Cliquez sur le bouton **Hello World**.
 
- Votre appareil Windows 10 dira littéralement « Hello, World ! »
+   Votre appareil Windows 10 dira littéralement « Hello, World ! »
 
 4. Pour fermer l’application, cliquez sur le bouton **Arrêter le débogage** dans la barre d’outils. (Vous pouvez également choisir **Déboguer** > **Arrêter le débogage** à partir de la barre de menus ou appuyer sur **Maj**+**F5**.)
 

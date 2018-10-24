@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0556dd29e37f45b460e3dde271384e94b1c09ed
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 261eef97d6b76d5cc793ecb34d2697abc717e0ca
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951776"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920896"
 ---
 # <a name="options-page-debugging-node-properties"></a>Page Options, Débogage, propriétés de nœud
 Les tableaux suivants décrivent les pages (ou collections de propriétés) associées à la catégorie **Débogage**, `DTE.Properties("Debugging", <Property Page>)`, de la boîte de dialogue **Options**.
@@ -24,7 +24,7 @@ Les tableaux suivants décrivent les pages (ou collections de propriétés) asso
  `DTE.Properties("Debugging", "General")`
 
 |Nom de l'élément de propriété|Value|Description|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |PromptOnBreakpointDelete|Get/Set (booléen)|Détermine si le débogueur demande l’autorisation avant de supprimer tous les points d’arrêt dans un projet.|
 |BreakAllProcesses|Get/Set (booléen)|Détermine si le débogueur interrompt tous les processus quand un processus s’arrête.|
 |BreakAtBoundaries|Get/Set (booléen)|Détermine si le débogueur interrompt l’exécution quand une exception franchit une limite entre des domaines d’application ou entre un code managé et un code natif.|
@@ -54,7 +54,7 @@ Les tableaux suivants décrivent les pages (ou collections de propriétés) asso
  `DTE.Properties("Debugging", "EditAndContinue")`
 
 |Nom de l'élément de propriété|Value|Description|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |EnableEditAndContinue|Get/Set (booléen)|Détermine si Modifier & Continuer est activé. Cette option s’applique à tous les langages qui prennent en charge Modifier & Continuer.|
 |InvokedByCommands|Get/Set (booléen)|Détermine si Modifier & Continuer applique automatiquement les modifications du code quand l’utilisateur sélectionne une commande de débogage comme **Exécuter pas à pas** ou **Continuer**. Cette option s’applique uniquement au code natif.|
 |InvokedByCommandsAskFirst|Get/Set (booléen)|Détermine si Modifier & Continuer demande à l’utilisateur la permission d’appliquer les modifications du code quand il sélectionne une commande de débogage comme **Exécuter pas à pas** ou **Continuer**. Cette option s’applique uniquement au code natif.|
@@ -66,7 +66,7 @@ Les tableaux suivants décrivent les pages (ou collections de propriétés) asso
  `DTE.Properties("Debugging", "JustInTime")`
 
 |Nom de l'élément de propriété|Value|Description|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |JitManaged|Get/Set (booléen)|Détermine si le débogage juste-à-temps est activé pour le code managé.|
 |JitNative|Get/Set (booléen)|Détermine si le débogage juste-à-temps est activé pour le code natif.|
 |JitScript|Get/Set (booléen)|Détermine si le débogage juste-à-temps est activé pour le code de script.|
@@ -75,7 +75,7 @@ Les tableaux suivants décrivent les pages (ou collections de propriétés) asso
  `DTE.Properties("Debugging", "Native")`
 
 |Nom de l'élément de propriété|Value|Description|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |LoadDllExports|Get/Set (booléen)|Détermine si le débogueur charge les tables d’exportation de DLL.|
 |EnableRPC|Get/Set (booléen)|Détermine si le débogueur peut accéder aux appels de procédure distante COM.|
 

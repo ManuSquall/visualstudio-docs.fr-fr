@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d6152d75d28e5c6468ccc0a484e2eae3a25214d9
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 63cf3e71ded582b3406957ccb423c8dbf47768ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203752"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905896"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Guide pratique : Ajouter des paramètres de contexte à un paramètre de série de tests de charge
 
@@ -36,19 +36,19 @@ Si vous affectez la valeur du paramètre de contexte Webserver1 à `http://Corpo
 
 En outre, en assignant des valeurs différentes à un paramètre de contexte en reprenant le même nom dans des paramètres d'exécution du test de charge différents, vous pouvez exécuter le test de charge dans différents environnements :
 
--   Paramètre d’exécution du serveur web de préproduction d’entreprise : paramètre de contexte nommé `WebServer1=http://CorporateStagingWebServer`
+- Paramètre d’exécution du serveur web de préproduction d’entreprise : paramètre de contexte nommé `WebServer1=http://CorporateStagingWebServer`
 
--   Paramètre d’exécution du serveur web de production d’entreprise : paramètre de contexte nommé `WebServer1=http://CorporateProductionWebServer`
+- Paramètre d’exécution du serveur web de production d’entreprise : paramètre de contexte nommé `WebServer1=http://CorporateProductionWebServer`
 
- **Changement du paramètre d’exécution depuis la ligne de commande**
+  **Changement du paramètre d’exécution depuis la ligne de commande**
 
- Si vous souhaitez utiliser des paramètres d'exécution différents à partir de la ligne de commande pour tirer parti de la stratégie de paramètre de contexte, utilisez les commandes suivantes :
+  Si vous souhaitez utiliser des paramètres d'exécution différents à partir de la ligne de commande pour tirer parti de la stratégie de paramètre de contexte, utilisez les commandes suivantes :
 
- **Définissez Test.UseRunSetting= CorporateStagingWebServer**
+  **Définissez Test.UseRunSetting= CorporateStagingWebServer**
 
- -et-
+  -et-
 
- **mstest /testcontainer:loadtest1.loadtest**
+  **mstest /testcontainer:loadtest1.loadtest**
 
 ## <a name="to-add-a-context-parameter-to-a-run-setting"></a>Pour ajouter un paramètre de contexte à un paramètre d'exécution
 
@@ -72,4 +72,4 @@ En outre, en assignant des valeurs différentes à un paramètre de contexte en 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Configurer les paramètres de série de tests de charge](../test/configure-load-test-run-settings.md)
+- [Configurer les paramètres d’exécution des tests de charge](../test/configure-load-test-run-settings.md)

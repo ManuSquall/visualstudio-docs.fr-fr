@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13065ac4b55b8ae84d299aa15eeb184e7d864d2e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4f80f4f08be3c2af8444a41209a8d19909c94a8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749812"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897899"
 ---
 # <a name="da0008-few-samples-collected"></a>DA0008 : Peu d'échantillons collectés
+
 |||  
 |-|-|  
 |ID de règle|DA0008|  
@@ -30,12 +31,12 @@ ms.locfileid: "34749812"
 |Méthode de profilage|Échantillonnage|  
 |Message|Un petit nombre d’échantillons a été collecté. Augmentez la durée d’exécution ou utilisez un taux d’échantillonnage plus rapide pour des résultats plus significatifs.|  
 |Type de règle|Information|  
-  
+
 ## <a name="cause"></a>Cause  
  Seuls quelques échantillons ont été collectés pendant l’exécution du profilage.  
-  
+
 ## <a name="rule-description"></a>Description de la règle  
  Lorsque la méthode d’échantillonnage est utilisée, vous devez collecter un nombre d’échantillons significatif du point de vue statistique pour vous assurer que les données reflètent bien le comportement réel du programme. Pour éviter les erreurs d’échantillonnage, essayez de collecter au moins 1 000 échantillons de comportements pour l’exécution des instructions du programme. Si vous ne collectez pas suffisamment d’échantillons, vous risquez de mal interpréter les données de profilage.  
-  
+
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations  
  Pour obtenir des résultats plus significatifs d’un point de vue statistique, effectuez le profilage d’une exécution d’application plus longue ou utilisez un taux d’échantillonnage plus rapide. Pour plus d’informations sur le changement du taux d’échantillonnage dans l’IDE de Visual Studio, consultez [Guide pratique pour choisir des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md). Pour plus d’informations sur la modification du taux d’échantillonnage lorsque vous utilisez la ligne de commande des outils de profilage, consultez [Timer](../profiling/timer.md) dans les informations de référence sur [VSPerfCmd](../profiling/vsperfcmd.md).

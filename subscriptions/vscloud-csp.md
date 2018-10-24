@@ -9,12 +9,12 @@ description: Informations destinées aux fournisseurs de solutions cloud concern
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9d040d2f586e2c47a6f904f06d483fe484a57429
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 50f4cfeaa6d0f530a70729155f0e81065359281d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495802"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899459"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Acheter et gérer des abonnements cloud Visual Studio pour vos clients
 
@@ -75,6 +75,7 @@ Si un abonné n’a pas activé son abonnement Visual Studio, c’est peut-être
 Pour voir les tarifs de Visual Studio pour les partenaires CSP, connectez-vous à l’[Espace partenaires](https://partnercenter.microsoft.com).  Choisissez **Tarification et offres** dans la navigation de gauche.  Choisissez le fichier de tarifs du mois en cours sous **Services basés sur l’utilisation** en haut à droite. Une fois la feuille de calcul Excel téléchargée, accédez à la feuille **Azure Price List** et filtrez la colonne **Meter Category** sur **Visual Studio**.
 
 Voici comment interpréter les différents éléments de cette feuille de calcul :
+
 | Catégorie de compteur    |   Name                 |  Unités                                |           De quoi s’agit-il ?                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | Entreprise             |  Abonnement                         | Abonnement mensuel à Visual Studio Enterprise   |
