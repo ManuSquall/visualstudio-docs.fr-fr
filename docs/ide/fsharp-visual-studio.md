@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 938beef8676901c385ef7cc7c07b9ce0d52067c3
-ms.sourcegitcommit: c87b0d9f65dc7ebe95071f66ea8da4d4bc52d360
+ms.openlocfilehash: 4512a6ad5efe519c203a764b18cdfc352ed6e81a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993900"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921429"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Développer avec Visual F# dans Visual Studio
 
@@ -56,14 +56,14 @@ Le tableau suivant récapitule les fonctionnalités dans les propriétés de pro
 |Analyse du code|Non|Les outils d’analyse de code peuvent être exécutés manuellement ou dans le cadre d’une commande post-build.|
 |Sécurité (changer les niveaux de confiance)|Non||
 
-## <a name="project-designer"></a>Concepteur de projet
+## <a name="project-designer"></a>Concepteur de projets
 
 Le **Concepteur de projet** se compose de plusieurs pages de propriétés de projet regroupées par fonctionnalités. Les pages disponibles pour les projets F# sont pour la plupart un sous-ensemble de celles disponibles pour d’autres langages, et sont décrites dans le tableau suivant. Des liens sont fournis vers la page C# du **Concepteur de projet** correspondante.
 
 |Page du Concepteur de projet|Liens connexes|Description|
-|---------------------|-------------|-----------|
+| - |-------------|-----------|
 |Application|[Page Application, Concepteur de projet](reference/application-page-project-designer-csharp.md)|Permet de spécifier des paramètres et des propriétés au niveau de l’application, par exemple si vous créez une bibliothèque ou un fichier exécutable, quelle est la version du .NET Framework ciblée par l’application, ainsi que des informations sur l’emplacement où sont stockés les fichiers de ressources utilisés par cette application.|
-|Générer|[Page Générer, Concepteur de projet](reference/build-page-project-designer-csharp.md)|Permet de contrôler comment le code est compilé.|
+|Générer|[Page Générer, Concepteur de projets](reference/build-page-project-designer-csharp.md)|Permet de contrôler comment le code est compilé.|
 |Événements de build|[Page Événements de build, Concepteur de projet](reference/build-events-page-project-designer-csharp.md)|Permet de spécifier des commandes à exécuter avant ou après la compilation.|
 |Débogage|[Page Déboguer, Concepteur de projet](reference/debug-page-project-designer.md)|Permet de contrôler comment l’application s’exécute pendant le débogage. Cela comprend les commandes à utiliser et l’identification du répertoire de départ de votre application, ainsi que tout mode de débogage spécial que vous souhaitez activer, tel que le code natif et SQL.|
 |Package (.NET SDK uniquement)|N/A|Permet de définir les métadonnées de package NuGet lors de la publication en tant que package NuGet.|
@@ -75,7 +75,7 @@ Le **Concepteur de projet** se compose de plusieurs pages de propriétés de pro
 Le tableau suivant récapitule les paramètres qui sont propres à F# :
 
 |Page du Concepteur de projet|Paramètre|Description|
-|---------------------|-------|-----------|
+| - |-------|-----------|
 |Générer|Générer des appels tail|Permet d’utiliser l’instruction tail MSIL (Microsoft Intermediate Language). Cela entraîne la réutilisation du frame de pile pour les fonctions récursives tail. Équivalent à l’option du compilateur `--tailcalls`.|
 |Générer|Autres indicateurs|Permet de spécifier d’autres options de ligne de commande du compilateur.|
 
@@ -111,7 +111,7 @@ Les fonctionnalités suivantes des éditeurs de code et de texte de Visual Studi
 
 Pour obtenir des informations générales sur la modification du code dans Visual Studio et les fonctionnalités de l’éditeur de texte, consultez [Écrire du code dans l’éditeur](writing-code-in-the-code-and-text-editor.md).
 
-## <a name="intellisense-features"></a>Fonctions IntelliSense
+## <a name="intellisense-features"></a>fonctions IntelliSense
 
 Le tableau suivant récapitule les fonctionnalités IntelliSense prises en charge et non prises en charge en F# :
 

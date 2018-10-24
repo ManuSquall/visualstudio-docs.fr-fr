@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c4d9d7f03f8703bd549cf9e1098327a2fb59a497
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 28fb0bdb181b1f4f2c08112e40d6236db22b7a08
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008214"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918920"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Utiliser IPython dans la fenêtre interactive
 
@@ -29,30 +29,30 @@ Pour cette procédure pas à pas, vous devez avoir installé l’environnement [
 
 1. Ouvrez Visual Studio, basculez vers la fenêtre **Environnements Python** (**Affichage** > **Autres fenêtres** > **Environnements Python**), puis sélectionnez un environnement Anaconda.
 
-1. Examinez l’onglet **Packages (Conda)** (qui peut être intitulé **pip** ou **Packages**) pour cet environnement afin de vérifier que `ipython` et `matplotlib` sont répertoriés. Si ce n’est pas le cas, installez-les ici. (Consultez [Fenêtre Environnements Python - Onglet Packages](python-environments-window-tab-reference.md).)
+2. Examinez l’onglet **Packages (Conda)** (qui peut être intitulé **pip** ou **Packages**) pour cet environnement afin de vérifier que `ipython` et `matplotlib` sont répertoriés. Si ce n’est pas le cas, installez-les ici. (Consultez [Fenêtre Environnements Python - Onglet Packages](python-environments-window-tab-reference.md).)
 
-1. Sélectionnez l’onglet **Vue d’ensemble** et **Utiliser le mode interactif IPython**. (Dans Visual Studio 2015, sélectionnez **Configure interactive options** (Configurer les options interactives) pour ouvrir la boîte de dialogue **Options**, affectez à **Mode interactif** la valeur **IPython**, puis sélectionnez **OK**).
+3. Sélectionnez l’onglet **Vue d’ensemble** et **Utiliser le mode interactif IPython**. (Dans Visual Studio 2015, sélectionnez **Configure interactive options** (Configurer les options interactives) pour ouvrir la boîte de dialogue **Options**, affectez à **Mode interactif** la valeur **IPython**, puis sélectionnez **OK**).
 
-1. Sélectionnez **Ouvrir une fenêtre interactive** pour afficher la **fenêtre interactive** en mode IPython. Vous devrez peut-être réinitialiser la fenêtre si vous venez de changer le mode interactif. Vous devrez peut-être aussi appuyer sur **Entrée** si seule une invite >>> s’affiche pour obtenir une invite similaire à  **[2]**.
+4. Sélectionnez **Ouvrir une fenêtre interactive** pour afficher la **fenêtre interactive** en mode IPython. Vous devrez peut-être réinitialiser la fenêtre si vous venez de changer le mode interactif. Vous devrez peut-être aussi appuyer sur **Entrée** si seule une invite >>> s’affiche pour obtenir une invite similaire à  **[2]**.
 
     ![Fenêtre interactive en mode IPython](media/ipython-repl-03.png)
 
-1. Entrez le code suivant :
+5. Entrez le code suivant :
 
-  ```python
-  import matplotlib.pyplot as plt
-  import numpy as np
+   ```python
+   import matplotlib.pyplot as plt
+   import numpy as np
   
-  x = np.linspace(0, 5, 10)
-  y = x ** 2
-  plt.plot(x, y, 'r', x, x ** 3, 'g', x, x ** 4, 'b')
-  ```
+   x = np.linspace(0, 5, 10)
+   y = x ** 2
+   plt.plot(x, y, 'r', x, x ** 3, 'g', x, x ** 4, 'b')
+   ```
 
-1. Après avoir entré la dernière ligne, vous devriez voir un graphique inline (que vous pouvez redimensionner en faisant glisser le coin inférieur droit, si vous le souhaitez).
+6. Après avoir entré la dernière ligne, vous devriez voir un graphique inline (que vous pouvez redimensionner en faisant glisser le coin inférieur droit, si vous le souhaitez).
 
     ![Graphique inline dans la fenêtre interactive](media/ipython-repl-04.png)
 
-1. Au lieu d’effectuer une saisie dans la boucle REPL, vous pouvez écrire du code dans l’éditeur, le sélectionner, cliquer dessus avec le bouton droit et sélectionner la commande **Envoyer vers Interactive** (ou appuyer sur **Ctrl**+**Entrée**). Essayez de coller le code ci-dessous dans un nouveau fichier dans l’éditeur, de le sélectionner à l’aide des touches **Ctrl**+**A**, puis de l’envoyer dans la **fenêtre interactive**. (Visual Studio envoie le code en une seule unité pour éviter de vous donner des graphes intermédiaires ou partiels. Si vous n’avez pas un projet Python ouvert avec un autre environnement sélectionné, Visual Studio ouvre une **fenêtre interactive** pour n’importe quel environnement sélectionné par défaut dans la fenêtre **Environnements Python**.)
+7. Au lieu d’effectuer une saisie dans la boucle REPL, vous pouvez écrire du code dans l’éditeur, le sélectionner, cliquer dessus avec le bouton droit et sélectionner la commande **Envoyer vers Interactive** (ou appuyer sur **Ctrl**+**Entrée**). Essayez de coller le code ci-dessous dans un nouveau fichier dans l’éditeur, de le sélectionner à l’aide des touches **Ctrl**+**A**, puis de l’envoyer dans la **fenêtre interactive**. (Visual Studio envoie le code en une seule unité pour éviter de vous donner des graphes intermédiaires ou partiels. Si vous n’avez pas un projet Python ouvert avec un autre environnement sélectionné, Visual Studio ouvre une **fenêtre interactive** pour n’importe quel environnement sélectionné par défaut dans la fenêtre **Environnements Python**.)
 
     ```python
     from mpl_toolkits.mplot3d import Axes3D
@@ -77,7 +77,7 @@ Pour cette procédure pas à pas, vous devez avoir installé l’environnement [
 
     ![Envoi de code de l’éditeur vers la fenêtre interactive](media/ipython-repl-05.png)
 
-1. Pour afficher les graphiques en dehors de la **fenêtre interactive**, exécutez le code en utilisant cette fois la commande **Déboguer** > **Démarrer sans débogage**.
+8. Pour afficher les graphiques en dehors de la **fenêtre interactive**, exécutez le code en utilisant cette fois la commande **Déboguer** > **Démarrer sans débogage**.
 
 IPython comporte de nombreuses autres fonctions utiles, par exemple des fonctions de sortie vers l’interpréteur de commandes système, de substitution de variables, de capture de sortie, etc. Pour plus d’informations, consultez la [documentation IPython](http://ipython.org/documentation.html).
 

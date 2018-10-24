@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00ec7361304d76d33264b98b45cf373bc5fc9f51
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 8d9ceeb7c4d24871bc0f2ddfc743c2c65e087205
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626814"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907051"
 ---
 # <a name="find-code-using-go-to-commands"></a>Rechercher du code à l’aide des commandes Atteindre
 
@@ -27,10 +27,10 @@ Les commandes **Atteindre** de Visual Studio vous permettent d’effectuer une r
 
 ## <a name="how-to-use-it"></a>Utilisation
 
-Entrée        | Fonction
+Entrée | Fonction
 ------------ | ---
 **Clavier** | Appuyez sur **Ctrl**+**T** ou **Ctrl**+**,**
-**Souris**    | Sélectionnez **Modifier** > **Atteindre** > **Atteindre tout**
+**Souris** | Sélectionnez **Modifier** > **Atteindre** > **Atteindre tout**
 
 Une petite fenêtre s’affiche en haut à droite de votre éditeur de code.
 
@@ -56,7 +56,7 @@ Pour limiter votre recherche à un type spécifique d’élément de code, vous 
 
 Préfixe | Icône | Raccourci | Description
 :-: | - | - | -
-:| ![Icône de ligne](media/gotoall-line-icon.png) | **Ctrl**+**G**         | Atteindre le numéro de ligne spécifié
+:| ![Icône de ligne](media/gotoall-line-icon.png) | **Ctrl**+**G** | Atteindre le numéro de ligne spécifié
 f| ![Icône de fichiers](media/gotoall-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**F** | Atteindre le fichier spécifié
 b| ![Icône de fichiers récents](media/gotoall-recent-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**R** | Atteindre le fichier spécifié, récemment ouvert
 t| ![Icône de types](media/gotoall-types-icon.png) | **Ctrl**+**1**, **Ctrl**+**T** | Atteindre le type spécifié
@@ -85,8 +85,8 @@ Sélectionnez l’icône d’engrenage ![Icône d’engrenage](media/gotoall_gea
 Paramètre | Description
 ------- | ---
 Utiliser l'onglet d'aperçu | Afficher l’élément sélectionné immédiatement dans l’onglet d’aperçu de l’IDE
-Afficher les détails    | Afficher les informations sur un projet, un fichier et une ligne, et un récapitulatif des commentaires de documentation dans la fenêtre
-Centrer la fenêtre   | Déplacer cette fenêtre pour qu’elle s’affiche en haut au centre de l’éditeur de code, au lieu d’en haut à droite
+Afficher les détails | Afficher les informations sur un projet, un fichier et une ligne, et un récapitulatif des commentaires de documentation dans la fenêtre
+Centrer la fenêtre | Déplacer cette fenêtre pour qu’elle s’affiche en haut au centre de l’éditeur de code, au lieu d’en haut à droite
 
 ## <a name="see-also"></a>Voir aussi
 

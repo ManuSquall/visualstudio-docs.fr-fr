@@ -16,21 +16,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5a86fa111af041e601dbc16ee5f1f6da1c54fba
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 1a6912f1b3877eadf6739d696f01d0f391a97b30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447815"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892712"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Guide pratique pour modifier les polices et les couleurs utilisées dans l’éditeur
 Vous pouvez modifier le type de police par défaut, ajuster la taille de police et modifier les couleurs de premier plan et d’arrière-plan pour divers **éléments affichés** sous forme de texte dans l’éditeur de code. Lors de la modification des paramètres de police, gardez à l’esprit les informations suivantes :
 
--   Les paramètres **Police** et **Taille** s’appliquent à l’ensemble des éléments de texte dans tous les éditeurs [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+- Les paramètres **Police** et **Taille** s’appliquent à l’ensemble des éléments de texte dans tous les éditeurs [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
--   Les noms de polices à largeur fixe sont répertoriés en gras.
+- Les noms de polices à largeur fixe sont répertoriés en gras.
 
--   Les options **Premier plan de l’élément**, **Arrière-plan de l’élément** et **Gras** peuvent être définies pour chaque type d’élément de texte. Par exemple, si vous modifiez des couleurs et que vous sélectionnez **Gras** pour les éléments **Commentaire** et **Signets**, les autres types d’éléments de texte ne sont pas affectés.
+- Les options **Premier plan de l’élément**, **Arrière-plan de l’élément** et **Gras** peuvent être définies pour chaque type d’élément de texte. Par exemple, si vous modifiez des couleurs et que vous sélectionnez **Gras** pour les éléments **Commentaire** et **Signets**, les autres types d’éléments de texte ne sont pas affectés.
 
 > [!NOTE]
 > Les boîtes de dialogue et les commandes de menu qui s’affichent peuvent être différentes de celles décrites dans l’**aide**, en fonction de vos paramètres actifs ou de l’édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
