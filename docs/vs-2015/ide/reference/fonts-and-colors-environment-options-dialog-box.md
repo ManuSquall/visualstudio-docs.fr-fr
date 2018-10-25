@@ -32,12 +32,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3d080945edc13d0f4542fdd9c981037af108325c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cae9f5af0c6b8df6594a78bc7601ac123c349dc5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220704"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949433"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Polices et couleurs, Environnement, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,47 +53,47 @@ La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet
  **Afficher les paramètres de**  
  Répertorie tous les éléments d'interface utilisateur pour lesquels vous pouvez modifier le jeu de polices et le modèle de couleurs. Après avoir sélectionné un élément dans cette liste, vous pouvez personnaliser les paramètres de couleurs de l’élément en question dans **Éléments affichés**.  
   
--   **Éditeur de texte**  
+- **Éditeur de texte**  
   
-     Les changements apportés aux paramètres de style, de taille et d'affichage des couleurs de la police pour l'éditeur de texte affectent l'apparence du texte dans votre éditeur de texte par défaut. Les documents ouverts dans un éditeur de texte en dehors de l'IDE ne sont pas affectés par ces paramètres.  
+   Les changements apportés aux paramètres de style, de taille et d'affichage des couleurs de la police pour l'éditeur de texte affectent l'apparence du texte dans votre éditeur de texte par défaut. Les documents ouverts dans un éditeur de texte en dehors de l'IDE ne sont pas affectés par ces paramètres.  
   
--   **Imprimante**  
+- **Imprimante**  
   
-     Les changements apportés aux paramètres de style, de taille et d'affichage des couleurs de la police pour l'imprimante affectent l'apparence du texte dans les documents imprimés.  
+   Les changements apportés aux paramètres de style, de taille et d'affichage des couleurs de la police pour l'imprimante affectent l'apparence du texte dans les documents imprimés.  
   
-    > [!NOTE]
-    >  Selon les besoins, vous pouvez sélectionner une autre police par défaut pour l'impression que celle utilisée pour l'affichage dans l'éditeur de texte. Cela peut être utile pour imprimer du code contenant des caractères codés sur un octet et sur deux octets.  
+  > [!NOTE]
+  >  Selon les besoins, vous pouvez sélectionner une autre police par défaut pour l'impression que celle utilisée pour l'affichage dans l'éditeur de texte. Cela peut être utile pour imprimer du code contenant des caractères codés sur un octet et sur deux octets.  
   
--   **Compléter automatiquement les instructions**  
+- **Compléter automatiquement les instructions**  
   
-     Change le style de police et la taille du texte affichés par la fonctionnalité de saisie semi-automatique des instructions dans l'éditeur.  
+   Change le style de police et la taille du texte affichés par la fonctionnalité de saisie semi-automatique des instructions dans l'éditeur.  
   
--   **Info-bulle de l’éditeur**  
+- **Info-bulle de l’éditeur**  
   
-     Change le style de police et la taille du texte des info-bulles affichées dans l'éditeur.  
+   Change le style de police et la taille du texte des info-bulles affichées dans l'éditeur.  
   
--   **Police d’environnement**  
+- **Police d’environnement**  
   
-     Change le style de police et la taille de tous les éléments d’interface utilisateur de l’IDE qui ne disposent pas déjà d’une option distincte dans **Afficher les paramètres de**. Par exemple, cette option s’applique à la **Page de démarrage** mais n’affecte pas la fenêtre **Sortie**.  
+   Change le style de police et la taille de tous les éléments d’interface utilisateur de l’IDE qui ne disposent pas déjà d’une option distincte dans **Afficher les paramètres de**. Par exemple, cette option s’applique à la **Page de démarrage** mais n’affecte pas la fenêtre **Sortie**.  
   
--   **[Toutes les fenêtres Outil de texte]**  
+- **[Toutes les fenêtres Outil de texte]**  
   
-     Les changements apportés aux paramètres de style, de taille et d'affichage des couleurs de la police pour cet élément affectent l'apparence du texte dans les fenêtres Outil qui ont des volets de sortie dans l'IDE. C'est le cas, par exemple, de la fenêtre Sortie, la fenêtre Commande, la fenêtre Exécution, etc.  
+   Les changements apportés aux paramètres de style, de taille et d'affichage des couleurs de la police pour cet élément affectent l'apparence du texte dans les fenêtres Outil qui ont des volets de sortie dans l'IDE. C'est le cas, par exemple, de la fenêtre Sortie, la fenêtre Commande, la fenêtre Exécution, etc.  
   
-    > [!NOTE]
-    >  Les changements relatifs au texte des éléments de **[Toutes les fenêtres Outil de texte]** ne sont pas appliqués durant la session où vous les apportez. Vous pouvez évaluer ces changements en ouvrant une autre instance de Visual Studio.  
+  > [!NOTE]
+  >  Les changements relatifs au texte des éléments de **[Toutes les fenêtres Outil de texte]** ne sont pas appliqués durant la session où vous les apportez. Vous pouvez évaluer ces changements en ouvrant une autre instance de Visual Studio.  
   
- **Utiliser les valeurs par défaut**  
- Réinitialise les valeurs de couleur et de police de l’élément de liste sélectionné dans **Afficher les paramètres de**. Le bouton **Utiliser** s’affiche quand d’autres modèles d’affichage sont disponibles pour la sélection. Par exemple, vous avez le choix entre deux modèles pour l'imprimante.  
+  **Utiliser les valeurs par défaut**  
+  Réinitialise les valeurs de couleur et de police de l’élément de liste sélectionné dans **Afficher les paramètres de**. Le bouton **Utiliser** s’affiche quand d’autres modèles d’affichage sont disponibles pour la sélection. Par exemple, vous avez le choix entre deux modèles pour l'imprimante.  
   
- **Police (les polices à largeur fixe sont en gras)**  
- Répertorie toutes les polices installées sur votre système. Quand le menu déroulant s’affiche pour la première fois, la police active de l’élément sélectionné dans le champ **Afficher les paramètres de** est mise en surbrillance. Les polices fixes, qui sont plus faciles à aligner dans l'éditeur, s'affichent en gras.  
+  **Police (les polices à largeur fixe sont en gras)**  
+  Répertorie toutes les polices installées sur votre système. Quand le menu déroulant s’affiche pour la première fois, la police active de l’élément sélectionné dans le champ **Afficher les paramètres de** est mise en surbrillance. Les polices fixes, qui sont plus faciles à aligner dans l'éditeur, s'affichent en gras.  
   
- **Taille**  
- Répertorie les tailles en points disponibles pour la police sélectionnée. Le changement de taille de la police affecte tous les **éléments affichés** de la sélection dans **Afficher les paramètres de**.  
+  **Taille**  
+  Répertorie les tailles en points disponibles pour la police sélectionnée. Le changement de taille de la police affecte tous les **éléments affichés** de la sélection dans **Afficher les paramètres de**.  
   
- **Éléments affichés**  
- Répertorie les éléments pour lesquels vous pouvez modifier la couleur de premier plan et d'arrière-plan.  
+  **Éléments affichés**  
+  Répertorie les éléments pour lesquels vous pouvez modifier la couleur de premier plan et d'arrière-plan.  
   
 > [!NOTE]
 >  **Texte brut** est l’élément d’affichage par défaut. Ainsi, les propriétés assignées à **Texte brut** sont remplacées par les propriétés assignées aux autres éléments d’affichage. Par exemple, si vous assignez la couleur bleue à **Texte brut** et la couleur verte à **Identificateur**, tous les identificateurs s’affichent en vert. Dans cet exemple, les propriétés associées à **Identificateur** remplacent les propriétés associées à **Texte brut**.  

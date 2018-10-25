@@ -17,23 +17,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bda60d1e18f18d602f95d1eafb5843811cdc5f24
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: b7a473a7c6758fe58c82f8894822d3a250165a43
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765165"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933675"
 ---
 # <a name="net-memory-allocations-view"></a>Mode Allocations de mémoire .NET
 La vue Allocations liste les types qui ont été créés au cours de l’exécution du profilage. Chaque type est le nœud racine d’une arborescence des appels qui affiche les chemins d’exécution des fonctions qui ont entraîné les allocations du type.  
   
  Les données d’une ligne de type montrent le nombre total d’objets du type qui ont été créés au cours de l’exécution du profilage, et le nombre total d’octets alloués pour les objets de ce type. Les valeurs inclusives et exclusives d’un type sont toujours les mêmes.  
   
--   Les valeurs inclusives correspondent aux objets créés dans les instances de la fonction et de ses fonctions enfants qui ont été appelées par la fonction parente dans l’arborescence des appels.  
+- Les valeurs inclusives correspondent aux objets créés dans les instances de la fonction et de ses fonctions enfants qui ont été appelées par la fonction parente dans l’arborescence des appels.  
   
--   Les valeurs exclusives correspondent aux objets qui ont été créés directement par la fonction quand ils ont été appelés par la fonction parente. Les objets créés dans des fonctions enfants ne sont pas inclus.  
+- Les valeurs exclusives correspondent aux objets qui ont été créés directement par la fonction quand ils ont été appelés par la fonction parente. Les objets créés dans des fonctions enfants ne sont pas inclus.  
   
- Les données d’une fonction montrent le nombre d’objets créés et le nombre d’octets alloués pour les objets du type parent.  
+  Les données d’une fonction montrent le nombre d’objets créés et le nombre d’octets alloués pour les objets du type parent.  
   
 ## <a name="highlight-the-execution-hot-path"></a>Mettre en surbrillance le chemin réactif d’exécution  
  Vous pouvez trouver le chemin d’exécution de l’arborescence des appels qui a créé le plus d’objets du type parent.  

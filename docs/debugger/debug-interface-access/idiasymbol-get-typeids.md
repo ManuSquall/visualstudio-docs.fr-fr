@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_typeIds | Documents Microsoft
+title: IDiaSymbol::get_typeIds | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f1ad4aae54096ea2fdcbcac1a68d32fc3b386ad
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bacd3547c1aadfc99b66437acbd73599ec2191f6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470668"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942593"
 ---
 # <a name="idiasymbolgettypeids"></a>IDiaSymbol::get_typeIds
-Récupère un tableau de valeurs d’identificateur de type spécifique du compilateur pour ce symbole.  
+Récupère un tableau de valeurs d’identificateur de type spécifique au compilateur pour ce symbole.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -36,13 +36,13 @@ HRESULT get_typeIds (
   
 #### <a name="parameters"></a>Paramètres  
  `cTypeIds`  
- [in] Taille de la mémoire tampon pour stocker les données.  
+ [in] Taille de la mémoire tampon devant contenir les données.  
   
  `pcTypeIds`  
  [out] Retourne le nombre de `typeIds` écrit, ou, si `typeIds` est `NULL`, puis le nombre total d’identificateurs de type disponibles.  
   
  `typeIds[]`  
- [out] Tableau qui doit être remplie avec les identificateurs de type.  
+ [out] Un tableau qui doit être remplie avec les identificateurs de type.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  

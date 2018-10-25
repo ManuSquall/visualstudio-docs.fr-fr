@@ -11,26 +11,26 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3db94813f6d6b87d29744be2d1f53e26c3b80f26
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 882a355742a100f7a105abab541832f86740afe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280166"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942737"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Tutoriel : Bien démarrer avec le framework web Django dans Visual Studio
 
 [Django](https://www.djangoproject.com/) est un framework Python général conçu pour un développement web rapide, sécurisé et scalable. Ce tutoriel explore l’infrastructure Django dans le contexte des modèles de projet fournis par Visual Studio pour rationaliser la création d’applications web basées sur Django.
 
-Dans ce tutoriel, vous allez apprendre à :
+Dans ce didacticiel, vous apprendrez à :
 
 > [!div class="checklist"]
-> - Créer un projet Django de base dans un dépôt Git à l’aide du modèle « Projet web Django vide » (étape 1)
-> - Créer une application Django d’une page et afficher cette page à l’aide d’un modèle (étape 2)
-> - Prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle (étape 3)
-> - Utiliser le modèle de projet web de Django pour créer une application de plusieurs pages et une conception réactive (étape 4)
-> - Authentifier les utilisateurs (étape 5)
-> - Utiliser le modèle de sondages du projet web Django pour créer une application utilisant des modèles des migrations de bases de données et des personnalisations de l’interface d’administration (étape 6)
+> - créer un projet Django de base dans un référentiel Git à l’aide du modèle « Projet web Django vide » (étape 1) ;
+> - créer une application Django d’une page et à afficher cette page à l’aide d’un modèle (étape 2) ;
+> - prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle (étape 3) ;
+> - utiliser le modèle de projet Web de Django pour créer une application de plusieurs pages et une conception réactive (étape 4) ;
+> - authentifier les utilisateurs (étape 5) ;
+> - utiliser le modèle de sondages du projet web Django pour créer une application utilisant des modèles des migrations de bases de données et des personnalisations de l’interface d’administration (étape 6).
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -65,24 +65,24 @@ Lorsque vous travaillez avec Django à partir de la ligne de commande, vous comm
     - **Solution** : laissez l’option **Créer une solution** par défaut pour ce contrôle.
     - **Nom de la solution** : valeur **LearningDjango**, qui convient pour la solution en tant que conteneur pour plusieurs projets de ce tutoriel.
     - **Créer un répertoire pour la solution** : laissez cette option activée (par défaut).
-    - **Créer un dépôt Git** : sélectionnez cette option (qui est clairement par défaut), afin que Visual Studio crée un dépôt Git local lorsqu’il crée la solution. Si vous ne voyez pas cette option, exécutez le programme d’installation de Visual Studio 2017 et ajoutez **Git pour Windows** et **Extension GitHub pour Visual Studio** sous l’onglet **Composants individuels** sous **Outils de code**.
+    - **Créez un référentiel Git** : sélectionnez cette option (qui est clairement par défaut), afin que Visual Studio crée un référentiel Git local lorsqu’il crée la solution. Si vous ne voyez pas cette option, exécutez le programme d’installation de Visual Studio 2017 et ajoutez **Git pour Windows** et **Extension GitHub pour Visual Studio** sous l’onglet **Composants individuels** sous **Outils de code**.
 
 1. Au bout d’un moment, Visual Studio affiche une boîte de dialogue indiquant **Des packages externes sont nécessaires pour ce projet** (voir plus bas). Cette boîte de dialogue s’affiche, car le modèle inclut un fichier *requirements.txt* référençant le dernier package Django 1.x. (Sélectionnez **Afficher les packages requis** pour voir les dépendances exactes.)
 
     ![Invite indiquant que le projet requiert des packages externes](media/django/step01-requirements-prompt-install-myself.png)
 
-1. Sélectionnez l’option **Je vais les installer moi-même**. Vous créez brièvement l’environnement virtuel pour vous assurer qu’il est exclu du contrôle de code source. (L’environnement peut toujours être créé à partir de *requirements.txt*.)
+1. Sélectionnez l’option **I will install them myself**. Vous créez brièvement l’environnement virtuel pour vous assurer qu’il est exclu du contrôle de code source. (L’environnement peut toujours être créé à partir de *requirements.txt*.)
 
-## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Étape 1-2 : examiner les contrôles Git et publiez sur un dépôt distant
+## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Étape 1-2 : examiner les contrôles Git et publiez sur un référentiel distant
 
-Étant donné que vous avez sélectionné **Créer un dépôt Git** dans la boîte de dialogue **Nouveau projet**, le projet est déjà validé par le contrôle de code source local dès que le processus de création est terminé. À cette étape, vous vous familiarisez avec les contrôles Git de Visual Studio et la fenêtre **Team Explorer** dans laquelle vous travaillez avec le contrôle de code source.
+Étant donné que vous avez sélectionné **Créer un référentiel Git** dans la boîte de dialogue **Nouveau projet**, le projet est déjà validé par le contrôle de code source local dès que le processus de création est terminé. À cette étape, vous vous familiarisez avec les contrôles Git de Visual Studio et la fenêtre **Team Explorer** dans laquelle vous travaillez avec le contrôle de code source.
 
-1. Examinez les contrôles Git dans le coin inférieur de la fenêtre principale de Visual Studio. De gauche à droite, ces contrôles montrent les validations inactives, les modifications non validées, le nom du dépôt et la branche actuelle :
+1. Examinez les contrôles Git dans le coin inférieur de la fenêtre principale de Visual Studio. De gauche à droite, ces contrôles montrent les validations inactives, les modifications non validées, le nom du référentiel et la branche actuelle :
 
     ![Contrôles GIT dans la fenêtre Visual Studio](media/django/step01-git-controls.png)
 
     > [!Note]
-    > Si vous ne sélectionnez pas **Créer un dépôt Git** dans la boîte de dialogue **Nouveau projet**, les contrôles Git affichent seulement une commande **Ajouter au contrôle de code source** qui crée un dépôt local.
+    > Si vous ne sélectionnez pas **Créer un référentiel Git** dans la boîte de dialogue **Nouveau projet**, les contrôles Git affichent seulement une commande **Ajouter au contrôle de code source** qui crée un référentiel local.
     >
     > ![Ajouter au contrôle de code Source s’affiche dans Visual Studio si vous n’avez pas créé de référentiel.](media/django/step01-git-add-to-source-control.png)
 
@@ -90,15 +90,15 @@ Lorsque vous travaillez avec Django à partir de la ligne de commande, vous comm
 
     ![Fenêtre Team Explorer à la page Modifications](media/django/step01-team-explorer-changes.png)
 
-1. Dans la barre d’état de Visual Studio, sélectionnez le bouton des validations n’ayant pas fait l’objet d’un Push (flèche haut avec **2**) pour ouvrir la page **Synchronisation** dans **Team Explorer**. Étant donné que vous avez uniquement un dépôt local, la page fournit des options simples pour publier le dépôt sur les différents dépôts à distance.
+1. Dans la barre d’état de Visual Studio, sélectionnez le bouton des validations n’ayant pas fait l’objet d’un Push (flèche haut avec **2**) pour ouvrir la page **Synchronisation** dans **Team Explorer**. Étant donné que vous avez uniquement un référentiel local, la page fournit des options simples pour publier le référentiel sur les différents référentiels à distance.
 
-    ![La fenêtre Team Explorer affiche les options de dépôts disponibles pour le contrôle de code source.](media/django/step01-team-explorer.png)
+    ![La fenêtre Team Explorer affiche les options de référentiels disponibles pour le contrôle de code source.](media/django/step01-team-explorer.png)
 
     Vous pouvez choisir le service souhaité pour vos propres projets. Ce tutoriel montre comment utiliser GitHub. L’exemple de code terminé est conservé dans le dépôt [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django).
 
-1. Lors de la sélection d’un des contrôles **Publication**, **Team Explorer** vous invite à obtenir plus d’informations. Par exemple, lors de la publication de l’exemple de ce tutoriel, le dépôt proprement dit a dû être créé en premier, auquel cas l’option **Push sur le dépôt distant** a été utilisée avec l’URL du dépôt.
+1. Lors de la sélection d’un des contrôles **Publication**, **Team Explorer** vous invite à obtenir plus d’informations. Par exemple, lors de la publication de l’exemple de ce tutoriel, le référentiel proprement dit a dû être créé en premier, auquel cas l’option **Push sur référentiel distant** a été utilisée avec l’URL du référentiel.
 
-    ![Fenêtre Team Explorer pour pousser vers un dépôt distant existant](media/django/step01-push-to-github.png)
+    ![Fenêtre Team Explorer pour pousser vers un référentiel distant existant](media/django/step01-push-to-github.png)
 
     Si vous n’avez pas de dépôt existant, les options **Publier sur GitHub** et **Envoyer (push) sur Azure DevOps** vous permettent d’en créer un directement dans Visual Studio.
 
@@ -109,7 +109,7 @@ Lorsque vous travaillez avec Django à partir de la ligne de commande, vous comm
 
 ### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Question : Quels sont les avantages de l’utilisation du contrôle de code source dès le début d’un projet ?
 
-Réponse : Tout d’abord, l’utilisation du contrôle de code source dès le début, en particulier si vous utilisez également un dépôt distant, assure une sauvegarde hors site régulière de votre projet. Contrairement au maintien d’un projet uniquement sur un système de fichiers local, le contrôle de code source fournit également un historique complet des modifications et permet de revenir facilement à un état précédent d’un seul fichier ou de tout le projet. L’historique des modifications aide à déterminer la cause des régressions (échecs de test). Par ailleurs, le contrôle de code source est essentiel si plusieurs personnes travaillent sur un projet, car il gère les remplacements et permet la résolution des conflits. Enfin, grâce au contrôle de code source, qui est fondamentalement une forme d’automatisation, vous êtes bien préparés à l’automatisation de la génération, des tests et de la gestion des versions. Il s’agit bien là de la première étape de l’utilisation de DevOps pour un projet, et étant donné qu’il y a peu d’obstacles à l’entrée, il n’y a vraiment aucune raison de ne pas utiliser le contrôle de code source dès le début.
+Réponse : Tout d’abord, l’utilisation du contrôle de code source dès le début, en particulier si vous utilisez également un référentiel distant, assure une sauvegarde hors site régulière de votre projet. Contrairement au maintien d’un projet uniquement sur un système de fichiers local, le contrôle de code source fournit également un historique complet des modifications et permet de revenir facilement à un état précédent d’un seul fichier ou de tout le projet. L’historique des modifications aide à déterminer la cause des régressions (échecs de test). Par ailleurs, le contrôle de code source est essentiel si plusieurs personnes travaillent sur un projet, car il gère les remplacements et permet la résolution des conflits. Enfin, grâce au contrôle de code source, qui est fondamentalement une forme d’automatisation, vous êtes bien préparés à l’automatisation de la génération, des tests et de la gestion des versions. Il s’agit bien là de la première étape de l’utilisation de DevOps pour un projet, et étant donné qu’il y a peu d’obstacles à l’entrée, il n’y a vraiment aucune raison de ne pas utiliser le contrôle de code source dès le début.
 
 Pour poursuivre la discussion sur le contrôle de code source comme méthode d’automatisation, consultez Pour obtenir des informations supplémentaires sur le contrôle de code source en tant qu’automation, consultez [La Source de vérité : le rôle des référentiels dans DevOps](https://msdn.microsoft.com/magazine/mt763232), un article de MSDN Magazine écrit pour les applications mobiles qui s’applique également aux applications web.
 
@@ -143,7 +143,7 @@ Maintenant que vous avez configuré le contrôle de code source pour votre proje
 
 1. Après l’exclusion de l’environnement virtuel, les seules modifications restantes sont dans le fichier projet et dans *.gitignore*. Le fichier *.gitignore* contient une entrée ajoutée pour le dossier de l’environnement virtuel. Vous pouvez double-cliquer sur le fichier pour voir la différence.
 
-1. Entrez un message de validation et sélectionnez le bouton **Valider tout**, puis envoyez les validations à votre dépôt distant si vous le souhaitez.
+1. Entrez un message de validation et sélectionnez le bouton **Valider tout**, puis envoyez les validations à votre référentiel distant si vous le souhaitez.
 
 ### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Question : Pourquoi créer un environnement virtuel ?
 
@@ -163,16 +163,16 @@ Une fois la création du projet terminée, examinez le code de projet Django ré
 
     ![Commandes Django dans le menu contextuel d’un projet Python](media/django/step01-django-commands-menu.png)
 
-1. Votre projet contient un dossier qui porte le même nom que le projet. Il contient les fichiers projet Django de base :
+2. Votre projet contient un dossier qui porte le même nom que le projet. Il contient les fichiers projet Django de base :
 
-    - *__init.py* : un fichier vide qui indique à Python que ce dossier est un package Python.
-    - *wsgi.py* : un point d’entrée pour les serveurs web compatibles WSGI afin de traiter votre projet. Vous ne toucherez généralement pas à ce fichier, qui assure les raccordements des serveurs web de production.
-    - *settings.py* : contient les paramètres du projet Django, que vous modifiez au cours du développement d’une application web.
-    - *urls.py* : contient une table des matières pour le projet Django, que vous modifiez également au cours du développement.
+   - *__init.py* : un fichier vide qui indique à Python que ce dossier est un package Python.
+   - *wsgi.py* : un point d’entrée pour les serveurs web compatibles WSGI afin de traiter votre projet. Vous ne toucherez généralement pas à ce fichier, qui assure les raccordements des serveurs web de production.
+   - *settings.py* : contient les paramètres du projet Django, que vous modifiez au cours du développement d’une application web.
+   - *urls.py* : contient une table des matières pour le projet Django, que vous modifiez également au cours du développement.
 
-    ![Fichiers du projet Django dans l’Explorateur de solutions](media/django/step01-django-project-in-solution-explorer.png)
+     ![Fichiers du projet Django dans l’Explorateur de solutions](media/django/step01-django-project-in-solution-explorer.png)
 
-1. Comme indiqué précédemment, le modèle Visual Studio ajoute également un fichier *requirements.txt* à votre projet en spécifiant la dépendance du package Django. C’est ce fichier qui vous invite à créer un environnement virtuel lors de la création du projet.
+3. Comme indiqué précédemment, le modèle Visual Studio ajoute également un fichier *requirements.txt* à votre projet en spécifiant la dépendance du package Django. C’est ce fichier qui vous invite à créer un environnement virtuel lors de la création du projet.
 
 ### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Question : Est-ce que Visual Studio peut générer un fichier requirements.txt à partir d’un environnement virtuel après l’installation d’autres packages ?
 

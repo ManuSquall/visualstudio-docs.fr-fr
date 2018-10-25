@@ -1,5 +1,5 @@
 ---
-title: IDebugErrorBreakpointResolution2::GetBreakpointType | Documents Microsoft
+title: IDebugErrorBreakpointResolution2::GetBreakpointType | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71ef91425338c4aaed2393c89ad03be602228ad2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c001e47b7393daa07b799ff78f31019d21ec5ee2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113973"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951481"
 ---
 # <a name="idebugerrorbreakpointresolution2getbreakpointtype"></a>IDebugErrorBreakpointResolution2::GetBreakpointType
 Obtient le type de point d’arrêt.  
@@ -50,7 +50,7 @@ int GetBreakpointType(
  Cette méthode retourne le type du point d’arrêt qui n’a pas pu établir une liaison, ce qui nécessite un événement d’erreur de point d’arrêt.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour une simple `CDebugErrorBreakpointResolution` objet qui expose la [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) interface.  
+ L’exemple suivant montre comment implémenter cette méthode pour une simple `CDebugErrorBreakpointResolution` objet qui expose le [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) interface.  
   
 ```  
 HRESULT CDebugErrorBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)    

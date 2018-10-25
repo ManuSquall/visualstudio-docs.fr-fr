@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71cf547a1ea3599de8926e40ca5a43f3bdea0f71
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: dfa48d5675f1fca01a23218e1d45e0382130bd5d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758319"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935911"
 ---
 # <a name="throw-activity-designer"></a>Concepteur d'activités Throw
 
@@ -38,13 +38,13 @@ Le **lever** Concepteur d’activités peut être déplacé de la **boîte à ou
 Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.Throw> et décrit comment elles sont utilisées dans le concepteur.
 
 |Nom de la propriété|Obligatoire|Utilisation|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Spécifie le nom convivial facultatif de l'activité <xref:System.Activities.Statements.Throw>. La valeur par défaut est Throw.|
 |<xref:System.Activities.Statements.Throw.Exception%2A>|True|Exception à lever. Cette exception doit dériver de <xref:System.Exception>. Pour spécifier l'exception, tapez une expression Visual Basic dans la grille des propriétés.|
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Collection](../workflow-designer/collection-activity-designers.md)
-- [rethrow](../workflow-designer/rethrow-activity-designer.md)
+- [Rethrow](../workflow-designer/rethrow-activity-designer.md)
 - [Concepteur d’activités Throw](../workflow-designer/throw-activity-designer.md)
 - [TryCatch](../workflow-designer/trycatch-activity-designer.md)
