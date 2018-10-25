@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: a197952bcc392f84db3f612a158817237e077d36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 60bb855202cfb333820fe2292fedc0b31608c5c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202278"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949017"
 ---
 # <a name="how-to-save-dataset-changes-to-a-database"></a>Comment : enregistrer les modifications apportées à un groupe de données dans une base de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,15 +69,15 @@ Une fois que les données dans votre jeu de données a été modifiées et valid
 ## <a name="updating-two-related-tables-in-a-dataset"></a>La mise à jour deux Tables associées dans un jeu de données  
  Lors de la mise à jour des tables associées dans un jeu de données, il est important de mettre à jour dans l’ordre correct pour réduire le risque de violer les contraintes d’intégrité référentielle. L’ordre d’exécution des commandes respectera également les indices de la <xref:System.Data.DataRowCollection> dans le jeu de données. Pour empêcher les erreurs d’intégrité des données de déclenchement, la meilleure solution consiste à mettre à jour de la base de données dans l’ordre suivant :  
   
-1.  Table enfant : supprimer des enregistrements.  
+1. Table enfant : supprimer des enregistrements.  
   
-2.  Table parente : insérer, mettre à jour et supprimer des enregistrements.  
+2. Table parente : insérer, mettre à jour et supprimer des enregistrements.  
   
-3.  Table enfant : insérer et mettre à jour des enregistrements.  
+3. Table enfant : insérer et mettre à jour des enregistrements.  
   
- Pour plus d’informations sur l’enregistrement des données provenant de plusieurs tables, consultez [enregistrer les données dans une base de données (plusieurs tables)](../data-tools/save-data-to-a-database-multiple-tables.md).  
+   Pour plus d’informations sur l’enregistrement des données provenant de plusieurs tables, consultez [enregistrer les données dans une base de données (plusieurs tables)](../data-tools/save-data-to-a-database-multiple-tables.md).  
   
- Si vous mettez à jour deux ou plusieurs tables connexes, vous devez inclure toute la logique de mise à jour dans une transaction. Une transaction est un processus qui garantit que toutes les modifications associées apportées à une base de données sont réussies avant de les valider. Pour plus d’informations, consultez [Transactions et la concurrence](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
+   Si vous mettez à jour deux ou plusieurs tables connexes, vous devez inclure toute la logique de mise à jour dans une transaction. Une transaction est un processus qui garantit que toutes les modifications associées apportées à une base de données sont réussies avant de les valider. Pour plus d’informations, consultez [Transactions et la concurrence](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
   
 #### <a name="to-update-two-related-tables-using-a-tableadapter"></a>Pour mettre à jour deux tables connexes à l’aide d’un TableAdapter  
   

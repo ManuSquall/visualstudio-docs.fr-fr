@@ -17,15 +17,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c51a7f79165d421f080d05088418d02a48680b66
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ac15ee59299653c71c2d1036e8318a0fee2b693c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767606"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927565"
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;mettre à jour&gt; élément (développement Office dans Visual Studio)
-  Le `update` élément spécifie la fréquence à laquelle la solution recherchera les mises à jour.  
+  Le `update` élément spécifie la fréquence à laquelle la solution vérifie les mises à jour.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,25 +40,25 @@ ms.locfileid: "34767606"
 ```  
   
 ## <a name="elements-and-attributes"></a>Éléments et attributs  
- L’élément `update` est obligatoire et se trouve dans l’espace de noms `vstav3`.  
+ L’élément `update` est obligatoire et se trouve dans l’espace de noms `vstav3` .  
   
- Le `update` élément a les attributs suivants.  
+ L’élément `update` a les attributs suivants.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`enabled`|Obligatoire. Définissez activé à une des valeurs suivantes :<br /><br /> -   **true** pour rechercher les mises à jour.<br />-   **false** pour empêcher la vérification des mises à jour.|  
+|`enabled`|Obligatoire. Définissez activé sur l’une des valeurs suivantes :<br /><br /> -   **true** pour rechercher les mises à jour.<br />-   **false** pour empêcher la vérification des mises à jour.|  
   
- Le `update` élément possède les éléments enfants suivants.  
+ L’élément `update` comporte les éléments enfants suivants.  
   
 ### <a name="expiration"></a>expiration  
- L’élément `expiration` est obligatoire et se trouve dans l’espace de noms `vstav3`. Cet élément spécifie l’intervalle auquel la solution vérifie les mises à jour.  
+ L’élément `expiration` est obligatoire et se trouve dans l’espace de noms `vstav3` . Cet élément spécifie l’intervalle auquel la solution vérifie les mises à jour.  
   
- Le `expiration` élément a les attributs suivants.  
+ L’élément `expiration` a les attributs suivants.  
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`maximumAge`|   Obligatoire. Valeur égale à un entier.|  
-|`unit`|Obligatoire. Définissez `unit` à une des valeurs suivantes :<br /><br /> -   **Heures**<br />-   **Jours d’utilisation**<br />-   **Semaines**|  
+|`maximumAge`| Obligatoire. Définissez ce paramètre en entier.|  
+|`unit`|Obligatoire. Définissez `unit` à une des valeurs suivantes :<br /><br /> -   **Heures**<br />-   **Jours**<br />-   **Semaines**|  
   
 ## <a name="example-of-always-checking-for-updates"></a>Exemple de recherche toujours les mises à jour  
   

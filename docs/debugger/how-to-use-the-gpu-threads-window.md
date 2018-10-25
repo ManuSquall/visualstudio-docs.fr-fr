@@ -20,37 +20,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c99e0e1bf64a6a88778d4bfcf27a796916a0f044
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f4f4577fc7e1a26481ff4ab5aa94888cf5668adf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38800917"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825339"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Comment : utiliser la fenêtre Threads GPU
 Dans la fenêtre Threads GPU, vous pouvez visualiser et utiliser les threads qui s'exécutent sur le GPU dans l'application que vous déboguez. Pour plus d’informations sur les applications qui s’exécutent sur le GPU, consultez [présentation de C++ AMP](/cpp/parallel/amp/cpp-amp-overview).  
   
  La fenêtre Threads GPU contient une table dans laquelle chaque ligne représente un ensemble de threads GPU qui ont les mêmes valeurs dans toutes les colonnes. Vous pouvez trier, réorganiser, supprimer et regrouper les éléments qui figurent dans les colonnes. Vous pouvez marquer ou supprimer l'indicateur, figer et libérer (reprendre) les threads à partir de la fenêtre Threads GPU. Les colonnes suivantes sont affichées dans la fenêtre Threads GPU :  
   
--   La colonne d'indicateur, où vous pouvez marquer un thread auquel vous souhaitez apporter une attention spéciale.  
+- La colonne d'indicateur, où vous pouvez marquer un thread auquel vous souhaitez apporter une attention spéciale.  
   
--   Colonne de thread active, dans lequel une flèche jaune indique que le thread actuel.  
+- Colonne de thread active, dans lequel une flèche jaune indique que le thread actuel.  
   
--   Le **le nombre de threads** colonne qui affiche le nombre de threads au même emplacement.  
+- Le **le nombre de threads** colonne qui affiche le nombre de threads au même emplacement.  
   
--   Le **ligne** colonne qui affiche la ligne de code où se trouve chaque groupe de threads.  
+- Le **ligne** colonne qui affiche la ligne de code où se trouve chaque groupe de threads.  
   
--   Le **adresse** colonne qui affiche l’adresse d’instruction où se trouve chaque groupe de threads. Par défaut, cette colonne est masquée.  
+- Le **adresse** colonne qui affiche l’adresse d’instruction où se trouve chaque groupe de threads. Par défaut, cette colonne est masquée.  
   
--   Le **emplacement** colonne, qui est l’emplacement dans le code source.  
+- Le **emplacement** colonne, qui est l’emplacement dans le code source.  
   
--   Le **état** colonne, ce qui indique si le thread est actif, bloqué, non démarré ou complète.  
+- Le **état** colonne, ce qui indique si le thread est actif, bloqué, non démarré ou complète.  
   
--   Le **vignette** colonne, ce qui indique l’index de la mosaïque pour les threads dans la ligne.  
+- Le **vignette** colonne, ce qui indique l’index de la mosaïque pour les threads dans la ligne.  
   
- L'en-tête du tableau montre la mosaïque et le thread en cours d'affichage.  
+  L'en-tête du tableau montre la mosaïque et le thread en cours d'affichage.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ### <a name="to-display-the-gpu-threads-window"></a>Pour afficher la fenêtre Threads GPU  
   
