@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 18045c8b6c388839f09ba42284ab498caf11dbf5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 35506967ee20ff6c936e2de4a19d7860e154e4c5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182063"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866569"
 ---
 # <a name="item-definitions"></a>Définitions d'éléments
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,11 +94,11 @@ ms.locfileid: "49182063"
 ## <a name="additive-and-multiple-definitions"></a>Définitions additives et multiples  
  Quand vous ajoutez des définitions ou que vous utilisez plusieurs ItemDefinitionGroup, gardez à l’esprit que :  
   
--   Une spécification de métadonnées supplémentaires est ajoutée au type.  
+- Une spécification de métadonnées supplémentaires est ajoutée au type.  
   
--   La dernière spécification est prioritaire.  
+- La dernière spécification est prioritaire.  
   
- Quand vous avez plusieurs ItemDefinitionGroup, chaque spécification ultérieure ajoute ses métadonnées à la définition précédente. Exemple :  
+  Quand vous avez plusieurs ItemDefinitionGroup, chaque spécification ultérieure ajoute ses métadonnées à la définition précédente. Exemple :  
   
 ```  
 <ItemDefinitionGroup>  

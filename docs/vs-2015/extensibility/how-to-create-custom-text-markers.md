@@ -15,58 +15,58 @@ ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 05c8e43d90837ec73f4d6674e35581eecc5d2e3e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 88828eb5abbb9a4e81d69bae9662c291cf5fd9b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181621"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885705"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Comment : créer des marqueurs de texte personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Si vous souhaitez créer un marqueur de texte personnalisé pour mettre en évidence ou organiser le code, vous devez procédez comme suit :  
   
--   Inscrire le nouveau marqueur de texte, afin que les autres outils puissent y accéder  
+- Inscrire le nouveau marqueur de texte, afin que les autres outils puissent y accéder  
   
--   Fournir une implémentation par défaut et la configuration du marqueur de texte  
+- Fournir une implémentation par défaut et la configuration du marqueur de texte  
   
--   Créer un service qui peut être utilisé par d’autres processus s’utilisent le marqueur de texte  
+- Créer un service qui peut être utilisé par d’autres processus s’utilisent le marqueur de texte  
   
- Pour plus d’informations sur la façon d’appliquer un marqueur de texte dans une région de code, consultez [Comment : utiliser les marqueurs de texte](../extensibility/how-to-use-text-markers.md).  
+  Pour plus d’informations sur la façon d’appliquer un marqueur de texte dans une région de code, consultez [Comment : utiliser les marqueurs de texte](../extensibility/how-to-use-text-markers.md).  
   
 ### <a name="to-register-a-custom-marker"></a>Pour inscrire un marqueur personnalisé  
   
-1.  Créez une entrée de Registre comme suit :  
+1. Créez une entrée de Registre comme suit :  
   
-     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* \Text Editor\External marqueurs\\*\<MarkerGUID >*  
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* \Text Editor\External marqueurs\\*\<MarkerGUID >*  
   
-     *\<MarkerGUID >* est un `GUID` utilisé pour identifier le marqueur en cours d’ajout  
+    <em>\<MarkerGUID ></em>est un `GUID` utilisé pour identifier le marqueur en cours d’ajout  
   
-     *\<Version >* est la version de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], par exemple 8.0  
+    *\<Version >* est la version de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], par exemple 8.0  
   
-     *\<PackageGUID >* est le GUID du VSPackage qui implémente l’objet automation.  
+    *\<PackageGUID >* est le GUID du VSPackage qui implémente l’objet automation.  
   
-    > [!NOTE]
-    >  Le chemin d’accès racine de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* peut être remplacée par une autre racine lors de l’initialisation de l’interpréteur de commandes de Visual Studio, pour plus d’informations, consultez [Commutateurs de ligne de commande](../extensibility/command-line-switches-visual-studio-sdk.md).  
+   > [!NOTE]
+   >  Le chemin d’accès racine de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* peut être remplacée par une autre racine lors de l’initialisation de l’interpréteur de commandes de Visual Studio, pour plus d’informations, consultez [Commutateurs de ligne de commande](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2.  Créez quatre valeurs sous HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* \Text Editor\External marqueurs\\*\<MarkerGUID >*  
+2. Créez quatre valeurs sous HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version >* \Text Editor\External marqueurs\\*\<MarkerGUID >*  
   
-    -   (Default)  
+   -   (Default)  
   
-    -   Service  
+   -   Service  
   
-    -   DisplayName  
+   -   DisplayName  
   
-    -   Package  
+   -   Package  
   
-    -   `Default` Cette entrée est facultative de type REG_SZ. Lorsque la valeur, la valeur de l’entrée est une chaîne contenant des informations d’identification utiles, par exemple « Custom marqueur de texte ».  
+   -   `Default` Cette entrée est facultative de type REG_SZ. Lorsque la valeur, la valeur de l’entrée est une chaîne contenant des informations d’identification utiles, par exemple « Custom marqueur de texte ».  
   
-    -   `Service` est une entrée de type REG_SZ contenant la chaîne GUID du service qui fournit le marqueur de texte personnalisé par proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. Le format est {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+   -   `Service` est une entrée de type REG_SZ contenant la chaîne GUID du service qui fournit le marqueur de texte personnalisé par proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. Le format est {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
   
-    -   `DisplayName` est une entrée de type REG_SZ contenant l’ID de ressource du nom du marqueur de texte personnalisé. Le format est #YYYY.  
+   -   `DisplayName` est une entrée de type REG_SZ contenant l’ID de ressource du nom du marqueur de texte personnalisé. Le format est #YYYY.  
   
-    -   `Package` entrée de type REG_SZ contenant le `GUID` du VSPackage qui fournit le service répertorié sous le Service. Le format est {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+   -   `Package` entrée de type REG_SZ contenant le `GUID` du VSPackage qui fournit le service répertorié sous le Service. Le format est {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
   
 ### <a name="to-create-a-custom-text-marker"></a>Pour créer un marqueur de texte personnalisé  
   

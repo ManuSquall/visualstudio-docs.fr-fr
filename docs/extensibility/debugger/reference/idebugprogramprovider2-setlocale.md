@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::SetLocale | Documents Microsoft
+title: IDebugProgramProvider2::SetLocale | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b42e66e51015be02894e3a2d745bfbdfbe77f8e0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5dd64ad2a0d1aa8f4dd361b40597122f3401f232
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120392"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868129"
 ---
 # <a name="idebugprogramprovider2setlocale"></a>IDebugProgramProvider2::SetLocale
-Établit les paramètres régionaux à utiliser pour toutes les ressources spécifiques aux paramètres régionaux.  
+Établit les paramètres régionaux à utiliser pour toutes les ressources spécifiques.  
   
 ## <a name="syntax"></a>Syntaxe  
   

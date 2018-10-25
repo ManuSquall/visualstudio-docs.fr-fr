@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSectionContribs::get_Count | Documents Microsoft
+title: IDiaEnumSectionContribs::get_Count | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: abd6c900303d168e5ab415cec2116d929a04866d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 845af239ac53f9b1ebb25806c053ea29ce5973bf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456505"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869611"
 ---
 # <a name="idiaenumsectioncontribsgetcount"></a>IDiaEnumSectionContribs::get_Count
-Récupère le nombre des contributions de la section.  
+Récupère le nombre de contributions de la section.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,7 +34,7 @@ HRESULT get_Count (
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne le nombre des contributions de la section.  
+ [out] Retourne le nombre de contributions de la section.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  

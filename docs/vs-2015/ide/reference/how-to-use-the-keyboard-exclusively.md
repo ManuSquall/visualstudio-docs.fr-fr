@@ -21,12 +21,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 588f93a89713d42efaba61a34b0dabe5eb2af523
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd4e133ac057de9340900501b16e2c3b1ee7a388
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238521"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862162"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Guide pratique pour utiliser uniquement le clavier
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49238521"
   
 #### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>Pour ajouter des contrôles de la boîte à outils dans un concepteur à l’aide du clavier  
   
-1.  Dans la barre de menus, choisissez **Affichage**, **Boîte à outils**.  
+1. Dans la barre de menus, choisissez **Affichage**, **Boîte à outils**.  
   
-2.  Choisissez les touches Ctrl+Haut ou Ctrl+Bas pour vous déplacer parmi les sections de l’onglet de boîte à outils actuel.  
+2. Choisissez les touches Ctrl+Haut ou Ctrl+Bas pour vous déplacer parmi les sections de l’onglet de boîte à outils actuel.  
   
-3.  Choisissez les touches Haut ou **Bas** pour vous déplacer entre les contrôles.  
+3. Choisissez les touches Haut ou **Bas** pour vous déplacer entre les contrôles.  
   
-4.  Une fois que le contrôle est sélectionné, appuyez sur Entrée.  
+4. Une fois que le contrôle est sélectionné, appuyez sur Entrée.  
   
- Le contrôle est ajouté au formulaire ou au concepteur.  
+   Le contrôle est ajouté au formulaire ou au concepteur.  
   
 ## <a name="dialog-box-options"></a>Options de boîte de dialogue  
  Vous pouvez vous déplacer entre les options d’une boîte de dialogue et modifier les paramètres des options à l’aide du clavier.  

@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSymbolsByAddr::Prev | Documents Microsoft
+title: IDiaEnumSymbolsByAddr::Prev | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8db8e2c5aca3813475afaaa8ff08acf9902075e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e165268c1d31c61ba671f6087cc9922bf37e4103
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468578"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870274"
 ---
 # <a name="idiaenumsymbolsbyaddrprev"></a>IDiaEnumSymbolsByAddr::Prev
 Récupère les symboles précédentes dans l’ordre par adresse.  
@@ -36,16 +36,16 @@ HRESULT Prev (
   
 #### <a name="parameters"></a>Paramètres  
  celt  
- [in] Le nombre de symboles dans l’énumérateur doit être récupéré.  
+ [in] Le nombre de symboles dans l’énumérateur à récupérer.  
   
  rgelt  
- [out] Un tableau qui doit être renseigné avec [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) les objets qui représentent les symboles de votre choisis.  
+ [out] Un tableau qui doit être rempli avec [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objets qui représentent les symboles de votre choisis.  
   
  pceltFetched  
- [out] Retourne le nombre de symboles dans l’énumérateur d’extraction.  
+ [out] Retourne le nombre de symboles dans l’énumérateur extraite.  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’y a aucun symbole précédent. Sinon, retourne un code d'erreur.  
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il en existe aucun symbole précédent. Sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
  Cette méthode met à jour la position de l’énumérateur par le nombre d’éléments extraits.  

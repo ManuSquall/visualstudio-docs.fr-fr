@@ -16,27 +16,27 @@ ms.assetid: a8f3db96-1a13-4e93-9ef6-0861880369e0
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dc9258d8eb3e7b819e068cd246a6dc3d358234d8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 173ff6b7550731262e8f4e3293b6f7c35eac4062
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217618"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858808"
 ---
 # <a name="port-suppliers"></a>Fournisseurs de ports
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 En termes d’architecture du débogueur, une **fournisseur de port**:  
   
--   Est contenue par un serveur et fournit des ports sur demande à ce serveur.  
+- Est contenue par un serveur et fournit des ports sur demande à ce serveur.  
   
--   Peut ajouter et supprimer des ports à partir du serveur contenant.  
+- Peut ajouter et supprimer des ports à partir du serveur contenant.  
   
--   Pouvez énumérer tous les ports dont il a fourni au serveur.  
+- Pouvez énumérer tous les ports dont il a fourni au serveur.  
   
--   Est représenté par un [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) interface, ce qui est inscrit avec Visual Studio via le Registre. Cette interface peut être obtenue en appelant [GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md).  
+- Est représenté par un [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) interface, ce qui est inscrit avec Visual Studio via le Registre. Cette interface peut être obtenue en appelant [GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md).  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fournit un fournisseur de port par défaut et un port par défaut. Si un port personnalisé doit être implémentée, un fournisseur de port personnalisé doit également être implémentées pour fournir ces ports personnalisés.  
+  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fournit un fournisseur de port par défaut et un port par défaut. Si un port personnalisé doit être implémentée, un fournisseur de port personnalisé doit également être implémentées pour fournir ces ports personnalisés.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Serveurs](../../extensibility/debugger/servers-visual-studio-sdk.md)   

@@ -1,5 +1,5 @@
 ---
-title: FIELD_KIND | Documents Microsoft
+title: FIELD_KIND | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35a603310986f42141a04f38c7ce26db0d7326fe
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: df29c9bd876a437dbcf8d797f1dcc51fb05a296f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109660"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868194"
 ---
 # <a name="fieldkind"></a>FIELD_KIND
-Spécifie le type de champ dans un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet.  
+Spécifie le type de champ contenue dans un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -227,9 +227,9 @@ public enum enum_FIELD_KIND {
 ## <a name="remarks"></a>Notes  
  Retourné par un appel à la [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) (méthode).  
   
- En fonction du type de champ, [QueryInterface](/cpp/atl/queryinterface) peut être appelée sur le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface pour une forme plus spécifique de l’interface. Par exemple, si [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) retourne `FIELD_TYPE_METHOD`, vous pouvez ensuite appeler `QueryInterface` sur I`DebugField` pour obtenir le [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) interface.  
+ Selon le type de champ, [QueryInterface](/cpp/atl/queryinterface) peut être appelée sur le [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface pour une forme plus spécifique de l’interface. Par exemple, si [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) retourne `FIELD_TYPE_METHOD`, vous pouvez ensuite appeler `QueryInterface` sur je`DebugField` pour obtenir le [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) interface.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : sh.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

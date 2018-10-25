@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b74279373a11a13fd7e2e3fc47b2eb57e35d981
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a89832fe70e2e19085e8006646de5370b6019cbc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209012"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848616"
 ---
 # <a name="application-properties"></a>Propriétés des applications
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,31 +32,31 @@ Vous pouvez définir les propriétés générales des applications Visual Basic,
   
  Vous pouvez effectuer les tâches suivantes dans le volet **Application** :  
   
--   Spécifier les informations de l'assembly  
+- Spécifier les informations de l'assembly  
   
--   Spécifier l'écran de démarrage d'une application  
+- Spécifier l'écran de démarrage d'une application  
   
--   Spécifier les événements de niveau application  
+- Spécifier les événements de niveau application  
   
--   Changer le nom de l'assembly  
+- Changer le nom de l'assembly  
   
--   Changer l’espace de noms d’une application  
+- Changer l’espace de noms d’une application  
   
--   Changer le type d’une application  
+- Changer le type d’une application  
   
--   Changer l’objet de démarrage d’une application  
+- Changer l’objet de démarrage d’une application  
   
--   Spécifier une icône d'application  
+- Spécifier une icône d'application  
   
--   Activer des styles visuels Windows XP  
+- Activer des styles visuels Windows XP  
   
--   Spécifier le comportement d'instanciation pour une application  
+- Spécifier le comportement d'instanciation pour une application  
   
--   Activer l'authentification utilisateur personnalisée  
+- Activer l'authentification utilisateur personnalisée  
   
--   Spécifier le comportement d'arrêt d'une application  
+- Spécifier le comportement d'arrêt d'une application  
   
- Les tâches réalisables pour votre application dépendent du langage de développement utilisé.  
+  Les tâches réalisables pour votre application dépendent du langage de développement utilisé.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Guide pratique pour spécifier une icône d’application (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  

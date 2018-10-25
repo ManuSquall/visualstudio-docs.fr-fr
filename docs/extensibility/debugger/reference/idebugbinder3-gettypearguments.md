@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetTypeArguments | Documents Microsoft
+title: IDebugBinder3::GetTypeArguments | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f5e06b51cfea731d94cd0eb53d91b4dbdf6b471
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6ed4e1863313dae173d6737970765ca3d5f0b0b3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101714"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879452"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
-Cette méthode récupère une liste de types d’arguments associé à cet objet.  
+Cette méthode récupère une liste des types d’arguments associée à cet objet.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -50,13 +50,13 @@ int GetTypeArguments(
  [in] Nombre de champs à ignorer avant d’obtenir les types d’arguments.  
   
  `count`  
- [in] Le nombre de champs argument à retourner (spécifie également la taille de la `ppFields` tableau).  
+ [in] Le nombre de champs de l’argument à retourner (spécifie également la taille de la `ppFields` tableau).  
   
  `ppFields`  
- [dans, out] Tableau des champs qui seront remplies au retour de cette méthode.  
+ [in, out] Un tableau de champs renseignés au retour de cette méthode.  
   
  `pFetched`  
- [out] \(facultatif) Le nombre d’arguments de type champs retournés.  
+ [out] \(facultatif) Le nombre d’argument de type champs réellement retournés.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  

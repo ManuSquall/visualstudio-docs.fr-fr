@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4202b14fce4c914737989e4a408cd74040c4d0a
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 17daf186920be45a70200cd896a390ab74c4c6d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781930"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873888"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Procédure pas à pas : Liaison de données aux contrôles dans un volet actions Word
   Cette procédure pas à pas illustre la liaison de données aux contrôles dans un volet actions dans Word. Les contrôles illustrent une relation Maître/Détail entre des tables dans une base de données SQL Server.  
@@ -78,28 +78,28 @@ ms.locfileid: "38781930"
   
 ### <a name="to-add-a-data-source-to-the-project"></a>Pour ajouter une source de données au projet  
   
-1.  Si le **des Sources de données** fenêtre n’est pas visible, affichez-la en, sur la barre de menus, choisissez **vue** > **Windows autres**  >   **Sources de données**.  
+1. Si le **des Sources de données** fenêtre n’est pas visible, affichez-la en, sur la barre de menus, choisissez **vue** > **Windows autres**  >   **Sources de données**.  
   
-    > [!NOTE]  
-    >  Si **afficher les Sources de données** n’est pas disponible, cliquez sur le document Word, puis vérifiez à nouveau.  
+   > [!NOTE]  
+   >  Si **afficher les Sources de données** n’est pas disponible, cliquez sur le document Word, puis vérifiez à nouveau.  
   
-2.  Cliquez sur **ajouter une nouvelle Source de données** pour démarrer le **Assistant de Configuration de Source de données**.  
+2. Cliquez sur **ajouter une nouvelle Source de données** pour démarrer le **Assistant de Configuration de Source de données**.  
   
-3.  Sélectionnez **base de données** puis cliquez sur **suivant**.  
+3. Sélectionnez **base de données** puis cliquez sur **suivant**.  
   
-4.  Sélectionnez une connexion de données à la base de données Northwind exemple SQL Server, ou ajouter une nouvelle connexion à l’aide de la **nouvelle connexion** bouton.  
+4. Sélectionnez une connexion de données à la base de données Northwind exemple SQL Server, ou ajouter une nouvelle connexion à l’aide de la **nouvelle connexion** bouton.  
   
-5.  Cliquez sur **Suivant**.  
+5. Cliquez sur **Suivant**.  
   
-6.  Désactivez l’option pour enregistrer la connexion si elle est sélectionnée, puis cliquez sur **suivant**.  
+6. Désactivez l’option pour enregistrer la connexion si elle est sélectionnée, puis cliquez sur **suivant**.  
   
-7.  Développez le **Tables** nœud dans le **objets de base de données** fenêtre.  
+7. Développez le **Tables** nœud dans le **objets de base de données** fenêtre.  
   
-8.  Sélectionnez la case à cocher à côté du **fournisseurs** et **produits** tables.  
+8. Sélectionnez la case à cocher à côté du **fournisseurs** et **produits** tables.  
   
 9. Cliquez sur **Terminer**.  
   
- L’Assistant ajoute les **fournisseurs** table et **produits** de la table vers le **des Sources de données** fenêtre. Il ajoute également un dataset typé à votre projet qui est visible dans **l’Explorateur de solutions**.  
+   L’Assistant ajoute les **fournisseurs** table et **produits** de la table vers le **des Sources de données** fenêtre. Il ajoute également un dataset typé à votre projet qui est visible dans **l’Explorateur de solutions**.  
   
 ### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Pour ajouter des contrôles Windows Forms lié aux données à un contrôle de volet actions  
   

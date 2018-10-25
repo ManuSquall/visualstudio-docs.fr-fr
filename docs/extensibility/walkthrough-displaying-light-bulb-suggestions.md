@@ -11,33 +11,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 717e8f721b57ec3d7bde04deed167fa2d6461517
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 16b9d56daab6eda1ef1cd9c31d8cc4d720f9a08e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500512"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875890"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Procédure pas à pas : Affichage de suggestions ampoule
 Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour afficher un ensemble d’actions, par exemple, des correctifs pour les problèmes identifiés par les analyseurs de code intégrés ou la refactorisation de code.  
   
  Dans les éditeurs Visual c# et Visual Basic, vous pouvez également utiliser .NET Compiler Platform (« Roslyn ») pour écrire et empaqueter vos propres analyseurs de code avec des actions qui s’affiche automatiquement les ampoules. Pour plus d'informations, voir :  
   
--   [Comment : Écrire un c# diagnostic et un correctif de code](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [Comment : Écrire un c# diagnostic et un correctif de code](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
--   [Comment : Écrire un diagnostic de Visual Basic et la correction du code](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [Comment : Écrire un diagnostic de Visual Basic et la correction du code](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
- Autres langages tels que C++ fournissent également des ampoules pour certaines actions rapides, par exemple, une suggestion pour créer une implémentation de stub de cette fonction.  
+  Autres langages tels que C++ fournissent également des ampoules pour certaines actions rapides, par exemple, une suggestion pour créer une implémentation de stub de cette fonction.  
   
- Voici à quoi ressemble une ampoule. Dans un projet Visual Basic ou Visual c#, une ligne ondulée rouge s’affiche sous un nom de variable lorsqu’il n’est pas valide. Si vous déplacez la souris sur l’identificateur non valide, une ampoule apparaît près du curseur.  
+  Voici à quoi ressemble une ampoule. Dans un projet Visual Basic ou Visual c#, une ligne ondulée rouge s’affiche sous un nom de variable lorsqu’il n’est pas valide. Si vous déplacez la souris sur l’identificateur non valide, une ampoule apparaît près du curseur.  
   
- ![ampoule](../extensibility/media/lightbulb.png "LightBulb")  
+  ![ampoule](../extensibility/media/lightbulb.png "LightBulb")  
   
- Si vous cliquez sur la flèche orientée vers l’ampoule, un ensemble d’actions suggérées s’affiche, ainsi que d’un aperçu de l’action sélectionnée. Dans ce cas, il affiche les modifications sont apportées à votre code si vous exécutez l’action.  
+  Si vous cliquez sur la flèche orientée vers l’ampoule, un ensemble d’actions suggérées s’affiche, ainsi que d’un aperçu de l’action sélectionnée. Dans ce cas, il affiche les modifications sont apportées à votre code si vous exécutez l’action.  
   
- ![aperçu d’ampoule](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
+  ![aperçu d’ampoule](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
- Vous pouvez utiliser des ampoules pour fournir vos propres actions suggérées. Par exemple, vous pouvez fournir des actions pour déplacer l’ouverture des accolades pour une nouvelle ligne ou les déplacer à la fin de la ligne précédente. La procédure suivante montre comment créer une ampoule qui s’affiche sur le mot actuel et suggère deux actions : **convertir en majuscules** et **convertir en minuscules**.  
+  Vous pouvez utiliser des ampoules pour fournir vos propres actions suggérées. Par exemple, vous pouvez fournir des actions pour déplacer l’ouverture des accolades pour une nouvelle ligne ou les déplacer à la fin de la ligne précédente. La procédure suivante montre comment créer une ampoule qui s’affiche sur le mot actuel et suggère deux actions : **convertir en majuscules** et **convertir en minuscules**.  
   
 ## <a name="prerequisites"></a>Prérequis  
  À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS par la suite. Pour plus d’informations, consultez [installer le SDK Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -222,14 +222,14 @@ Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour 
   
 1.  Dans le projet, ajoutez une référence à *Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll* et définissez **copie locale** à `False`.  
   
-2.  Créer deux classes, le premier nommé `UpperCaseSuggestedAction` et la seconde nommée `LowerCaseSuggestedAction`. Ces deux classes implémentent <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>.  
+2.  Créez deux classes, la première nommée `UpperCaseSuggestedAction` et la seconde nommée `LowerCaseSuggestedAction`. Ces deux classes implémentent <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>.  
   
     ```csharp  
     internal class UpperCaseSuggestedAction : ISuggestedAction   
     internal class LowerCaseSuggestedAction : ISuggestedAction  
     ```  
   
-     Les deux classes sont similaires à ceci près que l’une appelle <xref:System.String.ToUpper%2A> et les autres appels <xref:System.String.ToLower%2A>. Les étapes suivantes traitent uniquement de la classe d’action de mise en majuscules, mais vous devez implémenter les deux classes. Appliquez les étapes d’implémentation de l’action de mise en majuscules comme modèle pour l’implémentation de l’action de mise en minuscules.  
+     Elles sont identiques, sauf que l’une appelle <xref:System.String.ToUpper%2A> et l’autre appelle <xref:System.String.ToLower%2A>. Les étapes suivantes traitent uniquement de la classe d’action de mise en majuscules, mais vous devez implémenter les deux classes. Appliquez les étapes d’implémentation de l’action de mise en majuscules comme modèle pour l’implémentation de l’action de mise en minuscules.  
   
 3.  Ajoutez le code suivant à l’aide des instructions pour ces classes :  
   
@@ -319,7 +319,7 @@ Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour 
     }  
     ```  
   
-9. Implémentez la <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> méthode en remplaçant le texte dans l’étendue par son équivalent en majuscule.  
+9. Implémentez la méthode <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> en remplaçant le texte dans l’étendue par son équivalent en majuscules.  
   
     ```csharp  
     public void Invoke(CancellationToken cancellationToken)  

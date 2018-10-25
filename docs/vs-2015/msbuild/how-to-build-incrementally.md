@@ -18,12 +18,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fba24434b10a9606c800c1453d31d7d3b52b234
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 88ad4f984af2be6884005c5ec3c7dec4d7b5c6aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275052"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844612"
 ---
 # <a name="how-to-build-incrementally"></a>Guide pratique pour générer des builds incrémentielles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ Quand vous générez un projet volumineux, il est important de ne pas regénére
   
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>Pour spécifier les entrées et les sorties d’une cible  
   
--   Utilisez les attributs `Inputs` et `Outputs` de l’élément `Target`. Exemple :  
+- Utilisez les attributs `Inputs` et `Outputs` de l’élément `Target`. Exemple :  
   
-    ```  
-    <Target Name="Build"  
-        Inputs="@(CSFile)"  
-        Outputs="hello.exe">  
-    ```  
+  ```  
+  <Target Name="Build"  
+      Inputs="@(CSFile)"  
+      Outputs="hello.exe">  
+  ```  
   
- [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] peut comparer les horodateurs des fichiers d’entrée avec ceux des fichiers de sortie et déterminer s’il faut ignorer, générer ou regénérer partiellement une cible. Dans l’exemple suivant, si un fichier de la liste d’éléments `@(CSFile)` est plus récent que le fichier hello.exe, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] exécute la cible ; sinon, il l’ignore :  
+  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] peut comparer les horodateurs des fichiers d’entrée avec ceux des fichiers de sortie et déterminer s’il faut ignorer, générer ou regénérer partiellement une cible. Dans l’exemple suivant, si un fichier de la liste d’éléments `@(CSFile)` est plus récent que le fichier hello.exe, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] exécute la cible ; sinon, il l’ignore :  
   
 ```  
 <Target Name="Build"   
@@ -67,13 +67,13 @@ Quand vous générez un projet volumineux, il est important de ne pas regénére
 ## <a name="example"></a>Exemple  
  L’exemple suivant utilise un projet qui génère des fichiers d’aide pour un système d’aide éventuel. Le projet fonctionne en convertissant les fichiers source .txt en fichiers .content intermédiaires, qui sont ensuite combinés avec les fichiers de métadonnées XML pour produire le dernier fichier .help utilisé par le système d’aide. Le projet utilise les tâches hypothétiques suivantes :  
   
--   `GenerateContentFiles` : convertit des fichiers .txt en fichiers .content.  
+- `GenerateContentFiles` : convertit des fichiers .txt en fichiers .content.  
   
--   `BuildHelp` : combine des fichiers .content et des fichiers de métadonnées XML pour générer le dernier fichier .help.  
+- `BuildHelp` : combine des fichiers .content et des fichiers de métadonnées XML pour générer le dernier fichier .help.  
   
- Le projet utilise les transformations pour créer un mappage un-à-un entre les entrées et les sorties de la tâche `GenerateContentFiles`. Pour plus d’informations, consultez l’article [Transforms (Transformations MSBuild)](../msbuild/msbuild-transforms.md). De même, l’élément `Output` est défini de façon à utiliser automatiquement les sorties de la tâche `GenerateContentFiles` comme entrées de la tâche `BuildHelp`.  
+  Le projet utilise les transformations pour créer un mappage un-à-un entre les entrées et les sorties de la tâche `GenerateContentFiles`. Pour plus d’informations, consultez l’article [Transforms (Transformations MSBuild)](../msbuild/msbuild-transforms.md). De même, l’élément `Output` est défini de façon à utiliser automatiquement les sorties de la tâche `GenerateContentFiles` comme entrées de la tâche `BuildHelp`.  
   
- Ce fichier projet contient à la fois les cibles `Convert` et `Build`. Les tâches `GenerateContentFiles` et `BuildHelp` sont placées respectivement dans les cibles `Convert` et `Build` pour que chaque cible puisse être générée de façon incrémentielle. En utilisant l’élément `Output`, les sorties de la tâche `GenerateContentFiles` sont placées dans la liste d’éléments `ContentFile`, où elles peuvent être utilisées comme entrées pour la tâche `BuildHelp`. En utilisant l’élément `Output` de cette façon, vous pouvez utiliser automatiquement les sorties d’une tâche comme entrées d’une autre tâche. Vous n’avez donc pas à répertorier manuellement les éléments ou les listes d’éléments dans chaque tâche.  
+  Ce fichier projet contient à la fois les cibles `Convert` et `Build`. Les tâches `GenerateContentFiles` et `BuildHelp` sont placées respectivement dans les cibles `Convert` et `Build` pour que chaque cible puisse être générée de façon incrémentielle. En utilisant l’élément `Output`, les sorties de la tâche `GenerateContentFiles` sont placées dans la liste d’éléments `ContentFile`, où elles peuvent être utilisées comme entrées pour la tâche `BuildHelp`. En utilisant l’élément `Output` de cette façon, vous pouvez utiliser automatiquement les sorties d’une tâche comme entrées d’une autre tâche. Vous n’avez donc pas à répertorier manuellement les éléments ou les listes d’éléments dans chaque tâche.  
   
 > [!NOTE]
 >  Bien que la cible `GenerateContentFiles` puisse être générée de façon incrémentielle, toutes les sorties de cette cible sont toujours exigées comme entrées de la cible `BuildHelp`. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] fournit automatiquement toutes les sorties d’une cible comme entrées d’une autre cible quand vous utilisez l’élément `Output`.  

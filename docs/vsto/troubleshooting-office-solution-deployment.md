@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9bed7d523d91b43abe5455ea19567da5647f468c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: bba978da26a2aa7b7263fa5d2e88fa8acdc272f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774651"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886001"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Résoudre les problèmes de déploiement de solutions Office
   Cette rubrique contient des informations sur la résolution des problèmes courants que vous pouvez rencontrer lorsque vous déployez des solutions Office.  
@@ -35,11 +35,11 @@ ms.locfileid: "43774651"
 ## <a name="change-the-assembly-name-causes-conflicts"></a>Modifiez le nom de l’assembly provoque des conflits  
  Si vous modifiez le **nom de l’Assembly** valeur dans le **Application** page de la **Concepteur de projets** une fois que vous avez déjà déployé une solution, les outils de publication modifient le Package d’installation de disposer d’une instance *Setup.exe* fichier et deux manifestes de déploiement. Si vous déployez deux fichiers manifeste, les conditions suivantes peuvent se produire :  
   
--   Si l’utilisateur final installe les deux versions, l’application charge les deux compléments VSTO.  
+- Si l’utilisateur final installe les deux versions, l’application charge les deux compléments VSTO.  
   
--   Si le complément VSTO a été installé avant que le nom de l’assembly ait été modifié, l’utilisateur final ne recevra jamais des mises à jour.  
+- Si le complément VSTO a été installé avant que le nom de l’assembly ait été modifié, l’utilisateur final ne recevra jamais des mises à jour.  
   
- Pour éviter ces conditions, ne modifiez pas la **nom de l’Assembly** valeur après avoir déployé la solution.  
+  Pour éviter ces conditions, ne modifiez pas la **nom de l’Assembly** valeur après avoir déployé la solution.  
   
 ## <a name="check-for-updates-takes-a-long-time"></a>Vérifiez si les mises à jour prend beaucoup de temps  
  Visual Studio 2010 Tools pour Office runtime fournit une entrée de Registre que les administrateurs peuvent utiliser pour définir la valeur de délai d’attente pour télécharger les manifestes et la solution.  
@@ -63,7 +63,7 @@ ms.locfileid: "43774651"
  Vous pouvez ajouter le .NET Framework, la [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]et les assemblys PIA (Primary Interop Assembly) Office à votre package d’installation comme composants requis déployés avec votre solution Office. Pour plus d’informations sur la façon d’installer les assemblys PIA, consultez [configurer un ordinateur pour développer des solutions Office](../vsto/configuring-a-computer-to-develop-office-solutions.md) et [Comment : assemblys PIA Office installer](../vsto/how-to-install-office-primary-interop-assemblies.md).  
   
 ## <a name="publish-using-localhost-can-cause-installation-problems"></a>Publier à l’aide de « Localhost » peut entraîner des problèmes d’installation  
- Lorsque vous utilisez « http://localhost» comme emplacement de publication ou d’installation pour les solutions au niveau du document, le **Assistant Publication** ne convertit pas la chaîne dans le nom réel de l’ordinateur. Dans ce cas, la solution doit être installée sur l’ordinateur de développement. Pour que des solutions déployées utilisent IIS sur l’ordinateur de développement, utilisez le nom complet pour tous les emplacements HTTP/HTTPS/FTP au lieu de localhost.  
+ Lorsque vous utilisez «<http://localhost>» comme emplacement de publication ou d’installation pour les solutions au niveau du document, le **Assistant Publication** ne convertit pas la chaîne dans le nom réel de l’ordinateur. Dans ce cas, la solution doit être installée sur l’ordinateur de développement. Pour que des solutions déployées utilisent IIS sur l’ordinateur de développement, utilisez le nom complet pour tous les emplacements HTTP/HTTPS/FTP au lieu de localhost.  
   
 ## <a name="cached-assemblies-are-loaded-instead-of-updated-assemblies"></a>Assemblys mis en cache sont chargés au lieu des assemblys mis à jour  
  Fusion, le chargeur d’assembly .Net Framework, charge la copie mise en cache des assemblys lorsque le chemin de sortie du projet est sur un partage de fichiers réseau, que l’assembly est signé avec un nom fort et que la version d’assembly de la personnalisation ne change pas. Si vous mettez à jour un assembly qui satisfait ces conditions, la mise à jour ne s’affiche pas lors de la prochaine exécution du projet, car la copie mise en cache est chargée.  
@@ -72,13 +72,13 @@ ms.locfileid: "43774651"
   
 ### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>Pour télécharger des assemblys au lieu de charger des copies mises en cache  
   
-1.  Dans la barre de menus, choisissez **projet**, _nom_projet_**propriétés**.  
+1. Dans la barre de menus, choisissez **Projet**, _Propriétés de_**NomProjet**.  
   
-2.  Dans la page **Application** , choisissez **Informations de l’assembly**.  
+2. Dans la page **Application** , choisissez **Informations de l’assembly**.  
   
-3.  Dans la première **Version de l’Assembly** , entrez un astérisque (\*), puis choisissez le **OK** bouton.  
+3. Dans la première **Version de l’Assembly** , entrez un astérisque (\*), puis choisissez le **OK** bouton.  
   
- Après avoir modifié la version d’assembly, vous pouvez continuer à signer votre assembly avec un nom fort, et Fusion chargera la version de la personnalisation.  
+   Après avoir modifié la version d’assembly, vous pouvez continuer à signer votre assembly avec un nom fort, et Fusion chargera la version de la personnalisation.  
   
 ## <a name="installation-fails-when-the-uri-has-characters-that-arent-us-ascii"></a>L’installation échoue si l’URI comporte des caractères qui ne sont pas US-ASCII  
  Lorsque vous publiez une solution Office sur un emplacement HTTP/HTTPS/FTP, le chemin d’accès ne peut contenir aucun caractère Unicode qui ne sont pas en US-ASCII. Ces caractères peuvent provoquer un comportement anormal dans le programme d’installation. Utilisez des caractères US-ASCII pour le chemin d’installation.  
@@ -91,15 +91,15 @@ ms.locfileid: "43774651"
 ## <a name="uncaught-exception-or-method-not-found-error-when-you-install-a-solution"></a>Exception non interceptée ou méthode introuvable erreur lorsque vous installez une solution  
  Lorsque vous installez des solutions Office en ouvrant le manifeste de déploiement (un *.vsto* fichier), messages d’erreur Office application, document ou classeur, les conditions suivantes peuvent apparaître :  
   
--   Méthode introuvable.  
+- Méthode introuvable.  
   
--   MissingMethodException.  
+- MissingMethodException.  
   
--   Exception non interceptée.  
+- Exception non interceptée.  
   
- Pour que ces messages d’erreur ne s’affichent pas, installez la solution en exécutant le programme d’installation.  
+  Pour que ces messages d’erreur ne s’affichent pas, installez la solution en exécutant le programme d’installation.  
   
- Lorsque vous installez la solution sans exécuter le programme d’installation, celui-ci ne recherche pas ou n’installe pas les composants requis. Le programme d’installation vérifie si la version des composants requis est correcte et les installe si nécessaire.  
+  Lorsque vous installez la solution sans exécuter le programme d’installation, celui-ci ne recherche pas ou n’installe pas les composants requis. Le programme d’installation vérifie si la version des composants requis est correcte et les installe si nécessaire.  
   
 ## <a name="manifest-registry-keys-for-add-ins-change-after-an-installshield-limited-edition-project-is-built"></a>Manifeste des clés de Registre pour la modification de Add-ins après avoir généré un projet InstallShield Limited Edition  
  La clé de Registre de manifeste qui fait partie d’une installation de complément VSTO programme parfois sont modifiées à partir de *.vsto* à *. dll.manifest* lorsque vous générez un projet InstallShield Limited Edition.  

@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 760dc4f859de68040676439d84fea60d23602aeb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 327de2e75b089e7ba836837c3c29c0d92d9ad864
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292784"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852711"
 ---
 # <a name="visual-studio-ide"></a>Environnement IDE de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,31 +116,31 @@ Si vous souhaitez savoir sur les nouvelles fonctionnalités dans Visual Studio 2
 
  L'éditeur de texte est très interactif (si vous voulez qu'il le soit) et offre de nombreuses fonctionnalités de productivité qui vous aident à écrire du code plus vite et mieux. Les fonctionnalités varient selon le langage, et leur utilisation n'est pas obligatoire (tapez « Éditeur » dans la zone Lancement rapide) pour activer ou désactiver les fonctionnalités. Voici quelques-unes des fonctionnalités de productivité courantes :
 
-1.  La[Refactoring](../ide/refactoring-in-visual-studio.md) inclut des opérations comme le renommage intelligent des variables, le déplacement de lignes de code sélectionnées dans une fonction distincte, le déplacement de code à d’autres endroits, la réorganisation des paramètres des fonctions, etc.
+1. La[Refactoring](../ide/refactoring-in-visual-studio.md) inclut des opérations comme le renommage intelligent des variables, le déplacement de lignes de code sélectionnées dans une fonction distincte, le déplacement de code à d’autres endroits, la réorganisation des paramètres des fonctions, etc.
 
-2.  *IntelliSense* est un terme couvrant un ensemble de fonctionnalités appréciées qui affichent des informations sur les types concernant votre code directement dans l'éditeur et qui, dans certains cas, écrivent de petits extraits de code pour vous. Cela revient à avoir de la documentation de base incluse dans l'éditeur, ce qui vous évite d'avoir à rechercher des informations sur les types dans une fenêtre d'aide distincte. Les fonctionnalités d'IntelliSense varient selon le langage. Pour plus d’informations, consultez [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ Intellisense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), [Options IntelliSense propres à Visual Basic](../ide/visual-basic-specific-intellisense.md). L’illustration suivante montre certaines fonctionnalités IntelliSense à l'œuvre :
+2. *IntelliSense* est un terme couvrant un ensemble de fonctionnalités appréciées qui affichent des informations sur les types concernant votre code directement dans l'éditeur et qui, dans certains cas, écrivent de petits extraits de code pour vous. Cela revient à avoir de la documentation de base incluse dans l'éditeur, ce qui vous évite d'avoir à rechercher des informations sur les types dans une fenêtre d'aide distincte. Les fonctionnalités d'IntelliSense varient selon le langage. Pour plus d’informations, consultez [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ Intellisense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), [Options IntelliSense propres à Visual Basic](../ide/visual-basic-specific-intellisense.md). L’illustration suivante montre certaines fonctionnalités IntelliSense à l'œuvre :
 
-     ![Liste des membres Visual Studio](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")
+    ![Liste des membres Visual Studio](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")
 
-3.  Les**tildes** vous signalent des erreurs ou des problèmes potentiels dans votre code en temps réel au fil de votre saisie, ce qui vous permet de les corriger immédiatement sans attendre que l'erreur soit découverte au moment de la compilation ou de l'exécution. Si vous pointez sur le tilde, vous voyez des informations supplémentaires sur l'erreur. Une icône d'ampoule peut également apparaître dans la marge gauche, avec des suggestions pour corriger l'erreur. Pour plus d'informations, consultez [Perform quick actions with light bulbs](../ide/perform-quick-actions-with-light-bulbs.md).
+3. Les**tildes** vous signalent des erreurs ou des problèmes potentiels dans votre code en temps réel au fil de votre saisie, ce qui vous permet de les corriger immédiatement sans attendre que l'erreur soit découverte au moment de la compilation ou de l'exécution. Si vous pointez sur le tilde, vous voyez des informations supplémentaires sur l'erreur. Une icône d'ampoule peut également apparaître dans la marge gauche, avec des suggestions pour corriger l'erreur. Pour plus d'informations, consultez [Perform quick actions with light bulbs](../ide/perform-quick-actions-with-light-bulbs.md).
 
-     ![Ampoule avec pointage de la souris](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
+    ![Ampoule avec pointage de la souris](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
 
-4.  Les [signets](../ide/setting-bookmarks-in-code.md) vous permettent d'accéder rapidement à des lignes spécifiques dans les fichiers sur lesquels vous travaillez activement.
+4. Les [signets](../ide/setting-bookmarks-in-code.md) vous permettent d'accéder rapidement à des lignes spécifiques dans les fichiers sur lesquels vous travaillez activement.
 
-5.  Vous pouvez appeler la fenêtre [Call Hierarchy](../ide/reference/call-hierarchy.md) dans le menu contextuel de l’éditeur de texte pour afficher les méthodes qui appellent la méthode sous le signe insertion et qui sont appelées par cette méthode.
+5. Vous pouvez appeler la fenêtre [Call Hierarchy](../ide/reference/call-hierarchy.md) dans le menu contextuel de l’éditeur de texte pour afficher les méthodes qui appellent la méthode sous le signe insertion et qui sont appelées par cette méthode.
 
-6.  **CodeLens** vous permet de rechercher les références et les modifications apportées à votre code, les bogues liés, les éléments de travail, les révisions de code et les tests unitaires, tout cela sans quitter l'éditeur. Pour plus d’informations, consultez [Rechercher les modifications du code et d’autres éléments de l’historique](../ide/find-code-changes-and-other-history-with-codelens.md).
+6. **CodeLens** vous permet de rechercher les références et les modifications apportées à votre code, les bogues liés, les éléments de travail, les révisions de code et les tests unitaires, tout cela sans quitter l'éditeur. Pour plus d’informations, consultez [Rechercher les modifications du code et d’autres éléments de l’historique](../ide/find-code-changes-and-other-history-with-codelens.md).
 
-7.  La fenêtre **Aperçu de la définition** montre une définition de méthode ou de type inline, sans vous obliger à quitter votre contexte actuel. Cette fenêtre fonctionne désormais également pour XAML.
+7. La fenêtre **Aperçu de la définition** montre une définition de méthode ou de type inline, sans vous obliger à quitter votre contexte actuel. Cette fenêtre fonctionne désormais également pour XAML.
 
-8.  L'option de menu contextuel **Atteindre la définition** vous amène directement à l'endroit où la fonction ou l'objet est défini. D'autres commandes de navigation sont également disponibles en cliquant avec le bouton droit dans l'éditeur.
+8. L'option de menu contextuel **Atteindre la définition** vous amène directement à l'endroit où la fonction ou l'objet est défini. D'autres commandes de navigation sont également disponibles en cliquant avec le bouton droit dans l'éditeur.
 
 9. Un outil connexe, l'[Explorateur d'objets](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470), vous permet d'examiner les assemblys .NET ou Windows Runtime sur votre système, pour voir les types qu'ils contiennent ainsi que les méthodes et les propriétés que ces types contiennent.
 
      ![Explorateur d’objets montrant le composant System.Timer](../ide/media/objectbrowser.png "ObjectBrowser")
 
- La plupart des éléments du menu Edition et du menu Affichage se rapportent d'une façon ou d'une autre à l'éditeur de code. Pour plus d’informations sur l’éditeur, consultez [Écriture de code](../ide/writing-code-in-the-code-and-text-editor.md) et [Modification de votre code](https://www.visualstudio.com/features/ide-vs).
+   La plupart des éléments du menu Edition et du menu Affichage se rapportent d'une façon ou d'une autre à l'éditeur de code. Pour plus d’informations sur l’éditeur, consultez [Écriture de code](../ide/writing-code-in-the-code-and-text-editor.md) et [Modification de votre code](https://www.visualstudio.com/features/ide-vs).
 
 ## <a name="compiling-and-building-your-code"></a>Compilation et génération de votre code
 

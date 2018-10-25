@@ -14,12 +14,12 @@ caps.latest.revision: 66
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26a852bdf955a17dd59ffe79d29e2601362e47d8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 839bfcd761ac090924b0964e99ea3d1f360cc7f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270593"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852360"
 ---
 # <a name="diagnose-problems-after-deployment"></a>Diagnostiquer des problèmes après le déploiement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,97 +47,97 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
 ####  <a name="TFS2013"></a> Team Foundation Server 2013  
  Paramétrez votre définition de build de sorte à ajouter l’emplacement de la source, de la génération et des symboles au manifeste de build (fichier BuildInfo.config). Team Foundation Build crée automatiquement ce fichier et le place dans le dossier de sortie de votre projet.  
   
-1.  [Modifiez votre définition de build ou créez une définition de build.](http://msdn.microsoft.com/library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
+1. [Modifiez votre définition de build ou créez une définition de build.](http://msdn.microsoft.com/library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
   
-     ![Vue définition de build dans TFS 2013](../debugger/media/ffr-tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
+    ![Vue définition de build dans TFS 2013](../debugger/media/ffr-tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
   
-2.  Choisissez le modèle par défaut (TfvcTemplate.12.xaml) ou votre propre modèle personnalisé.  
+2. Choisissez le modèle par défaut (TfvcTemplate.12.xaml) ou votre propre modèle personnalisé.  
   
-     ![Choisissez le modèle de processus de génération &#45; TFS 2013](../debugger/media/ffr-tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
+    ![Choisissez le modèle de processus de génération &#45; TFS 2013](../debugger/media/ffr-tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
   
-3.  Spécifiez l’emplacement où enregistrer le fichier de symboles (PDB) de sorte que votre source soit indexée automatiquement.  
+3. Spécifiez l’emplacement où enregistrer le fichier de symboles (PDB) de sorte que votre source soit indexée automatiquement.  
   
-     Si vous utilisez un modèle personnalisé, vérifiez que le modèle a une activité pour indexer votre source. Vous ajouterez plus tard un argument MSBuild pour spécifier l’emplacement où enregistrer les fichiers de symboles.  
+    Si vous utilisez un modèle personnalisé, vérifiez que le modèle a une activité pour indexer votre source. Vous ajouterez plus tard un argument MSBuild pour spécifier l’emplacement où enregistrer les fichiers de symboles.  
   
-     ![Définir le chemin d’accès des symboles dans la définition de build TFS 2013](../debugger/media/ffr-tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
+    ![Définir le chemin d’accès des symboles dans la définition de build TFS 2013](../debugger/media/ffr-tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
   
-     Pour plus d’informations sur les symboles, consultez [Publier les données de symbole](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6).  
+    Pour plus d’informations sur les symboles, consultez [Publier les données de symbole](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6).  
   
-4.  Ajoutez cet argument MSBuild pour inclure les emplacements de votre TFS et des symboles dans le fichier manifeste de la build :  
+4. Ajoutez cet argument MSBuild pour inclure les emplacements de votre TFS et des symboles dans le fichier manifeste de la build :  
   
-     **/p:IncludeServerNameInBuildInfo = true**  
+    **/p:IncludeServerNameInBuildInfo = true**  
   
-     Toute personne pouvant accéder à votre serveur web peut consulter ces emplacements dans le manifeste de build. Vérifiez que votre serveur source est sécurisé.  
+    Toute personne pouvant accéder à votre serveur web peut consulter ces emplacements dans le manifeste de build. Vérifiez que votre serveur source est sécurisé.  
   
-5.  Si vous utilisez un modèle personnalisé, ajoutez l’argument MSBuild suivant pour spécifier l’emplacement où enregistrer le fichier de symboles :  
+5. Si vous utilisez un modèle personnalisé, ajoutez l’argument MSBuild suivant pour spécifier l’emplacement où enregistrer le fichier de symboles :  
   
-     **/ p : buildsymbolstorepath =**\<*chemin d’accès aux symboles*>  
+    **/ p : buildsymbolstorepath =**\<*chemin d’accès aux symboles*>  
   
-     ![Inclure les informations de serveur de build dans la définition de build TFS 2013](../debugger/media/ffr-tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")  
+    ![Inclure les informations de serveur de build dans la définition de build TFS 2013](../debugger/media/ffr-tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")  
   
-     Ajoutez ces lignes à votre fichier projet web (.csproj, .vbproj) :  
+    Ajoutez ces lignes à votre fichier projet web (.csproj, .vbproj) :  
   
-    ```  
-    <!-- Import the targets file. Change the folder location as necessary. -->  
-       <Import Project=""$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\BuildInfo\Microsoft.VisualStudio.ReleaseManagement.BuildInfo.targets" />  
+   ```  
+   <!-- Import the targets file. Change the folder location as necessary. -->  
+      <Import Project=""$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\BuildInfo\Microsoft.VisualStudio.ReleaseManagement.BuildInfo.targets" />  
   
-    ```  
+   ```  
   
-6.  Exécutez une nouvelle build.  
+6. Exécutez une nouvelle build.  
   
- **Étape 2 :** [Étape 2 : Release your app](#DeployRelease)  
+   **Étape 2 :** [Étape 2 : Release your app](#DeployRelease)  
   
 ####  <a name="TFS2012_2010"></a> Team Foundation Server 2012 ou 2010  
  Procédez comme suit pour créer automatiquement le manifeste de build (fichier BuildInfo.config) pour votre projet et le placer dans le dossier de sortie de votre projet. Le fichier s’affiche avec le nom «*Nom_projet*.BuildInfo.config » dans le dossier de sortie, mais est renommé en « BuildInfo.config » dans le dossier de déploiement une fois l’application publiée.  
   
-1.  Installez Visual Studio 2013 (n’importe quelle édition) sur votre serveur Team Foundation Build.  
+1. Installez Visual Studio 2013 (n’importe quelle édition) sur votre serveur Team Foundation Build.  
   
-2.  Dans la définition de build, spécifiez où enregistrer les symboles afin que votre source soit indexée automatiquement.  
+2. Dans la définition de build, spécifiez où enregistrer les symboles afin que votre source soit indexée automatiquement.  
   
-     Si vous utilisez un modèle personnalisé, vérifiez que le modèle a une activité pour indexer votre source.  
+    Si vous utilisez un modèle personnalisé, vérifiez que le modèle a une activité pour indexer votre source.  
   
-3.  Ajoutez ces arguments MSBuild à votre définition de build :  
+3. Ajoutez ces arguments MSBuild à votre définition de build :  
   
-    -   **/p:VisualStudioVersion = 12.0**  
+   -   **/p:VisualStudioVersion = 12.0**  
   
-    -   **/p:MSBuildAssemblyVersion = 12.0**  
+   -   **/p:MSBuildAssemblyVersion = 12.0**  
   
-    -   **/TV:12.0**  
+   -   **/TV:12.0**  
   
-    -   **/p:IncludeServerNameInBuildInfo = true**  
+   -   **/p:IncludeServerNameInBuildInfo = true**  
   
-    -   **/ p : buildsymbolstorepath =**\<*chemin d’accès aux symboles*>  
+   -   **/ p : buildsymbolstorepath =**\<*chemin d’accès aux symboles*>  
   
-4.  Exécutez une nouvelle build.  
+4. Exécutez une nouvelle build.  
   
- **Étape 2 :** [Étape 2 : Release your app](#DeployRelease)  
+   **Étape 2 :** [Étape 2 : Release your app](#DeployRelease)  
   
 ###  <a name="ManualBuild"></a> Créer le manifeste de build pour une génération manuelle à l’aide de Visual Studio  
  Procédez comme suit pour créer automatiquement le manifeste de build (fichier BuildInfo.config) pour votre projet et le placer dans le dossier de sortie de votre projet. Le fichier s’affiche avec le nom «*Nom_projet*.BuildInfo.config » dans le dossier de sortie, mais est renommé en « BuildInfo.config » dans le dossier de déploiement une fois l’application publiée.  
   
-1.  Dans l’ **Explorateur de solutions**, déchargez votre projet web.  
+1. Dans l’ **Explorateur de solutions**, déchargez votre projet web.  
   
-2.  Ouvrez le fichier projet (.csproj, .vbproj). Ajoutez les lignes suivantes :  
+2. Ouvrez le fichier projet (.csproj, .vbproj). Ajoutez les lignes suivantes :  
   
-    ```xml  
-    <!-- **************************************************** -->  
-    <!-- Build info -->  
-    <PropertyGroup>  
-       <!-- Generate the BuildInfo.config file -->  
-       <GenerateBuildInfoConfigFile>True</GenerateBuildInfoConfigFile>  
-       <!-- Include server name in build info -->   
-       <IncludeServerNameInBuildInfo>True</IncludeServerNameInBuildInfo>   
-       <!-- Include the symbols path so Visual Studio can find the matching deployed code when you start debugging. -->  
-       <BuildSymbolStorePath><path to symbols></BuildSymbolStorePath>  
-    </PropertyGroup>  
-    <!-- **************************************************** -->  
-    ```  
+   ```xml  
+   <!-- **************************************************** -->  
+   <!-- Build info -->  
+   <PropertyGroup>  
+      <!-- Generate the BuildInfo.config file -->  
+      <GenerateBuildInfoConfigFile>True</GenerateBuildInfoConfigFile>  
+      <!-- Include server name in build info -->   
+      <IncludeServerNameInBuildInfo>True</IncludeServerNameInBuildInfo>   
+      <!-- Include the symbols path so Visual Studio can find the matching deployed code when you start debugging. -->  
+      <BuildSymbolStorePath><path to symbols></BuildSymbolStorePath>  
+   </PropertyGroup>  
+   <!-- **************************************************** -->  
+   ```  
   
-3.  Archivez le fichier projet mis à jour.  
+3. Archivez le fichier projet mis à jour.  
   
-4.  Exécutez une nouvelle build.  
+4. Exécutez une nouvelle build.  
   
- **Étape 2 :** [Étape 2 : Release your app](#DeployRelease)  
+   **Étape 2 :** [Étape 2 : Release your app](#DeployRelease)  
   
 ###  <a name="MSBuild"></a> Créer le manifeste de build pour une génération manuelle à l’aide de MSBuild.exe  
  Ajoutez les arguments de build suivants quand vous exécutez une build :  
@@ -251,100 +251,100 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
   
 3.  Vérifiez que le fichier contient les informations requises :  
   
--   **ProjectName**  
+- **ProjectName**  
   
-     Nom de votre projet dans Visual Studio. Exemple :  
+   Nom de votre projet dans Visual Studio. Exemple :  
+  
+  ```  
+  <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>  
+  ```  
+  
+- **SourceControl**  
+  
+- Informations sur votre système de contrôle de code source et les propriétés requises suivantes :  
+  
+  - **TFS**  
+  
+    - **ProjectCollectionUri**: URI de votre serveur Team Foundation Server et de la collection de projets  
+  
+    - **ProjectItemSpec**: chemin d’accès au fichier projet de votre application (.csproj ou .vbproj)  
+  
+    - **ProjectVersionSpec**: version de votre projet  
+  
+      Exemple :  
   
     ```  
-    <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>  
+    <SourceControl type="TFS">  
+       <TfsSourceControl>  
+          <ProjectCollectionUri>http://fabrikamfiber:8080/tfs/FabrikamFiber</ProjectCollectionUri>  
+          <ProjectItemSpec>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectItemSpec>  
+          <ProjectVersionSpec>LFabrikamFiber_BuildAndPublish_20130813@$/WorkInProgress</ProjectVersionSpec>  
+       </TfsSourceControl>  
+    </SourceControl>  
     ```  
   
--   **SourceControl**  
+  - **Git**  
   
--   Informations sur votre système de contrôle de code source et les propriétés requises suivantes :  
+    - **GitSourceControl**: emplacement du schéma **GitSourceControl**  
   
-    -   **TFS**  
+    - **RepositoryUrl**: URI de votre serveur Team Foundation Server, de la collection de projets et du référentiel Git  
   
-        -   **ProjectCollectionUri**: URI de votre serveur Team Foundation Server et de la collection de projets  
+    - **ProjectPath**: chemin d’accès au fichier projet de votre application (.csproj ou .vbproj)  
   
-        -   **ProjectItemSpec**: chemin d’accès au fichier projet de votre application (.csproj ou .vbproj)  
+    - **CommitId**: ID de votre validation  
   
-        -   **ProjectVersionSpec**: version de votre projet  
+      Exemple :  
   
-         Exemple :  
+    ```  
+    <SourceControl type="Git">   
+       <GitSourceControl xmlns="http://schemas.microsoft.com/visualstudio/deploymentevent_git/2013/09">  
+          <RepositoryUrl>http://gittf:8080/tfs/defaultcollection/_git/FabrikamFiber</RepositoryUrl>  
+          <ProjectPath>/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectPath>  
+          <CommitId>50662c96502dddaae5cd5ced962d9f14ec5bc64d</CommitId>  
+       </GitSourceControl>  
+    </SourceControl>  
+    ```  
   
-        ```  
-        <SourceControl type="TFS">  
-           <TfsSourceControl>  
-              <ProjectCollectionUri>http://fabrikamfiber:8080/tfs/FabrikamFiber</ProjectCollectionUri>  
-              <ProjectItemSpec>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectItemSpec>  
-              <ProjectVersionSpec>LFabrikamFiber_BuildAndPublish_20130813@$/WorkInProgress</ProjectVersionSpec>  
-           </TfsSourceControl>  
-        </SourceControl>  
-        ```  
+- **Générer**  
   
-    -   **Git**  
+   Informations sur votre système de génération, `"TeamBuild"` ou `"MSBuild"`, et les propriétés requises suivantes :  
   
-        -   **GitSourceControl**: emplacement du schéma **GitSourceControl**  
+  - **BuildLabel** (pour TeamBuild) : nom et numéro de votre build. Cette étiquette est également utilisée comme nom de l’événement de déploiement. Pour plus d’informations sur les numéros de build, consultez [Utiliser des numéros de build pour attribuer des noms pertinents aux builds terminées](http://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3).  
   
-        -   **RepositoryUrl**: URI de votre serveur Team Foundation Server, de la collection de projets et du référentiel Git  
+  - **SymbolPath** (recommandé) : liste des URI des emplacements de vos symboles (fichier PDB), séparés par des points-virgules. Les URI peuvent être des URL ou des chemins d’accès réseau (UNC). Il est alors plus facile pour Visual Studio de rechercher les symboles correspondants pour vous aider avec le débogage.  
   
-        -   **ProjectPath**: chemin d’accès au fichier projet de votre application (.csproj ou .vbproj)  
+  - **BuildReportUrl** (pour TeamBuild) : emplacement du rapport de la build dans TFS  
   
-        -   **CommitId**: ID de votre validation  
+  - **BuildId** (pour TeamBuild) : URI des détails de votre build dans TFS. Cet URI est également utilisé comme ID de l’événement de déploiement. Cet ID doit être unique si vous n’utilisez pas TeamBuild.  
   
-         Exemple :  
+  - **BuiltSolution**: chemin d’accès au fichier de la solution, utilisé par Visual Studio pour rechercher et ouvrir la solution correspondante. Contenu de la propriété MSBuild **SolutionPath** .  
   
-        ```  
-        <SourceControl type="Git">   
-           <GitSourceControl xmlns="http://schemas.microsoft.com/visualstudio/deploymentevent_git/2013/09">  
-              <RepositoryUrl>http://gittf:8080/tfs/defaultcollection/_git/FabrikamFiber</RepositoryUrl>  
-              <ProjectPath>/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectPath>  
-              <CommitId>50662c96502dddaae5cd5ced962d9f14ec5bc64d</CommitId>  
-           </GitSourceControl>  
-        </SourceControl>  
-        ```  
+    Exemple :  
   
--   **Générer**  
+  - **TFS**  
   
-     Informations sur votre système de génération, `"TeamBuild"` ou `"MSBuild"`, et les propriétés requises suivantes :  
+    ```  
+    <Build type="TeamBuild">  
+       <MsBuild>  
+          <BuildLabel kind="label">FabrikamFiber_BuildAndPublish_20130813.1</BuildLabel>  
+          <SymbolPath>\\fabrikamfiber\FabrikamFiber.CallCenter\Symbols</SymbolPath>  
+          <BuildReportUrl kind="informative, url" url="http://fabrikamfiber:8080/tfs/FabrikamFiber/_releasePipeline/FindRelease?buildUri=fabrikamfiber%3a%2f%2f%2fBuild%2fBuild%2f448">Build Report Url</BuildReportUrl>  
+          <BuildId kind="id">1c4444d2-518d-4673-a590-dce2773c7744,fabrikamfiber:///Build/Build/448</BuildId>  
+          <BuiltSolution>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>  
+       </MsBuild>  
+    </Build>  
+    ```  
   
-    -   **BuildLabel** (pour TeamBuild) : nom et numéro de votre build. Cette étiquette est également utilisée comme nom de l’événement de déploiement. Pour plus d’informations sur les numéros de build, consultez [Utiliser des numéros de build pour attribuer des noms pertinents aux builds terminées](http://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3).  
+  - **Git**  
   
-    -   **SymbolPath** (recommandé) : liste des URI des emplacements de vos symboles (fichier PDB), séparés par des points-virgules. Les URI peuvent être des URL ou des chemins d’accès réseau (UNC). Il est alors plus facile pour Visual Studio de rechercher les symboles correspondants pour vous aider avec le débogage.  
-  
-    -   **BuildReportUrl** (pour TeamBuild) : emplacement du rapport de la build dans TFS  
-  
-    -   **BuildId** (pour TeamBuild) : URI des détails de votre build dans TFS. Cet URI est également utilisé comme ID de l’événement de déploiement. Cet ID doit être unique si vous n’utilisez pas TeamBuild.  
-  
-    -   **BuiltSolution**: chemin d’accès au fichier de la solution, utilisé par Visual Studio pour rechercher et ouvrir la solution correspondante. Contenu de la propriété MSBuild **SolutionPath** .  
-  
-     Exemple :  
-  
-    -   **TFS**  
-  
-        ```  
-        <Build type="TeamBuild">  
-           <MsBuild>  
-              <BuildLabel kind="label">FabrikamFiber_BuildAndPublish_20130813.1</BuildLabel>  
-              <SymbolPath>\\fabrikamfiber\FabrikamFiber.CallCenter\Symbols</SymbolPath>  
-              <BuildReportUrl kind="informative, url" url="http://fabrikamfiber:8080/tfs/FabrikamFiber/_releasePipeline/FindRelease?buildUri=fabrikamfiber%3a%2f%2f%2fBuild%2fBuild%2f448">Build Report Url</BuildReportUrl>  
-              <BuildId kind="id">1c4444d2-518d-4673-a590-dce2773c7744,fabrikamfiber:///Build/Build/448</BuildId>  
-              <BuiltSolution>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>  
-           </MsBuild>  
-        </Build>  
-        ```  
-  
-    -   **Git**  
-  
-        ```  
-        <Build type="MSBuild">   
-           <MSBuild>  
-              <SymbolPath>\\gittf\FabrikamFiber.CallCenter\Symbols</SymbolPath>  
-              <BuiltSolution>/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>  
-           </MSBuild>  
-        </Build>  
-        ```  
+    ```  
+    <Build type="MSBuild">   
+       <MSBuild>  
+          <SymbolPath>\\gittf\FabrikamFiber.CallCenter\Symbols</SymbolPath>  
+          <BuiltSolution>/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>  
+       </MSBuild>  
+    </Build>  
+    ```  
   
 ####  <a name="IneligibleWorkspace"></a> Q : pourquoi Visual Studio indique-t-il que mon espace de travail sélectionné est inéligible ?  
  **R :** L’espace de travail sélectionné ne possède aucun mappage entre le dossier de contrôle de code source et un dossier local. Pour créer un mappage de cet espace de travail, choisissez **Gérer**. Sinon, choisissez un espace de travail déjà mappé ou créez-en un.  

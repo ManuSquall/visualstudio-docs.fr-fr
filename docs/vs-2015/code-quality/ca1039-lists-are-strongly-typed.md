@@ -20,15 +20,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1f2e9bd676c1786efe3cebd34bc3eeb3d0c4e778
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 681c1ada7600743c0a548f8a774dada6863f7d0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221574"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853413"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039 : Les listes sont fortement typées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ListsAreStronglyTyped|

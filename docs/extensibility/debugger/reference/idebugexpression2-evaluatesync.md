@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression2::EvaluateSync | Documents Microsoft
+title: IDebugExpression2::EvaluateSync | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5fc3fb1ad607eb7efb1ba20265545c18b1c1b46
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2b288d9995797a000f16533fcee9dafd85171722
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113066"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864606"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 Cette méthode évalue l’expression de façon synchrone.  
@@ -47,10 +47,10 @@ int EvaluateSync(
   
 #### <a name="parameters"></a>Paramètres  
  `dwFlags`  
- [in] Une combinaison d’indicateurs à partir de la [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) énumération qui contrôlent l’évaluation de l’expression.  
+ [in] Une combinaison d’indicateurs de la [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) énumération qui contrôlent l’évaluation de l’expression.  
   
  `dwTimeout`  
- [in] Temps maximal, en millisecondes, à attendre avant de retourner à partir de cette méthode. Utilisez `INFINITE` pour attendre indéfiniment.  
+ [in] Durée maximale, en millisecondes, à attendre avant de retourner à partir de cette méthode. Utilisez `INFINITE` pour attendre indéfiniment.  
   
  `pExprCallback`  
  [in] Ce paramètre est toujours une valeur null.  
@@ -63,8 +63,8 @@ int EvaluateSync(
   
 |Error|Description|  
 |-----------|-----------------|  
-|E_EVALUATE_BUSY_WITH_EVALUATION|Une autre expression est en cours d’évaluation et évaluation d’expression simultanées n’est pas pris en charge.|  
-|E_EVALUATE_TIMEOUT|Évaluation a expiré.|  
+|E_EVALUATE_BUSY_WITH_EVALUATION|Une autre expression est en cours d’évaluation et évaluation de l’expression simultanées n’est pas pris en charge.|  
+|E_EVALUATE_TIMEOUT|Version d’évaluation a expiré.|  
   
 ## <a name="remarks"></a>Notes  
  Pour l’évaluation synchrone, il n’est pas nécessaire envoyer un événement vers Visual Studio à l’achèvement de l’évaluation.  

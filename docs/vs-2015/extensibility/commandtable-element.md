@@ -18,12 +18,12 @@ ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 87b755ac0dbe7e10cfe52693840101729ab32069
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ce1d7b431e7918c172947c508ae06e5770877ea6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241200"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863501"
 ---
 # <a name="commandtable-element"></a>Élément CommandTable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,10 +51,10 @@ CommandTable est l’élément racine du fichier .vsct. Il s’agit du fichier q
   
 ### <a name="attributes"></a>Attributs  
   
-|Attribut|Description|  
-|---------------|-----------------|  
-|xmlns|Obligatoire. Espaces de noms XML :<br /><br /> xmlns = » http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable»<br /><br /> prend = « http://www.w3.org/2001/XMLSchema»|  
-|language|Facultatif. L’attribut de langage peut être utilisé pour spécifier la langue par défaut de tous les \<chaînes > éléments dans la table de commande.  Si la langue n’est pas spécifiée, la langue du processus en cours est utilisée :<br /><br /> Language = « en-us »|  
+| Attribut |                                                                                                                   Description                                                                                                                   |
+|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|   xmlns   |                                   Obligatoire. Espaces de noms XML :<br /><br /> xmlns = »<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>»<br /><br /> prend = «<http://www.w3.org/2001/XMLSchema>»                                   |
+| language  | Facultatif. L’attribut de langage peut être utilisé pour spécifier la langue par défaut de tous les \<chaînes > éléments dans la table de commande.  Si la langue n’est pas spécifiée, la langue du processus en cours est utilisée :<br /><br /> Language = « en-us » |
   
 ### <a name="child-elements"></a>Éléments enfants  
   

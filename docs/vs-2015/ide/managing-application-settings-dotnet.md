@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb2623c9122b987d8e0fe781b62127cd65bde0dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac4f670b813970d027925b681a2e3211e1898e1a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289508"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866127"
 ---
 # <a name="managing-application-settings-net"></a>Gestion des paramètres d'une application (.NET)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ Les paramètres d’application vous permettent de stocker des informations sur 
   
  Selon la portée, on distingue deux types de paramètres d’application :  
   
--   Les paramètres de portée application peuvent être utilisés pour des informations telles qu’une URL pour un service Web ou une chaîne de connexion à une base de données. Ces valeurs sont associées à l’application. Par conséquent, les utilisateurs ne peuvent pas les modifier au moment de l’exécution.  
+- Les paramètres de portée application peuvent être utilisés pour des informations telles qu’une URL pour un service Web ou une chaîne de connexion à une base de données. Ces valeurs sont associées à l’application. Par conséquent, les utilisateurs ne peuvent pas les modifier au moment de l’exécution.  
   
--   Les paramètres de portée utilisateur peuvent être utilisés pour des informations telles que la persistance de la dernière position d’un formulaire ou d’une préférence de police. Les utilisateurs peuvent modifier ces valeurs au moment de l’exécution.  
+- Les paramètres de portée utilisateur peuvent être utilisés pour des informations telles que la persistance de la dernière position d’un formulaire ou d’une préférence de police. Les utilisateurs peuvent modifier ces valeurs au moment de l’exécution.  
   
- Vous pouvez modifier le type d’un paramètre à l’aide de la propriété **Scope** .  
+  Vous pouvez modifier le type d’un paramètre à l’aide de la propriété **Scope** .  
   
- Le système de projet stocke les paramètres d’application dans deux fichiers XML : un fichier app.config, créé au moment du design lorsque vous créez le premier paramètre d’application ; et un fichier user.config, créé au moment de l’exécution lorsque l’utilisateur qui exécute l’application modifie la valeur d’un paramètre utilisateur. Notez que les modifications apportées aux paramètres utilisateur ne sont pas écrites sur le disque, sauf si l’application appelle spécifiquement une méthode pour le faire.  
+  Le système de projet stocke les paramètres d’application dans deux fichiers XML : un fichier app.config, créé au moment du design lorsque vous créez le premier paramètre d’application ; et un fichier user.config, créé au moment de l’exécution lorsque l’utilisateur qui exécute l’application modifie la valeur d’un paramètre utilisateur. Notez que les modifications apportées aux paramètres utilisateur ne sont pas écrites sur le disque, sauf si l’application appelle spécifiquement une méthode pour le faire.  
   
 ## <a name="creating-application-settings-at-design-time"></a>Créer les paramètres d’application au moment du design  
  Au moment du design, vous pouvez créer des paramètres d’application de deux manières : avec la page **Paramètres** du **Concepteur de projets**ou avec la fenêtre **Propriétés** pour un formulaire ou un contrôle, ce qui vous permet de lier un paramètre à une propriété.  

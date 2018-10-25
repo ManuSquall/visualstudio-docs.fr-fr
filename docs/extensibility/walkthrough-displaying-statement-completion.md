@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fa6a1547a604e5d073c4e45c7769c68e0674d74
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: bdd96c124dafabf5584dfa13547cdea1e2b843b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497740"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879322"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Pas à pas : Saisie semi-automatique des instructions affichage
 Vous pouvez implémenter la saisie semi-automatique des instructions en langage en définissant les identificateurs pour lequel vous souhaitez fournir la saisie semi-automatique et puis déclenchant une session de saisie semi-automatique. Vous pouvez définir la saisie semi-automatique des instructions dans le contexte d’un service de langage, définir votre propre extension de nom de fichier et le type de contenu, puis affichez saisie semi-automatique pour uniquement ce type. Ou, vous pouvez déclencher la saisie semi-automatique pour un type de contenu existant, par exemple, « texte en clair ». Cette procédure pas à pas montre comment déclencher la saisie semi-automatique des instructions pour le type de contenu « texte en clair », qui est le type de contenu des fichiers texte. Le type de contenu « texte » est l’ancêtre de tous les autres types de contenu, y compris le code et les fichiers XML.  
@@ -148,48 +148,48 @@ Vous pouvez implémenter la saisie semi-automatique des instructions en langage 
   
 #### <a name="to-implement-the-completion-command-handler"></a>Pour implémenter le Gestionnaire de commandes de saisie semi-automatique  
   
-1.  Ajoutez une classe nommée `TestCompletionCommandHandler` qui implémente <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
+1. Ajoutez une classe nommée `TestCompletionCommandHandler` qui implémente <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
   
-     [!code-csharp[VSSDKCompletionTest#15](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_15.cs)]
-     [!code-vb[VSSDKCompletionTest#15](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_15.vb)]  
+    [!code-csharp[VSSDKCompletionTest#15](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_15.cs)]
+    [!code-vb[VSSDKCompletionTest#15](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_15.vb)]  
   
-2.  Ajouter des champs privés pour le Gestionnaire de commandes suivant (à laquelle vous passez la commande), l’affichage de texte, le fournisseur du Gestionnaire de commandes (ce qui permet d’accéder à divers services) et une session de saisie semi-automatique :  
+2. Ajouter des champs privés pour le Gestionnaire de commandes suivant (à laquelle vous passez la commande), l’affichage de texte, le fournisseur du Gestionnaire de commandes (ce qui permet d’accéder à divers services) et une session de saisie semi-automatique :  
   
-     [!code-csharp[VSSDKCompletionTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_16.cs)]
-     [!code-vb[VSSDKCompletionTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_16.vb)]  
+    [!code-csharp[VSSDKCompletionTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_16.cs)]
+    [!code-vb[VSSDKCompletionTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_16.vb)]  
   
-3.  Ajoutez un constructeur qui définit l’affichage de texte et les champs du fournisseur et ajoute la commande à la chaîne de commande :  
+3. Ajoutez un constructeur qui définit l’affichage de texte et les champs du fournisseur et ajoute la commande à la chaîne de commande :  
   
-     [!code-csharp[VSSDKCompletionTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_17.cs)]
-     [!code-vb[VSSDKCompletionTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_17.vb)]  
+    [!code-csharp[VSSDKCompletionTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_17.cs)]
+    [!code-vb[VSSDKCompletionTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_17.vb)]  
   
-4.  Implémentez la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> méthode en passant la commande le long :  
+4. Implémentez la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> méthode en passant la commande le long :  
   
-     [!code-csharp[VSSDKCompletionTest#18](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_18.cs)]
-     [!code-vb[VSSDKCompletionTest#18](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_18.vb)]  
+    [!code-csharp[VSSDKCompletionTest#18](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_18.cs)]
+    [!code-vb[VSSDKCompletionTest#18](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_18.vb)]  
   
-5.  Implémentez la méthode <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>. Lorsque cette méthode reçoit une séquence de touches, il effectuez l’une des opérations suivantes :  
+5. Implémentez la méthode <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>. Lorsque cette méthode reçoit une séquence de touches, il effectuez l’une des opérations suivantes :  
   
-    -   Autoriser le caractère à écrire dans la mémoire tampon et ensuite déclencher ou filtrer la saisie semi-automatique. (Les caractères imprimables faire.)  
+   - Autoriser le caractère à écrire dans la mémoire tampon et ensuite déclencher ou filtrer la saisie semi-automatique. (Les caractères imprimables faire.)  
   
-    -   Valider la saisie semi-automatique, mais n’autorisent pas le caractère à écrire dans la mémoire tampon. (Espace blanc, **onglet**, et **entrée** cela lorsqu’une session de saisie semi-automatique est affichée.)  
+   - Valider la saisie semi-automatique, mais n’autorisent pas le caractère à écrire dans la mémoire tampon. (Espace blanc, **onglet**, et **entrée** cela lorsqu’une session de saisie semi-automatique est affichée.)  
   
-    -   Autoriser la commande pour être transmis au gestionnaire suivant. (Toutes les autres commandes.)  
+   - Autoriser la commande pour être transmis au gestionnaire suivant. (Toutes les autres commandes.)  
   
      Étant donné que cette méthode peut afficher l’interface utilisateur, appelez <xref:Microsoft.VisualStudio.Shell.VsShellUtilities.IsInAutomationFunction%2A> pour vous assurer qu’elle n’est pas appelée dans un contexte d’automation :  
   
      [!code-csharp[VSSDKCompletionTest#19](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_19.cs)]
      [!code-vb[VSSDKCompletionTest#19](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_19.vb)]  
   
-6.  Ce code est une méthode privée qui déclenche la session de saisie semi-automatique :  
+6. Ce code est une méthode privée qui déclenche la session de saisie semi-automatique :  
   
-     [!code-csharp[VSSDKCompletionTest#20](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_20.cs)]
-     [!code-vb[VSSDKCompletionTest#20](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_20.vb)]  
+    [!code-csharp[VSSDKCompletionTest#20](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_20.cs)]
+    [!code-vb[VSSDKCompletionTest#20](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_20.vb)]  
   
-7.  L’exemple suivant est une méthode privée qui annule son abonnement à la <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> événement :  
+7. L’exemple suivant est une méthode privée qui annule son abonnement à la <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> événement :  
   
-     [!code-csharp[VSSDKCompletionTest#21](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_21.cs)]
-     [!code-vb[VSSDKCompletionTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_21.vb)]  
+    [!code-csharp[VSSDKCompletionTest#21](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_21.cs)]
+    [!code-vb[VSSDKCompletionTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_21.vb)]  
   
 ## <a name="build-and-test-the-code"></a>Générer et tester le code  
  Pour tester ce code, générez la solution CompletionTest et exécutez-le dans l’instance expérimentale.  

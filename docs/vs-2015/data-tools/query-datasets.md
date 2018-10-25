@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 21c509656ab32c1532bb9523d0bbc3d8cf94f0a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a6e1ff0cd6f77d2155ff4982ca02657a741c02d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219295"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890567"
 ---
 # <a name="query-datasets"></a>Interroger des datasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,13 +75,13 @@ Pour rechercher des enregistrements spécifiques dans un jeu de données, utilis
   
  Les exemples de code suivants montrent comment parcourir les relations dans les datasets typés. L’utilisation d’exemples de code typée <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) et le texte généré `FindBy` *PrimaryKey* (`FindByCustomerID`) méthodes permettant de rechercher une ligne souhaitée et retourner les enregistrements connexes. Les exemples de compiler et exécutent correctement uniquement si vous avez :  
   
--   Une instance d’un dataset nommé `NorthwindDataSet` avec un `Customers` table.  
+- Une instance d’un dataset nommé `NorthwindDataSet` avec un `Customers` table.  
   
--   Un `Orders` table.  
+- Un `Orders` table.  
   
--   Une relation nommée `FK_Orders_Customers`associant les deux tables disponibles à la portée de votre code  
+- Une relation nommée `FK_Orders_Customers`associant les deux tables disponibles à la portée de votre code  
   
- En outre, les deux tables doivent être remplies avec des données pour tous les enregistrements à retourner.  
+  En outre, les deux tables doivent être remplies avec des données pour tous les enregistrements à retourner.  
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Pour retourner des enregistrements d’un enregistrement parent sélectionné de l’enfant  
   

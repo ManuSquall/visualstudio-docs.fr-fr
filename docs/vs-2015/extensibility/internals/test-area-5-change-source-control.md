@@ -16,12 +16,12 @@ ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 808ed1ce13af06fa263a339bc9c6788595a261a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a903d1cfdb503650f044a17961542c9d011b55bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229253"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856663"
 ---
 # <a name="test-area-5-change-source-control"></a>Zone de test 5 : Modifier le contrôle de code source
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ Cette zone de test plug-in de contrôle de code source couvre la modification du
   
  **Modifier le contrôle de code Source** commande fournit quatre fonctions de base pour l’utilisateur :  
   
--   **Lier :**  
+- **Lier :**  
   
-     Permet à un utilisateur de définir ou de rétablir un lien de contrôle de source entre une solution/projet et de la banque des versions.  
+   Permet à un utilisateur de définir ou de rétablir un lien de contrôle de source entre une solution/projet et de la banque des versions.  
   
--   **Annuler la liaison :**  
+- **Annuler la liaison :**  
   
-     Supprime une projet/solution de contrôle de code source sur une base par connexion.  
+   Supprime une projet/solution de contrôle de code source sur une base par connexion.  
   
--   **Connecter/déconnecter :**  
+- **Connecter/déconnecter :**  
   
- Active ou désactive les état connecté ou hors connexion de la solution contrôlée, qui est présentée dans la zone 3. Pour plus d’informations, consultez [Test zone 3 : extraire / annuler l’extraction](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
+  Active ou désactive les état connecté ou hors connexion de la solution contrôlée, qui est présentée dans la zone 3. Pour plus d’informations, consultez [Test zone 3 : extraire / annuler l’extraction](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
   
 ## <a name="command-menu-access"></a>Accès au Menu de commande  
  Ce qui suit [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] chemin de menu environnement de développement intégré est utilisé dans les cas de test.  

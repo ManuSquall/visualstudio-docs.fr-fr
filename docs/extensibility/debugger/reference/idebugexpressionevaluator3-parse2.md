@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator3::Parse2 | Documents Microsoft
+title: IDebugExpressionEvaluator3::Parse2 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64344d66bcdd0ab64f6dd1e944f161e286c132de
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 46f7b503cb1cc90ad1058761274e6974a11ee35a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122234"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867219"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
-Convertit une chaîne d’expression en une expression analysée, étant donnée le fournisseur de symbole et l’adresse de l’image de l’évaluation.  
+Convertit une chaîne d’expression en une expression analysée, étant donnée le fournisseur de symboles et l’adresse de l’image de l’évaluation.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -56,10 +56,10 @@ HRESULT Parse2 (
  [in] La chaîne d’expression à analyser.  
   
  `dwFlags`  
- [in] Une collection de [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) constantes qui déterminent comment l’expression doit être analysée.  
+ [in] Une collection de [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) constantes qui déterminent comment l’expression doit être analysé.  
   
  `nRadix`  
- [in] Base à utiliser pour interpréter les informations numériques.  
+ [in] Base à utiliser pour interpréter toutes les informations numériques.  
   
  `pSymbolProvider`  
  [in] Interface du fournisseur de symboles.  
@@ -68,7 +68,7 @@ HRESULT Parse2 (
  [in] Adresse de l’image de l’évaluation.  
   
  `pbstrError`  
- [out] Retourne l’erreur en tant que texte explicite.  
+ [out] Retourne l’erreur sous forme de texte lisible.  
   
  `pichError`  
  [out] Retourne la position de caractère de début de l’erreur dans la chaîne d’expression.  
@@ -83,7 +83,7 @@ HRESULT Parse2 (
  Cette méthode génère une expression analysée, pas une valeur réelle. Une expression analysée est prête à être évaluée, autrement dit, convertie en une valeur.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour un **CEE** objet qui expose la [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md) interface.  
+ L’exemple suivant montre comment implémenter cette méthode pour un **CEE** objet qui expose le [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md) interface.  
   
 ```cpp  
 HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,  

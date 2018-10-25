@@ -22,12 +22,12 @@ caps.latest.revision: 63
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 220666e6fe12e6a5ab3bbaf1238c19d761427cea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2077e9ff3e4e637e0dbc27b8976a9205556b74a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303041"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867065"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénario : modifier votre conception à l'aide de la visualisation et de la modélisation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,52 +36,52 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
   
  Pour connaître les versions de Visual Studio qui prennent en charge chaque outil, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
--   Clarifier les besoins des utilisateurs et les processus d’entreprise.  
+- Clarifier les besoins des utilisateurs et les processus d’entreprise.  
   
--   Visualiser et explorer le code existant.  
+- Visualiser et explorer le code existant.  
   
--   Décrire les modifications apportées à un système existant.  
+- Décrire les modifications apportées à un système existant.  
   
--   Vérifier que le système satisfait à ses spécifications.  
+- Vérifier que le système satisfait à ses spécifications.  
   
--   Maintenir la cohérence du code avec la conception.  
+- Maintenir la cohérence du code avec la conception.  
   
- Cette procédure pas à pas :  
+  Cette procédure pas à pas :  
   
--   décrit ce que ces outils peuvent apporter à votre projet de logiciel ;  
+- décrit ce que ces outils peuvent apporter à votre projet de logiciel ;  
   
--   montre comment utiliser ces outils, quelle que soit votre approche du développement, à l’aide d’un exemple de scénario.  
+- montre comment utiliser ces outils, quelle que soit votre approche du développement, à l’aide d’un exemple de scénario.  
   
- Pour en savoir plus sur ces outils et les scénarios qu’ils prennent en charge, consultez :  
+  Pour en savoir plus sur ces outils et les scénarios qu’ils prennent en charge, consultez :  
   
--   [Analyse et modélisation de l’architecture](../modeling/analyze-and-model-your-architecture.md)  
+- [Analyse et modélisation de l’architecture](../modeling/analyze-and-model-your-architecture.md)  
   
--   [Visualiser du code](../modeling/visualize-code.md)  
+- [Visualiser du code](../modeling/visualize-code.md)  
   
--   [Créer des modèles pour votre application](../modeling/create-models-for-your-app.md)  
+- [Créer des modèles pour votre application](../modeling/create-models-for-your-app.md)  
   
 ##  <a name="ScenarioOverview"></a> Vue d’ensemble du scénario  
  Ce scénario décrit certaines étapes des cycles de vie du développement de logiciels dans deux entreprises fictives : Dinner Now et Lucerne Publishing. Dinner Now propose un service web de livraison de repas à Seattle. Les clients peuvent commander des repas et les payer sur le site web de Dinner Now. Les commandes sont alors envoyées au restaurant local chargé de les livrer. Lucerne Publishing, une société implantée à New York, exerce plusieurs activités liées ou non au web. Par exemple, elle gère un site web sur lequel ses clients peuvent publier leurs commentaires sur des restaurants.  
   
  Lucerne a récemment acquis Dinner Now et veut apporter les modifications suivantes :  
   
--   Intégrer le site web de Dinner Now en y ajoutant des fonctionnalités de publication d’avis sur les restaurants.  
+- Intégrer le site web de Dinner Now en y ajoutant des fonctionnalités de publication d’avis sur les restaurants.  
   
--   Remplacer le système de paiement de Dinner Now par celui de Lucerne.  
+- Remplacer le système de paiement de Dinner Now par celui de Lucerne.  
   
--   Développer les services Dinner Now dans toute la région.  
+- Développer les services Dinner Now dans toute la région.  
   
- Dinner Now utilise SCRUM et eXtreme Programming, des outils qui offrent une couverture de test très élevée et comportent très peu de code non pris en charge. Dinner Now réduit les risques en créant des versions légères mais fonctionnelles d’un système, puis en ajoutant progressivement des fonctionnalités. Elle développe le code sur des itérations courtes et fréquentes. Cela lui permet d’intégrer les modifications en toute confiance, de refactoriser fréquemment le code et d’éviter un lourd travail de conception en amont.  
+  Dinner Now utilise SCRUM et eXtreme Programming, des outils qui offrent une couverture de test très élevée et comportent très peu de code non pris en charge. Dinner Now réduit les risques en créant des versions légères mais fonctionnelles d’un système, puis en ajoutant progressivement des fonctionnalités. Elle développe le code sur des itérations courtes et fréquentes. Cela lui permet d’intégrer les modifications en toute confiance, de refactoriser fréquemment le code et d’éviter un lourd travail de conception en amont.  
   
- Lucerne tient à jour une collection bien plus importante et complexe de systèmes,  certains d’entre eux datant de plus de 40 ans. La société fait preuve d’une grande prudence pour apporter des modifications en raison de la complexité et de la portée du code hérité. Elle suit un processus de développement plus rigoureux, préférant concevoir des solutions détaillées, et documenter la conception et les modifications effectuées pendant le développement.  
+  Lucerne tient à jour une collection bien plus importante et complexe de systèmes,  certains d’entre eux datant de plus de 40 ans. La société fait preuve d’une grande prudence pour apporter des modifications en raison de la complexité et de la portée du code hérité. Elle suit un processus de développement plus rigoureux, préférant concevoir des solutions détaillées, et documenter la conception et les modifications effectuées pendant le développement.  
   
- Les deux équipes utilisent des diagrammes de modélisation dans Visual Studio pour développer des systèmes qui répondent mieux aux besoins des utilisateurs. Elles utilisent Team Foundation Server en parallèle d’autres outils pour planifier, organiser et gérer leur travail.  
+  Les deux équipes utilisent des diagrammes de modélisation dans Visual Studio pour développer des systèmes qui répondent mieux aux besoins des utilisateurs. Elles utilisent Team Foundation Server en parallèle d’autres outils pour planifier, organiser et gérer leur travail.  
   
- Pour plus d’informations sur Team Foundation Server, consultez :  
+  Pour plus d’informations sur Team Foundation Server, consultez :  
   
--   [Planification et suivi du travail](#PlanningTracking)  
+- [Planification et suivi du travail](#PlanningTracking)  
   
--   [Test, validation et archivage du code mis à jour](#TestValidateCheckInCode)  
+- [Test, validation et archivage du code mis à jour](#TestValidateCheckInCode)  
   
 ##  <a name="ModelingDiagramsTools"></a> Rôles de l’architecture et des diagrammes de modélisation dans le développement de logiciels  
  Le tableau suivant décrit les rôles que ces outils peuvent jouer pendant diverses étapes du cycle de développement logiciel :  
@@ -102,73 +102,73 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
   
  Consultez :  
   
--   [Créer des projets et des diagrammes de modélisation UML](../modeling/create-uml-modeling-projects-and-diagrams.md)  
+- [Créer des projets et des diagrammes de modélisation UML](../modeling/create-uml-modeling-projects-and-diagrams.md)  
   
--   [Créer des diagrammes de couche à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)  
+- [Créer des diagrammes de couche à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)  
   
--   [Mapper les dépendances à travers vos solutions](../modeling/map-dependencies-across-your-solutions.md)  
+- [Mapper les dépendances à travers vos solutions](../modeling/map-dependencies-across-your-solutions.md)  
   
--   [Guide pratique pour ajouter des diagrammes de classes aux projets (Concepteur de classes)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+- [Guide pratique pour ajouter des diagrammes de classes aux projets (Concepteur de classes)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
--   [SDK de modélisation pour Visual Studio - Langages spécifiques à un domaine](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
+- [SDK de modélisation pour Visual Studio - Langages spécifiques à un domaine](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
   
- Pour afficher d’autres vues de l’architecture, vous pouvez réutiliser certains éléments du même modèle sur plusieurs ou différents diagrammes. Par exemple, faites glisser un composant vers un autre diagramme de composant ou vers un diagramme de séquence à utiliser en tant qu’acteur. Consultez [modèles et diagrammes UML modifier](../modeling/edit-uml-models-and-diagrams.md).  
+  Pour afficher d’autres vues de l’architecture, vous pouvez réutiliser certains éléments du même modèle sur plusieurs ou différents diagrammes. Par exemple, faites glisser un composant vers un autre diagramme de composant ou vers un diagramme de séquence à utiliser en tant qu’acteur. Consultez [modèles et diagrammes UML modifier](../modeling/edit-uml-models-and-diagrams.md).  
   
- Les deux équipes utilisent également la validation de couche pour s’assurer que le code en cours de développement reste cohérent avec la conception.  
+  Les deux équipes utilisent également la validation de couche pour s’assurer que le code en cours de développement reste cohérent avec la conception.  
   
- Consultez :  
+  Consultez :  
   
--   [Maintien de la cohérence du code avec la conception](#ValidatingCode)  
+- [Maintien de la cohérence du code avec la conception](#ValidatingCode)  
   
--   [Décrire l’Architecture logique : diagrammes de couche](#DescribeLayers)  
+- [Décrire l’Architecture logique : diagrammes de couche](#DescribeLayers)  
   
--   [Valider du code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md)  
+- [Valider du code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md)  
   
-    > [!NOTE]
-    >  Certaines versions de Visual Studio prennent en charge la validation de couche et les versions en lecture seule des cartes de code et des diagrammes UML à des fins de visualisation et de modélisation. Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+  > [!NOTE]
+  >  Certaines versions de Visual Studio prennent en charge la validation de couche et les versions en lecture seule des cartes de code et des diagrammes UML à des fins de visualisation et de modélisation. Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ##  <a name="UnderstandingCommunicating"></a> Présentation et communication des informations sur le système  
  Il n’y a pas d’ordre impératif pour l’utilisation des diagrammes de modélisation Visual Studio. Vous pouvez donc les utiliser comme vous le voulez, en fonction de vos besoins ou de votre approche. En règle générale, les équipes revoient leurs modèles de façon répétée et fréquente au cours d’un projet. Chaque diagramme possède ses propres atouts pour vous aider à comprendre, décrire et communiquer différents aspects du système en cours de développement.  
   
  Les sociétés Dinner Now et Lucerne communiquent entre elles et avec les parties prenantes des projets en utilisant des diagrammes comme langage commun. Par exemple, Dinner Now utilise des diagrammes pour effectuer ces tâches :  
   
--   visualiser le code existant ;  
+- visualiser le code existant ;  
   
--   communiquer avec Lucerne sur les récits utilisateur nouveaux ou mis à jour ;  
+- communiquer avec Lucerne sur les récits utilisateur nouveaux ou mis à jour ;  
   
--   identifier les modifications requises pour prendre en charge des récits utilisateur nouveaux ou mis à jour.  
+- identifier les modifications requises pour prendre en charge des récits utilisateur nouveaux ou mis à jour.  
   
- Lucerne utilise des diagrammes pour effectuer ces tâches :  
+  Lucerne utilise des diagrammes pour effectuer ces tâches :  
   
--   découvrir le processus d’entreprise de Dinner Now ;  
+- découvrir le processus d’entreprise de Dinner Now ;  
   
--   comprendre la conception du système ;  
+- comprendre la conception du système ;  
   
--   communiquer avec Dinner Now sur les besoins nouveaux ou mis à jour des utilisateurs ;  
+- communiquer avec Dinner Now sur les besoins nouveaux ou mis à jour des utilisateurs ;  
   
--   documenter les mises à jour du système.  
+- documenter les mises à jour du système.  
   
- Les diagrammes sont intégrés à Team Foundation Server pour que les équipes puissent planifier, gérer et suivre leur travail plus facilement. Par exemple, les équipes utilisent des modèles pour identifier des cas de test et des tâches de développement, et pour estimer leur travail. Lucerne lie les éléments de travail Team Foundation Server aux éléments de modèle, ce qui permet aux équipes de surveiller la progression du travail et de s’assurer que le système répond aux besoins des utilisateurs. Par exemple, la liaison de cas d’usage à des éléments de travail de cas de test permet de savoir que les cas d’usage sont remplis quand tous les tests sont réussis.  
+  Les diagrammes sont intégrés à Team Foundation Server pour que les équipes puissent planifier, gérer et suivre leur travail plus facilement. Par exemple, les équipes utilisent des modèles pour identifier des cas de test et des tâches de développement, et pour estimer leur travail. Lucerne lie les éléments de travail Team Foundation Server aux éléments de modèle, ce qui permet aux équipes de surveiller la progression du travail et de s’assurer que le système répond aux besoins des utilisateurs. Par exemple, la liaison de cas d’usage à des éléments de travail de cas de test permet de savoir que les cas d’usage sont remplis quand tous les tests sont réussis.  
   
- Avant que les équipes archivent leurs modifications, elles valident le code par rapport aux tests et à la conception en exécutant des builds qui incluent une validation de couche et des tests automatisés. Ainsi, le code mis à jour n’entre pas en conflit avec la conception et ne nuit pas aux fonctionnalités qui étaient opérationnelles auparavant.  
+  Avant que les équipes archivent leurs modifications, elles valident le code par rapport aux tests et à la conception en exécutant des builds qui incluent une validation de couche et des tests automatisés. Ainsi, le code mis à jour n’entre pas en conflit avec la conception et ne nuit pas aux fonctionnalités qui étaient opérationnelles auparavant.  
   
- Consultez :  
+  Consultez :  
   
--   [Présentation du rôle du système dans le processus d’entreprise](#UnderstandingBPMandSystemDesign)  
+- [Présentation du rôle du système dans le processus d’entreprise](#UnderstandingBPMandSystemDesign)  
   
--   [Décrire les besoins des utilisateurs nouveaux ou mis à jour](#DescribingURM)  
+- [Décrire les besoins des utilisateurs nouveaux ou mis à jour](#DescribingURM)  
   
--   [Création de tests à partir de modèles](#CreatingTests)  
+- [Création de tests à partir de modèles](#CreatingTests)  
   
--   [Identification des modifications apportées au système existant](#DeterminingChanges)  
+- [Identification des modifications apportées au système existant](#DeterminingChanges)  
   
--   [Keeping code consistent with the design](#ValidatingCode)  
+- [Keeping code consistent with the design](#ValidatingCode)  
   
--   [Conseils généraux sur la création et l’utilisation de modèles](#GeneralTips)  
+- [Conseils généraux sur la création et l’utilisation de modèles](#GeneralTips)  
   
--   [Planification et suivi du travail](#PlanningTracking)  
+- [Planification et suivi du travail](#PlanningTracking)  
   
--   [Test, validation et archivage du code mis à jour](#TestValidateCheckInCode)  
+- [Test, validation et archivage du code mis à jour](#TestValidateCheckInCode)  
   
 ###  <a name="UnderstandingBPMandSystemDesign"></a> Présentation du rôle du système dans le processus d’entreprise  
  Lucerne veut en savoir plus sur le processus d’entreprise de Dinner Now. Elle crée les diagrammes suivants pour mieux comprendre le processus Dinner Now :  
@@ -227,19 +227,19 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
 ###  <a name="CreatingTests"></a> Création de Tests à partir de modèles  
  Les deux équipes conviennent qu’elles ont besoin d’un ensemble complet de tests pour le système et ses composants avant de procéder à toute modification. Lucerne dispose d’une équipe spécialisée qui effectue les tests au niveau du système et de chaque composant. Elle réutilise les tests créés par Dinner Now et les structure à l’aide de diagrammes UML :  
   
--   Chaque cas d’usage est représenté par un ou plusieurs tests. Les éléments inclus dans le diagramme de cas d’usage sont liés à des éléments de travail de cas de test dans Team Foundation Server.  
+- Chaque cas d’usage est représenté par un ou plusieurs tests. Les éléments inclus dans le diagramme de cas d’usage sont liés à des éléments de travail de cas de test dans Team Foundation Server.  
   
--   Chaque flux figurant dans un diagramme d’activités ou un diagramme de séquence au niveau du système est lié à au moins un test. L’équipe de test vérifie systématiquement qu’elle teste chaque tracé possible dans l’ensemble du diagramme d’activités.  
+- Chaque flux figurant dans un diagramme d’activités ou un diagramme de séquence au niveau du système est lié à au moins un test. L’équipe de test vérifie systématiquement qu’elle teste chaque tracé possible dans l’ensemble du diagramme d’activités.  
   
--   Les termes utilisés pour décrire les tests se basent sur ceux définis par les diagrammes de cas d’usage, de classes et d’activités.  
+- Les termes utilisés pour décrire les tests se basent sur ceux définis par les diagrammes de cas d’usage, de classes et d’activités.  
   
- Quand les besoins changent et que les diagrammes sont mis à jour pour refléter ces modifications, les tests sont mis à jour en conséquence. Un besoin est considéré comme rempli uniquement quand les tests réussissent. Quand c’est possible ou plus pratique, les tests sont définis et basés sur des diagrammes UML avant le début de l’implémentation.  
+  Quand les besoins changent et que les diagrammes sont mis à jour pour refléter ces modifications, les tests sont mis à jour en conséquence. Un besoin est considéré comme rempli uniquement quand les tests réussissent. Quand c’est possible ou plus pratique, les tests sont définis et basés sur des diagrammes UML avant le début de l’implémentation.  
   
- Consultez :  
+  Consultez :  
   
--   [Développer des tests à partir d’un modèle](../modeling/develop-tests-from-a-model.md)  
+- [Développer des tests à partir d’un modèle](../modeling/develop-tests-from-a-model.md)  
   
--   [Valider votre modèle UML](../modeling/validate-your-uml-model.md)  
+- [Valider votre modèle UML](../modeling/validate-your-uml-model.md)  
   
 ###  <a name="DeterminingChanges"></a> Identifying Changes to the Existing System  
  Dinner Now doit estimer le coût de réalisation pour remplir le nouveau besoin. Ce coût dépend en partie des répercussions de cette modification sur les autres parties du système. Pour mieux déterminer ce coût, l’un des développeurs de Dinner Now crée ces cartes et diagrammes à partir du code existant :  
@@ -310,144 +310,144 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
   
 ###  <a name="GeneralTips"></a> General Tips for Creating and Using Models  
   
--   La plupart des diagrammes sont constitués de nœuds connectés par des lignes. Pour chaque type de diagramme, la boîte à outils fournit différents types de nœuds et de lignes.  
+- La plupart des diagrammes sont constitués de nœuds connectés par des lignes. Pour chaque type de diagramme, la boîte à outils fournit différents types de nœuds et de lignes.  
   
-     Pour ouvrir la boîte à outils, dans le menu **Affichage** , cliquez sur **Boîte à outils**.  
+   Pour ouvrir la boîte à outils, dans le menu **Affichage** , cliquez sur **Boîte à outils**.  
   
--   Pour créer un nœud, faites-le glisser de la boîte à outils vers le diagramme. Certains types de nœuds doivent être déplacés vers des nœuds existants. Par exemple, sur un diagramme de composant, un nouveau port doit être ajouté à un composant existant.  
+- Pour créer un nœud, faites-le glisser de la boîte à outils vers le diagramme. Certains types de nœuds doivent être déplacés vers des nœuds existants. Par exemple, sur un diagramme de composant, un nouveau port doit être ajouté à un composant existant.  
   
--   Pour créer une ligne ou une connexion, cliquez sur l’outil approprié dans la boîte à outils, cliquez sur le nœud source, puis cliquez sur le nœud cible. Certaines lignes peuvent être créées uniquement entre certains types de nœuds. Quand vous déplacez le pointeur sur une source ou une cible possible, le pointeur indique si vous pouvez créer une connexion.  
+- Pour créer une ligne ou une connexion, cliquez sur l’outil approprié dans la boîte à outils, cliquez sur le nœud source, puis cliquez sur le nœud cible. Certaines lignes peuvent être créées uniquement entre certains types de nœuds. Quand vous déplacez le pointeur sur une source ou une cible possible, le pointeur indique si vous pouvez créer une connexion.  
   
--   Quand vous créez des éléments sur des diagrammes UML, vous les ajoutez également à un modèle commun. Les diagrammes UML d’un projet de modélisation sont des vues de ce modèle. Les éléments d’un diagramme de couche font partie du projet de modélisation, même s’ils ne sont pas stockés dans le modèle commun.  
+- Quand vous créez des éléments sur des diagrammes UML, vous les ajoutez également à un modèle commun. Les diagrammes UML d’un projet de modélisation sont des vues de ce modèle. Les éléments d’un diagramme de couche font partie du projet de modélisation, même s’ils ne sont pas stockés dans le modèle commun.  
   
-     Pour voir le modèle, dans le menu **Architecture** , pointez sur  **Fenêtres**, puis cliquez sur **Explorateur de modèles UML**.  
+   Pour voir le modèle, dans le menu **Architecture** , pointez sur  **Fenêtres**, puis cliquez sur **Explorateur de modèles UML**.  
   
--   Dans certains cas, vous pouvez faire glisser des éléments de l’ **Explorateur de modèles UML** vers un diagramme UML. Certains éléments au sein du même modèle peuvent être utilisés sur plusieurs ou différents diagrammes pour représenter d’autres vues de l’architecture. Par exemple, faites glisser un composant vers un autre diagramme de composant ou vers un diagramme de séquence à utiliser en tant qu’acteur.  
+- Dans certains cas, vous pouvez faire glisser des éléments de l’ **Explorateur de modèles UML** vers un diagramme UML. Certains éléments au sein du même modèle peuvent être utilisés sur plusieurs ou différents diagrammes pour représenter d’autres vues de l’architecture. Par exemple, faites glisser un composant vers un autre diagramme de composant ou vers un diagramme de séquence à utiliser en tant qu’acteur.  
   
--   Visual Studio prend en charge UML 2.1.2. Cette vue d’ensemble décrit uniquement les principales fonctionnalités des diagrammes UML disponibles dans cette version, mais il existe de nombreux ouvrages traitant du langage UML et de son utilisation plus en détail.  
+- Visual Studio prend en charge UML 2.1.2. Cette vue d’ensemble décrit uniquement les principales fonctionnalités des diagrammes UML disponibles dans cette version, mais il existe de nombreux ouvrages traitant du langage UML et de son utilisation plus en détail.  
   
- Consultez [créer des modèles pour votre application](../modeling/create-models-for-your-app.md).  
+  Consultez [créer des modèles pour votre application](../modeling/create-models-for-your-app.md).  
   
 ###  <a name="PlanningTracking"></a> Planning and Tracking Work  
  Des diagrammes de modélisation Visual Studio sont intégrés à Team Foundation Server pour que vous puissiez planifier, gérer et suivre le travail plus facilement. Les deux équipes utilisent des modèles pour identifier des cas de test et des tâches de développement, et pour estimer leur travail. Lucerne crée des éléments de travail Team Foundation Server et les lie à des éléments de modèle,tels que des cas d’usage ou des composants. Ainsi, les équipes peuvent suivre leur progression et tracer le travail par rapport aux besoins des utilisateurs. Elles peuvent mieux contrôler le maintien de la cohérence des modifications avec ces besoins.  
   
  Au fur et à mesure que le travail avance, les équipes mettent à jour leurs éléments de travail pour prendre en compte le temps dévolu à leurs tâches. Elles surveillent et signalent également l’état de leur travail en utilisant les fonctionnalités Team Foundation Server suivantes :  
   
--   Des *rapports d’avancement* quotidiens qui indiquent si les équipes vont effectuer le travail planifié dans le temps imparti. Les équipes génèrent d’autres rapports similaires à partir de Team Foundation Server pour suivre la progression des bogues.  
+- Des *rapports d’avancement* quotidiens qui indiquent si les équipes vont effectuer le travail planifié dans le temps imparti. Les équipes génèrent d’autres rapports similaires à partir de Team Foundation Server pour suivre la progression des bogues.  
   
--   Une *feuille de calcul d’itération* qui utilise Microsoft Excel pour aider les équipes à surveiller et équilibrer la charge de travail entre ses membres. Cette feuille de calcul est liée à Team Foundation Server et fournit le thème de discussion lors des réunions d’avancement régulières.  
+- Une *feuille de calcul d’itération* qui utilise Microsoft Excel pour aider les équipes à surveiller et équilibrer la charge de travail entre ses membres. Cette feuille de calcul est liée à Team Foundation Server et fournit le thème de discussion lors des réunions d’avancement régulières.  
   
--   Un *tableau de bord de développement* qui utilise Office Project pour tenir l’équipe informée sur les points importants du projet.  
+- Un *tableau de bord de développement* qui utilise Office Project pour tenir l’équipe informée sur les points importants du projet.  
   
- Consultez :  
+  Consultez :  
   
--   [Effectuer le suivi d’un travail à l’aide de Visual Studio Team Services ou Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
+- [Effectuer le suivi d’un travail à l’aide de Visual Studio Team Services ou Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
   
--   [Lier des éléments de modèle et des éléments de travail](../modeling/link-model-elements-and-work-items.md)  
+- [Lier des éléments de modèle et des éléments de travail](../modeling/link-model-elements-and-work-items.md)  
   
--   [Graphiques, tableaux de bord et rapports pour Visual Studio ALM](http://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
+- [Graphiques, tableaux de bord et rapports pour Visual Studio ALM](http://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
   
--   [Créer votre journal des travaux en souffrance et vos tâches à l'aide de Project](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
+- [Créer votre journal des travaux en souffrance et vos tâches à l'aide de Project](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
   
 ###  <a name="TestValidateCheckInCode"></a> Test, validation et archivage du code  
  À mesure que les équipes effectuent chaque tâche, elles vérifient leur code dans la gestion de version Team Foundation et reçoivent des rappels de Team Foundation Server, en cas d’oubli. Avant que Team Foundation Server n’accepte leurs archivages, les équipes exécutent des tests unitaires et la validation de couche pour vérifier le code par rapport à leur cas de test et à la conception. Elles utilisent Team Foundation Server pour exécuter régulièrement des builds, des tests unitaires automatisés et la validation de couche. Ainsi, elles vérifient que le code respecte les critères suivants :  
   
--   Il fonctionne.  
+- Il fonctionne.  
   
--   Il n’empêche pas du code opérationnel existant de fonctionner.  
+- Il n’empêche pas du code opérationnel existant de fonctionner.  
   
--   Il n’entre pas en conflit avec la conception.  
+- Il n’entre pas en conflit avec la conception.  
   
- Dinner Now possède une grande collection de tests automatisés. Lucerne peut réutiliser ces tests, car ils sont presque tous encore applicables. Lucerne peut également s’appuyer sur ces tests et en ajouter de nouveaux pour couvrir les nouvelles fonctionnalités. Les deux sociétés utilisent également Visual Studio pour exécuter des tests manuels.  
+  Dinner Now possède une grande collection de tests automatisés. Lucerne peut réutiliser ces tests, car ils sont presque tous encore applicables. Lucerne peut également s’appuyer sur ces tests et en ajouter de nouveaux pour couvrir les nouvelles fonctionnalités. Les deux sociétés utilisent également Visual Studio pour exécuter des tests manuels.  
   
- Pour s’assurer que le code est conforme à la conception, les équipes configurent leurs builds dans Team Foundation Build pour inclure la validation de couche. En cas de conflit, un rapport détaillé est généré.  
+  Pour s’assurer que le code est conforme à la conception, les équipes configurent leurs builds dans Team Foundation Build pour inclure la validation de couche. En cas de conflit, un rapport détaillé est généré.  
   
- Consultez :  
+  Consultez :  
   
--   [Test de l’application](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)  
+- [Test de l’application](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)  
   
--   [Valider votre système pendant le développement](../modeling/validate-your-system-during-development.md)  
+- [Valider votre système pendant le développement](../modeling/validate-your-system-during-development.md)  
   
--   [Utiliser la gestion de version](http://go.microsoft.com/fwlink/?LinkID=525605)  
+- [Utiliser la gestion de version](http://go.microsoft.com/fwlink/?LinkID=525605)  
   
--   [Générer l’application](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+- [Générer l’application](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
 ##  <a name="UpdatingSystem"></a> Updating the System Using Visualization and Modeling  
  Lucerne et Dinner Now doivent intégrer leurs systèmes de paiement. Les sections suivantes présentent les diagrammes de modélisation dans Visual Studio qui les aident à effectuer cette tâche :  
   
--   [Comprendre les besoins des utilisateurs : diagrammes de cas d’usage](#UnderstandUseCases)  
+- [Comprendre les besoins des utilisateurs : diagrammes de cas d’usage](#UnderstandUseCases)  
   
--   [Comprendre le processus d’entreprise : diagrammes d’activités](#UnderstandActivities)  
+- [Comprendre le processus d’entreprise : diagrammes d’activités](#UnderstandActivities)  
   
--   [Décrire la Structure du système : diagrammes de composants](#DescribeComponents)  
+- [Décrire la Structure du système : diagrammes de composants](#DescribeComponents)  
   
--   [Décrire les Interactions : diagrammes de séquence](#DescribeSequence)  
+- [Décrire les Interactions : diagrammes de séquence](#DescribeSequence)  
   
--   [Visualiser le code existant : cartes de code](#VisualizeCode)  
+- [Visualiser le code existant : cartes de code](#VisualizeCode)  
   
--   [Définir un glossaire des types : diagrammes de classes](#DefineClasses)  
+- [Définir un glossaire des types : diagrammes de classes](#DefineClasses)  
   
--   [Décrire l’Architecture logique : diagrammes de couche](#DescribeLayers)  
+- [Décrire l’Architecture logique : diagrammes de couche](#DescribeLayers)  
   
- Consultez :  
+  Consultez :  
   
--   [Créer des modèles pour votre application](../modeling/create-models-for-your-app.md)  
+- [Créer des modèles pour votre application](../modeling/create-models-for-your-app.md)  
   
--   [Visualiser du code](../modeling/visualize-code.md)  
+- [Visualiser du code](../modeling/visualize-code.md)  
   
--   [Utiliser des modèles dans votre processus de développement](../modeling/use-models-in-your-development-process.md)  
+- [Utiliser des modèles dans votre processus de développement](../modeling/use-models-in-your-development-process.md)  
   
--   [Modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md)  
+- [Modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md)  
   
--   [Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md)  
+- [Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md)  
   
 ###  <a name="UnderstandUseCases"></a> Comprendre les besoins des utilisateurs : diagrammes de cas d’usage  
  Les diagrammes de cas d’usage résument les activités prises en charge par un système et les personnes qui effectuent ces activités. Lucerne utilise un diagramme de cas d’usage pour mieux comprendre le système Dinner Now :  
   
--   Les clients créent des commandes.  
+- Les clients créent des commandes.  
   
--   Les restaurants reçoivent les commandes.  
+- Les restaurants reçoivent les commandes.  
   
--   La passerelle de traitement du paiement externe, utilisée par le système de paiement de Dinner Now pour valider les paiements, est en dehors de la portée du site web.  
+- La passerelle de traitement du paiement externe, utilisée par le système de paiement de Dinner Now pour valider les paiements, est en dehors de la portée du site web.  
   
- Le diagramme illustre aussi la manière dont certains cas d’usage principaux se scindent en plusieurs cas d’usage plus petits. Lucerne veut utiliser son propre système de paiement. La société met en surbrillance le cas d’usage correspondant au traitement du paiement avec une autre couleur pour indiquer qu’il nécessite des modifications :  
+  Le diagramme illustre aussi la manière dont certains cas d’usage principaux se scindent en plusieurs cas d’usage plus petits. Lucerne veut utiliser son propre système de paiement. La société met en surbrillance le cas d’usage correspondant au traitement du paiement avec une autre couleur pour indiquer qu’il nécessite des modifications :  
   
- ![Mise en surbrillance de traiter le paiement dans un diagramme de cas d’utilisation](../modeling/media/uml-processpay.png "UML_ProcessPay")  
+  ![Mise en surbrillance de traiter le paiement dans un diagramme de cas d’utilisation](../modeling/media/uml-processpay.png "UML_ProcessPay")  
   
- **Mise en surbrillance de traiter le paiement dans le diagramme de cas d’utilisation**  
+  **Mise en surbrillance de traiter le paiement dans le diagramme de cas d’utilisation**  
   
- Si le délai de développement est court, l’équipe peut envisager de permettre aux clients de payer directement les restaurants. Pour cela, elle devra remplacer le cas d’usage Traiter le paiement par un cas d’usage situé au-delà des limites du système Dinner Now. Elle devra ensuite lier le client directement au restaurant, en indiquant que Dinner Now se contentera de traiter les commandes :  
+  Si le délai de développement est court, l’équipe peut envisager de permettre aux clients de payer directement les restaurants. Pour cela, elle devra remplacer le cas d’usage Traiter le paiement par un cas d’usage situé au-delà des limites du système Dinner Now. Elle devra ensuite lier le client directement au restaurant, en indiquant que Dinner Now se contentera de traiter les commandes :  
   
- ![Redéfinition sur le diagramme de cas d’usage payer le Restaurant](../modeling/media/uml-payrestaurant.png "UML_PayRestaurant")  
+  ![Redéfinition sur le diagramme de cas d’usage payer le Restaurant](../modeling/media/uml-payrestaurant.png "UML_PayRestaurant")  
   
- **Redéfinition payer le Restaurant sur le diagramme de cas d’utilisation**  
+  **Redéfinition payer le Restaurant sur le diagramme de cas d’utilisation**  
   
- Consultez :  
+  Consultez :  
   
--   [Informations de référence sur les diagrammes de cas d’usage UML](../modeling/uml-use-case-diagrams-reference.md)  
+- [Informations de référence sur les diagrammes de cas d’usage UML](../modeling/uml-use-case-diagrams-reference.md)  
   
--   [Diagrammes de cas d’usage UML : recommandations](../modeling/uml-use-case-diagrams-guidelines.md)  
+- [Diagrammes de cas d’usage UML : recommandations](../modeling/uml-use-case-diagrams-guidelines.md)  
   
 #### <a name="drawing-a-use-case-diagram"></a>Dessin d’un diagramme de cas d’usage  
  Un diagramme de cas d’usage comporte les principales fonctionnalités suivantes :  
   
--   Les*acteurs* représentent les rôles joués par les personnes, les organisations, les ordinateurs ou les systèmes logiciels. Par exemple, Client, Restaurant et Système de paiement de Dinner Now sont des acteurs.  
+- Les*acteurs* représentent les rôles joués par les personnes, les organisations, les ordinateurs ou les systèmes logiciels. Par exemple, Client, Restaurant et Système de paiement de Dinner Now sont des acteurs.  
   
--   Les*cas d’usage* représentent les interactions entre les acteurs et le système en cours de développement.  Ils peuvent représenter tout niveau d’interaction depuis un clic de souris ou un message unique jusqu’à une transaction qui se déroule sur plusieurs jours.  
+- Les*cas d’usage* représentent les interactions entre les acteurs et le système en cours de développement.  Ils peuvent représenter tout niveau d’interaction depuis un clic de souris ou un message unique jusqu’à une transaction qui se déroule sur plusieurs jours.  
   
--   Les*associations* lient les acteurs aux cas d’usage.  
+- Les*associations* lient les acteurs aux cas d’usage.  
   
--   Un cas d’usage plus large peut *inclure* plusieurs cas d’usage plus petits (par exemple, Créer une commande inclut Sélectionner un restaurant). Vous pouvez *étendre* un cas d’usage, ce qui ajoute des objectifs et des étapes au cas d’usage étendu, pour indiquer qu’il se produit uniquement sous certaines conditions. Les cas d’usage peuvent également hériter les uns des autres.  
+- Un cas d’usage plus large peut *inclure* plusieurs cas d’usage plus petits (par exemple, Créer une commande inclut Sélectionner un restaurant). Vous pouvez *étendre* un cas d’usage, ce qui ajoute des objectifs et des étapes au cas d’usage étendu, pour indiquer qu’il se produit uniquement sous certaines conditions. Les cas d’usage peuvent également hériter les uns des autres.  
   
--   Un *sous-système* représente le système logiciel en cours de développement ou l’un de ses composants. Il s’agit d’une grande « boîte » qui contient des cas d’usage. Un diagramme de cas d’usage clarifie ce qui est à l’intérieur ou à l’extérieur des limites du sous-système. Pour indiquer que l’utilisateur doit remplir certains objectifs d’une autre manière, dessinez ces cas d’usage en dehors des limites du sous-système.  
+- Un *sous-système* représente le système logiciel en cours de développement ou l’un de ses composants. Il s’agit d’une grande « boîte » qui contient des cas d’usage. Un diagramme de cas d’usage clarifie ce qui est à l’intérieur ou à l’extérieur des limites du sous-système. Pour indiquer que l’utilisateur doit remplir certains objectifs d’une autre manière, dessinez ces cas d’usage en dehors des limites du sous-système.  
   
--   Les*artefacts* lient des éléments d’un diagramme à d’autres diagrammes ou documents.  
+- Les*artefacts* lient des éléments d’un diagramme à d’autres diagrammes ou documents.  
   
- Consultez :  
+  Consultez :  
   
--   [Informations de référence sur les diagrammes de cas d’usage UML](../modeling/uml-use-case-diagrams-reference.md)  
+- [Informations de référence sur les diagrammes de cas d’usage UML](../modeling/uml-use-case-diagrams-reference.md)  
   
--   [Diagrammes de cas d’usage UML : recommandations](../modeling/uml-use-case-diagrams-guidelines.md)  
+- [Diagrammes de cas d’usage UML : recommandations](../modeling/uml-use-case-diagrams-guidelines.md)  
   
 #### <a name="summary-strengths-of-use-case-diagrams"></a>Résumé : atouts des diagrammes de cas d’usage  
  Les diagrammes de cas d’usage vous aident à visualiser :  
@@ -492,27 +492,27 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
 #### <a name="drawing-an-activity-diagram"></a>Dessin d’un diagramme d’activités  
  Un diagramme d’activités comporte les principales fonctionnalités suivantes :  
   
--   Un *nœud initial* qui indique la première action de l’activité.  
+- Un *nœud initial* qui indique la première action de l’activité.  
   
-     Le diagramme doit toujours comporter un de ces nœuds.  
+   Le diagramme doit toujours comporter un de ces nœuds.  
   
--   Des*actions* qui décrivent les étapes au cours desquelles l’utilisateur ou le logiciel effectuent une tâche.  
+- Des*actions* qui décrivent les étapes au cours desquelles l’utilisateur ou le logiciel effectuent une tâche.  
   
--   Des*flux de contrôle* qui montrent le flux entre les actions.  
+- Des*flux de contrôle* qui montrent le flux entre les actions.  
   
--   Des*nœuds de décision* qui représentent les branches conditionnelles dans le flux.  
+- Des*nœuds de décision* qui représentent les branches conditionnelles dans le flux.  
   
--   Des*nœuds de bifurcation* qui divisent les flux uniques en flux simultanés.  
+- Des*nœuds de bifurcation* qui divisent les flux uniques en flux simultanés.  
   
--   Des*nœuds finaux de l’activité* qui montrent la fin de l’activité.  
+- Des*nœuds finaux de l’activité* qui montrent la fin de l’activité.  
   
-     Ces nœuds sont facultatifs, mais il est préférable de les inclure dans le diagramme pour indiquer la fin de l’activité.  
+   Ces nœuds sont facultatifs, mais il est préférable de les inclure dans le diagramme pour indiquer la fin de l’activité.  
   
- Consultez :  
+  Consultez :  
   
--   [Informations de référence sur les diagrammes d’activités UML](../modeling/uml-activity-diagrams-reference.md)  
+- [Informations de référence sur les diagrammes d’activités UML](../modeling/uml-activity-diagrams-reference.md)  
   
--   [Diagrammes d’activités UML : conseils](../modeling/uml-activity-diagrams-guidelines.md)  
+- [Diagrammes d’activités UML : conseils](../modeling/uml-activity-diagrams-guidelines.md)  
   
 #### <a name="summary-strengths-of-activity-diagrams"></a>Résumé : atouts des diagrammes d’activités  
  Les diagrammes d’activités vous aident à visualiser et décrire le flux de contrôle et d’informations entre les actions d’une entreprise, d’un système ou d’un programme. Il s’agit d’un moyen simple et pratique de décrire le flux de travail pour communiquer avec d’autres personnes.  
@@ -539,50 +539,50 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
   
  Le diagramme suivant montre une configuration spécifique des composants pour le site web de Dinner Now. Cette configuration indique que chaque instance du site web se compose de quatre *parties*:  
   
--   CustomerProcessing  
+- CustomerProcessing  
   
--   OrderProcessing  
+- OrderProcessing  
   
--   ReviewProcessing  
+- ReviewProcessing  
   
--   PaymentProcessing  
+- PaymentProcessing  
   
- Ces parties sont des instances des types de composants spécifiés et sont connectées comme suit :  
+  Ces parties sont des instances des types de composants spécifiés et sont connectées comme suit :  
   
- ![Composants à l’intérieur du site Web de Dinner Now](../modeling/media/uml-dinnernow.png "UML_DinnerNow")  
+  ![Composants à l’intérieur du site Web de Dinner Now](../modeling/media/uml-dinnernow.png "UML_DinnerNow")  
   
- **Site Web de composants à l’intérieur de la Dinner Now**  
+  **Site Web de composants à l’intérieur de la Dinner Now**  
   
- Le site web de Dinner Now délègue son comportement à ces parties, qui gèrent les fonctions du site web. Les flèches entre le composant parent et ses composants membres représentent les *délégations* qui indiquent quelles parties gèrent les messages que le parent reçoit ou envoie via ses interfaces.  
+  Le site web de Dinner Now délègue son comportement à ces parties, qui gèrent les fonctions du site web. Les flèches entre le composant parent et ses composants membres représentent les *délégations* qui indiquent quelles parties gèrent les messages que le parent reçoit ou envoie via ses interfaces.  
   
- Dans cette configuration, le composant PaymentProcessing traite les paiements des clients. Il doit donc être mis à jour pour s’intégrer au système de paiement de Lucerne. Dans d’autres scénarios, plusieurs instances d’un type de composant peuvent exister dans le même composant parent.  
+  Dans cette configuration, le composant PaymentProcessing traite les paiements des clients. Il doit donc être mis à jour pour s’intégrer au système de paiement de Lucerne. Dans d’autres scénarios, plusieurs instances d’un type de composant peuvent exister dans le même composant parent.  
   
- Consultez :  
+  Consultez :  
   
--   [Informations de référence sur les diagrammes de composants UML](../modeling/uml-component-diagrams-reference.md)  
+- [Informations de référence sur les diagrammes de composants UML](../modeling/uml-component-diagrams-reference.md)  
   
--   [Diagrammes de composants UML : recommandations](../modeling/uml-component-diagrams-guidelines.md)  
+- [Diagrammes de composants UML : recommandations](../modeling/uml-component-diagrams-guidelines.md)  
   
 #### <a name="drawing-a-component-diagram"></a>Dessin d’un diagramme de composant  
  Un diagramme de composant comporte les principales fonctionnalités suivantes :  
   
--   Des*composants* qui représentent des parties séparables des fonctionnalités du système.  
+- Des*composants* qui représentent des parties séparables des fonctionnalités du système.  
   
--   Des*ports d’interface fournie* qui représentent des groupes de messages ou d’appels que les composants implémentent et qui servent à d’autres composants ou systèmes externes.  
+- Des*ports d’interface fournie* qui représentent des groupes de messages ou d’appels que les composants implémentent et qui servent à d’autres composants ou systèmes externes.  
   
--   Des*ports d’interface requise* qui représentent des groupes de messages ou d’appels que les composants envoient à d’autres composants ou systèmes externes. Ce type de port décrit les opérations qu’un composant attend au minimum des autres composants ou systèmes externes.  
+- Des*ports d’interface requise* qui représentent des groupes de messages ou d’appels que les composants envoient à d’autres composants ou systèmes externes. Ce type de port décrit les opérations qu’un composant attend au minimum des autres composants ou systèmes externes.  
   
--   Les*parties* sont membres de composants et sont généralement des instances d’autres composants. Une partie est un fragment de la conception interne du composant parent.  
+- Les*parties* sont membres de composants et sont généralement des instances d’autres composants. Une partie est un fragment de la conception interne du composant parent.  
   
--   Des*dépendances* qui indiquent que les composants nécessitent les fonctionnalités d’autres composants.  
+- Des*dépendances* qui indiquent que les composants nécessitent les fonctionnalités d’autres composants.  
   
--   Des*délégations* qui indiquent que des parties d’un composant gèrent les messages envoyés ou reçus par le composant parent.  
+- Des*délégations* qui indiquent que des parties d’un composant gèrent les messages envoyés ou reçus par le composant parent.  
   
- Consultez :  
+  Consultez :  
   
--   [Informations de référence sur les diagrammes de composants UML](../modeling/uml-component-diagrams-reference.md)  
+- [Informations de référence sur les diagrammes de composants UML](../modeling/uml-component-diagrams-reference.md)  
   
--   [Diagrammes de composants UML : recommandations](../modeling/uml-component-diagrams-guidelines.md)  
+- [Diagrammes de composants UML : recommandations](../modeling/uml-component-diagrams-guidelines.md)  
   
 #### <a name="summary-strengths-of-component-diagrams"></a>Résumé : atouts des diagrammes de composant  
  Les diagrammes de composant vous aident à visualiser :  
@@ -604,41 +604,41 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
 ###  <a name="VisualizeCode"></a> Visualiser le code existant : cartes de code  
  Les cartes de code montrent l’organisation et les relations actuelles dans le code. Les éléments sont représentés par des *nœuds* dans la carte et les relations sont représentées par des *liens*. Les cartes de code peuvent vous aider à effectuer les types de tâches suivants :  
   
--   Explorer du code méconnu.  
+- Explorer du code méconnu.  
   
--   Comprendre où et comment une modification suggérée peut affecter du code existant.  
+- Comprendre où et comment une modification suggérée peut affecter du code existant.  
   
--   Identifier des zones de complexité, des couches naturelles ou des modèles, ou d’autres zones à améliorer.  
+- Identifier des zones de complexité, des couches naturelles ou des modèles, ou d’autres zones à améliorer.  
   
- Par exemple, Dinner Now doit estimer le coût de la mise à jour du composant PaymentProcessing. Ce coût dépend en partie des répercussions de cette modification sur les autres parties du système. Pour mieux déterminer ce coût, l’un des développeurs de Dinner Now génère des cartes de code à partir du code existant et ajuste la portée pour se concentrer sur les zones éventuellement concernées par la modification.  
+  Par exemple, Dinner Now doit estimer le coût de la mise à jour du composant PaymentProcessing. Ce coût dépend en partie des répercussions de cette modification sur les autres parties du système. Pour mieux déterminer ce coût, l’un des développeurs de Dinner Now génère des cartes de code à partir du code existant et ajuste la portée pour se concentrer sur les zones éventuellement concernées par la modification.  
   
- La carte suivante montre les dépendances entre la classe PaymentProcessing et d’autres parties du système Dinner Now, qui sont mises en surbrillance :  
+  La carte suivante montre les dépendances entre la classe PaymentProcessing et d’autres parties du système Dinner Now, qui sont mises en surbrillance :  
   
- ![Graphique de dépendance pour le système de paiement de Dinner Now](../modeling/media/dep-dnpayment.png "Dep_DNPayment")  
+  ![Graphique de dépendance pour le système de paiement de Dinner Now](../modeling/media/dep-dnpayment.png "Dep_DNPayment")  
   
- **Carte de code du système de paiement de Dinner Now**  
+  **Carte de code du système de paiement de Dinner Now**  
   
- Le développeur explore la carte en développant la classe PaymentProcessing et en sélectionnant ses membres pour voir les zones éventuellement affectées :  
+  Le développeur explore la carte en développant la classe PaymentProcessing et en sélectionnant ses membres pour voir les zones éventuellement affectées :  
   
- ![Méthodes dans PaymentProcessing et dépendances](../modeling/media/depgraph-expandeddn.png "DepGraph_ExpandedDN")  
+  ![Méthodes dans PaymentProcessing et dépendances](../modeling/media/depgraph-expandeddn.png "DepGraph_ExpandedDN")  
   
- **Méthodes dans la classe PaymentProcessing et leurs dépendances**  
+  **Méthodes dans la classe PaymentProcessing et leurs dépendances**  
   
- L’équipe génère la carte suivante pour le système de paiement de Lucerne pour inspecter ses classes, méthodes et dépendances. Elle constate que le système Lucerne risque aussi de devoir être modifié pour interagir avec les autres parties de Dinner Now :  
+  L’équipe génère la carte suivante pour le système de paiement de Lucerne pour inspecter ses classes, méthodes et dépendances. Elle constate que le système Lucerne risque aussi de devoir être modifié pour interagir avec les autres parties de Dinner Now :  
   
- ![Graphique de dépendance pour le système de paiement de Lucerne](../modeling/media/depgraph-lucernepay.png "DepGraph_LucernePay")  
+  ![Graphique de dépendance pour le système de paiement de Lucerne](../modeling/media/depgraph-lucernepay.png "DepGraph_LucernePay")  
   
- **Carte de code pour le système de paiement de Lucerne**  
+  **Carte de code pour le système de paiement de Lucerne**  
   
- Les deux équipes travaillent ensemble pour déterminer les modifications requises pour intégrer les deux systèmes. Elles décident de refactoriser une partie du code pour faciliter sa mise à jour. La classe PaymentApprover est déplacée vers l’espace de noms DinnerNow.Business et nécessite quelques méthodes nouvelles. Les classes Dinner Now qui gèrent les transactions ont leur propre espace de noms. Les équipes créent et utilisent des éléments de travail pour planifier, organiser et suivre leur travail. Elles lient les éléments de travail à des éléments de modèle quand cela s’avère utile.  
+  Les deux équipes travaillent ensemble pour déterminer les modifications requises pour intégrer les deux systèmes. Elles décident de refactoriser une partie du code pour faciliter sa mise à jour. La classe PaymentApprover est déplacée vers l’espace de noms DinnerNow.Business et nécessite quelques méthodes nouvelles. Les classes Dinner Now qui gèrent les transactions ont leur propre espace de noms. Les équipes créent et utilisent des éléments de travail pour planifier, organiser et suivre leur travail. Elles lient les éléments de travail à des éléments de modèle quand cela s’avère utile.  
   
- Après avoir réorganisé le code, les équipes génèrent une nouvelle carte de code pour voir la structure et les relations mises à jour :  
+  Après avoir réorganisé le code, les équipes génèrent une nouvelle carte de code pour voir la structure et les relations mises à jour :  
   
- ![Graphique de dépendance avec code réorganisé](../modeling/media/depgraph-integrated.png "DepGraph_Integrated")  
+  ![Graphique de dépendance avec code réorganisé](../modeling/media/depgraph-integrated.png "DepGraph_Integrated")  
   
- **Carte de code après la réorganisation du code**  
+  **Carte de code après la réorganisation du code**  
   
- Cette carte montre que la classe PaymentApprover se trouve maintenant dans l’espace de noms DinnerNow.Business et qu’elle comporte de nouvelles méthodes. Les classes de transaction Dinner Now ont maintenant leur propre espace de noms PaymentSystem, ce qui facilitera l’utilisation ultérieure de ce code.  
+  Cette carte montre que la classe PaymentApprover se trouve maintenant dans l’espace de noms DinnerNow.Business et qu’elle comporte de nouvelles méthodes. Les classes de transaction Dinner Now ont maintenant leur propre espace de noms PaymentSystem, ce qui facilitera l’utilisation ultérieure de ce code.  
   
 #### <a name="creating-a-code-map"></a>Création d’une carte de code  
   
@@ -696,21 +696,21 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
 #### <a name="drawing-a-sequence-diagram"></a>Dessin d’un diagramme de séquence  
  Un diagramme de séquence comporte les principales fonctionnalités suivantes :  
   
--   Les *lignes de vie* verticales représentent les acteurs ou les instances des objets logiciels.  
+- Les *lignes de vie* verticales représentent les acteurs ou les instances des objets logiciels.  
   
-     Pour ajouter un symbole d’acteur, qui indique qu’un participant est en dehors du système en cours de développement, cliquez sur la ligne de vie. Dans la fenêtre **Propriétés** , affectez à **Acteur** la valeur **True**. Si la fenêtre **Propriétés** n’est pas ouverte, appuyez sur **F4**.  
+   Pour ajouter un symbole d’acteur, qui indique qu’un participant est en dehors du système en cours de développement, cliquez sur la ligne de vie. Dans la fenêtre **Propriétés** , affectez à **Acteur** la valeur **True**. Si la fenêtre **Propriétés** n’est pas ouverte, appuyez sur **F4**.  
   
--   Les *messages* horizontaux représentent des appels de méthode, des messages de service web ou d’autres communications. Les*occurrences d’exécution* sont des rectangles grisés verticaux qui apparaissent sur les lignes de vie et qui représentent les périodes pendant lesquelles les objets de destination traitent les appels.  
+- Les *messages* horizontaux représentent des appels de méthode, des messages de service web ou d’autres communications. Les*occurrences d’exécution* sont des rectangles grisés verticaux qui apparaissent sur les lignes de vie et qui représentent les périodes pendant lesquelles les objets de destination traitent les appels.  
   
--   Pendant un *synchrone* message, l’objet expéditeur attend du contrôle <\<retourner >> comme dans un appel de fonction normal. Pendant un message *asynchrone* , l’expéditeur peut continuer immédiatement.  
+- Pendant un *synchrone* message, l’objet expéditeur attend du contrôle <\<retourner >> comme dans un appel de fonction normal. Pendant un message *asynchrone* , l’expéditeur peut continuer immédiatement.  
   
--   Utilisez <\<créer >> messages pour indiquer la construction d’objets par d’autres objets. Cela doit être le premier message envoyé à l’objet.  
+- Utilisez <\<créer >> messages pour indiquer la construction d’objets par d’autres objets. Cela doit être le premier message envoyé à l’objet.  
   
- Consultez :  
+  Consultez :  
   
--   [Informations de référence sur les diagrammes de séquence UML](../modeling/uml-sequence-diagrams-reference.md)  
+- [Informations de référence sur les diagrammes de séquence UML](../modeling/uml-sequence-diagrams-reference.md)  
   
--   [Diagrammes de séquence UML : recommandations](../modeling/uml-sequence-diagrams-guidelines.md)  
+- [Diagrammes de séquence UML : recommandations](../modeling/uml-sequence-diagrams-guidelines.md)  
   
 #### <a name="summary-strengths-of-sequence-diagrams"></a>Résumé : atouts des diagrammes de séquence  
  Les diagrammes de séquence vous aident à visualiser :  
@@ -753,43 +753,43 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
 #### <a name="drawing-a-class-diagram"></a>Dessin d’un diagramme de classes  
  Un diagramme de classes comporte les principales fonctionnalités suivantes :  
   
--   Des types, tels que des classes, des interfaces et des énumérations :  
+- Des types, tels que des classes, des interfaces et des énumérations :  
   
-    -   Une *classe* est la définition d’objets qui partagent des caractéristiques structurelles ou comportementales spécifiques.  
+  -   Une *classe* est la définition d’objets qui partagent des caractéristiques structurelles ou comportementales spécifiques.  
   
-    -   Une *interface* définit une partie du comportement extérieurement visible d’un objet.  
+  -   Une *interface* définit une partie du comportement extérieurement visible d’un objet.  
   
-    -   Une *énumération* est un classifieur qui contient une liste de valeurs littérales.  
+  -   Une *énumération* est un classifieur qui contient une liste de valeurs littérales.  
   
--   Les*attributs* sont des valeurs d’un type donné qui décrivent chaque instance d’un *classifieur*. Un classifieur est un nom générique attribué aux types, aux composants, aux cas d’usage et même aux acteurs.  
+- Les*attributs* sont des valeurs d’un type donné qui décrivent chaque instance d’un *classifieur*. Un classifieur est un nom générique attribué aux types, aux composants, aux cas d’usage et même aux acteurs.  
   
--   Les*opérations* sont des méthodes ou des fonctions que les instances d’un classifieur peuvent exécuter.  
+- Les*opérations* sont des méthodes ou des fonctions que les instances d’un classifieur peuvent exécuter.  
   
--   Une *association* indique une sorte de relation entre deux classifieurs.  
+- Une *association* indique une sorte de relation entre deux classifieurs.  
   
-    -   Une *agrégation* est une association qui indique une propriété partagée entre des classifieurs.  
+  - Une *agrégation* est une association qui indique une propriété partagée entre des classifieurs.  
   
-    -   Une *composition* est une association qui indique une relation ensemble à partie entre des classifieurs.  
+  - Une *composition* est une association qui indique une relation ensemble à partie entre des classifieurs.  
   
-     Pour afficher les agrégations ou les compositions, définissez la propriété **Aggregation** sur une association. La valeur**Shared** et la valeur **Composite** affichent les agrégations et les compositions, respectivement.  
+    Pour afficher les agrégations ou les compositions, définissez la propriété **Aggregation** sur une association. La valeur**Shared** et la valeur **Composite** affichent les agrégations et les compositions, respectivement.  
   
--   Une *dépendance* indique que la modification de la définition d’un classifieur peut modifier la définition d’un autre classifieur.  
+- Une *dépendance* indique que la modification de la définition d’un classifieur peut modifier la définition d’un autre classifieur.  
   
--   Une *généralisation* indique qu’un classifieur spécifique hérite une partie de sa définition d’un classifieur général. Une *réalisation* indique qu’une classe implémente les opérations et attributs fournis par une interface.  
+- Une *généralisation* indique qu’un classifieur spécifique hérite une partie de sa définition d’un classifieur général. Une *réalisation* indique qu’une classe implémente les opérations et attributs fournis par une interface.  
   
-     Pour créer ces relations, utilisez l’outil **Héritage** . Sinon, une réalisation peut être représentée sous forme d’interface *lollipop*.  
+   Pour créer ces relations, utilisez l’outil **Héritage** . Sinon, une réalisation peut être représentée sous forme d’interface *lollipop*.  
   
--   Les*packages* sont des groupes de classifieurs, d’associations, de lignes de vie, de composants et d’autres packages. Les relations d’*importation* indiquent qu’un package inclut toutes les définitions d’un autre package.  
+- Les*packages* sont des groupes de classifieurs, d’associations, de lignes de vie, de composants et d’autres packages. Les relations d’*importation* indiquent qu’un package inclut toutes les définitions d’un autre package.  
   
- Pour commencer l’exploration et l’examen des classes existantes, vous pouvez utiliser le Concepteur de classes pour créer des diagrammes de classes à partir du code.  
+  Pour commencer l’exploration et l’examen des classes existantes, vous pouvez utiliser le Concepteur de classes pour créer des diagrammes de classes à partir du code.  
   
- Consultez :  
+  Consultez :  
   
--   [Informations de référence sur les diagrammes de classes UML](../modeling/uml-class-diagrams-reference.md)  
+- [Informations de référence sur les diagrammes de classes UML](../modeling/uml-class-diagrams-reference.md)  
   
--   [Diagrammes de classes UML : recommandations](../modeling/uml-class-diagrams-guidelines.md)  
+- [Diagrammes de classes UML : recommandations](../modeling/uml-class-diagrams-guidelines.md)  
   
--   [Guide pratique pour ajouter des diagrammes de classes aux projets (Concepteur de classes)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+- [Guide pratique pour ajouter des diagrammes de classes aux projets (Concepteur de classes)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
 #### <a name="summary-strengths-of-class-diagrams"></a>Résumé : atouts des diagrammes de classes  
  Les diagrammes de classes vous permettent de définir :  
@@ -839,35 +839,35 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
 #### <a name="drawing-a-layer-diagram"></a>Dessin d’un diagramme de couche  
  Un diagramme de couche comporte les principales fonctionnalités suivantes :  
   
--   Des*couches* décrivent des groupes logiques d’artefacts.  
+- Des*couches* décrivent des groupes logiques d’artefacts.  
   
--   Un *lien* est une association entre une couche et un artefact.  
+- Un *lien* est une association entre une couche et un artefact.  
   
-     Pour créer des couches à partir d’artefacts, faites glisser des éléments depuis l’Explorateur de solutions, des cartes de code, de l’affichage de classes ou de l’Explorateur d’objets. Pour dessiner de nouvelles couches et les lier aux artefacts, utilisez la boîte à outils, ou cliquez avec le bouton droit sur la surface du diagramme pour créer les couches, puis faites glisser des éléments vers ces couches.  
+   Pour créer des couches à partir d’artefacts, faites glisser des éléments depuis l’Explorateur de solutions, des cartes de code, de l’affichage de classes ou de l’Explorateur d’objets. Pour dessiner de nouvelles couches et les lier aux artefacts, utilisez la boîte à outils, ou cliquez avec le bouton droit sur la surface du diagramme pour créer les couches, puis faites glisser des éléments vers ces couches.  
   
-     Le nombre indiqué sur une couche représente le nombre d’artefacts liés à cette couche. Ces artefacts peuvent correspondre à des espaces de noms, des projets, des classes, des méthodes, etc. Quand vous analysez le nombre d’artefacts sur une couche, tenez compte des points suivants :  
+   Le nombre indiqué sur une couche représente le nombre d’artefacts liés à cette couche. Ces artefacts peuvent correspondre à des espaces de noms, des projets, des classes, des méthodes, etc. Quand vous analysez le nombre d’artefacts sur une couche, tenez compte des points suivants :  
   
-    -   Si une couche est liée à un artefact contenant d'autres artefacts, mais n'est pas directement liée à ces autres artefacts, le nombre représentera uniquement les artefacts auxquels elle est directement liée. Toutefois, les autres artefacts sont inclus dans l'analyse pendant la validation de couche.  
+  - Si une couche est liée à un artefact contenant d'autres artefacts, mais n'est pas directement liée à ces autres artefacts, le nombre représentera uniquement les artefacts auxquels elle est directement liée. Toutefois, les autres artefacts sont inclus dans l'analyse pendant la validation de couche.  
   
-         Par exemple, si une couche est liée à un espace de noms unique, le nombre d'artefacts liés est égal à 1, même si l'espace de noms contient des classes. Si la couche a également des liens vers chaque classe de l'espace de noms, le nombre comprendra les classes liées.  
+     Par exemple, si une couche est liée à un espace de noms unique, le nombre d'artefacts liés est égal à 1, même si l'espace de noms contient des classes. Si la couche a également des liens vers chaque classe de l'espace de noms, le nombre comprendra les classes liées.  
   
-    -   Si une couche contient d'autres couches liées à des artefacts, la couche du conteneur est également liée à ces artefacts, même si le nombre indiqué sur la couche du conteneur ne comprend pas ces artefacts.  
+  - Si une couche contient d'autres couches liées à des artefacts, la couche du conteneur est également liée à ces artefacts, même si le nombre indiqué sur la couche du conteneur ne comprend pas ces artefacts.  
   
-     Pour voir les artefacts liés à une couche, cliquez avec le bouton droit sur la couche, puis cliquez sur **Afficher les liens** pour ouvrir l’ **Explorateur de couches**.  
+    Pour voir les artefacts liés à une couche, cliquez avec le bouton droit sur la couche, puis cliquez sur **Afficher les liens** pour ouvrir l’ **Explorateur de couches**.  
   
--   Une *dépendance* indique qu’une couche peut utiliser la fonctionnalité d’une autre couche, mais pas l’inverse. Une *dépendance bidirectionnelle* indique qu’une couche peut utiliser la fonctionnalité d’une autre couche, et vice versa.  
+- Une *dépendance* indique qu’une couche peut utiliser la fonctionnalité d’une autre couche, mais pas l’inverse. Une *dépendance bidirectionnelle* indique qu’une couche peut utiliser la fonctionnalité d’une autre couche, et vice versa.  
   
-     Pour afficher les dépendances existantes sur le diagramme de couche, cliquez avec le bouton droit sur la surface du diagramme, puis cliquez sur **Générer des dépendances**. Pour décrire les dépendances prévues, dessinez-en de nouvelles.  
+   Pour afficher les dépendances existantes sur le diagramme de couche, cliquez avec le bouton droit sur la surface du diagramme, puis cliquez sur **Générer des dépendances**. Pour décrire les dépendances prévues, dessinez-en de nouvelles.  
   
- Consultez :  
+  Consultez :  
   
--   [Créer des diagrammes de couche à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)  
+- [Créer des diagrammes de couche à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)  
   
--   [Informations de référence sur les diagrammes de couche](../modeling/layer-diagrams-reference.md)  
+- [Informations de référence sur les diagrammes de couche](../modeling/layer-diagrams-reference.md)  
   
--   [Diagrammes de couche : recommandations](../modeling/layer-diagrams-guidelines.md)  
+- [Diagrammes de couche : recommandations](../modeling/layer-diagrams-guidelines.md)  
   
--   [Valider du code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md)  
+- [Valider du code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md)  
   
 #### <a name="summary-strengths-of-layer-diagrams"></a>Résumé : atouts des diagrammes de couche  
  Les diagrammes de couche vous aident à :  

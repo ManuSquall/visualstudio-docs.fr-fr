@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0443a8fc23c2dc9a78cf35ba8a822fc6627a1c1c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8136a090dbf5e3c3f86ce9b4ade1321f7b36b829
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671156"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858886"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Commencer à programmer des Compléments VSTO
   Vous pouvez utiliser des compléments VSTO pour automatiser des applications Microsoft Office, étendre les fonctionnalités de l’application et personnaliser son interface utilisateur. Pour plus d’informations sur les différences de compléments VSTO à d’autres types de solutions Office que vous pouvez créer à l’aide de Visual Studio, consultez [présentation du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -60,40 +60,40 @@ ms.locfileid: "35671156"
 ## <a name="customize-the-user-interface-of-applications"></a>Personnaliser l’interface utilisateur des applications  
  Il existe différentes façons de personnaliser l’interface utilisateur de l’application hôte à l’aide un VSTO Add-in :  
   
--   Pour Excel et Word, vous pouvez ajouter des contrôles managés aux documents. Pour plus d’informations, consultez [documents Word d’étendre et classeurs Excel dans des Compléments VSTO lors de l’exécution](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+- Pour Excel et Word, vous pouvez ajouter des contrôles managés aux documents. Pour plus d’informations, consultez [documents Word d’étendre et classeurs Excel dans des Compléments VSTO lors de l’exécution](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
--   Vous pouvez personnaliser le ruban si l'application le prend en charge. Pour plus d’informations, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md).  
+- Vous pouvez personnaliser le ruban si l'application le prend en charge. Pour plus d’informations, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md).  
   
--   Vous pouvez créer un volet de tâches personnalisé si l’application le prend en charge. Pour plus d’informations, consultez [volets de tâches personnalisés](../vsto/custom-task-panes.md).  
+- Vous pouvez créer un volet de tâches personnalisé si l’application le prend en charge. Pour plus d’informations, consultez [volets de tâches personnalisés](../vsto/custom-task-panes.md).  
   
--   Pour Outlook, vous pouvez créer une zone de formulaire personnalisée. Pour plus d’informations, consultez [zones de formulaire Outlook créer](../vsto/creating-outlook-form-regions.md).  
+- Pour Outlook, vous pouvez créer une zone de formulaire personnalisée. Pour plus d’informations, consultez [zones de formulaire Outlook créer](../vsto/creating-outlook-form-regions.md).  
   
--   Pour toutes les applications Microsoft Office, vous pouvez afficher Windows Forms dans votre complément VSTO.  
+- Pour toutes les applications Microsoft Office, vous pouvez afficher Windows Forms dans votre complément VSTO.  
   
- Pour plus d’informations sur la personnalisation de l’interface utilisateur des applications Microsoft Office, consultez [personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md).  
+  Pour plus d’informations sur la personnalisation de l’interface utilisateur des applications Microsoft Office, consultez [personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md).  
   
 ## <a name="next-steps"></a>Étapes suivantes  
  Pour savoir comment créer des compléments VSTO, consultez les procédures pas à pas suivantes :  
   
--   [Procédure pas à pas : Créer votre premier complément pour Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
+- [Procédure pas à pas : Créer votre premier complément pour Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
   
--   [Procédure pas à pas : Créer votre premier complément VSTO pour Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
+- [Procédure pas à pas : Créer votre premier complément VSTO pour Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
   
--   [Procédure pas à pas : Créer votre premier complément pour PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
+- [Procédure pas à pas : Créer votre premier complément pour PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
   
--   [Procédure pas à pas : Créer votre premier complément VSTO pour Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
+- [Procédure pas à pas : Créer votre premier complément VSTO pour Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
   
--   [Procédure pas à pas : Créer votre premier complément pour Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
+- [Procédure pas à pas : Créer votre premier complément pour Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
   
- Ces procédures pas à pas vous initient aux Outils de développement Office dans Visual Studio et au modèle de programmation pour les compléments VSTO.  
+  Ces procédures pas à pas vous initient aux Outils de développement Office dans Visual Studio et au modèle de programmation pour les compléments VSTO.  
   
- Pour obtenir la liste des rubriques qui vous guident dans certaines des tâches courantes dans les projets Office, consultez [tâches courantes dans la programmation Office](../vsto/common-tasks-in-office-programming.md).  
+  Pour obtenir la liste des rubriques qui vous guident dans certaines des tâches courantes dans les projets Office, consultez [tâches courantes dans la programmation Office](../vsto/common-tasks-in-office-programming.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Prise en main &#40;développement Office dans Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Écrire du code dans les solutions Office](../vsto/writing-code-in-office-solutions.md)   
- [Architecture des Compléments VSTO](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Programmer des Compléments VSTO](../vsto/programming-vsto-add-ins.md)  
   
   

@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
 manager: douge
-ms.openlocfilehash: 304847259f9955706f345ef0f27800dfb77eddfb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 676f51b34bfc83d0a2af195da85a2c46cae08ac5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241226"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853166"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Dépannage des exceptions : System.ServiceModel.Security.MessageSecurityException
 Un <xref:System.ServiceModel.Security.MessageSecurityException> exception est levée lorsque [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] détermine qu’un message n’est pas correctement sécurisé ou qu’il a été falsifié. L'erreur se produit le plus fréquemment lorsque les conditions suivantes se vérifient toutes :  
@@ -48,35 +48,35 @@ Un <xref:System.ServiceModel.Security.MessageSecurityException> exception est le
   
 #### <a name="to-create-a-custom-service-binding-for-the-wcf-service-hosted-inside-the-aspnet-development-server"></a>Pour créer une liaison de service personnalisée pour le service WCF hébergé dans le serveur de développement ASP.NET.  
   
-1.  Ouvrez le fichier Web.config pour le service WCF qui génère l'exception.  
+1. Ouvrez le fichier Web.config pour le service WCF qui génère l'exception.  
   
-2.  Entrez les informations suivantes dans le fichier Web.config.  
+2. Entrez les informations suivantes dans le fichier Web.config.  
   
-    ```  
-    <bindings>  
-      <customBinding>  
-        <binding name="Service1Binding">  
-          <transactionFlow />  
-          <textMessageEncoding />  
-          <httpTransport authenticationScheme="Ntlm" />  
-        </binding>  
-      </customBinding>  
-    </bindings>  
-    ```  
+   ```  
+   <bindings>  
+     <customBinding>  
+       <binding name="Service1Binding">  
+         <transactionFlow />  
+         <textMessageEncoding />  
+         <httpTransport authenticationScheme="Ntlm" />  
+       </binding>  
+     </customBinding>  
+   </bindings>  
+   ```  
   
-3.  Enregistrez et fermez le fichier Web.config.  
+3. Enregistrez et fermez le fichier Web.config.  
   
-4.  Dans le code du service Web ou WCF, modifiez la valeur du point de terminaison comme suit :  
+4. Dans le code du service Web ou WCF, modifiez la valeur du point de terminaison comme suit :  
   
-    ```  
-    <endpoint address="" binding="customBinding" bindingConfiguration="Service1Binding" contract="IService1" />  
-    ```  
+   ```  
+   <endpoint address="" binding="customBinding" bindingConfiguration="Service1Binding" contract="IService1" />  
+   ```  
   
-     Ceci garantit que le service utilise la liaison personnalisée.  
+    Ceci garantit que le service utilise la liaison personnalisée.  
   
-5.  Ajoutez une référence au service dans l'application Web qui accède au service. (Dans la boîte de dialogue **Ajouter une référence de service** , ajoutez une référence au service comme vous l'avez fait avec le service original qui générait l'exception.).  
+5. Ajoutez une référence au service dans l'application Web qui accède au service. (Dans la boîte de dialogue **Ajouter une référence de service** , ajoutez une référence au service comme vous l'avez fait avec le service original qui générait l'exception.).  
   
- Vous pouvez suivre les étapes ci-dessous pour désactiver la sécurité NTLM lorsque vous utilisez une référence de service WCF.  
+   Vous pouvez suivre les étapes ci-dessous pour désactiver la sécurité NTLM lorsque vous utilisez une référence de service WCF.  
   
 > [!IMPORTANT]
 >  Il n'est pas recommandé de désactiver la sécurité NTLM car cela pourrait constituer une menace pour la sécurité.  

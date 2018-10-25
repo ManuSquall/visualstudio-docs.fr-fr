@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO | Documents Microsoft
+title: PROCESS_INFO | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d35b94b6153b65672453ed8b4e7d2c0d9c2bd5eb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2a8f07cfb99ac42704d3829c30dbf5adbb16e9d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134383"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864619"
 ---
 # <a name="processinfo"></a>PROCESS_INFO
-Contient des informations sur un processus.  
+Contient des informations relatives à un processus.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -57,36 +57,36 @@ public struct PROCESS_INFO {
   
 ## <a name="members"></a>Membres  
  Champs  
- Une combinaison d’indicateurs à partir de la [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) énumération qui spécifient quels champs sont remplis.  
+ Une combinaison d’indicateurs de la [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) énumération qui spécifient quels champs sont renseignés.  
   
  bstrFileName  
- Le nom de chemin d’accès complet du processus. Équivalent à l’appel du [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) méthode avec le paramètre `GN_FILENAME`.  
+ Nom de chemin d’accès complet du processus. Équivalent à l’appel le [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) méthode avec le paramètre `GN_FILENAME`.  
   
  bstrBaseName  
- Le nom de fichier et l’extension du processus. Équivalent à l’appel du `IDebugProcess2::Getname` méthode avec le paramètre `GN_BASENAME`.  
+ Le nom de fichier et l’extension du processus. Équivalent à l’appel le `IDebugProcess2::Getname` méthode avec le paramètre `GN_BASENAME`.  
   
  bstrTitle  
- Le titre du processus, s’il en existe. Équivalent à l’appel du `IDebugProcess2::Getname` méthode avec le paramètre `GN_TITLE`.  
+ Le titre du processus, le cas échéant. Équivalent à l’appel le `IDebugProcess2::Getname` méthode avec le paramètre `GN_TITLE`.  
   
  ProcessId  
- Le [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) structure qui identifie le processus. Équivalent à l’appel du [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md) (méthode).  
+ Le [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) structure qui identifie le processus. Équivalent à l’appel le [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md) (méthode).  
   
  dwSessionId  
  Identificateur de la session de débogage, ce processus est en cours d’exécution dans.  
   
  bstrAttachedSessionName  
- Le nom de la session attaché. Équivalent à l’appel du [GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md) (méthode).  
+ Le nom de la session attaché. Équivalent à l’appel le [GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md) (méthode).  
   
  CreationTime  
- Le processus a été créé.  
+ Heure de création du processus.  
   
  Indicateurs  
- Une combinaison d’indicateurs à partir de la [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) énumération qui spécifient les propriétés du processus.  
+ Une combinaison d’indicateurs de la [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) énumération qui spécifient les propriétés du processus.  
   
 ## <a name="remarks"></a>Notes  
  Cette structure est passée à la [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) méthode où il est renseigné.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

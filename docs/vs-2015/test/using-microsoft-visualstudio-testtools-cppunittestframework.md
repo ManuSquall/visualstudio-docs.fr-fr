@@ -13,12 +13,12 @@ ms.assetid: d1ac9188-d79f-407e-9f3a-80dbefa66317
 caps.latest.revision: 10
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cc643f8bd8addefc2bec4c62645e8091aaedc11c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 68f083bf6aa99177f6b9e697be8affa5d29804a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291237"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889605"
 ---
 # <a name="using-microsoftvisualstudiotesttoolscppunittestframework"></a>Utilisation de Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,71 +32,71 @@ Cette rubrique liste les membres publics de l’espace de noms `Microsoft::Visua
 ##  <a name="BKMK_In_this_topic"></a> Dans cette rubrique  
  [CppUnitTest.h](#BKMK_CppUnitTest_h)  
   
--   [Créer des classes et des méthodes de test](#BKMK_Create_test_classes_and_methods)  
+- [Créer des classes et des méthodes de test](#BKMK_Create_test_classes_and_methods)  
   
--   [Initialiser et nettoyer](#BKMK_Initialize_and_cleanup)  
+- [Initialiser et nettoyer](#BKMK_Initialize_and_cleanup)  
   
-    -   [Méthodes de test](#BKMK_Test_methods)  
+  -   [Méthodes de test](#BKMK_Test_methods)  
   
-    -   [Classes de test](#BKMK_Test_classes)  
+  -   [Classes de test](#BKMK_Test_classes)  
   
-    -   [Modules de test](#BKMK_Test_modules)  
+  -   [Modules de test](#BKMK_Test_modules)  
   
--   [Créer des attributs de test](#BKMK_Create_test_attributes)  
+- [Créer des attributs de test](#BKMK_Create_test_attributes)  
   
-    -   [Attributs de méthode de test](#BKMK_Test_method_attributes)  
+  - [Attributs de méthode de test](#BKMK_Test_method_attributes)  
   
-    -   [Attributs de classe de test](#BKMK_Test_class_attributes)  
+  - [Attributs de classe de test](#BKMK_Test_class_attributes)  
   
-    -   [Attributs de module de test](#BKMK_Test_module_attributes)  
+  - [Attributs de module de test](#BKMK_Test_module_attributes)  
   
-    -   [Attributs prédéfinis](#BKMK_Pre_defined_attributes)  
+  - [Attributs prédéfinis](#BKMK_Pre_defined_attributes)  
   
-     [CppUnitTestAssert.h](#BKMK_CppUnitTestAssert_h)  
+    [CppUnitTestAssert.h](#BKMK_CppUnitTestAssert_h)  
   
-    -   [Assertions générales](#BKMK_General_Asserts)  
+  - [Assertions générales](#BKMK_General_Asserts)  
   
-        -   [Sont égaux](#BKMK_General_Are_Equal)  
+    -   [Sont égaux](#BKMK_General_Are_Equal)  
   
-        -   [Ne sont pas égaux](#BKMK_General_Are_Not_Equal)  
+    -   [Ne sont pas égaux](#BKMK_General_Are_Not_Equal)  
   
-        -   [Sont identiques](#BKMK_General_Are_Same)  
+    -   [Sont identiques](#BKMK_General_Are_Same)  
   
-        -   [Ne sont pas identiques](#BKMK_General_Are_Not_Same)  
+    -   [Ne sont pas identiques](#BKMK_General_Are_Not_Same)  
   
-        -   [A une valeur Null](#BKMK_General_Is_Null)  
+    -   [A une valeur Null](#BKMK_General_Is_Null)  
   
-        -   [N’a pas une valeur Null](#BKMK_General_Is_Not_Null)  
+    -   [N’a pas une valeur Null](#BKMK_General_Is_Not_Null)  
   
-        -   [Est vrai](#BKMK_General_Is_True)  
+    -   [Est vrai](#BKMK_General_Is_True)  
   
-        -   [Est faux](#BKMK_General_Is_False)  
+    -   [Est faux](#BKMK_General_Is_False)  
   
-        -   [Échec](#BKMK_General_Fail)  
+    -   [Échec](#BKMK_General_Fail)  
   
-    -   [Assertions Windows Runtime](#BKMK_WinRT_Asserts)  
+  - [Assertions Windows Runtime](#BKMK_WinRT_Asserts)  
   
-        -   [Sont égaux](#BKMK_WinRT_Are_Equal)  
+    -   [Sont égaux](#BKMK_WinRT_Are_Equal)  
   
-        -   [Sont identiques](#BKMK_WinRT_Are_Same)  
+    -   [Sont identiques](#BKMK_WinRT_Are_Same)  
   
-        -   [Ne sont pas égaux](#BKMK_WinRT_Are_Not_Equal)  
+    -   [Ne sont pas égaux](#BKMK_WinRT_Are_Not_Equal)  
   
-        -   [Ne sont pas identiques](#BKMK_WinRT_Are_Not_Same)  
+    -   [Ne sont pas identiques](#BKMK_WinRT_Are_Not_Same)  
   
-        -   [A une valeur Null](#BKMK_WinRT_Is_Null)  
+    -   [A une valeur Null](#BKMK_WinRT_Is_Null)  
   
-        -   [N’a pas une valeur Null](#BKMK_WinRT_Is_Not_Null)  
+    -   [N’a pas une valeur Null](#BKMK_WinRT_Is_Not_Null)  
   
-    -   [Assertions d’exception](#BKMK_Exception_Asserts)  
+  - [Assertions d’exception](#BKMK_Exception_Asserts)  
   
-        -   [S’attendre à une exception](#BKMK_Expect_Exception)  
+    - [S’attendre à une exception](#BKMK_Expect_Exception)  
   
-         [CppUnitTestLogger.h](#BKMK_CppUnitTestLogger_h)  
+      [CppUnitTestLogger.h](#BKMK_CppUnitTestLogger_h)  
   
-        -   [Enregistreur d’événements](#BKMK_Logger)  
+    - [Enregistreur d’événements](#BKMK_Logger)  
   
-        -   [Écrire un message](#BKMK_Write_Message)  
+    - [Écrire un message](#BKMK_Write_Message)  
   
 ##  <a name="BKMK_CppUnitTest_h"></a> CppUnitTest.h  
   

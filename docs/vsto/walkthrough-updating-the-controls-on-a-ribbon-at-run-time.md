@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b2d9f8a585b6a9353c9e64cf03b0876e5324a539
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a90355a21fb525b108987ca565689867904ae6b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258799"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881753"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>Procédure pas à pas : Mise à jour les contrôles sur un ruban lors de l’exécution
   Cette procédure pas à pas montre comment utiliser le modèle objet de ruban pour mettre à jour les contrôles sur un ruban après le chargement du ruban dans l’application Office.  
@@ -167,49 +167,49 @@ ms.locfileid: "35258799"
   
 ### <a name="to-update-controls-in-the-custom-group-by-using-the-ribbon-object-model"></a>Pour mettre à jour des contrôles dans le groupe personnalisé en utilisant le modèle objet de ruban  
   
-1.  Dans le menu **Projet**, cliquez sur **Ajouter une référence**.  
+1. Dans le menu **Projet**, cliquez sur **Ajouter une référence**.  
   
-2.  Dans le **ajouter une référence** boîte de dialogue, cliquez sur le **.NET** onglet, sélectionnez le **System.Data.Linq** assembly, puis cliquez sur **OK**.  
+2. Dans le **ajouter une référence** boîte de dialogue, cliquez sur le **.NET** onglet, sélectionnez le **System.Data.Linq** assembly, puis cliquez sur **OK**.  
   
-     Cet assembly contient des classes pour l'utilisation de requêtes LINQ (Language-Integrated Queries). Vous utiliserez LINQ pour remplir des contrôles du groupe personnalisé avec des données de la base de données Northwind.  
+    Cet assembly contient des classes pour l'utilisation de requêtes LINQ (Language-Integrated Queries). Vous utiliserez LINQ pour remplir des contrôles du groupe personnalisé avec des données de la base de données Northwind.  
   
-3.  Dans **l’Explorateur de solutions**, cliquez sur **CustomerRibbon.cs** ou **CustomerRibbon.vb** pour le sélectionner.  
+3. Dans **l’Explorateur de solutions**, cliquez sur **CustomerRibbon.cs** ou **CustomerRibbon.vb** pour le sélectionner.  
   
-4.  Sur le **vue** menu, cliquez sur **Code**.  
+4. Sur le **vue** menu, cliquez sur **Code**.  
   
-     Le fichier de code du ruban s'ouvre dans l'éditeur de code.  
+    Le fichier de code du ruban s'ouvre dans l'éditeur de code.  
   
-5.  Ajoutez les instructions suivantes au début du fichier de code du ruban. Ces instructions facilitent l'accès aux espaces de noms LINQ et à l'espace de noms de l'assembly PIA (Primary Interop Assembly) d'Outlook.  
+5. Ajoutez les instructions suivantes au début du fichier de code du ruban. Ces instructions facilitent l'accès aux espaces de noms LINQ et à l'espace de noms de l'assembly PIA (Primary Interop Assembly) d'Outlook.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#1)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#1)]  
+    [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#1)]
+    [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#1)]  
   
-6.  Ajoutez le code suivant à l’intérieur de la `CustomerRibbon` classe. Ce code déclare les adaptateurs de table et de table de données que vous utiliserez pour stocker les informations des tables Customer, Orders, Order Details et Product de la base de données Northwind.  
+6. Ajoutez le code suivant à l’intérieur de la `CustomerRibbon` classe. Ce code déclare les adaptateurs de table et de table de données que vous utiliserez pour stocker les informations des tables Customer, Orders, Order Details et Product de la base de données Northwind.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#2)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#2)]  
+    [!code-csharp[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#2)]
+    [!code-vb[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#2)]  
   
-7.  Ajoutez le bloc de code suivant à la classe `CustomerRibbon`. Ce code ajoute trois méthodes d’assistance qui créent des contrôles pour le ruban lors de l’exécution.  
+7. Ajoutez le bloc de code suivant à la classe `CustomerRibbon`. Ce code ajoute trois méthodes d’assistance qui créent des contrôles pour le ruban lors de l’exécution.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#3)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#3)]  
+    [!code-csharp[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#3)]
+    [!code-vb[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#3)]  
   
-8.  Remplacez la méthode de gestionnaire d'événements `CustomerRibbon_Load` par le code suivant. Ce code utilise une requête LINQ pour effectuer les tâches suivantes :  
+8. Remplacez la méthode de gestionnaire d'événements `CustomerRibbon_Load` par le code suivant. Ce code utilise une requête LINQ pour effectuer les tâches suivantes :  
   
-    -   Remplir le **clients** zone de liste déroulante à l’aide de l’ID et le nom de 20 clients dans la base de données Northwind.  
+   - Remplir le **clients** zone de liste déroulante à l’aide de l’ID et le nom de 20 clients dans la base de données Northwind.  
   
-    -   Appeler la méthode d'assistance `PopulateSalesOrderInfo`. Cette méthode met à jour le **ProductsPurchased** menu avec les numéros de commande qui se rapportent au client actuellement sélectionné.  
+   - Appeler la méthode d'assistance `PopulateSalesOrderInfo`. Cette méthode met à jour le **ProductsPurchased** menu avec les numéros de commande qui se rapportent au client actuellement sélectionné.  
   
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#4)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#4)]  
   
-9. Ajoutez le code suivant à la classe `CustomerRibbon`. Ce code utilise des requêtes LINQ pour effectuer les tâches suivantes :  
+9. Ajoutez le code suivant à la classe `CustomerRibbon` . Ce code utilise des requêtes LINQ pour effectuer les tâches suivantes :  
   
-    -   Ajoute un sous-menu à la **ProductsPurchased** menu pour chaque commande client associées au client sélectionné.  
+   - Ajoute un sous-menu à la **ProductsPurchased** menu pour chaque commande client associées au client sélectionné.  
   
-    -   Ajouter des boutons à chaque sous-menu pour les produits associés à la commande client.  
+   - Ajouter des boutons à chaque sous-menu pour les produits associés à la commande client.  
   
-    -   Ajouter des gestionnaires d'événements à chaque bouton.  
+   - Ajouter des gestionnaires d'événements à chaque bouton.  
   
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#6)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#6)]  
@@ -224,26 +224,26 @@ ms.locfileid: "35258799"
   
 12. Remplacez le gestionnaire d'événements `ComboBox1_TextChanged` par le code suivant. Ce code exécute les tâches suivantes :  
   
-    -   Appeler la méthode d'assistance `PopulateSalesOrderInfo`. Cette méthode met à jour le **Products Purchased** menu avec les commandes relatives au client sélectionné.  
+    - Appeler la méthode d'assistance `PopulateSalesOrderInfo`. Cette méthode met à jour le **Products Purchased** menu avec les commandes relatives au client sélectionné.  
   
-    -   Appeler la méthode d'assistance `PopulateMailItem` et passer le texte actuel, qui est le nom du client sélectionné. Cette méthode remplit à, objet et corps de champs des nouveaux messages électroniques.  
+    - Appeler la méthode d'assistance `PopulateMailItem` et passer le texte actuel, qui est le nom du client sélectionné. Cette méthode remplit à, objet et corps de champs des nouveaux messages électroniques.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#5)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#5)]  
+      [!code-csharp[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#5)]
+      [!code-vb[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#5)]  
   
-13. Ajoutez le code suivant `Click` Gestionnaire d’événements à la `CustomerRibbon` classe. Ce code ajoute le nom des produits sélectionnés au champ corps des nouveaux messages électroniques.  
+13. Ajoutez le gestionnaire d’événements `Click` suivant à la classe `CustomerRibbon` . Ce code ajoute le nom des produits sélectionnés au champ corps des nouveaux messages électroniques.  
   
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#8)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#8)]  
   
-14. Ajoutez le code suivant à la classe `CustomerRibbon`. Ce code exécute les tâches suivantes :  
+14. Ajoutez le code suivant à la classe `CustomerRibbon` . Ce code exécute les tâches suivantes :  
   
-    -   Remplit la ligne à de nouveaux messages électroniques à l’aide de l’adresse de messagerie du client actuellement sélectionné.  
+    - Remplit la ligne à de nouveaux messages électroniques à l’aide de l’adresse de messagerie du client actuellement sélectionné.  
   
-    -   Ajoute du texte aux champs objet et le corps des nouveaux messages électroniques.  
+    - Ajoute du texte aux champs objet et le corps des nouveaux messages électroniques.  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#7)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#7)]  
+      [!code-csharp[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#7)]
+      [!code-vb[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#7)]  
   
 ## <a name="test-the-controls-in-the-custom-group"></a>Tester les contrôles dans le groupe personnalisé  
  Lorsque vous ouvrez un nouveau formulaire de courrier électronique dans Outlook, un groupe personnalisé nommé **Customer Purchases** apparaît sur le **Messages** onglet du ruban.  

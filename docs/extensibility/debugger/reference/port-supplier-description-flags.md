@@ -1,5 +1,5 @@
 ---
-title: PORT_SUPPLIER_DESCRIPTION_FLAGS | Documents Microsoft
+title: PORT_SUPPLIER_DESCRIPTION_FLAGS | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: afb04c9aa36c2103809ca16db603ad4a63a6ec7c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7bc832aff1178d0d1247d4fda2e203bfc5857118
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126875"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875084"
 ---
 # <a name="portsupplierdescriptionflags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
-Définit les métadonnées qui peuvent être récupérée sur un fournisseur de port.  
+Définit les métadonnées qui peuvent être récupérées sur un fournisseur de port.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -47,7 +47,7 @@ public enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS
 ## <a name="remarks"></a>Notes  
  Cette énumération est retournée par la [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) (méthode).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : Msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

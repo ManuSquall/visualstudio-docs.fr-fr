@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b2a4d642bc551127f34fe7a64ec01665b7ace70
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 1cc4e6b3ad623497f50f60b5eb3c0d7c8b00b1cd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078626"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869585"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>Comment : spécifier l’endroit où Visual Studio copie les fichiers
 Quand vous publiez une application à l'aide de ClickOnce, la propriété `Publish Location` indique l'emplacement de destination des fichiers d'application et du manifeste. Il peut s’agir d’un chemin d’accès de fichier ou du chemin d’accès à un serveur FTP.  
@@ -34,15 +34,15 @@ Quand vous publiez une application à l'aide de ClickOnce, la propriété `Publi
   
 ### <a name="to-specify-a-publishing-location"></a>Pour spécifier un emplacement de publication  
   
-1.  Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
+1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2.  Cliquez sur le **publier** onglet.  
+2. Cliquez sur le **publier** onglet.  
   
-3.  Dans le **emplacement de publication** , entrez l’emplacement de publication en utilisant l’un des formats suivants :  
+3. Dans le **emplacement de publication** , entrez l’emplacement de publication en utilisant l’un des formats suivants :  
   
-    -   Pour publier vers un chemin de partage ou le disque du fichier, entrez le chemin d’accès à l’aide d’un chemin d’accès UNC (*\\\Server\ApplicationName*) ou un chemin d’accès de fichier (*C:\Deploy\ApplicationName*).  
+   - Pour publier vers un chemin de partage ou le disque du fichier, entrez le chemin d’accès à l’aide d’un chemin d’accès UNC (*\\\Server\ApplicationName*) ou un chemin d’accès de fichier (*C:\Deploy\ApplicationName*).  
   
-    -   Pour publier vers un serveur FTP, entrez le chemin d’accès en utilisant le format *ftp://ftp.microsoft.com/\<ApplicationName >*.  
+   - Pour publier vers un serveur FTP, entrez le chemin d’accès en utilisant le format <em>ftp://ftp.microsoft.com/\<ApplicationName ></em>.  
   
      Notez que le texte doit être présent dans le **l’emplacement de publication** zone afin que le bouton de navigation (**...** ) bouton fonctionne.  
   

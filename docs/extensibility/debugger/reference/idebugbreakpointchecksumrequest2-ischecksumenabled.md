@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointChecksumRequest2::IsChecksumEnabled | Documents Microsoft
+title: IDebugBreakpointChecksumRequest2::IsChecksumEnabled | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34afc9af142371537c82effbfb8c636bcba09dbd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 306a20b3e2f99acd883332b43751f248db2bf5c5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098977"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863124"
 ---
 # <a name="idebugbreakpointchecksumrequest2ischecksumenabled"></a>IDebugBreakpointChecksumRequest2::IsChecksumEnabled
 Détermine si la somme de contrôle est activé pour ce document.  

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fb0e6d011868f56375def1516bd0e41410da662
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 18ac2ad1125067109b0ca02d552e997f2c30482f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152498"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873782"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Procédure pas à pas : créer un programme d’amorçage personnalisé avec une invite de confidentialité
 Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquement lorsque les assemblys avec des versions plus récentes de fichier et les versions d’assembly sont disponibles. Pour vous assurer que vos clients acceptent ce comportement, vous pouvez afficher une invite de confidentialité pour eux. Ensuite, ils peuvent choisir s’il faut accorder l’autorisation de l’application pour mettre à jour automatiquement. Si l’application n’est pas autorisée à mettre à jour automatiquement, il n’installe pas.  
@@ -43,23 +43,23 @@ Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquem
   
 #### <a name="to-create-a-consent-dialog-box"></a>Pour créer une boîte de dialogue de consentement  
   
-1.  Dans le menu **Fichier** , pointez sur **Nouveau**, puis cliquez sur **Projet**.  
+1. Dans le menu **Fichier** , pointez sur **Nouveau**, puis cliquez sur **Projet**.  
   
-2.  Dans le **nouveau projet** boîte de dialogue, cliquez sur **Windows**, puis cliquez sur **WindowsFormsApplication**.  
+2. Dans le **nouveau projet** boîte de dialogue, cliquez sur **Windows**, puis cliquez sur **WindowsFormsApplication**.  
   
-3.  Pour le **nom**, type **BoîteDialogueConsentement**, puis cliquez sur **OK**.  
+3. Pour le **nom**, type **BoîteDialogueConsentement**, puis cliquez sur **OK**.  
   
-4.  Dans le concepteur, cliquez sur le formulaire.  
+4. Dans le concepteur, cliquez sur le formulaire.  
   
-5.  Dans le **propriétés** fenêtre, de modifier le **texte** propriété **boîte de dialogue de consentement de mise à jour**.  
+5. Dans le **propriétés** fenêtre, de modifier le **texte** propriété **boîte de dialogue de consentement de mise à jour**.  
   
-6.  Dans le **boîte à outils**, développez **tous les Windows Forms**et faites glisser un **étiquette** contrôle au formulaire.  
+6. Dans le **boîte à outils**, développez **tous les Windows Forms**et faites glisser un **étiquette** contrôle au formulaire.  
   
-7.  Dans le concepteur, cliquez sur le contrôle d’étiquette.  
+7. Dans le concepteur, cliquez sur le contrôle d’étiquette.  
   
-8.  Dans le **propriétés** fenêtre, de modifier le **texte** propriété sous **apparence** à ce qui suit :  
+8. Dans le **propriétés** fenêtre, de modifier le **texte** propriété sous **apparence** à ce qui suit :  
   
-     L’application que vous êtes sur le point d’installation vérifie les dernières mises à jour sur le Web. En cliquant sur « J’accepte », vous autorisez l’application pour vérifier et installer automatiquement les mises à jour à partir d’Internet.  
+    L’application que vous êtes sur le point d’installation vérifie les dernières mises à jour sur le Web. En cliquant sur « J’accepte », vous autorisez l’application pour vérifier et installer automatiquement les mises à jour à partir d’Internet.  
   
 9. Dans le **boîte à outils**, faites glisser un **case à cocher** contrôle au milieu de l’écran.  
   
@@ -112,28 +112,28 @@ Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquem
   
      Pour les développeurs Visual Basic uniquement :  
   
-    1.  Dans **l’Explorateur de solutions**, cliquez sur **BoîteDialogueConsentement**.  
+    1. Dans **l’Explorateur de solutions**, cliquez sur **BoîteDialogueConsentement**.  
   
-    2.  Sur le **projet** menu, cliquez sur **ajouter un Module**, puis cliquez sur **ajouter**.  
+    2. Sur le **projet** menu, cliquez sur **ajouter un Module**, puis cliquez sur **ajouter**.  
   
-    3.  Dans le *Module1.vb* fichier de code, ajoutez le code suivant.  
+    3. Dans le *Module1.vb* fichier de code, ajoutez le code suivant.  
   
-         [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]  
+        [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]  
   
-    4.  Sur le **projet** menu, cliquez sur **Propriétés BoîteDialogueConsentement**, puis cliquez sur le **Application** onglet.  
+    4. Sur le **projet** menu, cliquez sur **Propriétés BoîteDialogueConsentement**, puis cliquez sur le **Application** onglet.  
   
-    5.  Décochez la case **activer l’infrastructure application**.  
+    5. Décochez la case **activer l’infrastructure application**.  
   
-    6.  Dans le **objet de démarrage** menu déroulant, sélectionnez **Module1**.  
+    6. Dans le **objet de démarrage** menu déroulant, sélectionnez **Module1**.  
   
-        > [!NOTE]
-        >  La désactivation de l’infrastructure d’application désactive les fonctionnalités telles que les styles visuels Windows XP, les événements d’application, l’écran de démarrage, application à instance unique et bien plus encore. Pour plus d’informations, consultez [Page Application, Concepteur de projets (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
+       > [!NOTE]
+       >  La désactivation de l’infrastructure d’application désactive les fonctionnalités telles que les styles visuels Windows XP, les événements d’application, l’écran de démarrage, application à instance unique et bien plus encore. Pour plus d’informations, consultez [Page Application, Concepteur de projets (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
-     Pour les développeurs Visual c# uniquement :  
+       Pour les développeurs Visual c# uniquement :  
   
-     Ouvrez le *Program.cs* fichier de code et ajoutez le code suivant.  
+       Ouvrez le *Program.cs* fichier de code et ajoutez le code suivant.  
   
-     [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]  
+       [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]  
   
 26. Sur le **Build** menu, cliquez sur **BuildSolution**.  
   

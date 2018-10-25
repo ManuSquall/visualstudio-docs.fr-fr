@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_interruptReturn | Documents Microsoft
+title: IDiaSymbol::get_interruptReturn | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e62fd85e8c60910be0b88c3eb27532edd874563a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 49455347d6e45e51cdc639ef0eabdabbbebcfbd6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468944"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888045"
 ---
 # <a name="idiasymbolgetinterruptreturn"></a>IDiaSymbol::get_interruptReturn
 Récupère un indicateur qui spécifie si la fonction contient un retour à partir de l’instruction d’interruption (par exemple, le X86 code assembleur `iret`).  
@@ -42,7 +42,7 @@ HRESULT get_interruptReturn(
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
   
 |Spécification|Description|  
 |-----------------|-----------------|  

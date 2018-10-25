@@ -1,5 +1,5 @@
 ---
-title: 'Comment : déboguer du Code injecté | Documents Microsoft'
+title: 'Comment : déboguer du Code injecté | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf602d8ee670e5fce8602cb50d2aaa1066b501de
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 479df9e5761066248b8657d9656132b072bddb13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475153"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866075"
 ---
 # <a name="how-to-debug-injected-code"></a>Comment : déboguer du code injecté
 > [!NOTE]
@@ -39,17 +39,17 @@ ms.locfileid: "31475153"
   
  L'utilisation d'attributs peut simplifier considérablement la programmation en C++. Pour plus d’informations, consultez [Concepts](/cpp/windows/attributed-programming-concepts). Certains attributs sont interprétés directement par le compilateur. D'autres injectent du code dans la source du programme, code qui est ensuite traité par le compilateur. Ce code injecté simplifie la programmation en réduisant la quantité de code à écrire. Parfois, cependant, un bogue peut provoquer un échec de l'application pendant l'exécution du code injecté. Dans ce cas, vous voudrez probablement examiner le code injecté. Visual Studio vous permet de visualiser le code injecté de deux façons :  
   
--   Vous pouvez afficher le code injecté dans le **code machine** fenêtre.  
+- Vous pouvez afficher le code injecté dans la **désassemblage** fenêtre.  
   
--   À l’aide de [/Fx](/cpp/build/reference/fx-merge-injected-code), vous pouvez créer un fichier source fusionné contenant le code injecté et d’origine.  
+- À l’aide de [/Fx](/cpp/build/reference/fx-merge-injected-code), vous pouvez créer un fichier source fusionné contenant le code injecté et d’origine.  
   
- Le **code machine** fenêtre affiche les instructions en langage assembleur qui correspondent au code source et le code injecté par des attributs. En outre, le **code machine** fenêtre peut afficher l’annotation de code source.  
+  Le **désassemblage** fenêtre affiche les instructions en langage assembleur qui correspondent au code source et le code injecté par des attributs. En outre, le **désassemblage** fenêtre peut afficher l’annotation de code source.  
   
 ### <a name="to-turn-on-source-annotation"></a>Pour activer l'annotation de la source  
   
--   Avec le bouton droit le **code machine** fenêtre, puis choisissez **afficher le Code Source** dans le menu contextuel.  
+-   Avec le bouton droit le **désassemblage** fenêtre, puis choisissez **afficher le Code Source** dans le menu contextuel.  
   
-     Si vous connaissez l’emplacement d’un attribut dans une fenêtre source, vous pouvez utiliser le menu contextuel pour rechercher le code injecté dans le **code machine** fenêtre.  
+     Si vous connaissez l’emplacement d’un attribut dans une fenêtre source, vous pouvez utiliser le menu contextuel pour rechercher le code injecté dans la **désassemblage** fenêtre.  
   
 ### <a name="to-view-injected-code"></a>Pour afficher le code injecté  
   
@@ -59,13 +59,13 @@ ms.locfileid: "31475153"
   
 3.  Avec le bouton droit, puis sélectionnez **atteindre le code machine** dans le menu contextuel.  
   
-     Si l’attribut d’emplacement est presque le point d’exécution en cours, vous pouvez sélectionner le **code machine** fenêtre à partir de la **déboguer** menu.  
+     Si l’attribut se trouve près du point d’exécution en cours, vous pouvez sélectionner le **désassemblage** fenêtre à partir de la **déboguer** menu.  
   
 ### <a name="to-view-the-disassembly-code-at-the-current-execution-point"></a>Pour afficher le code machine au point d'exécution en cours  
   
 1.  Assurez-vous que le débogueur est en mode arrêt.  
   
-2.  À partir de la **déboguer** menu, choisissez **Windows**, puis cliquez sur **code machine**.  
+2.  À partir de la **déboguer** menu, choisissez **Windows**, puis cliquez sur **désassemblage**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité du débogueur](../debugger/debugger-security.md)   

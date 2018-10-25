@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8153f0120259eec8ad284b0717e58be750e3b99d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ff261fd6032f3c666dfa3d745508586ffede6504
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783840"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884080"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Procédure pas à pas : Créer des menus contextuels pour les signets
   Cette procédure pas à pas montre comment créer des menus contextuels pour <xref:Microsoft.Office.Tools.Word.Bookmark> contrôles dans une personnalisation au niveau du document pour Word. Quand un utilisateur clique sur le texte d’un signet, un menu contextuel s’affiche et proposant des options de mise en forme le texte.  
@@ -32,15 +32,15 @@ ms.locfileid: "38783840"
   
  Cette procédure pas à pas décrit les tâches suivantes :  
   
--   [Créer le projet](#BKMK_CreateProject).  
+- [Créer le projet](#BKMK_CreateProject).  
   
--   [Ajouter du texte et signets au document](#BKMK_addtextandbookmarks).  
+- [Ajouter du texte et signets au document](#BKMK_addtextandbookmarks).  
   
--   [Ajouter des commandes à un menu contextuel](#BKMK_AddCmndsShortMenu).  
+- [Ajouter des commandes à un menu contextuel](#BKMK_AddCmndsShortMenu).  
   
--   [Mettre en forme le texte dans le signet](#BKMK_formattextbkmk).  
+- [Mettre en forme le texte dans le signet](#BKMK_formattextbkmk).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
@@ -69,22 +69,22 @@ ms.locfileid: "38783840"
   
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>Pour ajouter un contrôle Bookmark à votre document  
   
-1.  Dans le **boîte à outils**, à partir de la **contrôles Word** onglet, faites glisser un <xref:Microsoft.Office.Tools.Word.Bookmark> contrôle à votre document.  
+1. Dans le **boîte à outils**, à partir de la **contrôles Word** onglet, faites glisser un <xref:Microsoft.Office.Tools.Word.Bookmark> contrôle à votre document.  
   
-     Le **ajouter un contrôle Bookmark** boîte de dialogue s’affiche.  
+    Le **ajouter un contrôle Bookmark** boîte de dialogue s’affiche.  
   
-2.  Sélectionnez les mots « création d’un menu contextuel lorsque vous cliquez sur le texte », puis cliquez sur **OK**.  
+2. Sélectionnez les mots « création d’un menu contextuel lorsque vous cliquez sur le texte », puis cliquez sur **OK**.  
   
-     `bookmark1` est ajouté au document.  
+    `bookmark1` est ajouté au document.  
   
-3.  Ajoutez un autre <xref:Microsoft.Office.Tools.Word.Bookmark> contrôler avec les mots « cliquez sur le texte d’un signet ».  
+3. Ajoutez un autre <xref:Microsoft.Office.Tools.Word.Bookmark> contrôler avec les mots « cliquez sur le texte d’un signet ».  
   
-     `bookmark2` est ajouté au document.  
+    `bookmark2` est ajouté au document.  
   
-    > [!NOTE]  
-    >  Les mots « cliquez sur le texte » se trouvent dans les deux `bookmark1` et `bookmark2`.  
+   > [!NOTE]  
+   >  Les mots « cliquez sur le texte » se trouvent dans les deux `bookmark1` et `bookmark2`.  
   
- Lorsque vous ajoutez un signet à un document au moment du design, un <xref:Microsoft.Office.Tools.Word.Bookmark> contrôle est créé. Vous pouvez programmer plusieurs événements du signet. Vous pouvez écrire du code le <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> événement du signet afin que lorsque l’utilisateur clique sur le texte dans le signet, un menu contextuel s’affiche.  
+   Lorsque vous ajoutez un signet à un document au moment du design, un <xref:Microsoft.Office.Tools.Word.Bookmark> contrôle est créé. Vous pouvez programmer plusieurs événements du signet. Vous pouvez écrire du code le <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> événement du signet afin que lorsque l’utilisateur clique sur le texte dans le signet, un menu contextuel s’affiche.  
   
 ##  <a name="BKMK_AddCmndsShortMenu"></a> Ajouter des commandes à un menu contextuel  
  Ajouter des boutons au menu contextuel qui s’affiche lorsque vous cliquez sur le document.  

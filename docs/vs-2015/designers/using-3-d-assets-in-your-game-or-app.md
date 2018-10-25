@@ -21,12 +21,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 09035e985926e3f1db3bd2dd1fc2bc009f111e33
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e04f4c82e6f11f2659b4cc65549efb291009b720
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226304"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863592"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Utilisation de ressources 3D dans vos jeux et applications
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,18 +57,18 @@ Cet article explique comment vous pouvez utiliser [!INCLUDE[vsprvs](../includes/
   
 #### <a name="to-add-an-asset-to-your-build"></a>Pour ajouter une ressource à votre build  
   
-1.  Dans **l’Explorateur de solutions**, dans votre projet, ouvrez le menu contextuel d’une ressource, puis choisissez **Propriétés**. La boîte de dialogue **Page de propriétés** de la ressource s’affiche.  
+1. Dans **l’Explorateur de solutions**, dans votre projet, ouvrez le menu contextuel d’une ressource, puis choisissez **Propriétés**. La boîte de dialogue **Page de propriétés** de la ressource s’affiche.  
   
-2.  Vérifiez que les valeurs définies des propriétés **Configuration** et **Plateforme** sont celles auxquelles vous voulez que vos modifications s’appliquent.  
+2. Vérifiez que les valeurs définies des propriétés **Configuration** et **Plateforme** sont celles auxquelles vous voulez que vos modifications s’appliquent.  
   
-3.  Sous **Propriétés de configuration**, choisissez **Général** puis, dans la grille des propriétés, sous **Général**, affectez à la propriété **Type d’élément** le type d’élément de pipeline de contenu approprié. Par exemple, pour un fichier image ou de texture, choisissez le **pipeline de contenu d’image**.  
+3. Sous **Propriétés de configuration**, choisissez **Général** puis, dans la grille des propriétés, sous **Général**, affectez à la propriété **Type d’élément** le type d’élément de pipeline de contenu approprié. Par exemple, pour un fichier image ou de texture, choisissez le **pipeline de contenu d’image**.  
   
-    > [!IMPORTANT]
-    >  Par défaut, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] suppose que de nombreux types de fichiers image doivent être classés à l’aide du type d’élément **Image** intégré à [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Ainsi, vous devez modifier la propriété **Type d’élément** de chaque image qui doit être traitée par le pipeline de contenu d’image. Les autres types de fichiers sources de pipeline de contenu pour les modèles 3D et les graphiques de nuanceurs visuels ont pour valeur par défaut le **Type d’élément** approprié.  
+   > [!IMPORTANT]
+   >  Par défaut, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] suppose que de nombreux types de fichiers image doivent être classés à l’aide du type d’élément **Image** intégré à [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Ainsi, vous devez modifier la propriété **Type d’élément** de chaque image qui doit être traitée par le pipeline de contenu d’image. Les autres types de fichiers sources de pipeline de contenu pour les modèles 3D et les graphiques de nuanceurs visuels ont pour valeur par défaut le **Type d’élément** approprié.  
   
-4.  Sélectionnez le bouton **OK** .  
+4. Sélectionnez le bouton **OK** .  
   
- Voici les trois types d'éléments de pipeline de contenu et leurs types de fichiers sources et de sortie associés.  
+   Voici les trois types d'éléments de pipeline de contenu et leurs types de fichiers sources et de sortie associés.  
   
 |Type d'élément|Types de fichiers sources|Format des fichiers de sortie|  
 |---------------|-----------------------|------------------------|  

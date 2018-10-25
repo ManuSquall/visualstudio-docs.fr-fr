@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::get_loadAddress | Documents Microsoft
+title: IDiaSession::get_loadAddress | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88ba73b7d848388d1f4b5c039723243690345517
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2de904777cf09e3289efae71bf585ece9c6444a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461595"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864294"
 ---
 # <a name="idiasessiongetloadaddress"></a>IDiaSession::get_loadAddress
 Récupère l’adresse de chargement du fichier exécutable qui correspond aux symboles dans ce magasin de symboles.  
@@ -40,7 +40,7 @@ HRESULT get_loadAddress (
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- L’adresse de chargement retourné est toujours de zéro, sauf si spécifiquement défini à l’aide de la [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) (méthode).  
+ L’adresse de chargement retourné est toujours de zéro, sauf si spécifiquement défini à l’aide du [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) (méthode).  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6c05befbfa59063956d0df37a7aa57d955503ec5
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 806e0984ce0309ff071e595725615034a7d42f09
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860340"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882520"
 ---
 # <a name="accessing-models-from-text-templates"></a>Accès aux modèles depuis des modèles de texte
 À l’aide de modèles de texte, vous pouvez créer des fichiers de rapport, les fichiers de code source et autres fichiers de texte basés sur les modèles de langage spécifique à un domaine. Pour plus d’informations de base sur les modèles de texte, consultez [génération de Code et modèles de texte T4](../modeling/code-generation-and-t4-text-templates.md). Les modèles de texte fonctionnent en mode expérimental lorsque vous déboguez votre DSL et fonctionnent également sur un ordinateur sur lequel vous avez déployé la solution DSL.
@@ -26,11 +26,11 @@ ms.locfileid: "47860340"
 
  Pour accéder à un modèle à partir d’un modèle de texte :
 
--   Définissez la propriété d’hériter de la directive de modèle à <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. Cela permet d’accéder à la Store.
+- Définissez la propriété d’hériter de la directive de modèle à <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. Cela permet d’accéder à la Store.
 
--   Spécifiez les processeurs de directive pour le DSL que vous souhaitez accéder. Cela charge les assemblys pour votre DSL afin que vous puissiez utiliser ses classes de domaine, les propriétés et les relations dans le code de votre modèle de texte. Il charge également le fichier de modèle que vous spécifiez.
+- Spécifiez les processeurs de directive pour le DSL que vous souhaitez accéder. Cela charge les assemblys pour votre DSL afin que vous puissiez utiliser ses classes de domaine, les propriétés et les relations dans le code de votre modèle de texte. Il charge également le fichier de modèle que vous spécifiez.
 
- Un `.tt` fichier similaire à l’exemple suivant est créé dans le projet de débogage lorsque vous créez une nouvelle solution Visual Studio à partir du modèle de langage Minimal DSL.
+  Un `.tt` fichier similaire à l’exemple suivant est créé dans le projet de débogage lorsque vous créez une nouvelle solution Visual Studio à partir du modèle de langage Minimal DSL.
 
 ```
 <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
@@ -50,22 +50,21 @@ Here is a list of elements in the model:
 <#
   }
 #>
-
 ```
 
  Notez les points suivants concernant ce modèle :
 
--   Le modèle peut utiliser les classes de domaine, les propriétés et les relations que vous avez défini dans la définition DSL.
+- Le modèle peut utiliser les classes de domaine, les propriétés et les relations que vous avez défini dans la définition DSL.
 
--   Le modèle de charge le fichier de modèle que vous spécifiez dans le `requires` propriété.
+- Le modèle de charge le fichier de modèle que vous spécifiez dans le `requires` propriété.
 
--   Une propriété dans `this` contient l’élément racine. À partir de là, votre code peut accéder à d’autres éléments du modèle. Le nom de la propriété est généralement identique à la classe de domaine racine de votre DSL. Dans cet exemple, il s’agit de `this.ExampleModel`.
+- Une propriété dans `this` contient l’élément racine. À partir de là, votre code peut accéder à d’autres éléments du modèle. Le nom de la propriété est généralement identique à la classe de domaine racine de votre DSL. Dans cet exemple, il s’agit de `this.ExampleModel`.
 
--   Bien que le langage dans lequel sont écrits les fragments de code c#, vous pouvez générer le texte de tout type. Vous pouvez également écrire le code dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] en ajoutant la propriété `language="VB"` à la `template` directive.
+- Bien que le langage dans lequel sont écrits les fragments de code c#, vous pouvez générer le texte de tout type. Vous pouvez également écrire le code dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] en ajoutant la propriété `language="VB"` à la `template` directive.
 
--   Pour déboguer le modèle, vous devez ajouter `debug="true"` à la `template` directive. Si une exception se produit, le modèle s’ouvre dans une autre instance de Visual Studio. Si vous souhaitez arrêter le débogueur à un moment précis dans le code, insérez l’instruction `System.Diagnostics.Debugger.Break();`
+- Pour déboguer le modèle, vous devez ajouter `debug="true"` à la `template` directive. Si une exception se produit, le modèle s’ouvre dans une autre instance de Visual Studio. Si vous souhaitez arrêter le débogueur à un moment précis dans le code, insérez l’instruction `System.Diagnostics.Debugger.Break();`
 
-     Pour plus d’informations, consultez [débogage d’un modèle de texte T4](../modeling/debugging-a-t4-text-template.md).
+   Pour plus d’informations, consultez [débogage d’un modèle de texte T4](../modeling/debugging-a-t4-text-template.md).
 
 ## <a name="about-the-dsl-directive-processor"></a>Sur le processeur de directive DSL
  Le modèle peut utiliser les classes de domaine que vous avez défini dans votre définition DSL. Il est généré par une directive qui apparaît généralement au début du modèle. Dans l’exemple précédent, il est la suivante.
@@ -87,16 +86,15 @@ Here is a list of elements in the model:
 
 ```
 <#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1';validation='open|load|save|menu'" #>
-
 ```
 
  Notez que :
 
-1.  Le `filename` et `validation` paramètres sont séparés par « ; » et il ne doit y avoir aucun autre séparateurs ou espaces.
+1. Le `filename` et `validation` paramètres sont séparés par « ; » et il ne doit y avoir aucun autre séparateurs ou espaces.
 
-2.  La liste des catégories de validation détermine les méthodes de validation seront exécutées. Plusieurs catégories doivent être séparées par «&#124;» et il ne doit y avoir aucun autre séparateurs ou espaces.
+2. La liste des catégories de validation détermine les méthodes de validation seront exécutées. Plusieurs catégories doivent être séparées par «&#124;» et il ne doit y avoir aucun autre séparateurs ou espaces.
 
- Si une erreur se produit, il est signalé dans la fenêtre des erreurs, et le fichier de résultats contiendra un message d’erreur.
+   Si une erreur se produit, il est signalé dans la fenêtre des erreurs, et le fichier de résultats contiendra un message d’erreur.
 
 ## <a name="Multiple"></a> L’accès à plusieurs modèles à partir d’un modèle de texte
 
@@ -173,7 +171,6 @@ For Each element As ExampleElement In Me.WorkModel.Elements
    // Here you generate more content derived from the element.
   }
 #>
-
 ```
 
  `LoopSplitter.tt` appelle `LoopTemplate.t4`et puis fractionne le fichier résultant en ses segments. Notez que ce modèle ne devra pas être un modèle de modélisation, car elle ne lit pas le modèle.
@@ -215,5 +212,4 @@ For Each element As ExampleElement In Me.WorkModel.Elements
      File.WriteAllText(Path.Combine(dir, parts[0] + ".txt"), parts[1]);
   }
 #>
-
 ```

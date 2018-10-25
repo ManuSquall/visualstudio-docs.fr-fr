@@ -13,12 +13,12 @@ ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb915f7d17070d78e5749834c325bfee4e8a6879
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 56f1afba0db8ba213a601835ca7a8df39d56f171
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224040"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860758"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Modèles de contrôle courants pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -218,23 +218,23 @@ ms.locfileid: "49224040"
   
 ##### <a name="visual-style"></a>Style visuel  
   
--   Filigranes doivent être centrées horizontalement dans la fenêtre.  
+- Filigranes doivent être centrées horizontalement dans la fenêtre.  
   
--   Filigranes doivent être aligné au centre, ne pas aligné à gauche.  
+- Filigranes doivent être aligné au centre, ne pas aligné à gauche.  
   
--   Filigranes peuvent être centrés verticalement ou positionnés au début de la zone. Si, en haut de la zone, il doit y avoir suffisamment d’espace ci-dessus afin que le filigrane de faire ressortir.  
+- Filigranes peuvent être centrés verticalement ou positionnés au début de la zone. Si, en haut de la zone, il doit y avoir suffisamment d’espace ci-dessus afin que le filigrane de faire ressortir.  
   
--   Utilisez le `Environment.GrayText` police d’environnement standard et de jeton de couleur. Liens hypertexte doivent utiliser les jetons de lien hypertexte standard partagé : `Environment.PanelHyperlink`, `Environment.PanelHyperlinkHover`, `Environment.PanelHyperlinkPressed`, et `Environment.PanelHyperlinkDisabled`.  
+- Utilisez le `Environment.GrayText` police d’environnement standard et de jeton de couleur. Liens hypertexte doivent utiliser les jetons de lien hypertexte standard partagé : `Environment.PanelHyperlink`, `Environment.PanelHyperlinkHover`, `Environment.PanelHyperlinkPressed`, et `Environment.PanelHyperlinkDisabled`.  
   
--   Filigranes ne peuvent pas être sélectionnés sur l’arrière-plan  
+- Filigranes ne peuvent pas être sélectionnés sur l’arrière-plan  
   
--   Si possible, inclure des liens dans le filigrane pour aider l’utilisateur.  
+- Si possible, inclure des liens dans le filigrane pour aider l’utilisateur.  
   
- ![Un texte dans une fenêtre de concepteur en filigrane](../../extensibility/ux-guidelines/media/070702-05-watermark1.png "070702-05_Watermark1")  
+  ![Un texte dans une fenêtre de concepteur en filigrane](../../extensibility/ux-guidelines/media/070702-05-watermark1.png "070702-05_Watermark1")  
   
- ![Un texte dans une fenêtre outil en filigrane](../../extensibility/ux-guidelines/media/070702-06-watermark2.png "070702-06_Watermark2")  
+  ![Un texte dans une fenêtre outil en filigrane](../../extensibility/ux-guidelines/media/070702-06-watermark2.png "070702-06_Watermark2")  
   
- **Exemples de texte de filigrane dans Visual Studio**  
+  **Exemples de texte de filigrane dans Visual Studio**  
   
 ##  <a name="BKMK_ButtonsAndHyperlinks"></a> Boutons et des liens hypertexte  
   
@@ -246,25 +246,25 @@ ms.locfileid: "49224040"
   
  Quand utiliser les boutons de commande :  
   
--   Commandes principales  
+- Commandes principales  
   
--   Affichage windows utilisé pour recueillir l’entrée ou faire des choix, même si elles sont des commandes secondaires  
+- Affichage windows utilisé pour recueillir l’entrée ou faire des choix, même si elles sont des commandes secondaires  
   
--   Actions destructrices ou irréversibles  
+- Actions destructrices ou irréversibles  
   
--   Boutons d’engagement dans les Assistants et les flux de page  
+- Boutons d’engagement dans les Assistants et les flux de page  
   
- Éviter les boutons de commande dans les fenêtres Outil, ou si vous avez besoin de plus de deux mots pour l’étiquette. Liens peuvent avoir des étiquettes de plus de temps.  
+  Éviter les boutons de commande dans les fenêtres Outil, ou si vous avez besoin de plus de deux mots pour l’étiquette. Liens peuvent avoir des étiquettes de plus de temps.  
   
- Quand utiliser des liens :  
+  Quand utiliser des liens :  
   
--   Navigation vers une autre fenêtre, document ou page web  
+- Navigation vers une autre fenêtre, document ou page web  
   
--   Situations nécessitant une étiquette plus longue ou courte phrase pour décrire l’objectif de l’action  
+- Situations nécessitant une étiquette plus longue ou courte phrase pour décrire l’objectif de l’action  
   
--   Espaces étroite où un bouton serait surcharger l’interface utilisateur, à condition que l’action n’est pas destructifs ou irréversible  
+- Espaces étroite où un bouton serait surcharger l’interface utilisateur, à condition que l’action n’est pas destructifs ou irréversible  
   
--   Minimise les commandes secondaires dans les situations où il existe de nombreuses commandes  
+- Minimise les commandes secondaires dans les situations où il existe de nombreuses commandes  
   
 #### <a name="examples"></a>Exemples  
  ![Liens de commande de barre d’informations suivant un message d’état](../../extensibility/ux-guidelines/media/070703-01-commandlinkinfobar.png "070703-01_CommandLinkInfobar")  
@@ -307,19 +307,19 @@ ms.locfileid: "49224040"
   
  Quand utiliser le bouton court de points de suspension uniquement :  
   
--   S’il existe plusieurs long **[Parcourir...]**  bouton dans une boîte de dialogue, telles que lorsque plusieurs champs permettant la navigation. Utilisez court **[...]**  bouton pour chacun d’eux à éviter les clés d’accès à confusion créées par cette situation (**& Parcourir** et **& rcourir le** dans la même boîte de dialogue).  
+- S’il existe plusieurs long **[Parcourir...]**  bouton dans une boîte de dialogue, telles que lorsque plusieurs champs permettant la navigation. Utilisez court **[...]**  bouton pour chacun d’eux à éviter les clés d’accès à confusion créées par cette situation (**& Parcourir** et **& rcourir le** dans la même boîte de dialogue).  
   
--   Dans une boîte de dialogue étroite, ou lorsqu’il n’existe aucun emplacement raisonnable pour le bouton long.  
+- Dans une boîte de dialogue étroite, ou lorsqu’il n’existe aucun emplacement raisonnable pour le bouton long.  
   
--   Si le bouton apparaît dans un contrôle de grille.  
+- Si le bouton apparaît dans un contrôle de grille.  
   
- Instructions pour l’aide du bouton :  
+  Instructions pour l’aide du bouton :  
   
--   N’utilisez pas une clé d’accès. Pour accéder à l’aide du clavier, l’utilisateur doit de tabulation du contrôle adjacentes. Assurez-vous que l’ordre de tabulation est telle que n’importe quel bouton Parcourir immédiatement après le champ qui remplira. N’utilisez jamais un trait de soulignement ci-dessous la première période.  
+- N’utilisez pas une clé d’accès. Pour accéder à l’aide du clavier, l’utilisateur doit de tabulation du contrôle adjacentes. Assurez-vous que l’ordre de tabulation est telle que n’importe quel bouton Parcourir immédiatement après le champ qui remplira. N’utilisez jamais un trait de soulignement ci-dessous la première période.  
   
--   Définir le Microsoft Active Accessibility (MSAA) **nom** propriété **Parcourir...**  (y compris les points de suspension) afin que l’écran lecteurs lue en tant que « Browse » et pas « point-point-point » ou « période période période. » Pour les contrôles managés, cela signifie que le **AccessibleName** propriété.  
+- Définir le Microsoft Active Accessibility (MSAA) **nom** propriété **Parcourir...**  (y compris les points de suspension) afin que l’écran lecteurs lue en tant que « Browse » et pas « point-point-point » ou « période période période. » Pour les contrôles managés, cela signifie que le **AccessibleName** propriété.  
   
--   N’utilisez jamais de points de suspension **[...]**  bouton pour quoi que ce soit, à l’exception d’une action de navigation. Par exemple, si vous avez besoin d’un **[nouveau...]**  bouton mais n’avez pas assez de place pour le texte, puis la boîte de dialogue doit être redéfinie.  
+- N’utilisez jamais de points de suspension **[...]**  bouton pour quoi que ce soit, à l’exception d’une action de navigation. Par exemple, si vous avez besoin d’un **[nouveau...]**  bouton mais n’avez pas assez de place pour le texte, puis la boîte de dialogue doit être redéfinie.  
   
 ##### <a name="sizing-and-spacing"></a>Dimensionnement et l’espacement  
  ![Dimensionnement &#91;Parcourir... &#93; boutons](../../extensibility/ux-guidelines/media/070703-06-browsesizing.png "070703-06_BrowseSizing")  
@@ -442,13 +442,13 @@ ms.locfileid: "49224040"
 ##### <a name="trid-tree-view-and-grid-view"></a>Grid (vue de l’arborescence et affichage de grille)  
  Un contrôle Grid est un contrôle complexe qui contienne une arborescence dans une grille. Développement, la réduction et la navigation dans l’arborescence doivent respecter les mêmes commandes de clavier comme une arborescence, avec les ajouts suivants :  
   
--   **Flèche droite :** développer un nœud. Une fois que le nœud est développé, il doit continuer accédant à la colonne le plus proche sur la droite. Navigation doit s’arrêter à la fin de la ligne.  
+- **Flèche droite :** développer un nœud. Une fois que le nœud est développé, il doit continuer accédant à la colonne le plus proche sur la droite. Navigation doit s’arrêter à la fin de la ligne.  
   
--   **Onglet :** permet d’accéder à la cellule la plus proche sur la droite.  À la fin de la ligne, la navigation se poursuit à la ligne suivante.  
+- **Onglet :** permet d’accéder à la cellule la plus proche sur la droite.  À la fin de la ligne, la navigation se poursuit à la ligne suivante.  
   
--   **Maj + Tab :** permet d’accéder à la cellule la plus proche sur la gauche.  Au début de la ligne, la navigation se poursuit à la cellule la plus à droite de la ligne précédente.  
+- **Maj + Tab :** permet d’accéder à la cellule la plus proche sur la gauche.  Au début de la ligne, la navigation se poursuit à la cellule la plus à droite de la ligne précédente.  
   
- ![Contrôle Grid dans Visual Studio](../../extensibility/ux-guidelines/media/070705-6-trid.png "070705-6_Trid")  
+  ![Contrôle Grid dans Visual Studio](../../extensibility/ux-guidelines/media/070705-6-trid.png "070705-6_Trid")  
   
- **Un contrôle Grid dans Visual Studio**
+  **Un contrôle Grid dans Visual Studio**
 

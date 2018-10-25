@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 297f6025cb8ea24ad333f9e6962d8659e78eb8d2
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 1f923949b628d1ad5a3884acd17601daddd83460
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551871"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889723"
 ---
 # <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717 : Seuls les noms des enums FlagsAttribute doivent être au pluriel
+
 |||
 |-|-|
 |TypeName|OnlyFlagsEnumsShouldHavePluralNames|

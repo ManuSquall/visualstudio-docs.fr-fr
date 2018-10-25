@@ -13,31 +13,31 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20565c798e9c94cb40a39deb4a80f9a83d67e161
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 943b75c9c5f9c0c32ab02b5e73c07282728e0beb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174937"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864725"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procédure pas à pas : Créer LINQ aux classes SQL à l’aide de l’héritage à table unique (Concepteur O/R)
 Le [des outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) prend en charge l’héritage à table unique tel qu’il est généralement implémenté dans les systèmes relationnels. Cette procédure pas à pas développe les étapes génériques fournies dans le [Comment : configurer l’héritage à l’aide du Concepteur O/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) rubrique et des données réelles pour illustrer l’utilisation de l’héritage dans le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
 
  Au cours de cette procédure pas à pas, vous effectuez les tâches suivantes :
 
--   Créer une table de base de données et ajouter des données.
+- Créer une table de base de données et ajouter des données.
 
--   Créer une application Windows Forms.
+- Créer une application Windows Forms.
 
--   Ajouter un fichier [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] à un projet.
+- Ajouter un fichier [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] à un projet.
 
--   Créer de nouvelles classes d'entité.
+- Créer de nouvelles classes d'entité.
 
--   Configurer les classes d'entité pour utiliser l'héritage.
+- Configurer les classes d'entité pour utiliser l'héritage.
 
--   Interroger la classe héritée.
+- Interroger la classe héritée.
 
--   Afficher les données sur un Windows Form.
+- Afficher les données sur un Windows Form.
 
 ## <a name="create-a-table-to-inherit-from"></a>Créer une table d’hériter de
  Pour voir comment fonctionne l’héritage, vous créez un petit `Person` table, utilisez-le comme une classe de base et créez ensuite un `Employee` objet qui en hérite.
@@ -55,8 +55,8 @@ Le [des outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-i
     |-----------------|---------------|-----------------|
     |**ID**|**int**|**False**|
     |**Type**|**int**|**True**|
-    |**FirstName**|**nvarchar(200)**|**False**|
-    |**LastName**|**nvarchar(200)**|**False**|
+    |**firstName**|**nvarchar(200)**|**False**|
+    |**lastName**|**nvarchar(200)**|**False**|
     |**Gestionnaire**|**int**|**True**|
 
 3.  Définissez la colonne d'ID comme clé primaire.
@@ -74,7 +74,7 @@ Le [des outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-i
 
     ||||||
     |-|-|-|-|-|
-    |**ID**|**Type**|**FirstName**|**LastName**|**Gestionnaire**|
+    |**ID**|**Type**|**firstName**|**lastName**|**Gestionnaire**|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
     |**3**|**1**|**Yael**|**Peled**|**NULL**|
@@ -151,7 +151,7 @@ Le [des outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-i
 
 2.  Double-cliquez sur le formulaire pour créer un gestionnaire d'événements `Form1_Load`.
 
-3.  Ajoutez le code suivant au gestionnaire d'événements `Form1_Load` :
+3.  Ajoutez le code suivant au gestionnaire d'événements `Form1_Load` :
 
     ```vb
     Dim dc As New DataClasses1DataContext
@@ -191,6 +191,6 @@ Le [des outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-i
 
 - [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Procédure pas à pas : Création de LINQ to SQL classes (Concepteur O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
-- [Comment : assigner des procédures stockées pour effectuer des mises à jour, insertions et suppressions (Concepteur O/R)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [Guide pratique pour affecter des procédures stockées pour effectuer des mises à jour, des insertions et des suppressions (Concepteur O/R)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Comment : générer le modèle objet en Visual Basic ou c#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

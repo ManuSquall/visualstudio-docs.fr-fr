@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumDebugStreamData::Skip | Documents Microsoft
+title: IDiaEnumDebugStreamData::Skip | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 528ce7dc5ef1046193c24096d8e6032c956e199f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e5c2443aad4433e452bd056d3af25fd6a1710cca
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457100"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847680"
 ---
 # <a name="idiaenumdebugstreamdataskip"></a>IDiaEnumDebugStreamData::Skip
-Ignore un nombre spécifié d’enregistrements dans une séquence d’énumération.  
+Ignore un nombre spécifié d’enregistrements dans une séquence énumérée.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,10 +34,10 @@ HRESULT Skip (
   
 #### <a name="parameters"></a>Paramètres  
  celt  
- [in] Le nombre d’enregistrements à ignorer dans la séquence d’énumération.  
+ [in] Le nombre d’enregistrements à ignorer dans la séquence énumérée.  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` s’il n’y aucun plus d’enregistrements à ignorer.  
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` s’il n’existe plus aucun enregistrement à ignorer.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cb5e3fe219d6ed8d976cf4bf03b3411dd5855a5c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 000e28642a10c565e525b2714eed0d7abaca9340
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189772"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858873"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716 : Les identificateurs ne doivent pas correspondre à des mots clés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotMatchKeywords|
@@ -44,13 +45,13 @@ ms.locfileid: "49189772"
 
  Cette règle vérifie par rapport à des mots clés dans les langues suivantes :
 
--   Visual Basic
+- Visual Basic
 
--   C#
+- C#
 
--   C++/CLI
+- C++/CLI
 
- Comparaison de non-respect de la casse est utilisée pour [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] mots clés et comparaison respectant la casse est utilisée pour les autres langues.
+  Comparaison de non-respect de la casse est utilisée pour [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] mots clés et comparaison respectant la casse est utilisée pour les autres langues.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Sélectionnez un nom qui n’apparaît pas dans la liste des mots clés.

@@ -16,12 +16,12 @@ author: dgriffen
 manager: douge
 ms.workload:
 - dagriffe
-ms.openlocfilehash: e4a8bc0f4b276ed649cdff986bdfc56cf8c77e06
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 94d785ce55b57e35b0880537e099cbc3e03d20ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586220"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855810"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Référence de schéma 2.0 du module linguistique VSIX
 
@@ -34,6 +34,7 @@ L’élément racine du fichier de pack de langue est `<PackageLanguagePackManif
 ### <a name="packagelangaugepackmanifest-element"></a>Élément de PackageLangaugePackManifest
 
 Dans le `<PackageLanguagePackManifest>` élément l’élément suivant doit exister :
+
 |Titre|Description|
 |-----------|-----------------|
 |`<Metadata>`| L’élément conteneur pour toutes les métadonnées de la version localisée du package
@@ -41,6 +42,7 @@ Dans le `<PackageLanguagePackManifest>` élément l’élément suivant doit exi
 ### <a name="metadata-element"></a>Élément de métadonnées
 
 Dans le `<Metadata>` élément que vous pouvez avoir les éléments suivants :
+
 |Titre|Description|
 |-----------|-----------------|
 |`<DisplayName>`|Le nom localisé de l’extension à installer|

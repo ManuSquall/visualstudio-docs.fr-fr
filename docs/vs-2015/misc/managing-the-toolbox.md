@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: douge
-ms.openlocfilehash: 1a42c50addeb878041087d9017321ed71daac115
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 227001e827057ffab4c851a985f7e36afaf0f351
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254408"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873420"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
 Le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] permet à un VSPackage, tel qu’un éditeur ou un concepteur, de gérer l’appartenance et l’apparence de la **boîte à outils**.  
@@ -50,29 +50,29 @@ Le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] permet à un VSPackage, tel qu
   
  Plusieurs points importants sont à prendre en compte quand vous utilisez ces interfaces :  
   
--   <xref:System.Drawing.Design.IToolboxService> est disponible uniquement pour les VSPackages MPF (Managed Package Framework).  
+- <xref:System.Drawing.Design.IToolboxService> est disponible uniquement pour les VSPackages MPF (Managed Package Framework).  
   
--   Contrôles ne peuvent pas être ajoutés directement à la **boîte à outils** à l’aide de <xref:System.Drawing.Design.IToolboxService>.  
+- Contrôles ne peuvent pas être ajoutés directement à la **boîte à outils** à l’aide de <xref:System.Drawing.Design.IToolboxService>.  
   
--   Un VSPackage doit utiliser <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> pour ajouter des contrôles ou héberger le contrôle dans un contrôle wrapper dérivé de <xref:System.Windows.Forms.AxHost>.  
+- Un VSPackage doit utiliser <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> pour ajouter des contrôles ou héberger le contrôle dans un contrôle wrapper dérivé de <xref:System.Windows.Forms.AxHost>.  
   
-     Visual Studio fournit l’outil `Aximp.exe` pour l’automatisation de l’encapsulation des contrôles ActiveX dans un contrôle dérivé de <xref:System.Windows.Forms.AxHost>. Pour plus d’informations, consultez [Aximp.exe (importateur de contrôles ActiveX Windows Forms)](http://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
+   Visual Studio fournit l’outil `Aximp.exe` pour l’automatisation de l’encapsulation des contrôles ActiveX dans un contrôle dérivé de <xref:System.Windows.Forms.AxHost>. Pour plus d’informations, consultez [Aximp.exe (importateur de contrôles ActiveX Windows Forms)](http://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> sont des interfaces COM disponibles via les assemblys PIA.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> sont des interfaces COM disponibles via les assemblys PIA.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> dérive de <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox> et implémente toutes ses méthodes.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> dérive de <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox> et implémente toutes ses méthodes.  
   
-     Les objets obtiennent uniquement une instance de <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>.  
+   Les objets obtiennent uniquement une instance de <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> ne dérive pas de <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> et n’implémente pas ses méthodes.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> ne dérive pas de <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> et n’implémente pas ses méthodes.  
   
-     Les objets nécessitant des fonctionnalités dans les deux interfaces doivent obtenir des instances des deux interfaces depuis l’environnement.  
+   Les objets nécessitant des fonctionnalités dans les deux interfaces doivent obtenir des instances des deux interfaces depuis l’environnement.  
   
--   Quand vous utilisez <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3>, les informations concernant les noms canoniques (non localisés) des onglets sont gérées par les méthodes <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3.GetIDOfTab%2A> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3.SetIDOfTab%2A>.  
+- Quand vous utilisez <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3>, les informations concernant les noms canoniques (non localisés) des onglets sont gérées par les méthodes <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3.GetIDOfTab%2A> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3.SetIDOfTab%2A>.  
   
--   Quand vous utilisez <xref:System.Drawing.Design.IToolboxService>, c’est à l’implémenteur de gérer les informations localisées, telles que les noms des catégories.  
+- Quand vous utilisez <xref:System.Drawing.Design.IToolboxService>, c’est à l’implémenteur de gérer les informations localisées, telles que les noms des catégories.  
   
- Utilisez le mécanisme de paramètres pour permettre aux utilisateurs d’enregistrer les paramètres de la **boîte à outils** auxquels ils peuvent accéder à l’aide de la commande **Paramètres d’importation/exportation** , située dans le menu **Outils** de l’IDE. Pour plus d’informations sur l’utilisation des paramètres, consultez [Extending User Settings and Options](../extensibility/extending-user-settings-and-options.md).  
+  Utilisez le mécanisme de paramètres pour permettre aux utilisateurs d’enregistrer les paramètres de la **boîte à outils** auxquels ils peuvent accéder à l’aide de la commande **Paramètres d’importation/exportation** , située dans le menu **Outils** de l’IDE. Pour plus d’informations sur l’utilisation des paramètres, consultez [Extending User Settings and Options](../extensibility/extending-user-settings-and-options.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Extension de la boîte à outils](../misc/extending-the-toolbox.md)
