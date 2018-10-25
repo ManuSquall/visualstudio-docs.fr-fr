@@ -44,12 +44,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b85bbf5ac3507d9a65c8c2b3f0b71dbe61c1752
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8149e8029dbe39d37ab3979df9af38386af84d6b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693284"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867414"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Projets Office dans l’environnement Visual Studio
   En termes de développement, les projets Microsoft Office offrent une expérience similaire à d'autres types de projets dans Visual Studio, tels que les projets Windows Forms. Lorsque vous créez ou ouvrez un projet Office, les éléments de projet s'affichent dans l' **Explorateur de solutions**. Pour les projets au niveau du document, le document (le document Word ou le classeur Excel) s'ouvre dans Visual Studio et se comporte comme un concepteur visuel.  
@@ -59,22 +59,22 @@ ms.locfileid: "34693284"
 ## <a name="project-items-in-solution-explorer"></a>Éléments de projet dans l’Explorateur de solutions  
  Dans un projet au niveau du document, l' **Explorateur de solutions** affiche les éléments par défaut suivants :  
   
--   Nœuds du document, du classeur et des feuilles de calcul qui sont personnalisés par le projet. Ces nœuds servent de conteneurs aux fichiers de code associés au document, au classeur et aux feuilles.  
+- Nœuds du document, du classeur et des feuilles de calcul qui sont personnalisés par le projet. Ces nœuds servent de conteneurs aux fichiers de code associés au document, au classeur et aux feuilles.  
   
--   Fichiers de code associés au document, classeur et feuilles de calcul personnalisés par le projet. Dans les projets Word, les fichiers de code sont associés au modèle ou au document Word. Dans les projets Excel, les fichiers de code sont associés au modèle ou au classeur Excel, et à chaque feuille de calcul et feuille de graphique dans le classeur ou le modèle.  
+- Fichiers de code associés au document, classeur et feuilles de calcul personnalisés par le projet. Dans les projets Word, les fichiers de code sont associés au modèle ou au document Word. Dans les projets Excel, les fichiers de code sont associés au modèle ou au classeur Excel, et à chaque feuille de calcul et feuille de graphique dans le classeur ou le modèle.  
   
--   Des fichiers projet masqués que vous ne pouvez pas modifier directement. Pour plus d’informations, consultez [masqué des fichiers projet](#hiddenfiles).  
+- Des fichiers projet masqués que vous ne pouvez pas modifier directement. Pour plus d’informations, consultez [masqué des fichiers projet](#hiddenfiles).  
   
- Dans un projet de complément VSTO, l’ **Explorateur de solutions** affiche les éléments par défaut suivants :  
+  Dans un projet de complément VSTO, l’ **Explorateur de solutions** affiche les éléments par défaut suivants :  
   
--   Le nœud d'application. Ce nœud a le même nom que l'application hôte, par exemple **Word**, **Excel**ou **Outlook**. Le nœud d'application contient le fichier de code ThisAddIn. Il fournit également la propriété **Espace de noms de l'élément hôte** . Pour plus d’informations sur cette propriété, consultez [propriétés dans les projets Office](../vsto/properties-in-office-projects.md).  
+- Le nœud d'application. Ce nœud a le même nom que l'application hôte, par exemple **Word**, **Excel**ou **Outlook**. Le nœud d'application contient le fichier de code ThisAddIn. Il fournit également la propriété **Espace de noms de l'élément hôte** . Pour plus d’informations sur cette propriété, consultez [propriétés dans les projets Office](../vsto/properties-in-office-projects.md).  
   
--   Le fichier de code ThisAddIn. Ce fichier contient la classe `ThisAddIn` générée pour votre complément VSTO. Pour plus d’informations sur cette classe, consultez [Compléments VSTO de programme](../vsto/programming-vsto-add-ins.md).  
+- Le fichier de code ThisAddIn. Ce fichier contient la classe `ThisAddIn` générée pour votre complément VSTO. Pour plus d’informations sur cette classe, consultez [programme VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
   
--   Des fichiers projet masqués que vous ne pouvez pas modifier directement. Pour plus d’informations, consultez [masqué des fichiers projet](#hiddenfiles).  
+- Des fichiers projet masqués que vous ne pouvez pas modifier directement. Pour plus d’informations, consultez [masqué des fichiers projet](#hiddenfiles).  
   
 ### <a name="temporary-certificates"></a>Certificats temporaires  
- Les projets Office incluent également un certificat temporaire nommé *nom_projet*_TemporaryKey.pfx. Ce certificat est utilisé pour signer les manifestes de déploiement et d'application du projet pendant le développement. Pour plus d’informations, consultez [accorder la confiance à des solutions Office](../vsto/granting-trust-to-office-solutions.md) et [les solutions Office de sécuriser](../vsto/securing-office-solutions.md).  
+ Les projets Office incluent également un certificat temporaire nommé *nom_projet*_TemporaryKey.pfx. Ce certificat est utilisé pour signer les manifestes de déploiement et d'application du projet pendant le développement. Pour plus d’informations, consultez [accorder une confiance à des solutions Office](../vsto/granting-trust-to-office-solutions.md) et [solutions Office Secure](../vsto/securing-office-solutions.md).  
   
 ###  <a name="hiddenfiles"></a> Fichiers projet masqués  
  Plusieurs fichiers projet sont masqués par défaut. Ces fichiers sont générés par Visual Studio et ils diffèrent par type de projet. Pour afficher les fichiers masqués, cliquez sur **Afficher tous les fichiers** dans l' **Explorateur de solutions**.  
@@ -91,9 +91,9 @@ ms.locfileid: "34693284"
 ### <a name="controls-on-documents"></a>Contrôles dans des documents  
  Vous pouvez faire glisser des *contrôles hôtes* et des contrôles Windows Forms de la **Boîte à outils** Visual Studio sur l'aide de conception du document. Les contrôles hôtes sont des versions spécialisées d'objets Office, tels que les contrôles de contenu Word et les plages Excel, qui peuvent être utilisés dans les projets Office créés à l'aide de Visual Studio. Les contrôles hôtes ont des fonctionnalités supplémentaires qui ne sont pas disponibles dans les objets Office correspondants, comme la liaison de données et les événements supplémentaires.  
   
- Pour plus d’informations, consultez [éléments hôtes et héberger la vue d’ensemble des contrôles](../vsto/host-items-and-host-controls-overview.md) et [contrôles Windows forms dans une vue d’ensemble des documents Office](../vsto/windows-forms-controls-on-office-documents-overview.md).  
+ Pour plus d’informations, consultez [éléments hôtes et héberger de vue d’ensemble des contrôles](../vsto/host-items-and-host-controls-overview.md) et [Windows forms des contrôles sur la vue d’ensemble des documents Office](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
-### <a name="excel-worksheets-and-workbooks-in-the-designer"></a>Feuilles de calcul et de classeurs Excel dans le Concepteur  
+### <a name="excel-worksheets-and-workbooks-in-the-designer"></a>Feuilles de calcul Excel et les classeurs dans le Concepteur  
  Lorsque vous ouvrez une feuille de calcul dans le concepteur, vous pouvez la modifier de la même façon que lorsque vous l'ouvrez directement dans Excel. Si vous double-cliquez sur une cellule de la feuille de calcul, la cellule passe en mode édition. Si vous double-cliquez sur une cellule qui contient un contrôle hôte, l’éditeur de Code s’ouvre et Visual Studio génère le Gestionnaire d’événements par défaut pour le contrôle. Pour naviguer jusqu'à d'autres feuilles de calcul, vous pouvez cliquer sur les onglets de feuille de calcul en bas de concepteur.  
   
  Lorsque vous ouvrez le classeur dans le concepteur, il n'y a aucune aire de conception. Le mode Design du classeur consiste en une grande barre d'état des composants qui remplit le concepteur.  

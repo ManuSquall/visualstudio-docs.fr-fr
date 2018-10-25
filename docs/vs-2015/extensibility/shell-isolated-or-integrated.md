@@ -19,12 +19,12 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0001ff15bd6f74ea0b993c73a9c458d5724a28a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 01a16f7711b35d8c1062117d486fdf00ab998566
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266121"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835986"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (isolé ou intégré)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,11 +53,11 @@ Vous pouvez créer votre propre application basée sur Visual Studio en mode int
   
 > [!IMPORTANT]
 >  Le [contrat de licence utilisateur final (CLUF)](https://www.visualstudio.com/en-us/support/legal/mt171552) pour Visual Studio intégré et isolé interpréteurs de commandes inclut une section sur la collecte de données (**Section 3. Données**).  Il décrit les données d’utilisation client qui peuvent être collectées par Microsoft avec les utilisateurs du logiciel shell intégré ou isolé que vous intégrez votre application. Pour plus d’informations, consultez [Visual Studio produit déclaration de confidentialité Microsoft](https://www.visualstudio.com/en-us/dn948229).  
->   
+> 
 >  Si vous collectez des données d’utilisation distincts à partir de vos clients via votre application, vous devez fournir des avis approprié aux utilisateurs de votre application de ce que vous collectez.  Lorsque vous distribuez le logiciel shell isolé ou intégré dans le cadre de votre application, en fonction de la licence Visual Studio Software Development Kit, vous devez inclure un des éléments suivants :  
->   
->  -   le contrat de licence utilisateur final dans le cadre de votre licence de l’application  
-> -   votre propre CLUF qui nécessite de vos clients à accepter les termes qui protègent le Visual Studio intégré ou isolé de shell au moins autant que les termes de licence utilisateur final Microsoft pour le logiciel de l’interpréteur de commandes  
+> 
+> - le contrat de licence utilisateur final dans le cadre de votre licence de l’application  
+>   -   votre propre CLUF qui nécessite de vos clients à accepter les termes qui protègent le Visual Studio intégré ou isolé de shell au moins autant que les termes de licence utilisateur final Microsoft pour le logiciel de l’interpréteur de commandes  
   
 ## <a name="additional-resources"></a>Ressources supplémentaires  
  Pour plus d’informations sur les packages redistribuables, consultez le [téléchargements de Visual Studio Extensibility](http://go.microsoft.com/fwlink/?LinkID=119298) site Web.  

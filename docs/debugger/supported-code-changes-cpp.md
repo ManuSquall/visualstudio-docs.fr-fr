@@ -1,5 +1,5 @@
 ---
-title: Prise en charge des modifications du Code (C++) | Documents Microsoft
+title: Prise en charge des modifications de Code (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb97c08b8673854e0fe0d0bbd64efbe038227c43
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c1d4333014f63bec73c13b3a7b1d5f9c7d59697f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477035"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854115"
 ---
 # <a name="supported-code-changes-c"></a>Modifications de code prises en charge (C++)
 Modifier & Continuer pour Visual C++ gère la plupart des types de modifications du code. Toutefois, certaines modifications ne peuvent pas être appliquées pendant l'exécution du programme. Pour appliquer ces modifications, vous devez arrêter l'exécution et générer une nouvelle version du code.  
@@ -40,38 +40,38 @@ Modifier & Continuer pour Visual C++ gère la plupart des types de modifications
 ##  <a name="BKMK_Unsupported_changes"></a> Modifications non prises en charge  
  Les modifications C/C++ suivantes ne peuvent pas être appliquées pendant une session de débogage :  
   
--   La plupart des modifications apportées aux données globales ou statiques.  
+- La plupart des modifications apportées aux données globales ou statiques.  
   
--   Modifications apportées à des exécutables copiés depuis un autre ordinateur et non générés localement.  
+- Modifications apportées à des exécutables copiés depuis un autre ordinateur et non générés localement.  
   
--   Modifications apportées à un type de données qui affectent la disposition d'un objet, comme les données membres d'une classe.  
+- Modifications apportées à un type de données qui affectent la disposition d'un objet, comme les données membres d'une classe.  
   
--   Ajout de plus de 64 Ko de nouveau code ou de nouvelles données.  
+- Ajout de plus de 64 Ko de nouveau code ou de nouvelles données.  
   
--   Ajout de variables qui nécessitent un constructeur à un point situé avant le pointeur d'instruction.  
+- Ajout de variables qui nécessitent un constructeur à un point situé avant le pointeur d'instruction.  
   
--   Modifications qui affectent le code qui nécessite une initialisation d'exécution.  
+- Modifications qui affectent le code qui nécessite une initialisation d'exécution.  
   
--   Ajout de gestionnaires d'exceptions, dans certains cas.  
+- Ajout de gestionnaires d'exceptions, dans certains cas.  
   
--   Modifications apportées aux fichiers de ressources.  
+- Modifications apportées aux fichiers de ressources.  
   
--   Modifications apportées au code de fichiers en lecture seule.  
+- Modifications apportées au code de fichiers en lecture seule.  
   
--   Modifications apportées au code sans fichier PDB correspondant.  
+- Modifications apportées au code sans fichier PDB correspondant.  
   
--   Modifications apportées au code sans fichier objet.  
+- Modifications apportées au code sans fichier objet.  
   
- Si vous procédez à l'une de ces modifications puis essayez de l'appliquer, un message d'erreur ou d'avertissement apparaît dans la fenêtre **Sortie** .  
+  Si vous procédez à l'une de ces modifications puis essayez de l'appliquer, un message d'erreur ou d'avertissement apparaît dans la fenêtre **Sortie** .  
   
--   Modifier & Continuer ne met pas à jour les bibliothèques statiques. Si vous apportez une modification dans une bibliothèque statique, l'exécution continue avec l'ancienne version et aucun avertissement n'est émis.  
+- Modifier & Continuer ne met pas à jour les bibliothèques statiques. Si vous apportez une modification dans une bibliothèque statique, l'exécution continue avec l'ancienne version et aucun avertissement n'est émis.  
   
 ##  <a name="BKMK_Unsupported_scenarios"></a> Scénarios non pris en charge  
  Modifier & Continuer pour C/C++ n'est pas disponible dans les scénarios de débogage suivants :  
   
 -   Débogage des applications natives compilées avec [/zo (Améliorer le débogage optimisé)](/cpp/build/reference/zo-enhance-optimized-debugging)  
   
--   Dans les versions de Visual Studio antérieures à Visual Studio 2015 Update 1, les applications UWP ou des composants de débogage. À partir de Visual Studio 2015 Update 1, vous pouvez utiliser Modifier & Continuer dans les applications UWP C++ et les applications DirectX, car il prend désormais en charge la `/ZI` commutateur du compilateur avec le `/bigobj` basculer. Vous pouvez également utiliser l’option Modifier &amp; Continuer avec des fichiers binaires compilés à l’aide du commutateur `/FASTLINK` .  
+-   Dans les versions de Visual Studio antérieures à Visual Studio 2015 Update 1, le débogage des applications UWP ou composants. À partir de Visual Studio 2015 Update 1, vous pouvez utiliser Modifier & Continuer dans les applications UWP C++ et DirectX, car il prend désormais en charge la `/ZI` commutateur de compilateur avec la `/bigobj` basculer. Vous pouvez également utiliser l’option Modifier &amp; Continuer avec des fichiers binaires compilés à l’aide du commutateur `/FASTLINK` .  
   
 -   Débogage sur Windows 98.  
   

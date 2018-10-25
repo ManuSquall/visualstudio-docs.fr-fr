@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 05339a2bdc176fd44c93c744162a299809762a2e
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 490c9c3fe5724373072b2857eb0ce3da7905b172
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860289"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813316"
 ---
 # <a name="understanding-the-dsl-code"></a>Fonctionnement du code DSL
 Une solution de langage spécifique à un domaine (DSL) génère une API que vous pouvez utiliser pour lire et mettre à jour les instances du DSL dans Visual Studio. Cette API est définie dans le code généré à partir de la définition DSL. Cette rubrique décrit l'API générée.
@@ -110,25 +110,25 @@ Une solution de langage spécifique à un domaine (DSL) génère une API que vou
 
  Chaque classe de domaine contient :
 
--   Une définition de propriété et une classe de gestionnaire imbriquée pour chaque propriété de domaine. Vous pouvez substituer OnValueChanging() et OnValueChanged(). Pour plus d’informations, consultez [gestionnaires de modification de valeur de propriété de domaine](../modeling/domain-property-value-change-handlers.md).
+- Une définition de propriété et une classe de gestionnaire imbriquée pour chaque propriété de domaine. Vous pouvez substituer OnValueChanging() et OnValueChanged(). Pour plus d’informations, consultez [gestionnaires de modification de valeur de propriété de domaine](../modeling/domain-property-value-change-handlers.md).
 
-     Dans l'exemple de DSL, la classe `Comment` contient une propriété `Text` et une classe de gestionnaire `TextPropertyHandler`.
+   Dans l'exemple de DSL, la classe `Comment` contient une propriété `Text` et une classe de gestionnaire `TextPropertyHandler`.
 
--   Des propriétés d'accesseurs pour les relations auxquelles cette classe de domaine participe. (Il n'y a pas de classe imbriquée pour les propriétés de rôle.)
+- Des propriétés d'accesseurs pour les relations auxquelles cette classe de domaine participe. (Il n'y a pas de classe imbriquée pour les propriétés de rôle.)
 
-     Dans l'exemple de DSL, la classe `Comment` à des accesseurs qui accèdent à son modèle parent par l'intermédiaire de la relation d'incorporation `ComponentModelHasComments`.
+   Dans l'exemple de DSL, la classe `Comment` à des accesseurs qui accèdent à son modèle parent par l'intermédiaire de la relation d'incorporation `ComponentModelHasComments`.
 
--   Des constructeurs. Si vous souhaitez les substituer, définissez **a un constructeur personnalisé** sur la classe de domaine.
+- Des constructeurs. Si vous souhaitez les substituer, définissez **a un constructeur personnalisé** sur la classe de domaine.
 
--   Des méthodes de gestionnaire EGP (Element Group Prototype). Elles sont nécessaires si l’utilisateur peut *fusion* (Ajouter) un autre élément sur des instances de cette classe. En général, l'utilisateur effectue pour cela une opération glisser-déplacer à partir d'un outil d'élément ou d'une autre forme, ou une opération de collage.
+- Des méthodes de gestionnaire EGP (Element Group Prototype). Elles sont nécessaires si l’utilisateur peut *fusion* (Ajouter) un autre élément sur des instances de cette classe. En général, l'utilisateur effectue pour cela une opération glisser-déplacer à partir d'un outil d'élément ou d'une autre forme, ou une opération de collage.
 
-     Dans l'exemple de DSL, un port d'entrée ou un port de sortie peuvent être fusionnés sur un composant. De plus, des composants et des commentaires peuvent être fusionnés sur le modèle. La clé publique du signataire doit être fournie à la classe
+   Dans l'exemple de DSL, un port d'entrée ou un port de sortie peuvent être fusionnés sur un composant. De plus, des composants et des commentaires peuvent être fusionnés sur le modèle. La clé publique du signataire doit être fournie à la classe
 
-     Les méthodes de gestionnaire EGP dans la classe Components autorisent un composant à accepter des ports, mais pas des commentaires. Le gestionnaire EGP dans la classe de modèle racine accepte des commentaires et des composants, mais pas des ports.
+   Les méthodes de gestionnaire EGP dans la classe Components autorisent un composant à accepter des ports, mais pas des commentaires. Le gestionnaire EGP dans la classe de modèle racine accepte des commentaires et des composants, mais pas des ports.
 
- `DomainModel.cs`
+  `DomainModel.cs`
 
- Classe qui représente le modèle du domaine. Elle est dérivée de <xref:Microsoft.VisualStudio.Modeling.DomainModel>.
+  Classe qui représente le modèle du domaine. Elle est dérivée de <xref:Microsoft.VisualStudio.Modeling.DomainModel>.
 
 > [!NOTE]
 >  Elle est différente de la classe racine du modèle.
@@ -161,31 +161,31 @@ Une solution de langage spécifique à un domaine (DSL) génère une API que vou
 
  `SerializationHelper.cs`
 
--   Méthode de validation permettant de s'assurer que deux éléments ne sont pas référencés par le même moniker. Pour plus d’informations, consultez [stockage de fichiers de personnalisation et la sérialisation XML](../modeling/customizing-file-storage-and-xml-serialization.md).
+- Méthode de validation permettant de s'assurer que deux éléments ne sont pas référencés par le même moniker. Pour plus d’informations, consultez [stockage de fichiers de personnalisation et la sérialisation XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
--   Classe SerializationHelper qui fournit des fonctions utilisées en commun avec les classes de sérialisation.
+- Classe SerializationHelper qui fournit des fonctions utilisées en commun avec les classes de sérialisation.
 
- `Serializer.cs`
+  `Serializer.cs`
 
- Classe de sérialiseur pour chaque modèle, diagramme, connecteur, forme, relation et classe de domaine.
+  Classe de sérialiseur pour chaque modèle, diagramme, connecteur, forme, relation et classe de domaine.
 
- La plupart des fonctionnalités de ces classes peuvent être contrôlées par les paramètres dans l’Explorateur DSL sous **comportement de sérialisation Xml**.
+  La plupart des fonctionnalités de ces classes peuvent être contrôlées par les paramètres dans l’Explorateur DSL sous **comportement de sérialisation Xml**.
 
- `Shapes.cs`
+  `Shapes.cs`
 
- Classe pour chaque classe de forme dans la définition DSL. Les formes sont dérivées de <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>. Pour plus d’informations, consultez [stockage de fichiers de personnalisation et la sérialisation XML](../modeling/customizing-file-storage-and-xml-serialization.md).
+  Classe pour chaque classe de forme dans la définition DSL. Les formes sont dérivées de <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>. Pour plus d’informations, consultez [stockage de fichiers de personnalisation et la sérialisation XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
- Pour substituer les méthodes générées par vos propres méthodes dans une classe partielle, définissez **génère une Double dérivée** pour le connecteur dans la définition DSL. Pour remplacer un constructeur avec votre propre code, définissez **a un constructeur personnalisé**.
+  Pour substituer les méthodes générées par vos propres méthodes dans une classe partielle, définissez **génère une Double dérivée** pour le connecteur dans la définition DSL. Pour remplacer un constructeur avec votre propre code, définissez **a un constructeur personnalisé**.
 
- Pour rendre la couleur et certaines autres variables de fonctionnalités de style au moment de l’exécution, avec le bouton droit de la classe sur le diagramme de définition DSL et pointez sur **ajouter les objets exposés**.
+  Pour rendre la couleur et certaines autres variables de fonctionnalités de style au moment de l’exécution, avec le bouton droit de la classe sur le diagramme de définition DSL et pointez sur **ajouter les objets exposés**.
 
- Pour rendre variables d'autres fonctionnalités de style au moment de l'exécution, consultez par exemple <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> et <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>.
+  Pour rendre variables d'autres fonctionnalités de style au moment de l'exécution, consultez par exemple <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> et <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>.
 
- `ToolboxHelper.cs`
+  `ToolboxHelper.cs`
 
- Configure la boîte à outils en installant des prototypes de groupes d'éléments dans les outils d'éléments. Les copies de ces prototypes sont fusionnées avec les éléments cibles quand l'utilisateur exécute l'outil.
+  Configure la boîte à outils en installant des prototypes de groupes d'éléments dans les outils d'éléments. Les copies de ces prototypes sont fusionnées avec les éléments cibles quand l'utilisateur exécute l'outil.
 
- Vous pourriez substituer `CreateElementPrototype()` pour définir un élément de boîte à outils qui crée un groupe de plusieurs objets. Vous pourriez par exemple définir un élément pour représenter des objets ayant des sous-composants. Après avoir modifié le code, réinitialiser l’instance expérimentale de Visual Studio pour effacer le cache de boîte à outils.
+  Vous pourriez substituer `CreateElementPrototype()` pour définir un élément de boîte à outils qui crée un groupe de plusieurs objets. Vous pourriez par exemple définir un élément pour représenter des objets ayant des sous-composants. Après avoir modifié le code, réinitialiser l’instance expérimentale de Visual Studio pour effacer le cache de boîte à outils.
 
 ## <a name="generated-files-in-the-dslpackage-project"></a>Fichiers générés dans le projet DslPackage
  DslPackage couple le modèle DSL au shell Visual Studio, la gestion des fenêtre Boîte à outils, commandes et menu. La plupart des classes sont dérivées deux fois, ce qui vous permet de substituer n'importe lesquelles de leurs méthodes.
@@ -274,7 +274,6 @@ namespace Company.EmbedInForm
   }
 
 }
-
 ```
 
  `EditorFactory.cs`
@@ -326,7 +325,6 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 }
 }
 }
-
 ```
 
  `ModelExplorerToolWindow.cs`

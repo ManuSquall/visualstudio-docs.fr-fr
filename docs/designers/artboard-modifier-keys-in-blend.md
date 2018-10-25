@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35699d765a8d01e212fe02257da2aa83e245ecd4
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 88d7dd7f6fe09acd77ee37ca473fbd5290be6ee1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890186"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861109"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Touches de modification de la planche graphique dans Blend
 Certains raccourcis clavier ne sont pas associés à des éléments de menu et il est donc impossible d'utiliser l'interface utilisateur [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] pour les découvrir. Le tableau suivant répertorie les raccourcis qui modifient une action, par exemple le redimensionnement d’un objet.
 
 |Pour|Procédez comme suit|
-|-----------------------|-------------|
+| - |-------------|
 |Sélectionner temporairement l’outil **Sélection** tandis qu’un autre outil reste sélectionné (cela réduit le nombre de clics à effectuer sur un élément du panneau **Outils**, en faisant des allées et venues entre les outils **Sélection** et les autres)|Maintenez la touche **Ctrl** enfoncée.|
 |Déplacer les objets sélectionnés alors que l’outil **Sélection** est sélectionné|Appuyez sur les touches de direction.|
 |Effectuer un panoramique de la planche graphique|Maintenez la touche **Espace** enfoncée et faites glisser la planche graphique.|

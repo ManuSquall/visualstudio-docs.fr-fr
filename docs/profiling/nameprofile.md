@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f52b647cb6d110d111666df172d7243b0fd8ea4
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: df6fce197a184167b66025191f43b07ebd08ffa7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256134"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819587"
 ---
 # <a name="nameprofile"></a>NameProfile
 La fonction `NameProfile` affecte une chaîne au processus ou au thread spécifié.  
@@ -39,17 +39,17 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
  Nom de l’élément de profilage. Un nom n’est pas valide (NameProfileA retournant alors NAME_ERROR_INVALID_NAME) si :  
   
--   Le pointeur passé dans NameProfileA est une valeur NULL  
+- Le pointeur passé dans NameProfileA est une valeur NULL  
   
--   Les données de chaîne de pszName commencent par un chiffre  
+- Les données de chaîne de pszName commencent par un chiffre  
   
--   Les données de chaîne de pszName contiennent un espace  
+- Les données de chaîne de pszName contiennent un espace  
   
--   Les données de chaîne de pszName contiennent l’un des caractères suivants : ,;.`~!@#$%^&*()=[]{}&#124;\\?/<>  
+- Les données de chaîne de pszName contiennent l’un des caractères suivants : ,;.`~!@#$%^&*()=[]{}&#124;\\?/<>  
   
- `Level`  
+  `Level`  
   
- Indique le niveau du profil auquel la collecte des données de performances peut être appliquée. Les valeurs de **PROFILE_CONTROL_LEVEL** suivantes peuvent être utilisés pour indiquer un des trois niveaux auxquels la collecte des données de performances peut être appliquée :  
+  Indique le niveau du profil auquel la collecte des données de performances peut être appliquée. Les valeurs de **PROFILE_CONTROL_LEVEL** suivantes peuvent être utilisés pour indiquer un des trois niveaux auxquels la collecte des données de performances peut être appliquée :  
   
 |Enumerator|Description|  
 |----------------|-----------------|  

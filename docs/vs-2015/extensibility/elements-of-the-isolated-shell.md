@@ -15,12 +15,12 @@ ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c051425f2d3ae131362c2d95494ed0edbef5353e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca63b6a8c973b33a9dffc98966fd0622c0a5407a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246049"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868428"
 ---
 # <a name="elements-of-the-isolated-shell"></a>Éléments du Shell isolé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ Vous pouvez modifier les paramètres du Registre, paramètres d’exécution et 
 ## <a name="run-time-settings"></a>Paramètres d’exécution  
  Quand un utilisateur démarre l’application de shell isolé, il appelle le point d’entrée de démarrage de l’interpréteur de commandes de Visual Studio. Paramètres d’application sont définies lorsque votre application démarre, comme suit :  
   
-1.  Le shell Visual Studio vérifie le Registre de l’application pour des clés spécifiques. Si le paramètre d’une clé est spécifié dans l’appel au point d’entrée de démarrage, cette valeur remplace la valeur dans le Registre.  
+1. Le shell Visual Studio vérifie le Registre de l’application pour des clés spécifiques. Si le paramètre d’une clé est spécifié dans l’appel au point d’entrée de démarrage, cette valeur remplace la valeur dans le Registre.  
   
-2.  Si ni le Registre, ni l’entrée point paramètre spécifie la valeur d’un paramètre, puis la valeur par défaut pour le paramètre est utilisée.  
+2. Si ni le Registre, ni l’entrée point paramètre spécifie la valeur d’un paramètre, puis la valeur par défaut pour le paramètre est utilisée.  
   
- Quand un utilisateur démarre votre application à partir de la ligne de commande, tous les commutateurs de ligne de commande sont passés à l’interpréteur de commandes de Visual Studio, qui les traite de la même manière que Devenv. Pour plus d’informations sur les commutateurs de Devenv, consultez [commutateurs de ligne de commande Devenv](../ide/reference/devenv-command-line-switches.md) et [commutateurs de ligne de commande de Devenv pour le développement VSPackage](../extensibility/devenv-command-line-switches-for-vspackage-development.md). Pour plus d’informations sur la façon dont un package s’inscrit pour les commutateurs de ligne de commande, consultez [Ajout des commutateurs de ligne de commande](../extensibility/adding-command-line-switches.md).  
+   Quand un utilisateur démarre votre application à partir de la ligne de commande, tous les commutateurs de ligne de commande sont passés à l’interpréteur de commandes de Visual Studio, qui les traite de la même manière que Devenv. Pour plus d’informations sur les commutateurs de Devenv, consultez [commutateurs de ligne de commande Devenv](../ide/reference/devenv-command-line-switches.md) et [commutateurs de ligne de commande de Devenv pour le développement VSPackage](../extensibility/devenv-command-line-switches-for-vspackage-development.md). Pour plus d’informations sur la façon dont un package s’inscrit pour les commutateurs de ligne de commande, consultez [Ajout des commutateurs de ligne de commande](../extensibility/adding-command-line-switches.md).  
   
 ## <a name="the-start-entry-point"></a>Le Point d’entrée de démarrage  
  Le fichier Appenvstub.dll contient des points d’entrée pour accéder à l’interpréteur de commandes isolé. Lorsque l’application démarre, il appelle le point d’entrée début de Appenvstub.dll.  

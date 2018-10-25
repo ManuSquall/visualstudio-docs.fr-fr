@@ -22,12 +22,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: db774bdfb02d762c2370ab342cc67c1a9b792bed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0dabf5b84eb1adde1d6e579b7ec5ad6a6c443723
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254707"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859055"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Page Références, Concepteur de projets (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ Utilisez la page **Références** du **Concepteur de projet** pour gérer des r�
   
 > [!NOTE]
 >  Quand le système de projet trouve une référence d’assembly, le système résout la référence en regardant aux emplacements ci-dessous, dans l’ordre suivant :  
->   
->  1.  Dossier du projet. Les fichiers du dossier du projet s’affichent dans l’**Explorateur de solutions** quand **Afficher tous les fichiers** n’est pas en vigueur.  
-> 2.  Dossiers spécifiés dans la boîte de dialogue **Chemins des références**.  
-> 3.  Dossiers qui affichent des fichiers dans la boîte de dialogue **Ajouter une référence**.  
-> 4.  Dossier obj du projet. (Quand vous ajoutez une référence COM à votre projet, un ou plusieurs assemblys peuvent être ajoutés au dossier obj du projet.)  
+> 
+> 1. Dossier du projet. Les fichiers du dossier du projet s’affichent dans l’**Explorateur de solutions** quand **Afficher tous les fichiers** n’est pas en vigueur.  
+>    2.  Dossiers spécifiés dans la boîte de dialogue **Chemins des références**.  
+>    3.  Dossiers qui affichent des fichiers dans la boîte de dialogue **Ajouter une référence**.  
+>    4.  Dossier obj du projet. (Quand vous ajoutez une référence COM à votre projet, un ou plusieurs assemblys peuvent être ajoutés au dossier obj du projet.)  
   
  **Références**  
  Cette liste affiche toutes les références dans le projet, utilisées ou non.  

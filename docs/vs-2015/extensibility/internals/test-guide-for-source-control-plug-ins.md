@@ -19,12 +19,12 @@ ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1620de29372d1d8e397ad879e3c9f413c41b1286
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1893a30ff46470949fb5aa534f61f590e7ba2d95
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219581"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873550"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guide de test pour les plug-ins de contrôle de code source
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,19 +46,19 @@ Cette section fournit des conseils pour tester votre contrôle de source de plug
  Projet Web  
  Il existe quatre types de projets Web : système de fichiers, serveur IIS Local, Sites distants et FTP.  
   
--   Projets de système de fichiers sont créés sur un chemin d’accès local, mais ils ne nécessitent pas d’Internet Information Services (IIS) pour être installé car ils sont accessibles en interne via un chemin d’accès UNC et peuvent être placées sous contrôle de code source à partir de l’IDE, comme les projets clients.  
+- Projets de système de fichiers sont créés sur un chemin d’accès local, mais ils ne nécessitent pas d’Internet Information Services (IIS) pour être installé car ils sont accessibles en interne via un chemin d’accès UNC et peuvent être placées sous contrôle de code source à partir de l’IDE, comme les projets clients.  
   
--   Les projets IIS locaux fonctionnent avec IIS, qui est installé sur le même ordinateur et sont accessibles avec une URL pointant vers l’ordinateur local.  
+- Les projets IIS locaux fonctionnent avec IIS, qui est installé sur le même ordinateur et sont accessibles avec une URL pointant vers l’ordinateur local.  
   
--   Les projets de Sites à distance sont également créés sous les Services IIS, mais ils sont placés sous contrôle de code source sur l’ordinateur du serveur IIS et non à partir à l’intérieur de la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE.  
+- Les projets de Sites à distance sont également créés sous les Services IIS, mais ils sont placés sous contrôle de code source sur l’ordinateur du serveur IIS et non à partir à l’intérieur de la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE.  
   
--   Projets FTP sont accessibles via un serveur FTP distant, mais ils ne peuvent pas être placés sous contrôle de code source.  
+- Projets FTP sont accessibles via un serveur FTP distant, mais ils ne peuvent pas être placés sous contrôle de code source.  
   
- Inscription  
- Un autre terme pour la solution ou un projet sous contrôle de code source.  
+  Inscription  
+  Un autre terme pour la solution ou un projet sous contrôle de code source.  
   
- Version Store  
- La base de données de contrôle de source est accessible via l’API de plug-in de contrôle de Source.  
+  Version Store  
+  La base de données de contrôle de source est accessible via l’API de plug-in de contrôle de Source.  
   
 ## <a name="test-areas-covered-in-this-section"></a>Cette Section traités des zones de test  
   

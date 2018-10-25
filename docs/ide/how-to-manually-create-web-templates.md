@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d092234c183c93ce99e7d864c71c64a332aeb758
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 59315562e16a7ce3ef4e0a79551f524ca88d44bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178941"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826399"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Guide pratique pour créer manuellement des modèles web
 
@@ -30,33 +30,33 @@ La création d’un modèle web ne ressemble pas à la création d’autres genr
 
 1. Créez un projet web.
 
-1. Modifiez ou supprimez les fichiers du projet, ou ajoutez de nouveaux fichiers au projet.
+2. Modifiez ou supprimez les fichiers du projet, ou ajoutez de nouveaux fichiers au projet.
 
-1. Créez un fichier XML et enregistrez-le avec l’extension de fichier *vstemplate* dans le même répertoire que votre projet. Ne l’ajoutez pas au projet dans Visual Studio.
+3. Créez un fichier XML et enregistrez-le avec l’extension de fichier *vstemplate* dans le même répertoire que votre projet. Ne l’ajoutez pas au projet dans Visual Studio.
 
-1. Modifiez le fichier XML *vstemplate* pour fournir des métadonnées de modèle de projet. Pour plus d’informations, consultez l’[exemple qui suit](#example).
+4. Modifiez le fichier XML *vstemplate* pour fournir des métadonnées de modèle de projet. Pour plus d’informations, consultez l’[exemple qui suit](#example).
 
-1. Localisez l’élément `ProjectType` dans le fichier *vstemplate*, puis affectez au texte la valeur `Web`.
+5. Localisez l’élément `ProjectType` dans le fichier *vstemplate*, puis affectez au texte la valeur `Web`.
 
-1. Après l’élément `ProjectType`, ajoutez un élément `ProjectSubType` et affectez au texte la valeur du langage de programmation du modèle. Voici les valeurs pouvant être affectées comme langage de programmation :
+6. Après l’élément `ProjectType`, ajoutez un élément `ProjectSubType` et affectez au texte la valeur du langage de programmation du modèle. Voici les valeurs pouvant être affectées comme langage de programmation :
 
-    - CSharp
-    - VisualBasic
+   - CSharp
+   - VisualBasic
 
-    Exemple :
+     Exemple :
 
-    ```xml
-    <TemplateData>
-        ...
-        <ProjectType>Web</ProjectType>
-        <ProjectSubType>CSharp</ProjectSubType>
-        ...
-    </TemplateData>
-    ```
+     ```xml
+     <TemplateData>
+       ...
+       <ProjectType>Web</ProjectType>
+       <ProjectSubType>CSharp</ProjectSubType>
+       ...
+     </TemplateData>
+     ```
 
-1. Sélectionnez les fichiers présents dans votre modèle (en incluant le fichier *vstemplate*), cliquez avec le bouton droit sur la sélection, puis choisissez **Envoyer vers** > **Dossier compressé**. Les fichiers sont compressés dans un fichier *.zip*.
+7. Sélectionnez les fichiers présents dans votre modèle (en incluant le fichier *vstemplate*), cliquez avec le bouton droit sur la sélection, puis choisissez **Envoyer vers** > **Dossier compressé**. Les fichiers sont compressés dans un fichier *.zip*.
 
-1. Placez le fichier de modèle *.zip* dans le répertoire de modèles de projet Visual Studio. Par défaut, ce répertoire est *%USERPROFILE%\Documents\Visual Studio \<Version\>\ProjectTemplates*.
+8. Placez le fichier de modèle *.zip* dans le répertoire de modèles de projet Visual Studio. Par défaut, ce répertoire est *%USERPROFILE%\Documents\Visual Studio \<Version\>\ProjectTemplates*.
 
 ## <a name="example"></a>Exemple
 

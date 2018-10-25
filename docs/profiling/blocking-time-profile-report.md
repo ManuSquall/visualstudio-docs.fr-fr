@@ -14,21 +14,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d2b1c83a2954ca06385904f3a5e046f1c9ca50b
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 93288759ebcea6fd88777feeb1764ac41c57acc4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34264429"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865784"
 ---
 # <a name="blocking-time-profile-report"></a>Rapport du profil de temps de blocage
 Les rapports de profil rassemblent des données relatives au temps de blocage pour les piles d’appels qui sont spécifiques à chaque catégorie de blocage (par exemple « E/S » ou « Synchronisation »). Le rapport Anticipation répertorie les processus qui ont anticipé le processus en cours, ainsi que le nombre d’instances d’anticipations. Pour générer le rapport de profil de blocage, l’outil collecte des appels d’API bloquants et les rassemble au sein d’une arborescence de piles d’appels. Les données figurant dans ces rapports varient selon la plage horaire, les threads masqués et les deux filtres suivants qui peuvent être appliqués :  
   
--   Si l’option Uniquement mon code est activée, seuls les frames de pile contenant du code utilisateur sont présentés, ainsi que le premier niveau situé sous le code utilisateur.  
+- Si l’option Uniquement mon code est activée, seuls les frames de pile contenant du code utilisateur sont présentés, ainsi que le premier niveau situé sous le code utilisateur.  
   
--   Si la valeur Réduction du bruit est définie, les piles assemblées dont la fréquence est inférieure à celle spécifiée sont ignorées.  
+- Si la valeur Réduction du bruit est définie, les piles assemblées dont la fréquence est inférieure à celle spécifiée sont ignorées.  
   
- Développez une entrée de l’arborescence des appels pour rechercher la ligne de code où du temps de blocage a été passé. Pour localiser la ligne de code source d’une entrée, dans le menu contextuel, sélectionnez **Afficher la source**. Pour localiser la ligne de code ayant appelé l’entrée, dans le menu contextuel, sélectionnez **Afficher les sites d’appel**. Si un seul site d’appel est disponible, la commande se connecte à la ligne de code du site d’appel qui est mise en surbrillance. Si plusieurs sites d’appel sont disponibles, la commande ouvre une boîte de dialogue dans laquelle vous pouvez sélectionnez une entrée, puis cliquer sur le bouton **Atteindre la source** pour rechercher le site d’appel mis en surbrillance. Il est souvent très utile d’afficher le code source du site d’appel ayant le plus grand nombre d’instances et/ou la plus longue durée.  
+  Développez une entrée de l’arborescence des appels pour rechercher la ligne de code où du temps de blocage a été passé. Pour localiser la ligne de code source d’une entrée, dans le menu contextuel, sélectionnez **Afficher la source**. Pour localiser la ligne de code ayant appelé l’entrée, dans le menu contextuel, sélectionnez **Afficher les sites d’appel**. Si un seul site d’appel est disponible, la commande se connecte à la ligne de code du site d’appel qui est mise en surbrillance. Si plusieurs sites d’appel sont disponibles, la commande ouvre une boîte de dialogue dans laquelle vous pouvez sélectionnez une entrée, puis cliquer sur le bouton **Atteindre la source** pour rechercher le site d’appel mis en surbrillance. Il est souvent très utile d’afficher le code source du site d’appel ayant le plus grand nombre d’instances et/ou la plus longue durée.  
   
 ## <a name="blocking-time-report-columns"></a>Colonnes du rapport de temps de blocage  
  Le tableau suivant montre les colonnes de chaque rapport de temps de blocage.  

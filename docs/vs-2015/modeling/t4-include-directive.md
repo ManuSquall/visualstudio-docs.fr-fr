@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f0ad5f409b6f7da852abbf2872bf01ef678b7a5d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8de721b7f26152cd4e7f5df1ee7eb4d04770511
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233985"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835941"
 ---
 # <a name="t4-include-directive"></a>Directive d'inclusion T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,31 +30,31 @@ Dans un modèle de texte dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous
 <#@ include file="filePath" [once="true"] #>  
 ```  
   
--   `filePath` peut être absolu ou relatif au fichier modèle actuel.  
+- `filePath` peut être absolu ou relatif au fichier modèle actuel.  
   
-     De plus, les extensions [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] spécifiques peuvent spécifier leurs propres répertoires dans lesquels rechercher des fichiers Include. Par exemple, lorsque vous avez installé la visualisation et le SDK de modélisation (outils DSL), le dossier suivant est ajouté à la liste d’inclusion : `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.  
+   De plus, les extensions [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] spécifiques peuvent spécifier leurs propres répertoires dans lesquels rechercher des fichiers Include. Par exemple, lorsque vous avez installé la visualisation et le SDK de modélisation (outils DSL), le dossier suivant est ajouté à la liste d’inclusion : `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.  
   
-     Ces dossiers d’inclusion supplémentaires peuvent dépendre de l’extension du fichier d’inclusion. Par exemple, le dossier d’inclusion des outils DSL est uniquement accessible aux fichiers d’inclusion ayant l’extension de fichier `.tt`  
+   Ces dossiers d’inclusion supplémentaires peuvent dépendre de l’extension du fichier d’inclusion. Par exemple, le dossier d’inclusion des outils DSL est uniquement accessible aux fichiers d’inclusion ayant l’extension de fichier `.tt`  
   
--   `filePath` peut inclure des variables d'environnement délimitées par "%". Exemple :  
+- `filePath` peut inclure des variables d'environnement délimitées par "%". Exemple :  
   
-    ```  
-    <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>  
-    ```  
+  ```  
+  <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>  
+  ```  
   
--   Le nom d’un fichier inclus n’a pas à utiliser l’extension `".tt"`.  
+- Le nom d’un fichier inclus n’a pas à utiliser l’extension `".tt"`.  
   
-     Vous pouvez utiliser une autre extension telle que `".t4"` pour les fichiers inclus. C’est pourquoi, lorsque vous ajoutez un `.tt` fichier à un projet, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] définit automatiquement son **un outil personnalisé** propriété `TextTemplatingFileGenerator`. En général, vous ne souhaitez pas que les fichiers inclus soient transformés individuellement.  
+   Vous pouvez utiliser une autre extension telle que `".t4"` pour les fichiers inclus. C’est pourquoi, lorsque vous ajoutez un `.tt` fichier à un projet, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] définit automatiquement son **un outil personnalisé** propriété `TextTemplatingFileGenerator`. En général, vous ne souhaitez pas que les fichiers inclus soient transformés individuellement.  
   
-     D’un autre côté, vous devez savoir que dans certains cas, l’extension de fichier affecte les dossiers supplémentaires dans lesquels seront recherchés les fichiers Include. Cela peut être important lorsque vous possédez un fichier inclus qui contient d'autres fichiers.  
+   D’un autre côté, vous devez savoir que dans certains cas, l’extension de fichier affecte les dossiers supplémentaires dans lesquels seront recherchés les fichiers Include. Cela peut être important lorsque vous possédez un fichier inclus qui contient d'autres fichiers.  
   
--   Le contenu inclus est traité presque comme s'il faisait partie du modèle de texte d'inclusion. Toutefois, vous pouvez inclure un fichier qui contient un bloc de fonctionnalité de classe `<#+...#>` même si la directive `include` est suivie de texte ordinaire et de blocs de contrôle standard.  
+- Le contenu inclus est traité presque comme s'il faisait partie du modèle de texte d'inclusion. Toutefois, vous pouvez inclure un fichier qui contient un bloc de fonctionnalité de classe `<#+...#>` même si la directive `include` est suivie de texte ordinaire et de blocs de contrôle standard.  
   
--   Utilisez `once="true"` pour vous assurer qu'un modèle est inclus une seule fois, même s'il est appelé par plusieurs autres fichiers include.  
+- Utilisez `once="true"` pour vous assurer qu'un modèle est inclus une seule fois, même s'il est appelé par plusieurs autres fichiers include.  
   
-     Cela rend fonctionnalité facilement générer une bibliothèque d’extraits de code T4 réutilisables que vous pouvez inclure à sera sans se préoccuper de qui certains autres extrait de code a déjà incluses.  Par exemple, supposons que vous avez une bibliothèque d’extraits de code très précis qui traitent de traitement du modèle et de génération de c#.  À son tour, ils sont utilisés par certains utilitaires plus spécifiques aux tâches telles que la génération d’exceptions, qui vous permet ensuite à partir de n’importe quel modèle plus spécifiques à l’application. Si vous dessinez le graphique de dépendance, vous constatez que certains extraits de code sont inclus plusieurs fois. Mais le paramètre `once` empêche les inclusions suivantes.  
+   Cela rend fonctionnalité facilement générer une bibliothèque d’extraits de code T4 réutilisables que vous pouvez inclure à sera sans se préoccuper de qui certains autres extrait de code a déjà incluses.  Par exemple, supposons que vous avez une bibliothèque d’extraits de code très précis qui traitent de traitement du modèle et de génération de c#.  À son tour, ils sont utilisés par certains utilitaires plus spécifiques aux tâches telles que la génération d’exceptions, qui vous permet ensuite à partir de n’importe quel modèle plus spécifiques à l’application. Si vous dessinez le graphique de dépendance, vous constatez que certains extraits de code sont inclus plusieurs fois. Mais le paramètre `once` empêche les inclusions suivantes.  
   
- **MyTextTemplate.tt :**  
+  **MyTextTemplate.tt :**  
   
 ```  
 <#@ output extension=".txt" #>  

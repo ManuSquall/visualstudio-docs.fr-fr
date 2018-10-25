@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6e51fdad7d4eaaec306de396c4693d00f0b434b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 453b8b8ef4667b7f049fbd4b62dbdc582c0a84ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198859"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942879"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Déverrouillage de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,13 +58,13 @@ Vous pouvez évaluer Visual Studio gratuitement pendant 30 jours. Quand vous vou
   
  Ce message indique que, même si votre abonnement est peut-être toujours valide, le jeton de licence que Visual Studio utilise pour maintenir votre abonnement à jour n'a pas été actualisé et est devenu obsolète en raison de l'une des raisons suivantes :  
   
-1.  Vous n'avez pas utilisé Visual Studio ou n'avez établi aucune connexion Internet pendant une longue période.  
+1. Vous n'avez pas utilisé Visual Studio ou n'avez établi aucune connexion Internet pendant une longue période.  
   
-2.  Vous vous êtes déconnecté de Visual Studio.  
+2. Vous vous êtes déconnecté de Visual Studio.  
   
- Avant que le jeton de licence ne soit périmé, Visual Studio affiche un message d'avertissement vous invitant à entrer à nouveau vos informations d'identification.  
+   Avant que le jeton de licence ne soit périmé, Visual Studio affiche un message d'avertissement vous invitant à entrer à nouveau vos informations d'identification.  
   
- Si vous n'effectuez pas cette opération, le jeton entre en phase de péremption. Dans ce cas, la boîte de dialogue Paramètres du compte vous indique le nombre de jours avant que votre jeton n'arrive complètement à expiration. Une fois votre jeton arrivé à expiration, vous devez entrer à nouveau les informations d'identification de ce compte ou obtenir une licence avec une autre méthode mentionnée ci-dessus pour pouvoir continuer à utiliser Visual Studio.  
+   Si vous n'effectuez pas cette opération, le jeton entre en phase de péremption. Dans ce cas, la boîte de dialogue Paramètres du compte vous indique le nombre de jours avant que votre jeton n'arrive complètement à expiration. Une fois votre jeton arrivé à expiration, vous devez entrer à nouveau les informations d'identification de ce compte ou obtenir une licence avec une autre méthode mentionnée ci-dessus pour pouvoir continuer à utiliser Visual Studio.  
   
 > [!IMPORTANT]
 >  Si vous utilisez Visual Studio pendant de longues périodes dans des environnements ayant un accès limité ou nul à Internet, vous devez utiliser une clé de produit pour déverrouiller Visual Studio afin d'éviter toute interruption.  

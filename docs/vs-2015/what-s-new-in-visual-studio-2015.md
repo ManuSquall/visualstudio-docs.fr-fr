@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f97369709390d6a3e98ff8d995000d6edc574b13
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93cee87a7a68083955d8c09562a318b602427efe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226165"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828739"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Ce que&#39;s dans Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -108,17 +108,17 @@ Bienvenue dans Visual Studio 2015, une suite intégrée d'outils de productivit�
 ## <a name="connect-to-services"></a>Se connecter aux services  
  Visual Studio 2015 facilite de façon considérable la connexion de votre application à des services.  Le nouvel Assistant qui offre la fonctionnalité Ajouter un service connecté configure votre projet, ajoute la prise en charge de l'authentification appropriée, puis télécharge les paquets NuGet nécessaires pour vous aider à démarrer le codage de votre service rapidement et facilement. L'Assistant lié à la fonctionnalité Ajouter un service connecté s'intègre également au nouveau gestionnaire de comptes pour faciliter le travail avec plusieurs comptes d'utilisateur et abonnements. Dans Visual Studio 2015, la prise en charge des services suivants est fournie par défaut (vous devez disposer d'un compte) :  
   
-1.  Azure Mobile Services  
+1. Azure Mobile Services  
   
-2.  Azure Storage  
+2. Azure Storage  
   
-3.  Office 365 (messages électroniques, contacts, calendriers, fichiers, utilisateurs et groupes)  
+3. Office 365 (messages électroniques, contacts, calendriers, fichiers, utilisateurs et groupes)  
   
-4.  Salesforce  
+4. Salesforce  
   
- De nouveaux services seront ajoutés sur une base continue. Vous pouvez les découvrir en cliquant sur le lien « Rechercher de nouveaux services » dans l'Assistant.  
+   De nouveaux services seront ajoutés sur une base continue. Vous pouvez les découvrir en cliquant sur le lien « Rechercher de nouveaux services » dans l'Assistant.  
   
- ![Boîte de dialogue Services connectés ajouter](./ide/media/vs2015-addconnectedservicedialog.png "VS2015_AddConnectedServiceDialog")  
+   ![Boîte de dialogue Services connectés ajouter](./ide/media/vs2015-addconnectedservicedialog.png "VS2015_AddConnectedServiceDialog")  
   
 ## <a name="design-your-ui"></a>Concevoir votre interface utilisateur  
  L'expérience Blend de conception d'interfaces utilisateur XAML a été considérablement améliorée. Blend a été complètement repensé pour offrir une interface utilisateur plus intuitive, des fonctionnalités d'édition XAML plus puissantes, dont IntelliSense, et une meilleure intégration à Visual Studio. Pour plus d’informations, consultez [XAML de conception dans Visual Studio et Blend pour Visual Studio](./designers/designing-xaml-in-visual-studio.md).  
@@ -188,19 +188,19 @@ Bienvenue dans Visual Studio 2015, une suite intégrée d'outils de productivit�
   
  Dans Visual Studio Enterprise et Visual Studio Professional, vous pouvez désormais effectuer les opérations suivantes :  
   
--   Obtenir l'historique d'un fichier de code entier dans l'éditeur Visual Studio.  
+- Obtenir l'historique d'un fichier de code entier dans l'éditeur Visual Studio.  
   
-     ![CodeLens : obtenir des détails sur le fichier de code](./ide/media/codelensfilelevel.png "CodeLensFileLevel")  
+   ![CodeLens : obtenir des détails sur le fichier de code](./ide/media/codelensfilelevel.png "CodeLensFileLevel")  
   
--   Consulter un graphique indiquant les personnes qui ont modifié votre code. Cette fonctionnalité vous permet de découvrir des modèles dans les modifications effectuées par votre équipe, et d’en évaluer l’impact.  
+- Consulter un graphique indiquant les personnes qui ont modifié votre code. Cette fonctionnalité vous permet de découvrir des modèles dans les modifications effectuées par votre équipe, et d’en évaluer l’impact.  
   
-     ![CodeLens : voir l’historique des modifications du code sous forme de graphique](./ide/media/codelens.png "CodeLens")  
+   ![CodeLens : voir l’historique des modifications du code sous forme de graphique](./ide/media/codelens.png "CodeLens")  
   
--   Afficher rapidement la date de dernière modification de votre code.  
+- Afficher rapidement la date de dernière modification de votre code.  
   
--   Rechercher les modifications apportées dans d’autres branches qui affectent votre code.  
+- Rechercher les modifications apportées dans d’autres branches qui affectent votre code.  
   
- Consultez [CodeLens](./ide/find-code-changes-and-other-history-with-codelens.md).  
+  Consultez [CodeLens](./ide/find-code-changes-and-other-history-with-codelens.md).  
   
 ### <a name="design-and-modeling-tools-enterprise-edition-only"></a>Outils de conception et de modélisation (Enterprise Edition uniquement)  
  **Cartes de code et des graphiques de dépendance**  
@@ -213,35 +213,35 @@ Bienvenue dans Visual Studio 2015, une suite intégrée d'outils de productivit�
   
  Voici quelques autres améliorations qui ont été apportées :  
   
--   **Amélioration des diagrammes de haut en bas**. Pour les solutions Visual Studio de taille moyenne à grande, vous pouvez désormais utiliser un menu Architecture simplifié pour obtenir des cartes de code plus utiles pour votre solution. Les assemblys de votre solution sont regroupés par dossier de solution, ce qui vous permet de les voir dans le contexte et de tirer parti de l'effort que vous avez fourni en termes de structuration de la solution. Vous voyez immédiatement les projets et les références d'assemblys, puis les types de liens apparaissent. En outre, les assemblys externes à votre solution sont regroupés de manière plus compacte.  
+- **Amélioration des diagrammes de haut en bas**. Pour les solutions Visual Studio de taille moyenne à grande, vous pouvez désormais utiliser un menu Architecture simplifié pour obtenir des cartes de code plus utiles pour votre solution. Les assemblys de votre solution sont regroupés par dossier de solution, ce qui vous permet de les voir dans le contexte et de tirer parti de l'effort que vous avez fourni en termes de structuration de la solution. Vous voyez immédiatement les projets et les références d'assemblys, puis les types de liens apparaissent. En outre, les assemblys externes à votre solution sont regroupés de manière plus compacte.  
   
--   **Les projets de test ont un style différent et ils peuvent être filtrés**. Vous pouvez désormais identifier plus facilement et plus rapidement les projets de test sur la carte, car ils ont un style différent. Vous pouvez aussi les filtrer pour pouvoir vous concentrer sur le code actif de l'application.  
+- **Les projets de test ont un style différent et ils peuvent être filtrés**. Vous pouvez désormais identifier plus facilement et plus rapidement les projets de test sur la carte, car ils ont un style différent. Vous pouvez aussi les filtrer pour pouvoir vous concentrer sur le code actif de l'application.  
   
--   **Simplification des liens de dépendance externe**. Les liens de dépendance ne représentent plus l'héritage de System.Object, System.ValueType, System.Enum et System.Delegate, ce qui facilite l'identification des dépendances externes dans votre carte de code.  
+- **Simplification des liens de dépendance externe**. Les liens de dépendance ne représentent plus l'héritage de System.Object, System.ValueType, System.Enum et System.Delegate, ce qui facilite l'identification des dépendances externes dans votre carte de code.  
   
--   **L'exploration des liens de dépendance tiennent compte des filtres**. Vous obtenez un diagramme clair et utile qui, lorsqu'il est développé, vous permet de comprendre les contributions associées à un lien de dépendance. Le diagramme est moins encombré et il tient compte des options de filtrage des liens que vous avez sélectionnées.  
+- **L'exploration des liens de dépendance tiennent compte des filtres**. Vous obtenez un diagramme clair et utile qui, lorsqu'il est développé, vous permet de comprendre les contributions associées à un lien de dépendance. Le diagramme est moins encombré et il tient compte des options de filtrage des liens que vous avez sélectionnées.  
   
--   **Les éléments de code sont ajoutés à une carte de code avec leur contexte**. Étant donné que les diagrammes sont maintenant affichés avec leur contexte (jusqu'au dossier d'assembly et de solution sur lequel vous pouvez appliquer un filtre, si nécessaire), vous obtenez des diagrammes plus utiles quand vous faites glisser-déplacer des éléments de code à partir de l'Explorateur de solutions, de l'Affichage de classes ou de l'Explorateur d'objets, ou lors de la sélection d'éléments dans l'Explorateur de solutions et du choix de l'option Afficher sur la carte de code.  
+- **Les éléments de code sont ajoutés à une carte de code avec leur contexte**. Étant donné que les diagrammes sont maintenant affichés avec leur contexte (jusqu'au dossier d'assembly et de solution sur lequel vous pouvez appliquer un filtre, si nécessaire), vous obtenez des diagrammes plus utiles quand vous faites glisser-déplacer des éléments de code à partir de l'Explorateur de solutions, de l'Affichage de classes ou de l'Explorateur d'objets, ou lors de la sélection d'éléments dans l'Explorateur de solutions et du choix de l'option Afficher sur la carte de code.  
   
--   **Génération plus rapide de cartes de code réactives**. Les opérations de glisser-déplacer produisent un résultat immédiat et les liens entre les nœuds sont créés beaucoup plus rapidement, sans affecter les opérations ultérieures initiées par l'utilisateur, telles que le développement d'un nœud ou la demande de nœuds supplémentaires. Quand vous créez des cartes de code sans générer la solution, tous les cas extrêmes, par exemple lorsque les assemblys ne sont pas générés, sont désormais traités.  
+- **Génération plus rapide de cartes de code réactives**. Les opérations de glisser-déplacer produisent un résultat immédiat et les liens entre les nœuds sont créés beaucoup plus rapidement, sans affecter les opérations ultérieures initiées par l'utilisateur, telles que le développement d'un nœud ou la demande de nœuds supplémentaires. Quand vous créez des cartes de code sans générer la solution, tous les cas extrêmes, par exemple lorsque les assemblys ne sont pas générés, sont désormais traités.  
   
--   **Ignorer la régénération de votre solution.** Fournit de meilleures performances lors de la création et de la modification des diagrammes.  
+- **Ignorer la régénération de votre solution.** Fournit de meilleures performances lors de la création et de la modification des diagrammes.  
   
--   **Filtrage des groupes et des nœuds d'éléments de code**. Vous pouvez rapidement mettre en ordre vos cartes en affichant ou en masquant des éléments de code en fonction de leur catégorie, ainsi qu'en regroupant les éléments de code par dossier de solution, assembly, espace de noms, dossier de projet et type.  
+- **Filtrage des groupes et des nœuds d'éléments de code**. Vous pouvez rapidement mettre en ordre vos cartes en affichant ou en masquant des éléments de code en fonction de leur catégorie, ainsi qu'en regroupant les éléments de code par dossier de solution, assembly, espace de noms, dossier de projet et type.  
   
--   **Filtrage des relations pour faciliter la lecture des diagrammes**. Le filtrage des liens s'applique désormais également aux liens intergroupes, ce qui rend l'utilisation de la fenêtre de filtre moins gênante qu'elle ne l'était dans les versions précédentes.  
+- **Filtrage des relations pour faciliter la lecture des diagrammes**. Le filtrage des liens s'applique désormais également aux liens intergroupes, ce qui rend l'utilisation de la fenêtre de filtre moins gênante qu'elle ne l'était dans les versions précédentes.  
   
--   **Création de diagrammes à partir de l'Affichage de classes et de l'Explorateur d'objets**. Glissez-déplacez des fichiers et des assemblys sur une carte nouvelle ou existante à partir des fenêtres Affichage de classes et Explorateur d'objets.  
+- **Création de diagrammes à partir de l'Affichage de classes et de l'Explorateur d'objets**. Glissez-déplacez des fichiers et des assemblys sur une carte nouvelle ou existante à partir des fenêtres Affichage de classes et Explorateur d'objets.  
   
- Consultez [Map dependencies across your solutions](./modeling/map-dependencies-across-your-solutions.md).  
+  Consultez [Map dependencies across your solutions](./modeling/map-dependencies-across-your-solutions.md).  
   
- **Autres modifications de conception et de modélisation dans cette version :**  
+  **Autres modifications de conception et de modélisation dans cette version :**  
   
--   **Diagrammes de couche**. Mettez à jour ces diagrammes à l'aide de l'Affichage de classes et de l'Explorateur d'objets. Pour répondre aux exigences de conception de logiciel, utilisez des diagrammes de couche pour décrire les dépendances souhaitées pour votre logiciel. Assurez la cohérence du code avec cette conception en recherchant le code qui ne respecte pas ces contraintes et en validant le code ultérieur avec cette ligne de base.  
+- **Diagrammes de couche**. Mettez à jour ces diagrammes à l'aide de l'Affichage de classes et de l'Explorateur d'objets. Pour répondre aux exigences de conception de logiciel, utilisez des diagrammes de couche pour décrire les dépendances souhaitées pour votre logiciel. Assurez la cohérence du code avec cette conception en recherchant le code qui ne respecte pas ces contraintes et en validant le code ultérieur avec cette ligne de base.  
   
--   **Diagrammes UML**. Vous ne pouvez plus créer des diagrammes de classes UML et des diagrammes de séquence à partir du code. Pour créer ces diagrammes, vous devez à présent utiliser de nouveaux éléments UML.  
+- **Diagrammes UML**. Vous ne pouvez plus créer des diagrammes de classes UML et des diagrammes de séquence à partir du code. Pour créer ces diagrammes, vous devez à présent utiliser de nouveaux éléments UML.  
   
--   **Navigateur de l'architecture**. Vous ne pouvez plus utiliser le Navigateur de l'architecture pour créer des diagrammes. Mais vous pouvez toujours utiliser l'Explorateur de solutions.  
+- **Navigateur de l'architecture**. Vous ne pouvez plus utiliser le Navigateur de l'architecture pour créer des diagrammes. Mais vous pouvez toujours utiliser l'Explorateur de solutions.  
   
 ## <a name="visual-studio-extensibility-tools"></a>Outils d'extensibilité de Visual Studio  
  Il n'a jamais été aussi facile d'installer les outils d'extensibilité Visual Studio (Kit de développement logiciel Visual Studio et modèles), car ils sont désormais inclus en tant que composant facultatif lors de l'installation.  Les outils d'extensibilité permettent aux développeurs d'écrire des extensions pour personnaliser et ajouter des fonctionnalités à Visual Studio. Pour plus d'informations sur l'extensibilité de Visual Studio, consultez [Kit de développement logiciel Visual Studio](./extensibility/visual-studio-sdk.md)  

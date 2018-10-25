@@ -13,12 +13,12 @@ ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 44f9bff7fe1508094474b7067237e8c0b6620605
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca4fd95664d45c480557b8a00d503550327c60ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275468"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833029"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Polices et mise en forme pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -356,13 +356,13 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="title-case"></a>Première lettre en majuscule  
  Première lettre en majuscule est un style dans lequel les premières lettres de la plupart ou tous les mots dans une expression sont en majuscules. Dans Visual Studio, majuscule est utilisé pour le nombre d’éléments, y compris :  
   
--   **Info-bulles.** Exemple : « aperçu les éléments sélectionnés »  
+- **Info-bulles.** Exemple : « aperçu les éléments sélectionnés »  
   
--   **En-têtes de colonne.** Exemple : « réponse système »  
+- **En-têtes de colonne.** Exemple : « réponse système »  
   
--   **Éléments de menu.** Exemple : « enregistrer tout »  
+- **Éléments de menu.** Exemple : « enregistrer tout »  
   
- Lorsque vous utilisez la première lettre en majuscule, voici les instructions pour mettre en majuscule de mots et de les laisser en minuscules :  
+  Lorsque vous utilisez la première lettre en majuscule, voici les instructions pour mettre en majuscule de mots et de les laisser en minuscules :  
   
 |Majuscules|Commentaires et des exemples|  
 |---------------|---------------------------|  

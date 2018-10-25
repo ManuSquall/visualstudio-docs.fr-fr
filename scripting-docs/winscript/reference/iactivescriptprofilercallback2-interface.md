@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback2 (Interface) | Documents Microsoft
+title: Interface IActiveScriptProfilerCallback2 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,22 +14,22 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2dc9fcd8ca4afec0fb474c0f3a7317b608c7c9f6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6109e028dfc51a88314ce597a67847e95f7eaaed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24724639"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815700"
 ---
 # <a name="iactivescriptprofilercallback2-interface"></a>IActiveScriptProfilerCallback2, interface
-Fournit des méthodes qui sont utilisées par le moteur de script pour notifier un objet de profileur lorsque surviennent des événements du modèle DOM (Document Object). Cette interface est implémentée par l’objet de profileur.  
+Fournit des méthodes qui sont utilisées par le moteur de script pour signaler un objet de profileur qui se produisent les événements de modèle DOM (Document Object). Cette interface est implémentée par l’objet de profileur.  
   
 ## <a name="methods"></a>Méthodes  
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)|Notifie l’objet de profileur que le moteur de script va exécuter un appel de fonction DOM.|  
-|[IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)|Notifie le profileur à l’objet que le format du script du moteur terminé un appel de fonction DOM en cours d’exécution.|  
+|[IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)|Avertit l’objet de profileur que le moteur de script va exécuter un appel de fonction DOM.|  
+|[IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)|Notifie le profileur à l’objet du moteur de script terminé d’exécuter un appel de fonction DOM.|  
   
 ## <a name="remarks"></a>Notes  
  Le `IActiveScriptProfilerCallback2` interface apparu avec Internet Explorer 9.  
@@ -38,9 +38,9 @@ Fournit des méthodes qui sont utilisées par le moteur de script pour notifier 
   
 > [!NOTE]
 >  Pour ajouter la possibilité de démarrer et arrêter le profilage lors de l’exécution d’un script, appelez les méthodes suivantes. À l’aide de ces méthodes, vous pouvez obtenir la pile des appels complète si [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] est en cours d’exécution lorsque vous démarrez ou arrêtez le profilage.  
->   
->  -   Appelez [IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md) pour informer le profileur que vous avez démarré le profilage.  
-> -   Appelez [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md) pour informer le profileur que vous serez bientôt arrêter le profilage.  
+> 
+> - Appelez [IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md) pour informer le profileur que vous avez démarré le profilage.  
+>   -   Appelez [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md) pour informer le profileur que vous serez bientôt arrêter le profilage.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interfaces de profiler de script actif](../../winscript/reference/active-script-profiler-interfaces.md)

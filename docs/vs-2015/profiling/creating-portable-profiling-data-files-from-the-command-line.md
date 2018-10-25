@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f2a2979fdc836f0204dec580d49e86ae235d5c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 147d15133a2c5c682960e853defcf5965d04b1d3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254687"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868025"
 ---
 # <a name="creating-portable-profiling-data-files-from-the-command-line"></a>Création de fichiers de données de profilage portables à partir de la ligne de commande
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,19 +37,19 @@ Pour faciliter le partage des données de profilage, vous pouvez utiliser l’ou
   
 ### <a name="to-embed-the-symbols-for-a-profiling-run-into-a-profiling-data-vsp-file"></a>Pour incorporer les symboles d’une exécution de profilage dans un fichier de données de profilage (.vsp)  
   
--   Dans une fenêtre d’invite de commandes, tapez la commande suivante :  
+- Dans une fenêtre d’invite de commandes, tapez la commande suivante :  
   
-     \<Chemin>**VSPerfReport \<** Fichier VSP> **/PackSymbols**  
+   \<Chemin><strong>VSPerfReport \<</strong>Fichier VSP> **/PackSymbols**  
   
-     Par défaut, le fichier .vsps est nommé d’après le nom de base du fichier .vsp. Vous pouvez spécifier un autre nom avec l’option **Output**.  
+   Par défaut, le fichier .vsps est nommé d’après le nom de base du fichier .vsp. Vous pouvez spécifier un autre nom avec l’option **Output**.  
   
 ### <a name="to-create-a-summary-profiling-data-file"></a>Pour créer un fichier récapitulatif des données de profilage  
   
--   Dans une fenêtre d’invite de commandes, tapez la commande suivante :  
+- Dans une fenêtre d’invite de commandes, tapez la commande suivante :  
   
-     \<Chemin>**VSPerfReport \<** Fichier VSP> **/SummaryFile** [**/Output:**\<Nom de fichier>]  
+   \<Chemin><strong>VSPerfReport \<</strong>Fichier VSP> **/SummaryFile** [**/Output:**\<Nom de fichier>]  
   
-     Par défaut, le fichier .vsps est nommé d’après le nom de base du fichier .vsp. Vous pouvez spécifier un autre nom avec l’option **Output**.
+   Par défaut, le fichier .vsps est nommé d’après le nom de base du fichier .vsp. Vous pouvez spécifier un autre nom avec l’option **Output**.
 
 
 

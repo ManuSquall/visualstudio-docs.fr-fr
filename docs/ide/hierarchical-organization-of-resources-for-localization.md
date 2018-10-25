@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c46fbfe13e7e4c795703a53debedca20ae39c145
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: f21b4c6d53a70cb3d695c05e412b0e2f52a607bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752318"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874564"
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>Organisation hiérarchique des ressources pour la localisation
 
@@ -33,21 +33,21 @@ Dans Visual Studio, les ressources localisées (les données comme des chaînes 
 
 ## <a name="kinds-of-resources-in-the-hierarchy"></a>Types de ressources de la hiérarchie
 
--   En haut de la hiérarchie se trouvent les ressources alternatives de secours pour votre culture par défaut, par exemple l’anglais (« en »). Ce sont les seules ressources qui n’ont pas leur propre fichier : elles sont stockées dans l’assembly principal.
+- En haut de la hiérarchie se trouvent les ressources alternatives de secours pour votre culture par défaut, par exemple l’anglais (« en »). Ce sont les seules ressources qui n’ont pas leur propre fichier : elles sont stockées dans l’assembly principal.
 
--   Sous les ressources de secours se trouvent les ressources des cultures neutres. Une culture neutre est associée à une langue, mais pas à un pays/région. Par exemple, Français (« fr ») est une culture neutre. (Les ressources alternatives de secours sont également pour une culture neutre, mais une culture spéciale.)
+- Sous les ressources de secours se trouvent les ressources des cultures neutres. Une culture neutre est associée à une langue, mais pas à un pays/région. Par exemple, Français (« fr ») est une culture neutre. (Les ressources alternatives de secours sont également pour une culture neutre, mais une culture spéciale.)
 
--   Les ressources pour des cultures spécifiques se trouvent sous les ressources de culture neutre. Une culture spécifique est associée à une langue et à un pays/région. Par exemple, Français (Canada) (« fr-CA ») est une culture spécifique.
+- Les ressources pour des cultures spécifiques se trouvent sous les ressources de culture neutre. Une culture spécifique est associée à une langue et à un pays/région. Par exemple, Français (Canada) (« fr-CA ») est une culture spécifique.
 
- Si une application tente de charger une ressource localisée, comme une chaîne, et ne la trouve pas, elle remonte dans la hiérarchie jusqu’à trouver un fichier de ressources contenant la ressource demandée.
+Si une application tente de charger une ressource localisée, comme une chaîne, et ne la trouve pas, elle remonte dans la hiérarchie jusqu’à trouver un fichier de ressources contenant la ressource demandée.
 
- Le meilleur moyen de stocker vos ressources consiste à les généraliser autant que possible. Cela signifie stocker les chaînes, les images, etc. localisées dans des fichiers de ressources pour des cultures neutres au lieu de cultures spécifiques, chaque fois que c’est possible. Par exemple, si vous avez des ressources pour la culture Français (Belgique) (« fr-BE ») et que les ressources immédiatement au-dessus sont les ressources de secours en anglais, un problème peut se produire quand une personne utilise votre application sur un système configuré pour la culture Français (Canada). Le système recherche un assembly satellite pour « fr-CA », mais ne le trouve pas : il charge donc l’assembly principal contenant la ressource de secours, qui est « Anglais », au lieu de charger les ressources « Français ». L’image suivante illustre ce scénario non souhaitable.
+Le meilleur moyen de stocker vos ressources consiste à les généraliser autant que possible. Cela signifie stocker les chaînes, les images, etc. localisées dans des fichiers de ressources pour des cultures neutres au lieu de cultures spécifiques, chaque fois que c’est possible. Par exemple, si vous avez des ressources pour la culture Français (Belgique) (« fr-BE ») et que les ressources immédiatement au-dessus sont les ressources de secours en anglais, un problème peut se produire quand une personne utilise votre application sur un système configuré pour la culture Français (Canada). Le système recherche un assembly satellite pour « fr-CA », mais ne le trouve pas : il charge donc l’assembly principal contenant la ressource de secours, qui est « Anglais », au lieu de charger les ressources « Français ». L’image suivante illustre ce scénario non souhaitable.
 
- ![Ressources spécifiques uniquement](../ide/media/vbspecificresourcesonly.gif)
+![Ressources spécifiques uniquement](../ide/media/vbspecificresourcesonly.gif)
 
- Si vous suivez la pratique recommandée consistant à placer autant de ressources que possible dans un fichier de ressources neutres pour la culture « fr », l’utilisateur du Français (Canada) ne voit pas les ressources marquées pour la culture « fr-BE », mais il voit par contre les chaînes en français. La situation suivante illustre ce scénario préféré.
+Si vous suivez la pratique recommandée consistant à placer autant de ressources que possible dans un fichier de ressources neutres pour la culture « fr », l’utilisateur du Français (Canada) ne voit pas les ressources marquées pour la culture « fr-BE », mais il voit par contre les chaînes en français. La situation suivante illustre ce scénario préféré.
 
- ![Graphique NeutralSpecificResources](../ide/media/vbneutralspecificresources.gif)
+![Graphique NeutralSpecificResources](../ide/media/vbneutralspecificresources.gif)
 
 ## <a name="see-also"></a>Voir aussi
 

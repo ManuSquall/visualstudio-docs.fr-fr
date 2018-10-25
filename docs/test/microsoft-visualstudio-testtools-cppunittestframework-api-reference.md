@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 8309ee96b0948739124e0e23c4a57dd136f63362
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: b2225ec5db308b290e932cb9d29d1c50e32d4608
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280920"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820263"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Informations de référence sur l’API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
@@ -29,72 +29,73 @@ Les chemins des fichiers d’en-tête et de bibliothèque sont configurés autom
 ##  <a name="In_this_topic"></a> Dans cette rubrique
  [CppUnitTest.h](#cppUnitTest_h)
 
--   [Créer des classes et des méthodes de test](#create_test_classes_and_methods)
+- [Créer des classes et des méthodes de test](#create_test_classes_and_methods)
 
--   [Initialiser et nettoyer](#Initialize_and_cleanup)
+- [Initialiser et nettoyer](#Initialize_and_cleanup)
 
-    -   [Méthodes de test](#test_methods)
+  -   [Méthodes de test](#test_methods)
 
-    -   [Classes de test](#test_classes)
+  -   [Classes de test](#test_classes)
 
-    -   [Modules de test](#test_modules)
+  -   [Modules de test](#test_modules)
 
--   [Créer des attributs de test](#create_test_attributes)
+- [Créer des attributs de test](#create_test_attributes)
 
-    -   [Attributs de méthode de test](#test_method_attributes)
+  - [Attributs de méthode de test](#test_method_attributes)
 
-    -   [Attributs de classe de test](#test_class_attributes)
+  - [Attributs de classe de test](#test_class_attributes)
 
-    -   [Attributs de module de test](#test_module_attributes)
+  - [Attributs de module de test](#test_module_attributes)
 
-    -   [Attributs prédéfinis](#pre_defined_attributes)
+  - [Attributs prédéfinis](#pre_defined_attributes)
 
-     [CppUnitTestAssert.h](#cppUnitTestAssert_h)
+    [CppUnitTestAssert.h](#cppUnitTestAssert_h)
 
-    -   [Assertions générales](#general_asserts)
+  - [Assertions générales](#general_asserts)
 
-        -   [Sont égaux](#general_are_equal)
+    -   [Sont égaux](#general_are_equal)
 
-        -   [Ne sont pas égaux](#general_are_not_equal)
+    -   [Ne sont pas égaux](#general_are_not_equal)
 
-        -   [Sont identiques](#general_are_same)
+    -   [Sont identiques](#general_are_same)
 
-        -   [Ne sont pas identiques](#general_are_not_same)
+    -   [Ne sont pas identiques](#general_are_not_same)
 
-        -   [A une valeur Null](#general_is_null)
+    -   [A une valeur Null](#general_is_null)
 
-        -   [N’a pas une valeur Null](#general_is_not_null)
+    -   [N’a pas une valeur Null](#general_is_not_null)
 
-        -   [Est vrai](#general_is_True)
+    -   [Est vrai](#general_is_True)
 
-        -   [Est faux](#general_is_false)
+    -   [Est faux](#general_is_false)
 
-        -   [Échec](#general_Fail)
+    -   [Échec](#general_Fail)
 
-    -   [Assertions Windows Runtime](#winrt_asserts)
+  - [Assertions Windows Runtime](#winrt_asserts)
 
-        -   [Sont égaux](#winrt_are_equal)
+    -   [Sont égaux](#winrt_are_equal)
 
-        -   [Sont identiques](#winrt_are_same)
+    -   [Sont identiques](#winrt_are_same)
 
-        -   [Ne sont pas égaux](#winrt_are_not_equal)
+    -   [Ne sont pas égaux](#winrt_are_not_equal)
 
-        -   [Ne sont pas identiques](#winrt_are_not_same)
+    -   [Ne sont pas identiques](#winrt_are_not_same)
 
-        -   [A une valeur Null](#winrt_is_null)
+    -   [A une valeur Null](#winrt_is_null)
 
-        -   [N’a pas une valeur Null](#winrt_is_not_null)
+    -   [N’a pas une valeur Null](#winrt_is_not_null)
 
-    -   [Assertions d’exception](#exception_asserts)
+  - [Assertions d’exception](#exception_asserts)
 
-        -   [S’attendre à une exception](#expect_exception)
+    - [S’attendre à une exception](#expect_exception)
 
-         [CppUnitTestLogger.h](#cppunittestlogger_h)
+      [CppUnitTestLogger.h](#cppunittestlogger_h)
 
-        -   [Enregistreur d’événements](#logger)
+    - [Enregistreur d’événements](#logger)
 
-        -   [Écrire un message](#write_message)
-    -    [Exemple d’utilisation](#example)
+    - [Écrire un message](#write_message)
+
+  - [Exemple d’utilisation](#example)
 
 ##  <a name="cppUnitTest_h"></a> CppUnitTest.h
 
@@ -111,7 +112,6 @@ TEST_METHOD(methodName)
 {
     // test method body
 }
-
 ```
 
  Définit *methodName* en tant que méthode de test. `TEST_METHOD` doit être déclaré dans la portée de la classe de la méthode.
@@ -125,7 +125,6 @@ TEST_METHOD_INITIALIZE(methodName)
 {
     // method initialization code
 }
-
 ```
 
  Définit *methodName* en tant que méthode qui s’exécute avant l’exécution de chaque méthode de test. `TEST_METHOD_INITIALIZE` ne peut être défini qu’une seule fois dans une classe de test et doit être défini dans la classe de test.
@@ -135,7 +134,6 @@ TEST_METHOD_CLEANUP(methodName)
 {
     // test method cleanup  code
 }
-
 ```
 
  Définit *methodName* en tant que méthode qui s’exécute après l’exécution de chaque méthode de test. `TEST_METHOD_CLEANUP` ne peut être défini qu’une seule fois dans une classe de test et doit être défini dans la portée de la classe de test.

@@ -1,5 +1,5 @@
 ---
-title: Informations relatives au thread, vue - Données de conflit | Microsoft Docs
+title: Vue Détails relatifs au thread - Données de conflit | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 712fcfa369c4a324554bda38df671dab1a95a1f5
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: e832088c49366cee3cb2a4f45df7a1250171e7df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34477351"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849526"
 ---
 # <a name="thread-details-view---contention-data"></a>Informations relatives au thread, vue - Données de conflit
 La vue Détails du Thread présente un graphique chronologique des événements bloquants dans le thread sélectionné d’une exécution du profilage, qui ont été provoqués par des conflits sur les ressources. Un événement de blocage se produit quand le thread est forcé d’interrompre l’exécution, car un autre thread a verrouillé l’accès à une ressource.  
@@ -46,9 +46,9 @@ La vue Détails du Thread présente un graphique chronologique des événements 
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>Pour afficher ou modifier le code source d’une fonction dans la pile des appels  
   
--   Dans la fenêtre **Pile des appels**, cliquez sur le nom de la fonction.  
+- Dans la fenêtre **Pile des appels**, cliquez sur le nom de la fonction.  
   
- Le code source de la fonction doit faire partie du projet actif.  
+  Le code source de la fonction doit faire partie du projet actif.  
   
 #### <a name="to-view-the-contention-events-of-a-resource-in-all-threads-in-the-profiling-run"></a>Pour voir les événements de conflit d’une ressource dans tous les threads de l’exécution du profilage  
   

@@ -16,12 +16,12 @@ ms.assetid: 023e7671-cf65-419c-9bc1-3c4ee92aa436
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc981ffd7f2e4c9ece1e559dd6b588d29edb59dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 25ba131512c8c57e9ddda21526ef76177d4ca4a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303305"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839685"
 ---
 # <a name="using-the-text-manager-to-monitor-global-settings"></a>Avec le Gestionnaire de texte pour surveiller les paramètres globaux
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,19 +31,19 @@ Si vous implémentez un éditeur de base, vous devez surveiller les modification
 ## <a name="text-manager-functions"></a>Fonctions de gestionnaire de texte  
  Le Gestionnaire de texte déclenche des événements pour un certain nombre de paramètres, y compris les éléments suivants :  
   
--   Si une mémoire tampon est sous contrôle de code source  
+- Si une mémoire tampon est sous contrôle de code source  
   
--   Comment s’inscrire aux notifications de modification de fichier  
+- Comment s’inscrire aux notifications de modification de fichier  
   
--   Comment effectuer le suivi des vues sont associées à certaines mémoires tampons  
+- Comment effectuer le suivi des vues sont associées à certaines mémoires tampons  
   
--   Préférences de la colorisation de texte  
+- Préférences de la colorisation de texte  
   
--   Onglet par rapport aux préférences de l’espace  
+- Onglet par rapport aux préférences de l’espace  
   
- Les préférences sont uniques à un langage donné ne sont pas gérés par le Gestionnaire de texte. Ces paramètres doivent être gérés par chaque service de langage.  
+  Les préférences sont uniques à un langage donné ne sont pas gérés par le Gestionnaire de texte. Ces paramètres doivent être gérés par chaque service de langage.  
   
- Notification d’événement pour le Gestionnaire de texte est fournie par le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> interface. Implémentez cette interface sur votre client pour gérer des événements a déclenché le Gestionnaire de texte. Vous inscrire pour ces événements en utilisant le <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> interface sur le Gestionnaire de texte.  
+  Notification d’événement pour le Gestionnaire de texte est fournie par le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> interface. Implémentez cette interface sur votre client pour gérer des événements a déclenché le Gestionnaire de texte. Vous inscrire pour ces événements en utilisant le <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> interface sur le Gestionnaire de texte.  
   
 ## <a name="see-also"></a>Voir aussi  
  [À l’intérieur de l’éditeur principal](../extensibility/inside-the-core-editor.md)   

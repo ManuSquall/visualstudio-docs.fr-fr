@@ -24,39 +24,39 @@ caps.latest.revision: 84
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4aea0373c57f046b257ad51b102e5b2f1190bfbf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 724ddcc00b1f49eb1f96e67d6b6e269933cb9d66
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173717"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950485"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Valider du code avec des diagrammes de couche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour vous assurer que le code n'est pas en conflit avec sa conception, validez votre code avec des diagrammes de couche dans Visual Studio. Cela peut vous aider à :  
   
--   Rechercher des conflits entre des dépendances dans votre code et des dépendances sur le diagramme de couche.  
+- Rechercher des conflits entre des dépendances dans votre code et des dépendances sur le diagramme de couche.  
   
--   Rechercher des dépendances qui peuvent être affectées par les modifications proposées.  
+- Rechercher des dépendances qui peuvent être affectées par les modifications proposées.  
   
-     Par exemple, vous pouvez modifier le diagramme de couche pour afficher les modifications apportées à l'architecture potentielle, puis valider le code afin de consulter les dépendances concernées.  
+   Par exemple, vous pouvez modifier le diagramme de couche pour afficher les modifications apportées à l'architecture potentielle, puis valider le code afin de consulter les dépendances concernées.  
   
--   Refactoriser ou migrer le code vers une conception différente.  
+- Refactoriser ou migrer le code vers une conception différente.  
   
-     Rechercher le code ou les dépendances qui requièrent du travail lorsque vous déplacez le code vers une architecture différente.  
+   Rechercher le code ou les dépendances qui requièrent du travail lorsque vous déplacez le code vers une architecture différente.  
   
- **Spécifications**  
+  **Spécifications**  
   
--   Visual Studio  
+- Visual Studio  
   
--   Visual Studio sur votre serveur Team Foundation Build pour valider le code automatiquement avec Team Foundation Build  
+- Visual Studio sur votre serveur Team Foundation Build pour valider le code automatiquement avec Team Foundation Build  
   
--   Une solution qui inclut un projet de modélisation avec un diagramme de couche. Ce diagramme de couche doit être lié aux artefacts dans les projets Visual C# .NET ou Visual Basic .NET que vous souhaitez valider. Consultez [créer des diagrammes de couche à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md).  
+- Une solution qui inclut un projet de modélisation avec un diagramme de couche. Ce diagramme de couche doit être lié aux artefacts dans les projets Visual C# .NET ou Visual Basic .NET que vous souhaitez valider. Consultez [créer des diagrammes de couche à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md).  
   
- Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+  Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
- Vous pouvez valider manuellement le code depuis un diagramme de couche ouvert dans Visual Studio ou depuis une invite de commandes. Vous pouvez également valider le code automatiquement en exécutant des builds locales ou Team Foundation Build. Consultez [vidéo Channel 9 : conception et valider votre architecture à l’aide de diagrammes de couche](http://go.microsoft.com/fwlink/?LinkID=252073).  
+  Vous pouvez valider manuellement le code depuis un diagramme de couche ouvert dans Visual Studio ou depuis une invite de commandes. Vous pouvez également valider le code automatiquement en exécutant des builds locales ou Team Foundation Build. Consultez [vidéo Channel 9 : conception et valider votre architecture à l’aide de diagrammes de couche](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
 > [!IMPORTANT]
 >  Si vous souhaitez effectuer la validation de couche à l’aide de Team Foundation Build, vous devez aussi installer la même version de Visual Studio sur votre serveur de builds.  
@@ -108,41 +108,41 @@ Pour vous assurer que le code n'est pas en conflit avec sa conception, validez v
   
 #### <a name="to-validate-code-at-the-command-prompt"></a>Pour valider le code à l'invite de commandes  
   
-1.  Ouvrez l'invite de commandes [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+1. Ouvrez l'invite de commandes [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-2.  Choisissez l'une des valeurs suivantes :  
+2. Choisissez l'une des valeurs suivantes :  
   
-    -   Pour valider le code par rapport à un projet de modélisation spécifique dans la solution, exécutez [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] avec la propriété personnalisée ci-dessous.  
+   - Pour valider le code par rapport à un projet de modélisation spécifique dans la solution, exécutez [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] avec la propriété personnalisée ci-dessous.  
   
-        ```  
-        msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true  
-        ```  
+     ```  
+     msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true  
+     ```  
   
-         - ou  
+     - ou  
   
-         Accédez au dossier qui contient le fichier du projet de modélisation (.modelproj) et le diagramme de couche, puis exécutez [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] avec la propriété personnalisée suivante :  
+       Accédez au dossier qui contient le fichier du projet de modélisation (.modelproj) et le diagramme de couche, puis exécutez [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] avec la propriété personnalisée suivante :  
   
-        ```  
-        msbuild /p:ValidateArchitecture=true   
-        ```  
+     ```  
+     msbuild /p:ValidateArchitecture=true   
+     ```  
   
-    -   Pour valider le code par rapport à tous les projets de modélisation dans la solution, exécutez [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] avec la propriété personnalisée suivante :  
+   - Pour valider le code par rapport à tous les projets de modélisation dans la solution, exécutez [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] avec la propriété personnalisée suivante :  
   
-        ```  
-        msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true   
-        ```  
+     ```  
+     msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true   
+     ```  
   
-         - ou  
+     - ou  
   
-         Accédez au dossier de solution, qui doit contenir un projet de modélisation contenant un diagramme de couche, puis exécutez [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] avec la propriété personnalisée suivante :  
+       Accédez au dossier de solution, qui doit contenir un projet de modélisation contenant un diagramme de couche, puis exécutez [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] avec la propriété personnalisée suivante :  
   
-        ```  
-        msbuild /p:ValidateArchitecture=true  
-        ```  
+     ```  
+     msbuild /p:ValidateArchitecture=true  
+     ```  
   
      Toutes les erreurs qui ont lieu seront répertoriées. Pour plus d’informations sur [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], consultez [MSBuild](../msbuild/msbuild.md) et [tâche MSBuild](../msbuild/msbuild-task.md).  
   
- Pour plus d’informations sur les erreurs de validation, consultez [comprendre et résoudre les erreurs de validation de couche](#UnderstandingValidationErrors).  
+   Pour plus d’informations sur les erreurs de validation, consultez [comprendre et résoudre les erreurs de validation de couche](#UnderstandingValidationErrors).  
   
 ###  <a name="ManageErrors"></a> Gérer les erreurs de validation  
  Pendant le processus de développement, vous pouvez supprimer certains conflits signalés pendant la validation. Par exemple, vous pouvez supprimer des erreurs que vous êtes déjà en train de traiter qui ne sont pas pertinentes dans le cadre de votre scénario spécifique. Lorsque vous supprimez une erreur, il est conseillé d’entrer un élément de travail dans [!INCLUDE[esprfound](../includes/esprfound-md.md)].  
@@ -152,9 +152,9 @@ Pour vous assurer que le code n'est pas en conflit avec sa conception, validez v
   
 ##### <a name="to-create-a-work-item-for-a-validation-error"></a>Pour créer un élément de travail pour une erreur de validation  
   
--   Dans le **liste d’erreurs** fenêtre, cliquez sur l’erreur, pointez sur **créer un élément de travail**, puis cliquez sur le type d’élément de travail que vous souhaitez créer.  
+- Dans le **liste d’erreurs** fenêtre, cliquez sur l’erreur, pointez sur **créer un élément de travail**, puis cliquez sur le type d’élément de travail que vous souhaitez créer.  
   
- Utilisez ces tâches pour gérer les erreurs de validation dans le **liste d’erreurs** fenêtre :  
+  Utilisez ces tâches pour gérer les erreurs de validation dans le **liste d’erreurs** fenêtre :  
   
 |**To**|**Procédez comme suit**|  
 |------------|----------------------------|  
@@ -176,29 +176,29 @@ Pour vous assurer que le code n'est pas en conflit avec sa conception, validez v
   
  \- ou -  
   
-1.  Dans **l’Explorateur de solutions**, cliquez sur le projet de modélisation qui contient le diagramme de couche ou les diagrammes, puis cliquez sur **propriétés**.  
+1. Dans **l’Explorateur de solutions**, cliquez sur le projet de modélisation qui contient le diagramme de couche ou les diagrammes, puis cliquez sur **propriétés**.  
   
-2.  Dans le **propriétés** fenêtre, définissez le projet de modélisation **valider l’Architecture** propriété **True**.  
+2. Dans le **propriétés** fenêtre, définissez le projet de modélisation **valider l’Architecture** propriété **True**.  
   
-     Cela inclut le projet de modélisation dans le processus de validation.  
+    Cela inclut le projet de modélisation dans le processus de validation.  
   
-3.  Dans **l’Explorateur de solutions**, cliquez sur le fichier de diagramme (.layerdiagram) de couche que vous souhaitez utiliser pour la validation.  
+3. Dans **l’Explorateur de solutions**, cliquez sur le fichier de diagramme (.layerdiagram) de couche que vous souhaitez utiliser pour la validation.  
   
-4.  Dans le **propriétés** fenêtre, assurez-vous que le diagramme **Action de génération** propriété est définie sur **Validate**.  
+4. Dans le **propriétés** fenêtre, assurez-vous que le diagramme **Action de génération** propriété est définie sur **Validate**.  
   
-     Cela inclut le diagramme de couche dans le processus de validation.  
+    Cela inclut le diagramme de couche dans le processus de validation.  
   
- Pour gérer les erreurs dans la fenêtre liste d’erreurs, consultez [gérer les erreurs de Validation](#ManageErrors).  
+   Pour gérer les erreurs dans la fenêtre liste d’erreurs, consultez [gérer les erreurs de Validation](#ManageErrors).  
   
 #### <a name="to-validate-code-automatically-during-a-team-foundation-build"></a>Pour valider automatiquement le code au cours d’une build Team Foundation  
   
-1.  Dans **Team Explorer**, double-cliquez sur la définition de build, puis cliquez sur **processus**.  
+1. Dans **Team Explorer**, double-cliquez sur la définition de build, puis cliquez sur **processus**.  
   
-2.  Sous **paramètres du processus de génération**, développez **Compilation**et tapez la commande suivante dans le **Arguments MSBuild** paramètre :  
+2. Sous **paramètres du processus de génération**, développez **Compilation**et tapez la commande suivante dans le **Arguments MSBuild** paramètre :  
   
-     `/p:ValidateArchitecture=true`  
+    `/p:ValidateArchitecture=true`  
   
- Pour plus d’informations sur les erreurs de validation, consultez [comprendre et résoudre les erreurs de validation de couche](#UnderstandingValidationErrors). Pour plus d'informations sur [!INCLUDE[esprbuild](../includes/esprbuild-md.md)], consultez :  
+   Pour plus d’informations sur les erreurs de validation, consultez [comprendre et résoudre les erreurs de validation de couche](#UnderstandingValidationErrors). Pour plus d'informations sur [!INCLUDE[esprbuild](../includes/esprbuild-md.md)], consultez :  
   
 -   [Générer l’application](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
@@ -220,13 +220,13 @@ Pour vous assurer que le code n'est pas en conflit avec sa conception, validez v
 ##  <a name="UnderstandingValidationErrors"></a> Compréhension et résolution des erreurs de Validation de couche  
  Lorsque vous validez du code par rapport à un diagramme de couche, des erreurs de validation se produisent si le code est en conflit avec la conception. Par exemple, les conditions suivantes peuvent provoquer des erreurs de validation :  
   
--   Un artefact est assigné à une couche inappropriée. Dans ce cas, déplacez l'artefact.  
+- Un artefact est assigné à une couche inappropriée. Dans ce cas, déplacez l'artefact.  
   
--   Un artefact, tel qu'une classe, utilise une autre classe d'une manière qui génère un conflit avec votre architecture. Dans ce cas, refactorisez le code pour supprimer la dépendance.  
+- Un artefact, tel qu'une classe, utilise une autre classe d'une manière qui génère un conflit avec votre architecture. Dans ce cas, refactorisez le code pour supprimer la dépendance.  
   
- Pour résoudre ces erreurs, mettez à jour le code de façon à ce que la validation ne génère plus d'erreur. Vous pouvez effectuer cette tâche de façon itérative.  
+  Pour résoudre ces erreurs, mettez à jour le code de façon à ce que la validation ne génère plus d'erreur. Vous pouvez effectuer cette tâche de façon itérative.  
   
- La section suivante décrit la syntaxe utilisée lors de ces erreurs, explique la signification de ces erreurs, et suggère des opérations pour les résoudre ou les gérer.  
+  La section suivante décrit la syntaxe utilisée lors de ces erreurs, explique la signification de ces erreurs, et suggère des opérations pour les résoudre ou les gérer.  
   
 |**Syntaxe**|**Description**|  
 |----------------|---------------------|  

@@ -22,12 +22,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 1807efdefd387c4e4fa01c2acec0f7b32bbce6f8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 733eb98544d48716ec073605d68628ddeab7b794
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215915"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827582"
 ---
 # <a name="trusted-application-deployment-overview"></a>Vue d'ensemble du déploiement d'applications approuvées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,11 +57,11 @@ Cette rubrique offre une vue d’ensemble du déploiement d’applications [!INC
   
  Dans les grandes entreprises, l'éditeur et le système de déploiement sont souvent deux entités distinctes :  
   
--   L'éditeur est le groupe qui crée l'application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
+- L'éditeur est le groupe qui crée l'application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
   
--   Le système de déploiement est le groupe, en général le service informatique, qui distribue l'application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aux ordinateurs de bureau de l'entreprise.  
+- Le système de déploiement est le groupe, en général le service informatique, qui distribue l'application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aux ordinateurs de bureau de l'entreprise.  
   
- Vous devez suivre ces étapes pour tirer parti du déploiement d'applications approuvées :  
+  Vous devez suivre ces étapes pour tirer parti du déploiement d'applications approuvées :  
   
 1.  Obtenir un certificat pour l'éditeur.  
   

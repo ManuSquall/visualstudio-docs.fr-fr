@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c1203b962627071d757dc1876a534977c574a813
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82d90d6965558ba6d28753fb71b3b227a84467a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179489"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852854"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Propriétés de stockage calculées et personnalisées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,11 +93,11 @@ Toutes les propriétés de domaine dans un langage spécifique à un domaine (DS
   
  Cependant, la méthode Set peut également être appelée si l’utilisateur appelle l’annulation ou rétablissement, ou si une transaction est en cours de restauration. Lorsque <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> a la valeur true, votre méthode Set doit se comporter comme suit :  
   
--   Il ne doit pas apporter des modifications dans le magasin, tels que l’attribution de valeurs à d’autres propriétés de domaine. Le Gestionnaire d’annulation sera définir leurs valeurs.  
+- Il ne doit pas apporter des modifications dans le magasin, tels que l’attribution de valeurs à d’autres propriétés de domaine. Le Gestionnaire d’annulation sera définir leurs valeurs.  
   
--   Toutefois, il doit mettre à jour des ressources externes, telles que la base de données ou de contenu du fichier ou d’objets en dehors du magasin. Cela permet de garantir qu’ils sont conservés dans synchronism avec les valeurs dans le magasin.  
+- Toutefois, il doit mettre à jour des ressources externes, telles que la base de données ou de contenu du fichier ou d’objets en dehors du magasin. Cela permet de garantir qu’ils sont conservés dans synchronism avec les valeurs dans le magasin.  
   
- Exemple :  
+  Exemple :  
   
 ```  
 void SetAgeValue(int value)  

@@ -27,12 +27,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 222cd90f73611aa40980679795debf4cb5eb2c0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dab045b147b4ce929106c26befcae58c80b99239
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306889"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854323"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Général, Débogage, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,55 +139,55 @@ Le**Outils / Options / Débogage / général** page vous permet de définir les 
  **Utiliser le Mode de compatibilité managé**  
  Remplace le moteur de débogage par défaut par une version héritée pour activer les scénarios suivants :  
   
--   Vous utilisez un langage .NET Framework autre que C#, VB ou F# qui fournit son propre évaluateur d'expression (y compris C++/CLI).  
+- Vous utilisez un langage .NET Framework autre que C#, VB ou F# qui fournit son propre évaluateur d'expression (y compris C++/CLI).  
   
--   Vous souhaitez activer Modifier & Continuer pour les projets C++ pendant le débogage en mode mixte.  
+- Vous souhaitez activer Modifier & Continuer pour les projets C++ pendant le débogage en mode mixte.  
   
- Notez que le fait de choisir le mode de compatibilité managé désactive certaines fonctionnalités qui sont implémentées uniquement dans le moteur de débogage par défaut.  
+  Notez que le fait de choisir le mode de compatibilité managé désactive certaines fonctionnalités qui sont implémentées uniquement dans le moteur de débogage par défaut.  
   
- **Utiliser le Mode de compatibilité Native**  
- Quand cette option est sélectionnée, le débogueur utilise le débogueur natif Visual Studio 2010 au lieu du nouveau débogueur natif.  
+  **Utiliser le Mode de compatibilité Native**  
+  Quand cette option est sélectionnée, le débogueur utilise le débogueur natif Visual Studio 2010 au lieu du nouveau débogueur natif.  
   
- Vous devez utiliser cette option quand vous déboguez le code .NET C++, car le nouveau moteur de débogage ne prend pas en charge l’évaluation des expressions .NET C++. Toutefois, l’activation du mode de compatibilité natif désactive de nombreuses fonctionnalités qui dépendent de l’implémentation du débogueur actuel pour fonctionner. Par exemple, le moteur hérité ne dispose pas de nombreux visualiseurs pour les types intégrés tels que `std::string` dans les projets Visual Studio 2015.   Utilisez les projets Visual Studio 2013 pour une expérience de débogage optimale dans ces cas.  
+  Vous devez utiliser cette option quand vous déboguez le code .NET C++, car le nouveau moteur de débogage ne prend pas en charge l’évaluation des expressions .NET C++. Toutefois, l’activation du mode de compatibilité natif désactive de nombreuses fonctionnalités qui dépendent de l’implémentation du débogueur actuel pour fonctionner. Par exemple, le moteur hérité ne dispose pas de nombreux visualiseurs pour les types intégrés tels que `std::string` dans les projets Visual Studio 2015.   Utilisez les projets Visual Studio 2013 pour une expérience de débogage optimale dans ces cas.  
   
- **Utiliser les évaluateurs d’expression c# et VB hérités**  
- Le débogueur utilisera les évaluateurs d’expression Visual Studio 2013 C#/Visual Basic au lieu des évaluateurs d’expression Roslyn de Visual Studio 2015.  
+  **Utiliser les évaluateurs d’expression c# et VB hérités**  
+  Le débogueur utilisera les évaluateurs d’expression Visual Studio 2013 C#/Visual Basic au lieu des évaluateurs d’expression Roslyn de Visual Studio 2015.  
   
- **Avertir en cas d’utilisation de visualiseurs de débogueur personnalisés avec des processus potentiellement unsafe (managé uniquement)**  
- Visual Studio vous avertit quand vous utilisez un visualiseur de débogueur personnalisé qui exécute le code dans le processus de l’élément débogué, car il pourrait exécuter du code unsafe.  
+  **Avertir en cas d’utilisation de visualiseurs de débogueur personnalisés avec des processus potentiellement unsafe (managé uniquement)**  
+  Visual Studio vous avertit quand vous utilisez un visualiseur de débogueur personnalisé qui exécute le code dans le processus de l’élément débogué, car il pourrait exécuter du code unsafe.  
   
- **Activer l’allocateur de tas de débogage Windows (natif uniquement)**  
- Permet au tas de débogage Windows d’améliorer les diagnostics du tas. L’activation de cette option affecte les performances de débogage.  
+  **Activer l’allocateur de tas de débogage Windows (natif uniquement)**  
+  Permet au tas de débogage Windows d’améliorer les diagnostics du tas. L’activation de cette option affecte les performances de débogage.  
   
- **Activer les outils de débogage pour XAML**  
- Les fenêtres Arborescence d’éléments visuels en direct et Explorateur de propriétés en direct s’affichent quand vous démarrez le débogage (F5) d’un type de projet pris en charge. Pour plus d’informations, consultez [propriétés XAML inspecter pendant le débogage](../debugger/inspect-xaml-properties-while-debugging.md).  
+  **Activer les outils de débogage pour XAML**  
+  Les fenêtres Arborescence d’éléments visuels en direct et Explorateur de propriétés en direct s’affichent quand vous démarrez le débogage (F5) d’un type de projet pris en charge. Pour plus d’informations, consultez [propriétés XAML inspecter pendant le débogage](../debugger/inspect-xaml-properties-while-debugging.md).  
   
- **Afficher un aperçu des éléments sélectionnés dans l’arborescence d’éléments visuels en direct**  
- L’élément XAML dont le contexte est sélectionné est également sélectionné dans le **Live Visual Tree** fenêtre.  
+  **Afficher un aperçu des éléments sélectionnés dans l’arborescence d’éléments visuels en direct**  
+  L’élément XAML dont le contexte est sélectionné est également sélectionné dans le **Live Visual Tree** fenêtre.  
   
- **Afficher les outils d’exécution dans l’application**  
- Affiche le **Live Visual Tree** commandes dans une barre d’outils de la fenêtre principale de l’application XAML en cours de débogage. Cette option a été introduite dans Visual Studio 2015 Update 2.  
+  **Afficher les outils d’exécution dans l’application**  
+  Affiche le **Live Visual Tree** commandes dans une barre d’outils de la fenêtre principale de l’application XAML en cours de débogage. Cette option a été introduite dans Visual Studio 2015 Update 2.  
   
- **Activer les outils de Diagnostic pendant le débogage**  
- Le **outils de Diagnostic** fenêtre s’affiche lorsque vous déboguez. Pour plus d’informations, consultez [intégrés au débogueur de profilage](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
+  **Activer les outils de Diagnostic pendant le débogage**  
+  Le **outils de Diagnostic** fenêtre s’affiche lorsque vous déboguez. Pour plus d’informations, consultez [intégrés au débogueur de profilage](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
   
- **Afficher le PerfTip du temps écoulé durant le débogage**  
- La fenêtre de code affiche la durée calendaire d’un appel de méthode donné lors du débogage.  
+  **Afficher le PerfTip du temps écoulé durant le débogage**  
+  La fenêtre de code affiche la durée calendaire d’un appel de méthode donné lors du débogage.  
   
- **Activer Modifier et continuer**  
- Vous pouvez utiliser la fonctionnalité Modifier & Continuer pendant le débogage.  
+  **Activer Modifier et continuer**  
+  Vous pouvez utiliser la fonctionnalité Modifier & Continuer pendant le débogage.  
   
- **Activer Native Modifier & Continuer**  
- Vous pouvez utiliser la fonctionnalité Modifier & Continuer pendant le débogage du code C++ natif. Pour plus d’informations, consultez [Modifier & Continuer (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
+  **Activer Native Modifier & Continuer**  
+  Vous pouvez utiliser la fonctionnalité Modifier & Continuer pendant le débogage du code C++ natif. Pour plus d’informations, consultez [Modifier & Continuer (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
   
- **Appliquer les changements en continuant (natif uniquement)**  
- Visual Studio compile et applique automatiquement les modifications de code en attente apportées lors de la poursuite du processus après un arrêt. Si cette option n’est pas sélectionnée, vous pouvez choisir d’appliquer les modifications à l’aide de l’élément « Appliquer les modifications du code » dans le menu Déboguer.  
+  **Appliquer les changements en continuant (natif uniquement)**  
+  Visual Studio compile et applique automatiquement les modifications de code en attente apportées lors de la poursuite du processus après un arrêt. Si cette option n’est pas sélectionnée, vous pouvez choisir d’appliquer les modifications à l’aide de l’élément « Appliquer les modifications du code » dans le menu Déboguer.  
   
- **Signaler le code périmé (natif uniquement)**  
- Obtenez des avertissements concernant le code périmé.  
+  **Signaler le code périmé (natif uniquement)**  
+  Obtenez des avertissements concernant le code périmé.  
   
- **Autoriser la précompilation (natif uniquement)**  
- La précompilation est autorisée.  
+  **Autoriser la précompilation (natif uniquement)**  
+  La précompilation est autorisée.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md)

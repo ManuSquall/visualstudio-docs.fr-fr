@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 370bb8d9194ff442a3e8674a95b67f4eec595d60
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 0b2d44d0fa50a4d733f62845d54116cceb2f2016
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370755"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865347"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>Collecter des informations de diagnostic avec des paramètres de test
 
@@ -42,7 +42,7 @@ Pour exécuter vos tests unitaires, vos tests codés de l'interface utilisateur,
 Le tableau suivant répertorie les différentes façons de configurer les adaptateurs de données de diagnostic à utiliser avec les rôles d'ordinateurs locaux ou distants.
 
 |Adaptateur de données de diagnostic utilisé dans les paramètres de test|Tests manuels sur un ordinateur local|Tests automatisés|Tests manuels : collection de données à l'aide d'un ensemble de rôles et d'un environnement|Notes|
-|----------------------------------------------------------|-----------------------------------|---------------------|------------------------------------------------------------------------------|-----------|
+|-|-|-|-|-|
 |**Proxy client ASP.NET pour l’impact de test et IntelliTrace :** ce proxy permet de collecter des informations sur les appels HTTP d’un client à un serveur web pour les adaptateurs de données de diagnostic d’impact de test et IntelliTrace.|Oui|Oui|Oui|-   Utilisez ceci seulement quand les adaptateurs de données de diagnostic IntelliTrace ou d’impact de test sont sélectionnés pour un rôle client.|
 |**Profileur ASP.NET :** vous pouvez créer un paramètre de test incluant le profilage ASP.NET, qui collecte des données de performances relatives aux applications web ASP.NET.|Non|Oui (consultez les remarques)|Non|-   Cet adaptateur de données de diagnostic est pris en charge seulement lors de l’exécution de tests de charge à partir de Visual Studio.|
 |**Couverture du code :** vous pouvez créer un paramètre de test comprenant des informations de couverture du code, qui sont utilisées pour évaluer quelle proportion de votre code est couverte par les tests.|Non|Oui (consultez les remarques)|Non|-   Vous pouvez utiliser la couverture du code seulement quand vous exécutez un test automatisé à partir de Visual Studio ou *mstest.exe*, et seulement depuis l’ordinateur qui exécute le test. La collection distante n’est pas prise en charge.<br />-   La collecte des données de couverture du code ne fonctionne pas si le paramètre de test est également configuré pour collecter des informations IntelliTrace. **Remarque :** Cet adaptateur de données de diagnostic s’applique seulement aux paramètres de test Visual Studio. Il n’est pas utilisé pour les paramètres de test dans Microsoft Test Manager. En outre, cet adaptateur est compatible avec les projets de test Visual Studio 2010. **Remarque :** Pour des raisons de compatibilité, la couverture du code s’applique quand les tests automatisés sont exécutés à partir de Microsoft Test Manager ou sur un agent de test distant depuis Visual Studio en utilisant l’ancienne version de MSTest Runner.|

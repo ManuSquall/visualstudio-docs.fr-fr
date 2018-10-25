@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47ad898b353914949c74eae65c6e545b1c167ec9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c500f7a245ffd3a0dec175dd5f016cf1b2596fa4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748190"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821485"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Procédure pas à pas : développement basé d’abord sur les tests avec la fonctionnalité Générer à partir de l’utilisation
 
@@ -36,15 +36,15 @@ Cette rubrique montre comment utiliser la fonctionnalité [Générer à partir d
 
 ### <a name="create-a-windows-class-library-project-and-a-test-project"></a>Créer un projet de bibliothèque de classes Windows et un projet de test
 
-1.  Dans [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ou [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], créez un projet de **bibliothèque de classes Windows**. Nommez-le `GFUDemo_VB` ou `GFUDemo_CS`, selon le langage que vous utilisez.
+1. Dans [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ou [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], créez un projet de **bibliothèque de classes Windows**. Nommez-le `GFUDemo_VB` ou `GFUDemo_CS`, selon le langage que vous utilisez.
 
-2.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur l’icône de solution en haut, choisissez **Ajouter**, puis choisissez **Nouveau projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, choisissez **Tester**.
+2. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur l’icône de solution en haut, choisissez **Ajouter**, puis choisissez **Nouveau projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, choisissez **Tester**.
 
-3.  Dans le volet central, choisissez **Projet de test unitaire** et acceptez le nom par défaut `UnitTestProject1`. L’illustration suivante montre la boîte de dialogue quand elle apparaît dans [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], la boîte de dialogue a une apparence similaire.
+3. Dans le volet central, choisissez **Projet de test unitaire** et acceptez le nom par défaut `UnitTestProject1`. L’illustration suivante montre la boîte de dialogue quand elle apparaît dans [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], la boîte de dialogue a une apparence similaire.
 
-     ![Nouveau projet de test, boîte de dialogue ](../ide/media/newproject_test.png)
+    ![Nouveau projet de test, boîte de dialogue ](../ide/media/newproject_test.png)
 
-4.  Choisissez **OK** pour fermer la boîte de dialogue **Nouveau projet**.
+4. Choisissez **OK** pour fermer la boîte de dialogue **Nouveau projet**.
 
 ### <a name="add-a-reference-to-the-class-library-project"></a>Ajouter une référence au projet de bibliothèque de classes
 
@@ -58,20 +58,20 @@ Cette rubrique montre comment utiliser la fonctionnalité [Générer à partir d
 
 ### <a name="generate-a-new-class-from-a-unit-test"></a>Générer une nouvelle classe à partir d’un test unitaire
 
-1.  Le projet de test contient un fichier nommé *UnitTest1*. Double-cliquez sur ce fichier dans **l’Explorateur de solutions** pour l’ouvrir dans l’éditeur de code. Une classe de test et une méthode de test ont été générées.
+1. Le projet de test contient un fichier nommé *UnitTest1*. Double-cliquez sur ce fichier dans **l’Explorateur de solutions** pour l’ouvrir dans l’éditeur de code. Une classe de test et une méthode de test ont été générées.
 
-2.  Recherchez la déclaration de classe `UnitTest1` et renommez-la `AutomobileTest`.
+2. Recherchez la déclaration de classe `UnitTest1` et renommez-la `AutomobileTest`.
 
- > [!NOTE]
- >  IntelliSense offre désormais deux options pour la saisie semi-automatique des instructions IntelliSense : le *mode de saisie semi-automatique* et le *mode de suggestion*. Utilisez le mode de suggestion quand les classes et les membres sont utilisés avant d’être définis. Quand une fenêtre **IntelliSense** est ouverte, vous pouvez appuyer sur **Ctrl**+**Alt**+**Barre d’espace** pour basculer entre le mode de complétion et le mode de suggestion. Pour plus d’informations, consultez [Utiliser IntelliSense](../ide/using-intellisense.md). Le mode de suggestion sera utile lorsque vous taperez `Automobile` à l’étape suivante.
+   > [!NOTE]
+   >  IntelliSense offre désormais deux options pour la saisie semi-automatique des instructions IntelliSense : le *mode de saisie semi-automatique* et le *mode de suggestion*. Utilisez le mode de suggestion quand les classes et les membres sont utilisés avant d’être définis. Quand une fenêtre **IntelliSense** est ouverte, vous pouvez appuyer sur **Ctrl**+**Alt**+**Barre d’espace** pour basculer entre le mode de complétion et le mode de suggestion. Pour plus d’informations, consultez [Utiliser IntelliSense](../ide/using-intellisense.md). Le mode de suggestion sera utile lorsque vous taperez `Automobile` à l’étape suivante.
 
-3.  Recherchez la méthode `TestMethod1()` et renommez-la `DefaultAutomobileIsInitializedCorrectly()`. Dans cette méthode, créez une instance d’une classe nommée `Automobile`, comme illustré dans les captures d’écran suivantes. Une ligne ondulée s’affiche pour signaler une erreur de compilation. Une ampoule [Actions rapides](../ide/quick-actions.md) s’affiche dans la marge de gauche (dans C# uniquement), ou directement sous la ligne ondulée si vous pointez dessus.
+3. Recherchez la méthode `TestMethod1()` et renommez-la `DefaultAutomobileIsInitializedCorrectly()`. Dans cette méthode, créez une instance d’une classe nommée `Automobile`, comme illustré dans les captures d’écran suivantes. Une ligne ondulée s’affiche pour signaler une erreur de compilation. Une ampoule [Actions rapides](../ide/quick-actions.md) s’affiche dans la marge de gauche (dans C# uniquement), ou directement sous la ligne ondulée si vous pointez dessus.
 
-     ![Actions rapides en Visual Basic](../ide/media/genclass_underlinevb.png)
+    ![Actions rapides en Visual Basic](../ide/media/genclass_underlinevb.png)
 
-     ![Actions rapides en C&#35;](../ide/media/genclass_underline.png)
+    ![Actions rapides en C&#35;](../ide/media/genclass_underline.png)
 
-4.  Choisissez l’ampoule **Actions rapides** ou cliquez sur celle-ci. Un message d’erreur s’affiche, indiquant que le type `Automobile` n’est pas défini. Des solutions vous sont également proposées.
+4. Choisissez l’ampoule **Actions rapides** ou cliquez sur celle-ci. Un message d’erreur s’affiche, indiquant que le type `Automobile` n’est pas défini. Des solutions vous sont également proposées.
 
 5. Cliquez sur **Générer un nouveau type** pour ouvrir la boîte de dialogue **Générer un type**. Cette boîte de dialogue fournit des options, notamment pour générer le type dans un autre projet.
 
@@ -79,9 +79,9 @@ Cette rubrique montre comment utiliser la fonctionnalité [Générer à partir d
 
      ![Boîte de dialogue Générer un nouveau type](../ide/media/genotherdialog.png)
 
-6.  Cliquez sur **OK** pour fermer la boîte de dialogue et créer le fichier.
+7. Cliquez sur **OK** pour fermer la boîte de dialogue et créer le fichier.
 
-7.  Dans **l’Explorateur de solutions**, regardez sous le nœud du projet **GFUDemo_VB** ou **GFUDemo_CS** pour vérifier que le nouveau fichier *Automobile.vb* ou *Automobile.cs* s’y trouve. Dans l’éditeur de code, le focus est toujours dans `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`, ce qui vous permet de continuer à écrire votre test avec un minimum d’interruption.
+8. Dans **l’Explorateur de solutions**, regardez sous le nœud du projet **GFUDemo_VB** ou **GFUDemo_CS** pour vérifier que le nouveau fichier *Automobile.vb* ou *Automobile.cs* s’y trouve. Dans l’éditeur de code, le focus est toujours dans `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`, ce qui vous permet de continuer à écrire votre test avec un minimum d’interruption.
 
 ### <a name="generate-a-property-stub"></a>Générer un stub de propriété
 Supposez que la spécification de produit indique que la classe `Automobile` a deux propriétés publiques nommées `Model` et `TopSpeed`. Ces propriétés doivent être initialisées avec les valeurs par défaut `"Not specified"` et `-1` par le constructeur par défaut. Le test unitaire suivant vérifie que le constructeur par défaut affecte les valeurs par défaut correctes aux propriétés.

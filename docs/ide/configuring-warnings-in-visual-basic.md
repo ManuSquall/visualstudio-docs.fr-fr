@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa98e9b9b66f863915e120c2c31b0ab508c9929f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d8cb2cec8258813fa9c93c466afb607ce88acc7e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918980"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865960"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configurer les avertissements en Visual Basic
 
@@ -39,7 +39,7 @@ Le compilateur [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] inclut 
  L’option de ligne de commande **/warnaserror** du compilateur peut également être utilisée pour spécifier si les avertissements doivent être traités comme des erreurs. Vous pouvez ajouter une liste séparée par des virgules à cette option pour spécifier que les avertissements doivent être traités comme des erreurs ou des avertissements à l’aide des touches + et -. Le tableau suivant présente les options possibles.
 
 |Option de ligne de commande|Informations fournies|
-|--------------------------|---------------|
+| - |---------------|
 |`/warnaserror+`|Considérer tous les avertissements comme des erreurs|
 |`/warnsaserror`-|Ne considère pas les avertissements comme des erreurs. Il s'agit de la valeur par défaut.|
 |`/warnaserror+:<warning list` `>`|Considère certains avertissements comme des erreurs. Ces avertissements sont répertoriés par numéro d’erreur dans une liste séparée par des virgules.|
@@ -125,5 +125,5 @@ Le compilateur [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] inclut 
 - [Instruction Try...Catch...Finally](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)
 - [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)
 - [/warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)
-- [Page Compiler, Concepteur de projet (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
+- [Compiler, page du Concepteur de projets (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
 - [Avertissements du compilateur désactivés par défaut](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)

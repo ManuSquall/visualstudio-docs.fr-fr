@@ -12,22 +12,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c4f10b9bb564268f5aeee59d871fd44324097cc
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 76e0d7646645c7d86859de7f79ff22a46131c4a5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756674"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863761"
 ---
 # <a name="parallel-activity-designer"></a>Concepteur d'activités Parallel
 
-L'activité <xref:System.Activities.Statements.Parallel> exécute simultanément une collection d'activités enfants.
+L’activité <xref:System.Activities.Statements.Parallel> exécute simultanément une collection d’activités enfants.
 
 ## <a name="the-parallel-activity"></a>Activité parallèle
 
 L'activité <xref:System.Activities.Statements.Parallel> stocke ses activités enfants dans une collection <xref:System.Activities.Statements.Parallel.Branches%2A>. Utilisez l'activité <xref:System.Activities.Statements.Parallel> au lieu de l'activité <xref:System.Activities.Statements.Sequence> si quelques-unes des activités enfants peuvent devenir inactives.
 
-Le <xref:System.Activities.Statements.Parallel> activité possède un <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> propriété qui contient un utilisateur spécifié expression Visual Basic. L'activité <xref:System.Activities.Statements.Parallel> évalue cette propriété après l'exécution de chaque branche. Si elle a la valeur **True**, puis le <xref:System.Activities.Statements.Parallel> activité se termine sans exécuter les autres branches. Si le <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> ne correspond pas à **True**, puis le <xref:System.Activities.Statements.Parallel> activité se termine lorsque toutes ses activités enfants sont terminées.
+Le <xref:System.Activities.Statements.Parallel> activité possède un <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> propriété qui contient un utilisateur spécifié expression Visual Basic. L’activité <xref:System.Activities.Statements.Parallel> évalue cette propriété après l’exécution de chaque branche. Si elle a la valeur **True**, puis le <xref:System.Activities.Statements.Parallel> activité se termine sans exécuter les autres branches. Si le <xref:System.Activities.Statements.Parallel.CompletionCondition%2A> ne correspond pas à **True**, puis le <xref:System.Activities.Statements.Parallel> activité se termine lorsque toutes ses activités enfants sont terminées.
 
 ### <a name="using-the-parallel-activity-designer"></a>Utilisation du concepteur d'activités Parallel
 
@@ -42,13 +42,13 @@ Pour ajouter une activité à la <xref:System.Activities.Statements.Parallel.Bra
 Le tableau suivant répertorie les propriétés des activités parallèles et décrit comment elles sont utilisées dans le concepteur.
 
 |Nom de la propriété|Obligatoire|Utilisation|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Spécifie le nom d'affichage convivial du concepteur d'activités dans l'en-tête. La valeur par défaut est **parallèles**. La valeur peut être modifiée si vous le souhaitez dans le **propriétés** grille ou directement sur l’en-tête du Concepteur d’activité.|
 |<xref:System.Activities.Statements.Parallel.Branches%2A>|True|Contient la collection des activités enfants à exécuter.|
 |<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|Évaluée une fois qu’une branche est terminée. Si elle a la valeur **True**, puis planifiées branches en attente sont annulées. Si cette propriété n’est pas définie ou a la valeur **False**, l’activité se termine lorsque toutes ses activités enfants sont terminées. La valeur par défaut est **null**.|
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Séquence](../workflow-designer/sequence-activity-designer.md)
+- [Sequence](../workflow-designer/sequence-activity-designer.md)
 - [ParallelForEach\<T>](../workflow-designer/parallelforeach-t-activity-designer.md)
 - [Flux de contrôle](../workflow-designer/control-flow-activity-designers.md)

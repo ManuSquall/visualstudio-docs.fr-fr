@@ -15,25 +15,25 @@ ms.assetid: f69972d0-809d-40df-9da3-04738791391c
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bdadec54c5b28ae77d4905d2884bbee2d1f2a2ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ae5380f360ca1a18bcf0edafea762417084aa3d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298829"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817456"
 ---
 # <a name="operational-modes"></a>Modes de fonctionnement
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Il existe trois modes dans lesquels l’IDE peut fonctionner, comme suit :  
   
--   [Mode Création](#vsconoperationalmodesanchor1)  
+- [Mode Création](#vsconoperationalmodesanchor1)  
   
--   [Mode d’exécution](#vsconoperationalmodesanchor2)  
+- [Mode d’exécution](#vsconoperationalmodesanchor2)  
   
--   [Mode arrêt](#vsconoperationalmodesanchor3)  
+- [Mode arrêt](#vsconoperationalmodesanchor3)  
   
- Comment votre moteur de débogage personnalisé (dé) effectue la transition entre ces modes est une décision d’implémentation que vous devez être familiarisé avec les mécanismes de transition. Le DE peut ou ne peut pas implémenter directement ces modes. Ces modes sont vraiment package modes de débogage qui changent en fonction de l’action de l’utilisateur ou des événements à partir de l’Allemagne. Par exemple, la transition du mode d’exécution en mode arrêt est déclenchée par un événement d’arrêt à partir de l’Allemagne. La transition à partir de l’arrêt de l’exécuter en mode ou mode pas à pas est déclenchée par l’utilisateur qui effectue des opérations telles que l’étape ou Execute. Pour plus d’informations sur les transitions DE, consultez [contrôle d’exécution](../../extensibility/debugger/control-of-execution.md).  
+  Comment votre moteur de débogage personnalisé (dé) effectue la transition entre ces modes est une décision d’implémentation que vous devez être familiarisé avec les mécanismes de transition. Le DE peut ou ne peut pas implémenter directement ces modes. Ces modes sont vraiment package modes de débogage qui changent en fonction de l’action de l’utilisateur ou des événements à partir de l’Allemagne. Par exemple, la transition du mode d’exécution en mode arrêt est déclenchée par un événement d’arrêt à partir de l’Allemagne. La transition à partir de l’arrêt de l’exécuter en mode ou mode pas à pas est déclenchée par l’utilisateur qui effectue des opérations telles que l’étape ou Execute. Pour plus d’informations sur les transitions DE, consultez [contrôle d’exécution](../../extensibility/debugger/control-of-execution.md).  
   
 ##  <a name="vsconoperationalmodesanchor1"></a> Mode Création  
  Le mode Design est l’état nonrunning de débogage de Visual Studio, au cours de laquelle vous pouvez définir des fonctionnalités dans votre application de débogage.  

@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 50d677eec2a88f2470a7a329c4cf9e2b85f065da
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4b884afae90d477716c2041e468ceb0c64c5d41d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177355"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849656"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Modifier des tests codés de l’interface utilisateur à l’aide de l’éditeur de test codé de l’interface utilisateur
 
@@ -74,7 +74,7 @@ Dans l’**Explorateur de solutions**, ouvrez le menu contextuel pour *UIMap.uit
 
 Pour modifier les propriétés d'une action d'interface utilisateur, dans le volet **Action d'interface utilisateur** , développez la méthode de test qui contient une action d'interface utilisateur dont vous voulez modifier les propriétés, sélectionnez l'action d'interface utilisateur et modifiez les propriétés à l'aide de la fenêtre Propriétés.
 
-Par exemple, si un serveur est indisponible et qu’une action d’IU associée à votre navigateur web indique **Atteindre la page web « http://Contoso1/default.aspx »**, vous pouvez remplacer l’URL par `'http://Contoso2/default.aspx'`.
+Par exemple, si un serveur est indisponible et qu’une action d’IU associée à votre navigateur web indique **Atteindre la page web « <http://Contoso1/default.aspx> »**, vous pouvez remplacer l’URL par `'http://Contoso2/default.aspx'`.
 
 ![Propriétés des contrôles](../test/media/codeduitestcontrolprop.png)
 

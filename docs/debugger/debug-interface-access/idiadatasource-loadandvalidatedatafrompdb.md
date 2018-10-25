@@ -1,5 +1,5 @@
 ---
-title: IDiaDataSource::loadAndValidateDataFromPdb | Documents Microsoft
+title: IDiaDataSource::loadAndValidateDataFromPdb | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e298edac96b311e8e25e41698aaa3db539ec154
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 272b43f7e33ce495aabd53f33022bdeaf4b951fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460135"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948900"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
-S’ouvre et vérifie que le fichier de base de données (.pdb) de programme correspond à fourni les informations de signature et prépare le fichier .pdb comme source de données de débogage.  
+S’ouvre et vérifie que le fichier de base de données (.pdb) de programme correspond à des informations de signature fournies et prépare le fichier .pdb en tant qu’une source de données de débogage.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,13 +40,13 @@ HRESULT loadAndValidateDataFromPdb (
  [in] Le chemin d’accès au fichier .pdb.  
   
  `pcsig70`  
- [in] Signature GUID à vérifier par rapport à la signature du fichier .pdb. Fichiers .pdb uniquement [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] et versions ultérieures ont des signatures GUID.  
+ [in] Le GUID de signature à vérifier la signature du fichier .pdb. Fichiers .pdb uniquement [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] et versions ultérieures ont des signatures GUID.  
   
  `sig`  
- [in] La signature de 32 bits à vérifier par rapport à la signature du fichier .pdb.  
+ [in] La signature de 32 bits à vérifier par rapport à la signature de fichier .pdb.  
   
  `age`  
- [in] Valeur d’âge à vérifier. La durée de vie ne correspond pas nécessairement une valeur de temps connu, il est utilisé pour déterminer si un fichier .pdb est synchronisé avec un fichier .exe.  
+ [in] Valeur d’âge à vérifier. La durée de vie ne correspond pas nécessairement à n’importe quelle valeur de temps connu, il est utilisé pour déterminer si un fichier .pdb est désynchronisé avec un fichier .exe correspondant.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Le tableau suivant montre les valeurs de retournés possibles pour cette méthode.  
@@ -54,18 +54,18 @@ HRESULT loadAndValidateDataFromPdb (
 |Value|Description|  
 |-----------|-----------------|  
 |E_PDB_NOT_FOUND|Impossible d’ouvrir le fichier ou le fichier a un format non valide.|  
-|E_PDB_FORMAT|Vous avez tenté d’accéder à un fichier avec un format obsolète.|  
+|E_PDB_FORMAT|Essaie d’accéder à un fichier avec un format obsolète.|  
 |E_PDB_INVALID_SIG|Signature ne correspond pas.|  
 |E_PDB_INVALID_AGE|Âge ne correspond pas.|  
 |E_INVALIDARG|Paramètre non valide.|  
 |E_UNEXPECTED|La source de données a déjà été préparée.|  
   
 ## <a name="remarks"></a>Notes  
- Un fichier .pdb contient des valeurs de signature et âge. Ces valeurs sont répliqués dans le fichier .exe ou .dll correspondant au fichier .pdb. Avant de préparer la source de données, cette méthode vérifie la signature et l’âge du fichier .pdb nommé correspondent aux valeurs fournies.  
+ Un fichier .pdb contient des valeurs de signature et âge. Ces valeurs sont répliquées dans le fichier .exe ou .dll correspondant au fichier .pdb. Avant de préparer la source de données, cette méthode vérifie que le fichier .pdb nommé signature et l’âge correspondent aux valeurs fournies.  
   
  Pour charger un fichier .pdb sans validation, utilisez la [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) (méthode).  
   
- Pour obtenir l’accès pour le processus de chargement de données (via un mécanisme de rappel), utilisez la [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) (méthode).  
+ Pour obtenir l’accès pour le processus de chargement de données (via un mécanisme de rappel), utilisez le [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) (méthode).  
   
  Pour charger un fichier .pdb directement à partir de la mémoire, utilisez le [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md) (méthode).  
   

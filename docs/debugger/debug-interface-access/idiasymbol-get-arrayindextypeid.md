@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_arrayIndexTypeId | Documents Microsoft
+title: IDiaSymbol::get_arrayIndexTypeId | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 793e4479a848978a41991c217fcbca578b033495
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bc761032c3a64200057f5e793aca80b1684c0d20
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462884"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818651"
 ---
 # <a name="idiasymbolgetarrayindextypeid"></a>IDiaSymbol::get_arrayIndexTypeId
-Récupère l’identificateur de type tableau index du symbole.  
+Récupère l’identificateur de type des index de tableau du symbole.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,7 +34,7 @@ HRESULT get_arrayIndexTypeId (
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne l’ID de type tableau index du symbole.  
+ [out] Retourne l’ID de type des index de tableau du symbole.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
@@ -43,9 +43,9 @@ HRESULT get_arrayIndexTypeId (
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
 ## <a name="remarks"></a>Notes  
- L’identificateur est une valeur unique créée par le SDK DIA pour marquer tous les symboles de manière unique.  
+ L’identificateur est une valeur unique créée par le SDK DIA pour marquer tous les symboles comme étant unique.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
   
 |Spécification|Description|  
 |-----------------|-----------------|  

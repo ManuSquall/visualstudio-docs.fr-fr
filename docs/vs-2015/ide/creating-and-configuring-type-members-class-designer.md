@@ -35,12 +35,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9a133b452000753eb5b7dfba579c8954791196b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93a112fac274921fe2d1075e1a1b9178c408240c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228330"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827972"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Création et configuration de membres de type (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,11 +72,11 @@ Vous pouvez ajouter ces membres aux types dans un diagramme de classes et config
   
 #### <a name="to-open-the-class-details-window"></a>Pour ouvrir la fenêtre Détails de classe  
   
-1.  Cliquez avec le bouton droit sur une classe du diagramme pour afficher un menu contextuel.  
+1. Cliquez avec le bouton droit sur une classe du diagramme pour afficher un menu contextuel.  
   
-2.  Dans le menu contextuel, cliquez sur **Fenêtre Détails de classe**.  
+2. Dans le menu contextuel, cliquez sur **Fenêtre Détails de classe**.  
   
- - ou -  
+   - ou -  
   
 -   Pointez sur **Autres fenêtres** dans le menu Affichage, puis cliquez sur **Détails de classe**.  
   
@@ -194,31 +194,31 @@ Vous pouvez ajouter ces membres aux types dans un diagramme de classes et config
   
  Les lignes de paramètres contiennent les éléments suivants :  
   
--   **Name**  
+- **Name**  
   
-     La colonne **Nom** d’une ligne de paramètre affiche le nom du paramètre. Ce nom est également affiché dans la propriété **Nom** de la fenêtre Propriétés. Vous pouvez utiliser cette cellule pour modifier le nom d'un paramètre ayant les autorisations en lecture-écriture.  
+   La colonne **Nom** d’une ligne de paramètre affiche le nom du paramètre. Ce nom est également affiché dans la propriété **Nom** de la fenêtre Propriétés. Vous pouvez utiliser cette cellule pour modifier le nom d'un paramètre ayant les autorisations en lecture-écriture.  
   
-     Le fait de pointer sur le nom du paramètre affiche celui-ci si la colonne **Nom** est trop étroite pour afficher la totalité du nom.  
+   Le fait de pointer sur le nom du paramètre affiche celui-ci si la colonne **Nom** est trop étroite pour afficher la totalité du nom.  
   
--   **Type**  
+- **Type**  
   
-     La cellule **Type de paramètre** utilise la technologie Intellisense, qui permet de choisir au sein de la liste de tous les types disponibles du projet en cours ou des projets référencés.  
+   La cellule **Type de paramètre** utilise la technologie Intellisense, qui permet de choisir au sein de la liste de tous les types disponibles du projet en cours ou des projets référencés.  
   
--   **Modificateur**  
+- **Modificateur**  
   
-     La cellule **Modificateur** d’une ligne de paramètre accepte le nouveau modificateur du paramètre et l’affiche. Pour entrer un nouveau modificateur de paramètre, utilisez la zone de liste déroulante pour faire votre choix : **Aucun**, **ref**, **out** ou **params** dans C#, et **ByVal**, **ByRef** ou **ParamArray** dans Visual Basic.  
+   La cellule **Modificateur** d’une ligne de paramètre accepte le nouveau modificateur du paramètre et l’affiche. Pour entrer un nouveau modificateur de paramètre, utilisez la zone de liste déroulante pour faire votre choix : **Aucun**, **ref**, **out** ou **params** dans C#, et **ByVal**, **ByRef** ou **ParamArray** dans Visual Basic.  
   
--   **Résumé**  
+- **Résumé**  
   
-     La cellule **Résumé** d’une ligne de paramètre permet d’entrer des commentaires de code qui s’affichent dans IntelliSense lors de la saisie du paramètre dans l’éditeur de code.  
+   La cellule **Résumé** d’une ligne de paramètre permet d’entrer des commentaires de code qui s’affichent dans IntelliSense lors de la saisie du paramètre dans l’éditeur de code.  
   
--   **\<ajouter un paramètre>**  
+- **\<ajouter un paramètre>**  
   
-     La dernière ligne de paramètre d’un membre contient le texte **<add parameter>** dans la cellule**Nom**. Cliquez sur cette cellule pour créer un nouveau paramètre. Pour plus d’informations, consultez [Pour ajouter un paramètre à une méthode](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod).  
+   La dernière ligne de paramètre d’un membre contient le texte **<add parameter>** dans la cellule**Nom**. Cliquez sur cette cellule pour créer un nouveau paramètre. Pour plus d’informations, consultez [Pour ajouter un paramètre à une méthode](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod).  
   
- **Propriétés des paramètres dans la fenêtre Propriétés**  
+  **Propriétés des paramètres dans la fenêtre Propriétés**  
   
- La fenêtre Propriétés affiche les mêmes propriétés de paramètre que celles affichées dans la fenêtre Détails de classe : **Nom**, **Type**, **Modificateur**, **Résumé**, ainsi que la propriété **Valeur par défaut facultative**. La modification d'une propriété dans un emplacement met à jour la valeur de la propriété de manière globale, y compris l'affichage de sa valeur dans l'autre emplacement.  
+  La fenêtre Propriétés affiche les mêmes propriétés de paramètre que celles affichées dans la fenêtre Détails de classe : **Nom**, **Type**, **Modificateur**, **Résumé**, ainsi que la propriété **Valeur par défaut facultative**. La modification d'une propriété dans un emplacement met à jour la valeur de la propriété de manière globale, y compris l'affichage de sa valeur dans l'autre emplacement.  
   
 > [!NOTE]
 >  Pour ajouter un paramètre à un délégué, consultez [Création de membres](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
@@ -268,62 +268,62 @@ Vous pouvez ajouter ces membres aux types dans un diagramme de classes et config
   
  Toutes les cellules de la fenêtre Détails de classe sont modifiables, à quelques exceptions près :  
   
--   Le type est en lecture seule quand, par exemple, il réside dans un assembly référencé (consultez [Affichage d’informations en lecture seule (Concepteur de classes)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)). Lorsque vous sélectionnez la forme dans le Concepteur de classes, la fenêtre Détails de classe affiche ses détails en lecture seule.  
+- Le type est en lecture seule quand, par exemple, il réside dans un assembly référencé (consultez [Affichage d’informations en lecture seule (Concepteur de classes)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)). Lorsque vous sélectionnez la forme dans le Concepteur de classes, la fenêtre Détails de classe affiche ses détails en lecture seule.  
   
--   Pour les indexeurs, le nom est en lecture seule et le reste (type, modificateur, résumé) est modifiable.  
+- Pour les indexeurs, le nom est en lecture seule et le reste (type, modificateur, résumé) est modifiable.  
   
--   Tous les génériques ont des paramètres en lecture seule dans la fenêtre Détails de classe. Pour modifier un paramètre générique, modifiez son code source.  
+- Tous les génériques ont des paramètres en lecture seule dans la fenêtre Détails de classe. Pour modifier un paramètre générique, modifiez son code source.  
   
--   Le nom du paramètre de type qui est défini sur un type générique est en lecture seule.  
+- Le nom du paramètre de type qui est défini sur un type générique est en lecture seule.  
   
--   Lorsque le code d'un type est rompu (non analysable), la fenêtre Détails de classe affiche le contenu du type en lecture seule.  
+- Lorsque le code d'un type est rompu (non analysable), la fenêtre Détails de classe affiche le contenu du type en lecture seule.  
   
- **Fenêtre Détails de classe et code source**  
+  **Fenêtre Détails de classe et code source**  
   
--   Vous pouvez consulter le code source en cliquant avec le bouton droit sur une forme de la fenêtre Détails de classe (ou du Concepteur de classes), puis en cliquant sur Afficher le code. Le fichier correspondant s'ouvre et le code source défile jusqu'à l'élément sélectionné.  
+- Vous pouvez consulter le code source en cliquant avec le bouton droit sur une forme de la fenêtre Détails de classe (ou du Concepteur de classes), puis en cliquant sur Afficher le code. Le fichier correspondant s'ouvre et le code source défile jusqu'à l'élément sélectionné.  
   
--   La modification du code source est immédiatement répercutée dans l'affichage des informations de signature dans le Concepteur de classes ou dans la fenêtre Détails de classe. Si la fenêtre Détails de classe est fermée à ce moment-là, les nouvelles informations ne seront visibles qu'à la prochaine ouverture.  
+- La modification du code source est immédiatement répercutée dans l'affichage des informations de signature dans le Concepteur de classes ou dans la fenêtre Détails de classe. Si la fenêtre Détails de classe est fermée à ce moment-là, les nouvelles informations ne seront visibles qu'à la prochaine ouverture.  
   
--   Lorsque le code d'un type est rompu (non analysable), la fenêtre Détails de classe affiche le contenu du type en lecture seule.  
+- Lorsque le code d'un type est rompu (non analysable), la fenêtre Détails de classe affiche le contenu du type en lecture seule.  
   
- **Utilisation du Presse-papiers dans la fenêtre Détails de classe**  
+  **Utilisation du Presse-papiers dans la fenêtre Détails de classe**  
   
- Vous pouvez copier ou couper des champs ou des lignes dans la fenêtre Détails de classe et les coller dans un autre type. Vous ne pouvez couper une ligne que si elle n'est pas en lecture seule. Lorsque vous collez la ligne, la fenêtre Détails de classe assigne un nouveau nom (dérivé du nom de la ligne copiée) afin d'éviter tout conflit.  
+  Vous pouvez copier ou couper des champs ou des lignes dans la fenêtre Détails de classe et les coller dans un autre type. Vous ne pouvez couper une ligne que si elle n'est pas en lecture seule. Lorsque vous collez la ligne, la fenêtre Détails de classe assigne un nouveau nom (dérivé du nom de la ligne copiée) afin d'éviter tout conflit.  
   
 ##  <a name="ReadOnlyInfo"></a> Affichage d’informations en lecture seule  
  Le Concepteur de classes et la fenêtre Détails de classe peuvent afficher les types (et les membres de types) des éléments suivants :  
   
--   projet contenant un diagramme de classes  
+- projet contenant un diagramme de classes  
   
--   projet référencé d'un projet contenant un diagramme de classes  
+- projet référencé d'un projet contenant un diagramme de classes  
   
--   assembly référencé d'un projet contenant un diagramme de classes  
+- assembly référencé d'un projet contenant un diagramme de classes  
   
- Dans les deux derniers cas, l'entité référencée (un type ou un membre) est en lecture seule dans le diagramme de classes qui la représente.  
+  Dans les deux derniers cas, l'entité référencée (un type ou un membre) est en lecture seule dans le diagramme de classes qui la représente.  
   
- Tout ou partie (certains fichiers, par exemple) d'un projet peut être en lecture seule. Les cas les plus communs où un projet ou l'un de ses fichiers est en lecture seule se produisent quand le projet ou le fichier est sous contrôle du code source (et n'a pas été extrait), qu'il existe dans un assembly externe ou que le système d'exploitation considère les fichiers comme étant en lecture seule.  
+  Tout ou partie (certains fichiers, par exemple) d'un projet peut être en lecture seule. Les cas les plus communs où un projet ou l'un de ses fichiers est en lecture seule se produisent quand le projet ou le fichier est sous contrôle du code source (et n'a pas été extrait), qu'il existe dans un assembly externe ou que le système d'exploitation considère les fichiers comme étant en lecture seule.  
   
- **Contrôle du code source**  
+  **Contrôle du code source**  
   
- Parce qu'un diagramme de classes est enregistré en tant que fichier dans un projet, vous devez extraire le projet pour sauvegarder toutes les modifications effectuées dans le Concepteur de classes ou dans la fenêtre Détails de classe.  
+  Parce qu'un diagramme de classes est enregistré en tant que fichier dans un projet, vous devez extraire le projet pour sauvegarder toutes les modifications effectuées dans le Concepteur de classes ou dans la fenêtre Détails de classe.  
   
- **Projets en lecture seule**  
+  **Projets en lecture seule**  
   
- Le projet peut être en lecture seule pour une autre raison que le contrôle du code source. La fermeture du projet affiche une boîte de dialogue qui demande si vous souhaitez remplacer le fichier projet, ignorer les modifications (aucun enregistrement) ou annuler l'opération de fermeture. Si vous faites le choix du remplacement, les fichiers projet sont remplacés et rendus accessibles en lecture-écriture. Le nouveau fichier du diagramme de classes est ajouté.  
+  Le projet peut être en lecture seule pour une autre raison que le contrôle du code source. La fermeture du projet affiche une boîte de dialogue qui demande si vous souhaitez remplacer le fichier projet, ignorer les modifications (aucun enregistrement) ou annuler l'opération de fermeture. Si vous faites le choix du remplacement, les fichiers projet sont remplacés et rendus accessibles en lecture-écriture. Le nouveau fichier du diagramme de classes est ajouté.  
   
- **Types en lecture seule**  
+  **Types en lecture seule**  
   
- Si vous essayez d’enregistrer un projet contenant un type dont le fichier de code source est en lecture seule, la boîte de dialogue **Enregistrement d’un fichier accessible en lecture seule** qui apparaît vous donne le choix entre enregistrer le fichier sous un nouveau nom (ou à un nouvel emplacement) ou remplacer le fichier en lecture seule. Si vous remplacez le fichier, la nouvelle copie n'est plus en lecture seule.  
+  Si vous essayez d’enregistrer un projet contenant un type dont le fichier de code source est en lecture seule, la boîte de dialogue **Enregistrement d’un fichier accessible en lecture seule** qui apparaît vous donne le choix entre enregistrer le fichier sous un nouveau nom (ou à un nouvel emplacement) ou remplacer le fichier en lecture seule. Si vous remplacez le fichier, la nouvelle copie n'est plus en lecture seule.  
   
- Si un fichier de code contient une erreur de syntaxe, les formes dédiées à l'affichage du code de ce fichier restent en lecture seule tant que l'erreur de syntaxe n'est pas résolue. Les formes affichent alors le texte en rouge et une icône de couleur rouge, accompagnée d'une info-bulle dont le texte est le suivant : « Le fichier de code source contient une erreur d'analyse. »  
+  Si un fichier de code contient une erreur de syntaxe, les formes dédiées à l'affichage du code de ce fichier restent en lecture seule tant que l'erreur de syntaxe n'est pas résolue. Les formes affichent alors le texte en rouge et une icône de couleur rouge, accompagnée d'une info-bulle dont le texte est le suivant : « Le fichier de code source contient une erreur d'analyse. »  
   
- Un type référencé (comme un type .NET Framework), qui existe sous un autre nœud de projet ou sous un nœud d'assembly référencé, est signalé sur l'aire de conception du Concepteur de classes comme étant en lecture seule. Un type local, qui existe dans le projet que vous a ouvert, est en lecture-écriture, et sa forme sur l'aire de conception du Concepteur de classes est indiquée comme telle.  
+  Un type référencé (comme un type .NET Framework), qui existe sous un autre nœud de projet ou sous un nœud d'assembly référencé, est signalé sur l'aire de conception du Concepteur de classes comme étant en lecture seule. Un type local, qui existe dans le projet que vous a ouvert, est en lecture-écriture, et sa forme sur l'aire de conception du Concepteur de classes est indiquée comme telle.  
   
- Les indexeurs sont en lecture-écriture dans le code et dans la fenêtre Détails de classe, mais le nom d'indexeur est en lecture seule.  
+  Les indexeurs sont en lecture-écriture dans le code et dans la fenêtre Détails de classe, mais le nom d'indexeur est en lecture seule.  
   
- Vous ne pouvez pas modifier de méthodes partielles à l'aide du Concepteur de classes ou de la fenêtre Détails de classe ; pour réaliser cette opération, vous devez utiliser l'éditeur de code.  
+  Vous ne pouvez pas modifier de méthodes partielles à l'aide du Concepteur de classes ou de la fenêtre Détails de classe ; pour réaliser cette opération, vous devez utiliser l'éditeur de code.  
   
- Vous ne pouvez pas modifier de code C++ natif à l'aide du Concepteur de classes ou de la fenêtre Détails de Classe ; pour réaliser cette opération, vous devez utiliser l'éditeur de code.  
+  Vous ne pouvez pas modifier de code C++ natif à l'aide du Concepteur de classes ou de la fenêtre Détails de Classe ; pour réaliser cette opération, vous devez utiliser l'éditeur de code.  
   
 ## <a name="related-topics"></a>Rubriques connexes  
   

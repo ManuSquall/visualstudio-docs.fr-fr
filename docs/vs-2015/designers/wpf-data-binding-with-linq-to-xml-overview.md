@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 985dfb5193082f22431db3384cc6a652f36cfb2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 457a097d46f9af409580d3784bb577090db0c535
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247271"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852412"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Vue d’ensemble de la liaison de données WPF avec LINQ to XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Cette rubrique présente les fonctionnalités de liaison de données dynamiques 
   
  D'une manière générale, XAML et LINQ to XML peuvent interagir de deux façons :  
   
--   Les fichiers XAML étant constitués de code XML correct, ils peuvent être interrogés et manipulés par le biais de technologies XML telles que LINQ to XML.  
+- Les fichiers XAML étant constitués de code XML correct, ils peuvent être interrogés et manipulés par le biais de technologies XML telles que LINQ to XML.  
   
--   Étant donné que les requête LINQ to XML représentent une source de données, elles peuvent être utilisées en tant que source de données pour la liaison de données pour des éléments d'interface utilisateur WPF.  
+- Étant donné que les requête LINQ to XML représentent une source de données, elles peuvent être utilisées en tant que source de données pour la liaison de données pour des éléments d'interface utilisateur WPF.  
   
- Cette documentation décrit le deuxième scénario.  
+  Cette documentation décrit le deuxième scénario.  
   
 ## <a name="data-binding-in-the-windows-presentation-foundation"></a>Liaison de données dans Windows Presentation Foundation  
  La liaison de données WPF permet à un élément d'interface utilisateur d'associer l'une de ses propriétés à une source de données. Un exemple simple est un objet <xref:System.Windows.Controls.Label> dont le texte présente la valeur d'une propriété publique dans un objet défini par l'utilisateur. La liaison de données WPF s'appuie sur les composants suivants :  
@@ -52,13 +52,13 @@ Cette rubrique présente les fonctionnalités de liaison de données dynamiques 
 ### <a name="dynamic-data-binding-in-wpf"></a>Liaison de données dynamiques dans WPF  
  Par défaut, la liaison de données se produit uniquement lorsque l’élément d’interface utilisateur cible est initialisé. Cela porte le nom de liaison *ponctuelle*. Ce type de liaison convient dans la plupart des cas ; en général, une solution de liaison de données exige que les modifications soient propagées de manière dynamique au moment de l’exécution de l’une des façons suivantes :  
   
--   La liaison *unidirectionnelle* fait en sorte que les modifications apportées à une extrémité soient propagées automatiquement. Le plus souvent, les modifications apportées à la source sont reflétées dans la cible, mais l'inverse peut parfois être utile.  
+- La liaison *unidirectionnelle* fait en sorte que les modifications apportées à une extrémité soient propagées automatiquement. Le plus souvent, les modifications apportées à la source sont reflétées dans la cible, mais l'inverse peut parfois être utile.  
   
--   Dans une liaison *bidirectionnelle*, les modifications apportées à la source sont propagées automatiquement à la cible et les modifications apportées à la cible sont propagées automatiquement à la source.  
+- Dans une liaison *bidirectionnelle*, les modifications apportées à la source sont propagées automatiquement à la cible et les modifications apportées à la cible sont propagées automatiquement à la source.  
   
- Pour que la liaison unidirectionnelle ou bidirectionnelle soit établie, la source doit implémenter un mécanisme de notification de changement, par exemple en implémentant l’interface <xref:System.ComponentModel.INotifyPropertyChanged> ou en utilisant un modèle *PropertyNameChanged* pour chaque propriété prise en charge.  
+  Pour que la liaison unidirectionnelle ou bidirectionnelle soit établie, la source doit implémenter un mécanisme de notification de changement, par exemple en implémentant l’interface <xref:System.ComponentModel.INotifyPropertyChanged> ou en utilisant un modèle *PropertyNameChanged* pour chaque propriété prise en charge.  
   
- Pour plus d’informations sur la liaison de données dans WPF, consultez [Liaison de données (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e).  
+  Pour plus d’informations sur la liaison de données dans WPF, consultez [Liaison de données (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e).  
   
 ## <a name="dynamic-properties-in-linq-to-xml-classes"></a>Propriétés dynamiques dans les classes LINQ to XML   
  La plupart des classes LINQ to XML ne constituent pas de réelles sources de données dynamiques WPF ; certaines des informations les plus utiles sont accessibles uniquement par le biais de méthodes (et non de propriétés) et les propriétés dans ces classes n'implémentent pas les notifications de changement. Pour prendre en charge la liaison de données WPF, LINQ to XML expose un ensemble de *propriétés dynamiques*.  
@@ -71,13 +71,13 @@ Cette rubrique présente les fonctionnalités de liaison de données dynamiques 
 ### <a name="accessing-dynamic-properties"></a>Accès aux propriétés dynamiques  
  Les propriétés dynamiques dans les classes <xref:System.Xml.Linq.XAttribute> et <xref:System.Xml.Linq.XElement> ne sont pas accessibles comme les propriétés standard. Par exemple, dans des langages compatibles avec le CLR tels que C#, elles ne peuvent pas être :  
   
--   accédées directement au moment de la compilation. Les propriétés dynamiques sont invisibles pour le compilateur et pour Visual Studio IntelliSense.  
+- accédées directement au moment de la compilation. Les propriétés dynamiques sont invisibles pour le compilateur et pour Visual Studio IntelliSense.  
   
--   découvertes ou accédées au moment de l'exécution à l'aide de la réflexion .NET. Même au moment de l'exécution, il ne s'agit pas de propriétés dans le sens CLR fondamental.  
+- découvertes ou accédées au moment de l'exécution à l'aide de la réflexion .NET. Même au moment de l'exécution, il ne s'agit pas de propriétés dans le sens CLR fondamental.  
   
- En langage C#, les propriétés dynamiques sont accessibles uniquement au moment de l'exécution par le biais de fonctionnalités fournies par l'espace de noms <xref:System.ComponentModel>.  
+  En langage C#, les propriétés dynamiques sont accessibles uniquement au moment de l'exécution par le biais de fonctionnalités fournies par l'espace de noms <xref:System.ComponentModel>.  
   
- En revanche, dans une source XML les propriétés dynamiques sont accessibles par le biais d'une notation simple de la forme suivante :  
+  En revanche, dans une source XML les propriétés dynamiques sont accessibles par le biais d'une notation simple de la forme suivante :  
   
 ```  
 <object>.<dynamic-property>  

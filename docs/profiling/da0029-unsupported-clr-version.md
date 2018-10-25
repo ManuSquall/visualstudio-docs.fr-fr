@@ -17,14 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6ab40efbba692cfa85f14b750d3c853d1112704
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 5067c9f93a489c09962a9402f4fe7672cbd61108
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765737"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818443"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029 : version CLR non prise en charge
+
 |||  
 |-|-|  
 |ID de règle|DA0029|  
@@ -32,12 +33,12 @@ ms.locfileid: "34765737"
 |Méthode de profilage|Profilage à partir de la ligne de commande|  
 |Message|Une version CLR non prise en charge a été détectée lors de la collection. Les symboles managés peuvent ne pas être résolus correctement.|  
 |Type de règle|Information.|  
-  
+
 ## <a name="cause"></a>Cause  
  Vous essayez de profiler une application qui utilise le [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)], qui n’est pas pris en charge par les Outils de profilage.  
-  
+
 ## <a name="rule-description"></a>Description de la règle  
  Cet avertissement se produit car les Outils de profilage ne pourront pas résoudre les symboles du code managé qui s’exécute dans l’application. Les Outils de profilage ne peuvent pas résoudre les symboles du code managé pour les applications qui exécutent le [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)].  
-  
+
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations  
  Aucun.

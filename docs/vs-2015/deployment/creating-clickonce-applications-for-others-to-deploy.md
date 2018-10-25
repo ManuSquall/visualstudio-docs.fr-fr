@@ -30,12 +30,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 5afabc774165ac001545c084a77cba6d165cf88b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f2b7bb6c990567a483ab28d215019fe1b259d166
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181517"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862084"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Création d'applications ClickOnce destinées à être déployées par des tiers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,13 +92,13 @@ Pas tous les développeurs qui créent des déploiements ClickOnce plan déploye
   
  Il existe trois façons que les clients puissent signer le manifeste de déploiement dans cette situation :  
   
-1.  Le client peut utiliser un certificat valide émis par une autorité de certification (CA).  
+1. Le client peut utiliser un certificat valide émis par une autorité de certification (CA).  
   
-2.  Une variante de cette approche, le client peut choisir signer le manifeste de déploiement avec un certificat auto-signé. L’inconvénient de cette approche est qu’elle entraîne l’application afficher les mots « Éditeur inconnu » lorsque l’utilisateur est invité s’il faut l’installer. Toutefois, l’avantage est qu’il empêche les clients plus petits de devoir dépenser du temps et l’argent nécessaire pour un certificat émis par une autorité de certification.  
+2. Une variante de cette approche, le client peut choisir signer le manifeste de déploiement avec un certificat auto-signé. L’inconvénient de cette approche est qu’elle entraîne l’application afficher les mots « Éditeur inconnu » lorsque l’utilisateur est invité s’il faut l’installer. Toutefois, l’avantage est qu’il empêche les clients plus petits de devoir dépenser du temps et l’argent nécessaire pour un certificat émis par une autorité de certification.  
   
-3.  Enfin, le développeur peut inclure son propre certificat auto-signé dans le package d’installation. Cela introduit des problèmes potentiels avec l’identité d’application décrit précédemment dans cette rubrique.  
+3. Enfin, le développeur peut inclure son propre certificat auto-signé dans le package d’installation. Cela introduit des problèmes potentiels avec l’identité d’application décrit précédemment dans cette rubrique.  
   
- L’inconvénient de la méthode de projet de déploiement d’installation est le temps et les dépenses nécessaires pour générer une application de déploiement personnalisé.  
+   L’inconvénient de la méthode de projet de déploiement d’installation est le temps et les dépenses nécessaires pour générer une application de déploiement personnalisé.  
   
 ### <a name="have-customer-generate-deployment-manifest"></a>Client ont générer un manifeste de déploiement  
  Une troisième stratégie de déploiement est pour transmettre uniquement les fichiers d’application et le manifeste d’application désactivée au client. Dans ce scénario, le client est responsable de l’utilisation du SDK .NET Framework pour générer et signer le manifeste de déploiement.  

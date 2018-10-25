@@ -16,12 +16,12 @@ ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f3e03ea9985840d20c812f56d7a0f9cae66420cc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ff386c2f333d3558aa6631dd2e4c13f8bfd595c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261808"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838749"
 ---
 # <a name="test-area-6-delete"></a>Zone de test 6 : Supprimer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Cette zone de test plug-in de contrôle de code source couvre les actions de sup
   
  Voici une liste d’éléments qui peuvent être supprimées :  
   
--   Fichiers  
+- Fichiers  
   
--   Dossiers  
+- Dossiers  
   
--   Projet  
+- Projet  
   
- Selon le type de projet peut avoir la possibilité **supprimer** le projet (laisse les fichiers sur le disque) ou **supprimer** le projet (supprime les fichiers sur disque). L’action supprime le projet ou l’élément à partir de **l’Explorateur de solutions**.  
+  Selon le type de projet peut avoir la possibilité **supprimer** le projet (laisse les fichiers sur le disque) ou **supprimer** le projet (supprime les fichiers sur disque). L’action supprime le projet ou l’élément à partir de **l’Explorateur de solutions**.  
   
 ## <a name="expected-behavior"></a>Comportement attendu  
  Le comportement attendu pour les cas de test dans la zone de test delete est :  

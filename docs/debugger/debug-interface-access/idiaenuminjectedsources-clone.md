@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumInjectedSources::Clone | Documents Microsoft
+title: IDiaEnumInjectedSources::Clone | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 661013b1fd709eb316b961b1db5fc30b3f4c8e66
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6bca7bd10b7092654d1bd7c7bf8c0f0f18ee72a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468552"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950987"
 ---
 # <a name="idiaenuminjectedsourcesclone"></a>IDiaEnumInjectedSources::Clone
-Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.  
+Crée un énumérateur qui contient le même état d’énumération que l’énumérateur en cours.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,7 +34,7 @@ HRESULT Clone (
   
 #### <a name="parameters"></a>Paramètres  
  `ppenum`  
- [out] Retourne un [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) objet qui contient une copie de l’énumérateur. Les sources injectées ne sont pas dupliquées, seulement l’énumérateur.  
+ [out] Retourne un [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) objet qui contient un doublon de l’énumérateur. Les sources injectés ne sont pas dupliquées, uniquement l’énumérateur.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  

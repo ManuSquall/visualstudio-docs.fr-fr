@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fb1f9ad69ebe012151a911bf8d7c02ded6af5e11
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2171912d3542049564f23ea69b06186cd1846943
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283327"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813853"
 ---
 # <a name="configure-load-test-run-settings"></a>Configurer les paramètres d’exécution des tests de charge
 
@@ -30,7 +30,7 @@ Les paramètres d’exécution initiaux sont définis quand vous créez un test 
 ## <a name="tasks"></a>Tâches
 
 |Tâches|Rubriques associées|
-|-----------|-----------------------|
+|-|-|
 |**Ajouter davantage de paramètres d’exécution à votre test de charge :** en plus du paramètre d’exécution créé quand vous exécutez **l’Assistant Nouveau test de charge**, vous pouvez ajouter davantage de paramètres d’exécution à votre test de charge pour pouvoir exécuter le test dans différentes conditions.|-   [Guide pratique pour ajouter des paramètres d’exécution supplémentaires à un test de charge](../test/how-to-add-additional-run-settings-to-a-load-test.md)|
 |**Spécifier le paramètre d’exécution actif à utiliser avec le test de charge :** vous pouvez sélectionner le paramètre d’exécution à utiliser avec votre test de charge à l’aide de l’éditeur de test de charge. Le paramètre d'exécution actif est identifié par le suffixe « [Actif] ».|-   [Guide pratique pour sélectionner le paramètre d’exécution actif d’un test de charge](../test/how-to-select-the-active-run-setting-for-a-load-test.md)|
 |**Modifier les propriétés des paramètres d’exécution :** vous pouvez modifier les propriétés de vos paramètres d’exécution, par exemple, pour les options de journalisation (voir ci-dessous) qui déterminent la longueur du test, la durée de préparation, le nombre maximal de détails relatifs aux erreurs signalés, le taux d’échantillonnage, le modèle de connexion (tests de performances web uniquement), le type de stockage des résultats, le niveau de validation et le traçage SQL. Les paramètres d'exécution doivent refléter les objectifs de votre test de charge.|-   [Propriétés des paramètres d’exécution du test de charge](../test/load-test-run-settings-properties.md)<br />-   [Changement des propriétés des paramètres d’exécution](../test/load-test-run-settings-properties.md#change-run-setting-properties)|
