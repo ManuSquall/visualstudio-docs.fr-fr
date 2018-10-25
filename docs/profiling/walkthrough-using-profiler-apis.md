@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6c6d4a5fce3bbd3d050d3aaae4908b59d745596
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 6e5baebb527c09d833e405a98bd701ad02b7fe86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468208"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928059"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Procédure pas à pas : utilisation des API du profileur
 
@@ -123,19 +123,19 @@ DataCollection.CurrentId);
   
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Pour collecter et afficher des données dans l’IDE Visual Studio  
   
-1.  Ouvrez l’IDE [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Dans le menu **Analyser**, pointez sur **Profiler**, puis sélectionnez **Nouvelle session de performance**.  
+1. Ouvrez l’IDE [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Dans le menu **Analyser**, pointez sur **Profiler**, puis sélectionnez **Nouvelle session de performance**.  
   
-2.  Ajoutez votre fichier binaire compilé à la liste **Cibles** dans la fenêtre **Explorateur de performances**. Cliquez avec le bouton droit sur **Cibles**, puis sélectionnez **Ajouter un fichier binaire cible**. Recherchez le fichier binaire dans la boîte de dialogue **Ajouter un fichier binaire cible**, puis cliquez sur **Ouvrir**.  
+2. Ajoutez votre fichier binaire compilé à la liste **Cibles** dans la fenêtre **Explorateur de performances**. Cliquez avec le bouton droit sur **Cibles**, puis sélectionnez **Ajouter un fichier binaire cible**. Recherchez le fichier binaire dans la boîte de dialogue **Ajouter un fichier binaire cible**, puis cliquez sur **Ouvrir**.  
   
-3.  Sélectionnez **Instrumentation** dans la liste **Méthode** sur la barre d’outils de **l’Explorateur de performances**.  
+3. Sélectionnez **Instrumentation** dans la liste **Méthode** sur la barre d’outils de **l’Explorateur de performances**.  
   
-4.  Cliquez sur **Démarrer avec le profilage**.  
+4. Cliquez sur **Démarrer avec le profilage**.  
   
-     Le profileur instrumente et exécute le fichier binaire, et crée un fichier de rapport des performances. Le fichier du rapport de performances apparaît dans le nœud **Rapports** de **l’Explorateur de performances**.  
+    Le profileur instrumente et exécute le fichier binaire, et crée un fichier de rapport des performances. Le fichier du rapport de performances apparaît dans le nœud **Rapports** de **l’Explorateur de performances**.  
   
-5.  Ouvrez le fichier de rapport de performances résultant.  
+5. Ouvrez le fichier de rapport de performances résultant.  
   
- Par défaut, quand le profileur est démarré, il collecte des données au niveau global. Le code suivant au début du programme désactive le profilage global.  
+   Par défaut, quand le profileur est démarré, il collecte des données au niveau global. Le code suivant au début du programme désactive le profilage global.  
   
 ```csharp  
 DataCollection.StopProfile(  

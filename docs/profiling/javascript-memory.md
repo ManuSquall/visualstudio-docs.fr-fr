@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a4c29855cb9a771660fa5070f6d34a4d10c557a
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 4ccaebf42100f4d9c0664bdf72be7d7f3808ebc1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235348"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911315"
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analyser l’utilisation de mémoire JavaScript dans les applications UWP
 L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous aider à comprendre l’utilisation de la mémoire et à rechercher les fuites de mémoire dans vos applications UWP générées pour Windows en JavaScript. Les applications dédiées aux applications Windows universelles sont prises en charge.
@@ -101,31 +101,31 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
 ## <a name="isolate-a-memory-leak"></a>Isolate a memory leak  
  La procédure suivante présente un flux de travail qui peut vous aider à utiliser l'analyseur de mémoire JavaScript plus efficacement. Ces étapes peuvent s'avérer utiles si vous pensez que votre application rencontre une fuite de mémoire. Pour obtenir un didacticiel qui vous guide dans le processus d’identification d’une fuite de mémoire dans une application active, consultez [Procédure pas à pas : rechercher une fuite de mémoire (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
-1.  Ouvrez votre application dans Visual Studio.  
+1. Ouvrez votre application dans Visual Studio.  
   
-2.  Exécutez l'analyseur de mémoire JavaScript. Pour plus d'informations, consultez [Exécuter l'analyseur de mémoire JavaScript](#run-the-JavaScript-memory-analyzer).  
+2. Exécutez l'analyseur de mémoire JavaScript. Pour plus d'informations, consultez [Exécuter l'analyseur de mémoire JavaScript](#run-the-JavaScript-memory-analyzer).  
   
-3.  Exécutez votre application via le scénario que vous souhaitez tester. Par exemple, le scénario peut impliquer une mutation DOM importante, durant le chargement d'une page spécifique ou au démarrage de l'application.  
+3. Exécutez votre application via le scénario que vous souhaitez tester. Par exemple, le scénario peut impliquer une mutation DOM importante, durant le chargement d'une page spécifique ou au démarrage de l'application.  
   
-4.  Répétez le scénario 1 à 4 fois de plus.  
+4. Répétez le scénario 1 à 4 fois de plus.  
   
-    > [!TIP]
-    >  En répétant le scénario de test plusieurs fois, vous contribuez à garantir le filtrage du travail d'initialisation dans les résultats.  
+   > [!TIP]
+   >  En répétant le scénario de test plusieurs fois, vous contribuez à garantir le filtrage du travail d'initialisation dans les résultats.  
   
-5.  Basculez vers Visual Studio (appuyez sur **Alt**+**Tab**).  
+5. Basculez vers Visual Studio (appuyez sur **Alt**+**Tab**).  
   
-6.  Prenez un instantané du tas de base en sélectionnant **Prendre un instantané du tas**.  
+6. Prenez un instantané du tas de base en sélectionnant **Prendre un instantané du tas**.  
   
-     L'illustration suivante montre un exemple d'instantané de ligne de base :  
+    L'illustration suivante montre un exemple d'instantané de ligne de base :  
   
-     ![Instantané de ligne base](../profiling/media/js_mem_leak_workflow_baseline.png "JS_Mem_Leak_Workflow_Baseline")  
+    ![Instantané de ligne base](../profiling/media/js_mem_leak_workflow_baseline.png "JS_Mem_Leak_Workflow_Baseline")  
   
-    > [!TIP]
-    >  Pour exercer un contrôle plus précis de la synchronisation des instantanés, utilisez la commande [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data) dans votre code.  
+   > [!TIP]
+   >  Pour exercer un contrôle plus précis de la synchronisation des instantanés, utilisez la commande [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data) dans votre code.  
   
-7.  Revenez à votre application et répétez le scénario que vous testez (une seule fois).  
+7. Revenez à votre application et répétez le scénario que vous testez (une seule fois).  
   
-8.  Basculez vers Visual Studio et prenez un deuxième instantané.  
+8. Basculez vers Visual Studio et prenez un deuxième instantané.  
   
 9. Revenez à votre application et répétez le scénario que vous testez (une seule fois).  
   
@@ -139,11 +139,11 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
   
 11. À partir du troisième instantané, choisissez un lien vers l'une des vues comparées :  
   
-    -   Taille différentielle de tas (lien de gauche sous la taille du tas). Le texte du lien indique la différence entre la taille du tas de l'instantané actuel et la taille du tas de l'instantané précédent.  
+    - Taille différentielle de tas (lien de gauche sous la taille du tas). Le texte du lien indique la différence entre la taille du tas de l'instantané actuel et la taille du tas de l'instantané précédent.  
   
-    -   Nombre différentiel d'objets (lien de droite sous le nombre d'objets). Le texte du lien indique deux valeurs (par exemple +1858 / -1765) : la première valeur est le nombre de nouveaux objets ajoutés depuis l'instantané précédent. La deuxième valeur est le nombre d'objets supprimés depuis l'instantané précédent.  
+    - Nombre différentiel d'objets (lien de droite sous le nombre d'objets). Le texte du lien indique deux valeurs (par exemple +1858 / -1765) : la première valeur est le nombre de nouveaux objets ajoutés depuis l'instantané précédent. La deuxième valeur est le nombre d'objets supprimés depuis l'instantané précédent.  
   
-     Ces liens ouvrent une vue comparée des détails d'instantané pour les types du tas, par ordre de taille retenue ou de nombre d'objets, selon le lien que vous avez ouvert.  
+      Ces liens ouvrent une vue comparée des détails d'instantané pour les types du tas, par ordre de taille retenue ou de nombre d'objets, selon le lien que vous avez ouvert.  
   
 12. Choisissez l'une des options suivantes relatives au filtre **Portée** pour faciliter l'identification des problèmes d'utilisation de la mémoire :  
   
@@ -162,7 +162,7 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
   
 13. Pour voir à quel endroit les objets des vues comparées sont enracinés à l'objet global, ce qui les empêche de faire l'objet d'un garbage collection, ouvrez le menu contextuel d'un objet, puis choisissez **Afficher en vue racine**. Un grand nombre d'objets peuvent être conservés en mémoire dans la mesure où ils sont référencés par un objet unique (ou quelques objets) enracinés à l'objet global.  
   
-14. S'il existe trop d'objets dans la vue des objets restants, essayez d'isoler davantage la période pendant laquelle la fuite de mémoire se produit, puis prenez à nouveau trois instantanés. Pour isoler davantage la fuite de mémoire, utilisez [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data), un [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data), et les autres données d'utilisation de la mémoire disponibles dans l'analyseur de mémoire.  
+14. S'il existe trop d'objets dans la vue des objets restants, essayez d'isoler davantage la période pendant laquelle la fuite de mémoire se produit, puis prenez à nouveau trois instantanés. Pour isoler davantage la fuite de mémoire, un utilisez [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data), un [Associate source code with memory usage data](#associate-source-code-with-memory-usage-data), un and other memory usage data available in the memory analyzer.  
   
 ## <a name="view-live-memory-usage-summary"></a>Visualiser le résumé dynamique d'utilisation de la mémoire  
  La vue Résumé dynamique d'utilisation de la mémoire fournit un graphique d'utilisation de la mémoire pour l'application en cours d'exécution et la collection de toutes les vignettes de résumé des instantanés. Dans cette vue, vous pouvez effectuer des tâches de base, comme effectuer des instantanés, analyser des informations de résumé et accéder à d'autres vues. Quand vous arrêtez de collecter des données, le graphique de la mémoire disparaît et vous voyez uniquement la vue [View a snapshot summary](#view-a-snapshot-summary) .  
@@ -212,29 +212,29 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
   
  Dans la vue des détails d'un instantané, vous pouvez passer en revue les données d'utilisation de la mémoire par type, racine ou dominateur, en sélectionnant une option dans la barre d'outils :  
   
--   **Types**. Indique le nombre d'instances et la taille totale des objets sur le tas, regroupés par type d'objet. Par défaut, ceux-ci sont triés par le nombre d'instances.  
+- **Types**. Indique le nombre d'instances et la taille totale des objets sur le tas, regroupés par type d'objet. Par défaut, ceux-ci sont triés par le nombre d'instances.  
   
-    > [!TIP]
-    >  En règle générale, les vues comparées des types sur le tas d'objets représentent les vues les plus utiles pour identifier une fuite de mémoire. Ces vues fournissent un filtre **Portée** qui permet d'identifier les objets restants.  
+  > [!TIP]
+  >  En règle générale, les vues comparées des types sur le tas d'objets représentent les vues les plus utiles pour identifier une fuite de mémoire. Ces vues fournissent un filtre **Portée** qui permet d'identifier les objets restants.  
   
--   **Racines**. Montre une vue hiérarchique des objets, des objets racine jusqu'aux références enfants. Par défaut, les nœuds enfants sont triés sur la colonne de la taille de retenue, en ordre décroissant.  
+- **Racines**. Montre une vue hiérarchique des objets, des objets racine jusqu'aux références enfants. Par défaut, les nœuds enfants sont triés sur la colonne de la taille de retenue, en ordre décroissant.  
   
--   **Dominators**. Affiche une liste d'objets sur le tas qui ont des références exclusives à d'autres objets. Les dominators sont triés par taille de retenue.  
+- **Dominators**. Affiche une liste d'objets sur le tas qui ont des références exclusives à d'autres objets. Les dominators sont triés par taille de retenue.  
   
-    > [!TIP]
-    >  Lorsque vous supprimez un dominator de la mémoire, vous libérez toute la mémoire que l'objet retient. Pour quelques applications, la vue Dominators peut aider à clarifier les tailles de mémoire retenues, car vous pouvez analyser la chaîne de référence d'objets complète.  
+  > [!TIP]
+  >  Lorsque vous supprimez un dominator de la mémoire, vous libérez toute la mémoire que l'objet retient. Pour quelques applications, la vue Dominators peut aider à clarifier les tailles de mémoire retenues, car vous pouvez analyser la chaîne de référence d'objets complète.  
   
- Les trois vues montrent des types de valeur semblables, notamment :  
+  Les trois vues montrent des types de valeur semblables, notamment :  
   
--   **Identificateur(s)**. Nom qui identifie le mieux l'objet. Par exemple, pour des éléments HTML, les détails de l'instantané montrent la valeur de l'attribut ID, le cas échéant.  
+- **Identificateur(s)**. Nom qui identifie le mieux l'objet. Par exemple, pour des éléments HTML, les détails de l'instantané montrent la valeur de l'attribut ID, le cas échéant.  
   
--   **Type**. Type de l'objet (par exemple, élément de lien HTML ou élément div).  
+- **Type**. Type de l'objet (par exemple, élément de lien HTML ou élément div).  
   
--   **Taille**. Taille de l'objet, à l'exclusion de la taille des objets référencés.  
+- **Taille**. Taille de l'objet, à l'exclusion de la taille des objets référencés.  
   
--   **Taille de retenue**. Somme de la taille de l'objet et de la taille de tous les objets enfants n'ayant pas d'autres parents. Pour des raisons pratiques, il s'agit de la quantité de mémoire retenue par l'objet. De ce fait, si vous supprimez l'objet, vous libérez la quantité de mémoire spécifiée.  
+- **Taille de retenue**. Somme de la taille de l'objet et de la taille de tous les objets enfants n'ayant pas d'autres parents. Pour des raisons pratiques, il s'agit de la quantité de mémoire retenue par l'objet. De ce fait, si vous supprimez l'objet, vous libérez la quantité de mémoire spécifiée.  
   
--   **Nombre**. Nombre d'instances de l'objet. Cette valeur s'affiche uniquement dans la vue Types.  
+- **Nombre**. Nombre d'instances de l'objet. Cette valeur s'affiche uniquement dans la vue Types.  
   
 ## <a name="view-a-snapshot-diff"></a>Visualiser une comparaison d'instantanés  
  Dans l'analyseur de mémoire JavaScript, vous pouvez comparer un instantané à l'instantané précédent dans les vues comparées des instantanés.  
@@ -249,22 +249,22 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
   
  Dans la fenêtre de comparaison des instantanés, les vues Dominators, Types et Roots sont les mêmes que dans la fenêtre [Visualiser les détails de l'instantané](#view-snapshot-details) . La comparaison d'instantanés affiche les mêmes informations que les détails de l'instantané, avec en outre les valeurs supplémentaires suivantes :  
   
--   **Diff. taille**. Différence entre la taille de l'objet dans l'instantané actuel et sa taille dans l'instantané précédent, à l'exclusion de la taille des objets référencés.  
+- **Diff. taille**. Différence entre la taille de l'objet dans l'instantané actuel et sa taille dans l'instantané précédent, à l'exclusion de la taille des objets référencés.  
   
--   **Diff. taille de retenue**. Différence entre la taille de retenue de l'objet dans l'instantané actuel et sa taille de retenue dans l'instantané précédent. La taille de retenue inclut la taille de l'objet et la taille de tous ses objets enfants n'ayant pas d'autres parents. Pour des raisons pratiques, la taille de retenue est la quantité de mémoire retenue par l'objet. De ce fait, si vous supprimez l'objet, vous libérez la quantité de mémoire spécifiée.  
+- **Diff. taille de retenue**. Différence entre la taille de retenue de l'objet dans l'instantané actuel et sa taille de retenue dans l'instantané précédent. La taille de retenue inclut la taille de l'objet et la taille de tous ses objets enfants n'ayant pas d'autres parents. Pour des raisons pratiques, la taille de retenue est la quantité de mémoire retenue par l'objet. De ce fait, si vous supprimez l'objet, vous libérez la quantité de mémoire spécifiée.  
   
- Pour filtrer les informations différentielles entre les instantanés, choisissez l'un des filtres **Portée** en haut des vues différentielles.  
+  Pour filtrer les informations différentielles entre les instantanés, choisissez l'un des filtres **Portée** en haut des vues différentielles.  
   
--   **Objets créés à partir de l’instantané n°\<numéro>**. Ce filtre montre les différences entre les objets ajoutés au tas et retirés du tas par rapport à l'instantané de base et l'instantané précédent. Par exemple, si le résumé des instantanés montre +205 / -195 dans le nombre d'objets, ce filtre indique les dix objets qui ont été ajoutés, mais pas supprimés.  
+- **Objets créés à partir de l’instantané n°\<numéro>**. Ce filtre montre les différences entre les objets ajoutés au tas et retirés du tas par rapport à l'instantané de base et l'instantané précédent. Par exemple, si le résumé des instantanés montre +205 / -195 dans le nombre d'objets, ce filtre indique les dix objets qui ont été ajoutés, mais pas supprimés.  
   
-    > [!TIP]
-    >  Pour afficher les informations les plus utiles dans ce filtre, suivez les étapes décrites dans [Isolate a memory leak](#isolate-a-memory-leak).  
+  > [!TIP]
+  >  Pour afficher les informations les plus utiles dans ce filtre, suivez les étapes décrites dans [Isolate a memory leak](#isolate-a-memory-leak).  
   
--   **Objets ajoutés entre les instantanés n° \<numéro> et n° \<numéro>**. Ce filtre montre tous les objets ajoutés au tas à partir de l'instantané précédent.  
+- **Objets ajoutés entre les instantanés n° \<numéro> et n° \<numéro>**. Ce filtre montre tous les objets ajoutés au tas à partir de l'instantané précédent.  
   
--   **Tous les objets de l’instantané n° \<numéro>**. Ce paramètre de filtre ne filtre aucun objet du tas.  
+- **Tous les objets de l’instantané n° \<numéro>**. Ce paramètre de filtre ne filtre aucun objet du tas.  
   
- Pour afficher les références d’objet qui ne correspondent pas au filtre **Portée**, sélectionnez **Afficher les références incohérentes** dans la liste des paramètres ![Liste déroulante des paramètres dans l’analyseur de mémoire](../profiling/media/js_mem_settings.png "JS_Mem_Settings") située dans l’angle supérieur droit du volet. Si vous activez ce paramètre, les références incohérentes sont affichées en texte gris.  
+  Pour afficher les références d’objet qui ne correspondent pas au filtre **Portée**, sélectionnez **Afficher les références incohérentes** dans la liste des paramètres ![Liste déroulante des paramètres dans l’analyseur de mémoire](../profiling/media/js_mem_settings.png "JS_Mem_Settings") située dans l’angle supérieur droit du volet. Si vous activez ce paramètre, les références incohérentes sont affichées en texte gris.  
   
 > [!TIP]
 >  Nous recommandons de suivre les étapes décrites dans [Isolate a memory leak](#isolate-a-memory-leak) puis d'utiliser le filtre **Portée** des objets restants pour identifier plus facilement les objets qui présentent une fuite de mémoire.  
@@ -282,7 +282,7 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
  Chaque vue possède son propre filtre, de sorte que le filtre n'est pas conservé lorsque vous basculez vers une autre vue.  
   
 ## <a name="find-an-object-in-the-object-tree"></a>Rechercher un objet dans l'arborescence des objets  
- Dans les vues Types et Dominators, vous pouvez voir la relation entre un objet particulier et l'objet `Global` . Les objets enracinés à l'objet `Global` ne font pas l'objet d'un garbage collection. Vous pouvez rechercher facilement un objet connu dans la vue Racines, sans avoir besoin d'effectuer une recherche dans l'arborescence d'objets `Global` . Pour ce faire, ouvrez le menu contextuel pour un objet dans la vue Dominators ou Types, puis sélectionnez **Afficher en vue racine**.  
+ Dans les vues Types et Dominators, vous pouvez voir la relation entre un objet particulier et l'objet `Global`. Les objets enracinés à l'objet `Global` ne font pas l'objet d'un garbage collection. Vous pouvez rechercher facilement un objet connu dans la vue Racines, sans avoir besoin d'effectuer une recherche dans l'arborescence d'objets `Global` . Pour ce faire, ouvrez le menu contextuel pour un objet dans la vue Dominators ou Types, puis sélectionnez **Afficher en vue racine**.  
   
 ## <a name="view-shared-object-references"></a>Visualiser les références aux objets partagés  
  Dans les vues Types et Dominators, le volet inférieur contient une liste de références d'objet qui indique les références partagées. Lorsque vous sélectionnez un objet dans le volet supérieur, la liste des références d'objet répertorie tous les objets qui pointent sur cet objet.  
@@ -315,11 +315,11 @@ L’analyseur de mémoire JavaScript est disponible dans Visual Studio pour vous
   
 - Ajoutez les commandes de l'analyseur de mémoire à votre code source.  
   
- Vous pouvez utiliser les commandes suivantes dans votre code source :  
+  Vous pouvez utiliser les commandes suivantes dans votre code source :  
   
--   `console.takeHeapSnapshot` prend un instantané du tas qui s'affiche dans l'analyseur de mémoire JavaScript. Cette commande est l'une des [JavaScript Console commands](../debugger/javascript-console-commands.md).  
+- `console.takeHeapSnapshot` prend un instantané du tas qui s'affiche dans l'analyseur de mémoire JavaScript. Cette commande est l'une des [JavaScript Console commands](../debugger/javascript-console-commands.md).  
   
--   `performance.mark` définit une marque utilisateur (triangle inversé) qui apparaît dans la chronologie du graphique de mémoire, dans la vue du résumé, pendant que l'application est en cours d'exécution. Cette commande accepte un argument de chaîne qui décrit l'événement et apparaît sous la forme d'une info-bulle dans le graphique de mémoire. Cette description ne doit pas dépasser 100 caractères.  
+- `performance.mark` définit une marque utilisateur (triangle inversé) qui apparaît dans la chronologie du graphique de mémoire, dans la vue du résumé, pendant que l'application est en cours d'exécution. Cette commande accepte un argument de chaîne qui décrit l'événement et apparaît sous la forme d'une info-bulle dans le graphique de mémoire. Cette description ne doit pas dépasser 100 caractères.  
   
 > [!TIP]
 >  Utilisez `console.takeHeapSnapshot` pour accélérer l'analyse lorsque vous répétez les scénarios d'utilisation de la mémoire.  

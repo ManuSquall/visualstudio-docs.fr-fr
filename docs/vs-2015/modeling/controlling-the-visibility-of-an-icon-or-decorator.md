@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 299abef4d60b6bdc6fdf07cb8257034a6ee22d10
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4befc49fab1d1b53d70f1b79ee1a2bbe96be11f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207855"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913408"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Contrôle de la visibilité d'une icône ou d'un élément décoratif
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,37 +29,37 @@ Un *decorator* est une icône ou une ligne de texte qui apparaît sur la forme d
   
 #### <a name="to-control-the-visibility-of-an-icon-or-text-decorator"></a>Pour contrôler la visibilité d’un élément décoratif icône ou du texte  
   
-1.  Dans le diagramme de définition DSL, vous devez ajouter à la classe shape les icônes ou les éléments décoratifs de texte que vous souhaitez voir apparaître.  
+1. Dans le diagramme de définition DSL, vous devez ajouter à la classe shape les icônes ou les éléments décoratifs de texte que vous souhaitez voir apparaître.  
   
-    1.  Avec le bouton droit de la classe de forme, pointez sur **ajouter**, puis cliquez sur le type d’élément décoratif nécessaire.  
+   1.  Avec le bouton droit de la classe de forme, pointez sur **ajouter**, puis cliquez sur le type d’élément décoratif nécessaire.  
   
-    2.  Valeur de l’élément décoratif **Position** propriété. Plusieurs éléments décoratifs peut avoir la même position. Par exemple, vous pourriez avoir des icônes pour homme et Femme partage la même position.  
+   2.  Valeur de l’élément décoratif **Position** propriété. Plusieurs éléments décoratifs peut avoir la même position. Par exemple, vous pourriez avoir des icônes pour homme et Femme partage la même position.  
   
-    3.  Définir le **icône par défaut** propriété d’un élément décoratif d’icône.  
+   3.  Définir le **icône par défaut** propriété d’un élément décoratif d’icône.  
   
-2.  Sélectionnez le mappage d’élément de diagramme, qui est la ligne grise entre la classe de forme et de la classe de domaine sur le diagramme de définition DSL.  
+2. Sélectionnez le mappage d’élément de diagramme, qui est la ligne grise entre la classe de forme et de la classe de domaine sur le diagramme de définition DSL.  
   
-3.  Dans la fenêtre Détails DSL, dans le **mappages de décorateurs** , sélectionnez un élément décoratif. Par exemple, le MaleDecorator.  
+3. Dans la fenêtre Détails DSL, dans le **mappages de décorateurs** , sélectionnez un élément décoratif. Par exemple, le MaleDecorator.  
   
-4.  Vérifier le **filtre de visibilité** boîte.  
+4. Vérifier le **filtre de visibilité** boîte.  
   
-5.  Si la propriété de domaine qui doit-elle contrôler la visibilité est sur la classe de domaine immédiate, laissez **chemin d’accès à la propriété de filtre** vide.  
+5. Si la propriété de domaine qui doit-elle contrôler la visibilité est sur la classe de domaine immédiate, laissez **chemin d’accès à la propriété de filtre** vide.  
   
-     Sinon, cliquez sur le menu déroulant et accédez à la classe où se trouve la propriété ou de relation.  
+    Sinon, cliquez sur le menu déroulant et accédez à la classe où se trouve la propriété ou de relation.  
   
-    -   Pour éviter un rapport d’erreurs, vous ne devez pas naviguer via une relation marquée avec « * » dans l’outil de navigation.  
+   -   Pour éviter un rapport d’erreurs, vous ne devez pas naviguer via une relation marquée avec « * » dans l’outil de navigation.  
   
-6.  Définir le **propriété Filter** à une propriété de domaine. Par exemple, le sexe.  
+6. Définir le **propriété Filter** à une propriété de domaine. Par exemple, le sexe.  
   
-7.  Dans le **entrées de visibilité** liste, ajoutez les valeurs de cette propriété de domaine pour lequel l’élément décoratif doit être visible. Par exemple, homme.  
+7. Dans le **entrées de visibilité** liste, ajoutez les valeurs de cette propriété de domaine pour lequel l’élément décoratif doit être visible. Par exemple, homme.  
   
-8.  Répétez les étapes pour chaque icône.  
+8. Répétez les étapes pour chaque icône.  
   
 9. **Transformer tous les modèles**, générer et exécuter et ouvrez un diagramme de test.  
   
 10. Lorsque vous modifiez la valeur de propriété de contrôle, les éléments décoratifs doivent apparaître et disparaître.  
   
- Fréquemment, vous souhaitez visibilité pour être contrôlé par une formule plus complexe qu’un simple ensemble de valeurs. Par exemple, une icône dépend du nombre de liens d’un type particulier, ou pour le rendre varient selon un qu’un nombre est dans une plage particulière. Dans ce cas, procédez comme suit.  
+    Fréquemment, vous souhaitez visibilité pour être contrôlé par une formule plus complexe qu’un simple ensemble de valeurs. Par exemple, une icône dépend du nombre de liens d’un type particulier, ou pour le rendre varient selon un qu’un nombre est dans une plage particulière. Dans ce cas, procédez comme suit.  
   
 #### <a name="to-control-the-visibility-of-a-decorator-based-on-a-formula"></a>Pour contrôler la visibilité d’un décorateur selon une formule  
   

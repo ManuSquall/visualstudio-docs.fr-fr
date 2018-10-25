@@ -14,12 +14,12 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6f2b97f2b7f3db141bbbbe17d5cf1ab63212be81
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: da21c3b8646ef69432259e4430b940824ad05dd8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176538"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920662"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Définir des contraintes de validation pour les modèles UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,24 +51,24 @@ Vous pouvez définir des contraintes de validation qui vérifient si le modèle 
   
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>Pour créer une extension de validation dans sa propre extension VSIX  
   
-1.  Dans la boîte de dialogue **Nouveau projet** , sous **Projets de modélisation**, cliquez sur **Extension de validation**.  
+1. Dans la boîte de dialogue **Nouveau projet** , sous **Projets de modélisation**, cliquez sur **Extension de validation**.  
   
-2.  Ouvrez le fichier **.cs** dans le nouveau projet et modifiez la classe pour implémenter votre contrainte de validation.  
+2. Ouvrez le fichier **.cs** dans le nouveau projet et modifiez la classe pour implémenter votre contrainte de validation.  
   
-     Pour plus d’informations, consultez [Évaluation de la contrainte de validation](#Implementing).  
+    Pour plus d’informations, consultez [Évaluation de la contrainte de validation](#Implementing).  
   
-    > [!IMPORTANT]
-    >  Assurez-vous que vos fichiers **.cs** contiennent l’instruction `using` suivante :  
-    >   
-    >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
+   > [!IMPORTANT]
+   >  Assurez-vous que vos fichiers **.cs** contiennent l’instruction `using` suivante :  
+   >   
+   >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
   
-3.  Vous pouvez ajouter des contraintes supplémentaires en définissant de nouvelles méthodes. Pour identifier une méthode comme méthode de validation, vous devez la marquer avec des attributs de la même façon que la méthode de validation initiale.  
+3. Vous pouvez ajouter des contraintes supplémentaires en définissant de nouvelles méthodes. Pour identifier une méthode comme méthode de validation, vous devez la marquer avec des attributs de la même façon que la méthode de validation initiale.  
   
-4.  Testez vos contraintes en appuyant sur F5. Pour plus d’informations, consultez [Exécution d’une contrainte de validation](#Executing).  
+4. Testez vos contraintes en appuyant sur F5. Pour plus d’informations, consultez [Exécution d’une contrainte de validation](#Executing).  
   
-5.  Installer la commande de menu sur un autre ordinateur en copiant le fichier **bin\\\*\\\*.vsix** qui est généré par votre projet. Pour plus d’informations, consultez [Installation et désinstallation d’une extension](#Installing).  
+5. Installer la commande de menu sur un autre ordinateur en copiant le fichier **bin\\\*\\\*.vsix** qui est généré par votre projet. Pour plus d’informations, consultez [Installation et désinstallation d’une extension](#Installing).  
   
- Lors de l’ajout d’autres fichiers **.cs** , les instructions `using` suivantes sont généralement nécessaires :  
+   Lors de l’ajout d’autres fichiers **.cs** , les instructions `using` suivantes sont généralement nécessaires :  
   
 ```csharp  
 using System.Collections.Generic;  
@@ -272,13 +272,13 @@ public void ValidateSomething
   
  `context.LogError("error string", errorCode, elementsWithError);`  
   
--   `"error string"` apparaît dans la liste d’erreurs de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
+- `"error string"` apparaît dans la liste d’erreurs de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
--   `errorCode` est une chaîne qui doit être un identificateur unique de l'erreur  
+- `errorCode` est une chaîne qui doit être un identificateur unique de l'erreur  
   
--   `elementsWithError` identifie les éléments dans le modèle. Quand l'utilisateur double-clique sur le rapport d'erreurs, la forme représentant cet élément est sélectionnée.  
+- `elementsWithError` identifie les éléments dans le modèle. Quand l'utilisateur double-clique sur le rapport d'erreurs, la forme représentant cet élément est sélectionnée.  
   
- `LogError(),` `LogWarning()` et `LogMessage()` placent les messages dans différentes sections de la liste d'erreurs.  
+  `LogError(),` `LogWarning()` et `LogMessage()` placent les messages dans différentes sections de la liste d'erreurs.  
   
 ## <a name="how-validation-methods-are-applied"></a>Application des méthodes de validation  
  La validation est appliquée à chaque élément du modèle, y compris aux relations et aux différentes parties des plus grands éléments, tels que les attributs d’une classe et les paramètres d’une opération.  
@@ -389,15 +389,15 @@ context.LogError(... , usecase);
   
 #### <a name="to-uninstall-an-extension"></a>Pour désinstaller une extension  
   
-1.  Dans le menu **Outils** , choisissez **Extensions et mises à jour**.  
+1. Dans le menu **Outils** , choisissez **Extensions et mises à jour**.  
   
-2.  Développez **Extensions installées**.  
+2. Développez **Extensions installées**.  
   
-3.  Sélectionnez l’extension, puis choisissez **Désinstaller**.  
+3. Sélectionnez l’extension, puis choisissez **Désinstaller**.  
   
- Exceptionnellement, une extension défaillante ne parvient pas à se charger et crée un rapport dans la fenêtre d’erreur, mais ne s’affiche pas dans le Gestionnaire d’extensions. Dans ce cas, vous pouvez supprimer l’extension en supprimant le fichier à partir de l’emplacement suivant où *% LocalAppData%* est généralement *nom_lecteur*: \Users\\*nom d’utilisateur*\AppData\Local :  
+   Exceptionnellement, une extension défaillante ne parvient pas à se charger et crée un rapport dans la fenêtre d’erreur, mais ne s’affiche pas dans le Gestionnaire d’extensions. Dans ce cas, vous pouvez supprimer l’extension en supprimant le fichier à partir de l’emplacement suivant où *% LocalAppData%* est généralement *nom_lecteur*: \Users\\*nom d’utilisateur*\AppData\Local :  
   
- *%LocalAppData%* **\Microsoft\VisualStudio\\[version] \Extensions**  
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[version] \Extensions**  
   
 ##  <a name="Example"></a> Exemple  
  Cet exemple recherche des boucles dans la relation Dependency entre les éléments.  

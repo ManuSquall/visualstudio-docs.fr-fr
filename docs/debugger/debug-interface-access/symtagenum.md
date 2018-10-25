@@ -1,5 +1,5 @@
 ---
-title: SymTagEnum | Documents Microsoft
+title: SymTagEnum | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36dc9b3d9fc15b06c92db27b38d94805c1ce8a25
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9a9b3f28858bdeb6783175301de40de0d492739a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480860"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875215"
 ---
 # <a name="symtagenum"></a>SymTagEnum
 Spécifie le type de symbole.  
@@ -73,16 +73,16 @@ enum SymTagEnum {
  Indique que le symbole n’a aucun type.  
   
  `SymTagExe`  
- Indique que le symbole est un fichier .exe. Il existe un seul `SymTagExe` symbole par le magasin de symboles. Il sert à la portée globale et n’a pas de parent lexical.  
+ Indique que le symbole est un fichier .exe. Il existe un seul `SymTagExe` symbole par un magasin de symboles. Il sert à la portée globale et n’a pas de parent lexical.  
   
  `SymTagCompiland`  
- Indique le symbole de compiland pour chaque composant compiland le magasin de symboles. Pour les applications natives, `SymTagCompiland` symboles correspondent aux fichiers objet liés dans l’image. Pour certains types d’images de Microsoft Intermediate Language (MSIL), il est une compiland par classe.  
+ Indique le symbole de compiland pour chaque composant de compiland du magasin de symboles. Pour les applications natives, `SymTagCompiland` symboles correspondent aux fichiers objet liés dans l’image. Pour certains types d’images de langage MSIL (Microsoft Intermediate Language), il existe un compiland par classe.  
   
  `SymTagCompilandDetails`  
- Indique que le symbole contient les attributs étendus de du module. La récupération de ces propriétés peut nécessiter le chargement de symboles de compiland.  
+ Indique que le symbole contient des attributs étendus du module. Récupération de ces propriétés peut-être nécessiter le chargement des symboles de compiland.  
   
  `SymTagCompilandEnv`  
- Indique que le symbole est une chaîne définie pour le module.  
+ Indique que le symbole est une chaîne d’environnement définie pour le compiland.  
   
  `SymTagFunction`  
  Indique que le symbole est une fonction.  
@@ -94,7 +94,7 @@ enum SymTagEnum {
  Indique que le symbole de données.  
   
  `SymTagAnnotation`  
- Indique que le symbole est pour une annotation de code. Les enfants de ce symbole sont des chaînes de données constantes (`SymTagData`, `LocIsConstant`, `DataIsConstant`). La plupart des clients ignorent ce symbole.  
+ Indique que le symbole est pour une annotation de code. Les enfants de ce symbole sont des chaînes de données constantes (`SymTagData`, `LocIsConstant`, `DataIsConstant`). La plupart des clients ignorer ce symbole.  
   
  `SymTagLabel`  
  Indique que le symbole est une étiquette.  
@@ -139,7 +139,7 @@ enum SymTagEnum {
  Indique que le symbole est l’emplacement de début du code d’épilogue de la fonction.  
   
  `SymTagUsingNamespace`  
- Indique que le symbole est un nom de l’espace de noms actif dans l’étendue actuelle.  
+ Indique que le symbole est un espace de noms, active dans la portée actuelle.  
   
  `SymTagVTableShape`  
  Indique que le symbole est une description de la table virtuelle.  
@@ -151,10 +151,10 @@ enum SymTagEnum {
  Indique que le symbole est un symbole personnalisé et qu’il n’est pas interprété par DIA.  
   
  `SymTagThunk`  
- Indique que le symbole est un thunk qui permet de partager des données entre le 16 et code 32 bits.  
+ Indique que le symbole est un thunk utilisé pour partager des données entre 16 et 32 bits de code.  
   
  `SymTagCustomType`  
- Indique que le symbole est un symbole de compilation personnalisés.  
+ Indique que le symbole est un symbole du compilateur personnalisé.  
   
  `SymTagManagedType`  
  Indique que le symbole est dans les métadonnées.  
@@ -166,7 +166,7 @@ enum SymTagEnum {
  Indique que le symbole représente le site d’appel.  
   
  `SymTagInlineSite`  
- Indique que le symbole représente le site en ligne.  
+ Indique que le symbole représente le site inline.  
   
  `SymTagBaseInterface`  
  Indique que le symbole est une interface de base.  
@@ -178,14 +178,14 @@ enum SymTagEnum {
  Indique que le symbole est un type de matrice.  
   
  `SymTagHLSLType`  
- Indique que le symbole est un type langage HLSL.  
+ Indique que le symbole est un type High Level Shader Language.  
   
 ## <a name="remarks"></a>Notes  
- Tous les symboles dans un fichier de débogage ont une balise d’identification qui spécifie type du symbole.  
+ Tous les symboles dans un fichier de débogage ont une balise d’identification qui spécifie le type du symbole.  
   
- Les valeurs de cette énumération sont retournées par un appel à la [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) (méthode).  
+ Les valeurs dans cette énumération sont retournées par un appel à la [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) (méthode).  
   
- Les valeurs de cette énumération sont passées aux méthodes suivantes pour limiter l’étendue de la recherche à un type de symbole spécifique :  
+ Les valeurs dans cette énumération sont passées aux méthodes suivantes pour limiter l’étendue de la recherche à un type de symbole spécifique :  
   
 -   [IDiaSession::findSymbolByAddr](../../debugger/debug-interface-access/idiasession-findsymbolbyaddr.md)  
   
@@ -203,7 +203,7 @@ enum SymTagEnum {
   
 -   [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : cvconst.h  
   
 ## <a name="see-also"></a>Voir aussi  

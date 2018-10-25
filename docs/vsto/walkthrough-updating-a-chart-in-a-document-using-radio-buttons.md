@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a72a5cb07f39f8d2acaec59e5da5a66a30293453
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 5e82c50c83a8824b4570779034b0480aa0615a30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258218"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904672"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Procédure pas à pas : Mise à jour d’un graphique dans un document à l’aide de cases d’option
   Cette procédure pas à pas montre comment utiliser des cases d'option dans une personnalisation de document pour Microsoft Office Word dans le but de donner aux utilisateurs la possibilité de sélectionner des styles de graphique dans le document.  
@@ -30,15 +30,15 @@ ms.locfileid: "35258218"
   
  Cette procédure pas à pas décrit les tâches suivantes :  
   
--   Ajout d'un graphique au document d'un projet de niveau document au moment du design.  
+- Ajout d'un graphique au document d'un projet de niveau document au moment du design.  
   
--   Regroupement de cases d'option en les ajoutant à un contrôle utilisateur.  
+- Regroupement de cases d'option en les ajoutant à un contrôle utilisateur.  
   
--   Changement de style de graphique quand une option est sélectionnée.  
+- Changement de style de graphique quand une option est sélectionnée.  
   
- Pour voir le résultat dans un exemple complet, consultez l’exemple des contrôles Word [exemples de développement Office et des procédures pas à pas](../vsto/office-development-samples-and-walkthroughs.md).  
+  Pour voir le résultat dans un exemple complet, consultez l’exemple des contrôles Word [exemples de développement Office et des procédures pas à pas](../vsto/office-development-samples-and-walkthroughs.md).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  

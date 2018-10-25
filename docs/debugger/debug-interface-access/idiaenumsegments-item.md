@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSegments::Item | Documents Microsoft
+title: IDiaEnumSegments::Item | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64089113f0ad5b0e3fea0189a5dc3bf680213158
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 19d42e8bb2cdf950043b6a60a0db82706cf582ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466342"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896404"
 ---
 # <a name="idiaenumsegmentsitem"></a>IDiaEnumSegments::Item
 Récupère un segment au moyen d’un index.  
@@ -37,7 +37,7 @@ HRESULT Item (
  index  
  [in] Index de la [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) objet à récupérer. L’index est comprise entre 0 et `count`-1, où `count` est retourné par la [IDiaEnumSegments::get_Count](../../debugger/debug-interface-access/idiaenumsegments-get-count.md) (méthode).  
   
- segment  
+ Segment  
  [out] Retourne un [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) objet qui représente le segment souhaité.  
   
 ## <a name="return-value"></a>Valeur de retour  

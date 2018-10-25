@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23de3ebb79acb342f711593200795246ded97c49
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e5f82437fc2a04b1df04624b33e3069a1191e811
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242812"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910691"
 ---
 # <a name="performance-session-overview"></a>Vue d’ensemble des sessions de performances
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,28 +33,28 @@ Cette vue d’ensemble explique les principes de base du profilage. Les dévelop
   
  Les étapes suivantes constituent le processus de base de l’utilisation des outils de profilage :  
   
-1.  Configurer la session de performance en spécifiant la méthode de collecte et les données à collecter.  
+1. Configurer la session de performance en spécifiant la méthode de collecte et les données à collecter.  
   
-2.  Collecter les données de profilage en exécutant l’application dans la session de performance.  
+2. Collecter les données de profilage en exécutant l’application dans la session de performance.  
   
-3.  Analyser les données afin d’identifier le problème de performance.  
+3. Analyser les données afin d’identifier le problème de performance.  
   
-4.  Modifier le code dans l’environnement de développement intégré (IDE) de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] afin d’améliorer les performances d’application du code.  
+4. Modifier le code dans l’environnement de développement intégré (IDE) de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] afin d’améliorer les performances d’application du code.  
   
-5.  Collecter des données de profilage sur le code modifié et les comparer à celles des données d’origine.  
+5. Collecter des données de profilage sur le code modifié et les comparer à celles des données d’origine.  
   
-6.  Générer un rapport qui documente l’augmentation des performances.  
+6. Générer un rapport qui documente l’augmentation des performances.  
   
- Pour utiliser les informations fournies par le profilage, vous devez disposer d’informations de symboles pour les fichiers binaires à profiler et pour les fichiers binaires du système d’exploitation Windows.  
+   Pour utiliser les informations fournies par le profilage, vous devez disposer d’informations de symboles pour les fichiers binaires à profiler et pour les fichiers binaires du système d’exploitation Windows.  
   
 ## <a name="configure-the-performance-session"></a>Configurer la session de performance  
  Pour configurer une session de profilage, sélectionnez la méthode de profilage à utiliser et les données à collecter. L’**Assistant Performance** des outils de profilage peut vous guider tout au long de la configuration de base. Vous pouvez aussi ajouter des options à l’aide des pages de propriétés de la session de performance :  
   
--   Les méthodes de profilage incluent l’échantillonnage, le suivi et l’allocation de mémoire.  
+- Les méthodes de profilage incluent l’échantillonnage, le suivi et l’allocation de mémoire.  
   
--   Les valeurs de données incluent les compteurs de performance de temps, de processeur et de système d’exploitation, ainsi que des événements d’application tels que les erreurs de page et les transitions de noyau.  
+- Les valeurs de données incluent les compteurs de performance de temps, de processeur et de système d’exploitation, ainsi que des événements d’application tels que les erreurs de page et les transitions de noyau.  
   
- Vous pouvez configurer une session de performance dans un projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] au sein de la même solution ou profiler des fichiers binaires arbitrairement via l’IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vous pouvez spécifier les propriétés de la session dans les pages de propriétés de la session de performance ou utiliser l’Assistant Profilage.  
+  Vous pouvez configurer une session de performance dans un projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] au sein de la même solution ou profiler des fichiers binaires arbitrairement via l’IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vous pouvez spécifier les propriétés de la session dans les pages de propriétés de la session de performance ou utiliser l’Assistant Profilage.  
   
 ## <a name="collect-profiling-data"></a>Collecter les données de profilage  
  Vous démarrez la collecte des données de profilage à partir de l’**Explorateur de performances**. Vous pouvez suspendre et reprendre le profilage afin de limiter le volume des données collectées. Vous pouvez également effectuer un attachement à un processus qui est déjà en cours d’exécution.  
@@ -66,11 +66,11 @@ Cette vue d’ensemble explique les principes de base du profilage. Les dévelop
 ## <a name="analyze-the-data-and-identify-performance-issues"></a>Analyser les données et identifier les problèmes de performances  
  Quand vous terminez une exécution de profilage, les données sont analysées et un résumé s’affiche dans les fenêtres des vues **Rapport de performances** des outils de profilage. Les données de profilage sont collectées pour la pile des appels et pour les fonctions individuelles de l’application cible. Les vues de rapport affichent l’analyse des performances pour des plages de données des processus, threads, modules, fonctions et lignes de code source de l’application. Les valeurs des données de profilage pour une fonction incluent les éléments suivants :  
   
--   Le temps total lié à la fonction et aux fonctions enfants appelées par la fonction (valeurs inclusives).  
+- Le temps total lié à la fonction et aux fonctions enfants appelées par la fonction (valeurs inclusives).  
   
--   Le temps passé à exécuter uniquement le code dans la fonction (valeurs exclusives).  
+- Le temps passé à exécuter uniquement le code dans la fonction (valeurs exclusives).  
   
- Vous pouvez analyser les données de profilage de manière optimale grâce à plus de douze vues différentes. Vous pouvez personnaliser les vues pour filtrer et trier les données afin de déterminer les fonctions qui risquent de provoquer des problèmes de performance. Le filtrage par chemin réactif met immédiatement en surbrillance les chemins les plus actifs dans les vues Arborescence des appels et Modules.  
+  Vous pouvez analyser les données de profilage de manière optimale grâce à plus de douze vues différentes. Vous pouvez personnaliser les vues pour filtrer et trier les données afin de déterminer les fonctions qui risquent de provoquer des problèmes de performance. Le filtrage par chemin réactif met immédiatement en surbrillance les chemins les plus actifs dans les vues Arborescence des appels et Modules.  
   
 ## <a name="modify-the-application-code"></a>Modifier le code de l’application  
  Après avoir isolé un ou plusieurs problèmes de performance pertinents, vous pouvez modifier le code à l’aide de l’IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puis collecter les données de profilage relatives aux modifications apportées.  

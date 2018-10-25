@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointResolution2::GetBreakpointType | Documents Microsoft
+title: IDebugBreakpointResolution2::GetBreakpointType | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3c25a1c83f91de1e97dd4f328ea68c572867f0c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3a98ccf6e211233aed6099f554733a51f40c3363
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106628"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875267"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
 Obtient le type du point d’arrêt représenté par cette résolution.  
@@ -50,7 +50,7 @@ int GetBreakpointType(
  Le point d’arrêt peut être un code ou un point d’arrêt, par exemple.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour une simple `CDebugBreakpointResolution` objet qui expose la [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) interface.  
+ L’exemple suivant montre comment implémenter cette méthode pour une simple `CDebugBreakpointResolution` objet qui expose le [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) interface.  
   
 ```  
 HRESULT CDebugBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)    

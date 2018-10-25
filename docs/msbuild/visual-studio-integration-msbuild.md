@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65dd8415dc57c026d2a913b209340e381b07bc6a
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 874642371f173b56a174dabdd17ee1cf50cc79fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179139"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875474"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Intégration de Visual Studio (MSBuild)
 Visual Studio héberge [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pour charger et générer des projets managés. Dans la mesure où [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] est responsable du projet, la plupart des projets au format [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] peut être utilisé sans problème dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], même si le projet a été créé par un outil différent et possède un processus de génération personnalisé.  
@@ -68,9 +68,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="in-process-compilers"></a>Compilateurs in-process  
  Lorsque c'est possible, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tente d'utiliser la version intra-processus du compilateur [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] pour améliorer les performances. (Non applicable à [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].) Pour un fonctionnement correct, les conditions suivantes doivent être respectées :  
   
--   Une cible du projet doit contenir une tâche nommée `Vbc` pour les projets [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].  
+- Une cible du projet doit contenir une tâche nommée `Vbc` pour les projets [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].  
   
--   Le paramètre `UseHostCompilerIfAvailable` de la tâche doit avoir la valeur true.  
+- Le paramètre `UseHostCompilerIfAvailable` de la tâche doit avoir la valeur true.  
   
 ## <a name="design-time-intellisense"></a>IntelliSense au moment du design  
  Pour bénéficier de la prise en charge d'IntelliSense dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] avant la génération d'un assembly de sortie, les conditions suivantes doivent être respectées :  
@@ -157,23 +157,23 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="reference-resolution"></a>Résolution de référence  
  La résolution des références est le processus consistant à utiliser des éléments de référence stockés dans un fichier projet pour localiser les assemblys actifs. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] doit déclencher la résolution de références pour afficher les propriétés détaillées de chaque référence dans la fenêtre **Propriétés** . La liste suivante décrit les trois types de références et leur mode de résolution.  
   
--   Références d'assembly :  
+- Références d'assembly :  
   
-     Le système de projet appelle une cible avec le nom connu `ResolveAssemblyReferences`. Cette cible doit produire des éléments avec le nom de type d'élément `ReferencePath`. Chacun de ces éléments doit avoir une spécification d'élément (la valeur de l'attribut `Include` d'un élément) qui contient le chemin d'accès complet à la référence. Les éléments doivent avoir toutes les métadonnées des éléments d'entrée passés en plus des nouvelles métadonnées suivantes :  
+   Le système de projet appelle une cible avec le nom connu `ResolveAssemblyReferences`. Cette cible doit produire des éléments avec le nom de type d'élément `ReferencePath`. Chacun de ces éléments doit avoir une spécification d'élément (la valeur de l'attribut `Include` d'un élément) qui contient le chemin d'accès complet à la référence. Les éléments doivent avoir toutes les métadonnées des éléments d'entrée passés en plus des nouvelles métadonnées suivantes :  
   
-    -   `CopyLocal`, indiquant si l'assembly doit être copié dans le dossier de sortie ; la valeur peut être true ou false.  
+  - `CopyLocal`, indiquant si l'assembly doit être copié dans le dossier de sortie ; la valeur peut être true ou false.  
   
-    -   `OriginalItemSpec`, contenant la spécification d'élément d'origine de la référence.  
+  - `OriginalItemSpec`, contenant la spécification d'élément d'origine de la référence.  
   
-    -   `ResolvedFrom`, avec la valeur "{TargetFrameworkDirectory}" s'il a été résolu à partir du répertoire [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] .  
+  - `ResolvedFrom`, avec la valeur "{TargetFrameworkDirectory}" s'il a été résolu à partir du répertoire [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] .  
   
--   Références COM :  
+- Références COM :  
   
-     Le système de projet appelle une cible avec le nom connu `ResolveCOMReferences`. Cette cible doit produire des éléments avec le nom de type d'élément `ComReferenceWrappers`. Chacun de ces éléments doit posséder une spécification d'élément qui contient le chemin d'accès complet à l'assembly d'interopérabilité pour la référence COM. Les éléments doivent avoir toutes les métadonnées des éléments d'entrée passés, en plus de nouvelles métadonnées portant le nom `CopyLocal`, qui indiquent si l'assembly doit être copié dans le dossier de sortie ; la valeur peut être true ou false.  
+   Le système de projet appelle une cible avec le nom connu `ResolveCOMReferences`. Cette cible doit produire des éléments avec le nom de type d'élément `ComReferenceWrappers`. Chacun de ces éléments doit posséder une spécification d'élément qui contient le chemin d'accès complet à l'assembly d'interopérabilité pour la référence COM. Les éléments doivent avoir toutes les métadonnées des éléments d'entrée passés, en plus de nouvelles métadonnées portant le nom `CopyLocal`, qui indiquent si l'assembly doit être copié dans le dossier de sortie ; la valeur peut être true ou false.  
   
--   Références natives  
+- Références natives  
   
-     Le système de projet appelle une cible avec le nom connu `ResolveNativeReferences`. Cette cible doit produire des éléments avec le nom de type d'élément `NativeReferenceFile`. Les éléments doivent avoir toutes les métadonnées des éléments d'entrée passés, en plus d'une nouvelle métadonnée nommée `OriginalItemSpec`, contenant la spécification d'élément d'origine de la référence.  
+   Le système de projet appelle une cible avec le nom connu `ResolveNativeReferences`. Cette cible doit produire des éléments avec le nom de type d'élément `NativeReferenceFile`. Les éléments doivent avoir toutes les métadonnées des éléments d'entrée passés, en plus d'une nouvelle métadonnée nommée `OriginalItemSpec`, contenant la spécification d'élément d'origine de la référence.  
   
 ## <a name="performance-shortcuts"></a>Raccourcis de performances  
  Si vous démarrez le débogage dans l'interface utilisateur de Visual Studio (en choisissant la touche F5 ou en choisissant **Déboguer** > **, dans le menu Démarrer le débogage**), le processus de génération utilise une vérification des mises à jour rapide pour améliorer les performances. Dans les cas où les générations personnalisées créent les fichiers qui sont générés à leur tour, la vérification de mise à jour rapide n'identifie pas correctement les fichiers modifiés. Les projets qui ont besoin de vérifications de mise à jour plus complètes peuvent désactiver la vérification rapide en définissant la variable d'environnement `DISABLEFASTUPTODATECHECK=1`. Les projets peuvent également définir cela comme une propriété MSBuild dans le projet ou dans un fichier que le projet importe.  

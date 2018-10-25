@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2::LaunchSuspended | Documents Microsoft
+title: IDebugPortEx2::LaunchSuspended | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f22afc50a1a2874d4853acbf9ff72cae622e790
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0a16241e406ea89b33c417bd873949979c3f6e82
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114889"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882312"
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
 Lance un fichier exécutable.  
@@ -55,25 +55,25 @@ int LaunchSuspended(
   
 #### <a name="parameters"></a>Paramètres  
  `pszExe`  
- [in] Le nom de l’exécutable à lancer. Cela peut être un chemin d’accès complet ou le relatif au répertoire de travail spécifié dans le `pszDir` paramètre.  
+ [in] Le nom de l’exécutable à lancer. Cela peut être un chemin d’accès complet ou un relatif au répertoire de travail spécifié dans le `pszDir` paramètre.  
   
  `pszArgs`  
- [in] Arguments à passer à l’exécutable. Peut-être une valeur null s’il n’existe aucun argument.  
+ [in] Arguments à passer à l’exécutable. Peut-être une valeur null s’il en existe aucun argument.  
   
  `pszDir`  
- [in] Le nom du répertoire de travail utilisé par le fichier exécutable. Peut-être une valeur null si aucun répertoire de travail n’est nécessaire.  
+ [in] Le nom du répertoire de travail utilisé par l’exécutable. Peut-être une valeur null si aucun répertoire de travail n’est requis.  
   
  `bstrEnv`  
- [in] Bloc d’environnement de chaînes se terminant par null, suivi d’un terminateur NULL supplémentaire.  
+ [in] Bloc d’environnement de chaînes se terminant par null, suivie d’un terminateur NULL supplémentaire.  
   
  `hStdInput`  
- [in] Handle vers un autre flux d’entrée. Peut-être 0 si la redirection n’est pas nécessaire.  
+ [in] Handle vers un autre flux d’entrée. Peut-être 0 si la redirection n’est pas obligatoire.  
   
  `hStdOutput`  
- [in] Handle vers un flux de sortie de remplacement. Peut-être 0 si la redirection n’est pas nécessaire.  
+ [in] Handle vers un flux de sortie autre. Peut-être 0 si la redirection n’est pas obligatoire.  
   
  `hStdError`  
- [in] Handle vers un flux de sortie d’erreur secondaire. Peut-être 0 si la redirection n’est pas nécessaire.  
+ [in] Handle vers un flux de sortie d’erreur alternative. Peut-être 0 si la redirection n’est pas obligatoire.  
   
  `ppPortProcess`  
  [out] Retourne un [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) objet qui représente le processus lancé.  
@@ -82,7 +82,7 @@ int LaunchSuspended(
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode doit lancer le processus afin qu’il est suspendu et ne pas en cours d’exécution de code. Le [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md) méthode est appelée pour reprendre le processus.  
+ Cette méthode doit lancer le processus qu’il est donc suspendue et ne pas en cours d’exécution de code. Le [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md) méthode est appelée pour reprendre le processus.  
   
  Un programme peut également être lancé à partir d’un moteur de débogage. Pour plus d’informations, consultez [lancement d’un programme](../../../extensibility/debugger/launching-a-program.md).  
   

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3002a18e4575ab57b77d90c4b7d94662683cf9d
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 81b4fb4938c1b87f4a9ca31cdc6035c4c6f124d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497925"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926460"
 ---
 # <a name="deploy-custom-start-pages"></a>Déployer les Pages de démarrage personnalisées
 
@@ -42,17 +42,17 @@ Vous pouvez obtenir le modèle de projet Page de démarrage à l’aide de **Ges
 
  Pour créer un déploiement VSIX sans utiliser le modèle de projet Page de démarrage, commencez par créer un *.vsix* fichier pour la Page de démarrage dans une des deux façons suivantes :
 
--   En ajoutant vos fichiers de Page de démarrage personnalisées à un projet VSIX vide. Pour plus d’informations, consultez [modèle de projet VSIX](../extensibility/vsix-project-template.md).
+- En ajoutant vos fichiers de Page de démarrage personnalisées à un projet VSIX vide. Pour plus d’informations, consultez [modèle de projet VSIX](../extensibility/vsix-project-template.md).
 
--   En créant manuellement un *.vsix* fichier. Pour créer un *.vsix* fichier manuellement :
+- En créant manuellement un *.vsix* fichier. Pour créer un *.vsix* fichier manuellement :
 
-    1.  Créer le *extension.vsixmanifest* fichier et le *[Content_Types] .xml* fichier dans un nouveau dossier. Pour plus d’informations, consultez [Anatomie d’un package VSIX](../extensibility/anatomy-of-a-vsix-package.md).
+  1.  Créer le *extension.vsixmanifest* fichier et le *[Content_Types] .xml* fichier dans un nouveau dossier. Pour plus d’informations, consultez [Anatomie d’un package VSIX](../extensibility/anatomy-of-a-vsix-package.md).
 
-    2.  Dans l’Explorateur Windows, le dossier qui contient les deux fichiers XML avec le bouton droit, cliquez sur **envoyer vers**, puis cliquez sur dossier compressé (zippé). Renommer résultant *.zip* fichier *Filename.vsix*, où nom_fichier représente le nom du fichier redistribuable qui installe votre package.
+  2.  Dans l’Explorateur Windows, le dossier qui contient les deux fichiers XML avec le bouton droit, cliquez sur **envoyer vers**, puis cliquez sur dossier compressé (zippé). Renommer résultant *.zip* fichier *Filename.vsix*, où nom_fichier représente le nom du fichier redistribuable qui installe votre package.
 
- Pour Visual Studio de reconnaître une Page de démarrage, le `Content Element` du manifeste VSIX doit contenir un `CustomExtension Element` qui a le `Type` attribut la valeur `"StartPage"`. Une extension de la Page de démarrage qui a été installée à l’aide de déploiement VSIX s’affiche dans le **personnaliser la Page de démarrage** liste sur le **démarrage** page d’options en tant que **[Extension installée]** *Nom de l’extension*.
+  Pour Visual Studio de reconnaître une Page de démarrage, le `Content Element` du manifeste VSIX doit contenir un `CustomExtension Element` qui a le `Type` attribut la valeur `"StartPage"`. Une extension de la Page de démarrage qui a été installée à l’aide de déploiement VSIX s’affiche dans le **personnaliser la Page de démarrage** liste sur le **démarrage** page d’options en tant que **[Extension installée]** *Nom de l’extension*.
 
- Si votre package de la Page de démarrage inclut des assemblys, vous devez ajouter l’inscription de chemin d’accès de liaison afin qu’ils soient disponibles au démarrage de Visual Studio. Pour ce faire, assurez-vous que votre package inclut un *.pkgdef* fichier qui comporte les informations suivantes.
+  Si votre package de la Page de démarrage inclut des assemblys, vous devez ajouter l’inscription de chemin d’accès de liaison afin qu’ils soient disponibles au démarrage de Visual Studio. Pour ce faire, assurez-vous que votre package inclut un *.pkgdef* fichier qui comporte les informations suivantes.
 
 ```
 [$RootKey$\BindingPaths\{Insert a new GUID here}]
@@ -85,7 +85,7 @@ Vous pouvez obtenir le modèle de projet Page de démarrage à l’aide de **Ges
      Cela indique à Visual Studio de rechercher dans le nouvel emplacement de la Page de démarrage.
 
 ## <a name="file-copy-deployment"></a>Déploiement de copie de fichier
- Vous n’êtes pas obligé de créer un *.vsix* fichier pour déployer une Page de démarrage personnalisée. Au lieu de cela, vous pouvez copier le balisage et les fichiers de prise en charge directement dans l’utilisateur * \StartPages\* dossier. Le **personnaliser la Page de démarrage** liste sur le **démarrage** options page répertorie chaque *.xaml* fichier dans ce dossier, ainsi que le chemin d’accès, par exemple, *% USERPROFILE%\My Documents\Visual Studio {version} \StartPages\\{nom de fichier} .xaml*. Si votre Page de démarrage inclut des références aux assemblys privés, vous devez les copier et les coller dans le * \PrivateAssemblies\* dossier.
+ Vous n’êtes pas obligé de créer un *.vsix* fichier pour déployer une Page de démarrage personnalisée. Au lieu de cela, vous pouvez copier le balisage et les fichiers de prise en charge directement dans l’utilisateur <em>\StartPages\* dossier. Le **personnaliser la Page de démarrage</em>*  liste sur le **démarrage** options page répertorie chaque *.xaml* fichier dans ce dossier, ainsi que le chemin d’accès, par exemple, *%USERPROFILE%\My Documents\Visual Studio {version} \StartPages\\{nom de fichier} .xaml*. Si votre Page de démarrage inclut des références aux assemblys privés, vous devez les copier et les coller dans le * \PrivateAssemblies\* dossier.
 
  Pour distribuer une Page de démarrage que vous avez créé sans l’empaqueter dans un *.vsix* appropriés, nous recommandons que vous utilisez une stratégie de copie de fichier de base, par exemple, un script de commandes, ou toute autre technologie de déploiement qui vous permet de placer les fichiers le répertoires requis.
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cd391cd922d32dc466a30e5ff1bf037cbd22a33
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: bc225862ee4b9fbc2c4c94aaab4f410719391ee7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371028"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926590"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gérer les contrôleurs de test et les agents de test
 
@@ -52,7 +52,7 @@ Il est possible d’ajouter un agent de test à un contrôleur de test différen
       2. Entrez le mot de passe dans **Mot de passe**.
 
         |**Informations importantes sur le compte d’utilisateur**|
-        |--------------------------------------------|
+        |-|
         |- Les mots de passe null ne sont pas pris en charge pour les comptes d’utilisateurs.|
         |- Si vous souhaitez utiliser le collecteur IntelliTrace ou l’émulation réseau, le compte d’utilisateur doit être membre du groupe Administrateurs.|
         |- Si le nom d’utilisateur de l’agent n’est pas dans le service d’agent, celui-ci essaiera de l’ajouter, ce qui nécessite des autorisations sur le contrôleur de test.|
@@ -115,7 +115,7 @@ Pour pouvoir être supprimé, un agent de test doit être hors connexion.
 Les statuts possibles d’un agent de test sont les suivants :
 
 |Status|Description|
-|------------|-----------------|
+|-|-----------------|
 |Exécution du test en cours|L'exécution des tests est en cours.|
 |Prêt|Disponible pour l'exécution de tests et la collecte de données et de diagnostics|
 |Hors connexion|Non disponible pour l'exécution de tests et la collecte de données et de diagnostics|
@@ -141,7 +141,7 @@ Vous pouvez modifier l'état et d'autres paramètres pour les agents de test à 
 1. Modifiez les propriétés de l’agent de test suivantes si nécessaire :
 
 |Propriété de l’agent de test|Description|
-|-------------------------|-----------------|
+|-|-----------------|
 |**Poids**|Utilisé pour distribuer la charge lorsque vous utilisez des agents de test avec des niveaux de performance différents. Par exemple, un agent de test avec un poids de 100 reçoit une charge deux fois supérieure à celle d’un agent de test avec un poids de 50.|
 |**Commutation IP**|Utilisé pour configurer la commutation IP. La commutation IP permet à un agent de test d'envoyer des demandes à un serveur à l'aide d'une plage d'adresses IP. Cela simule des appels provenant de différents ordinateurs clients.<br /><br /> La commutation IP est importante si votre test de charge accède à une batterie de serveurs web. La plupart des programmes d’équilibrage de charge établissent l’affinité entre un client et un serveur web particulier en utilisant l’adresse IP du client. Si toutes les demandes semblent provenir d’un seul client, l’équilibrage de charge n’équilibre pas la charge. Pour obtenir le bon équilibre de charge dans la batterie de serveurs web, assurez-vous que les demandes proviennent d’une plage d’adresses IP. **Remarque :** Vous pouvez spécifier une carte réseau ou utiliser **(Non assigné)** pour sélectionner automatiquement une carte réseau qui n’est pas actuellement utilisée. <br /><br /> Pour utiliser la fonctionnalité de commutation IP, le service Visual Studio Test Agent doit s’exécuter en tant qu’utilisateur du groupe Administrateurs de cet ordinateur agent. Cet utilisateur est sélectionné pendant la configuration de l'agent, mais peut être modifié en modifiant les propriétés du service puis en le redémarrant.<br /><br /> Pour vérifier que la commutation IP fonctionne correctement, activez le processus d’enregistrement du journal d’IIS sur le serveur web, puis utilisez les fonctionnalités de ce processus pour vérifier que les requêtes proviennent des adresses IP que vous avez configurées.|
 |**Attributs**|Ensemble de paires nom/valeur qui peuvent être utilisées dans la sélection d’agent de test. Par exemple, un test peut exiger un système d'exploitation particulier. Vous pouvez ajouter des attributs dans l’onglet **Rôles** de votre fichier de paramètres de test et ils peuvent être utilisés pour sélectionner un agent de test qui a des attributs identiques. Si vous voulez exécuter un test sur plusieurs ordinateurs, créez un attribut dans le rôle de paramètres de test qui est configuré pour exécuter vos tests, puis configurez un attribut correspondant sur chaque agent de test que vous utilisez dans ce rôle. **Remarque :** Ce paramètre est disponible seulement pour les agents de test inscrits auprès d’un contrôleur de test qui n’est lui-même pas inscrit auprès d’un projet, car ces attributs sont utilisés seulement dans les paramètres de test pour Visual Studio.|

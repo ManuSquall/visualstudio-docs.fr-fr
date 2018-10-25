@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08b6c27bdd3f6806545551a766d92550622001ee
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: bc43329070795415962cf18068f8320ae7458604
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500405"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905413"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Exposer des événements dans le SDK Visual Studio
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] vous permet de la source d’événements à l’aide d’automation. Nous recommandons que vous source d’événements pour les projets et éléments de projet.  
@@ -28,23 +28,23 @@ ms.locfileid: "39500405"
   
  Le processus suivant explique la façon dont les événements spécifiques au VSPackage sont retournés.  
   
-1.  Démarrage de l’environnement.  
+1. Démarrage de l’environnement.  
   
-2.  Il lit à partir du Registre de tous les noms de valeur dans le **Automation**, **AutomationEvents**, et **AutomationProperties** clés de tous les VSPackages et stocke ces noms dans un table.  
+2. Il lit à partir du Registre de tous les noms de valeur dans le **Automation**, **AutomationEvents**, et **AutomationProperties** clés de tous les VSPackages et stocke ces noms dans un table.  
   
-3.  Un utilisateur d’automation appelle, dans cet exemple, `DTE.Events.AutomationProjectsEvents` ou `DTE.Events.AutomationProjectItemsEvents`.  
+3. Un utilisateur d’automation appelle, dans cet exemple, `DTE.Events.AutomationProjectsEvents` ou `DTE.Events.AutomationProjectItemsEvents`.  
   
-4.  L’environnement recherche le paramètre de chaîne dans la table et charge le VSPackage correspondant.  
+4. L’environnement recherche le paramètre de chaîne dans la table et charge le VSPackage correspondant.  
   
-5.  L’environnement appelle le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> méthode en utilisant le nom passé dans l’appel ; dans cet exemple, `AutomationProjectsEvents` ou `AutomationProjectItemsEvents`.  
+5. L’environnement appelle le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> méthode en utilisant le nom passé dans l’appel ; dans cet exemple, `AutomationProjectsEvents` ou `AutomationProjectItemsEvents`.  
   
-6.  Le package Visual Studio crée un objet racine qui possède des méthodes telles que `get_AutomationProjectsEvents` et `get_AutomationProjectItemEvents` , puis retourne un pointeur IDispatch pour l’objet.  
+6. Le package Visual Studio crée un objet racine qui possède des méthodes telles que `get_AutomationProjectsEvents` et `get_AutomationProjectItemEvents` , puis retourne un pointeur IDispatch pour l’objet.  
   
-7.  L’environnement appelle la méthode appropriée en fonction du nom passé dans l’appel d’automation.  
+7. L’environnement appelle la méthode appropriée en fonction du nom passé dans l’appel d’automation.  
   
-8.  Le `get_` méthode crée un autre objet IDispatch d’événements qui implémente à la fois le `IConnectionPointContainer` interface et le `IConnectionPoint` interface et retourne un `IDispatchpointer` à l’objet.  
+8. Le `get_` méthode crée un autre objet IDispatch d’événements qui implémente à la fois le `IConnectionPointContainer` interface et le `IConnectionPoint` interface et retourne un `IDispatchpointer` à l’objet.  
   
- Pour exposer un événement à l’aide d’automation, vous devez répondre à <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> et de surveiller les chaînes que vous ajoutez au Registre. Dans l’exemple de projet de base, les chaînes sont *BscProjectsEvents* et *BscProjectItemsEvents*.  
+   Pour exposer un événement à l’aide d’automation, vous devez répondre à <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> et de surveiller les chaînes que vous ajoutez au Registre. Dans l’exemple de projet de base, les chaînes sont *BscProjectsEvents* et *BscProjectItemsEvents*.  
   
 ## <a name="registry-entries-from-the-basic-project-sample"></a>Entrées de Registre à partir de l’exemple de projet de base  
  Cette section indique où ajouter les valeurs d’événement automation dans le Registre.  

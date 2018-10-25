@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_arrayIndexType | Documents Microsoft
+title: IDiaSymbol::get_arrayIndexType | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1212bb62888d1bed546a7c12ae4cfc48c22d0a07
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a3d8890e4a1a891cc1efe622b78e185b83a32f81
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463873"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882403"
 ---
 # <a name="idiasymbolgetarrayindextype"></a>IDiaSymbol::get_arrayIndexType
-Récupère l’interface du symbole du type d’index de tableau du symbole.  
+Récupère l’interface de symbole du type d’index de tableau du symbole.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,9 +43,9 @@ HRESULT get_arrayIndexType (
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
 ## <a name="remarks"></a>Notes  
- Certains langages peuvent spécifier le type utilisé comme un index de tableau. Le symbole retourné par cette méthode spécifie ce type.  
+ Certains langages peuvent spécifier le type utilisé en tant qu’index vers un tableau. Le symbole retourné par cette méthode spécifie ce type.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
   
 |Spécification|Description|  
 |-----------------|-----------------|  

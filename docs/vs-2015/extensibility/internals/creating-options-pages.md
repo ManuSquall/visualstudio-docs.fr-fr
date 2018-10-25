@@ -16,12 +16,12 @@ ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 90a99ca6f577ed7a04c9b1623c767484e592b4eb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 555234ae1c35c496b1fb5b1361efec0100479a35
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243085"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893687"
 ---
 # <a name="creating-options-pages"></a>Création de pages Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,17 +51,17 @@ Dans le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] infrastructure de packag
 ## <a name="implementing-dialogpage-class"></a>Classe d’implémentation DialogPage  
  Objet qui fournit l’implémentation d’un VSPackage d’un <xref:Microsoft.VisualStudio.Shell.DialogPage>-type dérivé peut tirer parti des fonctionnalités héritées suivantes :  
   
--   Une fenêtre d’interface utilisateur par défaut.  
+- Une fenêtre d’interface utilisateur par défaut.  
   
--   Valeur par défaut un mécanisme de persistance disponible soit if <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> est appliqué à la classe, ou si le <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A> propriété est définie sur `true` pour le <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> qui est appliqué à la classe.  
+- Valeur par défaut un mécanisme de persistance disponible soit if <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> est appliqué à la classe, ou si le <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A> propriété est définie sur `true` pour le <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> qui est appliqué à la classe.  
   
--   Prise en charge d’Automation.  
+- Prise en charge d’Automation.  
   
- La configuration minimale requise pour un objet qui implémente un **Outils/Options** à l’aide de la page <xref:Microsoft.VisualStudio.Shell.DialogPage> est l’ajout de propriétés publiques.  
+  La configuration minimale requise pour un objet qui implémente un **Outils/Options** à l’aide de la page <xref:Microsoft.VisualStudio.Shell.DialogPage> est l’ajout de propriétés publiques.  
   
- Si la classe est correctement inscrite comme un **Outils/Options** page fournisseur, puis ses propriétés publiques sont disponibles sur le **Options** section de la **outils** menu sous la forme d’un grille des propriétés.  
+  Si la classe est correctement inscrite comme un **Outils/Options** page fournisseur, puis ses propriétés publiques sont disponibles sur le **Options** section de la **outils** menu sous la forme d’un grille des propriétés.  
   
- Toutes ces fonctionnalités par défaut peuvent être substituées. Par exemple, pour créer un utilisateur plus sophistiqué interface nécessite uniquement de remplacer l’implémentation par défaut de <xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>.  
+  Toutes ces fonctionnalités par défaut peuvent être substituées. Par exemple, pour créer un utilisateur plus sophistiqué interface nécessite uniquement de remplacer l’implémentation par défaut de <xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>.  
   
 ## <a name="example"></a>Exemple  
  Ce qui suit est une implémentation simple « hello world » d’une page d’options. Ajouter le code suivant à un projet par défaut créé par le modèle de Package Visual Studio avec le **commande de Menu** option sélectionnée va montrer correctement de fonctionnalité de page d’option.  

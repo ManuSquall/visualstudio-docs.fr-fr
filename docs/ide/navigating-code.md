@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb711763e96cf6959a71b002f09cefa1ced44734
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 6ac6fb3ae1f8c4e7fb48c9cd9a0d2b77cb875094
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626618"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894467"
 ---
 # <a name="navigate-code"></a>Naviguer dans le code
 
@@ -65,10 +65,10 @@ Pour masquer la barre de navigation, changez l’option **Barre de navigation** 
 
 Cette option permet de rechercher toutes les références à l’élément sélectionné dans la solution. Vous pouvez l’utiliser pour vérifier l’existence d’éventuels effets secondaires d’une refactorisation volumineuse or de code « mort ». Appuyez sur **F8** pour basculer d’un résultat à un autre. Pour plus d’informations, consultez [Rechercher des références dans votre code](finding-references.md).
 
-Entrée        | Fonction
+Entrée | Fonction
 ------------ | ---
 **Clavier** | Placez le curseur de texte à l’intérieur du nom de type, puis appuyez sur **Maj**+**F12**
-**Souris**    | Sélectionnez **Rechercher toutes les références** dans le menu contextuel
+**Souris** | Sélectionnez **Rechercher toutes les références** dans le menu contextuel
 
 ## <a name="reference-highlighting"></a>Mise en surbrillance des références
 
@@ -104,37 +104,37 @@ Découvrez plus en détail ces commandes dans la rubrique [Rechercher du code à
 
 L’option Atteindre la définition permet d’atteindre la définition de l’élément sélectionné. Pour plus d’informations, consultez [Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md).
 
-Entrée        | Fonction
+Entrée | Fonction
 ------------ | ---
 **Clavier** | Placez le curseur de texte à l’intérieur du nom de type, puis appuyez sur **F12**.
-**Souris**    | Cliquez avec le bouton droit sur le nom de type et sélectionnez **Atteindre la définition** OU appuyez sur **Ctrl**, puis cliquez sur le nom de type (nouveauté de Visual Studio 2017 version 15.4)
+**Souris** | Cliquez avec le bouton droit sur le nom de type et sélectionnez **Atteindre la définition** OU appuyez sur **Ctrl**, puis cliquez sur le nom de type (nouveauté de Visual Studio 2017 version 15.4)
 
 ## <a name="peek-definition"></a>Aperçu de définition
 
 L’option Aperçu de la définition affiche la définition de l’élément sélectionné dans une fenêtre sans vous obliger à quitter votre emplacement actuel dans l’éditeur de code. Pour plus d’informations, consultez [Guide pratique pour afficher et modifier le code avec l’Aperçu de définition](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) et [Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md).
 
-Entrée        | Fonction
+Entrée | Fonction
 ------------ | ---
 **Clavier** | Placez le curseur de texte à l’intérieur du nom de type, puis appuyez sur **Alt**+**F12**
-**Souris**    | Cliquez avec le bouton droit sur le nom de type et sélectionnez **Aperçu de la définition** OU appuyez sur **Ctrl** et cliquez sur le nom de type (si l’option **Ouvrir la définition dans l’aperçu** est sélectionnée)
+**Souris** | Cliquez avec le bouton droit sur le nom de type et sélectionnez **Aperçu de la définition** OU appuyez sur **Ctrl** et cliquez sur le nom de type (si l’option **Ouvrir la définition dans l’aperçu** est sélectionnée)
 
 ## <a name="go-to-implementation"></a>Accéder à l’implémentation
 
 L’option Accéder à l’implémentation vous permet de naviguer d’un type ou d’une classe de base vers ses implémentations. S’il existe plusieurs implémentations, elles sont répertoriées dans la fenêtre **Résultats de la recherche de symbole** :
 
-Entrée        | Fonction
+Entrée | Fonction
 ------------ | ---
 **Clavier** | Placez le curseur de texte à l’intérieur du nom de type, puis appuyez sur **Ctrl**+**F12**
-**Souris**    | Cliquez avec le bouton droit sur le nom de type et sélectionnez **Accéder à l’implémentation**.
+**Souris** | Cliquez avec le bouton droit sur le nom de type et sélectionnez **Accéder à l’implémentation**.
 
 ## <a name="call-hierarchy"></a>Hiérarchie d'appels
 
 Vous pouvez afficher les appels en provenance et à destination d’une méthode dans la [fenêtre Hiérarchie d’appels](../ide/reference/call-hierarchy.md):
 
-Entrée        | Fonction
+Entrée | Fonction
 ------------ | ---
 **Clavier** | Placez le curseur de texte à l’intérieur du nom de type, puis appuyez sur **Ctrl**+**K**, **Ctrl**+**T**
-**Souris**    | Cliquez avec le bouton droit sur le nom du membre, puis sélectionnez **Afficher la hiérarchie d’appels**
+**Souris** | Cliquez avec le bouton droit sur le nom du membre, puis sélectionnez **Afficher la hiérarchie d’appels**
 
 ## <a name="next-method-and-previous-method-commands-visual-basic"></a>Commandes Méthode suivante et Méthode précédente (Visual Basic)
 

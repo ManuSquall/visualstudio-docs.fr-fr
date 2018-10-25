@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c366ce3d393e639590e5d45fc55ad5523be920b6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5d51139d2e5197607de2255b267c24bf2a9db2b3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943864"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919063"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>Générer une substitution dans Visual Studio
 
@@ -36,13 +36,13 @@ Cette génération de code s’applique à :
 
    - C# :
 
-    ![Override IntelliSense C#](media/override-intellisense-cs.png)
+      ![Override IntelliSense C#](media/override-intellisense-cs.png)
 
    - Visual Basic :
 
-    ![Override IntelliSense VB](media/override-intellisense-vb.png)
+      ![Override IntelliSense VB](media/override-intellisense-vb.png)
 
-1. Sélectionnez la méthode à substituer à partir de la classe de base.
+2. Sélectionnez la méthode à substituer à partir de la classe de base.
 
    > [!TIP]
    > - Utilisez l’icône Propriété ![Icône Propriété](media/override-property-cs.png) pour afficher ou masquer les propriétés dans la liste.
@@ -52,11 +52,11 @@ Cette génération de code s’applique à :
 
    - C# :
 
-      ![Résultat de la substitution (C#)](media/override-result-cs.png)
+       ![Résultat de la substitution (C#)](media/override-result-cs.png)
 
    - Visual Basic :
 
-      ![Résultat de la substitution (VB)](media/override-result-vb.png)
+       ![Résultat de la substitution (VB)](media/override-result-vb.png)
 
 ## <a name="see-also"></a>Voir aussi
 

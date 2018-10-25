@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumBaseClasses | Documents Microsoft
+title: IDebugClassField::EnumBaseClasses | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b5210859115947115bce6525cd5b6cd15c4d59d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5938809aa7fcd2e913743fc778c66205e39988e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102393"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901097"
 ---
 # <a name="idebugclassfieldenumbaseclasses"></a>IDebugClassField::EnumBaseClasses
 Crée un énumérateur pour les classes de base de cette classe.  
@@ -47,7 +47,7 @@ int EnumBaseClasses(
  En cas de réussite, retourne S_OK, renvoie la valeur S_SH_NO_BASE_CLASSES si aucune classe de base (et le `ppEnum` paramètre est défini sur une valeur null) ; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Les classes de base dans l’objet énumérateur sont spécifiés dans l’ordre de la classe de base plus immédiate (ou plus dérivée) à la classe de base plus à distance. Par exemple, étant donné les classes C++ :  
+ Les classes de base dans l’objet énumérateur sont spécifiés dans l’ordre de la classe de base plus immédiate (ou la plus dérivée) à la classe de base plus à distance. Par exemple, étant donné les classes C++ :  
   
 ```  
 class Root { }  

@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0a9d3b89e91e0540766621f0889a12482291740a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6cddf51705758d046ab66319d6ac6295f3a4b057
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175264"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894519"
 ---
 # <a name="about-domain-specific-languages"></a>À propos des langages spécifiques à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,21 +30,21 @@ Contrairement à un langage à usage général tel que c# ou UML, un langage sp�
   
  Votre entreprise et votre projet également y spécial des concepts qui peuvent être décrite avec une solution DSL. Par exemple, vous pouvez définir un DSL pour l’une de ces applications :  
   
--   Plan des chemins d’accès de navigation dans un site Web.  
+- Plan des chemins d’accès de navigation dans un site Web.  
   
--   Schémas de câblage de composants électroniques.  
+- Schémas de câblage de composants électroniques.  
   
--   Réseaux des tapis roulants et matériel pour un aéroport de manutention de bagages.  
+- Réseaux des tapis roulants et matériel pour un aéroport de manutention de bagages.  
   
- Lorsque vous concevez une solution DSL, vous définissez un *de classe de domaine* pour chacun des concepts importants dans le domaine, par exemple une page Web, lamp ou aéroport bureau d’enregistrement. Vous définissez *relations de domaine* comme lien hypertexte, câble ou un tapis roulant pour relier les concepts.  
+  Lorsque vous concevez une solution DSL, vous définissez un *de classe de domaine* pour chacun des concepts importants dans le domaine, par exemple une page Web, lamp ou aéroport bureau d’enregistrement. Vous définissez *relations de domaine* comme lien hypertexte, câble ou un tapis roulant pour relier les concepts.  
   
- Créent des utilisateurs de votre DSL *modèles.* Les modèles sont *instances* du DSL. Par exemple, ils décrivent un site Web particulier, ou le câblage d’un appareil particulier, ou système dans un aéroport particulier de gestion des bagages.  
+  Créent des utilisateurs de votre DSL *modèles.* Les modèles sont *instances* du DSL. Par exemple, ils décrivent un site Web particulier, ou le câblage d’un appareil particulier, ou système dans un aéroport particulier de gestion des bagages.  
   
- Vos utilisateurs peuvent afficher un modèle sous la forme d’un diagramme ou un formulaire Windows. Modèles peuvent également être affichés en tant que XML, qui est la façon dont ils sont stockés. Lorsque vous définissez un DSL, vous définir comment les instances de chaque classe de domaine et de la relation s’affichent sur l’écran de l’utilisateur. Une solution DSL standard s’affiche comme une collection d’icônes ou les rectangles reliées par des flèches.  
+  Vos utilisateurs peuvent afficher un modèle sous la forme d’un diagramme ou un formulaire Windows. Modèles peuvent également être affichés en tant que XML, qui est la façon dont ils sont stockés. Lorsque vous définissez un DSL, vous définir comment les instances de chaque classe de domaine et de la relation s’affichent sur l’écran de l’utilisateur. Une solution DSL standard s’affiche comme une collection d’icônes ou les rectangles reliées par des flèches.  
   
- La figure suivante illustre un modèle petit dans un DSL schématique :  
+  La figure suivante illustre un modèle petit dans un DSL schématique :  
   
- ![Modèle d’arbre généalogique Tudor](../modeling/media/tudor-familytreemodel.png "Tudor_FamilyTreeModel")  
+  ![Modèle d’arbre généalogique Tudor](../modeling/media/tudor-familytreemodel.png "Tudor_FamilyTreeModel")  
   
 ## <a name="what-you-can-do-with-dsls"></a>Ce que vous pouvez faire avec DSL  
  Une application classique d’une solution DSL consiste à générer du code de programme ou d’autres artefacts. Lorsque vous définissez votre DSL, vous pouvez définir *modèles de texte* qui lire un modèle de la solution DSL et générer des fichiers texte.  

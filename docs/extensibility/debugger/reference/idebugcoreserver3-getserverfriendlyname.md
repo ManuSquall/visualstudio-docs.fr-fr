@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::GetServerFriendlyName | Documents Microsoft
+title: IDebugCoreServer3::GetServerFriendlyName | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 811292ff5f7dd95e127e63d30bf14ee06269ff7d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4bfc596bd1b77c77ea5b54a66ca349a66e50915c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107788"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875786"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
 Récupère un nom convivial pour le serveur.  
@@ -44,15 +44,15 @@ int GetServerFriendlyName(
  [out] Retourne un nom convivial pour le serveur.  
   
 > [!NOTE]
->  L’appelant est responsable de la libération de la chaîne.  
+>  L’appelant est chargé de libérer la chaîne.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne le code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Pour les serveurs de l’utilisateur a lancé, le nom retourné par cette méthode est le nom complet du serveur. Pour les serveurs lancé automatiquement, le nom est que de l’ordinateur, le serveur s’exécute sur.  
+ Pour les serveurs de l’utilisateur a lancé, le nom retourné par cette méthode est le nom complet du serveur. Pour les serveurs d’auto-lancé, le nom est que de l’ordinateur, le serveur s’exécute sur.  
   
- Pour un nom orientés machine, appelez le [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) (méthode).  
+ Pour un nom orientée sur la machine, appelez le [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) (méthode).  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   

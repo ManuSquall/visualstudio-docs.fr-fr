@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c45f439a8bb1ae559e915769f8ea89ef7f4bf863
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29273ff1580d7fcb757a979309d38f599a9ff499
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945920"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908732"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Spécifier des événements de build personnalisés
 
@@ -37,24 +37,24 @@ Les événements de build suivent la même syntaxe que les commandes DOS, mais v
 
  Pour de meilleurs résultats, suivez ces conseils de mise en forme :
 
--   Ajoutez une instruction `call` avant tous les événements de build qui exécutent des fichiers *.bat*.
+- Ajoutez une instruction `call` avant tous les événements de build qui exécutent des fichiers *.bat*.
 
-     Exemple : `call C:\MyFile.bat`
+   Exemple : `call C:\MyFile.bat`
 
-     Exemple : `call C:\MyFile.bat call C:\MyFile2.bat`
+   Exemple : `call C:\MyFile.bat call C:\MyFile2.bat`
 
--   Placez les chemins d'accès de fichier entre guillemets.
+- Placez les chemins d'accès de fichier entre guillemets.
 
-     Exemple (pour [!INCLUDE[win8](../debugger/includes/win8_md.md)]) : "%ProgramFiles(x86)%\Microsoft SDKs\Windows\v8.0A\Bin\NETFX 4.0 Tools\gacutil.exe" -if "$(TargetPath)"
+   Exemple (pour [!INCLUDE[win8](../debugger/includes/win8_md.md)]) : "%ProgramFiles(x86)%\Microsoft SDKs\Windows\v8.0A\Bin\NETFX 4.0 Tools\gacutil.exe" -if "$(TargetPath)"
 
--   Séparez les commandes à l'aide de sauts de ligne.
+- Séparez les commandes à l'aide de sauts de ligne.
 
--   Incluez des caractères génériques si nécessaire.
+- Incluez des caractères génériques si nécessaire.
 
-     Exemple : `for %I in (*.txt *.doc *.html) do copy %I c:\`*mon_répertoire*`\`
+   Exemple : `for %I in (*.txt *.doc *.html) do copy %I c:\`*mon_répertoire*`\`
 
-    > [!NOTE]
-    >  `%I` dans le code ci-dessus doit être `%%I` dans les scripts de commandes.
+  > [!NOTE]
+  >  `%I` dans le code ci-dessus doit être `%%I` dans les scripts de commandes.
 
 ## <a name="see-also"></a>Voir aussi
 

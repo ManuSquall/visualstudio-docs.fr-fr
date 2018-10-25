@@ -12,33 +12,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae52ad47e18a0572a883c50f43689bdaae60234d
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 7c05f928d7c5c6f35226985147b6a4545e2a2937
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843849"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890047"
 ---
 # <a name="lines-view---contention-data"></a>Lignes, vue - données de conflit
 La vue Lignes des données de conflit répertorie les données de performance pour les instructions qui étaient en cours d’exécution au moment de la collecte des échantillons dans le cadre de l’exécution du profilage. Dans un fichier source, une instruction peut couvrir plusieurs lignes d'un fichier source, et une ligne unique peut inclure plusieurs instructions.  
   
  Une instruction est identifiée par les données suivantes :  
   
--   Le fichier source contenant l’instruction de fonction.  
+- Le fichier source contenant l’instruction de fonction.  
   
--   La fonction contenant l’instruction.  
+- La fonction contenant l’instruction.  
   
--   La ligne source au niveau de laquelle l’instruction commence.  
+- La ligne source au niveau de laquelle l’instruction commence.  
   
--   Le caractère de la ligne source au niveau duquel l’instruction commence.  
+- Le caractère de la ligne source au niveau duquel l’instruction commence.  
   
--   La ligne source au niveau de laquelle l’instruction se termine.  
+- La ligne source au niveau de laquelle l’instruction se termine.  
   
--   Le caractère de la ligne source au niveau duquel l’instruction se termine.  
+- Le caractère de la ligne source au niveau duquel l’instruction se termine.  
   
- La colonne Nom de ligne fournit une concaténation des données d’identificateur pouvant être triée.  
+  La colonne Nom de ligne fournit une concaténation des données d’identificateur pouvant être triée.  
   
- Le tableau suivant décrit les colonnes du rapport de vue Lignes.  
+  Le tableau suivant décrit les colonnes du rapport de vue Lignes.  
   
 |Colonne|Description|  
 |------------|-----------------|  

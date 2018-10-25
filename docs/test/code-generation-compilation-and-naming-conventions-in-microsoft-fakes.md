@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 93aec7e83ba5af9bab8da351624df861b46e475c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 65b00ab033feb9f057be195afe28b0416f44f95e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282104"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926018"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Génération et compilation de code et conventions de nommage dans Microsoft Fakes
 
@@ -201,42 +201,42 @@ attribute of the Assembly element in the .fakes:
 
  **Espaces de noms**
 
--   Le suffixe .Fakes est ajouté à l'espace de noms.
+- Le suffixe .Fakes est ajouté à l'espace de noms.
 
-     Par exemple, l'espace de noms `System.Fakes` contient les types shim de l'espace de noms System.
+   Par exemple, l'espace de noms `System.Fakes` contient les types shim de l'espace de noms System.
 
--   Global.Fakes contient le type shim de l'espace de noms vide.
+- Global.Fakes contient le type shim de l'espace de noms vide.
 
- **Noms de types**
+  **Noms de types**
 
--   Le préfixe shim est ajouté au nom de type pour générer le nom de type shim.
+- Le préfixe shim est ajouté au nom de type pour générer le nom de type shim.
 
-     Par exemple, ShimExample est le type shim du type Example.
+   Par exemple, ShimExample est le type shim du type Example.
 
--   Le préfixe stub est ajouté au nom de type pour générer le nom de type stub.
+- Le préfixe stub est ajouté au nom de type pour générer le nom de type stub.
 
-     Par exemple, StubIExample est le type stub du type IExample.
+   Par exemple, StubIExample est le type stub du type IExample.
 
- **Arguments de type et structures de type imbriquées**
+  **Arguments de type et structures de type imbriquées**
 
--   Les arguments de type générique sont copiés.
+- Les arguments de type générique sont copiés.
 
--   La structure de type imbriquée est copiée pour les types shim.
+- La structure de type imbriquée est copiée pour les types shim.
 
 ### <a name="shim-delegate-property-or-stub-delegate-field-naming-conventions"></a>Conventions de nommage de la propriété déléguée shim ou du champ délégué stub
 
 **Règles de base** pour nommer des champs, à partir d’un nom vide :
 
--   Le nom de la méthode est ajouté.
+- Le nom de la méthode est ajouté.
 
--   Si le nom de la méthode est une implémentation d'interface explicite, les points sont supprimés.
+- Si le nom de la méthode est une implémentation d'interface explicite, les points sont supprimés.
 
--   Si la méthode est générique, `Of`*n* est ajouté, où *n* est le nombre d’arguments de méthode générique.
+- Si la méthode est générique, `Of`*n* est ajouté, où *n* est le nombre d’arguments de méthode générique.
 
- Les **noms des méthodes spéciales**, comme les méthodes getter et setter de propriétés, sont traitées comme décrit dans le tableau suivant :
+  Les **noms des méthodes spéciales**, comme les méthodes getter et setter de propriétés, sont traitées comme décrit dans le tableau suivant :
 
 |Si la méthode est...|Exemple|Nom de la méthode ajoutée|
-|-------------------|-------------|--------------------------|
+|-|-|-|
 |Un **constructeur**|`.ctor`|`Constructor`|
 |Un **constructeur** statique|`.cctor`|`StaticConstructor`|
 |Un **accesseur** avec le nom de la méthode composé de deux parties séparées par « _ » (tels que les accesseurs Get de propriété)|*nom_genre* (cas général, mais non appliqué par ECMA)|*GenreNom*, où les deux parties ont été mises en majuscules et échangées|
@@ -256,7 +256,7 @@ attribute of the Assembly element in the .fakes:
 ### <a name="parameter-type-naming-conventions"></a>Conventions d'affectation de nom de type de paramètre
 
 |Étant donné|La chaîne ajoutée est...|
-|-----------|-------------------------|
+|-|-|
 |Un **type**`T`|T<br /><br /> L’espace de noms, la structure imbriquée et les tics génériques sont supprimés.|
 |Un **paramètre de sortie**`out T`|`TOut`|
 |Un **paramètre de référence** `ref T`|`TRef`|

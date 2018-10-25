@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8de1d8777f7f4b232ed4dcc2dabe69e0c1712fdf
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 7e87b1a71cde4d6fb37e05fa99698b636ff87bf4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321240"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876722"
 ---
 # <a name="msbuild"></a>MSBuild
 Le [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] est une plateforme de génération d'applications. Ce moteur, également appelé MSBuild, fournit un schéma XML pour un fichier projet qui contrôle la manière dont la plateforme de génération traite et génère les logiciels. Visual Studio utilise MSBuild, mais il ne dépend pas de Visual Studio. En appelant *msbuild.exe* sur votre fichier projet ou solution, vous pouvez gérer et générer des produits dans des environnements où Visual Studio n’est pas installé.
@@ -56,7 +56,7 @@ Vous pouvez écrire du code dans l'IDE de Visual Studio, mais les générations 
  Pour exécuter [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dans une invite de commandes, transmettez un fichier projet à *MSBuild.exe*, avec les options de ligne de commande appropriées. Les options de ligne de commande vous permettent de définir des propriétés, d'exécuter des cibles spécifiques et de définir d'autres options qui contrôlent le processus de génération. Par exemple, la syntaxe de ligne de commande suivante permet de générer le fichier *MyProj.proj* avec la propriété `Configuration` définie sur `Debug`.
 
 ```cmd
-MSBuild.exe MyProj.proj /property:Configuration=Debug
+MSBuild.exe MyProj.proj -property:Configuration=Debug
 ```
 
  Pour plus d’informations sur les options de ligne de commande [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], voir [Informations de référence sur la ligne de commande](../msbuild/msbuild-command-line-reference.md).
@@ -170,19 +170,19 @@ Pour plus d’informations, consultez l’article [Multiciblage de MSBuild](../m
 
 ## <a name="see-also"></a>Voir aussi
 
-|Titre|Description|
-|-----------|-----------------|
-|[Procédure pas à pas : création d’un fichier projet MSBuild en partant de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Indique comment créer de façon incrémentielle un fichier projet de base, en utilisant uniquement un éditeur de texte.|
-|[Procédure pas à pas : utilisation de MSBuild](../msbuild/walkthrough-using-msbuild.md)|Présente les composantes de MSBuild et indique comment écrire, manipuler et déboguer des projets MSBuild sans fermer l'IDE de Visual Studio.|
-|[Concepts MSBuild](../msbuild/msbuild-concepts.md)|Présente les quatre composantes de MSBuild : propriétés, éléments, cibles et tâches.|
-|[Éléments](../msbuild/msbuild-items.md)|Décrit les concepts généraux sous-jacents au format de fichier [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] et la manière dont les éléments s'ajustent les uns aux autres.|
-|[Propriétés MSBuild](../msbuild/msbuild-properties.md)|Présente les propriétés et les collections de propriétés. Les propriétés sont des paires clé/valeur qui peuvent être utilisées pour configurer les générations.|
-|[Cibles](../msbuild/msbuild-targets.md)|Explique comment grouper les tâches dans un ordre particulier et autoriser des sections du processus de génération à être appelées sur la ligne de commande.|
-|[Tâches](../msbuild/msbuild-tasks.md)|Indique comment créer une unité de code exécutable qui peut être utilisée par [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] afin d'exécuter des opérations de génération atomiques.|
-|[Conditions MSBuild](../msbuild/msbuild-conditions.md)|Explique comment utiliser l'attribut `Condition` dans un élément MSBuild.|
-|[Concepts avancés](../msbuild/msbuild-advanced-concepts.md)|Présente le traitement par lot, l'exécution de transformations, le multiciblage, ainsi que d'autres techniques avancées.|
-|[Journalisation dans MSBuild](../msbuild/logging-in-msbuild.md)|Décrit comment consigner des événements, des messages et des erreurs de build.|
-|[Ressources supplémentaires](../msbuild/additional-msbuild-resources.md)|Répertorie les ressources de communauté et de prise en charge pour des informations supplémentaires sur MSBuild.|
+| Titre | Description |
+| - | - |
+| [Procédure pas à pas : création d’un fichier projet MSBuild en partant de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | Indique comment créer de façon incrémentielle un fichier projet de base, en utilisant uniquement un éditeur de texte. |
+| [Procédure pas à pas : utilisation de MSBuild](../msbuild/walkthrough-using-msbuild.md) | Présente les composantes de MSBuild et indique comment écrire, manipuler et déboguer des projets MSBuild sans fermer l'IDE de Visual Studio. |
+| [Concepts MSBuild](../msbuild/msbuild-concepts.md) | Présente les quatre composantes de MSBuild : propriétés, éléments, cibles et tâches. |
+| [Éléments](../msbuild/msbuild-items.md) | Décrit les concepts généraux sous-jacents au format de fichier [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] et la manière dont les éléments s'ajustent les uns aux autres. |
+| [Propriétés MSBuild](../msbuild/msbuild-properties.md) | Présente les propriétés et les collections de propriétés. Les propriétés sont des paires clé/valeur qui peuvent être utilisées pour configurer les générations. |
+| [Cibles](../msbuild/msbuild-targets.md) | Explique comment grouper les tâches dans un ordre particulier et autoriser des sections du processus de génération à être appelées sur la ligne de commande. |
+| [Tâches](../msbuild/msbuild-tasks.md) | Indique comment créer une unité de code exécutable qui peut être utilisée par [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] afin d'exécuter des opérations de génération atomiques. |
+| [Conditions MSBuild](../msbuild/msbuild-conditions.md) | Explique comment utiliser l'attribut `Condition` dans un élément MSBuild. |
+| [Concepts avancés](../msbuild/msbuild-advanced-concepts.md) | Présente le traitement par lot, l'exécution de transformations, le multiciblage, ainsi que d'autres techniques avancées. |
+| [Journalisation dans MSBuild](../msbuild/logging-in-msbuild.md) | Décrit comment consigner des événements, des messages et des erreurs de build. |
+| [Ressources supplémentaires](../msbuild/additional-msbuild-resources.md) | Répertorie les ressources de communauté et de prise en charge pour des informations supplémentaires sur MSBuild. |
 
 ## <a name="reference"></a>Référence
  [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md) Liens vers des rubriques contenant les informations de référence.

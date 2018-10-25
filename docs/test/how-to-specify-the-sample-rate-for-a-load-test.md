@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2184c027651bf604b6ab89e5b2e63b6e945b2355
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e73e723c25d4f84b3f98f2e22f876ad82f498158
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382501"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880115"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Guide pratique pour spécifier le taux d’échantillonnage d’un paramètre d’exécution des tests de charge
 
@@ -28,7 +28,7 @@ Choisissez une valeur appropriée pour la propriété **Taux d’échantillonnag
 Voici quelques instructions sur les taux d'échantillonnage :
 
 |Durée du test de charge|Taux d'échantillonnage recommandé|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1 heure|5 secondes|
 |1 à 8 heures|15 secondes|
 |8 à 24 heures|30 secondes|

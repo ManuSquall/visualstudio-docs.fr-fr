@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f15a8d5b00d947dc3d77dca58ce6ff5fa2cf58e0
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 54efd3d68e81908d3843525b588d9c28cc1be3ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765386"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921286"
 ---
 # <a name="how-to-choose-collection-methods"></a>Guide pratique pour choisir des méthodes de collecte
 
@@ -32,12 +32,12 @@ Vous pouvez utiliser la propriété **Method** de session de performance pour sp
 
 - Dans la première page de l’Assistant, sélectionnez l’une des options suivantes :
 
-|Option|Description|
-|------------|-----------------|
-|**Échantillonnage de l’UC**|Collecte les statistiques d’application qui sont utiles pour l’analyse initiale et l’analyse des problèmes d’utilisation du processeur.|
-|**Instrumentation**|Collecte des données de minutage détaillées utiles pour une analyse approfondie et pour l’analyse des problèmes de performances d’E/S.|
-|**Allocation de mémoire .NET**|Collecte les données d’allocation de mémoire [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] à l’aide de la méthode de profilage par échantillonnage.|
-|**Concurrence**|Collecte des données numériques concernant les conflits de ressources.|
+| Option | Description |
+|----------------------------| - |
+| **Échantillonnage de l’UC** | Collecte les statistiques d’application qui sont utiles pour l’analyse initiale et l’analyse des problèmes d’utilisation du processeur. |
+| **Instrumentation** | Collecte des données de minutage détaillées utiles pour une analyse approfondie et pour l’analyse des problèmes de performances d’E/S. |
+| **Allocation de mémoire .NET** | Collecte les données d’allocation de mémoire [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] à l’aide de la méthode de profilage par échantillonnage. |
+| **Concurrence** | Collecte des données numériques concernant les conflits de ressources. |
 
 ## <a name="performance-explorer"></a>Explorateur de performances
 

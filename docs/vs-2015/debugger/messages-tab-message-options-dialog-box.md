@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d169e4b53850fc4c63a838fdd8936c2f3d4820be
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 533cbf2e6c971da709818343089d13a78d99a997
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298543"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912264"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>Onglet Messages de la boîte de dialogue Options des messages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,18 +38,18 @@ Utilisez le **Messages** onglet à sélectionner les types de messages à la lis
  **Groupes de messages**  
  Sélectionnez les groupes de messages pour l’affichage. Les groupes disponibles sont les suivantes :  
   
--   WM_USER : avec un code supérieur ou égal à WM_USER  
+- WM_USER : avec un code supérieur ou égal à WM_USER  
   
--   Inscrit : inscrit avec le **RegisterWindowMessage** appeler  
+- Inscrit : inscrit avec le **RegisterWindowMessage** appeler  
   
--   Inconnu : messages inconnus dans la plage 0 à (WM_USER – 1)  
+- Inconnu : messages inconnus dans la plage 0 à (WM_USER – 1)  
   
- Notez que ces **groupes de messages** ne sont pas mappées à des entrées spécifiques sous **Messages à afficher**. Lorsque vous sélectionnez un groupe, la sélection est appliquée directement au flux de messages.  
+  Notez que ces **groupes de messages** ne sont pas mappées à des entrées spécifiques sous **Messages à afficher**. Lorsque vous sélectionnez un groupe, la sélection est appliquée directement au flux de messages.  
   
- Une case à cocher grisée dans **groupes de messages** indique que le **Messages à afficher** zone de liste a été modifiée pour les messages de ce groupe ; tous les types de messages de ce groupe sont sélectionnés.  
+  Une case à cocher grisée dans **groupes de messages** indique que le **Messages à afficher** zone de liste a été modifiée pour les messages de ce groupe ; tous les types de messages de ce groupe sont sélectionnés.  
   
- **Enregistrer les paramètres par défaut**  
- Enregistrer les paramètres actuels pour une utilisation ultérieure en tant qu’options de recherche de message. Ces paramètres sont également enregistrés en quittant Spy ++.
+  **Enregistrer les paramètres par défaut**  
+  Enregistrer les paramètres actuels pour une utilisation ultérieure en tant qu’options de recherche de message. Ces paramètres sont également enregistrés en quittant Spy ++.
 
 
 

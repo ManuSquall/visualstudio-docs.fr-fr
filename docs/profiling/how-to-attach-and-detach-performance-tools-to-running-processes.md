@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea9b35192eb2584f92856e5ab9c50eac22da85f7
-ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
+ms.openlocfilehash: fbacad455f6663eae13aea42d0424091a0e3ec6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35237225"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920928"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Guide pratique pour attacher les outils d’analyse des performances à des processus en cours d’exécution ou les en détacher
 Le profileur peut être utilisé pour attacher ou détacher des outils du processus en cours afin de faciliter l’échantillonnage et la collecte des données de performances. Vous pouvez utiliser cette méthode pour profiler un processus lorsque vous voulez éviter de collecter des données sur le temps de chargement de l’application ou pour surveiller les performances d’un processus après qu’il a atteint un certain état.  
@@ -33,13 +33,13 @@ Le profileur peut être utilisé pour attacher ou détacher des outils du proces
   
  Les processus qui peuvent être profilés dépendent des autorisations d’accès utilisateur définies par l’administrateur de l’ordinateur. Un compte d’utilisateur peut, par exemple, disposer d’autorisations pour ce qui suit :  
   
--   Fonctionnalités de profilage avancées quand l’administrateur a défini le démarrage du pilote et du service  
+- Fonctionnalités de profilage avancées quand l’administrateur a défini le démarrage du pilote et du service  
   
--   Profilage d’échantillons uniquement (utilisateurs du domaine)  
+- Profilage d’échantillons uniquement (utilisateurs du domaine)  
   
--   Refuser à tout le monde l’accès au profilage  
+- Refuser à tout le monde l’accès au profilage  
   
- Pour plus d’informations, consultez [Profilage et sécurité Windows Vista](../profiling/profiling-and-windows-vista-security.md), ainsi que les options d’administration dans [VSPerfCmd](../profiling/vsperfcmd.md).  
+  Pour plus d’informations, consultez [Profilage et sécurité Windows Vista](../profiling/profiling-and-windows-vista-security.md), ainsi que les options d’administration dans [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-attach-to-a-running-process"></a>Pour établir un attachement à un processus en cours d'exécution  
   

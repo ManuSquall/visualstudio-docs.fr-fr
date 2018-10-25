@@ -13,12 +13,12 @@ ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 93d08695a891aeda0d4f153fa2f3e6738d647b27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1de284c8d4fdfe5cb84a474641b880590c2094aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200016"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895319"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Génération et compilation de code et conventions de nommage dans Microsoft Fakes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ Cette rubrique traite des options et des problèmes dans la génération et la c
 ##  <a name="BKMK_In_this_topic"></a> Dans cette rubrique  
  [Génération et compilation de code](#BKMK_Code_generation_and_compilation)  
   
--   [Configuration de la génération du code des stubs](#BKMK_Configuring_code_generation_of_stubs) • [Filtrage de types](#BKMK_Type_filtering) • [Classes concrètes et méthodes virtuelles d’opérations stub](#BKMK_Stubbing_concrete_classes_and_virtual_methods) • [Types internes](#BKMK_Internal_types) • [Optimisation de la durée de génération](#BKMK_Optimizing_build_times) • [Prévention du conflit de nom d’assembly](#BKMK_Avoiding_assembly_name_clashing)  
+- [Configuration de la génération du code des stubs](#BKMK_Configuring_code_generation_of_stubs) • [Filtrage de types](#BKMK_Type_filtering) • [Classes concrètes et méthodes virtuelles d’opérations stub](#BKMK_Stubbing_concrete_classes_and_virtual_methods) • [Types internes](#BKMK_Internal_types) • [Optimisation de la durée de génération](#BKMK_Optimizing_build_times) • [Prévention du conflit de nom d’assembly](#BKMK_Avoiding_assembly_name_clashing)  
   
- [Conventions d’affectation de noms Fakes](#BKMK_Fakes_naming_conventions)  
+  [Conventions d’affectation de noms Fakes](#BKMK_Fakes_naming_conventions)  
   
--   [Conventions de nommage du type shim et du type stub](#BKMK_Shim_type_and_stub_type_naming_conventions) • [Conventions de nommage de la propriété déléguée shim ou du champ délégué stub](#BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions) • [Conventions d’affectation de nom de type de paramètre](#BKMK_Parameter_type_naming_conventions) • [Règles récursives](#BKMK_Recursive_rules)  
+- [Conventions de nommage du type shim et du type stub](#BKMK_Shim_type_and_stub_type_naming_conventions) • [Conventions de nommage de la propriété déléguée shim ou du champ délégué stub](#BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions) • [Conventions d’affectation de nom de type de paramètre](#BKMK_Parameter_type_naming_conventions) • [Règles récursives](#BKMK_Recursive_rules)  
   
- [Ressources externes](#BKMK_External_resources)  
+  [Ressources externes](#BKMK_External_resources)  
   
--   [Aide](#BKMK_Guidance)  
+- [Aide](#BKMK_Guidance)  
   
 ##  <a name="BKMK_Code_generation_and_compilation"></a> Génération et compilation de code  
   
@@ -127,21 +127,21 @@ Cette rubrique traite des options et des problèmes dans la génération et la c
   
  Si l'assembly ayant fait l'objet d'un shim porte un nom fort et que vous souhaitez accéder aux types internes de l'assembly :  
   
--   L'assembly de test et l'assembly Fakes doivent porter un nom fort.  
+- L'assembly de test et l'assembly Fakes doivent porter un nom fort.  
   
--   Vous devez ajouter les clés publiques de l’assembly de test et Fakes aux attributs **InternalsVisibleToAttribute** des assemblys ayant fait l’objet d’un shim. Voici l'apparence des exemples d'attributs dans le code d'assembly ayant fait l'objet d'un shim quand cet assembly porte un nom fort :   
+- Vous devez ajouter les clés publiques de l’assembly de test et Fakes aux attributs **InternalsVisibleToAttribute** des assemblys ayant fait l’objet d’un shim. Voici l'apparence des exemples d'attributs dans le code d'assembly ayant fait l'objet d'un shim quand cet assembly porte un nom fort :   
   
-    ```csharp  
-    // FileSystem\AssemblyInfo.cs  
-    [assembly: InternalsVisibleTo("FileSystem.Fakes",  
-        PublicKey=<Fakes_assembly_public_key>)]  
-    [assembly: InternalsVisibleTo("FileSystem.Tests",  
-        PublicKey=<Test_assembly_public_key>)]  
-    ```  
+  ```csharp  
+  // FileSystem\AssemblyInfo.cs  
+  [assembly: InternalsVisibleTo("FileSystem.Fakes",  
+      PublicKey=<Fakes_assembly_public_key>)]  
+  [assembly: InternalsVisibleTo("FileSystem.Tests",  
+      PublicKey=<Test_assembly_public_key>)]  
+  ```  
   
- Si l'assembly ayant fait l'objet d'un shim porte un nom fort, le framework Fakes signe automatiquement fortement l'assembly Fakes généré. Vous devez signer avec un nom fort l'assembly de test. Consultez [Création et utilisation d’assemblys avec nom fort](http://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
+  Si l'assembly ayant fait l'objet d'un shim porte un nom fort, le framework Fakes signe automatiquement fortement l'assembly Fakes généré. Vous devez signer avec un nom fort l'assembly de test. Consultez [Création et utilisation d’assemblys avec nom fort](http://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
   
- Le framework Fakes utilise la même clé pour signer tous les assemblys générés. Ainsi, vous pouvez utiliser cet extrait de code comme point de départ pour ajouter l’attribut **InternalsVisibleTo** de l’assembly Fakes à votre code assembleur ayant fait l’objet d’un shim.  
+  Le framework Fakes utilise la même clé pour signer tous les assemblys générés. Ainsi, vous pouvez utiliser cet extrait de code comme point de départ pour ajouter l’attribut **InternalsVisibleTo** de l’assembly Fakes à votre code assembleur ayant fait l’objet d’un shim.  
   
 ```csharp  
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]  
@@ -211,38 +211,38 @@ attribute of the Assembly element in the .fakes:
 ###  <a name="BKMK_Shim_type_and_stub_type_naming_conventions"></a> Conventions de nommage du type shim et du type stub  
  **Espaces de noms**  
   
--   Le suffixe .Fakes est ajouté à l'espace de noms.  
+- Le suffixe .Fakes est ajouté à l'espace de noms.  
   
-     Par exemple, l'espace de noms `System.Fakes` contient les types shim de l'espace de noms System.  
+   Par exemple, l'espace de noms `System.Fakes` contient les types shim de l'espace de noms System.  
   
--   Global.Fakes contient le type shim de l'espace de noms vide.  
+- Global.Fakes contient le type shim de l'espace de noms vide.  
   
- **Noms de types**  
+  **Noms de types**  
   
--   Le préfixe shim est ajouté au nom de type pour générer le nom de type shim.  
+- Le préfixe shim est ajouté au nom de type pour générer le nom de type shim.  
   
-     Par exemple, ShimExample est le type shim du type Example.  
+   Par exemple, ShimExample est le type shim du type Example.  
   
--   Le préfixe stub est ajouté au nom de type pour générer le nom de type stub.  
+- Le préfixe stub est ajouté au nom de type pour générer le nom de type stub.  
   
-     Par exemple, StubIExample est le type stub du type IExample.  
+   Par exemple, StubIExample est le type stub du type IExample.  
   
- **Arguments de type et structures de type imbriquées**  
+  **Arguments de type et structures de type imbriquées**  
   
--   Les arguments de type générique sont copiés.  
+- Les arguments de type générique sont copiés.  
   
--   La structure de type imbriquée est copiée pour les types shim.  
+- La structure de type imbriquée est copiée pour les types shim.  
   
 ###  <a name="BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions"></a> Conventions de nommage de la propriété déléguée shim ou du champ délégué stub  
  **Règles de base** pour nommer des champs, à partir d’un nom vide :  
   
--   Le nom de la méthode est ajouté.  
+- Le nom de la méthode est ajouté.  
   
--   Si le nom de la méthode est une implémentation d'interface explicite, les points sont supprimés.  
+- Si le nom de la méthode est une implémentation d'interface explicite, les points sont supprimés.  
   
--   Si la méthode est générique, `Of`*n* est ajouté, où *n* est le nombre d’arguments de méthode générique.  
+- Si la méthode est générique, `Of`*n* est ajouté, où *n* est le nombre d’arguments de méthode générique.  
   
- Les **noms des méthodes spéciales** telles que les accesseurs Get ou Set des propriétés sont traités comme décrit dans le tableau suivant.  
+  Les **noms des méthodes spéciales** telles que les accesseurs Get ou Set des propriétés sont traités comme décrit dans le tableau suivant.  
   
 |Si la méthode est...|Exemple|Nom de la méthode ajoutée|  
 |-------------------|-------------|--------------------------|  

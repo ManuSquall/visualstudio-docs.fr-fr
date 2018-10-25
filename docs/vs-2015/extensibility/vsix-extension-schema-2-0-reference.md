@@ -16,12 +16,12 @@ ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cacd0c1cd2a1e36e7c160902c93c6bcc6bfc0cdd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c12ee9593bb7baadfbaf29ebade142f142e8f40a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181205"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893875"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Informations de référence sur le schéma 2.0 d’extension VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -166,31 +166,31 @@ Un fichier de manifeste de déploiement VSIX décrit le contenu d’un package V
 ### <a name="assets-element"></a>Élément de ressources  
  Cet élément contient une liste de `<Asset>` balises pour chaque élément d’extension ou du contenu présenté par ce package.  
   
--   `<Asset>` -Cet élément contient les attributs et les éléments suivants :  
+- `<Asset>` -Cet élément contient les attributs et les éléments suivants :  
   
-    -   `Type` – C’est le type d’extension ou de contenu représenté par cet élément. Chaque `<Asset>` élément doit avoir un seul `Type`, mais plusieurs `<Asset>` éléments peuvent avoir les mêmes `Type`. Cet attribut doit être représenté comme un nom qualifié complet, en fonction des conventions de l’espace de noms. Les types connus sont :  
+  - `Type` – C’est le type d’extension ou de contenu représenté par cet élément. Chaque `<Asset>` élément doit avoir un seul `Type`, mais plusieurs `<Asset>` éléments peuvent avoir les mêmes `Type`. Cet attribut doit être représenté comme un nom qualifié complet, en fonction des conventions de l’espace de noms. Les types connus sont :  
   
-        1.  Microsoft.VisualStudio.VsPackage  
+    1. Microsoft.VisualStudio.VsPackage  
   
-        2.  Microsoft.VisualStudio.MefComponent  
+    2. Microsoft.VisualStudio.MefComponent  
   
-        3.  Microsoft.VisualStudio.ToolboxControl  
+    3. Microsoft.VisualStudio.ToolboxControl  
   
-        4.  Microsoft.VisualStudio.Samples  
+    4. Microsoft.VisualStudio.Samples  
   
-        5.  Microsoft.VisualStudio.ProjectTemplate  
+    5. Microsoft.VisualStudio.ProjectTemplate  
   
-        6.  Microsoft.VisualStudio.ItemTemplate  
+    6. Microsoft.VisualStudio.ItemTemplate  
   
-        7.  Microsoft.VisualStudio.Assembly  
+    7. Microsoft.VisualStudio.Assembly  
   
-         Vous pouvez créer vos propres types et leur donner des noms uniques. Au moment de l’exécution à l’intérieur de Visual Studio, votre code peut énumérer et accéder à ces types personnalisés via l’API du Gestionnaire d’extensions.  
+       Vous pouvez créer vos propres types et leur donner des noms uniques. Au moment de l’exécution à l’intérieur de Visual Studio, votre code peut énumérer et accéder à ces types personnalisés via l’API du Gestionnaire d’extensions.  
   
-    -   Chemin d’accès : le chemin d’accès relatif au fichier ou dossier dans le package qui contient l’élément multimédia.  
+  - Chemin d’accès : le chemin d’accès relatif au fichier ou dossier dans le package qui contient l’élément multimédia.  
   
-    -   `AnyAttribute*` – Un ensemble extensible d’attributs que vous allez être exposés au runtime comme un dictionnaire de paires nom-valeur.  
+  - `AnyAttribute*` – Un ensemble extensible d’attributs que vous allez être exposés au runtime comme un dictionnaire de paires nom-valeur.  
   
-         `<AnyElement>*` – N’importe quel contenu structuré est autorisé entre un `<Asset>` commencer et la balise de fin. Tous les éléments sont exposés sous forme de liste d’objets XmlElement. Extensions VSIX peuvent définir les métadonnées spécifiques au type structurée dans le fichier manifeste et les énumérer lors de l’exécution.  
+     `<AnyElement>*` – N’importe quel contenu structuré est autorisé entre un `<Asset>` commencer et la balise de fin. Tous les éléments sont exposés sous forme de liste d’objets XmlElement. Extensions VSIX peuvent définir les métadonnées spécifiques au type structurée dans le fichier manifeste et les énumérer lors de l’exécution.  
   
 ### <a name="sample-manifest"></a>Exemple de fichier manifeste  
   

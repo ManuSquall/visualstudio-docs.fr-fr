@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 36cc776f18990e7cc97b1583267c9f9f9b9c95eb
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 276ec679525682486db5a579ac34f52cec5081f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381144"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885655"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Bien démarrer avec les langages spécifiques à un domaine
 
@@ -43,11 +43,12 @@ Le reste de cette vue d’ensemble est une procédure pas à pas qui présente l
 
 Pour définir un DSL, vous devez avoir installé les composants suivants :
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|SDK Modeling pour Visual Studio||
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
+| SDK Modeling pour Visual Studio | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -143,7 +144,7 @@ Votre expérimentale de Visual Studio doit ressembler à l’exemple suivant :
 
 ### <a name="the-content-of-a-model"></a>Le contenu d’un modèle
 
-Le contenu d’un fichier qui est une instance d’une solution DSL est appelé un *modèle*. Le modèle contient *modèle ** éléments* et *liens* entre les éléments. La définition DSL spécifie quels types d’éléments de modèle et des liens peuvent exister dans le modèle. Par exemple, dans un DSL créé à partir du modèle de langage Minimal, il est a un seul type d’élément de modèle et un type de lien.
+Le contenu d’un fichier qui est une instance d’une solution DSL est appelé un *modèle*. Le modèle contient *modèle*<em>éléments</em> et *liens* entre les éléments. La définition DSL spécifie quels types d’éléments de modèle et des liens peuvent exister dans le modèle. Par exemple, dans un DSL créé à partir du modèle de langage Minimal, il est a un seul type d’élément de modèle et un type de lien.
 
 La définition DSL peut de spécifier comment le modèle apparaît dans un diagramme. Vous pouvez choisir parmi un éventail de styles de formes et connecteurs. Vous pouvez spécifier que certaines formes apparaissent dans d’autres formes.
 
@@ -246,39 +247,39 @@ Renommez les classes de domaine existants et les relations. Par exemple, à part
 
 ##### <a name="to-add-properties-and-display-them"></a>Pour ajouter des propriétés et les afficher
 
-1.  Ajoutez les propriétés.
+1. Ajoutez les propriétés.
 
-    1.  Dans le diagramme de définition DSL, cliquez sur le **personne** de classe de domaine, pointez sur **ajouter**, puis cliquez sur **de propriété de domaine**.
+   1.  Dans le diagramme de définition DSL, cliquez sur le **personne** de classe de domaine, pointez sur **ajouter**, puis cliquez sur **de propriété de domaine**.
 
-    2.  Tapez une liste de nouveaux noms de propriété, tel que **naissance** et **mort**. Appuyez sur **entrée** après chacune d’elles.
+   2.  Tapez une liste de nouveaux noms de propriété, tel que **naissance** et **mort**. Appuyez sur **entrée** après chacune d’elles.
 
-2.  Ajouter des éléments décoratifs qui affichent les propriétés de la forme.
+2. Ajouter des éléments décoratifs qui affichent les propriétés de la forme.
 
-    1.  Suivez la ligne grise qui s’étend la classe de domaine de personne à l’autre côté du diagramme. Il s’agit d’un mappage d’élément de diagramme. Il lie la classe de domaine à une classe de forme.
+   1.  Suivez la ligne grise qui s’étend la classe de domaine de personne à l’autre côté du diagramme. Il s’agit d’un mappage d’élément de diagramme. Il lie la classe de domaine à une classe de forme.
 
-    2.  Avec le bouton droit de cette classe de forme, pointez sur **ajouter**, puis cliquez sur **décorateur de texte**.
+   2.  Avec le bouton droit de cette classe de forme, pointez sur **ajouter**, puis cliquez sur **décorateur de texte**.
 
-    3.  Ajouter deux éléments décoratifs avec des noms tels que **BirthDecorator** et **DeathDecorator**.
+   3.  Ajouter deux éléments décoratifs avec des noms tels que **BirthDecorator** et **DeathDecorator**.
 
-    4.  Sélectionnez chaque nouvel élément décoratif et dans la fenêtre Propriétés, définissez la **Position** champ. Ce paramètre détermine où la valeur de propriété de domaine s’affichera sur la forme. Par exemple, définissez **InnerBottomLeft** et **InnerBottomRight**.
+   4.  Sélectionnez chaque nouvel élément décoratif et dans la fenêtre Propriétés, définissez la **Position** champ. Ce paramètre détermine où la valeur de propriété de domaine s’affichera sur la forme. Par exemple, définissez **InnerBottomLeft** et **InnerBottomRight**.
 
-         ![Définition de forme de compartiment](../modeling/media/familyt_compartment.png)
+        ![Définition de forme de compartiment](../modeling/media/familyt_compartment.png)
 
-3.  Mapper les éléments décoratifs aux propriétés.
+3. Mapper les éléments décoratifs aux propriétés.
 
-    1.  Ouvrez la fenêtre Détails DSL. Il est généralement dans un onglet en regard de la fenêtre Sortie. Si vous ne s’affiche pas, sur le **vue** menu, pointez sur **Windows autres**, puis cliquez sur **détails DSL**.
+   1.  Ouvrez la fenêtre Détails DSL. Il est généralement dans un onglet en regard de la fenêtre Sortie. Si vous ne s’affiche pas, sur le **vue** menu, pointez sur **Windows autres**, puis cliquez sur **détails DSL**.
 
-    2.  Sur le diagramme de définition DSL, cliquez sur la ligne qui relie le **personne** de classe de domaine à la classe de forme.
+   2.  Sur le diagramme de définition DSL, cliquez sur la ligne qui relie le **personne** de classe de domaine à la classe de forme.
 
-    3.  Dans **détails DSL**, dans le **mappages de décorateurs** , cliquez sur la case à cocher sur un élément décoratif non mappé. Dans **propriété d’affichage**, sélectionnez la propriété de domaine auquel il est mappé. Par exemple, mapper **BirthDecorator** à **naissance**.
+   3.  Dans **détails DSL**, dans le **mappages de décorateurs** , cliquez sur la case à cocher sur un élément décoratif non mappé. Dans **propriété d’affichage**, sélectionnez la propriété de domaine auquel il est mappé. Par exemple, mapper **BirthDecorator** à **naissance**.
 
-4.  Enregistrer la solution DSL, cliquez sur Transformer tous les modèles et appuyez sur F5.
+4. Enregistrer la solution DSL, cliquez sur Transformer tous les modèles et appuyez sur F5.
 
-5.  Dans un exemple de diagramme de modèle, vérifiez que vous pouvez maintenant cliquer les positions que vous avez choisi et tapez des valeurs dans les. En outre, lorsque vous sélectionnez un **personne** forme, la fenêtre Propriétés affiche les nouvelles propriétés de naissance et décès.
+5. Dans un exemple de diagramme de modèle, vérifiez que vous pouvez maintenant cliquer les positions que vous avez choisi et tapez des valeurs dans les. En outre, lorsque vous sélectionnez un **personne** forme, la fenêtre Propriétés affiche les nouvelles propriétés de naissance et décès.
 
-6.  Dans un fichier .tt, vous pouvez ajouter le code qui obtient les propriétés de chaque personne.
+6. Dans un fichier .tt, vous pouvez ajouter le code qui obtient les propriétés de chaque personne.
 
- ![Diagramme d’arbre généalogique, boîte à outils et explorateur](../modeling/media/familyt_instance.png)
+   ![Diagramme d’arbre généalogique, boîte à outils et explorateur](../modeling/media/familyt_instance.png)
 
 ### <a name="define-new-classes"></a>Définir de nouvelles Classes
  Vous pouvez ajouter des classes de domaine et les relations à un modèle. Par exemple, vous pouvez créer une nouvelle classe pour représenter les villes et une nouvelle relation pour représenter qu’une personne vécu dans une ville.
