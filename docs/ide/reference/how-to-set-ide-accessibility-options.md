@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f977c30f1f4d6db7ce165de8483c8fd1977922d8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c5d0149be4996f762373aae77d7535dbf8e02809
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952101"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909794"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Guide pratique pour définir les options d’accessibilité IDE
 
@@ -46,7 +46,7 @@ ms.locfileid: "31952101"
 
  Vous pouvez modifier les paramètres des fenêtres Outil de texte, telles que la fenêtre **Commande**, la fenêtre **Exécution** et la fenêtre **Sortie**, dans le volet **Polices et couleurs** des options **Environnement**, dans la boîte de dialogue **Outils**. Lorsque l’option **[Toutes les fenêtres Outil de texte]** est sélectionnée dans la liste déroulante **Afficher les paramètres de**, le paramètre par défaut est répertorié en tant que **Par défaut** dans les listes déroulantes **Premier plan de l’élément** et **Arrière plan de l’élément**. Vous pouvez également modifier les paramètres d’affichage du texte dans l’éditeur.
 
-##### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>Pour modifier la taille du texte dans les éditeurs et les fenêtres Outil de texte
+#### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>Pour modifier la taille du texte dans les éditeurs et les fenêtres Outil de texte
 
 1.  Dans le menu **Outils** , choisissez **Options**.
 
@@ -69,7 +69,7 @@ ms.locfileid: "31952101"
 6.  Dans **Taille**, sélectionnez une nouvelle taille de police.
 
     > [!NOTE]
-    >  Pour rétablir la taille du texte pour les éditeurs et les fenêtres Outil de texte, choisissez **Par défaut**.
+    > Pour rétablir la taille du texte pour les éditeurs et les fenêtres Outil de texte, choisissez **Par défaut**.
 
 7.  Cliquez sur **OK**.
 
@@ -78,10 +78,9 @@ ms.locfileid: "31952101"
  Vous pouvez également choisir de modifier les couleurs par défaut pour le texte, les indicateurs en marge, l’espace blanc et les éléments de code dans l’éditeur.
 
 > [!NOTE]
-> Pour utiliser des couleurs à contraste élevé pour toutes les fenêtres d’application dans votre système d’exploitation, appuyez sur **Alt gauche+****Maj gauche+Impr. écran**. Si [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] est ouvert, fermez et rouvrez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour implémenter complètement les couleurs à contraste élevé.
+> Pour utiliser des couleurs à contraste élevé pour toutes les fenêtres d’application dans votre système d’exploitation, appuyez sur <strong>Alt gauche+</strong>**Maj gauche+Impr. écran**. Si [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] est ouvert, fermez et rouvrez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour implémenter complètement les couleurs à contraste élevé.
 
-
-##### <a name="to-change-the-color-of-items-in-the-editor"></a>Pour changer la couleur des éléments dans l’éditeur
+#### <a name="to-change-the-color-of-items-in-the-editor"></a>Pour changer la couleur des éléments dans l’éditeur
 
 1.  Dans le menu **Outils** , choisissez **Options**.
 
@@ -99,7 +98,7 @@ ms.locfileid: "31952101"
 
  Pour améliorer l’accessibilité et la facilité d’utilisation de la barre d’outils, vous pouvez ajouter du texte aux boutons de barre d’outils.
 
-#### <a name="to-assign-text-to-toolbar-buttons"></a>Pour affecter un texte à des boutons de barre d’outils
+### <a name="to-assign-text-to-toolbar-buttons"></a>Pour affecter un texte à des boutons de barre d’outils
 
 1.  Dans le menu **Outils**, choisissez **Personnaliser**.
 
@@ -113,7 +112,7 @@ ms.locfileid: "31952101"
 
 6.  Choisissez **Image et texte**.
 
-#### <a name="to-modify-the-displayed-text-in-a-button"></a>Pour modifier le texte à afficher dans un bouton
+### <a name="to-modify-the-displayed-text-in-a-button"></a>Pour modifier le texte à afficher dans un bouton
 
 1.  Sélectionnez de nouveau **Modifier la sélection**.
 

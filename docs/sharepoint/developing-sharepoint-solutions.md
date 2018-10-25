@@ -18,30 +18,30 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1be2a91408202ce42d7371154d0201e778381300
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: b9eb1de3f18c487a2e6d3cdf3d0ce7ef95e578b3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327253"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889995"
 ---
 # <a name="develop-sharepoint-solutions"></a>Développer des solutions SharePoint
-  Pour créer des sites et des éléments de sites SharePoint, vous disposez de plusieurs modèles de type de projet [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Pour obtenir la liste des types de projet disponibles, consultez [SharePoint modèles d’élément de projet et le projet](../sharepoint/sharepoint-project-and-project-item-templates.md). Les éléments et propriétés d'un projet SharePoint sont décrits ci-après.  
+  Pour créer des sites et des éléments de sites SharePoint, vous disposez de plusieurs modèles de type de projet [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Pour obtenir la liste des types de projet disponibles, consultez [SharePoint modèles d’élément de projet et le projet](../sharepoint/sharepoint-project-and-project-item-templates.md). Les éléments et propriétés d'un projet SharePoint sont décrits ci-après.  
   
  Pour plus d’informations sur SharePoint 2013 et les compléments SharePoint, consultez [SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) et [Compléments SharePoint](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx).  
   
 ## <a name="elements-of-a-sharepoint-project"></a>Éléments d’un projet SharePoint
- Les nœuds sous un projet SharePoint sont appelés *éléments SharePoint*. Éléments SharePoint peuvent contenir également un ou plusieurs sous-fichiers, appelés *fichiers d’éléments SharePoint*, tel que [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] fichiers de configuration, les formulaires .aspx et bien plus encore.  
+ Les nœuds sous un projet SharePoint sont appelés *éléments SharePoint*. Les éléments SharePoint peuvent contenir également un ou plusieurs sous-fichiers, appelés *fichiers d'éléments SharePoint*, tels que les fichiers de configuration [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] , les formulaires .aspx, etc.  
   
  Au lieu de créer des projets à l'aide de modèles de projet préremplis avec des fichiers d'éléments de projet, vous pouvez utiliser le modèle **Projet vide** pour créer un projet SharePoint vide et ajouter manuellement des éléments de projet. Les projets SharePoint peuvent également contenir un ou plusieurs fichiers de fonctionnalités (pour l'activation dans SharePoint) et un fichier de package permettant de distribuer le projet.  
   
 ### <a name="special-nodes"></a>Nœuds spéciaux
  Chaque projet SharePoint contient deux nœuds qui ne peuvent pas être renommés, supprimés, coupés, copiés ou déplacés du projet. Il s'agit des nœuds suivants :  
   
--   Fonctionnalités    
--   Package  
+- Fonctionnalités    
+- Package  
   
- Ces deux nœuds apparaissent toujours dans tous les projets SharePoint même si aucune fonctionnalité ou package n'est défini pour le projet.  
+  Ces deux nœuds apparaissent toujours dans tous les projets SharePoint même si aucune fonctionnalité ou package n'est défini pour le projet.  
   
 #### <a name="features-node"></a>Nœud fonctionnalités
  Le nœud **Fonctionnalités** contient une ou plusieurs fonctionnalités de projet SharePoint. Une fonctionnalité est un conteneur d'extensions pour SharePoint. Une fois déployée sur un serveur SharePoint, la fonctionnalité peut être ajoutée à des définitions de site ou activée individuellement par les administrateurs SharePoint sur les sites SharePoint. Pour plus d’informations, consultez [Utilisation des fonctionnalités](http://go.microsoft.com/fwlink/?LinkID=147704).  
@@ -53,12 +53,12 @@ ms.locfileid: "36327253"
  Quand une fonctionnalité est ajoutée à un projet SharePoint, elle apparaît dans l' **Explorateur de solutions** sous la forme d'un nœud ayant pour nom par défaut Feature*x*.feature, où *x* est un nombre unique. Une fois déployée sur le serveur SharePoint, un administrateur SharePoint peut l'activer et la mettre ainsi à la disposition des utilisateurs du site SharePoint.  
   
 #### <a name="package-node"></a>Nœud de package
- Le nœud **Package** contient un fichier unique qui sert de mécanisme de distribution pour le projet SharePoint. Ce fichier, appelé un *package de solution*, est. En fonction du fichier CAB avec un. Extension WSP. Un package de solution est un fichier réutilisable destiné à être déployé. Il contient un ensemble de fonctionnalités, définitions de site et assemblys (activables ou désactivables individuellement) s'appliquant aux sites SharePoint. Le **Package** nœud contient également un fichier nommé package.wspdef, c'est-à-dire un [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] fichier de définition pour le package. Une fois le package déployé sur le serveur qui exécute SharePoint, l'administrateur SharePoint peut l'installer et activer ses fonctionnalités.  
+ Le nœud **Package** contient un fichier unique qui sert de mécanisme de distribution pour le projet SharePoint. Ce fichier, appelé un *package de solution*, est. En fonction du fichier CAB avec un. Extension WSP. Un package de solution est un fichier réutilisable destiné à être déployé. Il contient un ensemble de fonctionnalités, définitions de site et assemblys (activables ou désactivables individuellement) s'appliquant aux sites SharePoint. Le nœud **Package** contient également un fichier nommé Package.wspdef, c'est-à-dire un fichier de définition [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pour le package. Une fois le package déployé sur le serveur qui exécute SharePoint, l'administrateur SharePoint peut l'installer et activer ses fonctionnalités.  
   
  Vous pouvez afficher ou modifier le contenu du package dans le Concepteur de packages en double-cliquant sur le nœud package ou en ouvrant le menu contextuel, puis en choisissant **Open**. Pour plus d’informations, consultez [packages de solution SharePoint créer](../sharepoint/creating-sharepoint-solution-packages.md).  
   
 ## <a name="sharepoint-project-and-project-item-properties"></a>Projet SharePoint et les propriétés d’élément de projet
- Les projets SharePoint, tout comme les autres projets [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], présentent les propriétés dans la fenêtre Propriétés et dans la page Propriétés. Les propriétés affichées dépendent du nœud sélectionné.  
+ Les projets SharePoint, tout comme les autres projets [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , présentent les propriétés dans la fenêtre Propriétés et dans la page Propriétés. Les propriétés affichées dépendent du nœud sélectionné.  
   
  Quand un projet, élément de projet, ou nœud de fichier d'élément de projet SharePoint est sélectionné dans l' **Explorateur de solutions**, les propriétés suivantes s'affichent dans la fenêtre ou la page Propriétés :  
   
@@ -72,8 +72,8 @@ ms.locfileid: "36327253"
 |Modifier les configurations|Spécifie la configuration de déploiement à utiliser pour le projet. Pour plus d’informations, consultez [Comment : modifier une configuration de déploiement SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) et [déployer, publier et mettre à niveau de packages de solution SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).|  
 |Activer le débogage Silverlight (au lieu du débogage de script)|Quand cette option est activée, le débogueur Silverlight s'attache au processus de débogage. Quand cette option est désactivée, le débogueur de script s'attache au processus de débogage. Pour plus d’informations, consultez [Vue d’ensemble du débogage de Silverlight](http://go.microsoft.com/fwlink/?LinkId=179826).|  
 |Inclure un assembly dans le package|Spécifie si l'assembly de projet est empaqueté au moment de la génération ou non.|  
-|Ligne de commande de post-déploiement|Spécifie les commandes à exécuter après le déploiement de la solution SharePoint. Cette ligne prend en charge toute commande de traitement par lots, ainsi que la résolution des variables MSBuild. Pour plus d’informations, consultez [Comment : Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md).|  
-|Ligne de commande de prédéploiement|Spécifie les commandes à exécuter avant le déploiement de la solution SharePoint. Cette ligne prend en charge toute commande de traitement par lots, ainsi que la résolution des variables MSBuild. Pour plus d’informations, consultez [Comment : Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md).|  
+|Ligne de commande de post-déploiement|Spécifie les commandes à exécuter après le déploiement de la solution SharePoint. Cette ligne prend en charge toute commande de traitement par lots, ainsi que la résolution des variables MSBuild. Pour plus d'informations, consultez [How to: Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md).|  
+|Ligne de commande de prédéploiement|Spécifie les commandes à exécuter avant le déploiement de la solution SharePoint. Cette ligne prend en charge toute commande de traitement par lots, ainsi que la résolution des variables MSBuild. Pour plus d'informations, consultez [How to: Set SharePoint Deployment Commands](../sharepoint/how-to-set-sharepoint-deployment-commands.md).|  
 |Fichier projet|Nom du fichier contenant la build, la configuration et d'autres informations sur le projet.|  
 |Dossier du projet|Emplacement du fichier projet sur le système. (En lecture seule.)|  
 |Sandboxed Solution|Spécifie si le projet doit être déployé en tant que *solution bac à sable (sandbox)*, également appelée *solution créée par l'utilisateur*. Les solutions bac à sable ne sont pas nécessairement dignes de confiance. La valeur **true** signifie que le projet est déployé comme une solution bac à sable, alors que la valeur **false** signifie qu'il est déployé comme une solution de batterie. Pour plus d’informations, consultez [Sandboxed Solution Considerations](../sharepoint/sandboxed-solution-considerations.md) et [Differences Between Sandboxed and Farm Solutions](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).|  
@@ -86,12 +86,12 @@ ms.locfileid: "36327253"
   
 |Nom de la propriété|Description|  
 |-------------------|-----------------|  
-|Résolution de conflit de déploiement|Spécifie l'action à entreprendre lors du déploiement d'un élément de projet dont les propriétés sont identiques à celles d'un élément déjà présent sur le serveur. Pour plus d’informations, consultez [Troubleshooting SharePoint Packaging et déploiement](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).|  
-|Propriétés de la fonctionnalité|Spécifie un ensemble de valeurs (stockées sous forme de paires clé/valeur) inclus avec une fonctionnalité au moment de son déploiement sur SharePoint. Une fois la fonctionnalité déployée, vous pouvez accéder aux valeurs de propriété dans votre code. Pour plus d’informations, consultez [Providing Packaging and Deployment Information in éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
-|Récepteur de fonctionnalité|Fournit le code qui s'exécute quand certains événements se produisent pour une fonctionnalité contenant un élément de projet. Pour plus d’informations, consultez [Providing Packaging and Deployment Information in éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
+|Résolution de conflit de déploiement|Spécifie l'action à entreprendre lors du déploiement d'un élément de projet dont les propriétés sont identiques à celles d'un élément déjà présent sur le serveur. Pour plus d'informations, consultez [Troubleshooting SharePoint Packaging and Deployment](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).|  
+|Propriétés de la fonctionnalité|Spécifie un ensemble de valeurs (stockées sous forme de paires clé/valeur) inclus avec une fonctionnalité au moment de son déploiement sur SharePoint. Une fois la fonctionnalité déployée, vous pouvez accéder aux valeurs de propriété dans votre code. Pour plus d'informations, consultez [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
+|Récepteur de fonctionnalité|Fournit le code qui s'exécute quand certains événements se produisent pour une fonctionnalité contenant un élément de projet. Pour plus d'informations, consultez [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
 |Nom du dossier|Nom du dossier contenant les éléments de projet SharePoint.|  
-|Références de sortie de projet|Spécifie une dépendance, telle qu'un assembly, que votre élément de projet doit exécuter. Pour plus d’informations, consultez [Providing Packaging and Deployment Information in éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
-|Entrées de contrôle sécurisé|Spécifie les contrôles que les utilisateurs non fiables peuvent modifier en toute sécurité. Pour plus d’informations, consultez [Providing Packaging and Deployment Information in éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
+|Références de sortie de projet|Spécifie une dépendance, telle qu'un assembly, que votre élément de projet doit exécuter. Pour plus d'informations, consultez [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
+|Entrées de contrôle sécurisé|Spécifie les contrôles que les utilisateurs non fiables peuvent modifier en toute sécurité. Pour plus d'informations, consultez [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
   
 ### <a name="project-item-file-properties"></a>Propriétés du fichier d’élément de projet
   
@@ -113,7 +113,7 @@ ms.locfileid: "36327253"
 |Titre|Description|  
 |-----------|-----------------|  
 |[Modèles de projets et d’éléments de projet SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md)|Décrit le projet SharePoint et les modèles d'élément de projet disponibles dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
-|[Guide pratique pour ajouter des éléments à un projet SharePoint](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|Explique comment ajouter de nouveaux éléments ou des éléments existants à un projet SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
+|[Guide pratique pour ajouter des éléments à un projet SharePoint](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|Explique comment ajouter de nouveaux éléments ou des éléments existants à un projet SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|  
 |[Procédure pas à pas : Créer une colonne de site, le type de contenu et la liste pour SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Montre comment créer, étape par étape, un champ personnalisé, un type de contenu, une définition de liste et une instance de liste.|  
 |[Comment : créer un récepteur d’événements](../sharepoint/how-to-create-an-event-receiver.md)|Décrit comment ajouter un récepteur d’événements pour le projet créé dans [procédure pas à pas : créer une colonne de site, le type de contenu et la liste pour SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).|  
 |[Créer des solutions de flux de travail SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)|Explique comment créer des projets de flux de travail comportant des formulaires d'association et des formulaires d'initiation de flux de travail.|  
@@ -122,7 +122,7 @@ ms.locfileid: "36327253"
 |[Créer des contrôles réutilisables pour les composants WebPart ou les pages d’application](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Explique comment créer des contrôles utilisateur pouvant être consommés par les pages d'application et les composants WebPart qui s'exécutent dans SharePoint.|  
 |[Intégrer des données métiers dans SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|Explique comment intégrer les données des services web et des applications serveur principales à une application SharePoint.|  
 |[Créer des définitions de site pour SharePoint](../sharepoint/creating-site-definitions-for-sharepoint.md)|Explique comment créer des définitions de site, c'est-à-dire les modèles utilisés pour concevoir des sites SharePoint.|  
-|[Importation d’éléments d’un site SharePoint existant](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)|Explique comment importer les éléments (tels que des types de contenu et des modules) d'un site SharePoint existant vers un projet SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
+|[Importation d’éléments d’un site SharePoint existant](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)|Explique comment importer les éléments (tels que des types de contenu et des modules) d'un site SharePoint existant vers un projet SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] .|  
 |[Utilisation de modules pour inclure des fichiers dans la solution](../sharepoint/using-modules-to-include-files-in-the-solution.md)|Explique comment utiliser des modules pour déployer les fichiers de votre projet [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] sur le site SharePoint.|  
 |[Parcourir les connexions SharePoint à l’aide de l’Explorateur de serveurs](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Explique comment parcourir les sites SharePoint locaux à l'aide de l'Explorateur de serveurs.|  
 |[Fournir des informations d’empaquetage et de déploiement dans les éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)|Explique comment utiliser les propriétés d'élément de projet pour fournir des informations d'empaquetage et de déploiement pour les projets, telles que les entrées de contrôle sécurisé, les références de sortie de projet et les propriétés de fonctionnalité.|  

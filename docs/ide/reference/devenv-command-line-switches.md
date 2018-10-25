@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b6cf3bf422c861d5a649e5cfa71cf2b4a4b5fea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8a8987354af4a0b62438cea3aab3f18f4def7bfa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951113"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907038"
 ---
 # <a name="devenv-command-line-switches"></a>Commutateurs de la ligne de commande devenv
 
@@ -61,7 +61,7 @@ Les règles de syntaxe pour les commutateurs `devenv` ressemblent à celles d’
 Les commutateurs de ligne de commande suivants affichent l’IDE et effectuent la tâche décrite.
 
 |Commutateur de ligne de commande|Description|
-|-------------------------|-----------------|
+| - |-----------------|
 |[/Command](../../ide/reference/command-devenv-exe.md)|Démarre l’IDE et exécute la commande spécifiée.|
 |[/DebugExe](../../ide/reference/debugexe-devenv-exe.md)|Charge un exécutable C++ sous le contrôle du débogueur. Ce commutateur n’est pas disponible pour les exécutables Visual Basic ou C#. Pour plus d’informations, consultez [Démarrer automatiquement un processus dans le débogueur](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).|
 |[/LCID ou /l](../../ide/reference/lcid-devenv-exe.md)|Spécifie la langue par défaut pour l’IDE. Si la langue spécifiée n’est pas incluse dans votre installation de Visual Studio, ce paramètre est ignoré.|
@@ -77,7 +77,7 @@ Les commutateurs de ligne de commande suivants affichent l’IDE et effectuent l
 Les commutateurs de ligne de commande suivants n’affichent pas l’IDE.
 
 |Commutateur de ligne de commande|Description|
-|-------------------------|-----------------|
+| - |-----------------|
 |[/?](../../ide/reference/q-devenv-exe.md)|Affiche l’aide des commutateurs devenv dans la **fenêtre d’invite de commandes**.<br /><br /> **Devenv /?**|
 |[/Build](../../ide/reference/build-devenv-exe.md)|Génère la solution ou le projet spécifié en fonction de la configuration de la solution indiquée.<br /><br /> **Devenv myproj.csproj /build**|
 |[/Clean](../../ide/reference/clean-devenv-exe.md)|Supprime tous les fichiers créés par la commande build, sans affecter les fichiers sources.<br /><br /> **Devenv myproj.csproj /clean**|

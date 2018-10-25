@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 696ec34bb0009b9b09b5902a102c71cf1331f320
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b85814be6df104a0d5859fbb339ce0dc665c09c4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945452"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908739"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Renommer un symbole de code (refactorisation)
 
@@ -41,34 +41,34 @@ Cette refactorisation s’applique à :
 
    - C# :
 
-    ![Code mis en surbrillance (C#)](media/rename-highlight-cs.png)
+       ![Code mis en surbrillance (C#)](media/rename-highlight-cs.png)
 
    - Visual Basic :
 
-    ![Code mis en surbrillance (Visual Basic)](media/rename-highlight-vb.png)
+       ![Code mis en surbrillance (Visual Basic)](media/rename-highlight-vb.png)
 
-1. Effectuez ensuite l'une des opérations suivantes :
+2. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-     - Appuyez sur **Ctrl+R**, puis **Ctrl+R**. (Notez que le raccourci clavier peut varier en fonction du profil que vous avez sélectionné.)
+      - Appuyez sur **Ctrl+R**, puis **Ctrl+R**. (Notez que le raccourci clavier peut varier en fonction du profil que vous avez sélectionné.)
    - **Souris**
-     - Sélectionnez **Modifier > Refactoriser > Renommer**.
-     - Cliquez avec le bouton droit et sélectionnez **Renommer**.
+      - Sélectionnez **Modifier > Refactoriser > Renommer**.
+      - Cliquez avec le bouton droit et sélectionnez **Renommer**.
 
-1. Renommez l’élément en tapant le nouveau nom.
+3. Renommez l’élément en tapant le nouveau nom.
 
    - C# :
 
-    ![Renommer une animation (C#)](media/rename-animated-cs.gif)
+      ![Renommer une animation (C#)](media/rename-animated-cs.gif)
 
    - Visual Basic :
 
-    ![Renommer (VB)](media/rename-rename-vb.png)
+      ![Renommer (VB)](media/rename-rename-vb.png)
 
    > [!TIP]
    > Vous pouvez également mettre à jour les commentaires et autres chaînes afin d’utiliser ce nouveau nom, et [afficher un aperçu des changements](../../ide/preview-changes.md) avant de les enregistrer, à l’aide des cases à cocher de la boîte de dialogue **Renommer** qui apparaît en haut à droite de votre éditeur.
 
-1. Quand vous êtes satisfait du changement, appuyez sur le bouton **Appliquer** ou sur la touche **Entrée** pour valider les changements.
+4. Quand vous êtes satisfait du changement, appuyez sur le bouton **Appliquer** ou sur la touche **Entrée** pour valider les changements.
 
 > [!NOTE]
 > Si vous utilisez un nom qui existe déjà, ce qui provoquerait un conflit, la boîte de dialogue **Renommer** vous avertit.

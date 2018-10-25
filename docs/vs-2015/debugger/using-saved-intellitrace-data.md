@@ -21,12 +21,12 @@ caps.latest.revision: 112
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c241a4ac216fa42d6a67e7e2165e2ceac195e96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7ab3e165a00fa55c8e08f4b538d749d53471e0eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279095"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929489"
 ---
 # <a name="using-saved-intellitrace-data"></a>Utilisation des données IntelliTrace enregistrées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,25 +164,25 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
 ##### <a name="start-debugging-with-a-sharepoint-correlation-id"></a>Commencer à déboguer avec un ID de corrélation SharePoint  
   
-1.  Copiez l’ID de corrélation SharePoint à partir de sa source.  
+1. Copiez l’ID de corrélation SharePoint à partir de sa source.  
   
-     Exemple :  
+    Exemple :  
   
-     ![IntelliTrace &#45; erreur SharePoint &#45; ID de corrélation](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
+    ![IntelliTrace &#45; erreur SharePoint &#45; ID de corrélation](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
   
-2.  Ouvrez le fichier .iTrace, puis pointez sur **Analyse** et entrez l’ID de corrélation SharePoint pour examiner la demande correspondante de site web et les événements inscrits.  
+2. Ouvrez le fichier .iTrace, puis pointez sur **Analyse** et entrez l’ID de corrélation SharePoint pour examiner la demande correspondante de site web et les événements inscrits.  
   
-     ![Journal IntelliTrace &#45; ID de corrélation SharePoint entrez](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
+    ![Journal IntelliTrace &#45; ID de corrélation SharePoint entrez](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
   
-3.  Sous **Événements de requête**, examinez les événements. En commençant à partir du haut, les événements apparaissent dans l’ordre dans lequel ils se produisent.  
+3. Sous **Événements de requête**, examinez les événements. En commençant à partir du haut, les événements apparaissent dans l’ordre dans lequel ils se produisent.  
   
-    1.  Choisissez un événement pour en afficher les détails.  
+   1. Choisissez un événement pour en afficher les détails.  
   
-    2.  Sélectionnez **Démarrer le débogage** pour démarrer le débogage au point où l’événement s’est produit.  
+   2. Sélectionnez **Démarrer le débogage** pour démarrer le débogage au point où l’événement s’est produit.  
   
-     ![Fichier journal IntelliTrace &#45; afficher une requête web &#43; événements](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
+      ![Fichier journal IntelliTrace &#45; afficher une requête web &#43; événements](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
   
- Vous pouvez voir ces types d’événements SharePoint avec des événements IntelliTrace :  
+   Vous pouvez voir ces types d’événements SharePoint avec des événements IntelliTrace :  
   
 -   **Événements de profil utilisateur**  
   
@@ -204,28 +204,28 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
 ##### <a name="start-debugging-from-an-unhandled-exception"></a>Démarrer le débogage à partir d’une exception non gérée  
   
-1.  Choisissez un ID de corrélation SharePoint pour une exception. Les exceptions sont regroupées par type et pile des appels.  
+1. Choisissez un ID de corrélation SharePoint pour une exception. Les exceptions sont regroupées par type et pile des appels.  
   
-2.  (Facultatif) Développez **Pile des appels** pour consulter la pile d’appels d’un groupe d’exceptions.  
+2. (Facultatif) Développez **Pile des appels** pour consulter la pile d’appels d’un groupe d’exceptions.  
   
-3.  Sélectionnez **Exception de débogage** pour démarrer le débogage à l’emplacement et au moment où l’exception s’est produite.  
+3. Sélectionnez **Exception de débogage** pour démarrer le débogage à l’emplacement et au moment où l’exception s’est produite.  
   
-     ![Journal IntelliTrace &#45; SharePoint des exceptions non gérées](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
+    ![Journal IntelliTrace &#45; SharePoint des exceptions non gérées](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
- Pour une procédure pas à pas, consultez [procédure pas à pas : débogage d’une Application SharePoint par IntelliTrace à l’aide de](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Pour les types de données enregistrées par l’agent, consultez [fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).  
+   Pour une procédure pas à pas, consultez [procédure pas à pas : débogage d’une Application SharePoint par IntelliTrace à l’aide de](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Pour les types de données enregistrées par l’agent, consultez [fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).  
   
 ###  <a name="ThreadsList"></a> Liste de threads  
  Examinez les threads enregistrés qui se sont exécutés dans le processus cible. Vous pouvez commencer à déboguer à partir du premier événement IntelliTrace valide d’un thread sélectionné.  
   
 ##### <a name="to-start-debugging-from-a-specific-thread"></a>Pour démarrer le débogage à partir d’un thread spécifique  
   
-1.  Dans **Liste de threads**, choisissez un thread.  
+1. Dans **Liste de threads**, choisissez un thread.  
   
-2.  En bas de **Liste de threads**, choisissez **Démarrer le débogage**. Vous pouvez également double-cliquer sur un thread.  
+2. En bas de **Liste de threads**, choisissez **Démarrer le débogage**. Vous pouvez également double-cliquer sur un thread.  
   
-     Pour démarrer le débogage à partir du démarrage de l’application, double-cliquez sur **Thread principal**. Consultez [fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).  
+    Pour démarrer le débogage à partir du démarrage de l’application, double-cliquez sur **Thread principal**. Consultez [fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).  
   
- Les données de thread créées par l’utilisateur peuvent être plus utiles que les threads qu’un serveur crée et gère pour les applications web hébergées par IIS.  
+   Les données de thread créées par l’utilisateur peuvent être plus utiles que les threads qu’un serveur crée et gère pour les applications web hébergées par IIS.  
   
 |**Colonne**|**Affiche**|  
 |----------------|-------------------|  

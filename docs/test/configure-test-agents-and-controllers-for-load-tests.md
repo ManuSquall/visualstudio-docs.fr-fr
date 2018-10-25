@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a0da0ca3fb5c36a0c878e641121312b2773b8215
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: abc993d13752cdae00ea75c1eba8e39901f562c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321110"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942983"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Configurer les agents de test et les contrôleurs de test pour l’exécution de tests de charge
 
@@ -35,25 +35,25 @@ L’architecture de la simulation de charge se compose d’un client Visual Stud
 
 Cette architecture offre les avantages suivants :
 
--   La possibilité de faire évoluer la génération de charge en ajoutant des agents de test supplémentaires à un contrôleur de test.
+- La possibilité de faire évoluer la génération de charge en ajoutant des agents de test supplémentaires à un contrôleur de test.
 
--   Une flexibilité pour l’installation du logiciel du client, du contrôleur de test et des agents de test sur le même ordinateur ou sur différents ordinateurs. Exemple :
+- Une flexibilité pour l’installation du logiciel du client, du contrôleur de test et des agents de test sur le même ordinateur ou sur différents ordinateurs. Exemple :
 
-     **Configuration locale :**
+   **Configuration locale :**
 
-    -   Ordinateur1 : Visual Studio, contrôleur, agent.
+  - Ordinateur1 : Visual Studio, contrôleur, agent.
 
-     ![Ordinateur local utilisant le contrôleur et l'agent](./media/load-test-configa.png)
+    ![Ordinateur local utilisant le contrôleur et l'agent](./media/load-test-configa.png)
 
-     **Configuration à distance classique :**
+    **Configuration à distance classique :**
 
-    -   Ordinateur1 et Ordinateur2 : Visual Studio (plusieurs testeurs peuvent utiliser le même contrôleur).
+  - Ordinateur1 et Ordinateur2 : Visual Studio (plusieurs testeurs peuvent utiliser le même contrôleur).
 
-    -   Ordinateur3 : contrôleur (sur lequel des agents peuvent également être installés).
+  - Ordinateur3 : contrôleur (sur lequel des agents peuvent également être installés).
 
-    -   Ordinateur4-n : agent ou agents tous associés au contrôleur sur Ordinateur3.
+  - Ordinateur4-n : agent ou agents tous associés au contrôleur sur Ordinateur3.
 
-     ![Ordinateurs locaux utilisant le contrôleur et les agents](./media/load-test-configb.png)
+    ![Ordinateurs locaux utilisant le contrôleur et les agents](./media/load-test-configb.png)
 
 Même si un contrôleur de test gère en général plusieurs agents de test, un agent ne peut être associé qu’à un seul contrôleur. Chaque agent de test peut être partagé par une équipe de développeurs. Cette architecture permet d’augmenter facilement le nombre d’agents de test, ce qui génère des charges plus importantes.
 

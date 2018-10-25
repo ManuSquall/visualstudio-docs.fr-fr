@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e6a7bf23ab8b64516f474c6741cef48d7a0d4b43
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 434b9c5a575ab19530ca3c5c3e0d6536235b9f88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294266"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878555"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Comment : étendre le concepteur de langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,17 +74,17 @@ Vous pouvez créer des extensions au concepteur qui vous permet de modifier des 
   
  Pour déployer les extensions vers les principaux [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]et à d’autres ordinateurs, procédez comme suit :  
   
-1.  Rechercher le fichier d’installation de VSIX dans votre projet VSIX dans emplacement\\*\*\\\*.vsix  
+1. Rechercher le fichier d’installation de VSIX dans votre projet VSIX dans emplacement\\*\*\\\*.vsix  
   
-2.  Copiez ce fichier à l’ordinateur cible et dans l’Explorateur Windows (ou Explorateur de fichiers), double-cliquez dessus.  
+2. Copiez ce fichier à l’ordinateur cible et dans l’Explorateur Windows (ou Explorateur de fichiers), double-cliquez dessus.  
   
-     Le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Gestionnaire d’extensions s’ouvre pour vérifier que l’extension a été installée.  
+    Le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Gestionnaire d’extensions s’ouvre pour vérifier que l’extension a été installée.  
   
- Pour désinstaller l’extension, procédez comme suit :  
+   Pour désinstaller l’extension, procédez comme suit :  
   
-1.  dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], dans le **outils** menu, cliquez sur **Gestionnaire d’extensions**.  
+3. dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], dans le **outils** menu, cliquez sur **Gestionnaire d’extensions**.  
   
-2.  Sélectionnez l’extension et supprimez-le.  
+4. Sélectionnez l’extension et supprimez-le.  
   
 ## <a name="adding-a-shortcut-menu-command"></a>Ajout d’une commande de Menu contextuel  
  Pour afficher une commande de menu contextuel sur l’aire du concepteur DSL ou dans la fenêtre de l’Explorateur DSL, écrire une classe qui ressemble à ce qui suit.  

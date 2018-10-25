@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2958001bfd2f9c00689e1c44bd64a5fa3c5b4d00
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4e8384bc86bf59216c353b0f4610d3863445781
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635555"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889761"
 ---
 # <a name="custom-task-panes"></a>Volets de tâches personnalisés
   Les volets de tâches sont des panneaux d’interface utilisateur généralement ancrés à l’un des côtés d’une fenêtre dans une application Microsoft Office. Les volets de tâches personnalisés vous permettent de créer votre propre volet de tâches et de fournir aux utilisateurs une interface familière pour accéder aux fonctionnalités de votre solution. Par exemple, l'interface peut comporter des contrôles exécutant du code pour modifier des documents ou afficher des données à partir d'une source de données.  
@@ -55,17 +55,17 @@ ms.locfileid: "42635555"
 ## <a name="create-a-custom-task-pane"></a>Créer un volet Office personnalisé  
  Vous pouvez créer un volet de tâches personnalisé de base en deux étapes :  
   
-1.  Créez une interface utilisateur pour votre volet de tâches personnalisé en ajoutant des contrôles Windows Forms à un objet <xref:System.Windows.Forms.UserControl>.  
+1. Créez une interface utilisateur pour votre volet de tâches personnalisé en ajoutant des contrôles Windows Forms à un objet <xref:System.Windows.Forms.UserControl>.  
   
-2.  Instanciez le volet de tâches personnalisé en passant le contrôle utilisateur à l'objet <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> dans votre complément VSTO. Cette collection retourne un nouvel objet <xref:Microsoft.Office.Tools.CustomTaskPane> pouvant servir à modifier l'apparence du volet de tâches et à répondre aux événements utilisateur.  
+2. Instanciez le volet de tâches personnalisé en passant le contrôle utilisateur à l'objet <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> dans votre complément VSTO. Cette collection retourne un nouvel objet <xref:Microsoft.Office.Tools.CustomTaskPane> pouvant servir à modifier l’apparence du volet de tâches et à répondre aux événements utilisateur.  
   
- Pour plus d’informations, consultez [Comment : ajouter un volet Office personnalisé à une application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
+   Pour plus d’informations, consultez [Comment : ajouter un volet Office personnalisé à une application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
   
 ### <a name="create-the-user-interface"></a>Créer l’interface utilisateur  
- Tous les volets de tâches personnalisés créés à l'aide des outils de développement Office dans Visual Studio contiennent un objet <xref:System.Windows.Forms.UserControl>. Ce contrôle utilisateur fournit l’interface utilisateur de votre volet de tâches personnalisé. Vous pouvez créer le contrôle utilisateur au moment du design ou lors de l’exécution. Si vous le créez au moment du design, vous pouvez utiliser le concepteur Windows Forms pour construire l’interface utilisateur de votre volet de tâches.  
+ Tous les volets de tâches personnalisés créés à l’aide des outils de développement Office dans Visual Studio contiennent un objet <xref:System.Windows.Forms.UserControl>. Ce contrôle utilisateur fournit l’interface utilisateur de votre volet de tâches personnalisé. Vous pouvez créer le contrôle utilisateur au moment du design ou lors de l’exécution. Si vous le créez au moment du design, vous pouvez utiliser le concepteur Windows Forms pour construire l’interface utilisateur de votre volet de tâches.  
   
 ### <a name="instantiate-the-custom-task-pane"></a>Instanciez le volet Office personnalisé  
- Après avoir créé un contrôle utilisateur contenant l'interface utilisateur du volet de tâches personnalisé, vous devez instancier un objet <xref:Microsoft.Office.Tools.CustomTaskPane>. Pour cela, passez le contrôle utilisateur à l'objet <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> de votre complément VSTO en appelant l'une des méthodes <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>. Cette collection est exposée en tant que champ `CustomTaskPanes` de la classe `ThisAddIn`. L'exemple de code suivant est destiné à être exécuté à partir de la classe `ThisAddIn`.  
+ Après avoir créé un contrôle utilisateur contenant l’interface utilisateur du volet de tâches personnalisé, vous devez instancier un objet <xref:Microsoft.Office.Tools.CustomTaskPane>. Pour cela, passez le contrôle utilisateur à l'objet <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> de votre complément VSTO en appelant l'une des méthodes <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>. Cette collection est exposée en tant que champ `CustomTaskPanes` de la classe `ThisAddIn`. L'exemple de code suivant est destiné à être exécuté à partir de la classe `ThisAddIn`.  
   
  [!code-vb[Trin_TaskPaneBasic#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#2)]
  [!code-csharp[Trin_TaskPaneBasic#2](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#2)]  
@@ -77,11 +77,11 @@ ms.locfileid: "42635555"
   
  Pour déterminer la fenêtre qui affiche le volet de tâches personnalisé, utilisez la surcharge de méthode <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> appropriée quand vous créez le volet de tâches :  
   
--   Pour associer le volet de tâches à la fenêtre active, utilisez la méthode <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>.  
+- Pour associer le volet de tâches à la fenêtre active, utilisez la méthode <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>.  
   
--   Pour associer le volet de tâches à un document hébergé par une fenêtre spécifiée, utilisez la méthode <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>.  
+- Pour associer le volet de tâches à un document hébergé par une fenêtre spécifiée, utilisez la méthode <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>.  
   
- Certaines applications Office nécessitent des instructions explicites pour savoir quand créer ou afficher votre volet de tâches, quand plusieurs fenêtres sont ouvertes. Il est donc important de se demander où instancier le volet de tâches personnalisé dans votre code pour vous assurer que ce volet s’affiche avec les documents et éléments appropriés dans l’application. Pour plus d’informations, consultez [gérer les volets de tâches personnalisés dans les fenêtres d’application](#Managing).  
+  Certaines applications Office nécessitent des instructions explicites pour savoir quand créer ou afficher votre volet de tâches, quand plusieurs fenêtres sont ouvertes. Il est donc important de se demander où instancier le volet de tâches personnalisé dans votre code pour vous assurer que ce volet s’affiche avec les documents et éléments appropriés dans l’application. Pour plus d’informations, consultez [gérer les volets de tâches personnalisés dans les fenêtres d’application](#Managing).  
   
 ## <a name="access-the-application-from-the-task-pane"></a>Accéder à l’application dans le volet des tâches  
  Pour automatiser l'application à partir du contrôle utilisateur, vous pouvez directement accéder au modèle objet en utilisant `Globals.ThisAddIn.Application` dans votre code. La classe `Globals` statique permet d'accéder à l'objet `ThisAddIn`. Le champ `Application` de cet objet est le point d'entrée dans le modèle objet de l'application.  
@@ -89,7 +89,7 @@ ms.locfileid: "42635555"
  Pour plus d’informations sur la `Application` champ la `ThisAddIn` d’objets, consultez [programme VSTO Add-ins](../vsto/programming-vsto-add-ins.md). Pour une procédure pas à pas qui montre comment automatiser une application à partir d’un volet Office personnalisé, consultez [procédure pas à pas : automatique d’une application à partir d’un volet Office personnalisé](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md). Pour plus d’informations sur la `Globals` de classe, consultez [d’accès Global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
 ## <a name="manage-the-user-interface-of-the-task-pane"></a>Gérer l’interface utilisateur du volet Office  
- Après avoir créé le volet de tâches, vous pouvez utiliser les propriétés et événements de l'objet <xref:Microsoft.Office.Tools.CustomTaskPane> pour contrôler l'interface utilisateur du volet de tâches et répondre quand l'utilisateur modifie ce volet.  
+ Après avoir créé le volet de tâches, vous pouvez utiliser les propriétés et événements de l’objet <xref:Microsoft.Office.Tools.CustomTaskPane> pour contrôler l’interface utilisateur du volet de tâches et répondre quand l’utilisateur modifie ce volet.  
   
 ### <a name="make-the-custom-task-pane-visible"></a>Rendre visible le volet de tâches personnalisé  
  Par défaut, le volet de tâches n’est pas visible. Pour afficher le volet des tâches, vous devez définir le <xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A> propriété **true**.  
@@ -98,10 +98,10 @@ ms.locfileid: "42635555"
   
  Si vous créez un volet de tâches personnalisé dans votre complément VSTO, vous devez également créer un élément d'interface utilisateur, tel qu'un bouton, sur lequel les utilisateurs peuvent cliquer pour afficher ou masquer le volet de tâches personnalisé. Si vous créez un volet de tâches personnalisé dans une application Microsoft Office qui prend en charge la personnalisation du ruban, vous pouvez ajouter un groupe de contrôles au ruban avec un bouton permettant d’afficher ou de masquer le volet de tâches personnalisé. Pour une procédure pas à pas qui montre comment effectuer cette opération, consultez [procédure pas à pas : synchroniser un volet Office personnalisé avec un bouton de ruban](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
   
- Si vous créez un volet de tâches personnalisé dans une application Microsoft Office qui ne prend en charge la personnalisation du ruban, vous pouvez ajouter un objet <xref:Microsoft.Office.Core.CommandBarButton> permettant d'afficher ou de masquer le volet de tâches personnalisé.  
+ Si vous créez un volet de tâches personnalisé dans une application Microsoft Office qui ne prend en charge la personnalisation du ruban, vous pouvez ajouter un objet <xref:Microsoft.Office.Core.CommandBarButton> permettant d’afficher ou de masquer le volet de tâches personnalisé.  
   
 ### <a name="modify-the-appearance-of-the-task-pane"></a>Modifier l’apparence du volet Office  
- Vous pouvez contrôler la taille et l'emplacement d'un volet de tâches personnalisé à l'aide des propriétés de l'objet <xref:Microsoft.Office.Tools.CustomTaskPane>. Vous pouvez apporter de nombreuses autres modifications à l'apparence d'un volet de tâches personnalisé à l'aide des propriétés de l'objet <xref:System.Windows.Forms.UserControl> figurant dans le volet de tâches personnalisé. Par exemple, vous pouvez spécifier une image d'arrière-plan pour un volet de tâches personnalisé à l'aide de la propriété <xref:System.Windows.Forms.Control.BackgroundImage%2A> du contrôle utilisateur.  
+ Vous pouvez contrôler la taille et l’emplacement d’un volet de tâches personnalisé à l’aide des propriétés de l’objet <xref:Microsoft.Office.Tools.CustomTaskPane>. Vous pouvez apporter de nombreuses autres modifications à l'apparence d'un volet de tâches personnalisé à l'aide des propriétés de l'objet <xref:System.Windows.Forms.UserControl> figurant dans le volet de tâches personnalisé. Par exemple, vous pouvez spécifier une image d'arrière-plan pour un volet de tâches personnalisé à l'aide de la propriété <xref:System.Windows.Forms.Control.BackgroundImage%2A> du contrôle utilisateur.  
   
  Le tableau suivant répertorie les modifications que vous pouvez apporter à un volet de tâches personnalisé à l'aide des propriétés <xref:Microsoft.Office.Tools.CustomTaskPane>.  
   
@@ -123,9 +123,9 @@ ms.locfileid: "42635555"
 |Répondre quand l’utilisateur masque ou rend visible le volet de tâches|<xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>|  
   
 ## <a name="clean-up-resources-used-by-the-task-pane"></a>Nettoyer les ressources utilisées par le volet de tâches  
- Une fois que vous avez créé un volet de tâches personnalisé, l'objet <xref:Microsoft.Office.Tools.CustomTaskPane> reste en mémoire tant que votre complément VSTO est en cours d'exécution. L’objet reste en mémoire, même une fois que l’utilisateur clique sur le **fermer** bouton (X) dans le coin du volet Office.  
+ Une fois que vous avez créé un volet de tâches personnalisé, l’objet <xref:Microsoft.Office.Tools.CustomTaskPane> reste en mémoire tant que votre complément VSTO est en cours d’exécution. L’objet reste en mémoire, même une fois que l’utilisateur clique sur le **fermer** bouton (X) dans le coin du volet Office.  
   
- Pour nettoyer les ressources utilisées par le volet de tâches alors que le complément VSTO est encore en cours d'exécution, utilisez les méthodes <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> ou <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A>. Ces méthodes suppriment l'objet <xref:Microsoft.Office.Tools.CustomTaskPane> spécifié de la collection `CustomTaskPanes`, et elles appellent la méthode <xref:Microsoft.Office.Tools.CustomTaskPane.Dispose%2A> de l'objet.  
+ Pour nettoyer les ressources utilisées par le volet de tâches alors que le complément VSTO est encore en cours d’exécution, utilisez les méthodes <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> ou <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A>. Ces méthodes suppriment l'objet <xref:Microsoft.Office.Tools.CustomTaskPane> spécifié de la collection `CustomTaskPanes`, et elles appellent la méthode <xref:Microsoft.Office.Tools.CustomTaskPane.Dispose%2A> de l'objet.  
   
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] nettoie automatiquement les ressources utilisées par le volet de tâches personnalisé quand le complément VSTO est déchargé. N’appelez pas la <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> ou <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> méthodes dans le `ThisAddIn_Shutdown` Gestionnaire d’événements dans votre projet. Ces méthodes lèvent une exception <xref:System.ObjectDisposedException> car [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] nettoie les ressources utilisées par l'objet <xref:Microsoft.Office.Tools.CustomTaskPane> avant l'appel de `ThisAddIn_Shutdown`. Pour plus d’informations sur `ThisAddIn_Shutdown`, consultez [événements dans les projets Office](../vsto/events-in-office-projects.md)  
   
@@ -136,11 +136,11 @@ ms.locfileid: "42635555"
   
  Les groupes d’applications suivants ont des exigences différentes en termes de développement :  
   
--   [Outlook](#Outlook)  
+- [Outlook](#Outlook)  
   
--   [Word, InfoPath et PowerPoint](#WordAndInfoPath)  
+- [Word, InfoPath et PowerPoint](#WordAndInfoPath)  
   
- ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [comment faire : gérer les volets de tâches dans des Compléments VSTO Word ?](http://go.microsoft.com/fwlink/?LinkId=136781).  
+  ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [comment faire : gérer les volets de tâches dans des Compléments VSTO Word ?](http://go.microsoft.com/fwlink/?LinkId=136781).  
   
 ##  <a name="Outlook"></a> Outlook  
  Quand vous créez un volet de tâches personnalisé pour Outlook, le volet est associé à une fenêtre d’explorateur ou d’inspecteur spécifique. Explorateurs sont des fenêtres qui affichent le contenu d’un dossier, et les inspecteurs sont des fenêtres qui affichent un élément tel qu’un message électronique ou une tâche.  
@@ -149,26 +149,26 @@ ms.locfileid: "42635555"
   
  Pour associer le volet des tâches à un Explorateur ou Inspecteur spécifique, utilisez le <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> méthode pour créer le volet des tâches et passez le <xref:Microsoft.Office.Interop.Outlook.Explorer> ou <xref:Microsoft.Office.Interop.Outlook.Inspector> de l’objet à la *fenêtre* paramètre. Pour plus d’informations sur la création de volets de tâches personnalisés, consultez [vue d’ensemble des volets de tâches personnalisés](../vsto/custom-task-panes.md).  
   
--   <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>  
+- <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>  
   
--   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Activate>  
+- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Activate>  
   
--   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close>  
+- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close>  
   
--   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Deactivate>  
+- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Deactivate>  
   
- Pour surveiller l'état des fenêtres d'inspecteur, vous pouvez gérer les événements d'inspecteur suivants :  
+  Pour surveiller l'état des fenêtres d'inspecteur, vous pouvez gérer les événements d'inspecteur suivants :  
   
--   <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector>  
+- <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector>  
   
--   <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Activate>  
+- <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Activate>  
   
--   <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>  
+- <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>  
   
--   <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Deactivate>  
+- <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Deactivate>  
   
 ### <a name="prevent-multiple-instances-of-a-custom-task-pane-in-outlook"></a>Éviter que plusieurs instances d’un volet Office personnalisé dans Outlook  
- Pour empêcher les fenêtres Outlook d'afficher plusieurs instances d'un volet de tâches personnalisé, supprimez explicitement le volet de tâches personnalisé de la collection `CustomTaskPanes` de la classe `ThisAddIn` quand chaque fenêtre est fermée. Appelez la méthode <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> dans un événement qui est déclenché quand une fenêtre est fermée, tel que <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> ou <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>.  
+ Pour empêcher les fenêtres Outlook d’afficher plusieurs instances d’un volet de tâches personnalisé, supprimez explicitement le volet de tâches personnalisé de la collection `CustomTaskPanes` de la classe `ThisAddIn` quand chaque fenêtre est fermée. Appelez la méthode <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> dans un événement qui est déclenché quand une fenêtre est fermée, tel que <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> ou <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>.  
   
  Si vous ne supprimez pas explicitement le volet de tâches personnalisé, les fenêtres Outlook peuvent afficher plusieurs instances du volet de tâches personnalisé. Outlook recycle parfois des fenêtres. Ces fenêtres recyclées conservent les références aux éventuels volets de tâches personnalisés qui leur ont été attachés.  
   

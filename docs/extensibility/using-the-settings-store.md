@@ -1,5 +1,5 @@
 ---
-title: À l’aide de la banque de paramètres | Documents Microsoft
+title: À l’aide de la Store paramètres | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,70 +13,70 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3919ee3973194967f9d0367ecd13c495b3b62af2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 72bfc23f585506d86a485d325611c9281f49a51d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139287"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949212"
 ---
-# <a name="using-the-settings-store"></a>À l’aide de la banque de paramètres
+# <a name="using-the-settings-store"></a>Utilisation de la banque de paramètres
 Il existe deux types de magasins de paramètres :  
   
--   Paramètres de configuration, qui sont des paramètres de Visual Studio et le VSPackage en lecture seule. Visual Studio fusionne les paramètres de tous les fichiers .pkgdef connus dans le magasin.  
+- Paramètres de configuration, qui sont des paramètres de Visual Studio et VSPackage en lecture seule. Visual Studio fusionne les paramètres à partir de tous les fichiers .pkgdef connus dans ce magasin.  
   
--   Paramètres utilisateur, qui sont accessibles en écriture paramètres tels que ceux qui sont affichés sur les pages de la **Options** boîte de dialogue pages de propriétés et certaines autres boîtes de dialogue. Extensions Visual Studio peuvent utiliser pour le stockage local de petites quantités de données.  
+- Paramètres utilisateur, qui sont des paramètres accessible en écriture, telles que celles qui sont affichées dans les pages dans le **Options** boîte de dialogue pages de propriétés et certaines autres boîtes de dialogue. Extensions Visual Studio peuvent utiliser pour le stockage local de petites quantités de données.  
   
- Cette procédure pas à pas montre comment lire des données à partir du magasin de paramètre de configuration. Consultez [l’écriture dans le magasin de paramètres utilisateur](../extensibility/writing-to-the-user-settings-store.md) pour une explication de l’écriture dans le magasin de paramètres utilisateur.  
+  Cette procédure pas à pas montre comment lire des données à partir du magasin de paramètre de configuration. Consultez [écriture dans le Store de paramètres utilisateur](../extensibility/writing-to-the-user-settings-store.md) pour une explication de l’écriture dans la banque de paramètres utilisateur.  
   
 ## <a name="creating-the-example-project"></a>Création de l’exemple de projet  
- Cette section montre comment créer un projet d’extension simple avec une commande de menu de démonstration.  
+ Cette section montre comment créer un projet d’extension simple avec une commande de menu pour la démonstration.  
   
-1.  Chaque extension de Visual Studio commence par un projet de déploiement VSIX qui contient les composants d’extension. Créer un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet VSIX nommé `SettingsStoreExtension`. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue sous **Visual c# / extensibilité**.  
+1. Chaque extension de Visual Studio commence par un projet de déploiement VSIX qui contiendra les ressources de l’extension. Créer un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet VSIX nommé `SettingsStoreExtension`. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue sous **Visual c# / extensibilité**.  
   
-2.  Maintenant ajouter un modèle d’élément de commande personnalisée nommé **SettingsStoreCommand**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual c# / extensibilité** et sélectionnez **commande personnalisée**. Dans le **nom** au bas de la fenêtre, modifiez le nom de fichier de commande pour **SettingsStoreCommand.cs**. Pour plus d’informations sur la création d’une commande personnalisée, consultez [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2. Ajoutez maintenant un modèle d’élément de commande personnalisée nommé **SettingsStoreCommand**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual c# / extensibilité** et sélectionnez **commande personnalisée**. Dans le **nom** en bas de la fenêtre, modifiez le nom de fichier de commande pour **SettingsStoreCommand.cs**. Pour plus d’informations sur la création d’une commande personnalisée, consultez [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
-## <a name="using-the-configuration-settings-store"></a>À l’aide de la banque de paramètres de Configuration  
- Cette section montre comment détecter et afficher les paramètres de configuration.  
+## <a name="using-the-configuration-settings-store"></a>À l’aide du Store de paramètres de Configuration  
+ Cette section montre comment détecter et d’afficher les paramètres de configuration.  
   
-1.  Dans le fichier SettingsStorageCommand.cs, ajoutez le code suivant à l’aide des instructions :  
+1. Dans le fichier SettingsStorageCommand.cs, ajoutez le code suivant à l’aide d’instructions :  
   
-    ```  
-    using System.Collections.Generic;  
-    using Microsoft.VisualStudio.Settings;  
-    using Microsoft.VisualStudio.Shell.Settings;  
-    using System.Windows.Forms;  
-    ```  
+   ```  
+   using System.Collections.Generic;  
+   using Microsoft.VisualStudio.Settings;  
+   using Microsoft.VisualStudio.Shell.Settings;  
+   using System.Windows.Forms;  
+   ```  
   
-2.  Dans `MenuItemCallback`, supprimez le corps de la méthode et ajouter ces lignes obtenir le magasin de paramètres de configuration :  
+2. Dans `MenuItemCallback`, supprimez le corps de la méthode et ajouter ces lignes Obtient la banque de paramètres de configuration :  
   
-    ```  
-    SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
-    SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
-    ```  
+   ```  
+   SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
+   SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
+   ```  
   
-     Le <xref:Microsoft.VisualStudio.Shell.Settings.ShellSettingsManager> est une classe d’assistance gérés via la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> service.  
+    Le <xref:Microsoft.VisualStudio.Shell.Settings.ShellSettingsManager> est une classe d’assistance managée via le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> service.  
   
-3.  Maintenant déterminer si les outils de Windows Phone sont installées. Le code doit ressembler à ceci :  
+3. Maintenant, cherchez si les outils de Windows Phone sont installées. Le code doit ressembler à ceci :  
   
-    ```  
-    private void MenuItemCallback(object sender, EventArgs e)  
-    {  
-        SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
-        SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
-        bool arePhoneToolsInstalled = configurationSettingsStore.CollectionExists(@"InstalledProducts\Microsoft Windows Phone Developer Tools");  
-        string message = "Microsoft Windows Phone Developer Tools: " + arePhoneToolsInstalled;  
-        MessageBox.Show(message);  
-    }  
-    ```  
+   ```  
+   private void MenuItemCallback(object sender, EventArgs e)  
+   {  
+       SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
+       SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
+       bool arePhoneToolsInstalled = configurationSettingsStore.CollectionExists(@"InstalledProducts\Microsoft Windows Phone Developer Tools");  
+       string message = "Microsoft Windows Phone Developer Tools: " + arePhoneToolsInstalled;  
+       MessageBox.Show(message);  
+   }  
+   ```  
   
-4.  Tester le code. Générez le projet et commencez le débogage.  
+4. Tester le code. Générez le projet et commencez le débogage.  
   
-5.  Dans l’instance expérimentale, sur le **outils** menu, cliquez sur **SettingsStoreCommand d’appeler**.  
+5. Dans l’instance expérimentale, sur le **outils** menu, cliquez sur **SettingsStoreCommand appeler**.  
   
-     Vous devez voir un message indiquant **outils de développement Microsoft Windows Phone :** suivie **True** ou **False**.  
+    Vous devez voir un message indiquant **outils de développement de Microsoft Windows Phone :** suivie **True** ou **False**.  
   
- Visual Studio conserve le stockage de paramètres dans le Registre système.  
+   Visual Studio conserve la banque de paramètres dans le Registre système.  
   
 #### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>Pour utiliser un éditeur du Registre pour vérifier les paramètres de configuration  
   
@@ -85,6 +85,6 @@ Il existe deux types de magasins de paramètres :
 2.  Accédez à HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.  
   
     > [!NOTE]
-    >  Assurez-vous que vous cherchez à la clé qui contient \14.0Exp_Config\ et pas \14.0_Config\\. Lorsque vous exécutez l’instance expérimentale de Visual Studio, les paramètres de configuration sont dans la ruche de Registre « 14.0Exp_Config ».  
+    >  Assurez-vous que vous examinez la clé qui contient \14.0Exp_Config\ et pas \14.0_Config\\. Lorsque vous exécutez l’instance expérimentale de Visual Studio, les paramètres de configuration sont dans la ruche de Registre « 14.0Exp_Config ».  
   
-3.  Développez le nœud \Installed Products\. Si le message dans les étapes précédentes **Microsoft Windows Phone Developer Tools installé : True**, puis \Installed Products\ doit contenir un nœud d’outils de développement Microsoft Windows Phone. Si le message est **Microsoft Windows Phone Developer Tools installé : False**, \Installed Products\ ne doit pas contenir un nœud d’outils de développement Microsoft Windows Phone.
+3.  Développez le nœud \Installed Products\. Si le message dans les étapes précédentes est **Microsoft Windows Phone Developer Tools installé : True**, alors \Installed Products\ doit contenir un nœud d’outils de développement de Microsoft Windows Phone. Si le message est **Microsoft Windows Phone Developer Tools installé : False**, alors \Installed Products\ ne doit pas contenir un nœud d’outils de développement de Microsoft Windows Phone.

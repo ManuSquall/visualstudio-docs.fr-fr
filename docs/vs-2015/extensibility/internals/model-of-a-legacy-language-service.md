@@ -15,12 +15,12 @@ ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bb8b7ebc9cb5f0b1f6b2f2b313fa42418105ceec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9adeb87fe7830854ba2f7823ebb24605e072d10e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294032"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907701"
 ---
 # <a name="model-of-a-legacy-language-service"></a>Modèle d’un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,20 +32,20 @@ Un service de langage définit les éléments et les fonctionnalités pour une l
 ## <a name="a-minimal-language-service"></a>Un Service de langage Minimal  
  Le service de langage plus simple contient les deux objets suivants :  
   
--   Le *service de langage* implémente le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interface. Un service de langage a des informations sur le langage, y compris son nom, les extensions de nom de fichier, Gestionnaire de fenêtres de code et Coloriseur.  
+- Le *service de langage* implémente le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interface. Un service de langage a des informations sur le langage, y compris son nom, les extensions de nom de fichier, Gestionnaire de fenêtres de code et Coloriseur.  
   
--   Le *Coloriseur* implémente le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> interface.  
+- Le *Coloriseur* implémente le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> interface.  
   
- Le schéma conceptuel suivant montre un modèle d’un service de langage de base.  
+  Le schéma conceptuel suivant montre un modèle d’un service de langage de base.  
   
- ![Graphique de modèle de Service de langage](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
-Modèle de service de langage de base  
+  ![Graphique de modèle de Service de langage](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
+  Modèle de service de langage de base  
   
- Les hôtes de fenêtre de document le *vue du document* de l’éditeur, dans ce cas le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] éditeur principal. La vue de document et la mémoire tampon de texte sont détenus par l’éditeur. Ces objets fonctionnent avec [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] via une fenêtre de document spécialisé appelé un *fenêtre de code*. La fenêtre de code est contenue dans un <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objet qui est créé et contrôlé par l’IDE.  
+  Les hôtes de fenêtre de document le *vue du document* de l’éditeur, dans ce cas le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] éditeur principal. La vue de document et la mémoire tampon de texte sont détenus par l’éditeur. Ces objets fonctionnent avec [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] via une fenêtre de document spécialisé appelé un *fenêtre de code*. La fenêtre de code est contenue dans un <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objet qui est créé et contrôlé par l’IDE.  
   
- Quand un fichier avec une extension donnée est chargé, l’éditeur localise le service de langage associé à cette extension et la transmet à la fenêtre de code en appelant le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> (méthode). Le service de langage retourne un *Gestionnaire de fenêtres de code*, qui implémente le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> interface.  
+  Quand un fichier avec une extension donnée est chargé, l’éditeur localise le service de langage associé à cette extension et la transmet à la fenêtre de code en appelant le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> (méthode). Le service de langage retourne un *Gestionnaire de fenêtres de code*, qui implémente le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> interface.  
   
- Le tableau suivant fournit une vue d’ensemble des objets dans le modèle.  
+  Le tableau suivant fournit une vue d’ensemble des objets dans le modèle.  
   
 |Composant|Object|Fonction|  
 |---------------|------------|--------------|  

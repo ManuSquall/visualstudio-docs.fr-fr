@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::DestroyProgram | Documents Microsoft
+title: IDebugEngine2::DestroyProgram | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e85eb457a16de03fa989d86109a8705c3b36174
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1376f6b235bc9fa492f35557118a1857a36defa7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105864"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883274"
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
-Informe un moteur de débogage (DE) que le programme spécifié a été arrêté anormalement et que le DE doit nettoyer toutes les références au programme et envoi d’un programme détruire l’événement.  
+Informe un moteur de débogage (dé) que le programme spécifié a été arrêté anormalement, et que l’Allemagne doit nettoyer toutes les références au programme et envoi d’un programme détruire des événements.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,13 +41,13 @@ int DestroyProgram(
   
 #### <a name="parameters"></a>Paramètres  
  `pProgram`  
- [in] Un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objet qui représente le programme qui a été arrêté anormalement.  
+ [in] Un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objet qui représente le programme s’est terminé anormalement.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Une fois que cette méthode est appelée, le D’envoie ensuite un [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) événement vers le Gestionnaire de session de débogage (SDM).  
+ Une fois que cette méthode est appelée, l’Allemagne envoie par la suite un [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) événement le Gestionnaire de session de débogage (SDM).  
   
  Cette méthode n’est pas implémentée (retourne `E_NOTIMPL`) si le DE s’exécute dans le même processus que le programme en cours de débogage. Cette méthode est implémentée uniquement si le DE s’exécute dans le même processus que le SDM.  
   

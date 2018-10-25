@@ -14,29 +14,29 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba571f6ad66855c44902e06467889e2cae5b4555
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 016e2a0641772992c9c3e6f423e105c42ae20ff1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24571519"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909820"
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>Implémentation des interfaces d'assistance d'hôte intelligent
 [L’interface IDebugDocumentHelper](../winscript/reference/idebugdocumenthelper-interface.md) simplifie considérablement la tâche de création d’un hôte intelligent pour le débogage, car elle fournit des implémentations pour de nombreuses interfaces nécessaires pour l’hébergement intelligent.  
   
  Pour être un hôte intelligent utilisant `IDebugDocumentHelper`, une application hôte doit effectuer uniquement trois actions :  
   
-1.  `CoCreate` le gestionnaire de débogage de processus et utiliser l’interface [IProcessDebugManager](../winscript/reference/iprocessdebugmanager-interface.md) pour ajouter votre application à la liste des applications pouvant être déboguées.  
+1. `CoCreate` le gestionnaire de débogage de processus et utiliser l’interface [IProcessDebugManager](../winscript/reference/iprocessdebugmanager-interface.md) pour ajouter votre application à la liste des applications pouvant être déboguées.  
   
-2.  Créer une assistance de document de débogage pour chaque objet de script, à l’aide de la méthode [IProcessDebugManager::CreateDebugDocumentHelper](../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md). Vérifiez que le nom du document, le document parent, le texte et les blocs de script sont définis.  
+2. Créer une assistance de document de débogage pour chaque objet de script, à l’aide de la méthode [IProcessDebugManager::CreateDebugDocumentHelper](../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md). Vérifiez que le nom du document, le document parent, le texte et les blocs de script sont définis.  
   
-3.  Implémenter l’interface [IActiveScriptSiteDebug](../winscript/reference/iactivescriptsitedebug-interface.md) sur l’objet qui implémente l’interface [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) (qui est nécessaire pour Active Scripting). La seule méthode non triviale sur l’interface `IActiveScriptSiteDebug` délègue simplement à l’assistance.  
+3. Implémenter l’interface [IActiveScriptSiteDebug](../winscript/reference/iactivescriptsitedebug-interface.md) sur l’objet qui implémente l’interface [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) (qui est nécessaire pour Active Scripting). La seule méthode non triviale sur l’interface `IActiveScriptSiteDebug` délègue simplement à l’assistance.  
   
- Si vous le souhaitez, l’hôte peut implémenter l’interface [IDebugDocumentHost](../winscript/reference/idebugdocumenthost-interface.md) s’il a besoin de mieux contrôler la couleur de la syntaxe, la création de contexte de document et d’autres fonctionnalités étendues.  
+   Si vous le souhaitez, l’hôte peut implémenter l’interface [IDebugDocumentHost](../winscript/reference/idebugdocumenthost-interface.md) s’il a besoin de mieux contrôler la couleur de la syntaxe, la création de contexte de document et d’autres fonctionnalités étendues.  
   
- La principale limitation de l’assistance d’hôte intelligent est qu’elle ne peut traiter que les documents dont le contenu change ou diminue après leur ajout (bien que les documents puissent croître). Pour de nombreux hôtes intelligents, toutefois, la fonctionnalité qu’elle fournit est exactement celle qui est nécessaire.  
+   La principale limitation de l’assistance d’hôte intelligent est qu’elle ne peut traiter que les documents dont le contenu change ou diminue après leur ajout (bien que les documents puissent croître). Pour de nombreux hôtes intelligents, toutefois, la fonctionnalité qu’elle fournit est exactement celle qui est nécessaire.  
   
- Les sections suivantes décrivent chaque étape en détail.  
+   Les sections suivantes décrivent chaque étape en détail.  
   
 ## <a name="create-an-application-object"></a>Créer un objet d’application  
  Avant de pouvoir utiliser l’assistance d’hôte intelligent, vous devez créer un objet d’interface [IDebugApplication](../winscript/reference/idebugapplication-interface.md) pour représenter votre application dans le débogueur.  

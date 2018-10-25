@@ -9,12 +9,12 @@ description: MPN donne des détails sur les abonnements proposés, sur les règl
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b3bea3831e2d16f43d378bfe77a4dc8f84fdda3f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7175dd503c2e91091b5bb6499fa54c0e5f2586ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283572"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876763"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Abonnements Visual Studio offerts aux partenaires du réseau MPN (Microsoft Partner Network)
 Les partenaires qui acquièrent une compétence ou qui achètent l’Action Pack MPN sont éligibles aux abonnements Visual Studio. Ces abonnements sont concédés sous licence par utilisateur et sont valides uniquement quand ils sont attribués à un utilisateur nommé spécifique qui travaille pour la société partenaire.
@@ -23,11 +23,13 @@ Les partenaires qui acquièrent une compétence ou qui achètent l’Action Pack
 Quand un partenaire acquiert une compétence (au niveau Silver ou Gold), il bénéficie d’un nombre minimal d’abonnements Visual Studio Enterprise. Cet avantage minimal change si le partenaire acquiert au moins une compétence Gold. L’abonnement Visual Studio Enterprise est une offre personnalisée qui équivaut à peu près à l’[abonnement cloud annuel Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/), mais sans certains avantages (dont la plupart sont offerts séparément aux partenaires en tant qu’avantages MPN généraux plutôt que dans le cadre des abonnements Visual Studio Enterprise offerts par le biais du réseau MPN).
 
 ### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>Avantage Visual Studio principal pour l’acquisition d’au moins une compétence quelle qu’elle soit
+
 | Compétences acquises uniquement au niveau Silver               | Au moins une compétence acquise au niveau Gold   |
 |------------------------------------------------------------|----------------------------------------------------|
 | 5 abonnements Visual Studio Enterprise                   | 10 abonnements Visual Studio Enterprise          |
 
 ### <a name="additional-visual-studio-benefit-for-select-competencies"></a>Avantage Visual Studio supplémentaire pour certaines compétences
+
 | Compétence                                  | Abonnements supplémentaires gagnés pour une compétence **Silver** | Abonnements supplémentaires gagnés pour une compétence **Gold** |
 |---------------------------------------------|-----------------------------------------------------------|---------------------------------------------------------|
 | Développement de l'application                     | 5 abonnements Visual Studio Enterprise                  | 25 abonnements Visual Studio Enterprise               |
@@ -39,6 +41,7 @@ Quand un partenaire acquiert une compétence (au niveau Silver ou Gold), il bén
 Quel que soit le nombre de compétences acquises par un partenaire, le nombre d’abonnements Visual Studio est limité comme suit :
 
 ### <a name="limits-for-visual-studio-subscriptions-earned-through-competencies"></a>Quantités limites d’abonnements Visual Studio gagnés grâce aux compétences
+
 | Quantité maximale d’avantages pour les partenaires ayant uniquement des compétences Silver                   | Quantité maximale d’avantages pour les partenaires ayant au moins une compétence Gold               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | 25 abonnements Visual Studio Enterprise par pays ; 75 dans le monde entier          | 50 abonnements Visual Studio Enterprise par pays ; 150 dans le monde entier         |

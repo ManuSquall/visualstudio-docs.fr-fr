@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::GetServerName | Documents Microsoft
+title: IDebugCoreServer3::GetServerName | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ea20b2e7cbb1136fb0738e381f312472d48f80f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6a6630ecb01bd16584eae7b87f42a11958906ef6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103440"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880643"
 ---
 # <a name="idebugcoreserver3getservername"></a>IDebugCoreServer3::GetServerName
 Récupère le nom du serveur.  
@@ -44,13 +44,13 @@ int GetServerName(
  [out] Retourne le nom du serveur.  
   
 > [!NOTE]
->  L’appelant est responsable de la libération de la chaîne.  
+>  L’appelant est chargé de libérer la chaîne.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne le code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Pour un nom convivial de serveur, appelez le [GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md) (méthode).  
+ Pour un nom de serveur convivial, appelez le [GetServerFriendlyName](../../../extensibility/debugger/reference/idebugcoreserver3-getserverfriendlyname.md) (méthode).  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   

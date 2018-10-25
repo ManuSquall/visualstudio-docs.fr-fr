@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 18d87e523e9c0456f0f80add89c2ade32cf903fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b3dedba320ce8a783b7d54df54a30b0759a6bd00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199808"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896222"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Comment : définir des points d'arrêt dans les workflows
 Lorsque vous utilisez [!INCLUDE[wfd1](../includes/wfd1-md.md)], vous pouvez définir des points d'arrêt sur vos workflows graphiques comme vous le feriez dans du code Visual Basic ou C#. Comme prévu, l'exécution de workflow s'arrête à chaque point d'arrêt que vous définissez.  
@@ -26,10 +26,10 @@ Lorsque vous utilisez [!INCLUDE[wfd1](../includes/wfd1-md.md)], vous pouvez déf
   
 > [!NOTE]
 >  La définition des points d'arrêt sur les workflows appelés n'est pas prise en charge.  
-  
+> 
 > [!WARNING]
->  Vérifiez que vous sélectionnez l’option **activer uniquement mon Code (managé uniquement)** à partir de la **outils**, **Options**, **débogage** menu avant déboguer. Si vous avez deux séquences sont imbriquées dans une autre séquence et vous définissez un point d’arrêt sur la première séquence interne, en appuyant sur **F11** ne sera pas déboguer dans la deuxième séquence interne si la **activer uniquement mon Code (managé uniquement)** option n’est pas sélectionnée.  
-  
+>  Vérifiez que vous sélectionnez l’option **activer uniquement mon Code (managé uniquement)** à partir de la **outils**, **Options**, **débogage** menu avant déboguer. Si vous avez deux séquences sont imbriquées dans une autre séquence et vous définissez un point d’arrêt sur la première séquence interne, en appuyant sur **F11** ne sera pas déboguer dans la deuxième séquence interne si la <strong>activer uniquement mon Code (managé uniquement)</strong>option n’est pas sélectionnée.  
+> 
 > [!WARNING]
 >  Les points d’arrêt dans un workflow ne sont pas atteints si le chemin d’accès complet à la propriété du fichier XAML n’est pas exact. Le chemin d’accès complet au fichier XAML n’est pas précis après avoir déplacé le projet ou la solution vers un autre dossier ou sur un autre ordinateur. Appuyez sur Ctrl+S pour enregistrer et mettre à jour la propriété de chemin complet.  
   

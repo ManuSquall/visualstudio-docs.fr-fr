@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54a6dee20c35b290b50306d5484dc139e8a7600a
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 447a01f96c9f642bca743247551bc2b3d38e4d23
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235100"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905948"
 ---
 # <a name="command-window"></a>Commande, fenêtre
 La fenêtre **Commande** est utilisée pour exécuter des commandes ou des alias directement dans l’environnement de développement intégré (IDE) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Vous pouvez exécuter à la fois les commandes de menu et les commandes qui n’apparaissent dans aucun menu. Pour afficher la fenêtre **Commande**, sélectionnez **Autres fenêtres** dans le menu **Affichage** et choisissez **Fenêtre Commande**.
@@ -55,7 +55,7 @@ La fenêtre **Commande** est utilisée pour exécuter des commandes ou des alias
  Les raccourcis suivants vous aident à naviguer en mode Commande.
 
 |Action|Emplacement du curseur|Combinaison de touches|
-|------------|---------------------|----------------|
+|------------| - |----------------|
 |Parcourir la liste des commandes précédemment entrées.|Ligne d’entrée|HAUT et BAS|
 |Faire défiler le contenu de la fenêtre vers le haut.|Contenu de la fenêtre Commande|CTRL+HAUT|
 |Faire défiler le contenu de la fenêtre vers le bas.|Contenu de la fenêtre Commande|BAS ou CTRL+BAS|
@@ -114,5 +114,5 @@ Quand une valeur est attribuée à un groupe de commutateurs de forme abrégée,
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)

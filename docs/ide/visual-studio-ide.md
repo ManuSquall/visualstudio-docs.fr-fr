@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4465eff996664dca2fe1b5dcb31b5d7af049db53
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: cccaef2d5678bffa19e822cf537f4acb3d046cca
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320785"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907519"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Bienvenue dans l’IDE Visual Studio
 
@@ -94,7 +94,7 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
 
 - [Atteindre la définition](../ide/go-to-and-peek-definition.md)
 
-  La fonctionnalité Atteindre la définition vous mène directement à l’emplacement où une fonction ou un type est défini(e).
+   La fonctionnalité Atteindre la définition vous mène directement à l’emplacement où une fonction ou un type est défini(e).
 
    ![Atteindre la définition](../ide/media/go-to-definition-menu.png)
 
@@ -112,14 +112,14 @@ Nous allons aller plus loin en créant un nouveau programme simple.
 
    ![Fichier > Nouveau projet sur la barre de menus](../ide/media/file-new-project-menu.png)
 
-1. La boîte de dialogue **Nouveau projet** affiche plusieurs *modèles* de projet. Un modèle contient les fichiers et les paramètres de base nécessaires pour un type de projet donné. Choisissez la catégorie **.NET Core** sous **Visual C#**, puis choisissez le modèle **App. de console (.NET Core)**. Dans la zone de texte **Nom**, tapez **HelloWorld**, puis cliquez sur le bouton **OK**.
+2. La boîte de dialogue **Nouveau projet** affiche plusieurs *modèles* de projet. Un modèle contient les fichiers et les paramètres de base nécessaires pour un type de projet donné. Choisissez la catégorie **.NET Core** sous **Visual C#**, puis choisissez le modèle **App. de console (.NET Core)**. Dans la zone de texte **Nom**, tapez **HelloWorld**, puis cliquez sur le bouton **OK**.
 
    ![Modèle d’application .NET Core](../ide/media/overview-new-project-dialog.png)
 
    Visual Studio crée le projet. Il s’agit d’une application « Hello world » simple, qui appelle la méthode <xref:System.Console.WriteLine?displayProperty=nameWithType> pour afficher la chaîne littérale « Hello World! » dans la fenêtre de console (sortie du programme).
 
-  > [!NOTE]
-  > Si vous la catégorie **. NET Core** ne s’affiche pas, vous devez installer la charge de travail **Développement multiplateforme .NET Core**. Pour cela, cliquez sur le lien **Ouvrir Visual Studio Installer** en bas à gauche de la boîte de dialogue **Nouveau projet**. Une fois Visual Studio Installer ouvert, faites défiler l’écran vers le bas pour sélectionner la charge de travail **Développement multiplateforme .NET Core**, puis sélectionnez **Modifier**.
+   > [!NOTE]
+   > Si vous la catégorie **. NET Core** ne s’affiche pas, vous devez installer la charge de travail **Développement multiplateforme .NET Core**. Pour cela, cliquez sur le lien **Ouvrir Visual Studio Installer** en bas à gauche de la boîte de dialogue **Nouveau projet**. Une fois Visual Studio Installer ouvert, faites défiler l’écran vers le bas pour sélectionner la charge de travail **Développement multiplateforme .NET Core**, puis sélectionnez **Modifier**.
 
    Quelque chose qui ressemble à ce qui suit doit s’afficher :
 
@@ -127,21 +127,21 @@ Nous allons aller plus loin en créant un nouveau programme simple.
 
    Le code C# de votre application figure dans la fenêtre d’éditeur, qui occupe la majeure partie de l’espace. Notez que le texte est colorisé automatiquement pour indiquer les différentes parties du code, comme les mots clés et les types. En outre, les petites lignes en pointillés verticales du code indiquent les accolades correspondant entre elles et les numéros de ligne vous aident à localiser le code. Vous pouvez cliquer sur les signes moins encadrés pour réduire ou développer des blocs de code. Cette fonctionnalité de surlignage de code vous permet de masquer le code dont vous n’avez pas besoin, ce qui contribue à réduire l’encombrement à l’écran. Vos fichiers projet sont répertoriés sur le côté droit dans une fenêtre appelée **Explorateur de solutions**.
 
-  ![IDE de Visual Studio avec zones rouges](../ide/media/overview-ide-console-app-red-boxes.png)
+   ![IDE de Visual Studio avec zones rouges](../ide/media/overview-ide-console-app-red-boxes.png)
 
-  Il existe d’autres menus et fenêtres d’outil, que nous aborderons par la suite.
+   Il existe d’autres menus et fenêtres d’outil, que nous aborderons par la suite.
 
-1. Maintenant, démarrez l’application. Pour ce faire, vous pouvez choisir **Démarrer sans débogage** dans le menu **Déboguer** de la barre de menus. Vous pouvez également appuyer sur **Ctrl**+**F5**.
+3. Maintenant, démarrez l’application. Pour ce faire, vous pouvez choisir **Démarrer sans débogage** dans le menu **Déboguer** de la barre de menus. Vous pouvez également appuyer sur **Ctrl**+**F5**.
 
-  ![Menu Déboguer > Démarrer sans débogage](../ide/media/overview-start-without-debugging.png)
+   ![Menu Déboguer > Démarrer sans débogage](../ide/media/overview-start-without-debugging.png)
 
-  Visual Studio génère l’application, et une fenêtre de console s’ouvre avec le message **Hello World!**. Maintenant, votre application fonctionne !
+   Visual Studio génère l’application, et une fenêtre de console s’ouvre avec le message **Hello World!**. Maintenant, votre application fonctionne !
 
-  ![Fenêtre de console](../ide/media/overview-console-window.png)
+   ![Fenêtre de console](../ide/media/overview-console-window.png)
 
-1. Appuyez sur une touche au hasard pour fermer la fenêtre de console.
+4. Appuyez sur une touche au hasard pour fermer la fenêtre de console.
 
-1. Ajoutons du code supplémentaire à l’application. Ajoutez le code C# suivant avant la ligne qui indique `Console.WriteLine("Hello World!");` :
+5. Ajoutons du code supplémentaire à l’application. Ajoutez le code C# suivant avant la ligne qui indique `Console.WriteLine("Hello World!");` :
 
    ```csharp
    Console.WriteLine("\nWhat is your name?");
@@ -150,21 +150,21 @@ Nous allons aller plus loin en créant un nouveau programme simple.
 
    Ce code affiche **What is your name?** dans la fenêtre de console, puis attend que l’utilisateur entre du texte suivi de la touche **Entrée**.
 
-1. Remplacez la ligne qui indique `Console.WriteLine("Hello World!");` par le code suivant :
+6. Remplacez la ligne qui indique `Console.WriteLine("Hello World!");` par le code suivant :
 
    ```csharp
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. Réexécutez l’application en sélectionnant **Déboguer** > **Démarrer sans débogage** ou en appuyant sur **Ctrl**+**F5**.
+7. Réexécutez l’application en sélectionnant **Déboguer** > **Démarrer sans débogage** ou en appuyant sur **Ctrl**+**F5**.
 
    Visual Studio régénère l’application et une fenêtre de console s’ouvre et vous demande votre nom.
 
-1. Entrez votre nom dans la fenêtre de console et appuyez sur **Entrée**.
+8. Entrez votre nom dans la fenêtre de console et appuyez sur **Entrée**.
 
    ![Entrée de la fenêtre de console](media/overview-console-input.png)
 
-1. Appuyez sur une touche pour fermer la fenêtre de console et arrêter le programme en cours d’exécution.
+9. Appuyez sur une touche pour fermer la fenêtre de console et arrêter le programme en cours d’exécution.
 
 ## <a name="use-refactoring-and-intellisense"></a>Utiliser la refactorisation et IntelliSense
 
@@ -174,11 +174,11 @@ Tout d’abord, renommons la variable `name` :
 
 1. Double-cliquez sur la variable `name` pour la sélectionner.
 
-1. Tapez le nouveau nom de la variable, **username**.
+2. Tapez le nouveau nom de la variable, **username**.
 
    Notez qu’une zone grisée apparaît autour de la variable et qu’une ampoule s’affiche dans la marge.
 
-1. Sélectionnez l’icône d’ampoule pour afficher les [Actions rapides](quick-actions.md) disponibles. Sélectionnez **Renommer « name » en « username »**.
+3. Sélectionnez l’icône d’ampoule pour afficher les [Actions rapides](quick-actions.md) disponibles. Sélectionnez **Renommer « name » en « username »**.
 
    ![Renommer une action dans Visual Studio](media/rename-quick-action.png)
 
@@ -186,15 +186,15 @@ Tout d’abord, renommons la variable `name` :
 
    ![Image GIF animée montrant la refactorisation du renommage dans Visual Studio](media/rename-refactoring.gif)
 
-1. À présent, examinons IntelliSense. Tapez **DateTime now = DateTime.** sous la ligne qui indique `Console.WriteLine($"\nHello {username}!");`.
+4. À présent, examinons IntelliSense. Tapez **DateTime now = DateTime.** sous la ligne qui indique `Console.WriteLine($"\nHello {username}!");`.
 
    Une zone affiche les membres de la classe <xref:System.DateTime>. De plus, la description du membre actuellement sélectionné s’affiche dans une zone distincte.
 
    ![Liste des membres IntelliSense dans Visual Studio](media/intellisense-list-members.png)
 
-1. Sélectionnez le membre nommé **Now**, qui est une propriété de la classe, en double-cliquant dessus ou en appuyant sur **Tab**. Complétez la ligne de code en ajoutant un point-virgule (**;**).
+5. Sélectionnez le membre nommé **Now**, qui est une propriété de la classe, en double-cliquant dessus ou en appuyant sur **Tab**. Complétez la ligne de code en ajoutant un point-virgule (**;**).
 
-1. Au-dessous, tapez ou copiez les lignes de code suivantes :
+6. Au-dessous, tapez ou copiez les lignes de code suivantes :
 
    ```csharp
    int dayOfYear = now.DayOfYear;
@@ -206,17 +206,17 @@ Tout d’abord, renommons la variable `name` :
    > [!TIP]
    > La méthode <xref:System.Console.Write%2A?displayProperty=nameWithType> est un peu différente de <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> dans la mesure où elle n’ajoute pas de marque de fin de ligne une fois imprimée. Cela signifie que la portion de texte suivante qui est envoyée à la sortie s’imprime sur la même ligne. Vous pouvez pointer sur chacune de ces méthodes dans votre code pour voir sa description.
 
-1. Nous allons ensuite utiliser la refactorisation pour rendre le code un peu plus concis. Cliquez sur la variable `now` dans la ligne `DateTime now = DateTime.Now;`.
+7. Nous allons ensuite utiliser la refactorisation pour rendre le code un peu plus concis. Cliquez sur la variable `now` dans la ligne `DateTime now = DateTime.Now;`.
 
    Notez qu’une petite icône de tournevis apparaît dans la marge de cette ligne.
 
-1. Cliquez sur l’icône de tournevis pour voir les suggestions disponibles dans Visual Studio. Dans le cas présent, il affiche la refactorisation de la [variable temporaire inline](reference/inline-temporary-variable.md) pour supprimer une ligne de code sans changer le comportement global :
+8. Cliquez sur l’icône de tournevis pour voir les suggestions disponibles dans Visual Studio. Dans le cas présent, il affiche la refactorisation de la [variable temporaire inline](reference/inline-temporary-variable.md) pour supprimer une ligne de code sans changer le comportement global :
 
    ![Refactorisation de la variable temporaire inline dans Visual Studio](media/inline-temporary-variable-refactoring.png)
 
-1. Cliquez sur **Variable temporaire Inline** pour refactoriser le code.
+9. Cliquez sur **Variable temporaire Inline** pour refactoriser le code.
 
-1. Réexécutez le programme en appuyant sur **CTRL**+**F5**. La sortie ressemble à ceci :
+10. Réexécutez le programme en appuyant sur **CTRL**+**F5**. La sortie ressemble à ceci :
 
    ![Fenêtre de console avec la sortie du programme](../ide/media/overview-console-final.png)
 
@@ -252,7 +252,7 @@ Vous pouvez personnaliser l’interface utilisateur de Visual Studio, notamment 
 
 1. Dans la barre de menus, choisissez **Outils** > **Options** pour ouvrir la boîte de dialogue **Options**.
 
-1. Dans la page **Environnement** > **Options générales**, remplacez la sélection du **Thème de couleur** par **Sombre**, puis choisissez **OK**.
+2. Dans la page **Environnement** > **Options générales**, remplacez la sélection du **Thème de couleur** par **Sombre**, puis choisissez **OK**.
 
    Le thème de couleur de l’ensemble de l’IDE devient **Sombre**.
 

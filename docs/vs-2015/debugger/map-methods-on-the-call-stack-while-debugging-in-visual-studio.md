@@ -35,12 +35,12 @@ caps.latest.revision: 43
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 0841670c1dfe65f1ad542f931267c310d0ef711a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6995255125de6bf78fbdd8718ffb836b9ed42dde
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194872"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922131"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapper les méthodes sur la pile des appels tout en déboguant dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,13 +51,13 @@ Créez une carte de code pour effectuer un suivi visuel de la pile des appels pe
   
  Vous aurez besoin de :  
   
--   [Visual Studio Enterprise](https://www.visualstudio.com/downloads/download-visual-studio-vs)  
+- [Visual Studio Enterprise](https://www.visualstudio.com/downloads/download-visual-studio-vs)  
   
--   De code que vous pouvez déboguer, comme Visual C# .NET, Visual Basic .NET, C++, JavaScript ou X++  
+- De code que vous pouvez déboguer, comme Visual C# .NET, Visual Basic .NET, C++, JavaScript ou X++  
   
- Voir : [vidéo : déboguer visuellement avec intégration du débogueur (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418) • [mapper la pile des appels](#MapStack) • [rédiger des notes sur le code](#MakeNotes) • [mettre à jour de la carte avec le pile d’appels suivante](#UpdateMap) • [ajouter du code associé à la carte](#AddRelatedCode) • [rechercher les bogues à l’aide de la carte](#FindBugs) • [Q & r](#QA)  
+  Voir : [vidéo : déboguer visuellement avec intégration du débogueur (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418) • [mapper la pile des appels](#MapStack) • [rédiger des notes sur le code](#MakeNotes) • [mettre à jour de la carte avec le pile d’appels suivante](#UpdateMap) • [ajouter du code associé à la carte](#AddRelatedCode) • [rechercher les bogues à l’aide de la carte](#FindBugs) • [Q & r](#QA)  
   
- Pour des informations sur les commandes et les actions que vous pouvez utiliser lorsque vous travaillez avec des cartes de code, consultez [Parcourir et réorganiser des cartes de code](../modeling/browse-and-rearrange-code-maps.md).  
+  Pour des informations sur les commandes et les actions que vous pouvez utiliser lorsque vous travaillez avec des cartes de code, consultez [Parcourir et réorganiser des cartes de code](../modeling/browse-and-rearrange-code-maps.md).  
   
 ##  <a name="MapStack"></a> Mapper la pile des appels  
   
@@ -122,53 +122,53 @@ Créez une carte de code pour effectuer un suivi visuel de la pile des appels pe
   
 ##  <a name="QA"></a> Q et R  
   
--   **Pas tous les appels apparaissent sur la carte. Pourquoi ?**  
+- **Pas tous les appels apparaissent sur la carte. Pourquoi ?**  
   
-     Par défaut, seul votre propre code apparaît sur la carte. Pour afficher le code externe, activez-le dans la **pile des appels** fenêtre :  
+   Par défaut, seul votre propre code apparaît sur la carte. Pour afficher le code externe, activez-le dans la **pile des appels** fenêtre :  
   
-     ![Afficher le code externe à l’aide de la fenêtre Pile des appels](../debugger/media/debuggermap-callstackmenu.png "DebuggerMap_CallStackMenu")  
+   ![Afficher le code externe à l’aide de la fenêtre Pile des appels](../debugger/media/debuggermap-callstackmenu.png "DebuggerMap_CallStackMenu")  
   
-     ou désactivez **activer uniquement mon Code** dans les options de débogage Visual Studio :  
+   ou désactivez **activer uniquement mon Code** dans les options de débogage Visual Studio :  
   
-     ![Afficher le code externe à l’aide de la boîte de dialogue Options](../debugger/media/debuggermap-debugoptions.png "DebuggerMap_DebugOptions")  
+   ![Afficher le code externe à l’aide de la boîte de dialogue Options](../debugger/media/debuggermap-debugoptions.png "DebuggerMap_DebugOptions")  
   
--   **Modification de la carte affecte-t-elle le code ?**  
+- **Modification de la carte affecte-t-elle le code ?**  
   
-     La modification de la carte n'affecte en aucune manière le code. N'hésitez pas à renommer, déplacer ou supprimer tout élément de la carte.  
+   La modification de la carte n'affecte en aucune manière le code. N'hésitez pas à renommer, déplacer ou supprimer tout élément de la carte.  
   
--   **Que signifie ce message : « le diagramme peut être basé sur une version antérieure du code » ?**  
+- **Que signifie ce message : « le diagramme peut être basé sur une version antérieure du code » ?**  
   
-     Il se peut que le code ait changé après la dernière mise à jour de la carte. Par exemple, un appel sur la carte peut ne plus exister dans le code. Fermez le message et essayez de régénérer la solution avant de remettre à jour la carte.  
+   Il se peut que le code ait changé après la dernière mise à jour de la carte. Par exemple, un appel sur la carte peut ne plus exister dans le code. Fermez le message et essayez de régénérer la solution avant de remettre à jour la carte.  
   
--   **Comment contrôler la disposition de la carte ?**  
+- **Comment contrôler la disposition de la carte ?**  
   
-     Ouvrez le **disposition** menu sur la barre d’outils de mappage :  
+   Ouvrez le **disposition** menu sur la barre d’outils de mappage :  
   
-    -   Modifiez la disposition par défaut.  
+  -   Modifiez la disposition par défaut.  
   
-    -   Pour arrêter la réorganisation automatique de la carte, désactivez **disposer automatiquement lors du débogage**.  
+  -   Pour arrêter la réorganisation automatique de la carte, désactivez **disposer automatiquement lors du débogage**.  
   
-    -   Pour réorganiser la carte aussi peu que possible lorsque vous ajoutez des éléments, désactivez **disposition incrémentielle**.  
+  -   Pour réorganiser la carte aussi peu que possible lorsque vous ajoutez des éléments, désactivez **disposition incrémentielle**.  
   
--   **Puis-je partager la carte avec d’autres personnes ?**  
+- **Puis-je partager la carte avec d’autres personnes ?**  
   
-     Vous pouvez exporter la carte, l’envoyer à d’autres personnes si vous disposez de Microsoft Outlook ou l’enregistrer dans votre solution afin de pouvoir la vérifier dans Team Foundation Version Control.  
+   Vous pouvez exporter la carte, l’envoyer à d’autres personnes si vous disposez de Microsoft Outlook ou l’enregistrer dans votre solution afin de pouvoir la vérifier dans Team Foundation Version Control.  
   
-     ![Carte code pile d’appels partage avec d’autres utilisateurs](../debugger/media/debuggermap-sharewithothers.png "DebuggerMap_ShareWithOthers")  
+   ![Carte code pile d’appels partage avec d’autres utilisateurs](../debugger/media/debuggermap-sharewithothers.png "DebuggerMap_ShareWithOthers")  
   
--   **Comment empêcher le mappage de l’ajout de nouvelles piles d’appels automatiquement ?**  
+- **Comment empêcher le mappage de l’ajout de nouvelles piles d’appels automatiquement ?**  
   
-     Choisissez ![bouton &#45; pile des appels de l’afficher sur la carte de code automatiquement](../debugger/media/debuggermap-automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") sur la barre d’outils de la carte. Pour ajouter manuellement la pile des appels actuelle à la carte, appuyez sur **Ctrl** + **MAJ** + **`**.  
+   Choisissez ![bouton &#45; pile des appels de l’afficher sur la carte de code automatiquement](../debugger/media/debuggermap-automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon") sur la barre d’outils de la carte. Pour ajouter manuellement la pile des appels actuelle à la carte, appuyez sur **Ctrl** + **MAJ** + **`**.  
   
-     La carte continuera de mettre en surbrillance les piles d'appels existantes sur la carte pendant le débogage.  
+   La carte continuera de mettre en surbrillance les piles d'appels existantes sur la carte pendant le débogage.  
   
--   **Que les icônes de l’élément et les flèches signifient ?**  
+- **Que les icônes de l’élément et les flèches signifient ?**  
   
-     Pour obtenir plus d'informations sur un élément, placez le pointeur de la souris sur celui-ci et consultez l'info-bulle. Vous pouvez également consulter le **légende** pour savoir ce que signifie chaque icône.  
+   Pour obtenir plus d'informations sur un élément, placez le pointeur de la souris sur celui-ci et consultez l'info-bulle. Vous pouvez également consulter le **légende** pour savoir ce que signifie chaque icône.  
   
-     ![Que signifient les icônes sur la carte code pile d’appels ? ](../debugger/media/debuggermap-showlegend.png "DebuggerMap_ShowLegend")  
+   ![Que signifient les icônes sur la carte code pile d’appels ? ](../debugger/media/debuggermap-showlegend.png "DebuggerMap_ShowLegend")  
   
- Voir : [mapper la pile des appels](#MapStack) • [rédiger des notes sur le code](#MakeNotes) • [mettre à jour de la carte avec la pile d’appels suivante](#UpdateMap) • [ajouter du code associé à la carte](#AddRelatedCode) • [ Rechercher des bogues à l’aide de la carte](#FindBugs)  
+  Voir : [mapper la pile des appels](#MapStack) • [rédiger des notes sur le code](#MakeNotes) • [mettre à jour de la carte avec la pile d’appels suivante](#UpdateMap) • [ajouter du code associé à la carte](#AddRelatedCode) • [ Rechercher des bogues à l’aide de la carte](#FindBugs)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md)   

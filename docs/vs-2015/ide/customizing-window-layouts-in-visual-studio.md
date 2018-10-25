@@ -29,12 +29,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d1fb044d2529e2349e7c98e810adbfe62c7c654
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f1702a2b25bd0489814473f3ae2fc0073dab8497
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218814"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911633"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Personnalisation des dispositions de fenêtres dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,21 +65,21 @@ Dans Visual Studio, vous pouvez personnaliser la position, la taille et le compo
   
  Vous pouvez organiser les fenêtres comme suit :  
   
--   épingler les fenêtres de document à gauche de la zone de configuration des onglets ;  
+- épingler les fenêtres de document à gauche de la zone de configuration des onglets ;  
   
--   ancrer les fenêtres au cadre de modification sous forme d'onglets ;  
+- ancrer les fenêtres au cadre de modification sous forme d'onglets ;  
   
--   ancrer les fenêtres Outil au bord d'un cadre dans l'IDE ;  
+- ancrer les fenêtres Outil au bord d'un cadre dans l'IDE ;  
   
--   faire flotter des fenêtres de document ou Outil par dessus l'IDE ou en dehors de celui-ci ;  
+- faire flotter des fenêtres de document ou Outil par dessus l'IDE ou en dehors de celui-ci ;  
   
--   masquer les fenêtres Outil le long du bord de l'IDE ;  
+- masquer les fenêtres Outil le long du bord de l'IDE ;  
   
--   afficher les fenêtres sur plusieurs écrans ;  
+- afficher les fenêtres sur plusieurs écrans ;  
   
--   rétablir la position de la fenêtre selon la disposition par défaut ou une disposition personnalisée enregistrée.  
+- rétablir la position de la fenêtre selon la disposition par défaut ou une disposition personnalisée enregistrée.  
   
- Pour réorganiser les fenêtres Outil et les fenêtres de document, vous pouvez les faire glisser, utiliser les commandes du menu **Fenêtre** ou encore cliquer avec le bouton droit sur la barre de titre de la fenêtre à réorganiser.  
+  Pour réorganiser les fenêtres Outil et les fenêtres de document, vous pouvez les faire glisser, utiliser les commandes du menu **Fenêtre** ou encore cliquer avec le bouton droit sur la barre de titre de la fenêtre à réorganiser.  
   
 > [!NOTE]
 >  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: acfbfd2a23c85c81e0956190ff8e9e8501533559
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fb6fc6888e33b2cc0d210e9cb1e1aababe304f2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945608"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916762"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>Inclure une variable temporaire (refactorisation)
 
@@ -39,30 +39,30 @@ Cette refactorisation s’applique à :
 
    - C# :
 
-    ![Code mis en surbrillance (C#)](media/inline-highlight-cs.png)
+       ![Code mis en surbrillance (C#)](media/inline-highlight-cs.png)
 
    - Visual Basic :
 
-    ![Code mis en surbrillance (Visual Basic)](media/inline-highlight-vb.png)
+       ![Code mis en surbrillance (Visual Basic)](media/inline-highlight-vb.png)
 
-1. Effectuez ensuite l'une des opérations suivantes :
+2. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-     - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+      - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
-     - Cliquez avec le bouton droit sur le code et sélectionnez le menu **Actions rapides et refactorisations**.
+      - Cliquez avec le bouton droit sur le code et sélectionnez le menu **Actions rapides et refactorisations**.
 
-1. Sélectionnez **Inclure une variable temporaire** dans la fenêtre contextuelle d’aperçu.
+3. Sélectionnez **Inclure une variable temporaire** dans la fenêtre contextuelle d’aperçu.
 
    La variable est supprimée et ses utilisations sont remplacées par la valeur de la variable.
 
    - C# :
 
-    ![Résultat de l’action Inclure (C#)](media/inline-result-cs.png)
+      ![Résultat de l’action Inclure (C#)](media/inline-result-cs.png)
 
    - Visual Basic :
 
-    ![Résultat de l’action Inclure (Visual Basic)](media/inline-result-vb.png)
+      ![Résultat de l’action Inclure (Visual Basic)](media/inline-result-vb.png)
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1b111aad6da99f54edfe8dc4fd4b63ff7a495f34
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: c2a0ccc4ee9f002a6c0f335aed590d3b8bb79a7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179659"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928670"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analyser les résultats et les erreurs des tests de charge dans la vue Tables de l’analyseur de test de charge
 
@@ -51,7 +51,7 @@ La plupart des valeurs numériques affichées dans une table pour les compteurs 
  Le tableau suivant répertorie les tables disponibles pour analyser des séries de tests de charge.
 
 |Nom de la table|Description|
-|----------------|-----------------|
+|-|-|
 |Erreurs|Affiche une liste des erreurs qui se sont produites pendant la série de tests de charge. Pour plus d’informations, consultez [Table Erreurs](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) dans cette rubrique, et [Analyser les résultats des tests de charge](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
 |Pages|Affiche une liste de pages consultées pendant une série de tests de charge. Certaines données de cette table ne sont disponibles qu'à l'issue d'un test de charge. Pour plus d’informations, consultez [Guide pratique pour afficher la réponse d’une page web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
 |Requêtes|Affiche des détails relatifs aux demandes émises pendant un test de charge. Cela inclut toutes les demandes HTTP et les demandes dépendantes, telles que les images. Pour plus d’informations, consultez [Table Requêtes](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) dans cette rubrique.|
@@ -73,7 +73,7 @@ La plupart des valeurs numériques affichées dans une table pour les compteurs 
  Le tableau suivant répertorie les colonnes de la table **Requêtes** :
 
 |Colonne|Description|Visible par défaut|
-|------------|-----------------|------------------------|
+|-|-|-|
 |**Requête**|URL de la requête. Par exemple, *home.html* ou *orange-arrow.gif*.|Oui|
 |**Scénario**|Nom du scénario.|Oui|
 |**Test**|Nom du test.|Oui|
@@ -95,7 +95,7 @@ La plupart des valeurs numériques affichées dans une table pour les compteurs 
  Le tableau suivant répertorie les colonnes de la table **Tests**.
 
 |Colonne|Description|Visible par défaut|
-|------------|-----------------|------------------------|
+|-|-|-|
 |**Test**|Nom du test.|Oui|
 |**Scénario**|Nom du scénario.|Oui|
 |**Total**|Nombre total de fois où le test a été exécuté dans le scénario. Cela inclut le nombre de fois où le test a réussi et échoué.|Oui|
@@ -119,7 +119,7 @@ La plupart des valeurs numériques affichées dans une table pour les compteurs 
 > Pour afficher toutes les colonnes, vous devez activer la propriété Stockage des détails de minuterie associée au paramètre d'exécution actif. Pour plus d’informations, consultez [Guide pratique pour spécifier la propriété de stockage des détails de minuterie](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 |Colonne|Description|Visible sans les détails de minuterie|
-|------------|-----------------|------------------------------------|
+|-|-|-|
 |**Transaction**|Nom de la transaction.|Oui|
 |**Scénario**|Nom du scénario.|Oui|
 |**Test**|Nom du test.|Oui|
@@ -145,7 +145,7 @@ La plupart des valeurs numériques affichées dans une table pour les compteurs 
  La table d'erreurs contient les colonnes suivantes :
 
 |Colonne|Description|Visible par défaut|
-|------------|-----------------|------------------------|
+|-|-|-|
 |Type|Type de l'erreur. Par exemple, HttpError.|Oui|
 |SubType|Sous-type de l'erreur. Par exemple, LoadTestException.|Oui|
 |Count|Nombre d'erreurs de ce type survenues lors du test de charge. Les entrées de cette colonne apparaissent sous forme de liens hypertexte. Vous pouvez cliquer sur un lien hypertexte pour afficher la liste des erreurs.|Oui|
@@ -163,7 +163,7 @@ La table d'erreurs regroupe les erreurs par type et sous-type d'erreur. Pour con
 La table **Erreurs du test de charge** contient les colonnes suivantes :
 
 |Colonne|Description|
-|------------|-----------------|
+|-|-|
 |**Heure**|Heure à laquelle l'erreur s'est produite lors du test de charge.|
 |**Agent**|Nom de l'ordinateur agent sur lequel l'erreur s'est produite. C’est important lorsque vous exécutez des tests de charge à l’aide de contrôleurs de test et des agents de test. Pour plus d’informations, consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).|
 |**Test**|Nom du test de performances web dans lequel l’erreur s’est produite.|

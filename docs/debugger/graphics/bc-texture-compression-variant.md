@@ -1,5 +1,5 @@
 ---
-title: Variante de Compression de Texture BC | Documents Microsoft
+title: Variante de Compression de Texture BC | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49dfc92eeede177e843c9fd98b16b030f76079c0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 919191ec29ad45a8385d32b82de99d44fcdaa2ea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474399"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922443"
 ---
 # <a name="bc-texture-compression-variant"></a>Variante de compression de texture BC
 Permet la compression de blocs sur les textures dont le format de pixel est une variation de B8G8R8X8, B8G8R8A8 ou R8G8B8A8.  
@@ -28,19 +28,19 @@ Permet la compression de blocs sur les textures dont le format de pixel est une 
 ## <a name="remarks"></a>Notes  
  Vous compressez les textures en utilisant un format de compression de blocs à chaque appel à `ID3DDevice::CreateTexture2D`, qui est chargé de créer une texture source. Plus précisément, les textures sont compressées quand :  
   
--   L'objet `D3D11_TEXTURE2D_DESC` passé dans `pDesc` décrit une ressource de nuanceur qui ne change pas, à savoir :  
+- L'objet `D3D11_TEXTURE2D_DESC` passé dans `pDesc` décrit une ressource de nuanceur qui ne change pas, à savoir :  
   
-    -   Seul l'indicateur D3D11_BIND_SHADER_RESOURCE du membre BindFlags est défini.  
+  -   Seul l'indicateur D3D11_BIND_SHADER_RESOURCE du membre BindFlags est défini.  
   
-    -   Le membre Usage a la valeur D3D11_USAGE_DEFAULT ou D3D11_USAGE_IMMUTABLE.  
+  -   Le membre Usage a la valeur D3D11_USAGE_DEFAULT ou D3D11_USAGE_IMMUTABLE.  
   
-    -   Le membre CPUAccessFlags a la valeur 0 (aucun accès à l'UC).  
+  -   Le membre CPUAccessFlags a la valeur 0 (aucun accès à l'UC).  
   
-    -   Le membre Count du membre SamplerDesc a la valeur 1 (pas d'anticrénelage MSAA (Multi-Sample Anti-Aliasing)).  
+  -   Le membre Count du membre SamplerDesc a la valeur 1 (pas d'anticrénelage MSAA (Multi-Sample Anti-Aliasing)).  
   
--   Les données initiales sont fournies à l'appel à `CreateTexture2D`.  
+- Les données initiales sont fournies à l'appel à `CreateTexture2D`.  
   
- Voici les formats sources pris en charge et leurs formats de compression de blocs.  
+  Voici les formats sources pris en charge et leurs formats de compression de blocs.  
   
 |Format d'origine (source)|Format compressé (cible)|  
 |------------------------------|------------------------------|  
@@ -63,4 +63,4 @@ Permet la compression de blocs sur les textures dont le format de pixel est une 
  Cette variante compresse les blocs des textures au moment de l'exécution, avant l'appel à `CreateTexture2D`. Nous déconseillons cette approche pour le code de production, car les textures non compressées consomment plus d'espace disque et cette étape supplémentaire peut accroître sensiblement les temps de chargement dans votre application. De plus, la compression de blocs nécessite des ressources de calcul importantes pour l'encodage. Nous vous recommandons plutôt de compresser vos textures hors connexion en utilisant un éditeur ou un processeur d'images qui fait partie de votre pipeline de génération. Ces approches réduisent les besoins en espace disque, éliminent les surcharges de votre application au moment de l’exécution et autorisent un temps de traitement supérieur pour une qualité d’image optimale.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Variante de Dimensions de Texture de moitié/un quart](half-quarter-texture-dimensions-variant.md)
+ [Variante de dimensions de la texture moitié/un quart](half-quarter-texture-dimensions-variant.md)

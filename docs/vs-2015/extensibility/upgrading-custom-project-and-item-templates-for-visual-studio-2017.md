@@ -10,12 +10,12 @@ ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e44ea1c267d9fe57c3f32ddad876b412f69ea24
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9137510f8d6949271a255b14b293f59366048f77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221154"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923444"
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-15"></a>Mise à niveau des modèles de projets et modèles d’élément pour Visual Studio « 15 »
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -181,24 +181,24 @@ VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.c
 ## <a name="upgrades-for-extensions-installed-with-an-msi"></a>Mises à niveau pour les Extensions installées avec une. MSI  
  Certaines extensions basées sur MSI déploiement des modèles dans les emplacements des modèles courants tels que les éléments suivants :  
   
--   **\<Répertoire d’installation de Visual Studio > \Common7\IDE\\< ProjectTemplates/ItemTemplates >**  
+- **\<Répertoire d’installation de Visual Studio > \Common7\IDE\\< ProjectTemplates/ItemTemplates >**  
   
--   **\<Répertoire d’installation de Visual Studio > \Common7\IDE\Extensions\\< ExtensionName\>\\< projet/ItemTemplates >**  
+- **\<Répertoire d’installation de Visual Studio > \Common7\IDE\Extensions\\< ExtensionName\>\\< projet/ItemTemplates >**  
   
- Si votre extension effectue un déploiement basé sur MSI, vous devez générer le manifeste de modèle manuellement et vous assurer qu’il est inclus dans le programme d’installation de l’extension. Vous devez comparer les exemples .vstman répertoriés ci-dessus et le [référence modèle Visual Studio Manifest schéma](../extensibility/visual-studio-template-manifest-schema-reference.md). Pour voir ce que vous devez inclure  
+  Si votre extension effectue un déploiement basé sur MSI, vous devez générer le manifeste de modèle manuellement et vous assurer qu’il est inclus dans le programme d’installation de l’extension. Vous devez comparer les exemples .vstman répertoriés ci-dessus et le [référence modèle Visual Studio Manifest schéma](../extensibility/visual-studio-template-manifest-schema-reference.md). Pour voir ce que vous devez inclure  
   
- Vous devez créer les manifestes distincts pour les modèles de projet et d’élément, et ils doivent pointer vers la racine modèle répertoire tel que spécifié ci-dessus. Vous devez créer un seul manifeste par extension et les paramètres régionaux.  
+  Vous devez créer les manifestes distincts pour les modèles de projet et d’élément, et ils doivent pointer vers la racine modèle répertoire tel que spécifié ci-dessus. Vous devez créer un seul manifeste par extension et les paramètres régionaux.  
   
 ## <a name="troubleshooting-template-installation"></a>Résolution des problèmes d’Installation du modèle  
  Si vous rencontrez des problèmes de déploiement de vos modèles de projet ou un élément, vous pouvez activer la journalisation des Diagnostics.  
   
-1.  Exécutez la commande suivante pour définir la clé de Registre pour activer la journalisation :  
+1. Exécutez la commande suivante pour définir la clé de Registre pour activer la journalisation :  
   
-     **reg ajouter HKCU\software\microsoft\visualstudio\15.0_Config\VSTemplate /v EnableTemplateDiscoveryLog /t REG_DWORD /d 1**  
+    **reg ajouter HKCU\software\microsoft\visualstudio\15.0_Config\VSTemplate /v EnableTemplateDiscoveryLog /t REG_DWORD /d 1**  
   
-2.  Démarrez Visual Studio et lancer les boîtes de dialogue Nouveau projet et un nouvel élément pour initialiser les deux arborescences du modèle. Le journal de modèle s’affiche désormais dans **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0\VsTemplateDiagnosticsList.csv**. L’initialisation de chaque arborescence de modèle ajoute des entrées dans ce fichier journal.  
+2. Démarrez Visual Studio et lancer les boîtes de dialogue Nouveau projet et un nouvel élément pour initialiser les deux arborescences du modèle. Le journal de modèle s’affiche désormais dans **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0\VsTemplateDiagnosticsList.csv**. L’initialisation de chaque arborescence de modèle ajoute des entrées dans ce fichier journal.  
   
- Le fichier journal contient les colonnes suivantes :  
+   Le fichier journal contient les colonnes suivantes :  
   
 -   **FullPathToTemplate**, qui a les valeurs suivantes :  
   
