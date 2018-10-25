@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSectionContribs::Skip | Documents Microsoft
+title: IDiaEnumSectionContribs::Skip | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b089309fbbee5f0b4b607c97658721bdc276ce41
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3af4bd0c836d6c63870147d0eeb825c1cbc7b26a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456553"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951338"
 ---
 # <a name="idiaenumsectioncontribsskip"></a>IDiaEnumSectionContribs::Skip
-Ignore un nombre spécifié de contributions section dans une séquence d’énumération.  
+Ignore un nombre spécifié de contributions de section dans une séquence d’énumération.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,10 +34,10 @@ HRESULT Skip(
   
 #### <a name="parameters"></a>Paramètres  
  `celt`  
- [in] Le nombre des contributions de section dans la séquence d’énumération à ignorer.  
+ [in] Le nombre de contributions de la section dans la séquence d’énumération à ignorer.  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` s’il n’y aucun contributions section plusieurs à ignorer.  
+ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` si il n’y a aucune contribution de section plus à ignorer.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)
