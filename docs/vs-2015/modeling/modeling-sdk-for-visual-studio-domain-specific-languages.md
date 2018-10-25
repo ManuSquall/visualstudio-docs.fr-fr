@@ -17,12 +17,12 @@ caps.latest.revision: 79
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 384592f89df9537300c11cdf3e8cea622d8c9c63
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1a294c9c1eaeb0c59f8c2e9c58c75a161c0d61e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224729"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883326"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Kit de développement logiciel de modélisation pour Visual Studio - Langages spécifiques à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ ms.locfileid: "49224729"
   
  MSDK vous permet de développer un modèle rapidement sous forme de langage spécifique à un domaine (DSL). Commencez par utiliser un éditeur spécialisé pour définir un schéma ou une syntaxe abstraite avec une notation graphique. À partir de cette définition, MSDK génère :  
   
--   une implémentation du modèle avec une API fortement typée qui s'exécute dans un magasin basé sur la transaction ;  
+- une implémentation du modèle avec une API fortement typée qui s'exécute dans un magasin basé sur la transaction ;  
   
--   un explorateur basé sur l'arborescence ;  
+- un explorateur basé sur l'arborescence ;  
   
--   un éditeur graphique dans lequel les utilisateurs peuvent afficher le modèle, ou une partie du modèle que vous définissez ;  
+- un éditeur graphique dans lequel les utilisateurs peuvent afficher le modèle, ou une partie du modèle que vous définissez ;  
   
--   des méthodes de sérialisation qui enregistrent les modèles lisibles au format XML ;  
+- des méthodes de sérialisation qui enregistrent les modèles lisibles au format XML ;  
   
--   des fonctionnalités pour générer du code de programme et autres artefacts à l'aide de création de modèles de texte.  
+- des fonctionnalités pour générer du code de programme et autres artefacts à l'aide de création de modèles de texte.  
   
- Toutes ces fonctionnalités peuvent être personnalisées et étendues. Les extensions sont intégrées de telle façon que vous pouvez toujours mettre à jour la définition DSL et générer de nouveau les fonctionnalités sans perdre ces extensions.  
+  Toutes ces fonctionnalités peuvent être personnalisées et étendues. Les extensions sont intégrées de telle façon que vous pouvez toujours mettre à jour la définition DSL et générer de nouveau les fonctionnalités sans perdre ces extensions.  
   
 ## <a name="samples-and-the-latest-information"></a>Exemples et dernières informations  
  [Téléchargez la modélisation du Kit de développement logiciel pour Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)  

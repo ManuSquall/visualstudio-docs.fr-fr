@@ -16,12 +16,12 @@ ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e7b6324112bed6d201ca57fd3fb5c77696a528f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bf98c263f3452e0383f5891116849e85140b763
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305784"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818757"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Inscription et sélection (VSPackage de contrôle de code source)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ Un contrôle de code source VSPackage doit être inscrite pour l’exposer à la
 ### <a name="registry-entries"></a>Entrées de Registre  
  Un package de contrôle de code source a besoin de trois GUID privé :  
   
--   GUID du package : Il s’agit de la principal GUID pour le package qui contient l’implémentation du contrôle de source (appelée ID_Package dans cette section).  
+- GUID du package : Il s’agit de la principal GUID pour le package qui contient l’implémentation du contrôle de source (appelée ID_Package dans cette section).  
   
--   GUID du contrôle source : Ceci est un GUID pour le contrôle de code source VSPackage permet d’enregistrer avec le Stub de contrôle de Source de Visual Studio et est également utilisé comme contexte GUID de l’interface utilisateur de commande. Le GUID du service de contrôle de source est enregistré sous le GUID du contrôle de code source. Dans l’exemple, le GUID du contrôle de code source est appelé ID_SccProvider.  
+- GUID du contrôle source : Ceci est un GUID pour le contrôle de code source VSPackage permet d’enregistrer avec le Stub de contrôle de Source de Visual Studio et est également utilisé comme contexte GUID de l’interface utilisateur de commande. Le GUID du service de contrôle de source est enregistré sous le GUID du contrôle de code source. Dans l’exemple, le GUID du contrôle de code source est appelé ID_SccProvider.  
   
--   GUID du service de contrôle de source : il s’agit du service privé GUID utilisé par Visual Studio (appelé SID_SccPkgService dans cette section). En outre, le package de contrôle de code source doit définir d’autres GUID pour les VSPackages, fenêtres Outil et ainsi de suite.  
+- GUID du service de contrôle de source : il s’agit du service privé GUID utilisé par Visual Studio (appelé SID_SccPkgService dans cette section). En outre, le package de contrôle de code source doit définir d’autres GUID pour les VSPackages, fenêtres Outil et ainsi de suite.  
   
- Les entrées de Registre suivantes doivent être apportées par un VSPackage de contrôle de code source :  
+  Les entrées de Registre suivantes doivent être apportées par un VSPackage de contrôle de code source :  
   
 |Nom de la clé|Entrées|  
 |--------------|-------------|  
@@ -58,13 +58,13 @@ Un contrôle de code source VSPackage doit être inscrite pour l’exposer à la
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] charge un VSPackage de contrôle de code source lors de l’une des opérations suivantes :  
   
--   Solution est ouverte (lorsque la solution est sous contrôle de code source).  
+- Solution est ouverte (lorsque la solution est sous contrôle de code source).  
   
-     Ouverture d’une solution ou un projet sous contrôle de code source, l’IDE, le contrôle de source VSPackage qui a été indiqué pour cette solution à charger.  
+   Ouverture d’une solution ou un projet sous contrôle de code source, l’IDE, le contrôle de source VSPackage qui a été indiqué pour cette solution à charger.  
   
--   Les commandes de menu du contrôle source VSPackage sont exécutées.  
+- Les commandes de menu du contrôle source VSPackage sont exécutées.  
   
- Un contrôle de code source que VSPackage doit se charger tous les composants dont il a besoin uniquement lorsqu’elles entrent en fait être utilisé (autrement dit le chargement différé).  
+  Un contrôle de code source que VSPackage doit se charger tous les composants dont il a besoin uniquement lorsqu’elles entrent en fait être utilisé (autrement dit le chargement différé).  
   
 ### <a name="automatic-solution-based-vspackage-swapping"></a>Le remplacement automatique VSPackage basé sur la Solution  
  Vous pouvez échanger manuellement le contrôle de code source VSPackages via le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **Options** boîte de dialogue sous la **contrôle de code Source** catégorie. Le remplacement automatique des packages à la solution signifie qu’un package de contrôle de code source qui a été désigné pour une solution particulière est automatiquement défini en mode actif lorsque cette solution est ouvert. Chaque package de contrôle de code source doit implémenter <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A>. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] gère le basculement entre les deux plug-ins de contrôle (implémentation de l’API de plug-in de contrôle de Source) de la source et de VSPackages de contrôle de code source.  
@@ -76,15 +76,15 @@ Un contrôle de code source VSPackage doit être inscrite pour l’exposer à la
 ### <a name="visual-studio-ui-for-package-selection-and-switching"></a>L’interface utilisateur de sélection du Package et le changement de Visual Studio  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Fournit une interface utilisateur pour le contrôle de code source VSPackage et la sélection du plug-in dans le **Options** boîte de dialogue sous la **contrôle de code Source** catégorie. Il permet à l’utilisateur de sélectionner le plug-in de contrôle de code source actif ou d’un VSPackage. Une liste déroulante inclut :  
   
--   Tous les packages de contrôle de code source installé  
+- Tous les packages de contrôle de code source installé  
   
--   Tous les plug-ins de contrôle de code source installé  
+- Tous les plug-ins de contrôle de code source installé  
   
--   Une option « Aucun », qui désactive le contrôle de code source  
+- Une option « Aucun », qui désactive le contrôle de code source  
   
- Uniquement l’interface utilisateur pour le choix de contrôle source active est visible. La sélection de VSPackage masque l’interface utilisateur pour le VSPackage précédent et affiche l’interface utilisateur pour une nouvelle. Le VSPackage actif est sélectionné par l’utilisateur. Si un utilisateur a plusieurs copies de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ouverts simultanément, chacune d’elles peut utiliser un VSPackage actif différents. Si plusieurs utilisateurs sont connectés au même ordinateur, chaque utilisateur peut avoir des instances distinctes de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ouvrir, chacun avec un VSPackage actif différents. Lorsque plusieurs instances de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] sont fermés par un utilisateur, le VSPackage qui était actif pour la dernière solution ouverte devienne le contrôle de code source par défaut VSPackage, à définir actif lors du redémarrage du contrôle de code source.  
+  Uniquement l’interface utilisateur pour le choix de contrôle source active est visible. La sélection de VSPackage masque l’interface utilisateur pour le VSPackage précédent et affiche l’interface utilisateur pour une nouvelle. Le VSPackage actif est sélectionné par l’utilisateur. Si un utilisateur a plusieurs copies de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ouverts simultanément, chacune d’elles peut utiliser un VSPackage actif différents. Si plusieurs utilisateurs sont connectés au même ordinateur, chaque utilisateur peut avoir des instances distinctes de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ouvrir, chacun avec un VSPackage actif différents. Lorsque plusieurs instances de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] sont fermés par un utilisateur, le VSPackage qui était actif pour la dernière solution ouverte devienne le contrôle de code source par défaut VSPackage, à définir actif lors du redémarrage du contrôle de code source.  
   
- Contrairement aux versions précédentes de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], un redémarrage de l’IDE n’est plus la seule façon de basculer le contrôle de code source VSPackages. Sélection de VSPackage est automatique. Changement de packages nécessite des privilèges d’utilisateur de Windows (pas un administrateur ou utilisateur avec pouvoir).  
+  Contrairement aux versions précédentes de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], un redémarrage de l’IDE n’est plus la seule façon de basculer le contrôle de code source VSPackages. Sélection de VSPackage est automatique. Changement de packages nécessite des privilèges d’utilisateur de Windows (pas un administrateur ou utilisateur avec pouvoir).  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>   

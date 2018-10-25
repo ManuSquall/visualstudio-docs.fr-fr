@@ -1,7 +1,7 @@
 ---
-title: 'Comment : utiliser Modifier & Continuer (c#) | Documents Microsoft'
+title: 'Comment : utiliser Modifier & Continuer (c#) | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -17,39 +17,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a1f073d401ddc1a99e365245f2a8c1b66b13fb8a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 41e97f488344e3d34ce326a3d35880d94da4ad9a
+ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475182"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49382803"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Comment : utiliser Modifier & Continuer (C#)
-Avec Modifier & Continuer pour C#, vous pouvez modifier votre code en mode arrêt pendant le débogage. Les modifications peuvent être appliquées sans qu'il soit nécessaire d'arrêter et de redémarrer la session de débogage.  
+Avec Modifier & Continuer, vous pouvez apporter et appliquer des modifications à votre code en mode arrêt pendant le débogage, sans avoir à arrêter et redémarrer la session de débogage.  
+
+Modifier & Continuer pour C# se produit automatiquement lorsque vous apportez des modifications de code en mode arrêt, puis continuez le débogage à l’aide de **continuer**, **étape**, ou **définir l’instruction suivante**, ou évaluez une fonction dans une fenêtre du débogueur.  
+
+Pour plus d’informations, consultez [Modifier & Continuer (Visual C#)](../debugger/edit-and-continue-visual-csharp.md).
+
+>[!NOTE]
+>Modifier & Continuer n’est pas pris en charge pour optimisé, mixte, ou code de l’intégration SQL Server common language runtime (CLR). Pour plus d’informations sur les autres scénarios non pris en charge, consultez [pris en charge les modifications de code (C# et Visual Basic)](../debugger/supported-code-changes-csharp.md). Si vous tentez de modifier & Continuer avec l’un de ces scénarios, une boîte de message s’affiche indiquant que Modifier & Continuer n’est pas compatible.  
   
- Modifier & Continuer est appelé automatiquement lorsque vous apportez des modifications en mode arrêt, puis choisissez une débogueur, l’exécution commande, telles que **continuer**, **étape**, ou **définir l’instruction suivante**, ou d’évaluer une fonction dans une fenêtre du débogueur.  
+**Pour activer ou désactiver Modifier & Continuer :**  
+   
+1. Si vous êtes dans une session de débogage, arrêtez le débogage (**déboguer** > **arrêter le débogage** ou **MAJ**+**F5**) .
+   
+1. Dans **outils** > **Options** (ou **déboguer** > **Options**) > **dedébogage**  >  **Général**, activez ou désactivez le **Activer Modifier & Continuer** case à cocher.  
   
-> [!NOTE]
->  Modifier & Continuer n’est pas pris en charge lorsque vous déboguez optimisé de code, le code mixte natif/managé ou code de l’intégration SQL Server common language runtime (CLR). Pour plus d’informations sur les autres scénarios non pris en charge, consultez [modifications de Code prises en charge (c# et Visual Basic)](../debugger/supported-code-changes-csharp.md). Si vous essayez d’appliquer les modifications de code dans un de ces scénarios, le débogueur affiche une boîte de dialogue zone qui explique que Modifier & Continuer n’est pas pris en charge.  
-  
-### <a name="to-invoke-edit-and-continue-automatically"></a>Pour appeler Modifier & Continuer automatiquement  
-  
-1.  En mode arrêt, apporter une modification à votre code source.  
-  
-2.  À partir de la **déboguer** menu, cliquez sur **continuer**, **étape**, ou **définir l’instruction suivante** ou évaluez une fonction dans une fenêtre du débogueur.  
-  
-     Le nouveau code est compilé et le débogage se poursuit avec le nouveau code. Certaines modifications ne sont pas pris en charge par Modifier & Continuer. Pour plus d’informations, consultez [modifications de Code prises en charge (c# et Visual Basic)](../debugger/supported-code-changes-csharp.md).  
-  
-### <a name="to-enabledisable-edit-and-continue"></a>Pour activer ou désactiver Modifier & Continuer  
-  
-1.  Dans le menu **Outils** , cliquez sur **Options**.  
-  
-2.  Dans le **Options** boîte de dialogue, développez le **débogage** nœud et sélectionnez **Modifier & Continuer**.  
-  
-3.  Dans le **Options** boîte de dialogue **Modifier & Continuer** page, activez ou désactivez le **Activer Modifier & Continuer** case à cocher.  
-  
-     Le paramètre prend effet lorsque vous redémarrez la session de débogage.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Modifier & Continuer (Visual c#)](../debugger/edit-and-continue-visual-csharp.md)   
- [Modifications de Code prises en charge (c# et Visual Basic)](../debugger/supported-code-changes-csharp.md)   
+Le paramètre prend effet lorsque vous démarrez ou redémarrez la session de débogage.  
+
+**Pour utiliser Modifier & Continuer :**  
+   
+1. Pendant le débogage, en mode arrêt, apportez une modification à votre code source.  
+   
+1. À partir de la **déboguer** menu, cliquez sur **continuer**, **étape**, ou **définir l’instruction suivante**, ou évaluez une fonction dans une fenêtre du débogueur.  
+   
+   Débogage de se poursuit avec le nouveau code compilé. 
+
+Certains types de modifications du code ne sont pas pris en charge par Modifier & Continuer. Pour plus d’informations, consultez [pris en charge les modifications de code (C# et Visual Basic)](../debugger/supported-code-changes-csharp.md).   

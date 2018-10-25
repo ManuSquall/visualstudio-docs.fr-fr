@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomViewer::DisplayValue | Documents Microsoft
+title: IDebugCustomViewer::DisplayValue | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 017e1e7a27839dae91559468c62be353bbd43b4e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 44295cb6cc3635d099a93ef62c7d4ae4e2bdd4cd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107057"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833837"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
 Cette méthode est appelée pour afficher la valeur spécifiée.  
@@ -53,7 +53,7 @@ int DisplayValue(
  [in] ID de visionneuses personnalisées qui prennent en charge plusieurs types.  
   
  `pHostServices`  
- [in] Réservé. Toujours la valeur null.  
+ [in] Réservée. Toujours défini sur null.  
   
  `pDebugProperty`  
  [in] Interface qui peut être utilisé pour récupérer la valeur à afficher.  
@@ -62,9 +62,9 @@ int DisplayValue(
  En cas de réussite, retourne `S_OK`; sinon retourne le code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- L’affichage est « modale » dans la mesure où cette méthode crée la fenêtre nécessaire, afficher la valeur, attendez d’entrée et fermer la fenêtre, tous les avant de retourner à l’appelant. Cela signifie que la méthode doit gérer tous les aspects de l’affichage de la valeur de propriété, à partir de la création d’une fenêtre pour la sortie, au lieu d’attendre pour l’entrée d’utilisateur, de la destruction de la fenêtre.  
+ L’affichage est « modal » dans la mesure où cette méthode créer la fenêtre nécessaires, afficher la valeur, attendre une entrée et fermez la fenêtre, tous avant de retourner à l’appelant. Cela signifie que la méthode doit gérer tous les aspects de l’affichage de la valeur de propriété, à partir de la création d’une fenêtre de sortie, à l’attente de l’entrée d’utilisateur, de la destruction de la fenêtre.  
   
- Pour prendre en charge la modification de la valeur de la donnée [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) de l’objet, vous pouvez utiliser la [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) (méthode), si la valeur peut être exprimée sous forme de chaîne. Sinon, il est nécessaire de créer une interface personnalisée : exclusifs à l’évaluateur d’expression que l’implémentation de cela `DisplayValue` (méthode), sur le même objet qui implémente le `IDebugProperty3` interface. Cette interface personnalisée fournirait des méthodes de modification des données d’une taille arbitraire ou de la complexité.  
+ Pour prendre en charge la modification de la valeur sur la donnée [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) de l’objet, vous pouvez utiliser la [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) (méthode), si la valeur peut être exprimée sous forme de chaîne. Sinon, il est nécessaire de créer une interface personnalisée — exclusifs à l’évaluateur d’expression que l’implémentation de cela `DisplayValue` (méthode), sur le même objet qui implémente le `IDebugProperty3` interface. Cette interface personnalisée devriez normalement fournir des méthodes pour modifier les données d’une taille arbitraire ou de la complexité.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)   

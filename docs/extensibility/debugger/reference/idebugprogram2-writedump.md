@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::WriteDump | Documents Microsoft
+title: IDebugProgram2::WriteDump | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b17d75ace19ac53cbcd229d7c15de573c1ecb8b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3d2953b3f30a0d485b58afc04e8ce42158a7537e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114506"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905260"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
 Écrit un fichier de vidage dans un fichier.  
@@ -43,16 +43,16 @@ int WriteDump(
   
 #### <a name="parameters"></a>Paramètres  
  `DumpType`  
- [in] Une valeur à partir de la [DUMPTYPE](../../../extensibility/debugger/reference/dumptype.md) énumération qui spécifie le type d’image, par exemple, short ou long.  
+ [in] Une valeur comprise entre le [DUMPTYPE](../../../extensibility/debugger/reference/dumptype.md) énumération qui spécifie le type d’image, par exemple, short ou long.  
   
  `pszDumpUrl`  
- [in] L’URL pour écrire le vidage d’à. En règle générale, il s’agit sous la forme de `file://c:\path\filename.ext`, mais il peut être une URL valide.  
+ [in] L’URL pour l’écriture de l’image mémoire. En règle générale, il s’agit dans le formulaire de `file://c:\path\filename.ext`, mais il peut être n’importe quelle URL valide.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Une image de programme inclut généralement le frame de pile en cours, la pile, la liste des threads en cours d’exécution dans le programme et éventuellement de mémoire que le programme est propriétaire.  
+ Un vidage de programme inclut généralement le frame de pile actuel, la pile proprement dit, une liste des threads en cours d’exécution dans le programme et éventuellement de mémoire qui possède le programme.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

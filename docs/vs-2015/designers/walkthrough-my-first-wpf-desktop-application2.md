@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1b1ec46cf032928a090991577b83782e1fcfb513
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d8af02051774b744f9229e15a6184603c4d9f6b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289913"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899277"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Procédure pas à pas : ma première application de bureau WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -958,27 +958,27 @@ un name = « introduction » ></a> cette procédure pas à pas fournit une int
   
  Pour plus d’informations sur les modèles d’architecture et de programmation WPF, consultez les rubriques suivantes :  
   
--   [Architecture de WPF](https://msdn.microsoft.com/library/ms750441\(v=vs.100\).aspx)  
+- [Architecture de WPF](https://msdn.microsoft.com/library/ms750441\(v=vs.100\).aspx)  
   
--   [Vue d’ensemble du langage XAML](https://msdn.microsoft.com/library/ms752059\(v=vs.100\).aspx)  
+- [Vue d’ensemble du langage XAML](https://msdn.microsoft.com/library/ms752059\(v=vs.100\).aspx)  
   
--   [Vue d’ensemble des propriétés de dépendance](https://msdn.microsoft.com/library/ms752914\(v=vs.100\).aspx)  
+- [Vue d’ensemble des propriétés de dépendance](https://msdn.microsoft.com/library/ms752914\(v=vs.100\).aspx)  
   
--   [Système de disposition](https://msdn.microsoft.com/library/ms745058\(v=vs.100\).aspx)  
+- [Système de disposition](https://msdn.microsoft.com/library/ms745058\(v=vs.100\).aspx)  
   
--   [Styles et modèles](https://msdn.microsoft.com/library/bb613570\(v=vs.100\).aspx)  
+- [Styles et modèles](https://msdn.microsoft.com/library/bb613570\(v=vs.100\).aspx)  
   
- Pour plus d’informations sur la création d’applications, consultez les rubriques suivantes :  
+  Pour plus d’informations sur la création d’applications, consultez les rubriques suivantes :  
   
--   [Vue d’ensemble du développement d’applications](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx)  
+- [Vue d’ensemble du développement d’applications](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx)  
   
--   [Vue d’ensemble des contrôles](https://msdn.microsoft.com/library/bb613551\(v=vs.100\).aspx)  
+- [Vue d’ensemble des contrôles](https://msdn.microsoft.com/library/bb613551\(v=vs.100\).aspx)  
   
--   [Vue d’ensemble de la liaison de données](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)  
+- [Vue d’ensemble de la liaison de données](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)  
   
--   [Vue d’ensemble des médias, de l’animation et du graphisme WPF](https://msdn.microsoft.com/library/ms742562\(v=vs.100\).aspx)  
+- [Vue d’ensemble des médias, de l’animation et du graphisme WPF](https://msdn.microsoft.com/library/ms742562\(v=vs.100\).aspx)  
   
--   [Documents dans WPF](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)  
+- [Documents dans WPF](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédure pas à pas : création d’une application de bureau WPF connectée à un service mobile Azure](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   

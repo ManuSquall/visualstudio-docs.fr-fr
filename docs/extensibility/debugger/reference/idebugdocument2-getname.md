@@ -1,5 +1,5 @@
 ---
-title: IDebugDocument2::GetName | Documents Microsoft
+title: IDebugDocument2::GetName | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e20d70b86050ae4b2ef4d983bb0efa8305947dff
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e1c819c63a40a1d7f08b46b67a8cfd2c1949c074
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105844"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905207"
 ---
 # <a name="idebugdocument2getname"></a>IDebugDocument2::GetName
-Obtient le nom du document dans un des différents formulaires.  
+Obtient le nom du document sous plusieurs formes.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,7 +43,7 @@ int GetName(
   
 #### <a name="parameters"></a>Paramètres  
  `gnType`  
- [in] Une valeur à partir de la [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) énumération qui détermine le type de nom à retourner.  
+ [in] Une valeur comprise entre le [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) énumération qui détermine le type de nom à retourner.  
   
  `pbstrFileName`  
  [out] Retourne une chaîne contenant le nom du document.  
@@ -52,7 +52,7 @@ int GetName(
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode peut, par exemple, retourner le nom du document comme un titre ou un nom de fichier ou de la même partie d’un nom de fichier.  
+ Cette méthode peut, par exemple, retourner le nom du document comme un titre ou en tant que nom de fichier ou même dans un nom de fichier.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)   

@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ea1c04066099b385b03c1b81bc4d85c7fb13e329
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: ba6f0a1aff0c263534c17256b7f5cf49ff9c9533
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118954"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898055"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Résoudre les problèmes de déploiement et empaquetage de SharePoint
   Cette rubrique couvre différents problèmes que vous pouvez rencontrer lorsque vous empaquetez et déployez des solutions SharePoint.
@@ -59,16 +59,16 @@ ms.locfileid: "37118954"
 ## <a name="differences-between-f5-deployment"></a>Différences entre le déploiement F5
  Lorsque vous utilisez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pour déployer votre projet SharePoint sur le serveur SharePoint local à des fins de test et de débogage, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] exécute des opérations supplémentaires.
 
-1.  Réinitialisation des services IIS (Internet Information Services) pendant l'étape de déploiement.
+1. Réinitialisation des services IIS (Internet Information Services) pendant l'étape de déploiement.
 
-2.  Association automatique des flux de travail.
+2. Association automatique des flux de travail.
 
-3.  Définition de l’ordre d’activation des fonctionnalités en fonction de la hiérarchie du Concepteur de packages.
+3. Définition de l’ordre d’activation des fonctionnalités en fonction de la hiérarchie du Concepteur de packages.
 
- Vous pouvez ajouter des étapes de déploiement personnalisées pour les autres modifications le **F5** comportement. Pour plus d’informations, consultez [procédure pas à pas : créer une étape de déploiement personnalisée pour les projets SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
+   Vous pouvez ajouter des étapes de déploiement personnalisées pour les autres modifications le **F5** comportement. Pour plus d’informations, consultez [procédure pas à pas : créer une étape de déploiement personnalisée pour les projets SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
 
 ## <a name="delay-displaying-sharepoint-page-when-deploy-visual-web-part"></a>Différer l’affichage de page SharePoint lorsque déployez le composant visual web part
- L'affichage de la page SharePoint prend un certain temps lors du déploiement d'un composant Visual Web Part dans le dossier Bin sur [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)], [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] ou [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)]. Si vous modifiez des fichiers dans un répertoire [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] de niveau supérieur, tel que le répertoire bin, l'application Web entière est recompilée. Cela peut différer de 25 secondes le rendu de la page SharePoint.
+ L’affichage de la page SharePoint prend un certain temps lors du déploiement d’un composant Visual Web Part dans le dossier Bin sur [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)], [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] ou [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)]. Si vous modifiez des fichiers dans un répertoire [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] de niveau supérieur, tel que le répertoire bin, l'application Web entière est recompilée. Cela peut différer de 25 secondes le rendu de la page SharePoint.
 
 ### <a name="error-message"></a>Message d'erreur
  Aucun.

@@ -17,12 +17,12 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 71098c0dda7c06f446658c4970d0b6cf2e35e55e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d1769b4064b92283e75c242a5abb897296c5156
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198508"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847790"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Prise en charge des extraits de code dans un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -335,15 +335,15 @@ namespace TestLanguagePackage
   
  Lorsque le service de langage Obtient le nom de raccourci, il appelle le <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A> méthode pour obtenir le titre d’extrait de code de nom de fichier et le code. Le service de langage appelle ensuite la <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> méthode dans la <xref:Microsoft.VisualStudio.Package.ExpansionProvider> classe pour insérer l’extrait de code. Les méthodes suivantes sont appelées par Visual Studio dans l’ordre indiqué dans la <xref:Microsoft.VisualStudio.Package.ExpansionProvider> classe pendant le processus de l’insertion de l’extrait de code :  
   
-1.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
+1. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
   
-2.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
+2. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
   
-3.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
+3. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
   
-4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
+4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
- Pour plus d’informations sur l’obtention d’une liste d’extraits de code installé pour votre service de langage, consultez [procédure pas à pas : obtention d’une liste d’installé des extraits de Code (implémentation héritée)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
+   Pour plus d’informations sur l’obtention d’une liste d’extraits de code installé pour votre service de langage, consultez [procédure pas à pas : obtention d’une liste d’installé des extraits de Code (implémentation héritée)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
   
 ## <a name="implementing-the-expansionfunction-class"></a>Implémentation de la classe ExpansionFunction  
  Une fonction d’expansion est une fonction nommée qui est incorporée dans un modèle d’extrait de code et retourne une ou plusieurs valeurs à placer dans un champ. Pour prendre en charge les fonctions d’extension dans votre service de langage, vous devez dériver une classe à partir de la <xref:Microsoft.VisualStudio.Package.ExpansionFunction> classe et implémenter la <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> (méthode). Vous devez remplacer le <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> méthode dans le <xref:Microsoft.VisualStudio.Package.LanguageService> classe pour retourner une nouvelle instanciation de votre version de la <xref:Microsoft.VisualStudio.Package.ExpansionFunction> classe pour chaque fonction d’extension que vous prenez en charge. Si vous prenez en charge une liste de valeurs possibles à partir d’une fonction d’expansion, vous devez également substituer la <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> méthode dans la <xref:Microsoft.VisualStudio.Package.ExpansionFunction> classe pour retourner une liste de ces valeurs.  

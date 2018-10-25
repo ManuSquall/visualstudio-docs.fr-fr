@@ -1,5 +1,5 @@
 ---
-title: L’URI à coder contient un caractère non valide | Documents Microsoft
+title: L’URI à coder contient un caractère non valide | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1e93d145ea6b0991123c2a7c80f8acf54a83a264
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632929"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832172"
 ---
 # <a name="the-uri-to-be-encoded-contains-an-invalid-character"></a>L'URI à coder contient un caractère incorrect
-Vous avez tenté d’encoder une chaîne sous la forme d’un URI (Uniform Resource Identifier), mais il contenait des caractères non valides. Bien que la plupart des caractères sont valides dans les chaînes pour être converti en URI, certaines séquences de caractères Unicode sont interdits.  
+Vous avez tenté d’encoder une chaîne sous la forme d’un URI (Uniform Resource Identifier), mais il contenait des caractères non valides. Bien que la plupart des caractères sont valides dans les chaînes à convertir en URI, certaines séquences de caractères Unicode ne sont pas conformes.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Vérifiez la chaîne à encoder contient uniquement les séquences Unicode valides. Un URI complet se compose d’une séquence de composants et des séparateurs. Les crochets pointus représentent les composants et les « : », « / », « ; » et « ? » sont des caractères réservés utilisés comme séparateurs. La forme générale est la suivante :  
+-   Vérifiez la chaîne à encoder contient uniquement les séquences Unicode valides. Un URI complet se compose d’une séquence de composants et de séparateurs. Les noms figurant entre crochets représentent des composants et le « : », « / », « ; » et « ? » sont des caractères réservés utilisés comme séparateurs. Le format général est :  
   
     ```JavaScript  
     <Scheme>:<first>/<second>;<third>?<fourth>  

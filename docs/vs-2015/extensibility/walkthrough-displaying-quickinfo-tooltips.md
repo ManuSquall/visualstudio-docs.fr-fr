@@ -15,12 +15,12 @@ ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c8fe37de7db5a09e9c0e81f25b09e9b4ff345c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c217426d4186477f22a21c9348ff30e181faa840
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237651"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863280"
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>Procédure pas à pas : affichage d’info-bulles Info express
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +29,17 @@ Info Express est une fonctionnalité IntelliSense qui affiche les signatures de 
   
  L’exemple d’info Express dans cette procédure pas à pas affiche les info-bulles quand un utilisateur déplace le pointeur sur un nom de méthode. Cette conception vous oblige à mettre en œuvre de ces quatre interfaces :  
   
--   interface de source  
+- interface de source  
   
--   interface du fournisseur de source  
+- interface du fournisseur de source  
   
--   interface de contrôleur  
+- interface de contrôleur  
   
--   interface du fournisseur de contrôleur  
+- interface du fournisseur de contrôleur  
   
- Les fournisseurs de source et de contrôleur sont des composants de Managed Extensibility Framework (MEF), responsables pour exporter les classes source et le contrôleur et sont l’importation de services et de répartiteurs comme le <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, ce qui crée le texte d’info-bulle mémoire tampon et le <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, ce qui déclenche la session info Express.  
+  Les fournisseurs de source et de contrôleur sont des composants de Managed Extensibility Framework (MEF), responsables pour exporter les classes source et le contrôleur et sont l’importation de services et de répartiteurs comme le <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, ce qui crée le texte d’info-bulle mémoire tampon et le <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, ce qui déclenche la session info Express.  
   
- Dans cet exemple, la source info Express utilise une liste codée en dur des noms de méthodes et des descriptions, mais dans des implémentations complètes, le service de langage et de la documentation du langage doivent fournir ce contenu.  
+  Dans cet exemple, la source info Express utilise une liste codée en dur des noms de méthodes et des descriptions, mais dans des implémentations complètes, le service de langage et de la documentation du langage doivent fournir ce contenu.  
   
 ## <a name="prerequisites"></a>Prérequis  
  À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS par la suite. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

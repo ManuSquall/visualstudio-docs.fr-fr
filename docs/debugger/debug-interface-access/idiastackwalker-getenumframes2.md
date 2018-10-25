@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalker::getEnumFrames2 | Documents Microsoft
+title: IDiaStackWalker::getEnumFrames2 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 834b202d406ce7ae2e2a5b2ec80b8f7c46f0f576
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ca384e594a9e8a295f291739589bed1eb92dd044
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461371"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854037"
 ---
 # <a name="idiastackwalkergetenumframes2"></a>IDiaStackWalker::getEnumFrames2
 Récupère un énumérateur de frame de pile pour un type de plateforme spécifique.  
@@ -37,13 +37,13 @@ Récupère un énumérateur de frame de pile pour un type de plateforme spécifi
   
 #### <a name="parameters"></a>Paramètres  
  `cpuid`  
- [in] Une valeur à partir de la [cv_cpu_type_e, énumération](../../debugger/debug-interface-access/cv-cpu-type-e.md) énumération spécifiant le type de plateforme.  
+ [in] Une valeur comprise entre le [CV_CPU_TYPE_e (énumération)](../../debugger/debug-interface-access/cv-cpu-type-e.md) énumération spécifiant le type de plateforme.  
   
  `pHelper`  
- [in] L’application d’assistance [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) objet.  
+ [in] Le programme d’assistance [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) objet.  
   
  `ppEnum`  
- [out] Retourne un [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) objet contenant la liste de [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) objets.  
+ [out] Retourne un [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) objet contenant une liste de [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) objets.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  

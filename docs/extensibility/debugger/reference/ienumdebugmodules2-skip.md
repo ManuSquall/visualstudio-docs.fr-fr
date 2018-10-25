@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugModules2::Skip | Documents Microsoft
+title: IEnumDebugModules2::Skip | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e88a521db0d0548b1ca176654e64ce190830a69a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6680284d77b8d7e50a297cfe438a1b5572268fed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124691"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901682"
 ---
 # <a name="ienumdebugmodules2skip"></a>IEnumDebugModules2::Skip
 Ignore le nombre spécifié d’éléments.  

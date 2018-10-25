@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramNode2::GetHostMachineName_V7 | Documents Microsoft
+title: IDebugProgramNode2::GetHostMachineName_V7 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,17 +15,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2adc7125c79afc6b9ebc16b6c4b36f5c147bcdfb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9ed7eb9c98ad8da45a50af79918480e74d76779e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115393"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908546"
 ---
 # <a name="idebugprogramnode2gethostmachinenamev7"></a>IDebugProgramNode2::GetHostMachineName_V7
 
 > [!Note]
-> DÉCONSEILLÉE. N’UTILISEZ PAS.
+> DÉCONSEILLÉ. N’UTILISEZ PAS.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -48,12 +48,12 @@ int GetHostMachineName_V7 (
 
 ## <a name="return-value"></a>Valeur de retour
 
-Une implémentation doit toujours renvoyer `E_NOTIMPL`.
+Une implémentation doit toujours retourner `E_NOTIMPL`.
 
 ## <a name="remarks"></a>Notes
 
 > [!WARNING]
-> À compter de Visual Studio 2005, cette méthode n’est plus utilisée et doit toujours renvoyer `E_NOTIMPL`.
+> À compter de Visual Studio 2005, cette méthode n’est plus utilisée et doit toujours retourner `E_NOTIMPL`.
 
 ## <a name="see-also"></a>Voir aussi
 

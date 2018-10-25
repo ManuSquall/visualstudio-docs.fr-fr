@@ -15,12 +15,12 @@ ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1658f54cb50ca1d04668f177657b8aaa80592494
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a16a0ece140f205f8276f0b3ec7db6b2402d3537
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224183"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836766"
 ---
 # <a name="source-control-integration-overview"></a>Présentation de l’intégration du contrôle de code source
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Cette section compare les deux façons d’intégrer le contrôle de code source
   
  Pour implémenter un plug-in à l’aide de l’API de plug-in de contrôle de Source de contrôle de code source, procédez comme suit :  
   
-1.  Créer une DLL qui implémente les fonctions spécifiées dans [Plug-ins de contrôle de code Source](../../extensibility/source-control-plug-ins.md).  
+1. Créer une DLL qui implémente les fonctions spécifiées dans [Plug-ins de contrôle de code Source](../../extensibility/source-control-plug-ins.md).  
   
-2.  Inscrivez la DLL en rendant les entrées de Registre appropriées (décrit dans [Comment : installer un plug-in de contrôle de Source](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
+2. Inscrivez la DLL en rendant les entrées de Registre appropriées (décrit dans [Comment : installer un plug-in de contrôle de Source](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
   
-3.  Créer une assistance de l’interface utilisateur et l’affichage lorsque vous y êtes invité par le Package de l’adaptateur de contrôle de code Source (le composant de Visual Studio qui gère les fonctionnalités de contrôle de code source par le biais de plug-ins de contrôle de code source)  
+3. Créer une assistance de l’interface utilisateur et l’affichage lorsque vous y êtes invité par le Package de l’adaptateur de contrôle de code Source (le composant de Visual Studio qui gère les fonctionnalités de contrôle de code source par le biais de plug-ins de contrôle de code source)  
   
- En réponse à une commande de contrôle de code source, l’IDE Visual Studio présente une interface utilisateur standard pour les opérations de base et transmet ensuite les informations pour le contrôle de source de plug-in via les fonctions définies dans l’API de plug-in de contrôle de Source. Pour les options avancées, le plug-in de contrôle de code source peut être appelé sur pour présenter son propre interface utilisateur, par exemple, pour un projet sous contrôle de code source de navigation. Cela signifie que l’utilisateur peut s’afficher avec les deux styles pouvant être différents de l’interface utilisateur lors du traitement de contrôle de code source : l’interface utilisateur qui présente Visual Studio et l’interface utilisateur qui présente le plug-in de contrôle de code source. Il s’agit plus perceptible avec les opérations de contrôle source avancées.  
+   En réponse à une commande de contrôle de code source, l’IDE Visual Studio présente une interface utilisateur standard pour les opérations de base et transmet ensuite les informations pour le contrôle de source de plug-in via les fonctions définies dans l’API de plug-in de contrôle de Source. Pour les options avancées, le plug-in de contrôle de code source peut être appelé sur pour présenter son propre interface utilisateur, par exemple, pour un projet sous contrôle de code source de navigation. Cela signifie que l’utilisateur peut s’afficher avec les deux styles pouvant être différents de l’interface utilisateur lors du traitement de contrôle de code source : l’interface utilisateur qui présente Visual Studio et l’interface utilisateur qui présente le plug-in de contrôle de code source. Il s’agit plus perceptible avec les opérations de contrôle source avancées.  
   
 ### <a name="drawbacks-to-implementing-a-source-control-plug-in"></a>Inconvénients à l’implémentation d’un plug-in de contrôle de code Source  
   

@@ -15,12 +15,12 @@ ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf9285cb19bfeb2a9d3417d90e4c69ea9abc2ad3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3ed255d5b8a876ff29e5230c4517ab0b5e04398
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266967"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843403"
 ---
 # <a name="choosing-the-installation-directory-for-a-vspackage"></a>Choix du répertoire d’installation d’un VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,17 +54,17 @@ Un VSPackage et ses fichiers de prise en charge doivent être sur le système de
   
  [Gestion de VSPackages](../../extensibility/managing-vspackages.md) indique que les entrées de Registre contrôlent où [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] réellement la recherche d’un VSPackage satellites DLL. Toutefois, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] essaie de charger une DLL satellite dans un sous-répertoire nommé pour une valeur LCID, dans l’ordre suivant :  
   
-1.  Par défaut LCID (VS LCID par exemple \1033 pour l’anglais)  
+1. Par défaut LCID (VS LCID par exemple \1033 pour l’anglais)  
   
-2.  LCID par défaut avec la sous-langue par défaut.  
+2. LCID par défaut avec la sous-langue par défaut.  
   
-3.  Par défaut du système LCID.  
+3. Par défaut du système LCID.  
   
-4.  Système LCID par défaut avec la sous-langue par défaut.  
+4. Système LCID par défaut avec la sous-langue par défaut.  
   
-5.  ÉTATS-UNIS Anglais (. \1033 ou. \0x409).  
+5. ÉTATS-UNIS Anglais (. \1033 ou. \0x409).  
   
- Si votre DLL VSPackage inclut des ressources et les points d’entrée de Registre SatelliteDll\DllName, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tente de les charger dans l’ordre indiqué ci-dessus.  
+   Si votre DLL VSPackage inclut des ressources et les points d’entrée de Registre SatelliteDll\DllName, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tente de les charger dans l’ordre indiqué ci-dessus.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Choix entre les VSPackages partagés et avec contrôle de version](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   

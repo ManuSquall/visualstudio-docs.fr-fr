@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2d5e118e4d998a5abf87920ee54401bf53d4adfa
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 210d7ade5e54f9f76e40eaf577e7818db85176e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174483"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897886"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Enregistrer les données d’un objet dans une base de données
 Vous pouvez enregistrer des données dans des objets à une base de données en passant les valeurs à partir de votre objet à une des méthodes DBDirect du TableAdapter (par exemple, `TableAdapter.Insert`). Pour plus d’informations, consultez [TableAdapter](../data-tools/create-and-configure-tableadapters.md).
@@ -35,7 +35,7 @@ Vous pouvez enregistrer des données dans des objets à une base de données en 
 >  Lorsque vous configurez un TableAdapter, la requête principale doit fournir suffisamment d’informations pour le `DBDirect` méthodes doit être créé. Par exemple, si un TableAdapter est configuré pour interroger des données à partir d’une table qui n’a pas une colonne de clé primaire définie, il ne génère pas `DBDirect` méthodes.
 
 |Méthode DBDirect du TableAdapter|Description|
-|----------------------------------|-----------------|
+| - |-----------------|
 |`TableAdapter.Insert`|Ajoute de nouveaux enregistrements à une base de données et vous permet de passer des valeurs de colonne individuels en tant que paramètres de méthode.|
 |`TableAdapter.Update`|Mises à jour les enregistrements dans une base de données existants. Le `Update` méthode accepte des valeurs d’origine et de la nouvelle colonne en tant que paramètres de méthode. Les valeurs d’origine sont utilisées pour rechercher l’enregistrement d’origine et les nouvelles valeurs sont utilisées pour mettre à jour cet enregistrement.<br /><br /> Le `TableAdapter.Update` méthode est également utilisée pour rapprocher les modifications dans un jeu de données dans la base de données en prenant un <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>, ou un tableau de <xref:System.Data.DataRow>s en tant que paramètres de méthode.|
 |`TableAdapter.Delete`|Supprime les enregistrements existants de la base de données en fonction des valeurs de colonne d’origine passés en tant que paramètres de méthode.|

@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2::EnumPorts | Documents Microsoft
+title: IDebugPortSupplier2::EnumPorts | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7eef32c93ad63849f2ab40f0c444fd74e30d85a0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43eb1171b11dd3afadee45b222f49e7a6b30f4a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122806"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901760"
 ---
 # <a name="idebugportsupplier2enumports"></a>IDebugPortSupplier2::EnumPorts
 Récupère une liste de tous les ports fournis par un fournisseur de port.  
@@ -41,7 +41,7 @@ int EnumPorts(
   
 #### <a name="parameters"></a>Paramètres  
  `ppEnum`  
- [out] Retourne un [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) objet contenant la liste de ports fournis.  
+ [out] Retourne un [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) objet contenant une liste de ports fournis.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  

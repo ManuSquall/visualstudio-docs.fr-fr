@@ -1,5 +1,5 @@
 ---
-title: EX_DBGPROP_INFO_FLAGS | Documents Microsoft
+title: EX_DBGPROP_INFO_FLAGS | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0af0de81c0253b72fe432cb3cefe11c362bc2ec4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e66ff43cd51977bf0c23ca0e024a2e05b53f5022
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24640899"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878087"
 ---
 # <a name="exdbgpropinfoflags"></a>EX_DBGPROP_INFO_FLAGS
 Permet de spécifier `ExtendedDebugPropertyInfo` champs.  
@@ -42,7 +42,7 @@ enum {
   
 ## <a name="members"></a>Membres  
  EX_DBGPROP_INFO_ID  
- Initialise l’identificateur de la propriété.  
+ Initialise l’identificateur de propriété.  
   
  EX_DBGPROP_INFO_NTYPE  
  Initialise le type de la propriété.  
@@ -54,7 +54,7 @@ enum {
  Initialise le `plb` champ.  
   
  EX_DBGPROP_INFO_DEBUGEXTPROP  
- Initialise le `pDebugExtProp` champ contenant une `IDebugExtendedProperty` interface.  
+ Initialise le `pDebugExtProp` champ qui contient un `IDebugExtendedProperty` interface.  
   
 ## <a name="see-also"></a>Voir aussi  
  [ExtendedDebugPropertyInfo (Structure)](../../winscript/reference/extendeddebugpropertyinfo-structure.md)   

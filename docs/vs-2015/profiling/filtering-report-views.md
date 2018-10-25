@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79df08496cfa0e15f2caa648afcb1ee78c636d56
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2054181bfd34e9f9382391c879030e147ce2b8d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238288"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878451"
 ---
 # <a name="filtering-report-views"></a>Filtrage des vues des rapports
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,19 +53,19 @@ Vous pouvez appliquer des filtres aux fichiers de données de profilage pour lim
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>Pour créer un filtre de rapport de profileur à partir de la vue du rapport Marques  
   
-1.  Sélectionnez **Marques** dans la liste **Vue actuelle** sur la barre d’outils de la vue Rapport de performances.  
+1. Sélectionnez **Marques** dans la liste **Vue actuelle** sur la barre d’outils de la vue Rapport de performances.  
   
-     Le rapport de profileur Marques s’affiche.  
+    Le rapport de profileur Marques s’affiche.  
   
-2.  Sélectionnez l’événement ETW ou l’événement d’échantillonnage que vous voulez utiliser comme point de départ du rapport.  
+2. Sélectionnez l’événement ETW ou l’événement d’échantillonnage que vous voulez utiliser comme point de départ du rapport.  
   
-3.  Appuyez sur la touche Ctrl tout en la maintenant enfoncée et cliquez sur l’événement que vous voulez utiliser comme point de fin du rapport.  
+3. Appuyez sur la touche Ctrl tout en la maintenant enfoncée et cliquez sur l’événement que vous voulez utiliser comme point de fin du rapport.  
   
-4.  Cliquez avec le bouton droit, puis cliquez sur une des options suivantes :  
+4. Cliquez avec le bouton droit, puis cliquez sur une des options suivantes :  
   
-    -   **Ajouter un filtre aux marques** crée des clauses de filtre qui utilisent la colonne Marque comme champ de filtre.  
+   - **Ajouter un filtre aux marques** crée des clauses de filtre qui utilisent la colonne Marque comme champ de filtre.  
   
-    -   **Ajouter un filtre aux horodatages** crée des clauses de filtre qui utilisent la colonne Horodatage en millisecondes comme champ de filtre.  
+   - **Ajouter un filtre aux horodatages** crée des clauses de filtre qui utilisent la colonne Horodatage en millisecondes comme champ de filtre.  
   
      Les deux options filtrent le fichier de données actif aux mêmes points de début et de fin. L’une ou l’autre des options peut être préférable si vous exportez le filtre pour l’utiliser dans d’autres rapports.  
   

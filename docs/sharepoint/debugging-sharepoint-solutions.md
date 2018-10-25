@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 99d7f5e813e3ac33b327ed0c2962b150b6eed755
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 6f53ca7f1a5e449d47a30a32967072f7220c159a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327165"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903151"
 ---
 # <a name="debug-sharepoint-solutions"></a>Déboguer des solutions SharePoint
   Vous pouvez déboguer des solutions SharePoint à l’aide de la [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] débogueur. Lorsque vous démarrez le débogage, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] déploie les fichiers de projet sur le serveur SharePoint, puis ouvre une instance du site SharePoint dans le navigateur Web. Les sections suivantes expliquent comment déboguer des applications SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -43,13 +43,13 @@ ms.locfileid: "36327165"
 ## <a name="enable-debugging"></a>Activer le débogage
  Lorsque vous déboguez tout d’abord une solution SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], une boîte de dialogue vous avertit que le fichier web.config n’est pas configuré pour activer le débogage. (Le fichier web.config est créé lorsque vous installez SharePoint server. Pour plus d’informations, consultez [utilisation des fichiers Web.config](http://go.microsoft.com/fwlink/?LinkID=149266).) La boîte de dialogue vous donne la possibilité d’exécution du projet sans débogage ou en modifiant le fichier web.config pour activer le débogage. Si vous choisissez la première option, le projet s’exécute normalement. Si vous choisissez la deuxième option, le fichier web.config est configuré pour :  
   
--   Activer la pile des appels (`CallStack="true"`)  
+- Activer la pile des appels (`CallStack="true"`)  
   
--   Désactiver les erreurs personnalisées dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="Off" />`)  
+- Désactiver les erreurs personnalisées dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="Off" />`)  
   
--   Activer le débogage de compilation (`<compilation debug="true">`)  
+- Activer le débogage de compilation (`<compilation debug="true">`)  
   
- Le fichier web.config suivant :  
+  Le fichier web.config suivant :  
   
 ```xml  
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
@@ -89,24 +89,24 @@ ms.locfileid: "36327165"
 ## <a name="f5-debug-and-deployment-process"></a>Processus de débogage et de déploiement F5
  Lorsque vous exécutez votre projet SharePoint en mode débogage, le processus de déploiement SharePoint effectue les tâches suivantes :  
   
-1.  Exécute les commandes de prédéploiement personnalisables.  
+1. Exécute les commandes de prédéploiement personnalisables.  
   
-2.  Crée un fichier de package (.wsp) solution Web à l’aide de [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] commandes. Le fichier .wsp inclut tous les fichiers nécessaires et les fonctionnalités. Pour plus d’informations, consultez [vue d’ensemble des Solutions](http://go.microsoft.com/fwlink/?LinkID=128154).  
+2. Crée un fichier de package (.wsp) solution Web à l’aide de [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] commandes. Le fichier .wsp inclut tous les fichiers nécessaires et les fonctionnalités. Pour plus d’informations, consultez [vue d’ensemble des Solutions](http://go.microsoft.com/fwlink/?LinkID=128154).  
   
-3.  Si la solution SharePoint est une solution de batterie, il recycle le [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] pool d’applications pour le site spécifié [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]. Cette étape libère des fichiers verrouillés par le [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] processus de travail.  
+3. Si la solution SharePoint est une solution de batterie, il recycle le [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] pool d’applications pour le site spécifié [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]. Cette étape libère des fichiers verrouillés par le [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] processus de travail.  
   
-4.  Si une version antérieure du package existe déjà, retire la version précédente des fonctionnalités et des fichiers dans le fichier .wsp. Cette étape désactive les fonctionnalités, désinstalle le package de solution, puis supprime le package de solution sur le serveur SharePoint.  
+4. Si une version antérieure du package existe déjà, retire la version précédente des fonctionnalités et des fichiers dans le fichier .wsp. Cette étape désactive les fonctionnalités, désinstalle le package de solution, puis supprime le package de solution sur le serveur SharePoint.  
   
-5.  Installe la version actuelle des fonctionnalités et des fichiers dans le fichier .wsp. Cette étape ajoute et installe la solution sur le serveur SharePoint.  
+5. Installe la version actuelle des fonctionnalités et des fichiers dans le fichier .wsp. Cette étape ajoute et installe la solution sur le serveur SharePoint.  
   
-6.  Pour les flux de travail, installe l’assembly de flux de travail. Vous pouvez modifier son emplacement en utilisant le *emplacement de l’Assembly* propriété.  
+6. Pour les flux de travail, installe l’assembly de flux de travail. Vous pouvez modifier son emplacement en utilisant le *emplacement de l’Assembly* propriété.  
   
-7.  Active la fonctionnalité du projet dans SharePoint si l’étendue est le Site ou Web. Fonctionnalités dans les étendues de la batterie de serveurs et WebApplication ne sont pas activées.  
+7. Active la fonctionnalité du projet dans SharePoint si l’étendue est le Site ou Web. Fonctionnalités dans les étendues de la batterie de serveurs et WebApplication ne sont pas activées.  
   
-8.  Pour les workflows, associe le flux de travail à la bibliothèque SharePoint, liste ou le site que vous avez sélectionné dans le **Assistant Personnalisation de SharePoint**.  
+8. Pour les workflows, associe le flux de travail à la bibliothèque SharePoint, liste ou le site que vous avez sélectionné dans le **Assistant Personnalisation de SharePoint**.  
   
-    > [!NOTE]  
-    >  Cette association se produit uniquement si vous avez sélectionné **workflow associer automatiquement** dans l’Assistant.  
+   > [!NOTE]  
+   >  Cette association se produit uniquement si vous avez sélectionné **workflow associer automatiquement** dans l’Assistant.  
   
 9. Exécute les commandes de post-déploiement personnalisables.  
   
@@ -116,7 +116,7 @@ ms.locfileid: "36327165"
   
 12. Affiche la bibliothèque appropriée, une liste ou une page de site dans le navigateur Web.  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] affiche un message d’état dans la fenêtre sortie après que chaque tâche est terminée. Si une tâche ne peut pas être effectuée, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] affiche un message d’erreur dans la fenêtre liste d’erreurs.  
+    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] affiche un message d’état dans la fenêtre sortie après que chaque tâche est terminée. Si une tâche ne peut pas être effectuée, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] affiche un message d’erreur dans la fenêtre liste d’erreurs.  
   
 ## <a name="sharepoint-project-features"></a>Fonctionnalités de projet SharePoint
  Une fonctionnalité est une unité portable et modulaire de fonctionnalités qui simplifient la modification des sites à l’aide de définitions de site. Il existe également un package de [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] éléments (WSS) qui peuvent être activés pour une portée spécifique et qui permet aux utilisateurs de réaliser une tâche ou un objectif particulier. Les modèles sont déployés en tant que fonctionnalités.  
@@ -128,8 +128,8 @@ ms.locfileid: "36327165"
 ## <a name="debug-workflows"></a>Déboguer des workflows
  Lorsque vous déboguez des projets de flux de travail, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ajoute le modèle de flux de travail (selon son type) dans une bibliothèque ou à une liste. Vous pouvez ensuite démarrer le modèle de flux de travail manuellement ou en ajoutant ou en mettant à jour un élément. Vous pouvez ensuite utiliser [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pour déboguer le flux de travail.  
   
-> [!NOTE]  
->  Si vous ajoutez des références à d’autres assemblys, assurez-vous que ces assemblys sont installés dans le global assembly cache ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Sinon, la solution de flux de travail risque d’échouer. Pour plus d’informations sur la façon d’installer des assemblys, consultez [démarrer manuellement un flux de travail sur un document ou un élément](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
+> [!NOTE]
+>  Si vous ajoutez des références à d’autres assemblys, assurez-vous que ces assemblys sont installés dans le global assembly cache ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Sinon, la solution de flux de travail risque d’échouer. Pour plus d’informations sur la façon d’installer des assemblys, consultez [démarrer manuellement un flux de travail sur un document ou un élément](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
   
  Toutefois, le processus de déploiement ne démarre pas le flux de travail. Vous devez démarrer le flux de travail à partir du site SharePoint Web. Vous pouvez également démarrer le flux de travail à l’aide d’une application cliente comme Microsoft Office Word 2010 ou à l’aide de code côté serveur distinct. Utilisez une des approches indiquées dans le **Assistant Personnalisation de SharePoint**.  
   

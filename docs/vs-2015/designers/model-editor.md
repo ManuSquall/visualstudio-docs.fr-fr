@@ -17,12 +17,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3fb0b83e266fbe865023d6a31f926ac31b61a10a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e947793dff1f0068c1341ba6b70c21df07463f6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264035"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844084"
 ---
 # <a name="model-editor"></a>Éditeur de modèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,18 +157,18 @@ Ce document explique comment utiliser l'éditeur de modèle [!INCLUDE[vsprvs](..
   
 ##### <a name="to-transform-an-object-by-setting-its-properties"></a>Pour transformer un objet en définissant ses propriétés  
   
-1.  En mode **Sélectionner**, sélectionnez l’objet que vous voulez transformer. Une superposition de maquette indique que l'objet est sélectionné.  
+1. En mode **Sélectionner**, sélectionnez l’objet que vous voulez transformer. Une superposition de maquette indique que l'objet est sélectionné.  
   
-2.  Dans la fenêtre **Propriétés**, spécifiez les valeurs des propriétés **Rotation**, **Échelle** et **Translation**.  
+2. Dans la fenêtre **Propriétés**, spécifiez les valeurs des propriétés **Rotation**, **Échelle** et **Translation**.  
   
-    > [!IMPORTANT]
-    >  Pour la propriété **Rotation**, spécifiez le degré de rotation autour de chacun des trois axes. Les rotations sont appliquées dans l'ordre. Par conséquent, veillez à planifier une rotation, en considérant d'abord la rotation autour de l'axe X, autour de l'axe Y, puis de l'axe Z.  
+   > [!IMPORTANT]
+   >  Pour la propriété **Rotation**, spécifiez le degré de rotation autour de chacun des trois axes. Les rotations sont appliquées dans l'ordre. Par conséquent, veillez à planifier une rotation, en considérant d'abord la rotation autour de l'axe X, autour de l'axe Y, puis de l'axe Z.  
   
- Les outils de modélisation vous permettent de créer rapidement des transformations, mais avec peu de précision. La définition des propriétés de l'objet vous permet de spécifier des transformations avec précision, mais plus lentement. Nous vous recommandons d'utiliser les outils de modélisation pour vous « rapprocher » des transformations que vous souhaitez effectuer, puis d'affiner le réglage des valeurs des propriétés.  
+   Les outils de modélisation vous permettent de créer rapidement des transformations, mais avec peu de précision. La définition des propriétés de l'objet vous permet de spécifier des transformations avec précision, mais plus lentement. Nous vous recommandons d'utiliser les outils de modélisation pour vous « rapprocher » des transformations que vous souhaitez effectuer, puis d'affiner le réglage des valeurs des propriétés.  
   
- Si vous ne souhaitez pas utiliser les manipulateurs, vous pouvez activer le mode avec formes libres. Dans la barre d’outils **Éditeur de modèle**, choisissez **Scripts**, **Outils**, **Manipulation de formes libres** pour activer (ou désactiver) le mode forme libre. En mode avec formes libres, vous pouvez commencer une manipulation à un point quelconque de l'aire de conception au lieu d'un point sur le manipulateur. En mode avec formes libres, vous pouvez limiter les modifications à certains axes en verrouillant ceux que vous ne souhaitez pas modifier. Dans la barre d’outils **Mode de l’éditeur de modèle**, choisissez une combinaison quelconque des boutons **Verrouiller l’axe X**, **Verrouiller l’axe Y** et **Verrouiller l’axe Z**.  
+   Si vous ne souhaitez pas utiliser les manipulateurs, vous pouvez activer le mode avec formes libres. Dans la barre d’outils **Éditeur de modèle**, choisissez **Scripts**, **Outils**, **Manipulation de formes libres** pour activer (ou désactiver) le mode forme libre. En mode avec formes libres, vous pouvez commencer une manipulation à un point quelconque de l'aire de conception au lieu d'un point sur le manipulateur. En mode avec formes libres, vous pouvez limiter les modifications à certains axes en verrouillant ceux que vous ne souhaitez pas modifier. Dans la barre d’outils **Mode de l’éditeur de modèle**, choisissez une combinaison quelconque des boutons **Verrouiller l’axe X**, **Verrouiller l’axe Y** et **Verrouiller l’axe Z**.  
   
- Il peut être utile d'utiliser l'alignement sur la grille pour travailler avec les objets. Dans la barre d’outils **Mode de l’éditeur de modèle**, choisissez **Aligner** pour activer ou (désactiver) l’alignement sur la grille. Lorsque l'alignement sur la grille est activé, les transformations de translation, de rotation et de mise à l'échelle sont limitées aux incréments prédéfinis.  
+   Il peut être utile d'utiliser l'alignement sur la grille pour travailler avec les objets. Dans la barre d’outils **Mode de l’éditeur de modèle**, choisissez **Aligner** pour activer ou (désactiver) l’alignement sur la grille. Lorsque l'alignement sur la grille est activé, les transformations de translation, de rotation et de mise à l'échelle sont limitées aux incréments prédéfinis.  
   
 ### <a name="working-with-the-pivot-point"></a>Utilisation du point pivot  
  Le point pivot d'un objet définit son centre de rotation et sa mise à l'échelle. Vous pouvez modifier le point pivot d'un objet pour changer la manière dont il est affecté par les transformations de rotation et de mise à l'échelle. Dans la barre d’outils **Mode de l’éditeur de modèle**, choisissez **Mode Pivot** pour activer (ou désactiver) le mode Pivot. Lorsque le mode Pivot est activé, un petit indicateur d'axe apparaît au niveau du point pivot de l'objet sélectionné. Vous pouvez alors utiliser les outils **Translation** et **Rotation** pour manipuler le point pivot.  
@@ -191,11 +191,11 @@ Ce document explique comment utiliser l'éditeur de modèle [!INCLUDE[vsprvs](..
   
 ##### <a name="to-subdivide-faces"></a>Pour subdiviser des faces  
   
-1.  En mode de sélection de face, sélectionnez les faces à subdiviser. Comme la subdivision crée de nouvelles données d'arêtes, la subdivision simultanée de toutes les faces fournit des résultats plus cohérents lorsque les faces sont adjacentes.  
+1. En mode de sélection de face, sélectionnez les faces à subdiviser. Comme la subdivision crée de nouvelles données d'arêtes, la subdivision simultanée de toutes les faces fournit des résultats plus cohérents lorsque les faces sont adjacentes.  
   
-2.  Dans la barre d’outils **Éditeur de modèle**, choisissez **Scripts**, **Outils**, **Subdiviser**.  
+2. Dans la barre d’outils **Éditeur de modèle**, choisissez **Scripts**, **Outils**, **Subdiviser**.  
   
- Vous pouvez également effectuer une triangulation sur des faces, fusionner des objets et convertir des sélections de polygones en objets nouveaux. La triangulation crée des arêtes supplémentaires de telle sorte qu'une face non triangulaire est convertie en un nombre optimal de triangles. Toutefois, aucun détail géométrique supplémentaire n'est fourni. La fusion associe les objets sélectionnés en un seul objet. De nouveaux objets peuvent être créés à partir d'une sélection de polygones.  
+   Vous pouvez également effectuer une triangulation sur des faces, fusionner des objets et convertir des sélections de polygones en objets nouveaux. La triangulation crée des arêtes supplémentaires de telle sorte qu'une face non triangulaire est convertie en un nombre optimal de triangles. Toutefois, aucun détail géométrique supplémentaire n'est fourni. La fusion associe les objets sélectionnés en un seul objet. De nouveaux objets peuvent être créés à partir d'une sélection de polygones.  
   
 ##### <a name="to-triangulate-a-face"></a>Pour effectuer une triangulation sur une face  
   
@@ -259,13 +259,13 @@ Ce document explique comment utiliser l'éditeur de modèle [!INCLUDE[vsprvs](..
   
 ##### <a name="to-create-a-hierarchy-of-sibling-objects"></a>Pour créer une hiérarchie d'objets frères  
   
-1.  En mode **Sélectionner**, sélectionnez deux objets ou plus. Un objet d'espace réservé est créé et devient leur objet parent.  
+1. En mode **Sélectionner**, sélectionnez deux objets ou plus. Un objet d'espace réservé est créé et devient leur objet parent.  
   
-2.  Dans la barre d’outils **Éditeur de modèle**, choisissez **Scripts**, **Gestion des scènes**, **Créer un groupe**.  
+2. Dans la barre d’outils **Éditeur de modèle**, choisissez **Scripts**, **Gestion des scènes**, **Créer un groupe**.  
   
- L'éditeur de modèle utilise une maquette blanche pour identifier le premier objet sélectionné, qui devient le parent. Les autres objets de la sélection ont une maquette bleue. Par défaut, les nœuds de l'espace réservé ne sont pas affichés. Pour afficher les nœuds d’espace réservé, dans la barre d’outils **Éditeur de modèle**, choisissez **Scripts**, **Gestion des scènes**, **Afficher les nœuds d’espace réservé**. Vous pouvez utiliser les nœuds de l'espace réservé de la même façon que les objets n'étant pas des espaces réservés.  
+   L'éditeur de modèle utilise une maquette blanche pour identifier le premier objet sélectionné, qui devient le parent. Les autres objets de la sélection ont une maquette bleue. Par défaut, les nœuds de l'espace réservé ne sont pas affichés. Pour afficher les nœuds d’espace réservé, dans la barre d’outils **Éditeur de modèle**, choisissez **Scripts**, **Gestion des scènes**, **Afficher les nœuds d’espace réservé**. Vous pouvez utiliser les nœuds de l'espace réservé de la même façon que les objets n'étant pas des espaces réservés.  
   
- Pour supprimer l’association parent-enfant entre deux objets, sélectionnez l’objet enfant puis, dans la barre d’outils **Éditeur de modèle**, choisissez **Scripts**, **Gestion des scènes**, **Détacher du parent**. Lorsque vous détachez le parent d'un objet enfant, l'objet enfant devient un objet racine dans la scène.  
+   Pour supprimer l’association parent-enfant entre deux objets, sélectionnez l’objet enfant puis, dans la barre d’outils **Éditeur de modèle**, choisissez **Scripts**, **Gestion des scènes**, **Détacher du parent**. Lorsque vous détachez le parent d'un objet enfant, l'objet enfant devient un objet racine dans la scène.  
   
 ## <a name="keyboard-shortcuts"></a>Raccourcis clavier  
   

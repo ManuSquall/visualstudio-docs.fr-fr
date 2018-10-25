@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d1709ea21fa785a573dae03ad8c89814c9952b50
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 586d7181c1a8eb3c94a8ad236d4ff40602378199
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118918"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869260"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Comment : définir le descripteur de type d’un paramètre
   Un descripteur de type contient des propriétés qui décrivent le type de données d'un paramètre. Un descripteur de type peut définir un champ, une entité ou une collection d’entités. Pour plus d’informations, consultez [TypeDescriptor](http://msdn.microsoft.com/library/ms543392%28v=office.12%29.aspx).  
@@ -84,43 +84,43 @@ ms.locfileid: "37118918"
   
 ### <a name="to-define-a-collection-of-entities"></a>Pour définir une collection d’entités  
   
-1.  Dans le **détails de méthode BDC** fenêtre, choisissez le descripteur de type du paramètre que vous souhaitez.  
+1. Dans le **détails de méthode BDC** fenêtre, choisissez le descripteur de type du paramètre que vous souhaitez.  
   
-2.  Dans la barre de menus, choisissez **vue**, **fenêtre Propriétés**.  
+2. Dans la barre de menus, choisissez **vue**, **fenêtre Propriétés**.  
   
-3.  Dans le **propriétés** fenêtre, définissez la **nom** propriété à un nom qui décrit l’entité (par exemple : **Contacts**).  
+3. Dans le **propriétés** fenêtre, définissez la **nom** propriété à un nom qui décrit l’entité (par exemple : **Contacts**).  
   
-4.  Définir le **IsCollection** propriété **True**. Cela indique que ce descripteur de type est une collection d’entités.  
+4. Définir le **IsCollection** propriété **True**. Cela indique que ce descripteur de type est une collection d’entités.  
   
-5.  Définir le **TypeName** en une chaîne qui contient une référence à la <xref:System.Collections.Generic.IEnumerable%601> interface et le nom qualifié complet du type qui représente l’entité. Ce type peut être une classe dans votre projet, un type défini dans un assembly que vous référencez dans votre solution ou un type défini dans le modèle d'objet BDC.  
+5. Définir le **TypeName** en une chaîne qui contient une référence à la <xref:System.Collections.Generic.IEnumerable%601> interface et le nom qualifié complet du type qui représente l’entité. Ce type peut être une classe dans votre projet, un type défini dans un assembly que vous référencez dans votre solution ou un type défini dans le modèle d'objet BDC.  
   
-    -   Pour une classe dans votre projet, choisissez la flèche bas à côté du **TypeName** propriété, choisissez le **projet actuel** onglet dans la boîte de dialogue qui s’affiche, puis choisissez la classe dans votre projet.  
+   - Pour une classe dans votre projet, choisissez la flèche bas à côté du **TypeName** propriété, choisissez le **projet actuel** onglet dans la boîte de dialogue qui s’affiche, puis choisissez la classe dans votre projet.  
   
-         Le nom qualifié complet inclut l'espace de noms et le nom de la classe, suivis du nom du système LOB.  
+      Le nom qualifié complet inclut l'espace de noms et le nom de la classe, suivis du nom du système LOB.  
   
-         L’exemple suivant définit la valeur de la **TypeName** propriété à une collection de classes dans votre projet.  
+      L’exemple suivant définit la valeur de la **TypeName** propriété à une collection de classes dans votre projet.  
   
-         `System.Collections.Generic.IEnumerable`1 [MyBDCNamespace.` ` BdcModel1.Contact, BdcModel1]'  
+      `System.Collections.Generic.IEnumerable`1 [MyBDCNamespace.` ` BdcModel1.Contact, BdcModel1]'  
   
-    -   Pour un type situé dans un assembly de votre solution, le nom qualifié complet comprend le nom du type, le nom de l'assembly, le numéro de version, la culture et le jeton de clé publique.  
+   - Pour un type situé dans un assembly de votre solution, le nom qualifié complet comprend le nom du type, le nom de l'assembly, le numéro de version, la culture et le jeton de clé publique.  
   
-         L’exemple suivant définit la valeur de la **TypeName** propriété à une collection de types dans un assembly que vous référencez dans votre solution.  
+      L’exemple suivant définit la valeur de la **TypeName** propriété à une collection de types dans un assembly que vous référencez dans votre solution.  
   
-         `System.Collections.Generic.IEnumerable`1 [MyNamespace.Contact, myAssemblyName, Version = 4.0.0.0, Culture = neutral, PublicKeyToken = b77a5c561934e089]'  
+      `System.Collections.Generic.IEnumerable`1 [MyNamespace.Contact, myAssemblyName, Version = 4.0.0.0, Culture = neutral, PublicKeyToken = b77a5c561934e089]'  
   
-    -   Pour un type défini dans le modèle d'objet BDC, le nom qualifié complet inclut uniquement l'espace de noms et le nom du type.  
+   - Pour un type défini dans le modèle d'objet BDC, le nom qualifié complet inclut uniquement l'espace de noms et le nom du type.  
   
-         L’exemple suivant définit la valeur de la **TypeName** propriété à une collection de types définis dans le modèle d’objet BDC.  
+      L’exemple suivant définit la valeur de la **TypeName** propriété à une collection de types définis dans le modèle d’objet BDC.  
   
-         `System.Collections.Generic.IEnumerable`1 [Microsoft.BusinessData.Runtime.DynamicType]'  
+      `System.Collections.Generic.IEnumerable`1 [Microsoft.BusinessData.Runtime.DynamicType]'  
   
-6.  Dans le **détails de méthode BDC** fenêtre, ouvrez la liste qui s’affiche pour le descripteur de type, puis choisissez **modifier**.  
+6. Dans le **détails de méthode BDC** fenêtre, ouvrez la liste qui s’affiche pour le descripteur de type, puis choisissez **modifier**.  
   
-     Le **Explorateur BDC** fenêtre s’ouvre.  
+    Le **Explorateur BDC** fenêtre s’ouvre.  
   
-7.  Dans le **Explorateur BDC**, ouvrez le menu contextuel du descripteur de type, puis choisissez **ajouter un descripteur de Type**.  
+7. Dans le **Explorateur BDC**, ouvrez le menu contextuel du descripteur de type, puis choisissez **ajouter un descripteur de Type**.  
   
-     Un nouveau descripteur de type est ajouté en tant qu’enfant au descripteur de type de collection. Configurez ce descripteur de type comme une entité.  
+    Un nouveau descripteur de type est ajouté en tant qu’enfant au descripteur de type de collection. Configurez ce descripteur de type comme une entité.  
   
 ## <a name="see-also"></a>Voir aussi
  [Vue d’ensemble des outils de conception de modèle BDC](../sharepoint/bdc-model-design-tools-overview.md)   

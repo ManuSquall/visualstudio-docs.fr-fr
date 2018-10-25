@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_function | Documents Microsoft
+title: IDiaSymbol::get_function | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de6d47e64a5f3b3d2db612f562f7de0e449747f1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ba2ceaa0ee7dcd3ef71afdda17d157737338920a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465640"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824235"
 ---
 # <a name="idiasymbolgetfunction"></a>IDiaSymbol::get_function
-Récupère un indicateur qui spécifie si le symbole public fait référence à une fonction.  
+Récupère un indicateur qui spécifie si les symboles publics fait référence à une fonction.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -42,7 +42,7 @@ HRESULT get_function (
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
   
 |Spécification|Description|  
 |-----------------|-----------------|  

@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d343139a23453af12555b4ffbec8e3de7e2a827
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d2b3aed9e2504011a61fe13acdf4a836cb41f8df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230873"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859666"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Utilisation des ensembles de règles pour spécifier les règles C++ à exécuter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,19 +32,19 @@ Dans [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] et [!INCLUDE[vsUltShor
   
 #### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Pour créer une règle personnalisée à partir d’un seul ensemble de règles existant  
   
-1.  Dans l’Explorateur de solutions, ouvrez le menu contextuel du projet, puis choisissez **propriétés**.  
+1. Dans l’Explorateur de solutions, ouvrez le menu contextuel du projet, puis choisissez **propriétés**.  
   
-2.  Sur le **propriétés** , choisir **analyse du Code**.  
+2. Sur le **propriétés** , choisir **analyse du Code**.  
   
-3.  Dans le **l’ensemble de règles** liste déroulante, effectuez l’une des opérations suivantes :  
+3. Dans le **l’ensemble de règles** liste déroulante, effectuez l’une des opérations suivantes :  
   
-    -   Choisissez l’ensemble de règles que vous souhaitez personnaliser.  
+   - Choisissez l’ensemble de règles que vous souhaitez personnaliser.  
   
      \- ou -  
   
-    -   Choisissez  **\<Parcourir... >** pour spécifier une règle existante définie qui n’est pas dans la liste.  
+   - Choisissez  **\<Parcourir... >** pour spécifier une règle existante définie qui n’est pas dans la liste.  
   
-4.  Choisissez **Open** pour afficher les règles dans l’éditeur d’ensemble de règles.  
+4. Choisissez **Open** pour afficher les règles dans l’éditeur d’ensemble de règles.  
   
 #### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Pour modifier une règle définie dans l’éditeur d’ensemble de règles  
   

@@ -13,23 +13,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36ec73ef7b414519f0939c47c167f0e89c1e0941
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 848778506bdea1b7bf61b6a94a1fb14908a7b930
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638949"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908913"
 ---
 # <a name="how-to-provide-context-for-editors"></a>Comment : fournir un contexte pour les éditeurs
 Pour un éditeur, le contexte est actif uniquement lorsque l’éditeur a le focus ou qu’il avait le focus immédiatement avant le focus a été déplacé vers une fenêtre outil. Vous pouvez fournir le contexte pour un éditeur en effectuant les tâches suivantes :  
   
-1.  Créer un conteneur de contexte.  
+1. Créer un conteneur de contexte.  
   
-2.  Publier le conteneur de contexte à l’identificateur de l’élément de sélection (SEID).  
+2. Publier le conteneur de contexte à l’identificateur de l’élément de sélection (SEID).  
   
-3.  Conserver le contexte dans le conteneur.  
+3. Conserver le contexte dans le conteneur.  
   
- Ces tâches sont couverts par les procédures suivantes. Pour plus d’informations sur la fourniture de contexte, consultez **programmation robuste** plus loin dans cet article.  
+   Ces tâches sont couverts par les procédures suivantes. Pour plus d’informations sur la fourniture de contexte, consultez **programmation robuste** plus loin dans cet article.  
   
 ## <a name="to-create-a-context-bag-for-an-editor-or-a-designer"></a>Pour créer un conteneur de contexte pour un éditeur ou un concepteur  
   

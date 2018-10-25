@@ -1,5 +1,5 @@
 ---
-title: BP_TYPE | Documents Microsoft
+title: BP_TYPE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 823b2b4bd53aabfdbcc887fe8ce4e1bf1bf858d7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c525b30a290a1a0c5f732f65967acb50219c9647
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099224"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905158"
 ---
 # <a name="bptype"></a>BP_TYPE
-Spécifie si le point d’arrêt à un emplacement de code, est un emplacement de données ou un autre type de point d’arrêt.  
+Spécifie si le point d’arrêt se trouve à un emplacement de code, est un emplacement de données ou un autre type de point d’arrêt.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -51,18 +51,18 @@ public enum enum_BP_TYPE {
  Ne spécifie aucun type de point d’arrêt.  
   
  BPT_CODE  
- Spécifie un point d’arrêt de code.  
+ Spécifie un point d’arrêt du code.  
   
  BPT_DATA  
- Spécifie un point d’arrêt.  
+ Spécifie un point d’arrêt de données.  
   
  BPT_SPECIAL  
- Spécifie un point d’arrêt qui n’est ni un code ni un type de données. Ce type est déconseillé et ne doit pas être utilisé.  
+ Spécifie un point d’arrêt qui n’est ni un code, ni un type de données. Ce type est déconseillé et ne doit pas être utilisé.  
   
 ## <a name="remarks"></a>Notes  
  Passé en tant que paramètre à la [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) et [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) méthodes.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

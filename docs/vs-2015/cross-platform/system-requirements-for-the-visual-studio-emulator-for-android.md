@@ -13,12 +13,12 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 819f64b9d526cc307f0f9fbd0a35db5d4e7bd1ab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a566a6aa73ef9b1e3729248b14b0f3879f21d21c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176564"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898772"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,76 +50,76 @@ L’émulateur Visual Studio pour Android s’exécute en tant que machine virtu
   
  Configuration requise  
   
--   Prise en charge d’Hyper-V (voir la configuration requise pour Hyper-V ci-dessous)  
+- Prise en charge d’Hyper-V (voir la configuration requise pour Hyper-V ci-dessous)  
   
--   6 Go de RAM ou plus.  
+- 6 Go de RAM ou plus.  
   
--   Version 64 bits de l’édition professionnelle de Windows 8, Windows 8.1, Windows 10 ou version ultérieure  
+- Version 64 bits de l’édition professionnelle de Windows 8, Windows 8.1, Windows 10 ou version ultérieure  
   
--   Processeur qui prend en charge SSSE3 ou version ultérieure.  
+- Processeur qui prend en charge SSSE3 ou version ultérieure.  
   
- Configuration réseau requise  
+  Configuration réseau requise  
   
--   DHCP  
+- DHCP  
   
--   Paramètres DNS et de passerelle configurés automatiquement  
+- Paramètres DNS et de passerelle configurés automatiquement  
   
- Configuration requise pour Hyper-V  
+  Configuration requise pour Hyper-V  
   
--   Dans le BIOS, les fonctionnalités suivantes doivent être prises en charge :  
+- Dans le BIOS, les fonctionnalités suivantes doivent être prises en charge :  
   
-    -   Assistance matérielle à la virtualisation   
+  -   Assistance matérielle à la virtualisation   
   
-    -   Traduction d’adresse de second niveau (SLAT)  
+  -   Traduction d’adresse de second niveau (SLAT)  
   
-    -   Prévention de l’exécution des données (DEP) matérielle  
+  -   Prévention de l’exécution des données (DEP) matérielle  
   
--   Dans Windows, Hyper-V doit être activé et en cours d’exécution.  
+- Dans Windows, Hyper-V doit être activé et en cours d’exécution.  
   
--   Vous devez être membre du groupe local Administrateurs Hyper-V.  
+- Vous devez être membre du groupe local Administrateurs Hyper-V.  
   
 ##  <a name="System"></a> Configuration requise  
  Votre ordinateur doit remplir les conditions suivantes :  
   
--   Prise en charge Hyper-V (consultez [Configuration requise pour Hyper-V](#HyperV))  
+- Prise en charge Hyper-V (consultez [Configuration requise pour Hyper-V](#HyperV))  
   
--   6 Go de RAM ou plus.  
+- 6 Go de RAM ou plus.  
   
--   Version 64 bits de Windows 8 Professionnel, Windows 8.1 Professionnel, Windows 10 Professionnel ou version ultérieure  
+- Version 64 bits de Windows 8 Professionnel, Windows 8.1 Professionnel, Windows 10 Professionnel ou version ultérieure  
   
- Pour vérifier la configuration requise pour la RAM et Windows, dans le Panneau de configuration, choisissez Système et sécurité, puis Système.  
+  Pour vérifier la configuration requise pour la RAM et Windows, dans le Panneau de configuration, choisissez Système et sécurité, puis Système.  
   
- ![Vérifier la configuration requise](../cross-platform/media/android-emu-system-requirements.png "Android_Emu_System_Requirements")  
+  ![Vérifier la configuration requise](../cross-platform/media/android-emu-system-requirements.png "Android_Emu_System_Requirements")  
   
 ##  <a name="Network"></a> Configuration réseau requise  
  Votre réseau doit remplir les conditions suivantes :  
   
--   DHCP  
+- DHCP  
   
-     L’émulateur nécessite le protocole DHCP, car il se configure lui-même comme périphérique distinct sur le réseau avec sa propre adresse IP.  
+   L’émulateur nécessite le protocole DHCP, car il se configure lui-même comme périphérique distinct sur le réseau avec sa propre adresse IP.  
   
--   Paramètres DNS et de passerelle configurés automatiquement  
+- Paramètres DNS et de passerelle configurés automatiquement  
   
-     Vous ne pouvez pas configurer les paramètres DNS et de passerelle manuellement pour l’émulateur.  
+   Vous ne pouvez pas configurer les paramètres DNS et de passerelle manuellement pour l’émulateur.  
   
- Pour résoudre les problèmes de mise en réseau dans l’émulateur, consultez les rubriques suivantes :  
+  Pour résoudre les problèmes de mise en réseau dans l’émulateur, consultez les rubriques suivantes :  
   
--   [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)  
+- [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)  
   
 ##  <a name="HyperV"></a> Configuration requise pour Hyper-V  
  Configuration requise pour Hyper-V dans le BIOS  
   
  Le BIOS de votre ordinateur doit prendre en charge les spécifications suivantes et elles doivent être activées :  
   
--   Assistance matérielle à la virtualisation  
+- Assistance matérielle à la virtualisation  
   
--   Traduction d’adresse de second niveau (SLAT)  
+- Traduction d’adresse de second niveau (SLAT)  
   
--   Prévention de l’exécution des données (DEP) matérielle  
+- Prévention de l’exécution des données (DEP) matérielle  
   
- Configuration requise pour Hyper-V dans Windows  
+  Configuration requise pour Hyper-V dans Windows  
   
- Quand les paramètres du BIOS et de votre ordinateur sont déjà configurés pour prendre en charge Hyper-V, le programme d’installation active et démarre Hyper-V. Dans le cas contraire, vous devrez peut-être activer manuellement ces composants requis.  
+  Quand les paramètres du BIOS et de votre ordinateur sont déjà configurés pour prendre en charge Hyper-V, le programme d’installation active et démarre Hyper-V. Dans le cas contraire, vous devrez peut-être activer manuellement ces composants requis.  
   
 |Spécification|Comment vérifier et activer cette spécification|  
 |-----------------|----------------------------------------------|  
@@ -147,15 +147,15 @@ L’émulateur Visual Studio pour Android s’exécute en tant que machine virtu
 ##  <a name="Files"></a> Hyper-V nécessite des fichiers non compressés et non chiffrés  
  Sur un disque dur configuré avec le système de fichiers NTFS, les fichiers de disque dur virtuel utilisés par Hyper-V doivent être non compressés et non chiffrés. Assurez-vous que les répertoires suivants ne sont pas compressés ou chiffrés :  
   
--   %localappdata%\Microsoft\XDE  
+- %localappdata%\Microsoft\XDE  
   
--   C:\Program Files (x86)\Microsoft Emulator Manager  
+- C:\Program Files (x86)\Microsoft Emulator Manager  
   
--   C:\Program Files (x86)\Microsoft Visual Studio Emulator for Android  
+- C:\Program Files (x86)\Microsoft Visual Studio Emulator for Android  
   
--   %localappdata%\Microsoft\VisualStudioEmulator  
+- %localappdata%\Microsoft\VisualStudioEmulator  
   
- Sur le système de fichiers ReFS, les fichiers de disque dur virtuel ne doivent pas avoir le bit d’intégrité défini.  
+  Sur le système de fichiers ReFS, les fichiers de disque dur virtuel ne doivent pas avoir le bit d’intégrité défini.  
   
 ## <a name="hardware-graphics-forwarding-opengl-es-support-requirements"></a>Configuration requise relative au transfert graphique matériel (prise en charge d’OpenGL ES)  
  Pour que l’émulateur émule les appels au GPU, tels que ceux utilisés par OpenGL ES, votre ordinateur doit avoir un GPU compatible DirectX avec les pilotes DirectX appropriés installés.  

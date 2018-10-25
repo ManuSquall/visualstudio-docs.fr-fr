@@ -15,25 +15,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 10c21ef1ced2e5237ac0cf940d7561d39e863d4f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 675831a8e094728a142bebf0432838030ae8791d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673253"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883475"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Modifications requises pour exécuter les projets Office que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5
   Si le framework cible d’un projet Office est remplacé par la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure à partir d’une version antérieure du .NET Framework, vous devez effectuer les tâches suivantes pour vous assurer que la solution puisse s’exécuter sur l’ordinateur de développement et sur les ordinateurs des utilisateurs finaux :  
   
--   Supprimez l'élément <xref:System.Security.SecurityTransparentAttribute> du projet si vous avez effectué une mise à niveau à partir de Visual Studio 2008.  
+- Supprimez l'élément <xref:System.Security.SecurityTransparentAttribute> du projet si vous avez effectué une mise à niveau à partir de Visual Studio 2008.  
   
--   Effectuer un **Clean** commande dans Visual Studio pour être en mesure d’exécuter ou déboguer le projet sur l’ordinateur de développement.  
+- Effectuer un **Clean** commande dans Visual Studio pour être en mesure d’exécuter ou déboguer le projet sur l’ordinateur de développement.  
   
--   Mettez à jour le composant requis .NET Framework du projet.  
+- Mettez à jour le composant requis .NET Framework du projet.  
   
--   Les utilisateurs finaux doivent également réinstaller la solution si vous l'avez précédemment déployée à l'aide de ClickOnce avant d'avoir changé la version cible de .NET Framework.  
+- Les utilisateurs finaux doivent également réinstaller la solution si vous l'avez précédemment déployée à l'aide de ClickOnce avant d'avoir changé la version cible de .NET Framework.  
   
- Pour plus d’informations sur chacune de ces tâches, consultez les sections correspondantes ci-dessous.  
+  Pour plus d’informations sur chacune de ces tâches, consultez les sections correspondantes ci-dessous.  
   
 ## <a name="remove-the-securitytransparent-attribute-from-projects-that-you-upgrade-from-visual-studio-2008"></a>Supprimer l’attribut SecurityTransparent des projets que vous mettez à niveau à partir de Visual Studio 2008  
  Si vous mettez à niveau un projet Office à partir de Visual Studio 2008 et que la version cible de .Net Framework du projet est ensuite remplacée par [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, vous devez supprimer <xref:System.Security.SecurityTransparentAttribute> du projet. Visual Studio ne supprime pas automatiquement cet attribut. Si vous ne supprimez pas cet attribut, un message d'erreur s'affiche lorsque vous compilez le projet.  
@@ -49,7 +49,7 @@ ms.locfileid: "35673253"
     > [!NOTE]  
     >  Dans les projets Visual Basic, vous devez cliquer sur le bouton **Afficher tous les fichiers** de l' **Explorateur de solutions** pour afficher le fichier de code AssemblyInfo.  
   
-3.  Localisez l'élément <xref:System.Security.SecurityTransparentAttribute>, puis supprimez-le du fichier ou commentez-le.  
+3.  Recherchez le <xref:System.Security.SecurityTransparentAttribute> et supprimez-le du fichier ou commentez-le.  
   
     ```vb  
     <Assembly: SecurityTransparent()>  

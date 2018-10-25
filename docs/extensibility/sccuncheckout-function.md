@@ -1,5 +1,5 @@
 ---
-title: Fonction de SccUncheckout | Documents Microsoft
+title: Fonction SccUncheckout | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c363da795e588963c234af05a856f3352a7b2815
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 79afce90f462f97d7a33a64875c4784a030f845e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137338"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905920"
 ---
-# <a name="sccuncheckout-function"></a>SccUncheckout (fonction)
+# <a name="sccuncheckout-function"></a>Fonction SccUncheckout
 Cette fonction annule une opération d’extraction précédente, restaurant ainsi le contenu de l’ou les fichiers sélectionnés à l’état précédant l’extraction. Toutes les modifications apportées au fichier depuis l’extraction sont perdues.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -40,39 +40,39 @@ SCCRTN SccUncheckout (
   
 #### <a name="parameters"></a>Paramètres  
  pvContext  
- [in] La structure de contexte plug-in de contrôle de code source.  
+ [in] La structure de contexte de plug-in de contrôle de source.  
   
  hWnd  
- [in] Handle vers la fenêtre de l’IDE que le plug-in de contrôle de code source peut utiliser en tant que parent pour toutes les boîtes de dialogue qu’il fournit.  
+ [in] Handle vers la fenêtre de l’IDE que le plug-in de contrôle de code source peut utiliser en tant que parent pour les boîtes de dialogue qu’il fournit.  
   
  nFiles  
  [in] Nombre de fichiers spécifiés dans le `lpFileNames` tableau.  
   
  lpFileNames  
- [in] Tableau des noms de chemin qualifié complet de fichiers pour lequel annuler une extraction.  
+ [in] Tableau des noms de chemin d’accès local complet des fichiers pour lequel annuler une extraction.  
   
- fOptions  
+ Options  
  [in] Indicateurs de commande (non utilisés).  
   
  pvOptions  
- [in] Options spécifiques au plug-in du contrôle source.  
+ [in] Options spécifiques au plug-in de contrôle source.  
   
 ## <a name="return-value"></a>Valeur de retour  
  L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
   
 |Value|Description|  
 |-----------|-----------------|  
-|SCC_OK|Annuler l’extraction a réussi.|  
+|SCC_OK|Annulation de l’extraction a réussi.|  
 |SCC_E_FILENOTCONTROLLED|Le fichier sélectionné n’est pas sous contrôle de code source.|  
 |SCC_E_ACCESSFAILURE|Impossible d’accéder au système de contrôle source, probablement en raison de problèmes réseau ou de contention. Une nouvelle tentative est recommandée.|  
-|SCC_E_NONSPECIFICERROR|Erreur non spécifique. Annuler l’extraction n’a pas réussi.|  
+|SCC_E_NONSPECIFICERROR|Erreur non spécifique. Annuler extraction n’a pas réussi.|  
 |SCC_E_NOTCHECKEDOUT|L’utilisateur n’a pas extrait le fichier.|  
 |SCC_E_NOTAUTHORIZED|L’utilisateur n’est pas autorisé à effectuer cette opération.|  
 |SCC_E_PROJNOTOPEN|Le projet n’a pas été ouvert à partir du contrôle de code source.|  
 |SCC_I_OPERATIONCANCELED|L’opération a été annulée avant la fin.|  
   
 ## <a name="remarks"></a>Notes  
- Après cette opération, le `SCC_STATUS_CHECKEDOUT` et `SCC_STATUS_MODIFIED` indicateurs seront désactivées pour les fichiers sur lequel l’extraction a été effectuée.  
+ Après cette opération, le `SCC_STATUS_CHECKEDOUT` et `SCC_STATUS_MODIFIED` indicateurs seront désactivées pour les fichiers sur lequel l’annulation de l’extraction a été effectuée.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions d’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)

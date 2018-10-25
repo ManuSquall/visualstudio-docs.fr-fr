@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e55a214d2b35e26dcc1a3b381f74a7ccd021c864
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3608399613063a0fa572fe4de12b77187f8b4b41
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672764"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811501"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Comment : redimensionner les contrôles ListObject
   Vous définissez la taille d’un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> lorsque vous l’ajoutez à un classeur Microsoft Office Excel. Toutefois, vous souhaiterez peut-être le redimensionner ultérieurement. Par exemple, vous pourriez modifier une liste à deux colonnes en liste à trois colonnes.  
@@ -32,15 +32,15 @@ ms.locfileid: "35672764"
   
  Cette rubrique décrit les tâches suivantes :  
   
--   [Redimensionner les contrôles ListObject au moment du design](#designtime)  
+- [Redimensionner les contrôles ListObject au moment du design](#designtime)  
   
--   [Redimensionner les contrôles ListObject au moment de l’exécution dans un projet au niveau du document](#runtimedoclevel)  
+- [Redimensionner les contrôles ListObject au moment de l’exécution dans un projet au niveau du document](#runtimedoclevel)  
   
--   [Redimensionner les contrôles ListObject au moment de l’exécution dans un projet de complément VSTO](#runtimeaddin)  
+- [Redimensionner les contrôles ListObject au moment de l’exécution dans un projet de complément VSTO](#runtimeaddin)  
   
- Pour plus d’informations sur <xref:Microsoft.Office.Tools.Excel.ListObject> contrôles, consultez [contrôle ListObject](../vsto/listobject-control.md).  
+  Pour plus d’informations sur <xref:Microsoft.Office.Tools.Excel.ListObject> contrôles, consultez [contrôle ListObject](../vsto/listobject-control.md).  
   
- ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [How do i : ajouter des colonnes à un objet de liste lié aux données lors de l’exécution ?](http://go.microsoft.com/fwlink/?LinkID=130318).  
+  ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [How do i : ajouter des colonnes à un objet de liste lié aux données lors de l’exécution ?](http://go.microsoft.com/fwlink/?LinkID=130318).  
   
 ##  <a name="designtime"></a> Redimensionner un contrôle ListObject au moment du design  
  Pour redimensionner une liste, vous pouvez cliquer sur l’une des poignées de redimensionnement et la faire glisser, ou vous pouvez redéfinir sa taille dans la boîte de dialogue **Redimensionner la liste** .  

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_virtualBasePointerOffset | Documents Microsoft
+title: IDiaSymbol::get_virtualBasePointerOffset | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 918855f7b602d9aeaf08389805a2c05eea9a7c3d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 17fda4a74c1497d48baea1d9e1a817b4b12cf344
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470086"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898945"
 ---
 # <a name="idiasymbolgetvirtualbasepointeroffset"></a>IDiaSymbol::get_virtualBasePointerOffset
-Récupère le décalage du pointeur de base virtuels.  
+Récupère le décalage du pointeur de base virtuel.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,7 +34,7 @@ HRESULT get_virtualBasePointerOffset (
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne le décalage du pointeur de base virtuels.  
+ [out] Retourne l’offset du pointeur de base virtuel.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  

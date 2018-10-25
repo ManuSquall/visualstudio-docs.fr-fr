@@ -20,15 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 58b1d329447ab73f9df93d2f75a62c2e21a6dcfc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3229b8432af89857d1aadd8bf1531c8b11a29ed7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204722"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897990"
 ---
 # <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700 : Ne nommez pas les valeurs enum &#39;réservé&#39;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotNameEnumValuesReserved|
@@ -46,11 +47,11 @@ ms.locfileid: "49204722"
 
  Un nombre limité de cas de l’ajout d’un membre est une modification avec rupture, même si les membres d’origine conservent leurs valeurs d’origine. Principalement, le nouveau membre ne peut pas être retourné à partir de chemins de code existant sans arrêter les appelants qui utilisent une `switch` (`Select` dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) instruction sur la valeur de retour qui comprend la liste intégrale des membres et qui lève une exception dans le cas par défaut. Un problème secondaire est que le code client peut ne pas gérer le changement de comportement à partir de méthodes de réflexion comme <xref:System.Enum.IsDefined%2A?displayProperty=fullName>. En conséquence, si le nouveau membre doit être retourné à partir de méthodes existantes ou si une incompatibilité d’application connue se produit en raison de l’utilisation médiocre de la réflexion, la seule solution sans rupture consiste à :
 
-1.  Ajouter une nouvelle énumération qui contient les membres d’origine et nouvelles.
+1. Ajouter une nouvelle énumération qui contient les membres d’origine et nouvelles.
 
-2.  Marquez l’énumération d’origine avec le <xref:System.ObsoleteAttribute?displayProperty=fullName> attribut.
+2. Marquez l’énumération d’origine avec le <xref:System.ObsoleteAttribute?displayProperty=fullName> attribut.
 
- Suivez la même procédure pour les types visibles de l’extérieur ou les membres qui exposent l’énumération d’origine.
+   Suivez la même procédure pour les types visibles de l’extérieur ou les membres qui exposent l’énumération d’origine.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, supprimez ou renommez le membre.

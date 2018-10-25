@@ -1,5 +1,5 @@
 ---
-title: UNMANAGED_ADDRESS_THIS_RELATIVE | Documents Microsoft
+title: UNMANAGED_ADDRESS_THIS_RELATIVE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0a488c06f009636f7905000529ac7803fb0d6de
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: aa92fb62ba60d1ea1e8907ae66a1353d593d1ab0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127081"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813399"
 ---
 # <a name="unmanagedaddressthisrelative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
-Cette structure représente une adresse qui est relatif à un `this` pointeur (`Me` en Visual Basic).  
+Cette structure représente une adresse qui est relative à un `this` pointeur (`Me` en Visual Basic).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,18 +45,18 @@ public struct UNMANAGED_THIS_RELATIVE {
   
 ## <a name="terms"></a>Termes  
  dwOffset  
- Décalage à partir d’une position de base (par exemple, le début d’une classe de vtable) d’octets.  
+ Décalage d’octet d’une position de base (par exemple, le début d’un vtable de la classe).  
   
  dwBitOffset  
- Décalage de bits d’une position de base (toujours 0, sauf si vous faites référence à un champ de bits).  
+ Décalage de bits à partir d’une position de base (toujours 0, sauf si la référence à un champ de bits).  
   
  dwBitLength  
- Nombre de bits qui représente l’adresse (toujours 0, sauf si vous faites référence à un champ de bits).  
+ Nombre de bits qui représente l’adresse (toujours 0, sauf si la référence à un champ de bits).  
   
 ## <a name="remarks"></a>Notes  
- Cette structure est la partie de l’union dans la [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) lors de la structure la `dwKind` champ le `DEBUG_ADDRESS_UNION` structure est définie sur `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` (une valeur à partir de la [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) énumération).  
+ Cette structure fait partie de l’union dans le [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) structure lorsque le `dwKind` champ la `DEBUG_ADDRESS_UNION` structure est définie sur `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` (une valeur comprise entre le [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) énumération).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : sh.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

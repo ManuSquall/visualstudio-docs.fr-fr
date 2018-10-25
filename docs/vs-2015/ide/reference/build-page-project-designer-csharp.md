@@ -19,12 +19,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b762345c9f5c81e6244e16b2ee249f29283cc589
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a377db0ac82b672d053e59c621714945fa9b515c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280616"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837178"
 ---
 # <a name="build-page-project-designer-c"></a>Générer, page du Concepteur de projets (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,17 +72,17 @@ Utilisez la page **Générer** du **Concepteur de projet** pour spécifier les p
   
  Cette case à cocher est disponible uniquement si toutes les conditions suivantes ont remplies :  
   
--   Dans la **page Générer**, la liste **Plateforme cible** a la valeur **Any CPU**.  
+- Dans la **page Générer**, la liste **Plateforme cible** a la valeur **Any CPU**.  
   
--   Dans la **page Application**, la liste **Type de sortie** spécifie que le projet est une application.  
+- Dans la **page Application**, la liste **Type de sortie** spécifie que le projet est une application.  
   
--   Dans la **page Application**, la liste **Framework cible** spécifie .NET Framework 4.5.  
+- Dans la **page Application**, la liste **Framework cible** spécifie .NET Framework 4.5.  
   
- **Autoriser les blocs de code unsafe**  
- Autorise la compilation du code utilisant le mot clé [unsafe](http://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0). Pour plus d’informations, consultez [/unsafe (options du compilateur C#)](http://msdn.microsoft.com/library/fdb77ed9-da03-45bd-bb7f-250704da1bcc).  
+  **Autoriser les blocs de code unsafe**  
+  Autorise la compilation du code utilisant le mot clé [unsafe](http://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0). Pour plus d’informations, consultez [/unsafe (options du compilateur C#)](http://msdn.microsoft.com/library/fdb77ed9-da03-45bd-bb7f-250704da1bcc).  
   
- **Optimiser le code**  
- Active ou désactive les optimisations effectuées par le compilateur pour réduire la taille de votre fichier de sortie, et le rendre plus rapide et plus efficace. Pour plus d’informations, consultez [/optimize (options du compilateur C#)](http://msdn.microsoft.com/library/6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0).  
+  **Optimiser le code**  
+  Active ou désactive les optimisations effectuées par le compilateur pour réduire la taille de votre fichier de sortie, et le rendre plus rapide et plus efficace. Pour plus d’informations, consultez [/optimize (options du compilateur C#)](http://msdn.microsoft.com/library/6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0).  
   
 ## <a name="errors-and-warnings"></a>Erreurs et avertissements  
  Les paramètres suivants sont utilisés pour configurer les options d’erreur et d’avertissement du processus de génération.  

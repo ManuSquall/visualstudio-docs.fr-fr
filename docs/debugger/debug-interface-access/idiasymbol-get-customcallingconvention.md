@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_customCallingConvention | Documents Microsoft
+title: IDiaSymbol::get_customCallingConvention | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db3d72e8561250ee49a19eec0974db0eeeba5660
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 65475255af9607462bee4a76a58319481f42e56a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464938"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903099"
 ---
 # <a name="idiasymbolgetcustomcallingconvention"></a>IDiaSymbol::get_customCallingConvention
 Récupère un indicateur qui spécifie si la fonction a une convention d’appel personnalisée.  
@@ -42,7 +42,7 @@ HRESULT get_customCallingConvention(
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
   
 |Spécification|Description|  
 |-----------------|-----------------|  
