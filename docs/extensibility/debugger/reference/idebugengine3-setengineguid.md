@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine3::SetEngineGuid | Documents Microsoft
+title: IDebugEngine3::SetEngineGuid | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 873ecc477d0a264c6e1904a340b0cd7f23c8cd3c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e11d0b0fa37e8f5af686b569f514b80da6179396
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110401"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927617"
 ---
 # <a name="idebugengine3setengineguid"></a>IDebugEngine3::SetEngineGuid
-Cette méthode définit le moteur de débogage (Allemagne) `GUID`.  
+Cette méthode définit le moteur de débogage (dé) `GUID`.  
   
 ## <a name="syntax"></a>Syntaxe  
   

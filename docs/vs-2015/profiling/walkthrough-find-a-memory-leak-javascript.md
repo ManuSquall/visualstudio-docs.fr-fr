@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7feaa8629078be9e5e7a915fe3c09a9599a8f292
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 17bb1aaaae10c5c23968634ae06773909c27ffcb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234193"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929567"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Procédure pas à pas : rechercher une fuite de mémoire (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,44 +139,44 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 ### <a name="analyzing-the-memory-usage"></a>Analyse de l'utilisation de la mémoire  
   
-1.  Dans la barre d'outils **Déboguer** , dans la liste **Démarrer le débogage** , choisissez la cible de débogage pour le projet mis à jour : l'un des émulateurs Windows Phone ou **Simulateur**.  
+1. Dans la barre d'outils **Déboguer** , dans la liste **Démarrer le débogage** , choisissez la cible de débogage pour le projet mis à jour : l'un des émulateurs Windows Phone ou **Simulateur**.  
   
-    > [!TIP]
-    >  Pour une application du Windows Store, vous pouvez également sélectionner **Ordinateur local** ou **Ordinateur distant** dans cette liste. Toutefois, l'avantage d'utiliser l'émulateur ou le simulateur est que vous pouvez le placer en regard de Visual Studio et basculer facilement entre l'application en cours d'exécution et l'analyseur de mémoire JavaScript. Pour plus d’informations, consultez [Exécuter des applications à partir de Visual Studio](../debugger/run-store-apps-from-visual-studio.md) et [Exécuter des applications du Windows Store sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+   > [!TIP]
+   >  Pour une application du Windows Store, vous pouvez également sélectionner **Ordinateur local** ou **Ordinateur distant** dans cette liste. Toutefois, l'avantage d'utiliser l'émulateur ou le simulateur est que vous pouvez le placer en regard de Visual Studio et basculer facilement entre l'application en cours d'exécution et l'analyseur de mémoire JavaScript. Pour plus d’informations, consultez [Exécuter des applications à partir de Visual Studio](../debugger/run-store-apps-from-visual-studio.md) et [Exécuter des applications du Windows Store sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
-2.  Dans le menu **Déboguer** , choisissez **Profileur de performances**.  
+2. Dans le menu **Déboguer** , choisissez **Profileur de performances**.  
   
-3.  Dans **Outils disponibles**, choisissez **Mémoire JavaScript**, puis **Démarrer**.  
+3. Dans **Outils disponibles**, choisissez **Mémoire JavaScript**, puis **Démarrer**.  
   
-     Dans ce didacticiel, vous allez attacher l'analyseur de mémoire au projet de démarrage. Pour plus d'informations sur les autres options, par exemple celle qui permet d'attacher l'analyseur de mémoire à une application installée, consultez [Mémoire JavaScript](../profiling/javascript-memory.md).  
+    Dans ce didacticiel, vous allez attacher l'analyseur de mémoire au projet de démarrage. Pour plus d'informations sur les autres options, par exemple celle qui permet d'attacher l'analyseur de mémoire à une application installée, consultez [Mémoire JavaScript](../profiling/javascript-memory.md).  
   
-     Lorsque vous démarrez l'analyseur de mémoire, un message de contrôle de compte d'utilisateur peut demander votre autorisation pour exécuter VsEtwCollector.exe. Cliquez sur **Oui**.  
+    Lorsque vous démarrez l'analyseur de mémoire, un message de contrôle de compte d'utilisateur peut demander votre autorisation pour exécuter VsEtwCollector.exe. Cliquez sur **Oui**.  
   
-4.  Sélectionnez successivement le bouton **Fuite de mémoire** à quatre reprises.  
+4. Sélectionnez successivement le bouton **Fuite de mémoire** à quatre reprises.  
   
-     Lorsque vous sélectionnez le bouton, le code de gestion des événements dans default.js fonctionne, une fuite de mémoire se produit. Vous utiliserez cela à des fins de diagnostic.  
+    Lorsque vous sélectionnez le bouton, le code de gestion des événements dans default.js fonctionne, une fuite de mémoire se produit. Vous utiliserez cela à des fins de diagnostic.  
   
-    > [!TIP]
-    >  Renouveler le scénario à tester pour une fuite de mémoire facilite l'exclusion d'informations sans intérêt, comme les objets ajoutés au tas au cours de l'initialisation de l'application ou lors du chargement d'une page.  
+   > [!TIP]
+   >  Renouveler le scénario à tester pour une fuite de mémoire facilite l'exclusion d'informations sans intérêt, comme les objets ajoutés au tas au cours de l'initialisation de l'application ou lors du chargement d'une page.  
   
-5.  À partir de l'application en cours d'exécution, basculez vers Visual Studio (Alt+Tab).  
+5. À partir de l'application en cours d'exécution, basculez vers Visual Studio (Alt+Tab).  
   
-     L'analyseur de mémoire JavaScript affiche des informations dans un nouvel onglet de Visual Studio.  
+    L'analyseur de mémoire JavaScript affiche des informations dans un nouvel onglet de Visual Studio.  
   
-     Le graphique de mémoire dans ce mode Résumé illustre l'utilisation de la mémoire de processus au fil du temps. La vue fournit également des commandes telles que **Prendre un instantané du tas**. Un instantané fournit des informations détaillées sur l'utilisation de la mémoire à un moment donné. Pour plus d'informations, consultez [Mémoire JavaScript](../profiling/javascript-memory.md).  
+    Le graphique de mémoire dans ce mode Résumé illustre l'utilisation de la mémoire de processus au fil du temps. La vue fournit également des commandes telles que **Prendre un instantané du tas**. Un instantané fournit des informations détaillées sur l'utilisation de la mémoire à un moment donné. Pour plus d'informations, consultez [Mémoire JavaScript](../profiling/javascript-memory.md).  
   
-6.  Sélectionnez **Prendre un instantané du tas**.  
+6. Sélectionnez **Prendre un instantané du tas**.  
   
-7.  Basculez vers l'application et choisissez **Fuite de mémoire**.  
+7. Basculez vers l'application et choisissez **Fuite de mémoire**.  
   
-8.  Basculez vers Visual Studio et sélectionnez à nouveau **Prendre un instantané du tas** .  
+8. Basculez vers Visual Studio et sélectionnez à nouveau **Prendre un instantané du tas** .  
   
-     Cette illustration montre l'instantané de référence (n°1) et l'instantané n°2.  
+    Cette illustration montre l'instantané de référence (n°1) et l'instantané n°2.  
   
-     ![L’instantané de ligne de base et instantané 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
+    ![L’instantané de ligne de base et instantané 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
   
-    > [!NOTE]
-    >  Le Windows Phone Emulator n'affiche pas de capture d'écran de l'application au moment de la prise de l'instantané.  
+   > [!NOTE]
+   >  Le Windows Phone Emulator n'affiche pas de capture d'écran de l'application au moment de la prise de l'instantané.  
   
 9. Basculez vers l'application et choisissez à nouveau le bouton **Fuite de mémoire** .  
   
@@ -193,18 +193,18 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 12. Dans Visual Studio, comparez les instantanés. L'instantané n° 2 affiche les informations suivantes :  
   
-    -   La taille du tas (indiqué par la flèche Haut rouge à gauche) a augmenté de plusieurs Ko par rapport à l'instantané n°1.  
+    - La taille du tas (indiqué par la flèche Haut rouge à gauche) a augmenté de plusieurs Ko par rapport à l'instantané n°1.  
   
-        > [!IMPORTANT]
-        >  Les valeurs exactes d'utilisation de la mémoire pour la taille du tas dépendent de la cible de débogage.  
+      > [!IMPORTANT]
+      >  Les valeurs exactes d'utilisation de la mémoire pour la taille du tas dépendent de la cible de débogage.  
   
-    -   Le nombre d'objets sur le tas (indiqué par la flèche Haut rouge à droite) a augmenté par rapport à l'instantané n°1. Un objet a été ajouté (+1) et aucun objet n'a été supprimé (-0).  
+    - Le nombre d'objets sur le tas (indiqué par la flèche Haut rouge à droite) a augmenté par rapport à l'instantané n°1. Un objet a été ajouté (+1) et aucun objet n'a été supprimé (-0).  
   
-     L'instantané n° 3 affiche les informations suivantes :  
+      L'instantané n° 3 affiche les informations suivantes :  
   
-    -   La taille du tas a augmenté de nouveau de plusieurs centaines d'octets par rapport à l'instantané n°2.  
+    - La taille du tas a augmenté de nouveau de plusieurs centaines d'octets par rapport à l'instantané n°2.  
   
-    -   Le nombre d'objets sur le tas a augmenté à nouveau par rapport à l'instantané n°2. Un objet a été ajouté (+1) et aucun objet n'a été supprimé (-0).  
+    - Le nombre d'objets sur le tas a augmenté à nouveau par rapport à l'instantané n°2. Un objet a été ajouté (+1) et aucun objet n'a été supprimé (-0).  
   
 13. Dans l'instantané n°3, choisissez le texte du lien à droite, qui montre une valeur de +1/-0 en regard de la flèche Haut rouge.  
   
@@ -220,76 +220,76 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
      Cette vue affiche des informations utiles sur la fuite de mémoire, par exemple la suivante :  
   
-    -   Cet affichage montre un élément DIV avec un ID de `item`et la taille de retenue pour l'objet est de plusieurs centaines d'octets (la valeur exacte peut varier).  
+    - Cet affichage montre un élément DIV avec un ID de `item`et la taille de retenue pour l'objet est de plusieurs centaines d'octets (la valeur exacte peut varier).  
   
-    -   Cet objet est l'objet créé à partir de l'instantané n°2 et représente une fuite de mémoire potentielle.  
+    - Cet objet est l'objet créé à partir de l'instantané n°2 et représente une fuite de mémoire potentielle.  
   
-     La connaissance de l'application est une aide à ce stade. Sélectionner le bouton **Fuite de mémoire** doit supprimer un élément DIV et ajouter un élément, si le code ne semble pas fonctionner correctement (dans ce cas, une fuite de mémoire se produit). La section suivante explique comment résoudre cela.  
+      La connaissance de l'application est une aide à ce stade. Sélectionner le bouton **Fuite de mémoire** doit supprimer un élément DIV et ajouter un élément, si le code ne semble pas fonctionner correctement (dans ce cas, une fuite de mémoire se produit). La section suivante explique comment résoudre cela.  
   
     > [!TIP]
     >  Parfois, la recherche d'un objet par rapport à l'objet `Global` peut aider à identifier cet objet. Pour cela, ouvrez le menu contextuel de l'identificateur et choisissez **Afficher en vue racine**.  
   
 ##  <a name="FixingMemory"></a> Résolution du problème de mémoire  
   
-1.  Les données révélées par le profileur vous permettent d'examiner le code responsable de la suppression d'éléments DOM avec un ID d'« élément ». Cela se produit dans la fonction `initialize()`.  
+1. Les données révélées par le profileur vous permettent d'examiner le code responsable de la suppression d'éléments DOM avec un ID d'« élément ». Cela se produit dans la fonction `initialize()`.  
   
-    ```javascript  
-    function initialize() {  
+   ```javascript  
+   function initialize() {  
   
-        if (wrapper != null) {  
-            elem.removeNode(true);  
-        }  
-    }  
-    ```  
+       if (wrapper != null) {  
+           elem.removeNode(true);  
+       }  
+   }  
+   ```  
   
-     '`elem.removeNode(true)` ne fonctionne peut-être pas correctement. En examinant la façon dont le code met en cache l'élément DOM, vous trouvez le problème : la référence à l'élément mis en cache n'a pas été mise à jour.  
+    '`elem.removeNode(true)` ne fonctionne peut-être pas correctement. En examinant la façon dont le code met en cache l'élément DOM, vous trouvez le problème : la référence à l'élément mis en cache n'a pas été mise à jour.  
   
-2.  Dans default.js, ajoutez la ligne de code suivante à la fonction de chargement, juste avant l'appel à `appendChild`:  
+2. Dans default.js, ajoutez la ligne de code suivante à la fonction de chargement, juste avant l'appel à `appendChild`:  
   
-    ```javascript  
-    elem = newDiv;  
-    ```  
+   ```javascript  
+   elem = newDiv;  
+   ```  
   
-     Ce code met à jour la référence à l'élément mis en cache afin que l'élément soit correctement supprimé lorsque vous sélectionnez le bouton **Fuite de mémoire** . Le code complet pour la fonction de chargement ressemble à ceci :  
+    Ce code met à jour la référence à l'élément mis en cache afin que l'élément soit correctement supprimé lorsque vous sélectionnez le bouton **Fuite de mémoire** . Le code complet pour la fonction de chargement ressemble à ceci :  
   
-    ```javascript  
-    function load() {  
+   ```javascript  
+   function load() {  
   
-        wrapper = document.querySelector(".wrapper");  
+       wrapper = document.querySelector(".wrapper");  
   
-        var newDiv = document.createElement("div");  
+       var newDiv = document.createElement("div");  
   
-        newDiv.style.zIndex = "-1";  
-        newDiv.id = "item";  
-        elem = newDiv;  
+       newDiv.style.zIndex = "-1";  
+       newDiv.id = "item";  
+       elem = newDiv;  
   
-        wrapper.appendChild(newDiv);  
-    }  
-    ```  
+       wrapper.appendChild(newDiv);  
+   }  
+   ```  
   
-3.  Dans le menu **Déboguer** , choisissez **Performances et diagnostics**.  
+3. Dans le menu **Déboguer** , choisissez **Performances et diagnostics**.  
   
-4.  Dans **Outils disponibles**, choisissez **Mémoire JavaScript**, puis **Démarrer**.  
+4. Dans **Outils disponibles**, choisissez **Mémoire JavaScript**, puis **Démarrer**.  
   
-5.  Suivez la même procédure qu'avant pour prendre trois instantanés. Les étapes sont les suivantes :  
+5. Suivez la même procédure qu'avant pour prendre trois instantanés. Les étapes sont les suivantes :  
   
-    1.  Dans l'application, sélectionnez successivement le bouton **Fuite de mémoire** à quatre reprises.  
+   1. Dans l'application, sélectionnez successivement le bouton **Fuite de mémoire** à quatre reprises.  
   
-    2.  Basculez vers Visual Studio et choisissez **Prendre un instantané du tas** pour l'instantané de ligne de base.  
+   2. Basculez vers Visual Studio et choisissez **Prendre un instantané du tas** pour l'instantané de ligne de base.  
   
-    3.  Dans l'application, choisissez le bouton **Fuite de mémoire** .  
+   3. Dans l'application, choisissez le bouton **Fuite de mémoire** .  
   
-    4.  Basculez vers Visual Studio et choisissez **Prendre un instantané du tas** pour le deuxième instantané.  
+   4. Basculez vers Visual Studio et choisissez **Prendre un instantané du tas** pour le deuxième instantané.  
   
-    5.  Dans l'application, choisissez le bouton **Fuite de mémoire** .  
+   5. Dans l'application, choisissez le bouton **Fuite de mémoire** .  
   
-    6.  Basculez vers Visual Studio et choisissez **Prendre un instantané du tas** pour le troisième instantané.  
+   6. Basculez vers Visual Studio et choisissez **Prendre un instantané du tas** pour le troisième instantané.  
   
-     L'instantané n°3 affiche maintenant la taille du tas comme étant **Aucune augmentation** à partir de l'instantané n°2, et le nombre d'objets comme étant +1/-1, ce qui indique qu'un objet a été ajouté et un objet a été supprimé. Il s'agit du comportement voulu.  
+      L'instantané n°3 affiche maintenant la taille du tas comme étant **Aucune augmentation** à partir de l'instantané n°2, et le nombre d'objets comme étant +1/-1, ce qui indique qu'un objet a été ajouté et un objet a été supprimé. Il s'agit du comportement voulu.  
   
-     L'illustration suivante montre l'instantané n°2 et l'instantané n°3.  
+      L'illustration suivante montre l'instantané n°2 et l'instantané n°3.  
   
-     ![Instantanés montrant la fuite de mémoire fixe](../profiling/media/js-mem-app-fixed-snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
+      ![Instantanés montrant la fuite de mémoire fixe](../profiling/media/js-mem-app-fixed-snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
   
 ## <a name="see-also"></a>Voir aussi  
  [Mémoire JavaScript](../profiling/javascript-memory.md)

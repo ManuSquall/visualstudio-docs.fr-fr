@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22ba120513d188f0a945ff18331b37062c08018f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 602525666e62a5eaa6e8db13c6e7029d8773bc8b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672709"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917179"
 ---
 # <a name="design-and-create-office-solutions"></a>Concevoir et créer des solutions Office
   Visual Studio fournit des modèles de projet que vous pouvez utiliser pour créer différents types de solutions Office. Cette section de la documentation décrit les modèles de projet et apporte des conseils sur la création de projets Office. Pour plus d’informations sur la façon d’implémenter les personnalisations de l’interface utilisateur et le code après avoir créé votre projet, consultez [Office de développer des solutions](../vsto/developing-office-solutions.md).  
@@ -41,22 +41,22 @@ ms.locfileid: "35672709"
 ## <a name="choose-a-net-framework-version"></a>Choisissez une version de .NET Framework  
  Après avoir sélectionné le type de projet qui répond le mieux à vos besoins, vous pouvez choisir la version du .NET Framework utiliser dans votre processus de développement. Vous pouvez cibler les versions du .NET Framework suivantes dans les projets Office :  
   
--   [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]  
+- [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]  
   
--   [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
+- [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
   
--   [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
+- [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
   
- La version de .NET Framework que vous choisissez pour votre projet est requis sur les ordinateurs des utilisateurs finaux pour l’exécution de votre solution. Par exemple, si votre projet cible le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] est requis sur les ordinateurs des utilisateurs finaux. Dans cet exemple, votre solution ne fonctionnera pas si seul le .NET Framework 3.5 est installé sur les ordinateurs des utilisateurs finaux.  
+  La version de .NET Framework que vous choisissez pour votre projet est requis sur les ordinateurs des utilisateurs finaux pour l’exécution de votre solution. Par exemple, si votre projet cible le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] est requis sur les ordinateurs des utilisateurs finaux. Dans cet exemple, votre solution ne fonctionnera pas si seul le .NET Framework 3.5 est installé sur les ordinateurs des utilisateurs finaux.  
   
- Si vous migrez un projet de complément VSTO qui cible le .NET Framework 3.5, Visual Studio remplace la version cible du .NET Framework de votre projet par [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou ultérieur en fonction de la version d'Office installée.  
+  Si vous migrez un projet de complément VSTO qui cible le .NET Framework 3.5, Visual Studio remplace la version cible du .NET Framework de votre projet par [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou ultérieur en fonction de la version d’Office installée.  
   
- Toutefois, après le changement de la version cible du .NET Framework par Visual Studio, vous devrez peut-être modifier une partie du code de votre projet s’il utilise certaines fonctionnalités. Pour plus d’informations sur la façon de modifier le framework cible, consultez [Comment : cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Pour plus d’informations sur les modifications que vous devrez peut-être apporter dans votre projet, consultez [solutions Office de migrer vers le .NET Framework 4 ou version ultérieure](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
+  Toutefois, après le changement de la version cible du .NET Framework par Visual Studio, vous devrez peut-être modifier une partie du code de votre projet s’il utilise certaines fonctionnalités. Pour plus d’informations sur la façon de modifier le framework cible, consultez [Comment : cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Pour plus d’informations sur les modifications que vous devrez peut-être apporter dans votre projet, consultez [solutions Office de migrer vers le .NET Framework 4 ou version ultérieure](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).  
   
- Si Visual Studio modifie le .NET Framework cible pour votre projet et que vous utilisez ClickOnce pour déployer votre solution, assurez-vous que vous sélectionnez également la version correspondante du .NET Framework dans le **conditions préalables** boîte de dialogue. Cette sélection ne change pas automatiquement quand vous modifiez la version cible du .NET Framework pour votre projet. Pour plus d’informations, consultez [Comment : installer les composants requis sur les ordinateurs des utilisateurs finaux pour exécuter des solutions Office](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
+  Si Visual Studio modifie le .NET Framework cible pour votre projet et que vous utilisez ClickOnce pour déployer votre solution, assurez-vous que vous sélectionnez également la version correspondante du .NET Framework dans le **conditions préalables** boîte de dialogue. Cette sélection ne change pas automatiquement quand vous modifiez la version cible du .NET Framework pour votre projet. Pour plus d’informations, consultez [Comment : installer les composants requis sur les ordinateurs des utilisateurs finaux pour exécuter des solutions Office](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 > [!NOTE]  
->  Vous ne pouvez pas cibler le .NET Framework 3.5 ou version antérieure dans les projets Office créés à l'aide de [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Les projets Office créés à l'aide de [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] nécessitent les fonctionnalités introduites dans le [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)].  
+>  Vous ne pouvez pas cibler le .NET Framework 3.5 ou version antérieure dans les projets Office créés à l'aide de [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Les projets Office créés à l’aide de [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] nécessitent les fonctionnalités introduites dans le [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)].  
   
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>Comprendre quand les assemblys PIA Office sont requises sur les ordinateurs des utilisateurs finaux  
  Par défaut, Office assemblys PIA (Primary Interop Assemblies) n’avez pas besoin d’être installés sur les ordinateurs des utilisateurs finaux si la **incorporer les Types Interop** propriété de chaque référence d’assembly PIA Office dans le projet est définie sur **True**, qui est la valeur par défaut. Dans ce scénario, les informations relatives aux types PIA utilisés par votre solution sont incorporées dans l'assembly de solution au moment de la génération du projet. Au moment de l’exécution, les informations de type incorporées sont utilisées au lieu des assemblys PIA à appeler dans le modèle objet COM de l’application Office. Pour plus d’informations sur la façon dont les types provenant d’assemblys PIA sont incorporés dans votre solution, consultez [équivalence de Type et types interop incorporés](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).  

@@ -1,5 +1,5 @@
 ---
-title: DEBUG_REASON | Documents Microsoft
+title: DEBUG_REASON | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47cfd171d23420396c6d7ab5416db32cc05511f0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3f3fccdd43b7d26a5bb2dcc5799d77afff6614d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101199"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868363"
 ---
 # <a name="debugreason"></a>DEBUG_REASON
 Spécifie la raison pour laquelle le processus a été lancé pour le débogage.  
@@ -56,18 +56,18 @@ public enum enum_DEBUG_REASON {
  Le processus a été lancé à la demande de l’utilisateur.  
   
  DEBUG_REASON_USER_ATTACHED  
- Le processus en cours d’exécution a été attaché à l’utilisateur.  
+ Le processus en cours d’exécution a été attaché à par l’utilisateur.  
   
  DEBUG_REASON_AUTO_ATTACHED  
- Le processus a été automatiquement joints aux lorsqu’elle a été lancée.  
+ Le processus a été automatiquement attaché à lorsqu’elle a été lancée.  
   
  DEBUG_REASON_CAUSALITY  
- Le processus a été lancé due à un *juste-à-temps* événement de débogage (JIT).  
+ Le processus a été lancé en raison un *juste-à-temps* événement de débogage (JIT).  
   
 ## <a name="remarks"></a>Notes  
  Retourné par la [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) (méthode).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

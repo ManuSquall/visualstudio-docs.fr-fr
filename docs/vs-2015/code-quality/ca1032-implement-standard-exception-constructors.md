@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 871381e1013face4531e90b06d680d194955e3c0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: efef441e84c4f1d51c633e3fdcb2da8d1ba3e963
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193594"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868610"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032 : Implémenter des constructeurs d'exception standard
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ImplementStandardExceptionConstructors|
@@ -42,15 +43,15 @@ ms.locfileid: "49193594"
 ## <a name="rule-description"></a>Description de la règle
  Types d’exception doivent implémenter les constructeurs suivants :
 
--   NewException() public
+- NewException() public
 
--   NewException(string) public
+- NewException(string) public
 
--   publique NewException (string, Exception)
+- publique NewException (string, Exception)
 
--   protégé ou privée NewException (SerializationInfo, StreamingContext)
+- protégé ou privée NewException (SerializationInfo, StreamingContext)
 
- Ne pas fournir le jeu complet de constructeurs peut rendre difficile une gestion des exceptions correcte. Par exemple, le constructeur qui a la signature `NewException(string, Exception)` est utilisé pour créer des exceptions provoquées par d’autres exceptions. Sans ce constructeur, vous ne pouvez pas créer et levez une instance de votre exception personnalisée qui contient une exception interne (imbriquée), qui est le code managé doit faire dans une telle situation. Les premiers constructeurs de trois exception sont publics par convention. Le quatrième constructeur est protégé dans les classes non scellés et privées dans les classes sealed. Pour plus d’informations, consultez [CA2229 : implémentez des constructeurs de sérialisation](../code-quality/ca2229-implement-serialization-constructors.md)
+  Ne pas fournir le jeu complet de constructeurs peut rendre difficile une gestion des exceptions correcte. Par exemple, le constructeur qui a la signature `NewException(string, Exception)` est utilisé pour créer des exceptions provoquées par d’autres exceptions. Sans ce constructeur, vous ne pouvez pas créer et levez une instance de votre exception personnalisée qui contient une exception interne (imbriquée), qui est le code managé doit faire dans une telle situation. Les premiers constructeurs de trois exception sont publics par convention. Le quatrième constructeur est protégé dans les classes non scellés et privées dans les classes sealed. Pour plus d’informations, consultez [CA2229 : implémentez des constructeurs de sérialisation](../code-quality/ca2229-implement-serialization-constructors.md)
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, ajoutez les constructeurs manquants à l’exception et assurez-vous qu’ils ont l’accessibilité appropriée.

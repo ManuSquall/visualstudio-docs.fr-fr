@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 406c870f099d2dbb1e60b0088a68e5a5c252b907
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a535a97835491f4a109ed0893d20a4330b218801
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274402"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860303"
 ---
 # <a name="content-model-view"></a>Vue de modèle de contenu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -110,11 +110,11 @@ La vue de modèle de contenu fournit une représentation graphique des nœuds de
   
  Le zoom peut être contrôlé des façons suivantes :  
   
--   En maintenant la touche Ctrl enfoncée et en tournant la roulette de la souris lorsque la souris pointe sur la surface de la vue de modèle de contenu.  
+- En maintenant la touche Ctrl enfoncée et en tournant la roulette de la souris lorsque la souris pointe sur la surface de la vue de modèle de contenu.  
   
--   En utilisant le contrôle Slider. Le curseur affiche le niveau de zoom actuel.  
+- En utilisant le contrôle Slider. Le curseur affiche le niveau de zoom actuel.  
   
- Le curseur Zoom est opaque lorsque vous le sélectionnez, pointez sur celui-ci ou utilisez Ctrl avec la roulette de la souris pour effectuer un zoom ; dans tous les autres cas, il est transparent.  
+  Le curseur Zoom est opaque lorsque vous le sélectionnez, pointez sur celui-ci ou utilisez Ctrl avec la roulette de la souris pour effectuer un zoom ; dans tous les autres cas, il est transparent.  
   
 ## <a name="xml-editor-integration"></a>Intégration de l'Éditeur XML  
  Vous pouvez basculer entre le Concepteur XSD et l'Éditeur XML à l'aide du menu contextuel.  

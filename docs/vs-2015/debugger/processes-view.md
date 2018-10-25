@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a4af26930fc8c9f362d91656cec758c9d4a9c437
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d2053083ed5e39422deeeb87f34aaf9e13aff6e3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288988"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891063"
 ---
 # <a name="processes-view"></a>Vue Processus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,12 +38,12 @@ La vue processus affiche une arborescence de tous les processus actifs sur votre
   
 #### <a name="to-open-the-processes-view"></a>Pour ouvrir la vue processus  
   
-1.  À partir de la **Spy** menu, choisissez **processus**.  
+1. À partir de la **Spy** menu, choisissez **processus**.  
   
- ![Spy&#43; &#43; vue processus](../debugger/media/spy-processes.png "Spy ++ _Processes")  
-Vue Processus Spy++  
+   ![Spy&#43; &#43; vue processus](../debugger/media/spy-processes.png "Spy ++ _Processes")  
+   Vue Processus Spy++  
   
- La figure ci-dessus illustre la vue processus avec les nœuds de processus et thread développés.  
+   La figure ci-dessus illustre la vue processus avec les nœuds de processus et thread développés.  
   
 ### <a name="in-this-section"></a>Dans cette section  
  [Recherche d’un processus dans la vue processus](../debugger/how-to-search-for-a-process-in-processes-view.md)  

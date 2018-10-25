@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7c1ad9b9790a7d7fda27bab0d409480f8114d3a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 81b027e9834fccadcc572cad8fae4d721be9dd56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258295"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922040"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Déploiement MSI et VSIX d'un langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,15 +59,15 @@ Vous pouvez installer une langue spécifique à un domaine sur votre ordinateur 
   
 #### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>Pour désinstaller une solution DSL a été installée à l’aide de VSX  
   
-1.  Sur le **outils** menu, cliquez sur **Gestionnaire d’extensions**.  
+1. Sur le **outils** menu, cliquez sur **Gestionnaire d’extensions**.  
   
-2.  Développez **Extensions installées**.  
+2. Développez **Extensions installées**.  
   
-3.  Sélectionnez l’extension dans lequel la solution DSL est défini, puis cliquez sur **désinstallation**.  
+3. Sélectionnez l’extension dans lequel la solution DSL est défini, puis cliquez sur **désinstallation**.  
   
- Exceptionnellement, une extension défaillante ne parvient pas à se charger et crée un rapport dans la fenêtre d’erreur, mais ne s’affiche pas dans le Gestionnaire d’extensions. Dans ce cas, vous pouvez supprimer l’extension en supprimant le fichier de l’emplacement suivant :  
+   Exceptionnellement, une extension défaillante ne parvient pas à se charger et crée un rapport dans la fenêtre d’erreur, mais ne s’affiche pas dans le Gestionnaire d’extensions. Dans ce cas, vous pouvez supprimer l’extension en supprimant le fichier de l’emplacement suivant :  
   
- *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**  
+   *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**  
   
 ##  <a name="msi"></a> Déploiement d’une solution DSL dans un fichier MSI  
  En définissant un fichier MSI (Windows Installer) pour votre DSL, vous pouvez autoriser les utilisateurs à ouvrir des fichiers DSL à partir de l’Explorateur Windows. Vous pouvez également associer une icône et une brève description votre extension de nom de fichier. En outre, le fichier MSI peut installer un XSD qui peut être utilisé pour valider des fichiers DSL. Si vous le souhaitez, vous pouvez ajouter d’autres composants dans le fichier MSI qui est installé en même temps.  
@@ -78,47 +78,47 @@ Vous pouvez installer une langue spécifique à un domaine sur votre ordinateur 
   
 #### <a name="to-deploy-a-dsl-in-an-msi"></a>Pour déployer une solution DSL dans un fichier MSI  
   
-1.  Définissez `InstalledByMsi` dans le manifeste d’extension. Cela empêche le VSX installé et désinstallé à l’exception par le fichier MSI. Ceci est important si vous inclurez des autres composants dans le fichier MSI.  
+1. Définissez `InstalledByMsi` dans le manifeste d’extension. Cela empêche le VSX installé et désinstallé à l’exception par le fichier MSI. Ceci est important si vous inclurez des autres composants dans le fichier MSI.  
   
-    1.  Ouvrez DslPackage\source.extension.tt  
+   1.  Ouvrez DslPackage\source.extension.tt  
   
-    2.  Insérez la ligne suivante avant `<SupportedProducts>`:  
+   2.  Insérez la ligne suivante avant `<SupportedProducts>`:  
   
-        ```  
-        <InstalledByMsi>true</InstalledByMsi>  
-        ```  
+       ```  
+       <InstalledByMsi>true</InstalledByMsi>  
+       ```  
   
-2.  Créez ou modifiez une icône qui représentera votre DSL dans l’Explorateur Windows. Par exemple, modifiez **DslPackage\Resources\File.ico**  
+2. Créez ou modifiez une icône qui représentera votre DSL dans l’Explorateur Windows. Par exemple, modifiez **DslPackage\Resources\File.ico**  
   
-3.  Assurez-vous que les attributs suivants de votre DSL sont corrects :  
+3. Assurez-vous que les attributs suivants de votre DSL sont corrects :  
   
-    -   Cliquez sur le nœud racine dans l’Explorateur DSL et dans la fenêtre Propriétés, consultez :  
+   -   Cliquez sur le nœud racine dans l’Explorateur DSL et dans la fenêtre Propriétés, consultez :  
   
-        -   Description  
+       -   Description  
   
-        -   Version  
+       -   Version  
   
-    -   Cliquez sur le **éditeur** nœud dans la fenêtre Propriétés, cliquez sur **icône**. Définissez la valeur pour référencer un fichier d’icône **DslPackage\Resources**, tel que **File.ico**  
+   -   Cliquez sur le **éditeur** nœud dans la fenêtre Propriétés, cliquez sur **icône**. Définissez la valeur pour référencer un fichier d’icône **DslPackage\Resources**, tel que **File.ico**  
   
-    -   Sur le **Build** menu, ouvrez **Configuration Manager**et sélectionnez la configuration que vous souhaitez générer, tel que **version** ou **déboguer** .  
+   -   Sur le **Build** menu, ouvrez **Configuration Manager**et sélectionnez la configuration que vous souhaitez générer, tel que **version** ou **déboguer** .  
   
-4.  Accédez à [page d’accueil Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)et à partir de la **télécharge** onglet, téléchargez **CreateMsiSetupProject.tt**.  
+4. Accédez à [page d’accueil Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)et à partir de la **télécharge** onglet, téléchargez **CreateMsiSetupProject.tt**.  
   
-5.  Ajouter **CreateMsiSetupProject.tt** à votre projet Dsl.  
+5. Ajouter **CreateMsiSetupProject.tt** à votre projet Dsl.  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Crée un fichier nommé **CreateMsiSetupProject.vdproj**.  
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Crée un fichier nommé **CreateMsiSetupProject.vdproj**.  
   
-6.  Dans l’Explorateur Windows, copiez Dsl\\\*.vdproj vers un nouveau dossier nommé le programme d’installation.  
+6. Dans l’Explorateur Windows, copiez Dsl\\\*.vdproj vers un nouveau dossier nommé le programme d’installation.  
   
-     (Si vous le souhaitez, vous pouvez désormais exclure CreateMsiSetupProject.tt à partir de votre projet Dsl.)  
+    (Si vous le souhaitez, vous pouvez désormais exclure CreateMsiSetupProject.tt à partir de votre projet Dsl.)  
   
-7.  Dans **l’Explorateur de solutions**, ajouter **le programme d’installation\\\*.vdproj** qu’un projet existant.  
+7. Dans **l’Explorateur de solutions**, ajouter **le programme d’installation\\\*.vdproj** qu’un projet existant.  
   
-8.  Sur le **projet** menu, cliquez sur **dépendances du projet**.  
+8. Sur le **projet** menu, cliquez sur **dépendances du projet**.  
   
-     Dans le **dépendances du projet** boîte de dialogue, sélectionnez le projet d’installation.  
+    Dans le **dépendances du projet** boîte de dialogue, sélectionnez le projet d’installation.  
   
-     Activez la case en regard **DslPackage**.  
+    Activez la case en regard **DslPackage**.  
   
 9. Régénérez la solution.  
   
@@ -132,7 +132,7 @@ Vous pouvez installer une langue spécifique à un domaine sur votre ordinateur 
   
     -   Lorsque vous double-cliquez sur le fichier, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] démarre et ouvre le fichier DSL dans l’éditeur de votre DSL.  
   
- Si vous préférez, vous pouvez créer le projet d’installation manuellement, au lieu d’utiliser le modèle de texte. Pour une procédure pas à pas qui inclut cette procédure, consultez le chapitre 5 du [de visualisation et modélisation de laboratoire de kit de développement logiciel](http://go.microsoft.com/fwlink/?LinkId=208878).  
+    Si vous préférez, vous pouvez créer le projet d’installation manuellement, au lieu d’utiliser le modèle de texte. Pour une procédure pas à pas qui inclut cette procédure, consultez le chapitre 5 du [de visualisation et modélisation de laboratoire de kit de développement logiciel](http://go.microsoft.com/fwlink/?LinkId=208878).  
   
 #### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>Pour désinstaller une solution DSL a été installée à partir d’un fichier MSI  
   

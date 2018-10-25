@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb8e84397a5c08a00b704bc571ca1eba3361bfd6
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: abfa170fe0f30cbc4fac941a6d77d0ac8b407f7f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081395"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846588"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Déployer des applications ClickOnce pour les serveurs de test et de production sans nouvelle signature
 Cet article décrit une fonctionnalité de ClickOnce présentée dans le .NET Framework version 3.5 qui permet le déploiement d’applications ClickOnce à partir de plusieurs emplacements réseau sans nouvelle signature ni modification ClickOnce manifestes.  
@@ -54,11 +54,11 @@ Cet article décrit une fonctionnalité de ClickOnce présentée dans le .NET Fr
   
  Voici deux exemples pour clarifier ce point. Dans le premier exemple, vous publiez une application ClickOnce qui n’a aucun `deploymentProvider` balise et vous demandez aux utilisateurs d’installer à partir http://www.adatum.com/MyApplication/. Si vous décidez de publier la prochaine mise à jour de l’application à partir de http://subdomain.adatum.com/MyApplication/, vous n’avez aucun moyen de ce qui signifie dans le manifeste de déploiement qui se trouve dans http://www.adatum.com/MyApplication/. Vous pouvez effectuer une des deux opérations :  
   
--   Indiquer à vos utilisateurs pour désinstaller la version précédente et installer la nouvelle version à partir du nouvel emplacement.  
+- Indiquer à vos utilisateurs pour désinstaller la version précédente et installer la nouvelle version à partir du nouvel emplacement.  
   
--   Inclure une mise à jour sur http://www.adatum.com/MyApplication/ qui inclut un `deploymentProvider` pointant vers http://www.adatum.com/MyApplication/. Relâchez une autre mise à jour plus tard avec `deploymentProvider` pointant vers http://subdomain.adatum.com/MyApplication/.  
+- Inclure une mise à jour sur http://www.adatum.com/MyApplication/ qui inclut un `deploymentProvider` pointant vers http://www.adatum.com/MyApplication/. Relâchez une autre mise à jour plus tard avec `deploymentProvider` pointant vers http://subdomain.adatum.com/MyApplication/.  
   
- Dans le deuxième exemple, vous publiez une application ClickOnce qui spécifie `deploymentProvider`, et vous décidez ensuite de le supprimer. Une fois la nouvelle version sans `deploymentProvider` est téléchargé sur les clients, vous ne peut pas rediriger le chemin d’accès utilisé pour les mises à jour jusqu'à ce que vous publiez une version de votre application a `deploymentProvider` restauré. Comme avec le premier exemple, `deploymentProvider` doit pointer initialement à l’emplacement actuel de la mise à jour, pas votre nouvel emplacement. Dans ce cas, si vous tentez d’insérer un `deploymentProvider` qui fait référence à http://subdomain.adatum.com/MyApplication/, la prochaine mise à jour échoue.  
+  Dans le deuxième exemple, vous publiez une application ClickOnce qui spécifie `deploymentProvider`, et vous décidez ensuite de le supprimer. Une fois la nouvelle version sans `deploymentProvider` est téléchargé sur les clients, vous ne peut pas rediriger le chemin d’accès utilisé pour les mises à jour jusqu'à ce que vous publiez une version de votre application a `deploymentProvider` restauré. Comme avec le premier exemple, `deploymentProvider` doit pointer initialement à l’emplacement actuel de la mise à jour, pas votre nouvel emplacement. Dans ce cas, si vous tentez d’insérer un `deploymentProvider` qui fait référence à http://subdomain.adatum.com/MyApplication/, la prochaine mise à jour échoue.  
   
 ## <a name="create-a-deployment"></a>Créer un déploiement  
  Pour obtenir des instructions étape par étape sur la création de déploiements qui peuvent être déployés à partir de différents emplacements réseau, consultez [procédure pas à pas : déployer manuellement une application ClickOnce qui ne nécessite pas de nouvelle signature et qui conserve les informations de personnalisation](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).  

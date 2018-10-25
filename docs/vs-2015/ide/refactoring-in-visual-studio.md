@@ -14,27 +14,27 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e621d8bccdb8dceb1a6516ff0c070393962cea11
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ce995687f304579c7a4f3a95b971dcc86e28f050
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303795"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878035"
 ---
 # <a name="refactoring-in-visual-studio"></a>Refactorisation dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La refactorisation est le processus de modification du code pour le rendre plus facile à gérer, à comprendre et à étendre, mais sans changer son comportement. Certaines *refactorisations* courantes incluent les tâches suivantes :  
   
-1.  fractionnement des fonctions longues en fonctions plus petites ;  
+1. fractionnement des fonctions longues en fonctions plus petites ;  
   
-2.  changement de nom des variables, types, fonctions ou paramètres ;  
+2. changement de nom des variables, types, fonctions ou paramètres ;  
   
-3.  réorganisation des paramètres ;  
+3. réorganisation des paramètres ;  
   
-4.  suppression ou réorganisation des directives using  
+4. suppression ou réorganisation des directives using  
   
- Étant donné que la logique de refactorisation est étroitement liée à la syntaxe du langage, chaque service de langage dans Visual Studio comporte ses propres fonctionnalités de refactorisation. Pour plus d'informations, consultez les pages suivantes :  
+   Étant donné que la logique de refactorisation est étroitement liée à la syntaxe du langage, chaque service de langage dans Visual Studio comporte ses propres fonctionnalités de refactorisation. Pour plus d'informations, consultez les pages suivantes :  
   
 ### <a name="refactoring-in-c"></a>Refactorisation en C#  
  [Refactorisation (C#)](../csharp-ide/refactoring-csharp.md)  

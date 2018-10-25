@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ca48fecf68ad9ecd1db6dc61acbf168a0a1c0f14
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d1c0bbe55f2e63c1d86d71556392d57d1330c6b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298530"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813620"
 ---
 # <a name="graph-view"></a>Vue Graphique
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,11 +132,11 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
   
  Le zoom peut être contrôlé des façons suivantes :  
   
--   En maintenant la touche Ctrl enfoncée et en tournant la roulette de la souris lorsque la souris pointe sur la surface de la vue du graphique.  
+- En maintenant la touche Ctrl enfoncée et en tournant la roulette de la souris lorsque la souris pointe sur la surface de la vue du graphique.  
   
--   En utilisant le contrôle Slider. Le curseur affiche le niveau de zoom actuel.  
+- En utilisant le contrôle Slider. Le curseur affiche le niveau de zoom actuel.  
   
- Le curseur Zoom est opaque lorsque vous le sélectionnez, pointez sur celui-ci ou utilisez Ctrl avec la roulette de la souris pour effectuer un zoom ; dans tous les autres cas, il est transparent.  
+  Le curseur Zoom est opaque lorsque vous le sélectionnez, pointez sur celui-ci ou utilisez Ctrl avec la roulette de la souris pour effectuer un zoom ; dans tous les autres cas, il est transparent.  
   
 ## <a name="xml-editor-integration"></a>Intégration de l'Éditeur XML  
  Vous pouvez basculer entre la vue du graphique et l'Éditeur XML en cliquant sur un nœud et en utilisant le menu contextuel Afficher le code.  

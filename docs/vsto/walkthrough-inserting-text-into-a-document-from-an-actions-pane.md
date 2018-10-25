@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 575f847758bd18c5e13298b1fddd3e34ddb98545
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ad60aa15b3924bd562ed95c30ed9aaf4adef0133
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670896"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862188"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Procédure pas à pas : Insérer du texte dans un document à partir d’un volet actions
   Cette procédure pas à pas montre comment créer un volet actions dans un document Microsoft Office Word. Le volet actions contient deux contrôles qui collecte des commentaires, puis envoient le texte au document.  
@@ -60,17 +60,17 @@ ms.locfileid: "35670896"
   
 ### <a name="to-add-text-to-your-document"></a>Pour ajouter du texte à votre document  
   
-1.  Tapez le texte suivant dans votre document Word :  
+1. Tapez le texte suivant dans votre document Word :  
   
-     **21 mars 2008**  
+    **21 mars 2008**  
   
-     **Name**  
+    **Name**  
   
-     **Adresse**  
+    **Adresse**  
   
-     **Il s’agit d’un exemple d’un volet actions de base dans Word.**  
+    **Il s’agit d’un exemple d’un volet actions de base dans Word.**  
   
- Vous pouvez ajouter un <xref:Microsoft.Office.Tools.Word.Bookmark> contrôle à votre document en le faisant glisser à partir de la **boîte à outils** dans Visual Studio ou en utilisant le **signet** boîte de dialogue dans Word.  
+   Vous pouvez ajouter un <xref:Microsoft.Office.Tools.Word.Bookmark> contrôle à votre document en le faisant glisser à partir de la **boîte à outils** dans Visual Studio ou en utilisant le **signet** boîte de dialogue dans Word.  
   
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>Pour ajouter un contrôle Bookmark à votre document  
   

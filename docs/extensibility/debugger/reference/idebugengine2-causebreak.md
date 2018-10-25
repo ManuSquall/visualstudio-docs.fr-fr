@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::CauseBreak | Documents Microsoft
+title: IDebugEngine2::CauseBreak | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ba10e167246ce2467f2faebf157e46306749bdb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 08544fb80e1006dbed08e51689c1bb3b01212edb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105208"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820510"
 ---
 # <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
-Les demandes que tous les programmes en cours de débogage par ce moteur de débogage (DE) pour arrêter l’exécution de la prochaine fois qu’un de leurs threads tente de s’exécuter.  
+Les demandes que tous les programmes en cours de débogage par ce moteur de débogage (dé) pour arrêter l’exécution de la prochaine fois qu’un de ses threads tente de s’exécuter.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,7 +41,7 @@ int CauseBreak();
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode est asynchrone : un [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) événement est envoyé lorsque le programme tente ensuite d’exécuter une fois que cette méthode est appelée.  
+ Cette méthode est asynchrone : une [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) événement est envoyé lorsque le programme tente ensuite d’exécuter une fois que cette méthode est appelée.  
   
 ## <a name="see-also"></a>Voir aussi  
  [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)   

@@ -19,12 +19,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab8ab81c83f98a7a35620db7cbb10a0f700d78e4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 831fb08941e16abdb197d3a25e71f2a20fcb14cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172742"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909677"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Gestion d'assembly et signature de manifeste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,23 +40,23 @@ La signature avec un nom fort fournit à un composant logiciel une identité glo
 ## <a name="asset-types-and-signing"></a>Types de composants et signature  
  Vous pouvez signer les manifestes d’application et les assemblys .NET. Notamment :  
   
--   Exécutables (.exe)  
+- Exécutables (.exe)  
   
--   Manifestes d’application (.exe.manifest)  
+- Manifestes d’application (.exe.manifest)  
   
--   Manifestes de déploiement (.application)  
+- Manifestes de déploiement (.application)  
   
--   Assemblys de composants partagés (.dll)  
+- Assemblys de composants partagés (.dll)  
   
- Vous devez signer les types de composants suivants :  
+  Vous devez signer les types de composants suivants :  
   
-1.  Assemblys, si vous souhaitez les déployer dans le Global Assembly Cache (GAC).  
+1. Assemblys, si vous souhaitez les déployer dans le Global Assembly Cache (GAC).  
   
-2.  Manifestes d’application et de déploiement [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Visual Studio permet la signature par défaut pour ces applications.  
+2. Manifestes d’application et de déploiement [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Visual Studio permet la signature par défaut pour ces applications.  
   
-3.  Assemblys PIA (Primary Interop Assembly), qui sont utilisés pour l’interopérabilité COM. L’utilitaire TLBIMP applique des noms forts pendant la création d’un assembly PIA à partir d’une bibliothèque de types COM.  
+3. Assemblys PIA (Primary Interop Assembly), qui sont utilisés pour l’interopérabilité COM. L’utilitaire TLBIMP applique des noms forts pendant la création d’un assembly PIA à partir d’une bibliothèque de types COM.  
   
- En général, vous ne devez pas signer les exécutables. Un composant de nom fort ne peut pas référencer un composant sans nom fort qui est déployé avec l’application. Visual Studio ne signe pas les exécutables d’application. En revanche, il signe le manifeste d’application, qui pointe vers l’exécutable portant un nom faible. Vous devez généralement éviter de signer les composants qui appartiennent à votre application, car la signature peut rendre les dépendances plus difficiles à gérer.  
+   En général, vous ne devez pas signer les exécutables. Un composant de nom fort ne peut pas référencer un composant sans nom fort qui est déployé avec l’application. Visual Studio ne signe pas les exécutables d’application. En revanche, il signe le manifeste d’application, qui pointe vers l’exécutable portant un nom faible. Vous devez généralement éviter de signer les composants qui appartiennent à votre application, car la signature peut rendre les dépendances plus difficiles à gérer.  
   
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Comment signer un assembly dans Visual Studio  
  Vous signez une application ou un composant à l’aide de l’onglet **Signature** de la fenêtre des propriétés du projet (cliquez avec le bouton droit sur le nœud de projet dans l’**Explorateur de solutions** et sélectionnez **Propriétés** ou tapez **propriétés de projet** dans la fenêtre **Lancement rapide**, ou appuyez sur Alt+Entrée dans la fenêtre de l’**Explorateur de solutions**). Sélectionnez l’onglet **Signature**, puis cochez la case **Signer l’assembly**.  

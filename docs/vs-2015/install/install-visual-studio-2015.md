@@ -23,12 +23,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3d44834fe02f873007e7461c789fb94f98c9208e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: df09e647908b264ade467b8fafd4487641d3be6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301861"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841102"
 ---
 # <a name="install-visual-studio-2015"></a>Installer Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,17 +135,17 @@ Cette page inclut des informations détaillées pour vous aider à installer **V
   
 #### <a name="to-install-or-uninstall-help-content"></a>Pour installer ou désinstaller le contenu de l'aide  
   
-1.  Dans la barre de menus [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , choisissez **Aide**, **Ajouter et supprimer le contenu d'aide**.  
+1. Dans la barre de menus [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , choisissez **Aide**, **Ajouter et supprimer le contenu d'aide**.  
   
-2.  Sous l'onglet **Gérer le contenu** de la **Visionneuse d'aide Microsoft**, sélectionnez la source d'installation pour votre contenu d'aide.  
+2. Sous l'onglet **Gérer le contenu** de la **Visionneuse d'aide Microsoft**, sélectionnez la source d'installation pour votre contenu d'aide.  
   
-3.  Si vous avez besoin d’une collection d’aide spécifique, entrez le nom ou un mot clé dans le **recherche** zone de texte et appuyez sur **entrée**.  
+3. Si vous avez besoin d’une collection d’aide spécifique, entrez le nom ou un mot clé dans le **recherche** zone de texte et appuyez sur **entrée**.  
   
-4.  À côté du nom de la collection d'aide souhaitée, choisissez le lien **Ajouter** ou **Supprimer** .  
+4. À côté du nom de la collection d'aide souhaitée, choisissez le lien **Ajouter** ou **Supprimer** .  
   
-5.  Cliquez sur le **mise à jour** bouton.  
+5. Cliquez sur le **mise à jour** bouton.  
   
- Pour plus d’informations sur la façon d’installer ou de déployer en mode hors connexion, consultez le [Guide administrateur de la visionneuse d’aide](../ide/help-viewer-administrator-guide.md).  
+   Pour plus d’informations sur la façon d’installer ou de déployer en mode hors connexion, consultez le [Guide administrateur de la visionneuse d’aide](../ide/help-viewer-administrator-guide.md).  
   
 ##  <a name="serviceReleases"></a> Vérification des Service Packs et mises à jour de produit  
  Étant donné que toutes les extensions ne sont compatibles, Visual Studio n’automatiquement à niveau les extensions lorsque vous mettez à niveau à partir de versions précédentes. Vous devez réinstaller les extensions à partir de la [galerie Visual Studio](http://go.microsoft.com/fwlink/?LinkId=178891) ou à partir de l’éditeur de logiciel.  

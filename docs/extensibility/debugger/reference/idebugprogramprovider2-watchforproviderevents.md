@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramProvider2::WatchForProviderEvents | Documents Microsoft
+title: IDebugProgramProvider2::WatchForProviderEvents | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dd2dcaa930db97ee8bab9b2bba168c80444dda8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1e245087cdd74ced1b47e2cd02da1e450474fa1b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121896"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875136"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
-Permet au processus de notification des événements de port.  
+Permet au processus d’être averti des événements de port.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -51,7 +51,7 @@ int WatchForProviderEvents(
   
 #### <a name="parameters"></a>Paramètres  
  `Flags`  
- [in] Une combinaison d’indicateurs à partir de la [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) énumération. Les indicateurs suivants sont classiques pour cet appel :  
+ [in] Une combinaison d’indicateurs de la [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) énumération. Les indicateurs suivants sont généralement utilisés pour cet appel :  
   
 |Indicateur|Description|  
 |----------|-----------------|  
@@ -67,7 +67,7 @@ int WatchForProviderEvents(
  [in] Un [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) structure qui contient l’ID du processus qui contient le programme en question.  
   
  `EngineFilter`  
- [in] Un tableau des GUID des moteurs de débogage associés au processus.  
+ [in] Un tableau de GUID de moteurs de débogage associés au processus.  
   
  `guidLaunchingEngine`  
  [in] GUID du moteur de débogage qui a lancé ce processus (le cas échéant).  
@@ -79,10 +79,10 @@ int WatchForProviderEvents(
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Lorsque l’appelant veut supprimer un gestionnaire d’événements qui a été établi avec un appel précédent à cette méthode, l’appelant transmet les mêmes paramètres, comme il le faisait la première fois, mais laisse hors tension le `PFLAG_REASON_WATCH` indicateur.  
+ Lorsqu’un appelant souhaite supprimer le Gestionnaire d’événements qui a été établi avec un appel précédent à cette méthode, l’appelant transmet les mêmes paramètres, comme elle le faisait la première fois, mais laisse hors tension le `PFLAG_REASON_WATCH` indicateur.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour un **CDebugEngine** objet qui expose la [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) interface.  
+ L’exemple suivant montre comment implémenter cette méthode pour un **CDebugEngine** objet qui expose le [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) interface.  
   
 ```cpp  
 STDMETHODIMP CDebugEngine::WatchForProviderEvents(  

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a30659fcfd1b373360dc7bf9e9e53ae442ac4992
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 06b2d1e537152020b42fdff38fab1200b9cf7668
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510147"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908533"
 ---
 # <a name="mip-map-generation-variant"></a>Variante de génération mipmap
 Active les mipmaps sur les textures qui ne sont pas des cibles de rendu.  
@@ -30,19 +30,19 @@ Active les mipmaps sur les textures qui ne sont pas des cibles de rendu.
 ## <a name="remarks"></a>Notes  
  La génération de mipmaps est forcée à chaque appel à `ID3D11Device::CreateTexture2D`, qui est chargé de créer une texture source. Plus précisément, génération de mipmaps est forcée quand l’objet D3D11_TEXTURE2D_DESC passé dans `pDesc` décrit une ressource de nuanceur qui est :  
   
--   Seul l'indicateur D3D11_BIND_SHADER_RESOURCE du membre BindFlags est défini.  
+- Seul l'indicateur D3D11_BIND_SHADER_RESOURCE du membre BindFlags est défini.  
   
--   Le membre Usage a la valeur D3D11_USAGE_DEFAULT ou D3D11_USAGE_IMMUTABLE.  
+- Le membre Usage a la valeur D3D11_USAGE_DEFAULT ou D3D11_USAGE_IMMUTABLE.  
   
--   Le membre CPUAccessFlags a la valeur 0 (aucun accès à l'UC).  
+- Le membre CPUAccessFlags a la valeur 0 (aucun accès à l'UC).  
   
--   Le membre Count du membre SampleDesc a la valeur 1 (pas d'anticrénelage MSAA (Multi-Sample Anti-Aliasing)).  
+- Le membre Count du membre SampleDesc a la valeur 1 (pas d'anticrénelage MSAA (Multi-Sample Anti-Aliasing)).  
   
--   Le membre MipLevels a la valeur 1 (absence de mipmaps).  
+- Le membre MipLevels a la valeur 1 (absence de mipmaps).  
   
- Quand les données initiales sont fournies par l'application, la format de texture doit prendre en charge la génération automatique de mipmaps (déterminé par D3D11_FORMAT_SUPPORT_MIP_AUTOGEN), sauf si le format est BC1, BC2 ou BC3 ; à défaut, la texture n'est pas modifiée et aucun mipmap n'est généré au moment où les données sont fournies.  
+  Quand les données initiales sont fournies par l'application, la format de texture doit prendre en charge la génération automatique de mipmaps (déterminé par D3D11_FORMAT_SUPPORT_MIP_AUTOGEN), sauf si le format est BC1, BC2 ou BC3 ; à défaut, la texture n'est pas modifiée et aucun mipmap n'est généré au moment où les données sont fournies.  
   
- Si des mipmaps ont été générés automatiquement pour une texture, les appels à `ID3D11Device::CreateShaderResourceView` sont modifiés pendant la lecture pour utiliser la chaîne MIP lors de l'échantillonnage de texture.  
+  Si des mipmaps ont été générés automatiquement pour une texture, les appels à `ID3D11Device::CreateShaderResourceView` sont modifiés pendant la lecture pour utiliser la chaîne MIP lors de l'échantillonnage de texture.  
   
 ## <a name="example"></a>Exemple  
  Le **génération mipmap** variante peut être reproduite à l’aide de code similaire à celui-ci :  
@@ -72,4 +72,4 @@ d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
 >  Si vous voulez fournir votre propre contenu de niveau MIP au lieu de le générer automatiquement, vous devez créer vos textures à l'aide d'un éditeur d'image qui prend en charge les textures mipmappées, puis charger le fichier et passer les niveaux MIP à `CreateTexture2D`.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Variante de Dimensions de Texture moitié/un quart](half-quarter-texture-dimensions-variant.md)
+ [Variante de dimensions de la texture moitié/un quart](half-quarter-texture-dimensions-variant.md)

@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 78d190e843aa51c794fc41c803cef3fce21005f9
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 812b464fe3e9742309a1ce6918d8d6b383101bf8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174382"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864123"
 ---
 # <a name="create-relationships-between-datasets"></a>Créer des relations entre les datasets
 Jeux de données qui contiennent des données connexes tables utilisent <xref:System.Data.DataRelation> objets pour représenter une relation parent/enfant entre les tables et pour retourner des enregistrements connexes à partir de l’autre. Ajout de tables associées aux jeux de données à l’aide de la **Assistant de Configuration de Source de données**, ou le **Concepteur de Dataset**, crée et configure le <xref:System.Data.DataRelation> objet pour vous.
@@ -58,7 +58,7 @@ Dans le cadre de la contrainte de clé étrangère, vous pouvez spécifier des r
 Les règles que vous pouvez apporter sont spécifiés dans le <xref:System.Data.Rule> énumération et sont répertoriées dans le tableau suivant.
 
 |Règle de la contrainte de clé étrangère|Action|
-|----------------------------------|------------|
+| - |------------|
 |<xref:System.Data.Rule.Cascade>|La modification (mise à jour ou suppression) apportée à l’enregistrement parent est également apportée dans les enregistrements associés dans la table enfant.|
 |<xref:System.Data.Rule.SetNull>|Enregistrements enfants ne sont pas supprimés, mais la clé étrangère dans les enregistrements enfants est définie <xref:System.DBNull>. Avec ce paramètre, les enregistrements enfants peuvent être laissées en tant que « orphelins », autrement dit, ils n’ont aucune relation avec des enregistrements parents. **Remarque :** à l’aide de cette règle peut entraîner des données non valides dans la table enfant.|
 |<xref:System.Data.Rule.SetDefault>|La clé étrangère dans les enregistrements enfants connexes est définie à sa valeur par défaut (comme établi par la colonne <xref:System.Data.DataColumn.DefaultValue%2A> propriété).|

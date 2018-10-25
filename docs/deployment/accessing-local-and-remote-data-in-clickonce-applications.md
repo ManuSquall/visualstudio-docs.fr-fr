@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7829c9fce0c8315ac42fc1c376987e4e30b4be8e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b6f25bb2920f8f50afbd8bfb820e7c852e160865
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081236"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943048"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Données locales et distantes d’accès dans les applications ClickOnce
 La plupart des applications consomment ou produisent des données. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vous propose diverses options pour lire et écrire les données, à la fois localement et à distance.  
@@ -30,11 +30,11 @@ La plupart des applications consomment ou produisent des données. [!INCLUDE[ndp
 ## <a name="local-data"></a>Données locales  
  Avec [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], vous pouvez charger et stocker des données localement à l'aide de l'une des méthodes suivantes :  
   
--   Répertoire de données[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]   
+- Répertoire de données[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]   
   
--   Stockage isolé  
+- Stockage isolé  
   
--   Autres fichiers locaux  
+- Autres fichiers locaux  
   
 ### <a name="clickonce-data-directory"></a>Répertoire de données ClickOnce  
  Chaque application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installée sur un ordinateur local possède un répertoire de données stocké dans le dossier Documents and Settings de l'utilisateur. Tous les fichiers inclus dans une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] et marqués en tant que fichiers de « données » sont copiés dans ce répertoire quand une application est installée. Les fichiers de données peuvent être associés à tout type de fichier, les plus fréquemment utilisés étant les fichiers texte, XML et les fichiers de base de données tels que les fichiers .mdb de Microsoft Access.  

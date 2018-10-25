@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2dc895d6922197c3bba43b84f874d591ac75d54f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8e6a580a906ea228f04f8ec81b15eee6c143c6a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231502"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903814"
 ---
 # <a name="how-to--with-text-templates"></a>Comment : écrire avec des modèles de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,21 +54,21 @@ Modèles de texte dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] offrent un m
 ### <a name="invoke-methods-from-a-template"></a>Appeler des méthodes à partir d’un modèle  
  Si les méthodes existent déjà, par exemple, dans la norme [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] classes :  
   
--   Utiliser le \<#@assembly#> la directive pour charger l’assembly, utilisez \<#@import#> pour définir le contexte de l’espace de noms. Pour plus d’informations, consultez [Directive d’importation T4](../modeling/t4-import-directive.md).  
+- Utiliser le \<#@assembly#> la directive pour charger l’assembly, utilisez \<#@import#> pour définir le contexte de l’espace de noms. Pour plus d’informations, consultez [Directive d’importation T4](../modeling/t4-import-directive.md).  
   
-     Si fréquemment, vous utilisez le même ensemble de l’assembly et importez des directives, envisagez d’écrire un processeur de directive. Dans chaque modèle, vous pouvez appeler le processeur de directive, ce qui peut charger les assemblys et les fichiers de modèle et définir le contexte de l’espace de noms. Pour plus d’informations, consultez [processeurs de Directive modèles de création personnalisé T4 texte](../modeling/creating-custom-t4-text-template-directive-processors.md).  
+   Si fréquemment, vous utilisez le même ensemble de l’assembly et importez des directives, envisagez d’écrire un processeur de directive. Dans chaque modèle, vous pouvez appeler le processeur de directive, ce qui peut charger les assemblys et les fichiers de modèle et définir le contexte de l’espace de noms. Pour plus d’informations, consultez [processeurs de Directive modèles de création personnalisé T4 texte](../modeling/creating-custom-t4-text-template-directive-processors.md).  
   
- Si vous écrivez vous-même les méthodes :  
+  Si vous écrivez vous-même les méthodes :  
   
--   Si vous écrivez un modèle de texte de runtime, écrivez une définition de classe partielle qui a le même nom que votre modèle de texte de runtime. Ajoutez les méthodes supplémentaires dans cette classe.  
+- Si vous écrivez un modèle de texte de runtime, écrivez une définition de classe partielle qui a le même nom que votre modèle de texte de runtime. Ajoutez les méthodes supplémentaires dans cette classe.  
   
--   Écrire un bloc de contrôle de fonctionnalité de classe `<#+ ... #>` dans lequel vous pouvez déclarer méthodes, propriétés et classes privées. Lorsque le modèle de texte est compilé, il est transformé en une classe. Les blocs de contrôle standard `<#...#>` texte sont transformées en une seule méthode, et les blocs de fonctionnalité de classe sont insérés en tant que membres distincts. Pour plus d’informations, consultez [blocs de contrôle de modèles de texte](../modeling/text-template-control-blocks.md).  
+- Écrire un bloc de contrôle de fonctionnalité de classe `<#+ ... #>` dans lequel vous pouvez déclarer méthodes, propriétés et classes privées. Lorsque le modèle de texte est compilé, il est transformé en une classe. Les blocs de contrôle standard `<#...#>` texte sont transformées en une seule méthode, et les blocs de fonctionnalité de classe sont insérés en tant que membres distincts. Pour plus d’informations, consultez [blocs de contrôle de modèles de texte](../modeling/text-template-control-blocks.md).  
   
-     Méthodes définies comme des fonctionnalités de la classe peuvent également inclure des blocs de texte incorporé.  
+   Méthodes définies comme des fonctionnalités de la classe peuvent également inclure des blocs de texte incorporé.  
   
-     Envisagez de placer les fonctionnalités de la classe dans un fichier distinct que vous pouvez `<#@include#>` dans un ou plusieurs fichiers de modèle.  
+   Envisagez de placer les fonctionnalités de la classe dans un fichier distinct que vous pouvez `<#@include#>` dans un ou plusieurs fichiers de modèle.  
   
--   Écrire les méthodes dans un assembly séparé (bibliothèque de classes) et les appeler à partir de votre modèle. Utilisez le `<#@assembly#>` directive pour charger l’assembly, et `<#@import#>` pour définir le contexte de l’espace de noms. Notez que pour régénérer l’assembly pendant que vous le déboguez, vous devrez peut-être arrêter et redémarrer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pour plus d’informations, consultez [Directives de modèles de texte T4](../modeling/t4-text-template-directives.md).  
+- Écrire les méthodes dans un assembly séparé (bibliothèque de classes) et les appeler à partir de votre modèle. Utilisez le `<#@assembly#>` directive pour charger l’assembly, et `<#@import#>` pour définir le contexte de l’espace de noms. Notez que pour régénérer l’assembly pendant que vous le déboguez, vous devrez peut-être arrêter et redémarrer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pour plus d’informations, consultez [Directives de modèles de texte T4](../modeling/t4-text-template-directives.md).  
   
 ### <a name="generate-many-files-from-one-model-schema"></a>Générer de nombreux fichiers à partir d’un schéma de modèle  
  Si vous générez souvent des fichiers à partir de modèles qui ont le même schéma XML ou de base de données :  

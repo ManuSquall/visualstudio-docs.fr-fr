@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: v-brickg
-ms.openlocfilehash: 981c05e61e02746e1cbaf40e7f15553d04786a02
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: acc359d7dec2c008bec49a86357faa7227d53ff6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299336"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875071"
 ---
 # <a name="shared-colors"></a>Couleurs partagés
 Insérez l'introduction ici.  
@@ -48,10 +48,10 @@ Insérez l'introduction ici.
  Utilisez...  
  -   chaque fois que vous devez créer un menu personnalisé.  
   
--   quand vous voulez faire correspondre un nouveau composant d’interface utilisateur aux menus Visual Studio.  
+- quand vous voulez faire correspondre un nouveau composant d’interface utilisateur aux menus Visual Studio.  
   
- N’utilisez pas...  
- la couleur d’arrière-plan toute seule. Utilisez toujours la combinaison arrière-plan/premier plan spécifiée.  
+  N’utilisez pas...  
+  la couleur d’arrière-plan toute seule. Utilisez toujours la combinaison arrière-plan/premier plan spécifiée.  
   
 ##### <a name="menu-title"></a>Titre de menu  
  Les titres de menu comprennent un arrière-plan, une bordure et le texte du titre, ainsi qu’un glyphe facultatif, généralement quand le menu se trouve dans une barre de commandes.  
@@ -64,9 +64,9 @@ Insérez l'introduction ici.
  N’utilisez pas...  
  -   pour tout élément que vous ne voulez pas toujours faire correspondre au titre de menu.  
   
--   dans une combinaison arrière-plan/premier plan autre que celle spécifiée.  
+- dans une combinaison arrière-plan/premier plan autre que celle spécifiée.  
   
- **Default**  
+  **Default**  
   
 |Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -113,9 +113,9 @@ Insérez l'introduction ici.
  N’utilisez pas...  
  -   pour toute liste déroulante qui apparaît dans un autre contexte.  
   
--   dans une combinaison arrière-plan/premier plan autre que celle spécifiée.  
+- dans une combinaison arrière-plan/premier plan autre que celle spécifiée.  
   
- **Default**  
+  **Default**  
   
 |Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -180,9 +180,9 @@ Insérez l'introduction ici.
  N’utilisez pas...  
  -   pour les éléments d’interface utilisateur non similaires à une barre de commandes.  
   
--   pour les composants de barre de commandes autres que ceux pour lesquels des noms de jeton sont spécifiés.  
+- pour les composants de barre de commandes autres que ceux pour lesquels des noms de jeton sont spécifiés.  
   
- **Par défaut** (aucun autre état)  
+  **Par défaut** (aucun autre état)  
   
 |Élément|Nom du jeton : Category.color|  
 |-------------|--------------------------------|  
@@ -202,9 +202,9 @@ Insérez l'introduction ici.
  N’utilisez pas...  
  -   pour les contrôles qui possèdent leurs propres noms de jeton.  
   
--   dans une combinaison arrière-plan/premier plan autre que celle spécifiée.  
+- dans une combinaison arrière-plan/premier plan autre que celle spécifiée.  
   
- **Default**  
+  **Default**  
   
 |Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -252,14 +252,14 @@ Insérez l'introduction ici.
  Utilisez...  
  -   pour créer des zones de liste modifiable personnalisées.  
   
--   pour créer un contrôle de barre de commandes similaire à une zone de liste modifiable.  
+- pour créer un contrôle de barre de commandes similaire à une zone de liste modifiable.  
   
- N’utilisez pas...  
- -   pour tout élément que vous ne voulez pas toujours faire correspondre à l’interface utilisateur de la barre de commandes.  
+  N’utilisez pas...  
+  -   pour tout élément que vous ne voulez pas toujours faire correspondre à l’interface utilisateur de la barre de commandes.  
   
--   quand vous avez accès à une zone de liste modifiable qui comporte un style.  
+- quand vous avez accès à une zone de liste modifiable qui comporte un style.  
   
- **Default**  
+  **Default**  
   
 |Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -333,9 +333,9 @@ Insérez l'introduction ici.
  N’utilisez pas...  
  -   pour tout élément qui n’est pas similaire à une liste déroulante.  
   
--   pour les zones de liste modifiable ou les boutons partagés.  
+- pour les zones de liste modifiable ou les boutons partagés.  
   
- **Default**  
+  **Default**  
   
 |Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -397,9 +397,9 @@ Insérez l'introduction ici.
  N’utilisez pas...  
  -   pour les autres types de boutons.  
   
--   dans une combinaison arrière-plan/premier plan autre que celle spécifiée.  
+- dans une combinaison arrière-plan/premier plan autre que celle spécifiée.  
   
- **Default**  
+  **Default**  
   
 |Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -550,19 +550,19 @@ Insérez l'introduction ici.
 ##### <a name="open-document-tabs"></a>Onglets de document ouvert  
  Chaque document ouvert possède un onglet dans le canal d’onglet de document qui affiche son nom. Les documents peuvent être soit sélectionnés, soit ouverts en arrière-plan et leurs onglets reflètent ces états :  
   
--   L’onglet sélectionné représente le document actuellement affiché dans la zone de configuration de document. Un onglet sélectionné a une bordure de document qui s’étend sur le bord supérieur de la zone de configuration de document.  
+- L’onglet sélectionné représente le document actuellement affiché dans la zone de configuration de document. Un onglet sélectionné a une bordure de document qui s’étend sur le bord supérieur de la zone de configuration de document.  
   
--   Les onglets d’arrière-plan sont les onglets de document qui ne sont pas l’onglet actuellement sélectionné. Une fois que vous cliquez dessus, ils deviennent l’onglet sélectionné et acquièrent toutes les couleurs d’arrière-plan, de bordure et de texte de ces noms de jeton.  
+- Les onglets d’arrière-plan sont les onglets de document qui ne sont pas l’onglet actuellement sélectionné. Une fois que vous cliquez dessus, ils deviennent l’onglet sélectionné et acquièrent toutes les couleurs d’arrière-plan, de bordure et de texte de ces noms de jeton.  
   
- ![Ligne rouge d’onglet de document ouvert](../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303-073_OpenDocumentTabRedline")  
+  ![Ligne rouge d’onglet de document ouvert](../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303-073_OpenDocumentTabRedline")  
   
- Utilisez...  
- quand vous créez des onglets de document personnalisés.  
+  Utilisez...  
+  quand vous créez des onglets de document personnalisés.  
   
- N’utilisez pas...  
- -   pour des onglets provisoires (en version préliminaire).  
+  N’utilisez pas...  
+  -   pour des onglets provisoires (en version préliminaire).  
   
--   pour toute interface utilisateur que vous ne voulez pas modifier automatiquement si l’interpréteur de commandes comporte une mise à jour de thème.  
+- pour toute interface utilisateur que vous ne voulez pas modifier automatiquement si l’interpréteur de commandes comporte une mise à jour de thème.  
   
 ##### <a name="selected-tab"></a>Onglet sélectionné  
  **Focus**  
@@ -611,9 +611,9 @@ Insérez l'introduction ici.
  N’utilisez pas...  
  -   pour tout type de document ou d’onglet qui n’est pas provisoire (en version préliminaire).  
   
--   pour toute interface utilisateur que vous ne voulez pas modifier automatiquement si l’interpréteur de commandes comporte une mise à jour de thème.  
+- pour toute interface utilisateur que vous ne voulez pas modifier automatiquement si l’interpréteur de commandes comporte une mise à jour de thème.  
   
- **Onglet d’aperçu sélectionné : focus**  
+  **Onglet d’aperçu sélectionné : focus**  
   
 |Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -658,9 +658,9 @@ Insérez l'introduction ici.
  N’utilisez pas...  
  -   pour une interface utilisateur qui n’est pas similaire à un bouton de dépassement de capacité.  
   
--   pour des boutons de dépassement de capacité de barre de commandes.  
+- pour des boutons de dépassement de capacité de barre de commandes.  
   
- **Default**  
+  **Default**  
   
 |Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -765,9 +765,9 @@ Insérez l'introduction ici.
  N’utilisez pas...  
  -   pour les boutons qui apparaissent à d’autres endroits.  
   
--   dans une combinaison arrière-plan/premier plan autre que celle spécifiée.  
+- dans une combinaison arrière-plan/premier plan autre que celle spécifiée.  
   
- **Default**  
+  **Default**  
   
 |Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -870,25 +870,25 @@ Insérez l'introduction ici.
   
  Une zone de recherche peut être dans plusieurs états, dont certains s’excluent mutuellement :  
   
--   Les états « avec focus » ou « sans focus » font référence à la présence ou non du curseur dans la zone de texte.  
+- Les états « avec focus » ou « sans focus » font référence à la présence ou non du curseur dans la zone de texte.  
   
--   Les états « actif » ou « inactif » font référence à l’éventuel entrée par l’utilisateur d’une requête de recherche dans la zone de texte.  
+- Les états « actif » ou « inactif » font référence à l’éventuel entrée par l’utilisateur d’une requête de recherche dans la zone de texte.  
   
--   L’état « pointage » signifie que l’utilisateur a placé le curseur de la souris au-dessus de la zone de recherche (cet état remplace tous les autres états).  
+- L’état « pointage » signifie que l’utilisateur a placé le curseur de la souris au-dessus de la zone de recherche (cet état remplace tous les autres états).  
   
--   L’état « désactivé » signifie que la fonctionnalité de recherche est désactivée pour le contexte actuel.  
+- L’état « désactivé » signifie que la fonctionnalité de recherche est désactivée pour le contexte actuel.  
   
- ![Ligne rouge de zone de recherche](../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303-110_SearchBoxRedline")  
+  ![Ligne rouge de zone de recherche](../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303-110_SearchBoxRedline")  
   
- Utilisez...  
- quand vous concevez une zone de recherche personnalisée.  
+  Utilisez...  
+  quand vous concevez une zone de recherche personnalisée.  
   
- N’utilisez pas...  
- -   pour tout élément qui n’est pas une zone de recherche.  
+  N’utilisez pas...  
+  -   pour tout élément qui n’est pas une zone de recherche.  
   
--   pour tout élément que vous ne voulez pas toujours faire correspondre à l’interface utilisateur de la zone de recherche.  
+- pour tout élément que vous ne voulez pas toujours faire correspondre à l’interface utilisateur de la zone de recherche.  
   
- **Focus**  
+  **Focus**  
   
 |Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -969,14 +969,14 @@ Insérez l'introduction ici.
  Utilisez...  
  -   quand vous créez une liste déroulante de recherche personnalisée.  
   
--   les noms de jeton corrects pour les composants de liste corrects.  
+- les noms de jeton corrects pour les composants de liste corrects.  
   
- N’utilisez pas...  
- -   pour les listes déroulantes qui apparaissent dans d’autres contextes.  
+  N’utilisez pas...  
+  -   pour les listes déroulantes qui apparaissent dans d’autres contextes.  
   
--   dans une combinaison arrière-plan/premier plan autre que celle spécifiée.  
+- dans une combinaison arrière-plan/premier plan autre que celle spécifiée.  
   
- **Par défaut (aucun autre état)**  
+  **Par défaut (aucun autre état)**  
   
 |Élément|Nom du jeton : Category.color|  
 |-------------|--------------------------------|  
@@ -1133,9 +1133,9 @@ Insérez l'introduction ici.
  N’utilisez pas...  
  -   pour tout élément qui n’est pas similaire à une arborescence.  
   
--   dans une combinaison arrière-plan/premier plan autre que celle spécifiée.  
+- dans une combinaison arrière-plan/premier plan autre que celle spécifiée.  
   
- **Default**  
+  **Default**  
   
 |Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -1295,9 +1295,9 @@ Insérez l'introduction ici.
  N’utilisez pas...  
  -   pour toute interface utilisateur qui n’est pas une zone déroulante ou une zone de liste modifiable.  
   
--   pour un [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown) ou [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox) dans la barre de commandes.  
+- pour un [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown) ou [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox) dans la barre de commandes.  
   
- **Default**  
+  **Default**  
   
 |Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -1428,12 +1428,12 @@ Insérez l'introduction ici.
  Utilisez...  
  -   pour les concepteurs qui sont similaires au concepteur de manifeste.  
   
--   au lieu d’utiliser des contrôles d’onglet commun en haut d’un éditeur au sein de la zone de configuration de document.  
+- au lieu d’utiliser des contrôles d’onglet commun en haut d’un éditeur au sein de la zone de configuration de document.  
   
- N’utilisez pas...  
- -   si vous avez plus de six onglets.  
+  N’utilisez pas...  
+  -   si vous avez plus de six onglets.  
   
--   pour toute interface utilisateur qui n’est pas structurée comme le concepteur de manifeste.  
+- pour toute interface utilisateur qui n’est pas structurée comme le concepteur de manifeste.  
   
 |État|Composant|Élément|Nom du jeton : Category.color|  
 |-----------|---------------|-------------|--------------------------------|  
@@ -1550,10 +1550,10 @@ Insérez l'introduction ici.
  Utilisez...  
  -   pour les zones où vous placez des menus ou barres d’outils.  
   
--   avec la combinaison de nom de jeton correcte d’arrière-plan/premier plan.  
+- avec l’arrière-plan correct / combinaison de nom de jeton de premier plan.  
   
- N’utilisez pas...  
- pour les zones qui ne sont pas similaires à une interface de commande.  
+  N’utilisez pas...  
+  pour les zones qui ne sont pas similaires à une interface de commande.  
   
 |Composant|Élément|Nom du jeton : Category.color|  
 |---------------|-------------|--------------------------------|  

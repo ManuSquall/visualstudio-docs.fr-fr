@@ -25,12 +25,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a51372b48eb01f0ff424c6919b572646235039f4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8c8803394c4f6d31db187384304f8fbb1db4468
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194831"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820094"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,21 +63,21 @@ Vous pouvez installer et afficher le contenu de divers produits et technologies 
   
  La barre d'outils de la fenêtre de la visionneuse d'aide contient les boutons suivants :  
   
--   Le bouton **Afficher la rubrique dans le sommaire** affiche l’emplacement de la rubrique sous l’onglet **Sommaire**.  
+- Le bouton **Afficher la rubrique dans le sommaire** affiche l’emplacement de la rubrique sous l’onglet **Sommaire**.  
   
--   Le bouton **Ajouter aux favoris** ajoute la rubrique active à l’onglet **Favoris**.  
+- Le bouton **Ajouter aux favoris** ajoute la rubrique active à l’onglet **Favoris**.  
   
--   Le bouton **Chercher dans la rubrique** met en surbrillance le texte de recherche dans la rubrique active.  
+- Le bouton **Chercher dans la rubrique** met en surbrillance le texte de recherche dans la rubrique active.  
   
--   Le bouton **Imprimer** imprime ou affiche un aperçu de la rubrique active.  
+- Le bouton **Imprimer** imprime ou affiche un aperçu de la rubrique active.  
   
--   Le bouton **Options de la visionneuse** affiche des paramètres comme la taille du texte affiché, le nombre de résultats de recherche à retourner, le nombre de rubriques à afficher dans l’historique et s’il faut rechercher les mises à jour en ligne.  
+- Le bouton **Options de la visionneuse** affiche des paramètres comme la taille du texte affiché, le nombre de résultats de recherche à retourner, le nombre de rubriques à afficher dans l’historique et s’il faut rechercher les mises à jour en ligne.  
   
--   Le bouton **Gérer le contenu** active l’onglet **Gérer le contenu**.  
+- Le bouton **Gérer le contenu** active l’onglet **Gérer le contenu**.  
   
--   Le petit triangle ouvre une liste d’onglets, y compris les onglets de la rubrique et l’onglet **Gérer le contenu**. Sélectionnez un onglet pour l'activer.  
+- Le petit triangle ouvre une liste d’onglets, y compris les onglets de la rubrique et l’onglet **Gérer le contenu**. Sélectionnez un onglet pour l'activer.  
   
- La partie inférieure de la fenêtre de la visionneuse d'aide contient des informations sur la taille totale des téléchargements en attente, la quantité d'espace disque nécessaire et la quantité d'espace disque disponible. Cette zone contient également des informations sur les erreurs qui se sont éventuellement produites et un lien que vous pouvez sélectionner pour actualiser le contenu installé, si des mises à jour sont disponibles.  
+  La partie inférieure de la fenêtre de la visionneuse d'aide contient des informations sur la taille totale des téléchargements en attente, la quantité d'espace disque nécessaire et la quantité d'espace disque disponible. Cette zone contient également des informations sur les erreurs qui se sont éventuellement produites et un lien que vous pouvez sélectionner pour actualiser le contenu installé, si des mises à jour sont disponibles.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide de l’administrateur Help Viewer](../ide/help-viewer-administrator-guide.md)   

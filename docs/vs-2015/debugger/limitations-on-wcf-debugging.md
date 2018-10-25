@@ -22,25 +22,25 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e28ee8c4fa17eca8f2b5419b1d9aefb229fd020
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5e5d49b70cc594a05bae8056fe8139e405e15cba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219152"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888097"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Limitations du débogage WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il existe trois façons de commencer à déboguer un service WCF :  
   
--   Vous déboguez un processus client qui appelle un service. Le débogueur effectue un pas à pas détaillé dans le service. Le service n'a pas besoin d'être dans la même solution que votre application cliente.  
+- Vous déboguez un processus client qui appelle un service. Le débogueur effectue un pas à pas détaillé dans le service. Le service n'a pas besoin d'être dans la même solution que votre application cliente.  
   
--   Vous déboguez un processus client qui fait une demande à un service. Le service doit faire partie de votre solution.  
+- Vous déboguez un processus client qui fait une demande à un service. Le service doit faire partie de votre solution.  
   
--   Vous utilisez **attacher au processus** à attacher à un service qui est en cours d’exécution. Le débogage commence à l'intérieur du service.  
+- Vous utilisez **attacher au processus** à attacher à un service qui est en cours d’exécution. Le débogage commence à l'intérieur du service.  
   
- Cette rubrique décrit les limitations relatives à ces scénarios.  
+  Cette rubrique décrit les limitations relatives à ces scénarios.  
   
 ## <a name="limitations-on-stepping-into-a-service"></a>Limitations relatives au pas à pas détaillé dans un service  
  Pour effectuer un pas à pas détaillé dans un service à partir d'une application cliente que vous déboguez, les conditions suivantes doivent être satisfaites :  

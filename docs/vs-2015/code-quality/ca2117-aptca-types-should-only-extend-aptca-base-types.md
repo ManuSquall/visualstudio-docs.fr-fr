@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 409133c173f497b1f21b36c7d8c4c89561c0aa15
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4b069674827ab266b4a4b7a99f81e039d487f6da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171455"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922644"
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117 : Les types APTCA doivent uniquement étendre des types de base APTCA
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AptcaTypesShouldOnlyExtendAptcaBaseTypes|
@@ -44,15 +45,15 @@ ms.locfileid: "49171455"
 
  Lorsque l’attribut APTCA est présent sur un assembly entièrement fiable, et un type dans l’assembly hérite d’un type qui n’autorise pas les appelants partiellement approuvés, une faille de sécurité est possible. Si deux types `T1` et `T2` remplir les conditions suivantes, des appelants malveillants peuvent utiliser le type `T1` pour contourner la demande de l’héritage de confiance totale implicite qui protège `T2`:
 
--   `T1` un type public est déclaré dans un assembly entièrement fiable qui possède l’attribut APTCA.
+- `T1` un type public est déclaré dans un assembly entièrement fiable qui possède l’attribut APTCA.
 
--   `T1` hérite d’un type `T2` hors de son assembly.
+- `T1` hérite d’un type `T2` hors de son assembly.
 
--   `T2`d’assembly n’a pas l’attribut APTCA et, doit donc pas être héritée par les types dans les assemblys de confiance partiel.
+- `T2`d’assembly n’a pas l’attribut APTCA et, doit donc pas être héritée par les types dans les assemblys de confiance partiel.
 
- Un type de niveau de confiance partiel `X` peut hériter de `T1`, ce qui lui donne accès aux membres hérités déclarés dans `T2`. Étant donné que `T2` n’a pas l’attribut APTCA, son type dérivé immédiat (`T1`) doit satisfaire une demande d’héritage pour une confiance totale ; `T1` dispose d’une confiance totale et par conséquent satisfait cette vérification. Le risque de sécurité est car `X` ne participe pas à satisfaire la demande d’héritage qui protège `T2` à partir de sous-classement non approuvé. Pour cette raison, les types avec l’attribut APTCA ne doivent pas étendre les types qui n’ont pas l’attribut.
+  Un type de niveau de confiance partiel `X` peut hériter de `T1`, ce qui lui donne accès aux membres hérités déclarés dans `T2`. Étant donné que `T2` n’a pas l’attribut APTCA, son type dérivé immédiat (`T1`) doit satisfaire une demande d’héritage pour une confiance totale ; `T1` dispose d’une confiance totale et par conséquent satisfait cette vérification. Le risque de sécurité est car `X` ne participe pas à satisfaire la demande d’héritage qui protège `T2` à partir de sous-classement non approuvé. Pour cette raison, les types avec l’attribut APTCA ne doivent pas étendre les types qui n’ont pas l’attribut.
 
- Un autre problème de sécurité et peut-être un plus courant, qui est le type dérivé (`T1`) peut, par le biais des erreurs de programmation, exposer des membres protégés du type qui requiert une confiance totale (`T2`). Lorsque cela se produit, les appelants non approuvés ont accès aux informations qui doivent être disponibles uniquement aux types de niveau de confiance suffisant.
+  Un autre problème de sécurité et peut-être un plus courant, qui est le type dérivé (`T1`) peut, par le biais des erreurs de programmation, exposer des membres protégés du type qui requiert une confiance totale (`T2`). Lorsque cela se produit, les appelants non approuvés ont accès aux informations qui doivent être disponibles uniquement aux types de niveau de confiance suffisant.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Si le type indiqué par la violation est dans un assembly qui ne nécessite pas l’attribut APTCA, supprimez-le.

@@ -16,12 +16,12 @@ ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 35150331ed22960bb8556a7b1175e0ed629efca7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f8c442aec21042faa4aa992dcdefc4f9d2ad335
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292979"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812983"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Comment : installer un plug-in de contrôle de code Source
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -98,16 +98,16 @@ Création d’un contrôle de source de plug-in implique trois étapes :
 ## <a name="how-an-ide-locates-the-dll"></a>Comment un IDE localise la DLL  
  Le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE dispose de deux façons de trouver la source de contrôlent les DLL de plug-in :  
   
--   Plug-in de trouver le contrôle de code source par défaut et s’y connecter en mode silencieux.  
+- Plug-in de trouver le contrôle de code source par défaut et s’y connecter en mode silencieux.  
   
--   Trouver source inscrite tous les plug-ins de contrôle, à partir de laquelle l’utilisateur choisit une.  
+- Trouver source inscrite tous les plug-ins de contrôle, à partir de laquelle l’utilisateur choisit une.  
   
- Pour trouver la DLL dans la première méthode, l’IDE se présente sous la sous-clé HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider pour l’entrée ProviderRegKey. La valeur de cette entrée pointe vers une autre sous-clé. L’interface IDE recherche ensuite une entrée nommée SccServerPath dans ce deuxième sous-clé sous HKEY_LOCAL_MACHINE. La valeur de cette entrée pointe l’IDE à la DLL.  
+  Pour trouver la DLL dans la première méthode, l’IDE se présente sous la sous-clé HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider pour l’entrée ProviderRegKey. La valeur de cette entrée pointe vers une autre sous-clé. L’interface IDE recherche ensuite une entrée nommée SccServerPath dans ce deuxième sous-clé sous HKEY_LOCAL_MACHINE. La valeur de cette entrée pointe l’IDE à la DLL.  
   
 > [!NOTE]
 >  L’IDE ne charge pas les DLL à partir de chemins d’accès relatifs (par exemple,.\NewProvider.DLL). Un chemin d’accès complet à la DLL doit être spécifié (par exemple, c:\Providers\NewProvider.DLL). Cela renforce la sécurité de l’IDE en empêchant le chargement des DLL de plug-in non autorisés ou avec emprunt d’identité.  
   
- Pour trouver la DLL dans la deuxième méthode, l’IDE se présente sous la sous-clé HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders pour toutes les entrées *.* Chaque entrée comporte un nom et une valeur. L’IDE affiche une liste de ces noms à l’utilisateur *.* Lorsque l’utilisateur choisit un nom, l’IDE détecte que la valeur pour le nom sélectionné qui pointe vers une sous-clé. L’interface IDE recherche une entrée nommée SccServerPath dans cette sous-clé sous HKEY_LOCAL_MACHINE. La valeur de cette entrée pointe l’IDE à la DLL correcte.  
+ Pour trouver la DLL dans la deuxième méthode, l’IDE se présente sous la sous-clé HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders pour toutes les entrées<em>.</em> Chaque entrée comporte un nom et une valeur. L’IDE affiche une liste de ces noms à l’utilisateur<em>.</em> Lorsque l’utilisateur choisit un nom, l’IDE détecte que la valeur pour le nom sélectionné qui pointe vers une sous-clé. L’interface IDE recherche une entrée nommée SccServerPath dans cette sous-clé sous HKEY_LOCAL_MACHINE. La valeur de cette entrée pointe l’IDE à la DLL correcte.  
   
  Un plug-in de contrôle de code source doit prendre en charge les deux façons de trouver la DLL et, par conséquent, définissez ProviderRegKey, en remplaçant tout paramètre antérieur. Plus important encore, il doit lui-même ajouter à la liste des InstalledSccProviders afin de l’utilisateur peut avoir le choix entre le plug-in de contrôle de code source à utiliser.  
   

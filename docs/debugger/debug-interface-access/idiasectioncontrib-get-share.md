@@ -1,5 +1,5 @@
 ---
-title: IDiaSectionContrib::get_share | Documents Microsoft
+title: IDiaSectionContrib::get_share | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c9a0745ce98ed4cea920c25d914d7884c6fd5f96
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 67a4632521c21a17495ccb9e969ee53fcf2b6d40
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460187"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849214"
 ---
 # <a name="idiasectioncontribgetshare"></a>IDiaSectionContrib::get_share
 Récupère un indicateur qui indique si la section peut être partagée dans la mémoire.  

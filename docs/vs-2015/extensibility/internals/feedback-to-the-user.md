@@ -18,12 +18,12 @@ ms.assetid: 2d472a24-3813-4f5f-9783-b491ad8a71ad
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0eb2942d0449e69ef25e26e6194d67bc7b0484e0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f5f567ecad10e900cc57ed210526b077cd5e94f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263836"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882234"
 ---
 # <a name="feedback-to-the-user"></a>Commentaires à l’utilisateur
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,27 +42,27 @@ Dans le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] environnement de dévelo
   
  Si vous n'apparaître que la fonctionnalité utilisateurs avez besoin et fournissent en permanence une sélection cohérente et commentaires de contexte d’environnement, vous réduisez la complexité dans l’IDE. Les règles suivantes s’appliquent à chaque fois qu’une fenêtre est ouverte dans l’IDE :  
   
--   Si la fenêtre change son contexte de sélection, des commentaires de sélection sont clairement indiquée dans la fenêtre, et la fenêtre Aide dynamique, si indiqué, est mis à jour pour refléter le contexte actuel.  
+- Si la fenêtre change son contexte de sélection, des commentaires de sélection sont clairement indiquée dans la fenêtre, et la fenêtre Aide dynamique, si indiqué, est mis à jour pour refléter le contexte actuel.  
   
--   Si la fenêtre change le contexte de la sélection globale, tous les menus spécifiques au contexte, la fenêtre de la hiérarchie active et la barre de titre d’application sont mis à jour pour refléter le contexte actuel.  
+- Si la fenêtre change le contexte de la sélection globale, tous les menus spécifiques au contexte, la fenêtre de la hiérarchie active et la barre de titre d’application sont mis à jour pour refléter le contexte actuel.  
   
--   La fenêtre doit faire apparaître les propriétés pour la sélection actuelle dans le **propriétés** fenêtre et, éventuellement, si indiqué, le **Pages de propriétés** boîte de dialogue.  
+- La fenêtre doit faire apparaître les propriétés pour la sélection actuelle dans le **propriétés** fenêtre et, éventuellement, si indiqué, le **Pages de propriétés** boîte de dialogue.  
   
--   Si la fenêtre ne pas exposer des propriétés ou modifier le contexte de sélection global, des commentaires de sélection ne doivent pas rester dans la fenêtre lorsqu’il n’est plus la fenêtre active dans l’IDE.  
+- Si la fenêtre ne pas exposer des propriétés ou modifier le contexte de sélection global, des commentaires de sélection ne doivent pas rester dans la fenêtre lorsqu’il n’est plus la fenêtre active dans l’IDE.  
   
--   Toutes les fenêtres Outil de document spécifique doivent refléter en permanence le document actif.  
+- Toutes les fenêtres Outil de document spécifique doivent refléter en permanence le document actif.  
   
--   Menus, barres d’outils et la barre de titre d’application doivent refléter la fenêtre du client au premier plan interface multidocument (MDI).  
+- Menus, barres d’outils et la barre de titre d’application doivent refléter la fenêtre du client au premier plan interface multidocument (MDI).  
   
- Par exemple, lorsque la vue HTML d’un formulaire Web à l’intérieur d’un projet d’Application Web de Visual Basic est ouvert et que l’utilisateur sélectionne un `<td>` balise, est tenu de la manière suivante :  
+  Par exemple, lorsque la vue HTML d’un formulaire Web à l’intérieur d’un projet d’Application Web de Visual Basic est ouvert et que l’utilisateur sélectionne un `<td>` balise, est tenu de la manière suivante :  
   
--   Sélection est indiquée dans la fenêtre active et reflétée dans le **propriétés** fenêtre.  
+- Sélection est indiquée dans la fenêtre active et reflétée dans le **propriétés** fenêtre.  
   
--   Spécifique au document **boîte à outils** est mis à jour le document actif.  
+- Spécifique au document **boîte à outils** est mis à jour le document actif.  
   
--   Le **éditeur** barre d’outils et **Table** menu sont affichées et mises à jour de la barre de titre afin de refléter la fenêtre du formulaire Web.  
+- Le **éditeur** barre d’outils et **Table** menu sont affichées et mises à jour de la barre de titre afin de refléter la fenêtre du formulaire Web.  
   
--   La fenêtre hiérarchie active, qui est généralement **l’Explorateur de solutions**et sa mise à jour de barre de titre afin de refléter le contexte actuel et le contextuelle **projet** maintenant appliqueront des commandes de menu pour le site Web actif Projet d’application.  
+- La fenêtre hiérarchie active, qui est généralement **l’Explorateur de solutions**et sa mise à jour de barre de titre afin de refléter le contexte actuel et le contextuelle **projet** maintenant appliqueront des commandes de menu pour le site Web actif Projet d’application.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Sélection et la devise dans l’IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)   

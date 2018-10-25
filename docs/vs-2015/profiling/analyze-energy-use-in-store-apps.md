@@ -19,12 +19,12 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f58737a75564bc31ee3916c3a6876a03e25000cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 86d1959d6850ae73d38970a197f8b369310fac3d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189252"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824423"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>Analyser l'utilisation de l'énergie dans les applications du Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ Le profileur **Consommation d'énergie** de Visual Studio vous aide à analyser 
   
  Le profileur de consommation d'énergie utilise les définitions de *puissance* et d' *énergie*suivantes :  
   
--   La*puissance* est la mesure de la force utilisée pour effectuer une tâche sur une période donnée. En électricité, l’unité de mesure de la puissance est le *watt*. Un watt correspond à la puissance avec laquelle un ampère de courant parcourt une différence de potentiel électrique d’un volt. Dans le graphique **Consommation d’énergie** , les unités sont affichées en milliwatts ( **mW** ). Un milliwatt représente un millième de watt.  
+- La*puissance* est la mesure de la force utilisée pour effectuer une tâche sur une période donnée. En électricité, l’unité de mesure de la puissance est le *watt*. Un watt correspond à la puissance avec laquelle un ampère de courant parcourt une différence de potentiel électrique d’un volt. Dans le graphique **Consommation d’énergie** , les unités sont affichées en milliwatts ( **mW** ). Un milliwatt représente un millième de watt.  
   
-     La puissance étant un taux, elle a une direction (l’intensité peut augmenter ou baisser dans une période donnée) et une vitesse (le volume d’augmentation ou de baisse d’intensité).  
+   La puissance étant un taux, elle a une direction (l’intensité peut augmenter ou baisser dans une période donnée) et une vitesse (le volume d’augmentation ou de baisse d’intensité).  
   
--   L'*énergie* mesure la puissance totale, comme une capacité ou un potentiel, telle la capacité de puissance d'une batterie, ou comme la puissance totale consommée au cours d'une période donnée. L'unité d'énergie est le watt-heure, la quantité de puissance d'un watt constamment appliquée à une heure. Dans le **Résumé d'énergie**, les unités sont affichées sous forme de milliwatts heure **mW-h**.  
+- L'*énergie* mesure la puissance totale, comme une capacité ou un potentiel, telle la capacité de puissance d'une batterie, ou comme la puissance totale consommée au cours d'une période donnée. L'unité d'énergie est le watt-heure, la quantité de puissance d'un watt constamment appliquée à une heure. Dans le **Résumé d'énergie**, les unités sont affichées sous forme de milliwatts heure **mW-h**.  
   
- ![Capacité d’énergie, énergie utilisée, énergie totale utilisée](../profiling/media/energyprof-capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
+  ![Capacité d’énergie, énergie utilisée, énergie totale utilisée](../profiling/media/energyprof-capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
   
- Par exemple, la batterie entièrement chargée d'une tablette stocke une certaine quantité d'énergie. Lorsque l'énergie est utilisée pour effectuer des tâches telles que la communication sur un réseau, le calcul de valeurs, ou l'affichage de graphiques, la puissance de la batterie se dissipe à des taux différents. Pour une période définie, le total de puissance consommé est également mesuré en énergie.  
+  Par exemple, la batterie entièrement chargée d'une tablette stocke une certaine quantité d'énergie. Lorsque l'énergie est utilisée pour effectuer des tâches telles que la communication sur un réseau, le calcul de valeurs, ou l'affichage de graphiques, la puissance de la batterie se dissipe à des taux différents. Pour une période définie, le total de puissance consommé est également mesuré en énergie.  
   
 ##  <a name="BKMK_Identify_scenarios_with_user_marks"></a> Identifier des scénarios avec des marques utilisateur  
  Vous pouvez ajouter des *marques utilisateur* à vos données de profilage pour vous aider à identifier des zones dans la chronologie.  
@@ -65,8 +65,8 @@ Le profileur **Consommation d'énergie** de Visual Studio vous aide à analyser 
  Lors de l'exécution de la méthode, une marque utilisateur est ajoutée aux données de profilage accompagnées d'un message.  
   
 > [!NOTE]
->  -   Windows.Foundation.Diagnostics LoggingChannel implémente le [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) interface (projetée en tant que [System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) en c# et Visual Basic). Pour éviter la fuite des ressources du système d’exploitation, appelez [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (Windows.Foundation.Diagnostics.LoggingChannel.Dispose() en c# et Visual Basic) lorsque vous avez terminé avec un canal d’enregistrement.  
-> -   Chaque canal d'enregistrement ouvert doit avoir un nom unique. La tentative de création d'un canal d'enregistrement avec un nom identique comme un canal non supprimé entraîne une exception.  
+> - Windows.Foundation.Diagnostics LoggingChannel implémente le [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) interface (projetée en tant que [System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) en c# et Visual Basic). Pour éviter la fuite des ressources du système d’exploitation, appelez [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (Windows.Foundation.Diagnostics.LoggingChannel.Dispose() en c# et Visual Basic) lorsque vous avez terminé avec un canal d’enregistrement.  
+>   -   Chaque canal d'enregistrement ouvert doit avoir un nom unique. La tentative de création d'un canal d'enregistrement avec un nom identique comme un canal non supprimé entraîne une exception.  
   
  Consultez la page [LoggingSession Sample](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) concernant un exemple du Kit de développement logiciel (SDK) Windows.  
   
@@ -86,9 +86,9 @@ if (performance && performance.mark) {
  Pour obtenir des estimations correctes, effectuez le profilage de l'utilisation d'énergie de l'application sur un périphérique de faible puissance alimenté par batterie. Visual Studio ne s'exécutant pas sur la plupart de ces périphériques, vous devez connecter votre ordinateur Visual Studio au périphérique à l'aide des Outils de contrôle à distance Visual Studio. Pour se connecter à un appareil distant, vous devez configurer le projet Visual Studio et l'appareil distant. Pour plus d’informations, consultez [Exécuter des applications du Windows Store sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 > [!TIP]
->  -   Nous ne recommandons pas le profilage d'énergie sur le simulateur Windows Store ou sur l'ordinateur Visual Studio. Les données collectées lors d'un profilage sur le périphérique réel sont beaucoup plus réalistes.  
-> -   Effectuez le profilage sur le périphérique cible alors qu'il est alimenté par batterie.  
-> -   Fermez les applications pouvant utiliser les mêmes ressources (réseau, UC, ou affichage).  
+> - Nous ne recommandons pas le profilage d'énergie sur le simulateur Windows Store ou sur l'ordinateur Visual Studio. Les données collectées lors d'un profilage sur le périphérique réel sont beaucoup plus réalistes.  
+>   -   Effectuez le profilage sur le périphérique cible alors qu'il est alimenté par batterie.  
+>   -   Fermez les applications pouvant utiliser les mêmes ressources (réseau, UC, ou affichage).  
   
 ##  <a name="BKMK_Collect_energy_profile_data_for_your_app"></a> Collecter les données de profil d'énergie de votre application  
   
@@ -112,15 +112,15 @@ if (performance && performance.mark) {
 ##  <a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a> Collecter les données de profil d'énergie d'une application installée  
  L'outil Consommation d'énergie ne peut être exécuté que sur des Applications Windows Store 8.1, lancées à partir d'une solution Visual Studio ou installées depuis le Windows Store. Lorsqu'une solution est ouverte dans Visual Studio, la cible par défaut est le **Projet de démarrage**. Pour cibler une application installée :  
   
-1.  Choisissez **Modifier la cible** puis **Application installée**.  
+1. Choisissez **Modifier la cible** puis **Application installée**.  
   
-2.  Dans la liste **Sélectionner le package d'application installé** , choisissez la cible.  
+2. Dans la liste **Sélectionner le package d'application installé** , choisissez la cible.  
   
-3.  Choisissez **Consommation d'énergie** dans la page du concentrateur de diagnostic.  
+3. Choisissez **Consommation d'énergie** dans la page du concentrateur de diagnostic.  
   
-4.  Choisissez **Démarrer** pour démarrer le profilage.  
+4. Choisissez **Démarrer** pour démarrer le profilage.  
   
- Pour arrêter le profilage, rebasculez vers Visual Studio (Alt + Tab) et cliquez sur **Arrêter la collecte** sur la page du hub de diagnostic.  
+   Pour arrêter le profilage, rebasculez vers Visual Studio (Alt + Tab) et cliquez sur **Arrêter la collecte** sur la page du hub de diagnostic.  
   
 ##  <a name="BKMK_Analyze_energy_profile_data"></a> Analyser des données de profil d'énergie  
  Les données de profil d'énergie s'affichent dans la fenêtre de document de Visual Studio :  

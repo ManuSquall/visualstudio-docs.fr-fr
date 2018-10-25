@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 117bf47fb5a733dfba02da98b5cae610a0aab5c7
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 7690d1c67797c3a13dc22364d93d8af686e4f90c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228850"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892049"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Installer les analyseurs FxCop dans Visual Studio
 
@@ -28,7 +28,7 @@ Vous pouvez installer ces analyseurs FxCop sous la forme d’un package NuGet ou
 
 1. [Déterminer la version du package analyseur](#fxcopanalyzers-package-versions) à installer, selon votre version de Visual Studio.
 
-1. Installez le package dans Visual Studio, à l’aide la [Console du Gestionnaire de Package](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) ou [Package Manager UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
+2. Installez le package dans Visual Studio, à l’aide la [Console du Gestionnaire de Package](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) ou [Package Manager UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
 
    > [!NOTE]
    > La page de nuget.org pour chaque package de l’analyseur vous montre la commande Coller dans le **Console du Gestionnaire de Package**. Il existe même un bouton pratique pour copier le texte dans le Presse-papiers.
@@ -43,14 +43,14 @@ Vous pouvez installer ces analyseurs FxCop sous la forme d’un package NuGet ou
 
 Utilisez les instructions suivantes pour déterminer la version du package analyseurs FxCop à installer pour votre version de Visual Studio :
 
-|Version de Visual Studio|Version du package analyseur FxCop|
-|-|-|
-|Visual Studio 2017 version 15.5 et versions ultérieure|2.6.2, par exemple https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2|
-|Visual Studio 2017 version 15.3 à 15.4|2.3.0-Beta1, par exemple https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1|
-|Visual Studio 2017 version 15.0 pour 15.2|2.0.0-Beta2, par exemple https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2|
-|Visual Studio 2015 update 2 et 3|1.2.0-beta2 de version, par exemple https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.2.0-beta2|
-|Visual Studio 2015 Update 1|Version 1.1.0, par exemple https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.1.|
-|Visual Studio 2015 RTW|Version 1.0.1, par exemple https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.0.1|
+| Version de Visual Studio | Version du package analyseur FxCop |
+| - | - |
+| Visual Studio 2017 version 15.5 et versions ultérieure | 2.6.2, par exemple https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2 |
+| Visual Studio 2017 version 15.3 à 15.4 | 2.3.0-Beta1, par exemple https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1 |
+| Visual Studio 2017 version 15.0 pour 15.2 | 2.0.0-Beta2, par exemple https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2 |
+| Visual Studio 2015 update 2 et 3 | 1.2.0-beta2 de version, par exemple https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.2.0-beta2 |
+| Visual Studio 2015 Update 1 | Version 1.1.0, par exemple https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.1. |
+| Visual Studio 2015 RTW | Version 1.0.1, par exemple https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.0.1 |
 
 ## <a name="to-install-fxcop-analyzers-as-a-vsix"></a>Pour installer les analyseurs FxCop en tant qu’une extension VSIX
 

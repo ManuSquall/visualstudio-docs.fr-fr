@@ -1,5 +1,5 @@
 ---
-title: LocationType | Documents Microsoft
+title: LocationType | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb46eb1c7477f93ed63dfc4424d881886c8d0c8f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e816ac9dca3c70e88ae023b4fda4edf0b99f9c96
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480002"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872094"
 ---
 # <a name="locationtype"></a>LocationType
 Indique le type d’informations d’emplacement contenues dans un symbole.  
@@ -66,10 +66,10 @@ enum LocationType {
  Se trouve dans un champ de bits.  
   
  `LocIsSlot`  
- Emplacement est un emplacement Microsoft Intermediate Language (MSIL).  
+ Emplacement est un emplacement de langage MSIL (Microsoft Intermediate Language).  
   
  `LocIsIlRel`  
- Emplacement est relatif à la MSIL.  
+ Emplacement est relatif à MSIL.  
   
  `LocInMetaData`  
  Se trouve dans les métadonnées.  
@@ -78,14 +78,14 @@ enum LocationType {
  Emplacement est une valeur constante.  
   
  `LocTypeMax`  
- Le nombre de types d’emplacement de cette énumération.  
+ Le nombre de types d’emplacement dans cette énumération.  
   
 ## <a name="remarks"></a>Notes  
- Les propriétés disponibles pour le [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) interface dépendent d’emplacement du symbole dans le fichier image. Pour plus d’informations, consultez [emplacements de symboles](../../debugger/debug-interface-access/symbol-locations.md).  
+ Les propriétés disponibles pour le [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) interface varient selon l’emplacement du symbole dans le fichier image. Pour plus d’informations, consultez [emplacements de symboles](../../debugger/debug-interface-access/symbol-locations.md).  
   
- Les valeurs de cette énumération sont retournées par un appel à la [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) (méthode).  
+ Les valeurs dans cette énumération sont retournées par un appel à la [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) (méthode).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : cvconst.h  
   
 ## <a name="see-also"></a>Voir aussi  

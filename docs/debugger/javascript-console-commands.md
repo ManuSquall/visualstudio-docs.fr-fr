@@ -14,16 +14,16 @@ manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 8642d59beb845bf2784d09133a590a4716897ed4
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f10439e63b95fc2e78980ceb585e32dbbabd44d9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282207"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823747"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Commandes de JavaScript Console dans Visual Studio
   
- Vous pouvez utiliser des commandes pour envoyer des messages et effectuer d’autres tâches dans la fenêtre de console JavaScript de Visual Studio. Pour obtenir des exemples qui illustrent l’utilisation de cette fenêtre, consultez [Guide de démarrage rapide : déboguer le JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Les informations contenues dans cette rubrique s’applique aux applications UWP et les applications créées à l’aide de Visual Studio Tools pour Apache Cordova. Pour plus d’informations sur les commandes de console prises en charge dans les applications Cordova, consultez [déboguer votre application](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Pour plus d’informations sur l’utilisation de la console dans les outils F12 d’Internet Explorer, consultez [cette rubrique](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85)).  
+ Vous pouvez utiliser des commandes pour envoyer des messages et effectuer d’autres tâches dans la fenêtre de console JavaScript de Visual Studio. Pour obtenir des exemples qui illustrent l’utilisation de cette fenêtre, consultez [Guide de démarrage rapide : déboguer le JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). Les informations contenues dans cette rubrique s’applique aux applications UWP et les applications créées à l’aide de Visual Studio Tools pour Apache Cordova. Pour plus d’informations sur les commandes de console prises en charge dans les applications Cordova, consultez [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/). Pour obtenir des informations sur l’utilisation de la console dans les outils de développement F12 d’Internet Explorer, consultez [cette rubrique](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85)).  
   
  Si la fenêtre de la console JavaScript est fermée, vous pouvez l’ouvrir pendant le débogage dans Visual Studio en choisissant **Déboguer** > **Windows** > **Console JavaScript**.  
   
@@ -55,7 +55,7 @@ ms.locfileid: "44282207"
 |`msIsIndependentlyComposed(element)`|Utilisée dans les applications web. Pas de prise en charge dans les applications UWP à l’aide de JavaScript.|Non pris en charge.|  
 |`profile(reportName)`|Utilisée dans les applications web. Pas de prise en charge dans les applications UWP à l’aide de JavaScript.|Non pris en charge.|  
 |`profileEnd()`|Utilisée dans les applications web. Pas de prise en charge dans les applications UWP à l’aide de JavaScript.|Non pris en charge.|  
-|`select(element)`|Sélectionne le code HTML spécifié `element` dans le [Explorateur DOM](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|  
+|`select(element)`|Sélectionne le paramètre `element` HTML spécifié dans l’ [Explorateur DOM](../debugger/quickstart-debug-html-and-css.md).|console.select(element);|  
 |`time (name)`|Démarre une minuterie identifiée par le paramètre facultatif `name` . Utilisée avec `console.timeEnd`, calcule le temps qui s’écoule entre `time` et `timeEnd`, puis envoie le résultat (mesuré en ms) à la console à l’aide de la chaîne `name` comme préfixe. Utilisée pour permettre l’instrumentation du code d’application pour mesurer les performances.|`console.time("app start");  app.start();  console.timeEnd("app start");`|  
 |`timeEnd(name)`|Arrête une minuterie identifiée par le paramètre facultatif `name` . Consultez la commande de console `time` .|`console.time("app start"); app.start(); console.timeEnd("app start");`|  
 |`trace()`|Envoie une trace de la pile à la fenêtre de console. La trace comprend la pile d’appels complète, ainsi que des informations telles que le nom de fichier, le numéro de ligne et le numéro de colonne.|`console.trace();`|  
@@ -70,7 +70,7 @@ ms.locfileid: "44282207"
 |`$(id)`|Retourne un élément par ID. Il s’agit d’une commande de raccourci pour `document.getElementById(id)`, où `id` est une chaîne qui représente l’ID d’élément.|`$("contenthost")`|  
 |`$$(selector)`|Retourne un tableau des éléments qui correspondent au sélecteur spécifié à l’aide de la syntaxe du sélecteur CSS. Il s’agit d’une commande de raccourci pour `document.querySelectorAll()`.|`$$(".itemlist")`|  
 |`cd()`<br /><br /> `cd(window)`|Permet de modifier le contexte pour l’évaluation des expressions de la fenêtre de niveau supérieur par défaut de la page jusqu’à la fenêtre du frame spécifié. L’appel de `cd()` sans paramètres retourne le contexte dans la fenêtre de niveau supérieur.|`cd();`<br /><br /> `cd(myframe);`|  
-|`select(element)`|Sélectionne l’élément spécifié dans [Explorateur DOM](../debugger/quickstart-debug-html-and-css.md).|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|  
+|`select(element)`|Sélectionne l’élément spécifié dans l’ [explorateur DOM](../debugger/quickstart-debug-html-and-css.md).|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|  
 |`dir(object)`|Retourne un visualiseur pour l’objet spécifié. Utilisez le visualiseur pour examiner les propriétés dans la fenêtre de la console.|`dir(obj);`|  
   
 ## <a name="checking-whether-a-console-command-exists"></a>Vérifier s’il existe une commande de console  
@@ -104,16 +104,16 @@ console.log(user.first, user.last);
   
  Les modèles de substitution suivants sont pris en charge :  
   
--   %s - chaîne  
-     %i - entier  
-     %d - entier  
-     %f - flottant  
-     %o - objet  
-     %b - binaire  
-     %x - hexadécimal  
-     %e - exposant  
+- %s - chaîne  
+   %i - entier  
+   %d - entier  
+   %f - flottant  
+   %o - objet  
+   %b - binaire  
+   %x - hexadécimal  
+   %e - exposant  
   
- Voici quelques exemples d’utilisation de modèles de substitution dans `console.log`:  
+  Voici quelques exemples d’utilisation de modèles de substitution dans `console.log`:  
   
 ```javascript  
 var user = new Object();  

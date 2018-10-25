@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO_FIELDS | Documents Microsoft
+title: MODULE_INFO_FIELDS | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcc6bd76a4a9aecade72347613ed4f36968c65eb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cf01cb2573922adb5d8b5b4bc26b10b839009dda
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125927"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832848"
 ---
 # <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
 Spécifie les indicateurs pour les informations de module de débogage.  
@@ -66,52 +66,52 @@ public enum enum_MODULE_INFO_FIELDS {
   
 ## <a name="members"></a>Membres  
  MIF_NONE  
- Initialisation/utiliser aucun des champs dans la structure.  
+ Initialize/utiliser aucun des champs dans la structure.  
   
  MIF_NAME  
- Initialisation/utiliser le `m_bstrName` champ dans le [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) structure.  
+ Initialize/utiliser le `m_bstrName` champ dans le [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) structure.  
   
  MIF_URL  
- Initialisation/utiliser le `m_bstrUrl` champ dans le `MODULE_INFO` structure.  
+ Initialize/utiliser le `m_bstrUrl` champ dans le `MODULE_INFO` structure.  
   
  MIF_VERSION  
- Initialisation/utiliser le `m_bstrVersion` champ dans le `MODULE_INFO` structure.  
+ Initialize/utiliser le `m_bstrVersion` champ dans le `MODULE_INFO` structure.  
   
  MIF_DEBUGMESSAGE  
- Initialisation/utiliser le `m_bstrDebugMessage` champ dans le `MODULE_INFO` structure.  
+ Initialize/utiliser le `m_bstrDebugMessage` champ dans le `MODULE_INFO` structure.  
   
  MIF_LOADADDRESS  
- Initialisation/utiliser le `m_addrLoadAddress` champ dans le `MODULE_INFO` structure.  
+ Initialize/utiliser le `m_addrLoadAddress` champ dans le `MODULE_INFO` structure.  
   
  MIF_PREFFEREDADDRESS  
- Initialisation/utiliser le `m_addrPreferredLoadAddress` champ dans le `MODULE_INFO` structure.  
+ Initialize/utiliser le `m_addrPreferredLoadAddress` champ dans le `MODULE_INFO` structure.  
   
  MIF_SIZE  
- Initialisation/utiliser le `m_dwSize` champ dans le `MODULE_INFO` structure.  
+ Initialize/utiliser le `m_dwSize` champ dans le `MODULE_INFO` structure.  
   
  MIF_LOADORDER  
- Initialisation/utiliser le `m_dwLoadOrder` champ dans le `MODULE_INFO` structure.  
+ Initialize/utiliser le `m_dwLoadOrder` champ dans le `MODULE_INFO` structure.  
   
  MIF_TIMESTAMP  
- Initialisation/utiliser le `m_TimeStamp` champ dans le `MODULE_INFO` structure.  
+ Initialize/utiliser le `m_TimeStamp` champ dans le `MODULE_INFO` structure.  
   
  MIF_URLSYMBOLLOCATION  
- Initialisation/utiliser le `m_bstrUrlSymbolLocation` champ dans le `MODULE_INFO` structure.  
+ Initialize/utiliser le `m_bstrUrlSymbolLocation` champ dans le `MODULE_INFO` structure.  
   
  MIF_FLAGS  
- Initialisation/utiliser le `m_dwModuleFlags` champ dans le `MODULE_INFO` structure.  
+ Initialize/utiliser le `m_dwModuleFlags` champ dans le `MODULE_INFO` structure.  
   
  MIF_ALLFIELDS  
- Initialisation/utiliser tous les champs dans le `MODULE_INFO` structure.  
+ Initialize/utiliser tous les champs dans le `MODULE_INFO` structure.  
   
 ## <a name="remarks"></a>Notes  
  Ces valeurs sont passées en tant qu’argument à la [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) méthode pour indiquer les champs de la [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) structure doivent être initialisées.  
   
- Ces valeurs sont également utilisées dans le `MODULE_INFO` structure pour indiquer les champs qui sont utilisés et valide.  
+ Ces valeurs sont également utilisées dans le `MODULE_INFO` structure pour indiquer quels champs sont utilisés et valide.  
   
- Ces indicateurs peuvent être combinées avec une opération de bits `OR`.  
+ Ces indicateurs peuvent être combinées avec un opérateur de bits `OR`.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

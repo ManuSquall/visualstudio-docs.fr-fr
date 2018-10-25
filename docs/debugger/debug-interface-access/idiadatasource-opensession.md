@@ -1,5 +1,5 @@
 ---
-title: IDiaDataSource::openSession | Documents Microsoft
+title: IDiaDataSource::openSession | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39fe9bf3a67d3ad5f26ff7c4ccdaa9772cf1346b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8266102e8bc2c347ed8a554a3c64d9504f1e863b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459865"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933506"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 Ouvre une session pour l’interrogation des symboles.  
@@ -48,7 +48,7 @@ HRESULT openSession (
 ## <a name="remarks"></a>Notes  
  Cette méthode ouvre un [IDiaSession](../../debugger/debug-interface-access/idiasession.md) objet pour une source de données.  
   
- `IDiaSession` objets d’implémenter des requêtes dans la source de données. Une session gère un espace d’adressage pour chaque ensemble de symboles de débogage. Si le fichier .exe ou .dll décrit par les symboles de source de données est active dans la zone Adresse plusieurs plages (par exemple, étant donné que plusieurs processus ont chargé), puis une session pour chaque plage d’adresses doit être utilisée.  
+ `IDiaSession` objets implémentent des requêtes dans la source de données. Une session gère un espace d’adressage pour chaque ensemble de symboles de débogage. Si le fichier .exe ou .dll décrit par les symboles de source de données est actif dans la zone Adresse plusieurs plages d’adresses (par exemple, étant donné que plusieurs processus ont charger), puis une session pour chaque plage d’adresses doit être utilisée.  
   
 ## <a name="example"></a>Exemple  
   

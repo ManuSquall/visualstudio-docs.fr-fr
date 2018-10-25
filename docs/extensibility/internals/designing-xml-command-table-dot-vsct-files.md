@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7a28e8ea14d27eb96100a4f1f67a875746dc5f6
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4e94d93d407f7499afbd43c8af2b7532ca1b4d8e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499261"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934559"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Concevoir des fichiers XML command table (.vsct)
 Une table de commande XML (*.vsct*) fichier décrit la disposition et l’apparence des éléments de commande pour un VSPackage. Éléments de commande incluent des boutons, des zones de liste déroulante, des menus, des barres d’outils et des groupes d’éléments de la commande. Cet article décrit les fichiers de table de commande XML, comment elles affectent les menus et éléments de commande et comment les créer.
@@ -33,37 +33,37 @@ Une table de commande XML (*.vsct*) fichier décrit la disposition et l’appare
 ## <a name="differences-between-ctc-and-vsct-files"></a>Différences entre les fichiers .ctc et .vsct
  Tandis que la signification derrière le code XML des balises dans un *.vsct* fichier sont les mêmes que ces balises dans désormais déconseillé *.ctc* format de fichier, leur implémentation est un peu différente :
 
--   La nouvelle  **\<extern >** balise est où vous font référence à d’autres *.h* fichiers à compiler, tels que ces fichiers pour le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] barre d’outils.
+- La nouvelle  **\<extern >** balise est où vous font référence à d’autres *.h* fichiers à compiler, tels que ces fichiers pour le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] barre d’outils.
 
--   Tandis que *.vsct* fichiers de prise en charge la **/ include** instruction, en tant que *.ctc* font des fichiers, il comporte également un nouveau  **\<Importer >** élément. La différence est, **/ include** permet d’utiliser *tous les* des informations, tandis que  **\<Importer >** permet d’utiliser uniquement les noms.
+- Tandis que *.vsct* fichiers de prise en charge la **/ include** instruction, en tant que *.ctc* font des fichiers, il comporte également un nouveau  **\<Importer >** élément. La différence est, **/ include** permet d’utiliser *tous les* des informations, tandis que  **\<Importer >** permet d’utiliser uniquement les noms.
 
--   Bien que *.ctc* fichiers nécessitent un fichier d’en-tête dans lequel vous définissez vos directives de préprocesseur, un n’est pas obligatoire pour *.vsct* fichiers. Au lieu de cela, placez vos directives dans la table de symboles, située dans le  **\<symbole >** éléments, situés en bas de la *.vsct* fichier.
+- Bien que *.ctc* fichiers nécessitent un fichier d’en-tête dans lequel vous définissez vos directives de préprocesseur, un n’est pas obligatoire pour *.vsct* fichiers. Au lieu de cela, placez vos directives dans la table de symboles, située dans le  **\<symbole >** éléments, situés en bas de la *.vsct* fichier.
 
--   *.VSCT* fonctionnalité des fichiers d’un  **\<Annotation >** balise, qui vous permet d’incorporer des informations que vous le souhaitez, telles que des notes ou même d’images.
+- *.VSCT* fonctionnalité des fichiers d’un  **\<Annotation >** balise, qui vous permet d’incorporer des informations que vous le souhaitez, telles que des notes ou même d’images.
 
--   Les valeurs sont stockées en tant qu’attributs sur l’élément.
+- Les valeurs sont stockées en tant qu’attributs sur l’élément.
 
--   Indicateurs de commande peuvent être stockées individuellement ou empilés.  Toutefois, IntelliSense, ne fonctionne pas sur les indicateurs de commande empilées. Pour plus d’informations sur les indicateurs de commande, consultez le [CommandFlag élément](../../extensibility/command-flag-element.md).
+- Indicateurs de commande peuvent être stockées individuellement ou empilés.  Toutefois, IntelliSense, ne fonctionne pas sur les indicateurs de commande empilées. Pour plus d’informations sur les indicateurs de commande, consultez le [CommandFlag élément](../../extensibility/command-flag-element.md).
 
--   Vous pouvez spécifier plusieurs types, tels que les listes déroulantes de fractionnement, combos, etc.
+- Vous pouvez spécifier plusieurs types, tels que les listes déroulantes de fractionnement, combos, etc.
 
--   Ne valident pas les GUID.
+- Ne valident pas les GUID.
 
--   Chaque élément d’interface utilisateur a une chaîne qui représente le texte qui s’affiche avec lui.
+- Chaque élément d’interface utilisateur a une chaîne qui représente le texte qui s’affiche avec lui.
 
--   Le parent est facultatif. Si omis, la valeur *groupe inconnu* est utilisé.
+- Le parent est facultatif. Si omis, la valeur *groupe inconnu* est utilisé.
 
--   Le *icône* argument est facultatif.
+- Le *icône* argument est facultatif.
 
--   Bitmap de section : cette section est le même que dans un *.ctc* de fichiers, à ceci près que vous pouvez désormais spécifier un nom de fichier par le biais de Href qui est extraites à par le *vsct.exe* compilateur au moment de la compilation.
+- Bitmap de section : cette section est le même que dans un *.ctc* de fichiers, à ceci près que vous pouvez désormais spécifier un nom de fichier par le biais de Href qui est extraites à par le *vsct.exe* compilateur au moment de la compilation.
 
--   ResID : L’ancienne image bitmap ID peut être utilisé et toujours sur le fonctionnement identique à celui de *.ctc* fichiers.
+- ResID : L’ancienne image bitmap ID peut être utilisé et toujours sur le fonctionnement identique à celui de *.ctc* fichiers.
 
--   HRef : Une nouvelle méthode qui vous permet de spécifier un nom de fichier pour la ressource bitmap. Il suppose que toutes sont utilisées, donc vous pouvez omettre la section utilisée. Le compilateur recherche tout d’abord pour les ressources locales pour le fichier, puis sur tous les partages réseau, et toutes les ressources définies par le **/I** basculer.
+- HRef : Une nouvelle méthode qui vous permet de spécifier un nom de fichier pour la ressource bitmap. Il suppose que toutes sont utilisées, donc vous pouvez omettre la section utilisée. Le compilateur recherche tout d’abord pour les ressources locales pour le fichier, puis sur tous les partages réseau, et toutes les ressources définies par le **/I** basculer.
 
--   Combinaison de touches : Vous n’avez plus à spécifier un émulateur. Si vous ne spécifiez pas un, le compilateur suppose que l’éditeur et l’émulateur sont les mêmes.
+- Combinaison de touches : Vous n’avez plus à spécifier un émulateur. Si vous ne spécifiez pas un, le compilateur suppose que l’éditeur et l’émulateur sont les mêmes.
 
--   Keychord : Keychord a été supprimé. Le nouveau format est *Mod1, Key1, Key2, le Mod2*.  Vous pouvez spécifier un caractère, hexadécimal ou constante VK.
+- Keychord : Keychord a été supprimé. Le nouveau format est *Mod1, Key1, Key2, le Mod2*.  Vous pouvez spécifier un caractère, hexadécimal ou constante VK.
        
 Le nouveau compilateur *vsct.exe*, compile les deux *.ctc* et *.vsct* fichiers. L’ancien *ctc.exe* compilateur, toutefois, ne reconnaissent pas ou ne sera pas compiler *.vsct* fichiers.
 

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5118aafae296d839ad182d51b996da11a6bc556
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 04ffdd5d0256ae0fc42b89dfa850fb0ae2d36748
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057396"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818664"
 ---
 # <a name="debugging-dll-projects-from-visual-studio"></a>Débogage de projets DLL à partir de Visual Studio
 Les modèles Visual Studio suivants créent des DLL :  
@@ -54,24 +54,24 @@ Les modèles Visual Studio suivants créent des DLL :
 ##  <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a> Ways to debug the DLL  
  Chacun des projets de cette section crée une DLL. Vous ne pouvez pas exécuter une DLL directement, celle-ci doit être appelée par une application, généralement un EXE. Pour plus d'informations, consultez [Creating and Managing Visual C++ Projects](/cpp/ide/creating-and-managing-visual-cpp-projects). L'application appelante peut satisfaire un des critères suivants :  
   
--   Une application générée dans un autre projet de la même solution [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] qui contient la bibliothèque de classes.  
+- Une application générée dans un autre projet de la même solution [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] qui contient la bibliothèque de classes.  
   
--   Une application existante déjà déployée sur un ordinateur de test ou de production.  
+- Une application existante déjà déployée sur un ordinateur de test ou de production.  
   
--   Située sur le Web et accessible via une URL.  
+- Située sur le Web et accessible via une URL.  
   
--   Une application Web qui contient une page Web incorporant la DLL.  
+- Une application Web qui contient une page Web incorporant la DLL.  
   
 ###  <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Debugging the calling application  
 Pour déboguer une DLL, commencez par déboguer l'application appelante, en général il s'agit d'un EXE ou d'une application Web. Pour cela, différentes possibilités s'offrent à vous.  
   
--   Si vous disposez d'un projet pour l'application appelante, vous pouvez ouvrir ce projet et démarrer l'exécution à partir du menu **Debug** . Pour plus d’informations, consultez [mise en route avec le débogueur](../debugger/getting-started-with-the-debugger.md).  
+- Si vous disposez d'un projet pour l'application appelante, vous pouvez ouvrir ce projet et démarrer l'exécution à partir du menu **Debug** . Pour plus d’informations, consultez [mise en route avec le débogueur](../debugger/getting-started-with-the-debugger.md).  
   
--   Si l'application appelante est un programme existant déjà déployé sur un ordinateur de test ou de production et qu'elle est en cours d'exécution, vous pouvez y attacher le débogueur. Utilisez cette méthode si la DLL est un contrôle hébergé par Internet Explorer ou un contrôle sur une page Web. Pour plus d'informations, consultez [How to: Attach to a Running Process](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
+- Si l'application appelante est un programme existant déjà déployé sur un ordinateur de test ou de production et qu'elle est en cours d'exécution, vous pouvez y attacher le débogueur. Utilisez cette méthode si la DLL est un contrôle hébergé par Internet Explorer ou un contrôle sur une page Web. Pour plus d'informations, consultez [How to: Attach to a Running Process](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
--   Vous pouvez la déboguer à partir du projet de DLL. Pour plus d'informations, consultez [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md).  
+- Vous pouvez la déboguer à partir du projet de DLL. Pour plus d'informations, consultez [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md).  
   
--   Vous pouvez la déboguer à partir de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [fenêtre exécution](#vxtskdebuggingdllprojectstheimmediatewindow). Dans ce cas, la fenêtre **Exécution** joue le rôle de l'application.  
+- Vous pouvez la déboguer à partir de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [fenêtre exécution](#vxtskdebuggingdllprojectstheimmediatewindow). Dans ce cas, la fenêtre **Exécution** joue le rôle de l'application.  
   
 Avant de commencer le débogage de l'application appelante, vous devez généralement définir un point d'arrêt dans la bibliothèque de classes. Pour plus d’informations, consultez [Using Breakpoints](../debugger/using-breakpoints.md). Lorsque le point d'arrêt est atteint, vous pouvez exécuter le code pas à pas, en observant chaque action ligne par ligne, jusqu'à ce que vous ayez isolé le problème. Pour plus d’informations, consultez [parcourir le code dans le débogueur](../debugger/navigating-through-code-with-the-debugger.md).
   
@@ -110,7 +110,7 @@ Si vous déboguez une DLL externe à votre projet, les fonctionnalités de débo
 
 Votre projet doit être en mesure de trouver la DLL et le fichier .pdb utilisé pour le débogage. Vous pouvez créer une tâche de génération personnalisée pour copier ces fichiers à la  **\<dossier du projet > \Debug** dossier de sortie, ou vous pouvez copier les fichiers dans le dossier de sortie manuellement.
 
-Vous pouvez facilement définir des emplacements de fichiers d’en-tête et fichiers de *.lib dans les Pages de propriétés (cliquez sur le projet C++ et choisissez **afficher les propriétés**, puis choisissez **toutes les Configurations**) sans avoir à copier les dans votre dossier de sortie :
+Vous pouvez facilement définir les emplacements des fichiers d’en-tête et <em>fichiers .lib dans les Pages de propriétés (cliquez sur le projet C++ et choisissez ** Afficher les propriétés</em><em>, puis choisissez **toutes les Configurations</em>* ) sans avoir besoin de les copier dans votre dossier de sortie :
 
 - Dossier C/C++ (catégorie Général) - spécifiez le dossier contenant les fichiers d’en-tête dans le **autres répertoires Include** champ.
 - Dossier de l’éditeur de liens (catégorie Général) - spécifiez le dossier contenant le fichier .lib dans les **répertoires de bibliothèques supplémentaires** champ. 

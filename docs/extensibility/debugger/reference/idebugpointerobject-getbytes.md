@@ -1,5 +1,5 @@
 ---
-title: IDebugPointerObject::GetBytes | Documents Microsoft
+title: IDebugPointerObject::GetBytes | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1459a0f99dd4b0ea9c9e998404b1ffe1733cb3bf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 106472037873045b0b30381e6ce901c89b342bae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115864"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916544"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
 Obtient la valeur désignée comme une série d’octets consécutifs.  
@@ -53,7 +53,7 @@ int GetBytes(
  [in] Le nombre d’octets à récupérer.  
   
  `pBytes`  
- [dans, out] Un tableau qui est rempli avec la valeur comme une série d’octets consécutifs, en commençant à l’offset donné à partir de l’objet vers lequel pointe.  
+ [in, out] Un tableau est rempli avec la valeur comme une série d’octets consécutifs, en commençant à l’offset donné à partir de l’objet désigné.  
   
  `pdwBytes`  
  [out] Retourne le nombre d’octets réellement récupérées.  

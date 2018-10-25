@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_virtualBaseTableType | Documents Microsoft
+title: IDiaSymbol::get_virtualBaseTableType | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a299b589a1104dc18559278c777e47500169a57
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 864748c478b03a26affaa622e3b25cb8c7dfd78e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480935"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895074"
 ---
 # <a name="idiasymbolgetvirtualbasetabletype"></a>IDiaSymbol::get_virtualBaseTableType
 Récupère le type d’un pointeur de la table de base virtuelle.  
@@ -45,11 +45,11 @@ HRESULT get_virtualBaseTableType(
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
 ## <a name="remarks"></a>Notes  
- Un pointeur de la table de base virtuelle (`vbtptr`) est un pointeur masqué dans un [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] vtable qui gère l’héritage de classes de base virtuelles. A `vbtptr` peuvent avoir des tailles différentes selon les classes héritées.  
+ Un pointeur de la table de base virtuelle (`vbtptr`) est un pointeur masqué dans un [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] vtable qui gère l’héritage de classes de base virtuelles. Un `vbtptr` peut avoir différentes tailles variables selon les classes héritées.  
   
- Cette méthode retourne un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet qui peut être utilisé pour déterminer la taille de la vbtptr.  
+ Cette méthode retourne un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet qui peut être utilisée pour déterminer la taille de la vbtptr.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
   
 |Spécification|Description|  
 |-----------------|-----------------|  

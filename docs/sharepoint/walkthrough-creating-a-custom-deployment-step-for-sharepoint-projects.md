@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1e5c5856217951d15042f07edb97a918e09ba777
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f42433b4ec79138e60b11e6380a6b709e74bacd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635024"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812841"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Procédure pas à pas : Créer une étape de déploiement personnalisée pour les projets SharePoint
   Lorsque vous déployez un projet SharePoint, Visual Studio exécute une série d’étapes de déploiement dans un ordre spécifique. Visual Studio inclut de nombreuses étapes de déploiement intégrées, mais vous pouvez également créer les vôtres.  
@@ -45,28 +45,28 @@ ms.locfileid: "42635024"
 ## <a name="prerequisites"></a>Prérequis  
  Vous avez besoin des composants suivants sur l’ordinateur de développement pour effectuer cette procédure pas à pas :  
   
--   Éditions prises en charge de Windows, SharePoint et Visual Studio.
+- Éditions prises en charge de Windows, SharePoint et Visual Studio.
   
--   Le Kit de développement logiciel avec Visual Studio. Cette procédure pas à pas utilise le **projet VSIX** modèle dans le Kit de développement logiciel pour créer un package VSIX pour déployer l’extension. Pour plus d’informations, consultez [étendre les outils SharePoint dans Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- Le Kit de développement logiciel avec Visual Studio. Cette procédure pas à pas utilise le **projet VSIX** modèle dans le Kit de développement logiciel pour créer un package VSIX pour déployer l’extension. Pour plus d’informations, consultez [étendre les outils SharePoint dans Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Connaissance des concepts suivants est utile, mais pas obligatoire, pour suivre la procédure pas à pas :  
+  Connaissance des concepts suivants est utile, mais pas obligatoire, pour suivre la procédure pas à pas :  
   
--   Utilisation du modèle d’objet de serveur pour SharePoint. Pour plus d’informations, consultez [à l’aide du modèle d’objet SharePoint Foundation côté serveur](http://go.microsoft.com/fwlink/?LinkId=177796).  
+- Utilisation du modèle d’objet de serveur pour SharePoint. Pour plus d’informations, consultez [à l’aide du modèle d’objet SharePoint Foundation côté serveur](http://go.microsoft.com/fwlink/?LinkId=177796).  
   
--   Solutions SharePoint. Pour plus d’informations, consultez [vue d’ensemble des Solutions](http://go.microsoft.com/fwlink/?LinkId=169422).  
+- Solutions SharePoint. Pour plus d’informations, consultez [vue d’ensemble des Solutions](http://go.microsoft.com/fwlink/?LinkId=169422).  
   
--   Mise à niveau des solutions SharePoint. Pour plus d’informations, consultez [la mise à niveau une Solution](http://go.microsoft.com/fwlink/?LinkId=177802).  
+- Mise à niveau des solutions SharePoint. Pour plus d’informations, consultez [la mise à niveau une Solution](http://go.microsoft.com/fwlink/?LinkId=177802).  
   
 ## <a name="create-the-projects"></a>Créer les projets
  Pour effectuer cette procédure pas à pas, vous devez créer trois projets :  
   
--   Un projet VSIX pour créer le package VSIX pour déployer l’extension.  
+- Un projet VSIX pour créer le package VSIX pour déployer l’extension.  
   
--   Un projet de bibliothèque de classes qui implémente l’extension. Ce projet doit cibler le .NET Framework 4.5.  
+- Un projet de bibliothèque de classes qui implémente l’extension. Ce projet doit cibler le .NET Framework 4.5.  
   
--   Un projet de bibliothèque de classes qui définit les commandes SharePoint personnalisées. Ce projet doit cibler le .NET Framework 3.5.  
+- Un projet de bibliothèque de classes qui définit les commandes SharePoint personnalisées. Ce projet doit cibler le .NET Framework 3.5.  
   
- Démarrer la procédure pas à pas en créant les projets.  
+  Démarrer la procédure pas à pas en créant les projets.  
   
 #### <a name="to-create-the-vsix-project"></a>Pour créer le projet VSIX  
   
@@ -250,28 +250,28 @@ ms.locfileid: "42635024"
   
 #### <a name="to-create-a-sharepoint-project-with-a-list-definition-and-a-list-instance"></a>Pour créer un projet SharePoint avec une définition de liste et une instance de liste  
   
-1.  Dans l’instance expérimentale de Visual Studio, dans la barre de menus, choisissez **fichier** > **New** > **projet**.  
+1. Dans l’instance expérimentale de Visual Studio, dans la barre de menus, choisissez **fichier** > **New** > **projet**.  
   
-2.  Dans le **nouveau projet** boîte de dialogue, développez le **Visual C#** nœud ou le **Visual Basic** nœud, développez le **SharePoint** nœud, puis choisissez le **2010** nœud.  
+2. Dans le **nouveau projet** boîte de dialogue, développez le **Visual C#** nœud ou le **Visual Basic** nœud, développez le **SharePoint** nœud, puis choisissez le **2010** nœud.  
   
-3.  En haut de la boîte de dialogue, assurez-vous que **.NET Framework 3.5** apparaît dans la liste des versions du .NET Framework.  
+3. En haut de la boîte de dialogue, assurez-vous que **.NET Framework 3.5** apparaît dans la liste des versions du .NET Framework.  
   
-     Pour les projets [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] et [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] requièrent cette version du .NET Framework.  
+    Pour les projets [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] et [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] requièrent cette version du .NET Framework.  
   
-4.  Dans la liste des modèles de projet, choisissez **projet SharePoint 2010**, nommez le projet **DéfinitionListeEmployés**, puis choisissez le **OK** bouton.  
+4. Dans la liste des modèles de projet, choisissez **projet SharePoint 2010**, nommez le projet **DéfinitionListeEmployés**, puis choisissez le **OK** bouton.  
   
-5.  Dans le **Assistant Personnalisation de SharePoint**, entrez l’URL du site que vous souhaitez utiliser pour le débogage.  
+5. Dans le **Assistant Personnalisation de SharePoint**, entrez l’URL du site que vous souhaitez utiliser pour le débogage.  
   
-6.  Sous **quel est le niveau de confiance de cette solution SharePoint**, choisissez le **déployer en tant que solution de batterie** case d’option.  
+6. Sous **quel est le niveau de confiance de cette solution SharePoint**, choisissez le **déployer en tant que solution de batterie** case d’option.  
   
-    > [!NOTE]  
-    >  L’étape de déploiement de mise à niveau ne prend pas en charge les solutions sandbox.  
+   > [!NOTE]  
+   >  L’étape de déploiement de mise à niveau ne prend pas en charge les solutions sandbox.  
   
-7.  Choisissez le **Terminer** bouton.  
+7. Choisissez le **Terminer** bouton.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crée le projet DéfinitionListeEmployés.  
+    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crée le projet DéfinitionListeEmployés.  
   
-8.  Ouvrez le menu contextuel pour le projet DéfinitionListeEmployés, choisissez **ajouter**, puis choisissez **un nouvel élément**.  
+8. Ouvrez le menu contextuel pour le projet DéfinitionListeEmployés, choisissez **ajouter**, puis choisissez **un nouvel élément**.  
   
 9. Dans le **ajouter un nouvel élément - DéfinitionListeEmployés** boîte de dialogue, développez le **SharePoint** nœud, puis choisissez le **2010** nœud.  
   
@@ -281,13 +281,13 @@ ms.locfileid: "42635024"
   
 11. Sur le **choisir les paramètres de liste** page, vérifiez les paramètres suivants, puis choisissez le **Terminer** bouton :  
   
-    1.  **Liste des employés** s’affiche dans le **quel nom voulez-vous afficher pour votre liste ?** boîte.  
+    1. **Liste des employés** s’affiche dans le **quel nom voulez-vous afficher pour votre liste ?** boîte.  
   
-    2.  Le **créer une liste personnalisable basée sur :** case d’option est sélectionnée.  
+    2. Le **créer une liste personnalisable basée sur :** case d’option est sélectionnée.  
   
-    3.  **Par défaut (vide)** est choisi dans la **créer une liste personnalisable basée sur :** liste.  
+    3. **Par défaut (vide)** est choisi dans la **créer une liste personnalisable basée sur :** liste.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crée l’élément de liste d’employés avec une colonne de titre et une seule instance vide et ouvre le Concepteur de la liste.  
+       [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crée l’élément de liste d’employés avec une colonne de titre et une seule instance vide et ouvre le Concepteur de la liste.  
   
 12. Dans le Concepteur de la liste, sur le **colonnes** , choisir le **tapez un nom de colonne nouveau ou existant** de ligne, puis ajoutez les colonnes suivantes dans le **colonne nom d’affichage** liste :  
   
@@ -419,29 +419,29 @@ ms.locfileid: "42635024"
   
 #### <a name="to-test-the-upgrade-deployment-step"></a>Pour tester l’étape de déploiement de mise à niveau  
   
-1.  Dans l’instance expérimentale de Visual Studio, dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **DéfinitionListeEmployés** nœud de projet, puis choisissez **propriétés**.  
+1. Dans l’instance expérimentale de Visual Studio, dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **DéfinitionListeEmployés** nœud de projet, puis choisissez **propriétés**.  
   
-     Le Concepteur/éditeur de propriétés s’ouvre.  
+    Le Concepteur/éditeur de propriétés s’ouvre.  
   
-2.  Sur le **SharePoint** onglet, définissez la **Configuration de déploiement Active** propriété **mise à niveau**.  
+2. Sur le **SharePoint** onglet, définissez la **Configuration de déploiement Active** propriété **mise à niveau**.  
   
-     Cette configuration de déploiement personnalisé inclut la nouvelle étape de déploiement de mise à niveau.  
+    Cette configuration de déploiement personnalisé inclut la nouvelle étape de déploiement de mise à niveau.  
   
-3.  Ouvrez le menu contextuel pour le **liste d’employés** l’élément de projet, puis choisissez **propriétés** ou **Open**.  
+3. Ouvrez le menu contextuel pour le **liste d’employés** l’élément de projet, puis choisissez **propriétés** ou **Open**.  
   
-     Le Concepteur/éditeur de propriétés s’ouvre.  
+    Le Concepteur/éditeur de propriétés s’ouvre.  
   
-4.  Sur le **vues** onglet, choisissez le **messagerie** colonne, puis choisissez le **<** clé pour déplacer cette colonne à partir de la **decolonnessélectionnées**list à le **colonnes disponibles** liste.  
+4. Sur le **vues** onglet, choisissez le **messagerie** colonne, puis choisissez le **<** clé pour déplacer cette colonne à partir de la **decolonnessélectionnées**list à le **colonnes disponibles** liste.  
   
-     Cette action supprime ces champs à partir de la vue par défaut de la **employés** liste sur le site SharePoint.  
+    Cette action supprime ces champs à partir de la vue par défaut de la **employés** liste sur le site SharePoint.  
   
-5.  Démarrer le débogage en choisissant le **F5** clé ou, dans la barre de menus, choisissez **déboguer** > **démarrer le débogage**.  
+5. Démarrer le débogage en choisissant le **F5** clé ou, dans la barre de menus, choisissez **déboguer** > **démarrer le débogage**.  
   
-6.  Vérifiez que le code dans l’autre instance de Visual Studio s’arrête au point d’arrêt que vous avez défini précédemment dans le `CanExecute` (méthode).  
+6. Vérifiez que le code dans l’autre instance de Visual Studio s’arrête au point d’arrêt que vous avez défini précédemment dans le `CanExecute` (méthode).  
   
-7.  Choisissez le **F5** à nouveau la clé ou, dans la barre de menus, choisissez **déboguer** > **continuer**.  
+7. Choisissez le **F5** à nouveau la clé ou, dans la barre de menus, choisissez **déboguer** > **continuer**.  
   
-8.  Vérifiez que le code s’arrête au point d’arrêt que vous avez défini précédemment dans le `Execute` (méthode).  
+8. Vérifiez que le code s’arrête au point d’arrêt que vous avez défini précédemment dans le `Execute` (méthode).  
   
 9. Choisissez le **F5** clé ou, dans la barre de menus, choisissez **déboguer** > **continuer** une dernière fois.  
   
@@ -449,11 +449,11 @@ ms.locfileid: "42635024"
   
 10. Dans le **répertorie** section de la zone de lancement rapide, choisissez le **employés** liste et vérifiez les détails suivants :  
   
-    -   L’élément que vous avez ajouté manuellement précédemment (par Andy, le responsable des installations) est toujours dans la liste.  
+    - L’élément que vous avez ajouté manuellement précédemment (par Andy, le responsable des installations) est toujours dans la liste.  
   
-    -   Le **téléphone professionnel** et **adresse de messagerie** colonnes n’apparaissent pas dans cette vue de la liste.  
+    - Le **téléphone professionnel** et **adresse de messagerie** colonnes n’apparaissent pas dans cette vue de la liste.  
   
-     Le **mise à niveau** modifie de configuration de déploiement existant **employés** instance de liste sur le site SharePoint. Si vous avez utilisé le **par défaut** configuration de déploiement au lieu du **mise à niveau** configuration, vous seriez confronté à un conflit de déploiement. Visual Studio résoudrait le conflit en remplaçant le **employés** liste et l’élément pour Andy, le responsable des installations, seraient supprimés.  
+      Le **mise à niveau** modifie de configuration de déploiement existant **employés** instance de liste sur le site SharePoint. Si vous avez utilisé le **par défaut** configuration de déploiement au lieu du **mise à niveau** configuration, vous seriez confronté à un conflit de déploiement. Visual Studio résoudrait le conflit en remplaçant le **employés** liste et l’élément pour Andy, le responsable des installations, seraient supprimés.  
   
 ## <a name="clean-up-the-development-computer"></a>Nettoyer l’ordinateur de développement
  Une fois que vous avez terminé le test de l’étape de déploiement de mise à niveau, supprimer l’instance de liste et de la définition de liste à partir du site SharePoint et supprimer l’extension d’étape de déploiement de Visual Studio.  

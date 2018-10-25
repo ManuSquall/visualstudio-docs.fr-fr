@@ -19,19 +19,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11cb05ea81f086cf8c26e3058850968a909b84e3
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 66239362e454d5ab333214c444aeee3fa54b1b8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468681"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936853"
 ---
 # <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>Commencer le débogage d’applications multithread dans Visual Studio
 Visual Studio fournit plusieurs outils et les éléments d’interface utilisateur pour vous aider à déboguer les applications multithread. Ce didacticiel montre comment utiliser des marqueurs de thread, le **piles parallèles** fenêtre, le **espion parallèle** fenêtre, points d’arrêt conditionnels et les points d’arrêt de filtre. Ce didacticiel vous prendra que quelques minutes, mais comment la compléter vous familiarisera avec les fonctionnalités de débogage d’applications multithread.
 
-|         |         |
+| | |
 |---------|---------|
-|  ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo")  |    [Regardez une vidéo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) sur le débogage multithread qui montre des étapes similaires. |
+| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | [Regardez une vidéo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) sur le débogage multithread qui montre des étapes similaires. |
 
 Autres rubriques fournissent des informations supplémentaires sur l’utilisation d’autres outils de débogage multithreads :
 
@@ -217,30 +217,30 @@ Pour commencer ce didacticiel, vous avez besoin d’un projet d’application mu
   
 #### <a name="to-start-debugging"></a>Pour démarrer le débogage  
   
-1.  Cliquez dans la marge gauche de la `Thread.Sleep` ou `this_thread::sleep_for` instruction pour insérer un nouveau point d’arrêt.  
+1. Cliquez dans la marge gauche de la `Thread.Sleep` ou `this_thread::sleep_for` instruction pour insérer un nouveau point d’arrêt.  
   
-     Dans la marge à gauche de l’éditeur de code source, un cercle rouge apparaît. Cette bille indique qu'un point d'arrêt est désormais défini à cet emplacement. 
+    Dans la marge à gauche de l’éditeur de code source, un cercle rouge apparaît. Cette bille indique qu'un point d'arrêt est désormais défini à cet emplacement. 
   
-2.  Sur le **déboguer** menu, cliquez sur **démarrer le débogage** (**F5**).  
+2. Sur le **déboguer** menu, cliquez sur **démarrer le débogage** (**F5**).  
   
-     Visual Studio génère la solution, l’application commence à s’exécuter avec le débogueur attaché, puis l’application s’arrête au point d’arrêt.  
+    Visual Studio génère la solution, l’application commence à s’exécuter avec le débogueur attaché, puis l’application s’arrête au point d’arrêt.  
   
-    > [!NOTE]
-    > Si vous basculez le focus vers la fenêtre de console, cliquez sur dans le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fenêtre pour retourner le focus à [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+   > [!NOTE]
+   > Si vous basculez le focus vers la fenêtre de console, cliquez sur dans le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fenêtre pour retourner le focus à [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-4.  Dans l’éditeur de code source, recherchez la ligne qui contient le point d’arrêt :  
+3. Dans l’éditeur de code source, recherchez la ligne qui contient le point d’arrêt :  
   
-    ```csharp  
-    Thread.Sleep(3000);  
-    ```  
+   ```csharp  
+   Thread.Sleep(3000);  
+   ```  
   
-    ```C++  
-    this_thread::sleep_for(chrono::seconds(3)); 
-    ```
+   ```C++  
+   this_thread::sleep_for(chrono::seconds(3)); 
+   ```
 
-    ```VB
-    Thread.Sleep(3000)
-    ```    
+   ```VB
+   Thread.Sleep(3000)
+   ```    
   
 #### <a name="ShowThreadsInSource"></a>Pour découvrir le marqueur de thread  
 

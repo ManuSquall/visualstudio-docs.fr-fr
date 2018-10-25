@@ -1,5 +1,5 @@
 ---
-title: DBGPROP_ATTRIB_FLAGS | Documents Microsoft
+title: DBGPROP_ATTRIB_FLAGS | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -20,12 +20,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 43db6cd118e2097d857d5c41334341c595088302
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 831f12d11515e6796941b64e114bdc084309b87d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24642009"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862409"
 ---
 # <a name="dbgpropattribflags"></a>DBGPROP_ATTRIB_FLAGS
 Décrit plusieurs attributs d'un objet `IDebugProperty`. Membre de la structure `DebugPropertyInfo`.  
@@ -107,7 +107,7 @@ DBGPROP_ATTRIB_NO_ATTRIB  =0x00000000,
  DBGPROP_ATTRIB_VALUE_IS_RETURN_VALUE  
  Indique que la valeur est une valeur de retour d'une fonction.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Ces indicateurs sont également utilisés pour filtrer les enfants d'un objet. Les valeurs peuvent être combinées avec une opération OR au niveau du bit.  
   
 ## <a name="see-also"></a>Voir aussi  

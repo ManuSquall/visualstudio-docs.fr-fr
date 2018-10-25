@@ -4,12 +4,12 @@ hide_bc: true
 title: Documentation Visual Studio | Documents Microsoft
 description: Apprenez à utiliser Visual Studio 2017 pour développer des applications, des services et des outils dans le langage de votre choix pour vos plateformes et vos appareils.
 ms.topic: hub-page
-ms.openlocfilehash: ded793e4a6ac95d2db61fdc4e275f0c59e36d0e1
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 6381432e452d78fd786bb744437627f53f433fc3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443617"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831027"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -63,7 +63,7 @@ ms.locfileid: "47443617"
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>Nouveautés dans Visual Studio 2017</h3>
+                                    <h3>Nouveautés dans Visual Studio 2017 RC</h3>
                                 </div>
                             </div>
                         </div>
@@ -156,7 +156,7 @@ Node.js</a>
                                         <div class="card">
                                             <div class="cardText">
                                                 <h3>Essayez un guide de démarrage rapide de 5 minutes</h3>
-                                                <h4>Générez « Hello, World » dans le langage de votre choix.</h4>
+                                                <h4>Générez &quot;Hello, World&quot; dans le langage de votre choix.</h4>
                                                 <table cellpadding="0" cellspacing="0" border="0">
                                                     <tr>
                                                         <td style="border-top-color:transparent!important;padding-left:0;">

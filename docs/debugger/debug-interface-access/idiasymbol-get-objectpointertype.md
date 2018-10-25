@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_objectPointerType | Documents Microsoft
+title: IDiaSymbol::get_objectPointerType | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 374c1468d627255df208a6bee616f0b2af1b8a6d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2c82c52fc49b76e6c3adb8b58bb03fafa28531f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464675"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866400"
 ---
 # <a name="idiasymbolgetobjectpointertype"></a>IDiaSymbol::get_objectPointerType
 Récupère le type du pointeur d’objet pour une méthode de classe.  
@@ -43,8 +43,8 @@ HRESULT get_objectPointerType (
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
 ## <a name="remarks"></a>Notes  
- Cette propriété s’applique uniquement aux symboles avec un [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md) le type de `SymTagFunctionType`.  
+ Cette propriété s’applique uniquement aux symboles avec un [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md) type de `SymTagFunctionType`.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md)
+ [SymTagEnum, énumération](../../debugger/debug-interface-access/symtagenum.md)

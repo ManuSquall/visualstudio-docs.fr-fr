@@ -13,12 +13,12 @@ ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a818bf9b1975692c220b2be82b2fed7ca97fad13
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a8a1336ca880a3824e16f432c07ccf0caa769f60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255747"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872536"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Images et icônes pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,21 +45,21 @@ ms.locfileid: "49255747"
 ### <a name="overview"></a>Vue d'ensemble  
  Visual Studio utilise des icônes modernes, qui ont geometry propre et 50/50 solde est positif/négatif (clair/sombre) et utilisent des métaphores directs et compréhensibles. Conception de l’icône cruciales pointe se concentrent autour de plus de clarté, de simplification et de contexte.  
   
--   **Plus de clarté :** vous concentrer sur la métaphore core qui donne une icône sa signification et la personnalité.  
+- **Plus de clarté :** vous concentrer sur la métaphore core qui donne une icône sa signification et la personnalité.  
   
--   **Simplification :** réduire l’icône à sa signification core : obtenir les le thème avec simplement l’ou les éléments nécessaires et sans fioritures.  
+- **Simplification :** réduire l’icône à sa signification core : obtenir les le thème avec simplement l’ou les éléments nécessaires et sans fioritures.  
   
--   **Contexte :** prendre en compte tous les aspects du rôle d’une icône au cours du développement de concept, ce qui est essentiel lorsque vous décidez quels éléments constituent la métaphore du cœur de l’icône.  
+- **Contexte :** prendre en compte tous les aspects du rôle d’une icône au cours du développement de concept, ce qui est essentiel lorsque vous décidez quels éléments constituent la métaphore du cœur de l’icône.  
   
- Avec des icônes, il existe un nombre de points de conception afin d’éviter :  
+  Avec des icônes, il existe un nombre de points de conception afin d’éviter :  
   
--   N’utilisez pas les icônes qui signifient l’existence des éléments d’interface utilisateur, sauf lorsque cela est approprié. Choisissez une approche plus abstraite ou symbolique lorsque l’élément d’interface utilisateur est courantes, évidente, ni unique.  
+- N’utilisez pas les icônes qui signifient l’existence des éléments d’interface utilisateur, sauf lorsque cela est approprié. Choisissez une approche plus abstraite ou symbolique lorsque l’élément d’interface utilisateur est courantes, évidente, ni unique.  
   
--   N’abusez éléments communs tels que des documents, des dossiers, des flèches et la Loupe. Utilisez ces éléments uniquement lorsqu’il est essentiel de la signification de l’icône. Par exemple, la Loupe droite doit indiquer seulement la recherche, rechercher et trouver.  
+- N’abusez éléments communs tels que des documents, des dossiers, des flèches et la Loupe. Utilisez ces éléments uniquement lorsqu’il est essentiel de la signification de l’icône. Par exemple, la Loupe droite doit indiquer seulement la recherche, rechercher et trouver.  
   
--   Bien que certains éléments d’icône héritée privilégie l’utilisation de la perspective, ne pas créer de nouvelles icônes avec le point de vue, sauf si l’élément manque de clarté sans qu’il.  
+- Bien que certains éléments d’icône héritée privilégie l’utilisation de la perspective, ne pas créer de nouvelles icônes avec le point de vue, sauf si l’élément manque de clarté sans qu’il.  
   
--   Ne récolter le plus trop d’informations dans une icône. Une image simple qui peut être facilement reconnue ou classée comme un symbole reconnaissable est beaucoup plus utile que d’une image trop complexe. Une icône ne peut pas dit pas tout.  
+- Ne récolter le plus trop d’informations dans une icône. Une image simple qui peut être facilement reconnue ou classée comme un symbole reconnaissable est beaucoup plus utile que d’une image trop complexe. Une icône ne peut pas dit pas tout.  
   
 ### <a name="icon-creation"></a>Création de l’icône  
   
@@ -266,19 +266,19 @@ ms.locfileid: "49255747"
 ### <a name="icon-construction"></a>Construction d’icône  
  La plus petite taille d’icône dans Visual Studio est 16 x 16. Le plus grand commun utilisation est 32 x 32. N’oubliez pas ne pas pour remplir la trame entière de 16 x 16, 24 x 24 ou 32 x 32 lors de la conception d’une icône. Construction de l’icône lisibles et uniforme est essentielle pour la reconnaissance de l’utilisateur. Respecter les points suivants lors de la génération des icônes.  
   
--   Icônes doivent être clairs, compréhensible et cohérente.  
+- Icônes doivent être clairs, compréhensible et cohérente.  
   
--   Il est préférable d’utiliser les éléments de notification d’état sous forme d’icônes uniques et non à s’empilent les un élément de base d’icône. Dans certains contextes, l’interface utilisateur peut nécessiter l’élément d’état à être associé à un élément de base.  
+- Il est préférable d’utiliser les éléments de notification d’état sous forme d’icônes uniques et non à s’empilent les un élément de base d’icône. Dans certains contextes, l’interface utilisateur peut nécessiter l’élément d’état à être associé à un élément de base.  
   
--   Icônes de projet sont généralement .ico qui contiennent plusieurs tailles. Seules les icônes 16 x 16, 24 x 24 et 32 x 32 sont en cours de mise à jour. La plupart des icônes 16 x 16 et 24 x 24 contiendra les mêmes éléments. Les icônes de 32 x 32 contiennent plus de détails, y compris le type de langage de projet le cas échéant.  
+- Icônes de projet sont généralement .ico qui contiennent plusieurs tailles. Seules les icônes 16 x 16, 24 x 24 et 32 x 32 sont en cours de mise à jour. La plupart des icônes 16 x 16 et 24 x 24 contiendra les mêmes éléments. Les icônes de 32 x 32 contiennent plus de détails, y compris le type de langage de projet le cas échéant.  
   
--   Pour les icônes de 32 x 32, les éléments de base ont généralement une épaisseur de trait de 2 pixels. Une épaisseur de trait de 1 ou 2 pixels peut être utilisée pour les éléments de détail. Utilisez votre appréciation pour déterminer ce qui est plus adapté.  
+- Pour les icônes de 32 x 32, les éléments de base ont généralement une épaisseur de trait de 2 pixels. Une épaisseur de trait de 1 ou 2 pixels peut être utilisée pour les éléments de détail. Utilisez votre appréciation pour déterminer ce qui est plus adapté.  
   
--   Ayant au moins un espacement de 1 pixel entre les éléments de 16 x 16 et icônes de 24 x 24. Pour les icônes de 32 x 32, utilisez 2 pixels espacement entre les éléments et entre le modificateur et un élément de base.  
+- Ayant au moins un espacement de 1 pixel entre les éléments de 16 x 16 et icônes de 24 x 24. Pour les icônes de 32 x 32, utilisez 2 pixels espacement entre les éléments et entre le modificateur et un élément de base.  
   
- ![Espacement d’éléments pour les icônes 16 x 16, 24 x 24 et 32 x 32](../../extensibility/ux-guidelines/media/0404-47-elementspacing.png "0404-47_ElementSpacing")  
+  ![Espacement d’éléments pour les icônes 16 x 16, 24 x 24 et 32 x 32](../../extensibility/ux-guidelines/media/0404-47-elementspacing.png "0404-47_ElementSpacing")  
   
- **Espacement d’éléments pour les icônes en taille réelle de 16 x 16, 24 x 24 et 32 x 32**  
+  **Espacement d’éléments pour les icônes en taille réelle de 16 x 16, 24 x 24 et 32 x 32**  
   
 #### <a name="color-and-accessibility"></a>Couleur et l’accessibilité  
  Les recommandations pour la conformité de Visual Studio nécessitent que toutes les icônes dans le produit passent les exigences d’accessibilité pour la couleur et de contraste. Ceci se fait via l’inversion de l’icône, et lors de la conception, vous devez être conscient qu’ils est inversés par programmation dans le produit.  

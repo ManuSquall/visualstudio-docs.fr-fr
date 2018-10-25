@@ -29,12 +29,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd4e1af62032920196dbd8171769f1dc079324e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ad873a4aaa71dc03a2e7cbf213d40973d73dcdf6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225353"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840985"
 ---
 # <a name="supported-code-changes-c"></a>Modifications de code prises en charge (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,31 +46,31 @@ Modifier & Continuer pour Visual C++ gère la plupart des types de modifications
 ##  <a name="BKMK_Unsupported_changes"></a> Modifications non prises en charge  
  Les modifications C/C++ suivantes ne peuvent pas être appliquées pendant une session de débogage :  
   
--   La plupart des modifications apportées aux données globales ou statiques.  
+- La plupart des modifications apportées aux données globales ou statiques.  
   
--   Modifications apportées à des exécutables copiés depuis un autre ordinateur et non générés localement.  
+- Modifications apportées à des exécutables copiés depuis un autre ordinateur et non générés localement.  
   
--   Modifications apportées à un type de données qui affectent la disposition d'un objet, comme les données membres d'une classe.  
+- Modifications apportées à un type de données qui affectent la disposition d'un objet, comme les données membres d'une classe.  
   
--   Ajout de plus de 64 Ko de nouveau code ou de nouvelles données.  
+- Ajout de plus de 64 Ko de nouveau code ou de nouvelles données.  
   
--   Ajout de variables qui nécessitent un constructeur à un point situé avant le pointeur d'instruction.  
+- Ajout de variables qui nécessitent un constructeur à un point situé avant le pointeur d'instruction.  
   
--   Modifications qui affectent le code qui nécessite une initialisation d'exécution.  
+- Modifications qui affectent le code qui nécessite une initialisation d'exécution.  
   
--   Ajout de gestionnaires d'exceptions, dans certains cas.  
+- Ajout de gestionnaires d'exceptions, dans certains cas.  
   
--   Modifications apportées aux fichiers de ressources.  
+- Modifications apportées aux fichiers de ressources.  
   
--   Modifications apportées au code de fichiers en lecture seule.  
+- Modifications apportées au code de fichiers en lecture seule.  
   
--   Modifications apportées au code sans fichier PDB correspondant.  
+- Modifications apportées au code sans fichier PDB correspondant.  
   
--   Modifications apportées au code sans fichier objet.  
+- Modifications apportées au code sans fichier objet.  
   
- Si vous procédez à l'une de ces modifications puis essayez de l'appliquer, un message d'erreur ou d'avertissement apparaît dans la fenêtre **Sortie** .  
+  Si vous procédez à l'une de ces modifications puis essayez de l'appliquer, un message d'erreur ou d'avertissement apparaît dans la fenêtre **Sortie** .  
   
--   Modifier & Continuer ne met pas à jour les bibliothèques statiques. Si vous apportez une modification dans une bibliothèque statique, l'exécution continue avec l'ancienne version et aucun avertissement n'est émis.  
+- Modifier & Continuer ne met pas à jour les bibliothèques statiques. Si vous apportez une modification dans une bibliothèque statique, l'exécution continue avec l'ancienne version et aucun avertissement n'est émis.  
   
 ##  <a name="BKMK_Unsupported_scenarios"></a> Scénarios non pris en charge  
  Modifier & Continuer pour C/C++ n'est pas disponible dans les scénarios de débogage suivants :  

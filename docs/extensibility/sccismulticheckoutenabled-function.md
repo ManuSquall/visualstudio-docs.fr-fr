@@ -1,5 +1,5 @@
 ---
-title: Fonction de SccIsMultiCheckoutEnabled | Documents Microsoft
+title: Fonction SccIsMultiCheckoutEnabled | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af7102a049cd3db072506cbf492799908196df32
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e4a71f839c2129bcfb699188dec09b02b18d4cd1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136770"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920116"
 ---
-# <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled (fonction)
+# <a name="sccismulticheckoutenabled-function"></a>Fonction SccIsMultiCheckoutEnabled
 Cette fonction vérifie si le plug-in de contrôle de code source autorise les extractions multiples sur un fichier.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -36,7 +36,7 @@ SCCRTN SccIsMultiCheckoutEnabled(
   
 #### <a name="parameters"></a>Paramètres  
  pContext  
- [in] La structure de contexte plug-in de contrôle de code source.  
+ [in] La structure de contexte de plug-in de contrôle de source.  
   
  pbMultiCheckout  
  [out] Spécifie si les extractions multiples sont activées pour ce projet (différente de zéro signifie que les extractions multiples sont pris en charge).  
@@ -50,7 +50,7 @@ SCCRTN SccIsMultiCheckoutEnabled(
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Erreur non spécifique.|  
   
 ## <a name="remarks"></a>Notes  
- L’IDE effectue deux vérifications pour déterminer si les fichiers peuvent être extraits simultanément par plusieurs utilisateurs. Tout d’abord, le système de contrôle de code source doit prendre en charge les extractions multiples. Le plug-in de contrôle de code source peut spécifier cette fonctionnalité lors de l’initialisation en spécifiant le `SCC_CAP_MULTICHECKOUT`. Par la suite, un deuxième contrôle, comme l’IDE appelle cette fonction pour déterminer si le projet actif prend en charge les extractions multiples. Si les extractions multiples sont pris en charge pour le projet sélectionné, le plug-in retourne la réussite de code et définit `pbMultiCheckout` à différente de zéro (`TRUE`) ou `FALSE`.  
+ L’IDE effectue deux vérifications pour déterminer si les fichiers peuvent être extraits simultanément par plusieurs utilisateurs. Tout d’abord, le système de contrôle de source doit prendre en charge les extractions multiples. Le plug-in de contrôle de code source peut spécifier cette fonctionnalité lors de l’initialisation en spécifiant le `SCC_CAP_MULTICHECKOUT`. Par la suite, une deuxième vérification, l’IDE appelle cette fonction pour déterminer si le projet actuel prend en charge les extractions multiples. Si les extractions multiples sont pris en charge pour le projet sélectionné, la plug-in retourne une réussite de code et définit `pbMultiCheckout` à différente de zéro (`TRUE`) ou `FALSE`.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions d’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)

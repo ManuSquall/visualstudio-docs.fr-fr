@@ -11,12 +11,12 @@ ms.author: bertaygu
 manager: douge
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 8ef7b61eca40c1a5c74deeb0b3e61de0df8a6be1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d1f2942c9f5987a686226c94e9764b8ab6300050
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637573"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934923"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Mesurer l’impact d’extension dans le démarrage
 
@@ -169,11 +169,11 @@ Pour l’exemple ci-dessus certains appel intéressante piles serait :
 
 1. À l’aide de l’e/s `System.IO` classe : alors que le coût inclusif de ces images peut ne pas être trop coûteux dans la trace, ils sont une cause potentielle d’un problème dans la mesure où la vitesse d’e/s de fichier varie d’un ordinateur à l’autre.
 
-  ![trames de système d’e/s](media/perfview-system-io-frames.png)
+   ![trames de système d’e/s](media/perfview-system-io-frames.png)
 
 2. Appels en attente sur un autre travail asynchrone de blocage : dans ce cas, temps inclusif représentent le temps que le thread principal est bloqué sur l’achèvement du travail asynchrone.
 
-  ![frames d’appels bloquants](media/perfview-blocking-call-frames.png)
+   ![frames d’appels bloquants](media/perfview-blocking-call-frames.png)
 
 Une des vues dans la trace qui seront utiles pour déterminer l’impact sera le **piles de chargement d’Image**. Vous pouvez appliquer les mêmes filtres appliqués à **threads des piles de temps** afficher et Découvrez tous les assemblys chargés en raison du code exécuté par votre package chargé automatiquement.
 

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_access | Documents Microsoft
+title: IDiaSymbol::get_access | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36ae8a1d805e548ef2dfb4c30087ef4d57625894
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 88d801ded2d871952d4737596ae13bd07b551e04
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464223"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904074"
 ---
 # <a name="idiasymbolgetaccess"></a>IDiaSymbol::get_access
 Récupère le modificateur d’accès d’un membre de classe.  
@@ -34,7 +34,7 @@ HRESULT get_access (
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne une valeur de la [cv_access_e, énumération](../../debugger/debug-interface-access/cv-access-e.md) énumération qui spécifie le modificateur d’accès d’un membre de classe.  
+ [out] Retourne une valeur de la [CV_access_e (énumération)](../../debugger/debug-interface-access/cv-access-e.md) énumération qui spécifie le modificateur d’accès d’un membre de classe.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
@@ -42,7 +42,7 @@ HRESULT get_access (
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
   
 |Spécification|Description|  
 |-----------------|-----------------|  
@@ -51,4 +51,4 @@ HRESULT get_access (
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [CV_access_e (énumération)](../../debugger/debug-interface-access/cv-access-e.md)
+ [CV_access_e, énumération](../../debugger/debug-interface-access/cv-access-e.md)

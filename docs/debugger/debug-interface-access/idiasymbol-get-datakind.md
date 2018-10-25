@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_dataKind | Documents Microsoft
+title: IDiaSymbol::get_dataKind | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c50dea6154b1616d18b7f4159468b3e22f0aa200
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e01dbb38b512832db4c3629f6169fbe3be9c3f79
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468630"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880521"
 ---
 # <a name="idiasymbolgetdatakind"></a>IDiaSymbol::get_dataKind
-Récupère la classification d’un symbole de données de variable.  
+Récupère la variable classification d’un symbole de données.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,7 +34,7 @@ HRESULT get_dataKind (
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne une valeur de la [datakind, énumération](../../debugger/debug-interface-access/datakind.md) énumération spécifiant le type de données comme global, statique ou une constante, par exemple.  
+ [out] Retourne une valeur de la [DataKind (énumération)](../../debugger/debug-interface-access/datakind.md) énumération spécifiant le type de données telles que global, statiques ou constants, par exemple.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.  
@@ -42,7 +42,7 @@ HRESULT get_dataKind (
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
   
 |Spécification|Description|  
 |-----------------|-----------------|  
@@ -51,4 +51,4 @@ HRESULT get_dataKind (
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [DataKind (énumération)](../../debugger/debug-interface-access/datakind.md)
+ [DataKind, énumération](../../debugger/debug-interface-access/datakind.md)

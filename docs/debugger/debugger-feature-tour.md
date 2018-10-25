@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2339dcfe80e994b8bc9062d137263d3b25d274d
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: d5c479251b7002e506f1dff5e64a028875aa8f80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542414"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882664"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Tout d’abord examiner le débogueur Visual Studio
 
@@ -188,7 +188,7 @@ Dans cet exemple, le `DirectoryInfo` appelle a donné l’erreur sur la chaîne 
 
 L’assistance de l’Exception est une fonctionnalité intéressante qui peut vous aider à déboguer les erreurs. Vous pouvez également effectuer des opérations comme vue Détails de l’erreur et ajouter un espion à partir de l’assistance de l’Exception. Ou, si nécessaire, vous pouvez modifier les conditions pour lever l’exception particulière.
 
->  [!NOTE]
+> [!NOTE]
 > L’assistance d’Exception remplace l’Assistant Exception dans [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Développez le **paramètres d’Exception** nœud pour afficher davantage d’options sur la gestion de ce type d’exception, mais vous n’avez pas besoin de modifier quoi que ce soit pour cette visite guidée !

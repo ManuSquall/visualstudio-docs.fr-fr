@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7c3bf48cf5f8acd24661adf2d9ae36324fadfd72
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: dcb2e0a3c381b1dd07c7724c3a64c53307856014
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671168"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951390"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Considérations de sécurité spécifiques pour les solutions Office
   Les fonctionnalités de sécurité fournies par Microsoft .NET Framework et Microsoft Office peuvent renforcer la protection contre diverses menaces possibles dans les solutions Office. Cette rubrique décrit certaines de ces menaces et fournit des recommandations pour vous protéger contre elles. Elle inclut également des informations sur l’impact des paramètres de sécurité Microsoft Office sur les solutions Office.  
@@ -55,23 +55,23 @@ ms.locfileid: "35671168"
   
  Le module de protection du modèle objet peut influer sur les compléments VSTO de différentes façons, selon qu’Outlook est utilisé avec Microsoft Exchange Server ou non :  
   
--   Si Outlook n’est pas utilisé avec Exchange, un administrateur peut activer ou désactiver le module de protection du modèle objet pour tous les compléments VSTO existant sur l’ordinateur.  
+- Si Outlook n’est pas utilisé avec Exchange, un administrateur peut activer ou désactiver le module de protection du modèle objet pour tous les compléments VSTO existant sur l’ordinateur.  
   
--   Si Outlook est utilisé avec Exchange, un administrateur peut activer ou désactiver le module de protection du modèle objet pour tous les compléments VSTO de l’ordinateur ou l’administrateur peut spécifier que certains compléments VSTO peuvent s’exécuter sans rencontrer le module de protection du modèle objet. Les administrateurs peuvent également modifier le comportement du module de protection du modèle objet dans certaines zones du modèle objet. Par exemple, les administrateurs peuvent permettre automatiquement aux compléments VSTO envoyer un e-mail par programmation, même si le dispositif object model guard est activé.  
+- Si Outlook est utilisé avec Exchange, un administrateur peut activer ou désactiver le module de protection du modèle objet pour tous les compléments VSTO de l’ordinateur ou l’administrateur peut spécifier que certains compléments VSTO peuvent s’exécuter sans rencontrer le module de protection du modèle objet. Les administrateurs peuvent également modifier le comportement du module de protection du modèle objet dans certaines zones du modèle objet. Par exemple, les administrateurs peuvent permettre automatiquement aux compléments VSTO envoyer un e-mail par programmation, même si le dispositif object model guard est activé.  
   
- À partir d’Outlook 2007, le comportement du module de protection du modèle objet a été modifié pour améliorer l’expérience du développeur et de l’utilisateur tout en sécurisant Outlook. Pour plus d’informations, consultez [Code des modifications de sécurité dans Outlook 2007](http://go.microsoft.com/fwlink/?LinkId=73429).  
+  À partir d’Outlook 2007, le comportement du module de protection du modèle objet a été modifié pour améliorer l’expérience du développeur et de l’utilisateur tout en sécurisant Outlook. Pour plus d’informations, consultez [Code des modifications de sécurité dans Outlook 2007](http://go.microsoft.com/fwlink/?LinkId=73429).  
   
 ### <a name="minimize-object-model-guard-warnings"></a>Réduire les avertissements de protection du modèle objet  
  Pour éviter les avertissements de sécurité quand vous utilisez des propriétés et méthodes restreintes, assurez-vous que votre complément VSTO obtient des objets Outlook à partir du champ `Application` de la classe `ThisAddIn` dans votre projet. Pour plus d’informations sur ce champ, consultez [programme VSTO Add-ins](../vsto/programming-vsto-add-ins.md).  
   
- Seuls les objets Outlook obtenus à partir de cet objet peuvent être approuvés par le module de protection du modèle objet. En revanche, les objets obtenus à partir d’un nouveau `Microsoft.Office.Interop.Outlook.Application` objet ne sont pas approuvés et les propriétés et méthodes restreintes déclenchent des avertissements de sécurité si le dispositif object model guard est activé.  
+ Seuls les objets Outlook obtenus à partir de cet objet peuvent être approuvés par le module de protection du modèle objet. En revanche, les objets obtenus à partir d’un nouvel objet `Microsoft.Office.Interop.Outlook.Application` ne sont pas approuvés et les propriétés et méthodes restreintes déclenchent des avertissements de sécurité si le module de protection du modèle objet est activé.  
   
- L’exemple de code suivant affiche un avertissement de sécurité si le module de protection du modèle objet est activé. Le `To` propriété de la `Microsoft.Office.Interop.Outlook.MailItem` classe est limitée par le dispositif object model guard. Le `Microsoft.Office.Interop.Outlook.MailItem` objet n’est pas approuvé car le code l’obtient à partir d’un `Microsoft.Office.Interop.Outlook.Application` qui est créé à l’aide la **nouvelle** opérateur, au lieu de l’obtenir à partir la `Application` champ.  
+ L’exemple de code suivant affiche un avertissement de sécurité si le module de protection du modèle objet est activé. La propriété `To` de la classe `Microsoft.Office.Interop.Outlook.MailItem` est restreinte par le module de protection du modèle objet. Le `Microsoft.Office.Interop.Outlook.MailItem` objet n’est pas approuvé car le code l’obtient à partir d’un `Microsoft.Office.Interop.Outlook.Application` qui est créé à l’aide la **nouvelle** opérateur, au lieu de l’obtenir à partir la `Application` champ.  
   
  [!code-csharp[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#1)]
  [!code-vb[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#1)]  
   
- L’exemple de code suivant montre comment utiliser restreint à la propriété d’un `Microsoft.Office.Interop.Outlook.MailItem` objet qui est approuvé par le dispositif object model guard. Le code utilise la confiance `Application` champ à obtenir le `Microsoft.Office.Interop.Outlook.MailItem`.  
+ L’exemple de code suivant montre comment utiliser restreint à la propriété d’un `Microsoft.Office.Interop.Outlook.MailItem` objet qui est approuvé par le dispositif object model guard. Le code utilise le champ `Application` approuvé pour obtenir l’objet `Microsoft.Office.Interop.Outlook.MailItem`.  
   
  [!code-csharp[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#2)]
  [!code-vb[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#2)]  
@@ -94,15 +94,15 @@ ms.locfileid: "35671168"
   
  Si l’utilisateur empêche le chargement de compléments VSTO à l’aide du **Centre de gestion de la confidentialité**, les types suivants de compléments VSTO ne se chargent pas :  
   
--   Compléments VSTO COM gérés et non gérés.  
+- Compléments VSTO COM gérés et non gérés.  
   
--   Documents dynamiques gérés et non gérés.  
+- Documents dynamiques gérés et non gérés.  
   
--   Compléments VSTO Automation gérés et non gérés.  
+- Compléments VSTO Automation gérés et non gérés.  
   
--   Composants de données en temps réel gérés et non gérés.  
+- Composants de données en temps réel gérés et non gérés.  
   
- Les procédures suivantes décrivent la manière dont les utilisateurs peuvent utiliser le **Centre de gestion de la confidentialité** pour limiter le chargement de compléments VSTO dans Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] et Microsoft Office 2010. Ces procédures n’affectent pas les compléments VSTO ni les personnalisations créés à l’aide des outils de développement Office dans Visual Studio.  
+  Les procédures suivantes décrivent la manière dont les utilisateurs peuvent utiliser le **Centre de gestion de la confidentialité** pour limiter le chargement de compléments VSTO dans Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] et Microsoft Office 2010. Ces procédures n’affectent pas les compléments VSTO ni les personnalisations créés à l’aide des outils de développement Office dans Visual Studio.  
   
 #### <a name="to-disable-vsto-add-ins-in-microsoft-office-2010-and-microsoft-includeoffice15shortvstoincludesoffice-15-short-mdmd-applications"></a>Pour désactiver les compléments VSTO dans les applications Microsoft Office 2010 et Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]  
   

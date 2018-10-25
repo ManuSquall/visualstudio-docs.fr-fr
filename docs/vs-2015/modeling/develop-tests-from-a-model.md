@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fc773f9b4945a16bac0a9726e0a06f94726fad96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 230cd5ae3bd4ae0d46baf4fe48f00eca9ffe879d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236754"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825113"
 ---
 # <a name="develop-tests-from-a-model"></a>Développer des tests à partir d'un modèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,19 +66,19 @@ Vous pouvez utiliser les spécifications et les modèles architecturaux pour mie
   
 ###### <a name="to-link-tests-to-a-use-case"></a>Pour lier des tests à un cas d'usage  
   
-1.  Dans [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], créez un impératif et basez une suite de tests dessus. Pour savoir comment procéder, consultez [test de l’application](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. Dans [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], créez un impératif et basez une suite de tests dessus. Pour savoir comment procéder, consultez [test de l’application](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
-     L'impératif que vous créez est un élément de travail dans [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Il peut s'agir d'un élément de travail Récit utilisateur, Spécification ou Cas d'usage, selon le modèle de processus utilisé par votre projet avec [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Pour plus d’informations, consultez [le suivi du travail à l’aide de Visual Studio Team Services ou Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
+    L'impératif que vous créez est un élément de travail dans [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Il peut s'agir d'un élément de travail Récit utilisateur, Spécification ou Cas d'usage, selon le modèle de processus utilisé par votre projet avec [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Pour plus d’informations, consultez [le suivi du travail à l’aide de Visual Studio Team Services ou Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
-2.  Liez l'élément de travail Spécification à un ou plusieurs cas d'usage dans votre modèle.  
+2. Liez l'élément de travail Spécification à un ou plusieurs cas d'usage dans votre modèle.  
   
-     Dans un diagramme de cas d’utilisation, avec le bouton droit à un cas d’usage, puis sélectionnez **lien vers l’élément de travail**. Pour plus d’informations, consultez [lier des éléments de modèle et des éléments de travail](../modeling/link-model-elements-and-work-items.md).  
+    Dans un diagramme de cas d’utilisation, avec le bouton droit à un cas d’usage, puis sélectionnez **lien vers l’élément de travail**. Pour plus d’informations, consultez [lier des éléments de modèle et des éléments de travail](../modeling/link-model-elements-and-work-items.md).  
   
-3.  Ajoutez à la suite de tests des cas de test qui vérifient les cas d'usage.  
+3. Ajoutez à la suite de tests des cas de test qui vérifient les cas d'usage.  
   
- En général, chaque élément de travail Récit utilisateur ou Spécification est lié à plusieurs cas d'usage dans votre modèle et chaque cas d'usage est lié à plusieurs spécifications ou récits utilisateur. Cela est dû au fait que chaque récit utilisateur ou spécification couvre un ensemble de tâches qui développent plusieurs cas d'usage. Par exemple, lors d'une itération précoce de votre projet, vous pourriez développer le récit utilisateur de base selon lequel un client peut sélectionner des articles dans un catalogue et se les faire livrer. Lors d'une itération ultérieure, le récit pourrait préciser que l'utilisateur paie à la fin de la commande et que le fournisseur reçoit la somme payée après avoir envoyé la marchandise.  Chaque récit ajoute une clause à la post-condition du cas d'usage Commander des biens.  
+   En général, chaque élément de travail Récit utilisateur ou Spécification est lié à plusieurs cas d'usage dans votre modèle et chaque cas d'usage est lié à plusieurs spécifications ou récits utilisateur. Cela est dû au fait que chaque récit utilisateur ou spécification couvre un ensemble de tâches qui développent plusieurs cas d'usage. Par exemple, lors d'une itération précoce de votre projet, vous pourriez développer le récit utilisateur de base selon lequel un client peut sélectionner des articles dans un catalogue et se les faire livrer. Lors d'une itération ultérieure, le récit pourrait préciser que l'utilisateur paie à la fin de la commande et que le fournisseur reçoit la somme payée après avoir envoyé la marchandise.  Chaque récit ajoute une clause à la post-condition du cas d'usage Commander des biens.  
   
- Vous pouvez créer des liens séparés entre les spécifications et les clauses de la post-condition en écrivant ces clauses dans des commentaires distincts dans le diagramme de cas d'usage. Vous pouvez lier chaque commentaire à un élément de travail Spécification et le lier au cas d'usage dans le diagramme.  
+   Vous pouvez créer des liens séparés entre les spécifications et les clauses de la post-condition en écrivant ces clauses dans des commentaires distincts dans le diagramme de cas d'usage. Vous pouvez lier chaque commentaire à un élément de travail Spécification et le lier au cas d'usage dans le diagramme.  
   
 ### <a name="base-tests-on-the-requirements-types"></a>Tests de base sur les types de spécifications  
  Les types (c'est-à-dire les classes, les interfaces et les énumérations) d'un modèle d'impératifs décrivent les concepts et les relations d'après la façon dont les utilisateurs pensent et communiquent leur activité professionnelle. Cela exclut les types axés exclusivement sur la conception interne du système.  

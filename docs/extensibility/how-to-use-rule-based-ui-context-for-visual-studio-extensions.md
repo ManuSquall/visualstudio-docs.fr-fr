@@ -8,12 +8,12 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68379a05e77e30e5717c06c336592a90d35973fa
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 75b181be5665d6416aee4f3f011d0d5d2a1d4237
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081617"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866348"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Comment : utiliser le contexte d’interface utilisateur basée sur une règle pour les extensions Visual Studio
 Visual Studio permet le chargement de VSPackages lorsque certains connu <xref:Microsoft.VisualStudio.Shell.UIContext>s sont activés. Toutefois, ces contextes d’interface utilisateur ne sont pas bien plus précis, ce qui ne laisse les auteurs de l’extension aucun choix mais permettant de sélectionner un contexte d’interface utilisateur disponible qui active avant la virgule, ils voulaient réellement le VSPackage à charger. Pour obtenir la liste des contextes d’interface utilisateur bien connus, consultez <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
@@ -25,75 +25,75 @@ Visual Studio permet le chargement de VSPackages lorsque certains connu <xref:Mi
   
  En fonction des règles de contexte de l’interface utilisateur peut être utilisé de différentes manières :  
   
-1.  Spécifier des contraintes de visibilité pour les commandes et fenêtres Outil. Vous pouvez masquer les commandes/outils windows jusqu'à ce que la règle du contexte d’interface utilisateur est remplie.  
+1. Spécifier des contraintes de visibilité pour les commandes et fenêtres Outil. Vous pouvez masquer les commandes/outils windows jusqu'à ce que la règle du contexte d’interface utilisateur est remplie.  
   
-2.  Contraintes de charge en tant qu’automatique : de charge automatique des packages uniquement lorsque la règle est remplie.  
+2. Contraintes de charge en tant qu’automatique : de charge automatique des packages uniquement lorsque la règle est remplie.  
   
-3.  Comme une tâche différée : retarder le chargement jusqu'à ce qu’un intervalle spécifié écoulé et la règle est toujours respectée.  
+3. Comme une tâche différée : retarder le chargement jusqu'à ce qu’un intervalle spécifié écoulé et la règle est toujours respectée.  
   
- Le mécanisme peut être utilisé par n’importe quelle extension de Visual Studio.  
+   Le mécanisme peut être utilisé par n’importe quelle extension de Visual Studio.  
   
 ## <a name="create-a-rule-based-ui-context"></a>Créer un contexte d’interface utilisateur basée sur la règle  
  Supposons que vous avez une extension appelée TestPackage, qui offre une commande de menu qui s’applique uniquement aux fichiers avec *.config* extension. Avant de VS2015, la meilleure option a été charger TestPackage lorsque <xref:Microsoft.VisualStudio.Shell.KnownUIContexts.SolutionExistsAndFullyLoadedContext%2A> contexte d’interface utilisateur a été activé. Le chargement de TestPackage de cette façon n’est pas efficace, étant donné que la solution chargée ne peut pas contenir de même un *.config* fichier. Ces étapes indiquent le contexte d’interface utilisateur basée sur les règles peuvent être utilisées pour activer un contexte d’interface utilisateur uniquement quand un fichier avec *.config* extension est sélectionné, puis charger TestPackage lorsque ce contexte d’interface utilisateur est activé.  
   
-1.  Définir un nouveau GUID UIContext et ajouter à la classe VSPackage <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> et <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>.  
+1. Définir un nouveau GUID UIContext et ajouter à la classe VSPackage <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> et <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>.  
   
-     Par exemple, supposons un nouveau UIContext « UIContextGuid » doit être ajoutée. Le GUID créé (vous pouvez créer un GUID en cliquant sur **outils** > **créer un GUID**) est « 8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B ». Ensuite, vous ajoutez la déclaration suivante à l’intérieur de votre classe de package :  
+    Par exemple, supposons un nouveau UIContext « UIContextGuid » doit être ajoutée. Le GUID créé (vous pouvez créer un GUID en cliquant sur **outils** > **créer un GUID**) est « 8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B ». Ensuite, vous ajoutez la déclaration suivante à l’intérieur de votre classe de package :  
   
-    ```csharp  
-    public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
-    ```  
+   ```csharp  
+   public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
+   ```  
   
-     Pour les attributs, ajoutez les valeurs suivantes : (les détails de ces attributs seront expliquées plus loin)  
+    Pour les attributs, ajoutez les valeurs suivantes : (les détails de ces attributs seront expliquées plus loin)  
   
-    ```csharp  
-    [ProvideAutoLoad(TestPackage.UIContextGuid)]      
-    [ProvideUIContextRule(TestPackage.UIContextGuid,  
-        name: "Test auto load",   
-        expression: "DotConfig",  
-        termNames: new[] { "DotConfig" },  
-        termValues: new[] { "HierSingleSelectionName:.config$" })]  
-    ```  
+   ```csharp  
+   [ProvideAutoLoad(TestPackage.UIContextGuid)]      
+   [ProvideUIContextRule(TestPackage.UIContextGuid,  
+       name: "Test auto load",   
+       expression: "DotConfig",  
+       termNames: new[] { "DotConfig" },  
+       termValues: new[] { "HierSingleSelectionName:.config$" })]  
+   ```  
   
-     Ces métadonnées définir le nouveau GUID UIContext (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) et une expression faisant référence à un terme unique, « DotConfig ». Le terme « DotConfig » a la valeur true lorsque la sélection actuelle dans la hiérarchie active a un nom qui correspond au modèle d’expression régulière «\\.config$ » (se termine par *.config*). La valeur (valeur par défaut) définit un nom facultatif pour la règle utile pour le débogage.  
+    Ces métadonnées définir le nouveau GUID UIContext (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) et une expression faisant référence à un terme unique, « DotConfig ». Le terme « DotConfig » a la valeur true lorsque la sélection actuelle dans la hiérarchie active a un nom qui correspond au modèle d’expression régulière «\\.config$ » (se termine par *.config*). La valeur (valeur par défaut) définit un nom facultatif pour la règle utile pour le débogage.  
   
-     Les valeurs de l’attribut sont ajoutées à pkgdef généré pendant la génération par la suite.  
+    Les valeurs de l’attribut sont ajoutées à pkgdef généré pendant la génération par la suite.  
   
-2.  Dans le fichier VSCT pour les commandes de la TestPackage, ajoutez l’indicateur « DynamicVisibility » pour les commandes appropriées :  
+2. Dans le fichier VSCT pour les commandes de la TestPackage, ajoutez l’indicateur « DynamicVisibility » pour les commandes appropriées :  
   
-    ```xml  
-    <CommandFlag>DynamicVisibility</CommandFlag>  
-    ```  
+   ```xml  
+   <CommandFlag>DynamicVisibility</CommandFlag>  
+   ```  
   
-3.  Dans la section de la visibilité de la VSCT, lier les commandes appropriées pour le nouveau UIContext GUID défini dans #1 :  
+3. Dans la section de la visibilité de la VSCT, lier les commandes appropriées pour le nouveau UIContext GUID défini dans #1 :  
   
-    ```xml  
-    <VisibilityConstraints>   
-        <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="guidTestUIContext"/>   
-    </VisibilityConstraints>  
-    ```  
+   ```xml  
+   <VisibilityConstraints>   
+       <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="guidTestUIContext"/>   
+   </VisibilityConstraints>  
+   ```  
   
-4.  Dans la section Symbols, ajoutez la définition de la UIContext :  
+4. Dans la section Symbols, ajoutez la définition de la UIContext :  
   
-    ```xml  
-    <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />  
-    ```  
+   ```xml  
+   <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />  
+   ```  
   
-     À présent, les commandes du menu contextuel pour  *\*.config* fichiers seront visibles uniquement lorsque l’élément sélectionné dans l’Explorateur de solutions est un *.config* fichier et le package ne seront pas chargés tant qu’un de ceux les commandes est activée.  
+    À présent, les commandes du menu contextuel pour  *\*.config* fichiers seront visibles uniquement lorsque l’élément sélectionné dans l’Explorateur de solutions est un *.config* fichier et le package ne seront pas chargés tant qu’un de ceux les commandes est activée.  
   
- Ensuite, utilisez un débogueur pour confirmer que le package est chargé uniquement lorsque vous attendez. Pour déboguer TestPackage :  
+   Ensuite, utilisez un débogueur pour confirmer que le package est chargé uniquement lorsque vous attendez. Pour déboguer TestPackage :  
   
-1.  Définir un point d’arrêt dans le <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> (méthode).  
+5. Définir un point d’arrêt dans le <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> (méthode).  
   
-2.  Générer le TestPackage et démarrer le débogage.  
+6. Générer le TestPackage et démarrer le débogage.  
   
-3.  Créez un projet ou ouvrez un.  
+7. Créez un projet ou ouvrez un.  
   
-4.  Sélectionnez n’importe quel fichier avec une extension autre que *.config*. Le point d’arrêt ne doit pas être atteint.  
+8. Sélectionnez n’importe quel fichier avec une extension autre que *.config*. Le point d’arrêt ne doit pas être atteint.  
   
-5.  Sélectionnez le *App.Config* fichier.  
+9. Sélectionnez le *App.Config* fichier.  
   
- Le TestPackage charge et s’arrête au point d’arrêt.  
+   Le TestPackage charge et s’arrête au point d’arrêt.  
   
 ## <a name="add-more-rules-for-ui-context"></a>Ajouter des règles pour le contexte d’interface utilisateur  
  Étant donné que les règles de contexte d’interface utilisateur sont des expressions booléennes, vous pouvez ajouter des règles plus restreintes pour un contexte d’interface utilisateur. Par exemple, dans le contexte de l’interface utilisateur ci-dessus, vous pouvez spécifier que la règle s’applique uniquement quand une solution avec un projet est chargée. De cette façon, les commandes ne s’afficheront si vous ouvrez un *.config* fichier comme un fichier autonome, et non comme partie d’un projet.  

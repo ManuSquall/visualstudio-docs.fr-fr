@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::GetValue | Documents Microsoft
+title: IDebugObject::GetValue | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50f65cba807abf4e8a0d7bc85ed28c765f7c6849
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc7b0f063e64649a07954367105df6a20d997033
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112514"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868415"
 ---
 # <a name="idebugobjectgetvalue"></a>IDebugObject::GetValue
-Obtient la valeur de l’objet sous la forme d’une série consécutif d’octets.  
+Obtient la valeur de l’objet sous la forme d’une série consécutive d’octets.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,7 +43,7 @@ int GetValue(
   
 #### <a name="parameters"></a>Paramètres  
  `pValue`  
- [dans, out] Tableau qui est rempli avec une série consécutif d’octets qui représente la valeur de l’objet.  
+ [in, out] Tableau qui contient une série consécutive d’octets représentant la valeur de l’objet.  
   
  `nSize`  
  [in] Le nombre maximal d’octets à extraire.  

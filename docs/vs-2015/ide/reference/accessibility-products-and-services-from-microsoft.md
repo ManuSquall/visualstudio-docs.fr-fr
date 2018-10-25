@@ -24,12 +24,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f8f16fdd837b266bfcc04f7e35cfbadd12a14fa5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96ad41ff6cec9a03c8d57905427dbdf45b5b4ed9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215772"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826984"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Services et produits d’accessibilité de Microsoft
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -75,11 +75,11 @@ Microsoft s’engage à faciliter l’utilisation de ses produits et services. L
 ##  <a name="hearing"></a> Service clientèle pour les personnes atteintes de troubles de l’audition  
  Si vous êtes atteint de surdité ou de troubles de l’audition, un accès complet aux services clientèle et produits Microsoft est disponible via un service télétexte/téléscripteur (TTY/TDD) :  
   
--   Pour le service clientèle, contactez Microsoft Sales Information Center au (800) 892-5234 entre 6 h 30 et 17 h 30 Pacifique, du lundi au vendredi, hors jours fériés.  
+- Pour le service clientèle, contactez Microsoft Sales Information Center au (800) 892-5234 entre 6 h 30 et 17 h 30 Pacifique, du lundi au vendredi, hors jours fériés.  
   
--   Pour obtenir une assistance technique aux États-Unis, contactez le support technique Microsoft au (800) 892-5234 entre 6 h 00 et 18 h 00 Pacifique, du lundi au vendredi, hors jours fériés. Au Canada, composez le (905) 568-9641 entre 8 h 00 et 20 h 00 Est, du lundi au vendredi, hors jours fériés.  
+- Pour obtenir une assistance technique aux États-Unis, contactez le support technique Microsoft au (800) 892-5234 entre 6 h 00 et 18 h 00 Pacifique, du lundi au vendredi, hors jours fériés. Au Canada, composez le (905) 568-9641 entre 8 h 00 et 20 h 00 Est, du lundi au vendredi, hors jours fériés.  
   
- Le support Microsoft est soumis au tarif et aux conditions en vigueur au moment de l’utilisation du service.  
+  Le support Microsoft est soumis au tarif et aux conditions en vigueur au moment de l’utilisation du service.  
   
 ##  <a name="moreinfo"></a> Pour plus d'informations  
  Pour plus d’informations sur la façon dont les technologies d’accessibilité pour ordinateurs contribuent à améliorer la vie des personnes handicapées, consultez le [site web Microsoft consacré à l’accessibilité](http://go.microsoft.com/fwlink/?LinkId=8431).  
