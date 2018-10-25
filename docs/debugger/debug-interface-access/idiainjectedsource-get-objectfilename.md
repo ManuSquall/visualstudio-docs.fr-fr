@@ -1,5 +1,5 @@
 ---
-title: IDiaInjectedSource::get_objectFilename | Documents Microsoft
+title: IDiaInjectedSource::get_objectFilename | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75dd11bde98d345d88b700aef6f4c86d80133714
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b3bb9297ab7a572572a35df3521236267ebd87e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467753"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932524"
 ---
 # <a name="idiainjectedsourcegetobjectfilename"></a>IDiaInjectedSource::get_objectFilename
 Récupère le nom de fichier objet sur lequel la source a été compilée.  

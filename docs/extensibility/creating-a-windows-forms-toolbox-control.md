@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4f23cae01c9356da26c42ca299a6ac6bb7c190f
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 34c263479be170b9f108c4cbc095be737f0b2b22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498709"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936036"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Créer un contrôle de boîte à outils Windows Forms
 Le modèle d’élément de contrôle de boîte à outils Windows Forms qui est inclus dans les outils d’extensibilité de Visual Studio (Visual Studio SDK) vous permet de créer un contrôle qui est automatiquement ajouté à la **boîte à outils** lorsque l’extension est installée. Cette rubrique montre comment utiliser le modèle pour créer un contrôle simple compteur que vous pouvez distribuer à d’autres utilisateurs.  
@@ -61,7 +61,7 @@ Le modèle d’élément de contrôle de boîte à outils Windows Forms qui est 
     |`Button1`|**Text**|Réinitialiser|  
   
 ### <a name="code-the-user-control"></a>Coder le contrôle utilisateur  
- Le `Counter` contrôle expose une méthode pour incrémenter le compteur, un événement à déclencher chaque fois que le compteur est incrémenté, un **réinitialiser** bouton et trois propriétés pour stocker le nombre actuel, le texte affiché et s’il faut afficher ou masquer la **réinitialiser** bouton. Le `ProvideToolboxControl` attribut détermine où dans le **boîte à outils** le `Counter` contrôle apparaît.  
+ Le `Counter` contrôle expose une méthode pour incrémenter le compteur, un événement à déclencher chaque fois que le compteur est incrémenté, un **réinitialiser** bouton et trois propriétés pour stocker le nombre actuel, le texte affiché et s’il faut afficher ou masquer la **réinitialiser** bouton. L’attribut `ProvideToolboxControl` détermine l’emplacement dans la **boîte à outils** où le contrôle `Counter` s’affiche.  
   
 #### <a name="to-code-the-user-control"></a>Pour coder le contrôle utilisateur  
   
@@ -139,7 +139,7 @@ Le modèle d’élément de contrôle de boîte à outils Windows Forms qui est 
   
     ```  
   
-8.  Immédiatement au-dessus de la définition de classe, dans le `ProvideToolboxControl` déclaration d’attribut, modifiez la valeur du premier paramètre à partir de `"MyWinFormsControl.Counter"` à `"General"`. Le nom du groupe d’éléments qui va héberger le contrôle dans la **boîte à outils**est ainsi défini.  
+8.  Immédiatement au-dessus de la définition de classe, dans la déclaration d’attribut `ProvideToolboxControl` , remplacez la valeur `"MyWinFormsControl.Counter"` du premier paramètre par `"General"`. Le nom du groupe d’éléments qui va héberger le contrôle dans la **boîte à outils**est ainsi défini.  
   
      L’exemple suivant illustre l’attribut `ProvideToolboxControl` et la définition de classe ajustée.  
   
@@ -209,7 +209,7 @@ Le modèle d’élément de contrôle de boîte à outils Windows Forms qui est 
      Le compteur est remis à **0**.  
   
 ## <a name="next-steps"></a>Étapes suivantes  
- Lorsque vous générez un **boîte à outils** (contrôle), Visual Studio crée un fichier nommé *ProjectName.vsix* dans le * \bin\debug\* dossier de votre projet. Vous pouvez déployer le contrôle en chargeant le *.vsix* fichier à un réseau ou à un site Web. Lorsqu’un utilisateur ouvre le *.vsix* , le contrôle est installé et ajouté à Visual Studio **boîte à outils** sur l’ordinateur de l’utilisateur. Ou bien, vous pouvez télécharger le *.vsix* de fichiers à la [galerie Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) de site Web afin que les utilisateurs puissent le trouver en naviguant dans le **outils**  >  **Extension et mises à jour** boîte de dialogue.  
+ Lorsque vous générez un **boîte à outils** (contrôle), Visual Studio crée un fichier nommé *ProjectName.vsix* dans le <em>\bin\debug\* dossier de votre projet. Vous pouvez déployer le contrôle en chargeant le *.vsix</em> fichier à un réseau ou à un site Web. Lorsqu’un utilisateur ouvre le *.vsix* , le contrôle est installé et ajouté à Visual Studio **boîte à outils** sur l’ordinateur de l’utilisateur. Ou bien, vous pouvez télécharger le *.vsix* de fichiers à la [galerie Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) de site Web afin que les utilisateurs puissent le trouver en naviguant dans le **outils**  >  **Extension et mises à jour** boîte de dialogue.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Étendre d’autres parties de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   

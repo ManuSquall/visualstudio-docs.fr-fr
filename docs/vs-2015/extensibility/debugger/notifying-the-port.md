@@ -15,27 +15,27 @@ ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ce692e30951c6a74203b71690a26001ccc0b48f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4faaea47196e6d247aa62c5a9d067970ddeaaec4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263547"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937043"
 ---
 # <a name="notifying-the-port"></a>Notification du port
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Après avoir lancé un programme, le port doit être averti, comme suit :  
   
-1.  Lorsqu’un port reçoit un nouveau nœud de programme, il renvoie un événement de création de programme à la session de débogage. L’événement s’accompagne d’une interface qui représente le programme.  
+1. Lorsqu’un port reçoit un nouveau nœud de programme, il renvoie un événement de création de programme à la session de débogage. L’événement s’accompagne d’une interface qui représente le programme.  
   
-2.  La session de débogage interroge le programme pour l’identificateur d’un moteur de débogage (dé) qui permettre attacher à.  
+2. La session de débogage interroge le programme pour l’identificateur d’un moteur de débogage (dé) qui permettre attacher à.  
   
-3.  La session de débogage vérifie si le DE figure dans la liste DEs autorisée pour ce programme. La session de débogage obtient cette liste à partir des paramètres de programme actif de la solution, à l’origine passés par le package de débogage.  
+3. La session de débogage vérifie si le DE figure dans la liste DEs autorisée pour ce programme. La session de débogage obtient cette liste à partir des paramètres de programme actif de la solution, à l’origine passés par le package de débogage.  
   
-     Le DE doit se trouver sur la liste autorisée, sans quoi le DE ne sera pas attaché au programme.  
+    Le DE doit se trouver sur la liste autorisée, sans quoi le DE ne sera pas attaché au programme.  
   
- Par programmation, lorsqu’un port reçoit tout d’abord un nouveau nœud de programme, il crée un [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) interface pour représenter le programme.  
+   Par programmation, lorsqu’un port reçoit tout d’abord un nouveau nœud de programme, il crée un [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) interface pour représenter le programme.  
   
 > [!NOTE]
 >  Il ne faut pas confondre avec le `IDebugProgram2` interface créée ultérieurement par le moteur de débogage (dé).  

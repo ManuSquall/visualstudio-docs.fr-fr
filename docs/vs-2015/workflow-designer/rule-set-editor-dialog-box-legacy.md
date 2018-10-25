@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 9da35b83eead06f40452696bb9559d409da8e38d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3469e395ee50e63f8ac76e4181d02b777ccbd4ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294578"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942398"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Éditeur d'ensemble de règles, boîte de dialogue (héritée)
 Cette rubrique décrit comment utiliser le **Éditeur d’ensemble de règles** boîte de dialogue dans les anciennes [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -67,19 +67,19 @@ Cette rubrique décrit comment utiliser le **Éditeur d’ensemble de règles** 
   
  Les expressions prennent en charge les opérateurs suivants :  
   
--   Opérateurs relationnels: ==, =, !=  
+- Opérateurs relationnels: ==, =, !=  
   
--   Opérateurs de comparaison : <, \<=, >, > =  
+- Opérateurs de comparaison : <, \<=, >, > =  
   
--   Opérateurs arithmétiques: +, - , *, /, MOD  
+- Opérateurs arithmétiques: +, - , *, /, MOD  
   
--   Opérateurs logiques : et, & &, OR, &#124; &#124;, NOT, !  
+- Opérateurs logiques : et, & &, OR, &#124; &#124;, NOT, !  
   
--   Opérateurs au niveau du bit : &,&#124;  
+- Opérateurs au niveau du bit : &,&#124;  
   
- La priorité des opérateurs d'expression suit les règles de priorité des opérateurs C#.  
+  La priorité des opérateurs d'expression suit les règles de priorité des opérateurs C#.  
   
- Pour plus d’informations sur les conditions, consultez [à l’aide de Conditions dans les Workflows](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77).  
+  Pour plus d’informations sur les conditions, consultez [à l’aide de Conditions dans les Workflows](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77).  
   
 ### <a name="halt-and-update-functions"></a>Fonctions d'arrêt et de mise à jour  
  **Actions Then :** et **Actions Else :** expressions prennent en charge **Halt** et **mise à jour** fonctions. À utiliser le **Halt** de fonction, tapez **Halt** dans un **puis Action :** ou **Action Else :** zone de texte. Le **Halt** entraîne l’exécution de jeu de règles arrêter immédiatement, et le contrôle retourne au code appelant. Vous utilisez le **mise à jour** fonction avec le chaînage avant.  

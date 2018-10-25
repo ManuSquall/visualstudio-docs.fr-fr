@@ -13,23 +13,23 @@ ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2048d8acca517ce4e2c032df3dd61e1c26231a02
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c9b495ed1bc5ada2adaa26e8382e23d9071eeab3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215863"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931270"
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>Procédure pas à pas : création d’un SDK en JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette procédure pas à pas explique comment utiliser JavaScript pour créer un simple mathématiques SDK comme une Extension Visual Studio (VSIX).  La procédure pas à pas est divisée en différentes parties :  
   
--   [Pour créer le projet SDK d’extension SimpleMathVSIX](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSimpleMathVSIX)  
+- [Pour créer le projet SDK d’extension SimpleMathVSIX](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSimpleMathVSIX)  
   
--   [Pour créer un exemple d’application qui utilise le Kit de développement](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSampleApp)  
+- [Pour créer un exemple d’application qui utilise le Kit de développement](../extensibility/walkthrough-creating-an-sdk-using-javascript.md#createSampleApp)  
   
- Pour JavaScript, il n’existe aucun type de projet de bibliothèque de classe. Dans cette procédure pas à pas, l’exemple de fichier arithmetic.js est créé directement dans le projet VSIX. Dans la pratique, nous vous recommandons d’abord générer et tester les fichiers JavaScript et CSS comme une application Windows Store, par exemple, en utilisant le **application vide** modèle — avant de les insérer dans un projet VSIX.  
+  Pour JavaScript, il n’existe aucun type de projet de bibliothèque de classe. Dans cette procédure pas à pas, l’exemple de fichier arithmetic.js est créé directement dans le projet VSIX. Dans la pratique, nous vous recommandons d’abord générer et tester les fichiers JavaScript et CSS comme une application Windows Store, par exemple, en utilisant le **application vide** modèle — avant de les insérer dans un projet VSIX.  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  

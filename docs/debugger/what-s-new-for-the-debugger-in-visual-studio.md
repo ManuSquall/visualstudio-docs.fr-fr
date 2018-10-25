@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdb56a12f2f9fb6838579165bbe374e4dfbdca47
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 342cb6c1f014c94bd86363415177ec747b0dc1b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542431"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943139"
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>Quelles sont les nouveautés du débogueur dans [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -35,8 +35,8 @@ Le débogueur inclut ces nouvelles fonctionnalités :
 
     La fonctionnalité de capture instantanée est disponible pour les applications web suivantes qui s’exécutent dans Azure App Service :
 
-    * Applications ASP.NET exécutées sur .NET Framework version 4.6.1 ou ultérieure.
-    * Applications ASP.NET Core exécutées sur .NET Core version 2.0 ou ultérieure sur Windows.
+  * Applications ASP.NET exécutées sur .NET Framework version 4.6.1 ou ultérieure.
+  * Applications ASP.NET Core exécutées sur .NET Core version 2.0 ou ultérieure sur Windows.
 
     Pour plus d’informations, consultez [déboguer des applications ASP.NET en production à l’aide du débogueur de capture instantanée](../debugger/debug-live-azure-applications.md).
 
