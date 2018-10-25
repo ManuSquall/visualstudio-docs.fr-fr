@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 291f24c6ffdf885cf3d24c5ff163c2f4f911d7ce
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3bb858f2ee20eb65c09dd4979f2bbba1470cbe0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279554"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908240"
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Déboguer un package d’application installée dans Visual Studio (UWP)
 
@@ -78,25 +78,25 @@ Lorsque vous déboguez un package d’application installée sur un ordinateur d
 
      Si vous ne pouvez pas attacher à l’aide du nom de l’ordinateur (une fois que vous choisissez **Démarrer**), utilisez l’adresse IP à la place. Utilisez l’adresse IP pour les appareils XBox, HoloLens ou IoT.
 
-5. Choisissez le mode d’authentification en sélectionnant une option dans **Mode d’authentification**.
+6. Choisissez le mode d’authentification en sélectionnant une option dans **Mode d’authentification**.
 
     Pour la plupart des applications, conservez la valeur par défaut, **universel (protocole non chiffré)**.
 
-6. Sélectionnez le nom de l’application que vous souhaitez déboguer sous **en cours d’exécution** ou **pas en cours d’exécution** et choisissez **Démarrer** ou (pour les applications en cours d’exécution) **attacher**.
+7. Sélectionnez le nom de l’application que vous souhaitez déboguer sous **en cours d’exécution** ou **pas en cours d’exécution** et choisissez **Démarrer** ou (pour les applications en cours d’exécution) **attacher**.
 
      Si vous sélectionnez **ne pas lancer, mais déboguer mon code au démarrage**, cela entraîne le débogueur de Visual Studio s’attache à votre package d’application lorsque vous le lancez à la fois personnalisés. Il s’agit d’un moyen efficace pour déboguer les chemins d’accès de contrôle à partir de [lancement différentes méthodes](/windows/uwp/xbox-apps/automate-launching-uwp-apps), telles que l’activation du protocole avec des paramètres personnalisés.
 
      Lorsque vous déboguez un package d’application installée sur un appareil connecté XBox, HoloLens ou IoT pour la première fois, Visual Studio installe la version correcte du débogueur distant pour votre appareil cible. Cette opération peut prendre un peu de temps et vous verrez un message ``Starting remote debugger`` alors que cela se produit.
 
      > [!NOTE]
-> À présent, une XBox ou HoloLens appareil va redémarrer l’application avec le débogueur attaché si elle est déjà en cours d’exécution.
+   > À présent, une XBox ou HoloLens appareil va redémarrer l’application avec le débogueur attaché si elle est déjà en cours d’exécution.
 
 Pour plus d’informations sur les options avancées pour le déploiement à distance des applications UWP, consultez [apps]((/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options) UWP déploiement et débogage. 
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage dans Visual Studio](../debugger/index.md)  
  [Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)  
- [Débogage à distance](../debugger/remote-debugging.md)  
+ [Remote Debugging](../debugger/remote-debugging.md)  
  [Configurer le Pare-feu Windows pour le débogage distant](../debugger/configure-the-windows-firewall-for-remote-debugging.md)  
  [Affectations de port du débogueur distant](../debugger/remote-debugger-port-assignments.md)  
  [Erreurs et résolution des problèmes du débogage distant](../debugger/remote-debugging-errors-and-troubleshooting.md)
