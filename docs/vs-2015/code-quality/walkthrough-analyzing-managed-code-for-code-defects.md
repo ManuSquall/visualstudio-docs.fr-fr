@@ -18,12 +18,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0c8bf9d1f293895c762348752b64c7be8cf6d510
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b9d6aba5997182578b43ac9edd3c889bcfc365e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217477"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912888"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Procédure pas à pas : analyse du code managé pour les erreurs de code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,81 +98,81 @@ Dans cette procédure pas à pas, vous analysez un projet managé pour détecter
   
 4.  Pour corriger les avertissements, utilisez les éléments suivants :  
   
--   [CA1014 : Marquer les assemblys avec CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design : « demo » doit être marqué avec CLSCompliantAttribute et sa valeur doit être true.  
+- [CA1014 : Marquer les assemblys avec CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design : « demo » doit être marqué avec CLSCompliantAttribute et sa valeur doit être true.  
   
-    -   Ajoutez le code `using``System;` dans le fichier AssemblyInfo.cs.  
+  -   Ajoutez le code `using``System;` dans le fichier AssemblyInfo.cs.  
   
-         Ensuite, ajoutez le code `[assembly: CLSCompliant(true)]` à la fin du fichier AssemblyInfo.cs.  
+       Ensuite, ajoutez le code `[assembly: CLSCompliant(true)]` à la fin du fichier AssemblyInfo.cs.  
   
-         Regénérez le projet.  
+       Regénérez le projet.  
   
--   [CA1032 : Implémenter des constructeurs d’exception standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design : ajoutez le constructeur suivant à cette classe : public demo (String)  
+- [CA1032 : Implémenter des constructeurs d’exception standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design : ajoutez le constructeur suivant à cette classe : public demo (String)  
   
-    -   Ajoutez le constructeur `public demo (String s) : base(s) { }` à la classe `demo`.  
+  -   Ajoutez le constructeur `public demo (String s) : base(s) { }` à la classe `demo`.  
   
--   [CA1032 : Implémenter des constructeurs d’exception standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design : ajoutez le constructeur suivant à cette classe : public demo (String, Exception)  
+- [CA1032 : Implémenter des constructeurs d’exception standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design : ajoutez le constructeur suivant à cette classe : public demo (String, Exception)  
   
-    -   Ajoutez le constructeur `public demo (String s, Exception e) : base(s, e) { }` à la classe `demo`.  
+  -   Ajoutez le constructeur `public demo (String s, Exception e) : base(s, e) { }` à la classe `demo`.  
   
--   [CA1032 : Implémenter des constructeurs d’exception standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design : ajoutez le constructeur suivant à cette classe : protected demo (SerializationInfo, StreamingContext)  
+- [CA1032 : Implémenter des constructeurs d’exception standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design : ajoutez le constructeur suivant à cette classe : protected demo (SerializationInfo, StreamingContext)  
   
-    -   Ajoutez le code `using System.Runtime.Serialization;` au début du fichier Class1.cs.  
+  -   Ajoutez le code `using System.Runtime.Serialization;` au début du fichier Class1.cs.  
   
-         Ensuite, ajoutez le constructeur `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`  
+       Ensuite, ajoutez le constructeur `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`  
   
-         Regénérez le projet.  
+       Regénérez le projet.  
   
--   [CA1032 : Implémenter des constructeurs d’exception standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design : ajoutez le constructeur suivant à cette classe : public demo()  
+- [CA1032 : Implémenter des constructeurs d’exception standard](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design : ajoutez le constructeur suivant à cette classe : public demo()  
   
-    -   Ajoutez le constructeur `public demo () : base() { }` à la classe `demo` **.**  
+  -   Ajoutez le constructeur `public demo () : base() { }` à la classe `demo` **.**  
   
-         Regénérez le projet.  
+       Regénérez le projet.  
   
--   [CA1709 : La casse des identificateurs doivent être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming : corrigez la casse du nom de l’espace de noms « testCode » en le redéfinissant sur « TestCode ».  
+- [CA1709 : La casse des identificateurs doivent être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming : corrigez la casse du nom de l’espace de noms « testCode » en le redéfinissant sur « TestCode ».  
   
-    -   Modifier la casse de l’espace de noms `testCode` à `TestCode`.  
+  -   Modifier la casse de l’espace de noms `testCode` à `TestCode`.  
   
--   [CA1709 : La casse des identificateurs doivent être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming : corrigez la casse du nom de type « demo » en le redéfinissant sur « Demo ».  
+- [CA1709 : La casse des identificateurs doivent être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming : corrigez la casse du nom de type « demo » en le redéfinissant sur « Demo ».  
   
-    -   Modifier le nom du membre à `Demo`.  
+  -   Modifier le nom du membre à `Demo`.  
   
--   [CA1709 : La casse des identificateurs doivent être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming : corrigez la casse du nom de membre 'item' changez-la en 'Item'.  
+- [CA1709 : La casse des identificateurs doivent être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming : corrigez la casse du nom de membre 'item' changez-la en 'Item'.  
   
-    -   Modifier le nom du membre à `Item`.  
+  -   Modifier le nom du membre à `Item`.  
   
--   [CA1710 : Les identificateurs doivent avoir un suffixe correct](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming : Renommez 'testCode.Demo qu’il se' pour se terminer par 'Exception'.  
+- [CA1710 : Les identificateurs doivent avoir un suffixe correct](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming : Renommez 'testCode.Demo qu’il se' pour se terminer par 'Exception'.  
   
-    -   Modifier le nom de la classe et ses constructeurs à `DemoException`.  
+  -   Modifier le nom de la classe et ses constructeurs à `DemoException`.  
   
--   [CA2210 : Les assemblys doivent avoir des noms forts valides](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): Signez 'ManagedDemo' avec une clé de nom fort.  
+- [CA2210 : Les assemblys doivent avoir des noms forts valides](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): Signez 'ManagedDemo' avec une clé de nom fort.  
   
-    -   Sur le **projet** menu, cliquez sur **ManagedDemo propriétés**.  
+  -   Sur le **projet** menu, cliquez sur **ManagedDemo propriétés**.  
   
-         Les propriétés de projet s’affichent.  
+       Les propriétés de projet s’affichent.  
   
-         Cliquez sur **signature**.  
+       Cliquez sur **signature**.  
   
-         Sélectionnez le **signer l’assembly** case à cocher.  
+       Sélectionnez le **signer l’assembly** case à cocher.  
   
-         Dans le **choisir un fichier de clé de nom de chaîne** liste, sélectionnez  **\<nouveau... >**.  
+       Dans le **choisir un fichier de clé de nom de chaîne** liste, sélectionnez  **\<nouveau... >**.  
   
-         Le **créer une clé de nom fort** boîte de dialogue s’affiche.  
+       Le **créer une clé de nom fort** boîte de dialogue s’affiche.  
   
-         Dans le **nom de fichier de clé**, tapez TestKey.  
+       Dans le **nom de fichier de clé**, tapez TestKey.  
   
-         Entrez un mot de passe, puis activez **OK**.  
+       Entrez un mot de passe, puis activez **OK**.  
   
-         Sur le **fichier** menu, cliquez sur **enregistrer les éléments sélectionnés**, puis fermez les pages de propriétés.  
+       Sur le **fichier** menu, cliquez sur **enregistrer les éléments sélectionnés**, puis fermez les pages de propriétés.  
   
-         Regénérez le projet.  
+       Regénérez le projet.  
   
--   [CA2237 : Marquez les types ISerializable avec SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage : ajoutez un attribut [Serializable] au type 'demo' car ce type implémente ISerializable.  
+- [CA2237 : Marquez les types ISerializable avec SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage : ajoutez un attribut [Serializable] au type 'demo' car ce type implémente ISerializable.  
   
-    -   Ajouter le `[Serializable ()]` à la classe d’attribut `demo`.  
+  -   Ajouter le `[Serializable ()]` à la classe d’attribut `demo`.  
   
-         Regénérez le projet.  
+       Regénérez le projet.  
   
- Après avoir terminé les modifications, le fichier Class1.cs doit ressembler à ce qui suit :  
+  Après avoir terminé les modifications, le fichier Class1.cs doit ressembler à ce qui suit :  
   
 ```  
 //CodeAnalysisManagedDemo  
@@ -202,17 +202,17 @@ namespace TestCode
   
 #### <a name="to-exclude-code-defect-warnings"></a>Pour exclure les avertissements d’erreur de code  
   
-1.  Pour chacun des avertissements restants, procédez comme suit :  
+1. Pour chacun des avertissements restants, procédez comme suit :  
   
-    1.  Dans la fenêtre analyse du Code, sélectionnez l’avertissement.  
+   1. Dans la fenêtre analyse du Code, sélectionnez l’avertissement.  
   
-    2.  Choisissez **Actions**, puis choisissez **supprimer le Message**, puis choisissez **dans le fichier de Suppression de projet**.  
+   2. Choisissez **Actions**, puis choisissez **supprimer le Message**, puis choisissez **dans le fichier de Suppression de projet**.  
   
-     Pour plus d’informations, consultez [Comment : supprimer les avertissements à l’aide de l’élément de Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)  
+      Pour plus d’informations, consultez [Comment : supprimer les avertissements à l’aide de l’élément de Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)  
   
-2.  Regénérez le projet.  
+2. Regénérez le projet.  
   
-     Le projet est généré sans les avertissements ou erreurs.
+    Le projet est généré sans les avertissements ou erreurs.
 
 
 

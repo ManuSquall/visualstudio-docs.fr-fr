@@ -25,12 +25,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93ddc0af7daecaeb64586d84e210180d7025ad81
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51707a1df9c9f7144dc9a3af021262ca818f03b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301390"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850514"
 ---
 # <a name="options-text-editor-c-advanced"></a>Options, Éditeur de texte, C#, Avancé
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,21 +49,21 @@ Utilisez cette boîte de dialogue pour modifier les paramètres de mise en forme
  Souligner les erreurs dans l’éditeur  
  Identifie les erreurs de build dans le code. Quand cette option est sélectionnée, des soulignements ondulés s’affichent dans des couleurs qui ont une signification particulière :  
   
--   Les erreurs d’analyse apparaissent en rouge.  
+- Les erreurs d’analyse apparaissent en rouge.  
   
--   Les erreurs de build apparaissent en bleu.  
+- Les erreurs de build apparaissent en bleu.  
   
--   Les avertissements de génération apparaissent en vert.  
+- Les avertissements de génération apparaissent en vert.  
   
--   Les modifications [Modifier & Continuer](../../debugger/edit-and-continue.md) non valides apparaissent en violet.  
+- Les modifications [Modifier & Continuer](../../debugger/edit-and-continue.md) non valides apparaissent en violet.  
   
- Déplacez le pointeur sur le segment de code souligné pour afficher une info-bulle contenant des informations sur l’erreur.  
+  Déplacez le pointeur sur le segment de code souligné pour afficher une info-bulle contenant des informations sur l’erreur.  
   
- Afficher les erreurs sémantiques en direct  
- Identifie certaines erreurs de compilation sans compilation explicite, par exemple, la déclaration et l’utilisation d’un type inconnu ou le référencement d’une propriété inconnue.  
+  Afficher les erreurs sémantiques en direct  
+  Identifie certaines erreurs de compilation sans compilation explicite, par exemple, la déclaration et l’utilisation d’un type inconnu ou le référencement d’une propriété inconnue.  
   
- Surligner les références jusqu’au symbole sous le curseur  
- Quand le curseur est positionné à l’intérieur d’un symbole ou que vous cliquez sur un symbole, toutes les instances de ce symbole dans le fichier de code sont surlignées.  
+  Surligner les références jusqu’au symbole sous le curseur  
+  Quand le curseur est positionné à l’intérieur d’un symbole ou que vous cliquez sur un symbole, toutes les instances de ce symbole dans le fichier de code sont surlignées.  
   
 ## <a name="refactoring"></a>Refactorisation  
  Vérifier les résultats de la réorganisation  

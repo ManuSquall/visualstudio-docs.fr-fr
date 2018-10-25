@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugBoundBreakpoints2::Clone | Documents Microsoft
+title: IEnumDebugBoundBreakpoints2::Clone | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd3671b1b3bad7426cb9b6ad0741f38ea21bb5ec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 056a875c48fecde764fc686866c3d5ec8ca80d0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120148"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823253"
 ---
 # <a name="ienumdebugboundbreakpoints2clone"></a>IEnumDebugBoundBreakpoints2::Clone
 Retourne une copie de l’énumération actuelle comme un objet distinct.  
@@ -41,13 +41,13 @@ int Clone(
   
 #### <a name="parameters"></a>Paramètres  
  `ppEnum`  
- [out] Retourne une copie de cette énumération comme un objet distinct.  
+ [out] Retourne une copie de cette énumération en tant qu’objet distinct.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- La copie de l’énumération a le même état que l’original au moment de que cette méthode est appelée. Toutefois, les États de la copie et l’original sont distincts et peuvent être modifiées individuellement.  
+ La copie de l’énumération a le même état que l’original au moment de que cette méthode est appelée. Toutefois, les États de la copie et la version d’origine sont distincts et peuvent être modifiées individuellement.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)

@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f8034ae225707ec6030daba39ed09bab3bd161c4
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 01b2b906d514d8fd9042c1046ea2481faee39499
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859521"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926681"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Création d'un langage spécifique à un domaine basé sur Windows Forms
 Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de langage spécifique à un domaine (DSL), au lieu d’utiliser un diagramme DSL. Cette rubrique vous guide tout au long de la liaison d’un formulaire Windows à un DSL à l’aide de la Visual Studio Visualization and Modeling SDK.
@@ -26,30 +26,32 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
 
 #### <a name="to-create-a-minimal-winforms-dsl"></a>Pour créer un DSL WinForms minimal
 
-1.  Créer une solution DSL à partir de la **concepteur WinForm Minimal** modèle.
+1. Créer une solution DSL à partir de la **concepteur WinForm Minimal** modèle.
 
-     Dans cette procédure pas à pas, les noms suivants sont supposées :
+    Dans cette procédure pas à pas, les noms suivants sont supposées :
 
-    |||
-    |-|-|
-    |Nom de solution et DSL|FarmApp|
-    |Espace de noms|Company.FarmApp|
 
-2.  Faire des essais avec l’exemple initial qui fournit le modèle :
+   | | |
+   |-|-|
+   | Nom de solution et DSL | FarmApp |
+   | Espace de noms | Company.FarmApp |
 
-    1.  Transformer tous les modèles.
 
-    2.  Générer et exécuter l’exemple (**CTRL + F5**).
+2. Faire des essais avec l’exemple initial qui fournit le modèle :
 
-    3.  Dans l’instance expérimentale de Visual Studio, ouvrez le `Sample` fichier dans le projet de débogage.
+   1.  Transformer tous les modèles.
 
-         Notez qu’il est affiché dans un contrôle Windows Forms.
+   2.  Générer et exécuter l’exemple (**CTRL + F5**).
 
-         Vous pouvez également voir les éléments du modèle affiché dans l’Explorateur.
+   3.  Dans l’instance expérimentale de Visual Studio, ouvrez le `Sample` fichier dans le projet de débogage.
 
-         Ajouter des éléments dans le formulaire ou l’Explorateur et notez qu’elles apparaissent dans l’autre affichage.
+        Notez qu’il est affiché dans un contrôle Windows Forms.
 
- Dans l’instance principale de Visual Studio, notez les points suivants concernant la solution DSL :
+        Vous pouvez également voir les éléments du modèle affiché dans l’Explorateur.
+
+        Ajouter des éléments dans le formulaire ou l’Explorateur et notez qu’elles apparaissent dans l’autre affichage.
+
+   Dans l’instance principale de Visual Studio, notez les points suivants concernant la solution DSL :
 
 -   `DslDefinition.dsl` ne contient aucun élément de diagramme. Il s’agit, car vous n’utiliserez pas les diagrammes DSL pour afficher les modèles d’instance de cette solution DSL. Au lieu de cela, vous allez lier un formulaire Windows pour le modèle et les éléments sur le formulaire affiche le modèle.
 
@@ -132,30 +134,30 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
 
 #### <a name="to-connect-your-model-to-a-form"></a>Pour connecter votre modèle à un formulaire
 
-1.  Dans le **l’interface utilisateur** projet d’équipe, supprimez tous les fichiers .cs existant.
+1. Dans le **l’interface utilisateur** projet d’équipe, supprimez tous les fichiers .cs existant.
 
-2.  Ajouter un nouveau **contrôle utilisateur** fichier nommé `FarmControl` à la **l’interface utilisateur** projet.
+2. Ajouter un nouveau **contrôle utilisateur** fichier nommé `FarmControl` à la **l’interface utilisateur** projet.
 
-3.  Dans le **des Sources de données** fenêtre, dans le menu déroulant sur **batterie**, choisissez **détails**.
+3. Dans le **des Sources de données** fenêtre, dans le menu déroulant sur **batterie**, choisissez **détails**.
 
-     Laissez les paramètres par défaut pour les autres propriétés.
+    Laissez les paramètres par défaut pour les autres propriétés.
 
-4.  Ouvrez FarmControl.cs en mode design.
+4. Ouvrez FarmControl.cs en mode design.
 
-     Faites glisser **batterie** à partir de la fenêtre Sources de données sur FarmControl.
+    Faites glisser **batterie** à partir de la fenêtre Sources de données sur FarmControl.
 
-     Un ensemble de contrôles apparaît, une pour chaque propriété. Propriétés de relation ne génèrent pas de contrôles.
+    Un ensemble de contrôles apparaît, une pour chaque propriété. Propriétés de relation ne génèrent pas de contrôles.
 
-5.  Supprimer **farmBindingNavigator**. Cela est également générée automatiquement dans le `FarmControl` concepteur, mais il n’est pas utile pour cette application.
+5. Supprimer **farmBindingNavigator**. Cela est également générée automatiquement dans le `FarmControl` concepteur, mais il n’est pas utile pour cette application.
 
-6.  À l’aide de la boîte à outils, créez deux instances de **DataGridView**et nommez-les `AnimalGridView` et `FieldGridView`.
+6. À l’aide de la boîte à outils, créez deux instances de **DataGridView**et nommez-les `AnimalGridView` et `FieldGridView`.
 
-    > [!NOTE]
-    >  Une autre étape consiste à faire glisser les éléments de champs et les animaux à partir de la fenêtre Sources de données sur le contrôle. Cette action crée automatiquement des grilles de données et les liaisons entre l’affichage de grille et de la source de données. Toutefois, cette liaison ne fonctionne pas correctement pour le DSL. Par conséquent, il est préférable de créer les grilles de données et les liaisons manuellement.
+   > [!NOTE]
+   >  Une autre étape consiste à faire glisser les éléments de champs et les animaux à partir de la fenêtre Sources de données sur le contrôle. Cette action crée automatiquement des grilles de données et les liaisons entre l’affichage de grille et de la source de données. Toutefois, cette liaison ne fonctionne pas correctement pour le DSL. Par conséquent, il est préférable de créer les grilles de données et les liaisons manuellement.
 
-7.  Si la boîte à outils ne contient-elle pas le **ModelingBindingSource** outil, ajoutez-le. Dans le menu contextuel de la **données** , choisir **choisir des éléments de**. Dans le **Choose Toolbox Items** boîte de dialogue, sélectionnez **ModelingBindingSource** à partir de la **onglet .NET Framework**.
+7. Si la boîte à outils ne contient-elle pas le **ModelingBindingSource** outil, ajoutez-le. Dans le menu contextuel de la **données** , choisir **choisir des éléments de**. Dans le **Choose Toolbox Items** boîte de dialogue, sélectionnez **ModelingBindingSource** à partir de la **onglet .NET Framework**.
 
-8.  À l’aide de la boîte à outils, créez deux instances de **ModelingBindingSource**et nommez-les `AnimalBinding` et `FieldBinding`.
+8. À l’aide de la boîte à outils, créez deux instances de **ModelingBindingSource**et nommez-les `AnimalBinding` et `FieldBinding`.
 
 9. Définir le **DataSource** propriété de chaque **ModelingBindingSource** à **farmBindingSource**.
 
@@ -165,15 +167,15 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
 
 11. Ajuster la disposition du contrôle de batterie de serveurs à votre goût.
 
- Le **ModelingBindingSource** est un adaptateur qui exécute plusieurs fonctions qui sont spécifiques aux langages DSL :
+    Le **ModelingBindingSource** est un adaptateur qui exécute plusieurs fonctions qui sont spécifiques aux langages DSL :
 
--   Elle encapsule les mises à jour dans une Transaction de Store VMSDK.
+- Elle encapsule les mises à jour dans une Transaction de Store VMSDK.
 
-     Par exemple, lorsque l’utilisateur supprime une ligne à partir de la grille de vue de données, une liaison régulière entraînerait une exception de transaction.
+   Par exemple, lorsque l’utilisateur supprime une ligne à partir de la grille de vue de données, une liaison régulière entraînerait une exception de transaction.
 
--   Elle garantit que, lorsque l’utilisateur sélectionne une ligne, la fenêtre Propriétés affiche les propriétés de l’élément de modèle correspondant, au lieu de la ligne de grille de données.
+- Elle garantit que, lorsque l’utilisateur sélectionne une ligne, la fenêtre Propriétés affiche les propriétés de l’élément de modèle correspondant, au lieu de la ligne de grille de données.
 
- ![DslWpf4](../modeling/media/dslwpf4.png) schéma de liens entre des sources de données et les vues.
+  ![DslWpf4](../modeling/media/dslwpf4.png) schéma de liens entre des sources de données et les vues.
 
 #### <a name="to-complete-the-bindings-to-the-dsl"></a>Pour terminer les liaisons à la solution DSL
 
@@ -247,62 +249,60 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
 
 #### <a name="to-provide-add-buttons"></a>Pour fournir des boutons Ajouter
 
-1.  Dans la vue Conception de FarmControl.cs, utilisez la boîte à outils pour créer un bouton sur le formulaire.
+1. Dans la vue Conception de FarmControl.cs, utilisez la boîte à outils pour créer un bouton sur le formulaire.
 
-     Modifier le nom et le texte du bouton, par exemple à `New Sheep`.
+    Modifier le nom et le texte du bouton, par exemple à `New Sheep`.
 
-2.  Ouvrez le code derrière le bouton (par exemple en double-cliquant dessus).
+2. Ouvrez le code derrière le bouton (par exemple en double-cliquant dessus).
 
-     Modifiez-la comme suit :
+    Modifiez-la comme suit :
 
-    ```csharp
-    private void NewSheepButton_Click(object sender, EventArgs e)
-    {
-      using (Transaction t = farm.Store.TransactionManager.BeginTransaction("Add sheep"))
-      {
-        elementOperations.MergeElementGroup(farm,
-          new ElementGroup(new Sheep(farm.Partition)));
-        t.Commit();
-      }
-    }
+   ```csharp
+   private void NewSheepButton_Click(object sender, EventArgs e)
+   {
+     using (Transaction t = farm.Store.TransactionManager.BeginTransaction("Add sheep"))
+     {
+       elementOperations.MergeElementGroup(farm,
+         new ElementGroup(new Sheep(farm.Partition)));
+       t.Commit();
+     }
+   }
 
-    // The following code is shared with other add buttons:
-    private ElementOperations operationsCache = null;
-    private ElementOperations elementOperations
-    {
-      get
-      {
-        if (operationsCache == null)
-        {
-          operationsCache = new ElementOperations(farm.Store, farm.Partition);
-        }
-        return operationsCache;
-      }
-    }
-    private Farm farm
-    {
-      get { return this.farmBindingSource.DataSource as Farm; }
-    }
+   // The following code is shared with other add buttons:
+   private ElementOperations operationsCache = null;
+   private ElementOperations elementOperations
+   {
+     get
+     {
+       if (operationsCache == null)
+       {
+         operationsCache = new ElementOperations(farm.Store, farm.Partition);
+       }
+       return operationsCache;
+     }
+   }
+   private Farm farm
+   {
+     get { return this.farmBindingSource.DataSource as Farm; }
+   }
+   ```
 
-    ```
+    Vous devez également insérer la directive suivante :
 
-     Vous devez également insérer la directive suivante :
+   ```csharp
 
-    ```csharp
+   using Microsoft.VisualStudio.Modeling;
+   ```
 
-    using Microsoft.VisualStudio.Modeling;
+3. Ajouter des boutons similaires pour les champs et de chèvres.
 
-    ```
+4. Générez et exécutez la solution.
 
-3.  Ajouter des boutons similaires pour les champs et de chèvres.
+5. Vérifiez que le nouveau bouton ajoute un élément. Le nouvel élément doit apparaître dans l’Explorateur de FarmApp et dans l’affichage de grille de données approprié.
 
-4.  Générez et exécutez la solution.
+    Vous devez être en mesure de modifier le nom de l’élément dans la vue de grille de données. Vous pouvez également le supprimer à partir de là.
 
-5.  Vérifiez que le nouveau bouton ajoute un élément. Le nouvel élément doit apparaître dans l’Explorateur de FarmApp et dans l’affichage de grille de données approprié.
-
-     Vous devez être en mesure de modifier le nom de l’élément dans la vue de grille de données. Vous pouvez également le supprimer à partir de là.
-
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
+   ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>Sur le code pour ajouter un élément
  Pour les nouveaux boutons de l’élément, le code suivant alternatif est légèrement plus simple.
@@ -316,7 +316,6 @@ private void NewSheepButton_Click(object sender, EventArgs e)
     t.Commit();
   }
 }
-
 ```
 
  Toutefois, ce code ne définit pas un nom par défaut pour le nouvel élément. Il ne s’exécute pas toute fusion personnalisée que vous avez définies dans le **Directives de fusion d’élément** du DSL, et il ne s’exécute pas de code personnalisé de fusion qui ont été défini.

@@ -20,12 +20,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4c961d0a8e313760db20a74fb1397706d5890b96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 239416a1638940207a8dcb78b395ed1915e8a93a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214251"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867069"
 ---
 # <a name="extending-javascript-intellisense"></a>Extension de JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,13 +84,13 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  Dans votre code d’extension, vous pouvez créer des gestionnaires pour les types d’événements à l’aide de `addEventListener`:  
   
--   `statementcompletion`, qui ajoute un gestionnaire pour un événement de fin d’instruction. Saisie semi-automatique des instructions fournit une liste de membres pour un type particulier qui apparaît une fois que vous tapez un caractère spécial, comme un point (.) ou une liste d’identificateurs qui s’affiche en cours de frappe ou lorsque vous appuyez sur CTRL + J. Le gestionnaire reçoit un objet d’événement de type `CompletionEvent`, qui prend en charge les membres suivants : [propriété des éléments](#Items), [propriété cible](#Target), [targetName propriété](#TargetName), et [scope, propriété](#Scope).  
+- `statementcompletion`, qui ajoute un gestionnaire pour un événement de fin d’instruction. Saisie semi-automatique des instructions fournit une liste de membres pour un type particulier qui apparaît une fois que vous tapez un caractère spécial, comme un point (.) ou une liste d’identificateurs qui s’affiche en cours de frappe ou lorsque vous appuyez sur CTRL + J. Le gestionnaire reçoit un objet d’événement de type `CompletionEvent`, qui prend en charge les membres suivants : [propriété des éléments](#Items), [propriété cible](#Target), [targetName propriété](#TargetName), et [scope, propriété](#Scope).  
   
--   `signaturehelp`, qui ajoute un gestionnaire d’informations sur les paramètres IntelliSense. Informations sur les paramètres fournit des informations sur le nombre, les noms et les types de paramètres requis par une fonction. Le gestionnaire reçoit un objet d’événement de type `SignatureHelpEvent`, qui prend en charge les membres suivants : [propriété cible](#Target), [parentObject propriété](#ParentObject), [functionComments propriété](#FunctionComments), [functionHelp propriété](#FunctionHelp).  
+- `signaturehelp`, qui ajoute un gestionnaire d’informations sur les paramètres IntelliSense. Informations sur les paramètres fournit des informations sur le nombre, les noms et les types de paramètres requis par une fonction. Le gestionnaire reçoit un objet d’événement de type `SignatureHelpEvent`, qui prend en charge les membres suivants : [propriété cible](#Target), [parentObject propriété](#ParentObject), [functionComments propriété](#FunctionComments), [functionHelp propriété](#FunctionHelp).  
   
--   `statementcompletionhint`, qui ajoute un gestionnaire pour Info express IntelliSense. La zone contextuelle Info Express affiche la déclaration complète pour les identificateurs dans votre code. Le gestionnaire reçoit un objet d’événement de type `CompletionHintEvent`, qui prend en charge les membres suivants : [completionItem propriété](#CompletionItem), et [symbolHelp propriété](#SymbolHelp).  
+- `statementcompletionhint`, qui ajoute un gestionnaire pour Info express IntelliSense. La zone contextuelle Info Express affiche la déclaration complète pour les identificateurs dans votre code. Le gestionnaire reçoit un objet d’événement de type `CompletionHintEvent`, qui prend en charge les membres suivants : [completionItem propriété](#CompletionItem), et [symbolHelp propriété](#SymbolHelp).  
   
- Pour obtenir des exemples qui montrent les fonctionnalités IntelliSense telles que la saisie semi-automatique des instructions, des informations sur les paramètres et Infos Express, consultez [IntelliSense à l’aide de](../ide/using-intellisense.md).  
+  Pour obtenir des exemples qui montrent les fonctionnalités IntelliSense telles que la saisie semi-automatique des instructions, des informations sur les paramètres et Infos Express, consultez [IntelliSense à l’aide de](../ide/using-intellisense.md).  
   
 > [!NOTE]
 >  Dans JavaScript, Info Express fait référence à la zone contextuelle qui apparaît à droite d’une liste de saisie semi-automatique. Vous ne pouvez pas appeler manuellement la Info Express.  

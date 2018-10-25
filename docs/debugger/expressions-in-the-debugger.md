@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a29c9cd7c1c80ca27ea3e72b4aab3e881bb8d480
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4df9ae5c8b525ff75985ff7aff071d2b2e86e1cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626030"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926187"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Expressions dans le débogueur Visual Studio
 Le débogueur Visual Studio inclut des évaluateurs d’expression qui fonctionnent lorsque vous entrez une expression dans la boîte de dialogue **Espion express** , la fenêtre **Espion** ou la fenêtre **Exécution** . Les évaluateurs d’expression travaillent également dans la fenêtre **Points d’arrêt** et à beaucoup d’autres emplacements du débogueur.
@@ -91,13 +91,13 @@ int main()
   
  Fonctions intrinsèques du débogueur :  
   
--   Garanties comme sécurisées : l’exécution d’une fonction intrinsèque du débogueur n’endommagera pas le processus qui est en cours de débogage.  
+- Garanties comme sécurisées : l’exécution d’une fonction intrinsèque du débogueur n’endommagera pas le processus qui est en cours de débogage.  
   
--   Autorisées dans toutes les expressions, même dans les scénarios où les effets secondaires et l’évaluation de fonction ne sont pas autorisés.  
+- Autorisées dans toutes les expressions, même dans les scénarios où les effets secondaires et l’évaluation de fonction ne sont pas autorisés.  
   
--   Fonctionnent dans les scénarios où les appels de fonction normaux sont impossibles, tels que le débogage d’un minidump.  
+- Fonctionnent dans les scénarios où les appels de fonction normaux sont impossibles, tels que le débogage d’un minidump.  
   
- Les fonctions intrinsèques du débogueur peuvent également rendre l’évaluation des expressions plus pratique. Par exemple, il est beaucoup plus facile d’écrire `strncmp(str, "asd")` dans une condition de point d’arrêt que `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`. )  
+  Les fonctions intrinsèques du débogueur peuvent également rendre l’évaluation des expressions plus pratique. Par exemple, il est beaucoup plus facile d’écrire `strncmp(str, "asd")` dans une condition de point d’arrêt que `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`. )  
   
 |Domaine|Fonctions intrinsèques|  
 |----------|-------------------------|  
@@ -147,7 +147,7 @@ int main()
 ## <a name="visual-basic---unsupported-expressions"></a>Expressions non prises en charge en Visual Basic  
   
 ### <a name="dynamic-objects"></a>Objets dynamiques  
- Vous pouvez utiliser des variables dans les expressions du débogueur qui sont typées statiquement comme dynamiques. Lorsque des objets qui implémentent le <xref:System.Dynamic.IDynamicMetaObjectProvider> sont évalués dans la fenêtre Espion, un nœud Affichage dynamique est ajouté. Le nœud Affichage dynamique affiche les membres de l’objet, mais n’autorise pas la modification des valeurs des membres.  
+ Vous pouvez utiliser des variables dans les expressions du débogueur qui sont typées statiquement comme dynamiques. Quand des objets qui implémentent l’interface <xref:System.Dynamic.IDynamicMetaObjectProvider> sont évalués dans la fenêtre Espion, un nœud Affichage dynamique est ajouté. Le nœud Affichage dynamique affiche les membres de l’objet, mais n’autorise pas la modification des valeurs des membres.  
   
  Les fonctionnalités suivantes des objets dynamiques ne sont pas prises en charge :  
   
@@ -208,6 +208,6 @@ int main()
   
 ## <a name="see-also"></a>Voir aussi  
  [Spécificateurs de format en C++](../debugger/format-specifiers-in-cpp.md)   
- [Opérateur de contexte (C++)](../debugger/context-operator-cpp.md)   
+ [Context Operator (C++)](../debugger/context-operator-cpp.md)   
  [Spécificateurs de format en c#](../debugger/format-specifiers-in-csharp.md)   
  [Pseudo-variables](../debugger/pseudovariables.md)

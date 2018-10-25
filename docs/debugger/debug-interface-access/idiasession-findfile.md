@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findFile | Documents Microsoft
+title: IDiaSession::findFile | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b91d23cdd92943a40dfa649e82964b101f68739d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 32c8fa5c6f3cd8ec3cf1cead397eadadb99e050d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462186"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909939"
 ---
 # <a name="idiasessionfindfile"></a>IDiaSession::findFile
-Extrait les fichiers de code source par compiland et le nom.  
+Récupère les fichiers sources par compiland et le nom.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,13 +37,13 @@ HRESULT findFile (
   
 #### <a name="parameters"></a>Paramètres  
  `pCompiland`  
- [in] Un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet représentant le compiland à utiliser comme contexte pour la recherche. Définissez ce paramètre sur `NULL` pour rechercher les fichiers sources dans tous les modules (compilands).  
+ [in] Un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet représentant le compiland à être utilisé comme un contexte pour la recherche. Définissez ce paramètre sur `NULL` pour rechercher les fichiers sources dans tous les compilands.  
   
  `name`  
- [in] Spécifie le nom du fichier source doit être récupéré. Définissez ce paramètre sur `NULL` pour tous les fichiers source à récupérer.  
+ [in] Spécifie le nom du fichier source à récupérer. Définissez ce paramètre sur `NULL` pour tous les fichiers doivent être extraites de sources.  
   
  `option`  
- [in] Spécifie les options de comparaison appliquées à la recherche de nom. Les valeurs à partir de la [namesearchoptions, énumération](../../debugger/debug-interface-access/namesearchoptions.md) énumération peut être utilisée seul ou combiné.  
+ [in] Spécifie les options de comparaison appliquées à la recherche de nom. Les valeurs de la [NameSearchOptions (énumération)](../../debugger/debug-interface-access/namesearchoptions.md) énumération peut être utilisée seul ou combiné.  
   
  `ppResult`  
  [out] Retourne un [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md) de récupérer l’objet qui contient une liste des fichiers sources.  
@@ -62,4 +62,4 @@ pSession->findFile( NULL, L"sourcefile.cpp", nsFNameExt, &pEnum );
  [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [NameSearchOptions (énumération)](../../debugger/debug-interface-access/namesearchoptions.md)
+ [NameSearchOptions, énumération](../../debugger/debug-interface-access/namesearchoptions.md)

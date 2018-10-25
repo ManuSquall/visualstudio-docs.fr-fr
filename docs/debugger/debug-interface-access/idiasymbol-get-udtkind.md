@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_udtKind | Documents Microsoft
+title: IDiaSymbol::get_udtKind | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a1ddc76e6a791421be6f55d985d1c8d59715de8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f1bad5019b03612195de119e5ed6a6308d1e39b6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479706"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925602"
 ---
 # <a name="idiasymbolgetudtkind"></a>IDiaSymbol::get_udtKind
 Récupère la variété d’un type défini par l’utilisateur (UDT).  
@@ -34,7 +34,7 @@ HRESULT get_udtKind (
   
 #### <a name="parameters"></a>Paramètres  
  `pRetVal`  
- [out] Retourne une valeur de la [udtkind, énumération](../../debugger/debug-interface-access/udtkind.md) énumération qui spécifie le type d’un UDT : union, classe ou structure.  
+ [out] Retourne une valeur de la [UdtKind (énumération)](../../debugger/debug-interface-access/udtkind.md) énumération qui spécifie le type d’un UDT : structure, classe ou union.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou code d’erreur.  
@@ -44,4 +44,4 @@ HRESULT get_udtKind (
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [UdtKind (énumération)](../../debugger/debug-interface-access/udtkind.md)
+ [UdtKind, énumération](../../debugger/debug-interface-access/udtkind.md)

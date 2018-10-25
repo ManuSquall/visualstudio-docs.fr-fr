@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 40322ffaed98e2254fa09592be3c3eda52acc999
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a8e0bd339d8e7b6d145cc9a916dafc2be9fc975e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247511"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845782"
 ---
 # <a name="getting-started-with-ptvs-start-coding-projects"></a>Prise en main de PTVS : commencer à coder (projets)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ Les outils Python pour Visual Studio (PTVS) vous permettent de gérer votre code
  
 - Définir les limites de vos composants. Si vous avez plusieurs composants dans votre application, vous pouvez les répartir dans des projets distincts. Ils peuvent éventuellement être déployés sur différents serveurs, créés avec différents paramètres de génération ou de débogage, ou même être écrits dans un autre langage pris en charge par Visual Studio, tel que C++ ou Node.js 
  
- Plusieurs modèles de projet sont à votre disposition pour vous aider à démarrer. Si vous voulez utiliser du code Python existant, l'Assistant À partir du code existant vous aide à créer un projet incluant tous vos fichiers. Il existe plusieurs projets web pour certaines infrastructures connues. D’autres modèles sont disponibles dans le pack d’exemples de PTVS. Certaines options permettent d'utiliser les modèles web fournis avec d'autres infrastructures. Le modèle Application Python est un projet propre et vide. Il existe un module pour vous aider à démarrer. 
+  Plusieurs modèles de projet sont à votre disposition pour vous aider à démarrer. Si vous voulez utiliser du code Python existant, l'Assistant À partir du code existant vous aide à créer un projet incluant tous vos fichiers. Il existe plusieurs projets web pour certaines infrastructures connues. D’autres modèles sont disponibles dans le pack d’exemples de PTVS. Certaines options permettent d'utiliser les modèles web fournis avec d'autres infrastructures. Le modèle Application Python est un projet propre et vide. Il existe un module pour vous aider à démarrer. 
  
- Visual Studio affiche vos projets ouverts dans la fenêtre de l'Explorateur de solutions, y compris tous les fichiers, chemins de recherche et environnements Python. Pour ajouter de nouveaux éléments, sélectionnez votre dossier de projet, choisissez Ajouter dans le menu contextuel (bouton droit du pointeur), puis Nouvel élément. Vous pouvez sélectionner n'importe quel élément de la boîte de dialogue, personnaliser le nom de l'élément et ajouter l'élément au projet. 
+  Visual Studio affiche vos projets ouverts dans la fenêtre de l'Explorateur de solutions, y compris tous les fichiers, chemins de recherche et environnements Python. Pour ajouter de nouveaux éléments, sélectionnez votre dossier de projet, choisissez Ajouter dans le menu contextuel (bouton droit du pointeur), puis Nouvel élément. Vous pouvez sélectionner n'importe quel élément de la boîte de dialogue, personnaliser le nom de l'élément et ajouter l'élément au projet. 
  
- Vous pouvez effectuer un glisser-déposer dans l'Explorateur de solutions. Si vous avez déjà copié les fichiers dans la structure de répertoire de votre projet, vous pouvez choisir Afficher tous les fichiers en haut de l'Explorateur de solutions. Vous pouvez ensuite sélectionner les éléments que vous voulez ajouter et choisir Inclure dans le projet dans le menu contextuel. 
+  Vous pouvez effectuer un glisser-déposer dans l'Explorateur de solutions. Si vous avez déjà copié les fichiers dans la structure de répertoire de votre projet, vous pouvez choisir Afficher tous les fichiers en haut de l'Explorateur de solutions. Vous pouvez ensuite sélectionner les éléments que vous voulez ajouter et choisir Inclure dans le projet dans le menu contextuel. 
  
- Vous pouvez obtenir des instructions en regardant cette très courte [vidéo youtube](https://www.youtube.com/watch?v=KHPoVpL7zHg&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=2). 
+  Vous pouvez obtenir des instructions en regardant cette très courte [vidéo youtube](https://www.youtube.com/watch?v=KHPoVpL7zHg&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=2). 
  
 ## <a name="see-also"></a>Voir aussi 
  [Documentation Wiki](https://github.com/Microsoft/PTVS/wiki/Projects) [prise en main et vidéos de présentation approfondie](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

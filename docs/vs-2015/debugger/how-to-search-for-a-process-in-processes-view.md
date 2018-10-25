@@ -17,12 +17,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0e924acf48af293fedae2e9c47347e336ed6450f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 14421b6baede8f946a9bdfd86759e78657e1e603
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222896"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817422"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>Comment : rechercher un processus dans la vue Processus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,24 +31,24 @@ Vous pouvez rechercher un processus spécifique dans la vue processus à l’aid
   
 ### <a name="to-search-for-a-process-in-processes-view"></a>Pour rechercher un processus dans la vue processus  
   
-1.  Réorganisez vos fenêtres donc que Spy ++ et qu’une [vue processus](../debugger/processes-view.md) fenêtre sont visibles.  
+1. Réorganisez vos fenêtres donc que Spy ++ et qu’une [vue processus](../debugger/processes-view.md) fenêtre sont visibles.  
   
-2.  À partir de la **recherche** menu, choisissez **rechercher le processus**  
+2. À partir de la **recherche** menu, choisissez **rechercher le processus**  
   
-     Le [boîte de dialogue de recherche de processus](../debugger/process-search-dialog-box.md) s’ouvre.  
+    Le [boîte de dialogue de recherche de processus](../debugger/process-search-dialog-box.md) s’ouvre.  
   
-3.  Tapez l’ID de processus ou une chaîne de module comme critère de recherche.  
+3. Tapez l’ID de processus ou une chaîne de module comme critère de recherche.  
   
-4.  Effacer tous les champs pour lesquels vous ne souhaitez pas spécifier des valeurs.  
+4. Effacer tous les champs pour lesquels vous ne souhaitez pas spécifier des valeurs.  
   
-    > [!TIP]
-    >  Pour rechercher tous les processus détenus par un module, désactivez le **processus** puis tapez le nom du module dans le **Module** boîte. Utilisez ensuite **suivant** pour poursuivre la recherche pour les processus.  
+   > [!TIP]
+   >  Pour rechercher tous les processus détenus par un module, désactivez le **processus** puis tapez le nom du module dans le **Module** boîte. Utilisez ensuite **suivant** pour poursuivre la recherche pour les processus.  
   
-5.  Choisissez **des** ou **vers le bas** pour la direction de la recherche initiale.  
+5. Choisissez **des** ou **vers le bas** pour la direction de la recherche initiale.  
   
-6.  Cliquez sur **OK**.  
+6. Cliquez sur **OK**.  
   
- Si un processus de correspondance est trouvé, elle est mise en surbrillance dans le **vue processus** fenêtre.
+   Si un processus de correspondance est trouvé, elle est mise en surbrillance dans le **vue processus** fenêtre.
 
 
 

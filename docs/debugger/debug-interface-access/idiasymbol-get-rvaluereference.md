@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_RValueReference | Documents Microsoft
+title: IDiaSymbol::get_RValueReference | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7bf615dee46102cd2584a660cc7925f22194e4a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3931dbfda4d4c94b1244ce7ba08ab273729b61c8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469160"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849487"
 ---
 # <a name="idiasymbolgetrvaluereference"></a>IDiaSymbol::get_RValueReference
-Récupère un indicateur qui spécifie si un type de pointeur est une référence rvalue. Quand utiliser le [symtagenum, énumération](../../debugger/debug-interface-access/symtagenum.md) est définie sur un type pointeur.  
+Récupère un indicateur qui spécifie si un type de pointeur est une référence rvalue. Quand utiliser le [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md) est définie sur un type pointeur.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,7 +44,7 @@ HRESULT get_RValueReference (
   
 ## <a name="remarks"></a>Notes  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  

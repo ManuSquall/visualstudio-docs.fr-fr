@@ -1,5 +1,5 @@
 ---
-title: Peut &#39; t ont &#39; arrêt &#39; en dehors de la boucle | Documents Microsoft
+title: Pouvez&#39;ont t &#39;saut&#39; en dehors de la boucle | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,24 +21,24 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: bb23f1bc3de087515cad9ba4910cf2ebaf640353
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633149"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928553"
 ---
-# <a name="can39t-have-39break39-outside-of-loop"></a>Peut &#39; t ont &#39; arrêt &#39; en dehors de la boucle
-Vous avez tenté d’utiliser le **saut** (mot clé) en dehors d’une boucle. Le **saut** mot clé est utilisé pour mettre fin à une boucle ou `switch` instruction. Il doit être incorporé dans le corps d’une boucle ou `switch` instruction. Toutefois, un **étiquette** peut suivre le mot clé break.  
+# <a name="can39t-have-39break39-outside-of-loop"></a>Pouvez&#39;ont t &#39;saut&#39; en dehors de la boucle
+Vous avez tenté d’utiliser le **saut** mot clé en dehors d’une boucle. Le **saut** mot clé est utilisé pour mettre fin à une boucle ou `switch` instruction. Il doit être incorporé dans le corps d’une boucle ou `switch` instruction. Toutefois, un **étiquette** pouvez suivre le mot clé break.  
   
 ```  
 break labelname;  
 ```  
   
- Vous devez uniquement la forme étiquetée de la **saut** mot clé lorsque vous utilisez des boucles imbriquées ou `switch` instructions et la nécessité d’interrompre une boucle qui n’est pas le plus profond.  
+ Il vous suffit le formulaire étiqueté de la **saut** mot clé lorsque vous utilisez des boucles imbriquées ou `switch` instructions et devoir quitter une boucle qui n’est pas le plus profond.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Assurez-vous que le **saut** mot clé apparaît à l’intérieur d’une instruction de boucle ou de commutateur englobante.  
+-   Assurez-vous que le **saut** mot clé apparaît à l’intérieur d’une instruction de boucle ou switch englobante.  
   
 ## <a name="see-also"></a>Voir aussi  
  [break, instruction](../../javascript/reference/break-statement-javascript.md)   

@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6c02abbef9a5a9022e5a887c5a9aa452143adb8b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1dad7bd7ccddf3645abb11dc55afcdf2e7cce7ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241312"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919908"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Meilleures pratiques pour l'utilisation des extraits de code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,19 +44,19 @@ Le code d’un extrait de code montre uniquement le moyen le plus simple de fair
 ## <a name="security"></a>Sécurité  
  Le niveau de sécurisation d’un extrait de code dépend de l’endroit où il est utilisé dans le code source et de la façon dont il est modifié une fois qu’il se trouve dans le code. La liste suivante contient quelques-uns des points qui doivent être pris en compte.  
   
--   Accès aux fichiers et aux bases de données  
+- Accès aux fichiers et aux bases de données  
   
--   Sécurité d'accès du code  
+- Sécurité d'accès du code  
   
--   Protection des ressources (journaux des événements, Registre)  
+- Protection des ressources (journaux des événements, Registre)  
   
--   Stockage de secrets  
+- Stockage de secrets  
   
--   Vérification des entrées  
+- Vérification des entrées  
   
--   Transmission des données aux outils de script  
+- Transmission des données aux outils de script  
   
- Pour plus d’informations, consultez [Sécurisation des applications](../ide/securing-applications.md).  
+  Pour plus d’informations, consultez [Sécurisation des applications](../ide/securing-applications.md).  
   
 ## <a name="downloaded-code-snippets"></a>Extraits de code téléchargés  
  Les extraits de code IntelliSense installés par Visual Studio ne constituent pas en eux-mêmes un risque de sécurité. Toutefois, ils peuvent entraîner des risques de sécurité dans votre application. Les extraits de code téléchargés sur Internet doivent être traités comme tout autre contenu téléchargé, c’est-à-dire avec une extrême prudence.  

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_length | Documents Microsoft
+title: IDiaSymbol::get_length | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00d58442f0b6e95732dab5a2bc5702e6c500d70a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9f99a2012d0c3f009540c988df6e41b0a7d0cf4e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468617"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844514"
 ---
 # <a name="idiasymbolgetlength"></a>IDiaSymbol::get_length
-Récupère le nombre de bits ou d’octets de mémoire utilisée par l’objet représenté par ce symbole.  
+Récupère le nombre de bits ou octets de mémoire utilisée par l’objet représenté par ce symbole.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,7 +43,7 @@ HRESULT get_length (
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
 ## <a name="remarks"></a>Notes  
- Si le [LocationType, énumération](../../debugger/debug-interface-access/locationtype.md) du symbole est `LocIsBitField`, la longueur retournée par cette méthode est en bits ; sinon, la longueur est en octets pour tous les autres types d’emplacement.  
+ Si le [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md) du symbole est `LocIsBitField`, la longueur retournée par cette méthode est en bits ; sinon, la longueur est en octets pour tous les autres types d’emplacement.  
   
 ## <a name="example"></a>Exemple  
   
@@ -53,7 +53,7 @@ ULONGLONG   length;
 pSymbol->get_length( &length );  
 ```  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
   
 |Spécification|Description|  
 |-----------------|-----------------|  
@@ -62,4 +62,4 @@ pSymbol->get_length( &length );
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md)
+ [LocationType, énumération](../../debugger/debug-interface-access/locationtype.md)

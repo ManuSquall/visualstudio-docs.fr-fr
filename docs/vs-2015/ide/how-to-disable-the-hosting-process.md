@@ -17,12 +17,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4ad3742befbf564c7924c520fb560e69037004c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4251e5aac5042b610ed32f95a13ba5d6ffb9d4eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281396"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848486"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>Comment : désactiver le processus d'hébergement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ Les appels à certaines API peuvent être affectés quand le processus hôte est
   
 ### <a name="to-disable-the-hosting-process"></a>Pour désactiver le processus d’hébergement  
   
-1.  Ouvrez un projet exécutable dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Les projets qui ne produisent pas de fichiers exécutables (par exemple, les projets de bibliothèque de classes ou de service) n’ont pas cette option.  
+1. Ouvrez un projet exécutable dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Les projets qui ne produisent pas de fichiers exécutables (par exemple, les projets de bibliothèque de classes ou de service) n’ont pas cette option.  
   
-2.  Dans le menu **Projet**, cliquez sur **Propriétés**.  
+2. Dans le menu **Projet**, cliquez sur **Propriétés**.  
   
-3.  Cliquez sur l’onglet **Déboguer**.  
+3. Cliquez sur l’onglet **Déboguer**.  
   
-4.  Décochez la case **Activer le processus d’hébergement Visual Studio**.  
+4. Décochez la case **Activer le processus d’hébergement Visual Studio**.  
   
- Quand le processus d’hébergement est désactivé, plusieurs fonctionnalités de débogage sont indisponibles ou subissent une baisse des performances. Pour plus d’informations, consultez [Débogage et processus d’hébergement](../debugger/debugging-and-the-hosting-process.md).  
+   Quand le processus d’hébergement est désactivé, plusieurs fonctionnalités de débogage sont indisponibles ou subissent une baisse des performances. Pour plus d’informations, consultez [Débogage et processus d’hébergement](../debugger/debugging-and-the-hosting-process.md).  
   
- En général, quand le processus d’hébergement est désactivé :  
+   En général, quand le processus d’hébergement est désactivé :  
   
 -   le temps nécessaire pour commencer le débogage des applications [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] augmente ;  
   

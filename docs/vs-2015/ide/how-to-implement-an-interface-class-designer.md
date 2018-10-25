@@ -17,12 +17,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3bbe5eec0a512dafd6689f1420e721d6a2a63e1e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9a196f49765623966a48b07eef3abe3f8ca7e5a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189850"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900538"
 ---
 # <a name="how-to-implement-an-interface-class-designer"></a>Comment : implémenter une interface (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,13 +34,13 @@ Dans le Concepteur de classes, vous pouvez implémenter une interface pour le di
   
 ### <a name="to-implement-an-interface-by-drawing-an-inheritance-line"></a>Pour implémenter une interface en dessinant une ligne d’héritage  
   
-1.  Sur le diagramme de classes, affichez l’interface et la classe qui implémente cette interface.  
+1. Sur le diagramme de classes, affichez l’interface et la classe qui implémente cette interface.  
   
-2.  Dessinez une ligne d’héritage entre la classe et l’interface.  
+2. Dessinez une ligne d’héritage entre la classe et l’interface.  
   
-     Un symbole d’interface (lollipop) attaché à la classe s’affiche, et une étiquette avec le nom de l’interface identifie la relation d’héritage. Visual Studio génère des stubs pour tous les membres de l’interface.  
+    Un symbole d’interface (lollipop) attaché à la classe s’affiche, et une étiquette avec le nom de l’interface identifie la relation d’héritage. Visual Studio génère des stubs pour tous les membres de l’interface.  
   
- Pour plus d’informations, consultez [Guide pratique pour créer un héritage entre les types (Concepteur de classes)](../ide/how-to-create-inheritance-between-types-class-designer.md).  
+   Pour plus d’informations, consultez [Guide pratique pour créer un héritage entre les types (Concepteur de classes)](../ide/how-to-create-inheritance-between-types-class-designer.md).  
   
 ### <a name="to-implement-an-interface-from-the-class-view-window"></a>Pour implémenter une interface à partir de la fenêtre Affichage de classes  
   

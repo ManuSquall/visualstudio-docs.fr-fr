@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::SetLocale | Documents Microsoft
+title: IDebugExpressionEvaluator::SetLocale | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5836069aacb80a3d917a8e272150a477589c3ef
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f9c5e1fc300a150b15acc48f12dc3b8c6c01e277
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111120"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882639"
 ---
 # <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
 Cette méthode définit la langue à utiliser pour créer des résultats imprimables.  
@@ -47,7 +47,7 @@ int SetLocale(
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode peut être appelée autant de fois pendant que l’évaluateur d’expression (EE) est chargé, le EE doit donc être en mesure de modifier la langue à la volée. Le EE utilise ces paramètres régionaux pour renvoyer des messages d’erreur et les chaînes dans la langue appropriée.  
+ Cette méthode peut être appelée plusieurs fois pendant que l’évaluateur d’expression (EE) est chargé, le EE doit donc être en mesure de changer de langue à la volée. Le EE utilise ces paramètres régionaux pour renvoyer des messages d’erreur et les chaînes dans la langue appropriée.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

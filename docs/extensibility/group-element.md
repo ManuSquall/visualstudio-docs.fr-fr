@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2dad2781a0d8231c40ad16dd2c5bd2a7a0905cd3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 34ca01d77856fadabcc8e681d2be3b1eb6173c70
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497106"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813526"
 ---
 # <a name="group-element"></a>Élément de groupe
 Définit un groupe de commande VSPackage.  

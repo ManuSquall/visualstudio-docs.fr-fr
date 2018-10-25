@@ -28,12 +28,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eea8457c988e6ce1ff5f965a0154e8f2dbe87a2e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2807fa9d0085c70e3336a5f9a0d66b28a775f4fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244424"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830598"
 ---
 # <a name="how-to-debug-native-dlls"></a>Comment : déboguer des DLL natives
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,29 +43,29 @@ ms.locfileid: "49244424"
   
  Lorsque vous déboguez une DLL, vous pouvez commencer le débogage à partir :  
   
--   du projet utilisé pour créer l'exécutable qui appelle la DLL ;  
+- du projet utilisé pour créer l'exécutable qui appelle la DLL ;  
   
- \- ou -  
+  \- ou -  
   
--   du projet utilisé pour créer la DLL.  
+- du projet utilisé pour créer la DLL.  
   
- Si vous disposez du projet utilisé pour créer l'exécutable, démarrez le débogage à partir de ce projet. Vous pouvez ensuite ouvrir un fichier source pour la DLL et définir les points d'arrêt dans ce fichier, même s'il ne fait pas partie du projet utilisé pour créer l'exécutable. Pour plus d’informations, consultez [des points d’arrêt](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583).  
+  Si vous disposez du projet utilisé pour créer l'exécutable, démarrez le débogage à partir de ce projet. Vous pouvez ensuite ouvrir un fichier source pour la DLL et définir les points d'arrêt dans ce fichier, même s'il ne fait pas partie du projet utilisé pour créer l'exécutable. Pour plus d’informations, consultez [des points d’arrêt](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
- Si vous démarrez le débogage à partir du projet qui crée la DLL, vous devez spécifier l'exécutable que vous voulez utiliser dans le débogage de la DLL.  
+  Si vous démarrez le débogage à partir du projet qui crée la DLL, vous devez spécifier l'exécutable que vous voulez utiliser dans le débogage de la DLL.  
   
 ### <a name="to-specify-an-executable-for-the-debug-session"></a>Pour spécifier un exécutable pour la session de débogage  
   
-1.  Dans **l’Explorateur de solutions**, sélectionnez le projet qui crée la DLL.  
+1. Dans **l’Explorateur de solutions**, sélectionnez le projet qui crée la DLL.  
   
-2.  À partir de la **vue** menu, choisissez**Pages de propriétés**.  
+2. À partir de la **vue** menu, choisissez**Pages de propriétés**.  
   
-3.  Dans le **Pages de propriétés** boîte de dialogue, ouvrez le **propriétés de Configuration** dossier et sélectionnez le **débogage** catégorie.  
+3. Dans le **Pages de propriétés** boîte de dialogue, ouvrez le **propriétés de Configuration** dossier et sélectionnez le **débogage** catégorie.  
   
-4.  Dans le **commande** , spécifiez le nom de chemin d’accès pour le conteneur. Par exemple, C:\Program Files\MyApplication\MYAPP.EXE.  
+4. Dans le **commande** , spécifiez le nom de chemin d’accès pour le conteneur. Par exemple, C:\Program Files\MyApplication\MYAPP.EXE.  
   
-5.  Dans le **Arguments de commande** , spécifiez les arguments nécessaires pour le fichier exécutable.  
+5. Dans le **Arguments de commande** , spécifiez les arguments nécessaires pour le fichier exécutable.  
   
- Si vous ne spécifiez pas l’exécutable dans le _projet_**Pages de propriétés** boîte de dialogue, le [exécutable pour la boîte de dialogue de Session de débogage](../debugger/executable-for-debugging-session-dialog-box.md) s’affiche lorsque vous démarrez le débogage.  
+   Si vous ne spécifiez pas l’exécutable dans le _projet_**Pages de propriétés** boîte de dialogue, le [exécutable pour la boîte de dialogue de Session de débogage](../debugger/executable-for-debugging-session-dialog-box.md) s’affiche lorsque vous démarrez le débogage.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité du débogueur](../debugger/debugger-security.md)   

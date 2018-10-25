@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81c538897de64f6b7cc1f832cc07604991375872
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: dfdcb3e273e3e2c7b957a78280511980fa9c93fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283741"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905309"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Utilisation du collecteur autonome IntelliTrace
 Le **collecteur autonome IntelliTrace** vous permet de collecter des données de diagnostic IntelliTrace pour vos applications exécutées sur des serveurs de production ou d’autres environnements, sans avoir à installer Visual Studio sur l’ordinateur cible ni à modifier l’environnement du système cible. Ce collecteur fonctionne avec les applications web, SharePoint, WPF et Windows Forms. Quand vous avez terminé la collecte des données, supprimez simplement le collecteur pour le désinstaller.
@@ -33,22 +33,22 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
  **Spécifications**
 
--   .NET Framework 3.5, 4 ou 4.5
+- .NET Framework 3.5, 4 ou 4.5
 
--   Visual Studio Enterprise (mais pas les éditions Professional ou Community) sur un ordinateur de développement ou autre pour ouvrir les fichiers .iTrace
+- Visual Studio Enterprise (mais pas les éditions Professional ou Community) sur un ordinateur de développement ou autre pour ouvrir les fichiers .iTrace
 
-    > [!NOTE]
-    >  Assurez-vous d’enregistrer vos fichiers de symboles (.pdb). Pour déboguer avec IntelliTrace et exécuter le code pas à pas, vous devez disposer des fichiers sources et des fichiers de symboles correspondants. Voir [diagnostiquer les problèmes après le déploiement](../debugger/diagnose-problems-after-deployment.md).
+  > [!NOTE]
+  >  Assurez-vous d’enregistrer vos fichiers de symboles (.pdb). Pour déboguer avec IntelliTrace et exécuter le code pas à pas, vous devez disposer des fichiers sources et des fichiers de symboles correspondants. Voir [diagnostiquer les problèmes après le déploiement](../debugger/diagnose-problems-after-deployment.md).
 
- **FAQ**
+  **FAQ**
 
--   [Quelles applications fonctionnent avec le collecteur ?](#WhatApps)
+- [Quelles applications fonctionnent avec le collecteur ?](#WhatApps)
 
--   [Comment faire pour démarrer ?](#GetStarted)
+- [Comment faire pour démarrer ?](#GetStarted)
 
--   [Comment puis-je obtenir le maximum de données sans ralentir mon application ?](#Minimizing)
+- [Comment puis-je obtenir le maximum de données sans ralentir mon application ?](#Minimizing)
 
--   [À quel autre endroit puis-je trouver des données IntelliTrace ?](#WhereElse)
+- [À quel autre endroit puis-je trouver des données IntelliTrace ?](#WhereElse)
 
 ##  <a name="WhatApps"></a> Quelles applications fonctionnent avec le collecteur ?
 
@@ -78,40 +78,40 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 ##  <a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> Installer le collecteur
 
-1.  Sur le serveur de votre application, créez le répertoire collecteur, par exemple : **C:\IntelliTraceCollector**
+1. Sur le serveur de votre application, créez le répertoire collecteur, par exemple : **C:\IntelliTraceCollector**
 
-2.  Obtenir le collecteur à partir du Microsoft Download Center ou à partir du dossier d’installation de Visual Studio 2013 mise à jour 3. [Collecteur IntelliTrace pour Visual Studio 2013 Update 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909):
+2. Obtenir le collecteur à partir du Microsoft Download Center ou à partir du dossier d’installation de Visual Studio 2013 mise à jour 3. [Collecteur IntelliTrace pour Visual Studio 2013 Update 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909):
 
-    -   **Centre de téléchargement Microsoft**:
+   - **Centre de téléchargement Microsoft**:
 
-        1.  À côté de **IntelliTraceCollector.exe**, choisissez **Télécharger**.
+     1. À côté de **IntelliTraceCollector.exe**, choisissez **Télécharger**.
 
-        2.  Enregistrez IntelliTraceCollector.exe dans le répertoire du collecteur, par exemple **C:\IntelliTraceCollector**
+     2. Enregistrez IntelliTraceCollector.exe dans le répertoire du collecteur, par exemple **C:\IntelliTraceCollector**
 
-        3.  Exécutez IntelliTraceCollector.exe. Cette opération extrait le fichier IntelliTraceCollection.cab.
+     3. Exécutez IntelliTraceCollector.exe. Cette opération extrait le fichier IntelliTraceCollection.cab.
 
-         \- ou -
+        \- ou -
 
-    -   **Dossier d’installation de Visual Studio**:
+   - **Dossier d’installation de Visual Studio**:
 
-        1.  Copiez IntelliTraceCollection.cab dans le dossier suivant :
+     1.  Copiez IntelliTraceCollection.cab dans le dossier suivant :
 
-             **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
+          **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
-        2.  Placez IntelliTraceCollection.cab dans le répertoire du collecteur, par exemple **C:\IntelliTraceCollector**
+     2.  Placez IntelliTraceCollection.cab dans le répertoire du collecteur, par exemple **C:\IntelliTraceCollector**
 
-3.  Développez IntelliTraceCollection.cab :
+3. Développez IntelliTraceCollection.cab :
 
-    1.  Sur le serveur de votre application, ouvrez une fenêtre d’invite de commande en tant qu’administrateur.
+   1.  Sur le serveur de votre application, ouvrez une fenêtre d’invite de commande en tant qu’administrateur.
 
-    2.  Accédez au répertoire du collecteur, par exemple **C:\IntelliTraceCollector**
+   2.  Accédez au répertoire du collecteur, par exemple **C:\IntelliTraceCollector**
 
-    3.  Exécutez la commande **expand** suivante, avec le point (**.**) à la fin, pour développer IntelliTraceCollection.cab :
+   3.  Exécutez la commande **expand** suivante, avec le point (**.**) à la fin, pour développer IntelliTraceCollection.cab :
 
-         `expand  /f:* IntelliTraceCollection.cab .`
+        `expand  /f:* IntelliTraceCollection.cab .`
 
-        > [!NOTE]
-        >  Le point (**.**) permet de conserver les sous-dossiers qui contiennent les plans de collecte localisés.
+       > [!NOTE]
+       >  Le point (**.**) permet de conserver les sous-dossiers qui contiennent les plans de collecte localisés.
 
 ##  <a name="ConfigurePermissionsRunningCollector"></a> Définir les autorisations pour le répertoire du collecteur
 
@@ -167,47 +167,47 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 ##  <a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> Définir les autorisations du répertoire de fichiers .iTrace
 
-1.  Sur le serveur de votre application, créez le répertoire du fichier .iTrace, par exemple : **C:\IntelliTraceLogFiles**
+1. Sur le serveur de votre application, créez le répertoire du fichier .iTrace, par exemple : **C:\IntelliTraceLogFiles**
 
-    > [!NOTE]
-    >  -   Pour éviter de ralentir votre application, choisissez un emplacement sur un disque local à grande vitesse qui n’est pas très actif.
-    > -   Vous pouvez placer les fichiers .iTrace et ceux du collecteur dans le même emplacement. Dans le cas d’une application web ou SharePoint, cet emplacement doit se trouver en dehors du répertoire qui héberge cette application.
+   > [!NOTE]
+   > - Pour éviter de ralentir votre application, choisissez un emplacement sur un disque local à grande vitesse qui n’est pas très actif.
+   >   -   Vous pouvez placer les fichiers .iTrace et ceux du collecteur dans le même emplacement. Dans le cas d’une application web ou SharePoint, cet emplacement doit se trouver en dehors du répertoire qui héberge cette application.
+   > 
+   > [!IMPORTANT]
+   > - Limitez l’accès au répertoire de fichiers .iTrace uniquement aux identités qui ont besoin d’utiliser le collecteur. Un fichier .iTrace peut contenir des informations sensibles, telles que les données provenant d’utilisateurs, de bases de données ou d’autres emplacements sources, ainsi que des chaînes de connexion. En effet, IntelliTrace est susceptible d’enregistrer toutes les données passées dans les paramètres de méthode ou en tant que valeurs de retour.
+   >   -   Assurez-vous que les utilisateurs qui peuvent ouvrir les fichiers .iTrace ont l’autorité pour afficher des données sensibles. Partagez les fichiers .iTrace avec précaution. Si d’autres utilisateurs doivent accéder aux fichiers, copiez ces fichiers dans un emplacement partagé sécurisé.
 
-    > [!IMPORTANT]
-    >  -   Limitez l’accès au répertoire de fichiers .iTrace uniquement aux identités qui ont besoin d’utiliser le collecteur. Un fichier .iTrace peut contenir des informations sensibles, telles que les données provenant d’utilisateurs, de bases de données ou d’autres emplacements sources, ainsi que des chaînes de connexion. En effet, IntelliTrace est susceptible d’enregistrer toutes les données passées dans les paramètres de méthode ou en tant que valeurs de retour.
-    > -   Assurez-vous que les utilisateurs qui peuvent ouvrir les fichiers .iTrace ont l’autorité pour afficher des données sensibles. Partagez les fichiers .iTrace avec précaution. Si d’autres utilisateurs doivent accéder aux fichiers, copiez ces fichiers dans un emplacement partagé sécurisé.
+2. Pour une application web ou SharePoint, accordez au pool d’applications correspondant toutes les autorisations d’accès au répertoire de fichiers .iTrace. Pour cela, utilisez au choix la commande Windows **icacls** ou l’Explorateur Windows (ou l’Explorateur de fichiers).
 
-2.  Pour une application web ou SharePoint, accordez au pool d’applications correspondant toutes les autorisations d’accès au répertoire de fichiers .iTrace. Pour cela, utilisez au choix la commande Windows **icacls** ou l’Explorateur Windows (ou l’Explorateur de fichiers).
+    Exemple :
 
-     Exemple :
+   - Pour définir des autorisations avec la commande Windows **icacls** :
 
-    -   Pour définir des autorisations avec la commande Windows **icacls** :
+     - Pour une application web du pool d’applications **DefaultAppPool** :
 
-        -   Pour une application web du pool d’applications **DefaultAppPool** :
+        `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\DefaultAppPool":F`
 
-             `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\DefaultAppPool":F`
+     - Pour une application SharePoint du pool d’applications **SharePoint – 80** :
 
-        -   Pour une application SharePoint du pool d’applications **SharePoint – 80** :
+        `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-             `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
+       - ou -
 
-         - ou -
+   - Pour définir des autorisations avec l’Explorateur Windows (ou l’Explorateur de fichiers) :
 
-    -   Pour définir des autorisations avec l’Explorateur Windows (ou l’Explorateur de fichiers) :
+     1.  Ouvrez **Propriétés** pour le répertoire de fichiers .iTrace.
 
-        1.  Ouvrez **Propriétés** pour le répertoire de fichiers .iTrace.
+     2.  Sous l’onglet **Sécurité** , choisissez **Modifier**, puis **Ajouter**.
 
-        2.  Sous l’onglet **Sécurité** , choisissez **Modifier**, puis **Ajouter**.
+     3.  Vérifiez que l’élément **Principaux de sécurité intégrés** est affiché dans la zone **Sélectionnez le type de cet objet** . Si elle n’a pas, choisissez **Types d’objet** pour l’ajouter.
 
-        3.  Vérifiez que l’élément **Principaux de sécurité intégrés** est affiché dans la zone **Sélectionnez le type de cet objet** . Si elle n’a pas, choisissez **Types d’objet** pour l’ajouter.
+     4.  Vérifiez que votre ordinateur local apparaît dans la zone **À partir de cet emplacement** . Si elle n’a pas, choisissez **emplacements** pour le modifier.
 
-        4.  Vérifiez que votre ordinateur local apparaît dans la zone **À partir de cet emplacement** . Si elle n’a pas, choisissez **emplacements** pour le modifier.
+     5.  Dans la zone **Entrez les noms des objets à sélectionner** , ajoutez le pool d’applications de l’application web ou SharePoint.
 
-        5.  Dans la zone **Entrez les noms des objets à sélectionner** , ajoutez le pool d’applications de l’application web ou SharePoint.
+     6.  Choisissez **Vérifier les noms** pour résoudre le nom. Cliquez sur **OK**.
 
-        6.  Choisissez **Vérifier les noms** pour résoudre le nom. Cliquez sur **OK**.
-
-        7.  Vérifiez que le pool d’applications dispose des autorisations **Contrôle total**.
+     7.  Vérifiez que le pool d’applications dispose des autorisations **Contrôle total**.
 
 ##  <a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> Collecter les données d’une application web ou d’une application SharePoint
 
@@ -291,98 +291,95 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
  Voici quelques méthodes permettant d’obtenir le maximum de données sans ralentir votre application :
 
--   Exécuter le collecteur uniquement lorsque vous soupçonnez un problème, ou si vous pouvez reproduire le problème.
+- Exécuter le collecteur uniquement lorsque vous soupçonnez un problème, ou si vous pouvez reproduire le problème.
 
-     Démarrez la collecte, reproduisez le problème, puis arrêtez la collecte. Ouvrez le fichier .iTrace dans Visual Studio Enterprise et examinez les données. Consultez [Ouvrez le fichier .iTrace dans Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files).
+   Démarrez la collecte, reproduisez le problème, puis arrêtez la collecte. Ouvrez le fichier .iTrace dans Visual Studio Enterprise et examinez les données. Consultez [Ouvrez le fichier .iTrace dans Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files).
 
--   Pour les applications web et SharePoint, le collecteur enregistre les données pour chaque application partageant le pool d’applications spécifié. La collecte peut donc ralentir n’importe quelle application partageant le même pool d’applications, même si vous choisissez de limiter la collecte aux modules d’une seule application dans un plan de collecte.
+- Pour les applications web et SharePoint, le collecteur enregistre les données pour chaque application partageant le pool d’applications spécifié. La collecte peut donc ralentir n’importe quelle application partageant le même pool d’applications, même si vous choisissez de limiter la collecte aux modules d’une seule application dans un plan de collecte.
 
-     Pour empêcher le collecteur de ralentir d’autres applications, hébergez chaque application dans son propre pool d’applications.
+   Pour empêcher le collecteur de ralentir d’autres applications, hébergez chaque application dans son propre pool d’applications.
 
--   Passez en revue les événements du plan de collecte pour lesquels IntelliTrace collecte des données. Modifiez le plan de collecte en y désactivant les événements qui ne sont pas pertinents ou qui ne vous intéressent pas.
+- Passez en revue les événements du plan de collecte pour lesquels IntelliTrace collecte des données. Modifiez le plan de collecte en y désactivant les événements qui ne sont pas pertinents ou qui ne vous intéressent pas.
 
-     Pour désactiver un événement, définissez l’attribut `enabled` pour l’élément `<DiagnosticEventSpecification>` avec la valeur `false`:
+   Pour désactiver un événement, définissez l’attribut `enabled` pour l’élément `<DiagnosticEventSpecification>` avec la valeur `false`:
 
-     `<DiagnosticEventSpecification enabled="false">`
+   `<DiagnosticEventSpecification enabled="false">`
 
-     Si l’attribut `enabled` n’existe pas, l’événement est activé.
+   Si l’attribut `enabled` n’existe pas, l’événement est activé.
 
-     *Comment cela améliore-t-il les performances ?*
+   *Comment cela améliore-t-il les performances ?*
 
-    -   Réduisez le temps de démarrage en désactivant les événements qui ne sont pas pertinents pour l’application. Par exemple, désactivez les événements Windows Workflow pour les applications qui n’utilisent pas Windows Workflow.
+  -   Réduisez le temps de démarrage en désactivant les événements qui ne sont pas pertinents pour l’application. Par exemple, désactivez les événements Windows Workflow pour les applications qui n’utilisent pas Windows Workflow.
 
-    -   Améliorez les performances de démarrage et d’exécution en désactivant les événements de Registre pour les applications qui accèdent au Registre, mais qui n’affichent pas les problèmes liés aux paramètres du Registre.
+  -   Améliorez les performances de démarrage et d’exécution en désactivant les événements de Registre pour les applications qui accèdent au Registre, mais qui n’affichent pas les problèmes liés aux paramètres du Registre.
 
--   Passez en revue les modules du plan de collecte pour lesquels IntelliTrace collecte des données. Modifiez le plan de collecte en y incluant seulement les modules qui vous intéressent :
+- Passez en revue les modules du plan de collecte pour lesquels IntelliTrace collecte des données. Modifiez le plan de collecte en y incluant seulement les modules qui vous intéressent :
 
-    1.  Ouvrez le plan de collecte. Recherchez l’élément `<ModuleList>` .
+  1. Ouvrez le plan de collecte. Recherchez l’élément `<ModuleList>` .
 
-    2.  Dans `<ModuleList>`, définissez l’attribut `isExclusionList` avec la valeur `false`.
+  2. Dans `<ModuleList>`, définissez l’attribut `isExclusionList` avec la valeur `false`.
 
-    3.  Utilisez l'élément `<Name>` pour spécifier chaque module avec un des éléments suivants : nom de fichier, valeur de chaîne pour inclure un module dont le nom contient cette chaîne, ou clé publique.
+  3. Utilisez l'élément `<Name>` pour spécifier chaque module avec un des éléments suivants : nom de fichier, valeur de chaîne pour inclure un module dont le nom contient cette chaîne, ou clé publique.
 
      Par exemple, pour collecter uniquement des données du module web principal pour l’application web Fabrikam Fiber, créez une liste comme celle-ci :
 
-    ```xml
-    <ModuleList isExclusionList="false">
-       <Name>FabrikamFiber.Web.dll</Name>
-    </ModuleList>
+  ```xml
+  <ModuleList isExclusionList="false">
+     <Name>FabrikamFiber.Web.dll</Name>
+  </ModuleList>
+  ```
 
-    ```
+   Pour collecter des données d'un module dont le nom inclut « Fabrikam », créez une liste comme celle-ci :
 
-     Pour collecter des données d'un module dont le nom inclut « Fabrikam », créez une liste comme celle-ci :
+  ```xml
+  <ModuleList isExclusionList="false">
+     <Name>Fabrikam</Name>
+  </ModuleList>
+  ```
 
-    ```xml
-    <ModuleList isExclusionList="false">
-       <Name>Fabrikam</Name>
-    </ModuleList>
+   Pour collecter des données de modules en spécifiant leurs jetons de clé publique, créez une liste comme celle-ci :
 
-    ```
+  ```xml
+  <ModuleList isExclusionList="false">
+     <Name>PublicKeyToken:B77A5C561934E089</Name>
+     <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>
+     <Name>PublicKeyToken:31BF3856AD364E35</Name>
+     <Name>PublicKeyToken:89845DCD8080CC91</Name>
+     <Name>PublicKeyToken:71E9BCE111E9429C</Name>
+  </ModuleList>
+  ```
 
-     Pour collecter des données de modules en spécifiant leurs jetons de clé publique, créez une liste comme celle-ci :
+   *Comment cela améliore-t-il les performances ?*
 
-    ```xml
-    <ModuleList isExclusionList="false">
-       <Name>PublicKeyToken:B77A5C561934E089</Name>
-       <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>
-       <Name>PublicKeyToken:31BF3856AD364E35</Name>
-       <Name>PublicKeyToken:89845DCD8080CC91</Name>
-       <Name>PublicKeyToken:71E9BCE111E9429C</Name>
-    </ModuleList>
+   Cela réduit la quantité d’informations sur les appels de méthode et autres données d’instrumentation qu’IntelliTrace collecte quand l’application démarre et s’exécute. Avec ces données, vous pouvez :
 
-    ```
+  - parcourir le code après la collecte des données ;
 
-     *Comment cela améliore-t-il les performances ?*
+  - examiner les valeurs passées aux appels de fonction et les valeurs de retour correspondantes.
 
-     Cela réduit la quantité d’informations sur les appels de méthode et autres données d’instrumentation qu’IntelliTrace collecte quand l’application démarre et s’exécute. Avec ces données, vous pouvez :
+    *Pourquoi ne pas exclure des modules à la place ?*
 
-    -   parcourir le code après la collecte des données ;
+    Par défaut, les plans de collecte excluent les modules en définissant l’attribut `isExclusionList` avec la valeur `true`. Toutefois, malgré l’exclusion des modules, il est possible que des données soient collectées dans des modules qui ne répondent pas aux critères de la liste d’exclusion ou qui ne vous intéressent pas (par exemple, les modules tiers ou open source).
 
-    -   examiner les valeurs passées aux appels de fonction et les valeurs de retour correspondantes.
+- *Y a-t-il des données qu’IntelliTrace ne collecte pas ?*
 
-     *Pourquoi ne pas exclure des modules à la place ?*
+   Oui. Pour réduire l’impact sur les performances, IntelliTrace limite la collecte des données aux valeurs de types de données primitives qui sont passées à et retournées par les méthodes ainsi qu’aux valeurs de types de données primitives dans les champs sur les objets de niveau supérieur qui sont passés à et retournés par les méthodes.
 
-     Par défaut, les plans de collecte excluent les modules en définissant l’attribut `isExclusionList` avec la valeur `true`. Toutefois, malgré l’exclusion des modules, il est possible que des données soient collectées dans des modules qui ne répondent pas aux critères de la liste d’exclusion ou qui ne vous intéressent pas (par exemple, les modules tiers ou open source).
+   Par exemple, supposons que vous avez une signature de méthode `AlterEmployee` qui accepte un `id` entier et un objet `Employee``oldemployee` :
 
--   *Y a-t-il des données qu’IntelliTrace ne collecte pas ?*
+   `public Employee AlterEmployee(int id, Employee oldemployee)`
 
-     Oui. Pour réduire l’impact sur les performances, IntelliTrace limite la collecte des données aux valeurs de types de données primitives qui sont passées à et retournées par les méthodes ainsi qu’aux valeurs de types de données primitives dans les champs sur les objets de niveau supérieur qui sont passés à et retournés par les méthodes.
+   Le type `Employee` a les attributs suivants : `Id`, `Name`et `HomeAddress`. Une relation d’association existe entre `Employee` et le type `Address` .
 
-     Par exemple, supposons que vous avez une signature de méthode `AlterEmployee` qui accepte un `id` entier et un objet `Employee``oldemployee` :
+   ![Relation entre employé et l’adresse](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
 
-     `public Employee AlterEmployee(int id, Employee oldemployee)`
-
-     Le type `Employee` a les attributs suivants : `Id`, `Name`et `HomeAddress`. Une relation d’association existe entre `Employee` et le type `Address` .
-
-     ![Relation entre employé et l’adresse](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
-
-     Le collecteur enregistre les valeurs pour `id`, `Employee.Id`, `Employee.Name` et l’objet `Employee` retourné par la méthode `AlterEmployee` . Toutefois, le collecteur n’enregistre pas d’informations sur l’objet `Address` (il indique seulement si cet objet a ou non une valeur null). Le collecteur n’enregistre pas non plus de données sur les variables locales de la méthode `AlterEmployee` , sauf si d’autres méthodes utilisent ces variables locales en tant que paramètres (elles sont alors enregistrées en tant que paramètres de méthode).
+   Le collecteur enregistre les valeurs pour `id`, `Employee.Id`, `Employee.Name` et l’objet `Employee` retourné par la méthode `AlterEmployee` . Toutefois, le collecteur n’enregistre pas d’informations sur l’objet `Address` (il indique seulement si cet objet a ou non une valeur null). Le collecteur n’enregistre pas non plus de données sur les variables locales de la méthode `AlterEmployee` , sauf si d’autres méthodes utilisent ces variables locales en tant que paramètres (elles sont alors enregistrées en tant que paramètres de méthode).
 
 ##  <a name="WhereElse"></a> À quel autre endroit puis-je trouver des données IntelliTrace ?
 
 -   À partir d’un IntelliTrace débogage de session dans l’entreprise de Visual Studio, voir [les fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).
 
--   À partir d’une session de test dans Microsoft Test Manager, consultez [Comment : collecter des données IntelliTrace pour aider au débogage difficiles problèmes](/visualstudio/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues).
+-   À partir d’une session de test dans Microsoft Test Manager, consultez [Comment : collecter des données IntelliTrace pour aider au débogage des problèmes difficiles](/visualstudio/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues).
 
 ## <a name="where-can-i-get-more-information"></a>Où peut-on obtenir plus d’informations ?
  [Utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md)

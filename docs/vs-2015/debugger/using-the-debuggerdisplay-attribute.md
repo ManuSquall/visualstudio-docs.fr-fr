@@ -23,12 +23,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e2dd3a45092c4a1a638fe6316df0dde36eb0ceb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82f72dba6b40f5b09ccc71007eb577c19cf7358e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299414"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827730"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Utilisation de l’attribut DebuggerDisplay
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,13 +76,13 @@ csc /t:library autoexp.cs
   
  L'utilisation d'expressions dans DebuggerDisplay peut provoquer les problèmes suivants :  
   
--   L'évaluation des expressions est l'opération la plus coûteuse dans le débogueur et l'expression est évaluée chaque fois qu'elle est affichée. Cela peut provoquer des problèmes de performances pendant l'exécution du code pas à pas. Par exemple, une expression complexe qui est utilisée pour afficher des valeurs dans une collection ou une liste peut être très lente lorsque le nombre d'éléments est important.  
+- L'évaluation des expressions est l'opération la plus coûteuse dans le débogueur et l'expression est évaluée chaque fois qu'elle est affichée. Cela peut provoquer des problèmes de performances pendant l'exécution du code pas à pas. Par exemple, une expression complexe qui est utilisée pour afficher des valeurs dans une collection ou une liste peut être très lente lorsque le nombre d'éléments est important.  
   
--   Les expressions sont évaluées par l'évaluateur d'expression du langage du cadre de pile actuel et pas par l'évaluateur du langage dans lequel l'expression a été écrite. Cela peut provoquer des résultats inattendus lorsque les langages sont différents.  
+- Les expressions sont évaluées par l'évaluateur d'expression du langage du cadre de pile actuel et pas par l'évaluateur du langage dans lequel l'expression a été écrite. Cela peut provoquer des résultats inattendus lorsque les langages sont différents.  
   
--   L'évaluation d'une expression peut modifier l'état de l'application. Par exemple, une expression qui définit la valeur d'une propriété transforme la valeur d'une propriété dans le code en cours de exécution.  
+- L'évaluation d'une expression peut modifier l'état de l'application. Par exemple, une expression qui définit la valeur d'une propriété transforme la valeur d'une propriété dans le code en cours de exécution.  
   
- Une façon de réduire les problèmes potentiels de l'évaluation de l'expression consiste à créer une propriété privée qui exécute l'opération et retourne une chaîne. L'attribut DebuggerDisplay peut ensuite afficher la valeur de cette propriété privée. L'exemple suivant implémente ce modèle :  
+  Une façon de réduire les problèmes potentiels de l'évaluation de l'expression consiste à créer une propriété privée qui exécute l'opération et retourne une chaîne. L'attribut DebuggerDisplay peut ensuite afficher la valeur de cette propriété privée. L'exemple suivant implémente ce modèle :  
   
 ```csharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  

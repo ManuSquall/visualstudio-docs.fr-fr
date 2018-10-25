@@ -20,12 +20,12 @@ ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89c744db125b45c51d2459d8a830b23e855fd2c7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bf62ce18094b7580d0e4d2d2dd2cb2b6ab139287
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302651"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836474"
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>Extension des fenêtres Propriétés, Liste des tâches, Sortie et Options
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -102,33 +102,33 @@ Vous pouvez accéder à n’importe quelle fenêtre outil dans Visual Studio. Ce
 ## <a name="create-an-options-page"></a>Créer une Page d’Options  
  Vous pouvez fournir une page dans le **Options** boîte de dialogue afin que les utilisateurs peuvent modifier les paramètres de la fenêtre outil. Création d’une page d’Options nécessite à la fois une classe qui décrit les options et une entrée dans le fichier TodoListPackage.cs ou TodoListPackage.vb.  
   
-1.  Ajoutez une classe nommée `ToolsOptions.cs`. Faites en sorte que la classe ToolsOptions hérite <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
+1. Ajoutez une classe nommée `ToolsOptions.cs`. Faites en sorte que la classe ToolsOptions hérite <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
   
-    ```csharp  
-    class ToolsOptions : DialogPage  
-    {  
-    }  
-    ```  
+   ```csharp  
+   class ToolsOptions : DialogPage  
+   {  
+   }  
+   ```  
   
-2.  Ajoutez le code suivant à l’aide d’instruction :  
+2. Ajoutez le code suivant à l’aide d’instruction :  
   
-    ```csharp  
-    using Microsoft.VisualStudio.Shell;  
-    ```  
+   ```csharp  
+   using Microsoft.VisualStudio.Shell;  
+   ```  
   
-3.  La page d’Options dans cette procédure pas à pas fournit uniquement une option nommée DaysAhead. Ajouter un champ privé nommé **daysAhead** et une propriété nommée **DaysAhead** à la classe ToolsOptions :  
+3. La page d’Options dans cette procédure pas à pas fournit uniquement une option nommée DaysAhead. Ajouter un champ privé nommé **daysAhead** et une propriété nommée **DaysAhead** à la classe ToolsOptions :  
   
-    ```csharp  
-    private double daysAhead;  
+   ```csharp  
+   private double daysAhead;  
   
-    public double DaysAhead  
-    {  
-        get { return daysAhead; }  
-        set { daysAhead = value; }  
-    }  
-    ```  
+   public double DaysAhead  
+   {  
+       get { return daysAhead; }  
+       set { daysAhead = value; }  
+   }  
+   ```  
   
- Vous devez maintenant apporter le projet prenant en charge de cette page d’Options.  
+   Vous devez maintenant apporter le projet prenant en charge de cette page d’Options.  
   
 #### <a name="make-the-options-page-available-to-users"></a>Rendre la page d’Options disponibles aux utilisateurs  
   

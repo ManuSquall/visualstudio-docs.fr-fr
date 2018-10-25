@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f9a150760636fd5717c427324688c564b80aca30
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: aa8f773ba6f9d0722eb4e07e9c795d0d43860ebb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859755"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869981"
 ---
 # <a name="debugging-a-t4-text-template"></a>Débogage d'un modèle de texte T4
 Vous pouvez définir des points d’arrêt dans les modèles de texte. Pour déboguer un modèle de texte au moment du design, enregistrez le fichier de modèle de texte, puis choisissez **déboguer le modèle T4** dans le menu contextuel du fichier dans l’Explorateur de solutions. Pour déboguer un modèle de texte de l’exécution, simplement déboguer l’application à laquelle il appartient.
@@ -25,7 +25,7 @@ Vous pouvez définir des points d’arrêt dans les modèles de texte. Pour déb
  Pour déboguer un modèle de texte, vous devez comprendre les étapes du processus de transformation du modèle. Différents types d’erreurs peuvent se produire au sein de chaque étape. Les étapes sont les suivantes.
 
 |Étape|Modèle de conception : quand il se produit|Modèle au moment de l’exécution : quand il se produit|
-|----------|--------------------------------------------|-----------------------------------------|
+|-|-|-|
 |Code est généré à partir du modèle de texte.<br /><br /> Erreurs dans les directives, ou incompatibles ou TROUBLES `<#...#>` balises.|Lorsque vous enregistrez le modèle ou appelez la transformation de texte.|Lorsque vous enregistrez le modèle ou appelez la transformation de texte.|
 |Code généré est compilé.<br /><br /> Erreurs de compilation dans votre code de modèle.|Immédiatement après l’étape précédente.|En même temps que votre code d’application.|
 |Le code s’exécute.<br /><br /> Erreurs d’exécution dans votre code de modèle.|Immédiatement après l’étape précédente.|Lorsque votre application s’exécute et appelle le code du modèle.|
@@ -38,7 +38,7 @@ Vous pouvez définir des points d’arrêt dans les modèles de texte. Pour déb
  Le tableau suivant répertorie les erreurs les plus courantes et leurs correctifs.
 
 |Message d'erreur|Description|Solution|
-|-------------------|-----------------|--------------|
+|-|-|-|
 |Échec du chargement de la classe de base{0}' quels Transformation classe hérite.|Se produit si vous ne trouvez pas la classe de base spécifiée dans le `inherits` paramètre dans une directive de modèle. Le message fournit le numéro de ligne de la directive de modèle.|Assurez-vous que la classe spécifiée existe et qu’il existe dans l’assembly est spécifié dans une directive d’assembly.|
 |Impossible de résoudre incluent du texte pour le fichier :{0}|Se produit lorsque vous ne trouvez pas un modèle inclus. Le message fournit le nom du fichier include demandé.|N’oubliez pas que le chemin d’accès de fichier est relatif au chemin du modèle d’origine, ou que le fichier est dans un emplacement qui est inscrit avec l’hôte, ou qu’il existe un chemin d’accès complet au fichier.|
 |Des erreurs ont été générées lors de l’initialisation de l’objet de transformation. La transformation ne sera pas exécutée.|Se produit lorsque la méthode 'Initialize()' de la classe de transformation a échoué ou a retourné false.|Le code dans la fonction Initialize() provient de la classe de transformation de base spécifiée dans le \<#@template#> directive et processeurs de directive. L’erreur ayant provoqué l’échec probablement de l’initialisation est sur la liste d’erreurs. Examiner la raison de l’échec. Vous pouvez examiner le code généré réel pour Initialize() en suivant les procédures pour déboguer un modèle.|
@@ -52,7 +52,7 @@ Vous pouvez définir des points d’arrêt dans les modèles de texte. Pour déb
  Le tableau suivant répertorie les avertissements courants, ainsi que des correctifs, s’il est disponible.
 
 |Message d’avertissement|Description|Solution|
-|---------------------|-----------------|--------------|
+|-|-|-|
 |Le chargement du fichier include '{0}' a retourné une chaîne null ou vide.|Se produit si un fichier de modèle de texte inclus est vide. Le message fournit le nom de fichier du fichier inclus.|Supprimez de la directive include ou assurez-vous que le fichier a un contenu.|
 |Compilation de la transformation :|Ajoute cette chaîne à toutes les erreurs ou avertissements du compilateur d’origine lors de la compilation de la transformation. Cela signifie que le compilateur a généré une erreur ou un avertissement.|Si vous avez un problème pour trouver la DLL, vous devrez peut-être fournir le chemin d’accès complet ou un nom fort qualifié complet si la DLL se trouve dans le GAC.|
 |Le paramètre '{0}' existe déjà dans la directive. Le paramètre en double sera ignoré.|Se produit lorsqu’un paramètre est spécifié plusieurs fois dans une directive. Le message fournit le nom du paramètre et le numéro de ligne de la directive.|Supprimez la spécification de paramètre en double.|

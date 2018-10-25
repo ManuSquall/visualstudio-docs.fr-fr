@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c5bd49d550cb03e8234c8740ea8c0f605ed721c2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: a65928e8a5a734e84d51cbb4368c7346ba8c2edb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283260"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896339"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Paramètres de projet pour des configurations Debug C#
 Vous pouvez modifier les paramètres du projet pour une configuration debug c# dans le **Pages de propriétés** fenêtre, comme indiqué dans [Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Les tableaux suivants indiquent où trouver les paramètres du débogueur dans le **Pages de propriétés** fenêtre.  
@@ -37,15 +37,15 @@ Vous pouvez modifier les paramètres du projet pour une configuration debug c# d
   
 ##  <a name="BKMK_Debug_tab"></a> Onglet déboguer  
   
-|**Paramètre**|**Description**|  
-|-----------------|---------------------|  
-|**Configuration**|Définit le mode de compilation de l'application. Choisissez parmi **Active (Debug)**, **déboguer**, **version**, **toutes les Configurations**.|  
-|**Action de démarrage**|Ce groupe de contrôles spécifie l'action exécutée lorsque vous cliquez dans le menu Déboguer sur Démarrer.<br /><br /> -   **Démarrer le projet** est la valeur par défaut, lance le projet de démarrage pour le débogage. Pour plus d’informations, consultez [choisir le projet de démarrage](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100)).<br />-   **Démarrer le programme externe** vous permet de démarrer et d’attacher à un programme qui n’est pas dans le cadre d’un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet. Pour plus d’informations, consultez [attachement à un programme en cours d’exécution](/previous-versions/visualstudio/visual-studio-2010/c6wf8e4z(v=vs.100)).<br />-   **Démarrer l’URL** vous permet de déboguer une application Web.|  
-|**Arguments de la ligne de commande**|Spécifie les arguments de la ligne de commande pour le programme à déboguer. Le nom de la commande correspond au nom du programme spécifié dans Démarrer le programme externe. Si Action de démarrage a la valeur Démarrer l’URL, les arguments de la ligne de commande ne peuvent pas être spécifiés.|  
-|**Répertoire de travail**|Spécifie le répertoire de travail du programme en cours de débogage. En [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], le répertoire de travail est celui à partir duquel l'application est lancée : \bin\debug par défaut.|  
-|**Utiliser l’ordinateur distant**|Le nom d’un ordinateur distant où l’application s’exécutera à des fins de débogage ou un [nom de serveur Msvsmon](../debugger/remote-debugging.md). L’emplacement du fichier EXE sur l’ordinateur distant est spécifié par la propriété Chemin de sortie dans le dossier Propriétés de configuration, catégorie Générer. L'emplacement doit être un répertoire pouvant être partagé de l'ordinateur distant.|
-|**Activer le débogage de code non managé**|Vous permet de déboguer les appels au code Win32 natif (non managé) à partir de votre application managée.|  
-|**Activer le débogage SQL Server**|Autorise le débogage d'objets de base de données SQL Server.|  
+| **Paramètre** | **Description** |
+|-------------------------------------| - |
+| **Configuration** | Définit le mode de compilation de l'application. Choisissez parmi **Active (Debug)**, **déboguer**, **version**, **toutes les Configurations**. |
+| **Action de démarrage** | Ce groupe de contrôles spécifie l'action exécutée lorsque vous cliquez dans le menu Déboguer sur Démarrer.<br /><br /> -   **Démarrer le projet** est la valeur par défaut, lance le projet de démarrage pour le débogage. Pour plus d’informations, consultez [choisir le projet de démarrage](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100)).<br />-   **Démarrer le programme externe** vous permet de démarrer et d’attacher à un programme qui n’est pas dans le cadre d’un [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projet. Pour plus d’informations, consultez [attachement à un programme en cours d’exécution](/previous-versions/visualstudio/visual-studio-2010/c6wf8e4z(v=vs.100)).<br />-   **Démarrer l’URL** vous permet de déboguer une application Web. |
+| **Arguments de la ligne de commande** | Spécifie les arguments de la ligne de commande pour le programme à déboguer. Le nom de la commande correspond au nom du programme spécifié dans Démarrer le programme externe. Si Action de démarrage a la valeur Démarrer l’URL, les arguments de la ligne de commande ne peuvent pas être spécifiés. |
+| **Répertoire de travail** | Spécifie le répertoire de travail du programme en cours de débogage. En [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], le répertoire de travail est celui à partir duquel l'application est lancée : \bin\debug par défaut. |
+| **Utiliser l’ordinateur distant** | Le nom d’un ordinateur distant où l’application s’exécutera à des fins de débogage ou un [nom de serveur Msvsmon](../debugger/remote-debugging.md). L’emplacement du fichier EXE sur l’ordinateur distant est spécifié par la propriété Chemin de sortie dans le dossier Propriétés de configuration, catégorie Générer. L'emplacement doit être un répertoire pouvant être partagé de l'ordinateur distant. |
+| **Activer le débogage de code non managé** | Vous permet de déboguer les appels au code Win32 natif (non managé) à partir de votre application managée. |
+| **Activer le débogage SQL Server** | Autorise le débogage d'objets de base de données SQL Server. |
   
 ##  <a name="BKMK_Build_tab"></a> Onglet Générer  
   

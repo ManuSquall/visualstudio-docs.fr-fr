@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dfbb7b1a10c27793133afdfdaf0d673fac9535c8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 48c7fe1948231f88aba8309d6d06186848d32455
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673597"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836762"
 ---
 # <a name="office-ui-customization"></a>Personnalisation de l’interface utilisateur Office
   Vous pouvez personnaliser l'interface utilisateur des applications Microsoft Office à l'aide des outils de développement Office dans Visual Studio. Cette rubrique répertorie les fonctionnalités de l’interface utilisateur que vous pouvez personnaliser, comme décrit dans les sections suivantes :  
@@ -61,13 +61,13 @@ ms.locfileid: "35673597"
   
  Les outils de développement Office dans Visual Studio offrent deux façons de personnaliser des volets de tâches :  
   
--   Vous pouvez ajouter un volet Actions à une personnalisation au niveau du document. Par défaut, ce volet s'affiche sur le côté droit de l'application, à droite du document. Il peut aussi s'afficher à gauche, en haut ou en bas du document.  
+- Vous pouvez ajouter un volet Actions à une personnalisation au niveau du document. Par défaut, ce volet s'affiche sur le côté droit de l'application, à droite du document. Il peut aussi s'afficher à gauche, en haut ou en bas du document.  
   
--   Vous pouvez ajouter un volet de tâches personnalisé à un complément VSTO. Les utilisateurs peuvent ancrer les volets de tâches personnalisés aux différents côtés de la fenêtre d’application ou les faire glisser n’importe où dans la fenêtre.  
+- Vous pouvez ajouter un volet de tâches personnalisé à un complément VSTO. Les utilisateurs peuvent ancrer les volets de tâches personnalisés aux différents côtés de la fenêtre d’application ou les faire glisser n’importe où dans la fenêtre.  
   
- Les volets Actions et les volets de tâches personnalisés fournissent des fonctionnalités en hébergeant divers contrôles qui facilitent l'exécution de certaines tâches, telles que la saisie de données. Par rapport à un groupe Ruban, les volets Actions et les volets de tâches personnalisés proposent une zone beaucoup plus grande pour inclure le texte et les contrôles.  
+  Les volets Actions et les volets de tâches personnalisés fournissent des fonctionnalités en hébergeant divers contrôles qui facilitent l'exécution de certaines tâches, telles que la saisie de données. Par rapport à un groupe Ruban, les volets Actions et les volets de tâches personnalisés proposent une zone beaucoup plus grande pour inclure le texte et les contrôles.  
   
- Pour plus d’informations sur les volets actions, consultez [vue d’ensemble du volet Actions](../vsto/actions-pane-overview.md). Pour plus d’informations sur les volets de tâches personnalisés, consultez [volets de tâches personnalisés](../vsto/custom-task-panes.md).  
+  Pour plus d’informations sur les volets actions, consultez [vue d’ensemble du volet Actions](../vsto/actions-pane-overview.md). Pour plus d’informations sur les volets de tâches personnalisés, consultez [volets de tâches personnalisés](../vsto/custom-task-panes.md).  
   
 ##  <a name="Ribbon"></a> Interface utilisateur du ruban personnalisé  
  Vous pouvez personnaliser l'interface utilisateur du ruban pour exposer les fonctionnalités que vous ajoutez aux applications Office. Le ruban est une façon d'organiser les commandes associées (sous forme de contrôles) pour les retrouver plus facilement. Vous pouvez créer vos propres groupes et onglets de ruban pour permettre aux utilisateurs d'accéder aux fonctionnalités fournies dans votre solution. La plupart des fonctionnalités accessibles via les menus et les barres d’outils dans les versions antérieures de Microsoft Office System sont maintenant accessibles à partir du ruban.  

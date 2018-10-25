@@ -1,5 +1,5 @@
 ---
-title: IDiaSectionContrib::get_write | Documents Microsoft
+title: IDiaSectionContrib::get_write | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa9e8fa933e5a023298ab962025500f14fd05028
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c7884177bc35b007b9c1d5a0149f78f514af3e58
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460682"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887798"
 ---
 # <a name="idiasectioncontribgetwrite"></a>IDiaSectionContrib::get_write
 Récupère un indicateur qui indique si la section peut être modifiée.  

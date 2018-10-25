@@ -18,27 +18,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1f6f40946e8548f833b9a96c92335c7ebb42704f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 202a9ac88310656c59fa507cbb8fe271b6f1d040
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626242"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813207"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Procédure pas à pas : Créer un élément de projet de colonne de site avec un modèle de projet, partie 1
   Les projets SharePoint sont des conteneurs pour un ou plusieurs éléments de projet SharePoint. Vous pouvez étendre le système de projet SharePoint dans Visual Studio en créant vos propres types d’éléments de projet SharePoint et associez-les avec un modèle de projet. Dans cette procédure pas à pas, vous allez définir un type d’élément de projet pour la création d’une colonne de site, puis vous allez créer un modèle de projet qui peut être utilisé pour créer un nouveau projet qui contient un élément de projet de colonne de site.  
   
  Cette procédure pas à pas décrit les tâches suivantes :  
   
--   Création d’une extension Visual Studio qui définit un nouveau type d’élément de projet SharePoint pour une colonne de site. Le type d’élément de projet inclut une propriété personnalisée simple qui s’affiche dans le **propriétés** fenêtre.  
+- Création d’une extension Visual Studio qui définit un nouveau type d’élément de projet SharePoint pour une colonne de site. Le type d’élément de projet inclut une propriété personnalisée simple qui s’affiche dans le **propriétés** fenêtre.  
   
--   Création d’un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] modèle de projet pour l’élément de projet.  
+- Création d’un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] modèle de projet pour l’élément de projet.  
   
--   Création d’un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] package d’Extension (VSIX) pour déployer le modèle de projet et l’assembly d’extension.  
+- Création d’un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] package d’Extension (VSIX) pour déployer le modèle de projet et l’assembly d’extension.  
   
--   Débogage et test de l’élément de projet.  
+- Débogage et test de l’élément de projet.  
   
- Il s’agit d’une procédure pas à pas autonome. Après avoir terminé cette procédure pas à pas, vous pouvez améliorer l’élément de projet en ajoutant un Assistant pour le modèle de projet. Pour plus d’informations, consultez [procédure pas à pas : créer un élément de projet de colonne de site avec un modèle de projet, partie 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
+  Il s’agit d’une procédure pas à pas autonome. Après avoir terminé cette procédure pas à pas, vous pouvez améliorer l’élément de projet en ajoutant un Assistant pour le modèle de projet. Pour plus d’informations, consultez [procédure pas à pas : créer un élément de projet de colonne de site avec un modèle de projet, partie 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
   
 > [!NOTE]  
 > Pour une série d’exemples de workflows, consultez [exemples de flux de travail SharePoint](https://docs.microsoft.com/sharepoint/dev/general-development/sharepoint-workflow-samples).  
@@ -46,26 +46,26 @@ ms.locfileid: "42626242"
 ## <a name="prerequisites"></a>Prérequis  
  Vous avez besoin des composants suivants sur l’ordinateur de développement pour effectuer cette procédure pas à pas :  
   
--   Prise en charge des éditions de Microsoft Windows, SharePoint et [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+- Prise en charge des éditions de Microsoft Windows, SharePoint et [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
--   [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Cette procédure pas à pas utilise le **projet VSIX** modèle dans le Kit de développement logiciel pour créer un package VSIX pour déployer l’élément de projet. Pour plus d’informations, consultez [étendre les outils SharePoint dans Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Cette procédure pas à pas utilise le **projet VSIX** modèle dans le Kit de développement logiciel pour créer un package VSIX pour déployer l’élément de projet. Pour plus d’informations, consultez [étendre les outils SharePoint dans Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Connaissance du concept suivant est utile, mais pas obligatoire, pour suivre la procédure pas à pas :  
+  Connaissance du concept suivant est utile, mais pas obligatoire, pour suivre la procédure pas à pas :  
   
--   Colonnes de site dans SharePoint. Pour plus d’informations, consultez [colonnes](http://go.microsoft.com/fwlink/?LinkId=183547).  
+- Colonnes de site dans SharePoint. Pour plus d’informations, consultez [colonnes](http://go.microsoft.com/fwlink/?LinkId=183547).  
   
--   Modèles de projet dans Visual Studio. Pour plus d’informations, consultez [Création de modèles de projet et d’élément](/visualstudio/ide/creating-project-and-item-templates).  
+- Modèles de projet dans Visual Studio. Pour plus d’informations, consultez [Création de modèles de projet et d’élément](/visualstudio/ide/creating-project-and-item-templates).  
   
 ## <a name="create-the-projects"></a>Créer les projets
  Pour effectuer cette procédure pas à pas, vous devez créer trois projets :  
   
--   Un projet VSIX. Ce projet crée le package VSIX pour déployer l’élément de projet de colonne de site et le modèle de projet.  
+- Un projet VSIX. Ce projet crée le package VSIX pour déployer l’élément de projet de colonne de site et le modèle de projet.  
   
--   Un projet de modèle de projet. Ce projet crée un modèle de projet qui peut être utilisé pour créer un nouveau projet SharePoint qui contient l’élément de projet de colonne de site.  
+- Un projet de modèle de projet. Ce projet crée un modèle de projet qui peut être utilisé pour créer un nouveau projet SharePoint qui contient l’élément de projet de colonne de site.  
   
--   Un projet de bibliothèque de classes. Ce projet qui implémente une extension Visual Studio qui définit le comportement de l’élément de projet de colonne de site.  
+- Un projet de bibliothèque de classes. Ce projet qui implémente une extension Visual Studio qui définit le comportement de l’élément de projet de colonne de site.  
   
- Démarrer la procédure pas à pas en créant les projets.  
+  Démarrer la procédure pas à pas en créant les projets.  
   
 #### <a name="to-create-the-vsix-project"></a>Pour créer le projet VSIX  
   
@@ -137,7 +137,7 @@ ms.locfileid: "42626242"
   
 1.  Dans le projet ProjectItemTypeDefinition, ajoutez un fichier de code nommé **SiteColumnProjectItemTypeProvider**.  
   
-2.  Dans la barre de menus, choisissez **projet** > **ajouter une référence**.  
+2.  Dans la barre de menus, choisissez **Projet** > **Ajouter une référence**.  
   
 3.  Dans le **Gestionnaire de références - ProjectItemTypeDefinition** boîte de dialogue, développez le **assemblys** nœud, choisissez le **Framework** nœud, puis sélectionnez le Case à cocher System.ComponentModel.Composition.  
   
@@ -160,39 +160,39 @@ ms.locfileid: "42626242"
   
 #### <a name="to-create-the-files-for-the-project-template"></a>Pour créer les fichiers du modèle de projet  
   
-1.  Démarrez une deuxième instance de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] en tant qu’administrateur.  
+1. Démarrez une deuxième instance de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] en tant qu’administrateur.  
   
-2.  Créez un projet SharePoint 2010 nommé **BaseSharePointProject**.  
+2. Créez un projet SharePoint 2010 nommé **BaseSharePointProject**.  
   
-    > [!IMPORTANT]  
-    >  Dans le **Assistant Personnalisation de SharePoint**, ne sélectionnez pas le **déployer en tant que solution de batterie** case d’option.  
+   > [!IMPORTANT]  
+   >  Dans le **Assistant Personnalisation de SharePoint**, ne sélectionnez pas le **déployer en tant que solution de batterie** case d’option.  
   
-3.  Ajouter un élément vide au projet, puis nommez l’élément **Field1**.  
+3. Ajouter un élément vide au projet, puis nommez l’élément **Field1**.  
   
-4.  Enregistrez le projet, puis fermez la deuxième instance de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+4. Enregistrez le projet, puis fermez la deuxième instance de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-5.  Dans l’instance de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] qui contient la solution SiteColumnProjectItem est ouverte, dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **SiteColumnProjectTemplate** nœud de projet, choisissez  **Ajouter**, puis choisissez **élément existant**.  
+5. Dans l’instance de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] qui contient la solution SiteColumnProjectItem est ouverte, dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **SiteColumnProjectTemplate** nœud de projet, choisissez  **Ajouter**, puis choisissez **élément existant**.  
   
-6.  Dans le **ajouter un élément existant** boîte de dialogue, ouvrez la liste des extensions de fichier, puis choisissez **tous les fichiers (\*.\*)** .  
+6. Dans le **ajouter un élément existant** boîte de dialogue, ouvrez la liste des extensions de fichier, puis choisissez **tous les fichiers (\*.\*)** .  
   
-7.  Dans le répertoire qui contient le projet BaseSharePointProject, sélectionnez le fichier key.snk, puis choisissez le **ajouter** bouton.  
+7. Dans le répertoire qui contient le projet BaseSharePointProject, sélectionnez le fichier key.snk, puis choisissez le **ajouter** bouton.  
   
-    > [!NOTE]  
-    >  Dans cette procédure pas à pas, le modèle de projet que vous créez utilise le même fichier key.snk pour signer chaque projet est créé en utilisant le modèle. Pour savoir comment développer cet exemple pour créer un fichier key.snk différents pour chaque instance de projet, consultez [procédure pas à pas : créer un élément de projet de colonne de site avec un modèle de projet, partie 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
+   > [!NOTE]  
+   >  Dans cette procédure pas à pas, le modèle de projet que vous créez utilise le même fichier key.snk pour signer chaque projet est créé en utilisant le modèle. Pour savoir comment développer cet exemple pour créer un fichier key.snk différents pour chaque instance de projet, consultez [procédure pas à pas : créer un élément de projet de colonne de site avec un modèle de projet, partie 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
   
-8.  Répétez les étapes 5 à 8 pour ajouter les fichiers suivants à partir des sous-dossiers dans le dossier BaseSharePointProject spécifiés :  
+8. Répétez les étapes 5 à 8 pour ajouter les fichiers suivants à partir des sous-dossiers dans le dossier BaseSharePointProject spécifiés :  
   
-    -   *\Field1\Elements.Xml*  
+   - *\Field1\Elements.Xml*  
   
-    -   *\Field1\SharePointProjectItem.spdata*  
+   - *\Field1\SharePointProjectItem.spdata*  
   
-    -   *\Features\Feature1\Feature1.Feature*  
+   - *\Features\Feature1\Feature1.Feature*  
   
-    -   *\Features\Feature1\Feature1.Template.Xml*  
+   - *\Features\Feature1\Feature1.Template.Xml*  
   
-    -   *\Package\Package.package*  
+   - *\Package\Package.package*  
   
-    -   *\Package\Package.Template.Xml*  
+   - *\Package\Package.Template.Xml*  
   
      Ajoutez ces fichiers directement dans le projet SiteColumnProjectTemplate ; ne pas recréer les sous-dossiers Field1, de fonctionnalités ou de Package dans le projet. Pour plus d’informations sur ces fichiers, consultez [créer des modèles de projet pour les éléments de projet SharePoint et de modèles d’élément](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
   
@@ -225,21 +225,21 @@ ms.locfileid: "42626242"
 ## <a name="edit-the-project-template-files"></a>Modifier les fichiers de modèle de projet
  Dans le projet SiteColumnProjectTemplate, modifiez les fichiers suivants pour définir le comportement du modèle de projet :  
   
--   *AssemblyInfo.cs* ou *AssemblyInfo.vb*  
+- *AssemblyInfo.cs* ou *AssemblyInfo.vb*  
   
--   *Elements.Xml*  
+- *Elements.Xml*  
   
--   *SharePointProjectItem.spdata*  
+- *SharePointProjectItem.spdata*  
   
--   *Feature1.Feature*  
+- *Feature1.Feature*  
   
--   *Package*  
+- *Package*  
   
--   *SiteColumnProjectTemplate.vstemplate*  
+- *SiteColumnProjectTemplate.vstemplate*  
   
--   *ProjectTemplate.csproj* ou *ProjectTemplate.vbproj*  
+- *ProjectTemplate.csproj* ou *ProjectTemplate.vbproj*  
   
- Dans les procédures suivantes, vous allez ajouter des paramètres remplaçables à certains de ces fichiers. Un paramètre remplaçable est un jeton qui commence et se termine par le caractère de signe dollar ($). Lorsqu’un utilisateur utilise ce modèle de projet pour créer un projet, Visual Studio remplace automatiquement ces paramètres dans le nouveau projet avec des valeurs spécifiques. Pour plus d’informations, consultez [paramètres remplaçables](../sharepoint/replaceable-parameters.md).  
+  Dans les procédures suivantes, vous allez ajouter des paramètres remplaçables à certains de ces fichiers. Un paramètre remplaçable est un jeton qui commence et se termine par le caractère de signe dollar ($). Lorsqu’un utilisateur utilise ce modèle de projet pour créer un projet, Visual Studio remplace automatiquement ces paramètres dans le nouveau projet avec des valeurs spécifiques. Pour plus d’informations, consultez [paramètres remplaçables](../sharepoint/replaceable-parameters.md).  
   
 #### <a name="to-edit-the-assemblyinfocs-or-assemblyinfovb-file"></a>Pour modifier le fichier AssemblyInfo.cs ou AssemblyInfo.vb
   
@@ -279,166 +279,166 @@ ms.locfileid: "42626242"
   
 #### <a name="to-edit-the-sharepointprojectitemspdata-file"></a>Pour modifier le fichier SharePointProjectItem.spdata
   
-1.  Dans le projet SiteColumnProjectTemplate, remplacez le contenu de la *SharePointProjectItem.spdata* fichier avec le code XML suivant.  
+1. Dans le projet SiteColumnProjectTemplate, remplacez le contenu de la *SharePointProjectItem.spdata* fichier avec le code XML suivant.  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8"?>  
-    <ProjectItem Type="Contoso.SiteColumn" DefaultFile="Elements.xml"   
-                 xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">  
-      <Files>  
-        <ProjectItemFile Source="Elements.xml" Target="$safeprojectname$\" Type="ElementManifest" />  
-      </Files>   
-    </ProjectItem>  
-    ```  
+   ```xml  
+   <?xml version="1.0" encoding="utf-8"?>  
+   <ProjectItem Type="Contoso.SiteColumn" DefaultFile="Elements.xml"   
+                xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">  
+     <Files>  
+       <ProjectItemFile Source="Elements.xml" Target="$safeprojectname$\" Type="ElementManifest" />  
+     </Files>   
+   </ProjectItem>  
+   ```  
   
-     Le nouveau code XML apporte les modifications suivantes au fichier :  
+    Le nouveau code XML apporte les modifications suivantes au fichier :  
   
-    -   Modifications du `Type` attribut de la `ProjectItem` élément à la même chaîne est passée à la <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> sur la définition d’élément de projet (le `SiteColumnProjectItemTypeProvider` classe que vous avez créé précédemment dans cette procédure pas à pas).  
+   - Modifications du `Type` attribut de la `ProjectItem` élément à la même chaîne est passée à la <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> sur la définition d’élément de projet (le `SiteColumnProjectItemTypeProvider` classe que vous avez créé précédemment dans cette procédure pas à pas).  
   
-    -   Supprime le `SupportedTrustLevels` et `SupportedDeploymentScopes` attributs à partir de la `ProjectItem` élément. Ces valeurs d’attribut sont inutiles, car les niveaux de confiance et les portées de déploiement sont spécifiées dans la `SiteColumnProjectItemTypeProvider` classe dans le projet ProjectItemTypeDefinition.  
+   - Supprime le `SupportedTrustLevels` et `SupportedDeploymentScopes` attributs à partir de la `ProjectItem` élément. Ces valeurs d’attribut sont inutiles, car les niveaux de confiance et les portées de déploiement sont spécifiées dans la `SiteColumnProjectItemTypeProvider` classe dans le projet ProjectItemTypeDefinition.  
   
      Pour plus d’informations sur le contenu de *.spdata* de fichiers, consultez [référence de schéma élément de projet SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md).  
   
-2.  Enregistrez et fermez le fichier.  
+2. Enregistrez et fermez le fichier.  
   
 #### <a name="to-edit-the-feature1feature-file"></a>Pour modifier le fichier Feature1.feature
   
-1.  Dans le projet SiteColumnProjectTemplate, remplacez le contenu de la *Feature1.feature* fichier avec le code XML suivant.  
+1. Dans le projet SiteColumnProjectTemplate, remplacez le contenu de la *Feature1.feature* fichier avec le code XML suivant.  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8"?>  
-    <feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="$guid4$" featureId="$guid4$"   
-             imageUrl="" solutionId="00000000-0000-0000-0000-000000000000" title="Site Column Feature1" version=""  
-             deploymentPath="$SharePoint.Project.FileNameWithoutExtension$_$SharePoint.Feature.FileNameWithoutExtension$"  
-             xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/FeatureModel">  
-      <projectItems>  
-        <projectItemReference itemId="$guid2$" />  
-      </projectItems>  
-    </feature>  
-    ```  
+   ```xml  
+   <?xml version="1.0" encoding="utf-8"?>  
+   <feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="$guid4$" featureId="$guid4$"   
+            imageUrl="" solutionId="00000000-0000-0000-0000-000000000000" title="Site Column Feature1" version=""  
+            deploymentPath="$SharePoint.Project.FileNameWithoutExtension$_$SharePoint.Feature.FileNameWithoutExtension$"  
+            xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/FeatureModel">  
+     <projectItems>  
+       <projectItemReference itemId="$guid2$" />  
+     </projectItems>  
+   </feature>  
+   ```  
   
-     Le nouveau code XML apporte les modifications suivantes au fichier :  
+    Le nouveau code XML apporte les modifications suivantes au fichier :  
   
-    -   Modifie les valeurs de la `Id` et `featureId` les attributs de la `feature` élément à `$guid4$`.  
+   - Modifie les valeurs de la `Id` et `featureId` les attributs de la `feature` élément à `$guid4$`.  
   
-    -   Modifie les valeurs de la `itemId` attribut de la `projectItemReference` élément à `$guid2$`.  
+   - Modifie les valeurs de la `itemId` attribut de la `projectItemReference` élément à `$guid2$`.  
   
      Pour plus d’informations sur *.feature* de fichiers, consultez [créer des modèles de projet pour les éléments de projet SharePoint et de modèles d’élément](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
   
-2.  Enregistrez et fermez le fichier.  
+2. Enregistrez et fermez le fichier.  
   
 #### <a name="to-edit-the-packagepackage-file"></a>Pour modifier le fichier de package
   
-1.  Dans le projet SiteColumnProjectTemplate, remplacez le contenu de la *package* fichier avec le code XML suivant.  
+1. Dans le projet SiteColumnProjectTemplate, remplacez le contenu de la *package* fichier avec le code XML suivant.  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8"?>  
-    <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0"   
-             Id="$guid3$" solutionId="$guid3$" resetWebServer="false" name="$safeprojectname$"   
-             xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">  
-      <features>  
-        <featureReference itemId="$guid4$" />  
-      </features>  
-    </package>  
-    ```  
+   ```xml  
+   <?xml version="1.0" encoding="utf-8"?>  
+   <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0"   
+            Id="$guid3$" solutionId="$guid3$" resetWebServer="false" name="$safeprojectname$"   
+            xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">  
+     <features>  
+       <featureReference itemId="$guid4$" />  
+     </features>  
+   </package>  
+   ```  
   
-     Le nouveau code XML apporte les modifications suivantes au fichier :  
+    Le nouveau code XML apporte les modifications suivantes au fichier :  
   
-    -   Modifie les valeurs de la `Id` et `solutionId` les attributs de la `package` élément à `$guid3$`.  
+   - Modifie les valeurs de la `Id` et `solutionId` les attributs de la `package` élément à `$guid3$`.  
   
-    -   Modifie les valeurs de la `itemId` attribut de la `featureReference` élément à `$guid4$`.  
+   - Modifie les valeurs de la `itemId` attribut de la `featureReference` élément à `$guid4$`.  
   
      Pour plus d’informations sur *.package* de fichiers, consultez [créer des modèles de projet pour les éléments de projet SharePoint et de modèles d’élément](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
   
-2.  Enregistrez et fermez le fichier.  
+2. Enregistrez et fermez le fichier.  
   
 #### <a name="to-edit-the-sitecolumnprojecttemplatevstemplate-file"></a>Pour modifier le fichier sitecolumnprojecttemplate.vstemplate
   
-1.  Dans le projet SiteColumnProjectTemplate, remplacez le contenu du fichier SiteColumnProjectTemplate.vstemplate avec l’une des sections suivantes de XML.  
+1. Dans le projet SiteColumnProjectTemplate, remplacez le contenu du fichier SiteColumnProjectTemplate.vstemplate avec l’une des sections suivantes de XML.  
   
-    -   Si vous créez un modèle de projet Visual c#, utilisez le code XML suivant.  
+   -   Si vous créez un modèle de projet Visual c#, utilisez le code XML suivant.  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8"?>  
-    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">  
-      <TemplateData>  
-        <Name>Site Column</Name>  
-        <Description>Creates a new site column in SharePoint</Description>  
-        <FrameworkVersion>3.5</FrameworkVersion>  
-        <ProjectType>CSharp</ProjectType>  
-        <CreateNewFolder>true</CreateNewFolder>  
-        <CreateInPlace>true</CreateInPlace>  
-        <ProvideDefaultName>true</ProvideDefaultName>  
-        <DefaultName>SiteColumn</DefaultName>  
-        <LocationField>Enabled</LocationField>  
-        <EnableLocationBrowseButton>true</EnableLocationBrowseButton>  
-        <PromptForSaveOnCreation>true</PromptForSaveOnCreation>  
-        <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>  
-        <Icon>SiteColumnProjectTemplate.ico</Icon>  
-        <SortOrder>1000</SortOrder>  
-      </TemplateData>  
-      <TemplateContent>  
-        <Project TargetFileName="SharePointProject1.csproj" File="ProjectTemplate.csproj" ReplaceParameters="true">  
-          <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>  
-          <ProjectItem ReplaceParameters="true" TargetFileName="Features\Feature1\Feature1.feature">Feature1.feature</ProjectItem>  
-          <ProjectItem ReplaceParameters="true" TargetFileName="Features\Feature1\Feature1.Template.xml">Feature1.template.xml</ProjectItem>  
-          <ProjectItem ReplaceParameters="true" TargetFileName="Package\Package.package">Package.package</ProjectItem>  
-          <ProjectItem ReplaceParameters="true" TargetFileName="Package\Package.Template.xml">Package.Template.xml</ProjectItem>  
-          <ProjectItem ReplaceParameters="true" TargetFileName="Field1\SharePointProjectItem.spdata">SharePointProjectItem.spdata</ProjectItem>  
-          <ProjectItem ReplaceParameters="true" TargetFileName="Field1\Elements.xml" OpenInEditor="true">Elements.xml</ProjectItem>  
-          <ProjectItem ReplaceParameters="false" TargetFileName="key.snk">key.snk</ProjectItem>  
-        </Project>  
-      </TemplateContent>  
-    </VSTemplate>  
-    ```  
+   ```xml  
+   <?xml version="1.0" encoding="utf-8"?>  
+   <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">  
+     <TemplateData>  
+       <Name>Site Column</Name>  
+       <Description>Creates a new site column in SharePoint</Description>  
+       <FrameworkVersion>3.5</FrameworkVersion>  
+       <ProjectType>CSharp</ProjectType>  
+       <CreateNewFolder>true</CreateNewFolder>  
+       <CreateInPlace>true</CreateInPlace>  
+       <ProvideDefaultName>true</ProvideDefaultName>  
+       <DefaultName>SiteColumn</DefaultName>  
+       <LocationField>Enabled</LocationField>  
+       <EnableLocationBrowseButton>true</EnableLocationBrowseButton>  
+       <PromptForSaveOnCreation>true</PromptForSaveOnCreation>  
+       <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>  
+       <Icon>SiteColumnProjectTemplate.ico</Icon>  
+       <SortOrder>1000</SortOrder>  
+     </TemplateData>  
+     <TemplateContent>  
+       <Project TargetFileName="SharePointProject1.csproj" File="ProjectTemplate.csproj" ReplaceParameters="true">  
+         <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>  
+         <ProjectItem ReplaceParameters="true" TargetFileName="Features\Feature1\Feature1.feature">Feature1.feature</ProjectItem>  
+         <ProjectItem ReplaceParameters="true" TargetFileName="Features\Feature1\Feature1.Template.xml">Feature1.template.xml</ProjectItem>  
+         <ProjectItem ReplaceParameters="true" TargetFileName="Package\Package.package">Package.package</ProjectItem>  
+         <ProjectItem ReplaceParameters="true" TargetFileName="Package\Package.Template.xml">Package.Template.xml</ProjectItem>  
+         <ProjectItem ReplaceParameters="true" TargetFileName="Field1\SharePointProjectItem.spdata">SharePointProjectItem.spdata</ProjectItem>  
+         <ProjectItem ReplaceParameters="true" TargetFileName="Field1\Elements.xml" OpenInEditor="true">Elements.xml</ProjectItem>  
+         <ProjectItem ReplaceParameters="false" TargetFileName="key.snk">key.snk</ProjectItem>  
+       </Project>  
+     </TemplateContent>  
+   </VSTemplate>  
+   ```  
   
-    -   Si vous créez un modèle de projet Visual Basic, utilisez le code XML suivant.  
+   -   Si vous créez un modèle de projet Visual Basic, utilisez le code XML suivant.  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8"?>  
-    <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">  
-      <TemplateData>  
-        <Name>Site Column</Name>  
-        <Description>Creates a new site column in SharePoint</Description>  
-        <FrameworkVersion>3.5</FrameworkVersion>  
-        <ProjectType>VisualBasic</ProjectType>  
-        <CreateNewFolder>true</CreateNewFolder>  
-        <CreateInPlace>true</CreateInPlace>  
-        <ProvideDefaultName>true</ProvideDefaultName>  
-        <DefaultName>SiteColumn</DefaultName>  
-        <LocationField>Enabled</LocationField>  
-        <EnableLocationBrowseButton>true</EnableLocationBrowseButton>  
-        <PromptForSaveOnCreation>true</PromptForSaveOnCreation>  
-        <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>  
-        <Icon>SiteColumnProjectTemplate.ico</Icon>  
-        <SortOrder>1000</SortOrder>  
-      </TemplateData>  
-      <TemplateContent>  
-        <Project TargetFileName="SharePointProject1.vbproj" File="ProjectTemplate.vbproj" ReplaceParameters="true">  
-          <ProjectItem ReplaceParameters="true" TargetFileName="My Project\AssemblyInfo.vb">AssemblyInfo.vb</ProjectItem>  
-          <ProjectItem ReplaceParameters="true" TargetFileName="Features\Feature1\Feature1.feature">Feature1.feature</ProjectItem>  
-          <ProjectItem ReplaceParameters="true" TargetFileName="Features\Feature1\Feature1.Template.xml">Feature1.template.xml</ProjectItem>  
-          <ProjectItem ReplaceParameters="true" TargetFileName="Package\Package.package">Package.package</ProjectItem>  
-          <ProjectItem ReplaceParameters="true" TargetFileName="Package\Package.Template.xml">Package.Template.xml</ProjectItem>  
-          <ProjectItem ReplaceParameters="true" TargetFileName="Field1\SharePointProjectItem.spdata">SharePointProjectItem.spdata</ProjectItem>  
-          <ProjectItem ReplaceParameters="true" TargetFileName="Field1\Elements.xml" OpenInEditor="true">Elements.xml</ProjectItem>  
-          <ProjectItem ReplaceParameters="false" TargetFileName="key.snk">key.snk</ProjectItem>  
-        </Project>  
-      </TemplateContent>  
-    </VSTemplate>  
-    ```  
+   ```xml  
+   <?xml version="1.0" encoding="utf-8"?>  
+   <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">  
+     <TemplateData>  
+       <Name>Site Column</Name>  
+       <Description>Creates a new site column in SharePoint</Description>  
+       <FrameworkVersion>3.5</FrameworkVersion>  
+       <ProjectType>VisualBasic</ProjectType>  
+       <CreateNewFolder>true</CreateNewFolder>  
+       <CreateInPlace>true</CreateInPlace>  
+       <ProvideDefaultName>true</ProvideDefaultName>  
+       <DefaultName>SiteColumn</DefaultName>  
+       <LocationField>Enabled</LocationField>  
+       <EnableLocationBrowseButton>true</EnableLocationBrowseButton>  
+       <PromptForSaveOnCreation>true</PromptForSaveOnCreation>  
+       <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>  
+       <Icon>SiteColumnProjectTemplate.ico</Icon>  
+       <SortOrder>1000</SortOrder>  
+     </TemplateData>  
+     <TemplateContent>  
+       <Project TargetFileName="SharePointProject1.vbproj" File="ProjectTemplate.vbproj" ReplaceParameters="true">  
+         <ProjectItem ReplaceParameters="true" TargetFileName="My Project\AssemblyInfo.vb">AssemblyInfo.vb</ProjectItem>  
+         <ProjectItem ReplaceParameters="true" TargetFileName="Features\Feature1\Feature1.feature">Feature1.feature</ProjectItem>  
+         <ProjectItem ReplaceParameters="true" TargetFileName="Features\Feature1\Feature1.Template.xml">Feature1.template.xml</ProjectItem>  
+         <ProjectItem ReplaceParameters="true" TargetFileName="Package\Package.package">Package.package</ProjectItem>  
+         <ProjectItem ReplaceParameters="true" TargetFileName="Package\Package.Template.xml">Package.Template.xml</ProjectItem>  
+         <ProjectItem ReplaceParameters="true" TargetFileName="Field1\SharePointProjectItem.spdata">SharePointProjectItem.spdata</ProjectItem>  
+         <ProjectItem ReplaceParameters="true" TargetFileName="Field1\Elements.xml" OpenInEditor="true">Elements.xml</ProjectItem>  
+         <ProjectItem ReplaceParameters="false" TargetFileName="key.snk">key.snk</ProjectItem>  
+       </Project>  
+     </TemplateContent>  
+   </VSTemplate>  
+   ```  
   
-     Le nouveau code XML apporte les modifications suivantes au fichier :  
+    Le nouveau code XML apporte les modifications suivantes au fichier :  
   
-    -   Définit le `Name` élément sur la valeur **colonne de Site**. (Ce nom apparaît dans le **nouveau projet** boîte de dialogue).  
+   - Définit le `Name` élément sur la valeur **colonne de Site**. (Ce nom apparaît dans le **nouveau projet** boîte de dialogue).  
   
-    -   Ajoute `ProjectItem` éléments pour chaque filethat d’inclus dans chaque instance de projet.  
+   - Ajoute `ProjectItem` éléments pour chaque filethat d’inclus dans chaque instance de projet.  
   
-    -   Utilise l’espace de noms » http://schemas.microsoft.com/developer/vstemplate/2005«. Autres fichiers de projet en cours d’utilisation de cette solution le » http://schemas.microsoft.com/developer/msbuild/2003« espace de noms. Par conséquent, les messages d’avertissement schéma XML seront générées, mais vous pouvez les ignorer dans cette procédure pas à pas.  
+   - Utilise l’espace de noms »<http://schemas.microsoft.com/developer/vstemplate/2005>«. Autres fichiers de projet en cours d’utilisation de cette solution le »<http://schemas.microsoft.com/developer/msbuild/2003>« espace de noms. Par conséquent, les messages d’avertissement schéma XML seront générées, mais vous pouvez les ignorer dans cette procédure pas à pas.  
   
      Pour plus d’informations sur le contenu de *.vstemplate* de fichiers, consultez [référence de schéma de modèle Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference).  
   
-2.  Enregistrez et fermez le fichier.  
+2. Enregistrez et fermez le fichier.  
   
 #### <a name="to-edit-the-projecttemplatecsproj-or-projecttemplatevbproj-file"></a>Pour modifier le fichier projecttemplate.csproj ou projecttemplate.vbproj
   

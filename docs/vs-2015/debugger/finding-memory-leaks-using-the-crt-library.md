@@ -35,12 +35,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4be0ac6e3e0de77f19f63b41ec53f433478f5063
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8157e10ccc79df3caea8257d46753f2993501e5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198079"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812282"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Recherche de fuites de mémoire à l'aide de la bibliothèque CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,21 +112,21 @@ Object dump complete.
   
  Que vous définissiez `_CRTDBG_MAP_ALLOC` ou non, le rapport des fuites de mémoire affiche les informations suivantes :  
   
--   le numéro d'allocation de mémoire, en l'occurrence `18` ;  
+- le numéro d'allocation de mémoire, en l'occurrence `18` ;  
   
--   le [type de bloc](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97), en l'occurrence `normal` ;  
+- le [type de bloc](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97), en l'occurrence `normal` ;  
   
--   l'emplacement de stockage hexadécimal, en l'occurrence `0x00780E80` ;  
+- l'emplacement de stockage hexadécimal, en l'occurrence `0x00780E80` ;  
   
--   la taille du bloc, en l'occurrence `64 bytes` ;  
+- la taille du bloc, en l'occurrence `64 bytes` ;  
   
--   les 16 premiers octets de données du bloc, au format hexadécimal.  
+- les 16 premiers octets de données du bloc, au format hexadécimal.  
   
- Le rapport des fuites de mémoire identifie un bloc de mémoire comme étant normal, client ou CRT. Un *bloc normal* est un bloc de mémoire ordinaire alloué par votre programme. Un *bloc client* est un type de bloc de mémoire spécial utilisé par les programmes MFC pour les objets qui nécessitent un destructeur. Suivant l'objet créé, l'opérateur MFC `new` crée soit un bloc normal, soit un bloc client. Un *bloc CRT* est alloué par la bibliothèque CRT pour ses propres besoins. La bibliothèque CRT gère la désallocation de ces blocs. Par conséquent, il est peu probable qu'ils apparaissent dans le rapport des fuites de mémoire, sauf en cas de problème important, comme par exemple, si la bibliothèque CRT est endommagée.  
+  Le rapport des fuites de mémoire identifie un bloc de mémoire comme étant normal, client ou CRT. Un *bloc normal* est un bloc de mémoire ordinaire alloué par votre programme. Un *bloc client* est un type de bloc de mémoire spécial utilisé par les programmes MFC pour les objets qui nécessitent un destructeur. Suivant l'objet créé, l'opérateur MFC `new` crée soit un bloc normal, soit un bloc client. Un *bloc CRT* est alloué par la bibliothèque CRT pour ses propres besoins. La bibliothèque CRT gère la désallocation de ces blocs. Par conséquent, il est peu probable qu'ils apparaissent dans le rapport des fuites de mémoire, sauf en cas de problème important, comme par exemple, si la bibliothèque CRT est endommagée.  
   
- Il existe deux autres types de blocs de mémoire qui n'apparaissent jamais dans les rapports de fuite de mémoire. D'abord, le *bloc libre* , qui correspond à un bloc de mémoire libéré. Il n'a donc pas fait l'objet d'une fuite, par définition. Ensuite, le *bloc ignore* , qui correspond à de la mémoire explicitement marquée comme étant à exclure du rapport des fuites de mémoire.  
+  Il existe deux autres types de blocs de mémoire qui n'apparaissent jamais dans les rapports de fuite de mémoire. D'abord, le *bloc libre* , qui correspond à un bloc de mémoire libéré. Il n'a donc pas fait l'objet d'une fuite, par définition. Ensuite, le *bloc ignore* , qui correspond à de la mémoire explicitement marquée comme étant à exclure du rapport des fuites de mémoire.  
   
- Ces techniques fonctionnent pour la mémoire allouée à l'aide de la fonction CRT standard `malloc` . Si votre programme alloue de la mémoire à l’aide de C++ `new` opérateur, cependant, vous pouvez uniquement voir le fichier et numéro de ligne où l’implémentation de global `operator new` appels `_malloc_dbg` dans le rapport des fuites de mémoire. Étant donné que ce comportement n’est pas très utile, vous pouvez le modifier pour signaler la ligne qui a effectué l’allocation à l’aide d’une macro qui ressemble à ceci : 
+  Ces techniques fonctionnent pour la mémoire allouée à l'aide de la fonction CRT standard `malloc` . Si votre programme alloue de la mémoire à l’aide de C++ `new` opérateur, cependant, vous pouvez uniquement voir le fichier et numéro de ligne où l’implémentation de global `operator new` appels `_malloc_dbg` dans le rapport des fuites de mémoire. Étant donné que ce comportement n’est pas très utile, vous pouvez le modifier pour signaler la ligne qui a effectué l’allocation à l’aide d’une macro qui ressemble à ceci : 
  
 ```cpp  
 #ifdef _DEBUG
@@ -188,25 +188,25 @@ Cela vous indique que l’allocation d’une fuite a été à la ligne 20 du deb
   
 #### <a name="to-set-a-memory-allocation-breakpoint-using-the-watch-window"></a>Pour définir un point d'arrêt d'allocation de mémoire à l'aide de la fenêtre Espion  
   
-1.  Définissez un point d'arrêt vers le début de votre application, puis démarrez-la.  
+1. Définissez un point d'arrêt vers le début de votre application, puis démarrez-la.  
   
-2.  Lorsque l'application s'arrête au point d'arrêt, ouvrez la fenêtre **Espion** .  
+2. Lorsque l'application s'arrête au point d'arrêt, ouvrez la fenêtre **Espion** .  
   
-3.  Dans le **espion** fenêtre, tapez `_crtBreakAlloc` dans le **nom** colonne.  
+3. Dans le **espion** fenêtre, tapez `_crtBreakAlloc` dans le **nom** colonne.  
   
-     Si vous utilisez la version DLL multithread de la bibliothèque CRT (l'option /MD), incluez l'opérateur de contexte : `{,,ucrtbased.dll}_crtBreakAlloc`  
+    Si vous utilisez la version DLL multithread de la bibliothèque CRT (l'option /MD), incluez l'opérateur de contexte : `{,,ucrtbased.dll}_crtBreakAlloc`  
   
-4.  Appuyez sur **RETOUR**.  
+4. Appuyez sur **RETOUR**.  
   
-     Le débogueur évalue l'expression et place le résultat dans la colonne **Valeur** . Cette valeur sera égale à –1 si vous n'avez défini aucun point d'arrêt sur les allocations de mémoire.  
+    Le débogueur évalue l'expression et place le résultat dans la colonne **Valeur** . Cette valeur sera égale à –1 si vous n'avez défini aucun point d'arrêt sur les allocations de mémoire.  
   
-5.  Remplacez la valeur dans la colonne **Valeur** par le numéro de l'allocation de mémoire où vous souhaitez effectuer l'arrêt.  
+5. Remplacez la valeur dans la colonne **Valeur** par le numéro de l'allocation de mémoire où vous souhaitez effectuer l'arrêt.  
   
- Une fois le point d'arrêt défini sur un numéro d'allocation de mémoire, vous pouvez poursuivre le débogage. Veillez à exécuter le programme dans les mêmes conditions que lors de la précédente exécution, de manière à conserver le même ordre d'allocation de mémoire. Lorsque votre programme s'arrête à l'allocation de mémoire spécifiée, vous pouvez utiliser la fenêtre **Pile des appels** et les autres fenêtres de débogage pour déterminer dans quelles conditions la mémoire a été allouée. Ensuite, vous pouvez poursuivre l'exécution pour observer ce qui arrive à l'objet et connaître la raison pour laquelle il n'a pas été désalloué.  
+   Une fois le point d'arrêt défini sur un numéro d'allocation de mémoire, vous pouvez poursuivre le débogage. Veillez à exécuter le programme dans les mêmes conditions que lors de la précédente exécution, de manière à conserver le même ordre d'allocation de mémoire. Lorsque votre programme s'arrête à l'allocation de mémoire spécifiée, vous pouvez utiliser la fenêtre **Pile des appels** et les autres fenêtres de débogage pour déterminer dans quelles conditions la mémoire a été allouée. Ensuite, vous pouvez poursuivre l'exécution pour observer ce qui arrive à l'objet et connaître la raison pour laquelle il n'a pas été désalloué.  
   
- La définition d’un point d’arrêt sur variable peut aussi s’avérer utile. Pour plus d’informations, consultez [Using Breakpoints](../debugger/using-breakpoints.md).  
+   La définition d’un point d’arrêt sur variable peut aussi s’avérer utile. Pour plus d’informations, consultez [Using Breakpoints](../debugger/using-breakpoints.md).  
   
- Vous pouvez aussi définir des points d’arrêt d’allocation de mémoire dans le code. Il existe deux façons d'effectuer cette opération :  
+   Vous pouvez aussi définir des points d’arrêt d’allocation de mémoire dans le code. Il existe deux façons d'effectuer cette opération :  
   
 ```  
 _crtBreakAlloc = 18;  

@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7b154b970d2a738e80efa5cbf669d29bd7bae589
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f68cb2178242e5589f312f6ddc2c555da3f47a0e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756764"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872822"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Créer des tables de recherche dans les applications Windows Forms
 Le terme *table de recherche* décrit les contrôles qui sont liés aux tables de données connexes deux. Ces contrôles de recherche affichent les données à partir de la première table selon une valeur sélectionnée dans la seconde table.
@@ -52,7 +52,7 @@ Le terme *table de recherche* décrit les contrôles qui sont liés aux tables d
      Les liaisons de recherche sont désormais établis. Consultez le tableau suivant pour les propriétés spécifiques qui ont été définies sur le contrôle.
 
     |Propriété|Explication du paramètre|
-    |--------------|----------------------------|
+    |--------------| - |
     |**DataSource**|Visual Studio définit cette propriété sur le <xref:System.Windows.Forms.BindingSource>, créé pour la table que vous faites glisser sur le contrôle (par opposition à la <xref:System.Windows.Forms.BindingSource>, créé lorsque le contrôle a été créé).<br /><br /> Si vous avez besoin de faire des réglages, définissez ce paramètre sur le <xref:System.Windows.Forms.BindingSource> de la table contenant la colonne que vous souhaitez afficher.|
     |**DisplayMember**|Visual Studio définit cette propriété sur la première colonne après la clé principale contenant un type de données de chaîne pour la table que vous avez fait glisser vers le contrôle.<br /><br /> Si vous avez besoin de faire des réglages, affectez-lui le nom de colonne que vous souhaitez afficher.|
     |**ValueMember**|Visual Studio définit cette propriété sur la première colonne participant à la clé principale, ou la première colonne de la table si aucune clé n'est définie.<br /><br /> Si vous avez besoin de faire des réglages, affectez la valeur de la clé primaire dans la table avec la colonne que vous souhaitez afficher.|

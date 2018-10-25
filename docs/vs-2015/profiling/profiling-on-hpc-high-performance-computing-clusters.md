@@ -26,12 +26,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1bea3ca5adf462ec6c403099c8276bbdb87e4b57
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67cc55d47e10093b440597ce464d7cc058689455
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178943"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920363"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilage sur des clusters HPC (High Performance Computing)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ Vous pouvez profiler sur des nœuds de calcul de clusters Microsoft Windows HPC 
 ## <a name="prerequisites"></a>Prérequis  
  Pour effectuer un profilage sur un nœud de calcul HPC, vous devez effectuer les opérations suivantes :  
   
--   Installez Microsoft HPC Pack 2008 sur le même ordinateur que [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. L’ordinateur ne doit pas nécessairement faire partie du cluster HPC. Vous pouvez installer HPC Pack à partir du [Centre de téléchargement Microsoft ](http://go.microsoft.com/fwlink/?LinkID=177414).  
+- Installez Microsoft HPC Pack 2008 sur le même ordinateur que [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. L’ordinateur ne doit pas nécessairement faire partie du cluster HPC. Vous pouvez installer HPC Pack à partir du [Centre de téléchargement Microsoft ](http://go.microsoft.com/fwlink/?LinkID=177414).  
   
--   Installez [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] et la version autonome des outils de profilage sur le nœud de calcul HPC. Les programmes d’installation de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] et du profileur autonome sont tous les deux disponibles sur le support d’installation de [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]. **Remarque** : Vous devez redémarrer l’ordinateur après avoir installé [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] et avant d’installer les outils de profilage.  
+- Installez [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] et la version autonome des outils de profilage sur le nœud de calcul HPC. Les programmes d’installation de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] et du profileur autonome sont tous les deux disponibles sur le support d’installation de [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]. **Remarque** : Vous devez redémarrer l’ordinateur après avoir installé [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] et avant d’installer les outils de profilage.  
   
- Pour installer [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] et les outils de profilage autonomes sur un calcul nœud HPC actif et activer le profilage sur l’ordinateur en cluster, effectuez les étapes suivantes :  
+  Pour installer [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] et les outils de profilage autonomes sur un calcul nœud HPC actif et activer le profilage sur l’ordinateur en cluster, effectuez les étapes suivantes :  
   
 1.  Ouvrez la fenêtre d’invite de commandes installée avec HPC Pack.  
   

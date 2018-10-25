@@ -1,5 +1,5 @@
 ---
-title: REFERENCE_COMPARE | Documents Microsoft
+title: REFERENCE_COMPARE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5b65ec3e0cc4a5b52aa909dea9f3dafa735050c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b7765255583b7160c1cdd19b11889f5de1b35594
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133559"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926655"
 ---
 # <a name="referencecompare"></a>REFERENCE_COMPARE
-Spécifie le type de comparaison de références.  
+Spécifie le type de comparaison des références.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -52,12 +52,12 @@ public enum enum_REFERENCE_COMPARE {
  Spécifie un inférieur-que la comparaison.  
   
  REF_COMPARE_GREATER_THAN  
- Spécifie un caractère supérieur-que la comparaison.  
+ Spécifie un signe supérieur-que la comparaison.  
   
 ## <a name="remarks"></a>Notes  
- Est passé comme argument à la [comparer](../../../extensibility/debugger/reference/idebugreference2-compare.md) (méthode).  
+ Passé en tant qu’argument à la [comparer](../../../extensibility/debugger/reference/idebugreference2-compare.md) (méthode).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

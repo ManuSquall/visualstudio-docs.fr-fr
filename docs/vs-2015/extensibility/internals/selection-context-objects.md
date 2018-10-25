@@ -16,12 +16,12 @@ ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c1a0c138cbfcf3892508fb9ae42685ffe895411
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b3d65a1fb510daec68060261141ddb2d05822988
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228655"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836851"
 ---
 # <a name="selection-context-objects"></a>Objets de contexte de sélection
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ Le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] l’environnement de dévelop
   
  Modification des sélection globale contexte déclenche des événements qui peut surveiller les VSPackages. Les VSPackages peuvent effectuer les tâches suivantes en implémentant `IVsTrackSelectionEx` et <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> interfaces :  
   
--   Mettre à jour le fichier actif dans une hiérarchie.  
+- Mettre à jour le fichier actif dans une hiérarchie.  
   
--   Surveiller les modifications apportées à certains types d’éléments. Par exemple, si votre package Visual Studio utilise un spécial **propriétés** fenêtre, vous pouvez surveiller les modifications dans l’active **propriétés** fenêtre et redémarrez le vôtre si nécessaire.  
+- Surveiller les modifications apportées à certains types d’éléments. Par exemple, si votre package Visual Studio utilise un spécial **propriétés** fenêtre, vous pouvez surveiller les modifications dans l’active **propriétés** fenêtre et redémarrez le vôtre si nécessaire.  
   
- La séquence suivante montre le cours typique de suivi de sélection.  
+  La séquence suivante montre le cours typique de suivi de sélection.  
   
 1.  L’IDE récupère le contexte de sélection à partir de la fenêtre qui vient d’être ouverte et le place dans le contexte de la sélection globale. Si le contexte de sélection utilise HIERARCHY_DONTPROPAGATE ou SELCONTAINER_DONTPROPAGATE, ces informations ne sont pas propagées vers le contexte global. Pour plus d’informations, consultez [vos commentaires à l’utilisateur](../../extensibility/internals/feedback-to-the-user.md).  
   

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramDestroyEvent2::GetExitCode | Documents Microsoft
+title: IDebugProgramDestroyEvent2::GetExitCode | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f20f2bfdd8106ba09c5b1de60f7df556d0c0c211
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: feccc7c87b11495262e78e8ec7f1dc7659435782
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114850"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926954"
 ---
 # <a name="idebugprogramdestroyevent2getexitcode"></a>IDebugProgramDestroyEvent2::GetExitCode
 Obtient le code de sortie du programme.  

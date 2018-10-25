@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9ca1917d71ff2ef0961e9f5c99839759c7decff3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a3e0d12aa7d5537b9dd11f1b7d4c3daedc68a84
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176037"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926746"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Comment : intercepter un événement Click sur une forme ou un décorateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -126,17 +126,17 @@ public partial class MyShape // change
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>Interception clique et fait glisser sur les listes de CompartmentShape  
  L’exemple suivant permet aux utilisateurs de réordonner des éléments dans une forme de compartiment en les faisant glisser. Pour exécuter ce code :  
   
-1.  Créer une solution DSL à l’aide de la **des diagrammes de classes** modèle de solution.  
+1. Créer une solution DSL à l’aide de la **des diagrammes de classes** modèle de solution.  
   
-     Vous pouvez également travailler avec une solution de votre choix qui contient des formes de compartiment. Ce code suppose qu’il existe une relation d’incorporation entre les éléments de modèle représentés par la forme et les éléments représentés dans les éléments de liste de compartiment.  
+    Vous pouvez également travailler avec une solution de votre choix qui contient des formes de compartiment. Ce code suppose qu’il existe une relation d’incorporation entre les éléments de modèle représentés par la forme et les éléments représentés dans les éléments de liste de compartiment.  
   
-2.  Définir le **génère une Double dérivée** propriété de la forme de compartiment.  
+2. Définir le **génère une Double dérivée** propriété de la forme de compartiment.  
   
-3.  Ajoutez ce code dans un fichier dans le **Dsl** projet.  
+3. Ajoutez ce code dans un fichier dans le **Dsl** projet.  
   
-4.  Ajustez les noms de classe et la forme de domaine dans ce code pour faire correspondre votre propre DSL.  
+4. Ajustez les noms de classe et la forme de domaine dans ce code pour faire correspondre votre propre DSL.  
   
- En résumé, le code fonctionne comme suit. Dans cet exemple, `ClassShape` est le nom de la forme de compartiment.  
+   En résumé, le code fonctionne comme suit. Dans cet exemple, `ClassShape` est le nom de la forme de compartiment.  
   
 -   Un ensemble de gestionnaires d’événements de la souris est associé à chaque instance de compartment lors de sa création.  
   

@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c90270876721f2a43c78375108608064d325b39a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e162b1fdc8f775fc7b4d95249ceeac8d86cd0b74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260219"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836864"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Décrire le flux de contrôle à l'aide de fragments dans les diagrammes de séquence UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,46 +57,46 @@ Dans un diagramme de séquence UML, les *fragments combinés* vous permettent d�
   
 #### <a name="to-create-a-combined-fragment"></a>Pour créer un fragment combiné  
   
-1.  Sélectionnez un message ou une séquence de messages qui partent tous de la même ligne de vie ou occurrence d’exécution.  
+1. Sélectionnez un message ou une séquence de messages qui partent tous de la même ligne de vie ou occurrence d’exécution.  
   
-    > [!NOTE]
-    >  Si vous sélectionnez plusieurs messages, ceux-ci doivent former une séquence ininterrompue.  
+   > [!NOTE]
+   >  Si vous sélectionnez plusieurs messages, ceux-ci doivent former une séquence ininterrompue.  
   
-2.  Cliquez avec le bouton droit sur l’un des messages, pointez sur **Entourer de**, puis cliquez sur le genre de fragment combiné de votre choix tel que **Fragment combiné Alt**.  
+2. Cliquez avec le bouton droit sur l’un des messages, pointez sur **Entourer de**, puis cliquez sur le genre de fragment combiné de votre choix tel que **Fragment combiné Alt**.  
   
-     Un nouveau fragment combiné apparaît. Le titre indique le genre de fragment combiné que vous avez sélectionné, comme **Alt**.  
+    Un nouveau fragment combiné apparaît. Le titre indique le genre de fragment combiné que vous avez sélectionné, comme **Alt**.  
   
-     Le fragment combiné comprend un fragment contenant les messages que vous avez sélectionnés.  
+    Le fragment combiné comprend un fragment contenant les messages que vous avez sélectionnés.  
   
- Vous pouvez ajouter d’autres opérandes d’interaction à certains genres de fragments combinés.  
+   Vous pouvez ajouter d’autres opérandes d’interaction à certains genres de fragments combinés.  
   
- Après avoir réorganisé les messages dans un fragment combiné, sélectionnez **Réorganiser la disposition** dans le menu contextuel pour redimensionner le frame de fragment combiné.  
+   Après avoir réorganisé les messages dans un fragment combiné, sélectionnez **Réorganiser la disposition** dans le menu contextuel pour redimensionner le frame de fragment combiné.  
   
 #### <a name="to-add-a-new-interaction-operand-to-a-combined-fragment"></a>Pour ajouter un nouvel opérande d’interaction à un fragment combiné  
   
-1.  Cliquez avec le bouton droit dans un espace vide dans l’opérande d’interaction (2), hors de tout fragment contenu et en dessous du titre du fragment combiné.  
+1. Cliquez avec le bouton droit dans un espace vide dans l’opérande d’interaction (2), hors de tout fragment contenu et en dessous du titre du fragment combiné.  
   
-2.  Pointez sur **Ajouter**.  
+2. Pointez sur **Ajouter**.  
   
-3.  Cliquez sur **Opérande d’interaction avant**ou **Opérande d’interaction après**.  
+3. Cliquez sur **Opérande d’interaction avant**ou **Opérande d’interaction après**.  
   
-4.  Vous pouvez ajouter des messages dans le nouvel opérande d’interaction à l’aide des outils de messages, ou en copiant et collant des messages existants.  
+4. Vous pouvez ajouter des messages dans le nouvel opérande d’interaction à l’aide des outils de messages, ou en copiant et collant des messages existants.  
   
- Vous pouvez définir la propriété **Guard** d’un opérande d’interaction pour décrire les conditions dans lesquelles les messages qu’il contient sont exécutés. Par exemple, dans un fragment combiné **Loop** , vous pouvez utiliser le garde pour spécifier la condition pendant laquelle la boucle continue. Dans un fragment combiné **Alt** , vous pouvez spécifier une condition distincte pour chaque opérande d’interaction.  
+   Vous pouvez définir la propriété **Guard** d’un opérande d’interaction pour décrire les conditions dans lesquelles les messages qu’il contient sont exécutés. Par exemple, dans un fragment combiné **Loop** , vous pouvez utiliser le garde pour spécifier la condition pendant laquelle la boucle continue. Dans un fragment combiné **Alt** , vous pouvez spécifier une condition distincte pour chaque opérande d’interaction.  
   
 #### <a name="to-set-the-guard-of-an-interaction-operand"></a>Pour définir le garde d’un opérande d’interaction  
   
-1.  Cliquez dans un espace vide de l’opérande d’interaction (2), hors de tout fragment contenu.  
+1. Cliquez dans un espace vide de l’opérande d’interaction (2), hors de tout fragment contenu.  
   
-     Une bordure de sélection apparaît autour de l’opérande d’interaction et de la condition de garde.  
+    Une bordure de sélection apparaît autour de l’opérande d’interaction et de la condition de garde.  
   
-     Le titre dans la fenêtre **Propriétés** affiche **Opérande d’interaction**.  
+    Le titre dans la fenêtre **Propriétés** affiche **Opérande d’interaction**.  
   
-2.  Tapez la condition de garde.  
+2. Tapez la condition de garde.  
   
-     La condition apparaît près de la partie supérieure du fragment (4).  
+    La condition apparaît près de la partie supérieure du fragment (4).  
   
- Vous pouvez définir les propriétés de certains genres de fragments combinés.  
+   Vous pouvez définir les propriétés de certains genres de fragments combinés.  
   
 #### <a name="to-set-or-view-the-properties-of-a-combined-fragment"></a>Pour définir ou afficher les propriétés d’un fragment combiné  
   

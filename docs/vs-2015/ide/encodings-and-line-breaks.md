@@ -23,12 +23,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d11bc0743faa9e512fcd144bfef09a84a316531d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 17deca1afc78e238e098285e760a791504b61fe8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284984"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880719"
 ---
 # <a name="encodings-and-line-breaks"></a>Encodages et sauts de ligne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,19 +40,19 @@ Dans Visual Studio, vous pouvez utiliser les paramètres **Options d’enregistr
   
  Dans Visual Studio, les caractères suivants sont interprétés comme des sauts de ligne :  
   
--   CRLF : retour chariot + saut de ligne, caractères Unicode 000D + 000A  
+- CRLF : retour chariot + saut de ligne, caractères Unicode 000D + 000A  
   
--   LF : saut de ligne, caractère Unicode 000A  
+- LF : saut de ligne, caractère Unicode 000A  
   
--   NEL : ligne suivante, caractère Unicode 0085  
+- NEL : ligne suivante, caractère Unicode 0085  
   
--   LS : séparateur de ligne, caractère Unicode 2028  
+- LS : séparateur de ligne, caractère Unicode 2028  
   
--   PS : séparateur de paragraphe, caractère Unicode 2029  
+- PS : séparateur de paragraphe, caractère Unicode 2029  
   
- Du texte copié à partir d’autres applications conserve les caractères d’encodage et de saut de ligne d’origine. Par exemple, lorsque vous copiez du texte à partir du Bloc-notes pour le coller dans un fichier texte dans Visual Studio, le texte a les mêmes paramètres que dans le Bloc-notes.  
+  Du texte copié à partir d’autres applications conserve les caractères d’encodage et de saut de ligne d’origine. Par exemple, lorsque vous copiez du texte à partir du Bloc-notes pour le coller dans un fichier texte dans Visual Studio, le texte a les mêmes paramètres que dans le Bloc-notes.  
   
- Lorsque vous ouvrez un fichier qui a des caractères de saut de ligne différents, vous pouvez voir une boîte de dialogue qui vous demande si les caractères de saut de ligne incohérents doivent être normalisés, ainsi que le type de saut de ligne à choisir.
+  Lorsque vous ouvrez un fichier qui a des caractères de saut de ligne différents, vous pouvez voir une boîte de dialogue qui vous demande si les caractères de saut de ligne incohérents doivent être normalisés, ainsi que le type de saut de ligne à choisir.
 
 
 

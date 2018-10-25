@@ -11,24 +11,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8ca4046bdc6c6ee59dae223dd5f2dc5d354aab3a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4ced1cb0fda46a77bb9303a8f69e9f413b2e4751
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954409"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898549"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Le fichier DslDefinition.dsl
 
-Cette rubrique décrit la structure du fichier DslDefinition.dsl dans le projet Dsl d’un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] solution, qui définit un *langage spécifique à un domaine*. Le fichier DslDefinition.dsl décrit les classes et les relations d’un langage spécifique à un domaine, ainsi que le diagramme, des formes, des connecteurs, du format de sérialisation, et **boîte à outils** du langage spécifique à un domaine et ses outils d’édition. Dans une solution de langage spécifique à un domaine, le code qui définit ces outils est généré en fonction des informations contenues dans le fichier DslDefinition.dsl.
+Cette rubrique décrit la structure du fichier DslDefinition.dsl dans le projet Dsl d’un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] solution, qui définit un *langage spécifique à un domaine*. Le fichier DslDefinition.dsl décrit les classes et les relations d’un langage spécifique à un domaine, ainsi que le diagramme, des formes, connecteurs, le format de sérialisation, et **boîte à outils** du langage spécifique à un domaine et son outils d’édition. Dans une solution de langage spécifique à un domaine, le code qui définit ces outils est généré en fonction des informations contenues dans le fichier DslDefinition.dsl.
 
-En général, vous utilisez la *Concepteur de langage spécifique à un domaine* pour modifier le fichier DslDefinition.dsl. Toutefois, il s'agit dans sa forme brute d'un fichier XML et vous pouvez ouvrir un fichier DslDefinition.dsl dans un éditeur XML. Il peut être utile de bien comprendre les informations contenues dans le fichier et comment elles sont organisées à des fins de débogage et d'extension.
+En général, vous utilisez le *Concepteur de langage spécifique à un domaine* pour modifier le fichier DslDefinition.dsl. Toutefois, il s'agit dans sa forme brute d'un fichier XML et vous pouvez ouvrir un fichier DslDefinition.dsl dans un éditeur XML. Il peut être utile de bien comprendre les informations contenues dans le fichier et comment elles sont organisées à des fins de débogage et d'extension.
 
 Les exemples dans cette rubrique sont tirés du modèle de solution Diagramme de composant. Pour afficher un exemple, créez une solution de langage spécifique à un domaine basée sur le modèle de solution Modèles de composants. Une fois que vous avez créé la solution, le fichier DslDefinition.dsl apparaît dans le concepteur de langage spécifique à un domaine. Fermez le fichier, faites un clic droit dans **l’Explorateur de solutions**, pointez sur **ouvrir avec**, cliquez sur **éditeur XML**, puis cliquez sur **OK**.
 
 ## <a name="sections-of-the-dsldefinitiondsl-file"></a>Sections du fichier DslDefinition.dsl
 
-L’élément racine est \<Dsl > et ses attributs identifient le nom de la langue spécifique à un domaine, l’espace de noms et numéros de version principale et secondaire pour le contrôle de version. Le schéma `DslDefinitionModel` définit le contenu et la structure d'un fichier DslDefinition.dsl valide.
+L’élément racine est \<Dsl > et ses attributs identifient le nom du langage spécifique à un domaine, l’espace de noms et numéros de version majeure et mineure pour le contrôle de version. Le schéma `DslDefinitionModel` définit le contenu et la structure d'un fichier DslDefinition.dsl valide.
 
 Les éléments enfants de le \<Dsl > élément racine sont les suivantes :
 
@@ -70,7 +70,7 @@ Cette section définit un diagramme et vous l'utilisez pour spécifier des propr
 
 ### <a name="designer"></a>Designer
 
-Cette section définit un concepteur (éditeur), qui réunit un **boîte à outils**, paramètres de validation, un schéma et une méthode de sérialisation. La section Designer définit également la classe racine du modèle, qui est généralement aussi la classe racine du diagramme.
+Cette section définit un concepteur (éditeur), qui rassemble une **boîte à outils**, paramètres de validation, un diagramme et un schéma de sérialisation. La section Designer définit également la classe racine du modèle, qui est généralement aussi la classe racine du diagramme.
 
 ### <a name="explorer"></a>Explorateur
 
@@ -172,11 +172,11 @@ Chaque classe de domaine (y compris les relations, les formes, les connecteurs e
 
 -   **Nom et Namespace.** Ces attributs spécifient le nom et l’espace de noms de la classe dans le code généré. Ensemble, ils doivent être uniques dans le langage spécifique à un domaine.
 
--   **InheritanceModifier.** Cet attribut est « abstrait », « sealed » ou none.
+-   **InheritanceModifier.** Cet attribut est « abstract », « sealed » ou aucun.
 
 -   **DisplayName.** Cet attribut est le nom qui apparaît dans le **propriétés** fenêtre. L'attribut DisplayName peut contenir des espaces et autres signes de ponctuation.
 
--   **GeneratesDoubleDerived.** Si cet attribut est défini true, deux classes sont générées, et un est une sous-classe de l’autre. Toutes les méthodes générées sont dans la base et les constructeurs sont dans la sous-classe. En définissant cet attribut, vous pouvez substituer toute méthode générée dans le code personnalisé.
+-   **GeneratesDoubleDerived.** Si cet attribut est défini true, deux classes sont générées, et une est une sous-classe de l’autre. Toutes les méthodes générées sont dans la base et les constructeurs sont dans la sous-classe. En définissant cet attribut, vous pouvez substituer toute méthode générée dans le code personnalisé.
 
 -   **HasCustomConstructor**. Si cet attribut à la valeur True, le constructeur est omis du code généré pour que vous puissiez écrire votre propre version.
 
@@ -184,7 +184,7 @@ Chaque classe de domaine (y compris les relations, les formes, les connecteurs e
 
 -   **BaseClass**. Si vous spécifiez une classe de base, elle doit être du même type. Par exemple, une classe de domaine doit avoir une autre classe de domaine comme base et une forme de compartiment doit avoir une forme de compartiment. Si vous ne spécifiez pas de classe de base, la classe dans le code généré dérive d'une classe d'infrastructure standard. Par exemple, une classe de domaine dérive de `ModelElement`.
 
--   **propriétés**. Cet attribut contient les propriétés qui sont tenues à jour sous le contrôle de transaction et conservées lors de l'enregistrement du modèle.
+-   **Propriétés**. Cet attribut contient les propriétés qui sont tenues à jour sous le contrôle de transaction et conservées lors de l'enregistrement du modèle.
 
 -   **ElementMergeDirectives**. Chaque directive de fusion d'élément contrôle comment une instance différente d'une autre classe est ajoutée à une instance de la classe parente. Vous trouverez des détails supplémentaires sur les directives de fusion d'élément plus loin dans cette rubrique.
 
@@ -206,9 +206,9 @@ Le type doit faire référence à l'un de ceux répertoriés dans la section `Ty
 
 Chaque propriété de domaine peut aussi avoir les attributs suivants :
 
--   **IsBrowsable**. Cet attribut détermine si la propriété s’affiche dans le **propriétés** fenêtre lorsque l’utilisateur clique sur un objet de la classe parente.
+-   **IsBrowsable**. Cet attribut détermine si la propriété apparaît dans le **propriétés** fenêtre lorsque l’utilisateur clique sur un objet de la classe parente.
 
--   **IsUIReadOnly**. Cet attribut détermine si l’utilisateur peut modifier la propriété dans le **propriétés** fenêtre ou via un élément décoratif dans lequel la propriété est présentée.
+-   **IsUIReadOnly**. Cet attribut détermine si l’utilisateur peut modifier la propriété dans le **propriétés** fenêtre ou via un décorateur dans lequel la propriété est présentée.
 
 -   **Type**. Vous pouvez affecter à cet attribut la valeur Normal, Calculated ou CustomStorage. Si vous lui affectez la valeur Calculated, vous devez fournir du code personnalisé qui détermine la valeur et la propriété sera en lecture seule. Si vous lui affectez la valeur CustomStorage, vous devez fournir du code qui obtient et définit des valeurs.
 
@@ -269,7 +269,7 @@ Outre les attributs et les nœuds enfants accessibles à toutes les classes, cha
 
 ## <a name="designer-and-toolbox-tabs"></a>Onglets du concepteur et de la boîte à outils
 
-La partie principale de la **concepteur** section du fichier DslDefinition.dsl est la **ToolboxTab** éléments. Un concepteur peut avoir plusieurs de ces éléments, chacun représentant une section pointes dans le Concepteur de généré **boîte à outils**. Chaque **ToolboxTab** élément peut contenir un ou plusieurs **ElementTool** éléments, **ConnectionTool** éléments, ou les deux.
+La partie principale de la **concepteur** section du fichier DslDefinition.dsl est la **ToolboxTab** éléments. Un concepteur peut avoir plusieurs de ces éléments, chacun représentant une section à en-tête dans le concepteur généré **boîte à outils**. Chaque **ToolboxTab** élément peut contenir un ou plusieurs **ElementTool** éléments, **ConnectionTool** éléments, ou les deux.
 
 Les outils d'éléments peuvent créer des instances d'une classe de domaine spécifique. Quand l'utilisateur fait glisser un outil d'élément sur le diagramme, le résultat est déterminé par les directives de fusion d'éléments telles que décrites dans la section relative aux directives de fusion d'éléments plus loin dans cette rubrique.
 
@@ -295,7 +295,7 @@ L'exemple de diagramme de composant contient un chemin d'accès dans le ParentEl
 
 Dans cet exemple, InPort est une sous-classe de ComponentPort et possède une relation ComponentHasPorts. La Propriété se nomme Component.
 
-Lorsque vous écrivez c# par rapport à ce modèle, vous pouvez accéder via un lien en une seule étape à l’aide de la propriété qui génère de la relation sur chacune des classes de sa relation :
+Lors de l’écriture de code c# selon ce modèle, vous pouvez passer un lien en une seule étape à l’aide de la propriété générée par la relation sur chacune des classes qui il se rapporte :
 
 ```
      InPort port; ...  Component c = port.Component;
@@ -311,7 +311,7 @@ Toutefois, vous devez effectuer les deux tronçons de manière explicite en synt
 
 ## <a name="element-merge-directives"></a>Directives de fusion d'éléments
 
-Lorsque la langue utilisateur fait glisser un élément à partir de la **boîte à outils** sur le diagramme, une instance de classe de l’outil est construite. De plus, des liens sont créés entre cette instance et les éléments de modèle existants. Certains éléments, tels que les composants ou les commentaires, sont créés lorsque l’utilisateur de la langue fait glisser à partir du **boîte à outils** sur une partie vide du diagramme. D'autres éléments sont créés quand l'utilisateur du langage les fait glisser sur d'autres éléments hôtes. Par exemple, un OutPort ou InPort est créé quand l'utilisateur du langage le fait glisser sur un composant.
+Lorsque l’utilisateur du langage fait glisser un élément à partir de la **boîte à outils** sur le diagramme, une instance de classe de l’outil est construite. De plus, des liens sont créés entre cette instance et les éléments de modèle existants. Certains éléments, tels que des commentaires, ou des composants sont créés lorsque l’utilisateur du langage les fait glisser à partir de la **boîte à outils** vers une partie vide du diagramme. D'autres éléments sont créés quand l'utilisateur du langage les fait glisser sur d'autres éléments hôtes. Par exemple, un OutPort ou InPort est créé quand l'utilisateur du langage le fait glisser sur un composant.
 
 Une classe hôte potentielle, telle que Component, accepte un nouvel élément uniquement si la classe hôte possède une directive de fusion d'élément pour la classe du nouvel élément. Par exemple, le nœud DomainClass avec Name="Component" contient :
 
@@ -368,7 +368,7 @@ Chaque nœud `XmlClassData` comprend les attributs et les nœuds enfants suivant
 
 -   **XmlPropertyData** pour chaque propriété est définie sur la classe.
 
--   **XmlRelationshipData** pour chaque relation en provenance de la classe. (Les relations ont également leurs propres nœuds XmlClassData.)
+-   **XmlRelationshipData** pour chaque relation qui provenance de la classe. (Les relations ont également leurs propres nœuds XmlClassData.)
 
 -   **TypeName** attribut de chaîne, qui détermine le nom de la classe d’assistance de sérialisation dans le code généré.
 
@@ -380,7 +380,7 @@ Chaque nœud `XmlClassData` comprend les attributs et les nœuds enfants suivant
 
 -   **MonikerElementName** dans les fichiers de modèle sérialisé de l’utilisateur. Cet attribut introduit un moniker qui fait référence à cette classe.
 
--   **MonikerAttributeName**, qui identifie le nom de l’attribut XML au sein d’un moniker. Dans ce fragment de fichier sérialisée d’un utilisateur, l’auteur du langage spécifique à un domaine défini **MonikerElementName** en tant que « inPortMoniker » et **MonikerAttributeName** en tant que « path » :
+-   **MonikerAttributeName**, qui identifie le nom de l’attribut XML dans un moniker. Dans ce fragment de fichier sérialisé d’un utilisateur, l’auteur du langage spécifique à un domaine défini **MonikerElementName** comme « inPortMoniker » et **MonikerAttributeName** comme « path » :
 
     ```
     <inPortMoniker path="//Component2/InPort1" />
@@ -392,11 +392,11 @@ Un générateur de connexion est défini pour chaque outil de connexion. Chaque 
 
 ### <a name="xmlpropertydata"></a>XmlPropertyData
 
-A **DomainPropertyMoniker** attribut identifie la propriété à laquelle les données fait référence. Cet attribut doit être une propriété de la classe ClassData englobante.
+Un **DomainPropertyMoniker** attribut identifie la propriété à laquelle les données fait référence. Cet attribut doit être une propriété de la classe ClassData englobante.
 
-Le **XmlName** attribut donne le nom d’attribut correspondant, tel qu’il doit apparaître dans le document XML. Par convention, cette chaîne est identique au nom de la propriété, hormis le fait que la première lettre est en minuscule.
+Le **XmlName** attribut donne le nom d’attribut correspondant tel qu’il doit apparaître dans le document XML. Par convention, cette chaîne est identique au nom de la propriété, hormis le fait que la première lettre est en minuscule.
 
-Par défaut, le **représentation** attribut est défini sur l’attribut. Si **représentation** est définie sur l’élément, un enfant nœud est créé dans le document XML. Si **représentation** est définie sur Ignore, la propriété n’est pas sérialisée.
+Par défaut, le **représentation** attribut est défini sur l’attribut. Si **représentation** est définie sur l’élément, un enfant nœud est créé dans le code XML. Si **représentation** est défini sur Ignorer, la propriété n’est pas sérialisée.
 
 Le **IsMonikerKey** et **IsMonikerQualifier** attributs une propriété à un rôle dans l’identification des instances de la classe parente. Vous pouvez définir **IsMonikerKey** sur true pour une propriété qui est définie dans ou héritée par une classe. Cet attribut identifie une instance spécifique de la classe parente. La propriété à laquelle vous avez affecté la valeur `IsMonikerKey` est généralement un nom ou autre identificateur clé. Par exemple, la propriété de type chaîne `Name` est la clé de moniker pour NamedElement et ses classes dérivées. Quand l'utilisateur enregistre un modèle dans un fichier, cet attribut doit contenir des valeurs uniques pour chaque instance parmi ses frères dans l'arborescence de relations incorporées.
 
@@ -406,15 +406,15 @@ Dans le fichier de modèle sérialisé, le moniker complet d'un élément est un
 <inPortMoniker name="//Component2/InPort1" />
 ```
 
-Vous pouvez définir le **IsMonikerQualifier** pour une propriété de chaîne d’attribut et fournir une méthode supplémentaire pour construire le nom complet d’un élément. Par exemple, dans le fichier DslDefinition.dsl, **Namespace** est un qualificateur de moniker.
+Vous pouvez définir le **IsMonikerQualifier** pour une propriété de chaîne d’attribut et fournir un moyen supplémentaire pour construire le nom complet d’un élément. Par exemple, dans le fichier DslDefinition.dsl, **Namespace** est un qualificateur de moniker.
 
 ### <a name="xmlrelationshipdata"></a>XmlRelationshipData
 
 Dans un fichier de modèle sérialisé, les liens (des relations d'incorporation et de référence) sont représentés par des nœuds enfants de l'extrémité source de la relation. Pour les relations d'incorporation, le nœud enfant contient une sous-arborescence. Pour les relations de référence, le nœud enfant contient un moniker qui fait référence à une autre partie de l'arborescence.
 
-Le **XmlRelationshipData** d’attribut dans un **XmlClassData** attribut définit exactement comment les nœuds enfants sont imbriqués dans l’élément source. Chaque relation est une source de la classe de domaine comporte un **XmlRelationshipData** attribut.
+Le **XmlRelationshipData** d’attribut dans un **XmlClassData** attribut définit exactement comment les nœuds enfants sont imbriqués dans l’élément source. Chaque relation est une source de la classe de domaine possède un **XmlRelationshipData** attribut.
 
-Le **DomainRelationshipMoniker** attribut identifie les relations provenant de la classe.
+Le **DomainRelationshipMoniker** attribut identifie les relations source sur la classe.
 
 Le **RoleElementName** attribut donne le nom de balise XML qui englobe le nœud enfant dans les données sérialisées.
 
@@ -440,7 +440,7 @@ Ainsi, le fichier sérialisé contient :
    </ports> ...
 ```
 
-Si le **UseFullForm** attribut a la valeur true, une couche supplémentaire d’imbrication est introduite. Cette couche représente la relation proprement dite. L'attribut doit avoir la valeur True si la relation possède des propriétés.
+Si le **UseFullForm** attribut est défini sur true, une couche supplémentaire d’imbrication est introduite. Cette couche représente la relation proprement dite. L'attribut doit avoir la valeur True si la relation possède des propriétés.
 
 ```
 <XmlClassData ElementName="outPort">
@@ -467,7 +467,7 @@ Le fichier sérialisé contient :
 
 (La relation Connection possède ses propres données de classe XML, qui fournissent ses noms d'éléments et d'attributs.)
 
-Si le **OmitElement** attribut est défini sur true, la relation de nom de rôle est omis, qui abrège fichier sérialisé et n’est pas ambiguë si les deux classes ont pas plus d’une relation. Par exemple :
+Si le **OmitElement** attribut est défini sur true, la relation nom_rôle est omis, ce qui provoque une abréviation du fichier sérialisé et est ambigu si les deux classes ont pas plus d’une relation. Exemple :
 
 ```
 <component name="Component3">
@@ -482,7 +482,7 @@ Le fichier DslDefinition.dsl est lui-même un fichier sérialisé et il est conf
 
 -   **DSL** est le nœud RootClass et la classe du diagramme. DomainClass, DomainRelationship et d'autres éléments sont incorporés sous `Dsl`.
 
--   **Classes** est la **RoleElementName** de la relation entre le langage spécifique à un domaine et de la classe.
+-   **Classes** est la **RoleElementName** de la relation entre le langage spécifique à un domaine et DomainClass.
 
 ```
 <Dsl Name="CmptDsl5" ...>
@@ -490,7 +490,7 @@ Le fichier DslDefinition.dsl est lui-même un fichier sérialisé et il est conf
     <DomainClass Name="NamedElement" InheritanceModifier="Abstract" ...
 ```
 
--   Le **XmlSerializationBehavior** attribut est incorporé dans le `Dsl` attribut, mais le **OmitElement** attribut a été défini sur la relation d’incorporation. Ainsi, aucun attribut `RoleElementName` n'intervient. En revanche, un **données de classe** attribut est la `RoleElementName` attribut de la relation d’incorporation entre un **XmlSerializationBehavior** attribut et un **XmlClassData** attribut.
+-   Le **XmlSerializationBehavior** attribut est incorporé sous le `Dsl` attribut, mais le **OmitElement** attribut a été défini sur la relation d’incorporation. Ainsi, aucun attribut `RoleElementName` n'intervient. En revanche, un **ClassData** attribut est la `RoleElementName` attribut de la relation d’incorporation entre un **XmlSerializationBehavior** attribut et un **XmlClassData** attribut.
 
 ```
 <Dsl Name="CmptDsl5" ...> ...
@@ -519,7 +519,7 @@ Les définitions de formes et de connecteurs héritent des attributs et des nœu
 
 -   attributs `Color` et `Line``Style` ;
 
--   **ExposesFillColorAsProperty** et plusieurs attributs similaires. Ces attributs booléens rendent la propriété correspondante variable par l'utilisateur. En général, lorsqu’un utilisateur de la langue clique sur une forme dans le diagramme, les propriétés qui apparaissent dans le **propriétés** fenêtre sont celles de l’instance de classe de domaine avec lequel la forme est mappée. Si `ExposesFillColorAsProperty` a la valeur True, une propriété de la forme elle-même apparaît également.
+-   **ExposesFillColorAsProperty** et plusieurs attributs similaires. Ces attributs booléens rendent la propriété correspondante variable par l'utilisateur. En règle générale, quand un utilisateur de langage clique sur une forme sur le diagramme, les propriétés qui apparaissent dans le **propriétés** fenêtre sont celles de l’instance de classe de domaine à laquelle la forme est mappée. Si `ExposesFillColorAsProperty` a la valeur True, une propriété de la forme elle-même apparaît également.
 
 -   **ShapeHasDecorators**. Une instance de cet attribut se produit chaque décorateur de texte, icône ou développement/réduction. (Dans le fichier DslDefinition.dsl, `ShapeHasDecorators` est une relation avec `UseFullForm` définie sur True.)
 
@@ -581,6 +581,6 @@ Les mappages de connecteurs peuvent aussi contenir des mappages de décorateurs.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Glossaire des outils de langage spécifique à un domaine](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glossaire des outils Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
 - [Guide pratique pour définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)
 - [Présentation des modèles, des classes et des relations](../modeling/understanding-models-classes-and-relationships.md)

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be768f684a495271f06a2a79a71647a9bbaa8552
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 87fbda8cb55d0d2a6ef9f21a2a7878d4babd3fe6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498868"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830689"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Créer des dossiers pour les solutions de conteneur parent
 Dans la Source de contrôle plug-in API Version 1.2, un utilisateur peut spécifier une destination de contrôle de source de racine unique pour tous les projets web dans la solution. Cette racine unique est appelée une racine d’unifiée Super (Sud).  
@@ -50,7 +50,7 @@ Dans la Source de contrôle plug-in API Version 1.2, un utilisateur peut spécif
 Dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], il est recommandé que le nom du dossier SUR être le même que le nom de la solution sans l’extension. Le tableau suivant récapitule le comportement dans les deux versions.  
   
 |Fonctionnalité|API de plug-in Version 1.1 de contrôle de code source|API de plug-in Version 1.2 de contrôle de code source|  
-|-------------|----------------------------------------------|---------------------------------------------|  
+|-------------| - | - |  
 |Ajoutez la solution au contrôle de code source|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|  
 |Ajouter un projet à la solution sous contrôle de code source|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **Remarque :** Visual Studio part du principe qu’une solution est un enfant direct de le SUR.|  
   

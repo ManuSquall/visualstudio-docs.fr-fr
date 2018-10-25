@@ -20,12 +20,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d44077dbe839fe6ce6b369f8d8b3b828bdb982a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b968a94b76f0b2161eef84fdad2cf01288165e65
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549428"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899407"
 ---
 # <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011 : Si possible, transmettez les types de base en tant que paramètres
 
@@ -37,16 +37,20 @@ ms.locfileid: "45549428"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Une déclaration de méthode inclut un paramètre formel est un type dérivé, et la méthode appelle uniquement les membres du type de base du paramètre.
+
+Une déclaration de méthode inclut un paramètre formel est un type dérivé, et la méthode appelle uniquement les membres du type de base du paramètre.
 
 ## <a name="rule-description"></a>Description de la règle
- Lorsqu’un type de base est spécifié en tant que paramètre dans une déclaration de méthode, tout type dérivé du type de base peut être passé en tant qu’argument correspondant à la méthode. Lorsque l’argument est utilisé à l’intérieur du corps de méthode, la méthode spécifique qui est exécutée dépend du type de l’argument. Si la fonctionnalité supplémentaire fournie par le type dérivé n’est pas obligatoire, utilisation du type de base permet une utilisation plus large de la méthode.
+
+Lorsqu’un type de base est spécifié en tant que paramètre dans une déclaration de méthode, tout type dérivé du type de base peut être passé en tant qu’argument correspondant à la méthode. Lorsque l’argument est utilisé à l’intérieur du corps de méthode, la méthode spécifique qui est exécutée dépend du type de l’argument. Si la fonctionnalité supplémentaire fournie par le type dérivé n’est pas obligatoire, utilisation du type de base permet une utilisation plus large de la méthode.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, modifier le type du paramètre à son type de base.
+
+Pour corriger une violation de cette règle, modifier le type du paramètre à son type de base.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Il est possible de supprimer un avertissement de cette règle
+
+Il est possible de supprimer un avertissement de cette règle
 
 - Si la méthode requiert la fonctionnalité spécifique fournie par le type dérivé
 
@@ -54,14 +58,16 @@ ms.locfileid: "45549428"
 
 - Pour mettre en œuvre que seul le type dérivé, ou un type plus dérivé, est passé à la méthode.
 
- Dans ce cas, le code sera plus robuste en raison de la vérification de type fort fourni par le compilateur et le runtime.
+Dans ce cas, le code sera plus robuste en raison de la vérification de type fort fourni par le compilateur et le runtime.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre une méthode, `ManipulateFileStream`, qui peut être utilisé uniquement avec un <xref:System.IO.FileStream> objet, ce qui enfreint cette règle. Une deuxième méthode, `ManipulateAnyStream`, satisfait la règle en remplaçant le <xref:System.IO.FileStream> paramètre en utilisant un <xref:System.IO.Stream>.
 
- [!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CSharp/ca1011-consider-passing-base-types-as-parameters_1.cs)]
- [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CPP/ca1011-consider-passing-base-types-as-parameters_1.cpp)]
- [!code-vb[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1011-consider-passing-base-types-as-parameters_1.vb)]
+L’exemple suivant montre une méthode, `ManipulateFileStream`, qui peut être utilisé uniquement avec un <xref:System.IO.FileStream> objet, ce qui enfreint cette règle. Une deuxième méthode, `ManipulateAnyStream`, satisfait la règle en remplaçant le <xref:System.IO.FileStream> paramètre en utilisant un <xref:System.IO.Stream>.
+
+[!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CSharp/ca1011-consider-passing-base-types-as-parameters_1.cs)]
+[!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CPP/ca1011-consider-passing-base-types-as-parameters_1.cpp)]
+[!code-vb[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1011-consider-passing-base-types-as-parameters_1.vb)]
 
 ## <a name="related-rules"></a>Règles associées
- [CA1059 : Les membres ne doivent pas exposer certains types concrets](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)
+
+[CA1059 : Les membres ne doivent pas exposer certains types concrets](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)

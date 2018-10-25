@@ -1,5 +1,5 @@
 ---
-title: DEBUGPROP_INFO_FLAGS | Documents Microsoft
+title: DEBUGPROP_INFO_FLAGS | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d9ecaab348ca69a792c39a8cb74e998d8f3a6aa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f92138aa9cb3867343ec1d83653d8b30f9b1a8a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104337"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927597"
 ---
 # <a name="debugpropinfoflags"></a>DEBUGPROP_INFO_FLAGS
 Spécifie les informations à récupérer sur un objet de propriété de débogage.  
@@ -72,22 +72,22 @@ public enum enum_DEBUGPROP_INFO_FLAGS {
   
 ## <a name="members"></a>Membres  
  DEBUGPROP_INFO_FULLNAME  
- Initialisation/utiliser le `bstrFullName` champ.  
+ Initialize/utiliser le `bstrFullName` champ.  
   
  DEBUGPROP_INFO_NAME  
- Initialisation/utiliser le `bstrName` champ.  
+ Initialize/utiliser le `bstrName` champ.  
   
  DEBUGPROP_INFO_TYPE  
- Initialisation/utiliser le `bstrType` champ.  
+ Initialize/utiliser le `bstrType` champ.  
   
  DEBUGPROP_INFO_VALUE  
- Initialisation/utiliser le `bstrValue` champ.  
+ Initialize/utiliser le `bstrValue` champ.  
   
  DEBUGPROP_INFO_ATTRIB  
- Initialisation/utiliser le `dwAttrib` champ.  
+ Initialize/utiliser le `dwAttrib` champ.  
   
  DEBUGPROP_INFO_PROP,  
- Initialisation/utiliser le `pProperty` champ contenant une [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interface.  
+ Initialize/utiliser le `pProperty` champ qui contient un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interface.  
   
  DEBUGPROP_INFO_VALUE_AUTOEXPAND  
  Spécifie que le champ de valeur doit contenir la valeur auto-développé, s’il est disponible pour ce type d’objet.  
@@ -96,28 +96,28 @@ public enum enum_DEBUGPROP_INFO_FLAGS {
  Obsolète.  
   
  DEBUGPROP_INFO_VALUE_RAW  
- Ne retournent pas des valeurs de (Embellir) ou des membres (autrement dit, ne mettez pas les valeurs).  
+ Ne retournent pas des valeurs (Embellir) ou des membres (autrement dit, ne met pas les valeurs).  
   
  DEBUGPROP_INFO_VALUE_NO_TOSTRING  
- Ne retournent pas des valeurs de synthèse spéciaux (par exemple, n’appelez pas `ToString()` sur un objet pour produire une valeur).  
+ Ne retournent pas les valeurs synthétisées spéciales (par exemple, n’appelez pas `ToString()` sur un objet pour produire une valeur).  
   
  DEBUGPROP_INFO_NONE  
- Spécifie qu’aucun indicateur est défini.  
+ Spécifie qu’aucun indicateur n’est défini.  
   
  DEBUGPROP_INFO_STANDARD  
- Initialisation/utiliser le `dwAttrib`, `bstrName`, `bstrType`, et `bstrValue` champs.  
+ Initialize/utiliser le `dwAttrib`, `bstrName`, `bstrType`, et `bstrValue` champs.  
   
  DEBUGPROP_INFO_All  
  Indique un masque de tous les indicateurs.  
   
 ## <a name="remarks"></a>Notes  
- Ces valeurs sont passées à la [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md), [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md), et [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) des méthodes pour indiquer les champs qui doivent être initialisées le [ DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) structure.  
+ Ces valeurs sont passées à la [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md), [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md), et [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) méthodes pour indiquer quels sont les champs à initialiser le [ DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) structure.  
   
  Ces valeurs sont également utilisées pour le `dwFields` membre de la `DEBUG_PROPERTY_INFO` structure pour indiquer les champs de la structure sont utilisées et valide lors de la structure est retournée.  
   
- Ces valeurs peuvent être combinées avec une opération de bits `OR`.  
+ Ces valeurs peuvent être combinées avec un opérateur de bits `OR`.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

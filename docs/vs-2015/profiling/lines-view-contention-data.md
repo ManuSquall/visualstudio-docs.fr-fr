@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c53db386ee9eb0815ebb27f82794118035d6cba6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b91c12807482f411783ed6ef5f50e29716612ffd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254733"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921928"
 ---
 # <a name="lines-view---contention-data"></a>Lignes, vue - Données de conflit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,21 +30,21 @@ La vue Lignes des données de conflit répertorie les données de performance po
   
  Une instruction est identifiée par les données suivantes :  
   
--   Le fichier source contenant l’instruction de fonction.  
+- Le fichier source contenant l’instruction de fonction.  
   
--   La fonction contenant l’instruction.  
+- La fonction contenant l’instruction.  
   
--   La ligne source au niveau de laquelle l’instruction commence.  
+- La ligne source au niveau de laquelle l’instruction commence.  
   
--   Le caractère de la ligne source au niveau duquel l’instruction commence.  
+- Le caractère de la ligne source au niveau duquel l’instruction commence.  
   
--   La ligne source au niveau de laquelle l’instruction se termine.  
+- La ligne source au niveau de laquelle l’instruction se termine.  
   
--   Le caractère de la ligne source au niveau duquel l’instruction se termine.  
+- Le caractère de la ligne source au niveau duquel l’instruction se termine.  
   
- La colonne Nom de ligne fournit une concaténation des données d’identificateur pouvant être triée.  
+  La colonne Nom de ligne fournit une concaténation des données d’identificateur pouvant être triée.  
   
- Le tableau suivant décrit les colonnes du rapport de vue Lignes.  
+  Le tableau suivant décrit les colonnes du rapport de vue Lignes.  
   
 |Colonne|Description|  
 |------------|-----------------|  

@@ -22,12 +22,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 5e954550b8d59f1d1672e1229387714ad251a38c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6e4d5be3628cd9653bfc713caea426c91a205419
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204696"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884912"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Comment : inclure un fichier de données dans une application ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,37 +36,37 @@ Chaque [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application que vo
   
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>Pour inclure un fichier de données à l’aide de Mage.exe  
   
-1.  Ajouter le fichier de données à votre répertoire de l’application avec le reste des fichiers de votre application.  
+1. Ajouter le fichier de données à votre répertoire de l’application avec le reste des fichiers de votre application.  
   
-     En règle générale, le répertoire de votre application sera un répertoire étiqueté avec la version actuelle du déploiement, par exemple, v1.0.0.0.  
+    En règle générale, le répertoire de votre application sera un répertoire étiqueté avec la version actuelle du déploiement, par exemple, v1.0.0.0.  
   
-2.  Mettre à jour votre manifeste d’application vers le fichier de données de liste.  
+2. Mettre à jour votre manifeste d’application vers le fichier de données de liste.  
   
-     **Mage -u v1.0.0.0\Application.manifest - FromDirectory v1.0.0.0**  
+    **Mage -u v1.0.0.0\Application.manifest - FromDirectory v1.0.0.0**  
   
-     Pour effectuer cette tâche permet de recréer la liste des fichiers dans votre manifeste d’application et génère aussi automatiquement les signatures de hachage.  
+    Pour effectuer cette tâche permet de recréer la liste des fichiers dans votre manifeste d’application et génère aussi automatiquement les signatures de hachage.  
   
-3.  Ouvrez le manifeste d’application dans votre texte favori ou votre éditeur XML et recherchez le `file` élément pour votre fichier récemment ajouté.  
+3. Ouvrez le manifeste d’application dans votre texte favori ou votre éditeur XML et recherchez le `file` élément pour votre fichier récemment ajouté.  
   
-     Si vous avez ajouté un fichier XML nommé `Data.xml`, le fichier doit ressembler à l’exemple de code suivant.  
+    Si vous avez ajouté un fichier XML nommé `Data.xml`, le fichier doit ressembler à l’exemple de code suivant.  
   
- `<file name="Data.xml" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
+   `<file name="Data.xml" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
   
-1.  Ajoutez l’attribut `type` à cet élément et lui fournir une valeur de `data`.  
+4. Ajoutez l’attribut `type` à cet élément et lui fournir une valeur de `data`.  
   
- `<file name="Data.xml" writeableType="applicationData" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
+   `<file name="Data.xml" writeableType="applicationData" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
   
-1.  Signer à nouveau votre manifeste d’application à l’aide de votre paire de clés ou un certificat et signer à nouveau votre manifeste de déploiement.  
+5. Signer à nouveau votre manifeste d’application à l’aide de votre paire de clés ou un certificat et signer à nouveau votre manifeste de déploiement.  
   
-     Vous devez resigner votre manifeste de déploiement, car son hachage du manifeste d’application a changé.  
+    Vous devez resigner votre manifeste de déploiement, car son hachage du manifeste d’application a changé.  
   
-     **mot de passe - cf cert_file - pwd le manifeste d’application -s de Mage**  
+    **mot de passe - cf cert_file - pwd le manifeste d’application -s de Mage**  
   
-     **manifeste de l’application appm manifeste - déploiement -u Mage**  
+    **manifeste de l’application appm manifeste - déploiement -u Mage**  
   
-     **mot de passe - pwd cf - certfile de manifeste de déploiement de s - Mage**  
+    **mot de passe - pwd cf - certfile de manifeste de déploiement de s - Mage**  
   
-2.  
+6. 
   
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Pour inclure un fichier de données à l’aide de MageUI.exe  
   

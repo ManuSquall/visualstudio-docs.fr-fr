@@ -19,12 +19,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f318f6092c24c58399b40c7a20c967a89ca5219
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6140ecf03802e283d8880a9c198e3a26667723f2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191631"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899693"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Comment : étendre le processus de génération Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,25 +41,25 @@ Le processus de génération [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est d�
   
 #### <a name="to-override-a-predefined-target"></a>Pour substituer une cible prédéfinie  
   
-1.  Identifiez la cible prédéfinie dans Microsoft.Common.targets que vous souhaitez remplacer. Consultez le tableau ci-dessous pour obtenir la liste complète des cibles que vous pouvez substituer en toute sécurité.  
+1. Identifiez la cible prédéfinie dans Microsoft.Common.targets que vous souhaitez remplacer. Consultez le tableau ci-dessous pour obtenir la liste complète des cibles que vous pouvez substituer en toute sécurité.  
   
-2.  Définissez la ou les cibles à la fin de votre fichier projet, juste avant la balise `</Project>`. Exemple :  
+2. Définissez la ou les cibles à la fin de votre fichier projet, juste avant la balise `</Project>`. Exemple :  
   
-    ```  
-    <Project>  
-        ...  
-        <Target Name="BeforeBuild">  
-            <!-- Insert tasks to run before build here -->  
-        </Target>  
-        <Target Name="AfterBuild">  
-            <!-- Insert tasks to run after build here -->  
-        </Target>  
-    </Project>  
-    ```  
+   ```  
+   <Project>  
+       ...  
+       <Target Name="BeforeBuild">  
+           <!-- Insert tasks to run before build here -->  
+       </Target>  
+       <Target Name="AfterBuild">  
+           <!-- Insert tasks to run after build here -->  
+       </Target>  
+   </Project>  
+   ```  
   
-3.  Générez le fichier projet.  
+3. Générez le fichier projet.  
   
- Le tableau suivant montre toutes les cibles de Microsoft.Common.targets que vous pouvez substituer en toute sécurité.  
+   Le tableau suivant montre toutes les cibles de Microsoft.Common.targets que vous pouvez substituer en toute sécurité.  
   
 |Nom de la cible|Description|  
 |-----------------|-----------------|  
