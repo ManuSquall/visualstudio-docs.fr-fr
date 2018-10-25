@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8449abf6fe178225f84aa65caa4d027df5021d4f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f62018eb3e58f69758bd07faebc7bd77fb26b33b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290431"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845847"
 ---
 # <a name="performance-report-overview"></a>Vue d’ensemble du rapport Performances
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,13 +48,13 @@ Vous pouvez afficher les données de profilage d’une session de performance da
 ### <a name="callercallee-view"></a>Vue Appelant/Appelé  
  La vue Appelant/Appelé affiche une arborescence des appels pour une fonction spécifique. Cette vue est composée de trois parties :  
   
--   La fonction cible figure au milieu de la vue.  
+- La fonction cible figure au milieu de la vue.  
   
--   Les fonctions qui ont appelé la fonction (appelants) sont affichées au-dessus de la fonction cible.  
+- Les fonctions qui ont appelé la fonction (appelants) sont affichées au-dessus de la fonction cible.  
   
--   Les fonctions qui sont appelées par la fonction cible (appelés) sont affichées sous la cible.  
+- Les fonctions qui sont appelées par la fonction cible (appelés) sont affichées sous la cible.  
   
- Vous pouvez sélectionner une fonction différente en double-cliquant sur n’importe quelle fonction de la liste des appelés ou des appelants. Pour plus d’informations, consultez [Vue Appelant/Appelé](../profiling/caller-callee-view.md).  
+  Vous pouvez sélectionner une fonction différente en double-cliquant sur n’importe quelle fonction de la liste des appelés ou des appelants. Pour plus d’informations, consultez [Vue Appelant/Appelé](../profiling/caller-callee-view.md).  
   
 ### <a name="call-tree-view"></a>Vue Arborescence des appels  
  La vue Arborescence des appels affiche les chemins d’exécution de la fonction empruntés dans l’application profilée. La racine de l’arborescence correspond au point d’entrée de l’application ou du composant. Chaque nœud de fonction répertorie toutes les fonctions appelées et les données de performance liées à ces appels de fonction.  

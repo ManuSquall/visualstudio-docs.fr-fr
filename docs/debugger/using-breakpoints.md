@@ -36,12 +36,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a84c87ecc3c5ca0ab1d2fe52e1ff56265c9365d
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 37e34d01d2488ad5345ff65237cd708c06764661
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356806"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816681"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utilisez des points d’arrêt dans le débogueur Visual Studio
 Points d’arrêt sont une des techniques de débogage plus importantes dans la boîte à outils du développeur de votre. Vous définissez des points d’arrêt là où vous souhaitez suspendre l’exécution du débogueur. Par exemple, vous souhaitez afficher l’état des variables de code ou examiner la pile des appels à un certain point d’arrêt.  
@@ -203,15 +203,15 @@ Vous pouvez utiliser des étiquettes pour trier et filtrer la liste des points d
 
 **Pour définir une condition de point d’arrêt :**
 
-1.  Cliquez sur le symbole de point d’arrêt et sélectionnez **Conditions**. Ou placez le curseur sur le symbole de point d’arrêt, sélectionnez le **paramètres** icône, puis sélectionnez **Conditions** dans le **les paramètres de point d’arrêt** fenêtre.  
+1. Cliquez sur le symbole de point d’arrêt et sélectionnez **Conditions**. Ou placez le curseur sur le symbole de point d’arrêt, sélectionnez le **paramètres** icône, puis sélectionnez **Conditions** dans le **les paramètres de point d’arrêt** fenêtre.  
 
-    Vous pouvez également définir des conditions dans les **des points d’arrêt** fenêtre en double-cliquant sur un point d’arrêt et en sélectionnant **paramètres**, puis en sélectionnant **Conditions**. 
+   Vous pouvez également définir des conditions dans les **des points d’arrêt** fenêtre en double-cliquant sur un point d’arrêt et en sélectionnant **paramètres**, puis en sélectionnant **Conditions**. 
   
-  ![Paramètres de point d’arrêt](../debugger/media/breakpointsettings.png "BreakpointSettings")  
+   ![Paramètres de point d’arrêt](../debugger/media/breakpointsettings.png "BreakpointSettings")  
   
-1. Dans la liste déroulante, sélectionnez **Expression conditionnelle**, **nombre d’accès**, ou **filtre**et définissez la valeur en conséquence. 
+2. Dans la liste déroulante, sélectionnez **Expression conditionnelle**, **nombre d’accès**, ou **filtre**et définissez la valeur en conséquence. 
   
-1. Sélectionnez **fermer** ou appuyez sur **Ctrl**+**entrée** pour fermer la **les paramètres de point d’arrêt** fenêtre. Ou, à partir de la **des points d’arrêt** fenêtre, sélectionnez **OK** pour fermer la boîte de dialogue. 
+3. Sélectionnez **fermer** ou appuyez sur **Ctrl**+**entrée** pour fermer la **les paramètres de point d’arrêt** fenêtre. Ou, à partir de la **des points d’arrêt** fenêtre, sélectionnez **OK** pour fermer la boîte de dialogue. 
 
 Points d’arrêt avec un ensemble de conditions apparaissent avec un **+** symbole dans le code source et **des points d’arrêt** windows. 
 

@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42ad89e544727a67611a305444f85ff022f6b2ff
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: e5ff8b850287e91cf2a1e5e6a546980c9087541d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500028"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824181"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>Procédure pas à pas : Info-bulles Info Express d’affichage
 Info Express est une fonctionnalité IntelliSense qui affiche les signatures de méthode et descriptions lorsqu’un utilisateur déplace le pointeur sur un nom de méthode. Vous pouvez implémenter des fonctionnalités reposant sur le langage comme info Express en définissant les identificateurs pour lequel vous souhaitez fournir des descriptions d’info Express et puis en créant une info-bulle dans lequel afficher le contenu. Vous pouvez définir des info Express dans le contexte d’un service de langage, ou vous pouvez définir votre propre type de contenu et d’extension de nom fichier et afficher l’info Express pour uniquement ce type, ou vous pouvez afficher des info Express pour un type de contenu existant (par exemple, « text »). Cette procédure pas à pas montre comment afficher des info Express pour le type de contenu « texte ».  
   
  L’exemple d’info Express dans cette procédure pas à pas affiche les info-bulles quand un utilisateur déplace le pointeur sur un nom de méthode. Cette conception vous oblige à mettre en œuvre de ces quatre interfaces :  
   
--   interface de source  
+- interface de source  
   
--   interface du fournisseur de source  
+- interface du fournisseur de source  
   
--   interface de contrôleur  
+- interface de contrôleur  
   
--   interface du fournisseur de contrôleur  
+- interface du fournisseur de contrôleur  
   
- Les fournisseurs de source et de contrôleur sont des composants de Managed Extensibility Framework (MEF), responsables pour exporter les classes source et le contrôleur et sont l’importation de services et de répartiteurs comme le <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, ce qui crée le texte d’info-bulle mémoire tampon et le <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, ce qui déclenche la session info Express.  
+  Les fournisseurs de source et de contrôleur sont des composants de Managed Extensibility Framework (MEF), responsables pour exporter les classes source et le contrôleur et sont l’importation de services et de répartiteurs comme le <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, ce qui crée le texte d’info-bulle mémoire tampon et le <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, ce qui déclenche la session info Express.  
   
- Dans cet exemple, la source info Express utilise une liste codée en dur des noms de méthodes et des descriptions, mais dans des implémentations complètes, le service de langage et de la documentation du langage doivent fournir ce contenu.  
+  Dans cet exemple, la source info Express utilise une liste codée en dur des noms de méthodes et des descriptions, mais dans des implémentations complètes, le service de langage et de la documentation du langage doivent fournir ce contenu.  
   
 ## <a name="prerequisites"></a>Prérequis  
  À partir de Visual Studio 2015, vous n’avez pas besoin d’installer le SDK Visual Studio à partir du centre de téléchargement. Il est inclus comme fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS par la suite. Pour plus d’informations, consultez [installer le SDK Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -154,7 +154,7 @@ Info Express est une fonctionnalité IntelliSense qui affiche les signatures de 
      [!code-vb[VSSDKQuickInfoTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_16.vb)]
      [!code-csharp[VSSDKQuickInfoTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_16.cs)]  
   
-2.  Importer le <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker> en tant que propriété.  
+2.  Importez le <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker> en tant que propriété.  
   
      [!code-vb[VSSDKQuickInfoTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_17.vb)]
      [!code-csharp[VSSDKQuickInfoTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_17.cs)]  

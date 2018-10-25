@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPortSuppliers2::GetCount | Documents Microsoft
+title: IEnumDebugPortSuppliers2::GetCount | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e134a00af63b22ba0c29e015c593459aa8ebb20e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5c6f0e0e6776b5ca03431589ea17b98904b8d4cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135959"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843091"
 ---
 # <a name="ienumdebugportsuppliers2getcount"></a>IEnumDebugPortSuppliers2::GetCount
 Retourne le nombre d’éléments dans l’énumération.  
@@ -47,7 +47,7 @@ int GetCount(
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode n’est pas partie de l’interface d’énumération COM habituel qui spécifie que seules les `Next`, `Clone`, `Skip`, et `Reset` les méthodes doivent être implémentées.  
+ Cette méthode ne fait pas partie de l’interface d’énumération COM habituel qui spécifie que seules les `Next`, `Clone`, `Skip`, et `Reset` méthodes doivent être implémentées.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)

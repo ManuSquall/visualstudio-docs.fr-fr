@@ -17,37 +17,37 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6b324e82608a79f8f57762e2538b401c794d831c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d0b2de4ce9c332b5a4f54ad41e6d3af500b49956
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304094"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843481"
 ---
 # <a name="properties-of-image-shapes"></a>Propriétés des formes d'image
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez utiliser des formes d’images pour spécifier comment les classes de domaine s’affichent dans un concepteur généré. Définir une forme d’image en définissant le `Image` propriété de la classe dans un fichier image prédéfinie. Les formats suivants sont pris en charge :  
   
--   .gif  
+- .gif  
   
--   .jpg  
+- .jpg  
   
--   .JPEG  
+- .JPEG  
   
--   .bmp  
+- .bmp  
   
--   .wmf  
+- .wmf  
   
--   .emf  
+- .emf  
   
--   .png  
+- .png  
   
- Par défaut, les fichiers de ressources de concepteur, tels que les fichiers image sont situés dans le **ressources**dossier dans le **Dsl** projet.  
+  Par défaut, les fichiers de ressources de concepteur, tels que les fichiers image sont situés dans le **ressources**dossier dans le **Dsl** projet.  
   
- Pour plus d’informations, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md). Pour plus d’informations sur l’utilisation de ces propriétés, consultez [personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).  
+  Pour plus d’informations, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md). Pour plus d’informations sur l’utilisation de ces propriétés, consultez [personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
- Formes d’images ont les propriétés qui sont répertoriées dans le tableau suivant.  
+  Formes d’images ont les propriétés qui sont répertoriées dans le tableau suivant.  
   
 |Propriété|Description|Par défaut|  
 |--------------|-----------------|-------------|  

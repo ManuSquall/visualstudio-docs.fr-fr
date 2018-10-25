@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findSymbolByRVA | Documents Microsoft
+title: IDiaSession::findSymbolByRVA | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f67fa1da0213b5a47d3d7f0047ef8d9a23839ad0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 13dd765c6980dc88a6b9225aac05396a7eb61849
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464093"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839789"
 ---
 # <a name="idiasessionfindsymbolbyrva"></a>IDiaSession::findSymbolByRVA
-Récupère un type de symbole spécifié qui contienne, ou qui est le plus proche d’une adresse virtuelle relative (RVA) spécifiée.  
+Récupère un type de symbole spécifié qui contienne, ou est le plus proche, une adresse virtuelle relative (RVA) spécifiée.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -39,7 +39,7 @@ HRESULT findSymbolByRVA (
  [in] Spécifie l’adresse RVA.  
   
  `symtag`  
- [in] Type de symbole à rechercher. Les valeurs sont tirées de la [symtagenum, énumération](../../debugger/debug-interface-access/symtagenum.md) énumération.  
+ [in] Type de symbole à rechercher. Les valeurs sont extraites à partir de la [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md) énumération.  
   
  `ppSymbol`  
  [out] Retourne un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) de récupérer l’objet qui représente le symbole.  
@@ -57,4 +57,4 @@ pSession->findSymbolByRVA( rva, SymTagFunction, &pFunc );
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md)
+ [SymTagEnum, énumération](../../debugger/debug-interface-access/symtagenum.md)

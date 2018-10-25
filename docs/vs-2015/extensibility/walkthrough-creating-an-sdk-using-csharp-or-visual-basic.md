@@ -13,12 +13,12 @@ ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96b4ded80d3c00c0f2c7a5c9037758f72907ea28
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8f792553e29a4b24d30a25dd835db0b96befcbd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215603"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824267"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Procédure pas à pas : création d’un SDK en C# ou Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -138,23 +138,23 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
   
 ##  <a name="createSample"></a> Pour créer un exemple d’application qui utilise la bibliothèque de classes  
   
-1.  Dans la barre de menus, choisissez **fichier**, **New**, **nouveau projet**.  
+1. Dans la barre de menus, choisissez **fichier**, **New**, **nouveau projet**.  
   
-2.  Dans la liste des modèles, développez **Visual C#** ou **Visual Basic**, puis choisissez le **Windows Store** nœud.  
+2. Dans la liste des modèles, développez **Visual C#** ou **Visual Basic**, puis choisissez le **Windows Store** nœud.  
   
-3.  Choisissez le **application vide** modèle, nommez le projet **ArithmeticUI**, puis choisissez le **OK** bouton.  
+3. Choisissez le **application vide** modèle, nommez le projet **ArithmeticUI**, puis choisissez le **OK** bouton.  
   
-4.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **ArithmeticUI** de projet, puis choisissez **ajouter**, **référence**.  
+4. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **ArithmeticUI** de projet, puis choisissez **ajouter**, **référence**.  
   
-5.  Dans la liste des types référence, développez **Windows**, puis choisissez **Extensions**.  
+5. Dans la liste des types référence, développez **Windows**, puis choisissez **Extensions**.  
   
-6.  Dans le volet de détails, choisissez le **Simple mathématiques SDK** extension.  
+6. Dans le volet de détails, choisissez le **Simple mathématiques SDK** extension.  
   
-     Des informations supplémentaires sur votre Kit de développement logiciel s’affiche. Vous pouvez choisir le **plus d’informations** lien pour ouvrir http://www.msdn.microsoft.com, que vous avez spécifié dans le fichier SDKManifest.xml plus haut dans cette procédure pas à pas.  
+    Des informations supplémentaires sur votre Kit de développement logiciel s’affiche. Vous pouvez choisir le **plus d’informations** lien pour ouvrir http://www.msdn.microsoft.com, que vous avez spécifié dans le fichier SDKManifest.xml plus haut dans cette procédure pas à pas.  
   
-7.  Dans le **Gestionnaire de références** boîte de dialogue, sélectionnez le **Simple mathématiques SDK** case à cocher, puis choisissez le **OK** bouton.  
+7. Dans le **Gestionnaire de références** boîte de dialogue, sélectionnez le **Simple mathématiques SDK** case à cocher, puis choisissez le **OK** bouton.  
   
-8.  Dans la barre de menus, choisissez **vue**, **Explorateur d’objets**.  
+8. Dans la barre de menus, choisissez **vue**, **Explorateur d’objets**.  
   
 9. Dans le **Parcourir** , choisissez **mathématiques simples**.  
   
@@ -176,7 +176,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
   
      Le résultat correct apparaît.  
   
- Vous avez correctement créé et utilisé un SDK d’Extension.  
+    Vous avez correctement créé et utilisé un SDK d’Extension.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédure pas à pas : Création d’un kit de développement à l’aide de C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   

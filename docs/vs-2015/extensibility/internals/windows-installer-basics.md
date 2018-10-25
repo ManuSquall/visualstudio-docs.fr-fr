@@ -16,12 +16,12 @@ ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 281dfa7a8c671923dd64eb8ecaee0629d4b8e224
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 23f633b57a677996a5f286ca1f5ac4b911b3cdda
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223052"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829311"
 ---
 # <a name="windows-installer-basics"></a>Éléments de base de Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Le programme d’installation de Windows installe et désinstalle des applicatio
 ## <a name="authoring-a-vspackage"></a>Création d’un VSPackage  
  Programme d’installation de Windows utilise des packages d’installation, qui contiennent des informations dont le programme d’installation de Windows a besoin pour installer, désinstaller ou réparer un produit et exécuter l’interface utilisateur du programme d’installation (IU). Chaque package d’installation inclut un fichier .msi, qui contient une base de données de l’installation, un flux d’informations de résumé et les flux de données de diverses parties de l’installation. Pour utiliser le programme d’installation, vous devez créer une installation. Étant donné que le programme d’installation organise les installations autour du concept de composants et stocke des informations sur l’installation dans une base de données relationnelle, le processus de la création d’un package d’installation largement implique les étapes suivantes :  
   
-1.  Planifier votre configuration de création pour prendre en charge de votre contrôle de version et les stratégies de côte à côte.  
+1. Planifier votre configuration de création pour prendre en charge de votre contrôle de version et les stratégies de côte à côte.  
   
-2.  Identifier les fonctionnalités qui sera présenté aux utilisateurs.  
+2. Identifier les fonctionnalités qui sera présenté aux utilisateurs.  
   
-3.  Organiser le VSPackage et les dépendances en composants.  
+3. Organiser le VSPackage et les dépendances en composants.  
   
-4.  Remplir la base de données de l’installation avec les informations.  
+4. Remplir la base de données de l’installation avec les informations.  
   
-5.  Valider le package d’installation.  
+5. Valider le package d’installation.  
   
- Cette documentation concerne principalement les première et troisième étapes du processus. Au cours de ces étapes vous organisez vos fonctionnalités de VSPackage en WICs afin de vous pouvez le cadre de votre contrôle de version et la maintenance de stratégie pour prendre en compte pour les versions ultérieures de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Les trois étapes restantes sont traitées en détail dans la documentation du programme d’installation de Windows dans le kit Platform SDK.  
+   Cette documentation concerne principalement les première et troisième étapes du processus. Au cours de ces étapes vous organisez vos fonctionnalités de VSPackage en WICs afin de vous pouvez le cadre de votre contrôle de version et la maintenance de stratégie pour prendre en compte pour les versions ultérieures de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Les trois étapes restantes sont traitées en détail dans la documentation du programme d’installation de Windows dans le kit Platform SDK.  
   
 ## <a name="key-terms"></a>Termes clés  
  Voici les définitions des termes clés liés à la technologie de programme d’installation de Windows.  

@@ -15,12 +15,12 @@ ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1ff260b8b54e3aff37b9cbceffaa1e4b3a374556
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2ef86b1985f71b1f6ea53106c4818e09a7f43b0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217735"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831813"
 ---
 # <a name="core-interfaces"></a>Interfaces de base
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -30,47 +30,47 @@ Les interfaces suivantes sont les interfaces de base pour l’extension de débo
 ## <a name="discussion"></a>Discussion  
  Ces interfaces sont principalement utilisées pour créer le moteur de débogage (dé). Elles sont ici organisées en catégories :  
   
--   [Points d’arrêt](#Breakpoints)  
+- [Points d’arrêt](#Breakpoints)  
   
--   [Contextes](#Contexts)  
+- [Contextes](#Contexts)  
   
--   [Mode d’installation minimale](#CoreServer)  
+- [Mode d’installation minimale](#CoreServer)  
   
--   [Moteurs de débogage](#DebugEngines)  
+- [Moteurs de débogage](#DebugEngines)  
   
--   [Documents](#Documents)  
+- [Documents](#Documents)  
   
--   [Événements](#Events)  
+- [Événements](#Events)  
   
--   [Expressions](#Expressions)  
+- [Expressions](#Expressions)  
   
--   [Mémoire](#Memory)  
+- [Mémoire](#Memory)  
   
--   [Modules](#Modules)  
+- [Modules](#Modules)  
   
--   [Ports](#Ports)  
+- [Ports](#Ports)  
   
--   [Processus](#Processes)  
+- [Processus](#Processes)  
   
--   [Programmes](#Programs)  
+- [Programmes](#Programs)  
   
--   [Propriétés](#Properties)  
+- [Propriétés](#Properties)  
   
--   [Frames de pile](#StackFrames)  
+- [Frames de pile](#StackFrames)  
   
--   [Threads](#Threads)  
+- [Threads](#Threads)  
   
--   [Visualiseurs de type](#TypeVisualizers)  
+- [Visualiseurs de type](#TypeVisualizers)  
   
- Les entités qui peuvent implémenter les interfaces sont :  
+  Les entités qui peuvent implémenter les interfaces sont :  
   
--   Déboguer le moteur (DE)  
+- Déboguer le moteur (DE)  
   
--   Fournisseur de port (PS)  
+- Fournisseur de port (PS)  
   
--   Évaluateur d’expression (EE)  
+- Évaluateur d’expression (EE)  
   
--   Visual Studio (VS)  
+- Visual Studio (VS)  
   
 ##  <a name="Breakpoints"></a> Points d’arrêt  
  Ces interfaces sont liées à l’implémentation et le suivi des points d’arrêt.  

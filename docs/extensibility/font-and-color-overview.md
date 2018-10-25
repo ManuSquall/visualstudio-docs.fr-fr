@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75db379b6a94d0c40fdbc1aa3946315f5fbc4edc
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: adf5877ae9b01666491e5d10522ba52b58b2d917
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498468"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845223"
 ---
 # <a name="font-and-color-overview"></a>Vue d’ensemble de police et de couleur
 Cette rubrique décrit les paramètres de police et la couleur du texte dans le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE). Il présente également les concepts des catégories et des éléments d’affichage, et il explique comment les VSPackages et l’éditeur principal utilisent des attributs de texte.  
@@ -30,55 +30,55 @@ Cette rubrique décrit les paramètres de police et la couleur du texte dans le 
 ## <a name="categories-and-display-items"></a>Catégories et les éléments d’affichage  
  Polices et couleurs sont organisés en **catégories** et **éléments affichés**.  
   
--   Un **catégorie** est un conteneur logique ou fonctionnels pour un nombre de **éléments affichés**.  
+- Un **catégorie** est un conteneur logique ou fonctionnels pour un nombre de **éléments affichés**.  
   
-     Une liste de **catégories** est dans le **afficher les paramètres de** zone de liste déroulante de la **polices et couleurs** page de propriétés.  
+   Une liste de **catégories** est dans le **afficher les paramètres de** zone de liste déroulante de la **polices et couleurs** page de propriétés.  
   
--   Un **élément d’affichage** est une entité de texte bien défini comme un commentaire, une chaîne ou une structure de contrôle qui est à mettre en couleur lorsque affichée.  
+- Un **élément d’affichage** est une entité de texte bien défini comme un commentaire, une chaîne ou une structure de contrôle qui est à mettre en couleur lorsque affichée.  
   
- Chaque **élément d’affichage** est défini de manière unique dans le **catégorie** qui le contient. Par conséquent, plusieurs **catégorie** peut avoir un **élément d’affichage** portant le même nom.  
+  Chaque **élément d’affichage** est défini de manière unique dans le **catégorie** qui le contient. Par conséquent, plusieurs **catégorie** peut avoir un **élément d’affichage** portant le même nom.  
   
 ## <a name="vspackage-control-of-fonts-and-colors"></a>Contrôle de VSPackage de polices et couleurs  
  Le [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] permet les VSPackages pour :  
   
--   Définir la police et couleur **catégories**.  
+- Définir la police et couleur **catégories**.  
   
--   Spécifier les polices et couleurs utilisées pour présenter **éléments affichés**.  
+- Spécifier les polices et couleurs utilisées pour présenter **éléments affichés**.  
   
--   Interagir avec le **polices et couleurs** page de propriétés.  
+- Interagir avec le **polices et couleurs** page de propriétés.  
   
--   Agréger plusieurs **catégories** en groupes.  
+- Agréger plusieurs **catégories** en groupes.  
   
--   Conserver les modifications dans les paramètres par défaut.  
+- Conserver les modifications dans les paramètres par défaut.  
   
- Il existe deux façons d’interagir avec la police et la couleur des sélections dans la [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)].  
+  Il existe deux façons d’interagir avec la police et la couleur des sélections dans la [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)].  
   
--   Une façon est appelé *la coloration de syntaxe*. Il est utilisé par un VSPackage qui personnalise existant [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur pour implémenter un service de langage et de créer une source de l’éditeur.  
+- Une façon est appelé *la coloration de syntaxe*. Il est utilisé par un VSPackage qui personnalise existant [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur pour implémenter un service de langage et de créer une source de l’éditeur.  
   
-     Seul **catégorie** prend en charge ce mécanisme, à savoir, le **éditeur de texte**.  
+   Seul **catégorie** prend en charge ce mécanisme, à savoir, le **éditeur de texte**.  
   
--   Une alternative plus générale prend en charge tous les autres **catégories** et composants d’interface utilisateur autre que l’éditeur de source lors de l’affichage de texte. Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>.  
+- Une alternative plus générale prend en charge tous les autres **catégories** et composants d’interface utilisateur autre que l’éditeur de source lors de l’affichage de texte. Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>.  
   
 ## <a name="core-editor-text-settings"></a>Paramètres de texte éditeur Core  
  Paramètres de police et de couleur pour l’éditeur principal d’un objet de service de langage sont régies par la **texte EditorCategory** trouvé dans le **afficher les paramètres de** zone de liste déroulante de la **polices et couleurs** page de propriétés.  
   
  Lorsque vous travaillez avec les éditeurs, vous devez utiliser le mécanisme de contrôle de couleur fournies par le service de langage permettant de contrôler et d’étendre et de police spécialisé le **éditeur de texte** paramètres. Le mécanisme est appelé *la coloration syntaxique* et fournit :  
   
--   Une technique simplifiée pour la gestion des polices et couleurs des éléments d’affichage.  
+- Une technique simplifiée pour la gestion des polices et couleurs des éléments d’affichage.  
   
-     Pour plus d’informations, consultez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> et <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>.  
+   Pour plus d’informations, consultez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> et <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>.  
   
--   Un mécanisme de colorisation bien définis et optimisée.  
+- Un mécanisme de colorisation bien définis et optimisée.  
   
-     Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>.  
+   Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>.  
   
--   La possibilité pour les deux utiliser des éléments d’affichage intégrées à partir de la **texte EditorCategory** et d’étendre les.  
+- La possibilité pour les deux utiliser des éléments d’affichage intégrées à partir de la **texte EditorCategory** et d’étendre les.  
   
-     Pour plus d’informations, consultez [Comment : utiliser des éléments coloriables intégrés](../extensibility/internals/how-to-use-built-in-colorable-items.md) et [éléments coloriables personnalisés](../extensibility/internals/custom-colorable-items.md).  
+   Pour plus d’informations, consultez [Comment : utiliser des éléments coloriables intégrés](../extensibility/internals/how-to-use-built-in-colorable-items.md) et [éléments coloriables personnalisés](../extensibility/internals/custom-colorable-items.md).  
   
--   Persistance automatique du courant de l’état de ces deux intégrés et personnalisé afficher les éléments avec le **éditeur de texte** catégorie.  
+- Persistance automatique du courant de l’état de ces deux intégrés et personnalisé afficher les éléments avec le **éditeur de texte** catégorie.  
   
- Pour plus d’informations sur la syntaxe de coloration de la voir [couleurs de syntaxe dans un service de langage hérité](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).  
+  Pour plus d’informations sur la syntaxe de coloration de la voir [couleurs de syntaxe dans un service de langage hérité](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interfaces héritées dans l’éditeur](../extensibility/legacy-interfaces-in-the-editor.md)   

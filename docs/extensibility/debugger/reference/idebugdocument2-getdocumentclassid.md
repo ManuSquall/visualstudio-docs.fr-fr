@@ -1,5 +1,5 @@
 ---
-title: IDebugDocument2::GetDocumentClassID | Documents Microsoft
+title: IDebugDocument2::GetDocumentClassID | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79a80d5a37c341a46d32e9bedac8f7ff416158da
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ab5fd153706e1f28da1931165179f479c7052e82
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103703"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836448"
 ---
 # <a name="idebugdocument2getdocumentclassid"></a>IDebugDocument2::GetDocumentClassID
 Obtient l’identificateur de classe du document.  
@@ -41,13 +41,13 @@ int GetDocumentClassID(
   
 #### <a name="parameters"></a>Paramètres  
  `pclsid`  
- [out] Retourne un GUID qui est l’ID de classe du document.  
+ [out] Retourne un GUID représentant l’ID de classe du document.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Le GUID de la classe peut être utilisé pour instancier des classes individuelles, chacune représentant un document.  
+ Le GUID de classe peut être utilisé pour instancier des classes individuelles, chacune représentant un document.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

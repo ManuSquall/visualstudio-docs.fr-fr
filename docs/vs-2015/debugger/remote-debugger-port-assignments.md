@@ -14,25 +14,25 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a9730a4f096ffbbe89eb3b6fef40393232efdfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 01eddb375a521059cac35bf541dec4e4f09d881a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273024"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824231"
 ---
 # <a name="remote-debugger-port-assignments"></a>Affectations de port du débogueur distant
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le débogueur distant de Visual Studio peut s’exécuter comme une application ou un service en arrière-plan. Quand il est exécuté comme une application, il utilise un port qui est affecté par défaut comme suit :  
   
--   Visual Studio 2015 : 4020  
+- Visual Studio 2015 : 4020  
   
--   Visual Studio 2013 : 4018  
+- Visual Studio 2013 : 4018  
   
--   Visual Studio 2012 : 4016  
+- Visual Studio 2012 : 4016  
   
- En d’autres termes, le numéro de port attribué au débogueur distant est incrémenté de 2 pour chaque version. Vous pouvez définir un numéro de port différent si vous le souhaitez. Nous expliquerons comment définir des numéros de port dans une section ultérieure.  
+  En d’autres termes, le numéro de port attribué au débogueur distant est incrémenté de 2 pour chaque version. Vous pouvez définir un numéro de port différent si vous le souhaitez. Nous expliquerons comment définir des numéros de port dans une section ultérieure.  
   
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>Port du débogueur distant sur les systèmes d’exploitation 32 bits  
  Le port TCP 4020 (dans Visual Studio 2015) est le port principal, qui est requis pour tous les scénarios. Vous pouvez le configurer à partir de la ligne de commande ou de la fenêtre du débogueur distant.  

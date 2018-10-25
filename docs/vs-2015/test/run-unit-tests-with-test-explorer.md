@@ -15,12 +15,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 837e004dfffbaba5eac154b195ff4ed8c382430d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f4c5a8a4d090a7603f83f6fb3c3d9deb0c67d5f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218346"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846835"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Exécuter des tests unitaires avec l'Explorateur de tests
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,17 +67,17 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
 ###  <a name="BKMK_Run_tests"></a> Exécuter les tests  
  Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un groupe, ou un ensemble de tests que vous sélectionnez. Effectuez l’une des opérations suivantes :  
   
--   Pour exécuter tous les tests dans une solution, choisissez **Exécuter tout**.  
+- Pour exécuter tous les tests dans une solution, choisissez **Exécuter tout**.  
   
--   Pour exécuter tous les tests dans un groupe par défaut, choisissez **Exécuter...** , puis le groupe dans le menu.  
+- Pour exécuter tous les tests dans un groupe par défaut, choisissez **Exécuter...** , puis le groupe dans le menu.  
   
--   Sélectionnez les différents tests à exécuter, ouvrez le menu contextuel pour un test sélectionné, puis choisissez **Exécuter les tests sélectionnés**.  
+- Sélectionnez les différents tests à exécuter, ouvrez le menu contextuel pour un test sélectionné, puis choisissez **Exécuter les tests sélectionnés**.  
   
--   Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.  
+- Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.  
   
- La barre Réussite/Échec en haut de la fenêtre Explorateur de tests est animée pendant l'exécution des tests. À la fin de la série de tests, la barre Réussite/Échec devient verte si tous les tests ont réussi ou rouge si un test a échoué.  
+  La barre Réussite/Échec en haut de la fenêtre Explorateur de tests est animée pendant l'exécution des tests. À la fin de la série de tests, la barre Réussite/Échec devient verte si tous les tests ont réussi ou rouge si un test a échoué.  
   
- ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+  ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ###  <a name="BKMK_Run_tests_after_every_build"></a> Exécuter des tests après chaque génération  
   
@@ -102,19 +102,19 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
   
  Le volet d'informations de test affiche les informations suivantes :  
   
--   Nom du fichier source et numéro de ligne de la méthode de test.  
+- Nom du fichier source et numéro de ligne de la méthode de test.  
   
--   Statut du test.  
+- Statut du test.  
   
--   Temps d'exécution de la méthode.  
+- Temps d'exécution de la méthode.  
   
- Si le test échoue, le volet d'informations affiche également :  
+  Si le test échoue, le volet d'informations affiche également :  
   
--   Le message retourné par l'infrastructure de tests unitaires pour le test.  
+- Le message retourné par l'infrastructure de tests unitaires pour le test.  
   
--   La trace de la pile au moment de l'échec du test.  
+- La trace de la pile au moment de l'échec du test.  
   
- ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+  ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ###  <a name="BKMK_View_the_source_code_of_a_test_method"></a> Afficher le code source d’une méthode de test  
  Pour afficher le code source d'une méthode de test dans l'éditeur Visual Studio, sélectionnez le test, puis choisissez **Ouvrir un test** dans le menu contextuel (clavier : F12).  
@@ -197,13 +197,13 @@ TEST_METHOD(Method1)
   
  Pour filtrer selon un autre critère :  
   
-1.  Ouvrez la liste déroulante à droite de la zone de recherche.  
+1. Ouvrez la liste déroulante à droite de la zone de recherche.  
   
-2.  Choisissez un nouveau critère.  
+2. Choisissez un nouveau critère.  
   
-3.  Entrez la valeur de filtre entre guillemets.  
+3. Entrez la valeur de filtre entre guillemets.  
   
- ![Filtrer les tests dans l’Explorateur de tests](../test/media/ute-filtertestlist.png "UTE_FilterTestList")  
+   ![Filtrer les tests dans l’Explorateur de tests](../test/media/ute-filtertestlist.png "UTE_FilterTestList")  
   
 > [!NOTE]
 >  Les recherches ne respectent pas la casse et associent la chaîne spécifiée à une partie de la valeur de critère.  
@@ -255,16 +255,16 @@ FullName:"MyClass" - FullName:"PerfTest"
 ###  <a name="BKMK_Debug_unit_tests"></a> Déboguer les tests unitaires  
  Vous pouvez utiliser l'Explorateur de tests pour démarrer une session de débogage de vos tests. L'exécution pas à pas de votre code avec le débogueur Visual Studio vous conduit de manière transparente à des allers et retours entre les tests unitaires et le projet testé. Pour démarrer le débogage :  
   
-1.  Dans l’éditeur Visual Studio, définissez un point d’arrêt dans une ou plusieurs méthodes de test que vous souhaitez déboguer.  
+1. Dans l’éditeur Visual Studio, définissez un point d’arrêt dans une ou plusieurs méthodes de test que vous souhaitez déboguer.  
   
-    > [!NOTE]
-    >  Comme les méthodes de test peuvent s'exécuter dans n'importe quel ordre, définissez les points d'arrêt dans toutes les méthodes de test que vous souhaitez déboguer.  
+   > [!NOTE]
+   >  Comme les méthodes de test peuvent s'exécuter dans n'importe quel ordre, définissez les points d'arrêt dans toutes les méthodes de test que vous souhaitez déboguer.  
   
-2.  Dans l'Explorateur de tests, sélectionnez les méthodes de test, puis choisissez **Déboguer les tests sélectionnés** dans le menu contextuel.  
+2. Dans l'Explorateur de tests, sélectionnez les méthodes de test, puis choisissez **Déboguer les tests sélectionnés** dans le menu contextuel.  
   
- Pour plus d’informations sur le débogueur, consultez [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md).  
+   Pour plus d’informations sur le débogueur, consultez [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md).  
   
- ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+   ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ###  <a name="BKMK_Diagnose_test_method_performance_issues"></a> Diagnostiquer les problèmes de performances de méthode de test  
  Pour diagnostiquer la raison pour laquelle une méthode de test est beaucoup trop longue, sélectionnez la méthode dans l'Explorateur de tests, puis choisissez Profil dans le menu contextuel. Consultez [Explorateur de performances](../profiling/performance-explorer.md).  
@@ -278,19 +278,19 @@ FullName:"MyClass" - FullName:"PerfTest"
   
  Pour exécuter la couverture du code pour les méthodes de test dans une solution :  
   
-1.  Choisissez **Tests** dans le menu Visual Studio, puis **Analyser la couverture du code**.  
+1. Choisissez **Tests** dans le menu Visual Studio, puis **Analyser la couverture du code**.  
   
-2.  Sélectionnez l'une des commandes suivantes dans le sous-menu :  
+2. Sélectionnez l'une des commandes suivantes dans le sous-menu :  
   
-    -   **Tests sélectionnés** exécute les méthodes de test que vous avez sélectionnées dans l'Explorateur de tests.  
+   -   **Tests sélectionnés** exécute les méthodes de test que vous avez sélectionnées dans l'Explorateur de tests.  
   
-    -   **Tous les tests** exécute toutes les méthodes de test de la solution.  
+   -   **Tous les tests** exécute toutes les méthodes de test de la solution.  
   
- La fenêtre Résultats de la couverture du code affiche le pourcentage des blocs du code du produit qui ont été testés par ligne, fonction, classe, espace de noms et module.  
+   La fenêtre Résultats de la couverture du code affiche le pourcentage des blocs du code du produit qui ont été testés par ligne, fonction, classe, espace de noms et module.  
   
- Pour plus d’informations, consultez [Utilisation de la couverture du code pour déterminer la quantité de code testé](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
+   Pour plus d’informations, consultez [Utilisation de la couverture du code pour déterminer la quantité de code testé](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
   
- ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
+   ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
 ##  <a name="BKMK_External_resources"></a> Ressources externes  
   

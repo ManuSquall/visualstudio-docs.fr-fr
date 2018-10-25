@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e2d973d1ec992002b2239383f9dbed228a0d59b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e69fe2741329ee7e8b2cae6b99dca150caa022fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859391"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824293"
 ---
 # <a name="use-models-in-your-development-process"></a>Utiliser des modèles dans votre processus de développement
 
@@ -123,7 +123,7 @@ Vous pouvez visualiser un modèle via plusieurs genres de diagrammes. Pour plus 
 Différents genres de diagrammes sont utiles pour décrire la conception à différents niveaux d'abstraction. La plupart des types de diagrammes sont utiles à plusieurs niveaux. Le tableau ci-dessous montre comment chaque type de diagramme peut être utilisé.
 
 |Niveau de conception|Types de diagrammes|
-|------------------|-------------------|
+|-|-|
 |Processus d'entreprise<br /><br /> Comprendre le contexte dans lequel votre système sera utilisé vous aide à comprendre les besoins des utilisateurs.|-Diagrammes de classes conceptuels décrivent les concepts d’entreprise utilisés dans le processus de l’entreprise.|
 |Besoins des utilisateurs<br /><br /> Définition de ce que votre système doit apporter aux utilisateurs.|-Les règles d’entreprise et qualité de service peuvent être décrits dans des documents séparés.|
 |Conception de haut niveau<br /><br /> Structure globale du système : composants principaux et comment ils s'imbriquent les uns aux autres.|-Les diagrammes de dépendance décrivent la façon dont le système est structuré en parties interdépendantes. Vous pouvez valider le code de programme par rapport aux diagrammes de dépendance à vérifier qu’il adhère à l’architecture.|
@@ -132,9 +132,9 @@ Différents genres de diagrammes sont utiles pour décrire la conception à diff
 ## <a name="external-resources"></a>Ressources externes
 
 |**Catégorie**|**Liens**|
-|------------------|---------------|
+|-|-|
 |**Vidéos**|![lien vers la vidéo](../data-tools/media/playvideo.gif) [vidéos MSDN Comment faire : comment créer et utiliser des modèles UML et des diagrammes (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif) [Channel 9 : UML avec Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif) [série MSDN Comment faire : outils UML et extensibilité (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
-|**Forums**|- [Visual Studio Visualization and Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio Visualization and Modeling SDK (outils DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Forums**|- [Outils de visualisation et de modélisation Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling (outils DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Blogs**|[Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
 |**Articles et journaux techniques**|[Centre d’architecture MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Guide des outils d’architecture Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
 

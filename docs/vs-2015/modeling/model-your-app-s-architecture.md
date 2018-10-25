@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8ca228edf7e05e48a733ba4f38bdc43560ef1552
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7300af951a50fb463453e83041d0651ac2c62cef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263703"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835255"
 ---
 # <a name="model-your-app39s-architecture"></a>Modéliser votre application&#39;architecture s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,49 +63,49 @@ Pour vous assurer que votre application ou votre système logiciel répond à vo
   
  Le modèle d'impératifs fournit les renseignements essentiels suivants :  
   
--   Interfaces fournies. Une interface fournie énumère les services ou les opérations que le système ou le composant doit fournir à ses utilisateurs, qu'il s'agisse d'utilisateurs humains ou d'autres composants logiciels.  
+- Interfaces fournies. Une interface fournie énumère les services ou les opérations que le système ou le composant doit fournir à ses utilisateurs, qu'il s'agisse d'utilisateurs humains ou d'autres composants logiciels.  
   
--   Interfaces requises. Une interface requise énumère les services ou les opérations que le système ou le composant peut utiliser. Dans certains cas, vous pourrez concevoir tous ces services dans le cadre de votre propre système. Dans d'autres cas, en particulier si vous concevez un composant qui peut être combiné à d'autres composants dans de nombreuses configurations, l'interface requise sera définie par des considérations externes.  
+- Interfaces requises. Une interface requise énumère les services ou les opérations que le système ou le composant peut utiliser. Dans certains cas, vous pourrez concevoir tous ces services dans le cadre de votre propre système. Dans d'autres cas, en particulier si vous concevez un composant qui peut être combiné à d'autres composants dans de nombreuses configurations, l'interface requise sera définie par des considérations externes.  
   
--   Impératifs de qualité de service. Objectifs et contraintes de performances, de sécurité, de fiabilité et autres que le système doit satisfaire.  
+- Impératifs de qualité de service. Objectifs et contraintes de performances, de sécurité, de fiabilité et autres que le système doit satisfaire.  
   
- Le modèle d'impératifs est écrit du point de vue des utilisateurs de votre système, qu'il s'agisse de personnes ou d'autres composants logiciels. Ils ne savent rien des mécanismes internes de votre système. En revanche, votre objectif dans un modèle architectural consiste à décrire les mécanismes internes et à montrer comment ils répondent aux besoins des utilisateurs.  
+  Le modèle d'impératifs est écrit du point de vue des utilisateurs de votre système, qu'il s'agisse de personnes ou d'autres composants logiciels. Ils ne savent rien des mécanismes internes de votre système. En revanche, votre objectif dans un modèle architectural consiste à décrire les mécanismes internes et à montrer comment ils répondent aux besoins des utilisateurs.  
   
- Avoir des modèles d'impératifs et d'architecture distincts est utile, car cela facilite la discussion des impératifs avec les utilisateurs. Cela aide aussi à refactoriser la conception et à considérer des architectures alternatives tout en laissant les impératifs inchangés.  
+  Avoir des modèles d'impératifs et d'architecture distincts est utile, car cela facilite la discussion des impératifs avec les utilisateurs. Cela aide aussi à refactoriser la conception et à considérer des architectures alternatives tout en laissant les impératifs inchangés.  
   
- Vous pouvez séparer les modèles d'impératifs et d'architecture de deux façons :  
+  Vous pouvez séparer les modèles d'impératifs et d'architecture de deux façons :  
   
--   Conservez-les dans la même solution mais dans des projets différents. Ils apparaîtront comme des modèles séparés dans l'Explorateur de modèles UML. Différents membres d'équipe pourront travailler en parallèle sur les modèles. Vous pourrez créer des types de suivi limités entre les modèles.  
+- Conservez-les dans la même solution mais dans des projets différents. Ils apparaîtront comme des modèles séparés dans l'Explorateur de modèles UML. Différents membres d'équipe pourront travailler en parallèle sur les modèles. Vous pourrez créer des types de suivi limités entre les modèles.  
   
--   Placez-les dans le même modèle UML, mais dans différents packages. Cela facilite le suivi des dépendances entre les modèles, mais empêche que plusieurs personnes puissent travailler en même temps sur le modèle. En outre, un modèle très étendu prendra plus de temps à charger dans Visual Studio. Cette approche est donc moins adaptée aux grands projets.  
+- Placez-les dans le même modèle UML, mais dans différents packages. Cela facilite le suivi des dépendances entre les modèles, mais empêche que plusieurs personnes puissent travailler en même temps sur le modèle. En outre, un modèle très étendu prendra plus de temps à charger dans Visual Studio. Cette approche est donc moins adaptée aux grands projets.  
   
- La quantité de détails que vous devez mettre dans un modèle d'impératifs ou d'architecture dépend de l'échelle du projet et de la taille et de la distribution de l'équipe. Pour une petite équipe sur un projet de courte durée, le dessin d'un diagramme de classes des concepts métier et de quelques modèles de conception peut suffire. Pour un grand projet distribué sur plusieurs régions, beaucoup plus de détails seront nécessaires.  
+  La quantité de détails que vous devez mettre dans un modèle d'impératifs ou d'architecture dépend de l'échelle du projet et de la taille et de la distribution de l'équipe. Pour une petite équipe sur un projet de courte durée, le dessin d'un diagramme de classes des concepts métier et de quelques modèles de conception peut suffire. Pour un grand projet distribué sur plusieurs régions, beaucoup plus de détails seront nécessaires.  
   
 ##  <a name="BigDecisions"></a> Modèles architecturaux  
  Lors de la phase initiale de développement, vous devez choisir les principaux éléments et technologies dont dépend la conception. Ces choix porteront sur les aspects suivants :  
   
--   Choix technologiques, tels que le choix entre une base de données et un système de fichiers, le choix entre une application en réseau et un client web, et ainsi de suite.  
+- Choix technologiques, tels que le choix entre une base de données et un système de fichiers, le choix entre une application en réseau et un client web, et ainsi de suite.  
   
--   Choix d'infrastructure, tels que le choix entre Windows Workflow Foundation et ADO.NET Entity Framework.  
+- Choix d'infrastructure, tels que le choix entre Windows Workflow Foundation et ADO.NET Entity Framework.  
   
--   Choix de méthode d'intégration, par exemple entre un bus de service d'entreprise et un canal point à point.  
+- Choix de méthode d'intégration, par exemple entre un bus de service d'entreprise et un canal point à point.  
   
- Ces choix sont fréquemment déterminés par les impératifs de qualité de service, tels que l'échelle et la flexibilité, et peuvent être effectués avant que les impératifs détaillés soient connus. Dans un système à grande échelle, les configurations matérielle et logicielle sont étroitement liées.  
+  Ces choix sont fréquemment déterminés par les impératifs de qualité de service, tels que l'échelle et la flexibilité, et peuvent être effectués avant que les impératifs détaillés soient connus. Dans un système à grande échelle, les configurations matérielle et logicielle sont étroitement liées.  
   
- Vos sélections affectent votre mode d'utilisation et votre interprétation du modèle architectural. Par exemple, dans un système qui utilise une base de données, les associations dans un diagramme de classes peuvent représenter des relations ou des clés étrangères dans la base de données, tandis que dans un système basé sur des fichiers XML, les associations peuvent indiquer des références croisées qui utilisent XPath. Dans un système distribué, les messages figurant dans un diagramme de séquence peuvent représenter des messages sur le câble. Dans une application autonome, ils peuvent représenter des appels de fonction.  
+  Vos sélections affectent votre mode d'utilisation et votre interprétation du modèle architectural. Par exemple, dans un système qui utilise une base de données, les associations dans un diagramme de classes peuvent représenter des relations ou des clés étrangères dans la base de données, tandis que dans un système basé sur des fichiers XML, les associations peuvent indiquer des références croisées qui utilisent XPath. Dans un système distribué, les messages figurant dans un diagramme de séquence peuvent représenter des messages sur le câble. Dans une application autonome, ils peuvent représenter des appels de fonction.  
   
 ##  <a name="Components"></a> Composants et leurs Interfaces  
  Les principales recommandations de cette section sont les suivantes :  
   
--   Créez des diagrammes de composants pour illustrer les principales parties de votre système.  
+- Créez des diagrammes de composants pour illustrer les principales parties de votre système.  
   
--   Dessinez des dépendances entre les composants ou leurs interfaces pour illustrer la structure du système.  
+- Dessinez des dépendances entre les composants ou leurs interfaces pour illustrer la structure du système.  
   
--   Utilisez des interfaces sur les composants pour montrer les services que chaque composant fournit ou nécessite.  
+- Utilisez des interfaces sur les composants pour montrer les services que chaque composant fournit ou nécessite.  
   
--   Dans une conception à grande échelle, vous pouvez dessiner des diagrammes séparés pour décomposer chaque composant en plus petites parties.  
+- Dans une conception à grande échelle, vous pouvez dessiner des diagrammes séparés pour décomposer chaque composant en plus petites parties.  
   
- Ces points sont développés dans le reste de cette section.  
+  Ces points sont développés dans le reste de cette section.  
   
 ### <a name="components"></a>Composants  
  Les vues centrales d'un modèle d'architecture sont les diagrammes de composants qui illustrent les parties principales du système et leurs interdépendances. Pour plus d’informations sur les diagrammes de composants, consultez [diagrammes de composants UML : référence](../modeling/uml-component-diagrams-reference.md).  
@@ -131,13 +131,13 @@ Pour vous assurer que votre application ou votre système logiciel répond à vo
   
  Une architecture correctement structurée présente une disposition claire des dépendances, où les conditions suivantes sont remplies :  
   
--   Il n'y a pas de boucle sur une carte de code.  
+- Il n'y a pas de boucle sur une carte de code.  
   
--   Les composants peuvent être disposés en couches, où chaque dépendance passe d'un composant dans une couche à un composant dans la suivante. Toutes les dépendances entre deux couches vont dans la même direction.  
+- Les composants peuvent être disposés en couches, où chaque dépendance passe d'un composant dans une couche à un composant dans la suivante. Toutes les dépendances entre deux couches vont dans la même direction.  
   
- Vous pouvez afficher les dépendances directement entre les composants ou entre les interfaces requises et fournies associées aux composants. L'utilisation d'interfaces vous permet de définir les opérations qui sont utilisées dans chaque dépendance. En général, les dépendances entre les composants sont indiquées lors du dessin initial des diagrammes, puis elles sont remplacées par des dépendances entre les interfaces à mesure que des informations sont ajoutées. Les deux versions sont des descriptions correctes du logiciel, mais la version avec les interfaces fournit plus de détails que la version antérieure.  
+  Vous pouvez afficher les dépendances directement entre les composants ou entre les interfaces requises et fournies associées aux composants. L'utilisation d'interfaces vous permet de définir les opérations qui sont utilisées dans chaque dépendance. En général, les dépendances entre les composants sont indiquées lors du dessin initial des diagrammes, puis elles sont remplacées par des dépendances entre les interfaces à mesure que des informations sont ajoutées. Les deux versions sont des descriptions correctes du logiciel, mais la version avec les interfaces fournit plus de détails que la version antérieure.  
   
- La gestion des dépendances est très importante si l'on souhaite que les logiciels soient faciles à tenir à jour. Les diagrammes de composants doivent refléter toutes les dépendances dans votre code. Si le code existe déjà, assurez-vous que toutes les dépendances sont illustrées dans les diagrammes. Si le code est en cours de développement, assurez-vous qu'il ne comprend pas de dépendances qui ne sont pas planifiées dans le diagramme de composant. Pour vous aider à découvrir des dépendances dans le code, vous pouvez générer des diagrammes de couche. Pour vous aider à garantir que vos contraintes de dépendances planifiées sont respectées, vous pouvez valider le code par rapport aux diagrammes de couche. Pour plus d’informations, consultez [diagrammes de couche : référence](../modeling/layer-diagrams-reference.md).  
+  La gestion des dépendances est très importante si l'on souhaite que les logiciels soient faciles à tenir à jour. Les diagrammes de composants doivent refléter toutes les dépendances dans votre code. Si le code existe déjà, assurez-vous que toutes les dépendances sont illustrées dans les diagrammes. Si le code est en cours de développement, assurez-vous qu'il ne comprend pas de dépendances qui ne sont pas planifiées dans le diagramme de composant. Pour vous aider à découvrir des dépendances dans le code, vous pouvez générer des diagrammes de couche. Pour vous aider à garantir que vos contraintes de dépendances planifiées sont respectées, vous pouvez valider le code par rapport aux diagrammes de couche. Pour plus d’informations, consultez [diagrammes de couche : référence](../modeling/layer-diagrams-reference.md).  
   
 ### <a name="interfaces"></a>Interfaces  
  En plaçant des interfaces sur vos composants, vous pouvez séparer et nommer les principaux groupes d'opérations fournis par chaque composant. Par exemple, les composants d'un système de vente par Internet peuvent avoir une interface via laquelle les clients achètent des articles, une interface via laquelle les fournisseurs mettent à jour leurs catalogues et une troisième interface via laquelle les le système est géré.  
@@ -146,17 +146,17 @@ Pour vous assurer que votre application ou votre système logiciel répond à vo
   
  Définir à la fois des interfaces fournies et requises vous aide à séparer clairement le composant du reste de la conception, pour pouvoir appliquer ces techniques :  
   
--   Placer le composant dans un atelier de test dans lequel les composants environnants sont simulés par l'atelier de test.  
+- Placer le composant dans un atelier de test dans lequel les composants environnants sont simulés par l'atelier de test.  
   
--   Développer votre composant indépendamment des autres composants.  
+- Développer votre composant indépendamment des autres composants.  
   
--   Réutiliser le composant dans d'autres contextes en associant ses interfaces à différents composants.  
+- Réutiliser le composant dans d'autres contextes en associant ses interfaces à différents composants.  
   
- Quand vous souhaitez définir la liste des opérations dans une interface, vous pouvez créer une autre vue de l'interface sur un diagramme de classes UML. Pour cela, recherchez l'interface dans l'Explorateur de modèles UML et faites-la glisser sur un diagramme de classes. Vous pouvez ensuite ajouter des opérations à l'interface.  
+  Quand vous souhaitez définir la liste des opérations dans une interface, vous pouvez créer une autre vue de l'interface sur un diagramme de classes UML. Pour cela, recherchez l'interface dans l'Explorateur de modèles UML et faites-la glisser sur un diagramme de classes. Vous pouvez ensuite ajouter des opérations à l'interface.  
   
- Une opération dans une interface UML peut représenter toute manière par laquelle un comportement d'un composant peut être appelé. Elle peut représenter une demande de service web, un signal ou une interaction d'un autre genre ou un appel de fonction de programme ordinaire.  
+  Une opération dans une interface UML peut représenter toute manière par laquelle un comportement d'un composant peut être appelé. Elle peut représenter une demande de service web, un signal ou une interaction d'un autre genre ou un appel de fonction de programme ordinaire.  
   
- Pour déterminer les opérations à ajouter, créez des diagrammes de séquence pour montrer comment les composants interagissent. Consultez [Interactions entre les composants](#Interactions). Chacun de ces diagrammes de séquence montre les interactions qui se produisent dans un cas d'usage différent. De cette manière, vous pouvez ajouter progressivement à la liste des opérations dans l'interface de chaque composant, à mesure que vous explorez les cas d'usage.  
+  Pour déterminer les opérations à ajouter, créez des diagrammes de séquence pour montrer comment les composants interagissent. Consultez [Interactions entre les composants](#Interactions). Chacun de ces diagrammes de séquence montre les interactions qui se produisent dans un cas d'usage différent. De cette manière, vous pouvez ajouter progressivement à la liste des opérations dans l'interface de chaque composant, à mesure que vous explorez les cas d'usage.  
   
 ### <a name="decomposing-a-component-into-parts"></a>Décomposition d'un composant en parties  
  Vous pouvez appliquer la procédure décrite dans les sections précédentes à chaque composant.  
@@ -169,32 +169,32 @@ Pour vous assurer que votre application ou votre système logiciel répond à vo
   
  Utilisez les Parties dans les situations suivantes :  
   
--   La conception du composant parent doit toujours utiliser le type de composant de la Partie. Ainsi, la conception de la partie fait partie intégrante de la conception du composant parent.  
+- La conception du composant parent doit toujours utiliser le type de composant de la Partie. Ainsi, la conception de la partie fait partie intégrante de la conception du composant parent.  
   
--   Le composant parent en lui-même n'a aucune existence concrète. Par exemple, vous pourriez avoir un composant conceptuel nommé Couche de présentation qui représente une collection de composants réels qui gèrent les vues et les interactions de l'utilisateur.  
+- Le composant parent en lui-même n'a aucune existence concrète. Par exemple, vous pourriez avoir un composant conceptuel nommé Couche de présentation qui représente une collection de composants réels qui gèrent les vues et les interactions de l'utilisateur.  
   
- Utilisez des composants distincts accessibles par le biais d'interfaces requises dans les situations suivantes :  
+  Utilisez des composants distincts accessibles par le biais d'interfaces requises dans les situations suivantes :  
   
--   Le composant demandeur peut être associé via ses interfaces à différents composants fournisseurs au moment de l'exécution.  
+- Le composant demandeur peut être associé via ses interfaces à différents composants fournisseurs au moment de l'exécution.  
   
--   La conception est telle qu'il serait facile de remplacer un fournisseur par un autre.  
+- La conception est telle qu'il serait facile de remplacer un fournisseur par un autre.  
   
- Il est généralement préférable d'utiliser des interfaces requises plutôt que des parties. Bien que la conception puisse être plus longue, le système qui en résulte est plus flexible. Il est également plus facile de tester les composants séparément. Cela permet d'avoir moins de couplage dans les plans de développement.  
+  Il est généralement préférable d'utiliser des interfaces requises plutôt que des parties. Bien que la conception puisse être plus longue, le système qui en résulte est plus flexible. Il est également plus facile de tester les composants séparément. Cela permet d'avoir moins de couplage dans les plans de développement.  
   
 ##  <a name="Interactions"></a> Interactions entre les composants  
  Les principales recommandations de cette section sont les suivantes :  
   
--   Identifiez les cas d'usage de votre système.  
+- Identifiez les cas d'usage de votre système.  
   
--   Pour chaque cas d'usage, dessinez un ou plusieurs diagrammes pour indiquer comment les composants de votre système parviennent au résultat demandé en collaborant les uns avec les autres et avec les utilisateurs. Habituellement, il s'agit de diagrammes de séquence ou de diagrammes d'activités.  
+- Pour chaque cas d'usage, dessinez un ou plusieurs diagrammes pour indiquer comment les composants de votre système parviennent au résultat demandé en collaborant les uns avec les autres et avec les utilisateurs. Habituellement, il s'agit de diagrammes de séquence ou de diagrammes d'activités.  
   
--   Utilisez des interfaces pour spécifier les messages reçus par chaque composant.  
+- Utilisez des interfaces pour spécifier les messages reçus par chaque composant.  
   
--   Décrivez les effets des opérations dans les interfaces.  
+- Décrivez les effets des opérations dans les interfaces.  
   
--   Répétez cette procédure pour chaque composant, en montrant comment interagissent ses parties.  
+- Répétez cette procédure pour chaque composant, en montrant comment interagissent ses parties.  
   
- Par exemple, dans un système de vente basé sur le web, le modèle d'impératifs peut définir un achat de client comme un cas d'usage. Vous pouvez créer un diagramme de séquence pour illustrer les interactions entre le client et les composants de la couche de présentation et pour illustrer les interactions entre ces derniers et les composants d'entrepôt et de comptabilité.  
+  Par exemple, dans un système de vente basé sur le web, le modèle d'impératifs peut définir un achat de client comme un cas d'usage. Vous pouvez créer un diagramme de séquence pour illustrer les interactions entre le client et les composants de la couche de présentation et pour illustrer les interactions entre ces derniers et les composants d'entrepôt et de comptabilité.  
   
 ### <a name="identifying-the-initiating-events"></a>Identification des événements de lancement  
  Le travail effectué par la plupart des systèmes logiciels peut facilement être divisé en fonction des réponses fournies selon différentes entrées ou événements. L'événement de lancement peut être l'un des événements suivants :  

@@ -13,12 +13,12 @@ ms.assetid: b4231bb9-45c4-4c77-ac3c-d05033b26393
 caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f9e92050eab33b542cc5b8165aed63fde1e5fc7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 657f54b258d759d0d966f65ff40649e0fb2a0669
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287688"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823526"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Vue d'ensemble de Visual Studio Tools pour Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ Dans cette section, vous allez en savoir plus sur les fonctionnalités de Visual
 ## <a name="superior-debugging"></a>Débogage de qualité supérieure  
  Connectez le puissant débogueur de Visual Studio à votre jeu Unity pour déboguer vos scripts C# et DLL que l'exécution se déroule de façon autonome ou dans l'éditeur Unity. Vous pouvez utiliser toutes les fonctionnalités de débogage souhaitées à partir de Visual Studio.  
   
--   Points d'arrêt, y compris les points d'arrêt conditionnels.  
+- Points d'arrêt, y compris les points d'arrêt conditionnels.  
   
--   Évaluer les expressions complexes dans la fenêtre Espion  
+- Évaluer les expressions complexes dans la fenêtre Espion  
   
--   Inspectez et modifiez la valeur des variables et des arguments.  
+- Inspectez et modifiez la valeur des variables et des arguments.  
   
--   Explorez les objets et structures de données complexes.  
+- Explorez les objets et structures de données complexes.  
   
- Vous pouvez même déboguer votre jeu Unity lorsqu'il s'exécute sur un autre ordinateur de votre réseau.  
+  Vous pouvez même déboguer votre jeu Unity lorsqu'il s'exécute sur un autre ordinateur de votre réseau.  
   
 ## <a name="productivity"></a>Productivité  
  En plus de la productivité établie de Visual Studio pour l'écriture et la refactorisation de code en C#, Visual Studio Tools pour Unity fournit des fonctionnalités de productivité supplémentaires pour les développeurs Unity.  

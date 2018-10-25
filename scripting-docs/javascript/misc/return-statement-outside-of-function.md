@@ -1,5 +1,5 @@
 ---
-title: '&#39; retour &#39; instruction en dehors de la fonction | Documents Microsoft'
+title: '&#39;retourner&#39; instruction en dehors de la fonction | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,27 +21,27 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 07b633c87dc11b291a5a5783f8121b2a368996d6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633509"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846516"
 ---
-# <a name="39return39-statement-outside-of-function"></a>&#39; retour &#39; instruction en dehors de la fonction
-Vous avez utilisé un `return` instruction dans la portée globale de votre code. La `return` instruction ne doit apparaître dans le corps d’une fonction.  
+# <a name="39return39-statement-outside-of-function"></a>&#39;retourner&#39; instruction en dehors de la fonction
+Vous avez utilisé un `return` instruction dans la portée globale de votre code. La `return` instruction doit uniquement apparaître dans le corps d’une fonction.  
   
- Appel d’une fonction avec la `()` opérateur est une expression. Toutes les expressions ont des valeurs ; la `return` instruction est utilisée pour spécifier la valeur retournée par une fonction. La forme générale est la suivante :  
+ Appel d’une fonction avec la `()` opérateur est une expression. Toutes les expressions ont des valeurs ; la `return` instruction est utilisée pour spécifier la valeur retournée par une fonction. Le format général est :  
   
 ```  
   
 return [ expression ];  
 ```  
   
- Lorsque le `return` instruction est exécutée, *expression* est évaluée et retournée comme valeur de la fonction. Si aucune expression, **non défini** est retourné.  
+ Lorsque le `return` instruction est exécutée, *expression* est évaluée et retournée comme valeur de la fonction. Si aucune expression, **undefined** est retourné.  
   
- Exécution de la fonction s’arrête lorsque la `return` instruction est exécutée, même s’il existe toujours autres instructions dans le corps de la fonction. L’exception à cette règle est si le **retourner** instruction se produit dans un **essayez** bloc, et qu’il existe un correspondant **enfin** bloquer le code le  **enfin** bloc s’exécute avant le retour de la fonction.  
+ Exécution de la fonction s’arrête lorsque la `return` instruction est exécutée, même s’il existe toujours autres instructions dans le corps de fonction. L’exception à cette règle est si le **retourner** instruction s’exécute au sein d’un **essayez** bloc, et qu’il existe un correspondant **enfin** bloc, le code dans le  **enfin** bloc est exécutées avant que la fonction retourne.  
   
- Si une fonction retourne, car il atteint la fin du corps de la fonction sans avoir exécuté un `return` instruction, la valeur renvoyée est la **non défini** (ce qui signifie que le résultat de fonction ne peut pas être utilisé en tant que partie d’une plus grande expression ).  
+ Si une fonction retourne, car elle atteint la fin du corps de la fonction sans exécuter un `return` instruction, la valeur retournée est la **undefined** (ce qui signifie que le résultat de fonction ne peut pas être utilisé en tant que partie d’une expression plus longue ).  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   

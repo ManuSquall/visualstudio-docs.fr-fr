@@ -18,23 +18,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 23fbe0a7563dbb1ebb3832dbe5c340e67dacac72
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3a31bac6b3cbd13fcff8c841c9947e8c14f8984a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673644"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839763"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Comment : mettre à jour une source de données avec des données à partir d’un contrôle hôte
   Vous pouvez lier un contrôle hôte à une source de données et mettre à jour la source de données avec les modifications apportées aux données dans le contrôle. Deux étapes principales constituent ce processus :  
   
-1.  Mise à jour de la source de données en mémoire avec les données modifiées dans le contrôle. En général, la source de données en mémoire est un <xref:System.Data.DataSet>, un <xref:System.Data.DataTable>ou un objet de données.  
+1. Mise à jour de la source de données en mémoire avec les données modifiées dans le contrôle. En général, la source de données en mémoire est un <xref:System.Data.DataSet>, un <xref:System.Data.DataTable>ou un objet de données.  
   
-2.  Mise à jour de la base de données avec les données modifiées dans la source de données en mémoire. Ceci s’applique uniquement si la source de données est connectée à une base de données principale, par exemple une base de données SQL Server ou Microsoft Office Access.  
+2. Mise à jour de la base de données avec les données modifiées dans la source de données en mémoire. Ceci s’applique uniquement si la source de données est connectée à une base de données principale, par exemple une base de données SQL Server ou Microsoft Office Access.  
   
- Pour plus d’informations sur la liaison de données et des contrôles hôtes, consultez [éléments hôtes et héberger de vue d’ensemble des contrôles](../vsto/host-items-and-host-controls-overview.md) et [lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
+   Pour plus d’informations sur la liaison de données et des contrôles hôtes, consultez [éléments hôtes et héberger de vue d’ensemble des contrôles](../vsto/host-items-and-host-controls-overview.md) et [lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
- [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
+   [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
 ## <a name="update-the-in-memory-data-source"></a>Mettre à jour la source de données en mémoire  
  Par défaut, les contrôles hôtes qui autorisent la liaison de données simple (comme les contrôles de contenu dans un document Word ou un contrôle de plage nommée dans une feuille de calcul Excel) n’enregistrent pas les modifications de données apportées à la source de données en mémoire. Autrement dit, quand un utilisateur final modifie une valeur dans un contrôle hôte, puis quitte le contrôle, la nouvelle valeur du contrôle n’est pas enregistrée automatiquement dans la source de données.  
@@ -57,16 +57,16 @@ ms.locfileid: "35673644"
   
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>Pour configurer un contrôle pour qu’il mette automatiquement à jour la source de données en mémoire à l’aide de code  
   
-1.  Utiliser le mode System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged de la <xref:System.Windows.Forms.Binding> objet qui lie le contrôle à la source de données. Il existe deux options de mise à jour de la source de données :  
+1. Utiliser le mode System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged de la <xref:System.Windows.Forms.Binding> objet qui lie le contrôle à la source de données. Il existe deux options de mise à jour de la source de données :  
   
-    -   Pour mettre à jour la source de données lorsque le contrôle est validé, définissez cette propriété sur System.Windows.Forms.DataSourceUpdateMode.OnValidation.  
+   - Pour mettre à jour la source de données lorsque le contrôle est validé, définissez cette propriété sur System.Windows.Forms.DataSourceUpdateMode.OnValidation.  
   
-    -   Pour mettre à jour la source de données lorsque la valeur de la propriété liée aux données du contrôle change, définissez cette propriété sur System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged.  
+   - Pour mettre à jour la source de données lorsque la valeur de la propriété liée aux données du contrôle change, définissez cette propriété sur System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged.  
   
-        > [!NOTE]  
-        >  L’option System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged ne s’applique pas aux contrôles hôtes Word, car Word ne notifications pas offre document ou de modification du contrôle. Toutefois, vous pouvez utiliser cette option pour les contrôles Windows Forms sur les documents Word.  
+     > [!NOTE]  
+     >  L’option System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged ne s’applique pas aux contrôles hôtes Word, car Word ne notifications pas offre document ou de modification du contrôle. Toutefois, vous pouvez utiliser cette option pour les contrôles Windows Forms sur les documents Word.  
   
-     L’exemple suivant configure un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> pour mettre automatiquement à jour la source de données quand la valeur du contrôle change. Cet exemple part du principe que vous avez un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> nommé `namedRange1` , dont la propriété <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> est liée à un champ dans une source de données.  
+     L’exemple suivant configure un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> pour mettre automatiquement à jour la source de données quand la valeur du contrôle change. Cet exemple part du principe que vous avez un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> nommé `namedRange1`, dont la propriété <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> est liée à un champ dans une source de données.  
   
      [!code-csharp[Trin_VstcoreDataExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#19)]
      [!code-vb[Trin_VstcoreDataExcel#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#19)]  
@@ -92,7 +92,7 @@ ms.locfileid: "35673644"
   
 6.  Fermez la boîte de dialogue **Mise en forme et liaison avancée** .  
   
-## <a name="update-the-database"></a>Mettre à jour de la base de données  
+## <a name="update-the-database"></a>Mettre à jour la base de données  
  Si la source de données en mémoire est associée à une base de données, vous devez mettre celle-ci à jour avec les modifications apportées à la source de données. Pour plus d’informations sur la mise à jour une base de données, consultez [enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md) et [mettre à jour des données à l’aide d’un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) .  
   
 ### <a name="to-update-the-database"></a>Pour mettre à jour la base de données  
