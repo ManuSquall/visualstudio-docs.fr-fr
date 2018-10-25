@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 426377d82385cd42de5dd265b0e727a94c0b24d1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e33fa9b6047cbe470702cebdbb27f74d074e460e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177342"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916905"
 ---
 # <a name="save-data-back-to-the-database"></a>Enregistrer les données dans la base de données
 
@@ -73,21 +73,21 @@ Vous pouvez mettre à jour le contenu d’un jeu de données par *fusion* avec u
 Lors de la fusion des jeux de données, vous pouvez passer un argument booléen (`preserveChanges`) qui indique le <xref:System.Data.DataSet.Merge%2A> méthode s’il faut conserver les modifications existantes dans le jeu de données cible. Étant donné que les jeux de données conserver plusieurs versions d’enregistrements, il est important de garder à l’esprit que plusieurs versions des enregistrements sont en cours de fusion. Le tableau suivant montre comment un enregistrement dans les deux jeux de données est fusionné :
 
 |DataRowVersion|Dataset cible|Jeu de données source|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |D'origine|James Wilson|James C. Wilson|
 |Actuel|Jim Wilson|James C. Wilson|
 
 Appel de la <xref:System.Data.DataSet.Merge%2A> méthode sur le tableau précédent avec `preserveChanges=false targetDataset.Merge(sourceDataset)` entraîne les données suivantes :
 
 |DataRowVersion|Dataset cible|Jeu de données source|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |D'origine|James C. Wilson|James C. Wilson|
 |Actuel|James C. Wilson|James C. Wilson|
 
 Appel de la <xref:System.Data.DataSet.Merge%2A> méthode avec `preserveChanges = true targetDataset.Merge(sourceDataset, true)` entraîne les données suivantes :
 
 |DataRowVersion|Dataset cible|Jeu de données source|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |D'origine|James C. Wilson|James C. Wilson|
 |Actuel|Jim Wilson|James C. Wilson|
 
@@ -128,7 +128,7 @@ Le <xref:System.Data.DataRow.RowState%2A> propriété d’un <xref:System.Data.D
 Le tableau suivant détaille les valeurs possibles de la <xref:System.Data.DataRowState> énumération :
 
 |Valeur DataRowState|Description|
-|------------------------|-----------------|
+| - |-----------------|
 |<xref:System.Data.DataRowState.Added>|La ligne a été ajoutée en tant qu’élément à un <xref:System.Data.DataRowCollection>. (Une ligne dans cet état n’a pas une version d’origine correspondante dans la mesure où il n’existait pas lors de la dernière <xref:System.Data.DataRow.AcceptChanges%2A> méthode a été appelée).|
 |<xref:System.Data.DataRowState.Deleted>|La ligne a été supprimée à l’aide de la <xref:System.Data.DataRow.Delete%2A> d’un <xref:System.Data.DataRow> objet.|
 |<xref:System.Data.DataRowState.Detached>|La ligne a été créée mais ne fait pas partie de n’importe quel <xref:System.Data.DataRowCollection>. Un <xref:System.Data.DataRow> objet est dans cet état immédiatement après sa création, avant qu’il a été ajouté à une collection et après avoir été supprimée à partir d’une collection.|
@@ -142,7 +142,7 @@ Jeux de données conserver plusieurs versions d’enregistrements. Le <xref:Syst
 Le tableau suivant détaille les valeurs possibles de la <xref:System.Data.DataRowVersion> énumération :
 
 |Valeur DataRowVersion|Description|
-|--------------------------|-----------------|
+| - |-----------------|
 |<xref:System.Data.DataRowVersion.Current>|La version actuelle d’un enregistrement contient toutes les modifications qui ont été effectuées sur l’enregistrement depuis la dernière fois <xref:System.Data.DataRow.AcceptChanges%2A> a été appelée. Si la ligne a été supprimée, il n’existe aucune version actuelle.|
 |<xref:System.Data.DataRowVersion.Default>|La valeur par défaut d’un enregistrement, tel que défini par la source de schéma ou les données du jeu de données.|
 |<xref:System.Data.DataRowVersion.Original>|La version d’origine d’un enregistrement est une copie de l’enregistrement comme c’était que les dernier enregistrement des modifications ont été validées dans le jeu de données. Dans la pratique, il s’agit généralement la version d’un enregistrement en lecture à partir d’une source de données.|

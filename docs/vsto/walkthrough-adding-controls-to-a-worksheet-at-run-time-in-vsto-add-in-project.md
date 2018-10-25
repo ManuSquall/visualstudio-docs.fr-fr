@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Ajouter des contrôles à une feuille de calcul lors de l’exécution dans un projet de complément VSTO'
+title: 'Procédure pas à pas : Ajouter des contrôles à une feuille de calcul lors de l’exécution dans un projet de complément VSTO'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,27 +18,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c6f972f2daa734bbabcea39ada9270acb7644db6
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: b3671b00ecad0380dd38e770beeef703fa916fac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767333"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915696"
 ---
-# <a name="walkthrough-add-controls-to-a-worksheet-at-runtime-in-vsto-add-in-project"></a>Procédure : Ajouter des contrôles à une feuille de calcul lors de l’exécution dans un projet de complément VSTO
+# <a name="walkthrough-add-controls-to-a-worksheet-at-runtime-in-vsto-add-in-project"></a>Procédure pas à pas : Ajouter des contrôles à une feuille de calcul lors de l’exécution dans un projet de complément VSTO
   Vous pouvez ajouter des contrôles à une feuille de calcul ouverte en utilisant un complément Excel VSTO. Cette procédure pas à pas montre comment utiliser le ruban pour permettre aux utilisateurs d'ajouter <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange> et <xref:Microsoft.Office.Tools.Excel.ListObject> à une feuille de calcul. Pour plus d’informations, consultez [ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
  **S’applique à :** les informations contenues dans cette rubrique s’appliquent aux projets de complément VSTO pour Excel. Pour plus d’informations, consultez [Fonctionnalités disponibles par type d’application et de projet Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
  Cette procédure pas à pas décrit les tâches suivantes :  
   
--   Fournit une interface utilisateur permettant d'ajouter des contrôles à la feuille de calcul.  
+- Fournit une interface utilisateur permettant d'ajouter des contrôles à la feuille de calcul.  
   
--   Ajout de contrôles à la feuille de calcul.  
+- Ajout de contrôles à la feuille de calcul.  
   
--   Suppression de contrôles dans la feuille de calcul.  
+- Suppression de contrôles dans la feuille de calcul.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
@@ -47,12 +47,12 @@ ms.locfileid: "34767333"
   
 -   Excel  
   
-## <a name="create-a-new-excel-vsto-add-in-project"></a>Créez un nouveau projet de complément Excel VSTO  
+## <a name="create-a-new-excel-vsto-add-in-project"></a>Créer un nouveau projet de complément Excel VSTO  
  Commencez par créer un projet de complément Excel VSTO.  
   
 ### <a name="to-create-a-new-excel-vsto-add-in-project"></a>Pour créer un projet de complément Excel VSTO  
   
-1.  Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], créez un projet de complément Excel VSTO nommé **ExcelDynamicControls**. Pour plus d'informations, consultez [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], créer un projet de complément Excel VSTO portant le nom **ExcelDynamicControls**. Pour plus d'informations, consultez [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
 2.  Ajoutez une référence à la **Microsoft.Office.Tools.Excel.v4.0.Utilities.dll** assembly. Cette référence est obligatoire pour ajouter par programmation un contrôle Windows Forms à une feuille de calcul, plus loin dans cette procédure pas à pas.  
   
@@ -136,7 +136,7 @@ ms.locfileid: "34767333"
      [!code-vb[Trin_Excel_Dynamic_Controls#1](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#1)]  
   
 ## <a name="remove-controls-from-the-worksheet"></a>Supprimer des contrôles de la feuille de calcul  
- Les contrôles ne sont pas conservés quand la feuille de calcul est enregistrée et fermée. Supprimez par programmation tous les contrôles Windows Forms générés avant que la feuille de calcul ne soit enregistrée. Sinon, seul le contour du contrôle apparaît quand vous rouvrez le classeur. Ajoutez du code à l'événement <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> qui supprime les contrôles Windows Forms dans la collection de contrôles de l'élément hôte généré. Pour plus d’informations, consultez [conserver des contrôles dynamiques persistants dans des documents Office](../vsto/persisting-dynamic-controls-in-office-documents.md).  
+ Les contrôles ne sont pas conservés quand la feuille de calcul est enregistrée et fermée. Supprimez par programmation tous les contrôles Windows Forms générés avant que la feuille de calcul ne soit enregistrée. Sinon, seul le contour du contrôle apparaît quand vous rouvrez le classeur. Ajoutez du code à l’événement <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> qui supprime les contrôles Windows Forms dans la collection de contrôles de l’élément hôte généré. Pour plus d’informations, consultez [conserver des contrôles dynamiques dans les documents Office](../vsto/persisting-dynamic-controls-in-office-documents.md).  
   
 ### <a name="to-remove-controls-from-the-worksheet"></a>Pour supprimer des contrôles dans la feuille de calcul  
   
@@ -164,19 +164,19 @@ ms.locfileid: "34767333"
   
 3.  Cliquez sur l'onglet **Compléments** .  
   
-4.  Dans le **group1** , cliquez sur **bouton**.  
+4.  Dans le **group1** de groupe, cliquez sur **bouton**.  
   
      Un bouton s'affiche dans la cellule sélectionnée.  
   
 5.  Sélectionnez une autre cellule dans Feuil1.  
   
-6.  Dans le **group1** , cliquez sur **NamedRange**.  
+6.  Dans le **group1** de groupe, cliquez sur **NamedRange**.  
   
      Une plage nommée est définie pour la cellule sélectionnée.  
   
 7.  Sélectionnez une série de cellules dans Feuil1.  
   
-8.  Dans le **group1** , cliquez sur **ListObject**.  
+8.  Dans le **group1** de groupe, cliquez sur **ListObject**.  
   
      Un objet de liste est ajouté pour les cellules sélectionnées.  
   
@@ -187,11 +187,11 @@ ms.locfileid: "34767333"
 ## <a name="next-steps"></a>Étapes suivantes  
  Pour plus d’informations sur les contrôles dans les projets de complément Excel VSTO, consultez cette rubrique :  
   
--   Pour savoir comment enregistrer des contrôles dans une feuille de calcul, consultez l’exemple de contrôles dynamiques de complément Excel VSTO dans [exemples de développement Office et des procédures pas à pas](../vsto/office-development-samples-and-walkthroughs.md).  
+-   Pour savoir comment enregistrer des contrôles dans une feuille de calcul, consultez l’exemple de contrôles dynamiques de complément VSTO Excel au [exemples de développement Office et des procédures pas à pas](../vsto/office-development-samples-and-walkthroughs.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Solutions Excel](../vsto/excel-solutions.md)   
- [Contrôles Windows forms dans une vue d’ensemble des documents Office](../vsto/windows-forms-controls-on-office-documents-overview.md)   
+ [Windows forms des contrôles sur la vue d’ensemble des documents Office](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Contrôles sur des documents Office](../vsto/controls-on-office-documents.md)   
  [NamedRange (contrôle)](../vsto/namedrange-control.md)   
  [ListObject (contrôle)](../vsto/listobject-control.md)  

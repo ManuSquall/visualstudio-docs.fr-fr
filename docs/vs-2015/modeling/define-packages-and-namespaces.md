@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 79ceb9393291f6197cd68743dffdfd314776e717
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 58a6c33449162665c10c6fa1d2c96f665c904a98
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219412"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915015"
 ---
 # <a name="define-packages-and-namespaces"></a>Définir des packages et des espaces de noms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,20 +78,20 @@ Dans Visual Studio, un *package* est un conteneur pour les définitions des él�
   
 #### <a name="to-create-a-package-in-uml-model-explorer"></a>Pour créer un package dans l'Explorateur de modèles UML  
   
-1.  Ouvrez **Explorateur de modèles UML**. Sur le **Architecture** menu, pointez sur **Windows**, puis cliquez sur le **Explorateur de modèles UML**.  
+1. Ouvrez **Explorateur de modèles UML**. Sur le **Architecture** menu, pointez sur **Windows**, puis cliquez sur le **Explorateur de modèles UML**.  
   
-2.  Cliquez avec le bouton droit sur un package ou un modèle auquel vous souhaitez ajouter un nouveau package.  
+2. Cliquez avec le bouton droit sur un package ou un modèle auquel vous souhaitez ajouter un nouveau package.  
   
-    > [!NOTE]
-    >  Vous pouvez imbriquer un package dans un autre.  
+   > [!NOTE]
+   >  Vous pouvez imbriquer un package dans un autre.  
   
-3.  Pointez sur **ajouter** puis cliquez sur **Package**.  
+3. Pointez sur **ajouter** puis cliquez sur **Package**.  
   
-     Un nouveau package apparaît dans le modèle.  
+    Un nouveau package apparaît dans le modèle.  
   
-4.  Tapez un nouveau nom pour le package.  
+4. Tapez un nouveau nom pour le package.  
   
- Si vous avez créé un package dans l'Explorateur de modèles UML, vous pouvez l'afficher sur un diagramme de classes UML. Vous pouvez aussi afficher un package sur plusieurs diagrammes de classes UML.  
+   Si vous avez créé un package dans l'Explorateur de modèles UML, vous pouvez l'afficher sur un diagramme de classes UML. Vous pouvez aussi afficher un package sur plusieurs diagrammes de classes UML.  
   
 #### <a name="to-show-an-existing-package-on-a-uml-class-diagram"></a>Pour afficher un package existant sur un diagramme de classes UML  
   
@@ -103,15 +103,15 @@ Dans Visual Studio, un *package* est un conteneur pour les définitions des él�
 ##  <a name="Elements"></a> Création d’éléments de modèle à l’intérieur des Packages  
  Il existe quatre manières de placer des éléments de modèle à l'intérieur d'un package :  
   
--   Ajouter un nouvel élément à un package dans l'Explorateur de modèles UML.  
+- Ajouter un nouvel élément à un package dans l'Explorateur de modèles UML.  
   
--   Ajouter des classes et d'autres types à des packages dans un diagramme de classes UML.  
+- Ajouter des classes et d'autres types à des packages dans un diagramme de classes UML.  
   
--   Définir le **LinkedPackage** propriété d’un diagramme afin que les nouveaux éléments créés sur le diagramme soient placés dans le package que vous spécifiez. Vous pouvez lier des diagrammes de classes, des diagrammes de composants et des diagrammes de cas d'usage à un package de cette manière.  
+- Définir le **LinkedPackage** propriété d’un diagramme afin que les nouveaux éléments créés sur le diagramme soient placés dans le package que vous spécifiez. Vous pouvez lier des diagrammes de classes, des diagrammes de composants et des diagrammes de cas d'usage à un package de cette manière.  
   
--   Déplacer des éléments dans ou hors d'un package dans l'Explorateur de modèles UML.  
+- Déplacer des éléments dans ou hors d'un package dans l'Explorateur de modèles UML.  
   
- Un élément contenu dans un package apparaît sous celui-ci dans l'Explorateur de modèles UML et son nom qualifié commence par le nom qualifié du package. Pour afficher le nom qualifié de n’importe quel élément, cliquez sur l’élément, puis **propriétés**. Le **nom qualifié** propriété s’affiche dans le **propriétés** fenêtre.  
+  Un élément contenu dans un package apparaît sous celui-ci dans l'Explorateur de modèles UML et son nom qualifié commence par le nom qualifié du package. Pour afficher le nom qualifié de n’importe quel élément, cliquez sur l’élément, puis **propriétés**. Le **nom qualifié** propriété s’affiche dans le **propriétés** fenêtre.  
   
 #### <a name="to-create-an-element-in-a-package-in-uml-model-explorer"></a>Pour créer un élément dans un package dans l'Explorateur de modèles UML  
   

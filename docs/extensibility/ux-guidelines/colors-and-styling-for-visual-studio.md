@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 028c88e1c2cd88736cf98a1f513654692ee50daf
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 5f184fc08679100562a53c1f3f27d797a4cdff37
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863840"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918023"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Couleurs et styles pour Visual Studio
 
@@ -425,7 +425,7 @@ Pour ce faire, un VSPackage doit :
 
 - **gérer les événements générés par l’IDE** en implémentant la [IVsFontAndColorEvents](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents) interface. L’IDE appelle la méthode appropriée suivant les modifications de l’utilisateur de la page polices et couleurs. Par exemple, il appelle le [OnFontChanged](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged) méthode si une nouvelle police est sélectionnée.
 
- **OR**
+  **OR**
 
 - **interroger l’IDE pour les modifications**. Cela est possible via l’implémenté par le système [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) interface. Bien que principalement pour la prise en charge de la persistance, le [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) méthode peut obtenir des informations de police et de couleur pour afficher les éléments. Pour plus d’informations sur les paramètres de police et couleur, consultez l’article MSDN [l’accès à stockées paramètres de police et couleur](../accessing-stored-font-and-color-settings.md).
 
