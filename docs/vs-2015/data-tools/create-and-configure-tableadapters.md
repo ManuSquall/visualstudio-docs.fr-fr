@@ -23,12 +23,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9c1c9337fac3cde818fd8af298813c89c8c13daf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 03cb6c67b4887762885a0cb920eb928359b4708b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199249"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917646"
 ---
 # <a name="create-and-configure-tableadapters"></a>Créer et configurer des TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Les TableAdapters fournissent la communication entre votre application et une ba
   
  Les TableAdapters sont créés pour vous lorsque vous effectuez l’une des actions suivantes :  
   
--   Exécutez le [Assistant de Configuration de Source de données](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) et sélectionnez le **base de données** ou **Service Web** type de source de données.  
+- Exécutez le [Assistant de Configuration de Source de données](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) et sélectionnez le **base de données** ou **Service Web** type de source de données.  
   
--   Faire glisser des objets de base de données à partir de [Explorateur de serveurs](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) dans le **Concepteur de Dataset**.  
+- Faire glisser des objets de base de données à partir de [Explorateur de serveurs](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) dans le **Concepteur de Dataset**.  
   
- Vous pouvez créer un nouveau TableAdapter et configurez-le avec une source de données en faisant glisser un TableAdapter à partir de la boîte à outils vers une région vide dans le **Concepteur de Dataset** surface.  
+  Vous pouvez créer un nouveau TableAdapter et configurez-le avec une source de données en faisant glisser un TableAdapter à partir de la boîte à outils vers une région vide dans le **Concepteur de Dataset** surface.  
   
- Pour une introduction aux TableAdapters, consultez [remplir des jeux de données à l’aide de TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).  
+  Pour une introduction aux TableAdapters, consultez [remplir des jeux de données à l’aide de TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="use-the-tableadapter-configuration-wizard"></a>Utilisez l’Assistant Configuration de TableAdapter  
  Exécutez le **Assistant Configuration de TableAdapter** pour créer ou modifier des TableAdapters et leurs DataTables associés. Vous pouvez configurer un TableAdapter existant en cliquant dessus dans le **Concepteur de Dataset**.  

@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO_FLAGS | Documents Microsoft
+title: PROCESS_INFO_FLAGS | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,16 +14,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91e4c4648108cdc6afa28f5a5dd8f9bfd46fcf59
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 04bc34de6e7ecbc438cfc63ed08c684cf4224366
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126345"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917022"
 ---
 # <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
 
-Décrit ou spécifie les propriétés d’un processus.
+Décrivent ou spécifient les propriétés d’un processus.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -52,7 +52,7 @@ PIFLAG_SYSTEM_PROCESS
 Indique que le processus est un processus système.
 
 PIFLAG_DEBUGGER_ATTACHED  
-Indique que le processus est en cours de débogage par un débogueur. Il peut être un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] débogueur, ou il peut être certains autres débogueur, par exemple, le débogueur WinDbg.
+Indique que le processus est en cours de débogage par un débogueur. Il peut être un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] débogueur, ou il peut être certains autres débogueur, par exemple WinDbg.
 
 PIFLAG_PROCESS_STOPPED  
 Indique que le processus est arrêté. Valide uniquement si `PIFLAG_DEBUGGER_ATTACHED` est également spécifié. Disponible dans Visual Studio 2005 et versions ultérieures.
@@ -64,9 +64,9 @@ Indique que le processus est en cours d’exécution. Valide uniquement si `PIFL
 
 Utilisé pour le `Flags` membre de la [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) structure.
 
-Ces indicateurs peuvent être combinées avec une opération de bits `OR`.
+Ces indicateurs peuvent être combinées avec un opérateur de bits `OR`.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 En-tête : msdbg.h
 

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineFramesByRVA | Documents Microsoft
+title: IDiaSymbol::findInlineFramesByRVA | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e9b3778072ea3643bc672516ab16d318669ac85
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 428b720fc20684d9bee7d25272ecaca0cbab13ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464210"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916879"
 ---
 # <a name="idiasymbolfindinlineframesbyrva"></a>IDiaSymbol::findInlineFramesByRVA
-Récupère une énumération qui permet à un client itérer au sein de tous les cadres inline sur une adresse virtuelle relative (RVA) spécifiée.  
+Récupère une énumération qui permet au client d’effectuer une itération dans tous les cadres inline sur une adresse virtuelle relative (RVA) spécifiée.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -32,7 +32,7 @@ HRESULT findInlineFramesByRVA (    DWORD             rva,
   
 #### <a name="parameters"></a>Paramètres  
  `rva`  
- [in] Spécifie l’adresse en tant qu’une adresse RVA.  
+ [in] Spécifie l’adresse comme une RVA.  
   
  `ppResult`  
  [out] Contient un `IDiaEnumSymbols` objet qui contient la liste d’images qui sont récupérés.  

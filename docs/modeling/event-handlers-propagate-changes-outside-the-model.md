@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ab42f0a8b3dafebaf73c116e8ce3295d99ce6fdd
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 65ca1d8e1685ab52e84d4be97c6c691c1d2296c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859275"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910626"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Propagation de modifications en dehors du modèle par des gestionnaires d'événements
 
@@ -173,7 +173,7 @@ Si vous écrivez un événement qui met à jour le magasin :
 Chaque type d’événement correspond à une collection dans Store.EventManagerDirectory. Vous pouvez ajouter ou supprimer des gestionnaires d’événements à tout moment, mais il est habituel pour les ajouter lorsque le document est chargé.
 
 |`EventManagerDirectory` Nom de propriété|Exécuté lorsque|
-|-------------------------------------------|-------------------|
+|-|-|
 |ElementAdded|Une instance d’une classe de domaine, une relation de domaine, forme, connecteur ou diagramme est créée.|
 |ElementDeleted|Un élément de modèle a été supprimé du répertoire d’éléments du magasin et n’est plus la source ou la cible d’une relation. L’élément n’est pas réellement supprimé de la mémoire, mais est conservée dans le cas d’une opération d’annulation ultérieure.|
 |ElementEventsBegun|Appelé à la fin d’une transaction externe.|

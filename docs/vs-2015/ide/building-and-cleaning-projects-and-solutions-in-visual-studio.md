@@ -28,12 +28,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1691c8cd10e74f5d139fefa5b57471c86f9e6e6c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bda1af9a47d512d2d35f509aee96cc71964a47ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193555"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912030"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Génération et nettoyage de solutions et de projets dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,33 +70,33 @@ En appliquant les procédures décrites dans cette rubrique, vous pouvez génér
   
 ### <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Pour générer uniquement le projet de démarrage et ses dépendances  
   
-1.  Dans la barre de menus, sélectionnez **Outils**, **Options**.  
+1. Dans la barre de menus, sélectionnez **Outils**, **Options**.  
   
-2.  Dans la boîte de dialogue **Options**, développez le nœud **Projets et solutions**, puis choisissez la page **Générer et exécuter**.  
+2. Dans la boîte de dialogue **Options**, développez le nœud **Projets et solutions**, puis choisissez la page **Générer et exécuter**.  
   
-     La boîte de dialogue **Générer et exécuter, Projets et solutions, Options** s’affiche.  
+    La boîte de dialogue **Générer et exécuter, Projets et solutions, Options** s’affiche.  
   
-3.  Cochez la case **Générer des projets de démarrage et des dépendances à l’exécution**.  
+3. Cochez la case **Générer des projets de démarrage et des dépendances à l’exécution**.  
   
-     Quand cette case est cochée, seuls le projet de démarrage actuel et ses dépendances sont générés quand vous effectuez l’une des opérations suivantes :  
+    Quand cette case est cochée, seuls le projet de démarrage actuel et ses dépendances sont générés quand vous effectuez l’une des opérations suivantes :  
   
-    -   Dans la barre de menus, vous choisissez **Déboguer**, **Démarrer** (F5).  
+   - Dans la barre de menus, vous choisissez **Déboguer**, **Démarrer** (F5).  
   
-    -   Dans la barre de menus, vous choisissez **Générer**, puis **Générer la solution** (Ctrl+Maj+B).  
+   - Dans la barre de menus, vous choisissez **Générer**, puis **Générer la solution** (Ctrl+Maj+B).  
   
      Quand cette case est décochée, tous les projets, leurs dépendances et les fichiers solution sont générés quand vous exécutez l’une des commandes précédentes. Par défaut, cette case à cocher est désactivée.  
   
 ### <a name="to-build-only-the-selected-visual-c-project"></a>Pour générer uniquement le projet Visual C++ sélectionné  
   
-1.  Choisissez un projet [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] puis, dans la barre de menus, choisissez **Générer**, **Projet uniquement** et l’une des commandes suivantes :  
+1. Choisissez un projet [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] puis, dans la barre de menus, choisissez **Générer**, **Projet uniquement** et l’une des commandes suivantes :  
   
-    -   **Générer uniquement** *nom_projet*  
+   - **Générer uniquement** *nom_projet*  
   
-    -   **Régénérer uniquement** *nom_projet*  
+   - **Régénérer uniquement** *nom_projet*  
   
-    -   **Nettoyer uniquement** *nom_projet*  
+   - **Nettoyer uniquement** *nom_projet*  
   
-    -   **Lier uniquement** *nom_projet*  
+   - **Lier uniquement** *nom_projet*  
   
      Ces commandes s’appliquent uniquement au projet [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] que vous avez choisi, sans générer, régénérer, nettoyer ou lier aucune dépendance de projet ou fichier de solution. En fonction de votre version de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], le sous-menu **Projet uniquement** peut contenir plus de commandes.  
   

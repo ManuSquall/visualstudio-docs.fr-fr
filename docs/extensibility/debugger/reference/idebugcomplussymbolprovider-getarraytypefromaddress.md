@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetArrayTypeFromAddress | Documents Microsoft
+title: IDebugComPlusSymbolProvider::GetArrayTypeFromAddress | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c9bb5fab8386046f9b409e0d3ef801b4020e88c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 189bae80873e100be3371813add133982926edab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109779"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915228"
 ---
 # <a name="idebugcomplussymbolprovidergetarraytypefromaddress"></a>IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
-Récupère les informations sur le tableau spécifié, étant donné son adresse de débogage de type.  
+Récupère les informations sur le tableau spécifié à partir de son adresse de débogage de type.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -48,7 +48,7 @@ int GetArrayTypeFromAddress(
   
 #### <a name="parameters"></a>Paramètres  
  `pAddress`  
- [in] L’adresse de débogage représentée par une [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
+ [in] L’adresse de débogage est représenté par un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
   
  `pSig`  
  [in] Tableau à examiner.  
@@ -57,13 +57,13 @@ int GetArrayTypeFromAddress(
  [in] Longueur en octets de la `pSig` tableau.  
   
  `ppField`  
- [out] Retourne le type de tableau, représentée par un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interface.  
+ [out] Retourne le type de tableau, tel que représenté par un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interface.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre comment implémenter cette méthode pour un **CDebugSymbolProvider** objet qui expose la [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
+ L’exemple suivant montre comment implémenter cette méthode pour un **CDebugSymbolProvider** objet qui expose le [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetArrayTypeFromAddress(  

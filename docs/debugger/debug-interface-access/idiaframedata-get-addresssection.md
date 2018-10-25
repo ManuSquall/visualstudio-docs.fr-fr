@@ -1,5 +1,5 @@
 ---
-title: IDiaFrameData::get_addressSection | Documents Microsoft
+title: IDiaFrameData::get_addressSection | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41ee9230e81a4b640a0ac9a578807e6f8ae514ed
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fd246ce9f547f72936a899602c439d1afcd05a45
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466938"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911432"
 ---
 # <a name="idiaframedatagetaddresssection"></a>IDiaFrameData::get_addressSection
-Extrait la partie de la section de l’adresse de code pour le frame.  
+Récupère la partie de la section de l’adresse de code pour le frame.  
   
 ## <a name="syntax"></a>Syntaxe  
   

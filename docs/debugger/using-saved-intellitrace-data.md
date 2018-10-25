@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d3afcfc29dcb01de307f0aefc3a943626bc213d
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ad584ac350038ced460b42a4e63d2b140d8396d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321214"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912966"
 ---
 # <a name="using-saved-intellitrace-data"></a>Utilisation des données IntelliTrace enregistrées
 Accédez aux points spécifiques de l’exécution de votre application lorsque vous démarrez le débogage à partir d’un fichier journal IntelliTrace (.iTrace). Ce fichier contient des événements de performance, des exceptions, des threads, des étapes de test, des modules et d’autres informations système qu’IntelliTrace enregistre pendant que votre application s’exécute.
@@ -159,25 +159,25 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
 
 ##### <a name="start-debugging-with-a-sharepoint-correlation-id"></a>Commencer à déboguer avec un ID de corrélation SharePoint
 
-1.  Copiez l’ID de corrélation SharePoint à partir de sa source.
+1. Copiez l’ID de corrélation SharePoint à partir de sa source.
 
-     Exemple :
+    Exemple :
 
-     ![IntelliTrace &#45; erreur SharePoint &#45; ID de corrélation](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
+    ![IntelliTrace &#45; erreur SharePoint &#45; ID de corrélation](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
 
-2.  Ouvrez le fichier .iTrace, puis pointez sur **Analyse** et entrez l’ID de corrélation SharePoint pour examiner la demande correspondante de site web et les événements inscrits.
+2. Ouvrez le fichier .iTrace, puis pointez sur **Analyse** et entrez l’ID de corrélation SharePoint pour examiner la demande correspondante de site web et les événements inscrits.
 
-     ![Journal IntelliTrace &#45; ID de corrélation SharePoint entrez](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
+    ![Journal IntelliTrace &#45; ID de corrélation SharePoint entrez](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
 
-3.  Sous **Événements de requête**, examinez les événements. En commençant à partir du haut, les événements apparaissent dans l’ordre dans lequel ils se produisent.
+3. Sous **Événements de requête**, examinez les événements. En commençant à partir du haut, les événements apparaissent dans l’ordre dans lequel ils se produisent.
 
-    1.  Choisissez un événement pour en afficher les détails.
+   1. Choisissez un événement pour en afficher les détails.
 
-    2.  Sélectionnez **Démarrer le débogage** pour démarrer le débogage au point où l’événement s’est produit.
+   2. Sélectionnez **Démarrer le débogage** pour démarrer le débogage au point où l’événement s’est produit.
 
-     ![Fichier journal IntelliTrace &#45; afficher une requête web &#43; événements](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")
+      ![Fichier journal IntelliTrace &#45; afficher une requête web &#43; événements](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")
 
- Vous pouvez voir ces types d’événements SharePoint avec des événements IntelliTrace :
+   Vous pouvez voir ces types d’événements SharePoint avec des événements IntelliTrace :
 
 -   **Événements de profil utilisateur**
 
@@ -199,28 +199,28 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
 
 ##### <a name="start-debugging-from-an-unhandled-exception"></a>Démarrer le débogage à partir d’une exception non gérée
 
-1.  Choisissez un ID de corrélation SharePoint pour une exception. Les exceptions sont regroupées par type et pile des appels.
+1. Choisissez un ID de corrélation SharePoint pour une exception. Les exceptions sont regroupées par type et pile des appels.
 
-2.  (Facultatif) Développez **Pile des appels** pour consulter la pile d’appels d’un groupe d’exceptions.
+2. (Facultatif) Développez **Pile des appels** pour consulter la pile d’appels d’un groupe d’exceptions.
 
-3.  Sélectionnez **Exception de débogage** pour démarrer le débogage à l’emplacement et au moment où l’exception s’est produite.
+3. Sélectionnez **Exception de débogage** pour démarrer le débogage à l’emplacement et au moment où l’exception s’est produite.
 
-     ![Journal IntelliTrace &#45; SharePoint des exceptions non gérées](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
+    ![Journal IntelliTrace &#45; SharePoint des exceptions non gérées](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
 
- Pour une procédure pas à pas, consultez [procédure pas à pas : débogage d’une Application SharePoint par IntelliTrace à l’aide de](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Pour les types de données enregistrées par l’agent, consultez [fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).
+   Pour une procédure pas à pas, consultez [procédure pas à pas : débogage d’une Application SharePoint par IntelliTrace à l’aide de](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Pour les types de données enregistrées par l’agent, consultez [fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).
 
 ###  <a name="ThreadsList"></a> Liste de threads
  Examinez les threads enregistrés qui se sont exécutés dans le processus cible. Vous pouvez commencer à déboguer à partir du premier événement IntelliTrace valide d’un thread sélectionné.
 
 ##### <a name="to-start-debugging-from-a-specific-thread"></a>Pour démarrer le débogage à partir d’un thread spécifique
 
-1.  Dans **Liste de threads**, choisissez un thread.
+1. Dans **Liste de threads**, choisissez un thread.
 
-2.  En bas de **Liste de threads**, choisissez **Démarrer le débogage**. Vous pouvez également double-cliquer sur un thread.
+2. En bas de **Liste de threads**, choisissez **Démarrer le débogage**. Vous pouvez également double-cliquer sur un thread.
 
-     Pour démarrer le débogage à partir du démarrage de l’application, double-cliquez sur **Thread principal**. Consultez [fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).
+    Pour démarrer le débogage à partir du démarrage de l’application, double-cliquez sur **Thread principal**. Consultez [fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).
 
- Les données de thread créées par l’utilisateur peuvent être plus utiles que les threads qu’un serveur crée et gère pour les applications web hébergées par IIS.
+   Les données de thread créées par l’utilisateur peuvent être plus utiles que les threads qu’un serveur crée et gère pour les applications web hébergées par IIS.
 
 |**Colonne**|**Affiche**|
 |----------------|-------------------|
@@ -258,7 +258,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
 |----------------|-------------------|
 |**Nom du module**|Nom de fichier du module|
 |**Chemin du module**|Emplacement de chargement du module sur le disque|
-|**ID de module**|Identificateur unique du module, spécifique à la version et qui contribue aux fichiers de symboles correspondants (PDB). Consultez [recherche les fichiers de symboles (.pdb) et les fichiers sources](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger).|
+|**ID de module**|Identificateur unique du module, spécifique à la version et qui contribue aux fichiers de symboles correspondants (PDB). Consultez [Finding symbol (.pdb) files and source files](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger).|
 
 ### <a name="where-can-i-get-more-information"></a>Où peut-on obtenir plus d’informations ?
  [Utilisation du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)

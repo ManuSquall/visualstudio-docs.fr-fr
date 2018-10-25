@@ -17,12 +17,12 @@ ms.assetid: 44e309ba-1d6f-499b-aa7e-9b34858a6d57
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a89eb4a770371d19e0c7b422fcac2a08d142f731
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c91f0ee5df47f2bb57ecd3c5faece13fb17384f4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207842"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912290"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ IDebugProcessEx2 : IUnknown
 ## <a name="notes-for-implementers"></a>Notes de publication pour les implémenteurs  
  Un fournisseur de port personnalisé implémente cette interface sur le même objet que le [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) de l’interface :  
   
--   Suivi de prise en charge des sessions connectées à un processus  
+- Suivi de prise en charge des sessions connectées à un processus  
   
--   Prise en charge l’attachement automatique entre plusieurs moteurs de débogage  
+- Prise en charge l’attachement automatique entre plusieurs moteurs de débogage  
   
- Le fournisseur de port personnalisé peut implémenter cette interface si elle choisit.  
+  Le fournisseur de port personnalisé peut implémenter cette interface si elle choisit.  
   
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants  
   

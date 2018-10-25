@@ -15,31 +15,31 @@ helpviewer_keywords:
 ms.assetid: 0795ee94-17a8-4327-bf57-27cd5e312a4c
 caps.latest.revision: 29
 manager: douge
-ms.openlocfilehash: b629f856bcdba13523c094b5d3fd32b6848ec23f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 08d14f1155838e53321224280a69e7a76bf07b52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256072"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911848"
 ---
 # <a name="hresult-information-in-managed-code"></a>Informations HRESULT dans du Code managé
 L’interaction entre le code managé et COM peut entraîner des problèmes quand vous rencontrez des valeurs de retour HRESULT.  
   
  Dans une interface COM, une valeur de retour HRESULT peut jouer ces rôles :  
   
--   Fournir des informations d’erreur (par exemple, <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>).  
+- Fournir des informations d’erreur (par exemple, <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>).  
   
--   Fournir des informations d’état sur le comportement normal du programme.  
+- Fournir des informations d’état sur le comportement normal du programme.  
   
- Quand COM appelle du code managé, les HRESULT peuvent entraîner ces problèmes :  
+  Quand COM appelle du code managé, les HRESULT peuvent entraîner ces problèmes :  
   
--   Les fonctions COM qui retournent des valeurs HRESULT inférieures à zéro (codes d’échec) génèrent des exceptions.  
+- Les fonctions COM qui retournent des valeurs HRESULT inférieures à zéro (codes d’échec) génèrent des exceptions.  
   
--   Les méthodes COM qui retournent régulièrement deux codes de réussite différents ou plus, par exemple, <xref:Microsoft.VisualStudio.VSConstants.S_OK> ou <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>, ne peuvent pas être distinguées.  
+- Les méthodes COM qui retournent régulièrement deux codes de réussite différents ou plus, par exemple, <xref:Microsoft.VisualStudio.VSConstants.S_OK> ou <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>, ne peuvent pas être distinguées.  
   
- Étant donné qu’un grand nombre des fonctions COM [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] retournent des valeurs HRESULT inférieures à zéro ou des codes de réussite différents, les assemblys d’interopérabilité [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] ont été écrits de sorte que les signatures de méthode soient conservées. Toutes les méthodes d’interopérabilité [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] sont de type `int` . Des valeurs HRESULT sont transmises via la couche d’interopérabilité sans modification et sans générer d’exceptions.  
+  Étant donné qu’un grand nombre des fonctions COM [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] retournent des valeurs HRESULT inférieures à zéro ou des codes de réussite différents, les assemblys d’interopérabilité [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] ont été écrits de sorte que les signatures de méthode soient conservées. Toutes les méthodes d’interopérabilité [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] sont de type `int` . Des valeurs HRESULT sont transmises via la couche d’interopérabilité sans modification et sans générer d’exceptions.  
   
- Étant donné qu’une fonction COM retourne un HRESULT à la méthode managée qui l’appelle, la méthode qui appelle doit vérifier le HRESULT et lever des exceptions si nécessaire.  
+  Étant donné qu’une fonction COM retourne un HRESULT à la méthode managée qui l’appelle, la méthode qui appelle doit vérifier le HRESULT et lever des exceptions si nécessaire.  
   
 ## <a name="handling-hresults-returned-to-managed-code-from-com"></a>Gestion des HRESULT retournés au code managé à partir de COM  
  Quand vous appelez une interface COM à partir de code managé, examinez la valeur HRESULT et levez une exception si nécessaire. La classe <xref:Microsoft.VisualStudio.ErrorHandler> contient la méthode <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> qui lève une exception COM, selon la valeur HRESULT qui lui est passée.  

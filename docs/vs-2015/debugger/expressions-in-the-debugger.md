@@ -32,12 +32,12 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d02d36e29f823db424c32cf40d036d498282da7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3254ea0197ee0b241735df9c1f437490a09da969
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289326"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914311"
 ---
 # <a name="expressions-in-the-debugger"></a>Expressions dans le débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,13 +104,13 @@ int main()
   
  Fonctions intrinsèques du débogueur :  
   
--   Garanties comme sécurisées : l’exécution d’une fonction intrinsèque du débogueur n’endommagera pas le processus qui est en cours de débogage.  
+- Garanties comme sécurisées : l’exécution d’une fonction intrinsèque du débogueur n’endommagera pas le processus qui est en cours de débogage.  
   
--   Autorisées dans toutes les expressions, même dans les scénarios où les effets secondaires et l’évaluation de fonction ne sont pas autorisés.  
+- Autorisées dans toutes les expressions, même dans les scénarios où les effets secondaires et l’évaluation de fonction ne sont pas autorisés.  
   
--   Fonctionnent dans les scénarios où les appels de fonction normaux sont impossibles, tels que le débogage d’un minidump.  
+- Fonctionnent dans les scénarios où les appels de fonction normaux sont impossibles, tels que le débogage d’un minidump.  
   
- Les fonctions intrinsèques du débogueur peuvent également rendre l’évaluation des expressions plus pratique. Par exemple, il est beaucoup plus facile d’écrire `strncmp(str, “asd”)` dans une condition de point d’arrêt que `str[0] == ‘a’ && str[1] == ‘s’ && str[2] == ‘d’`. )  
+  Les fonctions intrinsèques du débogueur peuvent également rendre l’évaluation des expressions plus pratique. Par exemple, il est beaucoup plus facile d’écrire `strncmp(str, “asd”)` dans une condition de point d’arrêt que `str[0] == ‘a’ && str[1] == ‘s’ && str[2] == ‘d’`. )  
   
 |Domaine|Fonctions intrinsèques|  
 |----------|-------------------------|  

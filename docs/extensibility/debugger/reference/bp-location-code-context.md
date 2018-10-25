@@ -1,5 +1,5 @@
 ---
-title: BP_LOCATION_CODE_CONTEXT | Documents Microsoft
+title: BP_LOCATION_CODE_CONTEXT | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03ae1050b0324fcf2732bbeb0eb9d091878bef0e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8a953ae4ff100196ca6fc6174f3d81fcca139de1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099361"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913421"
 ---
 # <a name="bplocationcodecontext"></a>BP_LOCATION_CODE_CONTEXT
 Décrit l’emplacement d’un point d’arrêt est directement lié à une adresse dans le programme en cours de débogage.  
@@ -40,7 +40,7 @@ typedef struct _BP_LOCATION_CODE_CONTEXT {
 ## <a name="remarks"></a>Notes  
  Cette structure est un membre de la [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) structure dans le cadre d’une union.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

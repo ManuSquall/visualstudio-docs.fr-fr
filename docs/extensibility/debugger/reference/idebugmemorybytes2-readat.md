@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryBytes2::ReadAt | Documents Microsoft
+title: IDebugMemoryBytes2::ReadAt | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 612a065286723e3c2b68a9ce5bd31c850d030959
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3e3989ef8c79e4304e3bda3e99418da1973e6e0a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114084"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912942"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
 Lit une séquence d’octets, en commençant à un emplacement donné.  
@@ -50,31 +50,31 @@ int ReadAt(
   
 #### <a name="parameters"></a>Paramètres  
  `pStartContext`  
- [in] Le [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objet qui spécifie où commencer la lecture des octets.  
+ [in] Le [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objet qui spécifie l’emplacement où commencer la lecture des octets.  
   
  `dwCount`  
- [in] Le nombre d’octets à lire. Indique également la longueur de la `rgbMemory` tableau.  
+ [in] Le nombre d’octets à lire. Spécifie également la longueur de la `rgbMemory` tableau.  
   
  `rgbMemory`  
- [dans, out] Tableau remplie avec les octets lus réellement.  
+ [in, out] Tableau rempli avec les octets réellement lus.  
   
  `pdwRead`  
  [out] Retourne le nombre d’octets contigus réellement lus.  
   
  `pdwUnreadable`  
- [dans, out] Retourne le nombre d’octets illisibles. Peut-être une valeur null si le client ne souhaite pas le nombre d’octets illisibles.  
+ [in, out] Retourne le nombre d’octets illisibles. Peut-être une valeur null si le client ne souhaite pas le nombre d’octets illisibles.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Si 100 octets sont demandés et les 50 premières sont lisibles, les 20 suivant sont illisibles, et le 30 restants sont lisibles, cette méthode retourne :  
+ Si 100 octets sont demandés et les 50 premières sont lisibles, les 20 suivants sont illisibles, et le 30 restants sont lisibles, cette méthode retourne :  
   
  *`pdwRead` = 50  
   
  *`pdwUnreadable` = 20  
   
- Dans ce cas, étant donné que `*pdwRead + *pdwUnreadable < dwCount`, l’appelant doit effectuer un appel supplémentaire à lire les octets restants 30 des 100 d’origine demandée et le [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objet passé dans le `pStartContext` paramètre doit être avancé à 70.  
+ Dans ce cas, étant donné que `*pdwRead + *pdwUnreadable < dwCount`, l’appelant doit effectuer un appel supplémentaire à lire les octets restants 30 des 100 d’origine demandé et le [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objet passé dans le `pStartContext` paramètre doit être avancé par 70.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)   

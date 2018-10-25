@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findAcceleratorInlineesByLinenum | Documents Microsoft
+title: IDiaSession::findAcceleratorInlineesByLinenum | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de8c5e7b5c039e43a5e513c72b270342a705b8b2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b90a253baefad62bba205ccbf0fb8b8fff81712d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461634"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917464"
 ---
 # <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
-Retourne une énumération de symboles pour les cadres qui correspondent à l’emplacement source spécifié.  
+Retourne une énumération de symboles pour les frames en ligne qui correspondent à l’emplacement source spécifié.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -36,7 +36,7 @@ HRESULT findAcceleratorInlineeLinesByName (
   
 #### <a name="parameters"></a>Paramètres  
  `parent`  
- [in] Un `IDiaSymbol` qui correspond à la fonction stub accélérateur qui doit être recherché.  
+ [in] Un `IDiaSymbol` qui correspond à la fonction de stub accélérateur qui doit être recherché.  
   
  `file`  
  [in] Le `IDiaSourceFile` de l’emplacement source.  

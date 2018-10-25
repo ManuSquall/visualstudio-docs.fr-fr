@@ -1,5 +1,5 @@
 ---
-title: Fonction de SccQueryChanges | Documents Microsoft
+title: Fonction SccQueryChanges | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d887c0cea989fa6a955edc2f39b9667e7421093d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f7b3a9454daa0f2e3c5cf91a9dc483afe1f635a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139820"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915709"
 ---
-# <a name="sccquerychanges-function"></a>SccQueryChanges (fonction)
-Cette fonction énumère une liste donnée de fichiers, en fournissant des informations sur la modification du nom de chaque fichier via une fonction de rappel.  
+# <a name="sccquerychanges-function"></a>Fonction SccQueryChanges
+Cette fonction énumère une liste de fichiers, en fournissant des informations sur les changements de nom pour chaque fichier via une fonction de rappel donnée.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -39,19 +39,19 @@ SCCRTN SccQueryChanges(
   
 #### <a name="parameters"></a>Paramètres  
  pContext  
- [in] Le pointeur de contexte plug-in de contrôle de code source.  
+ [in] Le pointeur de contexte de plug-in de contrôle de code source.  
   
  nFiles  
  [in] Nombre de fichiers dans `lpFileNames` tableau.  
   
  lpFileNames  
- [in] Tableau des noms de fichiers pour obtenir des informations.  
+ [in] Tableau de noms de fichiers pour obtenir des informations.  
   
  pfnCallback  
  [in] Fonction de rappel à appeler pour chaque nom de fichier dans la liste (voir [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) pour plus d’informations).  
   
  pvCallerData  
- [in] Valeur qui sera transmis sans modification à la fonction de rappel.  
+ [in] Valeur qui est transmis sans modification à la fonction de rappel.  
   
 ## <a name="return-value"></a>Valeur de retour  
  L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  
@@ -64,7 +64,7 @@ SCCRTN SccQueryChanges(
 |SCC_E_NONSPECIFICERROR|Une erreur non spécifiée ou générale s’est produite.|  
   
 ## <a name="remarks"></a>Notes  
- Les modifications demandées sont à l’espace de noms : en particulier, changement de nom, l’ajout et suppression d’un fichier.  
+ Les modifications en cours d’interrogation sont à l’espace de noms : en particulier, changement de nom, l’ajout et suppression d’un fichier.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions d’API de plug-in de contrôle de source](../extensibility/source-control-plug-in-api-functions.md)   

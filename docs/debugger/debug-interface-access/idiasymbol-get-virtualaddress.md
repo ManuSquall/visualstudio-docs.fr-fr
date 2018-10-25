@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_virtualAddress | Documents Microsoft
+title: IDiaSymbol::get_virtualAddress | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9207f9ec88ed09712c32f72d2e52a85fcd2cc8f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f9083e1be60c8ed7fd69710a2ddf68040be87d90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470879"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915254"
 ---
 # <a name="idiasymbolgetvirtualaddress"></a>IDiaSymbol::get_virtualAddress
-Récupère l’adresse virtuelle (VA) de l’emplacement. Quand utiliser le [LocationType, énumération](../../debugger/debug-interface-access/locationtype.md) a la valeur `LocIsStatic`.  
+Récupère l’adresse virtuelle (VA) de l’emplacement. Quand utiliser le [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md) est défini sur `LocIsStatic`.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,4 +44,4 @@ HRESULT get_virtualAddress (
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md)
+ [LocationType, énumération](../../debugger/debug-interface-access/locationtype.md)
