@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7911a23530a8aea7aa93e52f23f4aeb473e35c6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6eb03fba400e20227155a2528b8aaf0b28f7761a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210734"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951468"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procédure : générer un extrait XML à partir d'un schéma XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,25 +29,25 @@ L'éditeur XML permet de générer des extraits XML à partir d'un schéma de la
   
  Cette fonction n'est disponible que pour les éléments. Les règles suivantes s'appliquent également :  
   
--   L'élément doit avoir un type de schéma associé ; autrement dit, l'élément doit être valide par rapport à un schéma associé. Le type de schéma ne peut pas être abstract et doit contenir les attributs et/ou éléments enfants obligatoires.  
+- L'élément doit avoir un type de schéma associé ; autrement dit, l'élément doit être valide par rapport à un schéma associé. Le type de schéma ne peut pas être abstract et doit contenir les attributs et/ou éléments enfants obligatoires.  
   
--   L'élément actuel dans l'éditeur doit être vide et dépourvu d'attributs. Par exemple, toutes les écritures suivantes sont valides.  
+- L'élément actuel dans l'éditeur doit être vide et dépourvu d'attributs. Par exemple, toutes les écritures suivantes sont valides.  
   
-    -   `<Account`  
+  -   `<Account`  
   
-    -   `<Account>`  
+  -   `<Account>`  
   
-    -   `<Account></Account>`  
+  -   `<Account></Account>`  
   
--   Le curseur doit être placé immédiatement à droite du nom de l'élément.  
+- Le curseur doit être placé immédiatement à droite du nom de l'élément.  
   
- L'extrait généré contient tous les attributs et éléments requis. Si `minOccurs` est supérieur à un, le nombre minimal d'instances requises de cet élément est inclus dans l'extrait, jusqu'à 100 instances. Toutes les valeurs fixes trouvées dans le schéma engendrent des valeurs fixes dans l'extrait. Les éléments `xsd:any` et `xsd:anyAttribute` sont ignorés et n'engendrent aucune construction d'extrait supplémentaire.  
+  L'extrait généré contient tous les attributs et éléments requis. Si `minOccurs` est supérieur à un, le nombre minimal d'instances requises de cet élément est inclus dans l'extrait, jusqu'à 100 instances. Toutes les valeurs fixes trouvées dans le schéma engendrent des valeurs fixes dans l'extrait. Les éléments `xsd:any` et `xsd:anyAttribute` sont ignorés et n'engendrent aucune construction d'extrait supplémentaire.  
   
- Des valeurs par défaut sont générées et notées comme valeurs modifiables. Si le schéma spécifie une valeur par défaut, celle-ci est utilisée. Toutefois, si la valeur par défaut du schéma est une chaîne vide, l'éditeur génère les valeurs par défaut de la manière suivante :  
+  Des valeurs par défaut sont générées et notées comme valeurs modifiables. Si le schéma spécifie une valeur par défaut, celle-ci est utilisée. Toutefois, si la valeur par défaut du schéma est une chaîne vide, l'éditeur génère les valeurs par défaut de la manière suivante :  
   
--   Si le type de schéma contient des facettes d'énumération, que ce soit directement ou indirectement par le biais de membres d'un type d'union, la première valeur énumérée trouvée dans le modèle Objet du schéma est utilisée comme valeur par défaut.  
+- Si le type de schéma contient des facettes d'énumération, que ce soit directement ou indirectement par le biais de membres d'un type d'union, la première valeur énumérée trouvée dans le modèle Objet du schéma est utilisée comme valeur par défaut.  
   
--   Si le type de schéma est un type atomique, l'éditeur cherche ce type atomique et en insère le nom. Pour un type simple dérivé, il utilise le type simple de base. Pour un type de liste, le type atomique est l'`itemType`. Pour une union, le type atomique est celui du premier `memberType`.  
+- Si le type de schéma est un type atomique, l'éditeur cherche ce type atomique et en insère le nom. Pour un type simple dérivé, il utilise le type simple de base. Pour un type de liste, le type atomique est l'`itemType`. Pour une union, le type atomique est celui du premier `memberType`.  
   
 ## <a name="example"></a>Exemple  
  Les étapes de cette section expliquent l'utilisation de la fonction d'extrait XML généré par schéma dans l'éditeur XML.  

@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bccb790a374e9ce6b197927760f9c3cc15d5a7eb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b1178fc6ff2cb5b4664930eaa70fd3de5ebed0f5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198030"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949069"
 ---
 # <a name="ltparamgt-javascript"></a>&lt;Param&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,47 +49,47 @@ Spécifie les informations de documentation pour un paramètre dans une fonction
  `type`  
  Facultatif. Le type de données du paramètre. Le type peut être une des opérations suivantes :  
   
--   Un langage ECMAScript tapez dans la spécification ECMAScript 5, tel que `Number` et `Object`.  
+- Un langage ECMAScript tapez dans la spécification ECMAScript 5, tel que `Number` et `Object`.  
   
--   Un modèle DOM de l’objet, tel que `HTMLElement`, `Window`, et `Document`.  
+- Un modèle DOM de l’objet, tel que `HTMLElement`, `Window`, et `Document`.  
   
--   Une fonction de constructeur JavaScript.  
+- Une fonction de constructeur JavaScript.  
   
- `integer`  
- Facultatif. Si `type` est `Number`, spécifie si le paramètre est un entier. La valeur `true` pour indiquer que le paramètre est un entier ; sinon, la valeur est `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.  
+  `integer`  
+  Facultatif. Si `type` est `Number`, spécifie si le paramètre est un entier. La valeur `true` pour indiquer que le paramètre est un entier ; sinon, la valeur est `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.  
   
- `domElement`  
- Facultatif. Cet attribut est déconseillé ; le `type` attribut est prioritaire sur cet attribut. Cet attribut spécifie si le paramètre documenté est un élément DOM. La valeur `true` pour spécifier que le paramètre est un élément DOM ; sinon, la valeur est `false`. Si le `type` attribut n’est pas défini et `domElement` a la valeur `true`, IntelliSense traite le paramètre documenté comme un `HTMLElement` lors de l’exécution de saisie semi-automatique des instructions.  
+  `domElement`  
+  Facultatif. Cet attribut est déconseillé ; le `type` attribut est prioritaire sur cet attribut. Cet attribut spécifie si le paramètre documenté est un élément DOM. La valeur `true` pour spécifier que le paramètre est un élément DOM ; sinon, la valeur est `false`. Si le `type` attribut n’est pas défini et `domElement` a la valeur `true`, IntelliSense traite le paramètre documenté comme un `HTMLElement` lors de l’exécution de saisie semi-automatique des instructions.  
   
- `mayBeNull`  
- Facultatif. Spécifie si le paramètre documenté peut être défini sur null. La valeur `true` pour indiquer que le paramètre peut être défini à null ; sinon, la valeur est `false`. La valeur par défaut est `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.  
+  `mayBeNull`  
+  Facultatif. Spécifie si le paramètre documenté peut être défini sur null. La valeur `true` pour indiquer que le paramètre peut être défini à null ; sinon, la valeur est `false`. La valeur par défaut est `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.  
   
- `elementType`  
- Facultatif. Si `type` est `Array`, cet attribut spécifie le type des éléments du tableau.  
+  `elementType`  
+  Facultatif. Si `type` est `Array`, cet attribut spécifie le type des éléments du tableau.  
   
- `elementInteger`  
- Facultatif. Si `type` est `Array` et `elementType` est `Number`, cet attribut spécifie si les éléments du tableau sont des entiers. La valeur `true` pour indiquer que les éléments du tableau sont des entiers ; sinon, la valeur est `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.  
+  `elementInteger`  
+  Facultatif. Si `type` est `Array` et `elementType` est `Number`, cet attribut spécifie si les éléments du tableau sont des entiers. La valeur `true` pour indiquer que les éléments du tableau sont des entiers ; sinon, la valeur est `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.  
   
- `elementDomElement`  
- Facultatif. Cet attribut est déconseillé ; le `elementType` attribut est prioritaire sur cet attribut. Si `type` est `Array`, cet attribut spécifie si les éléments du tableau sont des éléments DOM. La valeur `true` pour spécifier que les éléments sont des éléments DOM ; sinon, la valeur est `false`. Si le `elementType` attribut n’est pas défini et `elementDomElement` a la valeur `true`, IntelliSense traite chaque élément dans le tableau comme un `HTMLElement` lors de l’exécution de saisie semi-automatique des instructions.  
+  `elementDomElement`  
+  Facultatif. Cet attribut est déconseillé ; le `elementType` attribut est prioritaire sur cet attribut. Si `type` est `Array`, cet attribut spécifie si les éléments du tableau sont des éléments DOM. La valeur `true` pour spécifier que les éléments sont des éléments DOM ; sinon, la valeur est `false`. Si le `elementType` attribut n’est pas défini et `elementDomElement` a la valeur `true`, IntelliSense traite chaque élément dans le tableau comme un `HTMLElement` lors de l’exécution de saisie semi-automatique des instructions.  
   
- `elementMayBeNull`  
- Facultatif. Si `type` est `Array`, spécifie si les éléments dans le tableau peuvent être définis sur null. La valeur `true` pour indiquer que les éléments dans le tableau peuvent être définies à null ; sinon, la valeur est `false`. La valeur par défaut est `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.  
+  `elementMayBeNull`  
+  Facultatif. Si `type` est `Array`, spécifie si les éléments dans le tableau peuvent être définis sur null. La valeur `true` pour indiquer que les éléments dans le tableau peuvent être définies à null ; sinon, la valeur est `false`. La valeur par défaut est `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.  
   
- `locid`  
- Facultatif. L’identificateur pour les informations de localisation sur le paramètre. L’identificateur est un membre ID ou il correspond à la `name` valeur dans un regroupement de message défini par OpenAjax métadonnées d’attribut. Le type d’identificateur varie selon le format spécifié dans le [ \<loc >](../ide/loc-javascript.md) élément.  
+  `locid`  
+  Facultatif. L’identificateur pour les informations de localisation sur le paramètre. L’identificateur est un membre ID ou il correspond à la `name` valeur dans un regroupement de message défini par OpenAjax métadonnées d’attribut. Le type d’identificateur varie selon le format spécifié dans le [ \<loc >](../ide/loc-javascript.md) élément.  
   
- `parameterArray`  
- Facultatif. Spécifie si le paramètre documenté peut être répété dans l’appel de fonction, similaire à la répétition de paramètres pris en charge dans le `String.format` (fonction). La valeur `true` pour indiquer que le paramètre peut être répété ; sinon, la valeur est `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.  
+  `parameterArray`  
+  Facultatif. Spécifie si le paramètre documenté peut être répété dans l’appel de fonction, similaire à la répétition de paramètres pris en charge dans le `String.format` (fonction). La valeur `true` pour indiquer que le paramètre peut être répété ; sinon, la valeur est `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.  
   
- `optional`  
- Facultatif. Spécifie si le paramètre documenté est facultatif dans la fonction appelante. La valeur `true` pour indiquer que le paramètre est facultatif ; sinon, la valeur est `false`.  
+  `optional`  
+  Facultatif. Spécifie si le paramètre documenté est facultatif dans la fonction appelante. La valeur `true` pour indiquer que le paramètre est facultatif ; sinon, la valeur est `false`.  
   
- `value`  
- Facultatif. Spécifie le code qui doit être évalué pour une utilisation par IntelliSense au lieu du code de fonction lui-même. Vous pouvez utiliser cet attribut est de fournir des informations de type lorsque le type de paramètre n’est pas défini. Par exemple, vous pouvez utiliser `value=’1’` pour traiter le type de paramètre en tant que nombre.  
+  `value`  
+  Facultatif. Spécifie le code qui doit être évalué pour une utilisation par IntelliSense au lieu du code de fonction lui-même. Vous pouvez utiliser cet attribut est de fournir des informations de type lorsque le type de paramètre n’est pas défini. Par exemple, vous pouvez utiliser `value=’1’` pour traiter le type de paramètre en tant que nombre.  
   
- `description`  
- Facultatif. Description du paramètre.  
+  `description`  
+  Facultatif. Description du paramètre.  
   
 ## <a name="remarks"></a>Notes  
  Le seul attribut requis est `name`. Tous les autres attributs sont facultatifs.  

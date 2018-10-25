@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d54724655db7147c06687aa88a4fe623bb277a45
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 724c4e3ac911e5fda62304a08565937f38425368
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756938"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948952"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>Boîte de dialogue Ajouter des initialiseurs de corrélation
 
@@ -33,7 +33,7 @@ Les initialiseurs de corrélation dans la collection spécifiée avec cette boî
 Le tableau suivant décrit les éléments d’interface utilisateur utilisateur de la **ajouter des initialiseurs de corrélation** boîte de dialogue :
 
 |Élément d'interface utilisateur|Description|
-|----------------|-----------------|
+|-|-----------------|
 |**Ajouter un initialiseur**|Cliquez sur le **ajouter initialize** case pour ajouter un initialiseur supplémentaire à la collection.|
 |**Type de corrélation**|Spécifie le type d'initialiseur de corrélation. Quatre types sont disponibles :<br /><br /> 1. Initialiseur de corrélation de rappel pour spécifier un <xref:System.ServiceModel.Activities.CallbackCorrelationInitializer>.<br />2. Initialiseur de corrélation de contexte pour spécifier un <xref:System.ServiceModel.Activities.CorrelationInitializer>.<br />3. Initialiseur de corrélation demande-réponse pour spécifier un <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer>.<br />4. Initialiseur de corrélation de requête pour spécifier un <xref:System.ServiceModel.Activities.QueryCorrelationInitializer>.<br /><br /> Pour modifier le **type de corrélation**<br /><br /> 1. Onglet à la ligne spécifique dans le **ajouter un initialiseur** DataGrid.<br />2. Pour définir le focus **CorrelationTypeComboBox**, appuyez sur **Ctrl**+**onglet**.<br />3. Appuyez sur Alt + flèche bas pour afficher le **ComboBox** et le modifier.|
 |**Requêtes XPath**|Paire clé/valeur qui contient les requêtes utilisées pour extraire les données de corrélation de messages entrants et sortants. Cette liste est valide uniquement lors de l'utilisation de types <xref:System.ServiceModel.Activities.QueryCorrelationInitializer>.|

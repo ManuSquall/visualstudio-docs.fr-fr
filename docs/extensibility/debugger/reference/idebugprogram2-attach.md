@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::Attach | Documents Microsoft
+title: IDebugProgram2::Attach | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aff1e5f6c887b42b6f49e0c8cfa426cade814006
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5de330bc800e4f967fdc1f3c08af18f6bf46fecd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117958"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935105"
 ---
 # <a name="idebugprogram2attach"></a>IDebugProgram2::Attach
-Le programme est attaché.  
+Attache au programme.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -50,10 +50,10 @@ int Attach(
 |-----------|-----------------|  
 |`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|Le programme spécifié est déjà attaché au débogueur.|  
 |`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Une violation de sécurité s’est produite lors de la procédure d’attachement.|  
-|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Un programme de bureau ne peuvent pas être attaché au débogueur.|  
+|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|Un programme de bureau ne peut pas être attaché au débogueur.|  
   
 ## <a name="remarks"></a>Notes  
- Un moteur de débogage (DE) n’appelle jamais cette méthode pour attacher à un programme. Si le DE s’exécute dans l’espace d’adressage du programme, le [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) méthode est appelée. Si l’espace d’adresses DE s’exécute dans le Gestionnaire de débogage de session (SDM) le [attacher](../../../extensibility/debugger/reference/idebugengine2-attach.md) méthode est appelée.  
+ Un moteur de débogage (dé) n’appelle jamais cette méthode pour attacher à un programme. Si le dé s’exécute dans l’espace d’adressage du programme, le [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) méthode est appelée. Si l’espace d’adressage DE s’exécute dans le Gestionnaire de débogage de session (SDM) le [attacher](../../../extensibility/debugger/reference/idebugengine2-attach.md) méthode est appelée.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

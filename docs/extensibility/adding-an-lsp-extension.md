@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2f6c23ea3ad48c361c12912926e0642f35f853a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 396a516efb166f382c7c9a9c76c30a874db7155a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283455"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938264"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Ajouter une extension du protocole de serveur de langage
 
@@ -132,10 +132,10 @@ Le partenaire LSP n’inclut pas de spécification sur la façon de fournir la c
 
 4. Créer un *.pkgdef* fichier, puis ajoutez une ligne semblable à ceci :
 
-  ```xml
-  [$RootKey$\TextMate\Repositories]
-  "MyLang"="$PackageFolder$\Grammars"
-  ```
+   ```xml
+   [$RootKey$\TextMate\Repositories]
+   "MyLang"="$PackageFolder$\Grammars"
+   ```
 
 5. Avec le bouton droit sur les fichiers, puis sélectionnez **propriétés**. Modifier le **générer** action à **contenu** et **inclure dans VSIX** true à la propriété.
 
@@ -295,40 +295,40 @@ Suivez ces étapes ci-dessous pour ajouter la prise en charge des paramètres à
 
 1. Ajoutez un fichier JSON (par exemple, *MockLanguageExtensionSettings.json*) dans votre projet qui contient les paramètres et leurs valeurs par défaut. Exemple :
 
-  ```json
-  {
+   ```json
+   {
     "foo.maxNumberOfProblems": -1
-  }
-  ```
+   }
+   ```
 2. Avec le bouton droit sur le fichier JSON et sélectionnez **propriétés**. Modification la **Build** action pour « Content » et le « inclure dans VSIX' true à la propriété.
 
 3. Implémenter ConfigurationSections et retourner la liste des préfixes pour les paramètres définis dans le fichier JSON (dans Visual Studio Code, il serait correspondre au nom de la section de configuration dans le fichier package.json) :
 
-  ```csharp
-  public IEnumerable<string> ConfigurationSections
-  {
+   ```csharp
+   public IEnumerable<string> ConfigurationSections
+   {
       get
       {
           yield return "foo";
       }
-  }
-  ```
+   }
+   ```
 4. Ajoutez un fichier .pkgdef au projet (ajouter le nouveau fichier texte et attribuez l’extension au fichier .pkgdef). Le fichier pkgdef doit contenir ces informations :
 
-  ```xml
+   ```xml
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
-  ```
+   ```
 
 5. Cliquez avec le bouton droit sur le fichier .pkgdef et sélectionnez **propriétés**. Modifier le **générer** action à **contenu** et **inclure dans VSIX** true à la propriété.
 
 6. Ouvrez le *source.extension.vsixmanifest* fichier, puis ajoutez un élément multimédia dans le **Asset** onglet :
 
-  ![modifier la ressource de package Visual Studio](media/lsp-add-vspackage-asset.png)
+   ![modifier la ressource de package Visual Studio](media/lsp-add-vspackage-asset.png)
 
-  * **Type**: Microsoft.VisualStudio.VsPackage
-  * **Source**: fichier sur le système de fichiers
-  * **Chemin d’accès**: [chemin d’accès à votre *.pkgdef* fichier]
+   * **Type**: Microsoft.VisualStudio.VsPackage
+   * **Source**: fichier sur le système de fichiers
+   * **Chemin d’accès**: [chemin d’accès à votre *.pkgdef* fichier]
 
 ### <a name="user-editing-of-settings-for-a-workspace"></a>Modification de l’utilisateur des paramètres pour un espace de travail
 
@@ -336,16 +336,16 @@ Suivez ces étapes ci-dessous pour ajouter la prise en charge des paramètres à
 2. Utilisateur ajoute un fichier dans le *.vs* dossier appelé *VSWorkspaceSettings.json*.
 3. Utilisateur ajoute une ligne à la *VSWorkspaceSettings.json* fichier pour un paramètre fournit le serveur. Exemple :
 
-  ```json
-  {
+   ```json
+   {
     "foo.maxNumberOfProblems": 10
-  }
-  ```
-### <a name="enabling-diagnostics-tracing"></a>L’activation du suivi de diagnostic
-Traçage de diagnostic peut être activé pour tous les messages entre le client et le serveur, qui peut être utile lors du débogage des problèmes de sortie.  Pour activer le suivi de diagnostic, procédez comme suit :
+   }
+   ```
+   ### <a name="enabling-diagnostics-tracing"></a>L’activation du suivi de diagnostic
+   Traçage de diagnostic peut être activé pour tous les messages entre le client et le serveur, qui peut être utile lors du débogage des problèmes de sortie.  Pour activer le suivi de diagnostic, procédez comme suit :
 
-1. Ouvrez ou créez le fichier de paramètres d’espace de travail *VSWorkspaceSettings.json* (voir « Utilisateur modification de paramètres pour un espace de travail »).
-2. Ajoutez la ligne suivante du fichier de paramètres json :
+4. Ouvrez ou créez le fichier de paramètres d’espace de travail *VSWorkspaceSettings.json* (voir « Utilisateur modification de paramètres pour un espace de travail »).
+5. Ajoutez la ligne suivante du fichier de paramètres json :
 
 ```json
 {

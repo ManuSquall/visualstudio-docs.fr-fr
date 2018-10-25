@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e7820723c88fd76639fa47e5c97ad179a208fc18
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 517058c99a6ec5a297b95324decbb2cfcbe04271
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118865"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950756"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>Boîte dialogue Sélecteur d’URL (développement SharePoint dans Visual Studio)
   Dans la boîte de dialogue du sélecteur URL, vous pouvez choisir des fichiers tels que les fichiers de page maître ou des fichiers image qui se trouvent dans votre projet ou sur le serveur local qui exécute SharePoint.  
@@ -36,27 +36,27 @@ ms.locfileid: "37118865"
   
  Développez le **projet** nœud pour choisir des fichiers dans votre projet. Pour apparaître comme sélectionnables dans la boîte de dialogue, les fichiers de votre projet doivent respecter les critères suivants :  
   
--   Le fichier doit figurer dans un dossier mappé.  
+- Le fichier doit figurer dans un dossier mappé.  
   
--   Le fichier doit être ajouté au package de solution.  
+- Le fichier doit être ajouté au package de solution.  
   
--   Le fichier ne peut pas se trouver dans un autre projet.  
+- Le fichier ne peut pas se trouver dans un autre projet.  
   
- Si vous souhaitez faire référence aux fichiers qui ne répondent pas à ces critères, vous devez entrer le chemin d’accès du fichier manuellement.  
+  Si vous souhaitez faire référence aux fichiers qui ne répondent pas à ces critères, vous devez entrer le chemin d’accès du fichier manuellement.  
   
- Développez le **Server** nœud pour choisir les fichiers qui se trouvent sur le serveur local qui exécute SharePoint. Pour apparaître comme sélectionnables dans la boîte de dialogue, ces fichiers doivent respecter les critères suivants :  
+  Développez le **Server** nœud pour choisir les fichiers qui se trouvent sur le serveur local qui exécute SharePoint. Pour apparaître comme sélectionnables dans la boîte de dialogue, ces fichiers doivent respecter les critères suivants :  
   
--   Le fichier doit se trouver dans un des dossiers mappés suivants : **Images**, **dispositions**, ou **ControlTemplates**.  
+- Le fichier doit se trouver dans un des dossiers mappés suivants : **Images**, **dispositions**, ou **ControlTemplates**.  
   
--   Le fichier ne peut pas se trouver dans la base de données de contenu SharePoint.  
+- Le fichier ne peut pas se trouver dans la base de données de contenu SharePoint.  
   
- Si vous souhaitez faire référence aux fichiers qui ne répondent pas à ces critères, vous devez entrer le chemin d’accès du fichier manuellement.  
+  Si vous souhaitez faire référence aux fichiers qui ne répondent pas à ces critères, vous devez entrer le chemin d’accès du fichier manuellement.  
   
- **Contenu du dossier**  
- Affiche la liste des fichiers du dossier sélectionné. Choisissez un fichier, puis le **OK** bouton pour fermer la boîte de dialogue et envoyer votre sélection au processus qui l’a appelée.  
+  **Contenu du dossier**  
+  Affiche la liste des fichiers du dossier sélectionné. Choisissez un fichier, puis le **OK** bouton pour fermer la boîte de dialogue et envoyer votre sélection au processus qui l’a appelée.  
   
- **Types de fichiers**  
- Vous permet de choisir parmi une liste de fichiers qui sont appropriés pour la tâche que vous effectuez.  
+  **Types de fichiers**  
+  Vous permet de choisir parmi une liste de fichiers qui sont appropriés pour la tâche que vous effectuez.  
   
 ## <a name="see-also"></a>Voir aussi
  [Créer des pages d’application pour SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   

@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75695598c31b1dcc3a8ae4845a41249ead71236b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: d6d6f7955cb010d981b62e2b9fcdc70a092d76ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151059"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941222"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; , élément (application ClickOnce)
 Décrit les autorisations de sécurité minimales dont doit disposer l’application pour qu’elle s’exécute sur l’ordinateur client.  
@@ -142,21 +142,21 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
  Facultatif. Identifie le niveau de sécurité auquel les demandes d’application doivent être exécutées. Cet élément n’a pas d’enfants et comprend les attributs suivants.  
   
--   `Level`  
+- `Level`  
   
-     Obligatoire. Indique le niveau de sécurité demandé par l’application. Les valeurs possibles sont :  
+   Obligatoire. Indique le niveau de sécurité demandé par l’application. Les valeurs possibles sont :  
   
-     `asInvoker`: ne demande aucune autorisation supplémentaire. Ce niveau ne nécessite aucune invite d’approbation supplémentaire.  
+   `asInvoker`: ne demande aucune autorisation supplémentaire. Ce niveau ne nécessite aucune invite d’approbation supplémentaire.  
   
-     `highestAvailable`: demande les autorisations les plus élevées pouvant être octroyées au processus parent.  
+   `highestAvailable`: demande les autorisations les plus élevées pouvant être octroyées au processus parent.  
   
-     `requireAdministrator`: demande d’autorisations d’administrateur complètes.  
+   `requireAdministrator`: demande d’autorisations d’administrateur complètes.  
   
-     Les applications[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sont uniquement installées avec la valeur `asInvoker`. Toute installation effectuée avec une autre valeur se soldera par un échec.  
+   Les applications[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sont uniquement installées avec la valeur `asInvoker`. Toute installation effectuée avec une autre valeur se soldera par un échec.  
   
--   `uiAccess`  
+- `uiAccess`  
   
-     Facultatif. Indique si l’application nécessite l’accès aux éléments protégés de l’interface utilisateur. La valeur peut être `true` ou `false`(false étant la valeur par défaut). Seules les applications signées doivent avoir la valeur true.  
+   Facultatif. Indique si l’application nécessite l’accès aux éléments protégés de l’interface utilisateur. La valeur peut être `true` ou `false`(false étant la valeur par défaut). Seules les applications signées doivent avoir la valeur true.  
   
 ## <a name="remarks"></a>Notes  
  Si une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] demande davantage d’autorisations que celles accordées par défaut par l’ordinateur client, le Gestionnaire de confiance du common language runtime demande à l’utilisateur s’il souhaite accorder à l’application ce niveau de privilège élevé. S’il refuse, l’application ne fonctionne pas ; s’il accepte, elle s’exécute avec les autorisations demandées.  

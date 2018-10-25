@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugAddresses::GetCount | Documents Microsoft
+title: IEnumDebugAddresses::GetCount | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: deb9418a7cae2fe96afd96b53a09234d5d0aefd6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ae5d02e178666cd6e294e5b718e86f9bd1e06134
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118503"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939993"
 ---
 # <a name="ienumdebugaddressesgetcount"></a>IEnumDebugAddresses::GetCount
 Cette méthode retourne le nombre d’éléments dans l’énumération.  
@@ -47,7 +47,7 @@ int GetCount(
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode n’est pas partie de l’interface d’énumération COM habituel qui spécifie que le suivant, Clone, Skip et réinitialiser uniquement besoin d’être implémentée.  
+ Cette méthode ne fait pas partie de l’interface d’énumération COM habituel qui spécifie qu’uniquement suivant Clone, Skip et réinitialisation doivent être implémentées.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

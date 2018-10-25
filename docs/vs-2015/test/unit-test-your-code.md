@@ -17,12 +17,12 @@ ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
 caps.latest.revision: 64
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 59d0de3dd53d7d9ab3a54fc11eb50666d39dfdc7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f79fb0ac4945253f1a10ce98a7e1ed17eaa6de63
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231216"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950418"
 ---
 # <a name="unit-test-your-code"></a>Tests unitaires sur votre code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ Les tests unitaires offrent aux développeurs et aux testeurs une méthode rapid
   
  Les outils de test unitaire incluent :  
   
-1.  **Explorateur de tests.** L'Explorateur de tests vous permet d'exécuter des tests unitaires et d'afficher leurs résultats. L'Explorateur de tests peut utiliser tout framework de tests unitaires, notamment un framework tiers, qui a un adaptateur pour l'Explorateur de solutions.  
+1. **Explorateur de tests.** L'Explorateur de tests vous permet d'exécuter des tests unitaires et d'afficher leurs résultats. L'Explorateur de tests peut utiliser tout framework de tests unitaires, notamment un framework tiers, qui a un adaptateur pour l'Explorateur de solutions.  
   
-2.  **Framework de tests unitaires Microsoft pour le code managé.** Le framework de tests unitaires Microsoft pour le code managé est installée avec Visual Studio et fournit un framework pour tester le code .NET.  
+2. **Framework de tests unitaires Microsoft pour le code managé.** Le framework de tests unitaires Microsoft pour le code managé est installée avec Visual Studio et fournit un framework pour tester le code .NET.  
   
-3.  **Frameworks de tests unitaires Microsoft pour C++.** Le framework de tests unitaires Microsoft pour C++ est installée avec Visual Studio et fournit un framework pour tester le code natif.  
+3. **Frameworks de tests unitaires Microsoft pour C++.** Le framework de tests unitaires Microsoft pour C++ est installée avec Visual Studio et fournit un framework pour tester le code natif.  
   
-4.  **Outils de couverture du code.** Vous pouvez déterminer la quantité de code du produit que vos tests unitaires passent en revue en utilisant une seule commande dans l'Explorateur de tests.  
+4. **Outils de couverture du code.** Vous pouvez déterminer la quantité de code du produit que vos tests unitaires passent en revue en utilisant une seule commande dans l'Explorateur de tests.  
   
-5.  **Framework d’isolement Microsoft Fakes.** Le framework d'isolement Microsoft Fakes peut créer des classes et des méthodes de remplacement pour le code de production et le code du système qui créent des dépendances du code testé. En implémentant les délégués substituts d'une fonction, vous contrôlez le comportement et la sortie de l'objet de dépendance.  
+5. **Framework d’isolement Microsoft Fakes.** Le framework d'isolement Microsoft Fakes peut créer des classes et des méthodes de remplacement pour le code de production et le code du système qui créent des dépendances du code testé. En implémentant les délégués substituts d'une fonction, vous contrôlez le comportement et la sortie de l'objet de dépendance.  
   
- Vous pouvez également utiliser [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) pour explorer votre code .NET et générer des données de test et une suite de tests unitaires. Pour chaque instruction dans le code, une entrée de test est générée pour exécuter cette instruction. Une analyse de cas est effectuée pour chaque branche conditionnelle dans le code.  
+   Vous pouvez également utiliser [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) pour explorer votre code .NET et générer des données de test et une suite de tests unitaires. Pour chaque instruction dans le code, une entrée de test est générée pour exécuter cette instruction. Une analyse de cas est effectuée pour chaque branche conditionnelle dans le code.  
   
 ## <a name="key-tasks"></a>Tâches clés  
  Utilisez les rubriques suivantes pour mieux comprendre et créer les tests unitaires :  

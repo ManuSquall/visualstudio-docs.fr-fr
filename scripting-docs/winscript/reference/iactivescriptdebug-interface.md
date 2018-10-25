@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptDebug (Interface) | Documents Microsoft
+title: Interface IActiveScriptDebug | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -14,28 +14,28 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a1e1d0c1cf51c63f1bb3fcd90ae72520da907e50
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0e21f4c99da886bc4907acf8b0934e1b46d57689
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24645819"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942086"
 ---
 # <a name="iactivescriptdebug-interface"></a>IActiveScriptDebug, interface
-Implémenté par les moteurs de script que prise en charge le débogage. En règle générale, un objet qui implémente le `IActiveScriptDebug` interface également implémente la `IActiveScript` interface. Si c’est le cas, appelez le `IActiveScript::QueryInterface` méthode pour obtenir le `IActiveScriptDebug` interface.  
+Implémenté par les moteurs de script que prise en charge le débogage. En règle générale, un objet qui implémente le `IActiveScriptDebug` interface également implémente le `IActiveScript` interface. Si c’est le cas, appelez le `IActiveScript::QueryInterface` méthode pour obtenir le `IActiveScriptDebug` interface.  
   
  Le `IActiveScriptDebug` interface fournit les moyens pour :  
   
--   Hôtes actifs reprendre la gestion des documents.  
+- Hôtes intelligents de reprendre la gestion des documents.  
   
--   Gestionnaire de processus de débogage pour synchroniser plusieurs moteurs de script de débogage.  
+- Gestionnaire de débogage de processus pour synchroniser le débogage de plusieurs moteurs de script.  
   
- Outre les méthodes héritées de `IUnknown`, le `IActiveScriptDebug` interface expose les méthodes suivantes.  
+  Outre les méthodes héritées de `IUnknown`, le `IActiveScriptDebug` interface expose les méthodes suivantes.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[IActiveScriptDebug::GetScriptTextAttributes](../../winscript/reference/iactivescriptdebug-getscripttextattributes.md)|Retourne les attributs de texte pour un bloc arbitraire de texte du script.|  
+|[IActiveScriptDebug::GetScriptTextAttributes](../../winscript/reference/iactivescriptdebug-getscripttextattributes.md)|Retourne les attributs de texte pour un bloc de texte du script arbitraire.|  
 |[IActiveScriptDebug::GetScriptletTextAttributes](../../winscript/reference/iactivescriptdebug-getscriptlettextattributes.md)|Retourne les attributs de texte pour un scriptlet arbitraire.|  
 |[IActiveScriptDebug::EnumCodeContextsOfPosition](../../winscript/reference/iactivescriptdebug-enumcodecontextsofposition.md)|Délègue à `IDebugDocumentContext::EnumCodeContexts`.|

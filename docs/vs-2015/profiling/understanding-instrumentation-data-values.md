@@ -17,12 +17,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61e942a1c3cb43bcd2d3d7ef813ed4bd98267a1f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75a1fddc6195805b786f4ad343c1c8917129dcdb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298881"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949231"
 ---
 # <a name="understanding-instrumentation-data-values"></a>Fonctionnement des valeurs de données d’instrumentation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,37 +31,37 @@ La méthode de profilage par *instrumentation* de [!INCLUDE[vsprvs](../includes/
   
  **Spécifications**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- La méthode par instrumentation injecte le code au début et de fin de fonctions cibles dans le fichier binaire profilé, et avant et après chaque appel d’autres fonctions par ces fonctions. Le code injecté enregistre les informations suivantes :  
+  La méthode par instrumentation injecte le code au début et de fin de fonctions cibles dans le fichier binaire profilé, et avant et après chaque appel d’autres fonctions par ces fonctions. Le code injecté enregistre les informations suivantes :  
   
--   L’intervalle entre cet événement de collecte et le précédent.  
+- L’intervalle entre cet événement de collecte et le précédent.  
   
--   Si le système d’exploitation a effectué une opération pendant l’intervalle. Par exemple, le système d’exploitation peut lire ou écrire sur un disque, ou basculer entre le thread cible et un autre thread d’un autre processus.  
+- Si le système d’exploitation a effectué une opération pendant l’intervalle. Par exemple, le système d’exploitation peut lire ou écrire sur un disque, ou basculer entre le thread cible et un autre thread d’un autre processus.  
   
- **Spécifications**  
+  **Spécifications**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Pour chaque intervalle, l’analyse du profileur reconstruit la pile des appels qui était présente à la fin de l’intervalle. Une pile des appels est la liste des fonctions qui sont actives sur un processeur à un point dans le temps. Une seule fonction (la fonction active) exécute du code ; les autres fonctions sont la chaîne des appels de fonction qui a provoqué l’appel à la fonction active (la pile des appels).  
+  Pour chaque intervalle, l’analyse du profileur reconstruit la pile des appels qui était présente à la fin de l’intervalle. Une pile des appels est la liste des fonctions qui sont actives sur un processeur à un point dans le temps. Une seule fonction (la fonction active) exécute du code ; les autres fonctions sont la chaîne des appels de fonction qui a provoqué l’appel à la fonction active (la pile des appels).  
   
- Pour chaque fonction présente sur la pile des appels quand l’intervalle a été enregistré, l’analyse du profileur ajoute l’intervalle à une ou plusieurs parmi quatre valeurs de données pour la fonction. L’analyse ajoute l’intervalle à une valeur de données pour une fonction selon deux critères :  
+  Pour chaque fonction présente sur la pile des appels quand l’intervalle a été enregistré, l’analyse du profileur ajoute l’intervalle à une ou plusieurs parmi quatre valeurs de données pour la fonction. L’analyse ajoute l’intervalle à une valeur de données pour une fonction selon deux critères :  
   
--   Si l’intervalle s’est produit dans le code de la fonction ou dans une *fonction enfant* (une fonction qui a été appelée par la fonction).  
+- Si l’intervalle s’est produit dans le code de la fonction ou dans une *fonction enfant* (une fonction qui a été appelée par la fonction).  
   
--   Si un événement du système d’exploitation s’est produit dans l’intervalle.  
+- Si un événement du système d’exploitation s’est produit dans l’intervalle.  
   
- Les valeurs de données pour un intervalle d’une fonction ou une plage de données sont nommées *Inclusif écoulé*, *Exclusif écoulé*, *Inclusif d’application* et *Exclusif d’application* :  
+  Les valeurs de données pour un intervalle d’une fonction ou une plage de données sont nommées *Inclusif écoulé*, *Exclusif écoulé*, *Inclusif d’application* et *Exclusif d’application* :  
   
--   Tous les intervalles d’une fonction sont ajoutés à la valeur de données Inclusif écoulé.  
+- Tous les intervalles d’une fonction sont ajoutés à la valeur de données Inclusif écoulé.  
   
--   Si l’intervalle s’est produit dans le code de la fonction et pas dans une fonction enfant, l’intervalle est ajouté à la valeur de données Exclusif écoulé de la fonction.  
+- Si l’intervalle s’est produit dans le code de la fonction et pas dans une fonction enfant, l’intervalle est ajouté à la valeur de données Exclusif écoulé de la fonction.  
   
--   Si aucun événement du système d’exploitation ne s’est produit dans l’intervalle, l’intervalle est ajouté à la valeur de données Inclusif d’application.  
+- Si aucun événement du système d’exploitation ne s’est produit dans l’intervalle, l’intervalle est ajouté à la valeur de données Inclusif d’application.  
   
--   Si aucun événement du système d’exploitation ne s’est produit dans l’intervalle et que l’intervalle s’est produit dans l’exécution directe du code de la fonction (autrement dit, il ne s’est pas produit dans une fonction enfant), l’intervalle est ajouté à la valeur de données Exclusif d’application.  
+- Si aucun événement du système d’exploitation ne s’est produit dans l’intervalle et que l’intervalle s’est produit dans l’exécution directe du code de la fonction (autrement dit, il ne s’est pas produit dans une fonction enfant), l’intervalle est ajouté à la valeur de données Exclusif d’application.  
   
- Les rapports des outils de profilage agrègent les valeurs totales des fonctions dans la session de profilage elle-même, des processus, des threads et des fichiers binaires de la session.  
+  Les rapports des outils de profilage agrègent les valeurs totales des fonctions dans la session de profilage elle-même, des processus, des threads et des fichiers binaires de la session.  
   
 ## <a name="elapsed-inclusive-values"></a>Valeurs de temps inclusif écoulé  
  Temps total passé à exécuter une fonction et ses fonctions enfants.  

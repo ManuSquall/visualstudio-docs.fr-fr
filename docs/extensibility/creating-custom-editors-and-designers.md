@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56d191d8019b4b87cc31e0e383637515a10f4147
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 05eeae4901af8780927e0ce0577b385ee9ffa371
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497610"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950899"
 ---
 # <a name="create-custom-editors-and-designers"></a>Créer des concepteurs et éditeurs personnalisés
 L’environnement de développement intégré (IDE) Visual Studio peut héberger différents types de l’éditeur :  
   
--   L’éditeur principal de Visual Studio  
+- L’éditeur principal de Visual Studio  
   
--   Éditeurs personnalisés  
+- Éditeurs personnalisés  
   
--   Éditeurs externes  
+- Éditeurs externes  
   
--   Concepteurs  
+- Concepteurs  
   
- Les informations suivantes vous permettent de choisir le type d’éditeur que vous avez besoin.  
+  Les informations suivantes vous permettent de choisir le type d’éditeur que vous avez besoin.  
   
 ## <a name="types-of-editor"></a>Types de l’éditeur  
  Pour plus d’informations sur l’éditeur principal de Visual Studio, consultez [étendre les services de l’éditeur et la langue](../extensibility/extending-the-editor-and-language-services.md).  
@@ -52,25 +52,25 @@ L’environnement de développement intégré (IDE) Visual Studio peut héberger
 ## <a name="editor-design-decisions"></a>Décisions de conception de l’éditeur  
  Les questions de conception suivantes vous aideront à choisir le type de l’éditeur de meilleures adapté à votre application :  
   
--   Votre application enregistrera ses données dans des fichiers ou pas ? Si elle enregistrera ses données dans les fichiers, ils seront dans un format standard ou personnalisé ?  
+- Votre application enregistrera ses données dans des fichiers ou pas ? Si elle enregistrera ses données dans les fichiers, ils seront dans un format standard ou personnalisé ?  
   
-     Si vous utilisez un format de fichier standard, les autres types de projet en plus de votre projet sera capable d’ouvrir et lire/écrire des données leur. Toutefois, si vous utilisez un format de fichier personnalisé, uniquement le type de votre projet sera capable d’ouvrir et lire/écrire des données leur.  
+   Si vous utilisez un format de fichier standard, les autres types de projet en plus de votre projet sera capable d’ouvrir et lire/écrire des données leur. Toutefois, si vous utilisez un format de fichier personnalisé, uniquement le type de votre projet sera capable d’ouvrir et lire/écrire des données leur.  
   
-     Si votre projet utilise des fichiers, vous devez personnaliser l’éditeur standard. Si votre projet n’utilise pas de fichiers, mais utilise plutôt des éléments dans une base de données ou autre référentiel, vous devez créer un éditeur personnalisé.  
+   Si votre projet utilise des fichiers, vous devez personnaliser l’éditeur standard. Si votre projet n’utilise pas de fichiers, mais utilise plutôt des éléments dans une base de données ou autre référentiel, vous devez créer un éditeur personnalisé.  
   
--   Votre éditeur n’a besoin pour héberger des contrôles ActiveX ?  
+- Votre éditeur n’a besoin pour héberger des contrôles ActiveX ?  
   
-     Si votre éditeur héberge des contrôles ActiveX, puis implémenter un éditeur d’activation sur place, comme indiqué dans [In situ d’activation](../extensibility/in-place-activation.md). Si elle n’héberge pas de contrôles ActiveX, puis utilisez un éditeur d’incorporation simplifié, ou personnaliser la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur par défaut.  
+   Si votre éditeur héberge des contrôles ActiveX, puis implémenter un éditeur d’activation sur place, comme indiqué dans [In situ d’activation](../extensibility/in-place-activation.md). Si elle n’héberge pas de contrôles ActiveX, puis utilisez un éditeur d’incorporation simplifié, ou personnaliser la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur par défaut.  
   
--   Votre éditeur prendra en charge plusieurs vues ? Si vous souhaitez que les vues de votre éditeur soient visibles en même temps que l’éditeur par défaut, vous devez prendre en charge plusieurs vues.  
+- Votre éditeur prendra en charge plusieurs vues ? Si vous souhaitez que les vues de votre éditeur soient visibles en même temps que l’éditeur par défaut, vous devez prendre en charge plusieurs vues.  
   
-     Si votre éditeur doit prendre en charge plusieurs vues, les données de document et les objets de vue de document pour l’éditeur doivent être des objets distincts. Pour plus d’informations, consultez [prendre en charge plusieurs vues de document](../extensibility/supporting-multiple-document-views.md).  
+   Si votre éditeur doit prendre en charge plusieurs vues, les données de document et les objets de vue de document pour l’éditeur doivent être des objets distincts. Pour plus d’informations, consultez [prendre en charge plusieurs vues de document](../extensibility/supporting-multiple-document-views.md).  
   
-     Si votre éditeur prend en charge plusieurs vues, vous prévoyez d’utiliser le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] implémentation de mémoire tampon de texte de l’éditeur de base (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objet) pour votre objet de données de document ? Autrement dit, vous souhaitez prendre en charge de votre éditeur vue côte à côte avec la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur principal ? La possibilité de procéder est la base du Concepteur de formulaires...  
+   Si votre éditeur prend en charge plusieurs vues, vous prévoyez d’utiliser le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] implémentation de mémoire tampon de texte de l’éditeur de base (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objet) pour votre objet de données de document ? Autrement dit, vous souhaitez prendre en charge de votre éditeur vue côte à côte avec la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur principal ? La possibilité de procéder est la base du Concepteur de formulaires...  
   
--   Si vous avez besoin pour héberger un éditeur externe, l’éditeur incorporable dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]?  
+- Si vous avez besoin pour héberger un éditeur externe, l’éditeur incorporable dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]?  
   
-     Si elle peut être incorporée, vous devez créer une fenêtre hôte pour l’éditeur externe et appelez ensuite la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> (méthode) et définissez le <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> valeur d’énumération à `DP_External`. Si l’éditeur ne peut pas être incorporé, l’IDE crée automatiquement une fenêtre distincte pour celui-ci.  
+   Si elle peut être incorporée, vous devez créer une fenêtre hôte pour l’éditeur externe et appelez ensuite la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> (méthode) et définissez le <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> valeur d’énumération à `DP_External`. Si l’éditeur ne peut pas être incorporé, l’IDE crée automatiquement une fenêtre distincte pour celui-ci.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Procédure pas à pas : Créer un éditeur personnalisé](../extensibility/walkthrough-creating-a-custom-editor.md)  

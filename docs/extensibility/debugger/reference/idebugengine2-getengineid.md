@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::GetEngineID | Documents Microsoft
+title: IDebugEngine2::GetEngineID | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97d5b4ec655838f32ccff7df562ae4f11bdc9a00
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bd933653613b5819bab229077de0f2f6f6074485
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108035"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935898"
 ---
 # <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
-Obtient le GUID du moteur de débogage (DE).  
+Obtient le GUID du moteur de débogage (dé).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,13 +41,13 @@ int GetEngineID(
   
 #### <a name="parameters"></a>Paramètres  
  `pguidEngine`  
- [out] Retourne le GUID de la DE.  
+ [out] Retourne le GUID de l’Allemagne.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Voici quelques exemples de type GUID `guidScriptEng`, `guidNativeEng`, ou `guidSQLEng`. Des moteurs de débogage créera leur propre GUID d’identification.  
+ Voici quelques exemples de GUID typique `guidScriptEng`, `guidNativeEng`, ou `guidSQLEng`. Nouveaux moteurs de débogage seront créer leur propre GUID pour l’identification.  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant montre comment implémenter cette méthode pour une simple `CEngine` objet qui implémente le [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) interface.  

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b6c0bffb2ce6db081a0c8ddf82c6b603a5dddd9
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: dd42bc89eb853a5d65f8e15eab3fdf2cd054f278
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495256"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927799"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Inscrire des verbes pour les extensions de nom de fichier
 L’association d’une extension de nom de fichier avec une application a généralement une action par défaut qui se produit lorsqu’un utilisateur double-clique sur un fichier. Cette action est liée à un verbe, par exemple ouvrir, qui correspond à l’action de préférence.  
@@ -28,17 +28,17 @@ L’association d’une extension de nom de fichier avec une application a gén�
 ## <a name="register-standard-verbs"></a>Inscrire des verbes standard  
  Le système d’exploitation reconnaît les verbes standards suivants :  
   
--   Ouvrir  
+- Ouvrir  
   
--   Modifier  
+- Modifier  
   
--   Lecture  
+- Lecture  
   
--   Imprimer  
+- Imprimer  
   
--   Preview  
+- Preview  
   
- Si possible, inscrivez un verbe standard. Le choix le plus courant est le verbe Open. Utilisez le verbe de modification uniquement s’il existe une différence entre l’ouverture du fichier et en modifiant le fichier. Par exemple, l’ouverture d’un *.htm* fichier l’affiche dans le navigateur, tandis que la modification une *.htm* fichier démarre un éditeur HTML. Les verbes standards sont localisés avec les paramètres régionaux de système d’exploitation.  
+  Si possible, inscrivez un verbe standard. Le choix le plus courant est le verbe Open. Utilisez le verbe de modification uniquement s’il existe une différence entre l’ouverture du fichier et en modifiant le fichier. Par exemple, l’ouverture d’un *.htm* fichier l’affiche dans le navigateur, tandis que la modification une *.htm* fichier démarre un éditeur HTML. Les verbes standards sont localisés avec les paramètres régionaux de système d’exploitation.  
   
 > [!NOTE]
 >  Lors de l’inscription des verbes standard, ne définissez pas la valeur par défaut pour ouvrir la clé. La valeur par défaut contient la chaîne d’affichage dans le menu. Le système d’exploitation fournit cette chaîne des verbes standard.  

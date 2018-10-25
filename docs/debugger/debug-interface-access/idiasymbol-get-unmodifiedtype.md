@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_unmodifiedType | Documents Microsoft
+title: IDiaSymbol::get_unmodifiedType | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a07c85bf53d330874eca9e8e0eec37bed8dde9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 32e636a35d1cfed085ddf1bc44d60249a71d0b69
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470785"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935748"
 ---
 # <a name="idiasymbolgetunmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
-Récupère le type d’origine de ce symbole. Quand utiliser le [symtagenum, énumération](../../debugger/debug-interface-access/symtagenum.md) est définie sur le type.  
+Récupère le type d’origine pour ce symbole. Quand utiliser le [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md) est définie sur un type.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,9 +43,9 @@ HRESULT get_unmodifiedType(
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
 ## <a name="remarks"></a>Notes  
- Le type actuel est une modification du type d’origine retourné. Le type d’origine pour un symbole peut être déterminé en tout d’abord obtenir le type du symbole, puis en interrogeant qui a retourné le type pour le type d’origine. Notez que certains symboles n’aient pas un type de modification du type d’origine.  
+ Le type actuel est une modification du type d’origine retourné. Le type d’origine pour un symbole peut être déterminé par tout d’abord obtenir le type du symbole et puis en interrogeant qui a retourné le type pour le type d’origine. Notez que certains symboles n’aient pas un type modifié du type d’origine.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : Dia2.h  
   
  Bibliothèque : diaguids.lib  

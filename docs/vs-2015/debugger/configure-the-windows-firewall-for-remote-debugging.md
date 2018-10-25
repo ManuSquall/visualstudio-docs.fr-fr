@@ -14,37 +14,37 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb3473e8c34f36e1cde0450563711824ce22a37d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96b4e4cc929dc7941fac5e8a7f090e701fe2810f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273882"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935391"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Configurer le Pare-feu Windows pour le débogage distant
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette rubrique explique comment configurer le pare-feu pour activer le débogage distant sur des ordinateurs qui exécutent les systèmes d’exploitation suivants :  
   
--   Windows 7  
+- Windows 7  
   
--   Windows 8/8.1  
+- Windows 8/8.1  
   
--   Windows 10  
+- Windows 10  
   
--   Windows Server 2008 (R2)  
+- Windows Server 2008 (R2)  
   
--   Windows Server 2012  
+- Windows Server 2012  
   
--   Windows Server 2012 R2  
+- Windows Server 2012 R2  
   
- Si le réseau sur lequel vous effectuez un débogage n’est pas protégé par un pare-feu, cette configuration est inutile. Dans le cas contraire, il est nécessaire d’apporter des modifications à la configuration du pare-feu pour l’ordinateur qui héberge Visual Studio et l’ordinateur distant qui doit être débogué.  
+  Si le réseau sur lequel vous effectuez un débogage n’est pas protégé par un pare-feu, cette configuration est inutile. Dans le cas contraire, il est nécessaire d’apporter des modifications à la configuration du pare-feu pour l’ordinateur qui héberge Visual Studio et l’ordinateur distant qui doit être débogué.  
   
- **IPSec** Si votre réseau nécessite que la communication soit effectuée à l’aide d’IPSec, vous devez ouvrir des ports supplémentaires sur l’ordinateur hôte Visual Studio et l’ordinateur distant.  
+  **IPSec** Si votre réseau nécessite que la communication soit effectuée à l’aide d’IPSec, vous devez ouvrir des ports supplémentaires sur l’ordinateur hôte Visual Studio et l’ordinateur distant.  
   
- **Serveur web** Si vous déboguez un serveur web distant, vous devez ouvrir un port supplémentaire sur l’ordinateur distant.  
+  **Serveur web** Si vous déboguez un serveur web distant, vous devez ouvrir un port supplémentaire sur l’ordinateur distant.  
   
- Notez que les deux ordinateurs n’ont pas à exécuter le même système d’exploitation. Par exemple, l’ordinateur Visual Studio peut exécuter Windows 10 et l’ordinateur distant peut exécuter Windows Server 2012 R2.  
+  Notez que les deux ordinateurs n’ont pas à exécuter le même système d’exploitation. Par exemple, l’ordinateur Visual Studio peut exécuter Windows 10 et l’ordinateur distant peut exécuter Windows Server 2012 R2.  
   
 ## <a name="to-configure-windows-firewall-on-the-visual-studio-computer"></a>Pour configurer le Pare-feu Windows sur l’ordinateur Visual Studio  
  Les instructions pour configurer le Pare-feu Windows diffèrent légèrement en fonction des systèmes d’exploitation. Sur Windows 7 ou Windows Server 2008, le mot **programme** est utilisé ; sur Windows 8/8.1, Windows 10 et Windows Server 2012, le mot **application** est utilisé.  Dans les étapes suivantes, nous allons utiliser le mot **application**.  

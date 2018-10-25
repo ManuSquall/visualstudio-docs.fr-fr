@@ -15,12 +15,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 09cf6f69348c08ec284e074feea8d9a33c488f0b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3674d6ccbda89a2a3ee1de551587ba034ba51c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229462"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932622"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Création d'un test codé de l'interface utilisateur piloté par les données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -204,13 +204,13 @@ Pour tester différentes conditions, vous pouvez exécuter vos tests à plusieur
   
 #### <a name="step-5--run-the-data-driven-test"></a>Étape 5 : exécuter le test piloté par les données  
   
-1.  Vérifiez que le test est maintenant piloté par les données en l'exécutant de nouveau.  
+1. Vérifiez que le test est maintenant piloté par les données en l'exécutant de nouveau.  
   
-     Vous devez voir le test s'exécuter via trois itérations à l'aide des valeurs incluses dans le fichier .csv. La validation doit également fonctionner et le test doit s’afficher comme réussi dans l’Explorateur de tests.  
+    Vous devez voir le test s'exécuter via trois itérations à l'aide des valeurs incluses dans le fichier .csv. La validation doit également fonctionner et le test doit s’afficher comme réussi dans l’Explorateur de tests.  
   
- **Aide**  
+   **Aide**  
   
- Pour plus d’informations, consultez [Test de livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](http://go.microsoft.com/fwlink/?LinkID=255188) et [Test de livraison continue avec Visual Studio 2012 - Chapitre 5 : Automatisation des tests système](http://go.microsoft.com/fwlink/?LinkID=255196)  
+   Pour plus d’informations, consultez [Test de livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](http://go.microsoft.com/fwlink/?LinkID=255188) et [Test de livraison continue avec Visual Studio 2012 - Chapitre 5 : Automatisation des tests système](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
 ## <a name="q--a"></a>Q et R  
   

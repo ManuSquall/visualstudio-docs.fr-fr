@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce398f18913063d770aa180a06ff8e2017aebd86
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 402e7f80ea208d714b31bd61e25b352494310487
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35672669"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949251"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Comment : ajouter des contrôles ListObject aux feuilles de calcul
   Vous pouvez ajouter <xref:Microsoft.Office.Tools.Excel.ListObject> contrôles à une feuille de calcul Microsoft Office Excel au moment du design et de l’exécution dans les projets au niveau du document.  
@@ -32,13 +32,13 @@ ms.locfileid: "35672669"
   
  Cette rubrique décrit les tâches suivantes :  
   
--   [Ajouter des contrôles ListObject au moment du design](#designtime)  
+- [Ajouter des contrôles ListObject au moment du design](#designtime)  
   
--   [Ajouter des contrôles ListObject au moment de l’exécution dans un projet au niveau du document](#runtimedoclevel)  
+- [Ajouter des contrôles ListObject au moment de l’exécution dans un projet au niveau du document](#runtimedoclevel)  
   
--   [Ajouter des contrôles ListObject au moment de l’exécution dans un projet de complément VSTO](#runtimeaddin)  
+- [Ajouter des contrôles ListObject au moment de l’exécution dans un projet de complément VSTO](#runtimeaddin)  
   
- Pour plus d’informations sur <xref:Microsoft.Office.Tools.Excel.ListObject> contrôles, consultez [contrôle ListObject](../vsto/listobject-control.md).  
+  Pour plus d’informations sur <xref:Microsoft.Office.Tools.Excel.ListObject> contrôles, consultez [contrôle ListObject](../vsto/listobject-control.md).  
   
 ##  <a name="designtime"></a> Ajouter des contrôles ListObject au moment du design  
  Il existe plusieurs manières d’ajouter des contrôles <xref:Microsoft.Office.Tools.Excel.ListObject> à une feuille de calcul Excel dans un projet au niveau du document au moment du design : dans Excel, à partir de la **Boîte à outils**Visual Studio, et à partir de la fenêtre **Sources de données** .  

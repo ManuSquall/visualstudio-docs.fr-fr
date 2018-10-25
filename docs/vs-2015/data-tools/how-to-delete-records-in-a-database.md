@@ -26,12 +26,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: aff5a67d54376488ccce2bca5dd67b84d6c73949
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 87ab5ccde2c1100fbd0efc5f4272efe27803b717
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210182"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938615"
 ---
 # <a name="how-to-delete-records-in-a-database"></a>Comment : supprimer les enregistrements dans une base de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,12 +49,12 @@ Pour supprimer des enregistrements à partir d’une base de données, utilisez 
   
 #### <a name="to-delete-records-from-a-database-using-the-tableadapterupdate-method"></a>Pour supprimer des enregistrements à partir d’une base de données à l’aide de la méthode TableAdapter.Update  
   
--   Supprimer des enregistrements de souhaité <xref:System.Data.DataTable> en supprimant <xref:System.Data.DataRow> objets à partir de la table. Pour plus d’informations, consultez [Comment : supprimer des lignes dans un DataTable](http://msdn.microsoft.com/library/add481e5-08c7-4923-9276-f036ae29d31e). Une fois que les lignes sont supprimées de la <xref:System.Data.DataTable>, appelez le `TableAdapter.Update` (méthode). Vous pouvez contrôler la quantité de données pour mettre à jour en passant l’intégralité d’un <xref:System.Data.DataSet>, un <xref:System.Data.DataTable>, un tableau de <xref:System.Data.DataRow>s ou un seul <xref:System.Data.DataRow>. Le code suivant montre comment supprimer un enregistrement à partir d’un <xref:System.Data.DataTable> , puis appelez le `TableAdapter.Update` méthode pour communiquer les modifications et supprimer la ligne de la base de données. (Cet exemple utilise la base de données Northwind `Region` table.)  
+- Supprimer des enregistrements de souhaité <xref:System.Data.DataTable> en supprimant <xref:System.Data.DataRow> objets à partir de la table. Pour plus d’informations, consultez [Comment : supprimer des lignes dans un DataTable](http://msdn.microsoft.com/library/add481e5-08c7-4923-9276-f036ae29d31e). Une fois que les lignes sont supprimées de la <xref:System.Data.DataTable>, appelez le `TableAdapter.Update` (méthode). Vous pouvez contrôler la quantité de données pour mettre à jour en passant l’intégralité d’un <xref:System.Data.DataSet>, un <xref:System.Data.DataTable>, un tableau de <xref:System.Data.DataRow>s ou un seul <xref:System.Data.DataRow>. Le code suivant montre comment supprimer un enregistrement à partir d’un <xref:System.Data.DataTable> , puis appelez le `TableAdapter.Update` méthode pour communiquer les modifications et supprimer la ligne de la base de données. (Cet exemple utilise la base de données Northwind `Region` table.)  
   
-     [!code-csharp[VbRaddataSaving#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#20)]
-     [!code-vb[VbRaddataSaving#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#20)]  
+   [!code-csharp[VbRaddataSaving#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#20)]
+   [!code-vb[VbRaddataSaving#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#20)]  
   
- Si votre application utilise des objets pour stocker les données dans votre application, vous pouvez utiliser les méthodes DBDirect du TableAdapter pour supprimer des données directement à partir de la base de données. Appel de la `Delete` méthode supprime les enregistrements à partir de la base de données selon les valeurs de paramètre passées.  
+  Si votre application utilise des objets pour stocker les données dans votre application, vous pouvez utiliser les méthodes DBDirect du TableAdapter pour supprimer des données directement à partir de la base de données. Appel de la `Delete` méthode supprime les enregistrements à partir de la base de données selon les valeurs de paramètre passées.  
   
 #### <a name="to-delete-records-from-a-database-using-the-tableadapterdelete-method"></a>Pour supprimer des enregistrements à partir d’une base de données à l’aide de la méthode TableAdapter.Delete  
   

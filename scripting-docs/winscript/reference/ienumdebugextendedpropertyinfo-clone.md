@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExtendedPropertyInfo::Clone | Documents Microsoft
+title: IEnumDebugExtendedPropertyInfo::Clone | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d873ba29ea2dc327cd6499613abb66d2a728008c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 03e4dcd79d90806eab0d664b2a0cba428c03207c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727459"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935326"
 ---
 # <a name="ienumdebugextendedpropertyinfoclone"></a>IEnumDebugExtendedPropertyInfo::Clone
-Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.  
+Crée un énumérateur qui contient le même état d’énumération que l’énumérateur en cours.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,7 +41,7 @@ HRESULT Clone (
  [out] Retourne le cloné `IEnumDebugExtendedPropertyInfo` interface.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne un élément valide `HRESULT`, généralement `S_OK`.  
+ Retourne une liste valide `HRESULT`, généralement `S_OK`.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IEnumDebugExtendedPropertyInfo](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)

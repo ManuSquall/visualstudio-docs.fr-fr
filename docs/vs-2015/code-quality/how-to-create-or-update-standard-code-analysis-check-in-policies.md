@@ -18,12 +18,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 63c1b27d762f79a8933a31bb33850ad4604a9c37
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6821d218c22f2d83108205d8753fc2d5beac4f28
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301559"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939434"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Comment : créer ou mettre à jour des stratégies d’archivage d’analyse du code standard
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Vous pouvez exiger que l’analyse de code est exécutée sur tous les projets d
   
  Stratégies d’archivage de l’analyse du code sont définies dans les paramètres de projet d’équipe et s’appliquent à chaque projet de code dans le projet d’équipe. Exécutions d’analyse du code sont configurées pour les projets de code dans le fichier projet (.xxproj) pour le projet de code. Exécutions d’analyse du code sont effectuées sur l’ordinateur local. Lorsque vous activez une stratégie d’archivage de l’analyse du code, les fichiers dans un projet de code qui doivent être vérifiées doivent être compilés après leur dernière modification et une analyse du code qui contienne, au minimum, les règles dans les paramètres de projet d’équipe doivent être effectuées sur l’ordinateur où le c modifications ont été apportées.  
   
--   Pour le code managé, vous définissez la stratégie d’archivage en spécifiant un *ensemble de règles* qui contient un sous-ensemble de règles d’analyse du code.  
+- Pour le code managé, vous définissez la stratégie d’archivage en spécifiant un *ensemble de règles* qui contient un sous-ensemble de règles d’analyse du code.  
   
--   Pour le code C/C++, la stratégie d’archivage nécessite que toutes les règles d’analyse du code sont exécutés. Vous pouvez ajouter des directives du préprocesseur pour désactiver des règles spécifiques pour les projets de code individuels de votre projet d’équipe.  
+- Pour le code C/C++, la stratégie d’archivage nécessite que toutes les règles d’analyse du code sont exécutés. Vous pouvez ajouter des directives du préprocesseur pour désactiver des règles spécifiques pour les projets de code individuels de votre projet d’équipe.  
   
- Une fois que vous spécifiez une stratégie d’archivage pour le code managé, membres de l’équipe peuvent synchroniser leurs paramètres d’analyse de code pour les projets de code pour les paramètres de stratégie du projet équipe.  
+  Une fois que vous spécifiez une stratégie d’archivage pour le code managé, membres de l’équipe peuvent synchroniser leurs paramètres d’analyse de code pour les projets de code pour les paramètres de stratégie du projet équipe.  
   
 ### <a name="to-open-the-check-in-policy-editor"></a>Pour ouvrir l’éditeur de stratégie d’archivage  
   

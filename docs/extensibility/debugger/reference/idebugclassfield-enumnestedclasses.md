@@ -1,5 +1,5 @@
 ---
-title: IDebugClassField::EnumNestedClasses | Documents Microsoft
+title: IDebugClassField::EnumNestedClasses | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 382e822a03a7a4e4a9ae30b41b4b9a4a7ec1643f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a313e27c3dcbca0136b00bfb789e444174474369
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101756"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937525"
 ---
 # <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
 Crée un énumérateur pour les classes imbriquées dans cette classe.  
@@ -44,12 +44,12 @@ int EnumNestedClasses(
  [out] Retourne un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objet représentant la liste des classes imbriquées. Retourne une valeur null si aucune classe imbriquée.  
   
 ## <a name="return-value"></a>Valeur de retour  
- En cas de réussite, retourne S_OK ou retourne S_FALSE si aucune classe imbriquée. Sinon, retourne un code d'erreur.  
+ En cas de réussite, retourne S_OK, ou retourne S_FALSE s’il existe des classes imbriquées. Sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
  Chaque élément de l’énumération est un [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) objet décrivant une classe imbriquée.  
   
- Une classe imbriquée est une classe définie à l’intérieur d’une autre classe. Par exemple :  
+ Une classe imbriquée est une classe définie à l’intérieur d’une autre classe. Exemple :  
   
 ```  
 class RootClass {  

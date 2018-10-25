@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::EnumFrameInfo | Documents Microsoft
+title: IDebugThread2::EnumFrameInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4781533d533228e07b4268f5c92b662cf7cda122
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 98cd9db7785d7d7867e48f0bd56a2f5ab657a344
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120538"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942732"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
-Récupère une liste des frames de pile pour ce thread.  
+Récupère une liste de frames de pile pour ce thread.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,10 +45,10 @@ int EnumFrameInfo (
   
 #### <a name="parameters"></a>Paramètres  
  `dwFieldSpec`  
- [in] Une combinaison d’indicateurs à partir de la [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) énumération qui spécifie les champs de la [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) structures doivent être remplis. Spécifiez le `FIF_FUNCNAME_FORMAT` indicateur pour mettre en forme le nom de fonction dans une chaîne unique.  
+ [in] Une combinaison d’indicateurs de la [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) énumération qui spécifie les champs de la [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) structures doivent être remplis. Spécifiez le `FIF_FUNCNAME_FORMAT` indicateur pour mettre en forme le nom de fonction en une seule chaîne.  
   
  `nRadix`  
- [in] Base utilisée dans la mise en forme des informations numériques dans l’énumérateur.  
+ [in] Base utilisée dans la mise en forme numérique dans l’énumérateur.  
   
  `ppEnum`  
  [out] Retourne un [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) objet qui contient une liste de [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) structures décrivant le frame de pile.  
@@ -57,7 +57,7 @@ int EnumFrameInfo (
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Les cadres du thread sont énumérées dans l’ordre, avec le frame actuel énumérée en premier et le frame plus anciens énumérées en dernier.  
+ Frames de thread sont énumérées dans l’ordre, avec le frame actuel énumérée en premier et le plus ancien frame énumérées dernière.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   

@@ -29,12 +29,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d3cce301d5d49a7660751ee1580c99794c16d38
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f654efacace3e4b7cbdfff8919309a09d4a544ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671136"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936964"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Comment : ajouter du contenu des contrôles à des documents Word
   Dans les projets au niveau du document Word, vous pouvez ajouter des contrôles de contenu au document dans votre projet au moment du design ou lors de l’exécution. Dans les projets de complément Word VSTO, vous pouvez ajouter des contrôles de contenu à tout document ouvert au moment de l’exécution.  
@@ -43,24 +43,24 @@ ms.locfileid: "35671136"
   
  Cette rubrique décrit les tâches suivantes :  
   
--   [Ajouter des contrôles de contenu au moment du design](#designtime)  
+- [Ajouter des contrôles de contenu au moment du design](#designtime)  
   
--   [Ajouter des contrôles de contenu lors de l’exécution dans un projet au niveau du document](#runtimedoclevel)  
+- [Ajouter des contrôles de contenu lors de l’exécution dans un projet au niveau du document](#runtimedoclevel)  
   
--   [Ajouter des contrôles de contenu lors de l’exécution dans un projet de complément VSTO](#runtimeaddin)  
+- [Ajouter des contrôles de contenu lors de l’exécution dans un projet de complément VSTO](#runtimeaddin)  
   
- Pour plus d’informations sur les contrôles de contenu, consultez [contrôles de contenu](../vsto/content-controls.md).  
+  Pour plus d’informations sur les contrôles de contenu, consultez [contrôles de contenu](../vsto/content-controls.md).  
   
 ##  <a name="designtime"></a> Ajouter du contenu des contrôles au moment du design  
  Il existe plusieurs façons d'ajouter des contrôles de contenu au document dans un projet au niveau du document au moment du design :  
   
--   Ajoutez un contrôle de contenu à partir de l'onglet **Contrôles Word** de la **Boîte à outils**.  
+- Ajoutez un contrôle de contenu à partir de l'onglet **Contrôles Word** de la **Boîte à outils**.  
   
--   Ajoutez un contrôle de contenu à votre document de la même manière que vous ajoutez un contrôle de contenu natif dans Word.  
+- Ajoutez un contrôle de contenu à votre document de la même manière que vous ajoutez un contrôle de contenu natif dans Word.  
   
--   Faites glisser le contrôle de contenu vers votre document à partir de la fenêtre **Sources de données** . Cela est utile quand vous souhaitez lier le contrôle aux données, une fois le contrôle créé. Pour plus d’informations, consultez [Comment : remplir des documents avec des données à partir d’objets](../vsto/how-to-populate-documents-with-data-from-objects.md) et [Comment : remplir des documents avec des données à partir d’une base de données](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
+- Faites glisser le contrôle de contenu vers votre document à partir de la fenêtre **Sources de données** . Cela est utile quand vous souhaitez lier le contrôle aux données, une fois le contrôle créé. Pour plus d’informations, consultez [Comment : remplir des documents avec des données à partir d’objets](../vsto/how-to-populate-documents-with-data-from-objects.md) et [Comment : remplir des documents avec des données à partir d’une base de données](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ### <a name="to-add-a-content-control-to-a-document-by-using-the-toolbox"></a>Pour ajouter un contrôle de contenu à un document à l'aide de la boîte à outils  
   
@@ -100,13 +100,13 @@ ms.locfileid: "35671136"
 ##  <a name="runtimedoclevel"></a> Ajouter des contrôles de contenu lors de l’exécution dans un projet au niveau du document  
  Vous pouvez ajouter les contrôles de contenu par programmation à votre document au moment de l’exécution à l’aide des méthodes de la <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> propriété de la `ThisDocument` classe dans votre projet. Chaque méthode possède trois surcharges qui vous permettent d'ajouter un contrôle de contenu comme suit :  
   
--   ajout d'un contrôle à la sélection actuelle ;  
+- ajout d'un contrôle à la sélection actuelle ;  
   
--   ajout d'un contrôle à une plage spécifique ;  
+- ajout d'un contrôle à une plage spécifique ;  
   
--   ajout d'un contrôle basé sur un contrôle de contenu natif dans le document.  
+- ajout d'un contrôle basé sur un contrôle de contenu natif dans le document.  
   
- Les contrôles de contenu créés de façon dynamique ne sont pas conservés dans le document quand ce dernier est fermé. Toutefois, un contrôle de contenu natif demeure dans le document. Vous pouvez recréer un contrôle de contenu basé sur un contrôle de contenu natif à la prochaine ouverture du document. Pour plus d’informations, consultez [ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+  Les contrôles de contenu créés de façon dynamique ne sont pas conservés dans le document quand ce dernier est fermé. Toutefois, un contrôle de contenu natif demeure dans le document. Vous pouvez recréer un contrôle de contenu basé sur un contrôle de contenu natif à la prochaine ouverture du document. Pour plus d’informations, consultez [ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 > [!NOTE]  
 >  Pour ajouter un contrôle de contenu de case à cocher à un document dans un projet Word 2010, vous devez créer un objet <xref:Microsoft.Office.Tools.Word.ContentControl> . Pour plus d’informations, consultez [contrôles de contenu](../vsto/content-controls.md).  
@@ -141,15 +141,15 @@ ms.locfileid: "35671136"
 ##  <a name="runtimeaddin"></a> Ajouter des contrôles de contenu lors de l’exécution dans un projet de complément VSTO  
  Vous pouvez ajouter des contrôles de contenu par programmation à tout document ouvert au moment de l’exécution en utilisant un complément, VSTO. Pour ce faire, vous devez générer un élément hôte <xref:Microsoft.Office.Tools.Word.Document> basé sur un document ouvert, puis utiliser les méthodes de la propriété <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> de cet élément hôte. Chaque méthode possède trois surcharges qui vous permettent d'ajouter un contrôle de contenu comme suit :  
   
--   ajout d'un contrôle à la sélection actuelle ;  
+- ajout d'un contrôle à la sélection actuelle ;  
   
--   ajout d'un contrôle à une plage spécifique ;  
+- ajout d'un contrôle à une plage spécifique ;  
   
--   ajout d'un contrôle basé sur un contrôle de contenu natif dans le document.  
+- ajout d'un contrôle basé sur un contrôle de contenu natif dans le document.  
   
- Les contrôles de contenu créés de façon dynamique ne sont pas conservés dans le document quand ce dernier est fermé. Toutefois, un contrôle de contenu natif demeure dans le document. Vous pouvez recréer un contrôle de contenu basé sur un contrôle de contenu natif à la prochaine ouverture du document. Pour plus d’informations, consultez [conserver des contrôles dynamiques dans les documents Office](../vsto/persisting-dynamic-controls-in-office-documents.md).  
+  Les contrôles de contenu créés de façon dynamique ne sont pas conservés dans le document quand ce dernier est fermé. Toutefois, un contrôle de contenu natif demeure dans le document. Vous pouvez recréer un contrôle de contenu basé sur un contrôle de contenu natif à la prochaine ouverture du document. Pour plus d’informations, consultez [conserver des contrôles dynamiques dans les documents Office](../vsto/persisting-dynamic-controls-in-office-documents.md).  
   
- Pour plus d’informations sur la génération d’éléments hôtes dans les projets de complément VSTO, consultez [documents Word d’étendre et classeurs Excel dans des Compléments VSTO lors de l’exécution](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+  Pour plus d’informations sur la génération d’éléments hôtes dans les projets de complément VSTO, consultez [documents Word d’étendre et classeurs Excel dans des Compléments VSTO lors de l’exécution](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 > [!NOTE]  
 >  Pour ajouter un contrôle de contenu de case à cocher à un document, vous devez créer un objet <xref:Microsoft.Office.Tools.Word.ContentControl> . Pour plus d’informations, consultez [contrôles de contenu](../vsto/content-controls.md).  

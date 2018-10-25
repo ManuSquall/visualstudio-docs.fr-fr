@@ -1,5 +1,5 @@
 ---
-title: IDebugContainerField::EnumFields | Documents Microsoft
+title: IDebugContainerField::EnumFields | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0af939253de7b592e7c0ec35be9ea2b9bbff2b0f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 49874de9166310fc4b9a887fd1fc6d6355682c7a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106963"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942684"
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
 Crée un énumérateur pour les champs du conteneur.  
@@ -49,16 +49,16 @@ int EnumFields(
   
 #### <a name="parameters"></a>Paramètres  
  `dwKindFilter`  
- [in] Une combinaison de [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) constantes que vous sélectionnez les champs à énumérer. Types de champ peuvent décrire des types de stockage, telles que la classe ou informations primitives ou spécifiques, tels que local, le paramètre ou le pointeur « this ».  
+ [in] Une combinaison de [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) constantes que vous sélectionnez les champs à énumérer. Types de champ peuvent décrire des types de stockage, telles que la classe ou aux informations de primitives ou spécifiques, comme local, paramètre ou pointeur « this ».  
   
  `dwModifiersFilter`  
- [in] Une combinaison de [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) constantes que vous sélectionnez les champs à énumérer. Modificateurs de champ peuvent être des autorisations d’accès, tel que public ou privé ou les informations de stockage, telles que virtuelle, statique ou final.  
+ [in] Une combinaison de [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) constantes que vous sélectionnez les champs à énumérer. Modificateurs de champ peuvent être des autorisations d’accès, tels que public ou privé ou des informations de stockage, comme virtuelle, statique ou finale.  
   
  `pszNameFilter`  
  [in] Le nom du champ à énumérer. Cela peut être une valeur null si tous les champs doivent être retournées.  
   
  `nameMatch`  
- [in] Une valeur à partir de la [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) énumération qui détermine si la recherche respecte la casse ou non.  
+ [in] Une valeur comprise entre le [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) énumération qui détermine si la recherche respecte la casse ou non.  
   
  `ppEnum`  
  [out] Retourne un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objet représentant la liste des champs. Retourne une valeur null si aucun champ.  
@@ -67,7 +67,7 @@ int EnumFields(
  En cas de réussite, retourne S_OK ou S_FALSE si aucun champ. Sinon, retourne un code d'erreur.  
   
 ## <a name="remarks"></a>Notes  
- Le `dwKindFilter`, `dwModifiersFilter`, et `pszNameFilter` paramètres peuvent être combinés, par exemple, pour sélectionner toutes les méthodes publiques virtuels nommés « MyMethod ».  
+ Le `dwKindFilter`, `dwModifiersFilter`, et `pszNameFilter` paramètres peuvent être combinés, par exemple, pour sélectionner toutes les méthodes virtuelles publics nommés « MyMethod ».  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)   

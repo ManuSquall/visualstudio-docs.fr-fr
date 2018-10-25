@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 534398e57c1a8111f2b1f83a61322a581539c962
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 9d877eae119c922939ea61007a845e5bd7049076
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808263"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933155"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Procédure pas à pas : Créer une relation maître/détail à l’aide d’un dataset mis en cache
   Cette procédure pas à pas montre comment créer une relation maître/détail sur une feuille de calcul et la mise en cache les données afin que la solution puisse être utilisée hors connexion.  
@@ -57,34 +57,34 @@ ms.locfileid: "38808263"
   
 ### <a name="to-create-a-new-project"></a>Pour créer un projet  
   
-1.  Créer un projet de classeur Excel portant le nom **maître-détail mon**, à l’aide de Visual Basic ou c#. Assurez-vous que l’option **créer un nouveau document** est sélectionné. Pour plus d'informations, consultez [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1. Créer un projet de classeur Excel portant le nom **maître-détail mon**, à l’aide de Visual Basic ou c#. Assurez-vous que l’option **créer un nouveau document** est sélectionné. Pour plus d'informations, consultez [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
- Visual Studio ouvre le nouveau classeur Excel dans le concepteur et ajoute le **maître-détail mon** projet **l’Explorateur de solutions**.  
+   Visual Studio ouvre le nouveau classeur Excel dans le concepteur et ajoute le **maître-détail mon** projet **l’Explorateur de solutions**.  
   
 ## <a name="create-the-data-source"></a>Créer la source de données  
  Utilisez la fenêtre **Sources de données** pour ajouter un dataset typé à votre projet.  
   
 ### <a name="to-create-the-data-source"></a>Pour créer la source de données  
   
-1.  Si le **des Sources de données** fenêtre n’est pas visible, affichez-la en, sur la barre de menus, choisissez **vue** > **Windows autres**  >   **Sources de données**.  
+1. Si le **des Sources de données** fenêtre n’est pas visible, affichez-la en, sur la barre de menus, choisissez **vue** > **Windows autres**  >   **Sources de données**.  
   
-2.  Choisissez **Ajouter une nouvelle source de données** pour démarrer l' **Assistant Configuration de source de données**.  
+2. Choisissez **Ajouter une nouvelle source de données** pour démarrer l' **Assistant Configuration de source de données**.  
   
-3.  Sélectionnez **base de données** puis cliquez sur **suivant**.  
+3. Sélectionnez **base de données** puis cliquez sur **suivant**.  
   
-4.  Sélectionnez une connexion de données à la base de données Northwind exemple SQL Server, ou ajouter une nouvelle connexion à l’aide de la **nouvelle connexion** bouton.  
+4. Sélectionnez une connexion de données à la base de données Northwind exemple SQL Server, ou ajouter une nouvelle connexion à l’aide de la **nouvelle connexion** bouton.  
   
-5.  Après avoir sélectionné ou créé une connexion, cliquez sur **suivant**.  
+5. Après avoir sélectionné ou créé une connexion, cliquez sur **suivant**.  
   
-6.  Désactivez l’option pour enregistrer la connexion si elle est sélectionnée, puis cliquez sur **suivant**.  
+6. Désactivez l’option pour enregistrer la connexion si elle est sélectionnée, puis cliquez sur **suivant**.  
   
-7.  Développez le **Tables** nœud dans le **objets de base de données** fenêtre.  
+7. Développez le **Tables** nœud dans le **objets de base de données** fenêtre.  
   
-8.  Sélectionnez le **commandes** table et le **Order Details** table.  
+8. Sélectionnez le **commandes** table et le **Order Details** table.  
   
 9. Cliquez sur **Terminer**.  
   
- L’Assistant ajoute les deux tables à la **des Sources de données** fenêtre. Il ajoute également un dataset typé à votre projet qui est visible dans **l’Explorateur de solutions**.  
+   L’Assistant ajoute les deux tables à la **des Sources de données** fenêtre. Il ajoute également un dataset typé à votre projet qui est visible dans **l’Explorateur de solutions**.  
   
 ## <a name="add-controls-to-the-worksheet"></a>Ajouter des contrôles à la feuille de calcul  
  Dans cette étape, vous ajouterez une plage nommée, un objet de liste et deux boutons à la première feuille de calcul. Tout d’abord, ajoutez la plage nommée et l’objet de liste à partir de la **des Sources de données** fenêtre afin qu’ils sont automatiquement liés à la source de données. Ensuite, ajoutez les boutons de la **boîte à outils**.  
@@ -109,30 +109,30 @@ ms.locfileid: "38808263"
   
 ### <a name="to-add-two-buttons"></a>Pour ajouter deux boutons  
   
-1.  À partir de la **contrôles communs** onglet de la **boîte à outils**, ajouter un <xref:System.Windows.Forms.Button> contrôle de cellule **A3** de la feuille de calcul.  
+1. À partir de la **contrôles communs** onglet de la **boîte à outils**, ajouter un <xref:System.Windows.Forms.Button> contrôle de cellule **A3** de la feuille de calcul.  
   
-     Ce bouton était nommé `Button1`.  
+    Ce bouton était nommé `Button1`.  
   
-2.  Ajoutez un autre <xref:System.Windows.Forms.Button> contrôle de cellule **B3** de la feuille de calcul.  
+2. Ajoutez un autre <xref:System.Windows.Forms.Button> contrôle de cellule **B3** de la feuille de calcul.  
   
-     Ce bouton était nommé `Button2`.  
+    Ce bouton était nommé `Button2`.  
   
- Ensuite, sélectionnez le jeu de données doit être mis en cache dans le document.  
+   Ensuite, sélectionnez le jeu de données doit être mis en cache dans le document.  
   
 ## <a name="cache-the-dataset"></a>Mettre en cache le jeu de données  
  Marquer le jeu de données à mettre en cache dans le document en rendant le jeu de données publics et paramètre les **CacheInDocument** propriété.  
   
 ### <a name="to-cache-the-dataset"></a>Pour mettre en cache le jeu de données  
   
-1.  Sélectionnez **NorthwindDataSet** dans la barre d’état du composant.  
+1. Sélectionnez **NorthwindDataSet** dans la barre d’état du composant.  
   
-2.  Dans le **propriétés** fenêtre, modifier le **modificateurs** propriété **Public**.  
+2. Dans le **propriétés** fenêtre, modifier le **modificateurs** propriété **Public**.  
   
-     Jeux de données doit être publiques avant la mise en cache est activée.  
+    Jeux de données doit être publiques avant la mise en cache est activée.  
   
-3.  Modifier le **CacheInDocument** propriété **True**.  
+3. Modifier le **CacheInDocument** propriété **True**.  
   
- L’étape suivante consiste à ajouter du texte aux boutons et en c#, ajoutez le code pour raccorder les gestionnaires d’événements.  
+   L’étape suivante consiste à ajouter du texte aux boutons et en c#, ajoutez le code pour raccorder les gestionnaires d’événements.  
   
 ## <a name="initialize-the-controls"></a>Initialiser les contrôles  
  Définissez le texte du bouton et ajoutez des gestionnaires d’événements pendant la <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> événement.  

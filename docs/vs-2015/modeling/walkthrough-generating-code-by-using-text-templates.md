@@ -15,12 +15,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 37fe948838a5263eca2107e2e868e2dc49cdf2a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd360e07ca555bb7cb2c482970ab9a202f7bb630
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229370"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932549"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Procédure pas à pas : génération de code à l'aide de modèles de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,15 +100,15 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 ##### <a name="to-add-an-xml-file"></a>Pour ajouter un fichier XML  
   
-1.  Dans l’ **Explorateur de solutions**, cliquez avec le bouton droit sur le projet, cliquez sur **Ajouter** , puis sur **Nouvel élément**.  
+1. Dans l’ **Explorateur de solutions**, cliquez avec le bouton droit sur le projet, cliquez sur **Ajouter** , puis sur **Nouvel élément**.  
   
-2.  Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Fichier XML** dans le volet **Modèles** .  
+2. Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Fichier XML** dans le volet **Modèles** .  
   
-3.  Ajoutez votre exemple de contenu au fichier.  
+3. Ajoutez votre exemple de contenu au fichier.  
   
-4.  Pour cette procédure pas à pas, nommez le fichier `exampleXml.xml`. Définissez le code XML fourni dans la section précédente comme contenu du fichier.  
+4. Pour cette procédure pas à pas, nommez le fichier `exampleXml.xml`. Définissez le code XML fourni dans la section précédente comme contenu du fichier.  
   
- .  
+   .  
   
 ### <a name="add-a-test-code-file"></a>Ajouter un fichier de code de test  
  Ajoutez un fichier C# à votre projet et placez-y un exemple du code que vous souhaitez pouvoir écrire. Exemple :  
@@ -140,33 +140,33 @@ namespace MyProject
   
 ##### <a name="to-add-a-text-template-file-to-your-project"></a>Pour ajouter un fichier de modèle de texte à votre projet  
   
-1.  Dans l’ **Explorateur de solutions**, cliquez avec le bouton droit sur le projet, cliquez sur **Ajouter**, puis sur **Nouvel élément**.  
+1. Dans l’ **Explorateur de solutions**, cliquez avec le bouton droit sur le projet, cliquez sur **Ajouter**, puis sur **Nouvel élément**.  
   
-2.  Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Modèle de texte** dans le volet **Modèles** .  
+2. Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Modèle de texte** dans le volet **Modèles** .  
   
-    > [!NOTE]
-    >  Vérifiez que vous ajoutez bien un Modèle de texte, et non un Modèle de texte prétraité.  
+   > [!NOTE]
+   >  Vérifiez que vous ajoutez bien un Modèle de texte, et non un Modèle de texte prétraité.  
   
-3.  Dans le fichier, dans la directive de modèle, affectez la valeur `hostspecific` à l’attribut `true`.  
+3. Dans le fichier, dans la directive de modèle, affectez la valeur `hostspecific` à l’attribut `true`.  
   
-     Cette modification permettra au code de modèle d’accéder aux services [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
+    Cette modification permettra au code de modèle d’accéder aux services [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
-4.  Dans la directive de sortie, affectez « .cs » comme attribut d’extension, pour que le modèle génère un fichier C#. Dans un projet Visual Basic, vous choisiriez « .vb ».  
+4. Dans la directive de sortie, affectez « .cs » comme attribut d’extension, pour que le modèle génère un fichier C#. Dans un projet Visual Basic, vous choisiriez « .vb ».  
   
-5.  Enregistrez le fichier. À ce stade, le fichier de modèle de texte doit contenir ces lignes :  
+5. Enregistrez le fichier. À ce stade, le fichier de modèle de texte doit contenir ces lignes :  
   
-    ```  
-    <#@ template debug="false" hostspecific="true" language="C#" #>  
-    <#@ output extension=".cs" #>  
-    ```  
+   ```  
+   <#@ template debug="false" hostspecific="true" language="C#" #>  
+   <#@ output extension=".cs" #>  
+   ```  
   
- .  
+   .  
   
- Notez qu’un fichier .cs apparaît dans l’Explorateur de solutions comme fichier auxiliaire du fichier de modèle. Vous pouvez le voir en cliquant sur [+] en regard du nom du fichier de modèle. Ce fichier est généré à partir du fichier de modèle chaque fois que vous enregistrez ou déplacez le focus hors du fichier de modèle. Le fichier généré sera compilé dans le cadre de votre projet.  
+   Notez qu’un fichier .cs apparaît dans l’Explorateur de solutions comme fichier auxiliaire du fichier de modèle. Vous pouvez le voir en cliquant sur [+] en regard du nom du fichier de modèle. Ce fichier est généré à partir du fichier de modèle chaque fois que vous enregistrez ou déplacez le focus hors du fichier de modèle. Le fichier généré sera compilé dans le cadre de votre projet.  
   
- Pour plus de commodité pendant que vous développez le fichier de modèle, réorganisez les fenêtres du fichier de modèle et du fichier généré pour les visualiser les unes à côté des autres. Cela vous permet de voir immédiatement le résultat de votre modèle. Vous remarquerez également que quand votre modèle génère du code C# non valide, des erreurs sont affichées dans la fenêtre de message d’erreur.  
+   Pour plus de commodité pendant que vous développez le fichier de modèle, réorganisez les fenêtres du fichier de modèle et du fichier généré pour les visualiser les unes à côté des autres. Cela vous permet de voir immédiatement le résultat de votre modèle. Vous remarquerez également que quand votre modèle génère du code C# non valide, des erreurs sont affichées dans la fenêtre de message d’erreur.  
   
- Toute modification que vous effectuez directement dans le fichier généré sera perdue chaque fois que vous enregistrerez le fichier de modèle. Vous devez donc éviter de modifier le fichier généré, ou le modifier uniquement pour de courts tests. Il est parfois utile de tester un petit fragment de code dans le fichier généré, où IntelliSense fonctionne, puis de le copier dans le fichier de modèle.  
+   Toute modification que vous effectuez directement dans le fichier généré sera perdue chaque fois que vous enregistrerez le fichier de modèle. Vous devez donc éviter de modifier le fichier généré, ou le modifier uniquement pour de courts tests. Il est parfois utile de tester un petit fragment de code dans le fichier généré, où IntelliSense fonctionne, puis de le copier dans le fichier de modèle.  
   
 ## <a name="developing-the-text-template"></a>Développement du modèle de texte  
  En suivant les recommandations en matière de développement agile, nous allons développer le modèle par petites étapes, en supprimant certaines erreurs à chaque incrément, jusqu’à ce que le code de test se compile et s’exécute correctement.  
@@ -408,17 +408,17 @@ namespace MyProject
 ## <a name="conclusion"></a>Conclusion  
  Cette procédure pas à pas illustre plusieurs techniques et avantages de la génération de code :  
   
--   La*génération de code* est la création d’une partie du code source de votre application à partir d’un *modèle*. Le modèle contient des informations dans un format adapté au domaine d’application, et il peut changer pendant la durée de vie de l’application.  
+- La*génération de code* est la création d’une partie du code source de votre application à partir d’un *modèle*. Le modèle contient des informations dans un format adapté au domaine d’application, et il peut changer pendant la durée de vie de l’application.  
   
--   Le typage fort est l’un des avantages de la génération de code. Tandis que le modèle représente les informations dans un format plus adapté à l’utilisateur, le code généré permet à d’autres parties de l’application de traiter les informations à l’aide d’un ensemble de types.  
+- Le typage fort est l’un des avantages de la génération de code. Tandis que le modèle représente les informations dans un format plus adapté à l’utilisateur, le code généré permet à d’autres parties de l’application de traiter les informations à l’aide d’un ensemble de types.  
   
--   IntelliSense et le compilateur vous aident à créer du code conforme au schéma du modèle, à la fois quand vous écrivez du nouveau code et quand le schéma est mis à jour.  
+- IntelliSense et le compilateur vous aident à créer du code conforme au schéma du modèle, à la fois quand vous écrivez du nouveau code et quand le schéma est mis à jour.  
   
--   Ces avantages peuvent être obtenus grâce à l’ajout d’un fichier de modèle simple et unique à un projet.  
+- Ces avantages peuvent être obtenus grâce à l’ajout d’un fichier de modèle simple et unique à un projet.  
   
--   Un modèle de texte peut être développé et testé rapidement et de façon incrémentielle.  
+- Un modèle de texte peut être développé et testé rapidement et de façon incrémentielle.  
   
- Dans cette procédure pas à pas, le code du programme est généré à partir d’une instance du modèle, un exemple représentatif des fichiers XML que l’application traitera. Dans une approche plus formelle, le schéma XML serait l’entrée du modèle, sous la forme d’un fichier .xsd ou d’une définition de langage propre au domaine. Cette approche faciliterait pour le modèle la détermination de caractéristiques telles que la multiplicité d’une relation.  
+  Dans cette procédure pas à pas, le code du programme est généré à partir d’une instance du modèle, un exemple représentatif des fichiers XML que l’application traitera. Dans une approche plus formelle, le schéma XML serait l’entrée du modèle, sous la forme d’un fichier .xsd ou d’une définition de langage propre au domaine. Cette approche faciliterait pour le modèle la détermination de caractéristiques telles que la multiplicité d’une relation.  
   
 ## <a name="troubleshooting-the-text-template"></a>Résolution des problèmes liés au modèle de texte  
  Si vous avez vu des erreurs de compilation ou de transformation du modèle dans la **Liste d’erreurs** ou si le fichier de sortie n’a pas été généré correctement, vous pouvez résoudre les problèmes du modèle de texte avec les techniques décrites dans [Génération de fichiers avec l’utilitaire TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).  

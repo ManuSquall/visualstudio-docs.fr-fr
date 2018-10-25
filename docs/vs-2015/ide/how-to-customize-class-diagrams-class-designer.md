@@ -19,12 +19,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ffa0506b6a7c49cdf1ba1f3c86d865df3c59a7d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a4b163aef25972968933d3352486aab9ebbf962
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296177"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950974"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>Comment : personnaliser des diagrammes de classes (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -129,11 +129,11 @@ Vous pouvez modifier la façon dont les diagrammes de classes affichent les info
   
 ##  <a name="DisplayAssociationAndInheritance"></a> Afficher les relations masquées  
   
-1.  Ouvrez et sélectionnez un fichier de diagramme de classes dans le Concepteur de classes.  
+1. Ouvrez et sélectionnez un fichier de diagramme de classes dans le Concepteur de classes.  
   
-2.  Cliquez avec le bouton droit sur le type avec l'association ou l'héritage masqué.  
+2. Cliquez avec le bouton droit sur le type avec l'association ou l'héritage masqué.  
   
- Cliquez sur **Afficher tous les membres** pour les lignes d’association et sur **Afficher la classe de base** ou **Afficher les classes dérivées** pour les lignes d’héritage.  
+   Cliquez sur **Afficher tous les membres** pour les lignes d’association et sur **Afficher la classe de base** ou **Afficher les classes dérivées** pour les lignes d’héritage.  
   
 ##  <a name="RemoveCodeAndShape"></a> Supprimer une forme dans un diagramme de classes  
  Vous pouvez supprimer une forme de type dans le diagramme de classes sans affecter le code sous-jacent du type. La suppression de formes de type d'un diagramme de classes affecte uniquement ce diagramme : le code sous-jacent qui définit le type et les autres diagrammes qui affichent le type ne sont pas affectés.  

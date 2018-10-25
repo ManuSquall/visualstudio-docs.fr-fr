@@ -14,43 +14,43 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9464afe698167765c4c02451ff103332f44eb741
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: bd47e214492f0888d7780f8aef5944cdcdeb2591
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39150841"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949732"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Attachement et détachement d’un programme
 Attacher le débogueur nécessite l’envoi de la séquence des méthodes et des événements avec les attributs corrects.  
   
 ## <a name="sequence-of-methods-and-events"></a>Séquence de méthodes et événements  
   
-1.  Le Gestionnaire de session de débogage (SDM) appelle le [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) (méthode).  
+1. Le Gestionnaire de session de débogage (SDM) appelle le [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) (méthode).  
   
-     Selon le modèle de processus de moteur (dé) de débogage, le `IDebugProgramNodeAttach2::OnAttach` méthode retourne une des méthodes suivantes, qui détermine ce qui se passe ensuite.  
+    Selon le modèle de processus de moteur (dé) de débogage, le `IDebugProgramNodeAttach2::OnAttach` méthode retourne une des méthodes suivantes, qui détermine ce qui se passe ensuite.  
   
-     Si `S_FALSE` est retourné, le moteur de débogage a correctement été attaché au programme. Sinon, le [attacher](../../extensibility/debugger/reference/idebugengine2-attach.md) méthode est appelée pour terminer le processus d’attachement.  
+    Si `S_FALSE` est retourné, le moteur de débogage a correctement été attaché au programme. Sinon, le [attacher](../../extensibility/debugger/reference/idebugengine2-attach.md) méthode est appelée pour terminer le processus d’attachement.  
   
-     Si `S_OK` est retourné, l’Allemagne est chargé dans le même processus que le SDM. Le SDM effectue les tâches suivantes :  
+    Si `S_OK` est retourné, l’Allemagne est chargé dans le même processus que le SDM. Le SDM effectue les tâches suivantes :  
   
-    1.  Appels [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) pour obtenir les informations du moteur de l’Allemagne.  
+   1.  Appels [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) pour obtenir les informations du moteur de l’Allemagne.  
   
-    2.  Crée l’Allemagne.  
+   2.  Crée l’Allemagne.  
   
-    3.  Appels [attacher](../../extensibility/debugger/reference/idebugengine2-attach.md).  
+   3.  Appels [attacher](../../extensibility/debugger/reference/idebugengine2-attach.md).  
   
-2.  L’envoie DE un [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) pour le SDM avec un `EVENT_SYNC` attribut.  
+2. L’envoie DE un [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) pour le SDM avec un `EVENT_SYNC` attribut.  
   
-3.  L’envoie DE un [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) pour le SDM avec un `EVENT_SYNC` attribut. 
+3. L’envoie DE un [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) pour le SDM avec un `EVENT_SYNC` attribut. 
   
-4.  L’envoie DE un [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) pour le SDM avec un `EVENT_SYNC_STOP` attribut.  
+4. L’envoie DE un [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) pour le SDM avec un `EVENT_SYNC_STOP` attribut.  
   
- Le détachement d’un programme est un simple, un processus en deux étapes, comme suit :  
+   Le détachement d’un programme est un simple, un processus en deux étapes, comme suit :  
   
-1.  Les appels SDM [détachement](../../extensibility/debugger/reference/idebugprogram2-detach.md).  
+5. Les appels SDM [détachement](../../extensibility/debugger/reference/idebugprogram2-detach.md).  
   
-2.  L’envoie DE un [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md).  
+6. L’envoie DE un [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Appel des événements de débogueur](../../extensibility/debugger/calling-debugger-events.md)

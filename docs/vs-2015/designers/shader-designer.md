@@ -17,12 +17,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1c1342d97d07ab44a30768e7515521c7d08b90e6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac752d0b85a45193fe4aafb55e33ec23e26aed6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182792"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942008"
 ---
 # <a name="shader-designer"></a>Concepteur Shader
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,11 +125,11 @@ Ce document décrit l’utilisation du concepteur de nuanceur [!INCLUDE[vsprvs](
   
 ###### <a name="to-bind-a-different-texture-to-a-texture-register-or-to-modify-other-material-parameters"></a>Pour lier une autre texture à un registre de texture ou pour modifier d’autres paramètres de matériau  
   
-1.  En mode **Sélection**, sélectionnez une zone vide de l’aire de conception. La fenêtre **Propriétés** affiche alors les propriétés globales du nuanceur.  
+1. En mode **Sélection**, sélectionnez une zone vide de l’aire de conception. La fenêtre **Propriétés** affiche alors les propriétés globales du nuanceur.  
   
-2.  Dans la fenêtre **Propriétés**, spécifiez de nouvelles valeurs pour les propriétés de texture et de paramètre que vous souhaitez modifier.  
+2. Dans la fenêtre **Propriétés**, spécifiez de nouvelles valeurs pour les propriétés de texture et de paramètre que vous souhaitez modifier.  
   
- Voici les paramètres de nuanceur que vous pouvez modifier :  
+   Voici les paramètres de nuanceur que vous pouvez modifier :  
   
 |Paramètre|Properties|  
 |---------------|----------------|  

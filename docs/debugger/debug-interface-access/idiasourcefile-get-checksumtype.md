@@ -1,5 +1,5 @@
 ---
-title: IDiaSourceFile::get_checksumType | Documents Microsoft
+title: IDiaSourceFile::get_checksumType | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83d1aa687ec7f19df61031d4ff334751ccabaebd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 39fa53d00d17446e63170d5b729d2e669ecb987b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461929"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948419"
 ---
 # <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
 Récupère le type de somme de contrôle.  
@@ -50,7 +50,7 @@ HRESULT get_checksumType (
   
  Le `CryptoAPI` sont des étiquettes à partir de la `ALG_ID` énumération. Pour plus d’informations sur les algorithmes de hachage, consultez la `CryptoAPI` section de Microsoft [!INCLUDE[winsdkshort](../../debugger/debug-interface-access/includes/winsdkshort_md.md)].  
   
- Pour obtenir les octets de somme de contrôle réelle du fichier source, appelez le [IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md) (méthode).  
+ Pour obtenir les octets de la somme de contrôle réelle du fichier source, appelez le [IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md) (méthode).  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)   

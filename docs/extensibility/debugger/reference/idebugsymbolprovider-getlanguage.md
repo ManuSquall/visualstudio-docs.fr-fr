@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetLanguage | Documents Microsoft
+title: IDebugSymbolProvider::GetLanguage | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1dfee6c4b05325b170efea314ccbc814b0ebc56
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4987074e63f26a91d890066b3b74240989745197
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120713"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947951"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
-Cette méthode obtient la langue qui a été utilisée pour compiler le code à l’adresse de débogage.  
+Cette méthode obtient le langage ayant servi à compiler le code à l’adresse de débogage.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,10 +45,10 @@ int GetLanguage(
   
 #### <a name="parameters"></a>Paramètres  
  `pAddress`  
- [in] Un type d’objet est représenté par un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
+ [in] Un type d’objet représenté par un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
   
  `pguidLanguage`  
- [out] Retourne un `GUID` qui spécifie la langue.  
+ [out] Retourne un `GUID` qui spécifie le langage.  
   
  `pguidLanguageVendor`  
  [out] Retourne un `GUID` qui spécifie le fournisseur de langage.  
