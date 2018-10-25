@@ -1,5 +1,5 @@
 ---
-title: DisassemblyData | Documents Microsoft
+title: DisassemblyData | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4276009244f1d49b89311d5d158a34bebf3fcf23
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: a7ab7b278c03d092e1e559f1eb74f5d6bdc86d85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31619700"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816850"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 Décrit une instruction de code machine pour l’environnement de développement intégré (IDE) à afficher.  
@@ -65,10 +65,10 @@ public struct DisassemblyData {
   
 ## <a name="members"></a>Membres  
  `dwFields`  
- Le [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) constante qui spécifie les champs sont remplis.  
+ Le [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) constante qui spécifie quels champs sont renseignés.  
   
  `bstrAddress`  
- L’adresse en tant que décalage à partir d’un point de départ (généralement le début de la fonction associée).  
+ L’adresse en tant qu’offset à partir d’un point de départ (généralement le début de la fonction associée).  
   
  `bstrCodeBytes`  
  Les octets de code pour cette instruction.  
@@ -83,38 +83,38 @@ public struct DisassemblyData {
  Le nom du symbole, le cas échéant, liées à l’adresse (symboles publics, étiquette et ainsi de suite).  
   
  `uCodeLocationId`  
- L’identificateur d’emplacement de code pour cette ligne désassemblée. Si l’adresse de contexte de code d’une ligne est supérieure à l’adresse du contexte d’un autre code, puis l’identificateur d’emplacement de code désassemblé du premier sera également supérieur à l’identificateur d’emplacement de code de la deuxième.  
+ L’identificateur d’emplacement de code pour cette ligne désassemblée. Si l’adresse de contexte de code d’une ligne est supérieure à l’adresse de contexte de code d’un autre, puis l’identificateur d’emplacement du premier code désassemblé également sera supérieur à l’identificateur d’emplacement de code de la deuxième.  
   
  `posBeg`  
- Le [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) qui correspond à la position d’un document où le code machine de données commence.  
+ Le [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) qui correspond à la position dans un document où le code machine de données commence.  
   
  `posEnd`  
- Le [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) qui correspond à la position d’un document où les données de désassemblage se terminent.  
+ Le [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) qui correspond à la position dans un document où les données de désassemblage se terminent.  
   
  `bstrDocumentUrl`  
- Pour les documents de texte qui peuvent être représentés en tant que noms de fichiers, le `bstrDocumentUrl` champ affiche le nom du fichier où se trouve la source, en utilisant le format `file://file name`.  
+ Pour les documents de texte qui peuvent être représentés en tant que noms de fichiers, le `bstrDocumentUrl` champ affiche le nom du fichier où la source peut être trouvée, en utilisant le format `file://file name`.  
   
- Pour les documents de texte qui ne peut pas être représentés en tant que noms de fichiers, `bstrDocumentUrl` est un identificateur unique pour le document, et le moteur de débogage doit implémenter la [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md) (méthode).  
+ Pour les documents de texte qui ne peut pas être représentées en tant que noms de fichiers, `bstrDocumentUrl` est un identificateur unique pour le document, et le moteur de débogage doit implémenter le [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md) (méthode).  
   
- Ce champ peut également contenir des informations supplémentaires sur les sommes de contrôle. Pour plus d’informations, consultez la section Notes.  
+ Ce champ peut contenir également des informations supplémentaires sur les sommes de contrôle. Pour plus d’informations, consultez la section Notes.  
   
  `dwByteOffset`  
- Le nombre d’octets de que l’instruction est au début de la ligne de code.  
+ Le nombre d’octets de que l’instruction est depuis le début de la ligne de code.  
   
  `dwFlags`  
- Le [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) constante qui spécifie les indicateurs sont actifs.  
+ Le [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) constante qui spécifie quels indicateurs sont actifs.  
   
 ## <a name="remarks"></a>Notes  
- Chaque `DisassemblyData` structure décrit une instruction de code machine. Un tableau de ces structures est retourné à partir de la [en lecture](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) (méthode).  
+ Chaque `DisassemblyData` structure décrit une seule instruction du désassemblage. Un tableau de ces structures est retourné à partir de la [en lecture](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) (méthode).  
   
  Le [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure est utilisée pour des documents texte uniquement. La plage de code source pour cette instruction est remplie uniquement pour la première instruction générée à partir d’une instruction ou d’une ligne, par exemple, lorsque `dwByteOffset == 0`.  
   
- Pour les documents non textuelles, un contexte de document peut être obtenu à partir du code et le `bstrDocumentUrl` champ doit être une valeur null. Si le `bstrDocumentUrl` champ est le même que le `bstrDocumentUrl` champ précédent `DisassemblyData` élément du tableau, puis définissez le `bstrDocumentUrl` à une valeur null.  
+ Pour les documents qui sont non textuelles, un contexte de document peut être obtenu à partir du code et le `bstrDocumentUrl` champ doit être une valeur null. Si le `bstrDocumentUrl` champ est le même que le `bstrDocumentUrl` champ dans le précédent `DisassemblyData` élément du tableau, puis définissez le `bstrDocumentUrl` à une valeur null.  
   
- Si le `dwFlags` champ a le `DF_DOCUMENT_CHECKSUM` l’indicateur, puis les informations de somme de contrôle supplémentaires suivant la chaîne pointée par le `bstrDocumentUrl` champ. Plus précisément, après la marque de fin de chaîne null, il suit un GUID qui identifie l’algorithme de somme de contrôle qui est à son tour suivi par une valeur de 4 octets qui indique le nombre d’octets dans la somme de contrôle, qui à son tour est suivi par les octets de la somme de contrôle. Consultez l’exemple dans cette rubrique comment encoder et décoder de ce champ dans [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)].  
+ Si le `dwFlags` champ a le `DF_DOCUMENT_CHECKSUM` l’indicateur est défini, puis les informations de somme de contrôle supplémentaires suivent la chaîne pointée par le `bstrDocumentUrl` champ. Plus précisément, après la marque de fin de chaîne null, il suit un GUID qui identifie l’algorithme de somme de contrôle qui est à son tour suivi par une valeur de 4 octets indiquant le nombre d’octets dans la somme de contrôle, qui à son tour est suivi par les octets de la somme de contrôle. Consultez l’exemple dans cette rubrique comment encoder et décoder de ce champ dans [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)].  
   
 ## <a name="example"></a>Exemple  
- Le `bstrDocumentUrl` champ peut contenir des informations supplémentaires autres que chaîne si le `DF_DOCUMENT_CHECKSUM` est défini. Le processus de création et la lecture de cette chaîne encodée est très simple dans [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)]. Toutefois, dans [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)], il s’agit d’un autre. Pour ceux qui vous intéresse, l’exemple suivant illustre la manière de créer la chaîne encodée à partir de [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)] et une façon de décoder la chaîne encodée dans [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)].  
+ Le `bstrDocumentUrl` champ peut contenir des informations supplémentaires autres que chaîne si le `DF_DOCUMENT_CHECKSUM` indicateur est défini. Le processus de création et la lecture de cette chaîne encodée est simple dans [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)]. Toutefois, dans [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)], il s’agit d’un autre. Pour les curieux, l’exemple suivant montre une méthode de création de la chaîne encodée à partir de [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)] et une façon de décoder la chaîne encodée dans [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)].  
   
 ```csharp  
 using System;  

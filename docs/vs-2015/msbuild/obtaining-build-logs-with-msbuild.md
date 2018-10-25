@@ -17,12 +17,12 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09f2a3b03c09ffd3f215c0fc404f027601c8b549
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6eb4a1822d0be86d19f25bfaa46e296abc7a73a0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176005"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811748"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Obtention de journaux de génération avec MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ En utilisant des commutateurs avec MSBuild, vous pouvez indiquer le nombre de do
 ## <a name="setting-the-level-of-detail"></a>Définition du niveau de détail  
  Lorsque vous générez un projet à l’aide de MSBuild sans spécifier un niveau de détail, les informations suivantes apparaissent dans le journal de sortie :  
   
--   Erreurs, avertissements et messages qui sont classés comme très importants  
+- Erreurs, avertissements et messages qui sont classés comme très importants  
   
--   Certains événements d’état  
+- Certains événements d’état  
   
--   Résumé de la génération  
+- Résumé de la génération  
   
- En utilisant le commutateur **/verbosity** (**/v**), vous pouvez contrôler la quantité de données affichées dans le journal de sortie. Pour la résolution des problèmes, utilisez un niveau de détail `detailed` (`d`) ou `diagnostic` (`diag`), qui fournit le plus d’informations.  
+  En utilisant le commutateur **/verbosity** (**/v**), vous pouvez contrôler la quantité de données affichées dans le journal de sortie. Pour la résolution des problèmes, utilisez un niveau de détail `detailed` (`d`) ou `diagnostic` (`diag`), qui fournit le plus d’informations.  
   
- Le processus de génération peut être plus lent si vous définissez le commutateur **/verbosity** sur `detailed`, et même encore plus lent si vous définissez le commutateur **/verbosity** sur `diagnostic`.  
+  Le processus de génération peut être plus lent si vous définissez le commutateur **/verbosity** sur `detailed`, et même encore plus lent si vous définissez le commutateur **/verbosity** sur `diagnostic`.  
   
 ```  
 msbuild MyProject.proj /t:go /v:diag  

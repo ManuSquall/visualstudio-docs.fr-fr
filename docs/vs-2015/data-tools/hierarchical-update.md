@@ -27,12 +27,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 550eedd1157d05f180e2229cec7594ae48c2fe45
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 342d51b5057ac0c17e92db1d4c454962b50df19a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239380"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843390"
 ---
 # <a name="hierarchical-update"></a>Mise à jour hiérarchique
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,14 +89,14 @@ Mise à jour hiérarchique * désigne le processus d’enregistrement des donné
   
 #### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Pour mettre à jour le code afin de valider les modifications des tables associées avant l’enregistrement  
   
-1.  Double-cliquez sur le **enregistrer** bouton sur le <xref:System.Windows.Forms.BindingNavigator> pour ouvrir **Form1** dans l’éditeur de Code.  
+1. Double-cliquez sur le **enregistrer** bouton sur le <xref:System.Windows.Forms.BindingNavigator> pour ouvrir **Form1** dans l’éditeur de Code.  
   
-2.  Ajoutez une ligne de code pour appeler la méthode `OrdersBindingSource.EndEdit` après la ligne appelant la méthode `CustomersBindingSource.EndEdit`. Le code dans le **enregistrer** cliquez sur le bouton événements doivent ressembler à ce qui suit :  
+2. Ajoutez une ligne de code pour appeler la méthode `OrdersBindingSource.EndEdit` après la ligne appelant la méthode `CustomersBindingSource.EndEdit`. Le code dans le **enregistrer** cliquez sur le bouton événements doivent ressembler à ce qui suit :  
   
-     [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#1)]
-     [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#1)]  
+    [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#1)]
+    [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#1)]  
   
- Outre la validation des modifications d’une table enfant associée avant l’enregistrement des données dans une base de données, vous devez aussi peut-être valider les enregistrements parents récemment créés avant d’ajouter de nouveaux enregistrement enfants à un dataset. En d'autres termes, vous devez peut-être ajouter le nouvel enregistrement parent (Customer) au dataset avant que les contraintes de clé étrangère ne permettent d'ajouter de nouveaux enregistrements enfants (Orders) au dataset. Pour ce faire, vous pouvez utiliser l'événement `BindingSource.AddingNew` enfant.  
+   Outre la validation des modifications d’une table enfant associée avant l’enregistrement des données dans une base de données, vous devez aussi peut-être valider les enregistrements parents récemment créés avant d’ajouter de nouveaux enregistrement enfants à un dataset. En d'autres termes, vous devez peut-être ajouter le nouvel enregistrement parent (Customer) au dataset avant que les contraintes de clé étrangère ne permettent d'ajouter de nouveaux enregistrements enfants (Orders) au dataset. Pour ce faire, vous pouvez utiliser l'événement `BindingSource.AddingNew` enfant.  
   
 > [!NOTE]
 >  Si vous devez valider les nouveaux enregistrements parents varie selon le type de contrôle qui est utilisé pour lier à votre source de données. Dans cette procédure pas à pas, vous utilisez des contrôles individuels à lier à la table parente. Cela nécessite du code supplémentaire pour valider le nouvel enregistrement parent. Si les enregistrements parents ont été affichés à la place dans un contrôle de liaison complexe tel que le <xref:System.Windows.Forms.DataGridView>ce supplémentaires <xref:System.Windows.Forms.BindingSource.EndEdit%2A> appeler pour l’enregistrement parent ne serait pas nécessaire. En effet, la fonctionnalité sous-jacente de liaison aux données du contrôle gère la validation des nouveaux enregistrements.  

@@ -16,27 +16,27 @@ ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1abb0905e276c2e9a2c5fc99b7d77edffedbb2d7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3067f9d54a91c02df63d3c22afda19da3b5707ea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242585"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818003"
 ---
 # <a name="creating-custom-editors-and-designers"></a>Création d’éditeurs et de concepteurs personnalisés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L’environnement de développement intégré (IDE) Visual Studio peut héberger différents types de l’éditeur :  
   
--   L’éditeur principal de Visual Studio  
+- L’éditeur principal de Visual Studio  
   
--   Éditeurs personnalisés  
+- Éditeurs personnalisés  
   
--   Éditeurs externes  
+- Éditeurs externes  
   
--   Concepteurs  
+- Concepteurs  
   
- Les informations suivantes vous permettent de choisir le type d’éditeur que vous avez besoin.  
+  Les informations suivantes vous permettent de choisir le type d’éditeur que vous avez besoin.  
   
 ## <a name="types-of-editor"></a>Types de l’éditeur  
  Pour plus d’informations sur l’éditeur principal de Visual Studio, consultez [extension de l’éditeur et les Services de langage](../extensibility/extending-the-editor-and-language-services.md).  

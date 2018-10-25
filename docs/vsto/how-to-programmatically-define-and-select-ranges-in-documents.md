@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 947232d593543276de281d89e3d05d6648f29ec1
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 8770871bfdc361e29d7ac7c2fc984477b1ec0ea1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257294"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833133"
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Comment : définir et sélectionner des plages dans les documents par programmation
   Vous pouvez définir une plage dans un document Microsoft Office Word en utilisant un objet <xref:Microsoft.Office.Interop.Word.Range>. Vous pouvez sélectionner la totalité du document dans une de plusieurs façons, par exemple, à l’aide de la <xref:Microsoft.Office.Interop.Word.Range.Select%2A> méthode de la <xref:Microsoft.Office.Interop.Word.Range> de l’objet, ou en utilisant la propriété de contenu de la <xref:Microsoft.Office.Tools.Word.Document> classe (dans une personnalisation au niveau du document) ou la <xref:Microsoft.Office.Interop.Word.Document> classe (dans un Complément VSTO).  
@@ -60,21 +60,21 @@ ms.locfileid: "35257294"
   
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-content-property"></a>Pour sélectionner la totalité du document comme plage à l'aide de la propriété Content  
   
-1.  Utilisez la propriété <xref:Microsoft.Office.Tools.Word.Document.Content%2A> pour définir une plage qui englobe la totalité du document.  
+1. Utilisez la propriété <xref:Microsoft.Office.Tools.Word.Document.Content%2A> pour définir une plage qui englobe la totalité du document.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#20)]
-     [!code-csharp[Trin_VstcoreWordAutomation#20](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#20)]  
+    [!code-vb[Trin_VstcoreWordAutomation#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#20)]
+    [!code-csharp[Trin_VstcoreWordAutomation#20](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#20)]  
   
- Vous pouvez également utiliser les méthodes et les propriétés d'autres objets pour définir une plage.  
+   Vous pouvez également utiliser les méthodes et les propriétés d'autres objets pour définir une plage.  
   
 ### <a name="to-select-a-sentence-in-the-active-document"></a>Pour sélectionner une phrase dans le document actif  
   
-1.  Définissez la plage à l'aide de la collection <xref:Microsoft.Office.Interop.Word.Sentences>. Utilisez l'index de la phrase que vous souhaitez sélectionner.  
+1. Définissez la plage à l'aide de la collection <xref:Microsoft.Office.Interop.Word.Sentences>. Utilisez l'index de la phrase que vous souhaitez sélectionner.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#21)]
-     [!code-csharp[Trin_VstcoreWordAutomation#21](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#21)]  
+    [!code-vb[Trin_VstcoreWordAutomation#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#21)]
+    [!code-csharp[Trin_VstcoreWordAutomation#21](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#21)]  
   
- Une autre façon de sélectionner une phrase consiste à définir manuellement les valeurs de début et de fin de la plage.  
+   Une autre façon de sélectionner une phrase consiste à définir manuellement les valeurs de début et de fin de la plage.  
   
 ### <a name="to-select-a-sentence-by-manually-setting-the-start-and-end-values"></a>Pour sélectionner une phrase en définissant manuellement les valeurs de début et de fin  
   
@@ -100,21 +100,21 @@ ms.locfileid: "35257294"
   
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-content-property"></a>Pour sélectionner la totalité du document comme plage à l'aide de la propriété Content  
   
-1.  Utilisez la propriété <xref:Microsoft.Office.Interop.Word._Document.Content%2A> pour définir une plage qui englobe la totalité du document.  
+1. Utilisez la propriété <xref:Microsoft.Office.Interop.Word._Document.Content%2A> pour définir une plage qui englobe la totalité du document.  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#20)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#20](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#20)]  
+    [!code-vb[Trin_VstcoreWordAutomationAddIn#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#20)]
+    [!code-csharp[Trin_VstcoreWordAutomationAddIn#20](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#20)]  
   
- Vous pouvez également utiliser les méthodes et les propriétés d'autres objets pour définir une plage.  
+   Vous pouvez également utiliser les méthodes et les propriétés d'autres objets pour définir une plage.  
   
 ### <a name="to-select-a-sentence-in-the-active-document"></a>Pour sélectionner une phrase dans le document actif  
   
-1.  Définissez la plage à l'aide de la collection <xref:Microsoft.Office.Interop.Word.Sentences>. Utilisez l'index de la phrase que vous souhaitez sélectionner.  
+1. Définissez la plage à l'aide de la collection <xref:Microsoft.Office.Interop.Word.Sentences>. Utilisez l'index de la phrase que vous souhaitez sélectionner.  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#21)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#21](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#21)]  
+    [!code-vb[Trin_VstcoreWordAutomationAddIn#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#21)]
+    [!code-csharp[Trin_VstcoreWordAutomationAddIn#21](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#21)]  
   
- Une autre façon de sélectionner une phrase consiste à définir manuellement les valeurs de début et de fin de la plage.  
+   Une autre façon de sélectionner une phrase consiste à définir manuellement les valeurs de début et de fin de la plage.  
   
 ### <a name="to-select-a-sentence-by-manually-setting-the-start-and-end-values"></a>Pour sélectionner une phrase en définissant manuellement les valeurs de début et de fin  
   

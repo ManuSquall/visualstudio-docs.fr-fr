@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf5d738751a4873858aaa1ad80179663d9a7b767
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 3c65f827af864a32bb13a90a0ba9818467298527
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495945"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835150"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Procédure pas à pas : Créer un kit de développement à l’aide de c# ou Visual Basic
 Dans cette procédure pas à pas, vous allez apprendre à créer un kit de développement de bibliothèque mathématique simple à l’aide de Visual c#, puis d’empaqueter le Kit de développement logiciel en tant qu’une Extension Visual Studio (VSIX). Vous allez effectuer les procédures suivantes :  
@@ -31,29 +31,29 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
   
 ##  <a name="createClassLibrary"></a> Pour créer le composant SimpleMath Windows Runtime  
   
-1.  Dans la barre de menus, choisissez **fichier** > **New** > **nouveau projet**.  
+1. Dans la barre de menus, choisissez **fichier** > **New** > **nouveau projet**.  
   
-2.  Dans la liste des modèles, développez **Visual C#** ou **Visual Basic**, choisissez le **Windows Store** nœud, puis choisissez le **composant d’exécution Windows** modèle.  
+2. Dans la liste des modèles, développez **Visual C#** ou **Visual Basic**, choisissez le **Windows Store** nœud, puis choisissez le **composant d’exécution Windows** modèle.  
   
-3.  Dans le **nom** , spécifiez **SimpleMath**, puis choisissez le **OK** bouton.  
+3. Dans le **nom** , spécifiez **SimpleMath**, puis choisissez le **OK** bouton.  
   
-4.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **SimpleMath** nœud de projet, puis choisissez **propriétés**.  
+4. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **SimpleMath** nœud de projet, puis choisissez **propriétés**.  
   
-5.  Renommer **Class1.cs** à **Arithmetic.cs** et mettre à jour pour correspondre à ce qui suit :  
+5. Renommer **Class1.cs** à **Arithmetic.cs** et mettre à jour pour correspondre à ce qui suit :  
   
-     [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
-     [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]  
+    [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
+    [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]  
   
-6.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **Solution 'SimpleMath'** nœud, puis choisissez **Configuration Manager**.  
+6. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **Solution 'SimpleMath'** nœud, puis choisissez **Configuration Manager**.  
   
-     Le **Configuration Manager** boîte de dialogue s’ouvre.  
+    Le **Configuration Manager** boîte de dialogue s’ouvre.  
   
-7.  Dans le **configuration de solution Active** , choisissez **version**.  
+7. Dans le **configuration de solution Active** , choisissez **version**.  
   
-8.  Dans le **Configuration** colonne, vérifiez que **SimpleMath** ligne est définie sur **version**, puis choisissez le **fermer** bouton pour accepter le modifier.  
+8. Dans le **Configuration** colonne, vérifiez que **SimpleMath** ligne est définie sur **version**, puis choisissez le **fermer** bouton pour accepter le modifier.  
   
-    > [!IMPORTANT]
-    >  Le Kit de développement pour le composant SimpleMath ne comprend qu’une seule configuration. Cette configuration doit être la version Release, ou les applications qui utilisent le composant ne sont pas passer la certification le[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].  
+   > [!IMPORTANT]
+   >  Le Kit de développement pour le composant SimpleMath ne comprend qu’une seule configuration. Cette configuration doit être la version Release, ou les applications qui utilisent le composant ne sont pas passer la certification le[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].  
   
 9. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **SimpleMath** nœud de projet, puis choisissez **Build**.  
   
@@ -154,23 +154,23 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
   
 ##  <a name="createSample"></a> Pour créer un exemple d’application qui utilise la bibliothèque de classes  
   
-1.  Dans la barre de menus, choisissez **fichier** > **New** > **nouveau projet**.  
+1. Dans la barre de menus, choisissez **fichier** > **New** > **nouveau projet**.  
   
-2.  Dans la liste des modèles, développez **Visual C#** ou **Visual Basic**, puis choisissez le **Windows Store** nœud.  
+2. Dans la liste des modèles, développez **Visual C#** ou **Visual Basic**, puis choisissez le **Windows Store** nœud.  
   
-3.  Choisissez le **application vide** modèle, nommez le projet **ArithmeticUI**, puis choisissez le **OK** bouton.  
+3. Choisissez le **application vide** modèle, nommez le projet **ArithmeticUI**, puis choisissez le **OK** bouton.  
   
-4.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **ArithmeticUI** de projet, puis choisissez **ajouter** > **référence**.  
+4. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **ArithmeticUI** de projet, puis choisissez **ajouter** > **référence**.  
   
-5.  Dans la liste des types référence, développez **Windows**, puis choisissez **Extensions**.  
+5. Dans la liste des types référence, développez **Windows**, puis choisissez **Extensions**.  
   
-6.  Dans le volet de détails, choisissez le **Simple mathématiques SDK** extension.  
+6. Dans le volet de détails, choisissez le **Simple mathématiques SDK** extension.  
   
-     Des informations supplémentaires sur votre Kit de développement logiciel s’affiche. Vous pouvez choisir le **plus d’informations** lien pour ouvrir https://msdn.microsoft.com/, que vous avez spécifié dans le fichier SDKManifest.xml plus haut dans cette procédure pas à pas.  
+    Des informations supplémentaires sur votre Kit de développement logiciel s’affiche. Vous pouvez choisir le **plus d’informations** lien pour ouvrir https://msdn.microsoft.com/, que vous avez spécifié dans le fichier SDKManifest.xml plus haut dans cette procédure pas à pas.  
   
-7.  Dans le **Gestionnaire de références** boîte de dialogue, sélectionnez le **Simple mathématiques SDK** case à cocher, puis choisissez le **OK** bouton.  
+7. Dans le **Gestionnaire de références** boîte de dialogue, sélectionnez le **Simple mathématiques SDK** case à cocher, puis choisissez le **OK** bouton.  
   
-8.  Dans la barre de menus, choisissez **vue** > **Explorateur d’objets**.  
+8. Dans la barre de menus, choisissez **vue** > **Explorateur d’objets**.  
   
 9. Dans le **Parcourir** , choisissez **mathématiques simples**.  
   
@@ -239,7 +239,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
   
      Le résultat correct apparaît.  
   
- Vous avez correctement créé et utilisé un SDK d’Extension.  
+    Vous avez correctement créé et utilisé un SDK d’Extension.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédure pas à pas : Créer un kit de développement à l’aide de C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   

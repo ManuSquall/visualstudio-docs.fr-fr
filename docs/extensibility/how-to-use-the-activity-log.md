@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b5647a62064857bca6a6352a14fe56eff4386f9
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: fa564919abcfb4c8bd94fbaf139b69f2375deebd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497994"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825814"
 ---
 # <a name="how-to-use-the-activity-log"></a>Comment : utiliser le journal d’activité
 Les VSPackages peuvent écrire des messages dans le journal d’activité. Cette fonctionnalité est particulièrement utile pour déboguer les VSPackages dans les environnements de vente au détail.  
@@ -47,15 +47,15 @@ Les VSPackages peuvent écrire des messages dans le journal d’activité. Cette
   
 ## <a name="to-examine-the-activity-log"></a>Pour examiner le journal d’activité  
   
-1.  Exécuter Visual Studio avec le [/Log](../ide/reference/log-devenv-exe.md) commutateur de ligne de commande pour écrire ActivityLog.xml sur le disque pendant votre session.
+1. Exécuter Visual Studio avec le [/Log](../ide/reference/log-devenv-exe.md) commutateur de ligne de commande pour écrire ActivityLog.xml sur le disque pendant votre session.
 
-2.  Après la fermeture de Visual Studio, recherchez le journal d’activité dans le sous-dossier data de Visual Studio : **%AppData%* \Microsoft\VisualStudio\15.0\ActivityLog.xml*.  
+2. Après la fermeture de Visual Studio, recherchez le journal d’activité dans le sous-dossier data de Visual Studio :  <em>*%AppData%</em>\Microsoft\VisualStudio\15.0\ActivityLog.xml*.  
   
-3.  Ouvrez le journal d’activité avec n’importe quel éditeur de texte. Voici une entrée de type :  
+3. Ouvrez le journal d’activité avec n’importe quel éditeur de texte. Voici une entrée de type :  
   
-    ```  
-    Called for: Company.MyApp.MyAppPackage ...  
-    ```  
+   ```  
+   Called for: Company.MyApp.MyAppPackage ...  
+   ```  
   
 ## <a name="robust-programming"></a>Programmation fiable  
  Étant donné que le journal d’activité est un service, le journal d’activité n’est pas disponible dans le constructeur de VSPackage.  

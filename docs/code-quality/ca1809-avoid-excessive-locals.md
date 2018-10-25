@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be8dcc47e5df5970b2beea697173debcc4a1671f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 0135241e81fb020d5f5107bcb76e37bad16fb56d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549796"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828505"
 ---
 # <a name="ca1809-avoid-excessive-locals"></a>CA1809 : Évitez le surplus de variables locales
+
 |||
 |-|-|
 |TypeName|AvoidExcessiveLocals|

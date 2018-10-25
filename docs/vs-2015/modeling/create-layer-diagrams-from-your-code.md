@@ -17,12 +17,12 @@ caps.latest.revision: 64
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 21b014e4b13544a7fe2a672674bccc34320d0083
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 27fb58e0219dd05c623a553c65e577834ee4a05f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196129"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833484"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Créer des diagrammes de couche à partir de votre code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,9 +111,9 @@ Pour visualiser l’architecture de haut niveau et logique de votre système log
 > [!NOTE]
 >  Les dépendances ne peuvent pas faire l'objet d'une ingénierie à rebours pour certains genres d'artefacts. Par exemple, aucune dépendance ne fera l'objet d'une ingénierie à rebours depuis ou vers une couche qui est liée à un fichier texte. Pour voir les artefacts ayant des dépendances que vous pouvez procéder à la rétroconception, ouvrez le menu contextuel pour une ou plusieurs couches, puis choisissez **afficher les liens**. Dans **Explorateur de couches**, examinez le **prend en charge la Validation** colonne. Dépendances ne sera pas à rebours pour les artefacts pour lesquels cette colonne affiche **False**.  
   
--   Sélectionnez une ou plusieurs couches, ouvrez le menu contextuel pour une couche sélectionnée, puis **générer des dépendances**.  
+- Sélectionnez une ou plusieurs couches, ouvrez le menu contextuel pour une couche sélectionnée, puis **générer des dépendances**.  
   
- En général, des dépendances qui ne devraient pas exister s'affichent. Vous pouvez modifier ces dépendances pour les ajuster à la conception prévue.  
+  En général, des dépendances qui ne devraient pas exister s'affichent. Vous pouvez modifier ces dépendances pour les ajuster à la conception prévue.  
   
 ##  <a name="EditDependencies"></a> Modifier les couches et les dépendances pour afficher la conception prévue  
  Pour décrire les modifications que vous envisagez d'apporter à votre système ou l'architecture attendue, modifiez le diagramme de couche :  

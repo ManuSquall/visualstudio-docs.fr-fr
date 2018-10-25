@@ -1,5 +1,5 @@
 ---
-title: CONSTRUCTOR_ENUM | Documents Microsoft
+title: CONSTRUCTOR_ENUM | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4abc7e2eb8b29a0a7486264732778502c032f42
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5a8302d89bb90902f2a31a81545f14dd233bbe1f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099712"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820536"
 ---
 # <a name="constructorenum"></a>CONSTRUCTOR_ENUM
 Sélectionne les différents types de constructeurs.  
@@ -54,9 +54,9 @@ public enum ConstructorMatchOptions {
  Sélectionne les constructeurs statiques.  
   
 ## <a name="remarks"></a>Notes  
- Est passé comme argument à la [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) (méthode).  
+ Passé en tant qu’argument à la [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) (méthode).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : sh.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

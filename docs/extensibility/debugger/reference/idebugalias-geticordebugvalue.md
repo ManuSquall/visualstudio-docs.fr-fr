@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias::GetICorDebugValue | Documents Microsoft
+title: IDebugAlias::GetICorDebugValue | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bfe0d8e4734c0d836b2dc6009fdedfa264720778
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 393d5a7310a136ad83b7cbd74fca966633ffb62e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099049"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833172"
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
 Récupère une interface en code managé qui représente la valeur associée à cet alias.  
@@ -47,7 +47,7 @@ int GetICorDebugValue(
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode s’applique uniquement aux valeurs managés (le `ICorDebugValue` une interface n’est disponible dans le [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] et est défini dans le [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK dans le fichier cordebug.idl).  
+ Cette méthode s’applique uniquement aux valeurs gérés (les `ICorDebugValue` une interface n’est disponible dans le [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] et est défini dans le [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK dans le fichier cordebug.idl).  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

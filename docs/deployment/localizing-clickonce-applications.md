@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7897869e8cc010d54c1914cbfa8ca763dd3a3bfa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2a4234d8f6ee9fa946f2accfd50a587e6dbd8068
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279340"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822103"
 ---
 # <a name="localize-clickonce-applications"></a>Localiser des applications ClickOnce
 La localisation consiste à adapter votre application à une culture spécifique. Ce processus implique la traduction du texte de l'IU (interface utilisateur) dans une langue propre à la région, en utilisant la mise en forme appropriée de date et de devise, en ajustant la taille des contrôles sur un formulaire et en mettant en miroir les contrôles de droite à gauche, si nécessaire.  
@@ -69,16 +69,16 @@ La localisation consiste à adapter votre application à une culture spécifique
   
  Le téléchargement d'assemblys satellites à la demande diffère légèrement du téléchargement d'autres types d'assemblys à la demande. Pour plus d’exemples de code et des informations sur la façon d’activer ce scénario à l’aide de la [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] tools pour [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], consultez [procédure pas à pas : téléchargement d’assemblys satellites à la demande avec l’API de déploiement ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md).  
   
- Vous pouvez également mettre en place ce scénario dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Consultez également [procédure pas à pas : téléchargement d’assemblys satellites à la demande avec le ClickOnce déploiement API en utilisant le concepteur](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110)) ou [procédure pas à pas : téléchargement d’assemblys satellites à la demande avec l’API de déploiement ClickOnce L’aide du concepteur](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120)).  
+ Vous pouvez également mettre en place ce scénario dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Consultez également [Procédure pas à pas : téléchargement d’assemblys satellites à la demande avec l’API de déploiement ClickOnce à l’aide du concepteur](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110)) ou [Procédure pas à pas : téléchargement d’assemblys satellites à la demande avec l’API de déploiement ClickOnce à l’aide du concepteur](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120)).  
   
 ## <a name="testing-localized-clickonce-applications-before-deployment"></a>Test des applications ClickOnce localisées avant le déploiement  
- Un assembly satellite est utilisé pour une application Windows Forms uniquement si la propriété <xref:System.Threading.Thread.CurrentUICulture%2A> pour le thread principal de l'application est définie avec la valeur de la culture de l'assembly satellite. Les clients des marchés locaux ont probablement déjà exécuté une version localisée de Windows avec une culture définie avec la valeur par défaut appropriée.  
+ Un assembly satellite est utilisé pour une application Windows Forms uniquement si la propriété <xref:System.Threading.Thread.CurrentUICulture%2A> pour le thread principal de l’application est définie avec la valeur de la culture de l’assembly satellite. Les clients des marchés locaux ont probablement déjà exécuté une version localisée de Windows avec une culture définie avec la valeur par défaut appropriée.  
   
  Vous avez trois options pour tester les déploiements localisés avant de mettre votre application à la disposition des clients :  
   
--   Vous pouvez exécuter votre application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sur les versions localisées de Windows appropriées.  
+- Vous pouvez exécuter votre application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sur les versions localisées de Windows appropriées.  
   
--   Vous pouvez définir la propriété <xref:System.Threading.Thread.CurrentUICulture%2A> par programmation dans votre application. (Cette propriété doit être définie avant d'appeler la méthode <xref:System.Windows.Forms.Application.Run%2A>.)  
+- Vous pouvez définir la propriété <xref:System.Threading.Thread.CurrentUICulture%2A> par programmation dans votre application. (Cette propriété doit être définie avant d'appeler la méthode <xref:System.Windows.Forms.Application.Run%2A>.)  
   
 ## <a name="see-also"></a>Voir aussi  
  [\<assemblyIdentity > élément](../deployment/assemblyidentity-element-clickonce-deployment.md)   

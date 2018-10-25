@@ -15,12 +15,12 @@ ms.assetid: 48a9d66e-d51c-4376-a95a-15796643a9f2
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ae3c50d33cefe6074f42e5923b5a0bf49cc2f22
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1b707e92c3d7b576368b5d00459c2b329928a242
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213770"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843169"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>Implémentation de la gestion des commandes pour les projets imbriqués
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,27 +36,27 @@ L’IDE peut transmettre des commandes qui sont transmises via le <xref:Microsof
   
 #### <a name="to-implement-command-handling"></a>Pour implémenter la gestion des commandes  
   
-1.  Lorsque l’utilisateur sélectionne un nœud ou un projet imbriqué dans un projet imbriqué :  
+1. Lorsque l’utilisateur sélectionne un nœud ou un projet imbriqué dans un projet imbriqué :  
   
-    1.  Les appels de l’IDE le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> (méthode).  
+   1. Les appels de l’IDE le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> (méthode).  
   
-     — ou —  
+      — ou —  
   
-    1.  Si la commande avait été créée dans une fenêtre de hiérarchie, par exemple une commande de menu contextuel dans l’Explorateur de solutions, l’IDE appelle le <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> méthode sur les parents du projet.  
+   2. Si la commande avait été créée dans une fenêtre de hiérarchie, par exemple une commande de menu contextuel dans l’Explorateur de solutions, l’IDE appelle le <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> méthode sur les parents du projet.  
   
-2.  Le projet parent peut examiner les paramètres à passer à `QueryStatus`, tel que `pguidCmdGroup` et `prgCmds`, afin de déterminer si le projet parent doit filtrer les commandes. Si le projet parent est implémenté pour filtrer les commandes, il doit définir :  
+2. Le projet parent peut examiner les paramètres à passer à `QueryStatus`, tel que `pguidCmdGroup` et `prgCmds`, afin de déterminer si le projet parent doit filtrer les commandes. Si le projet parent est implémenté pour filtrer les commandes, il doit définir :  
   
-    ```  
-    prgCmds[0].cmdf = OLECMDF_SUPPORTED;  
-    // make sure it is disabled  
-    prgCmds[0].cmdf &= ~MSOCMDF_ENABLED;  
-    ```  
+   ```  
+   prgCmds[0].cmdf = OLECMDF_SUPPORTED;  
+   // make sure it is disabled  
+   prgCmds[0].cmdf &= ~MSOCMDF_ENABLED;  
+   ```  
   
-     Le projet parent doit retourner `S_OK`.  
+    Le projet parent doit retourner `S_OK`.  
   
-     Si le projet parent ne filtre pas la commande, elle doit simplement retourner `S_OK`. Dans ce cas, l’IDE achemine automatiquement la commande au projet enfant.  
+    Si le projet parent ne filtre pas la commande, elle doit simplement retourner `S_OK`. Dans ce cas, l’IDE achemine automatiquement la commande au projet enfant.  
   
-     Le projet parent n’a pas à acheminer la commande au projet enfant. L’IDE exécute cette tâche...  
+    Le projet parent n’a pas à acheminer la commande au projet enfant. L’IDE exécute cette tâche...  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>   

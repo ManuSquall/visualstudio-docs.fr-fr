@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_classParent | Documents Microsoft
+title: IDiaSymbol::get_classParent | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 745342547d7c8264ebd9f2fa06bfababcc3aebcb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f948e4ffdcd64c4c2c811aff7897f3245c100077
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464574"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816714"
 ---
 # <a name="idiasymbolgetclassparent"></a>IDiaSymbol::get_classParent
 Récupère une référence au parent de la classe du symbole.  
@@ -42,7 +42,7 @@ HRESULT get_classParent (
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
   
 |Spécification|Description|  
 |-----------------|-----------------|  

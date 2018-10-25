@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: dc49795a2d19ab28eb4462efc9d6361e1ac18ab6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6986811b522f6ed3621335227231bb69ab6cf1c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251951"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836396"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Déploiement d'un processeur de directive personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,26 +28,26 @@ Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](..
   
  Les différentes méthodes disponibles sont les suivantes :  
   
--   [Extension de Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Cette extension permet d'installer et de désinstaller le processeur de directive sur votre propre ordinateur et sur d'autres. En général, vous pouvez empaqueter d’autres fonctionnalités dans la même extension VSIX.  
+- [Extension de Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Cette extension permet d'installer et de désinstaller le processeur de directive sur votre propre ordinateur et sur d'autres. En général, vous pouvez empaqueter d’autres fonctionnalités dans la même extension VSIX.  
   
--   [VSPackage](../extensibility/internals/vspackages.md). Si vous définissez un VSPackage qui contient d’autres fonctionnalités en plus du processeur de directive, vous pouvez aisément inscrire ce dernier.  
+- [VSPackage](../extensibility/internals/vspackages.md). Si vous définissez un VSPackage qui contient d’autres fonctionnalités en plus du processeur de directive, vous pouvez aisément inscrire ce dernier.  
   
--   Définition d'une clé de Registre. Dans cette méthode, vous ajoutez une entrée de Registre pour le processeur de directive.  
+- Définition d'une clé de Registre. Dans cette méthode, vous ajoutez une entrée de Registre pour le processeur de directive.  
   
- Vous devez utiliser l'une de ces méthodes uniquement si vous voulez transformer votre modèle de texte dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Si vous employez un hôte personnalisé dans votre propre application, celui-ci est chargé de rechercher les processeurs de directive pour chaque directive.  
+  Vous devez utiliser l'une de ces méthodes uniquement si vous voulez transformer votre modèle de texte dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Si vous employez un hôte personnalisé dans votre propre application, celui-ci est chargé de rechercher les processeurs de directive pour chaque directive.  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>Déploiement d'un processeur de directive dans une extension VSIX  
  Vous pouvez ajouter un processeur de directive personnalisé à un [Extension Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832).  
   
  Vous devez vérifier que les deux éléments suivants figurent dans le fichier .vsix :  
   
--   L'assembly (.dll) qui contient la classe du processeur de directive personnalisé.  
+- L'assembly (.dll) qui contient la classe du processeur de directive personnalisé.  
   
--   Un fichier .pkgdef qui inscrit le processeur de directive. Le nom racine du fichier doit être identique à celui de l'assembly. Par exemple, vos fichiers peuvent être nommés CDP.dll et CDP.pkgdef.  
+- Un fichier .pkgdef qui inscrit le processeur de directive. Le nom racine du fichier doit être identique à celui de l'assembly. Par exemple, vos fichiers peuvent être nommés CDP.dll et CDP.pkgdef.  
   
- Pour inspecter ou modifier le contenu d’un fichier .vsix, remplacez son extension de nom par .zip, puis ouvrez-le. Après avoir modifié le contenu, réaffectez l'extension .vsix au nom de fichier.  
+  Pour inspecter ou modifier le contenu d’un fichier .vsix, remplacez son extension de nom par .zip, puis ouvrez-le. Après avoir modifié le contenu, réaffectez l'extension .vsix au nom de fichier.  
   
- Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante décrit une de ces méthodes.  
+  Un fichier .vsix peut être créé de plusieurs façons. La procédure suivante décrit une de ces méthodes.  
   
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>Pour développer un processeur de directive personnalisé dans un projet VSIX  
   
@@ -167,27 +167,27 @@ Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](..
   
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Pour inscrire un processeur de directive en définissant une clé de Registre  
   
-1.  Exécutez `regedit`.  
+1. Exécutez `regedit`.  
   
-2.  Dans regedit, accédez à  
+2. Dans regedit, accédez à  
   
-     **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**  
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**  
   
-     Si vous voulez installer le processeur de directive dans la version expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], insérez "Exp" après "11.0".  
+    Si vous voulez installer le processeur de directive dans la version expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], insérez "Exp" après "11.0".  
   
-3.  Ajoutez une clé de Registre ayant le même nom que la classe du processeur de directive.  
+3. Ajoutez une clé de Registre ayant le même nom que la classe du processeur de directive.  
   
-    -   Dans l’arborescence du Registre, cliquez sur le **DirectiveProcessors** nœud, pointez sur **New**, puis cliquez sur **clé**.  
+   -   Dans l’arborescence du Registre, cliquez sur le **DirectiveProcessors** nœud, pointez sur **New**, puis cliquez sur **clé**.  
   
-4.  Dans le nouveau nœud, ajoutez des valeurs de chaîne pour Class, CodeBase ou Assembly, en fonction des tableaux suivants.  
+4. Dans le nouveau nœud, ajoutez des valeurs de chaîne pour Class, CodeBase ou Assembly, en fonction des tableaux suivants.  
   
-    1.  Cliquez sur le nœud que vous avez créé, pointez sur **New**, puis cliquez sur **valeur de chaîne**.  
+   1.  Cliquez sur le nœud que vous avez créé, pointez sur **New**, puis cliquez sur **valeur de chaîne**.  
   
-    2.  Modifiez le nom de la valeur.  
+   2.  Modifiez le nom de la valeur.  
   
-    3.  Double-cliquez sur le nom et modifiez les données.  
+   3.  Double-cliquez sur le nom et modifiez les données.  
   
- Si le processeur de directive personnalisé ne se trouve pas dans le GAC, les sous-clés de Registre doivent se présenter comme dans le tableau suivant :  
+   Si le processeur de directive personnalisé ne se trouve pas dans le GAC, les sous-clés de Registre doivent se présenter comme dans le tableau suivant :  
   
 |Name|Type|Données|  
 |----------|----------|----------|  

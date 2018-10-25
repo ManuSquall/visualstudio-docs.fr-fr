@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_hasLongJump | Documents Microsoft
+title: IDiaSymbol::get_hasLongJump | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79e98b5178c08f95e1da4d2bee1affc0c200d2ba
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7edf8e42e8c40ab9bbe5d032f026c23f8b7ff147
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463905"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835812"
 ---
 # <a name="idiasymbolgethaslongjump"></a>IDiaSymbol::get_hasLongJump
-Récupère un indicateur qui spécifie si la fonction contient une utilisation de la [longjmp](/cpp/c-runtime-library/reference/longjmp) commande (apparié à un [setjmp](/cpp/c-runtime-library/reference/setjmp) commande, ils constituent la méthode C-style de gestion des exceptions).  
+Récupère un indicateur qui spécifie si la fonction contient une utilisation de la [longjmp](/cpp/c-runtime-library/reference/longjmp) commande (apparié à un [setjmp](/cpp/c-runtime-library/reference/setjmp) commande, elles forment la méthode C-style de gestion des exceptions).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -42,7 +42,7 @@ HRESULT get_hasLongJump
 > [!NOTE]
 >  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
   
 |Spécification|Description|  
 |-----------------|-----------------|  

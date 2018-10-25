@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 971cbe690cc53b0e4035b951570ba8c7aba19313
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 47dc7d38a2ae9b842891d2e36aebd9b009297cbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512169"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817039"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>Configurer et utiliser des règles de l’analyseur Roslyn
 
@@ -121,15 +121,15 @@ Il existe plusieurs moyens de supprimer les violations de règle :
 
 Vous pouvez supprimer un ou plusieurs diagnostics à partir de la **liste d’erreurs** en sélectionnant celles que vous souhaitez supprimer, puis en cliquant et en sélectionnant **supprimer** > **dans la Source**  ou **supprimer** > **dans le fichier de Suppression**.
 
-   - Si vous sélectionnez **dans la Source**, le **aperçu des modifications** boîte de dialogue s’ouvre et affiche un aperçu du langage c# [#pragma warning](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) ou Visual Basic [#Disable warning](/dotnet/visual-basic/language-reference/directives/directives) directive qui est ajoutée au code source.
+- Si vous sélectionnez **dans la Source**, le **aperçu des modifications** boîte de dialogue s’ouvre et affiche un aperçu du langage c# [#pragma warning](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) ou Visual Basic [#Disable warning](/dotnet/visual-basic/language-reference/directives/directives) directive qui est ajoutée au code source.
 
-      ![Aperçu de l’ajout de #pragma warning dans le fichier de code](media/pragma-warning-preview.png)
+   ![Aperçu de l’ajout de #pragma warning dans le fichier de code](media/pragma-warning-preview.png)
 
-   - Si vous sélectionnez **dans le fichier de Suppression**, le **aperçu des modifications** boîte de dialogue s’ouvre et affiche un aperçu de la <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut qui est ajouté au fichier suppressions globales.
+- Si vous sélectionnez **dans le fichier de Suppression**, le **aperçu des modifications** boîte de dialogue s’ouvre et affiche un aperçu de la <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut qui est ajouté au fichier suppressions globales.
 
-      ![Aperçu de l’ajout de l’attribut SuppressMessage pour le fichier de suppression](media/preview-changes-in-suppression-file.png)
+   ![Aperçu de l’ajout de l’attribut SuppressMessage pour le fichier de suppression](media/preview-changes-in-suppression-file.png)
 
-   Dans le **aperçu des modifications** boîte de dialogue, sélectionnez **appliquer**.
+Dans le **aperçu des modifications** boîte de dialogue, sélectionnez **appliquer**.
 
 Le **liste d’erreurs** affiche des diagnostics, ou la règle violations, à la fois en direct de l’analyse du code et génèrent. Étant donné que les diagnostics de build peuvent être obsolètes, par exemple, si vous avez modifié le code pour corriger la violation mais que vous n’avez pas reconstruit, vous ne peut pas supprimer ces diagnostics à partir de la **liste d’erreurs**. Toutefois, les diagnostics d’analyse en temps réel ou IntelliSense, sont toujours à jour avec des sources en cours et peut être supprimées à partir de la **liste d’erreurs**. Si l’option de suppression est désactivée dans le menu contextuel, ou un contexte, il est probable, car vous en avez un ou plusieurs diagnostics dans votre sélection de build. Pour exclure les diagnostics de build de votre sélection, basculer le **liste d’erreurs** filtre source à partir de **Build + IntelliSense** à **Intellisense uniquement**. Ensuite, sélectionnez les tests de diagnostic que vous souhaitez supprimer et procéder comme indiqué précédemment.
 

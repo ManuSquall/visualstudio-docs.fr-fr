@@ -16,12 +16,12 @@ ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b731f10a30f20e3c5a9670a91400e86be004852e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7105299956a338d0dd4a637b404f9ccad2447662
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267369"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839139"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Prise en charge de la barre de navigation dans un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,11 +69,11 @@ namespace TestLanguagePackage
   
  Lorsque la sélection change dans les types de liste déroulante, la liste des membres doit être mis à jour pour refléter le nouveau type. Ce qui est affiché dans la liste des membres peut être :  
   
--   La liste des membres pour le type actuel.  
+- La liste des membres pour le type actuel.  
   
--   Tous les membres disponibles dans la source de fichier, mais avec tous les membres pas dans le type actuel afficheront dans le texte grisé. L’utilisateur peut sélectionner toujours les membres grisé, donc ils peuvent être utilisés pour la navigation rapide, mais la couleur indique qu’ils ne sont pas partie du type actuellement sélectionné.  
+- Tous les membres disponibles dans la source de fichier, mais avec tous les membres pas dans le type actuel afficheront dans le texte grisé. L’utilisateur peut sélectionner toujours les membres grisé, donc ils peuvent être utilisés pour la navigation rapide, mais la couleur indique qu’ils ne sont pas partie du type actuellement sélectionné.  
   
- Une implémentation de la <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> méthode effectue généralement les étapes suivantes :  
+  Une implémentation de la <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> méthode effectue généralement les étapes suivantes :  
   
 1.  Obtenir la liste des déclarations actuelles pour le fichier source.  
   

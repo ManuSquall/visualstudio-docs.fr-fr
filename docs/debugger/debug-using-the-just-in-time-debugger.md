@@ -13,174 +13,189 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a2e6cfbd6d26d575bab5d7592f320779ffd8888
-ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
+ms.openlocfilehash: f66d3fdcd400be9356776647b0ead118e83d7108
+ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168394"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49382743"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Déboguer à l’aide du débogueur juste à temps dans Visual Studio
-Le débogage juste-à-temps lance Visual Studio automatiquement lorsqu’une exception ou un incident se produit dans une application qui s’exécute en dehors de Visual Studio. Cela vous permet de tester votre application lorsque Visual Studio n’est pas en cours d’exécution et commencez le débogage avec Visual Studio lorsqu’un problème survient.
 
-Fonctionne avec le débogage juste-à-temps pour les applications de bureau Windows. Il ne fonctionne pas pour les applications Windows universelles, et il ne fonctionne pas pour le code managé qui est hébergé dans une application native, par exemple les visualiseurs.
+Débogage juste-à-temps peut lancer Visual Studio automatiquement lorsqu’une application s’exécutant en dehors des erreurs de Visual Studio ou des pannes. Avec juste-à-temps de débogage, vous pouvez tester des applications en dehors de Visual Studio et ouvrez Visual Studio pour commencer le débogage lorsqu’un problème survient.
+
+Fonctionne avec le débogage juste-à-temps pour les applications de bureau Windows. Il ne fonctionne pas pour les applications Windows universelles, ou pour le code managé qui est hébergé dans une application native, par exemple les visualiseurs.
 
 > [!TIP]
-> Si vous souhaitez simplement savoir comment répondre aux juste-à-temps boîte de dialogue du débogueur, consultez [cette rubrique](../debugger/just-in-time-debugging-in-visual-studio.md).
+> Si vous souhaitez simplement arrêter la boîte de dialogue d’apparaître, mais n’avez installé Visual Studio, consultez [désactiver le débogueur juste à temps](../debugger/just-in-time-debugging-in-visual-studio.md). Si vous aviez une fois Visual Studio installé, vous devrez peut-être [juste-à-temps de désactiver le débogage à partir du Registre Windows](#disable-just-in-time-debugging-from-the-windows-registry). 
 
-##  <a name="BKMK_Enabling"></a> Activer ou désactiver juste-à-temps le débogage
-Vous pouvez activer ou désactiver le débogage à partir de Visual Studio juste-à-temps **Outils > Options** boîte de dialogue.
+##  <a name="BKMK_Enabling"></a> Activer ou désactiver le débogage dans Visual Studio juste-à-temps
 
-#### <a name="to-enable-or-disable-just-in-time-debugging"></a>Pour activer ou désactiver le débogage juste-à-temps
+>[!NOTE]
+>Pour activer ou désactiver le débogage juste-à-temps, vous devez exécuter Visual Studio en tant qu’administrateur. Activation ou désactivation juste-à-temps débogage définit une clé de Registre et des privilèges d’administrateur peuvent être nécessaires pour modifier cette clé. Pour ouvrir Visual Studio en tant qu’administrateur, avec le bouton droit de l’application de Visual Studio et choisissez **exécuter en tant qu’administrateur**. 
 
-1.  Ouvrez Visual Studio avec des privilèges d’administrateur (avec le bouton droit et choisissez **exécuter en tant qu’administrateur**).
+Vous pouvez configurer le débogage à partir de Visual Studio juste-à-temps **outils** > **Options** (ou **déboguer** > **Options**) boîte de dialogue. 
 
-    Activation ou désactivation juste-à-temps débogage définit une clé de Registre et des privilèges d’administrateur peuvent être nécessaires pour modifier cette clé.
+**Pour activer ou désactiver juste-à-temps le débogage :**
 
-2. Dans le menu **Outils** , cliquez sur **Options**.
+1. Sur le **outils** ou **déboguer** menu, sélectionnez **Options** > **débogage**  >   **Juste-à-temps**.
 
-2.  Dans le **Options** boîte de dialogue, développez le **débogage** nœud.
+   ![Activer ou désactiver le débogage JIT](../debugger/media/dbg-jit-enable-or-disable.png "activer ou désactiver le débogage JIT")
 
-3.  Dans le **débogage** nœud, sélectionnez **juste-à-temps**.
+1. Dans le **activer JIT pour ces types de code** , sélectionnez les types de code que vous souhaitez pour déboguer du débogage juste-à-temps : **managé**, **natif**, et/ou  **Script**.
+   
+1. Sélectionnez **OK**.
 
-    ![Activer ou désactiver le débogage JIT](../debugger/media/dbg-jit-enable-or-disable.png "activer ou désactiver le débogage JIT")
+Si vous activez juste-à-temps débogueur, mais il ne s’ouvre pas lorsqu’une application se bloque ou d’erreurs, consultez [juste à temps de résoudre les problèmes de débogage](#jit_errors).
 
-4.  Dans le **activer le débogage de ces types de code** zone, sélectionnez ou désactivez les types de programmes adéquats : **managé**, **natif**, ou **Script**.
+## <a name="disable-just-in-time-debugging-from-the-windows-registry"></a>Désactiver le débogage à partir du Registre Windows juste-à-temps
 
-5.  Cliquez sur **OK**.
+Le débogage juste-à-temps peut toujours être activé même si Visual Studio n'est plus installé sur votre ordinateur. Si Visual Studio n’est plus installé, vous pouvez désactiver le débogage en modifiant le Registre Windows juste-à-temps.
 
-    Si vous activez juste-à-temps débogueur, mais vous ne le voyez pas sur un incident d’application ou d’une exception, consultez [erreurs de débogage juste-à-temps](#jit_errors).
+**Pour désactiver le débogage en modifiant le Registre juste-à-temps :**
 
-Le débogage juste-à-temps peut toujours être activé même si Visual Studio n'est plus installé sur votre ordinateur. Lorsque Visual Studio n’est pas installé, vous ne pouvez pas désactiver le débogage à partir de Visual Studio juste-à-temps **Options** boîte de dialogue. Dans ce cas, vous pouvez désactiver le débogage juste-à-temps en modifiant le Registre Windows.
-
-#### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>Pour désactiver le débogage juste-à-temps en modifiant le Registre
-
-1.  Sur le **Démarrer** menu, recherchez et exécutez `regedit.exe`
+1.  À partir de la Windows **Démarrer** menu, exécutez le **Éditeur du Registre** (*regedit.exe*).
 
 2.  Dans le **Éditeur du Registre** fenêtre, recherchez et supprimez les entrées de Registre suivantes :
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
+    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\. NETFramework\DbgManagedDebugger**
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\. NETFramework\DbgManagedDebugger
+    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
     ![Clé de Registre JIT](../debugger/media/dbg-jit-registry.png "clé de Registre JIT")
 
-3.  Si votre ordinateur exécute un système d’exploitation de 64 bits, supprimez également les entrées de Registre suivantes :
+3.  Si votre ordinateur exécute un système d’exploitation de 64 bits, également supprimer les entrées de Registre suivantes :
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
+    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. NETFramework\DbgManagedDebugger**
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. NETFramework\DbgManagedDebugger
+    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
-4.  Veillez à ne pas supprimer ou modifier par inadvertance d'autres clés de Registre.
+    Évitez de supprimer ou modifier d’autres clés de Registre.
 
 5.  Fermer le **Éditeur du Registre** fenêtre.
 
-#### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>Pour activer le débogage juste-à-temps d'un Windows Forms
+## <a name="enable-just-in-time-debugging-of-a-windows-form"></a>Activer juste-à-temps de débogage d’un formulaire Windows
 
-1.  Par défaut, les applications Windows Forms ont un gestionnaire d’exceptions de haut niveau qui permet au programme de continuer à s’exécuter s’il peut être récupéré. Par exemple, si votre application Windows Forms lève une exception non gérée, vous verrez une boîte de dialogue comme suit :
+Par défaut, les applications Windows Form ont un gestionnaire d’exceptions de niveau supérieur qui permet à l’application continue de s’exécuter s’il peut être récupéré. Si une application Windows Forms lève une exception non gérée, elle affiche la boîte de dialogue suivante :
 
-     ![WindowsFormsUnhandledException](../debugger/media/windowsformsunhandledexception.png "WindowsFormsUnhandledException")
+![Exception non gérée Windows Form](../debugger/media/windowsformsunhandledexception.png "exception non gérée Windows Form")
 
-     Pour activer juste-à-temps le débogage d’une application Windows Forms, vous devez effectuer les étapes supplémentaires suivantes :
+Pour activer le débogage au lieu de la gestion des erreurs Windows Form standard juste-à-temps, ajoutez ces paramètres :
 
-2.  Définir le `jitDebugging` valeur `true` dans le `system.windows.form` section du fichier machine.config ou  *\<nom_application >*. fichier exe.config :
-
+-  Dans le `system.windows.forms` section de la *machine.config* ou  *\<nom de l’application >. exe.config* de fichiers, définissez le `jitDebugging` valeur `true`:
+    
     ```xml
     <configuration>
         <system.windows.forms jitDebugging="true" />
     </configuration>
     ```
+    
+-  Dans une application C++ Windows Form, définissez également `DebuggableAttribute` à `true` dans un *.config* fichier ou dans votre code. Si vous compilez avec [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) et sans [/Og](/cpp/build/reference/og-global-optimizations), le compilateur définit cet attribut pour vous. Si vous souhaitez déboguer une version Release non optimisée, toutefois, vous devez définir `DebuggableAttribute` en ajoutant la ligne suivante de votre application *AssemblyInfo.cpp* fichier :
 
-3.  Dans une application Windows Forms C++, vous devez également définir `DebuggableAttribute` dans un fichier .config ou dans votre code. Si vous compilez avec [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) et sans [/Og](/cpp/build/reference/og-global-optimizations), le compilateur définit cet attribut pour vous. Toutefois, si vous souhaitez déboguer une version Release non optimisée, vous devez le définir vous-même. Pour ce faire, ajoutez la ligne suivante au fichier AssemblyInfo.cpp de votre application :
+   ```cpp
+   [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
+   ```
+   
+   Pour plus d'informations, consultez <xref:System.Diagnostics.DebuggableAttribute>.
 
-    ```cpp
-    [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
-    ```
+## <a name="BKMK_Using_JIT"></a>Utiliser juste-à-temps de débogage
+ Cet exemple vous guide tout au long de débogage lorsqu’une application lève une erreur juste-à-temps.
 
-     Pour plus d'informations, consultez <xref:System.Diagnostics.DebuggableAttribute>.
+ - Vous devez disposer de Visual Studio est installé pour suivre ces étapes. Si vous n’avez pas Visual Studio, vous pouvez télécharger la version gratuite [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15).
+   
+ - Bien sûr juste-à-temps de rendre le débogage est [activé](#BKMK_Enabling) dans **outils** > **Options** > **débogage**  >  **Juste-à-temps**.
 
-## <a name="a-namebkmkusingjituse-just-in-time-debugging"></a><a name="BKMK_Using_JIT">Utiliser le débogage juste-à-temps
- Cette section montre que se passe-t-il quand un fichier exécutable lève une exception.
+Pour cet exemple, vous allez effectuer un C# application console dans Visual Studio lève une [NullReferenceException](/dotnet/api/system.nullreferenceexception).
 
- Vous devez disposer de Visual Studio est installé pour suivre ces étapes. Si vous n’avez pas Visual Studio, vous pouvez télécharger la version gratuite [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15).
+1. Dans Visual Studio, créez un C# application console (**fichier** > **New** > **projet** > **Visual C#**   >  **Application console**) nommé *ThrowsNullException*. Pour plus d’informations sur la création de projets dans Visual Studio, consultez [procédure pas à pas : créer une application simple](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
+   
+1. Lorsque le projet s’ouvre dans Visual Studio, ouvrez le *Program.cs* fichier. Remplacez la méthode Main() par le code suivant, qui imprime une ligne dans la console et puis lève une exception NullReferenceException :
+   
+   ```csharp
+   static void Main(string[] args)
+   {
+       Console.WriteLine("we will now throw a NullReferenceException");
+       throw new NullReferenceException("this is the exception thrown by the console app");
+   }
+   ```
+   
+1. Pour générer la solution, choisissez le **déboguer** (valeur par défaut) ou **version** configuration, puis sélectionnez **Build** > **régénérer la Solution** . 
+   
+   >[!NOTE]
+   >- Choisissez **déboguer** configuration pour l’expérience de débogage complète. 
+   >- Si vous sélectionnez [version](../debugger/how-to-set-debug-and-release-configurations.md) configuration, vous devez désactiver l’option [uniquement mon Code](../debugger/just-my-code.md) pour cette procédure fonctionne. Sous **outils** > **Options** > **débogage**, désélectionnez **activer uniquement mon Code**.
+   Pour plus d’informations sur les configurations de build, consultez [présentation des configurations de build](../ide/understanding-build-configurations.md).
+   
+1. Ouvrez l’application intégrée *ThrowsNullException.exe* dans votre C# dossier du projet (*...\ThrowsNullException\ThrowsNullException\bin\Debug* ou *...\ThrowsNullException\ ThrowsNullException\bin\Release*). 
+   
+   Vous devez voir la fenêtre de commande suivante :
+   
+   ![ThrowsNullExceptionConsole](../debugger/media/throwsnullexceptionconsole.png "ThrowsNullExceptionConsole")
+   
+1. Le **choisir le débogueur juste à temps** boîte de dialogue s’ouvre.
+   
+   ![JustInTimeDialog](../debugger/media/justintimedialog.png "JustInTimeDialog")
+   
+   Sous **débogueurs disponibles**, sélectionnez **nouvelle instance de \<votre préféré version/édition de Visual Studio >**, si ce n’est déjà fait. 
+   
+1. Sélectionnez **OK**.
+   
+   Le projet ThrowsNullException s’ouvre dans une nouvelle instance de Visual Studio, avec l’exécution s’est arrêtée à la ligne qui a levé l’exception :
+   
+   ![NullReferenceSecondInstance](../debugger/media/nullreferencesecondinstance.png "NullReferenceSecondInstance")
 
- Assurez-vous que juste-à-temps de débogage est [activé](#BKMK_Enabling).
-
- Dans le cadre de cette section, nous veillerons à ce une application de console c# dans Visual Studio lève une [NullReferenceException](/dotnet/api/system.nullreferenceexception).
-
- Dans Visual Studio, créez une application de console c# (**fichier > Nouveau > projet > Visual c# > Application Console**) nommé **ThrowsNullException**. Pour plus d’informations sur la création de projets dans Visual Studio, consultez [procédure pas à pas : créer une Application Simple](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
-
- Lorsque le projet s’ouvre dans Visual Studio, ouvrez le fichier Program.cs. Remplacez la méthode Main() par le code suivant, qui imprime une ligne dans la console et puis lève une exception NullReferenceException :
-
-```csharp
-static void Main(string[] args)
-{
-    Console.WriteLine("we will now throw a NullReferenceException");
-    throw new NullReferenceException("this is the exception thrown by the console app");
-}
-```
-
-> [!IMPORTANT]
->  Afin que cette procédure fonctionne un [configuration release](../debugger/how-to-set-debug-and-release-configurations.md), vous devez désactiver [uniquement mon Code](../debugger/just-my-code.md). Dans Visual Studio, cliquez sur **Outils > Options**. Dans le **Options** boîte de dialogue, sélectionnez **débogage**. Décochez la case **activer uniquement mon Code**.
-
- Générez la solution (dans Visual Studio, choisissez **Générer > regénérer la Solution**). Vous pouvez choisir le débogage ou la configuration Release (choisissez **déboguer** pour l’expérience de débogage complète). Pour plus d’informations sur les configurations de build, consultez [Présentation des configurations de build](../ide/understanding-build-configurations.md).
-
- Le processus de génération crée un exécutable ThrowsNullException.exe. Vous pouvez le trouver sous le dossier où vous avez créé le projet c# : **...\ThrowsNullException\ThrowsNullException\bin\Debug** ou **...\ThrowsNullException\ThrowsNullException\bin\Release**.
-
- Double-cliquez sur le ThrowsNullException.exe. Vous devez voir une fenêtre de commande comme suit :
-
- ![ThrowsNullExceptionConsole](../debugger/media/throwsnullexceptionconsole.png "ThrowsNullExceptionConsole")
-
- Après quelques secondes, un message d’erreur apparaît :
-
- ![ThrowsNullExceptionError](../debugger/media/throwsnullexceptionerror.png "ThrowsNullExceptionError")
-
- Ne cliquez pas sur **Annuler**! Après quelques secondes, vous devriez voir deux boutons, **déboguer** et **fermer le programme**. Cliquez sur **déboguer**.
+Vous pouvez démarrer le débogage à ce stade. Si vous déboguez une application réelle, vous devez savoir pourquoi le code lève l’exception.
 
 > [!CAUTION]
->  Si votre application contient le code non fiable, une boîte de dialogue avec un avertissement de sécurité s’affiche. Cette boîte de dialogue vous permet de décider s'il faut poursuivre ou non le débogage. Avant de continuer le débogage, déterminez si vous faites confiance au code. Avez-vous écrit le code vous-même ? Faites-vous confiance à l'auteur du code ? Si l'application s'exécute sur un ordinateur distant, reconnaissez-vous le nom du processus ? Même si l'application s'exécute localement, cela ne signifie pas nécessairement qu'elle peut être approuvée. Envisagez la possibilité de code malveillant s’exécute sur votre ordinateur. Si vous décidez que le code vous vous apprêtez à déboguer est fiable, cliquez sur **déboguer**. Sinon, cliquez sur **ne déboguez pas**.
+> Si votre application contient du code non fiable, une boîte de dialogue sécurité s’affiche, ce qui vous permet de décider s’il faut continuer le débogage. Avant de continuer le débogage, décidez si vous faites confiance au code. Avez-vous écrit le code vous-même ? Si l'application s'exécute sur un ordinateur distant, reconnaissez-vous le nom du processus ? Si l’application s’exécute localement, envisagez la possibilité de code malveillant s’exécute sur votre ordinateur. Si vous décidez que le code est digne de confiance, sélectionnez **OK**. Sinon, sélectionnez **Annuler**.
 
- Le **débogueur de Visual Studio juste à temps** fenêtre s’affiche :
+## <a name="jit_errors"></a> Juste-à-temps de résoudre les problèmes de débogage 
 
- ![JustInTimeDialog](../debugger/media/justintimedialog.png "JustInTimeDialog")
+Si juste-à-temps de débogage ne démarre pas lorsqu’une application tombe en panne, même si elle est activée dans Visual Studio :
 
- Sous **débogueurs possibles**, vous devez voir que la **nouvelle instance de Microsoft Visual Studio <available version>**  ligne est sélectionnée. S’il n’est pas déjà sélectionné, sélectionnez maintenant.
+- Peut prendre le rapport d’erreurs Windows sur la gestion des erreurs sur votre ordinateur. 
+  
+  Pour résoudre ce problème, utilisez l’Éditeur du Registre pour ajouter un **valeur DWORD** de **désactivé**, avec **données de la valeur** de **1**, aux clés de Registre suivantes :
+  
+  
 
- En bas de la fenêtre, sous **vous souhaitez déboguer à l’aide du débogueur sélectionné ?**, cliquez sur **Oui**.
+  - **Rapport d’erreurs HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows**
+    
+  - (Pour les ordinateurs 64 bits) : **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows rapport d’erreurs**
+  
+  Pour plus d’informations, consultez [. Paramètres de rapport d’erreurs Windows](https://docs.microsoft.com/windows/desktop/wer/wer-settings).
+  
+- Un problème connu de Windows peut être à l’origine juste-à-temps débogueur échec. 
+  
+  La solution consiste à ajouter un **valeur DWORD** de **automatique**, avec **données de la valeur** de **1**, aux clés de Registre suivantes :
+  
+  
+  - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug**
+    
+  - (Pour les ordinateurs 64 bits) : **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug**
 
- Le projet ThrowsNullException s’ouvre dans une nouvelle instance de Visual Studio, avec l’exécution s’est arrêtée à la ligne qui lève l’exception :
-
- ![NullReferenceSecondInstance](../debugger/media/nullreferencesecondinstance.png "NullReferenceSecondInstance")
-
- Vous pouvez démarrer le débogage à ce stade. S’il s’agissait d’une application réelle, vous devez savoir pourquoi le code lève l’exception.
-
-## <a name="jit_errors"></a> Erreurs de débogage juste-à-temps
- Si vous ne voyez pas la boîte de dialogue lorsque le programme se bloque et avez besoin activer la fonctionnalité, le problème est peut-être en raison des paramètres de rapport d’erreurs Windows sur votre ordinateur. Veillez à ajouter un **désactivé** valeur aux clés de Registre suivante et définissez la valeur sur 1 :
-
-* Rapport d’erreurs HKLM\Software\Microsoft\Windows\Windows
-* Rapport d’erreurs HKLM\Software\WOW6432Node\Microsoft\Windows\Windows
- 
-Pour plus d’informations sur ces paramètres, consultez [. Paramètres de rapport d’erreurs Windows](https://docs.microsoft.com/windows/desktop/wer/wer-settings).
-
-En outre, vous pouvez voir les messages d’erreur suivants associés à juste-à-temps de débogage.
+Vous pouvez voir les messages d’erreur suivant juste-à-temps au cours de débogage :
 
 - **Impossible de s’attacher au processus bloqué. Le programme spécifié n’est pas un programme Windows ou MS-DOS.**
 
-    Cette erreur se produit lorsque vous essayez d’attacher à un processus en cours d’exécution en tant qu’un autre utilisateur.
+    Le débogueur a essayé de s’attacher à un processus en cours d’exécution sous un autre utilisateur.
 
-    Pour contourner ce problème, démarrez Visual Studio, ouvrez le **attacher au processus** boîte de dialogue à partir de la **déboguer** menu, puis recherchez le processus à déboguer dans la **processus disponibles**liste. Si vous ne connaissez pas le nom du processus, examinez le **débogueur de Visual Studio juste à temps** boîte de dialogue et notez l’ID de processus. Sélectionnez le processus dans le **processus disponibles** liste et cliquez sur **attacher**. Dans le **débogueur de Visual Studio juste à temps** boîte de dialogue, cliquez sur **non** pour faire disparaître la boîte de dialogue.
+    Pour contourner ce problème, dans Visual Studio, ouvrez **déboguer** > **attacher au processus**, recherchez le processus à déboguer dans le **processus disponibles** liste. Si vous ne connaissez pas le nom du processus, recherchez l’ID de processus dans le **débogueur de Visual Studio juste à temps** boîte de dialogue. Sélectionnez le processus dans le **processus disponibles** liste, puis sélectionnez **attacher**. Sélectionnez **non** pour faire disparaître juste-à-temps boîte de dialogue de débogueur.
 
 - **Débogueur n’a pas pu être démarré, car aucun utilisateur n’est connecté.**
 
-    Cette erreur se produit lorsque le débogage juste-à-temps tente de démarrer Visual Studio sur un ordinateur où aucun utilisateur n'a ouvert de session sur la console. Dans la mesure où aucun utilisateur n'a ouvert de session, il n'y a aucune session utilisateur pour afficher la boîte de dialogue Débogage juste-à-temps.
+    Il n’existe aucun utilisateur connecté à la console, il n’existe aucune session utilisateur pour afficher juste-à-temps boîte de dialogue de débogage.
 
     Pour résoudre ce problème, ouvrez une session sur l'ordinateur.
 
 - **Classe non inscrite.**
 
-    Cette erreur indique que le débogueur a essayé de créer une classe COM qui n'est pas inscrite, probablement en raison d'un problème d'installation.
+    Le débogueur a essayé de créer une classe COM qui n’est pas inscrit, probablement en raison d’un problème d’installation.
 
-    Pour résoudre ce problème, utilisez le disque d'installation pour réinstaller ou réparer votre installation de Visual Studio.
+    Pour résoudre ce problème, utilisez Visual Studio Installer pour réinstaller ou réparer votre installation de Visual Studio.
 
 ## <a name="see-also"></a>Voir aussi
- [Sécurité du débogueur](../debugger/debugger-security.md) [principes fondamentaux du débogueur](../debugger/getting-started-with-the-debugger.md) [juste-à-temps, débogage, boîte de dialogue Options](../debugger/just-in-time-debugging-options-dialog-box.md) [avertissement de sécurité : l’attachement à un processus appartenant à un utilisateur non fiable peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, ne faites pas d’attachement à ce processus](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- [Sécurité du débogueur](../debugger/debugger-security.md)
+- [Principes de base du débogueur](../debugger/getting-started-with-the-debugger.md)
+- [Options, débogage, juste-à-temps boîte de dialogue](../debugger/just-in-time-debugging-options-dialog-box.md)
+- [Avertissement de sécurité : L’attachement à un processus appartenant à un utilisateur non approuvé peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, ne faites pas d’attachement à ce processus](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

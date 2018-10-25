@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: edcff4b5058d87f467e4b8e94637a1dc74cee98f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1c25121e96005486450397938aad3c24f89d26cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35673189"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828466"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Procédure pas à pas : Affichage des volets de tâches personnalisés avec des messages électroniques dans Outlook
   Cette procédure pas à pas montre comment afficher une instance unique d’un volet de tâches personnalisé avec chaque message électronique créé ou ouvert. Les utilisateurs peuvent afficher ou masquer le volet des tâches personnalisé à l’aide d’un bouton situé sur le ruban de chaque message électronique.  
@@ -56,11 +56,11 @@ ms.locfileid: "35673189"
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] ou Microsoft Outlook 2010  
+- Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] ou Microsoft Outlook 2010  
   
- ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [comment faire : utiliser les volets des tâches dans Outlook ?](http://go.microsoft.com/fwlink/?LinkID=130309).  
+  ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [comment faire : utiliser les volets des tâches dans Outlook ?](http://go.microsoft.com/fwlink/?LinkID=130309).  
   
 ## <a name="create-the-project"></a>Créer le projet  
  Les volets des tâches personnalisés sont implémentés dans les compléments VSTO. Commencez par créer un projet de complément VSTO pour Outlook.  
@@ -69,7 +69,7 @@ ms.locfileid: "35673189"
   
 1.  Créez un projet de **Complément Outlook** portant le nom **OutlookMailItemTaskPane**. Utilisez le modèle de projet **Complément Outlook** . Pour plus d’informations, consultez [Comment : les projets Office de créer dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ouvre le *ThisAddIn.cs* ou *ThisAddIn.vb* fichier de code et ajoute le **OutlookMailItemTaskPane** de projet à **l’Explorateur de solutions**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ouvre le fichier de code *ThisAddIn.cs* ou *ThisAddIn.vb* et ajoute le projet **OutlookMailItemTaskPane** à l’ **Explorateur de solutions**.  
   
 ## <a name="design-the-user-interface-of-the-custom-task-pane"></a>Concevoir l’interface utilisateur du volet Office personnalisé  
  Il n’existe pas de concepteur visuel pour les volets des tâches personnalisés, mais vous pouvez concevoir un contrôle utilisateur avec l’interface utilisateur de votre choix. Le volet des tâches personnalisé de ce complément VSTO offre une interface utilisateur simple qui contient un contrôle <xref:System.Windows.Forms.TextBox> . À une étape ultérieure de cette procédure, vous ajouterez le contrôle utilisateur au volet des tâches personnalisé.  
@@ -97,7 +97,7 @@ ms.locfileid: "35673189"
   
 3.  Remplacez le nom du nouveau ruban par **ManageTaskPaneRibbon**, puis cliquez sur **Ajouter**.  
   
-     Le *ManageTaskPaneRibbon.cs* ou *ManageTaskPaneRibbon.vb* s’ouvre dans le Concepteur de ruban et affiche un onglet par défaut et un groupe.  
+     Le fichier *ManageTaskPaneRibbon.cs* ou *ManageTaskPaneRibbon.vb* s’ouvre dans le Concepteur de ruban et affiche un onglet et un groupe par défaut.  
   
 4.  Dans le Concepteur de ruban, cliquez sur **group1**.  
   
@@ -121,24 +121,24 @@ ms.locfileid: "35673189"
 ## <a name="create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Créer une classe pour gérer les fenêtres d’inspecteur et les volets de tâches personnalisés  
  Il existe plusieurs cas dans lequel le composant logiciel complément VSTO doit identifier volet des tâches personnalisé est associé à un message électronique spécifique. Il s’agit notamment des cas suivants :  
   
--   Lorsque l’utilisateur ferme un message électronique. Dans ce cas, le complément VSTO doit supprimer le volet des tâches personnalisé correspondant afin de garantir que les ressources utilisées par le complément VSTO sont correctement nettoyées.  
+- Lorsque l’utilisateur ferme un message électronique. Dans ce cas, le complément VSTO doit supprimer le volet des tâches personnalisé correspondant afin de garantir que les ressources utilisées par le complément VSTO sont correctement nettoyées.  
   
--   Lorsque l’utilisateur ferme le volet des tâches personnalisé. Dans ce cas, le composant logiciel complément VSTO doit mettre à jour l’état du bouton bascule sur le ruban du message électronique.  
+- Lorsque l’utilisateur ferme le volet des tâches personnalisé. Dans ce cas, le composant logiciel complément VSTO doit mettre à jour l’état du bouton bascule sur le ruban du message électronique.  
   
--   Lorsque l’utilisateur clique sur le bouton bascule du ruban. Dans ce cas, le complément VSTO doit masquer ou afficher le volet des tâches correspondant.  
+- Lorsque l’utilisateur clique sur le bouton bascule du ruban. Dans ce cas, le complément VSTO doit masquer ou afficher le volet des tâches correspondant.  
   
- Pour activer le complément VSTO pour effectuer le suivi de volet de tâches personnalisé est associé à chaque message électronique ouvert, créez une classe personnalisée qui encapsule des paires de <xref:Microsoft.Office.Interop.Outlook.Inspector> et <xref:Microsoft.Office.Tools.CustomTaskPane> objets. Cette classe crée un nouvel objet de volet de tâches personnalisé pour chaque message électronique, et il supprime le volet Office personnalisé lorsque le message électronique correspondant est fermé.  
+  Pour activer le complément VSTO pour effectuer le suivi de volet de tâches personnalisé est associé à chaque message électronique ouvert, créez une classe personnalisée qui encapsule des paires de <xref:Microsoft.Office.Interop.Outlook.Inspector> et <xref:Microsoft.Office.Tools.CustomTaskPane> objets. Cette classe crée un nouvel objet de volet de tâches personnalisé pour chaque message électronique, et il supprime le volet Office personnalisé lorsque le message électronique correspondant est fermé.  
   
 ### <a name="to-create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Pour créer une classe pour gérer les fenêtres d’inspecteur et les volets de tâches personnalisés  
   
-1.  Dans **l’Explorateur de solutions**, cliquez sur le *ThisAddIn.cs* ou *ThisAddIn.vb* de fichiers, puis cliquez sur **afficher le Code**.  
+1.  Dans l’ **Explorateur de solutions**, cliquez avec le bouton droit sur le fichier *ThisAddIn.cs* ou *ThisAddIn.vb* , puis cliquez sur **Afficher le code**.  
   
 2.  Ajoutez les instructions suivantes au début du fichier.  
   
      [!code-csharp[Trin_OutlookMailItemTaskPane#2](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#2)]
      [!code-vb[Trin_OutlookMailItemTaskPane#2](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#2)]  
   
-3.  Ajoutez le code suivant à la *ThisAddIn.cs* ou *ThisAddIn.vb* de fichiers, en dehors la `ThisAddIn` classe (pour Visual c#, ajoutez ce code à l’intérieur de la `OutlookMailItemTaskPane` espace de noms). La classe `InspectorWrapper` gère une paire d’objets <xref:Microsoft.Office.Interop.Outlook.Inspector> et <xref:Microsoft.Office.Tools.CustomTaskPane> . Vous effectuez la définition de cette classe dans les étapes suivantes.  
+3.  Ajoutez le code suivant au fichier *ThisAddIn.cs* ou *ThisAddIn.vb* , en dehors de la classe `ThisAddIn` (pour Visual C#, ajoutez ce code dans l’espace de noms `OutlookMailItemTaskPane` ). La classe `InspectorWrapper` gère une paire d’objets <xref:Microsoft.Office.Interop.Outlook.Inspector> et <xref:Microsoft.Office.Tools.CustomTaskPane> . Vous effectuez la définition de cette classe dans les étapes suivantes.  
   
      [!code-csharp[Trin_OutlookMailItemTaskPane#3](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#3)]
      [!code-vb[Trin_OutlookMailItemTaskPane#3](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#3)]  
@@ -168,36 +168,36 @@ ms.locfileid: "35673189"
   
 ### <a name="to-initialize-and-clean-up-resources-used-by-the-vsto-add-in"></a>Pour initialiser et nettoyer les ressources utilisées par le complément VSTO  
   
-1.  Dans le *ThisAddIn.cs* ou *ThisAddIn.vb* de fichier, recherchez la définition de la `ThisAddIn` classe.  
+1. Dans le fichier *ThisAddIn.cs* ou *ThisAddIn.vb* , localisez la définition de la classe `ThisAddIn` .  
   
-2.  Ajoutez les déclarations suivantes à la classe `ThisAddIn` :  
+2. Ajoutez les déclarations suivantes à la classe `ThisAddIn` :  
   
-    -   Le champ `inspectorWrappersValue` contient tous les objets <xref:Microsoft.Office.Interop.Outlook.Inspector> et `InspectorWrapper` gérés par le complément VSTO.  
+   - Le champ `inspectorWrappersValue` contient tous les objets <xref:Microsoft.Office.Interop.Outlook.Inspector> et `InspectorWrapper` gérés par le complément VSTO.  
   
-    -   Le champ `inspectors` conserve une référence à la collection de fenêtres Inspecteur de l'instance Outlook actuelle. Cette référence empêche le garbage collector de libérer la mémoire qui contient le gestionnaire d’événements pour l’événement <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> , que vous allez déclarer à l’étape suivante.  
+   - Le champ `inspectors` conserve une référence à la collection de fenêtres Inspecteur de l'instance Outlook actuelle. Cette référence empêche le garbage collector de libérer la mémoire qui contient le gestionnaire d’événements pour l’événement <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> , que vous allez déclarer à l’étape suivante.  
   
      [!code-csharp[Trin_OutlookMailItemTaskPane#8](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#8)]
      [!code-vb[Trin_OutlookMailItemTaskPane#8](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#8)]  
   
-3.  Remplacez la méthode `ThisAddIn_Startup` par le code suivant. Ce code attache un gestionnaire d’événements à l’événement <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> et passe chaque objet <xref:Microsoft.Office.Interop.Outlook.Inspector> existant au gestionnaire d’événements. Si l’utilisateur charge le module additionnel VSTO après que Outlook est déjà en cours d’exécution, le composant logiciel complément VSTO utilise ces informations pour créer des volets de tâches personnalisés pour tous les messages électroniques qui sont déjà ouverts.  
+3. Remplacez la méthode `ThisAddIn_Startup` par le code suivant. Ce code attache un gestionnaire d’événements à l’événement <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> et passe chaque objet <xref:Microsoft.Office.Interop.Outlook.Inspector> existant au gestionnaire d’événements. Si l’utilisateur charge le module additionnel VSTO après que Outlook est déjà en cours d’exécution, le composant logiciel complément VSTO utilise ces informations pour créer des volets de tâches personnalisés pour tous les messages électroniques qui sont déjà ouverts.  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#9)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#9)]  
+    [!code-csharp[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#9)]
+    [!code-vb[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#9)]  
   
-4.  Remplacez la méthode `ThisAddIn_ShutDown` par le code suivant. Ce code détache le gestionnaire d’événements <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> et nettoie les objets utilisés par le complément VSTO.  
+4. Remplacez la méthode `ThisAddIn_ShutDown` par le code suivant. Ce code détache le gestionnaire d’événements <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> et nettoie les objets utilisés par le complément VSTO.  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#10)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#10)]  
+    [!code-csharp[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#10)]
+    [!code-vb[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#10)]  
   
-5.  Ajoutez le gestionnaire d’événements <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> suivant à la classe `ThisAddIn` . Si un nouveau <xref:Microsoft.Office.Interop.Outlook.Inspector> contient un message électronique, la méthode crée une instance d’un nouveau `InspectorWrapper` objet pour gérer la relation entre le message électronique et le volet des tâches correspondant.  
+5. Ajoutez le gestionnaire d’événements <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> suivant à la classe `ThisAddIn` . Si un nouveau <xref:Microsoft.Office.Interop.Outlook.Inspector> contient un message électronique, la méthode crée une instance d’un nouveau `InspectorWrapper` objet pour gérer la relation entre le message électronique et le volet des tâches correspondant.  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#11)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#11)]  
+    [!code-csharp[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#11)]
+    [!code-vb[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#11)]  
   
-6.  Ajoutez la propriété suivante à la classe `ThisAddIn` . Cette propriété expose le champ `inspectorWrappersValue` privé au code en dehors de la classe `ThisAddIn` .  
+6. Ajoutez la propriété suivante à la classe `ThisAddIn` . Cette propriété expose le champ `inspectorWrappersValue` privé au code en dehors de la classe `ThisAddIn` .  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#12)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#12)]  
+    [!code-csharp[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#12)]
+    [!code-vb[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#12)]  
   
 ## <a name="checkpoint"></a>Point de contrôle  
  Générez votre projet pour vous assurer qu’il est compilé sans erreur.  
@@ -213,9 +213,9 @@ ms.locfileid: "35673189"
   
 1.  Dans le Concepteur de ruban, double-cliquez sur le bouton bascule **Afficher le Volet Office** .  
   
-     Visual Studio génère automatiquement un gestionnaire d’événements nommé `toggleButton1_Click`, qui gère l’événement <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> du bouton bascule. Visual Studio ouvre également le *ManageTaskPaneRibbon.cs* ou *ManageTaskPaneRibbon.vb* fichier dans l’éditeur de Code.  
+     Visual Studio génère automatiquement un gestionnaire d’événements nommé `toggleButton1_Click`, qui gère l’événement <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> du bouton bascule. Visual Studio ouvre également le fichier *ManageTaskPaneRibbon.cs* ou *ManageTaskPaneRibbon.vb* dans l’éditeur de code  
   
-2.  Ajoutez les instructions suivantes en haut de la *ManageTaskPaneRibbon.cs* ou *ManageTaskPaneRibbon.vb* fichier.  
+2.  Ajoutez les instructions suivantes au début du fichier *ManageTaskPaneRibbon.cs* ou *ManageTaskPaneRibbon.vb* .  
   
      [!code-csharp[Trin_OutlookMailItemTaskPane#14](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.cs#14)]
      [!code-vb[Trin_OutlookMailItemTaskPane#14](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ManageTaskPaneRibbon.vb#14)]  
@@ -230,29 +230,29 @@ ms.locfileid: "35673189"
   
 ### <a name="to-test-the-vsto-add-in"></a>Pour tester le complément VSTO  
   
-1.  Appuyez sur **F5**.  
+1. Appuyez sur **F5**.  
   
-2.  Dans Outlook, cliquez sur **New** pour créer un nouveau message électronique.  
+2. Dans Outlook, cliquez sur **New** pour créer un nouveau message électronique.  
   
-3.  Dans le ruban du message électronique, cliquez sur le **Add-Ins** onglet, puis cliquez sur le **afficher le volet Office** bouton.  
+3. Dans le ruban du message électronique, cliquez sur le **Add-Ins** onglet, puis cliquez sur le **afficher le volet Office** bouton.  
   
-     Vérifiez que le titre, un volet de tâches **Mon volet des tâches** s’affiche avec le message électronique.  
+    Vérifiez que le titre, un volet de tâches **Mon volet des tâches** s’affiche avec le message électronique.  
   
-4.  Dans le volet des tâches, tapez **Premier volet des tâches** dans la zone de texte.  
+4. Dans le volet des tâches, tapez **Premier volet des tâches** dans la zone de texte.  
   
-5.  Fermez le volet des tâches.  
+5. Fermez le volet des tâches.  
   
-     Vérifiez que l’état du bouton **Afficher le volet Office** change de sorte qu’il ne soit plus enfoncé.  
+    Vérifiez que l’état du bouton **Afficher le volet Office** change de sorte qu’il ne soit plus enfoncé.  
   
-6.  Cliquez de nouveau sur le bouton **Afficher le volet Office** .  
+6. Cliquez de nouveau sur le bouton **Afficher le volet Office** .  
   
-     Assurez-vous que le volet des tâches s’ouvre et que la zone de texte contient encore la chaîne **Premier volet des tâches**.  
+    Assurez-vous que le volet des tâches s’ouvre et que la zone de texte contient encore la chaîne **Premier volet des tâches**.  
   
-7.  Dans Outlook, cliquez sur **New** pour créer un deuxième message électronique.  
+7. Dans Outlook, cliquez sur **New** pour créer un deuxième message électronique.  
   
-8.  Dans le ruban du message électronique, cliquez sur le **Add-Ins** onglet, puis cliquez sur le **afficher le volet Office** bouton.  
+8. Dans le ruban du message électronique, cliquez sur le **Add-Ins** onglet, puis cliquez sur le **afficher le volet Office** bouton.  
   
-     Vérifiez qu’un volet de tâches avec le titre **Mon volet des tâches** s’affiche avec le message électronique, et la zone de texte dans ce volet de tâches est vide.  
+    Vérifiez qu’un volet de tâches avec le titre **Mon volet des tâches** s’affiche avec le message électronique, et la zone de texte dans ce volet de tâches est vide.  
   
 9. Dans le volet des tâches, tapez **Second volet des tâches** dans la zone de texte.  
   
@@ -260,7 +260,7 @@ ms.locfileid: "35673189"
   
      Vérifiez que le volet des tâches qui est associé à ce message électronique affiche toujours **premier volet des tâches** dans la zone de texte.  
   
- Ce complément VSTO gère également des scénarios plus avancés que vous pouvez tester. Par exemple, vous pouvez tester le comportement lors de l’affichage des messages électroniques à l’aide de la **élément suivant** et **élément précédent** boutons. Vous pouvez également tester le comportement lorsque vous déchargez le complément, VSTO, ouvrez plusieurs messages électroniques et puis rechargez le VSTO Add-in.  
+    Ce complément VSTO gère également des scénarios plus avancés que vous pouvez tester. Par exemple, vous pouvez tester le comportement lors de l’affichage des messages électroniques à l’aide de la **élément suivant** et **élément précédent** boutons. Vous pouvez également tester le comportement lorsque vous déchargez le complément, VSTO, ouvrez plusieurs messages électroniques et puis rechargez le VSTO Add-in.  
   
 ## <a name="next-steps"></a>Étapes suivantes  
  Pour en savoir plus sur la création de volets Office personnalisés, consultez les rubriques suivantes :  

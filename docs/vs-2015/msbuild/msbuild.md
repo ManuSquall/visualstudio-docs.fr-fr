@@ -17,12 +17,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: afa446afdf8cb9b3c17028927d9325ffd6e18323
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9a2ca3a14c1e4e35da4e8cddfdecb0346740286a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253540"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837761"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ Le [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] est une 
   
  Les exemples suivants illustrent les cas où vous pouvez exécuter des builds à l'aide d'une ligne de commande MSBuild au lieu de l'IDE de Visual Studio.  
   
--   Visual Studio n'est pas installé.  
+- Visual Studio n'est pas installé.  
   
--   Vous souhaitez utiliser la version 64 bits de MSBuild. Cette version MSBuild est généralement inutile, mais elle permet à MSBuild d'accéder à plus de mémoire.  
+- Vous souhaitez utiliser la version 64 bits de MSBuild. Cette version MSBuild est généralement inutile, mais elle permet à MSBuild d'accéder à plus de mémoire.  
   
--   Vous souhaitez exécuter une build dans plusieurs processus. Toutefois, vous pouvez utiliser l'IDE pour obtenir le même résultat sur les projets dans C++ et C#.  
+- Vous souhaitez exécuter une build dans plusieurs processus. Toutefois, vous pouvez utiliser l'IDE pour obtenir le même résultat sur les projets dans C++ et C#.  
   
--   Vous souhaitez modifier le système de génération. Par exemple, vous pouvez souhaiter effectuer les actions suivantes :  
+- Vous souhaitez modifier le système de génération. Par exemple, vous pouvez souhaiter effectuer les actions suivantes :  
   
-    -   Prétraitez les fichiers avant qu'ils n'atteignent le compilateur.  
+  -   Prétraitez les fichiers avant qu'ils n'atteignent le compilateur.  
   
-    -   Copiez les sorties de génération à un autre emplacement.  
+  -   Copiez les sorties de génération à un autre emplacement.  
   
-    -   Créez des fichiers compressés à partir des sorties de génération.  
+  -   Créez des fichiers compressés à partir des sorties de génération.  
   
-    -   Procédez à une étape de post-traitement. Par exemple, vous pouvez souhaiter horodater un assembly avec une version différente.  
+  -   Procédez à une étape de post-traitement. Par exemple, vous pouvez souhaiter horodater un assembly avec une version différente.  
   
- Vous pouvez écrire du code dans l'IDE de Visual Studio, mais les générations s'exécutent à l'aide de MSBuild. Autre solution, vous pouvez générer le code dans l'IDE sur un ordinateur de développement mais utiliser une ligne de commande MSBuild pour générer du code qui est intégré par plusieurs développeurs.  
+  Vous pouvez écrire du code dans l'IDE de Visual Studio, mais les générations s'exécutent à l'aide de MSBuild. Autre solution, vous pouvez générer le code dans l'IDE sur un ordinateur de développement mais utiliser une ligne de commande MSBuild pour générer du code qui est intégré par plusieurs développeurs.  
   
 > [!NOTE]
 >  Vous pouvez utiliser Team Foundation Build automatiquement pour compiler, tester, puis déployer votre application. Votre système de génération peut automatiquement exécuter des générations lorsque les développeurs archivent du code (par exemple, dans le cadre d'une stratégie continue d'intégration) ou selon une planification (par exemple, une build nocturne de test de vérification de build). Team Foundation Build compile votre code à l’aide de MSBuild. Pour plus d’informations, consultez l’article [Générer l’application](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
@@ -182,17 +182,17 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  Voici une partie des avantages offerts par le multi-ciblage :  
   
--   Vous pouvez développer des applications qui ciblent des versions antérieures du .NET Framework (par exemple, les versions 2.0, 3.0 et 3.5).  
+- Vous pouvez développer des applications qui ciblent des versions antérieures du .NET Framework (par exemple, les versions 2.0, 3.0 et 3.5).  
   
--   Vous pouvez cibler des Frameworks autres que le .NET Framework (par exemple, Silverlight).  
+- Vous pouvez cibler des Frameworks autres que le .NET Framework (par exemple, Silverlight).  
   
--   Vous pouvez cibler un *profil Framework*, qui est un sous-ensemble prédéfini d’une version cible de .NET Framework.  
+- Vous pouvez cibler un *profil Framework*, qui est un sous-ensemble prédéfini d’une version cible de .NET Framework.  
   
--   Si un service pack pour la version actuelle du .NET Framework est publié, vous pouvez le cibler.  
+- Si un service pack pour la version actuelle du .NET Framework est publié, vous pouvez le cibler.  
   
--   Le multi-ciblage garantit qu'une application utilise uniquement les fonctionnalités qui sont disponibles dans le framework et la plateforme cibles.  
+- Le multi-ciblage garantit qu'une application utilise uniquement les fonctionnalités qui sont disponibles dans le framework et la plateforme cibles.  
   
- Pour plus d’informations, consultez l’article [Multiciblage de MSBuild](../msbuild/msbuild-multitargeting-overview.md).  
+  Pour plus d’informations, consultez l’article [Multiciblage de MSBuild](../msbuild/msbuild-multitargeting-overview.md).  
   
 ## <a name="related-topics"></a>Rubriques connexes  
   

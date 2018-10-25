@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetMethodFieldsByName | Documents Microsoft
+title: IDebugSymbolProvider::GetMethodFieldsByName | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 628cddc126e9617c918bf0d6f47c8fae46c09c0c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fa59d97cb95309f6a291d3c17ffee431cd596be3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118568"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822278"
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
-Cette méthode obtient le champ qui représente un nom qualifié complet de la méthode.  
+Cette méthode obtient le champ qui représente un nom de méthode qualifié complet.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -48,7 +48,7 @@ int GetMethodFieldsByName(
  [in] Le nom de la méthode.  
   
  `nameMatch`  
- [in] Sélectionne le type de correspondance, par exemple, la casse.  
+ [in] Sélectionne le type de correspondance, par exemple, respect de la casse.  
   
  `ppEnum`  
  [out] Retourne un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) énumérateur pour les champs associés à cette méthode.  
@@ -57,7 +57,7 @@ int GetMethodFieldsByName(
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- S’il est surchargé, par exemple, une méthode peut être associée à plusieurs champs.  
+ Si elle est surchargée, par exemple, une méthode peut être associée à plusieurs champs.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

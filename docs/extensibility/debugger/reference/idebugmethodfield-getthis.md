@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::GetThis | Documents Microsoft
+title: IDebugMethodField::GetThis | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3cde294ea10a6eedd1046a41686dbfa9f3b47e4e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 302486a0cd59f6bc843af6aba76f734775cf405e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118279"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842935"
 ---
 # <a name="idebugmethodfieldgetthis"></a>IDebugMethodField::GetThis
 Obtient le `this` (`Me` dans [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]) pointeur de l’objet qui contient la méthode.  
@@ -47,7 +47,7 @@ int GetThis(
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Dans les langages orientés objet, il y a généralement un pointeur implicite à l’instanciation actuelle d’une classe. Il s’agit en tant que `this` en C# / C++ et en tant que `Me` dans [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)].  
+ Dans les langages orientés objet, il est généralement un pointeur implicite à l’instanciation actuelle d’une classe. Il s’agit `this` en C# / C++ et en tant que `Me` dans [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)].  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   

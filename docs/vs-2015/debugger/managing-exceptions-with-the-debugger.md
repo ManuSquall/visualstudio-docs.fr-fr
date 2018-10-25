@@ -38,12 +38,12 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05fda0b130d765d5028e9c257102100708908dca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 37b815543332ff61a275fed8fdfba06c91a433b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285920"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813672"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Gestion des exceptions avec le débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,86 +78,86 @@ Une exception est une indication d'un état d'erreur qui se produit pendant qu'u
   
  Si vous vérifiez une exception donnée, l'exécution du débogueur sera interrompue partout où l'exception est levée, qu'elle soit gérée ou non gérée. À ce stade, l'exception est appelée « exception de première chance ». Voici, par exemple, quelques scénarios :  
   
-1.  Dans l’application de console C# suivante, la méthode Main lève une exception **AccessViolationException** à l’intérieur d’un bloc `try/catch` :  
+1. Dans l’application de console C# suivante, la méthode Main lève une exception **AccessViolationException** à l’intérieur d’un bloc `try/catch` :  
   
-    ```csharp  
-    static void Main(string[] args)  
-    {  
-        try  
-        {  
-            throw new AccessViolationException();  
-            Console.WriteLine("here");  
-        }  
-        catch (Exception e)  
-        {  
-            Console.WriteLine("caught exception");  
-        }  
-        Console.WriteLine("goodbye");  
-    }  
-    ```  
+   ```csharp  
+   static void Main(string[] args)  
+   {  
+       try  
+       {  
+           throw new AccessViolationException();  
+           Console.WriteLine("here");  
+       }  
+       catch (Exception e)  
+       {  
+           Console.WriteLine("caught exception");  
+       }  
+       Console.WriteLine("goodbye");  
+   }  
+   ```  
   
-     Si **AccessViolationException** est cochée dans **Paramètres d'exception**, lorsque vous exécutez ce code dans le débogueur, l’exécution s’arrête à la ligne `throw` . Vous pouvez ensuite poursuivre l'exécution. La console devrait afficher les deux lignes :  
+    Si **AccessViolationException** est cochée dans **Paramètres d'exception**, lorsque vous exécutez ce code dans le débogueur, l’exécution s’arrête à la ligne `throw` . Vous pouvez ensuite poursuivre l'exécution. La console devrait afficher les deux lignes :  
   
-    ```  
-    caught exception  
-    goodbye  
-    ```  
+   ```  
+   caught exception  
+   goodbye  
+   ```  
   
-     mais elle n'affiche pas la ligne `here`.  
+    mais elle n'affiche pas la ligne `here`.  
   
-2.  Une application console C# fait référence à une bibliothèque de classes avec une classe qui possède deux méthodes : une méthode qui lève une exception et la gère, et une deuxième méthode qui lève la même exception et qui ne la gère pas :  
+2. Une application console C# fait référence à une bibliothèque de classes avec une classe qui possède deux méthodes : une méthode qui lève une exception et la gère, et une deuxième méthode qui lève la même exception et qui ne la gère pas :  
   
-    ```vb  
-    public class Class1  
-    {  
-        public void ThrowHandledException()  
-        {  
-            try  
-            {  
-                throw new AccessViolationException();  
-            }  
-            catch (AccessViolationException ave)  
-            {  
-                Console.WriteLine("caught exception" + ave.Message);  
-            }  
-        }  
+   ```vb  
+   public class Class1  
+   {  
+       public void ThrowHandledException()  
+       {  
+           try  
+           {  
+               throw new AccessViolationException();  
+           }  
+           catch (AccessViolationException ave)  
+           {  
+               Console.WriteLine("caught exception" + ave.Message);  
+           }  
+       }  
   
-        public void ThrowUnhandledException()  
-        {  
-            throw new AccessViolationException();  
-        }  
-    }  
-    ```  
+       public void ThrowUnhandledException()  
+       {  
+           throw new AccessViolationException();  
+       }  
+   }  
+   ```  
   
-     Voici la méthode Main() de l'application console :  
+    Voici la méthode Main() de l'application console :  
   
-    ```csharp  
-    static void Main(string[] args)  
-    {  
-        Class1 class1 = new Class1();  
-        class1.ThrowHandledException();  
-        class1.ThrowUnhandledException();  
-    }  
-    ```  
+   ```csharp  
+   static void Main(string[] args)  
+   {  
+       Class1 class1 = new Class1();  
+       class1.ThrowHandledException();  
+       class1.ThrowUnhandledException();  
+   }  
+   ```  
   
-     Si **AccessViolationException** est cochée dans **Paramètres d'exception**, lorsque vous exécutez ce code dans le débogueur, l’exécution s’arrête à la ligne `throw` dans **ThrowHandledException()** et dans **ThrowUnhandledException()**.  
+    Si **AccessViolationException** est cochée dans **Paramètres d'exception**, lorsque vous exécutez ce code dans le débogueur, l’exécution s’arrête à la ligne `throw` dans **ThrowHandledException()** et dans **ThrowUnhandledException()**.  
   
- Si vous souhaitez rétablir les paramètres d'exceptions par défaut, vous pouvez cliquer sur le bouton **Restaurer** de la barre d'outils :  
+   Si vous souhaitez rétablir les paramètres d'exceptions par défaut, vous pouvez cliquer sur le bouton **Restaurer** de la barre d'outils :  
   
- ![Restaurer les valeurs par défaut dans les paramètres d’Exception](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
+   ![Restaurer les valeurs par défaut dans les paramètres d’Exception](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
 ###  <a name="BKMK_UserUnhandled"></a> Configuration du débogueur pour continuer en cas d’exceptions non gérées par l’utilisateur  
  Si vous déboguez du code .NET ou JavaScript avec [Just My Code](../debugger/just-my-code.md), vous pouvez demander au débogueur de ne pas s’arrêter sur les exceptions qui ne sont pas gérées dans le code utilisateur, mais qui sont gérées ailleurs.  
   
-1.  Dans la fenêtre **Paramètres d'exception** , ouvrez le menu contextuel en cliquant avec le bouton droit dans la fenêtre, puis en sélectionnant **Afficher les colonnes**. (Si vous avez désactivé **Uniquement mon code**, cette commande n'est pas visible.)  
+1. Dans la fenêtre **Paramètres d'exception** , ouvrez le menu contextuel en cliquant avec le bouton droit dans la fenêtre, puis en sélectionnant **Afficher les colonnes**. (Si vous avez désactivé **Uniquement mon code**, cette commande n'est pas visible.)  
   
-2.  Vous devez normalement voir une deuxième colonne nommée **Actions supplémentaires**. Cette colonne affiche **Continuer en cas d'exception non gérée dans le code utilisateur** sur des exceptions spécifiques, ce qui signifie que le débogueur ne s'arrête pas si cette exception n'est pas gérée dans le code utilisateur alors qu'elle est gérée dans le code externe.  
+2. Vous devez normalement voir une deuxième colonne nommée **Actions supplémentaires**. Cette colonne affiche **Continuer en cas d'exception non gérée dans le code utilisateur** sur des exceptions spécifiques, ce qui signifie que le débogueur ne s'arrête pas si cette exception n'est pas gérée dans le code utilisateur alors qu'elle est gérée dans le code externe.  
   
-3.  Vous pouvez modifier ce paramètre pour une exception particulière (en sélectionnant l'exception, en cliquant avec le bouton droit, puis en sélectionnant/désélectionnant **Continuer en cas d'exception non gérée dans le code utilisateur**) ou pour une catégorie entière d'exceptions (par exemple, toutes les exceptions Common Language Runtime).  
+3. Vous pouvez modifier ce paramètre pour une exception particulière (en sélectionnant l'exception, en cliquant avec le bouton droit, puis en sélectionnant/désélectionnant **Continuer en cas d'exception non gérée dans le code utilisateur**) ou pour une catégorie entière d'exceptions (par exemple, toutes les exceptions Common Language Runtime).  
   
- Par exemple, les applications web ASP.NET gèrent les exceptions en les convertissant en code d’état HTTP 500 ([Gestion des exceptions dans l’API ASP.NET](http://www.asp.net/web-api/overview/error-handling/exception-handling)), ce qui peut compliquer l’identification de la source de l’exception. Dans l'exemple ci-dessous, le code utilisateur appelle `String.Format()` qui lève une exception <xref:System.FormatException>. L'exécution s'interrompt de la façon suivante :  
+   Par exemple, les applications web ASP.NET gèrent les exceptions en les convertissant en code d’état HTTP 500 ([Gestion des exceptions dans l’API ASP.NET](http://www.asp.net/web-api/overview/error-handling/exception-handling)), ce qui peut compliquer l’identification de la source de l’exception. Dans l'exemple ci-dessous, le code utilisateur appelle `String.Format()` qui lève une exception <xref:System.FormatException>. L'exécution s'interrompt de la façon suivante :  
   
- ![s’arrête sur utilisateur&#45;exception gérée par](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+   ![s’arrête sur utilisateur&#45;exception gérée par](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ### <a name="adding-and-deleting-exceptions"></a>Ajout et suppression d'exceptions  
  Vous pouvez ajouter et supprimer des exceptions. Vous pouvez supprimer n'importe quel type d'exception de n'importe quelle catégorie en sélectionnant l'exception et en cliquant sur le bouton **Supprimer** (signe moins) de la barre d'outils **Paramètres d'exception** , ou en cliquant avec le bouton droit sur l'exception et en sélectionnant **Supprimer** dans le menu contextuel. La suppression d'une exception a le même effet que si l'exception est désactivée, c'est-à-dire que le débogueur ne s'arrête pas lorsqu'elle est levée.  

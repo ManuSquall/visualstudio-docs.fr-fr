@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5949578a6515d74d97821608093f8cdf0dfc7b15
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 616b837613e0e2c76330a68133929e6b85a94f98
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295295"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812931"
 ---
 # <a name="handle-a-concurrency-exception"></a>Gérer une exception d’accès concurrentiel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -129,13 +129,13 @@ Exceptions d’accès concurrentiel (<xref:System.Data.DBConcurrencyException>) 
   
  Les trois versions de l’enregistrement à l’utilisateur applicationpresents :  
   
--   L’enregistrement actif dans la base de données  
+- L’enregistrement actif dans la base de données  
   
--   L’enregistrement d’origine qui est chargé dans le jeu de données  
+- L’enregistrement d’origine qui est chargé dans le jeu de données  
   
--   Les modifications proposées dans le jeu de données  
+- Les modifications proposées dans le jeu de données  
   
- L’utilisateur peut ensuite remplacer la base de données avec la version proposée, ou d’annuler la mise à jour et actualiser le jeu de données avec les nouvelles valeurs à partir de la base de données.  
+  L’utilisateur peut ensuite remplacer la base de données avec la version proposée, ou d’annuler la mise à jour et actualiser le jeu de données avec les nouvelles valeurs à partir de la base de données.  
   
 #### <a name="to-enable-the-handling-of-concurrency-errors"></a>Pour activer la gestion des erreurs d’accès concurrentiel  
   

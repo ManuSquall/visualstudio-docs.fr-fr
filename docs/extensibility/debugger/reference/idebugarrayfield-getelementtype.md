@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayField::GetElementType | Documents Microsoft
+title: IDebugArrayField::GetElementType | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3c2eb6009eacd40081be28cc5945310d7a00fc1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c95457fdc91e4c625cb56aaba58593acf2a64e16
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099484"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821940"
 ---
 # <a name="idebugarrayfieldgetelementtype"></a>IDebugArrayField::GetElementType
 Obtient le type d’élément dans le tableau.  
@@ -47,7 +47,7 @@ int GetElementType(
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Le [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md) objet suppose que tous les éléments du tableau sont du même type.  
+ Le [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md) objet part du principe que tous les éléments du tableau sont du même type.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)   

@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3bd99ed0a4350dbaf8c2e158f8b86464f50393c4
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 714ca84a860f01ecc0df6536adb5ea9bb60989fa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057754"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820497"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Spécificateurs de format en C++ dans le débogueur Visual Studio
 Vous pouvez modifier le format dans lequel une valeur est affichée dans la fenêtre **Espion** à l’aide de spécificateurs de format.  
@@ -43,9 +43,9 @@ Vous pouvez modifier le format dans lequel une valeur est affichée dans la fen�
   
 > [!NOTE]
 >  Lorsque le débogueur natif Visual Studio passe à un nouveau moteur de débogage, nouveaux spécificateurs de format ont été ajoutés et certains anciens ont été supprimés. Le débogueur plus ancien est toujours utilisé quand vous effectuez un débogage d’interopérabilité (native et managée à la fois) avec C++/CLI. Les sections suivantes présentent les spécificateurs de format pour chaque moteur de débogage.
->   
->  -   [Spécificateurs de format](#BKMK_Visual_Studio_2012_format_specifiers) décrit les spécificateurs de format dans le nouveau moteur de débogage.  
-> -   [Spécificateurs de format pour le débogage d’interopérabilité avec C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) décrit les spécificateurs de format dans l’ancien moteur de débogage.  
+> 
+> - [Spécificateurs de format](#BKMK_Visual_Studio_2012_format_specifiers) décrit les spécificateurs de format dans le nouveau moteur de débogage.  
+>   -   [Spécificateurs de format pour le débogage d’interopérabilité avec C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) décrit les spécificateurs de format dans l’ancien moteur de débogage.  
   
 ## <a name="using-format-specifiers"></a>Utilisation des spécificateurs de format  
  Si vous avez le code suivant :  
@@ -144,4 +144,4 @@ int main() {
   
 |Spécificateur|Format|Expression|Valeur affichée|  
 |---------------|------------|----------------|---------------------|  
-|n|entier décimal|pBuffer[32]|Affiche `pBuffer` sous forme d’un tableau de 32 éléments.|
+|n|entier décimal|pBuffer[32]|Affiche `pBuffer` sous forme d’un tableau de 32 éléments.|

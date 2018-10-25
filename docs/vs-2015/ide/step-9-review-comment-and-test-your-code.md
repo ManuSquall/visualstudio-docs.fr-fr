@@ -14,12 +14,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3743c31aeca3c6e34afa84ed8c9ee3ddd59d98a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f27cbc54839318674ae41385bd39876c6c513f1b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300402"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836955"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Étape 9 : examiner, commenter et tester votre code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,29 +28,29 @@ Ensuite, ajoutez un commentaire à votre code. Un commentaire est une annotation
   
  Vous venez de générer un programme qui fonctionne, et bien qu'il ne soit pas encore terminé, il peut déjà charger une image. Avant d’ajouter un commentaire à votre code et de le tester, prenez le temps de revoir les concepts de code, car vous serez amené à les utiliser régulièrement :  
   
--   Quand vous avez double-cliqué sur le bouton **Afficher une image** dans le Concepteur Windows Forms, l’IDE a ajouté automatiquement une *méthode* au code de votre programme.  
+- Quand vous avez double-cliqué sur le bouton **Afficher une image** dans le Concepteur Windows Forms, l’IDE a ajouté automatiquement une *méthode* au code de votre programme.  
   
--   Les méthodes vous permettent d'organiser votre code : c'est ainsi que votre code est regroupé.  
+- Les méthodes vous permettent d'organiser votre code : c'est ainsi que votre code est regroupé.  
   
--   La plupart du temps, une méthode effectue un petit nombre d'actions dans un ordre spécifique, (comme lorsque votre méthode `showButton_Click()` affiche une boîte de dialogue, puis charge une image).  
+- La plupart du temps, une méthode effectue un petit nombre d'actions dans un ordre spécifique, (comme lorsque votre méthode `showButton_Click()` affiche une boîte de dialogue, puis charge une image).  
   
--   Une méthode contient des *instructions* ou des lignes de code. En d'autres termes, une méthode permet de regrouper des instructions de code.  
+- Une méthode contient des *instructions* ou des lignes de code. En d'autres termes, une méthode permet de regrouper des instructions de code.  
   
--   Quand une méthode est exécutée (ou *appelée*), les instructions qu’elle contient s’exécutent dans l’ordre, l’une après l’autre, en commençant par la première.  
+- Quand une méthode est exécutée (ou *appelée*), les instructions qu’elle contient s’exécutent dans l’ordre, l’une après l’autre, en commençant par la première.  
   
-     Voici un exemple d'instruction.  
+   Voici un exemple d'instruction.  
   
-    ```csharp  
-    pictureBox1.Load(openFileDialog1.FileName);  
-    ```  
+  ```csharp  
+  pictureBox1.Load(openFileDialog1.FileName);  
+  ```  
   
-    ```vb  
-    pictureBox1.Load(openFileDialog1.FileName)  
-    ```  
+  ```vb  
+  pictureBox1.Load(openFileDialog1.FileName)  
+  ```  
   
-     Les instructions permettent à vos programmes d'effectuer des actions. En Visual C#, une instruction se termine toujours par un point-virgule. En Visual Basic, la fin d'une ligne indique la fin d'une instruction. (Aucun point-virgule n'est nécessaire en Visual Basic.) L’instruction précédente indique au contrôle `PictureBox` de charger le fichier que l’utilisateur a sélectionné avec le composant **OpenFileDialog**.  
+   Les instructions permettent à vos programmes d'effectuer des actions. En Visual C#, une instruction se termine toujours par un point-virgule. En Visual Basic, la fin d'une ligne indique la fin d'une instruction. (Aucun point-virgule n'est nécessaire en Visual Basic.) L’instruction précédente indique au contrôle `PictureBox` de charger le fichier que l’utilisateur a sélectionné avec le composant **OpenFileDialog**.  
   
- ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo")Pour obtenir une version vidéo de cette rubrique, consultez [Didacticiel 1 : Créer une visionneuse d’images en Visual Basic – Vidéo 5](http://go.microsoft.com/fwlink/?LinkId=205216) ou [Didacticiel 1 : Créer une visionneuse d’images en C# – Vidéo 5](http://go.microsoft.com/fwlink/?LinkId=205206). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.  
+  ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo")Pour obtenir une version vidéo de cette rubrique, consultez [Didacticiel 1 : Créer une visionneuse d’images en Visual Basic – Vidéo 5](http://go.microsoft.com/fwlink/?LinkId=205216) ou [Didacticiel 1 : Créer une visionneuse d’images en C# – Vidéo 5](http://go.microsoft.com/fwlink/?LinkId=205206). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.  
   
 ### <a name="to-add-comments"></a>Pour ajouter des commentaires  
   

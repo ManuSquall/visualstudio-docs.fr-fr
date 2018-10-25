@@ -1,5 +1,5 @@
 ---
-title: EXCEPTION_STATE | Documents Microsoft
+title: EXCEPTION_STATE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1faa847d907af938bb5f91206a5f438bcba886a3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f1032be313c6be8c71799ea493e82c03fd9e96ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104902"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818248"
 ---
 # <a name="exceptionstate"></a>EXCEPTION_STATE
 Spécifie l’état d’exception.  
@@ -81,34 +81,34 @@ public enum enum_EXCEPTION_STATE {
  N’arrêtez pas à l’exception.  
   
  EXCEPTION_STOP_FIRST_CHANCE  
- Arrêter le premier déclenchement de l’événement d’exception. Lors de la description d’un événement d’exception, cet indicateur indique que l’événement d’exception est un événement d’exception de première chance.  
+ Arrêter au premier déclenchement de l’événement d’exception. Lorsque vous décrivez un événement d’exception, cet indicateur indique que l’événement d’exception est un événement d’exception de première chance.  
   
  EXCEPTION_STOP_SECOND_CHANCE  
- Arrêter à la deuxième déclenchement de l’événement d’exception. Lors de la description d’un événement d’exception, indique que l’événement d’exception est un événement d’exception de deuxième chance.  
+ Arrêter au deuxième déclenchement de l’événement d’exception. Lorsque vous décrivez un événement d’exception, indique que l’événement d’exception est un événement d’exception de la seconde chance.  
   
  EXCEPTION_STOP_USER_FIRST_CHANCE  
- Arrêter le premier déclenchement d’une exception du mode utilisateur. Lors de la description d’un événement d’exception, indique que l’événement d’exception est un événement d’exception de première chance.  
+ Arrêter au premier déclenchement d’une exception du mode utilisateur. Lorsque vous décrivez un événement d’exception, indique que l’événement d’exception est un événement d’exception de première chance utilisateur.  
   
  EXCEPTION_STOP_USER_UNCAUGHT  
- Arrêter lorsqu’une exception du mode utilisateur n’est pas interceptée. Lors de la description d’un événement d’exception, indique que l’événement d’exception est un événement d’exception en mode utilisateur non interceptée.  
+ Arrêter lorsqu’une exception de mode utilisateur n’est pas interceptée. Lorsque vous décrivez un événement d’exception, indique que l’événement d’exception est un événement d’exception en mode utilisateur non interceptées.  
   
  EXCEPTION_STOP_ALL  
  Arrêtez sur n’importe quelle exception. Pas utilisé lors de la description d’un événement d’exception.  
   
  EXCEPTION_CANNOT_BE_CONTINUED  
- Lors de la description d’un événement d’exception, indique que l’exception ne peut pas être poursuivie à partir de.  
+ Lorsque vous décrivez un événement d’exception, indique que l’exception ne peut pas être poursuivie à partir de.  
   
  EXCEPTION_CODE_SUPPORTED  
- Indique que l’exception comporte du code prenant en charge. Utilisé lors de l’affichage d’une exception  
+ Indique que l’exception comporte du code qui l’accompagnent. Utilisés pour afficher une exception  
   
  EXCEPTION_CODE_DISPLAY_IN_HEX  
- Indique que le code d’exception doit être affiché en notation hexadécimale. Utilisé lors de l’affichage d’une exception.  
+ Indique que le code d’exception doit être affiché au format hexadécimal. Utilisé dans l’affichage d’une exception.  
   
  EXCEPTION_JUST_MY_CODE_SUPPORTED  
- Indique que le code d’exception prend en charge JustMyCode. Utilisé lors de l’affichage d’une exception.  
+ Indique que le code d’exception prend en charge JustMyCode. Utilisé dans l’affichage d’une exception.  
   
  EXCEPTION_MANAGED_DEBUG_ASSISTANT  
- Indique que le débogueur de code managé doit gérer les exceptions. Si ce n’est pas le cas, ensemble, le débogueur par défaut gère les exceptions. Il est passé à la [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) méthode mais pas dans le [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) structure.  
+ Indique que le débogueur de code managé doit gérer les exceptions. Si ce n’est pas le cas, ensemble, le débogueur par défaut gère les exceptions. Ces données sont transmises à la [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md) (méthode) et pas dans le [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) structure.  
   
  EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT  
  OBSOLÈTE, N’UTILISEZ PAS.  
@@ -129,7 +129,7 @@ public enum enum_EXCEPTION_STATE {
   
  Ces indicateurs peuvent être combinées avec une opération OR au niveau du bit.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : msdbg.h  
   
  Namespace : Microsoft.VisualStudio.Debugger.Interop  

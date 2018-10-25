@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b77a262edcbf55f7c1f14c36d35a8618f5b788dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: edc922b2d96776d38de1b55ab2226be0d2c10f85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243011"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815726"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Lignes, vue - Données d’échantillonnage de mémoire .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +32,21 @@ La vue Lignes des données de profilage d’allocation de mémoire .NET qui uti
   
  Une instruction est identifiée par les éléments suivants :  
   
--   Le fichier source contenant l’instruction de fonction.  
+- Le fichier source contenant l’instruction de fonction.  
   
--   La fonction contenant l’instruction.  
+- La fonction contenant l’instruction.  
   
--   La ligne source au niveau de laquelle l’instruction commence.  
+- La ligne source au niveau de laquelle l’instruction commence.  
   
--   Le caractère de la ligne source au niveau duquel l’instruction commence.  
+- Le caractère de la ligne source au niveau duquel l’instruction commence.  
   
--   La ligne source au niveau de laquelle l’instruction se termine.  
+- La ligne source au niveau de laquelle l’instruction se termine.  
   
--   Le caractère de la ligne source au niveau duquel l’instruction se termine.  
+- Le caractère de la ligne source au niveau duquel l’instruction se termine.  
   
- La colonne Nom de ligne fournit une concaténation des données d’identificateur pouvant être triée.  
+  La colonne Nom de ligne fournit une concaténation des données d’identificateur pouvant être triée.  
   
- Par définition, une instruction n’appelle pas d’autres fonctions. Par conséquent, seules les valeurs exclusives apparaissent.  
+  Par définition, une instruction n’appelle pas d’autres fonctions. Par conséquent, seules les valeurs exclusives apparaissent.  
   
 |Colonne|Description|  
 |------------|-----------------|  

@@ -32,23 +32,23 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 03277af5f1cca5c3ded7b43a82ca6bbe74c5e756
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b594d5cfdee66ccdca2859a7ff0fc90fc5afb536
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212210"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825450"
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>Code mixte et informations manquantes dans la fenêtre Pile des appels
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En raison de différences entre la pile des appels du code managé et celle du code natif, le débogueur ne peut pas toujours afficher la pile des appels complète en cas de types de code mixtes. Lorsque le code natif appelle du code managé, vous pouvez noter les divergences suivantes dans le **pile des appels** fenêtre :  
   
--   Le frame natif immédiatement au-dessus du code managé peut-être être absent dans les **pile des appels** fenêtre. Pour plus d’informations, consultez [Comment : sortir du Code managé lorsque les Frames natifs sont absents de la fenêtre Pile des appels](../debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md).  
+- Le frame natif immédiatement au-dessus du code managé peut-être être absent dans les **pile des appels** fenêtre. Pour plus d’informations, consultez [Comment : sortir du Code managé lorsque les Frames natifs sont absents de la fenêtre Pile des appels](../debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md).  
   
--   Pour les applications en mode mixte lancées en dehors du débogueur, le **pile des appels** fenêtre peut afficher uniquement le code managé et aucun des frames natifs ne sera visible.  
+- Pour les applications en mode mixte lancées en dehors du débogueur, le **pile des appels** fenêtre peut afficher uniquement le code managé et aucun des frames natifs ne sera visible.  
   
- Ces deux situations sont assez rares. Dans la plupart des appels natifs au code managé, les piles d'appels apparaissent correctement.  
+  Ces deux situations sont assez rares. Dans la plupart des appels natifs au code managé, les piles d'appels apparaissent correctement.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour utiliser la fenêtre Pile des appels](../debugger/how-to-use-the-call-stack-window.md)

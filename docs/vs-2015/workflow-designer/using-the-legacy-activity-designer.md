@@ -19,12 +19,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 4c71fa8d901653babd8c3558da7eff8ff16058c5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a6c8aafe9eac26080bfbf57d06c7d512d1e1e62d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296827"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843429"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Utilisation du concepteur d'activités hérité
 Cette rubrique décrit comment utiliser le concepteur d'activités dans le [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité. Utilisez le concepteur hérité lorsque vous ciblez le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -34,17 +34,17 @@ Cette rubrique décrit comment utiliser le concepteur d'activités dans le [!INC
 ## <a name="creating-a-custom-activity"></a>Création d'une activité personnalisée  
  Procédez comme suit pour créer une activité personnalisée à l'aide du concepteur d'activités :  
   
-1.  Sur le **projet** menu, cliquez sur **ajouter une activité**.  
+1. Sur le **projet** menu, cliquez sur **ajouter une activité**.  
   
-2.  Sélectionnez le **activité** ou **activité (avec séparation de code)** modèle.  
+2. Sélectionnez le **activité** ou **activité (avec séparation de code)** modèle.  
   
-    1.  Utilisez le **activité** modèle pour créer une activité avec la définition d’activité et le code utilisateur dans le même fichier de code.  
+   1.  Utilisez le **activité** modèle pour créer une activité avec la définition d’activité et le code utilisateur dans le même fichier de code.  
   
-    2.  Utilisez le **activité (avec séparation de code)** modèle pour créer une activité avec la définition d’activité exprimée sous la forme de balisage de flux de travail et le code utilisateur dans un fichier de code séparé.  
+   2.  Utilisez le **activité (avec séparation de code)** modèle pour créer une activité avec la définition d’activité exprimée sous la forme de balisage de flux de travail et le code utilisateur dans un fichier de code séparé.  
   
-3.  Tapez un nom d’activité ou conservez le nom par défaut, puis cliquez sur **ajouter**.  
+3. Tapez un nom d’activité ou conservez le nom par défaut, puis cliquez sur **ajouter**.  
   
- Vous pouvez également créer un ensemble d’activités personnalisées en créant un nouveau projet de type **Workflow Activity Library**. Pour plus d’informations sur ce type de projet, consultez [Comment : créer une bibliothèque d’activités de flux de travail (hérité)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).  
+   Vous pouvez également créer un ensemble d’activités personnalisées en créant un nouveau projet de type **Workflow Activity Library**. Pour plus d’informations sur ce type de projet, consultez [Comment : créer une bibliothèque d’activités de flux de travail (hérité)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).  
   
 ## <a name="configuring-an-activity"></a>Configuration d'une activité  
  Lorsque le concepteur d'activités est actif, vous pouvez utiliser l'explorateur de propriétés pour configurer les propriétés répertoriées dans le tableau suivant.  
